@@ -1287,18 +1287,21 @@
   line-height: 1.5;
   font-style: italic;
   margin: 0;
-  padding-left: 28px;
-  position: relative;
+  margin-top: 4px;
+  padding-left: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
 }
 
 .transcriptTranslation::before {
   content: '→';
-  position: absolute;
-  left: 8px;
   color: #60a5fa;
   font-style: normal;
   font-size: 11px;
   opacity: 0.7;
+  flex-shrink: 0;
+  margin-top: 1px;
 }
 
 .transcriptItemFooter {
@@ -1596,6 +1599,8 @@
     }
 
     .transcriptTranslation {
+      display: block;
+      position: relative;
       font-size: 11px;
       line-height: 1.45;
       margin: 4px 0 0 0;
@@ -1605,11 +1610,14 @@
       border-left: 2px solid rgba(96, 165, 250, 0.4);
       border-radius: 0 6px 6px 0;
       color: #a5b4c8;
+      gap: 0;
     }
 
     .transcriptTranslation::before {
+      position: absolute;
       left: 8px;
       font-size: 10px;
+      margin-top: 0;
     }
 
     .transcriptItemHeader {
