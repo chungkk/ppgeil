@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import { DictionaryAnalytics } from '../lib/analytics';
 import { isFeatureEnabled, FEATURES } from '../lib/featureFlags';
 import { speakText } from '../lib/textToSpeech';
+import { translationCache } from '../lib/translationCache';
 import styles from '../styles/DictionaryPopup.module.css';
 
 const DICTIONARY_CACHE_KEY = 'dictionary_cache';
@@ -40,11 +41,17 @@ const dictionaryCache = {
   }
 };
 
-const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, context }) => {
+const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, context, transcriptData }) => {
   const { t } = useTranslation();
   const { user } = useAuth();
   const [wordData, setWordData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [translation, setTranslation] = useState(''); // Quick translation from cache/translate API
+  const [isLoadingTranslation, setIsLoadingTranslation] = useState(true);
+  const [isLoadingExplanation, setIsLoadingExplanation] = useState(true); // For explanation only
+  const [explanation, setExplanation] = useState('');
+  const [localExamples, setLocalExamples] = useState([]); // Examples from transcript (instant)
+  const [activeTab, setActiveTab] = useState('explanation'); // 'explanation' or 'examples'
+  const [isLoading, setIsLoading] = useState(true); // Keep for backward compatibility
   const [isMobile, setIsMobile] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
@@ -102,41 +109,93 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [word, isMobile, onClose]);
 
+  // Step 1: Fetch translation quickly (from cache or translate API)
   useEffect(() => {
-    const fetchWordData = async () => {
+    const fetchTranslation = async () => {
       if (!word) return;
 
       const targetLang = user?.nativeLanguage || 'vi';
+      setIsLoadingTranslation(true);
 
-      // Check cache first
-      const cached = dictionaryCache.get(word, targetLang);
+      // Check translationCache first (instant)
+      const cached = translationCache.get(word, 'de', targetLang);
       if (cached) {
-        setWordData(cached);
-        setIsLoading(false);
-        DictionaryAnalytics.cacheHit(word, true);
+        setTranslation(cached);
+        setIsLoadingTranslation(false);
         return;
       }
 
-      setIsLoading(true);
+      // Call translate API (fast, simple translation)
       try {
-        const response = await fetch('/api/dictionary', {
+        const response = await fetch('/api/translate', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            word: word,
+            text: word,
             sourceLang: 'de',
             targetLang: targetLang
           })
         });
 
         const data = await response.json();
+        if (data.success && data.translation) {
+          setTranslation(data.translation);
+          translationCache.set(word, data.translation, 'de', targetLang);
+        }
+      } catch (error) {
+        console.error('Translation fetch error:', error);
+      } finally {
+        setIsLoadingTranslation(false);
+      }
+    };
+
+    fetchTranslation();
+  }, [word, user]);
+
+  // Step 2: Fetch explanation only (examples loaded on demand)
+  useEffect(() => {
+    const fetchExplanation = async () => {
+      if (!word) return;
+
+      const targetLang = user?.nativeLanguage || 'vi';
+
+      // Check dictionary cache first
+      const cached = dictionaryCache.get(word, targetLang);
+      if (cached) {
+        setWordData(cached);
+        setExplanation(cached.explanation || '');
+        // Don't load examples yet - wait for tab click
+        setIsLoadingExplanation(false);
+        setIsLoading(false);
+        DictionaryAnalytics.cacheHit(word, true);
+        return;
+      }
+
+      setIsLoadingExplanation(true);
+      setIsLoading(true);
+      
+      try {
+        const response = await fetch('/api/dictionary', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            word: word,
+            sourceLang: 'de',
+            targetLang: targetLang,
+            includeExamples: false // Only get explanation first
+          })
+        });
+
+        const data = await response.json();
         if (data.success) {
           setWordData(data.data);
+          setExplanation(data.data?.explanation || '');
+          // Also update translation if dictionary has better one
+          if (data.data?.translation) {
+            setTranslation(data.data.translation);
+          }
           dictionaryCache.set(word, data.data, targetLang);
           
-          // Track cache status
           if (data.fromCache) {
             DictionaryAnalytics.cacheHit(word, false);
           } else {
@@ -147,12 +206,47 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
         console.error('Dictionary fetch error:', error);
         DictionaryAnalytics.error(word, 'fetch_failed', error.message);
       } finally {
+        setIsLoadingExplanation(false);
         setIsLoading(false);
       }
     };
 
-    fetchWordData();
+    fetchExplanation();
   }, [word, user]);
+
+  // Find examples from transcript data (instant, no API call)
+  useEffect(() => {
+    if (!word || !transcriptData || transcriptData.length === 0) {
+      setLocalExamples([]);
+      return;
+    }
+
+    const wordLower = word.toLowerCase();
+    const foundExamples = [];
+
+    transcriptData.forEach(sentence => {
+      if (sentence.text && sentence.text.toLowerCase().includes(wordLower)) {
+        // Highlight the word in the sentence
+        const highlightedText = sentence.text.replace(
+          new RegExp(`(${word})`, 'gi'),
+          '<strong>$1</strong>'
+        );
+        foundExamples.push({
+          de: sentence.text,
+          highlighted: highlightedText,
+          translation: sentence.translation || '' // If translation exists in transcript
+        });
+      }
+    });
+
+    // Limit to 5 examples max
+    setLocalExamples(foundExamples.slice(0, 5));
+  }, [word, transcriptData]);
+
+  // Simple tab switch (no API call needed for examples)
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
 
   // Check if word is already saved in vocabulary
   useEffect(() => {
@@ -235,7 +329,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
       return;
     }
 
-    if (!wordData?.translation) {
+    if (!translation) {
       toast.info('⏳ ' + t('dictionaryPopup.searchingMeaning'));
       return;
     }
@@ -246,7 +340,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
         method: 'POST',
         body: JSON.stringify({
           word: word,
-          translation: wordData.translation,
+          translation: translation,
           context: context || '',
           lessonId: lessonId || null
         })
@@ -319,18 +413,18 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
                 🔊
               </button>
             </div>
-            {isLoading ? (
+            {isLoadingTranslation ? (
               <div className={styles.loadingText}>
                 {t('dictionaryPopup.searching') || 'Đang tra từ...'}
               </div>
-            ) : wordData?.translation ? (
+            ) : translation ? (
               <div className={styles.wordTranslation}>
-                {wordData.translation}
+                {translation}
               </div>
             ) : null}
           </div>
           <div className={styles.headerButtons}>
-            {user && !isLoading && wordData && (
+            {user && translation && (
               <div style={{ position: 'relative' }}>
                 <button
                   onClick={handleSaveWord}
@@ -369,59 +463,69 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
           </div>
         </div>
 
+        {/* Tabs */}
+        <div className={styles.tabs}>
+          <button
+            className={`${styles.tab} ${activeTab === 'explanation' ? styles.tabActive : ''}`}
+            onClick={() => handleTabClick('explanation')}
+          >
+            📖 {t('dictionaryPopup.explanation') || 'Giải thích'}
+          </button>
+          <button
+            className={`${styles.tab} ${activeTab === 'examples' ? styles.tabActive : ''}`}
+            onClick={() => handleTabClick('examples')}
+          >
+            📝 {t('dictionaryPopup.examples') || 'Ví dụ'}
+          </button>
+        </div>
+
         <div className={styles.content}>
-          {isLoading ? (
-            <div className={styles.loadingState}>
-              {useSkeletonLoading ? (
-                // A/B Test Variant: Skeleton Loading
-                <div className={styles.skeleton}>
-                  <div className={styles.skeletonLine}></div>
-                  <div className={styles.skeletonLine}></div>
-                  <div className={styles.skeletonLine}></div>
-                  <div className={styles.skeletonLine}></div>
-                  <div className={styles.skeletonLine}></div>
+          {/* Explanation Tab */}
+          {activeTab === 'explanation' && (
+            <>
+              {isLoadingExplanation ? (
+                <div className={styles.loadingState}>
+                  <div className={styles.skeleton}>
+                    <div className={styles.skeletonLine}></div>
+                    <div className={styles.skeletonLine}></div>
+                    <div className={styles.skeletonLine}></div>
+                  </div>
+                </div>
+              ) : explanation ? (
+                <div className={styles.sectionContent}>
+                  {explanation}
                 </div>
               ) : (
-                // A/B Test Control: Spinner Loading
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '40px 20px' }}>
-                  <div className={styles.loadingSpinner}></div>
-                  <div className={styles.loadingMessage}>
-                    {t('dictionaryPopup.loading') || 'Đang tải nội dung...'}
-                  </div>
+                <div className={styles.noData}>
+                  {t('dictionaryPopup.noExplanation') || 'Chưa có giải thích'}
                 </div>
               )}
-            </div>
-          ) : wordData ? (
-            <>
-              {/* Explanation */}
-              {wordData?.explanation && (
-            <div className={styles.section}>
-              <h4 className={styles.sectionTitle}>{t('dictionaryPopup.explanation')}</h4>
-              <div className={styles.sectionContent}>
-                {wordData.explanation}
-              </div>
-            </div>
+            </>
           )}
 
-          {/* Examples */}
-          {wordData?.examples && wordData.examples.length > 0 && (
-            <div className={styles.section}>
-              <h4 className={styles.sectionTitle}>{t('dictionaryPopup.examples')}</h4>
-              <div className={styles.examples}>
-                {wordData.examples.map((example, index) => (
-                  <div key={index} className={styles.example}>
-                    <div className={styles.exampleGerman}>{example.de}</div>
-                    <div className={styles.exampleTranslation}>{example.translation}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+          {/* Examples Tab - From transcript (instant, no API) */}
+          {activeTab === 'examples' && (
+            <>
+              {localExamples.length > 0 ? (
+                <div className={styles.examples}>
+                  {localExamples.map((example, index) => (
+                    <div key={index} className={styles.example}>
+                      <div 
+                        className={styles.exampleGerman}
+                        dangerouslySetInnerHTML={{ __html: example.highlighted }}
+                      />
+                      {example.translation && (
+                        <div className={styles.exampleTranslation}>{example.translation}</div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className={styles.noData}>
+                  {t('dictionaryPopup.noExamplesInLesson') || 'Không tìm thấy từ này trong bài học'}
+                </div>
+              )}
             </>
-          ) : (
-            <div className={styles.noData}>
-              {t('dictionaryPopup.noData') || 'Không tìm thấy dữ liệu'}
-            </div>
           )}
         </div>
       </div>
