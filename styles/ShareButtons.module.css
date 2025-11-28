@@ -1,0 +1,152 @@
+.shareButtons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 12px;
+  margin: 24px 0;
+}
+
+.shareTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.shareButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 18px;
+}
+
+.shareButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shareButton:active {
+  transform: translateY(0);
+}
+
+.shareButton.facebook:hover {
+  background: #1877f2;
+  border-color: #1877f2;
+  color: white;
+}
+
+.shareButton.twitter:hover {
+  background: #1da1f2;
+  border-color: #1da1f2;
+  color: white;
+}
+
+.shareButton.linkedin:hover {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: white;
+}
+
+.shareButton.whatsapp:hover {
+  background: #25d366;
+  border-color: #25d366;
+  color: white;
+}
+
+.shareButton.telegram:hover {
+  background: #0088cc;
+  border-color: #0088cc;
+  color: white;
+}
+
+.shareButton.email:hover {
+  background: #ea4335;
+  border-color: #ea4335;
+  color: white;
+}
+
+.shareButton.copy:hover {
+  background: #667eea;
+  border-color: #667eea;
+  color: white;
+}
+
+.shareButton.more:hover {
+  background: #6b7280;
+  border-color: #6b7280;
+  color: white;
+}
+
+.copyLinkWrapper {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111827;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  animation: fadeIn 0.2s;
+  z-index: 10;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #111827;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .shareButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .shareTitle {
+    width: 100%;
+  }
+
+  .buttonGroup {
+    width: 100%;
+  }
+}

@@ -1,0 +1,434 @@
+/* Shadowing States - Error, Empty, Loading */
+
+.stateContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.stateContent {
+  text-align: center;
+  max-width: 480px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Icon Wrapper */
+.iconWrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+.iconWrapper::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+.iconWrapper svg {
+  width: 56px;
+  height: 56px;
+  stroke-width: 1.5;
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+/* Error Type Styles */
+.iconWrapper.notFound {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(220, 38, 38, 0.1) 100%);
+  border: 2px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.iconWrapper.notFound::before {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.1) 100%);
+}
+
+.iconWrapper.network {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%);
+  border: 2px solid rgba(251, 191, 36, 0.3);
+  color: #f59e0b;
+}
+
+.iconWrapper.network::before {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.2) 0%, rgba(245, 158, 11, 0.1) 100%);
+}
+
+.iconWrapper.generic {
+  background: linear-gradient(135deg, rgba(148, 163, 184, 0.15) 0%, rgba(100, 116, 139, 0.1) 100%);
+  border: 2px solid rgba(148, 163, 184, 0.3);
+  color: #94a3b8;
+}
+
+.iconWrapper.generic::before {
+  background: linear-gradient(135deg, rgba(148, 163, 184, 0.2) 0%, rgba(100, 116, 139, 0.1) 100%);
+}
+
+.iconWrapper.empty {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  color: #667eea;
+}
+
+.iconWrapper.empty::before {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.1) 100%);
+}
+
+/* Title & Description */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 32px;
+}
+
+.description code {
+  background: rgba(102, 126, 234, 0.15);
+  color: #667eea;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'SF Mono', Monaco, monospace;
+  font-size: 14px;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.backButton,
+.retryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+}
+
+.backButton svg,
+.retryButton svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.backButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.backButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.backButton:hover svg {
+  transform: translateX(-4px);
+}
+
+.backButton:active {
+  transform: translateY(-1px);
+}
+
+.retryButton {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+}
+
+.retryButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-3px);
+}
+
+.retryButton:hover svg {
+  transform: rotate(180deg);
+}
+
+/* Background Decoration */
+.decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.05;
+}
+
+.circle1 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  top: -150px;
+  right: -100px;
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #ef4444 0%, #f59e0b 100%);
+  bottom: -100px;
+  left: -80px;
+  animation: floatSlow 10s ease-in-out infinite reverse;
+}
+
+.circle3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+}
+
+/* Loading State */
+.loadingSpinner {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 32px;
+  position: relative;
+}
+
+.spinnerRing {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  animation: spinRing 1.5s ease-in-out infinite;
+}
+
+.spinnerRing:nth-child(1) {
+  border-top-color: #667eea;
+  animation-delay: 0s;
+}
+
+.spinnerRing:nth-child(2) {
+  inset: 10px;
+  border-right-color: #764ba2;
+  animation-delay: 0.15s;
+  animation-direction: reverse;
+}
+
+.spinnerRing:nth-child(3) {
+  inset: 20px;
+  border-bottom-color: #f59e0b;
+  animation-delay: 0.3s;
+}
+
+.spinnerCore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  animation: pulseCore 1s ease-in-out infinite;
+}
+
+@keyframes spinRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulseCore {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+}
+
+.loadingText {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+}
+
+.loadingDots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.loadingDots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  animation: dotBounce 1.4s ease-in-out infinite;
+}
+
+.loadingDots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loadingDots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loadingDots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dotBounce {
+  0%, 80%, 100% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .stateContainer {
+    padding: 16px;
+  }
+
+  .iconWrapper {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 24px;
+  }
+
+  .iconWrapper svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .backButton,
+  .retryButton {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 24px;
+  }
+
+  .loadingSpinner {
+    width: 80px;
+    height: 80px;
+  }
+
+  .loadingText {
+    font-size: 16px;
+  }
+}
+
+/* Light Theme */
+[data-theme="light"] .stateContainer {
+  background: var(--bg-primary);
+}
+
+[data-theme="light"] .retryButton {
+  background: var(--bg-elevated);
+  border-color: var(--border-color);
+}
+
+[data-theme="light"] .retryButton:hover {
+  background: var(--bg-hover);
+}

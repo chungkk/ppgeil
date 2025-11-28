@@ -1,0 +1,384 @@
+/* ============================================
+   SETTINGS PAGE STYLES
+   ============================================ */
+
+.pageHeader {
+  margin-bottom: 32px;
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.pageSubtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Settings Grid */
+.settingsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Setting Card */
+.settingCard {
+  background: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+[data-theme="dark"] .settingCard {
+  background: rgba(139, 92, 246, 0.06);
+  border-color: rgba(147, 51, 234, 0.3);
+}
+
+.settingCard.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.settingCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.settingCardIcon {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border-radius: 10px;
+}
+
+.settingCardTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.settingCardBody {
+  padding: 24px;
+}
+
+/* Profile Info */
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profileItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.profileLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profileValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Form Elements */
+.settingLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.settingDescription {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 4px 0 12px 0;
+  line-height: 1.5;
+}
+
+.settingSelect {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.settingSelect:hover {
+  border-color: var(--accent-blue);
+}
+
+.settingSelect:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.settingHint {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 12px 0 0 0;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-blue);
+}
+
+/* Theme Options */
+.themeOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.themeOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.themeOption:hover {
+  border-color: var(--accent-blue);
+  background: var(--bg-hover);
+}
+
+.themeOption.themeOptionActive {
+  border-color: var(--accent-blue);
+  background: var(--bg-hover);
+}
+
+.themeOptionEmoji {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border-radius: 8px;
+}
+
+.themeOptionContent {
+  flex: 1;
+}
+
+.themeOptionLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.themeOptionDescription {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.checkmark {
+  font-size: 18px;
+  color: var(--accent-blue);
+}
+
+/* Password Form */
+.passwordForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.formInput:hover {
+  border-color: var(--accent-blue);
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.formInput::placeholder {
+  color: var(--text-muted);
+}
+
+.submitButton {
+  padding: 14px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Difficulty Levels */
+.difficultyLevels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.difficultyOption {
+  padding: 16px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.difficultyOption:hover {
+  border-color: var(--accent-blue);
+}
+
+.difficultyOption.active {
+  border-color: var(--accent-blue);
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.difficultyIcon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.difficultyLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.difficultyDesc {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 992px) {
+  .settingsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 24px;
+  }
+
+  .settingCardHeader {
+    padding: 16px 20px;
+  }
+
+  .settingCardBody {
+    padding: 20px;
+  }
+
+  .difficultyLevels {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .pageHeader {
+    margin-bottom: 24px;
+  }
+
+  .pageTitle {
+    font-size: 22px;
+  }
+
+  .settingCardIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .settingCardTitle {
+    font-size: 15px;
+  }
+
+  .settingCardHeader {
+    padding: 14px 16px;
+  }
+
+  .settingCardBody {
+    padding: 16px;
+  }
+}

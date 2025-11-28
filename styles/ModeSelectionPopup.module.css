@@ -1,0 +1,425 @@
+/* Mode Selection Popup Styles */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: var(--spacing-lg);
+  backdrop-filter: blur(4px);
+}
+
+.popup {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  max-width: 580px;
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--border-color);
+  animation: slideUp 0.3s ease;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(30px);
+}
+
+[data-theme="light"] .popup {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(107, 166, 85, 0.25);
+}
+
+[data-theme="dark"] .popup {
+  background: rgba(15, 5, 32, 0.75);
+  border-color: rgba(147, 51, 234, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 24px;
+}
+
+.closeBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.popupTitle {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+  padding-right: var(--spacing-xl);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.lessonInfo {
+  margin-bottom: var(--spacing-xl);
+}
+
+.lessonTitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.5;
+}
+
+.lessonMeta {
+  display: flex;
+  gap: var(--spacing-md);
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.modesContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-md);
+}
+
+.modeOption {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.modeOption:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(74, 144, 226, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.modeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+}
+
+.modeIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.modeName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.modeDescription {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-top: var(--spacing-sm);
+  text-align: center;
+}
+
+.modeStudyTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: var(--spacing-md);
+  padding: 6px 12px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.studyTimeIcon {
+  font-size: 14px;
+}
+
+.studyTimeText {
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 10px;
+  }
+
+  .popup {
+    padding: 14px;
+    max-width: 92vw;
+  }
+
+  .closeBtn {
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .popupTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-right: 32px;
+  }
+
+  .lessonInfo {
+    margin-bottom: 12px;
+  }
+
+  .lessonTitle {
+    font-size: 14px;
+  }
+
+  .lessonMeta {
+    font-size: 12px;
+  }
+
+  .modesContainer {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .modeOption {
+    padding: 10px;
+  }
+
+  .modeHeader {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .modeIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .modeName {
+    font-size: 14px;
+  }
+
+  .modeDescription {
+    margin-top: 6px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .modeStudyTime {
+    margin-top: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .studyTimeIcon {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    padding: 8px;
+  }
+
+  .popup {
+    padding: 12px;
+  }
+
+  .closeBtn {
+    width: 26px;
+    height: 26px;
+    font-size: 18px;
+    top: 8px;
+    right: 8px;
+  }
+
+  .popupTitle {
+    font-size: 17px;
+    margin-bottom: 8px;
+    padding-right: 28px;
+  }
+
+  .lessonInfo {
+    margin-bottom: 10px;
+  }
+
+  .lessonTitle {
+    font-size: 13px;
+  }
+
+  .lessonMeta {
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .modesContainer {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .modeOption {
+    padding: 8px;
+  }
+
+  .modeHeader {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .modeIcon {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .modeName {
+    font-size: 13px;
+  }
+
+  .modeDescription {
+    margin-top: 4px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .modeStudyTime {
+    margin-top: 6px;
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .studyTimeIcon {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  .overlay {
+    padding: 6px;
+  }
+
+  .popup {
+    padding: 10px;
+  }
+
+  .closeBtn {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .popupTitle {
+    font-size: 16px;
+    margin-bottom: 6px;
+    padding-right: 26px;
+  }
+
+  .lessonInfo {
+    margin-bottom: 8px;
+  }
+
+  .lessonTitle {
+    font-size: 12px;
+  }
+
+  .lessonMeta {
+    font-size: 10px;
+    gap: 6px;
+  }
+
+  .modesContainer {
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  .modeOption {
+    padding: 6px;
+  }
+
+  .modeHeader {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .modeIcon {
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+  }
+
+  .modeName {
+    font-size: 12px;
+  }
+
+  .modeDescription {
+    margin-top: 3px;
+    font-size: 9px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .modeStudyTime {
+    margin-top: 5px;
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+
+  .studyTimeIcon {
+    font-size: 10px;
+  }
+}

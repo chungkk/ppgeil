@@ -1,0 +1,230 @@
+/* ===== MODE SELECTION POPUP STYLES ===== */
+
+.mode-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mode-popup-container {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 20px 60px rgba(108, 92, 231, 0.4);
+    overflow: hidden;
+    animation: popupSlideIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes popupSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.mode-popup-header {
+    background: linear-gradient(135deg, #FF6B9D 0%, #FF9A76 100%);
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.mode-popup-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mode-popup-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 0;
+    line-height: 1;
+}
+
+.mode-popup-close:hover {
+    background: white;
+    color: #FF6B9D;
+    transform: rotate(90deg) scale(1.1);
+}
+
+.mode-popup-lesson-info {
+    padding: 25px;
+    background: linear-gradient(135deg, #fff5f8 0%, #f0f4ff 100%);
+    border-bottom: 2px solid rgba(255, 107, 157, 0.1);
+}
+
+.mode-popup-lesson-info h3 {
+    margin: 0 0 10px 0;
+    color: #6C5CE7;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.mode-popup-lesson-info p {
+    margin: 0;
+    color: #636e72;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.mode-popup-options {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mode-popup-option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border: 2px solid #dfe6e9;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.mode-popup-option:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+    border-color: #FF6B9D;
+}
+
+.mode-popup-option.mode-option-dictation:hover {
+    background: linear-gradient(135deg, #fff5f8 0%, #ffe0eb 100%);
+    border-color: #FF6B9D;
+}
+
+.mode-popup-option.mode-option-shadowing:hover {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2ff 100%);
+    border-color: #4ECDC4;
+}
+
+.mode-popup-icon {
+    font-size: 3rem;
+    min-width: 60px;
+    text-align: center;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.mode-popup-option:hover .mode-popup-icon {
+    animation: none;
+    transform: scale(1.2);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.mode-popup-text {
+    flex: 1;
+}
+
+.mode-popup-text h4 {
+    margin: 0 0 8px 0;
+    color: #2d3436;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.mode-popup-text p {
+    margin: 0;
+    color: #636e72;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .mode-popup-container {
+        width: 95%;
+        max-width: none;
+    }
+
+    .mode-popup-header {
+        padding: 20px;
+    }
+
+    .mode-popup-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .mode-popup-close {
+        width: 36px;
+        height: 36px;
+        font-size: 1.5rem;
+    }
+
+    .mode-popup-lesson-info {
+        padding: 20px;
+    }
+
+    .mode-popup-options {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .mode-popup-option {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .mode-popup-icon {
+        font-size: 2.5rem;
+        min-width: auto;
+    }
+
+    .mode-popup-text h4 {
+        font-size: 1.1rem;
+    }
+
+    .mode-popup-text p {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,407 @@
+.notificationDropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 380px;
+  max-height: 500px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  overflow: hidden;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--card-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.markAllBtn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.markAllBtn:hover {
+  background: var(--primary-light);
+}
+
+.notificationList {
+  max-height: 440px;
+  overflow-y: auto;
+}
+
+.notificationList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notificationList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.notificationList::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.notificationList::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+.notificationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 50px 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.notificationItem:last-child {
+  border-bottom: none;
+}
+
+.notificationItem:hover {
+  background: var(--hover-bg);
+}
+
+.notificationItem.unread {
+  background: var(--primary-light);
+}
+
+.notificationItem.unread:hover {
+  background: var(--hover-bg);
+}
+
+.notificationIcon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.notificationContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.notificationMessage {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  word-wrap: break-word;
+}
+
+.notificationTime {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.unreadDot {
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  line-height: 1;
+}
+
+.notificationItem:hover .deleteBtn {
+  opacity: 1;
+}
+
+.deleteBtn:hover {
+  background: rgba(255, 59, 48, 0.1);
+  color: #ff3b30;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 12px;
+}
+
+.loadingSpinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 12px;
+}
+
+.emptyIcon {
+  font-size: 48px;
+  opacity: 0.3;
+}
+
+.empty p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .notificationDropdown {
+    position: fixed;
+    top: 56px;
+    right: 12px;
+    left: 12px;
+    width: auto;
+    max-width: none;
+  }
+
+  .header {
+    padding: 14px 16px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .markAllBtn {
+    font-size: 12px;
+  }
+
+  .notificationList {
+    max-height: 380px;
+  }
+
+  .notificationItem {
+    padding: 14px 46px 14px 16px;
+  }
+
+  .notificationIcon {
+    font-size: 24px;
+  }
+
+  .notificationMessage {
+    font-size: 13px;
+  }
+
+  .notificationTime {
+    font-size: 11px;
+  }
+
+  .deleteBtn {
+    font-size: 16px;
+    width: 26px;
+    height: 26px;
+    right: 14px;
+  }
+
+  .loading {
+    padding: 32px 16px;
+  }
+
+  .loadingSpinner {
+    width: 28px;
+    height: 28px;
+  }
+
+  .empty {
+    padding: 48px 16px;
+  }
+
+  .emptyIcon {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notificationDropdown {
+    top: 52px;
+    right: 8px;
+    left: 8px;
+  }
+
+  .header {
+    padding: 12px 14px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .markAllBtn {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .notificationList {
+    max-height: 320px;
+  }
+
+  .notificationItem {
+    padding: 12px 42px 12px 14px;
+    gap: 10px;
+  }
+
+  .notificationIcon {
+    font-size: 22px;
+  }
+
+  .notificationMessage {
+    font-size: 12px;
+  }
+
+  .notificationTime {
+    font-size: 10px;
+  }
+
+  .deleteBtn {
+    font-size: 15px;
+    width: 24px;
+    height: 24px;
+    right: 12px;
+    opacity: 1;
+  }
+
+  .loading {
+    padding: 28px 14px;
+  }
+
+  .loadingSpinner {
+    width: 24px;
+    height: 24px;
+  }
+
+  .empty {
+    padding: 40px 14px;
+  }
+
+  .emptyIcon {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  .notificationDropdown {
+    top: 52px;
+    right: 6px;
+    left: 6px;
+  }
+
+  .header {
+    padding: 10px 12px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .notificationList {
+    max-height: 280px;
+  }
+
+  .notificationItem {
+    padding: 10px 38px 10px 12px;
+    gap: 8px;
+  }
+
+  .notificationIcon {
+    font-size: 20px;
+  }
+
+  .notificationMessage {
+    font-size: 11px;
+  }
+
+  .deleteBtn {
+    font-size: 14px;
+    width: 22px;
+    height: 22px;
+    right: 10px;
+  }
+
+  .empty {
+    padding: 32px 12px;
+  }
+
+  .emptyIcon {
+    font-size: 32px;
+  }
+}

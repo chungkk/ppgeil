@@ -1,0 +1,241 @@
+.fixedShareContainer {
+  position: fixed;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: rgba(30, 35, 50, 0.92);
+  padding: 6px 5px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  pointer-events: auto;
+}
+
+.fixedShareContainer.hidden {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border: none;
+}
+
+.shareButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.shareButton svg {
+  width: 16px;
+  height: 16px;
+}
+
+.shareButton:hover {
+  transform: scale(1.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.shareButton:active {
+  transform: scale(0.9);
+}
+
+.shareButton.share {
+  background: #5c6471;
+}
+
+.shareButton.share:hover {
+  background: #4a5160;
+}
+
+.shareButton.facebook {
+  background: #1877f2;
+}
+
+.shareButton.facebook:hover {
+  background: #0c5fcd;
+}
+
+.shareButton.twitter {
+  background: #000000;
+}
+
+.shareButton.twitter:hover {
+  background: #1a1a1a;
+}
+
+.shareButton.linkedin {
+  background: #0077b5;
+}
+
+.shareButton.linkedin:hover {
+  background: #005885;
+}
+
+.shareButton.telegram {
+  background: #0088cc;
+}
+
+.shareButton.telegram:hover {
+  background: #006699;
+}
+
+.shareButton.whatsapp {
+  background: #25d366;
+}
+
+.shareButton.whatsapp:hover {
+  background: #1da851;
+}
+
+.shareButton.line {
+  background: #00b900;
+}
+
+.shareButton.line:hover {
+  background: #009900;
+}
+
+.shareButton.weibo {
+  background: #e6162d;
+}
+
+.shareButton.weibo:hover {
+  background: #c4101f;
+}
+
+.shareButton.copy {
+  background: #667eea;
+}
+
+.shareButton.copy:hover {
+  background: #5568d3;
+}
+
+.copyLinkWrapper {
+  position: relative;
+}
+
+.toggleButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #5c6471;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.toggleButton svg {
+  width: 12px;
+  height: 12px;
+}
+
+.toggleButton:hover {
+  transform: scale(1.1);
+  background: #4a5160;
+}
+
+.toggleButton:active {
+  transform: scale(0.95);
+}
+
+.toggleButton.collapsed {
+  transform: rotate(180deg);
+}
+
+.toggleButton.collapsed:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.tooltip {
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #111827;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+  animation: fadeIn 0.2s;
+  z-index: 10;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid #111827;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.6);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .fixedShareContainer {
+    display: none;
+  }
+}
+
+/* Dark theme support - Vibrant Purple */
+[data-theme="dark"] .fixedShareContainer {
+  background: rgba(15, 5, 32, 0.95);
+  border-color: rgba(147, 51, 234, 0.35);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), 0 2px 10px rgba(139, 92, 246, 0.2);
+}
+
+[data-theme="dark"] .fixedShareContainer.hidden {
+  background: transparent;
+}

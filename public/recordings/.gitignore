@@ -1,0 +1,5 @@
+# Ignore all audio recording files
+*
+# But keep this .gitignore and .gitkeep
+!.gitignore
+!.gitkeep

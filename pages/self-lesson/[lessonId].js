@@ -1,0 +1,3866 @@
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
+import SEO, { generateVideoStructuredData, generateBreadcrumbStructuredData } from '../../components/SEO';
+import dynamic from 'next/dynamic';
+import DictionaryPopup from '../../components/DictionaryPopup';
+import WordTooltip from '../../components/WordTooltip';
+import WordSuggestionPopup from '../../components/WordSuggestionPopup';
+import PointsAnimation from '../../components/PointsAnimation';
+import ProgressIndicator from '../../components/ProgressIndicator';
+
+// Dictation Components
+import {
+  DictationHeader,
+  DictationVideoSection,
+  TranscriptPanel,
+  MobileBottomControls,
+  DictationSkeleton
+} from '../../components/dictation';
+
+const ShadowingVoiceRecorder = dynamic(() => import('../../components/ShadowingVoiceRecorder'), {
+  ssr: false,
+  loading: () => <div style={{ width: '40px', height: '40px', background: '#f0f0f0', borderRadius: '50%' }}></div>
+});
+
+// Hooks and utilities
+import { useLessonData } from '../../lib/hooks/useLessonData';
+import { useDictationPlayer } from '../../lib/hooks/useDictationPlayer';
+import { useDictationProgress } from '../../lib/hooks/useDictationProgress';
+import { useSentenceNavigation } from '../../lib/hooks/useSentenceNavigation';
+import { useStudyTimer } from '../../lib/hooks/useStudyTimer';
+import { youtubeAPI } from '../../lib/youtubeApi';
+import { useAuth } from '../../context/AuthContext';
+import { speakText } from '../../lib/textToSpeech';
+import { toast } from 'react-toastify';
+import { translationCache } from '../../lib/translationCache';
+import { hapticEvents } from '../../lib/haptics';
+import { navigateWithLocale } from '../../lib/navigation';
+import { formatTime, formatStudyTime as formatStudyTimeUtil } from '../../lib/dictationUtils';
+import styles from '../../styles/dictationPage.module.css';
+
+// Map difficulty level to hidePercentage (outside component to avoid re-creation)
+// A1=10%, A2/B1=30%, B2=60%, C1/C2=100%
+const DIFFICULTY_TO_PERCENTAGE = {
+  'a1': 10,
+  'a2': 30,
+  'b1': 30,
+  'b2': 60,
+  'c1': 100,
+  'c2': 100,
+  'c1c2': 100  // Combined C1+C2 option
+};
+
+const PERCENTAGE_TO_DIFFICULTY = {
+  10: 'a1',
+  30: 'b1',  // Default to B1 for 30%
+  60: 'b2',
+  100: 'c1'  // Default to C1 for 100%
+};
+
+
+const DEBUG_TIMER = false; // Set to true to enable timer logs
+
+// Calculate similarity between two sentences (word-level comparison)
+const calculateSimilarity = (userInput, correctSentence) => {
+  // Normalize both strings
+  const normalize = (str) => {
+    return str
+      .toLowerCase()
+      .trim()
+      .replace(/[.,!?;:"""''„]/g, '') // Remove punctuation
+      .replace(/\s+/g, ' '); // Normalize whitespace
+  };
+
+  const normalizedInput = normalize(userInput);
+  const normalizedCorrect = normalize(correctSentence);
+
+  // Split into words
+  const userWords = normalizedInput.split(' ').filter(w => w.length > 0);
+  const correctWords = normalizedCorrect.split(' ').filter(w => w.length > 0);
+
+  if (correctWords.length === 0) return 0;
+
+  // Count matching words (order doesn't matter for now)
+  let correctCount = 0;
+  const correctWordsCopy = [...correctWords];
+
+  userWords.forEach(userWord => {
+    const index = correctWordsCopy.indexOf(userWord);
+    if (index !== -1) {
+      correctCount++;
+      correctWordsCopy.splice(index, 1); // Remove matched word
+    }
+  });
+
+  // Calculate percentage
+  const similarity = (correctCount / correctWords.length) * 100;
+  return Math.round(similarity);
+};
+
+const DictationPageContent = () => {
+  const { t } = useTranslation();
+  const router = useRouter();
+  const { lessonId } = useRouter().query;
+  
+  // State management
+  const [transcriptData, setTranscriptData] = useState([]);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [segmentPlayEndTime, setSegmentPlayEndTime] = useState(null);
+  const [segmentEndTimeLocked, setSegmentEndTimeLocked] = useState(false);
+  const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
+  const [pausedPositions, setPausedPositions] = useState({}); // { sentenceIndex: pausedTime }
+  const [isUserSeeking, setIsUserSeeking] = useState(false);
+  const [userSeekTimeout, setUserSeekTimeout] = useState(null);
+  const [isTextHidden, setIsTextHidden] = useState(true);
+  const [hidePercentage, setHidePercentage] = useState(30); // Will be loaded from user profile
+  const [difficultyLevel, setDifficultyLevel] = useState('b1'); // a1, a2, b1, b2, c1c2 (or legacy c1, c2)
+  
+  // Auto-stop video at end of sentence (similar to shadowing mode)
+  const [autoStop, setAutoStop] = useState(true);
+
+  // Playback speed control
+  const [playbackSpeed, setPlaybackSpeed] = useState(1);
+
+  // Dictation mode: 'fill-blanks' or 'full-sentence'
+  const [dictationMode, setDictationMode] = useState(() => {
+    if (typeof window === 'undefined') return 'fill-blanks';
+    const saved = localStorage.getItem('dictationMode');
+    return saved || 'fill-blanks';
+  });
+
+  // Full sentence input states
+  const [fullSentenceInputs, setFullSentenceInputs] = useState({}); // { sentenceIndex: inputText }
+  const [sentenceResults, setSentenceResults] = useState({}); // { sentenceIndex: { similarity: number, isCorrect: boolean } }
+  const [revealedHintWords, setRevealedHintWords] = useState({}); // { sentenceIndex: { wordIndex: true } }
+  const [wordComparisonResults, setWordComparisonResults] = useState({}); // { sentenceIndex: { wordIndex: 'correct' | 'incorrect' } }
+  const [partialRevealedChars, setPartialRevealedChars] = useState({}); // { sentenceIndex: { wordIndex: numberOfCharsRevealed } }
+  const [checkedSentences, setCheckedSentences] = useState([]); // Array of sentence indices that have been checked (revealed after check)
+
+  // Save dictationMode to localStorage when it changes
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('dictationMode', dictationMode);
+    }
+  }, [dictationMode]);
+
+  // Load lesson from localStorage first (for self-lessons), fallback to API
+  const [lesson, setLesson] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [loadedProgress, setLoadedProgress] = useState(null);
+  const [loadedStudyTime, setLoadedStudyTime] = useState(0);
+
+  useEffect(() => {
+    const loadSelfLesson = async () => {
+      if (!lessonId) return;
+
+      try {
+        setLoading(true);
+
+        // Try loading from localStorage first (self-lesson)
+        const storedLesson = localStorage.getItem(`self-lesson-${lessonId}`);
+        if (storedLesson) {
+          const data = JSON.parse(storedLesson);
+          setLesson(data);
+          setProgressLoaded(true); // Self-lessons don't save progress to database
+          console.log('✅ Loaded self-lesson from localStorage:', data);
+          setLoading(false);
+          return;
+        }
+
+        // Fallback: Load from API (regular lessons)
+        const res = await fetch(`/api/lessons/${lessonId}`);
+        if (res.ok) {
+          const data = await res.json();
+          setLesson(data);
+          console.log('✅ Loaded lesson from API:', data);
+        } else {
+          console.error('❌ Lesson not found');
+          setLesson(null);
+        }
+      } catch (error) {
+        console.error('Error loading lesson:', error);
+        setLesson(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadSelfLesson();
+  }, [lessonId]);
+
+  // Get user and auth functions early to avoid TDZ errors
+  const { user, updateDifficultyLevel } = useAuth();
+
+  // Load user's preferred difficulty level
+  useEffect(() => {
+    if (user && user.preferredDifficultyLevel) {
+      let level = user.preferredDifficultyLevel;
+      
+      // Migrate legacy c1/c2 to c1c2
+      if (level === 'c1' || level === 'c2') {
+        level = 'c1c2';
+        // Save the migration automatically
+        updateDifficultyLevel('c1c2').then(result => {
+          if (result.success) {
+            console.log('✅ Migrated difficulty level from', user.preferredDifficultyLevel, '→ c1c2');
+          }
+        });
+      }
+      
+      setDifficultyLevel(level);
+      setHidePercentage(DIFFICULTY_TO_PERCENTAGE[level] || 30);
+      
+      // Auto-switch mode based on difficulty level
+      if (level === 'c1c2') {
+        setDictationMode('full-sentence');
+        console.log('✅ Auto-switched to full-sentence mode for C1+C2');
+      } else {
+        setDictationMode('fill-blanks');
+        console.log('✅ Auto-switched to fill-blanks mode for', level.toUpperCase());
+      }
+      
+      console.log('✅ Loaded difficulty level from user:', level, '→', DIFFICULTY_TO_PERCENTAGE[level] + '%');
+    }
+  }, [user, updateDifficultyLevel]);
+
+  // Handle difficulty level change
+  const handleDifficultyChange = useCallback(async (newLevel) => {
+    const newPercentage = DIFFICULTY_TO_PERCENTAGE[newLevel] || 30;
+    
+    setHidePercentage(newPercentage);
+    setDifficultyLevel(newLevel);
+    
+    // Auto-switch mode based on difficulty level
+    if (newLevel === 'c1c2') {
+      setDictationMode('full-sentence');
+      console.log('✅ Auto-switched to full-sentence mode for C1+C2');
+    } else {
+      setDictationMode('fill-blanks');
+      console.log('✅ Auto-switched to fill-blanks mode for', newLevel.toUpperCase());
+    }
+    
+    // Save to database
+    if (user) {
+      const result = await updateDifficultyLevel(newLevel);
+      if (result.success) {
+        console.log('✅ Difficulty level saved:', newLevel, '→', newPercentage + '%');
+      } else {
+        console.error('❌ Failed to save difficulty level:', result.error);
+      }
+    }
+  }, [user, updateDifficultyLevel]);
+  
+  // Dictation specific states (from ckk)
+  const [savedWords, setSavedWords] = useState([]);
+  const [clickCount, setClickCount] = useState(0);
+  const [lastClickTime, setLastClickTime] = useState(0);
+  const [lastClickedInput, setLastClickedInput] = useState(null);
+  const [processedText, setProcessedText] = useState('');
+
+  // Track if we've already jumped to first incomplete sentence
+  const hasJumpedToIncomplete = useRef(false);
+
+  // Touch swipe handling
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  // Progress tracking
+  const [completedSentences, setCompletedSentences] = useState([]);
+  const [completedWords, setCompletedWords] = useState({}); // { sentenceIndex: { wordIndex: correctWord } }
+  const [progressLoaded, setProgressLoaded] = useState(false);
+  
+  // Points tracking - track which words have been scored
+  const [wordPointsProcessed, setWordPointsProcessed] = useState({}); // { sentenceIndex: { wordIndex: 'correct' | 'incorrect' } }
+  
+  // Points animation states
+  const [pointsAnimations, setPointsAnimations] = useState([]); // Array of { id, points, position }
+  
+  // Vocabulary popup states
+  const [showVocabPopup, setShowVocabPopup] = useState(false);
+  const [selectedWord, setSelectedWord] = useState('');
+  const [popupPosition, setPopupPosition] = useState({ top: 0, left: 0 });
+  const [popupArrowPosition, setPopupArrowPosition] = useState('right');
+  const [clickedWordElement, setClickedWordElement] = useState(null);
+  
+  // Mobile tooltip states
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [tooltipWord, setTooltipWord] = useState('');
+  const [tooltipTranslation, setTooltipTranslation] = useState('');
+  const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
+  
+  // Mobile detection state
+  const [isMobile, setIsMobile] = useState(false);
+  
+  // Word suggestion popup states
+  const [showSuggestionPopup, setShowSuggestionPopup] = useState(false);
+  const [suggestionWord, setSuggestionWord] = useState('');
+  const [suggestionWordIndex, setSuggestionWordIndex] = useState(null);
+  const [suggestionContext, setSuggestionContext] = useState('');
+  const [suggestionPosition, setSuggestionPosition] = useState({ top: 0, left: 0 });
+  
+  // Consecutive sentence completion counter
+  const [consecutiveSentences, setConsecutiveSentences] = useState(0);
+
+  // Voice recording states for dictation practice (per sentence)
+  const [recordingStates, setRecordingStates] = useState({}); // { sentenceIndex: { isRecording, recordedBlob, comparisonResult, isPlaying } }
+  const audioPlaybackRef = useRef(null);
+
+  // Study time tracking - using custom hook
+  const { studyTime, isTimerRunning, progressLoaded: studyTimeLoaded } = useStudyTimer({
+    isPlaying,
+    user,
+    lessonId,
+    loadedStudyTime,
+    mode: 'dictation'
+  });
+
+  const audioRef = useRef(null);
+  const youtubePlayerRef = useRef(null);
+  const [isYouTube, setIsYouTube] = useState(false);
+  const [isYouTubeAPIReady, setIsYouTubeAPIReady] = useState(false);
+  
+  // Ref for transcript items to enable auto-scroll
+  const transcriptItemRefs = useRef({});
+  const transcriptSectionRef = useRef(null);
+  
+  // Ref for mobile dictation slides to enable auto-scroll
+  const dictationSlidesRef = useRef(null);
+  const isProgrammaticScrollRef = useRef(false); // Track programmatic vs manual scroll
+  const lastRenderedStateRef = useRef({ sentenceIndex: -1, isCompleted: false }); // Track last rendered state to prevent infinite loop
+
+  // Leaderboard tracking
+  const sessionStartTimeRef = useRef(Date.now());
+  const completedSentencesForLeaderboardRef = useRef(new Set());
+  const lastStatsUpdateRef = useRef(Date.now());
+
+  // Update monthly leaderboard stats
+  const updateMonthlyStats = useCallback(async (forceUpdate = false) => {
+    if (!user) return;
+
+    const now = Date.now();
+    const timeSinceLastUpdate = (now - lastStatsUpdateRef.current) / 1000; // in seconds
+
+    // Only update if at least 60 seconds have passed or force update
+    if (!forceUpdate && timeSinceLastUpdate < 60) return;
+
+    const totalTimeSpent = Math.floor((now - sessionStartTimeRef.current) / 1000);
+    const newSentencesCompleted = completedSentencesForLeaderboardRef.current.size;
+
+    // Only update if there's meaningful progress
+    if (totalTimeSpent < 10 && newSentencesCompleted === 0 && !forceUpdate) return;
+
+    try {
+      const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+      if (!token) return;
+
+      await fetch('/api/leaderboard/update-monthly-stats', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          timeSpent: totalTimeSpent,
+          sentencesCompleted: newSentencesCompleted,
+          lessonsCompleted: 0 // We'll track full lesson completion separately
+        })
+      });
+
+      // Reset tracking after successful update
+      sessionStartTimeRef.current = now;
+      completedSentencesForLeaderboardRef.current.clear();
+      lastStatsUpdateRef.current = now;
+    } catch (error) {
+      console.error('Error updating monthly stats:', error);
+    }
+  }, [user]);
+
+  // Track sentence completion for leaderboard
+  useEffect(() => {
+    if (currentSentenceIndex >= 0 && transcriptData[currentSentenceIndex]) {
+      completedSentencesForLeaderboardRef.current.add(currentSentenceIndex);
+    }
+  }, [currentSentenceIndex, transcriptData]);
+
+  // Periodic stats update (every 5 minutes)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      updateMonthlyStats(false);
+    }, 5 * 60 * 1000); // 5 minutes
+
+    return () => clearInterval(interval);
+  }, [updateMonthlyStats]);
+
+  // Save stats on unmount and page unload
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      updateMonthlyStats(true);
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+      // Save final stats when component unmounts
+      updateMonthlyStats(true);
+    };
+  }, [updateMonthlyStats]);
+
+  // Expose audioRef globally để components có thể pause khi phát từ
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.mainAudioRef = audioRef;
+      window.mainYoutubePlayerRef = youtubePlayerRef;
+    }
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.mainAudioRef = null;
+        window.mainYoutubePlayerRef = null;
+      }
+    };
+  }, []);
+
+  // Detect mobile screen size
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Check on mount
+    checkMobile();
+
+    // Add resize listener
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Auto-scroll transcript to current sentence (only scroll within container)
+  useEffect(() => {
+    if (!isMobile && transcriptItemRefs.current[currentSentenceIndex] && transcriptSectionRef.current) {
+      const container = transcriptSectionRef.current;
+      const element = transcriptItemRefs.current[currentSentenceIndex];
+      
+      // Calculate positions
+      const containerRect = container.getBoundingClientRect();
+      const elementRect = element.getBoundingClientRect();
+      
+      // Calculate how much to scroll to center the element in the container
+      const elementOffsetTop = element.offsetTop;
+      const elementHeight = element.offsetHeight;
+      const containerHeight = container.clientHeight;
+      
+      // Center the element: scroll to (element position - half container height + half element height)
+      const scrollPosition = elementOffsetTop - (containerHeight / 2) + (elementHeight / 2);
+      
+      // Smooth scroll within container only
+      container.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    }
+  }, [currentSentenceIndex, isMobile]);
+
+  // Update popup position on scroll
+  useEffect(() => {
+    if (!showVocabPopup || !clickedWordElement) return;
+
+    let rafId = null;
+    let isUpdating = false;
+
+    const updatePopupPosition = () => {
+      if (!isUpdating) {
+        isUpdating = true;
+        rafId = requestAnimationFrame(() => {
+          const rect = clickedWordElement.getBoundingClientRect();
+          const popupWidth = 350;
+          const popupHeight = 280;
+          const gapFromWord = 30;
+
+          const spaceAbove = rect.top;
+          const spaceBelow = window.innerHeight - rect.bottom;
+
+          let top, left, arrowPos;
+
+          if (spaceAbove >= popupHeight + gapFromWord + 20) {
+            top = rect.top - popupHeight - gapFromWord;
+            arrowPos = 'bottom';
+          } else {
+            top = rect.bottom + gapFromWord;
+            arrowPos = 'top';
+          }
+
+          left = rect.left + rect.width / 2 - popupWidth / 2;
+
+          if (left < 20) {
+            left = 20;
+          }
+          if (left + popupWidth > window.innerWidth - 20) {
+            left = window.innerWidth - popupWidth - 20;
+          }
+
+          if (top < 20) {
+            top = 20;
+          }
+          if (top + popupHeight > window.innerHeight - 20) {
+            top = window.innerHeight - popupHeight - 20;
+          }
+
+          setPopupPosition({ top, left });
+          setPopupArrowPosition(arrowPos);
+          isUpdating = false;
+        });
+      }
+    };
+
+    window.addEventListener('scroll', updatePopupPosition, true);
+    window.addEventListener('resize', updatePopupPosition);
+
+    return () => {
+      window.removeEventListener('scroll', updatePopupPosition, true);
+      window.removeEventListener('resize', updatePopupPosition);
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+    };
+  }, [showVocabPopup, clickedWordElement]);
+
+  // Extract YouTube video ID from URL
+  const getYouTubeVideoId = (url) => {
+    if (!url) return null;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+  };
+
+  // Use centralized YouTube API manager
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    youtubeAPI.waitForAPI()
+      .then(() => setIsYouTubeAPIReady(true))
+      .catch(err => console.error('YouTube API error:', err));
+  }, []);
+
+  // Set isYouTube flag
+  useEffect(() => {
+    if (!lesson || !lesson.youtubeUrl) {
+      setIsYouTube(false);
+    } else {
+      setIsYouTube(true);
+    }
+  }, [lesson]);
+
+  // Initialize YouTube player when API is ready and element is rendered
+  useEffect(() => {
+    if (!isYouTube || !isYouTubeAPIReady || !lesson) {
+      return;
+    }
+
+    const playerOrigin = typeof window !== 'undefined' ? window.location.origin : undefined;
+    const videoId = getYouTubeVideoId(lesson.youtubeUrl);
+    if (!videoId) return;
+
+    // Function to initialize player - with retry logic
+    const initializePlayer = () => {
+      const playerElement = document.getElementById('youtube-player');
+
+      // If element doesn't exist yet, wait for next frame
+      if (!playerElement) {
+        console.log('YouTube player element not ready, retrying...');
+        requestAnimationFrame(initializePlayer);
+        return;
+      }
+
+      // Destroy existing player if any
+      if (youtubePlayerRef.current && youtubePlayerRef.current.destroy) {
+        youtubePlayerRef.current.destroy();
+        youtubePlayerRef.current = null;
+      }
+
+      console.log('Initializing YouTube player...');
+
+      // Create the player
+      youtubePlayerRef.current = new window.YT.Player('youtube-player', {
+        height: '100%',
+        width: '100%',
+        videoId: videoId,
+        playerVars: {
+          controls: 0,
+          disablekb: 1,
+          fs: 0,
+          modestbranding: 1,
+          origin: playerOrigin,
+          cc_load_policy: 0,
+          rel: 0,
+          showinfo: 0,
+          iv_load_policy: 3,
+          playsinline: 1,
+          enablejsapi: 1,
+          widget_referrer: playerOrigin,
+          autohide: 1,
+        },
+        events: {
+          onReady: (event) => {
+            setDuration(event.target.getDuration());
+            
+            // Only set size on desktop - mobile uses CSS aspect-ratio or height
+            const isMobile = window.innerWidth <= 768;
+            if (!isMobile) {
+              const playerElement = document.getElementById('youtube-player');
+              if (playerElement && playerElement.parentElement) {
+                // Get parent container (videoPlayerWrapper) dimensions
+                const wrapper = playerElement.parentElement;
+                const rect = wrapper.getBoundingClientRect();
+
+                // Set player size to fill the container
+                if (rect.width > 0 && rect.height > 0) {
+                  event.target.setSize(rect.width, rect.height);
+                }
+              }
+            }
+          },
+          onStateChange: (event) => {
+            if (event.data === window.YT.PlayerState.PLAYING) {
+              setIsPlaying(true);
+            } else if (event.data === window.YT.PlayerState.PAUSED) {
+              setIsPlaying(false);
+            }
+          }
+        }
+      });
+    };
+
+    // Start initialization
+    initializePlayer();
+
+    // Add resize listener to adjust player size when window resizes (desktop only)
+    const handleResize = () => {
+      const isMobile = window.innerWidth <= 768;
+      if (!isMobile && youtubePlayerRef.current && youtubePlayerRef.current.setSize) {
+        const playerElement = document.getElementById('youtube-player');
+        if (playerElement && playerElement.parentElement) {
+          const wrapper = playerElement.parentElement;
+          const rect = wrapper.getBoundingClientRect();
+
+          if (rect.width > 0 && rect.height > 0) {
+            youtubePlayerRef.current.setSize(rect.width, rect.height);
+          }
+        }
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    // Also handle orientation change on mobile
+    window.addEventListener('orientationchange', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
+
+      if (youtubePlayerRef.current && youtubePlayerRef.current.destroy) {
+        youtubePlayerRef.current.destroy();
+        youtubePlayerRef.current = null;
+      }
+    };
+  }, [isYouTube, isYouTubeAPIReady, lesson]);
+
+  // Load transcript when lesson is ready (from SWR)
+  useEffect(() => {
+    if (lesson && lesson.json) {
+      loadTranscript(lesson.json);
+    }
+  }, [lesson]);
+
+  // Load progress from SWR hook
+  useEffect(() => {
+    // Wait until loadedProgress is actually loaded (not undefined)
+    // Skip if loadedProgress is null (for self-lessons)
+    if (loadedProgress !== undefined && loadedProgress !== null) {
+      const loadedSentences = loadedProgress.completedSentences || [];
+      const loadedWords = loadedProgress.completedWords || {};
+
+      // Normalize keys to numbers
+      const normalizedWords = {};
+      Object.keys(loadedWords).forEach(sentenceIdx => {
+        const numIdx = parseInt(sentenceIdx);
+        normalizedWords[numIdx] = {};
+        Object.keys(loadedWords[sentenceIdx]).forEach(wordIdx => {
+          const numWordIdx = parseInt(wordIdx);
+          normalizedWords[numIdx][numWordIdx] = loadedWords[sentenceIdx][wordIdx];
+        });
+      });
+
+      setCompletedSentences(loadedSentences);
+      setCompletedWords(normalizedWords);
+
+      if (DEBUG_TIMER) {
+        console.log('Loaded and normalized progress from SWR:', {
+          completedSentences: loadedSentences,
+          completedWords: normalizedWords
+        });
+      }
+      
+      // Only set progressLoaded to true after we've processed the data
+      setProgressLoaded(true);
+    }
+  }, [loadedProgress]);
+
+  // Auto-jump to first incomplete sentence on page load (once only)
+  useEffect(() => {
+    // Only run once when progress is loaded and transcript is ready
+    if (!progressLoaded || !transcriptData.length || hasJumpedToIncomplete.current) {
+      return;
+    }
+
+    // Find first incomplete sentence
+    let firstIncompleteIndex = -1;
+    for (let i = 0; i < transcriptData.length; i++) {
+      if (!completedSentences.includes(i)) {
+        firstIncompleteIndex = i;
+        break;
+      }
+    }
+
+    // Jump to first incomplete sentence if found and different from current
+    if (firstIncompleteIndex !== -1 && firstIncompleteIndex !== currentSentenceIndex) {
+      console.log(`🚀 Auto-jumping to first incomplete sentence: ${firstIncompleteIndex}`);
+      setCurrentSentenceIndex(firstIncompleteIndex);
+      
+      // Seek to the start of that sentence
+      const targetSentence = transcriptData[firstIncompleteIndex];
+      if (targetSentence) {
+        if (isYouTube) {
+          const player = youtubePlayerRef.current;
+          if (player && player.seekTo) {
+            player.seekTo(targetSentence.start);
+          }
+        } else {
+          const audio = audioRef.current;
+          if (audio) {
+            audio.currentTime = targetSentence.start;
+          }
+        }
+      }
+    }
+
+    // Mark as jumped so we don't auto-jump again
+    hasJumpedToIncomplete.current = true;
+  }, [progressLoaded, transcriptData, completedSentences, currentSentenceIndex, isYouTube]);
+
+  // Smooth time update with requestAnimationFrame
+  useEffect(() => {
+    let animationFrameId = null;
+
+    const updateTime = () => {
+      if (isYouTube) {
+        const player = youtubePlayerRef.current;
+        if (player && player.getPlayerState && player.getPlayerState() === window.YT.PlayerState.PLAYING) {
+          const currentTime = player.getCurrentTime();
+          setCurrentTime(currentTime);
+
+          // Auto-stop when segment ends (only if autoStop is enabled)
+          if (autoStop && segmentPlayEndTime !== null && currentTime >= segmentPlayEndTime - 0.02) {
+            if (player.pauseVideo) player.pauseVideo();
+            setIsPlaying(false);
+            setSegmentPlayEndTime(null);
+          }
+        }
+      } else {
+        const audio = audioRef.current;
+        if (audio && !audio.paused) {
+          setCurrentTime(audio.currentTime);
+
+          // Auto-stop when segment ends (only if autoStop is enabled)
+          if (autoStop && segmentPlayEndTime !== null && audio.currentTime >= segmentPlayEndTime - 0.02) {
+            audio.pause();
+            setIsPlaying(false);
+            setSegmentPlayEndTime(null);
+          }
+        }
+      }
+
+      if (isPlaying) {
+        animationFrameId = requestAnimationFrame(updateTime);
+      }
+    };
+
+    if (isPlaying) {
+      animationFrameId = requestAnimationFrame(updateTime);
+    }
+
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, [isPlaying, segmentPlayEndTime, isYouTube, autoStop]);
+
+  // Audio event listeners
+  useEffect(() => {
+    if (isYouTube) return;
+
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const handlePlay = () => {
+      setIsPlaying(true);
+    };
+
+    const handlePause = () => {
+      setIsPlaying(false);
+      setSegmentPlayEndTime(null);
+      setSegmentEndTimeLocked(false);
+    };
+
+    const handleLoadedMetadata = () => setDuration(audio.duration);
+
+    audio.addEventListener('play', handlePlay);
+    audio.addEventListener('pause', handlePause);
+    audio.addEventListener('ended', handlePause);
+    audio.addEventListener('loadedmetadata', handleLoadedMetadata);
+
+    // Initial time update
+    setCurrentTime(audio.currentTime);
+
+    return () => {
+      audio.removeEventListener('play', handlePlay);
+      audio.removeEventListener('pause', handlePause);
+      audio.removeEventListener('ended', handlePause);
+      audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
+    };
+  }, [isYouTube]);
+
+  // Auto-update current sentence based on audio time
+  useEffect(() => {
+    if (isUserSeeking) return; // Skip auto-update during user seek
+
+    if (!transcriptData.length) return;
+
+    const currentIndex = transcriptData.findIndex(
+      (item, index) => currentTime >= item.start && currentTime < item.end
+    );
+
+    if (currentIndex !== -1 && currentIndex !== currentSentenceIndex) {
+      setCurrentSentenceIndex(currentIndex);
+
+      // Khi câu thay đổi và đang phát, update endTime của câu mới (chỉ khi không lock)
+      if (isYouTube) {
+        const player = youtubePlayerRef.current;
+        if (player && player.getPlayerState && player.getPlayerState() === window.YT.PlayerState.PLAYING && !segmentEndTimeLocked) {
+          const newSentence = transcriptData[currentIndex];
+          setSegmentPlayEndTime(newSentence.end);
+        }
+      } else {
+        const audio = audioRef.current;
+        if (audio && !audio.paused && !segmentEndTimeLocked) {
+          const newSentence = transcriptData[currentIndex];
+          setSegmentPlayEndTime(newSentence.end);
+        }
+      }
+    }
+  }, [currentTime, transcriptData, currentSentenceIndex, segmentEndTimeLocked, isYouTube, isUserSeeking]);
+
+  // Cleanup user seek timeout
+  useEffect(() => {
+    return () => {
+      if (userSeekTimeout) clearTimeout(userSeekTimeout);
+    };
+  }, [userSeekTimeout]);
+
+  // Audio control functions
+  const handleSeek = useCallback((direction, customSeekTime = null) => {
+    if (isYouTube) {
+      const player = youtubePlayerRef.current;
+      if (!player || !player.getCurrentTime) return;
+
+      const seekTime = customSeekTime || 2;
+      const currentSegment = transcriptData[currentSentenceIndex];
+
+      if (!currentSegment) return;
+
+      let newTime = player.getCurrentTime();
+      if (direction === 'backward') {
+        newTime = player.getCurrentTime() - seekTime;
+      } else if (direction === 'forward') {
+        newTime = player.getCurrentTime() + seekTime;
+      }
+
+       // Constrain the new time to current segment boundaries
+       newTime = Math.max(currentSegment.start, Math.min(currentSegment.end - 0.1, newTime));
+       if (player.seekTo) player.seekTo(newTime);
+
+      // Update segment end time if playing
+      if (player.getPlayerState && player.getPlayerState() === window.YT.PlayerState.PLAYING) {
+        setSegmentPlayEndTime(currentSegment.end);
+      }
+    } else {
+      const audio = audioRef.current;
+      if (!audio || !isFinite(audio.duration)) return;
+
+      const seekTime = customSeekTime || 2;
+      const currentSegment = transcriptData[currentSentenceIndex];
+
+      if (!currentSegment) return;
+
+      // Calculate new position but constrain it within current segment
+      let newTime = audio.currentTime;
+      if (direction === 'backward') {
+        newTime = audio.currentTime - seekTime;
+      } else if (direction === 'forward') {
+        newTime = audio.currentTime + seekTime;
+      }
+
+      // Constrain the new time to current segment boundaries
+      newTime = Math.max(currentSegment.start, Math.min(currentSegment.end - 0.1, newTime));
+      audio.currentTime = newTime;
+
+       // Update segment end time if playing
+       if (!audio.paused) {
+         setSegmentPlayEndTime(currentSegment.end);
+       }
+     }
+   }, [transcriptData, currentSentenceIndex, isYouTube]);
+
+  const handlePlayPause = useCallback(() => {
+    // Haptic feedback for play/pause
+    hapticEvents.audioPlay();
+    
+    if (isYouTube) {
+      const player = youtubePlayerRef.current;
+      if (!player) return;
+
+      if (player.getPlayerState && player.getPlayerState() === window.YT.PlayerState.PLAYING) {
+        if (player.pauseVideo) player.pauseVideo();
+        setIsPlaying(false);
+      } else {
+        if (transcriptData.length > 0 && currentSentenceIndex < transcriptData.length) {
+          const currentSentence = transcriptData[currentSentenceIndex];
+
+           if (player.getCurrentTime && player.getCurrentTime() >= currentSentence.end - 0.05) {
+             if (player.seekTo) player.seekTo(currentSentence.start);
+           }
+
+          if (player.playVideo) player.playVideo();
+          setIsPlaying(true);
+          setSegmentPlayEndTime(currentSentence.end);
+          setSegmentEndTimeLocked(false); // Cho phép chuyển câu tự động khi phát liên tục
+        } else {
+          if (player.playVideo) player.playVideo();
+          setIsPlaying(true);
+          setSegmentEndTimeLocked(false);
+        }
+      }
+    } else {
+      const audio = audioRef.current;
+      if (!audio) return;
+      if (audio.paused) {
+        // Kiểm tra nếu đang ở cuối câu (hoặc sau endTime), reset về đầu câu
+        if (transcriptData.length > 0 && currentSentenceIndex < transcriptData.length) {
+          const currentSentence = transcriptData[currentSentenceIndex];
+
+          // Nếu currentTime >= endTime của câu, reset về đầu câu
+          if (audio.currentTime >= currentSentence.end - 0.05) {
+            audio.currentTime = currentSentence.start;
+          }
+
+          audio.play();
+          setIsPlaying(true);
+          setSegmentPlayEndTime(currentSentence.end);
+          setSegmentEndTimeLocked(false); // Cho phép chuyển câu tự động khi phát liên tục
+        } else {
+          audio.play();
+          setIsPlaying(true);
+          setSegmentEndTimeLocked(false);
+        }
+       } else {
+         audio.pause();
+         setIsPlaying(false);
+       }
+     }
+   }, [transcriptData, currentSentenceIndex, isYouTube]);
+
+  // Replay current sentence from the beginning
+  const handleReplayFromStart = useCallback(() => {
+    if (transcriptData.length === 0 || currentSentenceIndex >= transcriptData.length) return;
+    
+    const currentSentence = transcriptData[currentSentenceIndex];
+    
+    if (isYouTube) {
+      const player = youtubePlayerRef.current;
+      if (!player || !player.seekTo) return;
+
+      player.seekTo(currentSentence.start);
+      if (player.playVideo) player.playVideo();
+      setIsPlaying(true);
+      setSegmentPlayEndTime(currentSentence.end);
+      setSegmentEndTimeLocked(true);
+    } else {
+      const audio = audioRef.current;
+      if (!audio) return;
+      
+      audio.currentTime = currentSentence.start;
+      audio.play();
+      setIsPlaying(true);
+      setSegmentPlayEndTime(currentSentence.end);
+      setSegmentEndTimeLocked(true);
+    }
+  }, [transcriptData, currentSentenceIndex, isYouTube]);
+
+  // Handle playback speed change
+  const handleSpeedChange = useCallback((speed) => {
+    setPlaybackSpeed(speed);
+    
+    if (isYouTube) {
+      const player = youtubePlayerRef.current;
+      if (player && player.setPlaybackRate) {
+        player.setPlaybackRate(speed);
+      }
+    } else {
+      const audio = audioRef.current;
+      if (audio) {
+        audio.playbackRate = speed;
+      }
+    }
+  }, [isYouTube]);
+
+  // Apply playback speed when YouTube player is ready
+  useEffect(() => {
+    if (isYouTube && youtubePlayerRef.current && playbackSpeed !== 1) {
+      const player = youtubePlayerRef.current;
+      if (player.setPlaybackRate) {
+        player.setPlaybackRate(playbackSpeed);
+      }
+    }
+  }, [isYouTube, playbackSpeed]);
+
+  // Audio control functions
+  const handleSentenceClick = useCallback((startTime, endTime) => {
+    // Find the clicked sentence index
+    const clickedIndex = transcriptData.findIndex(
+      (item) => item.start === startTime && item.end === endTime
+    );
+    if (clickedIndex === -1) return;
+
+    const isCurrentlyPlayingThisSentence = isPlaying && currentSentenceIndex === clickedIndex;
+
+    if (isCurrentlyPlayingThisSentence) {
+      // Pause the current sentence
+      if (isYouTube) {
+        const player = youtubePlayerRef.current;
+        if (player && player.pauseVideo) player.pauseVideo();
+      } else {
+        const audio = audioRef.current;
+        if (audio) audio.pause();
+      }
+      setIsPlaying(false);
+      // Save paused position
+      setPausedPositions(prev => ({ ...prev, [clickedIndex]: currentTime }));
+    } else {
+      // Play or resume the sentence (either a different sentence or the same paused sentence)
+      let seekTime = startTime;
+      if (pausedPositions[clickedIndex] && pausedPositions[clickedIndex] >= startTime && pausedPositions[clickedIndex] < endTime) {
+        seekTime = pausedPositions[clickedIndex];
+      }
+
+      // Set seeking flag to prevent auto-update conflicts
+      if (userSeekTimeout) clearTimeout(userSeekTimeout);
+      setIsUserSeeking(true);
+
+      if (isYouTube) {
+        const player = youtubePlayerRef.current;
+        if (!player) return;
+        if (player.seekTo) player.seekTo(seekTime);
+        if (player.playVideo) player.playVideo();
+      } else {
+        const audio = audioRef.current;
+        if (!audio) return;
+        audio.currentTime = seekTime;
+        audio.play();
+      }
+      setIsPlaying(true);
+      setSegmentPlayEndTime(endTime);
+      setSegmentEndTimeLocked(true);
+      // Clear paused position when starting play
+      setPausedPositions(prev => {
+        const newPositions = { ...prev };
+        delete newPositions[clickedIndex];
+        return newPositions;
+      });
+
+      // Reset seeking flag after seek completes
+      const timeout = setTimeout(() => {
+        setIsUserSeeking(false);
+      }, 1500);
+      setUserSeekTimeout(timeout);
+    }
+
+    // Update currentSentenceIndex to match the clicked sentence
+    setCurrentSentenceIndex(clickedIndex);
+  }, [transcriptData, isYouTube, isPlaying, currentTime, pausedPositions, currentSentenceIndex, userSeekTimeout]);
+
+  // Transcript indices in normal order
+  const sortedTranscriptIndices = useMemo(() => {
+    if (!transcriptData || transcriptData.length === 0) return [];
+    return [...Array(transcriptData.length).keys()];
+  }, [transcriptData]);
+
+  // Transcript display indices - ALWAYS in original order for the transcript column
+  const transcriptDisplayIndices = useMemo(() => {
+    if (!transcriptData || transcriptData.length === 0) return [];
+    // Always return normal order (1, 2, 3...) for transcript display
+    return [...Array(transcriptData.length).keys()];
+  }, [transcriptData]);
+
+  // Mobile dictation slides show all sentences in normal order
+  const mobileVisibleIndices = useMemo(() => {
+    return sortedTranscriptIndices;
+  }, [sortedTranscriptIndices]);
+
+  // LAZY LOADING: Calculate visible slide range (only render 3 slides: prev, current, next)
+  const lazySlideRange = useMemo(() => {
+    if (!isMobile || mobileVisibleIndices.length === 0) {
+      return { start: 0, end: mobileVisibleIndices.length };
+    }
+
+    const currentSlideIndex = mobileVisibleIndices.indexOf(currentSentenceIndex);
+    
+    // If current sentence not in visible indices, render all (fallback)
+    if (currentSlideIndex === -1) {
+      console.log('⚠️ Current sentence not in visible indices, rendering all slides');
+      return { start: 0, end: mobileVisibleIndices.length };
+    }
+
+    // Calculate range: [currentIndex - 1, currentIndex, currentIndex + 1]
+    const start = Math.max(0, currentSlideIndex - 1);
+    const end = Math.min(mobileVisibleIndices.length, currentSlideIndex + 2);
+
+    return { start, end };
+  }, [isMobile, mobileVisibleIndices, currentSentenceIndex]);
+
+  // Lazy loading enabled slides (only the ones to render)
+  const lazySlidesToRender = useMemo(() => {
+    return mobileVisibleIndices.slice(lazySlideRange.start, lazySlideRange.end);
+  }, [mobileVisibleIndices, lazySlideRange]);
+
+  // Auto-scroll mobile dictation slides to current sentence (with lazy loading support)
+  useEffect(() => {
+    if (isMobile && dictationSlidesRef.current && transcriptData.length > 0) {
+      const container = dictationSlidesRef.current;
+      const slideIndex = mobileVisibleIndices.indexOf(currentSentenceIndex);
+
+      if (slideIndex !== -1) {
+        // Find the actual rendered slide by data-slide-index attribute
+        const targetSlide = container.querySelector(`[data-slide-index="${slideIndex}"]`);
+
+        if (targetSlide) {
+          // Scroll to center the slide
+          targetSlide.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+          });
+        } else {
+          console.warn('⚠️ Target slide not found in lazy-loaded range');
+        }
+      }
+    }
+  }, [currentSentenceIndex, isMobile, mobileVisibleIndices, transcriptData.length, lazySlideRange]);
+
+  // Sync currentSentenceIndex when user manually scrolls slides
+  useEffect(() => {
+    if (!isMobile || !dictationSlidesRef.current) return;
+
+    const container = dictationSlidesRef.current;
+    let scrollTimeout;
+
+    const handleScroll = () => {
+      // Skip if this is a programmatic scroll (from buttons/swipe/keyboard)
+      if (isProgrammaticScrollRef.current) {
+        return;
+      }
+
+      // Clear previous timeout
+      clearTimeout(scrollTimeout);
+
+      // Debounce to avoid too many updates during scroll
+      scrollTimeout = setTimeout(() => {
+        const containerRect = container.getBoundingClientRect();
+        const containerCenter = containerRect.left + containerRect.width / 2;
+
+        // Find which slide is currently centered
+        const slides = container.querySelectorAll('[data-slide-index]');
+        let closestSlide = null;
+        let minDistance = Infinity;
+
+        slides.forEach((slide) => {
+          const slideRect = slide.getBoundingClientRect();
+          const slideCenter = slideRect.left + slideRect.width / 2;
+          const distance = Math.abs(slideCenter - containerCenter);
+
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestSlide = slide;
+          }
+        });
+
+        if (closestSlide) {
+          const slideIndex = parseInt(closestSlide.getAttribute('data-slide-index'));
+          const sentenceIndex = mobileVisibleIndices[slideIndex];
+
+          // Only update if different from current
+          if (sentenceIndex !== undefined && sentenceIndex !== currentSentenceIndex) {
+            setCurrentSentenceIndex(sentenceIndex);
+
+            // Update audio/video position to match the sentence
+            const sentence = transcriptData[sentenceIndex];
+            if (sentence) {
+              if (youtubePlayerRef.current && isYouTube) {
+                youtubePlayerRef.current.seekTo(sentence.start, true);
+                setCurrentTime(sentence.start);
+              } else if (audioRef.current) {
+                audioRef.current.currentTime = sentence.start;
+                setCurrentTime(sentence.start);
+              }
+              setSegmentPlayEndTime(sentence.end);
+            }
+          }
+        }
+      }, 150); // 150ms debounce
+    };
+
+    container.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      container.removeEventListener('scroll', handleScroll);
+      clearTimeout(scrollTimeout);
+    };
+  }, [isMobile, mobileVisibleIndices, currentSentenceIndex, transcriptData, isYouTube]);
+
+  const goToPreviousSentence = useCallback(() => {
+    // Find current position in sorted list
+    const currentPositionInSorted = sortedTranscriptIndices.indexOf(currentSentenceIndex);
+    if (currentPositionInSorted > 0) {
+      // Mark as programmatic scroll to prevent handleScroll from interfering
+      isProgrammaticScrollRef.current = true;
+
+      // Get previous index from sorted list
+      const newIndex = sortedTranscriptIndices[currentPositionInSorted - 1];
+      setCurrentSentenceIndex(newIndex);
+      const item = transcriptData[newIndex];
+      handleSentenceClick(item.start, item.end);
+
+      // Clear flag after scroll animation completes (smooth scroll ~300ms)
+      setTimeout(() => {
+        isProgrammaticScrollRef.current = false;
+      }, 500);
+    }
+  }, [currentSentenceIndex, transcriptData, handleSentenceClick, sortedTranscriptIndices]);
+
+  const goToNextSentence = useCallback(() => {
+    // Find current position in sorted list
+    const currentPositionInSorted = sortedTranscriptIndices.indexOf(currentSentenceIndex);
+    if (currentPositionInSorted < sortedTranscriptIndices.length - 1) {
+      // Mark as programmatic scroll to prevent handleScroll from interfering
+      isProgrammaticScrollRef.current = true;
+
+      // Get next index from sorted list
+      const newIndex = sortedTranscriptIndices[currentPositionInSorted + 1];
+      setCurrentSentenceIndex(newIndex);
+      const item = transcriptData[newIndex];
+      handleSentenceClick(item.start, item.end);
+
+      // Clear flag after scroll animation completes (smooth scroll ~300ms)
+      setTimeout(() => {
+        isProgrammaticScrollRef.current = false;
+      }, 500);
+    }
+  }, [currentSentenceIndex, transcriptData, handleSentenceClick, sortedTranscriptIndices]);
+
+  // Touch swipe handlers
+  const handleTouchStart = useCallback((e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  }, []);
+
+  const handleTouchMove = useCallback((e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  }, []);
+
+  const handleTouchEnd = useCallback((e) => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 40; // Reduced threshold for better sensitivity
+    const isRightSwipe = distance < -40;
+
+    if (isLeftSwipe) {
+      e.preventDefault();
+
+      // Haptic feedback for swipe
+      hapticEvents.slideSwipe();
+
+      goToNextSentence();
+    } else if (isRightSwipe) {
+      e.preventDefault();
+
+      // Haptic feedback for swipe
+      hapticEvents.slideSwipe();
+
+      goToPreviousSentence();
+    }
+
+    setTouchStart(null);
+    setTouchEnd(null);
+  }, [touchStart, touchEnd, goToNextSentence, goToPreviousSentence]);
+
+  // Global keyboard shortcuts
+  const handleGlobalKeyDown = useCallback((event) => {
+    const isMediaReady = isYouTube ? (youtubePlayerRef.current && duration > 0) : (audioRef.current && isFinite(audioRef.current.duration));
+
+    // Check if focus is on an input field
+    const activeElement = document.activeElement;
+    const isInputFocused = activeElement && (
+      activeElement.tagName === 'INPUT' ||
+      activeElement.tagName === 'TEXTAREA' ||
+      activeElement.contentEditable === 'true'
+    );
+
+    switch (event.key) {
+      case 'ArrowLeft':
+        // Arrow left should always work for seek backward, even when input is focused
+        if (isMediaReady) {
+          event.preventDefault();
+          handleSeek('backward');
+        }
+        break;
+      case 'ArrowRight':
+        // Arrow right should always work for seek forward, even when input is focused
+        if (isMediaReady) {
+          event.preventDefault();
+          handleSeek('forward');
+        }
+        break;
+      case ' ':
+        // Space key for play/pause only when NOT focused on input/textarea
+        if (isMediaReady && !isInputFocused) {
+          event.preventDefault();
+          handlePlayPause();
+        }
+        break;
+      case 'ArrowUp':
+        if (!isInputFocused) {
+          event.preventDefault();
+          goToPreviousSentence();
+        }
+        break;
+      case 'ArrowDown':
+        if (!isInputFocused) {
+          event.preventDefault();
+          goToNextSentence();
+        }
+        break;
+      default: break;
+    }
+   }, [handleSeek, handlePlayPause, goToPreviousSentence, goToNextSentence, isYouTube, duration]);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleGlobalKeyDown);
+    return () => document.removeEventListener('keydown', handleGlobalKeyDown);
+  }, [handleGlobalKeyDown]);
+
+  // Load transcript from JSON
+  const loadTranscript = async (jsonPath) => {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout
+      
+      const response = await fetch(jsonPath, {
+        signal: controller.signal
+      });
+      
+      clearTimeout(timeoutId);
+      
+      if (!response.ok) throw new Error(`Không thể tải file JSON tại: ${jsonPath}`);
+      const data = await response.json();
+      
+      console.log('📝 Transcript loaded:', {
+        path: jsonPath,
+        totalSentences: data.length,
+        firstSentence: data[0]?.text?.substring(0, 50) + '...',
+        lastSentence: data[data.length - 1]?.text?.substring(0, 50) + '...'
+      });
+      
+      setTranscriptData(data);
+    } catch (error) {
+      if (error.name === 'AbortError') {
+        console.error('Timeout loading transcript:', jsonPath);
+      } else {
+        console.error('Lỗi tải transcript:', error);
+      }
+    }
+  };
+
+
+
+   // Handle progress bar click
+   const handleProgressClick = useCallback((e) => {
+     const rect = e.target.getBoundingClientRect();
+     const clickX = e.clientX - rect.left;
+     const percentage = clickX / rect.width;
+     const newTime = percentage * duration;
+     if (isYouTube) {
+       const player = youtubePlayerRef.current;
+       if (player && player.seekTo) {
+         player.seekTo(newTime);
+       }
+     } else {
+       if (audioRef.current) {
+         audioRef.current.currentTime = newTime;
+       }
+     }
+   }, [duration, isYouTube]);
+
+   const formatTime = (seconds) => {
+    if (!isFinite(seconds)) return '0:00';
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+  };
+
+  // Format study time to HH:MM:SS
+  const formatStudyTime = (totalSeconds) => {
+    if (!isFinite(totalSeconds)) return '00:00:00';
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = Math.floor(totalSeconds % 60);
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  };
+
+  // Save progress to database
+  const saveProgress = useCallback(async (updatedCompletedSentences, updatedCompletedWords) => {
+    if (!lessonId) return;
+    
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        console.warn('No token found, cannot save progress');
+        return;
+      }
+      
+      const totalWords = transcriptData.reduce((sum, sentence) => {
+        const words = sentence.text.split(/\s+/).filter(w => w.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "").length >= 1);
+        return sum + words.length;
+      }, 0);
+      
+      // Count correct words from completedWords object
+      let correctWordsCount = 0;
+      Object.keys(updatedCompletedWords).forEach(sentenceIdx => {
+        const sentenceWords = updatedCompletedWords[sentenceIdx];
+        correctWordsCount += Object.keys(sentenceWords).length;
+      });
+      
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 8000); // 8s timeout
+      
+      const response = await fetch('/api/progress', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          lessonId,
+          mode: 'dictation',
+          progress: {
+            completedSentences: updatedCompletedSentences,
+            completedWords: updatedCompletedWords,
+            currentSentenceIndex,
+            totalSentences: transcriptData.length,
+            correctWords: correctWordsCount,
+            totalWords
+          }
+        }),
+        signal: controller.signal
+      });
+      
+      clearTimeout(timeoutId);
+      
+      if (!response.ok) {
+        throw new Error('Failed to save progress');
+      }
+      
+      const result = await response.json();
+      
+      console.log('✅ Progress saved:', { 
+        completedSentences: updatedCompletedSentences, 
+        completedWords: updatedCompletedWords,
+        correctWordsCount, 
+        totalWords,
+        completionPercent: result.completionPercent
+      });
+    } catch (error) {
+      console.error('Error saving progress:', error);
+    }
+  }, [lessonId, transcriptData, currentSentenceIndex]);
+
+  // Handle full sentence submission
+  const handleFullSentenceSubmit = useCallback((sentenceIndex) => {
+    const userInput = fullSentenceInputs[sentenceIndex] || '';
+    const correctSentence = transcriptData[sentenceIndex]?.text || '';
+
+    if (!userInput.trim()) {
+      // toast.warning('Vui lòng nhập văn bản');
+      return;
+    }
+
+    // Calculate similarity
+    const similarity = calculateSimilarity(userInput, correctSentence);
+    const isCorrect = similarity >= 80;
+
+    // Compare word by word
+    const normalize = (str) => str.toLowerCase().trim().replace(/[.,!?;:"""''„]/g, '').replace(/\s+/g, ' ');
+    const userWords = normalize(userInput).split(' ').filter(w => w.length > 0);
+    const correctWords = normalize(correctSentence).split(' ').filter(w => w.length > 0);
+
+    // Build word comparison results
+    const wordComparison = {};
+    correctWords.forEach((correctWord, idx) => {
+      const userWord = userWords[idx] || '';
+      wordComparison[idx] = userWord === correctWord ? 'correct' : 'incorrect';
+    });
+
+    // Update sentence results
+    setSentenceResults(prev => ({
+      ...prev,
+      [sentenceIndex]: { similarity, isCorrect }
+    }));
+
+    // Update word comparison results
+    setWordComparisonResults(prev => ({
+      ...prev,
+      [sentenceIndex]: wordComparison
+    }));
+
+    // Auto-reveal all hint words to show comparison
+    const revealAllWords = {};
+    correctWords.forEach((_, idx) => {
+      revealAllWords[idx] = true;
+    });
+    setRevealedHintWords(prev => ({
+      ...prev,
+      [sentenceIndex]: revealAllWords
+    }));
+
+    // Clear partial reveals after checking
+    setPartialRevealedChars(prev => ({
+      ...prev,
+      [sentenceIndex]: {}
+    }));
+
+    // Mark sentence as checked (to reveal in transcript, regardless of correct/incorrect)
+    if (!checkedSentences.includes(sentenceIndex)) {
+      setCheckedSentences(prev => [...prev, sentenceIndex]);
+    }
+
+    // If correct (>=80%), mark as completed
+    if (isCorrect) {
+      // Haptic feedback for success
+      hapticEvents.wordCorrect();
+
+      // Mark sentence as completed
+      if (!completedSentences.includes(sentenceIndex)) {
+        const updatedCompleted = [...completedSentences, sentenceIndex];
+        setCompletedSentences(updatedCompleted);
+        
+        // Also update completedWords for full-sentence mode
+        // Fill completedWords for the sentence so progress indicator shows 100%
+        const sentenceWords = correctSentence.split(/\s+/).filter(w => {
+          const pureWord = w.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+          return pureWord.length >= 1;
+        });
+        
+        const updatedCompletedWords = { ...completedWords };
+        updatedCompletedWords[sentenceIndex] = {};
+        sentenceWords.forEach((word, idx) => {
+          updatedCompletedWords[sentenceIndex][idx] = word;
+        });
+        setCompletedWords(updatedCompletedWords);
+        
+        saveProgress(updatedCompleted, updatedCompletedWords);
+
+        // Show success toast
+        // toast.success(`✓ Chính xác ${similarity}%!`);
+      }
+    } else {
+      // Haptic feedback for error
+      hapticEvents.wordIncorrect();
+
+      // Show error with similarity percentage
+      // toast.error(`✗ Chỉ đúng ${similarity}%. Cần ≥80%`);
+    }
+  }, [fullSentenceInputs, transcriptData, completedSentences, completedWords, checkedSentences, saveProgress]);
+
+  // Handle points for full-sentence mode when word comparison results change
+  useEffect(() => {
+    if (!transcriptData.length) return;
+    
+    // Process points for each sentence that has comparison results
+    Object.keys(wordComparisonResults).forEach(sentenceIdx => {
+      const sentenceIndex = parseInt(sentenceIdx);
+      const comparisonResults = wordComparisonResults[sentenceIndex];
+      const sentence = transcriptData[sentenceIndex];
+      
+      if (!sentence || !comparisonResults) return;
+      
+      // Check if this sentence has already been scored
+      const allWordsProcessed = Object.keys(comparisonResults).every(wordIdx => 
+        wordPointsProcessed[sentenceIndex]?.[parseInt(wordIdx)]
+      );
+      
+      if (allWordsProcessed) return; // Already scored this sentence
+      
+      // Count correct and incorrect words
+      let correctCount = 0;
+      let incorrectCount = 0;
+      
+      Object.keys(comparisonResults).forEach(wordIdxStr => {
+        const wordIdx = parseInt(wordIdxStr);
+        if (comparisonResults[wordIdx] === 'correct') {
+          correctCount++;
+        } else {
+          incorrectCount++;
+        }
+      });
+      
+      // Award/deduct points as batch (with small delay for DOM update)
+      setTimeout(() => {
+        const firstWordBox = document.querySelector(`[data-sentence-index="${sentenceIndex}"] .${styles.hintWordBox}`);
+        
+        // Calculate total points: +1 per correct word, -0.5 per incorrect word
+        const totalPoints = (correctCount * 1) + (incorrectCount * -0.5);
+        
+        // Only update if there's a point change
+        if (totalPoints !== 0) {
+          const reason = `Full-sentence: ${correctCount} từ đúng, ${incorrectCount} từ sai (tổng: ${totalPoints > 0 ? '+' : ''}${totalPoints})`;
+          updatePoints(totalPoints, reason, firstWordBox);
+        }
+        
+        // Mark all words as processed
+        const updatedProcessed = {};
+        Object.keys(comparisonResults).forEach(wordIdxStr => {
+          const wordIdx = parseInt(wordIdxStr);
+          updatedProcessed[wordIdx] = comparisonResults[wordIdx];
+        });
+        
+        setWordPointsProcessed(prev => ({
+          ...prev,
+          [sentenceIndex]: {
+            ...(prev[sentenceIndex] || {}),
+            ...updatedProcessed
+          }
+        }));
+      }, 50);
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wordComparisonResults, transcriptData, wordPointsProcessed]);
+
+  // Toggle reveal hint word
+  const toggleRevealHintWord = useCallback((sentenceIndex, wordIndex) => {
+    setRevealedHintWords(prev => {
+      const updated = { ...prev };
+      if (!updated[sentenceIndex]) {
+        updated[sentenceIndex] = {};
+      }
+
+      // Toggle the word
+      if (updated[sentenceIndex][wordIndex]) {
+        // Hide word
+        const newSentenceState = { ...updated[sentenceIndex] };
+        delete newSentenceState[wordIndex];
+        updated[sentenceIndex] = newSentenceState;
+      } else {
+        // Show word
+        updated[sentenceIndex] = {
+          ...updated[sentenceIndex],
+          [wordIndex]: true
+        };
+        // Haptic feedback
+        hapticEvents.buttonPress();
+      }
+
+      console.log('Revealed hint words:', updated);
+      return updated;
+    });
+  }, []);
+
+  // Calculate partial reveals based on user input
+  const calculatePartialReveals = useCallback((sentenceIndex, userInput, correctSentence) => {
+    const normalize = (str) => str.toLowerCase().trim().replace(/[.,!?;:"""''„]/g, '');
+    const userWords = normalize(userInput).split(/\s+/).filter(w => w.length > 0);
+    const correctWords = correctSentence.split(/\s+/).filter(w => w.length > 0).map(w => {
+      return w.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+    });
+
+    const partialReveals = {};
+
+    correctWords.forEach((correctWord, wordIdx) => {
+      const userWord = userWords[wordIdx] || '';
+      const normalizedCorrect = normalize(correctWord);
+      const normalizedUser = normalize(userWord);
+
+      // Count how many characters match from the start
+      let matchingChars = 0;
+      for (let i = 0; i < Math.min(normalizedCorrect.length, normalizedUser.length); i++) {
+        if (normalizedCorrect[i] === normalizedUser[i]) {
+          matchingChars++;
+        } else {
+          break; // Stop at first mismatch
+        }
+      }
+
+      if (matchingChars > 0) {
+        partialReveals[wordIdx] = matchingChars;
+      }
+    });
+
+    setPartialRevealedChars(prev => ({
+      ...prev,
+      [sentenceIndex]: partialReveals
+    }));
+  }, []);
+
+  // Save word function
+  const saveWord = useCallback((word) => {
+    setSavedWords(prev => {
+      if (!prev.includes(word)) {
+        return [...prev, word];
+      }
+      return prev;
+    });
+  }, []);
+
+  // Save vocabulary to database
+  const saveVocabulary = useCallback(async ({ word, translation, notes }) => {
+    try {
+      const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+      if (!token) {
+        toast.error(t('lesson.vocabulary.loginRequired'));
+        return;
+      }
+
+      const context = transcriptData[currentSentenceIndex]?.text || '';
+
+      const response = await fetch('/api/vocabulary', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          word,
+          translation: translation || notes || '',
+          context,
+          lessonId
+        })
+      });
+
+      if (response.ok) {
+        toast.success(t('lesson.vocabulary.success'));
+      } else {
+        const error = await response.json();
+        toast.error(error.message || t('lesson.vocabulary.error'));
+      }
+    } catch (error) {
+      console.error('Save vocabulary error:', error);
+      toast.error(t('lesson.vocabulary.generalError'));
+    }
+  }, [lessonId, transcriptData, currentSentenceIndex, t]);
+
+  // Handle word click for popup (for completed words)
+  const handleWordClickForPopup = useCallback(async (word, eventOrElement) => {
+    // Handle both event object and element reference
+    let element = eventOrElement;
+    if (eventOrElement && eventOrElement.target) {
+      // It's an event object
+      element = eventOrElement.target;
+    } else if (!eventOrElement || !(eventOrElement instanceof Element)) {
+      // Invalid input
+      console.error('Invalid event/element in handleWordClickForPopup');
+      return;
+    }
+
+    // Pause main audio nếu đang phát
+    if (typeof window !== 'undefined' && window.mainAudioRef?.current) {
+      const audio = window.mainAudioRef.current;
+      if (!audio.paused) {
+        audio.pause();
+      }
+    }
+
+    // Pause YouTube if playing
+    if (isYouTube && youtubePlayerRef.current) {
+      const player = youtubePlayerRef.current;
+      if (player.getPlayerState && player.getPlayerState() === window.YT.PlayerState.PLAYING) {
+        if (player.pauseVideo) player.pauseVideo();
+      }
+    }
+
+    const cleanedWord = word.replace(/[.,!?;:)(\[\]{}\"'`„"‚'»«›‹—–-]/g, '');
+    if (!cleanedWord) return;
+
+    // Speak the word
+    speakText(cleanedWord);
+
+    const rect = element.getBoundingClientRect();
+    const isMobileView = window.innerWidth <= 768;
+
+    if (isMobileView) {
+      // Mobile: Show tooltip above word with boundary checks
+      const tooltipHeight = 50; // Estimated tooltip height
+      const tooltipWidth = 200; // Estimated tooltip width
+      
+      let top = rect.top - 10;
+      let left = rect.left + rect.width / 2;
+
+      // Keep tooltip within viewport
+      // Check top boundary
+      if (top - tooltipHeight < 10) {
+        top = rect.bottom + 10 + tooltipHeight; // Show below if not enough space above
+      }
+
+      // Check left boundary
+      const halfWidth = tooltipWidth / 2;
+      if (left - halfWidth < 10) {
+        left = halfWidth + 10;
+      }
+      
+      // Check right boundary
+      if (left + halfWidth > window.innerWidth - 10) {
+        left = window.innerWidth - halfWidth - 10;
+      }
+
+      setTooltipWord(cleanedWord);
+      setTooltipPosition({ top, left });
+      setShowTooltip(true);
+
+      // Check cache first
+      const targetLang = user?.nativeLanguage || 'vi';
+      const cached = translationCache.get(cleanedWord, 'de', targetLang);
+      if (cached) {
+        setTooltipTranslation(cached);
+        return;
+      }
+
+      // Fetch translation for tooltip
+      try {
+        const response = await fetch('/api/translate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            text: cleanedWord,
+            context: '',
+            sourceLang: 'de',
+            targetLang: targetLang
+          })
+        });
+
+        const data = await response.json();
+        if (data.success && data.translation) {
+          setTooltipTranslation(data.translation);
+          translationCache.set(cleanedWord, data.translation, 'de', targetLang);
+        }
+      } catch (error) {
+        console.error('Translation error:', error);
+        setTooltipTranslation('...');
+      }
+    } else {
+      // Desktop: Show full popup (top/bottom only)
+      const popupWidth = 350;
+      const popupHeight = 280;
+      const gapFromWord = 30;
+
+      const spaceAbove = rect.top;
+      const spaceBelow = window.innerHeight - rect.bottom;
+
+      let top, left, arrowPos;
+
+      // Default: try to show above
+      if (spaceAbove >= popupHeight + gapFromWord + 20) {
+        top = rect.top - popupHeight - gapFromWord;
+        arrowPos = 'bottom';
+      } else {
+        // Show below if not enough space above
+        top = rect.bottom + gapFromWord;
+        arrowPos = 'top';
+      }
+
+      // Center horizontally with bounds checking
+      left = rect.left + rect.width / 2 - popupWidth / 2;
+
+      if (left < 20) {
+        left = 20;
+      }
+      if (left + popupWidth > window.innerWidth - 20) {
+        left = window.innerWidth - popupWidth - 20;
+      }
+
+      // Ensure popup doesn't go off screen vertically
+      if (top < 20) {
+        top = 20;
+      }
+      if (top + popupHeight > window.innerHeight - 20) {
+        top = window.innerHeight - popupHeight - 20;
+      }
+
+      // Show popup immediately (loading state handled inside DictionaryPopup)
+      setClickedWordElement(element);
+      setSelectedWord(cleanedWord);
+      setPopupPosition({ top, left });
+      setPopupArrowPosition(arrowPos);
+      setShowVocabPopup(true);
+    }
+  }, [isYouTube, user]);
+
+  // Double-click hint functionality
+  const handleInputClick = useCallback((input, correctWord) => {
+    const currentTime = new Date().getTime();
+    
+    // Reset click count if different input or too much time passed
+    if (lastClickedInput !== input || currentTime - lastClickTime > 1000) {
+      setClickCount(0);
+    }
+    
+    const newClickCount = clickCount + 1;
+    setClickCount(newClickCount);
+    setLastClickTime(currentTime);
+    setLastClickedInput(input);
+    
+    // Only handle double-click, ignore single click
+    if (newClickCount === 2) {
+      // Only save word and show hint, don't auto-focus next input
+      saveWord(correctWord);
+      // Focus back to current input to keep user in place
+      input.focus();
+      setClickCount(0);
+    }
+    
+    // For single click, just focus the input without any other action
+    if (newClickCount === 1) {
+      input.focus();
+    }
+  }, [clickCount, lastClickTime, lastClickedInput, saveWord]);
+
+  const findNextInput = (currentInput) => {
+    // On mobile, only search within the current sentence/slide to prevent auto-jumping
+    const isMobileView = window.innerWidth <= 768;
+    
+    if (isMobileView) {
+      // Find the parent slide/sentence container
+      const slideContainer = currentInput.closest('[data-sentence-index]');
+      if (slideContainer) {
+        const inputsInSlide = slideContainer.querySelectorAll(".word-input");
+        const currentIndex = Array.from(inputsInSlide).indexOf(currentInput);
+        return inputsInSlide[currentIndex + 1] || null; // Return null if no more inputs in this slide
+      }
+    }
+    
+    // Desktop: search all inputs on the page
+    const allInputs = document.querySelectorAll(".word-input");
+    const currentIndex = Array.from(allInputs).indexOf(currentInput);
+    return allInputs[currentIndex + 1];
+  };
+
+  // Save individual word completion
+  const saveWordCompletion = useCallback((wordIndex, correctWord) => {
+    setCompletedWords(prevWords => {
+      const updatedWords = { ...prevWords };
+      
+      if (!updatedWords[currentSentenceIndex]) {
+        updatedWords[currentSentenceIndex] = {};
+      }
+      
+      updatedWords[currentSentenceIndex][wordIndex] = correctWord;
+      
+      console.log(`Word saved: sentence ${currentSentenceIndex}, word ${wordIndex}: ${correctWord}`, updatedWords);
+      
+      // Save to database with updated data
+      saveProgress(completedSentences, updatedWords);
+      
+      return updatedWords;
+    });
+  }, [currentSentenceIndex, completedSentences, saveProgress]);
+
+  // Check if current sentence is completed
+  const checkSentenceCompletion = useCallback(() => {
+    setTimeout(() => {
+      // Check if this sentence is already marked as completed
+      if (completedSentences.includes(currentSentenceIndex)) {
+        return;
+      }
+
+      // Get the sentence text and count total words that need to be filled
+      const sentence = transcriptData[currentSentenceIndex];
+      if (!sentence) return;
+
+      const words = sentence.text.split(/\s+/);
+      
+      // Determine which words need to be filled based on hidePercentage
+      const validWordIndices = [];
+      words.forEach((word, idx) => {
+        const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+        if (pureWord.length >= 1) {
+          validWordIndices.push(idx);
+        }
+      });
+
+      // Calculate how many words to hide (same logic as processLevelUp)
+      const totalValidWords = validWordIndices.length;
+      const wordsToHideCount = Math.ceil((totalValidWords * hidePercentage) / 100);
+
+      // Count completed words from DOM (not state) to avoid timing issues
+      // This ensures we get the most up-to-date count including just-completed words
+      const sentenceContainer = document.querySelector(`[data-sentence-index="${currentSentenceIndex}"]`);
+      let completedWordsCount = 0;
+      
+      if (sentenceContainer) {
+        // Count only user-completed words, EXCLUDE revealed-word and completed-word (those are already visible)
+        const correctWordSpans = sentenceContainer.querySelectorAll('.correct-word:not(.revealed-word):not(.completed-word)');
+        completedWordsCount = correctWordSpans.length;
+      } else {
+        // Fallback to state if DOM element not found (shouldn't happen)
+        completedWordsCount = Object.keys(completedWords[currentSentenceIndex] || {}).length;
+      }
+
+      console.log(`Checking sentence ${currentSentenceIndex}:`, {
+        totalValidWords,
+        wordsToHideCount,
+        completedWordsCount,
+        completedWords: completedWords[currentSentenceIndex],
+        fromDOM: sentenceContainer ? 'yes' : 'no (fallback to state)'
+      });
+
+      if (completedWordsCount >= wordsToHideCount && wordsToHideCount > 0) {
+        // All words are correct, mark sentence as completed
+        const updatedCompleted = [...completedSentences, currentSentenceIndex];
+        setCompletedSentences(updatedCompleted);
+        saveProgress(updatedCompleted, completedWords);
+        console.log(`✅ Sentence ${currentSentenceIndex} completed!`);
+
+        // Check if all sentences are completed
+        setTimeout(() => {
+          if (updatedCompleted.length === transcriptData.length) {
+            console.log('🎉 All sentences completed!');
+            
+            // Haptic feedback for lesson completion
+            hapticEvents.lessonComplete();
+            
+            // Show celebration toast
+            toast.success(t('lesson.completion.allCompleted'));
+          }
+        }, 400);
+      }
+    }, 50); // Reduced to 50ms for faster detection
+  }, [completedSentences, currentSentenceIndex, completedWords, saveProgress, transcriptData, hidePercentage, t]);
+
+  // Show points animation
+  const showPointsAnimation = useCallback((points, element) => {
+    if (!element) return;
+    
+    // Get element position (starting point)
+    const rect = element.getBoundingClientRect();
+    const startPosition = {
+      top: rect.top + rect.height / 2 - 10,
+      left: rect.left + rect.width / 2
+    };
+    
+    // Get header points badge position (end point)
+    const headerBadge = document.querySelector('[title="Your total points"]');
+    let endPosition = null;
+
+    if (headerBadge) {
+      const badgeRect = headerBadge.getBoundingClientRect();
+      endPosition = {
+        top: badgeRect.top + badgeRect.height / 2,
+        left: badgeRect.left + badgeRect.width / 2
+      };
+    } else {
+      // Fallback: animate upwards if header badge not found
+      endPosition = {
+        top: startPosition.top - 100,
+        left: startPosition.left
+      };
+    }
+    
+    const animationId = Date.now() + Math.random();
+    setPointsAnimations(prev => [...prev, { 
+      id: animationId, 
+      points, 
+      startPosition,
+      endPosition 
+    }]);
+    
+    // Remove animation after it completes
+    setTimeout(() => {
+      setPointsAnimations(prev => prev.filter(a => a.id !== animationId));
+    }, 1000);
+  }, []);
+
+  // Update points function
+  const updatePoints = useCallback(async (pointsChange, reason, element = null) => {
+    if (!user) return;
+    
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) return;
+      
+      const response = await fetch('/api/user/points', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ pointsChange, reason })
+      });
+      
+        if (response.ok) {
+          const data = await response.json();
+          console.log(`✅ Points updated: ${pointsChange > 0 ? '+' : ''}${pointsChange} (${reason})`, data);
+
+          // Show animation
+          if (element) {
+            showPointsAnimation(pointsChange, element);
+          }
+
+          // Trigger points refresh in AuthContext (if available)
+          if (typeof window !== 'undefined') {
+            // Show animation in header with actual point value
+            if (pointsChange > 0 && window.showPointsPlusOne) {
+              console.log('🎉 Calling showPointsPlusOne with:', pointsChange);
+              window.showPointsPlusOne(pointsChange);
+            }
+            // Show animation in header with actual point value
+            if (pointsChange < 0 && window.showPointsMinus) {
+              console.log('⚠️ Calling showPointsMinus with:', pointsChange);
+              window.showPointsMinus(pointsChange);
+            }
+            
+            // Wait a bit to ensure the update is committed to DB before fetching
+            setTimeout(() => {
+              if (window.refreshUserPoints) {
+                console.log('🔄 Refreshing user points after update');
+                window.refreshUserPoints();
+              }
+            }, 100);
+            
+            // Also emit custom event for Header to listen
+            window.dispatchEvent(new CustomEvent('pointsUpdated', { detail: { pointsChange, reason } }));
+          }
+        } else {
+          console.error('❌ Failed to update points:', response.status, response.statusText);
+        }
+    } catch (error) {
+      console.error('Error updating points:', error);
+    }
+  }, [user, showPointsAnimation]);
+
+  // Update input background
+  const updateInputBackground = useCallback((input, correctWord) => {
+    const trimmedValue = input.value.trim();
+    if (trimmedValue.toLowerCase() === correctWord.substring(0, trimmedValue.length).toLowerCase()) {
+      input.style.setProperty('background', '#10b981', 'important');
+      input.style.setProperty('border-color', '#10b981', 'important');
+    } else {
+      input.style.setProperty('background', '#ef4444', 'important');
+      input.style.setProperty('border-color', '#ef4444', 'important');
+    }
+  }, []);
+
+  // Check word function
+  const checkWord = useCallback((input, correctWord, wordIndex) => {
+    const sanitizedCorrectWord = correctWord.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "");
+    const sanitizedInputValue = input.value.trim();
+    
+    if (sanitizedInputValue.toLowerCase() === sanitizedCorrectWord.toLowerCase()) {
+      // Haptic feedback for correct word
+      hapticEvents.wordCorrect();
+      
+      saveWord(correctWord);
+      
+      // Save this word completion to database
+      saveWordCompletion(wordIndex, correctWord);
+      
+      // Award points for correct word (+1 point)
+      const wordKey = `${currentSentenceIndex}-${wordIndex}`;
+      if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
+        updatePoints(1, `Correct word: ${correctWord}`, input);
+        setWordPointsProcessed(prev => ({
+          ...prev,
+          [currentSentenceIndex]: {
+            ...(prev[currentSentenceIndex] || {}),
+            [wordIndex]: 'correct'
+          }
+        }));
+      }
+      
+      const wordSpan = document.createElement("span");
+      wordSpan.className = "correct-word";
+      wordSpan.innerText = correctWord;
+      wordSpan.onclick = function () {
+        saveWord(correctWord);
+      };
+      
+      // Set programmatic scroll flag before DOM manipulation to prevent manual scroll sync
+      if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+        isProgrammaticScrollRef.current = true;
+      }
+      
+      input.parentNode.replaceWith(wordSpan);
+      
+      // Check if sentence is now completed
+      checkSentenceCompletion();
+      
+      // Clear programmatic scroll flag after DOM updates settle
+      if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+        setTimeout(() => {
+          isProgrammaticScrollRef.current = false;
+        }, 300);
+      }
+      
+      // Only auto-focus next input when word is actually completed by typing
+      // Not when just clicking on input
+      // Skip auto-focus on mobile to prevent unwanted slide jumping
+      const isMobileView = window.innerWidth <= 768;
+      if (!isMobileView) {
+        setTimeout(() => {
+          const nextInput = findNextInput(input);
+          if (nextInput) {
+            nextInput.focus();
+          }
+        }, 100);
+      }
+    } else {
+      updateInputBackground(input, sanitizedCorrectWord);
+
+      console.log('🔍 Word incorrect:', {
+        input: sanitizedInputValue,
+        correct: sanitizedCorrectWord,
+        inputLength: sanitizedInputValue.length,
+        correctLength: sanitizedCorrectWord.length,
+        wordIndex,
+        alreadyProcessed: wordPointsProcessed[currentSentenceIndex]?.[wordIndex]
+      });
+
+      // Deduct points for incorrect attempt (-0.5 points, only once per word)
+      if (sanitizedInputValue.length === sanitizedCorrectWord.length) {
+        console.log('✓ Length matches! Checking if word already processed...');
+        // Only deduct when user has typed the full word length
+        const wordKey = `${currentSentenceIndex}-${wordIndex}`;
+        if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
+          console.log('✓ Word not yet processed! Proceeding with penalty and streak reset...');
+          
+          // Haptic feedback for incorrect word
+          hapticEvents.wordIncorrect();
+          
+          updatePoints(-0.5, `Incorrect word attempt: ${sanitizedInputValue}`, input);
+          setWordPointsProcessed(prev => ({
+            ...prev,
+            [currentSentenceIndex]: {
+              ...(prev[currentSentenceIndex] || {}),
+              [wordIndex]: 'incorrect'
+            }
+          }));
+
+          // Reset consecutive sentence counter when user makes a mistake
+          console.log('❌ Mistake made! Resetting consecutive counter from', consecutiveSentences, 'to 0');
+          setConsecutiveSentences(0);
+        } else {
+          console.log('⚠️ Word already processed, skipping penalty and streak reset');
+        }
+      } else {
+        console.log('⚠️ Length mismatch, waiting for full word length');
+      }
+    }
+  }, [saveWord, updateInputBackground, checkSentenceCompletion, saveWordCompletion, currentSentenceIndex, wordPointsProcessed, updatePoints, consecutiveSentences]);
+
+  /**
+   * Seeded random number generator for deterministic word selection
+   * Uses the sentence index as seed to ensure consistency across re-renders
+   */
+  const seededRandom = useCallback((seed) => {
+    const x = Math.sin(seed) * 10000;
+    return x - Math.floor(x);
+  }, []);
+
+  // Mask text function - replace letters with asterisks (deprecated - use maskTextByPercentage)
+  const maskText = useCallback((text) => {
+    return text.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, '*');
+  }, []);
+
+  // Mask text by percentage - used for transcript display
+  const maskTextByPercentage = useCallback((text, sentenceIdx, hidePercent, sentenceWordsCompleted = {}, revealedWords = {}) => {
+    if (hidePercent === 100) {
+      // Mask all letters except completed words or revealed hint words
+      const words = text.split(/\s+/);
+      const processedWords = words.map((word, wordIndex) => {
+        const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+        if (pureWord.length >= 1) {
+          // If word is completed, show it
+          if (sentenceWordsCompleted[wordIndex]) {
+            return word;
+          }
+          // If word is revealed via hint click, show it
+          if (revealedWords[wordIndex]) {
+            return word;
+          }
+          // Otherwise mask it
+          return word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, '*');
+        }
+        return word;
+      });
+      return processedWords.join(" ");
+    }
+
+    const words = text.split(/\s+/);
+
+    // Determine which words to hide
+    const validWordIndices = [];
+    words.forEach((word, idx) => {
+      const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+      if (pureWord.length >= 1) {
+        validWordIndices.push(idx);
+      }
+    });
+
+    // Calculate how many words to hide
+    const totalValidWords = validWordIndices.length;
+    const wordsToHideCount = Math.ceil((totalValidWords * hidePercent) / 100);
+
+    // Deterministically select words to hide (same logic as processLevelUp)
+    const hiddenWordIndices = new Set();
+    const shuffled = [...validWordIndices].sort((a, b) => {
+      const seedA = seededRandom(sentenceIdx * 1000 + a);
+      const seedB = seededRandom(sentenceIdx * 1000 + b);
+      return seedA - seedB;
+    });
+    for (let i = 0; i < wordsToHideCount; i++) {
+      hiddenWordIndices.add(shuffled[i]);
+    }
+
+    // Process each word
+    const processedWords = words.map((word, wordIndex) => {
+      const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+      if (pureWord.length >= 1) {
+        // If word is completed, always show it
+        if (sentenceWordsCompleted[wordIndex]) {
+          return word;
+        }
+
+        // If word is revealed via hint click, always show it
+        if (revealedWords[wordIndex]) {
+          return word;
+        }
+
+        const shouldHide = hiddenWordIndices.has(wordIndex);
+        if (shouldHide) {
+          // Mask this word
+          return word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, '*');
+        } else {
+          // Show this word
+          return word;
+        }
+      }
+      return word;
+    });
+
+    return processedWords.join(" ");
+  }, [seededRandom]);
+
+  // Handle input focus - keep placeholder visible and scroll into view
+  const handleInputFocus = useCallback((input, correctWord) => {
+    // Keep placeholder showing the masked word length
+    if (input.value === '') {
+      input.placeholder = '*'.repeat(correctWord.length);
+      // Reset background color when empty
+      input.style.removeProperty('background');
+      input.style.removeProperty('border-color');
+    }
+
+    // Scroll input into view when focused (prevent keyboard from covering it)
+    // Use setTimeout to wait for keyboard to appear on mobile
+    setTimeout(() => {
+      // Check if we're on mobile
+      const isMobileView = window.innerWidth <= 768;
+      
+      if (isMobileView) {
+        // For mobile slides mode, scroll within the slide container
+        const slide = input.closest('.dictationSlide');
+        const inputArea = input.closest('.dictationInputArea');
+        
+        if (slide && inputArea) {
+          // Get positions
+          const inputRect = input.getBoundingClientRect();
+          const slideRect = slide.getBoundingClientRect();
+          const inputAreaRect = inputArea.getBoundingClientRect();
+          
+          // Calculate if input is in the lower half of the slide
+          const inputTop = inputRect.top - slideRect.top;
+          const slideHeight = slideRect.height;
+          const isInLowerHalf = inputTop > slideHeight / 2;
+          
+          if (isInLowerHalf) {
+            // Scroll the input area to show the input near the top
+            const scrollTop = inputArea.scrollTop + (inputRect.top - inputAreaRect.top) - 80;
+            
+            inputArea.scrollTo({
+              top: Math.max(0, scrollTop),
+              behavior: 'smooth'
+            });
+          }
+        }
+      } else {
+        // For desktop, use standard scrollIntoView
+        input.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'nearest'
+        });
+      }
+    }, 300); // Wait 300ms for keyboard animation
+  }, []);
+
+  // Handle input blur - show placeholder if empty
+  const handleInputBlur = useCallback((input, correctWord) => {
+    if (input.value === '') {
+      input.placeholder = '*'.repeat(correctWord.length);
+    }
+  }, []);
+
+  // Show hint for a word - now opens suggestion popup instead of revealing directly
+  const showHint = useCallback((button, correctWord, wordIndex) => {
+    // Haptic feedback for hint button
+    hapticEvents.wordHintUsed();
+    
+    // If user is not logged in, reveal the word directly
+    if (!user) {
+      const container = button.parentElement;
+      const input = container.querySelector('.word-input');
+
+      if (input) {
+        // Save this word completion to database
+        saveWordCompletion(wordIndex, correctWord);
+
+        // Award points for correct word (+1 point) and show animation
+        if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
+          updatePoints(1, `Correct word from hint: ${correctWord}`, button);
+          setWordPointsProcessed(prev => ({
+            ...prev,
+            [currentSentenceIndex]: {
+              ...(prev[currentSentenceIndex] || {}),
+              [wordIndex]: 'correct'
+            }
+          }));
+        }
+
+        // Replace input with correct word
+        const wordSpan = document.createElement("span");
+        wordSpan.className = "correct-word hint-revealed";
+        wordSpan.innerText = correctWord;
+        wordSpan.onclick = function () {
+          if (window.saveWord) window.saveWord(correctWord);
+        };
+
+        // Find the punctuation span
+        const punctuation = container.querySelector('.word-punctuation');
+
+        // Set programmatic scroll flag before DOM manipulation to prevent manual scroll sync
+        if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+          isProgrammaticScrollRef.current = true;
+        }
+
+        // Clear container and rebuild
+        container.innerHTML = '';
+        container.appendChild(wordSpan);
+        if (punctuation) {
+          container.appendChild(punctuation);
+        }
+
+        // Save the word
+        saveWord(correctWord);
+
+        // Check if sentence is completed
+        checkSentenceCompletion();
+
+        // Clear programmatic scroll flag after DOM updates settle
+        if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+          setTimeout(() => {
+            isProgrammaticScrollRef.current = false;
+          }, 300);
+        }
+      }
+      return;
+    }
+
+    // For logged-in users, show suggestion popup
+    // Get current sentence context
+    const context = transcriptData[currentSentenceIndex]?.text || '';
+
+    // Calculate popup position relative to the hint button
+    const rect = button.getBoundingClientRect();
+    const isMobileView = window.innerWidth <= 768;
+
+    let top, left;
+
+    if (isMobileView) {
+      // Mobile: position to the right/left of button, centered vertically
+      const popupWidth = 300; // Estimated mobile popup width
+      const popupHeight = 50; // Estimated mobile popup height
+
+      top = rect.top + (rect.height / 2); // Center vertically with the button
+      
+      // Determine if there's more space on right or left
+      const spaceOnRight = window.innerWidth - rect.right;
+      const spaceOnLeft = rect.left;
+
+      if (spaceOnRight >= popupWidth + 10) {
+        // Show on right if there's enough space
+        left = rect.right + 5;
+      } else if (spaceOnLeft >= popupWidth + 10) {
+        // Show on left if there's enough space
+        left = rect.left - popupWidth - 5;
+      } else if (spaceOnRight > spaceOnLeft) {
+        // Show on right even if tight
+        left = rect.right + 5;
+      } else {
+        // Show on left even if tight
+        left = rect.left - popupWidth - 5;
+      }
+
+      // Keep within screen bounds
+      if (left < 10) {
+        left = 10;
+      }
+      if (left + popupWidth > window.innerWidth - 10) {
+        left = window.innerWidth - popupWidth - 10;
+      }
+    } else {
+      // Desktop: position to the right/left of button, centered vertically
+      const popupWidth = 280;
+      const popupHeight = 250;
+
+      top = rect.top + (rect.height / 2); // Center vertically with the button
+      
+      // Determine if there's more space on right or left
+      const spaceOnRight = window.innerWidth - rect.right;
+      const spaceOnLeft = rect.left;
+
+      if (spaceOnRight >= popupWidth + 10) {
+        // Show on right if there's enough space
+        left = rect.right + 5;
+      } else if (spaceOnLeft >= popupWidth + 10) {
+        // Show on left if there's enough space
+        left = rect.left - popupWidth - 5;
+      } else if (spaceOnRight > spaceOnLeft) {
+        // Show on right even if tight
+        left = rect.right + 5;
+      } else {
+        // Show on left even if tight
+        left = rect.left - popupWidth - 5;
+      }
+
+      // Check if popup would go off left edge
+      if (left < 10) {
+        left = Math.max(10, (window.innerWidth - popupWidth) / 2);
+      }
+
+      // Check if popup would go off bottom of screen
+      if (top + popupHeight > window.innerHeight - 10) {
+        top = Math.max(10, window.innerHeight - popupHeight - 10);
+      }
+
+      // Check if popup would go off top
+      if (top < 10) {
+        top = 10;
+      }
+    }
+
+    // Set state for popup
+    setSuggestionWord(correctWord);
+    setSuggestionWordIndex(wordIndex);
+    setSuggestionContext(context);
+    setSuggestionPosition({ top, left });
+    setShowSuggestionPopup(true);
+  }, [transcriptData, currentSentenceIndex, user, saveWord, saveWordCompletion, checkSentenceCompletion, wordPointsProcessed, updatePoints]);
+
+  // Handle correct answer from suggestion popup
+  const handleCorrectSuggestion = useCallback((correctWord, wordIndex) => {
+    // Find the button with this word index
+    const button = document.querySelector(`button[onclick*="showHint"][onclick*="${correctWord}"][onclick*="${wordIndex}"]`);
+    if (button) {
+      const container = button.parentElement;
+      const input = container.querySelector('.word-input');
+      
+      if (input) {
+        // Save this word completion to database
+        saveWordCompletion(wordIndex, correctWord);
+        
+        // Award points for correct word (+1 point) and show animation
+        if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
+          updatePoints(1, `Correct word from hint: ${correctWord}`, button);
+          setWordPointsProcessed(prev => ({
+            ...prev,
+            [currentSentenceIndex]: {
+              ...(prev[currentSentenceIndex] || {}),
+              [wordIndex]: 'correct'
+            }
+          }));
+        }
+        
+        // Replace input with correct word
+        const wordSpan = document.createElement("span");
+        wordSpan.className = "correct-word hint-revealed";
+        wordSpan.innerText = correctWord;
+        wordSpan.onclick = function () {
+          if (window.saveWord) window.saveWord(correctWord);
+        };
+        
+        // Find the punctuation span
+        const punctuation = container.querySelector('.word-punctuation');
+        
+        // Set programmatic scroll flag before DOM manipulation to prevent manual scroll sync
+        if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+          isProgrammaticScrollRef.current = true;
+        }
+        
+        // Clear container and rebuild
+        container.innerHTML = '';
+        container.appendChild(wordSpan);
+        if (punctuation) {
+          container.appendChild(punctuation);
+        }
+        
+        // Save the word
+        saveWord(correctWord);
+        
+        // Check if sentence is completed
+        checkSentenceCompletion();
+        
+        // Clear programmatic scroll flag after DOM updates settle
+        if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+          setTimeout(() => {
+            isProgrammaticScrollRef.current = false;
+          }, 300);
+        }
+      }
+    }
+    
+    // Close popup
+    setShowSuggestionPopup(false);
+  }, [saveWord, checkSentenceCompletion, saveWordCompletion, wordPointsProcessed, currentSentenceIndex, updatePoints]);
+
+  // Handle wrong answer from suggestion popup
+  const handleWrongSuggestion = useCallback((correctWord, wordIndex, selectedWord) => {
+    // DON'T close popup - let user try again
+    // The popup will reset to normal state after shake animation (2s)
+
+    // Show points animation for wrong suggestion
+    const wrongButton = document.querySelector('.optionButton.wrongShake') ||
+                       document.querySelector('.optionButtonMobile.wrongShake');
+    if (wrongButton) {
+      showPointsAnimation(-0.5, wrongButton);
+    }
+
+    // Update points
+    updatePoints(-0.5, `Wrong suggestion selected: ${selectedWord}, correct: ${correctWord}`);
+
+    // Reset consecutive sentence counter when wrong word is selected
+    console.log('❌ Wrong word selected from suggestion! Resetting consecutive counter to 0');
+    setConsecutiveSentences(0);
+  }, [showPointsAnimation, updatePoints]);
+
+  /**
+   * ============================================================================
+   * HELPER: Render completed sentence as word boxes (for C1+C2 mode)
+   * ============================================================================
+   */
+  const renderCompletedSentenceWithWordBoxes = useCallback((sentence) => {
+    const words = sentence.split(/\s+/).filter(w => w.length > 0);
+    
+    return words.map((word, idx) => {
+      const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+      const punctuation = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
+      
+      if (pureWord.length === 0) return null;
+      
+      return `<span class="word-container">
+        <span class="correct-word completed-word" onclick="window.handleWordClickForPopup && window.handleWordClickForPopup('${pureWord}', this)">${pureWord}</span>
+        <span class="word-punctuation">${punctuation}</span>
+      </span>`;
+    }).filter(Boolean).join(' ');
+  }, []);
+
+  /**
+   * ============================================================================
+   * DYNAMIC HTML GENERATION FOR DICTATION
+   * ============================================================================
+   *
+   * This function generates HTML dynamically with GLOBAL CSS classes.
+   *
+   * WHY GLOBAL CLASSES:
+   * -------------------
+   * - We use innerHTML to create interactive word elements at runtime
+   * - CSS Modules would require dynamic class name generation (complex)
+   * - Global classes are simpler and work well when properly scoped
+   *
+   * GLOBAL CLASSES GENERATED:
+   * -------------------------
+   * - .word-container    → Wrapper for each word + input/button
+   * - .hint-btn          → Button to reveal the word
+   * - .word-input        → Input field for typing
+   * - .correct-word      → Display for correctly typed word
+   * - .completed-word    → Word from a completed sentence
+   * - .word-punctuation  → Punctuation marks
+   *
+   * SCOPING MECHANISM:
+   * ------------------
+   * These classes are styled in dictationPage.module.css using:
+   *   .dictationInputArea :global(.word-input) { }
+   *
+   * This means they ONLY work inside .dictationInputArea and won't
+   * affect other components/pages.
+   *
+   * CSS MODULES PATTERN:
+   * --------------------
+   * ✅ Container uses CSS Modules: className={styles.dictationInputArea}
+   * ⚠️ Children use global classes: class="word-input"
+   * ✅ Global classes are scoped by parent CSS Module class
+   *
+   * This is a VALID and DOCUMENTED approach when working with dynamic HTML.
+   * See: dictationPage.module.css (line 977) for detailed documentation.
+   * ============================================================================
+   */
+  const processLevelUp = useCallback((sentence, isCompleted, sentenceWordsCompleted, hidePercent) => {
+    const sentences = sentence.split(/\n+/);
+
+    const processedSentences = sentences.map((sentence) => {
+      const words = sentence.split(/\s+/);
+
+      // Determine which words to hide based on hidePercentage
+      const validWordIndices = [];
+      words.forEach((word, idx) => {
+        const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+        if (pureWord.length >= 1) {
+          validWordIndices.push(idx);
+        }
+      });
+
+      // Calculate how many words to hide
+      const totalValidWords = validWordIndices.length;
+      const wordsToHideCount = Math.ceil((totalValidWords * hidePercent) / 100);
+
+      // Deterministically select words to hide based on sentence index and word position
+      const hiddenWordIndices = new Set();
+      if (hidePercent < 100) {
+        // Use seeded random to make it consistent for the same sentence
+        // Seed is based on currentSentenceIndex to ensure same words are hidden on each render
+        const shuffled = [...validWordIndices].sort((a, b) => {
+          const seedA = seededRandom(currentSentenceIndex * 1000 + a);
+          const seedB = seededRandom(currentSentenceIndex * 1000 + b);
+          return seedA - seedB;
+        });
+        for (let i = 0; i < wordsToHideCount; i++) {
+          hiddenWordIndices.add(shuffled[i]);
+        }
+      } else {
+        // Hide all words (100%)
+        validWordIndices.forEach(idx => hiddenWordIndices.add(idx));
+      }
+
+      const processedWords = words.map((word, wordIndex) => {
+        const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+        if (pureWord.length >= 1) {
+          const nonAlphaNumeric = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
+
+          // Check if this specific word is completed
+          const isWordCompleted = sentenceWordsCompleted && sentenceWordsCompleted[wordIndex];
+
+          // If entire sentence is completed, show all words
+          if (isCompleted) {
+            return `<span class="word-container completed">
+              <span class="correct-word completed-word" onclick="window.handleWordClickForPopup && window.handleWordClickForPopup('${pureWord}', this)">${pureWord}</span>
+              <span class="word-punctuation">${nonAlphaNumeric}</span>
+            </span>`;
+          }
+
+          // If this specific word is completed, show it
+          if (isWordCompleted) {
+            return `<span class="word-container">
+              <span class="correct-word" onclick="window.handleWordClickForPopup && window.handleWordClickForPopup('${pureWord}', this)">${pureWord}</span>
+              <span class="word-punctuation">${nonAlphaNumeric}</span>
+            </span>`;
+          }
+
+          // Check if this word should be hidden based on hidePercentage
+          const shouldHide = hiddenWordIndices.has(wordIndex);
+
+          if (shouldHide) {
+            // Show input with hint button (hidden)
+            const dynamicSize = Math.max(Math.min(pureWord.length, 20), 3);
+
+            return `<span class="word-container">
+              <button
+                class="hint-btn"
+                onclick="window.showHint(this, '${pureWord}', ${wordIndex})"
+                title="${t('lesson.ui.showHint')}"
+                type="button"
+              >
+              </button>
+               <input
+                 type="text"
+                 class="word-input"
+                 id="word-${wordIndex}"
+                 name="word-${wordIndex}"
+                 data-word-id="word-${wordIndex}"
+                 data-word-length="${pureWord.length}"
+                 oninput="window.checkWord?.(this, '${pureWord}', ${wordIndex})"
+                 onclick="window.handleInputClick?.(this, '${pureWord}')"
+                 onkeydown="window.disableArrowKeys?.(event)"
+                 onfocus="window.handleInputFocus?.(this, '${pureWord}')"
+                 onblur="window.handleInputBlur?.(this, '${pureWord}')"
+                 maxlength="${pureWord.length}"
+                 size="${dynamicSize}"
+                 placeholder="${'*'.repeat(pureWord.length)}"
+                 autocomplete="off"
+                 style="width: ${dynamicSize}ch;"
+               />
+             <span class="word-punctuation">${nonAlphaNumeric}</span>
+           </span>`;
+          } else {
+            // Show the word (not hidden)
+            return `<span class="word-container">
+              <span class="correct-word revealed-word" onclick="window.handleWordClickForPopup && window.handleWordClickForPopup('${pureWord}', this)">${pureWord}</span>
+              <span class="word-punctuation">${nonAlphaNumeric}</span>
+            </span>`;
+          }
+        }
+        return `<span>${word}</span>`;
+      });
+
+      return processedWords.join(" ");
+    });
+
+    return processedSentences.join(" ");
+  }, [currentSentenceIndex, seededRandom, t]);
+
+  // Initialize dictation for current sentence
+  useEffect(() => {
+    console.log('🔍 Dictation render check:', {
+      transcriptDataLength: transcriptData.length,
+      currentSentenceIndex,
+      hasSentence: !!transcriptData[currentSentenceIndex],
+      progressLoaded,
+      sentenceText: transcriptData[currentSentenceIndex]?.text?.substring(0, 50)
+    });
+
+    // Render dictation content if transcript is loaded (even if progress is still loading)
+    if (transcriptData.length > 0 && transcriptData[currentSentenceIndex]) {
+      const text = transcriptData[currentSentenceIndex].text;
+      const isCompleted = progressLoaded && completedSentences.includes(currentSentenceIndex);
+      const sentenceWordsCompleted = progressLoaded ? (completedWords[currentSentenceIndex] || {}) : {};
+
+      // Prevent infinite loop: only render if sentence or completion status changed
+      if (
+        lastRenderedStateRef.current.sentenceIndex === currentSentenceIndex &&
+        lastRenderedStateRef.current.isCompleted === isCompleted &&
+        progressLoaded
+      ) {
+        console.log('⏭️ Skipping render - same sentence with same completion status');
+        return;
+      }
+
+      console.log('✅ Rendering sentence', currentSentenceIndex, ':', {
+        isCompleted,
+        sentenceWordsCompleted,
+        allCompletedWords: completedWords,
+        hidePercentage,
+        textLength: text.length,
+        progressLoaded
+      });
+
+      const processed = processLevelUp(text, isCompleted, sentenceWordsCompleted, hidePercentage);
+      console.log('📝 Processed HTML length:', processed.length);
+      setProcessedText(processed);
+      
+      // Mark this state as rendered
+      lastRenderedStateRef.current = { sentenceIndex: currentSentenceIndex, isCompleted };
+      
+      // Detect sentence length and add appropriate class + set word-length CSS variables
+      setTimeout(() => {
+        // NOTE: Using class selector here instead of ref because this element
+        // is rendered via dangerouslySetInnerHTML. The class is from CSS Modules
+        // (styles.dictationInputArea) but we query it as a plain class.
+        const dictationArea = document.querySelector('.dictationInputArea');
+        if (dictationArea) {
+          const wordCount = text.split(/\s+/).filter(w => w.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "").length >= 1).length;
+          
+          // Remove old classes
+          dictationArea.classList.remove('short-sentence', 'medium-sentence', 'long-sentence', 'very-long-sentence');
+          
+          // Add new class based on word count
+          if (wordCount <= 8) {
+            dictationArea.classList.add('short-sentence');
+          } else if (wordCount <= 15) {
+            dictationArea.classList.add('medium-sentence');
+          } else if (wordCount <= 25) {
+            dictationArea.classList.add('long-sentence');
+          } else {
+            dictationArea.classList.add('very-long-sentence');
+          }
+          
+          console.log(`Sentence has ${wordCount} words, applied class`);
+          
+          // Set word-length CSS variable for each input based on actual word length
+          const inputs = dictationArea.querySelectorAll('.word-input');
+          inputs.forEach(input => {
+            const wordLength = input.getAttribute('data-word-length');
+            if (wordLength) {
+              input.style.setProperty('--word-length', wordLength);
+            }
+          });
+        }
+      }, 100);
+
+      // Expose functions to window object for dynamic HTML event handlers
+      // NOTE: These functions are called from dynamically generated HTML (innerHTML)
+      // via onclick, oninput, etc. Since the HTML is created as strings, we can't
+      // use React event handlers directly. This is a valid pattern for this use case.
+      if (typeof window !== 'undefined') {
+        window.checkWord = checkWord;
+        window.handleInputClick = handleInputClick;
+        window.handleInputFocus = handleInputFocus;
+        window.handleInputBlur = handleInputBlur;
+        window.saveWord = saveWord;
+        window.showHint = showHint;
+        window.handleWordClickForPopup = handleWordClickForPopup;
+        window.showPointsAnimation = showPointsAnimation;
+        window.disableArrowKeys = (e) => {
+          // Prevent all arrow keys and space from being typed in input fields
+          if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Space"].includes(e.code)) {
+            e.preventDefault();
+          }
+        };
+      }
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSentenceIndex, transcriptData, processLevelUp, checkWord, handleInputClick, handleInputFocus, handleInputBlur, saveWord, showHint, handleWordClickForPopup, completedSentences, progressLoaded, hidePercentage, showPointsAnimation]);
+  // Note: Removed 'completedWords' from dependencies to prevent infinite loop
+  // Individual word completions are handled via direct DOM manipulation (input → span)
+
+  const handleBackToHome = () => navigateWithLocale(router, '/');
+
+  // Calculate accurate progress based on words completed (not just sentences)
+  const progressPercentage = useMemo(() => {
+    if (!transcriptData || transcriptData.length === 0) return 0;
+
+    let totalWords = 0;
+    let completedWordsCount = 0;
+
+    transcriptData.forEach((segment, sentenceIndex) => {
+      const words = segment.text.split(/\s+/);
+      const validWords = words.filter(word => {
+        const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+        return pureWord.length >= 1;
+      });
+
+      totalWords += validWords.length;
+
+      // Count completed words for this sentence
+      const sentenceWordsCompleted = completedWords[sentenceIndex] || {};
+      const completedCount = Object.keys(sentenceWordsCompleted).filter(
+        wordIdx => sentenceWordsCompleted[wordIdx]
+      ).length;
+
+      completedWordsCount += completedCount;
+    });
+
+    return totalWords > 0 ? Math.round((completedWordsCount / totalWords) * 100) : 0;
+  }, [transcriptData, completedWords]);
+
+  // Set initial sentence to first incomplete sentence when progress is loaded
+  useEffect(() => {
+    if (progressLoaded && sortedTranscriptIndices.length > 0 && !hasJumpedToIncomplete.current && transcriptData.length > 0) {
+      // Always jump to first incomplete sentence in sorted list
+      const firstIncompleteSentence = sortedTranscriptIndices[0];
+      
+      console.log('🎯 Jump Logic Debug:', {
+        totalSentences: transcriptData.length,
+        sortedIndicesLength: sortedTranscriptIndices.length,
+        completedSentences: completedSentences,
+        firstIncompleteSentence: firstIncompleteSentence,
+        isFirstCompleted: completedSentences.includes(firstIncompleteSentence),
+        sortedIndices: sortedTranscriptIndices.slice(0, 10) // Show first 10
+      });
+      
+      setCurrentSentenceIndex(firstIncompleteSentence);
+      
+      // Also seek video to that sentence's start time
+      const targetSentence = transcriptData[firstIncompleteSentence];
+      if (targetSentence) {
+        // Seek to the sentence without auto-playing
+        if (isYouTube && youtubePlayerRef.current?.seekTo) {
+          youtubePlayerRef.current.seekTo(targetSentence.start, true);
+          setCurrentTime(targetSentence.start);
+        } else if (audioRef.current) {
+          audioRef.current.currentTime = targetSentence.start;
+          setCurrentTime(targetSentence.start);
+        }
+        setSegmentPlayEndTime(targetSentence.end);
+      }
+      
+      hasJumpedToIncomplete.current = true;
+    }
+  }, [progressLoaded, sortedTranscriptIndices, completedSentences, transcriptData, isYouTube]);
+
+  if (loading) {
+    return <DictationSkeleton isMobile={isMobile} />;
+  }
+
+  if (!lesson) {
+    return (
+      <div className={styles.centeredState}>
+        <div style={{ textAlign: 'center' }}>
+          <h1>❌ Lektion nicht gefunden</h1>
+           <p style={{ marginTop: '20px' }}>Lektion mit ID <strong>{lessonId}</strong> existiert nicht.</p>
+          <button 
+            onClick={handleBackToHome}
+            style={{ 
+              marginTop: '30px', 
+              padding: '12px 24px', 
+              fontSize: '16px',
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              color: 'white',
+              border: 'none',
+              borderRadius: '8px',
+              cursor: 'pointer'
+            }}
+          >
+            ← Zur Startseite
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Generate structured data for this lesson
+  const videoData = lesson.youtubeUrl ? generateVideoStructuredData({
+    ...lesson,
+    title: lesson.displayTitle || lesson.title,
+    description: `Diktat Übung: ${lesson.title}. Verbessere dein Hörverstehen und Schreiben durch Diktat-Übungen.`,
+    thumbnail: lesson.thumbnail,
+    videoUrl: lesson.youtubeUrl,
+    duration: duration ? `PT${Math.floor(duration)}S` : undefined,
+  }) : null;
+
+  const breadcrumbData = generateBreadcrumbStructuredData([
+    { name: 'Home', url: '/' },
+    { name: 'Diktat', url: '/dictation' },
+    { name: lesson.displayTitle || lesson.title, url: `/dictation/${lessonId}` }
+  ]);
+
+  const structuredDataArray = videoData
+    ? [videoData, breadcrumbData]
+    : [breadcrumbData];
+
+  const sentenceListClassNames = {
+    item: styles.sentenceItem,
+    itemActive: styles.sentenceItemActive,
+    itemPlaying: styles.sentenceItemPlaying,
+    number: styles.sentenceNumber,
+    content: styles.sentenceContent,
+    text: styles.sentenceText,
+    time: styles.sentenceTime,
+    actions: styles.sentenceActions,
+    actionButton: styles.sentenceActionButton
+  };
+
+  const footerClassNames = {
+    wrapper: styles.footerControls,
+    button: styles.footerButton,
+    icon: styles.footerIcon,
+    label: styles.footerLabel
+  };
+
+  return (
+    <div className={styles.page}>
+      <SEO 
+        title={`${lesson.displayTitle || lesson.title} - Diktat Übung | PapaGeil`}
+        description={`Verbessere dein Deutsch mit Diktat: "${lesson.title}". ✓ Level ${lesson.difficulty || 'A1-C2'} ✓ Hörverstehen trainieren ✓ Rechtschreibung üben ✓ Mit sofortigem Feedback`}
+        keywords={`Diktat ${lesson.title}, Deutsch Diktat üben, ${lesson.difficulty || 'A1-C2'} Deutsch, Hörverstehen Deutsch, Rechtschreibung Deutsch, PapaGeil Diktat, German dictation practice, Deutsch schreiben lernen`}
+        ogType="video.other"
+        ogImage={lesson.thumbnail || '/og-image.jpg'}
+        canonicalUrl={`/dictation/${lessonId}`}
+        locale="de_DE"
+        author="PapaGeil"
+        publishedTime={lesson.createdAt}
+        modifiedTime={lesson.updatedAt || lesson.createdAt}
+        structuredData={structuredDataArray}
+      />
+
+      {/* Hide footer and header on mobile */}
+      <style jsx global>{`
+        @media (max-width: 768px) {
+          .header,
+          footer {
+            display: none !important;
+          }
+        }
+      `}</style>
+
+      <div className={styles.pageContainer}>
+        {/* Main 3-Column Layout */}
+        <div className={styles.mainContent}>
+          {/* Left Column - Video */}
+          <DictationVideoSection
+            lesson={lesson}
+            isYouTube={isYouTube}
+            audioRef={audioRef}
+            currentTime={currentTime}
+            duration={duration}
+            autoStop={autoStop}
+            onAutoStopChange={setAutoStop}
+            studyTime={studyTime}
+            formatStudyTime={formatStudyTime}
+            formatTime={formatTime}
+            isMobile={isMobile}
+            onVideoClick={() => transcriptData[currentSentenceIndex] && handleSentenceClick(transcriptData[currentSentenceIndex].start, transcriptData[currentSentenceIndex].end)}
+            isPlaying={isPlaying}
+            onPlayPause={handlePlayPause}
+            onReplayFromStart={handleReplayFromStart}
+            onPrevSentence={goToPreviousSentence}
+            onNextSentence={goToNextSentence}
+            playbackSpeed={playbackSpeed}
+            onSpeedChange={handleSpeedChange}
+          />
+
+          {/* Middle Column - Dictation Area */}
+          <div className={styles.middleSection}>
+            {/* Dictation Header - Using Component */}
+            <DictationHeader
+              isMobile={isMobile}
+              currentSentenceIndex={currentSentenceIndex}
+              totalSentences={transcriptData.length}
+              difficultyLevel={difficultyLevel}
+              onDifficultyChange={handleDifficultyChange}
+            />
+
+            <div className={styles.dictationContainer}>
+              {/* Mobile: Horizontal Scrollable Slides with Lazy Loading */}
+              {transcriptData.length === 0 ? (
+                <div style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  height: '100%',
+                  padding: '20px',
+                  textAlign: 'center',
+                  color: 'var(--text-secondary)'
+                }}>
+                  <div>
+                    <div style={{ fontSize: '24px', marginBottom: '10px' }}>⏳</div>
+                    <div>Loading dictation...</div>
+                  </div>
+                </div>
+              ) : isMobile ? (
+                <div className={styles.dictationSlidesWrapper}>
+                  <div 
+                    className={styles.dictationSlides}
+                    ref={dictationSlidesRef}
+                  >
+                    {/* Spacer for slides before lazy range */}
+                    {lazySlideRange.start > 0 && (
+                      <div 
+                        className={styles.slidesSpacer}
+                        style={{ 
+                          width: `calc(${lazySlideRange.start} * (94% + 12px))`,
+                          flexShrink: 0
+                        }}
+                      />
+                    )}
+
+                    {/* Render only lazy-loaded slides */}
+                    {lazySlidesToRender.map((originalIndex, arrayIndex) => {
+                      const sentence = transcriptData[originalIndex];
+                      const isCompleted = completedSentences.includes(originalIndex);
+                      const sentenceWordsCompleted = completedWords[originalIndex] || {};
+                      const isActive = originalIndex === currentSentenceIndex;
+                      
+                      // Generate processed text for this sentence
+                      const sentenceProcessedText = processLevelUp(
+                        sentence.text,
+                        isCompleted,
+                        sentenceWordsCompleted,
+                        hidePercentage
+                      );
+
+                      return (
+                        <div
+                          key={originalIndex}
+                          data-slide-index={lazySlideRange.start + arrayIndex}
+                          className={`${styles.dictationSlide} ${isActive ? styles.dictationSlideActive : ''}`}
+                          onClick={() => {
+                            if (!isActive) {
+                              setCurrentSentenceIndex(originalIndex);
+                              handleSentenceClick(sentence.start, sentence.end);
+                            }
+                          }}
+                        >
+                          {isCompleted && (
+                            <div className={styles.slideHeader}>
+                              <span className={styles.slideCompleted}>✓</span>
+                            </div>
+                          )}
+
+                          {/* Mode 1: Fill in blanks */}
+                          {dictationMode === 'fill-blanks' ? (
+                            <div
+                              className={styles.dictationInputArea}
+                              data-sentence-index={originalIndex}
+                              dangerouslySetInnerHTML={{ __html: sentenceProcessedText }}
+                              onTouchStart={isActive ? handleTouchStart : undefined}
+                              onTouchMove={isActive ? handleTouchMove : undefined}
+                              onTouchEnd={isActive ? handleTouchEnd : undefined}
+                            />
+                          ) : (
+                            /* Mode 2: Full sentence input */
+                            <div
+                              className={styles.fullSentenceMode}
+                              onTouchStart={isActive ? handleTouchStart : undefined}
+                              onTouchMove={isActive ? handleTouchMove : undefined}
+                              onTouchEnd={isActive ? handleTouchEnd : undefined}
+                            >
+                              <div className={styles.fullSentenceDisplay}>
+                                {isCompleted ? (
+                                  <div 
+                                    className={styles.dictationInputArea}
+                                    dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(sentence.text) }}
+                                  />
+                                ) : (
+                                  <div className={styles.hintSentenceText} data-sentence-index={originalIndex}>
+                                    {sentence.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => {
+                                      // Remove punctuation to get pure word
+                                      const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+                                      const punctuation = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
+
+                                      if (pureWord.length === 0) return null;
+
+                                      // Check if this word is revealed
+                                      const isRevealed = revealedHintWords[originalIndex]?.[idx];
+
+                                      // Check word comparison result
+                                      const comparisonResult = wordComparisonResults[originalIndex]?.[idx];
+
+                                      // Get partial reveal count
+                                      const partialCount = partialRevealedChars[originalIndex]?.[idx] || 0;
+
+                                      const wordClass = comparisonResult
+                                        ? (comparisonResult === 'correct' ? styles.hintWordCorrect : styles.hintWordIncorrect)
+                                        : (isRevealed ? styles.hintWordRevealed : (partialCount > 0 ? styles.hintWordPartial : ''));
+
+                                      // Determine what to display
+                                      let displayText;
+                                      if (comparisonResult || isRevealed) {
+                                        // Show full word if checked or manually revealed
+                                        displayText = pureWord;
+                                      } else if (partialCount > 0) {
+                                        // Show partial characters
+                                        displayText = pureWord.substring(0, partialCount) + '\u00A0'.repeat(pureWord.length - partialCount);
+                                      } else {
+                                        // Show all spaces
+                                        displayText = '\u00A0'.repeat(pureWord.length);
+                                      }
+
+                                      return (
+                                        <span key={idx} className={styles.hintWordContainer}>
+                                          <span
+                                            className={`${styles.hintWordBox} ${wordClass}`}
+                                            onClick={() => !comparisonResult && toggleRevealHintWord(originalIndex, idx)}
+                                            title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để ẩn' : 'Click để hiện gợi ý')}
+                                          >
+                                            {displayText}
+                                          </span>
+                                        </span>
+                                      );
+                                    })}
+                                  </div>
+                                )}
+                              </div>
+
+                              <div className={styles.textareaWithVoice} style={{ position: 'relative' }}>
+                                <textarea
+                                  className={styles.fullSentenceInput}
+                                  placeholder="Nhập toàn bộ câu..."
+                                  value={fullSentenceInputs[originalIndex] || ''}
+                                  onChange={(e) => {
+                                    setFullSentenceInputs(prev => ({
+                                      ...prev,
+                                      [originalIndex]: e.target.value
+                                    }));
+                                    // Calculate partial reveals as user types
+                                    calculatePartialReveals(originalIndex, e.target.value, sentence.text);
+                                  }}
+                                  onKeyDown={(e) => {
+                                    // Auto-check on Enter (but allow Shift+Enter for new line)
+                                    if (e.key === 'Enter' && !e.shiftKey) {
+                                      e.preventDefault();
+                                      handleFullSentenceSubmit(originalIndex);
+                                    }
+                                  }}
+                                  disabled={isCompleted}
+                                  rows={3}
+                                  style={{ paddingRight: '50px' }}
+                                />
+                                {!isCompleted && (
+                                  <div style={{
+                                    position: 'absolute',
+                                    bottom: '8px',
+                                    right: '8px',
+                                    zIndex: 1
+                                  }}>
+                                    <ShadowingVoiceRecorder
+                                      onTranscript={(text) => {
+                                        setFullSentenceInputs(prev => ({
+                                          ...prev,
+                                          [originalIndex]: text
+                                        }));
+                                        calculatePartialReveals(originalIndex, text, sentence.text);
+                                      }}
+                                      onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
+                                      language="de-DE"
+                                    />
+                                  </div>
+                                )}
+                              </div>
+
+                              {isActive && !isCompleted && (
+                                <div className={styles.dictationActions}>
+                                  <button
+                                    className={styles.checkButton}
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      handleFullSentenceSubmit(originalIndex);
+                                    }}
+                                  >
+                                    Kiểm tra
+                                  </button>
+
+                                  <button
+                                    className={styles.nextButton}
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      goToNextSentence();
+                                    }}
+                                    disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
+                                  >
+                                    {t('lesson.ui.next')}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                      <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                  </button>
+                                </div>
+                              )}
+                            </div>
+                          )}
+
+                          {isActive && dictationMode === 'fill-blanks' && (
+                            <div className={styles.dictationActions}>
+                              <button
+                                className={styles.showAllWordsButton}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  // Reveal all words for current sentence
+                                  const slideElement = e.currentTarget.closest(`.${styles.dictationSlide}`);
+                                  const allInputs = slideElement.querySelectorAll('.word-input');
+                                  const wordsToComplete = {};
+
+                                  allInputs.forEach((input) => {
+                                    const wordIndexMatch = input.id.match(/word-(\d+)/);
+                                    if (wordIndexMatch) {
+                                      const wordIndex = parseInt(wordIndexMatch[1]);
+                                      const correctWord = input.getAttribute('oninput').match(/'([^']+)'/)[1];
+                                      wordsToComplete[wordIndex] = correctWord;
+                                      saveWord(correctWord);
+                                    }
+                                  });
+
+                                  setCompletedWords(prevWords => {
+                                    const updatedWords = { ...prevWords };
+                                    if (!updatedWords[originalIndex]) {
+                                      updatedWords[originalIndex] = {};
+                                    }
+                                    updatedWords[originalIndex] = {
+                                      ...updatedWords[originalIndex],
+                                      ...wordsToComplete
+                                    };
+                                    
+                                    // Only mark as completed if we actually revealed words AND they meet the threshold
+                                    if (Object.keys(wordsToComplete).length > 0) {
+                                      // Calculate total words that needed to be filled
+                                      const sentence = transcriptData[originalIndex];
+                                      if (sentence) {
+                                        const words = sentence.text.split(/\s+/);
+                                        const validWordIndices = [];
+                                        words.forEach((word, idx) => {
+                                          const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+                                          if (pureWord.length >= 1) {
+                                            validWordIndices.push(idx);
+                                          }
+                                        });
+                                        
+                                        const totalValidWords = validWordIndices.length;
+                                        const wordsToHideCount = Math.ceil((totalValidWords * hidePercentage) / 100);
+                                        const totalCompletedWords = Object.keys(updatedWords[originalIndex]).length;
+                                        
+                                        // Mark as completed only if total completed words >= required threshold
+                                        if (totalCompletedWords >= wordsToHideCount && wordsToHideCount > 0 && !completedSentences.includes(originalIndex)) {
+                                          const updatedCompleted = [...completedSentences, originalIndex];
+                                          setCompletedSentences(updatedCompleted);
+                                          saveProgress(updatedCompleted, updatedWords);
+                                          console.log(`✅ Sentence ${originalIndex} completed via Show All (mobile)!`);
+                                        } else {
+                                          // Just save progress without marking as complete
+                                          saveProgress(completedSentences, updatedWords);
+                                        }
+                                      }
+                                    } else {
+                                      saveProgress(completedSentences, updatedWords);
+                                    }
+                                    
+                                    return updatedWords;
+                                  });
+                                }}
+                              >
+                                {t('lesson.ui.showAll')}
+                              </button>
+
+                              <button
+                                className={styles.nextButton}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  goToNextSentence();
+                                }}
+                                disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
+                              >
+                                {t('lesson.ui.next')}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                  <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+
+                    {/* Spacer for slides after lazy range */}
+                    {lazySlideRange.end < mobileVisibleIndices.length && (
+                      <div 
+                        className={styles.slidesSpacer}
+                        style={{ 
+                          width: `calc(${mobileVisibleIndices.length - lazySlideRange.end} * (94% + 12px))`,
+                          flexShrink: 0
+                        }}
+                      />
+                    )}
+                  </div>
+                </div>
+              ) : (
+                /* Desktop: Single Sentence View */
+                <>
+                  {dictationMode === 'fill-blanks' ? (
+                    /* Mode 1: Fill in blanks */
+                    <>
+                      <div
+                        className={styles.dictationInputArea}
+                        data-sentence-index={currentSentenceIndex}
+                        dangerouslySetInnerHTML={{ __html: processedText }}
+                        onTouchStart={handleTouchStart}
+                        onTouchMove={handleTouchMove}
+                        onTouchEnd={handleTouchEnd}
+                      />
+
+                      <div className={styles.dictationActions}>
+                        <button
+                          className={styles.showAllWordsButton}
+                          onClick={() => {
+                            const allInputs = document.querySelectorAll('.word-input');
+                            const wordsToComplete = {};
+
+                            allInputs.forEach((input) => {
+                              const wordIndexMatch = input.id.match(/word-(\d+)/);
+                              if (wordIndexMatch) {
+                                const wordIndex = parseInt(wordIndexMatch[1]);
+                                const correctWord = input.getAttribute('oninput').match(/'([^']+)'/)[1];
+                                wordsToComplete[wordIndex] = correctWord;
+                                saveWord(correctWord);
+                              }
+                            });
+
+                            setCompletedWords(prevWords => {
+                              const updatedWords = { ...prevWords };
+                              if (!updatedWords[currentSentenceIndex]) {
+                                updatedWords[currentSentenceIndex] = {};
+                              }
+                              updatedWords[currentSentenceIndex] = {
+                                ...updatedWords[currentSentenceIndex],
+                                ...wordsToComplete
+                              };
+                              
+                              // Only mark as completed if we actually revealed words AND they meet the threshold
+                              if (Object.keys(wordsToComplete).length > 0) {
+                                // Calculate total words that needed to be filled
+                                const sentence = transcriptData[currentSentenceIndex];
+                                if (sentence) {
+                                  const words = sentence.text.split(/\s+/);
+                                  const validWordIndices = [];
+                                  words.forEach((word, idx) => {
+                                    const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+                                    if (pureWord.length >= 1) {
+                                      validWordIndices.push(idx);
+                                    }
+                                  });
+                                  
+                                  const totalValidWords = validWordIndices.length;
+                                  const wordsToHideCount = Math.ceil((totalValidWords * hidePercentage) / 100);
+                                  const totalCompletedWords = Object.keys(updatedWords[currentSentenceIndex]).length;
+                                  
+                                  // Mark as completed only if total completed words >= required threshold
+                                  if (totalCompletedWords >= wordsToHideCount && wordsToHideCount > 0 && !completedSentences.includes(currentSentenceIndex)) {
+                                    const updatedCompleted = [...completedSentences, currentSentenceIndex];
+                                    setCompletedSentences(updatedCompleted);
+                                    saveProgress(updatedCompleted, updatedWords);
+                                    console.log(`✅ Sentence ${currentSentenceIndex} completed via Show All!`);
+                                  } else {
+                                    // Just save progress without marking as complete
+                                    saveProgress(completedSentences, updatedWords);
+                                  }
+                                }
+                              } else {
+                                saveProgress(completedSentences, updatedWords);
+                              }
+                              
+                              return updatedWords;
+                            });
+                          }}
+                        >
+                          {t('lesson.ui.showAll')}
+                        </button>
+
+                        <button
+                          className={styles.nextButton}
+                          onClick={goToNextSentence}
+                          disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
+                        >
+                          {t('lesson.ui.next')}
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </>
+                  ) : (
+                    /* Mode 2: Full sentence input for Desktop */
+                    <div className={styles.fullSentenceMode}>
+                      <div className={styles.fullSentenceDisplay}>
+                        {completedSentences.includes(currentSentenceIndex) ? (
+                          <div 
+                            className={styles.dictationInputArea}
+                            dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(transcriptData[currentSentenceIndex]?.text || '') }}
+                          />
+                        ) : (
+                          <div className={styles.hintSentenceText} data-sentence-index={currentSentenceIndex}>
+                            {transcriptData[currentSentenceIndex]?.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => {
+                              // Remove punctuation to get pure word
+                              const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+                              const punctuation = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
+
+                              if (pureWord.length === 0) return null;
+
+                              // Check if this word is revealed
+                              const isRevealed = revealedHintWords[currentSentenceIndex]?.[idx];
+
+                              // Check word comparison result
+                              const comparisonResult = wordComparisonResults[currentSentenceIndex]?.[idx];
+
+                              // Get partial reveal count
+                              const partialCount = partialRevealedChars[currentSentenceIndex]?.[idx] || 0;
+
+                              const wordClass = comparisonResult
+                                ? (comparisonResult === 'correct' ? styles.hintWordCorrect : styles.hintWordIncorrect)
+                                : (isRevealed ? styles.hintWordRevealed : (partialCount > 0 ? styles.hintWordPartial : ''));
+
+                              // Determine what to display
+                              let displayText;
+                              if (comparisonResult || isRevealed) {
+                                // Show full word if checked or manually revealed
+                                displayText = pureWord;
+                              } else if (partialCount > 0) {
+                                // Show partial characters
+                                displayText = pureWord.substring(0, partialCount) + '\u00A0'.repeat(pureWord.length - partialCount);
+                              } else {
+                                // Show all spaces
+                                displayText = '\u00A0'.repeat(pureWord.length);
+                              }
+
+                              return (
+                                <span key={idx} className={styles.hintWordContainer}>
+                                  <span
+                                    className={`${styles.hintWordBox} ${wordClass}`}
+                                    onClick={() => !comparisonResult && toggleRevealHintWord(currentSentenceIndex, idx)}
+                                    title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để ẩn' : 'Click để hiện gợi ý')}
+                                  >
+                                    {displayText}
+                                  </span>
+                                </span>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className={styles.textareaWithVoice}>
+                        <textarea
+                          className={styles.fullSentenceInput}
+                          placeholder="Nhập toàn bộ câu..."
+                          value={fullSentenceInputs[currentSentenceIndex] || ''}
+                          onChange={(e) => {
+                            setFullSentenceInputs(prev => ({
+                              ...prev,
+                              [currentSentenceIndex]: e.target.value
+                            }));
+                            // Calculate partial reveals as user types
+                            if (transcriptData[currentSentenceIndex]) {
+                              calculatePartialReveals(currentSentenceIndex, e.target.value, transcriptData[currentSentenceIndex].text);
+                            }
+                          }}
+                          onKeyDown={(e) => {
+                            // Auto-check on Enter (but allow Shift+Enter for new line)
+                            if (e.key === 'Enter' && !e.shiftKey) {
+                              e.preventDefault();
+                              handleFullSentenceSubmit(currentSentenceIndex);
+                            }
+                          }}
+                          disabled={completedSentences.includes(currentSentenceIndex)}
+                          rows={3}
+                        />
+                        {!completedSentences.includes(currentSentenceIndex) && (
+                          <div className={styles.dictationVoiceButton}>
+                            <ShadowingVoiceRecorder
+                              onTranscript={(text) => {
+                                setFullSentenceInputs(prev => ({
+                                  ...prev,
+                                  [currentSentenceIndex]: text
+                                }));
+                                if (transcriptData[currentSentenceIndex]) {
+                                  calculatePartialReveals(currentSentenceIndex, text, transcriptData[currentSentenceIndex].text);
+                                }
+                              }}
+                              onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
+                              language="de-DE"
+                            />
+                          </div>
+                        )}
+                      </div>
+
+                      <div className={styles.dictationActions}>
+                        <button
+                          className={styles.checkButton}
+                          onClick={() => handleFullSentenceSubmit(currentSentenceIndex)}
+                          disabled={completedSentences.includes(currentSentenceIndex)}
+                        >
+                          Kiểm tra
+                        </button>
+
+                        <button
+                          className={styles.nextButton}
+                          onClick={goToNextSentence}
+                          disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
+                        >
+                          {t('lesson.ui.next')}
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Right Column - Transcript List */}
+          <div className={styles.rightSection}>
+            <div className={styles.transcriptHeader}>
+              <h3 className={styles.transcriptTitle}>
+                Transcript
+              </h3>
+              <ProgressIndicator
+                completedSentences={completedSentences}
+                totalSentences={transcriptData.length}
+                completedWords={completedWords}
+                totalWords={(() => {
+                  const total = transcriptData.reduce((sum, sentence) => {
+                    const words = sentence.text.split(/\s+/).filter(w => {
+                      const pureWord = w.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+                      return pureWord.length >= 1;
+                    });
+                    return sum + words.length;
+                  }, 0);
+                  
+                  // Debug: log progress data
+                  const completedWordsCount = Object.values(completedWords).reduce((sum, sentenceWords) => {
+                    return sum + Object.keys(sentenceWords).length;
+                  }, 0);
+                  
+                  console.log('📊 Progress Debug:', {
+                    completedSentences: completedSentences.length,
+                    totalSentences: transcriptData.length,
+                    completedWordsCount,
+                    totalWords: total,
+                    sentencePercent: Math.round((completedSentences.length / transcriptData.length) * 100),
+                    wordPercent: Math.round((completedWordsCount / total) * 100),
+                    overallPercent: Math.round(
+                      (completedSentences.length / transcriptData.length) * 100 * 0.7 +
+                      (completedWordsCount / total) * 100 * 0.3
+                    )
+                  });
+                  
+                  return total;
+                })()}
+                difficultyLevel={difficultyLevel}
+                hidePercentage={hidePercentage}
+                studyTime={studyTime}
+              />
+            </div>
+            
+             <div className={styles.transcriptSection} ref={transcriptSectionRef}>
+               <div className={styles.transcriptList}>
+                 {transcriptDisplayIndices.map((originalIndex) => {
+                   const segment = transcriptData[originalIndex];
+                   const isCompleted = completedSentences.includes(originalIndex);
+                   const sentenceWordsCompleted = completedWords[originalIndex] || {};
+                   
+                   // Check if sentence has been checked in full-sentence mode
+                   const isChecked = checkedSentences.includes(originalIndex);
+                   
+                   // In full-sentence mode, hide all text (100%) in transcript UNTIL checked
+                   const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
+                   
+                   // Get revealed hint words for this sentence (for full-sentence mode)
+                   const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
+                   
+                   // Show full text if completed OR if checked in full-sentence mode
+                   const shouldShowFullText = isCompleted || (dictationMode === 'full-sentence' && isChecked);
+
+                   return (
+                     <div
+                       key={originalIndex}
+                       ref={(el) => {
+                         transcriptItemRefs.current[originalIndex] = el;
+                       }}
+                       className={`${styles.transcriptItem} ${originalIndex === currentSentenceIndex ? styles.active : ''} ${!isCompleted ? styles.incomplete : ''}`}
+                       onClick={() => handleSentenceClick(segment.start, segment.end)}
+                     >
+                       <div className={styles.transcriptItemNumber}>
+                         #{originalIndex + 1}
+                         {isCompleted && <span className={styles.completedCheck}>✓</span>}
+                       </div>
+                        <div className={styles.transcriptItemText}>
+                          {shouldShowFullText ? segment.text : maskTextByPercentage(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)}
+                        </div>
+                      </div>
+                    );
+                  })}
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Bottom Controls - Using Component */}
+      {isMobile && (
+        <MobileBottomControls
+          isPlaying={isPlaying}
+          onPlayPause={handlePlayPause}
+          onReplay={handleReplayFromStart}
+          onPrevious={goToPreviousSentence}
+          onNext={goToNextSentence}
+          canGoPrevious={sortedTranscriptIndices.indexOf(currentSentenceIndex) !== 0}
+          canGoNext={sortedTranscriptIndices.indexOf(currentSentenceIndex) < sortedTranscriptIndices.length - 1}
+        />
+      )}
+
+      {/* Mobile Tooltip */}
+      {showTooltip && (
+        <WordTooltip
+          translation={tooltipTranslation}
+          position={tooltipPosition}
+          onClose={() => {
+            setShowTooltip(false);
+            setTooltipTranslation('');
+          }}
+        />
+      )}
+
+      {/* Desktop Dictionary Popup */}
+      {showVocabPopup && !isMobile && (
+        <DictionaryPopup
+          word={selectedWord}
+          position={popupPosition}
+          arrowPosition={popupArrowPosition}
+          lessonId={lessonId}
+          context={transcriptData[currentSentenceIndex]?.text || ''}
+          onClose={() => {
+            setShowVocabPopup(false);
+            setClickedWordElement(null);
+          }}
+        />
+      )}
+
+      {/* Word Suggestion Popup */}
+      {showSuggestionPopup && (
+        <WordSuggestionPopup
+          correctWord={suggestionWord}
+          context={suggestionContext}
+          wordIndex={suggestionWordIndex}
+          position={suggestionPosition}
+          onCorrectAnswer={handleCorrectSuggestion}
+          onWrongAnswer={handleWrongSuggestion}
+          onClose={() => setShowSuggestionPopup(false)}
+        />
+      )}
+
+      {/* Points animations */}
+      {pointsAnimations.map(animation => (
+        <PointsAnimation
+          key={animation.id}
+          points={animation.points}
+          startPosition={animation.startPosition}
+          endPosition={animation.endPosition}
+          onComplete={() => {}}
+        />
+      ))}
+    </div>
+  );
+};
+
+const DictationPage = () => {
+  return <DictationPageContent />;
+};
+
+export default DictationPage;

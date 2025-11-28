@@ -1,0 +1,593 @@
+{
+  "header": {
+    "logo": "PapaGeil",
+    "nav": {
+      "topics": "Themen",
+      "review": "Überprüfung",
+      "vocabulary": "Vokabular",
+      "leaderboard": "Bestenliste",
+      "dashboard": "Profil"
+    },
+    "themeToggle": "Thema umschalten",
+    "language": "Deutsch",
+    "points": "Ihre Gesamtpunktzahl",
+    "streak": "Ihre Lernserie ansehen",
+    "notifications": "Benachrichtigungen",
+    "userMenu": {
+      "label": "Benutzermenü",
+      "user": "Benutzer",
+      "dashboard": "Profil",
+      "myVocabulary": "Mein Vokabular",
+      "leaderboard": "Bestenliste",
+      "settings": "Einstellungen",
+      "adminArea": "Admin-Bereich",
+      "logout": "Abmelden"
+    },
+    "auth": {
+      "login": "Anmelden",
+      "register": "Registrieren"
+    }
+  },
+  "footer": {
+    "description": "Verbessern Sie Ihre deutsche Aussprache und Sprechfähigkeiten mit modernen Shadowing- und Diktatmethoden.",
+    "sections": {
+      "information": "Information",
+      "features": "Features"
+    },
+    "links": {
+      "privacy": "Datenschutzrichtlinie",
+      "about": "Über uns",
+      "terms": "Nutzungsbedingungen",
+      "contact": "Kontakt",
+      "feedback": "Feedback",
+      "shadowing": "Shadowing",
+      "dictation": "Diktat",
+      "vocabulary": "Vokabular"
+    },
+    "copyright": "Alle Rechte vorbehalten.",
+    "madeWith": "Erstellt mit",
+    "by": "von PapaGeil"
+  },
+  "theme": {
+    "dark": {
+      "label": "Nachtmodus",
+      "description": "Kontrastreicher Dark Mode für späte Lernsessions."
+    },
+    "light": {
+      "label": "Hellmodus",
+      "description": "Heller, klarer Modus für Tageslernen."
+    },
+    "auto": {
+      "label": "Automatisch",
+      "description": "Folgt den Systemeinstellungen Ihres Geräts."
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "subtitle": "Verwalten Sie Ihre Kontoeinstellungen und Präferenzen",
+    "profile": {
+      "title": "Profil",
+      "name": "Name:",
+      "email": "E-Mail:",
+      "role": "Rolle:",
+      "admin": "Administrator",
+      "user": "Benutzer"
+    },
+    "appearance": {
+      "title": "Darstellung",
+      "description": "Wählen Sie Ihr bevorzugtes Farbschema",
+      "current": "Aktuell:"
+    },
+    "nativeLanguage": {
+      "title": "Muttersprache",
+      "description": "Wählen Sie Ihre Muttersprache für Übersetzungen",
+      "current": "Aktuelle Sprache:"
+    },
+    "level": {
+      "title": "Deutsch-Niveau",
+      "description": "Wählen Sie Ihr aktuelles Deutsch-Niveau",
+      "beginner": "Anfänger (A1-A2)",
+      "experienced": "Fortgeschritten (B1+)",
+      "all": "Alle Niveaus",
+      "hint": "Lektionen auf der Startseite werden automatisch nach deinem gewählten Niveau gefiltert"
+    },
+    "password": {
+      "title": "Passwort ändern",
+      "current": "Aktuelles Passwort",
+      "new": "Neues Passwort",
+      "confirm": "Passwort bestätigen",
+      "button": "Passwort ändern",
+      "updating": "Wird aktualisiert...",
+      "errors": {
+        "mismatch": "Neue Passwörter stimmen nicht überein!",
+        "minLength": "Neues Passwort muss mindestens 6 Zeichen lang sein!",
+        "failed": "Fehler beim Ändern des Passworts"
+      },
+      "success": "Passwort erfolgreich geändert!"
+    },
+    "updateSuccess": "Einstellungen aktualisiert!",
+    "updateError": "Fehler beim Aktualisieren"
+  },
+  "seo": {
+    "settings": {
+      "title": "Einstellungen - PapaGeil",
+      "description": "Verwalten Sie Ihre Kontoeinstellungen, Präferenzen und Profil.",
+      "keywords": "Einstellungen, Profil, Konto verwalten, Deutsch lernen Einstellungen"
+    }
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "dashboard": "Profil",
+    "settings": "Einstellungen"
+  },
+  "dictionaryPopup": {
+    "loginRequired": "Bitte melden Sie sich an, um Ihr Vokabular zu speichern!",
+    "searchingMeaning": "Einen Moment, die Wortbedeutung wird gesucht...",
+    "addedSuccess": "Wunderbar! Das Wort wurde Ihrem Vokabular hinzugefügt!",
+    "addedError": "Ups!",
+    "generalError": "Ein Fehler ist aufgetreten, bitte versuchen Sie es erneut!",
+    "alreadySaved": "Dieses Wort ist bereits in Ihrem Schatz!",
+    "saveToTreasure": "Dieses Wort im Schatz speichern",
+    "saved": "Gespeichert!",
+    "save": "Speichern",
+    "loading": "Lädt...",
+    "searching": "Suchen...",
+    "explanation": "Erklärung",
+    "examples": "Beispiele",
+    "noData": "Keine Daten gefunden"
+  },
+  "streakPopup": {
+    "label": "Satzserie"
+  },
+  "modeSelectionPopup": {
+    "title": "Lernmodus wählen",
+    "dictation": {
+      "name": "Diktat",
+      "description": "Hören Sie zu und tippen Sie, was Sie hören, um Ihr Hörverständnis und Ihre Rechtschreibung zu verbessern."
+    },
+    "shadowing": {
+      "name": "Shadowing",
+      "description": "Hören Sie zu und wiederholen Sie nach dem Sprecher, um Ihre Aussprache und Sprachflüssigkeit zu verbessern."
+    }
+  },
+  "vocabularyPopup": {
+    "details": "Vokabular-Details",
+    "saveTitle": "Ins Vokabular speichern",
+    "translating": "Übersetzt...",
+    "notesLabel": "Notizen (optional)",
+    "notesPlaceholder": "Fügen Sie hier Ihre Notizen hinzu...",
+    "cancel": "Abbrechen",
+    "save": "Ins Vokabular speichern",
+    "saving": "Wird gespeichert..."
+  },
+  "wordSuggestionPopup": {
+    "chooseWord": "Wähle das Wort",
+    "generatingSuggestions": "Generiere Vorschläge...",
+    "correct": "Richtig! Gut gemacht!",
+    "correctWordIs": "Das richtige Wort ist:"
+  },
+  "notifications": {
+    "title": "Benachrichtigungen",
+    "markAllRead": "Alle als gelesen markieren",
+    "loading": "Wird geladen...",
+    "noNotifications": "Noch keine Benachrichtigungen",
+    "justNow": "Gerade eben",
+    "minutesAgo": "vor {{count}} Minuten",
+    "hoursAgo": "vor {{count}} Stunden",
+    "daysAgo": "vor {{count}} Tagen",
+    "weeksAgo": "vor {{count}} Wochen"
+  },
+  "audioControls": {
+    "replay": "Wiederholen",
+    "play": "Abspielen",
+    "pause": "Pausieren"
+  },
+  "footerControls": {
+    "sentenceProgress": "Satz {{current}} von {{total}}",
+    "completed": "{{count}} abgeschlossen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "completeLesson": "Lektion abschließen"
+  },
+  "lessonCard": {
+    "dictation": "Diktat",
+    "shadowing": "Shadowing",
+    "youtube": "Youtube"
+  },
+  "progressIndicator": {
+    "title": "Fortschritt Details",
+    "sentencesCompleted": "Sätze abgeschlossen",
+    "wordsAccuracy": "Wortgenauigkeit",
+    "timeSpent": "Verbrachte Zeit",
+    "levelInfo": "Niveau {{level}}: {{percent}}% Wörter versteckt",
+    "milestone": "Meilenstein erreicht: {{percent}}%!"
+  },
+  "streakPopup": {
+    "label": "Satzserie",
+    "days": {
+      "mo": "MO",
+      "tu": "DI",
+      "we": "MI",
+      "th": "DO",
+      "fr": "FR",
+      "sa": "SA",
+      "su": "SO"
+    }
+  },
+  "modeSelection": {
+    "title": "Lernmodus wählen",
+    "studied": "Gelernt: {{time}}",
+    "close": "Schließen"
+  },
+  "homePage": {
+    "createLesson": {
+      "loginRequired": "Du musst angemeldet sein, um eine Lektion zu erstellen",
+      "error": "Fehler beim Erstellen der Lektion",
+      "connectionError": "Verbindungsfehler",
+      "placeholder": "Füge hier den YouTube-Link ein...",
+      "button": "Lektion erstellen",
+      "creating": "Erstelle..."
+    },
+    "filters": {
+      "all": "Alle Niveaus",
+      "beginner": {
+        "title": "Für Anfänger",
+        "description": "Konzentriere dich auf grundlegende Aussprache und das Hören einfacher Wörter und Sätze"
+      },
+      "experienced": {
+        "title": "Für Fortgeschrittene",
+        "description": "Verbessere deine Fähigkeiten mit natürlicher Sprechgeschwindigkeit und komplexeren Themen"
+      }
+    },
+    "pagination": {
+      "previous": "Zurück",
+      "next": "Weiter",
+      "page": "Seite {{current}} / {{total}}"
+    },
+    "loading": "Lade Lektionen...",
+    "noLessons": "Keine Lektionen gefunden",
+    "faq": {
+      "shadowing": {
+        "question": "Was ist die Shadowing-Methode?",
+        "answer": "Shadowing ist eine Sprach-Lerntechnik, bei der Sie gleichzeitig mit einem Muttersprachler sprechen, um Aussprache, Rhythmus und Intonation zu verbessern."
+      },
+      "levels": {
+        "question": "Für welche Sprachniveaus ist PapaGeil geeignet?",
+        "answer": "PapaGeil bietet Lektionen für alle Niveaus von A1 (Anfänger) bis C2 (Fortgeschrittene) nach dem Gemeinsamen Europäischen Referenzrahmen."
+      },
+      "youtube": {
+        "question": "Kann ich meine eigenen YouTube-Videos verwenden?",
+        "answer": "Ja! Sie können jeden YouTube-Link einfügen und wir erstellen automatisch eine interaktive Lektion mit Untertiteln für Sie."
+      },
+      "dictation": {
+        "question": "Wie funktioniert die Diktat-Methode?",
+        "answer": "Bei der Diktat-Methode hören Sie sich Audio an und schreiben das Gehörte auf. Dies verbessert Ihr Hörverstehen und Ihre Rechtschreibung."
+      },
+      "free": {
+        "question": "Ist PapaGeil kostenlos?",
+        "answer": "PapaGeil bietet viele kostenlose Lektionen. Premium-Funktionen wie unbegrenzte selbsterstellte Lektionen sind für registrierte Nutzer verfügbar."
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Profil",
+    "subtitle": "Ihr Lernfortschritt",
+    "loading": "Lädt...",
+    "stats": {
+      "totalPoints": "Gesamtpunkte",
+      "totalLessons": "Gesamt Lektionen",
+      "lessonsStarted": "Lektionen begonnen",
+      "lessonsCompleted": "Lektionen abgeschlossen",
+      "inProgress": "In Bearbeitung",
+      "maxStreak": "Maximale Serie"
+    },
+    "tabs": {
+      "dictation": "Diktat",
+      "shadowing": "Shadowing"
+    },
+    "progress": {
+      "title": "Lektionsfortschritt",
+      "all": "Alle Gelernten",
+      "completed": "Abgeschlossen",
+      "inProgress": "In Bearbeitung",
+      "overall": "Gesamtfortschritt",
+      "noDescription": "Keine Beschreibung"
+    },
+    "empty": {
+      "noLessons": "Noch keine Lektionen gelernt. Jetzt mit dem Lernen beginnen!",
+      "noCompleted": "Noch keine Lektionen abgeschlossen",
+      "noInProgress": "Keine Lektionen in Bearbeitung",
+      "noRanking": "Noch keine Ranglistenhistorie verfügbar."
+    },
+    "actions": {
+      "continueLearning": "Weiter lernen",
+      "viewLesson": "Lektion ansehen"
+    }
+  },
+  "vocabulary": {
+    "title": "Mein Vokabular",
+    "subtitle": "Ihr gespeicherter Wortschatz",
+    "loading": "Wird geladen...",
+    "empty": "Ihr Vokabular ist noch leer",
+    "startAdding": "Beginnen Sie, Wörter hinzuzufügen!",
+    "deleteConfirm": "Dieses Wort löschen?",
+    "meaning": "Bedeutung",
+    "examples": "Beispiele",
+    "context": "Kontext",
+    "errors": {
+      "loading": "Fehler beim Laden des Wortschatzes",
+      "deleting": "Fehler beim Löschen des Wortes",
+      "notAuthenticated": "Nicht authentifiziert. Bitte melden Sie sich erneut an.",
+      "general": "Ein Fehler ist aufgetreten"
+    },
+    "success": {
+      "deleted": "Wort erfolgreich gelöscht!"
+    },
+    "speak": "Aussprechen",
+    "delete": "Löschen",
+    "notes": "Notizen",
+    "translation": "Übersetzung"
+  },
+  "leaderboard": {
+    "title": "Bestenliste",
+    "subtitle": "Sehen Sie die aktivsten Lerner",
+    "loading": "Wird geladen...",
+    "loadingBoard": "Lade Bestenliste...",
+    "rank": "Rang",
+    "name": "Name",
+    "points": "Punkte",
+    "pts": "Pkt",
+    "yourRank": "Ihr Rang",
+    "topLearners": "Top-Lerner",
+    "allTime": "Alle Zeiten Rangliste",
+    "monthly": "Monatlich",
+    "maxStreak": "Max. Serie",
+    "notRanked": "Noch nicht eingestuft",
+    "emptyState": "Noch keine Ranglistendaten für diesen Monat.",
+    "startLearning": "Schließen Sie Lektionen ab, um Punkte zu sammeln!",
+    "endsIn": "Endet in",
+    "days": "Tage",
+    "hours": "Stunden",
+    "minutes": "Minuten"
+  },
+  "common": {
+    "close": "Schließen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "loading": "Wird geladen...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "confirm": "Bestätigen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "sort": "Sortieren"
+  },
+  "404": {
+    "title": "Seite nicht gefunden",
+    "subtitle": "Entschuldigung, die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "description": "Kehren Sie zur Startseite zurück, um weiter Deutsch zu lernen.",
+    "goHome": "Zur Startseite",
+    "goBack": "Zurück",
+    "suggestions": "Vielleicht suchen Sie nach:",
+    "links": {
+      "dashboard": "Profil",
+      "login": "Anmelden"
+    }
+  },
+  "offline": {
+    "title": "Sie sind offline",
+    "subtitle": "Diese Seite ist offline nicht verfügbar.",
+    "description": "Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.",
+    "tips": {
+      "title": "💡 Tipps zum Offline-Lernen:",
+      "cached": "Zuvor besuchte Lektionen werden automatisch zwischengespeichert",
+      "sync": "Ihr Fortschritt wird synchronisiert, wenn Sie wieder online sind",
+      "vocabulary": "Offline gespeicherte Vokabeln werden später synchronisiert"
+    },
+    "retry": "Erneut versuchen",
+    "goBack": "Zurück"
+  },
+  "staticPages": {
+    "loading": "Laden...",
+    "notFound": "Seite nicht gefunden",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
+  },
+  "loginModal": {
+    "welcome": "Willkommen zurück!",
+    "subtitle": "Setzen Sie Ihre Lernreise mit PapaGeil fort",
+    "continueWithGoogle": "Mit Google fortfahren",
+    "orContinueWith": "ODER FORTFAHREN MIT",
+    "enterEmail": "Geben Sie Ihre E-Mail ein",
+    "enterPassword": "Passwort eingeben",
+    "continueWithEmail": "Mit E-Mail fortfahren",
+    "login": "Anmelden",
+    "processing": "Wird verarbeitet...",
+    "checking": "Wird geprüft...",
+    "changeEmail": "Andere E-Mail verwenden",
+    "backToLogin": "← Zurück zur Anmeldung",
+    "backButton": "← Zurück",
+    "emailLoginTitle": "Mit E-Mail anmelden",
+    "noAccount": "Noch kein Konto?",
+    "registerNow": "Jetzt registrieren",
+    "createAccount": "Neues Konto erstellen",
+    "createAccountSubtitle": "Beginnen Sie Ihre Englisch-Lernreise mit PapaGeil",
+    "fullName": "Vor- und Nachname",
+    "email": "E-Mail",
+    "password": "Passwort (mindestens 6 Zeichen)",
+    "confirmPassword": "Passwort bestätigen",
+    "togglePassword": "Passwort anzeigen/verbergen",
+    "register": "Registrieren",
+    "registering": "Wird registriert...",
+    "termsRegister": "Mit der Registrierung stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu",
+    "termsLogin": "Mit der Anmeldung stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu",
+    "googleDisclaimer": "Wenn Sie Probleme bei der Anmeldung mit Google haben, versuchen Sie die Anmeldung mit E-Mail",
+    "errors": {
+      "popupBlocked": "Popup wurde blockiert. Bitte erlauben Sie Popups für diese Seite.",
+      "timeout": "Zeit abgelaufen. Bitte versuchen Sie es erneut.",
+      "googleFailed": "Google-Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "checkEmailFailed": "Fehler beim Überprüfen der E-Mail. Bitte versuchen Sie es erneut.",
+      "invalidResponse": "Ungültige Serverantwort. Bitte versuchen Sie es erneut.",
+      "emailRegisteredWithGoogle": "Diese E-Mail wurde bereits mit Google registriert. Bitte verwenden Sie \"Mit Google fortfahren\"",
+      "generalError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      "nameRequired": "Bitte geben Sie Ihren Namen ein",
+      "passwordMinLength": "Passwort muss mindestens 6 Zeichen lang sein",
+      "passwordMismatch": "Passwörter stimmen nicht überein",
+      "registerSuccess": "Registrierung erfolgreich! Bitte melden Sie sich an.",
+      "registerFailed": "Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Anmelden",
+      "subtitle": "Melden Sie sich an, um weiterzulernen",
+      "loadingText": "⏳ Lädt...",
+      "divider": "oder",
+      "noAccount": "Noch kein Konto?",
+      "registerLink": "Jetzt registrieren"
+    },
+    "register": {
+      "title": "Kostenlos Registrieren",
+      "subtitle": "Beginnen Sie Ihre Deutsch-Lernreise",
+      "createAccount": "Konto erstellen",
+      "illustrationTitle": "🦜 PapaGeil",
+      "illustrationSubtitle": "Lernen Sie Deutsch durch Shadowing-Methode",
+      "features": {
+        "lessons": "Interaktive Lektionen",
+        "vocabulary": "Vokabel-Tracking",
+        "audio": "Audio-Unterstützung"
+      },
+      "hasAccount": "Bereits ein Konto?",
+      "loginLink": "Jetzt anmelden"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Geben Sie Ihren Namen ein",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.de",
+      "password": "Passwort",
+      "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+      "confirmPassword": "Passwort bestätigen",
+      "confirmPasswordPlaceholder": "Passwort erneut eingeben",
+      "forgotPassword": "Passwort vergessen?",
+      "togglePassword": "Passwort sichtbarkeit umschalten",
+      "loading": "Lädt...",
+      "loginButton": "Anmelden",
+      "registerButton": "Registrieren",
+      "errors": {
+        "passwordMismatch": "Passwörter stimmen nicht überein"
+      }
+    }
+  },
+  "vocabularySave": {
+    "warning": "Bitte geben Sie die Bedeutung des Wortes ein",
+    "success": "Wort erfolgreich gespeichert!",
+    "error": "Fehler: {{message}}",
+    "generalError": "Ein Fehler ist aufgetreten",
+    "buttonTitle": "Wort speichern",
+    "popupTitle": "Wort speichern",
+    "labels": {
+      "word": "Wort:",
+      "context": "Kontext:",
+      "meaning": "Bedeutung (Vietnamesisch): *"
+    },
+    "placeholder": "Geben Sie die Bedeutung des Wortes ein...",
+    "loadingDetails": "⏳ Lade Wörterbuchdetails...",
+    "buttons": {
+      "saving": "Speichert...",
+      "save": "Speichern",
+      "cancel": "Abbrechen",
+      "loadingInfo": "Lade Informationen..."
+    }
+  },
+  "lesson": {
+    "vocabulary": {
+      "loginRequired": "Bitte melden Sie sich an, um Vokabeln zu speichern",
+      "success": "Vokabel erfolgreich gespeichert!",
+      "error": "Fehler beim Speichern",
+      "generalError": "Ein Fehler ist aufgetreten"
+    },
+    "completion": {
+      "allCompleted": "🎉 Alle Sätze abgeschlossen! Großartige Arbeit!"
+    },
+    "notFound": {
+      "title": "❌ Lektion nicht gefunden",
+      "description": "Lektion mit ID <strong>{{lessonId}}</strong> existiert nicht.",
+      "backButton": "← Zur Startseite"
+    },
+    "ui": {
+      "video": "Video",
+      "dictation": "Diktat",
+      "shadowing": "Shadowing",
+      "autoStop": "Auto Stop",
+      "start": "▶ Start",
+      "showHint": "Hinweise anzeigen",
+      "difficultySelector": "Wählen Sie den Schwierigkeitsgrad",
+    "levelAndDifficulty": "Lernstufe & Schwierigkeit",
+    "dictationDifficulty": "🔥 Diktat-Schwierigkeit (CEFR-Stufe)",
+    "dictationDifficultyDesc": "Wählen Sie, wie viele Wörter bei Diktat-Übungen ausgeblendet werden",
+    "currentLevel": "Aktuell:",
+    "appliesTo": "Gilt für alle Diktat-Lektionen",
+    "autoJumpOn": "Auto-Sprung: AN (Klicken zum Deaktivieren)",
+    "autoJumpOff": "Auto-Sprung: AUS (Klicken zum Aktivieren)",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "showAll": "Alle anzeigen",
+    "transcript": "Transkript"
+    }
+  },
+  "googleSignIn": {
+    "loading": "Wird angemeldet...",
+    "buttonText": "Mit Google anmelden"
+  },
+  "emptyState": {
+    "noItems": "Keine Elemente gefunden",
+    "noItemsDescription": "Derzeit sind keine Elemente anzuzeigen.",
+    "noLessons": "Keine Lektionen gefunden",
+    "noLessonsDescription": "Wir konnten keine Lektionen finden, die Ihren Kriterien entsprechen. Versuchen Sie, Ihre Filter anzupassen.",
+    "viewAllLessons": "Alle Lektionen anzeigen",
+    "noVocabulary": "Kein Wortschatz gespeichert",
+    "noVocabularyDescription": "Sie haben noch keine Vokabeln gespeichert. Beginnen Sie mit dem Lernen und speichern Sie Wörter, um Ihre Sammlung aufzubauen.",
+    "browseLessons": "Lektionen durchsuchen"
+  },
+  "protectedPage": {
+    "loading": "Lädt..."
+  },
+  "offlineIndicator": {
+    "syncing": "Daten werden synchronisiert...",
+    "backOnline": "Wieder online",
+    "offlineMode": "Offline-Modus - Fortschritt wird bei Online-Verbindung synchronisiert"
+  },
+  "shareButtons": {
+    "title": "Teilen:",
+    "facebook": "Auf Facebook teilen",
+    "twitter": "Auf Twitter teilen",
+    "linkedin": "Auf LinkedIn teilen",
+    "whatsapp": "Auf WhatsApp teilen",
+    "telegram": "Auf Telegram teilen",
+    "email": "Per E-Mail teilen",
+    "copyLink": "Link kopieren",
+    "linkCopied": "Link kopiert!",
+    "moreOptions": "Mehr Optionen"
+  },
+  "userProfile": {
+    "privacyLabel": "Profil-Privatsphäre",
+    "privacyStatus": "Öffentlich",
+    "premiumStatus": "Premium Status",
+    "premiumInactive": "Inaktiv",
+    "totalPremiumMonths": "Gesamt Premium-Monate",
+    "notPremium": "Kein Premium-Mitglied",
+    "unlockPro": "PRO freischalten",
+    "maxStreak": "Max. Serie:",
+    "dictation": "Diktat",
+    "shadowing": "Shadowing",
+    "totalLessons": "Gesamte Lektionen"
+  }
+}

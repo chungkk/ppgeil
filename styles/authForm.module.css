@@ -1,0 +1,295 @@
+/* Modern Auth Form Styles */
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Form Field Container */
+.formField {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formLabel {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+/* Input Styling */
+.formInput {
+  width: 100%;
+  padding: 14px 16px;
+  background: #f8f9fa;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  color: #1a1a1a;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.formInput::placeholder {
+  color: #999;
+}
+
+.formInput:hover {
+  background: #f1f3f5;
+  border-color: #e1e4e8;
+}
+
+.formInput:focus {
+  background: white;
+  border-color: var(--accent-red);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.formInput:disabled {
+  background: #e9ecef;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Password Input with Toggle */
+.passwordContainer {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.passwordToggle:hover {
+  color: var(--accent-green);
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.passwordToggle:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Error Message */
+.errorMessage {
+  padding: 14px 16px;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.05));
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-left: 4px solid #ef4444;
+  border-radius: 12px;
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 500;
+  animation: slideDown 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.errorMessage::before {
+  content: '⚠️';
+  font-size: 16px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Submit Button */
+.submitButton {
+  width: 100%;
+  padding: 16px;
+  background: var(--accent-gradient);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.submitButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+}
+
+.submitButton:hover::before {
+  left: 100%;
+}
+
+.submitButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+.submitButton:disabled {
+  background: linear-gradient(135deg, #cbd5e1, #94a3b8);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.submitButton:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Loading State */
+.loadingSpinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Forgot Password Link */
+.forgotPassword {
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.forgotPasswordLink {
+  color: var(--accent-green);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.forgotPasswordLink:hover {
+  color: var(--accent-red);
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+
+/* Level Selector (for registration) */
+.levelSelector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.levelOption {
+  padding: 12px;
+  border: 2px solid #e1e4e8;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.levelOption:hover {
+  border-color: var(--accent-red);
+  background: rgba(102, 126, 234, 0.05);
+  transform: translateY(-2px);
+}
+
+.levelOption.selected {
+  border-color: var(--accent-red);
+  background: var(--accent-gradient);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Checkbox Styling */
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--accent-green);
+}
+
+.checkboxLabel {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .formInput {
+    padding: 12px 14px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .submitButton {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .levelSelector {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

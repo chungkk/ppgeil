@@ -1,0 +1,302 @@
+/* Word Suggestion Popup - Simple Horizontal Layout */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 10000;
+  pointer-events: all;
+}
+
+.popup {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  width: auto;
+  box-shadow: none;
+  position: absolute;
+  animation: fadeIn 0.12s ease-out;
+  z-index: 10001;
+  pointer-events: all;
+}
+
+/* Position popup to the right of word (default) - centered vertically with hint button */
+.positionRight {
+  transform: translate(0px, -50%);
+}
+
+/* Position popup to the left of word - centered vertically with hint button */
+.positionLeft {
+  transform: translate(-100%, -50%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  display: none;
+}
+
+.header {
+  display: none;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px;
+  min-height: 50px;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  border-top: 2px solid #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  margin: 0;
+  margin-left: 8px;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.optionButton {
+  flex: 1 1 auto;
+  min-width: 60px;
+  max-width: 200px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  border: 2px solid #a78bfa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.6);
+}
+
+.optionButton:hover:not(:disabled) {
+  background: linear-gradient(135deg, #9f7aea, #8b5cf6);
+  border-color: #c4b5fd;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.8);
+  transform: translateY(-1px);
+}
+
+.optionButton:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.optionButton:disabled {
+  cursor: default;
+}
+
+.optionText {
+  flex: 1;
+}
+
+.resultIcon {
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Correct answer with falling animation */
+.optionButton.correctFall {
+  background: rgba(16, 185, 129, 0.3);
+  border-color: #10b981;
+  color: white;
+  animation: fallDown 0.6s ease-out forwards;
+}
+
+@keyframes fallDown {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(0, 0) scale(1.15);
+  }
+  100% {
+    transform: translate(calc(var(--fall-direction, -1) * 80px), 60px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Wrong answer with shake animation - applies to ALL buttons */
+.optionButton.wrongShake {
+  background: rgba(239, 68, 68, 0.8) !important;
+  border-color: #ef4444 !important;
+  color: white !important;
+  animation: shakeRed 0.6s ease-out;
+}
+
+.optionButtonMobile.wrongShake {
+  background: rgba(239, 68, 68, 0.8) !important;
+  border-color: #ef4444 !important;
+  color: white !important;
+  animation: shakeRed 0.6s ease-out;
+}
+
+@keyframes shakeRed {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-6px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(6px);
+  }
+}
+
+.feedback {
+  display: none;
+}
+
+/* Mobile styles - same horizontal layout */
+.popupMobile {
+  padding: 6px;
+  width: auto;
+  max-width: min(90vw, 280px);
+  border-radius: 6px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.loadingMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  min-height: 40px;
+}
+
+.loadingMobile .spinner {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+}
+
+.optionsContainerMobile {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.optionButtonMobile {
+  flex: 1 1 auto;
+  min-width: 55px;
+  max-width: 150px;
+  padding: 8px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  border: 2px solid #a78bfa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.6);
+}
+
+.optionButtonMobile:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.optionButtonMobile:disabled {
+  cursor: default;
+}
+
+.optionButtonMobile.correct {
+  background: rgba(16, 185, 129, 0.3);
+  border-color: #10b981;
+  color: white;
+}
+
+.optionButtonMobile.wrong {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: #ef4444;
+  color: white;
+}
+
+.optionButtonMobile.showCorrect {
+  background: rgba(16, 185, 129, 0.3);
+  border-color: #10b981;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .popup {
+    padding: 5px;
+  }
+
+  .optionButton {
+    padding: 6px 7px;
+    font-size: 12px;
+    min-width: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .popupMobile {
+    max-width: 95vw;
+    padding: 5px;
+  }
+
+  .optionButtonMobile {
+    min-width: 48px;
+    padding: 7px 5px;
+    font-size: 11px;
+  }
+}

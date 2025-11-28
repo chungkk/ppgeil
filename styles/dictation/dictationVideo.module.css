@@ -1,0 +1,486 @@
+/* Video Section Styles */
+
+.videoWrapper {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  flex: 1;
+  overflow: hidden;
+}
+
+.videoContainer {
+  position: relative;
+  background: #000;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.videoPlayerWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  background: #000;
+}
+
+.videoPlayerWrapper > div,
+.videoPlayerWrapper iframe,
+.videoPlayerWrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videoPlayerWrapper iframe {
+  border: none;
+}
+
+.videoPlaceholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gradient);
+  color: white;
+}
+
+.videoPlaceholder svg {
+  width: 64px;
+  height: 64px;
+  opacity: 0.5;
+}
+
+/* Video Overlays */
+.loopIcon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+.loopIcon:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.videoTimer {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: all;
+  cursor: pointer;
+  background: transparent;
+  z-index: 999;
+}
+
+.videoOverlay > * {
+  pointer-events: auto;
+}
+
+/* Video Title Box */
+.videoTitleBox {
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-card);
+}
+
+.videoTitleBox h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Video Header */
+.videoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  height: 44px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-hover);
+  border-radius: 16px 16px 0 0;
+}
+
+.videoHeaderTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Study Timer */
+.studyTimer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.timerIcon {
+  font-size: 16px;
+}
+
+.timerText {
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.studyTimerMobile {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.studyTimerMobile .timerIcon {
+  font-size: 14px;
+}
+
+.studyTimerMobile .timerText {
+  font-size: 14px;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Play Controls */
+.playControls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex: 1;
+  justify-content: center;
+}
+
+.playButton {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.playButton:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-green);
+  transform: scale(1.05);
+}
+
+.playButton:active {
+  transform: scale(0.98);
+}
+
+.playButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.playButton:nth-child(2) {
+  background: var(--accent-gradient);
+  border: none;
+  color: white;
+  width: 52px;
+  height: 52px;
+}
+
+.playButton:nth-child(2):hover {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Toggle Switch */
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.toggleInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleSlider {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  transition: background 0.3s;
+  border: 1px solid var(--border-color);
+}
+
+.toggleSlider::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 2px;
+  top: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggleInput:checked + .toggleSlider {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.toggleInput:checked + .toggleSlider::before {
+  transform: translateX(18px);
+}
+
+.toggleText {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Video Controls - Desktop Only */
+.videoControls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+/* Playback Controls Row */
+.playbackControlsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.controlBtn {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  outline: none;
+}
+
+.controlBtn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.controlBtn:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-blue);
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.controlBtn:active {
+  transform: scale(0.95);
+}
+
+/* Play/Pause Button - Larger and with gradient */
+.playPauseBtn {
+  width: 56px;
+  height: 56px;
+  background: var(--accent-gradient);
+  border: none;
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.playPauseBtn svg {
+  width: 26px;
+  height: 26px;
+  stroke-width: 2.5;
+}
+
+.playPauseBtn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+  transform: scale(1.12);
+}
+
+.playPauseBtn:active {
+  transform: scale(1);
+}
+
+/* Secondary Controls Row */
+.secondaryControlsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Speed Control */
+.speedControl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.speedControl:hover {
+  border-color: var(--accent-blue);
+}
+
+.speedControl svg {
+  width: 16px;
+  height: 16px;
+  color: var(--text-secondary);
+  stroke-width: 2.5;
+  flex-shrink: 0;
+}
+
+.speedDropdown {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+}
+
+.speedDropdown option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  padding: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .videoWrapper {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .videoContainer {
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+
+  .videoPlayerWrapper {
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    position: relative;
+    padding-top: 0 !important;
+  }
+
+  .videoPlayerWrapper > div,
+  .videoPlayerWrapper iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .videoTitleBox {
+    display: none;
+  }
+
+  .videoHeader {
+    display: none;
+  }
+
+  .videoControls {
+    display: none;
+  }
+}

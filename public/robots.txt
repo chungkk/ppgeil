@@ -1,0 +1,26 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow private/internal pages
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard
+Disallow: /auth/
+
+# Disallow user-specific pages
+Disallow: /custom/
+
+# Allow public assets
+Allow: /public/
+Allow: /audio/
+Allow: /video/
+Allow: /thumbnails/
+Allow: /*.css
+Allow: /*.js
+
+# Crawl-delay (optional, adjust if needed)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://papageil.net/sitemap.xml
