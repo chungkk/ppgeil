@@ -216,69 +216,75 @@ const ShadowingMobile = ({
                       ref={isActive ? activeTranscriptItemRef : null}
                       className={`${styles.transcriptItem} ${isActive ? styles.transcriptItemActive : ''} ${isBookmarked(originalIndex) ? styles.transcriptItemBookmarked : ''}`}
                     >
-                      <div onClick={() => handleSentenceClick(segment.start, segment.end)} style={{ position: 'relative' }}>
-                        {/* Bookmark Button - Top Right */}
-                        <button
-                          className={`${styles.bookmarkBtnMobile} ${isBookmarked(originalIndex) ? styles.bookmarkBtnMobileActive : ''}`}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleBookmark(originalIndex);
-                          }}
-                        >
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill={isBookmarked(originalIndex) ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2">
-                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
-                          </svg>
-                        </button>
+                      <div onClick={() => handleSentenceClick(segment.start, segment.end)} className={styles.transcriptItemRowMobile}>
+                        {/* Content area */}
+                        <div className={styles.transcriptContentMobile}>
+                          <div className={styles.transcriptText}>
+                            {/* Mobile: Show play button at the beginning */}
+                            <button
+                              className={styles.sentencePlayButtonMobile}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleSentenceClick(segment.start, segment.end);
+                              }}
+                              aria-label={isPlaying && isActive ? 'Pause' : 'Play'}
+                            >
+                              {isPlaying && isActive ? (
+                                <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor">
+                                  <rect x="0" y="0" width="2.5" height="10" rx="0.5"/>
+                                  <rect x="5.5" y="0" width="2.5" height="10" rx="0.5"/>
+                                </svg>
+                              ) : (
+                                <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor">
+                                  <path d="M0 0L8 5L0 10V0Z"/>
+                                </svg>
+                              )}
+                            </button>
+                            
+                            {/* Words for transcript list */}
+                            <span className={styles.transcriptWordsWrapper}>
+                              <TranscriptKaraokeWords
+                                segment={segment}
+                                onWordClick={handleWordClickForPopup}
+                              />
+                            </span>
+                          </div>
                         
-                        <div className={styles.transcriptText}>
-                          {/* Mobile: Show play button at the beginning */}
+                          {showIPA && segment.ipa && (
+                            <div className={styles.transcriptIPA}>{segment.ipa}</div>
+                          )}
+
+                          {showTranslation && segment.translation && (
+                            <div className={styles.transcriptTranslation}>{segment.translation}</div>
+                          )}
+                        </div>
+
+                        {/* Right controls area - Score & Bookmark stacked */}
+                        <div className={styles.transcriptRightControlsMobile}>
+                          {/* Bookmark Button */}
                           <button
-                            className={styles.sentencePlayButtonMobile}
+                            className={`${styles.bookmarkBtnMobile} ${isBookmarked(originalIndex) ? styles.bookmarkBtnMobileActive : ''}`}
                             onClick={(e) => {
                               e.stopPropagation();
-                              handleSentenceClick(segment.start, segment.end);
+                              toggleBookmark(originalIndex);
                             }}
-                            aria-label={isPlaying && isActive ? 'Pause' : 'Play'}
                           >
-                            {isPlaying && isActive ? (
-                              <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor">
-                                <rect x="0" y="0" width="2.5" height="10" rx="0.5"/>
-                                <rect x="5.5" y="0" width="2.5" height="10" rx="0.5"/>
-                              </svg>
-                            ) : (
-                              <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor">
-                                <path d="M0 0L8 5L0 10V0Z"/>
-                              </svg>
-                            )}
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill={isBookmarked(originalIndex) ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2">
+                              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                            </svg>
                           </button>
                           
-                          {/* Words for transcript list */}
-                          <span className={styles.transcriptWordsWrapper}>
-                            <TranscriptKaraokeWords
-                              segment={segment}
-                              onWordClick={handleWordClickForPopup}
-                            />
-                          </span>
-                        </div>
-                      
-                        {showIPA && segment.ipa && (
-                          <div className={styles.transcriptIPA}>{segment.ipa}</div>
-                        )}
-
-                        {showTranslation && segment.translation && (
-                          <div className={styles.transcriptTranslation}>{segment.translation}</div>
-                        )}
-
-                        {/* Footer: Score badge */}
-                        {sentenceState.comparisonResult && (
-                          <div className={styles.transcriptItemFooter}>
+                          {/* Score badge */}
+                          {sentenceState.comparisonResult ? (
                             <span 
                               className={`${styles.inlineScorePercent} ${sentenceState.comparisonResult.isPassed ? styles.inlineScorePercentPassed : styles.inlineScorePercentFailed}`}
                             >
                               {Math.round(sentenceState.comparisonResult.overallSimilarity)}%
                             </span>
-                          </div>
-                        )}
+                          ) : (
+                            <span className={styles.scoreBadgePlaceholderMobile}></span>
+                          )}
+                        </div>
                       </div>
                     </div>
                   );

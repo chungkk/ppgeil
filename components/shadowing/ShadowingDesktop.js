@@ -349,7 +349,7 @@ const ShadowingDesktop = ({
                       ref={isActive ? activeTranscriptItemRef : null}
                       className={`${styles.transcriptItem} ${isActive ? styles.transcriptItemActive : ''}`}
                     >
-                      <div onClick={() => handleSentenceClick(segment.start, segment.end)} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                      <div onClick={() => handleSentenceClick(segment.start, segment.end)} className={styles.transcriptItemRow}>
                         {/* Desktop: Play Button Circle - Left of text */}
                         <button
                           className={styles.sentencePlayButton}
@@ -371,20 +371,8 @@ const ShadowingDesktop = ({
                           )}
                         </button>
                         
-                        <div style={{ flex: 1, minWidth: 0, position: 'relative' }}>
-                          {/* Bookmark Button - Top Right */}
-                          <button
-                            className={`${styles.bookmarkBtn} ${isBookmarked(originalIndex) ? styles.bookmarkBtnActive : ''}`}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              toggleBookmark(originalIndex);
-                            }}
-                            title={isBookmarked(originalIndex) ? 'Bỏ bookmark' : 'Thêm bookmark'}
-                          >
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill={isBookmarked(originalIndex) ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2">
-                              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
-                            </svg>
-                          </button>
+                        {/* Content area - flex grow */}
+                        <div className={styles.transcriptContent}>
                           <div className={styles.transcriptText}>
                             {segment.text.split(/\s+/).map((word, idx) => {
                               const cleanWord = word.replace(/[.,!?;:)(\[\]{}\"'`„"‚'»«›‹—–-]/g, '');
@@ -409,18 +397,35 @@ const ShadowingDesktop = ({
                           {showTranslation && segment.translation && (
                             <div className={styles.transcriptTranslation}>{segment.translation}</div>
                           )}
+                        </div>
 
-                          {/* Footer: Score badge */}
-                          {sentenceState.comparisonResult && (
-                            <div className={styles.transcriptItemFooter}>
-                              <div 
-                                className={`${styles.scoreBadge} ${sentenceState.comparisonResult.isPassed ? styles.scoreBadgePassed : styles.scoreBadgeFailed}`}
-                                title={sentenceState.comparisonResult.feedback}
-                              >
-                                {Math.round(sentenceState.comparisonResult.overallSimilarity)}%
-                              </div>
+                        {/* Right controls area - Score & Bookmark */}
+                        <div className={styles.transcriptRightControls}>
+                          {/* Score badge */}
+                          {sentenceState.comparisonResult ? (
+                            <div 
+                              className={`${styles.scoreBadge} ${sentenceState.comparisonResult.isPassed ? styles.scoreBadgePassed : styles.scoreBadgeFailed}`}
+                              title={sentenceState.comparisonResult.feedback}
+                            >
+                              {Math.round(sentenceState.comparisonResult.overallSimilarity)}%
                             </div>
+                          ) : (
+                            <div className={styles.scoreBadgePlaceholder}></div>
                           )}
+                          
+                          {/* Bookmark Button */}
+                          <button
+                            className={`${styles.bookmarkBtn} ${isBookmarked(originalIndex) ? styles.bookmarkBtnActive : ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleBookmark(originalIndex);
+                            }}
+                            title={isBookmarked(originalIndex) ? 'Bỏ bookmark' : 'Thêm bookmark'}
+                          >
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill={isBookmarked(originalIndex) ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2">
+                              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                            </svg>
+                          </button>
                         </div>
                       </div>
                     </div>

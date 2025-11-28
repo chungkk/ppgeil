@@ -981,6 +981,183 @@
   border-color: rgba(74, 144, 226, 0.6);
 }
 
+/* ============================================
+   TRANSCRIPT ITEM ROW - Balanced Layout
+   ============================================ */
+
+/* Desktop Row Layout */
+.transcriptItemRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Content area - grows to fill space */
+.transcriptContent {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Right controls area - Score & Bookmark */
+.transcriptRightControls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  min-width: 52px;
+  flex-shrink: 0;
+}
+
+/* Score badge placeholder - maintains layout when no score */
+.scoreBadgePlaceholder {
+  width: 52px;
+  height: 32px;
+  border-radius: 16px;
+  background: rgba(148, 163, 184, 0.08);
+  border: 2px dashed rgba(148, 163, 184, 0.2);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.transcriptItem:hover .scoreBadgePlaceholder {
+  opacity: 0.5;
+}
+
+/* Bookmark button - Now in right controls */
+.transcriptRightControls .bookmarkBtn {
+  position: relative;
+  top: auto;
+  right: auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1.5px solid transparent;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.5;
+}
+
+.transcriptRightControls .bookmarkBtn:hover {
+  background: rgba(251, 191, 36, 0.12);
+  border-color: rgba(251, 191, 36, 0.3);
+  color: #fbbf24;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.transcriptRightControls .bookmarkBtn:active {
+  transform: scale(0.9);
+}
+
+.transcriptRightControls .bookmarkBtnActive {
+  color: #fbbf24;
+  opacity: 1;
+  background: rgba(251, 191, 36, 0.1);
+  border-color: rgba(251, 191, 36, 0.4);
+}
+
+.transcriptRightControls .bookmarkBtnActive svg {
+  filter: drop-shadow(0 2px 4px rgba(251, 191, 36, 0.4));
+}
+
+.transcriptItem:hover .transcriptRightControls .bookmarkBtn {
+  opacity: 1;
+}
+
+/* Mobile Row Layout */
+.transcriptItemRowMobile {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Mobile Content area */
+.transcriptContentMobile {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Mobile Right controls - Stacked vertically */
+.transcriptRightControlsMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+  min-width: 44px;
+  flex-shrink: 0;
+}
+
+/* Mobile bookmark button in right controls */
+.transcriptRightControlsMobile .bookmarkBtnMobile {
+  position: relative;
+  top: auto;
+  right: auto;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1.5px solid transparent;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+  padding: 0;
+  margin: 0;
+}
+
+.transcriptRightControlsMobile .bookmarkBtnMobile:active {
+  transform: scale(0.85);
+}
+
+.transcriptRightControlsMobile .bookmarkBtnMobileActive {
+  color: #fbbf24;
+  opacity: 1;
+  background: rgba(251, 191, 36, 0.1);
+  border-color: rgba(251, 191, 36, 0.4);
+}
+
+.transcriptRightControlsMobile .bookmarkBtnMobileActive svg {
+  filter: drop-shadow(0 1px 3px rgba(251, 191, 36, 0.5));
+}
+
+/* Mobile score placeholder */
+.scoreBadgePlaceholderMobile {
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  background: rgba(148, 163, 184, 0.06);
+  border: 1.5px dashed rgba(148, 163, 184, 0.15);
+  opacity: 0;
+}
+
+/* Score badge adjustments for new layout */
+.transcriptRightControls .scoreBadge {
+  width: 52px;
+  min-width: 52px;
+  height: 28px;
+  font-size: 13px;
+}
+
+.transcriptRightControlsMobile .inlineScorePercent {
+  width: 44px;
+  min-width: 44px;
+  height: 24px;
+  font-size: 11px;
+  margin: 0;
+}
+
 .transcriptItemHeader {
   display: flex;
   justify-content: space-between;
