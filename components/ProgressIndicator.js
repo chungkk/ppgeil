@@ -126,14 +126,6 @@ const ProgressIndicator = ({
         </div>
       </div>
 
-      {/* Compact Stats */}
-      <div className={styles.compactStats}>
-        <div className={styles.statBadge} style={{ borderColor: colorScheme.primary }}>
-          <span className={styles.statIcon}>📝</span>
-          <span className={styles.statValue}>{metrics.sentenceCount}/{totalSentences}</span>
-        </div>
-      </div>
-
       {/* Tooltip */}
       {showTooltip && (
         <div className={styles.tooltip}>

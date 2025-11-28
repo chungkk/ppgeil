@@ -1,4 +1,7 @@
-/* Mobile Bottom Controls */
+/* ============================================
+   MOBILE BOTTOM BAR - Unified Circular Design
+   (Synced with shadowingPage.module.css)
+   ============================================ */
 
 .mobileBottomControls {
   display: none;
@@ -6,89 +9,90 @@
 
 @media (max-width: 768px) {
   .mobileBottomControls {
-    display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border-color);
     z-index: 1000;
-    gap: 8px;
-    padding: 12px 10px;
-    padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(40px) saturate(180%);
-    -webkit-backdrop-filter: blur(40px) saturate(180%);
-    border-top: 0.5px solid rgba(255, 255, 255, 0.18);
-    box-shadow:
-      0 -8px 32px rgba(0, 0, 0, 0.18),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    justify-content: space-between;
   }
 }
 
+.mobileControlGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Base Mobile Circular Button */
 .mobileControlBtn {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 0.5px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.9);
-  padding: 14px 8px;
-  border-radius: 14px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid var(--border-color);
+  color: #94a3b8;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow:
-    0 4px 16px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  min-width: 0;
-  position: relative;
-  overflow: hidden;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobileControlBtn:active:not(:disabled) {
+  transform: scale(0.92);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .mobileControlBtn:disabled {
-  opacity: 0.4;
+  opacity: 0.35;
   cursor: not-allowed;
 }
 
-.mobileControlBtn:not(:disabled):hover {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px) scale(1.02);
-  box-shadow:
-    0 8px 24px rgba(102, 126, 234, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.mobileControlBtn:not(:disabled):active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
 .mobileControlBtn svg {
-  width: 22px;
-  height: 22px;
-  stroke-width: 2.5;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
 }
 
-.mobileControlBtn:first-child {
-  background: rgba(102, 126, 234, 0.25);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-color: rgba(102, 126, 234, 0.4);
-  box-shadow:
-    0 4px 20px rgba(102, 126, 234, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+/* Play Button - Larger & Gradient */
+.mobileControlBtnPlay {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid rgba(102, 126, 234, 0.5);
+  color: white;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.35);
 }
 
-.mobileControlBtn:first-child:hover {
-  background: rgba(118, 75, 162, 0.35);
-  border-color: rgba(118, 75, 162, 0.5);
-  box-shadow:
-    0 8px 28px rgba(118, 75, 162, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+.mobileControlBtnPlay:active:not(:disabled) {
+  transform: scale(0.92);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.mobileControlBtnPlay svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Replay Button */
+.mobileControlBtnReplay {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid var(--border-color);
+  color: #94a3b8;
+}
+
+.mobileControlBtnReplay:active:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* Dictation Slides */
