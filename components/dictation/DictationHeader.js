@@ -19,7 +19,9 @@ const DictationHeader = ({
   difficultyLevel,
   onDifficultyChange,
   playbackSpeed,
-  onSpeedChange
+  onSpeedChange,
+  showTranslation,
+  onToggleTranslation
 }) => {
   const { t } = useTranslation();
 
@@ -46,6 +48,16 @@ const DictationHeader = ({
             title="Playback speed"
           >
             {playbackSpeed || 1}x
+          </button>
+        )}
+        {/* Translation Toggle - Desktop Only */}
+        {!isMobile && onToggleTranslation && (
+          <button
+            className={styles.translationToggleHeader}
+            onClick={onToggleTranslation}
+            title={showTranslation ? 'Ẩn dịch' : 'Hiện dịch'}
+          >
+            {showTranslation ? '👁️' : '👁️‍🗨️'}
           </button>
         )}
         {/* Hide Level Selector */}

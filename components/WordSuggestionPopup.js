@@ -7,22 +7,27 @@ const WordSuggestionPopup = ({
   context, 
   wordIndex,
   position,
+  initialOptions, // NEW: Pre-generated options from transcript (instant, no API call)
   onCorrectAnswer, 
   onWrongAnswer, 
   onClose
 }) => {
   const { t } = useTranslation();
-  const [options, setOptions] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // If initialOptions provided, use them directly (no loading)
+  const [options, setOptions] = useState(initialOptions || []);
+  const [loading, setLoading] = useState(!initialOptions);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    loadSuggestions();
+    // Only load from API if no initialOptions provided
+    if (!initialOptions || initialOptions.length === 0) {
+      loadSuggestions();
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [correctWord]);
+  }, [correctWord, initialOptions]);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -50,7 +55,6 @@ const WordSuggestionPopup = ({
       const data = await response.json();
 
       if (data.success && data.options) {
-        // Extra safeguard: Remove duplicates on client side (case-insensitive)
         const uniqueOptions = [];
         const seen = new Set();
 
@@ -64,12 +68,10 @@ const WordSuggestionPopup = ({
 
         setOptions(uniqueOptions);
       } else {
-        // Fallback: just show the correct word if API fails
         setOptions([correctWord]);
       }
     } catch (error) {
       console.error('Error loading suggestions:', error);
-      // Fallback
       setOptions([correctWord]);
     } finally {
       setLoading(false);
