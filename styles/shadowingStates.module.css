@@ -420,15 +420,5 @@
 }
 
 /* Light Theme */
-[data-theme="light"] .stateContainer {
-  background: var(--bg-primary);
-}
 
-[data-theme="light"] .retryButton {
-  background: var(--bg-elevated);
-  border-color: var(--border-color);
-}
 
-[data-theme="light"] .retryButton:hover {
-  background: var(--bg-hover);
-}

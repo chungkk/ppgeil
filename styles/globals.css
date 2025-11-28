@@ -338,11 +338,6 @@ body {
   box-shadow: none;
 }
 
-[data-theme="light"] .topic-tag {
-  background: var(--bg-elevated);
-  border: 1.5px solid var(--border-color);
-}
-
 .topic-tag:hover {
   background: rgba(107, 166, 85, 0.12);
   border-color: var(--accent-green);
@@ -396,11 +391,6 @@ body {
 [data-theme="dark"] .pagination-btn {
   background: rgba(255, 255, 255, 0.05);
   box-shadow: none;
-}
-
-[data-theme="light"] .pagination-btn {
-  background: var(--bg-elevated);
-  border: 1.5px solid var(--border-color);
 }
 
 .pagination-btn:hover:not(:disabled) {

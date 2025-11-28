@@ -34,10 +34,6 @@
   backdrop-filter: blur(2px);
 }
 
-/* Light theme - lighter overlay */
-[data-theme="light"] .overlay {
-  background: rgba(0, 0, 0, 0.35);
-}
 
 [data-theme="dark"] .overlay {
   background: rgba(0, 0, 0, 0.6);
@@ -68,11 +64,6 @@
   z-index: 1051;
 }
 
-[data-theme="light"] .popupContainer {
-  background: var(--bg-elevated);
-  border: 1.5px solid var(--border-color);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15), var(--shadow-xl);
-}
 
 [data-theme="dark"] .popupContainer {
   background: rgba(37, 23, 65, 0.98);

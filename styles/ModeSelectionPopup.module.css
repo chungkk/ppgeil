@@ -28,10 +28,6 @@
   backdrop-filter: blur(30px);
 }
 
-[data-theme="light"] .popup {
-  background: rgba(255, 255, 255, 0.75);
-  border-color: rgba(107, 166, 85, 0.25);
-}
 
 [data-theme="dark"] .popup {
   background: rgba(15, 5, 32, 0.75);

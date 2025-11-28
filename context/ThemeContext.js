@@ -14,37 +14,24 @@ export const THEME_OPTIONS = [
   {
     id: 'dark',
     emoji: '🌙'
-  },
-  {
-    id: 'light',
-    emoji: '☀️'
-  },
-  {
-    id: 'auto',
-    emoji: '🌗'
   }
 ];
 
-let DEFAULT_THEME_ID = 'light'; // Will be updated from server settings
+let DEFAULT_THEME_ID = 'dark'; // Force dark mode only
 
 const getNextThemeId = (currentId) => {
-  // Only cycle between light and dark for toggle (skip auto)
-  if (currentId === 'light') return 'dark';
-  return 'light';
+  // Always return dark - no toggle
+  return 'dark';
 };
 
 const getSystemTheme = () => {
-  if (typeof window === 'undefined') return 'light';
-  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches 
-    ? 'dark' 
-    : 'light';
+  // Always return dark mode
+  return 'dark';
 };
 
 const resolveThemeFromPreference = (preference) => {
-  if (preference === 'auto') {
-    return getSystemTheme();
-  }
-  return preference;
+  // Always return dark mode
+  return 'dark';
 };
 
 const resolveInitialTheme = () => {
@@ -81,24 +68,9 @@ export function ThemeProvider({ children }) {
         }
 
         // No saved preference - fetch default from server
-        const response = await fetch('/api/settings');
-        if (response.ok) {
-          const settings = await response.json();
-          const serverDefaultTheme = settings.defaultTheme || 'light';
-          
-          // Update default theme constant
-          DEFAULT_THEME_ID = serverDefaultTheme;
-          
-          // Apply server default theme
-          const isValid = THEME_OPTIONS.some((option) => option.id === serverDefaultTheme);
-          if (isValid) {
-            setThemePreference(serverDefaultTheme);
-            window.localStorage.setItem('theme', serverDefaultTheme);
-          }
-        } else {
-          // Fallback to light if API fails
-          window.localStorage.setItem('theme', themePreference);
-        }
+        // Always force dark mode - ignore server settings
+        setThemePreference('dark');
+        window.localStorage.setItem('theme', 'dark');
       } catch (error) {
         console.error('Failed to fetch theme settings:', error);
         // Fallback to current preference
@@ -150,11 +122,8 @@ export function ThemeProvider({ children }) {
   }, []);
 
   const toggleTheme = useCallback(() => {
-    // Toggle only cycles between light and dark, ignoring auto
-    setThemePreference((current) => {
-      const resolved = resolveThemeFromPreference(current);
-      return getNextThemeId(resolved);
-    });
+    // Always keep dark mode - no toggling
+    setThemePreference('dark');
   }, []);
 
   const value = useMemo(() => {

@@ -2479,79 +2479,20 @@
 }
 
 /* ============================================
-   LIGHT THEME - FRESH VEGETABLE & FRUIT STYLE
    ============================================ */
 
-[data-theme="light"] .currentSentenceDisplay {
-  background: linear-gradient(135deg, rgba(107, 166, 85, 0.05) 0%, rgba(139, 195, 74, 0.03) 100%);
-  border: 1.5px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
-}
 
-[data-theme="light"] .currentSentenceIPA {
-  color: var(--text-muted);
-}
 
-[data-theme="light"] .audioButton {
-  background: var(--bg-elevated);
-  border: 1.5px solid var(--border-color);
-  color: var(--text-primary);
-  box-shadow: var(--shadow-sm);
-}
 
-[data-theme="light"] .audioButton:hover {
-  background: rgba(107, 166, 85, 0.08);
-  border-color: var(--accent-green);
-  color: var(--accent-green);
-  box-shadow: var(--shadow-md);
-}
 
-[data-theme="light"] .controlsWrapper {
-  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
-  border: 1.5px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
-}
 
-[data-theme="light"] .toggleSlider {
-  background: rgba(107, 166, 85, 0.2);
-}
 
-[data-theme="light"] .toggleInput:checked + .toggleSlider {
-  background: linear-gradient(135deg, #6ba655 0%, #7cb342 100%);
-}
 
-[data-theme="light"] .transcriptItem {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(148, 163, 184, 0.15);
-}
 
-[data-theme="light"] .transcriptItem:hover {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(107, 166, 85, 0.3);
-}
 
-[data-theme="light"] .transcriptItemActive {
-  background: rgba(107, 166, 85, 0.08);
-  border-color: rgba(107, 166, 85, 0.4);
-}
 
-[data-theme="light"] .playbackButton {
-  border-color: var(--border-color);
-  background: linear-gradient(135deg, rgba(107, 166, 85, 0.12) 0%, rgba(139, 195, 74, 0.08) 100%);
-  color: var(--accent-green);
-  box-shadow: var(--shadow-sm);
-}
 
-[data-theme="light"] .playbackButton:hover {
-  border-color: var(--accent-green);
-  box-shadow: var(--shadow-hover);
-}
 
-[data-theme="light"] .playbackButton.playing {
-  border-color: rgba(255, 152, 0, 0.5);
-  background: linear-gradient(135deg, rgba(255, 152, 0, 0.15) 0%, rgba(255, 213, 79, 0.1) 100%);
-  color: var(--accent-orange);
-}
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
@@ -2642,19 +2583,8 @@
   }
 }
 
-/* Light theme karaoke */
-[data-theme="light"] .karaokeWord.active {
-  background: linear-gradient(135deg, #6ba655 0%, #7cb342 100%);
-  box-shadow: 0 2px 12px rgba(107, 166, 85, 0.5);
-}
 
-[data-theme="light"] .karaokeWord.passed {
-  color: var(--accent-green);
-}
 
-[data-theme="light"] .karaokeWord.upcoming {
-  color: var(--text-muted);
-}
 
 /* ============================================
    KARAOKE INLINE (for transcript list)
@@ -2726,15 +2656,7 @@
   }
 }
 
-/* Light theme inline karaoke */
-[data-theme="light"] .karaokeWordInline.activeInline {
-  background: linear-gradient(135deg, #6ba655 0%, #7cb342 100%);
-  box-shadow: 0 1px 8px rgba(107, 166, 85, 0.5);
-}
 
-[data-theme="light"] .karaokeWordInline.passedInline {
-  color: var(--accent-green);
-}
 
 /* ============================================
    BOOKMARK STYLES
@@ -2850,36 +2772,11 @@
   }
 }
 
-/* Light theme bookmark styles */
-[data-theme="light"] .bookmarkButton {
-  color: var(--text-muted);
-}
 
-[data-theme="light"] .bookmarkButton:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: #f59e0b;
-}
 
-[data-theme="light"] .bookmarkButton.bookmarked {
-  color: #f59e0b;
-}
 
-[data-theme="light"] .bookmarkButton.bookmarked svg {
-  fill: #f59e0b;
-}
 
-[data-theme="light"] .bookmarkFilterButton {
-  background: var(--bg-elevated);
-  border-color: var(--border-color);
-  color: var(--text-secondary);
-}
 
-[data-theme="light"] .bookmarkFilterButton:hover,
-[data-theme="light"] .bookmarkFilterButton.active {
-  background: rgba(245, 158, 11, 0.1);
-  border-color: rgba(245, 158, 11, 0.5);
-  color: #f59e0b;
-}
 
 /* ============================================
    SWIPE GESTURE INDICATOR
@@ -3174,57 +3071,13 @@
   border-color: #fbbf24 !important;
 }
 
-/* Light theme bookmark styles */
-[data-theme="light"] .bookmarkBtn {
-  color: #94a3b8;
-}
 
-[data-theme="light"] .bookmarkBtn:hover {
-  background: rgba(245, 158, 11, 0.12);
-  color: #f59e0b;
-}
 
-[data-theme="light"] .bookmarkBtnActive {
-  color: #f59e0b;
-}
 
-[data-theme="light"] .bookmarkFilterBtn {
-  background: rgba(245, 158, 11, 0.08);
-  border-color: rgba(245, 158, 11, 0.25);
-  color: var(--text-secondary);
-}
 
-[data-theme="light"] .bookmarkFilterBtn:hover,
-[data-theme="light"] .bookmarkFilterBtnActive {
-  background: rgba(245, 158, 11, 0.15);
-  border-color: #f59e0b;
-  color: #f59e0b;
-}
 
-[data-theme="light"] .bookmarkFilterBtnMobile {
-  background: rgba(245, 158, 11, 0.08);
-  border-color: rgba(245, 158, 11, 0.25);
-}
 
-[data-theme="light"] .bookmarkFilterBtnMobileActive {
-  background: rgba(245, 158, 11, 0.18);
-  border-color: #f59e0b;
-  color: #f59e0b;
-}
 
-[data-theme="light"] .bookmarkBtnMobile {
-  color: #94a3b8;
-}
 
-[data-theme="light"] .bookmarkBtnMobileActive {
-  color: #f59e0b;
-}
 
-[data-theme="light"] .transcriptItemBookmarked {
-  border-left-color: #f59e0b !important;
-  background: rgba(245, 158, 11, 0.04) !important;
-}
 
-[data-theme="light"] .transcriptItemBookmarked.transcriptItemActive {
-  background: rgba(245, 158, 11, 0.1) !important;
-}

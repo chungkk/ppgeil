@@ -17,13 +17,6 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Light theme - Fresh Vegetable & Fruit Style */
-[data-theme="light"] .lessonCard {
-  border: 2px solid var(--border-color);
-  box-shadow: var(--shadow-md);
-  background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-card) 100%);
-}
-
 .lessonCard:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
@@ -34,12 +27,6 @@
   background: rgba(139, 92, 246, 0.18);
   border-color: rgba(147, 51, 234, 0.7);
   box-shadow: 0 8px 28px rgba(139, 92, 246, 0.45), 0 4px 14px rgba(217, 70, 239, 0.3);
-}
-
-[data-theme="light"] .lessonCard:hover {
-  border-color: var(--accent-green);
-  box-shadow: 0 12px 28px rgba(107, 166, 85, 0.25), 0 4px 12px rgba(139, 195, 74, 0.15);
-  background: linear-gradient(135deg, rgba(247, 251, 245, 1) 0%, rgba(240, 247, 237, 1) 100%);
 }
 
 .thumbnailContainer {
@@ -199,12 +186,6 @@
   background: rgba(139, 92, 246, 0.12);
   border-color: rgba(147, 51, 234, 0.4);
   box-shadow: none;
-}
-
-[data-theme="light"] .actionBtn {
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
-  border: 1.5px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
 }
 
 .actionBtn:hover {

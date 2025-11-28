@@ -138,11 +138,6 @@
   border: 1px solid var(--border-color);
 }
 
-[data-theme="light"] .overallProgressSection {
-  background: var(--bg-elevated);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
 [data-theme="dark"] .overallProgressSection {
   background: rgba(139, 92, 246, 0.06);
   border-color: rgba(147, 51, 234, 0.3);
@@ -240,11 +235,6 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-[data-theme="light"] .lessonProgressItem {
-  background: var(--bg-primary);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] .lessonProgressItem {

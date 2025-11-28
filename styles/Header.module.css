@@ -14,12 +14,6 @@
   transition: all 0.3s ease;
 }
 
-/* Light theme - Fresh Vegetable & Fruit Style */
-[data-theme="light"] .header {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(247, 251, 245, 0.95) 100%);
-  border-bottom: 2px solid var(--border-color);
-  box-shadow: 0 2px 12px rgba(107, 166, 85, 0.12), 0 1px 4px rgba(0, 0, 0, 0.08);
-}
 
 [data-theme="dark"] .header {
   background: rgba(15, 5, 32, 0.95);
@@ -28,11 +22,6 @@
 }
 
 /* Scrolled state - More transparent */
-[data-theme="light"] .header.scrolled {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(247, 251, 245, 0.70) 100%);
-  backdrop-filter: blur(20px);
-  border-bottom-color: rgba(107, 166, 85, 0.2);
-}
 
 [data-theme="dark"] .header.scrolled {
   background: rgba(15, 5, 32, 0.65);
