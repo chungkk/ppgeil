@@ -17,9 +17,18 @@ const DictationHeader = ({
   currentSentenceIndex,
   totalSentences,
   difficultyLevel,
-  onDifficultyChange
+  onDifficultyChange,
+  playbackSpeed,
+  onSpeedChange
 }) => {
   const { t } = useTranslation();
+
+  const handleSpeedClick = () => {
+    const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
+    const currentIndex = speeds.indexOf(playbackSpeed || 1);
+    const nextIndex = (currentIndex + 1) % speeds.length;
+    onSpeedChange(speeds[nextIndex]);
+  };
 
   return (
     <div className={styles.dictationHeader}>
@@ -29,6 +38,16 @@ const DictationHeader = ({
           : t('lesson.ui.dictation')}
       </h3>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        {/* Speed Button - Mobile Only */}
+        {isMobile && onSpeedChange && (
+          <button 
+            className={styles.speedButtonMobile}
+            onClick={handleSpeedClick}
+            title="Playback speed"
+          >
+            {playbackSpeed || 1}x
+          </button>
+        )}
         {/* Hide Level Selector */}
         <div className={styles.hideLevelSelector}>
           <select

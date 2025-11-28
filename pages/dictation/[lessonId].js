@@ -3114,6 +3114,8 @@ const DictationPageContent = () => {
               totalSentences={transcriptData.length}
               difficultyLevel={difficultyLevel}
               onDifficultyChange={handleDifficultyChange}
+              playbackSpeed={playbackSpeed}
+              onSpeedChange={handleSpeedChange}
             />
 
             <div className={styles.dictationContainer}>
