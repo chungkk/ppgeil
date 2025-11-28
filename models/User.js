@@ -38,7 +38,7 @@ const UserSchema = new mongoose.Schema({
    nativeLanguage: {
      type: String,
      default: 'vi',
-     enum: ['vi', 'en', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'ja', 'ko', 'zh'] // Add more as needed
+     enum: ['vi', 'en']
    },
    level: {
      type: String,

@@ -192,7 +192,7 @@ const nextConfig = {
 
   // Internationalization (i18n) configuration for SEO
   i18n: {
-    locales: ['de', 'en', 'vi'],
+    locales: ['de', 'vi', 'en'],
     defaultLocale: 'de',
     localeDetection: false,
   },

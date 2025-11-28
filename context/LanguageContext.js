@@ -7,21 +7,21 @@ const LanguageContext = createContext();
 export const LANGUAGE_OPTIONS = [
   {
     code: 'de',
-    name: 'Deutsch',
+    name: 'German',
     nativeName: 'Deutsch',
     flag: '🇩🇪'
-  },
-  {
-    code: 'en',
-    name: 'English',
-    nativeName: 'English',
-    flag: '🇬🇧'
   },
   {
     code: 'vi',
     name: 'Vietnamese',
     nativeName: 'Tiếng Việt',
     flag: '🇻🇳'
+  },
+  {
+    code: 'en',
+    name: 'English',
+    nativeName: 'English',
+    flag: '🇬🇧'
   }
 ];
 
