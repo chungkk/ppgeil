@@ -30,6 +30,7 @@ const ShadowingMobile = ({
   setAutoStop,
   showIPA,
   showTranslation,
+  setShowTranslation,
   showTooltip,
   setShowTooltip,
   tooltipTranslation,
@@ -181,6 +182,14 @@ const ShadowingMobile = ({
                 
                 {/* Right: Controls */}
                 <div className={styles.mobileControlsRight}>
+                  {/* Translation Toggle Button */}
+                  <button
+                    className={`${styles.mobileControlButton} ${showTranslation ? styles.mobileControlButtonActive : ''}`}
+                    onClick={() => setShowTranslation(!showTranslation)}
+                  >
+                    {showTranslation ? 'Dịch ✓' : 'Dịch'}
+                  </button>
+                  
                   {/* Speed Control Button */}
                   <button
                     className={styles.mobileControlButton}

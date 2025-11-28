@@ -2,6 +2,91 @@ import fs from 'fs';
 import path from 'path';
 import { verifyToken } from '../../lib/jwt';
 
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
+
+// Translate text using OpenAI
+async function translateWithOpenAI(text, targetLang) {
+  if (!OPENAI_API_KEY) {
+    return null;
+  }
+
+  const languageNames = {
+    en: 'English',
+    vi: 'Vietnamese'
+  };
+
+  const targetLanguageName = languageNames[targetLang] || targetLang;
+
+  try {
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${OPENAI_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'gpt-4o-mini',
+        messages: [
+          {
+            role: 'system',
+            content: `You are a professional translator. Translate the German text to ${targetLanguageName}. Return ONLY the translation, nothing else.`,
+          },
+          {
+            role: 'user',
+            content: text,
+          },
+        ],
+        temperature: 0.3,
+        max_tokens: 500,
+      }),
+    });
+
+    if (!response.ok) {
+      return null;
+    }
+
+    const data = await response.json();
+    return data.choices[0]?.message?.content?.trim() || null;
+  } catch (error) {
+    console.error(`Translation error (${targetLang}):`, error.message);
+    return null;
+  }
+}
+
+// Translate all segments to both English and Vietnamese
+async function translateAllSegments(segments) {
+  const batchSize = 5;
+  const results = [];
+
+  for (let i = 0; i < segments.length; i += batchSize) {
+    const batch = segments.slice(i, i + batchSize);
+    
+    const batchResults = await Promise.all(
+      batch.map(async (segment) => {
+        const [translationEn, translationVi] = await Promise.all([
+          translateWithOpenAI(segment.text, 'en'),
+          translateWithOpenAI(segment.text, 'vi')
+        ]);
+
+        return {
+          ...segment,
+          translationEn: translationEn || '',
+          translationVi: translationVi || ''
+        };
+      })
+    );
+
+    results.push(...batchResults);
+
+    // Small delay between batches to avoid rate limiting
+    if (i + batchSize < segments.length) {
+      await new Promise(resolve => setTimeout(resolve, 200));
+    }
+  }
+
+  return results;
+}
+
 function parseSRTTime(timeString) {
   const [hours, minutes, secondsAndMs] = timeString.split(':');
   const [seconds, milliseconds] = secondsAndMs.split(',');
@@ -88,10 +173,19 @@ export default async function handler(req, res) {
       return res.status(400).json({ message: 'Thiếu dữ liệu SRT text hoặc lessonId' });
     }
 
-    const jsonData = convertSRTtoJSON(srtText);
+    let jsonData = convertSRTtoJSON(srtText);
 
     if (jsonData.length === 0) {
       return res.status(400).json({ message: 'Không thể parse SRT text. Vui lòng kiểm tra định dạng.' });
+    }
+
+    // Translate all segments to English and Vietnamese
+    if (OPENAI_API_KEY) {
+      console.log(`Translating ${jsonData.length} segments to English and Vietnamese...`);
+      jsonData = await translateAllSegments(jsonData);
+      console.log('Translation completed!');
+    } else {
+      console.warn('OPENAI_API_KEY not configured, skipping translation');
     }
 
     const targetDir = path.join(process.cwd(), 'public', 'text');
@@ -110,7 +204,8 @@ export default async function handler(req, res) {
       success: true,
       url,
       fileName,
-      itemCount: jsonData.length
+      itemCount: jsonData.length,
+      hasTranslations: !!OPENAI_API_KEY
     });
 
   } catch (error) {

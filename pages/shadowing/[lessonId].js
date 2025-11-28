@@ -137,6 +137,7 @@ const ShadowingPageContent = () => {
     setAutoStop,
     showIPA,
     showTranslation,
+    setShowTranslation,
     recordingStates,
     sentenceProgressData,
     studyTime,

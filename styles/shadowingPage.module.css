@@ -928,11 +928,11 @@
   margin-left: 0;
 }
 
-/* Mobile Play Button - Apple HIG compliant 44x44px */
+/* Mobile Play Button - Apple HIG compliant */
 .sentencePlayButtonMobile {
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none;
@@ -942,7 +942,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 3px 10px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.35);
   padding: 0;
   flex-shrink: 0;
   vertical-align: middle;
@@ -1082,8 +1082,8 @@
 /* Mobile Row Layout */
 .transcriptItemRowMobile {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 6px;
 }
 
 /* Mobile Content area */
@@ -1093,7 +1093,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3px;
+  gap: 2px;
 }
 
 /* Mobile Right controls - Stacked vertically */
@@ -1101,10 +1101,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 4px;
+  justify-content: flex-start;
+  gap: 2px;
   padding: 0;
-  min-width: 48px;
+  min-width: 36px;
   flex-shrink: 0;
 }
 
@@ -1113,11 +1113,11 @@
   position: relative;
   top: auto;
   right: auto;
-  width: 26px;
-  height: 26px;
-  min-width: 26px;
-  min-height: 26px;
-  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 5px;
   background: transparent;
   border: 1.5px solid transparent;
   color: #64748b;
@@ -1126,14 +1126,14 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  opacity: 0.6;
+  opacity: 0.5;
   padding: 0;
   margin: 0;
 }
 
 .transcriptRightControlsMobile .bookmarkBtnMobile svg {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
 }
 
 .transcriptRightControlsMobile .bookmarkBtnMobile:active {
@@ -1153,9 +1153,9 @@
 
 /* Mobile score placeholder */
 .scoreBadgePlaceholderMobile {
-  width: 46px;
-  height: 22px;
-  border-radius: 11px;
+  width: 34px;
+  height: 18px;
+  border-radius: 9px;
   background: rgba(148, 163, 184, 0.05);
   border: 1.5px dashed rgba(148, 163, 184, 0.12);
   opacity: 0;
@@ -1171,13 +1171,13 @@
 }
 
 .transcriptRightControlsMobile .inlineScorePercent {
-  width: 46px;
-  min-width: 46px;
-  height: 22px;
-  font-size: 11px;
+  width: 34px;
+  min-width: 34px;
+  height: 18px;
+  font-size: 10px;
   font-weight: 700;
   margin: 0;
-  border-radius: 11px;
+  border-radius: 9px;
 }
 
 .transcriptItemHeader {
@@ -1284,9 +1284,21 @@
 .transcriptTranslation {
   font-size: 12px;
   color: #94a3b8;
-  line-height: 1.4;
+  line-height: 1.5;
   font-style: italic;
   margin: 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.transcriptTranslation::before {
+  content: '→';
+  position: absolute;
+  left: 8px;
+  color: #60a5fa;
+  font-style: normal;
+  font-size: 11px;
+  opacity: 0.7;
 }
 
 .transcriptItemFooter {
@@ -1558,20 +1570,22 @@
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
     
     .transcriptWordsWrapper {
       flex: 1;
       display: inline;
+      word-break: break-word;
     }
     
     .sentencePlayButtonMobile {
       margin: 0;
+      margin-top: 2px;
     }
 
     .transcriptItem {
-      padding: 10px 12px;
+      padding: 10px 10px;
       border-radius: 10px;
     }
 
@@ -1583,8 +1597,19 @@
 
     .transcriptTranslation {
       font-size: 11px;
-      line-height: 1.35;
-      margin: 0;
+      line-height: 1.45;
+      margin: 4px 0 0 0;
+      padding: 5px 8px 5px 34px;
+      margin-left: 34px;
+      background: rgba(96, 165, 250, 0.06);
+      border-left: 2px solid rgba(96, 165, 250, 0.4);
+      border-radius: 0 6px 6px 0;
+      color: #a5b4c8;
+    }
+
+    .transcriptTranslation::before {
+      left: 8px;
+      font-size: 10px;
     }
 
     .transcriptItemHeader {
@@ -2985,6 +3010,90 @@
   font-weight: 700;
   min-width: 16px;
   text-align: center;
+}
+
+/* Translation Toggle Button - Desktop Header */
+.translationToggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(100, 116, 139, 0.15);
+  border: 1.5px solid rgba(100, 116, 139, 0.3);
+  border-radius: 20px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.translationToggleBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.3) 0%, rgba(59, 130, 246, 0.3) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 18px;
+}
+
+.translationToggleBtn:hover {
+  background: rgba(96, 165, 250, 0.12);
+  border-color: rgba(96, 165, 250, 0.4);
+  color: #94a3b8;
+  transform: translateY(-1px);
+}
+
+.translationToggleBtn:active {
+  transform: scale(0.96);
+}
+
+.translationToggleBtnActive {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.25) 0%, rgba(59, 130, 246, 0.25) 100%);
+  border-color: #60a5fa;
+  color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15), 0 4px 12px rgba(96, 165, 250, 0.2);
+}
+
+.translationToggleBtnActive::before {
+  opacity: 1;
+}
+
+.translationToggleBtn svg {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.translationToggleBtnActive svg {
+  transform: scale(1.1);
+}
+
+.translationToggleBtn span {
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+/* Toggle indicator dot */
+.translationToggleBtn::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #64748b;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 2px;
+}
+
+.translationToggleBtnActive::after {
+  background: #60a5fa;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.6);
 }
 
 /* Mobile Controls Left Container */
