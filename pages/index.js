@@ -26,10 +26,7 @@ const HomePage = () => {
     difficulty: difficultyFilter
   });
 
-  // Self-create lesson states
-  const [youtubeUrl, setYoutubeUrl] = useState('');
-  const [isCreating, setIsCreating] = useState(false);
-  const [createError, setCreateError] = useState('');
+
 
   useEffect(() => {
     // Set initial filter based on user level or default to beginner for non-logged-in users
@@ -123,44 +120,7 @@ const HomePage = () => {
     setSelectedLesson(null);
   };
 
-  const handleCreateLesson = async (e) => {
-    e.preventDefault();
-    if (!youtubeUrl.trim()) return;
 
-    setIsCreating(true);
-    setCreateError('');
-
-    try {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        setCreateError(t('homePage.createLesson.loginRequired'));
-        return;
-      }
-
-      const res = await fetch('/api/create-self-lesson', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify({ youtubeUrl: youtubeUrl.trim() })
-      });
-
-      if (res.ok) {
-        const data = await res.json();
-        // Store lesson data in localStorage for temporary use
-        localStorage.setItem(`self-lesson-${data.lesson.id}`, JSON.stringify(data.lesson));
-        navigateWithLocale(router, `/self-lesson/${data.lesson.id}`);
-      } else {
-        const error = await res.json();
-        setCreateError(error.message || t('homePage.createLesson.error'));
-      }
-    } catch (error) {
-      setCreateError(t('homePage.createLesson.connectionError'));
-    } finally {
-      setIsCreating(false);
-    }
-  };
 
   // Structured data for homepage
   const breadcrumbData = generateBreadcrumbStructuredData([
@@ -240,51 +200,7 @@ const HomePage = () => {
           })}
         </div>
 
-        {/* Self-create lesson form */}
-        <form
-          onSubmit={handleCreateLesson}
-          style={{
-            display: 'flex',
-            gap: '10px',
-            alignItems: 'center',
-            marginBottom: '20px',
-            flexWrap: 'wrap'
-          }}
-        >
-          <input
-            type="url"
-            placeholder={t('homePage.createLesson.placeholder') || 'YouTube URL...'}
-            value={youtubeUrl}
-            onChange={(e) => setYoutubeUrl(e.target.value)}
-            style={{
-              flex: 1,
-              minWidth: '250px',
-              padding: '12px 16px',
-              border: '1px solid #ddd',
-              borderRadius: '8px',
-              fontSize: '15px',
-              outline: 'none'
-            }}
-            disabled={isCreating}
-          />
-          <button
-            type="submit"
-            disabled={isCreating || !youtubeUrl.trim()}
-            style={{
-              padding: '12px 24px',
-              background: isCreating || !youtubeUrl.trim() ? '#ccc' : '#667eea',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              fontSize: '15px',
-              cursor: isCreating || !youtubeUrl.trim() ? 'not-allowed' : 'pointer',
-              fontWeight: '600',
-              whiteSpace: 'nowrap'
-            }}
-          >
-            {isCreating ? (t('homePage.createLesson.creating') || 'Đang tạo...') : (t('homePage.createLesson.button') || 'Tạo bài học')}
-          </button>
-        </form>
+
 
         <div className="lesson-cards-container">
           {loading ? (
