@@ -1325,6 +1325,66 @@
   flex-shrink: 0;
 }
 
+/* Dictation Box - Combined Sentence + Translation Container */
+.dictationBox {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  flex: 1;
+  min-height: 0;
+}
+
+.dictationBox .dictationInputArea {
+  flex: 1;
+  border: none;
+  border-radius: 0;
+  min-height: 120px;
+}
+
+.dictationBox .fullSentenceDisplay {
+  flex: 1;
+  border: none;
+  border-radius: 0;
+  min-height: 100px;
+}
+
+/* Sentence Translation - Bottom half of dictationBox */
+.sentenceTranslation {
+  padding: 16px 24px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.06) 0%, rgba(118, 75, 162, 0.06) 100%);
+  border-top: 1px dashed rgba(102, 126, 234, 0.25);
+  font-size: 16px;
+  font-style: italic;
+  color: rgba(147, 197, 253, 0.95);
+  line-height: 1.7;
+  text-align: center;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.sentenceTranslation:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  color: rgba(167, 217, 253, 1);
+}
+
+.translationLoading {
+  color: var(--text-muted);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
 /* Horizontal Dictation Slides (Mobile Only) */
 .dictationSlidesWrapper {
   flex: 1;
@@ -2653,6 +2713,27 @@
 .dictationInputArea :global(.word-input):focus::before {
   opacity: 1;
   background: linear-gradient(145deg, rgba(74, 155, 111, 0.3), rgba(212, 70, 56, 0.2));
+}
+
+/* Desktop: Input acts as clickable button to show hint popup */
+@media (min-width: 769px) {
+  .dictationInputArea :global(.word-input) {
+    cursor: pointer;
+    caret-color: transparent;
+  }
+  
+  .dictationInputArea :global(.word-input):hover {
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0 2px 4px rgba(0, 0, 0, 0.05),
+      0 6px 16px rgba(139, 92, 246, 0.35),
+      0 0 0 2px rgba(139, 92, 246, 0.3);
+    border-color: rgba(139, 92, 246, 0.6);
+  }
+  
+  .dictationInputArea :global(.word-input):active {
+    transform: translateY(0) scale(0.98);
+  }
 }
 
 .dictationInputArea :global(.correct-word) {

@@ -249,6 +249,10 @@ const DictationPageContent = () => {
   const [tooltipTranslation, setTooltipTranslation] = useState('');
   const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
   
+  // Sentence translation for desktop Diktat column
+  const [sentenceTranslation, setSentenceTranslation] = useState('');
+  const [isLoadingTranslation, setIsLoadingTranslation] = useState(false);
+  
   // Mobile detection state
   const [isMobile, setIsMobile] = useState(false);
   
@@ -395,6 +399,61 @@ const DictationPageContent = () => {
 
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+  // Fetch sentence translation when current sentence changes (desktop only)
+  useEffect(() => {
+    const fetchSentenceTranslation = async () => {
+      // Only fetch on desktop
+      if (isMobile) return;
+      
+      const sentence = transcriptData[currentSentenceIndex];
+      if (!sentence || !sentence.text) {
+        setSentenceTranslation('');
+        return;
+      }
+
+      const targetLang = user?.nativeLanguage || 'vi';
+      
+      // Check cache first
+      const cached = translationCache.get(sentence.text, 'de', targetLang);
+      if (cached) {
+        setSentenceTranslation(cached);
+        return;
+      }
+
+      setIsLoadingTranslation(true);
+      
+      try {
+        const response = await fetch('/api/translate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            text: sentence.text,
+            context: '',
+            sourceLang: 'de',
+            targetLang: targetLang
+          })
+        });
+
+        const data = await response.json();
+        if (data.success && data.translation) {
+          setSentenceTranslation(data.translation);
+          translationCache.set(sentence.text, data.translation, 'de', targetLang);
+        } else {
+          setSentenceTranslation('');
+        }
+      } catch (error) {
+        console.error('Sentence translation error:', error);
+        setSentenceTranslation('');
+      } finally {
+        setIsLoadingTranslation(false);
+      }
+    };
+
+    fetchSentenceTranslation();
+  }, [currentSentenceIndex, transcriptData, isMobile, user?.nativeLanguage]);
 
   // Auto-scroll transcript to current sentence (only scroll within container)
   useEffect(() => {
@@ -1885,34 +1944,16 @@ const DictationPageContent = () => {
     }
   }, [isYouTube, user]);
 
-  // Double-click hint functionality
-  const handleInputClick = useCallback((input, correctWord) => {
-    const currentTime = new Date().getTime();
+  // Handle input click - Show hint popup on both Desktop and Mobile
+  const handleInputClick = useCallback((input, correctWord, wordIndex) => {
+    // Blur input to prevent typing - show 3 word suggestions popup instead
+    input.blur();
     
-    // Reset click count if different input or too much time passed
-    if (lastClickedInput !== input || currentTime - lastClickTime > 1000) {
-      setClickCount(0);
+    // Show hint popup with 3 word suggestions
+    if (typeof window.showHintFromInput === 'function') {
+      window.showHintFromInput(input, correctWord, wordIndex);
     }
-    
-    const newClickCount = clickCount + 1;
-    setClickCount(newClickCount);
-    setLastClickTime(currentTime);
-    setLastClickedInput(input);
-    
-    // Only handle double-click, ignore single click
-    if (newClickCount === 2) {
-      // Only save word and show hint, don't auto-focus next input
-      saveWord(correctWord);
-      // Focus back to current input to keep user in place
-      input.focus();
-      setClickCount(0);
-    }
-    
-    // For single click, just focus the input without any other action
-    if (newClickCount === 1) {
-      input.focus();
-    }
-  }, [clickCount, lastClickTime, lastClickedInput, saveWord]);
+  }, []);
 
   const findNextInput = (currentInput) => {
     // On mobile, only search within the current sentence/slide to prevent auto-jumping
@@ -2341,7 +2382,15 @@ const DictationPageContent = () => {
 
   // Handle input focus - keep placeholder visible and scroll into view
   const handleInputFocus = useCallback((input, correctWord) => {
-    // Keep placeholder showing the masked word length
+    const isMobileView = window.innerWidth <= 768;
+    
+    // On mobile: blur immediately to prevent keyboard, show popup instead
+    if (isMobileView) {
+      input.blur();
+      return;
+    }
+    
+    // Desktop: Keep placeholder showing the masked word length
     if (input.value === '') {
       input.placeholder = '*'.repeat(correctWord.length);
       // Reset background color when empty
@@ -2349,47 +2398,12 @@ const DictationPageContent = () => {
       input.style.removeProperty('border-color');
     }
 
-    // Scroll input into view when focused (prevent keyboard from covering it)
-    // Use setTimeout to wait for keyboard to appear on mobile
-    setTimeout(() => {
-      // Check if we're on mobile
-      const isMobileView = window.innerWidth <= 768;
-      
-      if (isMobileView) {
-        // For mobile slides mode, scroll within the slide container
-        const slide = input.closest('.dictationSlide');
-        const inputArea = input.closest('.dictationInputArea');
-        
-        if (slide && inputArea) {
-          // Get positions
-          const inputRect = input.getBoundingClientRect();
-          const slideRect = slide.getBoundingClientRect();
-          const inputAreaRect = inputArea.getBoundingClientRect();
-          
-          // Calculate if input is in the lower half of the slide
-          const inputTop = inputRect.top - slideRect.top;
-          const slideHeight = slideRect.height;
-          const isInLowerHalf = inputTop > slideHeight / 2;
-          
-          if (isInLowerHalf) {
-            // Scroll the input area to show the input near the top
-            const scrollTop = inputArea.scrollTop + (inputRect.top - inputAreaRect.top) - 80;
-            
-            inputArea.scrollTo({
-              top: Math.max(0, scrollTop),
-              behavior: 'smooth'
-            });
-          }
-        }
-      } else {
-        // For desktop, use standard scrollIntoView
-        input.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-          inline: 'nearest'
-        });
-      }
-    }, 300); // Wait 300ms for keyboard animation
+    // Scroll input into view when focused (desktop only)
+    input.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'nearest'
+    });
   }, []);
 
   // Handle input blur - show placeholder if empty
@@ -2555,65 +2569,147 @@ const DictationPageContent = () => {
     setShowSuggestionPopup(true);
   }, [transcriptData, currentSentenceIndex, user, saveWord, saveWordCompletion, checkSentenceCompletion, wordPointsProcessed, updatePoints]);
 
+  // Show hint from input element (for desktop click on input)
+  const showHintFromInput = useCallback((input, correctWord, wordIndex) => {
+    // Haptic feedback
+    hapticEvents.wordHintUsed();
+    
+    // If user is not logged in, reveal the word directly
+    if (!user) {
+      const container = input.parentElement;
+
+      // Save this word completion to database
+      saveWordCompletion(wordIndex, correctWord);
+
+      // Award points for correct word (+1 point) and show animation
+      if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
+        updatePoints(1, `Correct word from hint: ${correctWord}`, input);
+        setWordPointsProcessed(prev => ({
+          ...prev,
+          [currentSentenceIndex]: {
+            ...(prev[currentSentenceIndex] || {}),
+            [wordIndex]: 'correct'
+          }
+        }));
+      }
+
+      // Replace input with correct word
+      const wordSpan = document.createElement("span");
+      wordSpan.className = "correct-word hint-revealed";
+      wordSpan.innerText = correctWord;
+      wordSpan.onclick = function () {
+        if (window.saveWord) window.saveWord(correctWord);
+      };
+
+      // Find the punctuation span
+      const punctuation = container.querySelector('.word-punctuation');
+
+      // Clear container and rebuild
+      container.innerHTML = '';
+      container.appendChild(wordSpan);
+      if (punctuation) {
+        container.appendChild(punctuation);
+      }
+
+      // Save the word
+      saveWord(correctWord);
+
+      // Check if sentence is completed
+      checkSentenceCompletion();
+      return;
+    }
+
+    // For logged-in users, show suggestion popup
+    const context = transcriptData[currentSentenceIndex]?.text || '';
+    const rect = input.getBoundingClientRect();
+    const popupWidth = 280;
+    const popupHeight = 250;
+
+    let top = rect.top + (rect.height / 2);
+    let left;
+    
+    const spaceOnRight = window.innerWidth - rect.right;
+    const spaceOnLeft = rect.left;
+
+    if (spaceOnRight >= popupWidth + 10) {
+      left = rect.right + 5;
+    } else if (spaceOnLeft >= popupWidth + 10) {
+      left = rect.left - popupWidth - 5;
+    } else {
+      left = Math.max(10, (window.innerWidth - popupWidth) / 2);
+    }
+
+    if (top + popupHeight > window.innerHeight - 10) {
+      top = Math.max(10, window.innerHeight - popupHeight - 10);
+    }
+    if (top < 10) {
+      top = 10;
+    }
+
+    setSuggestionWord(correctWord);
+    setSuggestionWordIndex(wordIndex);
+    setSuggestionContext(context);
+    setSuggestionPosition({ top, left });
+    setShowSuggestionPopup(true);
+  }, [transcriptData, currentSentenceIndex, user, saveWord, saveWordCompletion, checkSentenceCompletion, wordPointsProcessed, updatePoints]);
+
   // Handle correct answer from suggestion popup
   const handleCorrectSuggestion = useCallback((correctWord, wordIndex) => {
-    // Find the button with this word index
-    const button = document.querySelector(`button[onclick*="showHint"][onclick*="${correctWord}"][onclick*="${wordIndex}"]`);
-    if (button) {
-      const container = button.parentElement;
-      const input = container.querySelector('.word-input');
+    // Find the input with this word index
+    const input = document.querySelector(`input[data-correct-word="${correctWord}"][id="word-${wordIndex}"]`) ||
+                  document.querySelector(`input#word-${wordIndex}`);
+    if (input) {
+      const container = input.parentElement;
       
-      if (input) {
-        // Save this word completion to database
-        saveWordCompletion(wordIndex, correctWord);
-        
-        // Award points for correct word (+1 point) and show animation
-        if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
-          updatePoints(1, `Correct word from hint: ${correctWord}`, button);
-          setWordPointsProcessed(prev => ({
-            ...prev,
-            [currentSentenceIndex]: {
-              ...(prev[currentSentenceIndex] || {}),
-              [wordIndex]: 'correct'
-            }
-          }));
-        }
-        
-        // Replace input with correct word
-        const wordSpan = document.createElement("span");
-        wordSpan.className = "correct-word hint-revealed";
-        wordSpan.innerText = correctWord;
-        wordSpan.onclick = function () {
-          if (window.saveWord) window.saveWord(correctWord);
-        };
-        
-        // Find the punctuation span
-        const punctuation = container.querySelector('.word-punctuation');
-        
-        // Set programmatic scroll flag before DOM manipulation to prevent manual scroll sync
-        if (typeof window !== 'undefined' && window.innerWidth <= 768) {
-          isProgrammaticScrollRef.current = true;
-        }
-        
-        // Clear container and rebuild
-        container.innerHTML = '';
-        container.appendChild(wordSpan);
-        if (punctuation) {
-          container.appendChild(punctuation);
-        }
-        
-        // Save the word
-        saveWord(correctWord);
-        
-        // Check if sentence is completed
-        checkSentenceCompletion();
-        
-        // Clear programmatic scroll flag after DOM updates settle
-        if (typeof window !== 'undefined' && window.innerWidth <= 768) {
-          setTimeout(() => {
-            isProgrammaticScrollRef.current = false;
-          }, 300);
-        }
+      // Save this word completion to database
+      saveWordCompletion(wordIndex, correctWord);
+      
+      // Award points for correct word (+1 point) and show animation
+      if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
+        updatePoints(1, `Correct word from hint: ${correctWord}`, input);
+        setWordPointsProcessed(prev => ({
+          ...prev,
+          [currentSentenceIndex]: {
+            ...(prev[currentSentenceIndex] || {}),
+            [wordIndex]: 'correct'
+          }
+        }));
+      }
+      
+      // Replace input with correct word
+      const wordSpan = document.createElement("span");
+      wordSpan.className = "correct-word hint-revealed";
+      wordSpan.innerText = correctWord;
+      wordSpan.onclick = function () {
+        if (window.saveWord) window.saveWord(correctWord);
+      };
+      
+      // Find the punctuation span
+      const punctuation = container.querySelector('.word-punctuation');
+      
+      // Set programmatic scroll flag before DOM manipulation to prevent manual scroll sync
+      if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+        isProgrammaticScrollRef.current = true;
+      }
+      
+      // Clear container and rebuild
+      container.innerHTML = '';
+      container.appendChild(wordSpan);
+      if (punctuation) {
+        container.appendChild(punctuation);
+      }
+      
+      // Save the word
+      saveWord(correctWord);
+      
+      // Check if sentence is completed
+      checkSentenceCompletion();
+      
+      // Clear programmatic scroll flag after DOM updates settle
+      if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+        setTimeout(() => {
+          isProgrammaticScrollRef.current = false;
+        }, 300);
       }
     }
     
@@ -2767,17 +2863,10 @@ const DictationPageContent = () => {
           const shouldHide = hiddenWordIndices.has(wordIndex);
 
           if (shouldHide) {
-            // Show input with hint button (hidden)
+            // Show input only (hint button removed - click on input shows hint popup)
             const dynamicSize = Math.max(Math.min(pureWord.length, 20), 3);
 
             return `<span class="word-container">
-              <button
-                class="hint-btn"
-                onclick="window.showHint(this, '${pureWord}', ${wordIndex})"
-                title="${t('lesson.ui.showHint')}"
-                type="button"
-              >
-              </button>
                <input
                  type="text"
                  class="word-input"
@@ -2785,8 +2874,9 @@ const DictationPageContent = () => {
                  name="word-${wordIndex}"
                  data-word-id="word-${wordIndex}"
                  data-word-length="${pureWord.length}"
+                 data-correct-word="${pureWord}"
                  oninput="window.checkWord?.(this, '${pureWord}', ${wordIndex})"
-                 onclick="window.handleInputClick?.(this, '${pureWord}')"
+                 onclick="window.handleInputClick?.(this, '${pureWord}', ${wordIndex})"
                  onkeydown="window.disableArrowKeys?.(event)"
                  onfocus="window.handleInputFocus?.(this, '${pureWord}')"
                  onblur="window.handleInputBlur?.(this, '${pureWord}')"
@@ -2904,6 +2994,7 @@ const DictationPageContent = () => {
         window.handleInputBlur = handleInputBlur;
         window.saveWord = saveWord;
         window.showHint = showHint;
+        window.showHintFromInput = showHintFromInput;
         window.handleWordClickForPopup = handleWordClickForPopup;
         window.showPointsAnimation = showPointsAnimation;
         window.disableArrowKeys = (e) => {
@@ -2915,7 +3006,7 @@ const DictationPageContent = () => {
       }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentSentenceIndex, transcriptData, processLevelUp, checkWord, handleInputClick, handleInputFocus, handleInputBlur, saveWord, showHint, handleWordClickForPopup, completedSentences, progressLoaded, hidePercentage, showPointsAnimation]);
+  }, [currentSentenceIndex, transcriptData, processLevelUp, checkWord, handleInputClick, handleInputFocus, handleInputBlur, saveWord, showHint, showHintFromInput, handleWordClickForPopup, completedSentences, progressLoaded, hidePercentage, showPointsAnimation]);
   // Note: Removed 'completedWords' from dependencies to prevent infinite loop
   // Individual word completions are handled via direct DOM manipulation (input → span)
 
@@ -3471,14 +3562,28 @@ const DictationPageContent = () => {
                   {dictationMode === 'fill-blanks' ? (
                     /* Mode 1: Fill in blanks */
                     <>
-                      <div
-                        className={styles.dictationInputArea}
-                        data-sentence-index={currentSentenceIndex}
-                        dangerouslySetInnerHTML={{ __html: processedText }}
-                        onTouchStart={handleTouchStart}
-                        onTouchMove={handleTouchMove}
-                        onTouchEnd={handleTouchEnd}
-                      />
+                      {/* Combined Dictation + Translation Box */}
+                      <div className={styles.dictationBox}>
+                        <div
+                          className={styles.dictationInputArea}
+                          data-sentence-index={currentSentenceIndex}
+                          dangerouslySetInnerHTML={{ __html: processedText }}
+                          onTouchStart={handleTouchStart}
+                          onTouchMove={handleTouchMove}
+                          onTouchEnd={handleTouchEnd}
+                        />
+
+                        {/* Sentence Translation - Bottom half */}
+                        {!isMobile && (
+                          <div className={styles.sentenceTranslation}>
+                            {isLoadingTranslation ? (
+                              <span className={styles.translationLoading}>...</span>
+                            ) : sentenceTranslation ? (
+                              <span>{sentenceTranslation}</span>
+                            ) : null}
+                          </div>
+                        )}
+                      </div>
 
                       <div className={styles.dictationActions}>
                         <button
@@ -3546,75 +3651,78 @@ const DictationPageContent = () => {
                         >
                           {t('lesson.ui.showAll')}
                         </button>
-
-                        <button
-                          className={styles.nextButton}
-                          onClick={goToNextSentence}
-                          disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
-                        >
-                          {t('lesson.ui.next')}
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                          </svg>
-                        </button>
                       </div>
                     </>
                   ) : (
                     /* Mode 2: Full sentence input for Desktop */
                     <div className={styles.fullSentenceMode}>
-                      <div className={styles.fullSentenceDisplay}>
-                        {completedSentences.includes(currentSentenceIndex) ? (
-                          <div 
-                            className={styles.dictationInputArea}
-                            dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(transcriptData[currentSentenceIndex]?.text || '') }}
-                          />
-                        ) : (
-                          <div className={styles.hintSentenceText} data-sentence-index={currentSentenceIndex}>
-                            {transcriptData[currentSentenceIndex]?.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => {
-                              // Remove punctuation to get pure word
-                              const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-                              const punctuation = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
+                      {/* Combined Display + Translation Box */}
+                      <div className={styles.dictationBox}>
+                        <div className={styles.fullSentenceDisplay}>
+                          {completedSentences.includes(currentSentenceIndex) ? (
+                            <div 
+                              className={styles.dictationInputArea}
+                              dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(transcriptData[currentSentenceIndex]?.text || '') }}
+                            />
+                          ) : (
+                            <div className={styles.hintSentenceText} data-sentence-index={currentSentenceIndex}>
+                              {transcriptData[currentSentenceIndex]?.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => {
+                                // Remove punctuation to get pure word
+                                const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+                                const punctuation = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
 
-                              if (pureWord.length === 0) return null;
+                                if (pureWord.length === 0) return null;
 
-                              // Check if this word is revealed
-                              const isRevealed = revealedHintWords[currentSentenceIndex]?.[idx];
+                                // Check if this word is revealed
+                                const isRevealed = revealedHintWords[currentSentenceIndex]?.[idx];
 
-                              // Check word comparison result
-                              const comparisonResult = wordComparisonResults[currentSentenceIndex]?.[idx];
+                                // Check word comparison result
+                                const comparisonResult = wordComparisonResults[currentSentenceIndex]?.[idx];
 
-                              // Get partial reveal count
-                              const partialCount = partialRevealedChars[currentSentenceIndex]?.[idx] || 0;
+                                // Get partial reveal count
+                                const partialCount = partialRevealedChars[currentSentenceIndex]?.[idx] || 0;
 
-                              const wordClass = comparisonResult
-                                ? (comparisonResult === 'correct' ? styles.hintWordCorrect : styles.hintWordIncorrect)
-                                : (isRevealed ? styles.hintWordRevealed : (partialCount > 0 ? styles.hintWordPartial : ''));
+                                const wordClass = comparisonResult
+                                  ? (comparisonResult === 'correct' ? styles.hintWordCorrect : styles.hintWordIncorrect)
+                                  : (isRevealed ? styles.hintWordRevealed : (partialCount > 0 ? styles.hintWordPartial : ''));
 
-                              // Determine what to display
-                              let displayText;
-                              if (comparisonResult || isRevealed) {
-                                // Show full word if checked or manually revealed
-                                displayText = pureWord;
-                              } else if (partialCount > 0) {
-                                // Show partial characters
-                                displayText = pureWord.substring(0, partialCount) + '\u00A0'.repeat(pureWord.length - partialCount);
-                              } else {
-                                // Show all spaces
-                                displayText = '\u00A0'.repeat(pureWord.length);
-                              }
+                                // Determine what to display
+                                let displayText;
+                                if (comparisonResult || isRevealed) {
+                                  // Show full word if checked or manually revealed
+                                  displayText = pureWord;
+                                } else if (partialCount > 0) {
+                                  // Show partial characters
+                                  displayText = pureWord.substring(0, partialCount) + '\u00A0'.repeat(pureWord.length - partialCount);
+                                } else {
+                                  // Show all spaces
+                                  displayText = '\u00A0'.repeat(pureWord.length);
+                                }
 
-                              return (
-                                <span key={idx} className={styles.hintWordContainer}>
-                                  <span
-                                    className={`${styles.hintWordBox} ${wordClass}`}
-                                    onClick={() => !comparisonResult && toggleRevealHintWord(currentSentenceIndex, idx)}
-                                    title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để ẩn' : 'Click để hiện gợi ý')}
-                                  >
-                                    {displayText}
+                                return (
+                                  <span key={idx} className={styles.hintWordContainer}>
+                                    <span
+                                      className={`${styles.hintWordBox} ${wordClass}`}
+                                      onClick={() => !comparisonResult && toggleRevealHintWord(currentSentenceIndex, idx)}
+                                      title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để ẩn' : 'Click để hiện gợi ý')}
+                                    >
+                                      {displayText}
+                                    </span>
                                   </span>
-                                </span>
-                              );
-                            })}
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Sentence Translation - Bottom half */}
+                        {!isMobile && (
+                          <div className={styles.sentenceTranslation}>
+                            {isLoadingTranslation ? (
+                              <span className={styles.translationLoading}>...</span>
+                            ) : sentenceTranslation ? (
+                              <span>{sentenceTranslation}</span>
+                            ) : null}
                           </div>
                         )}
                       </div>
@@ -3670,17 +3778,6 @@ const DictationPageContent = () => {
                           disabled={completedSentences.includes(currentSentenceIndex)}
                         >
                           Kiểm tra
-                        </button>
-
-                        <button
-                          className={styles.nextButton}
-                          onClick={goToNextSentence}
-                          disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
-                        >
-                          {t('lesson.ui.next')}
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                          </svg>
                         </button>
                       </div>
                     </div>
