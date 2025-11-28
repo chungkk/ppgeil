@@ -2,246 +2,295 @@
     {
         "text": "Guten Tag!",
         "start": 0,
-        "end": 2.64
+        "end": 2.64,
+        "translation": "Chào buổi chiều!"
     },
     {
         "text": "Hier sind die Nachrichten für Deutschlernende vom 11.",
         "start": 3.64,
-        "end": 7.28
+        "end": 7.28,
+        "translation": "Đây là tin tức dành cho người học tiếng Đức từ ngày 11."
     },
     {
         "text": "Juli 2025.",
         "start": 7.5,
-        "end": 9.7
+        "end": 9.7,
+        "translation": "Tháng 7 năm 2025."
     },
     {
         "text": "Fahrradtourist in Iran festgenommen.",
         "start": 12.14,
-        "end": 15
+        "end": 15,
+        "translation": "Du khách đi xe đạp ở Iran bị bắt."
     },
     {
         "text": "Ein 18-jähriger Deutsch-Franzose wird seit dem 16.",
         "start": 15,
-        "end": 21.52
+        "end": 21.52,
+        "translation": "Một thanh niên 18 tuổi người Đức-Pháp đã mất tích từ ngày 16."
     },
     {
         "text": "Juni im Iran vermisst.",
         "start": 21.7,
-        "end": 23.84
+        "end": 23.84,
+        "translation": "Tháng Sáu ở Iran bị mất tích."
     },
     {
         "text": "Jetzt bestätigt die iranische Regierung, dass er festgenommen wurde,",
         "start": 25.54,
-        "end": 30.32
+        "end": 30.32,
+        "translation": "Bây giờ chính phủ Iran xác nhận rằng ông đã bị bắt."
     },
     {
         "text": "wegen einer angeblichen Straftat.",
         "start": 31.44,
-        "end": 33.58
+        "end": 33.58,
+        "translation": "do một tội ác được cho là đã xảy ra."
     },
     {
         "text": "Seine Familie hat seit Wochen nichts von ihm gehört.",
         "start": 35.32,
-        "end": 38.82
+        "end": 38.82,
+        "translation": "Gia đình anh ấy đã không nghe tin gì từ anh ấy trong nhiều tuần."
     },
     {
         "text": "Frankreich und Deutschland warnen weiterhin vor Reisen in den Iran",
         "start": 40.06,
-        "end": 44.98
+        "end": 44.98,
+        "translation": "Pháp và Đức tiếp tục cảnh báo về việc đi du lịch đến Iran."
     },
     {
         "text": "und rufen ihre Staatsbürger zur Ausreise auf.",
         "start": 44.98,
-        "end": 49.1
+        "end": 49.1,
+        "translation": "và kêu gọi công dân của họ rời khỏi đất nước."
     },
     {
         "text": "EU und Israel einigen sich auf Hilfe für Gaza.",
         "start": 53.4,
-        "end": 58.4
+        "end": 58.4,
+        "translation": "EU và Israel thống nhất hỗ trợ cho Gaza."
     },
     {
         "text": "Die EU hat ein Abkommen mit Israel über mehr humanitäre",
         "start": 59.74,
-        "end": 64.7
+        "end": 64.7,
+        "translation": "Liên minh Châu Âu đã ký một thỏa thuận với Israel về nhiều hoạt động nhân đạo."
     },
     {
         "text": "Hilfe für den Gaza-Streifen geschlossen.",
         "start": 64.7,
-        "end": 67.44
+        "end": 67.44,
+        "translation": "Hỗ trợ cho Dải Gaza đã bị ngừng."
     },
     {
         "text": "Israel will unter anderem Grenzübergänge über Ägypten öffnen,",
         "start": 69.32,
-        "end": 74.24
+        "end": 74.24,
+        "translation": "Israel sẽ mở các cửa khẩu biên giới qua Ai Cập,"
     },
     {
         "text": "um mehr Hilfsgüter durchzulassen.",
         "start": 74.78,
-        "end": 77.12
+        "end": 77.12,
+        "translation": "để cho phép nhiều hàng cứu trợ hơn."
     },
     {
         "text": "Im Gaza-Streifen sollen Bäckereien",
         "start": 78.36,
-        "end": 82.02
+        "end": 82.02,
+        "translation": "Tại Dải Gaza, các tiệm bánh mì sẽ..."
     },
     {
         "text": "und öffentliche Essensstellen wieder genug Hilfe bekommen.",
         "start": 82.02,
-        "end": 86.74
+        "end": 86.74,
+        "translation": "và các điểm cung cấp thực phẩm công cộng nhận đủ hỗ trợ trở lại."
     },
     {
         "text": "Eine wichtige Wasseranlage soll wieder Strom bekommen,",
         "start": 88.5,
-        "end": 92.6
+        "end": 92.6,
+        "translation": "Một hệ thống nước quan trọng sẽ được cấp điện trở lại."
     },
     {
         "text": "damit Trinkwasser verfügbar ist.",
         "start": 93.32,
-        "end": 95.78
+        "end": 95.78,
+        "translation": "để nước uống có sẵn."
     },
     {
         "text": "Die EU hatte zuvor Druck gemacht.",
         "start": 96.92,
-        "end": 99.8
+        "end": 99.8,
+        "translation": "Liên minh Châu Âu đã gây áp lực trước đó."
     },
     {
         "text": "Lehrerinnen dürfen Kopftuch tragen.",
         "start": 104.98,
-        "end": 107.82
+        "end": 107.82,
+        "translation": "Giáo viên nữ được phép đeo khăn trùm đầu."
     },
     {
         "text": "In Berlin soll das Kopftuchverbot für Lehrerinnen an öffentlichen Schulen",
         "start": 107.82,
-        "end": 114.92
+        "end": 114.92,
+        "translation": "Tại Berlin, sẽ có lệnh cấm khăn trùm đầu đối với giáo viên nữ tại các trường công lập."
     },
     {
         "text": "geändert werden.",
         "start": 114.92,
-        "end": 115.94
+        "end": 115.94,
+        "translation": "được thay đổi."
     },
     {
         "text": "Bisher war es verboten, im Unterricht ein Kopftuch, eine Kippa",
         "start": 117.44,
-        "end": 122.24
+        "end": 122.24,
+        "translation": "Trước đây, việc đeo khăn trùm đầu hoặc kippa trong lớp học là bị cấm."
     },
     {
         "text": "oder ein Kreuz zu tragen.",
         "start": 122.24,
-        "end": 124.28
+        "end": 124.28,
+        "translation": "hoặc mang một cây thánh giá."
     },
     {
         "text": "Doch Gerichte haben entschieden,",
         "start": 125.72,
-        "end": 127.58
+        "end": 127.58,
+        "translation": "Tuy nhiên, các tòa án đã quyết định,"
     },
     {
         "text": "dass ein generelles Verbot nicht erlaubt ist.",
         "start": 128.2,
-        "end": 131.26
+        "end": 131.26,
+        "translation": "rằng một lệnh cấm tổng quát là không được phép."
     },
     {
         "text": "Es verletzt die Religionsfreiheit.",
         "start": 132.48,
-        "end": 135
+        "end": 135,
+        "translation": "Nó vi phạm tự do tôn giáo."
     },
     {
         "text": "Deshalb will das Land Berlin das Gesetz jetzt anpassen.",
         "start": 136.36,
-        "end": 140.8
+        "end": 140.8,
+        "translation": "Vì vậy, đất nước Berlin muốn điều chỉnh luật này ngay bây giờ."
     },
     {
         "text": "Oxfam: Ungleichheit in Afrika wächst weiter.",
         "start": 146.06,
-        "end": 150.24
+        "end": 150.24,
+        "translation": "Oxfam: Sự bất bình đẳng ở châu Phi tiếp tục gia tăng."
     },
     {
         "text": "Vier der reichsten Milliardäre Afrikas besitzen laut Oxfam mehr Geld",
         "start": 152.02,
-        "end": 157.48
+        "end": 157.48,
+        "translation": "Bốn trong số những tỷ phú giàu nhất châu Phi sở hữu nhiều tiền hơn theo Oxfam."
     },
     {
         "text": "als die Hälfte der Bevölkerung des Kontinents,",
         "start": 157.48,
-        "end": 160.82
+        "end": 160.82,
+        "translation": "khi một nửa dân số của lục địa,"
     },
     {
         "text": "rund 750 Millionen Menschen.",
         "start": 161.84,
-        "end": 164.54
+        "end": 164.54,
+        "translation": "khoảng 750 triệu người."
     },
     {
         "text": "Ihr Vermögen liegt bei 57,4 Milliarden Dollar.",
         "start": 165.92,
-        "end": 170.9
+        "end": 170.9,
+        "translation": "Tài sản của bạn là 57,4 tỷ đô la."
     },
     {
         "text": "In einem neuen Bericht warnt Oxfam vor wachsender Ungleichheit.",
         "start": 172.14,
-        "end": 176.96
+        "end": 176.96,
+        "translation": "Trong một báo cáo mới, Oxfam cảnh báo về sự gia tăng bất bình đẳng."
     },
     {
         "text": "Viele afrikanische Regierungen würden Reiche nicht genug besteuern",
         "start": 178.72,
-        "end": 183.54
+        "end": 183.54,
+        "translation": "Nhiều chính phủ châu Phi không đánh thuế đủ vào người giàu."
     },
     {
         "text": "und sich wenig um die Armen kümmern.",
         "start": 183.54,
-        "end": 186.42
+        "end": 186.42,
+        "translation": "và ít quan tâm đến người nghèo."
     },
     {
         "text": "Kritik an Musks Chatbot Grok – Türkei erwägt Verbot.",
         "start": 191.62,
-        "end": 197.18
+        "end": 197.18,
+        "translation": "Phê bình chatbot Grok của Musk – Thổ Nhĩ Kỳ xem xét cấm."
     },
     {
         "text": "Elon Musks Chatbot Grok steht erneut in der Kritik.",
         "start": 197.98,
-        "end": 203.2
+        "end": 203.2,
+        "translation": "Chatbot Grok của Elon Musk lại một lần nữa bị chỉ trích."
     },
     {
         "text": "In der Türkei soll er Präsident Erdogan",
         "start": 203.98,
-        "end": 207.26
+        "end": 207.26,
+        "translation": "Tại Thổ Nhĩ Kỳ, ông ấy được cho là Tổng thống Erdogan."
     },
     {
         "text": "und seine Mutter beleidigt haben.",
         "start": 207.26,
-        "end": 209.68
+        "end": 209.68,
+        "translation": "và đã xúc phạm mẹ của anh ấy."
     },
     {
         "text": "Die Regierung denkt deshalb über ein Verbot nach.",
         "start": 210.76,
-        "end": 214.46
+        "end": 214.46,
+        "translation": "Chính phủ vì vậy đang xem xét một lệnh cấm."
     },
     {
         "text": "Auch antisemitische Aussagen und Hitler-Verherrlichungen wurden gemeldet.",
         "start": 215.46,
-        "end": 221.2
+        "end": 221.2,
+        "translation": "Cũng đã có báo cáo về các phát ngôn chống Do Thái và ca ngợi Hitler."
     },
     {
         "text": "Die EU prüft den Fall, warnt",
         "start": 222.22,
-        "end": 225.12
+        "end": 225.12,
+        "translation": "Liên minh châu Âu đang xem xét vụ việc, cảnh báo."
     },
     {
         "text": "aber vor Einschränkungen der Meinungsfreiheit.",
         "start": 225.12,
-        "end": 228.16
+        "end": 228.16,
+        "translation": "nhưng trước những hạn chế về tự do ngôn luận."
     },
     {
         "text": "Das waren die Nachrichten für heute.",
         "start": 229.98,
-        "end": 232.04
+        "end": 232.04,
+        "translation": "Đó là tin tức cho hôm nay."
     },
     {
         "text": "Danke fürs Zuhören und bis morgen.",
         "start": 232.86,
-        "end": 235.38
+        "end": 235.38,
+        "translation": "Cảm ơn bạn đã lắng nghe và hẹn gặp lại vào ngày mai."
     },
     {
         "text": "Untertitel der Amara.org-Community.",
         "start": 244.46,
-        "end": 245.34
+        "end": 245.34,
+        "translation": "Phụ đề của cộng đồng Amara.org."
     }
 ]

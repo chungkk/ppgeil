@@ -2,576 +2,691 @@
     {
         "text": "Ich bin Pepper Wutz.",
         "start": 3.12,
-        "end": 5.26
+        "end": 5.26,
+        "translation": "Tôi là Pepper Wutz."
     },
     {
         "text": "Das ist mein kleiner Bruder Schorsch.",
         "start": 5.62,
-        "end": 7.86
+        "end": 7.86,
+        "translation": "Đây là em trai nhỏ của tôi, Schorsch."
     },
     {
         "text": "Das ist Mama Wutz.",
         "start": 8.3,
-        "end": 10.2
+        "end": 10.2,
+        "translation": "Đây là mẹ Wutz."
     },
     {
         "text": "Und das ist Papa Wutz.",
         "start": 10.54,
-        "end": 12.62
+        "end": 12.62,
+        "translation": "Và đây là Papa Wutz."
     },
     {
         "text": "Pepper Wutz.",
         "start": 14.96,
-        "end": 16.9
+        "end": 16.9,
+        "translation": "Tiêu Wutz."
     },
     {
         "text": "Papa Wutz arbeitet in seinem Arbeitszimmer.",
         "start": 19.52,
-        "end": 23.28
+        "end": 23.28,
+        "translation": "Papa Wutz làm việc trong phòng làm việc của mình."
     },
     {
         "text": "Was machst du denn da, Papa?",
         "start": 23.52,
-        "end": 25.8
+        "end": 25.8,
+        "translation": "Bố đang làm gì vậy?"
     },
     {
         "text": "Ich baue ein neues Wohnhaus.",
         "start": 25.58,
-        "end": 28.32
+        "end": 28.32,
+        "translation": "Tôi đang xây dựng một ngôi nhà mới."
     },
     {
         "text": "Das ist aber nicht groß.",
         "start": 28.18,
-        "end": 30.48
+        "end": 30.48,
+        "translation": "Nhưng cái đó không lớn."
     },
     {
         "text": "Ist es etwa ein Haus für Elfen und Feen?",
         "start": 29.98,
-        "end": 33.46
+        "end": 33.46,
+        "translation": "Có phải đó là một ngôi nhà cho các nàng tiên và yêu tinh không?"
     },
     {
         "text": "Nein, schau.",
         "start": 34.04,
-        "end": 35.62
+        "end": 35.62,
+        "translation": "Không, nhìn này."
     },
     {
         "text": "Das ist ein Modell.",
         "start": 35.32,
-        "end": 36.56
+        "end": 36.56,
+        "translation": "Đây là một mô hình."
     },
     {
         "text": "Das richtige Haus wird viel, viel größer sein.",
         "start": 36.5,
-        "end": 39.54
+        "end": 39.54,
+        "translation": "Ngôi nhà đúng sẽ lớn hơn rất, rất nhiều."
     },
     {
         "text": "Aha.",
         "start": 39.08,
-        "end": 40.06
+        "end": 40.06,
+        "translation": "Aha."
     },
     {
         "text": "Die Zeichnung zeigt, was später alles gebaut werden muss.",
         "start": 39.88,
-        "end": 43.44
+        "end": 43.44,
+        "translation": "Bản vẽ cho thấy những gì sẽ phải được xây dựng sau này."
     },
     {
         "text": "Ich glaube, da fehlt noch was, Papa.",
         "start": 43.78,
-        "end": 46.02
+        "end": 46.02,
+        "translation": "Con nghĩ, còn thiếu gì đó, ba ạ."
     },
     {
         "text": "Siehst du?",
         "start": 47.32,
-        "end": 48.54
+        "end": 48.54,
+        "translation": "Bạn thấy không?"
     },
     {
         "text": "Pepper hat eine Schaukel vor dem Haus gezeichnet.",
         "start": 48.48,
-        "end": 52.02
+        "end": 52.02,
+        "translation": "Pepper đã vẽ một cái xích đu trước nhà."
     },
     {
         "text": "Perfekt.",
         "start": 51.92,
-        "end": 52.94
+        "end": 52.94,
+        "translation": "Hoàn hảo."
     },
     {
         "text": "Möchtet ihr das neue Haus gern sehen?",
         "start": 52.74,
-        "end": 54.94
+        "end": 54.94,
+        "translation": "Các bạn có muốn xem ngôi nhà mới không?"
     },
     {
         "text": "Oh ja, sehr gern.",
         "start": 54.74,
-        "end": 56.44
+        "end": 56.44,
+        "translation": "Ôi vâng, rất vui lòng."
     },
     {
         "text": "Papa Wutz fährt mit Pepper und Schorsch zu dem Haus,",
         "start": 57.28,
-        "end": 60.72
+        "end": 60.72,
+        "translation": "Bố Wutz lái xe cùng với Pepper và Schorsch đến ngôi nhà,"
     },
     {
         "text": "das er gerade baut.",
         "start": 60.24,
-        "end": 61.7
+        "end": 61.7,
+        "translation": "mà anh ấy đang xây dựng."
     },
     {
         "text": "Da sind wir schon.",
         "start": 61.7,
-        "end": 63.06
+        "end": 63.06,
+        "translation": "Chúng ta đã đến nơi rồi."
     },
     {
         "text": "Aber Papa, da steht doch kein Haus.",
         "start": 63.08,
-        "end": 65.84
+        "end": 65.84,
+        "translation": "Nhưng bố ơi, đâu có ngôi nhà nào ở đó."
     },
     {
         "text": "Das liegt daran, dass der Bau noch gar nicht angefangen",
         "start": 65.88,
-        "end": 69.36
+        "end": 69.36,
+        "translation": "Điều đó là do việc xây dựng vẫn chưa bắt đầu."
     },
     {
         "text": "hat.",
         "start": 68.86,
-        "end": 69.86
+        "end": 69.86,
+        "translation": "mũ."
     },
     {
         "text": "Bagger, Bagger.",
         "start": 71.66,
-        "end": 73.24
+        "end": 73.24,
+        "translation": "Máy xúc, máy xúc."
     },
     {
         "text": "Da sind Herr Bulle und seine Freunde.",
         "start": 74.3,
-        "end": 77.14
+        "end": 77.14,
+        "translation": "Đó là ông Bulle và những người bạn của ông ấy."
     },
     {
         "text": "Herr Bulle ist gekommen, um das neue Haus zu bauen.",
         "start": 77.02,
-        "end": 79.94
+        "end": 79.94,
+        "translation": "Ông Bulle đã đến để xây dựng ngôi nhà mới."
     },
     {
         "text": "Baust du es denn nicht selber, Papa?",
         "start": 80.06,
-        "end": 82.22
+        "end": 82.22,
+        "translation": "Bố không tự làm nó sao?"
     },
     {
         "text": "Ich habe den Entwurf gemacht.",
         "start": 82.2,
-        "end": 84.42
+        "end": 84.42,
+        "translation": "Tôi đã làm bản thảo."
     },
     {
         "text": "Herr Bulle muss nur meinen Anweisungen folgen.",
         "start": 83.92,
-        "end": 86.7
+        "end": 86.7,
+        "translation": "Ông Bulle chỉ cần làm theo chỉ dẫn của tôi."
     },
     {
         "text": "Guten Tag, Herr Wutz.",
         "start": 87.44,
-        "end": 88.82
+        "end": 88.82,
+        "translation": "Chào buổi chiều, ông Wutz."
     },
     {
         "text": "Was soll es werden?",
         "start": 88.72,
-        "end": 90.1
+        "end": 90.1,
+        "translation": "Nó sẽ trở thành gì?"
     },
     {
         "text": "Parkplatz, ein Schwimmbad, Raketenstation?",
         "start": 90.16,
-        "end": 93.26
+        "end": 93.26,
+        "translation": "Bãi đậu xe, một bể bơi, trạm tên lửa?"
     },
     {
         "text": "Ein Haus.",
         "start": 93.1,
-        "end": 94.2
+        "end": 94.2,
+        "translation": "Một ngôi nhà."
     },
     {
         "text": "Können Sie es genauso bauen wie dieses hier?",
         "start": 94.02,
-        "end": 96.78
+        "end": 96.78,
+        "translation": "Bạn có thể xây dựng nó giống như cái này không?"
     },
     {
         "text": "Nur größer.",
         "start": 96.66,
-        "end": 98.36
+        "end": 98.36,
+        "translation": "Chỉ lớn hơn."
     },
     {
         "text": "Herr Wutz möchte ein Haus.",
         "start": 98.18,
-        "end": 100.18
+        "end": 100.18,
+        "translation": "Ông Wutz muốn một ngôi nhà."
     },
     {
         "text": "Soll es aus Stroh gebaut werden?",
         "start": 100.16,
-        "end": 102.62
+        "end": 102.62,
+        "translation": "Có nên xây dựng bằng rơm không?"
     },
     {
         "text": "Oder aus Holz?",
         "start": 102.26,
-        "end": 103.72
+        "end": 103.72,
+        "translation": "Hay bằng gỗ?"
     },
     {
         "text": "Oder aus Steinen, Herr Wutz?",
         "start": 103.48,
-        "end": 105.52
+        "end": 105.52,
+        "translation": "Hoặc từ những viên đá, thưa ngài Wutz?"
     },
     {
         "text": "Aus Steinen, bitte.",
         "start": 105.28,
-        "end": 107.04
+        "end": 107.04,
+        "translation": "Từ đá, làm ơn."
     },
     {
         "text": "Wie Sie wünschen.",
         "start": 106.78,
-        "end": 108.34
+        "end": 108.34,
+        "translation": "Như bạn mong muốn."
     },
     {
         "text": "Und was ist mit der Schaukel?",
         "start": 108.38,
-        "end": 110.64
+        "end": 110.64,
+        "translation": "Còn cái xích đu thì sao?"
     },
     {
         "text": "Die Schaukel bauen wir natürlich auch.",
         "start": 110.14,
-        "end": 113.2
+        "end": 113.2,
+        "translation": "Chúng tôi cũng sẽ xây dựng cái xích đu."
     },
     {
         "text": "Kann ich helfen?",
         "start": 117.34,
-        "end": 119.36
+        "end": 119.36,
+        "translation": "Tôi có thể giúp gì không?"
     },
     {
         "text": "Schorsch will auch helfen.",
         "start": 120.82,
-        "end": 122.38
+        "end": 122.38,
+        "translation": "Schorsch cũng muốn giúp đỡ."
     },
     {
         "text": "Na klar, Schorsch.",
         "start": 122.52,
-        "end": 124.46
+        "end": 124.46,
+        "translation": "Chắc chắn rồi, Schorsch."
     },
     {
         "text": "Klatsch doch mal einen Klecks Mörtel genau dahin.",
         "start": 123.96,
-        "end": 127.08
+        "end": 127.08,
+        "translation": "Hãy bôi một ít vữa ngay chỗ đó đi."
     },
     {
         "text": "Das sieht aus wie Blubber-Matschepampe.",
         "start": 128.34,
-        "end": 131.08
+        "end": 131.08,
+        "translation": "Đó trông giống như một đống bùn sủi bọt."
     },
     {
         "text": "Mörtel ist eine ganz spezielle Matschepampe.",
         "start": 132.3,
-        "end": 135.7
+        "end": 135.7,
+        "translation": "Mörtel là một loại bùn đặc biệt."
     },
     {
         "text": "Sie klebt nämlich Steine zusammen.",
         "start": 135.64,
-        "end": 138.04
+        "end": 138.04,
+        "translation": "Cô ấy dán đá lại với nhau."
     },
     {
         "text": "Peppa, möchtest du den ersten Stein mauern?",
         "start": 138.14,
-        "end": 141.38
+        "end": 141.38,
+        "translation": "Peppa, con có muốn xây viên đá đầu tiên không?"
     },
     {
         "text": "Ja, sehr gerne.",
         "start": 141.58,
-        "end": 143.56
+        "end": 143.56,
+        "translation": "Vâng, rất vui lòng."
     },
     {
         "text": "Gut gemacht.",
         "start": 144.1,
-        "end": 145.42
+        "end": 145.42,
+        "translation": "Làm tốt lắm."
     },
     {
         "text": "Ich mach den Rest.",
         "start": 145.28,
-        "end": 146.74
+        "end": 146.74,
+        "translation": "Tôi sẽ làm phần còn lại."
     },
     {
         "text": "Steine muss man gerade und gleichmäßig mauern.",
         "start": 148.42,
-        "end": 152
+        "end": 152,
+        "translation": "Đá phải được xây dựng thẳng hàng và đều đặn."
     },
     {
         "text": "Seht ihr?",
         "start": 151.56,
-        "end": 152.54
+        "end": 152.54,
+        "translation": "Các bạn thấy không?"
     },
     {
         "text": "Reihe für Reihe.",
         "start": 153.1,
-        "end": 154.78
+        "end": 154.78,
+        "translation": "Từng hàng một."
     },
     {
         "text": "Das dauert aber ewig.",
         "start": 154.44,
-        "end": 157.66
+        "end": 157.66,
+        "translation": "Điều đó mất rất nhiều thời gian."
     },
     {
         "text": "Genau.",
         "start": 157.74,
-        "end": 158.92
+        "end": 158.92,
+        "translation": "Chính xác."
     },
     {
         "text": "Und wirst du heute damit fertig?",
         "start": 158.76,
-        "end": 160.72
+        "end": 160.72,
+        "translation": "Và hôm nay bạn có hoàn thành việc đó không?"
     },
     {
         "text": "Nein, man kann kein Haus an einem Tag bauen.",
         "start": 161.16,
-        "end": 165.14
+        "end": 165.14,
+        "translation": "Không, người ta không thể xây một ngôi nhà trong một ngày."
     },
     {
         "text": "Ich brauche dafür bis morgen.",
         "start": 164.96,
-        "end": 167.78
+        "end": 167.78,
+        "translation": "Tôi cần điều đó trước ngày mai."
     },
     {
         "text": "Gut.",
         "start": 167.54,
-        "end": 168.58
+        "end": 168.58,
+        "translation": "Tốt."
     },
     {
         "text": "Bis morgen, Herr Bulle.",
         "start": 168.44,
-        "end": 170.18
+        "end": 170.18,
+        "translation": "Hẹn gặp lại ông Bulle vào ngày mai."
     },
     {
         "text": "Wiedersehen.",
         "start": 170.2,
-        "end": 171.3
+        "end": 171.3,
+        "translation": "Tạm biệt."
     },
     {
         "text": "Tschüss.",
         "start": 171.38,
-        "end": 172.48
+        "end": 172.48,
+        "translation": "Tạm biệt."
     },
     {
         "text": "Schorsch hat den Klebematsch hingeklatscht.",
         "start": 174.3,
-        "end": 176.96
+        "end": 176.96,
+        "translation": "Schorsch đã dán bột keo lên."
     },
     {
         "text": "Und ich hab den Stein drauf gemauert.",
         "start": 176.96,
-        "end": 179.7
+        "end": 179.7,
+        "translation": "Và tôi đã xây gạch lên viên đá đó."
     },
     {
         "text": "Das klingt alles sehr aufregend.",
         "start": 179.98,
-        "end": 182.56
+        "end": 182.56,
+        "translation": "Tất cả nghe có vẻ rất thú vị."
     },
     {
         "text": "So, jetzt macht die Augen zu und schlaft.",
         "start": 182.72,
-        "end": 185.48
+        "end": 185.48,
+        "translation": "Vậy thì, bây giờ nhắm mắt lại và ngủ đi."
     },
     {
         "text": "Es ist morgen.",
         "start": 190.16,
-        "end": 191.84
+        "end": 191.84,
+        "translation": "Hôm nay là buổi sáng."
     },
     {
         "text": "Peppa und Schorsch können es nicht erwarten,",
         "start": 191.92,
-        "end": 193.96
+        "end": 193.96,
+        "translation": "Peppa và Schorsch không thể chờ đợi được,"
     },
     {
         "text": "das neue Haus zu sehen.",
         "start": 193.62,
-        "end": 195.18
+        "end": 195.18,
+        "translation": "nhìn thấy ngôi nhà mới."
     },
     {
         "text": "Es ist fertig.",
         "start": 197.54,
-        "end": 199.52
+        "end": 199.52,
+        "translation": "Nó đã xong."
     },
     {
         "text": "Es ist fast fertig.",
         "start": 199.94,
-        "end": 201.94
+        "end": 201.94,
+        "translation": "Nó gần xong rồi."
     },
     {
         "text": "Jetzt muss es noch geprüft werden.",
         "start": 201.96,
-        "end": 204.18
+        "end": 204.18,
+        "translation": "Bây giờ cần phải kiểm tra thêm."
     },
     {
         "text": "Herr Löffel ist der Bauprüfer.",
         "start": 205.18,
-        "end": 207.6
+        "end": 207.6,
+        "translation": "Ông Löffel là thanh tra xây dựng."
     },
     {
         "text": "Hm.",
         "start": 208.44,
-        "end": 209.56
+        "end": 209.56,
+        "translation": "Hm."
     },
     {
         "text": "Ja, sehr gut.",
         "start": 210.22,
-        "end": 211.9
+        "end": 211.9,
+        "translation": "Vâng, rất tốt."
     },
     {
         "text": "Moment, es ist noch gar nicht fertig.",
         "start": 213.24,
-        "end": 215.66
+        "end": 215.66,
+        "translation": "Chờ một chút, nó vẫn chưa xong."
     },
     {
         "text": "Was?",
         "start": 215.4,
-        "end": 216.32
+        "end": 216.32,
+        "translation": "Cái gì?"
     },
     {
         "text": "Sie haben die Schaukel vergessen.",
         "start": 216.12,
-        "end": 218.5
+        "end": 218.5,
+        "translation": "Bạn đã quên cái xích đu."
     },
     {
         "text": "Oh nein, haben wir nicht.",
         "start": 219.12,
-        "end": 221.48
+        "end": 221.48,
+        "translation": "Ôi không, chúng ta không có."
     },
     {
         "text": "Danke schön, Herr Bulle.",
         "start": 223.32,
-        "end": 225.38
+        "end": 225.38,
+        "translation": "Cảm ơn ông Bulle."
     },
     {
         "text": "Jetzt ist alles fertig.",
         "start": 225.38,
-        "end": 227.12
+        "end": 227.12,
+        "translation": "Bây giờ mọi thứ đã sẵn sàng."
     },
     {
         "text": "Unsere neuen Nachbarn können einziehen.",
         "start": 226.62,
-        "end": 228.96
+        "end": 228.96,
+        "translation": "Những người hàng xóm mới của chúng ta có thể chuyển đến."
     },
     {
         "text": "Nachbarn?",
         "start": 229,
-        "end": 230.22
+        "end": 230.22,
+        "translation": "Hàng xóm?"
     },
     {
         "text": "Genau, Peppa.",
         "start": 230.14,
-        "end": 231.76
+        "end": 231.76,
+        "translation": "Chính xác, Peppa."
     },
     {
         "text": "Wir bekommen neue Nachbarn.",
         "start": 231.48,
-        "end": 233.72
+        "end": 233.72,
+        "translation": "Chúng tôi sẽ có hàng xóm mới."
     },
     {
         "text": "Herr Wolf und seine Familie ziehen in ihr neues Zuhause.",
         "start": 234.32,
-        "end": 237.98
+        "end": 237.98,
+        "translation": "Ông Wolf và gia đình của ông chuyển đến ngôi nhà mới của họ."
     },
     {
         "text": "Schaut mal her, kleine Schweinchen.",
         "start": 238.22,
-        "end": 240.96
+        "end": 240.96,
+        "translation": "Nhìn đây, những chú heo con."
     },
     {
         "text": "Hallo, ich bin Wendy Wolf.",
         "start": 240.98,
-        "end": 243.3
+        "end": 243.3,
+        "translation": "Xin chào, tôi là Wendy Wolf."
     },
     {
         "text": "Ich bin Peppa Wutz.",
         "start": 243.38,
-        "end": 245.24
+        "end": 245.24,
+        "translation": "Tôi là Peppa Wutz."
     },
     {
         "text": "Danke, dass Sie unser Haus gebaut haben, Herr Wutz.",
         "start": 245.1,
-        "end": 248.46
+        "end": 248.46,
+        "translation": "Cảm ơn ông Wutz đã xây dựng ngôi nhà của chúng tôi."
     },
     {
         "text": "Woraus besteht es?",
         "start": 248.44,
-        "end": 249.94
+        "end": 249.94,
+        "translation": "Nó được làm từ gì?"
     },
     {
         "text": "Aus Stroh oder Holz?",
         "start": 249.52,
-        "end": 251.72
+        "end": 251.72,
+        "translation": "Bằng rơm hay gỗ?"
     },
     {
         "text": "Es besteht aus Steinen.",
         "start": 251.34,
-        "end": 253.22
+        "end": 253.22,
+        "translation": "Nó được làm từ đá."
     },
     {
         "text": "Na, mal schauen, wie stabil es ist.",
         "start": 252.88,
-        "end": 255.44
+        "end": 255.44,
+        "translation": "À, hãy xem nó có ổn định không."
     },
     {
         "text": "Ich huste und ich proste und ich ...",
         "start": 254.94,
-        "end": 258.54
+        "end": 258.54,
+        "translation": "Tôi ho và tôi chúc mừng và tôi ..."
     },
     {
         "text": "Hm, es ist stabil.",
         "start": 260.06,
-        "end": 262.38
+        "end": 262.38,
+        "translation": "Hm, nó ổn định."
     },
     {
         "text": "Und woraus ist Ihr eigenes Haus gebaut, Herr Wutz?",
         "start": 262.36,
-        "end": 265.78
+        "end": 265.78,
+        "translation": "Và ngôi nhà của ông Wutz được xây dựng từ cái gì?"
     },
     {
         "text": "Steine.",
         "start": 265.42,
-        "end": 266.56
+        "end": 266.56,
+        "translation": "Đá."
     },
     {
         "text": "Also vergessen Sie es lieber gleich.",
         "start": 266.4,
-        "end": 268.56
+        "end": 268.56,
+        "translation": "Vậy thì tốt nhất bạn nên quên nó đi."
     },
     {
         "text": "Oh, eine Schaukel.",
         "start": 268.54,
-        "end": 270.64
+        "end": 270.64,
+        "translation": "Ôi, một cái xích đu."
     },
     {
         "text": "Die Schaukel war meine Idee.",
         "start": 270.38,
-        "end": 272.76
+        "end": 272.76,
+        "translation": "Cái xích đu là ý tưởng của tôi."
     },
     {
         "text": "Die ist ganz toll.",
         "start": 272.58,
-        "end": 274.26
+        "end": 274.26,
+        "translation": "Cái này thật tuyệt."
     },
     {
         "text": "Und jetzt bist du dran.",
         "start": 274.22,
-        "end": 275.9
+        "end": 275.9,
+        "translation": "Và bây giờ đến lượt bạn."
     },
     {
         "text": "Kannst du mich anschubsen?",
         "start": 275.96,
-        "end": 277.66
+        "end": 277.66,
+        "translation": "Bạn có thể đẩy tôi một chút không?"
     },
     {
         "text": "Nein, ich huste und proste dich lieber an.",
         "start": 277.44,
-        "end": 281.16
+        "end": 281.16,
+        "translation": "Không, tôi ho và thích chúc mừng bạn hơn."
     },
     {
         "text": "Ah!",
         "start": 282.2,
-        "end": 283.34
+        "end": 283.34,
+        "translation": "À!"
     },
     {
         "text": "Untertitelung.BR 2018.",
         "start": 311.88,
-        "end": 312.52
+        "end": 312.52,
+        "translation": "Phụ đề.BR 2018."
     }
 ]
