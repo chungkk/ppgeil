@@ -4,839 +4,959 @@
         "start": 0,
         "end": 3.12,
         "translationEn": "Hello, my dear ones, and welcome to a new video.",
-        "translationVi": "Xin chào các bạn, và chào mừng đến với một video mới."
+        "translationVi": "Xin chào các bạn, và chào mừng đến với một video mới.",
+        "translation_en": "Hello, my dear ones, and welcome to a new video."
     },
     {
         "text": "Mein Name ist Marie",
         "start": 3.34,
         "end": 4.12,
         "translationEn": "My name is Marie.",
-        "translationVi": "Tên tôi là Marie."
+        "translationVi": "Tên tôi là Marie.",
+        "translation_en": "My name is Marie."
     },
     {
         "text": "und heute soll sich alles um meine persönliche Duschroutine drehen.",
         "start": 4.12,
         "end": 8.16,
         "translationEn": "And today everything is supposed to revolve around my personal shower routine.",
-        "translationVi": "Và hôm nay mọi thứ sẽ xoay quanh thói quen tắm rửa cá nhân của tôi."
+        "translationVi": "Và hôm nay mọi thứ sẽ xoay quanh thói quen tắm rửa cá nhân của tôi.",
+        "translation_en": "And today everything is supposed to revolve around my personal shower routine."
     },
     {
         "text": "Ihr habt richtig gehört.",
         "start": 8.74,
         "end": 9.86,
         "translationEn": "You heard correctly.",
-        "translationVi": "Các bạn đã nghe đúng."
+        "translationVi": "Các bạn đã nghe đúng.",
+        "translation_en": "You heard right."
     },
     {
         "text": "Ich möchte euch gerne ein bisschen verraten,",
         "start": 10.02,
         "end": 11.5,
         "translationEn": "I would like to share a little with you,",
-        "translationVi": "Tôi muốn chia sẻ với các bạn một chút."
+        "translationVi": "Tôi muốn chia sẻ với các bạn một chút.",
+        "translation_en": "I would like to share a little secret with you."
     },
     {
         "text": "was ich beim Duschen beachte, was ich davor mache,",
         "start": 11.56,
         "end": 13.38,
         "translationEn": "what I pay attention to while showering, what I do beforehand,",
-        "translationVi": "những gì tôi chú ý khi tắm, những gì tôi làm trước đó,"
+        "translationVi": "những gì tôi chú ý khi tắm, những gì tôi làm trước đó,",
+        "translation_en": "what I pay attention to while showering, what I do beforehand,"
     },
     {
         "text": "was ich danach mache",
         "start": 13.46,
         "end": 14.34,
         "translationEn": "what I do afterwards",
-        "translationVi": "những gì tôi làm sau đó"
+        "translationVi": "những gì tôi làm sau đó",
+        "translation_en": "what I do afterwards"
     },
     {
         "text": "und euch ein paar nützliche Tipps geben.",
         "start": 14.34,
         "end": 16.18,
         "translationEn": "and give you some useful tips.",
-        "translationVi": "và cung cấp cho các bạn một vài mẹo hữu ích."
+        "translationVi": "và cung cấp cho các bạn một vài mẹo hữu ích.",
+        "translation_en": "and give you some useful tips."
     },
     {
         "text": "Und ich wünsche euch viel Spaß mit dem Video.",
         "start": 16.48,
         "end": 18,
         "translationEn": "And I wish you a lot of fun with the video.",
-        "translationVi": "Và tôi chúc các bạn có nhiều niềm vui với video này."
+        "translationVi": "Và tôi chúc các bạn có nhiều niềm vui với video này.",
+        "translation_en": "And I wish you lots of fun with the video."
     },
     {
         "text": "Duschen kann irgendwie eine richtige Transformation sein, eigentlich.",
         "start": 18.64,
         "end": 22.06,
         "translationEn": "Showering can actually be a real transformation, in a way.",
-        "translationVi": "Tắm có thể thực sự là một sự biến đổi, thực sự."
+        "translationVi": "Tắm có thể thực sự là một sự biến đổi, thực sự.",
+        "translation_en": "Showering can actually be a real transformation, in a way."
     },
     {
         "text": "Man kommt nach Hause, ist müde, gestresst.",
         "start": 22.42,
         "end": 24.66,
         "translationEn": "You come home, tired and stressed.",
-        "translationVi": "Người ta trở về nhà, mệt mỏi, căng thẳng."
+        "translationVi": "Người ta trở về nhà, mệt mỏi, căng thẳng.",
+        "translation_en": "One comes home, tired and stressed."
     },
     {
         "text": "Man hatte irgendwie einen doofen Tag.",
         "start": 24.98,
         "end": 26.28,
         "translationEn": "It was somehow a stupid day.",
-        "translationVi": "Mọi người đã có một ngày thật tồi tệ."
+        "translationVi": "Mọi người đã có một ngày thật tồi tệ.",
+        "translation_en": "It was somehow a stupid day."
     },
     {
         "text": "Das Wetter ist nicht gut,",
         "start": 26.4,
         "end": 27.44,
         "translationEn": "The weather is not good,",
-        "translationVi": "Thời tiết không tốt,"
+        "translationVi": "Thời tiết không tốt,",
+        "translation_en": "The weather is not good."
     },
     {
         "text": "einem ist vielleicht auch noch kalt.",
         "start": 27.54,
         "end": 28.68,
         "translationEn": "someone might still be cold.",
-        "translationVi": "Có thể một người nào đó vẫn còn lạnh."
+        "translationVi": "Có thể một người nào đó vẫn còn lạnh.",
+        "translation_en": "One might still be cold, too."
     },
     {
         "text": "Dann geht man duschen",
         "start": 28.68,
         "end": 29.72,
         "translationEn": "Then you take a shower.",
-        "translationVi": "Sau đó, người ta đi tắm."
+        "translationVi": "Sau đó, người ta đi tắm.",
+        "translation_en": "Then you take a shower."
     },
     {
         "text": "und danach fühlt man sich wie ein neuer Mensch,",
         "start": 29.72,
         "end": 32,
         "translationEn": "and afterwards you feel like a new person,",
-        "translationVi": "và sau đó bạn sẽ cảm thấy như một con người mới,"
+        "translationVi": "và sau đó bạn sẽ cảm thấy như một con người mới,",
+        "translation_en": "and afterwards you feel like a new person,"
     },
     {
         "text": "Und natürlich auch Duft und Konsistenz von den Duschprodukten,",
         "start": 32.92,
         "end": 35.24,
         "translationEn": "And of course the scent and consistency of the shower products,",
-        "translationVi": "Và tất nhiên là hương thơm và kết cấu của các sản phẩm tắm,"
+        "translationVi": "Và tất nhiên là hương thơm và kết cấu của các sản phẩm tắm,",
+        "translation_en": "And of course the scent and consistency of the shower products,"
     },
     {
         "text": "die man verwendet, können beeinflussen,",
         "start": 35.38,
         "end": 36.92,
         "translationEn": "the ones used can influence,",
-        "translationVi": "cách mà người ta sử dụng có thể ảnh hưởng đến,"
+        "translationVi": "cách mà người ta sử dụng có thể ảnh hưởng đến,",
+        "translation_en": "that one uses can influence,"
     },
     {
         "text": "in welche Stimmung man dann versetzt wird.",
         "start": 37.36,
         "end": 39.1,
         "translationEn": "in what mood one is then put.",
-        "translationVi": "mình sẽ được đưa vào tâm trạng nào."
+        "translationVi": "mình sẽ được đưa vào tâm trạng nào.",
+        "translation_en": "what mood one is then put in."
     },
     {
         "text": "Und genau den Effekt nutze ich, um zu entscheiden,",
         "start": 39.3,
         "end": 41.48,
         "translationEn": "And I use exactly that effect to decide,",
-        "translationVi": "Và chính hiệu ứng đó tôi sử dụng để quyết định,"
+        "translationVi": "Và chính hiệu ứng đó tôi sử dụng để quyết định,",
+        "translation_en": "And I use exactly that effect to decide,"
     },
     {
         "text": "wann ich duschen möchte.",
         "start": 41.78,
         "end": 42.58,
         "translationEn": "when I want to shower.",
-        "translationVi": "khi nào tôi muốn tắm."
+        "translationVi": "khi nào tôi muốn tắm.",
+        "translation_en": "when I want to shower."
     },
     {
         "text": "Gerade wenn ich irgendwie morgens merke,",
         "start": 43,
         "end": 45.42,
         "translationEn": "Just when I somehow notice in the morning,",
-        "translationVi": "Ngay khi tôi nhận ra điều gì đó vào buổi sáng,"
+        "translationVi": "Ngay khi tôi nhận ra điều gì đó vào buổi sáng,",
+        "translation_en": "Especially when I notice something in the morning,"
     },
     {
         "text": "ich komme einfach nicht in die Gänge",
         "start": 45.64,
         "end": 47.26,
         "translationEn": "I just can't get going.",
-        "translationVi": "Tôi không thể bắt đầu được."
+        "translationVi": "Tôi không thể bắt đầu được.",
+        "translation_en": "I just can't get going."
     },
     {
         "text": "und ich habe noch ein paar Minuten Zeit,",
         "start": 47.26,
         "end": 48.96,
         "translationEn": "and I still have a few minutes left,",
-        "translationVi": "và tôi còn vài phút nữa,"
+        "translationVi": "và tôi còn vài phút nữa,",
+        "translation_en": "and I still have a few minutes to spare,"
     },
     {
         "text": "dann nutze ich das Duschen gerne als so eine Art",
         "start": 49.3,
         "end": 51.56,
         "translationEn": "then I like to use showering as a kind of",
-        "translationVi": "thì tôi thường sử dụng việc tắm như một loại"
+        "translationVi": "thì tôi thường sử dụng việc tắm như một loại",
+        "translation_en": "Then I like to use showering as a kind of..."
     },
     {
         "text": "Wachmacher.",
         "start": 51.56,
         "end": 52.16,
         "translationEn": "Eye-opener.",
-        "translationVi": "Thức tỉnh."
+        "translationVi": "Thức tỉnh.",
+        "translation_en": "Energizer."
     },
     {
         "text": "Und wenn ich irgendwie einen langen, anstrengenden Tag hatte,",
         "start": 52.4,
         "end": 54.82,
         "translationEn": "And if I somehow had a long, exhausting day,",
-        "translationVi": "Và nếu tôi có một ngày dài mệt mỏi theo cách nào đó,"
+        "translationVi": "Và nếu tôi có một ngày dài mệt mỏi theo cách nào đó,",
+        "translation_en": "And if I somehow had a long, exhausting day,"
     },
     {
         "text": "viel unterwegs war, vielleicht irgendwie nicht so ganz erfreuliche Dinge",
         "start": 54.94,
         "end": 58.76,
         "translationEn": "was often on the road, perhaps somehow not so pleasant things",
-        "translationVi": "đi nhiều nơi, có thể là những điều không mấy vui vẻ."
+        "translationVi": "đi nhiều nơi, có thể là những điều không mấy vui vẻ.",
+        "translation_en": "was often on the go, perhaps not entirely pleasant things"
     },
     {
         "text": "mich beschäftigt haben, dann dusche ich mir den Tag abends",
         "start": 58.76,
         "end": 61.98,
         "translationEn": "I reflect on what has occupied me, then I take a shower in the evening.",
-        "translationVi": "Tôi đã bận rộn, sau đó tôi tắm vào buổi tối."
+        "translationVi": "Tôi đã bận rộn, sau đó tôi tắm vào buổi tối.",
+        "translation_en": "I've been preoccupied, then I take a shower in the evening."
     },
     {
         "text": "gerne ab.",
         "start": 61.98,
         "end": 62.5,
         "translationEn": "gladly off.",
-        "translationVi": "rất vui."
+        "translationVi": "rất vui.",
+        "translation_en": "gladly."
     },
     {
         "text": "Wenn ich abends dusche,",
         "start": 62.86,
         "end": 63.8,
         "translationEn": "When I shower in the evening,",
-        "translationVi": "Khi tôi tắm vào buổi tối,"
+        "translationVi": "Khi tôi tắm vào buổi tối,",
+        "translation_en": "When I shower in the evening,"
     },
     {
         "text": "dann schminke ich mich meist vor dem Duschen ab.",
         "start": 63.98,
         "end": 65.98,
         "translationEn": "Then I usually remove my makeup before showering.",
-        "translationVi": "Sau đó, tôi thường tẩy trang trước khi tắm."
+        "translationVi": "Sau đó, tôi thường tẩy trang trước khi tắm.",
+        "translation_en": "Then I usually remove my makeup before showering."
     },
     {
         "text": "Und wenn ich Zeit habe,",
         "start": 66.04,
         "end": 67.12,
         "translationEn": "And when I have time,",
-        "translationVi": "Và khi tôi có thời gian,"
+        "translationVi": "Và khi tôi có thời gian,",
+        "translation_en": "And when I have time,"
     },
     {
         "text": "benutze ich auch noch gerne eine Gesichtsmaske.",
         "start": 67.22,
         "end": 69.34,
         "translationEn": "I also still like to use a face mask.",
-        "translationVi": "Tôi cũng thích sử dụng mặt nạ dưỡng da."
+        "translationVi": "Tôi cũng thích sử dụng mặt nạ dưỡng da.",
+        "translation_en": "I also still like to use a face mask."
     },
     {
         "text": "Ich finde es immer ganz praktisch,",
         "start": 69.72,
         "end": 70.74,
         "translationEn": "I always find it quite practical,",
-        "translationVi": "Tôi luôn thấy điều đó rất tiện lợi,"
+        "translationVi": "Tôi luôn thấy điều đó rất tiện lợi,",
+        "translation_en": "I always find it quite practical,"
     },
     {
         "text": "sowas vor dem Duschen zu machen.",
         "start": 70.9,
         "end": 72.08,
         "translationEn": "to do something like that before showering.",
-        "translationVi": "làm điều đó trước khi tắm."
+        "translationVi": "làm điều đó trước khi tắm.",
+        "translation_en": "to do something like that before showering."
     },
     {
         "text": "Dann kann man mich einfach nur noch unter die Dusche",
         "start": 72.18,
         "end": 74.18,
         "translationEn": "Then you can just put me under the shower.",
-        "translationVi": "Thì chỉ còn cách cho tôi vào dưới vòi sen."
+        "translationVi": "Thì chỉ còn cách cho tôi vào dưới vòi sen.",
+        "translation_en": "Then you can just put me under the shower."
     },
     {
         "text": "steigen und das Ganze abwaschen.",
         "start": 74.18,
         "end": 76.2,
         "translationEn": "get in and wash it all off.",
-        "translationVi": "leo lên và rửa sạch mọi thứ."
+        "translationVi": "leo lên và rửa sạch mọi thứ.",
+        "translation_en": "climb up and wash it all off."
     },
     {
         "text": "Und ich brauche beim Duschen außerdem auch immer, immer,",
         "start": 76.48,
         "end": 78.88,
         "translationEn": "And I always need, always, when showering, too,",
-        "translationVi": "Và tôi cũng luôn cần, luôn, khi tắm,"
+        "translationVi": "Và tôi cũng luôn cần, luôn, khi tắm,",
+        "translation_en": "And I always need, always, when showering, too,"
     },
     {
         "text": "immer Musik.",
         "start": 79.26,
         "end": 79.62,
         "translationEn": "always music.",
-        "translationVi": "luôn luôn có nhạc."
+        "translationVi": "luôn luôn có nhạc.",
+        "translation_en": "always music."
     },
     {
         "text": "Die spiele ich einfach am Handy ab.",
         "start": 79.8,
         "end": 81.32,
         "translationEn": "I simply play them on my phone.",
-        "translationVi": "Tôi chỉ chơi chúng trên điện thoại."
+        "translationVi": "Tôi chỉ chơi chúng trên điện thoại.",
+        "translation_en": "I just play them on my phone."
     },
     {
         "text": "Ganz egal, was.",
         "start": 81.36,
         "end": 82.06,
         "translationEn": "No matter what.",
-        "translationVi": "Không quan trọng, cái gì cả."
+        "translationVi": "Không quan trọng, cái gì cả.",
+        "translation_en": "No matter what."
     },
     {
         "text": "Hauptsache, es versetzt mich irgendwie in gute Laune.",
         "start": 82.22,
         "end": 84.46,
         "translationEn": "The main thing is that it somehow puts me in a good mood.",
-        "translationVi": "Điều quan trọng là nó làm tôi cảm thấy vui vẻ theo cách nào đó."
+        "translationVi": "Điều quan trọng là nó làm tôi cảm thấy vui vẻ theo cách nào đó.",
+        "translation_en": "The main thing is that it puts me in a good mood somehow."
     },
     {
         "text": "Und dann tanze ich durchs Badezimmer und unter der Dusche",
         "start": 84.46,
         "end": 87.9,
         "translationEn": "And then I dance through the bathroom and under the shower.",
-        "translationVi": "Và sau đó tôi nhảy múa trong phòng tắm và dưới vòi sen."
+        "translationVi": "Và sau đó tôi nhảy múa trong phòng tắm và dưới vòi sen.",
+        "translation_en": "And then I dance through the bathroom and under the shower."
     },
     {
         "text": "und wie auch immer.",
         "start": 87.9,
         "end": 88.56,
         "translationEn": "and anyway.",
-        "translationVi": "và dù sao đi nữa."
+        "translationVi": "và dù sao đi nữa.",
+        "translation_en": "and anyway."
     },
     {
         "text": "Also, ich könnte niemals in einem ruhigen Badezimmer duschen.",
         "start": 88.68,
         "end": 90.84,
         "translationEn": "Well, I could never take a shower in a quiet bathroom.",
-        "translationVi": "Vậy nên, tôi không bao giờ có thể tắm trong một phòng tắm yên tĩnh."
+        "translationVi": "Vậy nên, tôi không bao giờ có thể tắm trong một phòng tắm yên tĩnh.",
+        "translation_en": "Well, I could never take a shower in a quiet bathroom."
     },
     {
         "text": "Ich weiß nicht, ich finde einfach, das gehört dazu.",
         "start": 91.16,
         "end": 92.82,
         "translationEn": "I don't know, I just think it's part of it.",
-        "translationVi": "Tôi không biết, tôi chỉ cảm thấy điều đó là một phần của nó."
+        "translationVi": "Tôi không biết, tôi chỉ cảm thấy điều đó là một phần của nó.",
+        "translation_en": "I don't know, I just think it's part of it."
     },
     {
         "text": "Musik und das macht mir persönlich immer gute Laune.",
         "start": 93.1,
         "end": 96.06,
         "translationEn": "Music always puts me in a good mood personally.",
-        "translationVi": "Âm nhạc và điều đó luôn mang lại cho tôi tâm trạng tốt."
+        "translationVi": "Âm nhạc và điều đó luôn mang lại cho tôi tâm trạng tốt.",
+        "translation_en": "Music always puts me in a good mood."
     },
     {
         "text": "Unter der Dusche verwende ich dann super gerne Produkte,",
         "start": 96.5,
         "end": 98.9,
         "translationEn": "In the shower, I really like to use products,",
-        "translationVi": "Dưới vòi sen, tôi rất thích sử dụng các sản phẩm,"
+        "translationVi": "Dưới vòi sen, tôi rất thích sử dụng các sản phẩm,",
+        "translation_en": "In the shower, I really enjoy using products,"
     },
     {
         "text": "die fruchtig und frisch riechen.",
         "start": 99.16,
         "end": 100.46,
         "translationEn": "they smell fruity and fresh.",
-        "translationVi": "mùi trái cây và tươi mát."
+        "translationVi": "mùi trái cây và tươi mát.",
+        "translation_en": "they smell fruity and fresh."
     },
     {
         "text": "Gerade jetzt, wo die Tage wieder wärmer werden.",
         "start": 100.72,
         "end": 102.42,
         "translationEn": "Right now, as the days are getting warmer again.",
-        "translationVi": "Ngay bây giờ, khi những ngày lại trở nên ấm áp hơn."
+        "translationVi": "Ngay bây giờ, khi những ngày lại trở nên ấm áp hơn.",
+        "translation_en": "Right now, as the days are getting warmer again."
     },
     {
         "text": "Die Nevea Seidenguss Duschschäume habe ich euch ja schon letztes",
         "start": 102.56,
         "end": 104.86,
         "translationEn": "I already told you about the Nevea Silk Mousse shower foams last time.",
-        "translationVi": "Tôi đã giới thiệu cho các bạn về các loại bọt tắm Nevea Seidenguss vào tuần trước rồi."
+        "translationVi": "Tôi đã giới thiệu cho các bạn về các loại bọt tắm Nevea Seidenguss vào tuần trước rồi.",
+        "translation_en": "I already told you about the Nevea Silk Whipped Shower Foams last time."
     },
     {
         "text": "Jahr vorgestellt.",
         "start": 104.86,
         "end": 105.48,
         "translationEn": "Year presented.",
-        "translationVi": "Năm được giới thiệu."
+        "translationVi": "Năm được giới thiệu.",
+        "translation_en": "Year presented."
     },
     {
         "text": "Und jetzt, dieses Jahr, gibt es zwei neue Geruchsrichtungen,",
         "start": 105.6,
         "end": 108.18,
         "translationEn": "And now, this year, there are two new scents,",
-        "translationVi": "Và bây giờ, năm nay, có hai mùi hương mới,"
+        "translationVi": "Và bây giờ, năm nay, có hai mùi hương mới,",
+        "translation_en": "And now, this year, there are two new fragrances,"
     },
     {
         "text": "und zwar einmal Raspberry Rhubarb",
         "start": 108.62,
         "end": 110.16,
         "translationEn": "and once Raspberry Rhubarb",
-        "translationVi": "và một lần là Dâu tây Ru-bác."
+        "translationVi": "và một lần là Dâu tây Ru-bác.",
+        "translation_en": "namely Raspberry Rhubarb"
     },
     {
         "text": "und die limitierte Sommer Edition Lemon Moringa.",
         "start": 110.16,
         "end": 113,
         "translationEn": "and the limited Summer Edition Lemon Moringa.",
-        "translationVi": "và phiên bản mùa hè giới hạn Lemon Moringa."
+        "translationVi": "và phiên bản mùa hè giới hạn Lemon Moringa.",
+        "translation_en": "and the limited summer edition Lemon Moringa."
     },
     {
         "text": "Beide Produkte riechen so lecker, fruchtig und ein bisschen bärig.",
         "start": 113,
         "end": 117.24,
         "translationEn": "Both products smell so delicious, fruity, and a bit berry-like.",
-        "translationVi": "Cả hai sản phẩm đều có mùi thơm ngon, trái cây và hơi giống mùi quả mọng."
+        "translationVi": "Cả hai sản phẩm đều có mùi thơm ngon, trái cây và hơi giống mùi quả mọng.",
+        "translation_en": "Both products smell so delicious, fruity, and a bit berry-like."
     },
     {
         "text": "Lemon Moringa ist mein persönlicher Favorit,",
         "start": 117.62,
         "end": 119.62,
         "translationEn": "Lemon Moringa is my personal favorite,",
-        "translationVi": "Lemon Moringa là sở thích cá nhân của tôi,"
+        "translationVi": "Lemon Moringa là sở thích cá nhân của tôi,",
+        "translation_en": "Lemon Moringa is my personal favorite."
     },
     {
         "text": "weil mich das so ein bisschen an Eis",
         "start": 119.74,
         "end": 121.28,
         "translationEn": "because it reminds me a bit of ice",
-        "translationVi": "bởi vì điều đó làm tôi nhớ một chút đến kem"
+        "translationVi": "bởi vì điều đó làm tôi nhớ một chút đến kem",
+        "translation_en": "because it reminds me a bit of ice"
     },
     {
         "text": "oder einen leckeren Nachtisch erinnert.",
         "start": 121.28,
         "end": 123.3,
         "translationEn": "or reminds one of a delicious dessert.",
-        "translationVi": "hoặc gợi nhớ đến một món tráng miệng ngon."
+        "translationVi": "hoặc gợi nhớ đến một món tráng miệng ngon.",
+        "translation_en": "or reminds of a delicious dessert."
     },
     {
         "text": "Mit so Dusche im Duschen macht außerdem ein riesen Spaß,",
         "start": 123.44,
         "end": 125.68,
         "translationEn": "Taking a shower with such a shower is also a lot of fun.",
-        "translationVi": "Với vòi sen như vậy, việc tắm rửa cũng trở nên cực kỳ thú vị."
+        "translationVi": "Với vòi sen như vậy, việc tắm rửa cũng trở nên cực kỳ thú vị.",
+        "translation_en": "Taking a shower with such a shower is also a huge fun."
     },
     {
         "text": "kann ich euch sagen, mit diesem Schaum da rumzuspielen.",
         "start": 125.8,
         "end": 128.1,
         "translationEn": "Can I tell you to play around with that foam?",
-        "translationVi": "Tôi có thể nói với các bạn rằng chơi với bọt này."
+        "translationVi": "Tôi có thể nói với các bạn rằng chơi với bọt này.",
+        "translation_en": "I can tell you to play around with that foam."
     },
     {
         "text": "Dann ist das so ein seidiges Gefühl auf der Haut",
         "start": 128.18,
         "end": 130.38,
         "translationEn": "Then it feels like a silky sensation on the skin.",
-        "translationVi": "Thì đó là một cảm giác mịn màng trên da."
+        "translationVi": "Thì đó là một cảm giác mịn màng trên da.",
+        "translation_en": "Then it has such a silky feeling on the skin."
     },
     {
         "text": "und die Haut fühlt sich richtig gepflegt an",
         "start": 130.38,
         "end": 132.38,
         "translationEn": "and the skin feels really cared for",
-        "translationVi": "và da cảm thấy được chăm sóc đúng cách"
+        "translationVi": "và da cảm thấy được chăm sóc đúng cách",
+        "translation_en": "and the skin feels really cared for"
     },
     {
         "text": "und riecht auch nach dem Duschen noch sehr gut.",
         "start": 132.38,
         "end": 134.6,
         "translationEn": "and still smells very good even after showering.",
-        "translationVi": "và vẫn có mùi rất dễ chịu sau khi tắm."
+        "translationVi": "và vẫn có mùi rất dễ chịu sau khi tắm.",
+        "translation_en": "and still smells very good even after showering."
     },
     {
         "text": "Das finde ich persönlich ja immer sehr wichtig.",
         "start": 134.68,
         "end": 136.18,
         "translationEn": "I personally find that very important.",
-        "translationVi": "Tôi cá nhân thấy điều đó luôn rất quan trọng."
+        "translationVi": "Tôi cá nhân thấy điều đó luôn rất quan trọng.",
+        "translation_en": "I personally find that very important."
     },
     {
         "text": "Also, ich finde, da kann man nur gut gelaunt aus",
         "start": 136.62,
         "end": 138.74,
         "translationEn": "Well, I think you can only go out in a good mood.",
-        "translationVi": "Vậy thì, tôi thấy chỉ có thể ra ngoài với tâm trạng tốt."
+        "translationVi": "Vậy thì, tôi thấy chỉ có thể ra ngoài với tâm trạng tốt.",
+        "translation_en": "Well, I think you can only come out of that in a good mood."
     },
     {
         "text": "der Dusche rauskommen.",
         "start": 138.74,
         "end": 139.5,
         "translationEn": "come out of the shower.",
-        "translationVi": "ra khỏi vòi sen."
+        "translationVi": "ra khỏi vòi sen.",
+        "translation_en": "coming out of the shower."
     },
     {
         "text": "Wenn ich mich außerdem unter der Dusche rasiere,",
         "start": 139.5,
         "end": 141.72,
         "translationEn": "When I also shave in the shower,",
-        "translationVi": "Nếu tôi cạo râu dưới vòi sen,"
+        "translationVi": "Nếu tôi cạo râu dưới vòi sen,",
+        "translation_en": "When I also shave in the shower,"
     },
     {
         "text": "dann piele ich meine Haut immer zuerst.",
         "start": 142.2,
         "end": 143.82,
         "translationEn": "Then I always peel my skin first.",
-        "translationVi": "Sau đó, tôi luôn lột da của mình trước tiên."
+        "translationVi": "Sau đó, tôi luôn lột da của mình trước tiên.",
+        "translation_en": "Then I always peel my skin first."
     },
     {
         "text": "Das ist ein ganz guter Tipp,",
         "start": 144.22,
         "end": 145.24,
         "translationEn": "That's a pretty good tip,",
-        "translationVi": "Đó là một mẹo khá hay,"
+        "translationVi": "Đó là một mẹo khá hay,",
+        "translation_en": "That's a pretty good tip."
     },
     {
         "text": "um so eingewachsene Härchen ein bisschen zu lösen,",
         "start": 145.44,
         "end": 147.92,
         "translationEn": "to loosen ingrown hairs a bit,",
-        "translationVi": "để giải phóng một chút những sợi lông mọc ngược,"
+        "translationVi": "để giải phóng một chút những sợi lông mọc ngược,",
+        "translation_en": "to loosen ingrown hairs a bit,"
     },
     {
         "text": "damit ihr auch die kleinsten Stoppel erwischt.",
         "start": 148.32,
         "end": 150.02,
         "translationEn": "so that you can catch even the smallest stubble.",
-        "translationVi": "để các bạn cũng bắt được những sợi râu nhỏ nhất."
+        "translationVi": "để các bạn cũng bắt được những sợi râu nhỏ nhất.",
+        "translation_en": "so that you can catch even the smallest stubble."
     },
     {
         "text": "Dann bleiben die Beine nämlich länger glatt.",
         "start": 150.12,
         "end": 151.54,
         "translationEn": "Then the legs stay smooth for longer.",
-        "translationVi": "Vậy thì chân sẽ giữ được độ mịn lâu hơn."
+        "translationVi": "Vậy thì chân sẽ giữ được độ mịn lâu hơn.",
+        "translation_en": "Then the legs stay smooth for longer."
     },
     {
         "text": "Wichtig ist, dass man bei so Sachen wie rasieren",
         "start": 152,
         "end": 153.66,
         "translationEn": "It is important that when it comes to things like shaving",
-        "translationVi": "Điều quan trọng là khi làm những việc như cạo râu"
+        "translationVi": "Điều quan trọng là khi làm những việc như cạo râu",
+        "translation_en": "It is important to pay attention to things like shaving."
     },
     {
         "text": "oder auch einschamponieren immer schön das Wasser abstellt,",
         "start": 153.66,
         "end": 156.26,
         "translationEn": "or also shampooing, always make sure to turn off the water.",
-        "translationVi": "hoặc cũng có thể gội đầu, luôn nhớ tắt nước."
+        "translationVi": "hoặc cũng có thể gội đầu, luôn nhớ tắt nước.",
+        "translation_en": "or also shampooing, always make sure to turn off the water nicely,"
     },
     {
         "text": "damit kein Wasser verschwendet wird.",
         "start": 156.78,
         "end": 158.16,
         "translationEn": "so that no water is wasted.",
-        "translationVi": "để không lãng phí nước."
+        "translationVi": "để không lãng phí nước.",
+        "translation_en": "so that no water is wasted."
     },
     {
         "text": "Und auch wenn die Versuchung sehr groß ist,",
         "start": 158.32,
         "end": 160.08,
         "translationEn": "And even though the temptation is very great,",
-        "translationVi": "Và ngay cả khi cám dỗ rất lớn,"
+        "translationVi": "Và ngay cả khi cám dỗ rất lớn,",
+        "translation_en": "And even though the temptation is very great,"
     },
     {
         "text": "sollte man versuchen, nicht zu lange zu duschen",
         "start": 160.18,
         "end": 162.2,
         "translationEn": "One should try not to take long showers.",
-        "translationVi": "nên cố gắng không tắm quá lâu"
+        "translationVi": "nên cố gắng không tắm quá lâu",
+        "translation_en": "One should try not to take long showers."
     },
     {
         "text": "und auch jetzt im Sommer nicht mehrmals täglich zu duschen.",
         "start": 162.2,
         "end": 164.6,
         "translationEn": "and also not to shower several times a day even now in summer.",
-        "translationVi": "và cũng không tắm nhiều lần trong ngày ngay cả bây giờ vào mùa hè."
+        "translationVi": "và cũng không tắm nhiều lần trong ngày ngay cả bây giờ vào mùa hè.",
+        "translation_en": "and also not to shower several times a day now in the summer."
     },
     {
         "text": "Das ist nämlich gar nicht so gut für die Haut.",
         "start": 164.96,
         "end": 166.66,
         "translationEn": "That is actually not so good for the skin.",
-        "translationVi": "Điều đó thực sự không tốt cho da."
+        "translationVi": "Điều đó thực sự không tốt cho da.",
+        "translation_en": "That's actually not so good for the skin."
     },
     {
         "text": "Die kann ja so ein bisschen aufweichen und Feuchtigkeit verlieren.",
         "start": 166.66,
         "end": 169.82,
         "translationEn": "It can soften a bit and lose moisture.",
-        "translationVi": "Nó có thể hơi mềm đi và mất độ ẩm."
+        "translationVi": "Nó có thể hơi mềm đi và mất độ ẩm.",
+        "translation_en": "It can soften a bit and lose moisture."
     },
     {
         "text": "Und außerdem kann auch der natürliche Säureschutzmantel der Haut angegriffen",
         "start": 170.16,
         "end": 173.32,
         "translationEn": "And furthermore, the natural acid mantle of the skin can also be attacked.",
-        "translationVi": "Ngoài ra, lớp bảo vệ axit tự nhiên của da cũng có thể bị tấn công."
+        "translationVi": "Ngoài ra, lớp bảo vệ axit tự nhiên của da cũng có thể bị tấn công.",
+        "translation_en": "And furthermore, the natural acid mantle of the skin can also be compromised."
     },
     {
         "text": "werden.",
         "start": 173.32,
         "end": 173.44,
         "translationEn": "will be.",
-        "translationVi": "sẽ."
+        "translationVi": "sẽ.",
+        "translation_en": "to become."
     },
     {
         "text": "Und das wollen wir natürlich alles nicht.",
         "start": 173.66,
         "end": 175.46,
         "translationEn": "And of course, we don't want any of that.",
-        "translationVi": "Và chúng tôi tất nhiên không muốn điều đó."
+        "translationVi": "Và chúng tôi tất nhiên không muốn điều đó.",
+        "translation_en": "And of course, we don't want any of that."
     },
     {
         "text": "Nach dem Duschen creme ich mich dann außerdem immer direkt",
         "start": 175.88,
         "end": 178.16,
         "translationEn": "After showering, I always apply cream immediately.",
-        "translationVi": "Sau khi tắm xong, tôi luôn thoa kem ngay lập tức."
+        "translationVi": "Sau khi tắm xong, tôi luôn thoa kem ngay lập tức.",
+        "translation_en": "After showering, I always apply cream right away."
     },
     {
         "text": "ein.",
         "start": 178.16,
         "end": 178.44,
         "translationEn": "one.",
-        "translationVi": "một."
+        "translationVi": "một.",
+        "translation_en": "one."
     },
     {
         "text": "Ich weiß, das ist immer so ein bisschen Geschmackssache,",
         "start": 178.6,
         "end": 180.28,
         "translationEn": "I know, it's always a bit of a matter of taste,",
-        "translationVi": "Tôi biết, điều đó luôn phụ thuộc vào sở thích của mỗi người."
+        "translationVi": "Tôi biết, điều đó luôn phụ thuộc vào sở thích của mỗi người.",
+        "translation_en": "I know, it's always a bit of a matter of taste."
     },
     {
         "text": "ob man Lust hat auf Bodylotion oder nicht.",
         "start": 180.4,
         "end": 182.14,
         "translationEn": "whether one feels like using body lotion or not.",
-        "translationVi": "có muốn dùng kem dưỡng thể hay không."
+        "translationVi": "có muốn dùng kem dưỡng thể hay không.",
+        "translation_en": "whether one feels like using body lotion or not."
     },
     {
         "text": "Aber gerade bei trockener Haut sollte man diesen Step auf",
         "start": 182.34,
         "end": 185.34,
         "translationEn": "But especially for dry skin, this step should be applied.",
-        "translationVi": "Nhưng đặc biệt đối với da khô, bạn nên thực hiện bước này."
+        "translationVi": "Nhưng đặc biệt đối với da khô, bạn nên thực hiện bước này.",
+        "translation_en": "But especially for dry skin, this step should be applied."
     },
     {
         "text": "jeden Fall nicht überspringen.",
         "start": 185.34,
         "end": 186.18,
         "translationEn": "definitely not skip.",
-        "translationVi": "không bao giờ bỏ qua."
+        "translationVi": "không bao giờ bỏ qua.",
+        "translation_en": "in any case, do not skip."
     },
     {
         "text": "Und ultimativer Tipp, wenn die Haut noch leicht feucht ist,",
         "start": 186.64,
         "end": 189.36,
         "translationEn": "And the ultimate tip, when the skin is still slightly damp,",
-        "translationVi": "Và mẹo cuối cùng, khi da vẫn còn hơi ẩm,"
+        "translationVi": "Và mẹo cuối cùng, khi da vẫn còn hơi ẩm,",
+        "translation_en": "And an ultimate tip, when the skin is still slightly damp,"
     },
     {
         "text": "dann könnt ihr mit der Creme die Feuchtigkeit in der",
         "start": 189.5,
         "end": 191.62,
         "translationEn": "then you can use the cream to retain moisture in the",
-        "translationVi": "sau đó các bạn có thể dùng kem để giữ ẩm trong"
+        "translationVi": "sau đó các bạn có thể dùng kem để giữ ẩm trong",
+        "translation_en": "then you can use the cream to retain moisture in the"
     },
     {
         "text": "Haut einschließen und die Wirkstoffe können in die geöffneten Poren",
         "start": 191.62,
         "end": 194.88,
         "translationEn": "Seal the skin and the active ingredients can enter the opened pores.",
-        "translationVi": "Dán da và các chất hoạt tính có thể thấm vào các lỗ chân lông mở."
+        "translationVi": "Dán da và các chất hoạt tính có thể thấm vào các lỗ chân lông mở.",
+        "translation_en": "Seal the skin and the active ingredients can penetrate into the opened pores."
     },
     {
         "text": "leichter eindringen.",
         "start": 194.88,
         "end": 195.68,
         "translationEn": "easier penetration.",
-        "translationVi": "thâm nhập dễ hơn."
+        "translationVi": "thâm nhập dễ hơn.",
+        "translation_en": "penetrate more easily."
     },
     {
         "text": "Also, nicht so lange warten,",
         "start": 195.68,
         "end": 196.92,
         "translationEn": "So, don't wait too long,",
-        "translationVi": "Vậy nên, đừng chờ quá lâu,"
+        "translationVi": "Vậy nên, đừng chờ quá lâu,",
+        "translation_en": "So, don't wait too long,"
     },
     {
         "text": "sondern lieber direkt nach dem Duschen eincremen.",
         "start": 197.12,
         "end": 198.8,
         "translationEn": "but rather apply lotion directly after showering.",
-        "translationVi": "mà tốt hơn là thoa kem ngay sau khi tắm."
+        "translationVi": "mà tốt hơn là thoa kem ngay sau khi tắm.",
+        "translation_en": "but rather apply lotion directly after showering."
     },
     {
         "text": "Und anschließend gehe ich mich dann schminken,",
         "start": 199.08,
         "end": 200.52,
         "translationEn": "And then I will go and put on makeup,",
-        "translationVi": "Và sau đó tôi sẽ đi trang điểm."
+        "translationVi": "Và sau đó tôi sẽ đi trang điểm.",
+        "translation_en": "And then I will go and put on makeup."
     },
     {
         "text": "wenn ich morgens geduscht habe.",
         "start": 200.64,
         "end": 201.88,
         "translationEn": "when I have showered in the morning.",
-        "translationVi": "khi tôi đã tắm vào buổi sáng."
+        "translationVi": "khi tôi đã tắm vào buổi sáng.",
+        "translation_en": "when I have showered in the morning."
     },
     {
         "text": "Und abends schlüpfe ich in irgendwas Gemütliches",
         "start": 202.4,
         "end": 204.3,
         "translationEn": "And in the evening, I slip into something comfortable.",
-        "translationVi": "Và buổi tối, tôi sẽ mặc một cái gì đó thoải mái."
+        "translationVi": "Và buổi tối, tôi sẽ mặc một cái gì đó thoải mái.",
+        "translation_en": "And in the evening, I slip into something comfortable."
     },
     {
         "text": "und lege mich dann auf die Couch.",
         "start": 204.3,
         "end": 205.58,
         "translationEn": "and then lie down on the couch.",
-        "translationVi": "và sau đó nằm lên ghế sofa."
+        "translationVi": "và sau đó nằm lên ghế sofa.",
+        "translation_en": "and then I lie down on the couch."
     },
     {
         "text": "Und das ist mein liebster Part am Tag.",
         "start": 205.92,
         "end": 207.72,
         "translationEn": "And that is my favorite part of the day.",
-        "translationVi": "Và đó là phần tôi thích nhất trong ngày."
+        "translationVi": "Và đó là phần tôi thích nhất trong ngày.",
+        "translation_en": "And that is my favorite part of the day."
     },
     {
         "text": "Schreibt mir jetzt mal unbedingt in die Kommentare,",
         "start": 208.28,
         "end": 209.72,
         "translationEn": "Make sure to write to me in the comments now.",
-        "translationVi": "Hãy chắc chắn viết cho tôi trong phần bình luận,"
+        "translationVi": "Hãy chắc chắn viết cho tôi trong phần bình luận,",
+        "translation_en": "Make sure to write to me in the comments now."
     },
     {
         "text": "was eure Do's und Don'ts beim Duschen sind.",
         "start": 209.9,
         "end": 211.8,
         "translationEn": "what your do's and don'ts are when showering.",
-        "translationVi": "những điều nên và không nên làm khi tắm."
+        "translationVi": "những điều nên và không nên làm khi tắm.",
+        "translation_en": "what your do's and don'ts are when showering."
     },
     {
         "text": "Also, auf was könnt ihr beim Duschen nicht verzichten?",
         "start": 212.24,
         "end": 214.46,
         "translationEn": "So, what can you not do without when showering?",
-        "translationVi": "Vậy, các bạn không thể thiếu gì khi tắm?"
+        "translationVi": "Vậy, các bạn không thể thiếu gì khi tắm?",
+        "translation_en": "So, what can you not do without when showering?"
     },
     {
         "text": "Braucht ihr vielleicht auch Musik?",
         "start": 214.84,
         "end": 215.94,
         "translationEn": "Do you perhaps need music as well?",
-        "translationVi": "Có thể các bạn cũng cần nhạc không?"
+        "translationVi": "Có thể các bạn cũng cần nhạc không?",
+        "translation_en": "Do you maybe need music as well?"
     },
     {
         "text": "Schminkt ihr euch vorher ab?",
         "start": 216.1,
         "end": 216.94,
         "translationEn": "Do you remove your makeup beforehand?",
-        "translationVi": "Các bạn có tẩy trang trước không?"
+        "translationVi": "Các bạn có tẩy trang trước không?",
+        "translation_en": "Do you take off your makeup beforehand?"
     },
     {
         "text": "Also, all das würde mich sehr interessieren.",
         "start": 217.06,
         "end": 218.96,
         "translationEn": "Well, all of that would interest me very much.",
-        "translationVi": "Tất cả những điều đó sẽ khiến tôi rất quan tâm."
+        "translationVi": "Tất cả những điều đó sẽ khiến tôi rất quan tâm.",
+        "translation_en": "Well, all of that would really interest me."
     },
     {
         "text": "Den IVEA Channel könnt ihr außerdem hier abonnieren.",
         "start": 219.24,
         "end": 220.92,
         "translationEn": "You can also subscribe to the IVEA Channel here.",
-        "translationVi": "Bạn cũng có thể đăng ký kênh IVEA ở đây."
+        "translationVi": "Bạn cũng có thể đăng ký kênh IVEA ở đây.",
+        "translation_en": "You can also subscribe to the IVEA Channel here."
     },
     {
         "text": "Dann verpasst ihr nichts mehr.",
         "start": 221,
         "end": 221.98,
         "translationEn": "Then you won't miss anything anymore.",
-        "translationVi": "Vậy thì các bạn sẽ không bỏ lỡ điều gì nữa."
+        "translationVi": "Vậy thì các bạn sẽ không bỏ lỡ điều gì nữa.",
+        "translation_en": "Then you won't miss anything anymore."
     },
     {
         "text": "Und wenn ihr Lust habt,",
         "start": 222.06,
         "end": 222.84,
         "translationEn": "And if you feel like it,",
-        "translationVi": "Và nếu các bạn muốn,"
+        "translationVi": "Và nếu các bạn muốn,",
+        "translation_en": "And if you feel like it,"
     },
     {
         "text": "dann schaut doch jetzt mal bei diesem Video von Cati",
         "start": 222.96,
         "end": 224.8,
         "translationEn": "then take a look at this video from Cati now",
-        "translationVi": "thì hãy xem video này của Cati đi"
+        "translationVi": "thì hãy xem video này của Cati đi",
+        "translation_en": "Then take a look at this video from Cati."
     },
     {
         "text": "vorbei.",
         "start": 224.8,
         "end": 225.14,
         "translationEn": "over.",
-        "translationVi": "qua đi."
+        "translationVi": "qua đi.",
+        "translation_en": "over."
     },
     {
         "text": "Sie hat richtig coole Frisuren gezeigt,",
         "start": 225.14,
         "end": 227.02,
         "translationEn": "She showed really cool hairstyles,",
-        "translationVi": "Cô ấy đã trình diễn những kiểu tóc thật ngầu,"
+        "translationVi": "Cô ấy đã trình diễn những kiểu tóc thật ngầu,",
+        "translation_en": "She showed some really cool hairstyles."
     },
     {
         "text": "bei denen man kein Haargummi braucht.",
         "start": 227.2,
         "end": 228.72,
         "translationEn": "where you don't need a hair tie.",
-        "translationVi": "mà không cần dây buộc tóc."
+        "translationVi": "mà không cần dây buộc tóc.",
+        "translation_en": "where you don't need a hair tie."
     },
     {
         "text": "Also, sehr interessant.",
         "start": 229.06,
         "end": 229.8,
         "translationEn": "So, very interesting.",
-        "translationVi": "Rất thú vị."
+        "translationVi": "Rất thú vị.",
+        "translation_en": "Well, very interesting."
     },
     {
         "text": "Solltet ihr nicht verpassen.",
         "start": 230.04,
         "end": 230.82,
         "translationEn": "You shouldn't miss it.",
-        "translationVi": "Bạn không nên bỏ lỡ."
+        "translationVi": "Bạn không nên bỏ lỡ.",
+        "translation_en": "You shouldn't miss it."
     },
     {
         "text": "Und dann wünsche ich euch jetzt noch einen wunderschönen Tag",
         "start": 231.38,
         "end": 233.34,
         "translationEn": "And then I wish you all a wonderful day.",
-        "translationVi": "Và bây giờ tôi chúc các bạn một ngày tuyệt vời."
+        "translationVi": "Và bây giờ tôi chúc các bạn một ngày tuyệt vời.",
+        "translation_en": "And now I wish you all a wonderful day."
     },
     {
         "text": "und bis zum nächsten Mal.",
         "start": 233.34,
         "end": 234.36,
         "translationEn": "and until next time.",
-        "translationVi": "và hẹn gặp lại lần sau."
+        "translationVi": "và hẹn gặp lại lần sau.",
+        "translation_en": "and until next time."
     },
     {
         "text": "Tschüss.",
         "start": 234.92,
         "end": 235.04,
         "translationEn": "Goodbye.",
-        "translationVi": "Tạm biệt."
+        "translationVi": "Tạm biệt.",
+        "translation_en": "Bye."
     }
 ]

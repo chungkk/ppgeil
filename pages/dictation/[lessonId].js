@@ -1417,14 +1417,25 @@ const DictationPageContent = () => {
       if (!response.ok) throw new Error(`Không thể tải file JSON tại: ${jsonPath}`);
       const data = await response.json();
       
+      // Transform data based on user's native language
+      // Support both field formats: translation_en and translationEn
+      const targetLang = user?.nativeLanguage || 'vi';
+      const transformedData = data.map(item => ({
+        ...item,
+        translation: targetLang === 'en' 
+          ? (item.translation_en || item.translationEn || item.translation)
+          : (item.translationVi || item.translation)
+      }));
+      
       console.log('📝 Transcript loaded:', {
         path: jsonPath,
-        totalSentences: data.length,
-        firstSentence: data[0]?.text?.substring(0, 50) + '...',
-        lastSentence: data[data.length - 1]?.text?.substring(0, 50) + '...'
+        totalSentences: transformedData.length,
+        targetLang,
+        firstSentence: transformedData[0]?.text?.substring(0, 50) + '...',
+        lastSentence: transformedData[transformedData.length - 1]?.text?.substring(0, 50) + '...'
       });
       
-      setTranscriptData(data);
+      setTranscriptData(transformedData);
     } catch (error) {
       if (error.name === 'AbortError') {
         console.error('Timeout loading transcript:', jsonPath);
