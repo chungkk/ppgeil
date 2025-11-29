@@ -39,27 +39,12 @@ import { navigateWithLocale } from '../../lib/navigation';
 import { formatTime, formatStudyTime as formatStudyTimeUtil } from '../../lib/dictationUtils';
 import styles from '../../styles/dictationPage.module.css';
 
-// Map difficulty level to hidePercentage (outside component to avoid re-creation)
-// A1=10%, A2/B1=30%, B2=60%, C1/C2=100%
-const DIFFICULTY_TO_PERCENTAGE = {
-  'a1': 10,
-  'a2': 30,
-  'b1': 30,
-  'b2': 60,
-  'c1': 100,
-  'c2': 100,
-  'c1c2': 100  // Combined C1+C2 option
-};
-
-const PERCENTAGE_TO_DIFFICULTY = {
-  10: 'a1',
-  30: 'b1',  // Default to B1 for 30%
-  60: 'b2',
-  100: 'c1'  // Default to C1 for 100%
-};
-
-
 const DEBUG_TIMER = false; // Set to true to enable timer logs
+
+// SIMPLIFIED: Only full-sentence mode (C1+C2 level)
+// All difficulty levels removed - always use 100% hide percentage
+const hidePercentage = 100;
+const dictationMode = 'full-sentence';
 
 // Calculate similarity between two sentences (word-level comparison)
 const calculateSimilarity = (userInput, correctSentence) => {
@@ -115,21 +100,12 @@ const DictationPageContent = () => {
   const [isUserSeeking, setIsUserSeeking] = useState(false);
   const [userSeekTimeout, setUserSeekTimeout] = useState(null);
   const [isTextHidden, setIsTextHidden] = useState(true);
-  const [hidePercentage, setHidePercentage] = useState(30); // Will be loaded from user profile
-  const [difficultyLevel, setDifficultyLevel] = useState('b1'); // a1, a2, b1, b2, c1c2 (or legacy c1, c2)
   
   // Auto-stop video at end of sentence (similar to shadowing mode)
   const [autoStop, setAutoStop] = useState(true);
 
   // Playback speed control
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
-
-  // Dictation mode: 'fill-blanks' or 'full-sentence'
-  const [dictationMode, setDictationMode] = useState(() => {
-    if (typeof window === 'undefined') return 'fill-blanks';
-    const saved = localStorage.getItem('dictationMode');
-    return saved || 'fill-blanks';
-  });
 
   // Full sentence input states
   const [fullSentenceInputs, setFullSentenceInputs] = useState({}); // { sentenceIndex: inputText }
@@ -139,77 +115,11 @@ const DictationPageContent = () => {
   const [partialRevealedChars, setPartialRevealedChars] = useState({}); // { sentenceIndex: { wordIndex: numberOfCharsRevealed } }
   const [checkedSentences, setCheckedSentences] = useState([]); // Array of sentence indices that have been checked (revealed after check)
 
-  // Save dictationMode to localStorage when it changes
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('dictationMode', dictationMode);
-    }
-  }, [dictationMode]);
-
   // Use SWR hook for combined lesson + progress data
   const { lesson, progress: loadedProgress, studyTime: loadedStudyTime, isLoading: loading } = useLessonData(lessonId, 'dictation');
 
-  // Get user and auth functions early to avoid TDZ errors
-  const { user, updateDifficultyLevel } = useAuth();
-
-  // Load user's preferred difficulty level
-  useEffect(() => {
-    if (user && user.preferredDifficultyLevel) {
-      let level = user.preferredDifficultyLevel;
-      
-      // Migrate legacy c1/c2 to c1c2
-      if (level === 'c1' || level === 'c2') {
-        level = 'c1c2';
-        // Save the migration automatically
-        updateDifficultyLevel('c1c2').then(result => {
-          if (result.success) {
-            console.log('✅ Migrated difficulty level from', user.preferredDifficultyLevel, '→ c1c2');
-          }
-        });
-      }
-      
-      setDifficultyLevel(level);
-      setHidePercentage(DIFFICULTY_TO_PERCENTAGE[level] || 30);
-      
-      // Auto-switch mode based on difficulty level
-      if (level === 'c1c2') {
-        setDictationMode('full-sentence');
-        console.log('✅ Auto-switched to full-sentence mode for C1+C2');
-      } else {
-        setDictationMode('fill-blanks');
-        console.log('✅ Auto-switched to fill-blanks mode for', level.toUpperCase());
-      }
-      
-      console.log('✅ Loaded difficulty level from user:', level, '→', DIFFICULTY_TO_PERCENTAGE[level] + '%');
-    }
-  }, [user, updateDifficultyLevel]);
-
-  // Handle difficulty level change
-  const handleDifficultyChange = useCallback(async (newLevel) => {
-    const newPercentage = DIFFICULTY_TO_PERCENTAGE[newLevel] || 30;
-    
-    setHidePercentage(newPercentage);
-    setDifficultyLevel(newLevel);
-    
-    // Auto-switch mode based on difficulty level
-    if (newLevel === 'c1c2') {
-      setDictationMode('full-sentence');
-      console.log('✅ Auto-switched to full-sentence mode for C1+C2');
-    } else {
-      setDictationMode('fill-blanks');
-      console.log('✅ Auto-switched to fill-blanks mode for', newLevel.toUpperCase());
-    }
-    
-    // Save to database
-    if (user) {
-      const result = await updateDifficultyLevel(newLevel);
-      if (result.success) {
-        console.log('✅ Difficulty level saved:', newLevel, '→', newPercentage + '%');
-      } else {
-        console.error('❌ Failed to save difficulty level:', result.error);
-      }
-    }
-  }, [user, updateDifficultyLevel]);
+  // Get user and auth functions
+  const { user } = useAuth();
   
   // Dictation specific states (from ckk)
   const [savedWords, setSavedWords] = useState([]);
@@ -2033,7 +1943,7 @@ const DictationPageContent = () => {
 
       const words = sentence.text.split(/\s+/);
       
-      // Determine which words need to be filled based on hidePercentage
+      // Full-sentence mode: all words count
       const validWordIndices = [];
       words.forEach((word, idx) => {
         const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
@@ -2042,9 +1952,9 @@ const DictationPageContent = () => {
         }
       });
 
-      // Calculate how many words to hide (same logic as processLevelUp)
+      // Full-sentence mode: all words need to be completed
       const totalValidWords = validWordIndices.length;
-      const wordsToHideCount = Math.ceil((totalValidWords * hidePercentage) / 100);
+      const wordsToHideCount = totalValidWords;
 
       // Count completed words from DOM (not state) to avoid timing issues
       // This ensures we get the most up-to-date count including just-completed words
@@ -2089,7 +1999,7 @@ const DictationPageContent = () => {
         }, 400);
       }
     }, 50); // Reduced to 50ms for faster detection
-  }, [completedSentences, currentSentenceIndex, completedWords, saveProgress, transcriptData, hidePercentage, t]);
+  }, [completedSentences, currentSentenceIndex, completedWords, saveProgress, transcriptData, t]);
 
   // Show points animation
   const showPointsAnimation = useCallback((points, element) => {
@@ -3130,7 +3040,7 @@ const DictationPageContent = () => {
       }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentSentenceIndex, transcriptData, processLevelUp, checkWord, handleInputClick, handleInputFocus, handleInputBlur, saveWord, showHint, showHintFromInput, handleWordClickForPopup, completedSentences, progressLoaded, hidePercentage, showPointsAnimation]);
+  }, [currentSentenceIndex, transcriptData, processLevelUp, checkWord, handleInputClick, handleInputFocus, handleInputBlur, saveWord, showHint, showHintFromInput, handleWordClickForPopup, completedSentences, progressLoaded, showPointsAnimation]);
   // Note: Removed 'completedWords' from dependencies to prevent infinite loop
   // Individual word completions are handled via direct DOM manipulation (input → span)
 
@@ -3327,8 +3237,6 @@ const DictationPageContent = () => {
               isMobile={isMobile}
               currentSentenceIndex={currentSentenceIndex}
               totalSentences={transcriptData.length}
-              difficultyLevel={difficultyLevel}
-              onDifficultyChange={handleDifficultyChange}
               playbackSpeed={playbackSpeed}
               onSpeedChange={handleSpeedChange}
               showTranslation={showTranslation}
@@ -3405,16 +3313,7 @@ const DictationPageContent = () => {
                     {lazySlidesToRender.map((originalIndex, arrayIndex) => {
                       const sentence = transcriptData[originalIndex];
                       const isCompleted = completedSentences.includes(originalIndex);
-                      const sentenceWordsCompleted = completedWords[originalIndex] || {};
                       const isActive = originalIndex === currentSentenceIndex;
-                      
-                      // Generate processed text for this sentence
-                      const sentenceProcessedText = processLevelUp(
-                        sentence.text,
-                        isCompleted,
-                        sentenceWordsCompleted,
-                        hidePercentage
-                      );
 
                       return (
                         <div
@@ -3434,24 +3333,13 @@ const DictationPageContent = () => {
                             </div>
                           )}
 
-                          {/* Mode 1: Fill in blanks */}
-                          {dictationMode === 'fill-blanks' ? (
-                            <div
-                              className={styles.dictationInputArea}
-                              data-sentence-index={originalIndex}
-                              dangerouslySetInnerHTML={{ __html: sentenceProcessedText }}
-                              onTouchStart={isActive ? handleTouchStart : undefined}
-                              onTouchMove={isActive ? handleTouchMove : undefined}
-                              onTouchEnd={isActive ? handleTouchEnd : undefined}
-                            />
-                          ) : (
-                            /* Mode 2: Full sentence input */
-                            <div
-                              className={styles.fullSentenceMode}
-                              onTouchStart={isActive ? handleTouchStart : undefined}
-                              onTouchMove={isActive ? handleTouchMove : undefined}
-                              onTouchEnd={isActive ? handleTouchEnd : undefined}
-                            >
+                          {/* Full Sentence Mode Only */}
+                          <div
+                            className={styles.fullSentenceMode}
+                            onTouchStart={isActive ? handleTouchStart : undefined}
+                            onTouchMove={isActive ? handleTouchMove : undefined}
+                            onTouchEnd={isActive ? handleTouchEnd : undefined}
+                          >
                               <div className={styles.fullSentenceDisplay}>
                                 {isCompleted ? (
                                   <div 
@@ -3577,95 +3465,7 @@ const DictationPageContent = () => {
                                   </button>
                                 </div>
                               )}
-                            </div>
-                          )}
-
-                          {isActive && dictationMode === 'fill-blanks' && (
-                            <div className={styles.dictationActions}>
-                              <button
-                                className={styles.showAllWordsButton}
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  // Reveal all words for current sentence
-                                  const slideElement = e.currentTarget.closest(`.${styles.dictationSlide}`);
-                                  const allInputs = slideElement.querySelectorAll('.word-input');
-                                  const wordsToComplete = {};
-
-                                  allInputs.forEach((input) => {
-                                    const wordIndexMatch = input.id.match(/word-(\d+)/);
-                                    if (wordIndexMatch) {
-                                      const wordIndex = parseInt(wordIndexMatch[1]);
-                                      const correctWord = input.getAttribute('oninput').match(/'([^']+)'/)[1];
-                                      wordsToComplete[wordIndex] = correctWord;
-                                      saveWord(correctWord);
-                                    }
-                                  });
-
-                                  setCompletedWords(prevWords => {
-                                    const updatedWords = { ...prevWords };
-                                    if (!updatedWords[originalIndex]) {
-                                      updatedWords[originalIndex] = {};
-                                    }
-                                    updatedWords[originalIndex] = {
-                                      ...updatedWords[originalIndex],
-                                      ...wordsToComplete
-                                    };
-                                    
-                                    // Only mark as completed if we actually revealed words AND they meet the threshold
-                                    if (Object.keys(wordsToComplete).length > 0) {
-                                      // Calculate total words that needed to be filled
-                                      const sentence = transcriptData[originalIndex];
-                                      if (sentence) {
-                                        const words = sentence.text.split(/\s+/);
-                                        const validWordIndices = [];
-                                        words.forEach((word, idx) => {
-                                          const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-                                          if (pureWord.length >= 1) {
-                                            validWordIndices.push(idx);
-                                          }
-                                        });
-                                        
-                                        const totalValidWords = validWordIndices.length;
-                                        const wordsToHideCount = Math.ceil((totalValidWords * hidePercentage) / 100);
-                                        const totalCompletedWords = Object.keys(updatedWords[originalIndex]).length;
-                                        
-                                        // Mark as completed only if total completed words >= required threshold
-                                        if (totalCompletedWords >= wordsToHideCount && wordsToHideCount > 0 && !completedSentences.includes(originalIndex)) {
-                                          const updatedCompleted = [...completedSentences, originalIndex];
-                                          setCompletedSentences(updatedCompleted);
-                                          saveProgress(updatedCompleted, updatedWords);
-                                          console.log(`✅ Sentence ${originalIndex} completed via Show All (mobile)!`);
-                                        } else {
-                                          // Just save progress without marking as complete
-                                          saveProgress(completedSentences, updatedWords);
-                                        }
-                                      }
-                                    } else {
-                                      saveProgress(completedSentences, updatedWords);
-                                    }
-                                    
-                                    return updatedWords;
-                                  });
-                                }}
-                              >
-                                {t('lesson.ui.showAll')}
-                              </button>
-
-                              <button
-                                className={styles.nextButton}
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  goToNextSentence();
-                                }}
-                                disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
-                              >
-                                {t('lesson.ui.next')}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                  <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                </svg>
-                              </button>
-                            </div>
-                          )}
+                          </div>
                         </div>
                       );
                     })}
@@ -3683,105 +3483,8 @@ const DictationPageContent = () => {
                   </div>
                 </div>
               ) : (
-                /* Desktop: Single Sentence View */
-                <>
-                  {dictationMode === 'fill-blanks' ? (
-                    /* Mode 1: Fill in blanks */
-                    <>
-                      {/* Combined Dictation + Translation Box */}
-                      <div className={styles.dictationBox}>
-                        <div
-                          className={styles.dictationInputArea}
-                          data-sentence-index={currentSentenceIndex}
-                          dangerouslySetInnerHTML={{ __html: processedText }}
-                          onTouchStart={handleTouchStart}
-                          onTouchMove={handleTouchMove}
-                          onTouchEnd={handleTouchEnd}
-                        />
-
-                        {/* Sentence Translation - Bottom half */}
-                        {!isMobile && showTranslation && (
-                          <div className={styles.sentenceTranslation}>
-                            {isLoadingTranslation ? (
-                              <span className={styles.translationLoading}>...</span>
-                            ) : sentenceTranslation ? (
-                              <span>{sentenceTranslation}</span>
-                            ) : null}
-                          </div>
-                        )}
-                      </div>
-
-                      <div className={styles.dictationActions}>
-                        <button
-                          className={styles.showAllWordsButton}
-                          onClick={() => {
-                            const allInputs = document.querySelectorAll('.word-input');
-                            const wordsToComplete = {};
-
-                            allInputs.forEach((input) => {
-                              const wordIndexMatch = input.id.match(/word-(\d+)/);
-                              if (wordIndexMatch) {
-                                const wordIndex = parseInt(wordIndexMatch[1]);
-                                const correctWord = input.getAttribute('oninput').match(/'([^']+)'/)[1];
-                                wordsToComplete[wordIndex] = correctWord;
-                                saveWord(correctWord);
-                              }
-                            });
-
-                            setCompletedWords(prevWords => {
-                              const updatedWords = { ...prevWords };
-                              if (!updatedWords[currentSentenceIndex]) {
-                                updatedWords[currentSentenceIndex] = {};
-                              }
-                              updatedWords[currentSentenceIndex] = {
-                                ...updatedWords[currentSentenceIndex],
-                                ...wordsToComplete
-                              };
-                              
-                              // Only mark as completed if we actually revealed words AND they meet the threshold
-                              if (Object.keys(wordsToComplete).length > 0) {
-                                // Calculate total words that needed to be filled
-                                const sentence = transcriptData[currentSentenceIndex];
-                                if (sentence) {
-                                  const words = sentence.text.split(/\s+/);
-                                  const validWordIndices = [];
-                                  words.forEach((word, idx) => {
-                                    const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-                                    if (pureWord.length >= 1) {
-                                      validWordIndices.push(idx);
-                                    }
-                                  });
-                                  
-                                  const totalValidWords = validWordIndices.length;
-                                  const wordsToHideCount = Math.ceil((totalValidWords * hidePercentage) / 100);
-                                  const totalCompletedWords = Object.keys(updatedWords[currentSentenceIndex]).length;
-                                  
-                                  // Mark as completed only if total completed words >= required threshold
-                                  if (totalCompletedWords >= wordsToHideCount && wordsToHideCount > 0 && !completedSentences.includes(currentSentenceIndex)) {
-                                    const updatedCompleted = [...completedSentences, currentSentenceIndex];
-                                    setCompletedSentences(updatedCompleted);
-                                    saveProgress(updatedCompleted, updatedWords);
-                                    console.log(`✅ Sentence ${currentSentenceIndex} completed via Show All!`);
-                                  } else {
-                                    // Just save progress without marking as complete
-                                    saveProgress(completedSentences, updatedWords);
-                                  }
-                                }
-                              } else {
-                                saveProgress(completedSentences, updatedWords);
-                              }
-                              
-                              return updatedWords;
-                            });
-                          }}
-                        >
-                          {t('lesson.ui.showAll')}
-                        </button>
-                      </div>
-                    </>
-                  ) : (
-                    /* Mode 2: Full sentence input for Desktop */
-                    <div className={styles.fullSentenceMode}>
+                /* Desktop: Full Sentence Mode Only */
+                <div className={styles.fullSentenceMode}>
                       {/* Combined Display + Translation Box */}
                       <div className={styles.dictationBox}>
                         <div className={styles.fullSentenceDisplay}>
@@ -3906,9 +3609,7 @@ const DictationPageContent = () => {
                           Kiểm tra
                         </button>
                       </div>
-                    </div>
-                  )}
-                </>
+                </div>
               )}
             </div>
           </div>
@@ -3952,8 +3653,6 @@ const DictationPageContent = () => {
                   
                   return total;
                 })()}
-                difficultyLevel={difficultyLevel}
-                hidePercentage={hidePercentage}
                 studyTime={studyTime}
               />
             </div>

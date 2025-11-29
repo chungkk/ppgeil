@@ -611,158 +611,34 @@
   flex-shrink: 0;
 }
 
+/* === SIMPLIFIED PROGRESS BAR === */
 .progressBar {
   flex: 1;
-  height: 6px;
+  height: 8px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
-  position: relative;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .progressFill {
   height: 100%;
-  border-radius: 12px;
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  transition: width 0.4s ease, background-color 0.3s ease;
+  /* Default green - will be overridden by data-progress-level */
+  background: #10b981;
 }
 
-/* Dynamic color based on progress percentage */
-.progressFill[data-progress="0"],
-.progressFill[data-progress="1"],
-.progressFill[data-progress="2"],
-.progressFill[data-progress="3"],
-.progressFill[data-progress="4"],
-.progressFill[data-progress="5"],
-.progressFill[data-progress="6"],
-.progressFill[data-progress="7"],
-.progressFill[data-progress="8"],
-.progressFill[data-progress="9"],
-.progressFill[data-progress="10"],
-.progressFill[data-progress="11"],
-.progressFill[data-progress="12"],
-.progressFill[data-progress="13"],
-.progressFill[data-progress="14"],
-.progressFill[data-progress="15"],
-.progressFill[data-progress="16"],
-.progressFill[data-progress="17"],
-.progressFill[data-progress="18"],
-.progressFill[data-progress="19"],
-.progressFill[data-progress="20"],
-.progressFill[data-progress="21"],
-.progressFill[data-progress="22"],
-.progressFill[data-progress="23"],
-.progressFill[data-progress="24"],
-.progressFill[data-progress="25"],
-.progressFill[data-progress="26"],
-.progressFill[data-progress="27"],
-.progressFill[data-progress="28"],
-.progressFill[data-progress="29"],
-.progressFill[data-progress="30"],
-.progressFill[data-progress="31"],
-.progressFill[data-progress="32"],
-.progressFill[data-progress="33"] {
-  background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
+/* Simplified: 3 color levels instead of 100 selectors */
+.progressFill[data-progress-level="low"] {
+  background: #ef4444;
 }
 
-.progressFill[data-progress="34"],
-.progressFill[data-progress="35"],
-.progressFill[data-progress="36"],
-.progressFill[data-progress="37"],
-.progressFill[data-progress="38"],
-.progressFill[data-progress="39"],
-.progressFill[data-progress="40"],
-.progressFill[data-progress="41"],
-.progressFill[data-progress="42"],
-.progressFill[data-progress="43"],
-.progressFill[data-progress="44"],
-.progressFill[data-progress="45"],
-.progressFill[data-progress="46"],
-.progressFill[data-progress="47"],
-.progressFill[data-progress="48"],
-.progressFill[data-progress="49"],
-.progressFill[data-progress="50"],
-.progressFill[data-progress="51"],
-.progressFill[data-progress="52"],
-.progressFill[data-progress="53"],
-.progressFill[data-progress="54"],
-.progressFill[data-progress="55"],
-.progressFill[data-progress="56"],
-.progressFill[data-progress="57"],
-.progressFill[data-progress="58"],
-.progressFill[data-progress="59"],
-.progressFill[data-progress="60"],
-.progressFill[data-progress="61"],
-.progressFill[data-progress="62"],
-.progressFill[data-progress="63"],
-.progressFill[data-progress="64"],
-.progressFill[data-progress="65"],
-.progressFill[data-progress="66"] {
-  background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+.progressFill[data-progress-level="medium"] {
+  background: #f59e0b;
 }
 
-.progressFill[data-progress="67"],
-.progressFill[data-progress="68"],
-.progressFill[data-progress="69"],
-.progressFill[data-progress="70"],
-.progressFill[data-progress="71"],
-.progressFill[data-progress="72"],
-.progressFill[data-progress="73"],
-.progressFill[data-progress="74"],
-.progressFill[data-progress="75"],
-.progressFill[data-progress="76"],
-.progressFill[data-progress="77"],
-.progressFill[data-progress="78"],
-.progressFill[data-progress="79"],
-.progressFill[data-progress="80"],
-.progressFill[data-progress="81"],
-.progressFill[data-progress="82"],
-.progressFill[data-progress="83"],
-.progressFill[data-progress="84"],
-.progressFill[data-progress="85"],
-.progressFill[data-progress="86"],
-.progressFill[data-progress="87"],
-.progressFill[data-progress="88"],
-.progressFill[data-progress="89"],
-.progressFill[data-progress="90"],
-.progressFill[data-progress="91"],
-.progressFill[data-progress="92"],
-.progressFill[data-progress="93"],
-.progressFill[data-progress="94"],
-.progressFill[data-progress="95"],
-.progressFill[data-progress="96"],
-.progressFill[data-progress="97"],
-.progressFill[data-progress="98"],
-.progressFill[data-progress="99"],
-.progressFill[data-progress="100"] {
-  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
-}
-
-.progressFill::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    transparent 100%
-  );
-  animation: shimmer 2s infinite;
-}
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+.progressFill[data-progress-level="high"] {
+  background: #10b981;
 }
 
 .progressText {
@@ -2141,7 +2017,7 @@
   opacity: 1;
 }
 
-/* Mobile Voice Button - larger and positioned at bottom-right */
+/* === SIMPLIFIED MOBILE VOICE BUTTON === */
 .mobileVoiceButton {
   position: absolute;
   bottom: 10px;
@@ -2149,27 +2025,21 @@
   z-index: 10;
   width: 52px;
   height: 52px;
-  opacity: 1;
 }
 
 .mobileVoiceButton :global(button) {
   width: 100% !important;
   height: 100% !important;
   border-radius: 50% !important;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.25) 0%, rgba(118, 75, 162, 0.25) 100%) !important;
+  background: rgba(102, 126, 234, 0.2) !important;
   border: 2px solid rgba(102, 126, 234, 0.4) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  box-shadow: 
-    0 4px 16px rgba(102, 126, 234, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
   cursor: pointer;
 }
 
 .mobileVoiceButton :global(button:active:not(:disabled)) {
   transform: scale(0.95) !important;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3) !important;
 }
 
 .mobileVoiceButton :global(button svg) {
@@ -2180,33 +2050,18 @@
   fill: none !important;
 }
 
-/* Recording state */
 .mobileVoiceButton :global(button[class*="recording"]) {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.35) 0%, rgba(220, 38, 38, 0.35) 100%) !important;
+  background: rgba(239, 68, 68, 0.3) !important;
   border-color: rgba(239, 68, 68, 0.5) !important;
-  animation: mobileVoicePulse 1.2s ease-in-out infinite !important;
+  animation: voicePulse 1.5s ease-in-out infinite !important;
 }
 
 .mobileVoiceButton :global(button[class*="recording"] svg) {
   stroke: #fecdd3 !important;
 }
 
-@keyframes mobileVoicePulse {
-  0%, 100% {
-    box-shadow: 
-      0 0 0 0 rgba(239, 68, 68, 0.6),
-      0 4px 16px rgba(239, 68, 68, 0.4);
-  }
-  50% {
-    box-shadow: 
-      0 0 0 12px rgba(239, 68, 68, 0),
-      0 6px 24px rgba(239, 68, 68, 0.5);
-  }
-}
-
-/* Processing state */
 .mobileVoiceButton :global(button[class*="processing"]) {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(37, 99, 235, 0.3) 100%) !important;
+  background: rgba(59, 130, 246, 0.25) !important;
   border-color: rgba(59, 130, 246, 0.5) !important;
 }
 
@@ -2215,62 +2070,25 @@
   animation: spin 1.5s linear infinite !important;
 }
 
+/* === SIMPLIFIED DESKTOP VOICE BUTTON === */
 .dictationVoiceButton :global(button) {
   width: 100% !important;
   height: 100% !important;
   border-radius: 50% !important;
-  background: 
-    linear-gradient(135deg, rgba(167, 139, 250, 0.35) 0%, rgba(139, 92, 246, 0.3) 50%, rgba(124, 58, 237, 0.35) 100%) !important;
-  border: 3px solid transparent !important;
-  background-clip: padding-box !important;
-  position: relative !important;
-  backdrop-filter: blur(12px) !important;
-  box-shadow: 
-    0 8px 32px -4px rgba(139, 92, 246, 0.4),
-    0 0 0 1px rgba(167, 139, 250, 0.3),
-    inset 0 2px 8px rgba(255, 255, 255, 0.15),
-    inset 0 -2px 4px rgba(124, 58, 237, 0.2) !important;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  background: rgba(139, 92, 246, 0.25) !important;
+  border: 2px solid rgba(139, 92, 246, 0.4) !important;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.3) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease !important;
   cursor: pointer;
-  animation: gentleFloat 3s ease-in-out infinite !important;
-}
-
-.dictationVoiceButton :global(button::before) {
-  content: '' !important;
-  position: absolute !important;
-  inset: -3px !important;
-  border-radius: 50% !important;
-  background: linear-gradient(135deg, rgba(167, 139, 250, 0.8), rgba(139, 92, 246, 0.6), rgba(124, 58, 237, 0.8)) !important;
-  z-index: -1 !important;
-  opacity: 0 !important;
-  transition: opacity 0.4s ease !important;
 }
 
 .dictationVoiceButton :global(button:hover:not(:disabled)) {
-  transform: translateY(-4px) scale(1.12) rotate(5deg) !important;
-  box-shadow: 
-    0 12px 48px -8px rgba(139, 92, 246, 0.6),
-    0 0 0 2px rgba(167, 139, 250, 0.5),
-    0 0 60px rgba(167, 139, 250, 0.4),
-    inset 0 2px 12px rgba(255, 255, 255, 0.25),
-    inset 0 -2px 8px rgba(124, 58, 237, 0.3) !important;
-  background: 
-    linear-gradient(135deg, rgba(167, 139, 250, 0.45) 0%, rgba(139, 92, 246, 0.4) 50%, rgba(124, 58, 237, 0.45) 100%) !important;
-  animation: gentleFloat 3s ease-in-out infinite, gentlePulse 2s ease-in-out infinite !important;
-}
-
-.dictationVoiceButton :global(button:hover::before) {
-  opacity: 1 !important;
-  animation: rotateBorder 8s linear infinite !important;
+  transform: scale(1.08) !important;
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4) !important;
 }
 
 .dictationVoiceButton :global(button:active:not(:disabled)) {
-  transform: translateY(-1px) scale(1.05) rotate(0deg) !important;
-  box-shadow: 
-    0 6px 24px rgba(139, 92, 246, 0.5),
-    0 0 0 1px rgba(167, 139, 250, 0.4),
-    inset 0 3px 8px rgba(0, 0, 0, 0.2),
-    inset 0 -1px 4px rgba(255, 255, 255, 0.1) !important;
+  transform: scale(1) !important;
 }
 
 .dictationVoiceButton :global(button svg) {
@@ -2279,129 +2097,44 @@
   stroke: #c4b5fd !important;
   stroke-width: 2.5 !important;
   fill: none !important;
-  filter: drop-shadow(0 2px 4px rgba(139, 92, 246, 0.4)) !important;
-  transition: all 0.3s ease !important;
 }
 
-.dictationVoiceButton :global(button:hover svg) {
-  stroke: #e9d5ff !important;
-  filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.6)) !important;
-  animation: gentleBounce 0.6s ease-in-out !important;
-}
-
-@keyframes gentleFloat {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-3px) scale(1.02);
-  }
-}
-
-@keyframes gentlePulse {
-  0%, 100% {
-    filter: brightness(1);
-  }
-  50% {
-    filter: brightness(1.15);
-  }
-}
-
-@keyframes rotateBorder {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes gentleBounce {
-  0%, 100% {
-    transform: scale(1) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.1) rotate(-5deg);
-  }
-  75% {
-    transform: scale(1.1) rotate(5deg);
-  }
-}
-
-/* Recording state - cute vibrant red */
+/* Recording state */
 .dictationVoiceButton :global(button[class*="recording"]) {
-  background: 
-    linear-gradient(135deg, rgba(251, 113, 133, 0.4) 0%, rgba(244, 63, 94, 0.35) 50%, rgba(225, 29, 72, 0.4) 100%) !important;
-  box-shadow: 
-    0 8px 32px rgba(244, 63, 94, 0.5),
-    0 0 0 2px rgba(251, 113, 133, 0.4),
-    0 0 60px rgba(251, 113, 133, 0.3),
-    inset 0 2px 8px rgba(255, 255, 255, 0.2),
-    inset 0 -2px 4px rgba(225, 29, 72, 0.3) !important;
-  animation: dictationVoiceButtonPulse 1.2s ease-in-out infinite, gentleFloat 3s ease-in-out infinite !important;
-  transform: scale(1.08) !important;
+  background: rgba(239, 68, 68, 0.3) !important;
+  border-color: rgba(239, 68, 68, 0.5) !important;
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.35) !important;
+  animation: voicePulse 1.5s ease-in-out infinite !important;
 }
 
 .dictationVoiceButton :global(button[class*="recording"] svg) {
   stroke: #fecdd3 !important;
-  filter: drop-shadow(0 0 10px rgba(251, 113, 133, 0.8)) !important;
-  animation: recordingPulse 1.2s ease-in-out infinite !important;
 }
 
-@keyframes dictationVoiceButtonPulse {
-  0%, 100% {
-    box-shadow: 
-      0 0 0 0 rgba(251, 113, 133, 0.8),
-      0 8px 32px rgba(244, 63, 94, 0.5),
-      0 0 0 2px rgba(251, 113, 133, 0.4),
-      inset 0 2px 8px rgba(255, 255, 255, 0.2);
-  }
-  50% {
-    box-shadow: 
-      0 0 0 16px rgba(251, 113, 133, 0),
-      0 12px 48px rgba(244, 63, 94, 0.7),
-      0 0 0 3px rgba(251, 113, 133, 0.6),
-      inset 0 2px 12px rgba(255, 255, 255, 0.3);
-  }
-}
-
-@keyframes recordingPulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.15);
-    opacity: 0.85;
-  }
-}
-
-/* Processing state - cute blue */
+/* Processing state */
 .dictationVoiceButton :global(button[class*="processing"]) {
-  background: 
-    linear-gradient(135deg, rgba(147, 197, 253, 0.35) 0%, rgba(96, 165, 250, 0.3) 50%, rgba(59, 130, 246, 0.35) 100%) !important;
-  box-shadow: 
-    0 8px 32px rgba(96, 165, 250, 0.45),
-    0 0 0 2px rgba(147, 197, 253, 0.4),
-    0 0 60px rgba(147, 197, 253, 0.3),
-    inset 0 2px 8px rgba(255, 255, 255, 0.2),
-    inset 0 -2px 4px rgba(59, 130, 246, 0.3) !important;
-  animation: processingShimmer 2s ease-in-out infinite, gentleFloat 3s ease-in-out infinite !important;
+  background: rgba(59, 130, 246, 0.25) !important;
+  border-color: rgba(59, 130, 246, 0.5) !important;
 }
 
 .dictationVoiceButton :global(button[class*="processing"] svg) {
-  stroke: #dbeafe !important;
-  filter: drop-shadow(0 0 8px rgba(147, 197, 253, 0.6)) !important;
+  stroke: #93c5fd !important;
   animation: spin 1.5s linear infinite !important;
 }
 
-@keyframes processingShimmer {
+/* === SHARED ANIMATIONS (Simplified) === */
+@keyframes voicePulse {
   0%, 100% {
-    filter: brightness(1) hue-rotate(0deg);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5), 0 4px 16px rgba(239, 68, 68, 0.3);
   }
   50% {
-    filter: brightness(1.2) hue-rotate(10deg);
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0), 0 4px 16px rgba(239, 68, 68, 0.4);
   }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .fullSentenceInput {

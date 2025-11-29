@@ -7,10 +7,11 @@ const ProgressIndicator = ({
   totalSentences = 0,
   completedWords = {},
   totalWords = 0,
-  difficultyLevel = 'b1',
-  hidePercentage = 30,
   studyTime = 0
 }) => {
+  // Full-sentence mode only (C1+C2 level)
+  const difficultyLevel = 'c1c2';
+  const hidePercentage = 100;
   const { t } = useTranslation();
   const [showTooltip, setShowTooltip] = useState(false);
 
@@ -54,17 +55,12 @@ const ProgressIndicator = ({
     };
   }, [completedSentences, totalSentences, completedWords, totalWords, studyTime]);
 
-  // Difficulty color scheme
-  const difficultyColors = {
-    'a1': { primary: '#10b981', secondary: '#d1fae5', glow: 'rgba(16, 185, 129, 0.4)' }, // Green
-    'a2': { primary: '#84cc16', secondary: '#ecfccb', glow: 'rgba(132, 204, 22, 0.4)' },  // Lime
-    'b1': { primary: '#eab308', secondary: '#fef9c3', glow: 'rgba(234, 179, 8, 0.4)' },   // Yellow
-    'b2': { primary: '#f97316', secondary: '#ffedd5', glow: 'rgba(249, 115, 22, 0.4)' },  // Orange
-    'c1': { primary: '#ef4444', secondary: '#fee2e2', glow: 'rgba(239, 68, 68, 0.4)' },   // Red
-    'c2': { primary: '#dc2626', secondary: '#fecaca', glow: 'rgba(220, 38, 38, 0.4)' }    // Dark Red
+  // Full-sentence mode color scheme (C1+C2 level)
+  const colorScheme = { 
+    primary: '#667eea', 
+    secondary: '#e0e7ff', 
+    glow: 'rgba(102, 126, 234, 0.4)' 
   };
-
-  const colorScheme = difficultyColors[difficultyLevel] || difficultyColors['b1'];
 
   // SVG Circle calculations - Smaller size for compact display
   const size = 48;
