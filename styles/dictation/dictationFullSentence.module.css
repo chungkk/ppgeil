@@ -289,15 +289,15 @@
 /* Full Sentence Input */
 .fullSentenceInput {
   width: 100%;
-  min-height: 44px;
-  max-height: 64px;
-  padding: 8px 12px;
-  padding-right: 54px; /* Space for voice button on right */
-  font-size: 15px;
-  line-height: 1.4;
+  min-height: 56px;
+  max-height: 80px;
+  padding: 14px 16px;
+  padding-right: 60px; /* Space for voice button on right */
+  font-size: 16px;
+  line-height: 1.5;
   background: rgba(255, 255, 255, 0.08);
   border: 2px solid rgba(102, 126, 234, 0.3);
-  border-radius: 10px;
+  border-radius: 12px;
   color: rgba(255, 255, 255, 0.95);
   resize: none;
   transition: all 0.2s ease;
@@ -366,31 +366,95 @@
   flex: 1;
 }
 
-/* Check Button */
+/* Check Button - Modern Design */
 .checkButton {
   flex: 1;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  position: relative;
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
   border: none;
   color: white;
-  padding: 16px 28px;
-  border-radius: 50px;
+  padding: 14px 32px;
+  border-radius: 14px;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 
+    0 4px 20px rgba(16, 185, 129, 0.4),
+    0 2px 8px rgba(5, 150, 105, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  min-width: 160px;
+}
+
+/* Shimmer effect on button */
+.checkButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.checkButton:hover::before {
+  left: 100%;
+}
+
+/* Icon container */
+.checkButton::after {
+  content: '✓';
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.checkButton:hover::after {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
 }
 
 .checkButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 
+    0 8px 30px rgba(16, 185, 129, 0.5),
+    0 4px 15px rgba(5, 150, 105, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  background: linear-gradient(135deg, #047857 0%, #059669 50%, #10b981 100%);
 }
 
 .checkButton:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 
+    0 2px 10px rgba(16, 185, 129, 0.35),
+    inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkButton:disabled {
+  background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+  transform: none;
+}
+
+.checkButton:disabled::before,
+.checkButton:disabled::after {
+  display: none;
 }
 
 /* Mode Toggle */
@@ -473,6 +537,12 @@
     padding: 6px 12px;
     border-radius: 8px;
     height: 28px;
+    min-width: auto;
+  }
+  
+  .checkButton::before,
+  .checkButton::after {
+    display: none;
   }
 
   .modeToggle {

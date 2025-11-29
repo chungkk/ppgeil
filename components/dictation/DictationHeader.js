@@ -49,11 +49,14 @@ const DictationHeader = ({
         {/* Translation Toggle - Desktop Only */}
         {!isMobile && onToggleTranslation && (
           <button
-            className={styles.translationToggleHeader}
+            className={`${styles.translationToggleBtn} ${showTranslation ? styles.translationToggleBtnActive : ''}`}
             onClick={onToggleTranslation}
             title={showTranslation ? 'Ẩn dịch' : 'Hiện dịch'}
           >
-            {showTranslation ? '👁️' : '👁️‍🗨️'}
+            <span className={styles.translationToggleLabel}>Dịch</span>
+            <div className={styles.translationToggleSwitch}>
+              <div className={styles.translationToggleSlider} />
+            </div>
           </button>
         )}
         {/* Sentence Counter */}
