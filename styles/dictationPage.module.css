@@ -3119,11 +3119,11 @@
   }
 
   .fullSentenceInput {
-    min-height: 36px;
-    max-height: 52px;
-    font-size: 14px;
-    padding: 8px 10px;
-    padding-right: 48px;
+    min-height: 48px;
+    max-height: 72px;
+    font-size: 15px;
+    padding: 12px 14px;
+    padding-right: 52px;
   }
 
   .sentenceResult {
@@ -3316,11 +3316,11 @@
   }
 
   .fullSentenceInput {
-    min-height: 36px;
-    max-height: 52px;
-    font-size: 14px;
-    padding: 8px 10px;
-    padding-right: 48px;
+    min-height: 48px;
+    max-height: 72px;
+    font-size: 15px;
+    padding: 12px 14px;
+    padding-right: 52px;
   }
 
   .videoHeader,
@@ -3349,6 +3349,8 @@
     gap: 2px;
     row-gap: 4px;
     margin-bottom: 12px;
+    background: transparent;
+    border: none;
   }
 
   .hintWordBox {
@@ -3695,10 +3697,10 @@
   }
 
   .fullSentenceInput {
-    min-height: 32px;
-    max-height: 48px;
-    padding: 6px 10px;
-    padding-right: 44px;
+    min-height: 44px;
+    max-height: 64px;
+    padding: 10px 12px;
+    padding-right: 48px;
   }
   
   .sentenceNumber {
