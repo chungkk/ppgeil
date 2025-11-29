@@ -3024,84 +3024,65 @@
 .translationToggleBtn {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   padding: 6px 12px;
-  background: rgba(100, 116, 139, 0.15);
-  border: 1.5px solid rgba(100, 116, 139, 0.3);
+  background: transparent;
+  border: none;
   border-radius: 20px;
   color: #64748b;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   white-space: nowrap;
-  position: relative;
-  overflow: hidden;
-}
-
-.translationToggleBtn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(96, 165, 250, 0.3) 0%, rgba(59, 130, 246, 0.3) 100%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 18px;
 }
 
 .translationToggleBtn:hover {
-  background: rgba(96, 165, 250, 0.12);
-  border-color: rgba(96, 165, 250, 0.4);
-  color: #94a3b8;
-  transform: translateY(-1px);
+  background: rgba(100, 116, 139, 0.08);
 }
 
 .translationToggleBtn:active {
-  transform: scale(0.96);
+  transform: scale(0.98);
 }
 
-.translationToggleBtnActive {
-  background: linear-gradient(135deg, rgba(96, 165, 250, 0.25) 0%, rgba(59, 130, 246, 0.25) 100%);
-  border-color: #60a5fa;
-  color: #60a5fa;
-  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15), 0 4px 12px rgba(96, 165, 250, 0.2);
+.toggleLabel {
+  user-select: none;
+  transition: color 0.2s ease;
 }
 
-.translationToggleBtnActive::before {
-  opacity: 1;
+.translationToggleBtnActive .toggleLabel {
+  color: #3b82f6;
+  font-weight: 600;
 }
 
-.translationToggleBtn svg {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.translationToggleBtnActive svg {
-  transform: scale(1.1);
-}
-
-.translationToggleBtn span {
-  font-weight: 700;
+/* Toggle Switch */
+.toggleSwitch {
   position: relative;
-  z-index: 1;
+  width: 36px;
+  height: 20px;
+  background: #cbd5e1;
+  border-radius: 10px;
+  transition: background 0.3s ease;
 }
 
-/* Toggle indicator dot */
-.translationToggleBtn::after {
-  content: '';
-  width: 6px;
-  height: 6px;
+.translationToggleBtnActive .toggleSwitch {
+  background: #3b82f6;
+}
+
+.toggleSlider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
   border-radius: 50%;
-  background: #64748b;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 2px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.translationToggleBtnActive::after {
-  background: #60a5fa;
-  box-shadow: 0 0 8px rgba(96, 165, 250, 0.6);
+.translationToggleBtnActive .toggleSlider {
+  transform: translateX(16px);
 }
 
 /* Mobile Controls Left Container */
