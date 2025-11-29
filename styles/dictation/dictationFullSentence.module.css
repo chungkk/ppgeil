@@ -4,10 +4,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   padding: 8px 8px 0 8px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  justify-content: space-between;
 }
 
 .fullSentenceDisplay {
@@ -18,8 +19,9 @@
   font-size: 16px;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
-  min-height: 140px;
-  max-height: 210px;
+  min-height: 180px;
+  max-height: none;
+  flex: 1;
   display: flex;
   align-items: flex-start;
   overflow-y: auto;
@@ -35,42 +37,60 @@
 .hintSentenceText {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 6px;
-  align-items: flex-start;
+  gap: 2px;
+  row-gap: 4px;
+  align-items: flex-end;
+  justify-content: center;
+  align-content: flex-start;
   width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-sizing: border-box;
 }
 
 .hintWordContainer {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 2px;
   flex-shrink: 0;
+  min-height: 40px;
+  position: relative;
+  margin: 0;
+  vertical-align: bottom;
+  line-height: 1;
 }
 
 /* Hint Word Box */
 .hintWordBox {
-  display: inline-block;
-  min-width: 35px;
-  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  height: 32px;
   padding: 4px 8px;
   background: rgba(102, 126, 234, 0.1);
   border: 2px dashed rgba(102, 126, 234, 0.3);
   border-radius: 6px;
   color: transparent;
-  font-size: 13px;
-  line-height: 1.3;
+  font-size: 16px;
+  line-height: 1.2;
   text-align: center;
   box-sizing: border-box;
   transition: all 0.2s ease;
   cursor: pointer;
   user-select: none;
-  width: fit-content;
-  max-width: 100px;
+  width: auto;
+  max-width: none;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  vertical-align: middle;
 }
 
 .hintWordBox:hover {
@@ -89,8 +109,10 @@
   color: #10b981;
   font-weight: 600;
   animation: revealWord 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  min-width: 35px;
-  height: 30px;
+  min-width: 45px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -106,8 +128,10 @@
   color: #3b82f6;
   font-weight: 500;
   transition: all 0.15s ease;
-  min-width: 35px;
-  height: 30px;
+  min-width: 45px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -125,8 +149,10 @@
   animation: correctWord 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   cursor: default;
-  min-width: 35px;
-  height: 30px;
+  min-width: 45px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -139,8 +165,10 @@
   animation: incorrectWord 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   cursor: default;
-  min-width: 35px;
-  height: 30px;
+  min-width: 45px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -212,9 +240,10 @@
   width: 100%;
   margin-top: auto;
   margin-bottom: 0;
-  flex: 1;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  padding-top: 4px;
 }
 
 .textareaWithVoice .voiceButton {
@@ -260,19 +289,20 @@
 /* Full Sentence Input */
 .fullSentenceInput {
   width: 100%;
-  min-height: 92px;
-  max-height: 142px;
-  padding: 10px;
-  padding-bottom: 72px;
-  font-size: 16px;
+  min-height: 44px;
+  max-height: 64px;
+  padding: 8px 12px;
+  padding-right: 54px; /* Space for voice button on right */
+  font-size: 15px;
   line-height: 1.4;
   background: rgba(255, 255, 255, 0.08);
   border: 2px solid rgba(102, 126, 234, 0.3);
-  border-radius: 12px;
+  border-radius: 10px;
   color: rgba(255, 255, 255, 0.95);
-  resize: vertical;
+  resize: none;
   transition: all 0.2s ease;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  flex-shrink: 0;
 }
 
 .fullSentenceInput:focus {
@@ -413,21 +443,24 @@
 @media (max-width: 768px) {
   .fullSentenceMode {
     padding: 6px 6px 0 6px;
-    gap: 10px;
+    gap: 8px;
   }
 
   .fullSentenceDisplay {
     padding: 10px;
     font-size: 14px;
-    min-height: 120px;
-    max-height: 190px;
+    min-height: 140px;
+    max-height: none;
+    flex: 1;
   }
 
   .fullSentenceInput {
-    min-height: 40px;
-    max-height: 80px;
+    min-height: 36px;
+    max-height: 60px;
     font-size: 14px;
-    padding: 10px;
+    padding: 8px 10px;
+    padding-right: 50px;
+    flex-shrink: 0;
   }
 
   .sentenceResult {
@@ -482,8 +515,10 @@
   }
 
   .fullSentenceInput {
-    padding: 12px;
-    padding-bottom: 54px;
+    min-height: 32px;
+    max-height: 50px;
+    padding: 8px 10px;
+    padding-right: 48px;
   }
 }
 
