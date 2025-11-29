@@ -19,7 +19,8 @@ const MobileBottomControls = ({
   onPrevious,
   onNext,
   canGoPrevious = true,
-  canGoNext = true
+  canGoNext = true,
+  voiceRecorder = null
 }) => {
   return (
     <div className={styles.mobileBottomControls}>
@@ -62,6 +63,13 @@ const MobileBottomControls = ({
           </svg>
         )}
       </button>
+
+      {/* Voice Recorder Button */}
+      {voiceRecorder && (
+        <div className={styles.mobileControlBtnVoice}>
+          {voiceRecorder}
+        </div>
+      )}
 
       {/* Next Sentence Button */}
       <button 

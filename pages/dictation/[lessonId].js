@@ -3498,23 +3498,7 @@ const DictationPageContent = () => {
                                   }}
                                   disabled={isCompleted}
                                   rows={3}
-                                  style={{ paddingRight: '65px' }}
                                 />
-                                {!isCompleted && (
-                                  <div className={styles.mobileVoiceButton}>
-                                    <ShadowingVoiceRecorder
-                                      onTranscript={(text) => {
-                                        setFullSentenceInputs(prev => ({
-                                          ...prev,
-                                          [originalIndex]: text
-                                        }));
-                                        calculatePartialReveals(originalIndex, text, sentence.text);
-                                      }}
-                                      onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
-                                      language="de-DE"
-                                    />
-                                  </div>
-                                )}
                               </div>
 
                               {isActive && !isCompleted && (
@@ -3790,6 +3774,24 @@ const DictationPageContent = () => {
           onNext={goToNextSentence}
           canGoPrevious={sortedTranscriptIndices.indexOf(currentSentenceIndex) !== 0}
           canGoNext={sortedTranscriptIndices.indexOf(currentSentenceIndex) < sortedTranscriptIndices.length - 1}
+          voiceRecorder={
+            !completedSentences.includes(currentSentenceIndex) && (
+              <ShadowingVoiceRecorder
+                onTranscript={(text) => {
+                  setFullSentenceInputs(prev => ({
+                    ...prev,
+                    [currentSentenceIndex]: text
+                  }));
+                  if (transcriptData[currentSentenceIndex]) {
+                    calculatePartialReveals(currentSentenceIndex, text, transcriptData[currentSentenceIndex].text);
+                  }
+                }}
+                onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
+                language="de-DE"
+                size="mobile"
+              />
+            )
+          }
         />
       )}
 

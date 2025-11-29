@@ -113,10 +113,11 @@
 
 /* ============================================
    MOBILE RECORD BUTTON - Circular Style
+   (Synced with dictationMobile.module.css)
    ============================================ */
 .mobileRecordBtn {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%);
   border: 1.5px solid rgba(102, 126, 234, 0.5);
@@ -140,6 +141,8 @@
 }
 
 .mobileRecordBtn svg {
+  width: 22px;
+  height: 22px;
   transition: transform 0.15s ease;
 }
 

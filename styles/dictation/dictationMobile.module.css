@@ -34,8 +34,8 @@
 
 /* Base Mobile Circular Button */
 .mobileControlBtn {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   border: 1.5px solid var(--border-color);
@@ -59,15 +59,15 @@
 }
 
 .mobileControlBtn svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   transition: transform 0.2s ease;
 }
 
 /* Play Button - Larger & Gradient */
 .mobileControlBtnPlay {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: 2px solid rgba(102, 126, 234, 0.5);
   color: white;
@@ -80,8 +80,8 @@
 }
 
 .mobileControlBtnPlay svg {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
 }
 
 /* Navigation Buttons (Previous/Next) */
@@ -104,6 +104,13 @@
 
 .mobileControlBtnReplay:active:not(:disabled) {
   background: rgba(255, 255, 255, 0.15);
+}
+
+/* Voice Recorder Button Container */
+.mobileControlBtnVoice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Dictation Slides */
