@@ -1668,29 +1668,31 @@
 
 .showAllWordsButton {
   flex: 1;
-  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-  border: none;
-  color: white;
-  padding: 16px 28px;
-  border-radius: 50px;
-  font-size: 15px;
-  font-weight: 700;
+  background: transparent;
+  border: 2px solid rgba(251, 191, 36, 0.5);
+  color: #fbbf24;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  box-shadow: none;
+  text-transform: none;
+  letter-spacing: 0.3px;
 }
 
 .showAllWordsButton:hover {
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+  background: rgba(251, 191, 36, 0.15);
+  border-color: rgba(251, 191, 36, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
 }
 
 .showAllWordsButton:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
+  box-shadow: none;
+  background: rgba(251, 191, 36, 0.2);
 }
 
 .nextButton {
