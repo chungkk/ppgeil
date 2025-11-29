@@ -41,7 +41,7 @@ const dictionaryCache = {
   }
 };
 
-const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, context, transcriptData }) => {
+const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, context, sentenceTranslation, transcriptData }) => {
   const { t } = useTranslation();
   const { user } = useAuth();
   const [wordData, setWordData] = useState(null);
@@ -125,13 +125,15 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
         return;
       }
 
-      // Call translate API (fast, simple translation)
+      // Call translate API (fast, simple translation with context)
       try {
         const response = await fetch('/api/translate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             text: word,
+            context: context || '',
+            sentenceTranslation: sentenceTranslation || '',
             sourceLang: 'de',
             targetLang: targetLang
           })
@@ -150,7 +152,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
     };
 
     fetchTranslation();
-  }, [word, user]);
+  }, [word, user, context, sentenceTranslation]);
 
   // Step 2: Fetch explanation only (examples loaded on demand)
   useEffect(() => {

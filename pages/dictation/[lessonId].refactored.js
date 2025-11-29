@@ -1183,6 +1183,8 @@ const DictationPageContent = () => {
           arrowPosition={vocabulary.popupArrowPosition}
           lessonId={lessonId}
           context={transcriptData[currentSentenceIndex]?.text || ''}
+          sentenceTranslation={transcriptData[currentSentenceIndex]?.translation || ''}
+          transcriptData={transcriptData}
           onClose={vocabulary.closeVocabPopup}
         />
       )}

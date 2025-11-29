@@ -4024,6 +4024,7 @@ const DictationPageContent = () => {
           arrowPosition={popupArrowPosition}
           lessonId={lessonId}
           context={transcriptData[currentSentenceIndex]?.text || ''}
+          sentenceTranslation={transcriptData[currentSentenceIndex]?.translation || ''}
           transcriptData={transcriptData}
           onClose={() => {
             setShowVocabPopup(false);

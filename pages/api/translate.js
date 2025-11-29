@@ -105,7 +105,7 @@ async function translateWithGoogle(text, sourceLang, targetLang) {
 /**
  * Translate using OpenAI GPT-4 (high quality but expensive)
  */
-async function translateWithOpenAI(text, context = '', targetLang = 'vi', sourceLang = 'de') {
+async function translateWithOpenAI(text, context = '', targetLang = 'vi', sourceLang = 'de', sentenceTranslation = '') {
   if (!OPENAI_API_KEY) {
     throw new Error('OPENAI_API_KEY not configured');
   }
@@ -117,15 +117,27 @@ async function translateWithOpenAI(text, context = '', targetLang = 'vi', source
     ? 'automatically detect the source language and translate'
     : `Translate from ${LANGUAGE_NAMES[sourceLang] || sourceLang}`;
 
-  const prompt = context
-    ? `${sourceText} to ${targetLanguageName}. This word appears in context: "${context}"
+  let prompt;
+  
+  // If we have both context and its translation, use smart extraction
+  if (context && sentenceTranslation) {
+    prompt = `Extract the meaning of "${text}" from this sentence pair:
+
+Original: "${context}"
+Translation: "${sentenceTranslation}"
+
+What does "${text}" mean in ${targetLanguageName}? Return ONLY the meaning, no explanations.`;
+  } else if (context) {
+    prompt = `${sourceText} to ${targetLanguageName}. This word appears in context: "${context}"
 
 Word: ${text}
 
-Return 2-3 common meanings in ${targetLanguageName}, separated by commas. Example: "house, home, building". No explanations.`
-    : `${sourceText} to ${targetLanguageName}: ${text}
+Return 2-3 common meanings in ${targetLanguageName}, separated by commas. Example: "house, home, building". No explanations.`;
+  } else {
+    prompt = `${sourceText} to ${targetLanguageName}: ${text}
 
 Return 2-3 common meanings in ${targetLanguageName}, separated by commas. Example: "house, home, building". No explanations.`;
+  }
 
   const response = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
@@ -134,7 +146,7 @@ Return 2-3 common meanings in ${targetLanguageName}, separated by commas. Exampl
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      model: 'gpt-4o-mini', // Cheaper than gpt-4
+      model: 'gpt-4o-mini',
       messages: [
         {
           role: 'system',
@@ -161,7 +173,7 @@ Return 2-3 common meanings in ${targetLanguageName}, separated by commas. Exampl
 /**
  * Translate using Groq AI (improved prompt for better translation with auto-detection)
  */
-async function translateWithGroq(text, context = '', targetLang = 'vi', sourceLang = 'de') {
+async function translateWithGroq(text, context = '', targetLang = 'vi', sourceLang = 'de', sentenceTranslation = '') {
   if (!GROQ_API_KEY) {
     throw new Error('GROQ_API_KEY not configured');
   }
@@ -173,15 +185,27 @@ async function translateWithGroq(text, context = '', targetLang = 'vi', sourceLa
     ? 'Automatically detect the source language and translate'
     : `Translate from ${LANGUAGE_NAMES[sourceLang] || sourceLang}`;
 
-  const prompt = context
-    ? `${sourceText} to ${targetLanguageName}. This word appears in context: "${context}"
+  let prompt;
+  
+  // If we have both context and its translation, use smart extraction
+  if (context && sentenceTranslation) {
+    prompt = `Extract the meaning of "${text}" from this sentence pair:
+
+Original: "${context}"
+Translation: "${sentenceTranslation}"
+
+What does "${text}" mean in ${targetLanguageName}? Return ONLY the meaning, no explanations, no articles.`;
+  } else if (context) {
+    prompt = `${sourceText} to ${targetLanguageName}. This word appears in context: "${context}"
 
 Word to translate: ${text}
 
-ONLY return the meaning in ${targetLanguageName}, NO explanations, NO additional text. If it's a noun, DO NOT add articles (der/die/das). Translation must be concise, natural and accurate.`
-    : `${sourceText} to ${targetLanguageName}: ${text}
+ONLY return the meaning in ${targetLanguageName}, NO explanations, NO additional text. If it's a noun, DO NOT add articles (der/die/das). Translation must be concise, natural and accurate.`;
+  } else {
+    prompt = `${sourceText} to ${targetLanguageName}: ${text}
 
 ONLY return the meaning in ${targetLanguageName}, NO explanations, NO additional text. If it's a noun, DO NOT add articles (der/die/das). Translation must be concise, natural and accurate.`;
+  }
 
   const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
@@ -252,19 +276,19 @@ function withTimeout(promise, timeoutMs, serviceName) {
 /**
  * Try all services in parallel and return the fastest successful result
  */
-async function translateParallel(text, context, sourceLang, targetLang) {
+async function translateParallel(text, context, sourceLang, targetLang, sentenceTranslation = '') {
   const promises = [];
 
   // OpenAI with 4s timeout
   if (OPENAI_API_KEY) {
     promises.push(
-      withTimeout(translateWithOpenAI(text, context, targetLang, sourceLang), 4000, 'OpenAI')
+      withTimeout(translateWithOpenAI(text, context, targetLang, sourceLang, sentenceTranslation), 4000, 'OpenAI')
         .then(result => ({ method: 'openai-gpt4', translation: result, priority: 1 }))
         .catch(error => ({ error: error.message, method: 'openai-gpt4', priority: 1 }))
     );
   }
 
-  // Google Translate with 3s timeout
+  // Google Translate with 3s timeout (doesn't use sentenceTranslation)
   if (GOOGLE_TRANSLATE_API_KEY) {
     promises.push(
       withTimeout(translateWithGoogle(text, sourceLang, targetLang), 3000, 'Google')
@@ -276,7 +300,7 @@ async function translateParallel(text, context, sourceLang, targetLang) {
   // Groq with 4s timeout
   if (GROQ_API_KEY) {
     promises.push(
-      withTimeout(translateWithGroq(text, context, targetLang, sourceLang), 4000, 'Groq')
+      withTimeout(translateWithGroq(text, context, targetLang, sourceLang, sentenceTranslation), 4000, 'Groq')
         .then(result => ({ method: 'groq-llama', translation: result, priority: 3 }))
         .catch(error => ({ error: error.message, method: 'groq-llama', priority: 3 }))
     );
@@ -315,7 +339,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { text, context = '', sourceLang = 'de', targetLang = 'vi' } = req.body;
+    const { text, context = '', sourceLang = 'de', targetLang = 'vi', sentenceTranslation = '' } = req.body;
 
     if (!text) {
       return res.status(400).json({ message: 'Text is required' });
@@ -323,8 +347,8 @@ export default async function handler(req, res) {
 
     const cleanText = text.trim().toLowerCase();
     
-    // Try all services in parallel
-    const result = await translateParallel(cleanText, context, sourceLang, targetLang);
+    // Try all services in parallel (with sentence translation for smart extraction)
+    const result = await translateParallel(cleanText, context, sourceLang, targetLang, sentenceTranslation);
     
     if (result) {
       console.log(`✅ ${result.method}: ${cleanText} → ${result.translation}`);
