@@ -207,6 +207,7 @@ const DictationPageContent = () => {
   // Ref for mobile dictation slides to enable auto-scroll
   const dictationSlidesRef = useRef(null);
   const isProgrammaticScrollRef = useRef(false); // Track programmatic vs manual scroll
+  const isUserClickedTranscriptRef = useRef(false); // Track when user clicks transcript item directly
   const lastRenderedStateRef = useRef({ sentenceIndex: -1, isCompleted: false }); // Track last rendered state to prevent infinite loop
 
   // Leaderboard tracking
@@ -380,6 +381,11 @@ const DictationPageContent = () => {
 
   // Auto-scroll transcript to current sentence (only scroll within container)
   useEffect(() => {
+    // Skip auto-scroll when user clicked transcript directly
+    if (isUserClickedTranscriptRef.current) {
+      return;
+    }
+    
     if (!isMobile && transcriptItemRefs.current[currentSentenceIndex] && transcriptSectionRef.current) {
       const container = transcriptSectionRef.current;
       const element = transcriptItemRefs.current[currentSentenceIndex];
@@ -1040,6 +1046,13 @@ const DictationPageContent = () => {
 
     // Update currentSentenceIndex to match the clicked sentence
     setCurrentSentenceIndex(clickedIndex);
+    
+    // Set flag to skip auto-scroll (user clicked directly)
+    isUserClickedTranscriptRef.current = true;
+    // Reset flag after a short delay
+    setTimeout(() => {
+      isUserClickedTranscriptRef.current = false;
+    }, 500);
   }, [transcriptData, isYouTube, isPlaying, currentTime, pausedPositions, currentSentenceIndex, userSeekTimeout]);
 
   // Transcript indices in normal order
@@ -1097,12 +1110,20 @@ const DictationPageContent = () => {
         const targetSlide = container.querySelector(`[data-slide-index="${slideIndex}"]`);
 
         if (targetSlide) {
+          // Mark as programmatic scroll to prevent handleScroll from interfering
+          isProgrammaticScrollRef.current = true;
+          
           // Scroll to center the slide
           targetSlide.scrollIntoView({
             behavior: 'smooth',
             block: 'nearest',
             inline: 'center'
           });
+          
+          // Clear flag after scroll animation completes
+          setTimeout(() => {
+            isProgrammaticScrollRef.current = false;
+          }, 800);
         } else {
           console.warn('⚠️ Target slide not found in lazy-loaded range');
         }
@@ -1619,7 +1640,7 @@ const DictationPageContent = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordComparisonResults, transcriptData, wordPointsProcessed]);
 
-  // Toggle reveal hint word
+  // Toggle reveal hint word (legacy - direct reveal without popup)
   const toggleRevealHintWord = useCallback((sentenceIndex, wordIndex) => {
     setRevealedHintWords(prev => {
       const updated = { ...prev };
@@ -2439,6 +2460,64 @@ const DictationPageContent = () => {
     return options;
   }, [transcriptData]);
 
+  // Show word suggestion popup when clicking on hint word box (full-sentence mode)
+  const showHintWordSuggestion = useCallback((sentenceIndex, wordIndex, correctWord, event) => {
+    // Haptic feedback
+    hapticEvents.buttonPress();
+    
+    // Get click position for popup placement - very close to the clicked word
+    const rect = event.target.getBoundingClientRect();
+    const isMobileView = window.innerWidth <= 768;
+    
+    // Mobile: popup is compact (just 3 buttons in a row)
+    const popupWidth = isMobileView ? 220 : 280;
+    const popupHeight = isMobileView ? 50 : 250; // Mobile popup is just ~50px tall
+    const gap = isMobileView ? 4 : 8; // Smaller gap on mobile
+    
+    // Calculate word center position
+    const wordCenterX = rect.left + (rect.width / 2);
+    
+    // Center popup horizontally on the word
+    let left = wordCenterX - (popupWidth / 2);
+    
+    // Position popup just above the word (very close)
+    let top = rect.top - popupHeight - gap;
+    
+    // If not enough space above, show below the word
+    if (top < 10) {
+      top = rect.bottom + gap;
+    }
+    
+    // Keep within horizontal screen bounds
+    if (left < 10) {
+      left = 10;
+    }
+    if (left + popupWidth > window.innerWidth - 10) {
+      left = window.innerWidth - popupWidth - 10;
+    }
+    
+    // If popup goes off bottom of screen, show above
+    if (top + popupHeight > window.innerHeight - 10) {
+      top = rect.top - popupHeight - gap;
+      if (top < 10) top = 10;
+    }
+    
+    // Generate 3 word options from transcript data
+    const localOptions = generateLocalSuggestions(correctWord);
+    
+    // Store sentence index for later use when handling correct/wrong answers
+    setSuggestionWord(correctWord);
+    setSuggestionWordIndex(wordIndex);
+    setSuggestionContext(transcriptData[sentenceIndex]?.text || '');
+    setSuggestionPosition({ top, left });
+    setSuggestionOptions(localOptions);
+    
+    // Store current sentence index for the popup handler
+    setCurrentSentenceIndex(sentenceIndex);
+    
+    setShowSuggestionPopup(true);
+  }, [transcriptData, generateLocalSuggestions]);
+
   // Show hint for a word - now opens suggestion popup instead of revealing directly
   const showHint = useCallback((button, correctWord, wordIndex) => {
     // Haptic feedback for hint button
@@ -2515,36 +2594,37 @@ const DictationPageContent = () => {
     let top, left;
 
     if (isMobileView) {
-      // Mobile: position to the right/left of button, centered vertically
-      const popupWidth = 300; // Estimated mobile popup width
-      const popupHeight = 50; // Estimated mobile popup height
+      // Mobile: position popup directly above/below the word (very close)
+      const popupWidth = 220;
+      const popupHeight = 50;
+      const gap = 4;
 
-      top = rect.top + (rect.height / 2); // Center vertically with the button
+      // Calculate word center position
+      const wordCenterX = rect.left + (rect.width / 2);
       
-      // Determine if there's more space on right or left
-      const spaceOnRight = window.innerWidth - rect.right;
-      const spaceOnLeft = rect.left;
-
-      if (spaceOnRight >= popupWidth + 10) {
-        // Show on right if there's enough space
-        left = rect.right + 5;
-      } else if (spaceOnLeft >= popupWidth + 10) {
-        // Show on left if there's enough space
-        left = rect.left - popupWidth - 5;
-      } else if (spaceOnRight > spaceOnLeft) {
-        // Show on right even if tight
-        left = rect.right + 5;
-      } else {
-        // Show on left even if tight
-        left = rect.left - popupWidth - 5;
+      // Center popup horizontally on the word
+      left = wordCenterX - (popupWidth / 2);
+      
+      // Position popup just above the word
+      top = rect.top - popupHeight - gap;
+      
+      // If not enough space above, show below
+      if (top < 10) {
+        top = rect.bottom + gap;
       }
-
-      // Keep within screen bounds
+      
+      // Keep within horizontal screen bounds
       if (left < 10) {
         left = 10;
       }
       if (left + popupWidth > window.innerWidth - 10) {
         left = window.innerWidth - popupWidth - 10;
+      }
+      
+      // If popup goes off bottom, show above
+      if (top + popupHeight > window.innerHeight - 10) {
+        top = rect.top - popupHeight - gap;
+        if (top < 10) top = 10;
       }
     } else {
       // Desktop: position to the right/left of button, centered vertically
@@ -2652,28 +2732,39 @@ const DictationPageContent = () => {
     // For logged-in users, show suggestion popup
     const context = transcriptData[currentSentenceIndex]?.text || '';
     const rect = input.getBoundingClientRect();
-    const popupWidth = 280;
-    const popupHeight = 250;
-
-    let top = rect.top + (rect.height / 2);
-    let left;
+    const isMobileView = window.innerWidth <= 768;
     
-    const spaceOnRight = window.innerWidth - rect.right;
-    const spaceOnLeft = rect.left;
+    // Mobile: compact popup positioned above/below word
+    const popupWidth = isMobileView ? 220 : 280;
+    const popupHeight = isMobileView ? 50 : 250;
+    const gap = isMobileView ? 4 : 8;
 
-    if (spaceOnRight >= popupWidth + 10) {
-      left = rect.right + 5;
-    } else if (spaceOnLeft >= popupWidth + 10) {
-      left = rect.left - popupWidth - 5;
-    } else {
-      left = Math.max(10, (window.innerWidth - popupWidth) / 2);
-    }
-
-    if (top + popupHeight > window.innerHeight - 10) {
-      top = Math.max(10, window.innerHeight - popupHeight - 10);
-    }
+    // Calculate word center position
+    const wordCenterX = rect.left + (rect.width / 2);
+    
+    // Center popup horizontally on the word
+    let left = wordCenterX - (popupWidth / 2);
+    
+    // Position popup just above the word
+    let top = rect.top - popupHeight - gap;
+    
+    // If not enough space above, show below
     if (top < 10) {
-      top = 10;
+      top = rect.bottom + gap;
+    }
+    
+    // Keep within horizontal screen bounds
+    if (left < 10) {
+      left = 10;
+    }
+    if (left + popupWidth > window.innerWidth - 10) {
+      left = window.innerWidth - popupWidth - 10;
+    }
+    
+    // If popup goes off bottom, show above
+    if (top + popupHeight > window.innerHeight - 10) {
+      top = rect.top - popupHeight - gap;
+      if (top < 10) top = 10;
     }
 
     // Generate options from transcript data (instant, no API call)
@@ -2689,10 +2780,12 @@ const DictationPageContent = () => {
 
   // Handle correct answer from suggestion popup
   const handleCorrectSuggestion = useCallback((correctWord, wordIndex) => {
-    // Find the input with this word index
+    // Find the input with this word index (for traditional dictation mode)
     const input = document.querySelector(`input[data-correct-word="${correctWord}"][id="word-${wordIndex}"]`) ||
                   document.querySelector(`input#word-${wordIndex}`);
+    
     if (input) {
+      // Traditional mode with input elements
       const container = input.parentElement;
       
       // Save this word completion to database
@@ -2745,6 +2838,15 @@ const DictationPageContent = () => {
           isProgrammaticScrollRef.current = false;
         }, 300);
       }
+    } else {
+      // Full-sentence mode - just reveal the word in hint boxes
+      setRevealedHintWords(prev => ({
+        ...prev,
+        [currentSentenceIndex]: {
+          ...(prev[currentSentenceIndex] || {}),
+          [wordIndex]: true
+        }
+      }));
     }
     
     // Close popup
@@ -3322,8 +3424,17 @@ const DictationPageContent = () => {
                           className={`${styles.dictationSlide} ${isActive ? styles.dictationSlideActive : ''}`}
                           onClick={() => {
                             if (!isActive) {
+                              // Mark as programmatic scroll to prevent handleScroll from interfering
+                              isProgrammaticScrollRef.current = true;
+                              
                               setCurrentSentenceIndex(originalIndex);
                               handleSentenceClick(sentence.start, sentence.end);
+                              
+                              // Note: auto-scroll useEffect will also set flag and clear after 800ms
+                              // This timeout is backup to ensure flag is cleared even if auto-scroll doesn't run
+                              setTimeout(() => {
+                                isProgrammaticScrollRef.current = false;
+                              }, 1000);
                             }
                           }}
                         >
@@ -3385,8 +3496,8 @@ const DictationPageContent = () => {
                                         <span key={idx} className={styles.hintWordContainer}>
                                           <span
                                             className={`${styles.hintWordBox} ${wordClass}`}
-                                            onClick={() => !comparisonResult && toggleRevealHintWord(originalIndex, idx)}
-                                            title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để ẩn' : 'Click để hiện gợi ý')}
+                                            onClick={(e) => !comparisonResult && !isRevealed && showHintWordSuggestion(originalIndex, idx, pureWord, e)}
+                                            title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Đã hiện' : 'Click để chọn từ')}
                                           >
                                             {displayText}
                                           </span>
@@ -3532,8 +3643,8 @@ const DictationPageContent = () => {
                                   <span key={idx} className={styles.hintWordContainer}>
                                     <span
                                       className={`${styles.hintWordBox} ${wordClass}`}
-                                      onClick={() => !comparisonResult && toggleRevealHintWord(currentSentenceIndex, idx)}
-                                      title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để ẩn' : 'Click để hiện gợi ý')}
+                                      onClick={(e) => !comparisonResult && !isRevealed && showHintWordSuggestion(currentSentenceIndex, idx, pureWord, e)}
+                                      title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Đã hiện' : 'Click để chọn từ')}
                                     >
                                       {displayText}
                                     </span>

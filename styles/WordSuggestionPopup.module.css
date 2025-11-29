@@ -15,23 +15,34 @@
   background: transparent;
   border: none;
   border-radius: 6px;
-  padding: 6px;
+  padding: 4px;
   width: auto;
   box-shadow: none;
   position: absolute;
-  animation: fadeIn 0.12s ease-out;
+  animation: popupAppear 0.15s ease-out;
   z-index: 10001;
   pointer-events: all;
 }
 
 /* Position popup to the right of word (default) - centered vertically with hint button */
 .positionRight {
-  transform: translate(0px, -50%);
+  transform: translate(0px, 0);
 }
 
 /* Position popup to the left of word - centered vertically with hint button */
 .positionLeft {
-  transform: translate(-100%, -50%);
+  transform: translate(-100%, 0);
+}
+
+@keyframes popupAppear {
+  from {
+    opacity: 0;
+    transform: translateY(5px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @keyframes fadeIn {
@@ -197,56 +208,58 @@
   display: none;
 }
 
-/* Mobile styles - same horizontal layout */
+/* Mobile styles - compact horizontal layout, very close to word */
 .popupMobile {
-  padding: 6px;
+  padding: 3px;
   width: auto;
-  max-width: min(90vw, 280px);
-  border-radius: 6px;
-  background: transparent;
-  box-shadow: none;
+  max-width: min(95vw, 240px);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
 .loadingMobile {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 8px;
-  min-height: 40px;
+  padding: 6px;
+  min-height: 36px;
 }
 
 .loadingMobile .spinner {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-width: 2px;
 }
 
 .optionsContainerMobile {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 4px;
   justify-content: center;
   align-items: stretch;
 }
 
 .optionButtonMobile {
   flex: 1 1 auto;
-  min-width: 55px;
-  max-width: 150px;
-  padding: 8px 8px;
-  font-size: 12px;
+  min-width: 50px;
+  max-width: 120px;
+  padding: 8px 6px;
+  font-size: 13px;
   font-weight: 600;
   color: #ffffff;
   background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-  border: 2px solid #a78bfa;
-  border-radius: 8px;
+  border: 1.5px solid #a78bfa;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.12s ease;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.6);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.5);
 }
 
 .optionButtonMobile:active:not(:disabled) {
