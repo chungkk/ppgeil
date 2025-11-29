@@ -15,10 +15,26 @@ const styles = { ...layoutStyles, ...mobileStyles };
 const MobileBottomControls = ({
   isPlaying,
   onPlayPause,
-  onReplay
+  onReplay,
+  onPrevious,
+  onNext,
+  canGoPrevious = true,
+  canGoNext = true
 }) => {
   return (
     <div className={styles.mobileBottomControls}>
+      {/* Previous Sentence Button */}
+      <button 
+        className={`${styles.mobileControlBtn} ${styles.mobileControlBtnNav}`}
+        onClick={onPrevious}
+        disabled={!canGoPrevious}
+        title="Previous"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
       {/* Replay Button */}
       <button 
         className={`${styles.mobileControlBtn} ${styles.mobileControlBtnReplay}`}
@@ -45,6 +61,18 @@ const MobileBottomControls = ({
             <path d="M8 5v14l11-7z" />
           </svg>
         )}
+      </button>
+
+      {/* Next Sentence Button */}
+      <button 
+        className={`${styles.mobileControlBtn} ${styles.mobileControlBtnNav}`}
+        onClick={onNext}
+        disabled={!canGoNext}
+        title="Next"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
       </button>
     </div>
   );

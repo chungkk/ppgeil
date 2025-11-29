@@ -84,6 +84,17 @@
   height: 24px;
 }
 
+/* Navigation Buttons (Previous/Next) */
+.mobileControlBtnNav {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid var(--border-color);
+  color: #94a3b8;
+}
+
+.mobileControlBtnNav:active:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 /* Replay Button */
 .mobileControlBtnReplay {
   background: rgba(255, 255, 255, 0.08);

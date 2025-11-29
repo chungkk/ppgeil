@@ -3364,38 +3364,6 @@ const DictationPageContent = () => {
                 </div>
               ) : isMobile ? (
                 <div className={styles.dictationSlidesWrapper}>
-                  {/* Left Navigation Button */}
-                  <button
-                    className={styles.slideNavButton}
-                    style={{ left: '4px' }}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      goToPreviousSentence();
-                    }}
-                    disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) === 0}
-                    aria-label="Previous sentence"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                  </button>
-
-                  {/* Right Navigation Button */}
-                  <button
-                    className={styles.slideNavButton}
-                    style={{ right: '4px' }}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      goToNextSentence();
-                    }}
-                    disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
-                    aria-label="Next sentence"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                  </button>
-
                   <div 
                     className={styles.dictationSlides}
                     ref={dictationSlidesRef}
