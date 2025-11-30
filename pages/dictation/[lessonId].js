@@ -3202,16 +3202,20 @@ const DictationPageContent = () => {
   // Set initial sentence to first incomplete sentence when progress is loaded
   useEffect(() => {
     if (progressLoaded && sortedTranscriptIndices.length > 0 && !hasJumpedToIncomplete.current && transcriptData.length > 0) {
-      // Always jump to first incomplete sentence in sorted list
-      const firstIncompleteSentence = sortedTranscriptIndices[0];
+      // Find the first INCOMPLETE sentence (not completed)
+      let firstIncompleteSentence = 0;
+      for (let i = 0; i < transcriptData.length; i++) {
+        if (!completedSentences.includes(i)) {
+          firstIncompleteSentence = i;
+          break;
+        }
+      }
       
       console.log('🎯 Jump Logic Debug:', {
         totalSentences: transcriptData.length,
-        sortedIndicesLength: sortedTranscriptIndices.length,
+        completedCount: completedSentences.length,
         completedSentences: completedSentences,
-        firstIncompleteSentence: firstIncompleteSentence,
-        isFirstCompleted: completedSentences.includes(firstIncompleteSentence),
-        sortedIndices: sortedTranscriptIndices.slice(0, 10) // Show first 10
+        firstIncompleteSentence: firstIncompleteSentence
       });
       
       setCurrentSentenceIndex(firstIncompleteSentence);
