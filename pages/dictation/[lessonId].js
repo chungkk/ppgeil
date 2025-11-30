@@ -1588,25 +1588,34 @@ const DictationPageContent = () => {
       
       if (!sentence || !comparisonResults) return;
       
-      // Check if this sentence has already been scored
-      const allWordsProcessed = Object.keys(comparisonResults).every(wordIdx => 
-        wordPointsProcessed[sentenceIndex]?.[parseInt(wordIdx)]
-      );
-      
-      if (allWordsProcessed) return; // Already scored this sentence
-      
-      // Count correct and incorrect words
+      // Count correct and incorrect words - ONLY for words NOT already processed via hint popup
       let correctCount = 0;
       let incorrectCount = 0;
+      const unprocessedWordIndices = [];
       
       Object.keys(comparisonResults).forEach(wordIdxStr => {
         const wordIdx = parseInt(wordIdxStr);
+        
+        // Skip words already processed via hint popup (either correct or incorrect)
+        if (wordPointsProcessed[sentenceIndex]?.[wordIdx]) {
+          console.log(`⏭️ Skipping word ${wordIdx} - already processed via popup`);
+          return;
+        }
+        
+        unprocessedWordIndices.push(wordIdx);
+        
         if (comparisonResults[wordIdx] === 'correct') {
           correctCount++;
         } else {
           incorrectCount++;
         }
       });
+      
+      // If all words were already processed, skip this sentence
+      if (unprocessedWordIndices.length === 0) {
+        console.log(`⏭️ All words in sentence ${sentenceIndex} already processed, skipping`);
+        return;
+      }
       
       // Award/deduct points as batch (with small delay for DOM update)
       setTimeout(() => {
@@ -1621,10 +1630,9 @@ const DictationPageContent = () => {
           updatePoints(totalPoints, reason, firstWordBox);
         }
         
-        // Mark all words as processed
+        // Mark only UNPROCESSED words as processed (skip ones already done via popup)
         const updatedProcessed = {};
-        Object.keys(comparisonResults).forEach(wordIdxStr => {
-          const wordIdx = parseInt(wordIdxStr);
+        unprocessedWordIndices.forEach(wordIdx => {
           updatedProcessed[wordIdx] = comparisonResults[wordIdx];
         });
         
@@ -2839,7 +2847,7 @@ const DictationPageContent = () => {
         }, 300);
       }
     } else {
-      // Full-sentence mode - just reveal the word in hint boxes
+      // Full-sentence mode - reveal the word and award points
       setRevealedHintWords(prev => ({
         ...prev,
         [currentSentenceIndex]: {
@@ -2847,6 +2855,21 @@ const DictationPageContent = () => {
           [wordIndex]: true
         }
       }));
+      
+      // Award points for correct word selection (+1 point)
+      if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
+        // Find the word box element for animation
+        const wordBoxes = document.querySelectorAll(`[data-sentence-index="${currentSentenceIndex}"] .hintWordBox, [data-sentence-index="${currentSentenceIndex}"] [class*="hintWordBox"]`);
+        const wordBox = wordBoxes[wordIndex] || null;
+        updatePoints(1, `Correct word from popup: ${correctWord}`, wordBox);
+        setWordPointsProcessed(prev => ({
+          ...prev,
+          [currentSentenceIndex]: {
+            ...(prev[currentSentenceIndex] || {}),
+            [wordIndex]: 'correct'
+          }
+        }));
+      }
     }
     
     // Close popup
