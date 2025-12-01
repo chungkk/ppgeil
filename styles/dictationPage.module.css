@@ -1720,8 +1720,8 @@
   font-size: 16px;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
-  height: 180px;
-  flex: none;
+  min-height: 120px;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3194,8 +3194,8 @@
   .fullSentenceDisplay {
     padding: 10px;
     font-size: 14px;
-    height: 140px;
-    flex: none;
+    min-height: 100px;
+    flex: 1;
     overflow: hidden;
   }
 
