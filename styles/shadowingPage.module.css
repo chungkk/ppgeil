@@ -761,12 +761,12 @@
 }
 
 .sentenceCounterMobile {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   color: #667eea;
-  padding: 6px 12px;
+  padding: 4px 8px;
   background: rgba(102, 126, 234, 0.1);
-  border-radius: 6px;
+  border-radius: 5px;
   flex-shrink: 0;
 }
 
@@ -885,9 +885,9 @@
 
 /* Mobile Play Button - Apple HIG compliant */
 .sentencePlayButtonMobile {
-  width: 26px;
-  height: 26px;
-  min-width: 26px;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none;
@@ -897,7 +897,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.35);
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.35);
   padding: 0;
   flex-shrink: 0;
   vertical-align: middle;
@@ -917,6 +917,8 @@
 .sentencePlayButtonMobile svg {
   margin-left: 1px;
   transition: transform 0.2s ease;
+  width: 7px;
+  height: 9px;
 }
 
 .sentencePlayButtonMobile:has(rect) svg {
@@ -1059,7 +1061,7 @@
   justify-content: flex-start;
   gap: 2px;
   padding: 0;
-  min-width: 36px;
+  min-width: 32px;
   flex-shrink: 0;
 }
 
@@ -1068,13 +1070,13 @@
   position: relative;
   top: auto;
   right: auto;
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  min-height: 24px;
-  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 4px;
   background: transparent;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
   color: #64748b;
   display: flex;
   align-items: center;
@@ -1087,8 +1089,8 @@
 }
 
 .transcriptRightControlsMobile .bookmarkBtnMobile svg {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
 }
 
 .transcriptRightControlsMobile .bookmarkBtnMobile:active {
@@ -1108,11 +1110,11 @@
 
 /* Mobile score placeholder */
 .scoreBadgePlaceholderMobile {
-  width: 34px;
-  height: 18px;
-  border-radius: 9px;
+  width: 30px;
+  height: 16px;
+  border-radius: 8px;
   background: rgba(148, 163, 184, 0.05);
-  border: 1.5px dashed rgba(148, 163, 184, 0.12);
+  border: 1px dashed rgba(148, 163, 184, 0.12);
   opacity: 0;
 }
 
@@ -1126,13 +1128,13 @@
 }
 
 .transcriptRightControlsMobile .inlineScorePercent {
-  width: 34px;
-  min-width: 34px;
-  height: 18px;
-  font-size: 10px;
+  width: 30px;
+  min-width: 30px;
+  height: 16px;
+  font-size: 9px;
   font-weight: 700;
   margin: 0;
-  border-radius: 9px;
+  border-radius: 8px;
 }
 
 .transcriptItemHeader {
@@ -1344,6 +1346,15 @@
     max-height: 100% !important;
   }
 
+  /* Smaller video timer on mobile */
+  .videoTimer {
+    top: 8px;
+    right: 8px;
+    padding: 3px 7px;
+    font-size: 10px;
+    border-radius: 3px;
+  }
+
   .appContainer {
     height: 100%;
     display: flex;
@@ -1363,7 +1374,7 @@
     position: fixed;
     /* iOS Safe Area Support */
     top: max(64px, calc(64px + var(--safe-area-inset-top)));
-    bottom: max(72px, calc(72px + var(--safe-area-inset-bottom)));
+    bottom: max(60px, calc(60px + var(--safe-area-inset-bottom)));
     left: var(--safe-area-inset-left);
     right: var(--safe-area-inset-right);
   }
@@ -1425,8 +1436,8 @@
      max-height: none;
      overflow-y: auto;
      overflow-x: hidden;
-     padding: 8px;
-     gap: 6px;
+     padding: 6px;
+     gap: 5px;
    }
 
    .videoSection {
@@ -1458,8 +1469,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      padding: 10px 12px;
+      gap: 6px;
+      padding: 6px 10px;
       background: var(--bg-hover);
       border-bottom: 1px solid var(--border-color);
     }
@@ -1467,7 +1478,7 @@
     .mobileControlsRight {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 5px;
     }
     
     .mobileControlButton {
@@ -1475,17 +1486,17 @@
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-color);
       color: #94a3b8;
-      /* Apple HIG minimum touch target */
-      min-height: var(--touch-target-min);
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-size: 11px;
+      /* Smaller touch target for compact design */
+      min-height: 28px;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 10px;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.3s ease;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
       white-space: nowrap;
       position: relative;
       overflow: hidden;
@@ -1522,13 +1533,13 @@
     }
 
     .transcriptText {
-      font-size: 14px;
+      font-size: 13px;
       margin-bottom: 0;
-      line-height: 1.55;
+      line-height: 1.5;
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
     }
     
     .transcriptWordsWrapper {
@@ -1539,39 +1550,39 @@
     
     .sentencePlayButtonMobile {
       margin: 0;
-      margin-top: 2px;
+      margin-top: 1px;
     }
 
     .transcriptItem {
-      padding: 10px 10px;
-      border-radius: 10px;
+      padding: 8px 8px;
+      border-radius: 8px;
     }
 
     .transcriptIPA {
       margin: 0;
-      font-size: 11px;
+      font-size: 10px;
       line-height: 1.4;
     }
 
     .transcriptTranslation {
       display: block;
       position: relative;
-      font-size: 11px;
-      line-height: 1.45;
-      margin: 4px 0 0 0;
-      padding: 5px 8px 5px 34px;
-      margin-left: 34px;
+      font-size: 10px;
+      line-height: 1.4;
+      margin: 3px 0 0 0;
+      padding: 4px 6px 4px 26px;
+      margin-left: 28px;
       background: rgba(96, 165, 250, 0.06);
       border-left: 2px solid rgba(96, 165, 250, 0.4);
-      border-radius: 0 6px 6px 0;
+      border-radius: 0 5px 5px 0;
       color: #a5b4c8;
       gap: 0;
     }
 
     .transcriptTranslation::before {
       position: absolute;
-      left: 8px;
-      font-size: 10px;
+      left: 6px;
+      font-size: 9px;
       margin-top: 0;
     }
 
@@ -1608,15 +1619,15 @@
 
 @media (max-width: 480px) {
   .currentSentenceText {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .word {
-    margin: 0 4px;
+    margin: 0 3px;
   }
 
   .transcriptText {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -1828,9 +1839,9 @@
   display: none;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  padding: 12px 16px;
-  padding-bottom: max(12px, env(safe-area-inset-bottom));
+  gap: 12px;
+  padding: 8px 12px;
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
   background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(12px);
   border-top: 1px solid var(--border-color);
@@ -1850,13 +1861,13 @@
 .mobileControlGroup {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 /* Base Mobile Circular Button */
 .mobileCircleBtn {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   border: 1.5px solid var(--border-color);
@@ -1885,8 +1896,8 @@
 
 /* Play Button - Larger & Gradient */
 .mobileCircleBtnPlay {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: 2px solid rgba(102, 126, 234, 0.5);
   color: white;
@@ -1927,8 +1938,8 @@
 
 /* Disabled Mic Button */
 .mobileCircleBtnDisabled {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: rgba(148, 163, 184, 0.1);
   border: 1.5px solid rgba(148, 163, 184, 0.3);
@@ -1940,8 +1951,8 @@
 }
 
 .mobileCircleBtnDisabled svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 /* Voice Recording Section */
@@ -3044,20 +3055,20 @@
 .mobileControlsLeft {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
 }
 
 /* Mobile Bookmark Filter Button */
 .bookmarkFilterBtnMobile {
   display: flex;
   align-items: center;
-  gap: 4px;
-  padding: 5px 10px;
+  gap: 3px;
+  padding: 3px 7px;
   background: rgba(251, 191, 36, 0.1);
-  border: 1.5px solid rgba(251, 191, 36, 0.3);
-  border-radius: 16px;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 12px;
   color: #94a3b8;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease;
