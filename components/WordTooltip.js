@@ -2,8 +2,6 @@ import React from 'react';
 import styles from '../styles/WordTooltip.module.css';
 
 const WordTooltip = ({ translation, position, onClose }) => {
-  if (!translation) return null;
-
   return (
     <>
       <div className={styles.overlay} onClick={onClose} />
@@ -18,7 +16,7 @@ const WordTooltip = ({ translation, position, onClose }) => {
       >
         <div className={styles.arrow} />
         <div className={styles.content}>
-          {translation}
+          {translation || '...'}
         </div>
       </div>
     </>
