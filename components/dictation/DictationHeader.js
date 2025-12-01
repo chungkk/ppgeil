@@ -46,23 +46,25 @@ const DictationHeader = ({
             {playbackSpeed || 1}x
           </button>
         )}
-        {/* Translation Toggle - Desktop Only */}
+        {/* Translation Toggle - Desktop Only (synced with Auto Stop style) */}
         {!isMobile && onToggleTranslation && (
-          <button
-            className={`${styles.translationToggleBtn} ${showTranslation ? styles.translationToggleBtnActive : ''}`}
-            onClick={onToggleTranslation}
-            title={showTranslation ? 'Ẩn dịch' : 'Hiện dịch'}
-          >
-            <span className={styles.translationToggleLabel}>Dịch</span>
-            <div className={styles.translationToggleSwitch}>
-              <div className={styles.translationToggleSlider} />
-            </div>
-          </button>
+          <label className={styles.toggleLabel}>
+            <input
+              type="checkbox"
+              checked={showTranslation}
+              onChange={onToggleTranslation}
+              className={styles.toggleInput}
+            />
+            <span className={styles.toggleSlider}></span>
+            <span className={styles.toggleText}>Dịch</span>
+          </label>
         )}
-        {/* Sentence Counter */}
-        <div className={styles.sentenceCounter}>
-          #{currentSentenceIndex + 1} / {totalSentences}
-        </div>
+        {/* Sentence Counter - Mobile Only (Desktop moved to TranscriptPanel) */}
+        {isMobile && (
+          <div className={styles.sentenceCounter}>
+            #{currentSentenceIndex + 1} / {totalSentences}
+          </div>
+        )}
       </div>
     </div>
   );

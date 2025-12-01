@@ -65,7 +65,14 @@ const TranscriptPanel = ({
   return (
     <div className={styles.rightSection}>
       <div className={styles.transcriptHeader}>
-        <h3 className={styles.transcriptTitle}>Transcript</h3>
+        <div className={styles.transcriptHeaderLeft}>
+          <h3 className={styles.transcriptTitle}>Transcript</h3>
+          <span className={styles.transcriptCounter}>
+            <span className={styles.transcriptCounterCurrent}>{currentSentenceIndex + 1}</span>
+            <span className={styles.transcriptCounterSeparator}>/</span>
+            <span className={styles.transcriptCounterTotal}>{transcriptData.length}</span>
+          </span>
+        </div>
         <ProgressIndicator
           completedSentences={completedSentences}
           totalSentences={transcriptData.length}
