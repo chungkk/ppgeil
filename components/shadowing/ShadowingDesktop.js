@@ -122,22 +122,22 @@ const ShadowingDesktop = ({
                 <div className={styles.videoHeader}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <h3 className={styles.transcriptTitle}>{t('lesson.ui.video')}</h3>
+                    <button
+                      className={`${styles.translationToggleBtn} ${autoStop ? styles.translationToggleBtnActive : ''}`}
+                      onClick={() => setAutoStop(!autoStop)}
+                      title={autoStop ? 'Tắt Auto Stop' : 'Bật Auto Stop'}
+                    >
+                      <span className={styles.toggleLabel}>{t('lesson.ui.autoStop')}</span>
+                      <div className={styles.toggleSwitch}>
+                        <div className={styles.toggleSlider}></div>
+                      </div>
+                    </button>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <div className={styles.studyTimer}>
                       <span className={styles.timerIcon}>⏱️</span>
                       <span className={styles.timerText}>{formatStudyTime(studyTime)}</span>
                     </div>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <label className={styles.toggleLabel}>
-                      <input
-                        type="checkbox"
-                        checked={autoStop}
-                        onChange={(e) => setAutoStop(e.target.checked)}
-                        className={styles.toggleInput}
-                      />
-                      <span className={styles.toggleSlider}></span>
-                      <span className={styles.toggleText}>{t('lesson.ui.autoStop')}</span>
-                    </label>
                     <button className={styles.speedButton} onClick={() => {
                       const speeds = [0.5, 0.75, 1, 1.25, 1.5];
                       const currentIndex = speeds.indexOf(playbackSpeed);

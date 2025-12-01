@@ -534,57 +534,12 @@
   gap: 24px;
 }
 
-/* Toggle Switch */
+/* Toggle Label for button-style toggles */
 .toggleLabel {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.toggleInput {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.toggleSlider {
-  position: relative;
-  display: inline-block;
-  width: 42px;
-  height: 22px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 999px;
-  transition: background 0.3s;
-}
-
-.toggleSlider::before {
-  content: '';
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  background: white;
-  transition: transform 0.3s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.toggleInput:checked + .toggleSlider {
-  background: #4a90e2;
-}
-
-.toggleInput:checked + .toggleSlider::before {
-  transform: translateX(20px);
-}
-
-.toggleText {
-  font-size: 14px;
-  color: #cbd5e1;
+  font-size: 13px;
   font-weight: 500;
+  user-select: none;
+  transition: color 0.2s ease;
 }
 
 /* Checkbox */
