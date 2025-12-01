@@ -621,14 +621,10 @@ const DictationPageContent = () => {
     }
   }, [lesson]);
 
-  // Load progress from SWR hook
+  // Load progress from SWR hook (logged-in users) or localStorage (guests)
   useEffect(() => {
-    // Wait until loadedProgress is actually loaded (not undefined)
-    // It can be null or empty object for new users, that's ok
-    if (loadedProgress !== undefined) {
-      const loadedSentences = loadedProgress.completedSentences || [];
-      const loadedWords = loadedProgress.completedWords || {};
-
+    // Helper function to normalize and set progress data
+    const setProgressData = (loadedSentences, loadedWords, source) => {
       // Normalize keys to numbers
       const normalizedWords = {};
       Object.keys(loadedWords).forEach(sentenceIdx => {
@@ -643,17 +639,44 @@ const DictationPageContent = () => {
       setCompletedSentences(loadedSentences);
       setCompletedWords(normalizedWords);
 
-      if (DEBUG_TIMER) {
-        console.log('Loaded and normalized progress from SWR:', {
-          completedSentences: loadedSentences,
-          completedWords: normalizedWords
-        });
-      }
+      console.log(`📂 Progress loaded from ${source}:`, {
+        completedSentences: loadedSentences,
+        completedWords: normalizedWords
+      });
       
-      // Only set progressLoaded to true after we've processed the data
       setProgressLoaded(true);
+    };
+
+    // Wait until loadedProgress is actually loaded (not undefined)
+    if (loadedProgress !== undefined) {
+      // Check if user is logged in
+      const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+      
+      if (token) {
+        // Logged-in user: use data from API (SWR)
+        const loadedSentences = loadedProgress.completedSentences || [];
+        const loadedWords = loadedProgress.completedWords || {};
+        setProgressData(loadedSentences, loadedWords, 'API (logged-in user)');
+      } else {
+        // Guest user: try to load from localStorage
+        try {
+          const savedProgress = localStorage.getItem(`dictation_progress_${lessonId}`);
+          if (savedProgress) {
+            const parsed = JSON.parse(savedProgress);
+            const loadedSentences = parsed.completedSentences || [];
+            const loadedWords = parsed.completedWords || {};
+            setProgressData(loadedSentences, loadedWords, 'localStorage (guest)');
+          } else {
+            // No saved progress for guest
+            setProgressData([], {}, 'none (new guest)');
+          }
+        } catch (error) {
+          console.error('Error loading guest progress from localStorage:', error);
+          setProgressData([], {}, 'none (error)');
+        }
+      }
     }
-  }, [loadedProgress]);
+  }, [loadedProgress, lessonId]);
 
   // Auto-jump to first incomplete sentence on page load (once only)
   useEffect(() => {
@@ -1412,14 +1435,22 @@ const DictationPageContent = () => {
     return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
-  // Save progress to database
+  // Save progress to database (logged-in users) or localStorage (guests)
   const saveProgress = useCallback(async (updatedCompletedSentences, updatedCompletedWords) => {
     if (!lessonId) return;
     
     try {
       const token = localStorage.getItem('token');
+      
+      // Guest users: save to localStorage
       if (!token) {
-        console.warn('No token found, cannot save progress');
+        const guestProgress = {
+          completedSentences: updatedCompletedSentences,
+          completedWords: updatedCompletedWords,
+          lastUpdated: Date.now()
+        };
+        localStorage.setItem(`dictation_progress_${lessonId}`, JSON.stringify(guestProgress));
+        console.log('💾 Guest progress saved to localStorage:', guestProgress);
         return;
       }
       
@@ -2848,12 +2879,14 @@ const DictationPageContent = () => {
       }
     } else {
       // Full-sentence mode - reveal the word and award points
+      const newRevealedWords = {
+        ...(revealedHintWords[currentSentenceIndex] || {}),
+        [wordIndex]: true
+      };
+      
       setRevealedHintWords(prev => ({
         ...prev,
-        [currentSentenceIndex]: {
-          ...(prev[currentSentenceIndex] || {}),
-          [wordIndex]: true
-        }
+        [currentSentenceIndex]: newRevealedWords
       }));
       
       // Award points for correct word selection (+1 point)
@@ -2870,11 +2903,62 @@ const DictationPageContent = () => {
           }
         }));
       }
+      
+      // Check if ALL words in sentence are now revealed → mark as completed
+      const sentence = transcriptData[currentSentenceIndex];
+      if (sentence) {
+        const words = sentence.text.split(/\s+/);
+        const validWordIndices = [];
+        words.forEach((word, idx) => {
+          const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+          if (pureWord.length >= 1) {
+            validWordIndices.push(idx);
+          }
+        });
+        
+        // Count revealed words (including the one just revealed)
+        const revealedCount = Object.keys(newRevealedWords).filter(k => newRevealedWords[k]).length;
+        const totalWordsToReveal = validWordIndices.length; // 100% hide = all words
+        
+        console.log(`📝 Full-sentence check: ${revealedCount}/${totalWordsToReveal} words revealed`);
+        
+        if (revealedCount >= totalWordsToReveal && !completedSentences.includes(currentSentenceIndex)) {
+          console.log(`✅ All words revealed! Marking sentence ${currentSentenceIndex} as completed`);
+          
+          // Haptic feedback for success
+          hapticEvents.wordCorrect();
+          
+          // Mark sentence as completed
+          const updatedCompleted = [...completedSentences, currentSentenceIndex];
+          setCompletedSentences(updatedCompleted);
+          
+          // Update completedWords for progress tracking
+          const updatedCompletedWords = { ...completedWords };
+          updatedCompletedWords[currentSentenceIndex] = {};
+          words.forEach((word, idx) => {
+            const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+            if (pureWord.length >= 1) {
+              updatedCompletedWords[currentSentenceIndex][idx] = pureWord;
+            }
+          });
+          setCompletedWords(updatedCompletedWords);
+          
+          // Save progress to database
+          saveProgress(updatedCompleted, updatedCompletedWords);
+          
+          // Check if all sentences completed
+          if (updatedCompleted.length === transcriptData.length) {
+            console.log('🎉 All sentences completed!');
+            hapticEvents.lessonComplete();
+            toast.success(t('lesson.completion.allCompleted'));
+          }
+        }
+      }
     }
     
     // Close popup
     setShowSuggestionPopup(false);
-  }, [saveWord, checkSentenceCompletion, saveWordCompletion, wordPointsProcessed, currentSentenceIndex, updatePoints]);
+  }, [saveWord, checkSentenceCompletion, saveWordCompletion, wordPointsProcessed, currentSentenceIndex, updatePoints, revealedHintWords, transcriptData, completedSentences, completedWords, saveProgress, t]);
 
   // Handle wrong answer from suggestion popup
   const handleWrongSuggestion = useCallback((correctWord, wordIndex, selectedWord) => {

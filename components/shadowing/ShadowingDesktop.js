@@ -122,6 +122,12 @@ const ShadowingDesktop = ({
                 <div className={styles.videoHeader}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <h3 className={styles.transcriptTitle}>{t('lesson.ui.video')}</h3>
+                    <div className={styles.studyTimer}>
+                      <span className={styles.timerIcon}>⏱️</span>
+                      <span className={styles.timerText}>{formatStudyTime(studyTime)}</span>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <button
                       className={`${styles.translationToggleBtn} ${autoStop ? styles.translationToggleBtnActive : ''}`}
                       onClick={() => setAutoStop(!autoStop)}
@@ -132,12 +138,6 @@ const ShadowingDesktop = ({
                         <div className={styles.toggleSlider}></div>
                       </div>
                     </button>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <div className={styles.studyTimer}>
-                      <span className={styles.timerIcon}>⏱️</span>
-                      <span className={styles.timerText}>{formatStudyTime(studyTime)}</span>
-                    </div>
                     <button className={styles.speedButton} onClick={() => {
                       const speeds = [0.5, 0.75, 1, 1.25, 1.5];
                       const currentIndex = speeds.indexOf(playbackSpeed);
