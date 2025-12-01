@@ -679,8 +679,10 @@ const DictationPageContent = () => {
   }, [loadedProgress, lessonId]);
 
   // Auto-jump to first incomplete sentence on page load (once only)
+  // This useEffect is DISABLED - using the one at line ~3290 instead
+  // Keep this commented out to avoid duplicate jumps
+  /*
   useEffect(() => {
-    // Only run once when progress is loaded and transcript is ready
     if (!progressLoaded || !transcriptData.length || hasJumpedToIncomplete.current) {
       return;
     }
@@ -719,6 +721,7 @@ const DictationPageContent = () => {
     // Mark as jumped so we don't auto-jump again
     hasJumpedToIncomplete.current = true;
   }, [progressLoaded, transcriptData, completedSentences, currentSentenceIndex, isYouTube]);
+  */
 
   // Smooth time update with requestAnimationFrame
   useEffect(() => {
@@ -3284,6 +3287,7 @@ const DictationPageContent = () => {
   }, [transcriptData, completedWords]);
 
   // Set initial sentence to first incomplete sentence when progress is loaded
+  // Works on both desktop and mobile - uses isProgrammaticScrollRef to prevent mobile scroll conflicts
   useEffect(() => {
     if (progressLoaded && sortedTranscriptIndices.length > 0 && !hasJumpedToIncomplete.current && transcriptData.length > 0) {
       // Find the first INCOMPLETE sentence (not completed)
@@ -3302,6 +3306,12 @@ const DictationPageContent = () => {
         firstIncompleteSentence: firstIncompleteSentence
       });
       
+      // On mobile: set flag to prevent scroll handler from overriding our jump
+      const isMobileView = typeof window !== 'undefined' && window.innerWidth <= 768;
+      if (isMobileView) {
+        isProgrammaticScrollRef.current = true;
+      }
+      
       setCurrentSentenceIndex(firstIncompleteSentence);
       
       // Also seek video to that sentence's start time
@@ -3319,6 +3329,13 @@ const DictationPageContent = () => {
       }
       
       hasJumpedToIncomplete.current = true;
+      
+      // On mobile: clear flag after scroll animation completes
+      if (isMobileView) {
+        setTimeout(() => {
+          isProgrammaticScrollRef.current = false;
+        }, 1000); // 1 second to ensure slide scroll animation is complete
+      }
     }
   }, [progressLoaded, sortedTranscriptIndices, completedSentences, transcriptData, isYouTube]);
 
