@@ -154,13 +154,11 @@
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
   padding: 0 4px;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
   height: 100%;
-  scroll-snap-stop: always;
   scroll-padding: 0 4px;
 }
 
@@ -178,16 +176,14 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  transition:
-    border-color 0.2s ease-out,
-    box-shadow 0.2s ease-out,
-    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-    opacity 0.3s ease-out,
-    filter 0.3s ease-out;
   cursor: pointer;
   min-height: 0;
   height: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* GPU optimization */
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out, border-color 0.2s ease-out;
 }
 
 .dictationSlide:hover {
@@ -219,42 +215,28 @@
   }
 }
 
-/* Non-active slides on mobile */
+/* Non-active slides on mobile - GPU optimized */
 @media (max-width: 768px) {
   .dictationSlide {
-    opacity: 0.6;
-    transform: scale(0.92);
-    filter: blur(0.5px);
+    opacity: 0.5;
+    transform: scale(0.94) translateZ(0);
   }
 
   .dictationSlideActive {
     opacity: 1;
-    transform: scale(1);
-    filter: blur(0px);
-  }
-  
-  .dictationSlides {
-    scroll-behavior: smooth;
-  }
-  
-  .dictationSlideActive {
-    animation: slideActivateMobile 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: scale(1) translateZ(0);
+    border-color: var(--accent-blue);
   }
 }
 
 @keyframes slideActivateMobile {
   0% {
     opacity: 0.5;
-    transform: scale(0.9);
-    filter: blur(1px);
-  }
-  50% {
-    transform: scale(1.02);
+    transform: scale(0.94) translateZ(0);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
-    filter: blur(0px);
+    transform: scale(1) translateZ(0);
   }
 }
 
@@ -307,46 +289,30 @@
 
 @keyframes swipeLeft {
   0% {
-    transform: translateX(0) scale(1) rotateY(0deg);
-    filter: brightness(1);
-  }
-  30% {
-    transform: translateX(-30px) scale(0.95) rotateY(-5deg);
-    filter: brightness(0.9);
+    transform: translateX(0) scale(1) translateZ(0);
+    opacity: 1;
   }
   50% {
-    transform: translateX(-40px) scale(0.92) rotateY(-8deg);
-    filter: brightness(0.85);
-  }
-  75% {
-    transform: translateX(10px) scale(1.02) rotateY(3deg);
-    filter: brightness(1.1);
+    transform: translateX(-20px) scale(0.96) translateZ(0);
+    opacity: 0.8;
   }
   100% {
-    transform: translateX(0) scale(1) rotateY(0deg);
-    filter: brightness(1);
+    transform: translateX(0) scale(1) translateZ(0);
+    opacity: 1;
   }
 }
 
 @keyframes swipeRight {
   0% {
-    transform: translateX(0) scale(1) rotateY(0deg);
-    filter: brightness(1);
-  }
-  30% {
-    transform: translateX(30px) scale(0.95) rotateY(5deg);
-    filter: brightness(0.9);
+    transform: translateX(0) scale(1) translateZ(0);
+    opacity: 1;
   }
   50% {
-    transform: translateX(40px) scale(0.92) rotateY(8deg);
-    filter: brightness(0.85);
-  }
-  75% {
-    transform: translateX(-10px) scale(1.02) rotateY(-3deg);
-    filter: brightness(1.1);
+    transform: translateX(20px) scale(0.96) translateZ(0);
+    opacity: 0.8;
   }
   100% {
-    transform: translateX(0) scale(1) rotateY(0deg);
-    filter: brightness(1);
+    transform: translateX(0) scale(1) translateZ(0);
+    opacity: 1;
   }
 }
