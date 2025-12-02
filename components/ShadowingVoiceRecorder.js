@@ -1,4 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from '../styles/ShadowingVoiceRecorder.module.css';
 
 /**
@@ -20,6 +21,7 @@ const ShadowingVoiceRecorder = ({
   onRecordingStateChange,
   triggerAttribute = null
 }) => {
+  const { t } = useTranslation('common');
   const [internalIsRecording, setInternalIsRecording] = useState(false);
   const [error, setError] = useState(null);
   const [internalIsProcessing, setInternalIsProcessing] = useState(false);
@@ -56,7 +58,7 @@ const ShadowingVoiceRecorder = ({
 
       // Check if browser supports required APIs
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-        setError('Ihr Browser unterstützt keine Audioaufnahme');
+        setError(t('voiceRecorder.browserNotSupported'));
         return;
       }
 
@@ -65,13 +67,13 @@ const ShadowingVoiceRecorder = ({
       const isSecure = window.location.protocol === 'https:' || window.location.hostname === 'localhost';
 
       if (isIOS && !isSecure) {
-        setError('iOS benötigt HTTPS für Mikrofonzugriff');
+        setError(t('voiceRecorder.iosHttpsRequired'));
         return;
       }
 
       // Check if MediaRecorder is supported
       if (typeof MediaRecorder === 'undefined') {
-        setError('Audioaufnahme wird nicht unterstützt');
+        setError(t('voiceRecorder.recordingNotSupported'));
         return;
       }
 
@@ -132,25 +134,25 @@ const ShadowingVoiceRecorder = ({
     } catch (err) {
       console.error('Error starting recording:', err);
 
-      // Provide German error messages based on error type
-      let errorMessage = 'Mikrofonzugriff fehlgeschlagen';
+      // Provide translated error messages based on error type
+      let errorMessage = t('voiceRecorder.microphoneFailed');
 
       if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
-        errorMessage = 'Mikrofonzugriff verweigert';
+        errorMessage = t('voiceRecorder.microphoneDenied');
       } else if (err.name === 'NotFoundError' || err.name === 'DevicesNotFoundError') {
-        errorMessage = 'Kein Mikrofon gefunden';
+        errorMessage = t('voiceRecorder.noMicrophoneFound');
       } else if (err.name === 'NotReadableError' || err.name === 'TrackStartError') {
-        errorMessage = 'Mikrofon wird bereits verwendet';
+        errorMessage = t('voiceRecorder.microphoneInUse');
       } else if (err.name === 'OverconstrainedError' || err.name === 'ConstraintNotSatisfiedError') {
-        errorMessage = 'Mikrofoneinstellungen nicht unterstützt';
+        errorMessage = t('voiceRecorder.microphoneSettingsNotSupported');
       } else if (err.name === 'SecurityError') {
-        errorMessage = 'HTTPS erforderlich für Mikrofonzugriff';
+        errorMessage = t('voiceRecorder.httpsRequired');
       }
 
       setError(errorMessage);
       updateRecordingState(false);
     }
-  }, [onAudioRecorded, updateRecordingState]);
+  }, [onAudioRecorded, updateRecordingState, t]);
 
   // Process audio with Whisper API
   const processWhisperAudio = useCallback(async () => {
@@ -176,15 +178,15 @@ const ShadowingVoiceRecorder = ({
         }
         setError(null);
       } else {
-        setError(data.message || 'Transkription fehlgeschlagen');
+        setError(data.message || t('voiceRecorder.transcriptionFailed'));
       }
     } catch (err) {
       console.error('Error processing audio:', err);
-      setError('Fehler bei der Audioverarbeitung');
+      setError(t('voiceRecorder.audioProcessingError'));
     } finally {
       updateProcessingState(false);
     }
-  }, [language, onTranscript, updateProcessingState]);
+  }, [language, onTranscript, updateProcessingState, t]);
 
   // Stop recording
   const stopRecording = useCallback(async () => {
@@ -225,8 +227,8 @@ const ShadowingVoiceRecorder = ({
         onClick={handleButtonClick}
         disabled={isProcessing}
         type="button"
-        title={error ? error : (isProcessing ? 'Đang xử lý...' : isRecording ? 'Dừng ghi âm' : 'Ghi âm')}
-        data-label="Ghi âm"
+        title={error ? error : (isProcessing ? t('voiceRecorder.processing') : isRecording ? t('voiceRecorder.stopRecording') : t('voiceRecorder.record'))}
+        data-label={t('voiceRecorder.record')}
       >
         {isProcessing ? (
           <svg viewBox="0 0 24 24" fill="currentColor">
@@ -284,7 +286,7 @@ const ShadowingVoiceRecorder = ({
         onClick={handleButtonClick}
         disabled={isProcessing}
         type="button"
-        title={error ? error : (isProcessing ? 'Wird verarbeitet...' : isRecording ? 'Aufnahme stoppen' : 'Aufnahme starten')}
+        title={error ? error : (isProcessing ? t('voiceRecorder.processing') : isRecording ? t('voiceRecorder.stopRecording') : t('voiceRecorder.startRecording'))}
         {...buttonProps}
       >
         {isProcessing ? (
@@ -294,7 +296,7 @@ const ShadowingVoiceRecorder = ({
                 <path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"/>
               </svg>
             </span>
-            {size === 'large' && <span>Đang xử lý...</span>}
+            {size === 'large' && <span>{t('voiceRecorder.processing')}</span>}
           </>
         ) : isRecording ? (
           <>
@@ -303,7 +305,7 @@ const ShadowingVoiceRecorder = ({
                 <rect x="6" y="6" width="12" height="12" rx="2"/>
               </svg>
             </span>
-            {size === 'large' && <span>Dừng ghi âm</span>}
+            {size === 'large' && <span>{t('voiceRecorder.stopRecording')}</span>}
           </>
         ) : (
           <>
@@ -315,7 +317,7 @@ const ShadowingVoiceRecorder = ({
                 <path d="M8 22h8"/>
               </svg>
             </span>
-            {size === 'large' && <span>Ghi âm</span>}
+            {size === 'large' && <span>{t('voiceRecorder.record')}</span>}
           </>
         )}
       </button>

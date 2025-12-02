@@ -1,4 +1,5 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSpeechRecognition } from '../lib/hooks/useSpeechRecognition';
 import styles from '../styles/VoiceInputButton.module.css';
 
@@ -20,6 +21,7 @@ const VoiceInputButton = ({
   className = '',
   disabled = false
 }) => {
+  const { t } = useTranslation('common');
   const [isRecording, setIsRecording] = useState(false);
   const [error, setError] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -86,16 +88,16 @@ const VoiceInputButton = ({
         }
         setError(null);
       } else {
-        setError(data.message || 'Transcription failed');
+        setError(data.message || t('voiceRecorder.transcriptionFailed'));
       }
     } catch (err) {
       console.error('Error processing audio:', err);
-      setError('Lỗi khi xử lý âm thanh');
+      setError(t('voiceRecorder.audioProcessingError'));
     } finally {
       setIsProcessing(false);
       audioChunksRef.current = [];
     }
-  }, [language, onTranscript]);
+  }, [language, onTranscript, t]);
 
   // Start recording for Whisper mode
   const startWhisperRecording = useCallback(async () => {
@@ -130,10 +132,10 @@ const VoiceInputButton = ({
       setError(null);
     } catch (err) {
       console.error('Error starting recording:', err);
-      setError('Không thể truy cập microphone');
+      setError(t('voiceRecorder.microphoneFailed'));
       setIsRecording(false);
     }
-  }, [processWhisperAudio]);
+  }, [processWhisperAudio, t]);
 
   // Stop recording for Whisper mode
   const stopWhisperRecording = useCallback(() => {
@@ -151,7 +153,7 @@ const VoiceInputButton = ({
     if (mode === 'web-speech') {
       // Web Speech API mode
       if (!isSpeechSupported) {
-        setError('Trình duyệt không hỗ trợ nhận dạng giọng nói');
+        setError(t('voiceRecorder.browserNotSupported'));
         return;
       }
 
@@ -177,7 +179,8 @@ const VoiceInputButton = ({
     startListening,
     stopListening,
     startWhisperRecording,
-    stopWhisperRecording
+    stopWhisperRecording,
+    t
   ]);
 
   const isActive = mode === 'web-speech' ? isListening : isRecording;
@@ -188,7 +191,7 @@ const VoiceInputButton = ({
         className={`${styles.voiceButton} ${isActive ? styles.active : ''} ${isProcessing ? styles.processing : ''}`}
         onClick={handleClick}
         disabled={disabled || isProcessing}
-        title={isActive ? 'Nhấn để dừng' : 'Nhấn để nói'}
+        title={isActive ? t('voiceRecorder.stopRecording') : t('voiceRecorder.startRecording')}
         type="button"
       >
         {isProcessing ? (

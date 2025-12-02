@@ -589,5 +589,27 @@
     "dictation": "Diktat",
     "shadowing": "Shadowing",
     "totalLessons": "Gesamte Lektionen"
+  },
+  "ui": {
+    "playbackSpeed": "Wiedergabegeschwindigkeit",
+    "toggleSidebar": "Seitenleiste umschalten",
+    "toggleMenu": "Menü umschalten"
+  },
+  "voiceRecorder": {
+    "browserNotSupported": "Ihr Browser unterstützt keine Audioaufnahme",
+    "iosHttpsRequired": "iOS benötigt HTTPS für Mikrofonzugriff",
+    "recordingNotSupported": "Audioaufnahme wird nicht unterstützt",
+    "microphoneFailed": "Mikrofonzugriff fehlgeschlagen",
+    "microphoneDenied": "Mikrofonzugriff verweigert",
+    "noMicrophoneFound": "Kein Mikrofon gefunden",
+    "microphoneInUse": "Mikrofon wird bereits verwendet",
+    "microphoneSettingsNotSupported": "Mikrofoneinstellungen nicht unterstützt",
+    "httpsRequired": "HTTPS erforderlich für Mikrofonzugriff",
+    "transcriptionFailed": "Transkription fehlgeschlagen",
+    "audioProcessingError": "Fehler bei der Audioverarbeitung",
+    "processing": "Wird verarbeitet...",
+    "stopRecording": "Aufnahme stoppen",
+    "startRecording": "Aufnahme starten",
+    "record": "Aufnahme"
   }
 }

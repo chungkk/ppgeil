@@ -338,6 +338,7 @@
     "topLearners": "Top học viên",
     "allTime": "Xếp hạng tổng",
     "monthly": "Tháng này",
+    "maxStreak": "Chuỗi dài nhất",
     "notRanked": "Chưa có xếp hạng",
     "emptyState": "Chưa có dữ liệu xếp hạng cho tháng này.",
     "startLearning": "Hãy hoàn thành bài học để bắt đầu tích điểm!",
@@ -585,5 +586,27 @@
     "dictation": "Nghe chép",
     "shadowing": "Shadowing",
     "totalLessons": "Tổng số bài học"
+  },
+  "ui": {
+    "playbackSpeed": "Tốc độ phát",
+    "toggleSidebar": "Bật/tắt thanh bên",
+    "toggleMenu": "Bật/tắt menu"
+  },
+  "voiceRecorder": {
+    "browserNotSupported": "Trình duyệt không hỗ trợ ghi âm",
+    "iosHttpsRequired": "iOS yêu cầu HTTPS để truy cập microphone",
+    "recordingNotSupported": "Ghi âm không được hỗ trợ",
+    "microphoneFailed": "Không thể truy cập microphone",
+    "microphoneDenied": "Quyền truy cập microphone bị từ chối",
+    "noMicrophoneFound": "Không tìm thấy microphone",
+    "microphoneInUse": "Microphone đang được sử dụng",
+    "microphoneSettingsNotSupported": "Cài đặt microphone không được hỗ trợ",
+    "httpsRequired": "Yêu cầu HTTPS để truy cập microphone",
+    "transcriptionFailed": "Chuyển đổi giọng nói thất bại",
+    "audioProcessingError": "Lỗi xử lý âm thanh",
+    "processing": "Đang xử lý...",
+    "stopRecording": "Dừng ghi âm",
+    "startRecording": "Bắt đầu ghi âm",
+    "record": "Ghi âm"
   }
 }

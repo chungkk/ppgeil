@@ -589,5 +589,27 @@
     "dictation": "Dictation",
     "shadowing": "Shadowing",
     "totalLessons": "Total lessons"
+  },
+  "ui": {
+    "playbackSpeed": "Playback speed",
+    "toggleSidebar": "Toggle sidebar",
+    "toggleMenu": "Toggle menu"
+  },
+  "voiceRecorder": {
+    "browserNotSupported": "Your browser does not support audio recording",
+    "iosHttpsRequired": "iOS requires HTTPS for microphone access",
+    "recordingNotSupported": "Audio recording is not supported",
+    "microphoneFailed": "Microphone access failed",
+    "microphoneDenied": "Microphone access denied",
+    "noMicrophoneFound": "No microphone found",
+    "microphoneInUse": "Microphone is already in use",
+    "microphoneSettingsNotSupported": "Microphone settings not supported",
+    "httpsRequired": "HTTPS required for microphone access",
+    "transcriptionFailed": "Transcription failed",
+    "audioProcessingError": "Audio processing error",
+    "processing": "Processing...",
+    "stopRecording": "Stop recording",
+    "startRecording": "Start recording",
+    "record": "Record"
   }
 }
