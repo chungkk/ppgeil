@@ -8,12 +8,13 @@ const styles = { ...layoutStyles, ...inputStyles };
 
 /**
  * Dictation Header Component (Simplified - Full Sentence Mode Only)
- * Displays title and sentence counter
+ * Displays title and sentence counter with progress
  */
 const DictationHeader = ({
   isMobile,
   currentSentenceIndex,
   totalSentences,
+  completedCount = 0,
   playbackSpeed,
   onSpeedChange,
   showTranslation,
@@ -28,16 +29,32 @@ const DictationHeader = ({
     onSpeedChange(speeds[nextIndex]);
   };
 
-  return (
-    <div className={styles.dictationHeader}>
-      <h3 className={styles.dictationHeaderTitle}>
-        {isMobile 
-          ? <span className={styles.sentenceNumber}>#{currentSentenceIndex + 1}</span>
-          : t('lesson.ui.dictation')}
-      </h3>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        {/* Speed Button - Mobile Only */}
-        {isMobile && onSpeedChange && (
+  // Calculate progress percentage
+  const progressPercent = totalSentences > 0 ? Math.round((completedCount / totalSentences) * 100) : 0;
+
+  if (isMobile) {
+    return (
+      <div className={styles.dictationHeaderMobile}>
+        {/* Left: Current sentence info */}
+        <div className={styles.headerLeft}>
+          <span className={styles.sentenceNumber}>#{currentSentenceIndex + 1}</span>
+          <span className={styles.sentenceDivider}>/</span>
+          <span className={styles.sentenceTotal}>{totalSentences}</span>
+        </div>
+
+        {/* Center: Progress bar */}
+        <div className={styles.headerProgress}>
+          <div className={styles.progressBarMini}>
+            <div 
+              className={styles.progressFillMini} 
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
+          <span className={styles.progressTextMini}>{progressPercent}%</span>
+        </div>
+
+        {/* Right: Speed button */}
+        {onSpeedChange && (
           <button 
             className={styles.speedButtonMobile}
             onClick={handleSpeedClick}
@@ -46,8 +63,19 @@ const DictationHeader = ({
             {playbackSpeed || 1}x
           </button>
         )}
-        {/* Translation Toggle - Desktop Only (synced with Auto Stop style) */}
-        {!isMobile && onToggleTranslation && (
+      </div>
+    );
+  }
+
+  // Desktop layout
+  return (
+    <div className={styles.dictationHeader}>
+      <h3 className={styles.dictationHeaderTitle}>
+        {t('lesson.ui.dictation')}
+      </h3>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        {/* Translation Toggle - Desktop Only */}
+        {onToggleTranslation && (
           <label className={styles.toggleLabel}>
             <input
               type="checkbox"
@@ -58,12 +86,6 @@ const DictationHeader = ({
             <span className={styles.toggleSlider}></span>
             <span className={styles.toggleText}>Dịch</span>
           </label>
-        )}
-        {/* Sentence Counter - Mobile Only (Desktop moved to TranscriptPanel) */}
-        {isMobile && (
-          <div className={styles.sentenceCounter}>
-            #{currentSentenceIndex + 1} / {totalSentences}
-          </div>
         )}
       </div>
     </div>

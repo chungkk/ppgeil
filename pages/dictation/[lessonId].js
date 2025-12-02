@@ -3467,6 +3467,7 @@ const DictationPageContent = () => {
               isMobile={isMobile}
               currentSentenceIndex={currentSentenceIndex}
               totalSentences={transcriptData.length}
+              completedCount={completedSentences.length}
               playbackSpeed={playbackSpeed}
               onSpeedChange={handleSpeedChange}
               showTranslation={showTranslation}

@@ -1,0 +1,394 @@
+[
+    {
+        "text": "Notrufzentrale, was ist passiert?",
+        "start": 0,
+        "end": 2.2,
+        "translationEn": "Emergency call center, what happened?",
+        "translationVi": "Trung tâm cấp cứu, đã xảy ra chuyện gì?"
+    },
+    {
+        "text": "Hallo, bitte helfen Sie.",
+        "start": 3.12,
+        "end": 4.8,
+        "translationEn": "Hello, please help.",
+        "translationVi": "Xin chào, xin vui lòng giúp đỡ."
+    },
+    {
+        "text": "Meine Mutter ist ohnmächtig geworden.",
+        "start": 5.88,
+        "end": 7.88,
+        "translationEn": "My mother has fainted.",
+        "translationVi": "Mẹ tôi đã ngất xỉu."
+    },
+    {
+        "text": "Bleiben Sie ruhig.",
+        "start": 9.34,
+        "end": 9.9,
+        "translationEn": "Stay calm.",
+        "translationVi": "Hãy bình tĩnh."
+    },
+    {
+        "text": "Ist Ihre Mutter bei Bewusstsein?",
+        "start": 10.18,
+        "end": 11.54,
+        "translationEn": "Is your mother conscious?",
+        "translationVi": "Mẹ của bạn có tỉnh táo không?"
+    },
+    {
+        "text": "Nein, sie liegt auf dem Boden und bewegt sich nicht.",
+        "start": 12.46,
+        "end": 15.72,
+        "translationEn": "No, it is lying on the ground and not moving.",
+        "translationVi": "Không, nó nằm trên sàn và không cử động."
+    },
+    {
+        "text": "Atmet sie?",
+        "start": 17.14,
+        "end": 17.38,
+        "translationEn": "Is she breathing?",
+        "translationVi": "Cô ấy có thở không?"
+    },
+    {
+        "text": "Können Sie ihre Brust sehen, ob sie sich hebt",
+        "start": 17.74,
+        "end": 19.84,
+        "translationEn": "Can you see her chest if it rises?",
+        "translationVi": "Bạn có thể nhìn thấy ngực của họ có nâng lên không?"
+    },
+    {
+        "text": "und senkt?",
+        "start": 19.84,
+        "end": 20.36,
+        "translationEn": "and lowers?",
+        "translationVi": "và hạ xuống?"
+    },
+    {
+        "text": "Ja, aber sie atmet ganz langsam und schwach.",
+        "start": 21.5,
+        "end": 25.06,
+        "translationEn": "Yes, but she is breathing very slowly and weakly.",
+        "translationVi": "Vâng, nhưng cô ấy thở rất chậm và yếu."
+    },
+    {
+        "text": "Gut, aber sie atmet.",
+        "start": 25.86,
+        "end": 27.32,
+        "translationEn": "Good, but she is breathing.",
+        "translationVi": "Tốt, nhưng cô ấy đang thở."
+    },
+    {
+        "text": "Gibt sie irgendwelche Geräusche von sich?",
+        "start": 27.94,
+        "end": 29.56,
+        "translationEn": "Does it make any noises?",
+        "translationVi": "Cô ấy có phát ra âm thanh nào không?"
+    },
+    {
+        "text": "Nein, sie ist ganz still.",
+        "start": 30.36,
+        "end": 32.12,
+        "translationEn": "No, she is completely quiet.",
+        "translationVi": "Không, cô ấy hoàn toàn im lặng."
+    },
+    {
+        "text": "Wissen Sie, ob ihre Mutter eine Krankheit hat",
+        "start": 33.52,
+        "end": 35.56,
+        "translationEn": "Do you know if her mother has an illness?",
+        "translationVi": "Bạn có biết mẹ của cô ấy có bệnh gì không?"
+    },
+    {
+        "text": "oder Medikamente nimmt?",
+        "start": 35.56,
+        "end": 36.66,
+        "translationEn": "or takes medication?",
+        "translationVi": "hoặc có dùng thuốc không?"
+    },
+    {
+        "text": "Ähm, ja, sie hat Bluthochdruck und nimmt Tabletten.",
+        "start": 37.6,
+        "end": 41.62,
+        "translationEn": "Um, yes, she has high blood pressure and takes medication.",
+        "translationVi": "Ừm, vâng, cô ấy bị huyết áp cao và đang uống thuốc."
+    },
+    {
+        "text": "Wissen Sie, welche Tabletten das sind?",
+        "start": 42.9,
+        "end": 44.58,
+        "translationEn": "Do you know what tablets these are?",
+        "translationVi": "Bạn có biết đó là loại thuốc nào không?"
+    },
+    {
+        "text": "Nein, ich weiß es nicht.",
+        "start": 45.36,
+        "end": 47.12,
+        "translationEn": "No, I don't know.",
+        "translationVi": "Không, tôi không biết."
+    },
+    {
+        "text": "Hat sie vor dem Ohnmachtsanfall etwas Ungewöhnliches gesagt oder getan?",
+        "start": 48.22,
+        "end": 51.52,
+        "translationEn": "Did she say or do anything unusual before the fainting spell?",
+        "translationVi": "Cô ấy có nói hoặc làm điều gì bất thường trước khi ngất xỉu không?"
+    },
+    {
+        "text": "Ja, sie meinte, ihr ist schwindelig",
+        "start": 52.16,
+        "end": 55.34,
+        "translationEn": "Yes, she said she feels dizzy.",
+        "translationVi": "Vâng, cô ấy nói cô ấy bị chóng mặt."
+    },
+    {
+        "text": "und dann ist sie plötzlich umgekippt.",
+        "start": 55.34,
+        "end": 58.2,
+        "translationEn": "and then she suddenly collapsed.",
+        "translationVi": "và rồi cô ấy đột nhiên ngã quỵ."
+    },
+    {
+        "text": "In Ordnung, hören Sie mir genau zu.",
+        "start": 59.1,
+        "end": 60.98,
+        "translationEn": "Alright, listen to me carefully.",
+        "translationVi": "Được rồi, hãy lắng nghe tôi thật kỹ."
+    },
+    {
+        "text": "Wir schicken einen Rettungswagen.",
+        "start": 61.38,
+        "end": 62.68,
+        "translationEn": "We are sending an ambulance.",
+        "translationVi": "Chúng tôi sẽ gửi một xe cứu thương."
+    },
+    {
+        "text": "Wie lautet Ihre Adresse?",
+        "start": 63.04,
+        "end": 64.06,
+        "translationEn": "What is your address?",
+        "translationVi": "Địa chỉ của bạn là gì?"
+    },
+    {
+        "text": "Wir wohnen in der Hauptstraße 12, dritte Etage, Wohnung 5.",
+        "start": 64.78,
+        "end": 70.24,
+        "translationEn": "We live at Main Street 12, third floor, apartment 5.",
+        "translationVi": "Chúng tôi sống ở số 12, đường Hauptstraße, tầng ba, căn hộ 5."
+    },
+    {
+        "text": "Verstanden.",
+        "start": 71.2,
+        "end": 71.44,
+        "translationEn": "Understood.",
+        "translationVi": "Hiểu rồi."
+    },
+    {
+        "text": "Der Notarzt ist unterwegs.",
+        "start": 71.76,
+        "end": 73.2,
+        "translationEn": "The emergency doctor is on the way.",
+        "translationVi": "Xe cấp cứu đang trên đường đến."
+    },
+    {
+        "text": "Können Sie bitte nachsehen,",
+        "start": 73.72,
+        "end": 74.62,
+        "translationEn": "Could you please check,",
+        "translationVi": "Bạn có thể vui lòng kiểm tra không?"
+    },
+    {
+        "text": "ob Ihre Mutter auf etwas Hartes gefallen ist?",
+        "start": 74.92,
+        "end": 76.86,
+        "translationEn": "if your mother fell on something hard?",
+        "translationVi": "Có phải mẹ bạn đã bị ngã vào cái gì đó cứng không?"
+    },
+    {
+        "text": "Nein, sie ist einfach langsam zusammengesackt.",
+        "start": 77.82,
+        "end": 82.18,
+        "translationEn": "No, she just slowly collapsed.",
+        "translationVi": "Không, cô ấy chỉ đơn giản là từ từ sụp đổ."
+    },
+    {
+        "text": "Sehr gut, jetzt hören Sie mir genau zu.",
+        "start": 82.5,
+        "end": 84.68,
+        "translationEn": "Very well, now listen to me carefully.",
+        "translationVi": "Rất tốt, bây giờ bạn hãy lắng nghe tôi thật kỹ."
+    },
+    {
+        "text": "Versuchen Sie, mit Ihrer Mutter zu sprechen.",
+        "start": 84.94,
+        "end": 86.74,
+        "translationEn": "Try to talk to your mother.",
+        "translationVi": "Hãy cố gắng nói chuyện với mẹ của bạn."
+    },
+    {
+        "text": "Sagen Sie Ihren Namen laut",
+        "start": 87.64,
+        "end": 88.68,
+        "translationEn": "Say your name out loud.",
+        "translationVi": "Hãy nói tên của bạn to lên."
+    },
+    {
+        "text": "und schütteln Sie sie leicht an der Schulter.",
+        "start": 88.68,
+        "end": 90.38,
+        "translationEn": "and gently shake them by the shoulder.",
+        "translationVi": "và nhẹ nhàng lắc họ ở vai."
+    },
+    {
+        "text": "Mama.",
+        "start": 91.12,
+        "end": 91.64,
+        "translationEn": "Mama.",
+        "translationVi": "Mẹ."
+    },
+    {
+        "text": "Mama.",
+        "start": 93.22,
+        "end": 93.24,
+        "translationEn": "Mom.",
+        "translationVi": "Mẹ."
+    },
+    {
+        "text": "Nein, sie reagiert nicht.",
+        "start": 94.32,
+        "end": 95.88,
+        "translationEn": "No, she is not responding.",
+        "translationVi": "Không, cô ấy không phản ứng."
+    },
+    {
+        "text": "Okay, bleiben Sie bei ihr",
+        "start": 97.08,
+        "end": 98.48,
+        "translationEn": "Okay, stay with her.",
+        "translationVi": "Được rồi, hãy ở bên cô ấy."
+    },
+    {
+        "text": "und achten Sie auf Ihre Atmung.",
+        "start": 98.48,
+        "end": 99.84,
+        "translationEn": "and pay attention to your breathing.",
+        "translationVi": "và hãy chú ý đến hơi thở của bạn."
+    },
+    {
+        "text": "Falls sich etwas verändert, wenn sie nicht mehr atmet",
+        "start": 100.74,
+        "end": 102.96,
+        "translationEn": "If something changes when she no longer breathes",
+        "translationVi": "Nếu có điều gì thay đổi khi cô ấy không còn thở nữa."
+    },
+    {
+        "text": "oder sich anders verhält, sagen Sie es mir sofort.",
+        "start": 102.96,
+        "end": 105.38,
+        "translationEn": "or behaves differently, let me know immediately.",
+        "translationVi": "hoặc cư xử khác, hãy cho tôi biết ngay lập tức."
+    },
+    {
+        "text": "Ja, okay.",
+        "start": 107.02,
+        "end": 108.06,
+        "translationEn": "Yes, okay.",
+        "translationVi": "Vâng, được rồi."
+    },
+    {
+        "text": "Ist die Tür zur Wohnung offen oder verschlossen?",
+        "start": 108.94,
+        "end": 110.9,
+        "translationEn": "Is the door to the apartment open or closed?",
+        "translationVi": "Cửa căn hộ có mở hay đóng?"
+    },
+    {
+        "text": "Sie ist abgeschlossen.",
+        "start": 111.76,
+        "end": 112.92,
+        "translationEn": "It is completed.",
+        "translationVi": "Nó đã hoàn thành."
+    },
+    {
+        "text": "Gut, dann nehmen Sie den Schlüssel",
+        "start": 114.42,
+        "end": 115.82,
+        "translationEn": "Alright, then take the key.",
+        "translationVi": "Tốt, vậy thì bạn hãy lấy chìa khóa."
+    },
+    {
+        "text": "und gehen Sie zur Tür.",
+        "start": 115.82,
+        "end": 116.84,
+        "translationEn": "and go to the door.",
+        "translationVi": "và đi đến cửa."
+    },
+    {
+        "text": "Lassen Sie sie offen, damit die Sanitäter direkt reinkommen können.",
+        "start": 118.18,
+        "end": 121.16,
+        "translationEn": "Leave them open so that the paramedics can come in directly.",
+        "translationVi": "Hãy để chúng mở để các nhân viên y tế có thể vào trực tiếp."
+    },
+    {
+        "text": "Okay, ich mache das.",
+        "start": 121.98,
+        "end": 123.46,
+        "translationEn": "Okay, I'll do that.",
+        "translationVi": "Được rồi, tôi sẽ làm điều đó."
+    },
+    {
+        "text": "Wann kommt der Krankenwagen?",
+        "start": 124.66,
+        "end": 125.96,
+        "translationEn": "When is the ambulance coming?",
+        "translationVi": "Khi nào xe cứu thương đến?"
+    },
+    {
+        "text": "Die Sanitäter sollten in weniger als fünf Minuten bei Ihnen",
+        "start": 127.28,
+        "end": 130.18,
+        "translationEn": "The paramedics should be with you in less than five minutes.",
+        "translationVi": "Các nhân viên y tế nên có mặt trong vòng chưa đầy năm phút."
+    },
+    {
+        "text": "sein.",
+        "start": 130.18,
+        "end": 130.42,
+        "translationEn": "to be.",
+        "translationVi": "là."
+    },
+    {
+        "text": "Ich bleibe mit Ihnen am Telefon, bis Sie da sind.",
+        "start": 131.12,
+        "end": 133.46,
+        "translationEn": "I will stay on the phone with you until you arrive.",
+        "translationVi": "Tôi sẽ ở lại trên điện thoại với bạn cho đến khi bạn đến."
+    },
+    {
+        "text": "Ich höre die Sirene.",
+        "start": 133.46,
+        "end": 135.62,
+        "translationEn": "I hear the siren.",
+        "translationVi": "Tôi nghe thấy tiếng còi."
+    },
+    {
+        "text": "Sehr gut, bleiben Sie bei Ihrer Mutter,",
+        "start": 137.1,
+        "end": 138.68,
+        "translationEn": "Very good, stay with your mother.",
+        "translationVi": "Rất tốt, hãy ở bên mẹ của bạn."
+    },
+    {
+        "text": "aber achten Sie darauf,",
+        "start": 139.12,
+        "end": 140.02,
+        "translationEn": "but pay attention to,",
+        "translationVi": "nhưng hãy chú ý rằng,"
+    },
+    {
+        "text": "Ja, sie ist offen.",
+        "start": 142.86,
+        "end": 144.1,
+        "translationEn": "Yes, she is open.",
+        "translationVi": "Vâng, cô ấy đang mở."
+    }
+]
