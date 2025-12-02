@@ -440,24 +440,10 @@ const Header = () => {
             </>
           )}
 
-          <LoginModal 
-            isOpen={state.loginModalOpen} 
-            onClose={() => dispatch({ type: 'SET_LOGIN_MODAL', payload: false })} 
-          />
-
-          {/* Mobile hamburger menu button */}
-          <button
-            className={styles.mobileMenuBtn}
-            onClick={() => dispatch({ type: 'SET_MOBILE_MENU', payload: !state.mobileMenuOpen })}
-            aria-label="Menu"
-            aria-expanded={state.mobileMenuOpen}
-          >
-            <span className={`${styles.hamburgerIcon} ${state.mobileMenuOpen ? styles.open : ''}`}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </button>
+           <LoginModal
+             isOpen={state.loginModalOpen}
+             onClose={() => dispatch({ type: 'SET_LOGIN_MODAL', payload: false })}
+           />
         </div>
       </div>
     </header>

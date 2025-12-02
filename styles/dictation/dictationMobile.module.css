@@ -17,11 +17,12 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding: 12px 16px;
-    padding-bottom: max(12px, env(safe-area-inset-bottom));
-    background: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(12px);
-    border-top: 1px solid var(--border-color);
+    padding: 10px 16px;
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     z-index: 1000;
   }
 }
@@ -34,11 +35,13 @@
 
 /* Base Mobile Circular Button */
 .mobileControlBtn {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #94a3b8;
   display: flex;
   align-items: center;
@@ -59,19 +62,21 @@
 }
 
 .mobileControlBtn svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   transition: transform 0.2s ease;
 }
 
-/* Play Button - Larger & Gradient */
+/* Play Button - Larger & Gradient with glass effect */
 .mobileControlBtnPlay {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: 2px solid rgba(102, 126, 234, 0.5);
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
   color: white;
-  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.35);
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
 }
 
 .mobileControlBtnPlay:active:not(:disabled) {
@@ -80,30 +85,30 @@
 }
 
 .mobileControlBtnPlay svg {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Navigation Buttons (Previous/Next) */
 .mobileControlBtnNav {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #94a3b8;
 }
 
 .mobileControlBtnNav:active:not(:disabled) {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Replay Button */
 .mobileControlBtnReplay {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #94a3b8;
 }
 
 .mobileControlBtnReplay:active:not(:disabled) {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Voice Recorder Button Container */
