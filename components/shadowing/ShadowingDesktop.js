@@ -367,9 +367,9 @@ const ShadowingDesktop = ({
                           className={styles.sentencePlayButton}
                           onClick={(e) => {
                             e.stopPropagation();
-                            handleSentenceClick(segment.start, segment.end);
+                            handleSentenceClick(segment.start, segment.end, true);
                           }}
-                          aria-label={isPlaying && isActive ? 'Pause' : 'Play'}
+                          aria-label="Play from start"
                         >
                           {isPlaying && isActive ? (
                             <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor">
