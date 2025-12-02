@@ -19,6 +19,7 @@ function LessonFormPage() {
   const [fetchingYouTubeSRT, setFetchingYouTubeSRT] = useState(false);
   const [fetchingSRTShort, setFetchingSRTShort] = useState(false);
   const [fetchingWhisperSRT, setFetchingWhisperSRT] = useState(false);
+  const [fetchingWhisperV2, setFetchingWhisperV2] = useState(false);
 
   const [formData, setFormData] = useState({
     id: '',
@@ -312,6 +313,52 @@ function LessonFormPage() {
       toast.error('Fehler: ' + error.message);
     } finally {
       setFetchingWhisperSRT(false);
+    }
+  };
+
+  const handleGetWhisperV2 = async () => {
+    if (!youtubeUrl.trim()) {
+      toast.error('Bitte geben Sie eine YouTube-URL ein');
+      return;
+    }
+
+    setFetchingWhisperV2(true);
+    try {
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/whisper-youtube-srt-v2', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ youtubeUrl: youtubeUrl.trim() })
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.message || 'Failed to get Whisper v2 SRT');
+      }
+
+      const data = await res.json();
+      setSrtText(data.srt);
+      if (data.videoDuration) {
+        setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
+      }
+      if (data.videoTitle) {
+        const newId = generateIdFromTitle(data.videoTitle);
+        setFormData(prev => ({ 
+          ...prev, 
+          title: data.videoTitle,
+          description: data.videoTitle,
+          id: newId
+        }));
+      }
+      toast.success(data.message || 'Whisper v2 SRT đã được tạo!');
+    } catch (error) {
+      console.error('Whisper v2 error:', error);
+      toast.error('Fehler: ' + error.message);
+    } finally {
+      setFetchingWhisperV2(false);
     }
   };
 
@@ -643,9 +690,18 @@ function LessonFormPage() {
                         onClick={handleGetWhisperSRT}
                         disabled={fetchingWhisperSRT || !youtubeUrl.trim()}
                         className={styles.actionButton}
-                        title="Dùng OpenAI Whisper AI để tạo SRT"
+                        title="Whisper + GPT (có thể mất từ)"
                       >
                         {fetchingWhisperSRT ? '⏳...' : '🎙️ Whisper'}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleGetWhisperV2}
+                        disabled={fetchingWhisperV2 || !youtubeUrl.trim()}
+                        className={styles.actionButton}
+                        title="Whisper v2: 6-14 từ/câu, không mất từ, timestamp chính xác"
+                      >
+                        {fetchingWhisperV2 ? '⏳...' : '🎙️ Whisper v2'}
                       </button>
                     </>
                   )}
