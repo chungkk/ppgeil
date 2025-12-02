@@ -353,7 +353,8 @@
     "minutes": "Phút",
     "criteria": {
       "points": "Tổng điểm",
-      "streak": "Streak dài nhất",
+      "answerStreak": "Streak trả lời",
+      "streak": "Streak ngày",
       "time": "Thời gian học",
       "lessons": "Bài học hoàn thành",
       "improved": "Tiến bộ nhất"

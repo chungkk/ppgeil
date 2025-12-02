@@ -356,7 +356,8 @@
     "minutes": "Minutes",
     "criteria": {
       "points": "Total Points",
-      "streak": "Streak Champions",
+      "answerStreak": "Best Answer Streak",
+      "streak": "Daily Streak",
       "time": "Time Invested",
       "lessons": "Lessons Completed",
       "improved": "Most Improved"

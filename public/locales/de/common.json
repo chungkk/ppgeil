@@ -356,7 +356,8 @@
     "minutes": "Minuten",
     "criteria": {
       "points": "Gesamtpunkte",
-      "streak": "Serie-Champions",
+      "answerStreak": "Beste Antwortserie",
+      "streak": "Tägliche Serie",
       "time": "Investierte Zeit",
       "lessons": "Abgeschlossene Lektionen",
       "improved": "Am meisten verbessert"

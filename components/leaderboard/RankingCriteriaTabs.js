@@ -3,7 +3,8 @@ import styles from '../../styles/leaderboard.module.css';
 
 const CRITERIA_OPTIONS = [
   { key: 'points', icon: '💎' },
-  { key: 'streak', icon: '🔥' },
+  { key: 'answerStreak', icon: '🔥' },
+  { key: 'streak', icon: '📅' },
   { key: 'time', icon: '⏱️' },
   { key: 'lessons', icon: '📚' },
   { key: 'improved', icon: '📈' }
