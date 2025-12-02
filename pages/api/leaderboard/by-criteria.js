@@ -6,6 +6,7 @@ import { RANKING_CRITERIA } from '../../../lib/constants/leagues';
 const SORT_FIELDS = {
   points: { points: -1, createdAt: 1 },
   streak: { 'streak.currentStreak': -1, createdAt: 1 },
+  answerStreak: { 'answerStreak.max': -1, createdAt: 1 },
   time: { totalTimeSpent: -1, createdAt: 1 },
   lessons: { lessonsCompleted: -1, createdAt: 1 },
   improved: { weeklyPoints: -1, createdAt: 1 }
@@ -14,6 +15,7 @@ const SORT_FIELDS = {
 const VALUE_GETTERS = {
   points: (user) => user.points || 0,
   streak: (user) => user.streak?.currentStreak || 0,
+  answerStreak: (user) => user.answerStreak?.max || 0,
   time: (user) => user.totalTimeSpent || 0,
   lessons: (user) => user.lessonsCompleted || 0,
   improved: (user) => user.weeklyPoints || 0
@@ -22,6 +24,7 @@ const VALUE_GETTERS = {
 const VALUE_LABELS = {
   points: (val) => `${val} pts`,
   streak: (val) => `${val} days`,
+  answerStreak: (val) => `${val} 🔥`,
   time: (val) => {
     const hours = Math.floor(val / 3600);
     const mins = Math.floor((val % 3600) / 60);
@@ -77,7 +80,7 @@ export default async function handler(req, res) {
     const totalEntries = await User.countDocuments();
 
     const users = await User.find({})
-      .select('name email points streak totalTimeSpent lessonsCompleted weeklyPoints currentLeague createdAt')
+      .select('name email points streak answerStreak totalTimeSpent lessonsCompleted weeklyPoints currentLeague createdAt')
       .sort(sortField)
       .skip(skip)
       .limit(limitNum)
@@ -93,6 +96,8 @@ export default async function handler(req, res) {
         valueLabel: getLabel(value),
         points: user.points || 0,
         streak: user.streak?.currentStreak || 0,
+        answerStreak: user.answerStreak?.max || 0,
+        currentAnswerStreak: user.answerStreak?.current || 0,
         timeSpent: user.totalTimeSpent || 0,
         lessonsCompleted: user.lessonsCompleted || 0,
         weeklyPoints: user.weeklyPoints || 0,
@@ -105,7 +110,7 @@ export default async function handler(req, res) {
     let currentUserRank = null;
     if (currentUserId) {
       const currentUser = await User.findById(currentUserId)
-        .select('name points streak totalTimeSpent lessonsCompleted weeklyPoints currentLeague createdAt')
+        .select('name points streak answerStreak totalTimeSpent lessonsCompleted weeklyPoints currentLeague createdAt')
         .lean();
 
       if (currentUser) {
@@ -118,6 +123,13 @@ export default async function handler(req, res) {
             $or: [
               { 'streak.currentStreak': { $gt: userValue } },
               { 'streak.currentStreak': userValue, createdAt: { $lt: currentUser.createdAt } }
+            ]
+          };
+        } else if (sortKey === 'answerStreak.max') {
+          countQuery = {
+            $or: [
+              { 'answerStreak.max': { $gt: userValue } },
+              { 'answerStreak.max': userValue, createdAt: { $lt: currentUser.createdAt } }
             ]
           };
         } else {
@@ -137,6 +149,8 @@ export default async function handler(req, res) {
           valueLabel: getLabel(userValue),
           points: currentUser.points || 0,
           streak: currentUser.streak?.currentStreak || 0,
+          answerStreak: currentUser.answerStreak?.max || 0,
+          currentAnswerStreak: currentUser.answerStreak?.current || 0,
           timeSpent: currentUser.totalTimeSpent || 0,
           lessonsCompleted: currentUser.lessonsCompleted || 0,
           weeklyPoints: currentUser.weeklyPoints || 0,

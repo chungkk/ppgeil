@@ -31,6 +31,7 @@ import { useSentenceNavigation } from '../../lib/hooks/useSentenceNavigation';
 import { useStudyTimer } from '../../lib/hooks/useStudyTimer';
 import { youtubeAPI } from '../../lib/youtubeApi';
 import { useAuth } from '../../context/AuthContext';
+import { useAnswerStreak } from '../../context/AnswerStreakContext';
 import { speakText } from '../../lib/textToSpeech';
 import { toast } from 'react-toastify';
 import { translationCache } from '../../lib/translationCache';
@@ -120,6 +121,7 @@ const DictationPageContent = () => {
 
   // Get user and auth functions
   const { user } = useAuth();
+  const { incrementStreak, resetStreak } = useAnswerStreak();
   
   // Dictation specific states (from ckk)
   const [savedWords, setSavedWords] = useState([]);
@@ -2115,6 +2117,19 @@ const DictationPageContent = () => {
       const token = localStorage.getItem('token');
       if (!token) return;
       
+      // Update answer streak based on correct/incorrect answer
+      if (pointsChange > 0) {
+        // Correct answer - increment streak
+        const { multiplier } = await incrementStreak();
+        console.log(`🔥 Answer streak incremented, multiplier: x${multiplier}`);
+      } else if (pointsChange < 0) {
+        // Wrong answer - reset streak
+        const previousStreak = await resetStreak();
+        if (previousStreak > 0) {
+          console.log(`💔 Answer streak reset (was: ${previousStreak})`);
+        }
+      }
+      
       const response = await fetch('/api/user/points', {
         method: 'POST',
         headers: {
@@ -2163,7 +2178,7 @@ const DictationPageContent = () => {
     } catch (error) {
       console.error('Error updating points:', error);
     }
-  }, [user, showPointsAnimation]);
+  }, [user, showPointsAnimation, incrementStreak, resetStreak]);
 
   // Update input background
   const updateInputBackground = useCallback((input, correctWord) => {

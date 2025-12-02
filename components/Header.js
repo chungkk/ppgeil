@@ -7,6 +7,7 @@ import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useNotifications } from '../context/NotificationContext';
+import { useAnswerStreak, getStreakLevel } from '../context/AnswerStreakContext';
 import { getDefaultAvatar } from '../lib/helpers/avatar';
 import NotificationDropdown from './NotificationDropdown';
 import LoginModal from './LoginModal';
@@ -67,6 +68,7 @@ const Header = () => {
   const { theme, toggleTheme, currentTheme } = useTheme();
   const { currentLanguage, changeLanguage, languages, currentLanguageInfo } = useLanguage();
   const { unreadCount, fetchUnreadCount } = useNotifications();
+  const { currentStreak, showCelebration, celebrationStreak } = useAnswerStreak();
 
   // Detect scroll for transparent header
   useEffect(() => {
@@ -253,6 +255,27 @@ const Header = () => {
 
           {user && (
             <>
+              {/* Answer Streak Badge - always show for logged-in users */}
+              <div className={styles.streakContainer}>
+                <div 
+                  className={`${styles.streakBadge} ${
+                    currentStreak >= 15 ? styles.streakLegendary :
+                    currentStreak >= 10 ? styles.streakFire :
+                    currentStreak >= 5 ? styles.streakHot :
+                    currentStreak === 0 ? styles.streakInactive : ''
+                  }`}
+                  title={`Answer Streak: ${currentStreak}`}
+                >
+                  <span className={styles.streakIcon}>🔥</span>
+                  <span className={styles.streakValue}>{currentStreak}</span>
+                </div>
+                {showCelebration && (
+                  <div className={styles.streakCelebration}>
+                    {celebrationStreak} 🔥
+                  </div>
+                )}
+              </div>
+
               <div className={styles.pointsContainer}>
                 <div className={styles.pointsBadge} title={t('header.points')}>
                   <span className={styles.pointsIcon}>💎</span>

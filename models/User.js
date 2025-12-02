@@ -78,6 +78,12 @@ const UserSchema = new mongoose.Schema({
      maxStreak: { type: Number, default: 0 },
      lastActiveDate: { type: Date, default: null }
    },
+   // Answer Streak - consecutive correct answers
+   answerStreak: {
+     current: { type: Number, default: 0 },
+     max: { type: Number, default: 0 },
+     lastAnswerTime: { type: Date, default: null }
+   },
    totalTimeSpent: {
      type: Number,
      default: 0,
@@ -111,6 +117,7 @@ UserSchema.index({ totalTimeSpent: -1, createdAt: 1 });
 UserSchema.index({ lessonsCompleted: -1, createdAt: 1 });
 UserSchema.index({ weeklyPoints: -1, createdAt: 1 });
 UserSchema.index({ currentLeague: 1, points: -1 });
+UserSchema.index({ 'answerStreak.max': -1, createdAt: 1 });
 
 UserSchema.pre('save', async function(next) {
   // Chỉ hash password nếu password tồn tại và được modified

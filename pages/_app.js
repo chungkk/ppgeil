@@ -6,6 +6,7 @@ import { AuthProvider } from '../context/AuthContext';
 import { ThemeProvider } from '../context/ThemeContext';
 import { LanguageProvider } from '../context/LanguageContext';
 import { NotificationProvider } from '../context/NotificationContext';
+import { AnswerStreakProvider } from '../context/AnswerStreakContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../styles/globals.css';
@@ -52,6 +53,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       <LanguageProvider>
         <ThemeProvider>
           <AuthProvider>
+            <AnswerStreakProvider>
             <NotificationProvider>
               <Head>
                 <title>papageil.net</title>
@@ -85,6 +87,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
                 pauseOnHover
               />
             </NotificationProvider>
+            </AnswerStreakProvider>
           </AuthProvider>
         </ThemeProvider>
       </LanguageProvider>

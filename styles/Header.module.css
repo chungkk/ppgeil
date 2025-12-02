@@ -273,6 +273,148 @@
   font-weight: bold;
 }
 
+/* Answer Streak Badge Styles */
+.streakContainer {
+  position: relative;
+}
+
+.streakBadge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: rgba(255, 107, 53, 0.15);
+  border: 1.5px solid rgba(255, 107, 53, 0.3);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  height: 40px;
+}
+
+.streakBadge:hover {
+  background: rgba(255, 107, 53, 0.25);
+  border-color: rgba(255, 107, 53, 0.5);
+  transform: translateY(-1px);
+}
+
+.streakInactive {
+  background: rgba(128, 128, 128, 0.1);
+  border-color: rgba(128, 128, 128, 0.2);
+  opacity: 0.6;
+}
+
+.streakInactive .streakIcon {
+  filter: grayscale(100%);
+  animation: none;
+}
+
+.streakInactive .streakValue {
+  color: #888;
+}
+
+.streakHot {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.streakHot .streakValue {
+  color: #FFD700;
+}
+
+.streakFire {
+  background: rgba(255, 107, 53, 0.25);
+  border-color: rgba(255, 107, 53, 0.5);
+  animation: streakPulse 1.5s ease-in-out infinite;
+}
+
+.streakFire .streakValue {
+  color: #FF6B35;
+}
+
+.streakLegendary {
+  background: linear-gradient(135deg, rgba(255, 69, 0, 0.3) 0%, rgba(255, 140, 0, 0.3) 100%);
+  border-color: rgba(255, 69, 0, 0.6);
+  animation: streakLegendaryPulse 1s ease-in-out infinite;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+}
+
+.streakLegendary .streakValue {
+  color: #FF4500;
+  text-shadow: 0 0 8px rgba(255, 69, 0, 0.8);
+}
+
+.streakIcon {
+  font-size: 16px;
+  animation: streakFlame 0.5s ease-in-out infinite alternate;
+}
+
+.streakValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FF6B35;
+}
+
+.streakCelebration {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 700;
+  color: #FF4500;
+  text-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+  pointer-events: none;
+  animation: streakCelebrate 2s ease-out forwards;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+@keyframes streakFlame {
+  0% {
+    transform: scale(1) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+@keyframes streakPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 107, 53, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.6);
+  }
+}
+
+@keyframes streakLegendaryPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.4), 0 0 20px rgba(255, 140, 0, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.6), 0 0 30px rgba(255, 140, 0, 0.4);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes streakCelebrate {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-15px) scale(1.3);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-40px) scale(0.8);
+  }
+}
+
 .pointsContainer {
   position: relative;
 }
@@ -848,6 +990,22 @@
     font-size: 13px;
   }
 
+  /* Mobile streak badge */
+  .streakBadge {
+    padding: 4px 8px;
+    font-size: 12px;
+    gap: 3px;
+    height: 32px;
+  }
+
+  .streakIcon {
+    font-size: 14px;
+  }
+
+  .streakValue {
+    font-size: 12px;
+  }
+
   .notificationBtn {
     width: 32px;
     height: 32px;
@@ -981,6 +1139,23 @@
 
   .pointsValue {
     font-size: 12px;
+  }
+
+  /* Small mobile streak badge */
+  .streakBadge {
+    padding: 3px 6px;
+    font-size: 11px;
+    gap: 2px;
+    height: 28px;
+    border-radius: 14px;
+  }
+
+  .streakIcon {
+    font-size: 12px;
+  }
+
+  .streakValue {
+    font-size: 11px;
   }
 
   .notificationBtn {
