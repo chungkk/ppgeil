@@ -113,6 +113,404 @@
 }
 
 /* ============================================
+   LEAGUE BADGE SECTION
+   ============================================ */
+
+.leagueBadge {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  animation: fadeIn 0.5s ease-out 0.15s backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.leagueBadge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--league-gradient, var(--accent-gradient));
+}
+
+[data-theme="dark"] .leagueBadge {
+  background: rgba(168, 85, 247, 0.05);
+  border-color: rgba(168, 85, 247, 0.25);
+}
+
+/* League tier gradients */
+.leagueBadge.bronze { --league-gradient: linear-gradient(90deg, #CD7F32 0%, #8B4513 100%); }
+.leagueBadge.silver { --league-gradient: linear-gradient(90deg, #C0C0C0 0%, #A8A8A8 100%); }
+.leagueBadge.gold { --league-gradient: linear-gradient(90deg, #FFD700 0%, #FFA500 100%); }
+.leagueBadge.platinum { --league-gradient: linear-gradient(90deg, #00CED1 0%, #4169E1 100%); }
+.leagueBadge.diamond { --league-gradient: linear-gradient(90deg, #E5E4E2 0%, #B9F2FF 50%, #A78BFA 100%); }
+
+.leagueIcon {
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  flex-shrink: 0;
+  animation: leaguePulse 2s ease-in-out infinite;
+}
+
+@keyframes leaguePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.leagueContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.leagueLabel {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.leagueName {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+/* League tier colors for text */
+.leagueBadge.bronze .leagueName { color: #CD7F32; }
+.leagueBadge.silver .leagueName { color: #A8A8A8; }
+.leagueBadge.gold .leagueName { color: #FFD700; }
+.leagueBadge.platinum .leagueName { color: #00CED1; }
+.leagueBadge.diamond .leagueName { color: #A78BFA; }
+
+[data-theme="dark"] .leagueBadge.bronze .leagueName { color: #DDA15E; }
+[data-theme="dark"] .leagueBadge.silver .leagueName { color: #D4D4D4; }
+[data-theme="dark"] .leagueBadge.gold .leagueName { color: #FBBF24; }
+[data-theme="dark"] .leagueBadge.platinum .leagueName { color: #22D3EE; }
+[data-theme="dark"] .leagueBadge.diamond .leagueName { color: #C4B5FD; }
+
+/* ============================================
+   STREAKS SECTION
+   ============================================ */
+
+.streakSection {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  animation: fadeIn 0.5s ease-out 0.2s backwards;
+}
+
+[data-theme="dark"] .streakSection {
+  background: rgba(168, 85, 247, 0.05);
+  border-color: rgba(168, 85, 247, 0.25);
+}
+
+.streakSectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 0;
+}
+
+.streakGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.streakCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.streakCard:hover {
+  background: var(--bg-hover);
+  transform: translateY(-2px);
+}
+
+.streakCardIcon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.streakCard.fire .streakCardIcon {
+  background: rgba(251, 146, 60, 0.15);
+}
+
+.streakCard.lightning .streakCardIcon {
+  background: rgba(250, 204, 21, 0.15);
+}
+
+[data-theme="dark"] .streakCard.fire .streakCardIcon {
+  background: rgba(251, 146, 60, 0.2);
+}
+
+[data-theme="dark"] .streakCard.lightning .streakCardIcon {
+  background: rgba(250, 204, 21, 0.2);
+}
+
+.streakCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.streakCardLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.3px;
+}
+
+.streakCardValues {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.streakCardCurrent {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.streakCard.fire .streakCardCurrent {
+  color: #f97316;
+}
+
+.streakCard.lightning .streakCardCurrent {
+  color: #eab308;
+}
+
+.streakCardMax {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* ============================================
+   STATS GRID SECTION
+   ============================================ */
+
+.statsGridSection {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  animation: fadeIn 0.5s ease-out 0.25s backwards;
+}
+
+[data-theme="dark"] .statsGridSection {
+  background: rgba(168, 85, 247, 0.05);
+  border-color: rgba(168, 85, 247, 0.25);
+}
+
+.statsGridTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.statItem:hover {
+  background: var(--bg-hover);
+  transform: translateY(-2px);
+  border-color: var(--accent-blue);
+}
+
+.statItemIcon {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.statItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.statItemLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.statItemValue {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+/* Stat item color variants */
+.statItem.time .statItemIcon { background: rgba(59, 130, 246, 0.15); }
+.statItem.level .statItemIcon { background: rgba(168, 85, 247, 0.15); }
+.statItem.lessons .statItemIcon { background: rgba(34, 197, 94, 0.15); }
+.statItem.weekly .statItemIcon { background: rgba(236, 72, 153, 0.15); }
+
+[data-theme="dark"] .statItem.time .statItemIcon { background: rgba(59, 130, 246, 0.2); }
+[data-theme="dark"] .statItem.level .statItemIcon { background: rgba(168, 85, 247, 0.2); }
+[data-theme="dark"] .statItem.lessons .statItemIcon { background: rgba(34, 197, 94, 0.2); }
+[data-theme="dark"] .statItem.weekly .statItemIcon { background: rgba(236, 72, 153, 0.2); }
+
+.statItem.time .statItemValue { color: #3b82f6; }
+.statItem.level .statItemValue { color: #a855f7; }
+.statItem.lessons .statItemValue { color: #22c55e; }
+.statItem.weekly .statItemValue { color: #ec4899; }
+
+/* ============================================
+   ACCOUNT INFO SECTION
+   ============================================ */
+
+.accountInfo {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  animation: fadeIn 0.5s ease-out 0.3s backwards;
+}
+
+[data-theme="dark"] .accountInfo {
+  background: rgba(168, 85, 247, 0.05);
+  border-color: rgba(168, 85, 247, 0.25);
+}
+
+.accountInfoTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 0;
+}
+
+.accountInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accountInfoRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.accountInfoRow:hover {
+  background: var(--bg-hover);
+}
+
+.accountInfoIcon {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.accountInfoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.accountInfoLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.accountInfoValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ============================================
    PREMIUM STATUS CARD
    ============================================ */
 
@@ -427,6 +825,80 @@
     font-size: 20px;
   }
 
+  .leagueBadge {
+    padding: 16px;
+  }
+
+  .leagueIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+
+  .leagueName {
+    font-size: 18px;
+  }
+
+  .streakSection {
+    padding: 16px;
+  }
+
+  .streakGrid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .streakCard {
+    padding: 12px;
+  }
+
+  .streakCardIcon {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+  }
+
+  .streakCardCurrent {
+    font-size: 20px;
+  }
+
+  .statsGridSection {
+    padding: 16px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .statItem {
+    padding: 12px;
+  }
+
+  .statItemIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+
+  .statItemValue {
+    font-size: 16px;
+  }
+
+  .accountInfo {
+    padding: 16px;
+  }
+
+  .accountInfoRow {
+    padding: 10px 12px;
+  }
+
+  .accountInfoIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
   .premiumCard {
     padding: 20px;
   }
@@ -462,6 +934,101 @@
 
   .userName {
     font-size: 18px;
+  }
+
+  .leagueBadge {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .leagueIcon {
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+  }
+
+  .leagueName {
+    font-size: 16px;
+  }
+
+  .streakSection {
+    padding: 14px;
+  }
+
+  .streakSectionTitle {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .streakCard {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .streakCardIcon {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+
+  .streakCardCurrent {
+    font-size: 18px;
+  }
+
+  .streakCardMax {
+    font-size: 12px;
+  }
+
+  .statsGridSection {
+    padding: 14px;
+  }
+
+  .statsGridTitle {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .statItem {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .statItemIcon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .statItemValue {
+    font-size: 15px;
+  }
+
+  .accountInfo {
+    padding: 14px;
+  }
+
+  .accountInfoTitle {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .accountInfoList {
+    gap: 10px;
+  }
+
+  .accountInfoRow {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .accountInfoIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .accountInfoValue {
+    font-size: 13px;
   }
 
   .premiumCard {

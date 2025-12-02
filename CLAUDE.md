@@ -22,6 +22,7 @@ npm test && npm run lint
 JavaScript/Node.js (Next.js 14, React 18): Follow standard conventions
 
 ## Recent Changes
+- 002-profile-enhancement: Added [if applicable, e.g., PostgreSQL, CoreData, files or N/A]
 
 - 001-smart-leaderboard: Added JavaScript/Node.js (Next.js 14, React 18) + React, SWR, Mongoose, MongoDB
 

@@ -76,7 +76,8 @@ const UserSchema = new mongoose.Schema({
    streak: {
      currentStreak: { type: Number, default: 0 },
      maxStreak: { type: Number, default: 0 },
-     lastActiveDate: { type: Date, default: null }
+     lastActiveDate: { type: Date, default: null },
+     weeklyProgress: { type: [Boolean], default: [false, false, false, false, false, false, false] }
    },
    // Answer Streak - consecutive correct answers
    answerStreak: {

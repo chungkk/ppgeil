@@ -2,6 +2,7 @@ import React, { createContext, useState, useEffect, useContext, useCallback } fr
 import { useAuth } from './AuthContext';
 
 const AnswerStreakContext = createContext();
+const FIRST_STREAK_KEY = 'firstStreakToday';
 
 const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutes in milliseconds
 
@@ -28,7 +29,7 @@ export const isStreakMilestone = (streak) => {
 };
 
 export function AnswerStreakProvider({ children }) {
-  const { user } = useAuth();
+  const { user, refreshUser } = useAuth();
   const [currentStreak, setCurrentStreak] = useState(0);
   const [maxStreak, setMaxStreak] = useState(0);
   const [lastAnswerTime, setLastAnswerTime] = useState(null);
@@ -102,7 +103,7 @@ export function AnswerStreakProvider({ children }) {
     try {
       const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
       if (token) {
-        await fetch('/api/user/answer-streak', {
+        const res = await fetch('/api/user/answer-streak', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -114,13 +115,18 @@ export function AnswerStreakProvider({ children }) {
             maxStreak: Math.max(newStreak, maxStreak)
           })
         });
+        
+        // Refresh user to update weeklyProgress in Header
+        if (res.ok && refreshUser) {
+          refreshUser();
+        }
       }
     } catch (error) {
       console.error('Error syncing streak:', error);
     }
 
     return { multiplier, newStreak };
-  }, [user, currentStreak, maxStreak, checkSessionTimeout]);
+  }, [user, currentStreak, maxStreak, checkSessionTimeout, refreshUser]);
 
   // Reset streak on wrong answer
   const resetStreak = useCallback(async () => {

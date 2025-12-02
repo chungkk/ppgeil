@@ -48,20 +48,22 @@ export function AuthProvider({ children }) {
 
       if (session) {
         // Nếu có session từ NextAuth (Google login)
-        setUser({
-          id: session.user.id,
-          name: session.user.name,
-          email: session.user.email,
-          role: session.user.role,
-          preferredDifficultyLevel: session.user.preferredDifficultyLevel || 'b1'
-        });
         // Lưu custom token để tương thích với hệ thống JWT hiện tại
         if (session.customToken && typeof window !== 'undefined') {
           localStorage.setItem('token', session.customToken);
-          // Fetch user points sau khi set token
-          fetchUserPoints();
+          // Fetch full user data from /api/auth/me
+          await checkUser();
+        } else {
+          // Fallback nếu không có token
+          setUser({
+            id: session.user.id,
+            name: session.user.name,
+            email: session.user.email,
+            role: session.user.role,
+            preferredDifficultyLevel: session.user.preferredDifficultyLevel || 'b1'
+          });
+          setLoading(false);
         }
-        setLoading(false);
       } else {
         // Kiểm tra JWT token truyền thống
         await checkUser();
@@ -88,6 +90,7 @@ export function AuthProvider({ children }) {
 
       if (res.ok) {
         const data = await res.json();
+        // Set full user object including streak, answerStreak, etc.
         setUser(data.user);
         setUserPoints(data.user.points || 0);
       } else {
@@ -316,6 +319,28 @@ export function AuthProvider({ children }) {
     router.push('/auth/login');
   };
 
+  // Refresh full user data from API
+  const refreshUser = useCallback(async () => {
+    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+    if (!token) return;
+
+    try {
+      const res = await fetch('/api/auth/me', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setUser(data.user);
+        setUserPoints(data.user.points || 0);
+      }
+    } catch (error) {
+      console.error('Error refreshing user:', error);
+    }
+  }, []);
+
   return (
     <AuthContext.Provider value={{ 
       user, 
@@ -328,7 +353,8 @@ export function AuthProvider({ children }) {
       loginWithGoogle, 
       fetchUserPoints,
       updateUserPoints,
-      updateDifficultyLevel
+      updateDifficultyLevel,
+      refreshUser
     }}>
       {children}
     </AuthContext.Provider>

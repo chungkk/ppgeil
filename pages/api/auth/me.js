@@ -36,13 +36,22 @@ export default async function handler(req, res) {
         level: user.level,
         preferredDifficultyLevel: user.preferredDifficultyLevel || 'b1',
         points: user.points || 0,
-        streak: user.streak || {
-          currentStreak: 0,
-          maxStreak: 0,
-          maxStreakThisMonth: 0,
-          lastActivityDate: null,
-          weeklyProgress: [false, false, false, false, false, false, false]
-        }
+        streak: {
+          currentStreak: user.streak?.currentStreak || 0,
+          maxStreak: user.streak?.maxStreak || 0,
+          lastActiveDate: user.streak?.lastActiveDate || null,
+          weeklyProgress: user.streak?.weeklyProgress || [false, false, false, false, false, false, false]
+        },
+        answerStreak: user.answerStreak || {
+          current: 0,
+          max: 0,
+          lastAnswerTime: null
+        },
+        currentLeague: user.currentLeague || 'bronze',
+        totalTimeSpent: user.totalTimeSpent || 0,
+        lessonsCompleted: user.lessonsCompleted || 0,
+        weeklyPoints: user.weeklyPoints || 0,
+        createdAt: user.createdAt
       }
     });
   } catch (error) {
