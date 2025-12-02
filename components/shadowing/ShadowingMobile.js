@@ -161,38 +161,50 @@ const ShadowingMobile = ({
 
             {/* Right Section: Transcript */}
             <div className={styles.transcriptSection}>
-              {/* Mobile Controls Bar */}
-              <div className={styles.mobileControlsBar}>
-                {/* Left: Sentence Counter + Bookmark Filter */}
-                <div className={styles.mobileControlsLeft}>
-                  <span className={styles.sentenceCounterMobile}>#{currentSentenceIndex + 1}/{transcriptData.length}</span>
-                  {/* Bookmark Filter Button */}
+              {/* Mobile Header - Dictation Style */}
+              <div className={styles.shadowingHeaderMobile}>
+                {/* Left: Sentence info */}
+                <div className={styles.headerLeft}>
+                  <span className={styles.sentenceNumber}>#{currentSentenceIndex + 1}</span>
+                  <span className={styles.sentenceDivider}>/</span>
+                  <span className={styles.sentenceTotal}>{transcriptData.length}</span>
+                  {/* Bookmark Filter */}
                   {bookmarkCount > 0 && (
                     <button
                       className={`${styles.bookmarkFilterBtnMobile} ${showOnlyBookmarked ? styles.bookmarkFilterBtnMobileActive : ''}`}
                       onClick={() => setShowOnlyBookmarked(!showOnlyBookmarked)}
                     >
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill={showOnlyBookmarked ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2.5">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill={showOnlyBookmarked ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2.5">
                         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
                       </svg>
                       <span>{bookmarkCount}</span>
                     </button>
                   )}
                 </div>
-                
+
+                {/* Center: Progress bar */}
+                <div className={styles.headerProgress}>
+                  <div className={styles.progressBarMini}>
+                    <div 
+                      className={styles.progressFillMini} 
+                      style={{ width: `${Math.round(((currentSentenceIndex + 1) / transcriptData.length) * 100)}%` }}
+                    />
+                  </div>
+                </div>
+
                 {/* Right: Controls */}
-                <div className={styles.mobileControlsRight}>
-                  {/* Translation Toggle Button */}
+                <div className={styles.headerRight}>
+                  {/* Translation Toggle */}
                   <button
-                    className={`${styles.mobileControlButton} ${showTranslation ? styles.mobileControlButtonActive : ''}`}
+                    className={`${styles.headerControlBtn} ${showTranslation ? styles.headerControlBtnActive : ''}`}
                     onClick={() => setShowTranslation(!showTranslation)}
                   >
-                    {showTranslation ? 'Dịch ✓' : 'Dịch'}
+                    Dịch
                   </button>
                   
-                  {/* Speed Control Button */}
+                  {/* Speed Button */}
                   <button
-                    className={styles.mobileControlButton}
+                    className={styles.speedButtonMobile}
                     onClick={() => {
                       const speeds = [0.5, 0.75, 1, 1.25, 1.5];
                       const currentIndex = speeds.indexOf(playbackSpeed);
@@ -203,12 +215,12 @@ const ShadowingMobile = ({
                     {playbackSpeed}x
                   </button>
                   
-                  {/* Auto Stop Button */}
+                  {/* Auto Stop */}
                   <button
-                    className={`${styles.mobileControlButton} ${autoStop ? styles.mobileControlButtonActive : ''}`}
+                    className={`${styles.headerControlBtn} ${autoStop ? styles.headerControlBtnActive : ''}`}
                     onClick={() => setAutoStop(!autoStop)}
                   >
-                    {autoStop ? 'Auto ✓' : 'Auto'}
+                    Auto
                   </button>
                 </div>
               </div>

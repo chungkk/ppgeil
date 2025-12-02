@@ -1465,68 +1465,140 @@
       display: none;
     }
     
-    /* Mobile Controls Bar - Visible on mobile */
-    .mobileControlsBar {
+    /* Mobile Header - Dictation Style */
+    .shadowingHeaderMobile {
       display: flex;
+      align-items: center;
       justify-content: space-between;
+      padding: 10px 12px;
+      min-height: 48px;
+      background: linear-gradient(
+        180deg,
+        rgba(30, 30, 40, 0.95) 0%,
+        rgba(20, 20, 30, 0.98) 100%
+      );
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px 16px 0 0;
+      gap: 10px;
+    }
+
+    /* Left section: Sentence info */
+    .headerLeft {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      flex-shrink: 0;
+    }
+
+    .sentenceNumber {
+      font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+      font-size: 16px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .sentenceDivider {
+      font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.4);
+      margin: 0 1px;
+    }
+
+    .sentenceTotal {
+      font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Center section: Progress bar */
+    .headerProgress {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 140px;
+      margin: 0 8px;
+    }
+
+    .progressBarMini {
+      flex: 1;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .progressFillMini {
+      height: 100%;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      border-radius: 3px;
+      transition: width 0.3s ease;
+    }
+
+    /* Right section: Controls */
+    .headerRight {
+      display: flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 10px;
-      background: var(--bg-hover);
-      border-bottom: 1px solid var(--border-color);
-    }
-    
-    .mobileControlsRight {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-    
-    .mobileControlButton {
       flex-shrink: 0;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-color);
-      color: #94a3b8;
-      /* Optimized touch target for mobile */
-      min-height: 32px;
-      padding: 5px 12px;
+    }
+
+    .headerControlBtn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: rgba(255, 255, 255, 0.7);
+      padding: 5px 10px;
       border-radius: 6px;
       font-size: 11px;
       font-weight: 600;
       cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      white-space: nowrap;
-      position: relative;
-      overflow: hidden;
+      transition: all 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+      min-height: 28px;
     }
-    
-    .mobileControlButton:active {
+
+    .headerControlBtn:active {
       transform: scale(0.95);
     }
-    
-    .mobileControlButtonActive {
+
+    .headerControlBtnActive {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      border-color: #667eea;
+      border-color: rgba(102, 126, 234, 0.5);
       color: white;
-      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
     }
-    
-    .mobileControlButtonActive svg {
-      animation: pulse 2s ease-in-out infinite;
+
+    /* Speed button mobile - pill style */
+    .speedButtonMobile {
+      background: rgba(102, 126, 234, 0.2);
+      border: 1.5px solid rgba(102, 126, 234, 0.4);
+      color: #a5b4fc;
+      padding: 5px 10px;
+      border-radius: 14px;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+      min-height: 28px;
     }
-    
-    @keyframes pulse {
-      0%, 100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-      50% {
-        opacity: 0.7;
-        transform: scale(0.95);
-      }
+
+    .speedButtonMobile:active {
+      transform: scale(0.95);
+      background: rgba(102, 126, 234, 0.3);
+    }
+
+    /* Hide old mobileControlsBar */
+    .mobileControlsBar {
+      display: none;
     }
 
     .transcriptNumber {
@@ -3064,12 +3136,13 @@
   display: flex;
   align-items: center;
   gap: 3px;
-  padding: 3px 7px;
+  padding: 4px 8px;
+  margin-left: 8px;
   background: rgba(251, 191, 36, 0.1);
   border: 1px solid rgba(251, 191, 36, 0.3);
-  border-radius: 12px;
+  border-radius: 10px;
   color: #94a3b8;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease;
