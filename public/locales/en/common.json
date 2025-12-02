@@ -341,14 +341,63 @@
     "topLearners": "Top Learners",
     "allTime": "All-Time Ranking",
     "monthly": "Monthly",
+    "weekly": "Weekly",
     "maxStreak": "Max Streak",
     "notRanked": "Not ranked yet",
     "emptyState": "No ranking data for this month yet.",
     "startLearning": "Complete lessons to start earning points!",
+    "errorTitle": "Unable to load leaderboard",
+    "errorSubtitle": "Please check your connection and try again.",
+    "retry": "Retry",
     "endsIn": "Ends in",
+    "resetsIn": "Resets in",
     "days": "Days",
     "hours": "Hours",
-    "minutes": "Minutes"
+    "minutes": "Minutes",
+    "criteria": {
+      "points": "Total Points",
+      "streak": "Streak Champions",
+      "time": "Time Invested",
+      "lessons": "Lessons Completed",
+      "improved": "Most Improved"
+    },
+    "leagues": {
+      "title": "Leagues",
+      "bronze": "Bronze",
+      "silver": "Silver",
+      "gold": "Gold",
+      "platinum": "Platinum",
+      "diamond": "Diamond",
+      "promotionZone": "Promotion Zone",
+      "demotionZone": "Demotion Zone",
+      "willPromote": "Will be promoted",
+      "willDemote": "Will be demoted"
+    },
+    "badges": {
+      "title": "Badges",
+      "topMonthly": "Top Monthly",
+      "topMonthlyDesc": "Achieved Top 10 in monthly leaderboard",
+      "topAlltime": "Top All-Time",
+      "topAlltimeDesc": "Currently in Top 10 all-time",
+      "current": "Current"
+    },
+    "stats": {
+      "pointsToNext": "{{points}} pts to next rank",
+      "rankInLeague": "Rank {{rank}} in {{league}}",
+      "weeklyPoints": "Points this week",
+      "timeSpent": "Time spent",
+      "lessonsCompleted": "Lessons completed",
+      "currentStreak": "Current streak",
+      "welcomeTitle": "Welcome to the Leaderboard!",
+      "welcomeText": "Start learning to earn points and climb the ranks. Complete lessons to see your stats here."
+    },
+    "progress": {
+      "title": "Your Progress",
+      "noData": "Keep learning to see your progress!",
+      "collectMore": "Collect more data to see trends",
+      "rankUp": "Rank up {{count}} positions",
+      "rankDown": "Rank down {{count}} positions"
+    }
   },
   "common": {
     "close": "Close",

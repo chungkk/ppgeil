@@ -5,6 +5,13 @@ import useSWR from 'swr';
 import { fetchWithAuth } from '../../lib/api';
 import { useAuth } from '../../context/AuthContext';
 import styles from '../../styles/leaderboard.module.css';
+import RankingCriteriaTabs from '../../components/leaderboard/RankingCriteriaTabs';
+import UserRankCard from '../../components/leaderboard/UserRankCard';
+import PersonalStatsCard from '../../components/leaderboard/PersonalStatsCard';
+import ProgressChart from '../../components/leaderboard/ProgressChart';
+import LeaderboardTabs from '../../components/leaderboard/LeaderboardTabs';
+import LeagueSelector from '../../components/leaderboard/LeagueSelector';
+import { LEAGUES } from '../../lib/constants/leagues';
 
 const fetcher = async (url) => {
   try {
@@ -85,13 +92,45 @@ export default function LeaderboardPage() {
   const router = useRouter();
   const { user, loading: authLoading } = useAuth();
   const [activeTab, setActiveTab] = useState('alltime');
+  const [activeCriteria, setActiveCriteria] = useState('points');
+  const [activeLeague, setActiveLeague] = useState(null); // null = global view, string = league filter
   const [animateItems, setAnimateItems] = useState(false);
 
-  const apiUrl = activeTab === 'alltime' 
-    ? `/api/leaderboard/alltime?limit=100`
-    : `/api/leaderboard/monthly?limit=100`;
+  // Get user's league from userRankData when available
+  const userLeague = user ? (user.currentLeague || 'bronze') : null;
 
-  const { data, error, isLoading } = useSWR(
+  // Use by-criteria API when not using points, otherwise use original endpoints
+  const getApiUrl = () => {
+    // League filter mode
+    if (activeLeague) {
+      return `/api/leaderboard/leagues?league=${activeLeague}&limit=100`;
+    }
+    
+    if (activeCriteria !== 'points') {
+      return `/api/leaderboard/by-criteria?criteria=${activeCriteria}&period=${activeTab}&limit=100`;
+    }
+    switch (activeTab) {
+      case 'weekly':
+        return `/api/leaderboard/weekly?limit=100`;
+      case 'monthly':
+        return `/api/leaderboard/monthly?limit=100`;
+      default:
+        return `/api/leaderboard/alltime?limit=100`;
+    }
+  };
+
+  // Handle league selection
+  const handleLeagueChange = (league) => {
+    if (activeLeague === league) {
+      setActiveLeague(null); // Toggle off to return to global view
+    } else {
+      setActiveLeague(league);
+    }
+  };
+
+  const apiUrl = getApiUrl();
+
+  const { data, error, isLoading, mutate } = useSWR(
     !authLoading ? apiUrl : null,
     fetcher,
     {
@@ -102,13 +141,28 @@ export default function LeaderboardPage() {
     }
   );
 
+  // Handle retry
+  const handleRetry = () => {
+    mutate();
+  };
+
+  // Fetch detailed user rank data for PersonalStatsCard
+  const { data: userRankData, isLoading: userRankLoading } = useSWR(
+    !authLoading && user ? '/api/leaderboard/user-rank' : null,
+    fetcher,
+    {
+      revalidateOnFocus: false,
+      dedupingInterval: 120000,
+    }
+  );
+
   useEffect(() => {
     if (data) {
       setAnimateItems(false);
       const timer = setTimeout(() => setAnimateItems(true), 50);
       return () => clearTimeout(timer);
     }
-  }, [data, activeTab]);
+  }, [data, activeTab, activeCriteria, activeLeague]);
 
   const leaderboardData = data?.leaderboard || [];
   const currentUserRank = data?.currentUserRank || null;
@@ -127,19 +181,50 @@ export default function LeaderboardPage() {
   }
 
   const getPoints = (userData) => {
-    return activeTab === 'alltime' 
-      ? (userData.totalPoints || 0)
-      : (userData.monthlyPoints || 0);
+    // For by-criteria responses, use valueLabel or value
+    if (activeCriteria !== 'points' && userData.valueLabel) {
+      return userData.valueLabel;
+    }
+    if (activeCriteria !== 'points' && userData.value !== undefined) {
+      return userData.value;
+    }
+    switch (activeTab) {
+      case 'weekly':
+        return userData.weeklyPoints || 0;
+      case 'monthly':
+        return userData.monthlyPoints || 0;
+      default:
+        return userData.totalPoints || userData.points || 0;
+    }
   };
 
   const getCurrentUserPoints = () => {
     if (!currentUserRank) return 0;
-    return activeTab === 'alltime'
-      ? (currentUserRank.totalPoints || 0)
-      : (currentUserRank.monthlyPoints || 0);
+    // For by-criteria responses
+    if (activeCriteria !== 'points' && currentUserRank.valueLabel) {
+      return currentUserRank.valueLabel;
+    }
+    if (activeCriteria !== 'points' && currentUserRank.value !== undefined) {
+      return currentUserRank.value;
+    }
+    switch (activeTab) {
+      case 'weekly':
+        return currentUserRank.weeklyPoints || 0;
+      case 'monthly':
+        return currentUserRank.monthlyPoints || 0;
+      default:
+        return currentUserRank.totalPoints || currentUserRank.points || 0;
+    }
+  };
+
+  const getCriteriaIcon = () => {
+    const icons = { points: '💎', streak: '🔥', time: '⏱️', lessons: '📚', improved: '📈' };
+    return icons[activeCriteria] || '💎';
   };
 
   const formatPoints = (points) => {
+    // If it's already a formatted string (from valueLabel), return as is
+    if (typeof points === 'string') return points;
     if (points >= 1000000) return (points / 1000000).toFixed(1) + 'M';
     if (points >= 1000) return (points / 1000).toFixed(1) + 'K';
     return points;
@@ -159,33 +244,25 @@ export default function LeaderboardPage() {
           <p className={styles.subtitle}>{t('leaderboard.subtitle')}</p>
         </div>
         
-        {/* Tabs */}
-        <div className={styles.tabs}>
-          <button
-            className={`${styles.tab} ${activeTab === 'alltime' ? styles.activeTab : ''}`}
-            onClick={() => setActiveTab('alltime')}
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-            </svg>
-            <span>{t('leaderboard.allTime')}</span>
-          </button>
-          <button
-            className={`${styles.tab} ${activeTab === 'monthly' ? styles.activeTab : ''}`}
-            onClick={() => setActiveTab('monthly')}
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/>
-            </svg>
-            <span>{t('leaderboard.monthly')}</span>
-          </button>
-        </div>
+        {/* Time Period Tabs */}
+        <LeaderboardTabs 
+          activeTab={activeTab} 
+          onTabChange={setActiveTab} 
+        />
+
+        {/* Ranking Criteria Tabs */}
+        <RankingCriteriaTabs 
+          activeCriteria={activeCriteria} 
+          onCriteriaChange={setActiveCriteria} 
+        />
       </div>
 
-      {/* Countdown for Monthly */}
-      {activeTab === 'monthly' && countdown && (
+      {/* Countdown for Weekly/Monthly */}
+      {(activeTab === 'weekly' || activeTab === 'monthly') && countdown && (
         <div className={`${styles.countdownContainer} ${animateItems ? styles.fadeIn : ''}`}>
-          <span className={styles.countdownLabel}>{t('leaderboard.endsIn')}</span>
+          <span className={styles.countdownLabel}>
+            {activeTab === 'weekly' ? t('leaderboard.resetsIn') : t('leaderboard.endsIn')}
+          </span>
           <div className={styles.countdownTimer}>
             <div className={styles.countdownItem}>
               <span className={styles.countdownValue}>{String(countdown.days).padStart(2, '0')}</span>
@@ -205,31 +282,36 @@ export default function LeaderboardPage() {
         </div>
       )}
 
-      {/* Current User Card */}
-      {currentUserRank && user && (
-        <div className={`${styles.currentUserCard} ${animateItems ? styles.fadeIn : ''}`}>
-          <div className={styles.currentUserLeft}>
-            <div className={styles.currentUserAvatar}>
-              {user.name.charAt(0).toUpperCase()}
-            </div>
-            <div className={styles.currentUserInfo}>
-              <span className={styles.currentUserLabel}>{t('leaderboard.yourRank')}</span>
-              <h3 className={styles.currentUserName}>{user.name}</h3>
-            </div>
-          </div>
-          <div className={styles.currentUserRight}>
-            <div className={styles.currentUserRank}>#{currentUserRank.rank}</div>
-            <div className={styles.currentUserPoints}>
-              <span className={styles.pointIcon}>💎</span>
-              {formatPoints(getCurrentUserPoints())}
-            </div>
-          </div>
-        </div>
+      {/* League Selector */}
+      <LeagueSelector
+        activeLeague={activeLeague}
+        onLeagueChange={handleLeagueChange}
+        userLeague={userRankData?.league?.current || userLeague}
+      />
+
+      {/* Personal Stats Card - Detailed View */}
+      {user && !activeLeague && (
+        <PersonalStatsCard 
+          data={userRankData} 
+          isLoading={userRankLoading} 
+        />
       )}
+
+      {/* Progress Chart - Rank History (hide in league view) */}
+      {user && !activeLeague && <ProgressChart />}
 
       {/* Main Content */}
       <div className={styles.mainCard}>
-        {isLoading ? (
+        {error ? (
+          <div className={styles.errorState}>
+            <div className={styles.errorIcon}>⚠️</div>
+            <p className={styles.errorTitle}>{t('leaderboard.errorTitle')}</p>
+            <p className={styles.errorSubtitle}>{t('leaderboard.errorSubtitle')}</p>
+            <button className={styles.retryButton} onClick={handleRetry}>
+              {t('leaderboard.retry')}
+            </button>
+          </div>
+        ) : isLoading ? (
           <>
             <SkeletonPodium />
             <div className={styles.listSection}>
@@ -303,7 +385,7 @@ export default function LeaderboardPage() {
                     </div>
                   </div>
                   <div className={styles.mobileTopPoints}>
-                    <span className={styles.pointIcon}>💎</span>
+                    <span className={styles.pointIcon}>{getCriteriaIcon()}</span>
                     {formatPoints(getPoints(userData))}
                   </div>
                 </div>
@@ -335,7 +417,7 @@ export default function LeaderboardPage() {
                         </div>
                       </div>
                       <div className={styles.userCardRight}>
-                        <span className={styles.pointIcon}>💎</span>
+                        <span className={styles.pointIcon}>{getCriteriaIcon()}</span>
                         <span className={styles.userPoints}>{formatPoints(getPoints(userData))}</span>
                       </div>
                     </div>

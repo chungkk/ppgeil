@@ -341,14 +341,63 @@
     "topLearners": "Top-Lerner",
     "allTime": "Alle Zeiten Rangliste",
     "monthly": "Monatlich",
+    "weekly": "Wöchentlich",
     "maxStreak": "Max. Serie",
     "notRanked": "Noch nicht eingestuft",
     "emptyState": "Noch keine Ranglistendaten für diesen Monat.",
     "startLearning": "Schließen Sie Lektionen ab, um Punkte zu sammeln!",
+    "errorTitle": "Rangliste konnte nicht geladen werden",
+    "errorSubtitle": "Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "retry": "Erneut versuchen",
     "endsIn": "Endet in",
+    "resetsIn": "Reset in",
     "days": "Tage",
     "hours": "Stunden",
-    "minutes": "Minuten"
+    "minutes": "Minuten",
+    "criteria": {
+      "points": "Gesamtpunkte",
+      "streak": "Serie-Champions",
+      "time": "Investierte Zeit",
+      "lessons": "Abgeschlossene Lektionen",
+      "improved": "Am meisten verbessert"
+    },
+    "leagues": {
+      "title": "Ligen",
+      "bronze": "Bronze",
+      "silver": "Silber",
+      "gold": "Gold",
+      "platinum": "Platin",
+      "diamond": "Diamant",
+      "promotionZone": "Aufstiegszone",
+      "demotionZone": "Abstiegszone",
+      "willPromote": "Wird aufsteigen",
+      "willDemote": "Wird absteigen"
+    },
+    "badges": {
+      "title": "Abzeichen",
+      "topMonthly": "Top Monatlich",
+      "topMonthlyDesc": "Top 10 in der monatlichen Bestenliste erreicht",
+      "topAlltime": "Top Alle Zeiten",
+      "topAlltimeDesc": "Derzeit in den Top 10 aller Zeiten",
+      "current": "Aktuell"
+    },
+    "stats": {
+      "pointsToNext": "{{points}} Pkt bis zum nächsten Rang",
+      "rankInLeague": "Rang {{rank}} in {{league}}",
+      "weeklyPoints": "Punkte diese Woche",
+      "timeSpent": "Verbrachte Zeit",
+      "lessonsCompleted": "Abgeschlossene Lektionen",
+      "currentStreak": "Aktuelle Serie",
+      "welcomeTitle": "Willkommen zur Rangliste!",
+      "welcomeText": "Beginnen Sie zu lernen, um Punkte zu sammeln und aufzusteigen. Schließen Sie Lektionen ab, um Ihre Statistiken hier zu sehen."
+    },
+    "progress": {
+      "title": "Ihr Fortschritt",
+      "noData": "Weiter lernen um Fortschritt zu sehen!",
+      "collectMore": "Mehr Daten sammeln um Trends zu sehen",
+      "rankUp": "{{count}} Plätze gestiegen",
+      "rankDown": "{{count}} Plätze gefallen"
+    }
   },
   "common": {
     "close": "Schließen",

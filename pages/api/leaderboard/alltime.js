@@ -22,9 +22,10 @@ export default async function handler(req, res) {
 
     await connectDB();
 
-    // Get pagination params
-    const page = parseInt(req.query.page) || 1;
-    const limit = parseInt(req.query.limit) || 50;
+    // Get pagination params - limit to 20 for non-logged-in users
+    const maxLimit = currentUserId ? 100 : 20;
+    const page = currentUserId ? (parseInt(req.query.page) || 1) : 1;
+    const limit = Math.min(parseInt(req.query.limit) || 50, maxLimit);
     const skip = (page - 1) * limit;
 
     // Fetch all-time leaderboard data (users sorted by total points)
@@ -70,13 +71,41 @@ export default async function handler(req, res) {
           ]
         });
 
+        const userRank = usersAbove + 1;
+
+        // Get surrounding users (1 above, 1 below)
+        const contextSkip = Math.max(0, userRank - 2);
+        const nearbyUsers = await User.find({})
+          .select('name points createdAt')
+          .sort({ points: -1, createdAt: 1 })
+          .skip(contextSkip)
+          .limit(5)
+          .lean();
+
+        let userAbove = null;
+        let userBelow = null;
+        
+        nearbyUsers.forEach((u, i) => {
+          const rank = contextSkip + i + 1;
+          if (u._id.toString() === currentUserId) return;
+          
+          if (rank === userRank - 1) {
+            userAbove = { name: u.name, points: u.points || 0 };
+          } else if (rank === userRank + 1) {
+            userBelow = { name: u.name, points: u.points || 0 };
+          }
+        });
+
         currentUserRank = {
-          rank: usersAbove + 1,
+          rank: userRank,
           totalPoints: currentUser.points || 0,
           monthlyPoints: currentUser.monthlyPoints || 0,
           currentStreak: currentUser.streak?.currentStreak || 0,
           maxStreak: currentUser.streak?.maxStreak || 0,
-          maxStreakThisMonth: currentUser.streak?.maxStreakThisMonth || 0
+          maxStreakThisMonth: currentUser.streak?.maxStreakThisMonth || 0,
+          pointsToNextRank: userAbove ? userAbove.points - (currentUser.points || 0) : 0,
+          userAbove,
+          userBelow
         };
       }
     }

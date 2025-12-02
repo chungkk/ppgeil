@@ -71,8 +71,46 @@ const UserSchema = new mongoose.Schema({
    createdAt: {
      type: Date,
      default: Date.now
+   },
+   // Smart Leaderboard fields
+   streak: {
+     currentStreak: { type: Number, default: 0 },
+     maxStreak: { type: Number, default: 0 },
+     lastActiveDate: { type: Date, default: null }
+   },
+   totalTimeSpent: {
+     type: Number,
+     default: 0,
+     min: 0
+   },
+   lessonsCompleted: {
+     type: Number,
+     default: 0,
+     min: 0
+   },
+   weeklyPoints: {
+     type: Number,
+     default: 0,
+     min: 0
+   },
+   lastWeeklyReset: {
+     type: Date,
+     default: null
+   },
+   currentLeague: {
+     type: String,
+     enum: ['bronze', 'silver', 'gold', 'platinum', 'diamond'],
+     default: 'bronze'
    }
 });
+
+// Leaderboard indexes for efficient sorting
+UserSchema.index({ points: -1, createdAt: 1 });
+UserSchema.index({ 'streak.currentStreak': -1, createdAt: 1 });
+UserSchema.index({ totalTimeSpent: -1, createdAt: 1 });
+UserSchema.index({ lessonsCompleted: -1, createdAt: 1 });
+UserSchema.index({ weeklyPoints: -1, createdAt: 1 });
+UserSchema.index({ currentLeague: 1, points: -1 });
 
 UserSchema.pre('save', async function(next) {
   // Chỉ hash password nếu password tồn tại và được modified

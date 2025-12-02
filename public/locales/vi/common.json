@@ -338,14 +338,63 @@
     "topLearners": "Top học viên",
     "allTime": "Xếp hạng tổng",
     "monthly": "Tháng này",
+    "weekly": "Tuần này",
     "maxStreak": "Chuỗi dài nhất",
     "notRanked": "Chưa có xếp hạng",
     "emptyState": "Chưa có dữ liệu xếp hạng cho tháng này.",
     "startLearning": "Hãy hoàn thành bài học để bắt đầu tích điểm!",
+    "errorTitle": "Không thể tải bảng xếp hạng",
+    "errorSubtitle": "Vui lòng kiểm tra kết nối và thử lại.",
+    "retry": "Thử lại",
     "endsIn": "Kết thúc sau",
+    "resetsIn": "Reset sau",
     "days": "Ngày",
     "hours": "Giờ",
-    "minutes": "Phút"
+    "minutes": "Phút",
+    "criteria": {
+      "points": "Tổng điểm",
+      "streak": "Streak dài nhất",
+      "time": "Thời gian học",
+      "lessons": "Bài học hoàn thành",
+      "improved": "Tiến bộ nhất"
+    },
+    "leagues": {
+      "title": "Hạng đấu",
+      "bronze": "Đồng",
+      "silver": "Bạc",
+      "gold": "Vàng",
+      "platinum": "Bạch kim",
+      "diamond": "Kim cương",
+      "promotionZone": "Vùng thăng hạng",
+      "demotionZone": "Vùng xuống hạng",
+      "willPromote": "Sẽ được thăng hạng",
+      "willDemote": "Sẽ bị xuống hạng"
+    },
+    "badges": {
+      "title": "Huy hiệu",
+      "topMonthly": "Top Tháng",
+      "topMonthlyDesc": "Đạt Top 10 bảng xếp hạng tháng",
+      "topAlltime": "Top Tổng",
+      "topAlltimeDesc": "Đang trong Top 10 tổng",
+      "current": "Hiện tại"
+    },
+    "stats": {
+      "pointsToNext": "Còn {{points}} điểm để lên hạng",
+      "rankInLeague": "Hạng {{rank}} trong {{league}}",
+      "weeklyPoints": "Điểm tuần này",
+      "timeSpent": "Thời gian học",
+      "lessonsCompleted": "Bài học hoàn thành",
+      "currentStreak": "Chuỗi hiện tại",
+      "welcomeTitle": "Chào mừng đến Bảng xếp hạng!",
+      "welcomeText": "Bắt đầu học để kiếm điểm và leo hạng. Hoàn thành bài học để xem thống kê của bạn tại đây."
+    },
+    "progress": {
+      "title": "Tiến độ của bạn",
+      "noData": "Tiếp tục học để xem tiến độ!",
+      "collectMore": "Thu thập thêm dữ liệu để xem xu hướng",
+      "rankUp": "Tăng {{count}} bậc",
+      "rankDown": "Giảm {{count}} bậc"
+    }
   },
   "common": {
     "close": "Đóng",
