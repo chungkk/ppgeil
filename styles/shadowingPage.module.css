@@ -883,11 +883,11 @@
   margin-left: 0;
 }
 
-/* Mobile Play Button - Apple HIG compliant (44pt touch target) */
+/* Mobile Play Button - Compact size for inline display */
 .sentencePlayButtonMobile {
-  width: 28px;
-  height: 28px;
-  min-width: 28px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none;
@@ -896,8 +896,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.35);
   padding: 0;
   flex-shrink: 0;
   vertical-align: middle;
@@ -915,10 +915,10 @@
 }
 
 .sentencePlayButtonMobile svg {
-  margin-left: 2px;
+  margin-left: 1px;
   transition: transform 0.2s ease;
-  width: 9px;
-  height: 11px;
+  width: 7px;
+  height: 8px;
 }
 
 .sentencePlayButtonMobile:has(rect) svg {
@@ -1612,7 +1612,7 @@
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
     
     .transcriptWordsWrapper {
