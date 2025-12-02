@@ -761,12 +761,12 @@
 }
 
 .sentenceCounterMobile {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   color: #667eea;
-  padding: 4px 8px;
-  background: rgba(102, 126, 234, 0.1);
-  border-radius: 5px;
+  padding: 5px 10px;
+  background: rgba(102, 126, 234, 0.12);
+  border-radius: 6px;
   flex-shrink: 0;
 }
 
@@ -883,11 +883,11 @@
   margin-left: 0;
 }
 
-/* Mobile Play Button - Apple HIG compliant */
+/* Mobile Play Button - Apple HIG compliant (44pt touch target) */
 .sentencePlayButtonMobile {
-  width: 22px;
-  height: 22px;
-  min-width: 22px;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none;
@@ -897,7 +897,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.35);
+  box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
   padding: 0;
   flex-shrink: 0;
   vertical-align: middle;
@@ -915,10 +915,10 @@
 }
 
 .sentencePlayButtonMobile svg {
-  margin-left: 1px;
+  margin-left: 2px;
   transition: transform 0.2s ease;
-  width: 7px;
-  height: 9px;
+  width: 9px;
+  height: 11px;
 }
 
 .sentencePlayButtonMobile:has(rect) svg {
@@ -932,9 +932,10 @@
 }
 
 .transcriptItemActive {
-  background: rgba(102, 126, 234, 0.12);
-  border-color: rgba(102, 126, 234, 0.45);
-  border-left: 3px solid #667eea;
+  background: rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.5);
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
 }
 
 /* ============================================
@@ -1436,8 +1437,8 @@
      max-height: none;
      overflow-y: auto;
      overflow-x: hidden;
-     padding: 6px;
-     gap: 5px;
+     padding: 8px;
+     gap: 8px;
    }
 
    .videoSection {
@@ -1486,11 +1487,11 @@
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-color);
       color: #94a3b8;
-      /* Smaller touch target for compact design */
-      min-height: 28px;
-      padding: 4px 10px;
-      border-radius: 5px;
-      font-size: 10px;
+      /* Optimized touch target for mobile */
+      min-height: 32px;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 11px;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -1533,13 +1534,13 @@
     }
 
     .transcriptText {
-      font-size: 13px;
+      font-size: 15px;
       margin-bottom: 0;
-      line-height: 1.5;
+      line-height: 1.6;
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      gap: 6px;
+      gap: 10px;
     }
     
     .transcriptWordsWrapper {
@@ -1554,35 +1555,35 @@
     }
 
     .transcriptItem {
-      padding: 8px 8px;
-      border-radius: 8px;
+      padding: 12px 10px;
+      border-radius: 10px;
     }
 
     .transcriptIPA {
       margin: 0;
-      font-size: 10px;
-      line-height: 1.4;
+      font-size: 11px;
+      line-height: 1.5;
     }
 
     .transcriptTranslation {
       display: block;
       position: relative;
-      font-size: 10px;
-      line-height: 1.4;
-      margin: 3px 0 0 0;
-      padding: 4px 6px 4px 26px;
-      margin-left: 28px;
-      background: rgba(96, 165, 250, 0.06);
-      border-left: 2px solid rgba(96, 165, 250, 0.4);
-      border-radius: 0 5px 5px 0;
-      color: #a5b4c8;
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 6px 0 0 0;
+      padding: 6px 8px 6px 28px;
+      margin-left: 38px;
+      background: rgba(96, 165, 250, 0.08);
+      border-left: 3px solid rgba(96, 165, 250, 0.5);
+      border-radius: 0 6px 6px 0;
+      color: #b8c5d6;
       gap: 0;
     }
 
     .transcriptTranslation::before {
       position: absolute;
-      left: 6px;
-      font-size: 9px;
+      left: 8px;
+      font-size: 10px;
       margin-top: 0;
     }
 
@@ -1627,7 +1628,7 @@
   }
 
   .transcriptText {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
