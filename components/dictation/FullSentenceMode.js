@@ -102,43 +102,43 @@ const FullSentenceMode = ({
         )}
       </div>
 
-      <div className={styles.textareaWithVoice} style={{ position: 'relative' }}>
-        <textarea
-          className={styles.fullSentenceInput}
-          placeholder="Nhập toàn bộ câu..."
-          value={fullSentenceInputs[sentenceIndex] || ''}
-          onChange={(e) => {
-            onInputChange(sentenceIndex, e.target.value);
-            onCalculatePartialReveals(sentenceIndex, e.target.value, sentence.text);
-          }}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' && !e.shiftKey) {
-              e.preventDefault();
-              onSubmit(sentenceIndex);
-            }
-          }}
-          disabled={isCompleted}
-          rows={3}
-          style={{ paddingRight: isMobile ? '50px' : undefined }}
-        />
-        {!isCompleted && (
-          <div className={isMobile ? undefined : styles.dictationVoiceButton} style={isMobile ? {
-            position: 'absolute',
-            bottom: '8px',
-            right: '8px',
-            zIndex: 1
-          } : undefined}>
-            <ShadowingVoiceRecorder
-              onTranscript={(text) => {
-                onInputChange(sentenceIndex, text);
-                onCalculatePartialReveals(sentenceIndex, text, sentence.text);
-              }}
-              onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
-              language="de-DE"
-            />
-          </div>
-        )}
-      </div>
+      {/* Desktop: Show textarea for typing full sentence */}
+      {!isMobile && (
+        <div className={styles.textareaWithVoice} style={{ position: 'relative' }}>
+          <textarea
+            className={styles.fullSentenceInput}
+            placeholder="Nhập toàn bộ câu..."
+            value={fullSentenceInputs[sentenceIndex] || ''}
+            onChange={(e) => {
+              onInputChange(sentenceIndex, e.target.value);
+              onCalculatePartialReveals(sentenceIndex, e.target.value, sentence.text);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                onSubmit(sentenceIndex);
+              }
+            }}
+            disabled={isCompleted}
+            rows={3}
+          />
+          {!isCompleted && (
+            <div className={styles.dictationVoiceButton}>
+              <ShadowingVoiceRecorder
+                onTranscript={(text) => {
+                  onInputChange(sentenceIndex, text);
+                  onCalculatePartialReveals(sentenceIndex, text, sentence.text);
+                }}
+                onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
+                language="de-DE"
+              />
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Mobile: Only show word boxes - user taps to reveal words */}
+      {/* Textarea is hidden on mobile - interaction is through word boxes only */}
 
       {isActive && !isCompleted && (
         <div className={styles.dictationActions}>

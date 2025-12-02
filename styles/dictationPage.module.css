@@ -1493,17 +1493,21 @@
   }
 }
 
-/* Non-active slides on mobile - GPU optimized */
+/* Non-active slides on mobile - Clean minimal design */
 @media (max-width: 768px) {
   .dictationSlide {
-    opacity: 0.5;
-    transform: scale(0.94) translateZ(0);
+    opacity: 0.6;
+    transform: scale(0.96) translateZ(0);
+    border: none;
+    background: transparent;
+    box-shadow: none;
   }
 
   .dictationSlideActive {
     opacity: 1;
     transform: scale(1) translateZ(0);
-    border-color: var(--accent-blue);
+    border: none;
+    background: transparent;
   }
 }
 
@@ -3077,12 +3081,15 @@
   }
 
   .dictationSlide {
-    flex: 0 0 calc(100% - 12px);
-    padding: 12px;
-    min-height: 180px; /* Ensure minimum usable height */
+    flex: 0 0 100%;
+    padding: 8px;
+    min-height: 180px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
   }
 
   .dictationSlide .dictationInputArea {
@@ -3212,34 +3219,41 @@
     height: 12px;
   }
 
-  /* Full sentence mode mobile adjustments */
+  /* Full sentence mode mobile adjustments - Word boxes only (no textarea) */
   .fullSentenceMode {
-    padding: 10px 10px 0 10px;
-    gap: 12px;
-    justify-content: flex-start;
+    padding: 8px;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     min-height: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    background: transparent;
   }
 
   .fullSentenceDisplay {
-    padding: 14px;
-    font-size: 15px;
-    min-height: 120px;
-    flex-shrink: 0;
-    overflow: hidden;
-    border-radius: 12px;
+    padding: 8px;
+    font-size: 16px;
+    min-height: auto;
+    flex: 1;
+    overflow-y: auto;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Hide textarea on mobile - only word boxes interaction */
+  .textareaWithVoice {
+    display: none !important;
   }
 
   .fullSentenceInput {
-    min-height: 56px;
-    max-height: 100px; /* Allow more expansion */
-    font-size: 16px; /* Prevent iOS zoom */
-    padding: 14px 16px;
-    padding-right: 60px; /* Space for voice button */
-    border-radius: 12px;
-    line-height: 1.5;
+    display: none;
   }
 
   .sentenceResult {
@@ -3468,30 +3482,65 @@
   }
 
   .hintSentenceText {
-    gap: 6px;
-    row-gap: 8px;
-    margin-bottom: 12px;
+    gap: 10px;
+    row-gap: 14px;
+    margin-bottom: 0;
     background: transparent;
     border: none;
     padding: 8px;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
   }
 
+  /* Clean word boxes - minimal border, focus on content */
   .hintWordBox {
-    min-width: 44px; /* Touch target */
-    height: 44px;
-    padding: 8px 12px;
-    font-size: 15px;
+    min-width: 48px;
+    height: 48px;
+    padding: 10px 14px;
+    font-size: 17px;
+    font-weight: 500;
     border-radius: 10px;
+    border: 1.5px dashed rgba(102, 126, 234, 0.4);
+    background: rgba(102, 126, 234, 0.08);
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
   }
 
-  .hintWordRevealed,
-  .hintWordCorrect,
-  .hintWordIncorrect,
+  .hintWordBox:active {
+    transform: scale(0.95);
+    background: rgba(102, 126, 234, 0.15);
+  }
+
+  .hintWordRevealed {
+    min-width: 48px;
+    height: 48px;
+    border: 1.5px solid rgba(16, 185, 129, 0.5);
+    background: rgba(16, 185, 129, 0.1);
+  }
+
+  .hintWordCorrect {
+    min-width: 48px;
+    height: 48px;
+    border: 1.5px solid rgba(16, 185, 129, 0.6);
+    background: rgba(16, 185, 129, 0.15);
+  }
+
+  .hintWordIncorrect {
+    min-width: 48px;
+    height: 48px;
+    border: 1.5px solid rgba(239, 68, 68, 0.6);
+    background: rgba(239, 68, 68, 0.15);
+  }
+
   .hintWordPartial {
-    min-width: 44px;
-    height: 44px;
+    min-width: 48px;
+    height: 48px;
+    border: 1.5px solid rgba(59, 130, 246, 0.5);
+    background: rgba(59, 130, 246, 0.1);
   }
 
   .videoWrapper {
@@ -3528,23 +3577,18 @@
   }
 
   .dictationContainer {
-    border: 0.5px solid rgba(255, 255, 255, 0.12);
-    border-radius: 20px;
+    border: none;
+    border-radius: 16px;
     padding: 0;
-    padding-top: 0;
     height: auto;
     min-height: auto;
     max-height: none;
     overflow: hidden;
     margin-bottom: 0;
-    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     gap: 0;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    background: transparent;
   }
 
   /* Dictation header styling handled in earlier mobile section */
@@ -3829,46 +3873,73 @@
   }
 
   .dictationSlide {
-    flex: 0 0 calc(100% - 10px);
-    padding: 10px;
+    flex: 0 0 100%;
+    padding: 6px;
     min-height: 160px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
   }
 
   .dictationSlides {
-    padding: 6px 5px;
-    scroll-padding: 0 5px;
-    gap: 8px;
+    padding: 4px;
+    scroll-padding: 0 4px;
+    gap: 6px;
   }
 
   .hintWordBox {
-    min-width: 40px; /* Still good touch target */
-    height: 40px;
-    padding: 6px 10px;
-    font-size: 14px;
-    border-radius: 8px;
+    min-width: 44px;
+    height: 44px;
+    padding: 8px 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.5px dashed rgba(102, 126, 234, 0.4);
+    background: rgba(102, 126, 234, 0.08);
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
   }
 
-  .hintWordRevealed,
-  .hintWordCorrect,
-  .hintWordIncorrect,
-  .hintWordPartial {
-    min-width: 40px;
-    height: 40px;
+  .hintWordRevealed {
+    min-width: 44px;
+    height: 44px;
+    border: 1.5px solid rgba(16, 185, 129, 0.5);
+    background: rgba(16, 185, 129, 0.1);
   }
 
-  .fullSentenceInput {
-    min-height: 52px;
-    max-height: 90px; /* More space for expansion */
-    font-size: 16px; /* Prevent iOS zoom */
-    padding: 12px 14px;
-    padding-right: 54px;
-    border-radius: 10px;
-    line-height: 1.5;
+  .hintWordCorrect {
+    min-width: 44px;
+    height: 44px;
+    border: 1.5px solid rgba(16, 185, 129, 0.6);
+    background: rgba(16, 185, 129, 0.15);
+  }
+
+  .hintWordIncorrect {
+    min-width: 44px;
+    height: 44px;
+    border: 1.5px solid rgba(239, 68, 68, 0.6);
+    background: rgba(239, 68, 68, 0.15);
+  }
+
+  .hintWordPartial {
+    min-width: 44px;
+    height: 44px;
+    border: 1.5px solid rgba(59, 130, 246, 0.5);
+    background: rgba(59, 130, 246, 0.1);
+  }
+
+  .hintSentenceText {
+    gap: 8px;
+    row-gap: 12px;
+    padding: 6px;
+  }
+
+  /* Keep textarea hidden on 480px too */
+  .fullSentenceInput,
+  .textareaWithVoice {
+    display: none !important;
   }
   
   .hideLevelDropdown {
