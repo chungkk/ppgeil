@@ -15,6 +15,7 @@ const HomePage = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [difficultyFilter, setDifficultyFilter] = useState('all');
+  const [fetchController, setFetchController] = useState(null);
   const itemsPerPage = 15;
   const router = useRouter();
   const { user } = useAuth();
@@ -54,6 +55,15 @@ const HomePage = () => {
     }
   }, [currentPage, totalPages, difficultyFilter]);
 
+  // Cleanup fetchController on unmount
+  useEffect(() => {
+    return () => {
+      if (fetchController) {
+        fetchController.abort();
+      }
+    };
+  }, [fetchController]);
+
   const nextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
@@ -67,6 +77,14 @@ const HomePage = () => {
   };
 
   const handleLessonClick = async (lesson) => {
+    // Cancel any ongoing fetch request
+    if (fetchController) {
+      fetchController.abort();
+    }
+    
+    const controller = new AbortController();
+    setFetchController(controller);
+    
     // Fetch study time for both modes
     const token = localStorage.getItem('token');
     let shadowingStudyTime = 0;
@@ -76,10 +94,12 @@ const HomePage = () => {
       try {
         const [shadowingRes, dictationRes] = await Promise.all([
           fetch(`/api/progress?lessonId=${lesson.id}&mode=shadowing`, {
-            headers: { 'Authorization': `Bearer ${token}` }
+            headers: { 'Authorization': `Bearer ${token}` },
+            signal: controller.signal
           }),
           fetch(`/api/progress?lessonId=${lesson.id}&mode=dictation`, {
-            headers: { 'Authorization': `Bearer ${token}` }
+            headers: { 'Authorization': `Bearer ${token}` },
+            signal: controller.signal
           })
         ]);
         
@@ -93,10 +113,14 @@ const HomePage = () => {
           dictationStudyTime = dictationData.studyTime || 0;
         }
       } catch (error) {
+        if (error.name === 'AbortError') {
+          return; // Request was cancelled, don't update state
+        }
         console.error('Error fetching study time:', error);
       }
     }
     
+    setFetchController(null);
     setSelectedLesson({
       ...lesson,
       shadowingStudyTime,
@@ -207,6 +231,10 @@ const HomePage = () => {
             Array.from({ length: itemsPerPage }).map((_, i) => (
               <SkeletonCard key={i} />
             ))
+          ) : lessons.length === 0 ? (
+            <div className="empty-state">
+              <p>{t('homePage.noLessons')}</p>
+            </div>
           ) : (
             lessons.map(lesson => (
               <LessonCard
