@@ -223,15 +223,15 @@ const Header = () => {
         </nav>
 
         <div className={styles.rightSection}>
-          {/* Desktop only: Theme toggle */}
-          <button
+          {/* Desktop only: Theme toggle - Temporarily hidden */}
+          {/* <button
             className={styles.themeToggleDesktop}
             onClick={toggleTheme}
             aria-label={t('header.themeToggle')}
             title={currentTheme?.label || t('header.themeToggle')}
           >
             {currentTheme?.emoji || '🌅'}
-          </button>
+          </button> */}
 
           {/* Desktop only: Language selector */}
           <div className={styles.languageMenuContainerDesktop} ref={languageMenuRef}>
@@ -437,6 +437,7 @@ const Header = () => {
                       {/* Mobile only: Theme & Language in dropdown */}
                       <div className={styles.mobileOnlySection}>
                         <div className={styles.userDropdownDivider}></div>
+                        {/* Theme toggle - Temporarily hidden
                         <button
                           className={styles.userDropdownItem}
                           onClick={() => {
@@ -446,6 +447,7 @@ const Header = () => {
                           <span className={styles.dropdownIcon}>{currentTheme?.emoji || '🌅'}</span>
                           <span>{currentTheme?.label || t('header.themeToggle')}</span>
                         </button>
+                        */}
                         <div className={styles.languageSubMenu}>
                           <span className={styles.languageSubMenuLabel}>
                             <span className={styles.dropdownIcon}>🌐</span>
