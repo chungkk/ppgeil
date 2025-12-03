@@ -1433,6 +1433,10 @@
   margin-top: auto;
   transition: all 0.3s ease;
   letter-spacing: 0.3px;
+  overflow-y: auto;
+  max-height: 120px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .sentenceTranslation:hover {

@@ -626,7 +626,7 @@ const DictationPageContent = () => {
   // Load progress from SWR hook (logged-in users) or localStorage (guests)
   useEffect(() => {
     // Helper function to normalize and set progress data
-    const setProgressData = (loadedSentences, loadedWords, source) => {
+    const setProgressData = (loadedSentences, loadedWords, loadedRevealedWords, source) => {
       // Normalize keys to numbers
       const normalizedWords = {};
       Object.keys(loadedWords).forEach(sentenceIdx => {
@@ -638,12 +638,27 @@ const DictationPageContent = () => {
         });
       });
 
+      // Normalize revealedHintWords keys to numbers
+      const normalizedRevealedWords = {};
+      if (loadedRevealedWords) {
+        Object.keys(loadedRevealedWords).forEach(sentenceIdx => {
+          const numIdx = parseInt(sentenceIdx);
+          normalizedRevealedWords[numIdx] = {};
+          Object.keys(loadedRevealedWords[sentenceIdx]).forEach(wordIdx => {
+            const numWordIdx = parseInt(wordIdx);
+            normalizedRevealedWords[numIdx][numWordIdx] = loadedRevealedWords[sentenceIdx][wordIdx];
+          });
+        });
+      }
+
       setCompletedSentences(loadedSentences);
       setCompletedWords(normalizedWords);
+      setRevealedHintWords(normalizedRevealedWords);
 
       console.log(`📂 Progress loaded from ${source}:`, {
         completedSentences: loadedSentences,
-        completedWords: normalizedWords
+        completedWords: normalizedWords,
+        revealedHintWords: normalizedRevealedWords
       });
       
       setProgressLoaded(true);
@@ -658,7 +673,8 @@ const DictationPageContent = () => {
         // Logged-in user: use data from API (SWR)
         const loadedSentences = loadedProgress.completedSentences || [];
         const loadedWords = loadedProgress.completedWords || {};
-        setProgressData(loadedSentences, loadedWords, 'API (logged-in user)');
+        const loadedRevealedWords = loadedProgress.revealedHintWords || {};
+        setProgressData(loadedSentences, loadedWords, loadedRevealedWords, 'API (logged-in user)');
       } else {
         // Guest user: try to load from localStorage
         try {
@@ -667,14 +683,15 @@ const DictationPageContent = () => {
             const parsed = JSON.parse(savedProgress);
             const loadedSentences = parsed.completedSentences || [];
             const loadedWords = parsed.completedWords || {};
-            setProgressData(loadedSentences, loadedWords, 'localStorage (guest)');
+            const loadedRevealedWords = parsed.revealedHintWords || {};
+            setProgressData(loadedSentences, loadedWords, loadedRevealedWords, 'localStorage (guest)');
           } else {
             // No saved progress for guest
-            setProgressData([], {}, 'none (new guest)');
+            setProgressData([], {}, {}, 'none (new guest)');
           }
         } catch (error) {
           console.error('Error loading guest progress from localStorage:', error);
-          setProgressData([], {}, 'none (error)');
+          setProgressData([], {}, {}, 'none (error)');
         }
       }
     }
@@ -1441,8 +1458,11 @@ const DictationPageContent = () => {
   };
 
   // Save progress to database (logged-in users) or localStorage (guests)
-  const saveProgress = useCallback(async (updatedCompletedSentences, updatedCompletedWords) => {
+  const saveProgress = useCallback(async (updatedCompletedSentences, updatedCompletedWords, updatedRevealedHintWords = null) => {
     if (!lessonId) return;
+    
+    // Use current state if not provided
+    const revealedWordsToSave = updatedRevealedHintWords !== null ? updatedRevealedHintWords : revealedHintWords;
     
     try {
       const token = localStorage.getItem('token');
@@ -1452,6 +1472,7 @@ const DictationPageContent = () => {
         const guestProgress = {
           completedSentences: updatedCompletedSentences,
           completedWords: updatedCompletedWords,
+          revealedHintWords: revealedWordsToSave,
           lastUpdated: Date.now()
         };
         localStorage.setItem(`dictation_progress_${lessonId}`, JSON.stringify(guestProgress));
@@ -1486,6 +1507,7 @@ const DictationPageContent = () => {
           progress: {
             completedSentences: updatedCompletedSentences,
             completedWords: updatedCompletedWords,
+            revealedHintWords: revealedWordsToSave,
             currentSentenceIndex,
             totalSentences: transcriptData.length,
             correctWords: correctWordsCount,
@@ -1506,6 +1528,7 @@ const DictationPageContent = () => {
       console.log('✅ Progress saved:', { 
         completedSentences: updatedCompletedSentences, 
         completedWords: updatedCompletedWords,
+        revealedHintWords: revealedWordsToSave,
         correctWordsCount, 
         totalWords,
         completionPercent: result.completionPercent
@@ -1513,7 +1536,7 @@ const DictationPageContent = () => {
     } catch (error) {
       console.error('Error saving progress:', error);
     }
-  }, [lessonId, transcriptData, currentSentenceIndex]);
+  }, [lessonId, transcriptData, currentSentenceIndex, revealedHintWords]);
 
   // Handle full sentence submission
   const handleFullSentenceSubmit = useCallback((sentenceIndex) => {
@@ -2522,14 +2545,14 @@ const DictationPageContent = () => {
     // Haptic feedback
     hapticEvents.buttonPress();
     
-    // Get click position for popup placement - very close to the clicked word
-    const rect = event.target.getBoundingClientRect();
+    // Use currentTarget to ensure we get the clicked element, not a child
+    const rect = event.currentTarget.getBoundingClientRect();
     const isMobileView = window.innerWidth <= 768;
     
     // Mobile: popup is compact (just 3 buttons in a row)
-    const popupWidth = isMobileView ? 220 : 280;
-    const popupHeight = isMobileView ? 50 : 250; // Mobile popup is just ~50px tall
-    const gap = isMobileView ? 4 : 8; // Smaller gap on mobile
+    const popupWidth = isMobileView ? 240 : 280;
+    const popupHeight = isMobileView ? 60 : 250; // Mobile popup ~60px tall (buttons + padding)
+    const gap = isMobileView ? 8 : 8;
     
     // Calculate word center position
     const wordCenterX = rect.left + (rect.width / 2);
@@ -2537,12 +2560,25 @@ const DictationPageContent = () => {
     // Center popup horizontally on the word
     let left = wordCenterX - (popupWidth / 2);
     
-    // Position popup just above the word (very close)
-    let top = rect.top - popupHeight - gap;
-    
-    // If not enough space above, show below the word
-    if (top < 10) {
+    // On mobile, prefer showing BELOW the word (more natural for touch)
+    // On desktop, show above if space allows
+    let top;
+    if (isMobileView) {
+      // Mobile: show below the word
       top = rect.bottom + gap;
+      
+      // If not enough space below, show above
+      if (top + popupHeight > window.innerHeight - 10) {
+        top = rect.top - popupHeight - gap;
+      }
+    } else {
+      // Desktop: show above the word
+      top = rect.top - popupHeight - gap;
+      
+      // If not enough space above, show below
+      if (top < 10) {
+        top = rect.bottom + gap;
+      }
     }
     
     // Keep within horizontal screen bounds
@@ -2553,10 +2589,10 @@ const DictationPageContent = () => {
       left = window.innerWidth - popupWidth - 10;
     }
     
-    // If popup goes off bottom of screen, show above
+    // Final bounds check for top
+    if (top < 10) top = 10;
     if (top + popupHeight > window.innerHeight - 10) {
-      top = rect.top - popupHeight - gap;
-      if (top < 10) top = 10;
+      top = window.innerHeight - popupHeight - 10;
     }
     
     // Generate 3 word options from transcript data
@@ -2651,10 +2687,10 @@ const DictationPageContent = () => {
     let top, left;
 
     if (isMobileView) {
-      // Mobile: position popup directly above/below the word (very close)
-      const popupWidth = 220;
-      const popupHeight = 50;
-      const gap = 4;
+      // Mobile: position popup directly below the word (more natural for touch)
+      const popupWidth = 240;
+      const popupHeight = 60;
+      const gap = 8;
 
       // Calculate word center position
       const wordCenterX = rect.left + (rect.width / 2);
@@ -2662,12 +2698,12 @@ const DictationPageContent = () => {
       // Center popup horizontally on the word
       left = wordCenterX - (popupWidth / 2);
       
-      // Position popup just above the word
-      top = rect.top - popupHeight - gap;
+      // Position popup below the word on mobile
+      top = rect.bottom + gap;
       
-      // If not enough space above, show below
-      if (top < 10) {
-        top = rect.bottom + gap;
+      // If not enough space below, show above
+      if (top + popupHeight > window.innerHeight - 10) {
+        top = rect.top - popupHeight - gap;
       }
       
       // Keep within horizontal screen bounds
@@ -2678,10 +2714,10 @@ const DictationPageContent = () => {
         left = window.innerWidth - popupWidth - 10;
       }
       
-      // If popup goes off bottom, show above
+      // Final bounds check
+      if (top < 10) top = 10;
       if (top + popupHeight > window.innerHeight - 10) {
-        top = rect.top - popupHeight - gap;
-        if (top < 10) top = 10;
+        top = window.innerHeight - popupHeight - 10;
       }
     } else {
       // Desktop: position to the right/left of button, centered vertically
@@ -2791,10 +2827,10 @@ const DictationPageContent = () => {
     const rect = input.getBoundingClientRect();
     const isMobileView = window.innerWidth <= 768;
     
-    // Mobile: compact popup positioned above/below word
-    const popupWidth = isMobileView ? 220 : 280;
-    const popupHeight = isMobileView ? 50 : 250;
-    const gap = isMobileView ? 4 : 8;
+    // Mobile: compact popup positioned below word (more natural for touch)
+    const popupWidth = isMobileView ? 240 : 280;
+    const popupHeight = isMobileView ? 60 : 250;
+    const gap = isMobileView ? 8 : 8;
 
     // Calculate word center position
     const wordCenterX = rect.left + (rect.width / 2);
@@ -2802,12 +2838,18 @@ const DictationPageContent = () => {
     // Center popup horizontally on the word
     let left = wordCenterX - (popupWidth / 2);
     
-    // Position popup just above the word
-    let top = rect.top - popupHeight - gap;
-    
-    // If not enough space above, show below
-    if (top < 10) {
+    // On mobile, show below; on desktop, show above
+    let top;
+    if (isMobileView) {
       top = rect.bottom + gap;
+      if (top + popupHeight > window.innerHeight - 10) {
+        top = rect.top - popupHeight - gap;
+      }
+    } else {
+      top = rect.top - popupHeight - gap;
+      if (top < 10) {
+        top = rect.bottom + gap;
+      }
     }
     
     // Keep within horizontal screen bounds
@@ -2818,10 +2860,10 @@ const DictationPageContent = () => {
       left = window.innerWidth - popupWidth - 10;
     }
     
-    // If popup goes off bottom, show above
+    // Final bounds check
+    if (top < 10) top = 10;
     if (top + popupHeight > window.innerHeight - 10) {
-      top = rect.top - popupHeight - gap;
-      if (top < 10) top = 10;
+      top = window.innerHeight - popupHeight - 10;
     }
 
     // Generate options from transcript data (instant, no API call)
@@ -2906,6 +2948,13 @@ const DictationPageContent = () => {
         ...prev,
         [currentSentenceIndex]: newRevealedWords
       }));
+      
+      // Save revealed word to DB immediately
+      const updatedRevealedHintWords = {
+        ...revealedHintWords,
+        [currentSentenceIndex]: newRevealedWords
+      };
+      saveProgress(completedSentences, completedWords, updatedRevealedHintWords);
       
       // Award points for correct word selection (+1 point)
       if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
