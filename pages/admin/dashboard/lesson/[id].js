@@ -20,6 +20,7 @@ function LessonFormPage() {
   const [fetchingSRTShort, setFetchingSRTShort] = useState(false);
   const [fetchingWhisperSRT, setFetchingWhisperSRT] = useState(false);
   const [fetchingWhisperV2, setFetchingWhisperV2] = useState(false);
+  const [fetchingWhisperV3, setFetchingWhisperV3] = useState(false);
 
   const [formData, setFormData] = useState({
     id: '',
@@ -359,6 +360,52 @@ function LessonFormPage() {
       toast.error('Fehler: ' + error.message);
     } finally {
       setFetchingWhisperV2(false);
+    }
+  };
+
+  const handleGetWhisperV3 = async () => {
+    if (!youtubeUrl.trim()) {
+      toast.error('Bitte geben Sie eine YouTube-URL ein');
+      return;
+    }
+
+    setFetchingWhisperV3(true);
+    try {
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/whisper-youtube-srt-v3', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ youtubeUrl: youtubeUrl.trim() })
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.message || 'Failed to get Whisper v3 SRT');
+      }
+
+      const data = await res.json();
+      setSrtText(data.srt);
+      if (data.videoDuration) {
+        setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
+      }
+      if (data.videoTitle) {
+        const newId = generateIdFromTitle(data.videoTitle);
+        setFormData(prev => ({ 
+          ...prev, 
+          title: data.videoTitle,
+          description: data.videoTitle,
+          id: newId
+        }));
+      }
+      toast.success(data.message || 'Whisper v3 (word-level) đã được tạo!');
+    } catch (error) {
+      console.error('Whisper v3 error:', error);
+      toast.error('Fehler: ' + error.message);
+    } finally {
+      setFetchingWhisperV3(false);
     }
   };
 
@@ -702,6 +749,15 @@ function LessonFormPage() {
                         title="Whisper v2: 6-14 từ/câu, không mất từ, timestamp chính xác"
                       >
                         {fetchingWhisperV2 ? '⏳...' : '🎙️ Whisper v2'}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleGetWhisperV3}
+                        disabled={fetchingWhisperV3 || !youtubeUrl.trim()}
+                        className={styles.actionButton}
+                        title="Whisper v3: Mỗi từ 1 timestamp riêng (word-level sync)"
+                      >
+                        {fetchingWhisperV3 ? '⏳...' : '🎙️ Word-level'}
                       </button>
                     </>
                   )}
