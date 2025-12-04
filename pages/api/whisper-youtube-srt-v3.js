@@ -229,7 +229,7 @@ function findSegmentIndex(segments, wordIndex) {
 }
 
 /**
- * Add punctuation to words using GPT (copy từ v2)
+ * Add punctuation to words using GPT (giống v2)
  */
 async function addPunctuationToWords(words, rawText) {
   try {
@@ -275,7 +275,7 @@ Antworte NUR mit dem Text mit Satzzeichen, ohne Erklärungen.`
 }
 
 /**
- * Map punctuated text back to original words (copy từ v2)
+ * Map punctuated text back to original words (giống v2)
  */
 function mapPunctuationToWords(originalWords, punctuatedText) {
   const result = [];
@@ -326,7 +326,7 @@ function mapPunctuationToWords(originalWords, punctuatedText) {
 }
 
 /**
- * Smart merge words into segments (copy từ v2, thêm word indices)
+ * Smart merge words into segments (giống v2, thêm word indices cho karaoke)
  */
 function smartMergeWithPunctuation(words) {
   const segments = [];
