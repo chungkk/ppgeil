@@ -293,6 +293,8 @@ const ShadowingDesktop = ({
                   <div className={styles.currentSentenceDisplay}>
                     <KaraokeText
                       segment={transcriptData[currentSentenceIndex]}
+                      currentTime={currentTime}
+                      isPlaying={isPlaying}
                       onWordClick={handleWordClickForPopup}
                     />
                     {showIPA && transcriptData[currentSentenceIndex].ipa && (

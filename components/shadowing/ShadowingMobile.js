@@ -148,6 +148,8 @@ const ShadowingMobile = ({
                 <div className={styles.currentSentenceDisplay}>
                   <KaraokeText
                     segment={transcriptData[currentSentenceIndex]}
+                    currentTime={currentTime}
+                    isPlaying={isPlaying}
                     onWordClick={handleWordClickForPopup}
                   />
                   {showIPA && transcriptData[currentSentenceIndex].ipa && (
@@ -266,6 +268,9 @@ const ShadowingMobile = ({
                             <span className={styles.transcriptWordsWrapper}>
                               <TranscriptKaraokeWords
                                 segment={segment}
+                                currentTime={currentTime}
+                                isPlaying={isPlaying}
+                                isActiveSentence={isActive}
                                 onWordClick={handleWordClickForPopup}
                               />
                             </span>
