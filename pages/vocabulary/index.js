@@ -76,6 +76,8 @@ const VocabularyHomePage = () => {
   ];
 
   const totalWords = goetheA1Vocabulary.length + goetheA2Vocabulary.length + goetheB1Vocabulary.length;
+  const topicCount = getAllTopics().length;
+  const topicWordCount = getTopicWordCount();
   
   // Calculate totals with new structure
   const getLevelStats = (levelKey) => {
@@ -104,6 +106,7 @@ const VocabularyHomePage = () => {
       />
 
       <div className={styles.container}>
+        {/* Header */}
         <div className={styles.header}>
           <h1 className={styles.title}>
             <span className={styles.titleIcon}>📚</span>
@@ -117,128 +120,128 @@ const VocabularyHomePage = () => {
         </div>
 
         <div className={styles.content}>
-          {/* Category Cards */}
-          <div className={styles.categorySection}>
-            <Link href="/vocabulary/topics" className={styles.categoryCard + ' ' + styles.active}>
-              <div className={styles.categoryIcon}>📂</div>
-              <div className={styles.categoryInfo}>
-                <h3 className={styles.categoryTitle}>
-                  {isEn ? 'Learn by Topic' : 'Học theo chủ đề'}
-                </h3>
-                <p className={styles.categoryDesc}>
-                  {getAllTopics().length} {isEn ? 'topics available' : 'chủ đề có sẵn'}
-                </p>
+          {/* Two Main Sections */}
+          <div className={styles.mainSections}>
+            
+            {/* Section 1: Learn by Topic */}
+            <div className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)' }}>
+                  📂
+                </div>
+                <div className={styles.sectionInfo}>
+                  <h2 className={styles.sectionTitle}>
+                    {isEn ? 'Learn by Topic' : 'Học theo chủ đề'}
+                  </h2>
+                  <p className={styles.sectionDesc}>
+                    {topicCount} {isEn ? 'topics' : 'chủ đề'} • {topicWordCount} {isEn ? 'words' : 'từ'}
+                  </p>
+                </div>
               </div>
-              <span className={styles.wordsBadge}>{getTopicWordCount()} {isEn ? 'words' : 'từ'}</span>
-            </Link>
+              
+              <p className={styles.sectionText}>
+                {isEn 
+                  ? 'Learn vocabulary grouped by practical topics like Family, Food, Travel, Business, and more.'
+                  : 'Học từ vựng theo nhóm chủ đề thực tế như Gia đình, Ẩm thực, Du lịch, Kinh doanh...'}
+              </p>
 
-            <div className={styles.categoryCard + ' ' + styles.active}>
-              <div className={styles.categoryIcon}>📊</div>
-              <div className={styles.categoryInfo}>
-                <h3 className={styles.categoryTitle}>
-                  {isEn ? 'Learn by Level' : 'Học theo trình độ'}
-                </h3>
-                <p className={styles.categoryDesc}>
-                  {isEn ? 'A1, A2, B1 - Goethe Institut' : 'A1, A2, B1 - Chuẩn Goethe Institut'}
-                </p>
-              </div>
-              <span className={styles.wordsBadge}>{totalWords} {isEn ? 'words' : 'từ'}</span>
+              <Link href="/vocabulary/topics" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)' }}>
+                {isEn ? 'Browse Topics' : 'Xem chủ đề'} →
+              </Link>
             </div>
-          </div>
 
-          {/* Level Selection */}
-          <div className={styles.levelSection}>
-            <h2 className={styles.sectionTitle}>
-              <span className={styles.sectionIcon}>🎯</span>
-              {isEn ? 'Choose Your Level' : 'Chọn trình độ'}
-            </h2>
+            {/* Section 2: Learn by Level */}
+            <div className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}>
+                  📊
+                </div>
+                <div className={styles.sectionInfo}>
+                  <h2 className={styles.sectionTitle}>
+                    {isEn ? 'Learn by Level' : 'Học theo trình độ'}
+                  </h2>
+                  <p className={styles.sectionDesc}>
+                    A1 → A2 → B1 • {totalWords} {isEn ? 'words' : 'từ'}
+                  </p>
+                </div>
+              </div>
 
-            <div className={styles.levelGrid}>
-              {levels.map((level) => {
-                const stats = getLevelStats(level.key);
-                const totalProgress = stats.newWords + stats.learning + stats.mastered;
-                const percent = Math.round(((stats.mastered + stats.learning * 0.5) / level.count) * 100);
+              <p className={styles.sectionText}>
+                {isEn 
+                  ? 'Follow the official Goethe Institut curriculum from beginner to intermediate level.'
+                  : 'Theo giáo trình chuẩn Goethe Institut từ cơ bản đến trung cấp.'}
+              </p>
 
-                return (
-                  <Link 
-                    key={level.id} 
-                    href={`/vocabulary/learn/${level.key}`}
-                    className={styles.levelCard}
-                    style={{ '--level-color': level.color }}
-                  >
-                    <div className={styles.levelHeader}>
-                      <span className={styles.levelIcon}>{level.icon}</span>
-                      <span className={styles.levelBadge}>{level.id}</span>
-                    </div>
-                    <h3 className={styles.levelTitle}>{level.title}</h3>
-                    <p className={styles.levelDesc}>{level.description}</p>
-                    
-                    <div className={styles.levelStats}>
-                      <span className={styles.levelCount}>{level.count}</span>
-                      <span className={styles.levelLabel}>{isEn ? 'words' : 'từ vựng'}</span>
-                    </div>
+              {/* Level Cards */}
+              <div className={styles.levelGrid}>
+                {levels.map((level) => {
+                  const stats = getLevelStats(level.key);
+                  const totalProgress = stats.newWords + stats.learning + stats.mastered;
+                  const percent = Math.round(((stats.mastered + stats.learning * 0.5) / level.count) * 100);
 
-                    {/* Progress for logged in users */}
-                    {user && totalProgress > 0 && (
-                      <div className={styles.levelProgress}>
-                        <div className={styles.progressMini}>
-                          <span className={styles.miniNew}>🆕 {stats.newWords}</span>
-                          <span className={styles.miniLearning}>📖 {stats.learning}</span>
-                          <span className={styles.miniMastered}>✅ {stats.mastered}</span>
-                        </div>
-                        <div className={styles.progressBarSmall}>
-                          <div 
-                            className={styles.progressFillSmall}
-                            style={{ width: `${percent}%`, background: level.color }}
-                          />
-                        </div>
-                        {stats.dueForReview > 0 && (
-                          <span className={styles.dueLabel}>
-                            🔔 {stats.dueForReview} {isEn ? 'due' : 'cần ôn'}
-                          </span>
-                        )}
+                  return (
+                    <Link 
+                      key={level.id} 
+                      href={`/vocabulary/learn/${level.key}`}
+                      className={styles.levelCard}
+                      style={{ '--level-color': level.color }}
+                    >
+                      <div className={styles.levelTop}>
+                        <span className={styles.levelIcon}>{level.icon}</span>
+                        <span className={styles.levelBadge}>{level.id}</span>
                       </div>
-                    )}
+                      <div className={styles.levelInfo}>
+                        <span className={styles.levelCount}>{level.count}</span>
+                        <span className={styles.levelLabel}>{isEn ? 'words' : 'từ'}</span>
+                      </div>
+                      
+                      {/* Progress indicator */}
+                      {user && totalProgress > 0 && (
+                        <div className={styles.levelProgress}>
+                          <div className={styles.progressBarSmall}>
+                            <div 
+                              className={styles.progressFillSmall}
+                              style={{ width: `${percent}%`, background: level.color }}
+                            />
+                          </div>
+                          <span className={styles.progressPercent}>{percent}%</span>
+                        </div>
+                      )}
 
-                    <div className={styles.levelAction}>
-                      {totalProgress > 0 
-                        ? (isEn ? 'Continue Learning' : 'Tiếp tục học')
-                        : (isEn ? 'Start Learning' : 'Bắt đầu học')
-                      } →
-                    </div>
-                  </Link>
-                );
-              })}
+                      {/* Due indicator */}
+                      {stats.dueForReview > 0 && (
+                        <span className={styles.dueBadge}>🔔 {stats.dueForReview}</span>
+                      )}
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
-          {/* Stats */}
-          <div className={styles.statsSection}>
-            <div className={styles.statItem}>
-              <span className={styles.statValue}>{totalWords}</span>
-              <span className={styles.statLabel}>{isEn ? 'Total Words' : 'Tổng số từ'}</span>
+          {/* Stats Footer */}
+          {user && (totalMastered > 0 || totalDue > 0) && (
+            <div className={styles.statsSection}>
+              {totalMastered > 0 && (
+                <div className={styles.statItem}>
+                  <span className={styles.statIcon}>✅</span>
+                  <div className={styles.statInfo}>
+                    <span className={styles.statValue}>{totalMastered}</span>
+                    <span className={styles.statLabel}>{isEn ? 'Mastered' : 'Đã thuộc'}</span>
+                  </div>
+                </div>
+              )}
+              {totalDue > 0 && (
+                <div className={styles.statItem + ' ' + styles.statDue}>
+                  <span className={styles.statIcon}>🔔</span>
+                  <div className={styles.statInfo}>
+                    <span className={styles.statValue}>{totalDue}</span>
+                    <span className={styles.statLabel}>{isEn ? 'Due for Review' : 'Cần ôn tập'}</span>
+                  </div>
+                </div>
+              )}
             </div>
-            {user && totalMastered > 0 && (
-              <div className={styles.statItem}>
-                <span className={styles.statValue}>{totalMastered}</span>
-                <span className={styles.statLabel}>{isEn ? 'Mastered' : 'Đã thuộc'}</span>
-              </div>
-            )}
-            {user && totalDue > 0 && (
-              <div className={styles.statItem}>
-                <span className={styles.statValue + ' ' + styles.statDue}>{totalDue}</span>
-                <span className={styles.statLabel}>{isEn ? 'Due Today' : 'Cần ôn'}</span>
-              </div>
-            )}
-            <div className={styles.statItem}>
-              <span className={styles.statValue}>3</span>
-              <span className={styles.statLabel}>{isEn ? 'Levels' : 'Trình độ'}</span>
-            </div>
-            <div className={styles.statItem}>
-              <span className={styles.statValue}>🏆</span>
-              <span className={styles.statLabel}>Goethe Institut</span>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </>

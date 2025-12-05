@@ -3,13 +3,14 @@
 .container {
   min-height: calc(100vh - 64px);
   padding: 80px 16px 40px;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
+/* Header */
 .header {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .title {
@@ -34,119 +35,104 @@
 }
 
 .content {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-/* Category Section */
-.categorySection {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-bottom: 32px;
+/* Main Sections */
+.mainSections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.categoryCard {
+.section {
   background: var(--bg-secondary);
   border: 2px solid var(--border-color);
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 24px;
+}
+
+.sectionHeader {
   display: flex;
   align-items: center;
   gap: 16px;
-  position: relative;
-  transition: all 0.2s ease;
+  margin-bottom: 12px;
 }
 
-.categoryCard.active {
-  border-color: var(--accent-primary);
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
-}
-
-.categoryCard.disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.categoryIcon {
-  font-size: 32px;
+.sectionIconWrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
   flex-shrink: 0;
 }
 
-.categoryInfo {
+.sectionInfo {
   flex: 1;
 }
 
-.categoryTitle {
-  font-size: 18px;
-  font-weight: 600;
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
   color: var(--text-primary);
   margin: 0 0 4px;
 }
 
-.categoryDesc {
+.sectionDesc {
   font-size: 14px;
   color: var(--text-secondary);
   margin: 0;
 }
 
-.badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: var(--text-muted);
-  color: white;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 11px;
-  font-weight: 500;
+.sectionText {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 16px;
 }
 
-.wordsBadge {
-  background: var(--accent-primary);
-  color: white;
-  padding: 6px 12px;
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-/* Level Section */
-.levelSection {
-  margin-bottom: 32px;
-}
-
-.sectionTitle {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin: 0 0 20px;
-  display: flex;
+.sectionBtn {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
-.sectionIcon {
-  font-size: 24px;
+.sectionBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Level Grid */
 .levelGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 12px;
+  margin-top: 16px;
 }
 
 .levelCard {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   border: 2px solid var(--border-color);
-  border-radius: 20px;
-  padding: 24px;
+  border-radius: 16px;
+  padding: 16px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
 }
 
 .levelCard::before {
@@ -157,132 +143,68 @@
   right: 0;
   height: 4px;
   background: var(--level-color);
+  border-radius: 16px 16px 0 0;
 }
 
 .levelCard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   border-color: var(--level-color);
 }
 
-.levelHeader {
+.levelTop {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .levelIcon {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .levelBadge {
-  background: var(--bg-primary);
-  color: var(--level-color);
-  padding: 4px 12px;
+  background: var(--level-color);
+  color: white;
+  padding: 4px 10px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
-  border: 2px solid var(--level-color);
 }
 
-.levelTitle {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin: 0 0 8px;
-}
-
-.levelDesc {
-  font-size: 14px;
-  color: var(--text-secondary);
-  margin: 0 0 16px;
-  flex: 1;
-}
-
-.levelStats {
+.levelInfo {
   display: flex;
   align-items: baseline;
-  gap: 6px;
-  margin-bottom: 16px;
+  gap: 4px;
 }
 
 .levelCount {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--level-color);
 }
 
 .levelLabel {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-secondary);
 }
 
-.levelAction {
-  background: var(--level-color);
-  color: white;
-  padding: 12px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 14px;
-  transition: all 0.2s;
-}
-
-.levelCard:hover .levelAction {
-  transform: scale(1.02);
-}
-
-/* Stats Section */
-.statsSection {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  padding: 24px;
-  background: var(--bg-secondary);
-  border-radius: 16px;
-  border: 1px solid var(--border-color);
-}
-
-.statItem {
-  text-align: center;
-}
-
-.statValue {
-  display: block;
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--accent-primary);
-}
-
-.statLabel {
-  font-size: 14px;
-  color: var(--text-secondary);
-}
-
-/* Level Progress Bar */
+/* Level Progress */
 .levelProgress {
-  margin-bottom: 12px;
-}
-
-.progressMini {
+  width: 100%;
+  margin-top: 8px;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 6px;
-  font-size: 11px;
-  font-weight: 500;
+  align-items: center;
+  gap: 8px;
 }
-
-.miniNew { color: #ef4444; }
-.miniLearning { color: #f59e0b; }
-.miniMastered { color: #22c55e; }
 
 .progressBarSmall {
+  flex: 1;
   height: 6px;
   background: var(--border-color);
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 4px;
 }
 
 .progressFillSmall {
@@ -291,21 +213,65 @@
   transition: width 0.3s ease;
 }
 
-.progressLabel {
+.progressPercent {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 30px;
+}
+
+.dueBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #f59e0b;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Stats Section */
+.statsSection {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+  padding: 20px;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.statIcon {
+  font-size: 24px;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.statLabel {
   font-size: 12px;
   color: var(--text-secondary);
 }
 
-.dueLabel {
-  display: block;
-  font-size: 11px;
+.statDue .statValue {
   color: #f59e0b;
-  font-weight: 500;
-  margin-top: 4px;
-}
-
-.statDue {
-  color: #f59e0b !important;
 }
 
 /* Responsive */
@@ -318,16 +284,77 @@
     font-size: 24px;
   }
 
-  .categorySection {
-    grid-template-columns: 1fr;
+  .titleIcon {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .sectionIconWrapper {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
   }
 
   .levelGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .levelCard {
+    padding: 12px;
+  }
+
+  .levelIcon {
+    font-size: 20px;
+  }
+
+  .levelCount {
+    font-size: 20px;
+  }
+
+  .levelBadge {
+    font-size: 10px;
+    padding: 3px 8px;
   }
 
   .statsSection {
     flex-direction: column;
     gap: 16px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .levelGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .levelCard {
+    padding: 10px 8px;
+  }
+
+  .levelTop {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .levelIcon {
+    font-size: 18px;
+  }
+
+  .levelCount {
+    font-size: 18px;
+  }
+
+  .progressPercent {
+    display: none;
   }
 }
