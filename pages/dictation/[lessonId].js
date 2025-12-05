@@ -15,7 +15,8 @@ import {
   DictationVideoSection,
   TranscriptPanel,
   MobileBottomControls,
-  DictationSkeleton
+  DictationSkeleton,
+  DictationMobileSlide
 } from '../../components/dictation';
 
 const ShadowingVoiceRecorder = dynamic(() => import('../../components/ShadowingVoiceRecorder'), {
@@ -37,7 +38,16 @@ import { toast } from 'react-toastify';
 import { translationCache } from '../../lib/translationCache';
 import { hapticEvents } from '../../lib/haptics';
 import { navigateWithLocale } from '../../lib/navigation';
-import { formatTime, formatStudyTime as formatStudyTimeUtil } from '../../lib/dictationUtils';
+import { 
+  formatTime, 
+  formatStudyTime as formatStudyTimeUtil,
+  calculateSimilarity,
+  maskTextByPercentage,
+  renderCompletedSentenceWithWordBoxes,
+  seededRandom
+} from '../../lib/dictationUtils';
+import usePointsAnimation from '../../lib/hooks/usePointsAnimation';
+import useLeaderboard from '../../lib/hooks/useLeaderboard';
 import styles from '../../styles/dictationPage.module.css';
 
 const DEBUG_TIMER = false; // Set to true to enable timer logs
@@ -47,42 +57,7 @@ const DEBUG_TIMER = false; // Set to true to enable timer logs
 const hidePercentage = 100;
 const dictationMode = 'full-sentence';
 
-// Calculate similarity between two sentences (word-level comparison)
-const calculateSimilarity = (userInput, correctSentence) => {
-  // Normalize both strings
-  const normalize = (str) => {
-    return str
-      .toLowerCase()
-      .trim()
-      .replace(/[.,!?;:"""''„]/g, '') // Remove punctuation
-      .replace(/\s+/g, ' '); // Normalize whitespace
-  };
-
-  const normalizedInput = normalize(userInput);
-  const normalizedCorrect = normalize(correctSentence);
-
-  // Split into words
-  const userWords = normalizedInput.split(' ').filter(w => w.length > 0);
-  const correctWords = normalizedCorrect.split(' ').filter(w => w.length > 0);
-
-  if (correctWords.length === 0) return 0;
-
-  // Count matching words (order doesn't matter for now)
-  let correctCount = 0;
-  const correctWordsCopy = [...correctWords];
-
-  userWords.forEach(userWord => {
-    const index = correctWordsCopy.indexOf(userWord);
-    if (index !== -1) {
-      correctCount++;
-      correctWordsCopy.splice(index, 1); // Remove matched word
-    }
-  });
-
-  // Calculate percentage
-  const similarity = (correctCount / correctWords.length) * 100;
-  return Math.round(similarity);
-};
+// calculateSimilarity is now imported from lib/dictationUtils.js
 
 const DictationPageContent = () => {
   const { t } = useTranslation();
@@ -145,8 +120,8 @@ const DictationPageContent = () => {
   // Points tracking - track which words have been scored
   const [wordPointsProcessed, setWordPointsProcessed] = useState({}); // { sentenceIndex: { wordIndex: 'correct' | 'incorrect' } }
   
-  // Points animation states
-  const [pointsAnimations, setPointsAnimations] = useState([]); // Array of { id, points, position }
+  // Points animation - using custom hook
+  const { pointsAnimations, showPointsAnimation, updatePoints: updatePointsBase } = usePointsAnimation();
   
   // Vocabulary popup states
   const [showVocabPopup, setShowVocabPopup] = useState(false);
@@ -212,83 +187,10 @@ const DictationPageContent = () => {
   const isUserClickedTranscriptRef = useRef(false); // Track when user clicks transcript item directly
   const lastRenderedStateRef = useRef({ sentenceIndex: -1, isCompleted: false }); // Track last rendered state to prevent infinite loop
 
-  // Leaderboard tracking
-  const sessionStartTimeRef = useRef(Date.now());
-  const completedSentencesForLeaderboardRef = useRef(new Set());
-  const lastStatsUpdateRef = useRef(Date.now());
+  // Leaderboard tracking - using custom hook
+  const { updateMonthlyStats } = useLeaderboard({ user, currentSentenceIndex, transcriptData });
 
-  // Update monthly leaderboard stats
-  const updateMonthlyStats = useCallback(async (forceUpdate = false) => {
-    if (!user) return;
-
-    const now = Date.now();
-    const timeSinceLastUpdate = (now - lastStatsUpdateRef.current) / 1000; // in seconds
-
-    // Only update if at least 60 seconds have passed or force update
-    if (!forceUpdate && timeSinceLastUpdate < 60) return;
-
-    const totalTimeSpent = Math.floor((now - sessionStartTimeRef.current) / 1000);
-    const newSentencesCompleted = completedSentencesForLeaderboardRef.current.size;
-
-    // Only update if there's meaningful progress
-    if (totalTimeSpent < 10 && newSentencesCompleted === 0 && !forceUpdate) return;
-
-    try {
-      const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
-      if (!token) return;
-
-      await fetch('/api/leaderboard/update-monthly-stats', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify({
-          timeSpent: totalTimeSpent,
-          sentencesCompleted: newSentencesCompleted,
-          lessonsCompleted: 0 // We'll track full lesson completion separately
-        })
-      });
-
-      // Reset tracking after successful update
-      sessionStartTimeRef.current = now;
-      completedSentencesForLeaderboardRef.current.clear();
-      lastStatsUpdateRef.current = now;
-    } catch (error) {
-      console.error('Error updating monthly stats:', error);
-    }
-  }, [user]);
-
-  // Track sentence completion for leaderboard
-  useEffect(() => {
-    if (currentSentenceIndex >= 0 && transcriptData[currentSentenceIndex]) {
-      completedSentencesForLeaderboardRef.current.add(currentSentenceIndex);
-    }
-  }, [currentSentenceIndex, transcriptData]);
-
-  // Periodic stats update (every 5 minutes)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      updateMonthlyStats(false);
-    }, 5 * 60 * 1000); // 5 minutes
-
-    return () => clearInterval(interval);
-  }, [updateMonthlyStats]);
-
-  // Save stats on unmount and page unload
-  useEffect(() => {
-    const handleBeforeUnload = () => {
-      updateMonthlyStats(true);
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-      // Save final stats when component unmounts
-      updateMonthlyStats(true);
-    };
-  }, [updateMonthlyStats]);
+  // updateMonthlyStats is now provided by useLeaderboard hook above
 
   // Expose audioRef globally để components có thể pause khi phát từ
   useEffect(() => {
@@ -1286,6 +1188,24 @@ const DictationPageContent = () => {
     }
   }, [currentSentenceIndex, transcriptData, handleSentenceClick, sortedTranscriptIndices]);
 
+  // Handle mobile slide click (for inactive slides)
+  const handleMobileSlideClick = useCallback((originalIndex, sentence) => {
+    isProgrammaticScrollRef.current = true;
+    setCurrentSentenceIndex(originalIndex);
+    handleSentenceClick(sentence.start, sentence.end);
+    setTimeout(() => {
+      isProgrammaticScrollRef.current = false;
+    }, 1000);
+  }, [handleSentenceClick]);
+
+  // Handle mobile input change
+  const handleMobileInputChange = useCallback((sentenceIndex, value) => {
+    setFullSentenceInputs(prev => ({
+      ...prev,
+      [sentenceIndex]: value
+    }));
+  }, []);
+
   // Touch swipe handlers
   const handleTouchStart = useCallback((e) => {
     setTouchEnd(null);
@@ -2089,119 +2009,26 @@ const DictationPageContent = () => {
     }, 50); // Reduced to 50ms for faster detection
   }, [completedSentences, currentSentenceIndex, completedWords, saveProgress, transcriptData, t]);
 
-  // Show points animation
-  const showPointsAnimation = useCallback((points, element) => {
-    if (!element) return;
-    
-    // Get element position (starting point)
-    const rect = element.getBoundingClientRect();
-    const startPosition = {
-      top: rect.top + rect.height / 2 - 10,
-      left: rect.left + rect.width / 2
-    };
-    
-    // Get header points badge position (end point)
-    const headerBadge = document.querySelector('[title="Your total points"]');
-    let endPosition = null;
+  // showPointsAnimation is now provided by usePointsAnimation hook
 
-    if (headerBadge) {
-      const badgeRect = headerBadge.getBoundingClientRect();
-      endPosition = {
-        top: badgeRect.top + badgeRect.height / 2,
-        left: badgeRect.left + badgeRect.width / 2
-      };
-    } else {
-      // Fallback: animate upwards if header badge not found
-      endPosition = {
-        top: startPosition.top - 100,
-        left: startPosition.left
-      };
-    }
-    
-    const animationId = Date.now() + Math.random();
-    setPointsAnimations(prev => [...prev, { 
-      id: animationId, 
-      points, 
-      startPosition,
-      endPosition 
-    }]);
-    
-    // Remove animation after it completes
-    setTimeout(() => {
-      setPointsAnimations(prev => prev.filter(a => a.id !== animationId));
-    }, 1000);
-  }, []);
-
-  // Update points function
+  // Update points function - wrapper that adds streak logic
   const updatePoints = useCallback(async (pointsChange, reason, element = null) => {
     if (!user) return;
     
-    try {
-      const token = localStorage.getItem('token');
-      if (!token) return;
-      
-      // Update answer streak based on correct/incorrect answer
-      if (pointsChange > 0) {
-        // Correct answer - increment streak
-        const { multiplier } = await incrementStreak();
-        console.log(`🔥 Answer streak incremented, multiplier: x${multiplier}`);
-      } else if (pointsChange < 0) {
-        // Wrong answer - reset streak
-        const previousStreak = await resetStreak();
-        if (previousStreak > 0) {
-          console.log(`💔 Answer streak reset (was: ${previousStreak})`);
-        }
+    // Update answer streak based on correct/incorrect answer
+    if (pointsChange > 0) {
+      const { multiplier } = await incrementStreak();
+      console.log(`🔥 Answer streak incremented, multiplier: x${multiplier}`);
+    } else if (pointsChange < 0) {
+      const previousStreak = await resetStreak();
+      if (previousStreak > 0) {
+        console.log(`💔 Answer streak reset (was: ${previousStreak})`);
       }
-      
-      const response = await fetch('/api/user/points', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify({ pointsChange, reason })
-      });
-      
-        if (response.ok) {
-          const data = await response.json();
-          console.log(`✅ Points updated: ${pointsChange > 0 ? '+' : ''}${pointsChange} (${reason})`, data);
-
-          // Show animation
-          if (element) {
-            showPointsAnimation(pointsChange, element);
-          }
-
-          // Trigger points refresh in AuthContext (if available)
-          if (typeof window !== 'undefined') {
-            // Show animation in header with actual point value
-            if (pointsChange > 0 && window.showPointsPlusOne) {
-              console.log('🎉 Calling showPointsPlusOne with:', pointsChange);
-              window.showPointsPlusOne(pointsChange);
-            }
-            // Show animation in header with actual point value
-            if (pointsChange < 0 && window.showPointsMinus) {
-              console.log('⚠️ Calling showPointsMinus with:', pointsChange);
-              window.showPointsMinus(pointsChange);
-            }
-            
-            // Wait a bit to ensure the update is committed to DB before fetching
-            setTimeout(() => {
-              if (window.refreshUserPoints) {
-                console.log('🔄 Refreshing user points after update');
-                window.refreshUserPoints();
-              }
-            }, 100);
-            
-            // Also emit custom event for Header to listen
-            window.dispatchEvent(new CustomEvent('pointsUpdated', { detail: { pointsChange, reason } }));
-          }
-        } else {
-          console.error('❌ Failed to update points:', response.status, response.statusText);
-        }
-    } catch (error) {
-      console.error('Error updating points:', error);
     }
-  }, [user, showPointsAnimation, incrementStreak, resetStreak]);
+    
+    // Use hook's updatePoints for API call and animation
+    await updatePointsBase(user, pointsChange, reason, element);
+  }, [user, incrementStreak, resetStreak, updatePointsBase]);
 
   // Update input background
   const updateInputBackground = useCallback((input, correctWord) => {
@@ -2322,98 +2149,9 @@ const DictationPageContent = () => {
     }
   }, [saveWord, updateInputBackground, checkSentenceCompletion, saveWordCompletion, currentSentenceIndex, wordPointsProcessed, updatePoints, consecutiveSentences]);
 
-  /**
-   * Seeded random number generator for deterministic word selection
-   * Uses the sentence index as seed to ensure consistency across re-renders
-   */
-  const seededRandom = useCallback((seed) => {
-    const x = Math.sin(seed) * 10000;
-    return x - Math.floor(x);
-  }, []);
+  // seededRandom is now imported from lib/dictationUtils.js
 
-  // Mask text function - replace letters with asterisks (deprecated - use maskTextByPercentage)
-  const maskText = useCallback((text) => {
-    return text.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, '*');
-  }, []);
-
-  // Mask text by percentage - used for transcript display
-  const maskTextByPercentage = useCallback((text, sentenceIdx, hidePercent, sentenceWordsCompleted = {}, revealedWords = {}) => {
-    if (hidePercent === 100) {
-      // Mask all letters except completed words or revealed hint words
-      const words = text.split(/\s+/);
-      const processedWords = words.map((word, wordIndex) => {
-        const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-        if (pureWord.length >= 1) {
-          // If word is completed, show it
-          if (sentenceWordsCompleted[wordIndex]) {
-            return word;
-          }
-          // If word is revealed via hint click, show it
-          if (revealedWords[wordIndex]) {
-            return word;
-          }
-          // Otherwise mask it
-          return word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, '*');
-        }
-        return word;
-      });
-      return processedWords.join(" ");
-    }
-
-    const words = text.split(/\s+/);
-
-    // Determine which words to hide
-    const validWordIndices = [];
-    words.forEach((word, idx) => {
-      const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-      if (pureWord.length >= 1) {
-        validWordIndices.push(idx);
-      }
-    });
-
-    // Calculate how many words to hide
-    const totalValidWords = validWordIndices.length;
-    const wordsToHideCount = Math.ceil((totalValidWords * hidePercent) / 100);
-
-    // Deterministically select words to hide (same logic as processLevelUp)
-    const hiddenWordIndices = new Set();
-    const shuffled = [...validWordIndices].sort((a, b) => {
-      const seedA = seededRandom(sentenceIdx * 1000 + a);
-      const seedB = seededRandom(sentenceIdx * 1000 + b);
-      return seedA - seedB;
-    });
-    for (let i = 0; i < wordsToHideCount; i++) {
-      hiddenWordIndices.add(shuffled[i]);
-    }
-
-    // Process each word
-    const processedWords = words.map((word, wordIndex) => {
-      const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-      if (pureWord.length >= 1) {
-        // If word is completed, always show it
-        if (sentenceWordsCompleted[wordIndex]) {
-          return word;
-        }
-
-        // If word is revealed via hint click, always show it
-        if (revealedWords[wordIndex]) {
-          return word;
-        }
-
-        const shouldHide = hiddenWordIndices.has(wordIndex);
-        if (shouldHide) {
-          // Mask this word
-          return word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, '*');
-        } else {
-          // Show this word
-          return word;
-        }
-      }
-      return word;
-    });
-
-    return processedWords.join(" ");
-  }, [seededRandom]);
+  // maskTextByPercentage is now imported from lib/dictationUtils.js
 
   // Handle input focus - keep placeholder visible and scroll into view
   const handleInputFocus = useCallback((input, correctWord) => {
@@ -3047,26 +2785,7 @@ const DictationPageContent = () => {
     setConsecutiveSentences(0);
   }, [showPointsAnimation, updatePoints]);
 
-  /**
-   * ============================================================================
-   * HELPER: Render completed sentence as word boxes (for C1+C2 mode)
-   * ============================================================================
-   */
-  const renderCompletedSentenceWithWordBoxes = useCallback((sentence) => {
-    const words = sentence.split(/\s+/).filter(w => w.length > 0);
-    
-    return words.map((word, idx) => {
-      const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-      const punctuation = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
-      
-      if (pureWord.length === 0) return null;
-      
-      return `<span class="word-container">
-        <span class="correct-word completed-word" onclick="window.handleWordClickForPopup && window.handleWordClickForPopup('${pureWord}', this)">${pureWord}</span>
-        <span class="word-punctuation">${punctuation}</span>
-      </span>`;
-    }).filter(Boolean).join(' ');
-  }, []);
+  // renderCompletedSentenceWithWordBoxes is now imported from lib/dictationUtils.js
 
   /**
    * ============================================================================
@@ -3573,158 +3292,33 @@ const DictationPageContent = () => {
                     )}
 
                     {/* Render only lazy-loaded slides */}
-                    {lazySlidesToRender.map((originalIndex, arrayIndex) => {
-                      const sentence = transcriptData[originalIndex];
-                      const isCompleted = completedSentences.includes(originalIndex);
-                      const isActive = originalIndex === currentSentenceIndex;
-
-                      return (
-                        <div
-                          key={originalIndex}
-                          data-slide-index={lazySlideRange.start + arrayIndex}
-                          className={`${styles.dictationSlide} ${isActive ? styles.dictationSlideActive : ''}`}
-                          onClick={() => {
-                            if (!isActive) {
-                              // Mark as programmatic scroll to prevent handleScroll from interfering
-                              isProgrammaticScrollRef.current = true;
-                              
-                              setCurrentSentenceIndex(originalIndex);
-                              handleSentenceClick(sentence.start, sentence.end);
-                              
-                              // Note: auto-scroll useEffect will also set flag and clear after 800ms
-                              // This timeout is backup to ensure flag is cleared even if auto-scroll doesn't run
-                              setTimeout(() => {
-                                isProgrammaticScrollRef.current = false;
-                              }, 1000);
-                            }
-                          }}
-                        >
-                          {isCompleted && (
-                            <div className={styles.slideHeader}>
-                              <span className={styles.slideCompleted}>✓</span>
-                            </div>
-                          )}
-
-                          {/* Full Sentence Mode Only */}
-                          <div
-                            className={styles.fullSentenceMode}
-                            onTouchStart={isActive ? handleTouchStart : undefined}
-                            onTouchMove={isActive ? handleTouchMove : undefined}
-                            onTouchEnd={isActive ? handleTouchEnd : undefined}
-                          >
-                              <div className={styles.fullSentenceDisplay}>
-                                {isCompleted ? (
-                                  <div 
-                                    className={styles.dictationInputArea}
-                                    dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(sentence.text) }}
-                                  />
-                                ) : (
-                                  <div className={styles.hintSentenceText} data-sentence-index={originalIndex}>
-                                    {sentence.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => {
-                                      // Remove punctuation to get pure word
-                                      const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-                                      const punctuation = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
-
-                                      if (pureWord.length === 0) return null;
-
-                                      // Check if this word is revealed
-                                      const isRevealed = revealedHintWords[originalIndex]?.[idx];
-
-                                      // Check word comparison result
-                                      const comparisonResult = wordComparisonResults[originalIndex]?.[idx];
-
-                                      // Get partial reveal count
-                                      const partialCount = partialRevealedChars[originalIndex]?.[idx] || 0;
-
-                                      const wordClass = comparisonResult
-                                        ? (comparisonResult === 'correct' ? styles.hintWordCorrect : styles.hintWordIncorrect)
-                                        : (isRevealed ? styles.hintWordRevealed : (partialCount > 0 ? styles.hintWordPartial : ''));
-
-                                      // Determine what to display
-                                      let displayText;
-                                      if (comparisonResult || isRevealed) {
-                                        // Show full word if checked or manually revealed
-                                        displayText = pureWord;
-                                      } else if (partialCount > 0) {
-                                        // Show partial characters
-                                        displayText = pureWord.substring(0, partialCount) + '\u00A0'.repeat(pureWord.length - partialCount);
-                                      } else {
-                                        // Show all spaces
-                                        displayText = '\u00A0'.repeat(pureWord.length);
-                                      }
-
-                                      return (
-                                        <span key={idx} className={styles.hintWordContainer}>
-                                          <span
-                                            className={`${styles.hintWordBox} ${wordClass}`}
-                                            onClick={(e) => !comparisonResult && !isRevealed && showHintWordSuggestion(originalIndex, idx, pureWord, e)}
-                                            title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Đã hiện' : 'Click để chọn từ')}
-                                          >
-                                            {displayText}
-                                          </span>
-                                        </span>
-                                      );
-                                    })}
-                                  </div>
-                                )}
-                              </div>
-
-                              <div className={styles.textareaWithVoice} style={{ position: 'relative' }}>
-                                <textarea
-                                  className={styles.fullSentenceInput}
-                                  placeholder="Nhập toàn bộ câu..."
-                                  value={fullSentenceInputs[originalIndex] || ''}
-                                  onChange={(e) => {
-                                    setFullSentenceInputs(prev => ({
-                                      ...prev,
-                                      [originalIndex]: e.target.value
-                                    }));
-                                    // Calculate partial reveals as user types
-                                    calculatePartialReveals(originalIndex, e.target.value, sentence.text);
-                                  }}
-                                  onKeyDown={(e) => {
-                                    // Auto-check on Enter (but allow Shift+Enter for new line)
-                                    if (e.key === 'Enter' && !e.shiftKey) {
-                                      e.preventDefault();
-                                      handleFullSentenceSubmit(originalIndex);
-                                    }
-                                  }}
-                                  disabled={isCompleted}
-                                  rows={3}
-                                />
-                              </div>
-
-                              {isActive && !isCompleted && (
-                                <div className={styles.dictationActions}>
-                                  <button
-                                    className={styles.checkButton}
-                                    onClick={(e) => {
-                                      e.stopPropagation();
-                                      handleFullSentenceSubmit(originalIndex);
-                                    }}
-                                  >
-                                    Kiểm tra
-                                  </button>
-
-                                  <button
-                                    className={styles.nextButton}
-                                    onClick={(e) => {
-                                      e.stopPropagation();
-                                      goToNextSentence();
-                                    }}
-                                    disabled={sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1}
-                                  >
-                                    {t('lesson.ui.next')}
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                      <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                    </svg>
-                                  </button>
-                                </div>
-                              )}
-                          </div>
-                        </div>
-                      );
-                    })}
+                    {lazySlidesToRender.map((originalIndex, arrayIndex) => (
+                      <DictationMobileSlide
+                        key={originalIndex}
+                        originalIndex={originalIndex}
+                        arrayIndex={arrayIndex}
+                        lazySlideRangeStart={lazySlideRange.start}
+                        sentence={transcriptData[originalIndex]}
+                        isCompleted={completedSentences.includes(originalIndex)}
+                        isActive={originalIndex === currentSentenceIndex}
+                        currentSentenceIndex={currentSentenceIndex}
+                        revealedHintWords={revealedHintWords}
+                        wordComparisonResults={wordComparisonResults}
+                        partialRevealedChars={partialRevealedChars}
+                        fullSentenceInputs={fullSentenceInputs}
+                        sortedTranscriptIndices={sortedTranscriptIndices}
+                        onSlideClick={handleMobileSlideClick}
+                        onTouchStart={handleTouchStart}
+                        onTouchMove={handleTouchMove}
+                        onTouchEnd={handleTouchEnd}
+                        onHintWordClick={showHintWordSuggestion}
+                        onInputChange={handleMobileInputChange}
+                        onCheckSubmit={handleFullSentenceSubmit}
+                        onNextClick={goToNextSentence}
+                        calculatePartialReveals={calculatePartialReveals}
+                        t={t}
+                      />
+                    ))}
 
                     {/* Spacer for slides after lazy range */}
                     {lazySlideRange.end < mobileVisibleIndices.length && (
