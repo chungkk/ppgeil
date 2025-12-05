@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../../context/LanguageContext';
+import { useAuth } from '../../../context/AuthContext';
 import { speakText, stopSpeech } from '../../../lib/textToSpeech';
 import SEO from '../../../components/SEO';
 import { getTopicById, topicIcons } from '../../../lib/data/goetheTopicVocabulary';
@@ -13,8 +14,11 @@ const TopicLearnPage = () => {
   const { topicId } = router.query;
   const { t } = useTranslation('common');
   const { currentLanguage } = useLanguage();
-  const isDe = currentLanguage === 'de';
-  const isEn = currentLanguage === 'en';
+  const { user } = useAuth();
+  
+  // Use user's nativeLanguage setting for translations, fallback to currentLanguage
+  const translationLang = user?.nativeLanguage || currentLanguage;
+  const isTranslationEn = translationLang === 'en';
 
   const topic = getTopicById(topicId);
 
@@ -35,19 +39,18 @@ const TopicLearnPage = () => {
     }
   }, [topic]);
 
-  // Get translation based on current language
+  // Get translation based on user's nativeLanguage setting
   const getTranslation = (item) => {
     if (!item) return '';
-    if (isDe) return item.en || item.vi || ''; // German users see English translation
-    if (isEn) return item.en || item.vi || '';
+    if (isTranslationEn) return item.en || item.vi || '';
     return item.vi || item.en || '';
   };
 
-  // Get topic name based on language
+  // Get topic name based on UI language
   const getTopicName = () => {
     if (!topic) return '';
-    if (isDe) return topic.name; // German name
-    if (isEn) return topic.name_en || topic.name;
+    if (currentLanguage === 'de') return topic.name;
+    if (currentLanguage === 'en') return topic.name_en || topic.name;
     return topic.name_vi || topic.name;
   };
 

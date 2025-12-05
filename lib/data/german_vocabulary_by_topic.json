@@ -4,27 +4,27 @@
       "id": "family",
       "name": "Familie",
       "name_en": "Family",
-      "name_vi": "Gia dinh",
+      "name_vi": "Gia đình",
       "words": [
         {
           "word": "der Vater",
           "en": "father",
-          "vi": "bo"
+          "vi": "bố"
         },
         {
           "word": "die Mutter",
           "en": "mother",
-          "vi": "me"
+          "vi": "mẹ"
         },
         {
           "word": "die Eltern",
           "en": "parents",
-          "vi": "bo me"
+          "vi": "bố mẹ"
         },
         {
           "word": "das Kind",
           "en": "child",
-          "vi": "dua tre"
+          "vi": "đứa trẻ"
         },
         {
           "word": "der Sohn",
@@ -34,7 +34,7 @@
         {
           "word": "die Tochter",
           "en": "daughter",
-          "vi": "con gai"
+          "vi": "con gái"
         },
         {
           "word": "der Bruder",
@@ -44,22 +44,22 @@
         {
           "word": "die Schwester",
           "en": "sister",
-          "vi": "chi/em gai"
+          "vi": "chị/em gái"
         },
         {
           "word": "die Grossmutter",
           "en": "grandmother",
-          "vi": "ba noi/ngoai"
+          "vi": "bà nội/ngoại"
         },
         {
           "word": "der Grossvater",
           "en": "grandfather",
-          "vi": "ong noi/ngoai"
+          "vi": "ông nội/ngoại"
         },
         {
           "word": "der Opa",
           "en": "grandpa",
-          "vi": "ong"
+          "vi": "ông"
         },
         {
           "word": "die Oma",
@@ -69,102 +69,102 @@
         {
           "word": "der Enkel",
           "en": "grandchild",
-          "vi": "chau"
+          "vi": "cháu"
         },
         {
           "word": "der Enkelsohn",
           "en": "grandson",
-          "vi": "chau trai"
+          "vi": "cháu trai"
         },
         {
           "word": "die Enkeltochter",
           "en": "granddaughter",
-          "vi": "chau gai"
+          "vi": "cháu gái"
         },
         {
           "word": "der Onkel",
           "en": "uncle",
-          "vi": "chu/bac/cau"
+          "vi": "chú/bác/cậu"
         },
         {
           "word": "die Tante",
           "en": "aunt",
-          "vi": "co/di/mo"
+          "vi": "cô/dì/mợ"
         },
         {
           "word": "der Cousin",
           "en": "cousin (male)",
-          "vi": "anh/em ho (nam)"
+          "vi": "anh/em họ (nam)"
         },
         {
           "word": "die Cousine",
           "en": "cousin (female)",
-          "vi": "chi/em ho (nu)"
+          "vi": "chị/em họ (nữ)"
         },
         {
           "word": "der Neffe",
           "en": "nephew",
-          "vi": "chau trai"
+          "vi": "cháu trai"
         },
         {
           "word": "die Nichte",
           "en": "niece",
-          "vi": "chau gai"
+          "vi": "cháu gái"
         },
         {
           "word": "der Verlobte",
           "en": "fiance",
-          "vi": "hon phu"
+          "vi": "hôn phu"
         },
         {
           "word": "die Verlobte",
           "en": "fiancee",
-          "vi": "hon the"
+          "vi": "hôn thê"
         },
         {
           "word": "die Ehefrau",
           "en": "wife",
-          "vi": "vo"
+          "vi": "vở"
         },
         {
           "word": "der Ehemann",
           "en": "husband",
-          "vi": "chong"
+          "vi": "chồng"
         },
         {
           "word": "der Schwiegervater",
           "en": "father-in-law",
-          "vi": "bo chong/vo"
+          "vi": "bố chồng/vợ"
         },
         {
           "word": "die Schwiegermutter",
           "en": "mother-in-law",
-          "vi": "me chong/vo"
+          "vi": "mẹ chồng/vợ"
         },
         {
           "word": "der Schwiegersohn",
           "en": "son-in-law",
-          "vi": "con re"
+          "vi": "con rể"
         },
         {
           "word": "die Schwiegertochter",
           "en": "daughter-in-law",
-          "vi": "con dau"
+          "vi": "con dâu"
         },
         {
           "word": "der Schwager",
           "en": "brother-in-law",
-          "vi": "anh/em re"
+          "vi": "anh/em rể"
         },
         {
           "word": "die Schwagerin",
           "en": "sister-in-law",
-          "vi": "chi/em dau"
+          "vi": "chị/em dâu"
         },
         {
           "word": "die Familie",
           "en": "family",
-          "vi": "gia dinh"
+          "vi": "gia đình"
         }
       ]
     },
@@ -172,62 +172,62 @@
       "id": "animals",
       "name": "Tiere",
       "name_en": "Animals",
-      "name_vi": "Dong vat",
+      "name_vi": "Động vật",
       "words": [
         {
           "word": "die Katze",
           "en": "cat",
-          "vi": "con meo"
+          "vi": "con mèo"
         },
         {
           "word": "der Hund",
           "en": "dog",
-          "vi": "con cho"
+          "vi": "con chó"
         },
         {
           "word": "das Pferd",
           "en": "horse",
-          "vi": "con ngua"
+          "vi": "con ngựa"
         },
         {
           "word": "das Schwein",
           "en": "pig",
-          "vi": "con lon"
+          "vi": "con lợn"
         },
         {
           "word": "die Kuh",
           "en": "cow",
-          "vi": "con bo"
+          "vi": "con bò"
         },
         {
           "word": "das Schaf",
           "en": "sheep",
-          "vi": "con cuu"
+          "vi": "con cừu"
         },
         {
           "word": "die Ziege",
           "en": "goat",
-          "vi": "con de"
+          "vi": "con dê"
         },
         {
           "word": "der Hahn",
           "en": "cock",
-          "vi": "con ga trong"
+          "vi": "con gà trống"
         },
         {
           "word": "das Huhn",
           "en": "chicken",
-          "vi": "con ga"
+          "vi": "con gà"
         },
         {
           "word": "die Ente",
           "en": "duck",
-          "vi": "con vit"
+          "vi": "con vịt"
         },
         {
           "word": "die Gans",
           "en": "goose",
-          "vi": "con ngong"
+          "vi": "con ngỗng"
         },
         {
           "word": "der Vogel",
@@ -237,32 +237,32 @@
         {
           "word": "der Fisch",
           "en": "fish",
-          "vi": "con ca"
+          "vi": "con cá"
         },
         {
           "word": "der Hase",
           "en": "hare",
-          "vi": "con tho"
+          "vi": "con thỏ"
         },
         {
           "word": "das Kaninchen",
           "en": "rabbit",
-          "vi": "con tho"
+          "vi": "con thỏ"
         },
         {
           "word": "der Hamster",
           "en": "hamster",
-          "vi": "chuot hamster"
+          "vi": "chuột hamster"
         },
         {
           "word": "die Maus",
           "en": "mouse",
-          "vi": "con chuot"
+          "vi": "con chuột"
         },
         {
           "word": "die Ratte",
           "en": "rat",
-          "vi": "con chuot cong"
+          "vi": "con chuột cống"
         },
         {
           "word": "der Elefant",
@@ -272,172 +272,172 @@
         {
           "word": "der Lowe",
           "en": "lion",
-          "vi": "con su tu"
+          "vi": "con sư tử"
         },
         {
           "word": "der Tiger",
           "en": "tiger",
-          "vi": "con ho"
+          "vi": "con hổ"
         },
         {
           "word": "der Bar",
           "en": "bear",
-          "vi": "con gau"
+          "vi": "con gấu"
         },
         {
           "word": "der Eisbar",
           "en": "polar bear",
-          "vi": "gau bac cuc"
+          "vi": "gấu bắc cực"
         },
         {
           "word": "der Wolf",
           "en": "wolf",
-          "vi": "con soi"
+          "vi": "con sói"
         },
         {
           "word": "der Fuchs",
           "en": "fox",
-          "vi": "con cao"
+          "vi": "con cáo"
         },
         {
           "word": "der Affe",
           "en": "monkey",
-          "vi": "con khi"
+          "vi": "con khỉ"
         },
         {
           "word": "die Giraffe",
           "en": "giraffe",
-          "vi": "huou cao co"
+          "vi": "hươu cao cổ"
         },
         {
           "word": "das Zebra",
           "en": "zebra",
-          "vi": "ngua van"
+          "vi": "ngựa vằn"
         },
         {
           "word": "das Nashorn",
           "en": "rhino",
-          "vi": "te giac"
+          "vi": "tê giác"
         },
         {
           "word": "das Flusspferd",
           "en": "hippo",
-          "vi": "ha ma"
+          "vi": "hà mã"
         },
         {
           "word": "das Krokodil",
           "en": "crocodile",
-          "vi": "ca sau"
+          "vi": "cá sấu"
         },
         {
           "word": "die Schlange",
           "en": "snake",
-          "vi": "con ran"
+          "vi": "con rắn"
         },
         {
           "word": "die Schildkrote",
           "en": "turtle",
-          "vi": "con rua"
+          "vi": "con rùa"
         },
         {
           "word": "der Frosch",
           "en": "frog",
-          "vi": "con ech"
+          "vi": "con ếch"
         },
         {
           "word": "der Delfin",
           "en": "dolphin",
-          "vi": "ca heo"
+          "vi": "cá heo"
         },
         {
           "word": "der Wal",
           "en": "whale",
-          "vi": "ca voi"
+          "vi": "cá voi"
         },
         {
           "word": "der Hai",
           "en": "shark",
-          "vi": "ca map"
+          "vi": "cá mập"
         },
         {
           "word": "der Adler",
           "en": "eagle",
-          "vi": "dai bang"
+          "vi": "đại bàng"
         },
         {
           "word": "die Eule",
           "en": "owl",
-          "vi": "con cu"
+          "vi": "con cú"
         },
         {
           "word": "der Papagei",
           "en": "parrot",
-          "vi": "con vet"
+          "vi": "con vẹt"
         },
         {
           "word": "der Schwan",
           "en": "swan",
-          "vi": "thien nga"
+          "vi": "thiên nga"
         },
         {
           "word": "die Taube",
           "en": "pigeon",
-          "vi": "chim bo cau"
+          "vi": "chim bồ câu"
         },
         {
           "word": "die Spinne",
           "en": "spider",
-          "vi": "con nhen"
+          "vi": "con nhện"
         },
         {
           "word": "der Kafer",
           "en": "beetle",
-          "vi": "bo canh cung"
+          "vi": "bọ cánh cứng"
         },
         {
           "word": "der Igel",
           "en": "hedgehog",
-          "vi": "nhim"
+          "vi": "nhím"
         },
         {
           "word": "das Eichhornchen",
           "en": "squirrel",
-          "vi": "con soc"
+          "vi": "con sóc"
         },
         {
           "word": "der Hirsch",
           "en": "deer",
-          "vi": "con huou"
+          "vi": "con hươu"
         },
         {
           "word": "der Esel",
           "en": "donkey",
-          "vi": "con lua"
+          "vi": "con lừa"
         },
         {
           "word": "das Kamel",
           "en": "camel",
-          "vi": "lac da"
+          "vi": "lạc đà"
         },
         {
           "word": "der Pinguin",
           "en": "penguin",
-          "vi": "chim canh cut"
+          "vi": "chim cánh cụt"
         },
         {
           "word": "die Fledermaus",
           "en": "bat",
-          "vi": "con doi"
+          "vi": "con dơi"
         },
         {
           "word": "die Qualle",
           "en": "jellyfish",
-          "vi": "con sua"
+          "vi": "con sứa"
         },
         {
           "word": "die Krabbe",
           "en": "shrimp",
-          "vi": "con tom"
+          "vi": "con tôm"
         },
         {
           "word": "der Krebs",
@@ -447,22 +447,22 @@
         {
           "word": "der Dachs",
           "en": "badger",
-          "vi": "con lun"
+          "vi": "con lửng"
         },
         {
           "word": "der Skorpion",
           "en": "scorpion",
-          "vi": "bo cap"
+          "vi": "bọ cạp"
         },
         {
           "word": "das Haustier",
           "en": "pet",
-          "vi": "thu cung"
+          "vi": "thú cưng"
         },
         {
           "word": "das Tier",
           "en": "animal",
-          "vi": "dong vat"
+          "vi": "động vật"
         }
       ]
     },
@@ -470,27 +470,27 @@
       "id": "body",
       "name": "Korper",
       "name_en": "Body Parts",
-      "name_vi": "Bo phan co the",
+      "name_vi": "Bộ phận cơ thể",
       "words": [
         {
           "word": "der Kopf",
           "en": "head",
-          "vi": "dau"
+          "vi": "đau"
         },
         {
           "word": "das Gesicht",
           "en": "face",
-          "vi": "mat/khuon mat"
+          "vi": "mặt/khuôn mặt"
         },
         {
           "word": "das Haar",
           "en": "hair",
-          "vi": "toc"
+          "vi": "tóc"
         },
         {
           "word": "das Auge",
           "en": "eye",
-          "vi": "mat"
+          "vi": "mát"
         },
         {
           "word": "das Ohr",
@@ -500,27 +500,27 @@
         {
           "word": "die Nase",
           "en": "nose",
-          "vi": "mui"
+          "vi": "mũi"
         },
         {
           "word": "der Mund",
           "en": "mouth",
-          "vi": "mieng"
+          "vi": "miệng"
         },
         {
           "word": "die Lippe",
           "en": "lip",
-          "vi": "moi"
+          "vi": "mới"
         },
         {
           "word": "die Zunge",
           "en": "tongue",
-          "vi": "luoi"
+          "vi": "lưỡi"
         },
         {
           "word": "der Zahn",
           "en": "tooth",
-          "vi": "rang"
+          "vi": "răng"
         },
         {
           "word": "das Kinn",
@@ -530,17 +530,17 @@
         {
           "word": "die Backe",
           "en": "cheek",
-          "vi": "ma"
+          "vi": "má"
         },
         {
           "word": "die Stirn",
           "en": "forehead",
-          "vi": "tran"
+          "vi": "trán"
         },
         {
           "word": "die Augenbraue",
           "en": "eyebrow",
-          "vi": "long may"
+          "vi": "lông mày"
         },
         {
           "word": "der Bart",
@@ -550,112 +550,112 @@
         {
           "word": "der Kiefer",
           "en": "jaw",
-          "vi": "ham"
+          "vi": "hầm"
         },
         {
           "word": "der Hals",
           "en": "neck",
-          "vi": "co"
+          "vi": "cỏ"
         },
         {
           "word": "die Schulter",
           "en": "shoulder",
-          "vi": "vai"
+          "vi": "vải"
         },
         {
           "word": "der Arm",
           "en": "arm",
-          "vi": "canh tay"
+          "vi": "cánh tay"
         },
         {
           "word": "der Ellenbogen",
           "en": "elbow",
-          "vi": "khuyu tay"
+          "vi": "khuỷu tay"
         },
         {
           "word": "die Hand",
           "en": "hand",
-          "vi": "ban tay"
+          "vi": "bàn tay"
         },
         {
           "word": "der Finger",
           "en": "finger",
-          "vi": "ngon tay"
+          "vi": "ngón tay"
         },
         {
           "word": "der Daumen",
           "en": "thumb",
-          "vi": "ngon cai"
+          "vi": "ngón cái"
         },
         {
           "word": "die Brust",
           "en": "breast/chest",
-          "vi": "nguc"
+          "vi": "ngực"
         },
         {
           "word": "der Bauch",
           "en": "belly",
-          "vi": "bung"
+          "vi": "bụng"
         },
         {
           "word": "der Rucken",
           "en": "back",
-          "vi": "lung"
+          "vi": "lưng"
         },
         {
           "word": "das Bein",
           "en": "leg",
-          "vi": "chan"
+          "vi": "chăn"
         },
         {
           "word": "das Knie",
           "en": "knee",
-          "vi": "dau goi"
+          "vi": "đầu gối"
         },
         {
           "word": "der Fuss",
           "en": "foot",
-          "vi": "ban chan"
+          "vi": "bàn chân"
         },
         {
           "word": "der Zeh",
           "en": "toe",
-          "vi": "ngon chan"
+          "vi": "ngón chân"
         },
         {
           "word": "der Knochel",
           "en": "ankle",
-          "vi": "mat ca chan"
+          "vi": "mắt cá chân"
         },
         {
           "word": "die Ferse",
           "en": "heel",
-          "vi": "got chan"
+          "vi": "gót chân"
         },
         {
           "word": "die Haut",
           "en": "skin",
-          "vi": "da"
+          "vi": "đá"
         },
         {
           "word": "der Muskel",
           "en": "muscle",
-          "vi": "co bap"
+          "vi": "cơ bắp"
         },
         {
           "word": "das Blut",
           "en": "blood",
-          "vi": "mau"
+          "vi": "màu"
         },
         {
           "word": "das Herz",
           "en": "heart",
-          "vi": "tim"
+          "vi": "tím"
         },
         {
           "word": "die Lunge",
           "en": "lung",
-          "vi": "phoi"
+          "vi": "phổi"
         },
         {
           "word": "die Leber",
@@ -665,32 +665,32 @@
         {
           "word": "die Niere",
           "en": "kidney",
-          "vi": "than"
+          "vi": "thận"
         },
         {
           "word": "der Magen",
           "en": "stomach",
-          "vi": "da day"
+          "vi": "dạ dày"
         },
         {
           "word": "der Darm",
           "en": "intestine",
-          "vi": "ruot"
+          "vi": "ruột"
         },
         {
           "word": "das Gehirn",
           "en": "brain",
-          "vi": "nao"
+          "vi": "não"
         },
         {
           "word": "der Nerv",
           "en": "nerve",
-          "vi": "day than kinh"
+          "vi": "dây thần kinh"
         },
         {
           "word": "die Ader",
           "en": "vein",
-          "vi": "tinh mach"
+          "vi": "tĩnh mạch"
         }
       ]
     },
@@ -703,172 +703,172 @@
         {
           "word": "das Buro",
           "en": "office",
-          "vi": "van phong"
+          "vi": "văn phòng"
         },
         {
           "word": "das Unternehmen",
           "en": "company",
-          "vi": "cong ty"
+          "vi": "công ty"
         },
         {
           "word": "der Chef",
           "en": "boss",
-          "vi": "sep"
+          "vi": "sếp"
         },
         {
           "word": "das Geld",
           "en": "money",
-          "vi": "tien"
+          "vi": "tiền"
         },
         {
           "word": "der Kollege",
           "en": "colleague",
-          "vi": "dong nghiep"
+          "vi": "đồng nghiệp"
         },
         {
           "word": "das Gehalt",
           "en": "salary",
-          "vi": "luong"
+          "vi": "lương"
         },
         {
           "word": "der Kunde",
           "en": "customer",
-          "vi": "khach hang"
+          "vi": "khách hàng"
         },
         {
           "word": "der Arbeitgeber",
           "en": "employer",
-          "vi": "nha tuyen dung"
+          "vi": "nhà tuyển dụng"
         },
         {
           "word": "der Arbeitnehmer",
           "en": "employee",
-          "vi": "nhan vien"
+          "vi": "nhân viên"
         },
         {
           "word": "das Produkt",
           "en": "product",
-          "vi": "san pham"
+          "vi": "sản phẩm"
         },
         {
           "word": "der Schreibtisch",
           "en": "desk",
-          "vi": "ban lam viec"
+          "vi": "bàn làm việc"
         },
         {
           "word": "der Drucker",
           "en": "printer",
-          "vi": "may in"
+          "vi": "máy in"
         },
         {
           "word": "der Anzug",
           "en": "suit",
-          "vi": "bo vest"
+          "vi": "bộ vest"
         },
         {
           "word": "die Krawatte",
           "en": "tie",
-          "vi": "ca vat"
+          "vi": "cà vạt"
         },
         {
           "word": "das Hemd",
           "en": "shirt",
-          "vi": "ao so mi"
+          "vi": "áo sơ mi"
         },
         {
           "word": "der Beruf",
           "en": "profession",
-          "vi": "nghe nghiep"
+          "vi": "nghề nghiệp"
         },
         {
           "word": "die Karriere",
           "en": "career",
-          "vi": "su nghiep"
+          "vi": "sự nghiệp"
         },
         {
           "word": "der Preis",
           "en": "price",
-          "vi": "gia"
+          "vi": "giả"
         },
         {
           "word": "der Arbeiter",
           "en": "worker",
-          "vi": "cong nhan"
+          "vi": "công nhân"
         },
         {
           "word": "der Kredit",
           "en": "loan",
-          "vi": "khoan vay"
+          "vi": "khoản vay"
         },
         {
           "word": "die Marke",
           "en": "brand",
-          "vi": "thuong hieu"
+          "vi": "thương hiệu"
         },
         {
           "word": "der Briefumschlag",
           "en": "envelope",
-          "vi": "phong bi"
+          "vi": "phong bì"
         },
         {
           "word": "der Brief",
           "en": "letter",
-          "vi": "thu"
+          "vi": "thử"
         },
         {
           "word": "die Versicherung",
           "en": "insurance",
-          "vi": "bao hiem"
+          "vi": "bảo hiểm"
         },
         {
           "word": "der Anruf",
           "en": "call",
-          "vi": "cuoc goi"
+          "vi": "cuộc gọi"
         },
         {
           "word": "die Zahlung",
           "en": "payment",
-          "vi": "thanh toan"
+          "vi": "thanh toán"
         },
         {
           "word": "der Vertrag",
           "en": "contract",
-          "vi": "hop dong"
+          "vi": "hợp đồng"
         },
         {
           "word": "der Auftrag",
           "en": "order",
-          "vi": "don hang"
+          "vi": "đơn hàng"
         },
         {
           "word": "die Industrie",
           "en": "industry",
-          "vi": "cong nghiep"
+          "vi": "công nghiệp"
         },
         {
           "word": "die Dienstleistung",
           "en": "service",
-          "vi": "dich vu"
+          "vi": "dịch vụ"
         },
         {
           "word": "das Konto",
           "en": "account",
-          "vi": "tai khoan"
+          "vi": "tài khoản"
         },
         {
           "word": "der Termin",
           "en": "appointment",
-          "vi": "cuoc hen"
+          "vi": "cuộc hẹn"
         },
         {
           "word": "der Gewinn",
           "en": "profit",
-          "vi": "loi nhuan"
+          "vi": "lợi nhuận"
         },
         {
           "word": "der Verlust",
           "en": "loss",
-          "vi": "thua lo"
+          "vi": "thua lỗ"
         },
         {
           "word": "der Umsatz",
@@ -878,57 +878,57 @@
         {
           "word": "die Arbeit",
           "en": "work",
-          "vi": "cong viec"
+          "vi": "công việc"
         },
         {
           "word": "der Wert",
           "en": "value",
-          "vi": "gia tri"
+          "vi": "giá trị"
         },
         {
           "word": "die Steuer",
           "en": "tax",
-          "vi": "thue"
+          "vi": "thuế"
         },
         {
           "word": "die Bewerbung",
           "en": "job application",
-          "vi": "don xin viec"
+          "vi": "đơn xin việc"
         },
         {
           "word": "die Wahrung",
           "en": "currency",
-          "vi": "tien te"
+          "vi": "tiền tệ"
         },
         {
           "word": "der Lebenslauf",
           "en": "CV/resume",
-          "vi": "so yeu ly lich"
+          "vi": "sơ yếu lý lịch"
         },
         {
           "word": "das Wachstum",
           "en": "growth",
-          "vi": "tang truong"
+          "vi": "tăng trưởng"
         },
         {
           "word": "die Bank",
           "en": "bank",
-          "vi": "ngan hang"
+          "vi": "ngân hàng"
         },
         {
           "word": "die Nachfrage",
           "en": "demand",
-          "vi": "nhu cau"
+          "vi": "nhu cầu"
         },
         {
           "word": "die Moglichkeit",
           "en": "opportunity",
-          "vi": "co hoi"
+          "vi": "cơ hội"
         },
         {
           "word": "das Netzwerk",
           "en": "network",
-          "vi": "mang luoi"
+          "vi": "mạng lưới"
         },
         {
           "word": "verdienen",
@@ -943,7 +943,7 @@
         {
           "word": "verkaufen",
           "en": "to sell",
-          "vi": "ban"
+          "vi": "bàn"
         },
         {
           "word": "bezahlen",
@@ -953,7 +953,7 @@
         {
           "word": "verhandeln",
           "en": "to negotiate",
-          "vi": "dam phan"
+          "vi": "đàm phán"
         },
         {
           "word": "prasentieren",
@@ -966,22 +966,22 @@
       "id": "feelings",
       "name": "Gefuhle",
       "name_en": "Feelings",
-      "name_vi": "Cam xuc",
+      "name_vi": "Cảm xúc",
       "words": [
         {
           "word": "glucklich",
           "en": "happy",
-          "vi": "hanh phuc"
+          "vi": "hạnh phúc"
         },
         {
           "word": "traurig",
           "en": "sad",
-          "vi": "buon"
+          "vi": "buồn"
         },
         {
           "word": "wutend",
           "en": "angry",
-          "vi": "tuc gian"
+          "vi": "tức giận"
         },
         {
           "word": "bose",
@@ -991,17 +991,17 @@
         {
           "word": "angstlich",
           "en": "afraid",
-          "vi": "so hai"
+          "vi": "sợ hãi"
         },
         {
           "word": "nervos",
           "en": "nervous",
-          "vi": "lo lang"
+          "vi": "lo lắng"
         },
         {
           "word": "aufgeregt",
           "en": "excited",
-          "vi": "hao huc"
+          "vi": "háo hức"
         },
         {
           "word": "begeistert",
@@ -1011,7 +1011,7 @@
         {
           "word": "mude",
           "en": "tired",
-          "vi": "met moi"
+          "vi": "mệt mỏi"
         },
         {
           "word": "erschopft",
@@ -1021,32 +1021,32 @@
         {
           "word": "entspannt",
           "en": "relaxed",
-          "vi": "thu gian"
+          "vi": "thư giãn"
         },
         {
           "word": "ruhig",
           "en": "calm",
-          "vi": "binh tinh"
+          "vi": "bình tĩnh"
         },
         {
           "word": "gestresst",
           "en": "stressed",
-          "vi": "cang thang"
+          "vi": "căng thẳng"
         },
         {
           "word": "frustriert",
           "en": "frustrated",
-          "vi": "that vong"
+          "vi": "thất vọng"
         },
         {
           "word": "enttauscht",
           "en": "disappointed",
-          "vi": "that vong"
+          "vi": "thất vọng"
         },
         {
           "word": "uberrascht",
           "en": "surprised",
-          "vi": "ngac nhien"
+          "vi": "ngạc nhiên"
         },
         {
           "word": "erstaunt",
@@ -1056,7 +1056,7 @@
         {
           "word": "verwirrt",
           "en": "confused",
-          "vi": "boi roi"
+          "vi": "bối rối"
         },
         {
           "word": "verliebt",
@@ -1066,7 +1066,7 @@
         {
           "word": "einsam",
           "en": "lonely",
-          "vi": "co don"
+          "vi": "cô đơn"
         },
         {
           "word": "eifersuchtig",
@@ -1076,7 +1076,7 @@
         {
           "word": "stolz",
           "en": "proud",
-          "vi": "tu hao"
+          "vi": "tự hào"
         },
         {
           "word": "schuldig",
@@ -1086,7 +1086,7 @@
         {
           "word": "verlegen",
           "en": "embarrassed",
-          "vi": "xau ho"
+          "vi": "xấu hổ"
         },
         {
           "word": "beschamt",
@@ -1096,22 +1096,22 @@
         {
           "word": "dankbar",
           "en": "thankful",
-          "vi": "biet on"
+          "vi": "biết ơn"
         },
         {
           "word": "hoffnungsvoll",
           "en": "hopeful",
-          "vi": "hy vong"
+          "vi": "hy vọng"
         },
         {
           "word": "hoffnungslos",
           "en": "hopeless",
-          "vi": "tuyet vong"
+          "vi": "tuyệt vọng"
         },
         {
           "word": "zufrieden",
           "en": "pleased",
-          "vi": "hai long"
+          "vi": "hài lòng"
         },
         {
           "word": "unzufrieden",
@@ -1121,17 +1121,17 @@
         {
           "word": "interessiert",
           "en": "interested",
-          "vi": "quan tam"
+          "vi": "quan tâm"
         },
         {
           "word": "gelangweilt",
           "en": "bored",
-          "vi": "chan"
+          "vi": "chăn"
         },
         {
           "word": "hungrig",
           "en": "hungry",
-          "vi": "doi"
+          "vi": "đồi"
         },
         {
           "word": "durstig",
@@ -1141,12 +1141,12 @@
         {
           "word": "satt",
           "en": "full",
-          "vi": "no"
+          "vi": "nợ"
         },
         {
           "word": "besorgt",
           "en": "worried",
-          "vi": "lo lang"
+          "vi": "lo lắng"
         },
         {
           "word": "erleichtert",
@@ -1171,12 +1171,12 @@
         {
           "word": "optimistisch",
           "en": "optimistic",
-          "vi": "lac quan"
+          "vi": "lạc quan"
         },
         {
           "word": "verzweifelt",
           "en": "desperate",
-          "vi": "tuyet vong"
+          "vi": "tuyệt vọng"
         },
         {
           "word": "froh",
@@ -1186,12 +1186,12 @@
         {
           "word": "frohlich",
           "en": "happy",
-          "vi": "vui ve"
+          "vi": "vui vẻ"
         },
         {
           "word": "hilflos",
           "en": "helpless",
-          "vi": "bat luc"
+          "vi": "bất lực"
         },
         {
           "word": "unsicher",
@@ -1201,12 +1201,12 @@
         {
           "word": "verletzt",
           "en": "hurt",
-          "vi": "bi ton thuong"
+          "vi": "bị tổn thương"
         },
         {
           "word": "beleidigt",
           "en": "offended",
-          "vi": "bi xuc pham"
+          "vi": "bị xúc phạm"
         }
       ]
     },
@@ -1214,32 +1214,32 @@
       "id": "character",
       "name": "Charakter",
       "name_en": "Character/Personality",
-      "name_vi": "Tinh cach",
+      "name_vi": "Tính cách",
       "words": [
         {
           "word": "freundlich",
           "en": "friendly",
-          "vi": "than thien"
+          "vi": "thân thiện"
         },
         {
           "word": "nett",
           "en": "nice",
-          "vi": "tot bung"
+          "vi": "tốt bụng"
         },
         {
           "word": "hoflich",
           "en": "polite",
-          "vi": "lich su"
+          "vi": "lịch sử"
         },
         {
           "word": "ehrlich",
           "en": "honest",
-          "vi": "trung thuc"
+          "vi": "trung thực"
         },
         {
           "word": "intelligent",
           "en": "intelligent",
-          "vi": "thong minh"
+          "vi": "thông minh"
         },
         {
           "word": "klug",
@@ -1249,22 +1249,22 @@
         {
           "word": "dumm",
           "en": "stupid",
-          "vi": "ngu ngoc"
+          "vi": "ngu ngốc"
         },
         {
           "word": "fleissig",
           "en": "diligent",
-          "vi": "cham chi"
+          "vi": "chăm chỉ"
         },
         {
           "word": "faul",
           "en": "lazy",
-          "vi": "luoi bieng"
+          "vi": "lười biếng"
         },
         {
           "word": "mutig",
           "en": "brave",
-          "vi": "dung cam"
+          "vi": "dũng cảm"
         },
         {
           "word": "schuchtern",
@@ -1274,12 +1274,12 @@
         {
           "word": "selbstbewusst",
           "en": "self-confident",
-          "vi": "tu tin"
+          "vi": "tự tin"
         },
         {
           "word": "geduldig",
           "en": "patient",
-          "vi": "kien nhan"
+          "vi": "kiên nhẫn"
         },
         {
           "word": "ungeduldig",
@@ -1289,17 +1289,17 @@
         {
           "word": "grosszugig",
           "en": "generous",
-          "vi": "hao phong"
+          "vi": "hào phóng"
         },
         {
           "word": "geizig",
           "en": "stingy",
-          "vi": "keo kiet"
+          "vi": "keo kiệt"
         },
         {
           "word": "kreativ",
           "en": "creative",
-          "vi": "sang tao"
+          "vi": "sáng tạo"
         },
         {
           "word": "zuverlassig",
@@ -1314,7 +1314,7 @@
         {
           "word": "verantwortungslos",
           "en": "irresponsible",
-          "vi": "vo trach nhiem"
+          "vi": "vô trách nhiệm"
         },
         {
           "word": "hilfsbereit",
@@ -1334,12 +1334,12 @@
         {
           "word": "arrogant",
           "en": "arrogant",
-          "vi": "kieu ngao"
+          "vi": "kiêu ngạo"
         },
         {
           "word": "bescheiden",
           "en": "modest",
-          "vi": "khiem ton"
+          "vi": "khiêm tốn"
         },
         {
           "word": "witzig",
@@ -1354,7 +1354,7 @@
         {
           "word": "ernst",
           "en": "serious",
-          "vi": "nghiem tuc"
+          "vi": "nghiêm túc"
         },
         {
           "word": "stur",
@@ -1389,12 +1389,12 @@
         {
           "word": "spontan",
           "en": "spontaneous",
-          "vi": "tu nhien"
+          "vi": "tự nhiên"
         },
         {
           "word": "vorsichtig",
           "en": "careful",
-          "vi": "can than"
+          "vi": "cẩn thận"
         },
         {
           "word": "neugierig",
@@ -1409,7 +1409,7 @@
         {
           "word": "punktlich",
           "en": "punctual",
-          "vi": "dung gio"
+          "vi": "đúng giờ"
         },
         {
           "word": "humorvoll",
@@ -1449,7 +1449,7 @@
         {
           "word": "optimistisch",
           "en": "optimistic",
-          "vi": "lac quan"
+          "vi": "lạc quan"
         },
         {
           "word": "pessimistisch",
@@ -1462,12 +1462,12 @@
       "id": "adjectives",
       "name": "Adjektive",
       "name_en": "Adjectives",
-      "name_vi": "Tinh tu",
+      "name_vi": "Tính từ",
       "words": [
         {
           "word": "neu",
           "en": "new",
-          "vi": "moi"
+          "vi": "mới"
         },
         {
           "word": "alt",
@@ -1477,12 +1477,12 @@
         {
           "word": "gut",
           "en": "good",
-          "vi": "tot"
+          "vi": "tốt"
         },
         {
           "word": "schlecht",
           "en": "bad",
-          "vi": "xau"
+          "vi": "xấu"
         },
         {
           "word": "gross",
@@ -1497,12 +1497,12 @@
         {
           "word": "lang",
           "en": "long",
-          "vi": "dai"
+          "vi": "dài"
         },
         {
           "word": "kurz",
           "en": "short",
-          "vi": "ngan"
+          "vi": "ngắn"
         },
         {
           "word": "hoch",
@@ -1512,7 +1512,7 @@
         {
           "word": "niedrig",
           "en": "low",
-          "vi": "thap"
+          "vi": "thấp"
         },
         {
           "word": "schnell",
@@ -1522,52 +1522,52 @@
         {
           "word": "langsam",
           "en": "slow",
-          "vi": "cham"
+          "vi": "chậm"
         },
         {
           "word": "jung",
           "en": "young",
-          "vi": "tre"
+          "vi": "trẻ"
         },
         {
           "word": "fruh",
           "en": "early",
-          "vi": "som"
+          "vi": "sớm"
         },
         {
           "word": "spat",
           "en": "late",
-          "vi": "muon"
+          "vi": "muộn"
         },
         {
           "word": "schwer",
           "en": "heavy",
-          "vi": "nang"
+          "vi": "nắng"
         },
         {
           "word": "leicht",
           "en": "light",
-          "vi": "nhe"
+          "vi": "nhẹ"
         },
         {
           "word": "teuer",
           "en": "expensive",
-          "vi": "dat"
+          "vi": "đất"
         },
         {
           "word": "billig",
           "en": "cheap",
-          "vi": "re"
+          "vi": "rễ"
         },
         {
           "word": "warm",
           "en": "warm",
-          "vi": "am"
+          "vi": "ấm"
         },
         {
           "word": "kalt",
           "en": "cold",
-          "vi": "lanh"
+          "vi": "lạnh"
         },
         {
           "word": "laut",
@@ -1582,7 +1582,7 @@
         {
           "word": "richtig",
           "en": "right",
-          "vi": "dung"
+          "vi": "đúng"
         },
         {
           "word": "falsch",
@@ -1592,22 +1592,22 @@
         {
           "word": "wichtig",
           "en": "important",
-          "vi": "quan trong"
+          "vi": "quan trọng"
         },
         {
           "word": "gesund",
           "en": "healthy",
-          "vi": "khoe manh"
+          "vi": "khỏe mạnh"
         },
         {
           "word": "krank",
           "en": "ill",
-          "vi": "om"
+          "vi": "ốm"
         },
         {
           "word": "glucklich",
           "en": "happy",
-          "vi": "hanh phuc"
+          "vi": "hạnh phúc"
         },
         {
           "word": "mude",
@@ -1620,7 +1620,7 @@
       "id": "verbs",
       "name": "Verben",
       "name_en": "Verbs",
-      "name_vi": "Dong tu",
+      "name_vi": "Động từ",
       "words": [
         {
           "word": "sein",
@@ -1630,7 +1630,7 @@
         {
           "word": "haben",
           "en": "to have",
-          "vi": "co"
+          "vi": "cỏ"
         },
         {
           "word": "werden",
@@ -1640,7 +1640,7 @@
         {
           "word": "konnen",
           "en": "can/to be able",
-          "vi": "co the"
+          "vi": "có thể"
         },
         {
           "word": "mussen",
@@ -1655,7 +1655,7 @@
         {
           "word": "wollen",
           "en": "to want",
-          "vi": "muon"
+          "vi": "muộn"
         },
         {
           "word": "durfen",
@@ -1670,22 +1670,22 @@
         {
           "word": "geben",
           "en": "to give",
-          "vi": "cho"
+          "vi": "chợ"
         },
         {
           "word": "nehmen",
           "en": "to take",
-          "vi": "lay"
+          "vi": "lấy"
         },
         {
           "word": "kommen",
           "en": "to come",
-          "vi": "den"
+          "vi": "đền"
         },
         {
           "word": "gehen",
           "en": "to go",
-          "vi": "di"
+          "vi": "đi"
         },
         {
           "word": "sehen",
@@ -1695,22 +1695,22 @@
         {
           "word": "sagen",
           "en": "to say",
-          "vi": "noi"
+          "vi": "nồi"
         },
         {
           "word": "sprechen",
           "en": "to speak",
-          "vi": "noi"
+          "vi": "nồi"
         },
         {
           "word": "machen",
           "en": "to do/make",
-          "vi": "lam"
+          "vi": "làm"
         },
         {
           "word": "tun",
           "en": "to do",
-          "vi": "lam"
+          "vi": "làm"
         },
         {
           "word": "finden",
@@ -1720,12 +1720,12 @@
         {
           "word": "suchen",
           "en": "to search",
-          "vi": "tim kiem"
+          "vi": "tìm kiếm"
         },
         {
           "word": "wissen",
           "en": "to know",
-          "vi": "biet"
+          "vi": "biết"
         },
         {
           "word": "kennen",
@@ -1735,12 +1735,12 @@
         {
           "word": "stehen",
           "en": "to stand",
-          "vi": "dung"
+          "vi": "đúng"
         },
         {
           "word": "liegen",
           "en": "to lie",
-          "vi": "nam"
+          "vi": "năm"
         },
         {
           "word": "sitzen",
@@ -1755,7 +1755,7 @@
         {
           "word": "bringen",
           "en": "to bring",
-          "vi": "mang"
+          "vi": "mạng"
         },
         {
           "word": "halten",
@@ -1765,12 +1765,12 @@
         {
           "word": "legen",
           "en": "to put",
-          "vi": "dat"
+          "vi": "đất"
         },
         {
           "word": "stellen",
           "en": "to put",
-          "vi": "dat"
+          "vi": "đất"
         },
         {
           "word": "heissen",
@@ -1780,27 +1780,27 @@
         {
           "word": "beginnen",
           "en": "to begin",
-          "vi": "bat dau"
+          "vi": "bắt đầu"
         },
         {
           "word": "spielen",
           "en": "to play",
-          "vi": "choi"
+          "vi": "chơi"
         },
         {
           "word": "arbeiten",
           "en": "to work",
-          "vi": "lam viec"
+          "vi": "làm việc"
         },
         {
           "word": "leben",
           "en": "to live",
-          "vi": "song"
+          "vi": "sông"
         },
         {
           "word": "fahren",
           "en": "to drive",
-          "vi": "lai xe"
+          "vi": "lái xe"
         },
         {
           "word": "laufen",
@@ -1810,22 +1810,22 @@
         {
           "word": "schreiben",
           "en": "to write",
-          "vi": "viet"
+          "vi": "viết"
         },
         {
           "word": "treffen",
           "en": "to meet",
-          "vi": "gap"
+          "vi": "gặp"
         },
         {
           "word": "bekommen",
           "en": "to get",
-          "vi": "nhan"
+          "vi": "nhẫn"
         },
         {
           "word": "gewinnen",
           "en": "to win",
-          "vi": "thang"
+          "vi": "thắng"
         },
         {
           "word": "brauchen",
@@ -1840,22 +1840,22 @@
         {
           "word": "fragen",
           "en": "to ask",
-          "vi": "hoi"
+          "vi": "hỏi"
         },
         {
           "word": "erklaren",
           "en": "to explain",
-          "vi": "giai thich"
+          "vi": "giải thích"
         },
         {
           "word": "gehoren",
           "en": "to belong",
-          "vi": "thuoc ve"
+          "vi": "thuộc về"
         },
         {
           "word": "feiern",
           "en": "to celebrate",
-          "vi": "an mung"
+          "vi": "ăn mừng"
         },
         {
           "word": "zahlen",
@@ -1865,7 +1865,7 @@
         {
           "word": "schliessen",
           "en": "to close",
-          "vi": "dong"
+          "vi": "đóng"
         },
         {
           "word": "fehlen",
@@ -1878,42 +1878,42 @@
       "id": "time",
       "name": "Zeit",
       "name_en": "Time (Days, Months, Seasons)",
-      "name_vi": "Thoi gian",
+      "name_vi": "Thời gian",
       "words": [
         {
           "word": "der Montag",
           "en": "Monday",
-          "vi": "thu hai"
+          "vi": "thứ hai"
         },
         {
           "word": "der Dienstag",
           "en": "Tuesday",
-          "vi": "thu ba"
+          "vi": "thứ ba"
         },
         {
           "word": "der Mittwoch",
           "en": "Wednesday",
-          "vi": "thu tu"
+          "vi": "thứ tư"
         },
         {
           "word": "der Donnerstag",
           "en": "Thursday",
-          "vi": "thu nam"
+          "vi": "thứ năm"
         },
         {
           "word": "der Freitag",
           "en": "Friday",
-          "vi": "thu sau"
+          "vi": "thứ sáu"
         },
         {
           "word": "der Samstag",
           "en": "Saturday",
-          "vi": "thu bay"
+          "vi": "thứ bảy"
         },
         {
           "word": "der Sonntag",
           "en": "Sunday",
-          "vi": "chu nhat"
+          "vi": "chủ nhật"
         },
         {
           "word": "der Januar",
@@ -1943,7 +1943,7 @@
         {
           "word": "der Juni",
           "en": "June",
-          "vi": "thang sau"
+          "vi": "tháng sau"
         },
         {
           "word": "der Juli",
@@ -1978,22 +1978,22 @@
         {
           "word": "der Fruhling",
           "en": "spring",
-          "vi": "mua xuan"
+          "vi": "mùa xuân"
         },
         {
           "word": "der Sommer",
           "en": "summer",
-          "vi": "mua he"
+          "vi": "mùa hè"
         },
         {
           "word": "der Herbst",
           "en": "autumn/fall",
-          "vi": "mua thu"
+          "vi": "mùa thu"
         },
         {
           "word": "der Winter",
           "en": "winter",
-          "vi": "mua dong"
+          "vi": "mùa đông"
         }
       ]
     },
@@ -2006,12 +2006,12 @@
         {
           "word": "das Brot",
           "en": "bread",
-          "vi": "banh mi"
+          "vi": "bánh mì"
         },
         {
           "word": "das Brotchen",
           "en": "bread roll",
-          "vi": "banh mi nho"
+          "vi": "bánh mì nhỏ"
         },
         {
           "word": "der Reis",
@@ -2026,47 +2026,47 @@
         {
           "word": "das Fleisch",
           "en": "meat",
-          "vi": "thit"
+          "vi": "thịt"
         },
         {
           "word": "das Rindfleisch",
           "en": "beef",
-          "vi": "thit bo"
+          "vi": "thịt bò"
         },
         {
           "word": "das Schweinefleisch",
           "en": "pork",
-          "vi": "thit lon"
+          "vi": "thịt lợn"
         },
         {
           "word": "das Huhnchen",
           "en": "chicken",
-          "vi": "thit ga"
+          "vi": "thịt gà"
         },
         {
           "word": "der Fisch",
           "en": "fish",
-          "vi": "ca"
+          "vi": "cá"
         },
         {
           "word": "das Ei",
           "en": "egg",
-          "vi": "trung"
+          "vi": "trứng"
         },
         {
           "word": "die Milch",
           "en": "milk",
-          "vi": "sua"
+          "vi": "sữa"
         },
         {
           "word": "der Kase",
           "en": "cheese",
-          "vi": "pho mai"
+          "vi": "phô mai"
         },
         {
           "word": "die Butter",
           "en": "butter",
-          "vi": "bo"
+          "vi": "bố"
         },
         {
           "word": "das Gemuse",
@@ -2076,17 +2076,17 @@
         {
           "word": "das Obst",
           "en": "fruit",
-          "vi": "trai cay"
+          "vi": "trái cây"
         },
         {
           "word": "der Apfel",
           "en": "apple",
-          "vi": "tao"
+          "vi": "táo"
         },
         {
           "word": "die Banane",
           "en": "banana",
-          "vi": "chuoi"
+          "vi": "chuối"
         },
         {
           "word": "die Orange",
@@ -2096,17 +2096,17 @@
         {
           "word": "die Tomate",
           "en": "tomato",
-          "vi": "ca chua"
+          "vi": "cà chua"
         },
         {
           "word": "die Kartoffel",
           "en": "potato",
-          "vi": "khoai tay"
+          "vi": "khoai tây"
         },
         {
           "word": "die Karotte",
           "en": "carrot",
-          "vi": "ca rot"
+          "vi": "cà rốt"
         },
         {
           "word": "der Salat",
@@ -2121,22 +2121,22 @@
         {
           "word": "das Wasser",
           "en": "water",
-          "vi": "nuoc"
+          "vi": "nước"
         },
         {
           "word": "der Kaffee",
           "en": "coffee",
-          "vi": "ca phe"
+          "vi": "cà phê"
         },
         {
           "word": "der Tee",
           "en": "tea",
-          "vi": "tra"
+          "vi": "trà"
         },
         {
           "word": "der Saft",
           "en": "juice",
-          "vi": "nuoc ep"
+          "vi": "nước ép"
         },
         {
           "word": "das Bier",
@@ -2146,57 +2146,57 @@
         {
           "word": "der Wein",
           "en": "wine",
-          "vi": "ruou vang"
+          "vi": "rượu vàng"
         },
         {
           "word": "der Zucker",
           "en": "sugar",
-          "vi": "duong"
+          "vi": "đường"
         },
         {
           "word": "das Salz",
           "en": "salt",
-          "vi": "muoi"
+          "vi": "mười"
         },
         {
           "word": "der Pfeffer",
           "en": "pepper",
-          "vi": "tieu"
+          "vi": "tiêu"
         },
         {
           "word": "das Ol",
           "en": "oil",
-          "vi": "dau"
+          "vi": "đau"
         },
         {
           "word": "die Sosse",
           "en": "sauce",
-          "vi": "sot"
+          "vi": "sốt"
         },
         {
           "word": "das Fruhstuck",
           "en": "breakfast",
-          "vi": "bua sang"
+          "vi": "bữa sáng"
         },
         {
           "word": "das Mittagessen",
           "en": "lunch",
-          "vi": "bua trua"
+          "vi": "bữa trưa"
         },
         {
           "word": "das Abendessen",
           "en": "dinner",
-          "vi": "bua toi"
+          "vi": "bữa tối"
         },
         {
           "word": "der Kuchen",
           "en": "cake",
-          "vi": "banh ngot"
+          "vi": "bánh ngọt"
         },
         {
           "word": "die Schokolade",
           "en": "chocolate",
-          "vi": "socola"
+          "vi": "sô cô la"
         },
         {
           "word": "das Eis",
@@ -2209,52 +2209,52 @@
       "id": "house",
       "name": "Haus und Wohnung",
       "name_en": "House and Apartment",
-      "name_vi": "Nha cua",
+      "name_vi": "Nhà cửa",
       "words": [
         {
           "word": "das Haus",
           "en": "house",
-          "vi": "nha"
+          "vi": "nhà"
         },
         {
           "word": "die Wohnung",
           "en": "apartment",
-          "vi": "can ho"
+          "vi": "căn hộ"
         },
         {
           "word": "das Zimmer",
           "en": "room",
-          "vi": "phong"
+          "vi": "phòng"
         },
         {
           "word": "das Schlafzimmer",
           "en": "bedroom",
-          "vi": "phong ngu"
+          "vi": "phòng ngủ"
         },
         {
           "word": "das Wohnzimmer",
           "en": "living room",
-          "vi": "phong khach"
+          "vi": "phòng khách"
         },
         {
           "word": "die Kuche",
           "en": "kitchen",
-          "vi": "bep"
+          "vi": "bếp"
         },
         {
           "word": "das Badezimmer",
           "en": "bathroom",
-          "vi": "phong tam"
+          "vi": "phòng tắm"
         },
         {
           "word": "die Toilette",
           "en": "toilet",
-          "vi": "nha ve sinh"
+          "vi": "nhà vệ sinh"
         },
         {
           "word": "der Balkon",
           "en": "balcony",
-          "vi": "ban cong"
+          "vi": "ban công"
         },
         {
           "word": "der Garten",
@@ -2264,62 +2264,62 @@
         {
           "word": "die Tur",
           "en": "door",
-          "vi": "cua"
+          "vi": "cửa"
         },
         {
           "word": "das Fenster",
           "en": "window",
-          "vi": "cua so"
+          "vi": "cửa sổ"
         },
         {
           "word": "die Treppe",
           "en": "stairs",
-          "vi": "cau thang"
+          "vi": "cầu thang"
         },
         {
           "word": "der Aufzug",
           "en": "elevator",
-          "vi": "thang may"
+          "vi": "thang máy"
         },
         {
           "word": "das Dach",
           "en": "roof",
-          "vi": "mai nha"
+          "vi": "mái nhà"
         },
         {
           "word": "die Wand",
           "en": "wall",
-          "vi": "tuong"
+          "vi": "tường"
         },
         {
           "word": "der Boden",
           "en": "floor",
-          "vi": "san nha"
+          "vi": "sàn nhà"
         },
         {
           "word": "die Decke",
           "en": "ceiling",
-          "vi": "tran nha"
+          "vi": "trần nhà"
         },
         {
           "word": "das Bett",
           "en": "bed",
-          "vi": "giuong"
+          "vi": "giường"
         },
         {
           "word": "der Schrank",
           "en": "wardrobe",
-          "vi": "tu quan ao"
+          "vi": "tủ quần áo"
         },
         {
           "word": "der Tisch",
           "en": "table",
-          "vi": "ban"
+          "vi": "bàn"
         },
         {
           "word": "der Stuhl",
           "en": "chair",
-          "vi": "ghe"
+          "vi": "ghế"
         },
         {
           "word": "das Sofa",
@@ -2334,22 +2334,22 @@
         {
           "word": "die Lampe",
           "en": "lamp",
-          "vi": "den"
+          "vi": "đền"
         },
         {
           "word": "der Kuhlschrank",
           "en": "refrigerator",
-          "vi": "tu lanh"
+          "vi": "tủ lạnh"
         },
         {
           "word": "der Herd",
           "en": "stove",
-          "vi": "bep"
+          "vi": "bếp"
         },
         {
           "word": "die Waschmaschine",
           "en": "washing machine",
-          "vi": "may giat"
+          "vi": "máy giặt"
         },
         {
           "word": "die Dusche",
@@ -2359,7 +2359,7 @@
         {
           "word": "der Spiegel",
           "en": "mirror",
-          "vi": "guong"
+          "vi": "gương"
         }
       ]
     },
@@ -2367,7 +2367,7 @@
       "id": "transport",
       "name": "Verkehr",
       "name_en": "Transportation",
-      "name_vi": "Giao thong",
+      "name_vi": "Giao thông",
       "words": [
         {
           "word": "das Auto",
@@ -2377,7 +2377,7 @@
         {
           "word": "der Bus",
           "en": "bus",
-          "vi": "xe buyt"
+          "vi": "xe buýt"
         },
         {
           "word": "die Bahn",
@@ -2387,12 +2387,12 @@
         {
           "word": "der Zug",
           "en": "train",
-          "vi": "tau hoa"
+          "vi": "tàu hỏa"
         },
         {
           "word": "die U-Bahn",
           "en": "subway",
-          "vi": "tau dien ngam"
+          "vi": "tàu điện ngầm"
         },
         {
           "word": "die Strassenbahn",
@@ -2402,22 +2402,22 @@
         {
           "word": "das Fahrrad",
           "en": "bicycle",
-          "vi": "xe dap"
+          "vi": "xe đạp"
         },
         {
           "word": "das Motorrad",
           "en": "motorcycle",
-          "vi": "xe may"
+          "vi": "xe máy"
         },
         {
           "word": "das Flugzeug",
           "en": "airplane",
-          "vi": "may bay"
+          "vi": "máy bay"
         },
         {
           "word": "das Schiff",
           "en": "ship",
-          "vi": "tau thuy"
+          "vi": "tàu thủy"
         },
         {
           "word": "das Boot",
@@ -2432,57 +2432,57 @@
         {
           "word": "der Bahnhof",
           "en": "train station",
-          "vi": "ga tau"
+          "vi": "ga tàu"
         },
         {
           "word": "der Flughafen",
           "en": "airport",
-          "vi": "san bay"
+          "vi": "sân bay"
         },
         {
           "word": "die Haltestelle",
           "en": "bus stop",
-          "vi": "tram xe buyt"
+          "vi": "trạm xe buýt"
         },
         {
           "word": "die Strasse",
           "en": "street",
-          "vi": "duong pho"
+          "vi": "đường phố"
         },
         {
           "word": "der Weg",
           "en": "way",
-          "vi": "duong"
+          "vi": "đường"
         },
         {
           "word": "die Autobahn",
           "en": "highway",
-          "vi": "duong cao toc"
+          "vi": "đường cao tốc"
         },
         {
           "word": "die Ampel",
           "en": "traffic light",
-          "vi": "den giao thong"
+          "vi": "đèn giao thông"
         },
         {
           "word": "die Brucke",
           "en": "bridge",
-          "vi": "cau"
+          "vi": "cầu"
         },
         {
           "word": "der Parkplatz",
           "en": "parking lot",
-          "vi": "bai do xe"
+          "vi": "bãi đỗ xe"
         },
         {
           "word": "die Fahrkarte",
           "en": "ticket",
-          "vi": "ve"
+          "vi": "vẽ"
         },
         {
           "word": "der Fuhrerschein",
           "en": "driver's license",
-          "vi": "bang lai xe"
+          "vi": "bằng lái xe"
         },
         {
           "word": "tanken",
@@ -2492,12 +2492,12 @@
         {
           "word": "fahren",
           "en": "to drive",
-          "vi": "lai xe"
+          "vi": "lái xe"
         },
         {
           "word": "fliegen",
           "en": "to fly",
-          "vi": "bay"
+          "vi": "bảy"
         },
         {
           "word": "ankommen",
@@ -2520,17 +2520,17 @@
       "id": "clothes",
       "name": "Kleidung",
       "name_en": "Clothes",
-      "name_vi": "Quan ao",
+      "name_vi": "Quần áo",
       "words": [
         {
           "word": "das Hemd",
           "en": "shirt",
-          "vi": "ao so mi"
+          "vi": "áo sơ mi"
         },
         {
           "word": "die Hose",
           "en": "pants",
-          "vi": "quan dai"
+          "vi": "quần dài"
         },
         {
           "word": "die Jeans",
@@ -2540,7 +2540,7 @@
         {
           "word": "der Rock",
           "en": "skirt",
-          "vi": "vay"
+          "vi": "váy"
         },
         {
           "word": "das Kleid",
@@ -2550,52 +2550,52 @@
         {
           "word": "die Jacke",
           "en": "jacket",
-          "vi": "ao khoac"
+          "vi": "áo khoác"
         },
         {
           "word": "der Mantel",
           "en": "coat",
-          "vi": "ao choang"
+          "vi": "áo choàng"
         },
         {
           "word": "der Pullover",
           "en": "sweater",
-          "vi": "ao len"
+          "vi": "áo len"
         },
         {
           "word": "das T-Shirt",
           "en": "T-shirt",
-          "vi": "ao thun"
+          "vi": "áo thun"
         },
         {
           "word": "die Bluse",
           "en": "blouse",
-          "vi": "ao blouse"
+          "vi": "áo blouse"
         },
         {
           "word": "der Anzug",
           "en": "suit",
-          "vi": "bo vest"
+          "vi": "bộ vest"
         },
         {
           "word": "die Krawatte",
           "en": "tie",
-          "vi": "ca vat"
+          "vi": "cà vạt"
         },
         {
           "word": "die Socken",
           "en": "socks",
-          "vi": "tat"
+          "vi": "tất"
         },
         {
           "word": "die Schuhe",
           "en": "shoes",
-          "vi": "giay"
+          "vi": "giày"
         },
         {
           "word": "die Stiefel",
           "en": "boots",
-          "vi": "ung"
+          "vi": "ủng"
         },
         {
           "word": "die Sandalen",
@@ -2605,7 +2605,7 @@
         {
           "word": "der Hut",
           "en": "hat",
-          "vi": "mu"
+          "vi": "mũ"
         },
         {
           "word": "die Mutze",
@@ -2620,27 +2620,27 @@
         {
           "word": "die Handschuhe",
           "en": "gloves",
-          "vi": "gang tay"
+          "vi": "găng tay"
         },
         {
           "word": "der Gurtel",
           "en": "belt",
-          "vi": "that lung"
+          "vi": "thắt lưng"
         },
         {
           "word": "die Tasche",
           "en": "bag",
-          "vi": "tui xach"
+          "vi": "túi xách"
         },
         {
           "word": "der Rucksack",
           "en": "backpack",
-          "vi": "ba lo"
+          "vi": "ba lô"
         },
         {
           "word": "die Brille",
           "en": "glasses",
-          "vi": "kinh"
+          "vi": "kính"
         },
         {
           "word": "die Sonnenbrille",
@@ -2673,37 +2673,37 @@
       "id": "colors",
       "name": "Farben",
       "name_en": "Colors",
-      "name_vi": "Mau sac",
+      "name_vi": "Màu sắc",
       "words": [
         {
           "word": "weiss",
           "en": "white",
-          "vi": "trang"
+          "vi": "trắng"
         },
         {
           "word": "schwarz",
           "en": "black",
-          "vi": "den"
+          "vi": "đền"
         },
         {
           "word": "rot",
           "en": "red",
-          "vi": "do"
+          "vi": "dở"
         },
         {
           "word": "blau",
           "en": "blue",
-          "vi": "xanh duong"
+          "vi": "xanh dương"
         },
         {
           "word": "grun",
           "en": "green",
-          "vi": "xanh la"
+          "vi": "xanh lá"
         },
         {
           "word": "gelb",
           "en": "yellow",
-          "vi": "vang"
+          "vi": "vàng"
         },
         {
           "word": "orange",
@@ -2713,27 +2713,27 @@
         {
           "word": "braun",
           "en": "brown",
-          "vi": "nau"
+          "vi": "nấu"
         },
         {
           "word": "grau",
           "en": "gray",
-          "vi": "xam"
+          "vi": "xám"
         },
         {
           "word": "rosa",
           "en": "pink",
-          "vi": "hong"
+          "vi": "hồng"
         },
         {
           "word": "lila",
           "en": "purple",
-          "vi": "tim"
+          "vi": "tím"
         },
         {
           "word": "violett",
           "en": "violet",
-          "vi": "tim"
+          "vi": "tím"
         },
         {
           "word": "gold",
@@ -2743,17 +2743,17 @@
         {
           "word": "silber",
           "en": "silver",
-          "vi": "bac"
+          "vi": "bạc"
         },
         {
           "word": "hell",
           "en": "light",
-          "vi": "sang"
+          "vi": "sáng"
         },
         {
           "word": "dunkel",
           "en": "dark",
-          "vi": "toi"
+          "vi": "tối"
         }
       ]
     },
@@ -2761,17 +2761,17 @@
       "id": "numbers",
       "name": "Zahlen",
       "name_en": "Numbers",
-      "name_vi": "So dem",
+      "name_vi": "Số đếm",
       "words": [
         {
           "word": "null",
           "en": "zero",
-          "vi": "khong"
+          "vi": "không"
         },
         {
           "word": "eins",
           "en": "one",
-          "vi": "mot"
+          "vi": "một"
         },
         {
           "word": "zwei",
@@ -2786,47 +2786,47 @@
         {
           "word": "vier",
           "en": "four",
-          "vi": "bon"
+          "vi": "bốn"
         },
         {
           "word": "funf",
           "en": "five",
-          "vi": "nam"
+          "vi": "năm"
         },
         {
           "word": "sechs",
           "en": "six",
-          "vi": "sau"
+          "vi": "sáu"
         },
         {
           "word": "sieben",
           "en": "seven",
-          "vi": "bay"
+          "vi": "bảy"
         },
         {
           "word": "acht",
           "en": "eight",
-          "vi": "tam"
+          "vi": "tắm"
         },
         {
           "word": "neun",
           "en": "nine",
-          "vi": "chin"
+          "vi": "chín"
         },
         {
           "word": "zehn",
           "en": "ten",
-          "vi": "muoi"
+          "vi": "mười"
         },
         {
           "word": "elf",
           "en": "eleven",
-          "vi": "muoi mot"
+          "vi": "mười một"
         },
         {
           "word": "zwolf",
           "en": "twelve",
-          "vi": "muoi hai"
+          "vi": "mười hai"
         },
         {
           "word": "dreizehn",
@@ -2866,32 +2866,32 @@
         {
           "word": "zwanzig",
           "en": "twenty",
-          "vi": "hai muoi"
+          "vi": "hai mươi"
         },
         {
           "word": "dreissig",
           "en": "thirty",
-          "vi": "ba muoi"
+          "vi": "ba mươi"
         },
         {
           "word": "vierzig",
           "en": "forty",
-          "vi": "bon muoi"
+          "vi": "bốn mươi"
         },
         {
           "word": "funfzig",
           "en": "fifty",
-          "vi": "nam muoi"
+          "vi": "năm mươi"
         },
         {
           "word": "sechzig",
           "en": "sixty",
-          "vi": "sau muoi"
+          "vi": "sáu mươi"
         },
         {
           "word": "siebzig",
           "en": "seventy",
-          "vi": "bay muoi"
+          "vi": "bảy mươi"
         },
         {
           "word": "achtzig",
@@ -2901,22 +2901,22 @@
         {
           "word": "neunzig",
           "en": "ninety",
-          "vi": "chin muoi"
+          "vi": "chín mươi"
         },
         {
           "word": "hundert",
           "en": "hundred",
-          "vi": "tram"
+          "vi": "trăm"
         },
         {
           "word": "tausend",
           "en": "thousand",
-          "vi": "nghin"
+          "vi": "nghìn"
         },
         {
           "word": "eine Million",
           "en": "million",
-          "vi": "trieu"
+          "vi": "triệu"
         }
       ]
     },
@@ -2924,77 +2924,77 @@
       "id": "health",
       "name": "Gesundheit",
       "name_en": "Health",
-      "name_vi": "Suc khoe",
+      "name_vi": "Sức khỏe",
       "words": [
         {
           "word": "der Arzt",
           "en": "doctor",
-          "vi": "bac si"
+          "vi": "bác sĩ"
         },
         {
           "word": "die Arztin",
           "en": "female doctor",
-          "vi": "bac si nu"
+          "vi": "bác sĩ nữ"
         },
         {
           "word": "das Krankenhaus",
           "en": "hospital",
-          "vi": "benh vien"
+          "vi": "bệnh viện"
         },
         {
           "word": "die Apotheke",
           "en": "pharmacy",
-          "vi": "nha thuoc"
+          "vi": "nhà thuốc"
         },
         {
           "word": "das Medikament",
           "en": "medicine",
-          "vi": "thuoc"
+          "vi": "thuốc"
         },
         {
           "word": "die Tablette",
           "en": "pill",
-          "vi": "vien thuoc"
+          "vi": "viên thuốc"
         },
         {
           "word": "das Rezept",
           "en": "prescription",
-          "vi": "don thuoc"
+          "vi": "đơn thuốc"
         },
         {
           "word": "die Krankheit",
           "en": "illness",
-          "vi": "benh"
+          "vi": "bệnh"
         },
         {
           "word": "der Schmerz",
           "en": "pain",
-          "vi": "dau"
+          "vi": "đau"
         },
         {
           "word": "die Kopfschmerzen",
           "en": "headache",
-          "vi": "dau dau"
+          "vi": "đau đầu"
         },
         {
           "word": "die Bauchschmerzen",
           "en": "stomachache",
-          "vi": "dau bung"
+          "vi": "đau bụng"
         },
         {
           "word": "das Fieber",
           "en": "fever",
-          "vi": "sot"
+          "vi": "sốt"
         },
         {
           "word": "der Husten",
           "en": "cough",
-          "vi": "ho"
+          "vi": "hồ"
         },
         {
           "word": "der Schnupfen",
           "en": "cold/runny nose",
-          "vi": "so mui"
+          "vi": "sổ mũi"
         },
         {
           "word": "die Erkaltung",
@@ -3019,7 +3019,7 @@
         {
           "word": "der Verband",
           "en": "bandage",
-          "vi": "bang"
+          "vi": "băm"
         },
         {
           "word": "die Spritze",
@@ -3029,7 +3029,7 @@
         {
           "word": "die Operation",
           "en": "operation",
-          "vi": "phau thuat"
+          "vi": "phẫu thuật"
         },
         {
           "word": "die Untersuchung",
@@ -3039,22 +3039,22 @@
         {
           "word": "krank",
           "en": "sick",
-          "vi": "om"
+          "vi": "ốm"
         },
         {
           "word": "gesund",
           "en": "healthy",
-          "vi": "khoe manh"
+          "vi": "khỏe mạnh"
         },
         {
           "word": "weh tun",
           "en": "to hurt",
-          "vi": "dau"
+          "vi": "đau"
         },
         {
           "word": "husten",
           "en": "to cough",
-          "vi": "ho"
+          "vi": "hồ"
         },
         {
           "word": "niesen",
@@ -3077,7 +3077,7 @@
         {
           "word": "die Schule",
           "en": "school",
-          "vi": "truong hoc"
+          "vi": "trường học"
         },
         {
           "word": "die Universitat",
@@ -3092,12 +3092,12 @@
         {
           "word": "die Klasse",
           "en": "class",
-          "vi": "lop hoc"
+          "vi": "lớp học"
         },
         {
           "word": "der Unterricht",
           "en": "lesson",
-          "vi": "bai hoc"
+          "vi": "bài học"
         },
         {
           "word": "der Lehrer",
@@ -3122,12 +3122,12 @@
         {
           "word": "der Student",
           "en": "university student",
-          "vi": "sinh vien"
+          "vi": "sinh viên"
         },
         {
           "word": "das Fach",
           "en": "subject",
-          "vi": "mon hoc"
+          "vi": "môn học"
         },
         {
           "word": "die Mathematik",
@@ -3137,32 +3137,32 @@
         {
           "word": "die Sprache",
           "en": "language",
-          "vi": "ngon ngu"
+          "vi": "ngôn ngữ"
         },
         {
           "word": "die Geschichte",
           "en": "history",
-          "vi": "lich su"
+          "vi": "lịch sử"
         },
         {
           "word": "die Wissenschaft",
           "en": "science",
-          "vi": "khoa hoc"
+          "vi": "khoa học"
         },
         {
           "word": "das Buch",
           "en": "book",
-          "vi": "sach"
+          "vi": "sách"
         },
         {
           "word": "das Heft",
           "en": "notebook",
-          "vi": "vo"
+          "vi": "vở"
         },
         {
           "word": "der Stift",
           "en": "pen",
-          "vi": "but"
+          "vi": "bút"
         },
         {
           "word": "der Bleistift",
@@ -3177,32 +3177,32 @@
         {
           "word": "das Papier",
           "en": "paper",
-          "vi": "giay"
+          "vi": "giày"
         },
         {
           "word": "die Tafel",
           "en": "blackboard",
-          "vi": "bang"
+          "vi": "băm"
         },
         {
           "word": "die Prufung",
           "en": "exam",
-          "vi": "ky thi"
+          "vi": "kỳ thi"
         },
         {
           "word": "die Hausaufgabe",
           "en": "homework",
-          "vi": "bai tap ve nha"
+          "vi": "bài tập về nhà"
         },
         {
           "word": "die Note",
           "en": "grade",
-          "vi": "diem"
+          "vi": "điểm"
         },
         {
           "word": "lernen",
           "en": "to learn",
-          "vi": "hoc"
+          "vi": "học"
         },
         {
           "word": "studieren",
@@ -3212,12 +3212,12 @@
         {
           "word": "lesen",
           "en": "to read",
-          "vi": "doc"
+          "vi": "đọc"
         },
         {
           "word": "schreiben",
           "en": "to write",
-          "vi": "viet"
+          "vi": "viết"
         },
         {
           "word": "rechnen",
@@ -3230,22 +3230,22 @@
       "id": "weather",
       "name": "Wetter",
       "name_en": "Weather",
-      "name_vi": "Thoi tiet",
+      "name_vi": "Thời tiết",
       "words": [
         {
           "word": "das Wetter",
           "en": "weather",
-          "vi": "thoi tiet"
+          "vi": "thời tiết"
         },
         {
           "word": "die Sonne",
           "en": "sun",
-          "vi": "mat troi"
+          "vi": "mặt trời"
         },
         {
           "word": "der Sonnenschein",
           "en": "sunshine",
-          "vi": "anh nang"
+          "vi": "ánh nắng"
         },
         {
           "word": "der Regen",
@@ -3255,57 +3255,57 @@
         {
           "word": "der Schnee",
           "en": "snow",
-          "vi": "tuyet"
+          "vi": "tuyết"
         },
         {
           "word": "der Wind",
           "en": "wind",
-          "vi": "gio"
+          "vi": "gió"
         },
         {
           "word": "der Sturm",
           "en": "storm",
-          "vi": "bao"
+          "vi": "bão"
         },
         {
           "word": "das Gewitter",
           "en": "thunderstorm",
-          "vi": "bao co sam set"
+          "vi": "bão có sấm sét"
         },
         {
           "word": "der Blitz",
           "en": "lightning",
-          "vi": "set"
+          "vi": "sét"
         },
         {
           "word": "der Donner",
           "en": "thunder",
-          "vi": "sam"
+          "vi": "sấm"
         },
         {
           "word": "der Nebel",
           "en": "fog",
-          "vi": "suong mu"
+          "vi": "sương mù"
         },
         {
           "word": "die Wolke",
           "en": "cloud",
-          "vi": "may"
+          "vi": "mây"
         },
         {
           "word": "der Himmel",
           "en": "sky",
-          "vi": "bau troi"
+          "vi": "bầu trời"
         },
         {
           "word": "die Temperatur",
           "en": "temperature",
-          "vi": "nhiet do"
+          "vi": "nhiệt độ"
         },
         {
           "word": "das Eis",
           "en": "ice",
-          "vi": "bang"
+          "vi": "băm"
         },
         {
           "word": "der Regenschirm",
@@ -3315,27 +3315,27 @@
         {
           "word": "heiss",
           "en": "hot",
-          "vi": "nong"
+          "vi": "nóng"
         },
         {
           "word": "warm",
           "en": "warm",
-          "vi": "am"
+          "vi": "ấm"
         },
         {
           "word": "kalt",
           "en": "cold",
-          "vi": "lanh"
+          "vi": "lạnh"
         },
         {
           "word": "kuhl",
           "en": "cool",
-          "vi": "mat"
+          "vi": "mát"
         },
         {
           "word": "sonnig",
           "en": "sunny",
-          "vi": "nang"
+          "vi": "nắng"
         },
         {
           "word": "regnerisch",
@@ -3345,17 +3345,17 @@
         {
           "word": "windig",
           "en": "windy",
-          "vi": "gio"
+          "vi": "gió"
         },
         {
           "word": "bewolkt",
           "en": "cloudy",
-          "vi": "nhieu may"
+          "vi": "nhiều mây"
         },
         {
           "word": "neblig",
           "en": "foggy",
-          "vi": "suong mu"
+          "vi": "sương mù"
         },
         {
           "word": "die Hitze",
@@ -3380,7 +3380,7 @@
         {
           "word": "schneien",
           "en": "to snow",
-          "vi": "tuyet roi"
+          "vi": "tuyết rơi"
         }
       ]
     },
@@ -3388,12 +3388,12 @@
       "id": "daily_routine",
       "name": "Tagesablauf",
       "name_en": "Daily Routine",
-      "name_vi": "Sinh hoat hang ngay",
+      "name_vi": "Sinh hoạt hàng ngày",
       "words": [
         {
           "word": "aufwachen",
           "en": "to wake up",
-          "vi": "thuc day"
+          "vi": "thức dậy"
         },
         {
           "word": "aufstehen",
@@ -3403,72 +3403,72 @@
         {
           "word": "sich waschen",
           "en": "to wash oneself",
-          "vi": "rua mat"
+          "vi": "rửa mặt"
         },
         {
           "word": "sich duschen",
           "en": "to shower",
-          "vi": "tam"
+          "vi": "tắm"
         },
         {
           "word": "sich anziehen",
           "en": "to get dressed",
-          "vi": "mac quan ao"
+          "vi": "mặc quần áo"
         },
         {
           "word": "fruhstucken",
           "en": "to have breakfast",
-          "vi": "an sang"
+          "vi": "ăn sáng"
         },
         {
           "word": "das Fruhstuck",
           "en": "breakfast",
-          "vi": "bua sang"
+          "vi": "bữa sáng"
         },
         {
           "word": "zur Arbeit gehen",
           "en": "to go to work",
-          "vi": "di lam"
+          "vi": "đi làm"
         },
         {
           "word": "zur Schule gehen",
           "en": "to go to school",
-          "vi": "di hoc"
+          "vi": "đi học"
         },
         {
           "word": "arbeiten",
           "en": "to work",
-          "vi": "lam viec"
+          "vi": "làm việc"
         },
         {
           "word": "lernen",
           "en": "to learn/study",
-          "vi": "hoc"
+          "vi": "học"
         },
         {
           "word": "das Mittagessen",
           "en": "lunch",
-          "vi": "bua trua"
+          "vi": "bữa trưa"
         },
         {
           "word": "zu Mittag essen",
           "en": "to have lunch",
-          "vi": "an trua"
+          "vi": "ăn trưa"
         },
         {
           "word": "nach Hause kommen",
           "en": "to come home",
-          "vi": "ve nha"
+          "vi": "về nhà"
         },
         {
           "word": "das Abendessen",
           "en": "dinner",
-          "vi": "bua toi"
+          "vi": "bữa tối"
         },
         {
           "word": "zu Abend essen",
           "en": "to have dinner",
-          "vi": "an toi"
+          "vi": "ăn tối"
         },
         {
           "word": "fernsehen",
@@ -3478,17 +3478,17 @@
         {
           "word": "sich ausruhen",
           "en": "to rest",
-          "vi": "nghi ngoi"
+          "vi": "nghỉ ngơi"
         },
         {
           "word": "schlafen gehen",
           "en": "to go to sleep",
-          "vi": "di ngu"
+          "vi": "đi ngủ"
         },
         {
           "word": "der Morgen",
           "en": "morning",
-          "vi": "buoi sang"
+          "vi": "buổi sáng"
         },
         {
           "word": "der Mittag",
@@ -3498,22 +3498,22 @@
         {
           "word": "der Nachmittag",
           "en": "afternoon",
-          "vi": "buoi chieu"
+          "vi": "buổi chiều"
         },
         {
           "word": "der Abend",
           "en": "evening",
-          "vi": "buoi toi"
+          "vi": "buổi tối"
         },
         {
           "word": "die Nacht",
           "en": "night",
-          "vi": "dem"
+          "vi": "đêm"
         },
         {
           "word": "der Tag",
           "en": "day",
-          "vi": "ngay"
+          "vi": "ngày"
         },
         {
           "word": "der Tagesablauf",
@@ -3523,7 +3523,7 @@
         {
           "word": "das Hobby",
           "en": "hobby",
-          "vi": "so thich"
+          "vi": "sở thích"
         },
         {
           "word": "die Freizeit",
@@ -3536,7 +3536,7 @@
       "id": "shopping",
       "name": "Einkaufen",
       "name_en": "Shopping",
-      "name_vi": "Mua sam",
+      "name_vi": "Mua sắm",
       "words": [
         {
           "word": "kaufen",
@@ -3546,7 +3546,7 @@
         {
           "word": "verkaufen",
           "en": "to sell",
-          "vi": "ban"
+          "vi": "bàn"
         },
         {
           "word": "bezahlen",
@@ -3556,22 +3556,22 @@
         {
           "word": "das Geschaft",
           "en": "shop/store",
-          "vi": "cua hang"
+          "vi": "cửa hàng"
         },
         {
           "word": "der Laden",
           "en": "store",
-          "vi": "cua hang"
+          "vi": "cửa hàng"
         },
         {
           "word": "der Supermarkt",
           "en": "supermarket",
-          "vi": "sieu thi"
+          "vi": "siêu thị"
         },
         {
           "word": "der Markt",
           "en": "market",
-          "vi": "cho"
+          "vi": "chợ"
         },
         {
           "word": "das Einkaufszentrum",
@@ -3586,47 +3586,47 @@
         {
           "word": "der Preis",
           "en": "price",
-          "vi": "gia"
+          "vi": "giả"
         },
         {
           "word": "das Geld",
           "en": "money",
-          "vi": "tien"
+          "vi": "tiền"
         },
         {
           "word": "das Bargeld",
           "en": "cash",
-          "vi": "tien mat"
+          "vi": "tiền mặt"
         },
         {
           "word": "die Kreditkarte",
           "en": "credit card",
-          "vi": "the tin dung"
+          "vi": "thẻ tín dụng"
         },
         {
           "word": "die Quittung",
           "en": "receipt",
-          "vi": "hoa don"
+          "vi": "hóa đơn"
         },
         {
           "word": "der Rabatt",
           "en": "discount",
-          "vi": "giam gia"
+          "vi": "giảm giá"
         },
         {
           "word": "das Sonderangebot",
           "en": "special offer",
-          "vi": "khuyen mai"
+          "vi": "khuyến mãi"
         },
         {
           "word": "teuer",
           "en": "expensive",
-          "vi": "dat"
+          "vi": "đất"
         },
         {
           "word": "billig",
           "en": "cheap",
-          "vi": "re"
+          "vi": "rễ"
         },
         {
           "word": "gunstig",
@@ -3636,7 +3636,7 @@
         {
           "word": "reduziert",
           "en": "reduced",
-          "vi": "giam gia"
+          "vi": "giảm giá"
         },
         {
           "word": "der Kunde",
@@ -3661,17 +3661,17 @@
         {
           "word": "die Grosse",
           "en": "size",
-          "vi": "kich co"
+          "vi": "kích cỡ"
         },
         {
           "word": "die Farbe",
           "en": "color",
-          "vi": "mau sac"
+          "vi": "màu sắc"
         },
         {
           "word": "anprobieren",
           "en": "to try on",
-          "vi": "thu do"
+          "vi": "thủ đô"
         },
         {
           "word": "umtauschen",
@@ -3694,27 +3694,27 @@
       "id": "sports",
       "name": "Sport",
       "name_en": "Sports",
-      "name_vi": "The thao",
+      "name_vi": "Thể thao",
       "words": [
         {
           "word": "der Sport",
           "en": "sport",
-          "vi": "the thao"
+          "vi": "thể thao"
         },
         {
           "word": "der Fussball",
           "en": "football/soccer",
-          "vi": "bong da"
+          "vi": "bóng đá"
         },
         {
           "word": "der Basketball",
           "en": "basketball",
-          "vi": "bong ro"
+          "vi": "bóng rổ"
         },
         {
           "word": "der Volleyball",
           "en": "volleyball",
-          "vi": "bong chuyen"
+          "vi": "bóng chuyền"
         },
         {
           "word": "das Tennis",
@@ -3724,32 +3724,32 @@
         {
           "word": "das Schwimmen",
           "en": "swimming",
-          "vi": "boi loi"
+          "vi": "bơi lội"
         },
         {
           "word": "das Joggen",
           "en": "jogging",
-          "vi": "chay bo"
+          "vi": "chạy bộ"
         },
         {
           "word": "das Radfahren",
           "en": "cycling",
-          "vi": "dap xe"
+          "vi": "đạp xe"
         },
         {
           "word": "das Wandern",
           "en": "hiking",
-          "vi": "leo nui"
+          "vi": "leo núi"
         },
         {
           "word": "das Skifahren",
           "en": "skiing",
-          "vi": "truot tuyet"
+          "vi": "trượt tuyết"
         },
         {
           "word": "das Turnen",
           "en": "gymnastics",
-          "vi": "the duc"
+          "vi": "thể dục"
         },
         {
           "word": "der Sportler",
@@ -3764,7 +3764,7 @@
         {
           "word": "die Mannschaft",
           "en": "team",
-          "vi": "doi"
+          "vi": "đồi"
         },
         {
           "word": "der Sportverein",
@@ -3774,12 +3774,12 @@
         {
           "word": "das Training",
           "en": "training",
-          "vi": "tap luyen"
+          "vi": "tập luyện"
         },
         {
           "word": "trainieren",
           "en": "to train",
-          "vi": "tap luyen"
+          "vi": "tập luyện"
         },
         {
           "word": "das Spiel",
@@ -3789,7 +3789,7 @@
         {
           "word": "gewinnen",
           "en": "to win",
-          "vi": "thang"
+          "vi": "thắng"
         },
         {
           "word": "verlieren",
@@ -3799,7 +3799,7 @@
         {
           "word": "die Medaille",
           "en": "medal",
-          "vi": "huy chuong"
+          "vi": "huy chương"
         },
         {
           "word": "der Sportplatz",
@@ -3809,12 +3809,12 @@
         {
           "word": "der Fitnessraum",
           "en": "gym",
-          "vi": "phong tap"
+          "vi": "phòng tập"
         },
         {
           "word": "sportlich",
           "en": "athletic",
-          "vi": "khoe manh"
+          "vi": "khỏe mạnh"
         },
         {
           "word": "aktiv",
@@ -3824,12 +3824,12 @@
         {
           "word": "schwimmen",
           "en": "to swim",
-          "vi": "boi"
+          "vi": "bơi"
         },
         {
           "word": "joggen",
           "en": "to jog",
-          "vi": "chay bo"
+          "vi": "chạy bộ"
         },
         {
           "word": "wandern",
@@ -3852,12 +3852,12 @@
       "id": "technology",
       "name": "Technologie",
       "name_en": "Technology",
-      "name_vi": "Cong nghe",
+      "name_vi": "Công nghệ",
       "words": [
         {
           "word": "der Computer",
           "en": "computer",
-          "vi": "may tinh"
+          "vi": "máy tính"
         },
         {
           "word": "der Laptop",
@@ -3867,7 +3867,7 @@
         {
           "word": "das Handy",
           "en": "mobile phone",
-          "vi": "dien thoai di dong"
+          "vi": "điện thoại di động"
         },
         {
           "word": "das Smartphone",
@@ -3877,17 +3877,17 @@
         {
           "word": "das Tablet",
           "en": "tablet",
-          "vi": "may tinh bang"
+          "vi": "máy tính bảng"
         },
         {
           "word": "der Bildschirm",
           "en": "screen",
-          "vi": "man hinh"
+          "vi": "màn hình"
         },
         {
           "word": "die Tastatur",
           "en": "keyboard",
-          "vi": "ban phim"
+          "vi": "bàn phím"
         },
         {
           "word": "die Maus",
@@ -3897,7 +3897,7 @@
         {
           "word": "der Drucker",
           "en": "printer",
-          "vi": "may in"
+          "vi": "máy in"
         },
         {
           "word": "das Internet",
@@ -3907,12 +3907,12 @@
         {
           "word": "die App",
           "en": "app",
-          "vi": "ung dung"
+          "vi": "ứng dụng"
         },
         {
           "word": "die Software",
           "en": "software",
-          "vi": "phan mem"
+          "vi": "phần mềm"
         },
         {
           "word": "die Hardware",
@@ -3932,7 +3932,7 @@
         {
           "word": "das Passwort",
           "en": "password",
-          "vi": "mat khau"
+          "vi": "mật khẩu"
         },
         {
           "word": "der Akku",
@@ -3942,12 +3942,12 @@
         {
           "word": "das Netzwerk",
           "en": "network",
-          "vi": "mang"
+          "vi": "mạng"
         },
         {
           "word": "der Router",
           "en": "router",
-          "vi": "bo dinh tuyen"
+          "vi": "bộ định tuyến"
         },
         {
           "word": "der Server",
@@ -3957,12 +3957,12 @@
         {
           "word": "herunterladen",
           "en": "to download",
-          "vi": "tai xuong"
+          "vi": "tải xuống"
         },
         {
           "word": "hochladen",
           "en": "to upload",
-          "vi": "tai len"
+          "vi": "tải lên"
         },
         {
           "word": "speichern",
@@ -3977,17 +3977,17 @@
         {
           "word": "die Verbindung",
           "en": "connection",
-          "vi": "ket noi"
+          "vi": "kết nối"
         },
         {
           "word": "das Update",
           "en": "update",
-          "vi": "cap nhat"
+          "vi": "cập nhật"
         },
         {
           "word": "die Sicherheit",
           "en": "security",
-          "vi": "bao mat"
+          "vi": "bảo mật"
         },
         {
           "word": "der Roboter",
@@ -4002,7 +4002,7 @@
         {
           "word": "der Speicher",
           "en": "storage/memory",
-          "vi": "bo nho"
+          "vi": "bộ nhớ"
         }
       ]
     },
@@ -4010,22 +4010,22 @@
       "id": "nature",
       "name": "Natur",
       "name_en": "Nature",
-      "name_vi": "Thien nhien",
+      "name_vi": "Thiên nhiên",
       "words": [
         {
           "word": "die Natur",
           "en": "nature",
-          "vi": "thien nhien"
+          "vi": "thiên nhiên"
         },
         {
           "word": "die Umwelt",
           "en": "environment",
-          "vi": "moi truong"
+          "vi": "môi trường"
         },
         {
           "word": "der Wald",
           "en": "forest",
-          "vi": "rung"
+          "vi": "rừng"
         },
         {
           "word": "der Baum",
@@ -4045,12 +4045,12 @@
         {
           "word": "das Gras",
           "en": "grass",
-          "vi": "co"
+          "vi": "cỏ"
         },
         {
           "word": "der Berg",
           "en": "mountain",
-          "vi": "nui"
+          "vi": "núi"
         },
         {
           "word": "das Gebirge",
@@ -4060,72 +4060,72 @@
         {
           "word": "der Fluss",
           "en": "river",
-          "vi": "song"
+          "vi": "sông"
         },
         {
           "word": "der Bach",
           "en": "stream",
-          "vi": "suoi"
+          "vi": "suối"
         },
         {
           "word": "der See",
           "en": "lake",
-          "vi": "ho"
+          "vi": "hồ"
         },
         {
           "word": "das Meer",
           "en": "sea",
-          "vi": "bien"
+          "vi": "biển"
         },
         {
           "word": "der Strand",
           "en": "beach",
-          "vi": "bai bien"
+          "vi": "bãi biển"
         },
         {
           "word": "die Kuste",
           "en": "coast",
-          "vi": "bo bien"
+          "vi": "bờ biển"
         },
         {
           "word": "die Wiese",
           "en": "meadow",
-          "vi": "dong co"
+          "vi": "đồng cỏ"
         },
         {
           "word": "der Felsen",
           "en": "rock",
-          "vi": "da"
+          "vi": "đá"
         },
         {
           "word": "die Wuste",
           "en": "desert",
-          "vi": "sa mac"
+          "vi": "sa mạc"
         },
         {
           "word": "das Tal",
           "en": "valley",
-          "vi": "thung lung"
+          "vi": "thung lũng"
         },
         {
           "word": "die Insel",
           "en": "island",
-          "vi": "dao"
+          "vi": "đảo"
         },
         {
           "word": "der Himmel",
           "en": "sky",
-          "vi": "bau troi"
+          "vi": "bầu trời"
         },
         {
           "word": "die Sonne",
           "en": "sun",
-          "vi": "mat troi"
+          "vi": "mặt trời"
         },
         {
           "word": "der Mond",
           "en": "moon",
-          "vi": "mat trang"
+          "vi": "mặt trăng"
         },
         {
           "word": "der Stern",
@@ -4135,12 +4135,12 @@
         {
           "word": "die Wolke",
           "en": "cloud",
-          "vi": "may"
+          "vi": "mây"
         },
         {
           "word": "das Tier",
           "en": "animal",
-          "vi": "dong vat"
+          "vi": "động vật"
         },
         {
           "word": "der Vogel",
@@ -4155,12 +4155,12 @@
         {
           "word": "der Fisch",
           "en": "fish",
-          "vi": "ca"
+          "vi": "cá"
         },
         {
           "word": "die Luft",
           "en": "air",
-          "vi": "khong khi"
+          "vi": "không khí"
         }
       ]
     },
@@ -4168,17 +4168,17 @@
       "id": "professions",
       "name": "Berufe",
       "name_en": "Professions",
-      "name_vi": "Nghe nghiep",
+      "name_vi": "Nghề nghiệp",
       "words": [
         {
           "word": "der Arzt",
           "en": "doctor (male)",
-          "vi": "bac si (nam)"
+          "vi": "bác sĩ (nam)"
         },
         {
           "word": "die Arztin",
           "en": "doctor (female)",
-          "vi": "bac si (nu)"
+          "vi": "bác sĩ (nữ)"
         },
         {
           "word": "der Lehrer",
@@ -4356,17 +4356,17 @@
       "id": "hobbies",
       "name": "Hobbys",
       "name_en": "Hobbies",
-      "name_vi": "So thich",
+      "name_vi": "Sở thích",
       "words": [
         {
           "word": "lesen",
           "en": "to read",
-          "vi": "doc sach"
+          "vi": "đọc sách"
         },
         {
           "word": "schreiben",
           "en": "to write",
-          "vi": "viet"
+          "vi": "viết"
         },
         {
           "word": "malen",
@@ -4376,27 +4376,27 @@
         {
           "word": "zeichnen",
           "en": "to draw",
-          "vi": "ve"
+          "vi": "vẽ"
         },
         {
           "word": "fotografieren",
           "en": "to take photos",
-          "vi": "chup anh"
+          "vi": "chụp ảnh"
         },
         {
           "word": "kochen",
           "en": "to cook",
-          "vi": "nau an"
+          "vi": "nấu ăn"
         },
         {
           "word": "backen",
           "en": "to bake",
-          "vi": "lam banh"
+          "vi": "làm bánh"
         },
         {
           "word": "gartnern",
           "en": "to garden",
-          "vi": "lam vuon"
+          "vi": "làm vườn"
         },
         {
           "word": "tanzen",
@@ -4406,12 +4406,12 @@
         {
           "word": "singen",
           "en": "to sing",
-          "vi": "hat"
+          "vi": "hát"
         },
         {
           "word": "musizieren",
           "en": "to play music",
-          "vi": "choi nhac"
+          "vi": "chơi nhạc"
         },
         {
           "word": "Gitarre spielen",
@@ -4426,12 +4426,12 @@
         {
           "word": "schwimmen",
           "en": "to swim",
-          "vi": "boi"
+          "vi": "bơi"
         },
         {
           "word": "joggen",
           "en": "to jog",
-          "vi": "chay bo"
+          "vi": "chạy bộ"
         },
         {
           "word": "wandern",
@@ -4441,12 +4441,12 @@
         {
           "word": "Rad fahren",
           "en": "to ride a bike",
-          "vi": "dap xe"
+          "vi": "đạp xe"
         },
         {
           "word": "reisen",
           "en": "to travel",
-          "vi": "du lich"
+          "vi": "du lịch"
         },
         {
           "word": "campen",
@@ -4456,12 +4456,12 @@
         {
           "word": "angeln",
           "en": "to fish",
-          "vi": "cau ca"
+          "vi": "câu cá"
         },
         {
           "word": "klettern",
           "en": "to climb",
-          "vi": "leo nui"
+          "vi": "leo núi"
         },
         {
           "word": "reiten",
@@ -4471,7 +4471,7 @@
         {
           "word": "Ski fahren",
           "en": "to ski",
-          "vi": "truot tuyet"
+          "vi": "trượt tuyết"
         },
         {
           "word": "tauchen",
@@ -4496,7 +4496,7 @@
         {
           "word": "Computerspiele spielen",
           "en": "to play computer games",
-          "vi": "choi game"
+          "vi": "chơi game"
         },
         {
           "word": "Brettspiele spielen",
@@ -4506,7 +4506,7 @@
         {
           "word": "Sport treiben",
           "en": "to do sports",
-          "vi": "choi the thao"
+          "vi": "chơi thể thao"
         }
       ]
     },
@@ -4514,22 +4514,22 @@
       "id": "travel",
       "name": "Reisen",
       "name_en": "Travel",
-      "name_vi": "Du lich",
+      "name_vi": "Du lịch",
       "words": [
         {
           "word": "reisen",
           "en": "to travel",
-          "vi": "du lich"
+          "vi": "du lịch"
         },
         {
           "word": "die Reise",
           "en": "trip/journey",
-          "vi": "chuyen di"
+          "vi": "chuyến đi"
         },
         {
           "word": "der Urlaub",
           "en": "vacation",
-          "vi": "ky nghi"
+          "vi": "kỳ nghỉ"
         },
         {
           "word": "der Tourist",
@@ -4544,12 +4544,12 @@
         {
           "word": "das Hotel",
           "en": "hotel",
-          "vi": "khach san"
+          "vi": "khách sạn"
         },
         {
           "word": "das Hostel",
           "en": "hostel",
-          "vi": "nha nghi"
+          "vi": "nhà nghỉ"
         },
         {
           "word": "die Unterkunft",
@@ -4559,17 +4559,17 @@
         {
           "word": "der Flughafen",
           "en": "airport",
-          "vi": "san bay"
+          "vi": "sân bay"
         },
         {
           "word": "der Bahnhof",
           "en": "train station",
-          "vi": "ga tau"
+          "vi": "ga tàu"
         },
         {
           "word": "der Pass",
           "en": "passport",
-          "vi": "ho chieu"
+          "vi": "hộ chiếu"
         },
         {
           "word": "das Visum",
@@ -4579,22 +4579,22 @@
         {
           "word": "der Koffer",
           "en": "suitcase",
-          "vi": "vali"
+          "vi": "va-li"
         },
         {
           "word": "der Rucksack",
           "en": "backpack",
-          "vi": "ba lo"
+          "vi": "ba lô"
         },
         {
           "word": "die Fahrkarte",
           "en": "ticket",
-          "vi": "ve"
+          "vi": "vẽ"
         },
         {
           "word": "der Flug",
           "en": "flight",
-          "vi": "chuyen bay"
+          "vi": "chuyến bay"
         },
         {
           "word": "buchen",
@@ -4614,7 +4614,7 @@
         {
           "word": "auschecken",
           "en": "to check out",
-          "vi": "tra phong"
+          "vi": "trả phòng"
         },
         {
           "word": "besichtigen",
@@ -4629,12 +4629,12 @@
         {
           "word": "die Karte",
           "en": "map",
-          "vi": "ban do"
+          "vi": "bản đồ"
         },
         {
           "word": "der Reisefuhrer",
           "en": "travel guide",
-          "vi": "huong dan vien"
+          "vi": "hướng dẫn viên"
         },
         {
           "word": "das Souvenir",
@@ -4644,27 +4644,27 @@
         {
           "word": "der Strand",
           "en": "beach",
-          "vi": "bai bien"
+          "vi": "bãi biển"
         },
         {
           "word": "das Museum",
           "en": "museum",
-          "vi": "bao tang"
+          "vi": "bảo tàng"
         },
         {
           "word": "die Kirche",
           "en": "church",
-          "vi": "nha tho"
+          "vi": "nhà thờ"
         },
         {
           "word": "das Schloss",
           "en": "castle",
-          "vi": "lau dai"
+          "vi": "lâu dài"
         },
         {
           "word": "der Marktplatz",
           "en": "market square",
-          "vi": "quang truong"
+          "vi": "quảng trường"
         }
       ]
     },
@@ -4672,17 +4672,17 @@
       "id": "restaurant",
       "name": "Restaurant",
       "name_en": "Restaurant",
-      "name_vi": "Nha hang",
+      "name_vi": "Nhà hàng",
       "words": [
         {
           "word": "das Restaurant",
           "en": "restaurant",
-          "vi": "nha hang"
+          "vi": "nhà hàng"
         },
         {
           "word": "das Cafe",
           "en": "cafe",
-          "vi": "quan ca phe"
+          "vi": "quán cà phê"
         },
         {
           "word": "die Bar",
@@ -4692,22 +4692,22 @@
         {
           "word": "der Tisch",
           "en": "table",
-          "vi": "ban"
+          "vi": "bàn"
         },
         {
           "word": "der Stuhl",
           "en": "chair",
-          "vi": "ghe"
+          "vi": "ghế"
         },
         {
           "word": "die Speisekarte",
           "en": "menu",
-          "vi": "thuc don"
+          "vi": "thực đơn"
         },
         {
           "word": "bestellen",
           "en": "to order",
-          "vi": "goi mon"
+          "vi": "gọi món"
         },
         {
           "word": "die Bestellung",
@@ -4717,32 +4717,32 @@
         {
           "word": "das Gericht",
           "en": "dish",
-          "vi": "mon an"
+          "vi": "món ăn"
         },
         {
           "word": "die Vorspeise",
           "en": "appetizer",
-          "vi": "mon khai vi"
+          "vi": "món khai vị"
         },
         {
           "word": "das Hauptgericht",
           "en": "main course",
-          "vi": "mon chinh"
+          "vi": "món chính"
         },
         {
           "word": "die Nachspeise",
           "en": "dessert",
-          "vi": "mon trang mieng"
+          "vi": "món tráng miệng"
         },
         {
           "word": "das Getrank",
           "en": "drink",
-          "vi": "do uong"
+          "vi": "đồ uống"
         },
         {
           "word": "die Rechnung",
           "en": "bill",
-          "vi": "hoa don"
+          "vi": "hóa đơn"
         },
         {
           "word": "das Trinkgeld",
@@ -4762,12 +4762,12 @@
         {
           "word": "der Koch",
           "en": "chef",
-          "vi": "dau bep"
+          "vi": "đầu bếp"
         },
         {
           "word": "reservieren",
           "en": "to reserve",
-          "vi": "dat ban"
+          "vi": "đặt bàn"
         },
         {
           "word": "die Reservierung",
@@ -4782,12 +4782,12 @@
         {
           "word": "satt",
           "en": "full",
-          "vi": "no"
+          "vi": "nợ"
         },
         {
           "word": "hungrig",
           "en": "hungry",
-          "vi": "doi"
+          "vi": "đồi"
         },
         {
           "word": "durstig",
@@ -4797,7 +4797,7 @@
         {
           "word": "vegetarisch",
           "en": "vegetarian",
-          "vi": "chay"
+          "vi": "chạy"
         },
         {
           "word": "vegan",
@@ -4807,7 +4807,7 @@
         {
           "word": "die Portion",
           "en": "portion",
-          "vi": "phan"
+          "vi": "phấn"
         },
         {
           "word": "zum Mitnehmen",
@@ -4817,12 +4817,12 @@
         {
           "word": "Guten Appetit!",
           "en": "Enjoy your meal!",
-          "vi": "Chuc ngon mieng!"
+          "vi": "Chúc ngon miệng!"
         },
         {
           "word": "Die Rechnung, bitte!",
           "en": "The bill, please!",
-          "vi": "Tinh tien!"
+          "vi": "Tính tiền!"
         }
       ]
     },
@@ -4835,12 +4835,12 @@
         {
           "word": "der Tisch",
           "en": "table",
-          "vi": "ban"
+          "vi": "bàn"
         },
         {
           "word": "der Stuhl",
           "en": "chair",
-          "vi": "ghe"
+          "vi": "ghế"
         },
         {
           "word": "das Sofa",
@@ -4860,7 +4860,7 @@
         {
           "word": "das Bett",
           "en": "bed",
-          "vi": "giuong"
+          "vi": "giường"
         },
         {
           "word": "das Doppelbett",
@@ -4880,12 +4880,12 @@
         {
           "word": "der Schrank",
           "en": "cupboard",
-          "vi": "tu"
+          "vi": "tủ"
         },
         {
           "word": "der Kleiderschrank",
           "en": "wardrobe",
-          "vi": "tu quan ao"
+          "vi": "tủ quần áo"
         },
         {
           "word": "die Kommode",
@@ -4900,12 +4900,12 @@
         {
           "word": "das Bucherregal",
           "en": "bookshelf",
-          "vi": "ke sach"
+          "vi": "kệ sách"
         },
         {
           "word": "der Schreibtisch",
           "en": "desk",
-          "vi": "ban lam viec"
+          "vi": "bàn làm việc"
         },
         {
           "word": "der Nachttisch",
@@ -4915,37 +4915,37 @@
         {
           "word": "der Couchtisch",
           "en": "coffee table",
-          "vi": "ban tra"
+          "vi": "bàn trà"
         },
         {
           "word": "der Esstisch",
           "en": "dining table",
-          "vi": "ban an"
+          "vi": "bàn ăn"
         },
         {
           "word": "der Spiegel",
           "en": "mirror",
-          "vi": "guong"
+          "vi": "gương"
         },
         {
           "word": "die Lampe",
           "en": "lamp",
-          "vi": "den"
+          "vi": "đền"
         },
         {
           "word": "der Teppich",
           "en": "carpet",
-          "vi": "tham"
+          "vi": "thảm"
         },
         {
           "word": "die Gardine",
           "en": "curtain",
-          "vi": "rem"
+          "vi": "rèm"
         },
         {
           "word": "der Vorhang",
           "en": "curtain",
-          "vi": "man"
+          "vi": "mặn"
         },
         {
           "word": "der Hocker",
@@ -4993,7 +4993,7 @@
         {
           "word": "die Hilfe",
           "en": "help",
-          "vi": "giup do"
+          "vi": "giúp đỡ"
         },
         {
           "word": "helfen",
@@ -5008,7 +5008,7 @@
         {
           "word": "die Polizei",
           "en": "police",
-          "vi": "canh sat"
+          "vi": "cảnh sát"
         },
         {
           "word": "die Feuerwehr",
@@ -5018,12 +5018,12 @@
         {
           "word": "der Krankenwagen",
           "en": "ambulance",
-          "vi": "xe cuu thuong"
+          "vi": "xe cứu thương"
         },
         {
           "word": "das Krankenhaus",
           "en": "hospital",
-          "vi": "benh vien"
+          "vi": "bệnh viện"
         },
         {
           "word": "die Notaufnahme",
@@ -5033,22 +5033,22 @@
         {
           "word": "der Arzt",
           "en": "doctor",
-          "vi": "bac si"
+          "vi": "bác sĩ"
         },
         {
           "word": "die Apotheke",
           "en": "pharmacy",
-          "vi": "nha thuoc"
+          "vi": "nhà thuốc"
         },
         {
           "word": "die Medikamente",
           "en": "medicine",
-          "vi": "thuoc"
+          "vi": "thuốc"
         },
         {
           "word": "der Unfall",
           "en": "accident",
-          "vi": "tai nan"
+          "vi": "tai nạn"
         },
         {
           "word": "die Verletzung",
@@ -5058,22 +5058,22 @@
         {
           "word": "verletzt",
           "en": "injured",
-          "vi": "bi thuong"
+          "vi": "bị thương"
         },
         {
           "word": "krank",
           "en": "sick",
-          "vi": "om"
+          "vi": "ốm"
         },
         {
           "word": "die Krankheit",
           "en": "illness",
-          "vi": "benh"
+          "vi": "bệnh"
         },
         {
           "word": "der Schmerz",
           "en": "pain",
-          "vi": "dau"
+          "vi": "đau"
         },
         {
           "word": "bluten",
@@ -5083,7 +5083,7 @@
         {
           "word": "das Blut",
           "en": "blood",
-          "vi": "mau"
+          "vi": "màu"
         },
         {
           "word": "der Brand",
@@ -5093,17 +5093,17 @@
         {
           "word": "brennen",
           "en": "to burn",
-          "vi": "chay"
+          "vi": "chạy"
         },
         {
           "word": "die Gefahr",
           "en": "danger",
-          "vi": "nguy hiem"
+          "vi": "nguy hiểm"
         },
         {
           "word": "gefahrlich",
           "en": "dangerous",
-          "vi": "nguy hiem"
+          "vi": "nguy hiểm"
         },
         {
           "word": "der Diebstahl",
@@ -5113,7 +5113,7 @@
         {
           "word": "die Rettung",
           "en": "rescue",
-          "vi": "cuu ho"
+          "vi": "cứu hộ"
         },
         {
           "word": "die Erste Hilfe",
@@ -5123,12 +5123,12 @@
         {
           "word": "die Versicherung",
           "en": "insurance",
-          "vi": "bao hiem"
+          "vi": "bảo hiểm"
         },
         {
           "word": "der Feuerwehrmann",
           "en": "firefighter",
-          "vi": "linh cuu hoa"
+          "vi": "lính cứu hỏa"
         }
       ]
     },
@@ -5141,17 +5141,17 @@
         {
           "word": "das Buro",
           "en": "office",
-          "vi": "van phong"
+          "vi": "văn phòng"
         },
         {
           "word": "der Schreibtisch",
           "en": "desk",
-          "vi": "ban lam viec"
+          "vi": "bàn làm việc"
         },
         {
           "word": "der Computer",
           "en": "computer",
-          "vi": "may tinh"
+          "vi": "máy tính"
         },
         {
           "word": "der Laptop",
@@ -5161,7 +5161,7 @@
         {
           "word": "der Drucker",
           "en": "printer",
-          "vi": "may in"
+          "vi": "máy in"
         },
         {
           "word": "der Kopierer",
@@ -5171,22 +5171,22 @@
         {
           "word": "die Tastatur",
           "en": "keyboard",
-          "vi": "ban phim"
+          "vi": "bàn phím"
         },
         {
           "word": "die Maus",
           "en": "mouse",
-          "vi": "chuot"
+          "vi": "chuột"
         },
         {
           "word": "der Bildschirm",
           "en": "monitor",
-          "vi": "man hinh"
+          "vi": "màn hình"
         },
         {
           "word": "das Telefon",
           "en": "telephone",
-          "vi": "dien thoai"
+          "vi": "điện thoại"
         },
         {
           "word": "die E-Mail",
@@ -5196,7 +5196,7 @@
         {
           "word": "die Akte",
           "en": "file",
-          "vi": "ho so"
+          "vi": "hồ sơ"
         },
         {
           "word": "der Ordner",
@@ -5206,7 +5206,7 @@
         {
           "word": "das Papier",
           "en": "paper",
-          "vi": "giay"
+          "vi": "giày"
         },
         {
           "word": "der Notizblock",
@@ -5241,32 +5241,32 @@
         {
           "word": "die Besprechung",
           "en": "meeting",
-          "vi": "cuoc hop"
+          "vi": "cuộc họp"
         },
         {
           "word": "das Meeting",
           "en": "meeting",
-          "vi": "cuoc hop"
+          "vi": "cuộc họp"
         },
         {
           "word": "der Bericht",
           "en": "report",
-          "vi": "bao cao"
+          "vi": "báo cáo"
         },
         {
           "word": "die Prasentation",
           "en": "presentation",
-          "vi": "bai thuyet trinh"
+          "vi": "bài thuyết trình"
         },
         {
           "word": "das Projekt",
           "en": "project",
-          "vi": "du an"
+          "vi": "dự án"
         },
         {
           "word": "die Aufgabe",
           "en": "task",
-          "vi": "nhiem vu"
+          "vi": "nhiệm vụ"
         },
         {
           "word": "die Frist",
@@ -5286,7 +5286,7 @@
         {
           "word": "der Vertrag",
           "en": "contract",
-          "vi": "hop dong"
+          "vi": "hợp đồng"
         }
       ]
     },
@@ -5299,17 +5299,17 @@
         {
           "word": "das Hotel",
           "en": "hotel",
-          "vi": "khach san"
+          "vi": "khách sạn"
         },
         {
           "word": "das Hostel",
           "en": "hostel",
-          "vi": "nha nghi"
+          "vi": "nhà nghỉ"
         },
         {
           "word": "das Zimmer",
           "en": "room",
-          "vi": "phong"
+          "vi": "phòng"
         },
         {
           "word": "das Einzelzimmer",
@@ -5339,12 +5339,12 @@
         {
           "word": "buchen",
           "en": "to book",
-          "vi": "dat phong"
+          "vi": "đặt phòng"
         },
         {
           "word": "die Buchung",
           "en": "booking",
-          "vi": "dat phong"
+          "vi": "đặt phòng"
         },
         {
           "word": "die Reservierung",
@@ -5364,22 +5364,22 @@
         {
           "word": "das Bett",
           "en": "bed",
-          "vi": "giuong"
+          "vi": "giường"
         },
         {
           "word": "das Badezimmer",
           "en": "bathroom",
-          "vi": "phong tam"
+          "vi": "phòng tắm"
         },
         {
           "word": "der Balkon",
           "en": "balcony",
-          "vi": "ban cong"
+          "vi": "ban công"
         },
         {
           "word": "der Aufzug",
           "en": "elevator",
-          "vi": "thang may"
+          "vi": "thang máy"
         },
         {
           "word": "der Fernseher",
@@ -5389,7 +5389,7 @@
         {
           "word": "die Klimaanlage",
           "en": "air conditioning",
-          "vi": "dieu hoa"
+          "vi": "điều hòa"
         },
         {
           "word": "der Safe",
@@ -5404,7 +5404,7 @@
         {
           "word": "das Fruhstuck",
           "en": "breakfast",
-          "vi": "bua sang"
+          "vi": "bữa sáng"
         },
         {
           "word": "der Fruhstucksraum",
@@ -5419,17 +5419,17 @@
         {
           "word": "die Rechnung",
           "en": "bill",
-          "vi": "hoa don"
+          "vi": "hóa đơn"
         },
         {
           "word": "das Gepack",
           "en": "luggage",
-          "vi": "hanh ly"
+          "vi": "hành lý"
         },
         {
           "word": "frei",
           "en": "available",
-          "vi": "trong"
+          "vi": "trống"
         },
         {
           "word": "besetzt",
@@ -5439,7 +5439,7 @@
         {
           "word": "der Service",
           "en": "service",
-          "vi": "dich vu"
+          "vi": "dịch vụ"
         },
         {
           "word": "der Aufenthalt",
@@ -5457,22 +5457,22 @@
         {
           "word": "links",
           "en": "left",
-          "vi": "ben trai"
+          "vi": "bên trái"
         },
         {
           "word": "rechts",
           "en": "right",
-          "vi": "ben phai"
+          "vi": "bên phải"
         },
         {
           "word": "geradeaus",
           "en": "straight ahead",
-          "vi": "di thang"
+          "vi": "đi thẳng"
         },
         {
           "word": "zuruck",
           "en": "back",
-          "vi": "quay lai"
+          "vi": "quay lại"
         },
         {
           "word": "die Richtung",
@@ -5482,12 +5482,12 @@
         {
           "word": "der Weg",
           "en": "way/path",
-          "vi": "duong"
+          "vi": "đường"
         },
         {
           "word": "die Strasse",
           "en": "street",
-          "vi": "duong pho"
+          "vi": "đường phố"
         },
         {
           "word": "die Ecke",
@@ -5497,32 +5497,32 @@
         {
           "word": "die Kreuzung",
           "en": "intersection",
-          "vi": "nga tu"
+          "vi": "ngã tư"
         },
         {
           "word": "die Ampel",
           "en": "traffic light",
-          "vi": "den giao thong"
+          "vi": "đèn giao thông"
         },
         {
           "word": "die Brucke",
           "en": "bridge",
-          "vi": "cau"
+          "vi": "cầu"
         },
         {
           "word": "der Tunnel",
           "en": "tunnel",
-          "vi": "ham"
+          "vi": "hầm"
         },
         {
           "word": "der Platz",
           "en": "square",
-          "vi": "quang truong"
+          "vi": "quảng trường"
         },
         {
           "word": "der Park",
           "en": "park",
-          "vi": "cong vien"
+          "vi": "công viên"
         },
         {
           "word": "das Zentrum",
@@ -5532,17 +5532,17 @@
         {
           "word": "der Bahnhof",
           "en": "train station",
-          "vi": "ga tau"
+          "vi": "ga tàu"
         },
         {
           "word": "der Flughafen",
           "en": "airport",
-          "vi": "san bay"
+          "vi": "sân bay"
         },
         {
           "word": "die Haltestelle",
           "en": "bus stop",
-          "vi": "tram xe buyt"
+          "vi": "trạm xe buýt"
         },
         {
           "word": "das Gebaude",
@@ -5552,12 +5552,12 @@
         {
           "word": "die Fahrkarte",
           "en": "ticket",
-          "vi": "ve"
+          "vi": "vẽ"
         },
         {
           "word": "der Bus",
           "en": "bus",
-          "vi": "xe buyt"
+          "vi": "xe buýt"
         },
         {
           "word": "der Zug",
@@ -5582,7 +5582,7 @@
         {
           "word": "neben",
           "en": "next to",
-          "vi": "ben canh"
+          "vi": "bên cạnh"
         },
         {
           "word": "zwischen",
@@ -5592,12 +5592,12 @@
         {
           "word": "hinter",
           "en": "behind",
-          "vi": "phia sau"
+          "vi": "phía sau"
         },
         {
           "word": "vor",
           "en": "in front of",
-          "vi": "phia truoc"
+          "vi": "phía trước"
         }
       ]
     },
@@ -5610,12 +5610,12 @@
         {
           "word": "die Bank",
           "en": "bank",
-          "vi": "ngan hang"
+          "vi": "ngân hàng"
         },
         {
           "word": "das Konto",
           "en": "account",
-          "vi": "tai khoan"
+          "vi": "tài khoản"
         },
         {
           "word": "das Girokonto",
@@ -5630,12 +5630,12 @@
         {
           "word": "das Geld",
           "en": "money",
-          "vi": "tien"
+          "vi": "tiền"
         },
         {
           "word": "das Bargeld",
           "en": "cash",
-          "vi": "tien mat"
+          "vi": "tiền mặt"
         },
         {
           "word": "die Bankkarte",
@@ -5645,7 +5645,7 @@
         {
           "word": "die Kreditkarte",
           "en": "credit card",
-          "vi": "the tin dung"
+          "vi": "thẻ tín dụng"
         },
         {
           "word": "der Geldautomat",
@@ -5670,12 +5670,12 @@
         {
           "word": "uberweisen",
           "en": "to transfer",
-          "vi": "chuyen khoan"
+          "vi": "chuyển khoản"
         },
         {
           "word": "die Uberweisung",
           "en": "transfer",
-          "vi": "chuyen khoan"
+          "vi": "chuyển khoản"
         },
         {
           "word": "der Kontostand",
@@ -5685,7 +5685,7 @@
         {
           "word": "die Zinsen",
           "en": "interest",
-          "vi": "lai suat"
+          "vi": "lãi suất"
         },
         {
           "word": "sparen",
@@ -5700,17 +5700,17 @@
         {
           "word": "die Zahlung",
           "en": "payment",
-          "vi": "thanh toan"
+          "vi": "thanh toán"
         },
         {
           "word": "die Rechnung",
           "en": "bill/invoice",
-          "vi": "hoa don"
+          "vi": "hóa đơn"
         },
         {
           "word": "die Wahrung",
           "en": "currency",
-          "vi": "tien te"
+          "vi": "tiền tệ"
         },
         {
           "word": "wechseln",
@@ -5725,7 +5725,7 @@
         {
           "word": "das Passwort",
           "en": "password",
-          "vi": "mat khau"
+          "vi": "mật khẩu"
         },
         {
           "word": "das Formular",
@@ -5735,7 +5735,7 @@
         {
           "word": "die Aktie",
           "en": "stock/share",
-          "vi": "co phieu"
+          "vi": "cổ phiếu"
         },
         {
           "word": "leihen",
@@ -5750,7 +5750,7 @@
         {
           "word": "kostenlos",
           "en": "free of charge",
-          "vi": "mien phi"
+          "vi": "miễn phí"
         }
       ]
     },
@@ -5803,7 +5803,7 @@
         {
           "word": "der Regisseur",
           "en": "director",
-          "vi": "dao dien"
+          "vi": "đạo diễn"
         },
         {
           "word": "das Drehbuch",
@@ -5818,12 +5818,12 @@
         {
           "word": "der Sitzplatz",
           "en": "seat",
-          "vi": "cho ngoi"
+          "vi": "chỗ ngồi"
         },
         {
           "word": "das Popcorn",
           "en": "popcorn",
-          "vi": "bap rang"
+          "vi": "bắp rang"
         },
         {
           "word": "der Trailer",
@@ -5833,7 +5833,7 @@
         {
           "word": "die Premiere",
           "en": "premiere",
-          "vi": "buoi cong chieu"
+          "vi": "buổi công chiếu"
         },
         {
           "word": "der Soundtrack",
@@ -5858,7 +5858,7 @@
         {
           "word": "die Rezension",
           "en": "review",
-          "vi": "bai danh gia"
+          "vi": "bài đánh giá"
         },
         {
           "word": "der Zuschauer",
@@ -5878,7 +5878,7 @@
         {
           "word": "traurig",
           "en": "sad",
-          "vi": "buon"
+          "vi": "buồn"
         },
         {
           "word": "filmen",
@@ -5898,7 +5898,7 @@
         {
           "word": "die Kamera",
           "en": "camera",
-          "vi": "may quay"
+          "vi": "máy quay"
         },
         {
           "word": "der Titel",
@@ -5921,12 +5921,12 @@
         {
           "word": "kochen",
           "en": "to cook/boil",
-          "vi": "nau"
+          "vi": "nấu"
         },
         {
           "word": "backen",
           "en": "to bake",
-          "vi": "nuong"
+          "vi": "nướng"
         },
         {
           "word": "braten",
@@ -5936,12 +5936,12 @@
         {
           "word": "schneiden",
           "en": "to cut",
-          "vi": "cat"
+          "vi": "cắt"
         },
         {
           "word": "mischen",
           "en": "to mix",
-          "vi": "tron"
+          "vi": "trộn"
         },
         {
           "word": "umruhren",
@@ -5956,12 +5956,12 @@
         {
           "word": "der Topf",
           "en": "pot",
-          "vi": "noi"
+          "vi": "nồi"
         },
         {
           "word": "die Pfanne",
           "en": "frying pan",
-          "vi": "chao"
+          "vi": "chảo"
         },
         {
           "word": "das Backblech",
@@ -5991,7 +5991,7 @@
         {
           "word": "das Messer",
           "en": "knife",
-          "vi": "dao"
+          "vi": "đảo"
         },
         {
           "word": "das Schneidebrett",
@@ -6001,7 +6001,7 @@
         {
           "word": "der Herd",
           "en": "stove",
-          "vi": "bep"
+          "vi": "bếp"
         },
         {
           "word": "der Ofen",
@@ -6011,37 +6011,37 @@
         {
           "word": "der Kuhlschrank",
           "en": "refrigerator",
-          "vi": "tu lanh"
+          "vi": "tủ lạnh"
         },
         {
           "word": "das Mehl",
           "en": "flour",
-          "vi": "bot mi"
+          "vi": "bột mì"
         },
         {
           "word": "der Zucker",
           "en": "sugar",
-          "vi": "duong"
+          "vi": "đường"
         },
         {
           "word": "das Salz",
           "en": "salt",
-          "vi": "muoi"
+          "vi": "mười"
         },
         {
           "word": "die Butter",
           "en": "butter",
-          "vi": "bo"
+          "vi": "bố"
         },
         {
           "word": "das Ei",
           "en": "egg",
-          "vi": "trung"
+          "vi": "trứng"
         },
         {
           "word": "das Ol",
           "en": "oil",
-          "vi": "dau"
+          "vi": "đau"
         },
         {
           "word": "die Sahne",
@@ -6051,12 +6051,12 @@
         {
           "word": "die Gewurze",
           "en": "spices",
-          "vi": "gia vi"
+          "vi": "gia vị"
         },
         {
           "word": "der Teig",
           "en": "dough",
-          "vi": "bot nhan"
+          "vi": "bột nhân"
         },
         {
           "word": "die Hefe",
@@ -6066,7 +6066,7 @@
         {
           "word": "das Rezept",
           "en": "recipe",
-          "vi": "cong thuc"
+          "vi": "công thức"
         }
       ]
     },
@@ -6079,22 +6079,22 @@
         {
           "word": "die Musik",
           "en": "music",
-          "vi": "am nhac"
+          "vi": "âm nhạc"
         },
         {
           "word": "das Lied",
           "en": "song",
-          "vi": "bai hat"
+          "vi": "bài hát"
         },
         {
           "word": "singen",
           "en": "to sing",
-          "vi": "hat"
+          "vi": "hát"
         },
         {
           "word": "spielen",
           "en": "to play",
-          "vi": "choi"
+          "vi": "chơi"
         },
         {
           "word": "die Gitarre",
@@ -6114,7 +6114,7 @@
         {
           "word": "die Flote",
           "en": "flute",
-          "vi": "sang"
+          "vi": "sáng"
         },
         {
           "word": "die Trompete",
@@ -6124,7 +6124,7 @@
         {
           "word": "das Schlagzeug",
           "en": "drums",
-          "vi": "trong"
+          "vi": "trống"
         },
         {
           "word": "der Musiker",
@@ -6149,7 +6149,7 @@
         {
           "word": "die Band",
           "en": "band",
-          "vi": "ban nhac"
+          "vi": "ban nhạc"
         },
         {
           "word": "das Orchester",
@@ -6199,7 +6199,7 @@
         {
           "word": "leise",
           "en": "quiet",
-          "vi": "nhe"
+          "vi": "nhẹ"
         },
         {
           "word": "klassisch",
@@ -6209,7 +6209,7 @@
         {
           "word": "modern",
           "en": "modern",
-          "vi": "hien dai"
+          "vi": "hiện đại"
         },
         {
           "word": "der Kopfhorer",
@@ -6232,22 +6232,22 @@
         {
           "word": "der Feiertag",
           "en": "holiday",
-          "vi": "ngay le"
+          "vi": "ngày lễ"
         },
         {
           "word": "das Fest",
           "en": "festival",
-          "vi": "le hoi"
+          "vi": "lễ hội"
         },
         {
           "word": "feiern",
           "en": "to celebrate",
-          "vi": "an mung"
+          "vi": "ăn mừng"
         },
         {
           "word": "Weihnachten",
           "en": "Christmas",
-          "vi": "Giang sinh"
+          "vi": "Giáng sinh"
         },
         {
           "word": "der Weihnachtsbaum",
@@ -6262,12 +6262,12 @@
         {
           "word": "das Geschenk",
           "en": "gift",
-          "vi": "qua"
+          "vi": "quả"
         },
         {
           "word": "Ostern",
           "en": "Easter",
-          "vi": "Le Phuc Sinh"
+          "vi": "Lễ Phục Sinh"
         },
         {
           "word": "der Osterhase",
@@ -6282,12 +6282,12 @@
         {
           "word": "Silvester",
           "en": "New Year's Eve",
-          "vi": "Dem Giao thua"
+          "vi": "Đêm Giao thừa"
         },
         {
           "word": "das Neujahr",
           "en": "New Year",
-          "vi": "Nam moi"
+          "vi": "Năm mới"
         },
         {
           "word": "der Geburtstag",
@@ -6297,7 +6297,7 @@
         {
           "word": "die Geburtstagstorte",
           "en": "birthday cake",
-          "vi": "banh sinh nhat"
+          "vi": "bánh sinh nhật"
         },
         {
           "word": "die Kerze",
@@ -6307,7 +6307,7 @@
         {
           "word": "die Hochzeit",
           "en": "wedding",
-          "vi": "dam cuoi"
+          "vi": "đám cưới"
         },
         {
           "word": "die Party",
@@ -6322,12 +6322,12 @@
         {
           "word": "einladen",
           "en": "to invite",
-          "vi": "moi"
+          "vi": "mới"
         },
         {
           "word": "gratulieren",
           "en": "to congratulate",
-          "vi": "chuc mung"
+          "vi": "chúc mừng"
         },
         {
           "word": "der Gluckwunsch",
@@ -6347,7 +6347,7 @@
         {
           "word": "das Kostum",
           "en": "costume",
-          "vi": "trang phuc"
+          "vi": "trang phục"
         },
         {
           "word": "der Valentinstag",

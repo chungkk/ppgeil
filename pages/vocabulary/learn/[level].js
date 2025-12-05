@@ -52,6 +52,11 @@ const VocabularyLearnPage = () => {
   const { currentLanguage } = useLanguage();
 
   const isEn = currentLanguage === 'en';
+  
+  // Use user's nativeLanguage setting for translations, fallback to currentLanguage
+  const translationLang = user?.nativeLanguage || currentLanguage;
+  const isTranslationEn = translationLang === 'en';
+  
   const config = levelConfig[level?.toLowerCase()];
 
   // States
@@ -163,10 +168,10 @@ const VocabularyLearnPage = () => {
     }
   }, [config?.data, savedProgress, level]);
 
-  // Get translation
+  // Get translation based on user's nativeLanguage setting
   const getTranslation = (item) => {
     if (!item) return '';
-    return isEn ? (item.en || item.vi || '') : (item.vi || item.en || '');
+    return isTranslationEn ? (item.en || item.vi || '') : (item.vi || item.en || '');
   };
 
   // Speak word
