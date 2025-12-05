@@ -264,7 +264,8 @@ const DictationPageContent = () => {
             text: sentence.text,
             context: '',
             sourceLang: 'de',
-            targetLang: targetLang
+            targetLang: targetLang,
+            mode: 'sentence' // Use OpenAI for natural sentence translation
           })
         });
 

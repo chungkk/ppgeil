@@ -104,39 +104,71 @@ async function translateWithGoogle(text, sourceLang, targetLang) {
 
 /**
  * Translate using OpenAI GPT-4 (high quality but expensive)
+ * @param {string} text - Text to translate
+ * @param {string} context - Context sentence (for word translation)
+ * @param {string} targetLang - Target language code
+ * @param {string} sourceLang - Source language code
+ * @param {string} sentenceTranslation - Existing sentence translation (for smart extraction)
+ * @param {string} mode - 'word' or 'sentence'
  */
-async function translateWithOpenAI(text, context = '', targetLang = 'vi', sourceLang = 'de', sentenceTranslation = '') {
+async function translateWithOpenAI(text, context = '', targetLang = 'vi', sourceLang = 'de', sentenceTranslation = '', mode = 'word') {
   if (!OPENAI_API_KEY) {
     throw new Error('OPENAI_API_KEY not configured');
   }
 
   const targetLanguageName = LANGUAGE_NAMES[targetLang] || 'the target language';
-
-  // Handle auto-detection
-  const sourceText = (sourceLang === 'auto' || !sourceLang)
-    ? 'automatically detect the source language and translate'
-    : `Translate from ${LANGUAGE_NAMES[sourceLang] || sourceLang}`;
+  const sourceLanguageName = LANGUAGE_NAMES[sourceLang] || sourceLang;
 
   let prompt;
+  let systemPrompt;
+  let maxTokens = 60;
   
-  // If we have both context and its translation, use smart extraction
-  if (context && sentenceTranslation) {
-    prompt = `Extract the meaning of "${text}" from this sentence pair:
+  // SENTENCE MODE: Natural, fluent translation for full sentences
+  if (mode === 'sentence') {
+    systemPrompt = `Bạn là một dịch giả chuyên nghiệp với 20 năm kinh nghiệm dịch ${sourceLanguageName} sang ${targetLanguageName}. 
+Phong cách dịch của bạn:
+- Dịch tự nhiên, trôi chảy như người bản ngữ nói
+- Giữ nguyên ý nghĩa và cảm xúc của câu gốc
+- Không dịch máy móc từng từ
+- Sử dụng cách diễn đạt phổ biến trong ${targetLanguageName}
+- Với tiếng Việt: dùng từ ngữ đời thường, dễ hiểu, tránh từ Hán Việt khó hiểu`;
+    
+    prompt = `Dịch câu sau sang ${targetLanguageName} một cách tự nhiên và trôi chảy:
+
+"${text}"
+
+CHỈ trả về bản dịch, KHÔNG giải thích.`;
+    
+    maxTokens = 200;
+  } 
+  // WORD MODE: Extract meaning from context
+  else {
+    systemPrompt = `You are a professional translation expert. Provide accurate and natural translations to ${targetLanguageName}.`;
+    
+    // Handle auto-detection
+    const sourceText = (sourceLang === 'auto' || !sourceLang)
+      ? 'automatically detect the source language and translate'
+      : `Translate from ${sourceLanguageName}`;
+
+    // If we have both context and its translation, use smart extraction
+    if (context && sentenceTranslation) {
+      prompt = `Extract the meaning of "${text}" from this sentence pair:
 
 Original: "${context}"
 Translation: "${sentenceTranslation}"
 
 What does "${text}" mean in ${targetLanguageName}? Return ONLY the meaning, no explanations.`;
-  } else if (context) {
-    prompt = `${sourceText} to ${targetLanguageName}. This word appears in context: "${context}"
+    } else if (context) {
+      prompt = `${sourceText} to ${targetLanguageName}. This word appears in context: "${context}"
 
 Word: ${text}
 
 Return 2-3 common meanings in ${targetLanguageName}, separated by commas. Example: "house, home, building". No explanations.`;
-  } else {
-    prompt = `${sourceText} to ${targetLanguageName}: ${text}
+    } else {
+      prompt = `${sourceText} to ${targetLanguageName}: ${text}
 
 Return 2-3 common meanings in ${targetLanguageName}, separated by commas. Example: "house, home, building". No explanations.`;
+    }
   }
 
   const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -150,15 +182,15 @@ Return 2-3 common meanings in ${targetLanguageName}, separated by commas. Exampl
       messages: [
         {
           role: 'system',
-          content: `You are a professional translation expert. Provide accurate and natural translations to ${targetLanguageName}.`,
+          content: systemPrompt,
         },
         {
           role: 'user',
           content: prompt,
         },
       ],
-      temperature: 0.3,
-      max_tokens: 60,
+      temperature: mode === 'sentence' ? 0.5 : 0.3, // Higher temp for more natural sentence translation
+      max_tokens: maxTokens,
     }),
   });
 
@@ -274,15 +306,58 @@ function withTimeout(promise, timeoutMs, serviceName) {
 }
 
 /**
- * Try all services in parallel and return the fastest successful result
+ * Translate a full sentence using OpenAI only (for natural, high-quality translation)
  */
-async function translateParallel(text, context, sourceLang, targetLang, sentenceTranslation = '') {
+async function translateSentenceWithOpenAI(text, sourceLang, targetLang) {
+  if (!OPENAI_API_KEY) {
+    throw new Error('OPENAI_API_KEY not configured');
+  }
+  
+  try {
+    const result = await withTimeout(
+      translateWithOpenAI(text, '', targetLang, sourceLang, '', 'sentence'),
+      8000, // 8s timeout for sentence (longer text)
+      'OpenAI-Sentence'
+    );
+    return { method: 'openai-sentence', translation: result };
+  } catch (error) {
+    console.error('OpenAI sentence translation failed:', error.message);
+    return null;
+  }
+}
+
+/**
+ * Try all services in parallel and return the fastest successful result
+ * @param {string} mode - 'word' (default) or 'sentence'
+ */
+async function translateParallel(text, context, sourceLang, targetLang, sentenceTranslation = '', mode = 'word') {
+  // SENTENCE MODE: Use OpenAI only for natural translation
+  if (mode === 'sentence') {
+    const result = await translateSentenceWithOpenAI(text, sourceLang, targetLang);
+    if (result && result.translation) {
+      return result;
+    }
+    // Fallback to Google if OpenAI fails
+    if (GOOGLE_TRANSLATE_API_KEY) {
+      try {
+        const googleResult = await withTimeout(translateWithGoogle(text, sourceLang, targetLang), 5000, 'Google');
+        if (googleResult) {
+          return { method: 'google-translate-fallback', translation: googleResult };
+        }
+      } catch (e) {
+        console.error('Google fallback failed:', e.message);
+      }
+    }
+    return null;
+  }
+  
+  // WORD MODE: Use parallel translation with all services
   const promises = [];
 
   // OpenAI with 4s timeout
   if (OPENAI_API_KEY) {
     promises.push(
-      withTimeout(translateWithOpenAI(text, context, targetLang, sourceLang, sentenceTranslation), 4000, 'OpenAI')
+      withTimeout(translateWithOpenAI(text, context, targetLang, sourceLang, sentenceTranslation, 'word'), 4000, 'OpenAI')
         .then(result => ({ method: 'openai-gpt4', translation: result, priority: 1 }))
         .catch(error => ({ error: error.message, method: 'openai-gpt4', priority: 1 }))
     );
@@ -339,16 +414,17 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { text, context = '', sourceLang = 'de', targetLang = 'vi', sentenceTranslation = '' } = req.body;
+    const { text, context = '', sourceLang = 'de', targetLang = 'vi', sentenceTranslation = '', mode = 'word' } = req.body;
 
     if (!text) {
       return res.status(400).json({ message: 'Text is required' });
     }
 
-    const cleanText = text.trim().toLowerCase();
+    // For sentence mode, preserve original case; for word mode, lowercase
+    const cleanText = mode === 'sentence' ? text.trim() : text.trim().toLowerCase();
     
-    // Try all services in parallel (with sentence translation for smart extraction)
-    const result = await translateParallel(cleanText, context, sourceLang, targetLang, sentenceTranslation);
+    // Try translation with specified mode
+    const result = await translateParallel(cleanText, context, sourceLang, targetLang, sentenceTranslation, mode);
     
     if (result) {
       console.log(`✅ ${result.method}: ${cleanText} → ${result.translation}`);
