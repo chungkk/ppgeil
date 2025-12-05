@@ -35,6 +35,7 @@ function LessonFormPage() {
   const [audioUrl, setAudioUrl] = useState('');
   const [youtubeUrl, setYoutubeUrl] = useState('');
   const [srtText, setSrtText] = useState('');
+  const [whisperV3Segments, setWhisperV3Segments] = useState(null); // Segments với wordTimings từ Whisper V3
   const [thumbnailFile, setThumbnailFile] = useState(null);
   const [thumbnailPreview, setThumbnailPreview] = useState(null);
   const [errors, setErrors] = useState({});
@@ -170,6 +171,7 @@ function LessonFormPage() {
 
       const data = await res.json();
       setSrtText(data.srt);
+      setWhisperV3Segments(null); // Clear vì không phải từ Whisper V3
       toast.success('SRT erfolgreich aus Audio generiert!');
     } catch (error) {
       console.error('Transcription error:', error);
@@ -204,6 +206,7 @@ function LessonFormPage() {
 
       const data = await res.json();
       setSrtText(data.srt);
+      setWhisperV3Segments(null); // Clear vì không phải từ Whisper V3
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
@@ -250,6 +253,7 @@ function LessonFormPage() {
 
       const data = await res.json();
       setSrtText(data.srt);
+      setWhisperV3Segments(null); // Clear vì không phải từ Whisper V3
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
@@ -296,6 +300,7 @@ function LessonFormPage() {
 
       const data = await res.json();
       setSrtText(data.srt);
+      setWhisperV3Segments(null); // Clear vì không phải từ Whisper V3
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
@@ -342,6 +347,7 @@ function LessonFormPage() {
 
       const data = await res.json();
       setSrtText(data.srt);
+      setWhisperV3Segments(null); // Clear vì không phải từ Whisper V3
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
@@ -388,6 +394,8 @@ function LessonFormPage() {
 
       const data = await res.json();
       setSrtText(data.srt);
+      // Lưu segments với wordTimings để dùng khi save lesson
+      setWhisperV3Segments(data.segments || null);
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
@@ -492,14 +500,18 @@ function LessonFormPage() {
           }
         }
 
-        // Convert SRT to JSON
+        // Convert SRT to JSON (gửi cả segments nếu có từ Whisper V3)
         const srtRes = await fetch('/api/convert-srt', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           },
-          body: JSON.stringify({ srtText, lessonId: formData.id })
+          body: JSON.stringify({ 
+            srtText, 
+            lessonId: formData.id,
+            segments: whisperV3Segments // Segments với wordTimings từ Whisper V3
+          })
         });
 
         if (!srtRes.ok) throw new Error('Convert SRT failed');
@@ -531,7 +543,11 @@ function LessonFormPage() {
               'Content-Type': 'application/json',
               'Authorization': `Bearer ${localStorage.getItem('token')}`
             },
-            body: JSON.stringify({ srtText, lessonId: formData.id })
+            body: JSON.stringify({ 
+              srtText, 
+              lessonId: formData.id,
+              segments: whisperV3Segments // Segments với wordTimings từ Whisper V3
+            })
           });
           if (!srtRes.ok) throw new Error('Convert SRT failed');
         }

@@ -177,6 +177,21 @@ export default async function handler(req, res) {
       segmentIndex: findSegmentIndex(segments, index)
     }));
 
+    // Step 5: Gắn wordTimings vào từng segment
+    const segmentsWithWordTimings = segments.map((seg, idx) => {
+      // Lọc wordTimings thuộc segment này
+      const segmentWords = wordTimings.filter(w => w.segmentIndex === idx);
+      return {
+        ...seg,
+        index: idx,
+        wordTimings: segmentWords.map(w => ({
+          word: w.word,
+          start: w.start,
+          end: w.end
+        }))
+      };
+    });
+
     // Convert to SRT
     const srt = convertToSRT(segments);
     const itemCount = segments.length;
@@ -185,10 +200,7 @@ export default async function handler(req, res) {
       success: true,
       srt: srt,
       wordTimings: wordTimings,
-      segments: segments.map((seg, idx) => ({
-        ...seg,
-        index: idx
-      })),
+      segments: segmentsWithWordTimings,
       itemCount: itemCount,
       videoDuration: videoDuration,
       videoTitle: videoTitle,

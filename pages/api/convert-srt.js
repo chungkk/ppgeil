@@ -167,13 +167,31 @@ export default async function handler(req, res) {
       return res.status(401).json({ message: 'Không có quyền truy cập' });
     }
 
-    const { srtText, lessonId } = req.body;
+    const { srtText, lessonId, segments: whisperSegments } = req.body;
 
-    if (!srtText || !lessonId) {
-      return res.status(400).json({ message: 'Thiếu dữ liệu SRT text hoặc lessonId' });
+    if (!lessonId) {
+      return res.status(400).json({ message: 'Thiếu lessonId' });
     }
 
-    let jsonData = convertSRTtoJSON(srtText);
+    if (!srtText && !whisperSegments) {
+      return res.status(400).json({ message: 'Thiếu dữ liệu SRT text hoặc segments' });
+    }
+
+    let jsonData;
+
+    // Ưu tiên dùng segments từ Whisper V3 (có wordTimings)
+    if (whisperSegments && whisperSegments.length > 0) {
+      console.log(`Using Whisper V3 segments with wordTimings: ${whisperSegments.length} segments`);
+      jsonData = whisperSegments.map(seg => ({
+        text: seg.text,
+        start: seg.start,
+        end: seg.end,
+        wordTimings: seg.wordTimings || [] // Giữ nguyên wordTimings nếu có
+      }));
+    } else {
+      // Fallback: parse từ SRT text
+      jsonData = convertSRTtoJSON(srtText);
+    }
 
     if (jsonData.length === 0) {
       return res.status(400).json({ message: 'Không thể parse SRT text. Vui lòng kiểm tra định dạng.' });
