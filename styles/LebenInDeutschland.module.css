@@ -932,16 +932,43 @@
   color: var(--text-primary);
 }
 
-/* Mobile Responsive */
+/* ============================================
+   MOBILE RESPONSIVE - TABLET (max-width: 768px)
+   ============================================ */
 @media (max-width: 768px) {
   .container {
-    padding: 72px 12px 24px;
+    padding: 72px 16px 24px;
+  }
+
+  .header {
+    margin-bottom: 24px;
   }
 
   .title {
     font-size: 24px;
+    flex-direction: column;
+    gap: 8px;
   }
 
+  .flag {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  /* Section */
+  .section {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+  }
+
+  /* Bundesland Grid */
   .bundeslandGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
@@ -951,35 +978,855 @@
     padding: 12px;
   }
 
+  .bundeslandSelect {
+    font-size: 15px;
+    padding: 12px 14px;
+    padding-right: 40px;
+  }
+
+  /* Info Card */
+  .infoCard {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .infoCard h3 {
+    font-size: 16px;
+  }
+
+  .infoCard li {
+    font-size: 14px;
+  }
+
+  /* Progress Card */
+  .progressCard {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .progressStats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .statValue {
+    font-size: 22px;
+  }
+
+  .statLabel {
+    font-size: 11px;
+  }
+
+  /* Actions */
   .actions {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .actionBtn {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .actionIcon {
+    font-size: 28px;
+  }
+
+  .actionText strong {
+    font-size: 16px;
+  }
+
+  .actionText small {
+    font-size: 12px;
+  }
+
+  /* Filter Bar */
+  .filterBar {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .filterBtn {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 16px;
+  }
+
+  /* Questions List */
+  .questionsList {
+    gap: 12px;
+  }
+
+  .questionCard {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .questionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .questionNumber {
+    font-size: 13px;
+  }
+
+  .questionText {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .options {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .option {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .optionLetter {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .optionText {
+    font-size: 13px;
+  }
+
+  /* Pagination */
+  .pagination {
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .pageBtn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .pageNum {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  /* Test Ready Card */
+  .testReadyCard {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .testReadyCard h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
   .testInfo {
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 20px;
   }
 
-  .testReadyCard {
-    padding: 24px;
+  .testInfoItem {
+    font-size: 14px;
+    justify-content: center;
   }
 
-  .progressStats {
-    grid-template-columns: 1fr;
-    gap: 12px;
+  .testInfoIcon {
+    font-size: 20px;
+  }
+
+  .startTestBtn {
+    padding: 14px 32px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /* Test Header */
+  .testHeader {
+    padding: 10px 12px;
+    top: 56px;
+  }
+
+  .testProgress {
+    font-size: 14px;
+  }
+
+  .timer {
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+
+  /* Question Navigator */
+  .questionNav {
+    margin: 70px 0 20px;
+    gap: 4px;
+  }
+
+  .navDot {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+    border-radius: 4px;
+  }
+
+  /* Test Question */
+  .testQuestion {
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+
+  .testOptions {
+    gap: 8px;
+  }
+
+  .testOption {
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  /* Test Navigation */
+  .testNavigation {
+    gap: 10px;
+  }
+
+  .navBtn, .finishBtn {
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  /* Result Card */
+  .resultCard {
+    padding: 32px 20px;
+    border-radius: 16px;
+    margin-top: 70px;
+  }
+
+  .resultIcon {
+    font-size: 48px;
+  }
+
+  .resultTitle {
+    font-size: 24px;
   }
 
   .resultScore {
-    flex-direction: column;
-    gap: 0;
+    flex-direction: row;
+    gap: 4px;
   }
 
   .scoreValue {
-    font-size: 56px;
+    font-size: 48px;
+  }
+
+  .scoreDivider, .scoreTotal {
+    font-size: 28px;
+  }
+
+  .resultText {
+    font-size: 14px;
+    margin-bottom: 24px;
   }
 
   .resultActions {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .reviewBtn, .retryBtn, .backBtn {
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Translation Toggle */
+  .translationToggle {
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .translatedText {
+    font-size: 13px;
+  }
+
+  .optionTranslated {
+    font-size: 12px;
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVE - SMALL PHONES (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .container {
+    padding: 64px 12px 20px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .backLink {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .flag {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  /* Section */
+  .section {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .sectionTitle {
+    font-size: 16px;
+  }
+
+  .sectionDesc {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  /* Bundesland Select */
+  .bundeslandSelect {
+    font-size: 14px;
+    padding: 12px;
+    padding-right: 36px;
+    border-radius: 10px;
+  }
+
+  .selectedInfo {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  /* Info Card */
+  .infoCard {
+    padding: 16px;
+  }
+
+  .infoCard h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .infoCard li {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  /* Progress Card */
+  .progressCard {
+    padding: 16px;
+  }
+
+  .progressCard h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .progressStats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .stat {
+    padding: 8px 4px;
+  }
+
+  .statValue {
+    font-size: 18px;
+  }
+
+  .statLabel {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  /* Actions */
+  .actionBtn {
+    padding: 14px 12px;
+    gap: 12px;
+  }
+
+  .actionIcon {
+    font-size: 24px;
+  }
+
+  .actionText strong {
+    font-size: 15px;
+  }
+
+  .actionText small {
+    font-size: 11px;
+  }
+
+  .hint, .loginHint {
+    font-size: 13px;
+  }
+
+  /* Filter Bar */
+  .filterBar {
+    gap: 4px;
+    margin-bottom: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filterBtn {
+    padding: 6px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Questions List */
+  .questionsList {
+    gap: 10px;
+  }
+
+  .questionCard {
+    padding: 14px;
+  }
+
+  .questionNumber {
+    font-size: 12px;
+  }
+
+  .stateBadge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  .completedBadge {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .questionText {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .questionImage img {
+    max-height: 150px;
+  }
+
+  .options {
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .option {
+    padding: 10px 8px;
+    gap: 8px;
+    border-radius: 6px;
+  }
+
+  .optionLetter {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .optionText {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .optionContent {
+    gap: 3px;
+  }
+
+  .optionTranslated {
+    font-size: 11px;
+  }
+
+  .showAnswerBtn {
+    padding: 10px 16px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .resultMessage {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  /* Pagination */
+  .pagination {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 20px;
+  }
+
+  .pageBtn {
+    padding: 8px 10px;
+    font-size: 12px;
+    flex: 1;
+    min-width: auto;
+  }
+
+  .pageNumbers {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .pageNum {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .pageInfo {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  /* Test Ready Card */
+  .testReadyCard {
+    padding: 20px 16px;
+  }
+
+  .testReadyCard h2 {
+    font-size: 18px;
+  }
+
+  .testInfo {
+    gap: 10px;
+  }
+
+  .testInfoItem {
+    font-size: 13px;
+  }
+
+  .testInfoIcon {
+    font-size: 18px;
+  }
+
+  .stateInfo, .noStateWarning {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .startTestBtn {
+    padding: 14px 24px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  /* Test Header */
+  .testHeader {
+    top: 50px;
+    padding: 8px 12px;
+  }
+
+  .testProgress {
+    font-size: 13px;
+  }
+
+  .timer {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  /* Question Navigator */
+  .questionNav {
+    margin: 60px 0 16px;
+    gap: 3px;
+    padding: 0 4px;
+  }
+
+  .navDot {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    border-radius: 4px;
+  }
+
+  /* Test Question */
+  .testQuestion {
+    padding: 14px;
+  }
+
+  .testOptions {
+    gap: 6px;
+  }
+
+  .testOption {
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 8px;
+    border-width: 1px;
+    gap: 8px;
+  }
+
+  .testOption .optionLetter {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  /* Test Navigation */
+  .testNavigation {
+    gap: 8px;
+  }
+
+  .navBtn, .finishBtn {
+    padding: 10px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .answeredCount {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  /* Result Card */
+  .resultCard {
+    padding: 24px 16px;
+    margin-top: 60px;
+  }
+
+  .resultIcon {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  .resultTitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .scoreValue {
+    font-size: 40px;
+  }
+
+  .scoreDivider, .scoreTotal {
+    font-size: 24px;
+  }
+
+  .resultText {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .reviewBtn, .retryBtn, .backBtn {
+    padding: 10px 16px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  /* Translation Toggle */
+  .translationToggle {
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+
+  .translationToggle label {
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .translationToggle input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .translatedText {
+    font-size: 12px;
+    margin: 4px 0 10px;
+  }
+}
+
+/* ============================================
+   EXTRA SMALL PHONES (max-width: 360px)
+   ============================================ */
+@media (max-width: 360px) {
+  .container {
+    padding: 60px 10px 16px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .flag {
+    font-size: 24px;
+  }
+
+  .section, .infoCard, .progressCard {
+    padding: 14px;
+  }
+
+  .progressStats {
+    gap: 4px;
+  }
+
+  .statValue {
+    font-size: 16px;
+  }
+
+  .statLabel {
+    font-size: 9px;
+  }
+
+  .actionBtn {
+    padding: 12px 10px;
+  }
+
+  .actionIcon {
+    font-size: 22px;
+  }
+
+  .actionText strong {
+    font-size: 14px;
+  }
+
+  .actionText small {
+    font-size: 10px;
+  }
+
+  .questionCard {
+    padding: 12px;
+  }
+
+  .questionText {
+    font-size: 13px;
+  }
+
+  .option {
+    padding: 8px 6px;
+  }
+
+  .optionLetter {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .optionText {
+    font-size: 11px;
+  }
+
+  .navDot {
+    width: 22px;
+    height: 22px;
+    font-size: 9px;
+  }
+
+  .testOption {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .scoreValue {
+    font-size: 36px;
+  }
+
+  .scoreDivider, .scoreTotal {
+    font-size: 20px;
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE ON MOBILE
+   ============================================ */
+@media (max-height: 500px) and (orientation: landscape) {
+  .container {
+    padding-top: 56px;
+  }
+
+  .testHeader {
+    top: 48px;
+    padding: 6px 12px;
+  }
+
+  .questionNav {
+    margin-top: 50px;
+  }
+
+  .resultCard {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .resultIcon {
+    font-size: 32px;
+  }
+
+  .scoreValue {
+    font-size: 36px;
+  }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ============================================ */
+@media (hover: none) and (pointer: coarse) {
+  .actionBtn:active {
+    transform: scale(0.98);
+  }
+
+  .option.clickable:active,
+  .testOption:active {
+    transform: scale(0.99);
+  }
+
+  .filterBtn:active {
+    transform: scale(0.95);
+  }
+
+  .pageNum:active,
+  .navDot:active {
+    transform: scale(0.9);
+  }
+
+  .startTestBtn:active,
+  .finishBtn:active {
+    transform: scale(0.98);
+  }
+}
+
+/* ============================================
+   SAFE AREA (NOTCH) SUPPORT
+   ============================================ */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .container {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+
+  .testHeader {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
   }
 }
 
