@@ -156,8 +156,8 @@ const Header = () => {
   const navLinks = [
     { href: '/', label: t('header.nav.topics') },
     { href: '/vocabulary', label: t('header.nav.vocabulary') },
-    { href: '/leaderboard', label: t('header.nav.leaderboard') },
     { href: '/leben-in-deutschland', label: '🇩🇪 LiD Test' },
+    { href: '/leaderboard', label: t('header.nav.leaderboard') },
   ];
 
   const isActive = (path) => {
@@ -337,6 +337,7 @@ const Header = () => {
                 )}
               </div>
 
+              {/* Tạm thời ẩn nút thông báo
               <div className={styles.notificationContainer} ref={notificationMenuRef}>
                 <button
                   className={styles.notificationBtn}
@@ -361,6 +362,7 @@ const Header = () => {
                   />
                 )}
               </div>
+              */}
 
               <div className={styles.userMenuContainer} ref={userMenuRef}>
                 <button
