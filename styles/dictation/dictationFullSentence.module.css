@@ -506,26 +506,30 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .fullSentenceMode {
-    padding: 6px 6px 0 6px;
-    gap: 8px;
+    padding: 8px;
+    gap: 12px;
   }
 
   .fullSentenceDisplay {
     padding: 8px;
-    font-size: 14px;
-    min-height: 140px;
+    font-size: 15px;
+    min-height: auto;
     max-height: none;
     flex: 1;
     /* Remove border on mobile to reduce visual clutter */
     background: transparent;
     border: none;
+    align-items: center;
   }
 
   .hintSentenceText {
     /* Remove border on mobile - keep only word boxes */
     background: transparent;
     border: none;
-    padding: 4px;
+    padding: 8px 4px;
+    gap: 6px;
+    row-gap: 10px;
+    align-content: center;
   }
 
   .fullSentenceInput {
@@ -566,32 +570,57 @@
   }
 
   .hintWordBox {
-    min-width: 30px;
-    height: 26px;
-    padding: 4px 8px;
-    font-size: 14px;
-    border-radius: 6px;
-  }
-
-  .hintPunctuation {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hintWordBox {
-    min-width: 30px;
-    height: 26px;
-    padding: 3px 6px;
-    font-size: 11px;
+    min-width: 40px;
+    height: 32px;
+    padding: 6px 10px;
+    font-size: 15px;
+    border-radius: 8px;
   }
 
   .hintWordRevealed,
   .hintWordCorrect,
   .hintWordIncorrect,
   .hintWordPartial {
-    min-width: 30px;
-    height: 26px;
+    min-width: 40px;
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .hintPunctuation {
+    font-size: 15px;
+  }
+
+  .hintWordContainer {
+    min-height: 36px;
+    gap: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hintSentenceText {
+    gap: 5px;
+    row-gap: 8px;
+  }
+
+  .hintWordBox {
+    min-width: 34px;
+    height: 28px;
+    padding: 4px 7px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  .hintWordRevealed,
+  .hintWordCorrect,
+  .hintWordIncorrect,
+  .hintWordPartial {
+    min-width: 34px;
+    height: 28px;
+    font-size: 13px;
+  }
+
+  .hintWordContainer {
+    min-height: 32px;
   }
 
   .fullSentenceInput {

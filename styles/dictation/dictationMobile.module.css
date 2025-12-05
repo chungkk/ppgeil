@@ -225,12 +225,24 @@
   .dictationSlide {
     opacity: 0.5;
     transform: scale(0.94) translateZ(0);
+    padding: 16px 12px;
+    border-radius: 20px;
+    gap: 12px;
   }
 
   .dictationSlideActive {
     opacity: 1;
     transform: scale(1) translateZ(0);
     border-color: var(--accent-blue);
+  }
+
+}
+
+@media (max-width: 480px) {
+  .dictationSlide {
+    padding: 14px 10px;
+    border-radius: 16px;
+    gap: 10px;
   }
 }
 
