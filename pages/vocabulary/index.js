@@ -10,6 +10,7 @@ import styles from '../../styles/VocabHome.module.css';
 import goetheA1Vocabulary from '../../lib/data/goetheA1Vocabulary';
 import goetheA2Vocabulary from '../../lib/data/goetheA2Vocabulary';
 import goetheB1Vocabulary from '../../lib/data/goetheB1Vocabulary';
+import { getTotalWordCount as getTopicWordCount, getAllTopics } from '../../lib/data/goetheTopicVocabulary';
 
 const VocabularyHomePage = () => {
   const { t } = useTranslation('common');
@@ -118,18 +119,18 @@ const VocabularyHomePage = () => {
         <div className={styles.content}>
           {/* Category Cards */}
           <div className={styles.categorySection}>
-            <div className={styles.categoryCard + ' ' + styles.disabled}>
+            <Link href="/vocabulary/topics" className={styles.categoryCard + ' ' + styles.active}>
               <div className={styles.categoryIcon}>📂</div>
               <div className={styles.categoryInfo}>
                 <h3 className={styles.categoryTitle}>
                   {isEn ? 'Learn by Topic' : 'Học theo chủ đề'}
                 </h3>
                 <p className={styles.categoryDesc}>
-                  {isEn ? 'Coming soon...' : 'Sắp ra mắt...'}
+                  {getAllTopics().length} {isEn ? 'topics available' : 'chủ đề có sẵn'}
                 </p>
               </div>
-              <span className={styles.badge}>{isEn ? 'Coming Soon' : 'Sắp có'}</span>
-            </div>
+              <span className={styles.wordsBadge}>{getTopicWordCount()} {isEn ? 'words' : 'từ'}</span>
+            </Link>
 
             <div className={styles.categoryCard + ' ' + styles.active}>
               <div className={styles.categoryIcon}>📊</div>
