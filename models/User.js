@@ -108,6 +108,18 @@ const UserSchema = new mongoose.Schema({
      type: String,
      enum: ['bronze', 'silver', 'gold', 'platinum', 'diamond'],
      default: 'bronze'
+   },
+   // Leben in Deutschland
+   bundesland: {
+     type: String,
+     enum: ['bw', 'by', 'be', 'bb', 'hb', 'hh', 'he', 'mv', 'ni', 'nw', 'rp', 'sl', 'sn', 'st', 'sh', 'th', ''],
+     default: ''
+   },
+   lidProgress: {
+     completedQuestions: { type: [Number], default: [] },
+     testsTaken: { type: Number, default: 0 },
+     bestScore: { type: Number, default: 0 },
+     lastTestDate: { type: Date, default: null }
    }
 });
 

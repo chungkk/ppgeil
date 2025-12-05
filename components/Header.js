@@ -156,7 +156,7 @@ const Header = () => {
   const navLinks = [
     { href: '/', label: t('header.nav.topics') },
     { href: '/leaderboard', label: t('header.nav.leaderboard') },
-    // { href: '/city-builder', label: '🏙️ Thành phố' },
+    { href: '/leben-in-deutschland', label: '🇩🇪 LiD Test' },
   ];
 
   const isActive = (path) => {
