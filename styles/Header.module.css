@@ -1063,8 +1063,8 @@
   }
 
   .themeToggle {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     font-size: 16px;
   }
 
@@ -1072,39 +1072,40 @@
     padding: 6px 10px;
     font-size: 13px;
     gap: 4px;
-    height: 34px;
+    height: 36px;
   }
 
-  /* Uniform height for badges on mobile */
+  /* Uniform 36px height for all elements on tablet/mobile */
   .pointsBadge {
     padding: 0 10px;
     font-size: 13px;
     gap: 4px;
-    height: 34px;
-    min-width: 54px;
+    height: 36px;
+    min-width: 56px;
     justify-content: center;
+    border-radius: 18px;
   }
 
   .pointsIcon {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .pointsValue {
     font-size: 13px;
   }
 
-  /* Mobile streak badge - same height as points */
   .streakBadge {
     padding: 0 10px;
     font-size: 13px;
     gap: 4px;
-    height: 34px;
-    min-width: 54px;
+    height: 36px;
+    min-width: 56px;
     justify-content: center;
+    border-radius: 18px;
   }
 
   .streakIcon {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .streakValue {
@@ -1112,26 +1113,28 @@
   }
 
   .notificationBtn {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     font-size: 18px;
   }
 
   .userAvatar {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
   }
 
   .unlockBtn {
     padding: 6px 12px;
     font-size: 13px;
+    height: 36px;
   }
 
   .loginBtn,
   .signupBtn {
     padding: 6px 14px;
     font-size: 13px;
-    height: 34px;
+    height: 36px;
+    border-radius: 10px;
   }
 
   .userDropdown {
@@ -1182,6 +1185,7 @@
     display: block;
     padding: 6px 14px;
     font-size: 13px;
+    height: 36px;
   }
 }
 
@@ -1232,36 +1236,40 @@
     display: block;
   }
 
-  /* Uniform 30px height for all icons on small mobile */
+  .mobileMenuBtn {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Uniform 32px height for all elements on small mobile */
   .pointsBadge {
     padding: 0 8px;
     font-size: 12px;
     gap: 3px;
-    border-radius: 15px;
-    height: 30px;
-    min-width: 48px;
+    border-radius: 16px;
+    height: 32px;
+    min-width: 50px;
   }
 
   .pointsIcon {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .pointsValue {
     font-size: 12px;
   }
 
-  /* Small mobile streak badge - same height as points */
   .streakBadge {
     padding: 0 8px;
     font-size: 12px;
     gap: 3px;
-    height: 30px;
-    border-radius: 15px;
-    min-width: 48px;
+    height: 32px;
+    border-radius: 16px;
+    min-width: 50px;
   }
 
   .streakIcon {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .streakValue {
@@ -1269,8 +1277,8 @@
   }
 
   .notificationBtn {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     font-size: 16px;
   }
 
@@ -1283,9 +1291,29 @@
   }
 
   .userAvatar {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-width: 1.5px;
+  }
+
+  .themeToggle {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .loginBtn,
+  .signupBtn {
+    padding: 6px 12px;
+    font-size: 12px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .unlockBtn {
+    padding: 6px 10px;
+    font-size: 12px;
+    height: 32px;
   }
 
   .userDropdown {
@@ -1335,6 +1363,7 @@
   .authBtnMobile {
     padding: 6px 12px;
     font-size: 12px;
+    height: 32px;
   }
 }
 
@@ -1364,17 +1393,22 @@
     padding-right: 4px;
   }
 
-  /* Uniform 28px height for all icons on extra small mobile */
+  .mobileMenuBtn {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Uniform 30px height for all elements on extra small mobile */
   .pointsBadge {
     padding: 0 6px;
     font-size: 11px;
-    height: 28px;
-    min-width: 44px;
-    border-radius: 14px;
+    height: 30px;
+    min-width: 46px;
+    border-radius: 15px;
   }
 
   .pointsIcon {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .pointsValue {
@@ -1384,13 +1418,13 @@
   .streakBadge {
     padding: 0 6px;
     font-size: 11px;
-    height: 28px;
-    min-width: 44px;
-    border-radius: 14px;
+    height: 30px;
+    min-width: 46px;
+    border-radius: 15px;
   }
 
   .streakIcon {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .streakValue {
@@ -1398,14 +1432,34 @@
   }
 
   .notificationBtn {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     font-size: 14px;
   }
 
   .userAvatar {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .themeToggle {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .loginBtn,
+  .signupBtn {
+    padding: 5px 10px;
+    font-size: 11px;
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .unlockBtn {
+    padding: 5px 8px;
+    font-size: 11px;
+    height: 30px;
   }
 
   .userDropdownHeader {
@@ -1445,5 +1499,6 @@
   .authBtnMobile {
     padding: 5px 10px;
     font-size: 11px;
+    height: 30px;
   }
 }

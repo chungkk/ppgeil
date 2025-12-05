@@ -217,6 +217,7 @@ const Header = () => {
               key={link.href}
               href={link.href}
               className={`${styles.navLink} ${isActive(link.href) ? styles.active : ''}`}
+              onClick={() => dispatch({ type: 'SET_MOBILE_MENU', payload: false })}
             >
               {link.label}
             </Link>
@@ -224,6 +225,20 @@ const Header = () => {
         </nav>
 
         <div className={styles.rightSection}>
+          {/* Mobile navigation menu button */}
+          <button
+            className={styles.mobileMenuBtn}
+            onClick={() => dispatch({ type: 'SET_MOBILE_MENU', payload: !state.mobileMenuOpen })}
+            aria-label="Menu"
+            aria-expanded={state.mobileMenuOpen}
+          >
+            <div className={`${styles.hamburgerIcon} ${state.mobileMenuOpen ? styles.open : ''}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+
           {/* Desktop only: Theme toggle - Temporarily hidden */}
           {/* <button
             className={styles.themeToggleDesktop}
