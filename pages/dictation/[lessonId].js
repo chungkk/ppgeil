@@ -50,6 +50,7 @@ import {
 import usePointsAnimation from '../../lib/hooks/usePointsAnimation';
 import useLeaderboard from '../../lib/hooks/useLeaderboard';
 import useSuggestionPopup from '../../lib/hooks/useSuggestionPopup';
+import useWindowGlobals from '../../lib/hooks/useWindowGlobals';
 import styles from '../../styles/dictationPage.module.css';
 
 const DEBUG_TIMER = false; // Set to true to enable timer logs
@@ -393,7 +394,6 @@ const DictationPageContent = () => {
 
       // If element doesn't exist yet, wait for next frame
       if (!playerElement) {
-        console.log('YouTube player element not ready, retrying...');
         requestAnimationFrame(initializePlayer);
         return;
       }
@@ -403,8 +403,6 @@ const DictationPageContent = () => {
         youtubePlayerRef.current.destroy();
         youtubePlayerRef.current = null;
       }
-
-      console.log('Initializing YouTube player...');
 
       // Create the player
       youtubePlayerRef.current = new window.YT.Player('youtube-player', {
@@ -585,7 +583,6 @@ const DictationPageContent = () => {
 
     // Jump to first incomplete sentence if found and different from current
     if (firstIncompleteIndex !== -1 && firstIncompleteIndex !== currentSentenceIndex) {
-      console.log(`🚀 Auto-jumping to first incomplete sentence: ${firstIncompleteIndex}`);
       setCurrentSentenceIndex(firstIncompleteIndex);
       
       // Seek to the start of that sentence
@@ -996,7 +993,6 @@ const DictationPageContent = () => {
     
     // If current sentence not in visible indices, render all (fallback)
     if (currentSlideIndex === -1) {
-      console.log('⚠️ Current sentence not in visible indices, rendering all slides');
       return { start: 0, end: mobileVisibleIndices.length };
     }
 
@@ -1289,14 +1285,6 @@ const DictationPageContent = () => {
           : (item.translationVi || item.translation)
       }));
       
-      console.log('📝 Transcript loaded:', {
-        path: jsonPath,
-        totalSentences: transformedData.length,
-        targetLang,
-        firstSentence: transformedData[0]?.text?.substring(0, 50) + '...',
-        lastSentence: transformedData[transformedData.length - 1]?.text?.substring(0, 50) + '...'
-      });
-      
       setTranscriptData(transformedData);
     } catch (error) {
       if (error.name === 'AbortError') {
@@ -1533,7 +1521,6 @@ const DictationPageContent = () => {
         
         // Skip words already processed via hint popup (either correct or incorrect)
         if (wordPointsProcessed[sentenceIndex]?.[wordIdx]) {
-          console.log(`⏭️ Skipping word ${wordIdx} - already processed via popup`);
           return;
         }
         
@@ -1548,7 +1535,6 @@ const DictationPageContent = () => {
       
       // If all words were already processed, skip this sentence
       if (unprocessedWordIndices.length === 0) {
-        console.log(`⏭️ All words in sentence ${sentenceIndex} already processed, skipping`);
         return;
       }
       
@@ -1883,8 +1869,6 @@ const DictationPageContent = () => {
       
       updatedWords[currentSentenceIndex][wordIndex] = correctWord;
       
-      console.log(`Word saved: sentence ${currentSentenceIndex}, word ${wordIndex}: ${correctWord}`, updatedWords);
-      
       // Save to database with updated data
       saveProgress(completedSentences, updatedWords);
       
@@ -1933,25 +1917,15 @@ const DictationPageContent = () => {
         completedWordsCount = Object.keys(completedWords[currentSentenceIndex] || {}).length;
       }
 
-      console.log(`Checking sentence ${currentSentenceIndex}:`, {
-        totalValidWords,
-        wordsToHideCount,
-        completedWordsCount,
-        completedWords: completedWords[currentSentenceIndex],
-        fromDOM: sentenceContainer ? 'yes' : 'no (fallback to state)'
-      });
-
       if (completedWordsCount >= wordsToHideCount && wordsToHideCount > 0) {
         // All words are correct, mark sentence as completed
         const updatedCompleted = [...completedSentences, currentSentenceIndex];
         setCompletedSentences(updatedCompleted);
         saveProgress(updatedCompleted, completedWords);
-        console.log(`✅ Sentence ${currentSentenceIndex} completed!`);
 
         // Check if all sentences are completed
         setTimeout(() => {
           if (updatedCompleted.length === transcriptData.length) {
-            console.log('🎉 All sentences completed!');
             
             // Haptic feedback for lesson completion
             hapticEvents.lessonComplete();
@@ -1972,13 +1946,9 @@ const DictationPageContent = () => {
     
     // Update answer streak based on correct/incorrect answer
     if (pointsChange > 0) {
-      const { multiplier } = await incrementStreak();
-      console.log(`🔥 Answer streak incremented, multiplier: x${multiplier}`);
+      await incrementStreak();
     } else if (pointsChange < 0) {
-      const previousStreak = await resetStreak();
-      if (previousStreak > 0) {
-        console.log(`💔 Answer streak reset (was: ${previousStreak})`);
-      }
+      await resetStreak();
     }
     
     // Use hook's updatePoints for API call and animation
@@ -2063,23 +2033,9 @@ const DictationPageContent = () => {
     } else {
       updateInputBackground(input, sanitizedCorrectWord);
 
-      console.log('🔍 Word incorrect:', {
-        input: sanitizedInputValue,
-        correct: sanitizedCorrectWord,
-        inputLength: sanitizedInputValue.length,
-        correctLength: sanitizedCorrectWord.length,
-        wordIndex,
-        alreadyProcessed: wordPointsProcessed[currentSentenceIndex]?.[wordIndex]
-      });
-
       // Deduct points for incorrect attempt (-0.5 points, only once per word)
       if (sanitizedInputValue.length === sanitizedCorrectWord.length) {
-        console.log('✓ Length matches! Checking if word already processed...');
-        // Only deduct when user has typed the full word length
-        const wordKey = `${currentSentenceIndex}-${wordIndex}`;
         if (!wordPointsProcessed[currentSentenceIndex]?.[wordIndex]) {
-          console.log('✓ Word not yet processed! Proceeding with penalty and streak reset...');
-          
           // Haptic feedback for incorrect word
           hapticEvents.wordIncorrect();
           
@@ -2093,13 +2049,8 @@ const DictationPageContent = () => {
           }));
 
           // Reset consecutive sentence counter when user makes a mistake
-          console.log('❌ Mistake made! Resetting consecutive counter from', consecutiveSentences, 'to 0');
           setConsecutiveSentences(0);
-        } else {
-          console.log('⚠️ Word already processed, skipping penalty and streak reset');
         }
-      } else {
-        console.log('⚠️ Length mismatch, waiting for full word length');
       }
     }
   }, [saveWord, updateInputBackground, checkSentenceCompletion, saveWordCompletion, currentSentenceIndex, wordPointsProcessed, updatePoints, consecutiveSentences]);
@@ -2530,11 +2481,7 @@ const DictationPageContent = () => {
         const revealedCount = Object.keys(newRevealedWords).filter(k => newRevealedWords[k]).length;
         const totalWordsToReveal = validWordIndices.length; // 100% hide = all words
         
-        console.log(`📝 Full-sentence check: ${revealedCount}/${totalWordsToReveal} words revealed`);
-        
         if (revealedCount >= totalWordsToReveal && !completedSentences.includes(currentSentenceIndex)) {
-          console.log(`✅ All words revealed! Marking sentence ${currentSentenceIndex} as completed`);
-          
           // Haptic feedback for success
           hapticEvents.wordCorrect();
           
@@ -2558,7 +2505,6 @@ const DictationPageContent = () => {
           
           // Check if all sentences completed
           if (updatedCompleted.length === transcriptData.length) {
-            console.log('🎉 All sentences completed!');
             hapticEvents.lessonComplete();
             toast.success(t('lesson.completion.allCompleted'));
           }
@@ -2586,7 +2532,6 @@ const DictationPageContent = () => {
     updatePoints(-0.5, `Wrong suggestion selected: ${selectedWord}, correct: ${correctWord}`);
 
     // Reset consecutive sentence counter when wrong word is selected
-    console.log('❌ Wrong word selected from suggestion! Resetting consecutive counter to 0');
     setConsecutiveSentences(0);
   }, [showPointsAnimation, updatePoints]);
 
@@ -2741,14 +2686,6 @@ const DictationPageContent = () => {
 
   // Initialize dictation for current sentence
   useEffect(() => {
-    console.log('🔍 Dictation render check:', {
-      transcriptDataLength: transcriptData.length,
-      currentSentenceIndex,
-      hasSentence: !!transcriptData[currentSentenceIndex],
-      progressLoaded,
-      sentenceText: transcriptData[currentSentenceIndex]?.text?.substring(0, 50)
-    });
-
     // Render dictation content if transcript is loaded (even if progress is still loading)
     if (transcriptData.length > 0 && transcriptData[currentSentenceIndex]) {
       const text = transcriptData[currentSentenceIndex].text;
@@ -2761,21 +2698,10 @@ const DictationPageContent = () => {
         lastRenderedStateRef.current.isCompleted === isCompleted &&
         progressLoaded
       ) {
-        console.log('⏭️ Skipping render - same sentence with same completion status');
         return;
       }
 
-      console.log('✅ Rendering sentence', currentSentenceIndex, ':', {
-        isCompleted,
-        sentenceWordsCompleted,
-        allCompletedWords: completedWords,
-        hidePercentage,
-        textLength: text.length,
-        progressLoaded
-      });
-
       const processed = processLevelUp(text, isCompleted, sentenceWordsCompleted, hidePercentage);
-      console.log('📝 Processed HTML length:', processed.length);
       setProcessedText(processed);
       
       // Mark this state as rendered
@@ -2803,8 +2729,6 @@ const DictationPageContent = () => {
           } else {
             dictationArea.classList.add('very-long-sentence');
           }
-          
-          console.log(`Sentence has ${wordCount} words, applied class`);
           
           // Set word-length CSS variable for each input based on actual word length
           const inputs = dictationArea.querySelectorAll('.word-input');
@@ -2886,13 +2810,6 @@ const DictationPageContent = () => {
           break;
         }
       }
-      
-      console.log('🎯 Jump Logic Debug:', {
-        totalSentences: transcriptData.length,
-        completedCount: completedSentences.length,
-        completedSentences: completedSentences,
-        firstIncompleteSentence: firstIncompleteSentence
-      });
       
       // On mobile: set flag to prevent scroll handler from overriding our jump
       const isMobileView = typeof window !== 'undefined' && window.innerWidth <= 768;
@@ -3199,7 +3116,7 @@ const DictationPageContent = () => {
                     calculatePartialReveals(currentSentenceIndex, text, transcriptData[currentSentenceIndex].text);
                   }
                 }}
-                onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
+                onAudioRecorded={() => {}}
                 language="de-DE"
                 size="mobile"
               />
