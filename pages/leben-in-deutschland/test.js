@@ -127,51 +127,51 @@ const TestPage = () => {
   if (testState === 'ready') {
     return (
       <>
-        <SEO title="Test starten - Leben in Deutschland" />
+        <SEO title="Thi thử - Leben in Deutschland" />
         <div className={styles.container}>
           <div className={styles.header}>
             <Link href="/leben-in-deutschland" className={styles.backLink}>
-              ← Zurück
+              ← Quay lại
             </Link>
             <h1 className={styles.title}>
               <span className={styles.flag}>✍️</span>
-              Probetest
+              Thi thử
             </h1>
           </div>
 
           <div className={styles.content}>
             <div className={styles.testReadyCard}>
-              <h2>Bist du bereit?</h2>
+              <h2>Bạn đã sẵn sàng?</h2>
               
               <div className={styles.testInfo}>
                 <div className={styles.testInfoItem}>
                   <span className={styles.testInfoIcon}>📝</span>
-                  <span>{testConfig.totalQuestions} Fragen</span>
+                  <span>{testConfig.totalQuestions} câu hỏi</span>
                 </div>
                 <div className={styles.testInfoItem}>
                   <span className={styles.testInfoIcon}>⏱️</span>
-                  <span>{testConfig.timeLimit} Minuten</span>
+                  <span>{testConfig.timeLimit} phút</span>
                 </div>
                 <div className={styles.testInfoItem}>
                   <span className={styles.testInfoIcon}>✅</span>
-                  <span>{testConfig.passingScore} zum Bestehen</span>
+                  <span>Cần {testConfig.passingScore} câu đúng</span>
                 </div>
               </div>
 
               {selectedBundeslandInfo && (
                 <p className={styles.stateInfo}>
-                  📍 Mit Fragen für {selectedBundeslandInfo.name}
+                  📍 Bao gồm câu hỏi cho {selectedBundeslandInfo.name}
                 </p>
               )}
 
               {!state && (
                 <p className={styles.noStateWarning}>
-                  ⚠️ Kein Bundesland ausgewählt - nur allgemeine Fragen
+                  ⚠️ Chưa chọn bang - chỉ có câu hỏi chung
                 </p>
               )}
 
               <button className={styles.startTestBtn} onClick={startTest}>
-                Test starten
+                Bắt đầu thi
               </button>
             </div>
           </div>
@@ -183,7 +183,7 @@ const TestPage = () => {
   if (showResult) {
     return (
       <>
-        <SEO title="Testergebnis - Leben in Deutschland" />
+        <SEO title="Kết quả thi - Leben in Deutschland" />
         <div className={styles.container}>
           <div className={styles.content}>
             <div className={`${styles.resultCard} ${passed ? styles.passed : styles.failed}`}>
@@ -191,7 +191,7 @@ const TestPage = () => {
                 {passed ? '🎉' : '📚'}
               </div>
               <h2 className={styles.resultTitle}>
-                {passed ? 'Bestanden!' : 'Nicht bestanden'}
+                {passed ? 'Đậu rồi!' : 'Chưa đậu'}
               </h2>
               <div className={styles.resultScore}>
                 <span className={styles.scoreValue}>{score}</span>
@@ -200,8 +200,8 @@ const TestPage = () => {
               </div>
               <p className={styles.resultText}>
                 {passed 
-                  ? `Herzlichen Glückwunsch! Du hast ${score} von ${testQuestions.length} Fragen richtig beantwortet.`
-                  : `Du brauchst mindestens ${testConfig.passingScore} richtige Antworten. Übe weiter!`
+                  ? `Chúc mừng! Bạn đã trả lời đúng ${score}/${testQuestions.length} câu hỏi.`
+                  : `Bạn cần ít nhất ${testConfig.passingScore} câu đúng. Cố gắng thêm nhé!`
                 }
               </p>
 
@@ -210,7 +210,7 @@ const TestPage = () => {
                   className={styles.reviewBtn}
                   onClick={() => setShowResult(false)}
                 >
-                  Antworten überprüfen
+                  Xem lại đáp án
                 </button>
                 <button 
                   className={styles.retryBtn}
@@ -221,10 +221,10 @@ const TestPage = () => {
                     setAnswers({});
                   }}
                 >
-                  Neuer Test
+                  Thi lại
                 </button>
                 <Link href="/leben-in-deutschland" className={styles.backBtn}>
-                  Zur Übersicht
+                  Quay lại
                 </Link>
               </div>
             </div>
@@ -236,11 +236,11 @@ const TestPage = () => {
 
   return (
     <>
-      <SEO title="Test - Leben in Deutschland" />
+      <SEO title="Đang thi - Leben in Deutschland" />
       <div className={styles.container}>
         <div className={styles.testHeader}>
           <div className={styles.testProgress}>
-            <span>Frage {currentIndex + 1} / {testQuestions.length}</span>
+            <span>Câu {currentIndex + 1} / {testQuestions.length}</span>
           </div>
           {testState === 'running' && (
             <div className={`${styles.timer} ${timeLeft < 300 ? styles.timerWarning : ''}`}>
@@ -278,7 +278,7 @@ const TestPage = () => {
             <div className={styles.testQuestion}>
               <div className={styles.questionHeader}>
                 <span className={styles.questionNumber}>
-                  Frage {currentIndex + 1}
+                  Câu {currentIndex + 1}
                   {currentQuestion.type === 'state' && (
                     <span className={styles.stateBadge}>{selectedBundeslandInfo?.name}</span>
                   )}
@@ -289,7 +289,7 @@ const TestPage = () => {
               
               {currentQuestion.img && (
                 <div className={styles.questionImage}>
-                  <img src={getImageUrl(currentQuestion.img)} alt="Bild zur Frage" />
+                  <img src={getImageUrl(currentQuestion.img)} alt="Hình ảnh câu hỏi" />
                 </div>
               )}
 
@@ -328,7 +328,7 @@ const TestPage = () => {
               onClick={() => goToQuestion(currentIndex - 1)}
               disabled={currentIndex === 0}
             >
-              ← Zurück
+              ← Trước
             </button>
             
             {currentIndex < testQuestions.length - 1 ? (
@@ -336,28 +336,28 @@ const TestPage = () => {
                 className={styles.navBtn}
                 onClick={() => goToQuestion(currentIndex + 1)}
               >
-                Weiter →
+                Tiếp →
               </button>
             ) : testState === 'running' ? (
               <button
                 className={styles.finishBtn}
                 onClick={finishTest}
               >
-                Test beenden
+                Nộp bài
               </button>
             ) : (
               <button
                 className={styles.finishBtn}
                 onClick={() => setShowResult(true)}
               >
-                Ergebnis anzeigen
+                Xem kết quả
               </button>
             )}
           </div>
 
           {testState === 'running' && (
             <div className={styles.answeredCount}>
-              {Object.keys(answers).length} von {testQuestions.length} beantwortet
+              Đã trả lời {Object.keys(answers).length} / {testQuestions.length} câu
             </div>
           )}
         </div>
