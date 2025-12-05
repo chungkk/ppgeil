@@ -16,7 +16,8 @@ import {
   TranscriptPanel,
   MobileBottomControls,
   DictationSkeleton,
-  DictationMobileSlide
+  DictationMobileSlide,
+  DictationDesktopArea
 } from '../../components/dictation';
 
 const ShadowingVoiceRecorder = dynamic(() => import('../../components/ShadowingVoiceRecorder'), {
@@ -177,10 +178,6 @@ const DictationPageContent = () => {
   const [isYouTube, setIsYouTube] = useState(false);
   const [isYouTubeAPIReady, setIsYouTubeAPIReady] = useState(false);
   
-  // Ref for transcript items to enable auto-scroll
-  const transcriptItemRefs = useRef({});
-  const transcriptSectionRef = useRef(null);
-  
   // Ref for mobile dictation slides to enable auto-scroll
   const dictationSlidesRef = useRef(null);
   const isProgrammaticScrollRef = useRef(false); // Track programmatic vs manual scroll
@@ -283,36 +280,7 @@ const DictationPageContent = () => {
     fetchSentenceTranslation();
   }, [currentSentenceIndex, transcriptData, isMobile, user?.nativeLanguage]);
 
-  // Auto-scroll transcript to current sentence (only scroll within container)
-  useEffect(() => {
-    // Skip auto-scroll when user clicked transcript directly
-    if (isUserClickedTranscriptRef.current) {
-      return;
-    }
-    
-    if (!isMobile && transcriptItemRefs.current[currentSentenceIndex] && transcriptSectionRef.current) {
-      const container = transcriptSectionRef.current;
-      const element = transcriptItemRefs.current[currentSentenceIndex];
-      
-      // Calculate positions
-      const containerRect = container.getBoundingClientRect();
-      const elementRect = element.getBoundingClientRect();
-      
-      // Calculate how much to scroll to center the element in the container
-      const elementOffsetTop = element.offsetTop;
-      const elementHeight = element.offsetHeight;
-      const containerHeight = container.clientHeight;
-      
-      // Center the element: scroll to (element position - half container height + half element height)
-      const scrollPosition = elementOffsetTop - (containerHeight / 2) + (elementHeight / 2);
-      
-      // Smooth scroll within container only
-      container.scrollTo({
-        top: scrollPosition,
-        behavior: 'smooth'
-      });
-    }
-  }, [currentSentenceIndex, isMobile]);
+  // Note: Auto-scroll for transcript is now handled inside TranscriptPanel component
 
   // Update popup position on scroll
   useEffect(() => {
@@ -556,13 +524,6 @@ const DictationPageContent = () => {
       setCompletedSentences(loadedSentences);
       setCompletedWords(normalizedWords);
       setRevealedHintWords(normalizedRevealedWords);
-
-      console.log(`📂 Progress loaded from ${source}:`, {
-        completedSentences: loadedSentences,
-        completedWords: normalizedWords,
-        revealedHintWords: normalizedRevealedWords
-      });
-      
       setProgressLoaded(true);
     };
 
@@ -1396,7 +1357,6 @@ const DictationPageContent = () => {
           lastUpdated: Date.now()
         };
         localStorage.setItem(`dictation_progress_${lessonId}`, JSON.stringify(guestProgress));
-        console.log('💾 Guest progress saved to localStorage:', guestProgress);
         return;
       }
       
@@ -1443,16 +1403,7 @@ const DictationPageContent = () => {
         throw new Error('Failed to save progress');
       }
       
-      const result = await response.json();
-      
-      console.log('✅ Progress saved:', { 
-        completedSentences: updatedCompletedSentences, 
-        completedWords: updatedCompletedWords,
-        revealedHintWords: revealedWordsToSave,
-        correctWordsCount, 
-        totalWords,
-        completionPercent: result.completionPercent
-      });
+      await response.json();
     } catch (error) {
       console.error('Error saving progress:', error);
     }
@@ -1651,7 +1602,6 @@ const DictationPageContent = () => {
         hapticEvents.buttonPress();
       }
 
-      console.log('Revealed hint words:', updated);
       return updated;
     });
   }, []);
@@ -3273,221 +3223,42 @@ const DictationPageContent = () => {
                   </div>
                 </div>
               ) : (
-                /* Desktop: Full Sentence Mode Only */
-                <div className={styles.fullSentenceMode}>
-                      {/* Combined Display + Translation Box */}
-                      <div className={styles.dictationBox}>
-                        <div className={styles.fullSentenceDisplay}>
-                          {completedSentences.includes(currentSentenceIndex) ? (
-                            <div 
-                              className={styles.dictationInputArea}
-                              dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(transcriptData[currentSentenceIndex]?.text || '') }}
-                            />
-                          ) : (
-                            <div className={styles.hintSentenceText} data-sentence-index={currentSentenceIndex}>
-                              {transcriptData[currentSentenceIndex]?.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => {
-                                // Remove punctuation to get pure word
-                                const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-                                const punctuation = word.replace(/[a-zA-Z0-9üäöÜÄÖß]/g, "");
-
-                                if (pureWord.length === 0) return null;
-
-                                // Check if this word is revealed
-                                const isRevealed = revealedHintWords[currentSentenceIndex]?.[idx];
-
-                                // Check word comparison result
-                                const comparisonResult = wordComparisonResults[currentSentenceIndex]?.[idx];
-
-                                // Get partial reveal count
-                                const partialCount = partialRevealedChars[currentSentenceIndex]?.[idx] || 0;
-
-                                const wordClass = comparisonResult
-                                  ? (comparisonResult === 'correct' ? styles.hintWordCorrect : styles.hintWordIncorrect)
-                                  : (isRevealed ? styles.hintWordRevealed : (partialCount > 0 ? styles.hintWordPartial : ''));
-
-                                // Determine what to display
-                                let displayText;
-                                if (comparisonResult || isRevealed) {
-                                  // Show full word if checked or manually revealed
-                                  displayText = pureWord;
-                                } else if (partialCount > 0) {
-                                  // Show partial characters
-                                  displayText = pureWord.substring(0, partialCount) + '\u00A0'.repeat(pureWord.length - partialCount);
-                                } else {
-                                  // Show all spaces
-                                  displayText = '\u00A0'.repeat(pureWord.length);
-                                }
-
-                                return (
-                                  <span key={idx} className={styles.hintWordContainer}>
-                                    <span
-                                      className={`${styles.hintWordBox} ${wordClass}`}
-                                      onClick={(e) => !comparisonResult && !isRevealed && showHintWordSuggestion(currentSentenceIndex, idx, pureWord, e)}
-                                      title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Đã hiện' : 'Click để chọn từ')}
-                                    >
-                                      {displayText}
-                                    </span>
-                                  </span>
-                                );
-                              })}
-                            </div>
-                          )}
-                        </div>
-
-                        {/* Sentence Translation - Bottom half */}
-                        {!isMobile && showTranslation && (
-                          <div className={styles.sentenceTranslation}>
-                            {isLoadingTranslation ? (
-                              <span className={styles.translationLoading}>...</span>
-                            ) : sentenceTranslation ? (
-                              <span>{sentenceTranslation}</span>
-                            ) : null}
-                          </div>
-                        )}
-                      </div>
-
-                      <div className={styles.textareaWithVoice}>
-                        <textarea
-                          className={styles.fullSentenceInput}
-                          placeholder="Nhập toàn bộ câu..."
-                          value={fullSentenceInputs[currentSentenceIndex] || ''}
-                          onChange={(e) => {
-                            setFullSentenceInputs(prev => ({
-                              ...prev,
-                              [currentSentenceIndex]: e.target.value
-                            }));
-                            // Calculate partial reveals as user types
-                            if (transcriptData[currentSentenceIndex]) {
-                              calculatePartialReveals(currentSentenceIndex, e.target.value, transcriptData[currentSentenceIndex].text);
-                            }
-                          }}
-                          onKeyDown={(e) => {
-                            // Auto-check on Enter (but allow Shift+Enter for new line)
-                            if (e.key === 'Enter' && !e.shiftKey) {
-                              e.preventDefault();
-                              handleFullSentenceSubmit(currentSentenceIndex);
-                            }
-                          }}
-                          disabled={completedSentences.includes(currentSentenceIndex)}
-                          rows={3}
-                        />
-                        {!completedSentences.includes(currentSentenceIndex) && (
-                          <div className={styles.dictationVoiceButton}>
-                            <ShadowingVoiceRecorder
-                              onTranscript={(text) => {
-                                setFullSentenceInputs(prev => ({
-                                  ...prev,
-                                  [currentSentenceIndex]: text
-                                }));
-                                if (transcriptData[currentSentenceIndex]) {
-                                  calculatePartialReveals(currentSentenceIndex, text, transcriptData[currentSentenceIndex].text);
-                                }
-                              }}
-                              onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
-                              language="de-DE"
-                            />
-                          </div>
-                        )}
-                      </div>
-
-                      <div className={styles.dictationActions}>
-                        <button
-                          className={styles.checkButton}
-                          onClick={() => handleFullSentenceSubmit(currentSentenceIndex)}
-                          disabled={completedSentences.includes(currentSentenceIndex)}
-                        >
-                          Kiểm tra
-                        </button>
-                      </div>
-                </div>
+                /* Desktop: Full Sentence Mode - Using Component */
+                <DictationDesktopArea
+                  transcriptData={transcriptData}
+                  currentSentenceIndex={currentSentenceIndex}
+                  completedSentences={completedSentences}
+                  revealedHintWords={revealedHintWords}
+                  wordComparisonResults={wordComparisonResults}
+                  partialRevealedChars={partialRevealedChars}
+                  fullSentenceInputs={fullSentenceInputs}
+                  showTranslation={showTranslation}
+                  isLoadingTranslation={isLoadingTranslation}
+                  sentenceTranslation={sentenceTranslation}
+                  onInputChange={(idx, value) => setFullSentenceInputs(prev => ({ ...prev, [idx]: value }))}
+                  onSubmit={handleFullSentenceSubmit}
+                  onHintWordClick={showHintWordSuggestion}
+                  onCalculatePartialReveals={calculatePartialReveals}
+                  renderCompletedSentenceWithWordBoxes={renderCompletedSentenceWithWordBoxes}
+                />
               )}
             </div>
           </div>
 
-          {/* Right Column - Transcript List */}
-          <div className={styles.rightSection}>
-            <div className={styles.transcriptHeader}>
-              <h3 className={styles.transcriptTitle}>
-                Transcript
-              </h3>
-              <ProgressIndicator
-                completedSentences={completedSentences}
-                totalSentences={transcriptData.length}
-                completedWords={completedWords}
-                totalWords={(() => {
-                  const total = transcriptData.reduce((sum, sentence) => {
-                    const words = sentence.text.split(/\s+/).filter(w => {
-                      const pureWord = w.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
-                      return pureWord.length >= 1;
-                    });
-                    return sum + words.length;
-                  }, 0);
-                  
-                  // Debug: log progress data
-                  const completedWordsCount = Object.values(completedWords).reduce((sum, sentenceWords) => {
-                    return sum + Object.keys(sentenceWords).length;
-                  }, 0);
-                  
-                  console.log('📊 Progress Debug:', {
-                    completedSentences: completedSentences.length,
-                    totalSentences: transcriptData.length,
-                    completedWordsCount,
-                    totalWords: total,
-                    sentencePercent: Math.round((completedSentences.length / transcriptData.length) * 100),
-                    wordPercent: Math.round((completedWordsCount / total) * 100),
-                    overallPercent: Math.round(
-                      (completedSentences.length / transcriptData.length) * 100 * 0.7 +
-                      (completedWordsCount / total) * 100 * 0.3
-                    )
-                  });
-                  
-                  return total;
-                })()}
-                studyTime={studyTime}
-              />
-            </div>
-            
-             <div className={styles.transcriptSection} ref={transcriptSectionRef}>
-               <div className={styles.transcriptList}>
-                 {transcriptDisplayIndices.map((originalIndex) => {
-                   const segment = transcriptData[originalIndex];
-                   const isCompleted = completedSentences.includes(originalIndex);
-                   const sentenceWordsCompleted = completedWords[originalIndex] || {};
-                   
-                   // Check if sentence has been checked in full-sentence mode
-                   const isChecked = checkedSentences.includes(originalIndex);
-                   
-                   // In full-sentence mode, hide all text (100%) in transcript UNTIL checked
-                   const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
-                   
-                   // Get revealed hint words for this sentence (for full-sentence mode)
-                   const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
-                   
-                   // Show full text if completed OR if checked in full-sentence mode
-                   const shouldShowFullText = isCompleted || (dictationMode === 'full-sentence' && isChecked);
-
-                   return (
-                     <div
-                       key={originalIndex}
-                       ref={(el) => {
-                         transcriptItemRefs.current[originalIndex] = el;
-                       }}
-                       className={`${styles.transcriptItem} ${originalIndex === currentSentenceIndex ? styles.active : ''} ${!isCompleted ? styles.incomplete : ''}`}
-                       onClick={() => handleSentenceClick(segment.start, segment.end)}
-                     >
-                       <div className={styles.transcriptItemNumber}>
-                         #{originalIndex + 1}
-                         {isCompleted && <span className={styles.completedCheck}>✓</span>}
-                       </div>
-                        <div className={styles.transcriptItemText}>
-                          {shouldShowFullText ? segment.text : maskTextByPercentage(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)}
-                        </div>
-                      </div>
-                    );
-                  })}
-               </div>
-             </div>
-          </div>
+          {/* Right Column - Transcript List (Using Component) */}
+          <TranscriptPanel
+            transcriptData={transcriptData}
+            currentSentenceIndex={currentSentenceIndex}
+            completedSentences={completedSentences}
+            completedWords={completedWords}
+            checkedSentences={checkedSentences}
+            revealedHintWords={revealedHintWords}
+            hidePercentage={hidePercentage}
+            dictationMode={dictationMode}
+            studyTime={studyTime}
+            onSentenceClick={handleSentenceClick}
+            maskTextByPercentage={maskTextByPercentage}
+          />
         </div>
       </div>
 

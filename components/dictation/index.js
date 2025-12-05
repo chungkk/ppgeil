@@ -23,3 +23,4 @@ export { default as FullSentenceMode } from './FullSentenceMode';
 export { default as FillBlanksMode } from './FillBlanksMode';
 export { default as DictationSkeleton } from './DictationSkeleton';
 export { default as DictationMobileSlide } from './DictationMobileSlide';
+export { default as DictationDesktopArea } from './DictationDesktopArea';
