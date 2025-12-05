@@ -229,7 +229,8 @@ function findSegmentIndex(segments, wordIndex) {
 }
 
 /**
- * Add punctuation to words using GPT (giống v2)
+ * Add punctuation AND smart segmentation using GPT
+ * GPT trả về JSON array các segments
  */
 async function addPunctuationToWords(words, rawText) {
   try {
@@ -238,46 +239,138 @@ async function addPunctuationToWords(words, rawText) {
       messages: [
         {
           role: 'system',
-          content: `Du bist ein Experte für deutsche Grammatik und Zeichensetzung.
+          content: `Du bist ein Experte für deutsche Untertitelung.
 
-AUFGABE: Füge Satzzeichen zum folgenden Text hinzu.
+AUFGABE: Teile den Text in Untertitel-Segmente auf und füge Satzzeichen hinzu.
 
-STRENGE REGELN:
-1. Füge NUR Satzzeichen hinzu: . , ! ? ; : - „ " ' 
-2. ÄNDERE KEINE Wörter - nicht korrigieren, nicht löschen, nicht hinzufügen
-3. BEHALTE die EXAKTE Reihenfolge aller Wörter
-4. Jeder Satz sollte VOLLSTÄNDIG und SINNVOLL sein
-5. Verwende Großbuchstaben am Satzanfang
-6. Bevorzuge längere, vollständige Sätze (6-14 Wörter pro Satz)
-7. Trenne nur bei echten Satzenden (. ! ?)
+REGELN:
+1. Jedes Segment: 6-12 Wörter (ideal für Untertitel)
+2. ÄNDERE KEINE Wörter - nur Satzzeichen hinzufügen
+3. Analysiere den Kontext: Was gehört zusammen?
+4. Zusammenfassen wenn: gleicher Sprecher, gleiche Idee, Bedingung+Ergebnis
+5. Trennen wenn: neues Thema, anderer Sprecher, langer Satz (>12 Wörter)
+6. NIEMALS mitten in einer Phrase trennen (z.B. "von Pamukkale" zusammen lassen)
 
-Antworte NUR mit dem Text mit Satzzeichen, ohne Erklärungen.`
+BEISPIEL:
+Input: "Wenn du ein Mann bist bei der 78 wenn du eine Frau bist bei der 83"
+Output: ["Wenn du ein Mann bist, bei der 78.", "Wenn du eine Frau bist, bei der 83."]
+
+Input: "Aber beim Thema Menschenrechte tolles Thema aber schauen Sie mal hier die Kalkterrassen von Pamukkale"
+Output: ["Aber beim Thema Menschenrechte: Tolles Thema,", "aber schauen Sie mal hier die Kalkterrassen von Pamukkale."]
+
+Antworte NUR mit JSON array, keine Erklärung.`
         },
         {
           role: 'user',
           content: rawText
         }
       ],
-      temperature: 0.2,
+      temperature: 0.3,
       max_tokens: 4096,
     });
 
-    const punctuatedText = response.choices[0].message.content.trim();
-    return mapPunctuationToWords(words, punctuatedText);
+    let segmentedText = response.choices[0].message.content.trim();
+    
+    // Parse JSON array
+    let segments = [];
+    try {
+      // Loại bỏ markdown code block nếu có
+      segmentedText = segmentedText.replace(/```json\n?/g, '').replace(/```\n?/g, '');
+      segments = JSON.parse(segmentedText);
+    } catch (e) {
+      console.error('JSON parse error, fallback to simple punctuation');
+      // Fallback: dùng text đơn giản
+      return mapPunctuationToWordsSimple(words, segmentedText);
+    }
+    
+    return mapSegmentsToWords(words, segments);
   } catch (error) {
     console.error('GPT punctuation error:', error);
     return words.map(w => ({
       ...w,
       word: w.word,
-      hasSentenceEnd: false
+      hasSentenceEnd: false,
+      isSegmentEnd: false
     }));
   }
 }
 
 /**
- * Map punctuated text back to original words (giống v2)
+ * Map GPT segments back to words with timestamps
  */
-function mapPunctuationToWords(originalWords, punctuatedText) {
+function mapSegmentsToWords(originalWords, segments) {
+  const result = [];
+  
+  // Ghép tất cả segments thành danh sách tokens với thông tin segment
+  const allTokens = [];
+  for (let segIdx = 0; segIdx < segments.length; segIdx++) {
+    const segmentText = segments[segIdx];
+    const tokens = segmentText.split(/\s+/).filter(t => t);
+    for (let i = 0; i < tokens.length; i++) {
+      allTokens.push({
+        token: tokens[i],
+        isSegmentEnd: i === tokens.length - 1
+      });
+    }
+  }
+  
+  let tokenIndex = 0;
+  
+  for (let i = 0; i < originalWords.length; i++) {
+    const origWord = originalWords[i];
+    const cleanOrigWord = origWord.word.trim().toLowerCase().replace(/[.,!?;:„"'—–-]/g, '');
+    
+    let punctuatedWord = origWord.word.trim();
+    let hasSentenceEnd = false;
+    let isSegmentEnd = false;
+    
+    if (tokenIndex < allTokens.length) {
+      const tokenInfo = allTokens[tokenIndex];
+      const punctToken = tokenInfo.token;
+      const cleanPunctToken = punctToken.toLowerCase().replace(/[.,!?;:„"'—–-]/g, '');
+      
+      // So sánh từ (cho phép sai lệch nhỏ)
+      if (cleanOrigWord === cleanPunctToken || 
+          cleanOrigWord.includes(cleanPunctToken) || 
+          cleanPunctToken.includes(cleanOrigWord) ||
+          levenshtein(cleanOrigWord, cleanPunctToken) <= 2) {
+        punctuatedWord = punctToken;
+        hasSentenceEnd = /[.!?]$/.test(punctToken);
+        isSegmentEnd = tokenInfo.isSegmentEnd;
+        tokenIndex++;
+      } else {
+        // Tìm trong vài token tiếp theo
+        for (let j = tokenIndex; j < Math.min(tokenIndex + 5, allTokens.length); j++) {
+          const searchInfo = allTokens[j];
+          const searchToken = searchInfo.token;
+          const cleanSearch = searchToken.toLowerCase().replace(/[.,!?;:„"'—–-]/g, '');
+          if (cleanOrigWord === cleanSearch || levenshtein(cleanOrigWord, cleanSearch) <= 2) {
+            punctuatedWord = searchToken;
+            hasSentenceEnd = /[.!?]$/.test(searchToken);
+            isSegmentEnd = searchInfo.isSegmentEnd;
+            tokenIndex = j + 1;
+            break;
+          }
+        }
+      }
+    }
+    
+    result.push({
+      word: punctuatedWord,
+      start: origWord.start,
+      end: origWord.end,
+      hasSentenceEnd: hasSentenceEnd,
+      isSegmentEnd: isSegmentEnd
+    });
+  }
+  
+  return result;
+}
+
+/**
+ * Fallback: simple punctuation mapping (giống v2)
+ */
+function mapPunctuationToWordsSimple(originalWords, punctuatedText) {
   const result = [];
   const punctuatedTokens = punctuatedText.split(/\s+/).filter(t => t);
   
@@ -300,17 +393,6 @@ function mapPunctuationToWords(originalWords, punctuatedText) {
         punctuatedWord = punctToken;
         hasSentenceEnd = /[.!?]$/.test(punctToken);
         punctIndex++;
-      } else {
-        for (let j = punctIndex; j < Math.min(punctIndex + 3, punctuatedTokens.length); j++) {
-          const searchToken = punctuatedTokens[j];
-          const cleanSearchToken = searchToken.toLowerCase().replace(/[.,!?;:„"'-]/g, '');
-          if (cleanOrigWord === cleanSearchToken) {
-            punctuatedWord = searchToken;
-            hasSentenceEnd = /[.!?]$/.test(searchToken);
-            punctIndex = j + 1;
-            break;
-          }
-        }
       }
     }
     
@@ -318,7 +400,8 @@ function mapPunctuationToWords(originalWords, punctuatedText) {
       word: punctuatedWord,
       start: origWord.start,
       end: origWord.end,
-      hasSentenceEnd: hasSentenceEnd
+      hasSentenceEnd: hasSentenceEnd,
+      isSegmentEnd: hasSentenceEnd // fallback: dùng sentence end
     });
   }
   
@@ -326,7 +409,27 @@ function mapPunctuationToWords(originalWords, punctuatedText) {
 }
 
 /**
- * Smart merge words into segments (giống v2, thêm word indices cho karaoke)
+ * Simple Levenshtein distance
+ */
+function levenshtein(a, b) {
+  if (a.length === 0) return b.length;
+  if (b.length === 0) return a.length;
+  const matrix = [];
+  for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+  for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+  for (let i = 1; i <= b.length; i++) {
+    for (let j = 1; j <= a.length; j++) {
+      matrix[i][j] = b.charAt(i-1) === a.charAt(j-1) 
+        ? matrix[i-1][j-1] 
+        : Math.min(matrix[i-1][j-1]+1, matrix[i][j-1]+1, matrix[i-1][j]+1);
+    }
+  }
+  return matrix[b.length][a.length];
+}
+
+/**
+ * Smart merge words into segments dựa vào GPT segmentation (isSegmentEnd)
+ * Fallback về MIN/MAX_WORDS nếu GPT không đánh dấu
  */
 function smartMergeWithPunctuation(words) {
   const segments = [];
@@ -382,18 +485,15 @@ function smartMergeWithPunctuation(words) {
     currentSegment.end = word.end;
 
     const wordCount = currentSegment.words.length;
-    const currentText = currentSegment.words.map(w => w.word).join(' ');
     
-    const hasSentenceEnd = word.hasSentenceEnd || /[.!?]$/.test(word.word);
-    const reachedMaxWords = wordCount >= MAX_WORDS;
-    const reachedMaxChars = currentText.length >= MAX_CHAR_LENGTH;
-    const hasMinWords = wordCount >= MIN_WORDS;
+    // Ưu tiên dùng GPT segmentation
+    const isGptSegmentEnd = word.isSegmentEnd;
+    const isLastWord = !nextWord;
+    
+    // Fallback: nếu câu quá dài (>MAX_WORDS) thì vẫn ngắt
+    const tooLong = wordCount >= MAX_WORDS;
 
-    if (reachedMaxWords || reachedMaxChars) {
-      pushSegment();
-    } else if (hasMinWords && hasSentenceEnd) {
-      pushSegment();
-    } else if (!nextWord) {
+    if (isGptSegmentEnd || isLastWord || tooLong) {
       pushSegment();
     }
   }

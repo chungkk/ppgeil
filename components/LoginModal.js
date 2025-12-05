@@ -34,7 +34,7 @@ const LoginModal = ({ isOpen, onClose }) => {
         console.log('✅ Received auth success from popup');
         setLoading(false);
         onClose();
-        window.location.href = '/profile';
+        window.location.reload();
       } else if (event.data.type === 'auth-failed') {
         console.log('❌ Received auth failed from popup');
         setLoading(false);
@@ -115,7 +115,7 @@ const LoginModal = ({ isOpen, onClose }) => {
               if (session && session.user) {
                 console.log('✅ Google login successful!');
                 onClose();
-                window.location.href = '/profile';
+                window.location.reload();
               } else {
                 console.log('ℹ️ Login cancelled or incomplete');
               }
@@ -200,7 +200,7 @@ const LoginModal = ({ isOpen, onClose }) => {
       const result = await login(email, password);
       if (result.success) {
         onClose();
-        navigateWithLocale(router, '/profile');
+        // Ở lại trang hiện tại - không redirect
       } else {
         setError(result.error);
       }
@@ -258,7 +258,7 @@ const LoginModal = ({ isOpen, onClose }) => {
         const loginResult = await login(email, password);
         if (loginResult.success) {
           onClose();
-          navigateWithLocale(router, '/profile');
+          // Ở lại trang hiện tại - không redirect
         } else {
           setError(t('loginModal.errors.registerSuccess'));
           setIsRegistering(false);

@@ -1,73 +1,59 @@
 [
     {
-        "text": "Willst du fame? Yeah, Geld! Wow, berühmt werden. Genau, dann folge diesem neuen Trend.",
+        "text": "Willst du fame? Yeah, Geld! Wow, berühmt werden, genau!",
         "start": 1.1400000000000001,
-        "end": 10.08,
-        "translationEn": "Do you want fame? Yeah, money! Wow, becoming famous. Exactly, then follow this new trend.",
-        "translationVi": "Bạn có muốn nổi tiếng không? Ừ, tiền! Wow, trở nên nổi tiếng. Chính xác, vậy thì hãy theo xu hướng mới này."
+        "end": 7.88,
+        "translationEn": "Do you want fame? Yeah, money! Wow, becoming famous, exactly!",
+        "translationVi": "Bạn có muốn nổi tiếng không? Ừ, tiền! Wow, trở nên nổi tiếng, chính xác!"
     },
     {
-        "text": "Was ist der neue Trend? Mache Missbrauchsvorwürfe gegen einen berühmten Mann und genieße die Aufmerksamkeit.",
-        "start": 10.26,
+        "text": "Dann folge diesem neuen Trend. Was ist der neue Trend?",
+        "start": 8.18,
+        "end": 11.8,
+        "translationEn": "Then follow this new trend. What is the new trend?",
+        "translationVi": "Vậy thì hãy theo xu hướng mới này. Xu hướng mới là gì?"
+    },
+    {
+        "text": "Mache Missbrauchsvorwürfe gegen einen berühmten Mann und genieße die Aufmerksamkeit.",
+        "start": 11.96,
         "end": 16.1,
-        "translationEn": "What is the new trend? Make allegations of abuse against a famous man and enjoy the attention.",
-        "translationVi": "Xu hướng mới là gì? Đưa ra cáo buộc lạm dụng đối với một người đàn ông nổi tiếng và tận hưởng sự chú ý."
+        "translationEn": "Make allegations of abuse against a famous man and enjoy the attention.",
+        "translationVi": "Hãy đưa ra cáo buộc lạm dụng chống lại một người đàn ông nổi tiếng và tận hưởng sự chú ý."
     },
     {
-        "text": "Was du hast richtig gehört: Viele schlaue Männer auf X haben herausgefunden, Missbrauchsvorwürfe sind der",
+        "text": "Was du hast richtig gehört: Viele schlaue Männer auf X haben herausgefunden, Missbrauchsvorwürfe sind",
         "start": 16.92,
-        "end": 25.9,
-        "translationEn": "What you heard is correct: Many clever men on X have figured out that allegations of abuse are the",
-        "translationVi": "Bạn đã nghe đúng: Nhiều người đàn ông thông minh trên X đã phát hiện ra rằng các cáo buộc lạm dụng là..."
+        "end": 25.42,
+        "translationEn": "What you heard is correct: Many clever men on X have discovered that allegations of abuse are",
+        "translationVi": "Bạn đã nghe đúng: Nhiều người đàn ông thông minh trên X đã phát hiện ra rằng các cáo buộc lạm dụng là"
     },
     {
-        "text": "Weg zu schnellem Ruhm.",
-        "start": 25.9,
-        "end": 27.2,
-        "translationEn": "Path to quick fame.",
-        "translationVi": "Con đường đến với danh tiếng nhanh chóng."
-    },
-    {
-        "text": "Einfach öffentlich demütigen lassen, und schon ruft Hollywood an.",
-        "start": 27.98,
+        "text": "Der Weg zu schnellem Ruhm. Einfach öffentlich demütigen lassen und schon ruft Hollywood an.",
+        "start": 25.42,
         "end": 33.68,
-        "translationEn": "Just let yourself be publicly humiliated, and Hollywood will call.",
-        "translationVi": "Chỉ cần để bị sỉ nhục công khai, và Hollywood sẽ gọi đến."
+        "translationEn": "The path to quick fame. Just get publicly humiliated and Hollywood will call.",
+        "translationVi": "Con đường đến với danh tiếng nhanh chóng. Chỉ cần để mình bị sỉ nhục công khai và Hollywood sẽ gọi đến."
     },
     {
-        "text": "Hallo, zieh die Hände weg, bevor ich meinen Rücken so beschleunige.",
+        "text": "Hallo, zieh die Hände weg, du Vollrücken, du beschlange!",
         "start": 34.84,
-        "end": 37.62,
-        "translationEn": "Hello, take your hands away before I accelerate my back like this.",
-        "translationVi": "Xin chào, hãy rút tay ra trước khi tôi tăng tốc lưng mình như vậy."
+        "end": 37.48,
+        "translationEn": "Hello, get your hands off, you full-back, you jerk!",
+        "translationVi": "Xin chào, hãy rút tay ra, bạn ngốc nghếch, bạn lố bịch!"
     },
     {
-        "text": "Oder zumindest irgendwer.",
-        "start": 38.06,
-        "end": 39.64,
-        "translationEn": "Or at least someone.",
-        "translationVi": "Hoặc ít nhất là ai đó."
-    },
-    {
-        "text": "Du wirst dich gar nicht mehr vor Fanpost retten können.",
-        "start": 40.52,
+        "text": "Oder zumindest irgendwer. Du wirst dich gar nicht mehr vor Fanpost retten können.",
+        "start": 37.98,
         "end": 42.88,
-        "translationEn": "You won't be able to escape fan mail at all anymore.",
-        "translationVi": "Bạn sẽ không thể thoát khỏi thư fan nữa đâu."
+        "translationEn": "Or at least someone. You won't be able to escape fan mail at all.",
+        "translationVi": "Hoặc ít nhất là ai đó. Bạn sẽ không thể tránh khỏi thư fan nữa đâu."
     },
     {
-        "text": "Gewinne tausende neue Follower.",
+        "text": "Gewinne tausende neue Follower. Wir wissen, wo du wohnst, beziehungsweise Verfolger.",
         "start": 45.62,
-        "end": 47.38,
-        "translationEn": "Gain thousands of new followers.",
-        "translationVi": "Giành được hàng ngàn người theo dõi mới."
-    },
-    {
-        "text": "Wir wissen, wo du wohnst, beziehungsweise Verfolger.",
-        "start": 47.66,
         "end": 50.42,
-        "translationEn": "We know where you live, or rather, stalkers.",
-        "translationVi": "Chúng tôi biết bạn sống ở đâu, hoặc đúng hơn là những kẻ theo dõi."
+        "translationEn": "Gain thousands of new followers. We know where you live, or rather, stalkers.",
+        "translationVi": "Nhận hàng ngàn người theo dõi mới. Chúng tôi biết bạn đang sống ở đâu, hoặc chính xác là những kẻ theo dõi."
     },
     {
         "text": "Ab jetzt bist du nie wieder allein.",
@@ -77,25 +63,18 @@
         "translationVi": "Từ bây giờ, bạn sẽ không bao giờ cô đơn nữa."
     },
     {
-        "text": "Also, worauf wartest du noch?",
+        "text": "Also, worauf wartest du noch? Führe auch du einen Rechtsstreit mit einem mächtigeren und",
         "start": 54.72,
-        "end": 56.06,
-        "translationEn": "So, what are you waiting for?",
-        "translationVi": "Vậy bạn còn chờ gì nữa?"
+        "end": 59.54,
+        "translationEn": "So, what are you waiting for? You too can engage in a legal dispute with a more powerful and",
+        "translationVi": "Vậy thì, bạn còn chờ gì nữa? Hãy tham gia vào một cuộc tranh chấp pháp lý với một người quyền lực hơn và"
     },
     {
-        "text": "Führe auch du einen Rechtsstreit mit einem mächtigeren und reicheren Mann.",
-        "start": 56.5,
-        "end": 59.86,
-        "translationEn": "You too are engaged in a legal dispute with a more powerful and wealthier man.",
-        "translationVi": "Hãy tham gia một cuộc tranh chấp pháp lý với một người đàn ông quyền lực và giàu có hơn bạn."
-    },
-    {
-        "text": "Und lass dein komplettes Privatleben auseinandernehmen.",
-        "start": 60.28,
+        "text": "Reicheren Mann und lass dein komplettes Privatleben auseinandernehmen.",
+        "start": 59.54,
         "end": 63.06,
-        "translationEn": "And let your entire private life be taken apart.",
-        "translationVi": "Và hãy để cuộc sống riêng tư của bạn bị lật tung."
+        "translationEn": "Richer man and let your entire private life be taken apart.",
+        "translationVi": "Người đàn ông giàu có và để cuộc sống riêng tư của bạn bị lật tẩy hoàn toàn."
     },
     {
         "text": "Das ist die Aufmerksamkeit, die sich jeder wünscht.",
@@ -105,18 +84,11 @@
         "translationVi": "Đó là sự chú ý mà ai cũng mong muốn."
     },
     {
-        "text": "Das ist doch bescheuert!",
+        "text": "Das ist doch bescheuert, sowas was will doch keiner!",
         "start": 67.16,
-        "end": 68.12,
-        "translationEn": "That's just ridiculous!",
-        "translationVi": "Thật là điên rồ!"
-    },
-    {
-        "text": "Sowas was will doch keiner.",
-        "start": 68.2,
-        "end": 69.22,
-        "translationEn": "Nobody wants something like that.",
-        "translationVi": "Không ai muốn điều đó."
+        "end": 69.24,
+        "translationEn": "That's just ridiculous, nobody wants something like that!",
+        "translationVi": "Đó thật là điên rồ, không ai muốn cái đó cả!"
     },
     {
         "text": "Du wirst so berühmt sein, ganz Deutschland wird deinen Namen kennen.",
@@ -126,24 +98,31 @@
         "translationVi": "Bạn sẽ nổi tiếng đến nỗi toàn nước Đức sẽ biết tên bạn."
     },
     {
-        "text": "Lena oder Leyla, wie hieß diese famegeile Alte nochmal?",
-        "start": 74.3,
+        "text": "Oder Layla, wie hieß diese famegeile Alte nochmal?",
+        "start": 75.46,
         "end": 78.74,
-        "translationEn": "Lena or Leyla, what was the name of that fame-hungry old woman again?",
-        "translationVi": "Lena hay Leyla, bà già thích nổi tiếng đó tên là gì nhỉ?"
+        "translationEn": "Or Layla, what was the name of that fame-hungry old woman again?",
+        "translationVi": "Hoặc Layla, bà già thích nổi tiếng đó tên là gì nhỉ?"
     },
     {
-        "text": "Fall Lelelele Auf jeden Fall war sie die Ex-Freundin.",
+        "text": "Mal Lülülülü! Auf jeden Fall war sie die Ex-Freundin.",
         "start": 78.74,
         "end": 81.86,
-        "translationEn": "In any case, she was the ex-girlfriend.",
-        "translationVi": "Dù sao đi nữa, cô ấy là bạn gái cũ."
+        "translationEn": "Well Lülülülü! In any case, she was the ex-girlfriend.",
+        "translationVi": "Mal Lülülülü! Dù sao đi nữa, cô ấy là bạn gái cũ."
     },
     {
-        "text": "Freund Yes, yes, yes, yes! Wow, genau! Ja, ja! Woohoo!",
+        "text": "Freund Yes, yes, yes, yes! Wow, genau!",
         "start": 81.86,
+        "end": 90.84,
+        "translationEn": "Friend Yes, yes, yes, yes! Wow, exactly!",
+        "translationVi": "Bạn bè Vâng, vâng, vâng, vâng! Wow, chính xác!"
+    },
+    {
+        "text": "Ja, ja, woohoo!",
+        "start": 91.42,
         "end": 93.58,
-        "translationEn": "Friend Yes, yes, yes, yes! Wow, exactly! Yes, yes! Woohoo!",
-        "translationVi": "Bạn ơi, vâng, vâng, vâng, vâng! Wow, chính xác! Vâng, vâng! Woohoo!"
+        "translationEn": "Yes, yes, woohoo!",
+        "translationVi": "Vâng, vâng, yay!"
     }
 ]

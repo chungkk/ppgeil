@@ -35,8 +35,8 @@ export default function AuthCallback() {
           window.close();
         }, 500);
       } else {
-        // If not in popup, redirect to dashboard
-        window.location.href = '/dashboard';
+        // If not in popup, redirect to homepage (stay on current page logic not applicable here)
+        window.location.href = '/';
       }
     } else if (status === 'unauthenticated') {
       // Authentication failed

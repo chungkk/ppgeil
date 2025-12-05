@@ -316,7 +316,7 @@ export function AuthProvider({ children }) {
     if (session) {
       await nextAuthSignOut({ redirect: false });
     }
-    router.push('/auth/login');
+    // Không redirect - ở lại trang hiện tại
   };
 
   // Refresh full user data from API
