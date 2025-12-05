@@ -148,7 +148,8 @@ const DictationMobileSlide = memo(({
           )}
         </div>
 
-        <div className={styles.textareaWithVoice} style={{ position: 'relative' }}>
+        {/* Textarea hidden for mobile - not needed anymore */}
+        {/* <div className={styles.textareaWithVoice} style={{ position: 'relative' }}>
           <textarea
             className={styles.fullSentenceInput}
             placeholder="Nhập toàn bộ câu..."
@@ -158,7 +159,7 @@ const DictationMobileSlide = memo(({
             disabled={isCompleted}
             rows={3}
           />
-        </div>
+        </div> */}
 
         {isActive && !isCompleted && (
           <div className={styles.dictationActions}>

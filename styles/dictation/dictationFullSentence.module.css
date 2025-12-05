@@ -511,11 +511,21 @@
   }
 
   .fullSentenceDisplay {
-    padding: 10px;
+    padding: 8px;
     font-size: 14px;
     min-height: 140px;
     max-height: none;
     flex: 1;
+    /* Remove border on mobile to reduce visual clutter */
+    background: transparent;
+    border: none;
+  }
+
+  .hintSentenceText {
+    /* Remove border on mobile - keep only word boxes */
+    background: transparent;
+    border: none;
+    padding: 4px;
   }
 
   .fullSentenceInput {
