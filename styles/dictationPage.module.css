@@ -87,6 +87,7 @@
   border: 1px solid var(--border-color);
   padding: var(--spacing-sm);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* Contain content within fixed height */
 }
 
 /* Breadcrumb */
@@ -729,6 +730,7 @@
 
 .transcriptSection {
   flex: 1;
+  min-height: 0; /* Required for flex child to enable overflow scroll */
   overflow-y: auto;
   padding: var(--spacing-sm);
   background: transparent;
