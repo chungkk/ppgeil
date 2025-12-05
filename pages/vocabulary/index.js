@@ -80,6 +80,8 @@ const VocabularyHomePage = () => {
   const topicWordCount = getTopicWordCount();
   const verbenPraepTopic = getTopicById('verben_praeposition');
   const verbenPraepCount = verbenPraepTopic?.words?.length || 60;
+  const nomenVerbTopic = getTopicById('nomen_verb');
+  const nomenVerbCount = nomenVerbTopic?.words?.length || 60;
   
   // Calculate totals with new structure
   const getLevelStats = (levelKey) => {
@@ -179,7 +181,34 @@ const VocabularyHomePage = () => {
               </Link>
             </div>
 
-            {/* Section 3: Learn by Level */}
+            {/* Section 3: Nomen-Verb-Verbindungen */}
+            <div className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #ec4899, #db2777)' }}>
+                  📎
+                </div>
+                <div className={styles.sectionInfo}>
+                  <h2 className={styles.sectionTitle}>
+                    {isEn ? 'Noun-Verb Collocations' : 'Cụm danh từ + động từ'}
+                  </h2>
+                  <p className={styles.sectionDesc}>
+                    Nomen-Verb-Verbindungen • {nomenVerbCount} {isEn ? 'phrases' : 'cụm từ'}
+                  </p>
+                </div>
+              </div>
+              
+              <p className={styles.sectionText}>
+                {isEn 
+                  ? 'Learn fixed noun-verb expressions commonly used in German. Example: eine Frage stellen, Bescheid geben...'
+                  : 'Học các cụm danh từ + động từ cố định thường dùng. VD: eine Frage stellen, Bescheid geben...'}
+              </p>
+
+              <Link href="/vocabulary/topics/nomen_verb" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #ec4899, #db2777)' }}>
+                {isEn ? 'Start Learning' : 'Bắt đầu học'} →
+              </Link>
+            </div>
+
+            {/* Section 4: Learn by Level */}
             <div className={styles.section}>
               <div className={styles.sectionHeader}>
                 <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}>

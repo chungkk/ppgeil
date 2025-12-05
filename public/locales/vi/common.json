@@ -750,5 +750,92 @@
     "reviewAnswers": "Xem lại đáp án",
     "retryTest": "Thi lại",
     "answered": "Đã trả lời"
+  },
+  "vocabPage": {
+    "title": "Từ vựng tiếng Đức",
+    "subtitle": "Học từ vựng theo chuẩn Goethe Institut",
+    "backToVocab": "Quay lại",
+    "byTopic": {
+      "title": "Học theo chủ đề",
+      "topics": "chủ đề",
+      "words": "từ",
+      "desc": "Học từ vựng theo nhóm chủ đề thực tế như Gia đình, Ẩm thực, Du lịch, Kinh doanh...",
+      "btn": "Xem chủ đề"
+    },
+    "verbPrep": {
+      "title": "Cụm động từ + Giới từ",
+      "name": "Verben mit Präpositionen",
+      "phrases": "cụm từ",
+      "desc": "Học các động từ đi kèm giới từ cố định. Rất quan trọng để giao tiếp trôi chảy!"
+    },
+    "nounVerb": {
+      "title": "Cụm danh từ + động từ",
+      "name": "Nomen-Verb-Verbindungen",
+      "phrases": "cụm từ",
+      "desc": "Học các cụm danh từ + động từ cố định thường dùng. VD: eine Frage stellen, Bescheid geben..."
+    },
+    "byLevel": {
+      "title": "Học theo trình độ",
+      "words": "từ",
+      "desc": "Theo giáo trình chuẩn Goethe Institut từ cơ bản đến trung cấp."
+    },
+    "levels": {
+      "a1": {
+        "title": "A1 - Cơ bản",
+        "desc": "Từ vựng cơ bản cho người mới"
+      },
+      "a2": {
+        "title": "A2 - Sơ cấp",
+        "desc": "Mở rộng vốn từ vựng cơ bản"
+      },
+      "b1": {
+        "title": "B1 - Trung cấp",
+        "desc": "Từ vựng nâng cao cho giao tiếp"
+      }
+    },
+    "stats": {
+      "mastered": "Đã thuộc",
+      "dueReview": "Cần ôn tập"
+    },
+    "startLearning": "Bắt đầu học",
+    "topics": {
+      "title": "Học theo chủ đề",
+      "subtitle": "chủ đề",
+      "grammar": "Ngữ pháp & Cấu trúc",
+      "basic": "Từ vựng cơ bản",
+      "people": "Con người & Quan hệ",
+      "daily": "Đời sống hàng ngày",
+      "health": "Sức khỏe & Cơ thể",
+      "world": "Thế giới & Thiên nhiên",
+      "travel": "Du lịch & Địa điểm",
+      "work": "Công việc & Giáo dục"
+    },
+    "learn": {
+      "back": "Quay lại",
+      "backTopics": "Chủ đề",
+      "tapToSee": "Nhấn để xem nghĩa",
+      "tapCard": "Nhấn vào thẻ để xem nghĩa",
+      "listen": "Nghe",
+      "dontKnow": "Chưa biết",
+      "familiar": "Hơi quen",
+      "knowIt": "Đã thuộc!",
+      "sessionComplete": "Hoàn thành!",
+      "topicComplete": "Hoàn thành chủ đề!",
+      "reviewTomorrow": "Ôn: Ngày mai",
+      "review3days": "Ôn: 3 ngày",
+      "review7days": "Ôn: 7 ngày",
+      "saving": "Đang lưu tiến trình...",
+      "saved": "Đã lưu với lặp lại ngắt quãng!",
+      "loginHint": "Đăng nhập để lưu tiến trình & dùng lặp lại ngắt quãng!",
+      "practiceMore": "Luyện thêm",
+      "reviewDue": "Ôn {count} từ",
+      "home": "Trang chủ",
+      "allTopics": "Tất cả chủ đề",
+      "due": "cần ôn",
+      "noun": "Danh từ",
+      "verb": "Động từ",
+      "adjective": "Tính từ",
+      "loading": "Đang tải..."
+    }
   }
 }

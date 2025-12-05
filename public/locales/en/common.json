@@ -753,5 +753,92 @@
     "reviewAnswers": "Review Answers",
     "retryTest": "Retry Test",
     "answered": "Answered"
+  },
+  "vocabPage": {
+    "title": "German Vocabulary",
+    "subtitle": "Learn vocabulary according to Goethe Institut standards",
+    "backToVocab": "Back",
+    "byTopic": {
+      "title": "Learn by Topic",
+      "topics": "topics",
+      "words": "words",
+      "desc": "Learn vocabulary grouped by practical topics like Family, Food, Travel, Business, and more.",
+      "btn": "Browse Topics"
+    },
+    "verbPrep": {
+      "title": "Verbs with Prepositions",
+      "name": "Verben mit Präpositionen",
+      "phrases": "phrases",
+      "desc": "Master German verbs that require specific prepositions. Essential for fluent communication!"
+    },
+    "nounVerb": {
+      "title": "Noun-Verb Collocations",
+      "name": "Nomen-Verb-Verbindungen",
+      "phrases": "phrases",
+      "desc": "Learn fixed noun-verb expressions commonly used in German. Example: eine Frage stellen, Bescheid geben..."
+    },
+    "byLevel": {
+      "title": "Learn by Level",
+      "words": "words",
+      "desc": "Follow the official Goethe Institut curriculum from beginner to intermediate level."
+    },
+    "levels": {
+      "a1": {
+        "title": "A1 - Beginner",
+        "desc": "Basic vocabulary for beginners"
+      },
+      "a2": {
+        "title": "A2 - Elementary",
+        "desc": "Expand your basic vocabulary"
+      },
+      "b1": {
+        "title": "B1 - Intermediate",
+        "desc": "Advanced vocabulary for communication"
+      }
+    },
+    "stats": {
+      "mastered": "Mastered",
+      "dueReview": "Due for Review"
+    },
+    "startLearning": "Start Learning",
+    "topics": {
+      "title": "Learn by Topic",
+      "subtitle": "topics",
+      "grammar": "Grammar & Structure",
+      "basic": "Basic Vocabulary",
+      "people": "People & Relationships",
+      "daily": "Daily Life",
+      "health": "Health & Body",
+      "world": "World & Nature",
+      "travel": "Travel & Places",
+      "work": "Work & Education"
+    },
+    "learn": {
+      "back": "Back",
+      "backTopics": "Topics",
+      "tapToSee": "Tap to see meaning",
+      "tapCard": "Tap the card to reveal meaning",
+      "listen": "Listen",
+      "dontKnow": "Don't Know",
+      "familiar": "Familiar",
+      "knowIt": "Know It!",
+      "sessionComplete": "Session Complete!",
+      "topicComplete": "Topic Complete!",
+      "reviewTomorrow": "Review: Tomorrow",
+      "review3days": "Review: 3 days",
+      "review7days": "Review: 7 days",
+      "saving": "Saving progress...",
+      "saved": "Progress saved with spaced repetition!",
+      "loginHint": "Log in to save progress & use spaced repetition!",
+      "practiceMore": "Practice More",
+      "reviewDue": "Review {count} Due",
+      "home": "Home",
+      "allTopics": "All Topics",
+      "due": "due",
+      "noun": "Noun",
+      "verb": "Verb",
+      "adjective": "Adjective",
+      "loading": "Loading..."
+    }
   }
 }

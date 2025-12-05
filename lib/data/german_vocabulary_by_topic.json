@@ -7143,6 +7143,739 @@
           "vi": "tuân theo"
         }
       ]
+    },
+    {
+      "id": "nomen_verb",
+      "name": "Nomen-Verb-Verbindungen",
+      "name_en": "Noun-Verb Collocations",
+      "name_vi": "Cụm danh từ + động từ",
+      "words": [
+        {
+          "word": "eine Frage stellen",
+          "en": "to ask a question",
+          "vi": "đặt câu hỏi"
+        },
+        {
+          "word": "eine Entscheidung treffen",
+          "en": "to make a decision",
+          "vi": "đưa ra quyết định"
+        },
+        {
+          "word": "Bescheid geben",
+          "en": "to let know",
+          "vi": "thông báo"
+        },
+        {
+          "word": "Bescheid wissen",
+          "en": "to be informed",
+          "vi": "biết rõ"
+        },
+        {
+          "word": "einen Antrag stellen",
+          "en": "to submit an application",
+          "vi": "nộp đơn"
+        },
+        {
+          "word": "Kritik üben",
+          "en": "to criticize",
+          "vi": "phê bình"
+        },
+        {
+          "word": "einen Beitrag leisten",
+          "en": "to make a contribution",
+          "vi": "đóng góp"
+        },
+        {
+          "word": "Abschied nehmen",
+          "en": "to say goodbye",
+          "vi": "chia tay"
+        },
+        {
+          "word": "in Betracht ziehen",
+          "en": "to take into consideration",
+          "vi": "xem xét"
+        },
+        {
+          "word": "zur Verfügung stellen",
+          "en": "to make available",
+          "vi": "cung cấp"
+        },
+        {
+          "word": "zur Verfügung stehen",
+          "en": "to be available",
+          "vi": "sẵn có"
+        },
+        {
+          "word": "in Anspruch nehmen",
+          "en": "to make use of",
+          "vi": "sử dụng, tận dụng"
+        },
+        {
+          "word": "Rücksicht nehmen auf",
+          "en": "to be considerate of",
+          "vi": "quan tâm đến"
+        },
+        {
+          "word": "Einfluss nehmen auf",
+          "en": "to influence",
+          "vi": "ảnh hưởng đến"
+        },
+        {
+          "word": "Wert legen auf",
+          "en": "to attach importance to",
+          "vi": "coi trọng"
+        },
+        {
+          "word": "einen Fehler machen",
+          "en": "to make a mistake",
+          "vi": "mắc lỗi"
+        },
+        {
+          "word": "einen Versuch machen",
+          "en": "to make an attempt",
+          "vi": "thử"
+        },
+        {
+          "word": "Fortschritte machen",
+          "en": "to make progress",
+          "vi": "tiến bộ"
+        },
+        {
+          "word": "sich Mühe geben",
+          "en": "to make an effort",
+          "vi": "cố gắng"
+        },
+        {
+          "word": "sich Sorgen machen",
+          "en": "to worry",
+          "vi": "lo lắng"
+        },
+        {
+          "word": "Verantwortung übernehmen",
+          "en": "to take responsibility",
+          "vi": "chịu trách nhiệm"
+        },
+        {
+          "word": "eine Rolle spielen",
+          "en": "to play a role",
+          "vi": "đóng vai trò"
+        },
+        {
+          "word": "einen Vertrag abschließen",
+          "en": "to conclude a contract",
+          "vi": "ký hợp đồng"
+        },
+        {
+          "word": "ein Gespräch führen",
+          "en": "to have a conversation",
+          "vi": "trò chuyện"
+        },
+        {
+          "word": "Maßnahmen ergreifen",
+          "en": "to take measures",
+          "vi": "thực hiện biện pháp"
+        },
+        {
+          "word": "eine Prüfung ablegen",
+          "en": "to take an exam",
+          "vi": "thi"
+        },
+        {
+          "word": "eine Prüfung bestehen",
+          "en": "to pass an exam",
+          "vi": "đỗ kỳ thi"
+        },
+        {
+          "word": "einen Beruf ausüben",
+          "en": "to practice a profession",
+          "vi": "hành nghề"
+        },
+        {
+          "word": "Bezug nehmen auf",
+          "en": "to refer to",
+          "vi": "đề cập đến"
+        },
+        {
+          "word": "Stellung nehmen zu",
+          "en": "to comment on",
+          "vi": "bày tỏ ý kiến"
+        },
+        {
+          "word": "in Kraft treten",
+          "en": "to come into effect",
+          "vi": "có hiệu lực"
+        },
+        {
+          "word": "außer Kraft setzen",
+          "en": "to invalidate",
+          "vi": "hủy bỏ"
+        },
+        {
+          "word": "in Frage stellen",
+          "en": "to question",
+          "vi": "đặt câu hỏi, nghi ngờ"
+        },
+        {
+          "word": "in Frage kommen",
+          "en": "to be an option",
+          "vi": "có thể xem xét"
+        },
+        {
+          "word": "Interesse haben an",
+          "en": "to be interested in",
+          "vi": "quan tâm đến"
+        },
+        {
+          "word": "Interesse wecken",
+          "en": "to arouse interest",
+          "vi": "khơi gợi sự quan tâm"
+        },
+        {
+          "word": "Geduld haben",
+          "en": "to be patient",
+          "vi": "kiên nhẫn"
+        },
+        {
+          "word": "Verständnis haben für",
+          "en": "to have understanding for",
+          "vi": "thông cảm"
+        },
+        {
+          "word": "Angst haben vor",
+          "en": "to be afraid of",
+          "vi": "sợ"
+        },
+        {
+          "word": "Lust haben auf",
+          "en": "to feel like",
+          "vi": "muốn, thèm"
+        },
+        {
+          "word": "Erfolg haben",
+          "en": "to be successful",
+          "vi": "thành công"
+        },
+        {
+          "word": "Pech haben",
+          "en": "to be unlucky",
+          "vi": "xui xẻo"
+        },
+        {
+          "word": "Glück haben",
+          "en": "to be lucky",
+          "vi": "may mắn"
+        },
+        {
+          "word": "Recht haben",
+          "en": "to be right",
+          "vi": "đúng"
+        },
+        {
+          "word": "Unrecht haben",
+          "en": "to be wrong",
+          "vi": "sai"
+        },
+        {
+          "word": "einen Eindruck machen",
+          "en": "to make an impression",
+          "vi": "gây ấn tượng"
+        },
+        {
+          "word": "eine Ausnahme machen",
+          "en": "to make an exception",
+          "vi": "ngoại lệ"
+        },
+        {
+          "word": "einen Vorschlag machen",
+          "en": "to make a suggestion",
+          "vi": "đề xuất"
+        },
+        {
+          "word": "einen Termin vereinbaren",
+          "en": "to make an appointment",
+          "vi": "hẹn lịch"
+        },
+        {
+          "word": "eine Meinung vertreten",
+          "en": "to hold an opinion",
+          "vi": "bảo vệ ý kiến"
+        },
+        {
+          "word": "Abstand halten",
+          "en": "to keep distance",
+          "vi": "giữ khoảng cách"
+        },
+        {
+          "word": "Kontakt aufnehmen",
+          "en": "to get in touch",
+          "vi": "liên hệ"
+        },
+        {
+          "word": "eine Rede halten",
+          "en": "to give a speech",
+          "vi": "phát biểu"
+        },
+        {
+          "word": "Kritik ausüben",
+          "en": "to criticize",
+          "vi": "chỉ trích"
+        },
+        {
+          "word": "Druck ausüben",
+          "en": "to put pressure",
+          "vi": "gây áp lực"
+        },
+        {
+          "word": "in Verbindung setzen",
+          "en": "to connect",
+          "vi": "kết nối"
+        },
+        {
+          "word": "zur Kenntnis nehmen",
+          "en": "to take note of",
+          "vi": "ghi nhận"
+        },
+        {
+          "word": "einen Rat geben",
+          "en": "to give advice",
+          "vi": "cho lời khuyên"
+        },
+        {
+          "word": "Hilfe leisten",
+          "en": "to provide help",
+          "vi": "giúp đỡ"
+        },
+        {
+          "word": "eine Antwort geben",
+          "en": "to give an answer",
+          "vi": "đưa ra câu trả lời"
+        },
+        {
+          "word": "eine Wahl treffen",
+          "en": "to make a choice",
+          "vi": "đưa ra lựa chọn"
+        },
+        {
+          "word": "zur Sprache bringen",
+          "en": "to bring up",
+          "vi": "đề cập đến"
+        },
+        {
+          "word": "zur Sprache kommen",
+          "en": "to be discussed",
+          "vi": "được đề cập"
+        },
+        {
+          "word": "zum Ausdruck bringen",
+          "en": "to express",
+          "vi": "bày tỏ"
+        },
+        {
+          "word": "zum Ausdruck kommen",
+          "en": "to be expressed",
+          "vi": "được thể hiện"
+        },
+        {
+          "word": "in Betrieb nehmen",
+          "en": "to put into operation",
+          "vi": "đưa vào hoạt động"
+        },
+        {
+          "word": "in Betrieb sein",
+          "en": "to be in operation",
+          "vi": "đang hoạt động"
+        },
+        {
+          "word": "in Kraft setzen",
+          "en": "to put into effect",
+          "vi": "đưa vào hiệu lực"
+        },
+        {
+          "word": "in Angriff nehmen",
+          "en": "to tackle",
+          "vi": "bắt tay vào làm"
+        },
+        {
+          "word": "in Kauf nehmen",
+          "en": "to accept (negative)",
+          "vi": "chấp nhận (điều không tốt)"
+        },
+        {
+          "word": "in Erwägung ziehen",
+          "en": "to consider",
+          "vi": "cân nhắc"
+        },
+        {
+          "word": "in Rechnung stellen",
+          "en": "to invoice",
+          "vi": "lập hóa đơn"
+        },
+        {
+          "word": "zum Einsatz kommen",
+          "en": "to be used",
+          "vi": "được sử dụng"
+        },
+        {
+          "word": "zum Abschluss bringen",
+          "en": "to conclude",
+          "vi": "hoàn thành"
+        },
+        {
+          "word": "zum Abschluss kommen",
+          "en": "to be concluded",
+          "vi": "được hoàn thành"
+        },
+        {
+          "word": "zur Durchführung bringen",
+          "en": "to carry out",
+          "vi": "thực hiện"
+        },
+        {
+          "word": "zur Durchführung kommen",
+          "en": "to be carried out",
+          "vi": "được thực hiện"
+        },
+        {
+          "word": "zur Anwendung bringen",
+          "en": "to apply",
+          "vi": "áp dụng"
+        },
+        {
+          "word": "zur Anwendung kommen",
+          "en": "to be applied",
+          "vi": "được áp dụng"
+        },
+        {
+          "word": "Einfluss haben auf",
+          "en": "to have influence on",
+          "vi": "có ảnh hưởng đến"
+        },
+        {
+          "word": "Einfluss ausüben auf",
+          "en": "to exert influence on",
+          "vi": "tác động đến"
+        },
+        {
+          "word": "Verantwortung tragen",
+          "en": "to bear responsibility",
+          "vi": "mang trách nhiệm"
+        },
+        {
+          "word": "Freude bereiten",
+          "en": "to bring joy",
+          "vi": "mang lại niềm vui"
+        },
+        {
+          "word": "Freude haben an",
+          "en": "to enjoy",
+          "vi": "thích thú với"
+        },
+        {
+          "word": "Angst machen",
+          "en": "to frighten",
+          "vi": "làm sợ"
+        },
+        {
+          "word": "Eindruck hinterlassen",
+          "en": "to leave an impression",
+          "vi": "để lại ấn tượng"
+        },
+        {
+          "word": "in Verlegenheit bringen",
+          "en": "to embarrass",
+          "vi": "làm bối rối"
+        },
+        {
+          "word": "in Verlegenheit geraten",
+          "en": "to become embarrassed",
+          "vi": "trở nên bối rối"
+        },
+        {
+          "word": "in Schwierigkeiten geraten",
+          "en": "to get into trouble",
+          "vi": "gặp khó khăn"
+        },
+        {
+          "word": "in Schwierigkeiten bringen",
+          "en": "to get sb into trouble",
+          "vi": "gây khó khăn cho"
+        },
+        {
+          "word": "Erfolg erzielen",
+          "en": "to achieve success",
+          "vi": "đạt được thành công"
+        },
+        {
+          "word": "ein Ergebnis erzielen",
+          "en": "to achieve a result",
+          "vi": "đạt được kết quả"
+        },
+        {
+          "word": "Gewinn erzielen",
+          "en": "to make profit",
+          "vi": "thu lợi nhuận"
+        },
+        {
+          "word": "ein Ziel erreichen",
+          "en": "to reach a goal",
+          "vi": "đạt mục tiêu"
+        },
+        {
+          "word": "ein Ziel verfolgen",
+          "en": "to pursue a goal",
+          "vi": "theo đuổi mục tiêu"
+        },
+        {
+          "word": "Unterstützung gewähren",
+          "en": "to grant support",
+          "vi": "hỗ trợ"
+        },
+        {
+          "word": "Unterstützung finden",
+          "en": "to find support",
+          "vi": "tìm được sự hỗ trợ"
+        },
+        {
+          "word": "eine Vereinbarung treffen",
+          "en": "to reach an agreement",
+          "vi": "đạt được thỏa thuận"
+        },
+        {
+          "word": "einen Vertrag schließen",
+          "en": "to conclude a contract",
+          "vi": "ký hợp đồng"
+        },
+        {
+          "word": "ein Abkommen treffen",
+          "en": "to make an agreement",
+          "vi": "đạt được hiệp định"
+        },
+        {
+          "word": "eine Abmachung treffen",
+          "en": "to make an arrangement",
+          "vi": "thỏa thuận"
+        },
+        {
+          "word": "in Kontakt treten mit",
+          "en": "to get in contact",
+          "vi": "tiếp xúc với"
+        },
+        {
+          "word": "in Kontakt stehen mit",
+          "en": "to be in contact",
+          "vi": "liên lạc với"
+        },
+        {
+          "word": "Verhandlungen führen",
+          "en": "to negotiate",
+          "vi": "đàm phán"
+        },
+        {
+          "word": "Anklage erheben gegen",
+          "en": "to press charges",
+          "vi": "khởi tố"
+        },
+        {
+          "word": "unter Strafe stellen",
+          "en": "to make punishable",
+          "vi": "quy định hình phạt"
+        },
+        {
+          "word": "unter Strafe stehen",
+          "en": "to be punishable",
+          "vi": "bị phạt"
+        },
+        {
+          "word": "vor Gericht stehen",
+          "en": "to stand trial",
+          "vi": "ra tòa"
+        },
+        {
+          "word": "ein Urteil fällen",
+          "en": "to pass judgment",
+          "vi": "tuyên án"
+        },
+        {
+          "word": "Maßnahmen treffen",
+          "en": "to take measures",
+          "vi": "áp dụng biện pháp"
+        },
+        {
+          "word": "eine Aufgabe erfüllen",
+          "en": "to fulfill a task",
+          "vi": "hoàn thành nhiệm vụ"
+        },
+        {
+          "word": "eine Aufgabe übernehmen",
+          "en": "to take on a task",
+          "vi": "đảm nhận nhiệm vụ"
+        },
+        {
+          "word": "Arbeit leisten",
+          "en": "to do work",
+          "vi": "làm việc"
+        },
+        {
+          "word": "ein Risiko eingehen",
+          "en": "to take a risk",
+          "vi": "chấp nhận rủi ro"
+        },
+        {
+          "word": "aufs Spiel setzen",
+          "en": "to put at stake",
+          "vi": "đặt vào vòng nguy hiểm"
+        },
+        {
+          "word": "auf dem Spiel stehen",
+          "en": "to be at stake",
+          "vi": "đang bị đe dọa"
+        },
+        {
+          "word": "in Gefahr bringen",
+          "en": "to endanger",
+          "vi": "gây nguy hiểm"
+        },
+        {
+          "word": "in Gefahr geraten",
+          "en": "to get into danger",
+          "vi": "gặp nguy hiểm"
+        },
+        {
+          "word": "ein Ende setzen",
+          "en": "to put an end to",
+          "vi": "chấm dứt"
+        },
+        {
+          "word": "ein Ende nehmen",
+          "en": "to come to an end",
+          "vi": "kết thúc"
+        },
+        {
+          "word": "zu Ende bringen",
+          "en": "to finish",
+          "vi": "hoàn thành"
+        },
+        {
+          "word": "zu Ende gehen",
+          "en": "to end",
+          "vi": "kết thúc"
+        },
+        {
+          "word": "Wert sein",
+          "en": "to be worth",
+          "vi": "có giá trị"
+        },
+        {
+          "word": "Sinn machen",
+          "en": "to make sense",
+          "vi": "có ý nghĩa"
+        },
+        {
+          "word": "Platz nehmen",
+          "en": "to take a seat",
+          "vi": "ngồi xuống"
+        },
+        {
+          "word": "in Ordnung sein",
+          "en": "to be alright",
+          "vi": "ổn"
+        },
+        {
+          "word": "in Ordnung bringen",
+          "en": "to fix",
+          "vi": "sửa chữa"
+        },
+        {
+          "word": "Anerkennung finden",
+          "en": "to find recognition",
+          "vi": "được công nhận"
+        },
+        {
+          "word": "Beachtung schenken",
+          "en": "to pay attention",
+          "vi": "chú ý đến"
+        },
+        {
+          "word": "Widerstand leisten",
+          "en": "to resist",
+          "vi": "chống cự"
+        },
+        {
+          "word": "Verzicht leisten auf",
+          "en": "to renounce",
+          "vi": "từ bỏ"
+        },
+        {
+          "word": "einen Beweis erbringen",
+          "en": "to provide evidence",
+          "vi": "đưa ra bằng chứng"
+        },
+        {
+          "word": "Zeugnis ablegen",
+          "en": "to testify",
+          "vi": "làm chứng"
+        },
+        {
+          "word": "Rechenschaft ablegen",
+          "en": "to account for",
+          "vi": "giải trình"
+        },
+        {
+          "word": "einen Eid leisten",
+          "en": "to take an oath",
+          "vi": "tuyên thệ"
+        },
+        {
+          "word": "eine Schuld begleichen",
+          "en": "to settle a debt",
+          "vi": "trả nợ"
+        },
+        {
+          "word": "Anspruch erheben auf",
+          "en": "to lay claim to",
+          "vi": "đòi quyền"
+        },
+        {
+          "word": "Einspruch erheben gegen",
+          "en": "to object to",
+          "vi": "phản đối"
+        },
+        {
+          "word": "Klage erheben gegen",
+          "en": "to file a lawsuit",
+          "vi": "khởi kiện"
+        },
+        {
+          "word": "Protest einlegen gegen",
+          "en": "to lodge a protest",
+          "vi": "phản đối"
+        },
+        {
+          "word": "Berufung einlegen",
+          "en": "to appeal",
+          "vi": "kháng cáo"
+        },
+        {
+          "word": "Folge leisten",
+          "en": "to comply with",
+          "vi": "tuân theo"
+        },
+        {
+          "word": "Gehorsam leisten",
+          "en": "to obey",
+          "vi": "vâng lời"
+        },
+        {
+          "word": "Ersatz leisten",
+          "en": "to compensate",
+          "vi": "bồi thường"
+        },
+        {
+          "word": "Abbitte leisten",
+          "en": "to apologize formally",
+          "vi": "xin lỗi trịnh trọng"
+        }
+      ]
     }
   ]
 }

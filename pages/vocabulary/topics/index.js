@@ -11,7 +11,7 @@ const topicCategories = {
     name_en: 'Grammar & Structure',
     name_vi: 'Ngữ pháp & Cấu trúc',
     icon: '🔗',
-    topics: ['verben_praeposition', 'verbs', 'adjectives']
+    topics: ['verben_praeposition', 'nomen_verb', 'verbs', 'adjectives']
   },
   basic: {
     name_en: 'Basic Vocabulary',

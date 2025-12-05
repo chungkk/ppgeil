@@ -720,5 +720,92 @@
     "reviewAnswers": "Antworten überprüfen",
     "retryTest": "Neuer Test",
     "answered": "Beantwortet"
+  },
+  "vocabPage": {
+    "title": "Deutscher Wortschatz",
+    "subtitle": "Vokabeln nach Goethe-Institut-Standards lernen",
+    "backToVocab": "Zurück",
+    "byTopic": {
+      "title": "Nach Thema lernen",
+      "topics": "Themen",
+      "words": "Wörter",
+      "desc": "Vokabeln nach praktischen Themen wie Familie, Essen, Reisen, Geschäft und mehr lernen.",
+      "btn": "Themen durchsuchen"
+    },
+    "verbPrep": {
+      "title": "Verben mit Präpositionen",
+      "name": "Verben mit Präpositionen",
+      "phrases": "Ausdrücke",
+      "desc": "Deutsche Verben mit festen Präpositionen beherrschen. Wichtig für flüssige Kommunikation!"
+    },
+    "nounVerb": {
+      "title": "Nomen-Verb-Verbindungen",
+      "name": "Nomen-Verb-Verbindungen",
+      "phrases": "Ausdrücke",
+      "desc": "Feste Nomen-Verb-Verbindungen lernen. Beispiel: eine Frage stellen, Bescheid geben..."
+    },
+    "byLevel": {
+      "title": "Nach Niveau lernen",
+      "words": "Wörter",
+      "desc": "Dem offiziellen Goethe-Institut-Lehrplan von Anfänger bis Mittelstufe folgen."
+    },
+    "levels": {
+      "a1": {
+        "title": "A1 - Anfänger",
+        "desc": "Grundwortschatz für Anfänger"
+      },
+      "a2": {
+        "title": "A2 - Grundstufe",
+        "desc": "Grundwortschatz erweitern"
+      },
+      "b1": {
+        "title": "B1 - Mittelstufe",
+        "desc": "Fortgeschrittener Wortschatz für Kommunikation"
+      }
+    },
+    "stats": {
+      "mastered": "Beherrscht",
+      "dueReview": "Zur Wiederholung"
+    },
+    "startLearning": "Lernen starten",
+    "topics": {
+      "title": "Nach Thema lernen",
+      "subtitle": "Themen",
+      "grammar": "Grammatik & Struktur",
+      "basic": "Grundwortschatz",
+      "people": "Menschen & Beziehungen",
+      "daily": "Alltag",
+      "health": "Gesundheit & Körper",
+      "world": "Welt & Natur",
+      "travel": "Reisen & Orte",
+      "work": "Arbeit & Bildung"
+    },
+    "learn": {
+      "back": "Zurück",
+      "backTopics": "Themen",
+      "tapToSee": "Tippen für Bedeutung",
+      "tapCard": "Karte tippen für Bedeutung",
+      "listen": "Anhören",
+      "dontKnow": "Weiß nicht",
+      "familiar": "Bekannt",
+      "knowIt": "Kann ich!",
+      "sessionComplete": "Sitzung abgeschlossen!",
+      "topicComplete": "Thema abgeschlossen!",
+      "reviewTomorrow": "Wiederholen: Morgen",
+      "review3days": "Wiederholen: 3 Tage",
+      "review7days": "Wiederholen: 7 Tage",
+      "saving": "Fortschritt wird gespeichert...",
+      "saved": "Fortschritt mit Spaced Repetition gespeichert!",
+      "loginHint": "Anmelden um Fortschritt zu speichern & Spaced Repetition zu nutzen!",
+      "practiceMore": "Mehr üben",
+      "reviewDue": "{count} wiederholen",
+      "home": "Startseite",
+      "allTopics": "Alle Themen",
+      "due": "fällig",
+      "noun": "Nomen",
+      "verb": "Verb",
+      "adjective": "Adjektiv",
+      "loading": "Lädt..."
+    }
   }
 }
