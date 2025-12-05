@@ -125,19 +125,27 @@ async function translateWithOpenAI(text, context = '', targetLang = 'vi', source
   
   // SENTENCE MODE: Natural, fluent translation for full sentences
   if (mode === 'sentence') {
-    systemPrompt = `Bạn là một dịch giả chuyên nghiệp với 20 năm kinh nghiệm dịch ${sourceLanguageName} sang ${targetLanguageName}. 
-Phong cách dịch của bạn:
-- Dịch tự nhiên, trôi chảy như người bản ngữ nói
-- Giữ nguyên ý nghĩa và cảm xúc của câu gốc
-- Không dịch máy móc từng từ
-- Sử dụng cách diễn đạt phổ biến trong ${targetLanguageName}
-- Với tiếng Việt: dùng từ ngữ đời thường, dễ hiểu, tránh từ Hán Việt khó hiểu`;
+    // Language-specific tips for natural translation
+    const languageTips = {
+      vi: '- Với tiếng Việt: dùng từ ngữ đời thường, dễ hiểu, tránh từ Hán Việt khó hiểu',
+      en: '- For English: use everyday conversational language, natural idioms, and clear expressions',
+    };
+    const extraTip = languageTips[targetLang] || '';
     
-    prompt = `Dịch câu sau sang ${targetLanguageName} một cách tự nhiên và trôi chảy:
+    systemPrompt = `You are a professional translator with 20 years of experience translating ${sourceLanguageName} to ${targetLanguageName}.
+
+Your translation style:
+- Translate naturally and fluently, as a native speaker would say it
+- Preserve the original meaning and emotion
+- Never translate word-by-word mechanically
+- Use common expressions and natural phrasing in ${targetLanguageName}
+${extraTip}`;
+    
+    prompt = `Translate the following sentence to ${targetLanguageName} naturally and fluently:
 
 "${text}"
 
-CHỈ trả về bản dịch, KHÔNG giải thích.`;
+Return ONLY the translation, NO explanations.`;
     
     maxTokens = 200;
   } 
