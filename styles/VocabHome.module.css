@@ -288,18 +288,43 @@
     font-size: 28px;
   }
 
+  .subtitle {
+    font-size: 14px;
+  }
+
   .section {
     padding: 20px;
+    border-radius: 16px;
+  }
+
+  .sectionHeader {
+    gap: 12px;
   }
 
   .sectionIconWrapper {
     width: 48px;
     height: 48px;
     font-size: 24px;
+    border-radius: 12px;
   }
 
   .sectionTitle {
     font-size: 18px;
+  }
+
+  .sectionDesc {
+    font-size: 13px;
+  }
+
+  .sectionText {
+    font-size: 13px;
+  }
+
+  .sectionBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
   }
 
   .levelGrid {
@@ -309,6 +334,7 @@
 
   .levelCard {
     padding: 12px;
+    border-radius: 12px;
   }
 
   .levelIcon {
@@ -317,6 +343,10 @@
 
   .levelCount {
     font-size: 20px;
+  }
+
+  .levelLabel {
+    font-size: 11px;
   }
 
   .levelBadge {
@@ -328,10 +358,55 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .statIcon {
+    font-size: 20px;
+  }
+
+  .statValue {
+    font-size: 18px;
+  }
+
+  .statLabel {
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 70px 10px 24px;
+  }
+
+  .header {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 22px;
+    gap: 8px;
+  }
+
+  .titleIcon {
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 16px;
+  }
+
+  .sectionIconWrapper {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .sectionTitle {
+    font-size: 16px;
+  }
+
   .levelGrid {
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
@@ -354,7 +429,18 @@
     font-size: 18px;
   }
 
+  .levelLabel {
+    font-size: 10px;
+  }
+
   .progressPercent {
     display: none;
+  }
+
+  .dueBadge {
+    top: -6px;
+    right: -6px;
+    padding: 3px 6px;
+    font-size: 10px;
   }
 }

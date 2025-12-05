@@ -510,10 +510,168 @@
   transform: translateY(-2px);
 }
 
-/* Responsive */
-@media (max-width: 480px) {
+/* Responsive - Tablet */
+@media (max-width: 768px) {
   .container {
     padding: 70px 12px 32px;
+  }
+
+  .header {
+    margin-bottom: 12px;
+  }
+
+  .backLink {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .levelIcon {
+    font-size: 22px;
+  }
+
+  .levelTitle {
+    font-size: 16px;
+  }
+
+  .progressText {
+    font-size: 13px;
+  }
+
+  .overallProgress {
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+
+  .progressBar {
+    margin-bottom: 10px;
+  }
+
+  .scoreRow {
+    gap: 16px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .cardArea {
+    gap: 16px;
+  }
+
+  .flashcard {
+    max-width: 340px;
+    height: 280px;
+  }
+
+  .cardFront,
+  .cardBack {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .article {
+    font-size: 16px;
+  }
+
+  .word {
+    font-size: 28px;
+  }
+
+  .plural {
+    font-size: 13px;
+  }
+
+  .type {
+    font-size: 13px;
+  }
+
+  .hint {
+    font-size: 12px;
+  }
+
+  .translation {
+    font-size: 24px;
+  }
+
+  .wordSmall {
+    font-size: 14px;
+  }
+
+  .speakBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .speakBtnBack {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .answerRow3 {
+    max-width: 360px;
+    gap: 8px;
+  }
+
+  .btnNew,
+  .btnLearning,
+  .btnMastered {
+    padding: 12px 6px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .btnNew span:first-child,
+  .btnLearning span:first-child,
+  .btnMastered span:first-child {
+    font-size: 18px;
+  }
+
+  .completeIcon {
+    font-size: 48px;
+  }
+
+  .completeTitle {
+    font-size: 22px;
+  }
+
+  .statsRow3 {
+    gap: 10px;
+  }
+
+  .statBox3 {
+    padding: 14px 12px;
+    border-radius: 12px;
+    min-width: 80px;
+  }
+
+  .statNum {
+    font-size: 24px;
+  }
+
+  .statLabel {
+    font-size: 11px;
+  }
+
+  .statReview {
+    font-size: 9px;
+  }
+
+  .actionRow {
+    gap: 8px;
+  }
+
+  .btnRestart,
+  .btnHome,
+  .btnDue {
+    padding: 10px 16px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 70px 10px 24px;
   }
 
   .header {
@@ -524,22 +682,124 @@
   .backLink {
     width: 100%;
     text-align: center;
+    font-size: 12px;
+  }
+
+  .levelInfo {
+    gap: 6px;
+  }
+
+  .levelIcon {
+    font-size: 20px;
+  }
+
+  .levelTitle {
+    font-size: 15px;
+  }
+
+  .progressText {
+    font-size: 12px;
+  }
+
+  .overallProgress {
+    margin-bottom: 10px;
+    padding: 8px 10px;
+  }
+
+  .progressStats {
+    gap: 10px;
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .overallBar {
+    height: 5px;
+  }
+
+  .dueLabel {
+    font-size: 11px;
+  }
+
+  .progressBar {
+    height: 5px;
+    margin-bottom: 8px;
+  }
+
+  .scoreRow {
+    gap: 12px;
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .cardArea {
+    gap: 14px;
   }
 
   .flashcard {
-    height: 280px;
+    max-width: 100%;
+    height: 260px;
+  }
+
+  .cardFront,
+  .cardBack {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .article {
+    font-size: 14px;
   }
 
   .word {
-    font-size: 26px;
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .plural {
+    font-size: 12px;
+  }
+
+  .type {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .hint {
+    font-size: 11px;
+    bottom: 12px;
   }
 
   .translation {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .wordSmall {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .speakBtn {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .speakBtnBack {
+    font-size: 12px;
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+
+  .tapText {
+    font-size: 13px;
   }
 
   .answerRow3 {
     flex-direction: column;
+    max-width: 100%;
   }
 
   .btnNew,
@@ -548,6 +808,8 @@
     flex-direction: row;
     justify-content: center;
     padding: 12px 16px;
+    gap: 8px;
+    font-size: 13px;
   }
 
   .btnNew span:first-child,
@@ -556,9 +818,24 @@
     font-size: 18px;
   }
 
+  .completeArea {
+    padding: 24px 12px;
+  }
+
+  .completeIcon {
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+
+  .completeTitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
   .statsRow3 {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    margin-bottom: 16px;
   }
 
   .statBox3 {
@@ -566,14 +843,36 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 16px;
+    border-radius: 10px;
   }
 
   .statNum {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .statLabel {
+    font-size: 12px;
+  }
+
+  .statReview {
+    font-size: 10px;
+  }
+
+  .savedInfo {
+    font-size: 13px;
+    margin: 12px 0;
+  }
+
+  .loginHint {
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 12px 0;
   }
 
   .actionRow {
     flex-direction: column;
+    gap: 8px;
   }
 
   .btnRestart,
@@ -581,10 +880,7 @@
   .btnDue {
     width: 100%;
     justify-content: center;
-  }
-
-  .progressStats {
-    gap: 12px;
-    font-size: 12px;
+    padding: 12px 16px;
+    font-size: 14px;
   }
 }
