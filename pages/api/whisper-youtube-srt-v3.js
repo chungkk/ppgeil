@@ -31,6 +31,10 @@ const MIN_WORDS = 6;
 const MAX_WORDS = 20;  // Tăng từ 14 lên 20 để thử câu dài hơn
 const MAX_CHAR_LENGTH = 150;
 
+// Buffer để bù đắp Whisper timestamp không chính xác
+const START_BUFFER = 0.08;  // Lùi start 80ms để không mất từ đầu
+const END_BUFFER = 0.35;    // Kéo dài end 350ms để từ cuối không bị cắt
+
 async function downloadYouTubeAudio(videoId, outputPath) {
   const url = `https://www.youtube.com/watch?v=${videoId}`;
   const command = `yt-dlp -f bestaudio --no-playlist -o "${outputPath}" "${url}"`;
@@ -473,10 +477,14 @@ function smartMergeWithPunctuation(words) {
     text = cleanText(text);
     
     if (text) {
+      // Áp dụng buffer để bù đắp Whisper timestamp không chính xác
+      const bufferedStart = Math.max(0, currentSegment.start - START_BUFFER);
+      const bufferedEnd = currentSegment.end + END_BUFFER;
+      
       segments.push({
         text: text,
-        start: currentSegment.start,
-        end: currentSegment.end,
+        start: bufferedStart,
+        end: bufferedEnd,
         wordStartIndex: currentSegment.wordIndices[0],
         wordEndIndex: currentSegment.wordIndices[currentSegment.wordIndices.length - 1]
       });
