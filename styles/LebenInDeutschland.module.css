@@ -472,6 +472,9 @@
 .option.clickable {
   cursor: pointer;
   transition: all 0.2s ease;
+  color: var(--text-primary);
+  text-align: left;
+  width: 100%;
 }
 
 .option.clickable:hover:not(:disabled) {
