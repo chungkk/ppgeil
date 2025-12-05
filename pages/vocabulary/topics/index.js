@@ -1,64 +1,59 @@
 import React from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../../context/LanguageContext';
 import SEO from '../../../components/SEO';
 import { getAllTopics, getTotalWordCount, topicIcons } from '../../../lib/data/goetheTopicVocabulary';
 import styles from '../../../styles/VocabTopics.module.css';
 
-// Group topics by category
+// Group topics by category with translation keys
 const topicCategories = {
   grammar: {
-    name_en: 'Grammar & Structure',
-    name_vi: 'Ngữ pháp & Cấu trúc',
+    key: 'grammar',
     icon: '🔗',
     topics: ['verben_praeposition', 'nomen_verb', 'verbs', 'adjectives']
   },
   basic: {
-    name_en: 'Basic Vocabulary',
-    name_vi: 'Từ vựng cơ bản',
+    key: 'basic',
     icon: '📝',
     topics: ['numbers', 'colors', 'time']
   },
   people: {
-    name_en: 'People & Relationships',
-    name_vi: 'Con người & Quan hệ',
+    key: 'people',
     icon: '👥',
     topics: ['family', 'character', 'feelings', 'professions']
   },
   daily: {
-    name_en: 'Daily Life',
-    name_vi: 'Đời sống hàng ngày',
+    key: 'daily',
     icon: '🏠',
     topics: ['house', 'food', 'clothes', 'daily_routine', 'shopping']
   },
   health: {
-    name_en: 'Health & Body',
-    name_vi: 'Sức khỏe & Cơ thể',
+    key: 'health',
     icon: '💪',
     topics: ['body', 'health', 'sports']
   },
   world: {
-    name_en: 'World & Nature',
-    name_vi: 'Thế giới & Thiên nhiên',
+    key: 'world',
     icon: '🌍',
     topics: ['animals', 'nature', 'weather']
   },
   travel: {
-    name_en: 'Travel & Places',
-    name_vi: 'Du lịch & Địa điểm',
+    key: 'travel',
     icon: '✈️',
     topics: ['transport', 'travel', 'restaurant']
   },
   work: {
-    name_en: 'Work & Education',
-    name_vi: 'Công việc & Giáo dục',
+    key: 'work',
     icon: '💼',
     topics: ['business', 'school', 'technology', 'hobbies']
   }
 };
 
 const VocabularyTopicsPage = () => {
+  const { t } = useTranslation('common');
   const { currentLanguage } = useLanguage();
+  const isDe = currentLanguage === 'de';
   const isEn = currentLanguage === 'en';
   
   const allTopics = getAllTopics();
@@ -69,24 +64,31 @@ const VocabularyTopicsPage = () => {
     return allTopics.find(t => t.id === topicId);
   };
 
+  // Get topic name based on language
+  const getTopicLocalName = (topic) => {
+    if (isDe) return topic.name; // German name
+    if (isEn) return topic.name_en || topic.name;
+    return topic.name_vi || topic.name;
+  };
+
   return (
     <>
       <SEO
-        title={isEn ? 'Learn German by Topic' : 'Học tiếng Đức theo chủ đề'}
-        description={isEn ? 'Learn German vocabulary organized by topic' : 'Học từ vựng tiếng Đức theo chủ đề'}
+        title={t('vocabPage.topics.title')}
+        description={t('vocabPage.byTopic.desc')}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
           <Link href="/vocabulary" className={styles.backLink}>
-            ← {isEn ? 'Back to Vocabulary' : 'Quay lại'}
+            ← {t('vocabPage.backToVocab')}
           </Link>
           <h1 className={styles.title}>
-            {isEn ? 'Learn by Topic' : 'Học theo chủ đề'}
+            {t('vocabPage.byTopic.title')}
           </h1>
           <p className={styles.subtitle}>
-            {allTopics.length} {isEn ? 'topics' : 'chủ đề'} • {totalWords} {isEn ? 'words' : 'từ vựng'}
+            {allTopics.length} {t('vocabPage.topics.subtitle')} • {totalWords} {t('vocabPage.byTopic.words')}
           </p>
         </div>
 
@@ -97,7 +99,7 @@ const VocabularyTopicsPage = () => {
               <div className={styles.categoryHeader}>
                 <span className={styles.categoryIcon}>{category.icon}</span>
                 <h2 className={styles.categoryTitle}>
-                  {isEn ? category.name_en : category.name_vi}
+                  {t(`vocabPage.topics.${category.key}`)}
                 </h2>
               </div>
               
@@ -118,7 +120,7 @@ const VocabularyTopicsPage = () => {
                       <div className={styles.topicInfo}>
                         <h3 className={styles.topicName}>{topic.name}</h3>
                         <p className={styles.topicNameLocal}>
-                          {isEn ? topic.name_en : topic.name_vi}
+                          {getTopicLocalName(topic)}
                         </p>
                       </div>
                       <span className={styles.wordCount}>

@@ -18,8 +18,6 @@ const VocabularyHomePage = () => {
   const { currentLanguage } = useLanguage();
   const [progress, setProgress] = useState(null);
 
-  const isEn = currentLanguage === 'en';
-
   // Load user progress
   useEffect(() => {
     if (user) {
@@ -49,8 +47,6 @@ const VocabularyHomePage = () => {
     {
       id: 'A1',
       key: 'a1',
-      title: isEn ? 'A1 - Beginner' : 'A1 - Cơ bản',
-      description: isEn ? 'Basic vocabulary for beginners' : 'Từ vựng cơ bản cho người mới',
       count: goetheA1Vocabulary.length,
       icon: '🌱',
       color: '#22c55e'
@@ -58,8 +54,6 @@ const VocabularyHomePage = () => {
     {
       id: 'A2',
       key: 'a2',
-      title: isEn ? 'A2 - Elementary' : 'A2 - Sơ cấp',
-      description: isEn ? 'Expand your basic vocabulary' : 'Mở rộng vốn từ vựng cơ bản',
       count: goetheA2Vocabulary.length,
       icon: '📚',
       color: '#3b82f6'
@@ -67,8 +61,6 @@ const VocabularyHomePage = () => {
     {
       id: 'B1',
       key: 'b1',
-      title: isEn ? 'B1 - Intermediate' : 'B1 - Trung cấp',
-      description: isEn ? 'Advanced vocabulary for communication' : 'Từ vựng nâng cao cho giao tiếp',
       count: goetheB1Vocabulary.length,
       icon: '🎓',
       color: '#8b5cf6'
@@ -105,8 +97,8 @@ const VocabularyHomePage = () => {
   return (
     <>
       <SEO
-        title={isEn ? 'German Vocabulary' : 'Từ vựng tiếng Đức'}
-        description={isEn ? 'Learn German vocabulary from A1 to B1' : 'Học từ vựng tiếng Đức từ A1 đến B1'}
+        title={t('vocabPage.title')}
+        description={t('vocabPage.subtitle')}
       />
 
       <div className={styles.container}>
@@ -114,12 +106,10 @@ const VocabularyHomePage = () => {
         <div className={styles.header}>
           <h1 className={styles.title}>
             <span className={styles.titleIcon}>📚</span>
-            {isEn ? 'German Vocabulary' : 'Từ vựng tiếng Đức'}
+            {t('vocabPage.title')}
           </h1>
           <p className={styles.subtitle}>
-            {isEn 
-              ? 'Learn vocabulary according to Goethe Institut standards' 
-              : 'Học từ vựng theo chuẩn Goethe Institut'}
+            {t('vocabPage.subtitle')}
           </p>
         </div>
 
@@ -135,22 +125,20 @@ const VocabularyHomePage = () => {
                 </div>
                 <div className={styles.sectionInfo}>
                   <h2 className={styles.sectionTitle}>
-                    {isEn ? 'Learn by Topic' : 'Học theo chủ đề'}
+                    {t('vocabPage.byTopic.title')}
                   </h2>
                   <p className={styles.sectionDesc}>
-                    {topicCount} {isEn ? 'topics' : 'chủ đề'} • {topicWordCount} {isEn ? 'words' : 'từ'}
+                    {topicCount} {t('vocabPage.byTopic.topics')} • {topicWordCount} {t('vocabPage.byTopic.words')}
                   </p>
                 </div>
               </div>
               
               <p className={styles.sectionText}>
-                {isEn 
-                  ? 'Learn vocabulary grouped by practical topics like Family, Food, Travel, Business, and more.'
-                  : 'Học từ vựng theo nhóm chủ đề thực tế như Gia đình, Ẩm thực, Du lịch, Kinh doanh...'}
+                {t('vocabPage.byTopic.desc')}
               </p>
 
               <Link href="/vocabulary/topics" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)' }}>
-                {isEn ? 'Browse Topics' : 'Xem chủ đề'} →
+                {t('vocabPage.byTopic.btn')} →
               </Link>
             </div>
 
@@ -162,22 +150,20 @@ const VocabularyHomePage = () => {
                 </div>
                 <div className={styles.sectionInfo}>
                   <h2 className={styles.sectionTitle}>
-                    {isEn ? 'Verbs with Prepositions' : 'Cụm động từ + Giới từ'}
+                    {t('vocabPage.verbPrep.title')}
                   </h2>
                   <p className={styles.sectionDesc}>
-                    Verben mit Präpositionen • {verbenPraepCount} {isEn ? 'phrases' : 'cụm từ'}
+                    {t('vocabPage.verbPrep.name')} • {verbenPraepCount} {t('vocabPage.verbPrep.phrases')}
                   </p>
                 </div>
               </div>
               
               <p className={styles.sectionText}>
-                {isEn 
-                  ? 'Master German verbs that require specific prepositions. Essential for fluent communication!'
-                  : 'Học các động từ đi kèm giới từ cố định. Rất quan trọng để giao tiếp trôi chảy!'}
+                {t('vocabPage.verbPrep.desc')}
               </p>
 
               <Link href="/vocabulary/topics/verben_praeposition" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
-                {isEn ? 'Start Learning' : 'Bắt đầu học'} →
+                {t('vocabPage.startLearning')} →
               </Link>
             </div>
 
@@ -189,22 +175,20 @@ const VocabularyHomePage = () => {
                 </div>
                 <div className={styles.sectionInfo}>
                   <h2 className={styles.sectionTitle}>
-                    {isEn ? 'Noun-Verb Collocations' : 'Cụm danh từ + động từ'}
+                    {t('vocabPage.nounVerb.title')}
                   </h2>
                   <p className={styles.sectionDesc}>
-                    Nomen-Verb-Verbindungen • {nomenVerbCount} {isEn ? 'phrases' : 'cụm từ'}
+                    {t('vocabPage.nounVerb.name')} • {nomenVerbCount} {t('vocabPage.nounVerb.phrases')}
                   </p>
                 </div>
               </div>
               
               <p className={styles.sectionText}>
-                {isEn 
-                  ? 'Learn fixed noun-verb expressions commonly used in German. Example: eine Frage stellen, Bescheid geben...'
-                  : 'Học các cụm danh từ + động từ cố định thường dùng. VD: eine Frage stellen, Bescheid geben...'}
+                {t('vocabPage.nounVerb.desc')}
               </p>
 
               <Link href="/vocabulary/topics/nomen_verb" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #ec4899, #db2777)' }}>
-                {isEn ? 'Start Learning' : 'Bắt đầu học'} →
+                {t('vocabPage.startLearning')} →
               </Link>
             </div>
 
@@ -216,18 +200,16 @@ const VocabularyHomePage = () => {
                 </div>
                 <div className={styles.sectionInfo}>
                   <h2 className={styles.sectionTitle}>
-                    {isEn ? 'Learn by Level' : 'Học theo trình độ'}
+                    {t('vocabPage.byLevel.title')}
                   </h2>
                   <p className={styles.sectionDesc}>
-                    A1 → A2 → B1 • {totalWords} {isEn ? 'words' : 'từ'}
+                    A1 → A2 → B1 • {totalWords} {t('vocabPage.byLevel.words')}
                   </p>
                 </div>
               </div>
 
               <p className={styles.sectionText}>
-                {isEn 
-                  ? 'Follow the official Goethe Institut curriculum from beginner to intermediate level.'
-                  : 'Theo giáo trình chuẩn Goethe Institut từ cơ bản đến trung cấp.'}
+                {t('vocabPage.byLevel.desc')}
               </p>
 
               {/* Level Cards */}
@@ -250,7 +232,7 @@ const VocabularyHomePage = () => {
                       </div>
                       <div className={styles.levelInfo}>
                         <span className={styles.levelCount}>{level.count}</span>
-                        <span className={styles.levelLabel}>{isEn ? 'words' : 'từ'}</span>
+                        <span className={styles.levelLabel}>{t('vocabPage.byLevel.words')}</span>
                       </div>
                       
                       {/* Progress indicator */}
@@ -285,7 +267,7 @@ const VocabularyHomePage = () => {
                   <span className={styles.statIcon}>✅</span>
                   <div className={styles.statInfo}>
                     <span className={styles.statValue}>{totalMastered}</span>
-                    <span className={styles.statLabel}>{isEn ? 'Mastered' : 'Đã thuộc'}</span>
+                    <span className={styles.statLabel}>{t('vocabPage.stats.mastered')}</span>
                   </div>
                 </div>
               )}
@@ -294,7 +276,7 @@ const VocabularyHomePage = () => {
                   <span className={styles.statIcon}>🔔</span>
                   <div className={styles.statInfo}>
                     <span className={styles.statValue}>{totalDue}</span>
-                    <span className={styles.statLabel}>{isEn ? 'Due for Review' : 'Cần ôn tập'}</span>
+                    <span className={styles.statLabel}>{t('vocabPage.stats.dueReview')}</span>
                   </div>
                 </div>
               )}

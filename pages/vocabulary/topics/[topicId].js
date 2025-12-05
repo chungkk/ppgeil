@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../../context/LanguageContext';
 import { speakText, stopSpeech } from '../../../lib/textToSpeech';
 import SEO from '../../../components/SEO';
@@ -10,7 +11,9 @@ import styles from '../../../styles/VocabLearn.module.css';
 const TopicLearnPage = () => {
   const router = useRouter();
   const { topicId } = router.query;
+  const { t } = useTranslation('common');
   const { currentLanguage } = useLanguage();
+  const isDe = currentLanguage === 'de';
   const isEn = currentLanguage === 'en';
 
   const topic = getTopicById(topicId);
@@ -32,10 +35,20 @@ const TopicLearnPage = () => {
     }
   }, [topic]);
 
-  // Get translation
+  // Get translation based on current language
   const getTranslation = (item) => {
     if (!item) return '';
-    return isEn ? (item.en || item.vi || '') : (item.vi || item.en || '');
+    if (isDe) return item.en || item.vi || ''; // German users see English translation
+    if (isEn) return item.en || item.vi || '';
+    return item.vi || item.en || '';
+  };
+
+  // Get topic name based on language
+  const getTopicName = () => {
+    if (!topic) return '';
+    if (isDe) return topic.name; // German name
+    if (isEn) return topic.name_en || topic.name;
+    return topic.name_vi || topic.name;
   };
 
   // Parse article from word
@@ -107,7 +120,7 @@ const TopicLearnPage = () => {
     return (
       <div className={styles.container}>
         <div className={styles.loading}>
-          {isEn ? 'Loading...' : 'Đang tải...'}
+          {t('vocabPage.learn.loading')}
         </div>
       </div>
     );
@@ -119,15 +132,15 @@ const TopicLearnPage = () => {
   return (
     <>
       <SEO
-        title={`${topic.name} - ${isEn ? 'Vocabulary' : 'Từ vựng'}`}
-        description={isEn ? `Learn ${topic.name_en} vocabulary` : `Học từ vựng ${topic.name_vi}`}
+        title={`${topic.name} - ${t('header.nav.vocabulary')}`}
+        description={`${t('vocabPage.byTopic.title')}: ${getTopicName()}`}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
           <Link href="/vocabulary/topics" className={styles.backLink}>
-            ← {isEn ? 'Topics' : 'Chủ đề'}
+            ← {t('vocabPage.learn.backTopics')}
           </Link>
           <div className={styles.levelInfo}>
             <span className={styles.levelIcon}>{topicIcon}</span>
@@ -182,7 +195,7 @@ const TopicLearnPage = () => {
                       </button>
                       
                       <span className={styles.hint}>
-                        👆 {isEn ? 'Tap to see meaning' : 'Nhấn để xem nghĩa'}
+                        👆 {t('vocabPage.learn.tapToSee')}
                       </span>
                     </div>
 
@@ -199,7 +212,7 @@ const TopicLearnPage = () => {
                         className={`${styles.speakBtnBack} ${isSpeaking ? styles.speaking : ''}`}
                         onClick={handleSpeak}
                       >
-                        🔊 {isEn ? 'Listen' : 'Nghe'}
+                        🔊 {t('vocabPage.learn.listen')}
                       </button>
                     </div>
                   </div>
@@ -210,22 +223,22 @@ const TopicLearnPage = () => {
                   <div className={styles.answerRow3}>
                     <button className={styles.btnNew} onClick={() => handleAnswer('new')}>
                       <span>🆕</span>
-                      <span>{isEn ? "Don't Know" : 'Chưa biết'}</span>
+                      <span>{t('vocabPage.learn.dontKnow')}</span>
                     </button>
                     <button className={styles.btnLearning} onClick={() => handleAnswer('learning')}>
                       <span>📖</span>
-                      <span>{isEn ? 'Familiar' : 'Hơi quen'}</span>
+                      <span>{t('vocabPage.learn.familiar')}</span>
                     </button>
                     <button className={styles.btnMastered} onClick={() => handleAnswer('mastered')}>
                       <span>✅</span>
-                      <span>{isEn ? 'Know It!' : 'Đã thuộc!'}</span>
+                      <span>{t('vocabPage.learn.knowIt')}</span>
                     </button>
                   </div>
                 )}
 
                 {!showButtons && (
                   <p className={styles.tapText}>
-                    {isEn ? 'Tap the card to reveal meaning' : 'Nhấn vào thẻ để xem nghĩa'}
+                    {t('vocabPage.learn.tapCard')}
                   </p>
                 )}
               </>
@@ -236,30 +249,33 @@ const TopicLearnPage = () => {
           <div className={styles.completeArea}>
             <div className={styles.completeIcon}>🎉</div>
             <h2 className={styles.completeTitle}>
-              {isEn ? 'Topic Complete!' : 'Hoàn thành chủ đề!'}
+              {t('vocabPage.learn.topicComplete')}
             </h2>
 
             <div className={styles.statsRow3}>
               <div className={styles.statBox3 + ' ' + styles.statBoxNew}>
                 <span className={styles.statNum}>{stats.new}</span>
-                <span className={styles.statLabel}>{isEn ? "Don't Know" : 'Chưa biết'}</span>
+                <span className={styles.statLabel}>{t('vocabPage.learn.dontKnow')}</span>
+                <span className={styles.statReview}>{t('vocabPage.learn.reviewTomorrow')}</span>
               </div>
               <div className={styles.statBox3 + ' ' + styles.statBoxLearning}>
                 <span className={styles.statNum}>{stats.learning}</span>
-                <span className={styles.statLabel}>{isEn ? 'Familiar' : 'Hơi quen'}</span>
+                <span className={styles.statLabel}>{t('vocabPage.learn.familiar')}</span>
+                <span className={styles.statReview}>{t('vocabPage.learn.review3days')}</span>
               </div>
               <div className={styles.statBox3 + ' ' + styles.statBoxMastered}>
                 <span className={styles.statNum}>{stats.mastered}</span>
-                <span className={styles.statLabel}>{isEn ? 'Know It!' : 'Đã thuộc'}</span>
+                <span className={styles.statLabel}>{t('vocabPage.learn.knowIt')}</span>
+                <span className={styles.statReview}>{t('vocabPage.learn.review7days')}</span>
               </div>
             </div>
 
             <div className={styles.actionRow}>
               <button className={styles.btnRestart} onClick={handleRestart}>
-                🔄 {isEn ? 'Practice Again' : 'Luyện lại'}
+                🔄 {t('vocabPage.learn.practiceMore')}
               </button>
               <Link href="/vocabulary/topics" className={styles.btnHome}>
-                📂 {isEn ? 'All Topics' : 'Tất cả chủ đề'}
+                📂 {t('vocabPage.learn.allTopics')}
               </Link>
             </div>
           </div>
