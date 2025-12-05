@@ -2287,10 +2287,10 @@ const DictationPageContent = () => {
     const rect = event.currentTarget.getBoundingClientRect();
     const isMobileView = window.innerWidth <= 768;
     
-    // Mobile: popup is compact (just 3 buttons in a row)
+    // Popup size - horizontal layout with 3 buttons (height ~50px)
     const popupWidth = isMobileView ? 240 : 280;
-    const popupHeight = isMobileView ? 60 : 250; // Mobile popup ~60px tall (buttons + padding)
-    const gap = isMobileView ? 8 : 8;
+    const popupHeight = 50;
+    const gap = 8;
     
     // Calculate word center position
     const wordCenterX = rect.left + (rect.width / 2);
@@ -2298,25 +2298,12 @@ const DictationPageContent = () => {
     // Center popup horizontally on the word
     let left = wordCenterX - (popupWidth / 2);
     
-    // On mobile, prefer showing BELOW the word (more natural for touch)
-    // On desktop, show above if space allows
-    let top;
-    if (isMobileView) {
-      // Mobile: show below the word
+    // Position popup above the word (closer to clicked element)
+    let top = rect.top - popupHeight - gap;
+    
+    // If not enough space above, show below
+    if (top < 10) {
       top = rect.bottom + gap;
-      
-      // If not enough space below, show above
-      if (top + popupHeight > window.innerHeight - 10) {
-        top = rect.top - popupHeight - gap;
-      }
-    } else {
-      // Desktop: show above the word
-      top = rect.top - popupHeight - gap;
-      
-      // If not enough space above, show below
-      if (top < 10) {
-        top = rect.bottom + gap;
-      }
     }
     
     // Keep within horizontal screen bounds
@@ -2424,78 +2411,37 @@ const DictationPageContent = () => {
 
     let top, left;
 
-    if (isMobileView) {
-      // Mobile: position popup directly below the word (more natural for touch)
-      const popupWidth = 240;
-      const popupHeight = 60;
-      const gap = 8;
+    // Popup size - horizontal layout with 3 buttons (height ~50px)
+    const popupWidth = isMobileView ? 240 : 280;
+    const popupHeight = 50;
+    const gap = 8;
 
-      // Calculate word center position
-      const wordCenterX = rect.left + (rect.width / 2);
-      
-      // Center popup horizontally on the word
-      left = wordCenterX - (popupWidth / 2);
-      
-      // Position popup below the word on mobile
+    // Calculate word center position
+    const wordCenterX = rect.left + (rect.width / 2);
+    
+    // Center popup horizontally on the word
+    left = wordCenterX - (popupWidth / 2);
+    
+    // Position popup above the word (closer to clicked element)
+    top = rect.top - popupHeight - gap;
+    
+    // If not enough space above, show below
+    if (top < 10) {
       top = rect.bottom + gap;
-      
-      // If not enough space below, show above
-      if (top + popupHeight > window.innerHeight - 10) {
-        top = rect.top - popupHeight - gap;
-      }
-      
-      // Keep within horizontal screen bounds
-      if (left < 10) {
-        left = 10;
-      }
-      if (left + popupWidth > window.innerWidth - 10) {
-        left = window.innerWidth - popupWidth - 10;
-      }
-      
-      // Final bounds check
-      if (top < 10) top = 10;
-      if (top + popupHeight > window.innerHeight - 10) {
-        top = window.innerHeight - popupHeight - 10;
-      }
-    } else {
-      // Desktop: position to the right/left of button, centered vertically
-      const popupWidth = 280;
-      const popupHeight = 250;
-
-      top = rect.top + (rect.height / 2); // Center vertically with the button
-      
-      // Determine if there's more space on right or left
-      const spaceOnRight = window.innerWidth - rect.right;
-      const spaceOnLeft = rect.left;
-
-      if (spaceOnRight >= popupWidth + 10) {
-        // Show on right if there's enough space
-        left = rect.right + 5;
-      } else if (spaceOnLeft >= popupWidth + 10) {
-        // Show on left if there's enough space
-        left = rect.left - popupWidth - 5;
-      } else if (spaceOnRight > spaceOnLeft) {
-        // Show on right even if tight
-        left = rect.right + 5;
-      } else {
-        // Show on left even if tight
-        left = rect.left - popupWidth - 5;
-      }
-
-      // Check if popup would go off left edge
-      if (left < 10) {
-        left = Math.max(10, (window.innerWidth - popupWidth) / 2);
-      }
-
-      // Check if popup would go off bottom of screen
-      if (top + popupHeight > window.innerHeight - 10) {
-        top = Math.max(10, window.innerHeight - popupHeight - 10);
-      }
-
-      // Check if popup would go off top
-      if (top < 10) {
-        top = 10;
-      }
+    }
+    
+    // Keep within horizontal screen bounds
+    if (left < 10) {
+      left = 10;
+    }
+    if (left + popupWidth > window.innerWidth - 10) {
+      left = window.innerWidth - popupWidth - 10;
+    }
+    
+    // Final bounds check
+    if (top < 10) top = 10;
+    if (top + popupHeight > window.innerHeight - 10) {
+      top = window.innerHeight - popupHeight - 10;
     }
 
     // Generate options from transcript data (instant, no API call)
@@ -2565,10 +2511,10 @@ const DictationPageContent = () => {
     const rect = input.getBoundingClientRect();
     const isMobileView = window.innerWidth <= 768;
     
-    // Mobile: compact popup positioned below word (more natural for touch)
+    // Popup size - horizontal layout with 3 buttons (height ~50px for both)
     const popupWidth = isMobileView ? 240 : 280;
-    const popupHeight = isMobileView ? 60 : 250;
-    const gap = isMobileView ? 8 : 8;
+    const popupHeight = 50;
+    const gap = 8;
 
     // Calculate word center position
     const wordCenterX = rect.left + (rect.width / 2);
@@ -2576,18 +2522,12 @@ const DictationPageContent = () => {
     // Center popup horizontally on the word
     let left = wordCenterX - (popupWidth / 2);
     
-    // On mobile, show below; on desktop, show above
-    let top;
-    if (isMobileView) {
+    // Position popup above the word (closer to the clicked element)
+    let top = rect.top - popupHeight - gap;
+    
+    // If not enough space above, show below
+    if (top < 10) {
       top = rect.bottom + gap;
-      if (top + popupHeight > window.innerHeight - 10) {
-        top = rect.top - popupHeight - gap;
-      }
-    } else {
-      top = rect.top - popupHeight - gap;
-      if (top < 10) {
-        top = rect.bottom + gap;
-      }
     }
     
     // Keep within horizontal screen bounds
