@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../context/AuthContext';
 import { generalQuestions, stateQuestions, bundeslaender, getImageUrl } from '../../lib/data/lebenInDeutschland';
 import SEO from '../../components/SEO';
@@ -11,6 +12,7 @@ const QUESTIONS_PER_PAGE = 10;
 const PracticePage = () => {
   const router = useRouter();
   const { state } = router.query;
+  const { t } = useTranslation('common');
   const { user } = useAuth();
   
   const [currentPage, setCurrentPage] = useState(1);
@@ -91,22 +93,22 @@ const PracticePage = () => {
   return (
     <>
       <SEO
-        title="Luyện tập - Leben in Deutschland Test"
-        description="Luyện tập trả lời 300 câu hỏi cho bài thi Leben in Deutschland"
+        title={`${t('lid.practice')} - ${t('lid.title')}`}
+        description={t('lid.practiceDesc')}
       />
 
       <div className={styles.container}>
         <div className={styles.header}>
           <Link href="/leben-in-deutschland" className={styles.backLink}>
-            ← Quay lại
+            ← {t('lid.back')}
           </Link>
           <h1 className={styles.title}>
             <span className={styles.flag}>📚</span>
-            Luyện tập
+            {t('lid.practiceTitle')}
           </h1>
           {selectedBundeslandInfo && (
             <p className={styles.subtitle}>
-              Bao gồm câu hỏi cho {selectedBundeslandInfo.name}
+              {t('lid.includesState')} {selectedBundeslandInfo.name}
             </p>
           )}
         </div>
@@ -118,13 +120,13 @@ const PracticePage = () => {
               className={`${styles.filterBtn} ${filter === 'all' ? styles.active : ''}`}
               onClick={() => { setFilter('all'); setCurrentPage(1); }}
             >
-              Tất cả ({generalQuestions.length + (state && stateQuestions[state] ? stateQuestions[state].length : 0)})
+              {t('lid.all')} ({generalQuestions.length + (state && stateQuestions[state] ? stateQuestions[state].length : 0)})
             </button>
             <button 
               className={`${styles.filterBtn} ${filter === 'general' ? styles.active : ''}`}
               onClick={() => { setFilter('general'); setCurrentPage(1); }}
             >
-              Chung ({generalQuestions.length})
+              {t('lid.general')} ({generalQuestions.length})
             </button>
             {state && stateQuestions[state] && (
               <button 
@@ -142,13 +144,13 @@ const PracticePage = () => {
               <div key={`${question.type}-${question.id}`} className={styles.questionCard}>
                 <div className={styles.questionHeader}>
                   <span className={styles.questionNumber}>
-                    Câu {startIndex + idx + 1}
+                    {t('lid.question')} {startIndex + idx + 1}
                     {question.type === 'state' && (
                       <span className={styles.stateBadge}>{selectedBundeslandInfo?.name}</span>
                     )}
                   </span>
                   {completedQuestions.includes(question.id) && (
-                    <span className={styles.completedBadge}>✓ Đã học</span>
+                    <span className={styles.completedBadge}>✓ {t('lid.learned')}</span>
                   )}
                 </div>
                 
@@ -195,13 +197,13 @@ const PracticePage = () => {
                     onClick={() => checkAnswer(question.id)}
                     disabled={selectedAnswers[question.id] === undefined}
                   >
-                    {selectedAnswers[question.id] === undefined ? 'Chọn đáp án trước' : 'Kiểm tra đáp án'}
+                    {t('lid.checkAnswer')}
                   </button>
                 ) : (
                   <div className={`${styles.resultMessage} ${
                     selectedAnswers[question.id] === question.a ? styles.correctMsg : styles.wrongMsg
                   }`}>
-                    {selectedAnswers[question.id] === question.a ? '✓ Chính xác!' : '✗ Sai rồi!'}
+                    {selectedAnswers[question.id] === question.a ? `✓ ${t('lid.correct')}` : `✗ ${t('lid.wrong')}`}
                   </div>
                 )}
               </div>
@@ -215,7 +217,7 @@ const PracticePage = () => {
               onClick={() => goToPage(currentPage - 1)}
               disabled={currentPage === 1}
             >
-              ← Trước
+              ← {t('lid.prev')}
             </button>
             
             <div className={styles.pageNumbers}>
@@ -258,12 +260,12 @@ const PracticePage = () => {
               onClick={() => goToPage(currentPage + 1)}
               disabled={currentPage === totalPages}
             >
-              Tiếp →
+              {t('lid.next')} →
             </button>
           </div>
 
           <div className={styles.pageInfo}>
-            Trang {currentPage} / {totalPages} ({questions.length} câu hỏi)
+            {t('lid.page')} {currentPage} / {totalPages} ({questions.length} {t('lid.questions')})
           </div>
         </div>
       </div>

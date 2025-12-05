@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../context/AuthContext';
 import { generalQuestions, stateQuestions, bundeslaender, getImageUrl, testConfig } from '../../lib/data/lebenInDeutschland';
 import SEO from '../../components/SEO';
@@ -9,6 +10,7 @@ import styles from '../../styles/LebenInDeutschland.module.css';
 const TestPage = () => {
   const router = useRouter();
   const { state } = router.query;
+  const { t } = useTranslation('common');
   const { user } = useAuth();
   
   const [testQuestions, setTestQuestions] = useState([]);
@@ -127,51 +129,51 @@ const TestPage = () => {
   if (testState === 'ready') {
     return (
       <>
-        <SEO title="Thi thử - Leben in Deutschland" />
+        <SEO title={`${t('lid.test')} - ${t('lid.title')}`} />
         <div className={styles.container}>
           <div className={styles.header}>
             <Link href="/leben-in-deutschland" className={styles.backLink}>
-              ← Quay lại
+              ← {t('lid.back')}
             </Link>
             <h1 className={styles.title}>
               <span className={styles.flag}>✍️</span>
-              Thi thử
+              {t('lid.testTitle')}
             </h1>
           </div>
 
           <div className={styles.content}>
             <div className={styles.testReadyCard}>
-              <h2>Bạn đã sẵn sàng?</h2>
+              <h2>{t('lid.ready')}</h2>
               
               <div className={styles.testInfo}>
                 <div className={styles.testInfoItem}>
                   <span className={styles.testInfoIcon}>📝</span>
-                  <span>{testConfig.totalQuestions} câu hỏi</span>
+                  <span>{testConfig.totalQuestions} {t('lid.questionsCount')}</span>
                 </div>
                 <div className={styles.testInfoItem}>
                   <span className={styles.testInfoIcon}>⏱️</span>
-                  <span>{testConfig.timeLimit} phút</span>
+                  <span>{testConfig.timeLimit} {t('lid.minutes')}</span>
                 </div>
                 <div className={styles.testInfoItem}>
                   <span className={styles.testInfoIcon}>✅</span>
-                  <span>Cần {testConfig.passingScore} câu đúng</span>
+                  <span>{t('lid.needCorrect')} {testConfig.passingScore}</span>
                 </div>
               </div>
 
               {selectedBundeslandInfo && (
                 <p className={styles.stateInfo}>
-                  📍 Bao gồm câu hỏi cho {selectedBundeslandInfo.name}
+                  📍 {t('lid.withStateQuestions')} {selectedBundeslandInfo.name}
                 </p>
               )}
 
               {!state && (
                 <p className={styles.noStateWarning}>
-                  ⚠️ Chưa chọn bang - chỉ có câu hỏi chung
+                  ⚠️ {t('lid.noStateWarning')}
                 </p>
               )}
 
               <button className={styles.startTestBtn} onClick={startTest}>
-                Bắt đầu thi
+                {t('lid.startTest')}
               </button>
             </div>
           </div>
@@ -183,7 +185,7 @@ const TestPage = () => {
   if (showResult) {
     return (
       <>
-        <SEO title="Kết quả thi - Leben in Deutschland" />
+        <SEO title={`${t('lid.viewResult')} - ${t('lid.title')}`} />
         <div className={styles.container}>
           <div className={styles.content}>
             <div className={`${styles.resultCard} ${passed ? styles.passed : styles.failed}`}>
@@ -191,7 +193,7 @@ const TestPage = () => {
                 {passed ? '🎉' : '📚'}
               </div>
               <h2 className={styles.resultTitle}>
-                {passed ? 'Đậu rồi!' : 'Chưa đậu'}
+                {passed ? t('lid.passed') : t('lid.failed')}
               </h2>
               <div className={styles.resultScore}>
                 <span className={styles.scoreValue}>{score}</span>
@@ -200,8 +202,8 @@ const TestPage = () => {
               </div>
               <p className={styles.resultText}>
                 {passed 
-                  ? `Chúc mừng! Bạn đã trả lời đúng ${score}/${testQuestions.length} câu hỏi.`
-                  : `Bạn cần ít nhất ${testConfig.passingScore} câu đúng. Cố gắng thêm nhé!`
+                  ? `${t('lid.congratsPass')} ${score}/${testQuestions.length}.`
+                  : t('lid.needMore', { score: testConfig.passingScore })
                 }
               </p>
 
@@ -210,7 +212,7 @@ const TestPage = () => {
                   className={styles.reviewBtn}
                   onClick={() => setShowResult(false)}
                 >
-                  Xem lại đáp án
+                  {t('lid.reviewAnswers')}
                 </button>
                 <button 
                   className={styles.retryBtn}
@@ -221,10 +223,10 @@ const TestPage = () => {
                     setAnswers({});
                   }}
                 >
-                  Thi lại
+                  {t('lid.retryTest')}
                 </button>
                 <Link href="/leben-in-deutschland" className={styles.backBtn}>
-                  Quay lại
+                  {t('lid.back')}
                 </Link>
               </div>
             </div>
@@ -236,11 +238,11 @@ const TestPage = () => {
 
   return (
     <>
-      <SEO title="Đang thi - Leben in Deutschland" />
+      <SEO title={`${t('lid.testTitle')} - ${t('lid.title')}`} />
       <div className={styles.container}>
         <div className={styles.testHeader}>
           <div className={styles.testProgress}>
-            <span>Câu {currentIndex + 1} / {testQuestions.length}</span>
+            <span>{t('lid.question')} {currentIndex + 1} / {testQuestions.length}</span>
           </div>
           {testState === 'running' && (
             <div className={`${styles.timer} ${timeLeft < 300 ? styles.timerWarning : ''}`}>
@@ -278,7 +280,7 @@ const TestPage = () => {
             <div className={styles.testQuestion}>
               <div className={styles.questionHeader}>
                 <span className={styles.questionNumber}>
-                  Câu {currentIndex + 1}
+                  {t('lid.question')} {currentIndex + 1}
                   {currentQuestion.type === 'state' && (
                     <span className={styles.stateBadge}>{selectedBundeslandInfo?.name}</span>
                   )}
@@ -328,7 +330,7 @@ const TestPage = () => {
               onClick={() => goToQuestion(currentIndex - 1)}
               disabled={currentIndex === 0}
             >
-              ← Trước
+              ← {t('lid.prev')}
             </button>
             
             {currentIndex < testQuestions.length - 1 ? (
@@ -336,28 +338,28 @@ const TestPage = () => {
                 className={styles.navBtn}
                 onClick={() => goToQuestion(currentIndex + 1)}
               >
-                Tiếp →
+                {t('lid.next')} →
               </button>
             ) : testState === 'running' ? (
               <button
                 className={styles.finishBtn}
                 onClick={finishTest}
               >
-                Nộp bài
+                {t('lid.submit')}
               </button>
             ) : (
               <button
                 className={styles.finishBtn}
                 onClick={() => setShowResult(true)}
               >
-                Xem kết quả
+                {t('lid.viewResult')}
               </button>
             )}
           </div>
 
           {testState === 'running' && (
             <div className={styles.answeredCount}>
-              Đã trả lời {Object.keys(answers).length} / {testQuestions.length} câu
+              {t('lid.answered')} {Object.keys(answers).length} / {testQuestions.length}
             </div>
           )}
         </div>

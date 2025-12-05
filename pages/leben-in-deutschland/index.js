@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../context/AuthContext';
 import { bundeslaender } from '../../lib/data/lebenInDeutschland';
 import SEO from '../../components/SEO';
@@ -8,6 +9,7 @@ import styles from '../../styles/LebenInDeutschland.module.css';
 
 const LebenInDeutschlandPage = () => {
   const router = useRouter();
+  const { t } = useTranslation('common');
   const { user } = useAuth();
   const [selectedBundesland, setSelectedBundesland] = useState('');
   const [lidProgress, setLidProgress] = useState({ completedQuestions: [], testsTaken: 0, bestScore: 0 });
@@ -72,18 +74,18 @@ const LebenInDeutschlandPage = () => {
   return (
     <>
       <SEO
-        title="Leben in Deutschland Test - Einbürgerungstest Vorbereitung"
-        description="Bereite dich auf den Leben in Deutschland Test vor. 300 offizielle Fragen + 10 Fragen für dein Bundesland. Kostenlos üben!"
+        title={`${t('lid.title')} - ${t('lid.subtitle')}`}
+        description={t('lid.subtitle')}
       />
 
       <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.title}>
             <span className={styles.flag}>🇩🇪</span>
-            Leben in Deutschland
+            {t('lid.title')}
           </h1>
           <p className={styles.subtitle}>
-            Vorbereitung auf den Einbürgerungstest - 300 Fragen + 10 Bundesland-Fragen
+            {t('lid.subtitle')}
           </p>
         </div>
 
@@ -92,10 +94,10 @@ const LebenInDeutschlandPage = () => {
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.sectionIcon}>📍</span>
-              Wähle dein Bundesland
+              {t('lid.selectState')}
             </h2>
             <p className={styles.sectionDesc}>
-              Der Test enthält 3 spezifische Fragen zu deinem Bundesland
+              {t('lid.selectStateDesc')}
             </p>
             
             <div className={styles.selectWrapper}>
@@ -105,7 +107,7 @@ const LebenInDeutschlandPage = () => {
                 onChange={(e) => handleBundeslandChange(e.target.value)}
                 disabled={saving}
               >
-                <option value="">-- Bundesland auswählen --</option>
+                <option value="">{t('lid.selectPlaceholder')}</option>
                 {bundeslaender.map((land) => (
                   <option key={land.code} value={land.code}>
                     {land.name} ({land.capital})
@@ -123,31 +125,31 @@ const LebenInDeutschlandPage = () => {
 
           {/* Test Info */}
           <div className={styles.infoCard}>
-            <h3>📋 Über den Test</h3>
+            <h3>📋 {t('lid.aboutTest')}</h3>
             <ul>
-              <li><strong>33 Fragen</strong> - 30 allgemeine + 3 zu deinem Bundesland</li>
-              <li><strong>60 Minuten</strong> Zeit</li>
-              <li><strong>17 richtige Antworten</strong> zum Bestehen (50%)</li>
-              <li>Multiple Choice mit 4 Antwortmöglichkeiten</li>
+              <li>{t('lid.aboutTestInfo.questions')}</li>
+              <li>{t('lid.aboutTestInfo.time')}</li>
+              <li>{t('lid.aboutTestInfo.pass')}</li>
+              <li>{t('lid.aboutTestInfo.format')}</li>
             </ul>
           </div>
 
           {/* Progress Card - Only for logged in users */}
           {user && (
             <div className={styles.progressCard}>
-              <h3>📊 Dein Fortschritt</h3>
+              <h3>📊 {t('lid.progress')}</h3>
               <div className={styles.progressStats}>
                 <div className={styles.stat}>
                   <span className={styles.statValue}>{lidProgress.completedQuestions?.length || 0}</span>
-                  <span className={styles.statLabel}>Fragen gelernt</span>
+                  <span className={styles.statLabel}>{t('lid.questionsLearned')}</span>
                 </div>
                 <div className={styles.stat}>
                   <span className={styles.statValue}>{lidProgress.testsTaken || 0}</span>
-                  <span className={styles.statLabel}>Tests gemacht</span>
+                  <span className={styles.statLabel}>{t('lid.testsTaken')}</span>
                 </div>
                 <div className={styles.stat}>
                   <span className={styles.statValue}>{lidProgress.bestScore || 0}/33</span>
-                  <span className={styles.statLabel}>Beste Punktzahl</span>
+                  <span className={styles.statLabel}>{t('lid.bestScore')}</span>
                 </div>
               </div>
             </div>
@@ -161,8 +163,8 @@ const LebenInDeutschlandPage = () => {
             >
               <span className={styles.actionIcon}>📖</span>
               <span className={styles.actionText}>
-                <strong>Học</strong>
-                <small>Xem câu hỏi kèm đáp án</small>
+                <strong>{t('lid.learn')}</strong>
+                <small>{t('lid.learnDesc')}</small>
               </span>
             </Link>
 
@@ -172,8 +174,8 @@ const LebenInDeutschlandPage = () => {
             >
               <span className={styles.actionIcon}>📚</span>
               <span className={styles.actionText}>
-                <strong>Luyện tập</strong>
-                <small>Tự trả lời rồi xem đáp án</small>
+                <strong>{t('lid.practice')}</strong>
+                <small>{t('lid.practiceDesc')}</small>
               </span>
             </Link>
 
@@ -183,21 +185,21 @@ const LebenInDeutschlandPage = () => {
             >
               <span className={styles.actionIcon}>✍️</span>
               <span className={styles.actionText}>
-                <strong>Thi thử</strong>
-                <small>33 câu như thi thật</small>
+                <strong>{t('lid.test')}</strong>
+                <small>{t('lid.testDesc')}</small>
               </span>
             </Link>
           </div>
 
           {!selectedBundesland && (
             <p className={styles.hint}>
-              💡 Wähle ein Bundesland aus, um bundeslandspezifische Fragen zu erhalten
+              💡 {t('lid.hint')}
             </p>
           )}
 
           {!user && (
             <p className={styles.loginHint}>
-              🔐 Melde dich an, um deinen Fortschritt zu speichern
+              🔐 {t('lid.loginHint')}
             </p>
           )}
         </div>
