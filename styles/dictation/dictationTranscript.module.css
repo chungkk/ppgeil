@@ -296,3 +296,9 @@
     order: 2;
   }
 }
+
+@media (max-width: 768px) {
+  .rightSection {
+    display: none !important; /* Hide transcript on mobile */
+  }
+}
