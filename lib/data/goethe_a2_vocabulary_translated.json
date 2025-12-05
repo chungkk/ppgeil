@@ -1,7 +1,4 @@
-// Goethe Institut A2 Vocabulary with translations
-// Total: 885 words (Nouns: 578, Verbs: 93, Adj/Adv: 214)
-
-export const goetheA2Vocabulary = [
+[
   {
     "word": "ab",
     "type": "adjective/adverb",
@@ -7069,10 +7066,4 @@ export const goetheA2Vocabulary = [
     "vi": "chuyển khoản",
     "en": "to transfer"
   }
-];
-
-export const getA2Nouns = () => goetheA2Vocabulary.filter(v => v.type === 'noun');
-export const getA2Verbs = () => goetheA2Vocabulary.filter(v => v.type === 'verb');
-export const getA2Adjectives = () => goetheA2Vocabulary.filter(v => v.type === 'adjective/adverb');
-
-export default goetheA2Vocabulary;
+]

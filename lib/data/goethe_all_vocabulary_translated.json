@@ -1,11 +1,4 @@
-// Goethe Institut Combined Vocabulary (A1-B1) with translations
-// Total unique words: 2356
-
-import goetheA1Vocabulary from './goetheA1Vocabulary';
-import goetheA2Vocabulary from './goetheA2Vocabulary';
-import goetheB1Vocabulary from './goetheB1Vocabulary';
-
-export const goetheAllVocabulary = [
+[
   {
     "word": "ab",
     "type": "adjective/adverb",
@@ -19196,27 +19189,4 @@ export const goetheAllVocabulary = [
     "vi": "bài tập",
     "en": "exercise"
   }
-];
-
-export { goetheA1Vocabulary, goetheA2Vocabulary, goetheB1Vocabulary };
-
-export const getVocabularyByLevel = (level) => {
-  switch(level) {
-    case 'A1': return goetheA1Vocabulary;
-    case 'A2': return goetheA2Vocabulary;
-    case 'B1': return goetheB1Vocabulary;
-    default: return goetheAllVocabulary;
-  }
-};
-
-export const searchVocabulary = (query, level = null) => {
-  const vocab = level ? getVocabularyByLevel(level) : goetheAllVocabulary;
-  const q = query.toLowerCase();
-  return vocab.filter(v => 
-    v.word.toLowerCase().includes(q) ||
-    (v.vi && v.vi.toLowerCase().includes(q)) ||
-    (v.en && v.en.toLowerCase().includes(q))
-  );
-};
-
-export default goetheAllVocabulary;
+]

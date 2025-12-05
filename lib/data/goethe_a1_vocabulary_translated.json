@@ -1,7 +1,4 @@
-// Goethe Institut A1 Vocabulary with translations
-// Total: 683 words (Nouns: 386, Verbs: 157, Adj/Adv: 140)
-
-export const goetheA1Vocabulary = [
+[
   {
     "word": "aber",
     "type": "adjective/adverb",
@@ -5272,10 +5269,4 @@ export const goetheA1Vocabulary = [
     "vi": "chuyển khoản",
     "en": "to transfer"
   }
-];
-
-export const getA1Nouns = () => goetheA1Vocabulary.filter(v => v.type === 'noun');
-export const getA1Verbs = () => goetheA1Vocabulary.filter(v => v.type === 'verb');
-export const getA1Adjectives = () => goetheA1Vocabulary.filter(v => v.type === 'adjective/adverb');
-
-export default goetheA1Vocabulary;
+]
