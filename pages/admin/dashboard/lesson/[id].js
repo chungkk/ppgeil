@@ -734,22 +734,6 @@ function LessonFormPage() {
                     <>
                       <button
                         type="button"
-                        onClick={handleGetYouTubeSRT}
-                        disabled={fetchingYouTubeSRT || !youtubeUrl.trim()}
-                        className={styles.actionButton}
-                      >
-                        {fetchingYouTubeSRT ? '⏳...' : '📺 SRT 16w'}
-                      </button>
-                      <button
-                        type="button"
-                        onClick={handleGetSRTShort}
-                        disabled={fetchingSRTShort || !youtubeUrl.trim()}
-                        className={styles.actionButton}
-                      >
-                        {fetchingSRTShort ? '⏳...' : '📺 SRT 10w'}
-                      </button>
-                      <button
-                        type="button"
                         onClick={handleGetWhisperSRT}
                         disabled={fetchingWhisperSRT || !youtubeUrl.trim()}
                         className={styles.actionButton}
@@ -757,15 +741,7 @@ function LessonFormPage() {
                       >
                         {fetchingWhisperSRT ? '⏳...' : '🎙️ Whisper'}
                       </button>
-                      <button
-                        type="button"
-                        onClick={handleGetWhisperV2}
-                        disabled={fetchingWhisperV2 || !youtubeUrl.trim()}
-                        className={styles.actionButton}
-                        title="Whisper v2: 6-14 từ/câu, không mất từ, timestamp chính xác"
-                      >
-                        {fetchingWhisperV2 ? '⏳...' : '🎙️ Whisper v2'}
-                      </button>
+
                       <button
                         type="button"
                         onClick={handleGetWhisperV3}

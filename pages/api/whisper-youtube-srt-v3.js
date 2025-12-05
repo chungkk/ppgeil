@@ -1,6 +1,6 @@
 /**
  * Whisper YouTube SRT v3
- * - SRT câu giống v2 (GPT thêm dấu câu, 6-14 từ/câu)
+ * - SRT câu giống v2 (GPT thêm dấu câu, 6-20 từ/câu)
  * - THÊM: wordTimings array với timing từng từ để làm karaoke highlight
  */
 
@@ -28,7 +28,7 @@ const openai = new OpenAI({
 
 // Config - giống v2
 const MIN_WORDS = 6;
-const MAX_WORDS = 14;
+const MAX_WORDS = 20;  // Tăng từ 14 lên 20 để thử câu dài hơn
 const MAX_CHAR_LENGTH = 150;
 
 async function downloadYouTubeAudio(videoId, outputPath) {
@@ -256,11 +256,11 @@ async function addPunctuationToWords(words, rawText) {
 AUFGABE: Teile den Text in Untertitel-Segmente auf und füge Satzzeichen hinzu.
 
 REGELN:
-1. Jedes Segment: 6-12 Wörter (ideal für Untertitel)
+1. Jedes Segment: 6-18 Wörter (längere Segmente erlaubt)
 2. ÄNDERE KEINE Wörter - nur Satzzeichen hinzufügen
 3. Analysiere den Kontext: Was gehört zusammen?
 4. Zusammenfassen wenn: gleicher Sprecher, gleiche Idee, Bedingung+Ergebnis
-5. Trennen wenn: neues Thema, anderer Sprecher, langer Satz (>12 Wörter)
+5. Trennen wenn: neues Thema, anderer Sprecher, langer Satz (>18 Wörter)
 6. NIEMALS mitten in einer Phrase trennen (z.B. "von Pamukkale" zusammen lassen)
 
 BEISPIEL:
