@@ -157,7 +157,7 @@ const Header = () => {
     { href: '/', label: t('header.nav.topics') },
     { href: '/vocabulary', label: t('header.nav.vocabulary') },
     { href: '/leben-in-deutschland', label: '🇩🇪 LiD Test' },
-    { href: '/leaderboard', label: t('header.nav.leaderboard') },
+    // { href: '/leaderboard', label: t('header.nav.leaderboard') }, // Tạm ẩn
   ];
 
   const isActive = (path) => {
@@ -419,6 +419,7 @@ const Header = () => {
                         <span>{t('header.userMenu.myVocabulary')}</span>
                       </Link>
 
+                      {/* Tạm ẩn Bestenliste
                       <Link
                         href="/leaderboard"
                         className={styles.userDropdownItem}
@@ -427,6 +428,7 @@ const Header = () => {
                         <span className={styles.dropdownIcon}>🏆</span>
                         <span>{t('header.userMenu.leaderboard')}</span>
                       </Link>
+                      */}
 
                       <Link
                         href="/profile/settings"
