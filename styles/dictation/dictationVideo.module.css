@@ -1,13 +1,10 @@
 /* Video Section Styles */
 
 .videoWrapper {
-  background: var(--bg-secondary);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  padding: var(--spacing-md);
+  background: transparent;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: 0;
   flex: 1;
   overflow: hidden;
 }
@@ -141,25 +138,26 @@
   line-height: 1.4;
 }
 
-/* Video Header */
+/* Video Header - Synced with dictationPage.module.css */
 .videoHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
   height: 44px;
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-hover);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(5, 150, 105, 0.05) 100%);
   border-radius: 16px 16px 0 0;
 }
 
 .videoHeaderTitle {
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: var(--text-primary);
   line-height: 1.4;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.3px;
 }
 
 /* Study Timer */
