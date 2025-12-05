@@ -402,17 +402,17 @@ function VocabularyPage() {
 
 
   const breadcrumbData = generateBreadcrumbStructuredData([
-    { name: 'Home', url: '/' },
-    { name: 'Profile', url: '/profile' },
-    { name: 'Vocabulary', url: '/profile/vocabulary' }
+    { name: t('breadcrumb.home'), url: '/' },
+    { name: t('breadcrumb.dashboard'), url: '/profile' },
+    { name: t('vocabulary.title'), url: '/profile/vocabulary' }
   ]);
 
   return (
     <>
       <SEO
-        title="My Vocabulary - PapaGeil"
-        description="Verwalten Sie Ihren persönlichen deutschen Wortschatz. Speichern, überprüfen und üben Sie Ihre gelernten Vokabeln."
-        keywords="Deutsch Wortschatz, Vokabeln speichern, Vokabeltrainer, Deutsch lernen Wortschatz"
+        title={t('seo.vocabulary.title')}
+        description={t('seo.vocabulary.description')}
+        keywords={t('seo.vocabulary.keywords')}
         structuredData={breadcrumbData}
         noindex={true}
       />
@@ -430,17 +430,17 @@ function VocabularyPage() {
               <div className={styles.pullToRefreshIcon}>
                 {isRefreshing ? '⟳' : '↓'}
               </div>
-              <span>{isRefreshing ? 'Refreshing...' : 'Pull to refresh'}</span>
+              <span>{isRefreshing ? t('vocabulary.refreshing') : t('vocabulary.pullToRefresh')}</span>
             </div>
 
             {/* Page Header */}
             <div className={styles.pageHeader}>
               <h1 className={styles.pageTitle}>
                 <div className={styles.parrotIcon}>🦜</div>
-                My Vocabulary
+                {t('vocabulary.pageTitle')}
               </h1>
               <p className={styles.pageSubtitle}>
-                Manage your vocabulary list for review
+                {t('vocabulary.pageSubtitle')}
               </p>
             </div>
 
@@ -450,17 +450,17 @@ function VocabularyPage() {
                 <button
                   className={styles.viewModeToggle}
                   onClick={toggleViewMode}
-                  title={viewMode === 'comfortable' ? 'Switch to compact view' : 'Switch to comfortable view'}
+                  title={viewMode === 'comfortable' ? t('vocabulary.switchToCompact') : t('vocabulary.switchToComfortable')}
                 >
                   <span className={styles.toggleIcon}>
                     {viewMode === 'comfortable' ? '☰' : '▦'}
                   </span>
                   <span className={styles.toggleLabel}>
-                    {viewMode === 'comfortable' ? 'Compact' : 'Comfortable'}
+                    {viewMode === 'comfortable' ? t('vocabulary.compact') : t('vocabulary.comfortable')}
                   </span>
                 </button>
                 <div className={styles.vocabCount}>
-                  {vocabulary.length} {vocabulary.length === 1 ? 'word' : 'words'}
+                  {vocabulary.length} {vocabulary.length === 1 ? t('vocabulary.word') : t('vocabulary.words')}
                 </div>
               </div>
             )}

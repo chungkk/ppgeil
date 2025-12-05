@@ -113,6 +113,11 @@
       "title": "Settings - PapaGeil",
       "description": "Manage your account settings, preferences and profile.",
       "keywords": "settings, profile, account management, German learning settings"
+    },
+    "vocabulary": {
+      "title": "My Vocabulary - PapaGeil",
+      "description": "Manage your personal German vocabulary. Save, review and practice your learned words.",
+      "keywords": "German vocabulary, save vocabulary, vocabulary trainer, learn German vocabulary"
     }
   },
   "breadcrumb": {
@@ -326,7 +331,17 @@
     "speak": "Speak",
     "delete": "Delete",
     "notes": "Notes",
-    "translation": "Translation"
+    "translation": "Translation",
+    "pageTitle": "My Vocabulary",
+    "pageSubtitle": "Manage your vocabulary list for review",
+    "pullToRefresh": "Pull to refresh",
+    "refreshing": "Refreshing...",
+    "switchToCompact": "Switch to compact view",
+    "switchToComfortable": "Switch to comfortable view",
+    "compact": "Compact",
+    "comfortable": "Comfortable",
+    "word": "word",
+    "words": "words"
   },
   "vocabPage": {
     "title": "German Vocabulary",

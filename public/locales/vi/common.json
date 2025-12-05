@@ -113,6 +113,11 @@
       "title": "Cài đặt - PapaGeil",
       "description": "Quản lý cài đặt tài khoản, tùy chọn và hồ sơ của bạn.",
       "keywords": "cài đặt, hồ sơ, quản lý tài khoản, cài đặt học tiếng Đức"
+    },
+    "vocabulary": {
+      "title": "Từ vựng của tôi - PapaGeil",
+      "description": "Quản lý từ vựng tiếng Đức của bạn. Lưu, ôn tập và luyện các từ đã học.",
+      "keywords": "từ vựng tiếng Đức, lưu từ vựng, luyện từ vựng, học từ vựng tiếng Đức"
     }
   },
   "breadcrumb": {
@@ -323,7 +328,17 @@
     "speak": "Phát âm",
     "delete": "Xóa",
     "notes": "Ghi chú",
-    "translation": "Dịch"
+    "translation": "Dịch",
+    "pageTitle": "Từ vựng của tôi",
+    "pageSubtitle": "Quản lý danh sách từ vựng để ôn tập",
+    "pullToRefresh": "Kéo để làm mới",
+    "refreshing": "Đang làm mới...",
+    "switchToCompact": "Chuyển sang chế độ thu gọn",
+    "switchToComfortable": "Chuyển sang chế độ thoải mái",
+    "compact": "Thu gọn",
+    "comfortable": "Thoải mái",
+    "word": "từ",
+    "words": "từ"
   },
   "vocabPage": {
     "title": "Từ vựng tiếng Đức",

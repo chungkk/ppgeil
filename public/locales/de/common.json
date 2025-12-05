@@ -113,6 +113,11 @@
       "title": "Einstellungen - PapaGeil",
       "description": "Verwalten Sie Ihre Kontoeinstellungen, Präferenzen und Profil.",
       "keywords": "Einstellungen, Profil, Konto verwalten, Deutsch lernen Einstellungen"
+    },
+    "vocabulary": {
+      "title": "Mein Vokabular - PapaGeil",
+      "description": "Verwalten Sie Ihren persönlichen deutschen Wortschatz. Speichern, überprüfen und üben Sie Ihre gelernten Vokabeln.",
+      "keywords": "Deutsch Wortschatz, Vokabeln speichern, Vokabeltrainer, Deutsch lernen Wortschatz"
     }
   },
   "breadcrumb": {
@@ -326,7 +331,17 @@
     "speak": "Aussprechen",
     "delete": "Löschen",
     "notes": "Notizen",
-    "translation": "Übersetzung"
+    "translation": "Übersetzung",
+    "pageTitle": "Mein Vokabular",
+    "pageSubtitle": "Verwalten Sie Ihre Wortschatzliste zum Wiederholen",
+    "pullToRefresh": "Ziehen zum Aktualisieren",
+    "refreshing": "Wird aktualisiert...",
+    "switchToCompact": "Zur kompakten Ansicht wechseln",
+    "switchToComfortable": "Zur komfortablen Ansicht wechseln",
+    "compact": "Kompakt",
+    "comfortable": "Komfortabel",
+    "word": "Wort",
+    "words": "Wörter"
   },
   "leaderboard": {
     "title": "Bestenliste",
