@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useAuth } from '../../context/AuthContext';
+import { useLanguage } from '../../context/LanguageContext';
 import { generalQuestions, stateQuestions, bundeslaender, getImageUrl } from '../../lib/data/lebenInDeutschland';
 import SEO from '../../components/SEO';
 import styles from '../../styles/LebenInDeutschland.module.css';
@@ -12,10 +13,32 @@ const LearnPage = () => {
   const router = useRouter();
   const { state } = router.query;
   const { user } = useAuth();
+  const { currentLanguage } = useLanguage();
   
   const [currentPage, setCurrentPage] = useState(1);
   const [filter, setFilter] = useState('all'); // 'all', 'general', 'state'
   const [completedQuestions, setCompletedQuestions] = useState([]);
+  const [showTranslation, setShowTranslation] = useState(true);
+
+  // Get user's native language setting (vi or en)
+  const targetLang = user?.nativeLanguage || 'vi';
+
+  // Helper to get translated text - use user's nativeLanguage setting, fallback to English
+  const getTranslation = (question, field) => {
+    if (!showTranslation) return null;
+    
+    // Try user's native language first, fallback to English
+    const langs = targetLang === 'en' ? ['en'] : [targetLang, 'en'];
+    
+    for (const lang of langs) {
+      const translation = question[lang];
+      if (!translation) continue;
+      
+      if (field === 'q' && translation.q) return translation.q;
+      if (typeof field === 'number' && translation.o?.[field]) return translation.o[field];
+    }
+    return null;
+  };
 
   useEffect(() => {
     if (user) {
@@ -117,48 +140,76 @@ const LearnPage = () => {
             )}
           </div>
 
+          {/* Translation Toggle */}
+          <div className={styles.translationToggle}>
+            <label>
+              <input 
+                type="checkbox" 
+                checked={showTranslation} 
+                onChange={(e) => setShowTranslation(e.target.checked)} 
+              />
+              <span>Hiện bản dịch {targetLang === 'vi' ? 'tiếng Việt' : 'tiếng Anh'}</span>
+            </label>
+          </div>
+
           {/* Questions List */}
           <div className={styles.questionsList}>
-            {currentQuestions.map((question, idx) => (
-              <div key={`${question.type}-${question.id}`} className={styles.questionCard}>
-                <div className={styles.questionHeader}>
-                  <span className={styles.questionNumber}>
-                    Câu {startIndex + idx + 1}
-                    {question.type === 'state' && (
-                      <span className={styles.stateBadge}>{selectedBundeslandInfo?.name}</span>
-                    )}
-                  </span>
-                  {completedQuestions.includes(question.id) && (
-                    <span className={styles.completedBadge}>✓ Đã học</span>
-                  )}
-                </div>
-                
-                <p className={styles.questionText}>{question.q}</p>
-                
-                {question.img && (
-                  <div className={styles.questionImage}>
-                    <img src={getImageUrl(question.img)} alt="Hình ảnh câu hỏi" />
-                  </div>
-                )}
-
-                <div className={styles.options}>
-                  {question.o.map((option, optIdx) => (
-                    <div 
-                      key={optIdx}
-                      className={`${styles.option} ${optIdx === question.a ? styles.correct : ''}`}
-                    >
-                      <span className={styles.optionLetter}>
-                        {String.fromCharCode(65 + optIdx)}
-                      </span>
-                      <span className={styles.optionText}>{option}</span>
-                      {optIdx === question.a && (
-                        <span className={styles.correctMark}>✓</span>
+            {currentQuestions.map((question, idx) => {
+              const translatedQ = showTranslation ? getTranslation(question, 'q') : null;
+              
+              return (
+                <div key={`${question.type}-${question.id}`} className={styles.questionCard}>
+                  <div className={styles.questionHeader}>
+                    <span className={styles.questionNumber}>
+                      Câu {startIndex + idx + 1}
+                      {question.type === 'state' && (
+                        <span className={styles.stateBadge}>{selectedBundeslandInfo?.name}</span>
                       )}
+                    </span>
+                    {completedQuestions.includes(question.id) && (
+                      <span className={styles.completedBadge}>✓ Đã học</span>
+                    )}
+                  </div>
+                  
+                  <p className={styles.questionText}>{question.q}</p>
+                  {translatedQ && (
+                    <p className={styles.translatedText}>{translatedQ}</p>
+                  )}
+                  
+                  {question.img && (
+                    <div className={styles.questionImage}>
+                      <img src={getImageUrl(question.img)} alt="Hình ảnh câu hỏi" />
                     </div>
-                  ))}
+                  )}
+
+                  <div className={styles.options}>
+                    {question.o.map((option, optIdx) => {
+                      const translatedOpt = showTranslation ? getTranslation(question, optIdx) : null;
+                      
+                      return (
+                        <div 
+                          key={optIdx}
+                          className={`${styles.option} ${optIdx === question.a ? styles.correct : ''}`}
+                        >
+                          <span className={styles.optionLetter}>
+                            {String.fromCharCode(65 + optIdx)}
+                          </span>
+                          <div className={styles.optionContent}>
+                            <span className={styles.optionText}>{option}</span>
+                            {translatedOpt && (
+                              <span className={styles.optionTranslated}>{translatedOpt}</span>
+                            )}
+                          </div>
+                          {optIdx === question.a && (
+                            <span className={styles.correctMark}>✓</span>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Pagination */}

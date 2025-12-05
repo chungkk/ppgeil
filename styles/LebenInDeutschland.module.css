@@ -982,3 +982,50 @@
     flex-direction: column;
   }
 }
+
+/* Translation Toggle */
+.translationToggle {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.translationToggle label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.translationToggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-primary);
+}
+
+/* Translated Text */
+.translatedText {
+  color: var(--accent-primary);
+  font-size: 14px;
+  margin: 4px 0 12px;
+  padding-left: 4px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.optionContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.optionTranslated {
+  color: var(--accent-primary);
+  font-size: 13px;
+  font-style: italic;
+  opacity: 0.85;
+}
