@@ -155,6 +155,7 @@ const Header = () => {
 
   const navLinks = [
     { href: '/', label: t('header.nav.topics') },
+    { href: '/vocabulary', label: t('header.nav.vocabulary') },
     { href: '/leaderboard', label: t('header.nav.leaderboard') },
     { href: '/leben-in-deutschland', label: '🇩🇪 LiD Test' },
   ];

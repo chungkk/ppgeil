@@ -120,6 +120,35 @@ const UserSchema = new mongoose.Schema({
      testsTaken: { type: Number, default: 0 },
      bestScore: { type: Number, default: 0 },
      lastTestDate: { type: Date, default: null }
+   },
+   // Vocabulary Learning Progress with Spaced Repetition
+   vocabProgress: {
+     a1: {
+       // Words by mastery level: new -> learning -> mastered
+       newWords: { type: [String], default: [] },        // Chưa biết
+       learningWords: { type: [String], default: [] },   // Hơi quen (review after 1-3 days)
+       masteredWords: { type: [String], default: [] },   // Đã thuộc (review after 7+ days)
+       // Spaced repetition data: { word: nextReviewDate }
+       reviewSchedule: { type: Map, of: Date, default: {} },
+       totalSessions: { type: Number, default: 0 },
+       lastSessionDate: { type: Date, default: null }
+     },
+     a2: {
+       newWords: { type: [String], default: [] },
+       learningWords: { type: [String], default: [] },
+       masteredWords: { type: [String], default: [] },
+       reviewSchedule: { type: Map, of: Date, default: {} },
+       totalSessions: { type: Number, default: 0 },
+       lastSessionDate: { type: Date, default: null }
+     },
+     b1: {
+       newWords: { type: [String], default: [] },
+       learningWords: { type: [String], default: [] },
+       masteredWords: { type: [String], default: [] },
+       reviewSchedule: { type: Map, of: Date, default: {} },
+       totalSessions: { type: Number, default: 0 },
+       lastSessionDate: { type: Date, default: null }
+     }
    }
 });
 

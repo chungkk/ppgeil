@@ -1,0 +1,333 @@
+/* Vocabulary Home Page Styles */
+
+.container {
+  min-height: calc(100vh - 64px);
+  padding: 80px 16px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.titleIcon {
+  font-size: 36px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin: 0;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Category Section */
+.categorySection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.categoryCard {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.categoryCard.active {
+  border-color: var(--accent-primary);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+}
+
+.categoryCard.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.categoryIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.categoryInfo {
+  flex: 1;
+}
+
+.categoryTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 4px;
+}
+
+.categoryDesc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--text-muted);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.wordsBadge {
+  background: var(--accent-primary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Level Section */
+.levelSection {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sectionIcon {
+  font-size: 24px;
+}
+
+.levelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.levelCard {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  padding: 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.levelCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--level-color);
+}
+
+.levelCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--level-color);
+}
+
+.levelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.levelIcon {
+  font-size: 32px;
+}
+
+.levelBadge {
+  background: var(--bg-primary);
+  color: var(--level-color);
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid var(--level-color);
+}
+
+.levelTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+}
+
+.levelDesc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0 0 16px;
+  flex: 1;
+}
+
+.levelStats {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.levelCount {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--level-color);
+}
+
+.levelLabel {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.levelAction {
+  background: var(--level-color);
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.levelCard:hover .levelAction {
+  transform: scale(1.02);
+}
+
+/* Stats Section */
+.statsSection {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 24px;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statValue {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.statLabel {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Level Progress Bar */
+.levelProgress {
+  margin-bottom: 12px;
+}
+
+.progressMini {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.miniNew { color: #ef4444; }
+.miniLearning { color: #f59e0b; }
+.miniMastered { color: #22c55e; }
+
+.progressBarSmall {
+  height: 6px;
+  background: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progressFillSmall {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progressLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.dueLabel {
+  display: block;
+  font-size: 11px;
+  color: #f59e0b;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.statDue {
+  color: #f59e0b !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 70px 12px 32px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .categorySection {
+    grid-template-columns: 1fr;
+  }
+
+  .levelGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statsSection {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
