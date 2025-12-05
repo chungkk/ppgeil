@@ -6375,6 +6375,774 @@
           "vi": "trang tri"
         }
       ]
+    },
+    {
+      "id": "verben_praeposition",
+      "name": "Verben mit Präpositionen",
+      "name_en": "Verbs with Prepositions",
+      "name_vi": "Động từ + Giới từ",
+      "words": [
+        {
+          "word": "warten auf + Akk",
+          "en": "to wait for",
+          "vi": "chờ đợi ai/cái gì"
+        },
+        {
+          "word": "denken an + Akk",
+          "en": "to think about",
+          "vi": "nghĩ về ai/cái gì"
+        },
+        {
+          "word": "sich freuen auf + Akk",
+          "en": "to look forward to",
+          "vi": "mong đợi điều gì"
+        },
+        {
+          "word": "sich freuen über + Akk",
+          "en": "to be happy about",
+          "vi": "vui mừng về điều gì"
+        },
+        {
+          "word": "sich interessieren für + Akk",
+          "en": "to be interested in",
+          "vi": "quan tâm đến"
+        },
+        {
+          "word": "sich kümmern um + Akk",
+          "en": "to take care of",
+          "vi": "chăm sóc, lo lắng cho"
+        },
+        {
+          "word": "achten auf + Akk",
+          "en": "to pay attention to",
+          "vi": "chú ý đến"
+        },
+        {
+          "word": "antworten auf + Akk",
+          "en": "to answer to",
+          "vi": "trả lời (câu hỏi)"
+        },
+        {
+          "word": "bitten um + Akk",
+          "en": "to ask for",
+          "vi": "xin, yêu cầu"
+        },
+        {
+          "word": "danken für + Akk",
+          "en": "to thank for",
+          "vi": "cảm ơn về"
+        },
+        {
+          "word": "sich entschuldigen für + Akk",
+          "en": "to apologize for",
+          "vi": "xin lỗi về"
+        },
+        {
+          "word": "sich erinnern an + Akk",
+          "en": "to remember",
+          "vi": "nhớ về"
+        },
+        {
+          "word": "erzählen von + Dat",
+          "en": "to tell about",
+          "vi": "kể về"
+        },
+        {
+          "word": "fragen nach + Dat",
+          "en": "to ask about",
+          "vi": "hỏi về"
+        },
+        {
+          "word": "gehören zu + Dat",
+          "en": "to belong to",
+          "vi": "thuộc về"
+        },
+        {
+          "word": "glauben an + Akk",
+          "en": "to believe in",
+          "vi": "tin vào"
+        },
+        {
+          "word": "gratulieren zu + Dat",
+          "en": "to congratulate on",
+          "vi": "chúc mừng về"
+        },
+        {
+          "word": "helfen bei + Dat",
+          "en": "to help with",
+          "vi": "giúp đỡ về"
+        },
+        {
+          "word": "hoffen auf + Akk",
+          "en": "to hope for",
+          "vi": "hy vọng vào"
+        },
+        {
+          "word": "sich informieren über + Akk",
+          "en": "to get information about",
+          "vi": "tìm hiểu về"
+        },
+        {
+          "word": "kämpfen für + Akk",
+          "en": "to fight for",
+          "vi": "chiến đấu cho"
+        },
+        {
+          "word": "kämpfen gegen + Akk",
+          "en": "to fight against",
+          "vi": "chiến đấu chống lại"
+        },
+        {
+          "word": "leiden an + Dat",
+          "en": "to suffer from",
+          "vi": "mắc bệnh, chịu đựng"
+        },
+        {
+          "word": "nachdenken über + Akk",
+          "en": "to think about",
+          "vi": "suy nghĩ về"
+        },
+        {
+          "word": "sich ärgern über + Akk",
+          "en": "to be annoyed about",
+          "vi": "bực mình về"
+        },
+        {
+          "word": "sich beschweren über + Akk",
+          "en": "to complain about",
+          "vi": "phàn nàn về"
+        },
+        {
+          "word": "sprechen mit + Dat",
+          "en": "to speak with",
+          "vi": "nói chuyện với"
+        },
+        {
+          "word": "sprechen über + Akk",
+          "en": "to speak about",
+          "vi": "nói về"
+        },
+        {
+          "word": "teilnehmen an + Dat",
+          "en": "to participate in",
+          "vi": "tham gia vào"
+        },
+        {
+          "word": "träumen von + Dat",
+          "en": "to dream of",
+          "vi": "mơ về"
+        },
+        {
+          "word": "sich verlassen auf + Akk",
+          "en": "to rely on",
+          "vi": "dựa vào, tin tưởng"
+        },
+        {
+          "word": "sich verlieben in + Akk",
+          "en": "to fall in love with",
+          "vi": "yêu ai"
+        },
+        {
+          "word": "sich vorbereiten auf + Akk",
+          "en": "to prepare for",
+          "vi": "chuẩn bị cho"
+        },
+        {
+          "word": "warnen vor + Dat",
+          "en": "to warn about",
+          "vi": "cảnh báo về"
+        },
+        {
+          "word": "zweifeln an + Dat",
+          "en": "to doubt",
+          "vi": "nghi ngờ về"
+        },
+        {
+          "word": "Angst haben vor + Dat",
+          "en": "to be afraid of",
+          "vi": "sợ hãi về"
+        },
+        {
+          "word": "stolz sein auf + Akk",
+          "en": "to be proud of",
+          "vi": "tự hào về"
+        },
+        {
+          "word": "zufrieden sein mit + Dat",
+          "en": "to be satisfied with",
+          "vi": "hài lòng với"
+        },
+        {
+          "word": "abhängen von + Dat",
+          "en": "to depend on",
+          "vi": "phụ thuộc vào"
+        },
+        {
+          "word": "anfangen mit + Dat",
+          "en": "to start with",
+          "vi": "bắt đầu với"
+        },
+        {
+          "word": "aufhören mit + Dat",
+          "en": "to stop doing",
+          "vi": "ngừng làm"
+        },
+        {
+          "word": "sich beschäftigen mit + Dat",
+          "en": "to deal with",
+          "vi": "bận rộn với"
+        },
+        {
+          "word": "bestehen aus + Dat",
+          "en": "to consist of",
+          "vi": "bao gồm"
+        },
+        {
+          "word": "diskutieren über + Akk",
+          "en": "to discuss about",
+          "vi": "thảo luận về"
+        },
+        {
+          "word": "einladen zu + Dat",
+          "en": "to invite to",
+          "vi": "mời đến"
+        },
+        {
+          "word": "sich entscheiden für + Akk",
+          "en": "to decide for",
+          "vi": "quyết định chọn"
+        },
+        {
+          "word": "sich gewöhnen an + Akk",
+          "en": "to get used to",
+          "vi": "quen với"
+        },
+        {
+          "word": "handeln von + Dat",
+          "en": "to be about",
+          "vi": "nói về (chủ đề)"
+        },
+        {
+          "word": "lachen über + Akk",
+          "en": "to laugh about",
+          "vi": "cười về"
+        },
+        {
+          "word": "reden über + Akk",
+          "en": "to talk about",
+          "vi": "nói về"
+        },
+        {
+          "word": "riechen nach + Dat",
+          "en": "to smell of",
+          "vi": "có mùi của"
+        },
+        {
+          "word": "schmecken nach + Dat",
+          "en": "to taste of",
+          "vi": "có vị của"
+        },
+        {
+          "word": "schreiben an + Akk",
+          "en": "to write to",
+          "vi": "viết cho ai"
+        },
+        {
+          "word": "sorgen für + Akk",
+          "en": "to take care of",
+          "vi": "lo liệu cho"
+        },
+        {
+          "word": "sterben an + Dat",
+          "en": "to die of",
+          "vi": "chết vì"
+        },
+        {
+          "word": "suchen nach + Dat",
+          "en": "to search for",
+          "vi": "tìm kiếm"
+        },
+        {
+          "word": "übersetzen in + Akk",
+          "en": "to translate into",
+          "vi": "dịch sang"
+        },
+        {
+          "word": "sich unterhalten über + Akk",
+          "en": "to chat about",
+          "vi": "trò chuyện về"
+        },
+        {
+          "word": "verzichten auf + Akk",
+          "en": "to give up",
+          "vi": "từ bỏ"
+        },
+        {
+          "word": "sich wundern über + Akk",
+          "en": "to be surprised about",
+          "vi": "ngạc nhiên về"
+        },
+        {
+          "word": "sich bewerben um + Akk",
+          "en": "to apply for",
+          "vi": "ứng tuyển vào"
+        },
+        {
+          "word": "sich bemühen um + Akk",
+          "en": "to try hard for",
+          "vi": "cố gắng, nỗ lực"
+        },
+        {
+          "word": "sich sorgen um + Akk",
+          "en": "to worry about",
+          "vi": "lo lắng về"
+        },
+        {
+          "word": "streiten um + Akk",
+          "en": "to argue about",
+          "vi": "tranh cãi về"
+        },
+        {
+          "word": "es geht um + Akk",
+          "en": "it's about",
+          "vi": "vấn đề là"
+        },
+        {
+          "word": "es handelt sich um + Akk",
+          "en": "it concerns",
+          "vi": "liên quan đến"
+        },
+        {
+          "word": "beitragen zu + Dat",
+          "en": "to contribute to",
+          "vi": "đóng góp vào"
+        },
+        {
+          "word": "führen zu + Dat",
+          "en": "to lead to",
+          "vi": "dẫn đến"
+        },
+        {
+          "word": "passen zu + Dat",
+          "en": "to match",
+          "vi": "phù hợp với"
+        },
+        {
+          "word": "raten zu + Dat",
+          "en": "to advise",
+          "vi": "khuyên"
+        },
+        {
+          "word": "zählen zu + Dat",
+          "en": "to count among",
+          "vi": "thuộc vào"
+        },
+        {
+          "word": "zwingen zu + Dat",
+          "en": "to force to",
+          "vi": "ép buộc"
+        },
+        {
+          "word": "bereit sein zu + Dat",
+          "en": "to be ready for",
+          "vi": "sẵn sàng cho"
+        },
+        {
+          "word": "fähig sein zu + Dat",
+          "en": "to be capable of",
+          "vi": "có khả năng"
+        },
+        {
+          "word": "sich sehnen nach + Dat",
+          "en": "to long for",
+          "vi": "khao khát"
+        },
+        {
+          "word": "streben nach + Dat",
+          "en": "to strive for",
+          "vi": "phấn đấu"
+        },
+        {
+          "word": "verlangen nach + Dat",
+          "en": "to demand",
+          "vi": "đòi hỏi"
+        },
+        {
+          "word": "sich ekeln vor + Dat",
+          "en": "to be disgusted by",
+          "vi": "ghê tởm"
+        },
+        {
+          "word": "fliehen vor + Dat",
+          "en": "to flee from",
+          "vi": "chạy trốn khỏi"
+        },
+        {
+          "word": "sich fürchten vor + Dat",
+          "en": "to be afraid of",
+          "vi": "sợ hãi"
+        },
+        {
+          "word": "sich hüten vor + Dat",
+          "en": "to beware of",
+          "vi": "cẩn thận với"
+        },
+        {
+          "word": "schützen vor + Dat",
+          "en": "to protect from",
+          "vi": "bảo vệ khỏi"
+        },
+        {
+          "word": "sich ergeben aus + Dat",
+          "en": "to result from",
+          "vi": "xuất phát từ"
+        },
+        {
+          "word": "folgen aus + Dat",
+          "en": "to follow from",
+          "vi": "kết quả từ"
+        },
+        {
+          "word": "stammen aus + Dat",
+          "en": "to come from",
+          "vi": "đến từ"
+        },
+        {
+          "word": "leiden unter + Dat",
+          "en": "to suffer from",
+          "vi": "chịu đựng"
+        },
+        {
+          "word": "verstehen unter + Dat",
+          "en": "to understand by",
+          "vi": "hiểu là"
+        },
+        {
+          "word": "protestieren gegen + Akk",
+          "en": "to protest against",
+          "vi": "phản đối"
+        },
+        {
+          "word": "sich wehren gegen + Akk",
+          "en": "to defend against",
+          "vi": "chống lại"
+        },
+        {
+          "word": "verstoßen gegen + Akk",
+          "en": "to violate",
+          "vi": "vi phạm"
+        },
+        {
+          "word": "stimmen gegen + Akk",
+          "en": "to vote against",
+          "vi": "bỏ phiếu chống"
+        },
+        {
+          "word": "stimmen für + Akk",
+          "en": "to vote for",
+          "vi": "bỏ phiếu cho"
+        },
+        {
+          "word": "sich bedanken bei + Dat",
+          "en": "to thank someone",
+          "vi": "cảm ơn ai"
+        },
+        {
+          "word": "sich beschweren bei + Dat",
+          "en": "to complain to",
+          "vi": "phàn nàn với ai"
+        },
+        {
+          "word": "sich entschuldigen bei + Dat",
+          "en": "to apologize to",
+          "vi": "xin lỗi ai"
+        },
+        {
+          "word": "einwilligen in + Akk",
+          "en": "to agree to",
+          "vi": "đồng ý"
+        },
+        {
+          "word": "beginnen mit + Dat",
+          "en": "to begin with",
+          "vi": "bắt đầu với"
+        },
+        {
+          "word": "rechnen mit + Dat",
+          "en": "to expect",
+          "vi": "tính đến"
+        },
+        {
+          "word": "telefonieren mit + Dat",
+          "en": "to phone with",
+          "vi": "gọi điện với"
+        },
+        {
+          "word": "sich treffen mit + Dat",
+          "en": "to meet with",
+          "vi": "gặp gỡ"
+        },
+        {
+          "word": "vergleichen mit + Dat",
+          "en": "to compare with",
+          "vi": "so sánh với"
+        },
+        {
+          "word": "sich verabreden mit + Dat",
+          "en": "to make an appointment",
+          "vi": "hẹn gặp"
+        },
+        {
+          "word": "handeln mit + Dat",
+          "en": "to trade in",
+          "vi": "buôn bán"
+        },
+        {
+          "word": "ankommen auf + Akk",
+          "en": "to depend on",
+          "vi": "phụ thuộc vào"
+        },
+        {
+          "word": "aufpassen auf + Akk",
+          "en": "to watch out for",
+          "vi": "trông chừng"
+        },
+        {
+          "word": "sich beziehen auf + Akk",
+          "en": "to refer to",
+          "vi": "liên quan đến"
+        },
+        {
+          "word": "sich konzentrieren auf + Akk",
+          "en": "to concentrate on",
+          "vi": "tập trung vào"
+        },
+        {
+          "word": "reagieren auf + Akk",
+          "en": "to react to",
+          "vi": "phản ứng"
+        },
+        {
+          "word": "hinweisen auf + Akk",
+          "en": "to point to",
+          "vi": "chỉ ra"
+        },
+        {
+          "word": "bestehen auf + Dat",
+          "en": "to insist on",
+          "vi": "khăng khăng"
+        },
+        {
+          "word": "neugierig sein auf + Akk",
+          "en": "to be curious about",
+          "vi": "tò mò về"
+        },
+        {
+          "word": "wütend sein auf + Akk",
+          "en": "to be angry at",
+          "vi": "giận"
+        },
+        {
+          "word": "neidisch sein auf + Akk",
+          "en": "to be jealous of",
+          "vi": "ghen tị với"
+        },
+        {
+          "word": "sich wenden an + Akk",
+          "en": "to turn to",
+          "vi": "hướng đến"
+        },
+        {
+          "word": "sich anpassen an + Akk",
+          "en": "to adapt to",
+          "vi": "thích nghi với"
+        },
+        {
+          "word": "grenzen an + Akk",
+          "en": "to border on",
+          "vi": "giáp với"
+        },
+        {
+          "word": "sich beteiligen an + Dat",
+          "en": "to participate in",
+          "vi": "tham gia vào"
+        },
+        {
+          "word": "erkranken an + Dat",
+          "en": "to fall ill with",
+          "vi": "mắc bệnh"
+        },
+        {
+          "word": "fehlen an + Dat",
+          "en": "to lack",
+          "vi": "thiếu"
+        },
+        {
+          "word": "interessiert sein an + Dat",
+          "en": "to be interested in",
+          "vi": "quan tâm đến"
+        },
+        {
+          "word": "arbeiten an + Dat",
+          "en": "to work on",
+          "vi": "làm việc về"
+        },
+        {
+          "word": "sich aufregen über + Akk",
+          "en": "to get upset about",
+          "vi": "bực bội về"
+        },
+        {
+          "word": "berichten über + Akk",
+          "en": "to report on",
+          "vi": "báo cáo về"
+        },
+        {
+          "word": "verfügen über + Akk",
+          "en": "to have at disposal",
+          "vi": "sở hữu"
+        },
+        {
+          "word": "klagen über + Akk",
+          "en": "to complain about",
+          "vi": "than phiền về"
+        },
+        {
+          "word": "traurig sein über + Akk",
+          "en": "to be sad about",
+          "vi": "buồn về"
+        },
+        {
+          "word": "erstaunt sein über + Akk",
+          "en": "to be amazed at",
+          "vi": "ngạc nhiên về"
+        },
+        {
+          "word": "sich bedanken für + Akk",
+          "en": "to thank for",
+          "vi": "cảm ơn vì"
+        },
+        {
+          "word": "sich begeistern für + Akk",
+          "en": "to be enthusiastic about",
+          "vi": "hứng thú với"
+        },
+        {
+          "word": "sich eignen für + Akk",
+          "en": "to be suitable for",
+          "vi": "phù hợp cho"
+        },
+        {
+          "word": "halten für + Akk",
+          "en": "to consider as",
+          "vi": "cho là"
+        },
+        {
+          "word": "verantwortlich sein für + Akk",
+          "en": "to be responsible for",
+          "vi": "chịu trách nhiệm về"
+        },
+        {
+          "word": "bekannt sein für + Akk",
+          "en": "to be known for",
+          "vi": "nổi tiếng vì"
+        },
+        {
+          "word": "bereit sein für + Akk",
+          "en": "to be ready for",
+          "vi": "sẵn sàng cho"
+        },
+        {
+          "word": "abraten von + Dat",
+          "en": "to advise against",
+          "vi": "khuyên không nên"
+        },
+        {
+          "word": "sich erholen von + Dat",
+          "en": "to recover from",
+          "vi": "hồi phục từ"
+        },
+        {
+          "word": "halten von + Dat",
+          "en": "to think of",
+          "vi": "nghĩ về"
+        },
+        {
+          "word": "sich trennen von + Dat",
+          "en": "to separate from",
+          "vi": "chia tay"
+        },
+        {
+          "word": "überzeugen von + Dat",
+          "en": "to convince of",
+          "vi": "thuyết phục"
+        },
+        {
+          "word": "sich verabschieden von + Dat",
+          "en": "to say goodbye to",
+          "vi": "tạm biệt"
+        },
+        {
+          "word": "enttäuscht sein von + Dat",
+          "en": "to be disappointed in",
+          "vi": "thất vọng về"
+        },
+        {
+          "word": "begeistert sein von + Dat",
+          "en": "to be excited about",
+          "vi": "hào hứng về"
+        },
+        {
+          "word": "überzeugt sein von + Dat",
+          "en": "to be convinced of",
+          "vi": "tin chắc về"
+        },
+        {
+          "word": "sich unterscheiden von + Dat",
+          "en": "to differ from",
+          "vi": "khác với"
+        },
+        {
+          "word": "schließen aus + Dat",
+          "en": "to conclude from",
+          "vi": "kết luận từ"
+        },
+        {
+          "word": "entlassen aus + Dat",
+          "en": "to dismiss from",
+          "vi": "sa thải từ"
+        },
+        {
+          "word": "einstellen bei + Dat",
+          "en": "to hire at",
+          "vi": "tuyển dụng tại"
+        },
+        {
+          "word": "sich erkundigen nach + Dat",
+          "en": "to inquire about",
+          "vi": "hỏi thăm về"
+        },
+        {
+          "word": "greifen nach + Dat",
+          "en": "to reach for",
+          "vi": "với lấy"
+        },
+        {
+          "word": "rufen nach + Dat",
+          "en": "to call for",
+          "vi": "gọi"
+        },
+        {
+          "word": "urteilen nach + Dat",
+          "en": "to judge by",
+          "vi": "đánh giá theo"
+        },
+        {
+          "word": "sich richten nach + Dat",
+          "en": "to go by",
+          "vi": "tuân theo"
+        }
+      ]
     }
   ]
 }

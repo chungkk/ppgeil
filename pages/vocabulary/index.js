@@ -10,7 +10,7 @@ import styles from '../../styles/VocabHome.module.css';
 import goetheA1Vocabulary from '../../lib/data/goetheA1Vocabulary';
 import goetheA2Vocabulary from '../../lib/data/goetheA2Vocabulary';
 import goetheB1Vocabulary from '../../lib/data/goetheB1Vocabulary';
-import { getTotalWordCount as getTopicWordCount, getAllTopics } from '../../lib/data/goetheTopicVocabulary';
+import { getTotalWordCount as getTopicWordCount, getAllTopics, getTopicById } from '../../lib/data/goetheTopicVocabulary';
 
 const VocabularyHomePage = () => {
   const { t } = useTranslation('common');
@@ -78,6 +78,8 @@ const VocabularyHomePage = () => {
   const totalWords = goetheA1Vocabulary.length + goetheA2Vocabulary.length + goetheB1Vocabulary.length;
   const topicCount = getAllTopics().length;
   const topicWordCount = getTopicWordCount();
+  const verbenPraepTopic = getTopicById('verben_praeposition');
+  const verbenPraepCount = verbenPraepTopic?.words?.length || 60;
   
   // Calculate totals with new structure
   const getLevelStats = (levelKey) => {
@@ -150,7 +152,34 @@ const VocabularyHomePage = () => {
               </Link>
             </div>
 
-            {/* Section 2: Learn by Level */}
+            {/* Section 2: Verben mit Präpositionen */}
+            <div className={styles.section}>
+              <div className={styles.sectionHeader}>
+                <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
+                  🔗
+                </div>
+                <div className={styles.sectionInfo}>
+                  <h2 className={styles.sectionTitle}>
+                    {isEn ? 'Verbs with Prepositions' : 'Cụm động từ + Giới từ'}
+                  </h2>
+                  <p className={styles.sectionDesc}>
+                    Verben mit Präpositionen • {verbenPraepCount} {isEn ? 'phrases' : 'cụm từ'}
+                  </p>
+                </div>
+              </div>
+              
+              <p className={styles.sectionText}>
+                {isEn 
+                  ? 'Master German verbs that require specific prepositions. Essential for fluent communication!'
+                  : 'Học các động từ đi kèm giới từ cố định. Rất quan trọng để giao tiếp trôi chảy!'}
+              </p>
+
+              <Link href="/vocabulary/topics/verben_praeposition" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
+                {isEn ? 'Start Learning' : 'Bắt đầu học'} →
+              </Link>
+            </div>
+
+            {/* Section 3: Learn by Level */}
             <div className={styles.section}>
               <div className={styles.sectionHeader}>
                 <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}>

@@ -7,11 +7,17 @@ import styles from '../../../styles/VocabTopics.module.css';
 
 // Group topics by category
 const topicCategories = {
+  grammar: {
+    name_en: 'Grammar & Structure',
+    name_vi: 'Ngữ pháp & Cấu trúc',
+    icon: '🔗',
+    topics: ['verben_praeposition', 'verbs', 'adjectives']
+  },
   basic: {
-    name_en: 'Basic & Grammar',
-    name_vi: 'Cơ bản & Ngữ pháp',
+    name_en: 'Basic Vocabulary',
+    name_vi: 'Từ vựng cơ bản',
     icon: '📝',
-    topics: ['adjectives', 'verbs', 'numbers', 'colors', 'time']
+    topics: ['numbers', 'colors', 'time']
   },
   people: {
     name_en: 'People & Relationships',
