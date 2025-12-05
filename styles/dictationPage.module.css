@@ -25,14 +25,14 @@
 /* Main Layout - 3 columns on desktop */
 .mainContent {
   display: grid;
-  grid-template-columns: minmax(400px, 1.1fr) 1fr 320px;
-  gap: var(--spacing-lg);
+  grid-template-columns: minmax(320px, 1.1fr) minmax(280px, 1fr) 300px;
+  gap: var(--spacing-md);
   align-items: start;
   min-height: calc(100vh - 200px);
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
 }
 
 /* Middle Column - Dictation Area */
@@ -41,6 +41,7 @@
   flex-direction: column;
   height: 550px;
   min-height: 300px;
+  min-width: 0; /* Allow grid shrinking */
   gap: 0;
   /* Ensure proper containment for absolute positioned children */
   position: relative;
@@ -51,6 +52,7 @@
   display: flex;
   flex-direction: column;
   height: 550px;
+  min-width: 0; /* Allow grid shrinking */
   gap: var(--spacing-sm);
 }
 
@@ -81,6 +83,7 @@
   display: flex;
   flex-direction: column;
   height: 550px;
+  min-width: 0; /* Allow grid shrinking */
   gap: var(--spacing-sm);
   background: linear-gradient(145deg, var(--bg-secondary) 0%, rgba(102, 126, 234, 0.02) 100%);
   border-radius: var(--border-radius);
