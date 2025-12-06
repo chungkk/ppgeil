@@ -201,11 +201,24 @@ const VocabularyLearnPage = () => {
   const totalMastered = levelProgress?.masteredWords?.length || 0;
   const totalWords = config?.data?.length || 0;
 
-  // Flip card
-  const handleFlip = () => {
+  // Handle card click - flip or answer based on position
+  const handleCardClick = (e) => {
     if (!isFlipped) {
       setIsFlipped(true);
       setShowButtons(true);
+    } else {
+      // Card is flipped - check click position
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const cardWidth = rect.width;
+      
+      if (clickX < cardWidth / 2) {
+        // Left side - Weiß nicht (Don't know)
+        handleAnswer(MASTERY.NEW);
+      } else {
+        // Right side - Kann ich! (Know it)
+        handleAnswer(MASTERY.MASTERED);
+      }
     }
   };
 
@@ -358,7 +371,7 @@ const VocabularyLearnPage = () => {
                 {/* Flashcard */}
                 <div 
                   className={`${styles.flashcard} ${isFlipped ? styles.flipped : ''}`}
-                  onClick={handleFlip}
+                  onClick={handleCardClick}
                   style={{ '--card-color': config.color }}
                 >
                   <div className={styles.cardInner}>
