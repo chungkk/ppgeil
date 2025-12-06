@@ -6,13 +6,11 @@ import SEO from '../../../components/SEO';
 import { getAllTopics, getTotalWordCount, topicIcons } from '../../../lib/data/goetheTopicVocabulary';
 import styles from '../../../styles/VocabTopics.module.css';
 
-// Group topics by category with translation keys
+// Grammar topic IDs - shown in /vocabulary/grammar instead
+const GRAMMAR_TOPIC_IDS = ['verben_praeposition', 'nomen_verb', 'verbs', 'adjectives'];
+
+// Group topics by category with translation keys (vocabulary only, no grammar)
 const topicCategories = {
-  grammar: {
-    key: 'grammar',
-    icon: '🔗',
-    topics: ['verben_praeposition', 'nomen_verb', 'verbs', 'adjectives']
-  },
   basic: {
     key: 'basic',
     icon: '📝',
@@ -56,8 +54,8 @@ const VocabularyTopicsPage = () => {
   const isDe = currentLanguage === 'de';
   const isEn = currentLanguage === 'en';
   
-  const allTopics = getAllTopics();
-  const totalWords = getTotalWordCount();
+  const allTopics = getAllTopics().filter(t => !GRAMMAR_TOPIC_IDS.includes(t.id));
+  const totalWords = allTopics.reduce((sum, t) => sum + t.wordCount, 0);
 
   // Get topic data by id
   const getTopicData = (topicId) => {

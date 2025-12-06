@@ -149,6 +149,12 @@ const UserSchema = new mongoose.Schema({
        totalSessions: { type: Number, default: 0 },
        lastSessionDate: { type: Date, default: null }
      }
+   },
+   // Anki-style SRS Progress - stores card data per deck
+   // Structure: { "level_a1": { cards: { "word": cardData }, stats: {} }, "topic_xyz": { ... } }
+   srsProgress: {
+     type: mongoose.Schema.Types.Mixed,
+     default: {}
    }
 });
 

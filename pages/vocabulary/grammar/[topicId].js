@@ -9,7 +9,6 @@ import {
   createNewCard, 
   calculateNextReview, 
   getAllNextReviewTexts,
-  buildStudyQueue,
   CardState,
   Rating 
 } from '../../../lib/srs';
@@ -17,21 +16,21 @@ import SEO from '../../../components/SEO';
 import { getTopicById, topicIcons } from '../../../lib/data/goetheTopicVocabulary';
 import styles from '../../../styles/VocabLearn.module.css';
 
-// Grammar topics - redirect to /vocabulary/grammar/[topicId]
+// Grammar topic IDs
 const GRAMMAR_TOPIC_IDS = ['verben_praeposition', 'nomen_verb', 'verbs', 'adjectives'];
 
-const TopicLearnPage = () => {
+const GrammarLearnPage = () => {
   const router = useRouter();
   const { topicId } = router.query;
   const { t } = useTranslation('common');
   const { currentLanguage } = useLanguage();
   const { user } = useAuth();
   
-  // Use user's nativeLanguage setting for translations, fallback to currentLanguage
   const translationLang = user?.nativeLanguage || currentLanguage;
   const isTranslationEn = translationLang === 'en';
 
   const topic = getTopicById(topicId);
+  const isValidGrammarTopic = GRAMMAR_TOPIC_IDS.includes(topicId);
 
   // States
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,29 +45,20 @@ const TopicLearnPage = () => {
 
   const isEn = currentLanguage === 'en';
 
-  // Redirect grammar topics to /vocabulary/grammar/[topicId]
-  useEffect(() => {
-    if (topicId && GRAMMAR_TOPIC_IDS.includes(topicId)) {
-      router.replace(`/vocabulary/grammar/${topicId}`);
-    }
-  }, [topicId, router]);
-
   // Shuffle data on mount
   useEffect(() => {
-    if (topic?.words && !GRAMMAR_TOPIC_IDS.includes(topicId)) {
+    if (topic?.words) {
       const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
       setShuffledData(shuffled);
     }
-  }, [topic, topicId]);
+  }, [topic]);
 
-  // Get translation based on user's nativeLanguage setting
   const getTranslation = (item) => {
     if (!item) return '';
     if (isTranslationEn) return item.en || item.vi || '';
     return item.vi || item.en || '';
   };
 
-  // Get topic name based on UI language
   const getTopicName = () => {
     if (!topic) return '';
     if (currentLanguage === 'de') return topic.name;
@@ -76,7 +66,6 @@ const TopicLearnPage = () => {
     return topic.name_vi || topic.name;
   };
 
-  // Parse article from word
   const parseWord = (wordStr) => {
     const match = wordStr.match(/^(der|die|das)\s+(.+)$/i);
     if (match) {
@@ -85,7 +74,6 @@ const TopicLearnPage = () => {
     return { article: null, word: wordStr };
   };
 
-  // Speak word
   const handleSpeak = (e) => {
     e?.stopPropagation();
     if (!currentCard) return;
@@ -95,15 +83,12 @@ const TopicLearnPage = () => {
     setTimeout(() => setIsSpeaking(false), 1500);
   };
 
-  // Current card
   const currentCard = shuffledData[currentIndex];
   const parsed = currentCard ? parseWord(currentCard.word) : { article: null, word: '' };
   const progress = shuffledData.length > 0 ? ((currentIndex + 1) / shuffledData.length) * 100 : 0;
 
-  // Get or create SRS card for current word
   const currentSrsCard = currentCard ? (srsCards[currentCard.word] || createNewCard(currentCard.word)) : null;
 
-  // Update next review times when card changes
   useEffect(() => {
     if (currentSrsCard) {
       const times = getAllNextReviewTexts(currentSrsCard, isEn ? 'en' : 'vi');
@@ -111,7 +96,6 @@ const TopicLearnPage = () => {
     }
   }, [currentSrsCard, isEn]);
 
-  // Get card state badge
   const getCardStateBadge = () => {
     if (!currentSrsCard) return null;
     const state = currentSrsCard.state;
@@ -126,7 +110,6 @@ const TopicLearnPage = () => {
     return { badgeClass, label };
   };
 
-  // Flip card
   const handleFlip = () => {
     if (!isFlipped) {
       setIsFlipped(true);
@@ -134,20 +117,16 @@ const TopicLearnPage = () => {
     }
   };
 
-  // Handle answer with Anki rating
   const handleAnswer = (rating) => {
     if (!currentCard || !currentSrsCard) return;
 
-    // Calculate updated card
     const updatedCard = calculateNextReview(currentSrsCard, rating);
     
-    // Update stats
     const ratingName = rating === Rating.AGAIN ? 'again' : 
                        rating === Rating.HARD ? 'hard' : 
                        rating === Rating.GOOD ? 'good' : 'easy';
     setStats(prev => ({ ...prev, [ratingName]: prev[ratingName] + 1 }));
 
-    // Update local SRS card
     setSrsCards(prev => ({
       ...prev,
       [currentCard.word]: updatedCard
@@ -156,7 +135,6 @@ const TopicLearnPage = () => {
     nextCard();
   };
 
-  // Next card
   const nextCard = () => {
     setIsFlipped(false);
     setShowButtons(false);
@@ -169,7 +147,6 @@ const TopicLearnPage = () => {
     }
   };
 
-  // Restart
   const handleRestart = () => {
     const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
     setShuffledData(shuffled);
@@ -182,7 +159,12 @@ const TopicLearnPage = () => {
     stopSpeech();
   };
 
-  // Loading or invalid topic
+  // Redirect if not a valid grammar topic
+  if (topicId && !isValidGrammarTopic && topic) {
+    router.replace(`/vocabulary/topics/${topicId}`);
+    return null;
+  }
+
   if (!topic) {
     return (
       <div className={styles.container}>
@@ -194,19 +176,19 @@ const TopicLearnPage = () => {
   }
 
   const topicIcon = topicIcons[topicId] || '📚';
-  const topicColor = '#6366f1';
+  const topicColor = '#10b981';
 
   return (
     <>
       <SEO
-        title={`${topic.name} - ${t('header.nav.vocabulary')}`}
-        description={`${t('vocabPage.byTopic.title')}: ${getTopicName()}`}
+        title={`${topic.name} - ${t('vocabPage.grammar.title')}`}
+        description={`${t('vocabPage.grammar.title')}: ${getTopicName()}`}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <Link href="/vocabulary/topics" className={styles.backLink}>
+          <Link href="/vocabulary/grammar" className={styles.backLink}>
             ←
           </Link>
           <div className={styles.levelBadge}>
@@ -229,7 +211,7 @@ const TopicLearnPage = () => {
           />
         </div>
 
-        {/* Session Score - Anki style */}
+        {/* Session Score */}
         <div className={styles.scoreRow}>
           <span className={styles.scoreNew}>❌ {stats.again}</span>
           <span className={styles.scoreLearning}>😐 {stats.hard}</span>
@@ -251,7 +233,6 @@ const TopicLearnPage = () => {
                   <div className={styles.cardInner}>
                     {/* Front */}
                     <div className={styles.cardFront}>
-                      {/* Card State Badge */}
                       {getCardStateBadge() && (
                         <span className={`${styles.cardStateBadge} ${getCardStateBadge().badgeClass}`}>
                           {getCardStateBadge().label}
@@ -294,7 +275,7 @@ const TopicLearnPage = () => {
                   </div>
                 </div>
 
-                {/* Answer Buttons - Anki 4 levels */}
+                {/* Answer Buttons */}
                 {showButtons && (
                   <div className={styles.answerRowAnki}>
                     <button 
@@ -337,7 +318,7 @@ const TopicLearnPage = () => {
             )}
           </div>
         ) : (
-          /* Complete Screen - Anki style */
+          /* Complete Screen */
           <div className={styles.completeArea}>
             <div className={styles.completeIcon}>🎉</div>
             <h2 className={styles.completeTitle}>
@@ -367,8 +348,8 @@ const TopicLearnPage = () => {
               <button className={styles.btnRestart} onClick={handleRestart}>
                 🔄 {t('vocabPage.learn.practiceMore')}
               </button>
-              <Link href="/vocabulary/topics" className={styles.btnHome}>
-                📂 {t('vocabPage.learn.allTopics')}
+              <Link href="/vocabulary/grammar" className={styles.btnHome}>
+                🔗 {t('vocabPage.grammar.title')}
               </Link>
             </div>
           </div>
@@ -378,4 +359,4 @@ const TopicLearnPage = () => {
   );
 };
 
-export default TopicLearnPage;
+export default GrammarLearnPage;

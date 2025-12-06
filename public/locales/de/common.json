@@ -759,6 +759,13 @@
       "phrases": "Ausdrücke",
       "desc": "Feste Nomen-Verb-Verbindungen lernen. Beispiel: eine Frage stellen, Bescheid geben..."
     },
+    "grammar": {
+      "title": "Grammatik-Muster",
+      "patterns": "Muster",
+      "phrases": "Ausdrücke",
+      "desc": "Wichtige deutsche Grammatik-Muster beherrschen: Verb-Präposition-Kombinationen, Nomen-Verb-Verbindungen und mehr.",
+      "btn": "Muster durchsuchen"
+    },
     "byLevel": {
       "title": "Nach Niveau lernen",
       "words": "Wörter",

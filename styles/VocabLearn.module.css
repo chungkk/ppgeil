@@ -3,7 +3,7 @@
 .container {
   min-height: calc(100vh - 64px);
   padding: 80px 16px 40px;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -18,43 +18,52 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 12px;
   margin-bottom: 16px;
 }
 
 .backLink {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 14px;
-  padding: 8px 12px;
+  font-size: 20px;
+  padding: 8px;
   border-radius: 8px;
   transition: all 0.2s;
+  line-height: 1;
 }
 
 .backLink:hover {
   background: var(--bg-secondary);
-  color: var(--accent-primary);
+  color: var(--text-primary);
 }
 
-.levelInfo {
+.levelBadge {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--bg-secondary);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
 }
 
 .levelIcon {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .levelTitle {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
 }
 
+.headerSpacer {
+  flex: 1;
+}
+
 .progressText {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Overall Progress */
@@ -141,8 +150,8 @@
 /* Flashcard */
 .flashcard {
   width: 100%;
-  max-width: 380px;
-  height: 300px;
+  max-width: 600px;
+  height: 280px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -170,7 +179,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 28px;
   text-align: center;
 }
 
@@ -195,7 +204,7 @@
 }
 
 .word {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -259,7 +268,7 @@
 }
 
 .speakBtnBack {
-  padding: 10px 20px;
+  padding: 10px 18px;
   border-radius: 10px;
   background: var(--accent-primary);
   border: none;
@@ -293,7 +302,7 @@
   margin: 0;
 }
 
-/* Answer Row - 3 Buttons */
+/* Answer Row - 3 Buttons (Legacy) */
 .answerRow3 {
   display: flex;
   gap: 10px;
@@ -356,6 +365,175 @@
   background: #dcfce7;
   transform: translateY(-2px);
 }
+
+/* Anki-style Answer Row - 4 Buttons */
+.answerRowAnki {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.ankiBtn {
+  flex: 1;
+  padding: 16px 12px;
+  border: none;
+  border-radius: var(--border-radius, 12px);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.ankiBtn:active {
+  transform: scale(0.95);
+}
+
+.ankiBtnTime {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.ankiBtnLabel {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Again Button - Red/Pink gradient matching theme */
+.btnAgain {
+  background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+  color: white;
+  box-shadow: 0 4px 16px rgba(225, 29, 72, 0.35);
+}
+
+.btnAgain:hover {
+  background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(225, 29, 72, 0.45);
+}
+
+/* Hard Button - Orange/Amber */
+.btnHard {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+}
+
+.btnHard:hover {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.45);
+}
+
+/* Good Button - Cyan/Teal matching accent-green */
+.btnGood {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+  color: #0f172a;
+  box-shadow: 0 4px 16px rgba(34, 211, 238, 0.35);
+}
+
+.btnGood:hover {
+  background: linear-gradient(135deg, #67e8f9 0%, #22d3ee 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.45);
+}
+
+/* Easy Button - Purple matching accent-purple */
+.btnEasy {
+  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+  color: white;
+  box-shadow: 0 4px 16px rgba(147, 51, 234, 0.35);
+}
+
+.btnEasy:hover {
+  background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(147, 51, 234, 0.45);
+}
+
+/* Card State Badge */
+.cardStateBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(4px);
+}
+
+.badgeNew {
+  background: rgba(147, 51, 234, 0.3);
+  color: #d8b4fe;
+  border: 1px solid rgba(147, 51, 234, 0.5);
+}
+
+.badgeLearning {
+  background: rgba(245, 158, 11, 0.3);
+  color: #fde68a;
+  border: 1px solid rgba(245, 158, 11, 0.5);
+}
+
+.badgeReview {
+  background: rgba(34, 211, 238, 0.3);
+  color: #a5f3fc;
+  border: 1px solid rgba(34, 211, 238, 0.5);
+}
+
+.badgeRelearning {
+  background: rgba(225, 29, 72, 0.3);
+  color: #fda4af;
+  border: 1px solid rgba(225, 29, 72, 0.5);
+}
+
+/* Stats Row - 4 columns for Anki */
+.statsRowAnki {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.statBoxAnki {
+  padding: 16px 12px;
+  border-radius: var(--border-radius, 12px);
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.statBoxAgain {
+  background: rgba(225, 29, 72, 0.15);
+  border: 2px solid rgba(225, 29, 72, 0.4);
+}
+
+.statBoxHard {
+  background: rgba(245, 158, 11, 0.15);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+}
+
+.statBoxGood {
+  background: rgba(34, 211, 238, 0.15);
+  border: 2px solid rgba(34, 211, 238, 0.4);
+}
+
+.statBoxEasy {
+  background: rgba(147, 51, 234, 0.15);
+  border: 2px solid rgba(147, 51, 234, 0.4);
+}
+
+.statBoxAgain .statNum { color: #fb7185; }
+.statBoxHard .statNum { color: #fbbf24; }
+.statBoxGood .statNum { color: #22d3ee; }
+.statBoxEasy .statNum { color: #a78bfa; }
 
 /* Complete Area */
 .completeArea {
@@ -517,20 +695,25 @@
   }
 
   .header {
+    gap: 10px;
     margin-bottom: 12px;
   }
 
   .backLink {
-    font-size: 13px;
-    padding: 6px 10px;
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .levelBadge {
+    padding: 5px 10px;
   }
 
   .levelIcon {
-    font-size: 22px;
+    font-size: 14px;
   }
 
   .levelTitle {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .progressText {
@@ -557,8 +740,8 @@
   }
 
   .flashcard {
-    max-width: 340px;
-    height: 280px;
+    max-width: 100%;
+    height: 200px;
   }
 
   .cardFront,
@@ -625,6 +808,47 @@
     font-size: 18px;
   }
 
+  /* Anki buttons responsive - Tablet */
+  .answerRowAnki {
+    gap: 8px;
+  }
+
+  .ankiBtn {
+    padding: 12px 6px;
+    border-radius: 10px;
+  }
+
+  .ankiBtnTime {
+    font-size: 10px;
+  }
+
+  .ankiBtnLabel {
+    font-size: 12px;
+  }
+
+  .cardStateBadge {
+    font-size: 9px;
+    padding: 4px 10px;
+  }
+
+  .statsRowAnki {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .statBoxAnki {
+    padding: 12px 8px;
+    border-radius: 10px;
+  }
+
+  .statBoxAnki .statNum {
+    font-size: 22px;
+  }
+
+  .statBoxAnki .statLabel {
+    font-size: 10px;
+  }
+
   .completeIcon {
     font-size: 48px;
   }
@@ -675,26 +899,26 @@
   }
 
   .header {
-    flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 10px;
   }
 
   .backLink {
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
+    font-size: 16px;
+    padding: 4px;
   }
 
-  .levelInfo {
-    gap: 6px;
+  .levelBadge {
+    padding: 4px 8px;
+    gap: 4px;
   }
 
   .levelIcon {
-    font-size: 20px;
+    font-size: 12px;
   }
 
   .levelTitle {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .progressText {
@@ -737,7 +961,7 @@
 
   .flashcard {
     max-width: 100%;
-    height: 260px;
+    height: 200px;
   }
 
   .cardFront,
@@ -816,6 +1040,56 @@
   .btnLearning span:first-child,
   .btnMastered span:first-child {
     font-size: 18px;
+  }
+
+  /* Anki buttons responsive - Mobile */
+  .answerRowAnki {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .ankiBtn {
+    padding: 16px 10px;
+    border-radius: 12px;
+  }
+
+  .ankiBtnTime {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .ankiBtnLabel {
+    font-size: 15px;
+  }
+
+  .cardStateBadge {
+    font-size: 8px;
+    padding: 4px 8px;
+    top: 10px;
+    left: 10px;
+    border-radius: 6px;
+  }
+
+  .statsRowAnki {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .statBoxAnki {
+    padding: 16px 12px;
+    border-radius: 12px;
+  }
+
+  .statBoxAnki .statNum {
+    font-size: 24px;
+  }
+
+  .statBoxAnki .statLabel {
+    font-size: 11px;
+    margin-top: 4px;
   }
 
   .completeArea {

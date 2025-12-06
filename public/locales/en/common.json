@@ -792,6 +792,13 @@
       "phrases": "phrases",
       "desc": "Learn fixed noun-verb expressions commonly used in German. Example: eine Frage stellen, Bescheid geben..."
     },
+    "grammar": {
+      "title": "Grammar Patterns",
+      "patterns": "patterns",
+      "phrases": "expressions",
+      "desc": "Master essential German grammar patterns: verb-preposition combinations, noun-verb collocations, and more.",
+      "btn": "Browse Patterns"
+    },
     "byLevel": {
       "title": "Learn by Level",
       "words": "words",

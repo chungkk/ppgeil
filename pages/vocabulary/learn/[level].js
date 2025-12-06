@@ -5,6 +5,14 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../../context/AuthContext';
 import { useLanguage } from '../../../context/LanguageContext';
 import { speakText, stopSpeech } from '../../../lib/textToSpeech';
+import { 
+  createNewCard, 
+  calculateNextReview, 
+  getAllNextReviewTexts,
+  buildStudyQueue,
+  CardState,
+  Rating 
+} from '../../../lib/srs';
 import SEO from '../../../components/SEO';
 import styles from '../../../styles/VocabLearn.module.css';
 
@@ -37,13 +45,6 @@ const levelConfig = {
   }
 };
 
-// Mastery levels
-const MASTERY = {
-  NEW: 'new',           // Chưa biết - review tomorrow
-  LEARNING: 'learning', // Hơi quen - review in 3 days
-  MASTERED: 'mastered'  // Đã thuộc - review in 7 days
-};
-
 const VocabularyLearnPage = () => {
   const router = useRouter();
   const { level } = router.query;
@@ -64,14 +65,19 @@ const VocabularyLearnPage = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [showButtons, setShowButtons] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
-  const [shuffledData, setShuffledData] = useState([]);
+  const [studyQueue, setStudyQueue] = useState({ newCards: [], learningCards: [], reviewCards: [], counts: { new: 0, learning: 0, review: 0 } });
+  const [srsCards, setSrsCards] = useState({});
   const [savedProgress, setSavedProgress] = useState(null);
   const [isSaving, setIsSaving] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   
-  // Track results for this session
+  // Track results for this session - Anki style
   const [sessionResults, setSessionResults] = useState([]);
-  const [stats, setStats] = useState({ new: 0, learning: 0, mastered: 0 });
+  const [stats, setStats] = useState({ again: 0, hard: 0, good: 0, easy: 0 });
+  const [studiedCounts, setStudiedCounts] = useState({ new: 0, review: 0 });
+  
+  // Next review times for current card
+  const [nextReviewTimes, setNextReviewTimes] = useState({ again: '', hard: '', good: '', easy: '' });
 
   // Load saved progress
   useEffect(() => {
@@ -85,29 +91,30 @@ const VocabularyLearnPage = () => {
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const res = await fetch('/api/user/vocab-progress', {
+      const res = await fetch('/api/user/srs-progress?level=' + level, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
       if (res.ok) {
         const data = await res.json();
-        setSavedProgress(data.vocabProgress);
+        if (data.deckStats) {
+          setSavedProgress(data.deckStats);
+        }
       }
     } catch (error) {
       console.error('Error loading progress:', error);
     }
   };
 
-  // Save progress when session completes
-  const saveProgress = useCallback(async (results) => {
-    if (!user || !level || results.length === 0) return;
+  // Save single card progress via API
+  const saveCardProgress = useCallback(async (word, rating, cardData) => {
+    if (!user || !level) return;
 
-    setIsSaving(true);
     try {
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const res = await fetch('/api/user/vocab-progress', {
+      const res = await fetch('/api/user/srs-progress', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -115,58 +122,45 @@ const VocabularyLearnPage = () => {
         },
         body: JSON.stringify({
           level: level.toLowerCase(),
-          wordResults: results
+          word,
+          rating,
+          cardData
         })
       });
 
       if (res.ok) {
         const data = await res.json();
-        // Update saved progress with new data
-        setSavedProgress(prev => ({
-          ...prev,
-          [level.toLowerCase()]: data.levelProgress
-        }));
+        // Update local SRS card data
+        if (data.card) {
+          setSrsCards(prev => ({
+            ...prev,
+            [word]: data.card
+          }));
+        }
       }
     } catch (error) {
-      console.error('Error saving progress:', error);
-    } finally {
-      setIsSaving(false);
+      console.error('Error saving card progress:', error);
     }
   }, [user, level]);
 
-  // Shuffle data on mount - prioritize words due for review
+  // Build study queue only once when config loads
   useEffect(() => {
-    if (config?.data && level) {
-      let wordsToLearn = [...config.data];
-      
-      // If user has progress, prioritize due words
-      if (savedProgress && savedProgress[level.toLowerCase()]) {
-        const levelData = savedProgress[level.toLowerCase()];
-        const dueWords = levelData.dueForReview || [];
-        const newWords = levelData.newWords || [];
-        
-        // Sort: due words first, then new words, then rest
-        wordsToLearn.sort((a, b) => {
-          const aIsDue = dueWords.includes(a.word);
-          const bIsDue = dueWords.includes(b.word);
-          const aIsNew = newWords.includes(a.word);
-          const bIsNew = newWords.includes(b.word);
-          
-          if (aIsDue && !bIsDue) return -1;
-          if (!aIsDue && bIsDue) return 1;
-          if (aIsNew && !bIsNew) return -1;
-          if (!aIsNew && bIsNew) return 1;
-          return Math.random() - 0.5;
-        });
-      } else {
-        // Just shuffle randomly
-        wordsToLearn.sort(() => Math.random() - 0.5);
-      }
-      
-      // Limit to 20 words per session for better learning
-      setShuffledData(wordsToLearn.slice(0, 20));
+    if (config?.data && level && studyQueue.newCards.length === 0 && studyQueue.reviewCards.length === 0) {
+      // Create SRS cards for all vocabulary
+      const allCards = config.data.map(wordData => {
+        return { ...createNewCard(wordData.word), wordData };
+      });
+
+      // Build study queue (prioritizes due cards)
+      const queue = buildStudyQueue(allCards, {
+        newCardsLimit: 20,
+        reviewsLimit: 100
+      });
+
+      setStudyQueue(queue);
+      setCurrentIndex(0);
     }
-  }, [config?.data, savedProgress, level]);
+  }, [config?.data, level, studyQueue.newCards.length, studyQueue.reviewCards.length]);
 
   // Get translation based on user's nativeLanguage setting
   const getTranslation = (item) => {
@@ -190,50 +184,75 @@ const VocabularyLearnPage = () => {
     setTimeout(() => setIsSpeaking(false), 1500);
   };
 
-  // Current card
-  const currentCard = shuffledData[currentIndex];
-  const progress = shuffledData.length > 0 ? ((currentIndex + 1) / shuffledData.length) * 100 : 0;
+  // Get current card from queue
+  const getAllQueueCards = () => {
+    const { newCards, learningCards, reviewCards } = studyQueue;
+    return [...learningCards, ...reviewCards, ...newCards];
+  };
+  
+  const allQueueCards = getAllQueueCards();
+  const currentCard = allQueueCards[currentIndex]?.wordData || allQueueCards[currentIndex];
+  const currentSrsCard = allQueueCards[currentIndex];
+  
+  // Calculate progress
+  const totalInSession = allQueueCards.length;
+  const progress = totalInSession > 0 ? ((currentIndex + 1) / totalInSession) * 100 : 0;
 
-  // Get level progress stats
-  const levelProgress = savedProgress?.[level?.toLowerCase()];
-  const totalNew = levelProgress?.newWords?.length || 0;
-  const totalLearning = levelProgress?.learningWords?.length || 0;
-  const totalMastered = levelProgress?.masteredWords?.length || 0;
+  // Update next review times when card changes
+  useEffect(() => {
+    if (currentSrsCard) {
+      const times = getAllNextReviewTexts(currentSrsCard, isEn ? 'en' : 'vi');
+      setNextReviewTimes(times);
+    }
+  }, [currentSrsCard, isEn]);
+
+  // Calculate remaining cards count
+  const remainingCards = allQueueCards.length - currentIndex;
   const totalWords = config?.data?.length || 0;
 
-  // Handle card click - flip or answer based on position
+  // Handle card click - flip only
   const handleCardClick = (e) => {
     if (!isFlipped) {
       setIsFlipped(true);
       setShowButtons(true);
-    } else {
-      // Card is flipped - check click position
-      const rect = e.currentTarget.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-      const cardWidth = rect.width;
-      
-      if (clickX < cardWidth / 2) {
-        // Left side - Weiß nicht (Don't know)
-        handleAnswer(MASTERY.NEW);
-      } else {
-        // Right side - Kann ich! (Know it)
-        handleAnswer(MASTERY.MASTERED);
-      }
     }
   };
 
-  // Handle answer with 3 levels
-  const handleAnswer = (mastery) => {
-    if (!currentCard) return;
+  // Handle answer with Anki 4-button rating
+  const handleAnswer = (rating) => {
+    if (!currentCard || !currentSrsCard) return;
 
+    // Calculate updated card
+    const updatedCard = calculateNextReview(currentSrsCard, rating);
+    
     // Record result
-    const result = { word: currentCard.word, result: mastery };
+    const ratingName = rating === Rating.AGAIN ? 'again' : 
+                       rating === Rating.HARD ? 'hard' : 
+                       rating === Rating.GOOD ? 'good' : 'easy';
+    
+    const result = { word: currentCard.word, rating, ratingName };
     setSessionResults(prev => [...prev, result]);
     
     // Update stats
     setStats(prev => ({
       ...prev,
-      [mastery]: prev[mastery] + 1
+      [ratingName]: prev[ratingName] + 1
+    }));
+
+    // Update studied counts
+    const cardType = currentSrsCard.state === CardState.NEW ? 'new' : 'review';
+    setStudiedCounts(prev => ({
+      ...prev,
+      [cardType]: prev[cardType] + 1
+    }));
+
+    // Save progress to API
+    saveCardProgress(currentCard.word, rating, updatedCard);
+
+    // Update local SRS card
+    setSrsCards(prev => ({
+      ...prev,
+      [currentCard.word]: updatedCard
     }));
 
     nextCard();
@@ -245,45 +264,27 @@ const VocabularyLearnPage = () => {
     setShowButtons(false);
     stopSpeech();
 
-    if (currentIndex < shuffledData.length - 1) {
+    if (currentIndex < allQueueCards.length - 1) {
       setTimeout(() => {
         setCurrentIndex(prev => prev + 1);
       }, 200);
     } else {
       setIsComplete(true);
-      // Save progress when complete
-      if (sessionResults.length > 0) {
-        saveProgress([...sessionResults, { word: currentCard.word, result: MASTERY.NEW }]);
-      }
     }
   };
 
-  // Restart
+  // Restart - rebuild queue
   const handleRestart = () => {
-    let wordsToLearn = [...config.data].sort(() => Math.random() - 0.5);
-    setShuffledData(wordsToLearn.slice(0, 20));
+    // Reset SRS cards to trigger queue rebuild
+    setSrsCards({});
     setCurrentIndex(0);
     setIsFlipped(false);
     setShowButtons(false);
     setIsComplete(false);
     setSessionResults([]);
-    setStats({ new: 0, learning: 0, mastered: 0 });
+    setStats({ again: 0, hard: 0, good: 0, easy: 0 });
+    setStudiedCounts({ new: 0, review: 0 });
     stopSpeech();
-  };
-
-  // Practice due words only
-  const handlePracticeDue = () => {
-    if (!levelProgress?.dueForReview?.length) return;
-    
-    const dueWords = levelProgress.dueForReview;
-    const wordsToLearn = config.data.filter(w => dueWords.includes(w.word));
-    setShuffledData(wordsToLearn.slice(0, 20));
-    setCurrentIndex(0);
-    setIsFlipped(false);
-    setShowButtons(false);
-    setIsComplete(false);
-    setSessionResults([]);
-    setStats({ new: 0, learning: 0, mastered: 0 });
   };
 
   // Loading or invalid level
@@ -297,7 +298,20 @@ const VocabularyLearnPage = () => {
     );
   }
 
-  const dueCount = levelProgress?.dueForReview?.length || 0;
+  // Get card state badge
+  const getCardStateBadge = () => {
+    if (!currentSrsCard) return null;
+    const state = currentSrsCard.state;
+    const badgeClass = state === CardState.NEW ? styles.badgeNew :
+                       state === CardState.LEARNING ? styles.badgeLearning :
+                       state === CardState.REVIEW ? styles.badgeReview :
+                       styles.badgeRelearning;
+    const label = state === CardState.NEW ? (isEn ? 'NEW' : 'MỚI') :
+                  state === CardState.LEARNING ? (isEn ? 'LEARNING' : 'ĐANG HỌC') :
+                  state === CardState.REVIEW ? (isEn ? 'REVIEW' : 'ÔN TẬP') :
+                  (isEn ? 'RELEARN' : 'HỌC LẠI');
+    return { badgeClass, label };
+  };
 
   return (
     <>
@@ -310,43 +324,19 @@ const VocabularyLearnPage = () => {
         {/* Header */}
         <div className={styles.header}>
           <Link href="/vocabulary" className={styles.backLink}>
-            ← {isEn ? 'Back' : 'Quay lại'}
+            ←
           </Link>
-          <div className={styles.levelInfo}>
+          <div className={styles.levelBadge}>
             <span className={styles.levelIcon}>{config.icon}</span>
             <span className={styles.levelTitle} style={{ color: config.color }}>
               {config.id}
             </span>
           </div>
+          <div className={styles.headerSpacer} />
           <div className={styles.progressText}>
-            {currentIndex + 1} / {shuffledData.length}
+            {currentIndex + 1} / {totalInSession}
           </div>
         </div>
-
-        {/* Overall Progress (if logged in) */}
-        {user && (totalNew + totalLearning + totalMastered) > 0 && !isComplete && (
-          <div className={styles.overallProgress}>
-            <div className={styles.progressStats}>
-              <span className={styles.statNew}>🆕 {totalNew}</span>
-              <span className={styles.statLearning}>📖 {totalLearning}</span>
-              <span className={styles.statMastered}>✅ {totalMastered}</span>
-            </div>
-            <div className={styles.overallBar}>
-              <div 
-                className={styles.overallFill}
-                style={{ 
-                  width: `${((totalMastered + totalLearning * 0.5) / totalWords) * 100}%`,
-                  background: config.color 
-                }}
-              />
-            </div>
-            {dueCount > 0 && (
-              <span className={styles.dueLabel}>
-                🔔 {dueCount} {isEn ? 'due for review' : 'cần ôn'}
-              </span>
-            )}
-          </div>
-        )}
 
         {/* Progress Bar */}
         <div className={styles.progressBar}>
@@ -356,11 +346,12 @@ const VocabularyLearnPage = () => {
           />
         </div>
 
-        {/* Session Score */}
+        {/* Session Score - Anki style */}
         <div className={styles.scoreRow}>
-          <span className={styles.scoreNew}>🆕 {stats.new}</span>
-          <span className={styles.scoreLearning}>📖 {stats.learning}</span>
-          <span className={styles.scoreMastered}>✅ {stats.mastered}</span>
+          <span className={styles.scoreNew}>❌ {stats.again}</span>
+          <span className={styles.scoreLearning}>😐 {stats.hard}</span>
+          <span className={styles.scoreMastered}>✓ {stats.good}</span>
+          <span style={{ color: '#3b82f6', fontWeight: 600 }}>⚡ {stats.easy}</span>
         </div>
 
         {/* Main Content */}
@@ -377,6 +368,13 @@ const VocabularyLearnPage = () => {
                   <div className={styles.cardInner}>
                     {/* Front */}
                     <div className={styles.cardFront}>
+                      {/* Card State Badge */}
+                      {getCardStateBadge() && (
+                        <span className={`${styles.cardStateBadge} ${getCardStateBadge().badgeClass}`}>
+                          {getCardStateBadge().label}
+                        </span>
+                      )}
+                      
                       {currentCard.article && (
                         <span className={styles.article}>{currentCard.article}</span>
                       )}
@@ -422,29 +420,36 @@ const VocabularyLearnPage = () => {
                   </div>
                 </div>
 
-                {/* Answer Buttons - 3 levels */}
+                {/* Answer Buttons - Anki 4 levels */}
                 {showButtons && (
-                  <div className={styles.answerRow3}>
+                  <div className={styles.answerRowAnki}>
                     <button 
-                      className={styles.btnNew}
-                      onClick={() => handleAnswer(MASTERY.NEW)}
+                      className={`${styles.ankiBtn} ${styles.btnAgain}`}
+                      onClick={() => handleAnswer(Rating.AGAIN)}
                     >
-                      <span>🆕</span>
-                      <span>{isEn ? "Don't Know" : 'Chưa biết'}</span>
+                      <span className={styles.ankiBtnTime}>{nextReviewTimes.again}</span>
+                      <span className={styles.ankiBtnLabel}>{isEn ? 'Again' : 'Lại'}</span>
                     </button>
                     <button 
-                      className={styles.btnLearning}
-                      onClick={() => handleAnswer(MASTERY.LEARNING)}
+                      className={`${styles.ankiBtn} ${styles.btnHard}`}
+                      onClick={() => handleAnswer(Rating.HARD)}
                     >
-                      <span>📖</span>
-                      <span>{isEn ? 'Familiar' : 'Hơi quen'}</span>
+                      <span className={styles.ankiBtnTime}>{nextReviewTimes.hard}</span>
+                      <span className={styles.ankiBtnLabel}>{isEn ? 'Hard' : 'Khó'}</span>
                     </button>
                     <button 
-                      className={styles.btnMastered}
-                      onClick={() => handleAnswer(MASTERY.MASTERED)}
+                      className={`${styles.ankiBtn} ${styles.btnGood}`}
+                      onClick={() => handleAnswer(Rating.GOOD)}
                     >
-                      <span>✅</span>
-                      <span>{isEn ? 'Know It!' : 'Đã thuộc!'}</span>
+                      <span className={styles.ankiBtnTime}>{nextReviewTimes.good}</span>
+                      <span className={styles.ankiBtnLabel}>{isEn ? 'Good' : 'Tốt'}</span>
+                    </button>
+                    <button 
+                      className={`${styles.ankiBtn} ${styles.btnEasy}`}
+                      onClick={() => handleAnswer(Rating.EASY)}
+                    >
+                      <span className={styles.ankiBtnTime}>{nextReviewTimes.easy}</span>
+                      <span className={styles.ankiBtnLabel}>{isEn ? 'Easy' : 'Dễ'}</span>
                     </button>
                   </div>
                 )}
@@ -458,43 +463,45 @@ const VocabularyLearnPage = () => {
             )}
           </div>
         ) : (
-          /* Complete Screen */
+          /* Complete Screen - Anki style */
           <div className={styles.completeArea}>
             <div className={styles.completeIcon}>🎉</div>
             <h2 className={styles.completeTitle}>
               {isEn ? 'Session Complete!' : 'Hoàn thành!'}
             </h2>
 
-            <div className={styles.statsRow3}>
-              <div className={styles.statBox3 + ' ' + styles.statBoxNew}>
-                <span className={styles.statNum}>{stats.new}</span>
-                <span className={styles.statLabel}>{isEn ? "Don't Know" : 'Chưa biết'}</span>
-                <span className={styles.statReview}>{isEn ? 'Review: Tomorrow' : 'Ôn: Ngày mai'}</span>
+            <div className={styles.statsRowAnki}>
+              <div className={`${styles.statBoxAnki} ${styles.statBoxAgain}`}>
+                <span className={styles.statNum}>{stats.again}</span>
+                <span className={styles.statLabel}>{isEn ? 'Again' : 'Lại'}</span>
               </div>
-              <div className={styles.statBox3 + ' ' + styles.statBoxLearning}>
-                <span className={styles.statNum}>{stats.learning}</span>
-                <span className={styles.statLabel}>{isEn ? 'Familiar' : 'Hơi quen'}</span>
-                <span className={styles.statReview}>{isEn ? 'Review: 3 days' : 'Ôn: 3 ngày'}</span>
+              <div className={`${styles.statBoxAnki} ${styles.statBoxHard}`}>
+                <span className={styles.statNum}>{stats.hard}</span>
+                <span className={styles.statLabel}>{isEn ? 'Hard' : 'Khó'}</span>
               </div>
-              <div className={styles.statBox3 + ' ' + styles.statBoxMastered}>
-                <span className={styles.statNum}>{stats.mastered}</span>
-                <span className={styles.statLabel}>{isEn ? 'Know It!' : 'Đã thuộc'}</span>
-                <span className={styles.statReview}>{isEn ? 'Review: 7 days' : 'Ôn: 7 ngày'}</span>
+              <div className={`${styles.statBoxAnki} ${styles.statBoxGood}`}>
+                <span className={styles.statNum}>{stats.good}</span>
+                <span className={styles.statLabel}>{isEn ? 'Good' : 'Tốt'}</span>
               </div>
+              <div className={`${styles.statBoxAnki} ${styles.statBoxEasy}`}>
+                <span className={styles.statNum}>{stats.easy}</span>
+                <span className={styles.statLabel}>{isEn ? 'Easy' : 'Dễ'}</span>
+              </div>
+            </div>
+
+            {/* Session Summary */}
+            <div className={styles.savedInfo}>
+              <span className={styles.saved}>
+                📊 {isEn ? `Studied: ${studiedCounts.new} new, ${studiedCounts.review} review` : `Đã học: ${studiedCounts.new} mới, ${studiedCounts.review} ôn`}
+              </span>
             </div>
 
             {/* Saved Progress Info */}
             {user && (
               <div className={styles.savedInfo}>
-                {isSaving ? (
-                  <span className={styles.saving}>
-                    {isEn ? 'Saving progress...' : 'Đang lưu tiến trình...'}
-                  </span>
-                ) : (
-                  <span className={styles.saved}>
-                    ✓ {isEn ? 'Progress saved with spaced repetition!' : 'Đã lưu với lặp lại ngắt quãng!'}
-                  </span>
-                )}
+                <span className={styles.saved}>
+                  ✓ {isEn ? 'Progress saved with Anki algorithm!' : 'Đã lưu với thuật toán Anki!'}
+                </span>
               </div>
             )}
 
@@ -508,11 +515,6 @@ const VocabularyLearnPage = () => {
               <button className={styles.btnRestart} onClick={handleRestart}>
                 🔄 {isEn ? 'Practice More' : 'Luyện thêm'}
               </button>
-              {dueCount > 0 && (
-                <button className={styles.btnDue} onClick={handlePracticeDue}>
-                  🔔 {isEn ? `Review ${dueCount} Due` : `Ôn ${dueCount} từ`}
-                </button>
-              )}
               <Link href="/vocabulary" className={styles.btnHome}>
                 🏠 {isEn ? 'Home' : 'Trang chủ'}
               </Link>

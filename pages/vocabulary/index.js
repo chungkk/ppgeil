@@ -12,6 +12,9 @@ import goetheA2Vocabulary from '../../lib/data/goetheA2Vocabulary';
 import goetheB1Vocabulary from '../../lib/data/goetheB1Vocabulary';
 import { getTotalWordCount as getTopicWordCount, getAllTopics, getTopicById } from '../../lib/data/goetheTopicVocabulary';
 
+// Grammar topic IDs - these will be shown in Grammar section, not in Topics
+const GRAMMAR_TOPIC_IDS = ['verben_praeposition', 'nomen_verb', 'verbs', 'adjectives'];
+
 const VocabularyHomePage = () => {
   const { t } = useTranslation('common');
   const { user } = useAuth();
@@ -68,12 +71,15 @@ const VocabularyHomePage = () => {
   ];
 
   const totalWords = goetheA1Vocabulary.length + goetheA2Vocabulary.length + goetheB1Vocabulary.length;
-  const topicCount = getAllTopics().length;
-  const topicWordCount = getTopicWordCount();
-  const verbenPraepTopic = getTopicById('verben_praeposition');
-  const verbenPraepCount = verbenPraepTopic?.words?.length || 60;
-  const nomenVerbTopic = getTopicById('nomen_verb');
-  const nomenVerbCount = nomenVerbTopic?.words?.length || 60;
+  
+  // Filter out grammar topics from topic count
+  const allTopics = getAllTopics();
+  const vocabTopics = allTopics.filter(t => !GRAMMAR_TOPIC_IDS.includes(t.id));
+  const grammarTopics = allTopics.filter(t => GRAMMAR_TOPIC_IDS.includes(t.id));
+  
+  const topicCount = vocabTopics.length;
+  const topicWordCount = vocabTopics.reduce((sum, t) => sum + t.wordCount, 0);
+  const grammarWordCount = grammarTopics.reduce((sum, t) => sum + t.wordCount, 0);
   
   // Calculate totals with new structure
   const getLevelStats = (levelKey) => {
@@ -114,10 +120,10 @@ const VocabularyHomePage = () => {
         </div>
 
         <div className={styles.content}>
-          {/* Two Main Sections */}
+          {/* Three Main Sections */}
           <div className={styles.mainSections}>
             
-            {/* Section 1: Learn by Topic */}
+            {/* Section 1: Learn by Topic (Vocabulary only) */}
             <div className={styles.section}>
               <div className={styles.sectionHeader}>
                 <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)' }}>
@@ -142,7 +148,7 @@ const VocabularyHomePage = () => {
               </Link>
             </div>
 
-            {/* Section 2: Verben mit Präpositionen */}
+            {/* Section 2: Grammar Patterns */}
             <div className={styles.section}>
               <div className={styles.sectionHeader}>
                 <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
@@ -150,49 +156,24 @@ const VocabularyHomePage = () => {
                 </div>
                 <div className={styles.sectionInfo}>
                   <h2 className={styles.sectionTitle}>
-                    {t('vocabPage.verbPrep.title')}
+                    {t('vocabPage.grammar.title')}
                   </h2>
                   <p className={styles.sectionDesc}>
-                    {t('vocabPage.verbPrep.name')} • {verbenPraepCount} {t('vocabPage.verbPrep.phrases')}
+                    {grammarTopics.length} {t('vocabPage.grammar.patterns')} • {grammarWordCount} {t('vocabPage.grammar.phrases')}
                   </p>
                 </div>
               </div>
               
               <p className={styles.sectionText}>
-                {t('vocabPage.verbPrep.desc')}
+                {t('vocabPage.grammar.desc')}
               </p>
 
-              <Link href="/vocabulary/topics/verben_praeposition" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
-                {t('vocabPage.startLearning')} →
+              <Link href="/vocabulary/grammar" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
+                {t('vocabPage.grammar.btn')} →
               </Link>
             </div>
 
-            {/* Section 3: Nomen-Verb-Verbindungen */}
-            <div className={styles.section}>
-              <div className={styles.sectionHeader}>
-                <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #ec4899, #db2777)' }}>
-                  📎
-                </div>
-                <div className={styles.sectionInfo}>
-                  <h2 className={styles.sectionTitle}>
-                    {t('vocabPage.nounVerb.title')}
-                  </h2>
-                  <p className={styles.sectionDesc}>
-                    {t('vocabPage.nounVerb.name')} • {nomenVerbCount} {t('vocabPage.nounVerb.phrases')}
-                  </p>
-                </div>
-              </div>
-              
-              <p className={styles.sectionText}>
-                {t('vocabPage.nounVerb.desc')}
-              </p>
-
-              <Link href="/vocabulary/topics/nomen_verb" className={styles.sectionBtn} style={{ background: 'linear-gradient(135deg, #ec4899, #db2777)' }}>
-                {t('vocabPage.startLearning')} →
-              </Link>
-            </div>
-
-            {/* Section 4: Learn by Level */}
+            {/* Section 3: Learn by Level */}
             <div className={styles.section}>
               <div className={styles.sectionHeader}>
                 <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}>
