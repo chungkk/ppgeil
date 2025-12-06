@@ -364,7 +364,7 @@ const VocabularyLearnPage = () => {
           <span className={styles.scoreNew}>❌ {stats.again}</span>
           <span className={styles.scoreLearning}>😐 {stats.hard}</span>
           <span className={styles.scoreMastered}>✓ {stats.good}</span>
-          <span style={{ color: '#3b82f6', fontWeight: 600 }}>⚡ {stats.easy}</span>
+          <span style={{ color: '#a78bfa', fontWeight: 600 }}>⚡ {stats.easy}</span>
           {user && saveStatus && (
             <span style={{ 
               marginLeft: 'auto', 
@@ -418,7 +418,7 @@ const VocabularyLearnPage = () => {
                       </button>
                       
                       <span className={styles.hint}>
-                        👆 {isEn ? 'Tap to see meaning' : 'Nhấn để xem nghĩa'}
+                        👆 {t('vocabPage.learn.tapToSee')}
                       </span>
                     </div>
 
@@ -436,7 +436,7 @@ const VocabularyLearnPage = () => {
                         className={`${styles.speakBtnBack} ${isSpeaking ? styles.speaking : ''}`}
                         onClick={handleSpeak}
                       >
-                        🔊 {isEn ? 'Listen' : 'Nghe'}
+                        🔊 {t('vocabPage.learn.listen')}
                       </button>
                     </div>
                   </div>
@@ -478,7 +478,7 @@ const VocabularyLearnPage = () => {
 
                 {!showButtons && (
                   <p className={styles.tapText}>
-                    {isEn ? 'Tap the card to reveal meaning' : 'Nhấn vào thẻ để xem nghĩa'}
+                    {t('vocabPage.learn.tapCard')}
                   </p>
                 )}
               </>
@@ -489,7 +489,7 @@ const VocabularyLearnPage = () => {
           <div className={styles.completeArea}>
             <div className={styles.completeIcon}>🎉</div>
             <h2 className={styles.completeTitle}>
-              {isEn ? 'Session Complete!' : 'Hoàn thành!'}
+              {t('vocabPage.learn.topicComplete')}
             </h2>
 
             <div className={styles.statsRowAnki}>
@@ -511,35 +511,13 @@ const VocabularyLearnPage = () => {
               </div>
             </div>
 
-            {/* Session Summary */}
-            <div className={styles.savedInfo}>
-              <span className={styles.saved}>
-                📊 {isEn ? `Studied: ${studiedCounts.new} new, ${studiedCounts.review} review` : `Đã học: ${studiedCounts.new} mới, ${studiedCounts.review} ôn`}
-              </span>
-            </div>
-
-            {/* Saved Progress Info */}
-            {user && (
-              <div className={styles.savedInfo}>
-                <span className={styles.saved}>
-                  ✓ {isEn ? 'Progress saved with Anki algorithm!' : 'Đã lưu với thuật toán Anki!'}
-                </span>
-              </div>
-            )}
-
-            {!user && (
-              <div className={styles.loginHint}>
-                💡 {isEn ? 'Log in to save progress & use spaced repetition!' : 'Đăng nhập để lưu tiến trình & dùng lặp lại ngắt quãng!'}
-              </div>
-            )}
-
             <div className={styles.actionRow}>
               <button className={styles.btnRestart} onClick={handleRestart}>
-                🔄 {isEn ? 'Practice More' : 'Luyện thêm'}
+                🔄 {t('vocabPage.learn.practiceMore')}
               </button>
               {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
               <a href="/vocabulary" className={styles.btnHome}>
-                🏠 {isEn ? 'Home' : 'Trang chủ'}
+                📚 {t('vocabPage.backToVocab')}
               </a>
             </div>
           </div>
