@@ -83,7 +83,6 @@ const TopicLearnPage = () => {
     if (!isFlipped) {
       setIsFlipped(true);
       setShowButtons(true);
-      handleSpeak();
     }
   };
 
