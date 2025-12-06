@@ -206,8 +206,6 @@ const VocabularyLearnPage = () => {
     if (!isFlipped) {
       setIsFlipped(true);
       setShowButtons(true);
-      // Auto speak when flipped
-      handleSpeak();
     }
   };
 
