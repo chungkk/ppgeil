@@ -69,6 +69,7 @@ const VocabularyLearnPage = () => {
   const [srsCards, setSrsCards] = useState({});
   const [savedProgress, setSavedProgress] = useState(null);
   const [isSaving, setIsSaving] = useState(false);
+  const [saveStatus, setSaveStatus] = useState(''); // 'saving', 'saved', 'error'
   const [isSpeaking, setIsSpeaking] = useState(false);
   
   // Track results for this session - Anki style
@@ -111,6 +112,9 @@ const VocabularyLearnPage = () => {
     if (!user || !level) return;
 
     try {
+      setIsSaving(true);
+      setSaveStatus('saving');
+      
       const token = localStorage.getItem('token');
       if (!token) return;
 
@@ -130,6 +134,9 @@ const VocabularyLearnPage = () => {
 
       if (res.ok) {
         const data = await res.json();
+        setSaveStatus('saved');
+        setTimeout(() => setSaveStatus(''), 2000);
+        
         // Update local SRS card data
         if (data.card) {
           setSrsCards(prev => ({
@@ -137,9 +144,14 @@ const VocabularyLearnPage = () => {
             [word]: data.card
           }));
         }
+      } else {
+        setSaveStatus('error');
       }
     } catch (error) {
       console.error('Error saving card progress:', error);
+      setSaveStatus('error');
+    } finally {
+      setIsSaving(false);
     }
   }, [user, level]);
 
@@ -323,9 +335,10 @@ const VocabularyLearnPage = () => {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <Link href="/vocabulary" className={styles.backLink}>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/vocabulary" className={styles.backLink}>
             ←
-          </Link>
+          </a>
           <div className={styles.levelBadge}>
             <span className={styles.levelIcon}>{config.icon}</span>
             <span className={styles.levelTitle} style={{ color: config.color }}>
@@ -352,6 +365,15 @@ const VocabularyLearnPage = () => {
           <span className={styles.scoreLearning}>😐 {stats.hard}</span>
           <span className={styles.scoreMastered}>✓ {stats.good}</span>
           <span style={{ color: '#3b82f6', fontWeight: 600 }}>⚡ {stats.easy}</span>
+          {user && saveStatus && (
+            <span style={{ 
+              marginLeft: 'auto', 
+              fontSize: '12px', 
+              color: saveStatus === 'saved' ? '#22c55e' : saveStatus === 'error' ? '#ef4444' : '#f59e0b' 
+            }}>
+              {saveStatus === 'saving' ? '💾...' : saveStatus === 'saved' ? '✓' : '⚠'}
+            </span>
+          )}
         </div>
 
         {/* Main Content */}
@@ -515,9 +537,10 @@ const VocabularyLearnPage = () => {
               <button className={styles.btnRestart} onClick={handleRestart}>
                 🔄 {isEn ? 'Practice More' : 'Luyện thêm'}
               </button>
-              <Link href="/vocabulary" className={styles.btnHome}>
+              {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+              <a href="/vocabulary" className={styles.btnHome}>
                 🏠 {isEn ? 'Home' : 'Trang chủ'}
-              </Link>
+              </a>
             </div>
           </div>
         )}
