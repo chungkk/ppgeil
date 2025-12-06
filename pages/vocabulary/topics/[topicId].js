@@ -31,7 +31,9 @@ const TopicLearnPage = () => {
   const translationLang = user?.nativeLanguage || currentLanguage;
   const isTranslationEn = translationLang === 'en';
 
-  const topic = getTopicById(topicId);
+  // Wait for router to be ready
+  const isReady = router.isReady;
+  const topic = isReady && topicId ? getTopicById(topicId) : null;
 
   // States
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,8 +45,55 @@ const TopicLearnPage = () => {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [stats, setStats] = useState({ again: 0, hard: 0, good: 0, easy: 0 });
   const [nextReviewTimes, setNextReviewTimes] = useState({ again: '', hard: '', good: '', easy: '' });
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveStatus, setSaveStatus] = useState(''); // 'saving', 'saved', 'error'
 
   const isEn = currentLanguage === 'en';
+
+  // Get auth token for API calls
+  const getAuthToken = useCallback(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('token');
+    }
+    return null;
+  }, []);
+
+  // Save card progress to database
+  const saveCardProgress = useCallback(async (word, rating, cardData) => {
+    const token = getAuthToken();
+    if (!token || !user) return; // Only save for logged in users
+
+    try {
+      setIsSaving(true);
+      setSaveStatus('saving');
+
+      const response = await fetch('/api/user/srs-progress', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          topic: topicId,
+          word,
+          rating,
+          cardData
+        })
+      });
+
+      if (response.ok) {
+        setSaveStatus('saved');
+        setTimeout(() => setSaveStatus(''), 2000);
+      } else {
+        setSaveStatus('error');
+      }
+    } catch (error) {
+      console.error('Error saving progress:', error);
+      setSaveStatus('error');
+    } finally {
+      setIsSaving(false);
+    }
+  }, [getAuthToken, user, topicId]);
 
   // Redirect grammar topics to /vocabulary/grammar/[topicId]
   useEffect(() => {
@@ -53,13 +102,23 @@ const TopicLearnPage = () => {
     }
   }, [topicId, router]);
 
-  // Shuffle data on mount
+  // Reset state and shuffle data when topicId changes
   useEffect(() => {
-    if (topic?.words && !GRAMMAR_TOPIC_IDS.includes(topicId)) {
+    if (isReady && topic?.words && !GRAMMAR_TOPIC_IDS.includes(topicId)) {
+      // Reset all states when switching topics
+      setCurrentIndex(0);
+      setIsFlipped(false);
+      setShowButtons(false);
+      setIsComplete(false);
+      setSrsCards({});
+      setStats({ again: 0, hard: 0, good: 0, easy: 0 });
+      stopSpeech();
+      
+      // Shuffle data for new topic
       const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
       setShuffledData(shuffled);
     }
-  }, [topic, topicId]);
+  }, [topicId, isReady]);
 
   // Get translation based on user's nativeLanguage setting
   const getTranslation = (item) => {
@@ -153,6 +212,9 @@ const TopicLearnPage = () => {
       [currentCard.word]: updatedCard
     }));
 
+    // Save progress to database (async, don't wait)
+    saveCardProgress(currentCard.word, rating, updatedCard);
+
     nextCard();
   };
 
@@ -182,7 +244,18 @@ const TopicLearnPage = () => {
     stopSpeech();
   };
 
-  // Loading or invalid topic
+  // Wait for router to be ready
+  if (!isReady) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.loading}>
+          {t('vocabPage.learn.loading')}
+        </div>
+      </div>
+    );
+  }
+
+  // Invalid topic - show loading (may happen during navigation)
   if (!topic) {
     return (
       <div className={styles.container}>
@@ -206,9 +279,10 @@ const TopicLearnPage = () => {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <Link href="/vocabulary/topics" className={styles.backLink}>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/vocabulary/topics" className={styles.backLink}>
             ←
-          </Link>
+          </a>
           <div className={styles.levelBadge}>
             <span className={styles.levelIcon}>{topicIcon}</span>
             <span className={styles.levelTitle} style={{ color: topicColor }}>
@@ -235,6 +309,15 @@ const TopicLearnPage = () => {
           <span className={styles.scoreLearning}>😐 {stats.hard}</span>
           <span className={styles.scoreMastered}>✓ {stats.good}</span>
           <span style={{ color: '#a78bfa', fontWeight: 600 }}>⚡ {stats.easy}</span>
+          {user && saveStatus && (
+            <span style={{ 
+              marginLeft: 'auto', 
+              fontSize: '12px', 
+              color: saveStatus === 'saved' ? '#22c55e' : saveStatus === 'error' ? '#ef4444' : '#f59e0b' 
+            }}>
+              {saveStatus === 'saving' ? '💾...' : saveStatus === 'saved' ? '✓' : '⚠'}
+            </span>
+          )}
         </div>
 
         {/* Main Content */}
@@ -367,9 +450,10 @@ const TopicLearnPage = () => {
               <button className={styles.btnRestart} onClick={handleRestart}>
                 🔄 {t('vocabPage.learn.practiceMore')}
               </button>
-              <Link href="/vocabulary/topics" className={styles.btnHome}>
+              {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+              <a href="/vocabulary/topics" className={styles.btnHome}>
                 📂 {t('vocabPage.learn.allTopics')}
-              </Link>
+              </a>
             </div>
           </div>
         )}

@@ -29,7 +29,9 @@ const GrammarLearnPage = () => {
   const translationLang = user?.nativeLanguage || currentLanguage;
   const isTranslationEn = translationLang === 'en';
 
-  const topic = getTopicById(topicId);
+  // Wait for router to be ready
+  const isReady = router.isReady;
+  const topic = isReady && topicId ? getTopicById(topicId) : null;
   const isValidGrammarTopic = GRAMMAR_TOPIC_IDS.includes(topicId);
 
   // States
@@ -42,16 +44,73 @@ const GrammarLearnPage = () => {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [stats, setStats] = useState({ again: 0, hard: 0, good: 0, easy: 0 });
   const [nextReviewTimes, setNextReviewTimes] = useState({ again: '', hard: '', good: '', easy: '' });
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveStatus, setSaveStatus] = useState(''); // 'saving', 'saved', 'error'
 
   const isEn = currentLanguage === 'en';
 
-  // Shuffle data on mount
+  // Get auth token for API calls
+  const getAuthToken = useCallback(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('token');
+    }
+    return null;
+  }, []);
+
+  // Save card progress to database
+  const saveCardProgress = useCallback(async (word, rating, cardData) => {
+    const token = getAuthToken();
+    if (!token || !user) return; // Only save for logged in users
+
+    try {
+      setIsSaving(true);
+      setSaveStatus('saving');
+
+      const response = await fetch('/api/user/srs-progress', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          topic: topicId,
+          word,
+          rating,
+          cardData
+        })
+      });
+
+      if (response.ok) {
+        setSaveStatus('saved');
+        setTimeout(() => setSaveStatus(''), 2000);
+      } else {
+        setSaveStatus('error');
+      }
+    } catch (error) {
+      console.error('Error saving progress:', error);
+      setSaveStatus('error');
+    } finally {
+      setIsSaving(false);
+    }
+  }, [getAuthToken, user, topicId]);
+
+  // Reset state and shuffle data when topicId changes
   useEffect(() => {
-    if (topic?.words) {
+    if (isReady && topic?.words) {
+      // Reset all states when switching topics
+      setCurrentIndex(0);
+      setIsFlipped(false);
+      setShowButtons(false);
+      setIsComplete(false);
+      setSrsCards({});
+      setStats({ again: 0, hard: 0, good: 0, easy: 0 });
+      stopSpeech();
+      
+      // Shuffle data for new topic
       const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
       setShuffledData(shuffled);
     }
-  }, [topic]);
+  }, [topicId, isReady]);
 
   const getTranslation = (item) => {
     if (!item) return '';
@@ -132,6 +191,9 @@ const GrammarLearnPage = () => {
       [currentCard.word]: updatedCard
     }));
 
+    // Save progress to database (async, don't wait)
+    saveCardProgress(currentCard.word, rating, updatedCard);
+
     nextCard();
   };
 
@@ -165,6 +227,18 @@ const GrammarLearnPage = () => {
     return null;
   }
 
+  // Wait for router to be ready
+  if (!isReady) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.loading}>
+          {t('vocabPage.learn.loading')}
+        </div>
+      </div>
+    );
+  }
+
+  // Invalid topic - show loading (may happen during navigation)
   if (!topic) {
     return (
       <div className={styles.container}>
@@ -188,9 +262,10 @@ const GrammarLearnPage = () => {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <Link href="/vocabulary/grammar" className={styles.backLink}>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/vocabulary/grammar" className={styles.backLink}>
             ←
-          </Link>
+          </a>
           <div className={styles.levelBadge}>
             <span className={styles.levelIcon}>{topicIcon}</span>
             <span className={styles.levelTitle} style={{ color: topicColor }}>
@@ -217,6 +292,15 @@ const GrammarLearnPage = () => {
           <span className={styles.scoreLearning}>😐 {stats.hard}</span>
           <span className={styles.scoreMastered}>✓ {stats.good}</span>
           <span style={{ color: '#a78bfa', fontWeight: 600 }}>⚡ {stats.easy}</span>
+          {user && saveStatus && (
+            <span style={{ 
+              marginLeft: 'auto', 
+              fontSize: '12px', 
+              color: saveStatus === 'saved' ? '#22c55e' : saveStatus === 'error' ? '#ef4444' : '#f59e0b' 
+            }}>
+              {saveStatus === 'saving' ? '💾...' : saveStatus === 'saved' ? '✓' : '⚠'}
+            </span>
+          )}
         </div>
 
         {/* Main Content */}
@@ -348,9 +432,10 @@ const GrammarLearnPage = () => {
               <button className={styles.btnRestart} onClick={handleRestart}>
                 🔄 {t('vocabPage.learn.practiceMore')}
               </button>
-              <Link href="/vocabulary/grammar" className={styles.btnHome}>
+              {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+              <a href="/vocabulary/grammar" className={styles.btnHome}>
                 🔗 {t('vocabPage.grammar.title')}
-              </Link>
+              </a>
             </div>
           </div>
         )}
