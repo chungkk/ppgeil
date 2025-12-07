@@ -95,7 +95,7 @@ const VerbenPraepositionPage = () => {
       const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
       setShuffledData(shuffled);
     }
-  }, []);
+  }, [topic]);
 
   const getTranslation = (item) => {
     if (!item) return '';
@@ -227,9 +227,9 @@ const VerbenPraepositionPage = () => {
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          <a href="/vocabulary" className={styles.backLink}>
+          <Link href="/vocabulary" className={styles.backLink}>
             ←
-          </a>
+          </Link>
           <div className={styles.levelBadge}>
             <span className={styles.levelIcon}>{topicIcon}</span>
             <span className={styles.levelTitle} style={{ color: topicColor }}>
@@ -396,9 +396,9 @@ const VerbenPraepositionPage = () => {
               <button className={styles.btnRestart} onClick={handleRestart}>
                 🔄 {t('vocabPage.learn.practiceMore')}
               </button>
-              <a href="/vocabulary" className={styles.btnHome}>
+              <Link href="/vocabulary" className={styles.btnHome}>
                 📚 {t('vocabPage.title')}
-              </a>
+              </Link>
             </div>
           </div>
         )}

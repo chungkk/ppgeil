@@ -495,6 +495,7 @@ const DictationPageContent = () => {
     if (lesson && lesson.json) {
       loadTranscript(lesson.json);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lesson]);
 
   // Load progress from SWR hook (logged-in users) or localStorage (guests)
@@ -2054,7 +2055,8 @@ const DictationPageContent = () => {
         }
       }
     }
-  }, [saveWord, updateInputBackground, checkSentenceCompletion, saveWordCompletion, currentSentenceIndex, wordPointsProcessed, updatePoints, consecutiveSentences]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [saveWord, updateInputBackground, checkSentenceCompletion, saveWordCompletion, currentSentenceIndex, wordPointsProcessed, updatePoints]);
 
   // seededRandom is now imported from lib/dictationUtils.js
 
@@ -2683,7 +2685,8 @@ const DictationPageContent = () => {
     });
 
     return processedSentences.join(" ");
-  }, [currentSentenceIndex, seededRandom, t]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSentenceIndex]);
 
   // Initialize dictation for current sentence
   useEffect(() => {

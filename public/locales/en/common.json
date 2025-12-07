@@ -804,7 +804,8 @@
     "byLevel": {
       "title": "Learn by Level",
       "words": "words",
-      "desc": "Follow the official Goethe Institut curriculum from beginner to intermediate level."
+      "desc": "Follow the official Goethe Institut curriculum from beginner to intermediate level.",
+      "btn": "Start Learning"
     },
     "levels": {
       "a1": {
