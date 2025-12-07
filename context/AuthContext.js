@@ -46,6 +46,13 @@ export function AuthProvider({ children }) {
         return; // Chỉ cần đợi, không làm gì cả
       }
 
+      // Nếu đã có user và có token, không cần check lại (tránh race condition khi chuyển locale)
+      const existingToken = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+      if (user && existingToken) {
+        setLoading(false);
+        return;
+      }
+
       if (session) {
         // Nếu có session từ NextAuth (Google login)
         // Lưu custom token để tương thích với hệ thống JWT hiện tại
