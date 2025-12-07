@@ -778,16 +778,18 @@
       "btn": "Xem chủ đề"
     },
     "verbPrep": {
-      "title": "Cụm động từ + Giới từ",
+      "title": "Verben mit Präpositionen",
       "name": "Verben mit Präpositionen",
       "phrases": "cụm từ",
-      "desc": "Học các động từ đi kèm giới từ cố định. Rất quan trọng để giao tiếp trôi chảy!"
+      "desc": "Học các động từ đi kèm giới từ cố định. Rất quan trọng để giao tiếp trôi chảy!",
+      "btn": "Bắt đầu học"
     },
     "nounVerb": {
-      "title": "Cụm danh từ + động từ",
+      "title": "Nomen-Verb-Verbindungen",
       "name": "Nomen-Verb-Verbindungen",
       "phrases": "cụm từ",
-      "desc": "Học các cụm danh từ + động từ cố định thường dùng. VD: eine Frage stellen, Bescheid geben..."
+      "desc": "Học các cụm danh từ + động từ cố định thường dùng. VD: eine Frage stellen, Bescheid geben...",
+      "btn": "Bắt đầu học"
     },
     "grammar": {
       "title": "Cấu trúc ngữ pháp",

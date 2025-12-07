@@ -2,215 +2,137 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import { useAuth } from '../../../context/AuthContext';
-import { useLanguage } from '../../../context/LanguageContext';
-import { speakText, stopSpeech } from '../../../lib/textToSpeech';
+import { useLanguage } from '../../context/LanguageContext';
+import { useAuth } from '../../context/AuthContext';
+import { speakText, stopSpeech } from '../../lib/textToSpeech';
 import { 
   createNewCard, 
   calculateNextReview, 
   getAllNextReviewTexts,
-  buildStudyQueue,
   CardState,
   Rating 
-} from '../../../lib/srs';
-import SEO from '../../../components/SEO';
-import styles from '../../../styles/VocabLearn.module.css';
+} from '../../lib/srs';
+import SEO from '../../components/SEO';
+import { getTopicById, topicIcons } from '../../lib/data/goetheTopicVocabulary';
+import styles from '../../styles/VocabLearn.module.css';
 
-// Import vocabulary data
-import goetheA1Vocabulary from '../../../lib/data/goetheA1Vocabulary';
-import goetheA2Vocabulary from '../../../lib/data/goetheA2Vocabulary';
-import goetheB1Vocabulary from '../../../lib/data/goetheB1Vocabulary';
+const TOPIC_ID = 'nomen_verb';
 
-const levelConfig = {
-  a1: {
-    id: 'A1',
-    title: { en: 'A1 - Beginner', vi: 'A1 - Cơ bản' },
-    data: goetheA1Vocabulary,
-    color: '#22c55e',
-    icon: '🌱'
-  },
-  a2: {
-    id: 'A2',
-    title: { en: 'A2 - Elementary', vi: 'A2 - Sơ cấp' },
-    data: goetheA2Vocabulary,
-    color: '#3b82f6',
-    icon: '📚'
-  },
-  b1: {
-    id: 'B1',
-    title: { en: 'B1 - Intermediate', vi: 'B1 - Trung cấp' },
-    data: goetheB1Vocabulary,
-    color: '#8b5cf6',
-    icon: '🎓'
-  }
-};
-
-const VocabularyLearnPage = () => {
+const NomenVerbPage = () => {
   const router = useRouter();
-  const { level } = router.query;
   const { t } = useTranslation('common');
-  const { user } = useAuth();
   const { currentLanguage } = useLanguage();
-
-  const isEn = currentLanguage === 'en';
+  const { user } = useAuth();
   
-  // Use user's nativeLanguage setting for translations, fallback to currentLanguage
   const translationLang = user?.nativeLanguage || currentLanguage;
   const isTranslationEn = translationLang === 'en';
-  
-  const config = levelConfig[level?.toLowerCase()];
+
+  const topic = getTopicById(TOPIC_ID);
 
   // States
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [showButtons, setShowButtons] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
-  const [studyQueue, setStudyQueue] = useState({ newCards: [], learningCards: [], reviewCards: [], counts: { new: 0, learning: 0, review: 0 } });
+  const [shuffledData, setShuffledData] = useState([]);
   const [srsCards, setSrsCards] = useState({});
-  const [savedProgress, setSavedProgress] = useState(null);
-  const [isSaving, setIsSaving] = useState(false);
-  const [saveStatus, setSaveStatus] = useState(''); // 'saving', 'saved', 'error'
   const [isSpeaking, setIsSpeaking] = useState(false);
-  
-  // Track results for this session - Anki style
-  const [sessionResults, setSessionResults] = useState([]);
   const [stats, setStats] = useState({ again: 0, hard: 0, good: 0, easy: 0 });
-  const [studiedCounts, setStudiedCounts] = useState({ new: 0, review: 0 });
-  
-  // Next review times for current card
   const [nextReviewTimes, setNextReviewTimes] = useState({ again: '', hard: '', good: '', easy: '' });
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveStatus, setSaveStatus] = useState('');
 
-  // Load saved progress
-  useEffect(() => {
-    if (user && level) {
-      loadProgress();
+  const isEn = currentLanguage === 'en';
+
+  // Get auth token for API calls
+  const getAuthToken = useCallback(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('token');
     }
-  }, [user, level]);
+    return null;
+  }, []);
 
-  const loadProgress = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      if (!token) return;
-
-      const res = await fetch('/api/user/srs-progress?level=' + level, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
-      if (res.ok) {
-        const data = await res.json();
-        if (data.deckStats) {
-          setSavedProgress(data.deckStats);
-        }
-      }
-    } catch (error) {
-      console.error('Error loading progress:', error);
-    }
-  };
-
-  // Save single card progress via API
+  // Save card progress to database
   const saveCardProgress = useCallback(async (word, rating, cardData) => {
-    if (!user || !level) return;
+    const token = getAuthToken();
+    if (!token || !user) return;
 
     try {
       setIsSaving(true);
       setSaveStatus('saving');
-      
-      const token = localStorage.getItem('token');
-      if (!token) return;
 
-      const res = await fetch('/api/user/srs-progress', {
+      const response = await fetch('/api/user/srs-progress', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`
+          'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({
-          level: level.toLowerCase(),
+          topic: TOPIC_ID,
           word,
           rating,
           cardData
         })
       });
 
-      if (res.ok) {
-        const data = await res.json();
+      if (response.ok) {
         setSaveStatus('saved');
         setTimeout(() => setSaveStatus(''), 2000);
-        
-        // Update local SRS card data
-        if (data.card) {
-          setSrsCards(prev => ({
-            ...prev,
-            [word]: data.card
-          }));
-        }
       } else {
         setSaveStatus('error');
       }
     } catch (error) {
-      console.error('Error saving card progress:', error);
+      console.error('Error saving progress:', error);
       setSaveStatus('error');
     } finally {
       setIsSaving(false);
     }
-  }, [user, level]);
+  }, [getAuthToken, user]);
 
-  // Build study queue only once when config loads
+  // Initialize shuffled data
   useEffect(() => {
-    if (config?.data && level && studyQueue.newCards.length === 0 && studyQueue.reviewCards.length === 0) {
-      // Create SRS cards for all vocabulary
-      const allCards = config.data.map(wordData => {
-        return { ...createNewCard(wordData.word), wordData };
-      });
-
-      // Build study queue (prioritizes due cards)
-      const queue = buildStudyQueue(allCards, {
-        newCardsLimit: 20,
-        reviewsLimit: 100
-      });
-
-      setStudyQueue(queue);
-      setCurrentIndex(0);
+    if (topic?.words) {
+      const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
+      setShuffledData(shuffled);
     }
-  }, [config?.data, level, studyQueue.newCards.length, studyQueue.reviewCards.length]);
+  }, []);
 
-  // Get translation based on user's nativeLanguage setting
   const getTranslation = (item) => {
     if (!item) return '';
-    return isTranslationEn ? (item.en || item.vi || '') : (item.vi || item.en || '');
+    if (isTranslationEn) return item.en || item.vi || '';
+    return item.vi || item.en || '';
   };
 
-  // Speak word
+  const getTopicName = () => {
+    if (!topic) return '';
+    if (currentLanguage === 'de') return topic.name;
+    if (currentLanguage === 'en') return topic.name_en || topic.name;
+    return topic.name_vi || topic.name;
+  };
+
+  const parseWord = (wordStr) => {
+    const match = wordStr.match(/^(der|die|das)\s+(.+)$/i);
+    if (match) {
+      return { article: match[1], word: match[2] };
+    }
+    return { article: null, word: wordStr };
+  };
+
   const handleSpeak = (e) => {
     e?.stopPropagation();
     if (!currentCard) return;
     
     setIsSpeaking(true);
-    const textToSpeak = currentCard.article 
-      ? `${currentCard.article} ${currentCard.word}`
-      : currentCard.word;
-    
-    speakText(textToSpeak, 'de-DE', 0.8);
-    
-    // Reset speaking state after a delay
+    speakText(currentCard.word, 'de-DE', 0.8);
     setTimeout(() => setIsSpeaking(false), 1500);
   };
 
-  // Get current card from queue
-  const getAllQueueCards = () => {
-    const { newCards, learningCards, reviewCards } = studyQueue;
-    return [...learningCards, ...reviewCards, ...newCards];
-  };
-  
-  const allQueueCards = getAllQueueCards();
-  const currentCard = allQueueCards[currentIndex]?.wordData || allQueueCards[currentIndex];
-  const currentSrsCard = allQueueCards[currentIndex];
-  
-  // Calculate progress
-  const totalInSession = allQueueCards.length;
-  const progress = totalInSession > 0 ? ((currentIndex + 1) / totalInSession) * 100 : 0;
+  const currentCard = shuffledData[currentIndex];
+  const parsed = currentCard ? parseWord(currentCard.word) : { article: null, word: '' };
+  const progress = shuffledData.length > 0 ? ((currentIndex + 1) / shuffledData.length) * 100 : 0;
 
-  // Update next review times when card changes
+  const currentSrsCard = currentCard ? (srsCards[currentCard.word] || createNewCard(currentCard.word)) : null;
+
   useEffect(() => {
     if (currentSrsCard) {
       const times = getAllNextReviewTexts(currentSrsCard, isEn ? 'en' : 'vi');
@@ -218,99 +140,6 @@ const VocabularyLearnPage = () => {
     }
   }, [currentSrsCard, isEn]);
 
-  // Calculate remaining cards count
-  const remainingCards = allQueueCards.length - currentIndex;
-  const totalWords = config?.data?.length || 0;
-
-  // Handle card click - flip only
-  const handleCardClick = (e) => {
-    if (!isFlipped) {
-      setIsFlipped(true);
-      setShowButtons(true);
-    }
-  };
-
-  // Handle answer with Anki 4-button rating
-  const handleAnswer = (rating) => {
-    if (!currentCard || !currentSrsCard) return;
-
-    // Calculate updated card
-    const updatedCard = calculateNextReview(currentSrsCard, rating);
-    
-    // Record result
-    const ratingName = rating === Rating.AGAIN ? 'again' : 
-                       rating === Rating.HARD ? 'hard' : 
-                       rating === Rating.GOOD ? 'good' : 'easy';
-    
-    const result = { word: currentCard.word, rating, ratingName };
-    setSessionResults(prev => [...prev, result]);
-    
-    // Update stats
-    setStats(prev => ({
-      ...prev,
-      [ratingName]: prev[ratingName] + 1
-    }));
-
-    // Update studied counts
-    const cardType = currentSrsCard.state === CardState.NEW ? 'new' : 'review';
-    setStudiedCounts(prev => ({
-      ...prev,
-      [cardType]: prev[cardType] + 1
-    }));
-
-    // Save progress to API
-    saveCardProgress(currentCard.word, rating, updatedCard);
-
-    // Update local SRS card
-    setSrsCards(prev => ({
-      ...prev,
-      [currentCard.word]: updatedCard
-    }));
-
-    nextCard();
-  };
-
-  // Next card
-  const nextCard = () => {
-    setIsFlipped(false);
-    setShowButtons(false);
-    stopSpeech();
-
-    if (currentIndex < allQueueCards.length - 1) {
-      setTimeout(() => {
-        setCurrentIndex(prev => prev + 1);
-      }, 200);
-    } else {
-      setIsComplete(true);
-    }
-  };
-
-  // Restart - rebuild queue
-  const handleRestart = () => {
-    // Reset SRS cards to trigger queue rebuild
-    setSrsCards({});
-    setCurrentIndex(0);
-    setIsFlipped(false);
-    setShowButtons(false);
-    setIsComplete(false);
-    setSessionResults([]);
-    setStats({ again: 0, hard: 0, good: 0, easy: 0 });
-    setStudiedCounts({ new: 0, review: 0 });
-    stopSpeech();
-  };
-
-  // Loading or invalid level
-  if (!config) {
-    return (
-      <div className={styles.container}>
-        <div className={styles.loading}>
-          {isEn ? 'Loading...' : 'Đang tải...'}
-        </div>
-      </div>
-    );
-  }
-
-  // Get card state badge
   const getCardStateBadge = () => {
     if (!currentSrsCard) return null;
     const state = currentSrsCard.state;
@@ -325,29 +154,91 @@ const VocabularyLearnPage = () => {
     return { badgeClass, label };
   };
 
+  const handleFlip = () => {
+    if (!isFlipped) {
+      setIsFlipped(true);
+      setShowButtons(true);
+    }
+  };
+
+  const handleAnswer = (rating) => {
+    if (!currentCard || !currentSrsCard) return;
+
+    const updatedCard = calculateNextReview(currentSrsCard, rating);
+    
+    const ratingName = rating === Rating.AGAIN ? 'again' : 
+                       rating === Rating.HARD ? 'hard' : 
+                       rating === Rating.GOOD ? 'good' : 'easy';
+    setStats(prev => ({ ...prev, [ratingName]: prev[ratingName] + 1 }));
+
+    setSrsCards(prev => ({
+      ...prev,
+      [currentCard.word]: updatedCard
+    }));
+
+    saveCardProgress(currentCard.word, rating, updatedCard);
+    nextCard();
+  };
+
+  const nextCard = () => {
+    setIsFlipped(false);
+    setShowButtons(false);
+    stopSpeech();
+
+    if (currentIndex < shuffledData.length - 1) {
+      setTimeout(() => setCurrentIndex(prev => prev + 1), 200);
+    } else {
+      setIsComplete(true);
+    }
+  };
+
+  const handleRestart = () => {
+    const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
+    setShuffledData(shuffled);
+    setSrsCards({});
+    setCurrentIndex(0);
+    setIsFlipped(false);
+    setShowButtons(false);
+    setIsComplete(false);
+    setStats({ again: 0, hard: 0, good: 0, easy: 0 });
+    stopSpeech();
+  };
+
+  if (!topic) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.loading}>
+          {t('vocabPage.learn.loading')}
+        </div>
+      </div>
+    );
+  }
+
+  const topicIcon = topicIcons[TOPIC_ID] || '📎';
+  const topicColor = '#ec4899';
+
   return (
     <>
       <SEO
-        title={`${config.title[currentLanguage] || config.title.en} - ${isEn ? 'Vocabulary' : 'Từ vựng'}`}
-        description={isEn ? `Learn ${config.id} German vocabulary` : `Học từ vựng tiếng Đức ${config.id}`}
+        title={`${topic.name} - ${t('vocabPage.nounVerb.title')}`}
+        description={t('vocabPage.nounVerb.desc')}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
           <a href="/vocabulary" className={styles.backLink}>
             ←
           </a>
           <div className={styles.levelBadge}>
-            <span className={styles.levelIcon}>{config.icon}</span>
-            <span className={styles.levelTitle} style={{ color: config.color }}>
-              {config.id}
+            <span className={styles.levelIcon}>{topicIcon}</span>
+            <span className={styles.levelTitle} style={{ color: topicColor }}>
+              {topic.name}
             </span>
           </div>
           <div className={styles.headerSpacer} />
           <div className={styles.progressText}>
-            {currentIndex + 1} / {totalInSession}
+            {currentIndex + 1} / {shuffledData.length}
           </div>
         </div>
 
@@ -355,11 +246,11 @@ const VocabularyLearnPage = () => {
         <div className={styles.progressBar}>
           <div 
             className={styles.progressFill} 
-            style={{ width: `${progress}%`, background: config.color }}
+            style={{ width: `${progress}%`, background: topicColor }}
           />
         </div>
 
-        {/* Session Score - Anki style */}
+        {/* Session Score */}
         <div className={styles.scoreRow}>
           <span className={styles.scoreNew}>❌ {stats.again}</span>
           <span className={styles.scoreLearning}>😐 {stats.hard}</span>
@@ -384,25 +275,23 @@ const VocabularyLearnPage = () => {
                 {/* Flashcard */}
                 <div 
                   className={`${styles.flashcard} ${isFlipped ? styles.flipped : ''}`}
-                  onClick={handleCardClick}
-                  style={{ '--card-color': config.color }}
+                  onClick={handleFlip}
+                  style={{ '--card-color': topicColor }}
                 >
                   <div className={styles.cardInner}>
                     {/* Front */}
                     <div className={styles.cardFront}>
-                      {/* Card State Badge */}
                       {getCardStateBadge() && (
                         <span className={`${styles.cardStateBadge} ${getCardStateBadge().badgeClass}`}>
                           {getCardStateBadge().label}
                         </span>
                       )}
                       
-                      {currentCard.article && (
-                        <span className={styles.article}>{currentCard.article}</span>
+                      {parsed.article && (
+                        <span className={styles.article}>{parsed.article}</span>
                       )}
-                      <span className={styles.word}>{currentCard.word}</span>
+                      <span className={styles.word}>{parsed.word}</span>
                       
-                      {/* Speak button on front */}
                       <button 
                         className={`${styles.speakBtn} ${isSpeaking ? styles.speaking : ''}`}
                         onClick={handleSpeak}
@@ -424,7 +313,6 @@ const VocabularyLearnPage = () => {
                         {currentCard.word}
                       </span>
                       
-                      {/* Speak button on back */}
                       <button 
                         className={`${styles.speakBtnBack} ${isSpeaking ? styles.speaking : ''}`}
                         onClick={handleSpeak}
@@ -435,7 +323,7 @@ const VocabularyLearnPage = () => {
                   </div>
                 </div>
 
-                {/* Answer Buttons - Anki 4 levels */}
+                {/* Answer Buttons */}
                 {showButtons && (
                   <div className={styles.answerRowAnki}>
                     <button 
@@ -478,7 +366,7 @@ const VocabularyLearnPage = () => {
             )}
           </div>
         ) : (
-          /* Complete Screen - Anki style */
+          /* Complete Screen */
           <div className={styles.completeArea}>
             <div className={styles.completeIcon}>🎉</div>
             <h2 className={styles.completeTitle}>
@@ -508,9 +396,8 @@ const VocabularyLearnPage = () => {
               <button className={styles.btnRestart} onClick={handleRestart}>
                 🔄 {t('vocabPage.learn.practiceMore')}
               </button>
-              {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
               <a href="/vocabulary" className={styles.btnHome}>
-                📚 {t('vocabPage.backToVocab')}
+                📚 {t('vocabPage.title')}
               </a>
             </div>
           </div>
@@ -520,4 +407,4 @@ const VocabularyLearnPage = () => {
   );
 };
 
-export default VocabularyLearnPage;
+export default NomenVerbPage;

@@ -2,26 +2,24 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import { useLanguage } from '../../../context/LanguageContext';
-import { useAuth } from '../../../context/AuthContext';
-import { speakText, stopSpeech } from '../../../lib/textToSpeech';
+import { useLanguage } from '../../context/LanguageContext';
+import { useAuth } from '../../context/AuthContext';
+import { speakText, stopSpeech } from '../../lib/textToSpeech';
 import { 
   createNewCard, 
   calculateNextReview, 
   getAllNextReviewTexts,
   CardState,
   Rating 
-} from '../../../lib/srs';
-import SEO from '../../../components/SEO';
-import { getTopicById, topicIcons } from '../../../lib/data/goetheTopicVocabulary';
-import styles from '../../../styles/VocabLearn.module.css';
+} from '../../lib/srs';
+import SEO from '../../components/SEO';
+import { getTopicById, topicIcons } from '../../lib/data/goetheTopicVocabulary';
+import styles from '../../styles/VocabLearn.module.css';
 
-// Grammar topic IDs
-const GRAMMAR_TOPIC_IDS = ['verben_praeposition', 'nomen_verb', 'verbs', 'adjectives'];
+const TOPIC_ID = 'verben_praeposition';
 
-const GrammarLearnPage = () => {
+const VerbenPraepositionPage = () => {
   const router = useRouter();
-  const { topicId } = router.query;
   const { t } = useTranslation('common');
   const { currentLanguage } = useLanguage();
   const { user } = useAuth();
@@ -29,10 +27,7 @@ const GrammarLearnPage = () => {
   const translationLang = user?.nativeLanguage || currentLanguage;
   const isTranslationEn = translationLang === 'en';
 
-  // Wait for router to be ready
-  const isReady = router.isReady;
-  const topic = isReady && topicId ? getTopicById(topicId) : null;
-  const isValidGrammarTopic = GRAMMAR_TOPIC_IDS.includes(topicId);
+  const topic = getTopicById(TOPIC_ID);
 
   // States
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +40,7 @@ const GrammarLearnPage = () => {
   const [stats, setStats] = useState({ again: 0, hard: 0, good: 0, easy: 0 });
   const [nextReviewTimes, setNextReviewTimes] = useState({ again: '', hard: '', good: '', easy: '' });
   const [isSaving, setIsSaving] = useState(false);
-  const [saveStatus, setSaveStatus] = useState(''); // 'saving', 'saved', 'error'
+  const [saveStatus, setSaveStatus] = useState('');
 
   const isEn = currentLanguage === 'en';
 
@@ -60,7 +55,7 @@ const GrammarLearnPage = () => {
   // Save card progress to database
   const saveCardProgress = useCallback(async (word, rating, cardData) => {
     const token = getAuthToken();
-    if (!token || !user) return; // Only save for logged in users
+    if (!token || !user) return;
 
     try {
       setIsSaving(true);
@@ -73,7 +68,7 @@ const GrammarLearnPage = () => {
           'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({
-          topic: topicId,
+          topic: TOPIC_ID,
           word,
           rating,
           cardData
@@ -92,25 +87,15 @@ const GrammarLearnPage = () => {
     } finally {
       setIsSaving(false);
     }
-  }, [getAuthToken, user, topicId]);
+  }, [getAuthToken, user]);
 
-  // Reset state and shuffle data when topicId changes
+  // Initialize shuffled data
   useEffect(() => {
-    if (isReady && topic?.words) {
-      // Reset all states when switching topics
-      setCurrentIndex(0);
-      setIsFlipped(false);
-      setShowButtons(false);
-      setIsComplete(false);
-      setSrsCards({});
-      setStats({ again: 0, hard: 0, good: 0, easy: 0 });
-      stopSpeech();
-      
-      // Shuffle data for new topic
+    if (topic?.words) {
       const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
       setShuffledData(shuffled);
     }
-  }, [topicId, isReady]);
+  }, []);
 
   const getTranslation = (item) => {
     if (!item) return '';
@@ -191,9 +176,7 @@ const GrammarLearnPage = () => {
       [currentCard.word]: updatedCard
     }));
 
-    // Save progress to database (async, don't wait)
     saveCardProgress(currentCard.word, rating, updatedCard);
-
     nextCard();
   };
 
@@ -221,24 +204,6 @@ const GrammarLearnPage = () => {
     stopSpeech();
   };
 
-  // Redirect if not a valid grammar topic
-  if (topicId && !isValidGrammarTopic && topic) {
-    router.replace(`/vocabulary/topics/${topicId}`);
-    return null;
-  }
-
-  // Wait for router to be ready
-  if (!isReady) {
-    return (
-      <div className={styles.container}>
-        <div className={styles.loading}>
-          {t('vocabPage.learn.loading')}
-        </div>
-      </div>
-    );
-  }
-
-  // Invalid topic - show loading (may happen during navigation)
   if (!topic) {
     return (
       <div className={styles.container}>
@@ -249,21 +214,20 @@ const GrammarLearnPage = () => {
     );
   }
 
-  const topicIcon = topicIcons[topicId] || '📚';
+  const topicIcon = topicIcons[TOPIC_ID] || '🔗';
   const topicColor = '#10b981';
 
   return (
     <>
       <SEO
-        title={`${topic.name} - ${t('vocabPage.grammar.title')}`}
-        description={`${t('vocabPage.grammar.title')}: ${getTopicName()}`}
+        title={`${topic.name} - ${t('vocabPage.verbPrep.title')}`}
+        description={t('vocabPage.verbPrep.desc')}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
-          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-          <a href="/vocabulary/grammar" className={styles.backLink}>
+          <a href="/vocabulary" className={styles.backLink}>
             ←
           </a>
           <div className={styles.levelBadge}>
@@ -432,9 +396,8 @@ const GrammarLearnPage = () => {
               <button className={styles.btnRestart} onClick={handleRestart}>
                 🔄 {t('vocabPage.learn.practiceMore')}
               </button>
-              {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-              <a href="/vocabulary/grammar" className={styles.btnHome}>
-                🔗 {t('vocabPage.grammar.title')}
+              <a href="/vocabulary" className={styles.btnHome}>
+                📚 {t('vocabPage.title')}
               </a>
             </div>
           </div>
@@ -444,4 +407,4 @@ const GrammarLearnPage = () => {
   );
 };
 
-export default GrammarLearnPage;
+export default VerbenPraepositionPage;

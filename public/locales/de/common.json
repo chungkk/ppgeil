@@ -751,19 +751,21 @@
       "title": "Verben mit Präpositionen",
       "name": "Verben mit Präpositionen",
       "phrases": "Ausdrücke",
-      "desc": "Deutsche Verben mit festen Präpositionen beherrschen. Wichtig für flüssige Kommunikation!"
+      "desc": "Deutsche Verben mit festen Präpositionen beherrschen. Wichtig für flüssige Kommunikation!",
+      "btn": "Lernen starten"
     },
     "nounVerb": {
       "title": "Nomen-Verb-Verbindungen",
       "name": "Nomen-Verb-Verbindungen",
       "phrases": "Ausdrücke",
-      "desc": "Feste Nomen-Verb-Verbindungen lernen. Beispiel: eine Frage stellen, Bescheid geben..."
+      "desc": "Feste Nomen-Verb-Verbindungen lernen. Beispiel: eine Frage stellen, Bescheid geben...",
+      "btn": "Lernen starten"
     },
     "grammar": {
-      "title": "Grammatik-Muster",
+      "title": "Nomen-Verb-Verbindungen",
       "patterns": "Muster",
       "phrases": "Ausdrücke",
-      "desc": "Wichtige deutsche Grammatik-Muster beherrschen: Verb-Präposition-Kombinationen, Nomen-Verb-Verbindungen und mehr.",
+      "desc": "Feste Nomen-Verb-Verbindungen lernen. Beispiel: eine Frage stellen, Bescheid geben...",
       "btn": "Muster durchsuchen"
     },
     "byLevel": {

@@ -781,22 +781,24 @@
       "btn": "Browse Topics"
     },
     "verbPrep": {
-      "title": "Verbs with Prepositions",
+      "title": "Verben mit Präpositionen",
       "name": "Verben mit Präpositionen",
       "phrases": "phrases",
-      "desc": "Master German verbs that require specific prepositions. Essential for fluent communication!"
+      "desc": "Master German verbs that require specific prepositions. Essential for fluent communication!",
+      "btn": "Start Learning"
     },
     "nounVerb": {
-      "title": "Noun-Verb Collocations",
+      "title": "Nomen-Verb-Verbindungen",
       "name": "Nomen-Verb-Verbindungen",
       "phrases": "phrases",
-      "desc": "Learn fixed noun-verb expressions commonly used in German. Example: eine Frage stellen, Bescheid geben..."
+      "desc": "Learn fixed noun-verb expressions commonly used in German. Example: eine Frage stellen, Bescheid geben...",
+      "btn": "Start Learning"
     },
     "grammar": {
-      "title": "Grammar Patterns",
+      "title": "Nomen-Verb-Verbindungen",
       "patterns": "patterns",
       "phrases": "expressions",
-      "desc": "Master essential German grammar patterns: verb-preposition combinations, noun-verb collocations, and more.",
+      "desc": "Learn fixed noun-verb expressions commonly used in German. Example: eine Frage stellen, Bescheid geben...",
       "btn": "Browse Patterns"
     },
     "byLevel": {
