@@ -170,7 +170,7 @@ const VocabularyHomePage = () => {
               </Link>
             </div>
 
-            {/* Section 3: Learn by Level */}
+            {/* Section 3: Learn by Level - TEMPORARILY HIDDEN
             <div className={styles.section}>
               <div className={styles.sectionHeader}>
                 <div className={styles.sectionIconWrapper} style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}>
@@ -190,7 +190,6 @@ const VocabularyHomePage = () => {
                 {t('vocabPage.byLevel.desc')}
               </p>
 
-              {/* Level Cards */}
               <div className={styles.levelGrid}>
                 {levels.map((level) => {
                   const stats = getLevelStats(level.key);
@@ -213,7 +212,6 @@ const VocabularyHomePage = () => {
                         <span className={styles.levelLabel}>{t('vocabPage.byLevel.words')}</span>
                       </div>
                       
-                      {/* Progress indicator */}
                       {user && totalProgress > 0 && (
                         <div className={styles.levelProgress}>
                           <div className={styles.progressBarSmall}>
@@ -226,7 +224,6 @@ const VocabularyHomePage = () => {
                         </div>
                       )}
 
-                      {/* Due indicator */}
                       {stats.dueForReview > 0 && (
                         <span className={styles.dueBadge}>🔔 {stats.dueForReview}</span>
                       )}
@@ -235,6 +232,7 @@ const VocabularyHomePage = () => {
                 })}
               </div>
             </div>
+            */}
           </div>
 
           {/* Stats Footer */}

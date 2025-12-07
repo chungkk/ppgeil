@@ -385,7 +385,7 @@ const VocabularyLearnPage = () => {
                 <div 
                   className={`${styles.flashcard} ${isFlipped ? styles.flipped : ''}`}
                   onClick={handleCardClick}
-                  style={{ '--card-color': config.color }}
+                  style={{ '--card-color': config.color, maxWidth: '600px', width: '100%', height: '280px' }}
                 >
                   <div className={styles.cardInner}>
                     {/* Front */}
