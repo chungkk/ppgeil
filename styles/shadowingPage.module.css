@@ -1411,6 +1411,7 @@
 
   .leftSection {
     flex-shrink: 0;
+    padding-bottom: 8px;
   }
 
   .transcriptSection {
@@ -1471,13 +1472,13 @@
    }
 
    .videoSection {
-     border-radius: 16px 16px 0 0;
+     border-radius: 16px;
      box-shadow: none;
      border: none;
    }
 
    .videoContainer {
-     border-radius: 16px 16px 0 0;
+     border-radius: 16px;
      border: none;
    }
 
