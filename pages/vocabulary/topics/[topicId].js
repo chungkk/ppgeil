@@ -118,6 +118,7 @@ const TopicLearnPage = () => {
       const shuffled = [...topic.words].sort(() => Math.random() - 0.5);
       setShuffledData(shuffled);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [topicId, isReady]);
 
   // Get translation based on user's nativeLanguage setting

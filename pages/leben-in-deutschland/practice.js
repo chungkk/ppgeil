@@ -158,6 +158,7 @@ const PracticePage = () => {
                 
                 {question.img && (
                   <div className={styles.questionImage}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={getImageUrl(question.img)} alt="Hình ảnh câu hỏi" />
                   </div>
                 )}

@@ -62,6 +62,7 @@ const TestPage = () => {
       }, 1000);
     }
     return () => clearInterval(timer);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [testState, timeLeft]);
 
   const startTest = () => {
@@ -291,6 +292,7 @@ const TestPage = () => {
               
               {currentQuestion.img && (
                 <div className={styles.questionImage}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={getImageUrl(currentQuestion.img)} alt="Hình ảnh câu hỏi" />
                 </div>
               )}

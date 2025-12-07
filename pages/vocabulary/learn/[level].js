@@ -85,6 +85,7 @@ const VocabularyLearnPage = () => {
     if (user && level) {
       loadProgress();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, level]);
 
   const loadProgress = async () => {
