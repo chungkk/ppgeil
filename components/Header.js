@@ -1,4 +1,4 @@
-import React, { useReducer, useRef, useEffect, useCallback, useState } from 'react';
+import React, { useReducer, useRef, useEffect, useCallback, useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -9,6 +9,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useNotifications } from '../context/NotificationContext';
 import { useAnswerStreak, getStreakLevel } from '../context/AnswerStreakContext';
 import { getDefaultAvatar } from '../lib/helpers/avatar';
+import { getTodaysPhrase } from '../lib/data/nomenVerbVerbindungen';
 import NotificationDropdown from './NotificationDropdown';
 import LoginModal from './LoginModal';
 import styles from '../styles/Header.module.css';
@@ -73,6 +74,10 @@ const Header = () => {
   const { unreadCount, fetchUnreadCount } = useNotifications();
   const { currentStreak, maxStreak, showCelebration, celebrationStreak } = useAnswerStreak();
   const [showStreakTooltip, setShowStreakTooltip] = useState(false);
+  const [showPhraseTooltip, setShowPhraseTooltip] = useState(false);
+  
+  // Get today's Nomen-Verb-Verbindung
+  const todaysPhrase = useMemo(() => getTodaysPhrase(), []);
   
   // Get weekly progress from user (for attendance tracking)
   const weeklyProgress = user?.streak?.weeklyProgress || [false, false, false, false, false, false, false];
@@ -212,6 +217,25 @@ const Header = () => {
         </Link>
 
         <nav className={`${styles.nav} ${state.mobileMenuOpen ? styles.open : ''}`}>
+          {/* Daily Nomen-Verb-Verbindung */}
+          <div 
+            className={styles.dailyPhraseContainer}
+            onMouseEnter={() => setShowPhraseTooltip(true)}
+            onMouseLeave={() => setShowPhraseTooltip(false)}
+          >
+            <span className={styles.dailyPhraseIcon}>📚</span>
+            <span className={styles.dailyPhraseText}>{todaysPhrase.phrase}</span>
+            
+            {showPhraseTooltip && (
+              <div className={styles.dailyPhraseTooltip}>
+                <div className={styles.phraseTooltipTitle}>Nomen-Verb-Verbindung des Tages</div>
+                <div className={styles.phraseTooltipPhrase}>{todaysPhrase.phrase}</div>
+                <div className={styles.phraseTooltipMeaning}>= {todaysPhrase.meaning}</div>
+                <div className={styles.phraseTooltipExample}>&ldquo;{todaysPhrase.example}&rdquo;</div>
+              </div>
+            )}
+          </div>
+          
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -224,20 +248,7 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className={styles.rightSection}>
-          {/* Mobile navigation menu button */}
-          <button
-            className={styles.mobileMenuBtn}
-            onClick={() => dispatch({ type: 'SET_MOBILE_MENU', payload: !state.mobileMenuOpen })}
-            aria-label="Menu"
-            aria-expanded={state.mobileMenuOpen}
-          >
-            <div className={`${styles.hamburgerIcon} ${state.mobileMenuOpen ? styles.open : ''}`}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
+         <div className={styles.rightSection}>
 
           {/* Desktop only: Theme toggle - Temporarily hidden */}
           {/* <button
