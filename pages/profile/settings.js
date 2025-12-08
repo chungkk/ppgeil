@@ -13,7 +13,7 @@ import settingsStyles from '../../styles/settings.module.css';
 
 function SettingsPage() {
   const { t } = useTranslation();
-  const { user, updateDifficultyLevel } = useAuth();
+  const { user } = useAuth();
   const { theme, themeOptions, setTheme, currentTheme } = useTheme();
   const [loading, setLoading] = useState(false);
 
@@ -94,19 +94,7 @@ function SettingsPage() {
     }
   };
 
-  const handleDifficultyLevelUpdate = async (newLevel) => {
-    try {
-      const result = await updateDifficultyLevel(newLevel);
-      if (result.success) {
-        toast.success('Difficulty level updated successfully! 🎯');
-      } else {
-        toast.error('Failed to update difficulty level');
-      }
-    } catch (error) {
-      console.error('Difficulty level update error:', error);
-      toast.error('An error occurred');
-    }
-  };
+
 
   // Structured data
   const breadcrumbData = generateBreadcrumbStructuredData([
@@ -237,62 +225,21 @@ function SettingsPage() {
                 <h3 className={settingsStyles.settingCardTitle}>{t('lesson.ui.levelAndDifficulty')}</h3>
               </div>
               <div className={settingsStyles.settingCardBody}>
-                {/* German Level Section */}
-                <div style={{ marginBottom: '24px' }}>
-                  <label className={styles.settingLabel}>
-                    <strong>📊 {t('settings.level.title')}</strong>
-                  </label>
-                  <p className={settingsStyles.settingDescription} style={{ fontSize: '13px', marginTop: '6px', marginBottom: '10px' }}>
-                    {t('settings.level.description')}
-                  </p>
-                  <select
-                    value={user?.level || 'beginner'}
-                    onChange={(e) => handleProfileUpdate('level', e.target.value)}
-                    className={styles.settingSelect}
-                  >
-                    <option value="beginner">🌱 {t('settings.level.beginner')}</option>
-                    <option value="experienced">🚀 {t('settings.level.experienced')}</option>
-                    <option value="all">🎯 {t('settings.level.all')}</option>
-                  </select>
-                  <p className={settingsStyles.settingHint} style={{ fontSize: '12px', marginTop: '6px' }}>
-                    {t('settings.level.hint')}
-                  </p>
-                </div>
-
-                {/* Divider */}
-                <div style={{ borderTop: '1px solid var(--border-color, #e0e0e0)', margin: '16px 0' }}></div>
-
-                {/* Dictation Difficulty Section */}
-                <div>
-                  <label className={styles.settingLabel}>
-                    <strong>{t('lesson.ui.dictationDifficulty')}</strong>
-                  </label>
-                  <p className={settingsStyles.settingDescription} style={{ fontSize: '13px', marginTop: '6px', marginBottom: '10px' }}>
-                    {t('lesson.ui.dictationDifficultyDesc')}
-                  </p>
-                  <select
-                    value={user?.preferredDifficultyLevel || 'b1'}
-                    onChange={(e) => handleDifficultyLevelUpdate(e.target.value)}
-                    className={styles.settingSelect}
-                  >
-                    <option value="a1">A1 (10% hidden)</option>
-                    <option value="a2">A2 (30% hidden)</option>
-                    <option value="b1">B1 (30% hidden)</option>
-                    <option value="b2">B2 (60% hidden)</option>
-                    <option value="c1c2">C1+C2 (100% hidden)</option>
-                  </select>
-                  <p className={settingsStyles.settingHint} style={{ fontSize: '12px', marginTop: '6px' }}>
-                    {t('lesson.ui.currentLevel')} <strong>{
-                      user?.preferredDifficultyLevel === 'a1' ? 'A1 (10%)' :
-                      user?.preferredDifficultyLevel === 'a2' ? 'A2 (30%)' :
-                      user?.preferredDifficultyLevel === 'b1' ? 'B1 (30%)' :
-                      user?.preferredDifficultyLevel === 'b2' ? 'B2 (60%)' :
-                      (user?.preferredDifficultyLevel === 'c1c2' || user?.preferredDifficultyLevel === 'c1' || user?.preferredDifficultyLevel === 'c2') ? 'C1+C2 (100%)' :
-                      'B1 (30%)'
-                    }</strong>
-                    {' '}<small>• {t('lesson.ui.appliesTo')}</small>
-                  </p>
-                </div>
+                <p className={settingsStyles.settingDescription}>
+                  {t('settings.level.description')}
+                </p>
+                <select
+                  value={user?.level || 'beginner'}
+                  onChange={(e) => handleProfileUpdate('level', e.target.value)}
+                  className={settingsStyles.settingSelect}
+                >
+                  <option value="beginner">🌱 {t('settings.level.beginner')}</option>
+                  <option value="experienced">🚀 {t('settings.level.experienced')}</option>
+                  <option value="all">🎯 {t('settings.level.all')}</option>
+                </select>
+                <p className={settingsStyles.settingHint}>
+                  {t('settings.level.hint')}
+                </p>
               </div>
             </div>
 
