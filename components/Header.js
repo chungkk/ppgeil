@@ -154,9 +154,9 @@ const Header = () => {
   }, [user, fetchUserPoints]);
 
   const navLinks = [
-    { href: '/', label: t('header.nav.topics') },
-    { href: '/vocabulary', label: t('header.nav.vocabulary') },
-    { href: '/leben-in-deutschland', label: '🇩🇪 LiD Test' },
+    // { href: '/', label: t('header.nav.topics') }, // Tạm ẩn
+    // { href: '/vocabulary', label: t('header.nav.vocabulary') }, // Tạm ẩn
+    // { href: '/leben-in-deutschland', label: '🇩🇪 LiD Test' }, // Tạm ẩn
     // { href: '/leaderboard', label: t('header.nav.leaderboard') }, // Tạm ẩn
   ];
 
