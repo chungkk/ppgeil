@@ -231,6 +231,9 @@ const Header = () => {
                 <div className={styles.phraseTooltipTitle}>Nomen-Verb-Verbindung des Tages</div>
                 <div className={styles.phraseTooltipPhrase}>{todaysPhrase.phrase}</div>
                 <div className={styles.phraseTooltipMeaning}>= {todaysPhrase.meaning}</div>
+                <div className={styles.phraseTooltipTranslation}>
+                  {(user?.nativeLanguage || 'vi') === 'vi' ? `🇻🇳 ${todaysPhrase.vi}` : `🇬🇧 ${todaysPhrase.en}`}
+                </div>
                 <div className={styles.phraseTooltipExample}>&ldquo;{todaysPhrase.example}&rdquo;</div>
               </div>
             )}

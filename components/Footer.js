@@ -88,9 +88,6 @@ const Footer = () => {
             <Link href="/?mode=dictation" className={styles.footerLink}>
               {t('footer.links.dictation')}
             </Link>
-            <Link href="/profile/vocabulary" className={styles.footerLink}>
-              {t('footer.links.vocabulary')}
-            </Link>
           </div>
         </div>
       </div>
