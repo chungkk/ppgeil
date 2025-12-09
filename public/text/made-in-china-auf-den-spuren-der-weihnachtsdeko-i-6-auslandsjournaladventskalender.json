@@ -1,2223 +1,267 @@
 [
     {
         "text": "ZDF der Auslandsjournal Adventskalender: Hinter jedem Türchen eine Geschichte.",
-        "start": 2.8800000381469726,
-        "end": 10.2899995803833,
-        "wordTimings": [
-            {
-                "word": "ZDF",
-                "start": 2.9600000381469727,
-                "end": 3.5199999809265137
-            },
-            {
-                "word": "der",
-                "start": 4.260000228881836,
-                "end": 4.460000038146973
-            },
-            {
-                "word": "Auslandsjournal",
-                "start": 4.460000038146973,
-                "end": 5.579999923706055
-            },
-            {
-                "word": "Adventskalender:",
-                "start": 5.579999923706055,
-                "end": 7.119999885559082
-            },
-            {
-                "word": "Hinter",
-                "start": 7.940000057220459,
-                "end": 7.940000057220459
-            },
-            {
-                "word": "jedem",
-                "start": 7.940000057220459,
-                "end": 8.34000015258789
-            },
-            {
-                "word": "Türchen",
-                "start": 8.34000015258789,
-                "end": 8.880000114440918
-            },
-            {
-                "word": "eine",
-                "start": 8.880000114440918,
-                "end": 9.359999656677246
-            },
-            {
-                "word": "Geschichte.",
-                "start": 9.359999656677246,
-                "end": 9.9399995803833
-            }
-        ],
-        "translationEn": "ZDF International Journal Advent Calendar: Behind each door a story.",
-        "translationVi": "Lịch Giáng Sinh Adventskalender của ZDF der Auslandsjournal: Ẩn sau mỗi cánh cửa là một câu chuyện."
+        "start": 2.38,
+        "end": 10.29,
+        "translationEn": "ZDF's Foreign Journal Advent Calendar: A story behind each door.",
+        "translationVi": "Lịch Giáng sinh của ZDF der Auslandsjournal: Đằng sau mỗi cánh cửa là một câu chuyện."
     },
     {
         "text": "Vielleicht haben Sie ja auch schon Ihre Weihnachtsdeko aufgehangen.",
-        "start": 12.039999885559082,
-        "end": 15.169999694824218,
-        "wordTimings": [
-            {
-                "word": "Vielleicht",
-                "start": 12.119999885559082,
-                "end": 12.359999656677246
-            },
-            {
-                "word": "haben",
-                "start": 12.359999656677246,
-                "end": 12.520000457763672
-            },
-            {
-                "word": "Sie",
-                "start": 12.520000457763672,
-                "end": 12.680000305175781
-            },
-            {
-                "word": "ja",
-                "start": 12.680000305175781,
-                "end": 12.859999656677246
-            },
-            {
-                "word": "auch",
-                "start": 12.859999656677246,
-                "end": 13
-            },
-            {
-                "word": "schon",
-                "start": 13,
-                "end": 13.279999732971191
-            },
-            {
-                "word": "Ihre",
-                "start": 13.279999732971191,
-                "end": 13.4399995803833
-            },
-            {
-                "word": "Weihnachtsdeko",
-                "start": 13.4399995803833,
-                "end": 14.180000305175781
-            },
-            {
-                "word": "aufgehangen.",
-                "start": 14.180000305175781,
-                "end": 14.819999694824219
-            }
-        ],
+        "start": 12.04,
+        "end": 15.17,
         "translationEn": "Maybe you have already hung up your Christmas decorations.",
-        "translationVi": "Có thể bạn cũng đã treo trang trí Giáng sinh của mình rồi."
+        "translationVi": "Có thể bạn cũng đã treo trang trí Giáng sinh của mình lên rồi."
     },
     {
         "text": "Und wenn Sie da auf Ihre Sterne oder Schneekugeln schauen,",
-        "start": 15.340000076293945,
-        "end": 17.870000457763673,
-        "wordTimings": [
-            {
-                "word": "Und",
-                "start": 15.420000076293945,
-                "end": 15.420000076293945
-            },
-            {
-                "word": "wenn",
-                "start": 15.420000076293945,
-                "end": 15.520000457763672
-            },
-            {
-                "word": "Sie",
-                "start": 15.520000457763672,
-                "end": 15.619999885559082
-            },
-            {
-                "word": "da",
-                "start": 15.619999885559082,
-                "end": 15.800000190734863
-            },
-            {
-                "word": "auf",
-                "start": 15.800000190734863,
-                "end": 15.880000114440918
-            },
-            {
-                "word": "Ihre",
-                "start": 15.880000114440918,
-                "end": 16.139999389648438
-            },
-            {
-                "word": "Sterne",
-                "start": 16.139999389648438,
-                "end": 16.420000076293945
-            },
-            {
-                "word": "oder",
-                "start": 16.420000076293945,
-                "end": 16.600000381469727
-            },
-            {
-                "word": "Schneekugeln",
-                "start": 16.600000381469727,
-                "end": 17.139999389648438
-            },
-            {
-                "word": "schauen,",
-                "start": 17.139999389648438,
-                "end": 17.520000457763672
-            }
-        ],
+        "start": 15.34,
+        "end": 17.47,
         "translationEn": "And when you look at your stars or snow globes,",
         "translationVi": "Và khi bạn nhìn vào những ngôi sao hoặc quả cầu tuyết của mình,"
     },
     {
         "text": "Steht da vielleicht irgendwo klitzeklein 'Made in China' drauf.",
-        "start": 17.71999923706055,
-        "end": 21.030000305175783,
-        "wordTimings": [
-            {
-                "word": "steht",
-                "start": 17.799999237060547,
-                "end": 17.799999237060547
-            },
-            {
-                "word": "da",
-                "start": 17.799999237060547,
-                "end": 18.020000457763672
-            },
-            {
-                "word": "vielleicht",
-                "start": 18.020000457763672,
-                "end": 18.239999771118164
-            },
-            {
-                "word": "irgendwo",
-                "start": 18.239999771118164,
-                "end": 18.700000762939453
-            },
-            {
-                "word": "klitzeklein",
-                "start": 18.700000762939453,
-                "end": 19.399999618530273
-            },
-            {
-                "word": "'Made",
-                "start": 19.399999618530273,
-                "end": 19.84000015258789
-            },
-            {
-                "word": "in",
-                "start": 19.84000015258789,
-                "end": 20.020000457763672
-            },
-            {
-                "word": "China'",
-                "start": 20.020000457763672,
-                "end": 20.260000228881836
-            },
-            {
-                "word": "drauf.",
-                "start": 20.260000228881836,
-                "end": 20.68000030517578
-            }
-        ],
-        "translationEn": "Is there maybe somewhere written in tiny letters 'Made in China'?",
-        "translationVi": "Có thể ở đâu đó có ghi rất nhỏ 'Sản xuất tại Trung Quốc'."
+        "start": 17.72,
+        "end": 21.03,
+        "translationEn": "Maybe it says 'Made in China' somewhere in tiny letters.",
+        "translationVi": "Có lẽ ở đâu đó có ghi rất nhỏ 'Sản xuất tại Trung Quốc'."
     },
     {
         "text": "Mein Name ist Elisabeth Schmidt und ich berichte für Sie aus Ostasien.",
-        "start": 21.460000915527345,
-        "end": 24.950000381469728,
-        "wordTimings": [
-            {
-                "word": "Mein",
-                "start": 21.540000915527344,
-                "end": 21.6200008392334
-            },
-            {
-                "word": "Name",
-                "start": 21.6200008392334,
-                "end": 21.719999313354492
-            },
-            {
-                "word": "ist",
-                "start": 21.719999313354492,
-                "end": 21.959999084472656
-            },
-            {
-                "word": "Elisabeth",
-                "start": 21.959999084472656,
-                "end": 22.280000686645508
-            },
-            {
-                "word": "Schmidt",
-                "start": 22.280000686645508,
-                "end": 22.559999465942383
-            },
-            {
-                "word": "und",
-                "start": 22.559999465942383,
-                "end": 22.700000762939453
-            },
-            {
-                "word": "ich",
-                "start": 22.700000762939453,
-                "end": 22.979999542236328
-            },
-            {
-                "word": "berichte",
-                "start": 22.979999542236328,
-                "end": 23.139999389648438
-            },
-            {
-                "word": "für",
-                "start": 23.139999389648438,
-                "end": 23.3799991607666
-            },
-            {
-                "word": "Sie",
-                "start": 23.3799991607666,
-                "end": 23.559999465942383
-            },
-            {
-                "word": "aus",
-                "start": 23.559999465942383,
-                "end": 23.760000228881836
-            },
-            {
-                "word": "Ostasien.",
-                "start": 23.760000228881836,
-                "end": 24.600000381469727
-            }
-        ],
+        "start": 21.46,
+        "end": 24.95,
         "translationEn": "My name is Elisabeth Schmidt and I am reporting for you from East Asia.",
-        "translationVi": "Tên tôi là Elisabeth Schmidt và tôi đang báo cáo cho bạn từ Đông Á."
+        "translationVi": "Tên tôi là Elisabeth Schmidt và tôi sẽ báo cáo cho bạn từ Đông Á."
     },
     {
         "text": "Ein besonderes Erlebnis, das unser Team dieses Jahr hatte,",
-        "start": 25.07999984741211,
-        "end": 28.530000305175783,
-        "wordTimings": [
-            {
-                "word": "Ein",
-                "start": 25.15999984741211,
-                "end": 25.3799991607666
-            },
-            {
-                "word": "besonderes",
-                "start": 25.3799991607666,
-                "end": 26.079999923706055
-            },
-            {
-                "word": "Erlebnis,",
-                "start": 26.079999923706055,
-                "end": 26.600000381469727
-            },
-            {
-                "word": "das",
-                "start": 26.760000228881836,
-                "end": 26.8799991607666
-            },
-            {
-                "word": "unser",
-                "start": 26.8799991607666,
-                "end": 27.15999984741211
-            },
-            {
-                "word": "Team",
-                "start": 27.15999984741211,
-                "end": 27.360000610351562
-            },
-            {
-                "word": "dieses",
-                "start": 27.360000610351562,
-                "end": 27.719999313354492
-            },
-            {
-                "word": "Jahr",
-                "start": 27.719999313354492,
-                "end": 27.84000015258789
-            },
-            {
-                "word": "hatte,",
-                "start": 27.84000015258789,
-                "end": 28.18000030517578
-            }
-        ],
+        "start": 25.08,
+        "end": 28.33,
         "translationEn": "A special experience that our team had this year,",
         "translationVi": "Một trải nghiệm đặc biệt mà đội ngũ của chúng tôi đã có trong năm nay,"
     },
     {
         "text": "Stammt aus der Stadt, aus der fast 2 Drittel der weltweiten Weihnachtsdeko kommt: Aus Ihu in Ostchina.",
-        "start": 28.100000305175783,
-        "end": 35.43000183105469,
-        "wordTimings": [
-            {
-                "word": "stammt",
-                "start": 28.18000030517578,
-                "end": 28.68000030517578
-            },
-            {
-                "word": "aus",
-                "start": 28.68000030517578,
-                "end": 28.920000076293945
-            },
-            {
-                "word": "der",
-                "start": 28.920000076293945,
-                "end": 29.260000228881836
-            },
-            {
-                "word": "Stadt,",
-                "start": 29.260000228881836,
-                "end": 29.440000534057617
-            },
-            {
-                "word": "aus",
-                "start": 29.639999389648438,
-                "end": 29.639999389648438
-            },
-            {
-                "word": "der",
-                "start": 29.639999389648438,
-                "end": 29.780000686645508
-            },
-            {
-                "word": "fast",
-                "start": 29.780000686645508,
-                "end": 30.139999389648438
-            },
-            {
-                "word": "2",
-                "start": 30.139999389648438,
-                "end": 30.559999465942383
-            },
-            {
-                "word": "Drittel",
-                "start": 30.559999465942383,
-                "end": 30.899999618530273
-            },
-            {
-                "word": "der",
-                "start": 30.899999618530273,
-                "end": 31.219999313354492
-            },
-            {
-                "word": "weltweiten",
-                "start": 31.219999313354492,
-                "end": 31.719999313354492
-            },
-            {
-                "word": "Weihnachtsdeko",
-                "start": 31.719999313354492,
-                "end": 32.5
-            },
-            {
-                "word": "kommt:",
-                "start": 32.5,
-                "end": 32.84000015258789
-            },
-            {
-                "word": "Aus",
-                "start": 33.41999816894531,
-                "end": 33.439998626708984
-            },
-            {
-                "word": "Ihu",
-                "start": 33.439998626708984,
-                "end": 33.7599983215332
-            },
-            {
-                "word": "in",
-                "start": 33.7599983215332,
-                "end": 34.2400016784668
-            },
-            {
-                "word": "Ostchina.",
-                "start": 34.2400016784668,
-                "end": 35.08000183105469
-            }
-        ],
-        "translationEn": "Comes from the city that supplies almost two-thirds of the world's Christmas decorations: from Ihu in East China.",
-        "translationVi": "Xuất phát từ thành phố, nơi gần 2/3 trang trí Giáng sinh trên toàn thế giới đến: Từ Ihu ở Đông Trung Quốc."
+        "start": 28.1,
+        "end": 35.03,
+        "translationEn": "Comes from the city that supplies almost two-thirds of the world's Christmas decorations: Ihu in East China.",
+        "translationVi": "Xuất phát từ thành phố, nơi gần 2/3 đồ trang trí Giáng sinh trên toàn thế giới đến từ: Ihu ở Đông Trung Quốc."
     },
     {
         "text": "Wir sind in einer gigantischen Großmarkthalle, Spitzname 'Supermarkt der Welt'.",
-        "start": 35.359998626708986,
-        "end": 41.43000183105469,
-        "wordTimings": [
-            {
-                "word": "Wir",
-                "start": 35.439998626708984,
-                "end": 35.439998626708984
-            },
-            {
-                "word": "sind",
-                "start": 35.439998626708984,
-                "end": 35.560001373291016
-            },
-            {
-                "word": "in",
-                "start": 35.560001373291016,
-                "end": 35.86000061035156
-            },
-            {
-                "word": "einer",
-                "start": 35.86000061035156,
-                "end": 36.13999938964844
-            },
-            {
-                "word": "gigantischen",
-                "start": 36.13999938964844,
-                "end": 36.959999084472656
-            },
-            {
-                "word": "Großmarkthalle,",
-                "start": 36.959999084472656,
-                "end": 37.97999954223633
-            },
-            {
-                "word": "Spitzname",
-                "start": 39.08000183105469,
-                "end": 39.79999923706055
-            },
-            {
-                "word": "'Supermarkt",
-                "start": 39.79999923706055,
-                "end": 40.52000045776367
-            },
-            {
-                "word": "der",
-                "start": 40.52000045776367,
-                "end": 41.08000183105469
-            },
-            {
-                "word": "Welt'.",
-                "start": 41.08000183105469,
-                "end": 41.08000183105469
-            }
-        ],
+        "start": 35.06,
+        "end": 41.43,
         "translationEn": "We are in a gigantic wholesale market hall, nicknamed 'Supermarket of the World'.",
-        "translationVi": "Chúng tôi đang ở trong một nhà kho lớn khổng lồ, biệt danh 'Siêu thị của thế giới'."
+        "translationVi": "Chúng tôi đang ở trong một nhà kho lớn khổng lồ, biệt danh 'Siêu thị của Thế giới'."
     },
     {
-        "text": "Mehr als 700 Fußballfelder groß, gut 70.000 000 Händler.",
-        "start": 42.460000915527345,
-        "end": 47.289998626708986,
-        "wordTimings": [
-            {
-                "word": "Mehr",
-                "start": 42.540000915527344,
-                "end": 42.540000915527344
-            },
-            {
-                "word": "als",
-                "start": 42.540000915527344,
-                "end": 42.7599983215332
-            },
-            {
-                "word": "700",
-                "start": 42.7599983215332,
-                "end": 43.540000915527344
-            },
-            {
-                "word": "Fußballfelder",
-                "start": 43.540000915527344,
-                "end": 44.47999954223633
-            },
-            {
-                "word": "groß,",
-                "start": 44.47999954223633,
-                "end": 44.880001068115234
-            },
-            {
-                "word": "gut",
-                "start": 45.34000015258789,
-                "end": 45.540000915527344
-            },
-            {
-                "word": "70.000",
-                "start": 45.540000915527344,
-                "end": 46.2599983215332
-            },
-            {
-                "word": "000",
-                "start": 46.2599983215332,
-                "end": 46.560001373291016
-            },
-            {
-                "word": "Händler.",
-                "start": 46.560001373291016,
-                "end": 46.939998626708984
-            }
-        ],
-        "translationEn": "Larger than 700 football fields, with over 70,000,000 merchants.",
+        "text": "Mehr als 700 Fußballfelder groß, gut 70.000  Händler.",
+        "start": 42.36,
+        "end": 47.29,
+        "translationEn": "Larger than 700 football fields, over 70,000,000 traders.",
         "translationVi": "Lớn hơn 700 sân bóng đá, khoảng 70.000.000 thương nhân."
     },
     {
         "text": "Von Spielzeug über Kleidung bis zur Weihnachtsdeko, hier gibt's alles alles und in rauen Mengen.",
-        "start": 48.07999984741211,
-        "end": 53.82999954223633,
-        "wordTimings": [
-            {
-                "word": "Von",
-                "start": 48.15999984741211,
-                "end": 48.380001068115234
-            },
-            {
-                "word": "Spielzeug",
-                "start": 48.380001068115234,
-                "end": 48.959999084472656
-            },
-            {
-                "word": "über",
-                "start": 48.959999084472656,
-                "end": 49.279998779296875
-            },
-            {
-                "word": "Kleidung",
-                "start": 49.279998779296875,
-                "end": 49.7400016784668
-            },
-            {
-                "word": "bis",
-                "start": 49.7400016784668,
-                "end": 50
-            },
-            {
-                "word": "zur",
-                "start": 50,
-                "end": 50.220001220703125
-            },
-            {
-                "word": "Weihnachtsdeko,",
-                "start": 50.220001220703125,
-                "end": 51.040000915527344
-            },
-            {
-                "word": "hier",
-                "start": 51.720001220703125,
-                "end": 51.720001220703125
-            },
-            {
-                "word": "gibt's",
-                "start": 51.720001220703125,
-                "end": 51.81999969482422
-            },
-            {
-                "word": "alles",
-                "start": 51.81999969482422,
-                "end": 51.959999084472656
-            },
-            {
-                "word": "alles",
-                "start": 51.959999084472656,
-                "end": 52.279998779296875
-            },
-            {
-                "word": "und",
-                "start": 52.279998779296875,
-                "end": 52.540000915527344
-            },
-            {
-                "word": "in",
-                "start": 52.540000915527344,
-                "end": 52.84000015258789
-            },
-            {
-                "word": "rauen",
-                "start": 52.84000015258789,
-                "end": 53.040000915527344
-            },
-            {
-                "word": "Mengen.",
-                "start": 53.040000915527344,
-                "end": 53.47999954223633
-            }
-        ],
-        "translationEn": "From toys to clothing to Christmas decorations, there's everything here in large quantities.",
+        "start": 48.08,
+        "end": 53.83,
+        "translationEn": "From toys to clothing to Christmas decorations, there's everything here in abundance.",
         "translationVi": "Từ đồ chơi, quần áo đến trang trí Giáng sinh, ở đây có tất cả mọi thứ và với số lượng lớn."
     },
     {
         "text": "Verschifft wird in alle Welt.",
-        "start": 54.21999923706055,
-        "end": 56.00999984741211,
-        "wordTimings": [
-            {
-                "word": "Verschifft",
-                "start": 54.29999923706055,
-                "end": 54.779998779296875
-            },
-            {
-                "word": "wird",
-                "start": 54.779998779296875,
-                "end": 54.939998626708984
-            },
-            {
-                "word": "in",
-                "start": 54.939998626708984,
-                "end": 55.099998474121094
-            },
-            {
-                "word": "alle",
-                "start": 55.099998474121094,
-                "end": 55.34000015258789
-            },
-            {
-                "word": "Welt.",
-                "start": 55.34000015258789,
-                "end": 55.65999984741211
-            }
-        ],
-        "translationEn": "Shipped all over the world.",
+        "start": 54.22,
+        "end": 55.51,
+        "translationEn": "Shipped worldwide.",
         "translationVi": "Hàng hóa được vận chuyển đi khắp thế giới."
     },
     {
         "text": "Ein Großkunde: die USA.",
-        "start": 55.98000137329102,
-        "end": 58.16999969482422,
-        "wordTimings": [
-            {
-                "word": "Ein",
-                "start": 56.060001373291016,
-                "end": 56.119998931884766
-            },
-            {
-                "word": "Großkunde:",
-                "start": 56.119998931884766,
-                "end": 56.7400016784668
-            },
-            {
-                "word": "die",
-                "start": 57.15999984741211,
-                "end": 57.279998779296875
-            },
-            {
-                "word": "USA.",
-                "start": 57.279998779296875,
-                "end": 57.81999969482422
-            }
-        ],
+        "start": 55.98,
+        "end": 58.17,
         "translationEn": "A major customer: the USA.",
         "translationVi": "Một khách hàng lớn: Hoa Kỳ."
     },
     {
         "text": "Fast 90% der der Santas, Lichterketten Ketten und Plastikbäume in Amerika stammen aus Ihu.",
-        "start": 58.800001068115236,
-        "end": 65.01000366210937,
-        "wordTimings": [
-            {
-                "word": "Fast",
-                "start": 58.880001068115234,
-                "end": 58.97999954223633
-            },
-            {
-                "word": "90%",
-                "start": 58.97999954223633,
-                "end": 59.47999954223633
-            },
-            {
-                "word": "der",
-                "start": 59.47999954223633,
-                "end": 59.86000061035156
-            },
-            {
-                "word": "der",
-                "start": 59.86000061035156,
-                "end": 60.13999938964844
-            },
-            {
-                "word": "Santas,",
-                "start": 60.13999938964844,
-                "end": 60.880001068115234
-            },
-            {
-                "word": "Lichterketten",
-                "start": 61.099998474121094,
-                "end": 61.400001525878906
-            },
-            {
-                "word": "Ketten",
-                "start": 61.459999084472656,
-                "end": 61.65999984741211
-            },
-            {
-                "word": "und",
-                "start": 61.65999984741211,
-                "end": 61.880001068115234
-            },
-            {
-                "word": "Plastikbäume",
-                "start": 61.880001068115234,
-                "end": 62.560001373291016
-            },
-            {
-                "word": "in",
-                "start": 62.560001373291016,
-                "end": 62.79999923706055
-            },
-            {
-                "word": "Amerika",
-                "start": 62.79999923706055,
-                "end": 63.400001525878906
-            },
-            {
-                "word": "stammen",
-                "start": 63.400001525878906,
-                "end": 63.939998626708984
-            },
-            {
-                "word": "aus",
-                "start": 63.939998626708984,
-                "end": 64.30000305175781
-            },
-            {
-                "word": "Ihu.",
-                "start": 64.30000305175781,
-                "end": 64.66000366210938
-            }
-        ],
+        "start": 58.8,
+        "end": 65.01,
         "translationEn": "Almost 90% of the Santas, string lights, and plastic trees in America come from Ihu.",
-        "translationVi": "Gần 90% các ông già Noel, đèn dây và cây thông nhựa ở Mỹ có nguồn gốc từ Ihu."
+        "translationVi": "Gần 90% các ông già Noel, dây đèn và cây thông nhựa ở Mỹ có nguồn gốc từ Ihu."
     },
     {
         "text": "Wir waren dort im Mai, man hat es vielleicht gesehen,",
         "start": 66.92,
-        "end": 69.18999633789062,
-        "wordTimings": [
-            {
-                "word": "Wir",
-                "start": 67,
-                "end": 67.22000122070312
-            },
-            {
-                "word": "waren",
-                "start": 67.22000122070312,
-                "end": 67.4000015258789
-            },
-            {
-                "word": "dort",
-                "start": 67.4000015258789,
-                "end": 67.66000366210938
-            },
-            {
-                "word": "im",
-                "start": 67.66000366210938,
-                "end": 68
-            },
-            {
-                "word": "Mai,",
-                "start": 68,
-                "end": 68
-            },
-            {
-                "word": "man",
-                "start": 68.04000091552734,
-                "end": 68.13999938964844
-            },
-            {
-                "word": "hat",
-                "start": 68.13999938964844,
-                "end": 68.26000213623047
-            },
-            {
-                "word": "es",
-                "start": 68.26000213623047,
-                "end": 68.36000061035156
-            },
-            {
-                "word": "vielleicht",
-                "start": 68.36000061035156,
-                "end": 68.76000213623047
-            },
-            {
-                "word": "gesehen,",
-                "start": 68.76000213623047,
-                "end": 68.83999633789062
-            }
-        ],
+        "end": 69.00,
         "translationEn": "We were there in May, you might have seen it.",
-        "translationVi": "Chúng tôi đã ở đó vào tháng Năm, có thể bạn đã thấy điều đó,"
+        "translationVi": "Chúng tôi đã ở đó vào tháng Năm, có thể bạn đã thấy điều đó."
     },
     {
         "text": "Da war noch T-Shirt-Wetter.",
-        "start": 68.9000033569336,
-        "end": 70.16999969482421,
-        "wordTimings": [
-            {
-                "word": "da",
-                "start": 68.9800033569336,
-                "end": 69
-            },
-            {
-                "word": "war",
-                "start": 69,
-                "end": 69.0999984741211
-            },
-            {
-                "word": "noch",
-                "start": 69.0999984741211,
-                "end": 69.27999877929688
-            },
-            {
-                "word": "T-Shirt-Wetter.",
-                "start": 69.27999877929688,
-                "end": 69.81999969482422
-            }
-        ],
+        "start": 68.9,
+        "end": 70.17,
         "translationEn": "It was still T-shirt weather.",
         "translationVi": "Lúc đó vẫn còn thời tiết mặc áo phông."
     },
     {
         "text": "Shirt Wetter Und wir haben dort Produktionsstätten besucht,",
-        "start": 69.73999969482422,
-        "end": 72.3699966430664,
-        "wordTimings": [
-            {
-                "word": "Shirt",
-                "start": 69.81999969482422,
-                "end": 69.81999969482422
-            },
-            {
-                "word": "Wetter",
-                "start": 69.81999969482422,
-                "end": 69.9000015258789
-            },
-            {
-                "word": "Und",
-                "start": 70.08000183105469,
-                "end": 70.13999938964844
-            },
-            {
-                "word": "wir",
-                "start": 70.13999938964844,
-                "end": 70.23999786376953
-            },
-            {
-                "word": "haben",
-                "start": 70.23999786376953,
-                "end": 70.36000061035156
-            },
-            {
-                "word": "dort",
-                "start": 70.36000061035156,
-                "end": 70.68000030517578
-            },
-            {
-                "word": "Produktionsstätten",
-                "start": 70.68000030517578,
-                "end": 71.62000274658203
-            },
-            {
-                "word": "besucht,",
-                "start": 71.62000274658203,
-                "end": 72.0199966430664
-            }
-        ],
+        "start": 69.74,
+        "end": 72.37,
         "translationEn": "Shirt weather and we visited production facilities there,",
         "translationVi": "Thời tiết lạnh và chúng tôi đã thăm các cơ sở sản xuất ở đó,"
     },
     {
         "text": "In denen Weihnachtsdeko, aber auch Halloween-Artikel Artikel hergestellt werden.",
-        "start": 72.5199984741211,
-        "end": 75.79000244140624,
-        "wordTimings": [
-            {
-                "word": "in",
-                "start": 72.5999984741211,
-                "end": 72.66000366210938
-            },
-            {
-                "word": "denen",
-                "start": 72.66000366210938,
-                "end": 72.77999877929688
-            },
-            {
-                "word": "Weihnachtsdeko,",
-                "start": 72.77999877929688,
-                "end": 73.5
-            },
-            {
-                "word": "aber",
-                "start": 73.5999984741211,
-                "end": 73.72000122070312
-            },
-            {
-                "word": "auch",
-                "start": 73.72000122070312,
-                "end": 73.86000061035156
-            },
-            {
-                "word": "Halloween-Artikel",
-                "start": 73.86000061035156,
-                "end": 74.22000122070312
-            },
-            {
-                "word": "Artikel",
-                "start": 74.22000122070312,
-                "end": 74.5199966430664
-            },
-            {
-                "word": "hergestellt",
-                "start": 74.5199966430664,
-                "end": 75.13999938964844
-            },
-            {
-                "word": "werden.",
-                "start": 75.13999938964844,
-                "end": 75.44000244140625
-            }
-        ],
+        "start": 72.52,
+        "end": 75.79,
         "translationEn": "In which Christmas decorations, but also Halloween items are produced.",
         "translationVi": "Trong đó có sản phẩm trang trí Giáng sinh, nhưng cũng có các mặt hàng Halloween."
     },
     {
         "text": "Das sind mir 2 Dinge sehr klar bewusst geworden.",
-        "start": 76.33999816894531,
-        "end": 79.57000122070312,
-        "wordTimings": [
-            {
-                "word": "Das",
-                "start": 76.41999816894531,
-                "end": 76.69999694824219
-            },
-            {
-                "word": "sind",
-                "start": 76.69999694824219,
-                "end": 76.81999969482422
-            },
-            {
-                "word": "mir",
-                "start": 76.81999969482422,
-                "end": 77.26000213623047
-            },
-            {
-                "word": "2",
-                "start": 77.26000213623047,
-                "end": 77.5199966430664
-            },
-            {
-                "word": "Dinge",
-                "start": 77.5199966430664,
-                "end": 77.69999694824219
-            },
-            {
-                "word": "sehr",
-                "start": 77.69999694824219,
-                "end": 78.19999694824219
-            },
-            {
-                "word": "klar",
-                "start": 78.19999694824219,
-                "end": 78.45999908447266
-            },
-            {
-                "word": "bewusst",
-                "start": 78.45999908447266,
-                "end": 78.80000305175781
-            },
-            {
-                "word": "geworden.",
-                "start": 78.80000305175781,
-                "end": 79.22000122070312
-            }
-        ],
+        "start": 76.34,
+        "end": 79.57,
         "translationEn": "Two things have become very clear to me.",
         "translationVi": "Tôi đã nhận ra rất rõ ràng 2 điều này."
     },
     {
         "text": "Wir sagen ja oft fast schon abfällig: 'Billigware made in China'.",
-        "start": 79.29999725341797,
-        "end": 82.97000274658203,
-        "wordTimings": [
-            {
-                "word": "Wir",
-                "start": 79.37999725341797,
-                "end": 79.5999984741211
-            },
-            {
-                "word": "sagen",
-                "start": 79.5999984741211,
-                "end": 79.73999786376953
-            },
-            {
-                "word": "ja",
-                "start": 79.73999786376953,
-                "end": 80.0999984741211
-            },
-            {
-                "word": "oft",
-                "start": 80.0999984741211,
-                "end": 80.16000366210938
-            },
-            {
-                "word": "fast",
-                "start": 80.22000122070312,
-                "end": 80.4000015258789
-            },
-            {
-                "word": "schon",
-                "start": 80.4000015258789,
-                "end": 80.80000305175781
-            },
-            {
-                "word": "abfällig:",
-                "start": 80.80000305175781,
-                "end": 81.16000366210938
-            },
-            {
-                "word": "'Billigware",
-                "start": 81.22000122070312,
-                "end": 81.83999633789062
-            },
-            {
-                "word": "made",
-                "start": 81.94000244140625,
-                "end": 82.13999938964844
-            },
-            {
-                "word": "in",
-                "start": 82.13999938964844,
-                "end": 82.33999633789062
-            },
-            {
-                "word": "China'.",
-                "start": 82.33999633789062,
-                "end": 82.62000274658203
-            }
-        ],
+        "start": 79.3,
+        "end": 82.77,
         "translationEn": "We often say almost disparagingly: 'Cheap goods made in China.'",
-        "translationVi": "Chúng ta thường nói một cách gần như khinh miệt: 'Hàng rẻ made in China'."
+        "translationVi": "Chúng ta thường nói một cách gần như khinh thường: 'Hàng rẻ tiền sản xuất tại Trung Quốc'."
     },
     {
         "text": "Aber was uns dabei gar nicht so klar ist,",
-        "start": 82.54000274658203,
-        "end": 85.2699981689453,
-        "wordTimings": [
-            {
-                "word": "Aber",
-                "start": 82.62000274658203,
-                "end": 82.9000015258789
-            },
-            {
-                "word": "was",
-                "start": 82.9000015258789,
-                "end": 83.4000015258789
-            },
-            {
-                "word": "uns",
-                "start": 83.4000015258789,
-                "end": 83.66000366210938
-            },
-            {
-                "word": "dabei",
-                "start": 83.66000366210938,
-                "end": 83.9000015258789
-            },
-            {
-                "word": "gar",
-                "start": 83.9000015258789,
-                "end": 84.13999938964844
-            },
-            {
-                "word": "nicht",
-                "start": 84.13999938964844,
-                "end": 84.13999938964844
-            },
-            {
-                "word": "so",
-                "start": 84.13999938964844,
-                "end": 84.54000091552734
-            },
-            {
-                "word": "klar",
-                "start": 84.54000091552734,
-                "end": 84.66000366210938
-            },
-            {
-                "word": "ist,",
-                "start": 84.66000366210938,
-                "end": 84.91999816894531
-            }
-        ],
+        "start": 82.54,
+        "end": 85.27,
         "translationEn": "But what we are not so clear about is that,",
         "translationVi": "Nhưng điều mà chúng ta không nhận ra rõ ràng là,"
     },
     {
         "text": "Ist, dass die in mühsamster Handarbeit hergestellt wird.",
-        "start": 85.50000183105469,
-        "end": 88.33000335693359,
-        "wordTimings": [
-            {
-                "word": "ist,",
-                "start": 85.58000183105469,
-                "end": 85.58000183105469
-            },
-            {
-                "word": "dass",
-                "start": 85.58000183105469,
-                "end": 85.63999938964844
-            },
-            {
-                "word": "die",
-                "start": 85.63999938964844,
-                "end": 85.83999633789062
-            },
-            {
-                "word": "in",
-                "start": 85.83999633789062,
-                "end": 86.04000091552734
-            },
-            {
-                "word": "mühsamster",
-                "start": 86.04000091552734,
-                "end": 86.62000274658203
-            },
-            {
-                "word": "Handarbeit",
-                "start": 86.62000274658203,
-                "end": 87.12000274658203
-            },
-            {
-                "word": "hergestellt",
-                "start": 87.12000274658203,
-                "end": 87.69999694824219
-            },
-            {
-                "word": "wird.",
-                "start": 87.69999694824219,
-                "end": 87.9800033569336
-            }
-        ],
-        "translationEn": "Is that it is made in the most laborious handwork.",
-        "translationVi": "Được sản xuất bằng tay một cách cực kỳ vất vả."
+        "start": 85.5,
+        "end": 88.33,
+        "translationEn": "Is that made in the most laborious manual work.",
+        "translationVi": "Đó là sản phẩm được sản xuất bằng tay một cách vất vả nhất."
     },
     {
         "text": "Oft von Frauen, die so 3-4 in Euro pro Stunde verdienen Bis genau diesen Produktionshallen das das Zollbebenkam: kam Anfang",
-        "start": 88.23999969482422,
-        "end": 99.33000335693359,
-        "wordTimings": [
-            {
-                "word": "Oft",
-                "start": 88.31999969482422,
-                "end": 88.45999908447266
-            },
-            {
-                "word": "von",
-                "start": 88.45999908447266,
-                "end": 88.77999877929688
-            },
-            {
-                "word": "Frauen,",
-                "start": 88.77999877929688,
-                "end": 89.12000274658203
-            },
-            {
-                "word": "die",
-                "start": 89.5999984741211,
-                "end": 89.68000030517578
-            },
-            {
-                "word": "so",
-                "start": 89.68000030517578,
-                "end": 90.12000274658203
-            },
-            {
-                "word": "3-4",
-                "start": 90.12000274658203,
-                "end": 90.33999633789062
-            },
-            {
-                "word": "in",
-                "start": 90.33999633789062,
-                "end": 90.66000366210938
-            },
-            {
-                "word": "Euro",
-                "start": 90.66000366210938,
-                "end": 91.05999755859375
-            },
-            {
-                "word": "pro",
-                "start": 91.05999755859375,
-                "end": 91.66000366210938
-            },
-            {
-                "word": "Stunde",
-                "start": 91.66000366210938,
-                "end": 91.86000061035156
-            },
-            {
-                "word": "verdienen",
-                "start": 91.86000061035156,
-                "end": 92.37999725341797
-            },
-            {
-                "word": "Bis",
-                "start": 92.63999938964844,
-                "end": 92.80000305175781
-            },
-            {
-                "word": "genau",
-                "start": 92.80000305175781,
-                "end": 93.41999816894531
-            },
-            {
-                "word": "diesen",
-                "start": 93.41999816894531,
-                "end": 93.72000122070312
-            },
-            {
-                "word": "Produktionshallen",
-                "start": 93.72000122070312,
-                "end": 94.63999938964844
-            },
-            {
-                "word": "das",
-                "start": 96.0199966430664,
-                "end": 96.30000305175781
-            },
-            {
-                "word": "das",
-                "start": 96.30000305175781,
-                "end": 96.77999877929688
-            },
-            {
-                "word": "Zollbebenkam:",
-                "start": 96.77999877929688,
-                "end": 97.26000213623047
-            },
-            {
-                "word": "kam",
-                "start": 97.26000213623047,
-                "end": 97.63999938964844
-            },
-            {
-                "word": "Anfang",
-                "start": 98.81999969482422,
-                "end": 98.9800033569336
-            }
-        ],
-        "translationEn": "Often by women who earn about 3-4 euros per hour. Until exactly these production halls that the customs office came to: came at the beginning.",
-        "translationVi": "Thường là từ những phụ nữ kiếm được khoảng 3-4 euro mỗi giờ. Đến chính những nhà máy sản xuất này, nơi đã xảy ra kiểm tra hải quan."
+        "start": 88.24,
+        "end": 99.33,
+        "translationEn": "Often from women who earn about 3-4 euros per hour. Until exactly these production halls that the customs office came to: came at the beginning.",
+        "translationVi": "Thường là những phụ nữ kiếm được khoảng 3-4 euro mỗi giờ. Đến chính những nhà máy sản xuất này, nơi mà hải quan đã đến: đã đến vào đầu."
     },
     {
         "text": "April verhängte US-Präsident Präsident Trump 145% Einfuhrzoll Einfuhrzoll auf Waren aus China.",
-        "start": 98.9000033569336,
-        "end": 105.18999633789062,
-        "wordTimings": [
-            {
-                "word": "April",
-                "start": 98.9800033569336,
-                "end": 99.44000244140625
-            },
-            {
-                "word": "verhängte",
-                "start": 99.44000244140625,
-                "end": 99.94000244140625
-            },
-            {
-                "word": "US-Präsident",
-                "start": 99.94000244140625,
-                "end": 100.5199966430664
-            },
-            {
-                "word": "Präsident",
-                "start": 100.5199966430664,
-                "end": 100.69999694824219
-            },
-            {
-                "word": "Trump",
-                "start": 100.69999694824219,
-                "end": 101.18000030517578
-            },
-            {
-                "word": "145%",
-                "start": 101.18000030517578,
-                "end": 102.45999908447266
-            },
-            {
-                "word": "Einfuhrzoll",
-                "start": 102.45999908447266,
-                "end": 102.86000061035156
-            },
-            {
-                "word": "Einfuhrzoll",
-                "start": 102.86000061035156,
-                "end": 103.69999694824219
-            },
-            {
-                "word": "auf",
-                "start": 103.69999694824219,
-                "end": 104.04000091552734
-            },
-            {
-                "word": "Waren",
-                "start": 104.04000091552734,
-                "end": 104.26000213623047
-            },
-            {
-                "word": "aus",
-                "start": 104.26000213623047,
-                "end": 104.5199966430664
-            },
-            {
-                "word": "China.",
-                "start": 104.5199966430664,
-                "end": 104.83999633789062
-            }
-        ],
+        "start": 98.9,
+        "end": 105.19,
         "translationEn": "In April, President Trump imposed a 145% import tariff on goods from China.",
         "translationVi": "Vào tháng Tư, Tổng thống Mỹ Trump đã áp đặt thuế nhập khẩu 145% đối với hàng hóa từ Trung Quốc."
     },
     {
         "text": "Der Handelsstreit hatte große Auswirkungen auf unser Geschäft.",
         "start": 106.42,
-        "end": 110.83000335693359,
-        "wordTimings": [
-            {
-                "word": "Der",
-                "start": 106.5,
-                "end": 107.26000213623047
-            },
-            {
-                "word": "Handelsstreit",
-                "start": 107.26000213623047,
-                "end": 107.94000244140625
-            },
-            {
-                "word": "hatte",
-                "start": 107.94000244140625,
-                "end": 108.13999938964844
-            },
-            {
-                "word": "große",
-                "start": 108.13999938964844,
-                "end": 108.5999984741211
-            },
-            {
-                "word": "Auswirkungen",
-                "start": 108.5999984741211,
-                "end": 109.16000366210938
-            },
-            {
-                "word": "auf",
-                "start": 109.16000366210938,
-                "end": 109.4000015258789
-            },
-            {
-                "word": "unser",
-                "start": 109.4000015258789,
-                "end": 109.68000030517578
-            },
-            {
-                "word": "Geschäft.",
-                "start": 109.68000030517578,
-                "end": 110.4800033569336
-            }
-        ],
+        "end": 110.83,
         "translationEn": "The trade dispute had a significant impact on our business.",
-        "translationVi": "Cuộc chiến thương mại đã có tác động lớn đến doanh nghiệp của chúng tôi."
+        "translationVi": "Cuộc tranh chấp thương mại đã có tác động lớn đến doanh nghiệp của chúng tôi."
     },
     {
         "text": "Seit dem 10. April wurden alle Bestellungen aus den USA plötzlich gestoppt.",
-        "start": 110.4000033569336,
-        "end": 115.1500030517578,
-        "wordTimings": [
-            {
-                "word": "Seit",
-                "start": 110.4800033569336,
-                "end": 110.9000015258789
-            },
-            {
-                "word": "dem",
-                "start": 110.9000015258789,
-                "end": 111.13999938964844
-            },
-            {
-                "word": "10.",
-                "start": 111.13999938964844,
-                "end": 111.36000061035156
-            },
-            {
-                "word": "April",
-                "start": 111.5199966430664,
-                "end": 111.80000305175781
-            },
-            {
-                "word": "wurden",
-                "start": 111.80000305175781,
-                "end": 112.4000015258789
-            },
-            {
-                "word": "alle",
-                "start": 112.4000015258789,
-                "end": 112.68000030517578
-            },
-            {
-                "word": "Bestellungen",
-                "start": 112.68000030517578,
-                "end": 113.0999984741211
-            },
-            {
-                "word": "aus",
-                "start": 113.0999984741211,
-                "end": 113.36000061035156
-            },
-            {
-                "word": "den",
-                "start": 113.36000061035156,
-                "end": 113.54000091552734
-            },
-            {
-                "word": "USA",
-                "start": 113.54000091552734,
-                "end": 113.91999816894531
-            },
-            {
-                "word": "plötzlich",
-                "start": 113.91999816894531,
-                "end": 114.5
-            },
-            {
-                "word": "gestoppt.",
-                "start": 114.5,
-                "end": 114.80000305175781
-            }
-        ],
+        "start": 110.4,
+        "end": 115.15,
         "translationEn": "Since April 10, all orders from the USA have suddenly been stopped.",
         "translationVi": "Kể từ ngày 10 tháng 4, tất cả các đơn hàng từ Mỹ đã bị dừng lại đột ngột."
     },
     {
         "text": "Die Lieferungen, die rausgehen sollten, blieben hier.",
-        "start": 115.28000061035156,
-        "end": 118.22999725341796,
-        "wordTimings": [
-            {
-                "word": "Die",
-                "start": 115.36000061035156,
-                "end": 115.4800033569336
-            },
-            {
-                "word": "Lieferungen,",
-                "start": 115.4800033569336,
-                "end": 115.86000061035156
-            },
-            {
-                "word": "die",
-                "start": 115.91999816894531,
-                "end": 116.04000091552734
-            },
-            {
-                "word": "rausgehen",
-                "start": 116.04000091552734,
-                "end": 116.45999908447266
-            },
-            {
-                "word": "sollten,",
-                "start": 116.45999908447266,
-                "end": 116.72000122070312
-            },
-            {
-                "word": "blieben",
-                "start": 117.22000122070312,
-                "end": 117.22000122070312
-            },
-            {
-                "word": "hier.",
-                "start": 117.22000122070312,
-                "end": 117.87999725341797
-            }
-        ],
+        "start": 115.28,
+        "end": 118.23,
         "translationEn": "The deliveries that were supposed to go out stayed here.",
-        "translationVi": "Các lô hàng dự kiến sẽ được gửi đi đã ở lại đây."
+        "translationVi": "Các lô hàng đáng lẽ phải đi đã ở lại đây."
     },
     {
         "text": "Die Produktion in unserer Fabrik stand einen halben Monat still, 20 Tage lang.",
-        "start": 117.83999816894531,
-        "end": 122.47000274658203,
-        "wordTimings": [
-            {
-                "word": "Die",
-                "start": 117.91999816894531,
-                "end": 118.05999755859375
-            },
-            {
-                "word": "Produktion",
-                "start": 118.05999755859375,
-                "end": 118.54000091552734
-            },
-            {
-                "word": "in",
-                "start": 118.54000091552734,
-                "end": 118.80000305175781
-            },
-            {
-                "word": "unserer",
-                "start": 118.80000305175781,
-                "end": 119.18000030517578
-            },
-            {
-                "word": "Fabrik",
-                "start": 119.18000030517578,
-                "end": 119.5999984741211
-            },
-            {
-                "word": "stand",
-                "start": 119.5999984741211,
-                "end": 120.0999984741211
-            },
-            {
-                "word": "einen",
-                "start": 120.0999984741211,
-                "end": 120.44000244140625
-            },
-            {
-                "word": "halben",
-                "start": 120.44000244140625,
-                "end": 120.69999694824219
-            },
-            {
-                "word": "Monat",
-                "start": 120.69999694824219,
-                "end": 121.04000091552734
-            },
-            {
-                "word": "still,",
-                "start": 121.04000091552734,
-                "end": 121.27999877929688
-            },
-            {
-                "word": "20",
-                "start": 121.44000244140625,
-                "end": 121.69999694824219
-            },
-            {
-                "word": "Tage",
-                "start": 121.69999694824219,
-                "end": 121.91999816894531
-            },
-            {
-                "word": "lang.",
-                "start": 121.91999816894531,
-                "end": 122.12000274658203
-            }
-        ],
-        "translationEn": "Production in our factory was at a standstill for half a month, for 20 days.",
-        "translationVi": "Sản xuất tại nhà máy của chúng tôi đã ngừng hoạt động trong nửa tháng, kéo dài 20 ngày."
+        "start": 117.84,
+        "end": 122.47,
+        "translationEn": "Production in our factory was halted for half a month, for 20 days.",
+        "translationVi": "Sản xuất trong nhà máy của chúng tôi đã ngừng hoạt động trong nửa tháng, kéo dài 20 ngày."
     },
     {
         "text": "Das ist das Zweite, was uns in Ihu ziemlich klar vor Augen geführt wurde.",
-        "start": 123.69999877929688,
-        "end": 127.57000122070312,
-        "wordTimings": [
-            {
-                "word": "Das",
-                "start": 123.77999877929688,
-                "end": 124.19999694824219
-            },
-            {
-                "word": "ist",
-                "start": 124.19999694824219,
-                "end": 124.30000305175781
-            },
-            {
-                "word": "das",
-                "start": 124.30000305175781,
-                "end": 124.54000091552734
-            },
-            {
-                "word": "Zweite,",
-                "start": 124.54000091552734,
-                "end": 124.86000061035156
-            },
-            {
-                "word": "was",
-                "start": 124.95999908447266,
-                "end": 125.08000183105469
-            },
-            {
-                "word": "uns",
-                "start": 125.08000183105469,
-                "end": 125.30000305175781
-            },
-            {
-                "word": "in",
-                "start": 125.30000305175781,
-                "end": 125.4000015258789
-            },
-            {
-                "word": "Ihu",
-                "start": 125.4000015258789,
-                "end": 125.68000030517578
-            },
-            {
-                "word": "ziemlich",
-                "start": 125.68000030517578,
-                "end": 126.22000122070312
-            },
-            {
-                "word": "klar",
-                "start": 126.22000122070312,
-                "end": 126.36000061035156
-            },
-            {
-                "word": "vor",
-                "start": 126.36000061035156,
-                "end": 126.5199966430664
-            },
-            {
-                "word": "Augen",
-                "start": 126.5199966430664,
-                "end": 126.69999694824219
-            },
-            {
-                "word": "geführt",
-                "start": 126.69999694824219,
-                "end": 127.05999755859375
-            },
-            {
-                "word": "wurde.",
-                "start": 127.05999755859375,
-                "end": 127.22000122070312
-            }
-        ],
+        "start": 123.7,
+        "end": 127.57,
         "translationEn": "This is the second thing that was made quite clear to us in Ihu.",
-        "translationVi": "Đó là điều thứ hai mà chúng tôi đã được chỉ ra khá rõ ràng ở Ihu."
+        "translationVi": "Đây là điều thứ hai mà chúng tôi đã được nhấn mạnh khá rõ ràng ở Ihu."
     },
     {
         "text": "Nämlich, wie verflochten diese Welt doch ist.",
-        "start": 127.25999633789063,
-        "end": 130.01000366210937,
-        "wordTimings": [
-            {
-                "word": "Nämlich,",
-                "start": 127.33999633789062,
-                "end": 127.5999984741211
-            },
-            {
-                "word": "wie",
-                "start": 127.87999725341797,
-                "end": 127.95999908447266
-            },
-            {
-                "word": "verflochten",
-                "start": 127.95999908447266,
-                "end": 128.55999755859375
-            },
-            {
-                "word": "diese",
-                "start": 128.55999755859375,
-                "end": 128.94000244140625
-            },
-            {
-                "word": "Welt",
-                "start": 128.94000244140625,
-                "end": 129.0800018310547
-            },
-            {
-                "word": "doch",
-                "start": 129.0800018310547,
-                "end": 129.55999755859375
-            },
-            {
-                "word": "ist.",
-                "start": 129.55999755859375,
-                "end": 129.66000366210938
-            }
-        ],
+        "start": 127.26,
+        "end": 130.01,
         "translationEn": "Namely, how intertwined this world is.",
-        "translationVi": "Thật vậy, thế giới này thật sự liên kết chặt chẽ với nhau."
+        "translationVi": "Thật vậy, thế giới này liên kết với nhau như thế nào."
     },
     {
         "text": "Und dass natürlich immer persönliche Schicksale dran wenn die Staatenlenker Lenker dieser Welt scheinbar nach Lust und Laune die Zollsätze",
-        "start": 129.8000048828125,
-        "end": 137.3899932861328,
-        "wordTimings": [
-            {
-                "word": "Und",
-                "start": 129.8800048828125,
-                "end": 130.1999969482422
-            },
-            {
-                "word": "dass",
-                "start": 130.1999969482422,
-                "end": 130.36000061035156
-            },
-            {
-                "word": "natürlich",
-                "start": 130.36000061035156,
-                "end": 130.72000122070312
-            },
-            {
-                "word": "immer",
-                "start": 130.72000122070312,
-                "end": 130.97999572753906
-            },
-            {
-                "word": "persönliche",
-                "start": 130.97999572753906,
-                "end": 131.5
-            },
-            {
-                "word": "Schicksale",
-                "start": 131.5,
-                "end": 132.02000427246094
-            },
-            {
-                "word": "dran",
-                "start": 132.02000427246094,
-                "end": 132.60000610351562
-            },
-            {
-                "word": "wenn",
-                "start": 132.75999450683594,
-                "end": 132.75999450683594
-            },
-            {
-                "word": "die",
-                "start": 132.75999450683594,
-                "end": 133.25999450683594
-            },
-            {
-                "word": "Staatenlenker",
-                "start": 133.25999450683594,
-                "end": 133.75999450683594
-            },
-            {
-                "word": "Lenker",
-                "start": 133.75999450683594,
-                "end": 134.0800018310547
-            },
-            {
-                "word": "dieser",
-                "start": 134.0800018310547,
-                "end": 134.47999572753906
-            },
-            {
-                "word": "Welt",
-                "start": 134.47999572753906,
-                "end": 134.75999450683594
-            },
-            {
-                "word": "scheinbar",
-                "start": 134.75999450683594,
-                "end": 135.4199981689453
-            },
-            {
-                "word": "nach",
-                "start": 135.4199981689453,
-                "end": 135.60000610351562
-            },
-            {
-                "word": "Lust",
-                "start": 135.60000610351562,
-                "end": 135.8000030517578
-            },
-            {
-                "word": "und",
-                "start": 135.8000030517578,
-                "end": 136
-            },
-            {
-                "word": "Laune",
-                "start": 136,
-                "end": 136.22000122070312
-            },
-            {
-                "word": "die",
-                "start": 136.22000122070312,
-                "end": 136.52000427246094
-            },
-            {
-                "word": "Zollsätze",
-                "start": 136.52000427246094,
-                "end": 137.0399932861328
-            }
-        ],
+        "start": 129.8,
+        "end": 137.39,
         "translationEn": "And that, of course, always involves personal fates when the leaders of this world seemingly adjust the customs rates at their whim.",
         "translationVi": "Và tất nhiên luôn có những số phận cá nhân liên quan khi các nhà lãnh đạo quốc gia trên thế giới dường như tùy ý điều chỉnh mức thuế quan."
     },
     {
         "text": "Nach oben schrauben.",
-        "start": 136.9599932861328,
-        "end": 138.54999694824218,
-        "wordTimings": [
-            {
-                "word": "nach",
-                "start": 137.0399932861328,
-                "end": 137.52000427246094
-            },
-            {
-                "word": "oben",
-                "start": 137.52000427246094,
-                "end": 137.52000427246094
-            },
-            {
-                "word": "schrauben.",
-                "start": 137.52000427246094,
-                "end": 138.1999969482422
-            }
-        ],
+        "start": 136.96,
+        "end": 138.55,
         "translationEn": "Screw up.",
-        "translationVi": "Vặn lên."
+        "translationVi": "Vặn lên trên."
     },
     {
         "text": "In China selbst wird Weihnachten gar nicht groß gefeiert,",
-        "start": 138.11999694824217,
-        "end": 141.81000671386718,
-        "wordTimings": [
-            {
-                "word": "In",
-                "start": 138.1999969482422,
-                "end": 138.8000030517578
-            },
-            {
-                "word": "China",
-                "start": 138.8000030517578,
-                "end": 139.17999267578125
-            },
-            {
-                "word": "selbst",
-                "start": 139.17999267578125,
-                "end": 139.72000122070312
-            },
-            {
-                "word": "wird",
-                "start": 139.72000122070312,
-                "end": 139.86000061035156
-            },
-            {
-                "word": "Weihnachten",
-                "start": 139.86000061035156,
-                "end": 140.3800048828125
-            },
-            {
-                "word": "gar",
-                "start": 140.3800048828125,
-                "end": 140.66000366210938
-            },
-            {
-                "word": "nicht",
-                "start": 140.66000366210938,
-                "end": 140.6999969482422
-            },
-            {
-                "word": "groß",
-                "start": 140.6999969482422,
-                "end": 141.1999969482422
-            },
-            {
-                "word": "gefeiert,",
-                "start": 141.1999969482422,
-                "end": 141.4600067138672
-            }
-        ],
-        "translationEn": "In China, Christmas is not celebrated on a large scale.",
-        "translationVi": "Ở Trung Quốc, Giáng Sinh không được tổ chức lớn."
+        "start": 138.12,
+        "end": 141.81,
+        "translationEn": "In China, Christmas is not celebrated on a large scale at all.",
+        "translationVi": "Ở Trung Quốc, Giáng sinh không được tổ chức lớn."
     },
     {
         "text": "Denn das chinesische Neujahrsfest ist hier das große Familienfest.",
-        "start": 141.50000183105467,
-        "end": 145.24999389648437,
-        "wordTimings": [
-            {
-                "word": "denn",
-                "start": 141.5800018310547,
-                "end": 141.72000122070312
-            },
-            {
-                "word": "das",
-                "start": 141.72000122070312,
-                "end": 141.89999389648438
-            },
-            {
-                "word": "chinesische",
-                "start": 141.89999389648438,
-                "end": 142.3000030517578
-            },
-            {
-                "word": "Neujahrsfest",
-                "start": 142.3000030517578,
-                "end": 142.9600067138672
-            },
-            {
-                "word": "ist",
-                "start": 142.9600067138672,
-                "end": 143.24000549316406
-            },
-            {
-                "word": "hier",
-                "start": 143.24000549316406,
-                "end": 143.47999572753906
-            },
-            {
-                "word": "das",
-                "start": 143.47999572753906,
-                "end": 143.72000122070312
-            },
-            {
-                "word": "große",
-                "start": 143.72000122070312,
-                "end": 144.0800018310547
-            },
-            {
-                "word": "Familienfest.",
-                "start": 144.0800018310547,
-                "end": 144.89999389648438
-            }
-        ],
+        "start": 141.5,
+        "end": 145.25,
         "translationEn": "Because the Chinese New Year is the big family celebration here.",
         "translationVi": "Bởi vì Tết Nguyên Đán ở đây là lễ hội gia đình lớn."
     },
     {
         "text": "Viele wünschen sich nichts Sehnlicheres als harmonische Festtage und ein friedliches 2026.",
-        "start": 145.55999938964842,
-        "end": 150.54999694824218,
-        "wordTimings": [
-            {
-                "word": "Viele",
-                "start": 145.63999938964844,
-                "end": 145.63999938964844
-            },
-            {
-                "word": "wünschen",
-                "start": 145.63999938964844,
-                "end": 145.9199981689453
-            },
-            {
-                "word": "sich",
-                "start": 145.9199981689453,
-                "end": 146.17999267578125
-            },
-            {
-                "word": "nichts",
-                "start": 146.17999267578125,
-                "end": 146.60000610351562
-            },
-            {
-                "word": "Sehnlicheres",
-                "start": 146.60000610351562,
-                "end": 147.39999389648438
-            },
-            {
-                "word": "als",
-                "start": 147.39999389648438,
-                "end": 147.74000549316406
-            },
-            {
-                "word": "harmonische",
-                "start": 147.74000549316406,
-                "end": 147.97999572753906
-            },
-            {
-                "word": "Festtage",
-                "start": 147.97999572753906,
-                "end": 148.60000610351562
-            },
-            {
-                "word": "und",
-                "start": 148.60000610351562,
-                "end": 148.9199981689453
-            },
-            {
-                "word": "ein",
-                "start": 148.9199981689453,
-                "end": 149.17999267578125
-            },
-            {
-                "word": "friedliches",
-                "start": 149.17999267578125,
-                "end": 149.55999755859375
-            },
-            {
-                "word": "2026.",
-                "start": 149.55999755859375,
-                "end": 150.1999969482422
-            }
-        ],
+        "start": 145.56,
+        "end": 150.55,
         "translationEn": "Many wish for nothing more than harmonious holidays and a peaceful 2026.",
         "translationVi": "Nhiều người mong muốn không gì hơn là những ngày lễ hòa hợp và một năm 2026 bình yên."
     },
     {
         "text": "Und das wünschen wir Ihnen auch von ganzem Herzen,",
-        "start": 151.50000183105467,
-        "end": 153.90999755859374,
-        "wordTimings": [
-            {
-                "word": "Und",
-                "start": 151.5800018310547,
-                "end": 151.72000122070312
-            },
-            {
-                "word": "das",
-                "start": 151.72000122070312,
-                "end": 151.89999389648438
-            },
-            {
-                "word": "wünschen",
-                "start": 151.89999389648438,
-                "end": 152.10000610351562
-            },
-            {
-                "word": "wir",
-                "start": 152.10000610351562,
-                "end": 152.3800048828125
-            },
-            {
-                "word": "Ihnen",
-                "start": 152.3800048828125,
-                "end": 152.4600067138672
-            },
-            {
-                "word": "auch",
-                "start": 152.4600067138672,
-                "end": 152.74000549316406
-            },
-            {
-                "word": "von",
-                "start": 152.74000549316406,
-                "end": 152.83999633789062
-            },
-            {
-                "word": "ganzem",
-                "start": 152.83999633789062,
-                "end": 153.25999450683594
-            },
-            {
-                "word": "Herzen,",
-                "start": 153.25999450683594,
-                "end": 153.55999755859375
-            }
-        ],
+        "start": 151.5,
+        "end": 153.91,
         "translationEn": "And we wish you that from the bottom of our hearts as well,",
-        "translationVi": "Và chúng tôi cũng chúc bạn điều đó từ đáy lòng."
+        "translationVi": "Và chúng tôi cũng chúc bạn điều đó từ tận đáy lòng,"
     },
     {
         "text": "Vom Gesamtteam ZDF Peking und Tokio: Frohe Weihnachten.",
-        "start": 153.47999755859374,
+        "start": 153.48,
         "end": 157.85,
-        "wordTimings": [
-            {
-                "word": "vom",
-                "start": 153.55999755859375,
-                "end": 153.9199981689453
-            },
-            {
-                "word": "Gesamtteam",
-                "start": 153.9199981689453,
-                "end": 154.83999633789062
-            },
-            {
-                "word": "ZDF",
-                "start": 154.83999633789062,
-                "end": 155.4199981689453
-            },
-            {
-                "word": "Peking",
-                "start": 155.4199981689453,
-                "end": 155.67999267578125
-            },
-            {
-                "word": "und",
-                "start": 155.67999267578125,
-                "end": 155.89999389648438
-            },
-            {
-                "word": "Tokio:",
-                "start": 155.89999389648438,
-                "end": 156.25999450683594
-            },
-            {
-                "word": "Frohe",
-                "start": 156.8000030517578,
-                "end": 156.97999572753906
-            },
-            {
-                "word": "Weihnachten.",
-                "start": 156.97999572753906,
-                "end": 157.5
-            }
-        ],
         "translationEn": "From the entire ZDF team in Beijing and Tokyo: Merry Christmas.",
-        "translationVi": "Từ toàn thể đội ngũ ZDF Bắc Kinh và Tokyo: Chúc mừng Giáng Sinh."
+        "translationVi": "Từ toàn thể đội ngũ ZDF Bắc Kinh và Tokyo: Chúc mừng Giáng sinh."
     },
     {
         "text": "Der Auslandsjournal Adventskalender: Hinter jedem Türchen eine Geschichte.",
-        "start": 160.5399951171875,
-        "end": 166.95000610351562,
-        "wordTimings": [
-            {
-                "word": "Der",
-                "start": 160.6199951171875,
-                "end": 161.36000061035156
-            },
-            {
-                "word": "Auslandsjournal",
-                "start": 161.36000061035156,
-                "end": 162.10000610351562
-            },
-            {
-                "word": "Adventskalender:",
-                "start": 162.10000610351562,
-                "end": 163.5800018310547
-            },
-            {
-                "word": "Hinter",
-                "start": 164.63999938964844,
-                "end": 164.63999938964844
-            },
-            {
-                "word": "jedem",
-                "start": 164.63999938964844,
-                "end": 165.05999755859375
-            },
-            {
-                "word": "Türchen",
-                "start": 165.05999755859375,
-                "end": 165.60000610351562
-            },
-            {
-                "word": "eine",
-                "start": 165.60000610351562,
-                "end": 166.0800018310547
-            },
-            {
-                "word": "Geschichte.",
-                "start": 166.0800018310547,
-                "end": 166.60000610351562
-            }
-        ],
-        "translationEn": "The Foreign Journal Advent Calendar: A story behind each door.",
-        "translationVi": "Lịch Giáng sinh của báo chí nước ngoài: Mỗi cánh cửa là một câu chuyện."
+        "start": 160.54,
+        "end": 166.95,
+        "translationEn": "The Foreign Journal Advent Calendar: Behind each door a story.",
+        "translationVi": "Lịch Giáng Sinh của Tạp chí Quốc tế: Đằng sau mỗi cánh cửa là một câu chuyện."
     },
     {
         "text": "Untertitel der Amara.org org Community.",
-        "start": 170.78000061035155,
-        "end": 171.40999755859374,
-        "wordTimings": [
-            {
-                "word": "Untertitel",
-                "start": 170.86000061035156,
-                "end": 170.97999572753906
-            },
-            {
-                "word": "der",
-                "start": 170.97999572753906,
-                "end": 170.97999572753906
-            },
-            {
-                "word": "Amara.org",
-                "start": 170.97999572753906,
-                "end": 170.97999572753906
-            },
-            {
-                "word": "org",
-                "start": 170.97999572753906,
-                "end": 171
-            },
-            {
-                "word": "Community.",
-                "start": 171,
-                "end": 171.05999755859375
-            }
-        ],
+        "start": 170.78,
+        "end": 171.41,
         "translationEn": "Subtitles of the Amara.org organization community.",
         "translationVi": "Phụ đề của cộng đồng Amara.org."
     }
