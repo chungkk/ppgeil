@@ -18,9 +18,7 @@ const DictationHeader = ({
   playbackSpeed,
   onSpeedChange,
   showTranslation,
-  onToggleTranslation,
-  isShadowingMode = false,
-  onToggleShadowingMode
+  onToggleTranslation
 }) => {
   const { t } = useTranslation();
 
@@ -37,33 +35,6 @@ const DictationHeader = ({
   if (isMobile) {
     return (
       <div className={styles.dictationHeaderMobile}>
-        {/* Left: Shadowing/Dictation toggle */}
-        {onToggleShadowingMode && (
-          <button 
-            className={`${styles.modeToggleMobile} ${isShadowingMode ? styles.modeToggleMobileActive : ''}`}
-            onClick={onToggleShadowingMode}
-            title={isShadowingMode ? 'Switch to Dictation' : 'Switch to Shadowing'}
-          >
-            {isShadowingMode ? (
-              <>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                  <circle cx="12" cy="12" r="3"/>
-                </svg>
-                <span>Shadow</span>
-              </>
-            ) : (
-              <>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
-                  <line x1="1" y1="1" x2="23" y2="23"/>
-                </svg>
-                <span>Diktat</span>
-              </>
-            )}
-          </button>
-        )}
-
         {/* Center: Sentence counter */}
         <div className={styles.headerCenter}>
           <span className={styles.sentenceNumber}>#{currentSentenceIndex + 1}</span>
@@ -71,16 +42,19 @@ const DictationHeader = ({
           <span className={styles.sentenceTotal}>{totalSentences}</span>
         </div>
 
-        {/* Right: Speed button */}
-        {onSpeedChange && (
-          <button 
-            className={styles.speedButtonMobile}
-            onClick={handleSpeedClick}
-            title="Playback speed"
-          >
-            {playbackSpeed || 1}x
-          </button>
-        )}
+        {/* Right: Controls */}
+        <div className={styles.headerRightMobile}>
+          {/* Speed button */}
+          {onSpeedChange && (
+            <button 
+              className={styles.speedButtonMobile}
+              onClick={handleSpeedClick}
+              title="Playback speed"
+            >
+              {playbackSpeed || 1}x
+            </button>
+          )}
+        </div>
       </div>
     );
   }
@@ -89,7 +63,7 @@ const DictationHeader = ({
   return (
     <div className={styles.dictationHeader}>
       <h3 className={styles.dictationHeaderTitle}>
-        {isShadowingMode ? 'Shadowing' : t('lesson.ui.dictation')}
+        {t('lesson.ui.dictation')}
       </h3>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         {/* Translation Toggle - Desktop Only */}

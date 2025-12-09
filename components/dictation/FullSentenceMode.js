@@ -1,17 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import dynamic from 'next/dynamic';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import fullSentenceStyles from '../../styles/dictation/dictationFullSentence.module.css';
 import inputStyles from '../../styles/dictation/dictationInput.module.css';
 
 // Merge styles - component styles override layout styles
 const styles = { ...layoutStyles, ...inputStyles, ...fullSentenceStyles };
-
-const ShadowingVoiceRecorder = dynamic(() => import('../ShadowingVoiceRecorder'), {
-  ssr: false,
-  loading: () => <div style={{ width: '40px', height: '40px', background: '#f0f0f0', borderRadius: '50%' }}></div>
-});
 
 /**
  * Full Sentence Mode Component
@@ -122,18 +116,6 @@ const FullSentenceMode = ({
             disabled={isCompleted}
             rows={3}
           />
-          {!isCompleted && (
-            <div className={styles.dictationVoiceButton}>
-              <ShadowingVoiceRecorder
-                onTranscript={(text) => {
-                  onInputChange(sentenceIndex, text);
-                  onCalculatePartialReveals(sentenceIndex, text, sentence.text);
-                }}
-                onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
-                language="de-DE"
-              />
-            </div>
-          )}
         </div>
       )}
 

@@ -42,17 +42,6 @@ function generateSiteMap(lessons) {
       return `
   <!-- Lesson: ${lesson.title || lesson.id} -->
   <url>
-    <loc>${SITE_URL}/shadowing/${lesson.id}</loc>
-    <lastmod>${new Date(lessonLastMod).toISOString()}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    ${lesson.thumbnail ? `
-    <image:image>
-      <image:loc>${lesson.thumbnail}</image:loc>
-      <image:title>${lesson.title || 'PapaGeil - Deutsch Lernen Lektion'}</image:title>
-    </image:image>` : ''}
-  </url>
-  <url>
     <loc>${SITE_URL}/dictation/${lesson.id}</loc>
     <lastmod>${new Date(lessonLastMod).toISOString()}</lastmod>
     <changefreq>weekly</changefreq>

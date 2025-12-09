@@ -30,13 +30,6 @@ const ModeSelectionPopup = ({ lesson, onClose, onSelectMode }) => {
       description: t('modeSelectionPopup.dictation.description'),
       studyTime: lesson.dictationStudyTime || 0
     },
-    {
-      id: 'shadowing',
-      name: t('modeSelectionPopup.shadowing.name'),
-      icon: '🗣️',
-      description: t('modeSelectionPopup.shadowing.description'),
-      studyTime: lesson.shadowingStudyTime || 0
-    },
   ];
 
   const handleModeClick = (mode) => {

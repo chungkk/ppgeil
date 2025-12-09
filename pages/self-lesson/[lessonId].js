@@ -18,10 +18,7 @@ import {
   DictationSkeleton
 } from '../../components/dictation';
 
-const ShadowingVoiceRecorder = dynamic(() => import('../../components/ShadowingVoiceRecorder'), {
-  ssr: false,
-  loading: () => <div style={{ width: '40px', height: '40px', background: '#f0f0f0', borderRadius: '50%' }}></div>
-});
+
 
 // Hooks and utilities
 import { useLessonData } from '../../lib/hooks/useLessonData';
@@ -3339,26 +3336,7 @@ const DictationPageContent = () => {
                                   rows={3}
                                   style={{ paddingRight: '50px' }}
                                 />
-                                {!isCompleted && (
-                                  <div style={{
-                                    position: 'absolute',
-                                    bottom: '8px',
-                                    right: '8px',
-                                    zIndex: 1
-                                  }}>
-                                    <ShadowingVoiceRecorder
-                                      onTranscript={(text) => {
-                                        setFullSentenceInputs(prev => ({
-                                          ...prev,
-                                          [originalIndex]: text
-                                        }));
-                                        calculatePartialReveals(originalIndex, text, sentence.text);
-                                      }}
-                                      onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
-                                      language="de-DE"
-                                    />
-                                  </div>
-                                )}
+
                               </div>
 
                               {isActive && !isCompleted && (
@@ -3672,23 +3650,7 @@ const DictationPageContent = () => {
                           disabled={completedSentences.includes(currentSentenceIndex)}
                           rows={3}
                         />
-                        {!completedSentences.includes(currentSentenceIndex) && (
-                          <div className={styles.dictationVoiceButton}>
-                            <ShadowingVoiceRecorder
-                              onTranscript={(text) => {
-                                setFullSentenceInputs(prev => ({
-                                  ...prev,
-                                  [currentSentenceIndex]: text
-                                }));
-                                if (transcriptData[currentSentenceIndex]) {
-                                  calculatePartialReveals(currentSentenceIndex, text, transcriptData[currentSentenceIndex].text);
-                                }
-                              }}
-                              onAudioRecorded={(audioBlob) => console.log('Audio recorded:', audioBlob)}
-                              language="de-DE"
-                            />
-                          </div>
-                        )}
+
                       </div>
 
                       <div className={styles.dictationActions}>

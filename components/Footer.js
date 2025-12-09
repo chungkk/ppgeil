@@ -82,9 +82,6 @@ const Footer = () => {
         <div className={styles.footerSection}>
           <h4 className={styles.footerSectionTitle}>{t('footer.sections.features')}</h4>
           <div className={styles.footerLinks}>
-            <Link href="/?mode=shadowing" className={styles.footerLink}>
-              {t('footer.links.shadowing')}
-            </Link>
             <Link href="/?mode=dictation" className={styles.footerLink}>
               {t('footer.links.dictation')}
             </Link>

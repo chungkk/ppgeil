@@ -1,14 +1,8 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import fullSentenceStyles from '../../styles/dictation/dictationFullSentence.module.css';
 
 const styles = { ...layoutStyles, ...fullSentenceStyles };
-
-const ShadowingVoiceRecorder = dynamic(() => import('../ShadowingVoiceRecorder'), {
-  ssr: false,
-  loading: () => <div style={{ width: '40px', height: '40px', background: '#f0f0f0', borderRadius: '50%' }}></div>
-});
 
 /**
  * Desktop Dictation Area Component
@@ -29,29 +23,14 @@ const DictationDesktopArea = ({
   onSubmit,
   onHintWordClick,
   onCalculatePartialReveals,
-  renderCompletedSentenceWithWordBoxes,
-  isShadowingMode = false
+  renderCompletedSentenceWithWordBoxes
 }) => {
   const currentSentence = transcriptData[currentSentenceIndex];
   const isCompleted = completedSentences.includes(currentSentenceIndex);
 
   if (!currentSentence) return null;
 
-  // Render full text (for shadowing mode or completed sentences)
-  const renderFullText = () => {
-    return currentSentence.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => (
-      <span key={idx} style={{ marginRight: '6px', whiteSpace: 'nowrap', display: 'inline-block' }}>
-        {word}
-      </span>
-    ));
-  };
-
   const renderHintWords = () => {
-    // In shadowing mode, show all words visible
-    if (isShadowingMode) {
-      return renderFullText();
-    }
-
     return currentSentence.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => {
       const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
 
@@ -93,12 +72,7 @@ const DictationDesktopArea = ({
       {/* Combined Display + Translation Box */}
       <div className={styles.dictationBox}>
         <div className={styles.fullSentenceDisplay}>
-          {isShadowingMode ? (
-            // Shadowing mode: show full text
-            <div className={styles.hintSentenceText} data-sentence-index={currentSentenceIndex}>
-              {renderFullText()}
-            </div>
-          ) : isCompleted ? (
+          {isCompleted ? (
             <div 
               className={styles.dictationInputArea}
               dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(currentSentence.text) }}
@@ -122,52 +96,35 @@ const DictationDesktopArea = ({
         )}
       </div>
 
-      {/* Hide input and check button in shadowing mode */}
-      {!isShadowingMode && (
-        <>
-          <div className={styles.textareaWithVoice}>
-            <textarea
-              className={styles.fullSentenceInput}
-              placeholder="Nhập toàn bộ câu..."
-              value={fullSentenceInputs[currentSentenceIndex] || ''}
-              onChange={(e) => {
-                onInputChange(currentSentenceIndex, e.target.value);
-                onCalculatePartialReveals(currentSentenceIndex, e.target.value, currentSentence.text);
-              }}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && !e.shiftKey) {
-                  e.preventDefault();
-                  onSubmit(currentSentenceIndex);
-                }
-              }}
-              disabled={isCompleted}
-              rows={3}
-            />
-            {!isCompleted && (
-              <div className={styles.dictationVoiceButton}>
-                <ShadowingVoiceRecorder
-                  onTranscript={(text) => {
-                    onInputChange(currentSentenceIndex, text);
-                    onCalculatePartialReveals(currentSentenceIndex, text, currentSentence.text);
-                  }}
-                  onAudioRecorded={() => {}}
-                  language="de-DE"
-                />
-              </div>
-            )}
-          </div>
+      <div className={styles.textareaWithVoice}>
+        <textarea
+          className={styles.fullSentenceInput}
+          placeholder="Nhập toàn bộ câu..."
+          value={fullSentenceInputs[currentSentenceIndex] || ''}
+          onChange={(e) => {
+            onInputChange(currentSentenceIndex, e.target.value);
+            onCalculatePartialReveals(currentSentenceIndex, e.target.value, currentSentence.text);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+              e.preventDefault();
+              onSubmit(currentSentenceIndex);
+            }
+          }}
+          disabled={isCompleted}
+          rows={3}
+        />
+      </div>
 
-          <div className={styles.dictationActions}>
-            <button
-              className={styles.checkButton}
-              onClick={() => onSubmit(currentSentenceIndex)}
-              disabled={isCompleted}
-            >
-              Kiểm tra
-            </button>
-          </div>
-        </>
-      )}
+      <div className={styles.dictationActions}>
+        <button
+          className={styles.checkButton}
+          onClick={() => onSubmit(currentSentenceIndex)}
+          disabled={isCompleted}
+        >
+          Kiểm tra
+        </button>
+      </div>
     </div>
   );
 };
