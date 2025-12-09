@@ -202,32 +202,10 @@
   transform: scale(1.01);
 }
 
-.transcriptItem.incomplete {
-  position: relative;
-}
 
-.transcriptItem.incomplete::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--accent-green);
-  border-radius: 0 3px 3px 0;
-  opacity: 0.6;
-}
 
 .transcriptItemNumber {
-  position: absolute;
-  top: var(--spacing-sm);
-  left: var(--spacing-sm);
-  font-size: 11px;
-  color: var(--text-muted);
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  display: none; /* Ẩn số thứ tự câu */
 }
 
 .completedCheck {
@@ -253,7 +231,6 @@
   color: var(--text-primary);
   line-height: 1.6;
   margin-bottom: var(--spacing-xs);
-  padding-left: 28px;
 }
 
 .transcriptItemTranslation {
@@ -261,14 +238,12 @@
   color: var(--text-secondary);
   line-height: 1.5;
   font-style: italic;
-  padding-left: 28px;
 }
 
 .transcriptItemActions {
   display: flex;
   gap: var(--spacing-xs);
   margin-top: var(--spacing-sm);
-  padding-left: 28px;
 }
 
 .transcriptActionBtn {
@@ -358,7 +333,6 @@
 
   .rightSection.showOnMobile .transcriptItemText {
     font-size: 15px;
-    padding-left: 24px;
   }
 }
 
