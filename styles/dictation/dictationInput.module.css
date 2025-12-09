@@ -581,3 +581,32 @@
   transform: scale(0.95);
   background: rgba(102, 126, 234, 0.3);
 }
+
+/* Translation toggle button mobile */
+.translationToggleMobile {
+  width: 36px;
+  height: 32px;
+  border-radius: 16px;
+  background: rgba(100, 116, 139, 0.2);
+  border: 1.5px solid rgba(100, 116, 139, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.translationToggleMobile:active {
+  transform: scale(0.95);
+}
+
+/* Active state - translation is ON */
+.translationToggleActive {
+  background: rgba(59, 130, 246, 0.25);
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #60a5fa;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
+}
