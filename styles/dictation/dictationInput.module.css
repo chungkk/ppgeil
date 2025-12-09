@@ -456,3 +456,128 @@
   color: var(--text-secondary);
   white-space: nowrap;
 }
+
+/* ============================================
+   UNIFIED MOBILE HEADER
+   Fixed header for both dictation and shadowing modes
+   Only the content below changes when switching modes
+   ============================================ */
+
+.unifiedMobileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  min-height: 44px;
+  background: rgba(20, 20, 30, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(102, 126, 234, 0.15);
+  border-radius: 12px 12px 0 0;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Mode Toggle Button - Pill style with label */
+.unifiedMobileHeader .modeToggleButton {
+  width: auto;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  color: #a5b4fc;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.unifiedMobileHeader .modeToggleButton:active {
+  transform: scale(0.95);
+}
+
+/* Active state (shadowing mode) */
+.unifiedMobileHeader .modeToggleActive {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.2) 100%);
+  border-color: rgba(16, 185, 129, 0.5);
+  color: #34d399;
+  box-shadow: 0 2px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* Mode label text */
+.modeLabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Center section for sentence counter */
+.headerCenter {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.sentenceNumber {
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sentenceDivider {
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 1px;
+}
+
+.sentenceTotal {
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Right section for mobile header */
+.headerRightMobile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Speed button mobile - compact pill style */
+.speedButtonMobile {
+  background: rgba(102, 126, 234, 0.2);
+  border: 1.5px solid rgba(102, 126, 234, 0.4);
+  color: #a5b4fc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 44px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speedButtonMobile:active {
+  transform: scale(0.95);
+  background: rgba(102, 126, 234, 0.3);
+}

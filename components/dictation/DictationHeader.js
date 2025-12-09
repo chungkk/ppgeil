@@ -9,6 +9,10 @@ const styles = { ...layoutStyles, ...inputStyles };
 /**
  * Dictation Header Component (Simplified - Full Sentence Mode Only)
  * Displays title and sentence counter with progress
+ * 
+ * Mobile: Unified header for both dictation and shadowing modes
+ * - Fixed header with mode toggle
+ * - Only content below changes when switching modes
  */
 const DictationHeader = ({
   isMobile,
@@ -35,8 +39,9 @@ const DictationHeader = ({
   const progressPercent = totalSentences > 0 ? Math.round((completedCount / totalSentences) * 100) : 0;
 
   if (isMobile) {
+    // Unified mobile header - same for both modes
     return (
-      <div className={styles.dictationHeaderMobile}>
+      <div className={styles.unifiedMobileHeader}>
         {/* Left: Learning mode toggle */}
         <div className={styles.headerLeftMobile}>
           {onToggleLearningMode && (
@@ -46,6 +51,9 @@ const DictationHeader = ({
               title={learningMode === 'dictation' ? 'Chuyển sang Shadowing' : 'Chuyển sang Dictation'}
             >
               {learningMode === 'dictation' ? '📝' : '👀'}
+              <span className={styles.modeLabel}>
+                {learningMode === 'dictation' ? 'Diktat' : 'Shadow'}
+              </span>
             </button>
           )}
         </div>
@@ -59,6 +67,16 @@ const DictationHeader = ({
 
         {/* Right: Controls */}
         <div className={styles.headerRightMobile}>
+          {/* Translation toggle */}
+          {onToggleTranslation && (
+            <button 
+              className={`${styles.translationToggleMobile} ${showTranslation ? styles.translationToggleActive : ''}`}
+              onClick={onToggleTranslation}
+              title={showTranslation ? 'Ẩn dịch' : 'Hiện dịch'}
+            >
+              🌐
+            </button>
+          )}
           {/* Speed button */}
           {onSpeedChange && (
             <button 

@@ -2978,8 +2978,8 @@ const DictationPageContent = () => {
               onToggleLearningMode={() => setLearningMode(prev => prev === 'dictation' ? 'shadowing' : 'dictation')}
             />
 
-            <div className={`${styles.dictationContainer} ${learningMode === 'shadowing' && isMobile ? styles.hideOnMobileShadowing : ''}`}>
-              {/* Mobile: Horizontal Scrollable Slides with Lazy Loading */}
+            <div className={styles.dictationContainer}>
+              {/* Mobile: Content changes based on learning mode */}
               {transcriptData.length === 0 ? (
                 <div style={{ 
                   display: 'flex', 
@@ -2996,6 +2996,8 @@ const DictationPageContent = () => {
                   </div>
                 </div>
               ) : isMobile ? (
+                // Mobile: Show either dictation slides or transcript list based on mode
+                learningMode === 'dictation' ? (
                   /* Mobile Dictation Mode: Horizontal slides */
                   <div className={styles.dictationSlidesWrapper}>
                     <div 
@@ -3055,6 +3057,37 @@ const DictationPageContent = () => {
                       )}
                     </div>
                   </div>
+                ) : (
+                  /* Mobile Shadowing Mode: Transcript list (no separate header) */
+                  <div className={styles.mobileTranscriptList}>
+                    {transcriptData.map((segment, originalIndex) => {
+                      const isCompleted = completedSentences.includes(originalIndex);
+                      const isActive = originalIndex === currentSentenceIndex;
+                      
+                      return (
+                        <div
+                          key={originalIndex}
+                          className={`${styles.mobileTranscriptItem} ${isActive ? styles.mobileTranscriptItemActive : ''} ${isCompleted ? styles.mobileTranscriptItemCompleted : ''}`}
+                          onClick={() => handleSentenceClick(segment.start, segment.end)}
+                        >
+                          <div className={styles.mobileTranscriptNumber}>
+                            {isCompleted ? '✓' : `#${originalIndex + 1}`}
+                          </div>
+                          <div className={styles.mobileTranscriptContent}>
+                            <div className={styles.mobileTranscriptText}>
+                              {segment.text}
+                            </div>
+                            {segment.translation && (
+                              <div className={styles.mobileTranscriptTranslation}>
+                                {segment.translation}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )
               ) : (
                 /* Desktop: Full Sentence Mode - Using Component */
                 <DictationDesktopArea
@@ -3079,7 +3112,7 @@ const DictationPageContent = () => {
             </div>
           </div>
 
-          {/* Right Column - Transcript List (Using Component) */}
+          {/* Right Column - Transcript List (Desktop only, Using Component) */}
           <TranscriptPanel
             transcriptData={transcriptData}
             currentSentenceIndex={currentSentenceIndex}
@@ -3093,7 +3126,7 @@ const DictationPageContent = () => {
             onSentenceClick={handleSentenceClick}
             maskTextByPercentage={maskTextByPercentage}
             learningMode={learningMode}
-            showOnMobile={learningMode === 'shadowing' && isMobile}
+            showOnMobile={false}
           />
         </div>
       </div>

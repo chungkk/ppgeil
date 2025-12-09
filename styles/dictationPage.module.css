@@ -3262,88 +3262,102 @@
   }
 
   /* ============================================
-     MOBILE SHADOWING LIST (when shadowing mode is on)
+     MOBILE TRANSCRIPT LIST (for shadowing mode)
+     Unified design - no separate header
      ============================================ */
-  .mobileShadowingList {
+  .mobileTranscriptList {
     flex: 1;
     overflow-y: auto;
-    padding: 8px 4px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
     -webkit-overflow-scrolling: touch;
     background: rgba(15, 15, 25, 0.5);
     border-radius: 0 0 12px 12px;
   }
 
-  .mobileShadowingItem {
+  .mobileTranscriptItem {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
-    padding: 12px;
+    gap: 12px;
+    padding: 12px 14px;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.2s ease;
     cursor: pointer;
-    margin: 0 4px;
   }
 
-  .mobileShadowingItem:active {
+  .mobileTranscriptItem:active {
     transform: scale(0.98);
   }
 
-  .mobileShadowingItemActive {
+  .mobileTranscriptItemActive {
     background: rgba(102, 126, 234, 0.15);
-    border-color: rgba(102, 126, 234, 0.3);
+    border-color: rgba(102, 126, 234, 0.4);
+    box-shadow: 0 2px 12px rgba(102, 126, 234, 0.2);
   }
 
-  .mobileShadowingPlayBtn {
+  .mobileTranscriptItemCompleted {
+    border-color: rgba(16, 185, 129, 0.3);
+  }
+
+  .mobileTranscriptItemCompleted .mobileTranscriptNumber {
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.2);
+    border-color: rgba(16, 185, 129, 0.4);
+  }
+
+  .mobileTranscriptNumber {
     flex-shrink: 0;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: rgba(102, 126, 234, 0.2);
-    border: none;
-    color: #a5b4fc;
+    min-width: 32px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
   }
 
-  .mobileShadowingItemActive .mobileShadowingPlayBtn {
-    background: #667eea;
-    color: white;
+  .mobileTranscriptItemActive .mobileTranscriptNumber {
+    color: #a5b4fc;
+    background: rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.4);
   }
 
-  .mobileShadowingContent {
+  .mobileTranscriptContent {
     flex: 1;
     min-width: 0;
   }
 
-  .mobileShadowingText {
+  .mobileTranscriptText {
     font-size: 15px;
     line-height: 1.5;
     color: var(--text-primary);
     word-wrap: break-word;
   }
 
-  .mobileShadowingItemActive .mobileShadowingText {
+  .mobileTranscriptItemActive .mobileTranscriptText {
     color: white;
     font-weight: 500;
   }
 
-  .mobileShadowingTranslation {
+  .mobileTranscriptTranslation {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(147, 197, 253, 0.7);
     margin-top: 6px;
     line-height: 1.4;
+    font-style: italic;
   }
 
-  .mobileShadowingItemActive .mobileShadowingTranslation {
-    color: rgba(255, 255, 255, 0.7);
+  .mobileTranscriptItemActive .mobileTranscriptTranslation {
+    color: rgba(167, 217, 253, 0.9);
   }
 
   /* Hide old dictationHeader on mobile - using new dictationHeaderMobile */
