@@ -94,39 +94,44 @@ const DictationHeader = ({
 
   // Desktop layout
   return (
-    <div className={styles.dictationHeader}>
-      <h3 className={styles.dictationHeaderTitle}>
-        {learningMode === 'dictation' ? t('lesson.ui.dictation') : t('lesson.ui.shadowing')}
-      </h3>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-        {/* Learning Mode Toggle */}
-        {onToggleLearningMode && (
-          <label className={styles.toggleLabel}>
-            <input
-              type="checkbox"
-              checked={learningMode === 'shadowing'}
-              onChange={onToggleLearningMode}
-              className={styles.toggleInput}
-            />
-            <span className={styles.toggleSlider}></span>
-            <span className={styles.toggleText}>{learningMode === 'dictation' ? 'Shadowing' : 'Dictation'}</span>
-          </label>
-        )}
-        {/* Translation Toggle - Desktop Only */}
-        {onToggleTranslation && (
-          <label className={styles.toggleLabel}>
-            <input
-              type="checkbox"
-              checked={showTranslation}
-              onChange={onToggleTranslation}
-              className={styles.toggleInput}
-            />
-            <span className={styles.toggleSlider}></span>
-            <span className={styles.toggleText}>Dịch</span>
-          </label>
-        )}
+    <>
+      {/* Floating Mode Toggle Button - Outside column */}
+      {onToggleLearningMode && (
+        <button 
+          className={`${styles.floatingModeToggle} ${learningMode === 'shadowing' ? styles.floatingModeToggleActive : ''}`}
+          onClick={onToggleLearningMode}
+          title={learningMode === 'dictation' ? 'Chuyển sang Shadowing' : 'Chuyển sang Dictation'}
+        >
+          <span className={styles.floatingModeIcon}>
+            {learningMode === 'dictation' ? '📝' : '👀'}
+          </span>
+          <span className={styles.floatingModeLabel}>
+            {learningMode === 'dictation' ? 'Diktat' : 'Shadow'}
+          </span>
+        </button>
+      )}
+      
+      <div className={styles.dictationHeader}>
+        <h3 className={styles.dictationHeaderTitle}>
+          {learningMode === 'dictation' ? t('lesson.ui.dictation') : t('lesson.ui.shadowing')}
+        </h3>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          {/* Translation Toggle - Desktop Only */}
+          {onToggleTranslation && (
+            <label className={styles.toggleLabel}>
+              <input
+                type="checkbox"
+                checked={showTranslation}
+                onChange={onToggleTranslation}
+                className={styles.toggleInput}
+              />
+              <span className={styles.toggleSlider}></span>
+              <span className={styles.toggleText}>Dịch</span>
+            </label>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
