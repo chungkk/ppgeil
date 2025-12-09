@@ -2,8 +2,6 @@
 
 /* Right Section - Transcript Container */
 .rightSection {
-  position: sticky;
-  top: 80px;
   display: flex;
   flex-direction: column;
   height: 550px;
