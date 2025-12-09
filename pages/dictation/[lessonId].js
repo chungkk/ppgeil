@@ -25,6 +25,11 @@ const ShadowingVoiceRecorder = dynamic(() => import('../../components/ShadowingV
   loading: () => <div style={{ width: '40px', height: '40px', background: '#f0f0f0', borderRadius: '50%' }}></div>
 });
 
+const ShadowingMobile = dynamic(() => import('../../components/shadowing/ShadowingMobile'), {
+  ssr: false,
+  loading: () => <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>Loading...</div>
+});
+
 // Hooks and utilities
 import { useLessonData } from '../../lib/hooks/useLessonData';
 import { useDictationPlayer } from '../../lib/hooks/useDictationPlayer';
@@ -3006,63 +3011,102 @@ const DictationPageContent = () => {
                   </div>
                 </div>
               ) : isMobile ? (
-                <div className={styles.dictationSlidesWrapper}>
-                  <div 
-                    className={styles.dictationSlides}
-                    ref={dictationSlidesRef}
-                  >
-                    {/* Spacer for slides before lazy range */}
-                    {lazySlideRange.start > 0 && (
-                      <div 
-                        className={styles.slidesSpacer}
-                        style={{ 
-                          width: `calc(${lazySlideRange.start} * (94% + 12px))`,
-                          flexShrink: 0
-                        }}
-                      />
-                    )}
-
-                    {/* Render only lazy-loaded slides */}
-                    {lazySlidesToRender.map((originalIndex, arrayIndex) => (
-                      <DictationMobileSlide
-                        key={originalIndex}
-                        originalIndex={originalIndex}
-                        arrayIndex={arrayIndex}
-                        lazySlideRangeStart={lazySlideRange.start}
-                        sentence={transcriptData[originalIndex]}
-                        isCompleted={completedSentences.includes(originalIndex)}
-                        isActive={originalIndex === currentSentenceIndex}
-                        currentSentenceIndex={currentSentenceIndex}
-                        revealedHintWords={revealedHintWords}
-                        wordComparisonResults={wordComparisonResults}
-                        partialRevealedChars={partialRevealedChars}
-                        fullSentenceInputs={fullSentenceInputs}
-                        sortedTranscriptIndices={sortedTranscriptIndices}
-                        onSlideClick={handleMobileSlideClick}
-                        onTouchStart={handleTouchStart}
-                        onTouchMove={handleTouchMove}
-                        onTouchEnd={handleTouchEnd}
-                        onHintWordClick={showHintWordSuggestion}
-                        onInputChange={handleMobileInputChange}
-                        onCheckSubmit={handleFullSentenceSubmit}
-                        onNextClick={goToNextSentence}
-                        calculatePartialReveals={calculatePartialReveals}
-                        t={t}
-                      />
+                isShadowingMode ? (
+                  /* Mobile Shadowing Mode: Scrollable transcript list */
+                  <div className={styles.mobileShadowingList}>
+                    {transcriptData.map((segment, index) => (
+                      <div
+                        key={index}
+                        className={`${styles.mobileShadowingItem} ${index === currentSentenceIndex ? styles.mobileShadowingItemActive : ''}`}
+                        onClick={() => handleSentenceClick(segment.start, segment.end)}
+                      >
+                        <button
+                          className={styles.mobileShadowingPlayBtn}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleSentenceClick(segment.start, segment.end);
+                          }}
+                        >
+                          {isPlaying && index === currentSentenceIndex ? (
+                            <svg width="10" height="12" viewBox="0 0 8 10" fill="currentColor">
+                              <rect x="0" y="0" width="2.5" height="10" rx="0.5"/>
+                              <rect x="5.5" y="0" width="2.5" height="10" rx="0.5"/>
+                            </svg>
+                          ) : (
+                            <svg width="10" height="12" viewBox="0 0 8 10" fill="currentColor">
+                              <path d="M0 0L8 5L0 10V0Z"/>
+                            </svg>
+                          )}
+                        </button>
+                        <div className={styles.mobileShadowingContent}>
+                          <div className={styles.mobileShadowingText}>{segment.text}</div>
+                          {showTranslation && segment.translation && (
+                            <div className={styles.mobileShadowingTranslation}>{segment.translation}</div>
+                          )}
+                        </div>
+                      </div>
                     ))}
-
-                    {/* Spacer for slides after lazy range */}
-                    {lazySlideRange.end < mobileVisibleIndices.length && (
-                      <div 
-                        className={styles.slidesSpacer}
-                        style={{ 
-                          width: `calc(${mobileVisibleIndices.length - lazySlideRange.end} * (94% + 12px))`,
-                          flexShrink: 0
-                        }}
-                      />
-                    )}
                   </div>
-                </div>
+                ) : (
+                  /* Mobile Dictation Mode: Horizontal slides */
+                  <div className={styles.dictationSlidesWrapper}>
+                    <div 
+                      className={styles.dictationSlides}
+                      ref={dictationSlidesRef}
+                    >
+                      {/* Spacer for slides before lazy range */}
+                      {lazySlideRange.start > 0 && (
+                        <div 
+                          className={styles.slidesSpacer}
+                          style={{ 
+                            width: `calc(${lazySlideRange.start} * (94% + 12px))`,
+                            flexShrink: 0
+                          }}
+                        />
+                      )}
+
+                      {/* Render only lazy-loaded slides */}
+                      {lazySlidesToRender.map((originalIndex, arrayIndex) => (
+                        <DictationMobileSlide
+                          key={originalIndex}
+                          originalIndex={originalIndex}
+                          arrayIndex={arrayIndex}
+                          lazySlideRangeStart={lazySlideRange.start}
+                          sentence={transcriptData[originalIndex]}
+                          isCompleted={completedSentences.includes(originalIndex)}
+                          isActive={originalIndex === currentSentenceIndex}
+                          currentSentenceIndex={currentSentenceIndex}
+                          revealedHintWords={revealedHintWords}
+                          wordComparisonResults={wordComparisonResults}
+                          partialRevealedChars={partialRevealedChars}
+                          fullSentenceInputs={fullSentenceInputs}
+                          sortedTranscriptIndices={sortedTranscriptIndices}
+                          onSlideClick={handleMobileSlideClick}
+                          onTouchStart={handleTouchStart}
+                          onTouchMove={handleTouchMove}
+                          onTouchEnd={handleTouchEnd}
+                          onHintWordClick={showHintWordSuggestion}
+                          onInputChange={handleMobileInputChange}
+                          onCheckSubmit={handleFullSentenceSubmit}
+                          onNextClick={goToNextSentence}
+                          calculatePartialReveals={calculatePartialReveals}
+                          t={t}
+                        />
+                      ))}
+
+                      {/* Spacer for slides after lazy range */}
+                      {lazySlideRange.end < mobileVisibleIndices.length && (
+                        <div 
+                          className={styles.slidesSpacer}
+                          style={{ 
+                            width: `calc(${mobileVisibleIndices.length - lazySlideRange.end} * (94% + 12px))`,
+                            flexShrink: 0
+                          }}
+                        />
+                      )}
+                    </div>
+                  </div>
+                )
               ) : (
                 /* Desktop: Full Sentence Mode - Using Component */
                 <DictationDesktopArea
@@ -3115,24 +3159,6 @@ const DictationPageContent = () => {
           onNext={goToNextSentence}
           canGoPrevious={sortedTranscriptIndices.indexOf(currentSentenceIndex) !== 0}
           canGoNext={sortedTranscriptIndices.indexOf(currentSentenceIndex) < sortedTranscriptIndices.length - 1}
-          voiceRecorder={
-            !completedSentences.includes(currentSentenceIndex) && (
-              <ShadowingVoiceRecorder
-                onTranscript={(text) => {
-                  setFullSentenceInputs(prev => ({
-                    ...prev,
-                    [currentSentenceIndex]: text
-                  }));
-                  if (transcriptData[currentSentenceIndex]) {
-                    calculatePartialReveals(currentSentenceIndex, text, transcriptData[currentSentenceIndex].text);
-                  }
-                }}
-                onAudioRecorded={() => {}}
-                language="de-DE"
-                size="mobile"
-              />
-            )
-          }
         />
       )}
 
@@ -3189,6 +3215,30 @@ const DictationPageContent = () => {
           onComplete={() => {}}
         />
       ))}
+
+      {/* Floating Shadowing Mode Toggle - Desktop Only */}
+      {!isMobile && (
+        <button
+          className={`${styles.floatingShadowingToggle} ${isShadowingMode ? styles.active : ''}`}
+          onClick={() => setIsShadowingMode(!isShadowingMode)}
+          title={isShadowingMode ? 'Chuyển sang Dictation' : 'Chuyển sang Shadowing'}
+        >
+          {isShadowingMode ? (
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+              <line x1="1" y1="1" x2="23" y2="23"/>
+            </svg>
+          )}
+          <span className={styles.floatingShadowingToggleLabel}>
+            {isShadowingMode ? 'Shadowing' : 'Dictation'}
+          </span>
+        </button>
+      )}
     </div>
   );
 };

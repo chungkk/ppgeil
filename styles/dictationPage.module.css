@@ -3138,6 +3138,133 @@
     background: rgba(102, 126, 234, 0.3);
   }
 
+  /* Center section for sentence counter */
+  .headerCenter {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    flex-shrink: 0;
+  }
+
+  /* Mobile Mode Toggle Button (Shadowing/Dictation) */
+  .modeToggleMobile {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(102, 126, 234, 0.2);
+    border: 1.5px solid rgba(102, 126, 234, 0.4);
+    color: #a5b4fc;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    height: 32px;
+  }
+
+  .modeToggleMobile svg {
+    flex-shrink: 0;
+  }
+
+  .modeToggleMobile span {
+    white-space: nowrap;
+  }
+
+  .modeToggleMobile:active {
+    transform: scale(0.95);
+  }
+
+  .modeToggleMobileActive {
+    background: rgba(16, 185, 129, 0.25);
+    border-color: rgba(16, 185, 129, 0.5);
+    color: #34d399;
+  }
+
+  /* ============================================
+     MOBILE SHADOWING LIST (when shadowing mode is on)
+     ============================================ */
+  .mobileShadowingList {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobileShadowingItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .mobileShadowingItem:active {
+    transform: scale(0.98);
+  }
+
+  .mobileShadowingItemActive {
+    background: rgba(102, 126, 234, 0.15);
+    border-color: rgba(102, 126, 234, 0.4);
+    box-shadow: 0 2px 12px rgba(102, 126, 234, 0.2);
+  }
+
+  .mobileShadowingPlayBtn {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(102, 126, 234, 0.2);
+    border: none;
+    color: #a5b4fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .mobileShadowingItemActive .mobileShadowingPlayBtn {
+    background: #667eea;
+    color: white;
+  }
+
+  .mobileShadowingContent {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mobileShadowingText {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-primary);
+    word-wrap: break-word;
+  }
+
+  .mobileShadowingItemActive .mobileShadowingText {
+    color: white;
+    font-weight: 500;
+  }
+
+  .mobileShadowingTranslation {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+
+  .mobileShadowingItemActive .mobileShadowingTranslation {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   /* Hide old dictationHeader on mobile - using new dictationHeaderMobile */
   .dictationHeader {
     display: none;
@@ -4448,3 +4575,56 @@
 
 
 /* Swipe animations with Fresh Green colors */
+
+/* ============================================
+   FLOATING SHADOWING MODE TOGGLE
+   ============================================ */
+.floatingShadowingToggle {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+}
+
+.floatingShadowingToggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+}
+
+.floatingShadowingToggle.active {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+}
+
+.floatingShadowingToggle.active:hover {
+  box-shadow: 0 6px 25px rgba(16, 185, 129, 0.5);
+}
+
+.floatingShadowingToggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.floatingShadowingToggleLabel {
+  white-space: nowrap;
+}
+
+/* Hide on mobile - mobile has its own controls */
+@media (max-width: 768px) {
+  .floatingShadowingToggle {
+    display: none;
+  }
+}

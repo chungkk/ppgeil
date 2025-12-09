@@ -19,7 +19,7 @@ const DictationHeader = ({
   onSpeedChange,
   showTranslation,
   onToggleTranslation,
-  isShadowingMode,
+  isShadowingMode = false,
   onToggleShadowingMode
 }) => {
   const { t } = useTranslation();
@@ -37,22 +37,38 @@ const DictationHeader = ({
   if (isMobile) {
     return (
       <div className={styles.dictationHeaderMobile}>
-        {/* Left: Current sentence info */}
-        <div className={styles.headerLeft}>
+        {/* Left: Shadowing/Dictation toggle */}
+        {onToggleShadowingMode && (
+          <button 
+            className={`${styles.modeToggleMobile} ${isShadowingMode ? styles.modeToggleMobileActive : ''}`}
+            onClick={onToggleShadowingMode}
+            title={isShadowingMode ? 'Switch to Dictation' : 'Switch to Shadowing'}
+          >
+            {isShadowingMode ? (
+              <>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+                <span>Shadow</span>
+              </>
+            ) : (
+              <>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+                  <line x1="1" y1="1" x2="23" y2="23"/>
+                </svg>
+                <span>Diktat</span>
+              </>
+            )}
+          </button>
+        )}
+
+        {/* Center: Sentence counter */}
+        <div className={styles.headerCenter}>
           <span className={styles.sentenceNumber}>#{currentSentenceIndex + 1}</span>
           <span className={styles.sentenceDivider}>/</span>
           <span className={styles.sentenceTotal}>{totalSentences}</span>
-        </div>
-
-        {/* Center: Progress bar */}
-        <div className={styles.headerProgress}>
-          <div className={styles.progressBarMini}>
-            <div 
-              className={styles.progressFillMini} 
-              style={{ width: `${progressPercent}%` }}
-            />
-          </div>
-          <span className={styles.progressTextMini}>{progressPercent}%</span>
         </div>
 
         {/* Right: Speed button */}
@@ -76,19 +92,6 @@ const DictationHeader = ({
         {isShadowingMode ? 'Shadowing' : t('lesson.ui.dictation')}
       </h3>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-        {/* Shadowing Mode Toggle - Desktop Only */}
-        {onToggleShadowingMode && (
-          <label className={styles.toggleLabel}>
-            <input
-              type="checkbox"
-              checked={isShadowingMode}
-              onChange={onToggleShadowingMode}
-              className={styles.toggleInput}
-            />
-            <span className={styles.toggleSlider}></span>
-            <span className={styles.toggleText}>Shadowing</span>
-          </label>
-        )}
         {/* Translation Toggle - Desktop Only */}
         {onToggleTranslation && (
           <label className={styles.toggleLabel}>

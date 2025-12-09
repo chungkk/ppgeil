@@ -21,6 +21,7 @@ function LessonFormPage() {
   const [fetchingWhisperSRT, setFetchingWhisperSRT] = useState(false);
   const [fetchingWhisperV2, setFetchingWhisperV2] = useState(false);
   const [fetchingWhisperV3, setFetchingWhisperV3] = useState(false);
+  const [extractingVocab, setExtractingVocab] = useState(false);
 
   const [formData, setFormData] = useState({
     id: '',
@@ -573,6 +574,37 @@ function LessonFormPage() {
       if (!res.ok) throw new Error('Lektion konnte nicht gespeichert werden');
 
       toast.success(isNewLesson ? 'Lektion erfolgreich erstellt!' : 'Lektion erfolgreich aktualisiert!');
+
+      // Auto-extract vocabulary for new lessons
+      if (isNewLesson && formData.id) {
+        setExtractingVocab(true);
+        try {
+          const vocabRes = await fetch('/api/extract-lesson-vocabulary', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({ 
+              lessonId: formData.id,
+              level: formData.level,
+              targetLang: 'vi'
+            })
+          });
+          
+          if (vocabRes.ok) {
+            const vocabData = await vocabRes.json();
+            toast.success(`📚 Đã trích xuất ${vocabData.data?.totalWords || 0} từ vựng!`);
+          } else {
+            console.error('Extract vocabulary failed');
+          }
+        } catch (vocabError) {
+          console.error('Extract vocabulary error:', vocabError);
+        } finally {
+          setExtractingVocab(false);
+        }
+      }
+
       router.push('/admin/dashboard');
     } catch (error) {
       console.error('Save error:', error);
@@ -608,12 +640,24 @@ function LessonFormPage() {
                 : 'Bearbeiten Sie die Lektionsinformationen'}
             </p>
           </div>
-          <button
-            onClick={() => router.push('/admin/dashboard')}
-            className={styles.secondaryButton}
-          >
-            ← Zurück
-          </button>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <button
+              onClick={() => router.push('/admin/dashboard')}
+              className={styles.secondaryButton}
+            >
+              ← Zurück
+            </button>
+            {!isNewLesson && (
+              <button
+                type="button"
+                onClick={() => router.push(`/admin/dashboard/lesson/${id}/vocabulary`)}
+                className={styles.actionButton}
+                style={{ background: '#10b981' }}
+              >
+                📚 Quản lý từ vựng
+              </button>
+            )}
+          </div>
         </div>
 
         <form onSubmit={handleSubmit} className={styles.form}>
@@ -629,10 +673,10 @@ function LessonFormPage() {
               </button>
               <button
                 type="submit"
-                disabled={uploading}
+                disabled={uploading || extractingVocab}
                 className={styles.submitButton}
               >
-                {uploading ? '⏳ Speichert...' : '➕ Lektion erstellen'}
+                {uploading ? '⏳ Speichert...' : extractingVocab ? '📚 Đang trích xuất từ vựng...' : '➕ Lektion erstellen'}
               </button>
             </div>
           )}
