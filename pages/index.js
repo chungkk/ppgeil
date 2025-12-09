@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import SEO, { generateBreadcrumbStructuredData, generateCourseStructuredData, generateFAQStructuredData } from '../components/SEO';
 import LessonCard from '../components/LessonCard';
-import ModeSelectionPopup from '../components/ModeSelectionPopup';
 import { SkeletonCard } from '../components/SkeletonLoader';
 import { useAuth } from '../context/AuthContext';
 import { useLessons, prefetchLessons } from '../lib/hooks/useLessons';
@@ -11,11 +10,8 @@ import { navigateWithLocale } from '../lib/navigation';
 
 const HomePage = () => {
   const { t } = useTranslation();
-  const [selectedLesson, setSelectedLesson] = useState(null);
-  const [showPopup, setShowPopup] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [difficultyFilter, setDifficultyFilter] = useState('all');
-  const [fetchController, setFetchController] = useState(null);
   const itemsPerPage = 15;
   const router = useRouter();
   const { user } = useAuth();
@@ -55,15 +51,6 @@ const HomePage = () => {
     }
   }, [currentPage, totalPages, difficultyFilter]);
 
-  // Cleanup fetchController on unmount
-  useEffect(() => {
-    return () => {
-      if (fetchController) {
-        fetchController.abort();
-      }
-    };
-  }, [fetchController]);
-
   const nextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
@@ -76,62 +63,15 @@ const HomePage = () => {
     }
   };
 
-  const handleLessonClick = async (lesson) => {
-    // Cancel any ongoing fetch request
-    if (fetchController) {
-      fetchController.abort();
-    }
-    
-    const controller = new AbortController();
-    setFetchController(controller);
-    
-    // Fetch study time for dictation mode
-    const token = localStorage.getItem('token');
-    let dictationStudyTime = 0;
-    
-    if (token && user) {
-      try {
-        const dictationRes = await fetch(`/api/progress?lessonId=${lesson.id}&mode=dictation`, {
-          headers: { 'Authorization': `Bearer ${token}` },
-          signal: controller.signal
-        });
-        
-        if (dictationRes.ok) {
-          const dictationData = await dictationRes.json();
-          dictationStudyTime = dictationData.studyTime || 0;
-        }
-      } catch (error) {
-        if (error.name === 'AbortError') {
-          return; // Request was cancelled, don't update state
-        }
-        console.error('Error fetching study time:', error);
-      }
-    }
-    
-    setFetchController(null);
-    setSelectedLesson({
-      ...lesson,
-      dictationStudyTime
-    });
-    setShowPopup(true);
-  };
-
-  const handleModeSelect = (lesson, mode) => {
+  const handleLessonClick = (lesson) => {
     // Increment view count
     fetch(`/api/lessons/${lesson.id}/view`, {
       method: 'POST'
     }).catch(err => console.error('Error incrementing view count:', err));
     
-    // Navigate to the specific lesson and mode
-    navigateWithLocale(router, `/${mode}/${lesson.id}`);
+    // Navigate directly to lesson
+    navigateWithLocale(router, `/${lesson.id}`);
   };
-
-  const handleClosePopup = () => {
-    setShowPopup(false);
-    setSelectedLesson(null);
-  };
-
-
 
   // Structured data for homepage
   const breadcrumbData = generateBreadcrumbStructuredData([
@@ -255,13 +195,6 @@ const HomePage = () => {
           </div>
         )}
 
-        {showPopup && selectedLesson && (
-          <ModeSelectionPopup
-            lesson={selectedLesson}
-            onClose={handleClosePopup}
-            onSelectMode={handleModeSelect}
-          />
-        )}
       </div>
     </>
   );

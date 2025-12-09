@@ -2978,7 +2978,8 @@ const DictationPageContent = () => {
               onSpeedChange={handleSpeedChange}
               showTranslation={showTranslation}
               onToggleTranslation={() => setShowTranslation(!showTranslation)}
-
+              autoStop={autoStop}
+              onAutoStopChange={setAutoStop}
             />
 
             <div className={styles.dictationContainer}>
