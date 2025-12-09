@@ -10,6 +10,7 @@ import { useNotifications } from '../context/NotificationContext';
 import { useAnswerStreak, getStreakLevel } from '../context/AnswerStreakContext';
 import { getDefaultAvatar } from '../lib/helpers/avatar';
 import { getTodaysPhrase } from '../lib/data/nomenVerbVerbindungen';
+import phraseExplanationsCache from '../lib/data/phraseExplanations.json';
 import NotificationDropdown from './NotificationDropdown';
 import LoginModal from './LoginModal';
 import styles from '../styles/Header.module.css';
@@ -82,13 +83,34 @@ const Header = () => {
   // Get today's Nomen-Verb-Verbindung
   const todaysPhrase = useMemo(() => getTodaysPhrase(), []);
   
-  // Fetch detailed explanation from OpenAI
+  // Lock body scroll when phrase tooltip is open
+  useEffect(() => {
+    if (showPhraseTooltip) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [showPhraseTooltip]);
+  
+  // Fetch detailed explanation - check cache first, then fallback to OpenAI
   const fetchPhraseExplanation = useCallback(async () => {
     if (phraseExplanation || loadingExplanation) return;
     
+    const targetLang = user?.nativeLanguage || 'vi';
+    
+    // Check cache first
+    const cachedExplanation = phraseExplanationsCache[todaysPhrase.phrase]?.[targetLang];
+    if (cachedExplanation) {
+      setPhraseExplanation(cachedExplanation);
+      return;
+    }
+    
+    // Fallback to OpenAI API if not in cache
     setLoadingExplanation(true);
     try {
-      const targetLang = user?.nativeLanguage || 'vi';
       const response = await fetch('/api/explain-phrase', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

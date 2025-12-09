@@ -92,19 +92,6 @@ function DashboardIndex() {
     };
   }, [allLessons, calculateProgress]);
 
-  // Get progress details for a lesson (both modes)
-  const getProgressDetails = useCallback((lessonId) => {
-    const lessonProgress = progress.filter(p => p.lessonId === lessonId);
-    const shadowingProgress = lessonProgress.find(p => p.mode === 'shadowing');
-    const dictationProgress = lessonProgress.find(p => p.mode === 'dictation');
-
-    return {
-      shadowing: Math.round(shadowingProgress?.completionPercent || 0),
-      dictation: Math.round(dictationProgress?.completionPercent || 0),
-      overall: calculateProgress(lessonId)
-    };
-  }, [progress, calculateProgress]);
-
   if (loading) {
     return (
       <div className={styles.profilePage}>
@@ -171,9 +158,13 @@ function DashboardIndex() {
                 <div className={styles.lessonProgressList}>
                   {lessonStats.sortedLessons.map((lesson) => {
                       const progressPercent = calculateProgress(lesson.id);
-                      const progressDetails = getProgressDetails(lesson.id);
                       return (
-                        <div key={lesson.id} className={styles.lessonProgressItem}>
+                        <div 
+                          key={lesson.id} 
+                          className={styles.lessonProgressItem}
+                          onClick={() => navigateWithLocale(router, `/shadowing/${lesson.id}`)}
+                          style={{ cursor: 'pointer' }}
+                        >
                           <div className={styles.lessonProgressItemHeader}>
                             <div className={styles.lessonProgressItemTitle}>
                               <span className={styles.lessonProgressItemIcon}>
@@ -193,54 +184,11 @@ function DashboardIndex() {
                             </div>
                           </div>
 
-                          {/* Overall Progress Bar */}
                           <div className={styles.lessonProgressItemBar}>
                             <div
                               className={styles.lessonProgressItemBarFill}
                               style={{ width: `${progressPercent}%` }}
                             />
-                          </div>
-
-                          {/* Mode Progress */}
-                          <div className={styles.lessonProgressItemModes}>
-                            <div className={styles.lessonProgressItemMode}>
-                              <span className={styles.modeIcon}>🎤</span>
-                              <span className={styles.modeName}>Shadowing</span>
-                              <div className={styles.modeProgressMini}>
-                                <div 
-                                  className={`${styles.modeProgressMiniFill} ${styles.shadowingFillMini}`}
-                                  style={{ width: `${progressDetails.shadowing}%` }}
-                                />
-                              </div>
-                              <span className={styles.modePercentMini}>{progressDetails.shadowing}%</span>
-                            </div>
-                            <div className={styles.lessonProgressItemMode}>
-                              <span className={styles.modeIcon}>✍️</span>
-                              <span className={styles.modeName}>Dictation</span>
-                              <div className={styles.modeProgressMini}>
-                                <div 
-                                  className={`${styles.modeProgressMiniFill} ${styles.dictationFillMini}`}
-                                  style={{ width: `${progressDetails.dictation}%` }}
-                                />
-                              </div>
-                              <span className={styles.modePercentMini}>{progressDetails.dictation}%</span>
-                            </div>
-                          </div>
-
-                          {/* Action Buttons */}
-                          <div className={styles.lessonProgressItemActions}>
-                            <button
-                              onClick={() => navigateWithLocale(router, `/shadowing/${lesson.id}`)}
-                              className={`${styles.lessonProgressItemBtn} ${styles.shadowingBtn}`}
-                            >
-                              🎤 Shadowing
-                            </button>
-                            <button
-                              onClick={() => navigateWithLocale(router, `/dictation/${lesson.id}`)}
-                              className={`${styles.lessonProgressItemBtn} ${styles.dictationBtn}`}
-                            >
-                              ✍️ Dictation
-                            </button>
                           </div>
                         </div>
                       );
