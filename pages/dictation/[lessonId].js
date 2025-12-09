@@ -44,6 +44,7 @@ import {
   seededRandom
 } from '../../lib/dictationUtils';
 import usePointsAnimation from '../../lib/hooks/usePointsAnimation';
+import { useKaraokeHighlight } from '../../lib/hooks/useKaraokeHighlight';
 import useLeaderboard from '../../lib/hooks/useLeaderboard';
 import useSuggestionPopup from '../../lib/hooks/useSuggestionPopup';
 import useWindowGlobals from '../../lib/hooks/useWindowGlobals';
@@ -186,6 +187,15 @@ const DictationPageContent = () => {
 
   // Leaderboard tracking - using custom hook
   const { updateMonthlyStats } = useLeaderboard({ user, currentSentenceIndex, transcriptData });
+
+  // Karaoke highlight for shadowing mode
+  const activeSentence = transcriptData[currentSentenceIndex];
+  const { activeWordIndex } = useKaraokeHighlight(
+    activeSentence,
+    currentTime,
+    isPlaying,
+    learningMode === 'shadowing'
+  );
 
   // Suggestion popup - use hook for generateLocalSuggestions utility
   const { generateLocalSuggestions } = useSuggestionPopup({ 
@@ -3076,7 +3086,22 @@ const DictationPageContent = () => {
                           </div>
                           <div className={styles.mobileTranscriptContent}>
                             <div className={styles.mobileTranscriptText}>
-                              {segment.text}
+                              {isActive && isPlaying ? (
+                                <span className={styles.karaokeText}>
+                                  {segment.text.split(/\s+/).map((word, idx) => {
+                                    const isSpoken = idx < activeWordIndex;
+                                    const isCurrent = idx === activeWordIndex;
+                                    return (
+                                      <span
+                                        key={idx}
+                                        className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
+                                      >
+                                        {word}{idx < segment.text.split(/\s+/).length - 1 ? ' ' : ''}
+                                      </span>
+                                    );
+                                  })}
+                                </span>
+                              ) : segment.text}
                             </div>
                             {showTranslation && segment.translation && (
                               <div className={styles.mobileTranscriptTranslation}>
@@ -3108,6 +3133,8 @@ const DictationPageContent = () => {
                   onCalculatePartialReveals={calculatePartialReveals}
                   renderCompletedSentenceWithWordBoxes={renderCompletedSentenceWithWordBoxes}
                   learningMode={learningMode}
+                  isPlaying={isPlaying}
+                  activeWordIndex={activeWordIndex}
                 />
               )}
             </div>
@@ -3128,6 +3155,8 @@ const DictationPageContent = () => {
             maskTextByPercentage={maskTextByPercentage}
             learningMode={learningMode}
             showOnMobile={false}
+            currentTime={currentTime}
+            isPlaying={isPlaying}
           />
         </div>
       </div>

@@ -3347,6 +3347,27 @@
     color: rgba(167, 217, 253, 0.9);
   }
 
+  /* Karaoke Highlight Styles for Mobile Shadowing */
+  .karaokeText {
+    display: inline;
+  }
+
+  .karaokeWord {
+    display: inline;
+    transition: color 0.15s ease, text-shadow 0.15s ease;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .karaokeWordSpoken {
+    color: #a5b4fc;
+  }
+
+  .karaokeWordCurrent {
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.6);
+  }
+
   /* Hide old dictationHeader on mobile - using new dictationHeaderMobile */
   .dictationHeader {
     display: none;

@@ -24,7 +24,9 @@ const DictationDesktopArea = ({
   onHintWordClick,
   onCalculatePartialReveals,
   renderCompletedSentenceWithWordBoxes,
-  learningMode = 'dictation'
+  learningMode = 'dictation',
+  isPlaying = false,
+  activeWordIndex = -1
 }) => {
   const currentSentence = transcriptData[currentSentenceIndex];
   const isCompleted = completedSentences.includes(currentSentenceIndex);
@@ -77,9 +79,24 @@ const DictationDesktopArea = ({
       <div className={styles.dictationBox}>
         <div className={styles.fullSentenceDisplay}>
           {isShadowingMode ? (
-            // Shadowing mode: show full text
+            // Shadowing mode: show full text with karaoke highlight
             <div className={styles.shadowingText}>
-              {currentSentence.text}
+              {isPlaying ? (
+                <span className={styles.karaokeText}>
+                  {currentSentence.text.split(/\s+/).map((word, idx) => {
+                    const isSpoken = idx < activeWordIndex;
+                    const isCurrent = idx === activeWordIndex;
+                    return (
+                      <span
+                        key={idx}
+                        className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
+                      >
+                        {word}{idx < currentSentence.text.split(/\s+/).length - 1 ? ' ' : ''}
+                      </span>
+                    );
+                  })}
+                </span>
+              ) : currentSentence.text}
             </div>
           ) : isCompleted ? (
             <div 

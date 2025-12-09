@@ -349,3 +349,37 @@
 .showOnMobile {
   /* Base styles - applied when showOnMobile prop is true */
 }
+
+/* Karaoke Highlight Styles */
+.karaokeText {
+  display: inline;
+}
+
+.karaokeWord {
+  display: inline;
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+  color: var(--text-secondary);
+}
+
+.karaokeWordSpoken {
+  color: var(--accent-blue);
+}
+
+.karaokeWordCurrent {
+  color: #667eea;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+  animation: karaokePulse 0.5s ease-in-out;
+}
+
+@keyframes karaokePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

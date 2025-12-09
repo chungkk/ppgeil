@@ -50,6 +50,27 @@
   overflow-wrap: break-word;
 }
 
+/* Karaoke Highlight Styles for Shadowing Mode */
+.karaokeText {
+  display: inline;
+}
+
+.karaokeWord {
+  display: inline;
+  transition: color 0.15s ease, text-shadow 0.15s ease;
+  color: var(--text-secondary);
+}
+
+.karaokeWordSpoken {
+  color: var(--accent-blue);
+}
+
+.karaokeWordCurrent {
+  color: #667eea;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(102, 126, 234, 0.5);
+}
+
 .hintSentenceText {
   display: flex;
   flex-wrap: wrap;

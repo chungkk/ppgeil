@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useEffect, useCallback, useMemo } from 'react';
 import ProgressIndicator from '../ProgressIndicator';
+import { useKaraokeHighlight } from '../../lib/hooks/useKaraokeHighlight';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import transcriptStyles from '../../styles/dictation/dictationTranscript.module.css';
 
@@ -26,10 +27,51 @@ const TranscriptPanel = ({
   onSentenceClick,
   maskTextByPercentage,
   learningMode = 'dictation',
-  showOnMobile = false
+  showOnMobile = false,
+  currentTime = 0,
+  isPlaying = false
 }) => {
   const transcriptSectionRef = useRef(null);
   const transcriptItemRefs = useRef({});
+
+  // Karaoke highlight for active sentence in shadowing mode
+  const activeSentence = transcriptData[currentSentenceIndex];
+  const { wordTimings, activeWordIndex } = useKaraokeHighlight(
+    activeSentence,
+    currentTime,
+    isPlaying,
+    learningMode === 'shadowing'
+  );
+
+  // Render text with karaoke highlighting
+  const renderKaraokeText = useCallback((text, segment, originalIndex) => {
+    const isActiveSentence = originalIndex === currentSentenceIndex;
+    
+    // Only apply karaoke to active sentence in shadowing mode
+    if (learningMode !== 'shadowing' || !isActiveSentence || !isPlaying) {
+      return text;
+    }
+
+    const words = text.split(/\s+/);
+    
+    return (
+      <span className={styles.karaokeText}>
+        {words.map((word, idx) => {
+          const isSpoken = idx < activeWordIndex;
+          const isCurrent = idx === activeWordIndex;
+          
+          return (
+            <span
+              key={idx}
+              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
+            >
+              {word}{idx < words.length - 1 ? ' ' : ''}
+            </span>
+          );
+        })}
+      </span>
+    );
+  }, [currentSentenceIndex, learningMode, isPlaying, activeWordIndex]);
 
   // Auto-scroll to current sentence
   useEffect(() => {
@@ -114,7 +156,7 @@ const TranscriptPanel = ({
                 </div>
                 <div className={styles.transcriptItemText}>
                   {shouldShowFullText 
-                    ? segment.text 
+                    ? renderKaraokeText(segment.text, segment, originalIndex)
                     : maskTextByPercentage(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
                   }
                 </div>
