@@ -24,7 +24,8 @@ const TranscriptPanel = ({
   dictationMode,
   studyTime,
   onSentenceClick,
-  maskTextByPercentage
+  maskTextByPercentage,
+  isShadowingMode = false
 }) => {
   const transcriptSectionRef = useRef(null);
   const transcriptItemRefs = useRef({});
@@ -94,7 +95,8 @@ const TranscriptPanel = ({
             
             const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
             const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
-            const shouldShowFullText = isCompleted || (dictationMode === 'full-sentence' && isChecked);
+            // Show full text in shadowing mode, or when completed/checked
+            const shouldShowFullText = isShadowingMode || isCompleted || (dictationMode === 'full-sentence' && isChecked);
 
             return (
               <div

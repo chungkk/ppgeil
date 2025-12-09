@@ -1,0 +1,179 @@
+{
+  "lessonId": "erzhlung-zum-deutsch-lernen-frhstck-holen-b1",
+  "level": "B1",
+  "targetLang": "vi",
+  "extractedAt": "2025-12-09T15:23:55.719Z",
+  "totalWords": 16,
+  "vocabulary": [
+    {
+      "word": "die Bäckerei",
+      "baseForm": "die Bäckerei",
+      "translation": "tiệm bánh",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein Ort, wo man Brot und Brötchen kauft.",
+      "sentences": [
+        16
+      ]
+    },
+    {
+      "word": "das Frühstück",
+      "baseForm": "das Frühstück",
+      "translation": "bữa sáng",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Die erste Mahlzeit des Tages.",
+      "sentences": [
+        11,
+        13
+      ]
+    },
+    {
+      "word": "die Warteschlange",
+      "baseForm": "die Warteschlange",
+      "translation": "hàng chờ",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Eine Reihe von Personen, die auf etwas warten.",
+      "sentences": [
+        8
+      ]
+    },
+    {
+      "word": "der Brötchen",
+      "baseForm": "das Brötchen",
+      "translation": "bánh cuộn",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein kleines, rundes Brot.",
+      "sentences": [
+        76,
+        91
+      ]
+    },
+    {
+      "word": "schneiden",
+      "baseForm": "schneiden",
+      "translation": "cắt",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Etwas in Stücke teilen.",
+      "sentences": []
+    },
+    {
+      "word": "belegen",
+      "baseForm": "belegen",
+      "translation": "phết lên",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Etwas auf Brot oder Brötchen legen.",
+      "sentences": []
+    },
+    {
+      "word": "der Kaffee",
+      "baseForm": "der Kaffee",
+      "translation": "cà phê",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein beliebtes Getränk aus gerösteten Kaffeebohnen.",
+      "sentences": []
+    },
+    {
+      "word": "die Möglichkeit",
+      "baseForm": "die Möglichkeit",
+      "translation": "khả năng",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Etwas, was man tun oder haben kann.",
+      "sentences": [
+        90
+      ]
+    },
+    {
+      "word": "genießen",
+      "baseForm": "genießen",
+      "translation": "thưởng thức",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Etwas mit Freude erleben.",
+      "sentences": [
+        49
+      ]
+    },
+    {
+      "word": "warm",
+      "baseForm": "warm",
+      "translation": "ấm",
+      "partOfSpeech": "Adjektiv",
+      "level": "B1",
+      "note": "Eine angenehme Temperatur.",
+      "sentences": [
+        17,
+        24,
+        25,
+        30,
+        48
+      ]
+    },
+    {
+      "word": "der Himmel",
+      "baseForm": "der Himmel",
+      "translation": "bầu trời",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Der Raum über der Erde.",
+      "sentences": [
+        24
+      ]
+    },
+    {
+      "word": "der Duft",
+      "baseForm": "der Duft",
+      "translation": "hương thơm",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein angenehmer Geruch.",
+      "sentences": [
+        71
+      ]
+    },
+    {
+      "word": "der Sonntag",
+      "baseForm": "der Sonntag",
+      "translation": "Chủ nhật",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Der siebte Tag der Woche.",
+      "sentences": [
+        107
+      ]
+    },
+    {
+      "word": "der Mitarbeiter",
+      "baseForm": "der Mitarbeiter",
+      "translation": "nhân viên",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Eine Person, die in einem Unternehmen arbeitet.",
+      "sentences": []
+    },
+    {
+      "word": "der Stutenkerl",
+      "baseForm": "der Stutenkerl",
+      "translation": "bánh Stutenkerl",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein süßes Gebäck in Form eines Mannes.",
+      "sentences": []
+    },
+    {
+      "word": "das Salz",
+      "baseForm": "das Salz",
+      "translation": "muối",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein Gewürz, das Speisen würzt.",
+      "sentences": []
+    }
+  ]
+}

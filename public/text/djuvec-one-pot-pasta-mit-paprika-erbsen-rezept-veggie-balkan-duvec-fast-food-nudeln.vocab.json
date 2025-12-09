@@ -1,0 +1,173 @@
+{
+  "lessonId": "djuvec-one-pot-pasta-mit-paprika-erbsen-rezept-veggie-balkan-duvec-fast-food-nudeln",
+  "level": "B1",
+  "targetLang": "vi",
+  "extractedAt": "2025-12-09T15:23:02.713Z",
+  "totalWords": 16,
+  "vocabulary": [
+    {
+      "word": "das Rezept",
+      "baseForm": "das Rezept",
+      "translation": "công thức",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Eine Anleitung zum Kochen oder Zubereiten von Speisen.",
+      "sentences": []
+    },
+    {
+      "word": "die Zutat",
+      "baseForm": "die Zutat",
+      "translation": "nguyên liệu",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein Bestandteil eines Rezepts.",
+      "sentences": []
+    },
+    {
+      "word": "die Pfanne",
+      "baseForm": "die Pfanne",
+      "translation": "chảo",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein Kochgeschirr zum Braten.",
+      "sentences": [
+        11,
+        18
+      ]
+    },
+    {
+      "word": "das Öl",
+      "baseForm": "das Öl",
+      "translation": "dầu",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Eine Flüssigkeit, die zum Kochen verwendet wird.",
+      "sentences": []
+    },
+    {
+      "word": "die Hitze",
+      "baseForm": "die Hitze",
+      "translation": "nhiệt độ",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Die Temperatur beim Kochen.",
+      "sentences": []
+    },
+    {
+      "word": "das Salz",
+      "baseForm": "das Salz",
+      "translation": "muối",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein Gewürz, das den Geschmack verbessert.",
+      "sentences": []
+    },
+    {
+      "word": "die Tomate",
+      "baseForm": "die Tomate",
+      "translation": "cà chua",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Eine rote Frucht, die oft in Salaten und Saucen verwendet wird.",
+      "sentences": []
+    },
+    {
+      "word": "die Nudeln",
+      "baseForm": "die Nudel",
+      "translation": "mì",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein Lebensmittel aus Teig, das gekocht wird.",
+      "sentences": [
+        34,
+        37,
+        44
+      ]
+    },
+    {
+      "word": "kochen",
+      "baseForm": "kochen",
+      "translation": "nấu",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Speisen zubereiten durch Erhitzen.",
+      "sentences": [
+        28,
+        47
+      ]
+    },
+    {
+      "word": "hinzufügen",
+      "baseForm": "hinzufügen",
+      "translation": "thêm vào",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Etwas zu einer Mischung oder einem Gericht geben.",
+      "sentences": []
+    },
+    {
+      "word": "umrühren",
+      "baseForm": "umrühren",
+      "translation": "khuấy",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Eine Mischung bewegen, um sie gleichmäßig zu machen.",
+      "sentences": [
+        23,
+        27,
+        34,
+        42
+      ]
+    },
+    {
+      "word": "garnieren",
+      "baseForm": "garnieren",
+      "translation": "trang trí",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Ein Gericht dekorieren, um es ansprechender zu machen.",
+      "sentences": [
+        45
+      ]
+    },
+    {
+      "word": "servieren",
+      "baseForm": "servieren",
+      "translation": "phục vụ",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Ein Gericht an Gäste oder Personen anbieten.",
+      "sentences": [
+        43,
+        45
+      ]
+    },
+    {
+      "word": "der Geschmack",
+      "baseForm": "der Geschmack",
+      "translation": "hương vị",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Die Wahrnehmung von Aromen beim Essen.",
+      "sentences": []
+    },
+    {
+      "word": "das Gemüse",
+      "baseForm": "das Gemüse",
+      "translation": "rau",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Pflanzen, die als Nahrung dienen.",
+      "sentences": []
+    },
+    {
+      "word": "die Petersilie",
+      "baseForm": "die Petersilie",
+      "translation": "ngò tây",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein Kraut, das oft zum Würzen verwendet wird.",
+      "sentences": []
+    }
+  ]
+}

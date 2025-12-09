@@ -1,0 +1,245 @@
+{
+  "lessonId": "b1-dinleme-metni-deutsch-b1",
+  "level": "B1",
+  "targetLang": "vi",
+  "extractedAt": "2025-12-09T15:18:24.940Z",
+  "totalWords": 23,
+  "vocabulary": [
+    {
+      "word": "aufwachen",
+      "baseForm": "aufwachen",
+      "translation": "thức dậy",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "bedeutet, den Schlaf zu beenden",
+      "sentences": []
+    },
+    {
+      "word": "die Sonne",
+      "baseForm": "die Sonne",
+      "translation": "mặt trời",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "der Stern, der Licht und Wärme gibt",
+      "sentences": [
+        1
+      ]
+    },
+    {
+      "word": "das Schlafzimmerfenster",
+      "baseForm": "das Schlafzimmerfenster",
+      "translation": "cửa sổ phòng ngủ",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Fenster im Schlafzimmer",
+      "sentences": []
+    },
+    {
+      "word": "warm",
+      "baseForm": "warm",
+      "translation": "ấm",
+      "partOfSpeech": "Adjektiv",
+      "level": "A2",
+      "note": "angenehme Temperatur",
+      "sentences": [
+        3
+      ]
+    },
+    {
+      "word": "gähnen",
+      "baseForm": "gähnen",
+      "translation": "ngáp",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "eine Handlung, die oft mit Müdigkeit verbunden ist",
+      "sentences": []
+    },
+    {
+      "word": "das Badezimmer",
+      "baseForm": "das Badezimmer",
+      "translation": "phòng tắm",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "Raum zum Waschen und Duschen",
+      "sentences": []
+    },
+    {
+      "word": "die Zähne",
+      "baseForm": "die Zähne",
+      "translation": "răng",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "Knochen im Mund zum Kauen",
+      "sentences": [
+        7
+      ]
+    },
+    {
+      "word": "duschen",
+      "baseForm": "duschen",
+      "translation": "tắm",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "sich mit Wasser reinigen",
+      "sentences": []
+    },
+    {
+      "word": "die Treppe",
+      "baseForm": "die Treppe",
+      "translation": "cầu thang",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "eine Struktur, um von einem Stockwerk zum anderen zu gelangen",
+      "sentences": [
+        8
+      ]
+    },
+    {
+      "word": "ordentlich",
+      "baseForm": "ordentlich",
+      "translation": "ngăn nắp",
+      "partOfSpeech": "Adjektiv",
+      "level": "B1",
+      "note": "gut organisiert und sauber",
+      "sentences": [
+        9
+      ]
+    },
+    {
+      "word": "aufgeräumt",
+      "baseForm": "aufräumen",
+      "translation": "dọn dẹp",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "alles an seinen Platz bringen",
+      "sentences": [
+        10
+      ]
+    },
+    {
+      "word": "arbeiten",
+      "baseForm": "arbeiten",
+      "translation": "làm việc",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "eine Tätigkeit, um Geld zu verdienen",
+      "sentences": [
+        11
+      ]
+    },
+    {
+      "word": "genießen",
+      "baseForm": "genießen",
+      "translation": "thưởng thức",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Freude an etwas haben",
+      "sentences": [
+        12
+      ]
+    },
+    {
+      "word": "das Wohnzimmer",
+      "baseForm": "das Wohnzimmer",
+      "translation": "phòng khách",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "Raum zum Entspannen und Zusammensein",
+      "sentences": []
+    },
+    {
+      "word": "der Hund",
+      "baseForm": "der Hund",
+      "translation": "chó",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "ein Haustier, das oft als Freund gehalten wird",
+      "sentences": []
+    },
+    {
+      "word": "hungrig",
+      "baseForm": "hungrig",
+      "translation": "đói",
+      "partOfSpeech": "Adjektiv",
+      "level": "A2",
+      "note": "das Bedürfnis nach Essen",
+      "sentences": [
+        17
+      ]
+    },
+    {
+      "word": "essen",
+      "baseForm": "essen",
+      "translation": "ăn",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Nahrung zu sich nehmen",
+      "sentences": [
+        18,
+        24
+      ]
+    },
+    {
+      "word": "der Kühlschrank",
+      "baseForm": "der Kühlschrank",
+      "translation": "tủ lạnh",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "Gerät zur Aufbewahrung von Lebensmitteln",
+      "sentences": [
+        19
+      ]
+    },
+    {
+      "word": "einkaufen",
+      "baseForm": "einkaufen",
+      "translation": "mua sắm",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "Produkte kaufen, oft im Supermarkt",
+      "sentences": []
+    },
+    {
+      "word": "frühstücken",
+      "baseForm": "frühstücken",
+      "translation": "ăn sáng",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "die erste Mahlzeit des Tages",
+      "sentences": []
+    },
+    {
+      "word": "lecker",
+      "baseForm": "lecker",
+      "translation": "ngon",
+      "partOfSpeech": "Adjektiv",
+      "level": "A2",
+      "note": "gut schmeckend",
+      "sentences": [
+        24
+      ]
+    },
+    {
+      "word": "Appetit",
+      "baseForm": "der Appetit",
+      "translation": "thèm ăn",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "das Verlangen nach Essen",
+      "sentences": [
+        25
+      ]
+    },
+    {
+      "word": "selbstgemacht",
+      "baseForm": "selbstgemacht",
+      "translation": "tự làm",
+      "partOfSpeech": "Adjektiv",
+      "level": "B1",
+      "note": "etwas, das man selbst hergestellt hat",
+      "sentences": [
+        25
+      ]
+    }
+  ]
+}

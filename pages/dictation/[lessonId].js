@@ -148,6 +148,9 @@ const DictationPageContent = () => {
     return saved !== null ? saved === 'true' : false;
   });
   
+  // Shadowing mode toggle - when enabled, shows all text (no hidden words)
+  const [isShadowingMode, setIsShadowingMode] = useState(false);
+  
   // Mobile detection state
   const [isMobile, setIsMobile] = useState(false);
   
@@ -2981,6 +2984,8 @@ const DictationPageContent = () => {
               onSpeedChange={handleSpeedChange}
               showTranslation={showTranslation}
               onToggleTranslation={() => setShowTranslation(!showTranslation)}
+              isShadowingMode={isShadowingMode}
+              onToggleShadowingMode={() => setIsShadowingMode(!isShadowingMode)}
             />
 
             <div className={styles.dictationContainer}>
@@ -3076,6 +3081,7 @@ const DictationPageContent = () => {
                   onHintWordClick={showHintWordSuggestion}
                   onCalculatePartialReveals={calculatePartialReveals}
                   renderCompletedSentenceWithWordBoxes={renderCompletedSentenceWithWordBoxes}
+                  isShadowingMode={isShadowingMode}
                 />
               )}
             </div>
@@ -3094,6 +3100,7 @@ const DictationPageContent = () => {
             studyTime={studyTime}
             onSentenceClick={handleSentenceClick}
             maskTextByPercentage={maskTextByPercentage}
+            isShadowingMode={isShadowingMode}
           />
         </div>
       </div>

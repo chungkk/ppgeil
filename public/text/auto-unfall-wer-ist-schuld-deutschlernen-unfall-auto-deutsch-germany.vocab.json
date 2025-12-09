@@ -1,0 +1,190 @@
+{
+  "lessonId": "auto-unfall-wer-ist-schuld-deutschlernen-unfall-auto-deutsch-germany",
+  "level": "B1",
+  "targetLang": "vi",
+  "extractedAt": "2025-12-09T15:17:49.795Z",
+  "totalWords": 16,
+  "vocabulary": [
+    {
+      "word": "Unfall",
+      "baseForm": "der Unfall",
+      "translation": "tai nạn",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Ein unerwartetes Ereignis, oft mit Schäden.",
+      "sentences": [
+        13,
+        14,
+        23,
+        32
+      ]
+    },
+    {
+      "word": "Vorfahrt",
+      "baseForm": "die Vorfahrt",
+      "translation": "quyền ưu tiên",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Das Recht, zuerst zu fahren.",
+      "sentences": [
+        2,
+        25,
+        27,
+        35
+      ]
+    },
+    {
+      "word": "Polizei",
+      "baseForm": "die Polizei",
+      "translation": "cảnh sát",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Die Behörde, die für Sicherheit und Ordnung sorgt.",
+      "sentences": [
+        11
+      ]
+    },
+    {
+      "word": "verletzen",
+      "baseForm": "verletzen",
+      "translation": "làm bị thương",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Jemanden körperlich schaden.",
+      "sentences": []
+    },
+    {
+      "word": "sehen",
+      "baseForm": "sehen",
+      "translation": "nhìn",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Mit den Augen wahrnehmen.",
+      "sentences": [
+        8,
+        30
+      ]
+    },
+    {
+      "word": "kaputt",
+      "baseForm": "kaputt",
+      "translation": "hỏng",
+      "partOfSpeech": "Adjektiv",
+      "level": "B1",
+      "note": "Nicht mehr funktionsfähig.",
+      "sentences": [
+        9
+      ]
+    },
+    {
+      "word": "Stoßfänger",
+      "baseForm": "der Stoßfänger",
+      "translation": "cản trước",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Teil eines Autos, der bei einem Aufprall schützt.",
+      "sentences": [
+        10
+      ]
+    },
+    {
+      "word": "Nerven",
+      "baseForm": "die Nerven",
+      "translation": "thần kinh",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Die Fähigkeit, ruhig zu bleiben.",
+      "sentences": [
+        19
+      ]
+    },
+    {
+      "word": "Fantasie",
+      "baseForm": "die Fantasie",
+      "translation": "trí tưởng tượng",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Die Fähigkeit, sich Dinge vorzustellen.",
+      "sentences": [
+        7
+      ]
+    },
+    {
+      "word": "Zeugen",
+      "baseForm": "die Zeugen",
+      "translation": "nhân chứng",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Personen, die etwas gesehen haben.",
+      "sentences": [
+        29
+      ]
+    },
+    {
+      "word": "aufnehmen",
+      "baseForm": "aufnehmen",
+      "translation": "ghi lại",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Etwas dokumentieren oder festhalten.",
+      "sentences": [
+        32
+      ]
+    },
+    {
+      "word": "Führerschein",
+      "baseForm": "der Führerschein",
+      "translation": "bằng lái xe",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Dokument, das das Fahren eines Fahrzeugs erlaubt.",
+      "sentences": [
+        34
+      ]
+    },
+    {
+      "word": "schicken",
+      "baseForm": "schicken",
+      "translation": "gửi",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "Etwas oder jemanden an einen Ort senden.",
+      "sentences": [
+        22
+      ]
+    },
+    {
+      "word": "Moment",
+      "baseForm": "der Moment",
+      "translation": "thời điểm",
+      "partOfSpeech": "Nomen",
+      "level": "A2",
+      "note": "Ein kurzer Zeitraum.",
+      "sentences": [
+        15,
+        34
+      ]
+    },
+    {
+      "word": "bleiben",
+      "baseForm": "bleiben",
+      "translation": "ở lại",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "An einem Ort nicht weggehen.",
+      "sentences": [
+        21,
+        28
+      ]
+    },
+    {
+      "word": "gerade",
+      "baseForm": "gerade",
+      "translation": "ngay bây giờ",
+      "partOfSpeech": "Adverb",
+      "level": "A2",
+      "note": "Im Moment, jetzt.",
+      "sentences": []
+    }
+  ]
+}

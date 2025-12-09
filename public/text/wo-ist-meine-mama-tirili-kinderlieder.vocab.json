@@ -1,0 +1,202 @@
+{
+  "lessonId": "wo-ist-meine-mama-tirili-kinderlieder",
+  "level": "B1",
+  "targetLang": "vi",
+  "extractedAt": "2025-12-09T15:36:18.629Z",
+  "totalWords": 15,
+  "vocabulary": [
+    {
+      "word": "Wo",
+      "baseForm": "Wo",
+      "translation": "Ở đâu",
+      "partOfSpeech": "Adverb",
+      "level": "A1",
+      "note": "Fragewort zur Ortsangabe",
+      "sentences": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "word": "Mama",
+      "baseForm": "die Mama",
+      "translation": "Mẹ",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "Umgangssprachliche Bezeichnung für die Mutter",
+      "sentences": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "word": "sehen",
+      "baseForm": "sehen",
+      "translation": "nhìn/thấy",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "Bedeutet, etwas visuell wahrzunehmen",
+      "sentences": []
+    },
+    {
+      "word": "wer",
+      "baseForm": "wer",
+      "translation": "ai",
+      "partOfSpeech": "Pronomen",
+      "level": "A1",
+      "note": "Fragewort für Personen",
+      "sentences": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ]
+    },
+    {
+      "word": "weitergehen",
+      "baseForm": "weitergehen",
+      "translation": "tiếp tục đi",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Bedeutet, den Weg fortzusetzen",
+      "sentences": []
+    },
+    {
+      "word": "nein",
+      "baseForm": "nein",
+      "translation": "không",
+      "partOfSpeech": "Partikel",
+      "level": "A1",
+      "note": "Verneinung",
+      "sentences": [
+        2,
+        5,
+        8,
+        11,
+        14
+      ]
+    },
+    {
+      "word": "bleiben",
+      "baseForm": "bleiben",
+      "translation": "ở lại",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "Bedeutet, an einem Ort zu verweilen",
+      "sentences": []
+    },
+    {
+      "word": "endlich",
+      "baseForm": "endlich",
+      "translation": "cuối cùng",
+      "partOfSpeech": "Adverb",
+      "level": "B1",
+      "note": "Drückt eine lange Wartezeit aus",
+      "sentences": [
+        23
+      ]
+    },
+    {
+      "word": "gehen",
+      "baseForm": "gehen",
+      "translation": "đi",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Bedeutet, sich zu Fuß fortzubewegen",
+      "sentences": []
+    },
+    {
+      "word": "gesehn'",
+      "baseForm": "sehen",
+      "translation": "nhìn/thấy",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "Umgangssprachliche Kurzform von 'gesehen'",
+      "sentences": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ]
+    },
+    {
+      "word": "ist",
+      "baseForm": "sein",
+      "translation": "thì",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Hilfsverb zur Bildung von Zuständen",
+      "sentences": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "word": "muss",
+      "baseForm": "müssen",
+      "translation": "phải",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "Drückt Notwendigkeit aus",
+      "sentences": [
+        2,
+        5,
+        8,
+        11,
+        14
+      ]
+    },
+    {
+      "word": "weiter",
+      "baseForm": "weiter",
+      "translation": "tiếp tục",
+      "partOfSpeech": "Adverb",
+      "level": "A2",
+      "note": "Bedeutet, fortzufahren oder zu ergänzen",
+      "sentences": [
+        2,
+        5,
+        8,
+        11,
+        14
+      ]
+    },
+    {
+      "word": "doch",
+      "baseForm": "doch",
+      "translation": "mà",
+      "partOfSpeech": "Partikel",
+      "level": "B1",
+      "note": "Verstärkung oder Widerspruch",
+      "sentences": [
+        23
+      ]
+    },
+    {
+      "word": "gesehn'",
+      "baseForm": "sehen",
+      "translation": "nhìn/thấy",
+      "partOfSpeech": "Verb",
+      "level": "A2",
+      "note": "Umgangssprachliche Kurzform von 'gesehen'",
+      "sentences": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ]
+    }
+  ]
+}

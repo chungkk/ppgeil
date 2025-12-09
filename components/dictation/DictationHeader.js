@@ -18,7 +18,9 @@ const DictationHeader = ({
   playbackSpeed,
   onSpeedChange,
   showTranslation,
-  onToggleTranslation
+  onToggleTranslation,
+  isShadowingMode,
+  onToggleShadowingMode
 }) => {
   const { t } = useTranslation();
 
@@ -71,9 +73,22 @@ const DictationHeader = ({
   return (
     <div className={styles.dictationHeader}>
       <h3 className={styles.dictationHeaderTitle}>
-        {t('lesson.ui.dictation')}
+        {isShadowingMode ? 'Shadowing' : t('lesson.ui.dictation')}
       </h3>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        {/* Shadowing Mode Toggle - Desktop Only */}
+        {onToggleShadowingMode && (
+          <label className={styles.toggleLabel}>
+            <input
+              type="checkbox"
+              checked={isShadowingMode}
+              onChange={onToggleShadowingMode}
+              className={styles.toggleInput}
+            />
+            <span className={styles.toggleSlider}></span>
+            <span className={styles.toggleText}>Shadowing</span>
+          </label>
+        )}
         {/* Translation Toggle - Desktop Only */}
         {onToggleTranslation && (
           <label className={styles.toggleLabel}>

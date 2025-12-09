@@ -1,0 +1,205 @@
+{
+  "lessonId": "dos-donts-beim-duschen-i-snukieful",
+  "level": "B1",
+  "targetLang": "vi",
+  "extractedAt": "2025-12-09T15:23:31.322Z",
+  "totalWords": 17,
+  "vocabulary": [
+    {
+      "word": "Duschroutine",
+      "baseForm": "die Duschroutine",
+      "translation": "thói quen tắm",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Thói quen hoặc quy trình khi tắm.",
+      "sentences": [
+        2
+      ]
+    },
+    {
+      "word": "Duschen",
+      "baseForm": "duschen",
+      "translation": "tắm",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Hành động tắm rửa.",
+      "sentences": [
+        5,
+        9,
+        14,
+        20,
+        24
+      ]
+    },
+    {
+      "word": "Tipps",
+      "baseForm": "die Tipps",
+      "translation": "mẹo",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Lời khuyên hoặc hướng dẫn.",
+      "sentences": [
+        7
+      ]
+    },
+    {
+      "word": "Musik",
+      "baseForm": "die Musik",
+      "translation": "nhạc",
+      "partOfSpeech": "Nomen",
+      "level": "A2",
+      "note": "Âm thanh được tạo ra từ nhạc cụ hoặc giọng hát.",
+      "sentences": [
+        39,
+        47,
+        105
+      ]
+    },
+    {
+      "word": "entspannen",
+      "baseForm": "entspannen",
+      "translation": "thư giãn",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Trạng thái không căng thẳng.",
+      "sentences": []
+    },
+    {
+      "word": "Konsistenz",
+      "baseForm": "die Konsistenz",
+      "translation": "độ đặc",
+      "partOfSpeech": "Nomen",
+      "level": "B2",
+      "note": "Cảm giác hoặc trạng thái của một chất.",
+      "sentences": [
+        16
+      ]
+    },
+    {
+      "word": "Pflege",
+      "baseForm": "die Pflege",
+      "translation": "chăm sóc",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Hành động chăm sóc bản thân hoặc người khác.",
+      "sentences": []
+    },
+    {
+      "word": "Haut",
+      "baseForm": "die Haut",
+      "translation": "da",
+      "partOfSpeech": "Nomen",
+      "level": "A2",
+      "note": "Lớp ngoài cùng của cơ thể.",
+      "sentences": [
+        62,
+        63,
+        69,
+        80,
+        82
+      ]
+    },
+    {
+      "word": "rasiere",
+      "baseForm": "rasieren",
+      "translation": "cạo",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Hành động làm sạch lông trên da.",
+      "sentences": [
+        68,
+        74
+      ]
+    },
+    {
+      "word": "eincremen",
+      "baseForm": "eincremen",
+      "translation": "thoa kem",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Hành động thoa kem lên da.",
+      "sentences": [
+        96
+      ]
+    },
+    {
+      "word": "Gemütlichkeit",
+      "baseForm": "die Gemütlichkeit",
+      "translation": "sự thoải mái",
+      "partOfSpeech": "Nomen",
+      "level": "B2",
+      "note": "Cảm giác ấm áp và thoải mái.",
+      "sentences": []
+    },
+    {
+      "word": "abwaschen",
+      "baseForm": "abwaschen",
+      "translation": "rửa sạch",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Hành động làm sạch một bề mặt.",
+      "sentences": [
+        37
+      ]
+    },
+    {
+      "word": "Wasser",
+      "baseForm": "das Wasser",
+      "translation": "nước",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "Chất lỏng cần thiết cho sự sống.",
+      "sentences": [
+        75,
+        76
+      ]
+    },
+    {
+      "word": "Feuchtigkeit",
+      "baseForm": "die Feuchtigkeit",
+      "translation": "độ ẩm",
+      "partOfSpeech": "Nomen",
+      "level": "B2",
+      "note": "Lượng nước trong không khí hoặc trên bề mặt.",
+      "sentences": [
+        81,
+        92
+      ]
+    },
+    {
+      "word": "schminken",
+      "baseForm": "schminken",
+      "translation": "trang điểm",
+      "partOfSpeech": "Verb",
+      "level": "B1",
+      "note": "Hành động sử dụng mỹ phẩm trên mặt.",
+      "sentences": [
+        97
+      ]
+    },
+    {
+      "word": "abends",
+      "baseForm": "abends",
+      "translation": "vào buổi tối",
+      "partOfSpeech": "Adverb",
+      "level": "A2",
+      "note": "Thời gian trong ngày, sau buổi chiều.",
+      "sentences": [
+        28,
+        30,
+        99
+      ]
+    },
+    {
+      "word": "Stimmung",
+      "baseForm": "die Stimmung",
+      "translation": "tâm trạng",
+      "partOfSpeech": "Nomen",
+      "level": "B1",
+      "note": "Cảm xúc hoặc trạng thái tinh thần.",
+      "sentences": [
+        18
+      ]
+    }
+  ]
+}
