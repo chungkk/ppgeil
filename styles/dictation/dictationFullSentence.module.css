@@ -34,6 +34,22 @@
   font-weight: 500;
 }
 
+/* Shadowing Mode - Full text display */
+.shadowingText {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--text-primary);
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  border-radius: 12px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .hintSentenceText {
   display: flex;
   flex-wrap: wrap;

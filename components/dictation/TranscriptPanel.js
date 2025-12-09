@@ -24,7 +24,9 @@ const TranscriptPanel = ({
   dictationMode,
   studyTime,
   onSentenceClick,
-  maskTextByPercentage
+  maskTextByPercentage,
+  learningMode = 'dictation',
+  showOnMobile = false
 }) => {
   const transcriptSectionRef = useRef(null);
   const transcriptItemRefs = useRef({});
@@ -63,7 +65,7 @@ const TranscriptPanel = ({
   const transcriptDisplayIndices = transcriptData.map((_, idx) => idx);
 
   return (
-    <div className={styles.rightSection}>
+    <div className={`${styles.rightSection} ${showOnMobile ? styles.showOnMobile : ''}`}>
       <div className={styles.transcriptHeader}>
         <div className={styles.transcriptHeaderLeft}>
           <h3 className={styles.transcriptTitle}>Transcript</h3>
@@ -94,8 +96,8 @@ const TranscriptPanel = ({
             
             const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
             const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
-            // Show full text when completed/checked
-            const shouldShowFullText = isCompleted || (dictationMode === 'full-sentence' && isChecked);
+            // Show full text when completed/checked OR when in shadowing mode
+            const shouldShowFullText = learningMode === 'shadowing' || isCompleted || (dictationMode === 'full-sentence' && isChecked);
 
             return (
               <div

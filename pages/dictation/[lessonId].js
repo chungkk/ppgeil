@@ -30,7 +30,6 @@ import { useSentenceNavigation } from '../../lib/hooks/useSentenceNavigation';
 import { useStudyTimer } from '../../lib/hooks/useStudyTimer';
 import { youtubeAPI } from '../../lib/youtubeApi';
 import { useAuth } from '../../context/AuthContext';
-import { useAnswerStreak } from '../../context/AnswerStreakContext';
 import { speakText } from '../../lib/textToSpeech';
 import { toast } from 'react-toastify';
 import { translationCache } from '../../lib/translationCache';
@@ -80,6 +79,9 @@ const DictationPageContent = () => {
   // Auto-stop video at end of sentence (similar to shadowing mode)
   const [autoStop, setAutoStop] = useState(true);
 
+  // Learning mode: 'dictation' (hide words) or 'shadowing' (show words)
+  const [learningMode, setLearningMode] = useState('dictation');
+
   // Playback speed control
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
 
@@ -96,7 +98,6 @@ const DictationPageContent = () => {
 
   // Get user and auth functions
   const { user } = useAuth();
-  const { incrementStreak, resetStreak } = useAnswerStreak();
   
   // Dictation specific states (from ckk)
   const [savedWords, setSavedWords] = useState([]);
@@ -1939,20 +1940,13 @@ const DictationPageContent = () => {
 
   // showPointsAnimation is now provided by usePointsAnimation hook
 
-  // Update points function - wrapper that adds streak logic
+  // Update points function
   const updatePoints = useCallback(async (pointsChange, reason, element = null) => {
     if (!user) return;
     
-    // Update answer streak based on correct/incorrect answer
-    if (pointsChange > 0) {
-      await incrementStreak();
-    } else if (pointsChange < 0) {
-      await resetStreak();
-    }
-    
     // Use hook's updatePoints for API call and animation
     await updatePointsBase(user, pointsChange, reason, element);
-  }, [user, incrementStreak, resetStreak, updatePointsBase]);
+  }, [user, updatePointsBase]);
 
   // Update input background
   const updateInputBackground = useCallback((input, correctWord) => {
@@ -2980,9 +2974,11 @@ const DictationPageContent = () => {
               onToggleTranslation={() => setShowTranslation(!showTranslation)}
               autoStop={autoStop}
               onAutoStopChange={setAutoStop}
+              learningMode={learningMode}
+              onToggleLearningMode={() => setLearningMode(prev => prev === 'dictation' ? 'shadowing' : 'dictation')}
             />
 
-            <div className={styles.dictationContainer}>
+            <div className={`${styles.dictationContainer} ${learningMode === 'shadowing' && isMobile ? styles.hideOnMobileShadowing : ''}`}>
               {/* Mobile: Horizontal Scrollable Slides with Lazy Loading */}
               {transcriptData.length === 0 ? (
                 <div style={{ 
@@ -3033,6 +3029,7 @@ const DictationPageContent = () => {
                           partialRevealedChars={partialRevealedChars}
                           fullSentenceInputs={fullSentenceInputs}
                           sortedTranscriptIndices={sortedTranscriptIndices}
+                          learningMode={learningMode}
                           onSlideClick={handleMobileSlideClick}
                           onTouchStart={handleTouchStart}
                           onTouchMove={handleTouchMove}
@@ -3076,6 +3073,7 @@ const DictationPageContent = () => {
                   onHintWordClick={showHintWordSuggestion}
                   onCalculatePartialReveals={calculatePartialReveals}
                   renderCompletedSentenceWithWordBoxes={renderCompletedSentenceWithWordBoxes}
+                  learningMode={learningMode}
                 />
               )}
             </div>
@@ -3094,6 +3092,8 @@ const DictationPageContent = () => {
             studyTime={studyTime}
             onSentenceClick={handleSentenceClick}
             maskTextByPercentage={maskTextByPercentage}
+            learningMode={learningMode}
+            showOnMobile={learningMode === 'shadowing' && isMobile}
           />
         </div>
       </div>

@@ -7,16 +7,13 @@ import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useNotifications } from '../context/NotificationContext';
-import { useAnswerStreak, getStreakLevel } from '../context/AnswerStreakContext';
+
 import { getDefaultAvatar } from '../lib/helpers/avatar';
 import { getTodaysPhrase } from '../lib/data/nomenVerbVerbindungen';
 import phraseExplanationsCache from '../lib/data/phraseExplanations.json';
 import NotificationDropdown from './NotificationDropdown';
 import LoginModal from './LoginModal';
 import styles from '../styles/Header.module.css';
-
-// Day labels for weekly progress (Monday to Sunday)
-const DAY_LABELS = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'];
 
 // Initial state for header UI
 const initialState = {
@@ -74,8 +71,6 @@ const Header = () => {
   const { theme, toggleTheme, currentTheme } = useTheme();
   const { currentLanguage, changeLanguage, languages, currentLanguageInfo } = useLanguage();
   const { unreadCount, fetchUnreadCount } = useNotifications();
-  const { currentStreak, maxStreak, showCelebration, celebrationStreak } = useAnswerStreak();
-  const [showStreakTooltip, setShowStreakTooltip] = useState(false);
   const [showPhraseTooltip, setShowPhraseTooltip] = useState(false);
   const [phraseExplanation, setPhraseExplanation] = useState(null);
   const [loadingExplanation, setLoadingExplanation] = useState(false);
@@ -133,15 +128,7 @@ const Header = () => {
     }
   }, [todaysPhrase, phraseExplanation, loadingExplanation, user?.nativeLanguage]);
   
-  // Get weekly progress from user (for attendance tracking)
-  const weeklyProgress = user?.streak?.weeklyProgress || [false, false, false, false, false, false, false];
-  
-  // Get current day index (0 = Monday, 6 = Sunday)
-  const getCurrentDayIndex = () => {
-    const day = new Date().getDay();
-    return day === 0 ? 6 : day - 1;
-  };
-  const todayIndex = getCurrentDayIndex();
+
 
   // Detect scroll for transparent header
   useEffect(() => {
@@ -398,58 +385,6 @@ const Header = () => {
 
           {user && (
             <>
-              {/* Answer Streak Badge with weekly progress tooltip */}
-              <div 
-                className={styles.streakContainer}
-                onMouseEnter={() => setShowStreakTooltip(true)}
-                onMouseLeave={() => setShowStreakTooltip(false)}
-              >
-                <div 
-                  className={`${styles.streakBadge} ${
-                    currentStreak >= 15 ? styles.streakLegendary :
-                    currentStreak >= 10 ? styles.streakFire :
-                    currentStreak >= 5 ? styles.streakHot :
-                    currentStreak === 0 ? styles.streakInactive : ''
-                  }`}
-                >
-                  <span className={styles.streakIcon}>🔥</span>
-                  <span className={styles.streakValue}>{currentStreak}</span>
-                </div>
-                
-                {/* Weekly Progress Tooltip */}
-                {showStreakTooltip && (
-                  <div className={styles.streakTooltip}>
-                    <div className={styles.streakTooltipTitle}>
-                      Chuỗi đúng: {currentStreak} (max: {maxStreak})
-                    </div>
-                    <div className={styles.streakTooltipSubtitle}>
-                      Điểm danh tuần này
-                    </div>
-                    <div className={styles.weeklyProgress}>
-                      {DAY_LABELS.map((day, index) => (
-                        <div 
-                          key={day} 
-                          className={`${styles.dayItem} ${
-                            weeklyProgress[index] ? styles.dayActive : ''
-                          } ${index === todayIndex ? styles.dayToday : ''}`}
-                        >
-                          <span className={styles.dayLabel}>{day}</span>
-                          <span className={styles.dayCheck}>
-                            {weeklyProgress[index] ? '✓' : ''}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-                
-                {showCelebration && (
-                  <div className={styles.streakCelebration}>
-                    {celebrationStreak} 🔥
-                  </div>
-                )}
-              </div>
-
               <div className={styles.pointsContainer}>
                 <div className={styles.pointsBadge} title={t('header.points')}>
                   <span className={styles.pointsIcon}>💎</span>

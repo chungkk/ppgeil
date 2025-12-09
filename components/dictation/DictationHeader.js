@@ -18,7 +18,9 @@ const DictationHeader = ({
   playbackSpeed,
   onSpeedChange,
   showTranslation,
-  onToggleTranslation
+  onToggleTranslation,
+  learningMode = 'dictation',
+  onToggleLearningMode
 }) => {
   const { t } = useTranslation();
 
@@ -35,6 +37,19 @@ const DictationHeader = ({
   if (isMobile) {
     return (
       <div className={styles.dictationHeaderMobile}>
+        {/* Left: Learning mode toggle */}
+        <div className={styles.headerLeftMobile}>
+          {onToggleLearningMode && (
+            <button 
+              className={`${styles.modeToggleButton} ${learningMode === 'shadowing' ? styles.modeToggleActive : ''}`}
+              onClick={onToggleLearningMode}
+              title={learningMode === 'dictation' ? 'Chuyển sang Shadowing' : 'Chuyển sang Dictation'}
+            >
+              {learningMode === 'dictation' ? '📝' : '👀'}
+            </button>
+          )}
+        </div>
+
         {/* Center: Sentence counter */}
         <div className={styles.headerCenter}>
           <span className={styles.sentenceNumber}>#{currentSentenceIndex + 1}</span>
@@ -63,9 +78,22 @@ const DictationHeader = ({
   return (
     <div className={styles.dictationHeader}>
       <h3 className={styles.dictationHeaderTitle}>
-        {t('lesson.ui.dictation')}
+        {learningMode === 'dictation' ? t('lesson.ui.dictation') : t('lesson.ui.shadowing')}
       </h3>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        {/* Learning Mode Toggle */}
+        {onToggleLearningMode && (
+          <label className={styles.toggleLabel}>
+            <input
+              type="checkbox"
+              checked={learningMode === 'shadowing'}
+              onChange={onToggleLearningMode}
+              className={styles.toggleInput}
+            />
+            <span className={styles.toggleSlider}></span>
+            <span className={styles.toggleText}>{learningMode === 'dictation' ? 'Shadowing' : 'Dictation'}</span>
+          </label>
+        )}
         {/* Translation Toggle - Desktop Only */}
         {onToggleTranslation && (
           <label className={styles.toggleLabel}>

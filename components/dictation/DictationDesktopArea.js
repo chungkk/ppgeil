@@ -23,7 +23,8 @@ const DictationDesktopArea = ({
   onSubmit,
   onHintWordClick,
   onCalculatePartialReveals,
-  renderCompletedSentenceWithWordBoxes
+  renderCompletedSentenceWithWordBoxes,
+  learningMode = 'dictation'
 }) => {
   const currentSentence = transcriptData[currentSentenceIndex];
   const isCompleted = completedSentences.includes(currentSentenceIndex);
@@ -67,12 +68,20 @@ const DictationDesktopArea = ({
     });
   };
 
+  // In shadowing mode, show full text
+  const isShadowingMode = learningMode === 'shadowing';
+
   return (
     <div className={styles.fullSentenceMode}>
       {/* Combined Display + Translation Box */}
       <div className={styles.dictationBox}>
         <div className={styles.fullSentenceDisplay}>
-          {isCompleted ? (
+          {isShadowingMode ? (
+            // Shadowing mode: show full text
+            <div className={styles.shadowingText}>
+              {currentSentence.text}
+            </div>
+          ) : isCompleted ? (
             <div 
               className={styles.dictationInputArea}
               dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(currentSentence.text) }}
@@ -96,35 +105,40 @@ const DictationDesktopArea = ({
         )}
       </div>
 
-      <div className={styles.textareaWithVoice}>
-        <textarea
-          className={styles.fullSentenceInput}
-          placeholder="Nhập toàn bộ câu..."
-          value={fullSentenceInputs[currentSentenceIndex] || ''}
-          onChange={(e) => {
-            onInputChange(currentSentenceIndex, e.target.value);
-            onCalculatePartialReveals(currentSentenceIndex, e.target.value, currentSentence.text);
-          }}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' && !e.shiftKey) {
-              e.preventDefault();
-              onSubmit(currentSentenceIndex);
-            }
-          }}
-          disabled={isCompleted}
-          rows={3}
-        />
-      </div>
+      {/* Hide input area in shadowing mode */}
+      {!isShadowingMode && (
+        <>
+          <div className={styles.textareaWithVoice}>
+            <textarea
+              className={styles.fullSentenceInput}
+              placeholder="Nhập toàn bộ câu..."
+              value={fullSentenceInputs[currentSentenceIndex] || ''}
+              onChange={(e) => {
+                onInputChange(currentSentenceIndex, e.target.value);
+                onCalculatePartialReveals(currentSentenceIndex, e.target.value, currentSentence.text);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  onSubmit(currentSentenceIndex);
+                }
+              }}
+              disabled={isCompleted}
+              rows={3}
+            />
+          </div>
 
-      <div className={styles.dictationActions}>
-        <button
-          className={styles.checkButton}
-          onClick={() => onSubmit(currentSentenceIndex)}
-          disabled={isCompleted}
-        >
-          Kiểm tra
-        </button>
-      </div>
+          <div className={styles.dictationActions}>
+            <button
+              className={styles.checkButton}
+              onClick={() => onSubmit(currentSentenceIndex)}
+              disabled={isCompleted}
+            >
+              Kiểm tra
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 };

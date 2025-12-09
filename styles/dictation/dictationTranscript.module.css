@@ -318,6 +318,60 @@
 
 @media (max-width: 768px) {
   .rightSection {
-    display: none !important; /* Hide transcript on mobile */
+    display: none; /* Hide transcript on mobile - can be overridden by showOnMobile */
   }
+
+  /* Show transcript on mobile when in shadowing mode */
+  /* Vị trí giống với middleSection (cột diktat) ở chế độ dictation */
+  .rightSection.showOnMobile {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: calc(64px + 56.25vw + 8px); /* Below video (16:9 aspect) + header + gap - giống middleSection */
+    bottom: calc(80px + env(safe-area-inset-bottom, 0px)); /* Above bottom controls - giống middleSection */
+    left: 8px;
+    right: 8px;
+    margin: 0;
+    padding: 0;
+    border-radius: 16px;
+    background: rgba(20, 20, 30, 0.95);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    overflow: hidden;
+    z-index: 50; /* Same as middleSection */
+  }
+
+  .rightSection.showOnMobile .transcriptHeader {
+    padding: 10px 12px;
+    min-height: 40px;
+  }
+
+  .rightSection.showOnMobile .transcriptSection {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+  }
+
+  .rightSection.showOnMobile .transcriptItem {
+    padding: 10px 12px;
+  }
+
+  .rightSection.showOnMobile .transcriptItemText {
+    font-size: 15px;
+    padding-left: 24px;
+  }
+}
+
+/* Small mobile screens (480px) - match middleSection positioning */
+@media (max-width: 480px) {
+  .rightSection.showOnMobile {
+    top: calc(64px + 56.25vw + 6px); /* Smaller gap on small screens - giống middleSection */
+    bottom: calc(78px + env(safe-area-inset-bottom, 0px));
+    left: 6px;
+    right: 6px;
+  }
+}
+
+/* Shadowing mode mobile class */
+.showOnMobile {
+  /* Base styles - applied when showOnMobile prop is true */
 }

@@ -29,6 +29,7 @@ const DictationMobileSlide = memo(({
   partialRevealedChars,
   fullSentenceInputs,
   sortedTranscriptIndices,
+  learningMode = 'dictation',
   
   // Event handlers
   onSlideClick,
@@ -102,7 +103,12 @@ const DictationMobileSlide = memo(({
         onTouchEnd={isActive ? onTouchEnd : undefined}
       >
         <div className={styles.fullSentenceDisplay}>
-          {isCompleted ? (
+          {learningMode === 'shadowing' ? (
+            // Shadowing mode: show full text
+            <div className={styles.shadowingText}>
+              {sentence.text}
+            </div>
+          ) : isCompleted ? (
             <div 
               className={styles.dictationInputArea}
               dangerouslySetInnerHTML={{ __html: renderCompletedSentenceWithWordBoxes(sentence.text) }}

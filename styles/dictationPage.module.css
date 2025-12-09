@@ -3032,6 +3032,19 @@
   .rightSection {
     display: none; /* Hide transcript on mobile */
   }
+
+  /* Hide dictation slides on mobile when in shadowing mode */
+  .hideOnMobileShadowing {
+    display: none !important;
+  }
+
+  /* Adjust middleSection when dictation is hidden (shadowing mode) */
+  .middleSection:has(.hideOnMobileShadowing) {
+    height: auto;
+    min-height: 44px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+  }
   
   /* Mobile Dictation Header - Clean & Compact Design */
   .dictationHeaderMobile {

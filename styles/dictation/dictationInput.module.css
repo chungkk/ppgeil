@@ -355,3 +355,104 @@
 [data-theme="dark"] .dictationInputArea :global(.hint-btn):hover {
   background: #a78bfa;
 }
+
+/* ============================================
+   MODE TOGGLE BUTTON STYLES
+   ============================================ */
+
+/* Mobile Header Left */
+.headerLeftMobile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Mode Toggle Button */
+.modeToggleButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+  border: 2px solid rgba(102, 126, 234, 0.3);
+  color: #667eea;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.modeToggleButton:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.25) 0%, rgba(118, 75, 162, 0.25) 100%);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: scale(1.05);
+}
+
+.modeToggleButton:active {
+  transform: scale(0.95);
+}
+
+/* Active state (shadowing mode) */
+.modeToggleActive {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.2) 100%);
+  border-color: rgba(16, 185, 129, 0.5);
+  color: #10b981;
+  box-shadow: 0 2px 12px rgba(16, 185, 129, 0.3);
+}
+
+.modeToggleActive:hover {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.3) 0%, rgba(5, 150, 105, 0.3) 100%);
+  border-color: rgba(16, 185, 129, 0.7);
+}
+
+/* Toggle Label Styles (for desktop) */
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.toggleSlider {
+  width: 36px;
+  height: 20px;
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggleSlider::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggleInput:checked + .toggleSlider {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.toggleInput:checked + .toggleSlider::before {
+  transform: translateX(16px);
+}
+
+.toggleText {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
