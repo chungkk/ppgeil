@@ -30,6 +30,7 @@ const DictationMobileSlide = memo(({
   fullSentenceInputs,
   sortedTranscriptIndices,
   learningMode = 'dictation',
+  showTranslation = false,
   
   // Event handlers
   onSlideClick,
@@ -154,20 +155,12 @@ const DictationMobileSlide = memo(({
           )}
         </div>
 
-        {/* Textarea hidden for mobile - not needed anymore */}
-        {/* <div className={styles.textareaWithVoice} style={{ position: 'relative' }}>
-          <textarea
-            className={styles.fullSentenceInput}
-            placeholder="Nhập toàn bộ câu..."
-            value={fullSentenceInputs[originalIndex] || ''}
-            onChange={handleInputChange}
-            onKeyDown={handleKeyDown}
-            disabled={isCompleted}
-            rows={3}
-          />
-        </div> */}
-
-
+        {/* Translation display */}
+        {showTranslation && sentence.translation && (
+          <div className={styles.slideTranslation}>
+            {sentence.translation}
+          </div>
+        )}
       </div>
     </div>
   );

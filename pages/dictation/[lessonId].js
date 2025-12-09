@@ -3032,6 +3032,7 @@ const DictationPageContent = () => {
                           fullSentenceInputs={fullSentenceInputs}
                           sortedTranscriptIndices={sortedTranscriptIndices}
                           learningMode={learningMode}
+                          showTranslation={showTranslation}
                           onSlideClick={handleMobileSlideClick}
                           onTouchStart={handleTouchStart}
                           onTouchMove={handleTouchMove}
@@ -3077,7 +3078,7 @@ const DictationPageContent = () => {
                             <div className={styles.mobileTranscriptText}>
                               {segment.text}
                             </div>
-                            {segment.translation && (
+                            {showTranslation && segment.translation && (
                               <div className={styles.mobileTranscriptTranslation}>
                                 {segment.translation}
                               </div>
