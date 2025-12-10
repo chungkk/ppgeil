@@ -3,18 +3,28 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
+import { useAuth } from '../../../context/AuthContext';
 import styles from '../../../styles/practice.module.css';
 
 const WritePracticePage = () => {
   const router = useRouter();
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
+  const { user, loading: authLoading } = useAuth();
+
+  // Redirect to login if not authenticated
+  useEffect(() => {
+    if (!authLoading && !user) {
+      router.push(`/dictation/${lessonId}?login=true`);
+    }
+  }, [user, authLoading, router, lessonId]);
 
   const [vocabulary, setVocabulary] = useState([]);
   const [writeVocab, setWriteVocab] = useState([]);
   const [writeAnswers, setWriteAnswers] = useState({});
   const [writeResults, setWriteResults] = useState({});
   const [writeChecked, setWriteChecked] = useState(false);
+  const [isChecking, setIsChecking] = useState(false);
 
   // Load vocabulary
   useEffect(() => {
@@ -40,34 +50,91 @@ const WritePracticePage = () => {
     return word.replace(/^(der|die|das)\s+/i, '').toLowerCase();
   };
 
-  // Check answers
-  const checkAnswers = () => {
+  // Check answers with OpenAI
+  const checkAnswers = async () => {
+    setIsChecking(true);
     const results = {};
-    writeVocab.forEach((vocab, idx) => {
+    const targetLang = user?.nativeLanguage || 'vi';
+    
+    // Process each sentence with OpenAI
+    const checkPromises = writeVocab.map(async (vocab, idx) => {
       const userAnswer = writeAnswers[idx] || '';
       const baseWord = getBaseWord(vocab.word);
-      const hasWord = userAnswer.toLowerCase().includes(baseWord);
-      const wordCount = userAnswer.trim().split(/\s+/).filter(w => w).length;
-      const isLongEnough = wordCount >= 4;
       
-      let feedback = '';
-      let isCorrect = false;
-      
+      // Basic validation first
       if (!userAnswer.trim()) {
-        feedback = 'Bạn chưa viết gì!';
-      } else if (!hasWord) {
-        feedback = `Câu chưa chứa từ "${vocab.word}"!`;
-      } else if (!isLongEnough) {
-        feedback = 'Câu quá ngắn! Hãy viết ít nhất 4 từ.';
-      } else {
-        feedback = 'Tốt lắm! 👏';
-        isCorrect = true;
+        return { idx, result: { isCorrect: false, feedback: 'Bạn chưa viết gì!', aiChecked: false } };
       }
       
-      results[idx] = { isCorrect, feedback };
+      const wordCount = userAnswer.trim().split(/\s+/).filter(w => w).length;
+      if (wordCount < 3) {
+        return { idx, result: { isCorrect: false, feedback: 'Câu quá ngắn!', aiChecked: false } };
+      }
+      
+      // Check with OpenAI
+      try {
+        const response = await fetch('/api/check-sentence', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            sentence: userAnswer,
+            vocabulary: vocab.word,
+            targetLang
+          })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+          return {
+            idx,
+            result: {
+              isCorrect: data.isCorrect && data.hasVocabulary && data.grammarScore >= 7,
+              hasVocabulary: data.hasVocabulary,
+              grammarScore: data.grammarScore,
+              errors: data.errors || [],
+              corrections: data.corrections,
+              suggestion: data.suggestion,
+              explanation: data.explanation,
+              feedback: data.isCorrect ? 'Tốt lắm! 👏' : 'Cần cải thiện',
+              aiChecked: true
+            }
+          };
+        } else {
+          // Fallback to basic check
+          const hasWord = userAnswer.toLowerCase().includes(baseWord);
+          return {
+            idx,
+            result: {
+              isCorrect: hasWord && wordCount >= 4,
+              feedback: hasWord ? 'Tốt lắm! 👏' : `Câu chưa chứa từ "${vocab.word}"!`,
+              aiChecked: false
+            }
+          };
+        }
+      } catch (error) {
+        console.error('AI check error:', error);
+        // Fallback to basic check
+        const hasWord = userAnswer.toLowerCase().includes(baseWord);
+        return {
+          idx,
+          result: {
+            isCorrect: hasWord && wordCount >= 4,
+            feedback: hasWord ? 'Tốt lắm! 👏' : `Câu chưa chứa từ "${vocab.word}"!`,
+            aiChecked: false
+          }
+        };
+      }
     });
+    
+    const checkResults = await Promise.all(checkPromises);
+    checkResults.forEach(({ idx, result }) => {
+      results[idx] = result;
+    });
+    
     setWriteResults(results);
     setWriteChecked(true);
+    setIsChecking(false);
   };
 
   // Reset
@@ -111,7 +178,7 @@ const WritePracticePage = () => {
     }
   }, []);
 
-  if (isLoading) {
+  if (isLoading || authLoading || !user) {
     return (
       <div className={styles.page}>
         <div className={styles.loadingState}>
@@ -199,11 +266,60 @@ const WritePracticePage = () => {
                 rows={2}
               />
               
-              {writeChecked && (
+              {writeChecked && writeResults[idx] && (
                 <div className={styles.resultBox}>
-                  <span className={writeResults[idx]?.isCorrect ? styles.resultCorrect : styles.resultIncorrect}>
-                    {writeResults[idx]?.isCorrect ? '✓ ' : '✗ '}{writeResults[idx]?.feedback}
-                  </span>
+                  {/* Score and basic feedback */}
+                  <div className={styles.resultHeader}>
+                    <span className={writeResults[idx]?.isCorrect ? styles.resultCorrect : styles.resultIncorrect}>
+                      {writeResults[idx]?.isCorrect ? '✓ ' : '✗ '}
+                      {writeResults[idx]?.aiChecked && writeResults[idx]?.grammarScore 
+                        ? `Điểm ngữ pháp: ${writeResults[idx].grammarScore}/10` 
+                        : writeResults[idx]?.feedback}
+                    </span>
+                  </div>
+                  
+                  {/* AI detailed feedback */}
+                  {writeResults[idx]?.aiChecked && (
+                    <div className={styles.aiFeedback}>
+                      {/* Errors */}
+                      {writeResults[idx]?.errors?.length > 0 && (
+                        <div className={styles.aiErrorsBox}>
+                          <span className={styles.aiLabel}>❌ Lỗi:</span>
+                          <ul className={styles.aiErrorList}>
+                            {writeResults[idx].errors.map((err, i) => (
+                              <li key={i}>{err}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Corrections - only show if different from original */}
+                      {writeResults[idx]?.corrections && 
+                       !writeResults[idx]?.isCorrect && 
+                       writeResults[idx].corrections.toLowerCase().trim() !== (writeAnswers[idx] || '').toLowerCase().trim() && (
+                        <div className={styles.aiCorrectionBox}>
+                          <span className={styles.aiLabel}>✏️ Sửa lại:</span>
+                          <p className={styles.aiCorrectionText}>{writeResults[idx].corrections}</p>
+                        </div>
+                      )}
+                      
+                      {/* Suggestion */}
+                      {writeResults[idx]?.suggestion && (
+                        <div className={styles.aiSuggestionBox}>
+                          <span className={styles.aiLabel}>💡 Gợi ý câu hay hơn:</span>
+                          <p className={styles.aiSuggestionText}>{writeResults[idx].suggestion}</p>
+                        </div>
+                      )}
+                      
+                      {/* Explanation */}
+                      {writeResults[idx]?.explanation && (
+                        <div className={styles.aiExplanationBox}>
+                          <span className={styles.aiLabel}>📝 Giải thích:</span>
+                          <p className={styles.aiExplanationText}>{writeResults[idx].explanation}</p>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -213,8 +329,19 @@ const WritePracticePage = () => {
         {/* Actions */}
         <div className={styles.actionButtons}>
           {!writeChecked ? (
-            <button className={styles.primaryBtn} onClick={checkAnswers}>
-              ✓ Kiểm tra kết quả
+            <button 
+              className={styles.primaryBtn} 
+              onClick={checkAnswers}
+              disabled={isChecking}
+            >
+              {isChecking ? (
+                <>
+                  <span className={styles.btnSpinner}></span>
+                  AI đang kiểm tra...
+                </>
+              ) : (
+                '✓ Kiểm tra kết quả'
+              )}
             </button>
           ) : (
             <>

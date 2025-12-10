@@ -1,14 +1,24 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
+import { useAuth } from '../../../context/AuthContext';
+import { youtubeAPI } from '../../../lib/youtubeApi';
 import styles from '../../../styles/practice.module.css';
 
 const ListenPracticePage = () => {
   const router = useRouter();
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
+  const { user, loading: authLoading } = useAuth();
+
+  // Redirect to login if not authenticated
+  useEffect(() => {
+    if (!authLoading && !user) {
+      router.push(`/dictation/${lessonId}?login=true`);
+    }
+  }, [user, authLoading, router, lessonId]);
 
   const [transcriptData, setTranscriptData] = useState([]);
   const [vocabulary, setVocabulary] = useState([]);
@@ -17,6 +27,12 @@ const ListenPracticePage = () => {
   const [listenResults, setListenResults] = useState({});
   const [listenChecked, setListenChecked] = useState(false);
   const [currentPlaying, setCurrentPlaying] = useState(null);
+  
+  // YouTube player
+  const [isYouTubeReady, setIsYouTubeReady] = useState(false);
+  const youtubePlayerRef = useRef(null);
+  const playEndTimeRef = useRef(null);
+  const checkIntervalRef = useRef(null);
 
   // Load transcript
   useEffect(() => {
@@ -57,40 +73,118 @@ const ListenPracticePage = () => {
     }
   }, [transcriptData, vocabulary, listenSentences.length]);
 
-  // Play sentence using TTS
-  const playSentence = useCallback((sentence, idx) => {
-    if (!sentence?.text) return;
+  // Extract YouTube video ID
+  const getYouTubeVideoId = (url) => {
+    if (!url) return null;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+  };
+
+  // Initialize YouTube player
+  useEffect(() => {
+    if (!lesson?.youtubeUrl) return;
     
-    setCurrentPlaying(idx);
-    
-    if (window.speechSynthesis) {
-      window.speechSynthesis.cancel();
-    }
-    
-    const doSpeak = () => {
-      const utterance = new SpeechSynthesisUtterance(sentence.text);
-      utterance.lang = 'de-DE';
-      utterance.rate = 0.85;
-      utterance.pitch = 1;
-      utterance.volume = 1;
+    const videoId = getYouTubeVideoId(lesson.youtubeUrl);
+    if (!videoId) return;
+
+    youtubeAPI.waitForAPI().then(() => {
+      if (youtubePlayerRef.current) {
+        youtubePlayerRef.current.destroy();
+      }
       
-      const voices = window.speechSynthesis.getVoices();
-      const germanVoice = voices.find(v => v.lang.startsWith('de'));
-      if (germanVoice) utterance.voice = germanVoice;
-      
-      utterance.onend = () => setCurrentPlaying(null);
-      utterance.onerror = () => setCurrentPlaying(null);
-      
-      window.speechSynthesis.speak(utterance);
+      youtubePlayerRef.current = new window.YT.Player('youtube-player-mini', {
+        height: '100%',
+        width: '100%',
+        videoId: videoId,
+        playerVars: {
+          controls: 0,
+          disablekb: 1,
+          fs: 0,
+          modestbranding: 1,
+          rel: 0,
+          playsinline: 1,
+        },
+        events: {
+          onReady: () => setIsYouTubeReady(true),
+          onStateChange: (event) => {
+            if (event.data === window.YT.PlayerState.PAUSED || 
+                event.data === window.YT.PlayerState.ENDED) {
+              setCurrentPlaying(null);
+              if (checkIntervalRef.current) {
+                clearInterval(checkIntervalRef.current);
+              }
+            }
+          }
+        }
+      });
+    });
+
+    return () => {
+      if (youtubePlayerRef.current) {
+        youtubePlayerRef.current.destroy();
+      }
+      if (checkIntervalRef.current) {
+        clearInterval(checkIntervalRef.current);
+      }
     };
+  }, [lesson?.youtubeUrl]);
+
+  // Play sentence from YouTube
+  const playSentence = useCallback((sentence, idx) => {
+    if (!sentence) return;
     
-    if (window.speechSynthesis.getVoices().length === 0) {
-      window.speechSynthesis.onvoiceschanged = doSpeak;
-      window.speechSynthesis.getVoices();
+    const player = youtubePlayerRef.current;
+    
+    // If YouTube player available, use it
+    if (player && player.seekTo && isYouTubeReady) {
+      setCurrentPlaying(idx);
+      
+      player.seekTo(sentence.start, true);
+      player.playVideo();
+      playEndTimeRef.current = sentence.end;
+      
+      // Check to stop at end time
+      if (checkIntervalRef.current) {
+        clearInterval(checkIntervalRef.current);
+      }
+      
+      checkIntervalRef.current = setInterval(() => {
+        if (player.getCurrentTime && player.getCurrentTime() >= playEndTimeRef.current - 0.1) {
+          player.pauseVideo();
+          setCurrentPlaying(null);
+          clearInterval(checkIntervalRef.current);
+        }
+      }, 100);
     } else {
-      doSpeak();
+      // Fallback to TTS
+      setCurrentPlaying(idx);
+      
+      if (window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      }
+      
+      const doSpeak = () => {
+        const utterance = new SpeechSynthesisUtterance(sentence.text);
+        utterance.lang = 'de-DE';
+        utterance.rate = 0.85;
+        utterance.onend = () => setCurrentPlaying(null);
+        utterance.onerror = () => setCurrentPlaying(null);
+        
+        const voices = window.speechSynthesis.getVoices();
+        const germanVoice = voices.find(v => v.lang.startsWith('de'));
+        if (germanVoice) utterance.voice = germanVoice;
+        
+        window.speechSynthesis.speak(utterance);
+      };
+      
+      if (window.speechSynthesis.getVoices().length === 0) {
+        window.speechSynthesis.onvoiceschanged = doSpeak;
+      } else {
+        doSpeak();
+      }
     }
-  }, []);
+  }, [isYouTubeReady]);
 
   // Calculate similarity
   const calculateSimilarity = (input, correct) => {
@@ -151,7 +245,7 @@ const ListenPracticePage = () => {
     return { correct, total: listenSentences.length };
   };
 
-  if (isLoading) {
+  if (isLoading || authLoading || !user) {
     return (
       <div className={styles.page}>
         <div className={styles.loadingState}>
@@ -170,6 +264,20 @@ const ListenPracticePage = () => {
         title={`Luyện nghe: ${lesson?.title || 'Bài học'}`}
         description="Luyện nghe tiếng Đức"
       />
+
+      {/* Mini Video Player - Fixed position */}
+      {lesson?.youtubeUrl && (
+        <div className={styles.miniVideoContainer}>
+          <div className={styles.miniVideoWrapper}>
+            <div id="youtube-player-mini"></div>
+          </div>
+          {!isYouTubeReady && (
+            <div className={styles.miniVideoLoading}>
+              <div className={styles.spinner}></div>
+            </div>
+          )}
+        </div>
+      )}
 
       <div className={styles.container}>
         {/* Header */}

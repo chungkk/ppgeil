@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
+import { useAuth } from '../../../context/AuthContext';
 import styles from '../../../styles/practice.module.css';
 
 const SpeakPracticePage = () => {
   const router = useRouter();
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
+  const { user, loading: authLoading } = useAuth();
 
-  if (isLoading) {
+  // Redirect to login if not authenticated
+  useEffect(() => {
+    if (!authLoading && !user) {
+      router.push(`/dictation/${lessonId}?login=true`);
+    }
+  }, [user, authLoading, router, lessonId]);
+
+  if (isLoading || authLoading || !user) {
     return (
       <div className={styles.page}>
         <div className={styles.loadingState}>

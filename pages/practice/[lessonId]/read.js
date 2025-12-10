@@ -3,18 +3,29 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
+import { useAuth } from '../../../context/AuthContext';
 import styles from '../../../styles/practice.module.css';
 
 const ReadPracticePage = () => {
   const router = useRouter();
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
+  const { user, loading: authLoading } = useAuth();
+
+  // Redirect to login if not authenticated
+  useEffect(() => {
+    if (!authLoading && !user) {
+      router.push(`/dictation/${lessonId}?login=true`);
+    }
+  }, [user, authLoading, router, lessonId]);
 
   const [transcriptData, setTranscriptData] = useState([]);
-  const [readQuestions, setReadQuestions] = useState([]);
-  const [readAnswers, setReadAnswers] = useState({});
-  const [readResults, setReadResults] = useState({});
-  const [readChecked, setReadChecked] = useState(false);
+  const [vocabulary, setVocabulary] = useState([]);
+  const [questions, setQuestions] = useState([]);
+  const [selectedAnswers, setSelectedAnswers] = useState({});
+  const [isChecked, setIsChecked] = useState(false);
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [error, setError] = useState(null);
 
   // Load transcript
   useEffect(() => {
@@ -26,92 +37,88 @@ const ReadPracticePage = () => {
     }
   }, [lesson]);
 
-  // Generate reading questions
+  // Load vocabulary
   useEffect(() => {
-    if (transcriptData.length > 0 && readQuestions.length === 0) {
-      const questions = generateReadingQuestions(transcriptData);
-      setReadQuestions(questions);
+    if (lesson?.json) {
+      const vocabPath = lesson.json.replace('.json', '.vocab.json');
+      fetch(vocabPath)
+        .then(res => res.json())
+        .then(data => setVocabulary(data.vocabulary || []))
+        .catch(() => setVocabulary([]));
     }
-  }, [transcriptData, readQuestions.length]);
+  }, [lesson]);
 
-  // Generate fill-in-the-blank questions
-  const generateReadingQuestions = (data) => {
-    if (data.length < 5) return [];
-    
-    const questions = [];
-    const usedIndices = new Set();
-    const targetCount = Math.min(8, Math.floor(data.length / 8) + 3);
-    
-    while (questions.length < targetCount && usedIndices.size < data.length) {
-      const idx = Math.floor(Math.random() * data.length);
-      if (usedIndices.has(idx)) continue;
-      
-      const sentence = data[idx];
-      if (!sentence?.text) continue;
-      
-      const words = sentence.text.split(' ');
-      if (words.length < 4) continue;
-      
-      usedIndices.add(idx);
-      
-      // Pick a word to blank out (not first or last, prefer longer words)
-      const candidates = words.map((w, i) => ({ word: w, idx: i }))
-        .filter((w, i) => i > 0 && i < words.length - 1 && w.word.length > 3);
-      
-      if (candidates.length === 0) continue;
-      
-      const picked = candidates[Math.floor(Math.random() * candidates.length)];
-      const blankIdx = picked.idx;
-      const answer = words[blankIdx].replace(/[.,!?;:]/g, '');
-      
-      const questionWords = [...words];
-      questionWords[blankIdx] = '_____';
-      
-      questions.push({
-        id: idx,
-        type: 'fill-blank',
-        question: questionWords.join(' '),
-        answer: answer,
-        fullSentence: sentence.text,
-        translation: sentence.translationVi || sentence.translation || ''
-      });
+  // Generate quiz questions when transcript loaded
+  useEffect(() => {
+    if (transcriptData.length > 0 && questions.length === 0 && !isGenerating) {
+      generateQuiz();
     }
+  }, [transcriptData, vocabulary]);
+
+  // Generate quiz using OpenAI
+  const generateQuiz = async () => {
+    if (transcriptData.length < 3) return;
     
-    return questions;
+    setIsGenerating(true);
+    setError(null);
+    
+    try {
+      const targetLang = user?.nativeLanguage || 'vi';
+      const response = await fetch('/api/generate-quiz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          transcript: transcriptData, 
+          vocabulary: vocabulary,
+          targetLang 
+        })
+      });
+      
+      const data = await response.json();
+      
+      if (data.success && data.questions?.length > 0) {
+        setQuestions(data.questions);
+      } else {
+        setError('Không thể tạo câu hỏi. Vui lòng thử lại.');
+      }
+    } catch (err) {
+      console.error('Generate quiz error:', err);
+      setError('Có lỗi xảy ra. Vui lòng thử lại.');
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  // Select answer
+  const selectAnswer = (questionIdx, optionIdx) => {
+    if (isChecked) return;
+    setSelectedAnswers(prev => ({ ...prev, [questionIdx]: optionIdx }));
   };
 
   // Check answers
   const checkAnswers = () => {
-    const results = {};
-    readQuestions.forEach((q, idx) => {
-      const userAnswer = (readAnswers[idx] || '').toLowerCase().trim();
-      const correctAnswer = q.answer.toLowerCase().trim();
-      results[idx] = {
-        isCorrect: userAnswer === correctAnswer,
-        correctAnswer: q.answer,
-        fullSentence: q.fullSentence
-      };
-    });
-    setReadResults(results);
-    setReadChecked(true);
+    setIsChecked(true);
   };
 
   // Reset
   const resetExercise = () => {
-    setReadAnswers({});
-    setReadResults({});
-    setReadChecked(false);
-    setReadQuestions(generateReadingQuestions(transcriptData));
+    setSelectedAnswers({});
+    setIsChecked(false);
+    setQuestions([]);
+    generateQuiz();
   };
 
   // Calculate score
   const getScore = () => {
-    if (!readChecked) return null;
-    const correct = Object.values(readResults).filter(r => r.isCorrect).length;
-    return { correct, total: readQuestions.length };
+    if (!isChecked) return null;
+    let correct = 0;
+    questions.forEach((q, idx) => {
+      if (selectedAnswers[idx] === q.correctIndex) correct++;
+    });
+    return { correct, total: questions.length };
   };
 
-  if (isLoading) {
+  if (isLoading || authLoading || !user) {
     return (
       <div className={styles.page}>
         <div className={styles.loadingState}>
@@ -128,7 +135,7 @@ const ReadPracticePage = () => {
     <div className={styles.page}>
       <SEO 
         title={`Luyện đọc: ${lesson?.title || 'Bài học'}`}
-        description="Luyện đọc tiếng Đức"
+        description="Luyện đọc hiểu tiếng Đức"
       />
 
       <div className={styles.container}>
@@ -139,7 +146,7 @@ const ReadPracticePage = () => {
           </Link>
           <div className={styles.practiceHeaderContent}>
             <span className={styles.practiceIcon}>📖</span>
-            <h1 className={styles.practiceTitle}>Luyện đọc</h1>
+            <h1 className={styles.practiceTitle}>Luyện đọc hiểu</h1>
           </div>
           <p className={styles.practiceSubtitle}>{lesson?.title}</p>
         </div>
@@ -154,85 +161,115 @@ const ReadPracticePage = () => {
           </div>
         )}
 
-        {/* Instructions */}
-        <div className={styles.instructions}>
-          <p>🎯 Điền từ còn thiếu vào chỗ trống trong mỗi câu.</p>
-        </div>
+        {/* Loading state */}
+        {isGenerating && (
+          <div className={styles.loadingState}>
+            <div className={styles.spinner}></div>
+            <p>AI đang tạo câu hỏi...</p>
+          </div>
+        )}
 
-        {/* Exercises */}
-        <div className={styles.exercises}>
-          {readQuestions.map((q, idx) => (
-            <div key={idx} className={`${styles.exerciseCard} ${
-              readChecked ? (readResults[idx]?.isCorrect ? styles.exerciseCardCorrect : styles.exerciseCardIncorrect) : ''
-            }`}>
-              <div className={styles.exerciseHeader}>
-                <span className={styles.exerciseNumber}>Câu {idx + 1}</span>
-              </div>
+        {/* Error state */}
+        {error && (
+          <div className={styles.errorBox}>
+            <p>{error}</p>
+            <button className={styles.secondaryBtn} onClick={generateQuiz}>
+              🔄 Thử lại
+            </button>
+          </div>
+        )}
+
+        {/* Instructions */}
+        {questions.length > 0 && !isGenerating && (
+          <div className={styles.instructions}>
+            <p>🎯 Trả lời các câu hỏi trắc nghiệm về nội dung bài học.</p>
+          </div>
+        )}
+
+        {/* Quiz Questions */}
+        {questions.length > 0 && !isGenerating && (
+          <div className={styles.exercises}>
+            {questions.map((q, idx) => {
+              const isAnswered = selectedAnswers[idx] !== undefined;
+              const isCorrect = isChecked && selectedAnswers[idx] === q.correctIndex;
+              const isWrong = isChecked && isAnswered && selectedAnswers[idx] !== q.correctIndex;
               
-              <p className={styles.questionText}>{q.question}</p>
-              
-              <div className={styles.inputRow}>
-                <input
-                  type="text"
-                  className={styles.answerInput}
-                  placeholder="Điền từ..."
-                  value={readAnswers[idx] || ''}
-                  onChange={(e) => setReadAnswers(prev => ({ ...prev, [idx]: e.target.value }))}
-                  disabled={readChecked}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' && !readChecked) {
-                      e.preventDefault();
-                      const nextInput = document.querySelector(`input[data-idx="${idx + 1}"]`);
-                      if (nextInput) nextInput.focus();
-                    }
-                  }}
-                  data-idx={idx}
-                />
-              </div>
-              
-              {readChecked && (
-                <div className={styles.resultBox}>
-                  <div className={styles.resultHeader}>
-                    <span className={readResults[idx]?.isCorrect ? styles.resultCorrect : styles.resultIncorrect}>
-                      {readResults[idx]?.isCorrect ? '✓ Chính xác!' : '✗ Sai'}
-                    </span>
+              return (
+                <div key={idx} className={`${styles.exerciseCard} ${
+                  isChecked ? (isCorrect ? styles.exerciseCardCorrect : isWrong ? styles.exerciseCardIncorrect : '') : ''
+                }`}>
+                  <div className={styles.exerciseHeader}>
+                    <span className={styles.exerciseNumber}>Câu {idx + 1}</span>
                   </div>
-                  {!readResults[idx]?.isCorrect && (
-                    <div className={styles.correctAnswerBox}>
-                      <span className={styles.correctAnswerLabel}>Đáp án:</span>
-                      <p className={styles.correctAnswerText}><strong>{readResults[idx]?.correctAnswer}</strong></p>
+                  
+                  <p className={styles.quizQuestion}>{q.question}</p>
+                  
+                  <div className={styles.quizOptions}>
+                    {q.options.map((option, optIdx) => {
+                      const isSelected = selectedAnswers[idx] === optIdx;
+                      const isCorrectOption = q.correctIndex === optIdx;
+                      
+                      let optionClass = styles.quizOption;
+                      if (isSelected && !isChecked) {
+                        optionClass += ` ${styles.quizOptionSelected}`;
+                      }
+                      if (isChecked) {
+                        if (isCorrectOption) {
+                          optionClass += ` ${styles.quizOptionCorrect}`;
+                        } else if (isSelected && !isCorrectOption) {
+                          optionClass += ` ${styles.quizOptionWrong}`;
+                        }
+                      }
+                      
+                      return (
+                        <button
+                          key={optIdx}
+                          className={optionClass}
+                          onClick={() => selectAnswer(idx, optIdx)}
+                          disabled={isChecked}
+                        >
+                          {option}
+                        </button>
+                      );
+                    })}
+                  </div>
+                  
+                  {/* Explanation after checking */}
+                  {isChecked && q.explanation && (
+                    <div className={styles.quizExplanation}>
+                      <span className={styles.aiLabel}>💡 Giải thích:</span>
+                      <p>{q.explanation}</p>
                     </div>
                   )}
-                  <div className={styles.fullSentenceBox}>
-                    <span className={styles.fullSentenceLabel}>Câu đầy đủ:</span>
-                    <p className={styles.fullSentenceText}>{q.fullSentence}</p>
-                    {q.translation && (
-                      <p className={styles.translationText}>→ {q.translation}</p>
-                    )}
-                  </div>
                 </div>
-              )}
-            </div>
-          ))}
-        </div>
+              );
+            })}
+          </div>
+        )}
 
         {/* Actions */}
-        <div className={styles.actionButtons}>
-          {!readChecked ? (
-            <button className={styles.primaryBtn} onClick={checkAnswers}>
-              ✓ Kiểm tra kết quả
-            </button>
-          ) : (
-            <>
-              <button className={styles.secondaryBtn} onClick={resetExercise}>
-                🔄 Làm lại
+        {questions.length > 0 && !isGenerating && (
+          <div className={styles.actionButtons}>
+            {!isChecked ? (
+              <button 
+                className={styles.primaryBtn} 
+                onClick={checkAnswers}
+                disabled={Object.keys(selectedAnswers).length < questions.length}
+              >
+                ✓ Kiểm tra kết quả
               </button>
-              <Link href={`/practice/${lessonId}`} className={styles.primaryBtn}>
-                Tiếp tục →
-              </Link>
-            </>
-          )}
-        </div>
+            ) : (
+              <>
+                <button className={styles.secondaryBtn} onClick={resetExercise}>
+                  🔄 Làm lại
+                </button>
+                <Link href={`/practice/${lessonId}`} className={styles.primaryBtn}>
+                  Tiếp tục →
+                </Link>
+              </>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
