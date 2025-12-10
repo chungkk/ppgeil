@@ -2992,6 +2992,7 @@ const DictationPageContent = () => {
               onAutoStopChange={setAutoStop}
               learningMode={learningMode}
               onToggleLearningMode={() => setLearningMode(prev => prev === 'dictation' ? 'shadowing' : 'dictation')}
+              lessonId={lessonId}
             />
 
             <div className={styles.dictationContainer}>
