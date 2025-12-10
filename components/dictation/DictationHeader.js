@@ -1,10 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import inputStyles from '../../styles/dictation/dictationInput.module.css';
 
-// Merge styles - component styles override layout styles
 const styles = { ...layoutStyles, ...inputStyles };
 
 /**
@@ -12,7 +10,7 @@ const styles = { ...layoutStyles, ...inputStyles };
  * Displays title and sentence counter with progress
  * 
  * Mobile: Unified header for both dictation and shadowing modes
- * - Fixed header with mode toggle
+ * - Fixed header with mode toggle (click to switch between modes)
  * - Only content below changes when switching modes
  */
 const DictationHeader = ({
@@ -29,20 +27,6 @@ const DictationHeader = ({
   lessonId
 }) => {
   const { t } = useTranslation();
-  const router = useRouter();
-  const [showModeDropdown, setShowModeDropdown] = useState(false);
-  const dropdownRef = useRef(null);
-
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setShowModeDropdown(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
 
   const handleSpeedClick = () => {
     const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
@@ -51,31 +35,16 @@ const DictationHeader = ({
     onSpeedChange(speeds[nextIndex]);
   };
 
-  const handleModeSelect = (mode) => {
-    setShowModeDropdown(false);
-    if (mode === 'practice') {
-      router.push(`/practice/${lessonId}`);
-    } else if (mode !== learningMode) {
-      onToggleLearningMode && onToggleLearningMode();
-    }
+  const handleModeToggle = () => {
+    onToggleLearningMode && onToggleLearningMode();
   };
 
-  const getModeIcon = (mode) => {
-    switch(mode) {
-      case 'dictation': return '📝';
-      case 'shadowing': return '👀';
-      case 'practice': return '🎯';
-      default: return '📝';
-    }
+  const getModeIcon = () => {
+    return learningMode === 'dictation' ? '📝' : '👀';
   };
 
-  const getModeLabel = (mode) => {
-    switch(mode) {
-      case 'dictation': return 'Diktat';
-      case 'shadowing': return 'Shadow';
-      case 'practice': return 'Luyện tập';
-      default: return 'Diktat';
-    }
+  const getModeLabel = () => {
+    return learningMode === 'dictation' ? 'Diktat' : 'Shadow';
   };
 
   // Calculate progress percentage
@@ -85,42 +54,18 @@ const DictationHeader = ({
     // Unified mobile header - same for both modes
     return (
       <div className={styles.unifiedMobileHeader}>
-        {/* Left: Learning mode dropdown */}
-        <div className={styles.headerLeftMobile} ref={dropdownRef}>
+        {/* Left: Learning mode toggle button */}
+        <div className={styles.headerLeftMobile}>
           <button 
             className={`${styles.modeToggleButton} ${learningMode === 'shadowing' ? styles.modeToggleActive : ''}`}
-            onClick={() => setShowModeDropdown(!showModeDropdown)}
-            title="Chọn chế độ học"
+            onClick={handleModeToggle}
+            title="Chuyển chế độ học"
           >
-            {getModeIcon(learningMode)}
+            {getModeIcon()}
             <span className={styles.modeLabel}>
-              {getModeLabel(learningMode)}
+              {getModeLabel()}
             </span>
-            <span className={styles.dropdownArrow}>▼</span>
           </button>
-          
-          {showModeDropdown && (
-            <div className={styles.modeDropdownMobile}>
-              <button 
-                className={`${styles.modeDropdownItem} ${learningMode === 'dictation' ? styles.modeDropdownItemActive : ''}`}
-                onClick={() => handleModeSelect('dictation')}
-              >
-                <span>📝</span> Diktat
-              </button>
-              <button 
-                className={`${styles.modeDropdownItem} ${learningMode === 'shadowing' ? styles.modeDropdownItemActive : ''}`}
-                onClick={() => handleModeSelect('shadowing')}
-              >
-                <span>👀</span> Shadow
-              </button>
-              <button 
-                className={styles.modeDropdownItem}
-                onClick={() => handleModeSelect('practice')}
-              >
-                <span>🎯</span> Luyện tập
-              </button>
-            </div>
-          )}
         </div>
 
         {/* Center: Sentence counter */}
@@ -160,48 +105,20 @@ const DictationHeader = ({
   // Desktop layout
   return (
     <>
-      {/* Floating Mode Dropdown Button - Outside column */}
-      <div className={styles.floatingModeContainer} ref={dropdownRef}>
+      {/* Floating Mode Toggle Button - Outside column */}
+      <div className={styles.floatingModeContainer}>
         <button 
           className={`${styles.floatingModeToggle} ${learningMode === 'shadowing' ? styles.floatingModeToggleActive : ''}`}
-          onClick={() => setShowModeDropdown(!showModeDropdown)}
-          title="Chọn chế độ học"
+          onClick={handleModeToggle}
+          title="Chuyển chế độ học"
         >
           <span className={styles.floatingModeIcon}>
-            {getModeIcon(learningMode)}
+            {getModeIcon()}
           </span>
           <span className={styles.floatingModeLabel}>
-            {getModeLabel(learningMode)}
+            {getModeLabel()}
           </span>
-          <span className={styles.floatingDropdownArrow}>▼</span>
         </button>
-        
-        {showModeDropdown && (
-          <div className={styles.floatingModeDropdown}>
-            <button 
-              className={`${styles.floatingDropdownItem} ${learningMode === 'dictation' ? styles.floatingDropdownItemActive : ''}`}
-              onClick={() => handleModeSelect('dictation')}
-            >
-              <span className={styles.floatingDropdownIcon}>📝</span>
-              <span>Diktat</span>
-            </button>
-            <button 
-              className={`${styles.floatingDropdownItem} ${learningMode === 'shadowing' ? styles.floatingDropdownItemActive : ''}`}
-              onClick={() => handleModeSelect('shadowing')}
-            >
-              <span className={styles.floatingDropdownIcon}>👀</span>
-              <span>Shadow</span>
-            </button>
-            <div className={styles.floatingDropdownDivider}></div>
-            <button 
-              className={styles.floatingDropdownItem}
-              onClick={() => handleModeSelect('practice')}
-            >
-              <span className={styles.floatingDropdownIcon}>🎯</span>
-              <span>Luyện tập</span>
-            </button>
-          </div>
-        )}
       </div>
       
       <div className={styles.dictationHeader}>
