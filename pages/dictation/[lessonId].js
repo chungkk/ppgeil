@@ -911,58 +911,30 @@ const DictationPageContent = () => {
     );
     if (clickedIndex === -1) return;
 
-    const isCurrentlyPlayingThisSentence = isPlaying && currentSentenceIndex === clickedIndex;
+    // Always replay from the beginning of the sentence
+    if (userSeekTimeout) clearTimeout(userSeekTimeout);
+    setIsUserSeeking(true);
 
-    if (isCurrentlyPlayingThisSentence) {
-      // Pause the current sentence
-      if (isYouTube) {
-        const player = youtubePlayerRef.current;
-        if (player && player.pauseVideo) player.pauseVideo();
-      } else {
-        const audio = audioRef.current;
-        if (audio) audio.pause();
-      }
-      setIsPlaying(false);
-      // Save paused position
-      setPausedPositions(prev => ({ ...prev, [clickedIndex]: currentTime }));
+    if (isYouTube) {
+      const player = youtubePlayerRef.current;
+      if (!player) return;
+      if (player.seekTo) player.seekTo(startTime);
+      if (player.playVideo) player.playVideo();
     } else {
-      // Play or resume the sentence (either a different sentence or the same paused sentence)
-      let seekTime = startTime;
-      if (pausedPositions[clickedIndex] && pausedPositions[clickedIndex] >= startTime && pausedPositions[clickedIndex] < endTime) {
-        seekTime = pausedPositions[clickedIndex];
-      }
-
-      // Set seeking flag to prevent auto-update conflicts
-      if (userSeekTimeout) clearTimeout(userSeekTimeout);
-      setIsUserSeeking(true);
-
-      if (isYouTube) {
-        const player = youtubePlayerRef.current;
-        if (!player) return;
-        if (player.seekTo) player.seekTo(seekTime);
-        if (player.playVideo) player.playVideo();
-      } else {
-        const audio = audioRef.current;
-        if (!audio) return;
-        audio.currentTime = seekTime;
-        audio.play();
-      }
-      setIsPlaying(true);
-      setSegmentPlayEndTime(endTime);
-      setSegmentEndTimeLocked(true);
-      // Clear paused position when starting play
-      setPausedPositions(prev => {
-        const newPositions = { ...prev };
-        delete newPositions[clickedIndex];
-        return newPositions;
-      });
-
-      // Reset seeking flag after seek completes
-      const timeout = setTimeout(() => {
-        setIsUserSeeking(false);
-      }, 1500);
-      setUserSeekTimeout(timeout);
+      const audio = audioRef.current;
+      if (!audio) return;
+      audio.currentTime = startTime;
+      audio.play();
     }
+    setIsPlaying(true);
+    setSegmentPlayEndTime(endTime);
+    setSegmentEndTimeLocked(true);
+
+    // Reset seeking flag after seek completes
+    const timeout = setTimeout(() => {
+      setIsUserSeeking(false);
+    }, 1500);
+    setUserSeekTimeout(timeout);
 
     // Update currentSentenceIndex to match the clicked sentence
     setCurrentSentenceIndex(clickedIndex);
