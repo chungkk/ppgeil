@@ -158,6 +158,10 @@ const DictationPageContent = () => {
   const [suggestionPosition, setSuggestionPosition] = useState({ top: 0, left: 0 });
   const [suggestionOptions, setSuggestionOptions] = useState(null); // Pre-generated options from transcript
   
+  // Lesson vocabulary states
+  const [lessonVocabulary, setLessonVocabulary] = useState([]);
+  const [isLoadingVocabulary, setIsLoadingVocabulary] = useState(false);
+  
   // Consecutive sentence completion counter
   const [consecutiveSentences, setConsecutiveSentences] = useState(0);
 
@@ -504,6 +508,36 @@ const DictationPageContent = () => {
       loadTranscript(lesson.json);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lesson]);
+
+  // Load vocabulary when lesson is ready
+  useEffect(() => {
+    const loadVocabulary = async () => {
+      if (!lesson || !lesson.json) return;
+      
+      // Convert transcript path to vocabulary path
+      // e.g., /text/lesson-name.json -> /text/lesson-name.vocab.json
+      const vocabPath = lesson.json.replace('.json', '.vocab.json');
+      
+      setIsLoadingVocabulary(true);
+      try {
+        const response = await fetch(vocabPath);
+        if (response.ok) {
+          const data = await response.json();
+          setLessonVocabulary(data.vocabulary || []);
+        } else {
+          // No vocabulary file for this lesson
+          setLessonVocabulary([]);
+        }
+      } catch (error) {
+        console.error('Error loading vocabulary:', error);
+        setLessonVocabulary([]);
+      } finally {
+        setIsLoadingVocabulary(false);
+      }
+    };
+    
+    loadVocabulary();
   }, [lesson]);
 
   // Load progress from SWR hook (logged-in users) or localStorage (guests)
@@ -3131,6 +3165,9 @@ const DictationPageContent = () => {
             showOnMobile={false}
             currentTime={currentTime}
             isPlaying={isPlaying}
+            vocabulary={lessonVocabulary}
+            isLoadingVocabulary={isLoadingVocabulary}
+            onWordClickForPopup={handleWordClickForPopup}
           />
         </div>
       </div>
