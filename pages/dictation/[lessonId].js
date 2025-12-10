@@ -2932,7 +2932,7 @@ const DictationPageContent = () => {
             formatStudyTime={formatStudyTime}
             formatTime={formatTime}
             isMobile={isMobile}
-            onVideoClick={() => transcriptData[currentSentenceIndex] && handleSentenceClick(transcriptData[currentSentenceIndex].start, transcriptData[currentSentenceIndex].end)}
+            onVideoClick={handlePlayPause}
             isPlaying={isPlaying}
             onPlayPause={handlePlayPause}
             onReplayFromStart={handleReplayFromStart}

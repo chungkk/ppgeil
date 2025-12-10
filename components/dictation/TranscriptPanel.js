@@ -154,7 +154,7 @@ const TranscriptPanel = ({
                   #{originalIndex + 1}
                   {isCompleted && <span className={styles.completedCheck}>✓</span>}
                 </div>
-                <div className={styles.transcriptItemText}>
+                <div className={`${styles.transcriptItemText} ${learningMode === 'shadowing' ? styles.shadowingText : ''}`}>
                   {shouldShowFullText 
                     ? renderKaraokeText(segment.text, segment, originalIndex)
                     : maskTextByPercentage(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
