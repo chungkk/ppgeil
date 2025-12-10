@@ -1,0 +1,233 @@
+{
+  "lessonId": "101-everyday-sentences-with-mssen-easy-german-623",
+  "level": "A1",
+  "targetLang": "vi",
+  "extractedAt": "2025-12-10T20:41:44.513Z",
+  "totalWords": 17,
+  "vocabulary": [
+    {
+      "word": "müssen",
+      "baseForm": "müssen",
+      "translation": "phải",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein wichtiges Modalverb, das Verpflichtungen ausdrückt.",
+      "sentences": [
+        3,
+        191,
+        192,
+        193,
+        197
+      ]
+    },
+    {
+      "word": "arbeiten",
+      "baseForm": "arbeiten",
+      "translation": "làm việc",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein häufig verwendetes Verb im Alltag.",
+      "sentences": [
+        0,
+        16,
+        21,
+        23,
+        30
+      ]
+    },
+    {
+      "word": "essen",
+      "baseForm": "essen",
+      "translation": "ăn",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein grundlegendes Verb für alltägliche Aktivitäten.",
+      "sentences": [
+        10,
+        17,
+        56,
+        57,
+        208
+      ]
+    },
+    {
+      "word": "gehen",
+      "baseForm": "gehen",
+      "translation": "đi",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein häufig verwendetes Verb, um Bewegung auszudrücken.",
+      "sentences": [
+        4,
+        5,
+        6,
+        11,
+        13
+      ]
+    },
+    {
+      "word": "Hausaufgaben",
+      "baseForm": "die Hausaufgabe",
+      "translation": "bài tập về nhà",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "Wichtiger Begriff für Schüler.",
+      "sentences": [
+        7,
+        8
+      ]
+    },
+    {
+      "word": "Urlaub",
+      "baseForm": "der Urlaub",
+      "translation": "kỳ nghỉ",
+      "partOfSpeech": "Nomen",
+      "level": "A1",
+      "note": "Ein häufiges Thema im Gespräch.",
+      "sentences": [
+        4,
+        180,
+        193,
+        195
+      ]
+    },
+    {
+      "word": "einkaufen",
+      "baseForm": "einkaufen",
+      "translation": "mua sắm",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein wichtiges Verb für alltägliche Aktivitäten.",
+      "sentences": [
+        6,
+        11,
+        43,
+        44
+      ]
+    },
+    {
+      "word": "fahren",
+      "baseForm": "fahren",
+      "translation": "lái xe",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein häufig verwendetes Verb für Reisen.",
+      "sentences": [
+        6,
+        8,
+        20,
+        21,
+        91
+      ]
+    },
+    {
+      "word": "freuen",
+      "baseForm": "freuen",
+      "translation": "vui mừng",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein wichtiges Verb, um Gefühle auszudrücken.",
+      "sentences": [
+        222
+      ]
+    },
+    {
+      "word": "kaufen",
+      "baseForm": "kaufen",
+      "translation": "mua",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein grundlegendes Verb für Transaktionen.",
+      "sentences": [
+        6,
+        11,
+        43,
+        44,
+        129
+      ]
+    },
+    {
+      "word": "bringen",
+      "baseForm": "bringen",
+      "translation": "mang đến",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein wichtiges Verb für das Übertragen von Dingen.",
+      "sentences": [
+        14,
+        52,
+        147
+      ]
+    },
+    {
+      "word": "aufstehen",
+      "baseForm": "aufstehen",
+      "translation": "thức dậy",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein häufiges Verb im täglichen Leben.",
+      "sentences": [
+        48,
+        75
+      ]
+    },
+    {
+      "word": "machen",
+      "baseForm": "machen",
+      "translation": "làm",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein sehr häufiges und vielseitiges Verb.",
+      "sentences": [
+        7,
+        8,
+        12,
+        32,
+        35
+      ]
+    },
+    {
+      "word": "sehen",
+      "baseForm": "sehen",
+      "translation": "nhìn",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein grundlegendes Verb für Wahrnehmung.",
+      "sentences": []
+    },
+    {
+      "word": "spielen",
+      "baseForm": "spielen",
+      "translation": "chơi",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein häufiges Verb für Freizeitaktivitäten.",
+      "sentences": [
+        220
+      ]
+    },
+    {
+      "word": "schreiben",
+      "baseForm": "schreiben",
+      "translation": "viết",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein wichtiges Verb für Kommunikation.",
+      "sentences": [
+        26
+      ]
+    },
+    {
+      "word": "sagen",
+      "baseForm": "sagen",
+      "translation": "nói",
+      "partOfSpeech": "Verb",
+      "level": "A1",
+      "note": "Ein grundlegendes Verb für Kommunikation.",
+      "sentences": [
+        135,
+        169
+      ]
+    }
+  ]
+}

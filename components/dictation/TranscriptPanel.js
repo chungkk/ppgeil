@@ -40,21 +40,21 @@ const TranscriptPanel = ({
   const transcriptSectionRef = useRef(null);
   const transcriptItemRefs = useRef({});
 
-  // Karaoke highlight for active sentence in shadowing mode
+  // Karaoke highlight for active sentence (all modes)
   const activeSentence = transcriptData[currentSentenceIndex];
   const { wordTimings, activeWordIndex } = useKaraokeHighlight(
     activeSentence,
     currentTime,
     isPlaying,
-    learningMode === 'shadowing'
+    true // Always enable karaoke for transcript panel
   );
 
   // Render text with karaoke highlighting
   const renderKaraokeText = useCallback((text, segment, originalIndex) => {
     const isActiveSentence = originalIndex === currentSentenceIndex;
     
-    // Only apply karaoke to active sentence in shadowing mode
-    if (learningMode !== 'shadowing' || !isActiveSentence || !isPlaying) {
+    // Apply karaoke to active sentence when playing (for all modes)
+    if (!isActiveSentence || !isPlaying) {
       return text;
     }
 
@@ -77,7 +77,7 @@ const TranscriptPanel = ({
         })}
       </span>
     );
-  }, [currentSentenceIndex, learningMode, isPlaying, activeWordIndex]);
+  }, [currentSentenceIndex, isPlaying, activeWordIndex]);
 
   // Auto-scroll to current sentence
   useEffect(() => {
@@ -167,8 +167,9 @@ const TranscriptPanel = ({
               
               const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
               const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
-              // Show full text when completed/checked OR when in shadowing mode
-              const shouldShowFullText = learningMode === 'shadowing' || isCompleted || (dictationMode === 'full-sentence' && isChecked);
+              // Show full text when: active sentence playing (for karaoke), completed/checked, or shadowing mode
+              const isActiveSentencePlaying = originalIndex === currentSentenceIndex && isPlaying;
+              const shouldShowFullText = learningMode === 'shadowing' || isCompleted || (dictationMode === 'full-sentence' && isChecked) || isActiveSentencePlaying;
 
               return (
                 <div
@@ -183,7 +184,7 @@ const TranscriptPanel = ({
                     #{originalIndex + 1}
                     {isCompleted && <span className={styles.completedCheck}>✓</span>}
                   </div>
-                  <div className={`${styles.transcriptItemText} ${learningMode === 'shadowing' ? styles.shadowingText : ''}`}>
+                  <div className={`${styles.transcriptItemText} ${isActiveSentencePlaying ? styles.shadowingText : ''}`}>
                     {shouldShowFullText 
                       ? renderKaraokeText(segment.text, segment, originalIndex)
                       : maskTextByPercentage(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
