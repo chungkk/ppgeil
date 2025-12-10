@@ -2116,7 +2116,7 @@ const DictationPageContent = () => {
     // Popup size - horizontal layout with 3 buttons (height ~50px)
     const popupWidth = isMobileView ? 240 : 280;
     const popupHeight = 50;
-    const gap = 8;
+    const gap = isMobileView ? 4 : 8; // Smaller gap on mobile for closer positioning
     
     // Calculate word center position
     const wordCenterX = rect.left + (rect.width / 2);
@@ -2124,12 +2124,17 @@ const DictationPageContent = () => {
     // Center popup horizontally on the word
     let left = wordCenterX - (popupWidth / 2);
     
-    // Position popup above the word (closer to clicked element)
-    let top = rect.top - popupHeight - gap;
-    
-    // If not enough space above, show below
-    if (top < 10) {
+    let top;
+    if (isMobileView) {
+      // Mobile: Always show popup directly below the clicked element (more natural)
       top = rect.bottom + gap;
+    } else {
+      // Desktop: Position popup above the word
+      top = rect.top - popupHeight - gap;
+      // If not enough space above, show below
+      if (top < 10) {
+        top = rect.bottom + gap;
+      }
     }
     
     // Keep within horizontal screen bounds
@@ -2240,7 +2245,7 @@ const DictationPageContent = () => {
     // Popup size - horizontal layout with 3 buttons (height ~50px)
     const popupWidth = isMobileView ? 240 : 280;
     const popupHeight = 50;
-    const gap = 8;
+    const gap = isMobileView ? 4 : 8; // Smaller gap on mobile for closer positioning
 
     // Calculate word center position
     const wordCenterX = rect.left + (rect.width / 2);
@@ -2248,12 +2253,16 @@ const DictationPageContent = () => {
     // Center popup horizontally on the word
     left = wordCenterX - (popupWidth / 2);
     
-    // Position popup above the word (closer to clicked element)
-    top = rect.top - popupHeight - gap;
-    
-    // If not enough space above, show below
-    if (top < 10) {
+    if (isMobileView) {
+      // Mobile: Always show popup directly below the clicked element (more natural)
       top = rect.bottom + gap;
+    } else {
+      // Desktop: Position popup above the word
+      top = rect.top - popupHeight - gap;
+      // If not enough space above, show below
+      if (top < 10) {
+        top = rect.bottom + gap;
+      }
     }
     
     // Keep within horizontal screen bounds
@@ -2340,7 +2349,7 @@ const DictationPageContent = () => {
     // Popup size - horizontal layout with 3 buttons (height ~50px for both)
     const popupWidth = isMobileView ? 240 : 280;
     const popupHeight = 50;
-    const gap = 8;
+    const gap = isMobileView ? 4 : 8; // Smaller gap on mobile for closer positioning
 
     // Calculate word center position
     const wordCenterX = rect.left + (rect.width / 2);
@@ -2348,12 +2357,17 @@ const DictationPageContent = () => {
     // Center popup horizontally on the word
     let left = wordCenterX - (popupWidth / 2);
     
-    // Position popup above the word (closer to the clicked element)
-    let top = rect.top - popupHeight - gap;
-    
-    // If not enough space above, show below
-    if (top < 10) {
+    let top;
+    if (isMobileView) {
+      // Mobile: Always show popup directly below the clicked element (more natural)
       top = rect.bottom + gap;
+    } else {
+      // Desktop: Position popup above the word
+      top = rect.top - popupHeight - gap;
+      // If not enough space above, show below
+      if (top < 10) {
+        top = rect.bottom + gap;
+      }
     }
     
     // Keep within horizontal screen bounds

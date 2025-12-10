@@ -630,15 +630,15 @@
 /* Mobile mode dropdown */
 .modeDropdownMobile {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 4px);
   left: 0;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 6px;
   min-width: 130px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  z-index: 1001;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
   animation: mobileDropdownFadeIn 0.15s ease-out;
 }
 
@@ -748,6 +748,8 @@
   border-radius: 12px 12px 0 0;
   gap: 12px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 1002;
 }
 
 /* Mode Toggle Button - Pill style with label */
