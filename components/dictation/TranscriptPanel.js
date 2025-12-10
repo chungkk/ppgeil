@@ -1,7 +1,7 @@
-import React, { useRef, useEffect, useCallback, useMemo, useState } from 'react';
+import React, { useRef, useEffect, useCallback, useMemo } from 'react';
 import ProgressIndicator from '../ProgressIndicator';
 import { useKaraokeHighlight } from '../../lib/hooks/useKaraokeHighlight';
-import { speakText } from '../../lib/textToSpeech';
+
 import layoutStyles from '../../styles/dictationPage.module.css';
 import transcriptStyles from '../../styles/dictation/dictationTranscript.module.css';
 
@@ -30,13 +30,8 @@ const TranscriptPanel = ({
   learningMode = 'dictation',
   showOnMobile = false,
   currentTime = 0,
-  isPlaying = false,
-  vocabulary = [],
-  isLoadingVocabulary = false,
-  onWordClickForPopup
+  isPlaying = false
 }) => {
-  // Tab state: 'transcript' or 'vocabulary'
-  const [activeTab, setActiveTab] = useState('transcript');
   const transcriptSectionRef = useRef(null);
   const transcriptItemRefs = useRef({});
 
@@ -146,37 +141,12 @@ const TranscriptPanel = ({
   // Display indices in original order
   const transcriptDisplayIndices = transcriptData.map((_, idx) => idx);
 
-  // Handle vocabulary word click
-  const handleVocabWordClick = useCallback((word, e) => {
-    speakText(word);
-    if (onWordClickForPopup) {
-      onWordClickForPopup(word, e);
-    }
-  }, [onWordClickForPopup]);
-
   return (
     <div className={`${styles.rightSection} ${showOnMobile ? styles.showOnMobile : ''}`}>
       <div className={styles.transcriptHeader}>
         <div className={styles.transcriptHeaderLeft}>
-          {/* Tab buttons */}
-          <div className={styles.transcriptTabs}>
-            <button 
-              className={`${styles.transcriptTab} ${activeTab === 'transcript' ? styles.transcriptTabActive : ''}`}
-              onClick={() => setActiveTab('transcript')}
-            >
-              Transcript
-              <span className={styles.transcriptTabCount}>{transcriptData.length}</span>
-            </button>
-            <button 
-              className={`${styles.transcriptTab} ${activeTab === 'vocabulary' ? styles.transcriptTabActive : ''}`}
-              onClick={() => setActiveTab('vocabulary')}
-            >
-              Từ vựng
-              {vocabulary.length > 0 && (
-                <span className={styles.transcriptTabCount}>{vocabulary.length}</span>
-              )}
-            </button>
-          </div>
+          <span className={styles.transcriptTitle}>Transcript</span>
+          <span className={styles.transcriptCount}>{transcriptData.length}</span>
         </div>
         <ProgressIndicator
           completedSentences={completedSentences}
@@ -189,87 +159,44 @@ const TranscriptPanel = ({
         />
       </div>
       
-      {/* Transcript View */}
-      {activeTab === 'transcript' && (
-        <div className={styles.transcriptSection} ref={transcriptSectionRef}>
-          <div className={styles.transcriptList}>
-            {transcriptDisplayIndices.map((originalIndex) => {
-              const segment = transcriptData[originalIndex];
-              const isCompleted = completedSentences.includes(originalIndex);
-              const sentenceWordsCompleted = completedWords[originalIndex] || {};
-              const isChecked = checkedSentences.includes(originalIndex);
-              
-              const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
-              const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
-              // Show full text when completed/checked OR when in shadowing mode (NOT for dictation - keep text hidden)
-              const isActiveSentencePlaying = originalIndex === currentSentenceIndex && isPlaying;
-              const shouldShowFullText = learningMode === 'shadowing' || isCompleted || (dictationMode === 'full-sentence' && isChecked);
+      <div className={styles.transcriptSection} ref={transcriptSectionRef}>
+        <div className={styles.transcriptList}>
+          {transcriptDisplayIndices.map((originalIndex) => {
+            const segment = transcriptData[originalIndex];
+            const isCompleted = completedSentences.includes(originalIndex);
+            const sentenceWordsCompleted = completedWords[originalIndex] || {};
+            const isChecked = checkedSentences.includes(originalIndex);
+            
+            const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
+            const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
+            // Show full text when completed/checked OR when in shadowing mode (NOT for dictation - keep text hidden)
+            const isActiveSentencePlaying = originalIndex === currentSentenceIndex && isPlaying;
+            const shouldShowFullText = learningMode === 'shadowing' || isCompleted || (dictationMode === 'full-sentence' && isChecked);
 
-              return (
-                <div
-                  key={originalIndex}
-                  ref={(el) => {
-                    transcriptItemRefs.current[originalIndex] = el;
-                  }}
-                  className={`${styles.transcriptItem} ${originalIndex === currentSentenceIndex ? styles.active : ''} ${!isCompleted ? styles.incomplete : ''}`}
-                  onClick={() => onSentenceClick(segment.start, segment.end)}
-                >
-                  <div className={styles.transcriptItemNumber}>
-                    #{originalIndex + 1}
-                    {isCompleted && <span className={styles.completedCheck}>✓</span>}
-                  </div>
-                  <div className={`${styles.transcriptItemText} ${isActiveSentencePlaying ? styles.shadowingText : ''}`}>
-                    {shouldShowFullText 
-                      ? renderKaraokeText(segment.text, segment, originalIndex)
-                      : renderMaskedKaraokeText(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
-                    }
-                  </div>
+            return (
+              <div
+                key={originalIndex}
+                ref={(el) => {
+                  transcriptItemRefs.current[originalIndex] = el;
+                }}
+                className={`${styles.transcriptItem} ${originalIndex === currentSentenceIndex ? styles.active : ''} ${!isCompleted ? styles.incomplete : ''}`}
+                onClick={() => onSentenceClick(segment.start, segment.end)}
+              >
+                <div className={styles.transcriptItemNumber}>
+                  #{originalIndex + 1}
+                  {isCompleted && <span className={styles.completedCheck}>✓</span>}
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* Vocabulary View */}
-      {activeTab === 'vocabulary' && (
-        <div className={styles.transcriptSection}>
-          <div className={styles.vocabularyList}>
-            {isLoadingVocabulary ? (
-              <div className={styles.vocabularyLoading}>
-                <span>Đang tải từ vựng...</span>
-              </div>
-            ) : vocabulary.length === 0 ? (
-              <div className={styles.vocabularyEmpty}>
-                <span>Chưa có từ vựng cho bài này</span>
-              </div>
-            ) : (
-              vocabulary.map((item, idx) => (
-                <div 
-                  key={idx} 
-                  className={styles.vocabularyItem}
-                  onClick={(e) => handleVocabWordClick(item.word, e)}
-                >
-                  <div className={styles.vocabularyWord}>
-                    <span className={styles.vocabularyWordText}>{item.word}</span>
-                    {item.partOfSpeech && (
-                      <span className={styles.vocabularyPos}>{item.partOfSpeech}</span>
-                    )}
-                  </div>
-                  <div className={styles.vocabularyTranslation}>
-                    {item.translation}
-                  </div>
-                  {item.note && (
-                    <div className={styles.vocabularyNote}>
-                      {item.note}
-                    </div>
-                  )}
+                <div className={`${styles.transcriptItemText} ${isActiveSentencePlaying ? styles.shadowingText : ''}`}>
+                  {shouldShowFullText 
+                    ? renderKaraokeText(segment.text, segment, originalIndex)
+                    : renderMaskedKaraokeText(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
+                  }
                 </div>
-              ))
-            )}
-          </div>
+              </div>
+            );
+          })}
         </div>
-      )}
+      </div>
     </div>
   );
 };
