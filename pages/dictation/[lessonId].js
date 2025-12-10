@@ -3020,6 +3020,7 @@ const DictationPageContent = () => {
                           onTouchMove={handleTouchMove}
                           onTouchEnd={handleTouchEnd}
                           onHintWordClick={showHintWordSuggestion}
+                          onWordClickForPopup={handleWordClickForPopup}
                           onInputChange={handleMobileInputChange}
                           onCheckSubmit={handleFullSentenceSubmit}
                           onNextClick={goToNextSentence}
@@ -3102,6 +3103,7 @@ const DictationPageContent = () => {
                   onInputChange={(idx, value) => setFullSentenceInputs(prev => ({ ...prev, [idx]: value }))}
                   onSubmit={handleFullSentenceSubmit}
                   onHintWordClick={showHintWordSuggestion}
+                  onWordClickForPopup={handleWordClickForPopup}
                   onCalculatePartialReveals={calculatePartialReveals}
                   renderCompletedSentenceWithWordBoxes={renderCompletedSentenceWithWordBoxes}
                   learningMode={learningMode}

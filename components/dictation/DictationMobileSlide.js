@@ -38,6 +38,7 @@ const DictationMobileSlide = memo(({
   onTouchMove,
   onTouchEnd,
   onHintWordClick,
+  onWordClickForPopup,
   onInputChange,
   onCheckSubmit,
   onNextClick,
@@ -143,8 +144,16 @@ const DictationMobileSlide = memo(({
                   <span key={idx} className={styles.hintWordContainer}>
                     <span
                       className={`${styles.hintWordBox} ${wordClass}`}
-                      onClick={(e) => !comparisonResult && !isRevealed && onHintWordClick(originalIndex, idx, pureWord, e)}
-                      title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Đã hiện' : 'Click để chọn từ')}
+                      onClick={(e) => {
+                        if (comparisonResult || isRevealed) {
+                          // Word is revealed or compared - show translation popup
+                          onWordClickForPopup && onWordClickForPopup(pureWord, e);
+                        } else {
+                          // Word not revealed - show hint word suggestion
+                          onHintWordClick(originalIndex, idx, pureWord, e);
+                        }
+                      }}
+                      title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để xem dịch' : 'Click để chọn từ')}
                     >
                       {displayText}
                     </span>
