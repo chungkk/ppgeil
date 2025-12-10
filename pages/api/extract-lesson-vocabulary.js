@@ -20,14 +20,14 @@ async function extractVocabularyWithAI(fullText, level, targetLang = 'vi') {
 
   const targetLanguageName = LANGUAGE_NAMES[targetLang] || targetLang;
 
-  const prompt = `Du bist ein Experte für Deutsch als Fremdsprache. Analysiere den folgenden deutschen Text und extrahiere die wichtigsten Vokabeln für Deutschlerner auf dem Niveau ${level}.
+  const prompt = `Du bist ein Experte für Deutsch als Fremdsprache. Analysiere den folgenden deutschen Text und extrahiere LERNWÜRDIGE Vokabeln für Deutschlerner auf dem Niveau ${level}.
 
 TEXT:
 """
 ${fullText}
 """
 
-Extrahiere 15-30 wichtige Wörter/Ausdrücke und gib ein JSON-Array zurück (KEIN Markdown, nur reines JSON):
+Extrahiere 15-30 LERNWÜRDIGE Wörter/Ausdrücke und gib ein JSON-Array zurück (KEIN Markdown, nur reines JSON):
 
 [
   {
@@ -40,14 +40,30 @@ Extrahiere 15-30 wichtige Wörter/Ausdrücke und gib ein JSON-Array zurück (KEI
   }
 ]
 
+WICHTIG - DIESE WÖRTER NIEMALS EXTRAHIEREN (zu grundlegend):
+- Hilfsverben: sein, haben, werden
+- Modalverben: können, müssen, wollen, sollen, dürfen, mögen, möchten
+- Zu einfache Verben: gehen, kommen, machen, sagen, sehen, hören, nehmen, geben, wissen, denken, finden, stehen, liegen, bleiben, lassen
+- Pronomen: ich, du, er, sie, es, wir, ihr, man, was, wer, wie, wo, wann, warum
+- Artikel: der, die, das, ein, eine
+- Präpositionen: in, an, auf, mit, von, zu, bei, nach, für, aus, um, über, unter, vor, hinter, zwischen, neben
+- Konjunktionen: und, oder, aber, weil, dass, wenn, als, ob, denn, sondern
+- Zahlen und sehr einfache Adjektive: gut, schlecht, groß, klein, neu, alt, viel, wenig
+
+BEVORZUGE STATTDESSEN:
+- Konkrete NOMEN mit spezifischer Bedeutung (z.B. "die Entscheidung", "der Vorschlag", "die Möglichkeit")
+- Beschreibende ADJEKTIVE (z.B. "wichtig", "schwierig", "notwendig", "erfolgreich")
+- Spezifische VERBEN mit klarer Handlung (z.B. "entscheiden", "vorschlagen", "erklären", "entwickeln")
+- ADVERBIEN (z.B. "eigentlich", "tatsächlich", "wahrscheinlich", "offensichtlich")
+- Nützliche PHRASEN und REDEWENDUNGEN (z.B. "es geht um", "im Gegensatz zu", "auf jeden Fall")
+- ZUSAMMENGESETZTE WÖRTER (Komposita) - diese sind sehr wichtig im Deutschen!
+
 Anforderungen:
-- Wähle Wörter, die für ${level}-Lerner nützlich und wichtig sind
-- Inkludiere sowohl einfache als auch herausfordernde Wörter
-- Bei Nomen immer mit Artikel (der/die/das)
+- Wähle Wörter, die für ${level}-Lerner LERNWERT haben
+- Bei Nomen IMMER mit Artikel (der/die/das)
 - Bei Verben die Infinitivform als baseForm
 - Bei trennbaren Verben: baseForm = Infinitiv (z.B. "ankommen")
-- Phrasen und Redewendungen sind auch willkommen
-- Sortiere nach Wichtigkeit/Häufigkeit im Text`;
+- Sortiere nach Lernwert und Relevanz für das Thema des Textes`;
 
   const apiUrl = isOpenAI 
     ? 'https://api.openai.com/v1/chat/completions'
