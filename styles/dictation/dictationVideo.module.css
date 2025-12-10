@@ -80,8 +80,8 @@
 
 .videoTimer {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  bottom: 12px;
+  left: 12px;
   background: linear-gradient(145deg, rgba(0, 0, 0, 0.75) 0%, rgba(30, 30, 50, 0.85) 100%);
   color: white;
   padding: 6px 12px;
