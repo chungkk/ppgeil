@@ -829,6 +829,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
 }
 
 /* Speed button mobile - compact pill style */
@@ -883,4 +884,116 @@
   border-color: rgba(59, 130, 246, 0.5);
   color: #60a5fa;
   box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
+}
+
+/* ============================================
+   SETTINGS BUTTON & DROPDOWN - MOBILE
+   ============================================ */
+
+.settingsButtonMobile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(100, 116, 139, 0.2);
+  border: 1.5px solid rgba(100, 116, 139, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.settingsButtonMobile:active {
+  transform: scale(0.95);
+}
+
+.settingsButtonActive {
+  background: rgba(102, 126, 234, 0.25);
+  border-color: rgba(102, 126, 234, 0.5);
+  color: #a5b4fc;
+}
+
+.settingsDropdownMobile {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: rgba(20, 20, 35, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 6px;
+  min-width: 160px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 2000;
+  animation: settingsDropdownFadeIn 0.15s ease-out;
+}
+
+@keyframes settingsDropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.settingsMenuItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.settingsMenuItem:active {
+  transform: scale(0.98);
+  background: rgba(102, 126, 234, 0.15);
+}
+
+.settingsMenuItemActive {
+  background: rgba(102, 126, 234, 0.2);
+}
+
+.settingsMenuIcon {
+  font-size: 16px;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.settingsMenuText {
+  flex: 1;
+}
+
+.settingsMenuToggle {
+  font-size: 14px;
+  color: #10b981;
+  font-weight: 700;
+  width: 20px;
+  text-align: center;
+}
+
+.settingsMenuValue {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  color: #a5b4fc;
+  background: rgba(102, 126, 234, 0.2);
+  padding: 2px 8px;
+  border-radius: 10px;
 }
