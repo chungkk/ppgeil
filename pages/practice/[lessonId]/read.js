@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
 import { useAuth } from '../../../context/AuthContext';
@@ -11,6 +12,7 @@ const ReadPracticePage = () => {
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
   const { user, loading: authLoading } = useAuth();
+  const { t } = useTranslation();
 
   // Redirect to login if not authenticated
   useEffect(() => {
@@ -79,11 +81,11 @@ const ReadPracticePage = () => {
       if (data.success && data.questions?.length > 0) {
         setQuestions(data.questions);
       } else {
-        setError('Không thể tạo câu hỏi. Vui lòng thử lại.');
+        setError(t('practice.read.error'));
       }
     } catch (err) {
       console.error('Generate quiz error:', err);
-      setError('Có lỗi xảy ra. Vui lòng thử lại.');
+      setError(t('practice.read.error'));
     } finally {
       setIsGenerating(false);
     }
@@ -123,7 +125,7 @@ const ReadPracticePage = () => {
       <div className={styles.page}>
         <div className={styles.loadingState}>
           <div className={styles.spinner}></div>
-          <p>Đang tải...</p>
+          <p>{t('practice.loading')}</p>
         </div>
       </div>
     );
@@ -134,19 +136,19 @@ const ReadPracticePage = () => {
   return (
     <div className={styles.page}>
       <SEO 
-        title={`Luyện đọc: ${lesson?.title || 'Bài học'}`}
-        description="Luyện đọc hiểu tiếng Đức"
+        title={`${t('practice.read.title')}: ${lesson?.title || ''}`}
+        description={t('practice.read.description')}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.practiceHeader}>
           <Link href={`/practice/${lessonId}`} className={styles.backLink}>
-            ← Quay lại
+            ← {t('practice.backTo')}
           </Link>
           <div className={styles.practiceHeaderContent}>
             <span className={styles.practiceIcon}>📖</span>
-            <h1 className={styles.practiceTitle}>Luyện đọc hiểu</h1>
+            <h1 className={styles.practiceTitle}>{t('practice.read.title')}</h1>
           </div>
           <p className={styles.practiceSubtitle}>{lesson?.title}</p>
         </div>
@@ -156,7 +158,7 @@ const ReadPracticePage = () => {
           <div className={`${styles.scoreBox} ${score.correct === score.total ? styles.scoreBoxPerfect : ''}`}>
             <span className={styles.scoreIcon}>{score.correct === score.total ? '🎉' : '📊'}</span>
             <span className={styles.scoreText}>
-              Kết quả: <strong>{score.correct}/{score.total}</strong> câu đúng
+              {t('practice.result')}: <strong>{score.correct}/{score.total}</strong> {t('practice.correct')}
             </span>
           </div>
         )}
@@ -165,7 +167,7 @@ const ReadPracticePage = () => {
         {isGenerating && (
           <div className={styles.loadingState}>
             <div className={styles.spinner}></div>
-            <p>AI đang tạo câu hỏi...</p>
+            <p>{t('practice.aiGenerating')}</p>
           </div>
         )}
 
@@ -174,7 +176,7 @@ const ReadPracticePage = () => {
           <div className={styles.errorBox}>
             <p>{error}</p>
             <button className={styles.secondaryBtn} onClick={generateQuiz}>
-              🔄 Thử lại
+              🔄 {t('practice.retry')}
             </button>
           </div>
         )}
@@ -182,7 +184,7 @@ const ReadPracticePage = () => {
         {/* Instructions */}
         {questions.length > 0 && !isGenerating && (
           <div className={styles.instructions}>
-            <p>🎯 Trả lời các câu hỏi trắc nghiệm về nội dung bài học.</p>
+            <p>🎯 {t('practice.read.instruction')}</p>
           </div>
         )}
 
@@ -199,7 +201,7 @@ const ReadPracticePage = () => {
                   isChecked ? (isCorrect ? styles.exerciseCardCorrect : isWrong ? styles.exerciseCardIncorrect : '') : ''
                 }`}>
                   <div className={styles.exerciseHeader}>
-                    <span className={styles.exerciseNumber}>Câu {idx + 1}</span>
+                    <span className={styles.exerciseNumber}>{t('practice.question')} {idx + 1}</span>
                   </div>
                   
                   <p className={styles.quizQuestion}>{q.question}</p>
@@ -237,7 +239,7 @@ const ReadPracticePage = () => {
                   {/* Explanation after checking */}
                   {isChecked && q.explanation && (
                     <div className={styles.quizExplanation}>
-                      <span className={styles.aiLabel}>💡 Giải thích:</span>
+                      <span className={styles.aiLabel}>💡 {t('practice.read.explanation')}:</span>
                       <p>{q.explanation}</p>
                     </div>
                   )}
@@ -256,15 +258,15 @@ const ReadPracticePage = () => {
                 onClick={checkAnswers}
                 disabled={Object.keys(selectedAnswers).length < questions.length}
               >
-                ✓ Kiểm tra kết quả
+                ✓ {t('practice.checkResult')}
               </button>
             ) : (
               <>
                 <button className={styles.secondaryBtn} onClick={resetExercise}>
-                  🔄 Làm lại
+                  🔄 {t('practice.redo')}
                 </button>
                 <Link href={`/practice/${lessonId}`} className={styles.primaryBtn}>
-                  Tiếp tục →
+                  {t('practice.continue')} →
                 </Link>
               </>
             )}

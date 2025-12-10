@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
 import { useAuth } from '../../../context/AuthContext';
@@ -11,6 +12,7 @@ const WritePracticePage = () => {
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
   const { user, loading: authLoading } = useAuth();
+  const { t } = useTranslation();
 
   // Redirect to login if not authenticated
   useEffect(() => {
@@ -26,16 +28,38 @@ const WritePracticePage = () => {
   const [writeChecked, setWriteChecked] = useState(false);
   const [isChecking, setIsChecking] = useState(false);
 
-  // Load vocabulary
+  // Load vocabulary and translate if needed
   useEffect(() => {
     if (lesson?.json) {
       const vocabPath = lesson.json.replace('.json', '.vocab.json');
       fetch(vocabPath)
         .then(res => res.json())
-        .then(data => setVocabulary(data.vocabulary || []))
+        .then(async (data) => {
+          let vocabData = data.vocabulary || [];
+          
+          // Translate if user language is not Vietnamese
+          const targetLang = user?.nativeLanguage || 'vi';
+          if (targetLang !== 'vi' && vocabData.length > 0) {
+            try {
+              const translateRes = await fetch('/api/translate-vocab', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ vocabulary: vocabData, targetLang })
+              });
+              const translated = await translateRes.json();
+              if (translated.success) {
+                vocabData = translated.vocabulary;
+              }
+            } catch (err) {
+              console.error('Translation error:', err);
+            }
+          }
+          
+          setVocabulary(vocabData);
+        })
         .catch(() => setVocabulary([]));
     }
-  }, [lesson]);
+  }, [lesson, user?.nativeLanguage]);
 
   // Generate vocabulary for writing
   useEffect(() => {
@@ -183,7 +207,7 @@ const WritePracticePage = () => {
       <div className={styles.page}>
         <div className={styles.loadingState}>
           <div className={styles.spinner}></div>
-          <p>Đang tải...</p>
+          <p>{t('practice.loading')}</p>
         </div>
       </div>
     );
@@ -194,19 +218,19 @@ const WritePracticePage = () => {
   return (
     <div className={styles.page}>
       <SEO 
-        title={`Luyện viết: ${lesson?.title || 'Bài học'}`}
-        description="Luyện viết tiếng Đức"
+        title={`${t('practice.write.title')}: ${lesson?.title || ''}`}
+        description={t('practice.write.description')}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.practiceHeader}>
           <Link href={`/practice/${lessonId}`} className={styles.backLink}>
-            ← Quay lại
+            ← {t('practice.backTo')}
           </Link>
           <div className={styles.practiceHeaderContent}>
             <span className={styles.practiceIcon}>✍️</span>
-            <h1 className={styles.practiceTitle}>Luyện viết</h1>
+            <h1 className={styles.practiceTitle}>{t('practice.write.title')}</h1>
           </div>
           <p className={styles.practiceSubtitle}>{lesson?.title}</p>
         </div>
@@ -216,14 +240,14 @@ const WritePracticePage = () => {
           <div className={`${styles.scoreBox} ${score.correct === score.total ? styles.scoreBoxPerfect : ''}`}>
             <span className={styles.scoreIcon}>{score.correct === score.total ? '🎉' : '📊'}</span>
             <span className={styles.scoreText}>
-              Kết quả: <strong>{score.correct}/{score.total}</strong> câu đúng
+              {t('practice.result')}: <strong>{score.correct}/{score.total}</strong> {t('practice.correct')}
             </span>
           </div>
         )}
 
         {/* Instructions */}
         <div className={styles.instructions}>
-          <p>🎯 Đặt câu tiếng Đức với mỗi từ vựng dưới đây. Câu cần có ít nhất 4 từ.</p>
+          <p>🎯 {t('practice.write.instruction')}</p>
         </div>
 
         {/* Exercises */}
@@ -233,7 +257,7 @@ const WritePracticePage = () => {
               writeChecked ? (writeResults[idx]?.isCorrect ? styles.exerciseCardCorrect : styles.exerciseCardIncorrect) : ''
             }`}>
               <div className={styles.exerciseHeader}>
-                <span className={styles.exerciseNumber}>Từ {idx + 1}</span>
+                <span className={styles.exerciseNumber}>{t('practice.word')} {idx + 1}</span>
               </div>
               
               {/* Vocab Card */}
@@ -259,7 +283,7 @@ const WritePracticePage = () => {
               
               <textarea
                 className={styles.answerTextarea}
-                placeholder={`Đặt câu với "${getBaseWord(vocab.word)}"...`}
+                placeholder={`${t('practice.write.placeholder')} "${getBaseWord(vocab.word)}"...`}
                 value={writeAnswers[idx] || ''}
                 onChange={(e) => setWriteAnswers(prev => ({ ...prev, [idx]: e.target.value }))}
                 disabled={writeChecked}
@@ -273,7 +297,7 @@ const WritePracticePage = () => {
                     <span className={writeResults[idx]?.isCorrect ? styles.resultCorrect : styles.resultIncorrect}>
                       {writeResults[idx]?.isCorrect ? '✓ ' : '✗ '}
                       {writeResults[idx]?.aiChecked && writeResults[idx]?.grammarScore 
-                        ? `Điểm ngữ pháp: ${writeResults[idx].grammarScore}/10` 
+                        ? `${t('practice.write.grammarScore')}: ${writeResults[idx].grammarScore}/10` 
                         : writeResults[idx]?.feedback}
                     </span>
                   </div>
@@ -284,7 +308,7 @@ const WritePracticePage = () => {
                       {/* Errors */}
                       {writeResults[idx]?.errors?.length > 0 && (
                         <div className={styles.aiErrorsBox}>
-                          <span className={styles.aiLabel}>❌ Lỗi:</span>
+                          <span className={styles.aiLabel}>❌ {t('practice.write.errors')}:</span>
                           <ul className={styles.aiErrorList}>
                             {writeResults[idx].errors.map((err, i) => (
                               <li key={i}>{err}</li>
@@ -298,7 +322,7 @@ const WritePracticePage = () => {
                        !writeResults[idx]?.isCorrect && 
                        writeResults[idx].corrections.toLowerCase().trim() !== (writeAnswers[idx] || '').toLowerCase().trim() && (
                         <div className={styles.aiCorrectionBox}>
-                          <span className={styles.aiLabel}>✏️ Sửa lại:</span>
+                          <span className={styles.aiLabel}>✏️ {t('practice.write.correction')}:</span>
                           <p className={styles.aiCorrectionText}>{writeResults[idx].corrections}</p>
                         </div>
                       )}
@@ -306,7 +330,7 @@ const WritePracticePage = () => {
                       {/* Suggestion */}
                       {writeResults[idx]?.suggestion && (
                         <div className={styles.aiSuggestionBox}>
-                          <span className={styles.aiLabel}>💡 Gợi ý câu hay hơn:</span>
+                          <span className={styles.aiLabel}>💡 {t('practice.write.suggestion')}:</span>
                           <p className={styles.aiSuggestionText}>{writeResults[idx].suggestion}</p>
                         </div>
                       )}
@@ -314,7 +338,7 @@ const WritePracticePage = () => {
                       {/* Explanation */}
                       {writeResults[idx]?.explanation && (
                         <div className={styles.aiExplanationBox}>
-                          <span className={styles.aiLabel}>📝 Giải thích:</span>
+                          <span className={styles.aiLabel}>📝 {t('practice.write.explanationLabel')}:</span>
                           <p className={styles.aiExplanationText}>{writeResults[idx].explanation}</p>
                         </div>
                       )}
@@ -337,19 +361,19 @@ const WritePracticePage = () => {
               {isChecking ? (
                 <>
                   <span className={styles.btnSpinner}></span>
-                  AI đang kiểm tra...
+                  {t('practice.aiChecking')}
                 </>
               ) : (
-                '✓ Kiểm tra kết quả'
+                `✓ ${t('practice.checkResult')}`
               )}
             </button>
           ) : (
             <>
               <button className={styles.secondaryBtn} onClick={resetExercise}>
-                🔄 Làm lại
+                🔄 {t('practice.redo')}
               </button>
               <Link href={`/practice/${lessonId}`} className={styles.primaryBtn}>
-                Tiếp tục →
+                {t('practice.continue')} →
               </Link>
             </>
           )}

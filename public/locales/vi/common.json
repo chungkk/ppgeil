@@ -862,5 +862,71 @@
       "adjective": "Tính từ",
       "loading": "Đang tải..."
     }
+  },
+  "practice": {
+    "title": "Luyện tập",
+    "backTo": "Quay lại",
+    "loading": "Đang tải...",
+    "aiGenerating": "AI đang tạo câu hỏi...",
+    "aiChecking": "AI đang kiểm tra...",
+    "retry": "Thử lại",
+    "checkResult": "Kiểm tra kết quả",
+    "redo": "Làm lại",
+    "continue": "Tiếp tục",
+    "result": "Kết quả",
+    "correct": "câu đúng",
+    "score": "Điểm",
+    "question": "Câu",
+    "word": "Từ",
+    "hub": {
+      "title": "Luyện tập",
+      "subtitle": "Chọn loại bài tập"
+    },
+    "listen": {
+      "title": "Luyện nghe",
+      "description": "Nghe câu chứa từ vựng quan trọng và viết lại",
+      "instruction": "Nghe và viết lại câu bạn nghe được.",
+      "play": "Nghe",
+      "playing": "Đang phát...",
+      "placeholder": "Viết lại câu bạn nghe được...",
+      "answer": "Đáp án"
+    },
+    "read": {
+      "title": "Luyện đọc hiểu",
+      "description": "Trả lời câu hỏi trắc nghiệm về nội dung bài",
+      "instruction": "Trả lời các câu hỏi trắc nghiệm về nội dung bài học.",
+      "explanation": "Giải thích",
+      "error": "Không thể tạo câu hỏi. Vui lòng thử lại."
+    },
+    "write": {
+      "title": "Luyện viết",
+      "description": "Đặt câu với từ vựng đã học",
+      "instruction": "Đặt câu tiếng Đức với mỗi từ vựng dưới đây.",
+      "placeholder": "Đặt câu với",
+      "grammarScore": "Điểm ngữ pháp",
+      "errors": "Lỗi",
+      "correction": "Sửa lại",
+      "suggestion": "Gợi ý câu hay hơn",
+      "explanationLabel": "Giải thích"
+    },
+    "speak": {
+      "title": "Luyện nói",
+      "description": "Luyện phát âm với các câu mẫu",
+      "comingSoon": "Tính năng đang phát triển",
+      "comingSoonDesc": "Chức năng luyện nói sẽ bao gồm:",
+      "features": {
+        "listen": "Nghe mẫu câu tiếng Đức",
+        "record": "Ghi âm giọng nói của bạn",
+        "compare": "So sánh phát âm với mẫu",
+        "tips": "Gợi ý cải thiện phát âm"
+      },
+      "note": "Tính năng sẽ sớm được ra mắt. Hãy theo dõi nhé!"
+    },
+    "feedback": {
+      "correct": "Chính xác!",
+      "incorrect": "Sai",
+      "needImprove": "Cần cải thiện",
+      "great": "Tốt lắm!"
+    }
   }
 }

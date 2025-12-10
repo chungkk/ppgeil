@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
 import { useAuth } from '../../../context/AuthContext';
@@ -12,6 +13,7 @@ const ListenPracticePage = () => {
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
   const { user, loading: authLoading } = useAuth();
+  const { t } = useTranslation();
 
   // Redirect to login if not authenticated
   useEffect(() => {
@@ -250,7 +252,7 @@ const ListenPracticePage = () => {
       <div className={styles.page}>
         <div className={styles.loadingState}>
           <div className={styles.spinner}></div>
-          <p>Đang tải...</p>
+          <p>{t('practice.loading')}</p>
         </div>
       </div>
     );
@@ -261,8 +263,8 @@ const ListenPracticePage = () => {
   return (
     <div className={styles.page}>
       <SEO 
-        title={`Luyện nghe: ${lesson?.title || 'Bài học'}`}
-        description="Luyện nghe tiếng Đức"
+        title={`${t('practice.listen.title')}: ${lesson?.title || ''}`}
+        description={t('practice.listen.description')}
       />
 
       {/* Mini Video Player - Fixed position */}
@@ -283,11 +285,11 @@ const ListenPracticePage = () => {
         {/* Header */}
         <div className={styles.practiceHeader}>
           <Link href={`/practice/${lessonId}`} className={styles.backLink}>
-            ← Quay lại
+            ← {t('practice.backTo')}
           </Link>
           <div className={styles.practiceHeaderContent}>
             <span className={styles.practiceIcon}>🎧</span>
-            <h1 className={styles.practiceTitle}>Luyện nghe</h1>
+            <h1 className={styles.practiceTitle}>{t('practice.listen.title')}</h1>
           </div>
           <p className={styles.practiceSubtitle}>{lesson?.title}</p>
         </div>
@@ -297,14 +299,14 @@ const ListenPracticePage = () => {
           <div className={`${styles.scoreBox} ${score.correct === score.total ? styles.scoreBoxPerfect : ''}`}>
             <span className={styles.scoreIcon}>{score.correct === score.total ? '🎉' : '📊'}</span>
             <span className={styles.scoreText}>
-              Kết quả: <strong>{score.correct}/{score.total}</strong> câu đúng
+              {t('practice.result')}: <strong>{score.correct}/{score.total}</strong> {t('practice.correct')}
             </span>
           </div>
         )}
 
         {/* Instructions */}
         <div className={styles.instructions}>
-          <p>🎯 Nghe từng câu và viết lại chính xác những gì bạn nghe được.</p>
+          <p>🎯 {t('practice.listen.instruction')}</p>
         </div>
 
         {/* Exercises */}
@@ -314,19 +316,19 @@ const ListenPracticePage = () => {
               listenChecked ? (listenResults[idx]?.isCorrect ? styles.exerciseCardCorrect : styles.exerciseCardIncorrect) : ''
             }`}>
               <div className={styles.exerciseHeader}>
-                <span className={styles.exerciseNumber}>Câu {idx + 1}</span>
+                <span className={styles.exerciseNumber}>{t('practice.question')} {idx + 1}</span>
                 <button 
                   className={`${styles.playBtn} ${currentPlaying === idx ? styles.playBtnActive : ''}`}
                   onClick={() => playSentence(sentence, idx)}
                   disabled={currentPlaying !== null && currentPlaying !== idx}
                 >
-                  {currentPlaying === idx ? '🔊 Đang phát...' : '🔊 Nghe'}
+                  {currentPlaying === idx ? `🔊 ${t('practice.listen.playing')}` : `🔊 ${t('practice.listen.play')}`}
                 </button>
               </div>
               
               <textarea
                 className={styles.answerTextarea}
-                placeholder="Viết lại câu bạn nghe được..."
+                placeholder={t('practice.listen.placeholder')}
                 value={listenAnswers[idx] || ''}
                 onChange={(e) => setListenAnswers(prev => ({ ...prev, [idx]: e.target.value }))}
                 disabled={listenChecked}
@@ -337,12 +339,12 @@ const ListenPracticePage = () => {
                 <div className={styles.resultBox}>
                   <div className={styles.resultHeader}>
                     <span className={listenResults[idx]?.isCorrect ? styles.resultCorrect : styles.resultIncorrect}>
-                      {listenResults[idx]?.isCorrect ? '✓ Chính xác!' : `✗ ${listenResults[idx]?.similarity}% đúng`}
+                      {listenResults[idx]?.isCorrect ? `✓ ${t('practice.feedback.correct')}` : `✗ ${listenResults[idx]?.similarity}% ${t('practice.correct')}`}
                     </span>
                   </div>
                   {!listenResults[idx]?.isCorrect && (
                     <div className={styles.correctAnswerBox}>
-                      <span className={styles.correctAnswerLabel}>Đáp án:</span>
+                      <span className={styles.correctAnswerLabel}>{t('practice.listen.answer')}:</span>
                       <p className={styles.correctAnswerText}>{listenResults[idx]?.correctAnswer}</p>
                     </div>
                   )}
@@ -356,15 +358,15 @@ const ListenPracticePage = () => {
         <div className={styles.actionButtons}>
           {!listenChecked ? (
             <button className={styles.primaryBtn} onClick={checkAnswers}>
-              ✓ Kiểm tra kết quả
+              ✓ {t('practice.checkResult')}
             </button>
           ) : (
             <>
               <button className={styles.secondaryBtn} onClick={resetExercise}>
-                🔄 Làm lại
+                🔄 {t('practice.redo')}
               </button>
               <Link href={`/practice/${lessonId}`} className={styles.primaryBtn}>
-                Tiếp tục →
+                {t('practice.continue')} →
               </Link>
             </>
           )}

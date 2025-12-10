@@ -865,5 +865,71 @@
       "adjective": "Adjective",
       "loading": "Loading..."
     }
+  },
+  "practice": {
+    "title": "Practice",
+    "backTo": "Back",
+    "loading": "Loading...",
+    "aiGenerating": "AI is generating questions...",
+    "aiChecking": "AI is checking...",
+    "retry": "Retry",
+    "checkResult": "Check Results",
+    "redo": "Try Again",
+    "continue": "Continue",
+    "result": "Result",
+    "correct": "correct",
+    "score": "Score",
+    "question": "Question",
+    "word": "Word",
+    "hub": {
+      "title": "Practice",
+      "subtitle": "Choose exercise type"
+    },
+    "listen": {
+      "title": "Listening Practice",
+      "description": "Listen to sentences with important vocabulary and write them",
+      "instruction": "Listen and write what you hear.",
+      "play": "Play",
+      "playing": "Playing...",
+      "placeholder": "Write what you hear...",
+      "answer": "Answer"
+    },
+    "read": {
+      "title": "Reading Comprehension",
+      "description": "Answer multiple choice questions about the content",
+      "instruction": "Answer the multiple choice questions about the lesson content.",
+      "explanation": "Explanation",
+      "error": "Could not generate questions. Please try again."
+    },
+    "write": {
+      "title": "Writing Practice",
+      "description": "Create sentences with vocabulary words",
+      "instruction": "Create a German sentence with each vocabulary word below.",
+      "placeholder": "Create a sentence with",
+      "grammarScore": "Grammar Score",
+      "errors": "Errors",
+      "correction": "Correction",
+      "suggestion": "Better suggestion",
+      "explanationLabel": "Explanation"
+    },
+    "speak": {
+      "title": "Speaking Practice",
+      "description": "Practice pronunciation with sample sentences",
+      "comingSoon": "Feature in Development",
+      "comingSoonDesc": "Speaking practice will include:",
+      "features": {
+        "listen": "Listen to German sample sentences",
+        "record": "Record your voice",
+        "compare": "Compare pronunciation with the model",
+        "tips": "Get pronunciation improvement tips"
+      },
+      "note": "This feature will be available soon. Stay tuned!"
+    },
+    "feedback": {
+      "correct": "Correct!",
+      "incorrect": "Wrong",
+      "needImprove": "Needs improvement",
+      "great": "Great job!"
+    }
   }
 }

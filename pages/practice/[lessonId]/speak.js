@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
 import { useAuth } from '../../../context/AuthContext';
@@ -11,6 +12,7 @@ const SpeakPracticePage = () => {
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
   const { user, loading: authLoading } = useAuth();
+  const { t } = useTranslation();
 
   // Redirect to login if not authenticated
   useEffect(() => {
@@ -24,7 +26,7 @@ const SpeakPracticePage = () => {
       <div className={styles.page}>
         <div className={styles.loadingState}>
           <div className={styles.spinner}></div>
-          <p>Đang tải...</p>
+          <p>{t('practice.loading')}</p>
         </div>
       </div>
     );
@@ -33,19 +35,19 @@ const SpeakPracticePage = () => {
   return (
     <div className={styles.page}>
       <SEO 
-        title={`Luyện nói: ${lesson?.title || 'Bài học'}`}
-        description="Luyện nói tiếng Đức"
+        title={`${t('practice.speak.title')}: ${lesson?.title || ''}`}
+        description={t('practice.speak.description')}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.practiceHeader}>
           <Link href={`/practice/${lessonId}`} className={styles.backLink}>
-            ← Quay lại
+            ← {t('practice.backTo')}
           </Link>
           <div className={styles.practiceHeaderContent}>
             <span className={styles.practiceIcon}>🎤</span>
-            <h1 className={styles.practiceTitle}>Luyện nói</h1>
+            <h1 className={styles.practiceTitle}>{t('practice.speak.title')}</h1>
           </div>
           <p className={styles.practiceSubtitle}>{lesson?.title}</p>
         </div>
@@ -54,23 +56,23 @@ const SpeakPracticePage = () => {
         <div className={styles.comingSoonPage}>
           <div className={styles.comingSoonContent}>
             <span className={styles.comingSoonIcon}>🚧</span>
-            <h2 className={styles.comingSoonTitle}>Tính năng đang phát triển</h2>
+            <h2 className={styles.comingSoonTitle}>{t('practice.speak.comingSoon')}</h2>
             <p className={styles.comingSoonDescription}>
-              Chức năng luyện nói sẽ bao gồm:
+              {t('practice.speak.comingSoonDesc')}
             </p>
             <ul className={styles.featureList}>
-              <li>🎧 Nghe mẫu câu tiếng Đức</li>
-              <li>🎤 Ghi âm giọng nói của bạn</li>
-              <li>📊 So sánh phát âm với mẫu</li>
-              <li>💡 Gợi ý cải thiện phát âm</li>
+              <li>🎧 {t('practice.speak.features.listen')}</li>
+              <li>🎤 {t('practice.speak.features.record')}</li>
+              <li>📊 {t('practice.speak.features.compare')}</li>
+              <li>💡 {t('practice.speak.features.tips')}</li>
             </ul>
             <p className={styles.comingSoonNote}>
-              Tính năng sẽ sớm được ra mắt. Hãy theo dõi nhé!
+              {t('practice.speak.note')}
             </p>
           </div>
           
           <Link href={`/practice/${lessonId}`} className={styles.primaryBtn}>
-            ← Quay lại trang luyện tập
+            ← {t('practice.backTo')}
           </Link>
         </div>
       </div>

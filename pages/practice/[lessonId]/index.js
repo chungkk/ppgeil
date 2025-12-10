@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import SEO from '../../../components/SEO';
 import { useLessonData } from '../../../lib/hooks/useLessonData';
 import { useAuth } from '../../../context/AuthContext';
@@ -11,6 +12,7 @@ const PracticeHomePage = () => {
   const { lessonId } = router.query;
   const { lesson, isLoading } = useLessonData(lessonId, 'dictation');
   const { user, loading: authLoading } = useAuth();
+  const { t } = useTranslation();
   const [vocabulary, setVocabulary] = useState([]);
 
   // Redirect to login if not authenticated
@@ -40,7 +42,7 @@ const PracticeHomePage = () => {
       <div className={styles.page}>
         <div className={styles.loadingState}>
           <div className={styles.spinner}></div>
-          <p>Đang tải...</p>
+          <p>{t('practice.loading')}</p>
         </div>
       </div>
     );
@@ -50,16 +52,16 @@ const PracticeHomePage = () => {
     {
       id: 'listen',
       icon: '🎧',
-      title: 'Luyện nghe',
-      description: 'Nghe 5 câu chứa từ vựng quan trọng và viết lại',
+      title: t('practice.listen.title'),
+      description: t('practice.listen.description'),
       color: '#10b981',
       available: vocabulary.length > 0
     },
     {
       id: 'speak',
       icon: '🎤',
-      title: 'Luyện nói',
-      description: 'Nghe và lặp lại theo mẫu, ghi âm giọng nói',
+      title: t('practice.speak.title'),
+      description: t('practice.speak.description'),
       color: '#f59e0b',
       available: false,
       comingSoon: true
@@ -67,16 +69,16 @@ const PracticeHomePage = () => {
     {
       id: 'read',
       icon: '📖',
-      title: 'Luyện đọc',
-      description: 'Đọc hiểu và điền từ còn thiếu vào chỗ trống',
+      title: t('practice.read.title'),
+      description: t('practice.read.description'),
       color: '#667eea',
       available: true
     },
     {
       id: 'write',
       icon: '✍️',
-      title: 'Luyện viết',
-      description: 'Đặt câu với 5 từ vựng quan trọng của bài',
+      title: t('practice.write.title'),
+      description: t('practice.write.description'),
       color: '#ef4444',
       available: vocabulary.length > 0
     }
@@ -85,17 +87,17 @@ const PracticeHomePage = () => {
   return (
     <div className={styles.page}>
       <SEO 
-        title={`Luyện tập: ${lesson?.title || 'Bài học'}`}
-        description="Luyện nghe, nói, đọc, viết tiếng Đức"
+        title={`${t('practice.title')}: ${lesson?.title || ''}`}
+        description={t('practice.hub.subtitle')}
       />
 
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
           <button className={styles.backButton} onClick={goBackToDictation}>
-            ← Quay lại
+            ← {t('practice.backTo')}
           </button>
-          <h1 className={styles.title}>🎯 Luyện tập</h1>
+          <h1 className={styles.title}>🎯 {t('practice.hub.title')}</h1>
           <p className={styles.lessonTitle}>{lesson?.title}</p>
         </div>
 
@@ -116,20 +118,12 @@ const PracticeHomePage = () => {
                   <h3 className={styles.cardTitle}>{card.title}</h3>
                   <p className={styles.cardDescription}>{card.description}</p>
                   {card.comingSoon && (
-                    <span className={styles.comingSoonBadge}>Sắp ra mắt</span>
-                  )}
-                  {!card.comingSoon && !card.available && (
-                    <span className={styles.unavailableBadge}>Chưa có từ vựng</span>
+                    <span className={styles.comingSoonBadge}>{t('practice.speak.comingSoon')}</span>
                   )}
                 </div>
               )}
             </div>
           ))}
-        </div>
-
-        {/* Info */}
-        <div className={styles.infoBox}>
-          <p>💡 Mẹo: Hoàn thành tất cả các bài luyện tập để nắm vững bài học!</p>
         </div>
       </div>
     </div>
