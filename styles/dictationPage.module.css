@@ -3312,7 +3312,23 @@
   }
 
   .mobileTranscriptNumber {
-    display: none; /* Ẩn số thứ tự trên mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    color: var(--accent-blue);
+    background: rgba(102, 126, 234, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .mobileTranscriptNumber:active {
+    transform: scale(0.9);
+    background: rgba(102, 126, 234, 0.3);
   }
 
   .mobileTranscriptItemActive .mobileTranscriptNumber {

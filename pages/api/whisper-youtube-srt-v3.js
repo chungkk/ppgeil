@@ -28,7 +28,7 @@ const openai = new OpenAI({
 
 // Config - giống v2
 const MIN_WORDS = 6;
-const MAX_WORDS = 20;  // Tăng từ 14 lên 20 để thử câu dài hơn
+const MAX_WORDS = 12;  // Giới hạn 12 từ/segment
 const MAX_CHAR_LENGTH = 150;
 
 // Buffer để bù đắp Whisper timestamp không chính xác
