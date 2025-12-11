@@ -3144,11 +3144,9 @@ const DictationPageContent = () => {
                           key={originalIndex}
                           data-sentence-index={originalIndex}
                           className={`${styles.mobileTranscriptItem} ${isActive ? styles.mobileTranscriptItemActive : ''} ${isCompleted ? styles.mobileTranscriptItemCompleted : ''}`}
+                          onClick={() => handleSentenceClick(segment.start, segment.end)}
                         >
-                          <div 
-                            className={styles.mobileTranscriptNumber}
-                            onClick={() => handleSentenceClick(segment.start, segment.end)}
-                          >
+                          <div className={styles.mobileTranscriptNumber}>
                             {isCompleted ? '✓' : `#${originalIndex + 1}`}
                           </div>
                           <div className={styles.mobileTranscriptContent}>
