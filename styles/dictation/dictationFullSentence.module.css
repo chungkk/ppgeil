@@ -78,6 +78,18 @@
   position: relative;
 }
 
+.clickableWord {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin: 0 -4px;
+  transition: background-color 0.15s ease;
+}
+
+.clickableWord:hover {
+  background-color: rgba(96, 165, 250, 0.2);
+}
+
 .hintSentenceText {
   display: flex;
   flex-wrap: wrap;

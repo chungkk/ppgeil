@@ -88,24 +88,25 @@ const DictationDesktopArea = ({
       <div className={styles.dictationBox}>
         <div className={styles.fullSentenceDisplay}>
           {isShadowingMode ? (
-            // Shadowing mode: show full text with karaoke highlight
+            // Shadowing mode: show full text with karaoke highlight - clickable for dictionary
             <div className={styles.shadowingText}>
-              {isPlaying ? (
-                <span className={styles.karaokeText}>
-                  {currentSentence.text.split(/\s+/).map((word, idx) => {
-                    const isSpoken = idx < activeWordIndex;
-                    const isCurrent = idx === activeWordIndex;
-                    return (
-                      <span
-                        key={idx}
-                        className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
-                      >
-                        {word}{idx < currentSentence.text.split(/\s+/).length - 1 ? ' ' : ''}
-                      </span>
-                    );
-                  })}
-                </span>
-              ) : currentSentence.text}
+              <span className={styles.karaokeText}>
+                {currentSentence.text.split(/\s+/).map((word, idx) => {
+                  const isSpoken = isPlaying && idx < activeWordIndex;
+                  const isCurrent = isPlaying && idx === activeWordIndex;
+                  const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+                  return (
+                    <span
+                      key={idx}
+                      className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${styles.clickableWord}`}
+                      onClick={(e) => pureWord && onWordClickForPopup && onWordClickForPopup(pureWord, e)}
+                      style={{ cursor: pureWord ? 'pointer' : 'default' }}
+                    >
+                      {word}{idx < currentSentence.text.split(/\s+/).length - 1 ? ' ' : ''}
+                    </span>
+                  );
+                })}
+              </span>
             </div>
           ) : isCompleted ? (
             <div 
