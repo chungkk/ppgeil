@@ -3368,6 +3368,33 @@
     text-shadow: 0 0 10px rgba(102, 126, 234, 0.6);
   }
 
+  /* Clickable word in shadowing mode */
+  .clickableWord {
+    display: inline;
+    cursor: pointer;
+    transition: color 0.15s ease, background-color 0.15s ease;
+    padding: 2px 1px;
+    border-radius: 3px;
+  }
+
+  .clickableWord:active {
+    background-color: rgba(102, 126, 234, 0.3);
+  }
+
+  .mobileTranscriptItemActive .clickableWord {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .mobileTranscriptItemActive .clickableWord.karaokeWordSpoken {
+    color: #a5b4fc;
+  }
+
+  .mobileTranscriptItemActive .clickableWord.karaokeWordCurrent {
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.6);
+  }
+
   /* Hide old dictationHeader on mobile - using new dictationHeaderMobile */
   .dictationHeader {
     display: none;

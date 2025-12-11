@@ -3144,29 +3144,35 @@ const DictationPageContent = () => {
                           key={originalIndex}
                           data-sentence-index={originalIndex}
                           className={`${styles.mobileTranscriptItem} ${isActive ? styles.mobileTranscriptItemActive : ''} ${isCompleted ? styles.mobileTranscriptItemCompleted : ''}`}
-                          onClick={() => handleSentenceClick(segment.start, segment.end)}
                         >
-                          <div className={styles.mobileTranscriptNumber}>
+                          <div 
+                            className={styles.mobileTranscriptNumber}
+                            onClick={() => handleSentenceClick(segment.start, segment.end)}
+                          >
                             {isCompleted ? '✓' : `#${originalIndex + 1}`}
                           </div>
                           <div className={styles.mobileTranscriptContent}>
                             <div className={styles.mobileTranscriptText}>
-                              {isActive && isPlaying ? (
-                                <span className={styles.karaokeText}>
-                                  {segment.text.split(/\s+/).map((word, idx) => {
-                                    const isSpoken = idx < activeWordIndex;
-                                    const isCurrent = idx === activeWordIndex;
-                                    return (
-                                      <span
-                                        key={idx}
-                                        className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
-                                      >
-                                        {word}{idx < segment.text.split(/\s+/).length - 1 ? ' ' : ''}
-                                      </span>
-                                    );
-                                  })}
-                                </span>
-                              ) : segment.text}
+                              {segment.text.split(/\s+/).map((word, idx) => {
+                                const isSpoken = isActive && isPlaying && idx < activeWordIndex;
+                                const isCurrent = isActive && isPlaying && idx === activeWordIndex;
+                                const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+                                
+                                return (
+                                  <span
+                                    key={idx}
+                                    className={`${styles.clickableWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      if (pureWord.length > 0) {
+                                        handleWordClickForPopup(pureWord, e);
+                                      }
+                                    }}
+                                  >
+                                    {word}{idx < segment.text.split(/\s+/).length - 1 ? ' ' : ''}
+                                  </span>
+                                );
+                              })}
                             </div>
                             {showTranslation && segment.translation && (
                               <div className={styles.mobileTranscriptTranslation}>
