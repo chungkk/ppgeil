@@ -1822,66 +1822,19 @@ const DictationPageContent = () => {
     const isMobileView = window.innerWidth <= 768;
 
     if (isMobileView) {
-      // Mobile: Show tooltip above word with boundary checks
-      const tooltipHeight = 50; // Estimated tooltip height
-      const tooltipWidth = 200; // Estimated tooltip width
-      
-      let top = rect.top - 10;
-      let left = rect.left + rect.width / 2;
+      // Mobile: Show DictionaryPopup (same as desktop but with mobile styling)
+      const popupWidth = 280;
+      const popupHeight = 320;
 
-      // Keep tooltip within viewport
-      // Check top boundary
-      if (top - tooltipHeight < 10) {
-        top = rect.bottom + 10 + tooltipHeight; // Show below if not enough space above
-      }
+      // Position popup centered at bottom of screen for mobile
+      const top = window.innerHeight - popupHeight - 80; // 80px from bottom for mobile controls
+      const left = (window.innerWidth - popupWidth) / 2;
 
-      // Check left boundary
-      const halfWidth = tooltipWidth / 2;
-      if (left - halfWidth < 10) {
-        left = halfWidth + 10;
-      }
-      
-      // Check right boundary
-      if (left + halfWidth > window.innerWidth - 10) {
-        left = window.innerWidth - halfWidth - 10;
-      }
-
-      setTooltipWord(cleanedWord);
-      setTooltipPosition({ top, left });
-      setShowTooltip(true);
-
-      // Check cache first
-      const targetLang = user?.nativeLanguage || 'vi';
-      const cached = translationCache.get(cleanedWord, 'de', targetLang);
-      if (cached) {
-        setTooltipTranslation(cached);
-        return;
-      }
-
-      // Fetch translation for tooltip
-      try {
-        const response = await fetch('/api/translate', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            text: cleanedWord,
-            context: '',
-            sourceLang: 'de',
-            targetLang: targetLang
-          })
-        });
-
-        const data = await response.json();
-        if (data.success && data.translation) {
-          setTooltipTranslation(data.translation);
-          translationCache.set(cleanedWord, data.translation, 'de', targetLang);
-        }
-      } catch (error) {
-        console.error('Translation error:', error);
-        setTooltipTranslation('...');
-      }
+      setClickedWordElement(element);
+      setSelectedWord(cleanedWord);
+      setPopupPosition({ top, left });
+      setPopupArrowPosition('bottom');
+      setShowVocabPopup(true);
     } else {
       // Desktop: Show full popup (top/bottom only)
       const popupWidth = 350;
@@ -3363,8 +3316,8 @@ const DictationPageContent = () => {
         />
       )}
 
-      {/* Desktop Dictionary Popup */}
-      {showVocabPopup && !isMobile && (
+      {/* Dictionary Popup (Desktop & Mobile) */}
+      {showVocabPopup && (
         <DictionaryPopup
           word={selectedWord}
           position={popupPosition}

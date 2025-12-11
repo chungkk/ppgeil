@@ -418,16 +418,17 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
         onTouchStart={isMobile ? handleTouchStart : undefined}
         onTouchMove={isMobile ? handleTouchMove : undefined}
         onTouchEnd={isMobile ? handleTouchEnd : undefined}
-        style={position ? {
+        style={isMobile ? {
+          // Mobile: use CSS flexbox positioning, only apply swipe transform
+          transform: swipeDistance > 0 ? `translateY(${swipeDistance}px)` : 'none',
+          opacity: swipeDistance > 0 ? Math.max(0.3, 1 - swipeDistance / 200) : 1,
+          transition: swipeDistance > 0 ? 'none' : 'transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-out',
+        } : (position ? {
+          // Desktop: use fixed position
           position: 'fixed',
           top: `${position.top}px`,
           left: `${position.left}px`,
-          transform: isMobile 
-            ? `translate(-50%, ${swipeDistance}px)` 
-            : 'none',
-          opacity: swipeDistance > 0 ? Math.max(0.3, 1 - swipeDistance / 200) : 1,
-          transition: swipeDistance > 0 ? 'none' : 'transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease-out',
-        } : {}}
+        } : {})}
       >
         <div className={styles.header}>
           <div className={styles.headerContent}>

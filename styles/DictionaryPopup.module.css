@@ -408,40 +408,50 @@
 
 /* Mobile */
 .mobileOverlay {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   padding: 0;
-  pointer-events: none;
+  padding-bottom: 70px; /* Space for mobile bottom controls */
 }
 
 .mobilePopup {
   pointer-events: auto;
-  max-width: 280px;
-  border-radius: 14px;
+  width: calc(100% - 16px);
+  max-width: 360px;
+  border-radius: 16px 16px 16px 16px;
+  margin: 0 8px;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobilePopup .header {
-  padding: 10px 12px;
-  border-radius: 14px 14px 0 0;
+  padding: 12px 14px;
+  border-radius: 16px 16px 0 0;
+  position: relative;
 }
 
 .mobilePopup .header::after {
   content: '';
   position: absolute;
-  top: 4px;
+  top: 6px;
   left: 50%;
   transform: translateX(-50%);
-  width: 32px;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.3);
+  width: 36px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 2px;
 }
 
-.mobilePopup .wordTitle { font-size: 14px; }
-.mobilePopup .wordTranslation { font-size: 11px; }
-.mobilePopup .closeButton { width: 24px; height: 24px; min-width: 32px; min-height: 32px; font-size: 12px; }
-.mobilePopup .tabs { padding: 6px 8px; }
-.mobilePopup .tab { padding: 6px 8px; font-size: 11px; border-radius: 8px; }
-.mobilePopup .content { padding: 8px; max-height: none; }
+.mobilePopup .wordTitle { font-size: 16px; }
+.mobilePopup .wordTranslation { font-size: 13px; }
+.mobilePopup .closeButton { width: 32px; height: 32px; min-width: 36px; min-height: 36px; font-size: 14px; }
+.mobilePopup .tabs { padding: 8px 10px; }
+.mobilePopup .tab { padding: 8px 12px; font-size: 12px; border-radius: 10px; }
+.mobilePopup .content { padding: 10px; max-height: 200px; overflow-y: auto; flex: 1; }
+.mobilePopup .saveButton { padding: 8px 14px; height: 32px; font-size: 12px; }
 
 /* Responsive */
 @media (max-width: 480px) {
