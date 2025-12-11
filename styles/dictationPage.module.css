@@ -3001,19 +3001,19 @@
 
   .leftSection {
     position: fixed;
-    top: 64px; /* Below header */
+    top: 48px; /* Closer to header */
     left: 0;
     right: 0;
     z-index: 100;
     background: transparent;
-    padding: 0 8px; /* Add horizontal padding like shadowing */
+    padding: 0 4px; /* Reduced horizontal padding */
     height: auto; /* Let video aspect-ratio determine height */
   }
   
   .middleSection {
     position: fixed;
-    top: calc(64px + 56.25vw + 8px); /* Below video (16:9 aspect) + header + gap */
-    bottom: calc(80px + env(safe-area-inset-bottom, 0px)); /* Above bottom controls - increased */
+    top: calc(48px + 56.25vw + 4px); /* Below video (16:9 aspect) + reduced gap */
+    bottom: calc(60px + env(safe-area-inset-bottom, 0px)); /* Above bottom controls - reduced */
     left: 8px;
     right: 8px;
     padding: 0;
@@ -3045,19 +3045,20 @@
     margin-bottom: 8px;
   }
   
-  /* Mobile Dictation Header - Clean & Compact Design */
+  /* Mobile Dictation Header - Compact (match bottom controls height ~52px) */
   .dictationHeaderMobile {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 12px;
-    min-height: 44px;
+    padding: 4px 8px;
+    min-height: 28px;
+    height: 28px;
     background: rgba(20, 20, 30, 0.95);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: none;
-    border-radius: 12px 12px 0 0;
-    gap: 12px;
+    border-radius: 10px 10px 0 0;
+    gap: 8px;
   }
 
   /* Left section: Sentence info */
@@ -3070,7 +3071,7 @@
 
   .sentenceNumber {
     font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
@@ -3080,7 +3081,7 @@
 
   .sentenceDivider {
     font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.4);
     margin: 0 1px;
@@ -3088,7 +3089,7 @@
 
   .sentenceTotal {
     font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.6);
   }
@@ -3098,49 +3099,49 @@
     flex: 1;
     display: flex;
     align-items: center;
-    gap: 8px;
-    max-width: 160px;
+    gap: 6px;
+    max-width: 120px;
   }
 
   .progressBarMini {
     flex: 1;
-    height: 6px;
+    height: 4px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
+    border-radius: 2px;
     overflow: hidden;
   }
 
   .progressFillMini {
     height: 100%;
     background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
-    border-radius: 3px;
+    border-radius: 2px;
     transition: width 0.3s ease;
   }
 
   .progressTextMini {
     font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 600;
     color: #10b981;
-    min-width: 32px;
+    min-width: 26px;
     text-align: right;
   }
 
-  /* Speed button mobile - compact pill style */
+  /* Speed button mobile - ultra compact */
   .speedButtonMobile {
     background: rgba(102, 126, 234, 0.2);
-    border: 1.5px solid rgba(102, 126, 234, 0.4);
+    border: 1px solid rgba(102, 126, 234, 0.4);
     color: #a5b4fc;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 9px;
     font-weight: 700;
     font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
     cursor: pointer;
     transition: all 0.2s ease;
     -webkit-tap-highlight-color: transparent;
-    min-width: 44px;
-    height: 32px;
+    min-width: 32px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3163,22 +3164,24 @@
   .modeToggleMobile {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 3px;
     background: rgba(102, 126, 234, 0.2);
-    border: 1.5px solid rgba(102, 126, 234, 0.4);
+    border: 1px solid rgba(102, 126, 234, 0.4);
     color: #a5b4fc;
-    padding: 6px 10px;
-    border-radius: 20px;
-    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 12px;
+    font-size: 9px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s ease;
     -webkit-tap-highlight-color: transparent;
-    height: 32px;
+    height: 20px;
   }
 
   .modeToggleMobile svg {
     flex-shrink: 0;
+    width: 12px;
+    height: 12px;
   }
 
   .modeToggleMobile span {
@@ -3199,23 +3202,23 @@
   .headerRightMobile {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
   }
 
   /* Translation toggle switch for mobile */
   .translateToggleMobile {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     background: transparent;
     border: none;
-    padding: 4px;
+    padding: 2px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }
 
   .toggleLabelMobile {
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.5);
     transition: color 0.2s ease;
@@ -3226,10 +3229,10 @@
   }
 
   .toggleTrackMobile {
-    width: 36px;
-    height: 20px;
+    width: 28px;
+    height: 16px;
     background: rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
+    border-radius: 8px;
     position: relative;
     transition: all 0.2s ease;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -3243,8 +3246,8 @@
     position: absolute;
     left: 2px;
     top: 2px;
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     transition: all 0.2s ease;
@@ -3252,7 +3255,7 @@
   }
 
   .translateToggleMobileActive .toggleKnobMobile {
-    left: 18px;
+    left: 14px;
     background: white;
   }
 
@@ -4226,14 +4229,14 @@
   }
   
   .leftSection {
-    top: 64px;
+    top: 44px; /* Even closer to header on small screens */
     height: auto; /* Let video aspect-ratio determine height */
-    padding: 0 6px; /* Slightly less padding on small screens */
+    padding: 0 2px; /* Minimal padding on small screens */
   }
 
   .middleSection {
-    top: calc(64px + 56.25vw + 6px); /* Smaller video on small screens with 16:9 aspect + gap */
-    bottom: calc(78px + env(safe-area-inset-bottom, 0px));
+    top: calc(44px + 56.25vw + 2px); /* Below video with minimal gap */
+    bottom: calc(56px + env(safe-area-inset-bottom, 0px)); /* Reduced bottom control height */
     left: 6px;
     right: 6px;
     padding: 0;
@@ -4244,28 +4247,58 @@
   /* Optimize header for very small screens */
   .videoHeader,
   .transcriptHeader {
-    padding: 8px 12px;
-    height: 36px;
+    padding: 6px 10px;
+    height: 32px;
   }
 
   .videoHeaderTitle {
-    font-size: 11px;
+    font-size: 10px;
   }
 
-  /* Mobile header - compact for 480px */
+  /* Mobile header - ultra compact for 480px */
   .dictationHeaderMobile {
-    padding: 6px 10px;
-    min-height: 40px;
-    gap: 8px;
-    border-radius: 12px 12px 0 0;
+    padding: 3px 6px;
+    min-height: 24px;
+    height: 24px;
+    gap: 5px;
+    border-radius: 8px 8px 0 0;
   }
 
   .sentenceNumber {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .sentenceTotal {
-    font-size: 12px;
+    font-size: 9px;
+  }
+
+  .speedButtonMobile {
+    padding: 2px 5px;
+    font-size: 8px;
+    height: 18px;
+    min-width: 28px;
+    border-radius: 8px;
+  }
+
+  .modeToggleMobile {
+    padding: 2px 5px;
+    font-size: 8px;
+    height: 18px;
+    border-radius: 10px;
+  }
+
+  .modeToggleMobile svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .progressBarMini {
+    height: 3px;
+  }
+
+  .progressTextMini {
+    font-size: 8px;
+    min-width: 22px;
   }
 
   .headerProgress {

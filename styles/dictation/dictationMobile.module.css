@@ -16,9 +16,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    padding: 10px 16px;
-    padding-bottom: max(10px, env(safe-area-inset-bottom));
+    gap: 12px;
+    padding: 6px 12px;
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
     background: rgba(15, 23, 42, 0.75);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -35,8 +35,8 @@
 
 /* Base Mobile Circular Button */
 .mobileControlBtn {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
@@ -62,15 +62,15 @@
 }
 
 .mobileControlBtn svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   transition: transform 0.2s ease;
 }
 
 /* Play Button - Larger & Gradient with glass effect */
 .mobileControlBtnPlay {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -85,8 +85,8 @@
 }
 
 .mobileControlBtnPlay svg {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
 /* Navigation Buttons (Previous/Next) */
@@ -239,6 +239,32 @@
 }
 
 @media (max-width: 480px) {
+  .mobileBottomControls {
+    gap: 10px;
+    padding: 5px 10px;
+    padding-bottom: max(5px, env(safe-area-inset-bottom));
+  }
+
+  .mobileControlBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .mobileControlBtn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .mobileControlBtnPlay {
+    width: 44px;
+    height: 44px;
+  }
+
+  .mobileControlBtnPlay svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .dictationSlide {
     padding: 14px 10px;
     border-radius: 16px;
