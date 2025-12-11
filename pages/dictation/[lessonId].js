@@ -192,6 +192,7 @@ const DictationPageContent = () => {
   
   // Ref for mobile dictation slides to enable auto-scroll
   const dictationSlidesRef = useRef(null);
+  const mobileShadowingListRef = useRef(null); // Ref for mobile shadowing transcript list
   const isProgrammaticScrollRef = useRef(false); // Track programmatic vs manual scroll
   const isUserClickedTranscriptRef = useRef(false); // Track when user clicks transcript item directly
   const lastRenderedStateRef = useRef({ sentenceIndex: -1, isCompleted: false }); // Track last rendered state to prevent infinite loop
@@ -1122,6 +1123,23 @@ const DictationPageContent = () => {
       }
     }
   }, [currentSentenceIndex, isMobile, mobileVisibleIndices, transcriptData.length, lazySlideRange]);
+
+  // Auto-scroll mobile shadowing list to current sentence when playing
+  useEffect(() => {
+    if (!isMobile || learningMode !== 'shadowing' || !mobileShadowingListRef.current) return;
+    if (transcriptData.length === 0) return;
+
+    const container = mobileShadowingListRef.current;
+    const targetItem = container.querySelector(`[data-sentence-index="${currentSentenceIndex}"]`);
+
+    if (targetItem) {
+      // Scroll the item to the top of the visible area
+      targetItem.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }, [currentSentenceIndex, isMobile, learningMode, transcriptData.length]);
 
   // Sync currentSentenceIndex when user manually scrolls slides
   useEffect(() => {
@@ -3163,7 +3181,7 @@ const DictationPageContent = () => {
                   </div>
                 ) : (
                   /* Mobile Shadowing Mode: Transcript list (no separate header) */
-                  <div className={styles.mobileTranscriptList}>
+                  <div className={styles.mobileTranscriptList} ref={mobileShadowingListRef}>
                     {transcriptData.map((segment, originalIndex) => {
                       const isCompleted = completedSentences.includes(originalIndex);
                       const isActive = originalIndex === currentSentenceIndex;
@@ -3171,6 +3189,7 @@ const DictationPageContent = () => {
                       return (
                         <div
                           key={originalIndex}
+                          data-sentence-index={originalIndex}
                           className={`${styles.mobileTranscriptItem} ${isActive ? styles.mobileTranscriptItemActive : ''} ${isCompleted ? styles.mobileTranscriptItemCompleted : ''}`}
                           onClick={() => handleSentenceClick(segment.start, segment.end)}
                         >

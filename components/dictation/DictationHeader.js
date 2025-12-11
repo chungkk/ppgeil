@@ -22,6 +22,8 @@ const DictationHeader = ({
   onSpeedChange,
   showTranslation,
   onToggleTranslation,
+  autoStop,
+  onAutoStopChange,
   learningMode = 'dictation',
   onToggleLearningMode,
   lessonId,
@@ -137,6 +139,20 @@ const DictationHeader = ({
                   <span className={styles.settingsMenuIcon}>⚡</span>
                   <span className={styles.settingsMenuText}>Tốc độ</span>
                   <span className={styles.settingsMenuValue}>{playbackSpeed || 1}x</span>
+                </button>
+              )}
+              
+              {/* Auto stop toggle */}
+              {onAutoStopChange && (
+                <button 
+                  className={`${styles.settingsMenuItem} ${autoStop ? styles.settingsMenuItemActive : ''}`}
+                  onClick={() => onAutoStopChange(!autoStop)}
+                >
+                  <span className={styles.settingsMenuIcon}>⏸️</span>
+                  <span className={styles.settingsMenuText}>Auto stop</span>
+                  <span className={styles.settingsMenuToggle}>
+                    {autoStop ? '✓' : ''}
+                  </span>
                 </button>
               )}
               
