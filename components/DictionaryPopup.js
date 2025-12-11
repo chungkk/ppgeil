@@ -349,7 +349,6 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
       });
 
       if (res.ok) {
-        toast.success('🎉 ' + t('dictionaryPopup.addedSuccess'));
         setIsSaved(true);
         setShowConfetti(true);
         
