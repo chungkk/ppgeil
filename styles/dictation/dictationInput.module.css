@@ -577,13 +577,13 @@
 
 /* Mode Toggle Button - Circle style like settings button */
 .modeToggleButton {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: rgba(100, 116, 139, 0.2);
   border: 1.5px solid rgba(100, 116, 139, 0.3);
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -726,14 +726,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 12px;
-  min-height: 44px;
+  padding: 6px 10px;
+  min-height: 36px;
   background: rgba(20, 20, 30, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(102, 126, 234, 0.15);
   border-radius: 12px 12px 0 0;
-  gap: 12px;
+  gap: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 1002;
@@ -758,7 +758,7 @@
 
 .sentenceNumber {
   font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -768,7 +768,7 @@
 
 .sentenceDivider {
   font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.4);
   margin: 0 1px;
@@ -776,7 +776,7 @@
 
 .sentenceTotal {
   font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -848,8 +848,8 @@
    ============================================ */
 
 .settingsButtonMobile {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: rgba(100, 116, 139, 0.2);
   border: 1.5px solid rgba(100, 116, 139, 0.3);

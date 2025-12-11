@@ -219,6 +219,16 @@ const TranscriptPanel = ({
                     {isCompleted && <span className={styles.completedCheck}>✓</span>}
                   </div>
                   <div className={`${styles.transcriptItemText} ${isActiveSentencePlaying ? styles.shadowingText : ''}`}>
+                    <span 
+                      className={styles.transcriptPlayIcon}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onSentenceClick(segment.start, segment.end);
+                      }}
+                      title="Phát câu này"
+                    >
+                      ▶
+                    </span>
                     {shouldShowFullText 
                       ? renderKaraokeText(segment.text, segment, originalIndex)
                       : renderMaskedKaraokeText(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)

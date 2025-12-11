@@ -251,6 +251,29 @@
   margin-bottom: var(--spacing-xs);
 }
 
+.transcriptPlayIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  font-size: 10px;
+  color: var(--accent-blue);
+  background: rgba(102, 126, 234, 0.15);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.transcriptPlayIcon:hover {
+  background: rgba(102, 126, 234, 0.3);
+  color: #fff;
+  transform: scale(1.1);
+}
+
 .shadowingText {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.95);

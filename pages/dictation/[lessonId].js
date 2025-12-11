@@ -3144,10 +3144,21 @@ const DictationPageContent = () => {
                           key={originalIndex}
                           data-sentence-index={originalIndex}
                           className={`${styles.mobileTranscriptItem} ${isActive ? styles.mobileTranscriptItemActive : ''} ${isCompleted ? styles.mobileTranscriptItemCompleted : ''}`}
-                          onClick={() => handleSentenceClick(segment.start, segment.end)}
+                          onClick={(e) => {
+                            // Chỉ phát câu nếu click vào vùng trống (không phải từ)
+                            if (!e.target.closest(`.${styles.clickableWord}`)) {
+                              handleSentenceClick(segment.start, segment.end);
+                            }
+                          }}
                         >
-                          <div className={styles.mobileTranscriptNumber}>
-                            {isCompleted ? '✓' : `#${originalIndex + 1}`}
+                          <div 
+                            className={styles.mobileTranscriptNumber}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleSentenceClick(segment.start, segment.end);
+                            }}
+                          >
+                            {isCompleted ? '✓' : '▶'}
                           </div>
                           <div className={styles.mobileTranscriptContent}>
                             <div className={styles.mobileTranscriptText}>
