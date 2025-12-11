@@ -162,6 +162,10 @@ const DictationPageContent = () => {
   const [lessonVocabulary, setLessonVocabulary] = useState([]);
   const [isLoadingVocabulary, setIsLoadingVocabulary] = useState(false);
   
+  // Saved vocabulary states (user's saved words for this lesson)
+  const [savedVocabulary, setSavedVocabulary] = useState([]);
+  const [isLoadingSavedVocab, setIsLoadingSavedVocab] = useState(false);
+  
   // Consecutive sentence completion counter
   const [consecutiveSentences, setConsecutiveSentences] = useState(0);
 
@@ -539,6 +543,66 @@ const DictationPageContent = () => {
     
     loadVocabulary();
   }, [lesson]);
+
+  // Load saved vocabulary for this lesson (user's saved words)
+  const fetchSavedVocabulary = useCallback(async () => {
+    if (!lessonId) return;
+    
+    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+    if (!token) {
+      setSavedVocabulary([]);
+      return;
+    }
+    
+    setIsLoadingSavedVocab(true);
+    try {
+      const response = await fetch(`/api/vocabulary?lessonId=${lessonId}`, {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        setSavedVocabulary(data || []);
+      } else {
+        setSavedVocabulary([]);
+      }
+    } catch (error) {
+      console.error('Error loading saved vocabulary:', error);
+      setSavedVocabulary([]);
+    } finally {
+      setIsLoadingSavedVocab(false);
+    }
+  }, [lessonId]);
+  
+  useEffect(() => {
+    fetchSavedVocabulary();
+  }, [fetchSavedVocabulary]);
+
+  // Handle delete vocabulary
+  const handleDeleteVocabulary = useCallback(async (vocabId) => {
+    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+    if (!token) return;
+    
+    try {
+      const response = await fetch(`/api/vocabulary?id=${vocabId}`, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      
+      if (response.ok) {
+        // Remove from local state
+        setSavedVocabulary(prev => prev.filter(v => v._id !== vocabId));
+        toast.success('Đã xóa từ vựng');
+      }
+    } catch (error) {
+      console.error('Error deleting vocabulary:', error);
+      toast.error('Không thể xóa từ vựng');
+    }
+  }, []);
 
   // Load progress from SWR hook (logged-in users) or localStorage (guests)
   useEffect(() => {
@@ -1686,6 +1750,8 @@ const DictationPageContent = () => {
 
       if (response.ok) {
         toast.success(t('lesson.vocabulary.success'));
+        // Refresh saved vocabulary list after saving
+        fetchSavedVocabulary();
       } else {
         const error = await response.json();
         toast.error(error.message || t('lesson.vocabulary.error'));
@@ -1694,7 +1760,7 @@ const DictationPageContent = () => {
       console.error('Save vocabulary error:', error);
       toast.error(t('lesson.vocabulary.generalError'));
     }
-  }, [lessonId, transcriptData, currentSentenceIndex, t]);
+  }, [lessonId, transcriptData, currentSentenceIndex, t, fetchSavedVocabulary]);
 
   // Handle word click for popup (for completed words)
   const handleWordClickForPopup = useCallback(async (word, eventOrElement) => {
@@ -3183,6 +3249,9 @@ const DictationPageContent = () => {
             vocabulary={lessonVocabulary}
             isLoadingVocabulary={isLoadingVocabulary}
             onWordClickForPopup={handleWordClickForPopup}
+            savedVocabulary={savedVocabulary}
+            onDeleteVocabulary={handleDeleteVocabulary}
+            lessonId={lessonId}
           />
         </div>
       </div>
@@ -3226,6 +3295,7 @@ const DictationPageContent = () => {
             setShowVocabPopup(false);
             setClickedWordElement(null);
           }}
+          onSaveSuccess={fetchSavedVocabulary}
         />
       )}
 

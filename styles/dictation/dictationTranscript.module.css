@@ -433,6 +433,23 @@
   line-height: 1.4;
 }
 
+.vocabularyDeleteBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 4px;
+  margin-left: auto;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.vocabularyDeleteBtn:hover {
+  color: #ef4444;
+  opacity: 1;
+}
+
 .vocabularyLoading,
 .vocabularyEmpty {
   display: flex;

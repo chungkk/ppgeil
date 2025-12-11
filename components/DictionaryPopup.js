@@ -41,7 +41,7 @@ const dictionaryCache = {
   }
 };
 
-const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, context, sentenceTranslation, transcriptData }) => {
+const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, context, sentenceTranslation, transcriptData, onSaveSuccess }) => {
   const { t } = useTranslation();
   const { user } = useAuth();
   const [wordData, setWordData] = useState(null);
@@ -359,6 +359,11 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
           has_context: !!context,
           device_type: isMobile ? 'mobile' : 'desktop'
         });
+        
+        // Notify parent to refresh vocabulary list
+        if (onSaveSuccess) {
+          onSaveSuccess();
+        }
         
         // Hide confetti after animation completes
         setTimeout(() => {

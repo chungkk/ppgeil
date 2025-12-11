@@ -1,6 +1,7 @@
-import React, { useRef, useEffect, useCallback, useMemo } from 'react';
+import React, { useRef, useEffect, useCallback, useMemo, useState } from 'react';
 import ProgressIndicator from '../ProgressIndicator';
 import { useKaraokeHighlight } from '../../lib/hooks/useKaraokeHighlight';
+import { speakText } from '../../lib/textToSpeech';
 
 import layoutStyles from '../../styles/dictationPage.module.css';
 import transcriptStyles from '../../styles/dictation/dictationTranscript.module.css';
@@ -30,8 +31,15 @@ const TranscriptPanel = ({
   learningMode = 'dictation',
   showOnMobile = false,
   currentTime = 0,
-  isPlaying = false
+  isPlaying = false,
+  // Saved vocabulary props
+  savedVocabulary = [],
+  onDeleteVocabulary,
+  lessonId
 }) => {
+  // Tab state: 'transcript' or 'vocabulary'
+  const [activeTab, setActiveTab] = useState('transcript');
+  
   const transcriptSectionRef = useRef(null);
   const transcriptItemRefs = useRef({});
 
@@ -141,12 +149,35 @@ const TranscriptPanel = ({
   // Display indices in original order
   const transcriptDisplayIndices = transcriptData.map((_, idx) => idx);
 
+  // Handle delete vocabulary
+  const handleDeleteVocab = useCallback(async (vocabId, e) => {
+    e.stopPropagation();
+    if (onDeleteVocabulary) {
+      onDeleteVocabulary(vocabId);
+    }
+  }, [onDeleteVocabulary]);
+
   return (
     <div className={`${styles.rightSection} ${showOnMobile ? styles.showOnMobile : ''}`}>
       <div className={styles.transcriptHeader}>
         <div className={styles.transcriptHeaderLeft}>
-          <span className={styles.transcriptTitle}>Transcript</span>
-          <span className={styles.transcriptCount}>{transcriptData.length}</span>
+          {/* Tabs */}
+          <div className={styles.transcriptTabs}>
+            <button
+              className={`${styles.transcriptTab} ${activeTab === 'transcript' ? styles.transcriptTabActive : ''}`}
+              onClick={() => setActiveTab('transcript')}
+            >
+              Transcript
+              <span className={styles.transcriptTabCount}>{transcriptData.length}</span>
+            </button>
+            <button
+              className={`${styles.transcriptTab} ${activeTab === 'vocabulary' ? styles.transcriptTabActive : ''}`}
+              onClick={() => setActiveTab('vocabulary')}
+            >
+              Từ vựng
+              <span className={styles.transcriptTabCount}>{savedVocabulary.length}</span>
+            </button>
+          </div>
         </div>
         <ProgressIndicator
           completedSentences={completedSentences}
@@ -160,42 +191,87 @@ const TranscriptPanel = ({
       </div>
       
       <div className={styles.transcriptSection} ref={transcriptSectionRef}>
-        <div className={styles.transcriptList}>
-          {transcriptDisplayIndices.map((originalIndex) => {
-            const segment = transcriptData[originalIndex];
-            const isCompleted = completedSentences.includes(originalIndex);
-            const sentenceWordsCompleted = completedWords[originalIndex] || {};
-            const isChecked = checkedSentences.includes(originalIndex);
-            
-            const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
-            const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
-            // Show full text when completed/checked OR when in shadowing mode (NOT for dictation - keep text hidden)
-            const isActiveSentencePlaying = originalIndex === currentSentenceIndex && isPlaying;
-            const shouldShowFullText = learningMode === 'shadowing' || isCompleted || (dictationMode === 'full-sentence' && isChecked);
+        {/* Transcript Tab Content */}
+        {activeTab === 'transcript' && (
+          <div className={styles.transcriptList}>
+            {transcriptDisplayIndices.map((originalIndex) => {
+              const segment = transcriptData[originalIndex];
+              const isCompleted = completedSentences.includes(originalIndex);
+              const sentenceWordsCompleted = completedWords[originalIndex] || {};
+              const isChecked = checkedSentences.includes(originalIndex);
+              
+              const effectiveHidePercentage = dictationMode === 'full-sentence' ? 100 : hidePercentage;
+              const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
+              const isActiveSentencePlaying = originalIndex === currentSentenceIndex && isPlaying;
+              const shouldShowFullText = learningMode === 'shadowing' || isCompleted || (dictationMode === 'full-sentence' && isChecked);
 
-            return (
-              <div
-                key={originalIndex}
-                ref={(el) => {
-                  transcriptItemRefs.current[originalIndex] = el;
-                }}
-                className={`${styles.transcriptItem} ${originalIndex === currentSentenceIndex ? styles.active : ''} ${!isCompleted ? styles.incomplete : ''}`}
-                onClick={() => onSentenceClick(segment.start, segment.end)}
-              >
-                <div className={styles.transcriptItemNumber}>
-                  #{originalIndex + 1}
-                  {isCompleted && <span className={styles.completedCheck}>✓</span>}
+              return (
+                <div
+                  key={originalIndex}
+                  ref={(el) => {
+                    transcriptItemRefs.current[originalIndex] = el;
+                  }}
+                  className={`${styles.transcriptItem} ${originalIndex === currentSentenceIndex ? styles.active : ''} ${!isCompleted ? styles.incomplete : ''}`}
+                  onClick={() => onSentenceClick(segment.start, segment.end)}
+                >
+                  <div className={styles.transcriptItemNumber}>
+                    #{originalIndex + 1}
+                    {isCompleted && <span className={styles.completedCheck}>✓</span>}
+                  </div>
+                  <div className={`${styles.transcriptItemText} ${isActiveSentencePlaying ? styles.shadowingText : ''}`}>
+                    {shouldShowFullText 
+                      ? renderKaraokeText(segment.text, segment, originalIndex)
+                      : renderMaskedKaraokeText(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
+                    }
+                  </div>
                 </div>
-                <div className={`${styles.transcriptItemText} ${isActiveSentencePlaying ? styles.shadowingText : ''}`}>
-                  {shouldShowFullText 
-                    ? renderKaraokeText(segment.text, segment, originalIndex)
-                    : renderMaskedKaraokeText(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
-                  }
-                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Vocabulary Tab Content */}
+        {activeTab === 'vocabulary' && (
+          <div className={styles.vocabularyList}>
+            {savedVocabulary.length === 0 ? (
+              <div className={styles.vocabularyEmpty}>
+                Chưa có từ vựng nào được lưu cho bài này.
+                <br />
+                <small>Click vào từ trong transcript rồi ấn ⭐ Lưu để thêm từ vựng.</small>
               </div>
-            );
-          })}
-        </div>
+            ) : (
+              savedVocabulary.map((vocab) => (
+                <div key={vocab._id} className={styles.vocabularyItem}>
+                  <div className={styles.vocabularyWord}>
+                    <span 
+                      className={styles.vocabularyWordText}
+                      onClick={() => speakText(vocab.word)}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      🔊 {vocab.word}
+                    </span>
+                    {vocab.partOfSpeech && (
+                      <span className={styles.vocabularyPos}>{vocab.partOfSpeech}</span>
+                    )}
+                    <button
+                      className={styles.vocabularyDeleteBtn}
+                      onClick={(e) => handleDeleteVocab(vocab._id, e)}
+                      title="Xóa từ vựng"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <div className={styles.vocabularyTranslation}>{vocab.translation}</div>
+                  {vocab.context && (
+                    <div className={styles.vocabularyNote}>
+                      📝 {vocab.context}
+                    </div>
+                  )}
+                </div>
+              ))
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
