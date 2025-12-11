@@ -363,9 +363,9 @@
 
 .floatingModeToggle {
   position: fixed;
-  top: 50%;
-  left: calc(max((100vw - 1400px) / 2, 16px) - 10px);
-  transform: translateY(-50%);
+  top: calc(64px + var(--spacing-lg) + var(--spacing-md) + 8px);
+  left: calc(max((100vw - 1400px) / 2, 16px) + var(--spacing-lg) + 8px);
+  transform: none;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -407,7 +407,7 @@
 }
 
 .floatingModeToggle:hover {
-  transform: translateY(-50%) scale(1.1);
+  transform: scale(1.1);
   background: linear-gradient(145deg, #7c8ff5 0%, #8b5dc7 100%);
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 
@@ -419,7 +419,7 @@
 }
 
 .floatingModeToggle:active {
-  transform: translateY(-50%) scale(0.95);
+  transform: scale(0.95);
 }
 
 .floatingModeToggleActive {
@@ -477,9 +477,9 @@
 /* Floating mode container for dropdown */
 .floatingModeContainer {
   position: fixed;
-  top: 50%;
-  left: calc(max((100vw - 1400px) / 2, 16px) - 10px);
-  transform: translateY(-50%);
+  top: calc(64px + var(--spacing-lg) + var(--spacing-md) + 8px);
+  left: calc(max((100vw - 1400px) / 2, 16px) + var(--spacing-lg) + 8px);
+  transform: none;
   z-index: 1000;
 }
 
