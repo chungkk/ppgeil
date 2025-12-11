@@ -55,6 +55,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
   const [isMobile, setIsMobile] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
@@ -380,6 +381,28 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
     }
   };
 
+  const handleDeleteWord = async () => {
+    if (!user || !word) return;
+
+    setIsDeleting(true);
+    try {
+      const res = await fetchWithAuth(`/api/vocabulary?word=${encodeURIComponent(word)}`, {
+        method: 'DELETE'
+      });
+
+      if (res.ok) {
+        setIsSaved(false);
+        if (onSaveSuccess) {
+          onSaveSuccess();
+        }
+      }
+    } catch (error) {
+      console.error('Delete vocabulary error:', error);
+    } finally {
+      setIsDeleting(false);
+    }
+  };
+
   return (
     <div 
       className={`${styles.overlay} ${isMobile ? styles.mobileOverlay : ''}`} 
@@ -432,14 +455,25 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
           <div className={styles.headerButtons}>
             {user && translation && (
               <div style={{ position: 'relative' }}>
-                <button
-                  onClick={handleSaveWord}
-                  className={`${styles.saveButton} ${isSaved ? styles.saved : ''}`}
-                  disabled={isSaving}
-                  title={isSaved ? t('dictionaryPopup.alreadySaved') : t('dictionaryPopup.saveToTreasure')}
-                >
-                  {isSaving ? '💫' : isSaved ? '🎉 ' + t('dictionaryPopup.saved') : '⭐ ' + t('dictionaryPopup.save')}
-                </button>
+                {isSaved ? (
+                  <button
+                    onClick={handleDeleteWord}
+                    className={`${styles.saveButton} ${styles.deleteButton}`}
+                    disabled={isDeleting}
+                    title={t('dictionaryPopup.removeFromVocab') || 'Xóa khỏi từ vựng'}
+                  >
+                    {isDeleting ? '💫' : '✕ ' + (t('dictionaryPopup.remove') || 'Xóa')}
+                  </button>
+                ) : (
+                  <button
+                    onClick={handleSaveWord}
+                    className={styles.saveButton}
+                    disabled={isSaving}
+                    title={t('dictionaryPopup.saveToTreasure')}
+                  >
+                    {isSaving ? '💫' : '⭐ ' + t('dictionaryPopup.save')}
+                  </button>
+                )}
                 {showConfetti && (
                   <div className={styles.confettiContainer}>
                     <div className={styles.confetti} style={{ top: '10px', left: '50%' }}></div>

@@ -131,8 +131,17 @@ async function handler(req, res) {
 
   if (req.method === 'DELETE') {
     try {
-      const { id } = req.query;
-      await Vocabulary.findOneAndDelete({ _id: id, userId: req.user._id });
+      const { id, word } = req.query;
+      
+      // Support delete by id or by word
+      if (id) {
+        await Vocabulary.findOneAndDelete({ _id: id, userId: req.user._id });
+      } else if (word) {
+        await Vocabulary.findOneAndDelete({ word: word.toLowerCase(), userId: req.user._id });
+      } else {
+        return res.status(400).json({ message: 'Cần id hoặc word để xóa' });
+      }
+      
       return res.status(200).json({ message: 'Đã xóa từ vựng' });
     } catch (error) {
       return res.status(400).json({ message: error.message });

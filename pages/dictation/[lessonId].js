@@ -166,6 +166,9 @@ const DictationPageContent = () => {
   const [savedVocabulary, setSavedVocabulary] = useState([]);
   const [isLoadingSavedVocab, setIsLoadingSavedVocab] = useState(false);
   
+  // Mobile vocabulary popup state
+  const [showMobileVocabulary, setShowMobileVocabulary] = useState(false);
+  
   // Consecutive sentence completion counter
   const [consecutiveSentences, setConsecutiveSentences] = useState(0);
 
@@ -3073,6 +3076,8 @@ const DictationPageContent = () => {
               learningMode={learningMode}
               onToggleLearningMode={() => setLearningMode(prev => prev === 'dictation' ? 'shadowing' : 'dictation')}
               lessonId={lessonId}
+              savedVocabularyCount={savedVocabulary.length}
+              onShowVocabulary={() => setShowMobileVocabulary(true)}
             />
 
             <div className={styles.dictationContainer}>
@@ -3267,6 +3272,64 @@ const DictationPageContent = () => {
           canGoPrevious={sortedTranscriptIndices.indexOf(currentSentenceIndex) !== 0}
           canGoNext={sortedTranscriptIndices.indexOf(currentSentenceIndex) < sortedTranscriptIndices.length - 1}
         />
+      )}
+
+      {/* Mobile Vocabulary Popup */}
+      {showMobileVocabulary && isMobile && (
+        <div 
+          className={styles.mobileVocabularyOverlay}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setShowMobileVocabulary(false);
+            }
+          }}
+        >
+          <div className={styles.mobileVocabularyPopup}>
+            <div className={styles.mobileVocabularyHeader}>
+              <h3>📚 Từ vựng đã lưu</h3>
+              <button 
+                className={styles.mobileVocabularyClose}
+                onClick={() => setShowMobileVocabulary(false)}
+              >
+                ✕
+              </button>
+            </div>
+            <div className={styles.mobileVocabularyContent}>
+              {savedVocabulary.length === 0 ? (
+                <div className={styles.mobileVocabularyEmpty}>
+                  Chưa có từ vựng nào được lưu cho bài này.
+                  <br />
+                  <small>Click vào từ trong bài rồi ấn ⭐ Lưu để thêm từ vựng.</small>
+                </div>
+              ) : (
+                savedVocabulary.map((vocab) => (
+                  <div key={vocab._id} className={styles.mobileVocabularyItem}>
+                    <div className={styles.mobileVocabularyWord}>
+                      <span 
+                        className={styles.mobileVocabularyWordText}
+                        onClick={() => speakText(vocab.word)}
+                      >
+                        🔊 {vocab.word}
+                      </span>
+                      <button
+                        className={styles.mobileVocabularyDeleteBtn}
+                        onClick={() => handleDeleteVocabulary(vocab._id)}
+                      >
+                        ×
+                      </button>
+                    </div>
+                    <div className={styles.mobileVocabularyTranslation}>{vocab.translation}</div>
+                    {vocab.context && (
+                      <div className={styles.mobileVocabularyContext}>
+                        📝 {vocab.context}
+                      </div>
+                    )}
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
       )}
 
       {/* Mobile Tooltip */}

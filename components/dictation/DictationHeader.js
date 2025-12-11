@@ -24,7 +24,9 @@ const DictationHeader = ({
   onToggleTranslation,
   learningMode = 'dictation',
   onToggleLearningMode,
-  lessonId
+  lessonId,
+  savedVocabularyCount = 0,
+  onShowVocabulary
 }) => {
   const { t } = useTranslation();
   const [showSettingsMenu, setShowSettingsMenu] = useState(false);
@@ -135,6 +137,21 @@ const DictationHeader = ({
                   <span className={styles.settingsMenuIcon}>⚡</span>
                   <span className={styles.settingsMenuText}>Tốc độ</span>
                   <span className={styles.settingsMenuValue}>{playbackSpeed || 1}x</span>
+                </button>
+              )}
+              
+              {/* Vocabulary button */}
+              {onShowVocabulary && (
+                <button 
+                  className={styles.settingsMenuItem}
+                  onClick={() => {
+                    onShowVocabulary();
+                    setShowSettingsMenu(false);
+                  }}
+                >
+                  <span className={styles.settingsMenuIcon}>📚</span>
+                  <span className={styles.settingsMenuText}>Từ vựng</span>
+                  <span className={styles.settingsMenuValue}>{savedVocabularyCount}</span>
                 </button>
               )}
             </div>
