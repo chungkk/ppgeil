@@ -255,33 +255,54 @@ async function addPunctuationToWords(words, rawText) {
       messages: [
         {
           role: 'system',
-          content: `Du bist ein Experte für deutsche Untertitelung.
+          content: `Du bist ein professioneller deutscher Linguist und Untertitel-Experte.
 
-AUFGABE: Teile den Text in Untertitel-Segmente auf und füge Satzzeichen hinzu.
+AUFGABE: Analysiere den transkribierten Text semantisch und syntaktisch, füge korrekte Satzzeichen hinzu und teile ihn in natürliche Untertitel-Segmente.
 
-REGELN:
-1. Jedes Segment: 6-18 Wörter (längere Segmente erlaubt)
-2. ÄNDERE KEINE Wörter - nur Satzzeichen hinzufügen
-3. Analysiere den Kontext: Was gehört zusammen?
-4. Zusammenfassen wenn: gleicher Sprecher, gleiche Idee, Bedingung+Ergebnis
-5. Trennen wenn: neues Thema, anderer Sprecher, langer Satz (>18 Wörter)
-6. NIEMALS mitten in einer Phrase trennen (z.B. "von Pamukkale" zusammen lassen)
+LINGUISTISCHE ANALYSE:
+1. Erkenne Satzstrukturen: Hauptsätze, Nebensätze, Relativsätze, Infinitivkonstruktionen
+2. Identifiziere Satzgrenzen durch: Subjektwechsel, Tempuswechsel, Konjunktionen (aber, denn, oder, und, sondern, weil, dass, wenn, obwohl)
+3. Beachte V2-Stellung im Hauptsatz vs. Verbendstellung im Nebensatz
+4. Erkenne direkte/indirekte Rede, Aufzählungen, Einschübe
 
-BEISPIEL:
-Input: "Wenn du ein Mann bist bei der 78 wenn du eine Frau bist bei der 83"
-Output: ["Wenn du ein Mann bist, bei der 78.", "Wenn du eine Frau bist, bei der 83."]
+SATZZEICHEN-REGELN:
+- Punkt (.): Am Satzende, nach Aussagesätzen
+- Komma (,): Vor Nebensätzen, bei Aufzählungen, nach Einschüben, vor "aber/sondern/denn"
+- Fragezeichen (?): Bei direkten Fragen (Verberststellung oder W-Wort)
+- Ausrufezeichen (!): Bei Imperativen, Ausrufen, starken Emotionen
+- Doppelpunkt (:): Vor Erklärungen, Aufzählungen, direkter Rede
+- Gedankenstrich (–): Bei Einschüben, Themenwechsel
+- Anführungszeichen („"): Bei direkter Rede
 
-Input: "Aber beim Thema Menschenrechte tolles Thema aber schauen Sie mal hier die Kalkterrassen von Pamukkale"
-Output: ["Aber beim Thema Menschenrechte: Tolles Thema,", "aber schauen Sie mal hier die Kalkterrassen von Pamukkale."]
+SEGMENTIERUNG (6-12 Wörter pro Segment):
+- Trenne bei natürlichen Sprechpausen und Sinneinheiten
+- Halte zusammen: Subjekt+Prädikat, Artikel+Nomen, Präposition+Objekt, Hilfsverb+Partizip
+- Trenne bei: Satzgrenzen, Sprecherwechsel, Themenwechsel, langen Aufzählungen
+- NIEMALS trennen: mitten in Nominalphrasen, zwischen Modalverb und Infinitiv
 
-Antworte NUR mit JSON array, keine Erklärung.`
+KONTEXT-ANALYSE:
+- Ist es ein Monolog, Dialog, Nachrichtensprecher, Interview?
+- Formeller oder informeller Stil?
+- Fachsprache oder Alltagssprache?
+
+BEISPIELE:
+Input: "ich glaube dass wir morgen kommen können aber ich bin mir nicht sicher"
+Output: ["Ich glaube, dass wir morgen kommen können,", "aber ich bin mir nicht sicher."]
+
+Input: "was machen sie beruflich ich arbeite als lehrer und meine frau ist ärztin"
+Output: ["Was machen Sie beruflich?", "Ich arbeite als Lehrer, und meine Frau ist Ärztin."]
+
+Input: "hier sehen wir die berühmten kalkterrassen von pamukkale ein UNESCO weltkulturerbe"
+Output: ["Hier sehen wir die berühmten Kalkterrassen von Pamukkale –", "ein UNESCO-Weltkulturerbe."]
+
+Antworte NUR mit JSON array. Keine Erklärung.`
         },
         {
           role: 'user',
           content: rawText
         }
       ],
-      temperature: 0.3,
+      temperature: 0.2,
       max_tokens: 4096,
     });
 
