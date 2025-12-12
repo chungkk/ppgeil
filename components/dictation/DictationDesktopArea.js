@@ -34,6 +34,14 @@ const DictationDesktopArea = ({
 
   if (!currentSentence) return null;
 
+  // Helper function to get adaptive size class based on word length
+  const getWordSizeClass = (wordLength) => {
+    if (wordLength <= 3) return styles.hintWordBoxShort;
+    if (wordLength <= 6) return styles.hintWordBoxMedium;
+    if (wordLength <= 10) return styles.hintWordBoxLong;
+    return styles.hintWordBoxXLong;
+  };
+
   const renderHintWords = () => {
     return currentSentence.text.split(/\s+/).filter(w => w.length > 0).map((word, idx) => {
       const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
@@ -43,6 +51,9 @@ const DictationDesktopArea = ({
       const isRevealed = revealedHintWords[currentSentenceIndex]?.[idx];
       const comparisonResult = wordComparisonResults[currentSentenceIndex]?.[idx];
       const partialCount = partialRevealedChars[currentSentenceIndex]?.[idx] || 0;
+
+      // Get adaptive size class based on word length
+      const sizeClass = getWordSizeClass(pureWord.length);
 
       const wordClass = comparisonResult
         ? (comparisonResult === 'correct' ? styles.hintWordCorrect : styles.hintWordIncorrect)
@@ -60,7 +71,7 @@ const DictationDesktopArea = ({
       return (
         <span key={idx} className={styles.hintWordContainer}>
           <span
-            className={`${styles.hintWordBox} ${wordClass}`}
+            className={`${styles.hintWordBox} ${sizeClass} ${wordClass}`}
             onClick={(e) => {
               if (comparisonResult || isRevealed) {
                 // Word is revealed or compared - show translation popup

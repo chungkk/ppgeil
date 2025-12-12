@@ -84,6 +84,14 @@ const DictationMobileSlide = memo(({
   // Check if next button should be disabled
   const isNextDisabled = sortedTranscriptIndices.indexOf(currentSentenceIndex) >= sortedTranscriptIndices.length - 1;
 
+  // Helper function to get adaptive size class based on word length
+  const getWordSizeClass = (wordLength) => {
+    if (wordLength <= 3) return styles.hintWordBoxShort;
+    if (wordLength <= 6) return styles.hintWordBoxMedium;
+    if (wordLength <= 10) return styles.hintWordBoxLong;
+    return styles.hintWordBoxXLong;
+  };
+
   return (
     <div
       key={originalIndex}
@@ -127,6 +135,9 @@ const DictationMobileSlide = memo(({
                 const comparisonResult = wordComparisonResults[originalIndex]?.[idx];
                 const partialCount = partialRevealedChars[originalIndex]?.[idx] || 0;
 
+                // Get adaptive size class based on word length
+                const sizeClass = getWordSizeClass(pureWord.length);
+
                 const wordClass = comparisonResult
                   ? (comparisonResult === 'correct' ? styles.hintWordCorrect : styles.hintWordIncorrect)
                   : (isRevealed ? styles.hintWordRevealed : (partialCount > 0 ? styles.hintWordPartial : ''));
@@ -143,7 +154,7 @@ const DictationMobileSlide = memo(({
                 return (
                   <span key={idx} className={styles.hintWordContainer}>
                     <span
-                      className={`${styles.hintWordBox} ${wordClass}`}
+                      className={`${styles.hintWordBox} ${sizeClass} ${wordClass}`}
                       onClick={(e) => {
                         if (comparisonResult || isRevealed) {
                           // Word is revealed or compared - show translation popup

@@ -360,16 +360,18 @@
   }
 }
 
-/* Slide translation display */
+/* Slide translation display - Improved visibility */
 .slideTranslation {
-  padding: 10px 12px;
+  padding: 12px 14px;
   margin-top: auto;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(99, 102, 241, 0.08) 100%);
-  border-top: 1px dashed rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(99, 102, 241, 0.12) 100%);
+  border-top: 2px solid rgba(59, 130, 246, 0.3);
   border-radius: 0 0 12px 12px;
-  font-size: 13px;
-  font-style: italic;
-  color: rgba(147, 197, 253, 0.9);
-  line-height: 1.5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(147, 197, 253, 1);
+  line-height: 1.6;
   text-align: center;
+  box-shadow: 0 -2px 8px rgba(59, 130, 246, 0.1);
 }

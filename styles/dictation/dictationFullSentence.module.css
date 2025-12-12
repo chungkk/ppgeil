@@ -139,7 +139,7 @@
   line-height: 1;
 }
 
-/* Hint Word Box */
+/* Hint Word Box - Base styles */
 .hintWordBox {
   display: inline-flex;
   align-items: center;
@@ -166,6 +166,33 @@
   vertical-align: middle;
 }
 
+/* Adaptive Word Sizing - Desktop */
+.hintWordBoxShort {
+  min-width: 38px;
+  padding: 4px 6px;
+  font-size: 15px;
+}
+
+.hintWordBoxMedium {
+  min-width: 50px;
+  padding: 4px 10px;
+  font-size: 16px;
+}
+
+.hintWordBoxLong {
+  min-width: fit-content;
+  padding: 4px 12px;
+  font-size: 16px;
+  max-width: 180px;
+}
+
+.hintWordBoxXLong {
+  min-width: fit-content;
+  padding: 4px 14px;
+  font-size: 15px;
+  max-width: 220px;
+}
+
 .hintWordBox:hover {
   background: rgba(102, 126, 234, 0.2);
   border-color: rgba(102, 126, 234, 0.5);
@@ -182,10 +209,6 @@
   color: #10b981;
   font-weight: 600;
   animation: revealWord 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  min-width: 45px;
-  height: 32px;
-  font-size: 16px;
-  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -201,10 +224,6 @@
   color: #3b82f6;
   font-weight: 500;
   transition: all 0.15s ease;
-  min-width: 45px;
-  height: 32px;
-  font-size: 16px;
-  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -222,10 +241,6 @@
   animation: correctWord 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   cursor: default;
-  min-width: 45px;
-  height: 32px;
-  font-size: 16px;
-  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -238,10 +253,6 @@
   animation: incorrectWord 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   cursor: default;
-  min-width: 45px;
-  height: 32px;
-  font-size: 16px;
-  line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -600,8 +611,8 @@
     background: transparent;
     border: none;
     padding: 8px 4px;
-    gap: 6px;
-    row-gap: 10px;
+    gap: 8px;
+    row-gap: 12px;
     align-content: center;
   }
 
@@ -625,9 +636,40 @@
     background: transparent;
     border: none;
     padding: 8px 4px;
-    gap: 6px;
-    row-gap: 10px;
+    gap: 8px;
+    row-gap: 12px;
     align-content: center;
+  }
+
+  /* Adaptive Word Sizing - Mobile (slightly larger for touch) */
+  .hintWordBoxShort {
+    min-width: 42px;
+    height: 38px;
+    padding: 8px 8px;
+    font-size: 16px;
+  }
+
+  .hintWordBoxMedium {
+    min-width: 54px;
+    height: 38px;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .hintWordBoxLong {
+    min-width: fit-content;
+    height: 38px;
+    padding: 8px 14px;
+    font-size: 16px;
+    max-width: 160px;
+  }
+
+  .hintWordBoxXLong {
+    min-width: fit-content;
+    height: 38px;
+    padding: 8px 16px;
+    font-size: 15px;
+    max-width: 200px;
   }
 
   .fullSentenceInput {
@@ -668,10 +710,7 @@
   }
 
   .hintWordBox {
-    min-width: 40px;
-    height: 32px;
-    padding: 6px 10px;
-    font-size: 15px;
+    height: 38px;
     border-radius: 8px;
   }
 
@@ -679,9 +718,7 @@
   .hintWordCorrect,
   .hintWordIncorrect,
   .hintWordPartial {
-    min-width: 40px;
-    height: 32px;
-    font-size: 15px;
+    height: 38px;
   }
 
   .hintPunctuation {
@@ -701,10 +738,7 @@
   }
 
   .hintWordBox {
-    min-width: 34px;
-    height: 28px;
-    padding: 4px 7px;
-    font-size: 13px;
+    height: 36px;
     border-radius: 6px;
   }
 
@@ -712,9 +746,7 @@
   .hintWordCorrect,
   .hintWordIncorrect,
   .hintWordPartial {
-    min-width: 34px;
-    height: 28px;
-    font-size: 13px;
+    height: 36px;
   }
 
   .hintWordContainer {
@@ -726,6 +758,37 @@
     max-height: 50px;
     padding: 8px 10px;
     padding-right: 48px;
+  }
+
+  /* Adjust adaptive sizing for smaller screens */
+  .hintWordBoxShort {
+    min-width: 38px;
+    height: 36px;
+    padding: 6px 7px;
+    font-size: 15px;
+  }
+
+  .hintWordBoxMedium {
+    min-width: 48px;
+    height: 36px;
+    padding: 6px 10px;
+    font-size: 15px;
+  }
+
+  .hintWordBoxLong {
+    min-width: fit-content;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 15px;
+    max-width: 140px;
+  }
+
+  .hintWordBoxXLong {
+    min-width: fit-content;
+    height: 36px;
+    padding: 6px 14px;
+    font-size: 14px;
+    max-width: 180px;
   }
 }
 

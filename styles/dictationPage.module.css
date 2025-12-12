@@ -1,5 +1,122 @@
 /* Shadowing Page Styles - Parroto Design */
 
+/* Global adaptive word size classes (wrapped in local class for CSS Modules compatibility) */
+.page :global(.word-size-short),
+.mainContent :global(.word-size-short),
+.dictationInputArea :global(.word-size-short) {
+  min-width: 38px !important;
+  padding: 4px 6px !important;
+  font-size: 15px !important;
+}
+
+.page :global(.word-size-medium),
+.mainContent :global(.word-size-medium),
+.dictationInputArea :global(.word-size-medium) {
+  min-width: 50px !important;
+  padding: 4px 10px !important;
+  font-size: 16px !important;
+}
+
+.page :global(.word-size-long),
+.mainContent :global(.word-size-long),
+.dictationInputArea :global(.word-size-long) {
+  min-width: fit-content !important;
+  padding: 4px 12px !important;
+  font-size: 16px !important;
+  max-width: 180px !important;
+}
+
+.page :global(.word-size-xlong),
+.mainContent :global(.word-size-xlong),
+.dictationInputArea :global(.word-size-xlong) {
+  min-width: fit-content !important;
+  padding: 4px 14px !important;
+  font-size: 15px !important;
+  max-width: 220px !important;
+}
+
+/* Mobile responsive for global classes */
+@media (max-width: 768px) {
+  .page :global(.word-size-short),
+  .mainContent :global(.word-size-short),
+  .dictationInputArea :global(.word-size-short) {
+    min-width: 42px !important;
+    height: 38px !important;
+    padding: 8px 8px !important;
+    font-size: 16px !important;
+  }
+
+  .page :global(.word-size-medium),
+  .mainContent :global(.word-size-medium),
+  .dictationInputArea :global(.word-size-medium) {
+    min-width: 54px !important;
+    height: 38px !important;
+    padding: 8px 12px !important;
+    font-size: 16px !important;
+  }
+
+  .page :global(.word-size-long),
+  .mainContent :global(.word-size-long),
+  .dictationInputArea :global(.word-size-long) {
+    min-width: fit-content !important;
+    height: 38px !important;
+    padding: 8px 14px !important;
+    font-size: 16px !important;
+    max-width: 160px !important;
+  }
+
+  .page :global(.word-size-xlong),
+  .mainContent :global(.word-size-xlong),
+  .dictationInputArea :global(.word-size-xlong) {
+    min-width: fit-content !important;
+    height: 38px !important;
+    padding: 8px 16px !important;
+    font-size: 15px !important;
+    max-width: 200px !important;
+  }
+}
+
+/* Smaller screens (480px) - adjust for very small phones */
+@media (max-width: 480px) {
+  .page :global(.word-size-short),
+  .mainContent :global(.word-size-short),
+  .dictationInputArea :global(.word-size-short) {
+    min-width: 38px !important;
+    height: 36px !important;
+    padding: 6px 7px !important;
+    font-size: 15px !important;
+  }
+
+  .page :global(.word-size-medium),
+  .mainContent :global(.word-size-medium),
+  .dictationInputArea :global(.word-size-medium) {
+    min-width: 48px !important;
+    height: 36px !important;
+    padding: 6px 10px !important;
+    font-size: 15px !important;
+  }
+
+  .page :global(.word-size-long),
+  .mainContent :global(.word-size-long),
+  .dictationInputArea :global(.word-size-long) {
+    min-width: fit-content !important;
+    height: 36px !important;
+    padding: 6px 12px !important;
+    font-size: 15px !important;
+    max-width: 140px !important;
+  }
+
+  .page :global(.word-size-xlong),
+  .mainContent :global(.word-size-xlong),
+  .dictationInputArea :global(.word-size-xlong) {
+    min-width: fit-content !important;
+    height: 36px !important;
+    padding: 6px 14px !important;
+    font-size: 14px !important;
+    max-width: 180px !important;
+  }
+}
+
 .page {
   background: var(--bg-primary);
   min-height: 100vh;
