@@ -18,26 +18,22 @@ export const authOptions = {
           console.log('🔐 Google Sign In attempt:', user.email);
           await connectDB();
 
-          // Tìm hoặc tạo user
           let dbUser = await User.findOne({ email: user.email.toLowerCase() });
 
           if (!dbUser) {
             console.log('👤 Creating new user:', user.email);
-            // Tạo user mới nếu chưa tồn tại
             dbUser = await User.create({
               name: user.name,
               email: user.email.toLowerCase(),
               googleId: profile.sub,
-              role: 'member',  // Sửa từ 'user' thành 'member' để match schema
+              role: 'member',
               nativeLanguage: 'vi',
-              level: 'beginner', // Default level for new Google users
-              // Không cần password cho Google login
+              level: 'beginner',
               isGoogleUser: true
             });
             console.log('✅ User created successfully:', dbUser._id);
           } else if (!dbUser.googleId) {
             console.log('🔄 Updating existing user with Google ID:', user.email);
-            // Cập nhật googleId nếu user đã tồn tại nhưng chưa có googleId
             dbUser.googleId = profile.sub;
             dbUser.isGoogleUser = true;
             await dbUser.save();
@@ -92,8 +88,6 @@ export const authOptions = {
     },
   },
   pages: {
-    // Don't set signIn page to allow direct Google OAuth redirect
-    // signIn: '/auth/login',
     signOut: '/auth/login',
     error: '/auth/callback',
     newUser: '/auth/callback',

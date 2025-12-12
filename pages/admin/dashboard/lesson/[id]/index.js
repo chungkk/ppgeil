@@ -2,10 +2,10 @@ import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
-import ProtectedPage from '../../../../components/ProtectedPage';
-import AdminDashboardLayout from '../../../../components/AdminDashboardLayout';
+import ProtectedPage from '../../../../../components/ProtectedPage';
+import AdminDashboardLayout from '../../../../../components/AdminDashboardLayout';
 import { toast } from 'react-toastify';
-import styles from '../../../../styles/adminDashboard.module.css';
+import styles from '../../../../../styles/adminDashboard.module.css';
 
 
 function LessonFormPage() {

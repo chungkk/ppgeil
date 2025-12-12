@@ -1,17 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
 
   // Enable compression for better performance
   compress: true,
 
   // Optimize images - Enhanced configuration
   images: {
-    // Legacy domains support (deprecated but kept for backward compatibility)
-    domains: ['localhost', 'i.ytimg.com', 'img.youtube.com', 'yt3.ggpht.com'],
-
-    // Modern remote patterns (Next.js 13+) - More secure and flexible
+    // Remote patterns (Next.js 13+) - More secure and flexible
     remotePatterns: [
       {
         protocol: 'https',
