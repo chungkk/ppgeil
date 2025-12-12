@@ -116,7 +116,7 @@ const DictationPageContent = () => {
   const [difficultyLevel, setDifficultyLevel] = useState('b1'); // a1, a2, b1, b2, c1c2 (or legacy c1, c2)
   
   // Auto-stop video at end of sentence (similar to shadowing mode)
-  const [autoStop, setAutoStop] = useState(true);
+  const [autoStop, setAutoStop] = useState(false);
 
   // Playback speed control
   const [playbackSpeed, setPlaybackSpeed] = useState(1);

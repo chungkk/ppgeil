@@ -354,7 +354,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
         setShowConfetti(true);
         
         // Track word saved
-        DictionaryAnalytics.wordSaved(word, wordData.translation, {
+        DictionaryAnalytics.wordSaved(word, wordData?.translation || translation, {
           lesson_id: lessonId,
           has_context: !!context,
           device_type: isMobile ? 'mobile' : 'desktop'
