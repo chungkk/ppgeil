@@ -530,65 +530,59 @@
   background: rgba(251, 191, 36, 0.25);
 }
 
-/* Translation Toggle Button */
-.translationToggle {
-  padding: 6px 12px;
-  background: rgba(139, 92, 246, 0.08);
-  border: 1.5px solid rgba(139, 92, 246, 0.25);
-  color: rgba(139, 92, 246, 0.7);
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+/* Translation Toggle Switch (same as auto stop) */
+.toggleLabel {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 6px;
-  min-width: 40px;
-  height: 34px;
+  gap: var(--spacing-sm);
+  cursor: pointer;
   position: relative;
-  overflow: hidden;
+  user-select: none;
 }
 
-.translationToggle::before {
+.toggleInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleSlider {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  transition: background 0.3s;
+  border: 1px solid var(--border-color);
+}
+
+.toggleSlider::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
-  transition: transform 0.4s ease;
+  width: 18px;
+  height: 18px;
+  left: 2px;
+  top: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
 }
 
-.translationToggle:hover::before {
-  transform: translate(-50%, -50%) scale(1.2);
+.toggleInput:checked + .toggleSlider {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
 }
 
-.translationToggle:hover {
-  background: rgba(139, 92, 246, 0.15);
-  border-color: rgba(139, 92, 246, 0.4);
-  color: rgba(139, 92, 246, 0.9);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+.toggleInput:checked + .toggleSlider::before {
+  transform: translateX(18px);
 }
 
-.translationToggle:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(139, 92, 246, 0.15);
-}
-
-.translationToggleActive {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(59, 130, 246, 0.15) 100%);
-  border-color: rgba(139, 92, 246, 0.5);
-  color: rgba(139, 92, 246, 1);
-  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.25), inset 0 1px 3px rgba(139, 92, 246, 0.1);
-}
-
-.translationToggleActive:hover {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.25) 0%, rgba(59, 130, 246, 0.2) 100%);
-  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.3);
+.toggleText {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
 }
 
 /* Translation Display in Transcript Items */

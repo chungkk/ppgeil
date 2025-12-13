@@ -193,13 +193,16 @@ const TranscriptPanel = ({
           </div>
           {/* Translation Toggle - only show in transcript tab */}
           {activeTab === 'transcript' && onToggleTranslation && (
-            <button
-              className={`${styles.translationToggle} ${showTranslation ? styles.translationToggleActive : ''}`}
-              onClick={onToggleTranslation}
-              title={showTranslation ? 'Ẩn dịch nghĩa' : 'Hiện dịch nghĩa'}
-            >
-              {showTranslation ? '💬' : '🌐'}
-            </button>
+            <label className={styles.toggleLabel}>
+              <input
+                type="checkbox"
+                checked={showTranslation}
+                onChange={onToggleTranslation}
+                className={styles.toggleInput}
+              />
+              <span className={styles.toggleSlider}></span>
+              <span className={styles.toggleText}>Dịch</span>
+            </label>
           )}
         </div>
         <ProgressIndicator
