@@ -3037,26 +3037,27 @@ const DictationPageContent = () => {
             onSpeedChange={handleSpeedChange}
           />
 
-          {/* Middle Column - Dictation Area */}
-          <div className={styles.middleSection}>
-            {/* Dictation Header - Using Component */}
-            <DictationHeader
-              isMobile={isMobile}
-              currentSentenceIndex={currentSentenceIndex}
-              totalSentences={transcriptData.length}
-              completedCount={completedSentences.length}
-              playbackSpeed={playbackSpeed}
-              onSpeedChange={handleSpeedChange}
-              showTranslation={showTranslation}
-              onToggleTranslation={() => setShowTranslation(!showTranslation)}
-              autoStop={autoStop}
-              onAutoStopChange={setAutoStop}
-              learningMode={learningMode}
-              onToggleLearningMode={null}
-              lessonId={lessonId}
-              savedVocabularyCount={savedVocabulary.length}
-              onShowVocabulary={() => setShowMobileVocabulary(true)}
-            />
+          {/* Middle Column - Dictation Area (Mobile Only) */}
+          {isMobile && (
+            <div className={styles.middleSection}>
+              {/* Dictation Header - Using Component */}
+              <DictationHeader
+                isMobile={isMobile}
+                currentSentenceIndex={currentSentenceIndex}
+                totalSentences={transcriptData.length}
+                completedCount={completedSentences.length}
+                playbackSpeed={playbackSpeed}
+                onSpeedChange={handleSpeedChange}
+                showTranslation={showTranslation}
+                onToggleTranslation={() => setShowTranslation(!showTranslation)}
+                autoStop={autoStop}
+                onAutoStopChange={setAutoStop}
+                learningMode={learningMode}
+                onToggleLearningMode={null}
+                lessonId={lessonId}
+                savedVocabularyCount={savedVocabulary.length}
+                onShowVocabulary={() => setShowMobileVocabulary(true)}
+              />
 
             <div className={styles.dictationContainer}>
               {/* Mobile: Content changes based on learning mode */}
@@ -3239,7 +3240,8 @@ const DictationPageContent = () => {
                 />
               )}
             </div>
-          </div>
+            </div>
+          )}
 
           {/* Right Column - Transcript List (Desktop only, Using Component) */}
           <TranscriptPanel
@@ -3264,6 +3266,8 @@ const DictationPageContent = () => {
             savedVocabulary={savedVocabulary}
             onDeleteVocabulary={handleDeleteVocabulary}
             lessonId={lessonId}
+            showTranslation={showTranslation}
+            onToggleTranslation={() => setShowTranslation(!showTranslation)}
           />
         </div>
       </div>

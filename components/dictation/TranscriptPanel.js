@@ -35,7 +35,12 @@ const TranscriptPanel = ({
   // Saved vocabulary props
   savedVocabulary = [],
   onDeleteVocabulary,
-  lessonId
+  lessonId,
+  // Translation props
+  showTranslation = false,
+  onToggleTranslation,
+  // Word click handler
+  onWordClickForPopup
 }) => {
   // Tab state: 'transcript' or 'vocabulary'
   const [activeTab, setActiveTab] = useState('transcript');
@@ -55,24 +60,26 @@ const TranscriptPanel = ({
   // Render text with karaoke highlighting
   const renderKaraokeText = useCallback((text, segment, originalIndex) => {
     const isActiveSentence = originalIndex === currentSentenceIndex;
-    
-    // Apply karaoke to active sentence when playing (for all modes)
-    if (!isActiveSentence || !isPlaying) {
-      return text;
-    }
-
     const words = text.split(/\s+/);
     
     return (
       <span className={styles.karaokeText}>
         {words.map((word, idx) => {
-          const isSpoken = idx < activeWordIndex;
-          const isCurrent = idx === activeWordIndex;
+          const isSpoken = isActiveSentence && isPlaying && idx < activeWordIndex;
+          const isCurrent = isActiveSentence && isPlaying && idx === activeWordIndex;
+          const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
           
           return (
             <span
               key={idx}
-              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
+              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
+              onClick={(e) => {
+                if (pureWord && onWordClickForPopup) {
+                  e.stopPropagation();
+                  onWordClickForPopup(pureWord, e);
+                }
+              }}
+              style={{ cursor: pureWord ? 'pointer' : 'default' }}
             >
               {word}{idx < words.length - 1 ? ' ' : ''}
             </span>
@@ -80,7 +87,7 @@ const TranscriptPanel = ({
         })}
       </span>
     );
-  }, [currentSentenceIndex, isPlaying, activeWordIndex]);
+  }, [currentSentenceIndex, isPlaying, activeWordIndex, onWordClickForPopup]);
 
   // Render masked text with karaoke highlighting (for dictation mode)
   const renderMaskedKaraokeText = useCallback((text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords) => {
@@ -89,24 +96,30 @@ const TranscriptPanel = ({
     // Get masked text as string
     const maskedText = maskTextByPercentage(text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords);
     
-    // If not active sentence or not playing, return plain masked text
-    if (!isActiveSentence || !isPlaying) {
-      return maskedText;
-    }
-
     // Split both original and masked text to get word-by-word mapping
     const maskedWords = maskedText.split(/\s+/);
+    const originalWords = text.split(/\s+/);
     
     return (
       <span className={styles.karaokeText}>
         {maskedWords.map((word, idx) => {
-          const isSpoken = idx < activeWordIndex;
-          const isCurrent = idx === activeWordIndex;
+          const isSpoken = isActiveSentence && isPlaying && idx < activeWordIndex;
+          const isCurrent = isActiveSentence && isPlaying && idx === activeWordIndex;
+          const originalWord = originalWords[idx] || '';
+          const pureWord = originalWord.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+          const isRevealed = !word.includes('_'); // Check if word is revealed (not masked)
           
           return (
             <span
               key={idx}
-              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
+              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord && isRevealed ? styles.clickableWord : ''}`}
+              onClick={(e) => {
+                if (pureWord && isRevealed && onWordClickForPopup) {
+                  e.stopPropagation();
+                  onWordClickForPopup(pureWord, e);
+                }
+              }}
+              style={{ cursor: pureWord && isRevealed ? 'pointer' : 'default' }}
             >
               {word}{idx < maskedWords.length - 1 ? ' ' : ''}
             </span>
@@ -114,7 +127,7 @@ const TranscriptPanel = ({
         })}
       </span>
     );
-  }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage]);
+  }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage, onWordClickForPopup]);
 
   // Auto-scroll to current sentence
   useEffect(() => {
@@ -178,6 +191,16 @@ const TranscriptPanel = ({
               <span className={styles.transcriptTabCount}>{savedVocabulary.length}</span>
             </button>
           </div>
+          {/* Translation Toggle - only show in transcript tab */}
+          {activeTab === 'transcript' && onToggleTranslation && (
+            <button
+              className={`${styles.translationToggle} ${showTranslation ? styles.translationToggleActive : ''}`}
+              onClick={onToggleTranslation}
+              title={showTranslation ? 'Ẩn dịch nghĩa' : 'Hiện dịch nghĩa'}
+            >
+              {showTranslation ? '💬' : '🌐'}
+            </button>
+          )}
         </div>
         <ProgressIndicator
           completedSentences={completedSentences}
@@ -234,6 +257,12 @@ const TranscriptPanel = ({
                       : renderMaskedKaraokeText(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
                     }
                   </div>
+                  {/* Translation Display */}
+                  {showTranslation && (segment.translationVi || segment.translation) && (
+                    <div className={styles.transcriptItemTranslation}>
+                      {segment.translationVi || segment.translation}
+                    </div>
+                  )}
                 </div>
               );
             })}

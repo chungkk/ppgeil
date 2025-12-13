@@ -139,10 +139,10 @@
   padding: var(--spacing-xl);
 }
 
-/* Main Layout - 3 columns on desktop */
+/* Main Layout - 2 columns on desktop (video + transcript) */
 .mainContent {
   display: grid;
-  grid-template-columns: minmax(320px, 1.1fr) minmax(280px, 1fr) minmax(280px, 1fr);
+  grid-template-columns: minmax(320px, 1.3fr) minmax(280px, 1fr);
   gap: var(--spacing-md);
   align-items: stretch;
   min-height: calc(100vh - 200px);
