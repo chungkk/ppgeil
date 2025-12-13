@@ -17,7 +17,8 @@ import {
   MobileBottomControls,
   DictationSkeleton,
   DictationMobileSlide,
-  DictationDesktopArea
+  DictationDesktopArea,
+  SlideIndicators
 } from '../../components/dictation';
 
 
@@ -1302,8 +1303,8 @@ const DictationPageContent = () => {
     if (!touchStart || !touchEnd) return;
 
     const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > 40; // Reduced threshold for better sensitivity
-    const isRightSwipe = distance < -40;
+    const isLeftSwipe = distance > 60; // Optimized threshold for accurate swipe detection
+    const isRightSwipe = distance < -60;
 
     if (isLeftSwipe) {
       e.preventDefault();
@@ -3092,6 +3093,19 @@ const DictationPageContent = () => {
                 learningMode === 'dictation' ? (
                   /* Mobile Dictation Mode: Horizontal slides */
                   <div className={styles.dictationSlidesWrapper}>
+                    {/* Slide Indicators - Dots navigation */}
+                    <SlideIndicators
+                      totalSlides={transcriptData.length}
+                      currentIndex={currentSentenceIndex}
+                      completedSentences={completedSentences}
+                      onDotClick={(index) => {
+                        const sentence = transcriptData[index];
+                        if (sentence) {
+                          handleSentenceClick(sentence.start, sentence.end);
+                        }
+                      }}
+                    />
+                    
                     <div 
                       className={styles.dictationSlides}
                       ref={dictationSlidesRef}

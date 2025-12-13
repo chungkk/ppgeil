@@ -19,10 +19,10 @@
     gap: 12px;
     padding: 6px 12px;
     padding-bottom: max(6px, env(safe-area-inset-bottom));
-    background: rgba(15, 23, 42, 0.75);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(15, 23, 42, 0.95); /* Improved from 0.75 for better contrast */
+    backdrop-filter: blur(12px); /* Optimized from 20px for better performance */
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 2px solid rgba(255, 255, 255, 0.15); /* Enhanced from 1px and 0.08 opacity */
     z-index: 1000;
   }
 }
@@ -35,8 +35,8 @@
 
 /* Base Mobile Circular Button */
 .mobileControlBtn {
-  width: 40px;
-  height: 40px;
+  width: 48px; /* Increased from 40px for better tap target */
+  height: 48px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
@@ -62,31 +62,31 @@
 }
 
 .mobileControlBtn svg {
-  width: 18px;
-  height: 18px;
+  width: 22px; /* Increased from 18px for better visibility */
+  height: 22px;
   transition: transform 0.2s ease;
 }
 
 /* Play Button - Larger & Gradient with glass effect */
 .mobileControlBtnPlay {
-  width: 48px;
-  height: 48px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.85) 0%, rgba(51, 65, 85, 0.85) 100%);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  width: 64px; /* Increased from 56px for prominence as primary action */
+  height: 64px;
+  background: rgba(59, 130, 246, 0.95); /* Simplified from gradient for better performance */
+  backdrop-filter: blur(8px); /* Reduced from 12px for performance */
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.25); /* Enhanced from 1.5px */
   color: white;
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.45); /* Enhanced shadow for prominence */
 }
 
 .mobileControlBtnPlay:active:not(:disabled) {
   transform: scale(0.92);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 3px 12px rgba(59, 130, 246, 0.4);
 }
 
 .mobileControlBtnPlay svg {
-  width: 22px;
-  height: 22px;
+  width: 28px; /* Increased from 24px to match larger button */
+  height: 28px;
 }
 
 /* Navigation Buttons (Previous/Next) */
@@ -155,16 +155,16 @@
 
 .dictationSlides {
   display: flex;
-  gap: 8px;
+  gap: 16px; /* Improved from 8px for easier swiping */
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  padding: 0 4px;
+  padding: 0 8px; /* Increased from 4px to match gap */
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
   height: 100%;
-  scroll-padding: 0 4px;
+  scroll-padding: 0 8px;
 }
 
 .dictationSlides::-webkit-scrollbar {
@@ -172,7 +172,7 @@
 }
 
 .dictationSlide {
-  flex: 0 0 calc(100% - 8px);
+  flex: 0 0 calc(100% - 16px); /* Adjusted to match new gap */
   scroll-snap-align: center;
   background: var(--bg-card);
   border: 1.5px solid var(--border-color);
@@ -188,7 +188,7 @@
   /* GPU optimization */
   will-change: transform, opacity;
   transform: translateZ(0);
-  transition: transform 0.2s ease-out, opacity 0.2s ease-out, border-color 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out, border-color 0.2s ease-out, border-width 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
 .dictationSlide:hover {
@@ -223,8 +223,8 @@
 /* Non-active slides on mobile - GPU optimized */
 @media (max-width: 768px) {
   .dictationSlide {
-    opacity: 0.5;
-    transform: scale(0.94) translateZ(0);
+    opacity: 0.75; /* Improved from 0.5 for better preview visibility */
+    transform: scale(0.96) translateZ(0); /* Slightly less scale for subtler effect */
     padding: 16px 12px;
     border-radius: 20px;
     gap: 12px;
@@ -234,41 +234,57 @@
     opacity: 1;
     transform: scale(1) translateZ(0);
     border-color: var(--accent-blue);
+    /* Enhanced active indicator */
+    border-width: 3px;
+    box-shadow: 
+      0 0 0 4px rgba(59, 130, 246, 0.2),
+      0 8px 32px rgba(59, 130, 246, 0.35);
   }
 
 }
 
 @media (max-width: 480px) {
   .mobileBottomControls {
-    gap: 10px;
-    padding: 5px 10px;
+    gap: 8px; /* Slightly reduced to fit larger buttons */
+    padding: 5px 8px;
     padding-bottom: max(5px, env(safe-area-inset-bottom));
   }
 
   .mobileControlBtn {
-    width: 36px;
-    height: 36px;
-  }
-
-  .mobileControlBtn svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .mobileControlBtnPlay {
-    width: 44px;
+    width: 44px; /* Increased from 36px - still meets minimum tap target */
     height: 44px;
   }
 
-  .mobileControlBtnPlay svg {
-    width: 20px;
+  .mobileControlBtn svg {
+    width: 20px; /* Increased from 16px */
     height: 20px;
+  }
+
+  .mobileControlBtnPlay {
+    width: 56px; /* Increased from 44px for prominence */
+    height: 56px;
+  }
+
+  .mobileControlBtnPlay svg {
+    width: 26px; /* Increased from 20px */
+    height: 26px;
   }
 
   .dictationSlide {
     padding: 14px 10px;
     border-radius: 16px;
     gap: 10px;
+  }
+
+  /* Ensure voice button is also properly sized on small screens */
+  .mobileVoiceButton {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mobileVoiceButton :global(button svg) {
+    width: 20px !important;
+    height: 20px !important;
   }
 }
 
@@ -294,17 +310,17 @@
 }
 
 .slideCompleted {
-  font-size: 18px;
+  font-size: 22px; /* Increased from 18px for better visibility */
   color: #10b981;
-  background: rgba(16, 185, 129, 0.15);
+  background: rgba(16, 185, 129, 0.2); /* Enhanced from 0.15 */
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 34px; /* Increased from 28px */
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: checkmarkPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.5); /* Enhanced shadow for prominence */
 }
 
 @keyframes checkmarkPop {
@@ -318,6 +334,57 @@
   100% {
     transform: scale(1) rotate(0deg);
     opacity: 1;
+  }
+}
+
+/* Slide Indicators (Dots) */
+.slideIndicators {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slideIndicatorDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.slideIndicatorDot:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.2);
+}
+
+.slideIndicatorDotActive {
+  width: 20px;
+  border-radius: 4px;
+  background: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+.slideIndicatorDotCompleted {
+  background: #10b981;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.5);
+}
+
+/* Hide indicators on very small screens */
+@media (max-width: 380px) {
+  .slideIndicators {
+    display: none;
   }
 }
 
@@ -362,16 +429,16 @@
 
 /* Slide translation display - Improved visibility */
 .slideTranslation {
-  padding: 12px 14px;
+  padding: 14px 16px; /* Increased from 12px 14px */
   margin-top: auto;
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(99, 102, 241, 0.12) 100%);
   border-top: 2px solid rgba(59, 130, 246, 0.3);
   border-radius: 0 0 12px 12px;
-  font-size: 14px;
+  font-size: 15px; /* Increased from 14px for better readability */
   font-style: normal;
   font-weight: 500;
   color: rgba(147, 197, 253, 1);
-  line-height: 1.6;
+  line-height: 1.7; /* Increased from 1.6 for better spacing */
   text-align: center;
   box-shadow: 0 -2px 8px rgba(59, 130, 246, 0.1);
 }

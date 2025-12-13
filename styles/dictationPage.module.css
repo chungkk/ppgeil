@@ -352,6 +352,17 @@
   border-radius: 16px 16px 0 0;
 }
 
+/* Mobile header improvements */
+@media (max-width: 768px) {
+  .videoHeader,
+  .dictationHeader,
+  .transcriptHeader {
+    padding: 14px 16px; /* Increased from 12px for better touch targets */
+    height: 52px; /* Increased from 44px */
+    border-radius: 0; /* Remove rounded corners on mobile for full width */
+  }
+}
+
 .videoHeader {
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(5, 150, 105, 0.05) 100%);
   border-bottom: 1px solid rgba(16, 185, 129, 0.15);
@@ -377,6 +388,17 @@
   margin: 0;
   padding: 0;
   letter-spacing: 0.3px;
+}
+
+/* Mobile title improvements */
+@media (max-width: 768px) {
+  .videoHeaderTitle,
+  .dictationHeaderTitle,
+  .transcriptTitle {
+    font-size: 16px; /* Increased from 14px for better readability */
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
 }
 
 .studyTimer {
@@ -482,6 +504,17 @@
   cursor: pointer;
   position: relative;
   user-select: none;
+  padding: 4px; /* Add padding for better tap target */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile toggle improvements */
+@media (max-width: 768px) {
+  .toggleLabel {
+    gap: 12px;
+    padding: 8px;
+    min-height: 48px; /* Better tap target */
+  }
 }
 
 .toggleInput {
@@ -500,6 +533,26 @@
   border-radius: 12px;
   transition: background 0.3s;
   border: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+/* Mobile toggle slider improvements */
+@media (max-width: 768px) {
+  .toggleSlider {
+    width: 50px; /* Increased from 42px */
+    height: 28px; /* Increased from 24px */
+    border-radius: 14px;
+    border-width: 1.5px;
+  }
+  
+  .toggleSlider::before {
+    width: 22px !important; /* Increased from 18px */
+    height: 22px !important;
+  }
+  
+  .toggleInput:checked + .toggleSlider::before {
+    transform: translateX(22px) !important; /* Adjusted for larger slider */
+  }
 }
 
 .toggleSlider::before {
@@ -527,6 +580,14 @@
   font-size: 14px;
   color: var(--text-primary);
   font-weight: 500;
+}
+
+/* Mobile toggle text improvements */
+@media (max-width: 768px) {
+  .toggleText {
+    font-size: 15px; /* Increased from 14px */
+    font-weight: 600;
+  }
 }
 
 /* Buttons */
@@ -560,13 +621,42 @@
   transform: translateY(0) scale(0.98);
 }
 
+.speedButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px; /* Ensure minimum tap target */
+}
+
+/* Mobile-specific sizing for speed button */
+@media (max-width: 768px) {
+  .speedButton {
+    padding: 10px 16px; /* Increased padding for better tap target */
+    font-size: 14px;
+    min-height: 48px;
+  }
+}
+
 .iconButton {
-  width: 40px;
-  height: 40px;
+  width: 48px; /* Increased from 40px for better mobile tap target */
+  height: 48px;
   padding: 0;
   border-radius: 50%;
   justify-content: center;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile-specific sizing for icon buttons */
+@media (max-width: 768px) {
+  .iconButton {
+    width: 52px; /* Even larger on mobile for easier tapping */
+    height: 52px;
+  }
+  
+  .iconButton svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .controlButton {
@@ -614,8 +704,8 @@
   background: linear-gradient(145deg, var(--bg-primary) 0%, rgba(255, 255, 255, 0.02) 100%);
   border: 1.5px solid rgba(255, 255, 255, 0.1);
   color: var(--text-primary);
-  width: 42px;
-  height: 42px;
+  width: 44px; /* Increased from 42px for better tap target */
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -623,6 +713,19 @@
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile-specific sizing for play buttons */
+@media (max-width: 768px) {
+  .playButton {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .playButton svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .playButton:hover {
@@ -645,9 +748,22 @@
   background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   border: none;
   color: white;
-  width: 50px;
-  height: 50px;
+  width: 52px; /* Increased from 50px */
+  height: 52px;
   box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35);
+}
+
+/* Mobile-specific sizing for main play button */
+@media (max-width: 768px) {
+  .playButton:nth-child(2) {
+    width: 56px; /* Larger primary action button */
+    height: 56px;
+  }
+  
+  .playButton:nth-child(2) svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .playButton:nth-child(2):hover {
@@ -783,6 +899,16 @@
   font-weight: 600;
   border-radius: 6px;
   transition: all 0.2s ease;
+  min-height: 36px; /* Ensure minimum tap target */
+}
+
+/* Mobile transcript tab improvements */
+@media (max-width: 768px) {
+  .transcriptTab {
+    padding: 8px 16px;
+    font-size: 14px;
+    min-height: 44px;
+  }
 }
 
 .transcriptTab:hover {
@@ -803,6 +929,14 @@
   flex-shrink: 0;
 }
 
+/* Mobile progress improvements */
+@media (max-width: 768px) {
+  .transcriptProgress {
+    gap: 10px;
+    min-width: 120px;
+  }
+}
+
 /* === SIMPLIFIED PROGRESS BAR === */
 .progressBar {
   flex: 1;
@@ -810,6 +944,14 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   overflow: hidden;
+}
+
+/* Mobile progress bar improvements */
+@media (max-width: 768px) {
+  .progressBar {
+    height: 10px; /* Increased from 8px for better visibility */
+    border-radius: 5px;
+  }
 }
 
 .progressFill {
@@ -841,6 +983,15 @@
   text-align: right;
   letter-spacing: 0.3px;
   flex-shrink: 0;
+}
+
+/* Mobile progress text improvements */
+@media (max-width: 768px) {
+  .progressText {
+    font-size: 14px; /* Increased from 12px */
+    font-weight: 700;
+    min-width: 42px;
+  }
 }
 
 .transcriptSection {
@@ -992,7 +1143,7 @@
   background: transparent;
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
-  width: 44px;
+  width: 44px; /* Already meets minimum tap target */
   height: 44px;
   border-radius: 50%;
   display: flex;
@@ -1002,6 +1153,15 @@
   transition: all 0.2s ease;
   font-size: 14px;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile-specific sizing for transcript action buttons */
+@media (max-width: 768px) {
+  .transcriptActionBtn {
+    width: 48px; /* Slightly larger for better mobile UX */
+    height: 48px;
+    font-size: 16px;
+  }
 }
 
 .transcriptActionBtn:hover {
@@ -1094,6 +1254,17 @@
   line-height: 1.2;
 }
 
+/* Mobile difficulty selector improvements */
+@media (max-width: 768px) {
+  .hideLevelDropdown {
+    padding: 8px 14px;
+    font-size: 14px;
+    height: 44px; /* Better tap target */
+    border-radius: 10px;
+    min-width: 100px;
+  }
+}
+
 .hideLevelDropdown:hover {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(51, 65, 85, 0.25) 100%);
   border-color: rgba(59, 130, 246, 0.5);
@@ -1121,18 +1292,19 @@
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.2) 100%);
   border: 2px solid rgba(16, 185, 129, 0.4);
   color: #10b981;
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-size: 12px;
+  padding: 8px 14px; /* Increased from 4px 10px */
+  border-radius: 10px; /* Increased from 6px */
+  font-size: 14px; /* Increased from 12px */
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
   outline: none;
-  height: 28px;
-  min-width: 45px;
+  height: 44px; /* Increased from 28px for better tap target */
+  min-width: 60px; /* Increased from 45px */
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .speedButtonMobile:hover {
@@ -1670,16 +1842,16 @@
 
 .dictationSlides {
   display: flex;
-  gap: 8px;
+  gap: 16px; /* Improved from 8px for easier swiping */
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  padding: 0 4px;
+  padding: 0 8px; /* Increased from 4px to match gap */
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
   height: 100%;
-  scroll-padding: 0 4px;
+  scroll-padding: 0 8px;
 }
 
 .dictationSlides::-webkit-scrollbar {
@@ -1687,7 +1859,7 @@
 }
 
 .dictationSlide {
-  flex: 0 0 calc(100% - 8px);
+  flex: 0 0 calc(100% - 16px); /* Adjusted to match new gap */
   scroll-snap-align: center;
   background: var(--bg-card);
   border: 1.5px solid var(--border-color);
@@ -1703,7 +1875,7 @@
   /* GPU optimization */
   will-change: transform, opacity;
   transform: translateZ(0);
-  transition: transform 0.2s ease-out, opacity 0.2s ease-out, border-color 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out, border-color 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
 .dictationSlide:hover {
@@ -1738,7 +1910,7 @@
 /* Non-active slides on mobile - Clean minimal design */
 @media (max-width: 768px) {
   .dictationSlide {
-    opacity: 0.6;
+    opacity: 0.75; /* Improved from 0.6 for better preview visibility */
     transform: scale(0.96) translateZ(0);
     border: none;
     background: transparent;
@@ -1750,6 +1922,8 @@
     transform: scale(1) translateZ(0);
     border: none;
     background: transparent;
+    /* Enhanced active indicator */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
   }
 }
 
@@ -1775,17 +1949,17 @@
 }
 
 .slideCompleted {
-  font-size: 18px;
+  font-size: 22px; /* Increased from 18px for better visibility */
   color: #10b981;
-  background: rgba(16, 185, 129, 0.15);
+  background: rgba(16, 185, 129, 0.2); /* Enhanced from 0.15 */
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 34px; /* Increased from 28px */
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: checkmarkPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.5); /* Enhanced shadow for prominence */
 }
 
 @keyframes checkmarkPop {
@@ -1967,8 +2141,8 @@
   border: none;
   border-radius: 12px;
   padding: 12px;
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 18px; /* Increased from 17px for better mobile readability */
+  line-height: 1.8; /* Increased from 1.6 for better spacing */
   color: rgba(255, 255, 255, 0.85);
   min-height: 80px;
   flex: 1;
@@ -2329,24 +2503,24 @@
   opacity: 1;
 }
 
-/* === SIMPLIFIED MOBILE VOICE BUTTON === */
+/* === OPTIMIZED MOBILE VOICE BUTTON === */
 .mobileVoiceButton {
   position: absolute;
   bottom: 50%;
-  right: 6px;
-  transform: translateY(50%);
+  left: 50%; /* Centered for better thumb reach */
+  transform: translate(-50%, 50%);
   z-index: 10;
-  width: 44px;
-  height: 44px;
+  width: 52px; /* Increased from 44px for better tap target */
+  height: 52px;
 }
 
 .mobileVoiceButton :global(button) {
   width: 100% !important;
   height: 100% !important;
   border-radius: 50% !important;
-  background: rgba(59, 130, 246, 0.2) !important;
-  border: 2px solid rgba(59, 130, 246, 0.4) !important;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25) !important;
+  background: rgba(59, 130, 246, 0.25) !important; /* Enhanced from 0.2 */
+  border: 2.5px solid rgba(59, 130, 246, 0.5) !important; /* Enhanced from 2px and 0.4 */
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35) !important; /* Enhanced shadow */
   transition: transform 0.2s ease, box-shadow 0.2s ease !important;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -2357,9 +2531,9 @@
 }
 
 .mobileVoiceButton :global(button svg) {
-  width: 20px !important;
-  height: 20px !important;
-  stroke: rgba(255, 255, 255, 0.9) !important;
+  width: 22px !important; /* Increased from 20px to match larger button */
+  height: 22px !important;
+  stroke: rgba(255, 255, 255, 0.95) !important; /* Slightly brighter */
   stroke-width: 2.5 !important;
   fill: none !important;
 }

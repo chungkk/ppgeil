@@ -2,8 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import inputStyles from '../../styles/dictation/dictationInput.module.css';
+import headerStyles from '../../styles/dictation/dictationHeader.module.css';
 
-const styles = { ...layoutStyles, ...inputStyles };
+const styles = { ...layoutStyles, ...inputStyles, ...headerStyles };
 
 /**
  * Dictation Header Component (Simplified - Full Sentence Mode Only)
