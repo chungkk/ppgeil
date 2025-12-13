@@ -118,6 +118,51 @@
   justify-content: center;
 }
 
+/* Voice Recording Button */
+.mobileControlBtnRecord {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  position: relative;
+}
+
+.mobileControlBtnRecord:active:not(:disabled) {
+  background: rgba(239, 68, 68, 0.25);
+  transform: scale(0.92);
+}
+
+.mobileControlBtnRecord.recording {
+  background: rgba(239, 68, 68, 0.95);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.45);
+  animation: recordingPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes recordingPulse {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.45);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 8px 28px rgba(239, 68, 68, 0.65);
+    transform: scale(1.05);
+  }
+}
+
+.mobileControlBtnRecord .spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Dictation Slides */
 .dictationSlidesWrapper {
   flex: 1;

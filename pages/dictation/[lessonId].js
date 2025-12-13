@@ -3295,6 +3295,12 @@ const DictationPageContent = () => {
           onNext={goToNextSentence}
           canGoPrevious={sortedTranscriptIndices.indexOf(currentSentenceIndex) !== 0}
           canGoNext={sortedTranscriptIndices.indexOf(currentSentenceIndex) < sortedTranscriptIndices.length - 1}
+          currentSentence={transcriptData[currentSentenceIndex]}
+          onVoiceRecordingComplete={(result) => setVoiceRecordingResult(result)}
+          showRecordButton={true}
+          audioRef={audioRef}
+          youtubePlayerRef={youtubePlayerRef}
+          isYouTube={isYouTube}
         />
       )}
 
