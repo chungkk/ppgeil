@@ -24,13 +24,6 @@ const ModeSelectionPopup = ({ lesson, onClose, onSelectMode }) => {
 
   const modes = [
     {
-      id: 'dictation',
-      name: 'Diktat',
-      icon: '✍️',
-      description: 'Luyện viết - điền từ vào chỗ trống',
-      studyTime: lesson.dictationStudyTime || 0
-    },
-    {
       id: 'shadow',
       name: 'Shadowing',
       icon: '🗣️',

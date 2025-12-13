@@ -78,8 +78,8 @@ const DictationHeader = ({
     // Unified mobile header - same for both modes
     return (
       <div className={styles.unifiedMobileHeader}>
-        {/* Left: Learning mode toggle button */}
-        <div className={styles.headerLeftMobile}>
+        {/* Left: Learning mode toggle button - HIDDEN */}
+        {/* <div className={styles.headerLeftMobile}>
           <button 
             className={`${styles.modeToggleButton} ${learningMode === 'shadowing' ? styles.modeToggleActive : ''}`}
             onClick={handleModeToggle}
@@ -90,7 +90,7 @@ const DictationHeader = ({
               {getModeLabel()}
             </span>
           </button>
-        </div>
+        </div> */}
 
         {/* Center: Sentence counter */}
         <div className={styles.headerCenter}>
@@ -181,8 +181,8 @@ const DictationHeader = ({
   // Desktop layout
   return (
     <>
-      {/* Floating Mode Toggle Button - Outside column */}
-      <div className={styles.floatingModeContainer}>
+      {/* Floating Mode Toggle Button - HIDDEN */}
+      {/* <div className={styles.floatingModeContainer}>
         <button 
           className={`${styles.floatingModeToggle} ${learningMode === 'shadowing' ? styles.floatingModeToggleActive : ''}`}
           onClick={handleModeToggle}
@@ -195,7 +195,7 @@ const DictationHeader = ({
             {getModeLabel()}
           </span>
         </button>
-      </div>
+      </div> */}
       
       <div className={styles.dictationHeader}>
         <h3 className={styles.dictationHeaderTitle}>
