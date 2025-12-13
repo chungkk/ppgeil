@@ -42,7 +42,7 @@ function generateSiteMap(lessons) {
       return `
   <!-- Lesson: ${lesson.title || lesson.id} -->
   <url>
-    <loc>${SITE_URL}/dictation/${lesson.id}</loc>
+    <loc>${SITE_URL}/${lesson.id}</loc>
     <lastmod>${new Date(lessonLastMod).toISOString()}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

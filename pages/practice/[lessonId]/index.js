@@ -18,7 +18,7 @@ const PracticeHomePage = () => {
   // Redirect to login if not authenticated
   useEffect(() => {
     if (!authLoading && !user) {
-      router.push(`/dictation/${lessonId}?login=true`);
+      router.push(`/${lessonId}?login=true`);
     }
   }, [user, authLoading, router, lessonId]);
 
@@ -34,7 +34,7 @@ const PracticeHomePage = () => {
   }, [lesson]);
 
   const goBackToDictation = () => {
-    router.push(`/dictation/${lessonId}`);
+    router.push(`/${lessonId}`);
   };
 
   if (isLoading || authLoading || !user) {

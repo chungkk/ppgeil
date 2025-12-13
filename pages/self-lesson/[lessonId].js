@@ -3066,8 +3066,7 @@ const DictationPageContent = () => {
 
   const breadcrumbData = generateBreadcrumbStructuredData([
     { name: 'Home', url: '/' },
-    { name: 'Diktat', url: '/dictation' },
-    { name: lesson.displayTitle || lesson.title, url: `/dictation/${lessonId}` }
+    { name: lesson.displayTitle || lesson.title, url: `/${lessonId}` }
   ]);
 
   const structuredDataArray = videoData
@@ -3101,7 +3100,7 @@ const DictationPageContent = () => {
         keywords={`Diktat ${lesson.title}, Deutsch Diktat üben, ${lesson.difficulty || 'A1-C2'} Deutsch, Hörverstehen Deutsch, Rechtschreibung Deutsch, PapaGeil Diktat, German dictation practice, Deutsch schreiben lernen`}
         ogType="video.other"
         ogImage={lesson.thumbnail || '/og-image.jpg'}
-        canonicalUrl={`/dictation/${lessonId}`}
+        canonicalUrl={`/${lessonId}`}
         locale="de_DE"
         author="PapaGeil"
         publishedTime={lesson.createdAt}

@@ -17,7 +17,7 @@ const ReadPracticePage = () => {
   // Redirect to login if not authenticated
   useEffect(() => {
     if (!authLoading && !user) {
-      router.push(`/dictation/${lessonId}?login=true`);
+      router.push(`/${lessonId}?login=true`);
     }
   }, [user, authLoading, router, lessonId]);
 

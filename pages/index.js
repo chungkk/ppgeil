@@ -72,19 +72,17 @@ const HomePage = () => {
       method: 'POST'
     }).catch(err => console.error('Error incrementing view count:', err));
     
-    // Show mode selection popup
-    setSelectedLesson(lesson);
-    setShowModePopup(true);
+    // Navigate directly to lesson (shadowing mode is default)
+    const route = `/${lesson.id}`;
+    navigateWithLocale(router, route);
   };
 
   const handleModeSelect = (lesson, mode) => {
     // Close popup
     setShowModePopup(false);
     
-    // Navigate to dictation page with mode query param
-    const route = mode === 'dictation' 
-      ? `/dictation/${lesson.id}` 
-      : `/dictation/${lesson.id}?mode=shadowing`;
+    // Navigate to lesson page (shadowing mode only)
+    const route = `/${lesson.id}`;
     navigateWithLocale(router, route);
   };
 

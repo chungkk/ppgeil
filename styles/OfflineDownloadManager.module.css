@@ -141,6 +141,11 @@
   background: #d32f2f;
 }
 
+.clearBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .preCacheBtn {
   width: 100%;
   background: #2196F3;
@@ -153,6 +158,11 @@
   background: #1976D2;
 }
 
+.preCacheBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .downloadBtn {
   background: #4CAF50;
   color: white;
@@ -160,6 +170,11 @@
 
 .downloadBtn:hover:not(:disabled) {
   background: #388E3C;
+}
+
+.downloadBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .removeBtn {
@@ -172,15 +187,15 @@
   background: #ffebee;
 }
 
+.removeBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .cachedBtn {
   background: #E0E0E0;
   color: #666;
   cursor: default;
-}
-
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
 }
 
 /* Lesson List */

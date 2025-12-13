@@ -162,7 +162,7 @@ function DashboardIndex() {
                         <div 
                           key={lesson.id} 
                           className={styles.lessonProgressItem}
-                          onClick={() => navigateWithLocale(router, `/dictation/${lesson.id}`)}
+                          onClick={() => navigateWithLocale(router, `/${lesson.id}`)}
                           style={{ cursor: 'pointer' }}
                         >
                           <div className={styles.lessonProgressItemHeader}>

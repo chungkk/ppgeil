@@ -81,20 +81,8 @@ const DictationPageContent = () => {
   // Auto-stop video at end of sentence (similar to shadowing mode)
   const [autoStop, setAutoStop] = useState(false);
 
-  // Learning mode: 'dictation' (hide words) or 'shadowing' (show words)
-  // Initialize from query param if present
-  const [learningMode, setLearningMode] = useState(() => {
-    return mode === 'shadowing' ? 'shadowing' : 'dictation';
-  });
-
-  // Sync learningMode with query param when it changes
-  useEffect(() => {
-    if (mode === 'shadowing') {
-      setLearningMode('shadowing');
-    } else if (mode === undefined || mode === 'dictation') {
-      setLearningMode('dictation');
-    }
-  }, [mode]);
+  // Learning mode: Always 'shadowing' - dictation mode removed
+  const learningMode = 'shadowing';
 
   // Playback speed control
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
@@ -2971,8 +2959,7 @@ const DictationPageContent = () => {
 
   const breadcrumbData = generateBreadcrumbStructuredData([
     { name: 'Home', url: '/' },
-    { name: 'Diktat', url: '/dictation' },
-    { name: lesson.displayTitle || lesson.title, url: `/dictation/${lessonId}` }
+    { name: lesson.displayTitle || lesson.title, url: `/${lessonId}` }
   ]);
 
   const structuredDataArray = videoData
@@ -3006,7 +2993,7 @@ const DictationPageContent = () => {
         keywords={`Diktat ${lesson.title}, Deutsch Diktat üben, ${lesson.difficulty || 'A1-C2'} Deutsch, Hörverstehen Deutsch, Rechtschreibung Deutsch, PapaGeil Diktat, German dictation practice, Deutsch schreiben lernen`}
         ogType="video.other"
         ogImage={lesson.thumbnail || '/og-image.jpg'}
-        canonicalUrl={`/dictation/${lessonId}`}
+        canonicalUrl={`/${lessonId}`}
         locale="de_DE"
         author="PapaGeil"
         publishedTime={lesson.createdAt}
@@ -3065,7 +3052,7 @@ const DictationPageContent = () => {
               autoStop={autoStop}
               onAutoStopChange={setAutoStop}
               learningMode={learningMode}
-              onToggleLearningMode={() => setLearningMode(prev => prev === 'dictation' ? 'shadowing' : 'dictation')}
+              onToggleLearningMode={null}
               lessonId={lessonId}
               savedVocabularyCount={savedVocabulary.length}
               onShowVocabulary={() => setShowMobileVocabulary(true)}

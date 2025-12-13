@@ -437,7 +437,7 @@ function UserDashboard() {
                           🎤 Shadowing
                         </button>
                         <button
-                          onClick={() => router.push(`/dictation/${lesson.id}`)}
+                          onClick={() => router.push(`/${lesson.id}`)}
                           className={`${styles.actionBtn} ${styles.dictation}`}
                         >
                           ✍️ Dictation
