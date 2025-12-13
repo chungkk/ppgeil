@@ -3014,6 +3014,7 @@ const DictationPageContent = () => {
             onVideoClick={handlePlayPause}
             isPlaying={isPlaying}
             onPlayPause={handlePlayPause}
+            onReplayFromStart={handleReplayFromStart}
             onPrevSentence={goToPreviousSentence}
             onNextSentence={goToNextSentence}
             playbackSpeed={playbackSpeed}
@@ -3023,6 +3024,7 @@ const DictationPageContent = () => {
               console.log('Voice recording result:', result);
             }}
             onComparisonResultChange={setVoiceRecordingResult}
+            youtubePlayerRef={youtubePlayerRef}
           />
 
           {/* Middle Column - Dictation Area (Mobile Only) */}

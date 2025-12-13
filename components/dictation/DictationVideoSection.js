@@ -28,6 +28,7 @@ const DictationVideoSection = ({
   // Control handlers
   isPlaying,
   onPlayPause,
+  onReplayFromStart,
   onPrevSentence,
   onNextSentence,
   playbackSpeed,
@@ -35,7 +36,8 @@ const DictationVideoSection = ({
   // Voice recording props
   currentSentence,
   onVoiceRecordingComplete,
-  onComparisonResultChange
+  onComparisonResultChange,
+  youtubePlayerRef
 }) => {
   const { t } = useTranslation();
   const [isRecording, setIsRecording] = React.useState(false);
@@ -50,6 +52,15 @@ const DictationVideoSection = ({
   // Start recording
   const startRecording = async () => {
     try {
+      // Pause video/audio before starting recording
+      if (isPlaying) {
+        if (isYouTube && youtubePlayerRef?.current) {
+          youtubePlayerRef.current.pauseVideo();
+        } else if (audioRef?.current) {
+          audioRef.current.pause();
+        }
+      }
+
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const mimeType = MediaRecorder.isTypeSupported('audio/webm')
         ? 'audio/webm'
