@@ -28,13 +28,214 @@ const DictationVideoSection = ({
   // Control handlers
   isPlaying,
   onPlayPause,
-  onReplayFromStart,
   onPrevSentence,
   onNextSentence,
   playbackSpeed,
-  onSpeedChange
+  onSpeedChange,
+  // Voice recording props
+  currentSentence,
+  onVoiceRecordingComplete,
+  onComparisonResultChange
 }) => {
   const { t } = useTranslation();
+  const [isRecording, setIsRecording] = React.useState(false);
+  const [isProcessing, setIsProcessing] = React.useState(false);
+  const [recordedBlob, setRecordedBlob] = React.useState(null);
+  const [isPlayingRecording, setIsPlayingRecording] = React.useState(false);
+  const [comparisonResult, setComparisonResult] = React.useState(null);
+  const mediaRecorderRef = React.useRef(null);
+  const audioChunksRef = React.useRef([]);
+  const playbackRef = React.useRef(null);
+
+  // Start recording
+  const startRecording = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mimeType = MediaRecorder.isTypeSupported('audio/webm')
+        ? 'audio/webm'
+        : 'audio/mp4';
+
+      const mediaRecorder = new MediaRecorder(stream, { mimeType });
+      mediaRecorderRef.current = mediaRecorder;
+      audioChunksRef.current = [];
+
+      mediaRecorder.ondataavailable = (event) => {
+        if (event.data.size > 0) {
+          audioChunksRef.current.push(event.data);
+        }
+      };
+
+      mediaRecorder.onstop = async () => {
+        stream.getTracks().forEach(track => track.stop());
+        const audioBlob = new Blob(audioChunksRef.current, {
+          type: audioChunksRef.current[0]?.type || 'audio/webm'
+        });
+        setRecordedBlob(audioBlob);
+        await processRecording(audioBlob);
+      };
+
+      mediaRecorder.start();
+      setIsRecording(true);
+      setComparisonResult(null);
+    } catch (err) {
+      console.error('Error starting recording:', err);
+      alert('Không thể truy cập microphone');
+    }
+  };
+
+  // Stop recording
+  const stopRecording = () => {
+    if (mediaRecorderRef.current && isRecording) {
+      mediaRecorderRef.current.stop();
+      setIsRecording(false);
+      setIsProcessing(true);
+    }
+  };
+
+  // Process recording with Whisper
+  const processRecording = async (audioBlob) => {
+    try {
+      const formData = new FormData();
+      formData.append('audio', audioBlob, 'voice-recording.webm');
+      formData.append('language', 'de');
+
+      const response = await fetch('/api/whisper-transcribe', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success && data.text) {
+        const transcribedText = data.text.trim();
+        
+        // Check for error messages from Whisper
+        const errorPhrases = [
+          'Untertitelung aufgrund der Audioqualität nicht möglich',
+          'Untertitel',
+          'Bitte',
+          'Danke',
+        ];
+        
+        const isErrorMessage = errorPhrases.some(phrase => 
+          transcribedText.toLowerCase().includes(phrase.toLowerCase())
+        );
+        
+        // Only show comparison if transcription is valid (not an error message and has reasonable length)
+        if (!isErrorMessage && transcribedText.length > 2) {
+          const originalText = currentSentence?.text || '';
+          const similarity = calculateSimilarity(transcribedText, originalText);
+          
+          const result = {
+            transcribed: transcribedText,
+            original: originalText,
+            similarity: similarity,
+            isCorrect: similarity >= 80
+          };
+          
+          setComparisonResult(result);
+          
+          // Notify parent component
+          if (onComparisonResultChange) {
+            onComparisonResultChange(result);
+          }
+
+          if (onVoiceRecordingComplete) {
+            onVoiceRecordingComplete({
+              transcribed: transcribedText,
+              similarity: similarity
+            });
+          }
+        } else {
+          // Clear any previous results and show error
+          setComparisonResult(null);
+          if (onComparisonResultChange) {
+            onComparisonResultChange(null);
+          }
+          alert('Không thể nhận diện giọng nói. Vui lòng thử lại với âm thanh rõ hơn.');
+        }
+      } else {
+        setComparisonResult(null);
+        alert('Không thể nhận diện giọng nói');
+      }
+    } catch (err) {
+      console.error('Error processing audio:', err);
+      setComparisonResult(null);
+      alert('Lỗi xử lý âm thanh');
+    } finally {
+      setIsProcessing(false);
+    }
+  };
+
+  // Calculate text similarity
+  const calculateSimilarity = (text1, text2) => {
+    const normalize = (str) => str.toLowerCase().trim().replace(/[.,!?;:"""''„]/g, '').replace(/\s+/g, ' ');
+    const normalized1 = normalize(text1);
+    const normalized2 = normalize(text2);
+    
+    const words1 = normalized1.split(' ');
+    const words2 = normalized2.split(' ');
+    
+    let matches = 0;
+    words1.forEach(word => {
+      if (words2.includes(word)) {
+        matches++;
+      }
+    });
+    
+    const maxLength = Math.max(words1.length, words2.length);
+    return maxLength > 0 ? Math.round((matches / maxLength) * 100) : 0;
+  };
+
+  // Play recorded audio
+  const playRecordedAudio = () => {
+    if (!recordedBlob) return;
+
+    if (isPlayingRecording && playbackRef.current) {
+      playbackRef.current.pause();
+      playbackRef.current = null;
+      setIsPlayingRecording(false);
+      return;
+    }
+
+    const url = URL.createObjectURL(recordedBlob);
+    const audio = new Audio(url);
+    playbackRef.current = audio;
+
+    audio.onended = () => {
+      setIsPlayingRecording(false);
+      playbackRef.current = null;
+      URL.revokeObjectURL(url);
+    };
+
+    audio.play();
+    setIsPlayingRecording(true);
+  };
+
+  // Clear recording
+  const clearRecording = () => {
+    if (playbackRef.current) {
+      playbackRef.current.pause();
+      playbackRef.current = null;
+    }
+    setRecordedBlob(null);
+    setComparisonResult(null);
+    setIsPlayingRecording(false);
+    
+    // Notify parent to clear result
+    if (onComparisonResultChange) {
+      onComparisonResultChange(null);
+    }
+  };
+
+  // Handle recording button click
+  const handleRecordingClick = () => {
+    if (isRecording) {
+      stopRecording();
+    } else {
+      startRecording();
+    }
+  };
 
   return (
     <div className={styles.leftSection}>
@@ -59,17 +260,6 @@ const DictationVideoSection = ({
               <span className={styles.toggleSlider}></span>
               <span className={styles.toggleText}>{t('lesson.ui.autoStop')}</span>
             </label>
-            <button 
-              className={styles.speedButton} 
-              onClick={() => {
-                const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
-                const currentIndex = speeds.indexOf(playbackSpeed || 1);
-                const nextIndex = (currentIndex + 1) % speeds.length;
-                onSpeedChange(speeds[nextIndex]);
-              }}
-            >
-              ⚡ {playbackSpeed || 1}x
-            </button>
           </div>
         )}
       </div>
@@ -115,17 +305,6 @@ const DictationVideoSection = ({
                 </svg>
               </button>
 
-              {/* Replay from Start */}
-              <button
-                className={styles.controlBtn}
-                onClick={onReplayFromStart}
-                title={t('lesson.ui.replay')}
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                  <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
-                </svg>
-              </button>
-
               {/* Play/Pause (Large) */}
               <button
                 className={`${styles.controlBtn} ${styles.playPauseBtn}`}
@@ -142,6 +321,65 @@ const DictationVideoSection = ({
                   </svg>
                 )}
               </button>
+
+              {/* Voice Recording Button */}
+              <button
+                className={`${styles.controlBtn} ${styles.recordBtn} ${isRecording ? styles.recording : ''}`}
+                onClick={handleRecordingClick}
+                disabled={isProcessing}
+                title={isRecording ? 'Dừng ghi âm' : 'Ghi âm'}
+              >
+                {isProcessing ? (
+                  <svg className={styles.spinner} viewBox="0 0 24 24" width="20" height="20">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="32">
+                      <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+                    </circle>
+                  </svg>
+                ) : isRecording ? (
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <rect x="6" y="6" width="12" height="12" rx="2"/>
+                  </svg>
+                ) : (
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
+                    <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z"/>
+                    <path d="M11 18h2v4h-2z"/>
+                    <path d="M8 22h8v2H8z"/>
+                  </svg>
+                )}
+              </button>
+
+              {/* Playback recorded audio */}
+              {recordedBlob && (
+                <button
+                  className={`${styles.controlBtn} ${styles.playbackRecordBtn}`}
+                  onClick={playRecordedAudio}
+                  title={isPlayingRecording ? 'Dừng phát' : 'Phát lại ghi âm'}
+                >
+                  {isPlayingRecording ? (
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                      <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+                    </svg>
+                  ) : (
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  )}
+                </button>
+              )}
+
+              {/* Delete recording */}
+              {recordedBlob && (
+                <button
+                  className={`${styles.controlBtn} ${styles.deleteBtn}`}
+                  onClick={clearRecording}
+                  title="Xóa ghi âm"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                  </svg>
+                </button>
+              )}
 
               {/* Next Sentence */}
               <button

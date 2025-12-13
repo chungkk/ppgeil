@@ -176,6 +176,14 @@ const DictationPageContent = () => {
   // Voice recording states for dictation practice (per sentence)
   const [recordingStates, setRecordingStates] = useState({}); // { sentenceIndex: { isRecording, recordedBlob, comparisonResult, isPlaying } }
   const audioPlaybackRef = useRef(null);
+  
+  // Voice recording result from video control
+  const [voiceRecordingResult, setVoiceRecordingResult] = useState(null);
+  
+  // Clear voice recording result when sentence changes
+  useEffect(() => {
+    setVoiceRecordingResult(null);
+  }, [currentSentenceIndex]);
 
   // Study time tracking - using custom hook
   const { studyTime, isTimerRunning, progressLoaded: studyTimeLoaded } = useStudyTimer({
@@ -959,33 +967,6 @@ const DictationPageContent = () => {
      }
    }, [transcriptData, currentSentenceIndex, isYouTube]);
 
-  // Replay current sentence from the beginning
-  const handleReplayFromStart = useCallback(() => {
-    if (transcriptData.length === 0 || currentSentenceIndex >= transcriptData.length) return;
-    
-    const currentSentence = transcriptData[currentSentenceIndex];
-    
-    if (isYouTube) {
-      const player = youtubePlayerRef.current;
-      if (!player || !player.seekTo) return;
-
-      player.seekTo(currentSentence.start);
-      if (player.playVideo) player.playVideo();
-      setIsPlaying(true);
-      setSegmentPlayEndTime(currentSentence.end);
-      setSegmentEndTimeLocked(true);
-    } else {
-      const audio = audioRef.current;
-      if (!audio) return;
-      
-      audio.currentTime = currentSentence.start;
-      audio.play();
-      setIsPlaying(true);
-      setSegmentPlayEndTime(currentSentence.end);
-      setSegmentEndTimeLocked(true);
-    }
-  }, [transcriptData, currentSentenceIndex, isYouTube]);
-
   // Handle playback speed change
   const handleSpeedChange = useCallback((speed) => {
     setPlaybackSpeed(speed);
@@ -1141,10 +1122,13 @@ const DictationPageContent = () => {
     const targetItem = container.querySelector(`[data-sentence-index="${currentSentenceIndex}"]`);
 
     if (targetItem) {
-      // Scroll the item to the top of the visible area
-      targetItem.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      // Calculate scroll position to show current sentence at position 2 (with 1 item above)
+      const itemHeight = targetItem.offsetHeight;
+      const targetScrollTop = targetItem.offsetTop - itemHeight;
+      
+      container.scrollTo({
+        top: Math.max(0, targetScrollTop), // Ensure we don't scroll to negative position
+        behavior: 'smooth'
       });
     }
   }, [currentSentenceIndex, isMobile, learningMode, transcriptData.length]);
@@ -3030,11 +3014,15 @@ const DictationPageContent = () => {
             onVideoClick={handlePlayPause}
             isPlaying={isPlaying}
             onPlayPause={handlePlayPause}
-            onReplayFromStart={handleReplayFromStart}
             onPrevSentence={goToPreviousSentence}
             onNextSentence={goToNextSentence}
             playbackSpeed={playbackSpeed}
             onSpeedChange={handleSpeedChange}
+            currentSentence={transcriptData[currentSentenceIndex]}
+            onVoiceRecordingComplete={(result) => {
+              console.log('Voice recording result:', result);
+            }}
+            onComparisonResultChange={setVoiceRecordingResult}
           />
 
           {/* Middle Column - Dictation Area (Mobile Only) */}
@@ -3268,6 +3256,7 @@ const DictationPageContent = () => {
             lessonId={lessonId}
             showTranslation={showTranslation}
             onToggleTranslation={() => setShowTranslation(!showTranslation)}
+            voiceRecordingResult={voiceRecordingResult}
           />
         </div>
       </div>
@@ -3277,7 +3266,6 @@ const DictationPageContent = () => {
         <MobileBottomControls
           isPlaying={isPlaying}
           onPlayPause={handlePlayPause}
-          onReplay={handleReplayFromStart}
           onPrevious={goToPreviousSentence}
           onNext={goToNextSentence}
           canGoPrevious={sortedTranscriptIndices.indexOf(currentSentenceIndex) !== 0}

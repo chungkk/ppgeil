@@ -39,7 +39,9 @@ const TranscriptPanel = ({
   showTranslation = false,
   onToggleTranslation,
   // Word click handler
-  onWordClickForPopup
+  onWordClickForPopup,
+  // Voice recording result
+  voiceRecordingResult = null
 }) => {
   // Tab state: 'transcript' or 'vocabulary'
   const [activeTab, setActiveTab] = useState('transcript');
@@ -249,6 +251,17 @@ const TranscriptPanel = ({
                       ? renderKaraokeText(segment.text, segment, originalIndex)
                       : renderMaskedKaraokeText(segment.text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords)
                     }
+                    {/* Voice Recording Result */}
+                    {voiceRecordingResult && originalIndex === currentSentenceIndex && (
+                      <span style={{
+                        marginLeft: '8px',
+                        fontSize: '13px',
+                        fontWeight: 'bold',
+                        color: voiceRecordingResult.isCorrect ? '#28a745' : '#dc3545'
+                      }}>
+                        {voiceRecordingResult.isCorrect ? '✅' : '❌'} {voiceRecordingResult.similarity}%
+                      </span>
+                    )}
                   </div>
                   {/* Translation Display */}
                   {showTranslation && (segment.translationVi || segment.translation) && (

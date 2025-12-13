@@ -268,6 +268,71 @@
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
+/* Speed Button / Recording Button */
+.speedButton {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.speedButton:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-blue);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+.speedButton:active {
+  transform: scale(0.98);
+}
+
+.speedButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.speedButton.recording {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.9) 0%, rgba(220, 38, 38, 0.9) 100%);
+  border-color: #ef4444;
+  color: white;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+  }
+}
+
+/* Comparison Result */
+.comparisonResult {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Toggle Switch */
 .toggleLabel {
   display: flex;
@@ -399,6 +464,83 @@
 
 .playPauseBtn:active {
   transform: scale(1);
+}
+
+/* Voice Recording Button */
+.recordBtn {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.05) 100%);
+  border: 2px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.recordBtn:hover {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(220, 38, 38, 0.1) 100%);
+  border-color: #ef4444;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+  transform: scale(1.1);
+}
+
+.recordBtn.recording {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border-color: #dc2626;
+  color: white;
+  animation: recordPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes recordPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+}
+
+.recordBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.recordBtn .spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Playback Recorded Audio Button */
+.playbackRecordBtn {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.05) 100%);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #10b981;
+}
+
+.playbackRecordBtn:hover {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.1) 100%);
+  border-color: #10b981;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* Delete Button */
+.deleteBtn {
+  background: linear-gradient(135deg, rgba(107, 114, 128, 0.1) 0%, rgba(75, 85, 99, 0.05) 100%);
+  border-color: rgba(107, 114, 128, 0.3);
+  color: #6b7280;
+}
+
+.deleteBtn:hover {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.05) 100%);
+  border-color: #ef4444;
+  color: #ef4444;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
 }
 
 /* Secondary Controls Row */
