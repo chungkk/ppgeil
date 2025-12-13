@@ -529,20 +529,6 @@
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
 
-/* Delete Button */
-.deleteBtn {
-  background: linear-gradient(135deg, rgba(107, 114, 128, 0.1) 0%, rgba(75, 85, 99, 0.05) 100%);
-  border-color: rgba(107, 114, 128, 0.3);
-  color: #6b7280;
-}
-
-.deleteBtn:hover {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.05) 100%);
-  border-color: #ef4444;
-  color: #ef4444;
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
-}
-
 /* Secondary Controls Row */
 .secondaryControlsRow {
   display: flex;
