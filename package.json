@@ -8,11 +8,16 @@
     "build": "next build",
     "start": "npm run cleanup-files & next start",
     "lint": "next lint",
-    "export": "next export",
     "cleanup-files": "node scripts/cleanup-files.js",
-    "cleanup-recordings": "node scripts/cleanup-old-recordings.js"
+    "cleanup-recordings": "node scripts/cleanup-old-recordings.js",
+    "cap:sync": "npx cap sync",
+    "cap:open:ios": "npx cap open ios",
+    "cap:run:ios": "npx cap run ios"
   },
   "dependencies": {
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
     "@distube/ytdl-core": "^4.16.12",
     "bcryptjs": "^3.0.2",
     "dotenv": "^17.2.3",

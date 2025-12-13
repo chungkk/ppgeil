@@ -18,17 +18,22 @@ import OfflineIndicator from '../components/OfflineIndicator';
 import FixedSocialShare from '../components/FixedSocialShare';
 import CookieConsent from '../components/CookieConsent';
 import { registerServiceWorker } from '../lib/serviceWorker';
+import { useIsNativeApp } from '../lib/hooks/useIsNativeApp';
 
 function Layout({ children }) {
   const router = useRouter();
   const isHomePage = router.pathname === '/';
   const isAdminPage = router.pathname.startsWith('/admin');
+  const { isIOS } = useIsNativeApp();
+
+  // Hide header and footer on iOS native app
+  const shouldHideHeaderFooter = isAdminPage || isIOS;
 
   return (
     <>
-      {!isAdminPage && <Header />}
+      {!shouldHideHeaderFooter && <Header />}
       {children}
-      {!isAdminPage && <Footer />}
+      {!shouldHideHeaderFooter && <Footer />}
     </>
   );
 }
