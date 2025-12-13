@@ -143,9 +143,9 @@ const DictationPageContent = () => {
   const [sentenceTranslation, setSentenceTranslation] = useState('');
   const [isLoadingTranslation, setIsLoadingTranslation] = useState(false);
   const [showTranslation, setShowTranslation] = useState(() => {
-    if (typeof window === 'undefined') return false;
+    if (typeof window === 'undefined') return true;
     const saved = localStorage.getItem('dictationShowTranslation');
-    return saved !== null ? saved === 'true' : false;
+    return saved !== null ? saved === 'true' : true;
   });
   
   // Mobile detection state

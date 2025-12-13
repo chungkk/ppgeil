@@ -587,43 +587,19 @@
 
 /* Translation Display in Transcript Items */
 .transcriptItemTranslation {
-  margin-top: 10px;
-  padding: 10px 14px;
-  padding-left: 38px; /* Align with text (after play icon) */
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.06) 0%, rgba(59, 130, 246, 0.06) 100%);
-  border-left: 2px solid rgba(139, 92, 246, 0.4);
-  border-radius: 8px;
+  margin-top: 8px;
+  padding: 8px 12px 8px 32px; /* Left padding for alignment with text */
+  background: rgba(100, 116, 139, 0.08);
+  border-left: 3px solid rgba(100, 116, 139, 0.3);
+  border-radius: 6px;
   font-size: 13px;
-  line-height: 1.6;
-  color: rgba(139, 92, 246, 0.95);
+  line-height: 1.7;
+  color: rgba(148, 163, 184, 0.95);
   position: relative;
-  transition: all 0.3s ease;
-  animation: slideIn 0.3s ease-out;
-}
-
-.transcriptItemTranslation::before {
-  content: '💬';
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 14px;
-  opacity: 0.7;
+  transition: all 0.2s ease;
 }
 
 .transcriptItemTranslation:hover {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(59, 130, 246, 0.12) 100%);
-  border-left-color: rgba(139, 92, 246, 0.6);
-  transform: translateX(2px);
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background: rgba(100, 116, 139, 0.12);
+  border-left-color: rgba(100, 116, 139, 0.5);
 }
