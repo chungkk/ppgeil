@@ -251,7 +251,7 @@
 
 .brandIcon {
   font-size: 56px;
-  filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.3));
+  filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.3));
   animation: bounce 2s ease-in-out infinite;
   display: inline-block;
 }

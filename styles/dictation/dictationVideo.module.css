@@ -102,8 +102,8 @@
 }
 
 .videoTimer:hover {
-  background: linear-gradient(145deg, rgba(102, 126, 234, 0.5) 0%, rgba(118, 75, 162, 0.5) 100%);
-  border-color: rgba(102, 126, 234, 0.4);
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.5) 0%, rgba(51, 65, 85, 0.5) 100%);
+  border-color: rgba(59, 130, 246, 0.4);
   transform: scale(1.02);
 }
 
@@ -265,7 +265,7 @@
 }
 
 .playButton:nth-child(2):hover {
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
 /* Toggle Switch */
@@ -368,7 +368,7 @@
   background: var(--bg-hover);
   border-color: var(--accent-blue);
   transform: scale(1.08);
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
 }
 
 .controlBtn:active {
@@ -382,7 +382,7 @@
   background: var(--accent-gradient);
   border: none;
   color: white;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .playPauseBtn svg {
@@ -392,8 +392,8 @@
 }
 
 .playPauseBtn:hover {
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
   transform: scale(1.12);
 }
 

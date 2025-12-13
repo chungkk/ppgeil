@@ -126,8 +126,8 @@
 }
 
 .infoBox {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-  border: 1px solid rgba(102, 126, 234, 0.2);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(51, 65, 85, 0.1) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
   text-align: center;
@@ -215,7 +215,7 @@
 
 /* Instructions */
 .instructions {
-  background: rgba(102, 126, 234, 0.08);
+  background: rgba(59, 130, 246, 0.08);
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
@@ -378,7 +378,7 @@
 .correctAnswerBox {
   margin-top: 8px;
   padding: 8px 12px;
-  background: rgba(102, 126, 234, 0.08);
+  background: rgba(59, 130, 246, 0.08);
   border-radius: 8px;
 }
 
@@ -424,7 +424,7 @@
 
 /* Vocabulary Display */
 .vocabDisplay {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(51, 65, 85, 0.1) 100%);
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
   margin-bottom: var(--spacing-sm);
@@ -498,7 +498,7 @@
   align-items: center;
   justify-content: center;
   padding: 14px 32px;
-  background: linear-gradient(135deg, var(--accent-blue) 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--accent-blue) 0%, #06b6d4 100%);
   border: none;
   border-radius: var(--border-radius);
   color: white;
@@ -511,7 +511,7 @@
 
 .primaryBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
 }
 
 .secondaryBtn {
@@ -655,7 +655,7 @@
 
 .aiExplanationBox {
   padding: 10px 12px;
-  background: rgba(102, 126, 234, 0.08);
+  background: rgba(59, 130, 246, 0.08);
   border-radius: 8px;
   border-left: 3px solid var(--accent-blue);
 }
@@ -714,12 +714,12 @@
 
 .quizOption:hover:not(:disabled) {
   border-color: var(--accent-blue);
-  background: rgba(102, 126, 234, 0.05);
+  background: rgba(59, 130, 246, 0.05);
 }
 
 .quizOptionSelected {
   border-color: var(--accent-blue);
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(59, 130, 246, 0.1);
 }
 
 .quizOptionCorrect {
@@ -741,7 +741,7 @@
 .quizExplanation {
   margin-top: var(--spacing-md);
   padding: 12px;
-  background: rgba(102, 126, 234, 0.08);
+  background: rgba(59, 130, 246, 0.08);
   border-radius: 8px;
   border-left: 3px solid var(--accent-blue);
 }
@@ -1053,7 +1053,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px 14px;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(51, 65, 85, 0.1) 100%);
   border-radius: 8px;
   margin-bottom: 4px;
 }
@@ -1090,7 +1090,7 @@
 
 .checkButton {
   padding: 14px 32px;
-  background: linear-gradient(135deg, var(--accent-blue) 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--accent-blue) 0%, #06b6d4 100%);
   border: none;
   border-radius: var(--border-radius);
   color: white;
@@ -1102,7 +1102,7 @@
 
 .checkButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
 }
 
 .checkButton:active {

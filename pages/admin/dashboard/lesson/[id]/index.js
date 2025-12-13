@@ -515,7 +515,10 @@ function LessonFormPage() {
           })
         });
 
-        if (!srtRes.ok) throw new Error('Convert SRT failed');
+        if (!srtRes.ok) {
+          const errorData = await srtRes.json().catch(() => ({ message: 'Unknown error' }));
+          throw new Error(`Convert SRT failed: ${errorData.message || srtRes.statusText}`);
+        }
         const srtData = await srtRes.json();
         finalJsonPath = srtData.url;
       }
@@ -550,7 +553,10 @@ function LessonFormPage() {
               segments: whisperV3Segments // Segments với wordTimings từ Whisper V3
             })
           });
-          if (!srtRes.ok) throw new Error('Convert SRT failed');
+          if (!srtRes.ok) {
+            const errorData = await srtRes.json().catch(() => ({ message: 'Unknown error' }));
+            throw new Error(`Convert SRT failed: ${errorData.message || srtRes.statusText}`);
+          }
         }
         
         lessonData = {

@@ -5,15 +5,17 @@ import ProtectedPage from '../../components/ProtectedPage';
 import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
 import { toast } from 'react-toastify';
+import OfflineDownloadManager from '../../components/OfflineDownloadManager';
 import styles from '../../styles/profile.module.css';
 import settingsStyles from '../../styles/settings.module.css';
 
 
 function SettingsPage() {
   const { t } = useTranslation();
-  const { user } = useAuth();
+  const { user, refreshUser } = useAuth();
   const { theme, themeOptions, setTheme } = useTheme();
 
+  const [activeTab, setActiveTab] = useState('general'); // 'general' or 'offline'
   const [passwordForm, setPasswordForm] = useState({
     currentPassword: '',
     newPassword: '',
@@ -75,7 +77,8 @@ function SettingsPage() {
 
       if (response.ok) {
         toast.success(t('settings.updateSuccess'));
-        setTimeout(() => window.location.reload(), 1000);
+        // Refresh user data without reloading the entire page
+        await refreshUser();
       } else {
         toast.error(t('settings.updateError'));
       }
@@ -104,6 +107,24 @@ function SettingsPage() {
         <div className={styles.profileContainer}>
           <h1 className={settingsStyles.pageTitle}>⚙️ {t('settings.title')}</h1>
 
+          {/* Tabs */}
+          <div className={settingsStyles.tabs}>
+            <button
+              className={`${settingsStyles.tab} ${activeTab === 'general' ? settingsStyles.tabActive : ''}`}
+              onClick={() => setActiveTab('general')}
+            >
+              ⚙️ Cài đặt chung
+            </button>
+            <button
+              className={`${settingsStyles.tab} ${activeTab === 'offline' ? settingsStyles.tabActive : ''}`}
+              onClick={() => setActiveTab('offline')}
+            >
+              📥 Offline
+            </button>
+          </div>
+
+          {/* General Settings Tab */}
+          {activeTab === 'general' && (
           <div className={settingsStyles.settingsList}>
             {/* Profile Info */}
             <div className={settingsStyles.settingRow}>
@@ -217,6 +238,12 @@ function SettingsPage() {
               </form>
             )}
           </div>
+          )}
+
+          {/* Offline Downloads Tab */}
+          {activeTab === 'offline' && (
+            <OfflineDownloadManager />
+          )}
         </div>
       </div>
     </>

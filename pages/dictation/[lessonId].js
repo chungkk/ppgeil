@@ -62,7 +62,7 @@ const dictationMode = 'full-sentence';
 const DictationPageContent = () => {
   const { t } = useTranslation();
   const router = useRouter();
-  const { lessonId } = useRouter().query;
+  const { lessonId, mode } = useRouter().query;
   
   // State management
   const [transcriptData, setTranscriptData] = useState([]);
@@ -81,7 +81,19 @@ const DictationPageContent = () => {
   const [autoStop, setAutoStop] = useState(false);
 
   // Learning mode: 'dictation' (hide words) or 'shadowing' (show words)
-  const [learningMode, setLearningMode] = useState('dictation');
+  // Initialize from query param if present
+  const [learningMode, setLearningMode] = useState(() => {
+    return mode === 'shadowing' ? 'shadowing' : 'dictation';
+  });
+
+  // Sync learningMode with query param when it changes
+  useEffect(() => {
+    if (mode === 'shadowing') {
+      setLearningMode('shadowing');
+    } else if (mode === undefined || mode === 'dictation') {
+      setLearningMode('dictation');
+    }
+  }, [mode]);
 
   // Playback speed control
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
@@ -263,15 +275,22 @@ const DictationPageContent = () => {
         return;
       }
 
+      // PRIORITY 1: Use pre-loaded translation from JSON (offline data)
+      if (sentence.translation) {
+        setSentenceTranslation(sentence.translation);
+        return;
+      }
+
       const targetLang = user?.nativeLanguage || 'vi';
       
-      // Check cache first
+      // PRIORITY 2: Check in-memory cache
       const cached = translationCache.get(sentence.text, 'de', targetLang);
       if (cached) {
         setSentenceTranslation(cached);
         return;
       }
 
+      // PRIORITY 3: Fallback to API call (only if no offline data available)
       setIsLoadingTranslation(true);
       
       try {

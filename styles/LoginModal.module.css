@@ -84,7 +84,7 @@
 /* Left Side - Welcome */
 .modalLeft {
   flex: 1;
-  background: var(--accent-gradient, linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%));
+  background: var(--accent-gradient, linear-gradient(135deg, #3b82f6 0%, #3b82f6 50%, #06b6d4 100%));
   padding: 60px 50px;
   display: flex;
   align-items: center;
@@ -154,7 +154,7 @@
 
 .mascotBubble {
   background: var(--bg-elevated, white);
-  color: var(--accent-purple, #6366f1);
+  color: var(--accent-blue, #3b82f6);
   padding: 16px 32px;
   border-radius: 28px;
   font-size: 28px;
@@ -231,8 +231,8 @@
 
 .changeEmailButton:hover:not(:disabled) {
   background: var(--bg-hover, #f9fafb);
-  border-color: var(--accent-purple, #6366f1);
-  color: var(--accent-purple, #6366f1);
+  border-color: var(--accent-blue, #3b82f6);
+  color: var(--accent-blue, #3b82f6);
 }
 
 .changeEmailButton:disabled {
@@ -264,7 +264,7 @@
 .authOptions .backButton {
   background: none;
   border: none;
-  color: var(--accent-purple, #6366f1);
+  color: var(--accent-blue, #3b82f6);
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
@@ -344,7 +344,7 @@
 .registerTitle {
   font-size: 22px;
   font-weight: 900;
-  background: var(--accent-gradient, linear-gradient(135deg, #667eea 0%, #764ba2 100%));
+  background: var(--accent-gradient, linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -367,8 +367,8 @@
 }
 
 .registerHeader ~ form .input:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
 }
 
 .registerHeader ~ form .passwordContainer {
@@ -376,18 +376,18 @@
 }
 
 .registerHeader ~ form .submitButton {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
   margin-top: 4px;
 }
 
 .registerHeader ~ form .submitButton:hover:not(:disabled) {
   background: linear-gradient(135deg, #5568d3 0%, #653a8a 100%);
-  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
 }
 
 /* Google Button */
@@ -460,7 +460,7 @@
 .emailButton {
   width: 100%;
   padding: 14px 24px;
-  background: var(--accent-gradient, linear-gradient(135deg, #6366f1, #8b5cf6));
+  background: var(--accent-gradient, linear-gradient(135deg, #3b82f6, #3b82f6));
   border: none;
   border-radius: 12px;
   font-size: 15px;
@@ -472,7 +472,7 @@
 }
 
 .emailButton:hover {
-  background: var(--accent-gradient, linear-gradient(135deg, #4f46e5, #7c3aed));
+  background: var(--accent-gradient, linear-gradient(135deg, #4f46e5, #06b6d4));
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover, 0 8px 24px rgba(99, 102, 241, 0.4));
   filter: brightness(1.1);
@@ -511,7 +511,7 @@
 .backButton {
   background: none;
   border: none;
-  color: var(--accent-purple, #6366f1);
+  color: var(--accent-blue, #3b82f6);
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
@@ -566,8 +566,8 @@
 }
 
 .passwordToggle:hover {
-  color: var(--accent-purple, #667eea);
-  background: var(--bg-hover, rgba(102, 126, 234, 0.1));
+  color: var(--accent-blue, #3b82f6);
+  background: var(--bg-hover, rgba(59, 130, 246, 0.1));
 }
 
 .passwordToggle:active {
@@ -594,7 +594,7 @@
 .input:focus {
   outline: none;
   background: var(--bg-elevated, white);
-  border-color: var(--accent-purple, #6366f1);
+  border-color: var(--accent-blue, #3b82f6);
   box-shadow: var(--shadow-md, 0 0 0 4px rgba(99, 102, 241, 0.1));
   transform: translateY(-1px);
 }
@@ -627,7 +627,7 @@
 .submitButton {
   width: 100%;
   padding: 14px 24px;
-  background: var(--accent-gradient, linear-gradient(135deg, #6366f1, #8b5cf6));
+  background: var(--accent-gradient, linear-gradient(135deg, #3b82f6, #3b82f6));
   border: none;
   border-radius: 12px;
   color: white;
@@ -643,7 +643,7 @@
 .submitButton:hover:not(:disabled) {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover, 0 8px 28px rgba(99, 102, 241, 0.45));
-  background: var(--accent-gradient, linear-gradient(135deg, #4f46e5, #7c3aed));
+  background: var(--accent-gradient, linear-gradient(135deg, #4f46e5, #06b6d4));
   filter: brightness(1.1);
 }
 
@@ -668,7 +668,7 @@
 }
 
 .registerLink a {
-  color: var(--accent-purple, #6366f1);
+  color: var(--accent-blue, #3b82f6);
   font-weight: 700;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -717,12 +717,12 @@
 [data-theme="dark"] .modalContent {
   box-shadow: 
     0 30px 70px rgba(0, 0, 0, 0.8),
-    0 0 80px rgba(139, 92, 246, 0.3),
-    inset 0 0 0 1px rgba(147, 51, 234, 0.2);
+    0 0 80px rgba(59, 130, 246, 0.3),
+    inset 0 0 0 1px rgba(59, 130, 246, 0.2);
 }
 
 [data-theme="dark"] .modalLeft {
-  box-shadow: inset 0 0 100px rgba(139, 92, 246, 0.2);
+  box-shadow: inset 0 0 100px rgba(59, 130, 246, 0.2);
 }
 
 [data-theme="dark"] .modalLeft::before {
@@ -737,43 +737,43 @@
 
 [data-theme="dark"] .closeButton:hover {
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
 }
 
 [data-theme="dark"] .googleButton:hover:not(:disabled) {
-  border-color: rgba(139, 92, 246, 0.6);
-  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.4);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4);
 }
 
 [data-theme="dark"] .emailButton,
 [data-theme="dark"] .submitButton {
   box-shadow: 
-    0 4px 20px rgba(139, 92, 246, 0.5),
-    0 0 40px rgba(217, 70, 239, 0.3);
+    0 4px 20px rgba(59, 130, 246, 0.5),
+    0 0 40px rgba(6, 182, 212, 0.3);
 }
 
 [data-theme="dark"] .emailButton:hover,
 [data-theme="dark"] .submitButton:hover:not(:disabled) {
   box-shadow: 
-    0 8px 40px rgba(139, 92, 246, 0.7),
-    0 0 60px rgba(217, 70, 239, 0.5);
+    0 8px 40px rgba(59, 130, 246, 0.7),
+    0 0 60px rgba(6, 182, 212, 0.5);
 }
 
 [data-theme="dark"] .input:focus {
-  border-color: rgba(139, 92, 246, 0.8);
+  border-color: rgba(59, 130, 246, 0.8);
   box-shadow: 
-    0 0 0 4px rgba(139, 92, 246, 0.2),
-    0 0 20px rgba(139, 92, 246, 0.3);
+    0 0 0 4px rgba(59, 130, 246, 0.2),
+    0 0 20px rgba(59, 130, 246, 0.3);
 }
 
 [data-theme="dark"] .mascotBubble {
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.6),
-    0 0 40px rgba(139, 92, 246, 0.3);
+    0 0 40px rgba(59, 130, 246, 0.3);
 }
 
 [data-theme="dark"] .registerTitle {
-  filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5));
+  filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.5));
 }
 
 [data-theme="dark"] .errorMessage {

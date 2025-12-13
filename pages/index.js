@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import SEO, { generateBreadcrumbStructuredData, generateCourseStructuredData, generateFAQStructuredData } from '../components/SEO';
 import LessonCard from '../components/LessonCard';
 import { SkeletonCard } from '../components/SkeletonLoader';
+import ModeSelectionPopup from '../components/ModeSelectionPopup';
 import { useAuth } from '../context/AuthContext';
 import { useLessons, prefetchLessons } from '../lib/hooks/useLessons';
 import { navigateWithLocale } from '../lib/navigation';
@@ -12,6 +13,8 @@ const HomePage = () => {
   const { t } = useTranslation();
   const [currentPage, setCurrentPage] = useState(1);
   const [difficultyFilter, setDifficultyFilter] = useState('all');
+  const [selectedLesson, setSelectedLesson] = useState(null);
+  const [showModePopup, setShowModePopup] = useState(false);
   const itemsPerPage = 15;
   const router = useRouter();
   const { user } = useAuth();
@@ -69,8 +72,25 @@ const HomePage = () => {
       method: 'POST'
     }).catch(err => console.error('Error incrementing view count:', err));
     
-    // Navigate directly to lesson
-    navigateWithLocale(router, `/${lesson.id}`);
+    // Show mode selection popup
+    setSelectedLesson(lesson);
+    setShowModePopup(true);
+  };
+
+  const handleModeSelect = (lesson, mode) => {
+    // Close popup
+    setShowModePopup(false);
+    
+    // Navigate to dictation page with mode query param
+    const route = mode === 'dictation' 
+      ? `/dictation/${lesson.id}` 
+      : `/dictation/${lesson.id}?mode=shadowing`;
+    navigateWithLocale(router, route);
+  };
+
+  const handleClosePopup = () => {
+    setShowModePopup(false);
+    setSelectedLesson(null);
   };
 
   // Structured data for homepage
@@ -130,6 +150,14 @@ const HomePage = () => {
         ogImage="/og-image.jpg"
         structuredData={combinedStructuredData}
       />
+
+      {showModePopup && selectedLesson && (
+        <ModeSelectionPopup
+          lesson={selectedLesson}
+          onClose={handleClosePopup}
+          onSelectMode={handleModeSelect}
+        />
+      )}
 
       <div className="main-container">
 

@@ -1,49 +1,50 @@
-/* Global Styles - Parroto Theme System */
+/* Global Styles - Modern Theme System */
 
-/* Tạm thời ẩn light theme - ép dark mode mặc định */
+/* Modern Dark Theme - Discord/Tailwind Inspired */
 :root {
-  /* Colors - Dark Theme (Forced) */
-  /* Rich Purple Base - Deeper & More Luxurious */
-  --bg-primary: #0f0520;
-  --bg-secondary: #1a0b2e;
-  --bg-card: #251741;
-  --bg-hover: rgba(147, 51, 234, 0.18);
-  --bg-elevated: #2f1f47;
+  /* Colors - Modern Dark Theme */
+  /* Clean Slate/Navy Base - Professional & Modern */
+  --bg-primary: #0f172a;        /* slate-900 */
+  --bg-secondary: #1e293b;      /* slate-800 */
+  --bg-card: #1e293b;           /* slate-800 */
+  --bg-hover: rgba(59, 130, 246, 0.1);  /* blue hover */
+  --bg-elevated: #334155;       /* slate-700 */
 
-  /* Crystal clear text for perfect readability - Enhanced contrast */
-  --text-primary: #faf9fe;
-  --text-secondary: #ebe4f7; /* Increased from #ddd6f3 for better readability */
-  --text-muted: #c4b5e6; /* Increased from #b4a5d6 */
+  /* Crystal clear text - Maximum readability */
+  --text-primary: #f8fafc;      /* slate-50 */
+  --text-secondary: #e2e8f0;    /* slate-200 */
+  --text-muted: #94a3b8;        /* slate-400 */
 
-  /* Vibrant Purple Spectrum & Fresh Accents */
-  --accent-blue: #22d3ee;
-  --accent-purple: #9333ea;
-  --accent-red: #e11d48;
-  --accent-green: #22d3ee;
-  --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #d946ef 40%, #ec4899 70%, #e11d48 100%);
-  --accent-orange: #ff9800;
-  --accent-yellow: #ffd54f;
+  /* Modern Accent Colors - Clean & Professional */
+  --accent-blue: #3b82f6;       /* blue-500 */
+  --accent-cyan: #06b6d4;       /* cyan-500 */
+  --accent-purple: #3b82f6;     /* blue-500 (aliased for backward compatibility) */
+  --accent-red: #ef4444;        /* red-500 */
+  --accent-green: #10b981;      /* emerald-500 */
+  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  --accent-orange: #f59e0b;     /* amber-500 */
+  --accent-yellow: #eab308;     /* yellow-500 */
 
-  /* Borders with vibrant purple glow */
-  --border-color: rgba(147, 51, 234, 0.35);
-  --border-light: rgba(147, 51, 234, 0.18);
+  /* Subtle Borders - Modern minimalist */
+  --border-color: rgba(148, 163, 184, 0.2);  /* slate-400 with opacity */
+  --border-light: rgba(148, 163, 184, 0.1);
   --border-radius: 12px;
   --border-radius-small: 8px;
 
-  /* Simplified shadows - reduced complexity for better performance */
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 16px 40px rgba(0, 0, 0, 0.45);
-  --shadow-hover: 0 8px 24px rgba(139, 92, 246, 0.35);
+  /* Refined shadows - subtle depth */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.35);
+  --shadow-hover: 0 8px 20px rgba(59, 130, 246, 0.25);
 
-  /* Difficulty colors with enhanced vibrancy */
-  --difficulty-a1: #10b981;
-  --difficulty-a2: #34d399;
-  --difficulty-b1: #f59e0b;
-  --difficulty-b2: #fb923c;
-  --difficulty-c1: #f43f5e;
-  --difficulty-c2: #e11d48;
+  /* Difficulty colors - vibrant & clear */
+  --difficulty-a1: #10b981;     /* emerald-500 */
+  --difficulty-a2: #34d399;     /* emerald-400 */
+  --difficulty-b1: #f59e0b;     /* amber-500 */
+  --difficulty-b2: #fb923c;     /* orange-400 */
+  --difficulty-c1: #f43f5e;     /* rose-500 */
+  --difficulty-c2: #ef4444;     /* red-500 */
 
   /* Spacing */
   --spacing-xs: 4px;
@@ -64,123 +65,124 @@
 
 /* === LIGHT THEME HIDDEN - See original values in backup file === */
 
-/* Dark Theme - Vibrant Purple Paradise */
+/* Dark Theme - Modern & Clean */
 [data-theme="dark"] {
-  /* Rich Purple Base - Deeper & More Luxurious */
-  --bg-primary: #0f0520;
-  --bg-secondary: #1a0b2e;
-  --bg-card: #251741;
-  --bg-hover: rgba(147, 51, 234, 0.18);
-  --bg-elevated: #2f1f47;
+  /* Clean Slate/Navy Base - Professional & Modern */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --bg-hover: rgba(59, 130, 246, 0.1);
+  --bg-elevated: #334155;
 
-  /* Crystal clear text for perfect readability - Enhanced contrast */
-  --text-primary: #faf9fe;
-  --text-secondary: #ebe4f7; /* Increased from #ddd6f3 for better readability */
-  --text-muted: #c4b5e6; /* Increased from #b4a5d6 */
+  /* Crystal clear text - Maximum readability */
+  --text-primary: #f8fafc;
+  --text-secondary: #e2e8f0;
+  --text-muted: #94a3b8;
 
-  /* Vibrant Purple Spectrum & Fresh Accents */
-  --accent-blue: #22d3ee;
-  --accent-purple: #9333ea;
-  --accent-red: #e11d48;
-  --accent-green: #22d3ee;
-  --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #d946ef 40%, #ec4899 70%, #e11d48 100%);
+  /* Modern Accent Colors - Clean & Professional */
+  --accent-blue: #3b82f6;
+  --accent-cyan: #06b6d4;
+  -accent-purple: #3b82f6;
+  --accent-red: #ef4444;
+  --accent-green: #10b981;
+  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
 
-  /* Borders with vibrant purple glow */
-  --border-color: rgba(147, 51, 234, 0.35);
-  --border-light: rgba(147, 51, 234, 0.18);
+  /* Subtle Borders - Modern minimalist */
+  --border-color: rgba(148, 163, 184, 0.2);
+  --border-light: rgba(148, 163, 184, 0.1);
 
-  /* Simplified shadows - reduced complexity for better performance */
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 16px 40px rgba(0, 0, 0, 0.45);
-  --shadow-hover: 0 8px 24px rgba(139, 92, 246, 0.35);
+  /* Refined shadows - subtle depth */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.35);
+  --shadow-hover: 0 8px 20px rgba(59, 130, 246, 0.25);
 
-  /* Difficulty colors with enhanced vibrancy */
+  /* Difficulty colors - vibrant & clear */
   --difficulty-a1: #10b981;
   --difficulty-a2: #34d399;
   --difficulty-b1: #f59e0b;
   --difficulty-b2: #fb923c;
   --difficulty-c1: #f43f5e;
-  --difficulty-c2: #e11d48;
+  --difficulty-c2: #ef4444;
 }
 
-/* Dark theme scrollbar - Vibrant Purple */
+/* Dark theme scrollbar - Modern Blue */
 [data-theme="dark"]::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.4);
+  background: rgba(59, 130, 246, 0.3);
 }
 
 [data-theme="dark"]::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.6);
+  background: rgba(59, 130, 246, 0.5);
 }
 
 /* Dark theme enhanced contrast for cards and components */
 [data-theme="dark"] .topic-tag {
-  background: rgba(139, 92, 246, 0.12);
-  border-color: rgba(147, 51, 234, 0.4);
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
 }
 
 [data-theme="dark"] .topic-tag:hover {
-  background: rgba(139, 92, 246, 0.25);
-  border-color: rgba(147, 51, 234, 0.7);
-  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
 }
 
 [data-theme="dark"] .topic-tag.active {
   background: var(--accent-gradient);
   border-color: transparent;
-  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.6), 0 2px 10px rgba(217, 70, 239, 0.4);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4), 0 2px 10px rgba(6, 182, 212, 0.3);
 }
 
 [data-theme="dark"] .pagination-btn {
-  background: rgba(139, 92, 246, 0.12);
-  border-color: rgba(147, 51, 234, 0.4);
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
 }
 
 [data-theme="dark"] .pagination-btn:hover:not(:disabled) {
-  background: rgba(139, 92, 246, 0.25);
-  border-color: rgba(147, 51, 234, 0.7);
-  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
 }
 
-/* Dark theme difficulty toggle - Ultra Vibrant */
+/* Dark theme difficulty toggle - Modern & Clean */
 [data-theme="dark"] .difficulty-toggle__option {
-  background: linear-gradient(135deg, rgba(34, 211, 238, 0.18) 0%, rgba(34, 211, 238, 0.08) 100%);
-  border-color: rgba(34, 211, 238, 0.5);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.05) 100%);
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .difficulty-toggle__option:hover {
-  box-shadow: 0 4px 20px rgba(34, 211, 238, 0.4);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
 }
 
 [data-theme="dark"] .difficulty-toggle__option:nth-child(2) {
-  background: linear-gradient(135deg, rgba(225, 29, 72, 0.18) 0%, rgba(225, 29, 72, 0.08) 100%);
-  border-color: rgba(225, 29, 72, 0.5);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%);
+  border-color: rgba(245, 158, 11, 0.4);
 }
 
 [data-theme="dark"] .difficulty-toggle__option:nth-child(2):hover {
-  box-shadow: 0 4px 20px rgba(225, 29, 72, 0.4);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
 }
 
 [data-theme="dark"] .difficulty-toggle__option.active {
-  background: linear-gradient(135deg, rgba(34, 211, 238, 0.35) 0%, rgba(34, 211, 238, 0.2) 100%);
-  border-color: rgba(34, 211, 238, 0.9);
-  box-shadow: 0 4px 24px rgba(34, 211, 238, 0.6);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.25) 0%, rgba(16, 185, 129, 0.15) 100%);
+  border-color: rgba(16, 185, 129, 0.8);
+  box-shadow: 0 4px 24px rgba(16, 185, 129, 0.4);
 }
 
 [data-theme="dark"] .difficulty-toggle__option.active:nth-child(2) {
-  background: linear-gradient(135deg, rgba(225, 29, 72, 0.35) 0%, rgba(225, 29, 72, 0.2) 100%);
-  border-color: rgba(225, 29, 72, 0.9);
-  box-shadow: 0 4px 24px rgba(225, 29, 72, 0.6);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25) 0%, rgba(245, 158, 11, 0.15) 100%);
+  border-color: rgba(245, 158, 11, 0.8);
+  box-shadow: 0 4px 24px rgba(245, 158, 11, 0.4);
 }
 
 [data-theme="dark"] .difficulty-toggle__title {
-  color: #22d3ee;
+  color: #10b981;
 }
 
 [data-theme="dark"] .difficulty-toggle__option:nth-child(2) .difficulty-toggle__title {
-  color: #f472b6;
+  color: #fb923c;
 }
 
 * {
@@ -227,8 +229,8 @@ body {
 }
 
 .difficulty-toggle__option {
-  background: linear-gradient(135deg, rgba(107, 166, 85, 0.1) 0%, rgba(107, 166, 85, 0.03) 100%);
-  border: 2px solid rgba(107, 166, 85, 0.35);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(16, 185, 129, 0.04) 100%);
+  border: 2px solid rgba(16, 185, 129, 0.3);
   border-radius: 10px;
   padding: 14px 18px;
   cursor: pointer;
@@ -247,18 +249,18 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(107, 166, 85, 0.2) 0%, transparent 100%);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, transparent 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .difficulty-toggle__option:nth-child(2) {
-  background: linear-gradient(135deg, rgba(255, 152, 0, 0.1) 0%, rgba(255, 152, 0, 0.03) 100%);
-  border-color: rgba(255, 152, 0, 0.35);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(245, 158, 11, 0.04) 100%);
+  border-color: rgba(245, 158, 11, 0.3);
 }
 
 .difficulty-toggle__option:nth-child(2)::before {
-  background: linear-gradient(135deg, rgba(255, 152, 0, 0.2) 0%, transparent 100%);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, transparent 100%);
 }
 
 .difficulty-toggle__option:hover::before {
@@ -267,33 +269,33 @@ body {
 
 .difficulty-toggle__option:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(107, 166, 85, 0.25);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
 }
 
 .difficulty-toggle__option.active {
-  background: linear-gradient(135deg, rgba(107, 166, 85, 0.25) 0%, rgba(139, 195, 74, 0.15) 100%);
-  border-color: rgba(107, 166, 85, 0.85);
-  box-shadow: 0 4px 16px rgba(107, 166, 85, 0.4);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.25) 0%, rgba(16, 185, 129, 0.15) 100%);
+  border-color: rgba(16, 185, 129, 0.8);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
 }
 
 .difficulty-toggle__option.active:nth-child(2) {
-  background: linear-gradient(135deg, rgba(255, 152, 0, 0.25) 0%, rgba(255, 213, 79, 0.15) 100%);
-  border-color: rgba(255, 152, 0, 0.85);
-  box-shadow: 0 4px 16px rgba(255, 152, 0, 0.4);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25) 0%, rgba(245, 158, 11, 0.15) 100%);
+  border-color: rgba(245, 158, 11, 0.8);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
 }
 
 .difficulty-toggle__title {
   display: block;
   font-size: 15px;
   font-weight: 700;
-  color: #4a7c3c;
+  color: #10b981;
   margin-bottom: 6px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .difficulty-toggle__option:nth-child(2) .difficulty-toggle__title {
-  color: #d67600;
+  color: #f59e0b;
 }
 
 .difficulty-toggle__description {
@@ -339,8 +341,8 @@ body {
 }
 
 .topic-tag:hover {
-  background: rgba(107, 166, 85, 0.12);
-  border-color: var(--accent-green);
+  background: rgba(59, 130, 246, 0.12);
+  border-color: var(--accent-blue);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -394,8 +396,8 @@ body {
 }
 
 .pagination-btn:hover:not(:disabled) {
-  background: rgba(107, 166, 85, 0.12);
-  border-color: var(--accent-green);
+  background: rgba(59, 130, 246, 0.12);
+  border-color: var(--accent-blue);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -421,7 +423,7 @@ button {
 }
 
 button:focus-visible {
-  outline: 2px solid var(--accent-green);
+  outline: 2px solid var(--accent-blue);
   outline-offset: 2px;
 }
 

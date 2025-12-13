@@ -25,11 +25,18 @@ const ModeSelectionPopup = ({ lesson, onClose, onSelectMode }) => {
   const modes = [
     {
       id: 'dictation',
-      name: t('modeSelectionPopup.dictation.name'),
+      name: 'Diktat',
       icon: '✍️',
-      description: t('modeSelectionPopup.dictation.description'),
+      description: 'Luyện viết - điền từ vào chỗ trống',
       studyTime: lesson.dictationStudyTime || 0
     },
+    {
+      id: 'shadow',
+      name: 'Shadowing',
+      icon: '🗣️',
+      description: 'Luyện nói - đọc theo video',
+      studyTime: lesson.shadowStudyTime || 0
+    }
   ];
 
   const handleModeClick = (mode) => {
@@ -49,7 +56,7 @@ const ModeSelectionPopup = ({ lesson, onClose, onSelectMode }) => {
           ✕
         </button>
 
-        <h2 className={styles.popupTitle}>{t('modeSelection.title')}</h2>
+        <h2 className={styles.popupTitle}>Chọn chế độ học</h2>
 
         <div className={styles.lessonInfo}>
           <div className={styles.lessonTitle}>{lesson.title}</div>

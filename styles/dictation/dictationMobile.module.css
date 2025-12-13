@@ -71,17 +71,17 @@
 .mobileControlBtnPlay {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.85) 0%, rgba(51, 65, 85, 0.85) 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1.5px solid rgba(255, 255, 255, 0.2);
   color: white;
-  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
 }
 
 .mobileControlBtnPlay:active:not(:disabled) {
   transform: scale(0.92);
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
 .mobileControlBtnPlay svg {
@@ -193,7 +193,7 @@
 
 .dictationSlide:hover {
   border-color: var(--accent-blue);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.2);
 }
 
 .dictationSlide:active {
@@ -202,8 +202,8 @@
 
 .dictationSlideActive {
   border-color: var(--accent-blue);
-  background: linear-gradient(145deg, rgba(102, 126, 234, 0.05) 0%, var(--bg-card) 100%);
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.25);
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.05) 0%, var(--bg-card) 100%);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.25);
   transform: scale(1.02);
   pointer-events: auto;
   animation: slideActivate 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);

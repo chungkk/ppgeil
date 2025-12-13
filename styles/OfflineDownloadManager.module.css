@@ -1,0 +1,340 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--text-primary, #1a1a1a);
+}
+
+.subtitle {
+  color: var(--text-secondary, #666);
+  font-size: 14px;
+}
+
+/* Storage Info */
+.storageInfo {
+  background: var(--bg-secondary, #f5f5f5);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.storageBar {
+  height: 8px;
+  background: var(--bg-tertiary, #e0e0e0);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.storageBarFill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
+  transition: width 0.3s ease;
+}
+
+.storageText {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary, #666);
+}
+
+/* Download Progress */
+.progressContainer {
+  background: #E3F2FD;
+  border: 1px solid #2196F3;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.progressTitle {
+  font-weight: 600;
+  color: #1976D2;
+  font-size: 14px;
+}
+
+.progressPercent {
+  font-weight: bold;
+  color: #1976D2;
+}
+
+.progressSubInfo {
+  font-size: 12px;
+  color: #1976D2;
+  margin-bottom: 8px;
+}
+
+.progressBar {
+  height: 6px;
+  background: #BBDEFB;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  background: #2196F3;
+  transition: width 0.3s ease;
+}
+
+/* Section */
+.section {
+  margin-bottom: 32px;
+}
+
+.section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary, #1a1a1a);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sectionHeader h3 {
+  margin: 0;
+}
+
+/* Buttons */
+.clearBtn,
+.preCacheBtn,
+.downloadBtn,
+.removeBtn,
+.cachedBtn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.clearBtn {
+  background: #f44336;
+  color: white;
+}
+
+.clearBtn:hover:not(:disabled) {
+  background: #d32f2f;
+}
+
+.preCacheBtn {
+  width: 100%;
+  background: #2196F3;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.preCacheBtn:hover:not(:disabled) {
+  background: #1976D2;
+}
+
+.downloadBtn {
+  background: #4CAF50;
+  color: white;
+}
+
+.downloadBtn:hover:not(:disabled) {
+  background: #388E3C;
+}
+
+.removeBtn {
+  background: transparent;
+  padding: 4px 8px;
+  font-size: 18px;
+}
+
+.removeBtn:hover:not(:disabled) {
+  background: #ffebee;
+}
+
+.cachedBtn {
+  background: #E0E0E0;
+  color: #666;
+  cursor: default;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Lesson List */
+.lessonList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lessonItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-secondary, #f9f9f9);
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color, #e0e0e0);
+  transition: all 0.2s;
+}
+
+.lessonItem:hover {
+  border-color: #2196F3;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.1);
+}
+
+.lessonInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.lessonIcon {
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tertiary, #fff);
+  border-radius: 6px;
+}
+
+.lessonDetails {
+  flex: 1;
+}
+
+.lessonTitle {
+  font-weight: 500;
+  color: var(--text-primary, #1a1a1a);
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.lessonMeta {
+  font-size: 12px;
+  color: var(--text-secondary, #666);
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary, #666);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modalContent h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+
+.modalContent p {
+  color: var(--text-secondary, #666);
+  margin-bottom: 20px;
+}
+
+.modalActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.modalBtnCancel,
+.modalBtnConfirm {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modalBtnCancel {
+  background: #E0E0E0;
+  color: #333;
+}
+
+.modalBtnCancel:hover {
+  background: #BDBDBD;
+}
+
+.modalBtnConfirm {
+  background: #f44336;
+  color: white;
+}
+
+.modalBtnConfirm:hover {
+  background: #d32f2f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .lessonItem {
+    padding: 10px 12px;
+  }
+
+  .lessonTitle {
+    font-size: 13px;
+  }
+
+  .downloadBtn,
+  .cachedBtn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

@@ -108,7 +108,7 @@
   color: var(--accent-blue);
   font-weight: 700;
   padding: 4px 12px;
-  background: rgba(102, 126, 234, 0.15);
+  background: rgba(59, 130, 246, 0.15);
   border-radius: 12px;
 }
 
@@ -453,9 +453,9 @@
 [data-theme="dark"] .statItem.weekly .statItemIcon { background: rgba(236, 72, 153, 0.2); }
 
 .statItem.time .statItemValue { color: #3b82f6; }
-.statItem.level .statItemValue { color: #a855f7; }
+.statItem.level .statItemValue { color: #3b82f6; }
 .statItem.lessons .statItemValue { color: #22c55e; }
-.statItem.weekly .statItemValue { color: #ec4899; }
+.statItem.weekly .statItemValue { color: #06b6d4; }
 
 /* ============================================
    ACCOUNT INFO SECTION
@@ -632,7 +632,7 @@
   justify-content: center;
   gap: 10px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
   position: relative;
   overflow: hidden;
 }
@@ -657,7 +657,7 @@
 
 .unlockProBtn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(102, 126, 234, 0.7);
+  box-shadow: 0 8px 28px rgba(59, 130, 246, 0.7);
 }
 
 .unlockProBtn:active {
@@ -751,7 +751,7 @@
 .activityTab.active {
   background: var(--accent-gradient);
   color: white;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
 /* Total Lessons */

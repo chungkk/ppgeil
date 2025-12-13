@@ -4,7 +4,7 @@
         "start": 0,
         "end": 2.2,
         "translationEn": "Emergency call center, what happened?",
-        "translationVi": "Trung tâm cấp cứu, đã xảy ra chuyện gì?"
+        "translationVi": "Trung tâm cấp cứu, chuyện gì đã xảy ra?"
     },
     {
         "text": "Hallo, bitte helfen Sie.",
@@ -38,7 +38,7 @@
         "text": "Nein, sie liegt auf dem Boden und bewegt sich nicht.",
         "start": 12.46,
         "end": 15.72,
-        "translationEn": "No, it is lying on the ground and not moving.",
+        "translationEn": "No, she is lying on the ground and is not moving.",
         "translationVi": "Không, nó nằm trên sàn và không cử động."
     },
     {
@@ -81,7 +81,7 @@
         "start": 27.94,
         "end": 29.56,
         "translationEn": "Does it make any noises?",
-        "translationVi": "Cô ấy có phát ra âm thanh nào không?"
+        "translationVi": "Cô ấy có phát ra âm thanh gì không?"
     },
     {
         "text": "Nein, sie ist ganz still.",
@@ -94,7 +94,7 @@
         "text": "Wissen Sie, ob ihre Mutter eine Krankheit hat",
         "start": 33.52,
         "end": 35.56,
-        "translationEn": "Do you know if her mother has an illness?",
+        "translationEn": "Do you know if your mother has an illness?",
         "translationVi": "Bạn có biết mẹ của cô ấy có bệnh gì không?"
     },
     {
@@ -109,7 +109,7 @@
         "start": 37.6,
         "end": 41.62,
         "translationEn": "Um, yes, she has high blood pressure and takes medication.",
-        "translationVi": "Ừm, vâng, cô ấy bị huyết áp cao và đang uống thuốc."
+        "translationVi": "À, vâng, cô ấy bị huyết áp cao và đang uống thuốc."
     },
     {
         "text": "Wissen Sie, welche Tabletten das sind?",
@@ -144,7 +144,7 @@
         "start": 55.34,
         "end": 58.2,
         "translationEn": "and then she suddenly collapsed.",
-        "translationVi": "và rồi cô ấy đột nhiên ngã quỵ."
+        "translationVi": "và sau đó cô ấy đột nhiên ngã quỵ."
     },
     {
         "text": "In Ordnung, hören Sie mir genau zu.",
@@ -200,14 +200,14 @@
         "start": 74.92,
         "end": 76.86,
         "translationEn": "if your mother fell on something hard?",
-        "translationVi": "Có phải mẹ bạn đã bị ngã vào cái gì đó cứng không?"
+        "translationVi": "Có phải mẹ bạn đã ngã vào cái gì cứng không?"
     },
     {
         "text": "Nein, sie ist einfach langsam zusammengesackt.",
         "start": 77.82,
         "end": 82.18,
         "translationEn": "No, she just slowly collapsed.",
-        "translationVi": "Không, cô ấy chỉ đơn giản là từ từ sụp đổ."
+        "translationVi": "Không, cô ấy chỉ đơn giản là đã từ từ sụp đổ."
     },
     {
         "text": "Sehr gut, jetzt hören Sie mir genau zu.",
@@ -248,7 +248,7 @@
         "text": "Mama.",
         "start": 93.22,
         "end": 93.24,
-        "translationEn": "Mom.",
+        "translationEn": "Mama.",
         "translationVi": "Mẹ."
     },
     {
@@ -270,14 +270,14 @@
         "start": 98.48,
         "end": 99.84,
         "translationEn": "and pay attention to your breathing.",
-        "translationVi": "và hãy chú ý đến hơi thở của bạn."
+        "translationVi": "và chú ý đến hơi thở của bạn."
     },
     {
         "text": "Falls sich etwas verändert, wenn sie nicht mehr atmet",
         "start": 100.74,
         "end": 102.96,
-        "translationEn": "If something changes when she no longer breathes",
-        "translationVi": "Nếu có điều gì thay đổi khi cô ấy không còn thở nữa."
+        "translationEn": "If something changes when she stops breathing",
+        "translationVi": "Nếu có điều gì thay đổi khi cô ấy không còn thở nữa"
     },
     {
         "text": "oder sich anders verhält, sagen Sie es mir sofort.",
@@ -326,7 +326,7 @@
         "start": 118.18,
         "end": 121.16,
         "translationEn": "Leave them open so that the paramedics can come in directly.",
-        "translationVi": "Hãy để chúng mở để các nhân viên y tế có thể vào trực tiếp."
+        "translationVi": "Hãy để chúng mở để các nhân viên y tế có thể vào ngay."
     },
     {
         "text": "Okay, ich mache das.",
@@ -340,14 +340,14 @@
         "start": 124.66,
         "end": 125.96,
         "translationEn": "When is the ambulance coming?",
-        "translationVi": "Khi nào xe cứu thương đến?"
+        "translationVi": "Xe cứu thương sẽ đến khi nào?"
     },
     {
         "text": "Die Sanitäter sollten in weniger als fünf Minuten bei Ihnen",
         "start": 127.28,
         "end": 130.18,
         "translationEn": "The paramedics should be with you in less than five minutes.",
-        "translationVi": "Các nhân viên y tế nên có mặt trong vòng chưa đầy năm phút."
+        "translationVi": "Nhân viên y tế sẽ đến với bạn trong vòng chưa đầy năm phút."
     },
     {
         "text": "sein.",

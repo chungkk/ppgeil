@@ -50,7 +50,7 @@
 .formInput:focus {
   background: white;
   border-color: var(--accent-red);
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
   transform: translateY(-1px);
 }
 
@@ -85,7 +85,7 @@
 
 .passwordToggle:hover {
   color: var(--accent-green);
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(59, 130, 246, 0.1);
 }
 
 .passwordToggle:active {
@@ -138,7 +138,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
   letter-spacing: 0.3px;
   text-transform: uppercase;
 }
@@ -156,7 +156,7 @@
 
 .submitButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 6px 25px rgba(59, 130, 246, 0.5);
 }
 
 .submitButton:hover::before {
@@ -165,7 +165,7 @@
 
 .submitButton:active {
   transform: translateY(0);
-  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
 }
 
 .submitButton:disabled {
@@ -243,7 +243,7 @@
 
 .levelOption:hover {
   border-color: var(--accent-red);
-  background: rgba(102, 126, 234, 0.05);
+  background: rgba(59, 130, 246, 0.05);
   transform: translateY(-2px);
 }
 
@@ -251,7 +251,7 @@
   border-color: var(--accent-red);
   background: var(--accent-gradient);
   color: white;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 /* Checkbox Styling */

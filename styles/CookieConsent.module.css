@@ -36,7 +36,7 @@
 
 .learnMore {
   font-size: 0.85rem;
-  color: #667eea;
+  color: #3b82f6;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -52,7 +52,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  background: #667eea;
+  background: #3b82f6;
   color: white;
   transition: background 0.2s;
   white-space: nowrap;

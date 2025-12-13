@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--spacing-xl);
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   position: relative;
   overflow: hidden;
 }
@@ -82,7 +82,7 @@
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: var(--spacing-md);
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -96,8 +96,8 @@
 }
 
 .tips {
-  background: rgba(102, 126, 234, 0.1);
-  border-left: 4px solid #667eea;
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid #3b82f6;
   border-radius: 8px;
   padding: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
@@ -107,7 +107,7 @@
 .tips h3 {
   font-size: 16px;
   font-weight: 600;
-  color: #667eea;
+  color: #3b82f6;
   margin-bottom: var(--spacing-md);
 }
 
@@ -154,14 +154,14 @@
 }
 
 .primaryButton {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   color: white;
-  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
 }
 
 .primaryButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 6px 24px rgba(59, 130, 246, 0.5);
 }
 
 .primaryButton:active {
@@ -176,8 +176,8 @@
 
 .secondaryButton:hover {
   background: var(--bg-hover);
-  border-color: #667eea;
-  color: #667eea;
+  border-color: #3b82f6;
+  color: #3b82f6;
 }
 
 /* Mobile Responsive */
