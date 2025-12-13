@@ -967,6 +967,29 @@ const DictationPageContent = () => {
      }
    }, [transcriptData, currentSentenceIndex, isYouTube]);
 
+  const handleReplayFromStart = useCallback(() => {
+    if (transcriptData.length === 0 || currentSentenceIndex >= transcriptData.length) return;
+    const currentSentence = transcriptData[currentSentenceIndex];
+
+    if (isYouTube) {
+      const player = youtubePlayerRef.current;
+      if (!player?.seekTo) return;
+      player.seekTo(currentSentence.start);
+      player.playVideo?.();
+      setIsPlaying(true);
+      setSegmentPlayEndTime(currentSentence.end);
+      setSegmentEndTimeLocked(true);
+    } else {
+      const audio = audioRef.current;
+      if (!audio) return;
+      audio.currentTime = currentSentence.start;
+      audio.play();
+      setIsPlaying(true);
+      setSegmentPlayEndTime(currentSentence.end);
+      setSegmentEndTimeLocked(true);
+    }
+  }, [transcriptData, currentSentenceIndex, isYouTube]);
+
   // Handle playback speed change
   const handleSpeedChange = useCallback((speed) => {
     setPlaybackSpeed(speed);

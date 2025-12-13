@@ -62,6 +62,7 @@ const TranscriptPanel = ({
   const renderKaraokeText = useCallback((text, segment, originalIndex) => {
     const isActiveSentence = originalIndex === currentSentenceIndex;
     const words = text.split(/\s+/);
+    const wordComparison = voiceRecordingResult?.wordComparison || {};
     
     return (
       <span className={styles.karaokeText}>
@@ -69,6 +70,17 @@ const TranscriptPanel = ({
           const isSpoken = isActiveSentence && isPlaying && idx < activeWordIndex;
           const isCurrent = isActiveSentence && isPlaying && idx === activeWordIndex;
           const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
+          
+          // Voice recording result highlighting
+          const comparisonStatus = isActiveSentence && voiceRecordingResult ? wordComparison[idx] : null;
+          let wordColor = '';
+          if (comparisonStatus === 'correct') {
+            wordColor = '#28a745'; // Green
+          } else if (comparisonStatus === 'incorrect') {
+            wordColor = '#dc3545'; // Red
+          } else if (comparisonStatus === 'missing') {
+            wordColor = '#ffc107'; // Yellow/Orange
+          }
           
           return (
             <span
@@ -80,7 +92,11 @@ const TranscriptPanel = ({
                   onWordClickForPopup(pureWord, e);
                 }
               }}
-              style={{ cursor: pureWord ? 'pointer' : 'default' }}
+              style={{ 
+                cursor: pureWord ? 'pointer' : 'default',
+                color: wordColor || undefined,
+                fontWeight: wordColor ? 'bold' : undefined
+              }}
             >
               {word}{idx < words.length - 1 ? ' ' : ''}
             </span>
@@ -88,7 +104,7 @@ const TranscriptPanel = ({
         })}
       </span>
     );
-  }, [currentSentenceIndex, isPlaying, activeWordIndex, onWordClickForPopup]);
+  }, [currentSentenceIndex, isPlaying, activeWordIndex, onWordClickForPopup, voiceRecordingResult]);
 
   // Render masked text with karaoke highlighting (for dictation mode)
   const renderMaskedKaraokeText = useCallback((text, originalIndex, effectiveHidePercentage, sentenceWordsCompleted, sentenceRevealedWords) => {
@@ -100,6 +116,7 @@ const TranscriptPanel = ({
     // Split both original and masked text to get word-by-word mapping
     const maskedWords = maskedText.split(/\s+/);
     const originalWords = text.split(/\s+/);
+    const wordComparison = voiceRecordingResult?.wordComparison || {};
     
     return (
       <span className={styles.karaokeText}>
@@ -109,6 +126,17 @@ const TranscriptPanel = ({
           const originalWord = originalWords[idx] || '';
           const pureWord = originalWord.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
           const isRevealed = !word.includes('_'); // Check if word is revealed (not masked)
+          
+          // Voice recording result highlighting
+          const comparisonStatus = isActiveSentence && voiceRecordingResult ? wordComparison[idx] : null;
+          let wordColor = '';
+          if (comparisonStatus === 'correct') {
+            wordColor = '#28a745'; // Green
+          } else if (comparisonStatus === 'incorrect') {
+            wordColor = '#dc3545'; // Red
+          } else if (comparisonStatus === 'missing') {
+            wordColor = '#ffc107'; // Yellow/Orange
+          }
           
           return (
             <span
@@ -120,7 +148,11 @@ const TranscriptPanel = ({
                   onWordClickForPopup(pureWord, e);
                 }
               }}
-              style={{ cursor: pureWord && isRevealed ? 'pointer' : 'default' }}
+              style={{ 
+                cursor: pureWord && isRevealed ? 'pointer' : 'default',
+                color: wordColor || undefined,
+                fontWeight: wordColor ? 'bold' : undefined
+              }}
             >
               {word}{idx < maskedWords.length - 1 ? ' ' : ''}
             </span>
@@ -128,7 +160,7 @@ const TranscriptPanel = ({
         })}
       </span>
     );
-  }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage, onWordClickForPopup]);
+  }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage, onWordClickForPopup, voiceRecordingResult]);
 
   // Auto-scroll to current sentence
   useEffect(() => {

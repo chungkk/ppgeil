@@ -135,13 +135,14 @@ const DictationVideoSection = ({
         // Only show comparison if transcription is valid (not an error message and has reasonable length)
         if (!isErrorMessage && transcribedText.length > 2) {
           const originalText = currentSentence?.text || '';
-          const similarity = calculateSimilarity(transcribedText, originalText);
+          const { similarity, wordComparison } = calculateSimilarity(transcribedText, originalText);
           
           const result = {
             transcribed: transcribedText,
             original: originalText,
             similarity: similarity,
-            isCorrect: similarity >= 80
+            isCorrect: similarity >= 80,
+            wordComparison: wordComparison
           };
           
           setComparisonResult(result);
@@ -154,7 +155,8 @@ const DictationVideoSection = ({
           if (onVoiceRecordingComplete) {
             onVoiceRecordingComplete({
               transcribed: transcribedText,
-              similarity: similarity
+              similarity: similarity,
+              wordComparison: wordComparison
             });
           }
         } else {
@@ -178,15 +180,31 @@ const DictationVideoSection = ({
     }
   };
 
-  // Calculate text similarity
-  const calculateSimilarity = (text1, text2) => {
+  // Calculate text similarity and word-by-word comparison
+  const calculateSimilarity = (transcribedText, originalText) => {
     const normalize = (str) => str.toLowerCase().trim().replace(/[.,!?;:"""''„]/g, '').replace(/\s+/g, ' ');
-    const normalized1 = normalize(text1);
-    const normalized2 = normalize(text2);
+    const normalized1 = normalize(transcribedText);
+    const normalized2 = normalize(originalText);
     
-    const words1 = normalized1.split(' ');
-    const words2 = normalized2.split(' ');
+    const words1 = normalized1.split(' ').filter(w => w.length > 0);
+    const words2 = normalized2.split(' ').filter(w => w.length > 0);
     
+    // Word-by-word comparison
+    const wordComparison = {};
+    const maxLength = Math.max(words1.length, words2.length);
+    
+    for (let i = 0; i < maxLength; i++) {
+      const userWord = words1[i] || '';
+      const correctWord = words2[i] || '';
+      
+      if (userWord && correctWord) {
+        wordComparison[i] = userWord === correctWord ? 'correct' : 'incorrect';
+      } else if (correctWord && !userWord) {
+        wordComparison[i] = 'missing';
+      }
+    }
+    
+    // Calculate overall similarity
     let matches = 0;
     words1.forEach(word => {
       if (words2.includes(word)) {
@@ -194,8 +212,9 @@ const DictationVideoSection = ({
       }
     });
     
-    const maxLength = Math.max(words1.length, words2.length);
-    return maxLength > 0 ? Math.round((matches / maxLength) * 100) : 0;
+    const similarity = maxLength > 0 ? Math.round((matches / maxLength) * 100) : 0;
+    
+    return { similarity, wordComparison };
   };
 
   // Play recorded audio
