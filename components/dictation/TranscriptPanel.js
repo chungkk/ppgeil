@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useCallback, useMemo, useState } from 'react';
-import ProgressIndicator from '../ProgressIndicator';
 import { useKaraokeHighlight } from '../../lib/hooks/useKaraokeHighlight';
 import { speakText } from '../../lib/textToSpeech';
 
@@ -205,15 +204,6 @@ const TranscriptPanel = ({
             </label>
           )}
         </div>
-        <ProgressIndicator
-          completedSentences={completedSentences}
-          totalSentences={transcriptData.length}
-          completedWords={completedWords}
-          totalWords={calculateTotalWords()}
-          difficultyLevel={difficultyLevel}
-          hidePercentage={hidePercentage}
-          studyTime={studyTime}
-        />
       </div>
       
       <div className={styles.transcriptSection} ref={transcriptSectionRef}>
