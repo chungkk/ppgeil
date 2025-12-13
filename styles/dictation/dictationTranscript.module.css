@@ -5,24 +5,24 @@
   display: flex;
   flex-direction: column;
   height: 550px;
-  min-width: 0; /* Allow flex shrinking */
+  min-width: 0;
   gap: 0;
-  background: linear-gradient(145deg, var(--bg-secondary) 0%, rgba(59, 130, 246, 0.02) 100%);
-  border-radius: var(--border-radius);
+  background: var(--bg-secondary);
+  border-radius: 12px;
   border: 1px solid var(--border-color);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  overflow: hidden; /* Contain content within fixed height */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
 .transcriptHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 16px;
-  height: 44px;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(51, 65, 85, 0.06) 100%);
-  border-radius: 16px 16px 0 0;
+  padding: 14px 18px;
+  min-height: 56px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  backdrop-filter: blur(8px);
 }
 
 .transcriptHeaderLeft {
@@ -77,40 +77,46 @@
 
 .transcriptTabs {
   display: flex;
-  gap: var(--spacing-xs);
+  gap: 4px;
+  background: var(--bg-secondary);
+  padding: 3px;
+  border-radius: 8px;
 }
 
 .transcriptTab {
-  padding: 6px 14px;
+  padding: 7px 12px;
   background: transparent;
-  border: 1px solid transparent;
+  border: none;
   color: var(--text-secondary);
   cursor: pointer;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 6px;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
+  white-space: nowrap;
 }
 
 .transcriptTab:hover {
-  background: var(--bg-hover);
+  background: rgba(0, 0, 0, 0.03);
+  color: var(--text-primary);
 }
 
 .transcriptTabActive {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(51, 65, 85, 0.15) 100%);
-  border-color: rgba(59, 130, 246, 0.4);
+  background: var(--bg-primary);
   color: var(--text-primary);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .transcriptTabCount {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 18px;
-  height: 18px;
-  padding: 0 5px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
   margin-left: 6px;
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(100, 116, 139, 0.1);
   border-radius: 10px;
   font-size: 11px;
   font-weight: 600;
@@ -118,8 +124,8 @@
 }
 
 .transcriptTabActive .transcriptTabCount {
-  background: rgba(59, 130, 246, 0.4);
-  color: var(--text-primary);
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent-blue);
 }
 
 /* Progress Bar */
@@ -183,42 +189,40 @@
 /* Transcript Section */
 .transcriptSection {
   flex: 1;
-  min-height: 0; /* Required for flex child to enable overflow scroll */
+  min-height: 0;
   overflow-y: auto;
-  padding: var(--spacing-sm);
-  background: transparent;
+  padding: 12px;
+  background: var(--bg-secondary);
   scroll-behavior: smooth;
-  scroll-padding-top: 16px;
-  scroll-padding-bottom: 16px;
 }
 
 .transcriptList {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: 8px;
 }
 
 /* Transcript Item */
 .transcriptItem {
   background: var(--bg-primary);
-  border: 2px solid transparent;
-  border-radius: var(--border-radius-small);
-  padding: var(--spacing-md);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 14px 16px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
   position: relative;
 }
 
 .transcriptItem:hover {
-  border-color: var(--border-color);
+  border-color: rgba(100, 116, 139, 0.2);
   background: var(--bg-hover);
+  transform: translateX(2px);
 }
 
 .transcriptItem.active {
   border-color: var(--accent-blue);
-  background: rgba(59, 130, 246, 0.1);
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-  transform: scale(1.01);
+  background: rgba(59, 130, 246, 0.06);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
 }
 
 
@@ -246,33 +250,35 @@
 }
 
 .transcriptItemText {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-primary);
-  line-height: 1.6;
-  margin-bottom: var(--spacing-xs);
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .transcriptPlayIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-  font-size: 10px;
-  color: var(--accent-blue);
-  background: rgba(59, 130, 246, 0.15);
-  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+  color: rgba(59, 130, 246, 0.8);
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
-  vertical-align: middle;
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .transcriptPlayIcon:hover {
-  background: rgba(59, 130, 246, 0.3);
-  color: #fff;
-  transform: scale(1.1);
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--accent-blue);
+  transform: scale(1.05);
 }
 
 .shadowingText {
@@ -403,35 +409,36 @@
 .vocabularyList {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: 8px;
 }
 
 .vocabularyItem {
   background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius-small);
-  padding: var(--spacing-md);
-  cursor: pointer;
-  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: all 0.15s ease;
+  position: relative;
 }
 
 .vocabularyItem:hover {
-  border-color: var(--accent-blue);
+  border-color: rgba(100, 116, 139, 0.2);
   background: var(--bg-hover);
-  transform: translateX(4px);
+  transform: translateX(2px);
 }
 
 .vocabularyWord {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
 }
 
 .vocabularyWordText {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  color: var(--accent-blue);
+  color: var(--text-primary);
 }
 
 .vocabularyPos {
@@ -444,44 +451,52 @@
 }
 
 .vocabularyTranslation {
-  font-size: 14px;
-  color: var(--text-primary);
-  line-height: 1.5;
+  font-size: 13px;
+  color: rgba(148, 163, 184, 0.95);
+  line-height: 1.6;
 }
 
 .vocabularyNote {
   font-size: 12px;
   color: var(--text-secondary);
-  margin-top: 4px;
-  font-style: italic;
-  line-height: 1.4;
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: rgba(100, 116, 139, 0.06);
+  border-radius: 6px;
+  border-left: 2px solid rgba(100, 116, 139, 0.2);
+  line-height: 1.5;
 }
 
 .vocabularyDeleteBtn {
   background: transparent;
   border: none;
   color: var(--text-secondary);
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1;
   cursor: pointer;
-  padding: 0 4px;
-  margin-left: auto;
-  opacity: 0.6;
+  padding: 4px;
+  opacity: 0.5;
   transition: all 0.2s ease;
+  border-radius: 4px;
 }
 
 .vocabularyDeleteBtn:hover {
   color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
   opacity: 1;
 }
 
 .vocabularyLoading,
 .vocabularyEmpty {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-xl);
+  padding: 40px 20px;
   color: var(--text-secondary);
-  font-size: 14px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.6;
 }
 
 /* Karaoke Highlight Styles */
