@@ -345,8 +345,8 @@ function CategoriesManagement() {
           color: '#6b7280'
         }}>
           <p>💡 <strong>Hinweis:</strong> Kategorien helfen Ihnen, Vokabeln thematisch zu organisieren.</p>
-          <p>• Standard-Kategorie ist "Allgemein"</p>
-          <p>• Beim Löschen einer Kategorie werden alle Wörter auf "Allgemein" zurückgesetzt</p>
+          <p>• Standard-Kategorie ist &quot;Allgemein&quot;</p>
+          <p>• Beim Löschen einer Kategorie werden alle Wörter auf &quot;Allgemein&quot; zurückgesetzt</p>
           <p>• Kategorien können nachträglich bearbeitet werden</p>
         </div>
       </AdminDashboardLayout>

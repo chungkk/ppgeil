@@ -555,10 +555,10 @@ function ArticleCategoriesManagement() {
           <ul style={{ marginLeft: '20px', marginTop: '8px' }}>
             <li>Danh mục giúp phân loại bài học theo chủ đề (Ngữ pháp, Từ vựng, Luyện nghe...)</li>
             <li>
-              Danh mục <strong>"Chưa phân loại"</strong> là danh mục mặc định và không thể xóa
+              Danh mục <strong>&quot;Chưa phân loại&quot;</strong> là danh mục mặc định và không thể xóa
             </li>
-            <li>Khi xóa danh mục, tất cả bài học trong đó sẽ được chuyển sang "Chưa phân loại"</li>
-            <li>Danh mục "Ẩn" sẽ không hiển thị cho người dùng nhưng vẫn giữ nguyên các bài học</li>
+            <li>Khi xóa danh mục, tất cả bài học trong đó sẽ được chuyển sang &quot;Chưa phân loại&quot;</li>
+            <li>Danh mục &quot;Ẩn&quot; sẽ không hiển thị cho người dùng nhưng vẫn giữ nguyên các bài học</li>
             <li>Slug được tạo tự động từ tên danh mục (hỗ trợ tiếng Việt)</li>
           </ul>
         </div>
