@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { LessonThumbnail } from './OptimizedImage';
+import CategoryTag from './CategoryTag'; // T064: Import CategoryTag
 import styles from '../styles/LessonCard.module.css';
 
 const LessonCard = ({ lesson, onClick }) => {
@@ -98,6 +99,12 @@ const LessonCard = ({ lesson, onClick }) => {
       </div>
 
       <div className={styles.cardContent}>
+        {/* T065: Add category tag if available */}
+        {lesson.category && (
+          <div className={styles.categoryContainer}>
+            <CategoryTag category={lesson.category} size="small" />
+          </div>
+        )}
         <h3 className={styles.title}>{lesson.title}</h3>
       </div>
     </div>

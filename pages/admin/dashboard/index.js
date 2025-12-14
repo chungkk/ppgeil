@@ -173,6 +173,95 @@ function AdminLessonsPage() {
            </button>
          </div>
 
+        {/* Quick Links */}
+        <div style={{ marginBottom: '20px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          <Link 
+            href="/admin/dashboard/article-categories"
+            style={{
+              padding: '8px 16px',
+              background: '#10b981',
+              color: 'white',
+              borderRadius: '6px',
+              textDecoration: 'none',
+              fontSize: '14px',
+              fontWeight: '500',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            🏷️ Quản lý danh mục bài viết
+          </Link>
+          <Link 
+            href="/admin/dashboard/categories"
+            style={{
+              padding: '8px 16px',
+              background: '#6366f1',
+              color: 'white',
+              borderRadius: '6px',
+              textDecoration: 'none',
+              fontSize: '14px',
+              fontWeight: '500',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            🏷️ Quản lý từ vựng
+          </Link>
+          <Link 
+            href="/admin/dashboard/pages"
+            style={{
+              padding: '8px 16px',
+              background: '#8b5cf6',
+              color: 'white',
+              borderRadius: '6px',
+              textDecoration: 'none',
+              fontSize: '14px',
+              fontWeight: '500',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            📄 Quản lý trang
+          </Link>
+          <Link 
+            href="/admin/dashboard/files"
+            style={{
+              padding: '8px 16px',
+              background: '#f59e0b',
+              color: 'white',
+              borderRadius: '6px',
+              textDecoration: 'none',
+              fontSize: '14px',
+              fontWeight: '500',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            📁 File Manager
+          </Link>
+          <Link 
+            href="/admin/settings"
+            style={{
+              padding: '8px 16px',
+              background: '#64748b',
+              color: 'white',
+              borderRadius: '6px',
+              textDecoration: 'none',
+              fontSize: '14px',
+              fontWeight: '500',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            ⚙️ Cài đặt
+          </Link>
+        </div>
+
         {/* Stats - Inline compact */}
         <div className={styles.statsOverview}>
           <div className={styles.statCard}>

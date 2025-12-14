@@ -21,15 +21,19 @@ function LessonFormPage() {
   const [fetchingWhisperSRT, setFetchingWhisperSRT] = useState(false);
   const [fetchingWhisperV2, setFetchingWhisperV2] = useState(false);
   const [fetchingWhisperV3, setFetchingWhisperV3] = useState(false);
-  const [extractingVocab, setExtractingVocab] = useState(false);
 
   const [formData, setFormData] = useState({
     id: '',
     title: '',
     description: '',
     level: 'A1',
+    category: '', // T038: Add category field
     videoDuration: 0
   });
+
+  // T039: Fetch categories for dropdown
+  const [categories, setCategories] = useState([]);
+  const [loadingCategories, setLoadingCategories] = useState(true);
 
   const [audioSource, setAudioSource] = useState('youtube');
   const [audioFile, setAudioFile] = useState(null);
@@ -78,6 +82,7 @@ function LessonFormPage() {
           title: lesson.title,
           description: lesson.description,
           level: lesson.level || 'A1',
+          category: lesson.category?._id || lesson.category || '', // T040: Load category
           videoDuration: lesson.videoDuration || 0
         });
         
@@ -89,10 +94,16 @@ function LessonFormPage() {
               const jsonData = await jsonRes.json();
               const srt = convertJSONtoSRT(jsonData);
               setSrtText(srt);
+            } else {
+              console.error('Error loading JSON: HTTP', jsonRes.status);
+              toast.warning('Không thể tải nội dung SRT. Vui lòng kiểm tra lại file JSON.');
             }
           } catch (e) {
             console.error('Error loading JSON:', e);
+            toast.error('Lỗi khi tải nội dung SRT: ' + e.message);
           }
+        } else {
+          toast.warning('Bài học này chưa có nội dung SRT');
         }
       } else {
         toast.error('Lektion nicht gefunden');
@@ -111,6 +122,30 @@ function LessonFormPage() {
       loadLesson(id);
     }
   }, [id, isNewLesson, loadLesson]);
+
+  // T039: Fetch active categories on mount
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        setLoadingCategories(true);
+        const token = localStorage.getItem('token');
+        const res = await fetch('/api/article-categories?activeOnly=false', {
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        
+        if (res.ok) {
+          const data = await res.json();
+          setCategories(data.categories || []);
+        }
+      } catch (error) {
+        console.error('Error fetching categories:', error);
+      } finally {
+        setLoadingCategories(false);
+      }
+    };
+    
+    fetchCategories();
+  }, []);
 
   const validateSRT = (text) => {
     if (!text.trim()) return true;
@@ -437,8 +472,8 @@ function LessonFormPage() {
       if (!srtText.trim()) newErrors.srt = 'SRT-Text ist erforderlich';
     }
 
-    // Validate SRT format
-    if (srtText.trim() && !validateSRT(srtText)) {
+    // Validate SRT format (only for new lessons to avoid false positives on edits)
+    if (isNewLesson && srtText.trim() && !validateSRT(srtText)) {
       newErrors.srt = 'Ungültiges SRT-Format';
     }
 
@@ -563,6 +598,7 @@ function LessonFormPage() {
           title: formData.title,
           description: formData.description,
           level: formData.level,
+          category: formData.category || undefined, // Fix: Include category in update
           videoDuration: formData.videoDuration || undefined
         };
       }
@@ -580,36 +616,6 @@ function LessonFormPage() {
       if (!res.ok) throw new Error('Lektion konnte nicht gespeichert werden');
 
       toast.success(isNewLesson ? 'Lektion erfolgreich erstellt!' : 'Lektion erfolgreich aktualisiert!');
-
-      // Auto-extract vocabulary for new lessons
-      if (isNewLesson && formData.id) {
-        setExtractingVocab(true);
-        try {
-          const vocabRes = await fetch('/api/extract-lesson-vocabulary', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Bearer ${token}`
-            },
-            body: JSON.stringify({ 
-              lessonId: formData.id,
-              level: formData.level,
-              targetLang: 'vi'
-            })
-          });
-          
-          if (vocabRes.ok) {
-            const vocabData = await vocabRes.json();
-            toast.success(`📚 Đã trích xuất ${vocabData.data?.totalWords || 0} từ vựng!`);
-          } else {
-            console.error('Extract vocabulary failed');
-          }
-        } catch (vocabError) {
-          console.error('Extract vocabulary error:', vocabError);
-        } finally {
-          setExtractingVocab(false);
-        }
-      }
 
       router.push('/admin/dashboard');
     } catch (error) {
@@ -653,16 +659,6 @@ function LessonFormPage() {
             >
               ← Zurück
             </button>
-            {!isNewLesson && (
-              <button
-                type="button"
-                onClick={() => router.push(`/admin/dashboard/lesson/${id}/vocabulary`)}
-                className={styles.actionButton}
-                style={{ background: '#10b981' }}
-              >
-                📚 Quản lý từ vựng
-              </button>
-            )}
           </div>
         </div>
 
@@ -679,10 +675,10 @@ function LessonFormPage() {
               </button>
               <button
                 type="submit"
-                disabled={uploading || extractingVocab}
+                disabled={uploading}
                 className={styles.submitButton}
               >
-                {uploading ? '⏳ Speichert...' : extractingVocab ? '📚 Đang trích xuất từ vựng...' : '➕ Lektion erstellen'}
+                {uploading ? '⏳ Speichert...' : '➕ Lektion erstellen'}
               </button>
             </div>
           )}
@@ -883,6 +879,32 @@ function LessonFormPage() {
                     <option value="C1">C1</option>
                     <option value="C2">C2</option>
                   </select>
+                </div>
+              )}
+              {/* T038-T041: Category Dropdown */}
+              {!isNewLesson && (
+                <div className={styles.formGroup}>
+                  <label className={styles.label}>Danh mục</label>
+                  <select
+                    value={formData.category}
+                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                    className={`${styles.select} ${errors.category ? styles.error : ''}`}
+                    disabled={loadingCategories}
+                  >
+                    {loadingCategories ? (
+                      <option value="">Đang tải...</option>
+                    ) : (
+                      <>
+                        <option value="">-- Chọn danh mục --</option>
+                        {categories.map(cat => (
+                          <option key={cat._id} value={cat._id}>
+                            {cat.name} {cat.isSystem ? '(Mặc định)' : ''}
+                          </option>
+                        ))}
+                      </>
+                    )}
+                  </select>
+                  {errors.category && <span className={styles.errorText}>{errors.category}</span>}
                 </div>
               )}
               <div className={styles.formGroup}>

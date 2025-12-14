@@ -539,6 +539,182 @@ button:focus-visible {
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* Category Section - Horizontal Scrolling */
+.category-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding: 0 var(--spacing-sm);
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.view-all-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent-blue);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-small);
+  transition: all 0.2s ease;
+}
+
+.view-all-btn:hover {
+  background: var(--bg-hover);
+  color: var(--accent-cyan);
+}
+
+/* Category Detail Page */
+.back-to-home-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-small);
+  transition: all 0.2s ease;
+  margin-bottom: var(--spacing-lg);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.back-to-home-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.category-page-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.category-page-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.category-page-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Horizontal Scroll Container */
+.horizontal-scroll {
+  display: flex;
+  gap: var(--spacing-md);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-lg);
+  margin: 0 calc(-1 * var(--spacing-sm));
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 0 var(--spacing-md);
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.horizontal-card {
+  flex: 0 0 280px;
+  max-width: 280px;
+}
+
+/* Responsive adjustments for horizontal scroll */
+@media (max-width: 768px) {
+  .category-title {
+    font-size: 20px;
+  }
+
+  .view-all-btn {
+    font-size: 14px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .horizontal-card {
+    flex: 0 0 240px;
+    max-width: 240px;
+  }
+
+  .horizontal-scroll {
+    gap: var(--spacing-sm);
+  }
+
+  .category-page-title {
+    font-size: 28px;
+  }
+
+  .category-page-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-title {
+    font-size: 18px;
+  }
+
+  .category-header {
+    padding: 0;
+  }
+
+  .horizontal-card {
+    flex: 0 0 200px;
+    max-width: 200px;
+  }
+
+  .horizontal-scroll {
+    padding: var(--spacing-xs) 0 var(--spacing-md);
+    margin: 0;
+  }
+
+  .back-to-home-btn {
+    font-size: 14px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .category-page-title {
+    font-size: 24px;
+  }
+
+  .category-page-description {
+    font-size: 14px;
+  }
+}
+
 /* ============================================
    PERFORMANCE: Disable heavy effects for older devices
    ============================================ */

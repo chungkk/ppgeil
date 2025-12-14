@@ -464,6 +464,47 @@
     "filter": "Lọc",
     "sort": "Sắp xếp"
   },
+  "categories": {
+    "title": "Danh mục",
+    "all": "Tất cả",
+    "filter": "Lọc theo danh mục",
+    "select": "Chọn danh mục",
+    "noCategorySelected": "Chưa chọn danh mục",
+    "loading": "Đang tải danh mục...",
+    "empty": "Không tìm thấy danh mục nào",
+    "noCategoryArticles": "Không có bài học nào trong danh mục này",
+    "admin": {
+      "title": "Quản lý danh mục",
+      "create": "Tạo danh mục mới",
+      "edit": "Sửa danh mục",
+      "delete": "Xóa danh mục",
+      "deleteConfirm": "Xóa danh mục này? Các bài học sẽ được chuyển về danh mục mặc định.",
+      "name": "Tên danh mục",
+      "description": "Mô tả",
+      "slug": "Slug (URL)",
+      "isActive": "Hoạt động",
+      "isSystem": "Danh mục hệ thống",
+      "order": "Thứ tự",
+      "articleCount": "Số bài học",
+      "systemDefault": "Mặc định",
+      "cannotDeleteSystem": "Không thể xóa danh mục hệ thống",
+      "success": {
+        "created": "Tạo danh mục thành công",
+        "updated": "Cập nhật danh mục thành công",
+        "deleted": "Xóa danh mục thành công"
+      },
+      "errors": {
+        "nameTooShort": "Tên danh mục quá ngắn",
+        "nameTooLong": "Tên danh mục quá dài (tối đa 100 ký tự)",
+        "descriptionTooLong": "Mô tả quá dài (tối đa 500 ký tự)",
+        "duplicateName": "Tên danh mục đã tồn tại",
+        "createFailed": "Không thể tạo danh mục",
+        "updateFailed": "Không thể cập nhật danh mục",
+        "deleteFailed": "Không thể xóa danh mục",
+        "loadFailed": "Không thể tải danh mục"
+      }
+    }
+  },
   "404": {
     "title": "Không tìm thấy trang",
     "subtitle": "Xin lỗi, trang bạn đang tìm không tồn tại hoặc đã được di chuyển.",

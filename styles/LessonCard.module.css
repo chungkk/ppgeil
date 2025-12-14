@@ -144,6 +144,11 @@
   padding: 10px;
 }
 
+/* T065: Category container */
+.categoryContainer {
+  margin-bottom: 0.5rem;
+}
+
 .title {
   font-size: 13px;
   font-weight: 600;

@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
 import DictionaryPopup from '../components/DictionaryPopup';
-import VocabularyPopup from '../components/VocabularyPopup';
 
 export default function DictionaryDemo() {
   const [showDictPopup, setShowDictPopup] = useState(false);
-  const [showVocabPopup, setShowVocabPopup] = useState(false);
   const [selectedWord, setSelectedWord] = useState('');
 
-  const handleWordClick = (word, type) => {
+  const handleWordClick = (word) => {
     setSelectedWord(word);
-    if (type === 'dictionary') {
-      setShowDictPopup(true);
-    } else {
-      setShowVocabPopup(true);
-    }
+    setShowDictPopup(true);
   };
 
   return (
@@ -38,7 +32,7 @@ export default function DictionaryDemo() {
           <p style={{ fontSize: '18px', lineHeight: '2' }}>
             Wenn man da unten reingeht, dann sieht man zuerst die{' '}
             <span
-              onClick={() => handleWordClick('Treppenhaus', 'dictionary')}
+              onClick={() => handleWordClick('Treppenhaus')}
               style={{
                 color: '#4A90E2',
                 fontWeight: 'bold',
@@ -53,7 +47,7 @@ export default function DictionaryDemo() {
             </span>
             , dann kommt man zu den Wohnungen, wo die Familien und Menschen leben. Aber mehr als die{' '}
             <span
-              onClick={() => handleWordClick('Wohnungstüren', 'dictionary')}
+              onClick={() => handleWordClick('Wohnungstüren')}
               style={{
                 color: '#4A90E2',
                 fontWeight: 'bold',
@@ -71,46 +65,10 @@ export default function DictionaryDemo() {
         </div>
       </div>
 
-      <div style={{ marginBottom: '40px', paddingTop: '40px', borderTop: '2px solid #ddd' }}>
-        <h2 style={{ marginBottom: '15px' }}>Popup cũ (Vocabulary Popup)</h2>
-        <p style={{ marginBottom: '15px', lineHeight: '1.8', fontSize: '16px' }}>
-          Để so sánh, đây là popup cũ:
-        </p>
-        <div style={{ background: '#f5f5f5', padding: '20px', borderRadius: '8px' }}>
-          <p style={{ fontSize: '18px', lineHeight: '2' }}>
-            Click vào từ:{' '}
-            <span
-              onClick={() => handleWordClick('Briefkästen', 'vocab')}
-              style={{
-                color: '#FF6B9D',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                textDecoration: 'underline',
-                padding: '2px 4px',
-                borderRadius: '3px',
-                background: '#ffe0eb'
-              }}
-            >
-              Briefkästen
-            </span>
-          </p>
-        </div>
-      </div>
-
       {showDictPopup && (
         <DictionaryPopup
           word={selectedWord}
           onClose={() => setShowDictPopup(false)}
-        />
-      )}
-
-      {showVocabPopup && (
-        <VocabularyPopup
-          word={selectedWord}
-          onClose={() => setShowVocabPopup(false)}
-          onSave={async (data) => {
-            console.log('Saved:', data);
-          }}
         />
       )}
     </div>
