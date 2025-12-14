@@ -38,11 +38,14 @@ async function handler(req, res) {
 
   if (req.method === 'GET') {
     try {
-      const { lessonId, targetLanguage, word } = req.query;
+      const { lessonId, targetLanguage, word, category } = req.query;
 
       const query = { userId: req.user._id };
       if (lessonId) {
         query.lessonId = lessonId;
+      }
+      if (category) {
+        query.category = category;
       }
       
       // Check if single word exists
@@ -97,7 +100,7 @@ async function handler(req, res) {
 
   if (req.method === 'POST') {
     try {
-      const { word, translation, context, lessonId, phonetics, partOfSpeech, level, definition, examples } = req.body;
+      const { word, translation, context, lessonId, phonetics, partOfSpeech, level, definition, examples, category } = req.body;
 
       if (!word || !translation) {
         return res.status(400).json({ message: 'Word và translation là bắt buộc' });
@@ -116,6 +119,7 @@ async function handler(req, res) {
       if (level) updateData.level = level;
       if (definition) updateData.definition = definition;
       if (examples) updateData.examples = examples;
+      if (category) updateData.category = category;
 
       await Vocabulary.findOneAndUpdate(
         { userId: req.user._id, word: word.toLowerCase() },

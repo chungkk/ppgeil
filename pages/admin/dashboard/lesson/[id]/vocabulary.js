@@ -17,6 +17,8 @@ function VocabularyManagementPage() {
   const [editingIndex, setEditingIndex] = useState(null);
   const [editForm, setEditForm] = useState({});
   const [lessonInfo, setLessonInfo] = useState(null);
+  const [categories, setCategories] = useState(['Allgemein']);
+  const [filterCategory, setFilterCategory] = useState('all');
 
   const loadVocabulary = useCallback(async () => {
     if (!lessonId) return;
@@ -50,7 +52,25 @@ function VocabularyManagementPage() {
 
   useEffect(() => {
     loadVocabulary();
+    loadCategories();
   }, [loadVocabulary]);
+
+  const loadCategories = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/vocabulary/categories', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setCategories(['Allgemein', ...data.categories.filter(c => c !== 'Allgemein')]);
+      }
+    } catch (error) {
+      console.error('Load categories error:', error);
+    }
+  };
 
   const handleExtract = async () => {
     if (!lessonId) return;
@@ -135,6 +155,7 @@ function VocabularyManagementPage() {
       translation: '',
       partOfSpeech: 'Nomen',
       level: lessonInfo?.level || 'B1',
+      category: 'Allgemein',
       note: '',
       sentences: []
     });
@@ -286,6 +307,15 @@ function VocabularyManagementPage() {
                 <option value="B2">B2</option>
                 <option value="C1">C1</option>
               </select>
+              <select
+                value={editForm.category || 'Allgemein'}
+                onChange={(e) => setEditForm({ ...editForm, category: e.target.value })}
+                className={styles.select}
+              >
+                {categories.map(cat => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </select>
               <input
                 type="text"
                 placeholder="Ghi chú"
@@ -314,7 +344,22 @@ function VocabularyManagementPage() {
             </button>
           </div>
         ) : (
-          <div className={styles.tableContainer}>
+          <>
+            <div style={{ marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <label style={{ fontSize: '14px', fontWeight: '500' }}>🏷️ Lọc theo danh mục:</label>
+              <select
+                value={filterCategory}
+                onChange={(e) => setFilterCategory(e.target.value)}
+                className={styles.select}
+                style={{ width: '200px' }}
+              >
+                <option value="all">Tất cả</option>
+                {categories.map(cat => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </select>
+            </div>
+            <div className={styles.tableContainer}>
             <table className={styles.table}>
               <thead>
                 <tr>
@@ -324,12 +369,15 @@ function VocabularyManagementPage() {
                   <th>Nghĩa</th>
                   <th>Loại từ</th>
                   <th>Level</th>
+                  <th>Danh mục</th>
                   <th>Ghi chú</th>
                   <th style={{ width: '120px' }}>Thao tác</th>
                 </tr>
               </thead>
               <tbody>
-                {vocabData.vocabulary.map((vocab, index) => (
+                {vocabData.vocabulary
+                  .filter(vocab => filterCategory === 'all' || vocab.category === filterCategory)
+                  .map((vocab, index) => (
                   <tr key={index}>
                     {editingIndex === index ? (
                       <>
@@ -390,6 +438,17 @@ function VocabularyManagementPage() {
                           </select>
                         </td>
                         <td>
+                          <select
+                            value={editForm.category || 'Allgemein'}
+                            onChange={(e) => setEditForm({ ...editForm, category: e.target.value })}
+                            className={styles.select}
+                          >
+                            {categories.map(cat => (
+                              <option key={cat} value={cat}>{cat}</option>
+                            ))}
+                          </select>
+                        </td>
+                        <td>
                           <input
                             type="text"
                             value={editForm.note || ''}
@@ -445,6 +504,17 @@ function VocabularyManagementPage() {
                             {vocab.level}
                           </span>
                         </td>
+                        <td>
+                          <span style={{
+                            padding: '2px 6px',
+                            borderRadius: '4px',
+                            fontSize: '12px',
+                            background: '#e0e7ff',
+                            color: '#3730a3'
+                          }}>
+                            {vocab.category || 'Allgemein'}
+                          </span>
+                        </td>
                         <td style={{ color: '#6b7280', fontSize: '13px' }}>{vocab.note}</td>
                         <td>
                           <button
@@ -467,6 +537,7 @@ function VocabularyManagementPage() {
               </tbody>
             </table>
           </div>
+          </>
         )}
 
         {/* Info */}

@@ -36,6 +36,7 @@ const AdminDashboardLayout = ({ children }) => {
       items: [
         { href: '/admin/dashboard/lesson/new', label: 'Neue Lektion', icon: '➕' },
         { href: '/admin/dashboard/pages', label: 'Seiteninhalte', icon: '📄' },
+        { href: '/admin/dashboard/categories', label: 'Vokabelkategorien', icon: '🏷️' },
       ]
     },
     {
