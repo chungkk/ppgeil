@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import ProtectedPage from '../../../../../components/ProtectedPage';
 import AdminDashboardLayout from '../../../../../components/AdminDashboardLayout';
-import LessonWizard from '../../../../../components/admin/LessonWizard';
+import CompactLessonForm from '../../../../../components/admin/CompactLessonForm';
 import { toast } from 'react-toastify';
 import styles from '../../../../../styles/adminDashboard.module.css';
 
@@ -630,7 +630,7 @@ function LessonFormPage() {
     }
   };
 
-  // Use Wizard for new lessons
+  // Use Compact Form for new lessons
   if (isNewLesson) {
     return (
       <>
@@ -643,12 +643,12 @@ function LessonFormPage() {
             <div>
               <h1 className={styles.pageTitle}>➕ Tạo bài học mới</h1>
               <p className={styles.pageSubtitle}>
-                Làm theo 4 bước đơn giản để tạo bài học
+                Điền thông tin và lấy SRT tự động
               </p>
             </div>
           </div>
 
-          <LessonWizard 
+          <CompactLessonForm 
             categories={categories}
             loadingCategories={loadingCategories}
           />

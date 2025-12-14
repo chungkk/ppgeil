@@ -1,0 +1,353 @@
+/* Compact Lesson Form - Single Page */
+
+.compactForm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Form Elements */
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.input,
+.select,
+.textarea {
+  padding: 10px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  background: white;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.inputError {
+  border-color: #ef4444;
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.errorText {
+  font-size: 13px;
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.helperText {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.idCode {
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 12px;
+  color: #059669;
+}
+
+/* Radio Group */
+.radioGroup {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+  background: white;
+}
+
+.radioLabel:hover {
+  border-color: #3b82f6;
+  background: #f9fafb;
+}
+
+.radioLabel input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+.radioLabel input[type="radio"]:checked + span {
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+.radioLabel span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* File Input */
+.fileInput {
+  padding: 10px;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.fileInput:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.fileName {
+  font-size: 13px;
+  color: #059669;
+  font-weight: 500;
+  margin-top: 6px;
+  display: block;
+}
+
+.thumbnailPreview {
+  margin-top: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* SRT Actions */
+.srtActions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.actionBtn {
+  padding: 10px 18px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #374151;
+}
+
+.actionBtn:hover:not(:disabled) {
+  border-color: #10b981;
+  background: #f0fdf4;
+  color: #10b981;
+  transform: translateY(-1px);
+}
+
+.actionBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Primary action button (Karaoke) */
+.actionBtnPrimary {
+  padding: 10px 18px;
+  background: #10b981;
+  border: 2px solid #10b981;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: white;
+}
+
+.actionBtnPrimary:hover:not(:disabled) {
+  background: #059669;
+  border-color: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.actionBtnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.lineCount {
+  font-size: 13px;
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+/* SRT Textarea */
+.srtTextarea {
+  min-height: 300px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  background: #f9fafb;
+  resize: vertical;
+}
+
+.srtTextarea:focus {
+  background: white;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+  position: sticky;
+  bottom: 20px;
+  z-index: 10;
+}
+
+.cancelBtn,
+.submitBtn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 2px solid;
+}
+
+.cancelBtn {
+  background: white;
+  border-color: #e5e7eb;
+  color: #6b7280;
+}
+
+.cancelBtn:hover:not(:disabled) {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.submitBtn {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.cancelBtn:disabled,
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .compactForm {
+    padding: 0;
+  }
+
+  .section {
+    padding: 20px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .radioGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .radioLabel {
+    width: 100%;
+  }
+
+  .srtActions {
+    flex-direction: column;
+  }
+
+  .actionBtn {
+    width: 100%;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .cancelBtn,
+  .submitBtn {
+    width: 100%;
+  }
+}
