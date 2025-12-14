@@ -40,6 +40,7 @@ function LessonFormPage() {
   const [audioUrl, setAudioUrl] = useState('');
   const [youtubeUrl, setYoutubeUrl] = useState('');
   const [srtText, setSrtText] = useState('');
+  const [originalSrtText, setOriginalSrtText] = useState(''); // Track original SRT to detect changes
   const [whisperV3Segments, setWhisperV3Segments] = useState(null); // Segments với wordTimings từ Whisper V3
   const [thumbnailFile, setThumbnailFile] = useState(null);
   const [thumbnailPreview, setThumbnailPreview] = useState(null);
@@ -94,6 +95,7 @@ function LessonFormPage() {
               const jsonData = await jsonRes.json();
               const srt = convertJSONtoSRT(jsonData);
               setSrtText(srt);
+              setOriginalSrtText(srt); // Save original to detect changes
             } else {
               console.error('Error loading JSON: HTTP', jsonRes.status);
               toast.warning('Không thể tải nội dung SRT. Vui lòng kiểm tra lại file JSON.');
@@ -574,8 +576,9 @@ function LessonFormPage() {
           videoDuration: formData.videoDuration || undefined
         };
       } else {
-        // Update SRT/JSON if changed
-        if (srtText.trim()) {
+        // Update SRT/JSON only if SRT actually changed
+        const srtChanged = srtText.trim() && srtText.trim() !== originalSrtText.trim();
+        if (srtChanged) {
           const srtRes = await fetch('/api/convert-srt', {
             method: 'POST',
             headers: {
@@ -598,7 +601,7 @@ function LessonFormPage() {
           title: formData.title,
           description: formData.description,
           level: formData.level,
-          category: formData.category || undefined, // Fix: Include category in update
+          category: formData.category || undefined,
           videoDuration: formData.videoDuration || undefined
         };
       }

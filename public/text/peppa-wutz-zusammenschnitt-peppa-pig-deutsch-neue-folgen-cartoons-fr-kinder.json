@@ -38,7 +38,7 @@
         "text": "Madame Gazelle, mir ist ein bisschen schlecht.",
         "start": 23.96,
         "end": 27.39,
-        "translationEn": "Madame Gazelle, I feel a little bit unwell.",
+        "translationEn": "Madame Gazelle, I feel a little sick.",
         "translationVi": "Cô Gazelle, tôi cảm thấy hơi khó chịu."
     },
     {
@@ -60,28 +60,28 @@
         "start": 33.26,
         "end": 37.05,
         "translationEn": "Poor Pedro, come and sit down in front of me.",
-        "translationVi": "Tội nghiệp Pedro, lại đây ngồi gần tôi."
+        "translationVi": "Tội nghiệp Pedro, lại đây ngồi phía trước với tôi."
     },
     {
         "text": "So wird es besser, ein kleines bisschen.",
         "start": 38.18,
         "end": 42.13,
         "translationEn": "So it will get better, a little bit.",
-        "translationVi": "Vậy thì sẽ tốt hơn, một chút xíu."
+        "translationVi": "Vậy thì mọi thứ sẽ tốt hơn, một chút xíu."
     },
     {
         "text": "Madame Gazelle, geht es dir auch nicht gut?",
         "start": 42.08,
         "end": 45.69,
         "translationEn": "Madame Gazelle, are you not feeling well either?",
-        "translationVi": "Cô Gazelle, cô có khỏe không?"
+        "translationVi": "Cô Gazelle, cô cũng không khỏe sao?"
     },
     {
         "text": "Zoe, mir könnte es auch schlecht werden.",
         "start": 45.42,
         "end": 48.47,
         "translationEn": "Zoe, I might also feel unwell.",
-        "translationVi": "Zoe, tôi cũng có thể cảm thấy không tốt."
+        "translationVi": "Zoe, tôi cũng có thể bị tồi tệ."
     },
     {
         "text": "Soll ich nicht besser auch nach vorne kommen?",
@@ -115,8 +115,8 @@
         "text": "Ihr könnt doch nicht alle nach vorne kommen.",
         "start": 57.32,
         "end": 60.27,
-        "translationEn": "You can't all come to the front.",
-        "translationVi": "Các bạn không thể tất cả cùng tiến lên phía trước như vậy."
+        "translationEn": "You can't all come forward.",
+        "translationVi": "Các bạn không thể tất cả cùng tiến lên phía trước được."
     },
     {
         "text": "Das macht gar nichts.",
@@ -130,7 +130,7 @@
         "start": 62.58,
         "end": 64.13,
         "translationEn": "We are indeed here.",
-        "translationVi": "Chúng tôi đang ở đây."
+        "translationVi": "Chúng tôi ở đây."
     },
     {
         "text": "Fröhliches Zelten, Kinder.",
@@ -164,7 +164,7 @@
         "text": "Atmet alle die wundervolle Luft ein, Kinder.",
         "start": 76,
         "end": 79.57,
-        "translationEn": "Breathe in all the wonderful air, children.",
+        "translationEn": "Breathe in the wonderful air, children.",
         "translationVi": "Hãy hít thở không khí tuyệt vời này, các em."
     },
     {
@@ -172,7 +172,7 @@
         "start": 85.92,
         "end": 87.75,
         "translationEn": "Honest country air.",
-        "translationVi": "Không khí đồng quê chân thật."
+        "translationVi": "Không khí nông thôn chân thật."
     },
     {
         "text": "Jetzt errichten wir unsere Zelte.",
@@ -186,14 +186,14 @@
         "start": 92.1,
         "end": 94.81,
         "translationEn": "Pepper and her friends are setting up the tents.",
-        "translationVi": "Pepper và các bạn của cô ấy dựng lều lên."
+        "translationVi": "Pepper và những người bạn dựng lều lên."
     },
     {
         "text": "Kinder, sucht euch je einen Partner, mit dem ihr euer Zelt teilen",
         "start": 97.6,
         "end": 102.71,
-        "translationEn": "Children, choose a partner with whom you will share your tent.",
-        "translationVi": "Các em, hãy tìm cho mình một bạn đồng hành để chia sẻ lều."
+        "translationEn": "Children, find a partner with whom you can share your tent.",
+        "translationVi": "Các em, hãy tìm cho mình một bạn đồng hành để cùng chia sẻ lều."
     },
     {
         "text": "Wollt.",
@@ -256,34 +256,34 @@
         "start": 128.02,
         "end": 129.25,
         "translationEn": "Yes, great.",
-        "translationVi": "Vâng, tuyệt quá."
+        "translationVi": "Vâng, tuyệt vời."
     },
     {
         "text": "So, ich brauche noch Holz für unser Lagerfeuer.",
         "start": 131.74,
         "end": 136.27,
         "translationEn": "So, I still need wood for our campfire.",
-        "translationVi": "Vậy, tôi cần thêm gỗ cho lửa trại của chúng ta."
+        "translationVi": "Vậy, tôi cần thêm gỗ cho đống lửa trại của chúng ta."
     },
     {
         "text": "Wir holen Holz.",
         "start": 136.1,
         "end": 137.81,
         "translationEn": "We are getting wood.",
-        "translationVi": "Chúng tôi lấy gỗ."
+        "translationVi": "Chúng tôi đi lấy gỗ."
     },
     {
         "text": "Ich und Pedro wollen Holz holen.",
         "start": 137.66,
         "end": 140.47,
         "translationEn": "Pedro and I want to get wood.",
-        "translationVi": "Tôi và Pedro muốn lấy gỗ."
+        "translationVi": "Tôi và Pedro muốn đi lấy gỗ."
     },
     {
         "text": "Oh, ihr ihr könnt alle Holz holen.",
         "start": 140.04,
         "end": 143.63,
-        "translationEn": "Oh, you can all get wood.",
+        "translationEn": "Oh, you can all fetch wood.",
         "translationVi": "Ôi, các bạn có thể lấy tất cả gỗ."
     },
     {
@@ -291,7 +291,7 @@
         "start": 145.44,
         "end": 148.59,
         "translationEn": "Pepper and her friends are gathering wood for a campfire.",
-        "translationVi": "Pepper và các bạn của cô ấy lấy gỗ để đốt lửa trại."
+        "translationVi": "Pepper và những người bạn đang lấy gỗ để nhóm lửa trại."
     },
     {
         "text": "Wundervoll.",
@@ -312,14 +312,14 @@
         "start": 155.72,
         "end": 159.37,
         "translationEn": "Pepper and her friends are sitting around the campfire.",
-        "translationVi": "Pepper và những người bạn ngồi quanh lửa trại."
+        "translationVi": "Pepper và những người bạn ngồi quanh đống lửa trại."
     },
     {
         "text": "Kinder, lasst uns etwas singen.",
         "start": 159.4,
         "end": 162.29,
         "translationEn": "Children, let's sing something.",
-        "translationVi": "Trẻ em, hãy để chúng ta hát một chút."
+        "translationVi": "Trẻ em, hãy cùng nhau hát một bài nhé."
     },
     {
         "text": "Ja, den Ping-Pong-Song, Pong Song bitte.",
@@ -346,7 +346,7 @@
         "text": "Den Ping-Pong-Song?",
         "start": 168.6,
         "end": 169.71,
-        "translationEn": "The Ping-Pong song?",
+        "translationEn": "The Ping-Pong Song?",
         "translationVi": "Bài hát Ping-Pong?"
     },
     {
@@ -431,7 +431,7 @@
         "start": 212.26,
         "end": 214.31,
         "translationEn": "I have a flashlight.",
-        "translationVi": "Tôi có một chiếc đèn pin."
+        "translationVi": "Tôi có một cái đèn pin."
     },
     {
         "text": "Ich auch.",
@@ -445,21 +445,21 @@
         "start": 220.42,
         "end": 225.09,
         "translationEn": "Attention, children, no more giggling, please.",
-        "translationVi": "Chú ý, trẻ em, không còn ồn ào nữa, xin vui lòng."
+        "translationVi": "Chú ý, trẻ em, xin đừng ồn ào nữa."
     },
     {
         "text": "Was war das für ein Geräusch?",
         "start": 230.7,
         "end": 233.55,
         "translationEn": "What was that noise?",
-        "translationVi": "Âm thanh đó là gì vậy?"
+        "translationVi": "Đó là âm thanh gì vậy?"
     },
     {
         "text": "Keine Ahnung.",
         "start": 234.32,
         "end": 235.59,
         "translationEn": "No idea.",
-        "translationVi": "Không có ý kiến."
+        "translationVi": "Không biết."
     },
     {
         "text": "Da ist es wieder.",
@@ -473,7 +473,7 @@
         "start": 240.5,
         "end": 243.33,
         "translationEn": "Luzi, where are you going?",
-        "translationVi": "Luzi, bạn đang đi đâu vậy?"
+        "translationVi": "Luzi, bạn đi đâu vậy?"
     },
     {
         "text": "Madame Gazelle, ich habe ein bisschen Angst.",
@@ -487,7 +487,7 @@
         "start": 247.78,
         "end": 249.67,
         "translationEn": "Oh, would you like to come in?",
-        "translationVi": "Ôi, bạn có muốn vào không?"
+        "translationVi": "Ô, bạn có muốn vào không?"
     },
     {
         "text": "Ja, bitte.",
@@ -501,7 +501,7 @@
         "start": 252.04,
         "end": 256.93,
         "translationEn": "Madame Gazelle, I think I'm starting to feel a little scared too.",
-        "translationVi": "Bà Gazelle, tôi nghĩ tôi cũng đang cảm thấy hơi sợ."
+        "translationVi": "Thưa cô Gazelle, tôi nghĩ tôi cũng đang hơi sợ một chút."
     },
     {
         "text": "Darf ich bitte rein?",
@@ -521,7 +521,7 @@
         "text": "Ich fürchte, bei mir kommt die Angst später.",
         "start": 261.54,
         "end": 264.63,
-        "translationEn": "I'm afraid the fear will come to me later.",
+        "translationEn": "I'm afraid that fear will come to me later.",
         "translationVi": "Tôi e rằng nỗi sợ hãi sẽ đến với tôi sau."
     },
     {
@@ -542,7 +542,7 @@
         "text": "Kommt alle herein.",
         "start": 267.62,
         "end": 269.99,
-        "translationEn": "Everyone come in.",
+        "translationEn": "Come on in, everyone.",
         "translationVi": "Mọi người vào đây đi."
     },
     {
@@ -571,14 +571,14 @@
         "start": 282.24,
         "end": 284.09,
         "translationEn": "A bong and a bing bong.",
-        "translationVi": "Một cái Bong và một cái Bing Bong."
+        "translationVi": "Một cái bong và một cái bing bong."
     },
     {
         "text": "Bing Pfannkuchen – für den Nachmittagsschmaus.",
         "start": 283.66,
         "end": 300.43,
         "translationEn": "Bing pancakes – for the afternoon snack.",
-        "translationVi": "Bing bánh kếp – cho bữa ăn nhẹ buổi chiều."
+        "translationVi": "Bing bánh kếp – cho bữa ăn chiều."
     },
     {
         "text": "Mama Wutz hat eine Überraschung.",
@@ -599,7 +599,7 @@
         "start": 305.16,
         "end": 307.26,
         "translationEn": "Pancakes, how delicious!",
-        "translationVi": "Bánh pancake, thật tuyệt vời!"
+        "translationVi": "Bánh kếp, thật ngon miệng!"
     },
     {
         "text": "Ich liebe Pfannkuchen.",
@@ -640,36 +640,36 @@
         "text": "Letztens warst du ein bisschen grantig, als der Pfannkuchen auf dem Boden",
         "start": 321.26,
         "end": 324.53,
-        "translationEn": "Recently you were a bit grumpy when the pancake fell on the floor.",
-        "translationVi": "Gần đây bạn có vẻ hơi cáu kỉnh khi chiếc bánh pancake rơi xuống sàn."
+        "translationEn": "Recently, you were a bit grumpy when the pancake fell on the floor.",
+        "translationVi": "Gần đây bạn có vẻ hơi cáu kỉnh khi cái bánh pancake rơi xuống sàn."
     },
     {
         "text": "Lag.",
         "start": 324.1,
         "end": 324.83,
         "translationEn": "Lag.",
-        "translationVi": "Trễ."
+        "translationVi": "Chậm."
     },
     {
         "text": "Ich war gar nicht grantig.",
         "start": 324.8,
         "end": 327.31,
         "translationEn": "I wasn't grumpy at all.",
-        "translationVi": "Tôi không hề cáu kỉnh."
+        "translationVi": "Tôi không hề khó chịu."
     },
     {
         "text": "Das lag doch nur an der Bratpfanne.",
         "start": 327.04,
         "end": 329.65,
         "translationEn": "That was just due to the frying pan.",
-        "translationVi": "Điều đó chỉ do chảo rán thôi."
+        "translationVi": "Đó chỉ là do chảo rán thôi."
     },
     {
         "text": "Mami, dürfen wir beim Backen helfen?",
         "start": 331.62,
         "end": 334.71,
         "translationEn": "Mom, can we help with baking?",
-        "translationVi": "Mẹ ơi, chúng con có thể giúp mẹ làm bánh không?"
+        "translationVi": "Mẹ ơi, chúng con có thể giúp làm bánh không?"
     },
     {
         "text": "Bitte.",
@@ -682,7 +682,7 @@
         "text": "Ja, helft mir beim Teigrühren.",
         "start": 336.46,
         "end": 338.73,
-        "translationEn": "Yes, help me with the dough mixing.",
+        "translationEn": "Yes, help me with stirring the dough.",
         "translationVi": "Vâng, hãy giúp tôi khuấy bột."
     },
     {
@@ -690,7 +690,7 @@
         "start": 339.16,
         "end": 341.39,
         "translationEn": "First, the flour goes into the bowl.",
-        "translationVi": "Đầu tiên, bột được cho vào bát."
+        "translationVi": "Đầu tiên cho bột vào bát."
     },
     {
         "text": "Oh, nun kommt das Ei hinzu.",
@@ -732,7 +732,7 @@
         "start": 359.22,
         "end": 360.79,
         "translationEn": "Stirring is fun.",
-        "translationVi": "Khuấy rất vui."
+        "translationVi": "Khuấy rất thú vị."
     },
     {
         "text": "Das findet Schorsch auch.",
@@ -746,7 +746,7 @@
         "start": 365.82,
         "end": 368.75,
         "translationEn": "No, Schorsch, that's not how it works.",
-        "translationVi": "Không, Schorsch, như vậy không được."
+        "translationVi": "Không, Schorsch, không thể như vậy."
     },
     {
         "text": "Danke, das reicht fürs Erste.",
@@ -767,21 +767,21 @@
         "start": 385.96,
         "end": 388.61,
         "translationEn": "Now Mama Wutz is flipping the pancake.",
-        "translationVi": "Bây giờ mẹ Wutz lật bánh kếp."
+        "translationVi": "Bây giờ mẹ Wutz lật cái bánh kếp."
     },
     {
         "text": "Hurra, das ging aber noch höher!",
         "start": 389.52,
         "end": 393.59,
         "translationEn": "Hooray, that went even higher!",
-        "translationVi": "Hura, cái đó còn cao hơn nữa!"
+        "translationVi": "Hura, cái này còn cao hơn nữa!"
     },
     {
         "text": "Mama Wutz, zeig mir, wie, aber mit deinem eigenen Pfannkuchen.",
         "start": 393.34,
         "end": 397.09,
         "translationEn": "Mama Wutz, show me how, but with your own pancake.",
-        "translationVi": "Mẹ Wutz, hãy chỉ cho con cách làm, nhưng với chiếc bánh kếp của riêng mẹ."
+        "translationVi": "Mẹ Wutz, hãy chỉ cho con cách làm, nhưng với bánh kếp của riêng mẹ."
     },
     {
         "text": "Papa Wutz, der erste Pfannkuchen ist für Schorsch.",
@@ -795,28 +795,28 @@
         "start": 401.08,
         "end": 403.93,
         "translationEn": "Mama Wutz drizzled a little syrup on top.",
-        "translationVi": "Mẹ Wutz nhỏ một chút siro lên đó."
+        "translationVi": "Mẹ Wutz nhỏ một ít siro lên đó."
     },
     {
         "text": "Köstlich!",
         "start": 407.02,
         "end": 408.29,
         "translationEn": "Delicious!",
-        "translationVi": "Ngon quá!"
+        "translationVi": "Ngon tuyệt!"
     },
     {
         "text": "Dieser Pfannkuchen ist für Peppa.",
         "start": 410.3,
         "end": 412.41,
         "translationEn": "This pancake is for Peppa.",
-        "translationVi": "Bánh kếp này dành cho Peppa."
+        "translationVi": "Chiếc bánh kếp này dành cho Peppa."
     },
     {
         "text": "Hurra, du könntest höher werfen, Mama Wutz.",
         "start": 413.7,
         "end": 419.39,
         "translationEn": "Hooray, you could throw higher, Mama Wutz.",
-        "translationVi": "Hurra, mẹ Wutz, con có thể ném cao hơn!"
+        "translationVi": "Hurra, mẹ Wutz, con có thể ném cao hơn."
     },
     {
         "text": "Zeig mir, wie, aber bitte mit deinem eigenen Pfannkuchen.",
@@ -830,13 +830,13 @@
         "start": 434.04,
         "end": 436.23,
         "translationEn": "This pancake is for Mama Pig.",
-        "translationVi": "Chiếc bánh kếp này dành cho mẹ Wutz."
+        "translationVi": "Bánh kếp này dành cho mẹ Wutz."
     },
     {
         "text": "Hurra, du wirfst immer noch nicht hoch genug, Mama Wutz.",
         "start": 438.36,
         "end": 443.75,
-        "translationEn": "Hooray, you're still not throwing high enough, Mama Wutz.",
+        "translationEn": "Hooray, you still don't throw high enough, Mama Wutz.",
         "translationVi": "Hurra, mẹ Wutz, mẹ vẫn chưa ném đủ cao!"
     },
     {
@@ -851,7 +851,7 @@
         "start": 446.26,
         "end": 448.77,
         "translationEn": "Show us how to do it right.",
-        "translationVi": "Hãy chỉ cho chúng tôi cách làm đúng."
+        "translationVi": "Hãy cho chúng tôi thấy cách làm đúng."
     },
     {
         "text": "Ganz köstlich.",
@@ -865,7 +865,7 @@
         "start": 459.18,
         "end": 464.21,
         "translationEn": "To make the pancake really good, you throw it high into the",
-        "translationVi": "Để bánh pancake được ngon, người ta ném nó lên cao vào"
+        "translationVi": "Để bánh pancake trở nên ngon, người ta ném nó lên cao trong không khí."
     },
     {
         "text": "Luft.",
@@ -879,21 +879,21 @@
         "start": 466.52,
         "end": 475.85,
         "translationEn": "1 2 3 Oops, silly dad.",
-        "translationVi": "1 2 3 Ôi, bố ngốc."
+        "translationVi": "1 2 3 Ôi, bố ngu ngốc."
     },
     {
         "text": "Vermutlich war das etwas zu hoch.",
         "start": 476.6,
         "end": 479.01,
-        "translationEn": "It was probably a bit too high.",
-        "translationVi": "Có lẽ điều đó hơi quá cao."
+        "translationEn": "Presumably, that was a bit too high.",
+        "translationVi": "Có lẽ điều đó hơi cao một chút."
     },
     {
         "text": "Was für ein Pech.",
         "start": 479.54,
         "end": 481.01,
         "translationEn": "What bad luck.",
-        "translationVi": "Thật là xui xẻo."
+        "translationVi": "Thật không may."
     },
     {
         "text": "Das war der letzte Pfannkuchen.",
@@ -907,7 +907,7 @@
         "start": 482.62,
         "end": 485.31,
         "translationEn": "No problem, I think we have that sorted out quickly.",
-        "translationVi": "Không vấn đề gì, tôi nghĩ chúng ta sẽ xong ngay thôi."
+        "translationVi": "Không vấn đề gì, tôi nghĩ chúng ta sẽ có ngay thôi."
     },
     {
         "text": "Oje, Papa Wutz kommt nicht dran.",
@@ -920,7 +920,7 @@
         "text": "Keine Sorge, Papa Wutz.",
         "start": 491.3,
         "end": 492.91,
-        "translationEn": "No worries, Daddy Pig.",
+        "translationEn": "Don't worry, Daddy Pig.",
         "translationVi": "Đừng lo lắng, Papa Wutz."
     },
     {
@@ -934,7 +934,7 @@
         "text": "Kommt mit nach oben, Kinder.",
         "start": 494.64,
         "end": 496.35,
-        "translationEn": "Come up with me, children.",
+        "translationEn": "Come up here, kids.",
         "translationVi": "Đi lên trên nào, các con."
     },
     {
@@ -948,15 +948,15 @@
         "text": "Was hat Mama Wutz vor?",
         "start": 500.64,
         "end": 502.73,
-        "translationEn": "What does Mama Pig have planned?",
+        "translationEn": "What does Mama Wutz have planned?",
         "translationVi": "Mẹ Wutz định làm gì?"
     },
     {
         "text": "Ich zähle bis 3 Dann hüpfen wir genau hier so fest es",
         "start": 502.96,
         "end": 507.03,
-        "translationEn": "I count to 3, then we jump right here as hard as it.",
-        "translationVi": "Tôi đếm đến 3, sau đó chúng ta sẽ nhảy ngay tại đây, thật mạnh mẽ."
+        "translationEn": "I count to 3, then we jump right here as hard as we can.",
+        "translationVi": "Tôi đếm đến 3, rồi chúng ta sẽ nhảy ngay tại đây, mạnh mẽ như vậy."
     },
     {
         "text": "Geht.",
@@ -990,8 +990,8 @@
         "text": "Papa Wutz hat seinen Pfannkuchen wieder.",
         "start": 527.34,
         "end": 529.69,
-        "translationEn": "Daddy Pig has his pancake again.",
-        "translationVi": "Bố Wutz lại có bánh kếp của mình."
+        "translationEn": "Papa Pig has his pancake again.",
+        "translationVi": "Bố Wutz đã có lại chiếc bánh kếp của mình."
     },
     {
         "text": "Papa hat einen Pfannkuchen auf dem Kopf.",
@@ -1075,7 +1075,7 @@
         "start": 591.32,
         "end": 595.41,
         "translationEn": "Beautiful flowers grow from these seeds.",
-        "translationVi": "Từ những hạt giống này sẽ nở ra những bông hoa xinh đẹp."
+        "translationVi": "Từ những hạt giống này sẽ nở ra những bông hoa đẹp."
     },
     {
         "text": "Ich streue die Samenkörner auf den Boden.",
@@ -1103,7 +1103,7 @@
         "start": 604.96,
         "end": 607.03,
         "translationEn": "The seeds have disappeared.",
-        "translationVi": "Những hạt giống đã biến mất."
+        "translationVi": "Các hạt giống đã biến mất."
     },
     {
         "text": "Wie merkwürdig.",
@@ -1116,7 +1116,7 @@
         "text": "Ich bin sicher, dass ich hier Samen verstreut hatte.",
         "start": 608.38,
         "end": 611.21,
-        "translationEn": "I am sure that I had scattered seeds here.",
+        "translationEn": "I am sure that I scattered seeds here.",
         "translationVi": "Tôi chắc chắn rằng tôi đã rải hạt ở đây."
     },
     {
@@ -1137,21 +1137,21 @@
         "text": "Na gut, dann muss ich eben noch welche nehmen.",
         "start": 615.74,
         "end": 618.97,
-        "translationEn": "Well then, I guess I have to take some more.",
-        "translationVi": "Thôi được, vậy thì tôi phải lấy thêm một ít nữa."
+        "translationEn": "Well, then I guess I have to take some more.",
+        "translationVi": "Thôi được, vậy tôi phải lấy thêm một ít nữa."
     },
     {
         "text": "Wie ich schon sagte, ich streue die Samenkörner einfach auf den Boden.",
         "start": 619.1,
         "end": 623.57,
         "translationEn": "As I already said, I simply scatter the seeds on the ground.",
-        "translationVi": "Như tôi đã nói, tôi chỉ rải hạt giống lên mặt đất."
+        "translationVi": "Như tôi đã nói, tôi chỉ rải những hạt giống xuống đất."
     },
     {
         "text": "Ein kleiner Vogel pickt die Samenkörner von Opa Wutz auf.",
         "start": 625.68,
         "end": 629.95,
-        "translationEn": "A little bird is pecking up the seeds from Grandpa Wutz.",
+        "translationEn": "A little bird is pecking the seeds from Grandpa Pig.",
         "translationVi": "Một chú chim nhỏ đang mổ những hạt giống từ ông Wutz."
     },
     {
@@ -1159,14 +1159,14 @@
         "start": 629.82,
         "end": 632.45,
         "translationEn": "Hey, leave my seeds alone!",
-        "translationVi": "Này, hãy để hạt giống của tôi yên!"
+        "translationVi": "Này, để hạt giống của tôi lại!"
     },
     {
         "text": "Also, das sind meine ganzen Samen.",
         "start": 632.96,
         "end": 635.71,
         "translationEn": "So, these are all my seeds.",
-        "translationVi": "Vậy đây là tất cả hạt giống của tôi."
+        "translationVi": "Vậy, đây là tất cả hạt giống của tôi."
     },
     {
         "text": "Im dem Bauch von dem kleinen Vogel.",
@@ -1193,7 +1193,7 @@
         "text": "Ah, weg, da, weg!",
         "start": 644.56,
         "end": 646.41,
-        "translationEn": "Ah, away, there, away!",
+        "translationEn": "Ah, go away, there, go away!",
         "translationVi": "À, đi đi, đi đi!"
     },
     {
@@ -1207,7 +1207,7 @@
         "text": "Oma Wutz, die Vögel picken meine ganzen Blumensamen weg.",
         "start": 649.16,
         "end": 653.37,
-        "translationEn": "Grandma Wutz, the birds are pecking away all my flower seeds.",
+        "translationEn": "Grandma Wutz, the birds are picking all my flower seeds away.",
         "translationVi": "Bà Wutz, những con chim đang mổ hết hạt hoa của cháu."
     },
     {
@@ -1243,14 +1243,14 @@
         "start": 662.8,
         "end": 664.83,
         "translationEn": "What is a scarecrow?",
-        "translationVi": "Bù nhìn là gì?"
+        "translationVi": "Cái bù nhìn là gì?"
     },
     {
         "text": "Eine Vogelscheuche ist ein Mann aus Stroh, der den Vögeln Angst macht.",
         "start": 664.9,
         "end": 668.91,
-        "translationEn": "A scarecrow is a man made of straw that frightens the birds.",
-        "translationVi": "Một con bù nhìn là một người đàn ông làm bằng rơm, khiến cho những con chim sợ hãi."
+        "translationEn": "A scarecrow is a man made of straw that scares the birds.",
+        "translationVi": "Một con bù nhìn là một người làm bằng rơm, khiến cho những con chim sợ hãi."
     },
     {
         "text": "Das ist eine gute Idee, Oma Wutz.",
@@ -1263,7 +1263,7 @@
         "text": "Ich baue eine.",
         "start": 671.64,
         "end": 673.11,
-        "translationEn": "I'm building one.",
+        "translationEn": "I am building one.",
         "translationVi": "Tôi đang xây dựng một cái."
     },
     {
@@ -1271,7 +1271,7 @@
         "start": 672.98,
         "end": 674.61,
         "translationEn": "Everyone come along.",
-        "translationVi": "Tất cả cùng đi nào."
+        "translationVi": "Hãy cùng nhau đi nào."
     },
     {
         "text": "Wiedersehen, kleine Vögel.",
@@ -1291,7 +1291,7 @@
         "text": "Das ist Opa Wutz' Gartenschuppen.",
         "start": 681.94,
         "end": 684.4,
-        "translationEn": "That is Grandpa Pig's garden shed.",
+        "translationEn": "This is Grandpa Pig's garden shed.",
         "translationVi": "Đây là nhà kho vườn của ông Wutz."
     },
     {
@@ -1299,7 +1299,7 @@
         "start": 685.06,
         "end": 689.19,
         "translationEn": "There are a lot of things in here to build a scarecrow.",
-        "translationVi": "Trong này có rất nhiều thứ để làm một con bù nhìn."
+        "translationVi": "Ở đây có rất nhiều thứ để làm một con bù nhìn."
     },
     {
         "text": "Zuerst brauchen wir zwei Stöcke und etwas Kordel.",
@@ -1313,7 +1313,7 @@
         "start": 692.82,
         "end": 694.53,
         "translationEn": "We'll take care of that.",
-        "translationVi": "Chúng tôi sẽ lo liệu điều đó."
+        "translationVi": "Chúng tôi sẽ lo liệu việc đó."
     },
     {
         "text": "Pepper hat zwei Stöcke gefunden.",
@@ -1333,15 +1333,15 @@
         "text": "Gut, ich binde die Stöcke zusammen.",
         "start": 700.9,
         "end": 703.97,
-        "translationEn": "Alright, I will tie the sticks together.",
+        "translationEn": "Alright, I'll tie the sticks together.",
         "translationVi": "Tốt, tôi sẽ buộc các cây gậy lại với nhau."
     },
     {
         "text": "Das wird der Körper.",
         "start": 703.86,
         "end": 705.21,
-        "translationEn": "That will be the body.",
-        "translationVi": "Đây sẽ là cơ thể."
+        "translationEn": "This will be the body.",
+        "translationVi": "Đó sẽ là cơ thể."
     },
     {
         "text": "Oma Wutz hat etwas Stroh gefunden und einen alten Sack.",
@@ -1361,7 +1361,7 @@
         "text": "Ich stecke das Stroh in den Sack.",
         "start": 710.12,
         "end": 711.91,
-        "translationEn": "I put the straw in the bag.",
+        "translationEn": "I put the straw in the sack.",
         "translationVi": "Tôi cho rơm vào bao."
     },
     {
@@ -1383,7 +1383,7 @@
         "start": 718,
         "end": 720.59,
         "translationEn": "Here is a bag with old clothes.",
-        "translationVi": "Đây là một túi chứa đầy quần áo cũ."
+        "translationVi": "Đây là một túi với những bộ quần áo cũ."
     },
     {
         "text": "Schorsch hat ein Kleid gefunden.",
@@ -1403,14 +1403,14 @@
         "text": "Herr Vogelscheuche zieht doch kein Kleid an.",
         "start": 728.24,
         "end": 731.57,
-        "translationEn": "Mr. Scarecrow doesn't wear a dress after all.",
+        "translationEn": "Mr. Scarecrow doesn't wear a dress.",
         "translationVi": "Ông Vogelscheuche không mặc váy đâu."
     },
     {
         "text": "Pepper hat einen Mantel gefunden.",
         "start": 733.3,
         "end": 735.31,
-        "translationEn": "Pepper found a coat.",
+        "translationEn": "Pepper has found a coat.",
         "translationVi": "Pepper đã tìm thấy một chiếc áo khoác."
     },
     {
@@ -1425,7 +1425,7 @@
         "start": 739.34,
         "end": 741.17,
         "translationEn": "Schorsch found a hat.",
-        "translationVi": "Schorsch đã tìm thấy một cái mũ."
+        "translationVi": "Schorsch đã tìm thấy một chiếc mũ."
     },
     {
         "text": "Sehr gut, Schorsch.",
@@ -1439,7 +1439,7 @@
         "start": 743.06,
         "end": 746.15,
         "translationEn": "Mr. Scarecrow needs a face.",
-        "translationVi": "Ông Vogelscheuche cần một khuôn mặt."
+        "translationVi": "Ông Người rơm cần một khuôn mặt."
     },
     {
         "text": "Das stimmt.",
@@ -1452,7 +1452,7 @@
         "text": "Willst du mit Schorsch ein Gesicht für ihn malen?",
         "start": 747.16,
         "end": 749.91,
-        "translationEn": "Do you want to paint a face for Schorsch?",
+        "translationEn": "Do you want to paint a face for him with Schorsch?",
         "translationVi": "Bạn có muốn vẽ một khuôn mặt cho Schorsch không?"
     },
     {
@@ -1480,7 +1480,7 @@
         "text": "Fantastisch, Herr Vogelscheuche ist fertig.",
         "start": 759.3,
         "end": 761.89,
-        "translationEn": "Fantastic, Mr. Scarecrow is finished.",
+        "translationEn": "Fantastic, Mr. Scarecrow is ready.",
         "translationVi": "Tuyệt vời, ông Người rơm đã hoàn thành."
     },
     {
@@ -1494,7 +1494,7 @@
         "text": "Die kleinen Vögel suchen nach Opa Wutz' Blumensamen.",
         "start": 764.26,
         "end": 767.89,
-        "translationEn": "The little birds are searching for Grandpa Wutz's flower seeds.",
+        "translationEn": "The little birds are looking for Grandpa Wutz's flower seeds.",
         "translationVi": "Những chú chim nhỏ đang tìm hạt giống hoa của ông Wutz."
     },
     {
@@ -1502,7 +1502,7 @@
         "start": 767.84,
         "end": 770.85,
         "translationEn": "Look, the little birds are back again.",
-        "translationVi": "Nhìn kìa, những chú chim nhỏ đã trở lại rồi."
+        "translationVi": "Nhìn kìa, những chú chim nhỏ lại trở về rồi."
     },
     {
         "text": "Keine Sorge, Pepper.",
@@ -1516,7 +1516,7 @@
         "start": 772.08,
         "end": 774.53,
         "translationEn": "Mr. Scarecrow will scare them away.",
-        "translationVi": "Ông Vogelscheuche sẽ xua đuổi họ."
+        "translationVi": "Ông Người rơm sẽ xua đuổi họ."
     },
     {
         "text": "Es funktioniert.",
@@ -1530,7 +1530,7 @@
         "start": 781.12,
         "end": 783.69,
         "translationEn": "Mr. Scarecrow has scared away the birds.",
-        "translationVi": "Ông Vogelscheuche đã đuổi chim đi."
+        "translationVi": "Ông Vogelscheuche đã xua đuổi những con chim."
     },
     {
         "text": "Hurra!",
@@ -1565,7 +1565,7 @@
         "start": 797.86,
         "end": 799.89,
         "translationEn": "I have this for that.",
-        "translationVi": "Tôi có cái này để làm điều đó."
+        "translationVi": "Tôi có cái này cho điều đó."
     },
     {
         "text": "Was ist das, Oma?",
@@ -1586,14 +1586,14 @@
         "start": 803.28,
         "end": 806.27,
         "translationEn": "Grandpa, can you please give me some of the seeds?",
-        "translationVi": "Ông ơi, ông cho cháu một ít hạt được không?"
+        "translationVi": "Ông ơi, ông cho cháu một ít hạt được không ạ?"
     },
     {
         "text": "Kommt, ihr Vögelchen, Essenszeit.",
         "start": 810.36,
         "end": 813.49,
         "translationEn": "Come, little birds, it's mealtime.",
-        "translationVi": "Đến đây, các chú chim, đến giờ ăn rồi."
+        "translationVi": "Đến đây, các chú chim, đến giờ ăn."
     },
     {
         "text": "Jetzt haben die Vögel ihre eigenen Samen.",
@@ -1607,7 +1607,7 @@
         "start": 817.38,
         "end": 818.83,
         "translationEn": "Hooray!",
-        "translationVi": "Hooray!"
+        "translationVi": "Hurray!"
     },
     {
         "text": "Die kleinen Vögel sind wieder glücklich.",
@@ -1628,7 +1628,7 @@
         "start": 824.62,
         "end": 828.47,
         "translationEn": "But she is even happier that the little birds also have something to",
-        "translationVi": "Nhưng cô ấy còn vui hơn khi những chú chim nhỏ cũng có điều gì đó để"
+        "translationVi": "Nhưng cô ấy còn vui hơn khi những chú chim nhỏ cũng có chút gì đó để"
     },
     {
         "text": "Fressen haben.",
