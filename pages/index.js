@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import SEO, { generateBreadcrumbStructuredData, generateCourseStructuredData, generateFAQStructuredData } from '../components/SEO';
@@ -6,27 +6,18 @@ import LessonCard from '../components/LessonCard';
 import { SkeletonCard } from '../components/SkeletonLoader';
 import ModeSelectionPopup from '../components/ModeSelectionPopup';
 import { useAuth } from '../context/AuthContext';
-import { useLessons, prefetchLessons } from '../lib/hooks/useLessons';
 import { navigateWithLocale } from '../lib/navigation';
 
 const HomePage = () => {
   const { t } = useTranslation();
-  const [currentPage, setCurrentPage] = useState(1);
-  const [difficultyFilter, setDifficultyFilter] = useState('all');
+  const [categories, setCategories] = useState([]);
+  const [categoriesWithLessons, setCategoriesWithLessons] = useState({});
+  const [loading, setLoading] = useState(true);
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [showModePopup, setShowModePopup] = useState(false);
-  const itemsPerPage = 15;
+  const [difficultyFilter, setDifficultyFilter] = useState('all');
   const router = useRouter();
   const { user } = useAuth();
-
-  // Use SWR for data fetching with automatic caching
-  const { lessons, totalPages, isLoading: loading } = useLessons({
-    page: currentPage,
-    limit: itemsPerPage,
-    difficulty: difficultyFilter
-  });
-
-
 
   useEffect(() => {
     // Set initial filter based on user level or default to beginner for non-logged-in users
@@ -38,33 +29,53 @@ const HomePage = () => {
     }
   }, [user]);
 
-  // Reset to page 1 when filter changes
-  useEffect(() => {
-    setCurrentPage(1);
+  const fetchCategoriesWithLessons = useCallback(async () => {
+    try {
+      setLoading(true);
+      
+      // Fetch all active categories
+      const categoriesRes = await fetch('/api/article-categories?activeOnly=true');
+      const { categories: allCategories } = await categoriesRes.json();
+      
+      // Fetch lessons for each category
+      const categoriesData = {};
+      for (const category of allCategories) {
+        const lessonsRes = await fetch(
+          `/api/lessons?category=${category.slug}&limit=6&difficulty=${difficultyFilter}`
+        );
+        const data = await lessonsRes.json();
+        
+        // Only include categories that have lessons
+        if (data.lessons && data.lessons.length > 0) {
+          categoriesData[category.slug] = {
+            category,
+            lessons: data.lessons,
+            totalCount: data.total || data.lessons.length
+          };
+        }
+      }
+      
+      // Sort categories: non-system first, then system categories
+      const sortedCategories = allCategories
+        .filter(cat => categoriesData[cat.slug])
+        .sort((a, b) => {
+          if (a.isSystem === b.isSystem) return a.order - b.order;
+          return a.isSystem ? 1 : -1;
+        });
+      
+      setCategories(sortedCategories);
+      setCategoriesWithLessons(categoriesData);
+    } catch (error) {
+      console.error('Error fetching categories and lessons:', error);
+    } finally {
+      setLoading(false);
+    }
   }, [difficultyFilter]);
 
-  // Prefetch next page for smoother pagination
+  // Fetch categories and their lessons
   useEffect(() => {
-    if (currentPage < totalPages) {
-      prefetchLessons({
-        page: currentPage + 1,
-        limit: itemsPerPage,
-        difficulty: difficultyFilter
-      });
-    }
-  }, [currentPage, totalPages, difficultyFilter]);
-
-  const nextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
-  const prevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
+    fetchCategoriesWithLessons();
+  }, [fetchCategoriesWithLessons]);
 
   const handleLessonClick = (lesson) => {
     // Increment view count
@@ -89,6 +100,10 @@ const HomePage = () => {
   const handleClosePopup = () => {
     setShowModePopup(false);
     setSelectedLesson(null);
+  };
+
+  const handleViewAll = (categorySlug) => {
+    navigateWithLocale(router, `/category/${categorySlug}`);
   };
 
   // Structured data for homepage
@@ -133,9 +148,12 @@ const HomePage = () => {
     }
   ];
 
+  // Get all lessons for structured data
+  const allLessons = Object.values(categoriesWithLessons).flatMap(cat => cat.lessons);
+
   const combinedStructuredData = [
     breadcrumbData,
-    generateCourseStructuredData(lessons, difficultyFilter),
+    generateCourseStructuredData(allLessons, difficultyFilter),
     generateFAQStructuredData(faqData)
   ];
 
@@ -177,48 +195,50 @@ const HomePage = () => {
           })}
         </div>
 
-
-
-        <div className="lesson-cards-container">
-          {loading ? (
-            Array.from({ length: itemsPerPage }).map((_, i) => (
-              <SkeletonCard key={i} />
-            ))
-          ) : lessons.length === 0 ? (
-            <div className="empty-state">
-              <p>{t('homePage.noLessons')}</p>
+        {loading ? (
+          <div className="category-section">
+            <div className="horizontal-scroll">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <SkeletonCard key={i} />
+              ))}
             </div>
-          ) : (
-            lessons.map(lesson => (
-              <LessonCard
-                key={lesson.id}
-                lesson={lesson}
-                onClick={() => handleLessonClick(lesson)}
-              />
-            ))
-          )}
-        </div>
-
-        {totalPages > 1 && (
-          <div className="pagination-controls">
-            <button
-              onClick={prevPage}
-              disabled={currentPage === 1}
-              className="pagination-btn"
-            >
-              ‹ {t('homePage.pagination.previous')}
-            </button>
-            <span className="pagination-info">
-              {t('homePage.pagination.page', { current: currentPage, total: totalPages })}
-            </span>
-            <button
-              onClick={nextPage}
-              disabled={currentPage === totalPages}
-              className="pagination-btn"
-            >
-              {t('homePage.pagination.next')} ›
-            </button>
           </div>
+        ) : categories.length === 0 ? (
+          <div className="empty-state">
+            <p>{t('homePage.noLessons')}</p>
+          </div>
+        ) : (
+          categories.map((category) => {
+            const categoryData = categoriesWithLessons[category.slug];
+            if (!categoryData) return null;
+
+            return (
+              <div key={category.slug} className="category-section">
+                <div className="category-header">
+                  <h2 className="category-title">
+                    {category.name} ({categoryData.totalCount} lessons)
+                  </h2>
+                  <button 
+                    className="view-all-btn"
+                    onClick={() => handleViewAll(category.slug)}
+                  >
+                    View all ›
+                  </button>
+                </div>
+
+                <div className="horizontal-scroll">
+                  {categoryData.lessons.map(lesson => (
+                    <div key={lesson.id} className="horizontal-card">
+                      <LessonCard
+                        lesson={lesson}
+                        onClick={() => handleLessonClick(lesson)}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })
         )}
 
       </div>

@@ -28,8 +28,13 @@ function LessonFormPage() {
     title: '',
     description: '',
     level: 'A1',
+    category: '', // T038: Add category field
     videoDuration: 0
   });
+
+  // T039: Fetch categories for dropdown
+  const [categories, setCategories] = useState([]);
+  const [loadingCategories, setLoadingCategories] = useState(true);
 
   const [audioSource, setAudioSource] = useState('youtube');
   const [audioFile, setAudioFile] = useState(null);
@@ -78,6 +83,7 @@ function LessonFormPage() {
           title: lesson.title,
           description: lesson.description,
           level: lesson.level || 'A1',
+          category: lesson.category?._id || lesson.category || '', // T040: Load category
           videoDuration: lesson.videoDuration || 0
         });
         
@@ -111,6 +117,30 @@ function LessonFormPage() {
       loadLesson(id);
     }
   }, [id, isNewLesson, loadLesson]);
+
+  // T039: Fetch active categories on mount
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        setLoadingCategories(true);
+        const token = localStorage.getItem('token');
+        const res = await fetch('/api/article-categories?activeOnly=false', {
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        
+        if (res.ok) {
+          const data = await res.json();
+          setCategories(data.categories || []);
+        }
+      } catch (error) {
+        console.error('Error fetching categories:', error);
+      } finally {
+        setLoadingCategories(false);
+      }
+    };
+    
+    fetchCategories();
+  }, []);
 
   const validateSRT = (text) => {
     if (!text.trim()) return true;
@@ -883,6 +913,32 @@ function LessonFormPage() {
                     <option value="C1">C1</option>
                     <option value="C2">C2</option>
                   </select>
+                </div>
+              )}
+              {/* T038-T041: Category Dropdown */}
+              {!isNewLesson && (
+                <div className={styles.formGroup}>
+                  <label className={styles.label}>Danh mục</label>
+                  <select
+                    value={formData.category}
+                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                    className={`${styles.select} ${errors.category ? styles.error : ''}`}
+                    disabled={loadingCategories}
+                  >
+                    {loadingCategories ? (
+                      <option value="">Đang tải...</option>
+                    ) : (
+                      <>
+                        <option value="">-- Chọn danh mục --</option>
+                        {categories.map(cat => (
+                          <option key={cat._id} value={cat._id}>
+                            {cat.name} {cat.isSystem ? '(Mặc định)' : ''}
+                          </option>
+                        ))}
+                      </>
+                    )}
+                  </select>
+                  {errors.category && <span className={styles.errorText}>{errors.category}</span>}
                 </div>
               )}
               <div className={styles.formGroup}>
