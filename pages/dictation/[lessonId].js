@@ -15,10 +15,7 @@ import {
   DictationVideoSection,
   TranscriptPanel,
   MobileBottomControls,
-  DictationSkeleton,
-  DictationMobileSlide,
-  DictationDesktopArea,
-  SlideIndicators
+  DictationSkeleton
 } from '../../components/dictation';
 
 
@@ -3090,85 +3087,7 @@ const DictationPageContent = () => {
                   </div>
                 </div>
               ) : isMobile ? (
-                // Mobile: Show either dictation slides or transcript list based on mode
-                learningMode === 'dictation' ? (
-                  /* Mobile Dictation Mode: Horizontal slides */
-                  <div className={styles.dictationSlidesWrapper}>
-                    {/* Slide Indicators - Dots navigation */}
-                    <SlideIndicators
-                      totalSlides={transcriptData.length}
-                      currentIndex={currentSentenceIndex}
-                      completedSentences={completedSentences}
-                      onDotClick={(index) => {
-                        const sentence = transcriptData[index];
-                        if (sentence) {
-                          handleSentenceClick(sentence.start, sentence.end);
-                        }
-                      }}
-                    />
-                    
-                    <div 
-                      className={styles.dictationSlides}
-                      ref={dictationSlidesRef}
-                    >
-                      {/* Spacer for slides before lazy range */}
-                      {lazySlideRange.start > 0 && (
-                        <div 
-                          className={styles.slidesSpacer}
-                          style={{ 
-                            width: `calc(${lazySlideRange.start} * (94% + 12px))`,
-                            flexShrink: 0
-                          }}
-                        />
-                      )}
-
-                      {/* Render only lazy-loaded slides */}
-                      {lazySlidesToRender.map((originalIndex, arrayIndex) => (
-                        <DictationMobileSlide
-                          key={originalIndex}
-                          originalIndex={originalIndex}
-                          arrayIndex={arrayIndex}
-                          lazySlideRangeStart={lazySlideRange.start}
-                          sentence={transcriptData[originalIndex]}
-                          isCompleted={completedSentences.includes(originalIndex)}
-                          isActive={originalIndex === currentSentenceIndex}
-                          currentSentenceIndex={currentSentenceIndex}
-                          revealedHintWords={revealedHintWords}
-                          wordComparisonResults={wordComparisonResults}
-                          partialRevealedChars={partialRevealedChars}
-                          fullSentenceInputs={fullSentenceInputs}
-                          sortedTranscriptIndices={sortedTranscriptIndices}
-                          learningMode={learningMode}
-                          showTranslation={showTranslation}
-                          voiceRecordingResult={originalIndex === currentSentenceIndex ? voiceRecordingResult : null}
-                          onSlideClick={handleMobileSlideClick}
-                          onTouchStart={handleTouchStart}
-                          onTouchMove={handleTouchMove}
-                          onTouchEnd={handleTouchEnd}
-                          onHintWordClick={showHintWordSuggestion}
-                          onWordClickForPopup={handleWordClickForPopup}
-                          onInputChange={handleMobileInputChange}
-                          onCheckSubmit={handleFullSentenceSubmit}
-                          onNextClick={goToNextSentence}
-                          calculatePartialReveals={calculatePartialReveals}
-                          t={t}
-                        />
-                      ))}
-
-                      {/* Spacer for slides after lazy range */}
-                      {lazySlideRange.end < mobileVisibleIndices.length && (
-                        <div 
-                          className={styles.slidesSpacer}
-                          style={{ 
-                            width: `calc(${mobileVisibleIndices.length - lazySlideRange.end} * (94% + 12px))`,
-                            flexShrink: 0
-                          }}
-                        />
-                      )}
-                    </div>
-                  </div>
-                ) : (
-                  /* Mobile Shadowing Mode: Transcript list (no separate header) */
+                /* Mobile: Shadowing Mode - Transcript list */
                   <div className={styles.mobileTranscriptList} ref={mobileShadowingListRef}>
                     {transcriptData.map((segment, originalIndex) => {
                       const isCompleted = completedSentences.includes(originalIndex);
@@ -3250,31 +3169,7 @@ const DictationPageContent = () => {
                       );
                     })}
                   </div>
-                )
-              ) : (
-                /* Desktop: Full Sentence Mode - Using Component */
-                <DictationDesktopArea
-                  transcriptData={transcriptData}
-                  currentSentenceIndex={currentSentenceIndex}
-                  completedSentences={completedSentences}
-                  revealedHintWords={revealedHintWords}
-                  wordComparisonResults={wordComparisonResults}
-                  partialRevealedChars={partialRevealedChars}
-                  fullSentenceInputs={fullSentenceInputs}
-                  showTranslation={showTranslation}
-                  isLoadingTranslation={isLoadingTranslation}
-                  sentenceTranslation={sentenceTranslation}
-                  onInputChange={(idx, value) => setFullSentenceInputs(prev => ({ ...prev, [idx]: value }))}
-                  onSubmit={handleFullSentenceSubmit}
-                  onHintWordClick={showHintWordSuggestion}
-                  onWordClickForPopup={handleWordClickForPopup}
-                  onCalculatePartialReveals={calculatePartialReveals}
-                  renderCompletedSentenceWithWordBoxes={renderCompletedSentenceWithWordBoxes}
-                  learningMode={learningMode}
-                  isPlaying={isPlaying}
-                  activeWordIndex={activeWordIndex}
-                />
-              )}
+              ) : null}
             </div>
             </div>
           )}
