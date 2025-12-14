@@ -5,6 +5,7 @@ import Head from 'next/head';
 import ProtectedPage from '../../../components/ProtectedPage';
 import AdminDashboardLayout from '../../../components/AdminDashboardLayout';
 import { AdminDashboardPageSkeleton } from '../../../components/SkeletonLoader';
+import LessonFilters from '../../../components/admin/LessonFilters';
 import { toast } from 'react-toastify';
 import { broadcastLessonUpdate, invalidateLessonsCache } from '../../../lib/hooks/useLessons';
 import styles from '../../../styles/adminDashboard.module.css';
@@ -17,15 +18,24 @@ function AdminLessonsPage() {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
+  const [filters, setFilters] = useState({
+    levels: [],
+    categories: [],
+    sources: [],
+    sortBy: 'newest'
+  });
+  const [categories, setCategories] = useState([]);
+  const [loadingCategories, setLoadingCategories] = useState(true);
   const itemsPerPage = 10;
 
   useEffect(() => {
     fetchLessons();
+    fetchCategories();
   }, []);
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchTerm]);
+  }, [searchTerm, filters]);
 
   const fetchLessons = async () => {
     try {
@@ -41,9 +51,28 @@ function AdminLessonsPage() {
       setSelectedLessons(new Set());
     } catch (error) {
       console.error('Error fetching lessons:', error);
-      toast.error('Kann Lektionsliste nicht laden');
+      toast.error('Không thể tải danh sách bài học');
     } finally {
       setLoading(false);
+    }
+  };
+
+  const fetchCategories = async () => {
+    try {
+      setLoadingCategories(true);
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/article-categories?activeOnly=false', {
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      
+      if (res.ok) {
+        const data = await res.json();
+        setCategories(data.categories || []);
+      }
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+    } finally {
+      setLoadingCategories(false);
     }
   };
 
@@ -133,17 +162,98 @@ function AdminLessonsPage() {
     }
   };
 
-  // Filter and pagination
-  const filteredLessons = lessons.filter(lesson =>
-    lesson.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    lesson.displayTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    lesson.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    (lesson.level && lesson.level.toLowerCase().includes(searchTerm.toLowerCase()))
-  );
+  // Determine source of lesson
+  const getLessonSource = (lesson) => {
+    if (lesson.youtubeUrl) return 'youtube';
+    if (lesson.audio && lesson.audio.startsWith('http')) return 'url';
+    if (lesson.audio && lesson.audio !== 'youtube') return 'file';
+    return 'youtube'; // default
+  };
 
+  // Filter and sort logic
+  const getFilteredAndSortedLessons = () => {
+    let result = [...lessons];
+
+    // Apply text search
+    if (searchTerm.trim()) {
+      const search = searchTerm.toLowerCase();
+      result = result.filter(lesson =>
+        lesson.id?.toLowerCase().includes(search) ||
+        lesson.title?.toLowerCase().includes(search) ||
+        lesson.displayTitle?.toLowerCase().includes(search) ||
+        lesson.description?.toLowerCase().includes(search) ||
+        lesson.level?.toLowerCase().includes(search)
+      );
+    }
+
+    // Apply level filter
+    if (filters.levels.length > 0) {
+      result = result.filter(lesson => 
+        filters.levels.includes(lesson.level)
+      );
+    }
+
+    // Apply category filter
+    if (filters.categories.length > 0) {
+      result = result.filter(lesson => {
+        const categoryId = lesson.category?._id || lesson.category;
+        return filters.categories.includes(categoryId);
+      });
+    }
+
+    // Apply source filter
+    if (filters.sources.length > 0) {
+      result = result.filter(lesson => 
+        filters.sources.includes(getLessonSource(lesson))
+      );
+    }
+
+    // Apply sorting
+    switch (filters.sortBy) {
+      case 'newest':
+        result.sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
+        break;
+      case 'oldest':
+        result.sort((a, b) => new Date(a.createdAt || 0) - new Date(b.createdAt || 0));
+        break;
+      case 'title-asc':
+        result.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+        break;
+      case 'title-desc':
+        result.sort((a, b) => (b.title || '').localeCompare(a.title || ''));
+        break;
+      case 'level-asc':
+        const levelOrder = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+        result.sort((a, b) => {
+          const aIndex = levelOrder.indexOf(a.level || 'A1');
+          const bIndex = levelOrder.indexOf(b.level || 'A1');
+          return aIndex - bIndex;
+        });
+        break;
+      case 'level-desc':
+        const levelOrderDesc = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+        result.sort((a, b) => {
+          const aIndex = levelOrderDesc.indexOf(a.level || 'A1');
+          const bIndex = levelOrderDesc.indexOf(b.level || 'A1');
+          return bIndex - aIndex;
+        });
+        break;
+      default:
+        result.sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
+    }
+
+    return result;
+  };
+
+  const filteredLessons = getFilteredAndSortedLessons();
   const totalPages = Math.ceil(filteredLessons.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const paginatedLessons = filteredLessons.slice(startIndex, startIndex + itemsPerPage);
+
+  // Handle filter changes
+  const handleFilterChange = (newFilters) => {
+    setFilters(newFilters);
+  };
 
   return (
     <>
@@ -289,11 +399,19 @@ function AdminLessonsPage() {
           )}
         </div>
 
-        {/* Actions */}
+        {/* Lesson Filters */}
+        <LessonFilters
+          onFilterChange={handleFilterChange}
+          categories={categories}
+          totalCount={lessons.length}
+          filteredCount={filteredLessons.length}
+        />
+
+        {/* Search & Actions */}
         <div className={styles.actions}>
           <input
             type="text"
-            placeholder="🔍 Nach ID, Titel, Beschreibung oder Niveau suchen..."
+            placeholder="🔍 Tìm kiếm theo ID, tiêu đề, mô tả..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className={styles.searchInput}
@@ -303,7 +421,7 @@ function AdminLessonsPage() {
               onClick={handleDeleteSelected}
               className={styles.dangerButton}
             >
-              🗑️ {selectedLessons.size} löschen
+              🗑️ Xóa {selectedLessons.size} bài
             </button>
           )}
         </div>

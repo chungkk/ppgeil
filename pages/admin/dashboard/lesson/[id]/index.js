@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import ProtectedPage from '../../../../../components/ProtectedPage';
 import AdminDashboardLayout from '../../../../../components/AdminDashboardLayout';
+import LessonWizard from '../../../../../components/admin/LessonWizard';
 import { toast } from 'react-toastify';
 import styles from '../../../../../styles/adminDashboard.module.css';
 
@@ -629,10 +630,38 @@ function LessonFormPage() {
     }
   };
 
+  // Use Wizard for new lessons
+  if (isNewLesson) {
+    return (
+      <>
+        <Head>
+          <title>Tạo bài học mới - Admin Dashboard</title>
+        </Head>
+
+        <AdminDashboardLayout>
+          <div className={styles.pageHeader}>
+            <div>
+              <h1 className={styles.pageTitle}>➕ Tạo bài học mới</h1>
+              <p className={styles.pageSubtitle}>
+                Làm theo 4 bước đơn giản để tạo bài học
+              </p>
+            </div>
+          </div>
+
+          <LessonWizard 
+            categories={categories}
+            loadingCategories={loadingCategories}
+          />
+        </AdminDashboardLayout>
+      </>
+    );
+  }
+
+  // Use traditional form for editing
   if (loading) {
     return (
       <AdminDashboardLayout>
-        <div className={styles.loadingState}>Lädt...</div>
+        <div className={styles.loadingState}>Đang tải...</div>
       </AdminDashboardLayout>
     );
   }
@@ -640,7 +669,7 @@ function LessonFormPage() {
   return (
     <>
       <Head>
-        <title>{isNewLesson ? 'Neue Lektion' : 'Lektion bearbeiten'} - Admin Dashboard</title>
+        <title>Chỉnh sửa bài học - Admin Dashboard</title>
       </Head>
 
       <AdminDashboardLayout>
@@ -885,31 +914,29 @@ function LessonFormPage() {
                 </div>
               )}
               {/* T038-T041: Category Dropdown */}
-              {!isNewLesson && (
-                <div className={styles.formGroup}>
-                  <label className={styles.label}>Danh mục</label>
-                  <select
-                    value={formData.category}
-                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                    className={`${styles.select} ${errors.category ? styles.error : ''}`}
-                    disabled={loadingCategories}
-                  >
-                    {loadingCategories ? (
-                      <option value="">Đang tải...</option>
-                    ) : (
-                      <>
-                        <option value="">-- Chọn danh mục --</option>
-                        {categories.map(cat => (
-                          <option key={cat._id} value={cat._id}>
-                            {cat.name} {cat.isSystem ? '(Mặc định)' : ''}
-                          </option>
-                        ))}
-                      </>
-                    )}
-                  </select>
-                  {errors.category && <span className={styles.errorText}>{errors.category}</span>}
-                </div>
-              )}
+              <div className={styles.formGroup}>
+                <label className={styles.label}>Danh mục</label>
+                <select
+                  value={formData.category}
+                  onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                  className={`${styles.select} ${errors.category ? styles.error : ''}`}
+                  disabled={loadingCategories}
+                >
+                  {loadingCategories ? (
+                    <option value="">Đang tải...</option>
+                  ) : (
+                    <>
+                      <option value="">-- Chọn danh mục --</option>
+                      {categories.map(cat => (
+                        <option key={cat._id} value={cat._id}>
+                          {cat.name} {cat.isSystem ? '(Mặc định)' : ''}
+                        </option>
+                      ))}
+                    </>
+                  )}
+                </select>
+                {errors.category && <span className={styles.errorText}>{errors.category}</span>}
+              </div>
               <div className={styles.formGroup}>
                 <label className={styles.label}>Titel *</label>
                 <input

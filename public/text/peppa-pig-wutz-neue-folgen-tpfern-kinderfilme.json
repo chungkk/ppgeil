@@ -1,0 +1,3317 @@
+[
+    {
+        "text": "Ich bin Pepper Wutz.",
+        "start": 0,
+        "end": 5.170000171661377,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 0,
+                "end": 0.05999999865889549
+            },
+            {
+                "word": "bin",
+                "start": 0.05999999865889549,
+                "end": 4.139999866485596
+            },
+            {
+                "word": "Pepper",
+                "start": 4.139999866485596,
+                "end": 4.559999942779541
+            },
+            {
+                "word": "Wutz.",
+                "start": 4.559999942779541,
+                "end": 4.820000171661377
+            }
+        ],
+        "translationEn": "I am Pepper Wutz.",
+        "translationVi": "Tôi là Pepper Wutz."
+    },
+    {
+        "text": "Das ist mein kleiner Bruder Schorsch.",
+        "start": 5.439999980926514,
+        "end": 7.830000019073486,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 5.519999980926514,
+                "end": 6.059999942779541
+            },
+            {
+                "word": "ist",
+                "start": 6.059999942779541,
+                "end": 6.260000228881836
+            },
+            {
+                "word": "mein",
+                "start": 6.260000228881836,
+                "end": 6.360000133514404
+            },
+            {
+                "word": "kleiner",
+                "start": 6.360000133514404,
+                "end": 6.880000114440918
+            },
+            {
+                "word": "Bruder",
+                "start": 6.880000114440918,
+                "end": 7.059999942779541
+            },
+            {
+                "word": "Schorsch.",
+                "start": 7.059999942779541,
+                "end": 7.480000019073486
+            }
+        ],
+        "translationEn": "This is my little brother George.",
+        "translationVi": "Đây là em trai nhỏ của tôi, Schorsch."
+    },
+    {
+        "text": "Das ist Mama Wutz.",
+        "start": 8.600000305175781,
+        "end": 10.049999809265136,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 8.680000305175781,
+                "end": 8.779999732971191
+            },
+            {
+                "word": "ist",
+                "start": 8.779999732971191,
+                "end": 9.039999961853027
+            },
+            {
+                "word": "Mama",
+                "start": 9.039999961853027,
+                "end": 9.300000190734863
+            },
+            {
+                "word": "Wutz.",
+                "start": 9.300000190734863,
+                "end": 9.699999809265137
+            }
+        ],
+        "translationEn": "This is Mama Pig.",
+        "translationVi": "Đây là mẹ Wutz."
+    },
+    {
+        "text": "Und das ist Papa Wutz.",
+        "start": 10.659999771118164,
+        "end": 12.530000305175781,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 10.739999771118164,
+                "end": 10.979999542236328
+            },
+            {
+                "word": "das",
+                "start": 10.979999542236328,
+                "end": 11.199999809265137
+            },
+            {
+                "word": "ist",
+                "start": 11.199999809265137,
+                "end": 11.420000076293945
+            },
+            {
+                "word": "Papa",
+                "start": 11.420000076293945,
+                "end": 11.699999809265137
+            },
+            {
+                "word": "Wutz.",
+                "start": 11.699999809265137,
+                "end": 12.180000305175781
+            }
+        ],
+        "translationEn": "And this is Daddy Pig.",
+        "translationVi": "Và đây là Papa Wutz."
+    },
+    {
+        "text": "Pepper Wutz töpfern.",
+        "start": 14.499999923706055,
+        "end": 18.809999084472658,
+        "wordTimings": [
+            {
+                "word": "Pepper",
+                "start": 14.579999923706055,
+                "end": 14.9399995803833
+            },
+            {
+                "word": "Wutz",
+                "start": 14.9399995803833,
+                "end": 15.260000228881836
+            },
+            {
+                "word": "töpfern.",
+                "start": 17.799999237060547,
+                "end": 18.459999084472656
+            }
+        ],
+        "translationEn": "Pottery with Pepper Wutz.",
+        "translationVi": "Nặn đất sét Pepper Wutz."
+    },
+    {
+        "text": "Pepper und Schorsch sind zum Spielen bei Zoe Zebra.",
+        "start": 20.86000053405762,
+        "end": 23.690000152587892,
+        "wordTimings": [
+            {
+                "word": "Pepper",
+                "start": 20.940000534057617,
+                "end": 20.940000534057617
+            },
+            {
+                "word": "und",
+                "start": 20.940000534057617,
+                "end": 21.1200008392334
+            },
+            {
+                "word": "Schorsch",
+                "start": 21.1200008392334,
+                "end": 21.459999084472656
+            },
+            {
+                "word": "sind",
+                "start": 21.459999084472656,
+                "end": 21.760000228881836
+            },
+            {
+                "word": "zum",
+                "start": 21.760000228881836,
+                "end": 22.420000076293945
+            },
+            {
+                "word": "Spielen",
+                "start": 22.420000076293945,
+                "end": 22.420000076293945
+            },
+            {
+                "word": "bei",
+                "start": 22.420000076293945,
+                "end": 22.6200008392334
+            },
+            {
+                "word": "Zoe",
+                "start": 22.6200008392334,
+                "end": 22.920000076293945
+            },
+            {
+                "word": "Zebra.",
+                "start": 22.920000076293945,
+                "end": 23.34000015258789
+            }
+        ],
+        "translationEn": "Pepper and George are over at Zoe Zebra's to play.",
+        "translationVi": "Pepper và Schorsch đang chơi với Zoe Zebra."
+    },
+    {
+        "text": "Zoes kleine Schwestern Susi und Sina basteln einen Dschungel aus Knetmasse.",
+        "start": 24.639999313354494,
+        "end": 29.249999618530275,
+        "wordTimings": [
+            {
+                "word": "Zoes",
+                "start": 24.719999313354492,
+                "end": 24.979999542236328
+            },
+            {
+                "word": "kleine",
+                "start": 24.979999542236328,
+                "end": 25.760000228881836
+            },
+            {
+                "word": "Schwestern",
+                "start": 25.760000228881836,
+                "end": 25.899999618530273
+            },
+            {
+                "word": "Susi",
+                "start": 25.899999618530273,
+                "end": 26.360000610351562
+            },
+            {
+                "word": "und",
+                "start": 26.360000610351562,
+                "end": 26.559999465942383
+            },
+            {
+                "word": "Sina",
+                "start": 26.559999465942383,
+                "end": 26.8799991607666
+            },
+            {
+                "word": "basteln",
+                "start": 26.8799991607666,
+                "end": 27.31999969482422
+            },
+            {
+                "word": "einen",
+                "start": 27.31999969482422,
+                "end": 27.799999237060547
+            },
+            {
+                "word": "Dschungel",
+                "start": 27.799999237060547,
+                "end": 28.020000457763672
+            },
+            {
+                "word": "aus",
+                "start": 28.020000457763672,
+                "end": 28.34000015258789
+            },
+            {
+                "word": "Knetmasse.",
+                "start": 28.34000015258789,
+                "end": 28.899999618530273
+            }
+        ],
+        "translationEn": "Zoe's little sisters Susi and Sina are making a jungle out of modeling clay.",
+        "translationVi": "Hai em gái nhỏ của Zoe, Susi và Sina, đang làm một khu rừng nhiệt đới từ bột nặn."
+    },
+    {
+        "text": "Schorsch hat eine kleine Schwester.",
+        "start": 29.70000068664551,
+        "end": 30.32999954223633,
+        "wordTimings": [
+            {
+                "word": "Schorsch",
+                "start": 29.780000686645508,
+                "end": 29.780000686645508
+            },
+            {
+                "word": "hat",
+                "start": 29.780000686645508,
+                "end": 29.979999542236328
+            },
+            {
+                "word": "eine",
+                "start": 29.979999542236328,
+                "end": 29.979999542236328
+            },
+            {
+                "word": "kleine",
+                "start": 29.979999542236328,
+                "end": 29.979999542236328
+            },
+            {
+                "word": "Schwester.",
+                "start": 29.979999542236328,
+                "end": 29.979999542236328
+            }
+        ],
+        "translationEn": "Schorsch has a little sister.",
+        "translationVi": "Schorsch có một em gái nhỏ."
+    },
+    {
+        "text": "Pepper hat einen Dinosaurier aus Knete gemacht.",
+        "start": 29.89999954223633,
+        "end": 32.16999969482422,
+        "wordTimings": [
+            {
+                "word": "Pepper",
+                "start": 29.979999542236328,
+                "end": 29.979999542236328
+            },
+            {
+                "word": "hat",
+                "start": 29.979999542236328,
+                "end": 29.979999542236328
+            },
+            {
+                "word": "einen",
+                "start": 29.979999542236328,
+                "end": 30.15999984741211
+            },
+            {
+                "word": "Dinosaurier",
+                "start": 30.15999984741211,
+                "end": 30.920000076293945
+            },
+            {
+                "word": "aus",
+                "start": 30.920000076293945,
+                "end": 31.139999389648438
+            },
+            {
+                "word": "Knete",
+                "start": 31.139999389648438,
+                "end": 31.3799991607666
+            },
+            {
+                "word": "gemacht.",
+                "start": 31.3799991607666,
+                "end": 31.81999969482422
+            }
+        ],
+        "translationEn": "Pepper made a dinosaur out of modeling clay.",
+        "translationVi": "Pepper đã làm một con khủng long bằng đất sét."
+    },
+    {
+        "text": "Pepper und Zoe spielen Picknick mit ihren Kuscheltieren.",
+        "start": 32.780000610351564,
+        "end": 36.16999969482422,
+        "wordTimings": [
+            {
+                "word": "Pepper",
+                "start": 32.86000061035156,
+                "end": 33.540000915527344
+            },
+            {
+                "word": "und",
+                "start": 33.540000915527344,
+                "end": 33.7400016784668
+            },
+            {
+                "word": "Zoe",
+                "start": 33.7400016784668,
+                "end": 34.040000915527344
+            },
+            {
+                "word": "spielen",
+                "start": 34.040000915527344,
+                "end": 34.36000061035156
+            },
+            {
+                "word": "Picknick",
+                "start": 34.36000061035156,
+                "end": 34.79999923706055
+            },
+            {
+                "word": "mit",
+                "start": 34.79999923706055,
+                "end": 34.97999954223633
+            },
+            {
+                "word": "ihren",
+                "start": 34.97999954223633,
+                "end": 35.279998779296875
+            },
+            {
+                "word": "Kuscheltieren.",
+                "start": 35.279998779296875,
+                "end": 35.81999969482422
+            }
+        ],
+        "translationEn": "Pepper and Zoe are having a picnic with their stuffed animals.",
+        "translationVi": "Pepper và Zoe đang chơi picnic với những con thú nhồi bông của mình."
+    },
+    {
+        "text": "Einen schönen guten Tag, Herr Affe.",
+        "start": 36.19999877929688,
+        "end": 38.48999938964844,
+        "wordTimings": [
+            {
+                "word": "Einen",
+                "start": 36.279998779296875,
+                "end": 36.52000045776367
+            },
+            {
+                "word": "schönen",
+                "start": 36.52000045776367,
+                "end": 37.040000915527344
+            },
+            {
+                "word": "guten",
+                "start": 37.040000915527344,
+                "end": 37.63999938964844
+            },
+            {
+                "word": "Tag,",
+                "start": 37.63999938964844,
+                "end": 37.65999984741211
+            },
+            {
+                "word": "Herr",
+                "start": 38.08000183105469,
+                "end": 38.08000183105469
+            },
+            {
+                "word": "Affe.",
+                "start": 38.08000183105469,
+                "end": 38.13999938964844
+            }
+        ],
+        "translationEn": "Good day, Mr. Monkey.",
+        "translationVi": "Chào ông Khỉ, chúc ông một ngày tốt lành."
+    },
+    {
+        "text": "Möchten Sie gerne eine Tasse Tee?",
+        "start": 38.57999984741211,
+        "end": 40.609998321533205,
+        "wordTimings": [
+            {
+                "word": "Möchten",
+                "start": 38.65999984741211,
+                "end": 38.65999984741211
+            },
+            {
+                "word": "Sie",
+                "start": 38.65999984741211,
+                "end": 38.939998626708984
+            },
+            {
+                "word": "gerne",
+                "start": 38.939998626708984,
+                "end": 39.31999969482422
+            },
+            {
+                "word": "eine",
+                "start": 39.31999969482422,
+                "end": 39.52000045776367
+            },
+            {
+                "word": "Tasse",
+                "start": 39.52000045776367,
+                "end": 40
+            },
+            {
+                "word": "Tee?",
+                "start": 40,
+                "end": 40.2599983215332
+            }
+        ],
+        "translationEn": "Would you like a cup of tea?",
+        "translationVi": "Bạn có muốn một tách trà không?"
+    },
+    {
+        "text": "Uhuhuh, ja.",
+        "start": 40.460000915527345,
+        "end": 41.609998321533205,
+        "wordTimings": [
+            {
+                "word": "Uhuhuh,",
+                "start": 40.540000915527344,
+                "end": 40.939998626708984
+            },
+            {
+                "word": "ja.",
+                "start": 40.939998626708984,
+                "end": 41.2599983215332
+            }
+        ],
+        "translationEn": "Uhuhuh, yes.",
+        "translationVi": "Uhuhuh, vâng."
+    },
+    {
+        "text": "Und Herr Affe?",
+        "start": 41.179998321533205,
+        "end": 42.93000183105469,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 41.2599983215332,
+                "end": 41.959999084472656
+            },
+            {
+                "word": "Herr",
+                "start": 41.959999084472656,
+                "end": 42.18000030517578
+            },
+            {
+                "word": "Affe?",
+                "start": 42.18000030517578,
+                "end": 42.58000183105469
+            }
+        ],
+        "translationEn": "And Mr. Monkey?",
+        "translationVi": "Và ông Khỉ thì sao?"
+    },
+    {
+        "text": "Sagt das Und wir heißt gar Zauberwort Herr Affe uns aus Oh",
+        "start": 42.50000183105469,
+        "end": 48.87000045776367,
+        "wordTimings": [
+            {
+                "word": "sagt",
+                "start": 42.58000183105469,
+                "end": 42.97999954223633
+            },
+            {
+                "word": "das",
+                "start": 42.97999954223633,
+                "end": 43.58000183105469
+            },
+            {
+                "word": "Und",
+                "start": 44.2400016784668,
+                "end": 44.560001373291016
+            },
+            {
+                "word": "wir",
+                "start": 44.560001373291016,
+                "end": 44.70000076293945
+            },
+            {
+                "word": "heißt",
+                "start": 44.70000076293945,
+                "end": 44.939998626708984
+            },
+            {
+                "word": "gar",
+                "start": 44.939998626708984,
+                "end": 45.31999969482422
+            },
+            {
+                "word": "Zauberwort",
+                "start": 45.31999969482422,
+                "end": 46.060001373291016
+            },
+            {
+                "word": "Herr",
+                "start": 46.380001068115234,
+                "end": 46.380001068115234
+            },
+            {
+                "word": "Affe",
+                "start": 46.380001068115234,
+                "end": 46.779998779296875
+            },
+            {
+                "word": "uns",
+                "start": 47,
+                "end": 47.459999084472656
+            },
+            {
+                "word": "aus",
+                "start": 47.459999084472656,
+                "end": 47.79999923706055
+            },
+            {
+                "word": "Oh",
+                "start": 47.86000061035156,
+                "end": 48.52000045776367
+            }
+        ],
+        "translationEn": "Says that and we are called the magic word Mr. Monkey us out Oh.",
+        "translationVi": "Nói điều đó và chúng ta gọi là từ ma thuật, ngài Khỉ ơi."
+    },
+    {
+        "text": "Ja, heißt Bitte Oh wir haben was kein Teegeschirr der können uns",
+        "start": 48.440000457763674,
+        "end": 54.91000137329102,
+        "wordTimings": [
+            {
+                "word": "ja,",
+                "start": 48.52000045776367,
+                "end": 48.84000015258789
+            },
+            {
+                "word": "heißt",
+                "start": 48.84000015258789,
+                "end": 49.220001220703125
+            },
+            {
+                "word": "Bitte",
+                "start": 49.220001220703125,
+                "end": 49.939998626708984
+            },
+            {
+                "word": "Oh",
+                "start": 50.68000030517578,
+                "end": 51.36000061035156
+            },
+            {
+                "word": "wir",
+                "start": 51.36000061035156,
+                "end": 51.459999084472656
+            },
+            {
+                "word": "haben",
+                "start": 51.459999084472656,
+                "end": 51.720001220703125
+            },
+            {
+                "word": "was",
+                "start": 51.720001220703125,
+                "end": 52.18000030517578
+            },
+            {
+                "word": "kein",
+                "start": 52.18000030517578,
+                "end": 52.34000015258789
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 52.34000015258789,
+                "end": 53.439998626708984
+            },
+            {
+                "word": "der",
+                "start": 53.68000030517578,
+                "end": 53.91999816894531
+            },
+            {
+                "word": "können",
+                "start": 53.91999816894531,
+                "end": 54.220001220703125
+            },
+            {
+                "word": "uns",
+                "start": 54.220001220703125,
+                "end": 54.560001373291016
+            }
+        ],
+        "translationEn": "Yes, means please Oh we have something no tea set we can manage",
+        "translationVi": "Vâng, có nghĩa là Xin vui lòng Oh chúng tôi có cái gì đó không có bộ trà chúng tôi có thể tự làm."
+    },
+    {
+        "text": "Nein, Teegeschirr Susi Knete machen Oh ja Schorsch können wir auch was",
+        "start": 54.48000137329102,
+        "end": 61.00999984741211,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 54.560001373291016,
+                "end": 54.79999923706055
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 54.79999923706055,
+                "end": 55.41999816894531
+            },
+            {
+                "word": "Susi",
+                "start": 55.41999816894531,
+                "end": 55.65999984741211
+            },
+            {
+                "word": "Knete",
+                "start": 55.65999984741211,
+                "end": 56.220001220703125
+            },
+            {
+                "word": "machen",
+                "start": 56.220001220703125,
+                "end": 56.7400016784668
+            },
+            {
+                "word": "Oh",
+                "start": 57.060001373291016,
+                "end": 57.599998474121094
+            },
+            {
+                "word": "ja",
+                "start": 57.599998474121094,
+                "end": 58.18000030517578
+            },
+            {
+                "word": "Schorsch",
+                "start": 58.18000030517578,
+                "end": 59.439998626708984
+            },
+            {
+                "word": "können",
+                "start": 59.939998626708984,
+                "end": 59.939998626708984
+            },
+            {
+                "word": "wir",
+                "start": 59.939998626708984,
+                "end": 60.220001220703125
+            },
+            {
+                "word": "auch",
+                "start": 60.220001220703125,
+                "end": 60.459999084472656
+            },
+            {
+                "word": "was",
+                "start": 60.459999084472656,
+                "end": 60.65999984741211
+            }
+        ],
+        "translationEn": "No, tea set Susi make clay Oh yes George can we also do something",
+        "translationVi": "Không, bộ trà Susi làm bột nặn Oh vâng, Schorsch chúng ta cũng có thể làm gì đó."
+    },
+    {
+        "text": "Ein für Knete haben bitte Nein, Susi uns Sina wir würden gern",
+        "start": 60.57999984741211,
+        "end": 68.22999725341796,
+        "wordTimings": [
+            {
+                "word": "ein",
+                "start": 60.65999984741211,
+                "end": 60.84000015258789
+            },
+            {
+                "word": "für",
+                "start": 60.84000015258789,
+                "end": 61.08000183105469
+            },
+            {
+                "word": "Knete",
+                "start": 61.08000183105469,
+                "end": 61.5
+            },
+            {
+                "word": "haben",
+                "start": 61.5,
+                "end": 61.84000015258789
+            },
+            {
+                "word": "bitte",
+                "start": 62.41999816894531,
+                "end": 62.41999816894531
+            },
+            {
+                "word": "Nein,",
+                "start": 63.08000183105469,
+                "end": 63.41999816894531
+            },
+            {
+                "word": "Susi",
+                "start": 64.69999694824219,
+                "end": 65.45999908447266
+            },
+            {
+                "word": "uns",
+                "start": 65.45999908447266,
+                "end": 65.80000305175781
+            },
+            {
+                "word": "Sina",
+                "start": 65.80000305175781,
+                "end": 66.45999908447266
+            },
+            {
+                "word": "wir",
+                "start": 67.16000366210938,
+                "end": 67.16000366210938
+            },
+            {
+                "word": "würden",
+                "start": 67.16000366210938,
+                "end": 67.5
+            },
+            {
+                "word": "gern",
+                "start": 67.5,
+                "end": 67.87999725341797
+            }
+        ],
+        "translationEn": "A yes for playdough please No, Susi and Sina we would like to",
+        "translationVi": "Một cái cho bột nặn, làm ơn không, Susi và Sina, chúng tôi rất muốn."
+    },
+    {
+        "text": "Ein Teegeschirr für unser Picknick mache Nein wir könnt uns So, dabei",
+        "start": 67.79999725341797,
+        "end": 74.22999725341796,
+        "wordTimings": [
+            {
+                "word": "ein",
+                "start": 67.87999725341797,
+                "end": 68.18000030517578
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 68.18000030517578,
+                "end": 69.0199966430664
+            },
+            {
+                "word": "für",
+                "start": 69.0199966430664,
+                "end": 69.23999786376953
+            },
+            {
+                "word": "unser",
+                "start": 69.23999786376953,
+                "end": 69.68000030517578
+            },
+            {
+                "word": "Picknick",
+                "start": 69.68000030517578,
+                "end": 70.23999786376953
+            },
+            {
+                "word": "mache",
+                "start": 70.23999786376953,
+                "end": 70.72000122070312
+            },
+            {
+                "word": "Nein",
+                "start": 71.23999786376953,
+                "end": 71.87999725341797
+            },
+            {
+                "word": "wir",
+                "start": 72.05999755859375,
+                "end": 72.33999633789062
+            },
+            {
+                "word": "könnt",
+                "start": 72.33999633789062,
+                "end": 72.62000274658203
+            },
+            {
+                "word": "uns",
+                "start": 72.62000274658203,
+                "end": 72.94000244140625
+            },
+            {
+                "word": "So,",
+                "start": 72.94000244140625,
+                "end": 73.31999969482422
+            },
+            {
+                "word": "dabei",
+                "start": 73.31999969482422,
+                "end": 73.87999725341797
+            }
+        ],
+        "translationEn": "A tea set for our picnic, no we could do that.",
+        "translationVi": "Một bộ ấm chén trà cho buổi picnic của chúng ta. Không, chúng ta có thể làm như vậy."
+    },
+    {
+        "text": "Helfen Ich mache die Teekanne Und wir machen die Tassen So jetzt",
+        "start": 73.79999725341797,
+        "end": 85.53000030517578,
+        "wordTimings": [
+            {
+                "word": "helfen",
+                "start": 73.87999725341797,
+                "end": 75.19999694824219
+            },
+            {
+                "word": "Ich",
+                "start": 76.44000244140625,
+                "end": 77.23999786376953
+            },
+            {
+                "word": "mache",
+                "start": 77.23999786376953,
+                "end": 77.58000183105469
+            },
+            {
+                "word": "die",
+                "start": 77.58000183105469,
+                "end": 77.91999816894531
+            },
+            {
+                "word": "Teekanne",
+                "start": 77.91999816894531,
+                "end": 78.73999786376953
+            },
+            {
+                "word": "Und",
+                "start": 79.05999755859375,
+                "end": 79.44000244140625
+            },
+            {
+                "word": "wir",
+                "start": 79.44000244140625,
+                "end": 79.63999938964844
+            },
+            {
+                "word": "machen",
+                "start": 79.63999938964844,
+                "end": 79.94000244140625
+            },
+            {
+                "word": "die",
+                "start": 79.94000244140625,
+                "end": 80.4800033569336
+            },
+            {
+                "word": "Tassen",
+                "start": 80.4800033569336,
+                "end": 80.68000030517578
+            },
+            {
+                "word": "So",
+                "start": 84.41999816894531,
+                "end": 84.87999725341797
+            },
+            {
+                "word": "jetzt",
+                "start": 84.87999725341797,
+                "end": 85.18000030517578
+            }
+        ],
+        "translationEn": "Help me, I'm making the teapot and we are making the cups. So now.",
+        "translationVi": "Giúp tôi, tôi làm ấm trà và chúng ta làm những chiếc tách. Vậy bây giờ."
+    },
+    {
+        "text": "Kriegt Herr Affe seinen Tee.",
+        "start": 85.10000030517578,
+        "end": 87.6500030517578,
+        "wordTimings": [
+            {
+                "word": "kriegt",
+                "start": 85.18000030517578,
+                "end": 85.5199966430664
+            },
+            {
+                "word": "Herr",
+                "start": 85.5199966430664,
+                "end": 85.94000244140625
+            },
+            {
+                "word": "Affe",
+                "start": 85.94000244140625,
+                "end": 86.41999816894531
+            },
+            {
+                "word": "seinen",
+                "start": 86.41999816894531,
+                "end": 86.87999725341797
+            },
+            {
+                "word": "Tee.",
+                "start": 86.87999725341797,
+                "end": 87.30000305175781
+            }
+        ],
+        "translationEn": "Does Mr. Monkey get his tea?",
+        "translationVi": "Ông Khỉ có được trà của mình không?"
+    },
+    {
+        "text": "Oh, diese Kanne ist viel zu weich.",
+        "start": 87.72000305175781,
+        "end": 91.29000244140624,
+        "wordTimings": [
+            {
+                "word": "Oh,",
+                "start": 87.80000305175781,
+                "end": 88.16000366210938
+            },
+            {
+                "word": "diese",
+                "start": 88.5999984741211,
+                "end": 89.0199966430664
+            },
+            {
+                "word": "Kanne",
+                "start": 89.0199966430664,
+                "end": 89.4000015258789
+            },
+            {
+                "word": "ist",
+                "start": 89.4000015258789,
+                "end": 89.63999938964844
+            },
+            {
+                "word": "viel",
+                "start": 89.63999938964844,
+                "end": 90.08000183105469
+            },
+            {
+                "word": "zu",
+                "start": 90.08000183105469,
+                "end": 90.30000305175781
+            },
+            {
+                "word": "weich.",
+                "start": 90.30000305175781,
+                "end": 90.94000244140625
+            }
+        ],
+        "translationEn": "Oh, this pot is way too soft.",
+        "translationVi": "Ôi, cái ấm này mềm quá."
+    },
+    {
+        "text": "Ein Teegeschirr sollte nicht weich sein.",
+        "start": 91.18000213623047,
+        "end": 94.29000244140624,
+        "wordTimings": [
+            {
+                "word": "Ein",
+                "start": 91.26000213623047,
+                "end": 91.4000015258789
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 91.4000015258789,
+                "end": 92.22000122070312
+            },
+            {
+                "word": "sollte",
+                "start": 92.22000122070312,
+                "end": 92.54000091552734
+            },
+            {
+                "word": "nicht",
+                "start": 92.54000091552734,
+                "end": 92.95999908447266
+            },
+            {
+                "word": "weich",
+                "start": 92.95999908447266,
+                "end": 93.37999725341797
+            },
+            {
+                "word": "sein.",
+                "start": 93.37999725341797,
+                "end": 93.94000244140625
+            }
+        ],
+        "translationEn": "A tea set should not be soft.",
+        "translationVi": "Một bộ ấm chén trà không nên mềm."
+    },
+    {
+        "text": "Meine Mama macht richtiges Geschirr.",
+        "start": 94.18000213623047,
+        "end": 97.6500030517578,
+        "wordTimings": [
+            {
+                "word": "Meine",
+                "start": 94.26000213623047,
+                "end": 94.9800033569336
+            },
+            {
+                "word": "Mama",
+                "start": 94.9800033569336,
+                "end": 95.33999633789062
+            },
+            {
+                "word": "macht",
+                "start": 95.33999633789062,
+                "end": 95.73999786376953
+            },
+            {
+                "word": "richtiges",
+                "start": 95.73999786376953,
+                "end": 96.76000213623047
+            },
+            {
+                "word": "Geschirr.",
+                "start": 96.76000213623047,
+                "end": 97.30000305175781
+            }
+        ],
+        "translationEn": "My mom makes real dishes.",
+        "translationVi": "Mẹ tôi làm đồ gốm thật sự."
+    },
+    {
+        "text": "Sie hat eine Töpferei.",
+        "start": 97.5199984741211,
+        "end": 99.62999877929687,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 97.5999984741211,
+                "end": 97.68000030517578
+            },
+            {
+                "word": "hat",
+                "start": 97.68000030517578,
+                "end": 97.9800033569336
+            },
+            {
+                "word": "eine",
+                "start": 97.9800033569336,
+                "end": 98.41999816894531
+            },
+            {
+                "word": "Töpferei.",
+                "start": 98.41999816894531,
+                "end": 99.27999877929688
+            }
+        ],
+        "translationEn": "She has a pottery.",
+        "translationVi": "Cô ấy có một xưởng gốm."
+    },
+    {
+        "text": "Oh Mama, können wir ein richtiges Teegeschirr machen, bitte?",
+        "start": 99.37999908447266,
+        "end": 107.12999877929687,
+        "wordTimings": [
+            {
+                "word": "Oh",
+                "start": 99.45999908447266,
+                "end": 100.18000030517578
+            },
+            {
+                "word": "Mama,",
+                "start": 102.63999938964844,
+                "end": 103.36000061035156
+            },
+            {
+                "word": "können",
+                "start": 103.72000122070312,
+                "end": 103.94000244140625
+            },
+            {
+                "word": "wir",
+                "start": 103.94000244140625,
+                "end": 104.13999938964844
+            },
+            {
+                "word": "ein",
+                "start": 104.13999938964844,
+                "end": 104.37999725341797
+            },
+            {
+                "word": "richtiges",
+                "start": 104.37999725341797,
+                "end": 105.04000091552734
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 105.04000091552734,
+                "end": 105.77999877929688
+            },
+            {
+                "word": "machen,",
+                "start": 105.77999877929688,
+                "end": 106.04000091552734
+            },
+            {
+                "word": "bitte?",
+                "start": 106.4800033569336,
+                "end": 106.77999877929688
+            }
+        ],
+        "translationEn": "Oh Mama, can we make a proper tea set, please?",
+        "translationVi": "Ôi mẹ, chúng ta có thể làm một bộ ấm chén trà thật sự được không ạ?"
+    },
+    {
+        "text": "Mit Teetassen und einer Teekanne, wo wir richtig Wasser rein können?",
+        "start": 106.78000061035156,
+        "end": 112.07000122070312,
+        "wordTimings": [
+            {
+                "word": "Mit",
+                "start": 106.86000061035156,
+                "end": 107.13999938964844
+            },
+            {
+                "word": "Teetassen",
+                "start": 107.13999938964844,
+                "end": 107.91999816894531
+            },
+            {
+                "word": "und",
+                "start": 107.91999816894531,
+                "end": 108.23999786376953
+            },
+            {
+                "word": "einer",
+                "start": 108.23999786376953,
+                "end": 108.5999984741211
+            },
+            {
+                "word": "Teekanne,",
+                "start": 108.5999984741211,
+                "end": 109.22000122070312
+            },
+            {
+                "word": "wo",
+                "start": 109.41999816894531,
+                "end": 109.55999755859375
+            },
+            {
+                "word": "wir",
+                "start": 109.55999755859375,
+                "end": 109.83999633789062
+            },
+            {
+                "word": "richtig",
+                "start": 109.83999633789062,
+                "end": 110.36000061035156
+            },
+            {
+                "word": "Wasser",
+                "start": 110.36000061035156,
+                "end": 110.68000030517578
+            },
+            {
+                "word": "rein",
+                "start": 110.68000030517578,
+                "end": 111.31999969482422
+            },
+            {
+                "word": "können?",
+                "start": 111.31999969482422,
+                "end": 111.72000122070312
+            }
+        ],
+        "translationEn": "With tea cups and a teapot, where we can really put water in?",
+        "translationVi": "Với những chiếc tách trà và một ấm trà, nơi chúng ta có thể đổ nước vào?"
+    },
+    {
+        "text": "Na klar, kommt mal mit.",
+        "start": 111.75999633789063,
+        "end": 113.89000091552734,
+        "wordTimings": [
+            {
+                "word": "Na",
+                "start": 111.83999633789062,
+                "end": 112.23999786376953
+            },
+            {
+                "word": "klar,",
+                "start": 112.23999786376953,
+                "end": 112.45999908447266
+            },
+            {
+                "word": "kommt",
+                "start": 112.77999877929688,
+                "end": 112.94000244140625
+            },
+            {
+                "word": "mal",
+                "start": 112.94000244140625,
+                "end": 113.27999877929688
+            },
+            {
+                "word": "mit.",
+                "start": 113.27999877929688,
+                "end": 113.54000091552734
+            }
+        ],
+        "translationEn": "Sure, come along.",
+        "translationVi": "Chắc chắn rồi, đi theo tôi nào."
+    },
+    {
+        "text": "Das ist die Töpferei von Frau Zebra.",
+        "start": 114.23999969482422,
+        "end": 116.7699981689453,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 114.31999969482422,
+                "end": 114.54000091552734
+            },
+            {
+                "word": "ist",
+                "start": 114.54000091552734,
+                "end": 114.76000213623047
+            },
+            {
+                "word": "die",
+                "start": 114.76000213623047,
+                "end": 114.94000244140625
+            },
+            {
+                "word": "Töpferei",
+                "start": 114.94000244140625,
+                "end": 115.41999816894531
+            },
+            {
+                "word": "von",
+                "start": 115.41999816894531,
+                "end": 115.80000305175781
+            },
+            {
+                "word": "Frau",
+                "start": 115.80000305175781,
+                "end": 116.05999755859375
+            },
+            {
+                "word": "Zebra.",
+                "start": 116.05999755859375,
+                "end": 116.41999816894531
+            }
+        ],
+        "translationEn": "This is Mrs. Zebra's pottery.",
+        "translationVi": "Đây là xưởng gốm của cô Zebra."
+    },
+    {
+        "text": "Also machen wir ein Teegeschirr.",
+        "start": 116.98999969482422,
+        "end": 119.7500015258789,
+        "wordTimings": [
+            {
+                "word": "Also",
+                "start": 117.06999969482422,
+                "end": 117.37999725341797
+            },
+            {
+                "word": "machen",
+                "start": 117.37999725341797,
+                "end": 117.80000305175781
+            },
+            {
+                "word": "wir",
+                "start": 117.80000305175781,
+                "end": 118.05999755859375
+            },
+            {
+                "word": "ein",
+                "start": 118.05999755859375,
+                "end": 118.31999969482422
+            },
+            {
+                "word": "Teegeschirr.",
+                "start": 118.31999969482422,
+                "end": 119.4000015258789
+            }
+        ],
+        "translationEn": "So we are making a tea set.",
+        "translationVi": "Vậy chúng ta sẽ làm một bộ ấm chén trà."
+    },
+    {
+        "text": "Was ist das Ton?",
+        "start": 119.79999725341797,
+        "end": 122.53000030517578,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 119.87999725341797,
+                "end": 120.44000244140625
+            },
+            {
+                "word": "ist",
+                "start": 120.44000244140625,
+                "end": 120.87999725341797
+            },
+            {
+                "word": "das",
+                "start": 120.87999725341797,
+                "end": 121.36000061035156
+            },
+            {
+                "word": "Ton?",
+                "start": 122.18000030517578,
+                "end": 122.18000030517578
+            }
+        ],
+        "translationEn": "What is the tone?",
+        "translationVi": "Âm thanh là gì?"
+    },
+    {
+        "text": "So fängt man immer an beim Töpfern.",
+        "start": 122.75999633789063,
+        "end": 125.12999877929687,
+        "wordTimings": [
+            {
+                "word": "So",
+                "start": 122.83999633789062,
+                "end": 123.0999984741211
+            },
+            {
+                "word": "fängt",
+                "start": 123.0999984741211,
+                "end": 123.31999969482422
+            },
+            {
+                "word": "man",
+                "start": 123.31999969482422,
+                "end": 123.62000274658203
+            },
+            {
+                "word": "immer",
+                "start": 123.62000274658203,
+                "end": 123.95999908447266
+            },
+            {
+                "word": "an",
+                "start": 123.95999908447266,
+                "end": 124.23999786376953
+            },
+            {
+                "word": "beim",
+                "start": 124.23999786376953,
+                "end": 124.36000061035156
+            },
+            {
+                "word": "Töpfern.",
+                "start": 124.36000061035156,
+                "end": 124.77999877929688
+            }
+        ],
+        "translationEn": "That's how you always start with pottery.",
+        "translationVi": "Đó là cách bắt đầu khi làm gốm."
+    },
+    {
+        "text": "Aber der ist genauso weich wie Knete.",
+        "start": 125.0199984741211,
+        "end": 128.2500015258789,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 125.0999984741211,
+                "end": 125.44000244140625
+            },
+            {
+                "word": "der",
+                "start": 125.44000244140625,
+                "end": 125.5999984741211
+            },
+            {
+                "word": "ist",
+                "start": 125.5999984741211,
+                "end": 125.81999969482422
+            },
+            {
+                "word": "genauso",
+                "start": 125.81999969482422,
+                "end": 126.66000366210938
+            },
+            {
+                "word": "weich",
+                "start": 126.66000366210938,
+                "end": 126.81999969482422
+            },
+            {
+                "word": "wie",
+                "start": 126.81999969482422,
+                "end": 127.08000183105469
+            },
+            {
+                "word": "Knete.",
+                "start": 127.08000183105469,
+                "end": 127.9000015258789
+            }
+        ],
+        "translationEn": "But it is just as soft as dough.",
+        "translationVi": "Nhưng nó mềm như đất nặn."
+    },
+    {
+        "text": "Der Ton muss weich sein, dann können wir ihn formen.",
+        "start": 128.09999267578124,
+        "end": 131.12999877929687,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 128.17999267578125,
+                "end": 128.36000061035156
+            },
+            {
+                "word": "Ton",
+                "start": 128.36000061035156,
+                "end": 128.5399932861328
+            },
+            {
+                "word": "muss",
+                "start": 128.5399932861328,
+                "end": 128.8000030517578
+            },
+            {
+                "word": "weich",
+                "start": 128.8000030517578,
+                "end": 129.1199951171875
+            },
+            {
+                "word": "sein,",
+                "start": 129.1199951171875,
+                "end": 129.36000061035156
+            },
+            {
+                "word": "dann",
+                "start": 129.44000244140625,
+                "end": 129.6199951171875
+            },
+            {
+                "word": "können",
+                "start": 129.6199951171875,
+                "end": 129.8000030517578
+            },
+            {
+                "word": "wir",
+                "start": 129.8000030517578,
+                "end": 130.02000427246094
+            },
+            {
+                "word": "ihn",
+                "start": 130.02000427246094,
+                "end": 130.17999267578125
+            },
+            {
+                "word": "formen.",
+                "start": 130.17999267578125,
+                "end": 130.77999877929688
+            }
+        ],
+        "translationEn": "The clay must be soft, then we can shape it.",
+        "translationVi": "Đất sét phải mềm, sau đó chúng ta có thể tạo hình cho nó."
+    },
+    {
+        "text": "Aber später ist er nicht mehr so weich.",
+        "start": 130.81999389648436,
+        "end": 133.51000366210937,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 130.89999389648438,
+                "end": 131.24000549316406
+            },
+            {
+                "word": "später",
+                "start": 131.24000549316406,
+                "end": 131.63999938964844
+            },
+            {
+                "word": "ist",
+                "start": 131.63999938964844,
+                "end": 131.8800048828125
+            },
+            {
+                "word": "er",
+                "start": 131.8800048828125,
+                "end": 132.0399932861328
+            },
+            {
+                "word": "nicht",
+                "start": 132.0399932861328,
+                "end": 132.32000732421875
+            },
+            {
+                "word": "mehr",
+                "start": 132.32000732421875,
+                "end": 132.55999755859375
+            },
+            {
+                "word": "so",
+                "start": 132.55999755859375,
+                "end": 133.16000366210938
+            },
+            {
+                "word": "weich.",
+                "start": 133.16000366210938,
+                "end": 133.16000366210938
+            }
+        ],
+        "translationEn": "But later he is not so soft anymore.",
+        "translationVi": "Nhưng sau đó anh ấy không còn mềm mại như trước nữa."
+    },
+    {
+        "text": "Frau Zebra formt auf der Töpferscheibe eine kleine Tasse.",
+        "start": 134.92,
+        "end": 138.31000671386718,
+        "wordTimings": [
+            {
+                "word": "Frau",
+                "start": 135,
+                "end": 135.17999267578125
+            },
+            {
+                "word": "Zebra",
+                "start": 135.17999267578125,
+                "end": 135.66000366210938
+            },
+            {
+                "word": "formt",
+                "start": 135.66000366210938,
+                "end": 136.0800018310547
+            },
+            {
+                "word": "auf",
+                "start": 136.0800018310547,
+                "end": 136.1999969482422
+            },
+            {
+                "word": "der",
+                "start": 136.1999969482422,
+                "end": 136.36000061035156
+            },
+            {
+                "word": "Töpferscheibe",
+                "start": 136.36000061035156,
+                "end": 136.9600067138672
+            },
+            {
+                "word": "eine",
+                "start": 136.9600067138672,
+                "end": 137.25999450683594
+            },
+            {
+                "word": "kleine",
+                "start": 137.25999450683594,
+                "end": 137.89999389648438
+            },
+            {
+                "word": "Tasse.",
+                "start": 137.89999389648438,
+                "end": 137.9600067138672
+            }
+        ],
+        "translationEn": "Mrs. Zebra is shaping a small cup on the potter's wheel.",
+        "translationVi": "Cô ngựa vằn tạo hình một chiếc cốc nhỏ trên bàn xoay gốm."
+    },
+    {
+        "text": "Fertige eine Tasse.",
+        "start": 139.5200061035156,
+        "end": 141.2699981689453,
+        "wordTimings": [
+            {
+                "word": "Fertige",
+                "start": 139.60000610351562,
+                "end": 139.9199981689453
+            },
+            {
+                "word": "eine",
+                "start": 140.13999938964844,
+                "end": 140.5
+            },
+            {
+                "word": "Tasse.",
+                "start": 140.5,
+                "end": 140.9199981689453
+            }
+        ],
+        "translationEn": "Make a cup.",
+        "translationVi": "Làm một tách."
+    },
+    {
+        "text": "Boah, ich glaube, das geht ganz einfach.",
+        "start": 141.67999450683592,
+        "end": 146.09000549316406,
+        "wordTimings": [
+            {
+                "word": "Boah,",
+                "start": 141.75999450683594,
+                "end": 142.3800048828125
+            },
+            {
+                "word": "ich",
+                "start": 142.9499969482422,
+                "end": 143.25999450683594
+            },
+            {
+                "word": "glaube,",
+                "start": 143.25999450683594,
+                "end": 143.6199951171875
+            },
+            {
+                "word": "das",
+                "start": 143.74000549316406,
+                "end": 143.8800048828125
+            },
+            {
+                "word": "geht",
+                "start": 143.8800048828125,
+                "end": 144.22000122070312
+            },
+            {
+                "word": "ganz",
+                "start": 144.22000122070312,
+                "end": 145.17999267578125
+            },
+            {
+                "word": "einfach.",
+                "start": 145.17999267578125,
+                "end": 145.74000549316406
+            }
+        ],
+        "translationEn": "Wow, I think this is going to be really easy.",
+        "translationVi": "Ôi, tôi nghĩ điều đó rất đơn giản."
+    },
+    {
+        "text": "Willst du es mal versuchen?",
+        "start": 145.66000549316405,
+        "end": 147.54999694824218,
+        "wordTimings": [
+            {
+                "word": "Willst",
+                "start": 145.74000549316406,
+                "end": 146.16000366210938
+            },
+            {
+                "word": "du",
+                "start": 146.16000366210938,
+                "end": 146.3800048828125
+            },
+            {
+                "word": "es",
+                "start": 146.3800048828125,
+                "end": 146.47999572753906
+            },
+            {
+                "word": "mal",
+                "start": 146.47999572753906,
+                "end": 146.83999633789062
+            },
+            {
+                "word": "versuchen?",
+                "start": 146.83999633789062,
+                "end": 147.1999969482422
+            }
+        ],
+        "translationEn": "Do you want to give it a try?",
+        "translationVi": "Bạn có muốn thử một lần không?"
+    },
+    {
+        "text": "Ja, bitte.",
+        "start": 147.42,
+        "end": 149.04999694824218,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 147.5,
+                "end": 147.5800018310547
+            },
+            {
+                "word": "bitte.",
+                "start": 147.8800048828125,
+                "end": 148.6999969482422
+            }
+        ],
+        "translationEn": "Yes, please.",
+        "translationVi": "Vâng, xin vui lòng."
+    },
+    {
+        "text": "Das ist ganz glitschig.",
+        "start": 151.0399951171875,
+        "end": 154.24999389648437,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 151.1199951171875,
+                "end": 151.8000030517578
+            },
+            {
+                "word": "ist",
+                "start": 151.8000030517578,
+                "end": 152.0399932861328
+            },
+            {
+                "word": "ganz",
+                "start": 152.0399932861328,
+                "end": 152.74000549316406
+            },
+            {
+                "word": "glitschig.",
+                "start": 152.74000549316406,
+                "end": 153.89999389648438
+            }
+        ],
+        "translationEn": "That is very slippery.",
+        "translationVi": "Đây rất trơn trượt."
+    },
+    {
+        "text": "So Es geht gar nicht so ist gar nicht so einfach, auf",
+        "start": 156.61999694824217,
+        "end": 160.98999938964843,
+        "wordTimings": [
+            {
+                "word": "So",
+                "start": 156.6999969482422,
+                "end": 157.3800048828125
+            },
+            {
+                "word": "Es",
+                "start": 157.3800048828125,
+                "end": 157.89999389648438
+            },
+            {
+                "word": "geht",
+                "start": 157.89999389648438,
+                "end": 158.22000122070312
+            },
+            {
+                "word": "gar",
+                "start": 158.22000122070312,
+                "end": 158.63999938964844
+            },
+            {
+                "word": "nicht",
+                "start": 158.63999938964844,
+                "end": 158.97999572753906
+            },
+            {
+                "word": "so",
+                "start": 159.32000732421875,
+                "end": 159.4199981689453
+            },
+            {
+                "word": "ist",
+                "start": 159.4199981689453,
+                "end": 159.60000610351562
+            },
+            {
+                "word": "gar",
+                "start": 159.60000610351562,
+                "end": 159.86000061035156
+            },
+            {
+                "word": "nicht",
+                "start": 159.86000061035156,
+                "end": 159.9199981689453
+            },
+            {
+                "word": "so",
+                "start": 159.9199981689453,
+                "end": 160.52000427246094
+            },
+            {
+                "word": "einfach,",
+                "start": 160.52000427246094,
+                "end": 160.52000427246094
+            },
+            {
+                "word": "auf",
+                "start": 160.63999938964844,
+                "end": 160.63999938964844
+            }
+        ],
+        "translationEn": "So it's not that easy, at all.",
+        "translationVi": "Vậy thì không dễ dàng như vậy đâu."
+    },
+    {
+        "text": "Einer Töpferscheibe eine Tasse zu formen.",
+        "start": 160.55999938964842,
+        "end": 163.7300048828125,
+        "wordTimings": [
+            {
+                "word": "einer",
+                "start": 160.63999938964844,
+                "end": 160.9600067138672
+            },
+            {
+                "word": "Töpferscheibe",
+                "start": 160.9600067138672,
+                "end": 161.55999755859375
+            },
+            {
+                "word": "eine",
+                "start": 161.55999755859375,
+                "end": 162.10000610351562
+            },
+            {
+                "word": "Tasse",
+                "start": 162.10000610351562,
+                "end": 162.10000610351562
+            },
+            {
+                "word": "zu",
+                "start": 162.10000610351562,
+                "end": 162.52000427246094
+            },
+            {
+                "word": "formen.",
+                "start": 162.52000427246094,
+                "end": 163.3800048828125
+            }
+        ],
+        "translationEn": "To shape a cup on a potter's wheel.",
+        "translationVi": "Tạo hình một chiếc cốc trên bàn xoay gốm."
+    },
+    {
+        "text": "Eine Tasse kann man auch einfacher machen.",
+        "start": 163.5200061035156,
+        "end": 166.04999694824218,
+        "wordTimings": [
+            {
+                "word": "Eine",
+                "start": 163.60000610351562,
+                "end": 163.72000122070312
+            },
+            {
+                "word": "Tasse",
+                "start": 163.72000122070312,
+                "end": 164.0399932861328
+            },
+            {
+                "word": "kann",
+                "start": 164.0399932861328,
+                "end": 164.36000061035156
+            },
+            {
+                "word": "man",
+                "start": 164.36000061035156,
+                "end": 164.55999755859375
+            },
+            {
+                "word": "auch",
+                "start": 164.55999755859375,
+                "end": 164.97999572753906
+            },
+            {
+                "word": "einfacher",
+                "start": 164.97999572753906,
+                "end": 165.3800048828125
+            },
+            {
+                "word": "machen.",
+                "start": 165.3800048828125,
+                "end": 165.6999969482422
+            }
+        ],
+        "translationEn": "A cup can also be made simpler.",
+        "translationVi": "Một chiếc cốc cũng có thể làm đơn giản hơn."
+    },
+    {
+        "text": "Zuerst rollen wir den Ton zu einer langen Wurst.",
+        "start": 166.2200030517578,
+        "end": 169.7300048828125,
+        "wordTimings": [
+            {
+                "word": "Zuerst",
+                "start": 166.3000030517578,
+                "end": 166.72000122070312
+            },
+            {
+                "word": "rollen",
+                "start": 166.72000122070312,
+                "end": 167.24000549316406
+            },
+            {
+                "word": "wir",
+                "start": 167.24000549316406,
+                "end": 167.39999389648438
+            },
+            {
+                "word": "den",
+                "start": 167.39999389648438,
+                "end": 167.6999969482422
+            },
+            {
+                "word": "Ton",
+                "start": 167.6999969482422,
+                "end": 167.9600067138672
+            },
+            {
+                "word": "zu",
+                "start": 167.9600067138672,
+                "end": 168.22000122070312
+            },
+            {
+                "word": "einer",
+                "start": 168.22000122070312,
+                "end": 168.4600067138672
+            },
+            {
+                "word": "langen",
+                "start": 168.4600067138672,
+                "end": 168.97999572753906
+            },
+            {
+                "word": "Wurst.",
+                "start": 168.97999572753906,
+                "end": 169.3800048828125
+            }
+        ],
+        "translationEn": "First, we roll the clay into a long sausage.",
+        "translationVi": "Đầu tiên, chúng ta nặn đất sét thành một cái xúc xích dài."
+    },
+    {
+        "text": "Etwas so sieht aus wie ein Wabbelwurm.",
+        "start": 169.7200030517578,
+        "end": 173.21000061035156,
+        "wordTimings": [
+            {
+                "word": "Etwas",
+                "start": 169.8000030517578,
+                "end": 170.02000427246094
+            },
+            {
+                "word": "so",
+                "start": 170.02000427246094,
+                "end": 170.5399932861328
+            },
+            {
+                "word": "sieht",
+                "start": 170.86000061035156,
+                "end": 171.0800018310547
+            },
+            {
+                "word": "aus",
+                "start": 171.0800018310547,
+                "end": 171.4199981689453
+            },
+            {
+                "word": "wie",
+                "start": 171.4199981689453,
+                "end": 171.55999755859375
+            },
+            {
+                "word": "ein",
+                "start": 171.55999755859375,
+                "end": 171.86000061035156
+            },
+            {
+                "word": "Wabbelwurm.",
+                "start": 171.86000061035156,
+                "end": 172.86000061035156
+            }
+        ],
+        "translationEn": "Something looks like a wiggly worm.",
+        "translationVi": "Một cái gì đó trông giống như một con giun nhũn."
+    },
+    {
+        "text": "Ich bin ein Wirbelwurm.",
+        "start": 172.78000061035155,
+        "end": 175.68999633789062,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 172.86000061035156,
+                "end": 173.55999755859375
+            },
+            {
+                "word": "bin",
+                "start": 173.55999755859375,
+                "end": 173.9600067138672
+            },
+            {
+                "word": "ein",
+                "start": 173.9600067138672,
+                "end": 174.33999633789062
+            },
+            {
+                "word": "Wirbelwurm.",
+                "start": 174.33999633789062,
+                "end": 175.33999633789062
+            }
+        ],
+        "translationEn": "I am a whirlwind.",
+        "translationVi": "Tôi là một con giun xoắn."
+    },
+    {
+        "text": "Ich bin ein Wabbelwurm.",
+        "start": 175.67999450683592,
+        "end": 177.82999572753906,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 175.75999450683594,
+                "end": 175.8000030517578
+            },
+            {
+                "word": "bin",
+                "start": 175.8000030517578,
+                "end": 176.1199951171875
+            },
+            {
+                "word": "ein",
+                "start": 176.1199951171875,
+                "end": 176.5
+            },
+            {
+                "word": "Wabbelwurm.",
+                "start": 176.5,
+                "end": 177.47999572753906
+            }
+        ],
+        "translationEn": "I am a wobbly worm.",
+        "translationVi": "Tôi là một con sâu nhún nhảy."
+    },
+    {
+        "text": "Ich wabbelsorum.",
+        "start": 177.92,
+        "end": 179.2300048828125,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 178,
+                "end": 178.10000610351562
+            },
+            {
+                "word": "wabbelsorum.",
+                "start": 178.10000610351562,
+                "end": 178.8800048828125
+            }
+        ],
+        "translationEn": "I wobble-sorum.",
+        "translationVi": "Tôi wabbelsorum."
+    },
+    {
+        "text": "Soll tun?",
+        "start": 178.8000048828125,
+        "end": 179.9699951171875,
+        "wordTimings": [
+            {
+                "word": "soll",
+                "start": 178.8800048828125,
+                "end": 179.3000030517578
+            },
+            {
+                "word": "tun?",
+                "start": 179.3000030517578,
+                "end": 179.6199951171875
+            }
+        ],
+        "translationEn": "What should I do?",
+        "translationVi": "Cần làm gì?"
+    },
+    {
+        "text": "Was soll Ich sonst bin Ich ein Wir Wobbelwurm Brrr Wir wickeln",
+        "start": 180.00000183105467,
+        "end": 188.43000183105468,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 180.0800018310547,
+                "end": 180.24000549316406
+            },
+            {
+                "word": "soll",
+                "start": 180.24000549316406,
+                "end": 180.60000610351562
+            },
+            {
+                "word": "Ich",
+                "start": 180.60000610351562,
+                "end": 180.9600067138672
+            },
+            {
+                "word": "sonst",
+                "start": 180.9600067138672,
+                "end": 181.5399932861328
+            },
+            {
+                "word": "bin",
+                "start": 181.5399932861328,
+                "end": 181.72000122070312
+            },
+            {
+                "word": "Ich",
+                "start": 182.25999450683594,
+                "end": 182.39999389648438
+            },
+            {
+                "word": "ein",
+                "start": 182.39999389648438,
+                "end": 182.66000366210938
+            },
+            {
+                "word": "Wir",
+                "start": 182.66000366210938,
+                "end": 182.9600067138672
+            },
+            {
+                "word": "Wobbelwurm",
+                "start": 182.9600067138672,
+                "end": 183.9600067138672
+            },
+            {
+                "word": "Brrr",
+                "start": 184.6999969482422,
+                "end": 185
+            },
+            {
+                "word": "Wir",
+                "start": 186.9600067138672,
+                "end": 187.67999267578125
+            },
+            {
+                "word": "wickeln",
+                "start": 187.67999267578125,
+                "end": 188.0800018310547
+            }
+        ],
+        "translationEn": "What should I otherwise be, I am a we wobbly worm brrr we wrap.",
+        "translationVi": "Tôi nên là gì khác, tôi là một con giun Wobbelwurm Brrr Chúng tôi quấn lại."
+    },
+    {
+        "text": "Ihn rundherum und rundherum.",
+        "start": 188.00000183105467,
+        "end": 190.74999389648437,
+        "wordTimings": [
+            {
+                "word": "ihn",
+                "start": 188.0800018310547,
+                "end": 188.36000061035156
+            },
+            {
+                "word": "rundherum",
+                "start": 188.36000061035156,
+                "end": 189.24000549316406
+            },
+            {
+                "word": "und",
+                "start": 189.24000549316406,
+                "end": 189.60000610351562
+            },
+            {
+                "word": "rundherum.",
+                "start": 189.60000610351562,
+                "end": 190.39999389648438
+            }
+        ],
+        "translationEn": "Him all around and around.",
+        "translationVi": "Anh ấy xung quanh và xung quanh."
+    },
+    {
+        "text": "Das wird aber ganz wellig.",
+        "start": 190.44000427246092,
+        "end": 192.8899932861328,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 190.52000427246094,
+                "end": 190.83999633789062
+            },
+            {
+                "word": "wird",
+                "start": 190.83999633789062,
+                "end": 191.10000610351562
+            },
+            {
+                "word": "aber",
+                "start": 191.10000610351562,
+                "end": 191.4600067138672
+            },
+            {
+                "word": "ganz",
+                "start": 191.4600067138672,
+                "end": 192.17999267578125
+            },
+            {
+                "word": "wellig.",
+                "start": 192.17999267578125,
+                "end": 192.5399932861328
+            }
+        ],
+        "translationEn": "That's going to be quite wavy.",
+        "translationVi": "Điều đó sẽ rất gợn sóng."
+    },
+    {
+        "text": "Dann mache ich ihn schön glatt mit meinen Händen.",
+        "start": 192.58000366210936,
+        "end": 196.2699981689453,
+        "wordTimings": [
+            {
+                "word": "Dann",
+                "start": 192.66000366210938,
+                "end": 192.86000061035156
+            },
+            {
+                "word": "mache",
+                "start": 192.86000061035156,
+                "end": 193.0800018310547
+            },
+            {
+                "word": "ich",
+                "start": 193.0800018310547,
+                "end": 193.33999633789062
+            },
+            {
+                "word": "ihn",
+                "start": 193.33999633789062,
+                "end": 193.5399932861328
+            },
+            {
+                "word": "schön",
+                "start": 193.5399932861328,
+                "end": 194.4199981689453
+            },
+            {
+                "word": "glatt",
+                "start": 194.4199981689453,
+                "end": 194.4199981689453
+            },
+            {
+                "word": "mit",
+                "start": 194.4199981689453,
+                "end": 194.6999969482422
+            },
+            {
+                "word": "meinen",
+                "start": 194.6999969482422,
+                "end": 195.1199951171875
+            },
+            {
+                "word": "Händen.",
+                "start": 195.1199951171875,
+                "end": 195.9199981689453
+            }
+        ],
+        "translationEn": "Then I make it nice and smooth with my hands.",
+        "translationVi": "Sau đó, tôi sẽ làm cho nó mịn màng bằng tay của mình."
+    },
+    {
+        "text": "Und ich mache einen Henkel dran.",
+        "start": 195.88000671386717,
+        "end": 198.21000061035156,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 195.9600067138672,
+                "end": 196.25999450683594
+            },
+            {
+                "word": "ich",
+                "start": 196.25999450683594,
+                "end": 196.52000427246094
+            },
+            {
+                "word": "mache",
+                "start": 196.52000427246094,
+                "end": 196.74000549316406
+            },
+            {
+                "word": "einen",
+                "start": 196.74000549316406,
+                "end": 197.22000122070312
+            },
+            {
+                "word": "Henkel",
+                "start": 197.22000122070312,
+                "end": 197.60000610351562
+            },
+            {
+                "word": "dran.",
+                "start": 197.60000610351562,
+                "end": 197.86000061035156
+            }
+        ],
+        "translationEn": "And I will put a handle on it.",
+        "translationVi": "Và tôi sẽ gắn một cái tay cầm vào."
+    },
+    {
+        "text": "Das ist eine Tasse.",
+        "start": 197.92,
+        "end": 200.10999450683593,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 198,
+                "end": 198.72000122070312
+            },
+            {
+                "word": "ist",
+                "start": 198.72000122070312,
+                "end": 198.9199981689453
+            },
+            {
+                "word": "eine",
+                "start": 198.9199981689453,
+                "end": 199.27999877929688
+            },
+            {
+                "word": "Tasse.",
+                "start": 199.27999877929688,
+                "end": 199.75999450683594
+            }
+        ],
+        "translationEn": "This is a cup.",
+        "translationVi": "Đây là một cái cốc."
+    },
+    {
+        "text": "Jetzt haben wir zwei Tassen.",
+        "start": 200.3399981689453,
+        "end": 202.95000610351562,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 200.4199981689453,
+                "end": 200.75999450683594
+            },
+            {
+                "word": "haben",
+                "start": 200.75999450683594,
+                "end": 201.05999755859375
+            },
+            {
+                "word": "wir",
+                "start": 201.05999755859375,
+                "end": 201.3800048828125
+            },
+            {
+                "word": "zwei",
+                "start": 201.3800048828125,
+                "end": 202.02000427246094
+            },
+            {
+                "word": "Tassen.",
+                "start": 202.02000427246094,
+                "end": 202.60000610351562
+            }
+        ],
+        "translationEn": "Now we have two cups.",
+        "translationVi": "Bây giờ chúng ta có hai cái cốc."
+    },
+    {
+        "text": "Ja, aber zu einem Teegeschirr gehören mehr als zwei Tassen.",
+        "start": 202.5200061035156,
+        "end": 206.93000183105468,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 202.60000610351562,
+                "end": 203.5
+            },
+            {
+                "word": "aber",
+                "start": 203.67999267578125,
+                "end": 204.16000366210938
+            },
+            {
+                "word": "zu",
+                "start": 204.16000366210938,
+                "end": 204.27999877929688
+            },
+            {
+                "word": "einem",
+                "start": 204.27999877929688,
+                "end": 204.6199951171875
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 204.6199951171875,
+                "end": 205.3000030517578
+            },
+            {
+                "word": "gehören",
+                "start": 205.3000030517578,
+                "end": 205.60000610351562
+            },
+            {
+                "word": "mehr",
+                "start": 205.60000610351562,
+                "end": 205.86000061035156
+            },
+            {
+                "word": "als",
+                "start": 205.86000061035156,
+                "end": 205.97999572753906
+            },
+            {
+                "word": "zwei",
+                "start": 205.97999572753906,
+                "end": 206.3000030517578
+            },
+            {
+                "word": "Tassen.",
+                "start": 206.3000030517578,
+                "end": 206.5800018310547
+            }
+        ],
+        "translationEn": "Yes, but a tea set includes more than two cups.",
+        "translationVi": "Vâng, nhưng một bộ trà không chỉ bao gồm hai tách."
+    },
+    {
+        "text": "Wir können alle Tassen machen.",
+        "start": 206.88000671386717,
+        "end": 209.18999633789062,
+        "wordTimings": [
+            {
+                "word": "Wir",
+                "start": 206.9600067138672,
+                "end": 207.0800018310547
+            },
+            {
+                "word": "können",
+                "start": 207.0800018310547,
+                "end": 207.39999389648438
+            },
+            {
+                "word": "alle",
+                "start": 207.39999389648438,
+                "end": 207.89999389648438
+            },
+            {
+                "word": "Tassen",
+                "start": 207.89999389648438,
+                "end": 208.33999633789062
+            },
+            {
+                "word": "machen.",
+                "start": 208.33999633789062,
+                "end": 208.83999633789062
+            }
+        ],
+        "translationEn": "We can make all kinds of mugs.",
+        "translationVi": "Chúng tôi có thể làm tất cả các loại cốc."
+    },
+    {
+        "text": "Schorsch hat einen Dinosaurier gemacht.",
+        "start": 215.7599963378906,
+        "end": 219.04999694824218,
+        "wordTimings": [
+            {
+                "word": "Schorsch",
+                "start": 215.83999633789062,
+                "end": 216.6199951171875
+            },
+            {
+                "word": "hat",
+                "start": 216.6199951171875,
+                "end": 216.86000061035156
+            },
+            {
+                "word": "einen",
+                "start": 216.86000061035156,
+                "end": 217.22000122070312
+            },
+            {
+                "word": "Dinosaurier",
+                "start": 217.22000122070312,
+                "end": 218.1199951171875
+            },
+            {
+                "word": "gemacht.",
+                "start": 218.1199951171875,
+                "end": 218.6999969482422
+            }
+        ],
+        "translationEn": "Schorsch has made a dinosaur.",
+        "translationVi": "Schorsch đã làm một con khủng long."
+    },
+    {
+        "text": "Schorsch macht immer nur Dinosaurier.",
+        "start": 218.92,
+        "end": 222.60999450683593,
+        "wordTimings": [
+            {
+                "word": "Schorsch",
+                "start": 219,
+                "end": 219.47999572753906
+            },
+            {
+                "word": "macht",
+                "start": 219.47999572753906,
+                "end": 219.83999633789062
+            },
+            {
+                "word": "immer",
+                "start": 219.83999633789062,
+                "end": 220.6199951171875
+            },
+            {
+                "word": "nur",
+                "start": 220.6199951171875,
+                "end": 221.24000549316406
+            },
+            {
+                "word": "Dinosaurier.",
+                "start": 221.24000549316406,
+                "end": 222.25999450683594
+            }
+        ],
+        "translationEn": "Schorsch always only makes dinosaurs.",
+        "translationVi": "Schorsch chỉ luôn làm khủng long."
+    },
+    {
+        "text": "Oh, ein furchterregender Saurier.",
+        "start": 222.5200061035156,
+        "end": 225.48999938964843,
+        "wordTimings": [
+            {
+                "word": "Oh,",
+                "start": 222.60000610351562,
+                "end": 223.3800048828125
+            },
+            {
+                "word": "ein",
+                "start": 223.47999572753906,
+                "end": 223.86000061035156
+            },
+            {
+                "word": "furchterregender",
+                "start": 223.86000061035156,
+                "end": 224.60000610351562
+            },
+            {
+                "word": "Saurier.",
+                "start": 224.60000610351562,
+                "end": 225.13999938964844
+            }
+        ],
+        "translationEn": "Oh, a terrifying dinosaur.",
+        "translationVi": "Ôi, một con khủng long đáng sợ."
+    },
+    {
+        "text": "Jetzt müssen wir das Teegeschirr im Ofen brennen.",
+        "start": 226.8399981689453,
+        "end": 230.60999450683593,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 226.9199981689453,
+                "end": 227.63999938964844
+            },
+            {
+                "word": "müssen",
+                "start": 227.63999938964844,
+                "end": 227.94000244140625
+            },
+            {
+                "word": "wir",
+                "start": 227.94000244140625,
+                "end": 228.22000122070312
+            },
+            {
+                "word": "das",
+                "start": 228.22000122070312,
+                "end": 228.47999572753906
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 228.47999572753906,
+                "end": 229.27999877929688
+            },
+            {
+                "word": "im",
+                "start": 229.27999877929688,
+                "end": 229.5
+            },
+            {
+                "word": "Ofen",
+                "start": 229.5,
+                "end": 229.89999389648438
+            },
+            {
+                "word": "brennen.",
+                "start": 229.89999389648438,
+                "end": 230.25999450683594
+            }
+        ],
+        "translationEn": "Now we need to fire the tea set in the oven.",
+        "translationVi": "Bây giờ chúng ta phải nung bộ đồ trà trong lò."
+    },
+    {
+        "text": "Im Brennofen wird der Ton ganz heiß gebrannt.",
+        "start": 231.09999267578124,
+        "end": 234.59000549316406,
+        "wordTimings": [
+            {
+                "word": "Im",
+                "start": 231.17999267578125,
+                "end": 231.94000244140625
+            },
+            {
+                "word": "Brennofen",
+                "start": 231.94000244140625,
+                "end": 232.5800018310547
+            },
+            {
+                "word": "wird",
+                "start": 232.5800018310547,
+                "end": 232.74000549316406
+            },
+            {
+                "word": "der",
+                "start": 232.74000549316406,
+                "end": 232.9600067138672
+            },
+            {
+                "word": "Ton",
+                "start": 232.9600067138672,
+                "end": 233.1999969482422
+            },
+            {
+                "word": "ganz",
+                "start": 233.1999969482422,
+                "end": 233.83999633789062
+            },
+            {
+                "word": "heiß",
+                "start": 233.83999633789062,
+                "end": 233.83999633789062
+            },
+            {
+                "word": "gebrannt.",
+                "start": 233.83999633789062,
+                "end": 234.24000549316406
+            }
+        ],
+        "translationEn": "In the kiln, the clay is fired very hot.",
+        "translationVi": "Trong lò nung, đất sét được nung rất nóng."
+    },
+    {
+        "text": "Davon wird er hart.",
+        "start": 234.66000549316405,
+        "end": 237.43000183105468,
+        "wordTimings": [
+            {
+                "word": "Davon",
+                "start": 234.74000549316406,
+                "end": 234.83999633789062
+            },
+            {
+                "word": "wird",
+                "start": 234.83999633789062,
+                "end": 235.02000427246094
+            },
+            {
+                "word": "er",
+                "start": 235.02000427246094,
+                "end": 237.0800018310547
+            },
+            {
+                "word": "hart.",
+                "start": 237.0800018310547,
+                "end": 237.0800018310547
+            }
+        ],
+        "translationEn": "That will make him tough.",
+        "translationVi": "Anh ấy sẽ trở nên cứng rắn."
+    },
+    {
+        "text": "Das Teegeschirr ist fertig.",
+        "start": 238.2200030517578,
+        "end": 240.07000122070312,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 238.3000030517578,
+                "end": 238.3000030517578
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 238.3000030517578,
+                "end": 238.97999572753906
+            },
+            {
+                "word": "ist",
+                "start": 238.97999572753906,
+                "end": 239.16000366210938
+            },
+            {
+                "word": "fertig.",
+                "start": 239.16000366210938,
+                "end": 239.72000122070312
+            }
+        ],
+        "translationEn": "The tea set is ready.",
+        "translationVi": "Bộ ấm chén trà đã sẵn sàng."
+    },
+    {
+        "text": "Wow, jetzt malen wir es an.",
+        "start": 239.92,
+        "end": 243.02999267578124,
+        "wordTimings": [
+            {
+                "word": "Wow,",
+                "start": 240,
+                "end": 240.1999969482422
+            },
+            {
+                "word": "jetzt",
+                "start": 241.13999938964844,
+                "end": 241.52000427246094
+            },
+            {
+                "word": "malen",
+                "start": 241.52000427246094,
+                "end": 241.8800048828125
+            },
+            {
+                "word": "wir",
+                "start": 241.8800048828125,
+                "end": 242
+            },
+            {
+                "word": "es",
+                "start": 242,
+                "end": 242.1199951171875
+            },
+            {
+                "word": "an.",
+                "start": 242.1199951171875,
+                "end": 242.67999267578125
+            }
+        ],
+        "translationEn": "Wow, now we are painting it.",
+        "translationVi": "Wow, bây giờ chúng ta sẽ vẽ nó."
+    },
+    {
+        "text": "Die Kinder bemalen das Teegeschirr mit schönen leuchtenden Farben.",
+        "start": 243.36000244140624,
+        "end": 246.85,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 243.44000244140625,
+                "end": 243.44000244140625
+            },
+            {
+                "word": "Kinder",
+                "start": 243.44000244140625,
+                "end": 243.74000549316406
+            },
+            {
+                "word": "bemalen",
+                "start": 243.74000549316406,
+                "end": 244.24000549316406
+            },
+            {
+                "word": "das",
+                "start": 244.24000549316406,
+                "end": 244.4199981689453
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 244.4199981689453,
+                "end": 244.97999572753906
+            },
+            {
+                "word": "mit",
+                "start": 244.97999572753906,
+                "end": 245.1199951171875
+            },
+            {
+                "word": "schönen",
+                "start": 245.1199951171875,
+                "end": 245.5399932861328
+            },
+            {
+                "word": "leuchtenden",
+                "start": 245.5399932861328,
+                "end": 246.02000427246094
+            },
+            {
+                "word": "Farben.",
+                "start": 246.02000427246094,
+                "end": 246.5
+            }
+        ],
+        "translationEn": "The children are painting the tea set with beautiful bright colors.",
+        "translationVi": "Trẻ em tô màu bộ đồ trà bằng những màu sắc rực rỡ đẹp mắt."
+    },
+    {
+        "text": "Das Teegeschirr ist fertig.",
+        "start": 247.78000061035155,
+        "end": 249.98999938964843,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 247.86000061035156,
+                "end": 248.02000427246094
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 248.02000427246094,
+                "end": 248.8000030517578
+            },
+            {
+                "word": "ist",
+                "start": 248.8000030517578,
+                "end": 249.16000366210938
+            },
+            {
+                "word": "fertig.",
+                "start": 249.16000366210938,
+                "end": 249.63999938964844
+            }
+        ],
+        "translationEn": "The tea set is ready.",
+        "translationVi": "Bộ ấm chén trà đã sẵn sàng."
+    },
+    {
+        "text": "Jetzt können wir unser Picknick machen.",
+        "start": 249.8399981689453,
+        "end": 252.85,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 249.9199981689453,
+                "end": 250.5399932861328
+            },
+            {
+                "word": "können",
+                "start": 250.5399932861328,
+                "end": 250.83999633789062
+            },
+            {
+                "word": "wir",
+                "start": 250.83999633789062,
+                "end": 251.0800018310547
+            },
+            {
+                "word": "unser",
+                "start": 251.0800018310547,
+                "end": 251.47999572753906
+            },
+            {
+                "word": "Picknick",
+                "start": 251.47999572753906,
+                "end": 252.0800018310547
+            },
+            {
+                "word": "machen.",
+                "start": 252.0800018310547,
+                "end": 252.5
+            }
+        ],
+        "translationEn": "Now we can have our picnic.",
+        "translationVi": "Bây giờ chúng ta có thể tổ chức buổi picnic của mình."
+    },
+    {
+        "text": "Für jeden ist eine Tasse da.",
+        "start": 252.7200030517578,
+        "end": 255.4699951171875,
+        "wordTimings": [
+            {
+                "word": "Für",
+                "start": 252.8000030517578,
+                "end": 253.1999969482422
+            },
+            {
+                "word": "jeden",
+                "start": 253.1999969482422,
+                "end": 253.74000549316406
+            },
+            {
+                "word": "ist",
+                "start": 253.74000549316406,
+                "end": 253.97999572753906
+            },
+            {
+                "word": "eine",
+                "start": 253.97999572753906,
+                "end": 254.32000732421875
+            },
+            {
+                "word": "Tasse",
+                "start": 254.32000732421875,
+                "end": 254.67999267578125
+            },
+            {
+                "word": "da.",
+                "start": 254.67999267578125,
+                "end": 255.1199951171875
+            }
+        ],
+        "translationEn": "There is a cup for everyone.",
+        "translationVi": "Mỗi người đều có một tách."
+    },
+    {
+        "text": "Oh, wir haben vergessen, eine Kanne zu machen.",
+        "start": 255.42,
+        "end": 259.0299926757813,
+        "wordTimings": [
+            {
+                "word": "Oh,",
+                "start": 255.5,
+                "end": 256.260009765625
+            },
+            {
+                "word": "wir",
+                "start": 256.260009765625,
+                "end": 256.3999938964844
+            },
+            {
+                "word": "haben",
+                "start": 256.3999938964844,
+                "end": 256.7200012207031
+            },
+            {
+                "word": "vergessen,",
+                "start": 256.7200012207031,
+                "end": 257.20001220703125
+            },
+            {
+                "word": "eine",
+                "start": 257.4599914550781,
+                "end": 257.55999755859375
+            },
+            {
+                "word": "Kanne",
+                "start": 257.55999755859375,
+                "end": 257.9599914550781
+            },
+            {
+                "word": "zu",
+                "start": 257.9599914550781,
+                "end": 258.67999267578125
+            },
+            {
+                "word": "machen.",
+                "start": 258.67999267578125,
+                "end": 258.67999267578125
+            }
+        ],
+        "translationEn": "Oh, we forgot to make a pot.",
+        "translationVi": "Ôi, chúng ta đã quên làm một bình trà."
+    },
+    {
+        "text": "Ich weiß was.",
+        "start": 258.6999987792969,
+        "end": 260.0299926757813,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 258.7799987792969,
+                "end": 258.9800109863281
+            },
+            {
+                "word": "weiß",
+                "start": 258.9800109863281,
+                "end": 259.2799987792969
+            },
+            {
+                "word": "was.",
+                "start": 259.2799987792969,
+                "end": 259.67999267578125
+            }
+        ],
+        "translationEn": "I know what.",
+        "translationVi": "Tôi biết điều đó."
+    },
+    {
+        "text": "Der Dinosaurier von Schorsch kann die Teekanne sein.",
+        "start": 259.59999267578127,
+        "end": 263.2700134277344,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 259.67999267578125,
+                "end": 259.8999938964844
+            },
+            {
+                "word": "Dinosaurier",
+                "start": 259.8999938964844,
+                "end": 260.6400146484375
+            },
+            {
+                "word": "von",
+                "start": 260.6400146484375,
+                "end": 260.9800109863281
+            },
+            {
+                "word": "Schorsch",
+                "start": 260.9800109863281,
+                "end": 261.44000244140625
+            },
+            {
+                "word": "kann",
+                "start": 261.44000244140625,
+                "end": 261.67999267578125
+            },
+            {
+                "word": "die",
+                "start": 261.67999267578125,
+                "end": 261.94000244140625
+            },
+            {
+                "word": "Teekanne",
+                "start": 261.94000244140625,
+                "end": 262.4200134277344
+            },
+            {
+                "word": "sein.",
+                "start": 262.4200134277344,
+                "end": 262.9200134277344
+            }
+        ],
+        "translationEn": "George's dinosaur can be the teapot.",
+        "translationVi": "Khủng long của Schorsch có thể là ấm trà."
+    },
+    {
+        "text": "Ja, wir füllen ihn mal mit Wasser.",
+        "start": 263.36000244140627,
+        "end": 266.5299926757813,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 263.44000244140625,
+                "end": 263.9800109863281
+            },
+            {
+                "word": "wir",
+                "start": 264.29998779296875,
+                "end": 264.94000244140625
+            },
+            {
+                "word": "füllen",
+                "start": 264.94000244140625,
+                "end": 264.94000244140625
+            },
+            {
+                "word": "ihn",
+                "start": 264.94000244140625,
+                "end": 265.17999267578125
+            },
+            {
+                "word": "mal",
+                "start": 265.17999267578125,
+                "end": 265.5199890136719
+            },
+            {
+                "word": "mit",
+                "start": 265.5199890136719,
+                "end": 265.79998779296875
+            },
+            {
+                "word": "Wasser.",
+                "start": 265.79998779296875,
+                "end": 266.17999267578125
+            }
+        ],
+        "translationEn": "Yes, let's fill it with water.",
+        "translationVi": "Vâng, chúng ta hãy đổ nước vào đó."
+    },
+    {
+        "text": "Das ist das beste Teegeschirr auf der ganzen Welt.",
+        "start": 270.71998779296877,
+        "end": 275.1700073242188,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 270.79998779296875,
+                "end": 271.6000061035156
+            },
+            {
+                "word": "ist",
+                "start": 271.6000061035156,
+                "end": 271.79998779296875
+            },
+            {
+                "word": "das",
+                "start": 271.79998779296875,
+                "end": 272.20001220703125
+            },
+            {
+                "word": "beste",
+                "start": 272.20001220703125,
+                "end": 272.55999755859375
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 272.55999755859375,
+                "end": 273.17999267578125
+            },
+            {
+                "word": "auf",
+                "start": 273.17999267578125,
+                "end": 273.5
+            },
+            {
+                "word": "der",
+                "start": 273.5,
+                "end": 273.67999267578125
+            },
+            {
+                "word": "ganzen",
+                "start": 273.67999267578125,
+                "end": 274.82000732421875
+            },
+            {
+                "word": "Welt.",
+                "start": 274.82000732421875,
+                "end": 274.82000732421875
+            }
+        ],
+        "translationEn": "This is the best tea set in the whole world.",
+        "translationVi": "Đây là bộ ấm chén trà tốt nhất trên toàn thế giới."
+    },
+    {
+        "text": "Natürlich, ein richtiges Teegeschirr hat einen Dinosaurier als Teekanne.",
+        "start": 275.3199938964844,
+        "end": 280.5100036621094,
+        "wordTimings": [
+            {
+                "word": "Natürlich,",
+                "start": 275.3999938964844,
+                "end": 276.1600036621094
+            },
+            {
+                "word": "ein",
+                "start": 276.3399963378906,
+                "end": 276.6199951171875
+            },
+            {
+                "word": "richtiges",
+                "start": 276.6199951171875,
+                "end": 277.17999267578125
+            },
+            {
+                "word": "Teegeschirr",
+                "start": 277.17999267578125,
+                "end": 277.7799987792969
+            },
+            {
+                "word": "hat",
+                "start": 277.7799987792969,
+                "end": 278.0199890136719
+            },
+            {
+                "word": "einen",
+                "start": 278.0199890136719,
+                "end": 278.3800048828125
+            },
+            {
+                "word": "Dinosaurier",
+                "start": 278.3800048828125,
+                "end": 279.20001220703125
+            },
+            {
+                "word": "als",
+                "start": 279.20001220703125,
+                "end": 279.6000061035156
+            },
+            {
+                "word": "Teekanne.",
+                "start": 279.6000061035156,
+                "end": 280.1600036621094
+            }
+        ],
+        "translationEn": "Of course, a proper tea set has a dinosaur as the teapot.",
+        "translationVi": "Tất nhiên, một bộ ấm chén trà đúng nghĩa có một con khủng long làm ấm trà."
+    },
+    {
+        "text": "Teekanne.",
+        "start": 280.36000244140627,
+        "end": 281.589990234375,
+        "wordTimings": [
+            {
+                "word": "Teekanne.",
+                "start": 280.44000244140625,
+                "end": 281.239990234375
+            }
+        ],
+        "translationEn": "Teapot.",
+        "translationVi": "Ấm trà."
+    },
+    {
+        "text": "Copyright WDR 2021.",
+        "start": 295.5600146484375,
+        "end": 296.2700134277344,
+        "wordTimings": [
+            {
+                "word": "Copyright",
+                "start": 295.6400146484375,
+                "end": 295.79998779296875
+            },
+            {
+                "word": "WDR",
+                "start": 295.79998779296875,
+                "end": 295.8399963378906
+            },
+            {
+                "word": "2021.",
+                "start": 295.8399963378906,
+                "end": 295.9200134277344
+            }
+        ],
+        "translationEn": "Copyright WDR 2021.",
+        "translationVi": "Bản quyền WDR 2021."
+    },
+    {
+        "text": "Untertitel im Auftrag des ZDF für funk 2017.",
+        "start": 311.159990234375,
+        "end": 312.3699890136719,
+        "wordTimings": [
+            {
+                "word": "Untertitel",
+                "start": 311.239990234375,
+                "end": 312.0199890136719
+            },
+            {
+                "word": "im",
+                "start": 312.0199890136719,
+                "end": 312.0199890136719
+            },
+            {
+                "word": "Auftrag",
+                "start": 312.0199890136719,
+                "end": 312.0199890136719
+            },
+            {
+                "word": "des",
+                "start": 312.0199890136719,
+                "end": 312.0199890136719
+            },
+            {
+                "word": "ZDF",
+                "start": 312.0199890136719,
+                "end": 312.0199890136719
+            },
+            {
+                "word": "für",
+                "start": 312.0199890136719,
+                "end": 312.0199890136719
+            },
+            {
+                "word": "funk",
+                "start": 312.0199890136719,
+                "end": 312.0199890136719
+            },
+            {
+                "word": "2017.",
+                "start": 312.0199890136719,
+                "end": 312.0199890136719
+            }
+        ],
+        "translationEn": "Subtitles commissioned by ZDF for funk 2017.",
+        "translationVi": "Phụ đề theo đơn đặt hàng của ZDF cho funk năm 2017."
+    }
+]
