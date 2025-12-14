@@ -31,6 +31,7 @@ const DictationMobileSlide = memo(({
   sortedTranscriptIndices,
   learningMode = 'dictation',
   showTranslation = false,
+  voiceRecordingResult = null,
   
   // Event handlers
   onSlideClick,
@@ -116,7 +117,41 @@ const DictationMobileSlide = memo(({
           {learningMode === 'shadowing' ? (
             // Shadowing mode: show full text
             <div className={styles.shadowingText}>
-              {sentence.text}
+              {isActive && voiceRecordingResult ? (
+                // Hiển thị với màu sắc theo kết quả ghi âm
+                <>
+                  {sentence.text.split(/\s+/).map((word, idx) => {
+                    const wordComparison = voiceRecordingResult.wordComparison || {};
+                    const comparisonStatus = wordComparison[idx];
+                    
+                    let wordColor = '';
+                    if (comparisonStatus === 'correct') {
+                      wordColor = '#10b981'; // Green
+                    } else if (comparisonStatus === 'incorrect') {
+                      wordColor = '#ef4444'; // Red
+                    } else if (comparisonStatus === 'missing') {
+                      wordColor = '#f59e0b'; // Orange
+                    }
+                    
+                    return (
+                      <span
+                        key={idx}
+                        style={{
+                          color: wordColor || 'inherit',
+                          fontWeight: wordColor ? '600' : 'inherit'
+                        }}
+                      >
+                        {word}{idx < sentence.text.split(/\s+/).length - 1 ? ' ' : ''}
+                      </span>
+                    );
+                  })}
+                  <span className={`${styles.voiceResultBadge} ${voiceRecordingResult.isCorrect ? styles.voiceResultBadgeCorrect : styles.voiceResultBadgeIncorrect}`}>
+                    {voiceRecordingResult.isCorrect ? '✅' : '❌'} {voiceRecordingResult.similarity}%
+                  </span>
+                </>
+              ) : (
+                sentence.text
+              )}
             </div>
           ) : isCompleted ? (
             <div 
@@ -174,6 +209,15 @@ const DictationMobileSlide = memo(({
             </div>
           )}
         </div>
+
+        {/* Voice Recording Result Badge - Chỉ cho Dictation Mode */}
+        {learningMode !== 'shadowing' && isActive && voiceRecordingResult && (
+          <div className={styles.voiceRecordingResultSimple}>
+            <span className={`${styles.voiceResultBadge} ${voiceRecordingResult.isCorrect ? styles.voiceResultBadgeCorrect : styles.voiceResultBadgeIncorrect}`}>
+              {voiceRecordingResult.isCorrect ? '✅' : '❌'} {voiceRecordingResult.similarity}%
+            </span>
+          </div>
+        )}
 
         {/* Translation display */}
         {showTranslation && sentence.translation && (

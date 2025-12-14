@@ -3140,6 +3140,7 @@ const DictationPageContent = () => {
                           sortedTranscriptIndices={sortedTranscriptIndices}
                           learningMode={learningMode}
                           showTranslation={showTranslation}
+                          voiceRecordingResult={originalIndex === currentSentenceIndex ? voiceRecordingResult : null}
                           onSlideClick={handleMobileSlideClick}
                           onTouchStart={handleTouchStart}
                           onTouchMove={handleTouchMove}
@@ -3201,6 +3202,18 @@ const DictationPageContent = () => {
                                 const isCurrent = isActive && isPlaying && idx === activeWordIndex;
                                 const pureWord = word.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
                                 
+                                // Voice recording color highlighting
+                                const wordComparison = isActive && voiceRecordingResult ? voiceRecordingResult.wordComparison || {} : {};
+                                const comparisonStatus = wordComparison[idx];
+                                let wordColor = '';
+                                if (comparisonStatus === 'correct') {
+                                  wordColor = '#10b981'; // Green
+                                } else if (comparisonStatus === 'incorrect') {
+                                  wordColor = '#ef4444'; // Red
+                                } else if (comparisonStatus === 'missing') {
+                                  wordColor = '#f59e0b'; // Orange
+                                }
+                                
                                 return (
                                   <span
                                     key={idx}
@@ -3211,11 +3224,21 @@ const DictationPageContent = () => {
                                         handleWordClickForPopup(pureWord, e);
                                       }
                                     }}
+                                    style={{
+                                      color: wordColor || undefined,
+                                      fontWeight: wordColor ? '600' : undefined
+                                    }}
                                   >
                                     {word}{idx < segment.text.split(/\s+/).length - 1 ? ' ' : ''}
                                   </span>
                                 );
                               })}
+                              {/* Voice Recording Badge */}
+                              {isActive && voiceRecordingResult && (
+                                <span className={`${styles.voiceResultBadge} ${voiceRecordingResult.isCorrect ? styles.voiceResultBadgeCorrect : styles.voiceResultBadgeIncorrect}`}>
+                                  {voiceRecordingResult.isCorrect ? '✅' : '❌'} {voiceRecordingResult.similarity}%
+                                </span>
+                              )}
                             </div>
                             {showTranslation && segment.translation && (
                               <div className={styles.mobileTranscriptTranslation}>

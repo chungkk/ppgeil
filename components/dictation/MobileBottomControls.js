@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import mobileStyles from '../../styles/dictation/dictationMobile.module.css';
 
@@ -30,8 +30,11 @@ const MobileBottomControls = ({
 }) => {
   const [isRecording, setIsRecording] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [recordedBlob, setRecordedBlob] = useState(null);
+  const [isPlayingRecording, setIsPlayingRecording] = useState(false);
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
+  const playbackAudioRef = useRef(null);
 
   // Calculate text similarity
   const calculateSimilarity = (transcribedText, originalText) => {
@@ -102,6 +105,7 @@ const MobileBottomControls = ({
         const audioBlob = new Blob(audioChunksRef.current, {
           type: audioChunksRef.current[0]?.type || 'audio/webm'
         });
+        setRecordedBlob(audioBlob);
         await processRecording(audioBlob);
       };
 
@@ -188,6 +192,59 @@ const MobileBottomControls = ({
       startRecording();
     }
   };
+
+  // Play recorded audio
+  const playRecording = () => {
+    if (!recordedBlob) return;
+
+    // If already playing, stop it
+    if (playbackAudioRef.current) {
+      playbackAudioRef.current.pause();
+      playbackAudioRef.current = null;
+      setIsPlayingRecording(false);
+      return;
+    }
+
+    const audioUrl = URL.createObjectURL(recordedBlob);
+    const audio = new Audio(audioUrl);
+    playbackAudioRef.current = audio;
+    
+    audio.onended = () => {
+      URL.revokeObjectURL(audioUrl);
+      playbackAudioRef.current = null;
+      setIsPlayingRecording(false);
+    };
+
+    audio.onerror = () => {
+      URL.revokeObjectURL(audioUrl);
+      playbackAudioRef.current = null;
+      setIsPlayingRecording(false);
+      alert('Lỗi phát lại audio');
+    };
+
+    audio.play();
+    setIsPlayingRecording(true);
+  };
+
+  // Clear recorded blob when sentence changes
+  useEffect(() => {
+    setRecordedBlob(null);
+    if (playbackAudioRef.current) {
+      playbackAudioRef.current.pause();
+      playbackAudioRef.current = null;
+      setIsPlayingRecording(false);
+    }
+  }, [currentSentence]);
+
+  // Clean up on unmount
+  useEffect(() => {
+    return () => {
+      if (playbackAudioRef.current) {
+        playbackAudioRef.current.pause();
+        playbackAudioRef.current = null;
+      }
+    };
+  }, []);
   return (
     <div className={styles.mobileBottomControls}>
       {/* Previous Sentence Button */}
@@ -243,6 +300,26 @@ const MobileBottomControls = ({
               <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z"/>
               <path d="M11 18h2v4h-2z"/>
               <path d="M8 22h8v2H8z"/>
+            </svg>
+          )}
+        </button>
+      )}
+
+      {/* Playback Recording Button */}
+      {showRecordButton && recordedBlob && (
+        <button 
+          className={`${styles.mobileControlBtn} ${styles.mobileControlBtnReplay} ${isPlayingRecording ? styles.playing : ''}`}
+          onClick={playRecording}
+          title={isPlayingRecording ? 'Dừng phát' : 'Phát lại bản ghi'}
+        >
+          {isPlayingRecording ? (
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <rect x="6" y="4" width="4" height="16" rx="1"/>
+              <rect x="14" y="4" width="4" height="16" rx="1"/>
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
             </svg>
           )}
         </button>

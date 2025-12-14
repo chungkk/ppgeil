@@ -102,13 +102,30 @@
 
 /* Replay Button */
 .mobileControlBtnReplay {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #94a3b8;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #818cf8;
 }
 
 .mobileControlBtnReplay:active:not(:disabled) {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(99, 102, 241, 0.25);
+}
+
+.mobileControlBtnReplay.playing {
+  background: rgba(99, 102, 241, 0.95);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+  animation: playingPulse 2s ease-in-out infinite;
+}
+
+@keyframes playingPulse {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+  }
+  50% {
+    box-shadow: 0 8px 28px rgba(99, 102, 241, 0.65);
+  }
 }
 
 /* Voice Recorder Button Container */
@@ -486,4 +503,55 @@
   line-height: 1.7; /* Increased from 1.6 for better spacing */
   text-align: center;
   box-shadow: 0 -2px 8px rgba(59, 130, 246, 0.1);
+}
+
+/* Voice Recording Result - Simple Badge Display */
+.voiceRecordingResultSimple {
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voiceResultBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.voiceResultBadgeCorrect {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.25) 0%, rgba(5, 150, 105, 0.25) 100%);
+  color: #6ee7b7;
+  border: 1.5px solid rgba(16, 185, 129, 0.5);
+}
+
+.voiceResultBadgeIncorrect {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(220, 38, 38, 0.25) 100%);
+  color: #fca5a5;
+  border: 1.5px solid rgba(239, 68, 68, 0.5);
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 480px) {
+  .voiceResultBadge {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
 }
