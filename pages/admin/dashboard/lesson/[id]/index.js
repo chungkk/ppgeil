@@ -21,7 +21,6 @@ function LessonFormPage() {
   const [fetchingWhisperSRT, setFetchingWhisperSRT] = useState(false);
   const [fetchingWhisperV2, setFetchingWhisperV2] = useState(false);
   const [fetchingWhisperV3, setFetchingWhisperV3] = useState(false);
-  const [extractingVocab, setExtractingVocab] = useState(false);
 
   const [formData, setFormData] = useState({
     id: '',
@@ -95,10 +94,16 @@ function LessonFormPage() {
               const jsonData = await jsonRes.json();
               const srt = convertJSONtoSRT(jsonData);
               setSrtText(srt);
+            } else {
+              console.error('Error loading JSON: HTTP', jsonRes.status);
+              toast.warning('Không thể tải nội dung SRT. Vui lòng kiểm tra lại file JSON.');
             }
           } catch (e) {
             console.error('Error loading JSON:', e);
+            toast.error('Lỗi khi tải nội dung SRT: ' + e.message);
           }
+        } else {
+          toast.warning('Bài học này chưa có nội dung SRT');
         }
       } else {
         toast.error('Lektion nicht gefunden');
@@ -467,8 +472,8 @@ function LessonFormPage() {
       if (!srtText.trim()) newErrors.srt = 'SRT-Text ist erforderlich';
     }
 
-    // Validate SRT format
-    if (srtText.trim() && !validateSRT(srtText)) {
+    // Validate SRT format (only for new lessons to avoid false positives on edits)
+    if (isNewLesson && srtText.trim() && !validateSRT(srtText)) {
       newErrors.srt = 'Ungültiges SRT-Format';
     }
 
@@ -593,6 +598,7 @@ function LessonFormPage() {
           title: formData.title,
           description: formData.description,
           level: formData.level,
+          category: formData.category || undefined, // Fix: Include category in update
           videoDuration: formData.videoDuration || undefined
         };
       }
@@ -610,36 +616,6 @@ function LessonFormPage() {
       if (!res.ok) throw new Error('Lektion konnte nicht gespeichert werden');
 
       toast.success(isNewLesson ? 'Lektion erfolgreich erstellt!' : 'Lektion erfolgreich aktualisiert!');
-
-      // Auto-extract vocabulary for new lessons
-      if (isNewLesson && formData.id) {
-        setExtractingVocab(true);
-        try {
-          const vocabRes = await fetch('/api/extract-lesson-vocabulary', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Bearer ${token}`
-            },
-            body: JSON.stringify({ 
-              lessonId: formData.id,
-              level: formData.level,
-              targetLang: 'vi'
-            })
-          });
-          
-          if (vocabRes.ok) {
-            const vocabData = await vocabRes.json();
-            toast.success(`📚 Đã trích xuất ${vocabData.data?.totalWords || 0} từ vựng!`);
-          } else {
-            console.error('Extract vocabulary failed');
-          }
-        } catch (vocabError) {
-          console.error('Extract vocabulary error:', vocabError);
-        } finally {
-          setExtractingVocab(false);
-        }
-      }
 
       router.push('/admin/dashboard');
     } catch (error) {
@@ -683,16 +659,6 @@ function LessonFormPage() {
             >
               ← Zurück
             </button>
-            {!isNewLesson && (
-              <button
-                type="button"
-                onClick={() => router.push(`/admin/dashboard/lesson/${id}/vocabulary`)}
-                className={styles.actionButton}
-                style={{ background: '#10b981' }}
-              >
-                📚 Quản lý từ vựng
-              </button>
-            )}
           </div>
         </div>
 
@@ -709,10 +675,10 @@ function LessonFormPage() {
               </button>
               <button
                 type="submit"
-                disabled={uploading || extractingVocab}
+                disabled={uploading}
                 className={styles.submitButton}
               >
-                {uploading ? '⏳ Speichert...' : extractingVocab ? '📚 Đang trích xuất từ vựng...' : '➕ Lektion erstellen'}
+                {uploading ? '⏳ Speichert...' : '➕ Lektion erstellen'}
               </button>
             </div>
           )}
