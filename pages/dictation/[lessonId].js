@@ -1056,7 +1056,7 @@ const DictationPageContent = () => {
     setTimeout(() => {
       isUserClickedTranscriptRef.current = false;
     }, 500);
-  }, [transcriptData, isYouTube, isPlaying, currentTime, pausedPositions, currentSentenceIndex, userSeekTimeout]);
+  }, [transcriptData, isYouTube, userSeekTimeout]);
 
   // Transcript indices in normal order
   const sortedTranscriptIndices = useMemo(() => {
@@ -1893,7 +1893,7 @@ const DictationPageContent = () => {
       setPopupArrowPosition(arrowPos);
       setShowVocabPopup(true);
     }
-  }, [isYouTube, user]);
+  }, [isYouTube]);
 
   // Handle input click - Show hint popup on both Desktop and Mobile
   const handleInputClick = useCallback((input, correctWord, wordIndex) => {

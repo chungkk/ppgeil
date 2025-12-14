@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
@@ -50,15 +50,8 @@ const ReadPracticePage = () => {
     }
   }, [lesson]);
 
-  // Generate quiz questions when transcript loaded
-  useEffect(() => {
-    if (transcriptData.length > 0 && questions.length === 0 && !isGenerating) {
-      generateQuiz();
-    }
-  }, [transcriptData, vocabulary]);
-
   // Generate quiz using OpenAI
-  const generateQuiz = async () => {
+  const generateQuiz = useCallback(async () => {
     if (transcriptData.length < 3) return;
     
     setIsGenerating(true);
@@ -89,7 +82,14 @@ const ReadPracticePage = () => {
     } finally {
       setIsGenerating(false);
     }
-  };
+  }, [transcriptData, vocabulary, user, t]);
+
+  // Generate quiz questions when transcript loaded
+  useEffect(() => {
+    if (transcriptData.length > 0 && questions.length === 0 && !isGenerating) {
+      generateQuiz();
+    }
+  }, [transcriptData, vocabulary, questions.length, isGenerating, generateQuiz]);
 
   // Select answer
   const selectAnswer = (questionIdx, optionIdx) => {
