@@ -40,8 +40,12 @@ function AdminLessonsPage() {
   const fetchLessons = async () => {
     try {
       setLoading(true);
+      const token = localStorage.getItem('token');
       const res = await fetch(`/api/lessons?t=${Date.now()}`, {
-        headers: { 'Cache-Control': 'no-cache' }
+        headers: { 
+          'Cache-Control': 'no-cache',
+          'Authorization': `Bearer ${token}`
+        }
       });
       const responseData = await res.json();
       const data = Array.isArray(responseData)
@@ -77,7 +81,9 @@ function AdminLessonsPage() {
   };
 
   const handleEdit = (lesson) => {
-    router.push(`/admin/dashboard/lesson/${lesson.id}`);
+    // Use custom id field if available, otherwise use MongoDB _id
+    const lessonId = lesson.id || lesson._id;
+    router.push(`/admin/dashboard/lesson/${lessonId}`);
   };
 
   const handleDelete = async (lessonId) => {
@@ -353,33 +359,6 @@ function AdminLessonsPage() {
           >
             ⚙️ Cài đặt
           </Link>
-        </div>
-
-        {/* Stats - Inline compact */}
-        <div className={styles.statsOverview}>
-          <div className={styles.statCard}>
-            <div className={styles.statIcon}>📚</div>
-            <div className={styles.statContent}>
-              <div className={styles.statValue}>{lessons.length}</div>
-              <div className={styles.statLabel}>Gesamt</div>
-            </div>
-          </div>
-          <div className={styles.statCard}>
-            <div className={styles.statIcon}>📄</div>
-            <div className={styles.statContent}>
-              <div className={styles.statValue}>{filteredLessons.length}</div>
-              <div className={styles.statLabel}>Gefiltert</div>
-            </div>
-          </div>
-          {selectedLessons.size > 0 && (
-            <div className={styles.statCard}>
-              <div className={styles.statIcon}>✓</div>
-              <div className={styles.statContent}>
-                <div className={styles.statValue}>{selectedLessons.size}</div>
-                <div className={styles.statLabel}>Ausgewählt</div>
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Lesson Filters */}

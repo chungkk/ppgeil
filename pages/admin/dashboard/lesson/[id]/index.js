@@ -73,10 +73,16 @@ function LessonFormPage() {
   const loadLesson = useCallback(async (lessonId) => {
     try {
       setLoading(true);
-      const res = await fetch('/api/lessons');
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/lessons', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
       const responseData = await res.json();
       const lessons = Array.isArray(responseData) ? responseData : (responseData.lessons || []);
-      const lesson = lessons.find(l => l.id === lessonId);
+      // Find lesson by custom id field or MongoDB _id
+      const lesson = lessons.find(l => l.id === lessonId || l._id === lessonId);
 
       if (lesson) {
         setFormData({

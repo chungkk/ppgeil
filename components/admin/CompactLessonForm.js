@@ -396,32 +396,10 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.compactForm}>
-      {/* Thông tin cơ bản */}
+      {/* Cấp độ và Danh mục */}
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>📝 Thông tin cơ bản</h2>
+        <h2 className={styles.sectionTitle}>📋 Phân loại</h2>
         
-        <div className={styles.formRow}>
-          <div className={styles.formGroup}>
-            <label className={styles.label}>
-              Tiêu đề <span className={styles.required}>*</span>
-            </label>
-            <input
-              type="text"
-              value={formData.title}
-              onChange={handleTitleChange}
-              placeholder="VD: Học tiếng Đức cơ bản - Bài 1"
-              className={`${styles.input} ${errors.title ? styles.inputError : ''}`}
-              autoFocus
-            />
-            {errors.title && <span className={styles.errorText}>{errors.title}</span>}
-            {formData.id && (
-              <span className={styles.helperText}>
-                ID: <code className={styles.idCode}>{formData.id}</code>
-              </span>
-            )}
-          </div>
-        </div>
-
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
             <label className={styles.label}>
@@ -584,14 +562,9 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
             )}
           </div>
         )}
-      </div>
 
-      {/* Transcript */}
-      <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>📄 Transcript (SRT)</h2>
-        
-        {/* Get SRT Buttons - Only 2 buttons */}
-        <div className={styles.srtActions}>
+        {/* Get SRT Buttons */}
+        <div className={styles.srtActions} style={{ marginTop: '20px' }}>
           {audioSource === 'youtube' && (
             <>
               <button
@@ -626,7 +599,36 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
             </>
           )}
         </div>
+      </div>
 
+      {/* Tiêu đề */}
+      <div className={styles.section}>
+        <h2 className={styles.sectionTitle}>📝 Thông tin bài học</h2>
+        
+        <div className={styles.formGroup}>
+          <label className={styles.label}>
+            Tiêu đề <span className={styles.required}>*</span>
+          </label>
+          <input
+            type="text"
+            value={formData.title}
+            onChange={handleTitleChange}
+            placeholder="VD: Học tiếng Đức cơ bản - Bài 1"
+            className={`${styles.input} ${errors.title ? styles.inputError : ''}`}
+          />
+          {errors.title && <span className={styles.errorText}>{errors.title}</span>}
+          {formData.id && (
+            <span className={styles.helperText}>
+              ID: <code className={styles.idCode}>{formData.id}</code>
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* Transcript */}
+      <div className={styles.section}>
+        <h2 className={styles.sectionTitle}>📄 Transcript (SRT)</h2>
+        
         {/* SRT Editor */}
         <div className={styles.formGroup}>
           <label className={styles.label}>

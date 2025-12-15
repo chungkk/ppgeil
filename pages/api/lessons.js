@@ -9,9 +9,13 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     try {
+      // Check if request is from admin (has Authorization header)
+      const isAdminRequest = !!req.headers.authorization;
+      
       // Get pagination parameters
       const page = parseInt(req.query.page) || 1;
-      const limit = parseInt(req.query.limit) || 12;
+      // For admin requests, no limit by default. For public, limit to 12
+      const limit = isAdminRequest ? parseInt(req.query.limit) || 9999 : parseInt(req.query.limit) || 12;
       const skip = (page - 1) * limit;
       const difficulty = req.query.difficulty;
       const category = req.query.category; // T046: Add category filtering
