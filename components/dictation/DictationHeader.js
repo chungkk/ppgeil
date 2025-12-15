@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import IOSBackButton from '../IOSBackButton';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import inputStyles from '../../styles/dictation/dictationInput.module.css';
 import headerStyles from '../../styles/dictation/dictationHeader.module.css';
@@ -77,23 +78,27 @@ const DictationHeader = ({
   if (isMobile) {
     // Unified mobile header - same for both modes
     return (
-      <div className={styles.unifiedMobileHeader}>
-        {/* Left: Learning mode toggle button - HIDDEN */}
-        {/* <div className={styles.headerLeftMobile}>
-          <button 
-            className={`${styles.modeToggleButton} ${learningMode === 'shadowing' ? styles.modeToggleActive : ''}`}
-            onClick={handleModeToggle}
-            title="Chuyển chế độ học"
-          >
-            {getModeIcon()}
-            <span className={styles.modeLabel}>
-              {getModeLabel()}
-            </span>
-          </button>
-        </div> */}
+      <>
+        {/* iOS Back Button */}
+        <IOSBackButton />
+        
+        <div className={styles.unifiedMobileHeader}>
+          {/* Left: Learning mode toggle button - HIDDEN */}
+          {/* <div className={styles.headerLeftMobile}>
+            <button 
+              className={`${styles.modeToggleButton} ${learningMode === 'shadowing' ? styles.modeToggleActive : ''}`}
+              onClick={handleModeToggle}
+              title="Chuyển chế độ học"
+            >
+              {getModeIcon()}
+              <span className={styles.modeLabel}>
+                {getModeLabel()}
+              </span>
+            </button>
+          </div> */}
 
-        {/* Center: Sentence counter */}
-        <div className={styles.headerCenter}>
+          {/* Center: Sentence counter */}
+          <div className={styles.headerCenter}>
           <span className={styles.sentenceNumber}>#{currentSentenceIndex + 1}</span>
           <span className={styles.sentenceDivider}>/</span>
           <span className={styles.sentenceTotal}>{totalSentences}</span>
@@ -174,7 +179,8 @@ const DictationHeader = ({
             </div>
           )}
         </div>
-      </div>
+        </div>
+      </>
     );
   }
 

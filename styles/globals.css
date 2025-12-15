@@ -747,3 +747,38 @@ button:focus-visible {
     will-change: auto !important;
   }
 }
+
+/* ============================================
+   iOS Native App Styles
+   ============================================ */
+
+/* Add padding for bottom navigation on iOS */
+.main-container {
+  padding-bottom: 0;
+  transition: padding-bottom 0.3s ease;
+}
+
+/* iOS Safe Area Support */
+@supports (-webkit-touch-callout: none) {
+  /* Add padding when bottom nav is present */
+  body:has(.bottom-nav) .main-container,
+  body:has(.bottom-nav) .App > div:first-child {
+    padding-bottom: calc(70px + env(safe-area-inset-bottom, 20px));
+  }
+
+  /* Ensure content doesn't hide behind bottom nav */
+  .category-section:last-child {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  /* Adjust scrolling behavior for iOS */
+  .horizontal-scroll {
+    -webkit-overflow-scrolling: touch;
+    scroll-padding-bottom: calc(70px + env(safe-area-inset-bottom, 20px));
+  }
+  
+  /* Add padding-top for pages with back button */
+  .main-container {
+    padding-top: max(env(safe-area-inset-top, 0px), 0px);
+  }
+}

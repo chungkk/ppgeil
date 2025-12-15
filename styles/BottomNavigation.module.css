@@ -1,0 +1,114 @@
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  z-index: 1000;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+.navItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #6c757d;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navItem:active {
+  transform: scale(0.95);
+}
+
+.navItem.active {
+  color: #007bff;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.iconWrapper svg,
+.iconWrapper path {
+  transition: all 0.2s ease;
+}
+
+.navItem.active .iconWrapper {
+  color: #007bff;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.navItem.active .label {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* iOS specific styles */
+@supports (-webkit-touch-callout: none) {
+  .bottomNav {
+    padding-bottom: max(env(safe-area-inset-bottom), 20px);
+  }
+}
+
+/* Smooth transitions */
+.navItem,
+.iconWrapper,
+.label {
+  will-change: transform, color;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .navItem,
+  .iconWrapper svg,
+  .label {
+    transition: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .bottomNav {
+    background: #1a1a1a;
+    border-top-color: #333;
+  }
+
+  .navItem {
+    color: #999;
+  }
+
+  .navItem.active {
+    color: #3b82f6;
+  }
+
+  .navItem.active .label {
+    color: #3b82f6;
+  }
+}

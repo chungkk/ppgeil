@@ -17,6 +17,8 @@ import Footer from '../components/Footer';
 import OfflineIndicator from '../components/OfflineIndicator';
 import FixedSocialShare from '../components/FixedSocialShare';
 import CookieConsent from '../components/CookieConsent';
+import BottomNavigation from '../components/BottomNavigation';
+import IOSBackButton from '../components/IOSBackButton';
 import { registerServiceWorker } from '../lib/serviceWorker';
 import { useIsNativeApp } from '../lib/hooks/useIsNativeApp';
 
@@ -31,6 +33,8 @@ function Layout({ children }) {
 
   return (
     <>
+      {/* IOSBackButton handles its own visibility logic */}
+      <IOSBackButton />
       {!shouldHideHeaderFooter && <Header />}
       {children}
       {!shouldHideHeaderFooter && <Footer />}
@@ -73,6 +77,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
                   <Component {...pageProps} />
                 </Layout>
               </div>
+              
+              {/* Bottom Navigation (iOS only) */}
+              <BottomNavigation />
               
               {/* Fixed Social Share Button */}
               <FixedSocialShare />

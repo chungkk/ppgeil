@@ -37,6 +37,7 @@
   justify-content: center;
   gap: 4px;
   font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  padding-left: 44px; /* Add padding for iOS back button */
 }
 
 /* Mode Toggle Button */
