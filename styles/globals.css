@@ -776,9 +776,4 @@ button:focus-visible {
     -webkit-overflow-scrolling: touch;
     scroll-padding-bottom: calc(70px + env(safe-area-inset-bottom, 20px));
   }
-  
-  /* Add padding-top for pages with back button */
-  .main-container {
-    padding-top: max(env(safe-area-inset-top, 0px), 0px);
-  }
 }
