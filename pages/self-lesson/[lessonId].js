@@ -3118,6 +3118,27 @@ const DictationPageContent = () => {
         }
       `}</style>
 
+      {/* Mobile Header - Fixed at top (only renders on mobile) */}
+      {isMobile && (
+        <DictationHeader
+          isMobile={true}
+          currentSentenceIndex={currentSentenceIndex}
+          totalSentences={transcriptData.length}
+          completedCount={completedSentences.length}
+          playbackSpeed={playbackSpeed}
+          onSpeedChange={handleSpeedChange}
+          showTranslation={false}
+          onToggleTranslation={null}
+          autoStop={autoStop}
+          onAutoStopChange={setAutoStop}
+          learningMode="dictation"
+          onToggleLearningMode={null}
+          lessonId={lessonId}
+          savedVocabularyCount={savedWords.length}
+          onShowVocabulary={() => setShowVocabPopup(true)}
+        />
+      )}
+
       <div className={styles.pageContainer}>
         {/* Main 3-Column Layout */}
         <div className={styles.mainContent}>

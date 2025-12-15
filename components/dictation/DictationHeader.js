@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
-import IOSBackButton from '../IOSBackButton';
+import { useIsNativeApp } from '../../lib/hooks/useIsNativeApp';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import inputStyles from '../../styles/dictation/dictationInput.module.css';
 import headerStyles from '../../styles/dictation/dictationHeader.module.css';
@@ -33,8 +34,15 @@ const DictationHeader = ({
   onShowVocabulary
 }) => {
   const { t } = useTranslation();
+  const router = useRouter();
+  const { isIOS } = useIsNativeApp();
   const [showSettingsMenu, setShowSettingsMenu] = useState(false);
   const settingsRef = useRef(null);
+
+  // Handle back button
+  const handleBack = () => {
+    router.push('/');
+  };
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -76,29 +84,35 @@ const DictationHeader = ({
   const progressPercent = totalSentences > 0 ? Math.round((completedCount / totalSentences) * 100) : 0;
 
   if (isMobile) {
-    // Unified mobile header - same for both modes
+    // Unified mobile header with back button - same for both modes
     return (
-      <>
-        {/* iOS Back Button */}
-        <IOSBackButton />
-        
-        <div className={styles.unifiedMobileHeader}>
-          {/* Left: Learning mode toggle button - HIDDEN */}
-          {/* <div className={styles.headerLeftMobile}>
+      <div className={styles.unifiedMobileHeader}>
+        {/* Left: Back button (only on iOS) */}
+        <div className={styles.headerLeftMobile}>
+          {isIOS && (
             <button 
-              className={`${styles.modeToggleButton} ${learningMode === 'shadowing' ? styles.modeToggleActive : ''}`}
-              onClick={handleModeToggle}
-              title="Chuyển chế độ học"
+              className={styles.backButton}
+              onClick={handleBack}
+              aria-label="Go back"
             >
-              {getModeIcon()}
-              <span className={styles.modeLabel}>
-                {getModeLabel()}
-              </span>
+              <svg 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2.5" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
             </button>
-          </div> */}
+          )}
+        </div>
 
-          {/* Center: Sentence counter */}
-          <div className={styles.headerCenter}>
+        {/* Center: Sentence counter */}
+        <div className={styles.headerCenter}>
           <span className={styles.sentenceNumber}>#{currentSentenceIndex + 1}</span>
           <span className={styles.sentenceDivider}>/</span>
           <span className={styles.sentenceTotal}>{totalSentences}</span>
@@ -179,8 +193,7 @@ const DictationHeader = ({
             </div>
           )}
         </div>
-        </div>
-      </>
+      </div>
     );
   }
 

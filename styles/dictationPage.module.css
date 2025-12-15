@@ -3292,7 +3292,7 @@
 
   .leftSection {
     position: fixed;
-    top: 48px; /* Closer to header */
+    top: calc(max(env(safe-area-inset-top, 0px), 8px) + 56px); /* Below header (56px min-height) */
     left: 0;
     right: 0;
     z-index: 100;
@@ -3303,7 +3303,7 @@
   
   .middleSection {
     position: fixed;
-    top: calc(48px + 56.25vw + 0px); /* Below video - no gap */
+    top: calc(max(env(safe-area-inset-top, 0px), 8px) + 56px + 56.25vw + 0px); /* Below header + video */
     bottom: calc(52px + env(safe-area-inset-bottom, 0px)); /* Sát thanh điều khiển */
     left: 4px;
     right: 4px;
@@ -4536,13 +4536,13 @@
   }
   
   .leftSection {
-    top: 44px; /* Even closer to header on small screens */
+    top: calc(max(env(safe-area-inset-top, 0px), 8px) + 52px); /* Below header on small screens */
     height: auto; /* Let video aspect-ratio determine height */
     padding: 0 2px; /* Minimal padding on small screens */
   }
 
   .middleSection {
-    top: calc(44px + 56.25vw + 0px); /* Below video - no gap */
+    top: calc(max(env(safe-area-inset-top, 0px), 8px) + 52px + 56.25vw + 0px); /* Below header + video */
     bottom: calc(48px + env(safe-area-inset-bottom, 0px)); /* Sát thanh điều khiển */
     left: 2px;
     right: 2px;
