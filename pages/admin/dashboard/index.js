@@ -303,23 +303,6 @@ function AdminLessonsPage() {
             🏷️ Quản lý danh mục bài viết
           </Link>
           <Link 
-            href="/admin/dashboard/categories"
-            style={{
-              padding: '8px 16px',
-              background: '#6366f1',
-              color: 'white',
-              borderRadius: '6px',
-              textDecoration: 'none',
-              fontSize: '14px',
-              fontWeight: '500',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px'
-            }}
-          >
-            🏷️ Quản lý từ vựng
-          </Link>
-          <Link 
             href="/admin/dashboard/pages"
             style={{
               padding: '8px 16px',
