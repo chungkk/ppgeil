@@ -257,6 +257,107 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
   };
 
   // Submit
+  // Auto Create & Save - One click to do everything
+  const handleAutoCreateAndSave = async (e) => {
+    e.preventDefault();
+
+    const newErrors = {};
+    // Only validate essential fields for auto mode
+    if (audioSource === 'youtube' && !youtubeUrl.trim()) {
+      newErrors.audio = 'Vui lòng nhập YouTube URL';
+    }
+    if (!formData.level) newErrors.level = 'Vui lòng chọn cấp độ';
+
+    setErrors(newErrors);
+    if (Object.keys(newErrors).length > 0) {
+      toast.error('Vui lòng điền YouTube URL và chọn cấp độ');
+      return;
+    }
+
+    setUploading(true);
+    try {
+      // Step 1: Get transcript from Whisper V3 (Karaoke)
+      toast.info('⏳ Đang tạo transcript từ YouTube...');
+      const token = localStorage.getItem('token');
+      const whisperRes = await fetch('/api/whisper-youtube-srt-v3', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ youtubeUrl: youtubeUrl.trim() })
+      });
+
+      if (!whisperRes.ok) {
+        const errorData = await whisperRes.json();
+        throw new Error(errorData.message || 'Không thể tạo transcript');
+      }
+
+      const whisperData = await whisperRes.json();
+      const generatedSrt = whisperData.srt;
+      const segments = whisperData.segments || null;
+      const videoDuration = whisperData.videoDuration || 0;
+      const videoTitle = whisperData.videoTitle || 'Untitled';
+
+      // Auto-generate title and ID if not set
+      const finalTitle = formData.title || videoTitle;
+      const finalId = formData.id || generateIdFromTitle(finalTitle);
+      
+      toast.success('✅ Đã tạo transcript! Đang lưu bài học...');
+
+      // Step 2: Convert SRT to JSON
+      const srtRes = await fetch('/api/convert-srt', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ 
+          srtText: generatedSrt, 
+          lessonId: finalId,
+          segments: segments
+        })
+      });
+
+      if (!srtRes.ok) {
+        const errorData = await srtRes.json().catch(() => ({ message: 'Unknown error' }));
+        throw new Error(`Convert SRT failed: ${errorData.message || srtRes.statusText}`);
+      }
+      const srtData = await srtRes.json();
+
+      // Step 3: Create lesson
+      const lessonData = {
+        ...formData,
+        id: finalId,
+        title: finalTitle,
+        description: finalTitle,
+        videoDuration: videoDuration,
+        audio: 'youtube',
+        json: srtData.url,
+        youtubeUrl: youtubeUrl.trim()
+      };
+
+      const res = await fetch('/api/lessons', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify(lessonData)
+      });
+
+      if (!res.ok) throw new Error('Không thể tạo bài học');
+
+      toast.success('✅ Bài học đã được tạo thành công!');
+      router.push('/admin/dashboard');
+    } catch (error) {
+      console.error('Auto create error:', error);
+      toast.error('❌ Lỗi: ' + error.message);
+    } finally {
+      setUploading(false);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -599,6 +700,35 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
             </>
           )}
         </div>
+
+        {/* Auto Create & Save Button - YouTube only */}
+        {audioSource === 'youtube' && (
+          <div style={{ marginTop: '20px', padding: '20px', background: '#f0fdf4', borderRadius: '8px', border: '2px solid #10b981' }}>
+            <p style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#065f46', fontWeight: '500' }}>
+              ⚡ Tạo nhanh: Chỉ cần URL + Cấp độ + Danh mục, ấn 1 nút là xong!
+            </p>
+            <button
+              type="button"
+              onClick={handleAutoCreateAndSave}
+              disabled={uploading || !youtubeUrl.trim() || !formData.level}
+              style={{
+                width: '100%',
+                padding: '12px 24px',
+                background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                color: 'white',
+                border: 'none',
+                borderRadius: '8px',
+                fontSize: '16px',
+                fontWeight: '600',
+                cursor: uploading ? 'not-allowed' : 'pointer',
+                opacity: (uploading || !youtubeUrl.trim() || !formData.level) ? 0.5 : 1,
+                transition: 'all 0.2s'
+              }}
+            >
+              {uploading ? '⏳ Đang xử lý...' : '🚀 Tạo & Lưu tự động'}
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Tiêu đề */}

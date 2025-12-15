@@ -1,0 +1,4814 @@
+[
+    {
+        "text": "Was ist gestern im Nachbarhaus passiert?",
+        "start": 9.57999984741211,
+        "end": 13.669999694824218,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 9.65999984741211,
+                "end": 11
+            },
+            {
+                "word": "ist",
+                "start": 11,
+                "end": 11.260000228881836
+            },
+            {
+                "word": "gestern",
+                "start": 11.260000228881836,
+                "end": 11.720000267028809
+            },
+            {
+                "word": "im",
+                "start": 11.720000267028809,
+                "end": 11.979999542236328
+            },
+            {
+                "word": "Nachbarhaus",
+                "start": 11.979999542236328,
+                "end": 12.640000343322754
+            },
+            {
+                "word": "passiert?",
+                "start": 12.640000343322754,
+                "end": 13.319999694824219
+            }
+        ],
+        "translationEn": "What happened yesterday in the neighbor's house?",
+        "translationVi": "Hôm qua đã xảy ra chuyện gì ở nhà hàng xóm?"
+    },
+    {
+        "text": "Ein Einbruch.",
+        "start": 20.57999984741211,
+        "end": 22.48999938964844,
+        "wordTimings": [
+            {
+                "word": "Ein",
+                "start": 20.65999984741211,
+                "end": 21.540000915527344
+            },
+            {
+                "word": "Einbruch.",
+                "start": 21.540000915527344,
+                "end": 22.139999389648438
+            }
+        ],
+        "translationEn": "A burglary.",
+        "translationVi": "Một vụ đột nhập."
+    },
+    {
+        "text": "Wie ist der Dieb ins Haus gekommen?",
+        "start": 26.55999938964844,
+        "end": 34.43000183105469,
+        "wordTimings": [
+            {
+                "word": "Wie",
+                "start": 26.639999389648438,
+                "end": 27.799999237060547
+            },
+            {
+                "word": "ist",
+                "start": 27.799999237060547,
+                "end": 28.040000915527344
+            },
+            {
+                "word": "der",
+                "start": 28.040000915527344,
+                "end": 28.260000228881836
+            },
+            {
+                "word": "Dieb",
+                "start": 28.260000228881836,
+                "end": 28.5
+            },
+            {
+                "word": "ins",
+                "start": 28.5,
+                "end": 33.380001068115234
+            },
+            {
+                "word": "Haus",
+                "start": 33.380001068115234,
+                "end": 33.65999984741211
+            },
+            {
+                "word": "gekommen?",
+                "start": 33.65999984741211,
+                "end": 34.08000183105469
+            }
+        ],
+        "translationEn": "How did the thief get into the house?",
+        "translationVi": "Tên trộm đã vào nhà như thế nào?"
+    },
+    {
+        "text": "Durch ein Kellerfenster.",
+        "start": 44.839998168945314,
+        "end": 47.50999984741211,
+        "wordTimings": [
+            {
+                "word": "Durch",
+                "start": 44.91999816894531,
+                "end": 46.08000183105469
+            },
+            {
+                "word": "ein",
+                "start": 46.08000183105469,
+                "end": 46.41999816894531
+            },
+            {
+                "word": "Kellerfenster.",
+                "start": 46.41999816894531,
+                "end": 47.15999984741211
+            }
+        ],
+        "translationEn": "Through a basement window.",
+        "translationVi": "Qua một cửa sổ hầm."
+    },
+    {
+        "text": "Wie hat er das Fenster geöffnet?",
+        "start": 57.82000152587891,
+        "end": 60.609998321533205,
+        "wordTimings": [
+            {
+                "word": "Wie",
+                "start": 57.900001525878906,
+                "end": 58.619998931884766
+            },
+            {
+                "word": "hat",
+                "start": 58.619998931884766,
+                "end": 58.900001525878906
+            },
+            {
+                "word": "er",
+                "start": 58.900001525878906,
+                "end": 59.040000915527344
+            },
+            {
+                "word": "das",
+                "start": 59.040000915527344,
+                "end": 59.34000015258789
+            },
+            {
+                "word": "Fenster",
+                "start": 59.34000015258789,
+                "end": 59.70000076293945
+            },
+            {
+                "word": "geöffnet?",
+                "start": 59.70000076293945,
+                "end": 60.2599983215332
+            }
+        ],
+        "translationEn": "How did he open the window?",
+        "translationVi": "Anh ấy đã mở cửa sổ như thế nào?"
+    },
+    {
+        "text": "Mit einem Hammer.",
+        "start": 64.69999877929688,
+        "end": 66.80999908447265,
+        "wordTimings": [
+            {
+                "word": "Mit",
+                "start": 64.77999877929688,
+                "end": 65.5
+            },
+            {
+                "word": "einem",
+                "start": 65.5,
+                "end": 66.22000122070312
+            },
+            {
+                "word": "Hammer.",
+                "start": 66.22000122070312,
+                "end": 66.45999908447266
+            }
+        ],
+        "translationEn": "With a hammer.",
+        "translationVi": "Bằng một cái búa."
+    },
+    {
+        "text": "Was für ein Haus ist das?",
+        "start": 69.15999786376953,
+        "end": 74.93000183105468,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 69.23999786376953,
+                "end": 69.45999908447266
+            },
+            {
+                "word": "für",
+                "start": 69.45999908447266,
+                "end": 69.62000274658203
+            },
+            {
+                "word": "ein",
+                "start": 69.62000274658203,
+                "end": 70.13999938964844
+            },
+            {
+                "word": "Haus",
+                "start": 70.13999938964844,
+                "end": 70.13999938964844
+            },
+            {
+                "word": "ist",
+                "start": 70.13999938964844,
+                "end": 70.41999816894531
+            },
+            {
+                "word": "das?",
+                "start": 70.41999816894531,
+                "end": 74.58000183105469
+            }
+        ],
+        "translationEn": "What kind of house is that?",
+        "translationVi": "Đó là loại nhà gì?"
+    },
+    {
+        "text": "Das Haus einer sehr bekannten Schauspielerin.",
+        "start": 76.72000305175781,
+        "end": 84.7699981689453,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 76.80000305175781,
+                "end": 77.58000183105469
+            },
+            {
+                "word": "Haus",
+                "start": 77.58000183105469,
+                "end": 77.77999877929688
+            },
+            {
+                "word": "einer",
+                "start": 77.77999877929688,
+                "end": 82.86000061035156
+            },
+            {
+                "word": "sehr",
+                "start": 82.86000061035156,
+                "end": 83.27999877929688
+            },
+            {
+                "word": "bekannten",
+                "start": 83.27999877929688,
+                "end": 83.5999984741211
+            },
+            {
+                "word": "Schauspielerin.",
+                "start": 83.5999984741211,
+                "end": 84.41999816894531
+            }
+        ],
+        "translationEn": "The house of a very famous actress.",
+        "translationVi": "Ngôi nhà của một nữ diễn viên rất nổi tiếng."
+    },
+    {
+        "text": "Hat es Zeugen des Diebstahls gegeben?",
+        "start": 91.43999664306641,
+        "end": 94.47000274658203,
+        "wordTimings": [
+            {
+                "word": "Hat",
+                "start": 91.5199966430664,
+                "end": 92.30000305175781
+            },
+            {
+                "word": "es",
+                "start": 92.30000305175781,
+                "end": 92.55999755859375
+            },
+            {
+                "word": "Zeugen",
+                "start": 92.55999755859375,
+                "end": 92.91999816894531
+            },
+            {
+                "word": "des",
+                "start": 92.91999816894531,
+                "end": 93.27999877929688
+            },
+            {
+                "word": "Diebstahls",
+                "start": 93.27999877929688,
+                "end": 94.0199966430664
+            },
+            {
+                "word": "gegeben?",
+                "start": 94.0199966430664,
+                "end": 94.12000274658203
+            }
+        ],
+        "translationEn": "Were there witnesses to the theft?",
+        "translationVi": "Có ai làm chứng cho vụ trộm không?"
+    },
+    {
+        "text": "Nein, es hat keine Zeugen gegeben.",
+        "start": 96.50000183105469,
+        "end": 99.47000274658203,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 96.58000183105469,
+                "end": 97.36000061035156
+            },
+            {
+                "word": "es",
+                "start": 97.5199966430664,
+                "end": 97.68000030517578
+            },
+            {
+                "word": "hat",
+                "start": 97.68000030517578,
+                "end": 97.9000015258789
+            },
+            {
+                "word": "keine",
+                "start": 97.9000015258789,
+                "end": 98.22000122070312
+            },
+            {
+                "word": "Zeugen",
+                "start": 98.22000122070312,
+                "end": 98.58000183105469
+            },
+            {
+                "word": "gegeben.",
+                "start": 98.58000183105469,
+                "end": 99.12000274658203
+            }
+        ],
+        "translationEn": "No, there were no witnesses.",
+        "translationVi": "Không, không có nhân chứng nào."
+    },
+    {
+        "text": "Hat es früher schon mal einen Einbruch dort gegeben?",
+        "start": 110.43999664306641,
+        "end": 114.53000030517578,
+        "wordTimings": [
+            {
+                "word": "Hat",
+                "start": 110.5199966430664,
+                "end": 111.19999694824219
+            },
+            {
+                "word": "es",
+                "start": 111.19999694824219,
+                "end": 111.87999725341797
+            },
+            {
+                "word": "früher",
+                "start": 111.87999725341797,
+                "end": 112.16000366210938
+            },
+            {
+                "word": "schon",
+                "start": 112.16000366210938,
+                "end": 112.5
+            },
+            {
+                "word": "mal",
+                "start": 112.5,
+                "end": 112.73999786376953
+            },
+            {
+                "word": "einen",
+                "start": 112.73999786376953,
+                "end": 113.04000091552734
+            },
+            {
+                "word": "Einbruch",
+                "start": 113.04000091552734,
+                "end": 113.5
+            },
+            {
+                "word": "dort",
+                "start": 113.5,
+                "end": 113.83999633789062
+            },
+            {
+                "word": "gegeben?",
+                "start": 113.83999633789062,
+                "end": 114.18000030517578
+            }
+        ],
+        "translationEn": "Has there ever been a break-in there before?",
+        "translationVi": "Trước đây đã từng xảy ra một vụ đột nhập ở đó chưa?"
+    },
+    {
+        "text": "Nein, es hat noch keinen Einbruch gegeben.",
+        "start": 116.82000152587891,
+        "end": 124.98999938964843,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 116.9000015258789,
+                "end": 117.58000183105469
+            },
+            {
+                "word": "es",
+                "start": 117.69999694824219,
+                "end": 117.87999725341797
+            },
+            {
+                "word": "hat",
+                "start": 117.87999725341797,
+                "end": 123.12000274658203
+            },
+            {
+                "word": "noch",
+                "start": 123.12000274658203,
+                "end": 123.33999633789062
+            },
+            {
+                "word": "keinen",
+                "start": 123.33999633789062,
+                "end": 123.72000122070312
+            },
+            {
+                "word": "Einbruch",
+                "start": 123.72000122070312,
+                "end": 124.19999694824219
+            },
+            {
+                "word": "gegeben.",
+                "start": 124.19999694824219,
+                "end": 124.63999938964844
+            }
+        ],
+        "translationEn": "No, there has not been a break-in yet.",
+        "translationVi": "Không, vẫn chưa có vụ đột nhập nào xảy ra."
+    },
+    {
+        "text": "War der Dieb noch in einem anderen Haus?",
+        "start": 127.28000061035156,
+        "end": 129.85,
+        "wordTimings": [
+            {
+                "word": "War",
+                "start": 127.36000061035156,
+                "end": 127.37999725341797
+            },
+            {
+                "word": "der",
+                "start": 127.37999725341797,
+                "end": 127.68000030517578
+            },
+            {
+                "word": "Dieb",
+                "start": 127.68000030517578,
+                "end": 127.9000015258789
+            },
+            {
+                "word": "noch",
+                "start": 127.9000015258789,
+                "end": 128.10000610351562
+            },
+            {
+                "word": "in",
+                "start": 128.10000610351562,
+                "end": 128.25999450683594
+            },
+            {
+                "word": "einem",
+                "start": 128.25999450683594,
+                "end": 128.5399932861328
+            },
+            {
+                "word": "anderen",
+                "start": 128.5399932861328,
+                "end": 129.1199951171875
+            },
+            {
+                "word": "Haus?",
+                "start": 129.1199951171875,
+                "end": 129.5
+            }
+        ],
+        "translationEn": "Was the thief in another house?",
+        "translationVi": "Tên trộm có ở trong một ngôi nhà khác không?"
+    },
+    {
+        "text": "Nein, er ist zu keinem anderen Haus gegangen.",
+        "start": 136.19999877929686,
+        "end": 144.79000244140624,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 136.27999877929688,
+                "end": 137
+            },
+            {
+                "word": "er",
+                "start": 137.3000030517578,
+                "end": 137.4199981689453
+            },
+            {
+                "word": "ist",
+                "start": 137.4199981689453,
+                "end": 137.60000610351562
+            },
+            {
+                "word": "zu",
+                "start": 137.60000610351562,
+                "end": 142.9600067138672
+            },
+            {
+                "word": "keinem",
+                "start": 142.9600067138672,
+                "end": 143.3000030517578
+            },
+            {
+                "word": "anderen",
+                "start": 143.3000030517578,
+                "end": 143.6999969482422
+            },
+            {
+                "word": "Haus",
+                "start": 143.6999969482422,
+                "end": 144.02000427246094
+            },
+            {
+                "word": "gegangen.",
+                "start": 144.02000427246094,
+                "end": 144.44000244140625
+            }
+        ],
+        "translationEn": "No, he did not go to any other house.",
+        "translationVi": "Không, anh ấy không đi đến nhà nào khác."
+    },
+    {
+        "text": "Haben die Nachbarn Lärm gehört oder Licht gesehen?",
+        "start": 151.6400012207031,
+        "end": 155.60999450683593,
+        "wordTimings": [
+            {
+                "word": "Haben",
+                "start": 151.72000122070312,
+                "end": 152.44000244140625
+            },
+            {
+                "word": "die",
+                "start": 152.44000244140625,
+                "end": 153.16000366210938
+            },
+            {
+                "word": "Nachbarn",
+                "start": 153.16000366210938,
+                "end": 153.60000610351562
+            },
+            {
+                "word": "Lärm",
+                "start": 153.60000610351562,
+                "end": 153.89999389648438
+            },
+            {
+                "word": "gehört",
+                "start": 153.89999389648438,
+                "end": 154.3000030517578
+            },
+            {
+                "word": "oder",
+                "start": 154.3000030517578,
+                "end": 154.66000366210938
+            },
+            {
+                "word": "Licht",
+                "start": 154.66000366210938,
+                "end": 154.9199981689453
+            },
+            {
+                "word": "gesehen?",
+                "start": 154.9199981689453,
+                "end": 155.25999450683594
+            }
+        ],
+        "translationEn": "Did the neighbors hear noise or see light?",
+        "translationVi": "Hàng xóm có nghe thấy tiếng ồn hay nhìn thấy ánh sáng không?"
+    },
+    {
+        "text": "Nein, die Nachbarn haben keinen Lärm gehört und kein Licht gesehen.",
+        "start": 157.61999694824217,
+        "end": 162.2300048828125,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 157.6999969482422,
+                "end": 158.4199981689453
+            },
+            {
+                "word": "die",
+                "start": 158.55999755859375,
+                "end": 158.75999450683594
+            },
+            {
+                "word": "Nachbarn",
+                "start": 158.75999450683594,
+                "end": 159.22000122070312
+            },
+            {
+                "word": "haben",
+                "start": 159.22000122070312,
+                "end": 159.5
+            },
+            {
+                "word": "keinen",
+                "start": 159.5,
+                "end": 159.9199981689453
+            },
+            {
+                "word": "Lärm",
+                "start": 159.9199981689453,
+                "end": 160.1999969482422
+            },
+            {
+                "word": "gehört",
+                "start": 160.1999969482422,
+                "end": 160.60000610351562
+            },
+            {
+                "word": "und",
+                "start": 160.60000610351562,
+                "end": 160.89999389648438
+            },
+            {
+                "word": "kein",
+                "start": 160.89999389648438,
+                "end": 161.25999450683594
+            },
+            {
+                "word": "Licht",
+                "start": 161.25999450683594,
+                "end": 161.3800048828125
+            },
+            {
+                "word": "gesehen.",
+                "start": 161.3800048828125,
+                "end": 161.8800048828125
+            }
+        ],
+        "translationEn": "No, the neighbors did not hear any noise and did not see any light.",
+        "translationVi": "Không, hàng xóm không nghe thấy tiếng ồn và không thấy ánh sáng."
+    },
+    {
+        "text": "Wer hat den Dieb gefangen und zwei Stunden lang festgehalten?",
+        "start": 170.19999877929686,
+        "end": 180.8899932861328,
+        "wordTimings": [
+            {
+                "word": "Wer",
+                "start": 170.27999877929688,
+                "end": 171.02000427246094
+            },
+            {
+                "word": "hat",
+                "start": 171.02000427246094,
+                "end": 171.25999450683594
+            },
+            {
+                "word": "den",
+                "start": 171.25999450683594,
+                "end": 171.52000427246094
+            },
+            {
+                "word": "Dieb",
+                "start": 171.52000427246094,
+                "end": 171.8000030517578
+            },
+            {
+                "word": "gefangen",
+                "start": 171.8000030517578,
+                "end": 172.17999267578125
+            },
+            {
+                "word": "und",
+                "start": 172.17999267578125,
+                "end": 178.86000061035156
+            },
+            {
+                "word": "zwei",
+                "start": 178.86000061035156,
+                "end": 179.1999969482422
+            },
+            {
+                "word": "Stunden",
+                "start": 179.1999969482422,
+                "end": 179.55999755859375
+            },
+            {
+                "word": "lang",
+                "start": 179.55999755859375,
+                "end": 179.8800048828125
+            },
+            {
+                "word": "festgehalten?",
+                "start": 179.8800048828125,
+                "end": 180.5399932861328
+            }
+        ],
+        "translationEn": "Who caught the thief and held him for two hours?",
+        "translationVi": "Ai đã bắt giữ tên trộm và giữ hắn trong hai giờ?"
+    },
+    {
+        "text": "Der Hund.",
+        "start": 184.42,
+        "end": 185.59000549316406,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 184.5,
+                "end": 185.24000549316406
+            },
+            {
+                "word": "Hund.",
+                "start": 185.24000549316406,
+                "end": 185.24000549316406
+            }
+        ],
+        "translationEn": "The dog.",
+        "translationVi": "Con chó."
+    },
+    {
+        "text": "Wem hat die Schauspielerin von der Heldentat ihres Hundes berichtet?",
+        "start": 188.92,
+        "end": 193.10999450683593,
+        "wordTimings": [
+            {
+                "word": "Wem",
+                "start": 189,
+                "end": 189.0399932861328
+            },
+            {
+                "word": "hat",
+                "start": 189.0399932861328,
+                "end": 189.3000030517578
+            },
+            {
+                "word": "die",
+                "start": 189.3000030517578,
+                "end": 189.52000427246094
+            },
+            {
+                "word": "Schauspielerin",
+                "start": 189.52000427246094,
+                "end": 190.32000732421875
+            },
+            {
+                "word": "von",
+                "start": 190.32000732421875,
+                "end": 190.55999755859375
+            },
+            {
+                "word": "der",
+                "start": 190.55999755859375,
+                "end": 190.86000061035156
+            },
+            {
+                "word": "Heldentat",
+                "start": 190.86000061035156,
+                "end": 191.5
+            },
+            {
+                "word": "ihres",
+                "start": 191.5,
+                "end": 191.82000732421875
+            },
+            {
+                "word": "Hundes",
+                "start": 191.82000732421875,
+                "end": 192.32000732421875
+            },
+            {
+                "word": "berichtet?",
+                "start": 192.32000732421875,
+                "end": 192.75999450683594
+            }
+        ],
+        "translationEn": "To whom did the actress report her dog's heroic deed?",
+        "translationVi": "Người nào đã được nữ diễn viên báo cáo về hành động anh hùng của chú chó của cô ấy?"
+    },
+    {
+        "text": "Den Journalisten.",
+        "start": 201.8000048828125,
+        "end": 205.02999267578124,
+        "wordTimings": [
+            {
+                "word": "Den",
+                "start": 201.8800048828125,
+                "end": 203.27999877929688
+            },
+            {
+                "word": "Journalisten.",
+                "start": 203.27999877929688,
+                "end": 204.67999267578125
+            }
+        ],
+        "translationEn": "The journalists.",
+        "translationVi": "Các nhà báo."
+    },
+    {
+        "text": "Was wollte der Dieb stehlen?",
+        "start": 209.17999450683592,
+        "end": 214.9699951171875,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 209.25999450683594,
+                "end": 209.25999450683594
+            },
+            {
+                "word": "wollte",
+                "start": 209.25999450683594,
+                "end": 209.52000427246094
+            },
+            {
+                "word": "der",
+                "start": 209.52000427246094,
+                "end": 214
+            },
+            {
+                "word": "Dieb",
+                "start": 214,
+                "end": 214.24000549316406
+            },
+            {
+                "word": "stehlen?",
+                "start": 214.24000549316406,
+                "end": 214.6199951171875
+            }
+        ],
+        "translationEn": "What did the thief want to steal?",
+        "translationVi": "Tên trộm muốn đánh cắp cái gì?"
+    },
+    {
+        "text": "Den Schmuck.",
+        "start": 216.44000427246092,
+        "end": 217.95000610351562,
+        "wordTimings": [
+            {
+                "word": "Den",
+                "start": 216.52000427246094,
+                "end": 217.1999969482422
+            },
+            {
+                "word": "Schmuck.",
+                "start": 217.1999969482422,
+                "end": 217.60000610351562
+            }
+        ],
+        "translationEn": "The jewelry.",
+        "translationVi": "Trang sức."
+    },
+    {
+        "text": "Was ist der Schauspielerin nicht eingefallen?",
+        "start": 221.8000048828125,
+        "end": 230.43000183105468,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 221.8800048828125,
+                "end": 222.89999389648438
+            },
+            {
+                "word": "ist",
+                "start": 222.89999389648438,
+                "end": 223.13999938964844
+            },
+            {
+                "word": "der",
+                "start": 223.13999938964844,
+                "end": 228.3800048828125
+            },
+            {
+                "word": "Schauspielerin",
+                "start": 228.3800048828125,
+                "end": 229.1199951171875
+            },
+            {
+                "word": "nicht",
+                "start": 229.1199951171875,
+                "end": 229.44000244140625
+            },
+            {
+                "word": "eingefallen?",
+                "start": 229.44000244140625,
+                "end": 230.0800018310547
+            }
+        ],
+        "translationEn": "What didn't occur to the actress?",
+        "translationVi": "Diễn viên đã không nghĩ ra điều gì?"
+    },
+    {
+        "text": "Die Telefonnummer der Polizei.",
+        "start": 231.78000061035155,
+        "end": 238.45000610351562,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 231.86000061035156,
+                "end": 232.82000732421875
+            },
+            {
+                "word": "Telefonnummer",
+                "start": 232.82000732421875,
+                "end": 233.4600067138672
+            },
+            {
+                "word": "der",
+                "start": 233.4600067138672,
+                "end": 237.82000732421875
+            },
+            {
+                "word": "Polizei.",
+                "start": 237.82000732421875,
+                "end": 238.10000610351562
+            }
+        ],
+        "translationEn": "The phone number of the police.",
+        "translationVi": "Số điện thoại của cảnh sát."
+    },
+    {
+        "text": "Habt ihr euren Urlaub schon in die Urlaubsliste eingetragen?",
+        "start": 242.47999755859374,
+        "end": 246.10999450683593,
+        "wordTimings": [
+            {
+                "word": "Habt",
+                "start": 242.55999755859375,
+                "end": 242.63999938964844
+            },
+            {
+                "word": "ihr",
+                "start": 242.63999938964844,
+                "end": 242.75999450683594
+            },
+            {
+                "word": "euren",
+                "start": 242.75999450683594,
+                "end": 243.10000610351562
+            },
+            {
+                "word": "Urlaub",
+                "start": 243.10000610351562,
+                "end": 243.5
+            },
+            {
+                "word": "schon",
+                "start": 243.5,
+                "end": 243.83999633789062
+            },
+            {
+                "word": "in",
+                "start": 243.83999633789062,
+                "end": 243.97999572753906
+            },
+            {
+                "word": "die",
+                "start": 243.97999572753906,
+                "end": 244.1999969482422
+            },
+            {
+                "word": "Urlaubsliste",
+                "start": 244.1999969482422,
+                "end": 245.13999938964844
+            },
+            {
+                "word": "eingetragen?",
+                "start": 245.13999938964844,
+                "end": 245.75999450683594
+            }
+        ],
+        "translationEn": "Have you already entered your vacation in the vacation list?",
+        "translationVi": "Các bạn đã ghi kỳ nghỉ của mình vào danh sách nghỉ phép chưa?"
+    },
+    {
+        "text": "Nein, ich kann meinen Urlaub noch nicht eintragen.",
+        "start": 253.7200030517578,
+        "end": 263.0500122070313,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 253.8000030517578,
+                "end": 254.44000244140625
+            },
+            {
+                "word": "ich",
+                "start": 260.260009765625,
+                "end": 260.6400146484375
+            },
+            {
+                "word": "kann",
+                "start": 260.6400146484375,
+                "end": 260.8599853515625
+            },
+            {
+                "word": "meinen",
+                "start": 260.8599853515625,
+                "end": 261.17999267578125
+            },
+            {
+                "word": "Urlaub",
+                "start": 261.17999267578125,
+                "end": 261.6000061035156
+            },
+            {
+                "word": "noch",
+                "start": 261.6000061035156,
+                "end": 261.94000244140625
+            },
+            {
+                "word": "nicht",
+                "start": 261.94000244140625,
+                "end": 262.239990234375
+            },
+            {
+                "word": "eintragen.",
+                "start": 262.239990234375,
+                "end": 262.70001220703125
+            }
+        ],
+        "translationEn": "No, I can't register my vacation yet.",
+        "translationVi": "Không, tôi chưa thể đăng ký kỳ nghỉ của mình."
+    },
+    {
+        "text": "Ich warte noch auf meine Frau.",
+        "start": 265.0600146484375,
+        "end": 271.2099853515625,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 265.1400146484375,
+                "end": 265.4200134277344
+            },
+            {
+                "word": "warte",
+                "start": 265.4200134277344,
+                "end": 265.6600036621094
+            },
+            {
+                "word": "noch",
+                "start": 265.6600036621094,
+                "end": 265.9800109863281
+            },
+            {
+                "word": "auf",
+                "start": 265.9800109863281,
+                "end": 270.32000732421875
+            },
+            {
+                "word": "meine",
+                "start": 270.32000732421875,
+                "end": 270.5799865722656
+            },
+            {
+                "word": "Frau.",
+                "start": 270.5799865722656,
+                "end": 270.8599853515625
+            }
+        ],
+        "translationEn": "I am still waiting for my wife.",
+        "translationVi": "Tôi vẫn đang chờ vợ tôi."
+    },
+    {
+        "text": "In ihrer Firma kommt die Urlaubsliste erst im Januar.",
+        "start": 273.47999755859377,
+        "end": 276.85,
+        "wordTimings": [
+            {
+                "word": "In",
+                "start": 273.55999755859375,
+                "end": 273.67999267578125
+            },
+            {
+                "word": "ihrer",
+                "start": 273.67999267578125,
+                "end": 273.9599914550781
+            },
+            {
+                "word": "Firma",
+                "start": 273.9599914550781,
+                "end": 274.29998779296875
+            },
+            {
+                "word": "kommt",
+                "start": 274.29998779296875,
+                "end": 274.6199951171875
+            },
+            {
+                "word": "die",
+                "start": 274.6199951171875,
+                "end": 274.8599853515625
+            },
+            {
+                "word": "Urlaubsliste",
+                "start": 274.8599853515625,
+                "end": 275.67999267578125
+            },
+            {
+                "word": "erst",
+                "start": 275.67999267578125,
+                "end": 275.94000244140625
+            },
+            {
+                "word": "im",
+                "start": 275.94000244140625,
+                "end": 276.1199951171875
+            },
+            {
+                "word": "Januar.",
+                "start": 276.1199951171875,
+                "end": 276.5
+            }
+        ],
+        "translationEn": "In their company, the vacation list comes out only in January.",
+        "translationVi": "Trong công ty của họ, danh sách nghỉ phép chỉ có vào tháng Giêng."
+    },
+    {
+        "text": "Erst dann können wir unseren Urlaub planen.",
+        "start": 284.21998779296877,
+        "end": 292.4699951171875,
+        "wordTimings": [
+            {
+                "word": "Erst",
+                "start": 284.29998779296875,
+                "end": 285.05999755859375
+            },
+            {
+                "word": "dann",
+                "start": 285.05999755859375,
+                "end": 285.4599914550781
+            },
+            {
+                "word": "können",
+                "start": 285.4599914550781,
+                "end": 285.760009765625
+            },
+            {
+                "word": "wir",
+                "start": 285.760009765625,
+                "end": 290.760009765625
+            },
+            {
+                "word": "unseren",
+                "start": 290.760009765625,
+                "end": 291.20001220703125
+            },
+            {
+                "word": "Urlaub",
+                "start": 291.20001220703125,
+                "end": 291.55999755859375
+            },
+            {
+                "word": "planen.",
+                "start": 291.55999755859375,
+                "end": 292.1199951171875
+            }
+        ],
+        "translationEn": "Only then can we plan our vacation.",
+        "translationVi": "Chỉ sau đó chúng ta mới có thể lên kế hoạch cho kỳ nghỉ của mình."
+    },
+    {
+        "text": "Und du weißt du schon wann Ja, deinen Urlaub nimmst Ja, ich",
+        "start": 299.52000610351564,
+        "end": 306.83001098632815,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 299.6000061035156,
+                "end": 300.3599853515625
+            },
+            {
+                "word": "du",
+                "start": 300.3599853515625,
+                "end": 301.1199951171875
+            },
+            {
+                "word": "weißt",
+                "start": 301.4200134277344,
+                "end": 301.4200134277344
+            },
+            {
+                "word": "du",
+                "start": 301.4200134277344,
+                "end": 301.6600036621094
+            },
+            {
+                "word": "schon",
+                "start": 301.6600036621094,
+                "end": 301.9800109863281
+            },
+            {
+                "word": "wann",
+                "start": 302.29998779296875,
+                "end": 302.3800048828125
+            },
+            {
+                "word": "Ja,",
+                "start": 302.3800048828125,
+                "end": 302.6000061035156
+            },
+            {
+                "word": "deinen",
+                "start": 302.6000061035156,
+                "end": 302.9800109863281
+            },
+            {
+                "word": "Urlaub",
+                "start": 302.9800109863281,
+                "end": 303.4800109863281
+            },
+            {
+                "word": "nimmst",
+                "start": 303.4800109863281,
+                "end": 303.82000732421875
+            },
+            {
+                "word": "Ja,",
+                "start": 305.7200012207031,
+                "end": 306.4800109863281
+            },
+            {
+                "word": "ich",
+                "start": 306.4800109863281,
+                "end": 306.4800109863281
+            }
+        ],
+        "translationEn": "And do you already know when you will take your vacation? Yes, I do.",
+        "translationVi": "Và bạn đã biết khi nào bạn sẽ nghỉ phép chưa? Vâng, tôi đã biết."
+    },
+    {
+        "text": "Wir schon Ja mit haben schon lange geplant nach fahre Mein seinen",
+        "start": 306.40001098632814,
+        "end": 321.92998657226565,
+        "wordTimings": [
+            {
+                "word": "wir",
+                "start": 306.4800109863281,
+                "end": 306.4800109863281
+            },
+            {
+                "word": "schon",
+                "start": 306.4800109863281,
+                "end": 306.4800109863281
+            },
+            {
+                "word": "Ja",
+                "start": 306.5,
+                "end": 306.67999267578125
+            },
+            {
+                "word": "mit",
+                "start": 311.1199951171875,
+                "end": 311.260009765625
+            },
+            {
+                "word": "haben",
+                "start": 311.260009765625,
+                "end": 311.5
+            },
+            {
+                "word": "schon",
+                "start": 311.5,
+                "end": 311.8999938964844
+            },
+            {
+                "word": "lange",
+                "start": 311.8999938964844,
+                "end": 312.17999267578125
+            },
+            {
+                "word": "geplant",
+                "start": 312.17999267578125,
+                "end": 312.79998779296875
+            },
+            {
+                "word": "nach",
+                "start": 315.4599914550781,
+                "end": 315.5400085449219
+            },
+            {
+                "word": "fahre",
+                "start": 315.5400085449219,
+                "end": 315.760009765625
+            },
+            {
+                "word": "Mein",
+                "start": 315.760009765625,
+                "end": 321.2799987792969
+            },
+            {
+                "word": "seinen",
+                "start": 321.2799987792969,
+                "end": 321.5799865722656
+            }
+        ],
+        "translationEn": "We have been planning to drive for a long time.",
+        "translationVi": "Chúng tôi đã lên kế hoạch từ lâu để đi."
+    },
+    {
+        "text": "Freundin eine Woche nach dem Mein Mann möchte sich seinen Traum verwirklichen",
+        "start": 321.49998657226564,
+        "end": 328.7499938964844,
+        "wordTimings": [
+            {
+                "word": "Freundin",
+                "start": 321.5799865722656,
+                "end": 322.17999267578125
+            },
+            {
+                "word": "eine",
+                "start": 322.17999267578125,
+                "end": 322.5199890136719
+            },
+            {
+                "word": "Woche",
+                "start": 322.5199890136719,
+                "end": 322.7200012207031
+            },
+            {
+                "word": "nach",
+                "start": 322.7200012207031,
+                "end": 323.1199951171875
+            },
+            {
+                "word": "dem",
+                "start": 323.1199951171875,
+                "end": 323.32000732421875
+            },
+            {
+                "word": "Mein",
+                "start": 326,
+                "end": 326
+            },
+            {
+                "word": "Mann",
+                "start": 326,
+                "end": 326.17999267578125
+            },
+            {
+                "word": "möchte",
+                "start": 326.17999267578125,
+                "end": 326.4800109863281
+            },
+            {
+                "word": "sich",
+                "start": 326.4800109863281,
+                "end": 326.79998779296875
+            },
+            {
+                "word": "seinen",
+                "start": 326.79998779296875,
+                "end": 327.1199951171875
+            },
+            {
+                "word": "Traum",
+                "start": 327.1199951171875,
+                "end": 327.4800109863281
+            },
+            {
+                "word": "verwirklichen",
+                "start": 327.4800109863281,
+                "end": 328.3999938964844
+            }
+        ],
+        "translationEn": "Girlfriend a week after my husband wants to realize his dream.",
+        "translationVi": "Bạn gái một tuần sau khi chồng tôi muốn thực hiện ước mơ của mình."
+    },
+    {
+        "text": "Und die Das Fahrrad er mit Alpen fahren Das macht Ihr mit",
+        "start": 328.3199938964844,
+        "end": 346.85,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 328.3999938964844,
+                "end": 328.6199951171875
+            },
+            {
+                "word": "die",
+                "start": 328.6199951171875,
+                "end": 328.79998779296875
+            },
+            {
+                "word": "Das",
+                "start": 328.79998779296875,
+                "end": 329.1000061035156
+            },
+            {
+                "word": "Fahrrad",
+                "start": 329.1000061035156,
+                "end": 329.5199890136719
+            },
+            {
+                "word": "er",
+                "start": 329.5199890136719,
+                "end": 329.7799987792969
+            },
+            {
+                "word": "mit",
+                "start": 329.7799987792969,
+                "end": 330.1000061035156
+            },
+            {
+                "word": "Alpen",
+                "start": 330.1000061035156,
+                "end": 330.44000244140625
+            },
+            {
+                "word": "fahren",
+                "start": 330.44000244140625,
+                "end": 330.7200012207031
+            },
+            {
+                "word": "Das",
+                "start": 339.8800048828125,
+                "end": 340.79998779296875
+            },
+            {
+                "word": "macht",
+                "start": 340.79998779296875,
+                "end": 341.0799865722656
+            },
+            {
+                "word": "Ihr",
+                "start": 341.0799865722656,
+                "end": 341.260009765625
+            },
+            {
+                "word": "mit",
+                "start": 341.260009765625,
+                "end": 346.5
+            }
+        ],
+        "translationEn": "And the bicycle he rides in the Alps. You do that with.",
+        "translationVi": "Và chiếc xe đạp mà anh ấy đi ở dãy Alps. Bạn làm điều đó với."
+    },
+    {
+        "text": "Seinen zwei Brüdern zusammen Ihr macht doch immer zwei Wochen Urlaub am",
+        "start": 346.42,
+        "end": 358.45000610351565,
+        "wordTimings": [
+            {
+                "word": "seinen",
+                "start": 346.5,
+                "end": 346.79998779296875
+            },
+            {
+                "word": "zwei",
+                "start": 346.79998779296875,
+                "end": 347.5
+            },
+            {
+                "word": "Brüdern",
+                "start": 347.5,
+                "end": 347.6600036621094
+            },
+            {
+                "word": "zusammen",
+                "start": 347.6600036621094,
+                "end": 348.260009765625
+            },
+            {
+                "word": "Ihr",
+                "start": 350.9800109863281,
+                "end": 351.0799865722656
+            },
+            {
+                "word": "macht",
+                "start": 351.0799865722656,
+                "end": 351.239990234375
+            },
+            {
+                "word": "doch",
+                "start": 351.239990234375,
+                "end": 351.55999755859375
+            },
+            {
+                "word": "immer",
+                "start": 351.55999755859375,
+                "end": 351.79998779296875
+            },
+            {
+                "word": "zwei",
+                "start": 351.79998779296875,
+                "end": 352.44000244140625
+            },
+            {
+                "word": "Wochen",
+                "start": 352.44000244140625,
+                "end": 352.44000244140625
+            },
+            {
+                "word": "Urlaub",
+                "start": 352.44000244140625,
+                "end": 352.82000732421875
+            },
+            {
+                "word": "am",
+                "start": 352.82000732421875,
+                "end": 358.1000061035156
+            }
+        ],
+        "translationEn": "His two brothers together always take two weeks of vacation.",
+        "translationVi": "Hai người anh của anh cùng nhau, các anh luôn nghỉ phép hai tuần một lần."
+    },
+    {
+        "text": "Strand.",
+        "start": 358.02000610351564,
+        "end": 358.7300048828125,
+        "wordTimings": [
+            {
+                "word": "Strand.",
+                "start": 358.1000061035156,
+                "end": 358.3800048828125
+            }
+        ],
+        "translationEn": "Beach.",
+        "translationVi": "Bãi biển."
+    },
+    {
+        "text": "Fällt teurer Strandurlaub diesmal aus?",
+        "start": 361.25999633789064,
+        "end": 363.9099975585938,
+        "wordTimings": [
+            {
+                "word": "Fällt",
+                "start": 361.3399963378906,
+                "end": 361.3399963378906
+            },
+            {
+                "word": "teurer",
+                "start": 361.3399963378906,
+                "end": 361.79998779296875
+            },
+            {
+                "word": "Strandurlaub",
+                "start": 361.79998779296875,
+                "end": 362.6000061035156
+            },
+            {
+                "word": "diesmal",
+                "start": 362.6000061035156,
+                "end": 363.1600036621094
+            },
+            {
+                "word": "aus?",
+                "start": 363.1600036621094,
+                "end": 363.55999755859375
+            }
+        ],
+        "translationEn": "Is an expensive beach vacation off this time?",
+        "translationVi": "Kỳ nghỉ biển đắt đỏ lần này có bị hủy không?"
+    },
+    {
+        "text": "Nein, unseren Strandurlaub machen wir dieses Jahr im November auf Sri Lanka.",
+        "start": 370.159990234375,
+        "end": 382.92998657226565,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 370.239990234375,
+                "end": 371.20001220703125
+            },
+            {
+                "word": "unseren",
+                "start": 371.67999267578125,
+                "end": 371.739990234375
+            },
+            {
+                "word": "Strandurlaub",
+                "start": 371.739990234375,
+                "end": 372.6199951171875
+            },
+            {
+                "word": "machen",
+                "start": 372.6199951171875,
+                "end": 372.8800048828125
+            },
+            {
+                "word": "wir",
+                "start": 372.8800048828125,
+                "end": 373.1400146484375
+            },
+            {
+                "word": "dieses",
+                "start": 373.1400146484375,
+                "end": 373.5400085449219
+            },
+            {
+                "word": "Jahr",
+                "start": 373.5400085449219,
+                "end": 373.7200012207031
+            },
+            {
+                "word": "im",
+                "start": 373.7200012207031,
+                "end": 380.9200134277344
+            },
+            {
+                "word": "November",
+                "start": 380.9200134277344,
+                "end": 381.3800048828125
+            },
+            {
+                "word": "auf",
+                "start": 381.3800048828125,
+                "end": 381.7799987792969
+            },
+            {
+                "word": "Sri",
+                "start": 381.7799987792969,
+                "end": 382.2799987792969
+            },
+            {
+                "word": "Lanka.",
+                "start": 382.2799987792969,
+                "end": 382.5799865722656
+            }
+        ],
+        "translationEn": "No, we are having our beach holiday this year in November in Sri Lanka.",
+        "translationVi": "Không, kỳ nghỉ biển của chúng tôi năm nay sẽ diễn ra vào tháng 11 tại Sri Lanka."
+    },
+    {
+        "text": "Sehr geehrter Herr Schönborn,",
+        "start": 386.0399951171875,
+        "end": 391.5299926757813,
+        "wordTimings": [
+            {
+                "word": "Sehr",
+                "start": 386.1199951171875,
+                "end": 386.2200012207031
+            },
+            {
+                "word": "geehrter",
+                "start": 386.2200012207031,
+                "end": 386.7799987792969
+            },
+            {
+                "word": "Herr",
+                "start": 386.7799987792969,
+                "end": 390.6199951171875
+            },
+            {
+                "word": "Schönborn,",
+                "start": 390.6199951171875,
+                "end": 391.17999267578125
+            }
+        ],
+        "translationEn": "Dear Mr. Schönborn,",
+        "translationVi": "Kính gửi ông Schönborn,"
+    },
+    {
+        "text": "Vor zwei Jahren habe ich in Ihrer Firma ein viermonatiges Praktikum gemacht,",
+        "start": 401.40001098632814,
+        "end": 407.3900085449219,
+        "wordTimings": [
+            {
+                "word": "Vor",
+                "start": 401.4800109863281,
+                "end": 402.2799987792969
+            },
+            {
+                "word": "zwei",
+                "start": 402.2799987792969,
+                "end": 402.760009765625
+            },
+            {
+                "word": "Jahren",
+                "start": 402.760009765625,
+                "end": 403.1199951171875
+            },
+            {
+                "word": "habe",
+                "start": 403.1199951171875,
+                "end": 403.44000244140625
+            },
+            {
+                "word": "ich",
+                "start": 403.44000244140625,
+                "end": 403.739990234375
+            },
+            {
+                "word": "in",
+                "start": 403.739990234375,
+                "end": 403.8599853515625
+            },
+            {
+                "word": "Ihrer",
+                "start": 403.8599853515625,
+                "end": 404.1400146484375
+            },
+            {
+                "word": "Firma",
+                "start": 404.1400146484375,
+                "end": 404.55999755859375
+            },
+            {
+                "word": "ein",
+                "start": 404.55999755859375,
+                "end": 404.9200134277344
+            },
+            {
+                "word": "viermonatiges",
+                "start": 404.9200134277344,
+                "end": 405.79998779296875
+            },
+            {
+                "word": "Praktikum",
+                "start": 405.79998779296875,
+                "end": 406.4599914550781
+            },
+            {
+                "word": "gemacht,",
+                "start": 406.4599914550781,
+                "end": 407.0400085449219
+            }
+        ],
+        "translationEn": "Two years ago, I did a four-month internship at your company,",
+        "translationVi": "Hai năm trước, tôi đã thực tập bốn tháng tại công ty của bạn,"
+    },
+    {
+        "text": "Das mir sehr gut gefallen hat.",
+        "start": 407.3400134277344,
+        "end": 409.9699951171875,
+        "wordTimings": [
+            {
+                "word": "das",
+                "start": 407.4200134277344,
+                "end": 407.55999755859375
+            },
+            {
+                "word": "mir",
+                "start": 407.55999755859375,
+                "end": 407.7799987792969
+            },
+            {
+                "word": "sehr",
+                "start": 407.7799987792969,
+                "end": 408.0799865722656
+            },
+            {
+                "word": "gut",
+                "start": 408.0799865722656,
+                "end": 408.3399963378906
+            },
+            {
+                "word": "gefallen",
+                "start": 408.3399963378906,
+                "end": 408.70001220703125
+            },
+            {
+                "word": "hat.",
+                "start": 408.70001220703125,
+                "end": 409.6199951171875
+            }
+        ],
+        "translationEn": "I liked it very much.",
+        "translationVi": "Điều đó làm tôi rất thích."
+    },
+    {
+        "text": "Insbesondere die Arbeit in dem internationalen Team, die kollegiale Zusammenarbeit und die",
+        "start": 411.3199938964844,
+        "end": 417.610009765625,
+        "wordTimings": [
+            {
+                "word": "Insbesondere",
+                "start": 411.3999938964844,
+                "end": 411.8999938964844
+            },
+            {
+                "word": "die",
+                "start": 411.8999938964844,
+                "end": 412.4200134277344
+            },
+            {
+                "word": "Arbeit",
+                "start": 412.4200134277344,
+                "end": 412.6600036621094
+            },
+            {
+                "word": "in",
+                "start": 412.6600036621094,
+                "end": 412.9599914550781
+            },
+            {
+                "word": "dem",
+                "start": 412.9599914550781,
+                "end": 413.1000061035156
+            },
+            {
+                "word": "internationalen",
+                "start": 413.1000061035156,
+                "end": 414.5400085449219
+            },
+            {
+                "word": "Team,",
+                "start": 414.5400085449219,
+                "end": 414.5400085449219
+            },
+            {
+                "word": "die",
+                "start": 414.9599914550781,
+                "end": 415.1400146484375
+            },
+            {
+                "word": "kollegiale",
+                "start": 415.1400146484375,
+                "end": 415.70001220703125
+            },
+            {
+                "word": "Zusammenarbeit",
+                "start": 415.70001220703125,
+                "end": 416.70001220703125
+            },
+            {
+                "word": "und",
+                "start": 416.70001220703125,
+                "end": 417.0199890136719
+            },
+            {
+                "word": "die",
+                "start": 417.0199890136719,
+                "end": 417.260009765625
+            }
+        ],
+        "translationEn": "In particular, the work in the international team, the collegial cooperation, and the",
+        "translationVi": "Đặc biệt là công việc trong đội ngũ quốc tế, sự hợp tác đồng nghiệp và sự"
+    },
+    {
+        "text": "Effektive Organisation des Projekts haben mich für mein weiteres Studium bereichert.",
+        "start": 417.180009765625,
+        "end": 423.089990234375,
+        "wordTimings": [
+            {
+                "word": "effektive",
+                "start": 417.260009765625,
+                "end": 417.8399963378906
+            },
+            {
+                "word": "Organisation",
+                "start": 417.8399963378906,
+                "end": 418.6000061035156
+            },
+            {
+                "word": "des",
+                "start": 418.6000061035156,
+                "end": 419.0799865722656
+            },
+            {
+                "word": "Projekts",
+                "start": 419.0799865722656,
+                "end": 419.70001220703125
+            },
+            {
+                "word": "haben",
+                "start": 419.70001220703125,
+                "end": 420.0400085449219
+            },
+            {
+                "word": "mich",
+                "start": 420.0400085449219,
+                "end": 420.2200012207031
+            },
+            {
+                "word": "für",
+                "start": 420.2200012207031,
+                "end": 420.3999938964844
+            },
+            {
+                "word": "mein",
+                "start": 420.3999938964844,
+                "end": 420.6199951171875
+            },
+            {
+                "word": "weiteres",
+                "start": 420.6199951171875,
+                "end": 421.20001220703125
+            },
+            {
+                "word": "Studium",
+                "start": 421.20001220703125,
+                "end": 421.6600036621094
+            },
+            {
+                "word": "bereichert.",
+                "start": 421.6600036621094,
+                "end": 422.739990234375
+            }
+        ],
+        "translationEn": "Effective organization of the project has enriched me for my further studies.",
+        "translationVi": "Sự tổ chức hiệu quả của dự án đã làm phong phú thêm cho việc học tập của tôi."
+    },
+    {
+        "text": "Sie hatten mich damals aufgefordert, mich nach dem Abschluss meines Studiums auf",
+        "start": 437.86000244140627,
+        "end": 443.07000122070315,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 437.94000244140625,
+                "end": 438.0199890136719
+            },
+            {
+                "word": "hatten",
+                "start": 438.0199890136719,
+                "end": 438.3599853515625
+            },
+            {
+                "word": "mich",
+                "start": 438.3599853515625,
+                "end": 438.6600036621094
+            },
+            {
+                "word": "damals",
+                "start": 438.6600036621094,
+                "end": 439.1400146484375
+            },
+            {
+                "word": "aufgefordert,",
+                "start": 439.1400146484375,
+                "end": 440.0799865722656
+            },
+            {
+                "word": "mich",
+                "start": 440.5799865722656,
+                "end": 440.5799865722656
+            },
+            {
+                "word": "nach",
+                "start": 440.5799865722656,
+                "end": 440.82000732421875
+            },
+            {
+                "word": "dem",
+                "start": 440.82000732421875,
+                "end": 441.0400085449219
+            },
+            {
+                "word": "Abschluss",
+                "start": 441.0400085449219,
+                "end": 441.5199890136719
+            },
+            {
+                "word": "meines",
+                "start": 441.5199890136719,
+                "end": 441.94000244140625
+            },
+            {
+                "word": "Studiums",
+                "start": 441.94000244140625,
+                "end": 442.5
+            },
+            {
+                "word": "auf",
+                "start": 442.5,
+                "end": 442.7200012207031
+            }
+        ],
+        "translationEn": "You had asked me back then to focus on after completing my studies on",
+        "translationVi": "Họ đã yêu cầu tôi khi đó, sau khi tốt nghiệp, hãy..."
+    },
+    {
+        "text": "Eine Stelle bei Ihnen zu bewerben.",
+        "start": 442.64000122070314,
+        "end": 444.92998657226565,
+        "wordTimings": [
+            {
+                "word": "eine",
+                "start": 442.7200012207031,
+                "end": 443.0400085449219
+            },
+            {
+                "word": "Stelle",
+                "start": 443.0400085449219,
+                "end": 443.32000732421875
+            },
+            {
+                "word": "bei",
+                "start": 443.32000732421875,
+                "end": 443.5799865722656
+            },
+            {
+                "word": "Ihnen",
+                "start": 443.5799865722656,
+                "end": 443.8399963378906
+            },
+            {
+                "word": "zu",
+                "start": 443.8399963378906,
+                "end": 444.1600036621094
+            },
+            {
+                "word": "bewerben.",
+                "start": 444.1600036621094,
+                "end": 444.5799865722656
+            }
+        ],
+        "translationEn": "To apply for a position with you.",
+        "translationVi": "Nộp đơn xin việc tại công ty của bạn."
+    },
+    {
+        "text": "Jetzt habe ich mein Informatikstudium mit dem Schwerpunkt Hardware-Systeme Systeme mit der",
+        "start": 454.86000244140627,
+        "end": 460.7700134277344,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 454.94000244140625,
+                "end": 455.5199890136719
+            },
+            {
+                "word": "habe",
+                "start": 455.5199890136719,
+                "end": 455.8800048828125
+            },
+            {
+                "word": "ich",
+                "start": 455.8800048828125,
+                "end": 456.1400146484375
+            },
+            {
+                "word": "mein",
+                "start": 456.1400146484375,
+                "end": 456.3399963378906
+            },
+            {
+                "word": "Informatikstudium",
+                "start": 456.3399963378906,
+                "end": 457.6600036621094
+            },
+            {
+                "word": "mit",
+                "start": 457.6600036621094,
+                "end": 457.8800048828125
+            },
+            {
+                "word": "dem",
+                "start": 457.8800048828125,
+                "end": 458.17999267578125
+            },
+            {
+                "word": "Schwerpunkt",
+                "start": 458.17999267578125,
+                "end": 458.760009765625
+            },
+            {
+                "word": "Hardware-Systeme",
+                "start": 458.760009765625,
+                "end": 459.3800048828125
+            },
+            {
+                "word": "Systeme",
+                "start": 459.3800048828125,
+                "end": 460.05999755859375
+            },
+            {
+                "word": "mit",
+                "start": 460.05999755859375,
+                "end": 460.20001220703125
+            },
+            {
+                "word": "der",
+                "start": 460.20001220703125,
+                "end": 460.4200134277344
+            }
+        ],
+        "translationEn": "Now I have completed my computer science degree with a focus on hardware systems.",
+        "translationVi": "Bây giờ tôi đã hoàn thành chương trình học ngành Công nghệ Thông tin với chuyên ngành Hệ thống phần cứng."
+    },
+    {
+        "text": "Note 1,2 2 abgeschlossen.",
+        "start": 460.3400134277344,
+        "end": 462.57000122070315,
+        "wordTimings": [
+            {
+                "word": "Note",
+                "start": 460.4200134277344,
+                "end": 460.6199951171875
+            },
+            {
+                "word": "1,2",
+                "start": 460.6199951171875,
+                "end": 461.1600036621094
+            },
+            {
+                "word": "2",
+                "start": 461.1600036621094,
+                "end": 461.4599914550781
+            },
+            {
+                "word": "abgeschlossen.",
+                "start": 461.4599914550781,
+                "end": 462.2200012207031
+            }
+        ],
+        "translationEn": "Note 1.2 completed.",
+        "translationVi": "Ghi chú 1,2 2 đã hoàn thành."
+    },
+    {
+        "text": "Und ich möchte mich bei Ihnen auf die Stelle als Hardware-Entwickler, Entwickler",
+        "start": 473.4399890136719,
+        "end": 477.6499877929688,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 473.5199890136719,
+                "end": 473.6000061035156
+            },
+            {
+                "word": "ich",
+                "start": 473.6000061035156,
+                "end": 473.8599853515625
+            },
+            {
+                "word": "möchte",
+                "start": 473.8599853515625,
+                "end": 474.1199951171875
+            },
+            {
+                "word": "mich",
+                "start": 474.1199951171875,
+                "end": 474.3800048828125
+            },
+            {
+                "word": "bei",
+                "start": 474.3800048828125,
+                "end": 474.67999267578125
+            },
+            {
+                "word": "Ihnen",
+                "start": 474.67999267578125,
+                "end": 474.9599914550781
+            },
+            {
+                "word": "auf",
+                "start": 474.9599914550781,
+                "end": 475.239990234375
+            },
+            {
+                "word": "die",
+                "start": 475.239990234375,
+                "end": 475.5
+            },
+            {
+                "word": "Stelle",
+                "start": 475.5,
+                "end": 475.7200012207031
+            },
+            {
+                "word": "als",
+                "start": 475.7200012207031,
+                "end": 476.1400146484375
+            },
+            {
+                "word": "Hardware-Entwickler,",
+                "start": 476.1400146484375,
+                "end": 476.67999267578125
+            },
+            {
+                "word": "Entwickler",
+                "start": 476.67999267578125,
+                "end": 477.29998779296875
+            }
+        ],
+        "translationEn": "And I would like to apply for the position of Hardware Developer, Developer.",
+        "translationVi": "Và tôi muốn nộp đơn cho vị trí Kỹ sư phần cứng, nhà phát triển."
+    },
+    {
+        "text": "Die auf Ihrer Homepage ausgeschrieben ist, bewerben.",
+        "start": 477.5600146484375,
+        "end": 481.1700073242188,
+        "wordTimings": [
+            {
+                "word": "die",
+                "start": 477.6400146484375,
+                "end": 477.82000732421875
+            },
+            {
+                "word": "auf",
+                "start": 477.82000732421875,
+                "end": 478.0199890136719
+            },
+            {
+                "word": "Ihrer",
+                "start": 478.0199890136719,
+                "end": 478.239990234375
+            },
+            {
+                "word": "Homepage",
+                "start": 478.239990234375,
+                "end": 478.8399963378906
+            },
+            {
+                "word": "ausgeschrieben",
+                "start": 478.8399963378906,
+                "end": 479.6400146484375
+            },
+            {
+                "word": "ist,",
+                "start": 479.6400146484375,
+                "end": 479.67999267578125
+            },
+            {
+                "word": "bewerben.",
+                "start": 479.67999267578125,
+                "end": 480.82000732421875
+            }
+        ],
+        "translationEn": "Apply for the position advertised on your homepage.",
+        "translationVi": "Nộp đơn cho vị trí được đăng trên trang chủ của bạn."
+    },
+    {
+        "text": "Auf einer solchen Stelle kann ich auch die Kenntnisse und Erfahrungen aus",
+        "start": 491.36000244140627,
+        "end": 504.6700073242188,
+        "wordTimings": [
+            {
+                "word": "Auf",
+                "start": 491.44000244140625,
+                "end": 491.94000244140625
+            },
+            {
+                "word": "einer",
+                "start": 491.94000244140625,
+                "end": 492.260009765625
+            },
+            {
+                "word": "solchen",
+                "start": 492.260009765625,
+                "end": 492.82000732421875
+            },
+            {
+                "word": "Stelle",
+                "start": 492.82000732421875,
+                "end": 493.1199951171875
+            },
+            {
+                "word": "kann",
+                "start": 493.1199951171875,
+                "end": 493.44000244140625
+            },
+            {
+                "word": "ich",
+                "start": 493.44000244140625,
+                "end": 493.6000061035156
+            },
+            {
+                "word": "auch",
+                "start": 493.6000061035156,
+                "end": 493.8599853515625
+            },
+            {
+                "word": "die",
+                "start": 493.8599853515625,
+                "end": 502.3800048828125
+            },
+            {
+                "word": "Kenntnisse",
+                "start": 502.3800048828125,
+                "end": 502.8800048828125
+            },
+            {
+                "word": "und",
+                "start": 502.8800048828125,
+                "end": 503.3599853515625
+            },
+            {
+                "word": "Erfahrungen",
+                "start": 503.3599853515625,
+                "end": 503.7799987792969
+            },
+            {
+                "word": "aus",
+                "start": 503.7799987792969,
+                "end": 504.32000732421875
+            }
+        ],
+        "translationEn": "In such a position, I can also apply the knowledge and experience from",
+        "translationVi": "Tại một vị trí như vậy, tôi cũng có thể áp dụng kiến thức và kinh nghiệm từ"
+    },
+    {
+        "text": "Meiner Bachelorarbeit anwenden.",
+        "start": 504.24000732421877,
+        "end": 506.3699890136719,
+        "wordTimings": [
+            {
+                "word": "meiner",
+                "start": 504.32000732421875,
+                "end": 504.5799865722656
+            },
+            {
+                "word": "Bachelorarbeit",
+                "start": 504.5799865722656,
+                "end": 505.5199890136719
+            },
+            {
+                "word": "anwenden.",
+                "start": 505.5199890136719,
+                "end": 506.0199890136719
+            }
+        ],
+        "translationEn": "Apply to my bachelor's thesis.",
+        "translationVi": "Áp dụng vào luận văn tốt nghiệp của tôi."
+    },
+    {
+        "text": "Über eine Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.",
+        "start": 507.25999633789064,
+        "end": 519.9499755859375,
+        "wordTimings": [
+            {
+                "word": "Über",
+                "start": 507.3399963378906,
+                "end": 508.5199890136719
+            },
+            {
+                "word": "eine",
+                "start": 508.5199890136719,
+                "end": 508.82000732421875
+            },
+            {
+                "word": "Einladung",
+                "start": 508.82000732421875,
+                "end": 509.5
+            },
+            {
+                "word": "zu",
+                "start": 509.5,
+                "end": 516.47998046875
+            },
+            {
+                "word": "einem",
+                "start": 516.47998046875,
+                "end": 516.780029296875
+            },
+            {
+                "word": "Vorstellungsgespräch",
+                "start": 516.780029296875,
+                "end": 518.1599731445312
+            },
+            {
+                "word": "würde",
+                "start": 518.1599731445312,
+                "end": 518.4600219726562
+            },
+            {
+                "word": "ich",
+                "start": 518.4600219726562,
+                "end": 518.739990234375
+            },
+            {
+                "word": "mich",
+                "start": 518.739990234375,
+                "end": 518.8800048828125
+            },
+            {
+                "word": "sehr",
+                "start": 518.8800048828125,
+                "end": 519.280029296875
+            },
+            {
+                "word": "freuen.",
+                "start": 519.280029296875,
+                "end": 519.5999755859375
+            }
+        ],
+        "translationEn": "I would be very pleased to receive an invitation to a job interview.",
+        "translationVi": "Tôi rất vui mừng nhận được lời mời tham gia phỏng vấn."
+    },
+    {
+        "text": "Mit freundlichen Grüßen,",
+        "start": 520.5000170898437,
+        "end": 523.3899780273438,
+        "wordTimings": [
+            {
+                "word": "Mit",
+                "start": 520.5800170898438,
+                "end": 521.760009765625
+            },
+            {
+                "word": "freundlichen",
+                "start": 521.760009765625,
+                "end": 522.4199829101562
+            },
+            {
+                "word": "Grüßen,",
+                "start": 522.4199829101562,
+                "end": 523.0399780273438
+            }
+        ],
+        "translationEn": "Best regards,",
+        "translationVi": "Trân trọng,"
+    },
+    {
+        "text": "Laila Badri.",
+        "start": 525.2600268554687,
+        "end": 526.5500122070313,
+        "wordTimings": [
+            {
+                "word": "Laila",
+                "start": 525.3400268554688,
+                "end": 525.6400146484375
+            },
+            {
+                "word": "Badri.",
+                "start": 525.6400146484375,
+                "end": 526.2000122070312
+            }
+        ],
+        "translationEn": "Laila Badri.",
+        "translationVi": "Laila Badri."
+    },
+    {
+        "text": "Was ist gestern im Nachbarhaus passiert Ein Einbruch Wie ist der Dieb",
+        "start": 543.8800219726562,
+        "end": 562.6700073242188,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 543.9600219726562,
+                "end": 544.8400268554688
+            },
+            {
+                "word": "ist",
+                "start": 544.8400268554688,
+                "end": 545.0999755859375
+            },
+            {
+                "word": "gestern",
+                "start": 545.0999755859375,
+                "end": 545.5599975585938
+            },
+            {
+                "word": "im",
+                "start": 545.5599975585938,
+                "end": 545.8200073242188
+            },
+            {
+                "word": "Nachbarhaus",
+                "start": 545.8200073242188,
+                "end": 546.4600219726562
+            },
+            {
+                "word": "passiert",
+                "start": 546.4600219726562,
+                "end": 547.0999755859375
+            },
+            {
+                "word": "Ein",
+                "start": 554.9000244140625,
+                "end": 555.780029296875
+            },
+            {
+                "word": "Einbruch",
+                "start": 555.780029296875,
+                "end": 556.6599731445312
+            },
+            {
+                "word": "Wie",
+                "start": 560.780029296875,
+                "end": 561.6599731445312
+            },
+            {
+                "word": "ist",
+                "start": 561.6599731445312,
+                "end": 561.8800048828125
+            },
+            {
+                "word": "der",
+                "start": 561.8800048828125,
+                "end": 562.1400146484375
+            },
+            {
+                "word": "Dieb",
+                "start": 562.1400146484375,
+                "end": 562.3200073242188
+            }
+        ],
+        "translationEn": "What happened yesterday in the neighbor's house? A burglary. What is the thief like?",
+        "translationVi": "Hôm qua đã xảy ra chuyện gì ở nhà hàng xóm? Một vụ đột nhập. Kẻ trộm như thế nào?"
+    },
+    {
+        "text": "Ins Haus gekommen Durch ein Kellerfenster Wie hat er das Fenster geöffnet",
+        "start": 562.2400073242187,
+        "end": 594.4300170898438,
+        "wordTimings": [
+            {
+                "word": "ins",
+                "start": 562.3200073242188,
+                "end": 562.5399780273438
+            },
+            {
+                "word": "Haus",
+                "start": 562.5399780273438,
+                "end": 562.8400268554688
+            },
+            {
+                "word": "gekommen",
+                "start": 562.8400268554688,
+                "end": 563.280029296875
+            },
+            {
+                "word": "Durch",
+                "start": 581.47998046875,
+                "end": 582.8800048828125
+            },
+            {
+                "word": "ein",
+                "start": 582.8800048828125,
+                "end": 584.280029296875
+            },
+            {
+                "word": "Kellerfenster",
+                "start": 584.280029296875,
+                "end": 584.9600219726562
+            },
+            {
+                "word": "Wie",
+                "start": 586.47998046875,
+                "end": 587.8800048828125
+            },
+            {
+                "word": "hat",
+                "start": 587.8800048828125,
+                "end": 588.0999755859375
+            },
+            {
+                "word": "er",
+                "start": 588.0999755859375,
+                "end": 588.239990234375
+            },
+            {
+                "word": "das",
+                "start": 588.239990234375,
+                "end": 593.1799926757812
+            },
+            {
+                "word": "Fenster",
+                "start": 593.1799926757812,
+                "end": 593.5
+            },
+            {
+                "word": "geöffnet",
+                "start": 593.5,
+                "end": 594.0800170898438
+            }
+        ],
+        "translationEn": "Came into the house through a basement window. How did he open the window?",
+        "translationVi": "Vào nhà qua cửa sổ tầng hầm. Anh ta đã mở cửa sổ đó như thế nào?"
+    },
+    {
+        "text": "Er hat ein Fenster geöffnet Mit einem Hammer Was für ein Haus",
+        "start": 594.8600024414062,
+        "end": 608.1700073242188,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 594.9400024414062,
+                "end": 595.9600219726562
+            },
+            {
+                "word": "hat",
+                "start": 595.9600219726562,
+                "end": 595.9600219726562
+            },
+            {
+                "word": "ein",
+                "start": 595.9600219726562,
+                "end": 595.9600219726562
+            },
+            {
+                "word": "Fenster",
+                "start": 595.9600219726562,
+                "end": 596
+            },
+            {
+                "word": "geöffnet",
+                "start": 596,
+                "end": 596
+            },
+            {
+                "word": "Mit",
+                "start": 596.02001953125,
+                "end": 596.5
+            },
+            {
+                "word": "einem",
+                "start": 596.5,
+                "end": 600.0599975585938
+            },
+            {
+                "word": "Hammer",
+                "start": 600.0599975585938,
+                "end": 600.3200073242188
+            },
+            {
+                "word": "Was",
+                "start": 602.5599975585938,
+                "end": 603.280029296875
+            },
+            {
+                "word": "für",
+                "start": 603.280029296875,
+                "end": 603.4600219726562
+            },
+            {
+                "word": "ein",
+                "start": 603.4600219726562,
+                "end": 607.5999755859375
+            },
+            {
+                "word": "Haus",
+                "start": 607.5999755859375,
+                "end": 607.8200073242188
+            }
+        ],
+        "translationEn": "He opened a window with a hammer. What a house.",
+        "translationVi": "Anh ấy đã mở một cửa sổ bằng một cái búa. Thật là một ngôi nhà."
+    },
+    {
+        "text": "Ist das Das Haus einer sehr bekannten Schauspielerin Hat es Zeugen des",
+        "start": 607.7400073242187,
+        "end": 622.4300170898438,
+        "wordTimings": [
+            {
+                "word": "ist",
+                "start": 607.8200073242188,
+                "end": 608.1199951171875
+            },
+            {
+                "word": "das",
+                "start": 608.1199951171875,
+                "end": 608.4400024414062
+            },
+            {
+                "word": "Das",
+                "start": 611,
+                "end": 611.4400024414062
+            },
+            {
+                "word": "Haus",
+                "start": 611.4400024414062,
+                "end": 611.5999755859375
+            },
+            {
+                "word": "einer",
+                "start": 611.5999755859375,
+                "end": 616.6799926757812
+            },
+            {
+                "word": "sehr",
+                "start": 616.6799926757812,
+                "end": 617.0599975585938
+            },
+            {
+                "word": "bekannten",
+                "start": 617.0599975585938,
+                "end": 617.4199829101562
+            },
+            {
+                "word": "Schauspielerin",
+                "start": 617.4199829101562,
+                "end": 618.260009765625
+            },
+            {
+                "word": "Hat",
+                "start": 621.1199951171875,
+                "end": 621.1400146484375
+            },
+            {
+                "word": "es",
+                "start": 621.1400146484375,
+                "end": 621.4000244140625
+            },
+            {
+                "word": "Zeugen",
+                "start": 621.4000244140625,
+                "end": 621.760009765625
+            },
+            {
+                "word": "des",
+                "start": 621.760009765625,
+                "end": 622.0800170898438
+            }
+        ],
+        "translationEn": "Is this the house of a very famous actress? Does it have witnesses of the...",
+        "translationVi": "Đây có phải là ngôi nhà của một nữ diễn viên rất nổi tiếng không? Có ai chứng kiến điều đó không?"
+    },
+    {
+        "text": "Diebstahls gegeben Nein es hat keine Zeugen gegeben Hat es früher schon",
+        "start": 622.0000170898437,
+        "end": 641.2900024414063,
+        "wordTimings": [
+            {
+                "word": "Diebstahls",
+                "start": 622.0800170898438,
+                "end": 622.8800048828125
+            },
+            {
+                "word": "gegeben",
+                "start": 622.8800048828125,
+                "end": 623.1400146484375
+            },
+            {
+                "word": "Nein",
+                "start": 630.4600219726562,
+                "end": 631.0999755859375
+            },
+            {
+                "word": "es",
+                "start": 631.3599853515625,
+                "end": 631.5
+            },
+            {
+                "word": "hat",
+                "start": 631.5,
+                "end": 636.219970703125
+            },
+            {
+                "word": "keine",
+                "start": 636.219970703125,
+                "end": 636.5999755859375
+            },
+            {
+                "word": "Zeugen",
+                "start": 636.5999755859375,
+                "end": 636.9400024414062
+            },
+            {
+                "word": "gegeben",
+                "start": 636.9400024414062,
+                "end": 637.4600219726562
+            },
+            {
+                "word": "Hat",
+                "start": 639.97998046875,
+                "end": 640.0999755859375
+            },
+            {
+                "word": "es",
+                "start": 640.0999755859375,
+                "end": 640.2999877929688
+            },
+            {
+                "word": "früher",
+                "start": 640.2999877929688,
+                "end": 640.6199951171875
+            },
+            {
+                "word": "schon",
+                "start": 640.6199951171875,
+                "end": 640.9400024414062
+            }
+        ],
+        "translationEn": "Theft occurred No, there were no witnesses Has it happened before",
+        "translationVi": "Không có vụ trộm nào, không có nhân chứng. Đã từng xảy ra trước đây không?"
+    },
+    {
+        "text": "Mal einen Einbruch dort gegeben Nein es hat noch keinen Einbruch gegeben",
+        "start": 640.8600024414062,
+        "end": 653.82998046875,
+        "wordTimings": [
+            {
+                "word": "mal",
+                "start": 640.9400024414062,
+                "end": 641.1199951171875
+            },
+            {
+                "word": "einen",
+                "start": 641.1199951171875,
+                "end": 641.4400024414062
+            },
+            {
+                "word": "Einbruch",
+                "start": 641.4400024414062,
+                "end": 641.9400024414062
+            },
+            {
+                "word": "dort",
+                "start": 641.9400024414062,
+                "end": 642.260009765625
+            },
+            {
+                "word": "gegeben",
+                "start": 642.260009765625,
+                "end": 642.6799926757812
+            },
+            {
+                "word": "Nein",
+                "start": 650.760009765625,
+                "end": 651.4000244140625
+            },
+            {
+                "word": "es",
+                "start": 651.5599975585938,
+                "end": 651.719970703125
+            },
+            {
+                "word": "hat",
+                "start": 651.719970703125,
+                "end": 651.8800048828125
+            },
+            {
+                "word": "noch",
+                "start": 651.8800048828125,
+                "end": 652.1599731445312
+            },
+            {
+                "word": "keinen",
+                "start": 652.1599731445312,
+                "end": 652.4600219726562
+            },
+            {
+                "word": "Einbruch",
+                "start": 652.4600219726562,
+                "end": 652.97998046875
+            },
+            {
+                "word": "gegeben",
+                "start": 652.97998046875,
+                "end": 653.47998046875
+            }
+        ],
+        "translationEn": "There has been a break-in there No, there has not been a break-in yet.",
+        "translationVi": "Chưa có vụ đột nhập nào xảy ra ở đó."
+    },
+    {
+        "text": "War der Dieb noch in einem anderen Haus Nein er ist zu",
+        "start": 660.39998046875,
+        "end": 677.1499877929688,
+        "wordTimings": [
+            {
+                "word": "War",
+                "start": 660.47998046875,
+                "end": 661.2000122070312
+            },
+            {
+                "word": "der",
+                "start": 661.2000122070312,
+                "end": 661.47998046875
+            },
+            {
+                "word": "Dieb",
+                "start": 661.47998046875,
+                "end": 661.760009765625
+            },
+            {
+                "word": "noch",
+                "start": 661.760009765625,
+                "end": 661.9199829101562
+            },
+            {
+                "word": "in",
+                "start": 661.9199829101562,
+                "end": 666.9000244140625
+            },
+            {
+                "word": "einem",
+                "start": 666.9000244140625,
+                "end": 667.1599731445312
+            },
+            {
+                "word": "anderen",
+                "start": 667.1599731445312,
+                "end": 667.719970703125
+            },
+            {
+                "word": "Haus",
+                "start": 667.719970703125,
+                "end": 668.0800170898438
+            },
+            {
+                "word": "Nein",
+                "start": 670.5599975585938,
+                "end": 670.9600219726562
+            },
+            {
+                "word": "er",
+                "start": 671.1400146484375,
+                "end": 671.260009765625
+            },
+            {
+                "word": "ist",
+                "start": 671.260009765625,
+                "end": 671.4199829101562
+            },
+            {
+                "word": "zu",
+                "start": 671.4199829101562,
+                "end": 676.7999877929688
+            }
+        ],
+        "translationEn": "Was the thief in another house? No, he is gone.",
+        "translationVi": "Tên trộm có ở trong ngôi nhà khác không? Không, anh ta đã đi rồi."
+    },
+    {
+        "text": "Keinem anderen Haus gegangen Haben die Nachbarn Lärm gehört oder Licht gesehen",
+        "start": 676.7199877929687,
+        "end": 684.069970703125,
+        "wordTimings": [
+            {
+                "word": "keinem",
+                "start": 676.7999877929688,
+                "end": 677.1199951171875
+            },
+            {
+                "word": "anderen",
+                "start": 677.1199951171875,
+                "end": 677.52001953125
+            },
+            {
+                "word": "Haus",
+                "start": 677.52001953125,
+                "end": 677.8599853515625
+            },
+            {
+                "word": "gegangen",
+                "start": 677.8599853515625,
+                "end": 678.260009765625
+            },
+            {
+                "word": "Haben",
+                "start": 681.1199951171875,
+                "end": 681.1199951171875
+            },
+            {
+                "word": "die",
+                "start": 681.1199951171875,
+                "end": 681.4000244140625
+            },
+            {
+                "word": "Nachbarn",
+                "start": 681.4000244140625,
+                "end": 681.9000244140625
+            },
+            {
+                "word": "Lärm",
+                "start": 681.9000244140625,
+                "end": 682.1799926757812
+            },
+            {
+                "word": "gehört",
+                "start": 682.1799926757812,
+                "end": 682.6199951171875
+            },
+            {
+                "word": "oder",
+                "start": 682.6199951171875,
+                "end": 682.9600219726562
+            },
+            {
+                "word": "Licht",
+                "start": 682.9600219726562,
+                "end": 683.219970703125
+            },
+            {
+                "word": "gesehen",
+                "start": 683.219970703125,
+                "end": 683.719970703125
+            }
+        ],
+        "translationEn": "No other house has the neighbors heard noise or seen light.",
+        "translationVi": "Không có nhà nào khác mà hàng xóm nghe thấy tiếng ồn hoặc nhìn thấy ánh sáng."
+    },
+    {
+        "text": "Nein die Nachbarn haben keinen Lärm gehört und kein Licht gesehen Wer",
+        "start": 697.3399829101562,
+        "end": 705.2300048828125,
+        "wordTimings": [
+            {
+                "word": "Nein",
+                "start": 697.4199829101562,
+                "end": 698.1400146484375
+            },
+            {
+                "word": "die",
+                "start": 698.1400146484375,
+                "end": 698.8599853515625
+            },
+            {
+                "word": "Nachbarn",
+                "start": 698.8599853515625,
+                "end": 699.3400268554688
+            },
+            {
+                "word": "haben",
+                "start": 699.3400268554688,
+                "end": 699.5999755859375
+            },
+            {
+                "word": "keinen",
+                "start": 699.5999755859375,
+                "end": 700.0599975585938
+            },
+            {
+                "word": "Lärm",
+                "start": 700.0599975585938,
+                "end": 700.239990234375
+            },
+            {
+                "word": "gehört",
+                "start": 700.239990234375,
+                "end": 700.7000122070312
+            },
+            {
+                "word": "und",
+                "start": 700.7000122070312,
+                "end": 701
+            },
+            {
+                "word": "kein",
+                "start": 701,
+                "end": 701.3599853515625
+            },
+            {
+                "word": "Licht",
+                "start": 701.3599853515625,
+                "end": 701.52001953125
+            },
+            {
+                "word": "gesehen",
+                "start": 701.52001953125,
+                "end": 701.9400024414062
+            },
+            {
+                "word": "Wer",
+                "start": 704.6599731445312,
+                "end": 704.8800048828125
+            }
+        ],
+        "translationEn": "No, the neighbors didn't hear any noise and didn't see any light. Who?",
+        "translationVi": "Không, hàng xóm không nghe thấy tiếng ồn và không thấy ánh sáng. Ai?"
+    },
+    {
+        "text": "Hat den Dieb gefangen und zwei Stunden lang festgehalten Wer hat den",
+        "start": 704.8000048828125,
+        "end": 712.0500122070313,
+        "wordTimings": [
+            {
+                "word": "hat",
+                "start": 704.8800048828125,
+                "end": 705.0999755859375
+            },
+            {
+                "word": "den",
+                "start": 705.0999755859375,
+                "end": 705.3599853515625
+            },
+            {
+                "word": "Dieb",
+                "start": 705.3599853515625,
+                "end": 705.5999755859375
+            },
+            {
+                "word": "gefangen",
+                "start": 705.5999755859375,
+                "end": 706
+            },
+            {
+                "word": "und",
+                "start": 706,
+                "end": 706.3800048828125
+            },
+            {
+                "word": "zwei",
+                "start": 706.3800048828125,
+                "end": 706.7000122070312
+            },
+            {
+                "word": "Stunden",
+                "start": 706.7000122070312,
+                "end": 707.0599975585938
+            },
+            {
+                "word": "lang",
+                "start": 707.0599975585938,
+                "end": 707.4000244140625
+            },
+            {
+                "word": "festgehalten",
+                "start": 707.4000244140625,
+                "end": 708.1599731445312
+            },
+            {
+                "word": "Wer",
+                "start": 710.47998046875,
+                "end": 711.2000122070312
+            },
+            {
+                "word": "hat",
+                "start": 711.2000122070312,
+                "end": 711.4199829101562
+            },
+            {
+                "word": "den",
+                "start": 711.4199829101562,
+                "end": 711.7000122070312
+            }
+        ],
+        "translationEn": "Caught the thief and held him for two hours. Who did that?",
+        "translationVi": "Đã bắt được tên trộm và giữ hắn trong hai giờ. Ai đã làm điều đó?"
+    },
+    {
+        "text": "Dieb gefangen und zwei Stunden lang festgehalten Wem hat die Schauspielerin von",
+        "start": 711.6200122070312,
+        "end": 724.7500244140625,
+        "wordTimings": [
+            {
+                "word": "Dieb",
+                "start": 711.7000122070312,
+                "end": 711.9600219726562
+            },
+            {
+                "word": "gefangen",
+                "start": 711.9600219726562,
+                "end": 712.3400268554688
+            },
+            {
+                "word": "und",
+                "start": 712.3400268554688,
+                "end": 712.7000122070312
+            },
+            {
+                "word": "zwei",
+                "start": 712.7000122070312,
+                "end": 713.0399780273438
+            },
+            {
+                "word": "Stunden",
+                "start": 713.0399780273438,
+                "end": 713.3800048828125
+            },
+            {
+                "word": "lang",
+                "start": 713.3800048828125,
+                "end": 713.739990234375
+            },
+            {
+                "word": "festgehalten",
+                "start": 713.739990234375,
+                "end": 714.5
+            },
+            {
+                "word": "Wem",
+                "start": 722.1599731445312,
+                "end": 722.8800048828125
+            },
+            {
+                "word": "hat",
+                "start": 722.8800048828125,
+                "end": 723.1199951171875
+            },
+            {
+                "word": "die",
+                "start": 723.1199951171875,
+                "end": 723.3400268554688
+            },
+            {
+                "word": "Schauspielerin",
+                "start": 723.3400268554688,
+                "end": 724.1400146484375
+            },
+            {
+                "word": "von",
+                "start": 724.1400146484375,
+                "end": 724.4000244140625
+            }
+        ],
+        "translationEn": "Thief caught and held for two hours. Who did the actress of...",
+        "translationVi": "Tên trộm bị bắt và bị giữ trong hai giờ. Ai đã giữ nữ diễn viên của..."
+    },
+    {
+        "text": "Der Heldentat ihres Hundes berichtet Wem hat die Schauspielerin von der Heldentat",
+        "start": 724.3200244140625,
+        "end": 732.7699829101563,
+        "wordTimings": [
+            {
+                "word": "der",
+                "start": 724.4000244140625,
+                "end": 724.6799926757812
+            },
+            {
+                "word": "Heldentat",
+                "start": 724.6799926757812,
+                "end": 725.3400268554688
+            },
+            {
+                "word": "ihres",
+                "start": 725.3400268554688,
+                "end": 725.7000122070312
+            },
+            {
+                "word": "Hundes",
+                "start": 725.7000122070312,
+                "end": 726.1199951171875
+            },
+            {
+                "word": "berichtet",
+                "start": 726.1199951171875,
+                "end": 726.6199951171875
+            },
+            {
+                "word": "Wem",
+                "start": 729,
+                "end": 729.9600219726562
+            },
+            {
+                "word": "hat",
+                "start": 729.9600219726562,
+                "end": 730.2000122070312
+            },
+            {
+                "word": "die",
+                "start": 730.2000122070312,
+                "end": 730.4199829101562
+            },
+            {
+                "word": "Schauspielerin",
+                "start": 730.4199829101562,
+                "end": 731.219970703125
+            },
+            {
+                "word": "von",
+                "start": 731.219970703125,
+                "end": 731.47998046875
+            },
+            {
+                "word": "der",
+                "start": 731.47998046875,
+                "end": 731.780029296875
+            },
+            {
+                "word": "Heldentat",
+                "start": 731.780029296875,
+                "end": 732.4199829101562
+            }
+        ],
+        "translationEn": "The actress reports on the heroic deed of her dog.",
+        "translationVi": "Người diễn viên đã kể về hành động anh hùng của chú chó mình."
+    },
+    {
+        "text": "Ihres Hundes berichtet Den Journalisten Was wollte der Dieb stehlen Den Schmuck",
+        "start": 732.3399829101562,
+        "end": 751.7699829101563,
+        "wordTimings": [
+            {
+                "word": "ihres",
+                "start": 732.4199829101562,
+                "end": 732.780029296875
+            },
+            {
+                "word": "Hundes",
+                "start": 732.780029296875,
+                "end": 733.260009765625
+            },
+            {
+                "word": "berichtet",
+                "start": 733.260009765625,
+                "end": 733.7000122070312
+            },
+            {
+                "word": "Den",
+                "start": 738.9400024414062,
+                "end": 739.9000244140625
+            },
+            {
+                "word": "Journalisten",
+                "start": 739.9000244140625,
+                "end": 740.5
+            },
+            {
+                "word": "Was",
+                "start": 742.1199951171875,
+                "end": 743.0800170898438
+            },
+            {
+                "word": "wollte",
+                "start": 743.0800170898438,
+                "end": 743.3800048828125
+            },
+            {
+                "word": "der",
+                "start": 743.3800048828125,
+                "end": 747.8400268554688
+            },
+            {
+                "word": "Dieb",
+                "start": 747.8400268554688,
+                "end": 748.0599975585938
+            },
+            {
+                "word": "stehlen",
+                "start": 748.0599975585938,
+                "end": 748.4600219726562
+            },
+            {
+                "word": "Den",
+                "start": 750.3400268554688,
+                "end": 751.0399780273438
+            },
+            {
+                "word": "Schmuck",
+                "start": 751.0399780273438,
+                "end": 751.4199829101562
+            }
+        ],
+        "translationEn": "Your dog reports to the journalists what the thief wanted to steal: the jewelry.",
+        "translationVi": "Chó của bạn báo cho các phóng viên Biểu tượng của kẻ trộm muốn đánh cắp trang sức"
+    },
+    {
+        "text": "Was ist der Schauspielerin nicht eingefallen Die Telefonnummer der Polizei Habt ihr",
+        "start": 755.42,
+        "end": 776.9300170898438,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 755.5,
+                "end": 756.739990234375
+            },
+            {
+                "word": "ist",
+                "start": 756.739990234375,
+                "end": 756.9600219726562
+            },
+            {
+                "word": "der",
+                "start": 756.9600219726562,
+                "end": 762.219970703125
+            },
+            {
+                "word": "Schauspielerin",
+                "start": 762.219970703125,
+                "end": 762.9600219726562
+            },
+            {
+                "word": "nicht",
+                "start": 762.9600219726562,
+                "end": 763.280029296875
+            },
+            {
+                "word": "eingefallen",
+                "start": 763.280029296875,
+                "end": 763.9199829101562
+            },
+            {
+                "word": "Die",
+                "start": 766,
+                "end": 766.6599731445312
+            },
+            {
+                "word": "Telefonnummer",
+                "start": 766.6599731445312,
+                "end": 767.2999877929688
+            },
+            {
+                "word": "der",
+                "start": 767.2999877929688,
+                "end": 771.6799926757812
+            },
+            {
+                "word": "Polizei",
+                "start": 771.6799926757812,
+                "end": 771.9400024414062
+            },
+            {
+                "word": "Habt",
+                "start": 775.239990234375,
+                "end": 776.47998046875
+            },
+            {
+                "word": "ihr",
+                "start": 776.47998046875,
+                "end": 776.5800170898438
+            }
+        ],
+        "translationEn": "What didn't occur to the actress? The phone number of the police. Do you have it?",
+        "translationVi": "Cô diễn viên không nghĩ ra số điện thoại của cảnh sát à? Các bạn có không?"
+    },
+    {
+        "text": "Euren Urlaub schon in die Urlaubsliste eingetragen Nein ich kann meinen Urlaub",
+        "start": 776.5000170898437,
+        "end": 795.7900024414063,
+        "wordTimings": [
+            {
+                "word": "euren",
+                "start": 776.5800170898438,
+                "end": 776.9400024414062
+            },
+            {
+                "word": "Urlaub",
+                "start": 776.9400024414062,
+                "end": 777.3400268554688
+            },
+            {
+                "word": "schon",
+                "start": 777.3400268554688,
+                "end": 777.6799926757812
+            },
+            {
+                "word": "in",
+                "start": 777.6799926757812,
+                "end": 777.8200073242188
+            },
+            {
+                "word": "die",
+                "start": 777.8200073242188,
+                "end": 778.02001953125
+            },
+            {
+                "word": "Urlaubsliste",
+                "start": 778.02001953125,
+                "end": 778.9600219726562
+            },
+            {
+                "word": "eingetragen",
+                "start": 778.9600219726562,
+                "end": 779.5800170898438
+            },
+            {
+                "word": "Nein",
+                "start": 787.5800170898438,
+                "end": 788.260009765625
+            },
+            {
+                "word": "ich",
+                "start": 794.1199951171875,
+                "end": 794.47998046875
+            },
+            {
+                "word": "kann",
+                "start": 794.47998046875,
+                "end": 794.7000122070312
+            },
+            {
+                "word": "meinen",
+                "start": 794.7000122070312,
+                "end": 795.0399780273438
+            },
+            {
+                "word": "Urlaub",
+                "start": 795.0399780273438,
+                "end": 795.4400024414062
+            }
+        ],
+        "translationEn": "Have you already entered your vacation in the vacation list? No, I can take my vacation.",
+        "translationVi": "Bạn đã ghi kỳ nghỉ của mình vào danh sách kỳ nghỉ chưa? Không, tôi không thể ghi kỳ nghỉ của mình."
+    },
+    {
+        "text": "Noch nicht eintragen Ich warte noch auf meine Frau In ihrer Firma",
+        "start": 795.3600024414062,
+        "end": 808.4900146484375,
+        "wordTimings": [
+            {
+                "word": "noch",
+                "start": 795.4400024414062,
+                "end": 795.780029296875
+            },
+            {
+                "word": "nicht",
+                "start": 795.780029296875,
+                "end": 796.0599975585938
+            },
+            {
+                "word": "eintragen",
+                "start": 796.0599975585938,
+                "end": 796.5399780273438
+            },
+            {
+                "word": "Ich",
+                "start": 798.97998046875,
+                "end": 799.260009765625
+            },
+            {
+                "word": "warte",
+                "start": 799.260009765625,
+                "end": 799.5
+            },
+            {
+                "word": "noch",
+                "start": 799.5,
+                "end": 799.8200073242188
+            },
+            {
+                "word": "auf",
+                "start": 799.8200073242188,
+                "end": 804.1599731445312
+            },
+            {
+                "word": "meine",
+                "start": 804.1599731445312,
+                "end": 804.4000244140625
+            },
+            {
+                "word": "Frau",
+                "start": 804.4000244140625,
+                "end": 804.6799926757812
+            },
+            {
+                "word": "In",
+                "start": 807.4000244140625,
+                "end": 807.52001953125
+            },
+            {
+                "word": "ihrer",
+                "start": 807.52001953125,
+                "end": 807.780029296875
+            },
+            {
+                "word": "Firma",
+                "start": 807.780029296875,
+                "end": 808.1400146484375
+            }
+        ],
+        "translationEn": "Not yet registered. I am still waiting for my wife at her company.",
+        "translationVi": "Chưa đăng ký Tôi vẫn đang chờ vợ tôi ở công ty của cô ấy"
+    },
+    {
+        "text": "Kommt die Urlaubsliste erst im Januar Erst dann können wir unseren Urlaub",
+        "start": 808.0600146484375,
+        "end": 825.7500244140625,
+        "wordTimings": [
+            {
+                "word": "kommt",
+                "start": 808.1400146484375,
+                "end": 808.4400024414062
+            },
+            {
+                "word": "die",
+                "start": 808.4400024414062,
+                "end": 808.7000122070312
+            },
+            {
+                "word": "Urlaubsliste",
+                "start": 808.7000122070312,
+                "end": 809.5
+            },
+            {
+                "word": "erst",
+                "start": 809.5,
+                "end": 809.780029296875
+            },
+            {
+                "word": "im",
+                "start": 809.780029296875,
+                "end": 809.9600219726562
+            },
+            {
+                "word": "Januar",
+                "start": 809.9600219726562,
+                "end": 810.3200073242188
+            },
+            {
+                "word": "Erst",
+                "start": 817.8400268554688,
+                "end": 818.5599975585938
+            },
+            {
+                "word": "dann",
+                "start": 818.5599975585938,
+                "end": 819.280029296875
+            },
+            {
+                "word": "können",
+                "start": 819.280029296875,
+                "end": 819.5999755859375
+            },
+            {
+                "word": "wir",
+                "start": 819.5999755859375,
+                "end": 824.5999755859375
+            },
+            {
+                "word": "unseren",
+                "start": 824.5999755859375,
+                "end": 825.0399780273438
+            },
+            {
+                "word": "Urlaub",
+                "start": 825.0399780273438,
+                "end": 825.4000244140625
+            }
+        ],
+        "translationEn": "The vacation list will only come in January. Only then can we plan our vacation.",
+        "translationVi": "Danh sách kỳ nghỉ sẽ đến vào tháng Giêng. Chỉ sau đó chúng ta mới có thể nghỉ phép."
+    },
+    {
+        "text": "Planen Und du weißt du schon wann du deinen Urlaub nimmst Ja",
+        "start": 825.3200244140625,
+        "end": 840.9099975585938,
+        "wordTimings": [
+            {
+                "word": "planen",
+                "start": 825.4000244140625,
+                "end": 825.9400024414062
+            },
+            {
+                "word": "Und",
+                "start": 833.52001953125,
+                "end": 834.239990234375
+            },
+            {
+                "word": "du",
+                "start": 834.239990234375,
+                "end": 834.9600219726562
+            },
+            {
+                "word": "weißt",
+                "start": 835.260009765625,
+                "end": 835.260009765625
+            },
+            {
+                "word": "du",
+                "start": 835.260009765625,
+                "end": 835.5
+            },
+            {
+                "word": "schon",
+                "start": 835.5,
+                "end": 835.8200073242188
+            },
+            {
+                "word": "wann",
+                "start": 836.1199951171875,
+                "end": 836.219970703125
+            },
+            {
+                "word": "du",
+                "start": 836.219970703125,
+                "end": 836.4600219726562
+            },
+            {
+                "word": "deinen",
+                "start": 836.4600219726562,
+                "end": 836.8200073242188
+            },
+            {
+                "word": "Urlaub",
+                "start": 836.8200073242188,
+                "end": 837.3200073242188
+            },
+            {
+                "word": "nimmst",
+                "start": 837.3200073242188,
+                "end": 837.739990234375
+            },
+            {
+                "word": "Ja",
+                "start": 839.8400268554688,
+                "end": 840.5599975585938
+            }
+        ],
+        "translationEn": "Planning And do you already know when you will take your vacation Yes",
+        "translationVi": "Lên kế hoạch Và bạn đã biết khi nào bạn sẽ nghỉ phép chưa? Vâng."
+    },
+    {
+        "text": "Wir haben schon Lust auf Urlaub Ja wir haben schon lange geplant",
+        "start": 840.5799731445312,
+        "end": 846.7699829101563,
+        "wordTimings": [
+            {
+                "word": "wir",
+                "start": 840.6599731445312,
+                "end": 840.7999877929688
+            },
+            {
+                "word": "haben",
+                "start": 840.7999877929688,
+                "end": 841.0399780273438
+            },
+            {
+                "word": "schon",
+                "start": 841.0399780273438,
+                "end": 841.4000244140625
+            },
+            {
+                "word": "Lust",
+                "start": 841.4000244140625,
+                "end": 841.4000244140625
+            },
+            {
+                "word": "auf",
+                "start": 841.4000244140625,
+                "end": 841.4000244140625
+            },
+            {
+                "word": "Urlaub",
+                "start": 841.4000244140625,
+                "end": 841.4000244140625
+            },
+            {
+                "word": "Ja",
+                "start": 842.6799926757812,
+                "end": 843.2999877929688
+            },
+            {
+                "word": "wir",
+                "start": 844.9600219726562,
+                "end": 845.0999755859375
+            },
+            {
+                "word": "haben",
+                "start": 845.0999755859375,
+                "end": 845.3599853515625
+            },
+            {
+                "word": "schon",
+                "start": 845.3599853515625,
+                "end": 845.739990234375
+            },
+            {
+                "word": "lange",
+                "start": 845.739990234375,
+                "end": 846.0399780273438
+            },
+            {
+                "word": "geplant",
+                "start": 846.0399780273438,
+                "end": 846.4199829101562
+            }
+        ],
+        "translationEn": "We are already looking forward to vacation. Yes, we have been planning for a long time.",
+        "translationVi": "Chúng tôi đã rất muốn đi nghỉ. Vâng, chúng tôi đã lên kế hoạch từ lâu."
+    },
+    {
+        "text": "Ich fahre mit meiner Freundin eine Woche nach Rom Mein Mann möchte",
+        "start": 849.159990234375,
+        "end": 860.6700073242188,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 849.239990234375,
+                "end": 849.3599853515625
+            },
+            {
+                "word": "fahre",
+                "start": 849.3599853515625,
+                "end": 849.5999755859375
+            },
+            {
+                "word": "mit",
+                "start": 849.5999755859375,
+                "end": 855.1199951171875
+            },
+            {
+                "word": "meiner",
+                "start": 855.1199951171875,
+                "end": 855.4199829101562
+            },
+            {
+                "word": "Freundin",
+                "start": 855.4199829101562,
+                "end": 856
+            },
+            {
+                "word": "eine",
+                "start": 856,
+                "end": 856.3599853515625
+            },
+            {
+                "word": "Woche",
+                "start": 856.3599853515625,
+                "end": 856.5599975585938
+            },
+            {
+                "word": "nach",
+                "start": 856.5599975585938,
+                "end": 856.9199829101562
+            },
+            {
+                "word": "Rom",
+                "start": 856.9199829101562,
+                "end": 857.1599731445312
+            },
+            {
+                "word": "Mein",
+                "start": 859.7999877929688,
+                "end": 859.8400268554688
+            },
+            {
+                "word": "Mann",
+                "start": 859.8400268554688,
+                "end": 860
+            },
+            {
+                "word": "möchte",
+                "start": 860,
+                "end": 860.3200073242188
+            }
+        ],
+        "translationEn": "I am going to Rome for a week with my girlfriend. My husband wants to.",
+        "translationVi": "Tôi sẽ đi Rome một tuần với bạn gái của mình. Chồng tôi muốn."
+    },
+    {
+        "text": "Sich seinen Traum verwirklichen und mit dem Fahrrad über die Alpen fahren",
+        "start": 860.2400073242187,
+        "end": 864.9099975585938,
+        "wordTimings": [
+            {
+                "word": "sich",
+                "start": 860.3200073242188,
+                "end": 860.6400146484375
+            },
+            {
+                "word": "seinen",
+                "start": 860.6400146484375,
+                "end": 860.9400024414062
+            },
+            {
+                "word": "Traum",
+                "start": 860.9400024414062,
+                "end": 861.3200073242188
+            },
+            {
+                "word": "verwirklichen",
+                "start": 861.3200073242188,
+                "end": 862.2000122070312
+            },
+            {
+                "word": "und",
+                "start": 862.2000122070312,
+                "end": 862.4400024414062
+            },
+            {
+                "word": "mit",
+                "start": 862.4400024414062,
+                "end": 862.6400146484375
+            },
+            {
+                "word": "dem",
+                "start": 862.6400146484375,
+                "end": 862.9199829101562
+            },
+            {
+                "word": "Fahrrad",
+                "start": 862.9199829101562,
+                "end": 863.3400268554688
+            },
+            {
+                "word": "über",
+                "start": 863.3400268554688,
+                "end": 863.6199951171875
+            },
+            {
+                "word": "die",
+                "start": 863.6199951171875,
+                "end": 863.9199829101562
+            },
+            {
+                "word": "Alpen",
+                "start": 863.9199829101562,
+                "end": 864.260009765625
+            },
+            {
+                "word": "fahren",
+                "start": 864.260009765625,
+                "end": 864.5599975585938
+            }
+        ],
+        "translationEn": "Realizing your dream and cycling over the Alps.",
+        "translationVi": "Biến giấc mơ của mình thành hiện thực và đi xe đạp qua dãy Alps."
+    },
+    {
+        "text": "Das macht er mit seinen zwei Brüdern zusammen Ihr macht doch immer",
+        "start": 873.7400073242187,
+        "end": 885.9699951171875,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 873.8200073242188,
+                "end": 874.6599731445312
+            },
+            {
+                "word": "macht",
+                "start": 874.6599731445312,
+                "end": 874.9199829101562
+            },
+            {
+                "word": "er",
+                "start": 874.9199829101562,
+                "end": 875.0999755859375
+            },
+            {
+                "word": "mit",
+                "start": 875.0999755859375,
+                "end": 880.3599853515625
+            },
+            {
+                "word": "seinen",
+                "start": 880.3599853515625,
+                "end": 880.6400146484375
+            },
+            {
+                "word": "zwei",
+                "start": 880.6400146484375,
+                "end": 881.3200073242188
+            },
+            {
+                "word": "Brüdern",
+                "start": 881.3200073242188,
+                "end": 881.5
+            },
+            {
+                "word": "zusammen",
+                "start": 881.5,
+                "end": 882.0800170898438
+            },
+            {
+                "word": "Ihr",
+                "start": 884.760009765625,
+                "end": 884.9000244140625
+            },
+            {
+                "word": "macht",
+                "start": 884.9000244140625,
+                "end": 885.0800170898438
+            },
+            {
+                "word": "doch",
+                "start": 885.0800170898438,
+                "end": 885.4000244140625
+            },
+            {
+                "word": "immer",
+                "start": 885.4000244140625,
+                "end": 885.6199951171875
+            }
+        ],
+        "translationEn": "He does that with his two brothers together. You always do that.",
+        "translationVi": "Anh ấy làm điều đó cùng với hai người anh em của mình. Các bạn luôn làm như vậy mà."
+    },
+    {
+        "text": "Zwei Wochen Urlaub am Strand Fällt euer Strandurlaub diesmal aus Nein unseren",
+        "start": 885.5399951171875,
+        "end": 905.9300170898438,
+        "wordTimings": [
+            {
+                "word": "zwei",
+                "start": 885.6199951171875,
+                "end": 886.0599975585938
+            },
+            {
+                "word": "Wochen",
+                "start": 886.0599975585938,
+                "end": 886.260009765625
+            },
+            {
+                "word": "Urlaub",
+                "start": 886.260009765625,
+                "end": 886.6400146484375
+            },
+            {
+                "word": "am",
+                "start": 886.6400146484375,
+                "end": 891.9199829101562
+            },
+            {
+                "word": "Strand",
+                "start": 891.9199829101562,
+                "end": 892.219970703125
+            },
+            {
+                "word": "Fällt",
+                "start": 895.1799926757812,
+                "end": 895.1799926757812
+            },
+            {
+                "word": "euer",
+                "start": 895.1799926757812,
+                "end": 895.6199951171875
+            },
+            {
+                "word": "Strandurlaub",
+                "start": 895.6199951171875,
+                "end": 896.4400024414062
+            },
+            {
+                "word": "diesmal",
+                "start": 896.4400024414062,
+                "end": 897
+            },
+            {
+                "word": "aus",
+                "start": 897,
+                "end": 897.4000244140625
+            },
+            {
+                "word": "Nein",
+                "start": 904.0800170898438,
+                "end": 905.0399780273438
+            },
+            {
+                "word": "unseren",
+                "start": 905.219970703125,
+                "end": 905.5800170898438
+            }
+        ],
+        "translationEn": "Two weeks of vacation at the beach Is your beach vacation canceled this time No, ours",
+        "translationVi": "Hai tuần nghỉ mát ở bãi biển. Kỳ nghỉ ở bãi biển của các bạn lần này có bị hủy không? Không, của chúng tôi thì không."
+    },
+    {
+        "text": "Strandurlaub machen wir dieses Jahr im November auf Sri Lanka Sehr geehrter",
+        "start": 905.5000170898437,
+        "end": 920.9900146484375,
+        "wordTimings": [
+            {
+                "word": "Strandurlaub",
+                "start": 905.5800170898438,
+                "end": 906.47998046875
+            },
+            {
+                "word": "machen",
+                "start": 906.47998046875,
+                "end": 906.719970703125
+            },
+            {
+                "word": "wir",
+                "start": 906.719970703125,
+                "end": 906.9600219726562
+            },
+            {
+                "word": "dieses",
+                "start": 906.9600219726562,
+                "end": 907.3599853515625
+            },
+            {
+                "word": "Jahr",
+                "start": 907.3599853515625,
+                "end": 907.5599975585938
+            },
+            {
+                "word": "im",
+                "start": 907.5599975585938,
+                "end": 914.760009765625
+            },
+            {
+                "word": "November",
+                "start": 914.760009765625,
+                "end": 915.219970703125
+            },
+            {
+                "word": "auf",
+                "start": 915.219970703125,
+                "end": 915.6199951171875
+            },
+            {
+                "word": "Sri",
+                "start": 915.6199951171875,
+                "end": 916.1199951171875
+            },
+            {
+                "word": "Lanka",
+                "start": 916.1199951171875,
+                "end": 916.4400024414062
+            },
+            {
+                "word": "Sehr",
+                "start": 920.0599975585938,
+                "end": 920.0599975585938
+            },
+            {
+                "word": "geehrter",
+                "start": 920.0599975585938,
+                "end": 920.6400146484375
+            }
+        ],
+        "translationEn": "We will be having a beach holiday this year in November in Sri Lanka. Dear Sir/Madam,",
+        "translationVi": "Chúng tôi sẽ đi nghỉ mát ở bãi biển vào tháng 11 năm nay tại Sri Lanka. Kính gửi"
+    },
+    {
+        "text": "Herr Schönborn Vor zwei Jahren habe ich in ihrer Firma ein viermonatiges",
+        "start": 920.5600146484375,
+        "end": 939.9699951171875,
+        "wordTimings": [
+            {
+                "word": "Herr",
+                "start": 920.6400146484375,
+                "end": 924.4400024414062
+            },
+            {
+                "word": "Schönborn",
+                "start": 924.4400024414062,
+                "end": 924.97998046875
+            },
+            {
+                "word": "Vor",
+                "start": 935.3200073242188,
+                "end": 936.1199951171875
+            },
+            {
+                "word": "zwei",
+                "start": 936.1199951171875,
+                "end": 936.5999755859375
+            },
+            {
+                "word": "Jahren",
+                "start": 936.5999755859375,
+                "end": 936.9600219726562
+            },
+            {
+                "word": "habe",
+                "start": 936.9600219726562,
+                "end": 937.280029296875
+            },
+            {
+                "word": "ich",
+                "start": 937.280029296875,
+                "end": 937.5800170898438
+            },
+            {
+                "word": "in",
+                "start": 937.5800170898438,
+                "end": 937.7000122070312
+            },
+            {
+                "word": "ihrer",
+                "start": 937.7000122070312,
+                "end": 937.97998046875
+            },
+            {
+                "word": "Firma",
+                "start": 937.97998046875,
+                "end": 938.4000244140625
+            },
+            {
+                "word": "ein",
+                "start": 938.4000244140625,
+                "end": 938.760009765625
+            },
+            {
+                "word": "viermonatiges",
+                "start": 938.760009765625,
+                "end": 939.6199951171875
+            }
+        ],
+        "translationEn": "Mr. Schönborn Two years ago, I completed a four-month internship at your company.",
+        "translationVi": "Ông Schönborn, hai năm trước tôi đã làm việc tại công ty của ông trong bốn tháng."
+    },
+    {
+        "text": "Praktikum gemacht das mir sehr gut gefallen hat Insbesondere die Arbeit in",
+        "start": 939.5399951171875,
+        "end": 947.130029296875,
+        "wordTimings": [
+            {
+                "word": "Praktikum",
+                "start": 939.6199951171875,
+                "end": 940.2999877929688
+            },
+            {
+                "word": "gemacht",
+                "start": 940.2999877929688,
+                "end": 940.8800048828125
+            },
+            {
+                "word": "das",
+                "start": 941.280029296875,
+                "end": 941.3800048828125
+            },
+            {
+                "word": "mir",
+                "start": 941.3800048828125,
+                "end": 941.6199951171875
+            },
+            {
+                "word": "sehr",
+                "start": 941.6199951171875,
+                "end": 941.9000244140625
+            },
+            {
+                "word": "gut",
+                "start": 941.9000244140625,
+                "end": 942.1599731445312
+            },
+            {
+                "word": "gefallen",
+                "start": 942.1599731445312,
+                "end": 942.5399780273438
+            },
+            {
+                "word": "hat",
+                "start": 942.5399780273438,
+                "end": 943.1599731445312
+            },
+            {
+                "word": "Insbesondere",
+                "start": 945.219970703125,
+                "end": 945.719970703125
+            },
+            {
+                "word": "die",
+                "start": 945.719970703125,
+                "end": 946.1400146484375
+            },
+            {
+                "word": "Arbeit",
+                "start": 946.1400146484375,
+                "end": 946.5
+            },
+            {
+                "word": "in",
+                "start": 946.5,
+                "end": 946.780029296875
+            }
+        ],
+        "translationEn": "I did an internship that I really enjoyed, especially the work in",
+        "translationVi": "Thực tập mà tôi đã làm rất thích, đặc biệt là công việc trong"
+    },
+    {
+        "text": "Dem internationalen Team die kollegiale Zusammenarbeit und die effektive Organisation des Projekts",
+        "start": 946.700029296875,
+        "end": 953.8899780273438,
+        "wordTimings": [
+            {
+                "word": "dem",
+                "start": 946.780029296875,
+                "end": 946.9400024414062
+            },
+            {
+                "word": "internationalen",
+                "start": 946.9400024414062,
+                "end": 948.3800048828125
+            },
+            {
+                "word": "Team",
+                "start": 948.3800048828125,
+                "end": 948.3800048828125
+            },
+            {
+                "word": "die",
+                "start": 948.780029296875,
+                "end": 948.97998046875
+            },
+            {
+                "word": "kollegiale",
+                "start": 948.97998046875,
+                "end": 949.5399780273438
+            },
+            {
+                "word": "Zusammenarbeit",
+                "start": 949.5399780273438,
+                "end": 950.5399780273438
+            },
+            {
+                "word": "und",
+                "start": 950.5399780273438,
+                "end": 950.8599853515625
+            },
+            {
+                "word": "die",
+                "start": 950.8599853515625,
+                "end": 951.0999755859375
+            },
+            {
+                "word": "effektive",
+                "start": 951.0999755859375,
+                "end": 951.6799926757812
+            },
+            {
+                "word": "Organisation",
+                "start": 951.6799926757812,
+                "end": 952.4400024414062
+            },
+            {
+                "word": "des",
+                "start": 952.4400024414062,
+                "end": 952.9199829101562
+            },
+            {
+                "word": "Projekts",
+                "start": 952.9199829101562,
+                "end": 953.5399780273438
+            }
+        ],
+        "translationEn": "The international team the collegial collaboration and the effective organization of the project.",
+        "translationVi": "Sự hợp tác đồng nghiệp và tổ chức hiệu quả dự án của đội ngũ quốc tế."
+    },
+    {
+        "text": "Haben mich für mein weiteres Studium bereichert Sie hatten mich damals aufgefordert",
+        "start": 953.4599780273437,
+        "end": 974.2500244140625,
+        "wordTimings": [
+            {
+                "word": "haben",
+                "start": 953.5399780273438,
+                "end": 953.8599853515625
+            },
+            {
+                "word": "mich",
+                "start": 953.8599853515625,
+                "end": 954.0599975585938
+            },
+            {
+                "word": "für",
+                "start": 954.0599975585938,
+                "end": 954.239990234375
+            },
+            {
+                "word": "mein",
+                "start": 954.239990234375,
+                "end": 954.4600219726562
+            },
+            {
+                "word": "weiteres",
+                "start": 954.4600219726562,
+                "end": 955.0399780273438
+            },
+            {
+                "word": "Studium",
+                "start": 955.0399780273438,
+                "end": 955.5
+            },
+            {
+                "word": "bereichert",
+                "start": 955.5,
+                "end": 956.2000122070312
+            },
+            {
+                "word": "Sie",
+                "start": 971.780029296875,
+                "end": 971.8599853515625
+            },
+            {
+                "word": "hatten",
+                "start": 971.8599853515625,
+                "end": 972.2000122070312
+            },
+            {
+                "word": "mich",
+                "start": 972.2000122070312,
+                "end": 972.5
+            },
+            {
+                "word": "damals",
+                "start": 972.5,
+                "end": 972.97998046875
+            },
+            {
+                "word": "aufgefordert",
+                "start": 972.97998046875,
+                "end": 973.9000244140625
+            }
+        ],
+        "translationEn": "They enriched me for my further studies. You had asked me back then.",
+        "translationVi": "Họ đã làm phong phú thêm cho việc học của tôi. Họ đã yêu cầu tôi vào thời điểm đó."
+    },
+    {
+        "text": "Mich nach dem Abschluss meines Studiums auf eine Stelle bei Ihnen zu",
+        "start": 974.3399829101562,
+        "end": 978.35,
+        "wordTimings": [
+            {
+                "word": "mich",
+                "start": 974.4199829101562,
+                "end": 974.4199829101562
+            },
+            {
+                "word": "nach",
+                "start": 974.4199829101562,
+                "end": 974.6400146484375
+            },
+            {
+                "word": "dem",
+                "start": 974.6400146484375,
+                "end": 974.8599853515625
+            },
+            {
+                "word": "Abschluss",
+                "start": 974.8599853515625,
+                "end": 975.3599853515625
+            },
+            {
+                "word": "meines",
+                "start": 975.3599853515625,
+                "end": 975.780029296875
+            },
+            {
+                "word": "Studiums",
+                "start": 975.780029296875,
+                "end": 976.3400268554688
+            },
+            {
+                "word": "auf",
+                "start": 976.3400268554688,
+                "end": 976.5599975585938
+            },
+            {
+                "word": "eine",
+                "start": 976.5599975585938,
+                "end": 976.8800048828125
+            },
+            {
+                "word": "Stelle",
+                "start": 976.8800048828125,
+                "end": 977.1400146484375
+            },
+            {
+                "word": "bei",
+                "start": 977.1400146484375,
+                "end": 977.4199829101562
+            },
+            {
+                "word": "Ihnen",
+                "start": 977.4199829101562,
+                "end": 977.6599731445312
+            },
+            {
+                "word": "zu",
+                "start": 977.6599731445312,
+                "end": 978
+            }
+        ],
+        "translationEn": "I am applying for a position with you after completing my studies.",
+        "translationVi": "Tôi muốn nộp đơn xin việc tại công ty của bạn sau khi tốt nghiệp."
+    },
+    {
+        "text": "Bewerben Jetzt habe ich mein Informatikstudium mit dem Schwerpunkt Hardware Systeme mit",
+        "start": 977.92,
+        "end": 994.3899780273438,
+        "wordTimings": [
+            {
+                "word": "bewerben",
+                "start": 978,
+                "end": 978.4199829101562
+            },
+            {
+                "word": "Jetzt",
+                "start": 988.760009765625,
+                "end": 989.3400268554688
+            },
+            {
+                "word": "habe",
+                "start": 989.3400268554688,
+                "end": 989.719970703125
+            },
+            {
+                "word": "ich",
+                "start": 989.719970703125,
+                "end": 989.97998046875
+            },
+            {
+                "word": "mein",
+                "start": 989.97998046875,
+                "end": 990.1799926757812
+            },
+            {
+                "word": "Informatikstudium",
+                "start": 990.1799926757812,
+                "end": 991.5
+            },
+            {
+                "word": "mit",
+                "start": 991.5,
+                "end": 991.719970703125
+            },
+            {
+                "word": "dem",
+                "start": 991.719970703125,
+                "end": 992.02001953125
+            },
+            {
+                "word": "Schwerpunkt",
+                "start": 992.02001953125,
+                "end": 992.5800170898438
+            },
+            {
+                "word": "Hardware",
+                "start": 992.5800170898438,
+                "end": 993.219970703125
+            },
+            {
+                "word": "Systeme",
+                "start": 993.219970703125,
+                "end": 993.9000244140625
+            },
+            {
+                "word": "mit",
+                "start": 993.9000244140625,
+                "end": 994.0399780273438
+            }
+        ],
+        "translationEn": "Apply Now I have completed my computer science studies with a focus on hardware systems with",
+        "translationVi": "Nộp đơn Bây giờ tôi đã hoàn thành chương trình học ngành Công nghệ Thông tin với chuyên ngành Hệ thống Phần cứng."
+    },
+    {
+        "text": "Der Node 1 2 abgeschlossen Und ich möchte mich bei Ihnen auf",
+        "start": 993.9599780273437,
+        "end": 1009.4300170898438,
+        "wordTimings": [
+            {
+                "word": "der",
+                "start": 994.0399780273438,
+                "end": 994.260009765625
+            },
+            {
+                "word": "Node",
+                "start": 994.260009765625,
+                "end": 994.4600219726562
+            },
+            {
+                "word": "1",
+                "start": 994.4600219726562,
+                "end": 995
+            },
+            {
+                "word": "2",
+                "start": 995,
+                "end": 995.2999877929688
+            },
+            {
+                "word": "abgeschlossen",
+                "start": 995.2999877929688,
+                "end": 996.0599975585938
+            },
+            {
+                "word": "Und",
+                "start": 1007.3599853515625,
+                "end": 1007.4400024414062
+            },
+            {
+                "word": "ich",
+                "start": 1007.4400024414062,
+                "end": 1007.7000122070312
+            },
+            {
+                "word": "möchte",
+                "start": 1007.7000122070312,
+                "end": 1007.9400024414062
+            },
+            {
+                "word": "mich",
+                "start": 1007.9400024414062,
+                "end": 1008.219970703125
+            },
+            {
+                "word": "bei",
+                "start": 1008.219970703125,
+                "end": 1008.52001953125
+            },
+            {
+                "word": "Ihnen",
+                "start": 1008.52001953125,
+                "end": 1008.7999877929688
+            },
+            {
+                "word": "auf",
+                "start": 1008.7999877929688,
+                "end": 1009.0800170898438
+            }
+        ],
+        "translationEn": "Node 1 2 completed and I would like to address you on",
+        "translationVi": "Node 1 2 đã hoàn thành và tôi muốn cảm ơn bạn."
+    },
+    {
+        "text": "Die Stelle als Hardware Entwickler die auf Ihrer Homepage ausgeschrieben ist bewerben",
+        "start": 1009.0000170898437,
+        "end": 1015.0099731445313,
+        "wordTimings": [
+            {
+                "word": "die",
+                "start": 1009.0800170898438,
+                "end": 1009.3400268554688
+            },
+            {
+                "word": "Stelle",
+                "start": 1009.3400268554688,
+                "end": 1009.5599975585938
+            },
+            {
+                "word": "als",
+                "start": 1009.5599975585938,
+                "end": 1009.9600219726562
+            },
+            {
+                "word": "Hardware",
+                "start": 1009.9600219726562,
+                "end": 1010.52001953125
+            },
+            {
+                "word": "Entwickler",
+                "start": 1010.52001953125,
+                "end": 1011.1400146484375
+            },
+            {
+                "word": "die",
+                "start": 1011.4400024414062,
+                "end": 1011.6599731445312
+            },
+            {
+                "word": "auf",
+                "start": 1011.6599731445312,
+                "end": 1011.8599853515625
+            },
+            {
+                "word": "Ihrer",
+                "start": 1011.8599853515625,
+                "end": 1012.0800170898438
+            },
+            {
+                "word": "Homepage",
+                "start": 1012.0800170898438,
+                "end": 1012.6799926757812
+            },
+            {
+                "word": "ausgeschrieben",
+                "start": 1012.6799926757812,
+                "end": 1013.4600219726562
+            },
+            {
+                "word": "ist",
+                "start": 1013.4600219726562,
+                "end": 1013.52001953125
+            },
+            {
+                "word": "bewerben",
+                "start": 1014.1500244140625,
+                "end": 1014.6599731445312
+            }
+        ],
+        "translationEn": "I would like to apply for the position of Hardware Developer that is advertised on your homepage.",
+        "translationVi": "Nộp đơn cho vị trí Nhà phát triển phần cứng được đăng trên trang web của bạn."
+    },
+    {
+        "text": "Auf einer solchen Stelle kann ich auch die Kenntnisse und Erfahrungen aus",
+        "start": 1025.19001953125,
+        "end": 1038.5100341796874,
+        "wordTimings": [
+            {
+                "word": "Auf",
+                "start": 1025.27001953125,
+                "end": 1025.780029296875
+            },
+            {
+                "word": "einer",
+                "start": 1025.780029296875,
+                "end": 1026.0999755859375
+            },
+            {
+                "word": "solchen",
+                "start": 1026.0999755859375,
+                "end": 1026.6400146484375
+            },
+            {
+                "word": "Stelle",
+                "start": 1026.6400146484375,
+                "end": 1026.9599609375
+            },
+            {
+                "word": "kann",
+                "start": 1026.9599609375,
+                "end": 1027.260009765625
+            },
+            {
+                "word": "ich",
+                "start": 1027.260009765625,
+                "end": 1027.4200439453125
+            },
+            {
+                "word": "auch",
+                "start": 1027.4200439453125,
+                "end": 1027.699951171875
+            },
+            {
+                "word": "die",
+                "start": 1027.699951171875,
+                "end": 1036.219970703125
+            },
+            {
+                "word": "Kenntnisse",
+                "start": 1036.219970703125,
+                "end": 1036.699951171875
+            },
+            {
+                "word": "und",
+                "start": 1036.699951171875,
+                "end": 1037.1800537109375
+            },
+            {
+                "word": "Erfahrungen",
+                "start": 1037.1800537109375,
+                "end": 1037.6199951171875
+            },
+            {
+                "word": "aus",
+                "start": 1037.6199951171875,
+                "end": 1038.1600341796875
+            }
+        ],
+        "translationEn": "In such a position, I can also apply the knowledge and experience from",
+        "translationVi": "Tại một vị trí như vậy, tôi cũng có thể áp dụng kiến thức và kinh nghiệm từ"
+    },
+    {
+        "text": "Meiner Bachelorarbeit anwenden Über eine Einladung zu einem Vorstellungsgespräch würde ich mich",
+        "start": 1038.0800341796876,
+        "end": 1046.41005859375,
+        "wordTimings": [
+            {
+                "word": "meiner",
+                "start": 1038.1600341796875,
+                "end": 1038.4200439453125
+            },
+            {
+                "word": "Bachelorarbeit",
+                "start": 1038.4200439453125,
+                "end": 1039.3399658203125
+            },
+            {
+                "word": "anwenden",
+                "start": 1039.3399658203125,
+                "end": 1039.8800048828125
+            },
+            {
+                "word": "Über",
+                "start": 1041.4200439453125,
+                "end": 1042.3399658203125
+            },
+            {
+                "word": "eine",
+                "start": 1042.3399658203125,
+                "end": 1042.6600341796875
+            },
+            {
+                "word": "Einladung",
+                "start": 1042.6600341796875,
+                "end": 1043.3399658203125
+            },
+            {
+                "word": "zu",
+                "start": 1043.3399658203125,
+                "end": 1043.6199951171875
+            },
+            {
+                "word": "einem",
+                "start": 1043.6199951171875,
+                "end": 1043.9200439453125
+            },
+            {
+                "word": "Vorstellungsgespräch",
+                "start": 1043.9200439453125,
+                "end": 1045.3800048828125
+            },
+            {
+                "word": "würde",
+                "start": 1045.3800048828125,
+                "end": 1045.6400146484375
+            },
+            {
+                "word": "ich",
+                "start": 1045.6400146484375,
+                "end": 1045.8800048828125
+            },
+            {
+                "word": "mich",
+                "start": 1045.8800048828125,
+                "end": 1046.06005859375
+            }
+        ],
+        "translationEn": "I would be pleased to receive an invitation to a job interview regarding my bachelor's thesis.",
+        "translationVi": "Tôi rất vui mừng về một lời mời phỏng vấn cho luận văn tốt nghiệp của mình."
+    },
+    {
+        "text": "Sehr freuen Mit freundlichen Grüßen Laila Badri",
+        "start": 1045.98005859375,
+        "end": 1060.37001953125,
+        "wordTimings": [
+            {
+                "word": "sehr",
+                "start": 1046.06005859375,
+                "end": 1053.1199951171875
+            },
+            {
+                "word": "freuen",
+                "start": 1053.1199951171875,
+                "end": 1053.43994140625
+            },
+            {
+                "word": "Mit",
+                "start": 1055.4000244140625,
+                "end": 1055.5999755859375
+            },
+            {
+                "word": "freundlichen",
+                "start": 1055.5999755859375,
+                "end": 1056.239990234375
+            },
+            {
+                "word": "Grüßen",
+                "start": 1056.239990234375,
+                "end": 1057.239990234375
+            },
+            {
+                "word": "Laila",
+                "start": 1059.0999755859375,
+                "end": 1059.47998046875
+            },
+            {
+                "word": "Badri",
+                "start": 1059.47998046875,
+                "end": 1060.02001953125
+            }
+        ],
+        "translationEn": "Very pleased. Best regards, Laila Badri.",
+        "translationVi": "Rất vui được gặp. Trân trọng, Laila Badri"
+    }
+]
