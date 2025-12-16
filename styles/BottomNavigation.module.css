@@ -6,7 +6,7 @@
   background: #f8f9fa;
   border-top: 1px solid #e0e0e0;
   z-index: 1000;
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-bottom: 0;
 }
 
 .navContainer {
@@ -73,7 +73,7 @@
 /* iOS specific styles */
 @supports (-webkit-touch-callout: none) {
   .bottomNav {
-    padding-bottom: max(env(safe-area-inset-bottom), 20px);
+    padding-bottom: 0;
   }
 }
 

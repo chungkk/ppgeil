@@ -53,11 +53,11 @@
   --spacing-lg: 24px;
   --spacing-xl: 32px;
 
-  /* iOS Safe Area Insets - For devices with notch/Dynamic Island */
-  --safe-area-inset-top: env(safe-area-inset-top, 0px);
-  --safe-area-inset-right: env(safe-area-inset-right, 0px);
-  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
-  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+  /* iOS Safe Area Insets - Disabled */
+  --safe-area-inset-top: 0px;
+  --safe-area-inset-right: 0px;
+  --safe-area-inset-bottom: 0px;
+  --safe-area-inset-left: 0px;
 
   /* Touch target minimum size (Apple HIG: 44x44px) */
   --touch-target-min: 44px;
@@ -763,7 +763,7 @@ button:focus-visible {
   /* Add padding when bottom nav is present */
   body:has(.bottom-nav) .main-container,
   body:has(.bottom-nav) .App > div:first-child {
-    padding-bottom: calc(70px + env(safe-area-inset-bottom, 20px));
+    padding-bottom: 70px;
   }
 
   /* Ensure content doesn't hide behind bottom nav */
@@ -774,6 +774,6 @@ button:focus-visible {
   /* Adjust scrolling behavior for iOS */
   .horizontal-scroll {
     -webkit-overflow-scrolling: touch;
-    scroll-padding-bottom: calc(70px + env(safe-area-inset-bottom, 20px));
+    scroll-padding-bottom: 70px;
   }
 }
