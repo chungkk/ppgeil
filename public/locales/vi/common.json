@@ -28,6 +28,18 @@
       "register": "Đăng ký"
     }
   },
+  "dailyPhrase": {
+    "title": "Cụm từ danh-động tiếng Đức hôm nay",
+    "back": "Quay lại",
+    "previousDay": "← Hôm trước",
+    "today": "Hôm nay",
+    "nextDay": "Hôm sau →",
+    "example": "Ví dụ:",
+    "detailedExplanation": "Giải thích chi tiết",
+    "loadingExplanation": "Đang tải giải thích...",
+    "noExplanation": "Chưa có giải thích chi tiết.",
+    "loadExplanation": "Tải giải thích"
+  },
   "footer": {
     "description": "Cải thiện khả năng phát âm và nói tiếng Đức của bạn với phương pháp shadowing và chính tả hiện đại.",
     "sections": {

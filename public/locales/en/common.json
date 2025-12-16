@@ -28,6 +28,18 @@
       "register": "Register"
     }
   },
+  "dailyPhrase": {
+    "title": "German Noun-Verb Combination of the Day",
+    "back": "Back",
+    "previousDay": "← Previous Day",
+    "today": "Today",
+    "nextDay": "Next Day →",
+    "example": "Example:",
+    "detailedExplanation": "Detailed Explanation",
+    "loadingExplanation": "Loading explanation...",
+    "noExplanation": "No detailed explanation available.",
+    "loadExplanation": "Load Explanation"
+  },
   "footer": {
     "description": "Improve your German pronunciation and speaking skills with modern shadowing and dictation methods.",
     "sections": {

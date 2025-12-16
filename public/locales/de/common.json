@@ -28,6 +28,18 @@
       "register": "Registrieren"
     }
   },
+  "dailyPhrase": {
+    "title": "Nomen-Verb-Verbindung des Tages",
+    "back": "Zurück",
+    "previousDay": "← Vorheriger Tag",
+    "today": "Heute",
+    "nextDay": "Nächster Tag →",
+    "example": "Beispiel:",
+    "detailedExplanation": "Detaillierte Erklärung",
+    "loadingExplanation": "Erklärung wird geladen...",
+    "noExplanation": "Keine detaillierte Erklärung verfügbar.",
+    "loadExplanation": "Erklärung laden"
+  },
   "footer": {
     "description": "Verbessern Sie Ihre deutsche Aussprache und Sprechfähigkeiten mit modernen Shadowing- und Diktatmethoden.",
     "sections": {

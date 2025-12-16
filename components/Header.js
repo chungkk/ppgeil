@@ -10,7 +10,6 @@ import { useNotifications } from '../context/NotificationContext';
 
 import { getDefaultAvatar } from '../lib/helpers/avatar';
 import { getTodaysPhrase } from '../lib/data/nomenVerbVerbindungen';
-import phraseExplanationsCache from '../lib/data/phraseExplanations.json';
 import NotificationDropdown from './NotificationDropdown';
 import LoginModal from './LoginModal';
 import styles from '../styles/Header.module.css';
@@ -65,70 +64,14 @@ const Header = () => {
   const userMenuRef = useRef(null);
   const languageMenuRef = useRef(null);
   const notificationMenuRef = useRef(null);
-  const phraseMenuRef = useRef(null);
   const router = useRouter();
   const { user, logout, userPoints, fetchUserPoints } = useAuth();
   const { theme, toggleTheme, currentTheme } = useTheme();
   const { currentLanguage, changeLanguage, languages, currentLanguageInfo } = useLanguage();
   const { unreadCount, fetchUnreadCount } = useNotifications();
-  const [showPhraseTooltip, setShowPhraseTooltip] = useState(false);
-  const [phraseExplanation, setPhraseExplanation] = useState(null);
-  const [loadingExplanation, setLoadingExplanation] = useState(false);
   
   // Get today's Nomen-Verb-Verbindung
   const todaysPhrase = useMemo(() => getTodaysPhrase(), []);
-  
-  // Lock body scroll when phrase tooltip is open
-  useEffect(() => {
-    if (showPhraseTooltip) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [showPhraseTooltip]);
-  
-  // Fetch detailed explanation - check cache first, then fallback to OpenAI
-  const fetchPhraseExplanation = useCallback(async () => {
-    if (phraseExplanation || loadingExplanation) return;
-    
-    const targetLang = user?.nativeLanguage || 'vi';
-    
-    // Check cache first
-    const cachedExplanation = phraseExplanationsCache[todaysPhrase.phrase]?.[targetLang];
-    if (cachedExplanation) {
-      setPhraseExplanation(cachedExplanation);
-      return;
-    }
-    
-    // Fallback to OpenAI API if not in cache
-    setLoadingExplanation(true);
-    try {
-      const response = await fetch('/api/explain-phrase', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          phrase: todaysPhrase.phrase,
-          meaning: todaysPhrase.meaning,
-          example: todaysPhrase.example,
-          targetLang,
-        }),
-      });
-      
-      if (response.ok) {
-        const data = await response.json();
-        setPhraseExplanation(data.explanation);
-      }
-    } catch (error) {
-      console.error('Failed to fetch phrase explanation:', error);
-    } finally {
-      setLoadingExplanation(false);
-    }
-  }, [todaysPhrase, phraseExplanation, loadingExplanation, user?.nativeLanguage]);
-  
-
 
   // Detect scroll for transparent header
   useEffect(() => {
@@ -225,19 +168,16 @@ const Header = () => {
       if (notificationMenuRef.current && !notificationMenuRef.current.contains(event.target)) {
         dispatch({ type: 'SET_NOTIFICATION_DROPDOWN', payload: false });
       }
-      if (phraseMenuRef.current && !phraseMenuRef.current.contains(event.target)) {
-        setShowPhraseTooltip(false);
-      }
     };
 
-    if (state.userMenuOpen || state.languageMenuOpen || state.notificationDropdownOpen || showPhraseTooltip) {
+    if (state.userMenuOpen || state.languageMenuOpen || state.notificationDropdownOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [state.userMenuOpen, state.languageMenuOpen, state.notificationDropdownOpen, showPhraseTooltip]);
+  }, [state.userMenuOpen, state.languageMenuOpen, state.notificationDropdownOpen]);
 
   const toggleUserMenu = () => {
     dispatch({ type: 'SET_USER_MENU', payload: !state.userMenuOpen });
@@ -261,69 +201,15 @@ const Header = () => {
         </Link>
 
         <nav className={`${styles.nav} ${state.mobileMenuOpen ? styles.open : ''}`}>
-          {/* Daily Nomen-Verb-Verbindung */}
-          <div 
-            ref={phraseMenuRef}
+          {/* Daily Nomen-Verb-Verbindung - Click to view full page */}
+          <Link
+            href="/daily-phrase"
             className={styles.dailyPhraseContainer}
-            onClick={() => {
-              if (!showPhraseTooltip) {
-                setShowPhraseTooltip(true);
-                fetchPhraseExplanation();
-              } else {
-                setShowPhraseTooltip(false);
-              }
-            }}
+            title="Zur Daily Phrase Seite"
           >
             <span className={styles.dailyPhraseIcon}>📚</span>
             <span className={styles.dailyPhraseText}>{todaysPhrase.phrase}</span>
-            
-            {showPhraseTooltip && (
-              <div className={styles.dailyPhraseTooltip}>
-                <div className={styles.phraseTooltipTitle}>Nomen-Verb-Verbindung des Tages</div>
-                <div className={styles.phraseTooltipPhrase}>{todaysPhrase.phrase}</div>
-                <div className={styles.phraseTooltipMeaning}>= {todaysPhrase.meaning}</div>
-                
-                {loadingExplanation && (
-                  <div className={styles.phraseLoading}>
-                    <span className={styles.loadingSpinner}></span>
-                    Đang tải giải thích...
-                  </div>
-                )}
-                
-                {phraseExplanation && (
-                  <div className={styles.phraseExplanation}>
-                    {phraseExplanation.split('\n').map((line, index) => {
-                      if (line.startsWith('**') && line.includes(':**')) {
-                        const [title, content] = line.split(':**');
-                        return (
-                          <div key={index} className={styles.explanationSection}>
-                            <span className={styles.explanationTitle}>{title.replace(/\*\*/g, '')}:</span>
-                            <span className={styles.explanationContent}>{content}</span>
-                          </div>
-                        );
-                      }
-                      if (line.trim().match(/^\d+\./)) {
-                        return <div key={index} className={styles.explanationExample}>{line}</div>;
-                      }
-                      if (line.trim()) {
-                        return <div key={index} className={styles.explanationLine}>{line}</div>;
-                      }
-                      return null;
-                    })}
-                  </div>
-                )}
-                
-                {!phraseExplanation && !loadingExplanation && (
-                  <>
-                    <div className={styles.phraseTooltipTranslation}>
-                      {(user?.nativeLanguage || 'vi') === 'vi' ? `🇻🇳 ${todaysPhrase.vi}` : `🇬🇧 ${todaysPhrase.en}`}
-                    </div>
-                    <div className={styles.phraseTooltipExample}>&ldquo;{todaysPhrase.example}&rdquo;</div>
-                  </>
-                )}
-              </div>
-            )}
-          </div>
+          </Link>
           
           {navLinks.map((link) => (
             <Link
