@@ -37,9 +37,16 @@ const DictationVideoSection = ({
   currentSentence,
   onVoiceRecordingComplete,
   onComparisonResultChange,
-  youtubePlayerRef
+  youtubePlayerRef,
+  // Settings props
+  showTranslation,
+  onToggleTranslation,
+  savedVocabularyCount,
+  onShowVocabulary
 }) => {
   const { t } = useTranslation();
+  const [showSettingsMenu, setShowSettingsMenu] = React.useState(false);
+  const settingsRef = React.useRef(null);
   const [isRecording, setIsRecording] = React.useState(false);
   const [isProcessing, setIsProcessing] = React.useState(false);
   const [recordedBlob, setRecordedBlob] = React.useState(null);
@@ -48,6 +55,30 @@ const DictationVideoSection = ({
   const mediaRecorderRef = React.useRef(null);
   const audioChunksRef = React.useRef([]);
   const playbackRef = React.useRef(null);
+
+  // Close settings menu when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (settingsRef.current && !settingsRef.current.contains(event.target)) {
+        setShowSettingsMenu(false);
+      }
+    };
+    if (showSettingsMenu) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [showSettingsMenu]);
+
+  const handleSpeedClick = () => {
+    const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
+    const currentIndex = speeds.indexOf(playbackSpeed || 1);
+    const nextIndex = (currentIndex + 1) % speeds.length;
+    onSpeedChange(speeds[nextIndex]);
+  };
 
   // Start recording
   const startRecording = async () => {
@@ -416,6 +447,87 @@ const DictationVideoSection = ({
         <div className={styles.videoTitleBox}>
           <h3>{lesson.displayTitle || lesson.title}</h3>
         </div>
+
+        {/* Settings Button (Mobile Only) - Below Video */}
+        {isMobile && (
+          <div className={styles.mobileSettingsContainer} ref={settingsRef}>
+            <button 
+              className={`${styles.settingsButtonMobile} ${showSettingsMenu ? styles.settingsButtonActive : ''}`}
+              onClick={() => setShowSettingsMenu(!showSettingsMenu)}
+              title="Cài đặt"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <span className={styles.settingsButtonText}>Cài đặt</span>
+            </button>
+
+            {/* Settings dropdown menu */}
+            {showSettingsMenu && (
+              <div className={styles.settingsDropdownMobile}>
+                {/* Translation toggle */}
+                {onToggleTranslation && (
+                  <button 
+                    className={`${styles.settingsMenuItem} ${showTranslation ? styles.settingsMenuItemActive : ''}`}
+                    onClick={() => {
+                      onToggleTranslation();
+                    }}
+                  >
+                    <span className={styles.settingsMenuIcon}>🌐</span>
+                    <span className={styles.settingsMenuText}>Hiện dịch</span>
+                    <span className={styles.settingsMenuToggle}>
+                      {showTranslation ? '✓' : ''}
+                    </span>
+                  </button>
+                )}
+                
+                {/* Speed control */}
+                {onSpeedChange && (
+                  <button 
+                    className={styles.settingsMenuItem}
+                    onClick={handleSpeedClick}
+                  >
+                    <span className={styles.settingsMenuIcon}>⚡</span>
+                    <span className={styles.settingsMenuText}>Tốc độ</span>
+                    <span className={styles.settingsMenuValue}>{playbackSpeed || 1}x</span>
+                  </button>
+                )}
+                
+                {/* Auto stop toggle */}
+                {onAutoStopChange && (
+                  <button 
+                    className={`${styles.settingsMenuItem} ${autoStop ? styles.settingsMenuItemActive : ''}`}
+                    onClick={() => onAutoStopChange(!autoStop)}
+                  >
+                    <span className={styles.settingsMenuIcon}>⏸️</span>
+                    <span className={styles.settingsMenuText}>Auto stop</span>
+                    <span className={styles.settingsMenuToggle}>
+                      {autoStop ? '✓' : ''}
+                    </span>
+                  </button>
+                )}
+                
+                {/* Vocabulary button */}
+                {onShowVocabulary && (
+                  <button 
+                    className={styles.settingsMenuItem}
+                    onClick={() => {
+                      onShowVocabulary();
+                      setShowSettingsMenu(false);
+                    }}
+                  >
+                    <span className={styles.settingsMenuIcon}>📚</span>
+                    <span className={styles.settingsMenuText}>Từ vựng</span>
+                    {savedVocabularyCount > 0 && (
+                      <span className={styles.settingsMenuValue}>{savedVocabularyCount}</span>
+                    )}
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

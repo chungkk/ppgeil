@@ -3178,6 +3178,12 @@ const DictationPageContent = () => {
             onNextSentence={goToNextSentence}
             playbackSpeed={playbackSpeed}
             onSpeedChange={handleSpeedChange}
+            currentSentence={transcriptData[currentSentenceIndex]}
+            youtubePlayerRef={youtubePlayerRef}
+            showTranslation={false}
+            onToggleTranslation={null}
+            savedVocabularyCount={savedWords.length}
+            onShowVocabulary={() => setShowVocabPopup(true)}
           />
 
           {/* Middle Column - Dictation Area */}
