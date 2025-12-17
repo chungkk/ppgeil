@@ -140,29 +140,4 @@ export const LessonThumbnail = (props) => (
   />
 );
 
-/**
- * Preset for hero images (above the fold)
- */
-export const HeroImage = (props) => (
-  <OptimizedImage
-    priority={true}
-    quality={90}
-    sizes="100vw"
-    {...props}
-  />
-);
-
-/**
- * Preset for avatar images
- */
-export const AvatarImage = (props) => (
-  <OptimizedImage
-    width={64}
-    height={64}
-    quality={75}
-    sizes="64px"
-    {...props}
-  />
-);
-
 export default OptimizedImage;

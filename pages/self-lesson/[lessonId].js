@@ -1118,55 +1118,48 @@ const DictationPageContent = () => {
     return sortedTranscriptIndices;
   }, [sortedTranscriptIndices]);
 
-  // LAZY LOADING: Calculate visible slide range (only render 3 slides: prev, current, next)
-  const lazySlideRange = useMemo(() => {
+  // OPTIMIZED: Render window - load slides within viewport + buffer
+  const renderWindow = useMemo(() => {
     if (!isMobile || mobileVisibleIndices.length === 0) {
-      return { start: 0, end: mobileVisibleIndices.length };
+      return { visibleIndices: mobileVisibleIndices, startOffset: 0 };
     }
 
     const currentSlideIndex = mobileVisibleIndices.indexOf(currentSentenceIndex);
     
-    // If current sentence not in visible indices, render all (fallback)
     if (currentSlideIndex === -1) {
-      console.log('⚠️ Current sentence not in visible indices, rendering all slides');
-      return { start: 0, end: mobileVisibleIndices.length };
+      return { visibleIndices: mobileVisibleIndices, startOffset: 0 };
     }
 
-    // Calculate range: [currentIndex - 1, currentIndex, currentIndex + 1]
-    const start = Math.max(0, currentSlideIndex - 1);
-    const end = Math.min(mobileVisibleIndices.length, currentSlideIndex + 2);
+    // Render buffer: 2 slides before, current, 2 slides after (total 5 slides)
+    const bufferSize = 2;
+    const start = Math.max(0, currentSlideIndex - bufferSize);
+    const end = Math.min(mobileVisibleIndices.length, currentSlideIndex + bufferSize + 1);
 
-    return { start, end };
+    return { 
+      visibleIndices: mobileVisibleIndices.slice(start, end),
+      startOffset: start
+    };
   }, [isMobile, mobileVisibleIndices, currentSentenceIndex]);
 
-  // Lazy loading enabled slides (only the ones to render)
-  const lazySlidesToRender = useMemo(() => {
-    return mobileVisibleIndices.slice(lazySlideRange.start, lazySlideRange.end);
-  }, [mobileVisibleIndices, lazySlideRange]);
-
-  // Auto-scroll mobile dictation slides to current sentence (with lazy loading support)
+  // Auto-scroll mobile dictation slides to current sentence
   useEffect(() => {
     if (isMobile && dictationSlidesRef.current && transcriptData.length > 0) {
       const container = dictationSlidesRef.current;
       const slideIndex = mobileVisibleIndices.indexOf(currentSentenceIndex);
 
       if (slideIndex !== -1) {
-        // Find the actual rendered slide by data-slide-index attribute
-        const targetSlide = container.querySelector(`[data-slide-index="${slideIndex}"]`);
+        const targetSlide = container.querySelector(`[data-sentence-id="${currentSentenceIndex}"]`);
 
         if (targetSlide) {
-          // Scroll to center the slide
           targetSlide.scrollIntoView({
             behavior: 'smooth',
             block: 'nearest',
             inline: 'center'
           });
-        } else {
-          console.warn('⚠️ Target slide not found in lazy-loaded range');
         }
       }
     }
-  }, [currentSentenceIndex, isMobile, mobileVisibleIndices, transcriptData.length, lazySlideRange]);
+  }, [currentSentenceIndex, isMobile, mobileVisibleIndices, transcriptData.length]);
 
   // Sync currentSentenceIndex when user manually scrolls slides
   useEffect(() => {
@@ -3212,25 +3205,12 @@ const DictationPageContent = () => {
                     className={styles.dictationSlides}
                     ref={dictationSlidesRef}
                   >
-                    {/* Spacer for slides before lazy range */}
-                    {lazySlideRange.start > 0 && (
-                      <div 
-                        className={styles.slidesSpacer}
-                        style={{ 
-                          width: `calc(${lazySlideRange.start} * (94% + 12px))`,
-                          flexShrink: 0
-                        }}
-                      />
-                    )}
-
-                    {/* Render only lazy-loaded slides */}
-                    {lazySlidesToRender.map((originalIndex, arrayIndex) => {
+                    {renderWindow.visibleIndices.map((originalIndex) => {
                       const sentence = transcriptData[originalIndex];
                       const isCompleted = completedSentences.includes(originalIndex);
                       const sentenceWordsCompleted = completedWords[originalIndex] || {};
                       const isActive = originalIndex === currentSentenceIndex;
                       
-                      // Generate processed text for this sentence
                       const sentenceProcessedText = processLevelUp(
                         sentence.text,
                         isCompleted,
@@ -3241,7 +3221,7 @@ const DictationPageContent = () => {
                       return (
                         <div
                           key={originalIndex}
-                          data-slide-index={lazySlideRange.start + arrayIndex}
+                          data-sentence-id={originalIndex}
                           className={`${styles.dictationSlide} ${isActive ? styles.dictationSlideActive : ''}`}
                           onClick={() => {
                             if (!isActive) {
@@ -3477,17 +3457,6 @@ const DictationPageContent = () => {
                         </div>
                       );
                     })}
-
-                    {/* Spacer for slides after lazy range */}
-                    {lazySlideRange.end < mobileVisibleIndices.length && (
-                      <div 
-                        className={styles.slidesSpacer}
-                        style={{ 
-                          width: `calc(${mobileVisibleIndices.length - lazySlideRange.end} * (94% + 12px))`,
-                          flexShrink: 0
-                        }}
-                      />
-                    )}
                   </div>
                 </div>
               ) : (

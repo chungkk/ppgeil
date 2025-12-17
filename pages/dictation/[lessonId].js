@@ -1076,62 +1076,54 @@ const DictationPageContent = () => {
     return sortedTranscriptIndices;
   }, [sortedTranscriptIndices]);
 
-  // LAZY LOADING: Calculate visible slide range (only render 3 slides: prev, current, next)
-  const lazySlideRange = useMemo(() => {
+  // OPTIMIZED: Render window - load slides within viewport + buffer
+  const renderWindow = useMemo(() => {
     if (!isMobile || mobileVisibleIndices.length === 0) {
-      return { start: 0, end: mobileVisibleIndices.length };
+      return { visibleIndices: mobileVisibleIndices, startOffset: 0 };
     }
 
     const currentSlideIndex = mobileVisibleIndices.indexOf(currentSentenceIndex);
     
-    // If current sentence not in visible indices, render all (fallback)
     if (currentSlideIndex === -1) {
-      return { start: 0, end: mobileVisibleIndices.length };
+      return { visibleIndices: mobileVisibleIndices, startOffset: 0 };
     }
 
-    // Calculate range: [currentIndex - 1, currentIndex, currentIndex + 1]
-    const start = Math.max(0, currentSlideIndex - 1);
-    const end = Math.min(mobileVisibleIndices.length, currentSlideIndex + 2);
+    // Render buffer: 2 slides before, current, 2 slides after (total 5 slides)
+    const bufferSize = 2;
+    const start = Math.max(0, currentSlideIndex - bufferSize);
+    const end = Math.min(mobileVisibleIndices.length, currentSlideIndex + bufferSize + 1);
 
-    return { start, end };
+    return { 
+      visibleIndices: mobileVisibleIndices.slice(start, end),
+      startOffset: start
+    };
   }, [isMobile, mobileVisibleIndices, currentSentenceIndex]);
 
-  // Lazy loading enabled slides (only the ones to render)
-  const lazySlidesToRender = useMemo(() => {
-    return mobileVisibleIndices.slice(lazySlideRange.start, lazySlideRange.end);
-  }, [mobileVisibleIndices, lazySlideRange]);
-
-  // Auto-scroll mobile dictation slides to current sentence (with lazy loading support)
+  // Auto-scroll mobile dictation slides to current sentence
   useEffect(() => {
     if (isMobile && dictationSlidesRef.current && transcriptData.length > 0) {
       const container = dictationSlidesRef.current;
       const slideIndex = mobileVisibleIndices.indexOf(currentSentenceIndex);
 
       if (slideIndex !== -1) {
-        // Find the actual rendered slide by data-slide-index attribute
-        const targetSlide = container.querySelector(`[data-slide-index="${slideIndex}"]`);
+        const targetSlide = container.querySelector(`[data-sentence-id="${currentSentenceIndex}"]`);
 
         if (targetSlide) {
-          // Mark as programmatic scroll to prevent handleScroll from interfering
           isProgrammaticScrollRef.current = true;
           
-          // Scroll to center the slide
           targetSlide.scrollIntoView({
             behavior: 'smooth',
             block: 'nearest',
             inline: 'center'
           });
           
-          // Clear flag after scroll animation completes
           setTimeout(() => {
             isProgrammaticScrollRef.current = false;
           }, 800);
-        } else {
-          console.warn('⚠️ Target slide not found in lazy-loaded range');
         }
       }
     }
-  }, [currentSentenceIndex, isMobile, mobileVisibleIndices, transcriptData.length, lazySlideRange]);
+  }, [currentSentenceIndex, isMobile, mobileVisibleIndices, transcriptData.length]);
 
   // Auto-scroll mobile shadowing list to current sentence when playing
   useEffect(() => {
@@ -1175,7 +1167,7 @@ const DictationPageContent = () => {
         const containerCenter = containerRect.left + containerRect.width / 2;
 
         // Find which slide is currently centered
-        const slides = container.querySelectorAll('[data-slide-index]');
+        const slides = container.querySelectorAll('[data-sentence-id]');
         let closestSlide = null;
         let minDistance = Infinity;
 
@@ -1191,8 +1183,7 @@ const DictationPageContent = () => {
         });
 
         if (closestSlide) {
-          const slideIndex = parseInt(closestSlide.getAttribute('data-slide-index'));
-          const sentenceIndex = mobileVisibleIndices[slideIndex];
+          const sentenceIndex = parseInt(closestSlide.getAttribute('data-sentence-id'));
 
           // Only update if different from current
           if (sentenceIndex !== undefined && sentenceIndex !== currentSentenceIndex) {
