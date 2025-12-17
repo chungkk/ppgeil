@@ -89,15 +89,47 @@ const targetSlide = container.querySelector(`[data-sentence-id="${currentSentenc
 | Scroll smoothness | ⚠️ Jerky | ✅ Smooth | Much better |
 | Code complexity | High | Low | Easier to maintain |
 
+## Professional Loading States (Update 2)
+
+### New Features Added
+1. **SlideLoadingPlaceholder Component**
+   - Beautiful shimmer animation with gradient
+   - Content-aware skeleton (matches real slide layout)
+   - Glass morphism design with backdrop filter
+   - Pulse indicators at bottom
+
+2. **Smooth Fade-in Transitions**
+   - Staggered animation (50ms delay per slide)
+   - Scale + translateY animation for depth
+   - Tracks loaded slides with Set for performance
+
+3. **CSS Animations**
+   ```css
+   @keyframes fadeInSlide {
+     from { opacity: 0; transform: translateY(15px) scale(0.97); }
+     to { opacity: 1; transform: translateY(0) scale(1); }
+   }
+   ```
+
+### Loading Flow
+```
+User scrolls → Render window updates → Show loading placeholder (100ms) → Content fades in with stagger
+```
+
+### Files Created
+- `components/dictation/SlideLoadingPlaceholder.js` - Loading component
+- `styles/dictation/slideLoading.module.css` - Shimmer & animation styles
+
 ## Testing Checklist
-- [x] Build successful (`npm run build`)
+- [x] Build successful (`npm run build` - 2.5s compile time)
 - [ ] Manual test on mobile:
-  - [ ] Scroll slides smoothly
+  - [ ] Scroll slides smoothly with shimmer loading
   - [ ] Auto-scroll to current sentence works
   - [ ] No white spaces/gaps between slides
-  - [ ] Dictation mode works correctly
+  - [ ] Fade-in animation looks smooth
+  - [ ] Loading placeholder matches slide size
 - [ ] Test on desktop (should not affect, mobile only)
-- [ ] Check memory usage (should be similar, 5 slides vs 3)
+- [ ] Check memory usage (similar, 5 slides + loading states)
 
 ## Future Improvements
 1. **Intersection Observer API** - Thay `useMemo` bằng IntersectionObserver cho dynamic loading

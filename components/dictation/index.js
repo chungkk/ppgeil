@@ -25,3 +25,4 @@ export { default as DictationSkeleton } from './DictationSkeleton';
 export { default as DictationMobileSlide } from './DictationMobileSlide';
 export { default as DictationDesktopArea } from './DictationDesktopArea';
 export { default as SlideIndicators } from './SlideIndicators';
+export { default as SlideLoadingPlaceholder } from './SlideLoadingPlaceholder';

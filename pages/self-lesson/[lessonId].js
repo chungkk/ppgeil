@@ -18,6 +18,7 @@ import {
   DictationSkeleton,
   SlideIndicators
 } from '../../components/dictation';
+import SlideLoadingPlaceholder from '../../components/dictation/SlideLoadingPlaceholder';
 
 
 
@@ -1140,6 +1141,16 @@ const DictationPageContent = () => {
       startOffset: start
     };
   }, [isMobile, mobileVisibleIndices, currentSentenceIndex]);
+
+  // Track loaded slides for smooth transitions
+  const [loadedSlides, setLoadedSlides] = useState(new Set());
+  useEffect(() => {
+    // Mark slides as loaded after a short delay for stagger effect
+    const timer = setTimeout(() => {
+      setLoadedSlides(new Set(renderWindow.visibleIndices));
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [renderWindow.visibleIndices]);
 
   // Auto-scroll mobile dictation slides to current sentence
   useEffect(() => {
@@ -3103,6 +3114,17 @@ const DictationPageContent = () => {
 
       {/* Hide footer and header on mobile */}
       <style jsx global>{`
+        @keyframes fadeInSlide {
+          from {
+            opacity: 0;
+            transform: translateY(15px) scale(0.97);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
         @media (max-width: 768px) {
           .header,
           footer {
@@ -3205,11 +3227,12 @@ const DictationPageContent = () => {
                     className={styles.dictationSlides}
                     ref={dictationSlidesRef}
                   >
-                    {renderWindow.visibleIndices.map((originalIndex) => {
+                    {renderWindow.visibleIndices.map((originalIndex, idx) => {
                       const sentence = transcriptData[originalIndex];
                       const isCompleted = completedSentences.includes(originalIndex);
                       const sentenceWordsCompleted = completedWords[originalIndex] || {};
                       const isActive = originalIndex === currentSentenceIndex;
+                      const isLoaded = loadedSlides.has(originalIndex);
                       
                       const sentenceProcessedText = processLevelUp(
                         sentence.text,
@@ -3218,11 +3241,33 @@ const DictationPageContent = () => {
                         hidePercentage
                       );
 
+                      // Show loading placeholder if not loaded yet
+                      if (!isLoaded) {
+                        return (
+                          <div
+                            key={`loading-${originalIndex}`}
+                            className={styles.dictationSlide}
+                            style={{ 
+                              animationDelay: `${idx * 50}ms`,
+                              opacity: 0,
+                              animation: 'fadeInSlide 0.4s ease-out forwards'
+                            }}
+                          >
+                            <SlideLoadingPlaceholder mode={dictationMode} />
+                          </div>
+                        );
+                      }
+
                       return (
                         <div
                           key={originalIndex}
                           data-sentence-id={originalIndex}
                           className={`${styles.dictationSlide} ${isActive ? styles.dictationSlideActive : ''}`}
+                          style={{ 
+                            animationDelay: `${idx * 50}ms`,
+                            opacity: 0,
+                            animation: 'fadeInSlide 0.4s ease-out forwards'
+                          }}
                           onClick={() => {
                             if (!isActive) {
                               setCurrentSentenceIndex(originalIndex);

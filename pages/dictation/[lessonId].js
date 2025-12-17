@@ -1099,6 +1099,15 @@ const DictationPageContent = () => {
     };
   }, [isMobile, mobileVisibleIndices, currentSentenceIndex]);
 
+  // Track loaded slides for smooth transitions
+  const [loadedSlides, setLoadedSlides] = useState(new Set());
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoadedSlides(new Set(renderWindow.visibleIndices));
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [renderWindow.visibleIndices]);
+
   // Auto-scroll mobile dictation slides to current sentence
   useEffect(() => {
     if (isMobile && dictationSlidesRef.current && transcriptData.length > 0) {
@@ -2998,6 +3007,17 @@ const DictationPageContent = () => {
 
       {/* Hide footer and header on mobile */}
       <style jsx global>{`
+        @keyframes fadeInSlide {
+          from {
+            opacity: 0;
+            transform: translateY(15px) scale(0.97);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
         @media (max-width: 768px) {
           .header,
           footer {

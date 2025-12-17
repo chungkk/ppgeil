@@ -1,0 +1,294 @@
+/* Slide Loading Placeholder Styles */
+
+.loadingSlide {
+  position: relative;
+  width: 94%;
+  min-height: 280px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 24px;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(102, 126, 234, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Shimmer animation overlay */
+.shimmerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Fill blanks mode loading */
+.fillBlanksLoading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  position: relative;
+  z-index: 2;
+}
+
+.wordRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.wordBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.wordBox:nth-child(1) { animation-delay: 0.1s; }
+.wordBox:nth-child(2) { animation-delay: 0.15s; }
+.wordBox:nth-child(3) { animation-delay: 0.2s; }
+.wordBox:nth-child(4) { animation-delay: 0.25s; }
+.wordBox:nth-child(5) { animation-delay: 0.3s; }
+.wordBox:nth-child(6) { animation-delay: 0.35s; }
+
+.hintBubble {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.inputBox {
+  height: 44px;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.12));
+  border-radius: 12px;
+  border: 1px solid rgba(102, 126, 234, 0.12);
+  animation: pulse 1.5s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+/* Full sentence mode loading */
+.fullSentenceLoading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 220px;
+  position: relative;
+  z-index: 2;
+  padding: 16px 0;
+}
+
+.sentenceDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.sentenceLine {
+  height: 16px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.08));
+  border-radius: 8px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.sentenceLine:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.inputArea {
+  height: 100px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.12));
+  border-radius: 16px;
+  border: 1px solid rgba(102, 126, 234, 0.12);
+  animation: pulse 1.5s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.button {
+  flex: 1;
+  height: 48px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.12), rgba(118, 75, 162, 0.15));
+  border-radius: 24px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.button:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+/* Fade in up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse indicator at bottom */
+.pulseIndicator {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 3;
+}
+
+.pulse {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5));
+  border-radius: 50%;
+  animation: pulseDot 1.4s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+  0%, 60%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Slide transition wrapper */
+.slideTransition {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slideTransitionLoaded {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .loadingSlide {
+    min-height: 240px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .wordRow {
+    gap: 10px;
+  }
+
+  .hintBubble {
+    width: 18px;
+    height: 18px;
+  }
+
+  .inputBox {
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .fillBlanksLoading {
+    min-height: 180px;
+    gap: 16px;
+  }
+
+  .pulseIndicator {
+    bottom: 12px;
+  }
+
+  .pulse {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .loadingSlide {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.08) 100%);
+    border-color: rgba(102, 126, 234, 0.12);
+  }
+
+  .shimmerOverlay {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      transparent 100%
+    );
+  }
+}
+
+/* Glass morphism effect */
+.loadingSlide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Smooth scrolling for slides container */
+.slideContainer {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
