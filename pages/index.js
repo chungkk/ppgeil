@@ -199,7 +199,9 @@ const HomePage = () => {
           <div className="category-section">
             <div className="horizontal-scroll">
               {Array.from({ length: 6 }).map((_, i) => (
-                <SkeletonCard key={i} />
+                <div key={i} className="horizontal-card">
+                  <SkeletonCard />
+                </div>
               ))}
             </div>
           </div>
