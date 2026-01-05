@@ -35,6 +35,7 @@ const DictationPage = () => {
   const [completedWords, setCompletedWords] = useState({});
   const [checkedSentences, setCheckedSentences] = useState([]);
   const [revealedHintWords, setRevealedHintWords] = useState({});
+  const [comparedWords, setComparedWords] = useState({}); // { sentenceIndex: { wordIndex: { isCorrect, userWord, correctWord } } }
 
   // Playback speed
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
@@ -315,6 +316,46 @@ const DictationPage = () => {
     setUserInputs(prev => ({ ...prev, [index]: value }));
   }, []);
 
+  // Normalize word for comparison
+  const normalizeWord = (word) => {
+    return word
+      .toLowerCase()
+      .trim()
+      .replace(/[.,!?;:"""''„]/g, '');
+  };
+
+  // Compare words between user input and correct text
+  const compareWords = useCallback((userInput, correctText) => {
+    const userWords = userInput.trim().split(/\s+/).filter(w => w.length > 0);
+    const correctWords = correctText.split(/\s+/).filter(w => w.length > 0);
+
+    const wordComparison = {};
+    const normalizedUserWords = userWords.map(w => normalizeWord(w));
+
+    correctWords.forEach((correctWord, index) => {
+      const normalizedCorrect = normalizeWord(correctWord);
+      const foundIndex = normalizedUserWords.indexOf(normalizedCorrect);
+
+      if (foundIndex !== -1) {
+        wordComparison[index] = {
+          isCorrect: true,
+          userWord: userWords[foundIndex],
+          correctWord: correctWord
+        };
+        // Remove found word to handle duplicates
+        normalizedUserWords[foundIndex] = null;
+      } else {
+        wordComparison[index] = {
+          isCorrect: false,
+          userWord: null,
+          correctWord: correctWord
+        };
+      }
+    });
+
+    return wordComparison;
+  }, []);
+
   // Check answer
   const checkAnswer = useCallback((index) => {
     const userInput = userInputs[index] || '';
@@ -325,9 +366,17 @@ const DictationPage = () => {
     const similarity = calculateSimilarity(userInput, correctText);
     const isCorrect = similarity >= 80;
 
+    // Compare words and store result
+    const wordComparison = compareWords(userInput, correctText);
+    setComparedWords(prev => ({
+      ...prev,
+      [index]: wordComparison
+    }));
+
+    // Update results but don't show answer yet (showAnswer: false)
     setResults(prev => ({
       ...prev,
-      [index]: { similarity, isCorrect, showAnswer: true }
+      [index]: { similarity, isCorrect, showAnswer: false }
     }));
 
     // Mark as checked to reveal in transcript
@@ -341,7 +390,7 @@ const DictationPage = () => {
     } else if (!isCorrect) {
       hapticEvents.wordIncorrect();
     }
-  }, [userInputs, transcriptData, completedSentences, checkedSentences]);
+  }, [userInputs, transcriptData, completedSentences, checkedSentences, compareWords]);
 
   // Show answer
   const showAnswer = useCallback((index) => {
@@ -694,6 +743,7 @@ const DictationPage = () => {
                 <div className={styles.hiddenSentenceBox}>
                   {transcriptData[currentSentenceIndex] && (
                     results[currentSentenceIndex]?.showAnswer ? (
+                      // Full answer revealed
                       <div className={styles.revealedSentence}>
                         {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => (
                           <span
@@ -705,7 +755,35 @@ const DictationPage = () => {
                           </span>
                         ))}
                       </div>
+                    ) : comparedWords[currentSentenceIndex] ? (
+                      // After check: show correct words in green, hide wrong words
+                      <div className={styles.partialRevealSentence}>
+                        {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
+                          const comparison = comparedWords[currentSentenceIndex][i];
+                          if (comparison?.isCorrect) {
+                            // Correct word - show in green
+                            return (
+                              <span
+                                key={i}
+                                className={styles.correctWord}
+                                onClick={(e) => handleWordClick(word, e)}
+                              >
+                                {word}{' '}
+                              </span>
+                            );
+                          } else {
+                            // Wrong word - still hidden
+                            return (
+                              <span key={i} className={styles.maskedWord}>
+                                {'_'.repeat(word.replace(/[.,!?;:"""''„]/g, '').length)}
+                                {word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : ''}{' '}
+                              </span>
+                            );
+                          }
+                        })}
+                      </div>
                     ) : (
+                      // Initial state: all words hidden
                       <div className={styles.maskedSentence}>
                         {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => (
                           <span key={i} className={styles.maskedWord}>
@@ -784,7 +862,7 @@ const DictationPage = () => {
                     </div>
                   </div>
 
-                  {/* Result Display */}
+                  {/* Result Display - Shows accuracy percentage below textarea */}
                   {results[currentSentenceIndex] && (
                     <div className={`${styles.resultBox} ${results[currentSentenceIndex].isCorrect ? styles.correct : styles.incorrect}`}>
                       <span className={styles.similarityScore}>
@@ -861,6 +939,8 @@ const DictationPage = () => {
               showTranslation={showTranslation}
               onToggleTranslation={() => setShowTranslation(prev => !prev)}
               onWordClickForPopup={handleWordClick}
+              comparedWords={comparedWords}
+              results={results}
             />
           </div>
         </div>

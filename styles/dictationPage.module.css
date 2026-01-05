@@ -5675,6 +5675,28 @@
   background: rgba(16, 185, 129, 0.1);
 }
 
+/* Partial Reveal Sentence - After check, before viewing full answer */
+.partialRevealSentence {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+/* Correct Word - Green color for correctly guessed words */
+.correctWord {
+  color: #10b981;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.correctWord:hover {
+  background: rgba(16, 185, 129, 0.2);
+}
+
 .inputSection {
   display: flex;
   flex-direction: column;
