@@ -27,7 +27,7 @@ const DictationPage = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
   const [segmentPlayEndTime, setSegmentPlayEndTime] = useState(null);
-  
+
   // Dictation input states
   const [userInputs, setUserInputs] = useState({}); // { sentenceIndex: inputText }
   const [results, setResults] = useState({}); // { sentenceIndex: { similarity, isCorrect, showAnswer } }
@@ -35,16 +35,16 @@ const DictationPage = () => {
   const [completedWords, setCompletedWords] = useState({});
   const [checkedSentences, setCheckedSentences] = useState([]);
   const [revealedHintWords, setRevealedHintWords] = useState({});
-  
+
   // Playback speed
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
-  
+
   // Auto stop at end of sentence
   const [autoStop, setAutoStop] = useState(true);
-  
+
   // Translation toggle
   const [showTranslation, setShowTranslation] = useState(true);
-  
+
   // Dictionary popup
   const [showVocabPopup, setShowVocabPopup] = useState(false);
   const [selectedWord, setSelectedWord] = useState('');
@@ -72,6 +72,16 @@ const DictationPage = () => {
   const [isYouTube, setIsYouTube] = useState(false);
   const [isYouTubeAPIReady, setIsYouTubeAPIReady] = useState(false);
   const inputRefs = useRef({});
+
+  // Voice Recording states
+  const [isRecording, setIsRecording] = useState(false);
+  const [isProcessingAudio, setIsProcessingAudio] = useState(false);
+  const [recordedBlob, setRecordedBlob] = useState(null);
+  const [isPlayingRecording, setIsPlayingRecording] = useState(false);
+  const [voiceComparisonResult, setVoiceComparisonResult] = useState(null);
+  const mediaRecorderRef = useRef(null);
+  const audioChunksRef = useRef([]);
+  const playbackRef = useRef(null);
 
   // Extract YouTube video ID
   const getYouTubeVideoId = (url) => {
@@ -255,7 +265,7 @@ const DictationPage = () => {
         audio.play();
       }
     }
-    
+
     setIsPlaying(true);
     setSegmentPlayEndTime(sentence.end);
     setCurrentSentenceIndex(index);
@@ -381,6 +391,174 @@ const DictationPage = () => {
     const seconds = Math.floor(totalSeconds % 60);
     return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
+
+  // ==================== VOICE RECORDING FUNCTIONS ====================
+
+  // Start recording
+  const startRecording = async () => {
+    try {
+      // Pause video/audio before starting recording
+      if (isPlaying) {
+        if (isYouTube && youtubePlayerRef?.current) {
+          youtubePlayerRef.current.pauseVideo();
+        } else if (audioRef?.current) {
+          audioRef.current.pause();
+        }
+        setIsPlaying(false);
+      }
+
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mimeType = MediaRecorder.isTypeSupported('audio/webm')
+        ? 'audio/webm'
+        : 'audio/mp4';
+
+      const mediaRecorder = new MediaRecorder(stream, { mimeType });
+      mediaRecorderRef.current = mediaRecorder;
+      audioChunksRef.current = [];
+
+      mediaRecorder.ondataavailable = (event) => {
+        if (event.data.size > 0) {
+          audioChunksRef.current.push(event.data);
+        }
+      };
+
+      mediaRecorder.onstop = async () => {
+        stream.getTracks().forEach(track => track.stop());
+        const audioBlob = new Blob(audioChunksRef.current, {
+          type: audioChunksRef.current[0]?.type || 'audio/webm'
+        });
+        setRecordedBlob(audioBlob);
+        await processRecording(audioBlob);
+      };
+
+      mediaRecorder.start();
+      setIsRecording(true);
+      setVoiceComparisonResult(null);
+    } catch (err) {
+      console.error('Error starting recording:', err);
+      alert('Không thể truy cập microphone');
+    }
+  };
+
+  // Stop recording
+  const stopRecording = () => {
+    if (mediaRecorderRef.current && isRecording) {
+      mediaRecorderRef.current.stop();
+      setIsRecording(false);
+      setIsProcessingAudio(true);
+    }
+  };
+
+  // Process recording with Whisper
+  const processRecording = async (audioBlob) => {
+    try {
+      const formData = new FormData();
+      formData.append('audio', audioBlob, 'voice-recording.webm');
+      formData.append('language', 'de');
+
+      const response = await fetch('/api/whisper-transcribe', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success && data.text) {
+        const transcribedText = data.text.trim();
+
+        // Check for error messages from Whisper
+        const errorPhrases = [
+          'Untertitelung aufgrund der Audioqualität nicht möglich',
+          'Untertitel',
+        ];
+
+        const isErrorMessage = errorPhrases.some(phrase =>
+          transcribedText.toLowerCase().includes(phrase.toLowerCase())
+        );
+
+        // Only use transcription if valid
+        if (!isErrorMessage && transcribedText.length > 2) {
+          // Set the transcribed text as user input
+          setUserInputs(prev => ({ ...prev, [currentSentenceIndex]: transcribedText }));
+
+          // Calculate similarity with correct text
+          const correctText = transcriptData[currentSentenceIndex]?.text || '';
+          const similarity = calculateSimilarity(transcribedText, correctText);
+
+          setVoiceComparisonResult({
+            transcribed: transcribedText,
+            original: correctText,
+            similarity: similarity,
+            isCorrect: similarity >= 80
+          });
+        } else {
+          setVoiceComparisonResult(null);
+          alert('Không thể nhận diện giọng nói. Vui lòng thử lại với âm thanh rõ hơn.');
+        }
+      } else {
+        setVoiceComparisonResult(null);
+        alert('Không thể nhận diện giọng nói');
+      }
+    } catch (err) {
+      console.error('Error processing audio:', err);
+      setVoiceComparisonResult(null);
+      alert('Lỗi xử lý âm thanh');
+    } finally {
+      setIsProcessingAudio(false);
+    }
+  };
+
+  // Play recorded audio
+  const playRecordedAudio = () => {
+    if (!recordedBlob) return;
+
+    if (isPlayingRecording && playbackRef.current) {
+      playbackRef.current.pause();
+      playbackRef.current = null;
+      setIsPlayingRecording(false);
+      return;
+    }
+
+    const url = URL.createObjectURL(recordedBlob);
+    const audio = new Audio(url);
+    playbackRef.current = audio;
+
+    audio.onended = () => {
+      setIsPlayingRecording(false);
+      playbackRef.current = null;
+      URL.revokeObjectURL(url);
+    };
+
+    audio.play();
+    setIsPlayingRecording(true);
+  };
+
+  // Clear recording
+  const clearRecording = () => {
+    if (playbackRef.current) {
+      playbackRef.current.pause();
+      playbackRef.current = null;
+    }
+    setRecordedBlob(null);
+    setVoiceComparisonResult(null);
+    setIsPlayingRecording(false);
+  };
+
+  // Handle recording button click
+  const handleRecordingClick = () => {
+    if (isRecording) {
+      stopRecording();
+    } else {
+      startRecording();
+    }
+  };
+
+  // Clear recording when sentence changes
+  useEffect(() => {
+    clearRecording();
+  }, [currentSentenceIndex]);
+
+
 
   if (loading) {
     return <DictationSkeleton />;
@@ -511,7 +689,7 @@ const DictationPage = () => {
                     Câu {currentSentenceIndex + 1} / {transcriptData.length}
                   </span>
                 </div>
-                
+
                 {/* Hidden sentence display */}
                 <div className={styles.hiddenSentenceBox}>
                   {transcriptData[currentSentenceIndex] && (
@@ -541,20 +719,70 @@ const DictationPage = () => {
                 </div>
 
                 <div className={styles.inputSection}>
-                  <textarea
-                    ref={(el) => inputRefs.current[currentSentenceIndex] = el}
-                    className={styles.dictationInput}
-                    value={userInputs[currentSentenceIndex] || ''}
-                    onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
-                    placeholder="Nghe và gõ lại câu bạn nghe được..."
-                    rows={3}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter' && !e.shiftKey) {
-                        e.preventDefault();
-                        checkAnswer(currentSentenceIndex);
-                      }
-                    }}
-                  />
+                  <div className={styles.textareaWrapper}>
+                    <textarea
+                      ref={(el) => inputRefs.current[currentSentenceIndex] = el}
+                      className={styles.dictationInput}
+                      value={userInputs[currentSentenceIndex] || ''}
+                      onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
+                      placeholder="Nghe và gõ lại câu bạn nghe được..."
+                      rows={3}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' && !e.shiftKey) {
+                          e.preventDefault();
+                          checkAnswer(currentSentenceIndex);
+                        }
+                      }}
+                    />
+
+                    {/* Voice Recording Button - Inside textarea */}
+                    <div className={styles.inputRecordingControls}>
+                      <button
+                        className={`${styles.inputRecordBtn} ${isRecording ? styles.recording : ''}`}
+                        onClick={handleRecordingClick}
+                        disabled={isProcessingAudio}
+                        title={isRecording ? 'Dừng ghi âm' : 'Ghi âm giọng nói'}
+                      >
+                        {isProcessingAudio ? (
+                          <svg className={styles.spinner} viewBox="0 0 24 24" width="20" height="20">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="32">
+                              <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite" />
+                            </circle>
+                          </svg>
+                        ) : isRecording ? (
+                          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <rect x="6" y="6" width="12" height="12" rx="2" />
+                          </svg>
+                        ) : (
+                          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" />
+                            <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z" />
+                            <path d="M11 18h2v4h-2z" />
+                            <path d="M8 22h8v2H8z" />
+                          </svg>
+                        )}
+                      </button>
+
+                      {/* Playback button - shown when recording exists */}
+                      {recordedBlob && !isRecording && (
+                        <button
+                          className={`${styles.inputPlaybackBtn} ${isPlayingRecording ? styles.playing : ''}`}
+                          onClick={playRecordedAudio}
+                          title={isPlayingRecording ? 'Dừng phát' : 'Nghe lại'}
+                        >
+                          {isPlayingRecording ? (
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+                            </svg>
+                          ) : (
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                              <path d="M8 5v14l11-7z" />
+                            </svg>
+                          )}
+                        </button>
+                      )}
+                    </div>
+                  </div>
 
                   {/* Result Display */}
                   {results[currentSentenceIndex] && (
