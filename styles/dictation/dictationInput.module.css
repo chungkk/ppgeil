@@ -954,3 +954,12 @@
   padding: 2px 8px;
   border-radius: 10px;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE - HIDE DICTATION HEADER
+   ============================================ */
+@media (max-width: 768px) {
+  .dictationHeader {
+    display: none !important;
+  }
+}
