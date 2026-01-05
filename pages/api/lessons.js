@@ -3,6 +3,7 @@ import { Lesson } from '../../lib/models/Lesson';
 import { ArticleCategory } from '../../lib/models/ArticleCategory';
 import connectDB from '../../lib/mongodb';
 import mongoose from 'mongoose';
+import { downloadYouTubeThumbnail } from '../../lib/youtubeThumbnail';
 
 export default async function handler(req, res) {
   await connectDB();
@@ -102,6 +103,14 @@ async function adminHandler(req, res) {
         const defaultCategory = await ArticleCategory.findOne({ isSystem: true });
         if (defaultCategory) {
           lessonData.category = defaultCategory._id;
+        }
+      }
+
+      // Auto-download YouTube thumbnail if youtubeUrl is provided and no thumbnail set
+      if (lessonData.youtubeUrl && !lessonData.thumbnail) {
+        const localThumbnail = await downloadYouTubeThumbnail(lessonData.youtubeUrl, req.body.id);
+        if (localThumbnail) {
+          lessonData.thumbnail = localThumbnail;
         }
       }
 

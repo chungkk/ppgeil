@@ -22,7 +22,8 @@ const LessonCard = ({ lesson, onClick }) => {
 
   const getYouTubeThumbnail = (url) => {
     const videoId = extractYouTubeVideoId(url);
-    return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null;
+    // Use mqdefault (320x180) for faster loading - matches card size
+    return videoId ? `https://img.youtube.com/vi/${videoId}/mqdefault.jpg` : null;
   };
 
   const formatDuration = (seconds) => {

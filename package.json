@@ -12,7 +12,10 @@
     "cleanup-recordings": "node scripts/cleanup-old-recordings.js",
     "cap:sync": "npx cap sync",
     "cap:open:ios": "npx cap open ios",
-    "cap:run:ios": "npx cap run ios"
+    "cap:run:ios": "npx cap run ios",
+    "migrate:thumbnails": "node scripts/migrate-thumbnails.js",
+    "migrate:thumbnails:dry": "node scripts/migrate-thumbnails.js --dry-run",
+    "migrate:thumbnails:force": "node scripts/migrate-thumbnails.js --force"
   },
   "dependencies": {
     "@capacitor/cli": "^8.0.0",
