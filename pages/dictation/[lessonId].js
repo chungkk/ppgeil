@@ -50,6 +50,9 @@ const DictationPage = () => {
   const [selectedWord, setSelectedWord] = useState('');
   const [popupPosition, setPopupPosition] = useState({ top: 0, left: 0 });
 
+  // Mobile detection
+  const [isMobile, setIsMobile] = useState(false);
+
   // Use SWR hook for lesson data
   const { lesson, progress: loadedProgress, studyTime: loadedStudyTime, isLoading: loading } = useLessonData(lessonId, 'dictation');
   const { user } = useAuth();
@@ -84,6 +87,16 @@ const DictationPage = () => {
     youtubeAPI.waitForAPI()
       .then(() => setIsYouTubeAPIReady(true))
       .catch(err => console.error('YouTube API error:', err));
+  }, []);
+
+  // Detect mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   // Set isYouTube flag
@@ -399,52 +412,134 @@ const DictationPage = () => {
             onBack={() => router.back()}
           />
 
-          <div className={styles.threeColumnLayout}>
-            {/* Left Column - Video */}
-            <DictationVideoSection
-              lesson={lesson}
-              isYouTube={isYouTube}
-              audioRef={audioRef}
-              currentTime={currentTime}
-              duration={duration}
-              autoStop={autoStop}
-              onAutoStopChange={setAutoStop}
-              studyTime={studyTime}
-              formatStudyTime={formatStudyTime}
-              formatTime={formatTime}
-              isMobile={false}
-              onVideoClick={handlePlayPause}
-              isPlaying={isPlaying}
-              onPlayPause={handlePlayPause}
-              onReplayFromStart={() => playSentence(currentSentenceIndex)}
-              onPrevSentence={() => {
-                if (currentSentenceIndex > 0) {
-                  playSentence(currentSentenceIndex - 1);
-                }
-              }}
-              onNextSentence={() => {
-                if (currentSentenceIndex < transcriptData.length - 1) {
-                  playSentence(currentSentenceIndex + 1);
-                }
-              }}
-              playbackSpeed={playbackSpeed}
-              onSpeedChange={(speed) => {
-                setPlaybackSpeed(speed);
-                if (isYouTube && youtubePlayerRef.current?.setPlaybackRate) {
-                  youtubePlayerRef.current.setPlaybackRate(speed);
-                } else if (audioRef.current) {
-                  audioRef.current.playbackRate = speed;
-                }
-              }}
-              currentSentence={transcriptData[currentSentenceIndex]}
-              youtubePlayerRef={youtubePlayerRef}
-            />
+          <div className={`${styles.threeColumnLayout} ${isMobile ? styles.mobileLayout : ''}`}>
+            {/* Left Column - Video (desktop only, mobile uses inline) */}
+            {!isMobile && (
+              <DictationVideoSection
+                lesson={lesson}
+                isYouTube={isYouTube}
+                audioRef={audioRef}
+                currentTime={currentTime}
+                duration={duration}
+                autoStop={autoStop}
+                onAutoStopChange={setAutoStop}
+                studyTime={studyTime}
+                formatStudyTime={formatStudyTime}
+                formatTime={formatTime}
+                isMobile={false}
+                onVideoClick={handlePlayPause}
+                isPlaying={isPlaying}
+                onPlayPause={handlePlayPause}
+                onReplayFromStart={() => playSentence(currentSentenceIndex)}
+                onPrevSentence={() => {
+                  if (currentSentenceIndex > 0) {
+                    playSentence(currentSentenceIndex - 1);
+                  }
+                }}
+                onNextSentence={() => {
+                  if (currentSentenceIndex < transcriptData.length - 1) {
+                    playSentence(currentSentenceIndex + 1);
+                  }
+                }}
+                playbackSpeed={playbackSpeed}
+                onSpeedChange={(speed) => {
+                  setPlaybackSpeed(speed);
+                  if (isYouTube && youtubePlayerRef.current?.setPlaybackRate) {
+                    youtubePlayerRef.current.setPlaybackRate(speed);
+                  } else if (audioRef.current) {
+                    audioRef.current.playbackRate = speed;
+                  }
+                }}
+                currentSentence={transcriptData[currentSentenceIndex]}
+                youtubePlayerRef={youtubePlayerRef}
+              />
+            )}
 
             {/* Middle Column - Dictation Input */}
             <div className={styles.middleColumn}>
+              {/* Mobile Video Player */}
+              {isMobile && (
+                <div className={styles.mobileVideoSection}>
+                  <div className={styles.mobileVideoWrapper}>
+                    {isYouTube ? (
+                      <div id="youtube-player" />
+                    ) : (
+                      <audio ref={audioRef} src={lesson.audioUrl} />
+                    )}
+                  </div>
+                  <div className={styles.mobileControls}>
+                    <button
+                      className={styles.mobileControlBtn}
+                      onClick={() => {
+                        if (currentSentenceIndex > 0) {
+                          playSentence(currentSentenceIndex - 1);
+                        }
+                      }}
+                    >
+                      ⏮
+                    </button>
+                    <button
+                      className={`${styles.mobileControlBtn} ${styles.mobilePlayBtn}`}
+                      onClick={handlePlayPause}
+                    >
+                      {isPlaying ? '⏸' : '▶'}
+                    </button>
+                    <button
+                      className={styles.mobileControlBtn}
+                      onClick={() => playSentence(currentSentenceIndex)}
+                    >
+                      🔄
+                    </button>
+                    <button
+                      className={styles.mobileControlBtn}
+                      onClick={() => {
+                        if (currentSentenceIndex < transcriptData.length - 1) {
+                          playSentence(currentSentenceIndex + 1);
+                        }
+                      }}
+                    >
+                      ⏭
+                    </button>
+                  </div>
+                </div>
+              )}
+
               <div className={styles.dictationArea}>
-                <h3 className={styles.columnTitle}>Nghe và chép lại</h3>
+                <div className={styles.dictationHeader}>
+                  <h3 className={styles.columnTitle}>Nghe và chép lại</h3>
+                  <span className={styles.sentenceCounter}>
+                    Câu {currentSentenceIndex + 1} / {transcriptData.length}
+                  </span>
+                </div>
                 
+                {/* Hidden sentence display */}
+                <div className={styles.hiddenSentenceBox}>
+                  {transcriptData[currentSentenceIndex] && (
+                    results[currentSentenceIndex]?.showAnswer ? (
+                      <div className={styles.revealedSentence}>
+                        {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => (
+                          <span
+                            key={i}
+                            className={styles.revealedWord}
+                            onClick={(e) => handleWordClick(word, e)}
+                          >
+                            {word}{' '}
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className={styles.maskedSentence}>
+                        {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => (
+                          <span key={i} className={styles.maskedWord}>
+                            {'_'.repeat(word.replace(/[.,!?;:"""''„]/g, '').length)}
+                            {word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : ''}{' '}
+                          </span>
+                        ))}
+                      </div>
+                    )
+                  )}
+                </div>
+
                 <div className={styles.inputSection}>
                   <textarea
                     ref={(el) => inputRefs.current[currentSentenceIndex] = el}
@@ -452,7 +547,7 @@ const DictationPage = () => {
                     value={userInputs[currentSentenceIndex] || ''}
                     onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
                     placeholder="Nghe và gõ lại câu bạn nghe được..."
-                    rows={4}
+                    rows={3}
                     onKeyDown={(e) => {
                       if (e.key === 'Enter' && !e.shiftKey) {
                         e.preventDefault();

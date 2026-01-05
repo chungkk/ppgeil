@@ -749,6 +749,15 @@ button:focus-visible {
 }
 
 /* ============================================
+   Hide Footer on Dictation Page (Mobile)
+   ============================================ */
+@media (max-width: 768px) {
+  body:has([class*="dictationPage_page"]) footer {
+    display: none !important;
+  }
+}
+
+/* ============================================
    iOS Native App Styles
    ============================================ */
 

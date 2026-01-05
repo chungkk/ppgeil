@@ -5466,13 +5466,68 @@
   height: 100%;
 }
 
+.dictationHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
 .columnTitle {
   font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
   margin: 0;
-  padding-bottom: var(--spacing-sm);
-  border-bottom: 1px solid var(--border-color);
+}
+
+.sentenceCounter {
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Hidden Sentence Display */
+.hiddenSentenceBox {
+  background: var(--bg-tertiary);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.maskedSentence {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.maskedWord {
+  display: inline;
+  color: var(--text-secondary);
+}
+
+.revealedSentence {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.revealedWord {
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.revealedWord:hover {
+  color: var(--accent-green);
+  background: rgba(16, 185, 129, 0.1);
 }
 
 .inputSection {
@@ -5702,23 +5757,143 @@
 }
 
 @media (max-width: 768px) {
-  .threeColumnLayout {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
+  .pageContainer {
+    padding: var(--spacing-sm);
+    padding-top: calc(56px + var(--spacing-sm));
   }
 
-  .leftColumn,
+  .threeColumnLayout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    min-height: auto;
+  }
+
+  /* Left column is not rendered on mobile via React condition */
+
   .middleColumn {
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .dictationHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+
+  .columnTitle {
+    font-size: 15px;
+  }
+
+  .sentenceCounter {
+    font-size: 12px;
+  }
+
+  .hiddenSentenceBox {
+    padding: var(--spacing-sm);
+    min-height: 60px;
+  }
+
+  .maskedSentence,
+  .revealedSentence {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .dictationInput {
+    min-height: 80px;
+    font-size: 15px;
     padding: var(--spacing-sm);
   }
 
   .actionButtons {
     flex-direction: column;
+    gap: var(--spacing-xs);
   }
 
   .checkButton,
   .showAnswerButton,
   .nextButton {
     width: 100%;
+    padding: 12px var(--spacing-md);
+    font-size: 15px;
+  }
+
+  .resultBox {
+    padding: var(--spacing-sm);
+  }
+
+  .similarityScore {
+    font-size: 13px;
+  }
+
+  .progressSection {
+    padding-top: var(--spacing-sm);
+  }
+
+  /* Mobile Video Section */
+  .mobileVideoSection {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .mobileVideoWrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #000;
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+  }
+
+  .mobileVideoWrapper > div,
+  .mobileVideoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobileControls {
+    display: none; /* Temporarily hidden */
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--bg-tertiary);
+    border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+  }
+
+  .mobileControlBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .mobileControlBtn:active {
+    transform: scale(0.95);
+    background: var(--bg-secondary);
+  }
+
+  .mobilePlayBtn {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    background: var(--accent-green);
+    color: white;
+  }
+
+  .mobilePlayBtn:active {
+    background: var(--accent-green-hover, #059669);
   }
 }
