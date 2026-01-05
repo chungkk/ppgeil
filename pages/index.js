@@ -83,17 +83,23 @@ const HomePage = () => {
       method: 'POST'
     }).catch(err => console.error('Error incrementing view count:', err));
     
-    // Navigate directly to lesson (shadowing mode is default)
-    const route = `/${lesson.id}`;
-    navigateWithLocale(router, route);
+    // Show mode selection popup
+    setSelectedLesson(lesson);
+    setShowModePopup(true);
   };
 
   const handleModeSelect = (lesson, mode) => {
     // Close popup
     setShowModePopup(false);
+    setSelectedLesson(null);
     
-    // Navigate to lesson page (shadowing mode only)
-    const route = `/${lesson.id}`;
+    // Navigate to appropriate page based on mode
+    let route;
+    if (mode === 'dictation') {
+      route = `/dictation/${lesson.id}`;
+    } else {
+      route = `/shadowing/${lesson.id}`;
+    }
     navigateWithLocale(router, route);
   };
 

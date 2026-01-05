@@ -24,11 +24,18 @@ const ModeSelectionPopup = ({ lesson, onClose, onSelectMode }) => {
 
   const modes = [
     {
-      id: 'shadow',
+      id: 'shadowing',
       name: 'Shadowing',
       icon: '🗣️',
       description: 'Luyện nói - đọc theo video',
       studyTime: lesson.shadowStudyTime || 0
+    },
+    {
+      id: 'dictation',
+      name: 'Dictation',
+      icon: '✍️',
+      description: 'Nghe chép chính tả',
+      studyTime: lesson.dictationStudyTime || 0
     }
   ];
 
