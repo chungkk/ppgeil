@@ -20,9 +20,11 @@
   align-items: center;
   padding: 14px 18px;
   min-height: 56px;
+  height: 56px;
   border-bottom: 1px solid var(--border-color);
   background: var(--bg-primary);
   backdrop-filter: blur(8px);
+  box-sizing: border-box;
 }
 
 .transcriptHeaderLeft {

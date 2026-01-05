@@ -355,11 +355,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 16px;
-  height: 44px;
+  padding: 14px 18px;
+  min-height: 56px;
+  height: 56px;
   border-bottom: 1px solid var(--border-color);
   background: var(--bg-hover);
   border-radius: 16px 16px 0 0;
+  box-sizing: border-box;
 }
 
 /* Mobile header improvements */
@@ -5598,23 +5600,34 @@
   height: 100%;
 }
 
-.dictationHeader {
+/* This dictationHeader is specifically for the dictation page middle column
+   Matches height with videoHeader and transcriptHeader */
+.dictationArea .dictationHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: var(--spacing-sm);
+  padding: 14px 18px;
+  min-height: 56px;
+  height: 56px;
   border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.08) 0%, rgba(245, 158, 11, 0.05) 100%);
+  border-radius: 16px 16px 0 0;
+  box-sizing: border-box;
+  margin: calc(-1 * var(--spacing-md));
+  margin-bottom: 0;
 }
 
 .columnTitle {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: var(--text-primary);
   margin: 0;
+  letter-spacing: 0.3px;
 }
 
 .sentenceCounter {
   font-size: 13px;
+  font-weight: 600;
   color: var(--text-secondary);
   background: var(--bg-tertiary);
   padding: 4px 10px;
