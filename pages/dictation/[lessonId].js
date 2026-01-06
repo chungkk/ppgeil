@@ -776,9 +776,13 @@ const DictationPage = () => {
               {/* Mobile Video Player */}
               {isMobile && (
                 <div className={styles.mobileVideoSection}>
-                  <div className={styles.mobileVideoWrapper}>
+                  <div className={styles.mobileVideoWrapper} onClick={handlePlayPause}>
                     {isYouTube ? (
-                      <div id="youtube-player" />
+                      <>
+                        <div id="youtube-player" />
+                        {/* Overlay to capture clicks and trigger handlePlayPause for auto-stop */}
+                        <div className={styles.videoClickOverlay} />
+                      </>
                     ) : (
                       <audio ref={audioRef} src={lesson.audioUrl} />
                     )}
