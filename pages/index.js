@@ -19,16 +19,6 @@ const HomePage = () => {
   const router = useRouter();
   const { user } = useAuth();
 
-  useEffect(() => {
-    // Set initial filter based on user level or default to beginner for non-logged-in users
-    if (user && user.level) {
-      setDifficultyFilter(user.level);
-    } else if (!user) {
-      // First-time visitors see beginner lessons by default
-      setDifficultyFilter('beginner');
-    }
-  }, [user]);
-
   const fetchCategoriesWithLessons = useCallback(async () => {
     try {
       setLoading(true);
