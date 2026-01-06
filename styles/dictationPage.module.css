@@ -6099,6 +6099,7 @@
 
   .middleColumn {
     padding: var(--spacing-sm);
+    padding-bottom: 90px; /* Space for fixed action buttons */
     border-radius: var(--border-radius-sm);
   }
 
@@ -6135,6 +6136,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    background: var(--bg-primary);
+    border-top: 1px solid var(--border-color);
+    z-index: 100;
   }
 
   .checkButton,
@@ -6151,11 +6161,11 @@
   }
 
   .nextButton {
-    grid-column: 1 / -1;
     width: 100%;
-    padding: 16px var(--spacing-md);
-    font-size: 16px;
-    font-weight: 700;
+    padding: 14px var(--spacing-sm);
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 48px;
   }
 
   .resultBox {

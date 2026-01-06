@@ -319,64 +319,59 @@ const DictationPage = () => {
       .replace(/[.,!?;:"""''„]/g, '');
   };
 
-  // Compare words between user input and correct text - with partial character matching
+  // Compare words between user input and correct text - by position (1:1 mapping)
   const compareWords = useCallback((userInput, correctText) => {
     const userWords = userInput.trim().split(/\s+/).filter(w => w.length > 0);
     const correctWords = correctText.split(/\s+/).filter(w => w.length > 0);
 
     const wordComparison = {};
-    const usedUserWordIndices = new Set();
 
+    // Compare words by position (user word 0 with correct word 0, etc.)
     correctWords.forEach((correctWord, index) => {
       const normalizedCorrect = normalizeWord(correctWord);
       const pureCorrectWord = correctWord.replace(/[.,!?;:"""''„]/g, '');
-      let bestMatch = { matchedChars: 0, userWordIdx: -1, isCorrect: false };
-
-      // Find best matching user word (exact or partial)
-      userWords.forEach((userWord, userIdx) => {
-        if (usedUserWordIndices.has(userIdx)) return;
-        
-        const normalizedUser = normalizeWord(userWord);
-        
-        // Exact match
-        if (normalizedUser === normalizedCorrect) {
-          bestMatch = { 
-            matchedChars: pureCorrectWord.length, 
-            userWordIdx: userIdx, 
-            isCorrect: true,
-            userWord: userWord 
-          };
-          return;
-        }
-        
-        // Partial match - count matching characters from start
-        let matchingChars = 0;
-        for (let i = 0; i < Math.min(normalizedCorrect.length, normalizedUser.length); i++) {
-          if (normalizedCorrect[i] === normalizedUser[i]) {
-            matchingChars++;
-          } else {
-            break;
-          }
-        }
-        
-        if (matchingChars > bestMatch.matchedChars) {
-          bestMatch = { 
-            matchedChars: matchingChars, 
-            userWordIdx: userIdx, 
-            isCorrect: false,
-            userWord: userWord 
-          };
-        }
-      });
-
-      if (bestMatch.userWordIdx >= 0) {
-        usedUserWordIndices.add(bestMatch.userWordIdx);
+      
+      // Get user word at same position
+      const userWord = userWords[index];
+      
+      if (!userWord) {
+        // No user word at this position
+        wordComparison[index] = {
+          isCorrect: false,
+          matchedChars: 0,
+          userWord: null,
+          correctWord: correctWord
+        };
+        return;
       }
-
+      
+      const normalizedUser = normalizeWord(userWord);
+      
+      // Exact match
+      if (normalizedUser === normalizedCorrect) {
+        wordComparison[index] = {
+          isCorrect: true,
+          matchedChars: pureCorrectWord.length,
+          userWord: userWord,
+          correctWord: correctWord
+        };
+        return;
+      }
+      
+      // Partial match - count matching characters from start
+      let matchingChars = 0;
+      for (let i = 0; i < Math.min(normalizedCorrect.length, normalizedUser.length); i++) {
+        if (normalizedCorrect[i] === normalizedUser[i]) {
+          matchingChars++;
+        } else {
+          break;
+        }
+      }
+      
       wordComparison[index] = {
-        isCorrect: bestMatch.isCorrect,
-        matchedChars: bestMatch.matchedChars,
-        userWord: bestMatch.userWord || null,
+        isCorrect: false,
+        matchedChars: matchingChars,
+        userWord: userWord,
         correctWord: correctWord
       };
     });
