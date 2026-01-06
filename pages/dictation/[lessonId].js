@@ -311,11 +311,6 @@ const DictationPage = () => {
     }
   }, [transcriptData, currentSentenceIndex, isYouTube]);
 
-  // Handle input change
-  const handleInputChange = useCallback((index, value) => {
-    setUserInputs(prev => ({ ...prev, [index]: value }));
-  }, []);
-
   // Normalize word for comparison
   const normalizeWord = (word) => {
     return word
@@ -324,37 +319,92 @@ const DictationPage = () => {
       .replace(/[.,!?;:"""''„]/g, '');
   };
 
-  // Compare words between user input and correct text
+  // Compare words between user input and correct text - with partial character matching
   const compareWords = useCallback((userInput, correctText) => {
     const userWords = userInput.trim().split(/\s+/).filter(w => w.length > 0);
     const correctWords = correctText.split(/\s+/).filter(w => w.length > 0);
 
     const wordComparison = {};
-    const normalizedUserWords = userWords.map(w => normalizeWord(w));
+    const usedUserWordIndices = new Set();
 
     correctWords.forEach((correctWord, index) => {
       const normalizedCorrect = normalizeWord(correctWord);
-      const foundIndex = normalizedUserWords.indexOf(normalizedCorrect);
+      const pureCorrectWord = correctWord.replace(/[.,!?;:"""''„]/g, '');
+      let bestMatch = { matchedChars: 0, userWordIdx: -1, isCorrect: false };
 
-      if (foundIndex !== -1) {
-        wordComparison[index] = {
-          isCorrect: true,
-          userWord: userWords[foundIndex],
-          correctWord: correctWord
-        };
-        // Remove found word to handle duplicates
-        normalizedUserWords[foundIndex] = null;
-      } else {
-        wordComparison[index] = {
-          isCorrect: false,
-          userWord: null,
-          correctWord: correctWord
-        };
+      // Find best matching user word (exact or partial)
+      userWords.forEach((userWord, userIdx) => {
+        if (usedUserWordIndices.has(userIdx)) return;
+        
+        const normalizedUser = normalizeWord(userWord);
+        
+        // Exact match
+        if (normalizedUser === normalizedCorrect) {
+          bestMatch = { 
+            matchedChars: pureCorrectWord.length, 
+            userWordIdx: userIdx, 
+            isCorrect: true,
+            userWord: userWord 
+          };
+          return;
+        }
+        
+        // Partial match - count matching characters from start
+        let matchingChars = 0;
+        for (let i = 0; i < Math.min(normalizedCorrect.length, normalizedUser.length); i++) {
+          if (normalizedCorrect[i] === normalizedUser[i]) {
+            matchingChars++;
+          } else {
+            break;
+          }
+        }
+        
+        if (matchingChars > bestMatch.matchedChars) {
+          bestMatch = { 
+            matchedChars: matchingChars, 
+            userWordIdx: userIdx, 
+            isCorrect: false,
+            userWord: userWord 
+          };
+        }
+      });
+
+      if (bestMatch.userWordIdx >= 0) {
+        usedUserWordIndices.add(bestMatch.userWordIdx);
       }
+
+      wordComparison[index] = {
+        isCorrect: bestMatch.isCorrect,
+        matchedChars: bestMatch.matchedChars,
+        userWord: bestMatch.userWord || null,
+        correctWord: correctWord
+      };
     });
 
     return wordComparison;
   }, []);
+
+  // Handle input change with realtime word comparison
+  const handleInputChange = useCallback((index, value) => {
+    setUserInputs(prev => ({ ...prev, [index]: value }));
+    
+    // Realtime: compare words as user types
+    const correctText = transcriptData[index]?.text || '';
+    if (value.trim() && correctText) {
+      const wordComparison = compareWords(value, correctText);
+      setComparedWords(prev => ({
+        ...prev,
+        [index]: wordComparison
+      }));
+    } else {
+      // Clear comparison if input is empty
+      setComparedWords(prev => {
+        const updated = { ...prev };
+        delete updated[index];
+        return updated;
+      });
+    }
+  }, [transcriptData, compareWords]);
 
   // Check answer
   const checkAnswer = useCallback((index) => {
@@ -485,7 +535,6 @@ const DictationPage = () => {
       setVoiceComparisonResult(null);
     } catch (err) {
       console.error('Error starting recording:', err);
-      alert('Không thể truy cập microphone');
     }
   };
 
@@ -542,16 +591,13 @@ const DictationPage = () => {
           });
         } else {
           setVoiceComparisonResult(null);
-          alert('Không thể nhận diện giọng nói. Vui lòng thử lại với âm thanh rõ hơn.');
         }
       } else {
         setVoiceComparisonResult(null);
-        alert('Không thể nhận diện giọng nói');
       }
     } catch (err) {
       console.error('Error processing audio:', err);
       setVoiceComparisonResult(null);
-      alert('Lỗi xử lý âm thanh');
     } finally {
       setIsProcessingAudio(false);
     }
@@ -782,12 +828,15 @@ const DictationPage = () => {
                         ))}
                       </div>
                     ) : comparedWords[currentSentenceIndex] ? (
-                      // After check: show correct words in green, hide wrong words
+                      // Realtime: show matched characters as user types
                       <div className={styles.partialRevealSentence}>
                         {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
                           const comparison = comparedWords[currentSentenceIndex][i];
+                          const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
+                          const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
+                          
                           if (comparison?.isCorrect) {
-                            // Correct word - show in green
+                            // Fully correct word - show in green
                             return (
                               <span
                                 key={i}
@@ -797,12 +846,23 @@ const DictationPage = () => {
                                 {word}{' '}
                               </span>
                             );
+                          } else if (comparison?.matchedChars > 0) {
+                            // Partial match - show matched chars, hide rest
+                            const revealedPart = pureWord.substring(0, comparison.matchedChars);
+                            const hiddenPart = '_'.repeat(pureWord.length - comparison.matchedChars);
+                            return (
+                              <span key={i} className={styles.partialWord}>
+                                <span className={styles.revealedChars}>{revealedPart}</span>
+                                <span className={styles.maskedChars}>{hiddenPart}</span>
+                                {punctuation}{' '}
+                              </span>
+                            );
                           } else {
-                            // Wrong word - still hidden
+                            // No match - fully hidden
                             return (
                               <span key={i} className={styles.maskedWord}>
-                                {'_'.repeat(word.replace(/[.,!?;:"""''„]/g, '').length)}
-                                {word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : ''}{' '}
+                                {'_'.repeat(pureWord.length)}
+                                {punctuation}{' '}
                               </span>
                             );
                           }
@@ -888,34 +948,18 @@ const DictationPage = () => {
                     </div>
                   </div>
 
-                  {/* Result Display - Shows accuracy percentage below textarea */}
-                  {results[currentSentenceIndex] && (
-                    <div className={`${styles.resultBox} ${results[currentSentenceIndex].isCorrect ? styles.correct : styles.incorrect}`}>
-                      <span className={styles.similarityScore}>
-                        {results[currentSentenceIndex].similarity}% chính xác
-                      </span>
-                      {results[currentSentenceIndex].isCorrect ? (
-                        <span className={styles.resultIcon}>✓</span>
-                      ) : (
-                        <span className={styles.resultIcon}>✗</span>
-                      )}
-                    </div>
-                  )}
-
                   {/* Action Buttons */}
                   <div className={styles.actionButtons}>
                     <button
-                      className={styles.checkButton}
-                      onClick={() => checkAnswer(currentSentenceIndex)}
-                      disabled={!userInputs[currentSentenceIndex]?.trim()}
+                      className={styles.nextButton}
+                      onClick={() => {
+                        if (currentSentenceIndex > 0) {
+                          playSentence(currentSentenceIndex - 1);
+                        }
+                      }}
+                      disabled={currentSentenceIndex <= 0}
                     >
-                      Kiểm tra
-                    </button>
-                    <button
-                      className={styles.showAnswerButton}
-                      onClick={() => showAnswer(currentSentenceIndex)}
-                    >
-                      Xem đáp án
+                      ← Câu trước
                     </button>
                     <button
                       className={styles.nextButton}
@@ -926,19 +970,12 @@ const DictationPage = () => {
                       }}
                       disabled={currentSentenceIndex >= transcriptData.length - 1}
                     >
-                      Câu tiếp →
+                      Câu sau →
                     </button>
                   </div>
                 </div>
 
-                {/* Progress Indicator */}
-                <div className={styles.progressSection}>
-                  <ProgressIndicator
-                    current={completedSentences.length}
-                    total={transcriptData.length}
-                    label="Hoàn thành"
-                  />
-                </div>
+
               </div>
             </div>
 

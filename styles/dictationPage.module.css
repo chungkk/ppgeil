@@ -2098,7 +2098,6 @@
 
 .nextButton:hover {
   background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
-  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
@@ -5697,6 +5696,24 @@
   background: rgba(16, 185, 129, 0.2);
 }
 
+/* Partial Word - Shows partial character matches */
+.partialWord {
+  display: inline;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.revealedChars {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.maskedChars {
+  color: var(--text-secondary);
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
 .inputSection {
   display: flex;
   flex-direction: column;
@@ -5744,33 +5761,31 @@
   right: 8px;
   bottom: 8px;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
   z-index: 10;
 }
 
 /* Record Button */
 .inputRecordBtn {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: linear-gradient(145deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.25) 100%);
-  border: 2px solid rgba(59, 130, 246, 0.4);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.3);
   color: #3b82f6;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   -webkit-tap-highlight-color: transparent;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
 }
 
 .inputRecordBtn:hover {
-  background: linear-gradient(145deg, rgba(59, 130, 246, 0.25) 0%, rgba(59, 130, 246, 0.35) 100%);
-  border-color: rgba(59, 130, 246, 0.6);
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  background: rgba(59, 130, 246, 0.25);
+  border-color: rgba(59, 130, 246, 0.5);
 }
 
 .inputRecordBtn:active {
@@ -5778,34 +5793,30 @@
 }
 
 .inputRecordBtn:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
   transform: none;
 }
 
 /* Recording active state */
 .inputRecordBtn.recording {
-  background: linear-gradient(145deg, rgba(239, 68, 68, 0.3) 0%, rgba(239, 68, 68, 0.5) 100%);
+  background: rgba(239, 68, 68, 0.2);
   border-color: #ef4444;
-  color: #fff;
+  color: #ef4444;
   animation: recordPulse 1.5s ease-in-out infinite;
-  box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
 }
 
 @keyframes recordPulse {
-
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  0%, 100% {
+    opacity: 1;
   }
-
   50% {
-    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    opacity: 0.6;
   }
 }
 
 .inputRecordBtn.recording:hover {
-  background: linear-gradient(145deg, rgba(239, 68, 68, 0.4) 0%, rgba(239, 68, 68, 0.6) 100%);
+  background: rgba(239, 68, 68, 0.3);
   animation: none;
 }
 
@@ -5813,24 +5824,21 @@
 .inputPlaybackBtn {
   width: 36px;
   height: 36px;
-  border-radius: 50%;
-  background: linear-gradient(145deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.25) 100%);
-  border: 2px solid rgba(16, 185, 129, 0.4);
+  border-radius: 8px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
   color: #10b981;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   -webkit-tap-highlight-color: transparent;
-  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.2);
 }
 
 .inputPlaybackBtn:hover {
-  background: linear-gradient(145deg, rgba(16, 185, 129, 0.25) 0%, rgba(16, 185, 129, 0.35) 100%);
-  border-color: rgba(16, 185, 129, 0.6);
-  transform: scale(1.05);
-  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.25);
+  border-color: rgba(16, 185, 129, 0.5);
 }
 
 .inputPlaybackBtn:active {
@@ -5838,9 +5846,8 @@
 }
 
 .inputPlaybackBtn.playing {
-  background: linear-gradient(145deg, rgba(16, 185, 129, 0.3) 0%, rgba(16, 185, 129, 0.45) 100%);
+  background: rgba(16, 185, 129, 0.25);
   border-color: #10b981;
-  color: #fff;
 }
 
 /* Spinner animation for processing */
@@ -5861,20 +5868,16 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .textareaWrapper .dictationInput {
-    padding-right: 55px;
+    padding-right: 85px;
   }
 
   .inputRecordingControls {
     right: 6px;
     bottom: 6px;
-    gap: 4px;
+    gap: 6px;
   }
 
-  .inputRecordBtn {
-    width: 40px;
-    height: 40px;
-  }
-
+  .inputRecordBtn,
   .inputPlaybackBtn {
     width: 32px;
     height: 32px;
