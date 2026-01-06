@@ -37,14 +37,17 @@ const HomePage = () => {
       const categoriesRes = await fetch('/api/article-categories?activeOnly=true');
       const { categories: allCategories } = await categoriesRes.json();
       
-      // Fetch lessons for each category
+      // Fetch lessons for all categories in parallel
+      const lessonsPromises = allCategories.map(category =>
+        fetch(`/api/lessons?category=${category.slug}&limit=6&difficulty=${difficultyFilter}`)
+          .then(res => res.json())
+          .then(data => ({ category, data }))
+      );
+      
+      const results = await Promise.all(lessonsPromises);
+      
       const categoriesData = {};
-      for (const category of allCategories) {
-        const lessonsRes = await fetch(
-          `/api/lessons?category=${category.slug}&limit=6&difficulty=${difficultyFilter}`
-        );
-        const data = await lessonsRes.json();
-        
+      for (const { category, data } of results) {
         // Only include categories that have lessons
         if (data.lessons && data.lessons.length > 0) {
           categoriesData[category.slug] = {
