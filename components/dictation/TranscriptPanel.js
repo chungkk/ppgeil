@@ -252,20 +252,21 @@ const TranscriptPanel = ({
     );
   }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage, onWordClickForPopup, voiceRecordingResult, comparedWords, results]);
 
-  // Auto-scroll to current sentence
+  // Auto-scroll to current sentence - center it within the transcript container only
   useEffect(() => {
     if (transcriptItemRefs.current[currentSentenceIndex] && transcriptSectionRef.current) {
       const container = transcriptSectionRef.current;
       const element = transcriptItemRefs.current[currentSentenceIndex];
 
-      const elementOffsetTop = element.offsetTop;
-      const elementHeight = element.offsetHeight;
-      const containerHeight = container.clientHeight;
-
-      const scrollPosition = elementOffsetTop - (containerHeight / 2) + (elementHeight / 2);
+      const containerRect = container.getBoundingClientRect();
+      const elementRect = element.getBoundingClientRect();
+      
+      // Calculate element position relative to container's scroll - position at ~1/3 from top
+      const elementTopRelative = elementRect.top - containerRect.top + container.scrollTop;
+      const scrollPosition = elementTopRelative - (container.clientHeight / 4);
 
       container.scrollTo({
-        top: scrollPosition,
+        top: Math.max(0, scrollPosition),
         behavior: 'smooth'
       });
     }

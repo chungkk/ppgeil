@@ -201,8 +201,8 @@ const DictationPage = () => {
           const time = player.getCurrentTime();
           setCurrentTime(time);
 
-          // Auto-stop at segment end
-          if (segmentPlayEndTime !== null && time >= segmentPlayEndTime - 0.02) {
+          // Auto-stop at segment end (only if autoStop is enabled)
+          if (autoStop && segmentPlayEndTime !== null && time >= segmentPlayEndTime - 0.02) {
             player.pauseVideo?.();
             setIsPlaying(false);
             setSegmentPlayEndTime(null);
@@ -213,7 +213,7 @@ const DictationPage = () => {
         if (audio && !audio.paused) {
           setCurrentTime(audio.currentTime);
 
-          if (segmentPlayEndTime !== null && audio.currentTime >= segmentPlayEndTime - 0.02) {
+          if (autoStop && segmentPlayEndTime !== null && audio.currentTime >= segmentPlayEndTime - 0.02) {
             audio.pause();
             setIsPlaying(false);
             setSegmentPlayEndTime(null);
@@ -233,7 +233,7 @@ const DictationPage = () => {
     return () => {
       if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
-  }, [isPlaying, segmentPlayEndTime, isYouTube]);
+  }, [isPlaying, segmentPlayEndTime, isYouTube, autoStop]);
 
   // Auto-update current sentence based on time
   useEffect(() => {
