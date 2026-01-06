@@ -3407,8 +3407,8 @@
 
   .middleSection {
     position: fixed;
-    top: calc(48px + 56.25vw + 0px);
-    /* Below video - no gap */
+    top: calc(48px + 56.25vw);
+    /* Below video - calculated from viewport width */
     bottom: calc(52px + env(safe-area-inset-bottom, 0px));
     /* Sát thanh điều khiển */
     left: 4px;
@@ -3421,8 +3421,10 @@
     /* Reset desktop styles for mobile */
     border: none;
     box-shadow: none;
-    background: transparent;
+    background: var(--bg-secondary);
     border-radius: 16px;
+    /* Ensure minimum height and stretch content */
+    min-height: 200px;
   }
 
   .rightSection {
@@ -3825,12 +3827,12 @@
     margin: calc(-1 * var(--spacing-sm));
     margin-bottom: 0;
   }
-  
+
   .dictationArea .columnTitle {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.9);
   }
-  
+
   .dictationArea .sentenceCounter {
     font-size: 11px;
     padding: 3px 8px;
@@ -4444,15 +4446,16 @@
     border: none;
     border-radius: 16px;
     padding: 0;
-    height: auto;
-    min-height: auto;
+    height: 100%;
+    min-height: 0;
     max-height: none;
     overflow: hidden;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
     gap: 0;
-    background: transparent;
+    background: var(--bg-secondary);
+    flex: 1;
   }
 
   /* Dictation header styling handled in earlier mobile section */
@@ -5828,9 +5831,12 @@
 }
 
 @keyframes recordPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.6;
   }
@@ -6112,16 +6118,74 @@
   .threeColumnLayout {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
-    min-height: auto;
+    gap: 0;
+    min-height: calc(100vh - 56px - 52px - env(safe-area-inset-bottom, 0px));
+    /* Full height minus header and bottom buttons */
+    min-height: calc(100dvh - 56px - 52px - env(safe-area-inset-bottom, 0px));
   }
 
   /* Left column is not rendered on mobile via React condition */
 
   .middleColumn {
-    padding: var(--spacing-sm);
-    padding-bottom: 90px; /* Space for fixed action buttons */
-    border-radius: var(--border-radius-sm);
+    padding: 0;
+    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
+    /* Space for fixed bottom navigation buttons */
+    border-radius: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--bg-secondary);
+    min-height: 0;
+  }
+
+  .dictationArea {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .dictationArea .dictationHeader {
+    flex-shrink: 0;
+    margin: 0;
+    border-radius: 16px 16px 0 0;
+    padding: 10px 16px;
+    min-height: 44px;
+    height: auto;
+  }
+
+  .hiddenSentenceBox {
+    flex-shrink: 0;
+    padding: var(--spacing-md);
+    min-height: 60px;
+    background: var(--bg-secondary);
+  }
+
+  .inputSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    background: var(--bg-secondary);
+    overflow: hidden;
+  }
+
+  .textareaWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .dictationInput {
+    flex: 1;
+    min-height: 60px;
+    resize: none;
   }
 
   .hiddenSentenceBox {
