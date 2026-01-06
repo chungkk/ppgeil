@@ -344,7 +344,7 @@ const TranscriptPanel = ({
               const sentenceRevealedWords = revealedHintWords[originalIndex] || {};
               const isActiveSentencePlaying = originalIndex === currentSentenceIndex && isPlaying;
               const sentenceResult = results[originalIndex];
-              const shouldShowFullText = learningMode === 'shadowing' || isCompleted || (dictationMode === 'full-sentence' && sentenceResult?.showAnswer);
+              const shouldShowFullText = learningMode === 'shadowing' || sentenceResult?.showAnswer;
 
               return (
                 <div

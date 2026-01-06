@@ -607,6 +607,32 @@ const DictationPage = () => {
     clearRecording();
   }, [currentSentenceIndex]);
 
+  // Global keyboard shortcut: Space to play/pause (when not typing in input)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Only handle Space key
+      if (e.code !== 'Space') return;
+
+      // Check if user is typing in an input or textarea
+      const activeElement = document.activeElement;
+      const isTyping = activeElement?.tagName === 'INPUT' ||
+        activeElement?.tagName === 'TEXTAREA' ||
+        activeElement?.isContentEditable;
+
+      // If typing, let Space work normally
+      if (isTyping) return;
+
+      // Prevent default scroll behavior
+      e.preventDefault();
+
+      // Toggle play/pause
+      handlePlayPause();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handlePlayPause]);
+
 
 
   if (loading) {
