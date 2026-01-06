@@ -352,51 +352,7 @@ const DictationVideoSection = ({
                 )}
               </button>
 
-              {/* Voice Recording Button */}
-              <button
-                className={`${styles.controlBtn} ${styles.recordBtn} ${isRecording ? styles.recording : ''}`}
-                onClick={handleRecordingClick}
-                disabled={isProcessing}
-                title={isRecording ? 'Dừng ghi âm' : 'Ghi âm'}
-              >
-                {isProcessing ? (
-                  <svg className={styles.spinner} viewBox="0 0 24 24" width="20" height="20">
-                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="32">
-                      <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
-                    </circle>
-                  </svg>
-                ) : isRecording ? (
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                    <rect x="6" y="6" width="12" height="12" rx="2"/>
-                  </svg>
-                ) : (
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                    <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
-                    <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z"/>
-                    <path d="M11 18h2v4h-2z"/>
-                    <path d="M8 22h8v2H8z"/>
-                  </svg>
-                )}
-              </button>
 
-              {/* Playback recorded audio */}
-              {recordedBlob && (
-                <button
-                  className={`${styles.controlBtn} ${styles.playbackRecordBtn}`}
-                  onClick={playRecordedAudio}
-                  title={isPlayingRecording ? 'Dừng phát' : 'Phát lại ghi âm'}
-                >
-                  {isPlayingRecording ? (
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                      <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
-                    </svg>
-                  ) : (
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  )}
-                </button>
-              )}
 
               {/* Next Sentence */}
               <button
