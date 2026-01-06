@@ -32,44 +32,15 @@ const HomePage = () => {
   const fetchCategoriesWithLessons = useCallback(async () => {
     try {
       setLoading(true);
-      
-      // Fetch all active categories
-      const categoriesRes = await fetch('/api/article-categories?activeOnly=true');
-      const { categories: allCategories } = await categoriesRes.json();
-      
-      // Fetch lessons for all categories in parallel
-      const lessonsPromises = allCategories.map(category =>
-        fetch(`/api/lessons?category=${category.slug}&limit=6&difficulty=${difficultyFilter}`)
-          .then(res => res.json())
-          .then(data => ({ category, data }))
-      );
-      
-      const results = await Promise.all(lessonsPromises);
-      
-      const categoriesData = {};
-      for (const { category, data } of results) {
-        // Only include categories that have lessons
-        if (data.lessons && data.lessons.length > 0) {
-          categoriesData[category.slug] = {
-            category,
-            lessons: data.lessons,
-            totalCount: data.total || data.lessons.length
-          };
-        }
-      }
-      
-      // Sort categories: non-system first, then system categories
-      const sortedCategories = allCategories
-        .filter(cat => categoriesData[cat.slug])
-        .sort((a, b) => {
-          if (a.isSystem === b.isSystem) return a.order - b.order;
-          return a.isSystem ? 1 : -1;
-        });
-      
-      setCategories(sortedCategories);
-      setCategoriesWithLessons(categoriesData);
+
+      // Single optimized API call instead of N+1 requests
+      const response = await fetch(`/api/homepage-data?difficulty=${difficultyFilter}&limit=6`);
+      const data = await response.json();
+
+      setCategories(data.categories || []);
+      setCategoriesWithLessons(data.categoriesWithLessons || {});
     } catch (error) {
-      console.error('Error fetching categories and lessons:', error);
+      console.error('Error fetching homepage data:', error);
     } finally {
       setLoading(false);
     }
@@ -85,7 +56,7 @@ const HomePage = () => {
     fetch(`/api/lessons/${lesson.id}/view`, {
       method: 'POST'
     }).catch(err => console.error('Error incrementing view count:', err));
-    
+
     // Show mode selection popup
     setSelectedLesson(lesson);
     setShowModePopup(true);
@@ -95,7 +66,7 @@ const HomePage = () => {
     // Close popup
     setShowModePopup(false);
     setSelectedLesson(null);
-    
+
     // Navigate to appropriate page based on mode
     let route;
     if (mode === 'dictation') {
@@ -229,7 +200,7 @@ const HomePage = () => {
                   <h2 className="category-title">
                     {category.name} ({categoryData.totalCount} lessons)
                   </h2>
-                  <button 
+                  <button
                     className="view-all-btn"
                     onClick={() => handleViewAll(category.slug)}
                   >
