@@ -4697,6 +4697,11 @@
     flex-direction: column;
   }
 
+  /* Mobile Video Section - Fixed to header for 480px screens */
+  .mobileVideoSection {
+    top: 44px;
+  }
+
   /* Optimize header for very small screens */
   .videoHeader,
   .transcriptHeader {
@@ -6128,6 +6133,8 @@
 
   .middleColumn {
     padding: 0;
+    padding-top: calc(56.25vw);
+    /* Space for fixed video (16:9 aspect ratio) */
     padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
     /* Space for fixed bottom navigation buttons */
     border-radius: 0;
@@ -6253,9 +6260,15 @@
     display: none !important;
   }
 
-  /* Mobile Video Section */
+  /* Mobile Video Section - Fixed to header like shadowing page */
   .mobileVideoSection {
-    margin-bottom: var(--spacing-sm);
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #000;
+    margin-bottom: 0;
   }
 
   .mobileVideoWrapper {
@@ -6263,7 +6276,7 @@
     width: 100%;
     padding-top: 56.25%;
     background: #000;
-    border-radius: var(--border-radius-sm);
+    border-radius: 0;
     overflow: hidden;
   }
 
