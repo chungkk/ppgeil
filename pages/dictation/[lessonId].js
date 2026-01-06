@@ -73,6 +73,10 @@ const DictationPage = () => {
   const [isYouTube, setIsYouTube] = useState(false);
   const [isYouTubeAPIReady, setIsYouTubeAPIReady] = useState(false);
   const inputRefs = useRef({});
+  
+  // User seeking state (to prevent auto-update during click navigation)
+  const [isUserSeeking, setIsUserSeeking] = useState(false);
+  const [userSeekTimeout, setUserSeekTimeout] = useState(null);
 
   // Voice Recording states
   const [isRecording, setIsRecording] = useState(false);
@@ -237,6 +241,7 @@ const DictationPage = () => {
 
   // Auto-update current sentence based on time
   useEffect(() => {
+    if (isUserSeeking) return; // Skip auto-update during user seek
     if (!transcriptData.length) return;
 
     const currentIndex = transcriptData.findIndex(
@@ -246,12 +251,23 @@ const DictationPage = () => {
     if (currentIndex !== -1 && currentIndex !== currentSentenceIndex) {
       setCurrentSentenceIndex(currentIndex);
     }
-  }, [currentTime, transcriptData, currentSentenceIndex]);
+  }, [currentTime, transcriptData, currentSentenceIndex, isUserSeeking]);
+  
+  // Cleanup user seek timeout
+  useEffect(() => {
+    return () => {
+      if (userSeekTimeout) clearTimeout(userSeekTimeout);
+    };
+  }, [userSeekTimeout]);
 
-  // Play sentence
+  // Play sentence (with user seeking flag to prevent auto-update interference)
   const playSentence = useCallback((index) => {
     const sentence = transcriptData[index];
     if (!sentence) return;
+
+    // Clear previous timeout and set user seeking flag
+    if (userSeekTimeout) clearTimeout(userSeekTimeout);
+    setIsUserSeeking(true);
 
     if (isYouTube) {
       const player = youtubePlayerRef.current;
@@ -270,7 +286,13 @@ const DictationPage = () => {
     setIsPlaying(true);
     setSegmentPlayEndTime(sentence.end);
     setCurrentSentenceIndex(index);
-  }, [transcriptData, isYouTube]);
+    
+    // Reset seeking flag after seek completes (allows smooth transition)
+    const timeout = setTimeout(() => {
+      setIsUserSeeking(false);
+    }, 1500);
+    setUserSeekTimeout(timeout);
+  }, [transcriptData, isYouTube, userSeekTimeout]);
 
   // Handle play/pause
   const handlePlayPause = useCallback(() => {
