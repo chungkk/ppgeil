@@ -3812,9 +3812,30 @@
     text-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
   }
 
-  /* Hide old dictationHeader on mobile - using new dictationHeaderMobile */
-  .dictationHeader {
-    display: none;
+  /* Mobile dictationHeader - compact style */
+  .dictationArea .dictationHeader {
+    display: flex;
+    padding: 8px 12px;
+    min-height: 36px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    background: rgba(20, 20, 30, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin: calc(-1 * var(--spacing-sm));
+    margin-bottom: 0;
+  }
+  
+  .dictationArea .columnTitle {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .dictationArea .sentenceCounter {
+    font-size: 11px;
+    padding: 3px 8px;
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
   }
 
   /* Mobile hide level dropdown - compact & optimized */
@@ -6101,18 +6122,6 @@
     padding: var(--spacing-sm);
     padding-bottom: 90px; /* Space for fixed action buttons */
     border-radius: var(--border-radius-sm);
-  }
-
-  .dictationHeader {
-    display: none;
-  }
-
-  .columnTitle {
-    font-size: 15px;
-  }
-
-  .sentenceCounter {
-    font-size: 12px;
   }
 
   .hiddenSentenceBox {
