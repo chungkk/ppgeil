@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import SEO, { generateBreadcrumbStructuredData } from '../../components/SEO';
 import ProtectedPage from '../../components/ProtectedPage';
+import UserProfileSidebar from '../../components/UserProfileSidebar';
 import { useAuth } from '../../context/AuthContext';
 import { fetchWithAuth } from '../../lib/api';
 import { ProfilePageSkeleton } from '../../components/SkeletonLoader';
@@ -166,95 +167,81 @@ function DashboardIndex() {
       />
 
       <div className={styles.profilePage}>
-        {/* Hero Section */}
-        <section className={styles.heroSection}>
-          <div className={styles.heroContent}>
-            {/* Avatar */}
-            <div className={styles.avatarContainer}>
-              <div className={styles.avatarRing}></div>
-              <div className={styles.userAvatar}>
-                {user?.name?.charAt(0).toUpperCase() || 'U'}
-              </div>
-              <div className={styles.avatarBadge}>✓</div>
-            </div>
+        <div className={styles.profileContainer}>
+          <div className={styles.profileGrid}>
+            {/* Left Sidebar */}
+            <UserProfileSidebar
+              stats={{
+                totalLessons: lessonStats.withProgress,
+                completedLessons: lessonStats.completed,
+                inProgressLessons: lessonStats.inProgress,
+              }}
+              userPoints={userPoints}
+            />
 
-            {/* User Info */}
-            <div className={styles.userInfo}>
-              <h1 className={styles.userName}>
-                {user?.name || 'User'}
-                {userPoints >= 5000 && (
-                  <span className={styles.premiumBadge}>⭐ VIP</span>
-                )}
-              </h1>
-              <p className={styles.userEmail}>
-                <span>✉️</span>
-                {user?.email || 'email@example.com'}
-              </p>
-              <div className={styles.userMeta}>
-                <div className={styles.metaItem}>
-                  <span>📅</span>
-                  Tham gia: {formatJoinDate(user?.createdAt)}
+            {/* Main Content */}
+            <div className={styles.mainContent}>
+              {/* Page Header */}
+              <div className={styles.pageHeader}>
+                <div className={styles.headerLeft}>
+                  <h1 className={styles.pageTitle}>
+                    <span className={styles.titleIcon}>👤</span>
+                    Hồ sơ của tôi
+                  </h1>
+                  <p className={styles.pageSubtitle}>
+                    Theo dõi tiến độ học tập tiếng Đức của bạn
+                  </p>
                 </div>
-                <div className={styles.metaItem}>
-                  <span>🎯</span>
-                  {lessonStats.withProgress} bài đã học
-                </div>
-              </div>
-              <div className={styles.heroActions}>
-                <Link href="/profile/settings" className={styles.editProfileBtn}>
-                  <span>⚙️</span>
-                  Cài đặt tài khoản
-                </Link>
-                <Link href="/profile/vocabulary" className={styles.settingsBtn}>
-                  📚
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Main Container */}
-        <div className={styles.mainContainer}>
-          {/* Stats Grid */}
-          <div className={styles.statsGrid}>
-            <div className={`${styles.statCard} ${styles.points}`}>
-              <div className={styles.statCardHeader}>
-                <div className={styles.statCardIcon}>💎</div>
-                <div className={`${styles.statCardTrend} ${styles.up}`}>
-                  <span>↑</span> +25
+                <div className={styles.headerActions}>
+                  <Link href="/profile/vocabulary" className={styles.vocabBtn}>
+                    <span>📚</span> Từ vựng
+                  </Link>
+                  <Link href="/profile/settings" className={styles.settingsBtn}>
+                    <span>⚙️</span> Cài đặt
+                  </Link>
                 </div>
               </div>
-              <h3 className={styles.statCardValue}>{userPoints?.toLocaleString() || 0}</h3>
-              <p className={styles.statCardLabel}>Điểm thưởng</p>
-            </div>
 
-            <div className={`${styles.statCard} ${styles.lessons}`}>
-              <div className={styles.statCardHeader}>
-                <div className={styles.statCardIcon}>📚</div>
+              {/* Stats Grid */}
+              <div className={styles.statsGrid}>
+                <div className={`${styles.statCard} ${styles.points}`}>
+                  <div className={styles.statCardHeader}>
+                    <div className={styles.statCardIcon}>💎</div>
+                    <div className={`${styles.statCardTrend} ${styles.up}`}>
+                      <span>↑</span> +25
+                    </div>
+                  </div>
+                  <h3 className={styles.statCardValue}>{userPoints?.toLocaleString() || 0}</h3>
+                  <p className={styles.statCardLabel}>Điểm thưởng</p>
+                </div>
+
+                <div className={`${styles.statCard} ${styles.lessons}`}>
+                  <div className={styles.statCardHeader}>
+                    <div className={styles.statCardIcon}>📚</div>
+                  </div>
+                  <h3 className={styles.statCardValue}>{lessonStats.withProgress}</h3>
+                  <p className={styles.statCardLabel}>Bài đã học</p>
+                </div>
+
+                <div className={`${styles.statCard} ${styles.completed}`}>
+                  <div className={styles.statCardHeader}>
+                    <div className={styles.statCardIcon}>✅</div>
+                  </div>
+                  <h3 className={styles.statCardValue}>{lessonStats.completed}</h3>
+                  <p className={styles.statCardLabel}>Hoàn thành</p>
+                </div>
+
+                <div className={`${styles.statCard} ${styles.streak}`}>
+                  <div className={styles.statCardHeader}>
+                    <div className={styles.statCardIcon}>🔥</div>
+                  </div>
+                  <h3 className={styles.statCardValue}>{lessonStats.inProgress}</h3>
+                  <p className={styles.statCardLabel}>Đang học</p>
+                </div>
               </div>
-              <h3 className={styles.statCardValue}>{lessonStats.withProgress}</h3>
-              <p className={styles.statCardLabel}>Bài đã học</p>
-            </div>
 
-            <div className={`${styles.statCard} ${styles.completed}`}>
-              <div className={styles.statCardHeader}>
-                <div className={styles.statCardIcon}>✅</div>
-              </div>
-              <h3 className={styles.statCardValue}>{lessonStats.completed}</h3>
-              <p className={styles.statCardLabel}>Hoàn thành</p>
-            </div>
-
-            <div className={`${styles.statCard} ${styles.streak}`}>
-              <div className={styles.statCardHeader}>
-                <div className={styles.statCardIcon}>🔥</div>
-              </div>
-              <h3 className={styles.statCardValue}>{lessonStats.inProgress}</h3>
-              <p className={styles.statCardLabel}>Đang học</p>
-            </div>
-          </div>
-
-          {/* Content Grid */}
-          <div className={styles.contentGrid}>
+              {/* Content Grid */}
+              <div className={styles.contentGrid}>
             {/* Progress Section */}
             <div className={styles.sectionCard}>
               <div className={styles.sectionHeader}>
@@ -453,6 +440,8 @@ function DashboardIndex() {
                   )}
                 </div>
               </div>
+            </div>
+          </div>
             </div>
           </div>
         </div>
