@@ -74,10 +74,10 @@ const Header = () => {
   const [showPhraseTooltip, setShowPhraseTooltip] = useState(false);
   const [phraseExplanation, setPhraseExplanation] = useState(null);
   const [loadingExplanation, setLoadingExplanation] = useState(false);
-  
+
   // Get today's Nomen-Verb-Verbindung
   const todaysPhrase = useMemo(() => getTodaysPhrase(), []);
-  
+
   // Lock body scroll when phrase tooltip is open
   useEffect(() => {
     if (showPhraseTooltip) {
@@ -89,20 +89,20 @@ const Header = () => {
       document.body.style.overflow = '';
     };
   }, [showPhraseTooltip]);
-  
+
   // Fetch detailed explanation - check cache first, then fallback to OpenAI
   const fetchPhraseExplanation = useCallback(async () => {
     if (phraseExplanation || loadingExplanation) return;
-    
+
     const targetLang = user?.nativeLanguage || 'vi';
-    
+
     // Check cache first
     const cachedExplanation = phraseExplanationsCache[todaysPhrase.phrase]?.[targetLang];
     if (cachedExplanation) {
       setPhraseExplanation(cachedExplanation);
       return;
     }
-    
+
     // Fallback to OpenAI API if not in cache
     setLoadingExplanation(true);
     try {
@@ -116,7 +116,7 @@ const Header = () => {
           targetLang,
         }),
       });
-      
+
       if (response.ok) {
         const data = await response.json();
         setPhraseExplanation(data.explanation);
@@ -127,7 +127,7 @@ const Header = () => {
       setLoadingExplanation(false);
     }
   }, [todaysPhrase, phraseExplanation, loadingExplanation, user?.nativeLanguage]);
-  
+
 
 
   // Detect scroll for transparent header
@@ -261,8 +261,8 @@ const Header = () => {
         </Link>
 
         <nav className={`${styles.nav} ${state.mobileMenuOpen ? styles.open : ''}`}>
-          {/* Daily Nomen-Verb-Verbindung */}
-          <div 
+          {/* Daily Nomen-Verb-Verbindung - Tạm ẩn */}
+          {false && <div
             ref={phraseMenuRef}
             className={styles.dailyPhraseContainer}
             onClick={() => {
@@ -276,20 +276,20 @@ const Header = () => {
           >
             <span className={styles.dailyPhraseIcon}>📚</span>
             <span className={styles.dailyPhraseText}>{todaysPhrase.phrase}</span>
-            
+
             {showPhraseTooltip && (
               <div className={styles.dailyPhraseTooltip}>
                 <div className={styles.phraseTooltipTitle}>Nomen-Verb-Verbindung des Tages</div>
                 <div className={styles.phraseTooltipPhrase}>{todaysPhrase.phrase}</div>
                 <div className={styles.phraseTooltipMeaning}>= {todaysPhrase.meaning}</div>
-                
+
                 {loadingExplanation && (
                   <div className={styles.phraseLoading}>
                     <span className={styles.loadingSpinner}></span>
                     Đang tải giải thích...
                   </div>
                 )}
-                
+
                 {phraseExplanation && (
                   <div className={styles.phraseExplanation}>
                     {phraseExplanation.split('\n').map((line, index) => {
@@ -312,7 +312,7 @@ const Header = () => {
                     })}
                   </div>
                 )}
-                
+
                 {!phraseExplanation && !loadingExplanation && (
                   <>
                     <div className={styles.phraseTooltipTranslation}>
@@ -323,8 +323,8 @@ const Header = () => {
                 )}
               </div>
             )}
-          </div>
-          
+          </div>}
+
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -337,7 +337,7 @@ const Header = () => {
           ))}
         </nav>
 
-         <div className={styles.rightSection}>
+        <div className={styles.rightSection}>
 
           {/* Desktop only: Theme toggle - Temporarily hidden */}
           {/* <button
@@ -366,9 +366,8 @@ const Header = () => {
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
-                    className={`${styles.languageItem} ${
-                      lang.code === currentLanguage ? styles.active : ''
-                    }`}
+                    className={`${styles.languageItem} ${lang.code === currentLanguage ? styles.active : ''
+                      }`}
                     onClick={() => {
                       changeLanguage(lang.code);
                       dispatch({ type: 'SET_LANGUAGE_MENU', payload: false });
@@ -525,9 +524,8 @@ const Header = () => {
                             {languages.map((lang) => (
                               <button
                                 key={lang.code}
-                                className={`${styles.languageOptionBtn} ${
-                                  lang.code === currentLanguage ? styles.active : ''
-                                }`}
+                                className={`${styles.languageOptionBtn} ${lang.code === currentLanguage ? styles.active : ''
+                                  }`}
                                 onClick={() => changeLanguage(lang.code)}
                               >
                                 <span>{lang.flag}</span>
@@ -578,10 +576,10 @@ const Header = () => {
             </>
           )}
 
-           <LoginModal
-             isOpen={state.loginModalOpen}
-             onClose={() => dispatch({ type: 'SET_LOGIN_MODAL', payload: false })}
-           />
+          <LoginModal
+            isOpen={state.loginModalOpen}
+            onClose={() => dispatch({ type: 'SET_LOGIN_MODAL', payload: false })}
+          />
         </div>
       </div>
     </header>
