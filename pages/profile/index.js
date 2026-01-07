@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
+import Link from 'next/link';
 import SEO, { generateBreadcrumbStructuredData } from '../../components/SEO';
 import ProtectedPage from '../../components/ProtectedPage';
-import UserProfileSidebar from '../../components/UserProfileSidebar';
 import { useAuth } from '../../context/AuthContext';
 import { fetchWithAuth } from '../../lib/api';
 import { ProfilePageSkeleton } from '../../components/SkeletonLoader';
@@ -18,6 +18,7 @@ function DashboardIndex() {
   const [progress, setProgress] = useState([]);
   const [allLessons, setAllLessons] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [recentActivity, setRecentActivity] = useState([]);
 
   const loadData = useCallback(async () => {
     try {
@@ -29,6 +30,12 @@ function DashboardIndex() {
       const validProgress = Array.isArray(progressData) ? progressData : [];
       setProgress(validProgress);
 
+      // Generate recent activity from progress
+      const sortedProgress = [...validProgress]
+        .sort((a, b) => new Date(b.updatedAt || b.createdAt) - new Date(a.updatedAt || a.createdAt))
+        .slice(0, 5);
+      setRecentActivity(sortedProgress);
+
       // Load ALL lessons (sorted by order)
       try {
         const lessonsRes = await fetchWithAuth('/api/lessons?limit=1000');
@@ -36,7 +43,6 @@ function DashboardIndex() {
         const lessons = Array.isArray(lessonsData) ? lessonsData : (lessonsData.lessons || []);
 
         if (lessons && lessons.length > 0) {
-          // Sort by newest first (createdAt descending)
           const sortedLessons = [...lessons].sort((a, b) => {
             const dateA = new Date(a.createdAt || 0);
             const dateB = new Date(b.createdAt || 0);
@@ -67,7 +73,7 @@ function DashboardIndex() {
     return Math.min(100, maxProgress);
   }, [progress]);
 
-  // Memoized lesson statistics - avoid recalculating in render
+  // Memoized lesson statistics
   const lessonStats = useMemo(() => {
     const lessonsWithProgress = allLessons.filter(l => calculateProgress(l.id) > 0);
     const completedLessons = lessonsWithProgress.filter(l => calculateProgress(l.id) === 100);
@@ -86,18 +92,43 @@ function DashboardIndex() {
       completed: completedLessons.length,
       inProgress: inProgressLessons.length,
       sortedLessons,
-      progressPercent: allLessons.length > 0 
-        ? Math.round((lessonsWithProgress.length / allLessons.length) * 100) 
+      progressPercent: allLessons.length > 0
+        ? Math.round((lessonsWithProgress.length / allLessons.length) * 100)
         : 0
     };
   }, [allLessons, calculateProgress]);
 
+  // Format date helper
+  const formatDate = (dateString) => {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffMs = now - date;
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHours = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+
+    if (diffMins < 1) return 'Vừa xong';
+    if (diffMins < 60) return `${diffMins} phút trước`;
+    if (diffHours < 24) return `${diffHours} giờ trước`;
+    if (diffDays < 7) return `${diffDays} ngày trước`;
+    return date.toLocaleDateString('vi-VN');
+  };
+
+  // Format join date
+  const formatJoinDate = (dateString) => {
+    if (!dateString) return 'N/A';
+    return new Date(dateString).toLocaleDateString('vi-VN', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  };
+
   if (loading) {
     return (
       <div className={styles.profilePage}>
-        <div className={styles.profileContainer}>
-          <ProfilePageSkeleton />
-        </div>
+        <ProfilePageSkeleton />
       </div>
     );
   }
@@ -107,6 +138,16 @@ function DashboardIndex() {
     { name: 'Home', url: '/' },
     { name: 'Profile', url: '/profile' }
   ]);
+
+  // Achievements data (static for now, can be dynamic later)
+  const achievements = [
+    { icon: '🎯', name: 'Khởi đầu', unlocked: lessonStats.withProgress > 0 },
+    { icon: '⚡', name: 'Chăm chỉ', unlocked: lessonStats.withProgress >= 5 },
+    { icon: '🏆', name: 'Hoàn hảo', unlocked: lessonStats.completed >= 3 },
+    { icon: '🔥', name: '7 ngày', unlocked: false },
+    { icon: '💎', name: 'VIP', unlocked: userPoints >= 1000 },
+    { icon: '🎓', name: 'Bậc thầy', unlocked: lessonStats.completed >= 10 },
+  ];
 
   return (
     <>
@@ -121,81 +162,290 @@ function DashboardIndex() {
       />
 
       <div className={styles.profilePage}>
-        <div className={styles.profileContainer}>
-          <div className={styles.profileGrid}>
-            {/* LEFT COLUMN - User Profile Sidebar */}
-            <UserProfileSidebar
-              stats={{
-                totalLessons: lessonStats.withProgress,
-                completedLessons: lessonStats.completed,
-                inProgressLessons: lessonStats.inProgress,
-              }}
-              userPoints={userPoints}
-            />
+        {/* Hero Section */}
+        <section className={styles.heroSection}>
+          <div className={styles.heroContent}>
+            {/* Avatar */}
+            <div className={styles.avatarContainer}>
+              <div className={styles.avatarRing}></div>
+              <div className={styles.userAvatar}>
+                {user?.name?.charAt(0).toUpperCase() || 'U'}
+              </div>
+              <div className={styles.avatarBadge}>✓</div>
+            </div>
 
-            {/* RIGHT COLUMN - Main Content */}
-            <div className={styles.mainContent}>
-            {/* Overall Lesson Progress - List of all lessons with % */}
-            <div className={styles.overallProgressSection}>
-              <div className={styles.overallProgressHeader}>
-                <h2 className={styles.sectionTitleSmall}>📊 Tiến độ bài học</h2>
-                <div className={styles.overallStats}>
-                  <span className={styles.overallStatBadge}>
-                    {lessonStats.withProgress} / {lessonStats.total} bài
-                  </span>
-                  <span className={styles.overallStatBadge}>
-                    {lessonStats.progressPercent}% tổng
-                  </span>
+            {/* User Info */}
+            <div className={styles.userInfo}>
+              <h1 className={styles.userName}>
+                {user?.name || 'User'}
+                {userPoints >= 5000 && (
+                  <span className={styles.premiumBadge}>⭐ VIP</span>
+                )}
+              </h1>
+              <p className={styles.userEmail}>
+                <span>✉️</span>
+                {user?.email || 'email@example.com'}
+              </p>
+              <div className={styles.userMeta}>
+                <div className={styles.metaItem}>
+                  <span>📅</span>
+                  Tham gia: {formatJoinDate(user?.createdAt)}
+                </div>
+                <div className={styles.metaItem}>
+                  <span>🎯</span>
+                  {lessonStats.withProgress} bài đã học
+                </div>
+              </div>
+              <div className={styles.heroActions}>
+                <Link href="/profile/settings" className={styles.editProfileBtn}>
+                  <span>⚙️</span>
+                  Cài đặt tài khoản
+                </Link>
+                <Link href="/profile/vocabulary" className={styles.settingsBtn}>
+                  📚
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Main Container */}
+        <div className={styles.mainContainer}>
+          {/* Stats Grid */}
+          <div className={styles.statsGrid}>
+            <div className={`${styles.statCard} ${styles.points}`}>
+              <div className={styles.statCardHeader}>
+                <div className={styles.statCardIcon}>💎</div>
+                <div className={`${styles.statCardTrend} ${styles.up}`}>
+                  <span>↑</span> +25
+                </div>
+              </div>
+              <h3 className={styles.statCardValue}>{userPoints?.toLocaleString() || 0}</h3>
+              <p className={styles.statCardLabel}>Điểm thưởng</p>
+            </div>
+
+            <div className={`${styles.statCard} ${styles.lessons}`}>
+              <div className={styles.statCardHeader}>
+                <div className={styles.statCardIcon}>📚</div>
+              </div>
+              <h3 className={styles.statCardValue}>{lessonStats.withProgress}</h3>
+              <p className={styles.statCardLabel}>Bài đã học</p>
+            </div>
+
+            <div className={`${styles.statCard} ${styles.completed}`}>
+              <div className={styles.statCardHeader}>
+                <div className={styles.statCardIcon}>✅</div>
+              </div>
+              <h3 className={styles.statCardValue}>{lessonStats.completed}</h3>
+              <p className={styles.statCardLabel}>Hoàn thành</p>
+            </div>
+
+            <div className={`${styles.statCard} ${styles.streak}`}>
+              <div className={styles.statCardHeader}>
+                <div className={styles.statCardIcon}>🔥</div>
+              </div>
+              <h3 className={styles.statCardValue}>{lessonStats.inProgress}</h3>
+              <p className={styles.statCardLabel}>Đang học</p>
+            </div>
+          </div>
+
+          {/* Content Grid */}
+          <div className={styles.contentGrid}>
+            {/* Progress Section */}
+            <div className={styles.sectionCard}>
+              <div className={styles.sectionHeader}>
+                <h2 className={styles.sectionTitle}>
+                  <span>📊</span>
+                  Tiến độ học tập
+                </h2>
+                <Link href="/" className={styles.sectionAction}>
+                  Xem thêm bài học
+                  <span>→</span>
+                </Link>
+              </div>
+              <div className={styles.sectionBody}>
+                <div className={styles.progressOverview}>
+                  {lessonStats.withProgress === 0 ? (
+                    <div className={styles.emptyState}>
+                      <span className={styles.emptyStateIcon}>🚀</span>
+                      <h3 className={styles.emptyStateTitle}>Bắt đầu hành trình học tập!</h3>
+                      <p className={styles.emptyStateText}>
+                        Khám phá các bài học và nâng cao kỹ năng tiếng Đức của bạn ngay hôm nay.
+                      </p>
+                      <Link href="/" className={styles.startLearningBtn}>
+                        <span>📚</span>
+                        Khám phá bài học
+                      </Link>
+                    </div>
+                  ) : (
+                    <>
+                      {/* Progress Summary */}
+                      <div className={styles.progressSummary}>
+                        <div className={styles.summaryItem}>
+                          <span className={styles.summaryValue}>{lessonStats.total}</span>
+                          <span className={styles.summaryLabel}>Tổng bài</span>
+                        </div>
+                        <div className={styles.summaryItem}>
+                          <span className={styles.summaryValue}>{lessonStats.progressPercent}%</span>
+                          <span className={styles.summaryLabel}>Tổng tiến độ</span>
+                        </div>
+                        <div className={styles.summaryItem}>
+                          <span className={styles.summaryValue}>{lessonStats.completed}</span>
+                          <span className={styles.summaryLabel}>Hoàn thành</span>
+                        </div>
+                      </div>
+
+                      {/* Progress List */}
+                      <div className={styles.progressList}>
+                        {lessonStats.sortedLessons.slice(0, 6).map((lesson) => {
+                          const progressPercent = calculateProgress(lesson.id);
+                          return (
+                            <div
+                              key={lesson.id}
+                              className={styles.progressItem}
+                              onClick={() => navigateWithLocale(router, `/${lesson.id}`)}
+                            >
+                              <div className={styles.progressItemIcon}>
+                                {progressPercent === 100 ? '✅' : '📖'}
+                              </div>
+                              <div className={styles.progressItemContent}>
+                                <h4 className={styles.progressItemTitle}>
+                                  {lesson.displayTitle || lesson.title}
+                                </h4>
+                                <div className={styles.progressItemBar}>
+                                  <div
+                                    className={styles.progressItemBarFill}
+                                    style={{ width: `${progressPercent}%` }}
+                                  />
+                                </div>
+                              </div>
+                              {progressPercent === 100 ? (
+                                <span className={styles.progressItemBadge}>
+                                  ✓ Xong
+                                </span>
+                              ) : (
+                                <span className={styles.progressItemPercent}>
+                                  {Math.round(progressPercent)}%
+                                </span>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Right Sidebar */}
+            <div className={styles.rightSidebar}>
+              {/* Quick Actions */}
+              <div className={styles.sectionCard}>
+                <div className={styles.sectionHeader}>
+                  <h2 className={styles.sectionTitle}>
+                    <span>⚡</span>
+                    Hành động nhanh
+                  </h2>
+                </div>
+                <div className={styles.quickActions}>
+                  <Link href="/" className={styles.quickActionBtn}>
+                    <div className={`${styles.quickActionIcon} ${styles.shadowing}`}>🎙️</div>
+                    <div className={styles.quickActionContent}>
+                      <span className={styles.quickActionLabel}>Shadowing</span>
+                      <span className={styles.quickActionDesc}>Luyện phát âm theo video</span>
+                    </div>
+                    <span className={styles.quickActionArrow}>→</span>
+                  </Link>
+                  <Link href="/" className={styles.quickActionBtn}>
+                    <div className={`${styles.quickActionIcon} ${styles.dictation}`}>✍️</div>
+                    <div className={styles.quickActionContent}>
+                      <span className={styles.quickActionLabel}>Dictation</span>
+                      <span className={styles.quickActionDesc}>Nghe và chép lại</span>
+                    </div>
+                    <span className={styles.quickActionArrow}>→</span>
+                  </Link>
+                  <Link href="/profile/vocabulary" className={styles.quickActionBtn}>
+                    <div className={`${styles.quickActionIcon} ${styles.vocabulary}`}>📝</div>
+                    <div className={styles.quickActionContent}>
+                      <span className={styles.quickActionLabel}>Từ vựng</span>
+                      <span className={styles.quickActionDesc}>Ôn tập từ đã lưu</span>
+                    </div>
+                    <span className={styles.quickActionArrow}>→</span>
+                  </Link>
                 </div>
               </div>
 
-              {lessonStats.withProgress === 0 ? (
-                <div className={styles.emptyProgress}>
-                  <div className={styles.emptyProgressIcon}>📚</div>
-                  <p className={styles.emptyProgressText}>Chưa có bài học nào. Bắt đầu học ngay!</p>
+              {/* Achievements */}
+              <div className={styles.sectionCard}>
+                <div className={styles.sectionHeader}>
+                  <h2 className={styles.sectionTitle}>
+                    <span>🏅</span>
+                    Thành tích
+                  </h2>
                 </div>
-              ) : (
-                <div className={styles.lessonProgressList}>
-                  {lessonStats.sortedLessons.map((lesson) => {
-                      const progressPercent = calculateProgress(lesson.id);
-                      return (
-                        <div 
-                          key={lesson.id} 
-                          className={styles.lessonProgressItem}
-                          onClick={() => navigateWithLocale(router, `/${lesson.id}`)}
-                          style={{ cursor: 'pointer' }}
-                        >
-                          <div className={styles.lessonProgressItemHeader}>
-                            <div className={styles.lessonProgressItemTitle}>
-                              <span className={styles.lessonProgressItemIcon}>
-                                {progressPercent === 100 ? '✅' : '⏱️'}
-                              </span>
-                              <div className={styles.lessonProgressItemTitleText}>
-                                <h4 className={styles.lessonProgressItemName}>
-                                  {lesson.displayTitle || lesson.title}
-                                </h4>
-                                <span className={styles.lessonProgressItemLevel}>
-                                  {lesson.level || 'A1'}
-                                </span>
-                              </div>
-                            </div>
-                            <div className={styles.lessonProgressItemPercent}>
-                              {Math.round(progressPercent)}%
-                            </div>
-                          </div>
+                <div className={styles.achievementsGrid}>
+                  {achievements.map((achievement, index) => (
+                    <div
+                      key={index}
+                      className={`${styles.achievementItem} ${!achievement.unlocked ? styles.locked : ''}`}
+                    >
+                      <span className={styles.achievementIcon}>{achievement.icon}</span>
+                      <span className={styles.achievementName}>{achievement.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-                          <div className={styles.lessonProgressItemBar}>
-                            <div
-                              className={styles.lessonProgressItemBarFill}
-                              style={{ width: `${progressPercent}%` }}
-                            />
+              {/* Recent Activity */}
+              <div className={styles.sectionCard}>
+                <div className={styles.sectionHeader}>
+                  <h2 className={styles.sectionTitle}>
+                    <span>📜</span>
+                    Hoạt động gần đây
+                  </h2>
+                </div>
+                <div className={styles.activityList}>
+                  {recentActivity.length === 0 ? (
+                    <div className={styles.noActivity}>
+                      <span className={styles.noActivityIcon}>💤</span>
+                      <p>Chưa có hoạt động nào</p>
+                    </div>
+                  ) : (
+                    recentActivity.slice(0, 4).map((activity, index) => {
+                      const lesson = allLessons.find(l => l.id === activity.lessonId);
+                      // Calculate points from actual progress
+                      const progress = activity.progress || {};
+                      let earnedPoints = 0;
+                      if (activity.mode === 'dictation') {
+                        earnedPoints = progress.correctWords || 0;
+                      } else {
+                        // For shadowing, count completed sentences
+                        earnedPoints = (progress.currentSentenceIndex || 0) + (progress.currentSentenceIndex !== undefined ? 1 : 0);
+                      }
+                      return (
+                        <div key={index} className={styles.activityItem}>
+                          <div className={styles.activityIcon}>
+                            {activity.mode === 'shadowing' ? '🎙️' : '✍️'}
+                          </div>
+                          <div className={styles.activityContent}>
+                            <p className={styles.activityText}>
+                              {activity.mode === 'shadowing' ? 'Shadowing' : 'Dictation'}
+                              {lesson ? `: ${lesson.displayTitle || lesson.title}` : ''}
+                            </p>
+                            <span className={styles.activityTime}>
+                              {formatDate(activity.updatedAt || activity.createdAt)}
+                            </span>
+                          </div>
+                          <div className={styles.activityPoints}>
+                            +{earnedPoints}
                           </div>
                         </div>
                       );
-                    })}
+                    })
+                  )}
                 </div>
-              )}
-            </div>
+              </div>
             </div>
           </div>
         </div>
