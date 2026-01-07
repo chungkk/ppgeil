@@ -37,7 +37,8 @@ const DictationVideoSection = ({
   currentSentence,
   onVoiceRecordingComplete,
   onComparisonResultChange,
-  youtubePlayerRef
+  youtubePlayerRef,
+  showRecordButton = false
 }) => {
   const { t } = useTranslation();
   const [isRecording, setIsRecording] = React.useState(false);
@@ -352,8 +353,6 @@ const DictationVideoSection = ({
                 )}
               </button>
 
-
-
               {/* Next Sentence */}
               <button
                 className={styles.controlBtn}
@@ -364,6 +363,54 @@ const DictationVideoSection = ({
                   <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/>
                 </svg>
               </button>
+
+              {/* Voice Recording Button - Only show if showRecordButton is true */}
+              {showRecordButton && (
+                <button
+                  className={`${styles.controlBtn} ${styles.recordBtn} ${isRecording ? styles.recording : ''}`}
+                  onClick={handleRecordingClick}
+                  disabled={isProcessing}
+                  title={isRecording ? 'Dừng ghi âm' : 'Ghi âm'}
+                >
+                  {isProcessing ? (
+                    <svg className={styles.spinner} viewBox="0 0 24 24" fill="none" width="20" height="20">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="32">
+                        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+                      </circle>
+                    </svg>
+                  ) : isRecording ? (
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                      <rect x="6" y="6" width="12" height="12" rx="2"/>
+                    </svg>
+                  ) : (
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                      <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
+                      <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z"/>
+                      <path d="M11 18.93V22h2v-3.07a8 8 0 0 0 0-15.86V0h-2v3.07a8 8 0 0 0 0 15.86z" fill="none"/>
+                    </svg>
+                  )}
+                </button>
+              )}
+
+              {/* Playback Recording Button - Only show if showRecordButton is true */}
+              {showRecordButton && recordedBlob && (
+                <button
+                  className={`${styles.controlBtn} ${styles.playbackBtn} ${isPlayingRecording ? styles.playing : ''}`}
+                  onClick={playRecordedAudio}
+                  title={isPlayingRecording ? 'Dừng phát' : 'Phát lại bản ghi'}
+                >
+                  {isPlayingRecording ? (
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                      <rect x="6" y="4" width="4" height="16" rx="1"/>
+                      <rect x="14" y="4" width="4" height="16" rx="1"/>
+                    </svg>
+                  ) : (
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  )}
+                </button>
+              )}
             </div>
           </div>
         )}

@@ -3045,6 +3045,7 @@ const DictationPageContent = () => {
             }}
             onComparisonResultChange={setVoiceRecordingResult}
             youtubePlayerRef={youtubePlayerRef}
+            showRecordButton={true}
           />
 
           {/* Middle Column - Dictation Area (Mobile Only) */}
