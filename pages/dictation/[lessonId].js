@@ -481,6 +481,26 @@ const DictationPage = () => {
     return wordComparison;
   }, []);
 
+  // Restore comparedWords from saved userInputs after page load
+  const hasRestoredComparedWords = useRef(false);
+  useEffect(() => {
+    if (hasRestoredComparedWords.current) return;
+    if (!transcriptData.length || !Object.keys(userInputs).length) return;
+    
+    const restoredComparedWords = {};
+    Object.entries(userInputs).forEach(([index, value]) => {
+      const correctText = transcriptData[index]?.text;
+      if (value && correctText) {
+        restoredComparedWords[index] = compareWords(value, correctText);
+      }
+    });
+    
+    if (Object.keys(restoredComparedWords).length > 0) {
+      setComparedWords(restoredComparedWords);
+      hasRestoredComparedWords.current = true;
+    }
+  }, [transcriptData, userInputs, compareWords]);
+
   // Handle input change with realtime word comparison
   const handleInputChange = useCallback((index, value) => {
     const newUserInputs = { ...userInputs, [index]: value };
