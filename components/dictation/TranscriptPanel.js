@@ -44,7 +44,9 @@ const TranscriptPanel = ({
   voiceRecordingResult = null,
   // Word comparison for dictation check
   comparedWords = {},
-  results = {}
+  results = {},
+  // Words revealed by double-click in dictation column
+  revealedWordsByClick = {}
 }) => {
   // Tab state: 'transcript' or 'vocabulary'
   const [activeTab, setActiveTab] = useState('transcript');
@@ -184,7 +186,34 @@ const TranscriptPanel = ({
                 </span>
               );
             } else {
-              // Wrong word - still masked
+              // Wrong word - check if revealed by double-click
+              const isRevealedByClick = revealedWordsByClick[originalIndex]?.[idx];
+              if (isRevealedByClick) {
+                // Show word in orange (revealed by click)
+                return (
+                  <span
+                    key={idx}
+                    className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
+                    onClick={(e) => {
+                      if (pureWord && onWordClickForPopup) {
+                        e.stopPropagation();
+                        onWordClickForPopup(pureWord, e);
+                      }
+                    }}
+                    style={{
+                      cursor: pureWord ? 'pointer' : 'default',
+                      color: '#f59e0b',
+                      fontWeight: '500',
+                      background: 'rgba(245, 158, 11, 0.12)',
+                      padding: '2px 4px',
+                      borderRadius: '4px'
+                    }}
+                  >
+                    {word}{idx < words.length - 1 ? ' ' : ''}
+                  </span>
+                );
+              }
+              // Still masked
               const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
               const maskedWord = '_'.repeat(pureWord.length) + punctuation;
               return (
@@ -216,6 +245,34 @@ const TranscriptPanel = ({
           const originalWord = originalWords[idx] || '';
           const pureWord = originalWord.replace(/[^a-zA-Z0-9üäöÜÄÖß]/g, "");
           const isRevealed = !word.includes('_');
+
+          // Check if revealed by double-click
+          const isRevealedByClick = revealedWordsByClick[originalIndex]?.[idx];
+          if (isRevealedByClick) {
+            // Show word in orange (revealed by click)
+            return (
+              <span
+                key={idx}
+                className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
+                onClick={(e) => {
+                  if (pureWord && onWordClickForPopup) {
+                    e.stopPropagation();
+                    onWordClickForPopup(pureWord, e);
+                  }
+                }}
+                style={{
+                  cursor: pureWord ? 'pointer' : 'default',
+                  color: '#f59e0b',
+                  fontWeight: '500',
+                  background: 'rgba(245, 158, 11, 0.12)',
+                  padding: '2px 4px',
+                  borderRadius: '4px'
+                }}
+              >
+                {originalWord}{idx < originalWords.length - 1 ? ' ' : ''}
+              </span>
+            );
+          }
 
           // Voice recording result highlighting
           const comparisonStatus = isActiveSentence && voiceRecordingResult ? wordComparison[idx] : null;
@@ -250,7 +307,7 @@ const TranscriptPanel = ({
         })}
       </span>
     );
-  }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage, onWordClickForPopup, voiceRecordingResult, comparedWords, results]);
+  }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage, onWordClickForPopup, voiceRecordingResult, comparedWords, results, revealedWordsByClick]);
 
   // Auto-scroll to current sentence - center it within the transcript container only
   useEffect(() => {
@@ -260,7 +317,7 @@ const TranscriptPanel = ({
 
       const containerRect = container.getBoundingClientRect();
       const elementRect = element.getBoundingClientRect();
-      
+
       // Calculate element position relative to container's scroll - position at ~1/3 from top
       const elementTopRelative = elementRect.top - containerRect.top + container.scrollTop;
       const scrollPosition = elementTopRelative - (container.clientHeight / 4);

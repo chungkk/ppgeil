@@ -36,6 +36,7 @@ const DictationPage = () => {
   const [checkedSentences, setCheckedSentences] = useState([]);
   const [revealedHintWords, setRevealedHintWords] = useState({});
   const [comparedWords, setComparedWords] = useState({}); // { sentenceIndex: { wordIndex: { isCorrect, userWord, correctWord } } }
+  const [revealedWordsByClick, setRevealedWordsByClick] = useState({}); // { sentenceIndex: { wordIndex: true } } - words revealed by double-click
 
   // Playback speed
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
@@ -73,7 +74,7 @@ const DictationPage = () => {
   const [isYouTube, setIsYouTube] = useState(false);
   const [isYouTubeAPIReady, setIsYouTubeAPIReady] = useState(false);
   const inputRefs = useRef({});
-  
+
   // User seeking state (to prevent auto-update during click navigation)
   const [isUserSeeking, setIsUserSeeking] = useState(false);
   const [userSeekTimeout, setUserSeekTimeout] = useState(null);
@@ -252,7 +253,7 @@ const DictationPage = () => {
       setCurrentSentenceIndex(currentIndex);
     }
   }, [currentTime, transcriptData, currentSentenceIndex, isUserSeeking]);
-  
+
   // Cleanup user seek timeout
   useEffect(() => {
     return () => {
@@ -286,7 +287,7 @@ const DictationPage = () => {
     setIsPlaying(true);
     setSegmentPlayEndTime(sentence.end);
     setCurrentSentenceIndex(index);
-    
+
     // Reset seeking flag after seek completes (allows smooth transition)
     const timeout = setTimeout(() => {
       setIsUserSeeking(false);
@@ -352,10 +353,10 @@ const DictationPage = () => {
     correctWords.forEach((correctWord, index) => {
       const normalizedCorrect = normalizeWord(correctWord);
       const pureCorrectWord = correctWord.replace(/[.,!?;:"""''„]/g, '');
-      
+
       // Get user word at same position
       const userWord = userWords[index];
-      
+
       if (!userWord) {
         // No user word at this position
         wordComparison[index] = {
@@ -366,9 +367,9 @@ const DictationPage = () => {
         };
         return;
       }
-      
+
       const normalizedUser = normalizeWord(userWord);
-      
+
       // Exact match
       if (normalizedUser === normalizedCorrect) {
         wordComparison[index] = {
@@ -379,7 +380,7 @@ const DictationPage = () => {
         };
         return;
       }
-      
+
       // Partial match - count matching characters from start
       let matchingChars = 0;
       for (let i = 0; i < Math.min(normalizedCorrect.length, normalizedUser.length); i++) {
@@ -389,7 +390,7 @@ const DictationPage = () => {
           break;
         }
       }
-      
+
       wordComparison[index] = {
         isCorrect: false,
         matchedChars: matchingChars,
@@ -404,7 +405,7 @@ const DictationPage = () => {
   // Handle input change with realtime word comparison
   const handleInputChange = useCallback((index, value) => {
     setUserInputs(prev => ({ ...prev, [index]: value }));
-    
+
     // Realtime: compare words as user types
     const correctText = transcriptData[index]?.text || '';
     if (value.trim() && correctText) {
@@ -483,6 +484,21 @@ const DictationPage = () => {
     });
     setSelectedWord(cleanWord);
     setShowVocabPopup(true);
+  }, []);
+
+  // Handle double-click on masked word to reveal it
+  const handleMaskedWordDoubleClick = useCallback((sentenceIndex, wordIndex, word, event) => {
+    // Prevent text selection on double-click
+    event.preventDefault();
+
+    // Mark this word as revealed
+    setRevealedWordsByClick(prev => ({
+      ...prev,
+      [sentenceIndex]: {
+        ...(prev[sentenceIndex] || {}),
+        [wordIndex]: true
+      }
+    }));
   }, []);
 
   // Calculate progress
@@ -855,7 +871,7 @@ const DictationPage = () => {
                           const comparison = comparedWords[currentSentenceIndex][i];
                           const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
                           const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
-                          
+
                           if (comparison?.isCorrect) {
                             // Fully correct word - show in green
                             return (
@@ -879,9 +895,27 @@ const DictationPage = () => {
                               </span>
                             );
                           } else {
-                            // No match - fully hidden
+                            // No match - check if revealed by double-click
+                            const isRevealedByClick = revealedWordsByClick[currentSentenceIndex]?.[i];
+                            if (isRevealedByClick) {
+                              return (
+                                <span
+                                  key={i}
+                                  className={styles.revealedByClickWord}
+                                  onClick={(e) => handleWordClick(word, e)}
+                                >
+                                  {word}{' '}
+                                </span>
+                              );
+                            }
+                            // Fully hidden - can double-click to reveal
                             return (
-                              <span key={i} className={styles.maskedWord}>
+                              <span
+                                key={i}
+                                className={styles.maskedWordClickable}
+                                onDoubleClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
+                                title="Double-click để xem từ"
+                              >
                                 {'_'.repeat(pureWord.length)}
                                 {punctuation}{' '}
                               </span>
@@ -890,14 +924,37 @@ const DictationPage = () => {
                         })}
                       </div>
                     ) : (
-                      // Initial state: all words hidden
+                      // Initial state: all words hidden - can double-click to reveal
                       <div className={styles.maskedSentence}>
-                        {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => (
-                          <span key={i} className={styles.maskedWord}>
-                            {'_'.repeat(word.replace(/[.,!?;:"""''„]/g, '').length)}
-                            {word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : ''}{' '}
-                          </span>
-                        ))}
+                        {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
+                          const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
+                          const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
+                          const isRevealedByClick = revealedWordsByClick[currentSentenceIndex]?.[i];
+
+                          if (isRevealedByClick) {
+                            return (
+                              <span
+                                key={i}
+                                className={styles.revealedByClickWord}
+                                onClick={(e) => handleWordClick(word, e)}
+                              >
+                                {word}{' '}
+                              </span>
+                            );
+                          }
+
+                          return (
+                            <span
+                              key={i}
+                              className={styles.maskedWordClickable}
+                              onDoubleClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
+                              title="Double-click để xem từ"
+                            >
+                              {'_'.repeat(pureWord.length)}
+                              {punctuation}{' '}
+                            </span>
+                          );
+                        })}
                       </div>
                     )
                   )}
@@ -1025,6 +1082,7 @@ const DictationPage = () => {
               onWordClickForPopup={handleWordClick}
               comparedWords={comparedWords}
               results={results}
+              revealedWordsByClick={revealedWordsByClick}
             />
           </div>
         </div>
