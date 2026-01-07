@@ -1489,7 +1489,7 @@ const DictationPageContent = () => {
         },
         body: JSON.stringify({
           lessonId,
-          mode: 'dictation',
+          mode: 'shadowing',
           progress: {
             completedSentences: updatedCompletedSentences,
             completedWords: updatedCompletedWords,

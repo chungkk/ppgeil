@@ -87,15 +87,18 @@ function DashboardIndex() {
       (a, b) => calculateProgress(b.id) - calculateProgress(a.id)
     );
 
+    // Calculate average progress of lessons that have been started
+    const avgProgress = lessonsWithProgress.length > 0
+      ? Math.round(lessonsWithProgress.reduce((sum, l) => sum + calculateProgress(l.id), 0) / lessonsWithProgress.length)
+      : 0;
+
     return {
       total: allLessons.length,
       withProgress: lessonsWithProgress.length,
       completed: completedLessons.length,
       inProgress: inProgressLessons.length,
       sortedLessons,
-      progressPercent: allLessons.length > 0
-        ? Math.round((lessonsWithProgress.length / allLessons.length) * 100)
-        : 0
+      progressPercent: avgProgress
     };
   }, [allLessons, calculateProgress]);
 

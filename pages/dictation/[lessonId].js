@@ -104,14 +104,22 @@ const DictationPage = () => {
       const token = localStorage.getItem('token');
       if (!token) return;
 
+      const currentCompletedSentences = updates.completedSentences ?? completedSentences;
+      const completedCount = Array.isArray(currentCompletedSentences) 
+        ? currentCompletedSentences.length 
+        : Object.keys(currentCompletedSentences || {}).length;
+
       const progressData = {
-        completedSentences: updates.completedSentences ?? completedSentences,
+        completedSentences: currentCompletedSentences,
         checkedSentences: updates.checkedSentences ?? checkedSentences,
         sentencePointsAwarded: updates.sentencePointsAwarded ?? sentencePointsAwarded,
         sentenceRevealPenalty: updates.sentenceRevealPenalty ?? sentenceRevealPenalty,
         revealedWordsByClick: updates.revealedWordsByClick ?? revealedWordsByClick,
         userInputs: updates.userInputs ?? userInputs,
-        totalSentences: transcriptData.length
+        totalSentences: transcriptData.length,
+        // Add fields for completion calculation
+        correctWords: completedCount,
+        totalWords: transcriptData.length
       };
 
       const response = await fetch('/api/progress', {
