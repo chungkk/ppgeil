@@ -26,7 +26,10 @@ const MobileBottomControls = ({
   // Refs for pausing playback
   audioRef = null,
   youtubePlayerRef = null,
-  isYouTube = false
+  isYouTube = false,
+  // Playback speed
+  playbackSpeed = 1,
+  onSpeedChange = null
 }) => {
   const [isRecording, setIsRecording] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -336,6 +339,22 @@ const MobileBottomControls = ({
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
+
+      {/* Speed Control Button */}
+      {onSpeedChange && (
+        <button 
+          className={`${styles.mobileControlBtn} ${styles.mobileControlBtnSpeed}`}
+          onClick={() => {
+            const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
+            const currentIndex = speeds.indexOf(playbackSpeed || 1);
+            const nextIndex = (currentIndex + 1) % speeds.length;
+            onSpeedChange(speeds[nextIndex]);
+          }}
+          title="Tốc độ phát"
+        >
+          <span style={{ fontSize: '11px', fontWeight: 'bold' }}>{playbackSpeed || 1}x</span>
+        </button>
+      )}
     </div>
   );
 };

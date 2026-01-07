@@ -411,6 +411,22 @@ const DictationVideoSection = ({
                   )}
                 </button>
               )}
+
+              {/* Speed Control Button */}
+              {onSpeedChange && (
+                <button
+                  className={styles.controlBtn}
+                  onClick={() => {
+                    const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
+                    const currentIndex = speeds.indexOf(playbackSpeed || 1);
+                    const nextIndex = (currentIndex + 1) % speeds.length;
+                    onSpeedChange(speeds[nextIndex]);
+                  }}
+                  title="Tốc độ phát"
+                >
+                  <span style={{ fontSize: '12px', fontWeight: 'bold' }}>{playbackSpeed || 1}x</span>
+                </button>
+              )}
             </div>
           </div>
         )}

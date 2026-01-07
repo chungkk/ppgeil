@@ -1100,6 +1100,24 @@ const DictationPage = () => {
                     >
                       ⏭
                     </button>
+                    <button
+                      className={styles.mobileControlBtn}
+                      onClick={() => {
+                        const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
+                        const currentIndex = speeds.indexOf(playbackSpeed || 1);
+                        const nextIndex = (currentIndex + 1) % speeds.length;
+                        const newSpeed = speeds[nextIndex];
+                        setPlaybackSpeed(newSpeed);
+                        if (isYouTube && youtubePlayerRef.current?.setPlaybackRate) {
+                          youtubePlayerRef.current.setPlaybackRate(newSpeed);
+                        } else if (audioRef.current) {
+                          audioRef.current.playbackRate = newSpeed;
+                        }
+                      }}
+                      title="Tốc độ phát"
+                    >
+                      <span style={{ fontSize: '11px', fontWeight: 'bold' }}>{playbackSpeed || 1}x</span>
+                    </button>
                   </div>
                 </div>
               )}
@@ -1107,9 +1125,29 @@ const DictationPage = () => {
               <div className={styles.dictationArea}>
                 <div className={styles.dictationHeader}>
                   <h3 className={styles.columnTitle}>Nghe và chép lại</h3>
-                  <span className={styles.sentenceCounter}>
-                    Câu {currentSentenceIndex + 1} / {transcriptData.length}
-                  </span>
+                  <div className={styles.headerRight}>
+                    <button
+                      className={styles.speedButtonHeader}
+                      onClick={() => {
+                        const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
+                        const currentIndex = speeds.indexOf(playbackSpeed || 1);
+                        const nextIndex = (currentIndex + 1) % speeds.length;
+                        const newSpeed = speeds[nextIndex];
+                        setPlaybackSpeed(newSpeed);
+                        if (isYouTube && youtubePlayerRef.current?.setPlaybackRate) {
+                          youtubePlayerRef.current.setPlaybackRate(newSpeed);
+                        } else if (audioRef.current) {
+                          audioRef.current.playbackRate = newSpeed;
+                        }
+                      }}
+                      title="Tốc độ phát"
+                    >
+                      {playbackSpeed || 1}x
+                    </button>
+                    <span className={styles.sentenceCounter}>
+                      Câu {currentSentenceIndex + 1} / {transcriptData.length}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Hidden sentence display */}
