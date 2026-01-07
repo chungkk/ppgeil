@@ -364,13 +364,7 @@ const TranscriptPanel = ({
               Transcript
               <span className={styles.transcriptTabCount}>{transcriptData.length}</span>
             </button>
-            <button
-              className={`${styles.transcriptTab} ${activeTab === 'vocabulary' ? styles.transcriptTabActive : ''}`}
-              onClick={() => setActiveTab('vocabulary')}
-            >
-              Từ vựng
-              <span className={styles.transcriptTabCount}>{savedVocabulary.length}</span>
-            </button>
+
           </div>
           {/* Translation Toggle - only show in transcript tab */}
           {activeTab === 'transcript' && onToggleTranslation && (
