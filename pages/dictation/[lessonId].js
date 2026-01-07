@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import SEO from '../../components/SEO';
 import DictionaryPopup from '../../components/DictionaryPopup';
 import ProgressIndicator from '../../components/ProgressIndicator';
+import PointsAnimation from '../../components/PointsAnimation';
 
 import { DictationHeader, DictationSkeleton, TranscriptPanel, DictationVideoSection } from '../../components/dictation';
 
@@ -37,6 +38,9 @@ const DictationPage = () => {
   const [revealedHintWords, setRevealedHintWords] = useState({});
   const [comparedWords, setComparedWords] = useState({}); // { sentenceIndex: { wordIndex: { isCorrect, userWord, correctWord } } }
   const [revealedWordsByClick, setRevealedWordsByClick] = useState({}); // { sentenceIndex: { wordIndex: true } } - words revealed by double-click
+  const [sentencePointsAwarded, setSentencePointsAwarded] = useState({}); // { sentenceIndex: true } - track which sentences got points
+  const [sentenceRevealPenalty, setSentenceRevealPenalty] = useState({}); // { sentenceIndex: true } - track which sentences got penalty for revealing too many words
+  const [pointsAnimations, setPointsAnimations] = useState([]);
 
   // Playback speed
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
@@ -67,6 +71,80 @@ const DictationPage = () => {
     loadedStudyTime,
     mode: 'dictation'
   });
+
+  // Load progress from database
+  useEffect(() => {
+    if (loadedProgress) {
+      if (loadedProgress.completedSentences) {
+        setCompletedSentences(loadedProgress.completedSentences);
+      }
+      if (loadedProgress.checkedSentences) {
+        setCheckedSentences(loadedProgress.checkedSentences);
+      }
+      if (loadedProgress.sentencePointsAwarded) {
+        setSentencePointsAwarded(loadedProgress.sentencePointsAwarded);
+      }
+      if (loadedProgress.sentenceRevealPenalty) {
+        setSentenceRevealPenalty(loadedProgress.sentenceRevealPenalty);
+      }
+      if (loadedProgress.revealedWordsByClick) {
+        setRevealedWordsByClick(loadedProgress.revealedWordsByClick);
+      }
+      if (loadedProgress.userInputs) {
+        setUserInputs(loadedProgress.userInputs);
+      }
+    }
+  }, [loadedProgress]);
+
+  // Save progress to database
+  const saveProgress = useCallback(async (updates = {}) => {
+    if (!lessonId || !user) return;
+    
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) return;
+      
+      const progressData = {
+        completedSentences: updates.completedSentences ?? completedSentences,
+        checkedSentences: updates.checkedSentences ?? checkedSentences,
+        sentencePointsAwarded: updates.sentencePointsAwarded ?? sentencePointsAwarded,
+        sentenceRevealPenalty: updates.sentenceRevealPenalty ?? sentenceRevealPenalty,
+        revealedWordsByClick: updates.revealedWordsByClick ?? revealedWordsByClick,
+        userInputs: updates.userInputs ?? userInputs,
+        totalSentences: transcriptData.length
+      };
+      
+      const response = await fetch('/api/progress', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          lessonId,
+          mode: 'dictation',
+          progress: progressData
+        })
+      });
+      
+      if (response.ok) {
+        console.log('✅ Dictation progress saved');
+      }
+    } catch (error) {
+      console.error('Error saving dictation progress:', error);
+    }
+  }, [lessonId, user, completedSentences, checkedSentences, sentencePointsAwarded, sentenceRevealPenalty, revealedWordsByClick, userInputs, transcriptData.length]);
+
+  // Debounced save for user inputs
+  const saveInputTimeoutRef = useRef(null);
+  const debouncedSaveInput = useCallback((newUserInputs) => {
+    if (saveInputTimeoutRef.current) {
+      clearTimeout(saveInputTimeoutRef.current);
+    }
+    saveInputTimeoutRef.current = setTimeout(() => {
+      saveProgress({ userInputs: newUserInputs });
+    }, 1000); // Save after 1 second of no typing
+  }, [saveProgress]);
 
   // Refs
   const youtubePlayerRef = useRef(null);
@@ -240,9 +318,10 @@ const DictationPage = () => {
     };
   }, [isPlaying, segmentPlayEndTime, isYouTube, autoStop]);
 
-  // Auto-update current sentence based on time
+  // Auto-update current sentence based on time (only when playing)
   useEffect(() => {
     if (isUserSeeking) return; // Skip auto-update during user seek
+    if (!isPlaying) return; // Don't auto-update when paused (keep current sentence after auto-stop)
     if (!transcriptData.length) return;
 
     const currentIndex = transcriptData.findIndex(
@@ -252,7 +331,7 @@ const DictationPage = () => {
     if (currentIndex !== -1 && currentIndex !== currentSentenceIndex) {
       setCurrentSentenceIndex(currentIndex);
     }
-  }, [currentTime, transcriptData, currentSentenceIndex, isUserSeeking]);
+  }, [currentTime, transcriptData, currentSentenceIndex, isUserSeeking, isPlaying]);
 
   // Cleanup user seek timeout
   useEffect(() => {
@@ -404,7 +483,11 @@ const DictationPage = () => {
 
   // Handle input change with realtime word comparison
   const handleInputChange = useCallback((index, value) => {
-    setUserInputs(prev => ({ ...prev, [index]: value }));
+    const newUserInputs = { ...userInputs, [index]: value };
+    setUserInputs(newUserInputs);
+
+    // Debounced save to database
+    debouncedSaveInput(newUserInputs);
 
     // Realtime: compare words as user types
     const correctText = transcriptData[index]?.text || '';
@@ -422,7 +505,94 @@ const DictationPage = () => {
         return updated;
       });
     }
-  }, [transcriptData, compareWords]);
+  }, [transcriptData, compareWords, userInputs, debouncedSaveInput]);
+
+  // Show points animation
+  const showPointsAnimation = useCallback((points, element) => {
+    if (!element) return;
+    
+    const rect = element.getBoundingClientRect();
+    const startPosition = {
+      top: rect.top + rect.height / 2 - 10,
+      left: rect.left + rect.width / 2
+    };
+    
+    const headerBadge = document.querySelector('[title="Your total points"]');
+    let endPosition = null;
+
+    if (headerBadge) {
+      const badgeRect = headerBadge.getBoundingClientRect();
+      endPosition = {
+        top: badgeRect.top + badgeRect.height / 2,
+        left: badgeRect.left + badgeRect.width / 2
+      };
+    } else {
+      endPosition = {
+        top: startPosition.top - 100,
+        left: startPosition.left
+      };
+    }
+    
+    const animationId = Date.now() + Math.random();
+    setPointsAnimations(prev => [...prev, { 
+      id: animationId, 
+      points, 
+      startPosition,
+      endPosition 
+    }]);
+    
+    setTimeout(() => {
+      setPointsAnimations(prev => prev.filter(a => a.id !== animationId));
+    }, 1000);
+  }, []);
+
+  // Update points on server
+  const updatePoints = useCallback(async (pointsChange, reason, element = null) => {
+    if (!user) return;
+    
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) return;
+      
+      const response = await fetch('/api/user/points', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ pointsChange, reason })
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        console.log(`✅ Points updated: ${pointsChange > 0 ? '+' : ''}${pointsChange} (${reason})`, data);
+
+        if (element) {
+          showPointsAnimation(pointsChange, element);
+        }
+
+        if (typeof window !== 'undefined') {
+          if (pointsChange > 0 && window.showPointsPlusOne) {
+            window.showPointsPlusOne(pointsChange);
+          }
+          
+          setTimeout(() => {
+            if (window.refreshUserPoints) {
+              window.refreshUserPoints();
+            }
+          }, 100);
+          
+          window.dispatchEvent(new CustomEvent('pointsUpdated', { 
+            detail: { pointsChange, reason } 
+          }));
+        }
+      } else {
+        console.error('❌ Failed to update points:', response.status);
+      }
+    } catch (error) {
+      console.error('Error updating points:', error);
+    }
+  }, [user, showPointsAnimation]);
 
   // Check answer
   const checkAnswer = useCallback((index) => {
@@ -448,17 +618,40 @@ const DictationPage = () => {
     }));
 
     // Mark as checked to reveal in transcript
+    const newCheckedSentences = checkedSentences.includes(index) 
+      ? checkedSentences 
+      : [...checkedSentences, index];
     if (!checkedSentences.includes(index)) {
-      setCheckedSentences(prev => [...prev, index]);
+      setCheckedSentences(newCheckedSentences);
     }
 
     if (isCorrect && !completedSentences.includes(index)) {
       hapticEvents.wordCorrect();
-      setCompletedSentences(prev => [...prev, index]);
+      const newCompletedSentences = [...completedSentences, index];
+      setCompletedSentences(newCompletedSentences);
+      
+      // Award +1 point for correct sentence (only once per sentence)
+      if (!sentencePointsAwarded[index]) {
+        const inputElement = inputRefs.current[index];
+        updatePoints(1, `Dictation correct sentence #${index + 1}`, inputElement);
+        const newSentencePointsAwarded = { ...sentencePointsAwarded, [index]: true };
+        setSentencePointsAwarded(newSentencePointsAwarded);
+        
+        // Save progress
+        saveProgress({
+          completedSentences: newCompletedSentences,
+          checkedSentences: newCheckedSentences,
+          sentencePointsAwarded: newSentencePointsAwarded
+        });
+      }
     } else if (!isCorrect) {
       hapticEvents.wordIncorrect();
+      // Save checked sentences even for wrong answers
+      saveProgress({
+        checkedSentences: newCheckedSentences
+      });
     }
-  }, [userInputs, transcriptData, completedSentences, checkedSentences, compareWords]);
+  }, [userInputs, transcriptData, completedSentences, checkedSentences, compareWords, sentencePointsAwarded, updatePoints, saveProgress]);
 
   // Show answer
   const showAnswer = useCallback((index) => {
@@ -491,15 +684,43 @@ const DictationPage = () => {
     // Prevent text selection on double-click
     event.preventDefault();
 
+    // Check if this word was already revealed
+    if (revealedWordsByClick[sentenceIndex]?.[wordIndex]) {
+      return;
+    }
+
     // Mark this word as revealed
-    setRevealedWordsByClick(prev => ({
-      ...prev,
+    const updated = {
+      ...revealedWordsByClick,
       [sentenceIndex]: {
-        ...(prev[sentenceIndex] || {}),
+        ...(revealedWordsByClick[sentenceIndex] || {}),
         [wordIndex]: true
       }
-    }));
-  }, []);
+    };
+    setRevealedWordsByClick(updated);
+
+    // Count revealed words for this sentence (including the new one)
+    const revealedCount = Object.keys(updated[sentenceIndex] || {}).length;
+
+    // If 3+ words revealed and not already penalized, deduct 1 point
+    if (revealedCount >= 3 && !sentenceRevealPenalty[sentenceIndex]) {
+      const targetElement = event.target;
+      updatePoints(-1, `Dictation: revealed ${revealedCount} words in sentence #${sentenceIndex + 1}`, targetElement);
+      const newSentenceRevealPenalty = { ...sentenceRevealPenalty, [sentenceIndex]: true };
+      setSentenceRevealPenalty(newSentenceRevealPenalty);
+      
+      // Save progress with penalty
+      saveProgress({
+        revealedWordsByClick: updated,
+        sentenceRevealPenalty: newSentenceRevealPenalty
+      });
+    } else {
+      // Save revealed words
+      saveProgress({
+        revealedWordsByClick: updated
+      });
+    }
+  }, [revealedWordsByClick, sentenceRevealPenalty, updatePoints, saveProgress]);
 
   // Calculate progress
   const progress = useMemo(() => {
@@ -1096,6 +1317,16 @@ const DictationPage = () => {
           onClose={() => setShowVocabPopup(false)}
         />
       )}
+
+      {/* Points Animation */}
+      {pointsAnimations.map(anim => (
+        <PointsAnimation
+          key={anim.id}
+          points={anim.points}
+          startPosition={anim.startPosition}
+          endPosition={anim.endPosition}
+        />
+      ))}
     </>
   );
 };
