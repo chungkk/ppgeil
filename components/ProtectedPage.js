@@ -15,8 +15,8 @@ const ProtectedPage = ({ children, adminOnly = false, requireAdmin = false, requ
   useEffect(() => {
     if (!loading) {
       if (requireAuth && !user) {
-        // Redirect to login if not authenticated
-        navigateWithLocale(router, '/auth/login?redirect=' + router.asPath);
+        // Redirect to home with login required flag (login modal will be opened)
+        navigateWithLocale(router, '/?login=required&redirect=' + encodeURIComponent(router.asPath));
       } else if (needsAdmin && user && user.role !== 'admin') {
         // Redirect to home if not admin (check user.role instead of user.isAdmin)
         navigateWithLocale(router, '/');

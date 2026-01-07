@@ -199,6 +199,31 @@ const Header = () => {
     };
   }, [user, fetchUserPoints]);
 
+  // Listen for openLoginModal event and check URL for login=required
+  useEffect(() => {
+    const handleOpenLoginModal = () => {
+      dispatch({ type: 'SET_LOGIN_MODAL', payload: true });
+    };
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('openLoginModal', handleOpenLoginModal);
+      window.openLoginModal = handleOpenLoginModal;
+
+      // Check if URL has login=required parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('login') === 'required' && !user) {
+        dispatch({ type: 'SET_LOGIN_MODAL', payload: true });
+      }
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('openLoginModal', handleOpenLoginModal);
+        window.openLoginModal = null;
+      }
+    };
+  }, [user]);
+
   const navLinks = [
     // { href: '/', label: t('header.nav.topics') }, // Tạm ẩn
     // { href: '/vocabulary', label: t('header.nav.vocabulary') }, // Tạm ẩn
