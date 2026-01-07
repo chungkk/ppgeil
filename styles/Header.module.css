@@ -613,6 +613,144 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Streak Badge */
+.streakContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  background: rgba(255, 100, 50, 0.15);
+  border: 1.5px solid rgba(255, 100, 50, 0.3);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  height: 40px;
+  cursor: pointer;
+}
+
+.streakContainer:hover {
+  background: rgba(255, 100, 50, 0.25);
+  border-color: rgba(255, 100, 50, 0.5);
+}
+
+.streakIcon {
+  font-size: 16px;
+  animation: streakFlame 1.5s ease-in-out infinite;
+}
+
+@keyframes streakFlame {
+  0%, 100% {
+    filter: drop-shadow(0 0 3px rgba(255, 100, 50, 0.6));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(255, 100, 50, 0.9));
+    transform: scale(1.1);
+  }
+}
+
+.streakValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FF6432;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Streak Tooltip */
+.streakTooltip {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  width: 260px;
+  padding: 14px;
+  background: var(--bg-secondary);
+  border: 1.5px solid rgba(255, 100, 50, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.streakContainer:hover .streakTooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.streakTooltip::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  margin-left: -7px;
+  width: 14px;
+  height: 14px;
+  background: var(--bg-secondary);
+  border-left: 1.5px solid rgba(255, 100, 50, 0.3);
+  border-top: 1.5px solid rgba(255, 100, 50, 0.3);
+  transform: rotate(45deg);
+}
+
+.streakTooltipTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.streakTooltipInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.streakDays {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4DA6FF;
+}
+
+.streakWeekly {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.streakDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.streakDayLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.streakDayCircle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(100, 116, 139, 0.3);
+  transition: all 0.2s ease;
+}
+
+.streakDayCircle.active {
+  background: linear-gradient(135deg, #FF6432 0%, #FF8C00 100%);
+  box-shadow: 0 0 12px rgba(255, 100, 50, 0.5);
+}
+
 .notificationContainer {
   position: relative;
 }
@@ -1072,12 +1210,12 @@
     font-size: 13px;
   }
 
-  .streakBadge {
+  .streakContainer {
     padding: 0 10px;
     font-size: 13px;
     gap: 4px;
     height: 36px;
-    min-width: 56px;
+    min-width: 50px;
     justify-content: center;
     border-radius: 18px;
   }
@@ -1234,13 +1372,13 @@
     font-size: 12px;
   }
 
-  .streakBadge {
+  .streakContainer {
     padding: 0 8px;
     font-size: 12px;
     gap: 3px;
     height: 32px;
     border-radius: 16px;
-    min-width: 50px;
+    min-width: 44px;
   }
 
   .streakIcon {
@@ -1387,11 +1525,11 @@
     font-size: 11px;
   }
 
-  .streakBadge {
+  .streakContainer {
     padding: 0 6px;
     font-size: 11px;
     height: 30px;
-    min-width: 46px;
+    min-width: 40px;
     border-radius: 15px;
   }
 

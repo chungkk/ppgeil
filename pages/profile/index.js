@@ -139,12 +139,16 @@ function DashboardIndex() {
     { name: 'Profile', url: '/profile' }
   ]);
 
-  // Achievements data (static for now, can be dynamic later)
+  // Get user streak from AuthContext
+  const userStreak = user?.streak?.currentStreak || 0;
+  const maxStreak = user?.streak?.maxStreak || 0;
+
+  // Achievements data
   const achievements = [
     { icon: '🎯', name: 'Khởi đầu', unlocked: lessonStats.withProgress > 0 },
     { icon: '⚡', name: 'Chăm chỉ', unlocked: lessonStats.withProgress >= 5 },
     { icon: '🏆', name: 'Hoàn hảo', unlocked: lessonStats.completed >= 3 },
-    { icon: '🔥', name: '7 ngày', unlocked: false },
+    { icon: '🔥', name: '7 ngày', unlocked: userStreak >= 7 || maxStreak >= 7 },
     { icon: '💎', name: 'VIP', unlocked: userPoints >= 1000 },
     { icon: '🎓', name: 'Bậc thầy', unlocked: lessonStats.completed >= 10 },
   ];

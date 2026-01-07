@@ -409,6 +409,29 @@ const Header = () => {
 
           {user && (
             <>
+              {/* Streak Badge */}
+              <div className={styles.streakContainer}>
+                <span className={styles.streakIcon}>🔥</span>
+                <span className={styles.streakValue}>{user.streak?.currentStreak || 0}</span>
+                
+                {/* Streak Tooltip */}
+                <div className={styles.streakTooltip}>
+                  <div className={styles.streakTooltipTitle}>Your Streak</div>
+                  <div className={styles.streakTooltipInfo}>
+                    <span>Current streak:</span>
+                    <span className={styles.streakDays}>{user.streak?.currentStreak || 0} days</span>
+                  </div>
+                  <div className={styles.streakWeekly}>
+                    {['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'].map((day, index) => (
+                      <div key={day} className={styles.streakDay}>
+                        <span className={styles.streakDayLabel}>{day}</span>
+                        <div className={`${styles.streakDayCircle} ${user.streak?.weeklyProgress?.[index] ? styles.active : ''}`} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               <div className={styles.pointsContainer}>
                 <div className={styles.pointsBadge} title={t('header.points')}>
                   <span className={styles.pointsIcon}>💎</span>

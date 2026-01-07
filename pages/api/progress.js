@@ -1,6 +1,55 @@
 import { optionalAuth } from '../../lib/authMiddleware';
 import { UserProgress } from '../../lib/models/UserProgress';
+import User from '../../models/User';
 import connectDB from '../../lib/mongodb';
+
+// Helper to update user streak
+async function updateUserStreak(userId) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  
+  const user = await User.findById(userId);
+  if (!user) return;
+  
+  const lastActive = user.streak?.lastActiveDate ? new Date(user.streak.lastActiveDate) : null;
+  if (lastActive) {
+    lastActive.setHours(0, 0, 0, 0);
+  }
+  
+  // If already active today, no update needed
+  if (lastActive && lastActive.getTime() === today.getTime()) {
+    return;
+  }
+  
+  const yesterday = new Date(today);
+  yesterday.setDate(yesterday.getDate() - 1);
+  
+  let newStreak = 1;
+  if (lastActive && lastActive.getTime() === yesterday.getTime()) {
+    // Consecutive day - increment streak
+    newStreak = (user.streak?.currentStreak || 0) + 1;
+  }
+  // If more than 1 day gap, streak resets to 1
+  
+  const maxStreak = Math.max(newStreak, user.streak?.maxStreak || 0);
+  
+  // Update weeklyProgress (index 0 = Monday, 6 = Sunday)
+  const dayOfWeek = (today.getDay() + 6) % 7; // Convert Sunday=0 to Monday=0
+  const weeklyProgress = user.streak?.weeklyProgress || [false, false, false, false, false, false, false];
+  
+  // Reset weekly progress if it's a new week (Monday)
+  if (dayOfWeek === 0 && lastActive && lastActive < today) {
+    weeklyProgress.fill(false);
+  }
+  weeklyProgress[dayOfWeek] = true;
+  
+  await User.findByIdAndUpdate(userId, {
+    'streak.currentStreak': newStreak,
+    'streak.maxStreak': maxStreak,
+    'streak.lastActiveDate': today,
+    'streak.weeklyProgress': weeklyProgress
+  });
+}
 
 async function handler(req, res) {
   await connectDB();
@@ -69,6 +118,9 @@ async function handler(req, res) {
           providedStudyTime: studyTime
         });
       }
+
+      // Update user streak
+      await updateUserStreak(req.user._id);
 
       return res.status(200).json({
         message: 'Lưu tiến trình thành công',
