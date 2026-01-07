@@ -1126,24 +1126,26 @@ const DictationPage = () => {
                 <div className={styles.dictationHeader}>
                   <h3 className={styles.columnTitle}>Nghe và chép lại</h3>
                   <div className={styles.headerRight}>
-                    <button
-                      className={styles.speedButtonHeader}
-                      onClick={() => {
-                        const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
-                        const currentIndex = speeds.indexOf(playbackSpeed || 1);
-                        const nextIndex = (currentIndex + 1) % speeds.length;
-                        const newSpeed = speeds[nextIndex];
-                        setPlaybackSpeed(newSpeed);
-                        if (isYouTube && youtubePlayerRef.current?.setPlaybackRate) {
-                          youtubePlayerRef.current.setPlaybackRate(newSpeed);
-                        } else if (audioRef.current) {
-                          audioRef.current.playbackRate = newSpeed;
-                        }
-                      }}
-                      title="Tốc độ phát"
-                    >
-                      {playbackSpeed || 1}x
-                    </button>
+                    {isMobile && (
+                      <button
+                        className={styles.speedButtonHeader}
+                        onClick={() => {
+                          const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
+                          const currentIndex = speeds.indexOf(playbackSpeed || 1);
+                          const nextIndex = (currentIndex + 1) % speeds.length;
+                          const newSpeed = speeds[nextIndex];
+                          setPlaybackSpeed(newSpeed);
+                          if (isYouTube && youtubePlayerRef.current?.setPlaybackRate) {
+                            youtubePlayerRef.current.setPlaybackRate(newSpeed);
+                          } else if (audioRef.current) {
+                            audioRef.current.playbackRate = newSpeed;
+                          }
+                        }}
+                        title="Tốc độ phát"
+                      >
+                        {playbackSpeed || 1}x
+                      </button>
+                    )}
                     <span className={styles.sentenceCounter}>
                       Câu {currentSentenceIndex + 1} / {transcriptData.length}
                     </span>

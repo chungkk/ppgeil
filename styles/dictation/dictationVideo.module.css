@@ -270,6 +270,28 @@
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
+/* Speed Button Header */
+.speedButtonHeader {
+  background: var(--bg-tertiary);
+  border: none;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.speedButtonHeader:hover {
+  background: var(--bg-secondary);
+}
+
+.speedButtonHeader:active {
+  background: var(--accent-blue);
+  color: white;
+}
+
 /* Speed Button / Recording Button */
 .speedButton {
   background: var(--bg-primary);
