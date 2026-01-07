@@ -6027,6 +6027,12 @@
   cursor: not-allowed;
 }
 
+.checkButton.completed {
+  background: var(--accent-green);
+  opacity: 1;
+  color: white;
+}
+
 .showAnswerButton {
   background: var(--bg-tertiary);
   color: var(--text-primary);

@@ -99,11 +99,11 @@ const DictationPage = () => {
   // Save progress to database
   const saveProgress = useCallback(async (updates = {}) => {
     if (!lessonId || !user) return;
-    
+
     try {
       const token = localStorage.getItem('token');
       if (!token) return;
-      
+
       const progressData = {
         completedSentences: updates.completedSentences ?? completedSentences,
         checkedSentences: updates.checkedSentences ?? checkedSentences,
@@ -113,10 +113,10 @@ const DictationPage = () => {
         userInputs: updates.userInputs ?? userInputs,
         totalSentences: transcriptData.length
       };
-      
+
       const response = await fetch('/api/progress', {
         method: 'POST',
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
@@ -126,7 +126,7 @@ const DictationPage = () => {
           progress: progressData
         })
       });
-      
+
       if (response.ok) {
         console.log('✅ Dictation progress saved');
       }
@@ -152,6 +152,7 @@ const DictationPage = () => {
   const [isYouTube, setIsYouTube] = useState(false);
   const [isYouTubeAPIReady, setIsYouTubeAPIReady] = useState(false);
   const inputRefs = useRef({});
+  const checkAnswerRef = useRef(null); // Ref to hold checkAnswer function for auto-check
 
   // User seeking state (to prevent auto-update during click navigation)
   const [isUserSeeking, setIsUserSeeking] = useState(false);
@@ -486,7 +487,7 @@ const DictationPage = () => {
   useEffect(() => {
     if (hasRestoredComparedWords.current) return;
     if (!transcriptData.length || !Object.keys(userInputs).length) return;
-    
+
     const restoredComparedWords = {};
     Object.entries(userInputs).forEach(([index, value]) => {
       const correctText = transcriptData[index]?.text;
@@ -494,7 +495,7 @@ const DictationPage = () => {
         restoredComparedWords[index] = compareWords(value, correctText);
       }
     });
-    
+
     if (Object.keys(restoredComparedWords).length > 0) {
       setComparedWords(restoredComparedWords);
       hasRestoredComparedWords.current = true;
@@ -517,6 +518,23 @@ const DictationPage = () => {
         ...prev,
         [index]: wordComparison
       }));
+
+      // Auto-check: if all words are correct and word count matches, auto-submit
+      const correctWords = correctText.split(/\s+/).filter(w => w.length > 0);
+      const userWords = value.trim().split(/\s+/).filter(w => w.length > 0);
+      const allWordsCorrect = Object.values(wordComparison).every(w => w.isCorrect);
+      const wordCountMatches = userWords.length === correctWords.length;
+
+      // Only auto-check if not already completed and points not already awarded
+      if (allWordsCorrect && wordCountMatches && !completedSentences.includes(index) && !sentencePointsAwarded[index]) {
+        // Use setTimeout to avoid state update during render
+        // Use ref to avoid circular dependency
+        setTimeout(() => {
+          if (checkAnswerRef.current) {
+            checkAnswerRef.current(index);
+          }
+        }, 100);
+      }
     } else {
       // Clear comparison if input is empty
       setComparedWords(prev => {
@@ -525,18 +543,18 @@ const DictationPage = () => {
         return updated;
       });
     }
-  }, [transcriptData, compareWords, userInputs, debouncedSaveInput]);
+  }, [transcriptData, compareWords, userInputs, debouncedSaveInput, completedSentences, sentencePointsAwarded]);
 
   // Show points animation
   const showPointsAnimation = useCallback((points, element) => {
     if (!element) return;
-    
+
     const rect = element.getBoundingClientRect();
     const startPosition = {
       top: rect.top + rect.height / 2 - 10,
       left: rect.left + rect.width / 2
     };
-    
+
     const headerBadge = document.querySelector('[title="Your total points"]');
     let endPosition = null;
 
@@ -552,15 +570,15 @@ const DictationPage = () => {
         left: startPosition.left
       };
     }
-    
+
     const animationId = Date.now() + Math.random();
-    setPointsAnimations(prev => [...prev, { 
-      id: animationId, 
-      points, 
+    setPointsAnimations(prev => [...prev, {
+      id: animationId,
+      points,
       startPosition,
-      endPosition 
+      endPosition
     }]);
-    
+
     setTimeout(() => {
       setPointsAnimations(prev => prev.filter(a => a.id !== animationId));
     }, 1000);
@@ -569,11 +587,11 @@ const DictationPage = () => {
   // Update points on server
   const updatePoints = useCallback(async (pointsChange, reason, element = null) => {
     if (!user) return;
-    
+
     try {
       const token = localStorage.getItem('token');
       if (!token) return;
-      
+
       const response = await fetch('/api/user/points', {
         method: 'POST',
         headers: {
@@ -582,7 +600,7 @@ const DictationPage = () => {
         },
         body: JSON.stringify({ pointsChange, reason })
       });
-      
+
       if (response.ok) {
         const data = await response.json();
         console.log(`✅ Points updated: ${pointsChange > 0 ? '+' : ''}${pointsChange} (${reason})`, data);
@@ -595,15 +613,15 @@ const DictationPage = () => {
           if (pointsChange > 0 && window.showPointsPlusOne) {
             window.showPointsPlusOne(pointsChange);
           }
-          
+
           setTimeout(() => {
             if (window.refreshUserPoints) {
               window.refreshUserPoints();
             }
           }, 100);
-          
-          window.dispatchEvent(new CustomEvent('pointsUpdated', { 
-            detail: { pointsChange, reason } 
+
+          window.dispatchEvent(new CustomEvent('pointsUpdated', {
+            detail: { pointsChange, reason }
           }));
         }
       } else {
@@ -638,8 +656,8 @@ const DictationPage = () => {
     }));
 
     // Mark as checked to reveal in transcript
-    const newCheckedSentences = checkedSentences.includes(index) 
-      ? checkedSentences 
+    const newCheckedSentences = checkedSentences.includes(index)
+      ? checkedSentences
       : [...checkedSentences, index];
     if (!checkedSentences.includes(index)) {
       setCheckedSentences(newCheckedSentences);
@@ -649,14 +667,14 @@ const DictationPage = () => {
       hapticEvents.wordCorrect();
       const newCompletedSentences = [...completedSentences, index];
       setCompletedSentences(newCompletedSentences);
-      
+
       // Award +1 point for correct sentence (only once per sentence)
       if (!sentencePointsAwarded[index]) {
         const inputElement = inputRefs.current[index];
         updatePoints(1, `Dictation correct sentence #${index + 1}`, inputElement);
         const newSentencePointsAwarded = { ...sentencePointsAwarded, [index]: true };
         setSentencePointsAwarded(newSentencePointsAwarded);
-        
+
         // Save progress
         saveProgress({
           completedSentences: newCompletedSentences,
@@ -672,6 +690,11 @@ const DictationPage = () => {
       });
     }
   }, [userInputs, transcriptData, completedSentences, checkedSentences, compareWords, sentencePointsAwarded, updatePoints, saveProgress]);
+
+  // Keep checkAnswerRef in sync with checkAnswer
+  useEffect(() => {
+    checkAnswerRef.current = checkAnswer;
+  }, [checkAnswer]);
 
   // Show answer
   const showAnswer = useCallback((index) => {
@@ -728,7 +751,7 @@ const DictationPage = () => {
       updatePoints(-1, `Dictation: revealed ${revealedCount} words in sentence #${sentenceIndex + 1}`, targetElement);
       const newSentenceRevealPenalty = { ...sentenceRevealPenalty, [sentenceIndex]: true };
       setSentenceRevealPenalty(newSentenceRevealPenalty);
-      
+
       // Save progress with penalty
       saveProgress({
         revealedWordsByClick: updated,
@@ -1327,26 +1350,30 @@ const DictationPage = () => {
             />
           </div>
         </div>
-      </div>
+      </div >
 
       {/* Dictionary Popup */}
-      {showVocabPopup && (
-        <DictionaryPopup
-          word={selectedWord}
-          position={popupPosition}
-          onClose={() => setShowVocabPopup(false)}
-        />
-      )}
+      {
+        showVocabPopup && (
+          <DictionaryPopup
+            word={selectedWord}
+            position={popupPosition}
+            onClose={() => setShowVocabPopup(false)}
+          />
+        )
+      }
 
       {/* Points Animation */}
-      {pointsAnimations.map(anim => (
-        <PointsAnimation
-          key={anim.id}
-          points={anim.points}
-          startPosition={anim.startPosition}
-          endPosition={anim.endPosition}
-        />
-      ))}
+      {
+        pointsAnimations.map(anim => (
+          <PointsAnimation
+            key={anim.id}
+            points={anim.points}
+            startPosition={anim.startPosition}
+            endPosition={anim.endPosition}
+          />
+        ))
+      }
     </>
   );
 };
