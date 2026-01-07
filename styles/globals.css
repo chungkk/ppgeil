@@ -786,8 +786,8 @@ button:focus-visible {
     scroll-padding-bottom: calc(70px + env(safe-area-inset-bottom, 20px));
   }
   
-  /* Add padding-top for pages with back button */
+  /* Add padding-top for header + safe area on mobile iOS */
   .main-container {
-    padding-top: max(env(safe-area-inset-top, 0px), 0px);
+    padding-top: calc(56px + env(safe-area-inset-top, 0px));
   }
 }
