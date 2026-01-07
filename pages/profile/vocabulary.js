@@ -37,31 +37,24 @@ function VocabularyPage() {
     });
     const [lookupResult, setLookupResult] = useState(null);
     const [lookupLoading, setLookupLoading] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const ITEMS_PER_PAGE = 20;
 
-    // Load vocabulary from localStorage (temporary) or API
+    // Load vocabulary from API
     const loadVocabulary = useCallback(async () => {
         try {
             setLoading(true);
-            // Try to load from localStorage first
-            const savedVocab = localStorage.getItem(`vocabulary_${user?.email}`);
-            if (savedVocab) {
-                setVocabulary(JSON.parse(savedVocab));
+            const response = await fetchWithAuth('/api/vocabulary');
+            if (response.ok) {
+                const data = await response.json();
+                setVocabulary(Array.isArray(data) ? data : []);
             }
         } catch (error) {
             console.error('Failed to load vocabulary:', error);
         } finally {
             setLoading(false);
         }
-    }, [user?.email]);
-
-    // Save vocabulary to localStorage
-    const saveVocabulary = useCallback((vocab) => {
-        try {
-            localStorage.setItem(`vocabulary_${user?.email}`, JSON.stringify(vocab));
-        } catch (error) {
-            console.error('Failed to save vocabulary:', error);
-        }
-    }, [user?.email]);
+    }, []);
 
     useEffect(() => {
         if (user) {
@@ -107,48 +100,81 @@ function VocabularyPage() {
     };
 
     // Add new word
-    const handleAddWord = useCallback(() => {
+    const handleAddWord = useCallback(async () => {
         if (!newWord.word.trim()) return;
 
-        const wordToAdd = {
-            id: Date.now().toString(),
-            word: newWord.word.trim(),
-            translation: newWord.translation.trim(),
-            example: newWord.example.trim(),
-            notes: newWord.notes.trim(),
-            status: VOCAB_STATUS.NEW,
-            createdAt: new Date().toISOString(),
-            reviewCount: 0,
-            lastReviewAt: null,
-        };
+        try {
+            const response = await fetchWithAuth('/api/vocabulary', {
+                method: 'POST',
+                body: JSON.stringify({
+                    word: newWord.word.trim(),
+                    translation: newWord.translation.trim(),
+                    example: newWord.example.trim(),
+                    notes: newWord.notes.trim(),
+                    status: VOCAB_STATUS.NEW,
+                })
+            });
 
-        const updatedVocab = [wordToAdd, ...vocabulary];
-        setVocabulary(updatedVocab);
-        saveVocabulary(updatedVocab);
-
-        // Reset form
-        setNewWord({ word: '', translation: '', example: '', notes: '' });
-        setLookupResult(null);
-        setShowAddModal(false);
-    }, [newWord, vocabulary, saveVocabulary]);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.vocabulary) {
+                    setVocabulary(prev => [data.vocabulary, ...prev]);
+                }
+                // Reset form
+                setNewWord({ word: '', translation: '', example: '', notes: '' });
+                setLookupResult(null);
+                setShowAddModal(false);
+            } else {
+                const error = await response.json();
+                alert(error.message || 'Không thể lưu từ vựng');
+            }
+        } catch (error) {
+            console.error('Failed to add word:', error);
+            alert('Có lỗi xảy ra');
+        }
+    }, [newWord]);
 
     // Update word status
-    const updateWordStatus = useCallback((wordId, newStatus) => {
-        const updatedVocab = vocabulary.map(v =>
-            v.id === wordId
-                ? { ...v, status: newStatus, lastReviewAt: new Date().toISOString(), reviewCount: v.reviewCount + 1 }
-                : v
-        );
-        setVocabulary(updatedVocab);
-        saveVocabulary(updatedVocab);
-    }, [vocabulary, saveVocabulary]);
+    const updateWordStatus = useCallback(async (wordId, newStatus) => {
+        const vocab = vocabulary.find(v => v.id === wordId);
+        if (!vocab) return;
+
+        try {
+            const response = await fetchWithAuth('/api/vocabulary', {
+                method: 'PUT',
+                body: JSON.stringify({
+                    id: wordId,
+                    status: newStatus,
+                    reviewCount: vocab.reviewCount + 1
+                })
+            });
+
+            if (response.ok) {
+                setVocabulary(prev => prev.map(v =>
+                    v.id === wordId
+                        ? { ...v, status: newStatus, lastReviewAt: new Date().toISOString(), reviewCount: v.reviewCount + 1 }
+                        : v
+                ));
+            }
+        } catch (error) {
+            console.error('Failed to update word status:', error);
+        }
+    }, [vocabulary]);
 
     // Delete word
-    const deleteWord = useCallback((wordId) => {
-        const updatedVocab = vocabulary.filter(v => v.id !== wordId);
-        setVocabulary(updatedVocab);
-        saveVocabulary(updatedVocab);
-    }, [vocabulary, saveVocabulary]);
+    const deleteWord = useCallback(async (wordId) => {
+        try {
+            const response = await fetchWithAuth(`/api/vocabulary?id=${wordId}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                setVocabulary(prev => prev.filter(v => v.id !== wordId));
+            }
+        } catch (error) {
+            console.error('Failed to delete word:', error);
+        }
+    }, []);
 
     // Filter vocabulary based on tab and search
     const filteredVocabulary = useMemo(() => {
@@ -171,6 +197,18 @@ function VocabularyPage() {
 
         return filtered;
     }, [vocabulary, activeTab, searchQuery]);
+
+    // Pagination
+    const totalPages = Math.ceil(filteredVocabulary.length / ITEMS_PER_PAGE);
+    const paginatedVocabulary = useMemo(() => {
+        const start = (currentPage - 1) * ITEMS_PER_PAGE;
+        return filteredVocabulary.slice(start, start + ITEMS_PER_PAGE);
+    }, [filteredVocabulary, currentPage]);
+
+    // Reset page when filter changes
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [activeTab, searchQuery]);
 
     // Flashcard vocabulary (only new and learning words)
     const flashcardVocabulary = useMemo(() => {
@@ -376,71 +414,74 @@ function VocabularyPage() {
                                         )}
                                     </div>
                                 ) : (
-                                    <div className={styles.wordGrid}>
-                                        {filteredVocabulary.map(vocab => (
-                                            <div key={vocab.id} className={`${styles.wordCard} ${styles[vocab.status]}`}>
-                                                <div className={styles.wordHeader}>
-                                                    <div className={styles.wordMain}>
-                                                        <h3 className={styles.wordText}>{vocab.word}</h3>
-                                                        <span className={`${styles.statusBadge} ${styles[vocab.status]}`}>
-                                                            {vocab.status === VOCAB_STATUS.NEW && '🆕 Mới'}
-                                                            {vocab.status === VOCAB_STATUS.LEARNING && '📝 Đang học'}
-                                                            {vocab.status === VOCAB_STATUS.MASTERED && '✅ Đã thuộc'}
-                                                        </span>
+                                    <>
+                                        <div className={styles.wordList}>
+                                            {paginatedVocabulary.map(vocab => (
+                                                <div key={vocab.id} className={`${styles.wordRow} ${styles[vocab.status]}`}>
+                                                    <div className={styles.wordInfo}>
+                                                        <div className={styles.wordText}>{vocab.word}</div>
+                                                        <div className={styles.wordTranslation}>{vocab.translation}</div>
                                                     </div>
-                                                    <button
-                                                        className={styles.deleteBtn}
-                                                        onClick={() => deleteWord(vocab.id)}
-                                                        title="Xóa từ"
-                                                    >
-                                                        🗑️
-                                                    </button>
-                                                </div>
-
-                                                <p className={styles.wordTranslation}>{vocab.translation}</p>
-
-                                                {vocab.example && (
-                                                    <p className={styles.wordExample}>
-                                                        <span className={styles.exampleLabel}>Ví dụ:</span> "{vocab.example}"
-                                                    </p>
-                                                )}
-
-                                                {vocab.notes && (
-                                                    <p className={styles.wordNotes}>
-                                                        <span className={styles.notesLabel}>Ghi chú:</span> {vocab.notes}
-                                                    </p>
-                                                )}
-
-                                                <div className={styles.wordActions}>
-                                                    {vocab.status !== VOCAB_STATUS.MASTERED && (
+                                                    <span className={`${styles.statusBadge} ${styles[vocab.status]}`}>
+                                                        {vocab.status === VOCAB_STATUS.NEW && '🆕'}
+                                                        {vocab.status === VOCAB_STATUS.LEARNING && '📝'}
+                                                        {vocab.status === VOCAB_STATUS.MASTERED && '✅'}
+                                                    </span>
+                                                    <div className={styles.wordActions}>
+                                                        {vocab.status !== VOCAB_STATUS.MASTERED ? (
+                                                            <button
+                                                                className={styles.actionBtn}
+                                                                onClick={() => updateWordStatus(vocab.id,
+                                                                    vocab.status === VOCAB_STATUS.NEW ? VOCAB_STATUS.LEARNING : VOCAB_STATUS.MASTERED
+                                                                )}
+                                                                title={vocab.status === VOCAB_STATUS.NEW ? 'Đang học' : 'Đã thuộc'}
+                                                            >
+                                                                {vocab.status === VOCAB_STATUS.NEW ? '📝' : '✅'}
+                                                            </button>
+                                                        ) : (
+                                                            <button
+                                                                className={styles.actionBtn}
+                                                                onClick={() => updateWordStatus(vocab.id, VOCAB_STATUS.LEARNING)}
+                                                                title="Ôn lại"
+                                                            >
+                                                                🔄
+                                                            </button>
+                                                        )}
                                                         <button
-                                                            className={styles.actionBtn}
-                                                            onClick={() => updateWordStatus(vocab.id,
-                                                                vocab.status === VOCAB_STATUS.NEW ? VOCAB_STATUS.LEARNING : VOCAB_STATUS.MASTERED
-                                                            )}
+                                                            className={styles.deleteBtn}
+                                                            onClick={() => deleteWord(vocab.id)}
+                                                            title="Xóa"
                                                         >
-                                                            {vocab.status === VOCAB_STATUS.NEW ? '📝 Đánh dấu đang học' : '✅ Đã thuộc'}
+                                                            🗑️
                                                         </button>
-                                                    )}
-                                                    {vocab.status === VOCAB_STATUS.MASTERED && (
-                                                        <button
-                                                            className={styles.actionBtn}
-                                                            onClick={() => updateWordStatus(vocab.id, VOCAB_STATUS.LEARNING)}
-                                                        >
-                                                            🔄 Ôn lại
-                                                        </button>
-                                                    )}
+                                                    </div>
                                                 </div>
+                                            ))}
+                                        </div>
 
-                                                <div className={styles.wordMeta}>
-                                                    <span>Ôn tập: {vocab.reviewCount} lần</span>
-                                                    {vocab.lastReviewAt && (
-                                                        <span>Lần cuối: {new Date(vocab.lastReviewAt).toLocaleDateString('vi-VN')}</span>
-                                                    )}
-                                                </div>
+                                        {/* Pagination */}
+                                        {totalPages > 1 && (
+                                            <div className={styles.pagination}>
+                                                <button
+                                                    className={styles.pageBtn}
+                                                    onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                                                    disabled={currentPage === 1}
+                                                >
+                                                    ←
+                                                </button>
+                                                <span className={styles.pageInfo}>
+                                                    {currentPage} / {totalPages}
+                                                </span>
+                                                <button
+                                                    className={styles.pageBtn}
+                                                    onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                                                    disabled={currentPage === totalPages}
+                                                >
+                                                    →
+                                                </button>
                                             </div>
-                                        ))}
-                                    </div>
+                                        )}
+                                    </>
                                 )}
                             </div>
                         </div>
@@ -611,7 +652,7 @@ function VocabularyPage() {
                                         </div>
                                         {flashcardVocabulary[flashcardIndex]?.example && (
                                             <div className={styles.flashcardExample}>
-                                                "{flashcardVocabulary[flashcardIndex]?.example}"
+                                                &ldquo;{flashcardVocabulary[flashcardIndex]?.example}&rdquo;
                                             </div>
                                         )}
                                     </div>
