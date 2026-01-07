@@ -415,13 +415,16 @@ function DashboardIndex() {
                     recentActivity.slice(0, 4).map((activity, index) => {
                       const lesson = allLessons.find(l => l.id === activity.lessonId);
                       // Calculate points from actual progress
-                      const progress = activity.progress || {};
-                      let earnedPoints = 0;
-                      if (activity.mode === 'dictation') {
-                        earnedPoints = progress.correctWords || 0;
-                      } else {
-                        // For shadowing, count completed sentences
-                        earnedPoints = (progress.currentSentenceIndex || 0) + (progress.currentSentenceIndex !== undefined ? 1 : 0);
+                      const progressData = activity.progress || {};
+                      // Use correctWords if available, otherwise count completedSentences
+                      let earnedPoints = progressData.correctWords || 0;
+                      if (earnedPoints === 0 && progressData.completedSentences) {
+                        // Count completed sentences as fallback
+                        earnedPoints = Object.keys(progressData.completedSentences).length;
+                      }
+                      if (earnedPoints === 0 && activity.completionPercent > 0) {
+                        // Use completion percent as last resort
+                        earnedPoints = activity.completionPercent;
                       }
                       return (
                         <div key={index} className={styles.activityItem}>
