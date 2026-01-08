@@ -73,6 +73,10 @@
       "admin": "Quản trị viên",
       "user": "Người dùng"
     },
+    "preferences": {
+      "title": "Tùy chọn hiển thị",
+      "description": "Tùy chỉnh giao diện và ngôn ngữ"
+    },
     "appearance": {
       "title": "Giao diện",
       "description": "Chọn bảng màu ưa thích của bạn",

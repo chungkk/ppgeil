@@ -333,53 +333,56 @@ async function addPunctuationToWords(words, rawText) {
 
 AUFGABE: Analysiere den transkribierten Text semantisch und syntaktisch, füge korrekte Satzzeichen hinzu und teile ihn in natürliche Untertitel-Segmente.
 
+⚠️ KRITISCHE REGELN (NIEMALS VERLETZEN):
+1. JEDES Segment MUSS mit einem Satzzeichen enden: . ! ? , ; : –
+2. NIEMALS mitten im Satz trennen (z.B. "zum Haus" | "ihrer Großmutter" ist VERBOTEN)
+3. NIEMALS Präpositionalphrasen trennen (in/an/auf/bei/mit/zu/von + Artikel + Nomen)
+4. NIEMALS Genitivattribute abtrennen (das Haus + der Großmutter = zusammen)
+5. Lieber ein längeres Segment (bis 16 Wörter) als ein grammatisch falsches
+
 LINGUISTISCHE ANALYSE:
-1. Erkenne Satzstrukturen: Hauptsätze, Nebensätze, Relativsätze, Infinitivkonstruktionen
-2. Identifiziere Satzgrenzen durch: Subjektwechsel, Tempuswechsel, Konjunktionen (aber, denn, oder, und, sondern, weil, dass, wenn, obwohl)
-3. Beachte V2-Stellung im Hauptsatz vs. Verbendstellung im Nebensatz
-4. Erkenne direkte/indirekte Rede, Aufzählungen, Einschübe
+1. Erkenne vollständige Satzstrukturen vor dem Trennen
+2. Identifiziere Satzgrenzen durch: Punkt, Ausrufezeichen, Fragezeichen
+3. Erkenne zusammengehörige Phrasen:
+   - Präpositionalphrasen: "zum Haus ihrer Großmutter" (NICHT trennen!)
+   - Genitivattribute: "die Tür des Hauses" (NICHT trennen!)
+   - Infinitivkonstruktionen: "um zu arbeiten" (NICHT trennen!)
+   - Relativsätze: ", der dort wohnt" (am Ende des Relativsatzes trennen)
 
 SATZZEICHEN-REGELN:
 - Punkt (.): Am Satzende, nach Aussagesätzen
-- Komma (,): Vor Nebensätzen, bei Aufzählungen, nach Einschüben, vor "aber/sondern/denn"
-- Fragezeichen (?): Bei direkten Fragen (Verberststellung oder W-Wort)
-- Ausrufezeichen (!): Bei Imperativen, Ausrufen, starken Emotionen
-- Doppelpunkt (:): Vor Erklärungen, Aufzählungen, direkter Rede
-- Gedankenstrich (–): Bei Einschüben, Themenwechsel
-- Anführungszeichen („"): Bei direkter Rede
+- Komma (,): Vor Nebensätzen, bei Aufzählungen, nach Einschüben
+- Fragezeichen (?): Bei direkten Fragen
+- Ausrufezeichen (!): Bei Imperativen, Ausrufen
 
-SEGMENTIERUNG (5-14 Wörter pro Segment, IDEAL 6-10 Wörter):
-- MINIMUM: 5 Wörter pro Segment (zu kurze Segmente sind schwer zu lesen)
-- IDEAL: 6-10 Wörter pro Segment (optimale Leselänge)
-- MAXIMUM: 14 Wörter pro Segment (zu lange Segmente sind unübersichtlich)
-- Trenne bei natürlichen Sprechpausen und Sinneinheiten
-- Halte zusammen: Subjekt+Prädikat, Artikel+Nomen, Präposition+Objekt, Hilfsverb+Partizip
-- Trenne bei: Satzgrenzen, Sprecherwechsel, Themenwechsel
-- NIEMALS trennen: mitten in Nominalphrasen, zwischen Modalverb und Infinitiv
-- Bei langen Sätzen (>14 Wörter): Trenne bei Kommata, Konjunktionen, oder nach Nebensätzen
-- Bei kurzen Sätzen (<5 Wörter): Kombiniere mit dem nächsten Satz wenn möglich
+SEGMENTIERUNG (6-14 Wörter pro Segment):
+- IDEAL: 7-12 Wörter pro Segment
+- Trenne NUR bei: Satzende (. ! ?), Komma mit Nebensatz, Sprecherwechsel
+- NIEMALS trennen: mitten in Phrasen, vor Genitivattributen, nach Präpositionen
+- Wenn ein Satz >14 Wörter hat: Trenne nach Komma/Nebensatz, NICHT nach beliebigem Wort
 
-KONTEXT-ANALYSE:
-- Ist es ein Monolog, Dialog, Nachrichtensprecher, Interview?
-- Formeller oder informeller Stil?
-- Fachsprache oder Alltagssprache?
+BEISPLE - RICHTIG vs. FALSCH:
 
-BEISPIELE:
-Input: "ich glaube dass wir morgen kommen können aber ich bin mir nicht sicher"
-Output: ["Ich glaube, dass wir morgen kommen können, aber ich bin mir nicht sicher."]
-(12 Wörter - innerhalb IDEAL-MAX, daher NICHT trennen)
+❌ FALSCH: ["Das Mädchen ging zum Haus", "ihrer Großmutter."]
+   (Genitivattribut "ihrer Großmutter" wurde abgetrennt!)
+✅ RICHTIG: ["Das Mädchen ging zum Haus ihrer Großmutter."]
+   (Vollständiger Satz mit Genitivattribut)
 
-Input: "was machen sie beruflich ich arbeite als lehrer und meine frau ist ärztin wir haben zwei kinder"
-Output: ["Was machen Sie beruflich? Ich arbeite als Lehrer,", "und meine Frau ist Ärztin. Wir haben zwei Kinder."]
-(Erste Segment 8 Wörter, zweite 8 Wörter - beide IDEAL)
+❌ FALSCH: ["Er arbeitet in der", "großen Firma."]
+   (Präpositionalphrase wurde getrennt!)
+✅ RICHTIG: ["Er arbeitet in der großen Firma."]
 
-Input: "ja"
-Output: ["Ja."]
-(Einzelnes Wort kann nicht kombiniert werden - Ausnahme)
+❌ FALSCH: ["Sie wollte", "nach Hause gehen."]
+   (Modalverb + Infinitiv getrennt!)
+✅ RICHTIG: ["Sie wollte nach Hause gehen."]
 
-Input: "hier sehen wir die berühmten kalkterrassen von pamukkale ein UNESCO weltkulturerbe das jedes jahr millionen von touristen anzieht"
-Output: ["Hier sehen wir die berühmten Kalkterrassen von Pamukkale,", "ein UNESCO-Weltkulturerbe, das jedes Jahr Millionen von Touristen anzieht."]
-(Erste 8 Wörter, zweite 10 Wörter)
+✅ RICHTIG (lange Segmente OK): 
+   ["Das kleine Mädchen mit dem roten Käppchen ging durch den dunklen Wald zum Haus ihrer Großmutter."]
+   (16 Wörter aber EIN vollständiger Satz - NICHT trennen!)
+
+✅ RICHTIG (Trennung bei Komma):
+   Input: "das mädchen machte sich auf den weg weiche im wald nicht vom weg ab sagte die mutter"
+   Output: ["Das Mädchen machte sich auf den Weg.", "„Weiche im Wald nicht vom Weg ab", sagte die Mutter."]
 
 Antworte NUR mit JSON array. Keine Erklärung.`
         },
@@ -716,7 +719,8 @@ function createRawSegments(words) {
 }
 
 /**
- * Bước 2: Merge các segment quá ngắn với segment tiếp theo
+ * Bước 2: Merge các segment quá ngắn VÀ segment kết thúc giữa câu
+ * CẢI TIẾN: Kiểm tra segment có kết thúc đúng không
  */
 function mergeShortSegments(segments) {
   if (segments.length <= 1) return segments;
@@ -726,10 +730,17 @@ function mergeShortSegments(segments) {
 
   while (i < segments.length) {
     let current = { ...segments[i] };
+    current.words = [...segments[i].words];
+    current.wordIndices = [...segments[i].wordIndices];
 
-    // Nếu segment hiện tại quá ngắn và không phải segment cuối
-    while (current.words.length < MIN_WORDS && i + 1 < segments.length) {
+    // Điều kiện merge:
+    // 1. Segment quá ngắn (<MIN_WORDS)
+    // 2. Segment kết thúc giữa câu (từ cuối không có dấu câu + từ đầu segment sau là lowercase)
+    while (i + 1 < segments.length) {
       const next = segments[i + 1];
+      const shouldMerge = shouldMergeWithNext(current, next);
+
+      if (!shouldMerge) break;
 
       // Merge với segment tiếp theo
       current.words = [...current.words, ...next.words];
@@ -738,8 +749,8 @@ function mergeShortSegments(segments) {
 
       i++;
 
-      // Nếu đã đủ dài hoặc đạt IDEAL, dừng merge
-      if (current.words.length >= IDEAL_MIN_WORDS) {
+      // Nếu đã quá dài, dừng merge
+      if (current.words.length >= MAX_WORDS) {
         break;
       }
     }
@@ -749,6 +760,59 @@ function mergeShortSegments(segments) {
   }
 
   return merged;
+}
+
+/**
+ * Kiểm tra xem có nên merge segment hiện tại với segment tiếp theo không
+ */
+function shouldMergeWithNext(current, next) {
+  if (!next || next.words.length === 0) return false;
+
+  const currentWordCount = current.words.length;
+  const nextWordCount = next.words.length;
+
+  // Lý do 1: Segment hiện tại quá ngắn
+  if (currentWordCount < MIN_WORDS) {
+    return true;
+  }
+
+  // Lý do 2: Segment kết thúc giữa câu
+  const lastWord = current.words[current.words.length - 1];
+  const lastWordText = lastWord.word.trim();
+  const firstWordOfNext = next.words[0].word.trim();
+
+  // Kiểm tra từ cuối có dấu câu kết thúc không
+  const hasPunctuation = /[.!?;:]$/.test(lastWordText);
+  const hasComma = /,$/.test(lastWordText);
+
+  // Kiểm tra từ đầu segment tiếp theo
+  const nextStartsLowercase = /^[a-zäöüß]/.test(firstWordOfNext);
+  const nextStartsWithConjunction = /^(aber|oder|und|sondern|denn|weil|dass|wenn|obwohl|während|bevor|nachdem|doch|jedoch|also|deshalb|daher|trotzdem)$/i.test(firstWordOfNext.replace(/[.,]/g, ''));
+
+  // Nếu từ cuối là genitive article hoặc preposition, chắc chắn phải merge
+  const endsWithGenitiveTrigger = /^(des|der|eines|einer|meiner|deiner|seiner|ihrer|unserer|eurer)$/i.test(lastWordText);
+  const endsWithPreposition = /^(in|an|auf|bei|mit|zu|von|für|über|unter|zwischen|hinter|vor|neben|nach|aus|durch|gegen|ohne|um|bis|seit|während|wegen|trotz|statt|anstatt)$/i.test(lastWordText);
+
+  if (endsWithGenitiveTrigger || endsWithPreposition) {
+    return true;
+  }
+
+  // Nếu không có dấu câu VÀ từ tiếp theo là lowercase (không phải conjunction đứng đầu câu mới)
+  if (!hasPunctuation && !hasComma && nextStartsLowercase && !nextStartsWithConjunction) {
+    // Từ tiếp theo là lowercase → có thể đang ở giữa câu
+    return true;
+  }
+
+  // Nếu có dấu phẩy VÀ từ tiếp theo là lowercase VÀ không phải conjunction
+  // → có thể là dấu phẩy trong cụm từ, không phải kết thúc clause
+  if (hasComma && nextStartsLowercase && !nextStartsWithConjunction) {
+    // Chỉ merge nếu tổng không quá dài
+    if (currentWordCount + nextWordCount <= IDEAL_MAX_WORDS) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 /**
@@ -774,31 +838,70 @@ function splitLongSegments(segments, allWords) {
 
 /**
  * Tìm các điểm split tự nhiên trong segment
- * Ưu tiên: comma, conjunction, sau clause
+ * CẢI TIẾN: Chỉ split tại điểm AN TOÀN - sau dấu câu hoặc trước conjunction
+ * KHÔNG BAO GIỜ split sau preposition, article, genitive trigger
  */
 function findNaturalSplitPoints(words) {
   const points = [];
 
-  for (let i = 0; i < words.length; i++) {
-    const word = words[i].word.toLowerCase();
-    const cleanWord = word.replace(/[.,!?;:]/g, '');
+  // Danh sách từ KHÔNG ĐƯỢC split sau (sẽ tạo fragment)
+  const UNSAFE_ENDINGS = [
+    // Prepositions
+    'in', 'an', 'auf', 'bei', 'mit', 'zu', 'von', 'für', 'über', 'unter',
+    'zwischen', 'hinter', 'vor', 'neben', 'nach', 'aus', 'durch', 'gegen',
+    'ohne', 'um', 'bis', 'seit', 'während', 'wegen', 'trotz', 'statt', 'anstatt',
+    'zum', 'zur', 'beim', 'vom', 'im', 'am', 'ins', 'ans', 'aufs',
+    // Articles
+    'der', 'die', 'das', 'den', 'dem', 'ein', 'eine', 'einen', 'einem', 'einer',
+    // Genitive articles
+    'des', 'eines', 'meines', 'deines', 'seines', 'ihres', 'unseres', 'eures',
+    // Possessive
+    'mein', 'meine', 'dein', 'deine', 'sein', 'seine', 'ihr', 'ihre', 'unser', 'unsere', 'euer', 'eure',
+    // Demonstrative
+    'dieser', 'diese', 'dieses', 'diesen', 'diesem', 'jener', 'jene', 'jenes',
+    // Relative pronouns (beginning)
+    'welcher', 'welche', 'welches', 'welchen', 'welchem',
+  ];
 
-    // Điểm tốt nhất: sau dấu phẩy
-    if (/,\s*$/.test(word)) {
-      points.push({ index: i, priority: 1, type: 'comma' });
+  for (let i = 0; i < words.length - 1; i++) {
+    const word = words[i].word;
+    const cleanWord = word.toLowerCase().replace(/[.,!?;:„"]/g, '');
+    const nextWord = words[i + 1]?.word || '';
+    const nextCleanWord = nextWord.toLowerCase().replace(/[.,!?;:„"]/g, '');
+
+    // KHÔNG split nếu từ hiện tại là unsafe ending
+    if (UNSAFE_ENDINGS.includes(cleanWord)) {
+      continue;
     }
-    // Điểm tốt: trước conjunction
-    else if (['aber', 'oder', 'und', 'sondern', 'denn', 'weil', 'dass', 'wenn', 'obwohl', 'während', 'bevor', 'nachdem'].includes(cleanWord)) {
-      points.push({ index: i - 1, priority: 2, type: 'conjunction' });
+
+    // KHÔNG split nếu từ tiếp theo bắt đầu bằng lowercase (trừ conjunction)
+    const isNextLowercase = /^[a-zäöüß]/.test(nextWord);
+    const isNextConjunction = ['aber', 'oder', 'und', 'sondern', 'denn', 'weil', 'dass', 'wenn', 'obwohl', 'während', 'bevor', 'nachdem', 'doch', 'jedoch', 'also', 'deshalb', 'daher'].includes(nextCleanWord);
+
+    // Điểm TỐT NHẤT: sau dấu câu kết thúc (. ! ?)
+    if (/[.!?]$/.test(word)) {
+      points.push({ index: i, priority: 0, type: 'sentenceEnd' });
     }
-    // Điểm chấp nhận được: sau verb ở vị trí thứ 2 (V2 trong tiếng Đức)
-    else if (i >= 1 && i <= 3 && words.length > 8) {
-      // Có thể là điểm phân cách sau verb chính
-      points.push({ index: i, priority: 3, type: 'afterVerb' });
+    // Điểm TỐT: sau dấu phẩy + từ tiếp theo là conjunction hoặc uppercase
+    else if (/,$/.test(word)) {
+      if (isNextConjunction || !isNextLowercase) {
+        points.push({ index: i, priority: 1, type: 'comma+safe' });
+      } else {
+        // Comma nhưng tiếp theo là lowercase - ít an toàn hơn
+        points.push({ index: i, priority: 3, type: 'comma+risky' });
+      }
+    }
+    // Điểm CHẤP NHẬN: trước conjunction (split trước conjunction)
+    else if (isNextConjunction && i >= MIN_WORDS - 1) {
+      points.push({ index: i, priority: 2, type: 'beforeConjunction' });
+    }
+    // Điểm SAU DÙNG: sau chữ hoa (có thể là kết thúc tên riêng hoặc câu)
+    else if (/[A-ZÄÖÜ]/.test(word.charAt(0)) && !isNextLowercase && i >= 4) {
+      points.push({ index: i, priority: 4, type: 'afterProperNoun' });
     }
   }
 
-  // Sắp xếp theo priority
+  // Sắp xếp theo priority (số nhỏ = ưu tiên cao)
   return points.sort((a, b) => a.priority - b.priority);
 }
 

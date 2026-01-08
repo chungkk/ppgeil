@@ -5,7 +5,7 @@ import ProtectedPage from '../../components/ProtectedPage';
 import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
 import { toast } from 'react-toastify';
-import OfflineDownloadManager from '../../components/OfflineDownloadManager';
+
 import styles from '../../styles/profile.module.css';
 import settingsStyles from '../../styles/settings.module.css';
 
@@ -15,7 +15,7 @@ function SettingsPage() {
   const { user, refreshUser } = useAuth();
   const { theme, themeOptions, setTheme } = useTheme();
 
-  const [activeTab, setActiveTab] = useState('general');
+
   const [passwordForm, setPasswordForm] = useState({
     currentPassword: '',
     newPassword: '',
@@ -122,27 +122,10 @@ function SettingsPage() {
             </p>
           </div>
 
-          {/* Tabs */}
-          <div className={settingsStyles.tabs}>
-            <button
-              className={`${settingsStyles.tab} ${activeTab === 'general' ? settingsStyles.tabActive : ''}`}
-              onClick={() => setActiveTab('general')}
-            >
-              <span>⚙️</span>
-              Cài đặt chung
-            </button>
-            <button
-              className={`${settingsStyles.tab} ${activeTab === 'offline' ? settingsStyles.tabActive : ''}`}
-              onClick={() => setActiveTab('offline')}
-            >
-              <span>📥</span>
-              Offline
-            </button>
-          </div>
 
-          {/* General Settings Tab */}
-          {activeTab === 'general' && (
-            <div className={settingsStyles.settingsContainer}>
+
+          {/* Settings Content */}
+          <div className={settingsStyles.settingsContainer}>
               {/* Profile Section */}
               <div className={settingsStyles.settingsSection}>
                 <div className={settingsStyles.sectionHeader}>
@@ -347,12 +330,6 @@ function SettingsPage() {
                 </div>
               </div>
             </div>
-          )}
-
-          {/* Offline Downloads Tab */}
-          {activeTab === 'offline' && (
-            <OfflineDownloadManager />
-          )}
         </div>
       </div>
     </>
