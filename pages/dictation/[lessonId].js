@@ -1104,19 +1104,43 @@ const DictationPage = () => {
         activeElement?.tagName === 'TEXTAREA' ||
         activeElement?.isContentEditable;
 
-      // If typing, let Space work normally
-      if (isTyping) return;
+      // If typing, toggle play/pause
+      if (isTyping) {
+        e.preventDefault();
+        if (isPlaying) {
+          // Pause
+          if (isYouTube) {
+            youtubePlayerRef.current?.pauseVideo?.();
+          } else {
+            audioRef.current?.pause();
+          }
+          setIsPlaying(false);
+        } else {
+          // Play current sentence from start
+          playSentence(currentSentenceIndex);
+        }
+        return;
+      }
 
       // Prevent default scroll behavior
       e.preventDefault();
 
       // Toggle play/pause
-      handlePlayPause();
+      if (isPlaying) {
+        if (isYouTube) {
+          youtubePlayerRef.current?.pauseVideo?.();
+        } else {
+          audioRef.current?.pause();
+        }
+        setIsPlaying(false);
+      } else {
+        playSentence(currentSentenceIndex);
+      }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [handlePlayPause]);
+  }, [isPlaying, isYouTube, currentSentenceIndex, playSentence]);
 
 
 
@@ -1300,15 +1324,19 @@ const DictationPage = () => {
                     results[currentSentenceIndex]?.showAnswer ? (
                       // Full answer revealed
                       <div className={styles.revealedSentence}>
-                        {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => (
-                          <span
-                            key={i}
-                            className={styles.revealedWord}
-                            onClick={(e) => handleWordClick(word, e)}
-                          >
-                            {word}{' '}
-                          </span>
-                        ))}
+                        {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
+                          const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
+                          return (
+                            <span
+                              key={i}
+                              className={styles.revealedWord}
+                              style={{ width: `${pureWord.length * 10 + 24}px` }}
+                              onClick={(e) => handleWordClick(word, e)}
+                            >
+                              {word}
+                            </span>
+                          );
+                        })}
                       </div>
                     ) : comparedWords[currentSentenceIndex] ? (
                       // Realtime: show matched characters as user types
@@ -1324,15 +1352,18 @@ const DictationPage = () => {
                           const normalizedCorrect = pureWord.toLowerCase();
                           const isWrong = currentInput && !normalizedCorrect.startsWith(normalizedInput) && !comparison?.isCorrect;
 
+                          const wordWidth = `${pureWord.length * 10 + 24}px`;
+                          
                           if (comparison?.isCorrect) {
                             // Fully correct word - show in green
                             return (
                               <span
                                 key={i}
                                 className={styles.correctWord}
+                                style={{ width: wordWidth }}
                                 onClick={(e) => handleWordClick(word, e)}
                               >
-                                {word}{' '}
+                                {word}
                               </span>
                             );
                           } else if (isWrong) {
@@ -1341,11 +1372,11 @@ const DictationPage = () => {
                               <span
                                 key={i}
                                 className={styles.wrongWord}
-                                onDoubleClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
-                                title="Double-click để xem từ"
+                                style={{ width: wordWidth }}
+                                onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
+                                title="Click để xem từ"
                               >
                                 {'_'.repeat(pureWord.length)}
-                                {punctuation}{' '}
                               </span>
                             );
                           } else if (comparison?.matchedChars > 0) {
@@ -1353,10 +1384,9 @@ const DictationPage = () => {
                             const revealedPart = pureWord.substring(0, comparison.matchedChars);
                             const hiddenPart = '_'.repeat(pureWord.length - comparison.matchedChars);
                             return (
-                              <span key={i} className={styles.partialWord}>
+                              <span key={i} className={styles.partialWord} style={{ width: wordWidth }}>
                                 <span className={styles.revealedChars}>{revealedPart}</span>
                                 <span className={styles.maskedChars}>{hiddenPart}</span>
-                                {punctuation}{' '}
                               </span>
                             );
                           } else {
@@ -1367,43 +1397,45 @@ const DictationPage = () => {
                                 <span
                                   key={i}
                                   className={styles.revealedByClickWord}
+                                  style={{ width: wordWidth }}
                                   onClick={(e) => handleWordClick(word, e)}
                                 >
-                                  {word}{' '}
+                                  {word}
                                 </span>
                               );
                             }
-                            // Fully hidden - can double-click to reveal
+                            // Fully hidden
                             return (
                               <span
                                 key={i}
                                 className={styles.maskedWordClickable}
-                                onDoubleClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
-                                title="Double-click để xem từ"
+                                style={{ width: wordWidth }}
+                                onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
+                                title="Click để xem từ"
                               >
                                 {'_'.repeat(pureWord.length)}
-                                {punctuation}{' '}
                               </span>
                             );
                           }
                         })}
                       </div>
                     ) : (
-                      // Initial state: all words hidden - can double-click to reveal
+                      // Initial state: all words hidden
                       <div className={styles.maskedSentence}>
                         {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
                           const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
-                          const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
                           const isRevealedByClick = revealedWordsByClick[currentSentenceIndex]?.[i];
+                          const wordWidth = `${pureWord.length * 10 + 24}px`;
 
                           if (isRevealedByClick) {
                             return (
                               <span
                                 key={i}
                                 className={styles.revealedByClickWord}
+                                style={{ width: wordWidth }}
                                 onClick={(e) => handleWordClick(word, e)}
                               >
-                                {word}{' '}
+                                {word}
                               </span>
                             );
                           }
@@ -1412,11 +1444,11 @@ const DictationPage = () => {
                             <span
                               key={i}
                               className={styles.maskedWordClickable}
-                              onDoubleClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
-                              title="Double-click để xem từ"
+                              style={{ width: wordWidth }}
+                              onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
+                              title="Click để xem từ"
                             >
                               {'_'.repeat(pureWord.length)}
-                              {punctuation}{' '}
                             </span>
                           );
                         })}
@@ -1464,10 +1496,10 @@ const DictationPage = () => {
                               onChange={(e) => handleWordInputChange(currentSentenceIndex, i, e.target.value)}
                               placeholder={'_'.repeat(Math.min(pureWord.length, 8))}
                               maxLength={pureWord.length}
-                              style={{ width: `${Math.max(pureWord.length * 12 + 20, 50)}px` }}
+                              style={{ width: `${pureWord.length * 10 + 24}px` }}
                               disabled={isCorrect || completedSentences.includes(currentSentenceIndex)}
                               onKeyDown={(e) => {
-                                if (e.key === ' ' || e.key === 'Tab') {
+                                if (e.key === 'Tab') {
                                   e.preventDefault();
                                   focusNextWordInput(currentSentenceIndex, i);
                                 } else if (e.key === 'Enter') {
@@ -1483,52 +1515,7 @@ const DictationPage = () => {
                     }
                   </div>
                   
-                  {/* Voice Recording Controls */}
-                  <div className={styles.inputRecordingControls}>
-                    <button
-                      className={`${styles.inputRecordBtn} ${isRecording ? styles.recording : ''}`}
-                      onClick={handleRecordingClick}
-                      disabled={isProcessingAudio}
-                      title={isRecording ? 'Dừng ghi âm' : 'Ghi âm giọng nói'}
-                    >
-                      {isProcessingAudio ? (
-                        <svg className={styles.spinner} viewBox="0 0 24 24" width="20" height="20">
-                          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="32">
-                            <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite" />
-                          </circle>
-                        </svg>
-                      ) : isRecording ? (
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                          <rect x="6" y="6" width="12" height="12" rx="2" />
-                        </svg>
-                      ) : (
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                          <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" />
-                          <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z" />
-                          <path d="M11 18h2v4h-2z" />
-                          <path d="M8 22h8v2H8z" />
-                        </svg>
-                      )}
-                    </button>
 
-                    {recordedBlob && !isRecording && (
-                      <button
-                        className={`${styles.inputPlaybackBtn} ${isPlayingRecording ? styles.playing : ''}`}
-                        onClick={playRecordedAudio}
-                        title={isPlayingRecording ? 'Dừng phát' : 'Nghe lại'}
-                      >
-                        {isPlayingRecording ? (
-                          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
-                          </svg>
-                        ) : (
-                          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
-                        )}
-                      </button>
-                    )}
-                  </div>
                 </div>
 
                 {/* Action Buttons */}

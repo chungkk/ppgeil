@@ -5701,17 +5701,21 @@
   background: var(--bg-tertiary);
   border-radius: var(--border-radius-sm);
   padding: var(--spacing-md);
-  min-height: 80px;
+  min-height: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  margin-bottom: 12px;
 }
 
 .maskedSentence {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-secondary);
-  font-family: monospace;
-  letter-spacing: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  row-gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 .maskedWord {
@@ -5721,14 +5725,18 @@
 
 /* Masked word that can be revealed by double-click */
 .maskedWordClickable {
-  display: inline;
+  display: inline-block;
   color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.2s ease;
-  padding: 2px 4px;
-  margin: 0 1px;
-  border-radius: 4px;
-  background: rgba(148, 163, 184, 0.08);
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .maskedWordClickable:hover {
@@ -5743,14 +5751,18 @@
 
 /* Word revealed by double-click - shown in orange/amber color */
 .revealedByClickWord {
-  display: inline;
+  display: inline-block;
   color: #f59e0b;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 2px 4px;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: 500;
   background: rgba(245, 158, 11, 0.12);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .revealedByClickWord:hover {
@@ -5760,17 +5772,18 @@
 
 /* Wrong word - red background when input is incorrect */
 .wrongWord {
-  display: inline;
+  display: inline-block;
   color: #ef4444;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 2px 6px;
-  margin: 0 1px;
-  border-radius: 4px;
-  font-family: monospace;
-  letter-spacing: 1px;
-  background: rgba(239, 68, 68, 0.2);
-  border: 1px solid rgba(239, 68, 68, 0.4);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  background: rgba(239, 68, 68, 0.15);
+  border: 2px solid rgba(239, 68, 68, 0.5);
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .wrongWord:hover {
@@ -5778,16 +5791,26 @@
 }
 
 .revealedSentence {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-primary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  row-gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 .revealedWord {
+  display: inline-block;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 2px 4px;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--bg-primary);
+  border: 2px solid var(--accent-green);
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .revealedWord:hover {
@@ -5797,20 +5820,28 @@
 
 /* Partial Reveal Sentence - After check, before viewing full answer */
 .partialRevealSentence {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-primary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  row-gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Correct Word - Green color for correctly guessed words */
 .correctWord {
+  display: inline-block;
   color: #10b981;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 2px 4px;
-  border-radius: 4px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: 500;
   background: rgba(16, 185, 129, 0.1);
+  border: 2px solid rgba(16, 185, 129, 0.4);
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .correctWord:hover {
@@ -5819,9 +5850,15 @@
 
 /* Partial Word - Shows partial character matches */
 .partialWord {
-  display: inline;
-  padding: 2px 4px;
-  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--bg-primary);
+  border: 2px solid var(--accent-blue);
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .revealedChars {
@@ -5846,21 +5883,19 @@
 .wordInputsSection {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
   padding: var(--spacing-md);
   background: var(--bg-tertiary);
   border-radius: var(--border-radius-sm);
-  position: relative;
+  border: 1px solid var(--border-color);
 }
 
 .wordInputsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  row-gap: 12px;
+  gap: 6px;
+  row-gap: 8px;
   justify-content: center;
-  align-items: flex-end;
-  padding: var(--spacing-sm);
+  align-items: center;
 }
 
 .wordInputWrapper {
@@ -5870,17 +5905,15 @@
 }
 
 .wordInput {
-  padding: 8px 12px;
+  padding: 6px 10px;
   background: var(--bg-primary);
   border: 2px solid var(--border-color);
   border-radius: 8px;
   color: var(--text-primary);
   font-size: 15px;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   transition: all 0.2s ease;
-  min-width: 50px;
-  max-width: 180px;
 }
 
 .wordInput:focus {
