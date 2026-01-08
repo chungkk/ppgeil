@@ -151,11 +151,11 @@
     "title": "Chọn chế độ học",
     "dictation": {
       "name": "Nghe chép",
-      "description": "Nghe và gõ những gì bạn nghe được để cải thiện khả năng nghe hiểu và chính tả."
+      "description": "Nghe chép chính tả"
     },
     "shadowing": {
       "name": "Shadowing",
-      "description": "Nghe và lặp lại theo người nói để cải thiện phát âm và khả năng nói trưng trôi."
+      "description": "Luyện nói - đọc theo video"
     }
   },
   "vocabularyPopup": {

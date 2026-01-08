@@ -150,11 +150,11 @@
     "title": "Choose Learning Mode",
     "dictation": {
       "name": "Dictation",
-      "description": "Listen and type what you hear to improve your listening comprehension and spelling."
+      "description": "Listen and write what you hear"
     },
     "shadowing": {
       "name": "Shadowing",
-      "description": "Listen and repeat after the speaker to improve your pronunciation and speaking fluency."
+      "description": "Speak along with the video"
     }
   },
   "vocabularyPopup": {

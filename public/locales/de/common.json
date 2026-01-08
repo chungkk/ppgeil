@@ -150,11 +150,11 @@
     "title": "Lernmodus wählen",
     "dictation": {
       "name": "Diktat",
-      "description": "Hören Sie zu und tippen Sie, was Sie hören, um Ihr Hörverständnis und Ihre Rechtschreibung zu verbessern."
+      "description": "Hören und schreiben"
     },
     "shadowing": {
       "name": "Shadowing",
-      "description": "Hören Sie zu und wiederholen Sie nach dem Sprecher, um Ihre Aussprache und Sprachflüssigkeit zu verbessern."
+      "description": "Mitsprechen mit dem Video"
     }
   },
   "vocabularyPopup": {
