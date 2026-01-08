@@ -31,6 +31,7 @@ export default async function handler(req, res) {
         id: user._id,
         name: user.name,
         email: user.email,
+        avatar: user.avatar || null,
         role: user.role,
         nativeLanguage: user.nativeLanguage,
         level: user.level,
