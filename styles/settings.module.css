@@ -1,119 +1,460 @@
 /* ============================================
-   SETTINGS PAGE STYLES - SIMPLIFIED
+   SETTINGS PAGE STYLES - PREMIUM DESIGN
    ============================================ */
 
+/* Page Header */
+.pageHeader {
+  margin-bottom: 32px;
+}
+
 .pageTitle {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin: 0 0 24px 0;
-}
-
-/* Settings List */
-.settingsList {
-  background: var(--bg-card);
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-  overflow: hidden;
-}
-
-[data-theme="dark"] .settingsList {
-  background: rgba(59, 130, 246, 0.06);
-  border-color: rgba(59, 130, 246, 0.3);
-}
-
-/* Setting Row */
-.settingRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 20px;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.settingRow:last-child {
-  border-bottom: none;
-}
-
-.settingInfo {
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 8px 0;
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
+.pageTitle span {
+  font-size: 36px;
+  -webkit-text-fill-color: initial;
+  background: none;
+}
+
+.pageSubtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ============================================
+   TABS - MODERN PILL STYLE
+   ============================================ */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: fit-content;
+}
+
+.tab {
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+}
+
+.tab:hover::before {
+  opacity: 0.5;
+}
+
+.tab span {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.tab:hover span {
+  transform: scale(1.15);
+}
+
+.tabActive {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+  color: var(--text-primary);
+  box-shadow:
+    0 4px 20px rgba(59, 130, 246, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.tabActive::before {
+  display: none;
+}
+
+[data-theme="dark"] .tabActive {
+  color: #60a5fa;
+}
+
+/* ============================================
+   SETTINGS SECTIONS
+   ============================================ */
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.settingsSection {
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.settingsSection:hover {
+  border-color: rgba(59, 130, 246, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.05) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sectionIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.sectionIcon.profile {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.sectionIcon.preferences {
+  background: linear-gradient(135deg, #22c55e 0%, #10b981 100%);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.sectionIcon.security {
+  background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.sectionIcon.learning {
+  background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+}
+
+.sectionInfo h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+}
+
+.sectionInfo p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.sectionBody {
+  padding: 8px;
+}
+
+/* ============================================
+   SETTINGS LIST & ROWS
+   ============================================ */
+.settingsList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.settingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 14px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 16px;
+}
+
+.settingRow:hover {
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateX(4px);
+}
+
+.settingInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
 .settingIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 20px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.settingRow:hover .settingIcon {
+  background: rgba(59, 130, 246, 0.15);
+  transform: scale(1.08);
+}
+
+.settingContent {
+  flex: 1;
+  min-width: 0;
 }
 
 .settingName {
   font-size: 14px;
   font-weight: 600;
   color: var(--text-primary);
+  margin-bottom: 3px;
 }
 
 .settingDesc {
   font-size: 12px;
   color: var(--text-secondary);
-  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* Select */
-.settingSelect {
-  padding: 8px 12px;
+/* Profile Card */
+.profileCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.08) 100%);
+  border-radius: 14px;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.profileAvatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+}
+
+.profileInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.profileName {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+}
+
+.profileEmail {
   font-size: 13px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
+  color: var(--text-secondary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profileEmail::before {
+  content: '📧';
+  font-size: 12px;
+}
+
+.profileBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #22c55e 0%, #10b981 100%);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   SELECT INPUT - MODERN STYLE
+   ============================================ */
+.settingSelect {
+  padding: 12px 40px 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   color: var(--text-primary);
   cursor: pointer;
-  min-width: 140px;
+  min-width: 180px;
+  transition: all 0.25s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.settingSelect:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  background-color: rgba(59, 130, 246, 0.05);
 }
 
 .settingSelect:focus {
   outline: none;
   border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
-/* Change Button */
-.changeBtn {
-  padding: 8px 16px;
-  font-size: 13px;
-  font-weight: 500;
+.settingSelect option {
   background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
+  color: var(--text-primary);
+  padding: 10px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.changeBtn {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   color: var(--text-primary);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .changeBtn:hover {
-  background: var(--bg-hover);
-  border-color: var(--accent-blue);
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.4);
+  color: #60a5fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
-/* Password Form */
+.changeBtn::before {
+  content: '🔑';
+  font-size: 14px;
+}
+
+/* ============================================
+   PASSWORD FORM - ANIMATED
+   ============================================ */
 .passwordForm {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 16px 20px;
-  background: var(--bg-secondary);
-  border-bottom: 1px solid var(--border-color);
+  gap: 14px;
+  padding: 20px;
+  margin: 8px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.06) 0%, rgba(239, 68, 68, 0.04) 100%);
+  border-radius: 14px;
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+  }
+}
+
+.passwordFormHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.passwordFormHeader span {
+  font-size: 20px;
+}
+
+.passwordFormHeader h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
 }
 
 .formInput {
-  padding: 10px 14px;
+  padding: 14px 18px;
   font-size: 14px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
   color: var(--text-primary);
+  transition: all 0.25s ease;
 }
 
 .formInput:focus {
   outline: none;
   border-color: var(--accent-blue);
+  background: rgba(59, 130, 246, 0.05);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .formInput::placeholder {
@@ -121,88 +462,169 @@
 }
 
 .submitButton {
-  padding: 10px 20px;
+  padding: 14px 28px;
   font-size: 14px;
-  font-weight: 600;
-  background: var(--accent-gradient);
+  font-weight: 700;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.25);
 }
 
 .submitButton:hover:not(:disabled) {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(59, 130, 246, 0.35);
 }
 
 .submitButton:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+  transform: none;
 }
 
 /* ============================================
-   TABS
+   TIPS CARD
    ============================================ */
-
-.tabs {
+.tipsCard {
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(16, 185, 129, 0.05) 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(34, 197, 94, 0.15);
   display: flex;
-  gap: 8px;
-  margin-bottom: 24px;
-  background: var(--bg-secondary);
-  padding: 4px;
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
+  align-items: flex-start;
+  gap: 16px;
 }
 
-.tab {
-  flex: 1;
-  padding: 12px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  background: transparent;
-  border: none;
-  border-radius: 8px;
+.tipsIcon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.tipsContent h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.tipsContent p {
+  font-size: 13px;
   color: var(--text-secondary);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.tab:hover {
-  color: var(--text-primary);
-  background: var(--bg-hover);
-}
-
-.tabActive {
-  background: var(--bg-card);
-  color: var(--text-primary);
-  font-weight: 600;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="dark"] .tabActive {
-  background: rgba(59, 130, 246, 0.15);
-  color: var(--accent-blue);
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* ============================================
-   RESPONSIVE
+   RESPONSIVE DESIGN
    ============================================ */
-
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .pageTitle {
-    font-size: 20px;
+    font-size: 26px;
+  }
+
+  .pageTitle span {
+    font-size: 30px;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .tab {
+    flex: 1;
+    justify-content: center;
+    padding: 12px 16px;
+  }
+
+  .sectionHeader {
+    padding: 16px 20px;
+  }
+
+  .sectionIcon {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .sectionInfo h3 {
+    font-size: 15px;
   }
 
   .settingRow {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 14px;
     padding: 14px 16px;
   }
 
   .settingSelect,
   .changeBtn {
     width: 100%;
+    justify-content: center;
   }
+
+  .profileCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .profileEmail {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 22px;
+  }
+
+  .tab span {
+    display: none;
+  }
+
+  .sectionInfo p {
+    display: none;
+  }
+}
+
+/* Light mode adjustments */
+[data-theme="light"] .settingsSection {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .settingRow:hover {
+  background: rgba(59, 130, 246, 0.06);
+}
+
+[data-theme="light"] .settingIcon {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .settingSelect {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .changeBtn {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .tabs {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .formInput {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.1);
 }
