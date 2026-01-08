@@ -39,6 +39,7 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
   const [fetchingYouTubeSRT, setFetchingYouTubeSRT] = useState(false);
   const [fetchingWhisperSRT, setFetchingWhisperSRT] = useState(false);
   const [fetchingWhisperV3, setFetchingWhisperV3] = useState(false);
+  const [fetchingWhisperV4, setFetchingWhisperV4] = useState(false);
 
   // Thumbnail
   const [thumbnailFile, setThumbnailFile] = useState(null);
@@ -210,6 +211,54 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       toast.error('❌ Lỗi: ' + error.message);
     } finally {
       setFetchingWhisperV3(false);
+    }
+  };
+
+  const handleGetWhisperV4 = async () => {
+    if (!youtubeUrl.trim()) {
+      toast.error('Vui lòng nhập YouTube URL');
+      return;
+    }
+
+    setFetchingWhisperV4(true);
+    try {
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/whisper-youtube-srt-v4', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ youtubeUrl: youtubeUrl.trim() })
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.message || 'Failed to get Whisper v4 SRT');
+      }
+
+      const data = await res.json();
+      setSrtText(data.srt);
+      setWhisperV3Segments(data.segments || null);
+      
+      if (data.videoDuration) {
+        setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
+      }
+      if (data.videoTitle && !formData.title) {
+        const newId = generateIdFromTitle(data.videoTitle);
+        setFormData(prev => ({ 
+          ...prev, 
+          title: data.videoTitle,
+          description: data.videoTitle,
+          id: newId
+        }));
+      }
+      toast.success('✅ Đã tạo SRT từ Karaoke V2!');
+    } catch (error) {
+      console.error('Whisper v4 error:', error);
+      toast.error('❌ Lỗi: ' + error.message);
+    } finally {
+      setFetchingWhisperV4(false);
     }
   };
 
@@ -667,24 +716,14 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
         {/* Get SRT Buttons */}
         <div className={styles.srtActions} style={{ marginTop: '20px' }}>
           {audioSource === 'youtube' && (
-            <>
-              <button
-                type="button"
-                onClick={handleGetWhisperSRT}
-                disabled={fetchingWhisperSRT || !youtubeUrl.trim()}
-                className={styles.actionBtn}
-              >
-                {fetchingWhisperSRT ? '⏳ Đang tạo...' : '🎙️ Whisper'}
-              </button>
-              <button
-                type="button"
-                onClick={handleGetWhisperV3}
-                disabled={fetchingWhisperV3 || !youtubeUrl.trim()}
-                className={styles.actionBtnPrimary}
-              >
-                {fetchingWhisperV3 ? '⏳ Đang tạo...' : '🎤 Karaoke'}
-              </button>
-            </>
+            <button
+              type="button"
+              onClick={handleGetWhisperV4}
+              disabled={fetchingWhisperV4 || !youtubeUrl.trim()}
+              className={styles.actionBtnPrimary}
+            >
+              {fetchingWhisperV4 ? '⏳ Đang tạo...' : '🎤 Karaoke'}
+            </button>
           )}
 
           {(audioSource === 'file' || audioSource === 'url') && (
