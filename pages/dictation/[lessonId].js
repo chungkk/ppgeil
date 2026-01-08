@@ -1439,12 +1439,10 @@ const DictationPage = () => {
                       // Full answer revealed
                       <div className={styles.revealedSentence}>
                         {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
-                          const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
                           return (
                             <span
                               key={i}
                               className={styles.revealedWord}
-                              style={{ width: `${pureWord.length * 10 + 24}px` }}
                               onClick={(e) => handleWordClick(word, e)}
                             >
                               {word}
@@ -1458,15 +1456,12 @@ const DictationPage = () => {
                         {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
                           const comparison = comparedWords[currentSentenceIndex][i];
                           const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
-                          const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
                           const currentInput = wordInputs[currentSentenceIndex]?.[i] || '';
                           
                           // Check if input is wrong
                           const normalizedInput = currentInput.toLowerCase().trim();
                           const normalizedCorrect = pureWord.toLowerCase();
                           const isWrong = currentInput && !normalizedCorrect.startsWith(normalizedInput) && !comparison?.isCorrect;
-
-                          const wordWidth = `${pureWord.length * 10 + 24}px`;
                           
                           if (comparison?.isCorrect) {
                             // Fully correct word - show in green
@@ -1474,7 +1469,6 @@ const DictationPage = () => {
                               <span
                                 key={i}
                                 className={styles.correctWord}
-                                style={{ width: wordWidth }}
                                 onClick={(e) => handleWordClick(word, e)}
                               >
                                 {word}
@@ -1486,19 +1480,18 @@ const DictationPage = () => {
                               <span
                                 key={i}
                                 className={styles.wrongWord}
-                                style={{ width: wordWidth }}
                                 onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
                                 title={t('dictationPage.clickToReveal')}
                               >
-                                {'_'.repeat(pureWord.length)}
+                                {'\u00A0'}
                               </span>
                             );
                           } else if (comparison?.matchedChars > 0) {
                             // Partial match - show matched chars, hide rest
                             const revealedPart = pureWord.substring(0, comparison.matchedChars);
-                            const hiddenPart = '_'.repeat(pureWord.length - comparison.matchedChars);
+                            const hiddenPart = '';
                             return (
-                              <span key={i} className={styles.partialWord} style={{ width: wordWidth }}>
+                              <span key={i} className={styles.partialWord}>
                                 <span className={styles.revealedChars}>{revealedPart}</span>
                                 <span className={styles.maskedChars}>{hiddenPart}</span>
                               </span>
@@ -1511,7 +1504,6 @@ const DictationPage = () => {
                                 <span
                                   key={i}
                                   className={styles.revealedByClickWord}
-                                  style={{ width: wordWidth }}
                                   onClick={(e) => handleWordClick(word, e)}
                                 >
                                   {word}
@@ -1523,11 +1515,10 @@ const DictationPage = () => {
                               <span
                                 key={i}
                                 className={styles.maskedWordClickable}
-                                style={{ width: wordWidth }}
                                 onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
                                 title={t('dictationPage.clickToReveal')}
                               >
-                                {'_'.repeat(pureWord.length)}
+                                {'\u00A0'}
                               </span>
                             );
                           }
@@ -1537,16 +1528,13 @@ const DictationPage = () => {
                       // Initial state: all words hidden
                       <div className={styles.maskedSentence}>
                         {transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
-                          const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
                           const isRevealedByClick = revealedWordsByClick[currentSentenceIndex]?.[i];
-                          const wordWidth = `${pureWord.length * 10 + 24}px`;
 
                           if (isRevealedByClick) {
                             return (
                               <span
                                 key={i}
                                 className={styles.revealedByClickWord}
-                                style={{ width: wordWidth }}
                                 onClick={(e) => handleWordClick(word, e)}
                               >
                                 {word}
@@ -1558,11 +1546,10 @@ const DictationPage = () => {
                             <span
                               key={i}
                               className={styles.maskedWordClickable}
-                              style={{ width: wordWidth }}
                               onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
                               title={t('dictationPage.clickToReveal')}
                             >
-                              {'_'.repeat(pureWord.length)}
+                              {'\u00A0'}
                             </span>
                           );
                         })}
