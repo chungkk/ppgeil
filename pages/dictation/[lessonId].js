@@ -1274,8 +1274,27 @@ const DictationPage = () => {
                   }
                 }}
                 onNextSentence={() => {
-                  if (currentSentenceIndex < transcriptData.length - 1) {
-                    playSentence(currentSentenceIndex + 1);
+                  // Prioritize jumping to next uncompleted sentence
+                  let nextIndex = -1;
+                  for (let i = currentSentenceIndex + 1; i < transcriptData.length; i++) {
+                    if (!completedSentences.includes(i)) {
+                      nextIndex = i;
+                      break;
+                    }
+                  }
+                  if (nextIndex === -1) {
+                    for (let i = 0; i < currentSentenceIndex; i++) {
+                      if (!completedSentences.includes(i)) {
+                        nextIndex = i;
+                        break;
+                      }
+                    }
+                  }
+                  if (nextIndex === -1 && currentSentenceIndex < transcriptData.length - 1) {
+                    nextIndex = currentSentenceIndex + 1;
+                  }
+                  if (nextIndex !== -1) {
+                    playSentence(nextIndex);
                   }
                 }}
                 playbackSpeed={playbackSpeed}
@@ -1334,8 +1353,27 @@ const DictationPage = () => {
                     <button
                       className={styles.mobileControlBtn}
                       onClick={() => {
-                        if (currentSentenceIndex < transcriptData.length - 1) {
-                          playSentence(currentSentenceIndex + 1);
+                        // Prioritize jumping to next uncompleted sentence
+                        let nextIndex = -1;
+                        for (let i = currentSentenceIndex + 1; i < transcriptData.length; i++) {
+                          if (!completedSentences.includes(i)) {
+                            nextIndex = i;
+                            break;
+                          }
+                        }
+                        if (nextIndex === -1) {
+                          for (let i = 0; i < currentSentenceIndex; i++) {
+                            if (!completedSentences.includes(i)) {
+                              nextIndex = i;
+                              break;
+                            }
+                          }
+                        }
+                        if (nextIndex === -1 && currentSentenceIndex < transcriptData.length - 1) {
+                          nextIndex = currentSentenceIndex + 1;
+                        }
+                        if (nextIndex !== -1) {
+                          playSentence(nextIndex);
                         }
                       }}
                     >
@@ -1611,11 +1649,33 @@ const DictationPage = () => {
                   <button
                     className={styles.nextButton}
                     onClick={() => {
-                      if (currentSentenceIndex < transcriptData.length - 1) {
-                        playSentence(currentSentenceIndex + 1);
+                      // Prioritize jumping to next uncompleted sentence
+                      // First, look for uncompleted sentence after current index
+                      let nextIndex = -1;
+                      for (let i = currentSentenceIndex + 1; i < transcriptData.length; i++) {
+                        if (!completedSentences.includes(i)) {
+                          nextIndex = i;
+                          break;
+                        }
+                      }
+                      // If not found after, look from the beginning
+                      if (nextIndex === -1) {
+                        for (let i = 0; i < currentSentenceIndex; i++) {
+                          if (!completedSentences.includes(i)) {
+                            nextIndex = i;
+                            break;
+                          }
+                        }
+                      }
+                      // If all completed, just go to next sequential
+                      if (nextIndex === -1 && currentSentenceIndex < transcriptData.length - 1) {
+                        nextIndex = currentSentenceIndex + 1;
+                      }
+                      if (nextIndex !== -1) {
+                        playSentence(nextIndex);
                       }
                     }}
-                    disabled={currentSentenceIndex >= transcriptData.length - 1}
+                    disabled={currentSentenceIndex >= transcriptData.length - 1 && completedSentences.length === transcriptData.length}
                   >
                     {t('dictationPage.nextSentence')}
                   </button>
