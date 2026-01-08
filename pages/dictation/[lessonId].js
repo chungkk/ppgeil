@@ -31,6 +31,7 @@ const DictationPage = () => {
 
   // Dictation input states
   const [userInputs, setUserInputs] = useState({}); // { sentenceIndex: inputText }
+  const [wordInputs, setWordInputs] = useState({}); // { sentenceIndex: { wordIndex: inputText } } - per-word inputs
   const [results, setResults] = useState({}); // { sentenceIndex: { similarity, isCorrect, showAnswer } }
   const [completedSentences, setCompletedSentences] = useState([]);
   const [completedWords, setCompletedWords] = useState({});
@@ -93,6 +94,9 @@ const DictationPage = () => {
       if (loadedProgress.userInputs) {
         setUserInputs(loadedProgress.userInputs);
       }
+      if (loadedProgress.wordInputs) {
+        setWordInputs(loadedProgress.wordInputs);
+      }
     }
   }, [loadedProgress]);
 
@@ -116,6 +120,7 @@ const DictationPage = () => {
         sentenceRevealPenalty: updates.sentenceRevealPenalty ?? sentenceRevealPenalty,
         revealedWordsByClick: updates.revealedWordsByClick ?? revealedWordsByClick,
         userInputs: updates.userInputs ?? userInputs,
+        wordInputs: updates.wordInputs ?? wordInputs,
         totalSentences: transcriptData.length,
         // Add fields for completion calculation
         correctWords: completedCount,
@@ -141,7 +146,7 @@ const DictationPage = () => {
     } catch (error) {
       console.error('Error saving dictation progress:', error);
     }
-  }, [lessonId, user, completedSentences, checkedSentences, sentencePointsAwarded, sentenceRevealPenalty, revealedWordsByClick, userInputs, transcriptData.length]);
+  }, [lessonId, user, completedSentences, checkedSentences, sentencePointsAwarded, sentenceRevealPenalty, revealedWordsByClick, userInputs, wordInputs, transcriptData.length]);
 
   // Debounced save for user inputs
   const saveInputTimeoutRef = useRef(null);
@@ -553,6 +558,100 @@ const DictationPage = () => {
     }
   }, [transcriptData, compareWords, userInputs, debouncedSaveInput, completedSentences, sentencePointsAwarded]);
 
+  // Handle per-word input change
+  const handleWordInputChange = useCallback((sentenceIndex, wordIndex, value) => {
+    // Update wordInputs state
+    const newWordInputs = {
+      ...wordInputs,
+      [sentenceIndex]: {
+        ...(wordInputs[sentenceIndex] || {}),
+        [wordIndex]: value
+      }
+    };
+    setWordInputs(newWordInputs);
+
+    // Rebuild full sentence from word inputs for comparison
+    const correctText = transcriptData[sentenceIndex]?.text || '';
+    const correctWords = correctText.split(/\s+/).filter(w => w.length > 0);
+    
+    // Build user input string from all word inputs
+    const userWords = correctWords.map((_, i) => newWordInputs[sentenceIndex]?.[i] || '');
+    const fullUserInput = userWords.join(' ').trim();
+    
+    // Update userInputs for compatibility
+    const newUserInputs = { ...userInputs, [sentenceIndex]: fullUserInput };
+    setUserInputs(newUserInputs);
+
+    // Debounced save
+    if (saveInputTimeoutRef.current) {
+      clearTimeout(saveInputTimeoutRef.current);
+    }
+    saveInputTimeoutRef.current = setTimeout(() => {
+      saveProgress({ userInputs: newUserInputs, wordInputs: newWordInputs });
+    }, 1000);
+
+    // Compare words
+    if (fullUserInput.trim() && correctText) {
+      const wordComparison = compareWords(fullUserInput, correctText);
+      setComparedWords(prev => ({
+        ...prev,
+        [sentenceIndex]: wordComparison
+      }));
+
+      // Check if current word is correct - auto jump to next
+      const currentWordCorrect = wordComparison[wordIndex]?.isCorrect;
+      if (currentWordCorrect) {
+        // Use setTimeout to allow state to update first
+        setTimeout(() => {
+          // Find next incomplete word
+          for (let i = wordIndex + 1; i < correctWords.length; i++) {
+            if (!wordComparison[i]?.isCorrect) {
+              const nextInput = document.querySelector(`[data-word-input="${sentenceIndex}-${i}"]`);
+              if (nextInput) {
+                nextInput.focus();
+                break;
+              }
+            }
+          }
+        }, 50);
+      }
+
+      // Auto-check if all words correct
+      const allWordsCorrect = Object.values(wordComparison).every(w => w.isCorrect);
+      const filledWordsCount = userWords.filter(w => w.trim()).length;
+      const wordCountMatches = filledWordsCount === correctWords.length;
+
+      if (allWordsCorrect && wordCountMatches && !completedSentences.includes(sentenceIndex) && !sentencePointsAwarded[sentenceIndex]) {
+        setTimeout(() => {
+          if (checkAnswerRef.current) {
+            checkAnswerRef.current(sentenceIndex);
+          }
+        }, 100);
+      }
+    } else {
+      setComparedWords(prev => {
+        const updated = { ...prev };
+        delete updated[sentenceIndex];
+        return updated;
+      });
+    }
+  }, [wordInputs, transcriptData, userInputs, compareWords, completedSentences, sentencePointsAwarded, saveProgress]);
+
+  // Focus next word input
+  const focusNextWordInput = useCallback((sentenceIndex, currentWordIndex) => {
+    const correctText = transcriptData[sentenceIndex]?.text || '';
+    const correctWords = correctText.split(/\s+/).filter(w => w.length > 0);
+    
+    // Find next empty/incomplete word input
+    for (let i = currentWordIndex + 1; i < correctWords.length; i++) {
+      const inputEl = document.querySelector(`[data-word-input="${sentenceIndex}-${i}"]`);
+      if (inputEl) {
+        inputEl.focus();
+        return;
+      }
+    }
+  }, [transcriptData]);
+
   // Show points animation
   const showPointsAnimation = useCallback((points, element) => {
     if (!element) return;
@@ -750,6 +849,37 @@ const DictationPage = () => {
     };
     setRevealedWordsByClick(updated);
 
+    // Get the correct word (without punctuation)
+    const correctText = transcriptData[sentenceIndex]?.text || '';
+    const correctWords = correctText.split(' ').filter(w => w.length > 0);
+    const revealedWord = correctWords[wordIndex]?.replace(/[.,!?;:"""''„]/g, '') || '';
+    
+    // Update wordInputs with the revealed word
+    const newWordInputs = {
+      ...wordInputs,
+      [sentenceIndex]: {
+        ...(wordInputs[sentenceIndex] || {}),
+        [wordIndex]: revealedWord
+      }
+    };
+    setWordInputs(newWordInputs);
+    
+    // Rebuild full sentence from word inputs for userInputs compatibility
+    const userWords = correctWords.map((_, i) => newWordInputs[sentenceIndex]?.[i] || '');
+    const fullUserInput = userWords.join(' ').replace(/\s+/g, ' ').trim();
+    
+    const newUserInputs = { ...userInputs, [sentenceIndex]: fullUserInput };
+    setUserInputs(newUserInputs);
+    
+    // Update compared words to reflect the change
+    if (fullUserInput.trim() && correctText) {
+      const wordComparison = compareWords(fullUserInput, correctText);
+      setComparedWords(prev => ({
+        ...prev,
+        [sentenceIndex]: wordComparison
+      }));
+    }
+
     // Count revealed words for this sentence (including the new one)
     const revealedCount = Object.keys(updated[sentenceIndex] || {}).length;
 
@@ -763,15 +893,19 @@ const DictationPage = () => {
       // Save progress with penalty
       saveProgress({
         revealedWordsByClick: updated,
-        sentenceRevealPenalty: newSentenceRevealPenalty
+        sentenceRevealPenalty: newSentenceRevealPenalty,
+        userInputs: newUserInputs,
+        wordInputs: newWordInputs
       });
     } else {
       // Save revealed words
       saveProgress({
-        revealedWordsByClick: updated
+        revealedWordsByClick: updated,
+        userInputs: newUserInputs,
+        wordInputs: newWordInputs
       });
     }
-  }, [revealedWordsByClick, sentenceRevealPenalty, updatePoints, saveProgress]);
+  }, [revealedWordsByClick, sentenceRevealPenalty, updatePoints, saveProgress, transcriptData, userInputs, wordInputs, compareWords]);
 
   // Calculate progress
   const progress = useMemo(() => {
@@ -1272,97 +1406,129 @@ const DictationPage = () => {
                   )}
                 </div>
 
-                <div className={styles.inputSection}>
-                  <div className={styles.textareaWrapper}>
-                    <textarea
-                      ref={(el) => inputRefs.current[currentSentenceIndex] = el}
-                      className={styles.dictationInput}
-                      value={userInputs[currentSentenceIndex] || ''}
-                      onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
-                      placeholder="Nghe và gõ lại câu bạn nghe được..."
-                      rows={3}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' && !e.shiftKey) {
-                          e.preventDefault();
-                          checkAnswer(currentSentenceIndex);
+                {/* Word Input Boxes - matching hidden sentence layout */}
+                <div className={styles.wordInputsSection}>
+                  <div className={styles.wordInputsContainer}>
+                    {transcriptData[currentSentenceIndex] && 
+                      transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
+                        const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
+                        const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
+                        const comparison = comparedWords[currentSentenceIndex]?.[i];
+                        const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
+                        const isCorrect = comparison?.isCorrect;
+                        const currentValue = wordInputs[currentSentenceIndex]?.[i] || '';
+                        
+                        // Determine input class based on state
+                        let inputClass = styles.wordInput;
+                        if (isCorrect) {
+                          inputClass = `${styles.wordInput} ${styles.wordInputCorrect}`;
+                        } else if (isRevealed) {
+                          inputClass = `${styles.wordInput} ${styles.wordInputRevealed}`;
+                        } else if (currentValue && !isCorrect) {
+                          inputClass = `${styles.wordInput} ${styles.wordInputPartial}`;
                         }
-                      }}
-                    />
+                        
+                        return (
+                          <div key={i} className={styles.wordInputWrapper}>
+                            <input
+                              type="text"
+                              data-word-input={`${currentSentenceIndex}-${i}`}
+                              className={inputClass}
+                              value={currentValue}
+                              onChange={(e) => handleWordInputChange(currentSentenceIndex, i, e.target.value)}
+                              placeholder={'_'.repeat(Math.min(pureWord.length, 8))}
+                              maxLength={pureWord.length}
+                              style={{ width: `${Math.max(pureWord.length * 12 + 20, 50)}px` }}
+                              disabled={isCorrect || completedSentences.includes(currentSentenceIndex)}
+                              onKeyDown={(e) => {
+                                if (e.key === ' ' || e.key === 'Tab') {
+                                  e.preventDefault();
+                                  focusNextWordInput(currentSentenceIndex, i);
+                                } else if (e.key === 'Enter') {
+                                  e.preventDefault();
+                                  checkAnswer(currentSentenceIndex);
+                                }
+                              }}
+                            />
+                            {punctuation && <span className={styles.wordPunctuation}>{punctuation}</span>}
+                          </div>
+                        );
+                      })
+                    }
+                  </div>
+                  
+                  {/* Voice Recording Controls */}
+                  <div className={styles.inputRecordingControls}>
+                    <button
+                      className={`${styles.inputRecordBtn} ${isRecording ? styles.recording : ''}`}
+                      onClick={handleRecordingClick}
+                      disabled={isProcessingAudio}
+                      title={isRecording ? 'Dừng ghi âm' : 'Ghi âm giọng nói'}
+                    >
+                      {isProcessingAudio ? (
+                        <svg className={styles.spinner} viewBox="0 0 24 24" width="20" height="20">
+                          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="32">
+                            <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite" />
+                          </circle>
+                        </svg>
+                      ) : isRecording ? (
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                          <rect x="6" y="6" width="12" height="12" rx="2" />
+                        </svg>
+                      ) : (
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                          <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" />
+                          <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z" />
+                          <path d="M11 18h2v4h-2z" />
+                          <path d="M8 22h8v2H8z" />
+                        </svg>
+                      )}
+                    </button>
 
-                    {/* Voice Recording Button - Inside textarea */}
-                    <div className={styles.inputRecordingControls}>
+                    {recordedBlob && !isRecording && (
                       <button
-                        className={`${styles.inputRecordBtn} ${isRecording ? styles.recording : ''}`}
-                        onClick={handleRecordingClick}
-                        disabled={isProcessingAudio}
-                        title={isRecording ? 'Dừng ghi âm' : 'Ghi âm giọng nói'}
+                        className={`${styles.inputPlaybackBtn} ${isPlayingRecording ? styles.playing : ''}`}
+                        onClick={playRecordedAudio}
+                        title={isPlayingRecording ? 'Dừng phát' : 'Nghe lại'}
                       >
-                        {isProcessingAudio ? (
-                          <svg className={styles.spinner} viewBox="0 0 24 24" width="20" height="20">
-                            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="32">
-                              <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite" />
-                            </circle>
-                          </svg>
-                        ) : isRecording ? (
-                          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                            <rect x="6" y="6" width="12" height="12" rx="2" />
+                        {isPlayingRecording ? (
+                          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
                           </svg>
                         ) : (
-                          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                            <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" />
-                            <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z" />
-                            <path d="M11 18h2v4h-2z" />
-                            <path d="M8 22h8v2H8z" />
+                          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path d="M8 5v14l11-7z" />
                           </svg>
                         )}
                       </button>
-
-                      {/* Playback button - shown when recording exists */}
-                      {recordedBlob && !isRecording && (
-                        <button
-                          className={`${styles.inputPlaybackBtn} ${isPlayingRecording ? styles.playing : ''}`}
-                          onClick={playRecordedAudio}
-                          title={isPlayingRecording ? 'Dừng phát' : 'Nghe lại'}
-                        >
-                          {isPlayingRecording ? (
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
-                            </svg>
-                          ) : (
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                              <path d="M8 5v14l11-7z" />
-                            </svg>
-                          )}
-                        </button>
-                      )}
-                    </div>
+                    )}
                   </div>
+                </div>
 
-                  {/* Action Buttons */}
-                  <div className={styles.actionButtons}>
-                    <button
-                      className={styles.nextButton}
-                      onClick={() => {
-                        if (currentSentenceIndex > 0) {
-                          playSentence(currentSentenceIndex - 1);
-                        }
-                      }}
-                      disabled={currentSentenceIndex <= 0}
-                    >
-                      ← Câu trước
-                    </button>
-                    <button
-                      className={styles.nextButton}
-                      onClick={() => {
-                        if (currentSentenceIndex < transcriptData.length - 1) {
-                          playSentence(currentSentenceIndex + 1);
-                        }
-                      }}
-                      disabled={currentSentenceIndex >= transcriptData.length - 1}
-                    >
-                      Câu sau →
-                    </button>
-                  </div>
+                {/* Action Buttons */}
+                <div className={styles.actionButtons}>
+                  <button
+                    className={styles.nextButton}
+                    onClick={() => {
+                      if (currentSentenceIndex > 0) {
+                        playSentence(currentSentenceIndex - 1);
+                      }
+                    }}
+                    disabled={currentSentenceIndex <= 0}
+                  >
+                    ← Câu trước
+                  </button>
+                  <button
+                    className={styles.nextButton}
+                    onClick={() => {
+                      if (currentSentenceIndex < transcriptData.length - 1) {
+                        playSentence(currentSentenceIndex + 1);
+                      }
+                    }}
+                    disabled={currentSentenceIndex >= transcriptData.length - 1}
+                  >
+                    Câu sau →
+                  </button>
                 </div>
 
 

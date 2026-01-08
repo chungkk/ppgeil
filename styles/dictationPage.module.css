@@ -5823,6 +5823,90 @@
   flex: 1;
 }
 
+/* Word Inputs Section - Per-word input boxes */
+.wordInputsSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--bg-tertiary);
+  border-radius: var(--border-radius-sm);
+  position: relative;
+}
+
+.wordInputsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 12px;
+  justify-content: center;
+  align-items: flex-end;
+  padding: var(--spacing-sm);
+}
+
+.wordInputWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.wordInput {
+  padding: 8px 12px;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s ease;
+  min-width: 50px;
+  max-width: 180px;
+}
+
+.wordInput:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.wordInput::placeholder {
+  color: var(--text-muted);
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+.wordInput:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+/* Word Input States */
+.wordInputCorrect {
+  border-color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #10b981 !important;
+  font-weight: 600;
+}
+
+.wordInputRevealed {
+  border-color: #f59e0b !important;
+  background: rgba(245, 158, 11, 0.1) !important;
+  color: #f59e0b !important;
+  font-weight: 600;
+}
+
+.wordInputPartial {
+  border-color: #3b82f6 !important;
+  background: rgba(59, 130, 246, 0.08) !important;
+}
+
+.wordPunctuation {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-left: 1px;
+}
+
 .dictationInput {
   width: 100%;
   min-height: 120px;
@@ -5857,15 +5941,14 @@
   /* Make room for recording buttons */
 }
 
-/* Recording Controls inside textarea */
+/* Recording Controls */
 .inputRecordingControls {
-  position: absolute;
-  right: 8px;
-  bottom: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  margin-top: var(--spacing-sm);
   z-index: 10;
 }
 
