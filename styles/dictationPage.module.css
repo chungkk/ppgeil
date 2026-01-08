@@ -5758,6 +5758,25 @@
   color: #d97706;
 }
 
+/* Wrong word - red background when input is incorrect */
+.wrongWord {
+  display: inline;
+  color: #ef4444;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 2px 6px;
+  margin: 0 1px;
+  border-radius: 4px;
+  font-family: monospace;
+  letter-spacing: 1px;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.wrongWord:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
 .revealedSentence {
   font-size: 18px;
   line-height: 1.8;
@@ -5899,6 +5918,19 @@
 .wordInputPartial {
   border-color: #3b82f6 !important;
   background: rgba(59, 130, 246, 0.08) !important;
+}
+
+.wordInputWrong {
+  border-color: #ef4444 !important;
+  background: rgba(239, 68, 68, 0.15) !important;
+  color: #ef4444 !important;
+  animation: shakeInput 0.3s ease;
+}
+
+@keyframes shakeInput {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
 }
 
 .wordPunctuation {

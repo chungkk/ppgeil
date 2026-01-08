@@ -1317,6 +1317,12 @@ const DictationPage = () => {
                           const comparison = comparedWords[currentSentenceIndex][i];
                           const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
                           const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
+                          const currentInput = wordInputs[currentSentenceIndex]?.[i] || '';
+                          
+                          // Check if input is wrong
+                          const normalizedInput = currentInput.toLowerCase().trim();
+                          const normalizedCorrect = pureWord.toLowerCase();
+                          const isWrong = currentInput && !normalizedCorrect.startsWith(normalizedInput) && !comparison?.isCorrect;
 
                           if (comparison?.isCorrect) {
                             // Fully correct word - show in green
@@ -1327,6 +1333,19 @@ const DictationPage = () => {
                                 onClick={(e) => handleWordClick(word, e)}
                               >
                                 {word}{' '}
+                              </span>
+                            );
+                          } else if (isWrong) {
+                            // Wrong input - show red background
+                            return (
+                              <span
+                                key={i}
+                                className={styles.wrongWord}
+                                onDoubleClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
+                                title="Double-click để xem từ"
+                              >
+                                {'_'.repeat(pureWord.length)}
+                                {punctuation}{' '}
                               </span>
                             );
                           } else if (comparison?.matchedChars > 0) {
@@ -1418,10 +1437,17 @@ const DictationPage = () => {
                         const isCorrect = comparison?.isCorrect;
                         const currentValue = wordInputs[currentSentenceIndex]?.[i] || '';
                         
+                        // Check if input is wrong (doesn't match beginning of correct word)
+                        const normalizedInput = currentValue.toLowerCase().trim();
+                        const normalizedCorrect = pureWord.toLowerCase();
+                        const isWrong = currentValue && !normalizedCorrect.startsWith(normalizedInput) && !isCorrect;
+                        
                         // Determine input class based on state
                         let inputClass = styles.wordInput;
                         if (isCorrect) {
                           inputClass = `${styles.wordInput} ${styles.wordInputCorrect}`;
+                        } else if (isWrong) {
+                          inputClass = `${styles.wordInput} ${styles.wordInputWrong}`;
                         } else if (isRevealed) {
                           inputClass = `${styles.wordInput} ${styles.wordInputRevealed}`;
                         } else if (currentValue && !isCorrect) {
