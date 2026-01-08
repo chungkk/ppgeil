@@ -5696,17 +5696,37 @@
   border-radius: 12px;
 }
 
-/* Hidden Sentence Display */
+/* Hidden Sentence Display - Darker area showing masked words */
 .hiddenSentenceBox {
-  background: var(--bg-tertiary);
-  border-radius: var(--border-radius-sm);
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border-radius: 12px;
   padding: var(--spacing-md);
-  min-height: 60px;
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border-color);
-  margin-bottom: 12px;
+  border: 2px solid rgba(100, 116, 139, 0.25);
+  margin-bottom: 16px;
+  box-shadow: 
+    inset 0 2px 8px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* Label for hidden sentence box */
+.hiddenSentenceBox::before {
+  content: "Câu ẩn";
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(148, 163, 184, 0.8);
+  background: var(--bg-secondary);
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .maskedSentence {
@@ -5879,14 +5899,34 @@
   flex: 1;
 }
 
-/* Word Inputs Section - Per-word input boxes */
+/* Word Inputs Section - Lighter area for typing */
 .wordInputsSection {
   display: flex;
   flex-direction: column;
   padding: var(--spacing-md);
-  background: var(--bg-tertiary);
-  border-radius: var(--border-radius-sm);
-  border: 1px solid var(--border-color);
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.08) 0%, rgba(6, 182, 212, 0.05) 100%);
+  border-radius: 12px;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 
+    0 4px 12px rgba(59, 130, 246, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+/* Label for input section */
+.wordInputsSection::before {
+  content: "Nhập câu trả lời";
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(96, 165, 250, 0.9);
+  background: var(--bg-secondary);
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .wordInputsContainer {
@@ -6397,7 +6437,14 @@
     flex-shrink: 0;
     padding: var(--spacing-md);
     min-height: 60px;
-    background: var(--bg-secondary);
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+    margin: 12px;
+    margin-bottom: 8px;
+  }
+
+  .wordInputsSection {
+    margin: 0 12px 12px 12px;
+    padding: var(--spacing-md);
   }
 
   .inputSection {
@@ -6427,6 +6474,26 @@
   .hiddenSentenceBox {
     padding: var(--spacing-sm);
     min-height: 60px;
+    margin: 8px;
+    margin-bottom: 6px;
+  }
+
+  .hiddenSentenceBox::before {
+    font-size: 9px;
+    top: -8px;
+    left: 12px;
+    padding: 1px 6px;
+  }
+
+  .wordInputsSection {
+    margin: 0 8px 8px 8px;
+  }
+
+  .wordInputsSection::before {
+    font-size: 9px;
+    top: -8px;
+    left: 12px;
+    padding: 1px 6px;
   }
 
   .maskedSentence,

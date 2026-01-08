@@ -1,0 +1,2564 @@
+[
+    {
+        "text": "Eines Tages dachte Tom an ein leckeres Erdbeermarmeladebrot mit Honig.",
+        "start": 8.179999732971192,
+        "end": 13.739999771118164,
+        "wordTimings": [
+            {
+                "word": "Eines",
+                "start": 8.129999732971191,
+                "end": 8.989999580383301,
+                "confidence": 1
+            },
+            {
+                "word": "Tages",
+                "start": 8.839999580383301,
+                "end": 9.529999542236329,
+                "confidence": 1
+            },
+            {
+                "word": "dachte",
+                "start": 9.379999542236328,
+                "end": 10.05,
+                "confidence": 1
+            },
+            {
+                "word": "Tom",
+                "start": 9.9,
+                "end": 10.289999771118165,
+                "confidence": 1
+            },
+            {
+                "word": "an",
+                "start": 10.139999771118164,
+                "end": 10.589999961853028,
+                "confidence": 1
+            },
+            {
+                "word": "ein",
+                "start": 10.439999961853028,
+                "end": 10.850000190734864,
+                "confidence": 1
+            },
+            {
+                "word": "leckeres",
+                "start": 10.700000190734864,
+                "end": 11.409999656677247,
+                "confidence": 1
+            },
+            {
+                "word": "Erdbeermarmeladebrot",
+                "start": 11.259999656677246,
+                "end": 12.510000038146973,
+                "confidence": 1
+            },
+            {
+                "word": "mit",
+                "start": 12.360000038146973,
+                "end": 12.86999969482422,
+                "confidence": 1
+            },
+            {
+                "word": "Honig.",
+                "start": 12.719999694824219,
+                "end": 13.739999771118164,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "One day, Tom thought of a delicious strawberry jam sandwich with honey.",
+        "translationVi": "Một ngày, Tom nghĩ đến một chiếc bánh mì phết mứt dâu tây ngon với mật ong."
+    },
+    {
+        "text": "Er machte einen Spaziergang, aber",
+        "start": 14.339999580383301,
+        "end": 16.700000762939453,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 14.2899995803833,
+                "end": 14.489999580383301,
+                "confidence": 1
+            },
+            {
+                "word": "machte",
+                "start": 14.339999580383301,
+                "end": 14.789999771118165,
+                "confidence": 1
+            },
+            {
+                "word": "einen",
+                "start": 14.639999771118164,
+                "end": 15.010000038146973,
+                "confidence": 1
+            },
+            {
+                "word": "Spaziergang,",
+                "start": 14.860000038146973,
+                "end": 15.999999809265137,
+                "confidence": 0.8
+            },
+            {
+                "word": "aber",
+                "start": 15.849999809265137,
+                "end": 16.700000762939453,
+                "confidence": 0.8
+            }
+        ],
+        "translationEn": "He took a walk, but",
+        "translationVi": "Anh ấy đi dạo, nhưng"
+    },
+    {
+        "text": "Das Erdbeermarmeladebrot mit Honig wollte ihm nicht mehr aus dem Kopf gehen.",
+        "start": 16.10000076293945,
+        "end": 20.639999389648438,
+        "wordTimings": [
+            {
+                "word": "das",
+                "start": 16.050000762939455,
+                "end": 16.490000534057618,
+                "confidence": 1
+            },
+            {
+                "word": "Erdbeermarmeladebrot",
+                "start": 16.340000534057616,
+                "end": 17.490000534057618,
+                "confidence": 1
+            },
+            {
+                "word": "mit",
+                "start": 17.340000534057616,
+                "end": 18.410000610351563,
+                "confidence": 1
+            },
+            {
+                "word": "Honig",
+                "start": 18.26000061035156,
+                "end": 18.410000610351563,
+                "confidence": 1
+            },
+            {
+                "word": "wollte",
+                "start": 18.26000061035156,
+                "end": 18.449999618530274,
+                "confidence": 1
+            },
+            {
+                "word": "ihm",
+                "start": 18.299999618530272,
+                "end": 18.629999923706055,
+                "confidence": 1
+            },
+            {
+                "word": "nicht",
+                "start": 18.479999923706053,
+                "end": 18.910000610351563,
+                "confidence": 1
+            },
+            {
+                "word": "mehr",
+                "start": 18.76000061035156,
+                "end": 19.150000381469727,
+                "confidence": 1
+            },
+            {
+                "word": "aus",
+                "start": 19.000000381469725,
+                "end": 19.20999984741211,
+                "confidence": 1
+            },
+            {
+                "word": "dem",
+                "start": 19.059999847412108,
+                "end": 19.449999618530274,
+                "confidence": 1
+            },
+            {
+                "word": "Kopf",
+                "start": 19.299999618530272,
+                "end": 19.750000762939454,
+                "confidence": 1
+            },
+            {
+                "word": "gehen.",
+                "start": 19.60000076293945,
+                "end": 20.639999389648438,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "The strawberry jam sandwich with honey wouldn't leave his mind.",
+        "translationVi": "Bánh mì mứt dâu tây với mật ong không ngừng ám ảnh trong đầu anh."
+    },
+    {
+        "text": "Da traf er seinen Freund, den Müller.",
+        "start": 27.979999923706053,
+        "end": 31.68000030517578,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 27.929999923706056,
+                "end": 28.769999313354493,
+                "confidence": 1
+            },
+            {
+                "word": "traf",
+                "start": 28.61999931335449,
+                "end": 29.150000381469727,
+                "confidence": 1
+            },
+            {
+                "word": "er",
+                "start": 29.000000381469725,
+                "end": 29.289999771118165,
+                "confidence": 1
+            },
+            {
+                "word": "seinen",
+                "start": 29.139999771118163,
+                "end": 29.650000381469727,
+                "confidence": 1
+            },
+            {
+                "word": "Freund,",
+                "start": 29.500000381469725,
+                "end": 30.620000648498536,
+                "confidence": 0.8
+            },
+            {
+                "word": "den",
+                "start": 30.470000648498534,
+                "end": 31.230000305175782,
+                "confidence": 0.8
+            },
+            {
+                "word": "Müller.",
+                "start": 31.08000030517578,
+                "end": 31.68000030517578,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "There he met his friend, the miller.",
+        "translationVi": "Lúc đó, anh gặp người bạn của mình, anh Müller."
+    },
+    {
+        "text": "„Hallo Müller, hast du vielleicht ein Erdbeermarmeladebrot mit Honig für mich?",
+        "start": 32.019998931884764,
+        "end": 36.18000030517578,
+        "wordTimings": [
+            {
+                "word": "„Hallo",
+                "start": 31.969998931884767,
+                "end": 32.349999237060544,
+                "confidence": 1
+            },
+            {
+                "word": "Müller,",
+                "start": 32.199999237060545,
+                "end": 32.87999992370605,
+                "confidence": 0.8
+            },
+            {
+                "word": "hast",
+                "start": 32.72999992370605,
+                "end": 33.14999847412109,
+                "confidence": 0.8
+            },
+            {
+                "word": "du",
+                "start": 32.99999847412109,
+                "end": 33.55,
+                "confidence": 1
+            },
+            {
+                "word": "vielleicht",
+                "start": 33.4,
+                "end": 33.64999847412109,
+                "confidence": 1
+            },
+            {
+                "word": "ein",
+                "start": 33.49999847412109,
+                "end": 33.8099983215332,
+                "confidence": 1
+            },
+            {
+                "word": "Erdbeermarmeladebrot",
+                "start": 33.6599983215332,
+                "end": 34.790001678466794,
+                "confidence": 1
+            },
+            {
+                "word": "mit",
+                "start": 34.640001678466795,
+                "end": 35.05,
+                "confidence": 1
+            },
+            {
+                "word": "Honig",
+                "start": 34.9,
+                "end": 35.32999877929687,
+                "confidence": 1
+            },
+            {
+                "word": "für",
+                "start": 35.179998779296874,
+                "end": 35.57000045776367,
+                "confidence": 1
+            },
+            {
+                "word": "mich?",
+                "start": 35.42000045776367,
+                "end": 36.18000030517578,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "\"Hello Müller, do you perhaps have a strawberry jam sandwich with honey for me?\"",
+        "translationVi": "„Chào Müller, bạn có thể cho tôi một miếng bánh mì mứt dâu với mật ong không?“"
+    },
+    {
+        "text": "Nein, aber schau mal, Tom, heute ist mein lieber Papa da.",
+        "start": 36.679998779296874,
+        "end": 42.040000915527344,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 36.629998779296876,
+                "end": 37.56000022888183,
+                "confidence": 0.8
+            },
+            {
+                "word": "aber",
+                "start": 37.410000228881835,
+                "end": 38.05,
+                "confidence": 0.8
+            },
+            {
+                "word": "schau",
+                "start": 37.9,
+                "end": 38.25000076293945,
+                "confidence": 1
+            },
+            {
+                "word": "mal,",
+                "start": 38.10000076293945,
+                "end": 38.529999542236325,
+                "confidence": 1
+            },
+            {
+                "word": "Tom,",
+                "start": 38.37999954223633,
+                "end": 39.16999893188476,
+                "confidence": 0.8
+            },
+            {
+                "word": "heute",
+                "start": 39.019998931884764,
+                "end": 39.50999908447265,
+                "confidence": 0.8
+            },
+            {
+                "word": "ist",
+                "start": 39.359999084472655,
+                "end": 39.77000122070312,
+                "confidence": 1
+            },
+            {
+                "word": "mein",
+                "start": 39.620001220703124,
+                "end": 40.20999984741211,
+                "confidence": 1
+            },
+            {
+                "word": "lieber",
+                "start": 40.05999984741211,
+                "end": 40.82999877929687,
+                "confidence": 1
+            },
+            {
+                "word": "Papa",
+                "start": 40.679998779296874,
+                "end": 41.14999847412109,
+                "confidence": 1
+            },
+            {
+                "word": "da.",
+                "start": 40.99999847412109,
+                "end": 42.040000915527344,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "No, but look, Tom, today my dear dad is here.",
+        "translationVi": "Không, nhưng nhìn này, Tom, hôm nay bố yêu quý của tôi ở đây."
+    },
+    {
+        "text": "„Hm, wo ist eigentlich mein lieber Papa?",
+        "start": 45.199999237060545,
+        "end": 48.02000045776367,
+        "wordTimings": [
+            {
+                "word": "„Hm,",
+                "start": 45.14999923706055,
+                "end": 45.98999862670898,
+                "confidence": 1
+            },
+            {
+                "word": "wo",
+                "start": 45.83999862670898,
+                "end": 46.07000045776367,
+                "confidence": 1
+            },
+            {
+                "word": "ist",
+                "start": 45.92000045776367,
+                "end": 46.20999984741211,
+                "confidence": 1
+            },
+            {
+                "word": "eigentlich",
+                "start": 46.05999984741211,
+                "end": 46.66999893188476,
+                "confidence": 1
+            },
+            {
+                "word": "mein",
+                "start": 46.519998931884764,
+                "end": 46.96999816894531,
+                "confidence": 1
+            },
+            {
+                "word": "lieber",
+                "start": 46.81999816894531,
+                "end": 47.25000076293945,
+                "confidence": 1
+            },
+            {
+                "word": "Papa?",
+                "start": 47.10000076293945,
+                "end": 48.02000045776367,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "\"Hm, where is my dear dad actually?\"",
+        "translationVi": "\"Hm, bố yêu quý của tôi đang ở đâu nhỉ?\""
+    },
+    {
+        "text": "Aber der ist doch auf hoher See und dort kannst du ihn besuchen.",
+        "start": 48.519998931884764,
+        "end": 52.97999954223633,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 48.46999893188477,
+                "end": 49.349999237060544,
+                "confidence": 1
+            },
+            {
+                "word": "der",
+                "start": 49.199999237060545,
+                "end": 49.48999862670898,
+                "confidence": 1
+            },
+            {
+                "word": "ist",
+                "start": 49.33999862670898,
+                "end": 49.61000137329101,
+                "confidence": 1
+            },
+            {
+                "word": "doch",
+                "start": 49.460001373291014,
+                "end": 49.869999694824216,
+                "confidence": 1
+            },
+            {
+                "word": "auf",
+                "start": 49.71999969482422,
+                "end": 49.98999862670898,
+                "confidence": 1
+            },
+            {
+                "word": "hoher",
+                "start": 49.83999862670898,
+                "end": 50.290001678466794,
+                "confidence": 1
+            },
+            {
+                "word": "See",
+                "start": 50.140001678466795,
+                "end": 50.630001831054685,
+                "confidence": 1
+            },
+            {
+                "word": "und",
+                "start": 50.480001831054686,
+                "end": 51.11000137329101,
+                "confidence": 1
+            },
+            {
+                "word": "dort",
+                "start": 50.960001373291014,
+                "end": 51.39000015258789,
+                "confidence": 1
+            },
+            {
+                "word": "kannst",
+                "start": 51.24000015258789,
+                "end": 51.66999893188476,
+                "confidence": 1
+            },
+            {
+                "word": "du",
+                "start": 51.519998931884764,
+                "end": 51.89000015258789,
+                "confidence": 1
+            },
+            {
+                "word": "ihn",
+                "start": 51.74000015258789,
+                "end": 51.96999816894531,
+                "confidence": 1
+            },
+            {
+                "word": "besuchen.",
+                "start": 51.81999816894531,
+                "end": 52.97999954223633,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "But he is out at sea, and you can visit him there.",
+        "translationVi": "Nhưng anh ấy đang ở giữa biển và bạn có thể đến thăm anh ấy ở đó."
+    },
+    {
+        "text": "Tom hielt das für eine wunderbare Idee.",
+        "start": 54.33999862670898,
+        "end": 56.86000061035156,
+        "wordTimings": [
+            {
+                "word": "Tom",
+                "start": 54.289998626708986,
+                "end": 54.48999862670898,
+                "confidence": 1
+            },
+            {
+                "word": "hielt",
+                "start": 54.33999862670898,
+                "end": 54.70999984741211,
+                "confidence": 1
+            },
+            {
+                "word": "das",
+                "start": 54.55999984741211,
+                "end": 54.89000015258789,
+                "confidence": 1
+            },
+            {
+                "word": "für",
+                "start": 54.74000015258789,
+                "end": 55.05,
+                "confidence": 1
+            },
+            {
+                "word": "eine",
+                "start": 54.9,
+                "end": 55.349999237060544,
+                "confidence": 1
+            },
+            {
+                "word": "wunderbare",
+                "start": 55.199999237060545,
+                "end": 56.029999542236325,
+                "confidence": 1
+            },
+            {
+                "word": "Idee.",
+                "start": 55.87999954223633,
+                "end": 56.86000061035156,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "Tom thought it was a wonderful idea.",
+        "translationVi": "Tom nghĩ rằng đó là một ý tưởng tuyệt vời."
+    },
+    {
+        "text": "Er verabschiedete sich vom Müller und machte sich auf den Weg zur hohen See.",
+        "start": 56.71999969482422,
+        "end": 61.31999969482422,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 56.66999969482422,
+                "end": 56.93000106811523,
+                "confidence": 1
+            },
+            {
+                "word": "verabschiedete",
+                "start": 56.78000106811523,
+                "end": 57.57000045776367,
+                "confidence": 1
+            },
+            {
+                "word": "sich",
+                "start": 57.42000045776367,
+                "end": 57.8099983215332,
+                "confidence": 1
+            },
+            {
+                "word": "vom",
+                "start": 57.6599983215332,
+                "end": 58.00999908447265,
+                "confidence": 1
+            },
+            {
+                "word": "Müller",
+                "start": 57.859999084472655,
+                "end": 58.27000122070312,
+                "confidence": 1
+            },
+            {
+                "word": "und",
+                "start": 58.120001220703124,
+                "end": 58.77000122070312,
+                "confidence": 1
+            },
+            {
+                "word": "machte",
+                "start": 58.620001220703124,
+                "end": 59.14999847412109,
+                "confidence": 1
+            },
+            {
+                "word": "sich",
+                "start": 58.99999847412109,
+                "end": 59.3099983215332,
+                "confidence": 1
+            },
+            {
+                "word": "auf",
+                "start": 59.1599983215332,
+                "end": 59.43000106811523,
+                "confidence": 1
+            },
+            {
+                "word": "den",
+                "start": 59.28000106811523,
+                "end": 59.82999877929687,
+                "confidence": 1
+            },
+            {
+                "word": "Weg",
+                "start": 59.679998779296874,
+                "end": 59.869999694824216,
+                "confidence": 1
+            },
+            {
+                "word": "zur",
+                "start": 59.71999969482422,
+                "end": 60.20999984741211,
+                "confidence": 1
+            },
+            {
+                "word": "hohen",
+                "start": 60.05999984741211,
+                "end": 60.61000137329101,
+                "confidence": 1
+            },
+            {
+                "word": "See.",
+                "start": 60.460001373291014,
+                "end": 61.31999969482422,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "He said goodbye to the miller and set off for the open sea.",
+        "translationVi": "Ông từ biệt người thợ xay và lên đường ra biển khơi."
+    },
+    {
+        "text": "Zur selben Zeit dachte Toms Papa auf hoher See an seinen Sohn Tom.",
+        "start": 63.039999389648436,
+        "end": 69.45999908447266,
+        "wordTimings": [
+            {
+                "word": "Zur",
+                "start": 62.98999938964844,
+                "end": 63.869999694824216,
+                "confidence": 1
+            },
+            {
+                "word": "selben",
+                "start": 63.71999969482422,
+                "end": 64.21000366210937,
+                "confidence": 1
+            },
+            {
+                "word": "Zeit",
+                "start": 64.06000366210938,
+                "end": 64.77000122070312,
+                "confidence": 1
+            },
+            {
+                "word": "dachte",
+                "start": 64.62000122070313,
+                "end": 65.23000030517578,
+                "confidence": 1
+            },
+            {
+                "word": "Toms",
+                "start": 65.08000030517579,
+                "end": 65.74999694824218,
+                "confidence": 1
+            },
+            {
+                "word": "Papa",
+                "start": 65.5999969482422,
+                "end": 66.13000183105468,
+                "confidence": 1
+            },
+            {
+                "word": "auf",
+                "start": 65.9800018310547,
+                "end": 66.71000366210937,
+                "confidence": 1
+            },
+            {
+                "word": "hoher",
+                "start": 66.56000366210938,
+                "end": 67.05,
+                "confidence": 1
+            },
+            {
+                "word": "See",
+                "start": 66.9,
+                "end": 67.31000213623047,
+                "confidence": 1
+            },
+            {
+                "word": "an",
+                "start": 67.16000213623047,
+                "end": 67.78999786376953,
+                "confidence": 1
+            },
+            {
+                "word": "seinen",
+                "start": 67.63999786376954,
+                "end": 68.17000274658203,
+                "confidence": 1
+            },
+            {
+                "word": "Sohn",
+                "start": 68.02000274658204,
+                "end": 68.50999908447265,
+                "confidence": 1
+            },
+            {
+                "word": "Tom.",
+                "start": 68.35999908447266,
+                "end": 69.45999908447266,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "At the same time, Tom's dad was thinking about his son Tom out at sea.",
+        "translationVi": "Cùng lúc đó, cha của Tom đang ở giữa biển nghĩ về con trai mình, Tom."
+    },
+    {
+        "text": "„Hoho, es wird Zeit, dass ich mal wieder meinen Sohn Tom besuche.",
+        "start": 69.76000061035157,
+        "end": 74.12000274658203,
+        "wordTimings": [
+            {
+                "word": "„Hoho,",
+                "start": 69.71000061035156,
+                "end": 70.6599967956543,
+                "confidence": 0.8
+            },
+            {
+                "word": "es",
+                "start": 70.5099967956543,
+                "end": 71.03000335693359,
+                "confidence": 0.8
+            },
+            {
+                "word": "wird",
+                "start": 70.8800033569336,
+                "end": 71.24999694824218,
+                "confidence": 1
+            },
+            {
+                "word": "Zeit,",
+                "start": 71.0999969482422,
+                "end": 71.64999847412109,
+                "confidence": 1
+            },
+            {
+                "word": "dass",
+                "start": 71.4999984741211,
+                "end": 71.64999847412109,
+                "confidence": 1
+            },
+            {
+                "word": "ich",
+                "start": 71.4999984741211,
+                "end": 71.77000122070312,
+                "confidence": 1
+            },
+            {
+                "word": "mal",
+                "start": 71.62000122070313,
+                "end": 72.00999908447265,
+                "confidence": 1
+            },
+            {
+                "word": "wieder",
+                "start": 71.85999908447266,
+                "end": 72.21000366210937,
+                "confidence": 1
+            },
+            {
+                "word": "meinen",
+                "start": 72.06000366210938,
+                "end": 72.53000335693359,
+                "confidence": 1
+            },
+            {
+                "word": "Sohn",
+                "start": 72.3800033569336,
+                "end": 72.64999847412109,
+                "confidence": 1
+            },
+            {
+                "word": "Tom",
+                "start": 72.4999984741211,
+                "end": 73.05,
+                "confidence": 1
+            },
+            {
+                "word": "besuche.",
+                "start": 72.9,
+                "end": 74.12000274658203,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "\"Hoho, it's time for me to visit my son Tom again.\"",
+        "translationVi": "\"Hoho, đã đến lúc tôi thăm con trai Tom của mình một lần nữa.\""
+    },
+    {
+        "text": "Hoho, ein Aussichtsbäumchen! Hoho, der Müller, das ist doch kein Freund von meinem Sohn.",
+        "start": 83.12000122070313,
+        "end": 96.37999725341797,
+        "wordTimings": [
+            {
+                "word": "Hoho,",
+                "start": 83.07000122070312,
+                "end": 83.9500015258789,
+                "confidence": 1
+            },
+            {
+                "word": "ein",
+                "start": 83.80000152587891,
+                "end": 84.32999877929687,
+                "confidence": 1
+            },
+            {
+                "word": "Aussichtsbäumchen!",
+                "start": 84.17999877929688,
+                "end": 89.25000076293945,
+                "confidence": 0.8
+            },
+            {
+                "word": "Hoho,",
+                "start": 89.10000076293946,
+                "end": 93.27000122070312,
+                "confidence": 0.8
+            },
+            {
+                "word": "der",
+                "start": 93.12000122070313,
+                "end": 93.63000183105468,
+                "confidence": 1
+            },
+            {
+                "word": "Müller,",
+                "start": 93.4800018310547,
+                "end": 94.18999938964843,
+                "confidence": 0.8
+            },
+            {
+                "word": "das",
+                "start": 94.03999938964844,
+                "end": 94.46999816894531,
+                "confidence": 0.8
+            },
+            {
+                "word": "ist",
+                "start": 94.31999816894532,
+                "end": 94.5699966430664,
+                "confidence": 1
+            },
+            {
+                "word": "doch",
+                "start": 94.41999664306641,
+                "end": 94.74999694824218,
+                "confidence": 1
+            },
+            {
+                "word": "kein",
+                "start": 94.5999969482422,
+                "end": 94.91000061035156,
+                "confidence": 1
+            },
+            {
+                "word": "Freund",
+                "start": 94.76000061035157,
+                "end": 95.09000091552734,
+                "confidence": 1
+            },
+            {
+                "word": "von",
+                "start": 94.94000091552735,
+                "end": 95.35000305175781,
+                "confidence": 1
+            },
+            {
+                "word": "meinem",
+                "start": 95.20000305175782,
+                "end": 95.63000183105468,
+                "confidence": 1
+            },
+            {
+                "word": "Sohn.",
+                "start": 95.4800018310547,
+                "end": 96.37999725341797,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "Hoho, a little lookout tree! Hoho, the miller, he is not a friend of my son.",
+        "translationVi": "Hoho, một cây cảnh! Hoho, ông Müller, đó không phải là bạn của con trai tôi."
+    },
+    {
+        "text": "Sicher weiß der, wo Tom ist.",
+        "start": 96.17999877929688,
+        "end": 98.37999725341797,
+        "wordTimings": [
+            {
+                "word": "Sicher",
+                "start": 96.12999877929687,
+                "end": 96.53000335693359,
+                "confidence": 1
+            },
+            {
+                "word": "weiß",
+                "start": 96.3800033569336,
+                "end": 96.74999694824218,
+                "confidence": 1
+            },
+            {
+                "word": "der,",
+                "start": 96.5999969482422,
+                "end": 97.27000122070312,
+                "confidence": 1
+            },
+            {
+                "word": "wo",
+                "start": 97.12000122070313,
+                "end": 97.27000122070312,
+                "confidence": 1
+            },
+            {
+                "word": "Tom",
+                "start": 97.12000122070313,
+                "end": 97.55,
+                "confidence": 1
+            },
+            {
+                "word": "ist.",
+                "start": 97.4,
+                "end": 98.37999725341797,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "Surely he knows where Tom is.",
+        "translationVi": "Chắc chắn người đó biết Tom ở đâu."
+    },
+    {
+        "text": "Ein Boot, damit kann ich meinen Papa besuchen.",
+        "start": 100.70000305175782,
+        "end": 105.0199966430664,
+        "wordTimings": [
+            {
+                "word": "Ein",
+                "start": 100.6500030517578,
+                "end": 101.4500015258789,
+                "confidence": 1
+            },
+            {
+                "word": "Boot,",
+                "start": 101.30000152587891,
+                "end": 102.2000015258789,
+                "confidence": 0.8
+            },
+            {
+                "word": "damit",
+                "start": 102.05000152587891,
+                "end": 102.67000274658203,
+                "confidence": 0.8
+            },
+            {
+                "word": "kann",
+                "start": 102.52000274658204,
+                "end": 102.88999633789062,
+                "confidence": 1
+            },
+            {
+                "word": "ich",
+                "start": 102.73999633789063,
+                "end": 103.05,
+                "confidence": 1
+            },
+            {
+                "word": "meinen",
+                "start": 102.9,
+                "end": 103.31000213623047,
+                "confidence": 1
+            },
+            {
+                "word": "Papa",
+                "start": 103.16000213623047,
+                "end": 103.59000091552734,
+                "confidence": 1
+            },
+            {
+                "word": "besuchen.",
+                "start": 103.44000091552735,
+                "end": 105.0199966430664,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "A boat, with that I can visit my dad.",
+        "translationVi": "Một chiếc thuyền, nhờ đó tôi có thể thăm bố của mình."
+    },
+    {
+        "text": "„Ahoi, ihr Müllers Leute, habt ihr vielleicht den Tom gesehen?",
+        "start": 115.94000091552735,
+        "end": 120.05999755859375,
+        "wordTimings": [
+            {
+                "word": "„Ahoi,",
+                "start": 115.89000091552734,
+                "end": 116.68999938964843,
+                "confidence": 1
+            },
+            {
+                "word": "ihr",
+                "start": 116.53999938964844,
+                "end": 116.92999725341797,
+                "confidence": 1
+            },
+            {
+                "word": "Müllers",
+                "start": 116.77999725341797,
+                "end": 117.32999877929687,
+                "confidence": 1
+            },
+            {
+                "word": "Leute,",
+                "start": 117.17999877929688,
+                "end": 117.91999893188476,
+                "confidence": 0.8
+            },
+            {
+                "word": "habt",
+                "start": 117.76999893188477,
+                "end": 118.13000183105468,
+                "confidence": 0.8
+            },
+            {
+                "word": "ihr",
+                "start": 117.9800018310547,
+                "end": 118.24999694824218,
+                "confidence": 1
+            },
+            {
+                "word": "vielleicht",
+                "start": 118.0999969482422,
+                "end": 118.5699966430664,
+                "confidence": 1
+            },
+            {
+                "word": "den",
+                "start": 118.41999664306641,
+                "end": 118.86999969482422,
+                "confidence": 1
+            },
+            {
+                "word": "Tom",
+                "start": 118.71999969482422,
+                "end": 119.13000183105468,
+                "confidence": 1
+            },
+            {
+                "word": "gesehen?",
+                "start": 118.9800018310547,
+                "end": 120.05999755859375,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "\"Ahoy, you Müllers people, have you perhaps seen Tom?\"",
+        "translationVi": "„Ahoi, các bạn nhà Müller, các bạn có thấy Tom không?"
+    },
+    {
+        "text": "Na klar, der besucht dich gerade auf hoher See.",
+        "start": 120.35999908447266,
+        "end": 123.69999694824219,
+        "wordTimings": [
+            {
+                "word": "Na",
+                "start": 120.30999908447265,
+                "end": 120.81000213623047,
+                "confidence": 1
+            },
+            {
+                "word": "klar,",
+                "start": 120.66000213623047,
+                "end": 121.23999862670898,
+                "confidence": 0.8
+            },
+            {
+                "word": "der",
+                "start": 121.08999862670899,
+                "end": 121.55,
+                "confidence": 0.8
+            },
+            {
+                "word": "besucht",
+                "start": 121.4,
+                "end": 121.82999877929687,
+                "confidence": 1
+            },
+            {
+                "word": "dich",
+                "start": 121.67999877929688,
+                "end": 122.05,
+                "confidence": 1
+            },
+            {
+                "word": "gerade",
+                "start": 121.9,
+                "end": 122.38999633789062,
+                "confidence": 1
+            },
+            {
+                "word": "auf",
+                "start": 122.23999633789063,
+                "end": 122.60999755859375,
+                "confidence": 1
+            },
+            {
+                "word": "hoher",
+                "start": 122.45999755859376,
+                "end": 122.96999816894531,
+                "confidence": 1
+            },
+            {
+                "word": "See.",
+                "start": 122.81999816894532,
+                "end": 123.69999694824219,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "Of course, he is visiting you right now on the high seas.",
+        "translationVi": "Chắc chắn rồi, anh ấy đang thăm bạn giữa biển khơi."
+    },
+    {
+        "text": "Geh doch gleich zu ihm!",
+        "start": 123.53999938964844,
+        "end": 125.18000030517578,
+        "wordTimings": [
+            {
+                "word": "Geh",
+                "start": 123.48999938964843,
+                "end": 123.68999938964843,
+                "confidence": 1
+            },
+            {
+                "word": "doch",
+                "start": 123.53999938964844,
+                "end": 123.91000061035156,
+                "confidence": 1
+            },
+            {
+                "word": "gleich",
+                "start": 123.76000061035157,
+                "end": 124.14999847412109,
+                "confidence": 1
+            },
+            {
+                "word": "zu",
+                "start": 123.9999984741211,
+                "end": 124.5699966430664,
+                "confidence": 1
+            },
+            {
+                "word": "ihm!",
+                "start": 124.41999664306641,
+                "end": 125.18000030517578,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "Just go to him!",
+        "translationVi": "Hãy đi ngay đến chỗ anh ấy đi!"
+    },
+    {
+        "text": "„Beim Klabautermann, da hat mir ein räudiger Pirat das Boot geklaut,",
+        "start": 138.31999816894532,
+        "end": 143.66000366210938,
+        "wordTimings": [
+            {
+                "word": "„Beim",
+                "start": 138.2699981689453,
+                "end": 139.18999938964845,
+                "confidence": 1
+            },
+            {
+                "word": "Klabautermann,",
+                "start": 139.03999938964844,
+                "end": 140.07000427246095,
+                "confidence": 1
+            },
+            {
+                "word": "da",
+                "start": 139.92000427246094,
+                "end": 140.38999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "hat",
+                "start": 140.23999633789063,
+                "end": 140.52999572753907,
+                "confidence": 1
+            },
+            {
+                "word": "mir",
+                "start": 140.37999572753907,
+                "end": 140.7499969482422,
+                "confidence": 1
+            },
+            {
+                "word": "ein",
+                "start": 140.5999969482422,
+                "end": 140.99000244140626,
+                "confidence": 1
+            },
+            {
+                "word": "räudiger",
+                "start": 140.84000244140626,
+                "end": 141.7499969482422,
+                "confidence": 1
+            },
+            {
+                "word": "Pirat",
+                "start": 141.5999969482422,
+                "end": 142.22999267578126,
+                "confidence": 1
+            },
+            {
+                "word": "das",
+                "start": 142.07999267578126,
+                "end": 142.7499969482422,
+                "confidence": 1
+            },
+            {
+                "word": "Boot",
+                "start": 142.5999969482422,
+                "end": 142.7499969482422,
+                "confidence": 1
+            },
+            {
+                "word": "geklaut,",
+                "start": 142.5999969482422,
+                "end": 143.66000366210938,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "\"By the Klabautermann, a scruffy pirate stole my boat,\"",
+        "translationVi": "\"Trời ơi, có một tên cướp biển bẩn thỉu đã lấy cắp chiếc thuyền của tôi,\""
+    },
+    {
+        "text": "Aber weit kann er nicht sein.",
+        "start": 143.65999450683594,
+        "end": 145.8800048828125,
+        "wordTimings": [
+            {
+                "word": "aber",
+                "start": 143.60999450683593,
+                "end": 144.02999572753907,
+                "confidence": 1
+            },
+            {
+                "word": "weit",
+                "start": 143.87999572753907,
+                "end": 144.38999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "kann",
+                "start": 144.23999633789063,
+                "end": 144.58999328613282,
+                "confidence": 1
+            },
+            {
+                "word": "er",
+                "start": 144.43999328613282,
+                "end": 144.77000122070314,
+                "confidence": 1
+            },
+            {
+                "word": "nicht",
+                "start": 144.62000122070313,
+                "end": 144.96999816894532,
+                "confidence": 1
+            },
+            {
+                "word": "sein.",
+                "start": 144.81999816894532,
+                "end": 145.8800048828125,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "But he can't be far away.",
+        "translationVi": "Nhưng anh ấy không thể ở xa."
+    },
+    {
+        "text": "Da ist ja mein Boot, dann kann ich jetzt Tom auf hoher See suchen.",
+        "start": 151.5199951171875,
+        "end": 157.3000030517578,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 151.4699951171875,
+                "end": 152.38999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "ist",
+                "start": 152.23999633789063,
+                "end": 152.79000549316407,
+                "confidence": 1
+            },
+            {
+                "word": "ja",
+                "start": 152.64000549316407,
+                "end": 153.15000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "mein",
+                "start": 153.00000610351563,
+                "end": 153.29000549316407,
+                "confidence": 1
+            },
+            {
+                "word": "Boot,",
+                "start": 153.14000549316407,
+                "end": 153.85999755859376,
+                "confidence": 0.8
+            },
+            {
+                "word": "dann",
+                "start": 153.70999755859376,
+                "end": 154.57000427246095,
+                "confidence": 0.8
+            },
+            {
+                "word": "kann",
+                "start": 154.42000427246094,
+                "end": 154.72999267578126,
+                "confidence": 1
+            },
+            {
+                "word": "ich",
+                "start": 154.57999267578126,
+                "end": 154.88999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "jetzt",
+                "start": 154.73999633789063,
+                "end": 155.29000549316407,
+                "confidence": 1
+            },
+            {
+                "word": "Tom",
+                "start": 155.14000549316407,
+                "end": 155.41000061035157,
+                "confidence": 1
+            },
+            {
+                "word": "auf",
+                "start": 155.26000061035157,
+                "end": 155.6300018310547,
+                "confidence": 1
+            },
+            {
+                "word": "hoher",
+                "start": 155.4800018310547,
+                "end": 155.9300048828125,
+                "confidence": 1
+            },
+            {
+                "word": "See",
+                "start": 155.7800048828125,
+                "end": 156.1699951171875,
+                "confidence": 1
+            },
+            {
+                "word": "suchen.",
+                "start": 156.0199951171875,
+                "end": 157.3000030517578,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "There is my boat, so I can now search for Tom on the high seas.",
+        "translationVi": "Đó là thuyền của tôi, vậy bây giờ tôi có thể tìm Tom trên biển cả."
+    },
+    {
+        "text": "Ich habe meinen Papa nicht gefunden, der war aber gerade hier.",
+        "start": 163.81999816894532,
+        "end": 169.63999938964844,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 163.7699981689453,
+                "end": 164.68999938964845,
+                "confidence": 1
+            },
+            {
+                "word": "habe",
+                "start": 164.53999938964844,
+                "end": 164.88999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "meinen",
+                "start": 164.73999633789063,
+                "end": 165.35000305175782,
+                "confidence": 1
+            },
+            {
+                "word": "Papa",
+                "start": 165.20000305175782,
+                "end": 165.49000244140626,
+                "confidence": 1
+            },
+            {
+                "word": "nicht",
+                "start": 165.34000244140626,
+                "end": 165.96999816894532,
+                "confidence": 1
+            },
+            {
+                "word": "gefunden,",
+                "start": 165.81999816894532,
+                "end": 167.2100036621094,
+                "confidence": 0.8
+            },
+            {
+                "word": "der",
+                "start": 167.06000366210938,
+                "end": 167.8299987792969,
+                "confidence": 0.8
+            },
+            {
+                "word": "war",
+                "start": 167.67999877929688,
+                "end": 167.99000244140626,
+                "confidence": 1
+            },
+            {
+                "word": "aber",
+                "start": 167.84000244140626,
+                "end": 168.37000732421876,
+                "confidence": 1
+            },
+            {
+                "word": "gerade",
+                "start": 168.22000732421876,
+                "end": 168.72999267578126,
+                "confidence": 1
+            },
+            {
+                "word": "hier.",
+                "start": 168.57999267578126,
+                "end": 169.63999938964844,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "I couldn't find my dad, but he was just here.",
+        "translationVi": "Tôi không tìm thấy bố tôi, nhưng ông ấy vừa ở đây."
+    },
+    {
+        "text": "Und dann habe ich ihm erzählt, dass du gerade auf hoher See bist.",
+        "start": 169.03999938964844,
+        "end": 173.16000366210938,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 168.98999938964843,
+                "end": 169.60999755859376,
+                "confidence": 1
+            },
+            {
+                "word": "dann",
+                "start": 169.45999755859376,
+                "end": 169.85000305175782,
+                "confidence": 1
+            },
+            {
+                "word": "habe",
+                "start": 169.70000305175782,
+                "end": 169.99000244140626,
+                "confidence": 1
+            },
+            {
+                "word": "ich",
+                "start": 169.84000244140626,
+                "end": 170.15000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "ihm",
+                "start": 170.00000610351563,
+                "end": 170.55,
+                "confidence": 1
+            },
+            {
+                "word": "erzählt,",
+                "start": 170.4,
+                "end": 170.60999755859376,
+                "confidence": 1
+            },
+            {
+                "word": "dass",
+                "start": 170.45999755859376,
+                "end": 170.85000305175782,
+                "confidence": 1
+            },
+            {
+                "word": "du",
+                "start": 170.70000305175782,
+                "end": 171.22999267578126,
+                "confidence": 1
+            },
+            {
+                "word": "gerade",
+                "start": 171.07999267578126,
+                "end": 171.6300018310547,
+                "confidence": 1
+            },
+            {
+                "word": "auf",
+                "start": 171.4800018310547,
+                "end": 171.79000549316407,
+                "confidence": 1
+            },
+            {
+                "word": "hoher",
+                "start": 171.64000549316407,
+                "end": 172.15000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "See",
+                "start": 172.00000610351563,
+                "end": 172.30999450683595,
+                "confidence": 1
+            },
+            {
+                "word": "bist.",
+                "start": 172.15999450683594,
+                "end": 173.16000366210938,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "And then I told him that you are currently at sea.",
+        "translationVi": "Và sau đó tôi đã kể cho anh ấy biết rằng bạn đang ở giữa biển cả."
+    },
+    {
+        "text": "„Komm, wir helfen dir mal suchen und ich weiß auch schon wo.",
+        "start": 173.87999572753907,
+        "end": 177.86000061035156,
+        "wordTimings": [
+            {
+                "word": "„Komm,",
+                "start": 173.82999572753906,
+                "end": 174.29000549316407,
+                "confidence": 1
+            },
+            {
+                "word": "wir",
+                "start": 174.14000549316407,
+                "end": 174.58999328613282,
+                "confidence": 1
+            },
+            {
+                "word": "helfen",
+                "start": 174.43999328613282,
+                "end": 174.80999450683595,
+                "confidence": 1
+            },
+            {
+                "word": "dir",
+                "start": 174.65999450683594,
+                "end": 175.02999572753907,
+                "confidence": 1
+            },
+            {
+                "word": "mal",
+                "start": 174.87999572753907,
+                "end": 175.29000549316407,
+                "confidence": 1
+            },
+            {
+                "word": "suchen",
+                "start": 175.14000549316407,
+                "end": 175.6699951171875,
+                "confidence": 1
+            },
+            {
+                "word": "und",
+                "start": 175.5199951171875,
+                "end": 176.10999755859376,
+                "confidence": 1
+            },
+            {
+                "word": "ich",
+                "start": 175.95999755859376,
+                "end": 176.52999572753907,
+                "confidence": 1
+            },
+            {
+                "word": "weiß",
+                "start": 176.37999572753907,
+                "end": 176.55,
+                "confidence": 1
+            },
+            {
+                "word": "auch",
+                "start": 176.4,
+                "end": 176.85000305175782,
+                "confidence": 1
+            },
+            {
+                "word": "schon",
+                "start": 176.70000305175782,
+                "end": 177.27000122070314,
+                "confidence": 1
+            },
+            {
+                "word": "wo.",
+                "start": 177.12000122070313,
+                "end": 177.86000061035156,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "\"Come on, we'll help you look, and I already know where.\"",
+        "translationVi": "\"Đến đây, chúng ta giúp bạn tìm kiếm và tôi cũng biết nơi đó.\""
+    },
+    {
+        "text": "Vom Aussichtsbäumchen können wir deinen Papa sicher sehen.",
+        "start": 187.9,
+        "end": 191.6199951171875,
+        "wordTimings": [
+            {
+                "word": "Vom",
+                "start": 187.85,
+                "end": 188.65000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "Aussichtsbäumchen",
+                "start": 188.50000610351563,
+                "end": 189.2499969482422,
+                "confidence": 1
+            },
+            {
+                "word": "können",
+                "start": 189.0999969482422,
+                "end": 189.65000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "wir",
+                "start": 189.50000610351563,
+                "end": 189.9499938964844,
+                "confidence": 1
+            },
+            {
+                "word": "deinen",
+                "start": 189.79999389648438,
+                "end": 190.10999755859376,
+                "confidence": 1
+            },
+            {
+                "word": "Papa",
+                "start": 189.95999755859376,
+                "end": 190.38999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "sicher",
+                "start": 190.23999633789063,
+                "end": 190.85000305175782,
+                "confidence": 1
+            },
+            {
+                "word": "sehen.",
+                "start": 190.70000305175782,
+                "end": 191.6199951171875,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "From the lookout tree, we can surely see your dad.",
+        "translationVi": "Từ cây quan sát, chúng ta chắc chắn có thể nhìn thấy bố của bạn."
+    },
+    {
+        "text": "Also, ich kann von hier oben niemanden sehen und deshalb fahre ich jetzt Ich mal auch im „Oh, See hinaus ich habe du Tom nicht gefunden und da steht auch ich jemand dir Boot noch so warte hab ist auch endlich so räudiger Pirat Hurra sein Papa Hoho ein Sohn das bist so aber ganzes schön groß geworden den Kleiner Schau",
+        "start": 200.0199951171875,
+        "end": 250,
+        "wordTimings": [
+            {
+                "word": "Also,",
+                "start": 199.9699951171875,
+                "end": 200.77000122070314,
+                "confidence": 1
+            },
+            {
+                "word": "ich",
+                "start": 200.62000122070313,
+                "end": 201.15000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "kann",
+                "start": 201.00000610351563,
+                "end": 201.38999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "von",
+                "start": 201.23999633789063,
+                "end": 201.57000427246095,
+                "confidence": 1
+            },
+            {
+                "word": "hier",
+                "start": 201.42000427246094,
+                "end": 202.05,
+                "confidence": 1
+            },
+            {
+                "word": "oben",
+                "start": 201.9,
+                "end": 202.35000305175782,
+                "confidence": 1
+            },
+            {
+                "word": "niemanden",
+                "start": 202.20000305175782,
+                "end": 203.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "sehen",
+                "start": 203.17999877929688,
+                "end": 203.5100067138672,
+                "confidence": 1
+            },
+            {
+                "word": "und",
+                "start": 203.3600067138672,
+                "end": 204.6300018310547,
+                "confidence": 1
+            },
+            {
+                "word": "deshalb",
+                "start": 204.4800018310547,
+                "end": 205.10999755859376,
+                "confidence": 1
+            },
+            {
+                "word": "fahre",
+                "start": 204.95999755859376,
+                "end": 205.4499938964844,
+                "confidence": 1
+            },
+            {
+                "word": "ich",
+                "start": 205.29999389648438,
+                "end": 205.6699951171875,
+                "confidence": 1
+            },
+            {
+                "word": "jetzt",
+                "start": 205.5199951171875,
+                "end": 205.87000732421876,
+                "confidence": 1
+            },
+            {
+                "word": "Ich",
+                "start": 205.72000732421876,
+                "end": 206.07000427246095,
+                "confidence": 1
+            },
+            {
+                "word": "mal",
+                "start": 205.92000427246094,
+                "end": 206.22999267578126,
+                "confidence": 1
+            },
+            {
+                "word": "auch",
+                "start": 206.07999267578126,
+                "end": 206.37000732421876,
+                "confidence": 1
+            },
+            {
+                "word": "im",
+                "start": 206.22000732421876,
+                "end": 206.6300018310547,
+                "confidence": 1
+            },
+            {
+                "word": "„Oh,",
+                "start": 206.4800018310547,
+                "end": 206.9300048828125,
+                "confidence": 1
+            },
+            {
+                "word": "See",
+                "start": 206.7800048828125,
+                "end": 207.1300018310547,
+                "confidence": 1
+            },
+            {
+                "word": "hinaus",
+                "start": 206.9800018310547,
+                "end": 211.17999725341798,
+                "confidence": 0.8
+            },
+            {
+                "word": "ich",
+                "start": 211.02999725341797,
+                "end": 215.08999328613282,
+                "confidence": 0.8
+            },
+            {
+                "word": "habe",
+                "start": 214.93999328613282,
+                "end": 215.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "du",
+                "start": 215.17999877929688,
+                "end": 215.65000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "Tom",
+                "start": 215.50000610351563,
+                "end": 215.88999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "nicht",
+                "start": 215.73999633789063,
+                "end": 216.4300048828125,
+                "confidence": 1
+            },
+            {
+                "word": "gefunden",
+                "start": 216.2800048828125,
+                "end": 217.29000549316407,
+                "confidence": 1
+            },
+            {
+                "word": "und",
+                "start": 217.14000549316407,
+                "end": 219.02999572753907,
+                "confidence": 1
+            },
+            {
+                "word": "da",
+                "start": 218.87999572753907,
+                "end": 219.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "steht",
+                "start": 219.17999877929688,
+                "end": 219.57000427246095,
+                "confidence": 1
+            },
+            {
+                "word": "auch",
+                "start": 219.42000427246094,
+                "end": 219.80999450683595,
+                "confidence": 1
+            },
+            {
+                "word": "ich",
+                "start": 219.65999450683594,
+                "end": 219.99000244140626,
+                "confidence": 1
+            },
+            {
+                "word": "jemand",
+                "start": 219.84000244140626,
+                "end": 220.18999938964845,
+                "confidence": 1
+            },
+            {
+                "word": "dir",
+                "start": 220.03999938964844,
+                "end": 222.4300048828125,
+                "confidence": 1
+            },
+            {
+                "word": "Boot",
+                "start": 222.2800048828125,
+                "end": 222.9300048828125,
+                "confidence": 0.8
+            },
+            {
+                "word": "noch",
+                "start": 222.7800048828125,
+                "end": 224.07000427246095,
+                "confidence": 0.8
+            },
+            {
+                "word": "so",
+                "start": 223.92000427246094,
+                "end": 225.1699951171875,
+                "confidence": 1
+            },
+            {
+                "word": "warte",
+                "start": 225.0199951171875,
+                "end": 225.30999450683595,
+                "confidence": 1
+            },
+            {
+                "word": "hab",
+                "start": 225.15999450683594,
+                "end": 229.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "ist",
+                "start": 229.17999877929688,
+                "end": 229.4499938964844,
+                "confidence": 1
+            },
+            {
+                "word": "auch",
+                "start": 229.29999389648438,
+                "end": 229.6699951171875,
+                "confidence": 1
+            },
+            {
+                "word": "endlich",
+                "start": 229.5199951171875,
+                "end": 230.0100067138672,
+                "confidence": 1
+            },
+            {
+                "word": "so",
+                "start": 229.8600067138672,
+                "end": 230.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "räudiger",
+                "start": 230.17999877929688,
+                "end": 230.91000061035157,
+                "confidence": 1
+            },
+            {
+                "word": "Pirat",
+                "start": 230.76000061035157,
+                "end": 233.10999755859376,
+                "confidence": 0.8
+            },
+            {
+                "word": "Hurra",
+                "start": 232.95999755859376,
+                "end": 234.88999633789064,
+                "confidence": 0.8
+            },
+            {
+                "word": "sein",
+                "start": 234.73999633789063,
+                "end": 235.60999755859376,
+                "confidence": 0.8
+            },
+            {
+                "word": "Papa",
+                "start": 235.45999755859376,
+                "end": 238.02000122070314,
+                "confidence": 0.8
+            },
+            {
+                "word": "Hoho",
+                "start": 237.87000122070313,
+                "end": 240.57000427246095,
+                "confidence": 0.8
+            },
+            {
+                "word": "ein",
+                "start": 240.42000427246094,
+                "end": 241.30999450683595,
+                "confidence": 1
+            },
+            {
+                "word": "Sohn",
+                "start": 241.15999450683594,
+                "end": 242.42000274658204,
+                "confidence": 0.8
+            },
+            {
+                "word": "das",
+                "start": 242.27000274658204,
+                "end": 244.80999450683595,
+                "confidence": 0.8
+            },
+            {
+                "word": "bist",
+                "start": 244.65999450683594,
+                "end": 244.96999816894532,
+                "confidence": 1
+            },
+            {
+                "word": "so",
+                "start": 244.81999816894532,
+                "end": 245.1699951171875,
+                "confidence": 1
+            },
+            {
+                "word": "aber",
+                "start": 245.0199951171875,
+                "end": 245.4300048828125,
+                "confidence": 1
+            },
+            {
+                "word": "ganzes",
+                "start": 245.2800048828125,
+                "end": 245.88999633789064,
+                "confidence": 1
+            },
+            {
+                "word": "schön",
+                "start": 245.73999633789063,
+                "end": 246.07000427246095,
+                "confidence": 1
+            },
+            {
+                "word": "groß",
+                "start": 245.92000427246094,
+                "end": 246.5100067138672,
+                "confidence": 1
+            },
+            {
+                "word": "geworden",
+                "start": 246.3600067138672,
+                "end": 247.10999755859376,
+                "confidence": 1
+            },
+            {
+                "word": "den",
+                "start": 246.95999755859376,
+                "end": 247.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "Kleiner",
+                "start": 247.17999877929688,
+                "end": 248.3999984741211,
+                "confidence": 0.8
+            },
+            {
+                "word": "Schau",
+                "start": 248.2499984741211,
+                "end": 250,
+                "confidence": 0.8
+            }
+        ],
+        "translationEn": "Well, I can't see anyone from up here, so I'm going now. I also went out on the \"Oh, see\" and I didn't find you, Tom, and there is also someone in your boat, so wait, I finally have a scruffy pirate, hooray, his dad, hoho, a son, that's you, but you've grown quite big, little one, look.",
+        "translationVi": "Vậy thì, từ đây tôi không thể nhìn thấy ai và vì vậy tôi sẽ đi. Tôi cũng đã ra ngoài \"Ôi, hồ\" nhưng tôi không tìm thấy Tom và cũng không có ai ở thuyền của bạn, vì vậy hãy chờ đợi. Cuối cùng, một tên cướp biển tồi tệ đã đến, hurray, cha của nó, Hoho, một cậu con trai, bạn đã lớn lên rất nhiều, nhìn xem, cậu bé."
+    },
+    {
+        "text": "Tag ich habe dir auf was mitgebracht Schmeckt dir das immer noch See gut wie früher Hurra ein Erdbeermarmeladebrot mit Honig vielen Dank Das ist wirklich lecker Willst du auch mal probieren Papa und so hatten Tom",
+        "start": 249.4,
+        "end": 267.7200012207031,
+        "wordTimings": [
+            {
+                "word": "Tag",
+                "start": 249.35,
+                "end": 250.11999969482423,
+                "confidence": 0.8
+            },
+            {
+                "word": "ich",
+                "start": 249.96999969482422,
+                "end": 250.52999572753907,
+                "confidence": 0.8
+            },
+            {
+                "word": "habe",
+                "start": 250.37999572753907,
+                "end": 250.6699951171875,
+                "confidence": 1
+            },
+            {
+                "word": "dir",
+                "start": 250.5199951171875,
+                "end": 250.8299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "auf",
+                "start": 250.67999877929688,
+                "end": 250.99000244140626,
+                "confidence": 1
+            },
+            {
+                "word": "was",
+                "start": 250.84000244140626,
+                "end": 251.18999938964845,
+                "confidence": 1
+            },
+            {
+                "word": "mitgebracht",
+                "start": 251.03999938964844,
+                "end": 252.4800003051758,
+                "confidence": 0.8
+            },
+            {
+                "word": "Schmeckt",
+                "start": 252.3300003051758,
+                "end": 253.0100067138672,
+                "confidence": 0.8
+            },
+            {
+                "word": "dir",
+                "start": 252.8600067138672,
+                "end": 253.2100036621094,
+                "confidence": 1
+            },
+            {
+                "word": "das",
+                "start": 253.06000366210938,
+                "end": 253.37000732421876,
+                "confidence": 1
+            },
+            {
+                "word": "immer",
+                "start": 253.22000732421876,
+                "end": 253.65000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "noch",
+                "start": 253.50000610351563,
+                "end": 253.85000305175782,
+                "confidence": 1
+            },
+            {
+                "word": "See",
+                "start": 253.70000305175782,
+                "end": 254.2499969482422,
+                "confidence": 1
+            },
+            {
+                "word": "gut",
+                "start": 254.0999969482422,
+                "end": 254.2499969482422,
+                "confidence": 1
+            },
+            {
+                "word": "wie",
+                "start": 254.0999969482422,
+                "end": 254.49000244140626,
+                "confidence": 1
+            },
+            {
+                "word": "früher",
+                "start": 254.34000244140626,
+                "end": 255.3999984741211,
+                "confidence": 0.8
+            },
+            {
+                "word": "Hurra",
+                "start": 255.2499984741211,
+                "end": 256.8299987792969,
+                "confidence": 0.8
+            },
+            {
+                "word": "ein",
+                "start": 256.67999877929685,
+                "end": 257.22999267578126,
+                "confidence": 1
+            },
+            {
+                "word": "Erdbeermarmeladebrot",
+                "start": 257.0799926757812,
+                "end": 258.05,
+                "confidence": 1
+            },
+            {
+                "word": "mit",
+                "start": 257.9,
+                "end": 258.5699890136719,
+                "confidence": 1
+            },
+            {
+                "word": "Honig",
+                "start": 258.41998901367185,
+                "end": 258.9499938964844,
+                "confidence": 1
+            },
+            {
+                "word": "vielen",
+                "start": 258.79999389648435,
+                "end": 259.10999755859376,
+                "confidence": 1
+            },
+            {
+                "word": "Dank",
+                "start": 258.9599975585937,
+                "end": 259.7499969482422,
+                "confidence": 0.8
+            },
+            {
+                "word": "Das",
+                "start": 259.59999694824216,
+                "end": 260.15000610351564,
+                "confidence": 0.8
+            },
+            {
+                "word": "ist",
+                "start": 260.0000061035156,
+                "end": 260.4099853515625,
+                "confidence": 1
+            },
+            {
+                "word": "wirklich",
+                "start": 260.2599853515625,
+                "end": 261.289990234375,
+                "confidence": 1
+            },
+            {
+                "word": "lecker",
+                "start": 261.139990234375,
+                "end": 261.68999938964845,
+                "confidence": 0.8
+            },
+            {
+                "word": "Willst",
+                "start": 261.5399993896484,
+                "end": 262.05,
+                "confidence": 0.8
+            },
+            {
+                "word": "du",
+                "start": 261.9,
+                "end": 262.15000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "auch",
+                "start": 262.0000061035156,
+                "end": 262.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "mal",
+                "start": 262.17999877929685,
+                "end": 262.60999755859376,
+                "confidence": 1
+            },
+            {
+                "word": "probieren",
+                "start": 262.4599975585937,
+                "end": 262.93999938964845,
+                "confidence": 0.8
+            },
+            {
+                "word": "Papa",
+                "start": 262.7899993896484,
+                "end": 264.3299987792969,
+                "confidence": 0.8
+            },
+            {
+                "word": "und",
+                "start": 264.17999877929685,
+                "end": 266.0900085449219,
+                "confidence": 0.8
+            },
+            {
+                "word": "so",
+                "start": 265.94000854492185,
+                "end": 266.34998779296876,
+                "confidence": 1
+            },
+            {
+                "word": "hatten",
+                "start": 266.1999877929687,
+                "end": 266.6699951171875,
+                "confidence": 1
+            },
+            {
+                "word": "Tom",
+                "start": 266.5199951171875,
+                "end": 267.7200012207031,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "Hi, I brought you something. Do you still like it as much as before? Hooray, a strawberry jam sandwich with honey! Thank you very much, it’s really delicious. Do you want to try it too, Dad? And that’s how Tom had it.",
+        "translationVi": "Chào, tôi đã mang cho bạn một cái gì đó. Bạn vẫn thích nó như trước đây không? Hura, một miếng bánh mì mứt dâu với mật ong, cảm ơn bạn rất nhiều. Thật sự rất ngon. Bạn có muốn thử không, bố? Và như vậy, Tom đã..."
+    },
+    {
+        "text": "Und sein Papa ein halbes Erdbeermarmeladebrot mit Honig und das schmeckte ihnen so gut als waren es ein ganzes gewesen",
+        "start": 267.1200012207031,
+        "end": 275.3999938964844,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 267.07000122070315,
+                "end": 267.7100036621094,
+                "confidence": 1
+            },
+            {
+                "word": "sein",
+                "start": 267.56000366210935,
+                "end": 268.2100036621094,
+                "confidence": 1
+            },
+            {
+                "word": "Papa",
+                "start": 268.06000366210935,
+                "end": 268.5699890136719,
+                "confidence": 1
+            },
+            {
+                "word": "ein",
+                "start": 268.41998901367185,
+                "end": 269.25001220703126,
+                "confidence": 1
+            },
+            {
+                "word": "halbes",
+                "start": 269.1000122070312,
+                "end": 269.6900146484375,
+                "confidence": 1
+            },
+            {
+                "word": "Erdbeermarmeladebrot",
+                "start": 269.5400146484375,
+                "end": 270.65000610351564,
+                "confidence": 1
+            },
+            {
+                "word": "mit",
+                "start": 270.5000061035156,
+                "end": 270.99000244140626,
+                "confidence": 1
+            },
+            {
+                "word": "Honig",
+                "start": 270.8400024414062,
+                "end": 271.22999267578126,
+                "confidence": 1
+            },
+            {
+                "word": "und",
+                "start": 271.0799926757812,
+                "end": 271.5699890136719,
+                "confidence": 1
+            },
+            {
+                "word": "das",
+                "start": 271.41998901367185,
+                "end": 271.9099853515625,
+                "confidence": 1
+            },
+            {
+                "word": "schmeckte",
+                "start": 271.7599853515625,
+                "end": 272.27000122070314,
+                "confidence": 1
+            },
+            {
+                "word": "ihnen",
+                "start": 272.1200012207031,
+                "end": 272.4700134277344,
+                "confidence": 1
+            },
+            {
+                "word": "so",
+                "start": 272.32001342773435,
+                "end": 272.810009765625,
+                "confidence": 1
+            },
+            {
+                "word": "gut",
+                "start": 272.660009765625,
+                "end": 273.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "als",
+                "start": 273.17999877929685,
+                "end": 273.4499938964844,
+                "confidence": 1
+            },
+            {
+                "word": "waren",
+                "start": 273.29999389648435,
+                "end": 273.5699890136719,
+                "confidence": 1
+            },
+            {
+                "word": "es",
+                "start": 273.41998901367185,
+                "end": 273.6900146484375,
+                "confidence": 1
+            },
+            {
+                "word": "ein",
+                "start": 273.5400146484375,
+                "end": 273.9300048828125,
+                "confidence": 1
+            },
+            {
+                "word": "ganzes",
+                "start": 273.7800048828125,
+                "end": 274.4700134277344,
+                "confidence": 1
+            },
+            {
+                "word": "gewesen",
+                "start": 274.32001342773435,
+                "end": 275.3999938964844,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "And his dad a half strawberry jam sandwich with honey, and it tasted so good to them as if it had been a whole one.",
+        "translationVi": "Và cha của cậu ấy một nửa bánh mì mứt dâu tây với mật ong và nó ngon đến mức họ cảm thấy như đó là một cái bánh nguyên."
+    },
+    {
+        "text": "Und sie verbrachten noch den ganzen Tag zusammen auf hoher See",
+        "start": 274.79999389648435,
+        "end": 280.1000061035156,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 274.7499938964844,
+                "end": 275.5699890136719,
+                "confidence": 1
+            },
+            {
+                "word": "sie",
+                "start": 275.41998901367185,
+                "end": 275.75001220703126,
+                "confidence": 1
+            },
+            {
+                "word": "verbrachten",
+                "start": 275.6000122070312,
+                "end": 276.25001220703126,
+                "confidence": 1
+            },
+            {
+                "word": "noch",
+                "start": 276.1000122070312,
+                "end": 276.5900085449219,
+                "confidence": 1
+            },
+            {
+                "word": "den",
+                "start": 276.44000854492185,
+                "end": 276.8299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "ganzen",
+                "start": 276.67999877929685,
+                "end": 277.4300048828125,
+                "confidence": 1
+            },
+            {
+                "word": "Tag",
+                "start": 277.2800048828125,
+                "end": 277.8299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "zusammen",
+                "start": 277.67999877929685,
+                "end": 278.4300048828125,
+                "confidence": 1
+            },
+            {
+                "word": "auf",
+                "start": 278.2800048828125,
+                "end": 278.7100036621094,
+                "confidence": 1
+            },
+            {
+                "word": "hoher",
+                "start": 278.56000366210935,
+                "end": 279.3299987792969,
+                "confidence": 1
+            },
+            {
+                "word": "See",
+                "start": 279.17999877929685,
+                "end": 280.1000061035156,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "And they spent the whole day together at sea.",
+        "translationVi": "Và họ đã cùng nhau trải qua cả ngày trên biển cả."
+    },
+    {
+        "text": "Und waren wunschlos glücklich.",
+        "start": 279.5000061035156,
+        "end": 282.8800048828125,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 279.45000610351565,
+                "end": 280.25001220703126,
+                "confidence": 1
+            },
+            {
+                "word": "waren",
+                "start": 280.1000122070312,
+                "end": 280.4099853515625,
+                "confidence": 1
+            },
+            {
+                "word": "wunschlos",
+                "start": 280.2599853515625,
+                "end": 281.53001098632814,
+                "confidence": 1
+            },
+            {
+                "word": "glücklich.",
+                "start": 281.3800109863281,
+                "end": 282.8800048828125,
+                "confidence": 1
+            }
+        ],
+        "translationEn": "And were perfectly happy.",
+        "translationVi": "Và họ hạnh phúc không điều kiện."
+    }
+]
