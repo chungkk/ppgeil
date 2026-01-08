@@ -5699,40 +5699,40 @@
 /* Hidden Sentence Display - Darker area showing masked words */
 .hiddenSentenceBox {
   background: linear-gradient(145deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
-  border-radius: 10px;
-  padding: var(--spacing-sm);
-  min-height: 50px;
+  border-radius: 8px;
+  padding: 6px 8px;
+  min-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(100, 116, 139, 0.25);
-  margin-bottom: 12px;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  margin-bottom: 8px;
   box-shadow: 
-    inset 0 1px 4px rgba(0, 0, 0, 0.25),
-    0 1px 4px rgba(0, 0, 0, 0.1);
+    inset 0 1px 3px rgba(0, 0, 0, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.08);
   position: relative;
 }
 
 /* Label for hidden sentence box */
 .hiddenSentenceLabel {
   position: absolute;
-  top: -8px;
-  left: 12px;
-  font-size: 9px;
+  top: -6px;
+  left: 10px;
+  font-size: 8px;
   font-weight: 600;
-  color: rgba(148, 163, 184, 0.8);
+  color: rgba(148, 163, 184, 0.7);
   background: var(--bg-secondary);
-  padding: 1px 6px;
+  padding: 1px 5px;
   border-radius: 3px;
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
 }
 
 .maskedSentence {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  row-gap: 5px;
+  gap: 3px;
+  row-gap: 3px;
   justify-content: center;
   align-items: center;
 }
@@ -5748,16 +5748,16 @@
   color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.2s ease;
-  padding: 4px 7px;
-  border-radius: 6px;
+  padding: 2px 5px;
+  border-radius: 4px;
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 500;
   text-align: center;
   box-sizing: border-box;
-  min-width: 24px;
-  min-height: 22px;
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .maskedWordClickable:hover {
@@ -5776,9 +5776,9 @@
   color: #f59e0b;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 4px 7px;
-  border-radius: 6px;
-  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 11px;
   font-weight: 500;
   background: rgba(245, 158, 11, 0.12);
   border: 1px solid rgba(245, 158, 11, 0.4);
@@ -5797,16 +5797,16 @@
   color: #ef4444;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 4px 7px;
-  border-radius: 6px;
-  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 11px;
   font-weight: 500;
   background: rgba(239, 68, 68, 0.15);
   border: 1px solid rgba(239, 68, 68, 0.5);
   text-align: center;
   box-sizing: border-box;
-  min-width: 24px;
-  min-height: 22px;
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .wrongWord:hover {
@@ -5816,8 +5816,8 @@
 .revealedSentence {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  row-gap: 5px;
+  gap: 3px;
+  row-gap: 3px;
   justify-content: center;
   align-items: center;
 }
@@ -5826,9 +5826,9 @@
   display: inline-block;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 4px 7px;
-  border-radius: 6px;
-  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 11px;
   font-weight: 500;
   background: var(--bg-primary);
   border: 1px solid var(--accent-green);
@@ -5845,8 +5845,8 @@
 .partialRevealSentence {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  row-gap: 5px;
+  gap: 3px;
+  row-gap: 3px;
   justify-content: center;
   align-items: center;
 }
@@ -5857,9 +5857,9 @@
   color: #10b981;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 4px 7px;
-  border-radius: 6px;
-  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 11px;
   font-weight: 500;
   background: rgba(16, 185, 129, 0.1);
   border: 1px solid rgba(16, 185, 129, 0.4);
@@ -5874,9 +5874,9 @@
 /* Partial Word - Shows partial character matches */
 .partialWord {
   display: inline-block;
-  padding: 4px 7px;
-  border-radius: 6px;
-  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 11px;
   font-weight: 500;
   background: var(--bg-primary);
   border: 1px solid var(--accent-blue);
@@ -6437,11 +6437,11 @@
 
   .hiddenSentenceBox {
     flex-shrink: 0;
-    padding: var(--spacing-sm);
-    min-height: 45px;
+    padding: 5px 6px;
+    min-height: 32px;
     background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
-    margin: 8px;
-    margin-bottom: 6px;
+    margin: 6px;
+    margin-bottom: 4px;
   }
 
   .wordInputsSection {
