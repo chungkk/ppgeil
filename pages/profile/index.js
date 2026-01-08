@@ -180,6 +180,7 @@ function DashboardIndex() {
                 inProgressLessons: lessonStats.inProgress,
               }}
               userPoints={userPoints}
+              achievements={achievements}
             />
 
             {/* Main Content */}
@@ -208,38 +209,35 @@ function DashboardIndex() {
               {/* Stats Grid */}
               <div className={styles.statsGrid}>
                 <div className={`${styles.statCard} ${styles.points}`}>
-                  <div className={styles.statCardHeader}>
-                    <div className={styles.statCardIcon}>💎</div>
-                    <div className={`${styles.statCardTrend} ${styles.up}`}>
-                      <span>↑</span> +25
-                    </div>
+                  <div className={styles.statCardIcon}>💎</div>
+                  <div className={styles.statCardContent}>
+                    <span className={styles.statCardValue}>{userPoints?.toLocaleString() || 0}</span>
+                    <span className={styles.statCardLabel}>Điểm</span>
                   </div>
-                  <h3 className={styles.statCardValue}>{userPoints?.toLocaleString() || 0}</h3>
-                  <p className={styles.statCardLabel}>Điểm thưởng</p>
                 </div>
 
                 <div className={`${styles.statCard} ${styles.lessons}`}>
-                  <div className={styles.statCardHeader}>
-                    <div className={styles.statCardIcon}>📚</div>
+                  <div className={styles.statCardIcon}>📚</div>
+                  <div className={styles.statCardContent}>
+                    <span className={styles.statCardValue}>{lessonStats.withProgress}</span>
+                    <span className={styles.statCardLabel}>Đã học</span>
                   </div>
-                  <h3 className={styles.statCardValue}>{lessonStats.withProgress}</h3>
-                  <p className={styles.statCardLabel}>Bài đã học</p>
                 </div>
 
                 <div className={`${styles.statCard} ${styles.completed}`}>
-                  <div className={styles.statCardHeader}>
-                    <div className={styles.statCardIcon}>✅</div>
+                  <div className={styles.statCardIcon}>✅</div>
+                  <div className={styles.statCardContent}>
+                    <span className={styles.statCardValue}>{lessonStats.completed}</span>
+                    <span className={styles.statCardLabel}>Xong</span>
                   </div>
-                  <h3 className={styles.statCardValue}>{lessonStats.completed}</h3>
-                  <p className={styles.statCardLabel}>Hoàn thành</p>
                 </div>
 
                 <div className={`${styles.statCard} ${styles.streak}`}>
-                  <div className={styles.statCardHeader}>
-                    <div className={styles.statCardIcon}>🔥</div>
+                  <div className={styles.statCardIcon}>🔥</div>
+                  <div className={styles.statCardContent}>
+                    <span className={styles.statCardValue}>{lessonStats.inProgress}</span>
+                    <span className={styles.statCardLabel}>Đang học</span>
                   </div>
-                  <h3 className={styles.statCardValue}>{lessonStats.inProgress}</h3>
-                  <p className={styles.statCardLabel}>Đang học</p>
                 </div>
               </div>
 
@@ -367,27 +365,6 @@ function DashboardIndex() {
                     </div>
                     <span className={styles.quickActionArrow}>→</span>
                   </Link>
-                </div>
-              </div>
-
-              {/* Achievements */}
-              <div className={styles.sectionCard}>
-                <div className={styles.sectionHeader}>
-                  <h2 className={styles.sectionTitle}>
-                    <span>🏅</span>
-                    Thành tích
-                  </h2>
-                </div>
-                <div className={styles.achievementsGrid}>
-                  {achievements.map((achievement, index) => (
-                    <div
-                      key={index}
-                      className={`${styles.achievementItem} ${!achievement.unlocked ? styles.locked : ''}`}
-                    >
-                      <span className={styles.achievementIcon}>{achievement.icon}</span>
-                      <span className={styles.achievementName}>{achievement.name}</span>
-                    </div>
-                  ))}
                 </div>
               </div>
 

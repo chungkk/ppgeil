@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import AvatarCropper from './AvatarCropper';
 import styles from '../styles/UserProfileSidebar.module.css';
 
-export default function UserProfileSidebar({ stats, userPoints = 0 }) {
+export default function UserProfileSidebar({ stats, userPoints = 0, achievements = [] }) {
   const { user, refreshUser } = useAuth();
   const [uploading, setUploading] = useState(false);
   const [cropperImage, setCropperImage] = useState(null);
@@ -80,8 +80,8 @@ export default function UserProfileSidebar({ stats, userPoints = 0 }) {
       )}
       
       <aside className={styles.profileSidebar}>
-        {/* User Identity */}
-        <div className={styles.userIdentity}>
+        <div className={styles.profileCard}>
+          {/* Avatar */}
           <div 
             className={`${styles.userAvatar} ${styles.clickable}`}
             onClick={handleAvatarClick}
@@ -107,36 +107,36 @@ export default function UserProfileSidebar({ stats, userPoints = 0 }) {
             onChange={handleFileChange}
             style={{ display: 'none' }}
           />
-          <h2 className={styles.userName}>
-            {user?.name || 'User'}
-          </h2>
-        </div>
 
-      {/* Points */}
-      <div className={styles.pointsSection}>
-        <span className={styles.pointsIcon}>💎</span>
-        <span className={styles.pointsValue}>{userPoints}</span>
-      </div>
+          {/* Name */}
+          <h2 className={styles.userName}>{user?.name || 'User'}</h2>
 
-      {/* Simple Stats */}
-      <div className={styles.statsGridSection}>
-        <div className={styles.statsGrid}>
-          <div className={`${styles.statItem} ${styles.lessons}`}>
-            <span className={styles.statItemIcon}>🎓</span>
-            <div className={styles.statItemContent}>
-              <span className={styles.statItemLabel}>Đã học</span>
-              <span className={styles.statItemValue}>{stats?.totalLessons || 0}</span>
-            </div>
+          {/* Points */}
+          <div className={styles.pointsBadge}>
+            <span className={styles.pointsIcon}>💎</span>
+            <span className={styles.pointsValue}>{userPoints?.toLocaleString()}</span>
           </div>
-          <div className={`${styles.statItem} ${styles.lessons}`}>
-            <span className={styles.statItemIcon}>✅</span>
-            <div className={styles.statItemContent}>
-              <span className={styles.statItemLabel}>Hoàn thành</span>
-              <span className={styles.statItemValue}>{stats?.completedLessons || 0}</span>
+
+          {/* Achievements */}
+          {achievements.length > 0 && (
+            <div className={styles.achievementsSection}>
+              <h3 className={styles.achievementsTitle}>
+                <span>🏅</span> Thành tích
+              </h3>
+              <div className={styles.achievementsGrid}>
+                {achievements.map((achievement, index) => (
+                  <div
+                    key={index}
+                    className={`${styles.achievementItem} ${!achievement.unlocked ? styles.locked : ''}`}
+                  >
+                    <span className={styles.achievementIcon}>{achievement.icon}</span>
+                    <span className={styles.achievementName}>{achievement.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
-      </div>
       </aside>
     </>
   );
