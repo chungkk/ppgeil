@@ -39,6 +39,9 @@ const DictationPage = () => {
   const [revealedHintWords, setRevealedHintWords] = useState({});
   const [comparedWords, setComparedWords] = useState({}); // { sentenceIndex: { wordIndex: { isCorrect, userWord, correctWord } } }
   const [revealedWordsByClick, setRevealedWordsByClick] = useState({}); // { sentenceIndex: { wordIndex: true } } - words revealed by double-click
+  const [focusedWordIndex, setFocusedWordIndex] = useState(null); // Track which word input is focused
+  const lastFocusedWordIndexRef = useRef(null); // Keep track of last focused word for hint button
+  const [hintClickCount, setHintClickCount] = useState(0); // Count hint clicks, deduct 1 point every 3 clicks
   const [sentencePointsAwarded, setSentencePointsAwarded] = useState({}); // { sentenceIndex: true } - track which sentences got points
   const [sentenceRevealPenalty, setSentenceRevealPenalty] = useState({}); // { sentenceIndex: true } - track which sentences got penalty for revealing too many words
   const [pointsAnimations, setPointsAnimations] = useState([]);
@@ -907,6 +910,61 @@ const DictationPage = () => {
     }
   }, [revealedWordsByClick, sentenceRevealPenalty, updatePoints, saveProgress, transcriptData, userInputs, wordInputs, compareWords]);
 
+  // Reveal hint for focused word
+  const revealFocusedWordHint = useCallback(() => {
+    const wordIdx = focusedWordIndex !== null ? focusedWordIndex : lastFocusedWordIndexRef.current;
+    if (wordIdx === null) return;
+    
+    const words = transcriptData[currentSentenceIndex]?.text.split(' ');
+    if (!words || !words[wordIdx]) return;
+    
+    const word = words[wordIdx];
+    const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
+    
+    // Update wordInputs with the correct word
+    const newWordInputs = {
+      ...wordInputs,
+      [currentSentenceIndex]: {
+        ...(wordInputs[currentSentenceIndex] || {}),
+        [wordIdx]: pureWord
+      }
+    };
+    setWordInputs(newWordInputs);
+    
+    // Mark as revealed
+    const updated = {
+      ...revealedWordsByClick,
+      [currentSentenceIndex]: {
+        ...(revealedWordsByClick[currentSentenceIndex] || {}),
+        [wordIdx]: true
+      }
+    };
+    setRevealedWordsByClick(updated);
+    
+    // Update comparison
+    const newComparedWords = {
+      ...comparedWords,
+      [currentSentenceIndex]: {
+        ...(comparedWords[currentSentenceIndex] || {}),
+        [wordIdx]: { isCorrect: true, userWord: pureWord, correctWord: pureWord, matchedChars: pureWord.length }
+      }
+    };
+    setComparedWords(newComparedWords);
+    
+    // Count hint clicks and deduct 1 point every 3 clicks
+    const newHintCount = hintClickCount + 1;
+    setHintClickCount(newHintCount);
+    if (newHintCount % 3 === 0) {
+      updatePoints(-1);
+    }
+    
+    // Save progress
+    saveProgress({
+      revealedWordsByClick: updated,
+      wordInputs: newWordInputs
+    });
+  }, [focusedWordIndex, currentSentenceIndex, transcriptData, wordInputs, revealedWordsByClick, comparedWords, saveProgress, hintClickCount, updatePoints]);
+
   // Calculate progress
   const progress = useMemo(() => {
     if (!transcriptData.length) return 0;
@@ -1431,7 +1489,7 @@ const DictationPage = () => {
                   </div>
                 </div>
 
-                {/* Hidden sentence display */}
+                {/* Hidden sentence display - HIDDEN
                 <div className={styles.hiddenSentenceBox}>
                   <span className={styles.hiddenSentenceLabel}>{t('dictationPage.hiddenSentence')}</span>
                   {transcriptData[currentSentenceIndex] && (
@@ -1557,6 +1615,7 @@ const DictationPage = () => {
                     )
                   )}
                 </div>
+                */}
 
                 {/* Word Input Boxes - matching hidden sentence layout */}
                 <div className={styles.wordInputsSection}>
@@ -1588,28 +1647,59 @@ const DictationPage = () => {
                           inputClass = `${styles.wordInput} ${styles.wordInputPartial}`;
                         }
                         
+                        // Render colored characters based on correctness
+                        const renderColoredInput = () => {
+                          if (!currentValue) return null;
+                          const chars = currentValue.split('');
+                          const correctChars = pureWord.split('');
+                          return (
+                            <div className={styles.coloredCharsOverlay}>
+                              {chars.map((char, idx) => {
+                                const correctChar = correctChars[idx];
+                                const isCharCorrect = correctChar && char.toLowerCase() === correctChar.toLowerCase();
+                                return (
+                                  <span
+                                    key={idx}
+                                    className={isCharCorrect ? styles.charCorrect : styles.charWrong}
+                                  >
+                                    {char}
+                                  </span>
+                                );
+                              })}
+                            </div>
+                          );
+                        };
+
                         return (
                           <div key={i} className={styles.wordInputWrapper}>
-                            <input
-                              type="text"
-                              data-word-input={`${currentSentenceIndex}-${i}`}
-                              className={inputClass}
-                              value={currentValue}
-                              onChange={(e) => handleWordInputChange(currentSentenceIndex, i, e.target.value)}
-                              placeholder={'_'.repeat(Math.min(pureWord.length, 8))}
-                              maxLength={pureWord.length}
-                              style={{ width: `${pureWord.length * 10 + 24}px` }}
-                              disabled={isCorrect || completedSentences.includes(currentSentenceIndex)}
-                              onKeyDown={(e) => {
-                                if (e.key === 'Tab') {
-                                  e.preventDefault();
-                                  focusNextWordInput(currentSentenceIndex, i);
-                                } else if (e.key === 'Enter') {
-                                  e.preventDefault();
-                                  checkAnswer(currentSentenceIndex);
-                                }
-                              }}
-                            />
+                            <div className={styles.wordInputContainer}>
+                              {renderColoredInput()}
+                              <input
+                                type="text"
+                                data-word-input={`${currentSentenceIndex}-${i}`}
+                                className={`${inputClass} ${currentValue ? styles.wordInputTransparent : ''}`}
+                                value={currentValue}
+                                onChange={(e) => handleWordInputChange(currentSentenceIndex, i, e.target.value)}
+                                placeholder={'_'.repeat(Math.min(pureWord.length, 8))}
+                                maxLength={pureWord.length}
+                                style={{ width: `${pureWord.length * 10 + 24}px` }}
+                                disabled={isCorrect || completedSentences.includes(currentSentenceIndex)}
+                                onFocus={() => {
+                                  setFocusedWordIndex(i);
+                                  lastFocusedWordIndexRef.current = i;
+                                }}
+                                onBlur={() => setFocusedWordIndex(null)}
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Tab') {
+                                    e.preventDefault();
+                                    focusNextWordInput(currentSentenceIndex, i);
+                                  } else if (e.key === 'Enter') {
+                                    e.preventDefault();
+                                    checkAnswer(currentSentenceIndex);
+                                  }
+                                }}
+                              />
+                            </div>
                             {punctuation && <span className={styles.wordPunctuation}>{punctuation}</span>}
                           </div>
                         );
@@ -1632,6 +1722,14 @@ const DictationPage = () => {
                     disabled={currentSentenceIndex <= 0}
                   >
                     {t('dictationPage.previousSentence')}
+                  </button>
+                  <button
+                    className={styles.hintButton}
+                    onClick={revealFocusedWordHint}
+                    disabled={lastFocusedWordIndexRef.current === null || revealedWordsByClick[currentSentenceIndex]?.[lastFocusedWordIndexRef.current]}
+                    title={t('dictationPage.clickToShowHint')}
+                  >
+                    💡
                   </button>
                   <button
                     className={styles.nextButton}
