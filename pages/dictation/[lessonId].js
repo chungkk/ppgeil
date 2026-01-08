@@ -1138,16 +1138,34 @@ const DictationPage = () => {
           }
           setIsPlaying(false);
         } else {
-          // Resume from current position
+          // Resume from current position (or from start if at end of sentence)
+          const sentence = transcriptData[currentSentenceIndex];
+          let needSeek = false;
           if (isYouTube) {
-            youtubePlayerRef.current?.playVideo?.();
+            const player = youtubePlayerRef.current;
+            // If at end of sentence, seek back to start
+            if (sentence && player?.getCurrentTime?.() >= sentence.end - 0.1) {
+              setIsUserSeeking(true);
+              player.seekTo(sentence.start);
+              needSeek = true;
+            }
+            player?.playVideo?.();
           } else {
-            audioRef.current?.play();
+            const audio = audioRef.current;
+            // If at end of sentence, seek back to start
+            if (sentence && audio && audio.currentTime >= sentence.end - 0.1) {
+              setIsUserSeeking(true);
+              audio.currentTime = sentence.start;
+              needSeek = true;
+            }
+            audio?.play();
           }
           setIsPlaying(true);
-          // Set segment end time so it stops at end of current sentence
-          const sentence = transcriptData[currentSentenceIndex];
           if (sentence) setSegmentPlayEndTime(sentence.end);
+          // Clear seeking flag after a delay
+          if (needSeek) {
+            setTimeout(() => setIsUserSeeking(false), 500);
+          }
         }
         return;
       }
@@ -1164,16 +1182,34 @@ const DictationPage = () => {
         }
         setIsPlaying(false);
       } else {
-        // Resume from current position
+        // Resume from current position (or from start if at end of sentence)
+        const sentence = transcriptData[currentSentenceIndex];
+        let needSeek = false;
         if (isYouTube) {
-          youtubePlayerRef.current?.playVideo?.();
+          const player = youtubePlayerRef.current;
+          // If at end of sentence, seek back to start
+          if (sentence && player?.getCurrentTime?.() >= sentence.end - 0.1) {
+            setIsUserSeeking(true);
+            player.seekTo(sentence.start);
+            needSeek = true;
+          }
+          player?.playVideo?.();
         } else {
-          audioRef.current?.play();
+          const audio = audioRef.current;
+          // If at end of sentence, seek back to start
+          if (sentence && audio && audio.currentTime >= sentence.end - 0.1) {
+            setIsUserSeeking(true);
+            audio.currentTime = sentence.start;
+            needSeek = true;
+          }
+          audio?.play();
         }
         setIsPlaying(true);
-        // Set segment end time so it stops at end of current sentence
-        const sentence = transcriptData[currentSentenceIndex];
         if (sentence) setSegmentPlayEndTime(sentence.end);
+        // Clear seeking flag after a delay
+        if (needSeek) {
+          setTimeout(() => setIsUserSeeking(false), 500);
+        }
       }
     };
 
