@@ -1152,7 +1152,7 @@ const DictationPage = () => {
     return (
       <div className={styles.page}>
         <div className={styles.centeredState}>
-          <p>Không tìm thấy bài học</p>
+          <p>{t('dictationPage.lessonNotFound')}</p>
         </div>
       </div>
     );
@@ -1161,8 +1161,8 @@ const DictationPage = () => {
   return (
     <>
       <SEO
-        title={`Dictation: ${lesson.title}`}
-        description={`Luyện nghe chép chính tả với bài: ${lesson.title}`}
+        title={t('dictationPage.seoTitle', { title: lesson.title })}
+        description={t('dictationPage.seoDescription', { title: lesson.title })}
       />
 
       <div className={styles.page}>
@@ -1280,7 +1280,7 @@ const DictationPage = () => {
                           audioRef.current.playbackRate = newSpeed;
                         }
                       }}
-                      title="Tốc độ phát"
+                      title={t('dictationPage.playbackSpeed')}
                     >
                       <span style={{ fontSize: '11px', fontWeight: 'bold' }}>{playbackSpeed || 1}x</span>
                     </button>
@@ -1290,7 +1290,7 @@ const DictationPage = () => {
 
               <div className={styles.dictationArea}>
                 <div className={styles.dictationHeader}>
-                  <h3 className={styles.columnTitle}>Nghe và chép lại</h3>
+                  <h3 className={styles.columnTitle}>{t('dictationPage.listenAndWrite')}</h3>
                   <div className={styles.headerRight}>
                     {isMobile && (
                       <button
@@ -1307,19 +1307,20 @@ const DictationPage = () => {
                             audioRef.current.playbackRate = newSpeed;
                           }
                         }}
-                        title="Tốc độ phát"
+                        title={t('dictationPage.playbackSpeed')}
                       >
                         {playbackSpeed || 1}x
                       </button>
                     )}
                     <span className={styles.sentenceCounter}>
-                      Câu {currentSentenceIndex + 1} / {transcriptData.length}
+                      {t('dictationPage.sentence')} {currentSentenceIndex + 1} / {transcriptData.length}
                     </span>
                   </div>
                 </div>
 
                 {/* Hidden sentence display */}
                 <div className={styles.hiddenSentenceBox}>
+                  <span className={styles.hiddenSentenceLabel}>{t('dictationPage.hiddenSentence')}</span>
                   {transcriptData[currentSentenceIndex] && (
                     results[currentSentenceIndex]?.showAnswer ? (
                       // Full answer revealed
@@ -1374,7 +1375,7 @@ const DictationPage = () => {
                                 className={styles.wrongWord}
                                 style={{ width: wordWidth }}
                                 onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
-                                title="Click để xem từ"
+                                title={t('dictationPage.clickToReveal')}
                               >
                                 {'_'.repeat(pureWord.length)}
                               </span>
@@ -1411,7 +1412,7 @@ const DictationPage = () => {
                                 className={styles.maskedWordClickable}
                                 style={{ width: wordWidth }}
                                 onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
-                                title="Click để xem từ"
+                                title={t('dictationPage.clickToReveal')}
                               >
                                 {'_'.repeat(pureWord.length)}
                               </span>
@@ -1446,7 +1447,7 @@ const DictationPage = () => {
                               className={styles.maskedWordClickable}
                               style={{ width: wordWidth }}
                               onClick={(e) => handleMaskedWordDoubleClick(currentSentenceIndex, i, word, e)}
-                              title="Click để xem từ"
+                              title={t('dictationPage.clickToReveal')}
                             >
                               {'_'.repeat(pureWord.length)}
                             </span>
@@ -1459,6 +1460,7 @@ const DictationPage = () => {
 
                 {/* Word Input Boxes - matching hidden sentence layout */}
                 <div className={styles.wordInputsSection}>
+                  <span className={styles.wordInputsLabel}>{t('dictationPage.enterAnswer')}</span>
                   <div className={styles.wordInputsContainer}>
                     {transcriptData[currentSentenceIndex] && 
                       transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
@@ -1529,7 +1531,7 @@ const DictationPage = () => {
                     }}
                     disabled={currentSentenceIndex <= 0}
                   >
-                    ← Câu trước
+                    {t('dictationPage.previousSentence')}
                   </button>
                   <button
                     className={styles.nextButton}
@@ -1540,7 +1542,7 @@ const DictationPage = () => {
                     }}
                     disabled={currentSentenceIndex >= transcriptData.length - 1}
                   >
-                    Câu sau →
+                    {t('dictationPage.nextSentence')}
                   </button>
                 </div>
 

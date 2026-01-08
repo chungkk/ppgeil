@@ -218,7 +218,7 @@ const DictationHeader = ({
                 className={styles.toggleInput}
               />
               <span className={styles.toggleSlider}></span>
-              <span className={styles.toggleText}>Dịch</span>
+              <span className={styles.toggleText}>{t('dictationPage.translate')}</span>
             </label>
           )}
         </div>

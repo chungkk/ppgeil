@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import layoutStyles from '../../styles/dictationPage.module.css';
 import fullSentenceStyles from '../../styles/dictation/dictationFullSentence.module.css';
 
@@ -29,6 +30,7 @@ const DictationDesktopArea = ({
   isPlaying = false,
   activeWordIndex = -1
 }) => {
+  const { t } = useTranslation();
   const currentSentence = transcriptData[currentSentenceIndex];
   const isCompleted = completedSentences.includes(currentSentenceIndex);
 
@@ -81,7 +83,7 @@ const DictationDesktopArea = ({
                 onHintWordClick(currentSentenceIndex, idx, pureWord, e);
               }
             }}
-            title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để xem dịch' : 'Click để chọn từ')}
+            title={comparisonResult ? (comparisonResult === 'correct' ? t('dictationPage.correct') : t('dictationPage.wrong')) : (isRevealed ? t('dictationPage.clickToTranslate') : t('dictationPage.clickToChooseWord'))}
           >
             {displayText}
           </span>
@@ -149,7 +151,7 @@ const DictationDesktopArea = ({
           <div className={styles.textareaWithVoice}>
             <textarea
               className={styles.fullSentenceInput}
-              placeholder="Nhập toàn bộ câu..."
+              placeholder={t('dictationPage.enterFullSentence')}
               value={fullSentenceInputs[currentSentenceIndex] || ''}
               onChange={(e) => {
                 onInputChange(currentSentenceIndex, e.target.value);
@@ -172,7 +174,7 @@ const DictationDesktopArea = ({
               onClick={() => onSubmit(currentSentenceIndex)}
               disabled={isCompleted}
             >
-              Kiểm tra
+              {t('dictationPage.check')}
             </button>
           </div>
         </>

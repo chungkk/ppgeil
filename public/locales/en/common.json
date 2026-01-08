@@ -868,6 +868,28 @@
       "loading": "Loading..."
     }
   },
+  "dictationPage": {
+    "listenAndWrite": "Listen and write",
+    "sentence": "Sentence",
+    "previousSentence": "← Previous",
+    "nextSentence": "Next →",
+    "playbackSpeed": "Playback speed",
+    "lessonNotFound": "Lesson not found",
+    "seoTitle": "Dictation: {{title}}",
+    "seoDescription": "Practice dictation with: {{title}}",
+    "clickToReveal": "Click to reveal word",
+    "enterFullSentence": "Enter the full sentence...",
+    "check": "Check",
+    "correct": "Correct",
+    "wrong": "Wrong",
+    "clickToTranslate": "Click to translate",
+    "clickToChooseWord": "Click to choose word",
+    "clickToHide": "Click to hide",
+    "clickToShowHint": "Click to show hint",
+    "enterAnswer": "Enter your answer",
+    "hiddenSentence": "Hidden sentence",
+    "translate": "Translate"
+  },
   "practice": {
     "title": "Practice",
     "backTo": "Back",

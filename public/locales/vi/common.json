@@ -910,6 +910,28 @@
       "loading": "Đang tải..."
     }
   },
+  "dictationPage": {
+    "listenAndWrite": "Nghe và chép lại",
+    "sentence": "Câu",
+    "previousSentence": "← Câu trước",
+    "nextSentence": "Câu sau →",
+    "playbackSpeed": "Tốc độ phát",
+    "lessonNotFound": "Không tìm thấy bài học",
+    "seoTitle": "Nghe chép: {{title}}",
+    "seoDescription": "Luyện nghe chép chính tả với bài: {{title}}",
+    "clickToReveal": "Click để xem từ",
+    "enterFullSentence": "Nhập toàn bộ câu...",
+    "check": "Kiểm tra",
+    "correct": "Đúng",
+    "wrong": "Sai",
+    "clickToTranslate": "Click để xem dịch",
+    "clickToChooseWord": "Click để chọn từ",
+    "clickToHide": "Click để ẩn",
+    "clickToShowHint": "Click để hiện gợi ý",
+    "enterAnswer": "Nhập câu trả lời",
+    "hiddenSentence": "Câu ẩn",
+    "translate": "Dịch"
+  },
   "practice": {
     "title": "Luyện tập",
     "backTo": "Quay lại",

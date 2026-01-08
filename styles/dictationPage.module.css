@@ -5714,8 +5714,7 @@
 }
 
 /* Label for hidden sentence box */
-.hiddenSentenceBox::before {
-  content: "Câu ẩn";
+.hiddenSentenceLabel {
   position: absolute;
   top: -10px;
   left: 16px;
@@ -5914,8 +5913,7 @@
 }
 
 /* Label for input section */
-.wordInputsSection::before {
-  content: "Nhập câu trả lời";
+.wordInputsLabel {
   position: absolute;
   top: -10px;
   left: 16px;
@@ -6478,7 +6476,7 @@
     margin-bottom: 6px;
   }
 
-  .hiddenSentenceBox::before {
+  .hiddenSentenceLabel {
     font-size: 9px;
     top: -8px;
     left: 12px;
@@ -6489,7 +6487,7 @@
     margin: 0 8px 8px 8px;
   }
 
-  .wordInputsSection::before {
+  .wordInputsLabel {
     font-size: 9px;
     top: -8px;
     left: 12px;

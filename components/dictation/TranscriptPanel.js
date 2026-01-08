@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useCallback, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useKaraokeHighlight } from '../../lib/hooks/useKaraokeHighlight';
 import { speakText } from '../../lib/textToSpeech';
 
@@ -48,6 +49,7 @@ const TranscriptPanel = ({
   // Words revealed by double-click in dictation column
   revealedWordsByClick = {}
 }) => {
+  const { t } = useTranslation();
   // Tab state: 'transcript' or 'vocabulary'
   const [activeTab, setActiveTab] = useState('transcript');
 
@@ -376,7 +378,7 @@ const TranscriptPanel = ({
                 className={styles.toggleInput}
               />
               <span className={styles.toggleSlider}></span>
-              <span className={styles.toggleText}>Dịch</span>
+              <span className={styles.toggleText}>{t('dictationPage.translate')}</span>
             </label>
           )}
         </div>

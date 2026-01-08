@@ -738,6 +738,28 @@
     "retryTest": "Neuer Test",
     "answered": "Beantwortet"
   },
+  "dictationPage": {
+    "listenAndWrite": "Hören und schreiben",
+    "sentence": "Satz",
+    "previousSentence": "← Vorheriger",
+    "nextSentence": "Nächster →",
+    "playbackSpeed": "Wiedergabegeschwindigkeit",
+    "lessonNotFound": "Lektion nicht gefunden",
+    "seoTitle": "Diktat: {{title}}",
+    "seoDescription": "Diktat üben mit: {{title}}",
+    "clickToReveal": "Klicken zum Anzeigen",
+    "enterFullSentence": "Den ganzen Satz eingeben...",
+    "check": "Prüfen",
+    "correct": "Richtig",
+    "wrong": "Falsch",
+    "clickToTranslate": "Klicken zum Übersetzen",
+    "clickToChooseWord": "Klicken zum Wortauswahl",
+    "clickToHide": "Klicken zum Ausblenden",
+    "clickToShowHint": "Klicken für Hinweis",
+    "enterAnswer": "Antwort eingeben",
+    "hiddenSentence": "Versteckter Satz",
+    "translate": "Übersetzen"
+  },
   "vocabPage": {
     "title": "Deutscher Wortschatz",
     "subtitle": "Vokabeln nach Goethe-Institut-Standards lernen",

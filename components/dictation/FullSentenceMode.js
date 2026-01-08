@@ -66,7 +66,7 @@ const FullSentenceMode = ({
           <span
             className={`${styles.hintWordBox} ${wordClass}`}
             onClick={() => !comparisonResult && onToggleRevealWord(sentenceIndex, idx)}
-            title={comparisonResult ? (comparisonResult === 'correct' ? 'Đúng' : 'Sai') : (isRevealed ? 'Click để ẩn' : 'Click để hiện gợi ý')}
+            title={comparisonResult ? (comparisonResult === 'correct' ? t('dictationPage.correct') : t('dictationPage.wrong')) : (isRevealed ? t('dictationPage.clickToHide') : t('dictationPage.clickToShowHint'))}
           >
             {displayText}
           </span>
@@ -101,7 +101,7 @@ const FullSentenceMode = ({
         <div className={styles.textareaWithVoice} style={{ position: 'relative' }}>
           <textarea
             className={styles.fullSentenceInput}
-            placeholder="Nhập toàn bộ câu..."
+            placeholder={t('dictationPage.enterFullSentence')}
             value={fullSentenceInputs[sentenceIndex] || ''}
             onChange={(e) => {
               onInputChange(sentenceIndex, e.target.value);
@@ -131,7 +131,7 @@ const FullSentenceMode = ({
               onSubmit(sentenceIndex);
             }}
           >
-            Kiểm tra
+            {t('dictationPage.check')}
           </button>
 
           <button
