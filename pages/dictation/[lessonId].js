@@ -1092,9 +1092,31 @@ const DictationPage = () => {
     clearRecording();
   }, [currentSentenceIndex]);
 
-  // Global keyboard shortcut: Space to play/pause (when not typing in input)
+  // Global keyboard shortcut: Space to play/pause, Arrow keys to seek
   useEffect(() => {
     const handleKeyDown = (e) => {
+      // Handle Arrow keys for seeking (2 seconds)
+      if (e.code === 'ArrowLeft' || e.code === 'ArrowRight') {
+        const seekAmount = e.code === 'ArrowLeft' ? -2 : 2;
+        
+        if (isYouTube) {
+          const player = youtubePlayerRef.current;
+          if (player?.getCurrentTime && player?.seekTo) {
+            const newTime = Math.max(0, player.getCurrentTime() + seekAmount);
+            player.seekTo(newTime, true);
+            setCurrentTime(newTime);
+          }
+        } else {
+          const audio = audioRef.current;
+          if (audio) {
+            const newTime = Math.max(0, Math.min(audio.duration, audio.currentTime + seekAmount));
+            audio.currentTime = newTime;
+            setCurrentTime(newTime);
+          }
+        }
+        return;
+      }
+
       // Only handle Space key
       if (e.code !== 'Space') return;
 
@@ -1104,7 +1126,7 @@ const DictationPage = () => {
         activeElement?.tagName === 'TEXTAREA' ||
         activeElement?.isContentEditable;
 
-      // If typing, toggle play/pause
+      // If typing, toggle play/pause (resume from current position, not from start)
       if (isTyping) {
         e.preventDefault();
         if (isPlaying) {
@@ -1116,8 +1138,16 @@ const DictationPage = () => {
           }
           setIsPlaying(false);
         } else {
-          // Play current sentence from start
-          playSentence(currentSentenceIndex);
+          // Resume from current position
+          if (isYouTube) {
+            youtubePlayerRef.current?.playVideo?.();
+          } else {
+            audioRef.current?.play();
+          }
+          setIsPlaying(true);
+          // Set segment end time so it stops at end of current sentence
+          const sentence = transcriptData[currentSentenceIndex];
+          if (sentence) setSegmentPlayEndTime(sentence.end);
         }
         return;
       }
@@ -1125,7 +1155,7 @@ const DictationPage = () => {
       // Prevent default scroll behavior
       e.preventDefault();
 
-      // Toggle play/pause
+      // Toggle play/pause (resume from current position)
       if (isPlaying) {
         if (isYouTube) {
           youtubePlayerRef.current?.pauseVideo?.();
@@ -1134,13 +1164,22 @@ const DictationPage = () => {
         }
         setIsPlaying(false);
       } else {
-        playSentence(currentSentenceIndex);
+        // Resume from current position
+        if (isYouTube) {
+          youtubePlayerRef.current?.playVideo?.();
+        } else {
+          audioRef.current?.play();
+        }
+        setIsPlaying(true);
+        // Set segment end time so it stops at end of current sentence
+        const sentence = transcriptData[currentSentenceIndex];
+        if (sentence) setSegmentPlayEndTime(sentence.end);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isPlaying, isYouTube, currentSentenceIndex, playSentence]);
+  }, [isPlaying, isYouTube, currentSentenceIndex, transcriptData]);
 
 
 
