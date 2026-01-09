@@ -1632,7 +1632,60 @@ const DictationPage = () => {
                 {/* Word Input Boxes - matching hidden sentence layout */}
                 <div className={styles.wordInputsSection}>
                   <span className={styles.wordInputsLabel}>{t('dictationPage.enterAnswer')}</span>
-                  <div className={styles.wordInputsContainer}>
+                  
+                  {/* Mobile: Single textarea input */}
+                  {isMobile ? (
+                    <div className={styles.mobileInputContainer}>
+                      <textarea
+                        className={`${styles.mobileTextInput} ${completedSentences.includes(currentSentenceIndex) ? styles.mobileTextInputCompleted : ''}`}
+                        value={userInputs[currentSentenceIndex] || ''}
+                        onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
+                        placeholder={t('dictationPage.typeAllWords')}
+                        disabled={completedSentences.includes(currentSentenceIndex)}
+                        rows={3}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' && !e.shiftKey) {
+                            e.preventDefault();
+                            checkAnswer(currentSentenceIndex);
+                          }
+                        }}
+                      />
+                      {/* Show colored word comparison below input */}
+                      {comparedWords[currentSentenceIndex] && transcriptData[currentSentenceIndex] && (
+                        <div className={styles.mobileWordComparison}>
+                          {transcriptData[currentSentenceIndex].text.split(' ').filter(w => w.length > 0).map((word, i) => {
+                            const comparison = comparedWords[currentSentenceIndex]?.[i];
+                            const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
+                            const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
+                            
+                            if (comparison?.isCorrect) {
+                              return (
+                                <span key={i} className={styles.mobileWordCorrect}>
+                                  {pureWord}{punctuation}{' '}
+                                </span>
+                              );
+                            } else if (comparison?.matchedChars > 0) {
+                              return (
+                                <span key={i} className={styles.mobileWordPartial}>
+                                  <span className={styles.mobileMatchedChars}>{pureWord.substring(0, comparison.matchedChars)}</span>
+                                  <span className={styles.mobileUnmatchedChars}>{pureWord.substring(comparison.matchedChars)}</span>
+                                  {punctuation}{' '}
+                                </span>
+                              );
+                            } else {
+                              return (
+                                <span key={i} className={styles.mobileWordMissing}>
+                                  {'_'.repeat(pureWord.length)}{punctuation}{' '}
+                                </span>
+                              );
+                            }
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    /* Desktop: Keep existing word-by-word input */
+                    <div className={styles.wordInputsContainer}>
                     {transcriptData[currentSentenceIndex] && 
                       transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
                         const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
@@ -1718,6 +1771,7 @@ const DictationPage = () => {
                       })
                     }
                   </div>
+                  )}
                   
 
                 </div>
