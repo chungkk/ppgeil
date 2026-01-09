@@ -5464,27 +5464,10 @@
   grid-template-columns: 1fr 1.2fr 0.8fr;
   gap: var(--spacing-md);
   min-height: calc(100vh - 200px);
-  align-items: start;
+  align-items: stretch;
 }
 
-/* On desktop, align the dictation area with top of transcript */
-@media (min-width: 1025px) {
-  .threeColumnLayout {
-    align-items: start;
-  }
-  
-  .threeColumnLayout > .middleColumn {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 56px; /* Match transcript header height */
-  }
-  
-  .threeColumnLayout > .middleColumn .dictationArea {
-    flex: 0 0 auto;
-  }
-}
+
 
 /* Left Column - Video */
 .leftColumn {
@@ -5669,12 +5652,24 @@
 .middleColumn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background: var(--bg-secondary);
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   padding: var(--spacing-md);
   min-height: 400px;
+}
+
+/* Desktop: Push dictation content down to align with transcript active sentence */
+@media (min-width: 769px) {
+  .middleColumn .wordInputsSection {
+    margin-top: 100px;
+  }
+  
+  .middleColumn .actionButtons {
+    margin-top: auto;
+    padding-bottom: 20px;
+  }
 }
 
 .dictationArea {
