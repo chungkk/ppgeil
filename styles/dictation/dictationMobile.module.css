@@ -14,15 +14,15 @@
     left: 0;
     right: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
-    padding: 6px 12px;
+    gap: 8px;
+    padding: 6px 10px;
     padding-bottom: max(6px, env(safe-area-inset-bottom));
-    background: rgba(15, 23, 42, 0.95); /* Improved from 0.75 for better contrast */
-    backdrop-filter: blur(12px); /* Optimized from 20px for better performance */
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-top: 2px solid rgba(255, 255, 255, 0.15); /* Enhanced from 1px and 0.08 opacity */
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
     z-index: 1000;
   }
 }
