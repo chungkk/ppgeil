@@ -211,24 +211,26 @@
 }
 
 .languageSelector {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
+  background: var(--retro-purple);
+  border: 2px solid var(--retro-border);
+  color: white;
   padding: 8px 14px;
-  border-radius: var(--border-radius-small);
+  border-radius: 12px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   gap: 6px;
   height: 40px;
+  box-shadow: 3px 3px 0 var(--retro-shadow);
 }
 
 .languageSelector:hover {
-  background: var(--bg-hover);
-  border-color: var(--accent-green);
+  background: #7c3aed;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow);
 }
 
 .languageDropdown {
@@ -536,21 +538,21 @@
   align-items: center;
   gap: 6px;
   padding: 8px 14px;
-  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
-  border: 2px solid rgba(255, 215, 0, 0.4);
-  border-radius: 8px;
-  font-weight: 600;
+  background: var(--retro-dark);
+  border: 2px solid var(--retro-border);
+  border-radius: 12px;
+  font-weight: 700;
   font-size: 14px;
-  color: var(--text-primary);
+  color: white;
   transition: all 0.2s ease;
   height: 40px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 0 var(--retro-shadow);
 }
 
 .pointsBadge:hover {
-  background: linear-gradient(180deg, #333 0%, #222 100%);
-  border-color: rgba(255, 215, 0, 0.6);
-  transform: translateY(-1px);
+  background: #1a1a2e;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow);
 }
 
 .pointsPlusOne {
@@ -644,21 +646,22 @@
   align-items: center;
   gap: 4px;
   padding: 8px 12px;
-  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
-  border: 2px solid rgba(255, 100, 50, 0.4);
-  border-radius: 8px;
-  font-weight: 600;
+  background: var(--retro-dark);
+  border: 2px solid var(--retro-border);
+  border-radius: 12px;
+  font-weight: 700;
   font-size: 14px;
-  color: var(--text-primary);
+  color: white;
   transition: all 0.2s ease;
   height: 40px;
   cursor: pointer;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 0 var(--retro-shadow);
 }
 
 .streakContainer:hover {
-  background: linear-gradient(180deg, #333 0%, #222 100%);
-  border-color: rgba(255, 100, 50, 0.6);
+  background: #1a1a2e;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow);
 }
 
 .streakIcon {
