@@ -1792,6 +1792,27 @@ const DictationPage = () => {
                       <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
                   </button>
+                  
+                  {/* Mobile Play/Pause Button */}
+                  {isMobile && (
+                    <button
+                      className={`${styles.mobilePlayButton} ${isPlaying ? styles.mobilePlayButtonActive : ''}`}
+                      onClick={handlePlayPause}
+                      title={isPlaying ? t('dictationPage.pause') : t('dictationPage.play')}
+                    >
+                      {isPlaying ? (
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                          <rect x="6" y="4" width="4" height="16" rx="1" />
+                          <rect x="14" y="4" width="4" height="16" rx="1" />
+                        </svg>
+                      ) : (
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      )}
+                    </button>
+                  )}
+                  
                   <button
                     className={styles.hintButton}
                     onClick={revealFocusedWordHint}
