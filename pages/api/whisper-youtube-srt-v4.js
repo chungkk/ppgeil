@@ -219,7 +219,7 @@ async function formatTextWithOpenAI(rawText) {
       messages: [
         {
           role: 'system',
-          content: `Du bist ein professioneller deutscher Linguist. Deine Aufgabe ist es, den transkribierten Text in natürliche Sätze zu gliedern und korrekte Satzzeichen hinzuzufügen.
+          content: `Du bist ein professioneller deutscher Linguist. Deine Aufgabe ist es, den transkribierten Text in kurze Segmente zu gliedern und korrekte Satzzeichen hinzuzufügen.
 
 WICHTIGE REGELN:
 
@@ -228,30 +228,29 @@ WICHTIGE REGELN:
    - Verwende deutsche Anführungszeichen „..." für direkte Rede
    - Großschreibung am Satzanfang und bei Nomen
 
-2. SATZLÄNGE:
-   - Ideal: 6-12 Wörter pro Segment
-   - Minimum: 4 Wörter
-   - Maximum: 16 Wörter
-   - Bei langen Sätzen: Trenne bei Komma oder Konjunktion
+2. SEGMENTLÄNGE (SEHR WICHTIG!):
+   - Ideal: 5-10 Wörter pro Segment
+   - Maximum: 12 Wörter pro Segment
+   - NIEMALS mehr als 12 Wörter in einem Segment!
+   - Bei langen Sätzen: MUSS bei Komma trennen!
 
-3. NIEMALS TRENNEN:
+3. TRENNREGELN FÜR LANGE SÄTZE:
+   - Wenn ein Satz mehr als 10-12 Wörter hat, MUSS er getrennt werden
+   - Trenne bei jedem Komma in langen Sätzen
+   - Beispiel: "Heute ist mal wieder einer dieser Tage, an dem diese unangenehme Emotion namens Angst langsam, aber stetig erst meine Gedanken erobert."
+   - Wird zu: ["Heute ist mal wieder einer dieser Tage,", "an dem diese unangenehme Emotion namens Angst langsam,", "aber stetig erst meine Gedanken erobert."]
+
+4. NIEMALS TRENNEN:
    - Präpositionalphrasen: "zum Haus ihrer Großmutter" (zusammen!)
    - Genitivattribute: "das Haus des Mannes" (zusammen!)
    - Artikel + Nomen: "der Mann", "eine Frau"
-   - Modalverb + Infinitiv: "kann gehen", "will arbeiten"
-
-4. TRENNPUNKTE (gut):
-   - Nach Satzende (. ! ?)
-   - Nach Komma + Nebensatz
-   - Vor Konjunktionen (aber, und, oder, weil, dass)
 
 5. TEXT NICHT ÄNDERN:
    - Keine Wörter hinzufügen oder entfernen
    - Nur Satzzeichen und Großschreibung anpassen
    - Reihenfolge der Wörter beibehalten
 
-Antworte NUR mit einem JSON Array von Strings. Jeder String ist ein Segment.
-Beispiel: ["Das ist der erste Satz.", "Hier kommt der zweite Satz!", "Was ist das?"]`
+Antworte NUR mit einem JSON Array von Strings. Jeder String ist ein Segment.`
         },
         {
           role: 'user',

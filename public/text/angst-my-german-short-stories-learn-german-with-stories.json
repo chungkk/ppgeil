@@ -1,8 +1,8 @@
 [
     {
-        "text": "Heute ist mal wieder einer dieser Tage, an dem diese unangenehme Emotion namens Angst langsam, aber stetig erst meine Gedanken und anschließend meinen Körper erobert.",
+        "text": "Heute ist mal wieder einer dieser Tage,",
         "start": 0,
-        "end": 15.579999732971192,
+        "end": 4.099999952316284,
         "wordTimings": [
             {
                 "word": "Heute",
@@ -37,11 +37,20 @@
             {
                 "word": "Tage,",
                 "start": 3.380000114440918,
-                "end": 3.799999952316284
-            },
+                "end": 4.099999952316284
+            }
+        ],
+        "translationEn": "Today is once again one of those days,",
+        "translationVi": "Hôm nay lại là một trong những ngày như thế,"
+    },
+    {
+        "text": "an dem diese unangenehme Emotion namens Angst langsam,",
+        "start": 4.300000095367432,
+        "end": 9.940000343322755,
+        "wordTimings": [
             {
                 "word": "an",
-                "start": 4.400000095367432,
+                "start": 4.300000095367432,
                 "end": 4.400000095367432
             },
             {
@@ -77,11 +86,20 @@
             {
                 "word": "langsam,",
                 "start": 8.579999923706055,
-                "end": 9.640000343322754
-            },
+                "end": 9.940000343322755
+            }
+        ],
+        "translationEn": "in which this unpleasant emotion called fear slowly,",
+        "translationVi": "khi mà cảm xúc khó chịu này có tên là sợ hãi dần dần,"
+    },
+    {
+        "text": "aber stetig erst meine Gedanken und anschließend meinen Körper erobert.",
+        "start": 9.540000343322754,
+        "end": 15.579999732971192,
+        "wordTimings": [
             {
                 "word": "aber",
-                "start": 9.640000343322754,
+                "start": 9.540000343322754,
                 "end": 10.020000457763672
             },
             {
@@ -130,8 +148,8 @@
                 "end": 15.579999732971192
             }
         ],
-        "translationEn": "Today is once again one of those days when that unpleasant emotion called fear slowly but steadily takes over my thoughts and then my body.",
-        "translationVi": "Hôm nay lại là một trong những ngày mà cảm xúc khó chịu mang tên sợ hãi từ từ nhưng chắc chắn chiếm lấy suy nghĩ của tôi trước, rồi sau đó là cơ thể tôi."
+        "translationEn": "but steadily conquered my thoughts first and then my body.",
+        "translationVi": "nhưng liên tục chinh phục trước tiên là tâm trí tôi và sau đó là cơ thể tôi."
     },
     {
         "text": "Meistens gibt es noch nicht mal einen Auslöser.",
@@ -180,7 +198,7 @@
             }
         ],
         "translationEn": "Most of the time, there isn't even a trigger.",
-        "translationVi": "Thường thì không có bất kỳ yếu tố kích thích nào."
+        "translationVi": "Thường thì không có một tác nhân nào cả."
     },
     {
         "text": "Es passiert einfach.",
@@ -207,9 +225,9 @@
         "translationVi": "Nó chỉ xảy ra."
     },
     {
-        "text": "Sie verschafft sich ungefragt und hinterhältig Zugang zu meinem Ich, meinem Sein, meinem Wesen.",
+        "text": "Sie verschafft sich ungefragt und hinterhältig Zugang zu meinem Ich,",
         "start": 22.680000686645506,
-        "end": 30.699999618530274,
+        "end": 27.679999160766602,
         "wordTimings": [
             {
                 "word": "Sie",
@@ -259,11 +277,20 @@
             {
                 "word": "Ich,",
                 "start": 26.920000076293945,
-                "end": 27.3799991607666
-            },
+                "end": 27.679999160766602
+            }
+        ],
+        "translationEn": "She gains unsolicited and insidious access to my self,",
+        "translationVi": "Cô ấy lén lút và không được mời xâm nhập vào bản thân tôi,"
+    },
+    {
+        "text": "meinem Sein, meinem Wesen.",
+        "start": 28.139999771118163,
+        "end": 30.699999618530274,
+        "wordTimings": [
             {
                 "word": "meinem",
-                "start": 28.239999771118164,
+                "start": 28.139999771118163,
                 "end": 28.520000457763672
             },
             {
@@ -282,13 +309,13 @@
                 "end": 30.699999618530274
             }
         ],
-        "translationEn": "She gains unsolicited and insidiously access to my self, my being, my essence.",
-        "translationVi": "Cô ấy lén lút và không hỏi ý kiến chiếm đoạt quyền truy cập vào bản ngã, sự tồn tại và bản chất của tôi."
+        "translationEn": "my being, my essence.",
+        "translationVi": "tồn tại của tôi, bản chất của tôi."
     },
     {
-        "text": "Ich ärgere mich darüber, dass ich mich von ihr einnehmen lasse, dass sie mich kontrolliert.",
+        "text": "Ich ärgere mich darüber,",
         "start": 31.799999618530272,
-        "end": 38.91999893188476,
+        "end": 33.86000137329101,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -308,11 +335,20 @@
             {
                 "word": "darüber,",
                 "start": 33.099998474121094,
-                "end": 33.560001373291016
-            },
+                "end": 33.86000137329101
+            }
+        ],
+        "translationEn": "I am annoyed about that,",
+        "translationVi": "Tôi cảm thấy khó chịu về điều đó,"
+    },
+    {
+        "text": "dass ich mich von ihr einnehmen lasse,",
+        "start": 34.039999389648436,
+        "end": 36.599999237060544,
+        "wordTimings": [
             {
                 "word": "dass",
-                "start": 34.13999938964844,
+                "start": 34.039999389648436,
                 "end": 34.41999816894531
             },
             {
@@ -343,11 +379,20 @@
             {
                 "word": "lasse,",
                 "start": 35.58000183105469,
-                "end": 36.29999923706055
-            },
+                "end": 36.599999237060544
+            }
+        ],
+        "translationEn": "that I let myself be taken in by her,",
+        "translationVi": "rằng tôi để cô ấy chiếm lấy tôi,"
+    },
+    {
+        "text": "dass sie mich kontrolliert.",
+        "start": 37.179998779296874,
+        "end": 38.91999893188476,
+        "wordTimings": [
             {
                 "word": "dass",
-                "start": 37.279998779296875,
+                "start": 37.179998779296874,
                 "end": 37.52000045776367
             },
             {
@@ -366,13 +411,13 @@
                 "end": 38.91999893188476
             }
         ],
-        "translationEn": "I am annoyed that I let her take over me, that she controls me.",
-        "translationVi": "Tôi cảm thấy khó chịu vì tôi để cô ấy chi phối, vì cô ấy kiểm soát tôi."
+        "translationEn": "that she controls me.",
+        "translationVi": "rằng cô ấy kiểm soát tôi."
     },
     {
-        "text": "Sie hat es nicht verdient, so viel Aufmerksamkeit zu bekommen.",
+        "text": "Sie hat es nicht verdient,",
         "start": 39.78000106811523,
-        "end": 44.41999893188476,
+        "end": 41.32000045776367,
         "wordTimings": [
             {
                 "word": "Sie",
@@ -397,11 +442,20 @@
             {
                 "word": "verdient,",
                 "start": 40.560001373291016,
-                "end": 41.02000045776367
-            },
+                "end": 41.32000045776367
+            }
+        ],
+        "translationEn": "She doesn't deserve it,",
+        "translationVi": "Cô ấy không xứng đáng với điều đó,"
+    },
+    {
+        "text": "so viel Aufmerksamkeit zu bekommen.",
+        "start": 41.58000030517578,
+        "end": 44.41999893188476,
+        "wordTimings": [
             {
                 "word": "so",
-                "start": 41.68000030517578,
+                "start": 41.58000030517578,
                 "end": 41.91999816894531
             },
             {
@@ -425,13 +479,13 @@
                 "end": 44.41999893188476
             }
         ],
-        "translationEn": "She doesn't deserve to get so much attention.",
-        "translationVi": "Cô ấy không xứng đáng nhận được nhiều sự chú ý như vậy."
+        "translationEn": "to get so much attention.",
+        "translationVi": "để nhận được nhiều sự chú ý như vậy."
     },
     {
-        "text": "Schließlich ist sie nur eine Emotion, ein Gefühl.",
+        "text": "Schließlich ist sie nur eine Emotion,",
         "start": 44.960001373291014,
-        "end": 49.779999542236325,
+        "end": 48.119999694824216,
         "wordTimings": [
             {
                 "word": "Schließlich",
@@ -461,11 +515,20 @@
             {
                 "word": "Emotion,",
                 "start": 47.2400016784668,
-                "end": 47.81999969482422
-            },
+                "end": 48.119999694824216
+            }
+        ],
+        "translationEn": "After all, it is just an emotion,",
+        "translationVi": "Cuối cùng, nó chỉ là một cảm xúc,"
+    },
+    {
+        "text": "ein Gefühl.",
+        "start": 48.83999862670898,
+        "end": 49.779999542236325,
+        "wordTimings": [
             {
                 "word": "ein",
-                "start": 48.939998626708984,
+                "start": 48.83999862670898,
                 "end": 49.08000183105469
             },
             {
@@ -474,8 +537,8 @@
                 "end": 49.779999542236325
             }
         ],
-        "translationEn": "After all, it is just an emotion, a feeling.",
-        "translationVi": "Cuối cùng, nó chỉ là một cảm xúc, một cảm giác."
+        "translationEn": "a feeling.",
+        "translationVi": "một cảm giác."
     },
     {
         "text": "Sie kommt und geht.",
@@ -507,9 +570,9 @@
         "translationVi": "Cô ấy đến và đi."
     },
     {
-        "text": "In dieser Situation hilft mir frische Luft, eine kurze Runde im Park oder eine halbe Stunde auf dem Fahrrad.",
+        "text": "In dieser Situation hilft mir frische Luft,",
         "start": 53.6599983215332,
-        "end": 62.0599983215332,
+        "end": 56.86000137329101,
         "wordTimings": [
             {
                 "word": "In",
@@ -544,11 +607,20 @@
             {
                 "word": "Luft,",
                 "start": 56.220001220703125,
-                "end": 56.560001373291016
-            },
+                "end": 56.86000137329101
+            }
+        ],
+        "translationEn": "In this situation, fresh air helps me.",
+        "translationVi": "Trong tình huống này, không khí trong lành giúp tôi."
+    },
+    {
+        "text": "eine kurze Runde im Park oder eine halbe Stunde auf dem Fahrrad.",
+        "start": 57.44000091552734,
+        "end": 62.0599983215332,
+        "wordTimings": [
             {
                 "word": "eine",
-                "start": 57.540000915527344,
+                "start": 57.44000091552734,
                 "end": 57.779998779296875
             },
             {
@@ -607,13 +679,13 @@
                 "end": 62.0599983215332
             }
         ],
-        "translationEn": "In this situation, fresh air helps me, a short walk in the park, or half an hour on the bike.",
-        "translationVi": "Trong tình huống này, không khí trong lành, một vòng ngắn trong công viên hoặc nửa giờ trên xe đạp giúp tôi."
+        "translationEn": "a short round in the park or half an hour on the bike.",
+        "translationVi": "một vòng ngắn trong công viên hoặc nửa giờ trên xe đạp."
     },
     {
-        "text": "Es kostet mich einiges an Überwindung und Kraft, aufzustehen.",
+        "text": "Es kostet mich einiges an Überwindung und Kraft,",
         "start": 62.620001220703124,
-        "end": 67.24000244140625,
+        "end": 66.13999633789062,
         "wordTimings": [
             {
                 "word": "Es",
@@ -653,16 +725,25 @@
             {
                 "word": "Kraft,",
                 "start": 65.83999633789062,
-                "end": 65.83999633789062
-            },
+                "end": 66.13999633789062
+            }
+        ],
+        "translationEn": "It takes a lot of effort and strength for me,",
+        "translationVi": "Nó tốn của tôi khá nhiều sự vượt qua và sức mạnh,"
+    },
+    {
+        "text": "aufzustehen.",
+        "start": 66.41999664306641,
+        "end": 67.24000244140625,
+        "wordTimings": [
             {
                 "word": "aufzustehen.",
-                "start": 66.5199966430664,
+                "start": 66.41999664306641,
                 "end": 67.24000244140625
             }
         ],
-        "translationEn": "It takes a lot of effort and strength for me to get up.",
-        "translationVi": "Tôi phải vượt qua nhiều khó khăn và sức lực để đứng dậy."
+        "translationEn": "to get up.",
+        "translationVi": "đứng dậy."
     },
     {
         "text": "Angst lähmt.",
@@ -684,9 +765,9 @@
         "translationVi": "Nỗi sợ làm tê liệt."
     },
     {
-        "text": "Ich schleppe das Fahrrad die Kellertreppe hoch, balanciere es durch die schmale Haustür, setze den Fahrradhelm auf und fahre los.",
+        "text": "Ich schleppe das Fahrrad die Kellertreppe hoch,",
         "start": 70.06000366210938,
-        "end": 79.92000274658203,
+        "end": 72.96000366210937,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -721,11 +802,20 @@
             {
                 "word": "hoch,",
                 "start": 72.33999633789062,
-                "end": 72.66000366210938
-            },
+                "end": 72.96000366210937
+            }
+        ],
+        "translationEn": "I drag the bicycle up the basement stairs,",
+        "translationVi": "Tôi kéo xe đạp lên cầu thang hầm."
+    },
+    {
+        "text": "balanciere es durch die schmale Haustür,",
+        "start": 73.84000244140626,
+        "end": 76.49999694824218,
+        "wordTimings": [
             {
                 "word": "balanciere",
-                "start": 73.94000244140625,
+                "start": 73.84000244140626,
                 "end": 74.27999877929688
             },
             {
@@ -751,11 +841,20 @@
             {
                 "word": "Haustür,",
                 "start": 75.4800033569336,
-                "end": 76.19999694824219
-            },
+                "end": 76.49999694824218
+            }
+        ],
+        "translationEn": "balance it through the narrow front door,",
+        "translationVi": "cân bằng nó qua cánh cửa hẹp,"
+    },
+    {
+        "text": "setze den Fahrradhelm auf und fahre los.",
+        "start": 77.21999969482422,
+        "end": 79.92000274658203,
+        "wordTimings": [
             {
                 "word": "setze",
-                "start": 77.31999969482422,
+                "start": 77.21999969482422,
                 "end": 77.36000061035156
             },
             {
@@ -789,8 +888,8 @@
                 "end": 79.92000274658203
             }
         ],
-        "translationEn": "I carry the bicycle up the basement stairs, balance it through the narrow front door, put on my bicycle helmet, and ride off.",
-        "translationVi": "Tôi kéo xe đạp lên cầu thang hầm, giữ thăng bằng khi đi qua cánh cửa hẹp, đội mũ bảo hiểm xe đạp vào và bắt đầu đi."
+        "translationEn": "Put on the bicycle helmet and ride off.",
+        "translationVi": "Đội mũ bảo hiểm xe đạp vào và bắt đầu đi."
     },
     {
         "text": "Die Luft tut gut.",
@@ -822,9 +921,9 @@
         "translationVi": "Không khí thật dễ chịu."
     },
     {
-        "text": "Ich beginne langsam, auf andere Gedanken zu kommen, auch weil ich gerade auf diesen Berg zufahre.",
+        "text": "Ich beginne langsam,",
         "start": 83.26000061035157,
-        "end": 91.98000030517578,
+        "end": 84.88000183105468,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -839,11 +938,20 @@
             {
                 "word": "langsam,",
                 "start": 83.81999969482422,
-                "end": 84.58000183105469
-            },
+                "end": 84.88000183105468
+            }
+        ],
+        "translationEn": "I am starting slowly,",
+        "translationVi": "Tôi bắt đầu từ từ,"
+    },
+    {
+        "text": "auf andere Gedanken zu kommen,",
+        "start": 84.4800018310547,
+        "end": 87.92000274658203,
+        "wordTimings": [
             {
                 "word": "auf",
-                "start": 84.58000183105469,
+                "start": 84.4800018310547,
                 "end": 85.05999755859375
             },
             {
@@ -864,11 +972,20 @@
             {
                 "word": "kommen,",
                 "start": 86.87999725341797,
-                "end": 87.62000274658203
-            },
+                "end": 87.92000274658203
+            }
+        ],
+        "translationEn": "to think of something else,",
+        "translationVi": "để suy nghĩ về những điều khác,"
+    },
+    {
+        "text": "auch weil ich gerade auf diesen Berg zufahre.",
+        "start": 88.08000030517579,
+        "end": 91.98000030517578,
+        "wordTimings": [
             {
                 "word": "auch",
-                "start": 88.18000030517578,
+                "start": 88.08000030517579,
                 "end": 88.4000015258789
             },
             {
@@ -907,8 +1024,8 @@
                 "end": 91.98000030517578
             }
         ],
-        "translationEn": "I am slowly starting to think of other things, also because I am currently driving towards this mountain.",
-        "translationVi": "Tôi bắt đầu từ từ có những suy nghĩ khác, cũng vì tôi đang lái xe về phía ngọn núi này."
+        "translationEn": "also because I am currently driving towards this mountain.",
+        "translationVi": "cũng vì tôi đang lái xe đến ngọn núi này."
     },
     {
         "text": "Von hier unten sieht er unüberwindbar aus.",
@@ -952,12 +1069,12 @@
             }
         ],
         "translationEn": "From down here, it looks insurmountable.",
-        "translationVi": "Từ dưới này, nó trông như không thể vượt qua."
+        "translationVi": "Từ dưới đây, nó trông không thể vượt qua được."
     },
     {
-        "text": "Er bäumt sich vor mir auf, als würde er sagen wollen: „Komm, versuche es erst gar nicht!“",
+        "text": "Er bäumt sich vor mir auf,",
         "start": 97.12000122070313,
-        "end": 103.78000335693359,
+        "end": 99.21999816894531,
         "wordTimings": [
             {
                 "word": "Er",
@@ -987,11 +1104,20 @@
             {
                 "word": "auf,",
                 "start": 98.5999984741211,
-                "end": 98.91999816894531
-            },
+                "end": 99.21999816894531
+            }
+        ],
+        "translationEn": "He rears up in front of me,",
+        "translationVi": "Nó đứng dậy trước mặt tôi,"
+    },
+    {
+        "text": "als würde er sagen wollen: 'Komm, versuche es erst gar nicht!'.",
+        "start": 99.26000061035157,
+        "end": 103.78000335693359,
+        "wordTimings": [
             {
                 "word": "als",
-                "start": 99.36000061035156,
+                "start": 99.26000061035157,
                 "end": 99.66000366210938
             },
             {
@@ -1015,7 +1141,7 @@
                 "end": 100.5999984741211
             },
             {
-                "word": "„Komm,",
+                "word": "'Komm,",
                 "start": 100.83999633789062,
                 "end": 101.73999786376953
             },
@@ -1040,18 +1166,18 @@
                 "end": 103.0999984741211
             },
             {
-                "word": "nicht!“",
+                "word": "nicht!'.",
                 "start": 103.0999984741211,
                 "end": 103.78000335693359
             }
         ],
-        "translationEn": "He rears up before me as if to say, \"Come on, don't even try!\"",
-        "translationVi": "Nó đứng thẳng trước mặt tôi, như thể nó muốn nói: \"Đến đây, đừng cố gắng làm gì cả!\""
+        "translationEn": "as if he wanted to say: 'Come on, don't even try it!'.",
+        "translationVi": "như thể anh ấy muốn nói: 'Đừng có cố gắng làm gì cả!'."
     },
     {
-        "text": "Ich bin davon so eingeschüchtert, dass ich vergesse, wie oft ich hier schon hochgefahren bin.",
+        "text": "Ich bin davon so eingeschüchtert,",
         "start": 104.35999908447266,
-        "end": 111.75999908447265,
+        "end": 107.3,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -1076,11 +1202,20 @@
             {
                 "word": "eingeschüchtert,",
                 "start": 106.16000366210938,
-                "end": 107
-            },
+                "end": 107.3
+            }
+        ],
+        "translationEn": "I am so intimidated by it,",
+        "translationVi": "Tôi cảm thấy bị áp lực bởi điều đó,"
+    },
+    {
+        "text": "dass ich vergesse, wie oft ich hier schon hochgefahren bin.",
+        "start": 107.66000213623047,
+        "end": 111.75999908447265,
+        "wordTimings": [
             {
                 "word": "dass",
-                "start": 107.76000213623047,
+                "start": 107.66000213623047,
                 "end": 107.83999633789062
             },
             {
@@ -1129,16 +1264,16 @@
                 "end": 111.75999908447265
             }
         ],
-        "translationEn": "I am so intimidated by it that I forget how many times I have already gone up here.",
-        "translationVi": "Tôi bị áp lực đến nỗi quên mất mình đã lên đây bao nhiêu lần."
+        "translationEn": "that I forget how many times I have already driven up here.",
+        "translationVi": "rằng tôi quên mất mình đã lên đây bao nhiêu lần rồi."
     },
     {
-        "text": "Nicht, dass es einfach gewesen wäre, im Gegenteil.",
+        "text": "Nicht dass es einfach gewesen wäre,",
         "start": 112.95999755859376,
-        "end": 117.71999816894531,
+        "end": 115.78000335693359,
         "wordTimings": [
             {
-                "word": "Nicht,",
+                "word": "Nicht",
                 "start": 112.95999755859376,
                 "end": 113.05999755859375
             },
@@ -1165,11 +1300,20 @@
             {
                 "word": "wäre,",
                 "start": 115.19999694824219,
-                "end": 115.4800033569336
-            },
+                "end": 115.78000335693359
+            }
+        ],
+        "translationEn": "Not that it would have been easy,",
+        "translationVi": "Không phải là dễ dàng,"
+    },
+    {
+        "text": "im Gegenteil.",
+        "start": 116.27999725341797,
+        "end": 117.71999816894531,
+        "wordTimings": [
             {
                 "word": "im",
-                "start": 116.37999725341797,
+                "start": 116.27999725341797,
                 "end": 116.63999938964844
             },
             {
@@ -1178,11 +1322,11 @@
                 "end": 117.71999816894531
             }
         ],
-        "translationEn": "Not that it would have been easy, on the contrary.",
-        "translationVi": "Không phải là dễ dàng, ngược lại."
+        "translationEn": "On the contrary.",
+        "translationVi": "Ngược lại."
     },
     {
-        "text": "Oben angekommen fühlen sich meine Beine jedes Mal wie Gummi an.",
+        "text": "Oben angekommen fühlen sich meine Beine jedes Mal wie Gummi an,",
         "start": 118.8800033569336,
         "end": 124.61999969482422,
         "wordTimings": [
@@ -1237,7 +1381,7 @@
                 "end": 124.04000091552734
             },
             {
-                "word": "an.",
+                "word": "an,",
                 "start": 124.04000091552734,
                 "end": 124.61999969482422
             }
@@ -1246,13 +1390,18 @@
         "translationVi": "Khi đến đỉnh, chân tôi mỗi lần đều cảm thấy như cao su."
     },
     {
-        "text": "Ich ringe so verzweifelt nach Luft, dass meine Lunge an ihre Grenzen kommt.",
-        "start": 125.3800033569336,
-        "end": 131.27999572753907,
+        "text": "und ich ringe so verzweifelt nach Luft,",
+        "start": 124.21999969482422,
+        "end": 127.89999847412109,
         "wordTimings": [
             {
-                "word": "Ich",
-                "start": 125.3800033569336,
+                "word": "und",
+                "start": 124.21999969482422,
+                "end": 125.4800033569336
+            },
+            {
+                "word": "ich",
+                "start": 125.4800033569336,
                 "end": 125.81999969482422
             },
             {
@@ -1278,11 +1427,20 @@
             {
                 "word": "Luft,",
                 "start": 127.54000091552734,
-                "end": 127.5999984741211
-            },
+                "end": 127.89999847412109
+            }
+        ],
+        "translationEn": "and I struggle so desperately for air,",
+        "translationVi": "và tôi vật lộn một cách tuyệt vọng để thở,"
+    },
+    {
+        "text": "dass meine Lunge an ihre Grenzen kommt.",
+        "start": 128.17999877929688,
+        "end": 131.27999572753907,
+        "wordTimings": [
             {
                 "word": "dass",
-                "start": 128.27999877929688,
+                "start": 128.17999877929688,
                 "end": 128.4600067138672
             },
             {
@@ -1316,8 +1474,8 @@
                 "end": 131.27999572753907
             }
         ],
-        "translationEn": "I am gasping for air so desperately that my lungs are reaching their limits.",
-        "translationVi": "Tôi vật lộn với việc thở một cách tuyệt vọng đến nỗi phổi của tôi đã đến giới hạn của nó."
+        "translationEn": "that my lungs are reaching their limits.",
+        "translationVi": "rằng phổi của tôi đang đến giới hạn của nó."
     },
     {
         "text": "Trotzdem habe ich es bisher immer irgendwie nach oben geschafft.",
@@ -1375,11 +1533,11 @@
                 "end": 137.52000122070314
             }
         ],
-        "translationEn": "Nevertheless, I have always managed to get up somehow.",
+        "translationEn": "Nevertheless, I have always managed to get ahead somehow.",
         "translationVi": "Tuy nhiên, cho đến nay tôi vẫn luôn tìm cách vươn lên."
     },
     {
-        "text": "Auf geht's!",
+        "text": "Auf geht's.",
         "start": 138.4800018310547,
         "end": 139.54000549316407,
         "wordTimings": [
@@ -1389,18 +1547,18 @@
                 "end": 138.6999969482422
             },
             {
-                "word": "geht's!",
+                "word": "geht's.",
                 "start": 138.6999969482422,
                 "end": 139.54000549316407
             }
         ],
-        "translationEn": "Let's go!",
-        "translationVi": "Đi thôi!"
+        "translationEn": "Let's go.",
+        "translationVi": "Đi nào."
     },
     {
-        "text": "Ich lasse mir Zeit und versuche, mich nicht zu sehr auf den Schmerz in den Beinen zu konzentrieren.",
+        "text": "Ich lasse mir Zeit und versuche,",
         "start": 140.0199951171875,
-        "end": 147.71999816894532,
+        "end": 143.13999633789064,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -1430,11 +1588,20 @@
             {
                 "word": "versuche,",
                 "start": 142.36000061035156,
-                "end": 142.83999633789062
-            },
+                "end": 143.13999633789064
+            }
+        ],
+        "translationEn": "I take my time and try to,",
+        "translationVi": "Tôi từ từ và cố gắng,"
+    },
+    {
+        "text": "mich nicht zu sehr auf den Schmerz in den Beinen zu konzentrieren.",
+        "start": 142.73999633789063,
+        "end": 147.71999816894532,
+        "wordTimings": [
             {
                 "word": "mich",
-                "start": 142.83999633789062,
+                "start": 142.73999633789063,
                 "end": 143.3800048828125
             },
             {
@@ -1493,8 +1660,8 @@
                 "end": 147.71999816894532
             }
         ],
-        "translationEn": "I take my time and try not to focus too much on the pain in my legs.",
-        "translationVi": "Tôi từ từ và cố gắng không tập trung quá nhiều vào cơn đau ở chân."
+        "translationEn": "not to focus too much on the pain in my legs.",
+        "translationVi": "không quá tập trung vào cơn đau ở chân."
     },
     {
         "text": "Eher schaue ich mir die Landschaft an.",
@@ -1538,7 +1705,7 @@
             }
         ],
         "translationEn": "I would rather look at the landscape.",
-        "translationVi": "Tôi thích ngắm cảnh hơn."
+        "translationVi": "Tôi thích ngắm nhìn phong cảnh hơn."
     },
     {
         "text": "Es ist grün hier.",
@@ -1570,9 +1737,9 @@
         "translationVi": "Ở đây có màu xanh."
     },
     {
-        "text": "Die Bäume wachsen majestätisch in die Höhe und wiegen sich in aller Seelenruhe im leichten Wind hin und her.",
+        "text": "Die Bäume wachsen majestätisch in die Höhe",
         "start": 152.84000244140626,
-        "end": 162.97999267578126,
+        "end": 156.85999755859376,
         "wordTimings": [
             {
                 "word": "Die",
@@ -1607,11 +1774,20 @@
             {
                 "word": "Höhe",
                 "start": 156.4199981689453,
-                "end": 156.55999755859375
-            },
+                "end": 156.85999755859376
+            }
+        ],
+        "translationEn": "The trees grow majestically upwards.",
+        "translationVi": "Những cây cối vươn lên một cách hùng vĩ."
+    },
+    {
+        "text": "und wiegen sich in aller Seelenruhe im leichten Wind hin und her.",
+        "start": 156.45999755859376,
+        "end": 162.97999267578126,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 156.55999755859375,
+                "start": 156.45999755859376,
                 "end": 156.89999389648438
             },
             {
@@ -1670,13 +1846,13 @@
                 "end": 162.97999267578126
             }
         ],
-        "translationEn": "The trees grow majestically upwards and sway back and forth in the gentle wind with complete tranquility.",
-        "translationVi": "Những cây cối mọc lên một cách hùng vĩ và nhẹ nhàng đung đưa trong gió nhẹ một cách bình yên."
+        "translationEn": "and sway back and forth in the gentle wind with complete tranquility.",
+        "translationVi": "và lắc lư trong sự bình yên của tâm hồn trong làn gió nhẹ."
     },
     {
-        "text": "Normalerweise würde ich den Anblick genießen, aber im Moment mühe ich mich ja ab.",
+        "text": "Normalerweise würde ich den Anblick genießen,",
         "start": 163.7800048828125,
-        "end": 169.02000122070314,
+        "end": 165.97999267578126,
         "wordTimings": [
             {
                 "word": "Normalerweise",
@@ -1706,11 +1882,20 @@
             {
                 "word": "genießen,",
                 "start": 165,
-                "end": 165.67999267578125
-            },
+                "end": 165.97999267578126
+            }
+        ],
+        "translationEn": "Normally, I would enjoy the sight,",
+        "translationVi": "Thông thường, tôi sẽ thưởng thức cảnh tượng đó,"
+    },
+    {
+        "text": "aber im Moment mühe ich mich ja ab.",
+        "start": 166.93999328613282,
+        "end": 169.02000122070314,
+        "wordTimings": [
             {
                 "word": "aber",
-                "start": 167.0399932861328,
+                "start": 166.93999328613282,
                 "end": 167.17999267578125
             },
             {
@@ -1749,13 +1934,13 @@
                 "end": 169.02000122070314
             }
         ],
-        "translationEn": "Normally, I would enjoy the sight, but at the moment I am struggling.",
-        "translationVi": "Thông thường, tôi sẽ tận hưởng cảnh tượng, nhưng lúc này tôi đang vất vả."
+        "translationEn": "But at the moment, I'm really struggling.",
+        "translationVi": "Nhưng hiện tại tôi đang vật lộn."
     },
     {
-        "text": "Ich laufe wirklich auf dem Zahnfleisch und die Waldgewächse tun rein gar nichts.",
+        "text": "Ich laufe wirklich auf dem Zahnfleisch,",
         "start": 169.3600067138672,
-        "end": 174.77999572753907,
+        "end": 171.71999816894532,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -1785,13 +1970,22 @@
                 "end": 170.8000030517578
             },
             {
-                "word": "Zahnfleisch",
+                "word": "Zahnfleisch,",
                 "start": 170.8000030517578,
-                "end": 171.4199981689453
-            },
+                "end": 171.71999816894532
+            }
+        ],
+        "translationEn": "I'm really running on empty,",
+        "translationVi": "Tôi thực sự cảm thấy kiệt sức."
+    },
+    {
+        "text": "und die Waldgewächse tun rein gar nichts.",
+        "start": 171.31999816894532,
+        "end": 174.77999572753907,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 171.4199981689453,
+                "start": 171.31999816894532,
                 "end": 172.0800018310547
             },
             {
@@ -1825,13 +2019,13 @@
                 "end": 174.77999572753907
             }
         ],
-        "translationEn": "I am really running on empty and the forest plants do absolutely nothing.",
-        "translationVi": "Tôi thực sự cảm thấy kiệt sức và những cây rừng không giúp gì cả."
+        "translationEn": "and the forest plants do absolutely nothing.",
+        "translationVi": "và các cây rừng thì hoàn toàn không làm gì cả."
     },
     {
-        "text": "Abgesehen davon, dass sie mir netterweise ihren kostbaren Sauerstoff spenden, den ich im Moment ganz besonders dringend brauche.",
+        "text": "Abgesehen davon,",
         "start": 175.50000610351563,
-        "end": 183.82000427246095,
+        "end": 176.52000122070314,
         "wordTimings": [
             {
                 "word": "Abgesehen",
@@ -1841,11 +2035,20 @@
             {
                 "word": "davon,",
                 "start": 175.89999389648438,
-                "end": 176.22000122070312
-            },
+                "end": 176.52000122070314
+            }
+        ],
+        "translationEn": "Aside from that,",
+        "translationVi": "Ngoài ra,"
+    },
+    {
+        "text": "dass sie mir netterweise ihren kostbaren Sauerstoff spenden,",
+        "start": 176.57999267578126,
+        "end": 180.1800048828125,
+        "wordTimings": [
             {
                 "word": "dass",
-                "start": 176.67999267578125,
+                "start": 176.57999267578126,
                 "end": 176.77999877929688
             },
             {
@@ -1881,11 +2084,20 @@
             {
                 "word": "spenden,",
                 "start": 179.4199981689453,
-                "end": 179.8800048828125
-            },
+                "end": 180.1800048828125
+            }
+        ],
+        "translationEn": "that they kindly donate their precious oxygen to me,",
+        "translationVi": "rằng họ đã tốt bụng cho tôi mượn oxy quý giá của họ,"
+    },
+    {
+        "text": "den ich im Moment ganz besonders dringend brauche.",
+        "start": 180.29999389648438,
+        "end": 183.82000427246095,
+        "wordTimings": [
             {
                 "word": "den",
-                "start": 180.39999389648438,
+                "start": 180.29999389648438,
                 "end": 180.4600067138672
             },
             {
@@ -1924,13 +2136,13 @@
                 "end": 183.82000427246095
             }
         ],
-        "translationEn": "Apart from the fact that they kindly donate their precious oxygen to me, which I urgently need at the moment.",
-        "translationVi": "Ngoài việc họ tốt bụng cho tôi mượn oxy quý giá của họ, thứ mà tôi đang rất cần vào lúc này."
+        "translationEn": "that I urgently need at the moment.",
+        "translationVi": "mà tôi đang rất cần vào lúc này."
     },
     {
-        "text": "Ich spüre, wie der Schweiß erst langsam und plötzlich schwallartig aus meinen Poren strömt.",
+        "text": "Ich spüre, wie der Schweiß erst langsam",
         "start": 184.37999572753907,
-        "end": 191.1999938964844,
+        "end": 187.71999816894532,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -1965,11 +2177,20 @@
             {
                 "word": "langsam",
                 "start": 186.75999450683594,
-                "end": 187.4199981689453
-            },
+                "end": 187.71999816894532
+            }
+        ],
+        "translationEn": "I feel the sweat slowly starting to trickle.",
+        "translationVi": "Tôi cảm thấy mồ hôi bắt đầu chảy chậm rãi."
+    },
+    {
+        "text": "und plötzlich schwallartig aus meinen Poren strömt.",
+        "start": 187.31999816894532,
+        "end": 191.1999938964844,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 187.4199981689453,
+                "start": 187.31999816894532,
                 "end": 187.75999450683594
             },
             {
@@ -2003,13 +2224,13 @@
                 "end": 191.1999938964844
             }
         ],
-        "translationEn": "I feel the sweat slowly starting to flow from my pores and then suddenly pouring out.",
-        "translationVi": "Tôi cảm thấy mồ hôi bắt đầu chảy ra từ lỗ chân lông của mình, đầu tiên là từ từ rồi đột ngột ào ạt."
+        "translationEn": "and suddenly it rushes out of my pores in a torrent.",
+        "translationVi": "và đột ngột chảy ra từ các lỗ chân lông của tôi."
     },
     {
-        "text": "Er bahnt sich seinen Weg über jeden Winkel meines Rückens und ist erst zufrieden, wenn mein komplettes T-Shirt durchnässt ist.",
+        "text": "Er bahnt sich seinen Weg über jeden Winkel meines Rückens",
         "start": 191.95999755859376,
-        "end": 201.74000244140626,
+        "end": 196.33999328613282,
         "wordTimings": [
             {
                 "word": "Er",
@@ -2059,11 +2280,20 @@
             {
                 "word": "Rückens",
                 "start": 195.6199951171875,
-                "end": 196.0399932861328
-            },
+                "end": 196.33999328613282
+            }
+        ],
+        "translationEn": "It makes its way over every corner of my back.",
+        "translationVi": "Nó lướt qua từng góc cạnh trên lưng tôi."
+    },
+    {
+        "text": "und ist erst zufrieden,",
+        "start": 195.93999328613282,
+        "end": 198.27999572753907,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 196.0399932861328,
+                "start": 195.93999328613282,
                 "end": 196.6999969482422
             },
             {
@@ -2079,11 +2309,20 @@
             {
                 "word": "zufrieden,",
                 "start": 197.33999633789062,
-                "end": 197.97999572753906
-            },
+                "end": 198.27999572753907
+            }
+        ],
+        "translationEn": "and is only satisfied,",
+        "translationVi": "và chỉ hài lòng khi,"
+    },
+    {
+        "text": "wenn mein komplettes T-Shirt durchnässt ist.",
+        "start": 198.31999816894532,
+        "end": 201.74000244140626,
+        "wordTimings": [
             {
                 "word": "wenn",
-                "start": 198.4199981689453,
+                "start": 198.31999816894532,
                 "end": 198.47999572753906
             },
             {
@@ -2112,13 +2351,13 @@
                 "end": 201.74000244140626
             }
         ],
-        "translationEn": "It makes its way over every inch of my back and is only satisfied when my entire T-shirt is soaked.",
-        "translationVi": "Nó lướt qua từng góc cạnh trên lưng tôi và chỉ hài lòng khi chiếc áo phông của tôi hoàn toàn ướt sũng."
+        "translationEn": "when my entire T-shirt is soaked.",
+        "translationVi": "khi áo phông của tôi hoàn toàn ướt sũng."
     },
     {
-        "text": "Oben angekommen schaue ich zurück und freue mich jetzt schon darauf, diesen Berg später wieder hinunterzufahren.",
+        "text": "Oben angekommen schaue ich zurück",
         "start": 202.76000061035157,
-        "end": 209.3,
+        "end": 204.77999572753907,
         "wordTimings": [
             {
                 "word": "Oben",
@@ -2143,11 +2382,20 @@
             {
                 "word": "zurück",
                 "start": 204.13999938964844,
-                "end": 204.47999572753906
-            },
+                "end": 204.77999572753907
+            }
+        ],
+        "translationEn": "When I reach the top, I look back.",
+        "translationVi": "Khi đến đỉnh, tôi nhìn lại."
+    },
+    {
+        "text": "und freue mich jetzt schon darauf,",
+        "start": 204.37999572753907,
+        "end": 206.6999938964844,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 204.47999572753906,
+                "start": 204.37999572753907,
                 "end": 204.8800048828125
             },
             {
@@ -2173,11 +2421,20 @@
             {
                 "word": "darauf,",
                 "start": 206.1199951171875,
-                "end": 206.39999389648438
-            },
+                "end": 206.6999938964844
+            }
+        ],
+        "translationEn": "and I am already looking forward to it,",
+        "translationVi": "và tôi đã rất mong chờ điều đó,"
+    },
+    {
+        "text": "diesen Berg später wieder hinunter zu fahren.",
+        "start": 206.9800018310547,
+        "end": 209.85999755859376,
+        "wordTimings": [
             {
                 "word": "diesen",
-                "start": 207.0800018310547,
+                "start": 206.9800018310547,
                 "end": 207.1999969482422
             },
             {
@@ -2196,13 +2453,23 @@
                 "end": 208.39999389648438
             },
             {
-                "word": "hinunterzufahren.",
+                "word": "hinunter",
                 "start": 208.39999389648438,
-                "end": 209.3
+                "end": 209
+            },
+            {
+                "word": "zu",
+                "start": 209,
+                "end": 209.55999755859375
+            },
+            {
+                "word": "fahren.",
+                "start": 209.55999755859375,
+                "end": 209.85999755859376
             }
         ],
-        "translationEn": "Once I reach the top, I look back and am already looking forward to riding down this mountain later.",
-        "translationVi": "Khi đến đỉnh, tôi nhìn lại và đã háo hức mong chờ việc xuống núi sau này."
+        "translationEn": "to ride down this mountain again later.",
+        "translationVi": "đi xuống ngọn núi này sau này."
     },
     {
         "text": "Ich biege in einen kleinen Park ein.",
@@ -2305,12 +2572,12 @@
             }
         ],
         "translationEn": "In such a park, I learned to ride a bike when I was younger.",
-        "translationVi": "Tôi đã học đạp xe trong một công viên như vậy trước đây."
+        "translationVi": "Trong một công viên như vậy, tôi đã học đạp xe hồi trước."
     },
     {
-        "text": "Nach etlichen Runden, vielen Monaten und etwas Mut war ich bereit, die Stützräder abzulegen und endlich Fahrrad zu fahren.",
+        "text": "Nach etlichen Runden, vielen Monaten und etwas Mut",
         "start": 218.53999938964844,
-        "end": 228.35999755859376,
+        "end": 223.12000732421876,
         "wordTimings": [
             {
                 "word": "Nach",
@@ -2350,11 +2617,20 @@
             {
                 "word": "Mut",
                 "start": 222.5399932861328,
-                "end": 222.82000732421875
-            },
+                "end": 223.12000732421876
+            }
+        ],
+        "translationEn": "After several rounds, many months, and a bit of courage",
+        "translationVi": "Sau nhiều vòng, nhiều tháng và một chút dũng cảm"
+    },
+    {
+        "text": "war ich bereit, die Stützräder abzulegen",
+        "start": 222.72000732421876,
+        "end": 226.21999816894532,
+        "wordTimings": [
             {
                 "word": "war",
-                "start": 222.82000732421875,
+                "start": 222.72000732421876,
                 "end": 223.47999572753906
             },
             {
@@ -2380,11 +2656,20 @@
             {
                 "word": "abzulegen",
                 "start": 225.10000610351562,
-                "end": 225.9199981689453
-            },
+                "end": 226.21999816894532
+            }
+        ],
+        "translationEn": "I was ready to take off the training wheels.",
+        "translationVi": "tôi đã sẵn sàng để bỏ bánh xe hỗ trợ"
+    },
+    {
+        "text": "und endlich Fahrrad zu fahren.",
+        "start": 225.81999816894532,
+        "end": 228.35999755859376,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 225.9199981689453,
+                "start": 225.81999816894532,
                 "end": 226.52000427246094
             },
             {
@@ -2408,13 +2693,13 @@
                 "end": 228.35999755859376
             }
         ],
-        "translationEn": "After several rounds, many months, and a bit of courage, I was ready to take off the training wheels and finally ride a bike.",
-        "translationVi": "Sau nhiều vòng, nhiều tháng và một chút can đảm, tôi đã sẵn sàng để bỏ bánh xe phụ và cuối cùng đi xe đạp."
+        "translationEn": "and finally to ride a bike.",
+        "translationVi": "và cuối cùng là đi xe đạp."
     },
     {
-        "text": "Der Moment, in dem die Füße den Boden verlassen und man auf sein Gleichgewicht angewiesen ist, dauerte nur wenige Millisekunden an.",
+        "text": "Der Moment, in dem die Füße den Boden verlassen",
         "start": 229.37999572753907,
-        "end": 239.47999267578126,
+        "end": 233.1999938964844,
         "wordTimings": [
             {
                 "word": "Der",
@@ -2459,11 +2744,20 @@
             {
                 "word": "verlassen",
                 "start": 232.33999633789062,
-                "end": 232.89999389648438
-            },
+                "end": 233.1999938964844
+            }
+        ],
+        "translationEn": "The moment when the feet leave the ground.",
+        "translationVi": "Khoảnh khắc khi đôi chân rời khỏi mặt đất"
+    },
+    {
+        "text": "und man auf sein Gleichgewicht angewiesen ist,",
+        "start": 232.79999389648438,
+        "end": 236.02000122070314,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 232.89999389648438,
+                "start": 232.79999389648438,
                 "end": 233.25999450683594
             },
             {
@@ -2494,11 +2788,20 @@
             {
                 "word": "ist,",
                 "start": 235.32000732421875,
-                "end": 235.72000122070312
-            },
+                "end": 236.02000122070314
+            }
+        ],
+        "translationEn": "and one relies on their balance,",
+        "translationVi": "và người ta phụ thuộc vào sự cân bằng của mình,"
+    },
+    {
+        "text": "dauerte nur wenige Millisekunden an.",
+        "start": 236.42000427246094,
+        "end": 239.47999267578126,
+        "wordTimings": [
             {
                 "word": "dauerte",
-                "start": 236.52000427246094,
+                "start": 236.42000427246094,
                 "end": 236.5800018310547
             },
             {
@@ -2522,13 +2825,13 @@
                 "end": 239.47999267578126
             }
         ],
-        "translationEn": "The moment when the feet leave the ground and one relies on their balance lasted only a few milliseconds.",
-        "translationVi": "Khoảnh khắc khi đôi chân rời khỏi mặt đất và bạn phải dựa vào sự cân bằng của mình chỉ kéo dài vài mili giây."
+        "translationEn": "lasted only a few milliseconds.",
+        "translationVi": "chỉ kéo dài vài mili giây."
     },
     {
-        "text": "Die Angst war zu groß, die Angst vor dem Fall, dem Schmerz, dem Versagen.",
+        "text": "Die Angst war zu groß,",
         "start": 240.4800018310547,
-        "end": 246.3,
+        "end": 241.9600036621094,
         "wordTimings": [
             {
                 "word": "Die",
@@ -2553,11 +2856,20 @@
             {
                 "word": "groß,",
                 "start": 241.4199981689453,
-                "end": 241.66000366210938
-            },
+                "end": 241.9600036621094
+            }
+        ],
+        "translationEn": "The fear was too great,",
+        "translationVi": "Nỗi sợ hãi quá lớn,"
+    },
+    {
+        "text": "die Angst vor dem Fall, dem Schmerz, dem Versagen.",
+        "start": 242.06000366210938,
+        "end": 246.3,
+        "wordTimings": [
             {
                 "word": "die",
-                "start": 242.16000366210938,
+                "start": 242.06000366210938,
                 "end": 242.32000732421875
             },
             {
@@ -2601,8 +2913,8 @@
                 "end": 246.3
             }
         ],
-        "translationEn": "The fear was too great, the fear of falling, of pain, of failure.",
-        "translationVi": "Nỗi sợ quá lớn, nỗi sợ về sự thất bại, nỗi đau, sự thất bại."
+        "translationEn": "the fear of falling, of pain, of failure.",
+        "translationVi": "nỗi sợ hãi trước sự thất bại, nỗi đau, sự không thành công."
     },
     {
         "text": "Trotzdem versuchen die meisten von uns es weiter.",
@@ -2651,7 +2963,7 @@
             }
         ],
         "translationEn": "Nevertheless, most of us keep trying.",
-        "translationVi": "Tuy nhiên, hầu hết trong số chúng ta vẫn cố gắng tiếp tục."
+        "translationVi": "Tuy nhiên, hầu hết chúng ta vẫn cố gắng tiếp tục."
     },
     {
         "text": "Die wenigsten geben auf.",
@@ -2680,12 +2992,12 @@
             }
         ],
         "translationEn": "Few give up.",
-        "translationVi": "Ít người bỏ cuộc."
+        "translationVi": "Ít người từ bỏ."
     },
     {
-        "text": "Der Spaß ist einfach zu groß und der Augenblick, in dem man das Fahrrad zum ersten Mal über den Asphalt gleiten lässt, ist unbeschreiblich.",
+        "text": "Der Spaß ist einfach zu groß,",
         "start": 253.42000427246094,
-        "end": 263.4600036621094,
+        "end": 255.4600036621094,
         "wordTimings": [
             {
                 "word": "Der",
@@ -2713,13 +3025,22 @@
                 "end": 254.8800048828125
             },
             {
-                "word": "groß",
+                "word": "groß,",
                 "start": 254.8800048828125,
-                "end": 255.16000366210938
-            },
+                "end": 255.4600036621094
+            }
+        ],
+        "translationEn": "The fun is just too great,",
+        "translationVi": "Niềm vui thật sự quá lớn,"
+    },
+    {
+        "text": "und der Augenblick, in dem man das Fahrrad zum ersten Mal",
+        "start": 255.06000366210938,
+        "end": 259.75999145507814,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 255.16000366210938,
+                "start": 255.06000366210938,
                 "end": 256.05999755859375
             },
             {
@@ -2770,11 +3091,20 @@
             {
                 "word": "Mal",
                 "start": 259.1000061035156,
-                "end": 259.4599914550781
-            },
+                "end": 259.75999145507814
+            }
+        ],
+        "translationEn": "and the moment when one rides the bicycle for the first time",
+        "translationVi": "và khoảnh khắc mà người ta lần đầu tiên đi xe đạp"
+    },
+    {
+        "text": "über den Asphalt gleiten lässt, ist unbeschreiblich.",
+        "start": 259.3599914550781,
+        "end": 263.4600036621094,
+        "wordTimings": [
             {
                 "word": "über",
-                "start": 259.4599914550781,
+                "start": 259.3599914550781,
                 "end": 259.67999267578125
             },
             {
@@ -2808,13 +3138,13 @@
                 "end": 263.4600036621094
             }
         ],
-        "translationEn": "The fun is just too great, and the moment you let the bike glide over the asphalt for the first time is indescribable.",
-        "translationVi": "Niềm vui thật sự quá lớn và khoảnh khắc khi bạn lần đầu tiên để chiếc xe đạp lướt trên mặt đường nhựa thật không thể diễn tả được."
+        "translationEn": "gliding over the asphalt is indescribable.",
+        "translationVi": "lướt trên mặt đường nhựa, thật không thể diễn tả."
     },
     {
-        "text": "Lustig, wie Orte vergessen geglaubte Erinnerungen in einem wecken oder Erinnerungen sind die Architekten unserer Identität.",
+        "text": "Lustig, wie Orte vergessen geglaubte Erinnerungen in einem wecken.",
         "start": 264.660009765625,
-        "end": 275.59998779296876,
+        "end": 269.47999267578126,
         "wordTimings": [
             {
                 "word": "Lustig,",
@@ -2857,18 +3187,22 @@
                 "end": 268.8999938964844
             },
             {
-                "word": "wecken",
+                "word": "wecken.",
                 "start": 268.8999938964844,
-                "end": 269.20001220703125
-            },
-            {
-                "word": "oder",
-                "start": 269.3999938964844,
-                "end": 269.5400085449219
-            },
+                "end": 269.47999267578126
+            }
+        ],
+        "translationEn": "Funny how places can awaken forgotten memories in you.",
+        "translationVi": "Thú vị làm sao, những nơi chốn đánh thức những ký ức tưởng chừng đã bị quên lãng."
+    },
+    {
+        "text": "Erinnerungen sind die Architekten unserer Identität.",
+        "start": 271.44000854492185,
+        "end": 275.59998779296876,
+        "wordTimings": [
             {
                 "word": "Erinnerungen",
-                "start": 271.5199890136719,
+                "start": 271.44000854492185,
                 "end": 272.2200012207031
             },
             {
@@ -2893,12 +3227,12 @@
             },
             {
                 "word": "Identität.",
-                "start": 274.5,
+                "start": 274.5400085449219,
                 "end": 275.59998779296876
             }
         ],
-        "translationEn": "Funny how places can awaken forgotten memories in us, or memories are the architects of our identity.",
-        "translationVi": "Thú vị làm sao, những nơi có thể khiến ta nhớ lại những kỷ niệm đã bị lãng quên, hoặc những kỷ niệm là kiến trúc sư của bản sắc chúng ta."
+        "translationEn": "Memories are the architects of our identity.",
+        "translationVi": "Ký ức là những kiến trúc sư của danh tính chúng ta."
     },
     {
         "text": "Ohne gewisse Erinnerungen wäre ich heute ein anderer Mensch.",
@@ -2908,11 +3242,11 @@
             {
                 "word": "Ohne",
                 "start": 277.0199951171875,
-                "end": 277.17999267578125
+                "end": 277.20001220703125
             },
             {
                 "word": "gewisse",
-                "start": 277.17999267578125,
+                "start": 277.20001220703125,
                 "end": 277.760009765625
             },
             {
@@ -2957,7 +3291,7 @@
     {
         "text": "Ich fühle mich besser, lebendiger, nicht mehr gelähmt.",
         "start": 282.91998901367185,
-        "end": 287.63999633789064,
+        "end": 287.62000732421876,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -2972,45 +3306,45 @@
             {
                 "word": "mich",
                 "start": 283.44000244140625,
-                "end": 283.6400146484375
+                "end": 283.6199951171875
             },
             {
                 "word": "besser,",
-                "start": 283.6400146484375,
-                "end": 284.05999755859375
+                "start": 283.6199951171875,
+                "end": 283.94000244140625
             },
             {
                 "word": "lebendiger,",
-                "start": 284.9800109863281,
+                "start": 285.0400085449219,
                 "end": 285.5400085449219
             },
             {
                 "word": "nicht",
-                "start": 286.4599914550781,
-                "end": 286.55999755859375
+                "start": 286.3800048828125,
+                "end": 286.5400085449219
             },
             {
                 "word": "mehr",
-                "start": 286.55999755859375,
-                "end": 286.82000732421875
+                "start": 286.5400085449219,
+                "end": 286.8399963378906
             },
             {
                 "word": "gelähmt.",
-                "start": 286.82000732421875,
-                "end": 287.63999633789064
+                "start": 286.8399963378906,
+                "end": 287.62000732421876
             }
         ],
         "translationEn": "I feel better, more alive, no longer paralyzed.",
         "translationVi": "Tôi cảm thấy tốt hơn, sống động hơn, không còn bị tê liệt nữa."
     },
     {
-        "text": "Ich weiß, dass es nur eine Frage der Zeit ist, bis sich die Angst wieder bei mir meldet.",
-        "start": 288.5199951171875,
-        "end": 294.4199951171875,
+        "text": "Ich weiß, dass es nur eine Frage der Zeit ist,",
+        "start": 288.44000854492185,
+        "end": 292.1800048828125,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 288.5199951171875,
+                "start": 288.44000854492185,
                 "end": 288.739990234375
             },
             {
@@ -3020,7 +3354,7 @@
             },
             {
                 "word": "dass",
-                "start": 289.7200012207031,
+                "start": 289.70001220703125,
                 "end": 289.79998779296875
             },
             {
@@ -3056,11 +3390,20 @@
             {
                 "word": "ist,",
                 "start": 291.5400085449219,
-                "end": 292.1600036621094
-            },
+                "end": 292.1800048828125
+            }
+        ],
+        "translationEn": "I know that it is only a matter of time,",
+        "translationVi": "Tôi biết rằng chỉ còn là vấn đề thời gian,"
+    },
+    {
+        "text": "bis sich die Angst wieder bei mir meldet.",
+        "start": 292.2800048828125,
+        "end": 294.4199951171875,
+        "wordTimings": [
             {
                 "word": "bis",
-                "start": 292.3800048828125,
+                "start": 292.2800048828125,
                 "end": 292.3999938964844
             },
             {
@@ -3071,11 +3414,11 @@
             {
                 "word": "die",
                 "start": 292.5799865722656,
-                "end": 292.8800048828125
+                "end": 292.9200134277344
             },
             {
                 "word": "Angst",
-                "start": 292.8800048828125,
+                "start": 292.9200134277344,
                 "end": 293.1199951171875
             },
             {
@@ -3099,17 +3442,17 @@
                 "end": 294.4199951171875
             }
         ],
-        "translationEn": "I know it's only a matter of time before the fear comes back to me.",
-        "translationVi": "Tôi biết rằng chỉ là vấn đề thời gian trước khi nỗi sợ hãi lại quay trở lại với tôi."
+        "translationEn": "until the fear comes back to me.",
+        "translationVi": "cho đến khi nỗi sợ hãi lại xuất hiện trong tôi."
     },
     {
-        "text": "Ich befürchte sogar, dass, sobald ich meine Wohnung betrete, die Angst aus den Wänden zurück in meinen Körper kriecht.",
-        "start": 295.4,
-        "end": 303.24000244140626,
+        "text": "Ich befürchte sogar,",
+        "start": 295.3599914550781,
+        "end": 296.97999267578126,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 295.4,
+                "start": 295.3599914550781,
                 "end": 295.6400146484375
             },
             {
@@ -3120,11 +3463,20 @@
             {
                 "word": "sogar,",
                 "start": 296.20001220703125,
-                "end": 296.6600036621094
-            },
+                "end": 296.97999267578126
+            }
+        ],
+        "translationEn": "I even fear that,",
+        "translationVi": "Tôi thậm chí còn lo lắng,"
+    },
+    {
+        "text": "dass, sobald ich meine Wohnung betrete,",
+        "start": 296.6999877929687,
+        "end": 299.1599853515625,
+        "wordTimings": [
             {
                 "word": "dass,",
-                "start": 296.82000732421875,
+                "start": 296.6999877929687,
                 "end": 296.9599914550781
             },
             {
@@ -3135,11 +3487,11 @@
             {
                 "word": "ich",
                 "start": 297.5199890136719,
-                "end": 297.739990234375
+                "end": 297.7200012207031
             },
             {
                 "word": "meine",
-                "start": 297.739990234375,
+                "start": 297.7200012207031,
                 "end": 298.0199890136719
             },
             {
@@ -3150,11 +3502,20 @@
             {
                 "word": "betrete,",
                 "start": 298.3399963378906,
-                "end": 298.8599853515625
-            },
+                "end": 299.1599853515625
+            }
+        ],
+        "translationEn": "that as soon as I enter my apartment,",
+        "translationVi": "rằng, ngay khi tôi bước vào căn hộ của mình,"
+    },
+    {
+        "text": "die Angst aus den Wänden zurück in meinen Körper kriecht.",
+        "start": 299.29999389648435,
+        "end": 303.24000244140626,
+        "wordTimings": [
             {
                 "word": "die",
-                "start": 299.3999938964844,
+                "start": 299.29999389648435,
                 "end": 299.94000244140625
             },
             {
@@ -3180,11 +3541,11 @@
             {
                 "word": "zurück",
                 "start": 301.05999755859375,
-                "end": 301.6199951171875
+                "end": 301.6400146484375
             },
             {
                 "word": "in",
-                "start": 301.6199951171875,
+                "start": 301.6400146484375,
                 "end": 301.8399963378906
             },
             {
@@ -3203,27 +3564,27 @@
                 "end": 303.24000244140626
             }
         ],
-        "translationEn": "I even fear that as soon as I enter my apartment, the fear will crawl back from the walls into my body.",
-        "translationVi": "Tôi thậm chí lo sợ rằng, ngay khi tôi bước vào căn hộ của mình, nỗi sợ hãi sẽ từ những bức tường quay trở lại cơ thể tôi."
+        "translationEn": "the fear crawls back from the walls into my body.",
+        "translationVi": "nỗi sợ hãi bò trở lại trong cơ thể tôi từ những bức tường."
     },
     {
         "text": "Als wäre so etwas möglich.",
-        "start": 303.9799865722656,
+        "start": 304.0000061035156,
         "end": 305.7200134277344,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 303.9799865722656,
+                "start": 304.0000061035156,
                 "end": 304.3800048828125
             },
             {
                 "word": "wäre",
                 "start": 304.3800048828125,
-                "end": 304.5400085449219
+                "end": 304.55999755859375
             },
             {
                 "word": "so",
-                "start": 304.5400085449219,
+                "start": 304.55999755859375,
                 "end": 304.8599853515625
             },
             {
@@ -3242,12 +3603,12 @@
     },
     {
         "text": "Siehst du, ich fange schon an zu spinnen.",
-        "start": 305.82001342773435,
+        "start": 305.79999389648435,
         "end": 307.75999145507814,
         "wordTimings": [
             {
                 "word": "Siehst",
-                "start": 305.82001342773435,
+                "start": 305.79999389648435,
                 "end": 306.05999755859375
             },
             {
@@ -3287,85 +3648,85 @@
             }
         ],
         "translationEn": "You see, I'm already starting to go crazy.",
-        "translationVi": "Bạn thấy đấy, tôi đã bắt đầu điên rồi."
+        "translationVi": "Bạn thấy đấy, tôi đã bắt đầu trở nên điên rồ rồi."
     },
     {
         "text": "Ich mache mich langsam auf den Rückweg.",
-        "start": 308.5199951171875,
-        "end": 311.060009765625,
+        "start": 308.139990234375,
+        "end": 311.0799987792969,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 308.5199951171875,
-                "end": 308.8999938964844
+                "start": 308.139990234375,
+                "end": 308.8399963378906
             },
             {
                 "word": "mache",
-                "start": 308.8999938964844,
+                "start": 308.8399963378906,
                 "end": 309.1199951171875
             },
             {
                 "word": "mich",
                 "start": 309.1199951171875,
-                "end": 309.44000244140625
+                "end": 309.4200134277344
             },
             {
                 "word": "langsam",
-                "start": 309.44000244140625,
-                "end": 309.9200134277344
+                "start": 309.4200134277344,
+                "end": 309.94000244140625
             },
             {
                 "word": "auf",
-                "start": 309.9200134277344,
+                "start": 309.94000244140625,
                 "end": 310.1400146484375
             },
             {
                 "word": "den",
                 "start": 310.1400146484375,
-                "end": 310.3800048828125
+                "end": 310.3999938964844
             },
             {
                 "word": "Rückweg.",
-                "start": 310.3800048828125,
-                "end": 311.060009765625
+                "start": 310.3999938964844,
+                "end": 311.0799987792969
             }
         ],
         "translationEn": "I am slowly making my way back.",
-        "translationVi": "Tôi từ từ trên đường trở về."
+        "translationVi": "Tôi từ từ trở về."
     },
     {
         "text": "Ich kann schließlich nicht ewig vor ihr davonlaufen.",
-        "start": 311.67999877929685,
-        "end": 314.8,
+        "start": 311.8400024414062,
+        "end": 314.8199890136719,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 311.67999877929685,
-                "end": 312
+                "start": 311.8400024414062,
+                "end": 311.9800109863281
             },
             {
                 "word": "kann",
-                "start": 312,
+                "start": 311.9800109863281,
                 "end": 312.1600036621094
             },
             {
                 "word": "schließlich",
                 "start": 312.1600036621094,
-                "end": 312.55999755859375
+                "end": 312.6000061035156
             },
             {
                 "word": "nicht",
-                "start": 312.55999755859375,
-                "end": 313
+                "start": 312.6000061035156,
+                "end": 312.9800109863281
             },
             {
                 "word": "ewig",
-                "start": 313,
-                "end": 313.3800048828125
+                "start": 312.9800109863281,
+                "end": 313.4200134277344
             },
             {
                 "word": "vor",
-                "start": 313.3800048828125,
+                "start": 313.4200134277344,
                 "end": 313.70001220703125
             },
             {
@@ -3375,46 +3736,55 @@
             },
             {
                 "word": "davonlaufen.",
-                "start": 313.82000732421875,
-                "end": 314.8
+                "start": 313.9200134277344,
+                "end": 314.8199890136719
             }
         ],
         "translationEn": "I can't keep running away from her forever.",
-        "translationVi": "Cuối cùng thì tôi cũng không thể mãi mãi chạy trốn khỏi cô ấy."
+        "translationVi": "Cuối cùng thì tôi cũng không thể chạy trốn khỏi cô ấy mãi mãi."
     },
     {
-        "text": "Ich hoffe nur, dass sie mich nicht allzu oft besuchen kommt.",
-        "start": 315.44000854492185,
-        "end": 318.90000610351564,
+        "text": "Ich hoffe nur,",
+        "start": 315.41998901367185,
+        "end": 316.37998657226564,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 315.44000854492185,
-                "end": 315.5799865722656
+                "start": 315.41998901367185,
+                "end": 315.6000061035156
             },
             {
                 "word": "hoffe",
-                "start": 315.5799865722656,
+                "start": 315.6000061035156,
                 "end": 315.739990234375
             },
             {
                 "word": "nur,",
                 "start": 315.739990234375,
-                "end": 316.0799865722656
-            },
+                "end": 316.37998657226564
+            }
+        ],
+        "translationEn": "I just hope that,",
+        "translationVi": "Tôi chỉ hy vọng,"
+    },
+    {
+        "text": "dass sie mich nicht allzu oft besuchen kommt.",
+        "start": 316.06000366210935,
+        "end": 318.87998657226564,
+        "wordTimings": [
             {
                 "word": "dass",
-                "start": 316.17999267578125,
-                "end": 316.20001220703125
+                "start": 316.06000366210935,
+                "end": 316.2200012207031
             },
             {
                 "word": "sie",
-                "start": 316.20001220703125,
-                "end": 316.3800048828125
+                "start": 316.2200012207031,
+                "end": 316.3599853515625
             },
             {
                 "word": "mich",
-                "start": 316.3800048828125,
+                "start": 316.3599853515625,
                 "end": 316.55999755859375
             },
             {
@@ -3425,11 +3795,11 @@
             {
                 "word": "allzu",
                 "start": 316.8599853515625,
-                "end": 317.5400085449219
+                "end": 317.55999755859375
             },
             {
                 "word": "oft",
-                "start": 317.5400085449219,
+                "start": 317.55999755859375,
                 "end": 317.7799987792969
             },
             {
@@ -3440,59 +3810,59 @@
             {
                 "word": "kommt.",
                 "start": 318.2200012207031,
-                "end": 318.90000610351564
+                "end": 318.87998657226564
             }
         ],
-        "translationEn": "I just hope that she doesn't come to visit me too often.",
-        "translationVi": "Tôi chỉ hy vọng rằng cô ấy sẽ không đến thăm tôi quá thường xuyên."
+        "translationEn": "that she doesn't come to visit me too often.",
+        "translationVi": "rằng cô ấy không đến thăm tôi quá thường xuyên."
     },
     {
         "text": "Sie fühlt sich nicht gut an.",
-        "start": 319.5000061035156,
-        "end": 322.539990234375,
+        "start": 319.5199951171875,
+        "end": 321.47999267578126,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 319.5000061035156,
+                "start": 319.5199951171875,
                 "end": 319.739990234375
             },
             {
                 "word": "fühlt",
                 "start": 319.739990234375,
-                "end": 319.9800109863281
+                "end": 319.9599914550781
             },
             {
                 "word": "sich",
-                "start": 319.9800109863281,
+                "start": 319.9599914550781,
                 "end": 320.260009765625
             },
             {
                 "word": "nicht",
                 "start": 320.260009765625,
-                "end": 320.67999267578125
+                "end": 320.6600036621094
             },
             {
                 "word": "gut",
-                "start": 320.67999267578125,
+                "start": 320.6600036621094,
                 "end": 320.94000244140625
             },
             {
                 "word": "an.",
                 "start": 320.94000244140625,
-                "end": 322.539990234375
+                "end": 321.47999267578126
             }
         ],
         "translationEn": "She doesn't feel good.",
         "translationVi": "Cô ấy cảm thấy không khỏe."
     },
     {
-        "text": "Jetzt bin ich aber erst mal froh, dass ich diesen Berg, den ich vorhin so mühsam erklommen habe, jetzt umso mehr genießen kann.",
-        "start": 322.3599914550781,
-        "end": 330.90000610351564,
+        "text": "Jetzt bin ich aber erstmal froh,",
+        "start": 322.3800109863281,
+        "end": 324.63999633789064,
         "wordTimings": [
             {
                 "word": "Jetzt",
-                "start": 322.3599914550781,
+                "start": 322.3800109863281,
                 "end": 322.67999267578125
             },
             {
@@ -3503,31 +3873,35 @@
             {
                 "word": "ich",
                 "start": 323.29998779296875,
-                "end": 323.4200134277344
+                "end": 323.44000244140625
             },
             {
                 "word": "aber",
-                "start": 323.4200134277344,
+                "start": 323.44000244140625,
                 "end": 323.6000061035156
             },
             {
-                "word": "erst",
+                "word": "erstmal",
                 "start": 323.6000061035156,
-                "end": 323.82000732421875
-            },
-            {
-                "word": "mal",
-                "start": 323.82000732421875,
                 "end": 324.1000061035156
             },
             {
                 "word": "froh,",
                 "start": 324.1000061035156,
-                "end": 324.3399963378906
-            },
+                "end": 324.63999633789064
+            }
+        ],
+        "translationEn": "Now I'm just glad,",
+        "translationVi": "Bây giờ tôi cảm thấy vui trước đã,"
+    },
+    {
+        "text": "dass ich diesen Berg, den ich vorhin so mühsam erklommen habe,",
+        "start": 324.3599914550781,
+        "end": 328.1800048828125,
+        "wordTimings": [
             {
                 "word": "dass",
-                "start": 324.4800109863281,
+                "start": 324.3599914550781,
                 "end": 324.5199890136719
             },
             {
@@ -3563,175 +3937,211 @@
             {
                 "word": "so",
                 "start": 326.17999267578125,
-                "end": 326.6199951171875
+                "end": 326.6000061035156
             },
             {
                 "word": "mühsam",
-                "start": 326.6199951171875,
+                "start": 326.6000061035156,
                 "end": 327.0199890136719
             },
             {
                 "word": "erklommen",
                 "start": 327.0199890136719,
-                "end": 327.5400085449219
+                "end": 327.5199890136719
             },
             {
                 "word": "habe,",
-                "start": 327.5400085449219,
-                "end": 327.8800048828125
-            },
+                "start": 327.5199890136719,
+                "end": 328.1800048828125
+            }
+        ],
+        "translationEn": "that I have just so laboriously climbed this mountain,",
+        "translationVi": "rằng tôi đã leo lên ngọn núi này một cách khó khăn trước đó,"
+    },
+    {
+        "text": "jetzt umso mehr genießen kann.",
+        "start": 328.5400146484375,
+        "end": 330.78001098632814,
+        "wordTimings": [
             {
                 "word": "jetzt",
-                "start": 328.6400146484375,
-                "end": 328.94000244140625
+                "start": 328.5400146484375,
+                "end": 328.9599914550781
             },
             {
                 "word": "umso",
-                "start": 328.94000244140625,
+                "start": 328.9599914550781,
                 "end": 329.4599914550781
             },
             {
                 "word": "mehr",
                 "start": 329.4599914550781,
-                "end": 329.739990234375
+                "end": 329.760009765625
             },
             {
                 "word": "genießen",
-                "start": 329.739990234375,
-                "end": 330.1000061035156
+                "start": 329.760009765625,
+                "end": 330.1199951171875
             },
             {
                 "word": "kann.",
-                "start": 330.1000061035156,
-                "end": 330.90000610351564
+                "start": 330.1199951171875,
+                "end": 330.78001098632814
             }
         ],
-        "translationEn": "Now I am just glad that I can enjoy this mountain, which I just climbed so laboriously, all the more.",
-        "translationVi": "Bây giờ tôi thật sự vui vì tôi có thể thưởng thức ngọn núi mà tôi đã phải trèo lên một cách vất vả trước đó nhiều hơn."
+        "translationEn": "can enjoy all the more now.",
+        "translationVi": "bây giờ càng có thể tận hưởng hơn."
     },
     {
-        "text": "Und während ich fest in die Pedalen trete und den Berg hinunterfliege, denke ich daran, dass ich mal Angst vorm Radfahren hatte.",
-        "start": 331.94000854492185,
-        "end": 341.1800048828125,
+        "text": "Und während ich in die Pedalen trete",
+        "start": 331.82001342773435,
+        "end": 334.35999755859376,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 331.94000854492185,
-                "end": 332.6000061035156
+                "start": 331.82001342773435,
+                "end": 332.5199890136719
             },
             {
                 "word": "während",
-                "start": 332.6000061035156,
+                "start": 332.5199890136719,
                 "end": 332.6199951171875
             },
             {
                 "word": "ich",
                 "start": 332.6199951171875,
-                "end": 332.8599853515625
-            },
-            {
-                "word": "fest",
-                "start": 332.8599853515625,
-                "end": 333.05999755859375
+                "end": 332.9200134277344
             },
             {
                 "word": "in",
-                "start": 333.05999755859375,
-                "end": 333.20001220703125
+                "start": 332.9200134277344,
+                "end": 333.1600036621094
             },
             {
                 "word": "die",
-                "start": 333.20001220703125,
-                "end": 333.44000244140625
+                "start": 333.1600036621094,
+                "end": 333.3800048828125
             },
             {
                 "word": "Pedalen",
-                "start": 333.44000244140625,
-                "end": 333.70001220703125
+                "start": 333.3800048828125,
+                "end": 333.7200012207031
             },
             {
                 "word": "trete",
-                "start": 333.70001220703125,
-                "end": 334.1000061035156
-            },
+                "start": 333.7200012207031,
+                "end": 334.35999755859376
+            }
+        ],
+        "translationEn": "And while I pedal",
+        "translationVi": "Và trong khi tôi đạp xe"
+    },
+    {
+        "text": "und den Berg hinunter fliege,",
+        "start": 333.9599975585937,
+        "end": 336.0799987792969,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 334.1000061035156,
+                "start": 333.9599975585937,
                 "end": 334.3399963378906
             },
             {
                 "word": "den",
                 "start": 334.3399963378906,
-                "end": 334.6400146484375
+                "end": 334.7200012207031
             },
             {
                 "word": "Berg",
-                "start": 334.6400146484375,
-                "end": 334.79998779296875
+                "start": 334.7200012207031,
+                "end": 334.8399963378906
             },
             {
-                "word": "hinunterfliege,",
-                "start": 334.79998779296875,
-                "end": 335.3800048828125
+                "word": "hinunter",
+                "start": 334.8399963378906,
+                "end": 335.3999938964844
             },
+            {
+                "word": "fliege,",
+                "start": 335.3999938964844,
+                "end": 336.0799987792969
+            }
+        ],
+        "translationEn": "and fly down the mountain,",
+        "translationVi": "và bay xuống núi,"
+    },
+    {
+        "text": "denke ich daran,",
+        "start": 336.82001342773435,
+        "end": 337.8199890136719,
+        "wordTimings": [
             {
                 "word": "denke",
-                "start": 336.94000244140625,
-                "end": 336.9800109863281
+                "start": 336.82001342773435,
+                "end": 337
             },
             {
                 "word": "ich",
-                "start": 336.9800109863281,
-                "end": 337.260009765625
+                "start": 337,
+                "end": 337.239990234375
             },
             {
                 "word": "daran,",
-                "start": 337.260009765625,
-                "end": 338.1600036621094
-            },
+                "start": 337.239990234375,
+                "end": 337.8199890136719
+            }
+        ],
+        "translationEn": "I think about it,",
+        "translationVi": "tôi nghĩ đến điều đó,"
+    },
+    {
+        "text": "dass ich mal Angst vorm Radfahren hatte.",
+        "start": 338.3800109863281,
+        "end": 341.1800048828125,
+        "wordTimings": [
             {
                 "word": "dass",
-                "start": 338.3999938964844,
-                "end": 338.5400085449219
+                "start": 338.3800109863281,
+                "end": 338.5199890136719
             },
             {
                 "word": "ich",
-                "start": 338.5400085449219,
-                "end": 338.739990234375
+                "start": 338.5199890136719,
+                "end": 338.7200012207031
             },
             {
                 "word": "mal",
-                "start": 338.739990234375,
-                "end": 339.2200012207031
+                "start": 338.7200012207031,
+                "end": 339.1600036621094
             },
             {
                 "word": "Angst",
-                "start": 339.2200012207031,
-                "end": 339.5
+                "start": 339.1600036621094,
+                "end": 339.4800109863281
             },
             {
                 "word": "vorm",
-                "start": 339.5,
+                "start": 339.4800109863281,
                 "end": 339.8599853515625
             },
             {
                 "word": "Radfahren",
                 "start": 339.8599853515625,
-                "end": 340.5400085449219
+                "end": 340.55999755859375
             },
             {
                 "word": "hatte.",
-                "start": 340.5400085449219,
+                "start": 340.55999755859375,
                 "end": 341.1800048828125
             }
         ],
-        "translationEn": "And while I firmly pedal and fly down the hill, I think about how I used to be afraid of cycling.",
-        "translationVi": "Và trong khi tôi đạp mạnh vào bàn đạp và bay xuống dốc, tôi nhớ rằng tôi đã từng sợ đi xe đạp."
+        "translationEn": "that I was once afraid of cycling.",
+        "translationVi": "rằng tôi đã từng sợ đi xe đạp."
     },
     {
-        "text": "Also bis nächste Woche, Tschüss!",
+        "text": "Also bis nächste Woche.",
         "start": 342.139990234375,
-        "end": 346.25999145507814,
+        "end": 344.97999267578126,
         "wordTimings": [
             {
                 "word": "Also",
@@ -3741,55 +4151,64 @@
             {
                 "word": "bis",
                 "start": 342.5799865722656,
-                "end": 343.6400146484375
+                "end": 343.6199951171875
             },
             {
                 "word": "nächste",
-                "start": 343.6400146484375,
-                "end": 344.260009765625
+                "start": 343.6199951171875,
+                "end": 344.2799987792969
             },
             {
-                "word": "Woche,",
-                "start": 344.260009765625,
-                "end": 344.67999267578125
-            },
+                "word": "Woche.",
+                "start": 344.2799987792969,
+                "end": 344.97999267578126
+            }
+        ],
+        "translationEn": "So see you next week.",
+        "translationVi": "Vậy hẹn gặp lại vào tuần sau."
+    },
+    {
+        "text": "Tschüss.",
+        "start": 345.56000366210935,
+        "end": 346.25999145507814,
+        "wordTimings": [
             {
-                "word": "Tschüss!",
-                "start": 345.6600036621094,
+                "word": "Tschüss.",
+                "start": 345.56000366210935,
                 "end": 346.25999145507814
             }
         ],
-        "translationEn": "So until next week, bye!",
-        "translationVi": "Vậy hẹn gặp lại vào tuần tới, tạm biệt!"
+        "translationEn": "Goodbye.",
+        "translationVi": "Tạm biệt."
     },
     {
         "text": "Als Mitglied von myGermanShortStories erhaltet ihr monatlich Geschichten.",
-        "start": 346.4599975585937,
+        "start": 346.8599914550781,
         "end": 351.6599853515625,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 346.4599975585937,
-                "end": 347.17999267578125
+                "start": 346.8599914550781,
+                "end": 347.20001220703125
             },
             {
                 "word": "Mitglied",
-                "start": 347.17999267578125,
-                "end": 347.6400146484375
+                "start": 347.20001220703125,
+                "end": 347.6199951171875
             },
             {
                 "word": "von",
-                "start": 347.6400146484375,
-                "end": 348.0199890136719
+                "start": 347.6199951171875,
+                "end": 348.0400085449219
             },
             {
                 "word": "myGermanShortStories",
-                "start": 348.0199890136719,
-                "end": 349.5400085449219
+                "start": 348.0400085449219,
+                "end": 349.5199890136719
             },
             {
                 "word": "erhaltet",
-                "start": 349.5400085449219,
+                "start": 349.5199890136719,
                 "end": 350.05999755859375
             },
             {
@@ -3809,16 +4228,16 @@
             }
         ],
         "translationEn": "As a member of myGermanShortStories, you will receive stories monthly.",
-        "translationVi": "Là thành viên của myGermanShortStories, các bạn sẽ nhận được những câu chuyện hàng tháng."
+        "translationVi": "Là thành viên của myGermanShortStories, bạn sẽ nhận được những câu chuyện hàng tháng."
     },
     {
         "text": "Wir helfen euch, die Texte besser zu verstehen.",
-        "start": 351.94000854492185,
-        "end": 354.85999755859376,
+        "start": 351.91998901367185,
+        "end": 354.8400085449219,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 351.94000854492185,
+                "start": 351.91998901367185,
                 "end": 352.17999267578125
             },
             {
@@ -3829,41 +4248,41 @@
             {
                 "word": "euch,",
                 "start": 352.3599853515625,
-                "end": 352.79998779296875
+                "end": 352.7799987792969
             },
             {
                 "word": "die",
-                "start": 353,
-                "end": 353.0400085449219
+                "start": 352.8999938964844,
+                "end": 353.2200012207031
             },
             {
                 "word": "Texte",
-                "start": 353.0400085449219,
-                "end": 353.6000061035156
+                "start": 353.2200012207031,
+                "end": 353.6400146484375
             },
             {
                 "word": "besser",
-                "start": 353.6000061035156,
-                "end": 353.8800048828125
+                "start": 353.6400146484375,
+                "end": 353.8599853515625
             },
             {
                 "word": "zu",
-                "start": 353.8800048828125,
-                "end": 354.55999755859375
+                "start": 353.8599853515625,
+                "end": 354.32000732421875
             },
             {
                 "word": "verstehen.",
-                "start": 354.55999755859375,
-                "end": 354.85999755859376
+                "start": 354.32000732421875,
+                "end": 354.8400085449219
             }
         ],
         "translationEn": "We help you understand the texts better.",
         "translationVi": "Chúng tôi giúp các bạn hiểu các văn bản tốt hơn."
     },
     {
-        "text": "Ihr könnt zum Beispiel unsere Übersetzungshilfe nutzen und unsere Wörterbuchfunktion.",
+        "text": "Ihr könnt zum Beispiel unsere Übersetzungshilfe nutzen",
         "start": 354.7800048828125,
-        "end": 362.63999633789064,
+        "end": 358.13999633789064,
         "wordTimings": [
             {
                 "word": "Ihr",
@@ -3878,60 +4297,69 @@
             {
                 "word": "zum",
                 "start": 355.05999755859375,
-                "end": 355.760009765625
+                "end": 355.739990234375
             },
             {
                 "word": "Beispiel",
-                "start": 355.760009765625,
-                "end": 355.760009765625
+                "start": 355.739990234375,
+                "end": 355.739990234375
             },
             {
                 "word": "unsere",
-                "start": 355.760009765625,
-                "end": 356.239990234375
+                "start": 355.739990234375,
+                "end": 356.260009765625
             },
             {
                 "word": "Übersetzungshilfe",
-                "start": 356.4800109863281,
-                "end": 357.3999938964844
+                "start": 356.260009765625,
+                "end": 357.4200134277344
             },
             {
                 "word": "nutzen",
-                "start": 357.3999938964844,
-                "end": 357.8599853515625
-            },
+                "start": 357.4200134277344,
+                "end": 358.13999633789064
+            }
+        ],
+        "translationEn": "You can use our translation assistance, for example.",
+        "translationVi": "Các bạn có thể sử dụng công cụ hỗ trợ dịch của chúng tôi, chẳng hạn như."
+    },
+    {
+        "text": "und unsere Wörterbuchfunktion.",
+        "start": 357.7399963378906,
+        "end": 362.6599853515625,
+        "wordTimings": [
             {
                 "word": "und",
-                "start": 357.8599853515625,
+                "start": 357.7399963378906,
                 "end": 360.739990234375
             },
             {
                 "word": "unsere",
                 "start": 360.739990234375,
-                "end": 361.20001220703125
+                "end": 361.2200012207031
             },
             {
                 "word": "Wörterbuchfunktion.",
-                "start": 361.20001220703125,
-                "end": 362.63999633789064
+                "start": 361.2200012207031,
+                "end": 362.6599853515625
             }
         ],
-        "translationEn": "You can use our translation assistance and our dictionary function, for example.",
-        "translationVi": "Các bạn có thể sử dụng ví dụ như công cụ hỗ trợ dịch thuật của chúng tôi và chức năng từ điển của chúng tôi."
+        "translationEn": "and our dictionary function.",
+        "translationVi": "và chức năng từ điển của chúng tôi."
     },
     {
         "text": "Außerdem gibt es zu jeder Geschichte Übungen.",
-        "start": 365.0000061035156,
+        "start": 365.4799865722656,
         "end": 368.560009765625,
         "wordTimings": [
             {
                 "word": "Außerdem",
-                "start": 365.0000061035156,
-                "end": 365.55999755859375
+                "start": 365.4799865722656,
+                "end": 365.5799865722656
             },
             {
                 "word": "gibt",
-                "start": 365.55999755859375,
+                "start": 365.5799865722656,
                 "end": 365.79998779296875
             },
             {
@@ -3942,21 +4370,21 @@
             {
                 "word": "zu",
                 "start": 366.0799865722656,
-                "end": 366.3399963378906
+                "end": 366.32000732421875
             },
             {
                 "word": "jeder",
-                "start": 366.3399963378906,
-                "end": 366.6600036621094
+                "start": 366.32000732421875,
+                "end": 366.6400146484375
             },
             {
                 "word": "Geschichte",
-                "start": 366.6600036621094,
-                "end": 367.2799987792969
+                "start": 366.6400146484375,
+                "end": 367.239990234375
             },
             {
                 "word": "Übungen.",
-                "start": 367.2799987792969,
+                "start": 367.239990234375,
                 "end": 368.560009765625
             }
         ],
@@ -3971,11 +4399,11 @@
             {
                 "word": "Zum",
                 "start": 370.56000366210935,
-                "end": 370.7799987792969
+                "end": 370.8599853515625
             },
             {
                 "word": "Beispiel",
-                "start": 370.7799987792969,
+                "start": 370.8599853515625,
                 "end": 371.1000061035156
             },
             {
@@ -3996,45 +4424,40 @@
             {
                 "word": "Artikeltrainer",
                 "start": 372.20001220703125,
-                "end": 373.0400085449219
+                "end": 373.05999755859375
             },
             {
                 "word": "benutzen.",
-                "start": 373.0400085449219,
+                "start": 373.05999755859375,
                 "end": 373.8199890136719
             }
         ],
         "translationEn": "For example, you can use our article trainer.",
-        "translationVi": "Chẳng hạn, các bạn có thể sử dụng huấn luyện viên bài viết của chúng tôi."
+        "translationVi": "Chẳng hạn, các bạn có thể sử dụng huấn luyện viên từ vựng của chúng tôi."
     },
     {
-        "text": "Probiert es mal aus!",
+        "text": "Probiert's mal aus.",
         "start": 374.2599853515625,
         "end": 375.3199890136719,
         "wordTimings": [
             {
-                "word": "Probiert",
+                "word": "Probiert's",
                 "start": 374.2599853515625,
-                "end": 374.44000244140625
-            },
-            {
-                "word": "es",
-                "start": 374.44000244140625,
-                "end": 374.5400085449219
+                "end": 374.55999755859375
             },
             {
                 "word": "mal",
-                "start": 374.5400085449219,
-                "end": 374.7799987792969
+                "start": 374.55999755859375,
+                "end": 374.760009765625
             },
             {
-                "word": "aus!",
-                "start": 374.7799987792969,
+                "word": "aus.",
+                "start": 374.760009765625,
                 "end": 375.3199890136719
             }
         ],
-        "translationEn": "Give it a try!",
-        "translationVi": "Hãy thử xem!"
+        "translationEn": "Give it a try.",
+        "translationVi": "Hãy thử xem sao."
     },
     {
         "text": "Mit unserem Aussprachetool könnt ihr an eurer Aussprache feilen.",
@@ -4044,16 +4467,16 @@
             {
                 "word": "Mit",
                 "start": 379.2399963378906,
-                "end": 379.55999755859375
+                "end": 379.5400085449219
             },
             {
                 "word": "unserem",
-                "start": 379.55999755859375,
-                "end": 379.94000244140625
+                "start": 379.5400085449219,
+                "end": 379.9200134277344
             },
             {
                 "word": "Aussprachetool",
-                "start": 379.94000244140625,
+                "start": 379.9200134277344,
                 "end": 380.8800048828125
             },
             {
@@ -4064,11 +4487,11 @@
             {
                 "word": "ihr",
                 "start": 381.20001220703125,
-                "end": 381.3599853515625
+                "end": 381.3399963378906
             },
             {
                 "word": "an",
-                "start": 381.3599853515625,
+                "start": 381.3399963378906,
                 "end": 381.5799865722656
             },
             {
@@ -4092,37 +4515,37 @@
     },
     {
         "text": "Und natürlich gibt es auch ein paar Grammatikübungen.",
-        "start": 384.160009765625,
-        "end": 387.4199951171875,
+        "start": 383.3800109863281,
+        "end": 387.4600036621094,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 384.160009765625,
-                "end": 384.55999755859375
+                "start": 383.3800109863281,
+                "end": 384.4599914550781
             },
             {
                 "word": "natürlich",
-                "start": 384.55999755859375,
-                "end": 384.94000244140625
+                "start": 384.4599914550781,
+                "end": 384.9599914550781
             },
             {
                 "word": "gibt",
-                "start": 384.94000244140625,
-                "end": 385.2200012207031
+                "start": 384.9599914550781,
+                "end": 385.20001220703125
             },
             {
                 "word": "es",
-                "start": 385.2200012207031,
-                "end": 385.4800109863281
+                "start": 385.20001220703125,
+                "end": 385.5
             },
             {
                 "word": "auch",
-                "start": 385.4800109863281,
-                "end": 385.7200012207031
+                "start": 385.5,
+                "end": 385.70001220703125
             },
             {
                 "word": "ein",
-                "start": 385.7200012207031,
+                "start": 385.70001220703125,
                 "end": 386.1600036621094
             },
             {
@@ -4133,7 +4556,7 @@
             {
                 "word": "Grammatikübungen.",
                 "start": 386.1600036621094,
-                "end": 387.4199951171875
+                "end": 387.4600036621094
             }
         ],
         "translationEn": "And of course, there are also a few grammar exercises.",
@@ -4141,17 +4564,17 @@
     },
     {
         "text": "Also schaut mal vorbei auf www.mygermanshortstories.com.",
-        "start": 392.82001342773435,
+        "start": 392.9,
         "end": 395.9400146484375,
         "wordTimings": [
             {
                 "word": "Also",
-                "start": 392.82001342773435,
-                "end": 393.8599853515625
+                "start": 392.9,
+                "end": 393.9599914550781
             },
             {
                 "word": "schaut",
-                "start": 393.8599853515625,
+                "start": 393.9599914550781,
                 "end": 394.260009765625
             },
             {
@@ -4175,7 +4598,7 @@
                 "end": 395.9400146484375
             }
         ],
-        "translationEn": "So check out www.mygermanshortstories.com.",
+        "translationEn": "So take a look at www.mygermanshortstories.com.",
         "translationVi": "Vậy hãy ghé thăm www.mygermanshortstories.com."
     }
 ]

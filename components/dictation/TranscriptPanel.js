@@ -89,15 +89,22 @@ const TranscriptPanel = ({
             wordColor = '#ffc107'; // Yellow/Orange
           }
 
+          // Only allow word click in shadowing mode
+          const canClickWord = learningMode === 'shadowing' && pureWord && onWordClickForPopup;
+
           return (
             <span
               key={idx}
-              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
+              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${canClickWord ? styles.clickableWord : ''}`}
               style={{
-                cursor: 'default',
+                cursor: canClickWord ? 'pointer' : 'default',
                 color: wordColor || undefined,
                 fontWeight: wordColor ? 'bold' : undefined
               }}
+              onClick={canClickWord ? (e) => {
+                e.stopPropagation();
+                onWordClickForPopup(pureWord, e, text);
+              } : undefined}
             >
               {word}{idx < words.length - 1 ? ' ' : ''}
             </span>
@@ -105,7 +112,7 @@ const TranscriptPanel = ({
         })}
       </span>
     );
-  }, [currentSentenceIndex, isPlaying, activeWordIndex, onWordClickForPopup, voiceRecordingResult]);
+  }, [currentSentenceIndex, isPlaying, activeWordIndex, onWordClickForPopup, voiceRecordingResult, learningMode]);
 
   // Render masked text with karaoke highlighting (for dictation mode)
   // Updated to show correct words in green and hide wrong words after check

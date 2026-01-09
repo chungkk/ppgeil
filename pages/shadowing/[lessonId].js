@@ -1346,8 +1346,8 @@ const DictationPageContent = () => {
         }
         break;
       case ' ':
-        // Space key for play/pause only when NOT focused on input/textarea
-        if (isMediaReady && !isInputFocused) {
+        // Space key for play/pause - works even when input is focused (shadowing mode)
+        if (isMediaReady) {
           event.preventDefault();
           handlePlayPause();
         }
