@@ -1,4 +1,15 @@
-/* Full Sentence Mode Styles */
+/* Full Sentence Mode Styles - Neo-Retro Design */
+
+/* 
+ * Neo-Retro Theme Colors:
+ * --retro-cream: #fef9e7
+ * --retro-dark: #1a1a2e  
+ * --retro-cyan: #00cec9
+ * --retro-yellow: #fdcb6e
+ * --retro-pink: #fd79a8
+ * --retro-purple: #a29bfe
+ * --retro-border: #2d3436
+ */
 
 .fullSentenceMode {
   flex: 1;
@@ -9,16 +20,17 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   justify-content: space-between;
+  background: #fef9e7 !important;
 }
 
 .fullSentenceDisplay {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: white !important;
+  border: 2px solid #2d3436 !important;
   border-radius: 12px;
   padding: 12px;
   font-size: 16px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.7);
+  color: #1a1a2e !important;
   min-height: 180px;
   max-height: none;
   flex: 1;
@@ -27,14 +39,15 @@
   overflow-y: auto;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .completedSentenceText {
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: 500;
+  color: #1a1a2e !important;
+  font-weight: 600;
 }
 
-/* Shadowing Mode - Full text display (synced with dictation mode) */
+/* Shadowing Mode - Full text display - Neo-Retro */
 .shadowingText {
   display: flex;
   flex-wrap: wrap;
@@ -46,14 +59,15 @@
   width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  background: var(--bg-primary);
-  border: 2px solid var(--border-color);
-  border-radius: var(--border-radius);
-  padding: var(--spacing-md);
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 12px;
+  padding: 16px;
   box-sizing: border-box;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* Karaoke Highlight Styles for Shadowing Mode */
+/* Karaoke Highlight Styles - Neo-Retro */
 .karaokeText {
   display: contents;
 }
@@ -65,10 +79,10 @@
   min-width: 45px;
   height: 32px;
   padding: 4px 8px;
-  background: rgba(59, 130, 246, 0.1);
-  border: 2px solid rgba(59, 130, 246, 0.3);
-  border-radius: 6px;
-  color: var(--text-primary);
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 8px;
+  color: #1a1a2e !important;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -77,25 +91,27 @@
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .karaokeWord:hover {
-  background: rgba(59, 130, 246, 0.2);
-  border-color: rgba(59, 130, 246, 0.5);
+  background: #fef9e7 !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .karaokeWordSpoken {
-  color: var(--text-primary);
-  background: rgba(76, 175, 80, 0.15);
-  border-color: rgba(76, 175, 80, 0.4);
+  color: #1a1a2e !important;
+  background: #00cec9 !important;
+  border-color: #2d3436 !important;
 }
 
 .karaokeWordCurrent {
-  color: #60a5fa;
-  font-weight: 600;
-  background: rgba(96, 165, 250, 0.2);
-  border-color: rgba(96, 165, 250, 0.6);
-  box-shadow: 0 0 12px rgba(96, 165, 250, 0.3);
+  color: #1a1a2e !important;
+  font-weight: 700;
+  background: #fdcb6e !important;
+  border-color: #2d3436 !important;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .clickableWord {
@@ -103,8 +119,9 @@
 }
 
 .clickableWord:hover {
-  background: rgba(59, 130, 246, 0.25);
-  border-color: rgba(59, 130, 246, 0.6);
+  background: #fef9e7 !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintSentenceText {
@@ -118,11 +135,12 @@
   width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  background: var(--bg-primary);
-  border: 2px solid var(--border-color);
-  border-radius: var(--border-radius);
-  padding: var(--spacing-md);
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 12px;
+  padding: 16px;
   box-sizing: border-box;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintWordContainer {
@@ -139,7 +157,7 @@
   line-height: 1;
 }
 
-/* Hint Word Box - Base styles */
+/* Hint Word Box - Neo-Retro */
 .hintWordBox {
   display: inline-flex;
   align-items: center;
@@ -147,9 +165,9 @@
   min-width: 45px;
   height: 32px;
   padding: 4px 8px;
-  background: rgba(59, 130, 246, 0.1);
-  border: 2px dashed rgba(59, 130, 246, 0.3);
-  border-radius: 6px;
+  background: #fef9e7 !important;
+  border: 2px dashed #2d3436 !important;
+  border-radius: 8px;
   color: transparent;
   font-size: 16px;
   line-height: 1.2;
@@ -164,6 +182,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   vertical-align: middle;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Adaptive Word Sizing - Desktop */
@@ -194,67 +213,76 @@
 }
 
 .hintWordBox:hover {
-  background: rgba(59, 130, 246, 0.2);
-  border-color: rgba(59, 130, 246, 0.5);
-  transform: scale(1.05);
+  background: white !important;
+  border-color: #00cec9 !important;
+  border-style: solid !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintWordBox:active {
-  transform: scale(0.98);
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintWordRevealed {
-  background: rgba(16, 185, 129, 0.15);
-  border: 2px solid rgba(16, 185, 129, 0.5);
-  color: #10b981;
-  font-weight: 600;
+  background: #00cec9 !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
+  font-weight: 700;
   animation: revealWord 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   overflow: hidden;
   text-overflow: ellipsis;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintWordRevealed:hover {
-  background: rgba(16, 185, 129, 0.25);
-  border-color: rgba(16, 185, 129, 0.7);
+  background: #55efc4 !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintWordPartial {
-  background: rgba(59, 130, 246, 0.12);
-  border: 2px solid rgba(59, 130, 246, 0.4);
-  color: #3b82f6;
-  font-weight: 500;
+  background: #a29bfe !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
+  font-weight: 600;
   transition: all 0.15s ease;
   overflow: hidden;
   text-overflow: ellipsis;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintWordPartial:hover {
-  background: rgba(59, 130, 246, 0.2);
-  border-color: rgba(59, 130, 246, 0.6);
+  background: #c4b5ff !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintWordCorrect {
-  background: rgba(16, 185, 129, 0.2);
-  border: 2px solid rgba(16, 185, 129, 0.6);
-  color: #10b981;
+  background: #00cec9 !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
   font-weight: 700;
   animation: correctWord 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   cursor: default;
   overflow: hidden;
   text-overflow: ellipsis;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintWordIncorrect {
-  background: rgba(239, 68, 68, 0.2);
-  border: 2px solid rgba(239, 68, 68, 0.6);
-  color: #ef4444;
+  background: #fd79a8 !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
   font-weight: 700;
   animation: incorrectWord 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   cursor: default;
   overflow: hidden;
   text-overflow: ellipsis;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 @keyframes revealWord {
@@ -306,14 +334,14 @@
 }
 
 .hintPunctuation {
-  color: rgba(255, 255, 255, 0.7);
+  color: #2d3436 !important;
   font-size: 16px;
   margin-left: 1px;
   line-height: 1.3;
 }
 
 .hiddenWord {
-  color: rgba(255, 255, 255, 0.3);
+  color: #b2bec3 !important;
   font-family: monospace;
   letter-spacing: 1px;
 }
@@ -370,7 +398,7 @@
   fill: none !important;
 }
 
-/* Full Sentence Input */
+/* Full Sentence Input - Neo-Retro */
 .fullSentenceInput {
   width: 100%;
   min-height: 56px;
@@ -379,34 +407,35 @@
   padding-right: 60px; /* Space for voice button on right */
   font-size: 16px;
   line-height: 1.5;
-  background: rgba(255, 255, 255, 0.08);
-  border: 2px solid rgba(59, 130, 246, 0.3);
+  background: white !important;
+  border: 3px solid #2d3436 !important;
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.95);
+  color: #1a1a2e !important;
   resize: none;
   transition: all 0.2s ease;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   flex-shrink: 0;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .fullSentenceInput:focus {
   outline: none;
-  border-color: rgba(59, 130, 246, 0.6);
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #00cec9 !important;
+  background: #e0f7fa !important;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .fullSentenceInput:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  background: rgba(255, 255, 255, 0.03);
+  background: #f5f5f5 !important;
 }
 
 .fullSentenceInput::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: #636e72 !important;
 }
 
-/* Sentence Result */
+/* Sentence Result - Neo-Retro */
 .sentenceResult {
   display: flex;
   align-items: center;
@@ -414,8 +443,9 @@
   padding: 10px 14px;
   border-radius: 10px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   animation: resultFadeIn 0.3s ease;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 @keyframes resultFadeIn {
@@ -430,15 +460,15 @@
 }
 
 .resultCorrect {
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  color: #10b981;
+  background: #00cec9 !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
 }
 
 .resultIncorrect {
-  background: rgba(239, 68, 68, 0.15);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  color: #ef4444;
+  background: #fd79a8 !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
 }
 
 .resultIcon {
@@ -450,23 +480,20 @@
   flex: 1;
 }
 
-/* Check Button - Modern Design */
+/* Check Button - Neo-Retro */
 .checkButton {
   flex: 1;
   position: relative;
-  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
-  border: none;
-  color: white;
+  background: #00cec9 !important;
+  border: 3px solid #2d3436 !important;
+  color: #1a1a2e !important;
   padding: 14px 32px;
-  border-radius: 14px;
+  border-radius: 12px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 
-    0 4px 20px rgba(16, 185, 129, 0.4),
-    0 2px 8px rgba(5, 150, 105, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -474,71 +501,26 @@
   gap: 10px;
   overflow: hidden;
   min-width: 160px;
-}
-
-/* Shimmer effect on button */
-.checkButton::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: left 0.6s ease;
-}
-
-.checkButton:hover::before {
-  left: 100%;
-}
-
-/* Icon container */
-.checkButton::after {
-  content: '✓';
-  font-size: 18px;
-  font-weight: bold;
-  opacity: 0;
-  transform: scale(0) rotate(-180deg);
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.checkButton:hover::after {
-  opacity: 1;
-  transform: scale(1) rotate(0deg);
+  text-transform: uppercase;
 }
 
 .checkButton:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 
-    0 8px 30px rgba(16, 185, 129, 0.5),
-    0 4px 15px rgba(5, 150, 105, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
-  background: linear-gradient(135deg, #047857 0%, #059669 50%, #10b981 100%);
+  background: #55efc4 !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
 }
 
 .checkButton:active {
-  transform: translateY(1px) scale(0.98);
-  box-shadow: 
-    0 2px 10px rgba(16, 185, 129, 0.35),
-    inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .checkButton:disabled {
-  background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
+  background: #b2bec3 !important;
   cursor: not-allowed;
   opacity: 0.6;
-  box-shadow: none;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   transform: none;
-}
-
-.checkButton:disabled::before,
-.checkButton:disabled::after {
-  display: none;
 }
 
 /* Mode Toggle */

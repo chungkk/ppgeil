@@ -1,16 +1,29 @@
-/* Dictation Input Area Styles */
+/* Dictation Input Area Styles - Neo-Retro Design */
+
+/* 
+ * Neo-Retro Theme Colors:
+ * --retro-cream: #fef9e7
+ * --retro-dark: #1a1a2e  
+ * --retro-cyan: #00cec9
+ * --retro-yellow: #fdcb6e
+ * --retro-pink: #fd79a8
+ * --retro-purple: #a29bfe
+ * --retro-border: #2d3436
+ * --retro-shadow: rgba(0, 0, 0, 0.15)
+ */
 
 .dictationContainer {
-  background: var(--bg-secondary);
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-  border: 1px solid var(--border-color);
+  background: #fef9e7 !important;
+  border-radius: 0 0 16px 16px;
+  border: 3px solid #2d3436 !important;
   border-top: none;
-  padding: var(--spacing-md);
+  padding: 16px;
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: var(--spacing-sm);
+  gap: 12px;
   overflow: hidden;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
 .dictationHeader {
@@ -20,35 +33,41 @@
   padding: 14px 18px;
   min-height: 56px;
   height: 56px;
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-hover);
+  border-bottom: 2px solid #2d3436;
+  background: #fef9e7 !important;
   border-radius: 16px 16px 0 0;
   box-sizing: border-box;
 }
 
 .dictationHeaderTitle {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 800;
+  color: #1a1a2e !important;
   line-height: 1.4;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .sentenceCounter {
   font-size: 12px;
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-weight: 700;
+  color: #1a1a2e !important;
+  background: #00cec9 !important;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 2px solid #2d3436;
 }
 
-/* Dictation Input Area */
+/* Dictation Input Area - Neo-Retro */
 .dictationInputArea {
-  background: var(--bg-primary);
-  border: 2px solid var(--border-color);
-  border-radius: var(--border-radius);
-  padding: var(--spacing-md);
+  background: white !important;
+  border: 3px solid #2d3436 !important;
+  border-radius: 12px !important;
+  padding: 16px;
   font-size: 16px;
-  color: var(--text-primary);
+  color: #1a1a2e !important;
   line-height: 1.4;
   overflow: visible;
   word-wrap: break-word;
@@ -63,18 +82,19 @@
   user-select: none;
   cursor: grab;
   justify-content: center;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: transform, filter, box-shadow;
+  transition: all 0.2s ease;
   position: relative;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
 .dictationInputArea:focus {
   outline: none;
-  border-color: var(--accent-blue);
+  border-color: #00cec9 !important;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
 .dictationInputArea::placeholder {
-  color: var(--text-muted);
+  color: #636e72 !important;
   font-style: italic;
 }
 
@@ -93,33 +113,35 @@
   min-height: 40px;
 }
 
-/* === SIMPLIFIED HINT BUTTON === */
+/* === HINT BUTTON - Neo-Retro === */
 .dictationInputArea :global(.hint-btn) {
-  background: #3b82f6;
-  border: none;
-  color: white;
-  width: 20px;
-  height: 20px;
+  background: #fdcb6e !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-size: 10px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: all 0.2s ease;
   flex-shrink: 0;
-  opacity: 0.8;
   position: relative;
   order: -1;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .dictationInputArea :global(.hint-btn):hover {
-  transform: scale(1.1);
-  opacity: 1;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
+  background: #00cec9 !important;
 }
 
 .dictationInputArea :global(.hint-btn):active {
-  transform: scale(0.95);
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 .dictationInputArea :global(.hint-btn)::before {
@@ -127,17 +149,17 @@
   font-size: 12px;
 }
 
-/* === SIMPLIFIED WORD INPUT === */
+/* === WORD INPUT - Neo-Retro === */
 .dictationInputArea :global(.word-input) {
-  background: rgba(255, 255, 255, 0.95);
-  border: 2px solid rgba(100, 116, 139, 0.3);
-  border-radius: 6px;
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 8px;
   padding: 6px 10px;
   font-size: 15px;
-  color: var(--text-primary);
+  color: #1a1a2e !important;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 600;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
   min-width: 60px;
   width: auto !important;
   max-width: min(200px, 100%);
@@ -150,29 +172,33 @@
   box-sizing: border-box;
   vertical-align: middle;
   line-height: 1.2;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .dictationInputArea :global(.word-input):hover {
-  border-color: rgba(59, 130, 246, 0.5);
+  border-color: #00cec9 !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .dictationInputArea :global(.word-input):focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  border-color: #00cec9 !important;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #e0f7fa !important;
 }
 
-/* === SIMPLIFIED WORD STATES === */
+/* === WORD STATES - Neo-Retro === */
 
 /* Correct Word */
 .dictationInputArea :global(.correct-word) {
-  color: #10b981;
-  font-weight: 600;
+  color: #1a1a2e !important;
+  font-weight: 700;
   cursor: pointer;
   padding: 6px 10px;
-  border-radius: 6px;
-  background: rgba(16, 185, 129, 0.1);
-  border: 2px solid rgba(16, 185, 129, 0.3);
+  border-radius: 8px;
+  background: #00cec9 !important;
+  border: 2px solid #2d3436 !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -185,20 +211,23 @@
   vertical-align: middle;
   line-height: 1.2;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .dictationInputArea :global(.correct-word):hover {
-  background: rgba(16, 185, 129, 0.15);
+  background: #55efc4 !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* Completed Word */
 .dictationInputArea :global(.completed-word) {
-  color: #10b981;
-  background: rgba(16, 185, 129, 0.1);
-  border: 2px solid rgba(16, 185, 129, 0.3);
+  color: #1a1a2e !important;
+  background: #00cec9 !important;
+  border: 2px solid #2d3436 !important;
   padding: 6px 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -207,22 +236,23 @@
   min-width: 60px;
   width: auto;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   box-sizing: border-box;
   vertical-align: middle;
   line-height: 1.2;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* Revealed Word (used hint) */
+/* Revealed Word (used hint) - Neo-Retro Yellow */
 .dictationInputArea :global(.revealed-word) {
-  color: #f59e0b;
-  font-weight: 600;
+  color: #1a1a2e !important;
+  font-weight: 700;
   cursor: pointer;
   padding: 6px 10px;
-  border-radius: 6px;
-  background: rgba(245, 158, 11, 0.1);
-  border: 2px solid rgba(245, 158, 11, 0.3);
+  border-radius: 8px;
+  background: #fdcb6e !important;
+  border: 2px solid #2d3436 !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -235,21 +265,24 @@
   vertical-align: middle;
   line-height: 1.2;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .dictationInputArea :global(.revealed-word):hover {
-  background: rgba(245, 158, 11, 0.15);
+  background: #ffeaa7 !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* Hint Revealed - same as revealed */
+/* Hint Revealed - Neo-Retro Yellow */
 .dictationInputArea :global(.hint-revealed) {
-  color: #f59e0b;
-  background: rgba(245, 158, 11, 0.1);
-  border: 2px solid rgba(245, 158, 11, 0.3);
-  font-weight: 600;
+  color: #1a1a2e !important;
+  background: #fdcb6e !important;
+  border: 2px solid #2d3436 !important;
+  font-weight: 700;
   padding: 6px 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -262,6 +295,7 @@
   vertical-align: middle;
   line-height: 1.2;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 
@@ -270,93 +304,80 @@
   display: none;
 }
 
-/* Action Buttons */
+/* Action Buttons - Neo-Retro */
 .dictationActions {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: 12px;
   margin-top: 0;
   flex-shrink: 0;
 }
 
 .showAllWordsButton {
   flex: 1;
-  background: transparent;
-  border: 2px solid rgba(251, 191, 36, 0.5);
-  color: #fbbf24;
+  background: #fdcb6e !important;
+  border: 3px solid #2d3436 !important;
+  color: #1a1a2e !important;
   padding: 14px 24px;
   border-radius: 12px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: none;
-  text-transform: none;
+  transition: all 0.2s ease;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
   letter-spacing: 0.3px;
 }
 
 .showAllWordsButton:hover {
-  background: rgba(251, 191, 36, 0.15);
-  border-color: rgba(251, 191, 36, 0.8);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+  background: #ffeaa7 !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.showAllWordsButton:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .nextButton {
   flex: 1;
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
-  border: none;
-  color: white;
+  background: #00cec9 !important;
+  border: 3px solid #2d3436 !important;
+  color: #1a1a2e !important;
   padding: 16px 28px;
-  border-radius: 50px;
+  border-radius: 12px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .nextButton:hover {
-  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  background: #55efc4 !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nextButton:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .nextButton:disabled {
-  background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+  background: #b2bec3 !important;
   cursor: not-allowed;
   opacity: 0.6;
-  box-shadow: none;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* === SIMPLIFIED DARK THEME === */
-[data-theme="dark"] .dictationInputArea :global(.word-input) {
-  background: rgba(30, 41, 59, 0.9);
-  border-color: rgba(100, 116, 139, 0.4);
-  color: #f1f5f9;
-}
-
-[data-theme="dark"] .dictationInputArea :global(.word-input):hover {
-  border-color: rgba(59, 130, 246, 0.5);
-}
-
-[data-theme="dark"] .dictationInputArea :global(.word-input):focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
-}
-
-[data-theme="dark"] .dictationInputArea :global(.hint-btn) {
-  background: #3b82f6;
-}
-
-[data-theme="dark"] .dictationInputArea :global(.hint-btn):hover {
-  background: #60a5fa;
-}
+/* Neo-Retro theme is consistent - no dark theme override needed */
 
 /* ============================================
    FLOATING MODE TOGGLE BUTTON - DESKTOP

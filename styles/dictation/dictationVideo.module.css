@@ -169,18 +169,16 @@
   text-transform: uppercase;
 }
 
-/* Study Timer - Retro Flip Clock Style */
+/* Study Timer - Neo-Retro Flip Clock Style */
 .studyTimer {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 4px 8px;
-  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  padding: 6px 10px;
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .timerIcon {
@@ -193,24 +191,22 @@
   gap: 2px;
 }
 
-/* Retro Flip Digit */
+/* Retro Flip Digit - Neo-Retro Style */
 .flipDigit {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 30px;
-  background: linear-gradient(180deg, #2d2d44 0%, #1a1a2e 50%, #2d2d44 51%, #1a1a2e 100%);
-  border-radius: 4px;
+  width: 24px;
+  height: 32px;
+  background: #00cec9 !important;
+  border: 2px solid #2d3436;
+  border-radius: 6px;
   font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
   font-size: 16px;
-  font-weight: 700;
-  color: #10b981;
-  text-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+  font-weight: 800;
+  color: #1a1a2e !important;
   position: relative;
-  box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .flipDigit::before {
@@ -219,8 +215,8 @@
   top: 50%;
   left: 0;
   right: 0;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.4);
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
   transform: translateY(-50%);
 }
 
@@ -231,18 +227,17 @@
   left: 0;
   right: 0;
   height: 50%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, transparent 100%);
   border-radius: 4px 4px 0 0;
   pointer-events: none;
 }
 
 .flipColon {
   font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-  font-size: 16px;
-  font-weight: 700;
-  color: #10b981;
-  text-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
-  margin: 0 1px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #1a1a2e !important;
+  margin: 0 2px;
   animation: colonBlink 1s ease-in-out infinite;
 }
 
@@ -254,7 +249,7 @@
   }
 
   50% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
 }
 
@@ -472,8 +467,8 @@
 
 .toggleText {
   font-size: 14px;
-  color: var(--text-primary);
-  font-weight: 500;
+  color: #1a1a2e !important;
+  font-weight: 600;
 }
 
 /* Video Controls - Neo-Retro Desktop Only */

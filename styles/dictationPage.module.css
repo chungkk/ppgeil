@@ -158,7 +158,7 @@
   position: relative;
 }
 
-/* Middle Column - Dictation Area */
+/* Middle Column - Dictation Area - Neo-Retro */
 .middleSection {
   display: flex;
   flex-direction: column;
@@ -168,15 +168,15 @@
   /* Allow grid shrinking */
   gap: 0;
   /* Ensure proper containment for absolute positioned children */
-  background: linear-gradient(145deg, var(--bg-secondary) 0%, rgba(251, 191, 36, 0.02) 100%);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: #fef9e7 !important;
+  border-radius: 16px !important;
+  border: 3px solid #2d3436 !important;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15) !important;
   overflow: visible;
   /* Allow floating button to appear outside */
 }
 
-/* Left Section - Video and Controls */
+/* Left Section - Video and Controls - Neo-Retro */
 .leftSection {
   display: flex;
   flex-direction: column;
@@ -184,11 +184,24 @@
   min-width: 0;
   /* Allow grid shrinking */
   gap: 0;
-  background: linear-gradient(145deg, var(--bg-secondary) 0%, rgba(16, 185, 129, 0.02) 100%);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: white !important;
+  border-radius: 18px !important;
+  border: 3px solid #2d3436 !important;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15) !important;
   overflow: hidden;
+  position: relative;
+}
+
+.leftSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #00cec9;
+  border-radius: 15px 15px 0 0;
+  z-index: 10;
 }
 
 /* Video Wrapper - Main container for video content */
@@ -348,7 +361,7 @@
   letter-spacing: 0.5px;
 }
 
-/* Column Headers - Unified styling for all three columns */
+/* Column Headers - Neo-Retro unified styling */
 .videoHeader,
 .dictationHeader,
 .transcriptHeader {
@@ -358,9 +371,9 @@
   padding: 14px 18px;
   min-height: 56px;
   height: 56px;
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-hover);
-  border-radius: 16px 16px 0 0;
+  border-bottom: 2px solid #2d3436 !important;
+  background: #fef9e7 !important;
+  border-radius: 12px 12px 0 0;
   box-sizing: border-box;
 }
 
@@ -379,31 +392,36 @@
   }
 }
 
+/* Video Header - Neo-Retro (specific override) */
 .videoHeader {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(5, 150, 105, 0.05) 100%);
-  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
+  background: #fef9e7 !important;
+  border-bottom: 2px solid #2d3436 !important;
 }
 
+/* Dictation Header - Neo-Retro */
 .dictationHeader {
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.08) 0%, rgba(245, 158, 11, 0.05) 100%);
-  border-bottom: 1px solid rgba(251, 191, 36, 0.15);
+  background: #fef9e7 !important;
+  border-bottom: 2px solid #2d3436 !important;
 }
 
+/* Transcript Header - Neo-Retro */
 .transcriptHeader {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(51, 65, 85, 0.06) 100%);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+  background: #fef9e7 !important;
+  border-bottom: 2px solid #2d3436 !important;
 }
 
+/* Column Titles - Neo-Retro */
 .videoHeaderTitle,
 .dictationHeaderTitle,
 .transcriptTitle {
   font-size: 14px;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-weight: 800;
+  color: #1a1a2e !important;
   line-height: 1.4;
   margin: 0;
   padding: 0;
   letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 /* Mobile title improvements */
@@ -419,51 +437,46 @@
   }
 }
 
+/* Study Timer - Neo-Retro */
 .studyTimer {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 5px 10px;
-  background: linear-gradient(145deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.06) 100%);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  gap: 4px;
+  padding: 6px 10px;
+  background: white !important;
+  border: 2px solid #2d3436 !important;
   border-radius: 8px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  transition: all 0.2s ease;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .studyTimer:hover {
-  background: linear-gradient(145deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.1) 100%);
-  border-color: rgba(16, 185, 129, 0.3);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .timerIcon {
-  font-size: 14px;
-  filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.3));
+  display: none;
 }
 
 .timerText {
-  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-  color: #10b981;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
-/* Video Title Box - Always visible */
+/* Video Title Box - Neo-Retro */
 .videoTitleBox {
-  padding: 10px 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+  padding: 14px 18px;
+  border-top: 2px solid #2d3436;
+  background: #fef9e7 !important;
 }
 
 .videoTitleBox h3 {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e !important;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.4;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1249,24 +1262,29 @@
   pointer-events: none;
 }
 
-/* Dictation Input Area */
+/* Dictation Input Area - Neo-Retro */
 .dictationContainer {
-  background: transparent;
+  background: #fef9e7 !important;
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: var(--spacing-sm);
+  gap: 12px;
   overflow: visible;
   min-height: 0;
-  padding: var(--spacing-sm);
+  padding: 12px;
 }
 
 /* Dictation Header specific styles removed - now using unified .dictationHeader above */
 
+/* Sentence Counter - Neo-Retro Badge */
 .sentenceCounter {
   font-size: 12px;
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-weight: 700;
+  color: #1a1a2e !important;
+  background: #00cec9 !important;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 2px solid #2d3436;
 }
 
 /* Hide Level Selector */
@@ -1276,20 +1294,19 @@
   gap: var(--spacing-xs);
 }
 
+/* Hide Level Dropdown - Neo-Retro */
 .hideLevelDropdown {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(51, 65, 85, 0.15) 100%);
-  border: 2px solid rgba(59, 130, 246, 0.3);
-  color: var(--text-primary);
+  background: #fdcb6e !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
   padding: 4px 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   outline: none;
-  box-shadow:
-    0 2px 8px rgba(59, 130, 246, 0.2),
-    inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
   height: 28px;
   line-height: 1.2;
 }
@@ -1307,16 +1324,13 @@
 }
 
 .hideLevelDropdown:hover {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(51, 65, 85, 0.25) 100%);
-  border-color: rgba(59, 130, 246, 0.5);
-  transform: translateY(-1px);
-  box-shadow:
-    0 4px 12px rgba(59, 130, 246, 0.3),
-    inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  background: #ffeaa7 !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hideLevelDropdown:focus {
-  border-color: var(--accent-blue);
+  border-color: #00cec9 !important;
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.2),
     0 4px 12px rgba(59, 130, 246, 0.3);
@@ -1650,24 +1664,25 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* Dictation Box - Combined Sentence + Translation Container */
+/* Dictation Box - Neo-Retro */
 .dictationBox {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  background: linear-gradient(145deg, var(--bg-primary) 0%, rgba(59, 130, 246, 0.03) 100%);
-  border: 2px solid var(--border-color);
-  border-radius: var(--border-radius);
+  background: white !important;
+  border: 3px solid #2d3436 !important;
+  border-radius: 12px !important;
   overflow: visible;
   flex: 1;
   min-height: 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s ease;
 }
 
 .dictationBox:hover {
-  border-color: rgba(59, 130, 246, 0.3);
-  box-shadow: 0 6px 24px rgba(59, 130, 246, 0.12);
+  border-color: #00cec9 !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
 .dictationBox .dictationInputArea {
@@ -1753,14 +1768,14 @@
   transform: translateX(16px);
 }
 
-/* Sentence Translation - Bottom half of dictationBox */
+/* Sentence Translation - Neo-Retro */
 .sentenceTranslation {
   padding: 10px 16px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(51, 65, 85, 0.08) 100%);
-  border-top: 1px dashed rgba(59, 130, 246, 0.3);
+  background: rgba(0, 206, 201, 0.15) !important;
+  border-top: 2px dashed #2d3436 !important;
   font-size: 14px;
   font-style: italic;
-  color: rgba(147, 197, 253, 0.95);
+  color: #636e72 !important;
   line-height: 1.5;
   text-align: center;
   min-height: 40px;
@@ -1769,7 +1784,7 @@
   justify-content: center;
   flex-shrink: 0;
   margin-top: auto;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   letter-spacing: 0.3px;
   overflow-y: auto;
   max-height: 80px;
@@ -1778,8 +1793,8 @@
 }
 
 .sentenceTranslation:hover {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(51, 65, 85, 0.12) 100%);
-  color: rgba(167, 217, 253, 1);
+  background: rgba(0, 206, 201, 0.25) !important;
+  color: #2d3436 !important;
 }
 
 .translationLoading {
@@ -2117,33 +2132,39 @@
   transform: none;
 }
 
+/* Hint Button - Neo-Retro */
 .hintButton {
   position: relative;
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.2) 0%, rgba(245, 158, 11, 0.15) 100%);
-  border: 2px solid rgba(251, 191, 36, 0.5);
+  background: #fdcb6e !important;
+  border: 2px solid #2d3436 !important;
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintButton:hover:not(:disabled) {
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.35) 0%, rgba(245, 158, 11, 0.25) 100%);
-  border-color: rgba(251, 191, 36, 0.8);
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+  background: #ffeaa7 !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.hintButton:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hintButton:disabled {
   opacity: 0.4;
   cursor: not-allowed;
-  filter: grayscale(0.5);
+  background: #dfe6e9 !important;
 }
 
 .hintFreeCount {
@@ -5677,60 +5698,61 @@
   border-radius: 4px;
 }
 
-/* Middle Column - Dictation Area */
+/* ============================================
+   MIDDLE COLUMN - HÖREN UND SCHREIBEN - Neo-Retro
+   ============================================ */
 .middleColumn {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  background: var(--bg-secondary);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  padding: var(--spacing-md);
+  background: #fef9e7 !important;
+  border-radius: 18px !important;
+  border: 3px solid #2d3436 !important;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15) !important;
   min-height: 400px;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Desktop: Push dictation content down to align with transcript active sentence */
-@media (min-width: 769px) {
-  .middleColumn .wordInputsSection {
-    margin-top: 100px;
-  }
-  
-  .middleColumn .actionButtons {
-    margin-top: auto;
-    padding-bottom: 20px;
-  }
+/* Yellow accent bar at top */
+.middleColumn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #fdcb6e;
+  z-index: 10;
 }
 
+/* Dictation Area Container */
 .dictationArea {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
   height: 100%;
+  background: #fef9e7 !important;
 }
 
-/* This dictationHeader is specifically for the dictation page middle column
-   Matches height with videoHeader and transcriptHeader */
+/* Dictation Header - Neo-Retro */
 .dictationArea .dictationHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 14px 18px;
   min-height: 56px;
-  height: 56px;
-  border-bottom: 1px solid var(--border-color);
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.08) 0%, rgba(245, 158, 11, 0.05) 100%);
-  border-radius: 16px 16px 0 0;
-  box-sizing: border-box;
-  margin: calc(-1 * var(--spacing-md));
-  margin-bottom: 0;
+  border-bottom: 2px solid #2d3436 !important;
+  background: #fef9e7 !important;
+  margin-top: 5px;
 }
 
+/* Column Title - Neo-Retro */
 .columnTitle {
   font-size: 14px;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-weight: 800;
+  color: #1a1a2e !important;
   margin: 0;
   letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .headerRight {
@@ -5739,34 +5761,29 @@
   gap: 8px;
 }
 
+/* Speed Button Header - Neo-Retro */
 .speedButtonHeader {
-  background: var(--bg-tertiary);
-  border: none;
-  color: var(--text-primary);
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
   font-size: 12px;
   font-weight: 700;
   padding: 4px 10px;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .speedButtonHeader:hover {
-  background: var(--bg-secondary);
+  background: #fef9e7 !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .speedButtonHeader:active {
-  background: var(--accent-blue);
-  color: white;
-}
-
-.sentenceCounter {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background: var(--bg-tertiary);
-  padding: 4px 10px;
-  border-radius: 12px;
+  background: #00cec9 !important;
+  color: #1a1a2e !important;
 }
 
 /* Hidden Sentence Display - Darker area showing masked words */
@@ -5975,42 +5992,45 @@
   flex: 1;
 }
 
-/* Word Inputs Section - Lighter area for typing */
+/* Word Inputs Section - Neo-Retro Box */
 .wordInputsSection {
   display: flex;
   flex-direction: column;
-  padding: 8px 10px;
-  background: linear-gradient(145deg, rgba(59, 130, 246, 0.08) 0%, rgba(6, 182, 212, 0.05) 100%);
-  border-radius: 8px;
-  border: 1px solid rgba(59, 130, 246, 0.25);
-  box-shadow: 
-    0 2px 8px rgba(59, 130, 246, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  padding: 20px 16px;
+  background: white !important;
+  border-radius: 12px;
+  border: 3px solid #2d3436 !important;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15) !important;
   position: relative;
+  margin: 16px;
+  flex: 1;
 }
 
-/* Label for input section */
+/* Label for input section - Neo-Retro */
 .wordInputsLabel {
   position: absolute;
-  top: -8px;
-  left: 12px;
-  font-size: 10px;
-  font-weight: 600;
-  color: rgba(96, 165, 250, 0.85);
-  background: var(--bg-secondary);
-  padding: 1px 6px;
-  border-radius: 3px;
+  top: -12px;
+  left: 16px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a1a2e !important;
+  background: #fdcb6e !important;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 2px solid #2d3436;
   text-transform: uppercase;
   letter-spacing: 0.4px;
 }
 
+/* Word Inputs Container */
 .wordInputsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  row-gap: 5px;
+  gap: 8px;
+  row-gap: 10px;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
 }
 
 /* ============================================
@@ -6252,29 +6272,33 @@
   caret-color: var(--text-primary);
 }
 
+/* Word Input - Neo-Retro */
 .wordInput {
-  padding: 4px 8px;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  color: var(--text-primary);
+  padding: 6px 10px;
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 8px;
+  color: #1a1a2e !important;
   font-size: 14px;
-  font-weight: 500;
-  text-align: left;
+  font-weight: 600;
+  text-align: center;
   transition: all 0.2s ease;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   letter-spacing: normal;
   line-height: 1;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .wordInput:focus {
   outline: none;
-  border-color: var(--accent-blue);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  border-color: #00cec9 !important;
+  background: #e0f7fa !important;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
+  transform: translate(-1px, -1px);
 }
 
 .wordInput::placeholder {
-  color: var(--text-muted);
+  color: #b2bec3 !important;
   font-family: monospace;
   letter-spacing: 2px;
 }
@@ -6284,31 +6308,36 @@
   cursor: not-allowed;
 }
 
-/* Word Input States */
+/* Word Input States - Neo-Retro */
 .wordInputCorrect {
-  border-color: #10b981 !important;
-  background: rgba(16, 185, 129, 0.1) !important;
-  color: #10b981 !important;
-  font-weight: 600;
+  border-color: #2d3436 !important;
+  background: #00cec9 !important;
+  color: #1a1a2e !important;
+  font-weight: 700;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .wordInputRevealed {
-  border-color: #f59e0b !important;
-  background: rgba(245, 158, 11, 0.1) !important;
-  color: #f59e0b !important;
-  font-weight: 600;
+  border-color: #2d3436 !important;
+  background: #fdcb6e !important;
+  color: #1a1a2e !important;
+  font-weight: 700;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .wordInputPartial {
-  border-color: #3b82f6 !important;
-  background: rgba(59, 130, 246, 0.08) !important;
+  border-color: #2d3436 !important;
+  background: #a29bfe !important;
+  color: #1a1a2e !important;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .wordInputWrong {
-  border-color: #ef4444 !important;
-  background: rgba(239, 68, 68, 0.15) !important;
-  color: #ef4444 !important;
+  border-color: #2d3436 !important;
+  background: #fd79a8 !important;
+  color: #1a1a2e !important;
   animation: shakeInput 0.3s ease;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 @keyframes shakeInput {
@@ -6519,28 +6548,32 @@
   font-size: 20px;
 }
 
+/* Action Buttons - Neo-Retro */
 .actionButtons {
   display: flex;
-  gap: var(--spacing-md);
-  flex-wrap: wrap;
+  gap: 12px;
   justify-content: center;
   align-items: center;
-  padding: 12px 0;
+  padding: 16px;
+  background: #fef9e7 !important;
+  border-top: 2px solid #2d3436;
+  margin-top: auto;
 }
 
+/* Nav Button - Neo-Retro */
 .navButton {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
-  background: linear-gradient(145deg, rgba(59, 130, 246, 0.1) 0%, rgba(51, 65, 85, 0.15) 100%);
-  border: 1.5px solid rgba(59, 130, 246, 0.25);
-  color: #94a3b8;
+  border-radius: 50%;
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .navButton svg {
@@ -6549,20 +6582,20 @@
 }
 
 .navButton:hover:not(:disabled) {
-  background: linear-gradient(145deg, rgba(59, 130, 246, 0.2) 0%, rgba(51, 65, 85, 0.25) 100%);
-  border-color: rgba(59, 130, 246, 0.5);
-  color: #e2e8f0;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+  background: #00cec9 !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
 .navButton:active:not(:disabled) {
-  transform: scale(0.95);
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .navButton:disabled {
-  opacity: 0.35;
+  opacity: 0.4;
   cursor: not-allowed;
+  background: #dfe6e9 !important;
 }
 
 /* Desktop hintButton styling */

@@ -10,7 +10,7 @@ const styles = { ...layoutStyles, ...videoStyles };
 const RetroFlipClock = ({ timeString }) => {
   // timeString is HH:MM:SS format
   const digits = timeString.replace(/:/g, '').split('');
-  
+
   return (
     <>
       <span className={videoStyles.flipDigit}>{digits[0]}</span>
@@ -139,7 +139,7 @@ const DictationVideoSection = ({
 
       if (data.success && data.text) {
         const transcribedText = data.text.trim();
-        
+
         // Check for error messages from Whisper
         const errorPhrases = [
           'Untertitelung aufgrund der Audioqualität nicht möglich',
@@ -147,16 +147,16 @@ const DictationVideoSection = ({
           'Bitte',
           'Danke',
         ];
-        
-        const isErrorMessage = errorPhrases.some(phrase => 
+
+        const isErrorMessage = errorPhrases.some(phrase =>
           transcribedText.toLowerCase().includes(phrase.toLowerCase())
         );
-        
+
         // Only show comparison if transcription is valid (not an error message and has reasonable length)
         if (!isErrorMessage && transcribedText.length > 2) {
           const originalText = currentSentence?.text || '';
           const { similarity, wordComparison } = calculateSimilarity(transcribedText, originalText);
-          
+
           const result = {
             transcribed: transcribedText,
             original: originalText,
@@ -164,9 +164,9 @@ const DictationVideoSection = ({
             isCorrect: similarity >= 80,
             wordComparison: wordComparison
           };
-          
+
           setComparisonResult(result);
-          
+
           // Notify parent component
           if (onComparisonResultChange) {
             onComparisonResultChange(result);
@@ -205,25 +205,25 @@ const DictationVideoSection = ({
     const normalize = (str) => str.toLowerCase().trim().replace(/[.,!?;:"""''„]/g, '').replace(/\s+/g, ' ');
     const normalized1 = normalize(transcribedText);
     const normalized2 = normalize(originalText);
-    
+
     const words1 = normalized1.split(' ').filter(w => w.length > 0);
     const words2 = normalized2.split(' ').filter(w => w.length > 0);
-    
+
     // Word-by-word comparison
     const wordComparison = {};
     const maxLength = Math.max(words1.length, words2.length);
-    
+
     for (let i = 0; i < maxLength; i++) {
       const userWord = words1[i] || '';
       const correctWord = words2[i] || '';
-      
+
       if (userWord && correctWord) {
         wordComparison[i] = userWord === correctWord ? 'correct' : 'incorrect';
       } else if (correctWord && !userWord) {
         wordComparison[i] = 'missing';
       }
     }
-    
+
     // Calculate overall similarity
     let matches = 0;
     words1.forEach(word => {
@@ -231,9 +231,9 @@ const DictationVideoSection = ({
         matches++;
       }
     });
-    
+
     const similarity = maxLength > 0 ? Math.round((matches / maxLength) * 100) : 0;
-    
+
     return { similarity, wordComparison };
   };
 
@@ -271,7 +271,7 @@ const DictationVideoSection = ({
     setRecordedBlob(null);
     setComparisonResult(null);
     setIsPlayingRecording(false);
-    
+
     // Notify parent to clear result
     if (onComparisonResultChange) {
       onComparisonResultChange(null);
@@ -292,7 +292,7 @@ const DictationVideoSection = ({
       {/* Video Header */}
       <div className={styles.videoHeader}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <h3 className={styles.transcriptTitle}>{t('lesson.ui.video')}</h3>
+          <h3 className={videoStyles.videoHeaderTitle}>{t('lesson.ui.video')}</h3>
           <div className={styles.studyTimer}>
             <span className={styles.timerText}>
               <RetroFlipClock timeString={formatStudyTime(studyTime)} />
@@ -366,7 +366,7 @@ const DictationVideoSection = ({
                 title={t('lesson.ui.previous')}
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                  <path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z"/>
+                  <path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z" />
                 </svg>
               </button>
 
@@ -394,7 +394,7 @@ const DictationVideoSection = ({
                 title={t('lesson.ui.next')}
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                  <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/>
+                  <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z" />
                 </svg>
               </button>
 
@@ -409,18 +409,18 @@ const DictationVideoSection = ({
                   {isProcessing ? (
                     <svg className={styles.spinner} viewBox="0 0 24 24" fill="none" width="20" height="20">
                       <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="32">
-                        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+                        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite" />
                       </circle>
                     </svg>
                   ) : isRecording ? (
                     <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                      <rect x="6" y="6" width="12" height="12" rx="2"/>
+                      <rect x="6" y="6" width="12" height="12" rx="2" />
                     </svg>
                   ) : (
                     <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                      <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
-                      <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z"/>
-                      <path d="M11 18.93V22h2v-3.07a8 8 0 0 0 0-15.86V0h-2v3.07a8 8 0 0 0 0 15.86z" fill="none"/>
+                      <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" />
+                      <path d="M19 10v1a7 7 0 0 1-14 0v-1h2v1a5 5 0 0 0 10 0v-1h2z" />
+                      <path d="M11 18.93V22h2v-3.07a8 8 0 0 0 0-15.86V0h-2v3.07a8 8 0 0 0 0 15.86z" fill="none" />
                     </svg>
                   )}
                 </button>
@@ -435,12 +435,12 @@ const DictationVideoSection = ({
                 >
                   {isPlayingRecording ? (
                     <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                      <rect x="6" y="4" width="4" height="16" rx="1"/>
-                      <rect x="14" y="4" width="4" height="16" rx="1"/>
+                      <rect x="6" y="4" width="4" height="16" rx="1" />
+                      <rect x="14" y="4" width="4" height="16" rx="1" />
                     </svg>
                   ) : (
                     <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                      <path d="M8 5v14l11-7z"/>
+                      <path d="M8 5v14l11-7z" />
                     </svg>
                   )}
                 </button>

@@ -10,8 +10,8 @@
   gap: 0;
   background: white !important;
   border-radius: 18px !important;
-  border: 3px solid var(--retro-border) !important;
-  box-shadow: 4px 4px 0 var(--retro-shadow) !important;
+  border: 3px solid #2d3436 !important;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15) !important;
   overflow: hidden;
   position: relative;
 }
@@ -23,7 +23,7 @@
   left: 0;
   right: 0;
   height: 5px;
-  background: var(--retro-coral);
+  background: #ff7675;
   z-index: 10;
 }
 
@@ -35,8 +35,8 @@
   padding: 12px 16px;
   min-height: 50px;
   height: 50px;
-  border-bottom: 2px solid var(--retro-border);
-  background: var(--retro-cream) !important;
+  border-bottom: 2px solid #2d3436;
+  background: #fef9e7 !important;
   box-sizing: border-box;
 }
 
@@ -51,7 +51,7 @@
 .transcriptTitle {
   font-size: 15px;
   font-weight: 800;
-  color: var(--retro-dark) !important;
+  color: #1a1a2e !important;
   line-height: 1.4;
   margin: 0;
   padding: 0;
@@ -103,8 +103,8 @@
 .transcriptTab {
   padding: 6px 12px;
   background: white !important;
-  border: 2px solid var(--retro-border) !important;
-  color: var(--retro-dark) !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
   cursor: pointer;
   font-size: 12px;
   font-weight: 700;
@@ -114,21 +114,21 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  box-shadow: 2px 2px 0 var(--retro-shadow);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .transcriptTab:hover {
-  background: var(--retro-cream) !important;
+  background: #fef9e7 !important;
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 var(--retro-shadow);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .transcriptTabActive {
-  background: var(--retro-yellow) !important;
-  border-color: var(--retro-border) !important;
-  color: var(--retro-dark) !important;
+  background: #fdcb6e !important;
+  border-color: #2d3436 !important;
+  color: #1a1a2e !important;
   font-weight: 800;
-  box-shadow: 2px 2px 0 var(--retro-shadow);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .transcriptTabCount {
@@ -138,17 +138,17 @@
   min-width: 20px;
   height: 20px;
   padding: 0 6px;
-  background: var(--retro-cyan) !important;
-  border: 1px solid var(--retro-border);
+  background: #00cec9 !important;
+  border: 1px solid #2d3436;
   border-radius: 10px;
   font-size: 10px;
   font-weight: 700;
-  color: var(--retro-dark) !important;
+  color: #1a1a2e !important;
 }
 
 .transcriptTabActive .transcriptTabCount {
   background: white !important;
-  color: var(--retro-dark) !important;
+  color: #1a1a2e !important;
 }
 
 /* Progress Bar */
@@ -231,27 +231,27 @@
 /* Transcript Item - Neo-Retro */
 .transcriptItem {
   background: white !important;
-  border: 2px solid var(--retro-border) !important;
+  border: 2px solid #2d3436 !important;
   border-radius: 12px !important;
   padding: 14px 16px;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   position: relative;
-  box-shadow: 3px 3px 0 var(--retro-shadow) !important;
-  color: var(--retro-dark) !important;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15) !important;
+  color: #1a1a2e !important;
 }
 
 .transcriptItem:hover {
-  background: var(--retro-cream) !important;
+  background: #fef9e7 !important;
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 var(--retro-shadow) !important;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
 .transcriptItem.active {
-  border-color: var(--retro-cyan) !important;
+  border-color: #00cec9 !important;
   border-width: 3px !important;
   background: linear-gradient(180deg, #e0f7fa 0%, white 100%) !important;
-  box-shadow: 5px 5px 0 var(--retro-shadow) !important;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15) !important;
   transform: translate(-2px, -2px);
 }
 
@@ -283,7 +283,7 @@
 
 .transcriptItemText {
   font-size: 15px;
-  color: var(--retro-dark) !important;
+  color: #1a1a2e !important;
   line-height: 1.75;
   letter-spacing: 0.01em;
   display: flex;
@@ -299,26 +299,26 @@
   width: 26px;
   height: 26px;
   font-size: 12px;
-  color: var(--retro-dark) !important;
-  background: var(--retro-cyan) !important;
-  border: 2px solid var(--retro-border);
+  color: #1a1a2e !important;
+  background: #00cec9 !important;
+  border: 2px solid #2d3436;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s ease;
   flex-shrink: 0;
   margin-top: 2px;
-  box-shadow: 2px 2px 0 var(--retro-shadow);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .transcriptPlayIcon:hover {
-  background: var(--retro-yellow) !important;
+  background: #fdcb6e !important;
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 var(--retro-shadow);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .shadowingText {
   font-weight: 600;
-  color: var(--retro-dark) !important;
+  color: #1a1a2e !important;
 }
 
 /* Translation - Neo-Retro */
@@ -326,7 +326,7 @@
   margin-top: 8px;
   padding: 8px 12px 8px 32px;
   background: rgba(0, 206, 201, 0.1) !important;
-  border-left: 3px solid var(--retro-cyan);
+  border-left: 3px solid #00cec9;
   border-radius: 6px;
   font-size: 13px;
   line-height: 1.7;
@@ -657,8 +657,8 @@
 
 .toggleText {
   font-size: 12px;
-  color: var(--text-primary);
-  font-weight: 500;
+  color: #1a1a2e !important;
+  font-weight: 600;
 }
 
 /* Translation Display in Transcript Items */
