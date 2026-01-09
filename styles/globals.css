@@ -4,31 +4,49 @@
 :root {
   /* Colors - Retro Neon Theme */
   /* Dark purple/navy base with neon accents */
-  --bg-primary: #0a0a1a;        /* deep space black */
-  --bg-secondary: #12122a;      /* dark purple */
-  --bg-card: #1a1a3a;           /* purple-ish card */
-  --bg-hover: rgba(255, 0, 255, 0.15);  /* magenta hover */
-  --bg-elevated: #252550;       /* elevated purple */
+  --bg-primary: #0a0a1a;
+  /* deep space black */
+  --bg-secondary: #12122a;
+  /* dark purple */
+  --bg-card: #1a1a3a;
+  /* purple-ish card */
+  --bg-hover: rgba(255, 0, 255, 0.15);
+  /* magenta hover */
+  --bg-elevated: #252550;
+  /* elevated purple */
 
   /* Neon text colors */
-  --text-primary: #fff;         /* pure white */
-  --text-secondary: #e0e0ff;    /* light purple-white */
-  --text-muted: #8888cc;        /* muted purple */
+  --text-primary: #fff;
+  /* pure white */
+  --text-secondary: #e0e0ff;
+  /* light purple-white */
+  --text-muted: #8888cc;
+  /* muted purple */
 
   /* Retro Neon Accent Colors */
-  --accent-blue: #00ffff;       /* cyan neon */
-  --accent-cyan: #00ffff;       /* cyan neon */
-  --accent-purple: #ff00ff;     /* magenta neon */
-  --accent-red: #ff0066;        /* hot pink */
-  --accent-green: #00ff88;      /* neon green */
+  --accent-blue: #00ffff;
+  /* cyan neon */
+  --accent-cyan: #00ffff;
+  /* cyan neon */
+  --accent-purple: #ff00ff;
+  /* magenta neon */
+  --accent-red: #ff0066;
+  /* hot pink */
+  --accent-green: #00ff88;
+  /* neon green */
   --accent-gradient: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
-  --accent-orange: #ff6600;     /* neon orange */
-  --accent-yellow: #ffff00;     /* neon yellow */
+  --accent-orange: #ff6600;
+  /* neon orange */
+  --accent-yellow: #ffff00;
+  /* neon yellow */
 
   /* Neon Borders - Glowing */
-  --border-color: rgba(255, 0, 255, 0.4);  /* magenta glow */
-  --border-light: rgba(0, 255, 255, 0.2);  /* cyan glow */
-  --border-radius: 4px;         /* sharper edges for retro look */
+  --border-color: rgba(255, 0, 255, 0.4);
+  /* magenta glow */
+  --border-light: rgba(0, 255, 255, 0.2);
+  /* cyan glow */
+  --border-radius: 4px;
+  /* sharper edges for retro look */
   --border-radius-small: 2px;
 
   /* Neon glow shadows */
@@ -39,12 +57,18 @@
   --shadow-hover: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(255, 0, 255, 0.4);
 
   /* Difficulty colors - Neon style */
-  --difficulty-a1: #00ff88;     /* neon green */
-  --difficulty-a2: #00ffaa;     /* light neon green */
-  --difficulty-b1: #ffff00;     /* neon yellow */
-  --difficulty-b2: #ff9900;     /* neon orange */
-  --difficulty-c1: #ff0066;     /* hot pink */
-  --difficulty-c2: #ff0000;     /* neon red */
+  --difficulty-a1: #00ff88;
+  /* neon green */
+  --difficulty-a2: #00ffaa;
+  /* light neon green */
+  --difficulty-b1: #ffff00;
+  /* neon yellow */
+  --difficulty-b2: #ff9900;
+  /* neon orange */
+  --difficulty-c1: #ff0066;
+  /* hot pink */
+  --difficulty-c2: #ff0000;
+  /* neon red */
 
   /* Spacing */
   --spacing-xs: 4px;
@@ -61,6 +85,17 @@
 
   /* Touch target minimum size (Apple HIG: 44x44px) */
   --touch-target-min: 44px;
+
+  /* Neo-Retro Settings Page Colors */
+  --retro-coral: #FF6B6B;
+  --retro-cyan: #4ECDC4;
+  --retro-yellow: #FFE66D;
+  --retro-pink: #FF8ED4;
+  --retro-purple: #A855F7;
+  --retro-cream: #FFF8E7;
+  --retro-dark: #2D3436;
+  --retro-border: #1a1a2e;
+  --retro-shadow: #1a1a2e;
 }
 
 /* === LIGHT THEME HIDDEN - See original values in backup file === */
@@ -449,7 +484,9 @@ button:focus-visible {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Responsive */
@@ -740,6 +777,7 @@ button:focus-visible {
 
 /* Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -752,6 +790,7 @@ button:focus-visible {
 
 /* Disable blur effects on low-end devices (detected via hover capability) */
 @media (hover: none) and (pointer: coarse) {
+
   /* Mobile devices - simplify blur effects */
   .backdrop-blur,
   [class*="backdrop-filter"] {
@@ -788,9 +827,10 @@ button:focus-visible {
 
 /* iOS Safe Area Support */
 @supports (-webkit-touch-callout: none) {
+
   /* Add padding when bottom nav is present */
   body:has(.bottom-nav) .main-container,
-  body:has(.bottom-nav) .App > div:first-child {
+  body:has(.bottom-nav) .App>div:first-child {
     padding-bottom: calc(70px + env(safe-area-inset-bottom, 20px));
   }
 
@@ -804,7 +844,7 @@ button:focus-visible {
     -webkit-overflow-scrolling: touch;
     scroll-padding-bottom: calc(70px + env(safe-area-inset-bottom, 20px));
   }
-  
+
   /* Add padding-top for header + safe area on mobile iOS */
   .main-container {
     padding-top: calc(56px + env(safe-area-inset-top, 0px));
