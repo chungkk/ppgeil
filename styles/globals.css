@@ -1,50 +1,50 @@
-/* Global Styles - Modern Theme System */
+/* Global Styles - Retro Neon Theme */
 
-/* Modern Dark Theme - Discord/Tailwind Inspired */
+/* Retro Neon Theme - 80s Synthwave Inspired */
 :root {
-  /* Colors - Modern Dark Theme */
-  /* Clean Slate/Navy Base - Professional & Modern */
-  --bg-primary: #0f172a;        /* slate-900 */
-  --bg-secondary: #1e293b;      /* slate-800 */
-  --bg-card: #1e293b;           /* slate-800 */
-  --bg-hover: rgba(59, 130, 246, 0.1);  /* blue hover */
-  --bg-elevated: #334155;       /* slate-700 */
+  /* Colors - Retro Neon Theme */
+  /* Dark purple/navy base with neon accents */
+  --bg-primary: #0a0a1a;        /* deep space black */
+  --bg-secondary: #12122a;      /* dark purple */
+  --bg-card: #1a1a3a;           /* purple-ish card */
+  --bg-hover: rgba(255, 0, 255, 0.15);  /* magenta hover */
+  --bg-elevated: #252550;       /* elevated purple */
 
-  /* Crystal clear text - Maximum readability */
-  --text-primary: #f8fafc;      /* slate-50 */
-  --text-secondary: #e2e8f0;    /* slate-200 */
-  --text-muted: #94a3b8;        /* slate-400 */
+  /* Neon text colors */
+  --text-primary: #fff;         /* pure white */
+  --text-secondary: #e0e0ff;    /* light purple-white */
+  --text-muted: #8888cc;        /* muted purple */
 
-  /* Modern Accent Colors - Clean & Professional */
-  --accent-blue: #3b82f6;       /* blue-500 */
-  --accent-cyan: #06b6d4;       /* cyan-500 */
-  --accent-purple: #3b82f6;     /* blue-500 (aliased for backward compatibility) */
-  --accent-red: #ef4444;        /* red-500 */
-  --accent-green: #10b981;      /* emerald-500 */
-  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
-  --accent-orange: #f59e0b;     /* amber-500 */
-  --accent-yellow: #eab308;     /* yellow-500 */
+  /* Retro Neon Accent Colors */
+  --accent-blue: #00ffff;       /* cyan neon */
+  --accent-cyan: #00ffff;       /* cyan neon */
+  --accent-purple: #ff00ff;     /* magenta neon */
+  --accent-red: #ff0066;        /* hot pink */
+  --accent-green: #00ff88;      /* neon green */
+  --accent-gradient: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
+  --accent-orange: #ff6600;     /* neon orange */
+  --accent-yellow: #ffff00;     /* neon yellow */
 
-  /* Subtle Borders - Modern minimalist */
-  --border-color: rgba(148, 163, 184, 0.2);  /* slate-400 with opacity */
-  --border-light: rgba(148, 163, 184, 0.1);
-  --border-radius: 12px;
-  --border-radius-small: 8px;
+  /* Neon Borders - Glowing */
+  --border-color: rgba(255, 0, 255, 0.4);  /* magenta glow */
+  --border-light: rgba(0, 255, 255, 0.2);  /* cyan glow */
+  --border-radius: 4px;         /* sharper edges for retro look */
+  --border-radius-small: 2px;
 
-  /* Refined shadows - subtle depth */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 8px 20px rgba(59, 130, 246, 0.25);
+  /* Neon glow shadows */
+  --shadow-sm: 0 0 5px rgba(255, 0, 255, 0.3);
+  --shadow-md: 0 0 15px rgba(255, 0, 255, 0.4);
+  --shadow-lg: 0 0 25px rgba(255, 0, 255, 0.5);
+  --shadow-xl: 0 0 40px rgba(255, 0, 255, 0.6);
+  --shadow-hover: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(255, 0, 255, 0.4);
 
-  /* Difficulty colors - vibrant & clear */
-  --difficulty-a1: #10b981;     /* emerald-500 */
-  --difficulty-a2: #34d399;     /* emerald-400 */
-  --difficulty-b1: #f59e0b;     /* amber-500 */
-  --difficulty-b2: #fb923c;     /* orange-400 */
-  --difficulty-c1: #f43f5e;     /* rose-500 */
-  --difficulty-c2: #ef4444;     /* red-500 */
+  /* Difficulty colors - Neon style */
+  --difficulty-a1: #00ff88;     /* neon green */
+  --difficulty-a2: #00ffaa;     /* light neon green */
+  --difficulty-b1: #ffff00;     /* neon yellow */
+  --difficulty-b2: #ff9900;     /* neon orange */
+  --difficulty-c1: #ff0066;     /* hot pink */
+  --difficulty-c2: #ff0000;     /* neon red */
 
   /* Spacing */
   --spacing-xs: 4px;
@@ -65,124 +65,134 @@
 
 /* === LIGHT THEME HIDDEN - See original values in backup file === */
 
-/* Dark Theme - Modern & Clean */
+/* Dark Theme - Retro Neon */
 [data-theme="dark"] {
-  /* Clean Slate/Navy Base - Professional & Modern */
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --bg-card: #1e293b;
-  --bg-hover: rgba(59, 130, 246, 0.1);
-  --bg-elevated: #334155;
+  /* Dark purple base with neon accents */
+  --bg-primary: #0a0a1a;
+  --bg-secondary: #12122a;
+  --bg-card: #1a1a3a;
+  --bg-hover: rgba(255, 0, 255, 0.15);
+  --bg-elevated: #252550;
 
-  /* Crystal clear text - Maximum readability */
-  --text-primary: #f8fafc;
-  --text-secondary: #e2e8f0;
-  --text-muted: #94a3b8;
+  /* Neon text */
+  --text-primary: #fff;
+  --text-secondary: #e0e0ff;
+  --text-muted: #8888cc;
 
-  /* Modern Accent Colors - Clean & Professional */
-  --accent-blue: #3b82f6;
-  --accent-cyan: #06b6d4;
-  -accent-purple: #3b82f6;
-  --accent-red: #ef4444;
-  --accent-green: #10b981;
-  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  /* Retro Neon Accents */
+  --accent-blue: #00ffff;
+  --accent-cyan: #00ffff;
+  --accent-purple: #ff00ff;
+  --accent-red: #ff0066;
+  --accent-green: #00ff88;
+  --accent-gradient: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
 
-  /* Subtle Borders - Modern minimalist */
-  --border-color: rgba(148, 163, 184, 0.2);
-  --border-light: rgba(148, 163, 184, 0.1);
+  /* Neon Borders */
+  --border-color: rgba(255, 0, 255, 0.4);
+  --border-light: rgba(0, 255, 255, 0.2);
 
-  /* Refined shadows - subtle depth */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 8px 20px rgba(59, 130, 246, 0.25);
+  /* Neon glow shadows */
+  --shadow-sm: 0 0 5px rgba(255, 0, 255, 0.3);
+  --shadow-md: 0 0 15px rgba(255, 0, 255, 0.4);
+  --shadow-lg: 0 0 25px rgba(255, 0, 255, 0.5);
+  --shadow-xl: 0 0 40px rgba(255, 0, 255, 0.6);
+  --shadow-hover: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(255, 0, 255, 0.4);
 
-  /* Difficulty colors - vibrant & clear */
-  --difficulty-a1: #10b981;
-  --difficulty-a2: #34d399;
-  --difficulty-b1: #f59e0b;
-  --difficulty-b2: #fb923c;
-  --difficulty-c1: #f43f5e;
-  --difficulty-c2: #ef4444;
+  /* Difficulty colors - Neon */
+  --difficulty-a1: #00ff88;
+  --difficulty-a2: #00ffaa;
+  --difficulty-b1: #ffff00;
+  --difficulty-b2: #ff9900;
+  --difficulty-c1: #ff0066;
+  --difficulty-c2: #ff0000;
 }
 
-/* Dark theme scrollbar - Modern Blue */
+/* Dark theme scrollbar - Neon Magenta */
 [data-theme="dark"]::-webkit-scrollbar-thumb {
-  background: rgba(59, 130, 246, 0.3);
+  background: rgba(255, 0, 255, 0.4);
 }
 
 [data-theme="dark"]::-webkit-scrollbar-thumb:hover {
-  background: rgba(59, 130, 246, 0.5);
+  background: rgba(0, 255, 255, 0.6);
 }
 
-/* Dark theme enhanced contrast for cards and components */
+/* Retro neon enhanced contrast for cards and components */
 [data-theme="dark"] .topic-tag {
-  background: rgba(59, 130, 246, 0.08);
-  border-color: rgba(59, 130, 246, 0.3);
+  background: rgba(255, 0, 255, 0.1);
+  border: 2px solid rgba(255, 0, 255, 0.5);
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
 [data-theme="dark"] .topic-tag:hover {
-  background: rgba(59, 130, 246, 0.15);
-  border-color: rgba(59, 130, 246, 0.5);
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+  background: rgba(0, 255, 255, 0.15);
+  border-color: rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.3);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
 
 [data-theme="dark"] .topic-tag.active {
   background: var(--accent-gradient);
   border-color: transparent;
-  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4), 0 2px 10px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.6), 0 0 50px rgba(0, 255, 255, 0.4);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 [data-theme="dark"] .pagination-btn {
-  background: rgba(59, 130, 246, 0.08);
-  border-color: rgba(59, 130, 246, 0.3);
+  background: rgba(255, 0, 255, 0.1);
+  border: 2px solid rgba(255, 0, 255, 0.5);
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
 [data-theme="dark"] .pagination-btn:hover:not(:disabled) {
-  background: rgba(59, 130, 246, 0.15);
-  border-color: rgba(59, 130, 246, 0.5);
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+  background: rgba(0, 255, 255, 0.15);
+  border-color: rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
 
-/* Dark theme difficulty toggle - Modern & Clean */
+/* Dark theme difficulty toggle - Retro Neon */
 [data-theme="dark"] .difficulty-toggle__option {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.05) 100%);
-  border-color: rgba(16, 185, 129, 0.4);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.15) 0%, rgba(0, 255, 136, 0.05) 100%);
+  border: 2px solid rgba(0, 255, 136, 0.5);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
 }
 
 [data-theme="dark"] .difficulty-toggle__option:hover {
-  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.5), 0 0 50px rgba(0, 255, 136, 0.3);
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.8);
 }
 
 [data-theme="dark"] .difficulty-toggle__option:nth-child(2) {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%);
-  border-color: rgba(245, 158, 11, 0.4);
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.15) 0%, rgba(255, 153, 0, 0.05) 100%);
+  border: 2px solid rgba(255, 153, 0, 0.5);
+  box-shadow: 0 0 15px rgba(255, 153, 0, 0.3);
 }
 
 [data-theme="dark"] .difficulty-toggle__option:nth-child(2):hover {
-  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 25px rgba(255, 153, 0, 0.5), 0 0 50px rgba(255, 153, 0, 0.3);
+  text-shadow: 0 0 15px rgba(255, 153, 0, 0.8);
 }
 
 [data-theme="dark"] .difficulty-toggle__option.active {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.25) 0%, rgba(16, 185, 129, 0.15) 100%);
-  border-color: rgba(16, 185, 129, 0.8);
-  box-shadow: 0 4px 24px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.25) 0%, rgba(0, 255, 136, 0.15) 100%);
+  border-color: rgba(0, 255, 136, 1);
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.6), 0 0 60px rgba(0, 255, 136, 0.4);
 }
 
 [data-theme="dark"] .difficulty-toggle__option.active:nth-child(2) {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25) 0%, rgba(245, 158, 11, 0.15) 100%);
-  border-color: rgba(245, 158, 11, 0.8);
-  box-shadow: 0 4px 24px rgba(245, 158, 11, 0.4);
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.25) 0%, rgba(255, 153, 0, 0.15) 100%);
+  border-color: rgba(255, 153, 0, 1);
+  box-shadow: 0 0 30px rgba(255, 153, 0, 0.6), 0 0 60px rgba(255, 153, 0, 0.4);
 }
 
 [data-theme="dark"] .difficulty-toggle__title {
-  color: #10b981;
+  color: #00ff88;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 
 [data-theme="dark"] .difficulty-toggle__option:nth-child(2) .difficulty-toggle__title {
-  color: #fb923c;
+  color: #ff9900;
+  text-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
 }
 
 * {
@@ -555,25 +565,34 @@ button:focus-visible {
 .category-title {
   font-size: 24px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: var(--accent-cyan);
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .view-all-btn {
   background: transparent;
-  border: none;
-  color: var(--accent-blue);
+  border: 2px solid var(--accent-purple);
+  color: var(--accent-purple);
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius-small);
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
 .view-all-btn:hover {
-  background: var(--bg-hover);
+  background: rgba(255, 0, 255, 0.2);
   color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.3);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
 
 /* Category Detail Page */

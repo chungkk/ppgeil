@@ -1,4 +1,4 @@
-/* Lesson Card Styles */
+/* Lesson Card Styles - Retro Neon */
 
 .lessonCard {
   background: var(--bg-card);
@@ -6,27 +6,48 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   box-shadow: var(--shadow-md);
+  position: relative;
 }
 
-/* Dark theme specific styles - Modern Blue */
+/* Scanline effect overlay */
+.lessonCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0px,
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0.3;
+}
+
+/* Dark theme specific styles - Retro Neon */
 [data-theme="dark"] .lessonCard {
-  background: rgba(59, 130, 246, 0.06);
-  border: 2px solid rgba(59, 130, 246, 0.3);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(26, 26, 58, 0.9);
+  border: 2px solid rgba(255, 0, 255, 0.4);
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3), 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .lessonCard:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.02);
   box-shadow: var(--shadow-hover);
-  border-color: var(--accent-blue);
+  border-color: var(--accent-cyan);
 }
 
 [data-theme="dark"] .lessonCard:hover {
-  background: rgba(59, 130, 246, 0.12);
-  border-color: rgba(59, 130, 246, 0.6);
-  box-shadow: 0 8px 28px rgba(59, 130, 246, 0.35), 0 4px 14px rgba(6, 182, 212, 0.25);
+  background: rgba(26, 26, 58, 1);
+  border-color: rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5), 0 0 60px rgba(255, 0, 255, 0.3), 0 0 90px rgba(0, 0, 0, 0.5);
 }
 
 .thumbnailContainer {
@@ -161,6 +182,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   min-height: 34px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 .actions {
@@ -188,23 +210,24 @@
 }
 
 [data-theme="dark"] .actionBtn {
-  background: rgba(59, 130, 246, 0.08);
-  border-color: rgba(59, 130, 246, 0.3);
-  box-shadow: none;
+  background: rgba(255, 0, 255, 0.1);
+  border: 1px solid rgba(255, 0, 255, 0.4);
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.2);
 }
 
 .actionBtn:hover {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(6, 182, 212, 0.08) 100%);
-  border-color: var(--accent-blue);
-  color: var(--accent-blue);
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.15) 0%, rgba(255, 0, 255, 0.1) 100%);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 [data-theme="dark"] .actionBtn:hover {
-  background: rgba(59, 130, 246, 0.18);
-  border-color: rgba(59, 130, 246, 0.6);
-  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+  background: rgba(0, 255, 255, 0.15);
+  border-color: rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), 0 0 30px rgba(255, 0, 255, 0.2);
 }
 
 .actionBtn svg {
