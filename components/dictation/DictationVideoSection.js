@@ -6,6 +6,25 @@ import videoStyles from '../../styles/dictation/dictationVideo.module.css';
 // Merge styles - component styles override layout styles
 const styles = { ...layoutStyles, ...videoStyles };
 
+// Retro flip clock component for study timer
+const RetroFlipClock = ({ timeString }) => {
+  // timeString is HH:MM:SS format
+  const digits = timeString.replace(/:/g, '').split('');
+  
+  return (
+    <>
+      <span className={videoStyles.flipDigit}>{digits[0]}</span>
+      <span className={videoStyles.flipDigit}>{digits[1]}</span>
+      <span className={videoStyles.flipColon}>:</span>
+      <span className={videoStyles.flipDigit}>{digits[2]}</span>
+      <span className={videoStyles.flipDigit}>{digits[3]}</span>
+      <span className={videoStyles.flipColon}>:</span>
+      <span className={videoStyles.flipDigit}>{digits[4]}</span>
+      <span className={videoStyles.flipDigit}>{digits[5]}</span>
+    </>
+  );
+};
+
 /**
  * Dictation Video Section Component
  * Handles video player, header, and controls
@@ -275,8 +294,9 @@ const DictationVideoSection = ({
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <h3 className={styles.transcriptTitle}>{t('lesson.ui.video')}</h3>
           <div className={styles.studyTimer}>
-            <span className={styles.timerIcon}>⏱️</span>
-            <span className={styles.timerText}>{formatStudyTime(studyTime)}</span>
+            <span className={styles.timerText}>
+              <RetroFlipClock timeString={formatStudyTime(studyTime)} />
+            </span>
           </div>
         </div>
         {!isMobile && (

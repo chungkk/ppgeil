@@ -162,40 +162,86 @@
   letter-spacing: 0.3px;
 }
 
-/* Study Timer */
+/* Study Timer - Retro Flip Clock Style */
 .studyTimer {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  background: linear-gradient(145deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.06) 100%);
-  border: 1px solid rgba(16, 185, 129, 0.25);
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
-}
-
-.studyTimer:hover {
-  background: linear-gradient(145deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.1) 100%);
-  border-color: rgba(16, 185, 129, 0.4);
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+  gap: 4px;
+  padding: 4px 8px;
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .timerIcon {
-  font-size: 14px;
-  filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.4));
+  display: none;
 }
 
 .timerText {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Retro Flip Digit */
+.flipDigit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 30px;
+  background: linear-gradient(180deg, #2d2d44 0%, #1a1a2e 50%, #2d2d44 51%, #1a1a2e 100%);
+  border-radius: 4px;
   font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
-  color: #10b981;
+  font-size: 16px;
   font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.5px;
+  color: #10b981;
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+  position: relative;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.flipDigit::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.4);
+  transform: translateY(-50%);
+}
+
+.flipDigit::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, transparent 100%);
+  border-radius: 4px 4px 0 0;
+  pointer-events: none;
+}
+
+.flipColon {
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #10b981;
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+  margin: 0 1px;
+  animation: colonBlink 1s ease-in-out infinite;
+}
+
+@keyframes colonBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
 }
 
 .studyTimerMobile {
