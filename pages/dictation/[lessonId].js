@@ -41,7 +41,7 @@ const DictationPage = () => {
   const [revealedWordsByClick, setRevealedWordsByClick] = useState({}); // { sentenceIndex: { wordIndex: true } } - words revealed by double-click
   const [focusedWordIndex, setFocusedWordIndex] = useState(null); // Track which word input is focused
   const lastFocusedWordIndexRef = useRef(null); // Keep track of last focused word for hint button
-  const [hintClickCount, setHintClickCount] = useState(0); // Count hint clicks, deduct 1 point every 3 clicks
+  const [hintClickCount, setHintClickCount] = useState({}); // { sentenceIndex: count } - Count hint clicks per sentence, deduct 1 point from 3rd click onwards
   const [sentencePointsAwarded, setSentencePointsAwarded] = useState({}); // { sentenceIndex: true } - track which sentences got points
   const [sentenceRevealPenalty, setSentenceRevealPenalty] = useState({}); // { sentenceIndex: true } - track which sentences got penalty for revealing too many words
   const [pointsAnimations, setPointsAnimations] = useState([]);
@@ -65,7 +65,7 @@ const DictationPage = () => {
 
   // Use SWR hook for lesson data
   const { lesson, progress: loadedProgress, studyTime: loadedStudyTime, isLoading: loading } = useLessonData(lessonId, 'dictation');
-  const { user } = useAuth();
+  const { user, userPoints } = useAuth();
 
   // Study timer
   const { studyTime } = useStudyTimer({
@@ -100,6 +100,9 @@ const DictationPage = () => {
       if (loadedProgress.wordInputs) {
         setWordInputs(loadedProgress.wordInputs);
       }
+      if (loadedProgress.hintClickCount) {
+        setHintClickCount(loadedProgress.hintClickCount);
+      }
     }
   }, [loadedProgress]);
 
@@ -124,6 +127,7 @@ const DictationPage = () => {
         revealedWordsByClick: updates.revealedWordsByClick ?? revealedWordsByClick,
         userInputs: updates.userInputs ?? userInputs,
         wordInputs: updates.wordInputs ?? wordInputs,
+        hintClickCount: updates.hintClickCount ?? hintClickCount,
         totalSentences: transcriptData.length,
         // Add fields for completion calculation
         correctWords: completedCount,
@@ -149,7 +153,7 @@ const DictationPage = () => {
     } catch (error) {
       console.error('Error saving dictation progress:', error);
     }
-  }, [lessonId, user, completedSentences, checkedSentences, sentencePointsAwarded, sentenceRevealPenalty, revealedWordsByClick, userInputs, wordInputs, transcriptData.length]);
+  }, [lessonId, user, completedSentences, checkedSentences, sentencePointsAwarded, sentenceRevealPenalty, revealedWordsByClick, userInputs, wordInputs, hintClickCount, transcriptData.length]);
 
   // Debounced save for user inputs
   const saveInputTimeoutRef = useRef(null);
@@ -951,17 +955,24 @@ const DictationPage = () => {
     };
     setComparedWords(newComparedWords);
     
-    // Count hint clicks and deduct 1 point every 3 clicks
-    const newHintCount = hintClickCount + 1;
-    setHintClickCount(newHintCount);
-    if (newHintCount % 3 === 0) {
+    // Count hint clicks per sentence and deduct 1 point from 3rd click onwards
+    const currentCount = hintClickCount[currentSentenceIndex] || 0;
+    const newCount = currentCount + 1;
+    setHintClickCount(prev => ({
+      ...prev,
+      [currentSentenceIndex]: newCount
+    }));
+    
+    // Deduct 1 point from 3rd click onwards (3rd, 4th, 5th, ...)
+    if (newCount >= 3) {
       updatePoints(-1);
     }
     
     // Save progress
     saveProgress({
       revealedWordsByClick: updated,
-      wordInputs: newWordInputs
+      wordInputs: newWordInputs,
+      hintClickCount: { ...hintClickCount, [currentSentenceIndex]: newCount }
     });
   }, [focusedWordIndex, currentSentenceIndex, transcriptData, wordInputs, revealedWordsByClick, comparedWords, saveProgress, hintClickCount, updatePoints]);
 
@@ -1729,10 +1740,20 @@ const DictationPage = () => {
                   <button
                     className={styles.hintButton}
                     onClick={revealFocusedWordHint}
-                    disabled={lastFocusedWordIndexRef.current === null || revealedWordsByClick[currentSentenceIndex]?.[lastFocusedWordIndexRef.current]}
+                    disabled={
+                      results[currentSentenceIndex]?.showAnswer || 
+                      lastFocusedWordIndexRef.current === null || 
+                      revealedWordsByClick[currentSentenceIndex]?.[lastFocusedWordIndexRef.current] ||
+                      ((hintClickCount[currentSentenceIndex] || 0) >= 2 && userPoints <= 0)
+                    }
                     title={t('dictationPage.clickToShowHint')}
                   >
                     💡
+                    {(hintClickCount[currentSentenceIndex] || 0) < 2 ? (
+                      <span className={styles.hintFreeCount}>{2 - (hintClickCount[currentSentenceIndex] || 0)}</span>
+                    ) : (
+                      <span className={styles.hintPenaltyCount}>-1</span>
+                    )}
                   </button>
                   <button
                     className={styles.navButton}

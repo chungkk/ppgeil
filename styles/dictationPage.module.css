@@ -2118,6 +2118,7 @@
 }
 
 .hintButton {
+  position: relative;
   width: 48px;
   height: 48px;
   background: linear-gradient(135deg, rgba(251, 191, 36, 0.2) 0%, rgba(245, 158, 11, 0.15) 100%);
@@ -2143,6 +2144,40 @@
   opacity: 0.4;
   cursor: not-allowed;
   filter: grayscale(0.5);
+}
+
+.hintFreeCount {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #10b981;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hintPenaltyCount {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ef4444;
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ============================================================================
