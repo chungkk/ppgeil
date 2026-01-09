@@ -1741,6 +1741,7 @@ const DictationPage = () => {
                     className={styles.hintButton}
                     onClick={revealFocusedWordHint}
                     disabled={
+                      completedSentences.includes(currentSentenceIndex) ||
                       results[currentSentenceIndex]?.showAnswer || 
                       lastFocusedWordIndexRef.current === null || 
                       revealedWordsByClick[currentSentenceIndex]?.[lastFocusedWordIndexRef.current] ||
