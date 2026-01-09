@@ -1747,7 +1747,7 @@ const DictationPage = () => {
                           })()}
                         </div>
                         <textarea
-                          className={`${styles.mobileTextInput} ${styles.mobileTextInputTransparent} ${completedSentences.includes(currentSentenceIndex) ? styles.mobileTextInputCompleted : ''}`}
+                          className={`${styles.mobileTextInput} ${completedSentences.includes(currentSentenceIndex) ? styles.mobileTextInputCompleted : ''}`}
                           value={userInputs[currentSentenceIndex] || ''}
                           onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
                           placeholder={t('dictationPage.typeAllWords')}
