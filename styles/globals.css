@@ -100,38 +100,38 @@
 
 /* === LIGHT THEME HIDDEN - See original values in backup file === */
 
-/* Dark Theme - Retro Neon */
+/* Dark Theme - Neo-Retro Dark */
 [data-theme="dark"] {
-  /* Dark purple base with neon accents */
-  --bg-primary: #0a0a1a;
-  --bg-secondary: #12122a;
-  --bg-card: #1a1a3a;
-  --bg-hover: rgba(255, 0, 255, 0.15);
-  --bg-elevated: #252550;
+  /* Dark retro gray base */
+  --bg-primary: #2d3436;
+  --bg-secondary: #3d4448;
+  --bg-card: #4a5156;
+  --bg-hover: rgba(0, 206, 201, 0.2);
+  --bg-elevated: #4a5156;
 
-  /* Neon text */
-  --text-primary: #fff;
-  --text-secondary: #e0e0ff;
-  --text-muted: #8888cc;
+  /* Neo-Retro text on dark */
+  --text-primary: #fef9e7;
+  --text-secondary: #dfe6e9;
+  --text-muted: #b2bec3;
 
-  /* Retro Neon Accents */
-  --accent-blue: #00ffff;
-  --accent-cyan: #00ffff;
-  --accent-purple: #ff00ff;
-  --accent-red: #ff0066;
-  --accent-green: #00ff88;
-  --accent-gradient: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
+  /* Neo-Retro Accents */
+  --accent-blue: #74b9ff;
+  --accent-cyan: #00cec9;
+  --accent-purple: #a29bfe;
+  --accent-red: #ff6b35;
+  --accent-green: #00b894;
+  --accent-gradient: linear-gradient(135deg, #00cec9 0%, #ff6b35 100%);
 
-  /* Neon Borders */
-  --border-color: rgba(255, 0, 255, 0.4);
-  --border-light: rgba(0, 255, 255, 0.2);
+  /* Neo-Retro Borders on dark */
+  --border-color: #1a1a2e;
+  --border-light: rgba(254, 249, 231, 0.2);
 
-  /* Neon glow shadows */
-  --shadow-sm: 0 0 5px rgba(255, 0, 255, 0.3);
-  --shadow-md: 0 0 15px rgba(255, 0, 255, 0.4);
-  --shadow-lg: 0 0 25px rgba(255, 0, 255, 0.5);
-  --shadow-xl: 0 0 40px rgba(255, 0, 255, 0.6);
-  --shadow-hover: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(255, 0, 255, 0.4);
+  /* Neo-Retro shadows */
+  --shadow-sm: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 4px 4px 0 rgba(0, 0, 0, 0.35);
+  --shadow-lg: 6px 6px 0 rgba(0, 0, 0, 0.35);
+  --shadow-xl: 8px 8px 0 rgba(0, 0, 0, 0.35);
+  --shadow-hover: 6px 6px 0 rgba(0, 0, 0, 0.35);
 
   /* Difficulty colors - Neon */
   --difficulty-a1: #00ff88;
