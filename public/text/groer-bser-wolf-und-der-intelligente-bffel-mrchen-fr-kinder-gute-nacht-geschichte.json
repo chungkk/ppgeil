@@ -1,0 +1,3054 @@
+[
+    {
+        "text": "Es war einmal vor langer Zeit, als die Tiere noch sprechen konnten.",
+        "start": 0.5200000047683716,
+        "end": 4.660000133514404,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 0.5200000047683716,
+                "end": 1.2200000286102295
+            },
+            {
+                "word": "war",
+                "start": 1.2200000286102295,
+                "end": 1.440000057220459
+            },
+            {
+                "word": "einmal",
+                "start": 1.440000057220459,
+                "end": 1.899999976158142
+            },
+            {
+                "word": "vor",
+                "start": 1.899999976158142,
+                "end": 2.0999999046325684
+            },
+            {
+                "word": "langer",
+                "start": 2.0999999046325684,
+                "end": 2.4200000762939453
+            },
+            {
+                "word": "Zeit,",
+                "start": 2.4200000762939453,
+                "end": 2.640000104904175
+            },
+            {
+                "word": "als",
+                "start": 2.9000000953674316,
+                "end": 2.940000057220459
+            },
+            {
+                "word": "die",
+                "start": 2.940000057220459,
+                "end": 3.359999895095825
+            },
+            {
+                "word": "Tiere",
+                "start": 3.359999895095825,
+                "end": 3.359999895095825
+            },
+            {
+                "word": "noch",
+                "start": 3.359999895095825,
+                "end": 4
+            },
+            {
+                "word": "sprechen",
+                "start": 4,
+                "end": 4
+            },
+            {
+                "word": "konnten.",
+                "start": 4,
+                "end": 4.660000133514404
+            }
+        ],
+        "translationEn": "Once upon a time, long ago, when animals could still speak.",
+        "translationVi": "Ngày xửa ngày xưa, khi những con vật còn có thể nói chuyện."
+    },
+    {
+        "text": "Da lebte ein riesiger Büffel auf dem Hof des Hirten.",
+        "start": 4.760000133514405,
+        "end": 7.8799999237060545,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 4.760000133514405,
+                "end": 5.139999866485596
+            },
+            {
+                "word": "lebte",
+                "start": 5.139999866485596,
+                "end": 5.239999771118164
+            },
+            {
+                "word": "ein",
+                "start": 5.239999771118164,
+                "end": 5.460000038146973
+            },
+            {
+                "word": "riesiger",
+                "start": 5.460000038146973,
+                "end": 5.940000057220459
+            },
+            {
+                "word": "Büffel",
+                "start": 5.940000057220459,
+                "end": 6.260000228881836
+            },
+            {
+                "word": "auf",
+                "start": 6.260000228881836,
+                "end": 6.539999961853027
+            },
+            {
+                "word": "dem",
+                "start": 6.539999961853027,
+                "end": 6.760000228881836
+            },
+            {
+                "word": "Hof",
+                "start": 6.760000228881836,
+                "end": 7
+            },
+            {
+                "word": "des",
+                "start": 7,
+                "end": 7.28000020980835
+            },
+            {
+                "word": "Hirten.",
+                "start": 7.28000020980835,
+                "end": 7.8799999237060545
+            }
+        ],
+        "translationEn": "There lived a giant buffalo on the shepherd's farm.",
+        "translationVi": "Có một con trâu khổng lồ sống trong trang trại của người chăn cừu."
+    },
+    {
+        "text": "Der Büffel half dem Hirten bei der Feldarbeit.",
+        "start": 9.120000267028809,
+        "end": 12.45999984741211,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 9.120000267028809,
+                "end": 9.819999694824219
+            },
+            {
+                "word": "Büffel",
+                "start": 9.819999694824219,
+                "end": 10.260000228881836
+            },
+            {
+                "word": "half",
+                "start": 10.260000228881836,
+                "end": 10.739999771118164
+            },
+            {
+                "word": "dem",
+                "start": 10.739999771118164,
+                "end": 11
+            },
+            {
+                "word": "Hirten",
+                "start": 11,
+                "end": 11.260000228881836
+            },
+            {
+                "word": "bei",
+                "start": 11.260000228881836,
+                "end": 11.420000076293945
+            },
+            {
+                "word": "der",
+                "start": 11.420000076293945,
+                "end": 11.65999984741211
+            },
+            {
+                "word": "Feldarbeit.",
+                "start": 11.65999984741211,
+                "end": 12.45999984741211
+            }
+        ],
+        "translationEn": "The buffalo helped the shepherd with the fieldwork.",
+        "translationVi": "Con trâu đã giúp người chăn cừu trong công việc đồng áng."
+    },
+    {
+        "text": "Der Hirte tat sein Bestes, um ihn glücklich zu machen.",
+        "start": 12.280000114440918,
+        "end": 14.980000305175782,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 12.280000114440918,
+                "end": 12.699999809265137
+            },
+            {
+                "word": "Hirte",
+                "start": 12.699999809265137,
+                "end": 12.819999694824219
+            },
+            {
+                "word": "tat",
+                "start": 12.819999694824219,
+                "end": 13
+            },
+            {
+                "word": "sein",
+                "start": 13,
+                "end": 13.260000228881836
+            },
+            {
+                "word": "Bestes,",
+                "start": 13.260000228881836,
+                "end": 13.619999885559082
+            },
+            {
+                "word": "um",
+                "start": 13.739999771118164,
+                "end": 13.819999694824219
+            },
+            {
+                "word": "ihn",
+                "start": 13.819999694824219,
+                "end": 13.880000114440918
+            },
+            {
+                "word": "glücklich",
+                "start": 13.880000114440918,
+                "end": 14.180000305175781
+            },
+            {
+                "word": "zu",
+                "start": 14.180000305175781,
+                "end": 14.680000305175781
+            },
+            {
+                "word": "machen.",
+                "start": 14.680000305175781,
+                "end": 14.980000305175782
+            }
+        ],
+        "translationEn": "The shepherd did his best to make him happy.",
+        "translationVi": "Người chăn cừu đã cố gắng hết sức để làm cho anh ta hạnh phúc."
+    },
+    {
+        "text": "Eines Tages setzte sich der Hirte, der den Büffel auf die Weide führte, unter einen Apfelbaum, um sich auszuruhen.",
+        "start": 16.359999084472655,
+        "end": 23.379999923706055,
+        "wordTimings": [
+            {
+                "word": "Eines",
+                "start": 16.359999084472655,
+                "end": 16.579999923706055
+            },
+            {
+                "word": "Tages",
+                "start": 16.579999923706055,
+                "end": 16.940000534057617
+            },
+            {
+                "word": "setzte",
+                "start": 16.940000534057617,
+                "end": 17.31999969482422
+            },
+            {
+                "word": "sich",
+                "start": 17.31999969482422,
+                "end": 17.579999923706055
+            },
+            {
+                "word": "der",
+                "start": 17.579999923706055,
+                "end": 17.799999237060547
+            },
+            {
+                "word": "Hirte,",
+                "start": 17.799999237060547,
+                "end": 18.100000381469727
+            },
+            {
+                "word": "der",
+                "start": 18.219999313354492,
+                "end": 18.34000015258789
+            },
+            {
+                "word": "den",
+                "start": 18.34000015258789,
+                "end": 18.6200008392334
+            },
+            {
+                "word": "Büffel",
+                "start": 18.6200008392334,
+                "end": 18.8799991607666
+            },
+            {
+                "word": "auf",
+                "start": 18.8799991607666,
+                "end": 19.059999465942383
+            },
+            {
+                "word": "die",
+                "start": 19.059999465942383,
+                "end": 19.3799991607666
+            },
+            {
+                "word": "Weide",
+                "start": 19.3799991607666,
+                "end": 19.440000534057617
+            },
+            {
+                "word": "führte,",
+                "start": 19.440000534057617,
+                "end": 19.84000015258789
+            },
+            {
+                "word": "unter",
+                "start": 20.239999771118164,
+                "end": 20.639999389648438
+            },
+            {
+                "word": "einen",
+                "start": 20.639999389648438,
+                "end": 21
+            },
+            {
+                "word": "Apfelbaum,",
+                "start": 21,
+                "end": 21.739999771118164
+            },
+            {
+                "word": "um",
+                "start": 22.059999465942383,
+                "end": 22.139999389648438
+            },
+            {
+                "word": "sich",
+                "start": 22.139999389648438,
+                "end": 22.34000015258789
+            },
+            {
+                "word": "auszuruhen.",
+                "start": 22.34000015258789,
+                "end": 23.379999923706055
+            }
+        ],
+        "translationEn": "One day, the shepherd who was leading the buffalo to the pasture sat down under an apple tree to rest.",
+        "translationVi": "Một ngày nọ, người chăn cừu dẫn con trâu ra đồng ngồi dưới một cây táo để nghỉ ngơi."
+    },
+    {
+        "text": "In diesem Moment schlich sich ein hungriger, listiger Wolf an und folgte ihm.",
+        "start": 24.840000534057616,
+        "end": 29.679999160766602,
+        "wordTimings": [
+            {
+                "word": "In",
+                "start": 24.840000534057616,
+                "end": 25.079999923706055
+            },
+            {
+                "word": "diesem",
+                "start": 25.079999923706055,
+                "end": 25.3799991607666
+            },
+            {
+                "word": "Moment",
+                "start": 25.3799991607666,
+                "end": 25.760000228881836
+            },
+            {
+                "word": "schlich",
+                "start": 25.760000228881836,
+                "end": 26.260000228881836
+            },
+            {
+                "word": "sich",
+                "start": 26.260000228881836,
+                "end": 26.559999465942383
+            },
+            {
+                "word": "ein",
+                "start": 26.559999465942383,
+                "end": 26.8799991607666
+            },
+            {
+                "word": "hungriger,",
+                "start": 26.8799991607666,
+                "end": 27.31999969482422
+            },
+            {
+                "word": "listiger",
+                "start": 27.959999084472656,
+                "end": 27.959999084472656
+            },
+            {
+                "word": "Wolf",
+                "start": 27.959999084472656,
+                "end": 28.219999313354492
+            },
+            {
+                "word": "an",
+                "start": 28.219999313354492,
+                "end": 28.459999084472656
+            },
+            {
+                "word": "und",
+                "start": 28.459999084472656,
+                "end": 28.81999969482422
+            },
+            {
+                "word": "folgte",
+                "start": 28.81999969482422,
+                "end": 29.15999984741211
+            },
+            {
+                "word": "ihm.",
+                "start": 29.15999984741211,
+                "end": 29.679999160766602
+            }
+        ],
+        "translationEn": "At that moment, a hungry, cunning wolf crept up and followed him.",
+        "translationVi": "Vào lúc này, một con sói đói khát và ranh mãnh đang lén lút theo sau nó."
+    },
+    {
+        "text": "Dieser Büffel wäre ein tolles Mittagessen für mich, aber ich muss diesen Menschen loswerden.",
+        "start": 36.24000015258789,
+        "end": 44.64999847412109,
+        "wordTimings": [
+            {
+                "word": "Dieser",
+                "start": 36.24000015258789,
+                "end": 37.119998931884766
+            },
+            {
+                "word": "Büffel",
+                "start": 37.119998931884766,
+                "end": 37.63999938964844
+            },
+            {
+                "word": "wäre",
+                "start": 37.63999938964844,
+                "end": 37.959999084472656
+            },
+            {
+                "word": "ein",
+                "start": 37.959999084472656,
+                "end": 38.2400016784668
+            },
+            {
+                "word": "tolles",
+                "start": 38.2400016784668,
+                "end": 38.81999969482422
+            },
+            {
+                "word": "Mittagessen",
+                "start": 38.81999969482422,
+                "end": 39.63999938964844
+            },
+            {
+                "word": "für",
+                "start": 39.63999938964844,
+                "end": 40
+            },
+            {
+                "word": "mich,",
+                "start": 40,
+                "end": 40.380001068115234
+            },
+            {
+                "word": "aber",
+                "start": 40.7400016784668,
+                "end": 42.880001068115234
+            },
+            {
+                "word": "ich",
+                "start": 42.880001068115234,
+                "end": 43.08000183105469
+            },
+            {
+                "word": "muss",
+                "start": 43.08000183105469,
+                "end": 43.20000076293945
+            },
+            {
+                "word": "diesen",
+                "start": 43.20000076293945,
+                "end": 43.58000183105469
+            },
+            {
+                "word": "Menschen",
+                "start": 43.58000183105469,
+                "end": 43.959999084472656
+            },
+            {
+                "word": "loswerden.",
+                "start": 43.959999084472656,
+                "end": 44.64999847412109
+            }
+        ],
+        "translationEn": "This buffalo would make a great lunch for me, but I need to get rid of these people.",
+        "translationVi": "Con trâu này sẽ là một bữa trưa tuyệt vời cho tôi, nhưng tôi phải loại bỏ những người này."
+    },
+    {
+        "text": "Der Wolf erschien plötzlich vor dem Büffel und dem Hirten.",
+        "start": 46.42000045776367,
+        "end": 50.45999984741211,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 46.42000045776367,
+                "end": 46.52000045776367
+            },
+            {
+                "word": "Wolf",
+                "start": 46.52000045776367,
+                "end": 46.900001525878906
+            },
+            {
+                "word": "erschien",
+                "start": 46.900001525878906,
+                "end": 47.29999923706055
+            },
+            {
+                "word": "plötzlich",
+                "start": 47.29999923706055,
+                "end": 47.939998626708984
+            },
+            {
+                "word": "vor",
+                "start": 47.939998626708984,
+                "end": 48.13999938964844
+            },
+            {
+                "word": "dem",
+                "start": 48.13999938964844,
+                "end": 48.41999816894531
+            },
+            {
+                "word": "Büffel",
+                "start": 48.41999816894531,
+                "end": 48.7599983215332
+            },
+            {
+                "word": "und",
+                "start": 48.7599983215332,
+                "end": 49.2599983215332
+            },
+            {
+                "word": "dem",
+                "start": 49.2599983215332,
+                "end": 49.70000076293945
+            },
+            {
+                "word": "Hirten.",
+                "start": 49.70000076293945,
+                "end": 50.45999984741211
+            }
+        ],
+        "translationEn": "The wolf suddenly appeared before the buffalo and the shepherd.",
+        "translationVi": "Con sói đột ngột xuất hiện trước con trâu và người chăn."
+    },
+    {
+        "text": "„Au! Ich habe ein paar Fragen an dich.",
+        "start": 51.60000076293945,
+        "end": 58.02000122070312,
+        "wordTimings": [
+            {
+                "word": "„Au!",
+                "start": 51.60000076293945,
+                "end": 52.34000015258789
+            },
+            {
+                "word": "Ich",
+                "start": 55.2400016784668,
+                "end": 55.880001068115234
+            },
+            {
+                "word": "habe",
+                "start": 55.880001068115234,
+                "end": 56.20000076293945
+            },
+            {
+                "word": "ein",
+                "start": 56.20000076293945,
+                "end": 56.779998779296875
+            },
+            {
+                "word": "paar",
+                "start": 56.779998779296875,
+                "end": 56.779998779296875
+            },
+            {
+                "word": "Fragen",
+                "start": 56.779998779296875,
+                "end": 57.060001373291016
+            },
+            {
+                "word": "an",
+                "start": 57.060001373291016,
+                "end": 57.58000183105469
+            },
+            {
+                "word": "dich.",
+                "start": 57.58000183105469,
+                "end": 58.02000122070312
+            }
+        ],
+        "translationEn": "\"Ow! I have a few questions for you.\"",
+        "translationVi": "\"Ôi! Tôi có một vài câu hỏi cho bạn.\""
+    },
+    {
+        "text": "Wenn du sie nicht beantworten kannst, gehört der Büffel mir.“",
+        "start": 58.78000106811523,
+        "end": 62.86000137329101,
+        "wordTimings": [
+            {
+                "word": "Wenn",
+                "start": 58.78000106811523,
+                "end": 58.900001525878906
+            },
+            {
+                "word": "du",
+                "start": 58.900001525878906,
+                "end": 59.040000915527344
+            },
+            {
+                "word": "sie",
+                "start": 59.040000915527344,
+                "end": 59.20000076293945
+            },
+            {
+                "word": "nicht",
+                "start": 59.20000076293945,
+                "end": 59.36000061035156
+            },
+            {
+                "word": "beantworten",
+                "start": 59.36000061035156,
+                "end": 60.02000045776367
+            },
+            {
+                "word": "kannst,",
+                "start": 60.02000045776367,
+                "end": 60.560001373291016
+            },
+            {
+                "word": "gehört",
+                "start": 61.2400016784668,
+                "end": 61.2400016784668
+            },
+            {
+                "word": "der",
+                "start": 61.2400016784668,
+                "end": 61.560001373291016
+            },
+            {
+                "word": "Büffel",
+                "start": 61.560001373291016,
+                "end": 61.84000015258789
+            },
+            {
+                "word": "mir.“",
+                "start": 61.84000015258789,
+                "end": 62.86000137329101
+            }
+        ],
+        "translationEn": "\"If you can't answer them, the buffalo belongs to me.\"",
+        "translationVi": "\"Nếu bạn không thể trả lời chúng, thì con trâu thuộc về tôi.\""
+    },
+    {
+        "text": "Der Hirte und der Büffel waren sehr neugierig, was der schlaue Wolf fragen würde.",
+        "start": 63.460001373291014,
+        "end": 68.28000335693359,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 63.460001373291014,
+                "end": 63.779998779296875
+            },
+            {
+                "word": "Hirte",
+                "start": 63.779998779296875,
+                "end": 64.13999938964844
+            },
+            {
+                "word": "und",
+                "start": 64.13999938964844,
+                "end": 64.30000305175781
+            },
+            {
+                "word": "der",
+                "start": 64.30000305175781,
+                "end": 64.58000183105469
+            },
+            {
+                "word": "Büffel",
+                "start": 64.58000183105469,
+                "end": 64.80000305175781
+            },
+            {
+                "word": "waren",
+                "start": 64.80000305175781,
+                "end": 65.08000183105469
+            },
+            {
+                "word": "sehr",
+                "start": 65.08000183105469,
+                "end": 65.55999755859375
+            },
+            {
+                "word": "neugierig,",
+                "start": 65.55999755859375,
+                "end": 65.91999816894531
+            },
+            {
+                "word": "was",
+                "start": 66.16000366210938,
+                "end": 66.26000213623047
+            },
+            {
+                "word": "der",
+                "start": 66.26000213623047,
+                "end": 66.58000183105469
+            },
+            {
+                "word": "schlaue",
+                "start": 66.58000183105469,
+                "end": 66.86000061035156
+            },
+            {
+                "word": "Wolf",
+                "start": 66.86000061035156,
+                "end": 67.13999938964844
+            },
+            {
+                "word": "fragen",
+                "start": 67.13999938964844,
+                "end": 67.62000274658203
+            },
+            {
+                "word": "würde.",
+                "start": 67.62000274658203,
+                "end": 68.28000335693359
+            }
+        ],
+        "translationEn": "The shepherd and the buffalo were very curious about what the clever wolf would ask.",
+        "translationVi": "Người chăn cừu và con trâu rất tò mò không biết con sói khôn ngoan sẽ hỏi gì."
+    },
+    {
+        "text": "„Warum dient ein Büffel einem Menschen, wenn er so kräftige Hörner hat?“",
+        "start": 69.80000152587891,
+        "end": 75.46000366210937,
+        "wordTimings": [
+            {
+                "word": "„Warum",
+                "start": 69.80000152587891,
+                "end": 70.69999694824219
+            },
+            {
+                "word": "dient",
+                "start": 70.69999694824219,
+                "end": 71.13999938964844
+            },
+            {
+                "word": "ein",
+                "start": 71.13999938964844,
+                "end": 71.55999755859375
+            },
+            {
+                "word": "Büffel",
+                "start": 71.55999755859375,
+                "end": 71.91999816894531
+            },
+            {
+                "word": "einem",
+                "start": 71.91999816894531,
+                "end": 72.30000305175781
+            },
+            {
+                "word": "Menschen,",
+                "start": 72.30000305175781,
+                "end": 72.72000122070312
+            },
+            {
+                "word": "wenn",
+                "start": 73.36000061035156,
+                "end": 73.41999816894531
+            },
+            {
+                "word": "er",
+                "start": 73.41999816894531,
+                "end": 73.58000183105469
+            },
+            {
+                "word": "so",
+                "start": 73.58000183105469,
+                "end": 74.23999786376953
+            },
+            {
+                "word": "kräftige",
+                "start": 74.23999786376953,
+                "end": 74.44000244140625
+            },
+            {
+                "word": "Hörner",
+                "start": 74.44000244140625,
+                "end": 74.81999969482422
+            },
+            {
+                "word": "hat?“",
+                "start": 74.81999969482422,
+                "end": 75.46000366210937
+            }
+        ],
+        "translationEn": "\"Why does a buffalo serve a human when it has such strong horns?\"",
+        "translationVi": "\"Tại sao một con trâu lại phục vụ cho con người, khi nó có những chiếc sừng mạnh mẽ như vậy?\""
+    },
+    {
+        "text": "„Nun ja, weil ich das Feld des Hirten pflüge und er mir das beste Essen gibt.“",
+        "start": 77.02000274658204,
+        "end": 85.7000015258789,
+        "wordTimings": [
+            {
+                "word": "„Nun",
+                "start": 77.02000274658204,
+                "end": 77.91999816894531
+            },
+            {
+                "word": "ja,",
+                "start": 77.91999816894531,
+                "end": 78.5999984741211
+            },
+            {
+                "word": "weil",
+                "start": 79.33999633789062,
+                "end": 79.5
+            },
+            {
+                "word": "ich",
+                "start": 79.5,
+                "end": 79.66000366210938
+            },
+            {
+                "word": "das",
+                "start": 79.66000366210938,
+                "end": 80.22000122070312
+            },
+            {
+                "word": "Feld",
+                "start": 80.22000122070312,
+                "end": 80.4800033569336
+            },
+            {
+                "word": "des",
+                "start": 80.4800033569336,
+                "end": 80.76000213623047
+            },
+            {
+                "word": "Hirten",
+                "start": 80.76000213623047,
+                "end": 81.08000183105469
+            },
+            {
+                "word": "pflüge",
+                "start": 81.08000183105469,
+                "end": 81.58000183105469
+            },
+            {
+                "word": "und",
+                "start": 81.58000183105469,
+                "end": 82.12000274658203
+            },
+            {
+                "word": "er",
+                "start": 82.12000274658203,
+                "end": 82.5199966430664
+            },
+            {
+                "word": "mir",
+                "start": 82.5199966430664,
+                "end": 83.45999908447266
+            },
+            {
+                "word": "das",
+                "start": 83.45999908447266,
+                "end": 84.0999984741211
+            },
+            {
+                "word": "beste",
+                "start": 84.0999984741211,
+                "end": 84.30000305175781
+            },
+            {
+                "word": "Essen",
+                "start": 84.30000305175781,
+                "end": 84.77999877929688
+            },
+            {
+                "word": "gibt.“",
+                "start": 84.77999877929688,
+                "end": 85.7000015258789
+            }
+        ],
+        "translationEn": "\"Well, because I plow the shepherd's field and he gives me the best food.\"",
+        "translationVi": "\"Vâng, vì tôi cày cấy trên cánh đồng của người chăn và ông ấy cho tôi những món ăn ngon nhất.\""
+    },
+    {
+        "text": "„Wie kann ein Hirte diesen riesigen Büffel dazu bringen, ihn zu dienen?",
+        "start": 88.13999786376954,
+        "end": 93.85999755859375,
+        "wordTimings": [
+            {
+                "word": "„Wie",
+                "start": 88.13999786376954,
+                "end": 89.04000091552734
+            },
+            {
+                "word": "kann",
+                "start": 89.04000091552734,
+                "end": 89.37999725341797
+            },
+            {
+                "word": "ein",
+                "start": 89.37999725341797,
+                "end": 89.69999694824219
+            },
+            {
+                "word": "Hirte",
+                "start": 89.69999694824219,
+                "end": 90.05999755859375
+            },
+            {
+                "word": "diesen",
+                "start": 90.05999755859375,
+                "end": 90.41999816894531
+            },
+            {
+                "word": "riesigen",
+                "start": 90.41999816894531,
+                "end": 91.0999984741211
+            },
+            {
+                "word": "Büffel",
+                "start": 91.0999984741211,
+                "end": 91.5199966430664
+            },
+            {
+                "word": "dazu",
+                "start": 91.5199966430664,
+                "end": 92.36000061035156
+            },
+            {
+                "word": "bringen,",
+                "start": 92.36000061035156,
+                "end": 92.36000061035156
+            },
+            {
+                "word": "ihn",
+                "start": 92.80000305175781,
+                "end": 92.94000244140625
+            },
+            {
+                "word": "zu",
+                "start": 92.94000244140625,
+                "end": 93.45999908447266
+            },
+            {
+                "word": "dienen?",
+                "start": 93.45999908447266,
+                "end": 93.85999755859375
+            }
+        ],
+        "translationEn": "\"How can a shepherd make this huge buffalo serve him?\"",
+        "translationVi": "\"Làm thế nào một người chăn cừu có thể khiến con trâu khổng lồ này phục vụ mình?\""
+    },
+    {
+        "text": "Ist das ein Zauberstab in deiner Hand?“",
+        "start": 94.41999664306641,
+        "end": 96.88000183105468,
+        "wordTimings": [
+            {
+                "word": "Ist",
+                "start": 94.41999664306641,
+                "end": 94.80000305175781
+            },
+            {
+                "word": "das",
+                "start": 94.80000305175781,
+                "end": 95
+            },
+            {
+                "word": "ein",
+                "start": 95,
+                "end": 95.19999694824219
+            },
+            {
+                "word": "Zauberstab",
+                "start": 95.19999694824219,
+                "end": 95.87999725341797
+            },
+            {
+                "word": "in",
+                "start": 95.87999725341797,
+                "end": 96.27999877929688
+            },
+            {
+                "word": "deiner",
+                "start": 96.27999877929688,
+                "end": 96.36000061035156
+            },
+            {
+                "word": "Hand?“",
+                "start": 96.36000061035156,
+                "end": 96.88000183105468
+            }
+        ],
+        "translationEn": "\"Is that a magic wand in your hand?\"",
+        "translationVi": "Đó có phải là một cây đũa phép trong tay bạn không?"
+    },
+    {
+        "text": "„Nein, es ist nicht der Stock, der magisch ist, sondern meine Weisheit.“",
+        "start": 97.9800018310547,
+        "end": 101.84000091552734,
+        "wordTimings": [
+            {
+                "word": "„Nein,",
+                "start": 97.9800018310547,
+                "end": 98.5999984741211
+            },
+            {
+                "word": "es",
+                "start": 98.69999694824219,
+                "end": 98.80000305175781
+            },
+            {
+                "word": "ist",
+                "start": 98.80000305175781,
+                "end": 99
+            },
+            {
+                "word": "nicht",
+                "start": 99,
+                "end": 99.13999938964844
+            },
+            {
+                "word": "der",
+                "start": 99.13999938964844,
+                "end": 99.37999725341797
+            },
+            {
+                "word": "Stock,",
+                "start": 99.37999725341797,
+                "end": 99.5199966430664
+            },
+            {
+                "word": "der",
+                "start": 99.72000122070312,
+                "end": 99.72000122070312
+            },
+            {
+                "word": "magisch",
+                "start": 99.72000122070312,
+                "end": 100.0999984741211
+            },
+            {
+                "word": "ist,",
+                "start": 100.0999984741211,
+                "end": 100.36000061035156
+            },
+            {
+                "word": "sondern",
+                "start": 100.5199966430664,
+                "end": 100.69999694824219
+            },
+            {
+                "word": "meine",
+                "start": 100.69999694824219,
+                "end": 101.04000091552734
+            },
+            {
+                "word": "Weisheit.“",
+                "start": 101.04000091552734,
+                "end": 101.84000091552734
+            }
+        ],
+        "translationEn": "\"No, it is not the stick that is magical, but my wisdom.\"",
+        "translationVi": "„Không, không phải cây gậy, mà là trí tuệ của tôi mới là điều kỳ diệu.“"
+    },
+    {
+        "text": "Der Wolf verstand nicht, was der Schafhirte meinte.",
+        "start": 102.80000152587891,
+        "end": 105.66000061035156,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 102.80000152587891,
+                "end": 102.9000015258789
+            },
+            {
+                "word": "Wolf",
+                "start": 102.9000015258789,
+                "end": 103.23999786376953
+            },
+            {
+                "word": "verstand",
+                "start": 103.23999786376953,
+                "end": 103.73999786376953
+            },
+            {
+                "word": "nicht,",
+                "start": 103.73999786376953,
+                "end": 104.05999755859375
+            },
+            {
+                "word": "was",
+                "start": 104.18000030517578,
+                "end": 104.23999786376953
+            },
+            {
+                "word": "der",
+                "start": 104.23999786376953,
+                "end": 104.4800033569336
+            },
+            {
+                "word": "Schafhirte",
+                "start": 104.4800033569336,
+                "end": 105.0199966430664
+            },
+            {
+                "word": "meinte.",
+                "start": 105.0199966430664,
+                "end": 105.66000061035156
+            }
+        ],
+        "translationEn": "The wolf did not understand what the shepherd meant.",
+        "translationVi": "Con sói không hiểu điều mà người chăn cừu muốn nói."
+    },
+    {
+        "text": "„Deine Weisheit? Was ist das?“",
+        "start": 106.76000061035157,
+        "end": 109.35999755859375,
+        "wordTimings": [
+            {
+                "word": "„Deine",
+                "start": 106.76000061035157,
+                "end": 106.95999908447266
+            },
+            {
+                "word": "Weisheit?",
+                "start": 106.95999908447266,
+                "end": 107.45999908447266
+            },
+            {
+                "word": "Was",
+                "start": 108.27999877929688,
+                "end": 108.4800033569336
+            },
+            {
+                "word": "ist",
+                "start": 108.4800033569336,
+                "end": 108.73999786376953
+            },
+            {
+                "word": "das?“",
+                "start": 108.73999786376953,
+                "end": 109.35999755859375
+            }
+        ],
+        "translationEn": "\"Your wisdom? What is that?\"",
+        "translationVi": "\"Trí tuệ của bạn? Đó là gì?\""
+    },
+    {
+        "text": "„Das ist keine Antwort.",
+        "start": 109.41999664306641,
+        "end": 110.93999938964843,
+        "wordTimings": [
+            {
+                "word": "„Das",
+                "start": 109.41999664306641,
+                "end": 109.68000030517578
+            },
+            {
+                "word": "ist",
+                "start": 109.68000030517578,
+                "end": 109.86000061035156
+            },
+            {
+                "word": "keine",
+                "start": 109.86000061035156,
+                "end": 110.12000274658203
+            },
+            {
+                "word": "Antwort.",
+                "start": 110.12000274658203,
+                "end": 110.93999938964843
+            }
+        ],
+        "translationEn": "\"That is not an answer.\"",
+        "translationVi": "\"Đó không phải là câu trả lời.\""
+    },
+    {
+        "text": "Jetzt kann ich diesen Büffel mit nach Hause nehmen, wenn ich will.",
+        "start": 111.31999816894532,
+        "end": 114.42000274658203,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 111.31999816894532,
+                "end": 111.5999984741211
+            },
+            {
+                "word": "kann",
+                "start": 111.5999984741211,
+                "end": 111.77999877929688
+            },
+            {
+                "word": "ich",
+                "start": 111.77999877929688,
+                "end": 111.94000244140625
+            },
+            {
+                "word": "diesen",
+                "start": 111.94000244140625,
+                "end": 112.19999694824219
+            },
+            {
+                "word": "Büffel",
+                "start": 112.19999694824219,
+                "end": 112.54000091552734
+            },
+            {
+                "word": "mit",
+                "start": 112.54000091552734,
+                "end": 112.87999725341797
+            },
+            {
+                "word": "nach",
+                "start": 112.87999725341797,
+                "end": 112.9800033569336
+            },
+            {
+                "word": "Hause",
+                "start": 112.9800033569336,
+                "end": 113.22000122070312
+            },
+            {
+                "word": "nehmen,",
+                "start": 113.22000122070312,
+                "end": 113.45999908447266
+            },
+            {
+                "word": "wenn",
+                "start": 113.54000091552734,
+                "end": 113.66000366210938
+            },
+            {
+                "word": "ich",
+                "start": 113.66000366210938,
+                "end": 113.86000061035156
+            },
+            {
+                "word": "will.",
+                "start": 113.86000061035156,
+                "end": 114.42000274658203
+            }
+        ],
+        "translationEn": "Now I can take this buffalo home with me if I want.",
+        "translationVi": "Bây giờ tôi có thể mang con trâu này về nhà nếu tôi muốn."
+    },
+    {
+        "text": "Aber ich bin auch neugierig auf dieses Ding, das du Weisheit nennst.“",
+        "start": 115.30000152587891,
+        "end": 121.63999633789062,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 115.30000152587891,
+                "end": 115.91999816894531
+            },
+            {
+                "word": "ich",
+                "start": 115.91999816894531,
+                "end": 116.44000244140625
+            },
+            {
+                "word": "bin",
+                "start": 116.44000244140625,
+                "end": 116.76000213623047
+            },
+            {
+                "word": "auch",
+                "start": 116.76000213623047,
+                "end": 117.41999816894531
+            },
+            {
+                "word": "neugierig",
+                "start": 117.41999816894531,
+                "end": 117.81999969482422
+            },
+            {
+                "word": "auf",
+                "start": 117.81999969482422,
+                "end": 118.05999755859375
+            },
+            {
+                "word": "dieses",
+                "start": 118.05999755859375,
+                "end": 118.5
+            },
+            {
+                "word": "Ding,",
+                "start": 118.5,
+                "end": 118.87999725341797
+            },
+            {
+                "word": "das",
+                "start": 119.22000122070312,
+                "end": 119.22000122070312
+            },
+            {
+                "word": "du",
+                "start": 119.22000122070312,
+                "end": 119.55999755859375
+            },
+            {
+                "word": "Weisheit",
+                "start": 119.55999755859375,
+                "end": 120.22000122070312
+            },
+            {
+                "word": "nennst.“",
+                "start": 120.22000122070312,
+                "end": 121.63999633789062
+            }
+        ],
+        "translationEn": "\"But I am also curious about this thing you call wisdom.\"",
+        "translationVi": "Nhưng tôi cũng tò mò về cái điều mà bạn gọi là trí tuệ.\""
+    },
+    {
+        "text": "„Ich sehe das anders, aber ich erkläre dir, was ich meine, unter einer Bedingung.“",
+        "start": 121.95999755859376,
+        "end": 127.28000335693359,
+        "wordTimings": [
+            {
+                "word": "„Ich",
+                "start": 121.95999755859376,
+                "end": 122.33999633789062
+            },
+            {
+                "word": "sehe",
+                "start": 122.33999633789062,
+                "end": 122.54000091552734
+            },
+            {
+                "word": "das",
+                "start": 122.54000091552734,
+                "end": 122.83999633789062
+            },
+            {
+                "word": "anders,",
+                "start": 122.83999633789062,
+                "end": 123.22000122070312
+            },
+            {
+                "word": "aber",
+                "start": 123.66000366210938,
+                "end": 123.80000305175781
+            },
+            {
+                "word": "ich",
+                "start": 123.80000305175781,
+                "end": 124.18000030517578
+            },
+            {
+                "word": "erkläre",
+                "start": 124.18000030517578,
+                "end": 124.41999816894531
+            },
+            {
+                "word": "dir,",
+                "start": 124.41999816894531,
+                "end": 124.62000274658203
+            },
+            {
+                "word": "was",
+                "start": 124.72000122070312,
+                "end": 124.76000213623047
+            },
+            {
+                "word": "ich",
+                "start": 124.76000213623047,
+                "end": 124.95999908447266
+            },
+            {
+                "word": "meine,",
+                "start": 124.95999908447266,
+                "end": 125.12000274658203
+            },
+            {
+                "word": "unter",
+                "start": 125.41999816894531,
+                "end": 125.5999984741211
+            },
+            {
+                "word": "einer",
+                "start": 125.5999984741211,
+                "end": 126.54000091552734
+            },
+            {
+                "word": "Bedingung.“",
+                "start": 126.54000091552734,
+                "end": 127.28000335693359
+            }
+        ],
+        "translationEn": "\"I see it differently, but I will explain to you what I mean, on one condition.\"",
+        "translationVi": "„Tôi thấy điều đó khác, nhưng tôi sẽ giải thích cho bạn biết tôi có ý gì, với một điều kiện.“"
+    },
+    {
+        "text": "„Was ist das für eine Voraussetzung?“",
+        "start": 127.8800033569336,
+        "end": 129.63999633789064,
+        "wordTimings": [
+            {
+                "word": "„Was",
+                "start": 127.8800033569336,
+                "end": 128.1199951171875
+            },
+            {
+                "word": "ist",
+                "start": 128.1199951171875,
+                "end": 128.1199951171875
+            },
+            {
+                "word": "das",
+                "start": 128.1199951171875,
+                "end": 128.1199951171875
+            },
+            {
+                "word": "für",
+                "start": 128.1199951171875,
+                "end": 128.22000122070312
+            },
+            {
+                "word": "eine",
+                "start": 128.22000122070312,
+                "end": 128.4600067138672
+            },
+            {
+                "word": "Voraussetzung?“",
+                "start": 128.4600067138672,
+                "end": 129.63999633789064
+            }
+        ],
+        "translationEn": "\"What is that requirement?\"",
+        "translationVi": "\"Điều kiện đó là gì?\""
+    },
+    {
+        "text": "„Bis ich dir die Weisheit bringe, werde ich dich an diesen Baum binden, damit der Büffel in Sicherheit ist, während ich weg bin.“",
+        "start": 130.45999755859376,
+        "end": 136.13999633789064,
+        "wordTimings": [
+            {
+                "word": "„Bis",
+                "start": 130.45999755859376,
+                "end": 130.67999267578125
+            },
+            {
+                "word": "ich",
+                "start": 130.67999267578125,
+                "end": 130.8800048828125
+            },
+            {
+                "word": "dir",
+                "start": 130.8800048828125,
+                "end": 131.05999755859375
+            },
+            {
+                "word": "die",
+                "start": 131.05999755859375,
+                "end": 131.39999389648438
+            },
+            {
+                "word": "Weisheit",
+                "start": 131.39999389648438,
+                "end": 131.47999572753906
+            },
+            {
+                "word": "bringe,",
+                "start": 131.47999572753906,
+                "end": 132
+            },
+            {
+                "word": "werde",
+                "start": 132.17999267578125,
+                "end": 132.24000549316406
+            },
+            {
+                "word": "ich",
+                "start": 132.24000549316406,
+                "end": 132.44000244140625
+            },
+            {
+                "word": "dich",
+                "start": 132.44000244140625,
+                "end": 132.52000427246094
+            },
+            {
+                "word": "an",
+                "start": 132.52000427246094,
+                "end": 132.63999938964844
+            },
+            {
+                "word": "diesen",
+                "start": 132.63999938964844,
+                "end": 132.94000244140625
+            },
+            {
+                "word": "Baum",
+                "start": 132.94000244140625,
+                "end": 133.1199951171875
+            },
+            {
+                "word": "binden,",
+                "start": 133.1199951171875,
+                "end": 133.3800048828125
+            },
+            {
+                "word": "damit",
+                "start": 133.63999938964844,
+                "end": 133.77999877929688
+            },
+            {
+                "word": "der",
+                "start": 133.77999877929688,
+                "end": 133.97999572753906
+            },
+            {
+                "word": "Büffel",
+                "start": 133.97999572753906,
+                "end": 134.24000549316406
+            },
+            {
+                "word": "in",
+                "start": 134.24000549316406,
+                "end": 134.5
+            },
+            {
+                "word": "Sicherheit",
+                "start": 134.5,
+                "end": 134.63999938964844
+            },
+            {
+                "word": "ist,",
+                "start": 134.63999938964844,
+                "end": 135
+            },
+            {
+                "word": "während",
+                "start": 135.1199951171875,
+                "end": 135.17999267578125
+            },
+            {
+                "word": "ich",
+                "start": 135.17999267578125,
+                "end": 135.36000061035156
+            },
+            {
+                "word": "weg",
+                "start": 135.36000061035156,
+                "end": 135.6999969482422
+            },
+            {
+                "word": "bin.“",
+                "start": 135.6999969482422,
+                "end": 136.13999633789064
+            }
+        ],
+        "translationEn": "\"Until I bring you the wisdom, I will tie you to this tree so that the buffalo is safe while I am away.\"",
+        "translationVi": "„Cho đến khi tôi mang đến cho bạn sự khôn ngoan, tôi sẽ buộc bạn vào cái cây này, để con trâu được an toàn trong khi tôi đi vắng.“"
+    },
+    {
+        "text": "Der Wolf war so neugierig auf das, was man Weisheit nannte, dass er sogar zustimmte, an einen Baum gebunden zu werden.",
+        "start": 135.92000427246094,
+        "end": 142.82000427246095,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 135.92000427246094,
+                "end": 136.24000549316406
+            },
+            {
+                "word": "Wolf",
+                "start": 136.24000549316406,
+                "end": 136.5
+            },
+            {
+                "word": "war",
+                "start": 136.5,
+                "end": 136.72000122070312
+            },
+            {
+                "word": "so",
+                "start": 136.72000122070312,
+                "end": 137.16000366210938
+            },
+            {
+                "word": "neugierig",
+                "start": 137.16000366210938,
+                "end": 137.63999938964844
+            },
+            {
+                "word": "auf",
+                "start": 137.63999938964844,
+                "end": 137.82000732421875
+            },
+            {
+                "word": "das,",
+                "start": 137.82000732421875,
+                "end": 138.13999938964844
+            },
+            {
+                "word": "was",
+                "start": 138.27999877929688,
+                "end": 138.27999877929688
+            },
+            {
+                "word": "man",
+                "start": 138.27999877929688,
+                "end": 138.5800018310547
+            },
+            {
+                "word": "Weisheit",
+                "start": 138.5800018310547,
+                "end": 138.89999389648438
+            },
+            {
+                "word": "nannte,",
+                "start": 138.89999389648438,
+                "end": 139.22000122070312
+            },
+            {
+                "word": "dass",
+                "start": 139.52000427246094,
+                "end": 139.55999755859375
+            },
+            {
+                "word": "er",
+                "start": 139.55999755859375,
+                "end": 139.6999969482422
+            },
+            {
+                "word": "sogar",
+                "start": 139.6999969482422,
+                "end": 140.05999755859375
+            },
+            {
+                "word": "zustimmte,",
+                "start": 140.05999755859375,
+                "end": 140.6999969482422
+            },
+            {
+                "word": "an",
+                "start": 140.8800048828125,
+                "end": 141
+            },
+            {
+                "word": "einen",
+                "start": 141,
+                "end": 141.33999633789062
+            },
+            {
+                "word": "Baum",
+                "start": 141.33999633789062,
+                "end": 141.5
+            },
+            {
+                "word": "gebunden",
+                "start": 141.5,
+                "end": 141.9199981689453
+            },
+            {
+                "word": "zu",
+                "start": 141.9199981689453,
+                "end": 142.52000427246094
+            },
+            {
+                "word": "werden.",
+                "start": 142.52000427246094,
+                "end": 142.82000427246095
+            }
+        ],
+        "translationEn": "The wolf was so curious about what was called wisdom that he even agreed to be tied to a tree.",
+        "translationVi": "Con sói đã tò mò đến mức về điều mà người ta gọi là trí tuệ, đến nỗi nó thậm chí còn đồng ý bị buộc vào một cái cây."
+    },
+    {
+        "text": "Während der Hirte aufbrach, um die Weisheit zurückzubringen, grinste der Büffel darüber, was mit dem Wolf geschehen würde.",
+        "start": 142.8600067138672,
+        "end": 149.63999633789064,
+        "wordTimings": [
+            {
+                "word": "Während",
+                "start": 142.8600067138672,
+                "end": 143.05999755859375
+            },
+            {
+                "word": "der",
+                "start": 143.05999755859375,
+                "end": 143.27999877929688
+            },
+            {
+                "word": "Hirte",
+                "start": 143.27999877929688,
+                "end": 143.67999267578125
+            },
+            {
+                "word": "aufbrach,",
+                "start": 143.67999267578125,
+                "end": 144.33999633789062
+            },
+            {
+                "word": "um",
+                "start": 144.3800048828125,
+                "end": 144.55999755859375
+            },
+            {
+                "word": "die",
+                "start": 144.55999755859375,
+                "end": 144.94000244140625
+            },
+            {
+                "word": "Weisheit",
+                "start": 144.94000244140625,
+                "end": 145.02000427246094
+            },
+            {
+                "word": "zurückzubringen,",
+                "start": 145.02000427246094,
+                "end": 145.97999572753906
+            },
+            {
+                "word": "grinste",
+                "start": 146.39999389648438,
+                "end": 146.72000122070312
+            },
+            {
+                "word": "der",
+                "start": 146.72000122070312,
+                "end": 146.86000061035156
+            },
+            {
+                "word": "Büffel",
+                "start": 146.86000061035156,
+                "end": 147.16000366210938
+            },
+            {
+                "word": "darüber,",
+                "start": 147.16000366210938,
+                "end": 147.5399932861328
+            },
+            {
+                "word": "was",
+                "start": 147.82000732421875,
+                "end": 147.8800048828125
+            },
+            {
+                "word": "mit",
+                "start": 147.8800048828125,
+                "end": 148.10000610351562
+            },
+            {
+                "word": "dem",
+                "start": 148.10000610351562,
+                "end": 148.33999633789062
+            },
+            {
+                "word": "Wolf",
+                "start": 148.33999633789062,
+                "end": 148.5
+            },
+            {
+                "word": "geschehen",
+                "start": 148.5,
+                "end": 149.0399932861328
+            },
+            {
+                "word": "würde.",
+                "start": 149.0399932861328,
+                "end": 149.63999633789064
+            }
+        ],
+        "translationEn": "While the shepherd set off to bring back the wisdom, the buffalo grinned at what would happen to the wolf.",
+        "translationVi": "Trong khi người chăn cừu lên đường để mang lại sự khôn ngoan, con trâu cười nhạo về những gì sẽ xảy ra với con sói."
+    },
+    {
+        "text": "Obwohl der Wolf nicht verstand, warum der Büffel lachte, wartete er noch stundenlang auf den Hirten.",
+        "start": 158.14000549316407,
+        "end": 164.32000427246095,
+        "wordTimings": [
+            {
+                "word": "Obwohl",
+                "start": 158.14000549316407,
+                "end": 158.82000732421875
+            },
+            {
+                "word": "der",
+                "start": 158.82000732421875,
+                "end": 159.16000366210938
+            },
+            {
+                "word": "Wolf",
+                "start": 159.16000366210938,
+                "end": 159.33999633789062
+            },
+            {
+                "word": "nicht",
+                "start": 159.33999633789062,
+                "end": 159.66000366210938
+            },
+            {
+                "word": "verstand,",
+                "start": 159.66000366210938,
+                "end": 160.13999938964844
+            },
+            {
+                "word": "warum",
+                "start": 160.4199981689453,
+                "end": 160.4600067138672
+            },
+            {
+                "word": "der",
+                "start": 160.4600067138672,
+                "end": 160.6999969482422
+            },
+            {
+                "word": "Büffel",
+                "start": 160.6999969482422,
+                "end": 160.9600067138672
+            },
+            {
+                "word": "lachte,",
+                "start": 160.9600067138672,
+                "end": 161.25999450683594
+            },
+            {
+                "word": "wartete",
+                "start": 161.9600067138672,
+                "end": 162.05999755859375
+            },
+            {
+                "word": "er",
+                "start": 162.05999755859375,
+                "end": 162.22000122070312
+            },
+            {
+                "word": "noch",
+                "start": 162.22000122070312,
+                "end": 162.5399932861328
+            },
+            {
+                "word": "stundenlang",
+                "start": 162.5399932861328,
+                "end": 163.13999938964844
+            },
+            {
+                "word": "auf",
+                "start": 163.13999938964844,
+                "end": 163.4199981689453
+            },
+            {
+                "word": "den",
+                "start": 163.4199981689453,
+                "end": 163.6999969482422
+            },
+            {
+                "word": "Hirten.",
+                "start": 163.6999969482422,
+                "end": 164.32000427246095
+            }
+        ],
+        "translationEn": "Although the wolf did not understand why the buffalo was laughing, he waited for the shepherd for hours.",
+        "translationVi": "Mặc dù con sói không hiểu tại sao con trâu lại cười, nhưng nó vẫn chờ đợi người chăn súc vật hàng giờ."
+    },
+    {
+        "text": "Nach einer Weile kam der Hirte mit einer großen Kiste in der Hand zurück.",
+        "start": 164.64000549316407,
+        "end": 168.54000549316407,
+        "wordTimings": [
+            {
+                "word": "Nach",
+                "start": 164.64000549316407,
+                "end": 164.77999877929688
+            },
+            {
+                "word": "einer",
+                "start": 164.77999877929688,
+                "end": 165.13999938964844
+            },
+            {
+                "word": "Weile",
+                "start": 165.13999938964844,
+                "end": 165.33999633789062
+            },
+            {
+                "word": "kam",
+                "start": 165.33999633789062,
+                "end": 165.63999938964844
+            },
+            {
+                "word": "der",
+                "start": 165.63999938964844,
+                "end": 165.83999633789062
+            },
+            {
+                "word": "Hirte",
+                "start": 165.83999633789062,
+                "end": 166.0800018310547
+            },
+            {
+                "word": "mit",
+                "start": 166.0800018310547,
+                "end": 166.25999450683594
+            },
+            {
+                "word": "einer",
+                "start": 166.25999450683594,
+                "end": 166.5
+            },
+            {
+                "word": "großen",
+                "start": 166.5,
+                "end": 167.02000427246094
+            },
+            {
+                "word": "Kiste",
+                "start": 167.02000427246094,
+                "end": 167.27999877929688
+            },
+            {
+                "word": "in",
+                "start": 167.27999877929688,
+                "end": 167.52000427246094
+            },
+            {
+                "word": "der",
+                "start": 167.52000427246094,
+                "end": 167.82000732421875
+            },
+            {
+                "word": "Hand",
+                "start": 167.82000732421875,
+                "end": 167.82000732421875
+            },
+            {
+                "word": "zurück.",
+                "start": 167.82000732421875,
+                "end": 168.54000549316407
+            }
+        ],
+        "translationEn": "After a while, the shepherd returned with a large box in his hand.",
+        "translationVi": "Sau một thời gian, người chăn cừu trở về với một chiếc hộp lớn trong tay."
+    },
+    {
+        "text": "Er öffnete den Deckel der Kiste, aber der Wolf sah, dass die Kiste leer war.",
+        "start": 168.93999328613282,
+        "end": 174.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 168.93999328613282,
+                "end": 169.10000610351562
+            },
+            {
+                "word": "öffnete",
+                "start": 169.10000610351562,
+                "end": 169.6199951171875
+            },
+            {
+                "word": "den",
+                "start": 169.6199951171875,
+                "end": 170.02000427246094
+            },
+            {
+                "word": "Deckel",
+                "start": 170.02000427246094,
+                "end": 170.17999267578125
+            },
+            {
+                "word": "der",
+                "start": 170.17999267578125,
+                "end": 170.47999572753906
+            },
+            {
+                "word": "Kiste,",
+                "start": 170.47999572753906,
+                "end": 170.75999450683594
+            },
+            {
+                "word": "aber",
+                "start": 171.4199981689453,
+                "end": 171.5
+            },
+            {
+                "word": "der",
+                "start": 171.5,
+                "end": 171.97999572753906
+            },
+            {
+                "word": "Wolf",
+                "start": 171.97999572753906,
+                "end": 171.97999572753906
+            },
+            {
+                "word": "sah,",
+                "start": 171.97999572753906,
+                "end": 172.22000122070312
+            },
+            {
+                "word": "dass",
+                "start": 172.89999389648438,
+                "end": 172.9199981689453
+            },
+            {
+                "word": "die",
+                "start": 172.9199981689453,
+                "end": 173.1999969482422
+            },
+            {
+                "word": "Kiste",
+                "start": 173.1999969482422,
+                "end": 173.47999572753906
+            },
+            {
+                "word": "leer",
+                "start": 173.47999572753906,
+                "end": 174.05999755859375
+            },
+            {
+                "word": "war.",
+                "start": 174.05999755859375,
+                "end": 174.6800048828125
+            }
+        ],
+        "translationEn": "He opened the lid of the box, but the wolf saw that the box was empty.",
+        "translationVi": "Anh ta mở nắp hộp, nhưng con sói thấy rằng hộp trống rỗng."
+    },
+    {
+        "text": "„Nun, Weisheit, wo ist sie?",
+        "start": 179.07999267578126,
+        "end": 182.62000732421876,
+        "wordTimings": [
+            {
+                "word": "„Nun,",
+                "start": 179.07999267578126,
+                "end": 179.6999969482422
+            },
+            {
+                "word": "Weisheit,",
+                "start": 180.63999938964844,
+                "end": 180.83999633789062
+            },
+            {
+                "word": "wo",
+                "start": 181.55999755859375,
+                "end": 182.0399932861328
+            },
+            {
+                "word": "ist",
+                "start": 182.0399932861328,
+                "end": 182.1199951171875
+            },
+            {
+                "word": "sie?",
+                "start": 182.1199951171875,
+                "end": 182.62000732421876
+            }
+        ],
+        "translationEn": "\"Now, wisdom, where is it?\"",
+        "translationVi": "„Vậy, trí tuệ, nó ở đâu?"
+    },
+    {
+        "text": "Habt ihr sie nicht mitgebracht?“",
+        "start": 182.76000061035157,
+        "end": 184.1800048828125,
+        "wordTimings": [
+            {
+                "word": "Habt",
+                "start": 182.76000061035157,
+                "end": 183
+            },
+            {
+                "word": "ihr",
+                "start": 183,
+                "end": 183.05999755859375
+            },
+            {
+                "word": "sie",
+                "start": 183.05999755859375,
+                "end": 183.16000366210938
+            },
+            {
+                "word": "nicht",
+                "start": 183.16000366210938,
+                "end": 183.33999633789062
+            },
+            {
+                "word": "mitgebracht?“",
+                "start": 183.33999633789062,
+                "end": 184.1800048828125
+            }
+        ],
+        "translationEn": "\"Did you not bring them?\"",
+        "translationVi": "\"Các bạn không mang họ đến sao?\""
+    },
+    {
+        "text": "„Sie ist da drin, gleich dort in der Ecke.",
+        "start": 184.53999938964844,
+        "end": 187.16000061035157,
+        "wordTimings": [
+            {
+                "word": "„Sie",
+                "start": 184.53999938964844,
+                "end": 184.75999450683594
+            },
+            {
+                "word": "ist",
+                "start": 184.75999450683594,
+                "end": 184.94000244140625
+            },
+            {
+                "word": "da",
+                "start": 184.94000244140625,
+                "end": 185.4600067138672
+            },
+            {
+                "word": "drin,",
+                "start": 185.4600067138672,
+                "end": 185.4600067138672
+            },
+            {
+                "word": "gleich",
+                "start": 186,
+                "end": 186.17999267578125
+            },
+            {
+                "word": "dort",
+                "start": 186.17999267578125,
+                "end": 186.4199981689453
+            },
+            {
+                "word": "in",
+                "start": 186.4199981689453,
+                "end": 186.5399932861328
+            },
+            {
+                "word": "der",
+                "start": 186.5399932861328,
+                "end": 186.86000061035156
+            },
+            {
+                "word": "Ecke.",
+                "start": 186.86000061035156,
+                "end": 187.16000061035157
+            }
+        ],
+        "translationEn": "\"She is in there, right there in the corner.\"",
+        "translationVi": "\"Cô ấy ở trong đó, ngay ở góc đó.\""
+    },
+    {
+        "text": "Wenn du es nicht siehst, lass mich dich losbinden, damit du es genauer sehen kannst.“",
+        "start": 187.37999572753907,
+        "end": 191.90000610351564,
+        "wordTimings": [
+            {
+                "word": "Wenn",
+                "start": 187.37999572753907,
+                "end": 187.52000427246094
+            },
+            {
+                "word": "du",
+                "start": 187.52000427246094,
+                "end": 187.6199951171875
+            },
+            {
+                "word": "es",
+                "start": 187.6199951171875,
+                "end": 187.74000549316406
+            },
+            {
+                "word": "nicht",
+                "start": 187.74000549316406,
+                "end": 187.89999389648438
+            },
+            {
+                "word": "siehst,",
+                "start": 187.89999389648438,
+                "end": 188.22000122070312
+            },
+            {
+                "word": "lass",
+                "start": 188.82000732421875,
+                "end": 188.83999633789062
+            },
+            {
+                "word": "mich",
+                "start": 188.83999633789062,
+                "end": 189
+            },
+            {
+                "word": "dich",
+                "start": 189,
+                "end": 189.17999267578125
+            },
+            {
+                "word": "losbinden,",
+                "start": 189.17999267578125,
+                "end": 189.74000549316406
+            },
+            {
+                "word": "damit",
+                "start": 190.16000366210938,
+                "end": 190.24000549316406
+            },
+            {
+                "word": "du",
+                "start": 190.24000549316406,
+                "end": 190.3800048828125
+            },
+            {
+                "word": "es",
+                "start": 190.3800048828125,
+                "end": 190.5
+            },
+            {
+                "word": "genauer",
+                "start": 190.5,
+                "end": 191.16000366210938
+            },
+            {
+                "word": "sehen",
+                "start": 191.16000366210938,
+                "end": 191.16000366210938
+            },
+            {
+                "word": "kannst.“",
+                "start": 191.16000366210938,
+                "end": 191.90000610351564
+            }
+        ],
+        "translationEn": "\"If you don't see it, let me untie you so you can see it more clearly.\"",
+        "translationVi": "\"Nếu bạn không thấy, hãy để tôi buộc bạn lại, để bạn có thể nhìn rõ hơn.\""
+    },
+    {
+        "text": "Sobald der Wolf in die Kiste kam, um die Weisheit zu sehen, schloss der Hirte den Deckel.",
+        "start": 191.9800018310547,
+        "end": 196.9999969482422,
+        "wordTimings": [
+            {
+                "word": "Sobald",
+                "start": 191.9800018310547,
+                "end": 192.4199981689453
+            },
+            {
+                "word": "der",
+                "start": 192.4199981689453,
+                "end": 192.8000030517578
+            },
+            {
+                "word": "Wolf",
+                "start": 192.8000030517578,
+                "end": 192.83999633789062
+            },
+            {
+                "word": "in",
+                "start": 192.83999633789062,
+                "end": 193.02000427246094
+            },
+            {
+                "word": "die",
+                "start": 193.02000427246094,
+                "end": 193.25999450683594
+            },
+            {
+                "word": "Kiste",
+                "start": 193.25999450683594,
+                "end": 193.5
+            },
+            {
+                "word": "kam,",
+                "start": 193.5,
+                "end": 193.8000030517578
+            },
+            {
+                "word": "um",
+                "start": 193.9600067138672,
+                "end": 193.9600067138672
+            },
+            {
+                "word": "die",
+                "start": 193.9600067138672,
+                "end": 194.3000030517578
+            },
+            {
+                "word": "Weisheit",
+                "start": 194.3000030517578,
+                "end": 194.44000244140625
+            },
+            {
+                "word": "zu",
+                "start": 194.44000244140625,
+                "end": 194.8000030517578
+            },
+            {
+                "word": "sehen,",
+                "start": 194.8000030517578,
+                "end": 194.94000244140625
+            },
+            {
+                "word": "schloss",
+                "start": 195.47999572753906,
+                "end": 195.52000427246094
+            },
+            {
+                "word": "der",
+                "start": 195.52000427246094,
+                "end": 195.75999450683594
+            },
+            {
+                "word": "Hirte",
+                "start": 195.75999450683594,
+                "end": 196.10000610351562
+            },
+            {
+                "word": "den",
+                "start": 196.10000610351562,
+                "end": 196.3800048828125
+            },
+            {
+                "word": "Deckel.",
+                "start": 196.3800048828125,
+                "end": 196.9999969482422
+            }
+        ],
+        "translationEn": "As soon as the wolf entered the box to see the wisdom, the shepherd closed the lid.",
+        "translationVi": "Ngay khi con sói vào trong hộp để xem trí tuệ, người chăn cừu đã đóng nắp lại."
+    },
+    {
+        "text": "„Hilfe! Hilfe! Die Weisheit ist viel zu kostbar, um sie in eine Schachtel zu stecken, lieber Wolf.",
+        "start": 201.20000305175782,
+        "end": 208.10000305175782,
+        "wordTimings": [
+            {
+                "word": "„Hilfe!",
+                "start": 201.20000305175782,
+                "end": 201.82000732421875
+            },
+            {
+                "word": "Hilfe!",
+                "start": 201.82000732421875,
+                "end": 202.33999633789062
+            },
+            {
+                "word": "Die",
+                "start": 203.97999572753906,
+                "end": 204.24000549316406
+            },
+            {
+                "word": "Weisheit",
+                "start": 204.24000549316406,
+                "end": 204.6199951171875
+            },
+            {
+                "word": "ist",
+                "start": 204.6199951171875,
+                "end": 204.89999389648438
+            },
+            {
+                "word": "viel",
+                "start": 204.89999389648438,
+                "end": 205.17999267578125
+            },
+            {
+                "word": "zu",
+                "start": 205.17999267578125,
+                "end": 205.36000061035156
+            },
+            {
+                "word": "kostbar,",
+                "start": 205.36000061035156,
+                "end": 205.72000122070312
+            },
+            {
+                "word": "um",
+                "start": 205.8000030517578,
+                "end": 205.89999389648438
+            },
+            {
+                "word": "sie",
+                "start": 205.89999389648438,
+                "end": 206
+            },
+            {
+                "word": "in",
+                "start": 206,
+                "end": 206.0800018310547
+            },
+            {
+                "word": "eine",
+                "start": 206.0800018310547,
+                "end": 206.3000030517578
+            },
+            {
+                "word": "Schachtel",
+                "start": 206.3000030517578,
+                "end": 206.63999938964844
+            },
+            {
+                "word": "zu",
+                "start": 206.63999938964844,
+                "end": 207.13999938964844
+            },
+            {
+                "word": "stecken,",
+                "start": 207.13999938964844,
+                "end": 207.13999938964844
+            },
+            {
+                "word": "lieber",
+                "start": 207.33999633789062,
+                "end": 207.5399932861328
+            },
+            {
+                "word": "Wolf.",
+                "start": 207.5399932861328,
+                "end": 208.10000305175782
+            }
+        ],
+        "translationEn": "\"Help! Help! Wisdom is far too precious to be put in a box, dear Wolf.\"",
+        "translationVi": "\"Cứu! Cứu! Trí tuệ quý giá quá để nhét vào một cái hộp, sói ạ.\""
+    },
+    {
+        "text": "Weisheit ist im Kopf und man kann sie nur finden, wenn man nach ihr sucht, wie nach einem verborgenen Schatz.",
+        "start": 208.7800048828125,
+        "end": 216.9199951171875,
+        "wordTimings": [
+            {
+                "word": "Weisheit",
+                "start": 208.7800048828125,
+                "end": 209.44000244140625
+            },
+            {
+                "word": "ist",
+                "start": 209.44000244140625,
+                "end": 209.8800048828125
+            },
+            {
+                "word": "im",
+                "start": 209.8800048828125,
+                "end": 210.5800018310547
+            },
+            {
+                "word": "Kopf",
+                "start": 210.5800018310547,
+                "end": 210.5800018310547
+            },
+            {
+                "word": "und",
+                "start": 210.5800018310547,
+                "end": 211.66000366210938
+            },
+            {
+                "word": "man",
+                "start": 211.66000366210938,
+                "end": 211.83999633789062
+            },
+            {
+                "word": "kann",
+                "start": 211.83999633789062,
+                "end": 212.0399932861328
+            },
+            {
+                "word": "sie",
+                "start": 212.0399932861328,
+                "end": 212.17999267578125
+            },
+            {
+                "word": "nur",
+                "start": 212.17999267578125,
+                "end": 212.52000427246094
+            },
+            {
+                "word": "finden,",
+                "start": 212.52000427246094,
+                "end": 212.89999389648438
+            },
+            {
+                "word": "wenn",
+                "start": 213.44000244140625,
+                "end": 213.44000244140625
+            },
+            {
+                "word": "man",
+                "start": 213.44000244140625,
+                "end": 213.63999938964844
+            },
+            {
+                "word": "nach",
+                "start": 213.63999938964844,
+                "end": 213.8000030517578
+            },
+            {
+                "word": "ihr",
+                "start": 213.8000030517578,
+                "end": 214.02000427246094
+            },
+            {
+                "word": "sucht,",
+                "start": 214.02000427246094,
+                "end": 214.55999755859375
+            },
+            {
+                "word": "wie",
+                "start": 214.63999938964844,
+                "end": 214.86000061035156
+            },
+            {
+                "word": "nach",
+                "start": 214.86000061035156,
+                "end": 214.8800048828125
+            },
+            {
+                "word": "einem",
+                "start": 214.8800048828125,
+                "end": 215.13999938964844
+            },
+            {
+                "word": "verborgenen",
+                "start": 215.13999938964844,
+                "end": 216.5399932861328
+            },
+            {
+                "word": "Schatz.",
+                "start": 216.5399932861328,
+                "end": 216.9199951171875
+            }
+        ],
+        "translationEn": "Wisdom is in the mind, and one can only find it if one searches for it, like a hidden treasure.",
+        "translationVi": "Trí tuệ nằm trong đầu và chỉ có thể tìm thấy khi ta tìm kiếm nó, như một kho báu ẩn giấu."
+    },
+    {
+        "text": "Ich verspreche, dass ich den Verstand der anderen nie wieder unterschätzen werde.",
+        "start": 218.84000244140626,
+        "end": 222.62000732421876,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 218.84000244140626,
+                "end": 218.9600067138672
+            },
+            {
+                "word": "verspreche,",
+                "start": 218.9600067138672,
+                "end": 219.39999389648438
+            },
+            {
+                "word": "dass",
+                "start": 219.63999938964844,
+                "end": 219.67999267578125
+            },
+            {
+                "word": "ich",
+                "start": 219.67999267578125,
+                "end": 219.82000732421875
+            },
+            {
+                "word": "den",
+                "start": 219.82000732421875,
+                "end": 220
+            },
+            {
+                "word": "Verstand",
+                "start": 220,
+                "end": 220.32000732421875
+            },
+            {
+                "word": "der",
+                "start": 220.32000732421875,
+                "end": 220.5399932861328
+            },
+            {
+                "word": "anderen",
+                "start": 220.5399932861328,
+                "end": 220.8800048828125
+            },
+            {
+                "word": "nie",
+                "start": 220.8800048828125,
+                "end": 221.1199951171875
+            },
+            {
+                "word": "wieder",
+                "start": 221.1199951171875,
+                "end": 221.3800048828125
+            },
+            {
+                "word": "unterschätzen",
+                "start": 221.3800048828125,
+                "end": 221.9600067138672
+            },
+            {
+                "word": "werde.",
+                "start": 221.9600067138672,
+                "end": 222.62000732421876
+            }
+        ],
+        "translationEn": "I promise that I will never underestimate the minds of others again.",
+        "translationVi": "Tôi hứa rằng tôi sẽ không bao giờ đánh giá thấp trí tuệ của người khác nữa."
+    },
+    {
+        "text": "Jetzt werde ich großzügiger und klüger sein.",
+        "start": 223.23999633789063,
+        "end": 226.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 223.23999633789063,
+                "end": 223.89999389648438
+            },
+            {
+                "word": "werde",
+                "start": 223.89999389648438,
+                "end": 224.0399932861328
+            },
+            {
+                "word": "ich",
+                "start": 224.0399932861328,
+                "end": 224.25999450683594
+            },
+            {
+                "word": "großzügiger",
+                "start": 224.25999450683594,
+                "end": 224.8800048828125
+            },
+            {
+                "word": "und",
+                "start": 224.8800048828125,
+                "end": 225.13999938964844
+            },
+            {
+                "word": "klüger",
+                "start": 225.13999938964844,
+                "end": 225.39999389648438
+            },
+            {
+                "word": "sein.",
+                "start": 225.39999389648438,
+                "end": 226.0799987792969
+            }
+        ],
+        "translationEn": "Now I will be more generous and wiser.",
+        "translationVi": "Bây giờ tôi sẽ trở nên hào phóng và thông minh hơn."
+    },
+    {
+        "text": "Bitte holt mich heraus, kommt schon!“",
+        "start": 226.45999755859376,
+        "end": 228.93999938964845,
+        "wordTimings": [
+            {
+                "word": "Bitte",
+                "start": 226.45999755859376,
+                "end": 226.55999755859375
+            },
+            {
+                "word": "holt",
+                "start": 226.8000030517578,
+                "end": 227
+            },
+            {
+                "word": "mich",
+                "start": 227,
+                "end": 227.0800018310547
+            },
+            {
+                "word": "heraus,",
+                "start": 227.0800018310547,
+                "end": 227.55999755859375
+            },
+            {
+                "word": "kommt",
+                "start": 227.86000061035156,
+                "end": 228.13999938964844
+            },
+            {
+                "word": "schon!“",
+                "start": 228.13999938964844,
+                "end": 228.93999938964845
+            }
+        ],
+        "translationEn": "\"Please get me out, come on!\"",
+        "translationVi": "“Xin hãy cứu tôi, mau lên!”"
+    },
+    {
+        "text": "Der Wolf blieb einen ganzen Tag lang in diesem Kasten.",
+        "start": 230.5999969482422,
+        "end": 234.40000610351564,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 230.5999969482422,
+                "end": 231.25999450683594
+            },
+            {
+                "word": "Wolf",
+                "start": 231.25999450683594,
+                "end": 231.6199951171875
+            },
+            {
+                "word": "blieb",
+                "start": 231.6199951171875,
+                "end": 231.89999389648438
+            },
+            {
+                "word": "einen",
+                "start": 231.89999389648438,
+                "end": 232.25999450683594
+            },
+            {
+                "word": "ganzen",
+                "start": 232.25999450683594,
+                "end": 232.77999877929688
+            },
+            {
+                "word": "Tag",
+                "start": 232.77999877929688,
+                "end": 233.0399932861328
+            },
+            {
+                "word": "lang",
+                "start": 233.0399932861328,
+                "end": 233.3000030517578
+            },
+            {
+                "word": "in",
+                "start": 233.3000030517578,
+                "end": 233.4199981689453
+            },
+            {
+                "word": "diesem",
+                "start": 233.4199981689453,
+                "end": 233.67999267578125
+            },
+            {
+                "word": "Kasten.",
+                "start": 233.67999267578125,
+                "end": 234.40000610351564
+            }
+        ],
+        "translationEn": "The wolf stayed in this box for a whole day.",
+        "translationVi": "Con sói đã ở trong cái hộp này suốt một ngày."
+    },
+    {
+        "text": "Am nächsten Morgen sahen der Hirte und der Büffel, dass der Wolf eine gute Lektion gelernt hatte und holten ihn zurück aus dem Kasten.",
+        "start": 234.00000610351563,
+        "end": 243.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Am",
+                "start": 234.00000610351563,
+                "end": 234.82000732421875
+            },
+            {
+                "word": "nächsten",
+                "start": 234.82000732421875,
+                "end": 235.22000122070312
+            },
+            {
+                "word": "Morgen",
+                "start": 235.22000122070312,
+                "end": 235.6199951171875
+            },
+            {
+                "word": "sahen",
+                "start": 235.6199951171875,
+                "end": 236.17999267578125
+            },
+            {
+                "word": "der",
+                "start": 236.17999267578125,
+                "end": 236.3800048828125
+            },
+            {
+                "word": "Hirte",
+                "start": 236.3800048828125,
+                "end": 236.66000366210938
+            },
+            {
+                "word": "und",
+                "start": 236.66000366210938,
+                "end": 236.83999633789062
+            },
+            {
+                "word": "der",
+                "start": 236.83999633789062,
+                "end": 237.0800018310547
+            },
+            {
+                "word": "Büffel,",
+                "start": 237.0800018310547,
+                "end": 237.33999633789062
+            },
+            {
+                "word": "dass",
+                "start": 237.74000549316406,
+                "end": 237.8000030517578
+            },
+            {
+                "word": "der",
+                "start": 237.8000030517578,
+                "end": 238.27999877929688
+            },
+            {
+                "word": "Wolf",
+                "start": 238.27999877929688,
+                "end": 238.3000030517578
+            },
+            {
+                "word": "eine",
+                "start": 238.3000030517578,
+                "end": 238.63999938964844
+            },
+            {
+                "word": "gute",
+                "start": 238.63999938964844,
+                "end": 239.1199951171875
+            },
+            {
+                "word": "Lektion",
+                "start": 239.1199951171875,
+                "end": 239.3800048828125
+            },
+            {
+                "word": "gelernt",
+                "start": 239.3800048828125,
+                "end": 239.77999877929688
+            },
+            {
+                "word": "hatte",
+                "start": 239.77999877929688,
+                "end": 240.0399932861328
+            },
+            {
+                "word": "und",
+                "start": 240.0399932861328,
+                "end": 240.72000122070312
+            },
+            {
+                "word": "holten",
+                "start": 240.72000122070312,
+                "end": 241.16000366210938
+            },
+            {
+                "word": "ihn",
+                "start": 241.16000366210938,
+                "end": 241.44000244140625
+            },
+            {
+                "word": "zurück",
+                "start": 241.44000244140625,
+                "end": 241.97999572753906
+            },
+            {
+                "word": "aus",
+                "start": 241.97999572753906,
+                "end": 242.33999633789062
+            },
+            {
+                "word": "dem",
+                "start": 242.33999633789062,
+                "end": 242.60000610351562
+            },
+            {
+                "word": "Kasten.",
+                "start": 242.60000610351562,
+                "end": 243.4199951171875
+            }
+        ],
+        "translationEn": "The next morning, the shepherd and the buffalo saw that the wolf had learned a good lesson and brought him back from the box.",
+        "translationVi": "Sáng hôm sau, người chăn cừu và con trâu thấy rằng con sói đã học được một bài học tốt và đã đưa nó trở lại từ cái hộp."
+    },
+    {
+        "text": "„Danke, ich danke euch!“",
+        "start": 248.0199951171875,
+        "end": 252.13999633789064,
+        "wordTimings": [
+            {
+                "word": "„Danke,",
+                "start": 248.0199951171875,
+                "end": 248.9199981689453
+            },
+            {
+                "word": "ich",
+                "start": 249.5,
+                "end": 249.8800048828125
+            },
+            {
+                "word": "danke",
+                "start": 249.8800048828125,
+                "end": 250.22000122070312
+            },
+            {
+                "word": "euch!“",
+                "start": 250.22000122070312,
+                "end": 252.13999633789064
+            }
+        ],
+        "translationEn": "\"Thank you, I thank you all!\"",
+        "translationVi": "\"Cảm ơn, tôi cảm ơn các bạn!\""
+    },
+    {
+        "text": "Von diesem Tag an verstand sich der Wolf besser mit den anderen Tieren des Waldes und respektierte die Meinung aller, von fliegenden Vögeln bis zu winzigen Insekten.",
+        "start": 254.50000610351563,
+        "end": 266.02000122070314,
+        "wordTimings": [
+            {
+                "word": "Von",
+                "start": 254.50000610351563,
+                "end": 255.44000244140625
+            },
+            {
+                "word": "diesem",
+                "start": 255.44000244140625,
+                "end": 255.82000732421875
+            },
+            {
+                "word": "Tag",
+                "start": 255.82000732421875,
+                "end": 256.1199951171875
+            },
+            {
+                "word": "an",
+                "start": 256.1199951171875,
+                "end": 256.9200134277344
+            },
+            {
+                "word": "verstand",
+                "start": 256.9200134277344,
+                "end": 256.9200134277344
+            },
+            {
+                "word": "sich",
+                "start": 256.9200134277344,
+                "end": 257.1600036621094
+            },
+            {
+                "word": "der",
+                "start": 257.1600036621094,
+                "end": 257.4599914550781
+            },
+            {
+                "word": "Wolf",
+                "start": 257.4599914550781,
+                "end": 257.5400085449219
+            },
+            {
+                "word": "besser",
+                "start": 257.5400085449219,
+                "end": 257.8999938964844
+            },
+            {
+                "word": "mit",
+                "start": 257.8999938964844,
+                "end": 258.0400085449219
+            },
+            {
+                "word": "den",
+                "start": 258.0400085449219,
+                "end": 258.2200012207031
+            },
+            {
+                "word": "anderen",
+                "start": 258.2200012207031,
+                "end": 258.67999267578125
+            },
+            {
+                "word": "Tieren",
+                "start": 258.67999267578125,
+                "end": 258.8800048828125
+            },
+            {
+                "word": "des",
+                "start": 258.8800048828125,
+                "end": 259.17999267578125
+            },
+            {
+                "word": "Waldes",
+                "start": 259.17999267578125,
+                "end": 259.70001220703125
+            },
+            {
+                "word": "und",
+                "start": 259.70001220703125,
+                "end": 260.2200012207031
+            },
+            {
+                "word": "respektierte",
+                "start": 260.2200012207031,
+                "end": 260.9200134277344
+            },
+            {
+                "word": "die",
+                "start": 260.9200134277344,
+                "end": 261.4800109863281
+            },
+            {
+                "word": "Meinung",
+                "start": 261.4800109863281,
+                "end": 261.4800109863281
+            },
+            {
+                "word": "aller,",
+                "start": 261.4800109863281,
+                "end": 261.94000244140625
+            },
+            {
+                "word": "von",
+                "start": 262.3599853515625,
+                "end": 262.5400085449219
+            },
+            {
+                "word": "fliegenden",
+                "start": 262.5400085449219,
+                "end": 262.9200134277344
+            },
+            {
+                "word": "Vögeln",
+                "start": 262.9200134277344,
+                "end": 263.44000244140625
+            },
+            {
+                "word": "bis",
+                "start": 263.44000244140625,
+                "end": 264.0799865722656
+            },
+            {
+                "word": "zu",
+                "start": 264.0799865722656,
+                "end": 264.3999938964844
+            },
+            {
+                "word": "winzigen",
+                "start": 264.3999938964844,
+                "end": 264.9200134277344
+            },
+            {
+                "word": "Insekten.",
+                "start": 264.9200134277344,
+                "end": 266.02000122070314
+            }
+        ],
+        "translationEn": "From that day on, the wolf got along better with the other animals in the forest and respected the opinions of all, from flying birds to tiny insects.",
+        "translationVi": "Từ ngày đó, con sói hiểu rõ hơn về các loài động vật khác trong rừng và tôn trọng ý kiến của tất cả, từ những chú chim bay lượn cho đến những con côn trùng nhỏ bé."
+    }
+]

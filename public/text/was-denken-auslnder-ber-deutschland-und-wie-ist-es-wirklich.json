@@ -1,0 +1,4218 @@
+[
+    {
+        "text": "Wir alle haben Vorurteile oder Stereotype.",
+        "start": 0,
+        "end": 5.9999998092651365,
+        "wordTimings": [
+            {
+                "word": "Wir",
+                "start": 0,
+                "end": 0.7799999713897705
+            },
+            {
+                "word": "alle",
+                "start": 0.7799999713897705,
+                "end": 1.440000057220459
+            },
+            {
+                "word": "haben",
+                "start": 1.440000057220459,
+                "end": 2.200000047683716
+            },
+            {
+                "word": "Vorurteile",
+                "start": 2.200000047683716,
+                "end": 3.4800000190734863
+            },
+            {
+                "word": "oder",
+                "start": 3.4800000190734863,
+                "end": 4.519999980926514
+            },
+            {
+                "word": "Stereotype.",
+                "start": 4.519999980926514,
+                "end": 5.9999998092651365
+            }
+        ],
+        "translationEn": "We all have prejudices or stereotypes.",
+        "translationVi": "Chúng ta đều có định kiến hoặc khuôn mẫu."
+    },
+    {
+        "text": "Das bedeutet, dass man über andere Menschen denkt, sie seien alle gleich.",
+        "start": 6.740000152587891,
+        "end": 13.8,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 6.740000152587891,
+                "end": 7.099999904632568
+            },
+            {
+                "word": "bedeutet,",
+                "start": 7.099999904632568,
+                "end": 7.78000020980835
+            },
+            {
+                "word": "dass",
+                "start": 8.220000267028809,
+                "end": 8.479999542236328
+            },
+            {
+                "word": "man",
+                "start": 8.479999542236328,
+                "end": 9.020000457763672
+            },
+            {
+                "word": "über",
+                "start": 9.020000457763672,
+                "end": 9.359999656677246
+            },
+            {
+                "word": "andere",
+                "start": 9.359999656677246,
+                "end": 10.039999961853027
+            },
+            {
+                "word": "Menschen",
+                "start": 10.039999961853027,
+                "end": 10.819999694824219
+            },
+            {
+                "word": "denkt,",
+                "start": 10.819999694824219,
+                "end": 11.380000114440918
+            },
+            {
+                "word": "sie",
+                "start": 12,
+                "end": 12
+            },
+            {
+                "word": "seien",
+                "start": 12,
+                "end": 12.359999656677246
+            },
+            {
+                "word": "alle",
+                "start": 12.359999656677246,
+                "end": 12.880000114440918
+            },
+            {
+                "word": "gleich.",
+                "start": 12.880000114440918,
+                "end": 13.8
+            }
+        ],
+        "translationEn": "This means that one thinks of other people as if they are all the same.",
+        "translationVi": "Điều đó có nghĩa là người ta nghĩ rằng tất cả mọi người đều giống nhau."
+    },
+    {
+        "text": "Man glaubt also, etwas über eine ganze Gruppe zu wissen, obwohl man nur wenige Personen kennt.",
+        "start": 14.219999694824219,
+        "end": 24.480000305175782,
+        "wordTimings": [
+            {
+                "word": "Man",
+                "start": 14.219999694824219,
+                "end": 14.579999923706055
+            },
+            {
+                "word": "glaubt",
+                "start": 14.579999923706055,
+                "end": 15.180000305175781
+            },
+            {
+                "word": "also,",
+                "start": 15.180000305175781,
+                "end": 15.640000343322754
+            },
+            {
+                "word": "etwas",
+                "start": 16.6200008392334,
+                "end": 16.700000762939453
+            },
+            {
+                "word": "über",
+                "start": 16.700000762939453,
+                "end": 17.3799991607666
+            },
+            {
+                "word": "eine",
+                "start": 17.3799991607666,
+                "end": 17.860000610351562
+            },
+            {
+                "word": "ganze",
+                "start": 17.860000610351562,
+                "end": 18.68000030517578
+            },
+            {
+                "word": "Gruppe",
+                "start": 18.68000030517578,
+                "end": 19.040000915527344
+            },
+            {
+                "word": "zu",
+                "start": 19.040000915527344,
+                "end": 19.860000610351562
+            },
+            {
+                "word": "wissen,",
+                "start": 19.860000610351562,
+                "end": 19.959999084472656
+            },
+            {
+                "word": "obwohl",
+                "start": 20.799999237060547,
+                "end": 20.920000076293945
+            },
+            {
+                "word": "man",
+                "start": 20.920000076293945,
+                "end": 21.479999542236328
+            },
+            {
+                "word": "nur",
+                "start": 21.479999542236328,
+                "end": 22.239999771118164
+            },
+            {
+                "word": "wenige",
+                "start": 22.239999771118164,
+                "end": 22.719999313354492
+            },
+            {
+                "word": "Personen",
+                "start": 22.719999313354492,
+                "end": 23.6200008392334
+            },
+            {
+                "word": "kennt.",
+                "start": 23.6200008392334,
+                "end": 24.480000305175782
+            }
+        ],
+        "translationEn": "One believes they know something about an entire group, even though they only know a few individuals.",
+        "translationVi": "Người ta tin rằng biết điều gì đó về một nhóm lớn, mặc dù chỉ quen biết với một vài người."
+    },
+    {
+        "text": "Stell Dir zum Beispiel einen Franzosen vor.",
+        "start": 24.08000030517578,
+        "end": 29.519999313354493,
+        "wordTimings": [
+            {
+                "word": "Stell",
+                "start": 24.08000030517578,
+                "end": 25.68000030517578
+            },
+            {
+                "word": "Dir",
+                "start": 25.68000030517578,
+                "end": 25.8799991607666
+            },
+            {
+                "word": "zum",
+                "start": 25.8799991607666,
+                "end": 26.280000686645508
+            },
+            {
+                "word": "Beispiel",
+                "start": 26.280000686645508,
+                "end": 27.059999465942383
+            },
+            {
+                "word": "einen",
+                "start": 27.059999465942383,
+                "end": 27.940000534057617
+            },
+            {
+                "word": "Franzosen",
+                "start": 27.940000534057617,
+                "end": 28.8799991607666
+            },
+            {
+                "word": "vor.",
+                "start": 28.8799991607666,
+                "end": 29.519999313354493
+            }
+        ],
+        "translationEn": "Imagine a Frenchman, for example.",
+        "translationVi": "Hãy tưởng tượng một người Pháp."
+    },
+    {
+        "text": "Was siehst Du?",
+        "start": 29.92000045776367,
+        "end": 31.060000228881837,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 29.92000045776367,
+                "end": 30.219999313354492
+            },
+            {
+                "word": "siehst",
+                "start": 30.219999313354492,
+                "end": 30.540000915527344
+            },
+            {
+                "word": "Du?",
+                "start": 30.540000915527344,
+                "end": 31.060000228881837
+            }
+        ],
+        "translationEn": "What do you see?",
+        "translationVi": "Bạn thấy gì?"
+    },
+    {
+        "text": "Du siehst einen Mann in einem gestreiften Oberteil mit einer Baskenmütze auf dem Kopf und einem Baguette unter dem Arm.",
+        "start": 31.520000839233397,
+        "end": 42.41999893188476,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 31.520000839233397,
+                "end": 31.979999542236328
+            },
+            {
+                "word": "siehst",
+                "start": 31.979999542236328,
+                "end": 32.380001068115234
+            },
+            {
+                "word": "einen",
+                "start": 32.380001068115234,
+                "end": 32.79999923706055
+            },
+            {
+                "word": "Mann",
+                "start": 32.79999923706055,
+                "end": 33.13999938964844
+            },
+            {
+                "word": "in",
+                "start": 33.13999938964844,
+                "end": 33.70000076293945
+            },
+            {
+                "word": "einem",
+                "start": 33.70000076293945,
+                "end": 34.099998474121094
+            },
+            {
+                "word": "gestreiften",
+                "start": 34.099998474121094,
+                "end": 35.02000045776367
+            },
+            {
+                "word": "Oberteil",
+                "start": 35.02000045776367,
+                "end": 35.959999084472656
+            },
+            {
+                "word": "mit",
+                "start": 35.959999084472656,
+                "end": 36.63999938964844
+            },
+            {
+                "word": "einer",
+                "start": 36.63999938964844,
+                "end": 37.119998931884766
+            },
+            {
+                "word": "Baskenmütze",
+                "start": 37.119998931884766,
+                "end": 38.119998931884766
+            },
+            {
+                "word": "auf",
+                "start": 38.119998931884766,
+                "end": 38.47999954223633
+            },
+            {
+                "word": "dem",
+                "start": 38.47999954223633,
+                "end": 38.7400016784668
+            },
+            {
+                "word": "Kopf",
+                "start": 38.7400016784668,
+                "end": 39.060001373291016
+            },
+            {
+                "word": "und",
+                "start": 39.470001220703125,
+                "end": 39.939998626708984
+            },
+            {
+                "word": "einem",
+                "start": 39.939998626708984,
+                "end": 40.400001525878906
+            },
+            {
+                "word": "Baguette",
+                "start": 40.400001525878906,
+                "end": 40.939998626708984
+            },
+            {
+                "word": "unter",
+                "start": 40.939998626708984,
+                "end": 41.540000915527344
+            },
+            {
+                "word": "dem",
+                "start": 41.540000915527344,
+                "end": 41.880001068115234
+            },
+            {
+                "word": "Arm.",
+                "start": 41.880001068115234,
+                "end": 42.41999893188476
+            }
+        ],
+        "translationEn": "You see a man in a striped top with a beret on his head and a baguette under his arm.",
+        "translationVi": "Bạn thấy một người đàn ông mặc áo sọc, đội mũ beret trên đầu và kẹp một chiếc bánh mì baguette dưới cánh tay."
+    },
+    {
+        "text": "Wenn's geht, spielt er noch Akkordeon.",
+        "start": 43.120001220703124,
+        "end": 46.95999984741211,
+        "wordTimings": [
+            {
+                "word": "Wenn's",
+                "start": 43.120001220703124,
+                "end": 44.15999984741211
+            },
+            {
+                "word": "geht,",
+                "start": 44.15999984741211,
+                "end": 44.439998626708984
+            },
+            {
+                "word": "spielt",
+                "start": 44.880001068115234,
+                "end": 44.880001068115234
+            },
+            {
+                "word": "er",
+                "start": 44.880001068115234,
+                "end": 45.119998931884766
+            },
+            {
+                "word": "noch",
+                "start": 45.119998931884766,
+                "end": 45.70000076293945
+            },
+            {
+                "word": "Akkordeon.",
+                "start": 45.70000076293945,
+                "end": 46.95999984741211
+            }
+        ],
+        "translationEn": "If possible, he still plays the accordion.",
+        "translationVi": "Nếu có thể, anh ấy vẫn chơi accordion."
+    },
+    {
+        "text": "Das ist das typische Klischee eines Franzosen.",
+        "start": 47.140001678466795,
+        "end": 51.32000045776367,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 47.140001678466795,
+                "end": 47.560001373291016
+            },
+            {
+                "word": "ist",
+                "start": 47.560001373291016,
+                "end": 47.880001068115234
+            },
+            {
+                "word": "das",
+                "start": 47.880001068115234,
+                "end": 48.220001220703125
+            },
+            {
+                "word": "typische",
+                "start": 48.220001220703125,
+                "end": 48.7400016784668
+            },
+            {
+                "word": "Klischee",
+                "start": 48.7400016784668,
+                "end": 49.5
+            },
+            {
+                "word": "eines",
+                "start": 49.5,
+                "end": 50.279998779296875
+            },
+            {
+                "word": "Franzosen.",
+                "start": 50.279998779296875,
+                "end": 51.32000045776367
+            }
+        ],
+        "translationEn": "That is the typical stereotype of a French person.",
+        "translationVi": "Đó là hình mẫu điển hình của một người Pháp."
+    },
+    {
+        "text": "Wobei ich sagen muss, ich habe sehr gelacht, als ich diesen Sommer in Frankreich war.",
+        "start": 51.74000015258789,
+        "end": 59.52000122070312,
+        "wordTimings": [
+            {
+                "word": "Wobei",
+                "start": 51.74000015258789,
+                "end": 52.400001525878906
+            },
+            {
+                "word": "ich",
+                "start": 52.400001525878906,
+                "end": 52.7599983215332
+            },
+            {
+                "word": "sagen",
+                "start": 52.7599983215332,
+                "end": 53.220001220703125
+            },
+            {
+                "word": "muss,",
+                "start": 53.220001220703125,
+                "end": 53.58000183105469
+            },
+            {
+                "word": "ich",
+                "start": 54.040000915527344,
+                "end": 54.279998779296875
+            },
+            {
+                "word": "habe",
+                "start": 54.279998779296875,
+                "end": 54.560001373291016
+            },
+            {
+                "word": "sehr",
+                "start": 54.560001373291016,
+                "end": 55.220001220703125
+            },
+            {
+                "word": "gelacht,",
+                "start": 55.220001220703125,
+                "end": 55.68000030517578
+            },
+            {
+                "word": "als",
+                "start": 56.2599983215332,
+                "end": 56.36000061035156
+            },
+            {
+                "word": "ich",
+                "start": 56.36000061035156,
+                "end": 56.63999938964844
+            },
+            {
+                "word": "diesen",
+                "start": 56.63999938964844,
+                "end": 57.20000076293945
+            },
+            {
+                "word": "Sommer",
+                "start": 57.20000076293945,
+                "end": 57.70000076293945
+            },
+            {
+                "word": "in",
+                "start": 57.70000076293945,
+                "end": 58.29999923706055
+            },
+            {
+                "word": "Frankreich",
+                "start": 58.29999923706055,
+                "end": 58.900001525878906
+            },
+            {
+                "word": "war.",
+                "start": 58.900001525878906,
+                "end": 59.52000122070312
+            }
+        ],
+        "translationEn": "I have to say, I laughed a lot when I was in France this summer.",
+        "translationVi": "Tôi phải nói rằng tôi đã cười rất nhiều khi tôi ở Pháp vào mùa hè này."
+    },
+    {
+        "text": "Denn dort hatten abends wirklich viele Menschen ein Baguette unter dem Arm.",
+        "start": 59.699999237060545,
+        "end": 67.53999786376953,
+        "wordTimings": [
+            {
+                "word": "Denn",
+                "start": 59.699999237060545,
+                "end": 60.099998474121094
+            },
+            {
+                "word": "dort",
+                "start": 60.099998474121094,
+                "end": 60.68000030517578
+            },
+            {
+                "word": "hatten",
+                "start": 60.68000030517578,
+                "end": 61.220001220703125
+            },
+            {
+                "word": "abends",
+                "start": 61.220001220703125,
+                "end": 62.099998474121094
+            },
+            {
+                "word": "wirklich",
+                "start": 62.099998474121094,
+                "end": 63.2400016784668
+            },
+            {
+                "word": "viele",
+                "start": 63.2400016784668,
+                "end": 63.97999954223633
+            },
+            {
+                "word": "Menschen",
+                "start": 63.97999954223633,
+                "end": 64.5999984741211
+            },
+            {
+                "word": "ein",
+                "start": 64.5999984741211,
+                "end": 65.23999786376953
+            },
+            {
+                "word": "Baguette",
+                "start": 65.23999786376953,
+                "end": 65.76000213623047
+            },
+            {
+                "word": "unter",
+                "start": 65.76000213623047,
+                "end": 66.41999816894531
+            },
+            {
+                "word": "dem",
+                "start": 66.41999816894531,
+                "end": 66.77999877929688
+            },
+            {
+                "word": "Arm.",
+                "start": 66.77999877929688,
+                "end": 67.53999786376953
+            }
+        ],
+        "translationEn": "Because there, in the evenings, many people really had a baguette under their arm.",
+        "translationVi": "Bởi vì ở đó vào buổi tối thực sự có rất nhiều người mang một chiếc bánh mì baguette dưới cánh tay."
+    },
+    {
+        "text": "Vorurteile und Stereotype gab es schon immer.",
+        "start": 68.66000213623047,
+        "end": 73.39999847412109,
+        "wordTimings": [
+            {
+                "word": "Vorurteile",
+                "start": 68.66000213623047,
+                "end": 69.31999969482422
+            },
+            {
+                "word": "und",
+                "start": 69.31999969482422,
+                "end": 69.9000015258789
+            },
+            {
+                "word": "Stereotype",
+                "start": 69.9000015258789,
+                "end": 70.81999969482422
+            },
+            {
+                "word": "gab",
+                "start": 70.81999969482422,
+                "end": 71.77999877929688
+            },
+            {
+                "word": "es",
+                "start": 71.77999877929688,
+                "end": 72.22000122070312
+            },
+            {
+                "word": "schon",
+                "start": 72.22000122070312,
+                "end": 72.77999877929688
+            },
+            {
+                "word": "immer.",
+                "start": 72.77999877929688,
+                "end": 73.39999847412109
+            }
+        ],
+        "translationEn": "Prejudices and stereotypes have always existed.",
+        "translationVi": "Định kiến và khuôn mẫu luôn tồn tại."
+    },
+    {
+        "text": "Früher reisten die Menschen viel weniger.",
+        "start": 73.91999664306641,
+        "end": 77.67999725341797,
+        "wordTimings": [
+            {
+                "word": "Früher",
+                "start": 73.91999664306641,
+                "end": 74.5199966430664
+            },
+            {
+                "word": "reisten",
+                "start": 74.5199966430664,
+                "end": 75.41999816894531
+            },
+            {
+                "word": "die",
+                "start": 75.41999816894531,
+                "end": 75.76000213623047
+            },
+            {
+                "word": "Menschen",
+                "start": 75.76000213623047,
+                "end": 76.19999694824219
+            },
+            {
+                "word": "viel",
+                "start": 76.19999694824219,
+                "end": 76.9000015258789
+            },
+            {
+                "word": "weniger.",
+                "start": 76.9000015258789,
+                "end": 77.67999725341797
+            }
+        ],
+        "translationEn": "In the past, people traveled much less.",
+        "translationVi": "Trước đây, con người di chuyển ít hơn rất nhiều."
+    },
+    {
+        "text": "Sie kannten andere Länder vor allem aus Erzählungen, aus Büchern oder von Händlern.",
+        "start": 77.8800033569336,
+        "end": 87.16000061035156,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 77.8800033569336,
+                "end": 78.54000091552734
+            },
+            {
+                "word": "kannten",
+                "start": 78.54000091552734,
+                "end": 79.12000274658203
+            },
+            {
+                "word": "andere",
+                "start": 79.12000274658203,
+                "end": 80
+            },
+            {
+                "word": "Länder",
+                "start": 80,
+                "end": 80.54000091552734
+            },
+            {
+                "word": "vor",
+                "start": 80.54000091552734,
+                "end": 81.4000015258789
+            },
+            {
+                "word": "allem",
+                "start": 81.4000015258789,
+                "end": 81.66000366210938
+            },
+            {
+                "word": "aus",
+                "start": 81.66000366210938,
+                "end": 82.41999816894531
+            },
+            {
+                "word": "Erzählungen,",
+                "start": 82.41999816894531,
+                "end": 83.22000122070312
+            },
+            {
+                "word": "aus",
+                "start": 83.95999908447266,
+                "end": 84.69999694824219
+            },
+            {
+                "word": "Büchern",
+                "start": 84.69999694824219,
+                "end": 85.26000213623047
+            },
+            {
+                "word": "oder",
+                "start": 85.26000213623047,
+                "end": 85.68000030517578
+            },
+            {
+                "word": "von",
+                "start": 85.68000030517578,
+                "end": 86.30000305175781
+            },
+            {
+                "word": "Händlern.",
+                "start": 86.30000305175781,
+                "end": 87.16000061035156
+            }
+        ],
+        "translationEn": "They knew other countries mainly from stories, from books, or from merchants.",
+        "translationVi": "Họ biết đến các quốc gia khác chủ yếu qua những câu chuyện, từ sách vở hoặc từ các thương nhân."
+    },
+    {
+        "text": "Wenn jemand sagte, die Menschen in diesem Land sind so oder so, glaubten das viele.",
+        "start": 87.95999755859376,
+        "end": 96.39999847412109,
+        "wordTimings": [
+            {
+                "word": "Wenn",
+                "start": 87.95999755859376,
+                "end": 88.26000213623047
+            },
+            {
+                "word": "jemand",
+                "start": 88.26000213623047,
+                "end": 88.81999969482422
+            },
+            {
+                "word": "sagte,",
+                "start": 88.81999969482422,
+                "end": 89.41999816894531
+            },
+            {
+                "word": "die",
+                "start": 90.08000183105469,
+                "end": 90.33999633789062
+            },
+            {
+                "word": "Menschen",
+                "start": 90.33999633789062,
+                "end": 90.83999633789062
+            },
+            {
+                "word": "in",
+                "start": 90.83999633789062,
+                "end": 91.37999725341797
+            },
+            {
+                "word": "diesem",
+                "start": 91.37999725341797,
+                "end": 91.77999877929688
+            },
+            {
+                "word": "Land",
+                "start": 91.77999877929688,
+                "end": 92.18000030517578
+            },
+            {
+                "word": "sind",
+                "start": 92.18000030517578,
+                "end": 92.73999786376953
+            },
+            {
+                "word": "so",
+                "start": 92.73999786376953,
+                "end": 93.30000305175781
+            },
+            {
+                "word": "oder",
+                "start": 93.30000305175781,
+                "end": 93.69999694824219
+            },
+            {
+                "word": "so,",
+                "start": 93.69999694824219,
+                "end": 94.5999984741211
+            },
+            {
+                "word": "glaubten",
+                "start": 94.95999908447266,
+                "end": 95.4000015258789
+            },
+            {
+                "word": "das",
+                "start": 95.4000015258789,
+                "end": 95.80000305175781
+            },
+            {
+                "word": "viele.",
+                "start": 95.80000305175781,
+                "end": 96.39999847412109
+            }
+        ],
+        "translationEn": "When someone said that the people in this country are this way or that way, many believed it.",
+        "translationVi": "Nếu ai đó nói rằng con người ở đất nước này như thế này hay như thế kia, thì nhiều người đã tin điều đó."
+    },
+    {
+        "text": "So entstanden einfache Bilder im Kopf.",
+        "start": 96.66000213623047,
+        "end": 100.61999969482422,
+        "wordTimings": [
+            {
+                "word": "So",
+                "start": 96.66000213623047,
+                "end": 97.31999969482422
+            },
+            {
+                "word": "entstanden",
+                "start": 97.31999969482422,
+                "end": 98.0999984741211
+            },
+            {
+                "word": "einfache",
+                "start": 98.0999984741211,
+                "end": 99.16000366210938
+            },
+            {
+                "word": "Bilder",
+                "start": 99.16000366210938,
+                "end": 99.5199966430664
+            },
+            {
+                "word": "im",
+                "start": 99.5199966430664,
+                "end": 99.95999908447266
+            },
+            {
+                "word": "Kopf.",
+                "start": 99.95999908447266,
+                "end": 100.61999969482422
+            }
+        ],
+        "translationEn": "This is how simple images were created in the mind.",
+        "translationVi": "Vì vậy, những hình ảnh đơn giản đã hình thành trong đầu."
+    },
+    {
+        "text": "Und viele halten sich bis heute.",
+        "start": 100.84000244140626,
+        "end": 104.16000061035156,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 100.84000244140626,
+                "end": 101.4000015258789
+            },
+            {
+                "word": "viele",
+                "start": 101.4000015258789,
+                "end": 101.80000305175781
+            },
+            {
+                "word": "halten",
+                "start": 101.80000305175781,
+                "end": 102.66000366210938
+            },
+            {
+                "word": "sich",
+                "start": 102.66000366210938,
+                "end": 103.04000091552734
+            },
+            {
+                "word": "bis",
+                "start": 103.04000091552734,
+                "end": 103.41999816894531
+            },
+            {
+                "word": "heute.",
+                "start": 103.41999816894531,
+                "end": 104.16000061035156
+            }
+        ],
+        "translationEn": "And many still hold on to this day.",
+        "translationVi": "Và nhiều người vẫn giữ như vậy cho đến ngày nay."
+    },
+    {
+        "text": "Überleg mal, wie für Dich der typische Deutsche aussieht.",
+        "start": 104.84000244140626,
+        "end": 110.8,
+        "wordTimings": [
+            {
+                "word": "Überleg",
+                "start": 104.84000244140626,
+                "end": 105.77999877929688
+            },
+            {
+                "word": "mal,",
+                "start": 105.77999877929688,
+                "end": 106.4000015258789
+            },
+            {
+                "word": "wie",
+                "start": 106.72000122070312,
+                "end": 106.91999816894531
+            },
+            {
+                "word": "für",
+                "start": 106.91999816894531,
+                "end": 107.44000244140625
+            },
+            {
+                "word": "Dich",
+                "start": 107.44000244140625,
+                "end": 107.81999969482422
+            },
+            {
+                "word": "der",
+                "start": 107.81999969482422,
+                "end": 108.31999969482422
+            },
+            {
+                "word": "typische",
+                "start": 108.31999969482422,
+                "end": 109.13999938964844
+            },
+            {
+                "word": "Deutsche",
+                "start": 109.13999938964844,
+                "end": 109.9000015258789
+            },
+            {
+                "word": "aussieht.",
+                "start": 109.9000015258789,
+                "end": 110.8
+            }
+        ],
+        "translationEn": "Think about what the typical German looks like to you.",
+        "translationVi": "Hãy nghĩ xem, người Đức điển hình trong mắt bạn trông như thế nào."
+    },
+    {
+        "text": "Was er macht, was er trinkt, was er gerne isst.",
+        "start": 110.95999755859376,
+        "end": 115.8,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 110.95999755859376,
+                "end": 111.19999694824219
+            },
+            {
+                "word": "er",
+                "start": 111.19999694824219,
+                "end": 111.37999725341797
+            },
+            {
+                "word": "macht,",
+                "start": 111.37999725341797,
+                "end": 111.83999633789062
+            },
+            {
+                "word": "was",
+                "start": 112.41999816894531,
+                "end": 112.62000274658203
+            },
+            {
+                "word": "er",
+                "start": 112.62000274658203,
+                "end": 112.86000061035156
+            },
+            {
+                "word": "trinkt,",
+                "start": 112.86000061035156,
+                "end": 113.4800033569336
+            },
+            {
+                "word": "was",
+                "start": 114.18000030517578,
+                "end": 114.4000015258789
+            },
+            {
+                "word": "er",
+                "start": 114.4000015258789,
+                "end": 114.5999984741211
+            },
+            {
+                "word": "gerne",
+                "start": 114.5999984741211,
+                "end": 115.12000274658203
+            },
+            {
+                "word": "isst.",
+                "start": 115.12000274658203,
+                "end": 115.8
+            }
+        ],
+        "translationEn": "What he does, what he drinks, what he likes to eat.",
+        "translationVi": "Anh ấy làm gì, anh ấy uống gì, anh ấy thích ăn gì."
+    },
+    {
+        "text": "Na, hast Du ein Bild vor Augen?",
+        "start": 116.67999877929688,
+        "end": 120.11999969482422,
+        "wordTimings": [
+            {
+                "word": "Na,",
+                "start": 116.67999877929688,
+                "end": 117.27999877929688
+            },
+            {
+                "word": "hast",
+                "start": 118.0999984741211,
+                "end": 118.36000061035156
+            },
+            {
+                "word": "Du",
+                "start": 118.36000061035156,
+                "end": 118.58000183105469
+            },
+            {
+                "word": "ein",
+                "start": 118.58000183105469,
+                "end": 118.81999969482422
+            },
+            {
+                "word": "Bild",
+                "start": 118.81999969482422,
+                "end": 119.12000274658203
+            },
+            {
+                "word": "vor",
+                "start": 119.12000274658203,
+                "end": 119.44000244140625
+            },
+            {
+                "word": "Augen?",
+                "start": 119.44000244140625,
+                "end": 120.11999969482422
+            }
+        ],
+        "translationEn": "So, do you have a picture in mind?",
+        "translationVi": "Bạn có hình ảnh nào trong đầu không?"
+    },
+    {
+        "text": "Gehen wir es mal durch.",
+        "start": 120.58000030517579,
+        "end": 122.3,
+        "wordTimings": [
+            {
+                "word": "Gehen",
+                "start": 120.58000030517579,
+                "end": 121.04000091552734
+            },
+            {
+                "word": "wir",
+                "start": 121.04000091552734,
+                "end": 121.19999694824219
+            },
+            {
+                "word": "es",
+                "start": 121.19999694824219,
+                "end": 121.36000061035156
+            },
+            {
+                "word": "mal",
+                "start": 121.36000061035156,
+                "end": 121.68000030517578
+            },
+            {
+                "word": "durch.",
+                "start": 121.68000030517578,
+                "end": 122.3
+            }
+        ],
+        "translationEn": "Let's go through it.",
+        "translationVi": "Hãy cùng nhau xem qua."
+    },
+    {
+        "text": "Mal sehen, ob ich erraten habe, an welche Vorurteile Du gerade gedacht hast.",
+        "start": 122.41999664306641,
+        "end": 131.3,
+        "wordTimings": [
+            {
+                "word": "Mal",
+                "start": 122.41999664306641,
+                "end": 122.94000244140625
+            },
+            {
+                "word": "sehen,",
+                "start": 122.94000244140625,
+                "end": 123.30000305175781
+            },
+            {
+                "word": "ob",
+                "start": 123.77999877929688,
+                "end": 123.95999908447266
+            },
+            {
+                "word": "ich",
+                "start": 123.95999908447266,
+                "end": 124.41999816894531
+            },
+            {
+                "word": "erraten",
+                "start": 124.41999816894531,
+                "end": 125.37999725341797
+            },
+            {
+                "word": "habe,",
+                "start": 125.37999725341797,
+                "end": 125.77999877929688
+            },
+            {
+                "word": "an",
+                "start": 126.27999877929688,
+                "end": 126.68000030517578
+            },
+            {
+                "word": "welche",
+                "start": 126.68000030517578,
+                "end": 127.13999938964844
+            },
+            {
+                "word": "Vorurteile",
+                "start": 127.13999938964844,
+                "end": 128.24000549316406
+            },
+            {
+                "word": "Du",
+                "start": 128.24000549316406,
+                "end": 129.0800018310547
+            },
+            {
+                "word": "gerade",
+                "start": 129.0800018310547,
+                "end": 130.16000366210938
+            },
+            {
+                "word": "gedacht",
+                "start": 130.16000366210938,
+                "end": 130.63999938964844
+            },
+            {
+                "word": "hast.",
+                "start": 130.63999938964844,
+                "end": 131.3
+            }
+        ],
+        "translationEn": "Let's see if I guessed which prejudices you were just thinking about.",
+        "translationVi": "Hãy xem liệu tôi có đoán đúng những định kiến mà bạn đang nghĩ đến không."
+    },
+    {
+        "text": "Ein bekanntes Vorurteil ist, dass alle Deutschen pünktlich sind.",
+        "start": 130.9,
+        "end": 138.66000061035157,
+        "wordTimings": [
+            {
+                "word": "Ein",
+                "start": 130.9,
+                "end": 132.74000549316406
+            },
+            {
+                "word": "bekanntes",
+                "start": 132.74000549316406,
+                "end": 133.6199951171875
+            },
+            {
+                "word": "Vorurteil",
+                "start": 133.6199951171875,
+                "end": 134.39999389648438
+            },
+            {
+                "word": "ist,",
+                "start": 134.39999389648438,
+                "end": 134.94000244140625
+            },
+            {
+                "word": "dass",
+                "start": 135.5399932861328,
+                "end": 135.74000549316406
+            },
+            {
+                "word": "alle",
+                "start": 135.74000549316406,
+                "end": 136.17999267578125
+            },
+            {
+                "word": "Deutschen",
+                "start": 136.17999267578125,
+                "end": 136.77999877929688
+            },
+            {
+                "word": "pünktlich",
+                "start": 136.77999877929688,
+                "end": 137.9600067138672
+            },
+            {
+                "word": "sind.",
+                "start": 137.9600067138672,
+                "end": 138.66000061035157
+            }
+        ],
+        "translationEn": "A common stereotype is that all Germans are punctual.",
+        "translationVi": "Một định kiến nổi tiếng là tất cả người Đức đều đúng giờ."
+    },
+    {
+        "text": "Es stimmt, dass Pünktlichkeit in Deutschland wichtig ist.",
+        "start": 139.2800048828125,
+        "end": 144.71999816894532,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 139.2800048828125,
+                "end": 139.72000122070312
+            },
+            {
+                "word": "stimmt,",
+                "start": 139.72000122070312,
+                "end": 140.10000610351562
+            },
+            {
+                "word": "dass",
+                "start": 140.6999969482422,
+                "end": 140.8800048828125
+            },
+            {
+                "word": "Pünktlichkeit",
+                "start": 140.8800048828125,
+                "end": 141.74000549316406
+            },
+            {
+                "word": "in",
+                "start": 141.74000549316406,
+                "end": 142.5800018310547
+            },
+            {
+                "word": "Deutschland",
+                "start": 142.5800018310547,
+                "end": 143.1999969482422
+            },
+            {
+                "word": "wichtig",
+                "start": 143.1999969482422,
+                "end": 144.02000427246094
+            },
+            {
+                "word": "ist.",
+                "start": 144.02000427246094,
+                "end": 144.71999816894532
+            }
+        ],
+        "translationEn": "It is true that punctuality is important in Germany.",
+        "translationVi": "Đúng là sự đúng giờ rất quan trọng ở Đức."
+    },
+    {
+        "text": "Viele Menschen erwarten, dass Züge, Busse oder Verabredungen genau zur richtigen Zeit beginnen.",
+        "start": 145.4800018310547,
+        "end": 154.66000061035157,
+        "wordTimings": [
+            {
+                "word": "Viele",
+                "start": 145.4800018310547,
+                "end": 145.86000061035156
+            },
+            {
+                "word": "Menschen",
+                "start": 145.86000061035156,
+                "end": 146.4600067138672
+            },
+            {
+                "word": "erwarten,",
+                "start": 146.4600067138672,
+                "end": 147.13999938964844
+            },
+            {
+                "word": "dass",
+                "start": 147.89999389648438,
+                "end": 148.0800018310547
+            },
+            {
+                "word": "Züge,",
+                "start": 148.0800018310547,
+                "end": 148.6199951171875
+            },
+            {
+                "word": "Busse",
+                "start": 149.47999572753906,
+                "end": 149.60000610351562
+            },
+            {
+                "word": "oder",
+                "start": 149.60000610351562,
+                "end": 150.1199951171875
+            },
+            {
+                "word": "Verabredungen",
+                "start": 150.1199951171875,
+                "end": 151.1199951171875
+            },
+            {
+                "word": "genau",
+                "start": 151.1199951171875,
+                "end": 152.16000366210938
+            },
+            {
+                "word": "zur",
+                "start": 152.16000366210938,
+                "end": 152.66000366210938
+            },
+            {
+                "word": "richtigen",
+                "start": 152.66000366210938,
+                "end": 153.24000549316406
+            },
+            {
+                "word": "Zeit",
+                "start": 153.24000549316406,
+                "end": 153.83999633789062
+            },
+            {
+                "word": "beginnen.",
+                "start": 153.83999633789062,
+                "end": 154.66000061035157
+            }
+        ],
+        "translationEn": "Many people expect that trains, buses, or appointments start at exactly the right time.",
+        "translationVi": "Nhiều người mong đợi rằng tàu, xe buýt hoặc các cuộc hẹn sẽ bắt đầu đúng giờ."
+    },
+    {
+        "text": "Allerdings hat diese deutsche Charaktereigenschaft ein Problem.",
+        "start": 154.26000061035157,
+        "end": 161.33999328613282,
+        "wordTimings": [
+            {
+                "word": "Allerdings",
+                "start": 154.26000061035157,
+                "end": 156.25999450683594
+            },
+            {
+                "word": "hat",
+                "start": 156.25999450683594,
+                "end": 156.82000732421875
+            },
+            {
+                "word": "diese",
+                "start": 156.82000732421875,
+                "end": 157.4600067138672
+            },
+            {
+                "word": "deutsche",
+                "start": 157.4600067138672,
+                "end": 158.3000030517578
+            },
+            {
+                "word": "Charaktereigenschaft",
+                "start": 158.3000030517578,
+                "end": 159.9199981689453
+            },
+            {
+                "word": "ein",
+                "start": 159.9199981689453,
+                "end": 160.55999755859375
+            },
+            {
+                "word": "Problem.",
+                "start": 160.55999755859375,
+                "end": 161.33999328613282
+            }
+        ],
+        "translationEn": "However, this German character trait has a problem.",
+        "translationVi": "Tuy nhiên, đặc điểm tính cách của người Đức này có một vấn đề."
+    },
+    {
+        "text": "Sie passt nicht zur Deutschen Bahn.",
+        "start": 162.22000732421876,
+        "end": 165.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 162.22000732421876,
+                "end": 162.55999755859375
+            },
+            {
+                "word": "passt",
+                "start": 162.55999755859375,
+                "end": 162.9199981689453
+            },
+            {
+                "word": "nicht",
+                "start": 162.9199981689453,
+                "end": 163.4199981689453
+            },
+            {
+                "word": "zur",
+                "start": 163.4199981689453,
+                "end": 164
+            },
+            {
+                "word": "Deutschen",
+                "start": 164,
+                "end": 164.5
+            },
+            {
+                "word": "Bahn.",
+                "start": 164.5,
+                "end": 165.0799987792969
+            }
+        ],
+        "translationEn": "She does not fit with Deutsche Bahn.",
+        "translationVi": "Cô ấy không phù hợp với Deutsche Bahn."
+    },
+    {
+        "text": "Die Deutsche Bahn ist leider bekannt dafür, dass sie ein Problem mit der Pünktlichkeit hat.",
+        "start": 165.73999633789063,
+        "end": 174.54000549316407,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 165.73999633789063,
+                "end": 166.05999755859375
+            },
+            {
+                "word": "Deutsche",
+                "start": 166.05999755859375,
+                "end": 166.5800018310547
+            },
+            {
+                "word": "Bahn",
+                "start": 166.5800018310547,
+                "end": 166.9199981689453
+            },
+            {
+                "word": "ist",
+                "start": 166.9199981689453,
+                "end": 167.55999755859375
+            },
+            {
+                "word": "leider",
+                "start": 167.55999755859375,
+                "end": 168.13999938964844
+            },
+            {
+                "word": "bekannt",
+                "start": 168.13999938964844,
+                "end": 168.6999969482422
+            },
+            {
+                "word": "dafür,",
+                "start": 168.6999969482422,
+                "end": 169.36000061035156
+            },
+            {
+                "word": "dass",
+                "start": 170.05999755859375,
+                "end": 170.33999633789062
+            },
+            {
+                "word": "sie",
+                "start": 170.33999633789062,
+                "end": 170.6199951171875
+            },
+            {
+                "word": "ein",
+                "start": 170.6199951171875,
+                "end": 171.0800018310547
+            },
+            {
+                "word": "Problem",
+                "start": 171.0800018310547,
+                "end": 171.94000244140625
+            },
+            {
+                "word": "mit",
+                "start": 171.94000244140625,
+                "end": 172.39999389648438
+            },
+            {
+                "word": "der",
+                "start": 172.39999389648438,
+                "end": 172.83999633789062
+            },
+            {
+                "word": "Pünktlichkeit",
+                "start": 172.83999633789062,
+                "end": 173.66000366210938
+            },
+            {
+                "word": "hat.",
+                "start": 173.66000366210938,
+                "end": 174.54000549316407
+            }
+        ],
+        "translationEn": "The German railway is unfortunately known for having a problem with punctuality.",
+        "translationVi": "Deutsche Bahn thật không may nổi tiếng với việc có vấn đề về độ đúng giờ."
+    },
+    {
+        "text": "Im Oktober 2025 hatte jeder zweite Fernzug in Deutschland Verspätung.",
+        "start": 175.22000732421876,
+        "end": 183.83999328613282,
+        "wordTimings": [
+            {
+                "word": "Im",
+                "start": 175.22000732421876,
+                "end": 175.67999267578125
+            },
+            {
+                "word": "Oktober",
+                "start": 175.67999267578125,
+                "end": 176.3000030517578
+            },
+            {
+                "word": "2025",
+                "start": 176.3000030517578,
+                "end": 178.39999389648438
+            },
+            {
+                "word": "hatte",
+                "start": 178.39999389648438,
+                "end": 179.02000427246094
+            },
+            {
+                "word": "jeder",
+                "start": 179.02000427246094,
+                "end": 179.67999267578125
+            },
+            {
+                "word": "zweite",
+                "start": 179.67999267578125,
+                "end": 180.55999755859375
+            },
+            {
+                "word": "Fernzug",
+                "start": 180.55999755859375,
+                "end": 181.36000061035156
+            },
+            {
+                "word": "in",
+                "start": 181.36000061035156,
+                "end": 182.82000732421875
+            },
+            {
+                "word": "Deutschland",
+                "start": 182.82000732421875,
+                "end": 182.82000732421875
+            },
+            {
+                "word": "Verspätung.",
+                "start": 182.82000732421875,
+                "end": 183.83999328613282
+            }
+        ],
+        "translationEn": "In October 2025, every second long-distance train in Germany was delayed.",
+        "translationVi": "Vào tháng 10 năm 2025, mỗi chuyến tàu xa ở Đức đều bị trễ một nửa."
+    },
+    {
+        "text": "Grund dafür sind viele Baustellen und das marode, also kaputte Schienennetz.",
+        "start": 184.23999633789063,
+        "end": 193.83999328613282,
+        "wordTimings": [
+            {
+                "word": "Grund",
+                "start": 184.23999633789063,
+                "end": 185.0399932861328
+            },
+            {
+                "word": "dafür",
+                "start": 185.0399932861328,
+                "end": 185.89999389648438
+            },
+            {
+                "word": "sind",
+                "start": 185.89999389648438,
+                "end": 186.6999969482422
+            },
+            {
+                "word": "viele",
+                "start": 186.6999969482422,
+                "end": 187.25999450683594
+            },
+            {
+                "word": "Baustellen",
+                "start": 187.25999450683594,
+                "end": 188.16000366210938
+            },
+            {
+                "word": "und",
+                "start": 188.16000366210938,
+                "end": 189.32000732421875
+            },
+            {
+                "word": "das",
+                "start": 189.32000732421875,
+                "end": 189.9199981689453
+            },
+            {
+                "word": "marode,",
+                "start": 189.9199981689453,
+                "end": 190.5800018310547
+            },
+            {
+                "word": "also",
+                "start": 191.05999755859375,
+                "end": 192.22000122070312
+            },
+            {
+                "word": "kaputte",
+                "start": 192.22000122070312,
+                "end": 192.4199981689453
+            },
+            {
+                "word": "Schienennetz.",
+                "start": 192.4199981689453,
+                "end": 193.83999328613282
+            }
+        ],
+        "translationEn": "The reason for this are many construction sites and the dilapidated, that is, broken railway network.",
+        "translationVi": "Nguyên nhân là do nhiều công trường xây dựng và mạng lưới đường sắt hư hỏng, tức là bị hỏng."
+    },
+    {
+        "text": "Ein weiteres Stereotyp ist, dass Deutsche sehr ernst sind und nicht viel lachen.",
+        "start": 194.76000061035157,
+        "end": 203.12000732421876,
+        "wordTimings": [
+            {
+                "word": "Ein",
+                "start": 194.76000061035157,
+                "end": 195.24000549316406
+            },
+            {
+                "word": "weiteres",
+                "start": 195.24000549316406,
+                "end": 196.0800018310547
+            },
+            {
+                "word": "Stereotyp",
+                "start": 196.0800018310547,
+                "end": 196.94000244140625
+            },
+            {
+                "word": "ist,",
+                "start": 196.94000244140625,
+                "end": 197.32000732421875
+            },
+            {
+                "word": "dass",
+                "start": 197.89999389648438,
+                "end": 198.1199951171875
+            },
+            {
+                "word": "Deutsche",
+                "start": 198.1199951171875,
+                "end": 198.6199951171875
+            },
+            {
+                "word": "sehr",
+                "start": 198.6199951171875,
+                "end": 199.9600067138672
+            },
+            {
+                "word": "ernst",
+                "start": 199.9600067138672,
+                "end": 200.47999572753906
+            },
+            {
+                "word": "sind",
+                "start": 200.47999572753906,
+                "end": 200.97999572753906
+            },
+            {
+                "word": "und",
+                "start": 200.97999572753906,
+                "end": 201.67999267578125
+            },
+            {
+                "word": "nicht",
+                "start": 201.67999267578125,
+                "end": 202.0399932861328
+            },
+            {
+                "word": "viel",
+                "start": 202.0399932861328,
+                "end": 202.4600067138672
+            },
+            {
+                "word": "lachen.",
+                "start": 202.4600067138672,
+                "end": 203.12000732421876
+            }
+        ],
+        "translationEn": "Another stereotype is that Germans are very serious and don't laugh much.",
+        "translationVi": "Một khuôn mẫu khác là người Đức rất nghiêm túc và không hay cười nhiều."
+    },
+    {
+        "text": "Viele Besucher sagen, Deutsche seien höflich, aber distanziert.",
+        "start": 203.8600067138672,
+        "end": 210.74000244140626,
+        "wordTimings": [
+            {
+                "word": "Viele",
+                "start": 203.8600067138672,
+                "end": 204.25999450683594
+            },
+            {
+                "word": "Besucher",
+                "start": 204.25999450683594,
+                "end": 205.05999755859375
+            },
+            {
+                "word": "sagen,",
+                "start": 205.05999755859375,
+                "end": 205.67999267578125
+            },
+            {
+                "word": "Deutsche",
+                "start": 206.66000366210938,
+                "end": 206.66000366210938
+            },
+            {
+                "word": "seien",
+                "start": 206.66000366210938,
+                "end": 207.44000244140625
+            },
+            {
+                "word": "höflich,",
+                "start": 207.44000244140625,
+                "end": 208.27999877929688
+            },
+            {
+                "word": "aber",
+                "start": 209.02000427246094,
+                "end": 209.33999633789062
+            },
+            {
+                "word": "distanziert.",
+                "start": 209.33999633789062,
+                "end": 210.74000244140626
+            }
+        ],
+        "translationEn": "Many visitors say that Germans are polite but distant.",
+        "translationVi": "Nhiều du khách nói rằng người Đức lịch sự nhưng xa cách."
+    },
+    {
+        "text": "Auch dieses Bild stimmt nur teilweise.",
+        "start": 210.34000244140626,
+        "end": 215.54000549316407,
+        "wordTimings": [
+            {
+                "word": "Auch",
+                "start": 210.34000244140626,
+                "end": 211.72000122070312
+            },
+            {
+                "word": "dieses",
+                "start": 211.72000122070312,
+                "end": 212.39999389648438
+            },
+            {
+                "word": "Bild",
+                "start": 212.39999389648438,
+                "end": 212.8800048828125
+            },
+            {
+                "word": "stimmt",
+                "start": 212.8800048828125,
+                "end": 213.72000122070312
+            },
+            {
+                "word": "nur",
+                "start": 213.72000122070312,
+                "end": 214.55999755859375
+            },
+            {
+                "word": "teilweise.",
+                "start": 214.55999755859375,
+                "end": 215.54000549316407
+            }
+        ],
+        "translationEn": "This image is only partially correct.",
+        "translationVi": "Cũng bức tranh này chỉ đúng một phần."
+    },
+    {
+        "text": "Es gibt Menschen, die ernst sind, aber auch viele, die gerne Witze machen oder fröhlich sind.",
+        "start": 216.23999633789063,
+        "end": 226.10000305175782,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 216.23999633789063,
+                "end": 216.6999969482422
+            },
+            {
+                "word": "gibt",
+                "start": 216.6999969482422,
+                "end": 217.0800018310547
+            },
+            {
+                "word": "Menschen,",
+                "start": 217.0800018310547,
+                "end": 217.74000549316406
+            },
+            {
+                "word": "die",
+                "start": 218.25999450683594,
+                "end": 218.47999572753906
+            },
+            {
+                "word": "ernst",
+                "start": 218.47999572753906,
+                "end": 219
+            },
+            {
+                "word": "sind,",
+                "start": 219,
+                "end": 219.44000244140625
+            },
+            {
+                "word": "aber",
+                "start": 220.10000610351562,
+                "end": 220.27999877929688
+            },
+            {
+                "word": "auch",
+                "start": 220.27999877929688,
+                "end": 220.77999877929688
+            },
+            {
+                "word": "viele,",
+                "start": 220.77999877929688,
+                "end": 221.24000549316406
+            },
+            {
+                "word": "die",
+                "start": 221.94000244140625,
+                "end": 221.94000244140625
+            },
+            {
+                "word": "gerne",
+                "start": 221.94000244140625,
+                "end": 222.4600067138672
+            },
+            {
+                "word": "Witze",
+                "start": 222.4600067138672,
+                "end": 223.24000549316406
+            },
+            {
+                "word": "machen",
+                "start": 223.24000549316406,
+                "end": 223.6999969482422
+            },
+            {
+                "word": "oder",
+                "start": 223.6999969482422,
+                "end": 224.67999267578125
+            },
+            {
+                "word": "fröhlich",
+                "start": 224.67999267578125,
+                "end": 225.3800048828125
+            },
+            {
+                "word": "sind.",
+                "start": 225.3800048828125,
+                "end": 226.10000305175782
+            }
+        ],
+        "translationEn": "There are people who are serious, but also many who like to joke or are cheerful.",
+        "translationVi": "Có những người nghiêm túc, nhưng cũng có nhiều người thích đùa hoặc vui vẻ."
+    },
+    {
+        "text": "Oft braucht man in Deutschland einfach etwas Zeit, bis man jemanden gut kennt.",
+        "start": 226.8600067138672,
+        "end": 235.40000610351564,
+        "wordTimings": [
+            {
+                "word": "Oft",
+                "start": 226.8600067138672,
+                "end": 227.4199981689453
+            },
+            {
+                "word": "braucht",
+                "start": 227.4199981689453,
+                "end": 227.94000244140625
+            },
+            {
+                "word": "man",
+                "start": 227.94000244140625,
+                "end": 228.55999755859375
+            },
+            {
+                "word": "in",
+                "start": 228.55999755859375,
+                "end": 228.8800048828125
+            },
+            {
+                "word": "Deutschland",
+                "start": 228.8800048828125,
+                "end": 229.5800018310547
+            },
+            {
+                "word": "einfach",
+                "start": 229.5800018310547,
+                "end": 230.5399932861328
+            },
+            {
+                "word": "etwas",
+                "start": 230.5399932861328,
+                "end": 231.36000061035156
+            },
+            {
+                "word": "Zeit,",
+                "start": 231.36000061035156,
+                "end": 231.89999389648438
+            },
+            {
+                "word": "bis",
+                "start": 232.60000610351562,
+                "end": 232.77999877929688
+            },
+            {
+                "word": "man",
+                "start": 232.77999877929688,
+                "end": 233.25999450683594
+            },
+            {
+                "word": "jemanden",
+                "start": 233.25999450683594,
+                "end": 234.25999450683594
+            },
+            {
+                "word": "gut",
+                "start": 234.25999450683594,
+                "end": 234.75999450683594
+            },
+            {
+                "word": "kennt.",
+                "start": 234.75999450683594,
+                "end": 235.40000610351564
+            }
+        ],
+        "translationEn": "Often in Germany, it simply takes some time to get to know someone well.",
+        "translationVi": "Thường thì ở Đức, người ta cần một chút thời gian để hiểu rõ về nhau."
+    },
+    {
+        "text": "Danach öffnen sich viele Menschen und sind herzlich.",
+        "start": 236.3600067138672,
+        "end": 242.3,
+        "wordTimings": [
+            {
+                "word": "Danach",
+                "start": 236.3600067138672,
+                "end": 237.5800018310547
+            },
+            {
+                "word": "öffnen",
+                "start": 237.5800018310547,
+                "end": 238.33999633789062
+            },
+            {
+                "word": "sich",
+                "start": 238.33999633789062,
+                "end": 239.0800018310547
+            },
+            {
+                "word": "viele",
+                "start": 239.0800018310547,
+                "end": 239.44000244140625
+            },
+            {
+                "word": "Menschen",
+                "start": 239.44000244140625,
+                "end": 240.0399932861328
+            },
+            {
+                "word": "und",
+                "start": 240.0399932861328,
+                "end": 240.94000244140625
+            },
+            {
+                "word": "sind",
+                "start": 240.94000244140625,
+                "end": 241.22000122070312
+            },
+            {
+                "word": "herzlich.",
+                "start": 241.22000122070312,
+                "end": 242.3
+            }
+        ],
+        "translationEn": "Afterwards, many people open up and are warm-hearted.",
+        "translationVi": "Sau đó, nhiều người mở lòng và rất thân thiện."
+    },
+    {
+        "text": "Das heißt aber nicht, dass Deutsche unfreundlich sind.",
+        "start": 242.9,
+        "end": 247.60000305175782,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 242.9,
+                "end": 243.27999877929688
+            },
+            {
+                "word": "heißt",
+                "start": 243.27999877929688,
+                "end": 243.6199951171875
+            },
+            {
+                "word": "aber",
+                "start": 243.6199951171875,
+                "end": 244.1199951171875
+            },
+            {
+                "word": "nicht,",
+                "start": 244.1199951171875,
+                "end": 244.52000427246094
+            },
+            {
+                "word": "dass",
+                "start": 244.83999633789062,
+                "end": 245.0399932861328
+            },
+            {
+                "word": "Deutsche",
+                "start": 245.0399932861328,
+                "end": 245.60000610351562
+            },
+            {
+                "word": "unfreundlich",
+                "start": 245.60000610351562,
+                "end": 246.89999389648438
+            },
+            {
+                "word": "sind.",
+                "start": 246.89999389648438,
+                "end": 247.60000305175782
+            }
+        ],
+        "translationEn": "That doesn't mean that Germans are unfriendly.",
+        "translationVi": "Điều đó không có nghĩa là người Đức không thân thiện."
+    },
+    {
+        "text": "Es ist nur eine andere Art, mit neuen Personen umzugehen.",
+        "start": 248.14000549316407,
+        "end": 254.43999938964845,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 248.14000549316407,
+                "end": 248.47999572753906
+            },
+            {
+                "word": "ist",
+                "start": 248.47999572753906,
+                "end": 248.75999450683594
+            },
+            {
+                "word": "nur",
+                "start": 248.75999450683594,
+                "end": 249.16000366210938
+            },
+            {
+                "word": "eine",
+                "start": 249.16000366210938,
+                "end": 249.83999633789062
+            },
+            {
+                "word": "andere",
+                "start": 249.83999633789062,
+                "end": 250.5800018310547
+            },
+            {
+                "word": "Art,",
+                "start": 250.5800018310547,
+                "end": 251.1199951171875
+            },
+            {
+                "word": "mit",
+                "start": 251.77999877929688,
+                "end": 251.86000061035156
+            },
+            {
+                "word": "neuen",
+                "start": 251.86000061035156,
+                "end": 252.4600067138672
+            },
+            {
+                "word": "Personen",
+                "start": 252.4600067138672,
+                "end": 253.10000610351562
+            },
+            {
+                "word": "umzugehen.",
+                "start": 253.10000610351562,
+                "end": 254.43999938964845
+            }
+        ],
+        "translationEn": "It's just a different way of dealing with new people.",
+        "translationVi": "Đó chỉ là một cách khác để đối xử với những người mới."
+    },
+    {
+        "text": "Gibt es also deutschen Humor?",
+        "start": 255.34000244140626,
+        "end": 258.24000244140626,
+        "wordTimings": [
+            {
+                "word": "Gibt",
+                "start": 255.34000244140626,
+                "end": 255.6999969482422
+            },
+            {
+                "word": "es",
+                "start": 255.6999969482422,
+                "end": 256.05999755859375
+            },
+            {
+                "word": "also",
+                "start": 256.05999755859375,
+                "end": 256.7200012207031
+            },
+            {
+                "word": "deutschen",
+                "start": 256.7200012207031,
+                "end": 257.2200012207031
+            },
+            {
+                "word": "Humor?",
+                "start": 257.2200012207031,
+                "end": 258.24000244140626
+            }
+        ],
+        "translationEn": "Is there such a thing as German humor?",
+        "translationVi": "Có phải là có khiếu hài hước của người Đức không?"
+    },
+    {
+        "text": "Ich sage ja.",
+        "start": 258.4,
+        "end": 260.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 258.4,
+                "end": 259.0199890136719
+            },
+            {
+                "word": "sage",
+                "start": 259.0199890136719,
+                "end": 259.44000244140625
+            },
+            {
+                "word": "ja.",
+                "start": 259.44000244140625,
+                "end": 260.50001220703126
+            }
+        ],
+        "translationEn": "I say yes.",
+        "translationVi": "Tôi đồng ý."
+    },
+    {
+        "text": "Ich kann über Kabarettisten wie Jochen Malmsheimer oder L'Oréal wirklich Tränen lachen.",
+        "start": 260.1000122070312,
+        "end": 269.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 260.1000122070312,
+                "end": 261.3399963378906
+            },
+            {
+                "word": "kann",
+                "start": 261.3399963378906,
+                "end": 261.70001220703125
+            },
+            {
+                "word": "über",
+                "start": 261.70001220703125,
+                "end": 262.17999267578125
+            },
+            {
+                "word": "Kabarettisten",
+                "start": 262.17999267578125,
+                "end": 263.29998779296875
+            },
+            {
+                "word": "wie",
+                "start": 263.29998779296875,
+                "end": 264.0799865722656
+            },
+            {
+                "word": "Jochen",
+                "start": 264.0799865722656,
+                "end": 264.5400085449219
+            },
+            {
+                "word": "Malmsheimer",
+                "start": 264.5400085449219,
+                "end": 265.4599914550781
+            },
+            {
+                "word": "oder",
+                "start": 265.4599914550781,
+                "end": 266.239990234375
+            },
+            {
+                "word": "L'Oréal",
+                "start": 266.6000061035156,
+                "end": 266.8800048828125
+            },
+            {
+                "word": "wirklich",
+                "start": 266.8800048828125,
+                "end": 268.0199890136719
+            },
+            {
+                "word": "Tränen",
+                "start": 268.0199890136719,
+                "end": 268.5199890136719
+            },
+            {
+                "word": "lachen.",
+                "start": 268.5199890136719,
+                "end": 269.1999938964844
+            }
+        ],
+        "translationEn": "I can really laugh tears over cabaret artists like Jochen Malmsheimer or L'Oréal.",
+        "translationVi": "Tôi thực sự có thể cười đến rơi nước mắt về những nghệ sĩ hài như Jochen Malmsheimer hoặc L'Oréal."
+    },
+    {
+        "text": "Kommen wir dazu, wie Deutsche aussehen.",
+        "start": 270.1999877929687,
+        "end": 273.75999145507814,
+        "wordTimings": [
+            {
+                "word": "Kommen",
+                "start": 270.1999877929687,
+                "end": 270.5400085449219
+            },
+            {
+                "word": "wir",
+                "start": 270.5400085449219,
+                "end": 270.8800048828125
+            },
+            {
+                "word": "dazu,",
+                "start": 270.8800048828125,
+                "end": 271.4800109863281
+            },
+            {
+                "word": "wie",
+                "start": 271.94000244140625,
+                "end": 271.94000244140625
+            },
+            {
+                "word": "Deutsche",
+                "start": 271.94000244140625,
+                "end": 272.5799865722656
+            },
+            {
+                "word": "aussehen.",
+                "start": 272.5799865722656,
+                "end": 273.75999145507814
+            }
+        ],
+        "translationEn": "Let's talk about what Germans look like.",
+        "translationVi": "Hãy nói về cách người Đức trông như thế nào."
+    },
+    {
+        "text": "Denkst Du an Lederhose, Dirndl und Bierkrug?",
+        "start": 274.29999389648435,
+        "end": 279.6599853515625,
+        "wordTimings": [
+            {
+                "word": "Denkst",
+                "start": 274.29999389648435,
+                "end": 274.82000732421875
+            },
+            {
+                "word": "Du",
+                "start": 274.82000732421875,
+                "end": 275.05999755859375
+            },
+            {
+                "word": "an",
+                "start": 275.05999755859375,
+                "end": 275.7799987792969
+            },
+            {
+                "word": "Lederhose,",
+                "start": 275.7799987792969,
+                "end": 276.82000732421875
+            },
+            {
+                "word": "Dirndl",
+                "start": 277.5,
+                "end": 278
+            },
+            {
+                "word": "und",
+                "start": 278,
+                "end": 278.739990234375
+            },
+            {
+                "word": "Bierkrug?",
+                "start": 278.739990234375,
+                "end": 279.6599853515625
+            }
+        ],
+        "translationEn": "Are you thinking of lederhosen, dirndls, and beer mugs?",
+        "translationVi": "Bạn có nghĩ đến quần da, váy Dirndl và cốc bia không?"
+    },
+    {
+        "text": "Viele Touristen denken noch heute, dass alle Deutschen so aussehen und jeden Tag Bier trinken.",
+        "start": 279.91998901367185,
+        "end": 289.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Viele",
+                "start": 279.91998901367185,
+                "end": 280.7799987792969
+            },
+            {
+                "word": "Touristen",
+                "start": 280.7799987792969,
+                "end": 281.6600036621094
+            },
+            {
+                "word": "denken",
+                "start": 281.6600036621094,
+                "end": 282.4200134277344
+            },
+            {
+                "word": "noch",
+                "start": 282.4200134277344,
+                "end": 283.05999755859375
+            },
+            {
+                "word": "heute,",
+                "start": 283.05999755859375,
+                "end": 283.6600036621094
+            },
+            {
+                "word": "dass",
+                "start": 284.239990234375,
+                "end": 284.5199890136719
+            },
+            {
+                "word": "alle",
+                "start": 284.5199890136719,
+                "end": 285.0199890136719
+            },
+            {
+                "word": "Deutschen",
+                "start": 285.0199890136719,
+                "end": 285.70001220703125
+            },
+            {
+                "word": "so",
+                "start": 285.70001220703125,
+                "end": 286.44000244140625
+            },
+            {
+                "word": "aussehen",
+                "start": 286.44000244140625,
+                "end": 286.9800109863281
+            },
+            {
+                "word": "und",
+                "start": 286.9800109863281,
+                "end": 287.94000244140625
+            },
+            {
+                "word": "jeden",
+                "start": 287.94000244140625,
+                "end": 288.3599853515625
+            },
+            {
+                "word": "Tag",
+                "start": 288.3599853515625,
+                "end": 288.8399963378906
+            },
+            {
+                "word": "Bier",
+                "start": 288.8399963378906,
+                "end": 289.2200012207031
+            },
+            {
+                "word": "trinken.",
+                "start": 289.2200012207031,
+                "end": 289.9600036621094
+            }
+        ],
+        "translationEn": "Many tourists still think today that all Germans look like this and drink beer every day.",
+        "translationVi": "Nhiều du khách vẫn nghĩ rằng tất cả người Đức đều trông như vậy và uống bia mỗi ngày."
+    },
+    {
+        "text": "Dabei ist die Lederhose eine Tradition aus Bayern, also aus dem Süden des Landes.",
+        "start": 290.2800048828125,
+        "end": 299.97999267578126,
+        "wordTimings": [
+            {
+                "word": "Dabei",
+                "start": 290.2800048828125,
+                "end": 291.1600036621094
+            },
+            {
+                "word": "ist",
+                "start": 291.1600036621094,
+                "end": 291.7799987792969
+            },
+            {
+                "word": "die",
+                "start": 291.7799987792969,
+                "end": 292.3599853515625
+            },
+            {
+                "word": "Lederhose",
+                "start": 292.3599853515625,
+                "end": 293.05999755859375
+            },
+            {
+                "word": "eine",
+                "start": 293.05999755859375,
+                "end": 293.9599914550781
+            },
+            {
+                "word": "Tradition",
+                "start": 293.9599914550781,
+                "end": 294.7799987792969
+            },
+            {
+                "word": "aus",
+                "start": 294.7799987792969,
+                "end": 295.5199890136719
+            },
+            {
+                "word": "Bayern,",
+                "start": 295.5199890136719,
+                "end": 296.0799865722656
+            },
+            {
+                "word": "also",
+                "start": 296.6600036621094,
+                "end": 297.1199951171875
+            },
+            {
+                "word": "aus",
+                "start": 297.1199951171875,
+                "end": 297.8599853515625
+            },
+            {
+                "word": "dem",
+                "start": 297.8599853515625,
+                "end": 298.4599914550781
+            },
+            {
+                "word": "Süden",
+                "start": 298.4599914550781,
+                "end": 298.70001220703125
+            },
+            {
+                "word": "des",
+                "start": 298.70001220703125,
+                "end": 299.2200012207031
+            },
+            {
+                "word": "Landes.",
+                "start": 299.2200012207031,
+                "end": 299.97999267578126
+            }
+        ],
+        "translationEn": "The leather trousers are a tradition from Bavaria, which is in the southern part of the country.",
+        "translationVi": "Trong đó, quần da là một truyền thống từ Bayern, tức là từ miền Nam của đất nước."
+    },
+    {
+        "text": "In vielen anderen deutschen Regionen trägt niemand solche Kleidung.",
+        "start": 300.6000122070312,
+        "end": 307.039990234375,
+        "wordTimings": [
+            {
+                "word": "In",
+                "start": 300.6000122070312,
+                "end": 301.0199890136719
+            },
+            {
+                "word": "vielen",
+                "start": 301.0199890136719,
+                "end": 301.44000244140625
+            },
+            {
+                "word": "anderen",
+                "start": 301.44000244140625,
+                "end": 302.20001220703125
+            },
+            {
+                "word": "deutschen",
+                "start": 302.20001220703125,
+                "end": 302.8399963378906
+            },
+            {
+                "word": "Regionen",
+                "start": 302.8399963378906,
+                "end": 303.5799865722656
+            },
+            {
+                "word": "trägt",
+                "start": 303.5799865722656,
+                "end": 304.55999755859375
+            },
+            {
+                "word": "niemand",
+                "start": 304.55999755859375,
+                "end": 305.4200134277344
+            },
+            {
+                "word": "solche",
+                "start": 305.4200134277344,
+                "end": 306.2200012207031
+            },
+            {
+                "word": "Kleidung.",
+                "start": 306.2200012207031,
+                "end": 307.039990234375
+            }
+        ],
+        "translationEn": "In many other German regions, no one wears such clothing.",
+        "translationVi": "Ở nhiều vùng khác của Đức, không ai mặc những bộ quần áo như vậy."
+    },
+    {
+        "text": "Trotzdem ist die Lederhose weltweit ein Symbol für Deutschland geworden.",
+        "start": 307.7399963378906,
+        "end": 315.3199890136719,
+        "wordTimings": [
+            {
+                "word": "Trotzdem",
+                "start": 307.7399963378906,
+                "end": 308.5199890136719
+            },
+            {
+                "word": "ist",
+                "start": 308.5199890136719,
+                "end": 309.17999267578125
+            },
+            {
+                "word": "die",
+                "start": 309.17999267578125,
+                "end": 309.70001220703125
+            },
+            {
+                "word": "Lederhose",
+                "start": 309.70001220703125,
+                "end": 310.6000061035156
+            },
+            {
+                "word": "weltweit",
+                "start": 310.6000061035156,
+                "end": 311.94000244140625
+            },
+            {
+                "word": "ein",
+                "start": 311.94000244140625,
+                "end": 312.6400146484375
+            },
+            {
+                "word": "Symbol",
+                "start": 312.6400146484375,
+                "end": 313.1400146484375
+            },
+            {
+                "word": "für",
+                "start": 313.1400146484375,
+                "end": 313.67999267578125
+            },
+            {
+                "word": "Deutschland",
+                "start": 313.67999267578125,
+                "end": 314.3800048828125
+            },
+            {
+                "word": "geworden.",
+                "start": 314.3800048828125,
+                "end": 315.3199890136719
+            }
+        ],
+        "translationEn": "Nevertheless, the leather trousers have become a symbol of Germany worldwide.",
+        "translationVi": "Tuy nhiên, quần da đã trở thành biểu tượng cho nước Đức trên toàn thế giới."
+    },
+    {
+        "text": "Es ist ein gutes Beispiel dafür, wie ein kleiner Teil eines Landes plötzlich für das ganze Land steht.",
+        "start": 314.91998901367185,
+        "end": 326.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 314.91998901367185,
+                "end": 316.3999938964844
+            },
+            {
+                "word": "ist",
+                "start": 316.3999938964844,
+                "end": 316.760009765625
+            },
+            {
+                "word": "ein",
+                "start": 316.760009765625,
+                "end": 317.0799865722656
+            },
+            {
+                "word": "gutes",
+                "start": 317.0799865722656,
+                "end": 317.6199951171875
+            },
+            {
+                "word": "Beispiel",
+                "start": 317.6199951171875,
+                "end": 318.2200012207031
+            },
+            {
+                "word": "dafür,",
+                "start": 318.2200012207031,
+                "end": 318.8999938964844
+            },
+            {
+                "word": "wie",
+                "start": 319.239990234375,
+                "end": 319.5400085449219
+            },
+            {
+                "word": "ein",
+                "start": 319.5400085449219,
+                "end": 319.8800048828125
+            },
+            {
+                "word": "kleiner",
+                "start": 319.8800048828125,
+                "end": 320.6000061035156
+            },
+            {
+                "word": "Teil",
+                "start": 320.6000061035156,
+                "end": 321.0799865722656
+            },
+            {
+                "word": "eines",
+                "start": 321.0799865722656,
+                "end": 321.5799865722656
+            },
+            {
+                "word": "Landes",
+                "start": 321.5799865722656,
+                "end": 322.17999267578125
+            },
+            {
+                "word": "plötzlich",
+                "start": 322.17999267578125,
+                "end": 323.3399963378906
+            },
+            {
+                "word": "für",
+                "start": 323.3399963378906,
+                "end": 324.4599914550781
+            },
+            {
+                "word": "das",
+                "start": 324.4599914550781,
+                "end": 324.739990234375
+            },
+            {
+                "word": "ganze",
+                "start": 324.739990234375,
+                "end": 325.3599853515625
+            },
+            {
+                "word": "Land",
+                "start": 325.3599853515625,
+                "end": 325.6600036621094
+            },
+            {
+                "word": "steht.",
+                "start": 325.6600036621094,
+                "end": 326.4199951171875
+            }
+        ],
+        "translationEn": "It is a good example of how a small part of a country suddenly represents the whole country.",
+        "translationVi": "Đó là một ví dụ tốt về cách một phần nhỏ của một đất nước bỗng nhiên đại diện cho toàn bộ đất nước."
+    },
+    {
+        "text": "Kurios ist, dass manche Menschen aus dem Ausland bei ihrem Besuch in Berlin enttäuscht sind, weil dort kaum jemand eine Lederhose trägt.",
+        "start": 327.3599914550781,
+        "end": 340.8400085449219,
+        "wordTimings": [
+            {
+                "word": "Kurios",
+                "start": 327.3599914550781,
+                "end": 328
+            },
+            {
+                "word": "ist,",
+                "start": 328,
+                "end": 328.3800048828125
+            },
+            {
+                "word": "dass",
+                "start": 328.7799987792969,
+                "end": 329
+            },
+            {
+                "word": "manche",
+                "start": 329,
+                "end": 329.4599914550781
+            },
+            {
+                "word": "Menschen",
+                "start": 329.4599914550781,
+                "end": 330.0400085449219
+            },
+            {
+                "word": "aus",
+                "start": 330.0400085449219,
+                "end": 330.6400146484375
+            },
+            {
+                "word": "dem",
+                "start": 330.6400146484375,
+                "end": 330.8800048828125
+            },
+            {
+                "word": "Ausland",
+                "start": 330.8800048828125,
+                "end": 331.5400085449219
+            },
+            {
+                "word": "bei",
+                "start": 331.5400085449219,
+                "end": 332.17999267578125
+            },
+            {
+                "word": "ihrem",
+                "start": 332.17999267578125,
+                "end": 332.6000061035156
+            },
+            {
+                "word": "Besuch",
+                "start": 332.6000061035156,
+                "end": 333.1600036621094
+            },
+            {
+                "word": "in",
+                "start": 333.1600036621094,
+                "end": 333.5400085449219
+            },
+            {
+                "word": "Berlin",
+                "start": 333.5400085449219,
+                "end": 334.0799865722656
+            },
+            {
+                "word": "enttäuscht",
+                "start": 334.0799865722656,
+                "end": 335.1199951171875
+            },
+            {
+                "word": "sind,",
+                "start": 335.1199951171875,
+                "end": 335.5799865722656
+            },
+            {
+                "word": "weil",
+                "start": 336.4599914550781,
+                "end": 336.4599914550781
+            },
+            {
+                "word": "dort",
+                "start": 336.4599914550781,
+                "end": 336.94000244140625
+            },
+            {
+                "word": "kaum",
+                "start": 336.94000244140625,
+                "end": 337.4200134277344
+            },
+            {
+                "word": "jemand",
+                "start": 337.4200134277344,
+                "end": 338.1600036621094
+            },
+            {
+                "word": "eine",
+                "start": 338.1600036621094,
+                "end": 338.9200134277344
+            },
+            {
+                "word": "Lederhose",
+                "start": 338.9200134277344,
+                "end": 339.79998779296875
+            },
+            {
+                "word": "trägt.",
+                "start": 339.79998779296875,
+                "end": 340.8400085449219
+            }
+        ],
+        "translationEn": "It is curious that some people from abroad are disappointed during their visit to Berlin because hardly anyone wears lederhosen there.",
+        "translationVi": "Điều kỳ lạ là một số người từ nước ngoài khi đến thăm Berlin lại cảm thấy thất vọng vì ở đó hầu như không ai mặc quần da."
+    },
+    {
+        "text": "Sie hatten etwas anderes erwartet.",
+        "start": 341.3599914550781,
+        "end": 344.6599853515625,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 341.3599914550781,
+                "end": 341.8399963378906
+            },
+            {
+                "word": "hatten",
+                "start": 341.8399963378906,
+                "end": 342.2200012207031
+            },
+            {
+                "word": "etwas",
+                "start": 342.2200012207031,
+                "end": 343
+            },
+            {
+                "word": "anderes",
+                "start": 343,
+                "end": 343.760009765625
+            },
+            {
+                "word": "erwartet.",
+                "start": 343.760009765625,
+                "end": 344.6599853515625
+            }
+        ],
+        "translationEn": "They had expected something different.",
+        "translationVi": "Họ đã mong đợi điều gì đó khác."
+    },
+    {
+        "text": "Übrigens trinken die Menschen in vielen Regionen Deutschlands auch viel lieber Wein als Bier.",
+        "start": 344.2599853515625,
+        "end": 355.560009765625,
+        "wordTimings": [
+            {
+                "word": "Übrigens",
+                "start": 344.2599853515625,
+                "end": 346.5799865722656
+            },
+            {
+                "word": "trinken",
+                "start": 346.5799865722656,
+                "end": 347.20001220703125
+            },
+            {
+                "word": "die",
+                "start": 347.20001220703125,
+                "end": 347.79998779296875
+            },
+            {
+                "word": "Menschen",
+                "start": 347.79998779296875,
+                "end": 348.29998779296875
+            },
+            {
+                "word": "in",
+                "start": 348.29998779296875,
+                "end": 349.20001220703125
+            },
+            {
+                "word": "vielen",
+                "start": 349.20001220703125,
+                "end": 349.760009765625
+            },
+            {
+                "word": "Regionen",
+                "start": 349.760009765625,
+                "end": 350.4800109863281
+            },
+            {
+                "word": "Deutschlands",
+                "start": 350.4800109863281,
+                "end": 351.5
+            },
+            {
+                "word": "auch",
+                "start": 351.5,
+                "end": 352.5
+            },
+            {
+                "word": "viel",
+                "start": 352.5,
+                "end": 353.1600036621094
+            },
+            {
+                "word": "lieber",
+                "start": 353.1600036621094,
+                "end": 353.5400085449219
+            },
+            {
+                "word": "Wein",
+                "start": 353.5400085449219,
+                "end": 354.3399963378906
+            },
+            {
+                "word": "als",
+                "start": 354.3399963378906,
+                "end": 355
+            },
+            {
+                "word": "Bier.",
+                "start": 355,
+                "end": 355.560009765625
+            }
+        ],
+        "translationEn": "By the way, people in many regions of Germany prefer to drink wine rather than beer.",
+        "translationVi": "Nhân tiện, người dân ở nhiều vùng của Đức cũng thích uống rượu vang hơn bia."
+    },
+    {
+        "text": "Das kommt einfach darauf an, wo Weinberge existieren und wo eher Hopfengärten.",
+        "start": 356.3400024414062,
+        "end": 365.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 356.3400024414062,
+                "end": 356.8399963378906
+            },
+            {
+                "word": "kommt",
+                "start": 356.8399963378906,
+                "end": 357.1400146484375
+            },
+            {
+                "word": "einfach",
+                "start": 357.1400146484375,
+                "end": 357.9599914550781
+            },
+            {
+                "word": "darauf",
+                "start": 357.9599914550781,
+                "end": 358.55999755859375
+            },
+            {
+                "word": "an,",
+                "start": 358.55999755859375,
+                "end": 359.0199890136719
+            },
+            {
+                "word": "wo",
+                "start": 359.6199951171875,
+                "end": 359.9800109863281
+            },
+            {
+                "word": "Weinberge",
+                "start": 359.9800109863281,
+                "end": 361.1400146484375
+            },
+            {
+                "word": "existieren",
+                "start": 361.1400146484375,
+                "end": 362.05999755859375
+            },
+            {
+                "word": "und",
+                "start": 362.05999755859375,
+                "end": 363
+            },
+            {
+                "word": "wo",
+                "start": 363,
+                "end": 363.5
+            },
+            {
+                "word": "eher",
+                "start": 363.5,
+                "end": 364.2799987792969
+            },
+            {
+                "word": "Hopfengärten.",
+                "start": 364.2799987792969,
+                "end": 365.50001220703126
+            }
+        ],
+        "translationEn": "It simply depends on where vineyards exist and where hop gardens are more common.",
+        "translationVi": "Điều đó hoàn toàn phụ thuộc vào nơi có vườn nho và nơi có vườn hoa bia."
+    },
+    {
+        "text": "Auch innerhalb Deutschlands gibt es Stereotype über bestimmte Regionen.",
+        "start": 365.1000122070312,
+        "end": 374.060009765625,
+        "wordTimings": [
+            {
+                "word": "Auch",
+                "start": 365.1000122070312,
+                "end": 366.9599914550781
+            },
+            {
+                "word": "innerhalb",
+                "start": 366.9599914550781,
+                "end": 367.7799987792969
+            },
+            {
+                "word": "Deutschlands",
+                "start": 367.7799987792969,
+                "end": 368.7200012207031
+            },
+            {
+                "word": "gibt",
+                "start": 368.7200012207031,
+                "end": 369.3800048828125
+            },
+            {
+                "word": "es",
+                "start": 369.3800048828125,
+                "end": 369.9800109863281
+            },
+            {
+                "word": "Stereotype",
+                "start": 369.9800109863281,
+                "end": 371
+            },
+            {
+                "word": "über",
+                "start": 371,
+                "end": 372.0400085449219
+            },
+            {
+                "word": "bestimmte",
+                "start": 372.0400085449219,
+                "end": 373
+            },
+            {
+                "word": "Regionen.",
+                "start": 373,
+                "end": 374.060009765625
+            }
+        ],
+        "translationEn": "There are also stereotypes about certain regions within Germany.",
+        "translationVi": "Cũng trong nước Đức có những khuôn mẫu về các vùng nhất định."
+    },
+    {
+        "text": "Zum Beispiel sagt man über Menschen aus Norddeutschland, dass sie ruhig und wenig gesprächig sind.",
+        "start": 374.6200012207031,
+        "end": 383.52000122070314,
+        "wordTimings": [
+            {
+                "word": "Zum",
+                "start": 374.6200012207031,
+                "end": 374.8800048828125
+            },
+            {
+                "word": "Beispiel",
+                "start": 374.8800048828125,
+                "end": 375.3800048828125
+            },
+            {
+                "word": "sagt",
+                "start": 375.3800048828125,
+                "end": 375.8399963378906
+            },
+            {
+                "word": "man",
+                "start": 375.8399963378906,
+                "end": 376.260009765625
+            },
+            {
+                "word": "über",
+                "start": 376.260009765625,
+                "end": 376.739990234375
+            },
+            {
+                "word": "Menschen",
+                "start": 376.739990234375,
+                "end": 377.260009765625
+            },
+            {
+                "word": "aus",
+                "start": 377.260009765625,
+                "end": 377.8399963378906
+            },
+            {
+                "word": "Norddeutschland,",
+                "start": 377.8399963378906,
+                "end": 378.94000244140625
+            },
+            {
+                "word": "dass",
+                "start": 379.55999755859375,
+                "end": 379.7799987792969
+            },
+            {
+                "word": "sie",
+                "start": 379.7799987792969,
+                "end": 380
+            },
+            {
+                "word": "ruhig",
+                "start": 380,
+                "end": 380.9800109863281
+            },
+            {
+                "word": "und",
+                "start": 380.9800109863281,
+                "end": 381.29998779296875
+            },
+            {
+                "word": "wenig",
+                "start": 381.29998779296875,
+                "end": 381.82000732421875
+            },
+            {
+                "word": "gesprächig",
+                "start": 381.82000732421875,
+                "end": 382.8599853515625
+            },
+            {
+                "word": "sind.",
+                "start": 382.8599853515625,
+                "end": 383.52000122070314
+            }
+        ],
+        "translationEn": "For example, it is said about people from Northern Germany that they are calm and not very talkative.",
+        "translationVi": "Chẳng hạn, người ta nói về những người từ miền Bắc nước Đức rằng họ điềm tĩnh và ít nói."
+    },
+    {
+        "text": "Über Menschen aus Süddeutschland sagt man, sie seien besonders gemütlich.",
+        "start": 384.29999389648435,
+        "end": 390.8199890136719,
+        "wordTimings": [
+            {
+                "word": "Über",
+                "start": 384.29999389648435,
+                "end": 384.6199951171875
+            },
+            {
+                "word": "Menschen",
+                "start": 384.6199951171875,
+                "end": 385.17999267578125
+            },
+            {
+                "word": "aus",
+                "start": 385.17999267578125,
+                "end": 385.7799987792969
+            },
+            {
+                "word": "Süddeutschland",
+                "start": 385.7799987792969,
+                "end": 386.79998779296875
+            },
+            {
+                "word": "sagt",
+                "start": 386.79998779296875,
+                "end": 387.3800048828125
+            },
+            {
+                "word": "man,",
+                "start": 387.3800048828125,
+                "end": 387.7200012207031
+            },
+            {
+                "word": "sie",
+                "start": 388.2200012207031,
+                "end": 388.4599914550781
+            },
+            {
+                "word": "seien",
+                "start": 388.4599914550781,
+                "end": 388.8599853515625
+            },
+            {
+                "word": "besonders",
+                "start": 388.8599853515625,
+                "end": 389.7799987792969
+            },
+            {
+                "word": "gemütlich.",
+                "start": 389.7799987792969,
+                "end": 390.8199890136719
+            }
+        ],
+        "translationEn": "People from Southern Germany are said to be particularly cozy.",
+        "translationVi": "Người ta nói rằng những người từ miền Nam nước Đức đặc biệt thoải mái."
+    },
+    {
+        "text": "Solche Vorurteile können unterhaltsam sein, wenn man sie nicht zu ernst nimmt.",
+        "start": 390.41998901367185,
+        "end": 399.78001098632814,
+        "wordTimings": [
+            {
+                "word": "Solche",
+                "start": 390.41998901367185,
+                "end": 392.79998779296875
+            },
+            {
+                "word": "Vorurteile",
+                "start": 392.79998779296875,
+                "end": 393.8399963378906
+            },
+            {
+                "word": "können",
+                "start": 393.8399963378906,
+                "end": 394.82000732421875
+            },
+            {
+                "word": "unterhaltsam",
+                "start": 394.82000732421875,
+                "end": 396.0199890136719
+            },
+            {
+                "word": "sein,",
+                "start": 396.0199890136719,
+                "end": 396.32000732421875
+            },
+            {
+                "word": "wenn",
+                "start": 396.9599914550781,
+                "end": 397.1600036621094
+            },
+            {
+                "word": "man",
+                "start": 397.1600036621094,
+                "end": 397.5199890136719
+            },
+            {
+                "word": "sie",
+                "start": 397.5199890136719,
+                "end": 397.7799987792969
+            },
+            {
+                "word": "nicht",
+                "start": 397.7799987792969,
+                "end": 398.17999267578125
+            },
+            {
+                "word": "zu",
+                "start": 398.17999267578125,
+                "end": 399.1600036621094
+            },
+            {
+                "word": "ernst",
+                "start": 399.1600036621094,
+                "end": 399.1600036621094
+            },
+            {
+                "word": "nimmt.",
+                "start": 399.1600036621094,
+                "end": 399.78001098632814
+            }
+        ],
+        "translationEn": "Such prejudices can be entertaining if one doesn't take them too seriously.",
+        "translationVi": "Những định kiến như vậy có thể thú vị nếu bạn không coi chúng quá nghiêm túc."
+    },
+    {
+        "text": "Problematisch werden sie, wenn Menschen andere nur nach solchen Bildern beurteilen.",
+        "start": 400.2599853515625,
+        "end": 408.02000122070314,
+        "wordTimings": [
+            {
+                "word": "Problematisch",
+                "start": 400.2599853515625,
+                "end": 401.32000732421875
+            },
+            {
+                "word": "werden",
+                "start": 401.32000732421875,
+                "end": 401.67999267578125
+            },
+            {
+                "word": "sie,",
+                "start": 401.67999267578125,
+                "end": 401.94000244140625
+            },
+            {
+                "word": "wenn",
+                "start": 402.760009765625,
+                "end": 402.760009765625
+            },
+            {
+                "word": "Menschen",
+                "start": 402.760009765625,
+                "end": 403.3800048828125
+            },
+            {
+                "word": "andere",
+                "start": 403.3800048828125,
+                "end": 404.20001220703125
+            },
+            {
+                "word": "nur",
+                "start": 404.20001220703125,
+                "end": 405.1199951171875
+            },
+            {
+                "word": "nach",
+                "start": 405.1199951171875,
+                "end": 405.70001220703125
+            },
+            {
+                "word": "solchen",
+                "start": 405.70001220703125,
+                "end": 406.2200012207031
+            },
+            {
+                "word": "Bildern",
+                "start": 406.2200012207031,
+                "end": 406.8399963378906
+            },
+            {
+                "word": "beurteilen.",
+                "start": 406.8399963378906,
+                "end": 408.02000122070314
+            }
+        ],
+        "translationEn": "They become problematic when people judge others solely based on such images.",
+        "translationVi": "Vấn đề xảy ra khi con người chỉ đánh giá người khác dựa trên những hình ảnh như vậy."
+    },
+    {
+        "text": "Viele Vorurteile entstehen, wenn man etwas nicht kennt oder wenn man Angst vor Neuem hat.",
+        "start": 409.2200073242187,
+        "end": 419.25999145507814,
+        "wordTimings": [
+            {
+                "word": "Viele",
+                "start": 409.2200073242187,
+                "end": 409.7200012207031
+            },
+            {
+                "word": "Vorurteile",
+                "start": 409.7200012207031,
+                "end": 410.8599853515625
+            },
+            {
+                "word": "entstehen,",
+                "start": 410.8599853515625,
+                "end": 411.8599853515625
+            },
+            {
+                "word": "wenn",
+                "start": 412.70001220703125,
+                "end": 412.7200012207031
+            },
+            {
+                "word": "man",
+                "start": 412.7200012207031,
+                "end": 413.1199951171875
+            },
+            {
+                "word": "etwas",
+                "start": 413.1199951171875,
+                "end": 413.67999267578125
+            },
+            {
+                "word": "nicht",
+                "start": 413.67999267578125,
+                "end": 414.3399963378906
+            },
+            {
+                "word": "kennt",
+                "start": 414.3399963378906,
+                "end": 414.8800048828125
+            },
+            {
+                "word": "oder",
+                "start": 414.8800048828125,
+                "end": 416.0400085449219
+            },
+            {
+                "word": "wenn",
+                "start": 416.0400085449219,
+                "end": 416.79998779296875
+            },
+            {
+                "word": "man",
+                "start": 416.79998779296875,
+                "end": 417.20001220703125
+            },
+            {
+                "word": "Angst",
+                "start": 417.20001220703125,
+                "end": 417.6600036621094
+            },
+            {
+                "word": "vor",
+                "start": 417.6600036621094,
+                "end": 418.20001220703125
+            },
+            {
+                "word": "Neuem",
+                "start": 418.20001220703125,
+                "end": 418.6000061035156
+            },
+            {
+                "word": "hat.",
+                "start": 418.6000061035156,
+                "end": 419.25999145507814
+            }
+        ],
+        "translationEn": "Many prejudices arise when one does not know something or when one is afraid of the new.",
+        "translationVi": "Nhiều định kiến xuất hiện khi người ta không biết điều gì đó hoặc khi người ta sợ hãi cái mới."
+    },
+    {
+        "text": "Deshalb ist es wichtig, andere Menschen kennenzulernen und mit ihnen zu sprechen.",
+        "start": 418.8599914550781,
+        "end": 427.7200134277344,
+        "wordTimings": [
+            {
+                "word": "Deshalb",
+                "start": 418.8599914550781,
+                "end": 420.7799987792969
+            },
+            {
+                "word": "ist",
+                "start": 420.7799987792969,
+                "end": 421.1000061035156
+            },
+            {
+                "word": "es",
+                "start": 421.1000061035156,
+                "end": 421.5400085449219
+            },
+            {
+                "word": "wichtig,",
+                "start": 421.5400085449219,
+                "end": 422.1600036621094
+            },
+            {
+                "word": "andere",
+                "start": 423.05999755859375,
+                "end": 423.05999755859375
+            },
+            {
+                "word": "Menschen",
+                "start": 423.05999755859375,
+                "end": 423.6600036621094
+            },
+            {
+                "word": "kennenzulernen",
+                "start": 423.6600036621094,
+                "end": 424.8599853515625
+            },
+            {
+                "word": "und",
+                "start": 424.8599853515625,
+                "end": 425.82000732421875
+            },
+            {
+                "word": "mit",
+                "start": 425.82000732421875,
+                "end": 426.2200012207031
+            },
+            {
+                "word": "ihnen",
+                "start": 426.2200012207031,
+                "end": 426.6400146484375
+            },
+            {
+                "word": "zu",
+                "start": 426.6400146484375,
+                "end": 427.4200134277344
+            },
+            {
+                "word": "sprechen.",
+                "start": 427.4200134277344,
+                "end": 427.7200134277344
+            }
+        ],
+        "translationEn": "Therefore, it is important to get to know other people and talk to them.",
+        "translationVi": "Vì vậy, điều quan trọng là gặp gỡ những người khác và nói chuyện với họ."
+    },
+    {
+        "text": "Immer wieder nutzen politische Gruppen negative Stereotype, um Menschen zu trennen und zu verletzen.",
+        "start": 428.660009765625,
+        "end": 438.7200134277344,
+        "wordTimings": [
+            {
+                "word": "Immer",
+                "start": 428.660009765625,
+                "end": 429.1199951171875
+            },
+            {
+                "word": "wieder",
+                "start": 429.1199951171875,
+                "end": 429.7200012207031
+            },
+            {
+                "word": "nutzen",
+                "start": 429.7200012207031,
+                "end": 430.6400146484375
+            },
+            {
+                "word": "politische",
+                "start": 430.6400146484375,
+                "end": 431.4599914550781
+            },
+            {
+                "word": "Gruppen",
+                "start": 431.4599914550781,
+                "end": 432.0400085449219
+            },
+            {
+                "word": "negative",
+                "start": 432.0400085449219,
+                "end": 433.3599853515625
+            },
+            {
+                "word": "Stereotype,",
+                "start": 433.3599853515625,
+                "end": 434.3999938964844
+            },
+            {
+                "word": "um",
+                "start": 435.260009765625,
+                "end": 435.3800048828125
+            },
+            {
+                "word": "Menschen",
+                "start": 435.3800048828125,
+                "end": 435.8800048828125
+            },
+            {
+                "word": "zu",
+                "start": 435.8800048828125,
+                "end": 436.8999938964844
+            },
+            {
+                "word": "trennen",
+                "start": 436.8999938964844,
+                "end": 436.8999938964844
+            },
+            {
+                "word": "und",
+                "start": 436.8999938964844,
+                "end": 437.6199951171875
+            },
+            {
+                "word": "zu",
+                "start": 437.6199951171875,
+                "end": 438.05999755859375
+            },
+            {
+                "word": "verletzen.",
+                "start": 438.05999755859375,
+                "end": 438.7200134277344
+            }
+        ],
+        "translationEn": "Political groups repeatedly use negative stereotypes to divide and hurt people.",
+        "translationVi": "Các nhóm chính trị thường xuyên sử dụng những khuôn mẫu tiêu cực để phân chia và làm tổn thương con người."
+    },
+    {
+        "text": "Heute versuchen viele Organisationen, Schulen und Projekte in Deutschland, über dieses Thema aufzuklären.",
+        "start": 439.44000854492185,
+        "end": 449.6599853515625,
+        "wordTimings": [
+            {
+                "word": "Heute",
+                "start": 439.44000854492185,
+                "end": 440.0199890136719
+            },
+            {
+                "word": "versuchen",
+                "start": 440.0199890136719,
+                "end": 441.0400085449219
+            },
+            {
+                "word": "viele",
+                "start": 441.0400085449219,
+                "end": 441.70001220703125
+            },
+            {
+                "word": "Organisationen,",
+                "start": 441.70001220703125,
+                "end": 443.4200134277344
+            },
+            {
+                "word": "Schulen",
+                "start": 444.20001220703125,
+                "end": 444.20001220703125
+            },
+            {
+                "word": "und",
+                "start": 444.20001220703125,
+                "end": 444.79998779296875
+            },
+            {
+                "word": "Projekte",
+                "start": 444.79998779296875,
+                "end": 445.5199890136719
+            },
+            {
+                "word": "in",
+                "start": 445.5199890136719,
+                "end": 445.82000732421875
+            },
+            {
+                "word": "Deutschland,",
+                "start": 445.82000732421875,
+                "end": 446.4200134277344
+            },
+            {
+                "word": "über",
+                "start": 446.4200134277344,
+                "end": 447.32000732421875
+            },
+            {
+                "word": "dieses",
+                "start": 447.32000732421875,
+                "end": 447.79998779296875
+            },
+            {
+                "word": "Thema",
+                "start": 447.79998779296875,
+                "end": 448.239990234375
+            },
+            {
+                "word": "aufzuklären.",
+                "start": 448.239990234375,
+                "end": 449.6599853515625
+            }
+        ],
+        "translationEn": "Today, many organizations, schools, and projects in Germany are trying to raise awareness about this topic.",
+        "translationVi": "Hôm nay, nhiều tổ chức, trường học và dự án ở Đức đang cố gắng nâng cao nhận thức về chủ đề này."
+    },
+    {
+        "text": "Sie erklären, wie Stereotype entstehen und wie man sie erkennt.",
+        "start": 450.1200012207031,
+        "end": 456.59998779296876,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 450.1200012207031,
+                "end": 450.3999938964844
+            },
+            {
+                "word": "erklären,",
+                "start": 450.3999938964844,
+                "end": 451.0400085449219
+            },
+            {
+                "word": "wie",
+                "start": 451.739990234375,
+                "end": 451.9800109863281
+            },
+            {
+                "word": "Stereotype",
+                "start": 451.9800109863281,
+                "end": 452.9800109863281
+            },
+            {
+                "word": "entstehen",
+                "start": 452.9800109863281,
+                "end": 454.0199890136719
+            },
+            {
+                "word": "und",
+                "start": 454.0199890136719,
+                "end": 454.760009765625
+            },
+            {
+                "word": "wie",
+                "start": 454.760009765625,
+                "end": 455.0199890136719
+            },
+            {
+                "word": "man",
+                "start": 455.0199890136719,
+                "end": 455.32000732421875
+            },
+            {
+                "word": "sie",
+                "start": 455.32000732421875,
+                "end": 455.7200012207031
+            },
+            {
+                "word": "erkennt.",
+                "start": 455.7200012207031,
+                "end": 456.59998779296876
+            }
+        ],
+        "translationEn": "They explain how stereotypes are formed and how to recognize them.",
+        "translationVi": "Họ giải thích cách mà các khuôn mẫu hình thành và cách nhận biết chúng."
+    },
+    {
+        "text": "Ich finde es seltsam zu sehen, wie Deutsche in Filmen oder Serien dargestellt werden.",
+        "start": 457.3599914550781,
+        "end": 466.3199890136719,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 457.3599914550781,
+                "end": 458.55999755859375
+            },
+            {
+                "word": "finde",
+                "start": 458.55999755859375,
+                "end": 458.8599853515625
+            },
+            {
+                "word": "es",
+                "start": 458.8599853515625,
+                "end": 459.3599853515625
+            },
+            {
+                "word": "seltsam",
+                "start": 459.3599853515625,
+                "end": 460.0400085449219
+            },
+            {
+                "word": "zu",
+                "start": 460.3399963378906,
+                "end": 461.0400085449219
+            },
+            {
+                "word": "sehen,",
+                "start": 461.0400085449219,
+                "end": 461.0400085449219
+            },
+            {
+                "word": "wie",
+                "start": 461.44000244140625,
+                "end": 461.5799865722656
+            },
+            {
+                "word": "Deutsche",
+                "start": 461.5799865722656,
+                "end": 462.20001220703125
+            },
+            {
+                "word": "in",
+                "start": 462.20001220703125,
+                "end": 463.0199890136719
+            },
+            {
+                "word": "Filmen",
+                "start": 463.0199890136719,
+                "end": 463.4200134277344
+            },
+            {
+                "word": "oder",
+                "start": 463.4200134277344,
+                "end": 464.05999755859375
+            },
+            {
+                "word": "Serien",
+                "start": 464.05999755859375,
+                "end": 464.70001220703125
+            },
+            {
+                "word": "dargestellt",
+                "start": 464.70001220703125,
+                "end": 465.5799865722656
+            },
+            {
+                "word": "werden.",
+                "start": 465.5799865722656,
+                "end": 466.3199890136719
+            }
+        ],
+        "translationEn": "I find it strange to see how Germans are portrayed in movies or series.",
+        "translationVi": "Tôi thấy lạ khi thấy người Đức được miêu tả trong phim hoặc series."
+    },
+    {
+        "text": "Eigentlich reden sie alle wie Adolf Hitler.",
+        "start": 466.8800109863281,
+        "end": 471.00001220703126,
+        "wordTimings": [
+            {
+                "word": "Eigentlich",
+                "start": 466.8800109863281,
+                "end": 467.70001220703125
+            },
+            {
+                "word": "reden",
+                "start": 467.70001220703125,
+                "end": 468.239990234375
+            },
+            {
+                "word": "sie",
+                "start": 468.239990234375,
+                "end": 468.6199951171875
+            },
+            {
+                "word": "alle",
+                "start": 468.6199951171875,
+                "end": 469.1199951171875
+            },
+            {
+                "word": "wie",
+                "start": 469.1199951171875,
+                "end": 469.760009765625
+            },
+            {
+                "word": "Adolf",
+                "start": 469.760009765625,
+                "end": 470.3599853515625
+            },
+            {
+                "word": "Hitler.",
+                "start": 470.3599853515625,
+                "end": 471.00001220703126
+            }
+        ],
+        "translationEn": "Actually, they all talk like Adolf Hitler.",
+        "translationVi": "Thực ra, tất cả họ đều nói như Adolf Hitler."
+    },
+    {
+        "text": "Oder sie sind selten freundlich, sondern meistens eher die Bösen.",
+        "start": 470.9599975585937,
+        "end": 477.62000732421876,
+        "wordTimings": [
+            {
+                "word": "Oder",
+                "start": 470.9599975585937,
+                "end": 471.3599853515625
+            },
+            {
+                "word": "sie",
+                "start": 472.0799865722656,
+                "end": 472.67999267578125
+            },
+            {
+                "word": "sind",
+                "start": 472.67999267578125,
+                "end": 472.9800109863281
+            },
+            {
+                "word": "selten",
+                "start": 472.9800109863281,
+                "end": 473.4599914550781
+            },
+            {
+                "word": "freundlich,",
+                "start": 473.4599914550781,
+                "end": 474.2799987792969
+            },
+            {
+                "word": "sondern",
+                "start": 475.1199951171875,
+                "end": 475.2799987792969
+            },
+            {
+                "word": "meistens",
+                "start": 475.2799987792969,
+                "end": 476.17999267578125
+            },
+            {
+                "word": "eher",
+                "start": 476.17999267578125,
+                "end": 476.55999755859375
+            },
+            {
+                "word": "die",
+                "start": 476.55999755859375,
+                "end": 477.0400085449219
+            },
+            {
+                "word": "Bösen.",
+                "start": 477.0400085449219,
+                "end": 477.62000732421876
+            }
+        ],
+        "translationEn": "Or they are rarely friendly, but rather mostly the bad ones.",
+        "translationVi": "Hoặc họ hiếm khi thân thiện, mà thường thì họ là những kẻ xấu."
+    },
+    {
+        "text": "Ach ja, und noch ein Stereotyp muss ich hier mal aus dem Weg schaffen.",
+        "start": 477.2200073242187,
+        "end": 484.7200134277344,
+        "wordTimings": [
+            {
+                "word": "Ach",
+                "start": 477.2200073242187,
+                "end": 478.5199890136719
+            },
+            {
+                "word": "ja,",
+                "start": 478.5199890136719,
+                "end": 478.760009765625
+            },
+            {
+                "word": "und",
+                "start": 479.2799987792969,
+                "end": 479.7200012207031
+            },
+            {
+                "word": "noch",
+                "start": 479.7200012207031,
+                "end": 480.1400146484375
+            },
+            {
+                "word": "ein",
+                "start": 480.1400146484375,
+                "end": 480.5199890136719
+            },
+            {
+                "word": "Stereotyp",
+                "start": 480.5199890136719,
+                "end": 481.4200134277344
+            },
+            {
+                "word": "muss",
+                "start": 481.4200134277344,
+                "end": 481.8800048828125
+            },
+            {
+                "word": "ich",
+                "start": 481.8800048828125,
+                "end": 482.239990234375
+            },
+            {
+                "word": "hier",
+                "start": 482.239990234375,
+                "end": 482.6600036621094
+            },
+            {
+                "word": "mal",
+                "start": 482.6600036621094,
+                "end": 483.1199951171875
+            },
+            {
+                "word": "aus",
+                "start": 483.1199951171875,
+                "end": 483.4200134277344
+            },
+            {
+                "word": "dem",
+                "start": 483.4200134277344,
+                "end": 483.760009765625
+            },
+            {
+                "word": "Weg",
+                "start": 483.760009765625,
+                "end": 484.0199890136719
+            },
+            {
+                "word": "schaffen.",
+                "start": 484.0199890136719,
+                "end": 484.7200134277344
+            }
+        ],
+        "translationEn": "Oh yes, and I need to clear up another stereotype here.",
+        "translationVi": "À đúng rồi, và tôi cũng phải loại bỏ một khuôn mẫu ở đây."
+    },
+    {
+        "text": "Ich esse höchstens einmal pro Jahr Sauerkraut.",
+        "start": 485.160009765625,
+        "end": 490.8199890136719,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 485.160009765625,
+                "end": 485.760009765625
+            },
+            {
+                "word": "esse",
+                "start": 485.760009765625,
+                "end": 486.239990234375
+            },
+            {
+                "word": "höchstens",
+                "start": 486.239990234375,
+                "end": 487.44000244140625
+            },
+            {
+                "word": "einmal",
+                "start": 487.44000244140625,
+                "end": 488.260009765625
+            },
+            {
+                "word": "pro",
+                "start": 488.260009765625,
+                "end": 488.82000732421875
+            },
+            {
+                "word": "Jahr",
+                "start": 488.82000732421875,
+                "end": 489.1000061035156
+            },
+            {
+                "word": "Sauerkraut.",
+                "start": 489.1000061035156,
+                "end": 490.8199890136719
+            }
+        ],
+        "translationEn": "I eat sauerkraut at most once a year.",
+        "translationVi": "Tôi chỉ ăn dưa cải chua tối đa một lần mỗi năm."
+    },
+    {
+        "text": "Jetzt bin ich aber vor allem gespannt, welche Vorurteile Du über Deutschland hast.",
+        "start": 491.67999877929685,
+        "end": 499.539990234375,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 491.67999877929685,
+                "end": 492.1600036621094
+            },
+            {
+                "word": "bin",
+                "start": 492.1600036621094,
+                "end": 492.3399963378906
+            },
+            {
+                "word": "ich",
+                "start": 492.3399963378906,
+                "end": 492.67999267578125
+            },
+            {
+                "word": "aber",
+                "start": 492.67999267578125,
+                "end": 493.1400146484375
+            },
+            {
+                "word": "vor",
+                "start": 493.1400146484375,
+                "end": 493.79998779296875
+            },
+            {
+                "word": "allem",
+                "start": 493.79998779296875,
+                "end": 493.79998779296875
+            },
+            {
+                "word": "gespannt,",
+                "start": 493.79998779296875,
+                "end": 494.4599914550781
+            },
+            {
+                "word": "welche",
+                "start": 495.260009765625,
+                "end": 495.44000244140625
+            },
+            {
+                "word": "Vorurteile",
+                "start": 495.44000244140625,
+                "end": 496.5199890136719
+            },
+            {
+                "word": "Du",
+                "start": 496.5199890136719,
+                "end": 497.4200134277344
+            },
+            {
+                "word": "über",
+                "start": 497.4200134277344,
+                "end": 498.0400085449219
+            },
+            {
+                "word": "Deutschland",
+                "start": 498.0400085449219,
+                "end": 498.67999267578125
+            },
+            {
+                "word": "hast.",
+                "start": 498.67999267578125,
+                "end": 499.539990234375
+            }
+        ],
+        "translationEn": "Now I am especially curious about what prejudices you have about Germany.",
+        "translationVi": "Bây giờ tôi rất tò mò về những định kiến mà bạn có về nước Đức."
+    },
+    {
+        "text": "Oder gerne auch, welche Vorurteile Du früher hattest, aber jetzt nicht mehr.",
+        "start": 499.67999877929685,
+        "end": 506.87998657226564,
+        "wordTimings": [
+            {
+                "word": "Oder",
+                "start": 499.67999877929685,
+                "end": 500.1000061035156
+            },
+            {
+                "word": "gerne",
+                "start": 500.1000061035156,
+                "end": 500.6000061035156
+            },
+            {
+                "word": "auch,",
+                "start": 500.6000061035156,
+                "end": 501.4800109863281
+            },
+            {
+                "word": "welche",
+                "start": 501.82000732421875,
+                "end": 501.8800048828125
+            },
+            {
+                "word": "Vorurteile",
+                "start": 501.8800048828125,
+                "end": 502.8999938964844
+            },
+            {
+                "word": "Du",
+                "start": 502.8999938964844,
+                "end": 503.3599853515625
+            },
+            {
+                "word": "früher",
+                "start": 503.3599853515625,
+                "end": 503.8999938964844
+            },
+            {
+                "word": "hattest,",
+                "start": 503.8999938964844,
+                "end": 504.760009765625
+            },
+            {
+                "word": "aber",
+                "start": 505.3399963378906,
+                "end": 505.6600036621094
+            },
+            {
+                "word": "jetzt",
+                "start": 505.6600036621094,
+                "end": 506.0199890136719
+            },
+            {
+                "word": "nicht",
+                "start": 506.0199890136719,
+                "end": 506.3399963378906
+            },
+            {
+                "word": "mehr.",
+                "start": 506.3399963378906,
+                "end": 506.87998657226564
+            }
+        ],
+        "translationEn": "Or feel free to share any prejudices you used to have, but no longer do.",
+        "translationVi": "Hoặc bạn cũng có thể chia sẻ những định kiến mà bạn đã từng có trước đây, nhưng bây giờ không còn nữa."
+    },
+    {
+        "text": "Schreib bitte in die Kommentare auf slowgerman.com.",
+        "start": 506.4799865722656,
+        "end": 511.52000122070314,
+        "wordTimings": [
+            {
+                "word": "Schreib",
+                "start": 506.4799865722656,
+                "end": 507.8399963378906
+            },
+            {
+                "word": "bitte",
+                "start": 507.8399963378906,
+                "end": 508.3999938964844
+            },
+            {
+                "word": "in",
+                "start": 508.3999938964844,
+                "end": 508.8800048828125
+            },
+            {
+                "word": "die",
+                "start": 508.8800048828125,
+                "end": 509.1600036621094
+            },
+            {
+                "word": "Kommentare",
+                "start": 509.1600036621094,
+                "end": 509.6600036621094
+            },
+            {
+                "word": "auf",
+                "start": 509.6600036621094,
+                "end": 510.5400085449219
+            },
+            {
+                "word": "slowgerman.com.",
+                "start": 510.5400085449219,
+                "end": 511.52000122070314
+            }
+        ],
+        "translationEn": "Please write in the comments on slowgerman.com.",
+        "translationVi": "Xin hãy viết vào phần bình luận trên slowgerman.com."
+    }
+]

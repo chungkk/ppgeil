@@ -1,0 +1,3851 @@
+[
+    {
+        "text": "Der Bauer Gopi ging an diesem Tag unglücklich auf sein Feld.",
+        "start": 0.8599999785423279,
+        "end": 5.680000114440918,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 0.8599999785423279,
+                "end": 1.5800000429153442
+            },
+            {
+                "word": "Bauer",
+                "start": 1.5800000429153442,
+                "end": 1.8600000143051147
+            },
+            {
+                "word": "Gopi",
+                "start": 1.8600000143051147,
+                "end": 2.4600000381469727
+            },
+            {
+                "word": "ging",
+                "start": 2.4600000381469727,
+                "end": 2.5799999237060547
+            },
+            {
+                "word": "an",
+                "start": 2.5799999237060547,
+                "end": 2.799999952316284
+            },
+            {
+                "word": "diesem",
+                "start": 2.799999952316284,
+                "end": 3.140000104904175
+            },
+            {
+                "word": "Tag",
+                "start": 3.140000104904175,
+                "end": 3.559999942779541
+            },
+            {
+                "word": "unglücklich",
+                "start": 3.559999942779541,
+                "end": 4.380000114440918
+            },
+            {
+                "word": "auf",
+                "start": 4.380000114440918,
+                "end": 4.78000020980835
+            },
+            {
+                "word": "sein",
+                "start": 4.78000020980835,
+                "end": 5.380000114440918
+            },
+            {
+                "word": "Feld.",
+                "start": 5.380000114440918,
+                "end": 5.680000114440918
+            }
+        ],
+        "translationEn": "Farmer Gopi walked unhappily to his field that day.",
+        "translationVi": "Người nông dân Gopi đi ra cánh đồng của mình trong tâm trạng không vui vào ngày hôm đó."
+    },
+    {
+        "text": "Denn obwohl es Sommer war, brachte sein Feld immer noch keine Ernte.",
+        "start": 8.580000305175782,
+        "end": 12.8600004196167,
+        "wordTimings": [
+            {
+                "word": "Denn",
+                "start": 8.580000305175782,
+                "end": 8.9399995803833
+            },
+            {
+                "word": "obwohl",
+                "start": 8.9399995803833,
+                "end": 9.140000343322754
+            },
+            {
+                "word": "es",
+                "start": 9.140000343322754,
+                "end": 9.5600004196167
+            },
+            {
+                "word": "Sommer",
+                "start": 9.5600004196167,
+                "end": 9.579999923706055
+            },
+            {
+                "word": "war,",
+                "start": 9.579999923706055,
+                "end": 9.979999542236328
+            },
+            {
+                "word": "brachte",
+                "start": 10.539999961853027,
+                "end": 10.539999961853027
+            },
+            {
+                "word": "sein",
+                "start": 10.539999961853027,
+                "end": 10.960000038146973
+            },
+            {
+                "word": "Feld",
+                "start": 10.960000038146973,
+                "end": 11.180000305175781
+            },
+            {
+                "word": "immer",
+                "start": 11.180000305175781,
+                "end": 11.720000267028809
+            },
+            {
+                "word": "noch",
+                "start": 11.720000267028809,
+                "end": 11.9399995803833
+            },
+            {
+                "word": "keine",
+                "start": 11.9399995803833,
+                "end": 12.199999809265137
+            },
+            {
+                "word": "Ernte.",
+                "start": 12.199999809265137,
+                "end": 12.8600004196167
+            }
+        ],
+        "translationEn": "For although it was summer, his field still yielded no harvest.",
+        "translationVi": "Bởi vì mặc dù là mùa hè, nhưng cánh đồng của ông vẫn không mang lại vụ mùa nào."
+    },
+    {
+        "text": "Mein Feld hat heute schon wieder keine Ernte gebracht.",
+        "start": 17.74000015258789,
+        "end": 21.320000457763673,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 17.74000015258789,
+                "end": 18.459999084472656
+            },
+            {
+                "word": "Feld",
+                "start": 18.459999084472656,
+                "end": 18.700000762939453
+            },
+            {
+                "word": "hat",
+                "start": 18.700000762939453,
+                "end": 18.899999618530273
+            },
+            {
+                "word": "heute",
+                "start": 18.899999618530273,
+                "end": 19.299999237060547
+            },
+            {
+                "word": "schon",
+                "start": 19.299999237060547,
+                "end": 19.559999465942383
+            },
+            {
+                "word": "wieder",
+                "start": 19.559999465942383,
+                "end": 19.860000610351562
+            },
+            {
+                "word": "keine",
+                "start": 19.860000610351562,
+                "end": 20.15999984741211
+            },
+            {
+                "word": "Ernte",
+                "start": 20.15999984741211,
+                "end": 20.440000534057617
+            },
+            {
+                "word": "gebracht.",
+                "start": 20.440000534057617,
+                "end": 21.320000457763673
+            }
+        ],
+        "translationEn": "My field has once again yielded no harvest today.",
+        "translationVi": "Cánh đồng của tôi hôm nay lại không mang lại vụ thu hoạch nào."
+    },
+    {
+        "text": "Was soll ich jetzt nur machen?",
+        "start": 21.799999618530272,
+        "end": 23.45999984741211,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 21.799999618530272,
+                "end": 22.040000915527344
+            },
+            {
+                "word": "soll",
+                "start": 22.040000915527344,
+                "end": 22.200000762939453
+            },
+            {
+                "word": "ich",
+                "start": 22.200000762939453,
+                "end": 22.31999969482422
+            },
+            {
+                "word": "jetzt",
+                "start": 22.31999969482422,
+                "end": 22.579999923706055
+            },
+            {
+                "word": "nur",
+                "start": 22.579999923706055,
+                "end": 22.940000534057617
+            },
+            {
+                "word": "machen?",
+                "start": 22.940000534057617,
+                "end": 23.45999984741211
+            }
+        ],
+        "translationEn": "What should I do now?",
+        "translationVi": "Tôi bây giờ nên làm gì đây?"
+    },
+    {
+        "text": "Wenn ich dem König keine Ernte liefere, kriege ich Ärger.",
+        "start": 23.95999946594238,
+        "end": 27.64000015258789,
+        "wordTimings": [
+            {
+                "word": "Wenn",
+                "start": 23.95999946594238,
+                "end": 24.200000762939453
+            },
+            {
+                "word": "ich",
+                "start": 24.200000762939453,
+                "end": 24.34000015258789
+            },
+            {
+                "word": "dem",
+                "start": 24.34000015258789,
+                "end": 24.579999923706055
+            },
+            {
+                "word": "König",
+                "start": 24.579999923706055,
+                "end": 24.899999618530273
+            },
+            {
+                "word": "keine",
+                "start": 24.899999618530273,
+                "end": 25.200000762939453
+            },
+            {
+                "word": "Ernte",
+                "start": 25.200000762939453,
+                "end": 25.459999084472656
+            },
+            {
+                "word": "liefere,",
+                "start": 25.459999084472656,
+                "end": 25.940000534057617
+            },
+            {
+                "word": "kriege",
+                "start": 26.700000762939453,
+                "end": 26.700000762939453
+            },
+            {
+                "word": "ich",
+                "start": 26.700000762939453,
+                "end": 27
+            },
+            {
+                "word": "Ärger.",
+                "start": 27,
+                "end": 27.64000015258789
+            }
+        ],
+        "translationEn": "If I don't deliver a harvest to the king, I'll get into trouble.",
+        "translationVi": "Nếu tôi không cung cấp vụ mùa cho nhà vua, tôi sẽ gặp rắc rối."
+    },
+    {
+        "text": "Eines Tages, als Gopi gerade aufgeben wollte, auf seinen kargen Feldern zu graben, traf seine Schaufel auf einen harten Gegenstand.",
+        "start": 29.2799991607666,
+        "end": 38.75000076293945,
+        "wordTimings": [
+            {
+                "word": "Eines",
+                "start": 29.2799991607666,
+                "end": 30
+            },
+            {
+                "word": "Tages,",
+                "start": 30,
+                "end": 30.459999084472656
+            },
+            {
+                "word": "als",
+                "start": 30.68000030517578,
+                "end": 30.81999969482422
+            },
+            {
+                "word": "Gopi",
+                "start": 30.81999969482422,
+                "end": 31.239999771118164
+            },
+            {
+                "word": "gerade",
+                "start": 31.239999771118164,
+                "end": 31.700000762939453
+            },
+            {
+                "word": "aufgeben",
+                "start": 31.700000762939453,
+                "end": 32.220001220703125
+            },
+            {
+                "word": "wollte,",
+                "start": 32.220001220703125,
+                "end": 32.540000915527344
+            },
+            {
+                "word": "auf",
+                "start": 33.08000183105469,
+                "end": 33.119998931884766
+            },
+            {
+                "word": "seinen",
+                "start": 33.119998931884766,
+                "end": 33.41999816894531
+            },
+            {
+                "word": "kargen",
+                "start": 33.41999816894531,
+                "end": 33.81999969482422
+            },
+            {
+                "word": "Feldern",
+                "start": 33.81999969482422,
+                "end": 34.13999938964844
+            },
+            {
+                "word": "zu",
+                "start": 34.13999938964844,
+                "end": 34.65999984741211
+            },
+            {
+                "word": "graben,",
+                "start": 34.65999984741211,
+                "end": 34.7400016784668
+            },
+            {
+                "word": "traf",
+                "start": 36.279998779296875,
+                "end": 36.29999923706055
+            },
+            {
+                "word": "seine",
+                "start": 36.29999923706055,
+                "end": 36.599998474121094
+            },
+            {
+                "word": "Schaufel",
+                "start": 36.599998474121094,
+                "end": 37.08000183105469
+            },
+            {
+                "word": "auf",
+                "start": 37.08000183105469,
+                "end": 37.47999954223633
+            },
+            {
+                "word": "einen",
+                "start": 37.47999954223633,
+                "end": 37.84000015258789
+            },
+            {
+                "word": "harten",
+                "start": 37.84000015258789,
+                "end": 38.13999938964844
+            },
+            {
+                "word": "Gegenstand.",
+                "start": 38.13999938964844,
+                "end": 38.75000076293945
+            }
+        ],
+        "translationEn": "One day, when Gopi was about to give up digging in his barren fields, his shovel struck a hard object.",
+        "translationVi": "Một ngày, khi Gopi vừa định từ bỏ việc đào trên những cánh đồng khô cằn của mình, cái xẻng của anh đã chạm phải một vật cứng."
+    },
+    {
+        "text": "Was ist das?",
+        "start": 39.92000045776367,
+        "end": 41.439999389648435,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 39.92000045776367,
+                "end": 40.63999938964844
+            },
+            {
+                "word": "ist",
+                "start": 40.63999938964844,
+                "end": 40.84000015258789
+            },
+            {
+                "word": "das?",
+                "start": 40.84000015258789,
+                "end": 41.439999389648435
+            }
+        ],
+        "translationEn": "What is that?",
+        "translationVi": "Đó là cái gì?"
+    },
+    {
+        "text": "Na los, na los, schneller!",
+        "start": 41.87999954223633,
+        "end": 43.34000091552734,
+        "wordTimings": [
+            {
+                "word": "Na",
+                "start": 41.87999954223633,
+                "end": 42.060001373291016
+            },
+            {
+                "word": "los,",
+                "start": 42.060001373291016,
+                "end": 42.15999984741211
+            },
+            {
+                "word": "na",
+                "start": 42.220001220703125,
+                "end": 42.959999084472656
+            },
+            {
+                "word": "los,",
+                "start": 42.959999084472656,
+                "end": 42.959999084472656
+            },
+            {
+                "word": "schneller!",
+                "start": 43.040000915527344,
+                "end": 43.34000091552734
+            }
+        ],
+        "translationEn": "Come on, come on, faster!",
+        "translationVi": "Nào, nào, nhanh lên!"
+    },
+    {
+        "text": "Als er weiter grub, stellte er fest, dass es ein Topf war.",
+        "start": 43.71999969482422,
+        "end": 47.880001831054685,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 43.71999969482422,
+                "end": 43.939998626708984
+            },
+            {
+                "word": "er",
+                "start": 43.939998626708984,
+                "end": 44.099998474121094
+            },
+            {
+                "word": "weiter",
+                "start": 44.099998474121094,
+                "end": 44.52000045776367
+            },
+            {
+                "word": "grub,",
+                "start": 44.52000045776367,
+                "end": 44.7400016784668
+            },
+            {
+                "word": "stellte",
+                "start": 44.959999084472656,
+                "end": 45.220001220703125
+            },
+            {
+                "word": "er",
+                "start": 45.220001220703125,
+                "end": 45.41999816894531
+            },
+            {
+                "word": "fest,",
+                "start": 45.41999816894531,
+                "end": 45.79999923706055
+            },
+            {
+                "word": "dass",
+                "start": 46.20000076293945,
+                "end": 46.36000061035156
+            },
+            {
+                "word": "es",
+                "start": 46.36000061035156,
+                "end": 46.58000183105469
+            },
+            {
+                "word": "ein",
+                "start": 46.58000183105469,
+                "end": 46.900001525878906
+            },
+            {
+                "word": "Topf",
+                "start": 46.900001525878906,
+                "end": 47.099998474121094
+            },
+            {
+                "word": "war.",
+                "start": 47.099998474121094,
+                "end": 47.880001831054685
+            }
+        ],
+        "translationEn": "As he continued to dig, he realized it was a pot.",
+        "translationVi": "Khi anh tiếp tục đào, anh nhận ra đó là một cái nồi."
+    },
+    {
+        "text": "Was macht ein Topf auf meinem Feld?",
+        "start": 49.60000076293945,
+        "end": 52.14000015258789,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 49.60000076293945,
+                "end": 50.31999969482422
+            },
+            {
+                "word": "macht",
+                "start": 50.31999969482422,
+                "end": 50.459999084472656
+            },
+            {
+                "word": "ein",
+                "start": 50.459999084472656,
+                "end": 50.70000076293945
+            },
+            {
+                "word": "Topf",
+                "start": 50.70000076293945,
+                "end": 50.959999084472656
+            },
+            {
+                "word": "auf",
+                "start": 50.959999084472656,
+                "end": 51.119998931884766
+            },
+            {
+                "word": "meinem",
+                "start": 51.119998931884766,
+                "end": 51.47999954223633
+            },
+            {
+                "word": "Feld?",
+                "start": 51.47999954223633,
+                "end": 52.14000015258789
+            }
+        ],
+        "translationEn": "What is a pot doing in my field?",
+        "translationVi": "Cái nồi làm gì trên cánh đồng của tôi?"
+    },
+    {
+        "text": "Und er ist leer.",
+        "start": 53.539999389648436,
+        "end": 55.099999237060544,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 53.539999389648436,
+                "end": 54.2599983215332
+            },
+            {
+                "word": "er",
+                "start": 54.2599983215332,
+                "end": 54.380001068115234
+            },
+            {
+                "word": "ist",
+                "start": 54.380001068115234,
+                "end": 54.599998474121094
+            },
+            {
+                "word": "leer.",
+                "start": 54.599998474121094,
+                "end": 55.099999237060544
+            }
+        ],
+        "translationEn": "And it is empty.",
+        "translationVi": "Và nó trống rỗng."
+    },
+    {
+        "text": "Gopi war sehr unglücklich darüber, dass er sich so viel Mühe gegeben hatte, ohne dafür belohnt zu werden.",
+        "start": 58.05999984741211,
+        "end": 64.43999938964843,
+        "wordTimings": [
+            {
+                "word": "Gopi",
+                "start": 58.05999984741211,
+                "end": 58.720001220703125
+            },
+            {
+                "word": "war",
+                "start": 58.720001220703125,
+                "end": 58.880001068115234
+            },
+            {
+                "word": "sehr",
+                "start": 58.880001068115234,
+                "end": 59.400001525878906
+            },
+            {
+                "word": "unglücklich",
+                "start": 59.400001525878906,
+                "end": 59.7400016784668
+            },
+            {
+                "word": "darüber,",
+                "start": 59.7400016784668,
+                "end": 60.380001068115234
+            },
+            {
+                "word": "dass",
+                "start": 60.7599983215332,
+                "end": 60.81999969482422
+            },
+            {
+                "word": "er",
+                "start": 60.81999969482422,
+                "end": 61
+            },
+            {
+                "word": "sich",
+                "start": 61,
+                "end": 61.15999984741211
+            },
+            {
+                "word": "so",
+                "start": 61.15999984741211,
+                "end": 61.380001068115234
+            },
+            {
+                "word": "viel",
+                "start": 61.380001068115234,
+                "end": 61.540000915527344
+            },
+            {
+                "word": "Mühe",
+                "start": 61.540000915527344,
+                "end": 61.7599983215332
+            },
+            {
+                "word": "gegeben",
+                "start": 61.7599983215332,
+                "end": 62.18000030517578
+            },
+            {
+                "word": "hatte,",
+                "start": 62.18000030517578,
+                "end": 62.439998626708984
+            },
+            {
+                "word": "ohne",
+                "start": 62.900001525878906,
+                "end": 62.959999084472656
+            },
+            {
+                "word": "dafür",
+                "start": 62.959999084472656,
+                "end": 63.5
+            },
+            {
+                "word": "belohnt",
+                "start": 63.5,
+                "end": 63.70000076293945
+            },
+            {
+                "word": "zu",
+                "start": 63.70000076293945,
+                "end": 64.08000183105469
+            },
+            {
+                "word": "werden.",
+                "start": 64.08000183105469,
+                "end": 64.43999938964843
+            }
+        ],
+        "translationEn": "Gopi was very unhappy that he had put in so much effort without being rewarded for it.",
+        "translationVi": "Gopi rất không vui vì đã nỗ lực rất nhiều mà không được thưởng."
+    },
+    {
+        "text": "Er ließ seine Hacke in den Topf fallen und legte sich unter einen Baum, um sich auszuruhen.",
+        "start": 65.21999969482422,
+        "end": 72.07999877929687,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 65.21999969482422,
+                "end": 65.31999969482422
+            },
+            {
+                "word": "ließ",
+                "start": 65.31999969482422,
+                "end": 65.58000183105469
+            },
+            {
+                "word": "seine",
+                "start": 65.58000183105469,
+                "end": 65.87999725341797
+            },
+            {
+                "word": "Hacke",
+                "start": 65.87999725341797,
+                "end": 66.13999938964844
+            },
+            {
+                "word": "in",
+                "start": 66.13999938964844,
+                "end": 66.5999984741211
+            },
+            {
+                "word": "den",
+                "start": 66.5999984741211,
+                "end": 66.87999725341797
+            },
+            {
+                "word": "Topf",
+                "start": 66.87999725341797,
+                "end": 67.13999938964844
+            },
+            {
+                "word": "fallen",
+                "start": 67.13999938964844,
+                "end": 67.45999908447266
+            },
+            {
+                "word": "und",
+                "start": 67.45999908447266,
+                "end": 68.9800033569336
+            },
+            {
+                "word": "legte",
+                "start": 68.9800033569336,
+                "end": 69.37999725341797
+            },
+            {
+                "word": "sich",
+                "start": 69.37999725341797,
+                "end": 69.62000274658203
+            },
+            {
+                "word": "unter",
+                "start": 69.62000274658203,
+                "end": 69.9000015258789
+            },
+            {
+                "word": "einen",
+                "start": 69.9000015258789,
+                "end": 70.22000122070312
+            },
+            {
+                "word": "Baum,",
+                "start": 70.22000122070312,
+                "end": 70.44000244140625
+            },
+            {
+                "word": "um",
+                "start": 70.81999969482422,
+                "end": 70.86000061035156
+            },
+            {
+                "word": "sich",
+                "start": 70.86000061035156,
+                "end": 71.05999755859375
+            },
+            {
+                "word": "auszuruhen.",
+                "start": 71.05999755859375,
+                "end": 72.07999877929687
+            }
+        ],
+        "translationEn": "He dropped his hoe into the pot and lay down under a tree to rest.",
+        "translationVi": "Ông để cái cuốc của mình rơi vào nồi và nằm dưới một cái cây để nghỉ ngơi."
+    },
+    {
+        "text": "Als er nach einer Weile seine Hacke wieder mitnehmen wollte, um nach Hause zu gehen, stellte er fest, dass sich noch hundert weitere Hacken im Topf befanden.",
+        "start": 74.4800018310547,
+        "end": 84.49999694824218,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 74.4800018310547,
+                "end": 75.13999938964844
+            },
+            {
+                "word": "er",
+                "start": 75.13999938964844,
+                "end": 75.37999725341797
+            },
+            {
+                "word": "nach",
+                "start": 75.37999725341797,
+                "end": 75.54000091552734
+            },
+            {
+                "word": "einer",
+                "start": 75.54000091552734,
+                "end": 75.91999816894531
+            },
+            {
+                "word": "Weile",
+                "start": 75.91999816894531,
+                "end": 76.0999984741211
+            },
+            {
+                "word": "seine",
+                "start": 76.0999984741211,
+                "end": 76.54000091552734
+            },
+            {
+                "word": "Hacke",
+                "start": 76.54000091552734,
+                "end": 76.77999877929688
+            },
+            {
+                "word": "wieder",
+                "start": 76.77999877929688,
+                "end": 77.12000274658203
+            },
+            {
+                "word": "mitnehmen",
+                "start": 77.12000274658203,
+                "end": 77.55999755859375
+            },
+            {
+                "word": "wollte,",
+                "start": 77.55999755859375,
+                "end": 77.80000305175781
+            },
+            {
+                "word": "um",
+                "start": 78.0199966430664,
+                "end": 78.0199966430664
+            },
+            {
+                "word": "nach",
+                "start": 78.0199966430664,
+                "end": 78.33999633789062
+            },
+            {
+                "word": "Hause",
+                "start": 78.33999633789062,
+                "end": 78.37999725341797
+            },
+            {
+                "word": "zu",
+                "start": 78.37999725341797,
+                "end": 78.73999786376953
+            },
+            {
+                "word": "gehen,",
+                "start": 78.73999786376953,
+                "end": 78.83999633789062
+            },
+            {
+                "word": "stellte",
+                "start": 79.62000274658203,
+                "end": 79.69999694824219
+            },
+            {
+                "word": "er",
+                "start": 79.69999694824219,
+                "end": 79.9000015258789
+            },
+            {
+                "word": "fest,",
+                "start": 79.9000015258789,
+                "end": 80.23999786376953
+            },
+            {
+                "word": "dass",
+                "start": 80.83999633789062,
+                "end": 80.95999908447266
+            },
+            {
+                "word": "sich",
+                "start": 80.95999908447266,
+                "end": 81.18000030517578
+            },
+            {
+                "word": "noch",
+                "start": 81.18000030517578,
+                "end": 81.77999877929688
+            },
+            {
+                "word": "hundert",
+                "start": 81.77999877929688,
+                "end": 82.05999755859375
+            },
+            {
+                "word": "weitere",
+                "start": 82.05999755859375,
+                "end": 82.68000030517578
+            },
+            {
+                "word": "Hacken",
+                "start": 82.68000030517578,
+                "end": 83.12000274658203
+            },
+            {
+                "word": "im",
+                "start": 83.12000274658203,
+                "end": 83.45999908447266
+            },
+            {
+                "word": "Topf",
+                "start": 83.45999908447266,
+                "end": 83.72000122070312
+            },
+            {
+                "word": "befanden.",
+                "start": 83.72000122070312,
+                "end": 84.49999694824218
+            }
+        ],
+        "translationEn": "When he wanted to take his hoe again after a while to go home, he noticed that there were still a hundred more hoes in the pot.",
+        "translationVi": "Khi anh ta muốn mang cuốc của mình đi sau một lúc, để về nhà, anh nhận ra rằng còn có thêm một trăm cái cuốc nữa trong nồi."
+    },
+    {
+        "text": "Was?",
+        "start": 84.0999969482422,
+        "end": 85.34000091552734,
+        "wordTimings": [
+            {
+                "word": "Was?",
+                "start": 84.0999969482422,
+                "end": 85.34000091552734
+            }
+        ],
+        "translationEn": "What?",
+        "translationVi": "Gì?"
+    },
+    {
+        "text": "Aber wie kann das passieren?",
+        "start": 85.80000152587891,
+        "end": 88.02000122070312,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 85.80000152587891,
+                "end": 86.30000305175781
+            },
+            {
+                "word": "wie",
+                "start": 86.30000305175781,
+                "end": 86.77999877929688
+            },
+            {
+                "word": "kann",
+                "start": 86.77999877929688,
+                "end": 87.08000183105469
+            },
+            {
+                "word": "das",
+                "start": 87.08000183105469,
+                "end": 87.26000213623047
+            },
+            {
+                "word": "passieren?",
+                "start": 87.26000213623047,
+                "end": 88.02000122070312
+            }
+        ],
+        "translationEn": "But how can that happen?",
+        "translationVi": "Nhưng làm thế nào điều đó có thể xảy ra?"
+    },
+    {
+        "text": "Ich hatte doch nur eine Hacke.",
+        "start": 88.17999877929688,
+        "end": 90.24000244140625,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 88.17999877929688,
+                "end": 88.41999816894531
+            },
+            {
+                "word": "hatte",
+                "start": 88.41999816894531,
+                "end": 88.58000183105469
+            },
+            {
+                "word": "doch",
+                "start": 88.58000183105469,
+                "end": 88.81999969482422
+            },
+            {
+                "word": "nur",
+                "start": 88.81999969482422,
+                "end": 89.04000091552734
+            },
+            {
+                "word": "eine",
+                "start": 89.04000091552734,
+                "end": 89.22000122070312
+            },
+            {
+                "word": "Hacke.",
+                "start": 89.22000122070312,
+                "end": 90.24000244140625
+            }
+        ],
+        "translationEn": "I only had a hoe.",
+        "translationVi": "Tôi chỉ có một cái cuốc."
+    },
+    {
+        "text": "Gopi leerte den Topf mit den Hacken und stellte diesmal seine Schaufel hinein.",
+        "start": 90.80000152587891,
+        "end": 96.8,
+        "wordTimings": [
+            {
+                "word": "Gopi",
+                "start": 90.80000152587891,
+                "end": 91.0999984741211
+            },
+            {
+                "word": "leerte",
+                "start": 91.0999984741211,
+                "end": 91.36000061035156
+            },
+            {
+                "word": "den",
+                "start": 91.36000061035156,
+                "end": 91.72000122070312
+            },
+            {
+                "word": "Topf",
+                "start": 91.72000122070312,
+                "end": 92.0199966430664
+            },
+            {
+                "word": "mit",
+                "start": 92.0199966430664,
+                "end": 92.26000213623047
+            },
+            {
+                "word": "den",
+                "start": 92.26000213623047,
+                "end": 92.63999938964844
+            },
+            {
+                "word": "Hacken",
+                "start": 92.63999938964844,
+                "end": 93.13999938964844
+            },
+            {
+                "word": "und",
+                "start": 93.13999938964844,
+                "end": 93.80000305175781
+            },
+            {
+                "word": "stellte",
+                "start": 93.80000305175781,
+                "end": 94.13999938964844
+            },
+            {
+                "word": "diesmal",
+                "start": 94.13999938964844,
+                "end": 94.87999725341797
+            },
+            {
+                "word": "seine",
+                "start": 94.87999725341797,
+                "end": 95.63999938964844
+            },
+            {
+                "word": "Schaufel",
+                "start": 95.63999938964844,
+                "end": 96.12000274658203
+            },
+            {
+                "word": "hinein.",
+                "start": 96.12000274658203,
+                "end": 96.8
+            }
+        ],
+        "translationEn": "Gopi emptied the pot with the hooks and this time placed his shovel inside.",
+        "translationVi": "Gopi đổ chảo với những miếng thịt băm và lần này đặt cái xẻng của mình vào trong đó."
+    },
+    {
+        "text": "Aber was war das?",
+        "start": 98.53999938964844,
+        "end": 100.2000015258789,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 98.53999938964844,
+                "end": 99.22000122070312
+            },
+            {
+                "word": "was",
+                "start": 99.22000122070312,
+                "end": 99.44000244140625
+            },
+            {
+                "word": "war",
+                "start": 99.44000244140625,
+                "end": 99.66000366210938
+            },
+            {
+                "word": "das?",
+                "start": 99.66000366210938,
+                "end": 100.2000015258789
+            }
+        ],
+        "translationEn": "But what was that?",
+        "translationVi": "Nhưng đó là gì vậy?"
+    },
+    {
+        "text": "Sofort tauchten weitere hundert Schaufeln im Topf auf.",
+        "start": 100.62000122070313,
+        "end": 104.24000244140625,
+        "wordTimings": [
+            {
+                "word": "Sofort",
+                "start": 100.62000122070313,
+                "end": 101.04000091552734
+            },
+            {
+                "word": "tauchten",
+                "start": 101.04000091552734,
+                "end": 101.5999984741211
+            },
+            {
+                "word": "weitere",
+                "start": 101.5999984741211,
+                "end": 102.0999984741211
+            },
+            {
+                "word": "hundert",
+                "start": 102.0999984741211,
+                "end": 102.63999938964844
+            },
+            {
+                "word": "Schaufeln",
+                "start": 102.63999938964844,
+                "end": 103.08000183105469
+            },
+            {
+                "word": "im",
+                "start": 103.08000183105469,
+                "end": 103.31999969482422
+            },
+            {
+                "word": "Topf",
+                "start": 103.31999969482422,
+                "end": 103.5999984741211
+            },
+            {
+                "word": "auf.",
+                "start": 103.5999984741211,
+                "end": 104.24000244140625
+            }
+        ],
+        "translationEn": "Immediately, another hundred shovels appeared in the pot.",
+        "translationVi": "Ngay lập tức, thêm một trăm cái xẻng nữa xuất hiện trong nồi."
+    },
+    {
+        "text": "Ist dieser Topf etwa ein Zaubertopf?",
+        "start": 105.4999984741211,
+        "end": 109.17999725341797,
+        "wordTimings": [
+            {
+                "word": "Ist",
+                "start": 105.4999984741211,
+                "end": 105.5999984741211
+            },
+            {
+                "word": "dieser",
+                "start": 105.5999984741211,
+                "end": 105.95999908447266
+            },
+            {
+                "word": "Topf",
+                "start": 105.95999908447266,
+                "end": 106.41999816894531
+            },
+            {
+                "word": "etwa",
+                "start": 106.41999816894531,
+                "end": 106.69999694824219
+            },
+            {
+                "word": "ein",
+                "start": 106.69999694824219,
+                "end": 107.5199966430664
+            },
+            {
+                "word": "Zaubertopf?",
+                "start": 107.5199966430664,
+                "end": 109.17999725341797
+            }
+        ],
+        "translationEn": "Is this pot a magic pot?",
+        "translationVi": "Cái nồi này có phải là nồi ma thuật không?"
+    },
+    {
+        "text": "Ach du meine Güte, das hätte ich jetzt nicht erwartet.",
+        "start": 109.23999633789063,
+        "end": 112.39999847412109,
+        "wordTimings": [
+            {
+                "word": "Ach",
+                "start": 109.23999633789063,
+                "end": 109.62000274658203
+            },
+            {
+                "word": "du",
+                "start": 109.62000274658203,
+                "end": 109.69999694824219
+            },
+            {
+                "word": "meine",
+                "start": 109.69999694824219,
+                "end": 110.0999984741211
+            },
+            {
+                "word": "Güte,",
+                "start": 110.0999984741211,
+                "end": 110.4800033569336
+            },
+            {
+                "word": "das",
+                "start": 110.76000213623047,
+                "end": 111
+            },
+            {
+                "word": "hätte",
+                "start": 111,
+                "end": 111.12000274658203
+            },
+            {
+                "word": "ich",
+                "start": 111.12000274658203,
+                "end": 111.23999786376953
+            },
+            {
+                "word": "jetzt",
+                "start": 111.23999786376953,
+                "end": 111.45999908447266
+            },
+            {
+                "word": "nicht",
+                "start": 111.45999908447266,
+                "end": 111.63999938964844
+            },
+            {
+                "word": "erwartet.",
+                "start": 111.63999938964844,
+                "end": 112.39999847412109
+            }
+        ],
+        "translationEn": "Oh my goodness, I didn't expect that at all.",
+        "translationVi": "Ôi trời ơi, tôi không ngờ điều này lại xảy ra."
+    },
+    {
+        "text": "Gopi war erstaunt und begeistert zugleich.",
+        "start": 114.31999816894532,
+        "end": 117.66000061035156,
+        "wordTimings": [
+            {
+                "word": "Gopi",
+                "start": 114.31999816894532,
+                "end": 115.0999984741211
+            },
+            {
+                "word": "war",
+                "start": 115.0999984741211,
+                "end": 115.44000244140625
+            },
+            {
+                "word": "erstaunt",
+                "start": 115.44000244140625,
+                "end": 116
+            },
+            {
+                "word": "und",
+                "start": 116,
+                "end": 116.30000305175781
+            },
+            {
+                "word": "begeistert",
+                "start": 116.30000305175781,
+                "end": 116.80000305175781
+            },
+            {
+                "word": "zugleich.",
+                "start": 116.80000305175781,
+                "end": 117.66000061035156
+            }
+        ],
+        "translationEn": "Gopi was astonished and excited at the same time.",
+        "translationVi": "Gopi vừa ngạc nhiên vừa phấn khích."
+    },
+    {
+        "text": "Er brachte den Topf sofort in sein Haus.",
+        "start": 117.5999969482422,
+        "end": 120.39999847412109,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 117.5999969482422,
+                "end": 117.69999694824219
+            },
+            {
+                "word": "brachte",
+                "start": 117.69999694824219,
+                "end": 117.94000244140625
+            },
+            {
+                "word": "den",
+                "start": 117.94000244140625,
+                "end": 118.27999877929688
+            },
+            {
+                "word": "Topf",
+                "start": 118.27999877929688,
+                "end": 118.5199966430664
+            },
+            {
+                "word": "sofort",
+                "start": 118.5199966430664,
+                "end": 119.04000091552734
+            },
+            {
+                "word": "in",
+                "start": 119.04000091552734,
+                "end": 119.5199966430664
+            },
+            {
+                "word": "sein",
+                "start": 119.5199966430664,
+                "end": 119.73999786376953
+            },
+            {
+                "word": "Haus.",
+                "start": 119.73999786376953,
+                "end": 120.39999847412109
+            }
+        ],
+        "translationEn": "He immediately brought the pot into his house.",
+        "translationVi": "Anh ấy lập tức mang cái nồi vào nhà."
+    },
+    {
+        "text": "Er probierte aufgeregt ein Hühnerei im Topf aus und ließ es darin.",
+        "start": 121.4,
+        "end": 125.84000091552734,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 121.4,
+                "end": 121.5999984741211
+            },
+            {
+                "word": "probierte",
+                "start": 121.5999984741211,
+                "end": 122.0199966430664
+            },
+            {
+                "word": "aufgeregt",
+                "start": 122.0199966430664,
+                "end": 122.77999877929688
+            },
+            {
+                "word": "ein",
+                "start": 122.77999877929688,
+                "end": 123.05999755859375
+            },
+            {
+                "word": "Hühnerei",
+                "start": 123.05999755859375,
+                "end": 123.5
+            },
+            {
+                "word": "im",
+                "start": 123.5,
+                "end": 123.81999969482422
+            },
+            {
+                "word": "Topf",
+                "start": 123.81999969482422,
+                "end": 124.0999984741211
+            },
+            {
+                "word": "aus",
+                "start": 124.0999984741211,
+                "end": 124.4000015258789
+            },
+            {
+                "word": "und",
+                "start": 124.4000015258789,
+                "end": 124.86000061035156
+            },
+            {
+                "word": "ließ",
+                "start": 124.86000061035156,
+                "end": 125.08000183105469
+            },
+            {
+                "word": "es",
+                "start": 125.08000183105469,
+                "end": 125.22000122070312
+            },
+            {
+                "word": "darin.",
+                "start": 125.22000122070312,
+                "end": 125.84000091552734
+            }
+        ],
+        "translationEn": "He excitedly tried out a chicken egg in the pot and left it there.",
+        "translationVi": "Anh ấy hồi hộp thử một quả trứng gà trong nồi và để nó ở đó."
+    },
+    {
+        "text": "Bald war der Topf voll von Eiern.",
+        "start": 126.23999633789063,
+        "end": 128.5799987792969,
+        "wordTimings": [
+            {
+                "word": "Bald",
+                "start": 126.23999633789063,
+                "end": 126.37999725341797
+            },
+            {
+                "word": "war",
+                "start": 126.37999725341797,
+                "end": 126.55999755859375
+            },
+            {
+                "word": "der",
+                "start": 126.55999755859375,
+                "end": 126.91999816894531
+            },
+            {
+                "word": "Topf",
+                "start": 126.91999816894531,
+                "end": 127.19999694824219
+            },
+            {
+                "word": "voll",
+                "start": 127.19999694824219,
+                "end": 127.68000030517578
+            },
+            {
+                "word": "von",
+                "start": 127.68000030517578,
+                "end": 128.02000427246094
+            },
+            {
+                "word": "Eiern.",
+                "start": 128.02000427246094,
+                "end": 128.5799987792969
+            }
+        ],
+        "translationEn": "Soon the pot was full of eggs.",
+        "translationVi": "Chẳng mấy chốc, nồi đã đầy trứng."
+    },
+    {
+        "text": "Haha, das gibt's doch gar nicht, verdammt!",
+        "start": 130.43999328613282,
+        "end": 133.52000122070314,
+        "wordTimings": [
+            {
+                "word": "Haha,",
+                "start": 130.43999328613282,
+                "end": 130.89999389648438
+            },
+            {
+                "word": "das",
+                "start": 131.22000122070312,
+                "end": 131.47999572753906
+            },
+            {
+                "word": "gibt's",
+                "start": 131.47999572753906,
+                "end": 131.83999633789062
+            },
+            {
+                "word": "doch",
+                "start": 131.83999633789062,
+                "end": 132.05999755859375
+            },
+            {
+                "word": "gar",
+                "start": 132.05999755859375,
+                "end": 132.44000244140625
+            },
+            {
+                "word": "nicht,",
+                "start": 132.44000244140625,
+                "end": 132.5399932861328
+            },
+            {
+                "word": "verdammt!",
+                "start": 132.8800048828125,
+                "end": 133.52000122070314
+            }
+        ],
+        "translationEn": "Haha, that can't be true, damn it!",
+        "translationVi": "Haha, cái đó không thể nào có thật được, chết tiệt!"
+    },
+    {
+        "text": "Jetzt muss ich mich nicht mehr um die unfruchtbaren Felder sorgen.",
+        "start": 144.7800048828125,
+        "end": 148.4600036621094,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 144.7800048828125,
+                "end": 145.60000610351562
+            },
+            {
+                "word": "muss",
+                "start": 145.60000610351562,
+                "end": 145.82000732421875
+            },
+            {
+                "word": "ich",
+                "start": 145.82000732421875,
+                "end": 145.97999572753906
+            },
+            {
+                "word": "mich",
+                "start": 145.97999572753906,
+                "end": 146.13999938964844
+            },
+            {
+                "word": "nicht",
+                "start": 146.13999938964844,
+                "end": 146.33999633789062
+            },
+            {
+                "word": "mehr",
+                "start": 146.33999633789062,
+                "end": 146.55999755859375
+            },
+            {
+                "word": "um",
+                "start": 146.55999755859375,
+                "end": 146.60000610351562
+            },
+            {
+                "word": "die",
+                "start": 146.60000610351562,
+                "end": 146.86000061035156
+            },
+            {
+                "word": "unfruchtbaren",
+                "start": 146.86000061035156,
+                "end": 147.3800048828125
+            },
+            {
+                "word": "Felder",
+                "start": 147.3800048828125,
+                "end": 147.82000732421875
+            },
+            {
+                "word": "sorgen.",
+                "start": 147.82000732421875,
+                "end": 148.4600036621094
+            }
+        ],
+        "translationEn": "Now I no longer have to worry about the barren fields.",
+        "translationVi": "Bây giờ tôi không còn phải lo lắng về những cánh đồng cằn cỗi nữa."
+    },
+    {
+        "text": "Ich kann die ganzen Lebensmittel auf dem Markt des Königreichs verkaufen.",
+        "start": 149.0999969482422,
+        "end": 153.55999450683595,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 149.0999969482422,
+                "end": 149.1999969482422
+            },
+            {
+                "word": "kann",
+                "start": 149.1999969482422,
+                "end": 149.4199981689453
+            },
+            {
+                "word": "die",
+                "start": 149.4199981689453,
+                "end": 149.6199951171875
+            },
+            {
+                "word": "ganzen",
+                "start": 149.6199951171875,
+                "end": 150.10000610351562
+            },
+            {
+                "word": "Lebensmittel",
+                "start": 150.10000610351562,
+                "end": 150.74000549316406
+            },
+            {
+                "word": "auf",
+                "start": 150.74000549316406,
+                "end": 151.13999938964844
+            },
+            {
+                "word": "dem",
+                "start": 151.13999938964844,
+                "end": 151.36000061035156
+            },
+            {
+                "word": "Markt",
+                "start": 151.36000061035156,
+                "end": 151.66000366210938
+            },
+            {
+                "word": "des",
+                "start": 151.66000366210938,
+                "end": 151.97999572753906
+            },
+            {
+                "word": "Königreichs",
+                "start": 151.97999572753906,
+                "end": 152.75999450683594
+            },
+            {
+                "word": "verkaufen.",
+                "start": 152.75999450683594,
+                "end": 153.55999450683595
+            }
+        ],
+        "translationEn": "I can sell all the food on the market of the kingdom.",
+        "translationVi": "Tôi có thể bán tất cả thực phẩm trên chợ của vương quốc."
+    },
+    {
+        "text": "Jeden Tag brachte Gopi die vermehrten Waren aus dem Topf ins Königreich und probierte jeden Tag ein neues Produkt.",
+        "start": 154.50000610351563,
+        "end": 161.74000244140626,
+        "wordTimings": [
+            {
+                "word": "Jeden",
+                "start": 154.50000610351563,
+                "end": 154.82000732421875
+            },
+            {
+                "word": "Tag",
+                "start": 154.82000732421875,
+                "end": 155.17999267578125
+            },
+            {
+                "word": "brachte",
+                "start": 155.17999267578125,
+                "end": 155.6199951171875
+            },
+            {
+                "word": "Gopi",
+                "start": 155.6199951171875,
+                "end": 156.1199951171875
+            },
+            {
+                "word": "die",
+                "start": 156.1199951171875,
+                "end": 156.27999877929688
+            },
+            {
+                "word": "vermehrten",
+                "start": 156.27999877929688,
+                "end": 156.82000732421875
+            },
+            {
+                "word": "Waren",
+                "start": 156.82000732421875,
+                "end": 157.1199951171875
+            },
+            {
+                "word": "aus",
+                "start": 157.1199951171875,
+                "end": 157.3800048828125
+            },
+            {
+                "word": "dem",
+                "start": 157.3800048828125,
+                "end": 157.60000610351562
+            },
+            {
+                "word": "Topf",
+                "start": 157.60000610351562,
+                "end": 157.9199981689453
+            },
+            {
+                "word": "ins",
+                "start": 157.9199981689453,
+                "end": 158.25999450683594
+            },
+            {
+                "word": "Königreich",
+                "start": 158.25999450683594,
+                "end": 158.94000244140625
+            },
+            {
+                "word": "und",
+                "start": 158.94000244140625,
+                "end": 159.44000244140625
+            },
+            {
+                "word": "probierte",
+                "start": 159.44000244140625,
+                "end": 159.82000732421875
+            },
+            {
+                "word": "jeden",
+                "start": 159.82000732421875,
+                "end": 160.22000122070312
+            },
+            {
+                "word": "Tag",
+                "start": 160.22000122070312,
+                "end": 160.44000244140625
+            },
+            {
+                "word": "ein",
+                "start": 160.44000244140625,
+                "end": 160.67999267578125
+            },
+            {
+                "word": "neues",
+                "start": 160.67999267578125,
+                "end": 161
+            },
+            {
+                "word": "Produkt.",
+                "start": 161,
+                "end": 161.74000244140626
+            }
+        ],
+        "translationEn": "Every day, Gopi brought the increased goods from the pot to the kingdom and tried a new product each day.",
+        "translationVi": "Mỗi ngày, Gopi mang hàng hóa tăng trưởng từ nồi vào vương quốc và thử một sản phẩm mới mỗi ngày."
+    },
+    {
+        "text": "Eines Tages Kleidung, am nächsten Tag Gemüse, am anderen Tag Bohnen.",
+        "start": 163.70000305175782,
+        "end": 170.12000732421876,
+        "wordTimings": [
+            {
+                "word": "Eines",
+                "start": 163.70000305175782,
+                "end": 163.8800048828125
+            },
+            {
+                "word": "Tages",
+                "start": 163.8800048828125,
+                "end": 164.24000549316406
+            },
+            {
+                "word": "Kleidung,",
+                "start": 164.24000549316406,
+                "end": 164.8000030517578
+            },
+            {
+                "word": "am",
+                "start": 165.67999267578125,
+                "end": 165.8800048828125
+            },
+            {
+                "word": "nächsten",
+                "start": 165.8800048828125,
+                "end": 166.1999969482422
+            },
+            {
+                "word": "Tag",
+                "start": 166.1999969482422,
+                "end": 166.72000122070312
+            },
+            {
+                "word": "Gemüse,",
+                "start": 166.72000122070312,
+                "end": 167.33999633789062
+            },
+            {
+                "word": "am",
+                "start": 168.52000427246094,
+                "end": 168.63999938964844
+            },
+            {
+                "word": "anderen",
+                "start": 168.63999938964844,
+                "end": 168.9600067138672
+            },
+            {
+                "word": "Tag",
+                "start": 168.9600067138672,
+                "end": 169.4199981689453
+            },
+            {
+                "word": "Bohnen.",
+                "start": 169.4199981689453,
+                "end": 170.12000732421876
+            }
+        ],
+        "translationEn": "One day clothes, the next day vegetables, the other day beans.",
+        "translationVi": "Một ngày là quần áo, ngày tiếp theo là rau, ngày khác nữa là đậu."
+    },
+    {
+        "text": "Was auch immer er in den Zaubertopf gab, es vermehrte sich.",
+        "start": 169.72000732421876,
+        "end": 174.66000061035157,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 169.72000732421876,
+                "end": 170.9199981689453
+            },
+            {
+                "word": "auch",
+                "start": 170.9199981689453,
+                "end": 171.27999877929688
+            },
+            {
+                "word": "immer",
+                "start": 171.27999877929688,
+                "end": 171.5800018310547
+            },
+            {
+                "word": "er",
+                "start": 171.5800018310547,
+                "end": 171.8000030517578
+            },
+            {
+                "word": "in",
+                "start": 171.8000030517578,
+                "end": 171.9600067138672
+            },
+            {
+                "word": "den",
+                "start": 171.9600067138672,
+                "end": 172.17999267578125
+            },
+            {
+                "word": "Zaubertopf",
+                "start": 172.17999267578125,
+                "end": 172.6999969482422
+            },
+            {
+                "word": "gab,",
+                "start": 172.6999969482422,
+                "end": 173
+            },
+            {
+                "word": "es",
+                "start": 173.4199981689453,
+                "end": 173.67999267578125
+            },
+            {
+                "word": "vermehrte",
+                "start": 173.67999267578125,
+                "end": 174.05999755859375
+            },
+            {
+                "word": "sich.",
+                "start": 174.05999755859375,
+                "end": 174.66000061035157
+            }
+        ],
+        "translationEn": "Whatever he put into the magic pot, it multiplied.",
+        "translationVi": "Bất cứ thứ gì anh ta cho vào nồi phép thuật, đều sinh sôi nảy nở."
+    },
+    {
+        "text": "Andere Verkäufer waren neidisch auf seinen Erfolg und beschwerten sich über Gopi bei einem Soldaten des Königs.",
+        "start": 175.92000427246094,
+        "end": 182.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Andere",
+                "start": 175.92000427246094,
+                "end": 176.05999755859375
+            },
+            {
+                "word": "Verkäufer",
+                "start": 176.05999755859375,
+                "end": 176.6199951171875
+            },
+            {
+                "word": "waren",
+                "start": 176.6199951171875,
+                "end": 176.94000244140625
+            },
+            {
+                "word": "neidisch",
+                "start": 176.94000244140625,
+                "end": 177.33999633789062
+            },
+            {
+                "word": "auf",
+                "start": 177.33999633789062,
+                "end": 177.5399932861328
+            },
+            {
+                "word": "seinen",
+                "start": 177.5399932861328,
+                "end": 177.77999877929688
+            },
+            {
+                "word": "Erfolg",
+                "start": 177.77999877929688,
+                "end": 178.1999969482422
+            },
+            {
+                "word": "und",
+                "start": 178.1999969482422,
+                "end": 178.67999267578125
+            },
+            {
+                "word": "beschwerten",
+                "start": 178.67999267578125,
+                "end": 179.24000549316406
+            },
+            {
+                "word": "sich",
+                "start": 179.24000549316406,
+                "end": 179.44000244140625
+            },
+            {
+                "word": "über",
+                "start": 179.44000244140625,
+                "end": 179.67999267578125
+            },
+            {
+                "word": "Gopi",
+                "start": 179.67999267578125,
+                "end": 179.97999572753906
+            },
+            {
+                "word": "bei",
+                "start": 179.97999572753906,
+                "end": 180.24000549316406
+            },
+            {
+                "word": "einem",
+                "start": 180.24000549316406,
+                "end": 180.44000244140625
+            },
+            {
+                "word": "Soldaten",
+                "start": 180.44000244140625,
+                "end": 180.97999572753906
+            },
+            {
+                "word": "des",
+                "start": 180.97999572753906,
+                "end": 181.25999450683594
+            },
+            {
+                "word": "Königs.",
+                "start": 181.25999450683594,
+                "end": 182.0799987792969
+            }
+        ],
+        "translationEn": "Other sellers were envious of his success and complained about Gopi to a soldier of the king.",
+        "translationVi": "Những người bán hàng khác ghen tị với thành công của anh ấy và phàn nàn về Gopi với một người lính của nhà vua."
+    },
+    {
+        "text": "Am nächsten Tag folgte der Soldat Gopi heimlich.",
+        "start": 182.9,
+        "end": 186.04000549316407,
+        "wordTimings": [
+            {
+                "word": "Am",
+                "start": 182.9,
+                "end": 183.0800018310547
+            },
+            {
+                "word": "nächsten",
+                "start": 183.0800018310547,
+                "end": 183.4600067138672
+            },
+            {
+                "word": "Tag",
+                "start": 183.4600067138672,
+                "end": 183.77999877929688
+            },
+            {
+                "word": "folgte",
+                "start": 183.77999877929688,
+                "end": 184.16000366210938
+            },
+            {
+                "word": "der",
+                "start": 184.16000366210938,
+                "end": 184.47999572753906
+            },
+            {
+                "word": "Soldat",
+                "start": 184.47999572753906,
+                "end": 184.77999877929688
+            },
+            {
+                "word": "Gopi",
+                "start": 184.77999877929688,
+                "end": 185.24000549316406
+            },
+            {
+                "word": "heimlich.",
+                "start": 185.24000549316406,
+                "end": 186.04000549316407
+            }
+        ],
+        "translationEn": "The next day, the soldier Gopi followed secretly.",
+        "translationVi": "Ngày hôm sau, người lính Gopi lén lút theo dõi."
+    },
+    {
+        "text": "Und Gopi nahm an diesem Morgen den Zaubertopf und setzte ein Küken in den Topf, um es auf dem Markt des Königreichs zu verkaufen.",
+        "start": 187.0999969482422,
+        "end": 195.12000732421876,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 187.0999969482422,
+                "end": 187.52000427246094
+            },
+            {
+                "word": "Gopi",
+                "start": 187.52000427246094,
+                "end": 188.1999969482422
+            },
+            {
+                "word": "nahm",
+                "start": 188.1999969482422,
+                "end": 188.4600067138672
+            },
+            {
+                "word": "an",
+                "start": 188.4600067138672,
+                "end": 188.67999267578125
+            },
+            {
+                "word": "diesem",
+                "start": 188.67999267578125,
+                "end": 188.9600067138672
+            },
+            {
+                "word": "Morgen",
+                "start": 188.9600067138672,
+                "end": 189.27999877929688
+            },
+            {
+                "word": "den",
+                "start": 189.27999877929688,
+                "end": 189.74000549316406
+            },
+            {
+                "word": "Zaubertopf",
+                "start": 189.74000549316406,
+                "end": 190.33999633789062
+            },
+            {
+                "word": "und",
+                "start": 190.33999633789062,
+                "end": 190.5800018310547
+            },
+            {
+                "word": "setzte",
+                "start": 190.5800018310547,
+                "end": 190.82000732421875
+            },
+            {
+                "word": "ein",
+                "start": 190.82000732421875,
+                "end": 191.1199951171875
+            },
+            {
+                "word": "Küken",
+                "start": 191.1199951171875,
+                "end": 191.3800048828125
+            },
+            {
+                "word": "in",
+                "start": 191.3800048828125,
+                "end": 191.60000610351562
+            },
+            {
+                "word": "den",
+                "start": 191.60000610351562,
+                "end": 191.75999450683594
+            },
+            {
+                "word": "Topf,",
+                "start": 191.75999450683594,
+                "end": 192.1199951171875
+            },
+            {
+                "word": "um",
+                "start": 192.27999877929688,
+                "end": 192.33999633789062
+            },
+            {
+                "word": "es",
+                "start": 192.33999633789062,
+                "end": 192.47999572753906
+            },
+            {
+                "word": "auf",
+                "start": 192.47999572753906,
+                "end": 192.63999938964844
+            },
+            {
+                "word": "dem",
+                "start": 192.63999938964844,
+                "end": 192.83999633789062
+            },
+            {
+                "word": "Markt",
+                "start": 192.83999633789062,
+                "end": 193.0800018310547
+            },
+            {
+                "word": "des",
+                "start": 193.0800018310547,
+                "end": 193.3000030517578
+            },
+            {
+                "word": "Königreichs",
+                "start": 193.3000030517578,
+                "end": 194.16000366210938
+            },
+            {
+                "word": "zu",
+                "start": 194.16000366210938,
+                "end": 194.4600067138672
+            },
+            {
+                "word": "verkaufen.",
+                "start": 194.4600067138672,
+                "end": 195.12000732421876
+            }
+        ],
+        "translationEn": "And Gopi took the magic pot that morning and placed a chick in the pot to sell it at the market of the kingdom.",
+        "translationVi": "Và Gopi đã lấy nồi ma thuật vào buổi sáng hôm đó và đặt một con gà con vào nồi, để bán nó ở chợ của vương quốc."
+    },
+    {
+        "text": "Wenig später kamen hunderte von Küken aus dem Topf.",
+        "start": 194.72000732421876,
+        "end": 198.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Wenig",
+                "start": 194.72000732421876,
+                "end": 195.83999633789062
+            },
+            {
+                "word": "später",
+                "start": 195.83999633789062,
+                "end": 196.1999969482422
+            },
+            {
+                "word": "kamen",
+                "start": 196.1999969482422,
+                "end": 196.9199981689453
+            },
+            {
+                "word": "hunderte",
+                "start": 196.9199981689453,
+                "end": 196.9199981689453
+            },
+            {
+                "word": "von",
+                "start": 196.9199981689453,
+                "end": 197.47999572753906
+            },
+            {
+                "word": "Küken",
+                "start": 197.47999572753906,
+                "end": 197.47999572753906
+            },
+            {
+                "word": "aus",
+                "start": 197.47999572753906,
+                "end": 197.6999969482422
+            },
+            {
+                "word": "dem",
+                "start": 197.6999969482422,
+                "end": 197.9199981689453
+            },
+            {
+                "word": "Topf.",
+                "start": 197.9199981689453,
+                "end": 198.4199951171875
+            }
+        ],
+        "translationEn": "Shortly after, hundreds of chicks came out of the pot.",
+        "translationVi": "Chẳng bao lâu sau, hàng trăm chú gà con đã chui ra từ nồi."
+    },
+    {
+        "text": "Der Soldat konnte seinen Augen nicht trauen.",
+        "start": 198.50000610351563,
+        "end": 200.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 198.50000610351563,
+                "end": 198.67999267578125
+            },
+            {
+                "word": "Soldat",
+                "start": 198.67999267578125,
+                "end": 199.1199951171875
+            },
+            {
+                "word": "konnte",
+                "start": 199.1199951171875,
+                "end": 199.3800048828125
+            },
+            {
+                "word": "seinen",
+                "start": 199.3800048828125,
+                "end": 199.60000610351562
+            },
+            {
+                "word": "Augen",
+                "start": 199.60000610351562,
+                "end": 199.89999389648438
+            },
+            {
+                "word": "nicht",
+                "start": 199.89999389648438,
+                "end": 200.1199951171875
+            },
+            {
+                "word": "trauen.",
+                "start": 200.1199951171875,
+                "end": 200.6800048828125
+            }
+        ],
+        "translationEn": "The soldier couldn't believe his eyes.",
+        "translationVi": "Người lính không thể tin vào mắt mình."
+    },
+    {
+        "text": "Mit hunderten von Küken, die in Gopis Haus herumliefen, bis eines versehentlich in den Topf fiel.",
+        "start": 200.8600067138672,
+        "end": 208.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Mit",
+                "start": 200.8600067138672,
+                "end": 201.13999938964844
+            },
+            {
+                "word": "hunderten",
+                "start": 201.13999938964844,
+                "end": 201.74000549316406
+            },
+            {
+                "word": "von",
+                "start": 201.74000549316406,
+                "end": 202.24000549316406
+            },
+            {
+                "word": "Küken,",
+                "start": 202.24000549316406,
+                "end": 202.24000549316406
+            },
+            {
+                "word": "die",
+                "start": 202.4199981689453,
+                "end": 202.4199981689453
+            },
+            {
+                "word": "in",
+                "start": 202.4199981689453,
+                "end": 202.5800018310547
+            },
+            {
+                "word": "Gopis",
+                "start": 202.5800018310547,
+                "end": 202.9600067138672
+            },
+            {
+                "word": "Haus",
+                "start": 202.9600067138672,
+                "end": 203.17999267578125
+            },
+            {
+                "word": "herumliefen,",
+                "start": 203.17999267578125,
+                "end": 203.97999572753906
+            },
+            {
+                "word": "bis",
+                "start": 205.66000366210938,
+                "end": 205.89999389648438
+            },
+            {
+                "word": "eines",
+                "start": 205.89999389648438,
+                "end": 206.36000061035156
+            },
+            {
+                "word": "versehentlich",
+                "start": 206.36000061035156,
+                "end": 207.0800018310547
+            },
+            {
+                "word": "in",
+                "start": 207.0800018310547,
+                "end": 207.32000732421875
+            },
+            {
+                "word": "den",
+                "start": 207.32000732421875,
+                "end": 207.5800018310547
+            },
+            {
+                "word": "Topf",
+                "start": 207.5800018310547,
+                "end": 207.8800048828125
+            },
+            {
+                "word": "fiel.",
+                "start": 207.8800048828125,
+                "end": 208.4199951171875
+            }
+        ],
+        "translationEn": "With hundreds of chicks running around in Gopi's house, until one accidentally fell into the pot.",
+        "translationVi": "Với hàng trăm chú gà con chạy quanh nhà Gopi, cho đến khi một chú vô tình rơi vào nồi."
+    },
+    {
+        "text": "Und dieses produzierte weitere hundert Küken.",
+        "start": 208.5999969482422,
+        "end": 211.4999969482422,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 208.5999969482422,
+                "end": 209
+            },
+            {
+                "word": "dieses",
+                "start": 209,
+                "end": 209.24000549316406
+            },
+            {
+                "word": "produzierte",
+                "start": 209.24000549316406,
+                "end": 209.83999633789062
+            },
+            {
+                "word": "weitere",
+                "start": 209.83999633789062,
+                "end": 210.3800048828125
+            },
+            {
+                "word": "hundert",
+                "start": 210.3800048828125,
+                "end": 210.89999389648438
+            },
+            {
+                "word": "Küken.",
+                "start": 210.89999389648438,
+                "end": 211.4999969482422
+            }
+        ],
+        "translationEn": "And this produced another hundred chicks.",
+        "translationVi": "Và điều này đã sản xuất thêm một trăm chú gà con."
+    },
+    {
+        "text": "Gopi hatte sogar ein Küken auf seinem Kopf, unter seinem Stuhl, in seinem Essteller.",
+        "start": 212.14000549316407,
+        "end": 216.60000305175782,
+        "wordTimings": [
+            {
+                "word": "Gopi",
+                "start": 212.14000549316407,
+                "end": 212.36000061035156
+            },
+            {
+                "word": "hatte",
+                "start": 212.36000061035156,
+                "end": 212.55999755859375
+            },
+            {
+                "word": "sogar",
+                "start": 212.55999755859375,
+                "end": 212.89999389648438
+            },
+            {
+                "word": "ein",
+                "start": 212.89999389648438,
+                "end": 213.1999969482422
+            },
+            {
+                "word": "Küken",
+                "start": 213.1999969482422,
+                "end": 213.39999389648438
+            },
+            {
+                "word": "auf",
+                "start": 213.39999389648438,
+                "end": 213.55999755859375
+            },
+            {
+                "word": "seinem",
+                "start": 213.55999755859375,
+                "end": 213.8000030517578
+            },
+            {
+                "word": "Kopf,",
+                "start": 213.8000030517578,
+                "end": 214.1199951171875
+            },
+            {
+                "word": "unter",
+                "start": 214.33999633789062,
+                "end": 214.44000244140625
+            },
+            {
+                "word": "seinem",
+                "start": 214.44000244140625,
+                "end": 214.75999450683594
+            },
+            {
+                "word": "Stuhl,",
+                "start": 214.75999450683594,
+                "end": 215.33999633789062
+            },
+            {
+                "word": "in",
+                "start": 215.4199981689453,
+                "end": 215.5
+            },
+            {
+                "word": "seinem",
+                "start": 215.5,
+                "end": 215.6999969482422
+            },
+            {
+                "word": "Essteller.",
+                "start": 215.6999969482422,
+                "end": 216.60000305175782
+            }
+        ],
+        "translationEn": "Gopi even had a chick on his head, under his chair, in his plate.",
+        "translationVi": "Gopi thậm chí còn có một con gà con trên đầu, dưới ghế của mình, trong đĩa ăn của mình."
+    },
+    {
+        "text": "Der Soldat ging sofort zum König und berichtete ihm alles, was er gesehen hatte.",
+        "start": 217.17999877929688,
+        "end": 221.5799987792969,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 217.17999877929688,
+                "end": 217.44000244140625
+            },
+            {
+                "word": "Soldat",
+                "start": 217.44000244140625,
+                "end": 217.8800048828125
+            },
+            {
+                "word": "ging",
+                "start": 217.8800048828125,
+                "end": 218.05999755859375
+            },
+            {
+                "word": "sofort",
+                "start": 218.05999755859375,
+                "end": 218.55999755859375
+            },
+            {
+                "word": "zum",
+                "start": 218.55999755859375,
+                "end": 218.8000030517578
+            },
+            {
+                "word": "König",
+                "start": 218.8000030517578,
+                "end": 219.13999938964844
+            },
+            {
+                "word": "und",
+                "start": 219.13999938964844,
+                "end": 219.33999633789062
+            },
+            {
+                "word": "berichtete",
+                "start": 219.33999633789062,
+                "end": 219.86000061035156
+            },
+            {
+                "word": "ihm",
+                "start": 219.86000061035156,
+                "end": 220.05999755859375
+            },
+            {
+                "word": "alles,",
+                "start": 220.05999755859375,
+                "end": 220.33999633789062
+            },
+            {
+                "word": "was",
+                "start": 220.44000244140625,
+                "end": 220.52000427246094
+            },
+            {
+                "word": "er",
+                "start": 220.52000427246094,
+                "end": 220.66000366210938
+            },
+            {
+                "word": "gesehen",
+                "start": 220.66000366210938,
+                "end": 221.0399932861328
+            },
+            {
+                "word": "hatte.",
+                "start": 221.0399932861328,
+                "end": 221.5799987792969
+            }
+        ],
+        "translationEn": "The soldier immediately went to the king and reported to him everything he had seen.",
+        "translationVi": "Người lính lập tức đến gặp vua và báo cáo cho ông mọi điều mà anh ta đã thấy."
+    },
+    {
+        "text": "Der König befahl, dass Gopi und sein Zaubertopf sofort zu ihm gebracht werden sollten.",
+        "start": 221.17999877929688,
+        "end": 226.97999267578126,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 221.17999877929688,
+                "end": 222.0399932861328
+            },
+            {
+                "word": "König",
+                "start": 222.0399932861328,
+                "end": 222.5
+            },
+            {
+                "word": "befahl,",
+                "start": 222.5,
+                "end": 222.8800048828125
+            },
+            {
+                "word": "dass",
+                "start": 223.13999938964844,
+                "end": 223.13999938964844
+            },
+            {
+                "word": "Gopi",
+                "start": 223.13999938964844,
+                "end": 223.4199981689453
+            },
+            {
+                "word": "und",
+                "start": 223.4199981689453,
+                "end": 223.60000610351562
+            },
+            {
+                "word": "sein",
+                "start": 223.60000610351562,
+                "end": 223.82000732421875
+            },
+            {
+                "word": "Zaubertopf",
+                "start": 223.82000732421875,
+                "end": 224.3800048828125
+            },
+            {
+                "word": "sofort",
+                "start": 224.3800048828125,
+                "end": 225.02000427246094
+            },
+            {
+                "word": "zu",
+                "start": 225.02000427246094,
+                "end": 225.5
+            },
+            {
+                "word": "ihm",
+                "start": 225.5,
+                "end": 225.63999938964844
+            },
+            {
+                "word": "gebracht",
+                "start": 225.63999938964844,
+                "end": 226.05999755859375
+            },
+            {
+                "word": "werden",
+                "start": 226.05999755859375,
+                "end": 226.36000061035156
+            },
+            {
+                "word": "sollten.",
+                "start": 226.36000061035156,
+                "end": 226.97999267578126
+            }
+        ],
+        "translationEn": "The king ordered that Gopi and his magic pot be brought to him immediately.",
+        "translationVi": "Nhà vua ra lệnh rằng Gopi và chiếc nồi ma thuật của anh ta phải được đưa ngay lập tức đến gặp ông."
+    },
+    {
+        "text": "Gopi ging vor den König und er beschlagnahmte den Topf für den Schatz des Königreichs.",
+        "start": 227.50000610351563,
+        "end": 232.8800018310547,
+        "wordTimings": [
+            {
+                "word": "Gopi",
+                "start": 227.50000610351563,
+                "end": 227.82000732421875
+            },
+            {
+                "word": "ging",
+                "start": 227.82000732421875,
+                "end": 227.9600067138672
+            },
+            {
+                "word": "vor",
+                "start": 227.9600067138672,
+                "end": 228.1999969482422
+            },
+            {
+                "word": "den",
+                "start": 228.1999969482422,
+                "end": 228.44000244140625
+            },
+            {
+                "word": "König",
+                "start": 228.44000244140625,
+                "end": 228.77999877929688
+            },
+            {
+                "word": "und",
+                "start": 228.77999877929688,
+                "end": 229.25999450683594
+            },
+            {
+                "word": "er",
+                "start": 229.25999450683594,
+                "end": 229.66000366210938
+            },
+            {
+                "word": "beschlagnahmte",
+                "start": 229.66000366210938,
+                "end": 230.3000030517578
+            },
+            {
+                "word": "den",
+                "start": 230.3000030517578,
+                "end": 230.5399932861328
+            },
+            {
+                "word": "Topf",
+                "start": 230.5399932861328,
+                "end": 230.75999450683594
+            },
+            {
+                "word": "für",
+                "start": 230.75999450683594,
+                "end": 231.05999755859375
+            },
+            {
+                "word": "den",
+                "start": 231.05999755859375,
+                "end": 231.3000030517578
+            },
+            {
+                "word": "Schatz",
+                "start": 231.3000030517578,
+                "end": 231.5399932861328
+            },
+            {
+                "word": "des",
+                "start": 231.5399932861328,
+                "end": 231.77999877929688
+            },
+            {
+                "word": "Königreichs.",
+                "start": 231.77999877929688,
+                "end": 232.8800018310547
+            }
+        ],
+        "translationEn": "Gopi went before the king and he confiscated the pot for the kingdom's treasure.",
+        "translationVi": "Gopi đã đến trước vua và ông đã tịch thu cái nồi cho kho báu của vương quốc."
+    },
+    {
+        "text": "Gopi war sehr verärgert.",
+        "start": 233.17999877929688,
+        "end": 234.90000610351564,
+        "wordTimings": [
+            {
+                "word": "Gopi",
+                "start": 233.17999877929688,
+                "end": 233.4600067138672
+            },
+            {
+                "word": "war",
+                "start": 233.4600067138672,
+                "end": 233.5800018310547
+            },
+            {
+                "word": "sehr",
+                "start": 233.5800018310547,
+                "end": 234.02000427246094
+            },
+            {
+                "word": "verärgert.",
+                "start": 234.02000427246094,
+                "end": 234.90000610351564
+            }
+        ],
+        "translationEn": "Gopi was very upset.",
+        "translationVi": "Gopi rất tức giận."
+    },
+    {
+        "text": "Ich möchte mir diesen Zaubertopf genauer ansehen, der meinen Reichtum vergrößern wird.",
+        "start": 238.2800048828125,
+        "end": 244.13999633789064,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 238.2800048828125,
+                "end": 238.4199981689453
+            },
+            {
+                "word": "möchte",
+                "start": 238.4199981689453,
+                "end": 238.77999877929688
+            },
+            {
+                "word": "mir",
+                "start": 238.77999877929688,
+                "end": 239.05999755859375
+            },
+            {
+                "word": "diesen",
+                "start": 239.05999755859375,
+                "end": 239.39999389648438
+            },
+            {
+                "word": "Zaubertopf",
+                "start": 239.39999389648438,
+                "end": 240.13999938964844
+            },
+            {
+                "word": "genauer",
+                "start": 240.13999938964844,
+                "end": 241.02000427246094
+            },
+            {
+                "word": "ansehen,",
+                "start": 241.02000427246094,
+                "end": 241.24000549316406
+            },
+            {
+                "word": "der",
+                "start": 241.89999389648438,
+                "end": 242.02000427246094
+            },
+            {
+                "word": "meinen",
+                "start": 242.02000427246094,
+                "end": 242.3800048828125
+            },
+            {
+                "word": "Reichtum",
+                "start": 242.3800048828125,
+                "end": 242.8800048828125
+            },
+            {
+                "word": "vergrößern",
+                "start": 242.8800048828125,
+                "end": 243.5800018310547
+            },
+            {
+                "word": "wird.",
+                "start": 243.5800018310547,
+                "end": 244.13999633789064
+            }
+        ],
+        "translationEn": "I want to take a closer look at this magic pot that will increase my wealth.",
+        "translationVi": "Tôi muốn xem xét kỹ hơn cái nồi ma thuật này, cái sẽ làm tăng sự giàu có của tôi."
+    },
+    {
+        "text": "Der König näherte sich dem Zaubertopf und beugte sich hinein.",
+        "start": 244.87999572753907,
+        "end": 249.35999755859376,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 244.87999572753907,
+                "end": 245.52000427246094
+            },
+            {
+                "word": "König",
+                "start": 245.52000427246094,
+                "end": 246.02000427246094
+            },
+            {
+                "word": "näherte",
+                "start": 246.02000427246094,
+                "end": 246.52000427246094
+            },
+            {
+                "word": "sich",
+                "start": 246.52000427246094,
+                "end": 246.67999267578125
+            },
+            {
+                "word": "dem",
+                "start": 246.67999267578125,
+                "end": 246.9199981689453
+            },
+            {
+                "word": "Zaubertopf",
+                "start": 246.9199981689453,
+                "end": 247.47999572753906
+            },
+            {
+                "word": "und",
+                "start": 247.47999572753906,
+                "end": 247.83999633789062
+            },
+            {
+                "word": "beugte",
+                "start": 247.83999633789062,
+                "end": 248.16000366210938
+            },
+            {
+                "word": "sich",
+                "start": 248.16000366210938,
+                "end": 248.5399932861328
+            },
+            {
+                "word": "hinein.",
+                "start": 248.5399932861328,
+                "end": 249.35999755859376
+            }
+        ],
+        "translationEn": "The king approached the magic pot and leaned in.",
+        "translationVi": "Nhà vua tiến lại gần nồi phép và cúi xuống nhìn vào bên trong."
+    },
+    {
+        "text": "Mein König, seid vorsichtig!",
+        "start": 249.76000061035157,
+        "end": 252.5799987792969,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 249.76000061035157,
+                "end": 250.55999755859375
+            },
+            {
+                "word": "König,",
+                "start": 250.55999755859375,
+                "end": 250.97999572753906
+            },
+            {
+                "word": "seid",
+                "start": 251.5,
+                "end": 251.5800018310547
+            },
+            {
+                "word": "vorsichtig!",
+                "start": 251.5800018310547,
+                "end": 252.5799987792969
+            }
+        ],
+        "translationEn": "My king, be careful!",
+        "translationVi": "Vị vua của tôi, hãy cẩn thận!"
+    },
+    {
+        "text": "Doch in diesem Moment rutschte der König aus.",
+        "start": 253.64000549316407,
+        "end": 256.40000610351564,
+        "wordTimings": [
+            {
+                "word": "Doch",
+                "start": 253.64000549316407,
+                "end": 253.77999877929688
+            },
+            {
+                "word": "in",
+                "start": 253.77999877929688,
+                "end": 253.97999572753906
+            },
+            {
+                "word": "diesem",
+                "start": 253.97999572753906,
+                "end": 254.27999877929688
+            },
+            {
+                "word": "Moment",
+                "start": 254.27999877929688,
+                "end": 254.66000366210938
+            },
+            {
+                "word": "rutschte",
+                "start": 254.66000366210938,
+                "end": 255.10000610351562
+            },
+            {
+                "word": "der",
+                "start": 255.10000610351562,
+                "end": 255.39999389648438
+            },
+            {
+                "word": "König",
+                "start": 255.39999389648438,
+                "end": 255.74000549316406
+            },
+            {
+                "word": "aus.",
+                "start": 255.74000549316406,
+                "end": 256.40000610351564
+            }
+        ],
+        "translationEn": "But at that moment, the king slipped.",
+        "translationVi": "Nhưng vào lúc này, nhà vua đã trượt chân."
+    },
+    {
+        "text": "Er konnte sein Gleichgewicht nicht halten und fiel direkt in den Topf.",
+        "start": 256.3400024414062,
+        "end": 260.37998657226564,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 256.3400024414062,
+                "end": 256.44000244140625
+            },
+            {
+                "word": "konnte",
+                "start": 256.44000244140625,
+                "end": 256.6600036621094
+            },
+            {
+                "word": "sein",
+                "start": 256.6600036621094,
+                "end": 256.8800048828125
+            },
+            {
+                "word": "Gleichgewicht",
+                "start": 256.8800048828125,
+                "end": 257.5
+            },
+            {
+                "word": "nicht",
+                "start": 257.5,
+                "end": 257.760009765625
+            },
+            {
+                "word": "halten",
+                "start": 257.760009765625,
+                "end": 258.05999755859375
+            },
+            {
+                "word": "und",
+                "start": 258.05999755859375,
+                "end": 258.6000061035156
+            },
+            {
+                "word": "fiel",
+                "start": 258.6000061035156,
+                "end": 258.739990234375
+            },
+            {
+                "word": "direkt",
+                "start": 258.739990234375,
+                "end": 259.2799987792969
+            },
+            {
+                "word": "in",
+                "start": 259.2799987792969,
+                "end": 259.55999755859375
+            },
+            {
+                "word": "den",
+                "start": 259.55999755859375,
+                "end": 259.7799987792969
+            },
+            {
+                "word": "Topf.",
+                "start": 259.7799987792969,
+                "end": 260.37998657226564
+            }
+        ],
+        "translationEn": "He couldn't maintain his balance and fell directly into the pot.",
+        "translationVi": "Anh ấy không thể giữ thăng bằng và đã ngã thẳng vào nồi."
+    },
+    {
+        "text": "Nein, der König ist in den Topf gefallen!",
+        "start": 261.1999877929687,
+        "end": 265.09998779296876,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 261.1999877929687,
+                "end": 262
+            },
+            {
+                "word": "der",
+                "start": 262.5400085449219,
+                "end": 262.8800048828125
+            },
+            {
+                "word": "König",
+                "start": 262.8800048828125,
+                "end": 263.32000732421875
+            },
+            {
+                "word": "ist",
+                "start": 263.32000732421875,
+                "end": 263.5400085449219
+            },
+            {
+                "word": "in",
+                "start": 263.5400085449219,
+                "end": 263.6600036621094
+            },
+            {
+                "word": "den",
+                "start": 263.6600036621094,
+                "end": 264.05999755859375
+            },
+            {
+                "word": "Topf",
+                "start": 264.05999755859375,
+                "end": 264.2200012207031
+            },
+            {
+                "word": "gefallen!",
+                "start": 264.2200012207031,
+                "end": 265.09998779296876
+            }
+        ],
+        "translationEn": "No, the king has fallen into the pot!",
+        "translationVi": "Không, nhà vua đã rơi vào nồi!"
+    },
+    {
+        "text": "Oh verdammt!",
+        "start": 265.32001342773435,
+        "end": 266.65000610351564,
+        "wordTimings": [
+            {
+                "word": "Oh",
+                "start": 265.32001342773435,
+                "end": 266
+            },
+            {
+                "word": "verdammt!",
+                "start": 266,
+                "end": 266.65000610351564
+            }
+        ],
+        "translationEn": "Oh damn!",
+        "translationVi": "Ôi chết tiệt!"
+    },
+    {
+        "text": "In nur wenigen Minuten hatten sich hundert weitere Mitglieder des Königs in der Halle versammelt.",
+        "start": 267.2399963378906,
+        "end": 272.75999145507814,
+        "wordTimings": [
+            {
+                "word": "In",
+                "start": 267.2399963378906,
+                "end": 267.5400085449219
+            },
+            {
+                "word": "nur",
+                "start": 267.5400085449219,
+                "end": 267.9599914550781
+            },
+            {
+                "word": "wenigen",
+                "start": 267.9599914550781,
+                "end": 268.20001220703125
+            },
+            {
+                "word": "Minuten",
+                "start": 268.20001220703125,
+                "end": 268.70001220703125
+            },
+            {
+                "word": "hatten",
+                "start": 268.70001220703125,
+                "end": 268.9800109863281
+            },
+            {
+                "word": "sich",
+                "start": 268.9800109863281,
+                "end": 269.3800048828125
+            },
+            {
+                "word": "hundert",
+                "start": 269.3800048828125,
+                "end": 269.7799987792969
+            },
+            {
+                "word": "weitere",
+                "start": 269.7799987792969,
+                "end": 270.260009765625
+            },
+            {
+                "word": "Mitglieder",
+                "start": 270.260009765625,
+                "end": 270.70001220703125
+            },
+            {
+                "word": "des",
+                "start": 270.70001220703125,
+                "end": 270.9800109863281
+            },
+            {
+                "word": "Königs",
+                "start": 270.9800109863281,
+                "end": 271.32000732421875
+            },
+            {
+                "word": "in",
+                "start": 271.32000732421875,
+                "end": 271.5
+            },
+            {
+                "word": "der",
+                "start": 271.5,
+                "end": 271.79998779296875
+            },
+            {
+                "word": "Halle",
+                "start": 271.79998779296875,
+                "end": 272
+            },
+            {
+                "word": "versammelt.",
+                "start": 272,
+                "end": 272.75999145507814
+            }
+        ],
+        "translationEn": "Within just a few minutes, a hundred more members of the king had gathered in the hall.",
+        "translationVi": "Chỉ trong vài phút, thêm một trăm thành viên nữa của nhà vua đã tập trung trong hội trường."
+    },
+    {
+        "text": "Die Soldaten waren verwirrt, wem sie gehorchen sollten.",
+        "start": 272.9,
+        "end": 276.2200134277344,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 272.9,
+                "end": 273.17999267578125
+            },
+            {
+                "word": "Soldaten",
+                "start": 273.17999267578125,
+                "end": 273.6400146484375
+            },
+            {
+                "word": "waren",
+                "start": 273.6400146484375,
+                "end": 273.9200134277344
+            },
+            {
+                "word": "verwirrt,",
+                "start": 273.9200134277344,
+                "end": 274.4200134277344
+            },
+            {
+                "word": "wem",
+                "start": 274.8800048828125,
+                "end": 274.9200134277344
+            },
+            {
+                "word": "sie",
+                "start": 274.9200134277344,
+                "end": 275.1199951171875
+            },
+            {
+                "word": "gehorchen",
+                "start": 275.1199951171875,
+                "end": 275.5799865722656
+            },
+            {
+                "word": "sollten.",
+                "start": 275.5799865722656,
+                "end": 276.2200134277344
+            }
+        ],
+        "translationEn": "The soldiers were confused about whom they should obey.",
+        "translationVi": "Các binh sĩ cảm thấy bối rối không biết nên tuân theo ai."
+    },
+    {
+        "text": "Könige kämpften gegeneinander um den Thron.",
+        "start": 275.82001342773435,
+        "end": 278.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Könige",
+                "start": 275.82001342773435,
+                "end": 276.760009765625
+            },
+            {
+                "word": "kämpften",
+                "start": 276.760009765625,
+                "end": 277.2200012207031
+            },
+            {
+                "word": "gegeneinander",
+                "start": 277.2200012207031,
+                "end": 277.94000244140625
+            },
+            {
+                "word": "um",
+                "start": 277.94000244140625,
+                "end": 278.17999267578125
+            },
+            {
+                "word": "den",
+                "start": 278.17999267578125,
+                "end": 278.4800109863281
+            },
+            {
+                "word": "Thron.",
+                "start": 278.4800109863281,
+                "end": 278.9600036621094
+            }
+        ],
+        "translationEn": "Kings fought against each other for the throne.",
+        "translationVi": "Các vị vua đã chiến đấu với nhau vì ngai vàng."
+    },
+    {
+        "text": "Jeder behauptete, der wahre König zu sein.",
+        "start": 279.1200012207031,
+        "end": 281.8400085449219,
+        "wordTimings": [
+            {
+                "word": "Jeder",
+                "start": 279.1200012207031,
+                "end": 279.260009765625
+            },
+            {
+                "word": "behauptete,",
+                "start": 279.260009765625,
+                "end": 279.9599914550781
+            },
+            {
+                "word": "der",
+                "start": 280.260009765625,
+                "end": 280.4200134277344
+            },
+            {
+                "word": "wahre",
+                "start": 280.4200134277344,
+                "end": 280.70001220703125
+            },
+            {
+                "word": "König",
+                "start": 280.70001220703125,
+                "end": 281.0799865722656
+            },
+            {
+                "word": "zu",
+                "start": 281.0799865722656,
+                "end": 281.5400085449219
+            },
+            {
+                "word": "sein.",
+                "start": 281.5400085449219,
+                "end": 281.8400085449219
+            }
+        ],
+        "translationEn": "Everyone claimed to be the true king.",
+        "translationVi": "Mọi người đều tuyên bố mình là vua thật sự."
+    },
+    {
+        "text": "Ich bin der wahre König!",
+        "start": 281.7200073242187,
+        "end": 283.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 281.7200073242187,
+                "end": 282.0400085449219
+            },
+            {
+                "word": "bin",
+                "start": 282.0400085449219,
+                "end": 282.260009765625
+            },
+            {
+                "word": "der",
+                "start": 282.260009765625,
+                "end": 282.5199890136719
+            },
+            {
+                "word": "wahre",
+                "start": 282.5199890136719,
+                "end": 282.79998779296875
+            },
+            {
+                "word": "König!",
+                "start": 282.79998779296875,
+                "end": 283.50001220703126
+            }
+        ],
+        "translationEn": "I am the true king!",
+        "translationVi": "Tôi là vị vua thật sự!"
+    },
+    {
+        "text": "Nein, ich bin es!",
+        "start": 283.44000854492185,
+        "end": 285.35999755859376,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 283.44000854492185,
+                "end": 283.760009765625
+            },
+            {
+                "word": "ich",
+                "start": 284.1600036621094,
+                "end": 284.3800048828125
+            },
+            {
+                "word": "bin",
+                "start": 284.3800048828125,
+                "end": 284.6000061035156
+            },
+            {
+                "word": "es!",
+                "start": 284.6000061035156,
+                "end": 285.35999755859376
+            }
+        ],
+        "translationEn": "No, it's me!",
+        "translationVi": "Không, chính tôi đây!"
+    },
+    {
+        "text": "Ich bin der wahre König!",
+        "start": 285.0199951171875,
+        "end": 286.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 285.0199951171875,
+                "end": 285.3999938964844
+            },
+            {
+                "word": "bin",
+                "start": 285.3999938964844,
+                "end": 285.5799865722656
+            },
+            {
+                "word": "der",
+                "start": 285.5799865722656,
+                "end": 285.8999938964844
+            },
+            {
+                "word": "wahre",
+                "start": 285.8999938964844,
+                "end": 286.1400146484375
+            },
+            {
+                "word": "König!",
+                "start": 286.1400146484375,
+                "end": 286.9600036621094
+            }
+        ],
+        "translationEn": "I am the true king!",
+        "translationVi": "Tôi là vị vua thật sự!"
+    },
+    {
+        "text": "Klappe!",
+        "start": 286.9799865722656,
+        "end": 287.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Klappe!",
+                "start": 286.9799865722656,
+                "end": 287.50001220703126
+            }
+        ],
+        "translationEn": "Silence!",
+        "translationVi": "Im lặng!"
+    },
+    {
+        "text": "Ich bin der wahre König!",
+        "start": 287.4799865722656,
+        "end": 289.3,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 287.4799865722656,
+                "end": 287.8599853515625
+            },
+            {
+                "word": "bin",
+                "start": 287.8599853515625,
+                "end": 288.0199890136719
+            },
+            {
+                "word": "der",
+                "start": 288.0199890136719,
+                "end": 288.5199890136719
+            },
+            {
+                "word": "wahre",
+                "start": 288.5199890136719,
+                "end": 288.5199890136719
+            },
+            {
+                "word": "König!",
+                "start": 288.5199890136719,
+                "end": 289.3
+            }
+        ],
+        "translationEn": "I am the true king!",
+        "translationVi": "Tôi là vị vua thật sự!"
+    },
+    {
+        "text": "Als Gopi erkannte, wie gefährlich der Zaubertopf sein konnte, schlich er sich während des Durcheinanders aus dem Palast und nahm den Topf mit.",
+        "start": 289.160009765625,
+        "end": 297.40000610351564,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 289.160009765625,
+                "end": 289.5799865722656
+            },
+            {
+                "word": "Gopi",
+                "start": 289.5799865722656,
+                "end": 289.9599914550781
+            },
+            {
+                "word": "erkannte,",
+                "start": 289.9599914550781,
+                "end": 290.4200134277344
+            },
+            {
+                "word": "wie",
+                "start": 290.5400085449219,
+                "end": 290.67999267578125
+            },
+            {
+                "word": "gefährlich",
+                "start": 290.67999267578125,
+                "end": 291.20001220703125
+            },
+            {
+                "word": "der",
+                "start": 291.20001220703125,
+                "end": 291.4599914550781
+            },
+            {
+                "word": "Zaubertopf",
+                "start": 291.4599914550781,
+                "end": 291.9599914550781
+            },
+            {
+                "word": "sein",
+                "start": 291.9599914550781,
+                "end": 292.3599853515625
+            },
+            {
+                "word": "konnte,",
+                "start": 292.3599853515625,
+                "end": 292.6400146484375
+            },
+            {
+                "word": "schlich",
+                "start": 293.2799987792969,
+                "end": 293.2799987792969
+            },
+            {
+                "word": "er",
+                "start": 293.2799987792969,
+                "end": 293.5199890136719
+            },
+            {
+                "word": "sich",
+                "start": 293.5199890136719,
+                "end": 293.7799987792969
+            },
+            {
+                "word": "während",
+                "start": 293.7799987792969,
+                "end": 294.1000061035156
+            },
+            {
+                "word": "des",
+                "start": 294.1000061035156,
+                "end": 294.32000732421875
+            },
+            {
+                "word": "Durcheinanders",
+                "start": 294.32000732421875,
+                "end": 295
+            },
+            {
+                "word": "aus",
+                "start": 295,
+                "end": 295.239990234375
+            },
+            {
+                "word": "dem",
+                "start": 295.239990234375,
+                "end": 295.4599914550781
+            },
+            {
+                "word": "Palast",
+                "start": 295.4599914550781,
+                "end": 295.82000732421875
+            },
+            {
+                "word": "und",
+                "start": 295.82000732421875,
+                "end": 296.0799865722656
+            },
+            {
+                "word": "nahm",
+                "start": 296.0799865722656,
+                "end": 296.29998779296875
+            },
+            {
+                "word": "den",
+                "start": 296.29998779296875,
+                "end": 296.5400085449219
+            },
+            {
+                "word": "Topf",
+                "start": 296.5400085449219,
+                "end": 296.8399963378906
+            },
+            {
+                "word": "mit.",
+                "start": 296.8399963378906,
+                "end": 297.40000610351564
+            }
+        ],
+        "translationEn": "When Gopi realized how dangerous the magic pot could be, he sneaked out of the palace during the commotion and took the pot with him.",
+        "translationVi": "Khi Gopi nhận ra chiếc nồi ma thuật có thể nguy hiểm như thế nào, anh lén lút rời khỏi cung điện trong lúc hỗn loạn và mang theo chiếc nồi."
+    },
+    {
+        "text": "Er ging direkt zu einer Klippe und warf den Zaubertopf herunter.",
+        "start": 297.7399963378906,
+        "end": 301.62000732421876,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 297.7399963378906,
+                "end": 298
+            },
+            {
+                "word": "ging",
+                "start": 298,
+                "end": 298.1400146484375
+            },
+            {
+                "word": "direkt",
+                "start": 298.1400146484375,
+                "end": 298.6199951171875
+            },
+            {
+                "word": "zu",
+                "start": 298.6199951171875,
+                "end": 298.79998779296875
+            },
+            {
+                "word": "einer",
+                "start": 298.79998779296875,
+                "end": 299.0799865722656
+            },
+            {
+                "word": "Klippe",
+                "start": 299.0799865722656,
+                "end": 299.3599853515625
+            },
+            {
+                "word": "und",
+                "start": 299.3599853515625,
+                "end": 299.6199951171875
+            },
+            {
+                "word": "warf",
+                "start": 299.6199951171875,
+                "end": 299.82000732421875
+            },
+            {
+                "word": "den",
+                "start": 299.82000732421875,
+                "end": 300.0199890136719
+            },
+            {
+                "word": "Zaubertopf",
+                "start": 300.0199890136719,
+                "end": 300.6600036621094
+            },
+            {
+                "word": "herunter.",
+                "start": 300.6600036621094,
+                "end": 301.62000732421876
+            }
+        ],
+        "translationEn": "He went straight to a cliff and threw the magic pot down.",
+        "translationVi": "Ông đi thẳng đến một vách đá và ném cái nồi ma thuật xuống."
+    },
+    {
+        "text": "Der Topf zerfiel in Stücke und verschwand.",
+        "start": 302.6000122070312,
+        "end": 306.3199890136719,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 302.6000122070312,
+                "end": 303.5
+            },
+            {
+                "word": "Topf",
+                "start": 303.5,
+                "end": 304.0199890136719
+            },
+            {
+                "word": "zerfiel",
+                "start": 304.0199890136719,
+                "end": 304.3399963378906
+            },
+            {
+                "word": "in",
+                "start": 304.3399963378906,
+                "end": 305.0199890136719
+            },
+            {
+                "word": "Stücke",
+                "start": 305.0199890136719,
+                "end": 305.0199890136719
+            },
+            {
+                "word": "und",
+                "start": 305.0199890136719,
+                "end": 305.4800109863281
+            },
+            {
+                "word": "verschwand.",
+                "start": 305.4800109863281,
+                "end": 306.3199890136719
+            }
+        ],
+        "translationEn": "The pot shattered into pieces and disappeared.",
+        "translationVi": "Chiếc nồi vỡ thành từng mảnh và biến mất."
+    },
+    {
+        "text": "Von diesem Tag an begann auf Gopis Feld wieder etwas zu wachsen.",
+        "start": 308.2599853515625,
+        "end": 312.75999145507814,
+        "wordTimings": [
+            {
+                "word": "Von",
+                "start": 308.2599853515625,
+                "end": 308.5400085449219
+            },
+            {
+                "word": "diesem",
+                "start": 308.5400085449219,
+                "end": 309.0400085449219
+            },
+            {
+                "word": "Tag",
+                "start": 309.0400085449219,
+                "end": 309.3599853515625
+            },
+            {
+                "word": "an",
+                "start": 309.3599853515625,
+                "end": 310
+            },
+            {
+                "word": "begann",
+                "start": 310,
+                "end": 310
+            },
+            {
+                "word": "auf",
+                "start": 310,
+                "end": 310.2200012207031
+            },
+            {
+                "word": "Gopis",
+                "start": 310.2200012207031,
+                "end": 310.70001220703125
+            },
+            {
+                "word": "Feld",
+                "start": 310.70001220703125,
+                "end": 310.9599914550781
+            },
+            {
+                "word": "wieder",
+                "start": 310.9599914550781,
+                "end": 311.6000061035156
+            },
+            {
+                "word": "etwas",
+                "start": 311.6000061035156,
+                "end": 311.8999938964844
+            },
+            {
+                "word": "zu",
+                "start": 311.8999938964844,
+                "end": 312.4599914550781
+            },
+            {
+                "word": "wachsen.",
+                "start": 312.4599914550781,
+                "end": 312.75999145507814
+            }
+        ],
+        "translationEn": "From that day on, something began to grow again in Gopi's field.",
+        "translationVi": "Từ ngày này, trên cánh đồng của Gopi lại bắt đầu có thứ gì đó mọc lên."
+    },
+    {
+        "text": "Und Gopi verstand, dass das Leben nicht durch Zauberei, sondern durch Arbeit fruchtbar wurde.",
+        "start": 312.639990234375,
+        "end": 318.4600036621094,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 312.639990234375,
+                "end": 313.1600036621094
+            },
+            {
+                "word": "Gopi",
+                "start": 313.1600036621094,
+                "end": 313.29998779296875
+            },
+            {
+                "word": "verstand,",
+                "start": 313.29998779296875,
+                "end": 313.70001220703125
+            },
+            {
+                "word": "dass",
+                "start": 314.1400146484375,
+                "end": 314.260009765625
+            },
+            {
+                "word": "das",
+                "start": 314.260009765625,
+                "end": 314.79998779296875
+            },
+            {
+                "word": "Leben",
+                "start": 314.79998779296875,
+                "end": 314.79998779296875
+            },
+            {
+                "word": "nicht",
+                "start": 314.79998779296875,
+                "end": 315.0400085449219
+            },
+            {
+                "word": "durch",
+                "start": 315.0400085449219,
+                "end": 315.260009765625
+            },
+            {
+                "word": "Zauberei,",
+                "start": 315.260009765625,
+                "end": 315.7799987792969
+            },
+            {
+                "word": "sondern",
+                "start": 316.17999267578125,
+                "end": 316.5199890136719
+            },
+            {
+                "word": "durch",
+                "start": 316.5199890136719,
+                "end": 317.1199951171875
+            },
+            {
+                "word": "Arbeit",
+                "start": 317.1199951171875,
+                "end": 317.32000732421875
+            },
+            {
+                "word": "fruchtbar",
+                "start": 317.32000732421875,
+                "end": 317.8999938964844
+            },
+            {
+                "word": "wurde.",
+                "start": 317.8999938964844,
+                "end": 318.4600036621094
+            }
+        ],
+        "translationEn": "And Gopi understood that life became fruitful not through magic, but through work.",
+        "translationVi": "Và Gopi hiểu rằng cuộc sống không trở nên màu mỡ nhờ phép thuật, mà nhờ vào lao động."
+    },
+    {
+        "text": "Und er lebte für immer in Wohlstand.",
+        "start": 318.29999389648435,
+        "end": 321.039990234375,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 318.29999389648435,
+                "end": 318.70001220703125
+            },
+            {
+                "word": "er",
+                "start": 318.70001220703125,
+                "end": 319.0400085449219
+            },
+            {
+                "word": "lebte",
+                "start": 319.0400085449219,
+                "end": 319.1600036621094
+            },
+            {
+                "word": "für",
+                "start": 319.1600036621094,
+                "end": 319.5199890136719
+            },
+            {
+                "word": "immer",
+                "start": 319.5199890136719,
+                "end": 319.67999267578125
+            },
+            {
+                "word": "in",
+                "start": 319.67999267578125,
+                "end": 320.260009765625
+            },
+            {
+                "word": "Wohlstand.",
+                "start": 320.260009765625,
+                "end": 321.039990234375
+            }
+        ],
+        "translationEn": "And he lived forever in prosperity.",
+        "translationVi": "Và ông sống mãi trong thịnh vượng."
+    }
+]
