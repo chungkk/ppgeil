@@ -6023,12 +6023,58 @@
   width: 100%;
 }
 
+.mobileTextareaWrapper {
+  position: relative;
+  width: 100%;
+  background: var(--bg-primary);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.mobileTextareaWrapper:focus-within {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+.mobileTextOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 14px 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  pointer-events: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden;
+  color: var(--text-primary);
+}
+
+.overlayWordCorrect {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.overlayWordRevealed {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.overlayWordWrong {
+  color: #ef4444;
+  font-weight: 600;
+}
+
 .mobileTextInput {
   width: 100%;
   min-height: 80px;
   padding: 14px 16px;
-  background: var(--bg-primary);
-  border: 2px solid rgba(59, 130, 246, 0.3);
+  background: transparent;
+  border: none;
   border-radius: 12px;
   color: var(--text-primary);
   font-size: 16px;
@@ -6036,12 +6082,17 @@
   resize: none;
   transition: all 0.2s ease;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.mobileTextInputTransparent {
+  color: transparent;
+  caret-color: var(--text-primary);
 }
 
 .mobileTextInput:focus {
   outline: none;
-  border-color: var(--accent-blue);
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
 }
 
 .mobileTextInput::placeholder {
@@ -6081,19 +6132,20 @@
   font-weight: 600;
 }
 
-.mobileWordPartial {
-  display: inline;
-}
-
-.mobileMatchedChars {
-  color: #10b981;
+.mobileWordRevealed {
+  color: #f59e0b;
   font-weight: 600;
 }
 
-.mobileUnmatchedChars {
-  color: rgba(148, 163, 184, 0.5);
-  text-decoration: underline;
-  text-decoration-style: dotted;
+.mobileWordWrong {
+  color: rgba(148, 163, 184, 0.6);
+  font-family: monospace;
+  letter-spacing: 1px;
+  font-size: 12px;
+  background: rgba(239, 68, 68, 0.3);
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(239, 68, 68, 0.5);
 }
 
 .mobileWordMissing {
@@ -6118,6 +6170,27 @@
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Seek Button (-2s / +2s) */
+.seekButton {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(100, 116, 139, 0.3);
+  border: 1.5px solid rgba(100, 116, 139, 0.4);
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.seekButton:active {
+  transform: scale(0.92);
+  background: rgba(100, 116, 139, 0.5);
 }
 
 .mobilePlayButton:active {

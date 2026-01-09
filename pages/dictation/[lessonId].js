@@ -42,6 +42,7 @@ const DictationPage = () => {
   const [revealedWordsByClick, setRevealedWordsByClick] = useState({}); // { sentenceIndex: { wordIndex: true } } - words revealed by double-click
   const [focusedWordIndex, setFocusedWordIndex] = useState(null); // Track which word input is focused
   const lastFocusedWordIndexRef = useRef(null); // Keep track of last focused word for hint button
+  const [mobileCursorWordIndex, setMobileCursorWordIndex] = useState(0); // Track word index at cursor position in mobile textarea
   const [hintClickCount, setHintClickCount] = useState({}); // { sentenceIndex: count } - Count hint clicks per sentence, deduct 1 point from 3rd click onwards
   const [sentencePointsAwarded, setSentencePointsAwarded] = useState({}); // { sentenceIndex: true } - track which sentences got points
   const [sentenceRevealPenalty, setSentenceRevealPenalty] = useState({}); // { sentenceIndex: true } - track which sentences got penalty for revealing too many words
@@ -977,6 +978,66 @@ const DictationPage = () => {
     });
   }, [focusedWordIndex, currentSentenceIndex, transcriptData, wordInputs, revealedWordsByClick, comparedWords, saveProgress, hintClickCount, updatePoints]);
 
+  // Mobile hint - reveal word at cursor position
+  const revealMobileHint = useCallback(() => {
+    const userText = userInputs[currentSentenceIndex] || '';
+    const userWords = userText.split(/\s+/).filter(w => w.length > 0);
+    const correctText = transcriptData[currentSentenceIndex]?.text || '';
+    const correctWords = correctText.split(' ').filter(w => w.length > 0);
+    
+    // Use cursor position to determine which word to reveal
+    const wordIdxToReveal = Math.min(mobileCursorWordIndex, correctWords.length - 1);
+    
+    // Check if word index is valid and not already revealed
+    if (wordIdxToReveal < 0 || wordIdxToReveal >= correctWords.length) return;
+    if (revealedWordsByClick[currentSentenceIndex]?.[wordIdxToReveal]) return;
+    
+    const pureWord = correctWords[wordIdxToReveal]?.replace(/[.,!?;:"""''„]/g, '') || '';
+    if (!pureWord) return;
+    
+    // Build new user input with the revealed word
+    const newUserWords = [...userWords];
+    // Ensure array has enough elements
+    while (newUserWords.length <= wordIdxToReveal) {
+      newUserWords.push('');
+    }
+    newUserWords[wordIdxToReveal] = pureWord;
+    
+    const newUserText = newUserWords.join(' ') + ' ';
+    const newUserInputs = { ...userInputs, [currentSentenceIndex]: newUserText };
+    setUserInputs(newUserInputs);
+    
+    // Mark as revealed
+    const updated = {
+      ...revealedWordsByClick,
+      [currentSentenceIndex]: {
+        ...(revealedWordsByClick[currentSentenceIndex] || {}),
+        [wordIdxToReveal]: true
+      }
+    };
+    setRevealedWordsByClick(updated);
+    
+    // Count hint clicks per sentence and deduct 1 point from 3rd click onwards
+    const currentCount = hintClickCount[currentSentenceIndex] || 0;
+    const newCount = currentCount + 1;
+    setHintClickCount(prev => ({
+      ...prev,
+      [currentSentenceIndex]: newCount
+    }));
+    
+    // Deduct 1 point from 3rd click onwards
+    if (newCount >= 3) {
+      updatePoints(-1, `Dictation hint penalty sentence #${currentSentenceIndex + 1}`);
+    }
+    
+    // Save progress
+    saveProgress({
+      revealedWordsByClick: updated,
+      userInputs: newUserInputs,
+      hintClickCount: { ...hintClickCount, [currentSentenceIndex]: newCount }
+    });
+  }, [currentSentenceIndex, userInputs, transcriptData, revealedWordsByClick, hintClickCount, updatePoints, saveProgress, mobileCursorWordIndex]);
+
   // Calculate progress
   const progress = useMemo(() => {
     if (!transcriptData.length) return 0;
@@ -1644,52 +1705,136 @@ const DictationPage = () => {
                   {/* Mobile: Single textarea input */}
                   {isMobile ? (
                     <div className={styles.mobileInputContainer}>
-                      <textarea
-                        className={`${styles.mobileTextInput} ${completedSentences.includes(currentSentenceIndex) ? styles.mobileTextInputCompleted : ''}`}
-                        value={userInputs[currentSentenceIndex] || ''}
-                        onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
-                        placeholder={t('dictationPage.typeAllWords')}
-                        disabled={completedSentences.includes(currentSentenceIndex)}
-                        rows={3}
-                        onKeyDown={(e) => {
-                          if (e.key === 'Enter' && !e.shiftKey) {
-                            e.preventDefault();
-                            checkAnswer(currentSentenceIndex);
-                          }
-                        }}
-                      />
-                      {/* Show colored word comparison below input */}
-                      {comparedWords[currentSentenceIndex] && transcriptData[currentSentenceIndex] && (
-                        <div className={styles.mobileWordComparison}>
-                          {transcriptData[currentSentenceIndex].text.split(' ').filter(w => w.length > 0).map((word, i) => {
-                            const comparison = comparedWords[currentSentenceIndex]?.[i];
-                            const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
-                            const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
+                      <div className={styles.mobileTextareaWrapper}>
+                        {/* Colored text overlay */}
+                        <div className={styles.mobileTextOverlay}>
+                          {(() => {
+                            const userText = userInputs[currentSentenceIndex] || '';
+                            const userWords = userText.split(/\s+/);
+                            const correctText = transcriptData[currentSentenceIndex]?.text || '';
+                            const correctWords = correctText.split(' ').filter(w => w.length > 0);
+                            const hasTrailingSpace = userText.endsWith(' ');
                             
-                            if (comparison?.isCorrect) {
+                            return userWords.map((word, i) => {
+                              if (!word && i === userWords.length - 1 && !hasTrailingSpace) {
+                                return null;
+                              }
+                              
+                              const correctWord = correctWords[i]?.replace(/[.,!?;:"""''„]/g, '') || '';
+                              const normalizedUser = word.toLowerCase().replace(/[.,!?;:"""''„]/g, '');
+                              const normalizedCorrect = correctWord.toLowerCase();
+                              const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
+                              
+                              // Check if this word is "completed" (has space after it)
+                              const isWordCompleted = i < userWords.length - 1 || hasTrailingSpace;
+                              
+                              let colorClass = '';
+                              if (isWordCompleted && word) {
+                                if (normalizedUser === normalizedCorrect) {
+                                  colorClass = isRevealed ? styles.overlayWordRevealed : styles.overlayWordCorrect;
+                                } else {
+                                  colorClass = styles.overlayWordWrong;
+                                }
+                              }
+                              
                               return (
-                                <span key={i} className={styles.mobileWordCorrect}>
-                                  {pureWord}{punctuation}{' '}
+                                <span key={i}>
+                                  <span className={colorClass}>{word}</span>
+                                  {i < userWords.length - 1 ? ' ' : ''}
                                 </span>
                               );
-                            } else if (comparison?.matchedChars > 0) {
-                              return (
-                                <span key={i} className={styles.mobileWordPartial}>
-                                  <span className={styles.mobileMatchedChars}>{pureWord.substring(0, comparison.matchedChars)}</span>
-                                  <span className={styles.mobileUnmatchedChars}>{pureWord.substring(comparison.matchedChars)}</span>
-                                  {punctuation}{' '}
-                                </span>
-                              );
-                            } else {
-                              return (
-                                <span key={i} className={styles.mobileWordMissing}>
-                                  {'_'.repeat(pureWord.length)}{punctuation}{' '}
-                                </span>
-                              );
-                            }
-                          })}
+                            });
+                          })()}
                         </div>
-                      )}
+                        <textarea
+                          className={`${styles.mobileTextInput} ${styles.mobileTextInputTransparent} ${completedSentences.includes(currentSentenceIndex) ? styles.mobileTextInputCompleted : ''}`}
+                          value={userInputs[currentSentenceIndex] || ''}
+                          onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
+                          placeholder={t('dictationPage.typeAllWords')}
+                          rows={3}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' && !e.shiftKey) {
+                              e.preventDefault();
+                              checkAnswer(currentSentenceIndex);
+                            }
+                          }}
+                          onSelect={(e) => {
+                            // Track cursor position to determine which word user is on
+                            const cursorPos = e.target.selectionStart;
+                            const textBeforeCursor = (userInputs[currentSentenceIndex] || '').substring(0, cursorPos);
+                            // Count spaces before cursor to determine word index
+                            const wordsBeforeCursor = textBeforeCursor.split(/\s+/).filter(w => w.length > 0);
+                            const endsWithSpace = textBeforeCursor.endsWith(' ');
+                            const wordIdx = endsWithSpace ? wordsBeforeCursor.length : Math.max(0, wordsBeforeCursor.length - 1);
+                            setMobileCursorWordIndex(wordIdx);
+                          }}
+                          onClick={(e) => {
+                            // Also track on click
+                            const cursorPos = e.target.selectionStart;
+                            const textBeforeCursor = (userInputs[currentSentenceIndex] || '').substring(0, cursorPos);
+                            const wordsBeforeCursor = textBeforeCursor.split(/\s+/).filter(w => w.length > 0);
+                            const endsWithSpace = textBeforeCursor.endsWith(' ');
+                            const wordIdx = endsWithSpace ? wordsBeforeCursor.length : Math.max(0, wordsBeforeCursor.length - 1);
+                            setMobileCursorWordIndex(wordIdx);
+                          }}
+                        />
+                      </div>
+                      {/* Show word status: correct (green), wrong (red), or hidden (underscores) */}
+                      {transcriptData[currentSentenceIndex] && (() => {
+                        const userText = userInputs[currentSentenceIndex] || '';
+                        const userWords = userText.split(/\s+/).filter(w => w.length > 0);
+                        const correctWords = transcriptData[currentSentenceIndex].text.split(' ').filter(w => w.length > 0);
+                        const isCompleted = completedSentences.includes(currentSentenceIndex);
+                        
+                        // Count completed words (words followed by space)
+                        // If sentence is completed, show all words
+                        const hasTrailingSpace = userText.endsWith(' ');
+                        const completedWordCount = isCompleted 
+                          ? correctWords.length 
+                          : (hasTrailingSpace ? userWords.length : Math.max(0, userWords.length - 1));
+                        
+                        return (
+                          <div className={styles.mobileWordComparison}>
+                            {correctWords.map((word, i) => {
+                              const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
+                              const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
+                              const userWord = userWords[i] || '';
+                              const normalizedUser = userWord.toLowerCase().replace(/[.,!?;:"""''„]/g, '');
+                              const normalizedCorrect = pureWord.toLowerCase();
+                              
+                              // Check if word was revealed by hint
+                              const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
+                              
+                              // Show result for completed words or if sentence is done
+                              if (i < completedWordCount || isCompleted) {
+                                const isCorrect = normalizedUser === normalizedCorrect;
+                                if (isCorrect) {
+                                  // Correct: show the word in green (or orange if revealed by hint)
+                                  return (
+                                    <span key={i} className={isRevealed ? styles.mobileWordRevealed : styles.mobileWordCorrect}>
+                                      {pureWord}{punctuation}{' '}
+                                    </span>
+                                  );
+                                } else {
+                                  // Wrong: show underscores with red background
+                                  return (
+                                    <span key={i} className={styles.mobileWordWrong}>
+                                      {'_'.repeat(pureWord.length)}{punctuation}{' '}
+                                    </span>
+                                  );
+                                }
+                              } else {
+                                // Word not yet completed - show underscores
+                                return (
+                                  <span key={i} className={styles.mobileWordMissing}>
+                                    {'_'.repeat(pureWord.length)}{punctuation}{' '}
+                                  </span>
+                                );
+                              }
+                            })}
+                          </div>
+                        );
+                      })()}
                     </div>
                   ) : (
                     /* Desktop: Keep existing word-by-word input */
@@ -1803,34 +1948,80 @@ const DictationPage = () => {
                   
                   {/* Mobile Play/Pause Button */}
                   {isMobile && (
-                    <button
-                      className={`${styles.mobilePlayButton} ${isPlaying ? styles.mobilePlayButtonActive : ''}`}
-                      onClick={handlePlayPause}
-                      title={isPlaying ? t('dictationPage.pause') : t('dictationPage.play')}
-                    >
-                      {isPlaying ? (
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                          <rect x="6" y="4" width="4" height="16" rx="1" />
-                          <rect x="14" y="4" width="4" height="16" rx="1" />
+                    <>
+                      {/* Rewind 2s */}
+                      <button
+                        className={styles.seekButton}
+                        onClick={() => {
+                          if (isYouTube) {
+                            const player = youtubePlayerRef.current;
+                            if (player?.getCurrentTime && player?.seekTo) {
+                              const newTime = Math.max(0, player.getCurrentTime() - 2);
+                              player.seekTo(newTime, true);
+                              setCurrentTime(newTime);
+                            }
+                          } else {
+                            const audio = audioRef.current;
+                            if (audio) {
+                              const newTime = Math.max(0, audio.currentTime - 2);
+                              audio.currentTime = newTime;
+                              setCurrentTime(newTime);
+                            }
+                          }
+                        }}
+                        title="-2s"
+                      >
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" fill="currentColor" stroke="none"/>
                         </svg>
-                      ) : (
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      )}
-                    </button>
+                      </button>
+                      
+                      <button
+                        className={`${styles.mobilePlayButton} ${isPlaying ? styles.mobilePlayButtonActive : ''}`}
+                        onClick={handlePlayPause}
+                        title={isPlaying ? t('dictationPage.pause') : t('dictationPage.play')}
+                      >
+                        {isPlaying ? (
+                          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="6" y="4" width="4" height="16" rx="1" />
+                            <rect x="14" y="4" width="4" height="16" rx="1" />
+                          </svg>
+                        ) : (
+                          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        )}
+                      </button>
+                    </>
                   )}
                   
                   <button
                     className={styles.hintButton}
-                    onClick={revealFocusedWordHint}
-                    disabled={
-                      completedSentences.includes(currentSentenceIndex) ||
-                      results[currentSentenceIndex]?.showAnswer || 
-                      lastFocusedWordIndexRef.current === null || 
-                      revealedWordsByClick[currentSentenceIndex]?.[lastFocusedWordIndexRef.current] ||
-                      ((hintClickCount[currentSentenceIndex] || 0) >= 2 && userPoints <= 0)
-                    }
+                    onClick={isMobile ? revealMobileHint : revealFocusedWordHint}
+                    disabled={(() => {
+                      // Common conditions
+                      if (completedSentences.includes(currentSentenceIndex)) return true;
+                      if (results[currentSentenceIndex]?.showAnswer) return true;
+                      if ((hintClickCount[currentSentenceIndex] || 0) >= 2 && userPoints <= 0) return true;
+                      
+                      // Mobile: check if word at cursor position is already revealed
+                      if (isMobile) {
+                        const correctText = transcriptData[currentSentenceIndex]?.text || '';
+                        const correctWords = correctText.split(' ').filter(w => w.length > 0);
+                        
+                        // Check if word at cursor is already revealed
+                        const wordIdx = Math.min(mobileCursorWordIndex, correctWords.length - 1);
+                        if (wordIdx < 0 || wordIdx >= correctWords.length) return true;
+                        if (revealedWordsByClick[currentSentenceIndex]?.[wordIdx]) return true;
+                        
+                        return false;
+                      }
+                      
+                      // Desktop conditions
+                      if (lastFocusedWordIndexRef.current === null) return true;
+                      if (revealedWordsByClick[currentSentenceIndex]?.[lastFocusedWordIndexRef.current]) return true;
+                      return false;
+                    })()}
                     title={t('dictationPage.clickToShowHint')}
                   >
                     💡
@@ -1842,6 +2033,36 @@ const DictationPage = () => {
                       <span className={styles.hintPenaltyCount}>-1</span>
                     )}
                   </button>
+                  
+                  {/* Forward 2s - Mobile only */}
+                  {isMobile && (
+                    <button
+                      className={styles.seekButton}
+                      onClick={() => {
+                        if (isYouTube) {
+                          const player = youtubePlayerRef.current;
+                          if (player?.getCurrentTime && player?.seekTo && player?.getDuration) {
+                            const newTime = Math.min(player.getDuration(), player.getCurrentTime() + 2);
+                            player.seekTo(newTime, true);
+                            setCurrentTime(newTime);
+                          }
+                        } else {
+                          const audio = audioRef.current;
+                          if (audio) {
+                            const newTime = Math.min(audio.duration, audio.currentTime + 2);
+                            audio.currentTime = newTime;
+                            setCurrentTime(newTime);
+                          }
+                        }
+                      }}
+                      title="+2s"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/>
+                      </svg>
+                    </button>
+                  )}
+                  
                   <button
                     className={styles.navButton}
                     onClick={() => {
