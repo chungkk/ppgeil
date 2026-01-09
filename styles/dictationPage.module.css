@@ -6286,6 +6286,40 @@
   flex-wrap: wrap;
 }
 
+.navButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navButton svg {
+  width: 22px;
+  height: 22px;
+}
+
+.navButton:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #cbd5e1;
+}
+
+.navButton:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.navButton:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 .checkButton,
 .showAnswerButton,
 .nextButton {
@@ -6587,13 +6621,13 @@
   .actionButtons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 12px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px 16px;
+    padding: 10px 12px;
     padding-bottom: calc(10px + env(safe-area-inset-bottom));
     background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(12px);
@@ -6666,6 +6700,37 @@
   .hintButton:disabled {
     opacity: 0.4;
     filter: grayscale(0.5);
+  }
+
+  .navButton {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .navButton svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navButton:active:not(:disabled) {
+    transform: scale(0.92);
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .navButton:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
   }
 
   .resultBox {

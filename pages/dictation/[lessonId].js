@@ -1713,15 +1713,18 @@ const DictationPage = () => {
                 {/* Action Buttons */}
                 <div className={styles.actionButtons}>
                   <button
-                    className={styles.nextButton}
+                    className={styles.navButton}
                     onClick={() => {
                       if (currentSentenceIndex > 0) {
                         playSentence(currentSentenceIndex - 1);
                       }
                     }}
                     disabled={currentSentenceIndex <= 0}
+                    title={t('dictationPage.previousSentence')}
                   >
-                    {t('dictationPage.previousSentence')}
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
                   </button>
                   <button
                     className={styles.hintButton}
@@ -1732,7 +1735,7 @@ const DictationPage = () => {
                     💡
                   </button>
                   <button
-                    className={styles.nextButton}
+                    className={styles.navButton}
                     onClick={() => {
                       // Prioritize jumping to next uncompleted sentence
                       // First, look for uncompleted sentence after current index
@@ -1761,8 +1764,11 @@ const DictationPage = () => {
                       }
                     }}
                     disabled={currentSentenceIndex >= transcriptData.length - 1 && completedSentences.length === transcriptData.length}
+                    title={t('dictationPage.nextSentence')}
                   >
-                    {t('dictationPage.nextSentence')}
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
                   </button>
                 </div>
 
