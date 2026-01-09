@@ -1,18 +1,23 @@
-/* Video Section Styles */
+/* Video Section Styles - Neo-Retro Design */
+\n\n
+/* \n * Neo-Retro Theme Colors (used directly in styles):\n * --retro-cream: #fef9e7\n * --retro-dark: #1a1a2e  \n * --retro-cyan: #00cec9\n * --retro-yellow: #fdcb6e\n * --retro-pink: #fd79a8\n * --retro-purple: #a29bfe\n * --retro-border: #2d3436\n * --retro-shadow: rgba(0, 0, 0, 0.15)\n */
 
 .videoWrapper {
-  background: transparent;
+  background: #fef9e7 !important;
   display: flex;
   flex-direction: column;
   gap: 0;
   flex: 1;
   overflow: hidden;
+  border: 3px solid #2d3436 !important;
+  border-radius: 16px !important;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
 .videoContainer {
   position: relative;
   background: #000;
-  border-radius: var(--border-radius);
+  border-radius: 12px 12px 0 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -21,11 +26,12 @@
 .videoPlayerWrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio */
   background: #000;
 }
 
-.videoPlayerWrapper > div,
+.videoPlayerWrapper>div,
 .videoPlayerWrapper iframe,
 .videoPlayerWrapper video {
   position: absolute;
@@ -119,26 +125,26 @@
   z-index: 999;
 }
 
-.videoOverlay > * {
+.videoOverlay>* {
   pointer-events: auto;
 }
 
-/* Video Title Box */
+/* Video Title Box - Neo-Retro */
 .videoTitleBox {
-  padding: var(--spacing-md);
-  border-top: 1px solid var(--border-color);
-  background: var(--bg-card);
+  padding: 14px 18px;
+  border-top: 2px solid #2d3436;
+  background: #fef9e7 !important;
 }
 
 .videoTitleBox h3 {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e !important;
   margin: 0;
   line-height: 1.4;
 }
 
-/* Video Header - Synced with dictationPage.module.css */
+/* Video Header - Neo-Retro */
 .videoHeader {
   display: flex;
   justify-content: space-between;
@@ -146,20 +152,21 @@
   padding: 14px 18px;
   min-height: 56px;
   height: 56px;
-  border-bottom: 1px solid rgba(16, 185, 129, 0.15);
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(5, 150, 105, 0.05) 100%);
-  border-radius: 16px 16px 0 0;
+  border-bottom: 2px solid #2d3436;
+  background: #fef9e7 !important;
+  border-radius: 12px 12px 0 0;
   box-sizing: border-box;
 }
 
 .videoHeaderTitle {
   font-size: 14px;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-weight: 800;
+  color: #1a1a2e !important;
   line-height: 1.4;
   margin: 0;
   padding: 0;
   letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 /* Study Timer - Retro Flip Clock Style */
@@ -171,7 +178,7 @@
   background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
-  box-shadow: 
+  box-shadow:
     0 4px 12px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
@@ -201,7 +208,7 @@
   color: #10b981;
   text-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
   position: relative;
-  box-shadow: 
+  box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
@@ -240,8 +247,15 @@
 }
 
 @keyframes colonBlink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
 }
 
 .studyTimerMobile {
@@ -379,9 +393,12 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
   }
+
   50% {
     box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
   }
@@ -397,6 +414,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -443,12 +461,12 @@
   transition: transform 0.3s;
 }
 
-.toggleInput:checked + .toggleSlider {
+.toggleInput:checked+.toggleSlider {
   background: var(--accent-blue);
   border-color: var(--accent-blue);
 }
 
-.toggleInput:checked + .toggleSlider::before {
+.toggleInput:checked+.toggleSlider::before {
   transform: translateX(18px);
 }
 
@@ -458,15 +476,15 @@
   font-weight: 500;
 }
 
-/* Video Controls - Desktop Only */
+/* Video Controls - Neo-Retro Desktop Only */
 .videoControls {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 16px;
-  background: var(--bg-card);
-  border-top: 1px solid var(--border-color);
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  background: #fef9e7 !important;
+  border-top: 2px solid #2d3436;
+  border-radius: 0 0 12px 12px;
 }
 
 /* Playback Controls Row */
@@ -477,10 +495,11 @@
   gap: 8px;
 }
 
+/* Control Buttons - Neo-Retro */
 .controlBtn {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
+  background: white !important;
+  border: 2px solid #2d3436 !important;
+  color: #1a1a2e !important;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -491,6 +510,7 @@
   transition: all 0.2s ease;
   padding: 0;
   outline: none;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .controlBtn svg {
@@ -500,71 +520,76 @@
 }
 
 .controlBtn:hover {
-  background: var(--bg-hover);
-  border-color: var(--accent-blue);
-  transform: scale(1.08);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+  background: #00cec9 !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
 .controlBtn:active {
-  transform: scale(0.95);
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* Play/Pause Button - Larger and with gradient */
+/* Play/Pause Button - Neo-Retro Larger */
 .playPauseBtn {
   width: 56px;
   height: 56px;
-  background: var(--accent-gradient);
-  border: none;
-  color: white;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  background: #00cec9 !important;
+  border: 3px solid #2d3436 !important;
+  color: white !important;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .playPauseBtn svg {
   width: 26px;
   height: 26px;
   stroke-width: 2.5;
+  color: #1a1a2e !important;
 }
 
 .playPauseBtn:hover {
-  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
-  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
-  transform: scale(1.12);
+  background: #fdcb6e !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
 }
 
 .playPauseBtn:active {
-  transform: scale(1);
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* Voice Recording Button */
+/* Voice Recording Button - Neo-Retro */
 .recordBtn {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.05) 100%);
-  border: 2px solid rgba(239, 68, 68, 0.3);
-  color: #ef4444;
+  background: #fd79a8 !important;
+  border: 2px solid #2d3436 !important;
+  color: white !important;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .recordBtn:hover {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(220, 38, 38, 0.1) 100%);
-  border-color: #ef4444;
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
-  transform: scale(1.1);
+  background: #ff6b9d !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
 .recordBtn.recording {
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-  border-color: #dc2626;
+  background: #ff4757 !important;
+  border-color: #2d3436 !important;
   color: white;
   animation: recordPulse 1.5s ease-in-out infinite;
 }
 
 @keyframes recordPulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+
+  0%,
+  100% {
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
   }
+
   50% {
-    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15), 0 0 20px rgba(255, 71, 87, 0.5);
   }
 }
 
@@ -581,31 +606,33 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-/* Playback Recorded Audio Button */
+/* Playback Recorded Audio Button - Neo-Retro */
 .playbackRecordBtn,
 .playbackBtn {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.05) 100%);
-  border-color: rgba(16, 185, 129, 0.3);
-  color: #10b981;
+  background: #a29bfe !important;
+  border: 2px solid #2d3436 !important;
+  color: white !important;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .playbackRecordBtn:hover,
 .playbackBtn:hover {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.1) 100%);
-  border-color: #10b981;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  background: #b8b2ff !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
 .playbackBtn.playing {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  border-color: #059669;
-  color: white;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+  background: #00cec9 !important;
+  border-color: #2d3436 !important;
+  color: #1a1a2e !important;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* Secondary Controls Row */
@@ -616,28 +643,31 @@
   gap: 12px;
 }
 
-/* Speed Control */
+/* Speed Control - Neo-Retro */
 .speedControl {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
+  background: white !important;
+  border: 2px solid #2d3436 !important;
   border-radius: 20px;
   transition: all 0.2s ease;
   min-width: 140px;
   justify-content: center;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .speedControl:hover {
-  border-color: var(--accent-blue);
+  border-color: #00cec9;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .speedControl svg {
   width: 16px;
   height: 16px;
-  color: var(--text-secondary);
+  color: #1a1a2e !important;
   stroke-width: 2.5;
   flex-shrink: 0;
 }
@@ -646,9 +676,9 @@
   flex: 1;
   background: transparent;
   border: none;
-  color: var(--text-primary);
+  color: #1a1a2e !important;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   outline: none;
   padding: 0;
@@ -659,8 +689,8 @@
 }
 
 .speedDropdown option {
-  background: var(--bg-card);
-  color: var(--text-primary);
+  background: #fef9e7;
+  color: #1a1a2e;
   padding: 8px;
 }
 
@@ -692,7 +722,7 @@
     padding-top: 0 !important;
   }
 
-  .videoPlayerWrapper > div,
+  .videoPlayerWrapper>div,
   .videoPlayerWrapper iframe {
     position: absolute !important;
     top: 0 !important;
