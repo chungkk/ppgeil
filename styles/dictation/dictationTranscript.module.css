@@ -1,29 +1,42 @@
-/* Transcript Panel Styles */
+/* Neo-Retro Styles for Transcript Panel */
+/* Note: CSS variables are defined in shadowingPage.module.css or globals */
 
-/* Right Section - Transcript Container */
+/* Right Section - Transcript Container - Neo-Retro */
 .rightSection {
   display: flex;
   flex-direction: column;
   height: 550px;
   min-width: 0;
   gap: 0;
-  background: var(--bg-secondary);
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: white !important;
+  border-radius: 18px !important;
+  border: 3px solid var(--retro-border) !important;
+  box-shadow: 4px 4px 0 var(--retro-shadow) !important;
   overflow: hidden;
+  position: relative;
 }
 
+.rightSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--retro-coral);
+  z-index: 10;
+}
+
+/* Transcript Header - Neo-Retro */
 .transcriptHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 18px;
-  min-height: 56px;
-  height: 56px;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(51, 65, 85, 0.05) 100%);
-  border-radius: 16px 16px 0 0;
+  padding: 12px 16px;
+  min-height: 50px;
+  height: 50px;
+  border-bottom: 2px solid var(--retro-border);
+  background: var(--retro-cream) !important;
   box-sizing: border-box;
 }
 
@@ -34,14 +47,16 @@
   flex: 1;
 }
 
+/* Transcript Title - Neo-Retro */
 .transcriptTitle {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--retro-dark) !important;
   line-height: 1.4;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 /* Sentence Counter - Beautiful Badge Style */
@@ -77,59 +92,63 @@
   font-size: 11px;
 }
 
+/* Transcript Tabs - Neo-Retro */
 .transcriptTabs {
   display: flex;
-  gap: 2px;
-  background: var(--bg-secondary);
-  padding: 2px;
-  border-radius: 6px;
+  gap: 4px;
+  background: transparent;
+  padding: 0;
 }
 
 .transcriptTab {
-  padding: 5px 10px;
-  background: transparent;
-  border: none;
-  color: var(--text-secondary);
+  padding: 6px 12px;
+  background: white !important;
+  border: 2px solid var(--retro-border) !important;
+  color: var(--retro-dark) !important;
   cursor: pointer;
   font-size: 12px;
-  font-weight: 500;
-  border-radius: 5px;
+  font-weight: 700;
+  border-radius: 8px;
   transition: all 0.15s ease;
   white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 4px;
+  box-shadow: 2px 2px 0 var(--retro-shadow);
 }
 
 .transcriptTab:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-primary);
+  background: var(--retro-cream) !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--retro-shadow);
 }
 
 .transcriptTabActive {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  font-weight: 600;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  background: var(--retro-yellow) !important;
+  border-color: var(--retro-border) !important;
+  color: var(--retro-dark) !important;
+  font-weight: 800;
+  box-shadow: 2px 2px 0 var(--retro-shadow);
 }
 
 .transcriptTabCount {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 18px;
-  height: 18px;
-  padding: 0 5px;
-  background: rgba(59, 130, 246, 0.2);
-  border-radius: 9px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  background: var(--retro-cyan) !important;
+  border: 1px solid var(--retro-border);
+  border-radius: 10px;
   font-size: 10px;
-  font-weight: 600;
-  color: var(--accent-blue);
+  font-weight: 700;
+  color: var(--retro-dark) !important;
 }
 
 .transcriptTabActive .transcriptTabCount {
-  background: rgba(59, 130, 246, 0.25);
-  color: var(--accent-blue);
+  background: white !important;
+  color: var(--retro-dark) !important;
 }
 
 /* Progress Bar */
@@ -166,18 +185,21 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      transparent 100%);
   animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .progressText {
@@ -190,49 +212,54 @@
   flex-shrink: 0;
 }
 
-/* Transcript Section */
+/* Transcript Section - Neo-Retro */
 .transcriptSection {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
   padding: 12px;
-  background: var(--bg-secondary);
+  background: white !important;
   scroll-behavior: smooth;
 }
 
 .transcriptList {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
-/* Transcript Item */
+/* Transcript Item - Neo-Retro */
 .transcriptItem {
-  background: var(--bg-primary);
-  border: 1px solid transparent;
-  border-radius: 10px;
+  background: white !important;
+  border: 2px solid var(--retro-border) !important;
+  border-radius: 12px !important;
   padding: 14px 16px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   position: relative;
+  box-shadow: 3px 3px 0 var(--retro-shadow) !important;
+  color: var(--retro-dark) !important;
 }
 
 .transcriptItem:hover {
-  border-color: rgba(100, 116, 139, 0.2);
-  background: var(--bg-hover);
-  transform: translateX(2px);
+  background: var(--retro-cream) !important;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow) !important;
 }
 
 .transcriptItem.active {
-  border-color: var(--accent-blue);
-  background: rgba(59, 130, 246, 0.06);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+  border-color: var(--retro-cyan) !important;
+  border-width: 3px !important;
+  background: linear-gradient(180deg, #e0f7fa 0%, white 100%) !important;
+  box-shadow: 5px 5px 0 var(--retro-shadow) !important;
+  transform: translate(-2px, -2px);
 }
 
 
 
 .transcriptItemNumber {
-  display: none; /* Ẩn số thứ tự câu */
+  display: none;
+  /* Ẩn số thứ tự câu */
 }
 
 .completedCheck {
@@ -247,6 +274,7 @@
     opacity: 0;
     transform: scale(0.5);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -255,7 +283,7 @@
 
 .transcriptItemText {
   font-size: 15px;
-  color: var(--text-primary);
+  color: var(--retro-dark) !important;
   line-height: 1.75;
   letter-spacing: 0.01em;
   display: flex;
@@ -263,38 +291,48 @@
   gap: 10px;
 }
 
+/* Play Icon - Neo-Retro */
 .transcriptPlayIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
-  font-size: 11px;
-  color: rgba(59, 130, 246, 0.8);
-  background: rgba(59, 130, 246, 0.1);
-  border-radius: 6px;
+  width: 26px;
+  height: 26px;
+  font-size: 12px;
+  color: var(--retro-dark) !important;
+  background: var(--retro-cyan) !important;
+  border: 2px solid var(--retro-border);
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s ease;
   flex-shrink: 0;
   margin-top: 2px;
+  box-shadow: 2px 2px 0 var(--retro-shadow);
 }
 
 .transcriptPlayIcon:hover {
-  background: rgba(59, 130, 246, 0.2);
-  color: var(--accent-blue);
-  transform: scale(1.05);
+  background: var(--retro-yellow) !important;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--retro-shadow);
 }
 
 .shadowingText {
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--retro-dark) !important;
 }
 
+/* Translation - Neo-Retro */
 .transcriptItemTranslation {
-  font-size: 12px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  font-style: italic;
+  margin-top: 8px;
+  padding: 8px 12px 8px 32px;
+  background: rgba(0, 206, 201, 0.1) !important;
+  border-left: 3px solid var(--retro-cyan);
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #636e72 !important;
+  position: relative;
+  transition: all 0.2s ease;
 }
 
 .transcriptItemActions {
@@ -350,7 +388,8 @@
 
 @media (max-width: 768px) {
   .rightSection {
-    display: none; /* Hide transcript on mobile - can be overridden by showOnMobile */
+    display: none;
+    /* Hide transcript on mobile - can be overridden by showOnMobile */
   }
 
   /* Show transcript on mobile when in shadowing mode */
@@ -359,18 +398,22 @@
     display: flex !important;
     flex-direction: column;
     position: fixed;
-    top: calc(64px + 56.25vw + 8px); /* Below video (16:9 aspect) + header + gap - giống middleSection */
-    bottom: calc(80px + env(safe-area-inset-bottom, 0px)); /* Above bottom controls - giống middleSection */
+    top: calc(64px + 56.25vw + 8px);
+    /* Below video (16:9 aspect) + header + gap - giống middleSection */
+    bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+    /* Above bottom controls - giống middleSection */
     left: 8px;
     right: 8px;
-    height: auto !important; /* Override base 550px để top/bottom hoạt động đúng */
+    height: auto !important;
+    /* Override base 550px để top/bottom hoạt động đúng */
     margin: 0;
     padding: 0;
     border-radius: 16px;
     background: rgba(20, 20, 30, 0.95);
     border: 1px solid rgba(59, 130, 246, 0.2);
     overflow: hidden;
-    z-index: 50; /* Same as middleSection */
+    z-index: 50;
+    /* Same as middleSection */
   }
 
   .rightSection.showOnMobile .transcriptHeader {
@@ -396,11 +439,13 @@
 /* Small mobile screens (480px) - match middleSection positioning */
 @media (max-width: 480px) {
   .rightSection.showOnMobile {
-    top: calc(64px + 56.25vw + 6px); /* Smaller gap on small screens - giống middleSection */
+    top: calc(64px + 56.25vw + 6px);
+    /* Smaller gap on small screens - giống middleSection */
     bottom: calc(78px + env(safe-area-inset-bottom, 0px));
     left: 6px;
     right: 6px;
-    height: auto !important; /* Override base 550px */
+    height: auto !important;
+    /* Override base 550px */
   }
 }
 
@@ -508,22 +553,26 @@
   display: inline;
 }
 
+/* Karaoke Word Styles - Neo-Retro (dark text on light bg) */
 .karaokeWord {
   display: inline;
   transition: all 0.2s ease;
-  color: rgba(255, 255, 255, 0.7);
+  color: #2d3436 !important;
   font-weight: 500;
 }
 
 .karaokeWordSpoken {
-  color: rgba(255, 255, 255, 1);
-  font-weight: 600;
+  color: #1a1a2e !important;
+  font-weight: 700;
 }
 
 .karaokeWordCurrent {
-  color: #60a5fa;
-  font-weight: 700;
-  text-shadow: 0 0 16px rgba(96, 165, 250, 0.5);
+  color: #00cec9 !important;
+  font-weight: 800;
+  text-shadow: 0 0 8px rgba(0, 206, 201, 0.4);
+  background: rgba(0, 206, 201, 0.15);
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 /* Clickable Word Styles */
@@ -597,12 +646,12 @@
   transition: transform 0.2s;
 }
 
-.toggleInput:checked + .toggleSlider {
+.toggleInput:checked+.toggleSlider {
   background: var(--accent-blue);
   border-color: var(--accent-blue);
 }
 
-.toggleInput:checked + .toggleSlider::before {
+.toggleInput:checked+.toggleSlider::before {
   transform: translateX(14px);
 }
 
@@ -615,7 +664,8 @@
 /* Translation Display in Transcript Items */
 .transcriptItemTranslation {
   margin-top: 8px;
-  padding: 8px 12px 8px 32px; /* Left padding for alignment with text */
+  padding: 8px 12px 8px 32px;
+  /* Left padding for alignment with text */
   background: rgba(100, 116, 139, 0.08);
   border-left: 3px solid rgba(100, 116, 139, 0.3);
   border-radius: 6px;
