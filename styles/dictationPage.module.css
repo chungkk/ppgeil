@@ -5464,7 +5464,26 @@
   grid-template-columns: 1fr 1.2fr 0.8fr;
   gap: var(--spacing-md);
   min-height: calc(100vh - 200px);
-  align-items: stretch;
+  align-items: start;
+}
+
+/* On desktop, align the dictation area with top of transcript */
+@media (min-width: 1025px) {
+  .threeColumnLayout {
+    align-items: start;
+  }
+  
+  .threeColumnLayout > .middleColumn {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 56px; /* Match transcript header height */
+  }
+  
+  .threeColumnLayout > .middleColumn .dictationArea {
+    flex: 0 0 auto;
+  }
 }
 
 /* Left Column - Video */
@@ -5650,10 +5669,12 @@
 .middleColumn {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: var(--bg-secondary);
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   padding: var(--spacing-md);
+  min-height: 400px;
 }
 
 .dictationArea {
@@ -6282,33 +6303,39 @@
 
 .actionButtons {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
 }
 
 .navButton {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.1) 0%, rgba(51, 65, 85, 0.15) 100%);
+  border: 1.5px solid rgba(59, 130, 246, 0.25);
   color: #94a3b8;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
 }
 
 .navButton svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 .navButton:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.25);
-  color: #cbd5e1;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.2) 0%, rgba(51, 65, 85, 0.25) 100%);
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #e2e8f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
 .navButton:active:not(:disabled) {
@@ -6318,6 +6345,39 @@
 .navButton:disabled {
   opacity: 0.35;
   cursor: not-allowed;
+}
+
+/* Desktop hintButton styling */
+@media (min-width: 769px) {
+  .hintButton {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(251, 191, 36, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%);
+    border: 1.5px solid rgba(251, 191, 36, 0.35);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(251, 191, 36, 0.15);
+    transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .hintButton:hover:not(:disabled) {
+    background: linear-gradient(145deg, rgba(251, 191, 36, 0.25) 0%, rgba(245, 158, 11, 0.18) 100%);
+    border-color: rgba(251, 191, 36, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.25);
+  }
+
+  .hintButton:active:not(:disabled) {
+    transform: scale(0.95);
+  }
+
+  .hintButton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 }
 
 .checkButton,
