@@ -1,0 +1,106 @@
+.flipCounter {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.flipDigit {
+  position: relative;
+  width: 16px;
+  height: 22px;
+  perspective: 200px;
+  font-family: 'Courier New', monospace;
+}
+
+.digitTop,
+.digitBottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digitTop {
+  top: 0;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #111;
+  align-items: flex-end;
+}
+
+.digitTop span {
+  transform: translateY(50%);
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 0 0 4px rgba(255, 215, 0, 0.5);
+}
+
+.digitBottom {
+  bottom: 0;
+  border-radius: 0 0 3px 3px;
+  background: linear-gradient(180deg, #2a2a2a 0%, #3a3a3a 100%);
+  align-items: flex-start;
+}
+
+.digitBottom span {
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 0 0 4px rgba(255, 215, 0, 0.5);
+}
+
+.flipCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  animation: flip 0.3s ease-in-out forwards;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 100%);
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.flipCardFront span,
+.flipCardBack span {
+  transform: translateY(50%);
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 0 0 4px rgba(255, 215, 0, 0.5);
+}
+
+.flipCardBack {
+  transform: rotateX(180deg);
+}
+
+.flipping .digitTop,
+.flipping .digitBottom {
+  background: linear-gradient(180deg, #4a4a4a 0%, #3a3a3a 100%);
+}

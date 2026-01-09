@@ -13,6 +13,7 @@ import { getTodaysPhrase } from '../lib/data/nomenVerbVerbindungen';
 import phraseExplanationsCache from '../lib/data/phraseExplanations.json';
 import NotificationDropdown from './NotificationDropdown';
 import LoginModal from './LoginModal';
+import FlipCounter from './FlipCounter';
 import styles from '../styles/Header.module.css';
 
 // Initial state for header UI
@@ -435,16 +436,10 @@ const Header = () => {
               <div className={styles.pointsContainer}>
                 <div className={styles.pointsBadge} title={t('header.points')}>
                   <span className={styles.pointsIcon}>💎</span>
-                  <span className={styles.pointsValue}>{userPoints || 0}</span>
+                  <FlipCounter value={userPoints || 0} />
                 </div>
 
-                {state.showPointsPlusOne && (
-                  <div className={styles.pointsPlusOne}>+{state.pointsPlusValue}</div>
-                )}
-
-                {state.showPointsMinus && (
-                  <div className={styles.pointsMinus}>{state.pointsMinusValue}</div>
-                )}
+{/* Đã tắt hiệu ứng +1/-1 ở header, chỉ dùng flip counter */}
               </div>
 
               {/* Tạm thời ẩn nút thông báo

@@ -702,6 +702,7 @@
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .streakTooltipInfo {
@@ -721,7 +722,7 @@
 
 .streakWeekly {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 8px;
 }
 
