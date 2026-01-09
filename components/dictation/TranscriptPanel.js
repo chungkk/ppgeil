@@ -93,14 +93,8 @@ const TranscriptPanel = ({
             <span
               key={idx}
               className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
-              onClick={(e) => {
-                if (pureWord && onWordClickForPopup) {
-                  e.stopPropagation();
-                  onWordClickForPopup(pureWord, e);
-                }
-              }}
               style={{
-                cursor: pureWord ? 'pointer' : 'default',
+                cursor: 'default',
                 color: wordColor || undefined,
                 fontWeight: wordColor ? 'bold' : undefined
               }}
@@ -135,14 +129,8 @@ const TranscriptPanel = ({
             return (
               <span
                 key={idx}
-                className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
-                onClick={(e) => {
-                  if (pureWord && onWordClickForPopup) {
-                    e.stopPropagation();
-                    onWordClickForPopup(pureWord, e);
-                  }
-                }}
-                style={{ cursor: pureWord ? 'pointer' : 'default' }}
+                className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
+                style={{ cursor: 'default' }}
               >
                 {word}{idx < words.length - 1 ? ' ' : ''}
               </span>
@@ -168,15 +156,9 @@ const TranscriptPanel = ({
               return (
                 <span
                   key={idx}
-                  className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
-                  onClick={(e) => {
-                    if (pureWord && onWordClickForPopup) {
-                      e.stopPropagation();
-                      onWordClickForPopup(pureWord, e);
-                    }
-                  }}
+                  className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
                   style={{
-                    cursor: pureWord ? 'pointer' : 'default',
+                    cursor: 'default',
                     color: '#10b981',
                     fontWeight: '500',
                     background: 'rgba(16, 185, 129, 0.1)',
@@ -195,15 +177,9 @@ const TranscriptPanel = ({
                 return (
                   <span
                     key={idx}
-                    className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
-                    onClick={(e) => {
-                      if (pureWord && onWordClickForPopup) {
-                        e.stopPropagation();
-                        onWordClickForPopup(pureWord, e);
-                      }
-                    }}
+                    className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
                     style={{
-                      cursor: pureWord ? 'pointer' : 'default',
+                      cursor: 'default',
                       color: '#f59e0b',
                       fontWeight: '500',
                       background: 'rgba(245, 158, 11, 0.12)',
@@ -255,15 +231,9 @@ const TranscriptPanel = ({
             return (
               <span
                 key={idx}
-                className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord ? styles.clickableWord : ''}`}
-                onClick={(e) => {
-                  if (pureWord && onWordClickForPopup) {
-                    e.stopPropagation();
-                    onWordClickForPopup(pureWord, e);
-                  }
-                }}
+                className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
                 style={{
-                  cursor: pureWord ? 'pointer' : 'default',
+                  cursor: 'default',
                   color: '#f59e0b',
                   fontWeight: '500',
                   background: 'rgba(245, 158, 11, 0.12)',
@@ -290,15 +260,9 @@ const TranscriptPanel = ({
           return (
             <span
               key={idx}
-              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''} ${pureWord && isRevealed ? styles.clickableWord : ''}`}
-              onClick={(e) => {
-                if (pureWord && isRevealed && onWordClickForPopup) {
-                  e.stopPropagation();
-                  onWordClickForPopup(pureWord, e);
-                }
-              }}
+              className={`${styles.karaokeWord} ${isSpoken ? styles.karaokeWordSpoken : ''} ${isCurrent ? styles.karaokeWordCurrent : ''}`}
               style={{
-                cursor: pureWord && isRevealed ? 'pointer' : 'default',
+                cursor: 'default',
                 color: wordColor || undefined,
                 fontWeight: wordColor ? 'bold' : undefined
               }}
@@ -309,7 +273,7 @@ const TranscriptPanel = ({
         })}
       </span>
     );
-  }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage, onWordClickForPopup, voiceRecordingResult, comparedWords, results, revealedWordsByClick]);
+  }, [currentSentenceIndex, isPlaying, activeWordIndex, maskTextByPercentage, voiceRecordingResult, comparedWords, results, revealedWordsByClick]);
 
   // Auto-scroll to current sentence - center it within the transcript container only
   useEffect(() => {
