@@ -1,11 +1,22 @@
-/* Footer Styles */
+/* Footer Styles - Neo-Retro Design */
 
 .footer {
-  background: #0a0a0a;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: var(--spacing-xl) var(--spacing-lg);
+  background: var(--retro-cream);
+  border-top: 3px solid var(--retro-border);
+  padding: 40px var(--spacing-lg);
   margin-top: auto;
-  color: #ffffff;
+  color: var(--retro-dark);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--retro-coral), var(--retro-yellow), var(--retro-cyan), var(--retro-pink), var(--retro-purple));
 }
 
 .footerContent {
@@ -34,31 +45,31 @@
 }
 
 .footerLogo {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  background: var(--accent-gradient);
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--retro-coral), var(--retro-yellow));
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  border: 2px solid white;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  font-size: 28px;
+  border: 3px solid var(--retro-border);
+  box-shadow: 3px 3px 0 var(--retro-shadow);
 }
 
 .footerBrandText {
-  font-size: 20px;
-  font-weight: 700;
-  background: var(--accent-gradient);
+  font-size: 24px;
+  font-weight: 900;
+  background: linear-gradient(90deg, var(--retro-coral), var(--retro-purple), var(--retro-cyan));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .footerDescription {
-  color: #cbd5e1;
+  color: #636e72;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: var(--spacing-md);
   padding-right: var(--spacing-md);
 }
@@ -67,44 +78,53 @@
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--border-radius-small);
-  padding: 10px 16px;
+  background: var(--retro-purple);
+  border: 2px solid var(--retro-border);
+  border-radius: 30px;
+  padding: 12px 20px;
   text-decoration: none;
-  color: #ffffff;
-  transition: all 0.2s ease;
+  color: white;
+  font-weight: 700;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   width: fit-content;
+  box-shadow: 3px 3px 0 var(--retro-shadow);
 }
 
 .appStoreBtn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(74, 144, 226, 0.5);
-  transform: translateY(-2px);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow);
+  background: #9333ea;
 }
 
 .footerSectionTitle {
   font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
+  font-weight: 800;
+  color: var(--retro-dark);
   margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .footerLinks {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: 10px;
 }
 
 .footerLink {
-  color: #cbd5e1;
+  color: #636e72;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.2s ease;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-left: -12px;
 }
 
 .footerLink:hover {
-  color: #4A90E2;
+  color: var(--retro-dark);
+  background: rgba(78, 205, 196, 0.3);
 }
 
 .footerBottom {
@@ -112,74 +132,98 @@
   margin: 0 auto;
   padding-top: var(--spacing-lg);
   margin-top: var(--spacing-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px dashed var(--retro-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .copyright {
-  color: #94a3b8;
+  color: #636e72;
   font-size: 13px;
+  font-weight: 600;
 }
 
 .socialLinks {
   display: flex;
-  gap: var(--spacing-md);
+  gap: 12px;
 }
 
 .socialLink {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: white;
+  border: 2px solid var(--retro-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #94a3b8;
+  color: var(--retro-dark);
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 16px;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  font-size: 18px;
+  box-shadow: 2px 2px 0 var(--retro-shadow);
 }
 
 .socialLink:hover {
-  background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
-  border-color: transparent;
-  transform: translateY(-3px) scale(1.1);
-  color: #ffffff;
-  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+  background: var(--retro-cyan);
+  transform: translate(-2px, -2px) rotate(-5deg);
+  box-shadow: 4px 4px 0 var(--retro-shadow);
 }
 
 .socialLink:focus-visible {
-  outline: 2px solid #4A90E2;
+  outline: 2px solid var(--retro-purple);
   outline-offset: 2px;
 }
 
 .socialSkeleton {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: linear-gradient(90deg, rgba(255,255,255,0.05) 25%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.05) 75%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
 
 @keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 .madeWith {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #cbd5e1;
+  color: #636e72;
   font-size: 13px;
+  font-weight: 600;
 }
 
 .heart {
-  color: #ef4444;
+  color: var(--retro-coral);
+  animation: heartBeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Dark theme */
+[data-theme="dark"] .footer {
+  background: rgba(255, 248, 231, 0.98);
 }
 
 @media (max-width: 768px) {
@@ -246,7 +290,7 @@
   }
 
   .appStoreBtn {
-    padding: 8px 12px;
+    padding: 10px 16px;
     font-size: 13px;
   }
 
@@ -259,7 +303,8 @@
   }
 
   .socialLink {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
   }
 }
