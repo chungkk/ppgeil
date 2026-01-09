@@ -18,12 +18,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 14px;
-  min-height: 48px;
-  height: 48px;
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-primary);
-  backdrop-filter: blur(8px);
+  padding: 14px 18px;
+  min-height: 56px;
+  height: 56px;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(51, 65, 85, 0.05) 100%);
+  border-radius: 16px 16px 0 0;
   box-sizing: border-box;
 }
 
