@@ -6738,7 +6738,7 @@
     height: 100%;
     gap: 0;
     overflow: hidden;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .dictationArea .dictationHeader {
@@ -6760,7 +6760,7 @@
   }
 
   .wordInputsSection {
-    margin: auto 12px;
+    margin: 8px 12px 0 12px;
     padding: 16px 12px;
     flex-shrink: 0;
   }
@@ -6804,7 +6804,7 @@
   }
 
   .wordInputsSection {
-    margin: auto 10px;
+    margin: 8px 10px 0 10px;
     padding: 14px 10px;
     flex-shrink: 0;
   }

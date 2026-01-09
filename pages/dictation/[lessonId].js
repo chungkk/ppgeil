@@ -1196,7 +1196,15 @@ const DictationPage = () => {
         activeElement?.tagName === 'TEXTAREA' ||
         activeElement?.isContentEditable;
 
-      // If typing, toggle play/pause (resume from current position, not from start)
+      // On mobile: allow Space to work normally when typing (don't hijack it)
+      // Check for mobile using window width
+      const isMobileDevice = window.innerWidth <= 768;
+      if (isTyping && isMobileDevice) {
+        // Let Space work normally for typing on mobile
+        return;
+      }
+
+      // If typing on desktop, toggle play/pause (resume from current position, not from start)
       if (isTyping) {
         e.preventDefault();
         if (isPlaying) {
