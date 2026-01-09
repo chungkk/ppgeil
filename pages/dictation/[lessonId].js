@@ -5,6 +5,7 @@ import SEO from '../../components/SEO';
 import DictionaryPopup from '../../components/DictionaryPopup';
 import ProgressIndicator from '../../components/ProgressIndicator';
 import PointsAnimation from '../../components/PointsAnimation';
+import FlipCounter from '../../components/FlipCounter';
 
 import { DictationHeader, DictationSkeleton, TranscriptPanel, DictationVideoSection } from '../../components/dictation';
 
@@ -1751,7 +1752,9 @@ const DictationPage = () => {
                   >
                     💡
                     {(hintClickCount[currentSentenceIndex] || 0) < 2 ? (
-                      <span className={styles.hintFreeCount}>{2 - (hintClickCount[currentSentenceIndex] || 0)}</span>
+                      <span className={styles.hintFreeCount}>
+                        <FlipCounter value={2 - (hintClickCount[currentSentenceIndex] || 0)} />
+                      </span>
                     ) : (
                       <span className={styles.hintPenaltyCount}>-1</span>
                     )}

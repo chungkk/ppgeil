@@ -413,7 +413,7 @@ const Header = () => {
               {/* Streak Badge */}
               <div className={styles.streakContainer}>
                 <span className={styles.streakIcon}>🔥</span>
-                <span className={styles.streakValue}>{user.streak?.currentStreak || 0}</span>
+                <span className={styles.streakValue}><FlipCounter value={user.streak?.currentStreak || 0} /></span>
                 
                 {/* Streak Tooltip */}
                 <div className={styles.streakTooltip}>

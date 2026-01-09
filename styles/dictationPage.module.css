@@ -2148,19 +2148,13 @@
 
 .hintFreeCount {
   position: absolute;
-  top: -4px;
-  right: -4px;
-  background: #10b981;
-  color: white;
-  font-size: 10px;
-  font-weight: 700;
-  min-width: 16px;
-  height: 16px;
-  border-radius: 50%;
+  top: -6px;
+  right: -6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.7);
+  transform-origin: center;
 }
 
 .hintPenaltyCount {
