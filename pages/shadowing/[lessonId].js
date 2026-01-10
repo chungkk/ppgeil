@@ -3016,6 +3016,18 @@ const DictationPageContent = () => {
       `}</style>
 
       <div className={styles.pageContainer}>
+        {/* Desktop Top Bar - SHADOWING */}
+        {!isMobile && (
+          <DictationHeader
+            isMobile={false}
+            learningMode="shadowing"
+            studyTime={studyTime}
+            formatStudyTime={formatStudyTime}
+            showTranslation={showTranslation}
+            onToggleTranslation={() => setShowTranslation(!showTranslation)}
+          />
+        )}
+
         {/* Main 3-Column Layout */}
         <div className={styles.mainContent}>
           {/* Left Column - Video */}

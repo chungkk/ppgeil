@@ -40,14 +40,18 @@
 }
 
 .dictationHeaderTitle {
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 12px;
+  font-weight: 700;
   color: #1a1a2e !important;
-  line-height: 1.4;
+  line-height: 1;
   margin: 0;
-  padding: 0;
+  padding: 6px 12px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
+  background: #fdcb6e !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .sentenceCounter {

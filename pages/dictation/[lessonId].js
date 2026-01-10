@@ -1384,6 +1384,7 @@ const DictationPage = () => {
           <DictationHeader
             lesson={lesson}
             studyTime={studyTime}
+            formatStudyTime={formatStudyTime}
             progress={progress}
             onBack={() => router.back()}
           />

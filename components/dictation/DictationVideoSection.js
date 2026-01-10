@@ -291,14 +291,7 @@ const DictationVideoSection = ({
     <div className={styles.leftSection}>
       {/* Video Header */}
       <div className={styles.videoHeader}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <h3 className={videoStyles.videoHeaderTitle}>{t('lesson.ui.video')}</h3>
-          <div className={styles.studyTimer}>
-            <span className={styles.timerText}>
-              <RetroFlipClock timeString={formatStudyTime(studyTime)} />
-            </span>
-          </div>
-        </div>
+        <h3 className={videoStyles.videoHeaderTitle}>{t('lesson.ui.video')}</h3>
         {!isMobile && (
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             {onSpeedChange && (

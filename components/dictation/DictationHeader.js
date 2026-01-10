@@ -15,6 +15,48 @@ const styles = { ...layoutStyles, ...inputStyles, ...headerStyles };
  * - Fixed header with mode toggle (click to switch between modes)
  * - Only content below changes when switching modes
  */
+// Retro flip clock component for study timer
+const RetroFlipClock = ({ timeString }) => {
+  const digits = timeString.replace(/:/g, '').split('');
+
+  const digitStyle = {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '24px',
+    height: '32px',
+    background: '#00cec9',
+    border: '2px solid #2d3436',
+    borderRadius: '6px',
+    fontFamily: "'SF Mono', 'Monaco', 'Courier New', monospace",
+    fontSize: '16px',
+    fontWeight: 800,
+    color: '#1a1a2e',
+    boxShadow: '2px 2px 0 rgba(0, 0, 0, 0.15)'
+  };
+
+  const colonStyle = {
+    fontFamily: "'SF Mono', 'Monaco', 'Courier New', monospace",
+    fontSize: '18px',
+    fontWeight: 900,
+    color: '#1a1a2e',
+    margin: '0 2px'
+  };
+
+  return (
+    <>
+      <span style={digitStyle}>{digits[0]}</span>
+      <span style={digitStyle}>{digits[1]}</span>
+      <span style={colonStyle}>:</span>
+      <span style={digitStyle}>{digits[2]}</span>
+      <span style={digitStyle}>{digits[3]}</span>
+      <span style={colonStyle}>:</span>
+      <span style={digitStyle}>{digits[4]}</span>
+      <span style={digitStyle}>{digits[5]}</span>
+    </>
+  );
+};
+
 const DictationHeader = ({
   isMobile,
   currentSentenceIndex,
@@ -30,7 +72,9 @@ const DictationHeader = ({
   onToggleLearningMode,
   lessonId,
   savedVocabularyCount = 0,
-  onShowVocabulary
+  onShowVocabulary,
+  studyTime = 0,
+  formatStudyTime
 }) => {
   const { t } = useTranslation();
   const [showSettingsMenu, setShowSettingsMenu] = useState(false);
@@ -203,12 +247,47 @@ const DictationHeader = ({
         </button>
       </div> */}
       
-      <div className={styles.dictationHeader}>
-        <h3 className={styles.dictationHeaderTitle}>
+      <div className={styles.dictationHeader} style={{ justifyContent: 'space-between' }}>
+        {/* Left - Title */}
+        <h3 className={styles.dictationHeaderTitle} style={{
+          fontSize: '12px',
+          fontWeight: 700,
+          color: '#1a1a2e',
+          lineHeight: 1,
+          margin: 0,
+          padding: '6px 12px',
+          letterSpacing: '0.3px',
+          textTransform: 'uppercase',
+          background: '#fdcb6e',
+          border: '2px solid #2d3436',
+          borderRadius: '8px',
+          boxShadow: '2px 2px 0 rgba(0, 0, 0, 0.15)',
+          display: 'inline-block'
+        }}>
           {learningMode === 'dictation' ? t('lesson.ui.dictation') : t('lesson.ui.shadowing')}
         </h3>
+        
+        {/* Center - Study Timer */}
+        {formatStudyTime && (
+          <div style={{
+            position: 'absolute',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '4px',
+            padding: '6px 12px',
+            background: 'white',
+            border: '2px solid #2d3436',
+            borderRadius: '8px',
+            boxShadow: '3px 3px 0 rgba(0, 0, 0, 0.15)'
+          }}>
+            <RetroFlipClock timeString={formatStudyTime(studyTime)} />
+          </div>
+        )}
+        
+        {/* Right - Toggle */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          {/* Translation Toggle - Desktop Only */}
           {onToggleTranslation && (
             <label className={styles.toggleLabel}>
               <input

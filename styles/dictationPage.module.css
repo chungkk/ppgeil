@@ -402,6 +402,7 @@
 .dictationHeader {
   background: #fef9e7 !important;
   border-bottom: 2px solid #2d3436 !important;
+  position: relative;
 }
 
 /* Transcript Header - Neo-Retro */
@@ -413,15 +414,23 @@
 /* Column Titles - Neo-Retro */
 .videoHeaderTitle,
 .dictationHeaderTitle,
-.transcriptTitle {
-  font-size: 14px;
-  font-weight: 800;
+.transcriptTitle,
+h3.videoHeaderTitle,
+h3.dictationHeaderTitle,
+h3.transcriptTitle {
+  font-size: 12px !important;
+  font-weight: 700 !important;
   color: #1a1a2e !important;
-  line-height: 1.4;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 6px 12px !important;
+  letter-spacing: 0.3px !important;
+  text-transform: uppercase !important;
+  background: #fdcb6e !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 8px !important;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15) !important;
+  display: inline-block !important;
 }
 
 /* Mobile title improvements */
@@ -5508,6 +5517,39 @@
 /* ============================================
    THREE COLUMN LAYOUT - DICTATION PAGE
    ============================================ */
+
+/* Desktop Top Bar - Title + Timer */
+.desktopTopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #00cec9;
+  border: 3px solid #2d3436;
+  border-radius: 16px;
+  margin-bottom: var(--spacing-md);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.desktopTopBarTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.desktopTopBarTimer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: white;
+  border: 2px solid #2d3436;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
 
 .threeColumnLayout {
   display: grid;
