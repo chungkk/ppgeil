@@ -1,50 +1,110 @@
 import React from 'react';
 
+// ========== RETRO SKELETON BASE COMPONENT ==========
+const RetroSkeletonBox = ({ 
+  width = '100%', 
+  height = '20px', 
+  borderRadius = '4px', 
+  marginBottom = '0',
+  variant = 'default', // 'default' | 'accent' | 'neon'
+  delay = 0,
+  style = {}
+}) => {
+  const variantStyles = {
+    default: {
+      background: 'linear-gradient(90deg, var(--retro-cream, #FFF8E7) 0%, rgba(255, 107, 107, 0.15) 50%, var(--retro-cream, #FFF8E7) 100%)',
+      border: '2px solid var(--retro-border, #1a1a2e)',
+      boxShadow: '3px 3px 0 var(--retro-shadow, #1a1a2e)',
+    },
+    accent: {
+      background: 'linear-gradient(90deg, var(--retro-cyan, #4ECDC4) 0%, var(--retro-yellow, #FFE66D) 50%, var(--retro-cyan, #4ECDC4) 100%)',
+      border: '2px solid var(--retro-border, #1a1a2e)',
+      boxShadow: '3px 3px 0 var(--retro-shadow, #1a1a2e)',
+    },
+    neon: {
+      background: 'linear-gradient(90deg, var(--retro-pink, #FF8ED4) 0%, var(--retro-purple, #A855F7) 50%, var(--retro-pink, #FF8ED4) 100%)',
+      border: '2px solid var(--retro-border, #1a1a2e)',
+      boxShadow: '3px 3px 0 var(--retro-shadow, #1a1a2e), 0 0 10px rgba(168, 85, 247, 0.3)',
+    },
+    subtle: {
+      background: 'linear-gradient(90deg, rgba(255, 248, 231, 0.5) 0%, rgba(255, 248, 231, 0.8) 50%, rgba(255, 248, 231, 0.5) 100%)',
+      border: '2px solid rgba(26, 26, 46, 0.3)',
+      boxShadow: '2px 2px 0 rgba(26, 26, 46, 0.2)',
+    }
+  };
+
+  return (
+    <div
+      style={{
+        width,
+        height,
+        borderRadius,
+        marginBottom,
+        backgroundSize: '200% 100%',
+        animation: `retroLoading 1.2s ease-in-out infinite`,
+        animationDelay: `${delay}ms`,
+        transition: 'transform 0.2s ease',
+        ...variantStyles[variant],
+        ...style
+      }}
+    />
+  );
+};
+
+// Legacy SkeletonBox for backward compatibility
 const SkeletonBox = ({ width = '100%', height = '20px', borderRadius = '4px', marginBottom = '0' }) => (
-  <div
-    style={{
-      width,
-      height,
-      borderRadius,
-      marginBottom,
-      background: 'linear-gradient(90deg, var(--bg-secondary) 0%, var(--bg-hover) 50%, var(--bg-secondary) 100%)',
-      backgroundSize: '200% 100%',
-      animation: 'loading 1.5s ease-in-out infinite',
-    }}
-  />
+  <RetroSkeletonBox width={width} height={height} borderRadius={borderRadius} marginBottom={marginBottom} />
 );
 
+// ========== RETRO CARD SKELETON ==========
 export const SkeletonCard = () => (
   <div
     style={{
-      background: 'var(--bg-card)',
-      borderRadius: 'var(--border-radius)',
+      background: 'var(--retro-cream, #FFF8E7)',
+      borderRadius: '16px',
       overflow: 'hidden',
-      border: '1px solid var(--border-color)',
-      boxShadow: 'var(--shadow-md)',
+      border: '3px solid var(--retro-border, #1a1a2e)',
+      boxShadow: '6px 6px 0 var(--retro-shadow, #1a1a2e)',
+      position: 'relative',
+      transition: 'transform 0.2s ease, box-shadow 0.2s ease',
     }}
   >
+    {/* Rainbow top border */}
+    <div style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      height: '4px',
+      background: 'linear-gradient(90deg, var(--retro-coral, #FF6B6B), var(--retro-yellow, #FFE66D), var(--retro-cyan, #4ECDC4), var(--retro-pink, #FF8ED4))',
+      zIndex: 1
+    }} />
+    
     {/* 16:9 aspect ratio thumbnail */}
-    <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%', background: 'var(--bg-secondary)' }}>
-      <SkeletonBox width="100%" height="100%" borderRadius="0" style={{ position: 'absolute', top: 0, left: 0 }} />
+    <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
+        <RetroSkeletonBox width="100%" height="100%" borderRadius="0" variant="accent" />
+      </div>
     </div>
-    <div style={{ padding: '10px' }}>
-      <SkeletonBox width="90%" height="16px" marginBottom="6px" />
-      <SkeletonBox width="70%" height="16px" marginBottom="8px" />
-      <div style={{ display: 'flex', gap: '6px' }}>
-        <SkeletonBox width="50%" height="28px" borderRadius="var(--border-radius-small)" />
-        <SkeletonBox width="50%" height="28px" borderRadius="var(--border-radius-small)" />
+    
+    <div style={{ padding: '14px' }}>
+      <RetroSkeletonBox width="85%" height="18px" marginBottom="8px" delay={100} />
+      <RetroSkeletonBox width="60%" height="14px" marginBottom="12px" delay={150} variant="subtle" />
+      <div style={{ display: 'flex', gap: '8px' }}>
+        <RetroSkeletonBox width="50%" height="36px" borderRadius="20px" delay={200} variant="accent" />
+        <RetroSkeletonBox width="50%" height="36px" borderRadius="20px" delay={250} variant="neon" />
       </div>
     </div>
   </div>
 );
 
+// ========== RETRO GRID SKELETON ==========
 export const SkeletonGrid = ({ count = 6 }) => (
   <div
     style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-      gap: 'var(--spacing-lg)',
+      gap: 'var(--spacing-lg, 24px)',
     }}
   >
     {Array.from({ length: count }).map((_, i) => (
@@ -53,149 +113,203 @@ export const SkeletonGrid = ({ count = 6 }) => (
   </div>
 );
 
+// ========== RETRO STATS SKELETON ==========
 export const SkeletonStats = () => (
   <div
     style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-      gap: 'var(--spacing-lg)',
-      marginBottom: 'var(--spacing-xl)',
+      gap: 'var(--spacing-lg, 24px)',
+      marginBottom: 'var(--spacing-xl, 32px)',
     }}
   >
     {Array.from({ length: 4 }).map((_, i) => (
       <div
         key={i}
         style={{
-          background: 'var(--bg-secondary)',
-          padding: 'var(--spacing-lg)',
-          borderRadius: 'var(--border-radius)',
-          border: '1px solid var(--border-color)',
+          background: 'var(--retro-cream, #FFF8E7)',
+          padding: '20px',
+          borderRadius: '12px',
+          border: '3px solid var(--retro-border, #1a1a2e)',
+          boxShadow: '4px 4px 0 var(--retro-shadow, #1a1a2e)',
+          position: 'relative',
+          overflow: 'hidden'
         }}
       >
-        <SkeletonBox width="60%" height="18px" marginBottom="var(--spacing-sm)" />
-        <SkeletonBox width="40%" height="32px" />
+        {/* Accent top stripe */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: '4px',
+          background: i % 2 === 0 ? 'var(--retro-cyan, #4ECDC4)' : 'var(--retro-coral, #FF6B6B)'
+        }} />
+        <RetroSkeletonBox width="50%" height="16px" marginBottom="12px" delay={i * 100} variant="subtle" />
+        <RetroSkeletonBox width="70%" height="28px" delay={i * 100 + 50} variant="accent" />
       </div>
     ))}
   </div>
 );
 
+// ========== RETRO TABLE SKELETON ==========
 export const SkeletonTable = ({ rows = 5 }) => (
   <div
     style={{
-      background: 'var(--bg-secondary)',
-      borderRadius: 'var(--border-radius)',
-      border: '1px solid var(--border-color)',
+      background: 'var(--retro-cream, #FFF8E7)',
+      borderRadius: '16px',
+      border: '3px solid var(--retro-border, #1a1a2e)',
+      boxShadow: '5px 5px 0 var(--retro-shadow, #1a1a2e)',
       overflow: 'hidden',
     }}
   >
-    <div style={{ padding: 'var(--spacing-md)', borderBottom: '1px solid var(--border-color)' }}>
-      <SkeletonBox width="30%" height="20px" />
+    <div style={{ 
+      padding: '16px 20px', 
+      borderBottom: '3px solid var(--retro-border, #1a1a2e)',
+      background: 'linear-gradient(90deg, var(--retro-coral, #FF6B6B), var(--retro-yellow, #FFE66D), var(--retro-cyan, #4ECDC4))'
+    }}>
+      <RetroSkeletonBox width="30%" height="20px" variant="subtle" />
     </div>
     {Array.from({ length: rows }).map((_, i) => (
       <div
         key={i}
         style={{
-          padding: 'var(--spacing-md)',
-          borderBottom: i < rows - 1 ? '1px solid var(--border-color)' : 'none',
+          padding: '14px 20px',
+          borderBottom: i < rows - 1 ? '2px solid rgba(26, 26, 46, 0.2)' : 'none',
           display: 'flex',
-          gap: 'var(--spacing-lg)',
+          gap: '20px',
         }}
       >
-        <SkeletonBox width="40%" height="18px" />
-        <SkeletonBox width="20%" height="18px" />
-        <SkeletonBox width="30%" height="18px" />
+        <RetroSkeletonBox width="40%" height="16px" delay={i * 50} />
+        <RetroSkeletonBox width="20%" height="16px" delay={i * 50 + 25} variant="subtle" />
+        <RetroSkeletonBox width="30%" height="16px" delay={i * 50 + 50} variant="accent" />
       </div>
     ))}
   </div>
 );
 
-// Profile Page Sidebar Skeleton
+// ========== PROFILE PAGE SKELETONS ==========
 export const ProfileSidebarSkeleton = () => (
   <div
     style={{
-      background: 'var(--bg-card)',
-      borderRadius: '12px',
+      background: 'var(--retro-cream, #FFF8E7)',
+      borderRadius: '16px',
       padding: '24px',
-      border: '1px solid var(--border-color)',
+      border: '3px solid var(--retro-border, #1a1a2e)',
+      boxShadow: '6px 6px 0 var(--retro-shadow, #1a1a2e)',
+      position: 'relative',
+      overflow: 'hidden'
     }}
   >
+    {/* Rainbow top border */}
+    <div style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      height: '5px',
+      background: 'linear-gradient(90deg, var(--retro-coral, #FF6B6B), var(--retro-yellow, #FFE66D), var(--retro-cyan, #4ECDC4), var(--retro-pink, #FF8ED4))'
+    }} />
+    
     {/* Avatar */}
-    <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+    <div style={{ textAlign: 'center', marginBottom: '20px', marginTop: '8px' }}>
       <div
         style={{
-          width: '120px',
-          height: '120px',
+          width: '100px',
+          height: '100px',
           margin: '0 auto 16px',
           borderRadius: '50%',
-          background: 'linear-gradient(90deg, var(--bg-secondary) 0%, var(--bg-hover) 50%, var(--bg-secondary) 100%)',
-          backgroundSize: '200% 100%',
-          animation: 'loading 1.5s ease-in-out infinite',
+          border: '4px solid var(--retro-border, #1a1a2e)',
+          boxShadow: '4px 4px 0 var(--retro-shadow, #1a1a2e)',
+          background: 'linear-gradient(135deg, var(--retro-cyan, #4ECDC4), var(--retro-pink, #FF8ED4))',
+          backgroundSize: '200% 200%',
+          animation: 'retroLoading 1.2s ease-in-out infinite',
         }}
       />
-      <SkeletonBox width="70%" height="24px" marginBottom="8px" style={{ margin: '0 auto 8px' }} />
-      <SkeletonBox width="50%" height="16px" style={{ margin: '0 auto' }} />
+      <RetroSkeletonBox width="60%" height="22px" marginBottom="8px" style={{ margin: '0 auto 8px' }} variant="accent" />
+      <RetroSkeletonBox width="40%" height="14px" style={{ margin: '0 auto' }} variant="subtle" />
     </div>
 
     {/* Stats */}
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '24px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '20px' }}>
       {[1, 2, 3].map((i) => (
         <div
           key={i}
           style={{
-            background: 'var(--bg-secondary)',
-            padding: '16px',
-            borderRadius: '8px',
-            border: '1px solid var(--border-color)',
+            background: 'rgba(78, 205, 196, 0.1)',
+            padding: '14px',
+            borderRadius: '10px',
+            border: '2px solid var(--retro-border, #1a1a2e)',
+            boxShadow: '3px 3px 0 var(--retro-shadow, #1a1a2e)',
           }}
         >
-          <SkeletonBox width="60%" height="14px" marginBottom="8px" />
-          <SkeletonBox width="40%" height="28px" />
+          <RetroSkeletonBox width="50%" height="12px" marginBottom="8px" delay={i * 100} variant="subtle" />
+          <RetroSkeletonBox width="70%" height="24px" delay={i * 100 + 50} variant="accent" />
         </div>
       ))}
     </div>
   </div>
 );
 
-// Profile Lesson Card Skeleton
 export const ProfileLessonCardSkeleton = () => (
   <div
     style={{
-      background: 'var(--bg-secondary)',
-      border: '1px solid var(--border-color)',
-      borderRadius: '12px',
-      padding: '18px',
+      background: 'var(--retro-cream, #FFF8E7)',
+      border: '3px solid var(--retro-border, #1a1a2e)',
+      borderRadius: '14px',
+      padding: '16px',
+      boxShadow: '4px 4px 0 var(--retro-shadow, #1a1a2e)',
+      position: 'relative',
+      overflow: 'hidden'
     }}
   >
+    {/* Accent stripe */}
+    <div style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      height: '4px',
+      background: 'var(--retro-cyan, #4ECDC4)'
+    }} />
+    
     {/* Header */}
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '14px' }}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px', marginTop: '4px' }}>
       <div style={{ display: 'flex', gap: '10px', flex: 1 }}>
-        <SkeletonBox width="24px" height="24px" borderRadius="4px" />
+        <RetroSkeletonBox width="28px" height="28px" borderRadius="6px" variant="neon" />
         <div style={{ flex: 1 }}>
-          <SkeletonBox width="80%" height="18px" marginBottom="6px" />
-          <SkeletonBox width="40px" height="18px" borderRadius="4px" />
+          <RetroSkeletonBox width="75%" height="16px" marginBottom="6px" delay={50} />
+          <RetroSkeletonBox width="50px" height="20px" borderRadius="10px" delay={100} variant="accent" />
         </div>
       </div>
-      <SkeletonBox width="50px" height="28px" />
+      <RetroSkeletonBox width="55px" height="26px" borderRadius="13px" delay={150} variant="neon" />
     </div>
 
     {/* Progress bar */}
-    <SkeletonBox width="100%" height="6px" marginBottom="14px" borderRadius="3px" />
+    <RetroSkeletonBox width="100%" height="8px" marginBottom="14px" borderRadius="4px" delay={200} variant="accent" />
 
     {/* Mode progress */}
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', padding: '12px 0', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)', marginBottom: '12px' }}>
-      <SkeletonBox width="100%" height="16px" />
-      <SkeletonBox width="100%" height="16px" />
+    <div style={{ 
+      display: 'grid', 
+      gridTemplateColumns: '1fr 1fr', 
+      gap: '10px', 
+      padding: '12px 0', 
+      borderTop: '2px solid rgba(26, 26, 46, 0.2)', 
+      borderBottom: '2px solid rgba(26, 26, 46, 0.2)', 
+      marginBottom: '12px' 
+    }}>
+      <RetroSkeletonBox width="100%" height="14px" delay={250} variant="subtle" />
+      <RetroSkeletonBox width="100%" height="14px" delay={300} variant="subtle" />
     </div>
 
     {/* Buttons */}
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
-      <SkeletonBox width="100%" height="36px" borderRadius="8px" />
-      <SkeletonBox width="100%" height="36px" borderRadius="8px" />
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+      <RetroSkeletonBox width="100%" height="38px" borderRadius="19px" delay={350} variant="accent" />
+      <RetroSkeletonBox width="100%" height="38px" borderRadius="19px" delay={400} variant="neon" />
     </div>
   </div>
 );
 
-// Profile Page Skeleton (with sidebar and lesson cards)
 export const ProfilePageSkeleton = () => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 992;
 
@@ -205,36 +319,45 @@ export const ProfilePageSkeleton = () => {
       gridTemplateColumns: isMobile ? '1fr' : '300px 1fr',
       gap: isMobile ? '24px' : '32px'
     }}>
-      {/* Sidebar */}
       <ProfileSidebarSkeleton />
-
-      {/* Main content */}
       <div>
-        {/* Section header */}
         <div
           style={{
-            background: 'var(--bg-card)',
-            borderRadius: '12px',
+            background: 'var(--retro-cream, #FFF8E7)',
+            borderRadius: '16px',
             padding: isMobile ? '20px 16px' : '24px',
-            border: '1px solid var(--border-color)',
+            border: '3px solid var(--retro-border, #1a1a2e)',
+            boxShadow: '6px 6px 0 var(--retro-shadow, #1a1a2e)',
+            position: 'relative',
+            overflow: 'hidden'
           }}
         >
+          {/* Rainbow top border */}
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            height: '5px',
+            background: 'linear-gradient(90deg, var(--retro-coral, #FF6B6B), var(--retro-yellow, #FFE66D), var(--retro-cyan, #4ECDC4), var(--retro-pink, #FF8ED4))'
+          }} />
+          
           <div style={{
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: isMobile ? 'flex-start' : 'center',
             flexDirection: isMobile ? 'column' : 'row',
             gap: isMobile ? '12px' : '0',
-            marginBottom: '20px'
+            marginBottom: '24px',
+            marginTop: '8px'
           }}>
-            <SkeletonBox width={isMobile ? '160px' : '180px'} height="24px" />
+            <RetroSkeletonBox width={isMobile ? '150px' : '180px'} height="24px" variant="accent" />
             <div style={{ display: 'flex', gap: '10px' }}>
-              <SkeletonBox width="100px" height="28px" borderRadius="16px" />
-              <SkeletonBox width="100px" height="28px" borderRadius="16px" />
+              <RetroSkeletonBox width="90px" height="32px" borderRadius="16px" delay={100} variant="neon" />
+              <RetroSkeletonBox width="90px" height="32px" borderRadius="16px" delay={150} />
             </div>
           </div>
 
-          {/* Lesson cards grid */}
           <div style={{
             display: 'grid',
             gridTemplateColumns: isMobile ? '1fr' : 'repeat(2, 1fr)',
@@ -250,38 +373,50 @@ export const ProfilePageSkeleton = () => {
   );
 };
 
-// Settings Card Skeleton
+// ========== SETTINGS PAGE SKELETONS ==========
 export const SettingsCardSkeleton = () => (
   <div
     style={{
-      background: 'var(--bg-card)',
-      borderRadius: '12px',
+      background: 'var(--retro-cream, #FFF8E7)',
+      borderRadius: '16px',
       padding: '24px',
-      border: '1px solid var(--border-color)',
+      border: '3px solid var(--retro-border, #1a1a2e)',
+      boxShadow: '5px 5px 0 var(--retro-shadow, #1a1a2e)',
+      position: 'relative',
+      overflow: 'hidden'
     }}
   >
+    {/* Accent top stripe */}
+    <div style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      height: '4px',
+      background: 'var(--retro-purple, #A855F7)'
+    }} />
+    
     {/* Header */}
-    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
-      <SkeletonBox width="40px" height="40px" borderRadius="50%" />
-      <SkeletonBox width="150px" height="22px" />
+    <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '20px', marginTop: '4px' }}>
+      <RetroSkeletonBox width="44px" height="44px" borderRadius="12px" variant="neon" />
+      <RetroSkeletonBox width="140px" height="20px" variant="accent" />
     </div>
 
     {/* Content */}
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
       <div>
-        <SkeletonBox width="100px" height="14px" marginBottom="8px" />
-        <SkeletonBox width="100%" height="40px" borderRadius="6px" />
+        <RetroSkeletonBox width="90px" height="12px" marginBottom="8px" variant="subtle" />
+        <RetroSkeletonBox width="100%" height="44px" borderRadius="10px" delay={100} />
       </div>
       <div>
-        <SkeletonBox width="120px" height="14px" marginBottom="8px" />
-        <SkeletonBox width="100%" height="40px" borderRadius="6px" />
+        <RetroSkeletonBox width="110px" height="12px" marginBottom="8px" delay={150} variant="subtle" />
+        <RetroSkeletonBox width="100%" height="44px" borderRadius="10px" delay={200} />
       </div>
-      <SkeletonBox width="60%" height="12px" />
+      <RetroSkeletonBox width="70%" height="12px" delay={250} variant="subtle" />
     </div>
   </div>
 );
 
-// Settings Page Skeleton
 export const SettingsPageSkeleton = () => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
 
@@ -289,14 +424,14 @@ export const SettingsPageSkeleton = () => {
     <div>
       {/* Page Header */}
       <div style={{ marginBottom: isMobile ? '24px' : '32px' }}>
-        <SkeletonBox width={isMobile ? '160px' : '200px'} height={isMobile ? '28px' : '32px'} marginBottom="8px" />
-        <SkeletonBox width={isMobile ? '90%' : '350px'} height="16px" />
+        <RetroSkeletonBox width={isMobile ? '160px' : '200px'} height={isMobile ? '28px' : '32px'} marginBottom="10px" variant="accent" />
+        <RetroSkeletonBox width={isMobile ? '90%' : '350px'} height="16px" variant="subtle" />
       </div>
 
       {/* Settings Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(400px, 1fr))',
+        gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(380px, 1fr))',
         gap: '24px'
       }}>
         {[1, 2, 3, 4].map((i) => (
@@ -307,27 +442,27 @@ export const SettingsPageSkeleton = () => {
   );
 };
 
-// Vocabulary Card Skeleton
+// ========== VOCABULARY PAGE SKELETONS ==========
 export const VocabularyCardSkeleton = () => (
   <div
     style={{
-      background: 'var(--bg-card)',
-      border: '1px solid var(--border-color)',
-      borderRadius: '12px',
+      background: 'var(--retro-cream, #FFF8E7)',
+      border: '3px solid var(--retro-border, #1a1a2e)',
+      borderRadius: '14px',
       padding: '16px',
+      boxShadow: '4px 4px 0 var(--retro-shadow, #1a1a2e)',
     }}
   >
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <div style={{ flex: 1 }}>
-        <SkeletonBox width="60%" height="20px" marginBottom="6px" />
-        <SkeletonBox width="40%" height="14px" />
+        <RetroSkeletonBox width="55%" height="18px" marginBottom="8px" variant="accent" />
+        <RetroSkeletonBox width="35%" height="14px" variant="subtle" />
       </div>
-      <SkeletonBox width="32px" height="32px" borderRadius="4px" />
+      <RetroSkeletonBox width="36px" height="36px" borderRadius="8px" variant="neon" />
     </div>
   </div>
 );
 
-// Vocabulary Page Skeleton
 export const VocabularyPageSkeleton = () => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
 
@@ -336,16 +471,16 @@ export const VocabularyPageSkeleton = () => {
       {/* Page Header */}
       <div style={{ marginBottom: '24px', textAlign: 'center' }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
-          <SkeletonBox width="40px" height="40px" borderRadius="50%" />
-          <SkeletonBox width={isMobile ? '140px' : '180px'} height={isMobile ? '28px' : '32px'} />
+          <RetroSkeletonBox width="44px" height="44px" borderRadius="12px" variant="neon" />
+          <RetroSkeletonBox width={isMobile ? '140px' : '180px'} height={isMobile ? '28px' : '32px'} variant="accent" />
         </div>
-        <SkeletonBox width={isMobile ? '90%' : '300px'} height="16px" style={{ margin: '0 auto' }} />
+        <RetroSkeletonBox width={isMobile ? '90%' : '300px'} height="16px" style={{ margin: '0 auto' }} variant="subtle" />
       </div>
 
-      {/* Mobile controls */}
+      {/* Controls */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <SkeletonBox width={isMobile ? '100px' : '120px'} height="36px" borderRadius="8px" />
-        <SkeletonBox width={isMobile ? '60px' : '80px'} height="20px" />
+        <RetroSkeletonBox width={isMobile ? '100px' : '120px'} height="40px" borderRadius="20px" variant="accent" />
+        <RetroSkeletonBox width={isMobile ? '70px' : '90px'} height="18px" variant="subtle" />
       </div>
 
       {/* Vocabulary Grid */}
@@ -363,37 +498,39 @@ export const VocabularyPageSkeleton = () => {
 };
 
 // ========== ADMIN DASHBOARD SKELETONS ==========
-
-// Admin Table Row Skeleton
 export const AdminTableRowSkeleton = ({ columns = 4 }) => (
   <tr>
     {Array.from({ length: columns }).map((_, i) => (
-      <td key={i} style={{ padding: '10px 12px' }}>
-        <SkeletonBox
-          width={i === 0 ? '15px' : i === columns - 1 ? '120px' : '80%'}
+      <td key={i} style={{ padding: '12px 14px' }}>
+        <RetroSkeletonBox
+          width={i === 0 ? '18px' : i === columns - 1 ? '120px' : '80%'}
           height="16px"
+          delay={i * 30}
+          variant={i === columns - 1 ? 'accent' : 'default'}
         />
       </td>
     ))}
   </tr>
 );
 
-// Admin Table Skeleton
 export const AdminTableSkeleton = ({ rows = 10, columns = 4 }) => (
   <div style={{
-    background: 'white',
-    borderRadius: '10px',
+    background: 'var(--retro-cream, #FFF8E7)',
+    borderRadius: '14px',
     overflow: 'hidden',
-    border: '1px solid #e5e7eb',
-    boxShadow: '0 1px 2px rgba(0,0,0,0.04)',
+    border: '3px solid var(--retro-border, #1a1a2e)',
+    boxShadow: '5px 5px 0 var(--retro-shadow, #1a1a2e)',
     marginBottom: '16px'
   }}>
     <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-      <thead style={{ background: '#f9fafb', borderBottom: '1px solid #e5e7eb' }}>
+      <thead style={{ 
+        background: 'linear-gradient(90deg, var(--retro-cyan, #4ECDC4), var(--retro-yellow, #FFE66D))',
+        borderBottom: '3px solid var(--retro-border, #1a1a2e)'
+      }}>
         <tr>
           {Array.from({ length: columns }).map((_, i) => (
-            <th key={i} style={{ padding: '10px 12px', textAlign: 'left' }}>
-              <SkeletonBox width="80%" height="12px" />
+            <th key={i} style={{ padding: '14px', textAlign: 'left' }}>
+              <RetroSkeletonBox width="70%" height="14px" variant="subtle" />
             </th>
           ))}
         </tr>
@@ -407,32 +544,30 @@ export const AdminTableSkeleton = ({ rows = 10, columns = 4 }) => (
   </div>
 );
 
-// Admin Stat Card Skeleton
 export const AdminStatCardSkeleton = () => (
   <div style={{
-    background: 'white',
-    padding: '10px 16px',
-    borderRadius: '8px',
-    boxShadow: '0 1px 2px rgba(0,0,0,0.04)',
+    background: 'var(--retro-cream, #FFF8E7)',
+    padding: '14px 18px',
+    borderRadius: '12px',
+    boxShadow: '4px 4px 0 var(--retro-shadow, #1a1a2e)',
     display: 'flex',
     alignItems: 'center',
-    gap: '10px',
-    border: '1px solid #e5e7eb'
+    gap: '12px',
+    border: '3px solid var(--retro-border, #1a1a2e)'
   }}>
-    <SkeletonBox width="32px" height="32px" borderRadius="6px" />
+    <RetroSkeletonBox width="40px" height="40px" borderRadius="10px" variant="neon" />
     <div style={{ flex: 1 }}>
-      <SkeletonBox width="60px" height="20px" marginBottom="4px" />
-      <SkeletonBox width="80px" height="14px" />
+      <RetroSkeletonBox width="55px" height="22px" marginBottom="6px" variant="accent" />
+      <RetroSkeletonBox width="75px" height="14px" variant="subtle" />
     </div>
   </div>
 );
 
-// Admin Stats Overview Skeleton
 export const AdminStatsOverviewSkeleton = ({ count = 3 }) => (
   <div style={{
     display: 'flex',
-    gap: '12px',
-    marginBottom: '20px',
+    gap: '14px',
+    marginBottom: '24px',
     flexWrap: 'wrap'
   }}>
     {Array.from({ length: count }).map((_, i) => (
@@ -441,28 +576,26 @@ export const AdminStatsOverviewSkeleton = ({ count = 3 }) => (
   </div>
 );
 
-// Admin File Item Skeleton
 export const AdminFileItemSkeleton = () => (
   <div style={{
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '14px 20px',
-    borderBottom: '1px solid #f3f4f6'
+    padding: '16px 20px',
+    borderBottom: '2px solid rgba(26, 26, 46, 0.15)'
   }}>
-    <SkeletonBox width="70%" height="16px" />
-    <SkeletonBox width="32px" height="32px" borderRadius="6px" />
+    <RetroSkeletonBox width="65%" height="16px" />
+    <RetroSkeletonBox width="36px" height="36px" borderRadius="8px" variant="accent" />
   </div>
 );
 
-// Admin Files List Skeleton
 export const AdminFilesListSkeleton = ({ count = 5 }) => (
   <div style={{
-    background: 'white',
-    borderRadius: '12px',
-    border: '1px solid #e5e7eb',
+    background: 'var(--retro-cream, #FFF8E7)',
+    borderRadius: '14px',
+    border: '3px solid var(--retro-border, #1a1a2e)',
     overflow: 'hidden',
-    boxShadow: '0 1px 3px rgba(0,0,0,0.05)'
+    boxShadow: '5px 5px 0 var(--retro-shadow, #1a1a2e)'
   }}>
     {Array.from({ length: count }).map((_, i) => (
       <AdminFileItemSkeleton key={i} />
@@ -470,12 +603,11 @@ export const AdminFilesListSkeleton = ({ count = 5 }) => (
   </div>
 );
 
-// Admin Dashboard Page Skeleton
 export const AdminDashboardPageSkeleton = () => (
   <div>
     {/* Breadcrumb */}
-    <div style={{ marginBottom: '12px' }}>
-      <SkeletonBox width="150px" height="14px" />
+    <div style={{ marginBottom: '14px' }}>
+      <RetroSkeletonBox width="150px" height="14px" variant="subtle" />
     </div>
 
     {/* Page Header */}
@@ -483,20 +615,20 @@ export const AdminDashboardPageSkeleton = () => (
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      marginBottom: '20px',
-      paddingBottom: '16px',
-      borderBottom: '1px solid #e5e7eb'
+      marginBottom: '24px',
+      paddingBottom: '18px',
+      borderBottom: '3px solid var(--retro-border, #1a1a2e)'
     }}>
-      <SkeletonBox width="250px" height="28px" />
-      <SkeletonBox width="100px" height="40px" borderRadius="6px" />
+      <RetroSkeletonBox width="250px" height="30px" variant="accent" />
+      <RetroSkeletonBox width="110px" height="44px" borderRadius="22px" variant="neon" />
     </div>
 
     {/* Stats */}
     <AdminStatsOverviewSkeleton count={3} />
 
     {/* Search */}
-    <div style={{ marginBottom: '16px' }}>
-      <SkeletonBox width="100%" height="44px" borderRadius="6px" />
+    <div style={{ marginBottom: '18px' }}>
+      <RetroSkeletonBox width="100%" height="48px" borderRadius="24px" />
     </div>
 
     {/* Table */}
@@ -507,19 +639,19 @@ export const AdminDashboardPageSkeleton = () => (
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      padding: '10px 14px',
-      background: 'white',
-      borderRadius: '8px',
-      border: '1px solid #e5e7eb'
+      padding: '14px 18px',
+      background: 'var(--retro-cream, #FFF8E7)',
+      borderRadius: '12px',
+      border: '3px solid var(--retro-border, #1a1a2e)',
+      boxShadow: '4px 4px 0 var(--retro-shadow, #1a1a2e)'
     }}>
-      <SkeletonBox width="100px" height="36px" borderRadius="6px" />
-      <SkeletonBox width="200px" height="16px" />
-      <SkeletonBox width="100px" height="36px" borderRadius="6px" />
+      <RetroSkeletonBox width="100px" height="40px" borderRadius="20px" variant="accent" />
+      <RetroSkeletonBox width="180px" height="16px" variant="subtle" />
+      <RetroSkeletonBox width="100px" height="40px" borderRadius="20px" variant="accent" />
     </div>
   </div>
 );
 
-// Admin Files Page Skeleton
 export const AdminFilesPageSkeleton = () => (
   <div>
     {/* Page Header */}
@@ -527,15 +659,15 @@ export const AdminFilesPageSkeleton = () => (
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      marginBottom: '20px',
-      paddingBottom: '16px',
-      borderBottom: '1px solid #e5e7eb'
+      marginBottom: '24px',
+      paddingBottom: '18px',
+      borderBottom: '3px solid var(--retro-border, #1a1a2e)'
     }}>
       <div>
-        <SkeletonBox width="220px" height="28px" marginBottom="6px" />
-        <SkeletonBox width="300px" height="16px" />
+        <RetroSkeletonBox width="220px" height="28px" marginBottom="8px" variant="accent" />
+        <RetroSkeletonBox width="300px" height="16px" variant="subtle" />
       </div>
-      <SkeletonBox width="130px" height="40px" borderRadius="6px" />
+      <RetroSkeletonBox width="140px" height="44px" borderRadius="22px" variant="neon" />
     </div>
 
     {/* Stats */}
@@ -544,18 +676,19 @@ export const AdminFilesPageSkeleton = () => (
     {/* Cleanup Section */}
     <div style={{ marginBottom: '32px' }}>
       <div style={{ marginBottom: '16px' }}>
-        <SkeletonBox width="250px" height="24px" />
+        <RetroSkeletonBox width="250px" height="24px" variant="accent" />
       </div>
       <div style={{
-        background: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)',
+        background: 'linear-gradient(135deg, var(--retro-yellow, #FFE66D), var(--retro-coral, #FF6B6B))',
         padding: '24px',
-        borderRadius: '12px',
-        border: '1px solid #fbbf24'
+        borderRadius: '16px',
+        border: '3px solid var(--retro-border, #1a1a2e)',
+        boxShadow: '5px 5px 0 var(--retro-shadow, #1a1a2e)'
       }}>
-        <SkeletonBox width="100%" height="60px" marginBottom="16px" />
-        <div style={{ display: 'flex', gap: '12px' }}>
-          <SkeletonBox width="180px" height="40px" borderRadius="6px" />
-          <SkeletonBox width="150px" height="40px" borderRadius="6px" />
+        <RetroSkeletonBox width="100%" height="60px" marginBottom="16px" variant="subtle" />
+        <div style={{ display: 'flex', gap: '14px' }}>
+          <RetroSkeletonBox width="180px" height="44px" borderRadius="22px" />
+          <RetroSkeletonBox width="150px" height="44px" borderRadius="22px" />
         </div>
       </div>
     </div>
@@ -568,8 +701,8 @@ export const AdminFilesPageSkeleton = () => (
         alignItems: 'center',
         marginBottom: '16px'
       }}>
-        <SkeletonBox width="200px" height="24px" />
-        <SkeletonBox width="100px" height="36px" borderRadius="6px" />
+        <RetroSkeletonBox width="200px" height="24px" variant="accent" />
+        <RetroSkeletonBox width="100px" height="40px" borderRadius="20px" variant="neon" />
       </div>
       <AdminFilesListSkeleton count={5} />
     </div>
@@ -581,52 +714,51 @@ export const AdminFilesPageSkeleton = () => (
         alignItems: 'center',
         marginBottom: '16px'
       }}>
-        <SkeletonBox width="180px" height="24px" />
-        <SkeletonBox width="100px" height="36px" borderRadius="6px" />
+        <RetroSkeletonBox width="180px" height="24px" variant="accent" />
+        <RetroSkeletonBox width="100px" height="40px" borderRadius="20px" variant="neon" />
       </div>
       <AdminFilesListSkeleton count={3} />
     </div>
   </div>
 );
 
-// Admin Page Item Skeleton (for Pages editor)
 export const AdminPageItemSkeleton = () => (
   <div style={{
     display: 'flex',
     alignItems: 'center',
     gap: '12px',
-    padding: '12px',
-    borderRadius: '8px',
-    marginBottom: '8px'
+    padding: '14px',
+    borderRadius: '10px',
+    marginBottom: '10px',
+    background: 'rgba(78, 205, 196, 0.1)',
+    border: '2px solid rgba(26, 26, 46, 0.2)'
   }}>
-    <SkeletonBox width="40px" height="40px" borderRadius="8px" />
+    <RetroSkeletonBox width="44px" height="44px" borderRadius="10px" variant="accent" />
     <div style={{ flex: 1 }}>
-      <SkeletonBox width="120px" height="16px" marginBottom="4px" />
-      <SkeletonBox width="80px" height="12px" />
+      <RetroSkeletonBox width="120px" height="16px" marginBottom="6px" />
+      <RetroSkeletonBox width="80px" height="12px" variant="subtle" />
     </div>
   </div>
 );
 
-// Admin Form Input Skeleton
 export const AdminFormInputSkeleton = () => (
   <div style={{ marginBottom: '24px' }}>
-    <SkeletonBox width="100px" height="16px" marginBottom="8px" />
-    <SkeletonBox width="100%" height="44px" borderRadius="10px" />
+    <RetroSkeletonBox width="100px" height="14px" marginBottom="10px" variant="subtle" />
+    <RetroSkeletonBox width="100%" height="48px" borderRadius="12px" />
   </div>
 );
 
-// Admin Pages Editor Skeleton
 export const AdminPagesEditorSkeleton = () => (
   <div>
     {/* Breadcrumb */}
-    <div style={{ marginBottom: '12px' }}>
-      <SkeletonBox width="180px" height="14px" />
+    <div style={{ marginBottom: '14px' }}>
+      <RetroSkeletonBox width="180px" height="14px" variant="subtle" />
     </div>
 
     {/* Page Header */}
-    <div style={{ marginBottom: '20px', paddingBottom: '16px', borderBottom: '1px solid #e5e7eb' }}>
-      <SkeletonBox width="280px" height="28px" marginBottom="6px" />
-      <SkeletonBox width="400px" height="16px" />
+    <div style={{ marginBottom: '24px', paddingBottom: '18px', borderBottom: '3px solid var(--retro-border, #1a1a2e)' }}>
+      <RetroSkeletonBox width="280px" height="28px" marginBottom="8px" variant="accent" />
+      <RetroSkeletonBox width="400px" height="16px" variant="subtle" />
     </div>
 
     {/* Layout */}
@@ -637,13 +769,14 @@ export const AdminPagesEditorSkeleton = () => (
     }}>
       {/* Sidebar */}
       <div style={{
-        background: 'white',
-        borderRadius: '12px',
+        background: 'var(--retro-cream, #FFF8E7)',
+        borderRadius: '16px',
         padding: '20px',
-        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)',
+        border: '3px solid var(--retro-border, #1a1a2e)',
+        boxShadow: '5px 5px 0 var(--retro-shadow, #1a1a2e)',
         height: 'fit-content'
       }}>
-        <SkeletonBox width="150px" height="16px" marginBottom="16px" />
+        <RetroSkeletonBox width="150px" height="16px" marginBottom="18px" variant="accent" />
         {Array.from({ length: 4 }).map((_, i) => (
           <AdminPageItemSkeleton key={i} />
         ))}
@@ -651,23 +784,24 @@ export const AdminPagesEditorSkeleton = () => (
 
       {/* Editor */}
       <div style={{
-        background: 'white',
-        borderRadius: '12px',
+        background: 'var(--retro-cream, #FFF8E7)',
+        borderRadius: '16px',
         padding: '24px',
-        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)'
+        border: '3px solid var(--retro-border, #1a1a2e)',
+        boxShadow: '5px 5px 0 var(--retro-shadow, #1a1a2e)'
       }}>
         <div style={{
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
           marginBottom: '24px',
-          paddingBottom: '16px',
-          borderBottom: '2px solid #e5e7eb'
+          paddingBottom: '18px',
+          borderBottom: '3px solid var(--retro-border, #1a1a2e)'
         }}>
-          <SkeletonBox width="200px" height="24px" />
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <SkeletonBox width="100px" height="40px" borderRadius="6px" />
-            <SkeletonBox width="120px" height="40px" borderRadius="6px" />
+          <RetroSkeletonBox width="200px" height="24px" variant="accent" />
+          <div style={{ display: 'flex', gap: '14px' }}>
+            <RetroSkeletonBox width="100px" height="44px" borderRadius="22px" />
+            <RetroSkeletonBox width="120px" height="44px" borderRadius="22px" variant="neon" />
           </div>
         </div>
 
@@ -675,19 +809,19 @@ export const AdminPagesEditorSkeleton = () => (
         <AdminFormInputSkeleton />
 
         <div style={{ marginBottom: '24px' }}>
-          <SkeletonBox width="250px" height="16px" marginBottom="8px" />
-          <SkeletonBox width="100%" height="300px" borderRadius="10px" />
+          <RetroSkeletonBox width="250px" height="14px" marginBottom="10px" variant="subtle" />
+          <RetroSkeletonBox width="100%" height="300px" borderRadius="14px" />
         </div>
 
         <div style={{
           display: 'flex',
           justifyContent: 'flex-end',
-          gap: '12px',
+          gap: '14px',
           marginTop: '32px',
           paddingTop: '24px',
-          borderTop: '1px solid #e5e7eb'
+          borderTop: '3px solid var(--retro-border, #1a1a2e)'
         }}>
-          <SkeletonBox width="180px" height="48px" borderRadius="10px" />
+          <RetroSkeletonBox width="180px" height="52px" borderRadius="26px" variant="neon" />
         </div>
       </div>
     </div>
@@ -696,14 +830,28 @@ export const AdminPagesEditorSkeleton = () => (
 
 // Add CSS animation to global styles
 if (typeof document !== 'undefined') {
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes loading {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-  `;
-  document.head.appendChild(style);
+  const styleId = 'retro-skeleton-styles';
+  if (!document.getElementById(styleId)) {
+    const style = document.createElement('style');
+    style.id = styleId;
+    style.textContent = `
+      @keyframes retroLoading {
+        0% { 
+          background-position: 200% 0;
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.01);
+        }
+        100% { 
+          background-position: -200% 0;
+          transform: scale(1);
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
 }
 
+export { RetroSkeletonBox };
 export default SkeletonBox;

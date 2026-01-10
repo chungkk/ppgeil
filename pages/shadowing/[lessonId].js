@@ -14,9 +14,9 @@ import {
   DictationHeader,
   DictationVideoSection,
   TranscriptPanel,
-  MobileBottomControls,
-  DictationSkeleton
+  MobileBottomControls
 } from '../../components/dictation';
+import { ShadowingSkeleton } from '../../components/shadowing';
 
 
 
@@ -2922,7 +2922,7 @@ const DictationPageContent = () => {
   }, [progressLoaded, sortedTranscriptIndices, completedSentences, transcriptData, isYouTube]);
 
   if (loading) {
-    return <DictationSkeleton isMobile={isMobile} />;
+    return <ShadowingSkeleton isMobile={isMobile} />;
   }
 
   if (!lesson) {
