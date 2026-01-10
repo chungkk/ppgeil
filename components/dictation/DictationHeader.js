@@ -205,21 +205,6 @@ const DictationHeader = ({
                   </span>
                 </button>
               )}
-              
-              {/* Vocabulary button */}
-              {onShowVocabulary && (
-                <button 
-                  className={styles.settingsMenuItem}
-                  onClick={() => {
-                    onShowVocabulary();
-                    setShowSettingsMenu(false);
-                  }}
-                >
-                  <span className={styles.settingsMenuIcon}>📚</span>
-                  <span className={styles.settingsMenuText}>Từ vựng</span>
-                  <span className={styles.settingsMenuValue}>{savedVocabularyCount}</span>
-                </button>
-              )}
             </div>
           )}
         </div>
