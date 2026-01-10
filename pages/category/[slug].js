@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import SEO from '../../components/SEO';
 import LessonCard from '../../components/LessonCard';
 import { SkeletonCard } from '../../components/SkeletonLoader';
+import ModeSelectionPopup from '../../components/ModeSelectionPopup';
 import { useLessons, prefetchLessons } from '../../lib/hooks/useLessons';
 import { navigateWithLocale } from '../../lib/navigation';
 
@@ -13,6 +14,8 @@ const CategoryPage = () => {
   const { slug } = router.query;
   const [currentPage, setCurrentPage] = useState(1);
   const [category, setCategory] = useState(null);
+  const [selectedLesson, setSelectedLesson] = useState(null);
+  const [showModePopup, setShowModePopup] = useState(false);
   const itemsPerPage = 15;
 
   const fetchCategory = useCallback(async () => {
@@ -68,12 +71,34 @@ const CategoryPage = () => {
   };
 
   const handleLessonClick = (lesson) => {
+    // Increment view count
     fetch(`/api/lessons/${lesson.id}/view`, {
       method: 'POST'
     }).catch(err => console.error('Error incrementing view count:', err));
 
-    const route = `/${lesson.id}`;
+    // Show mode selection popup
+    setSelectedLesson(lesson);
+    setShowModePopup(true);
+  };
+
+  const handleModeSelect = (lesson, mode) => {
+    // Close popup
+    setShowModePopup(false);
+    setSelectedLesson(null);
+
+    // Navigate to appropriate page based on mode
+    let route;
+    if (mode === 'dictation') {
+      route = `/dictation/${lesson.id}`;
+    } else {
+      route = `/shadowing/${lesson.id}`;
+    }
     navigateWithLocale(router, route);
+  };
+
+  const handleClosePopup = () => {
+    setShowModePopup(false);
+    setSelectedLesson(null);
   };
 
   const handleBackToHome = () => {
@@ -90,6 +115,14 @@ const CategoryPage = () => {
         title={`${category?.name || slug} - PapaGeil`}
         description={category?.description || `Browse all lessons in ${category?.name || slug} category`}
       />
+
+      {showModePopup && selectedLesson && (
+        <ModeSelectionPopup
+          lesson={selectedLesson}
+          onClose={handleClosePopup}
+          onSelectMode={handleModeSelect}
+        />
+      )}
 
       <div className="main-container">
         {/* Back button */}
@@ -159,3 +192,4 @@ const CategoryPage = () => {
 };
 
 export default CategoryPage;
+
