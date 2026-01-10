@@ -1,3 +1,5 @@
+/* Login Modal - Neo-Retro Style */
+
 /* Modal Overlay */
 .modalOverlay {
   position: fixed;
@@ -7,14 +9,14 @@
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
   padding: 20px;
-  animation: fadeIn 0.4s ease-out;
+  animation: fadeIn 0.3s ease-out;
   overflow-y: auto;
 }
 
@@ -27,70 +29,87 @@
   }
 }
 
-/* Modal Content */
+/* Modal Content - Neo-Retro */
 .modalContent {
-  background: var(--bg-elevated, white);
-  border-radius: 28px;
+  background: var(--retro-cream, #FFF8E7);
+  border-radius: 24px;
   width: 100%;
   max-width: 950px;
   max-height: 92vh;
   display: flex;
   overflow: hidden;
   position: relative;
-  box-shadow: var(--shadow-xl, 0 30px 70px rgba(0, 0, 0, 0.35));
-  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 4px solid var(--retro-border, #1a1a2e);
+  box-shadow: 10px 10px 0 var(--retro-shadow, #1a1a2e);
+  animation: popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   margin: auto;
-  border: 1px solid var(--border-light, transparent);
 }
 
-@keyframes slideUp {
+.modalContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--retro-coral), var(--retro-yellow), var(--retro-cyan), var(--retro-pink), var(--retro-purple));
+  z-index: 10;
+}
+
+[data-theme="dark"] .modalContent {
+  background: rgba(255, 248, 231, 0.98);
+}
+
+@keyframes popIn {
   from {
     opacity: 0;
-    transform: translateY(50px) scale(0.92);
+    transform: scale(0.9) translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: scale(1) translateY(0);
   }
 }
 
-/* Close Button */
+/* Close Button - Neo-Retro */
 .closeButton {
   position: absolute;
-  top: 24px;
-  right: 24px;
-  background: rgba(255, 255, 255, 0.2);
-  border: none;
-  width: 40px;
-  height: 40px;
+  top: 20px;
+  right: 20px;
+  background: var(--retro-coral, #FF6B6B);
+  border: 3px solid var(--retro-border, #1a1a2e);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 800;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   color: white;
-  backdrop-filter: blur(10px);
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .closeButton:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: rotate(90deg) scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: var(--retro-dark, #2D3436);
+  color: white;
+  transform: rotate(90deg);
 }
 
-/* Left Side - Welcome */
+/* Left Side - Welcome - Neo-Retro */
 .modalLeft {
   flex: 1;
-  background: var(--accent-gradient, linear-gradient(135deg, #3b82f6 0%, #3b82f6 50%, #06b6d4 100%));
+  background: linear-gradient(135deg, var(--retro-cyan) 0%, var(--retro-coral) 100%);
   padding: 60px 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  border-right: 4px solid var(--retro-border, #1a1a2e);
 }
 
 .modalLeft::before {
@@ -100,29 +119,29 @@
   right: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px);
-  background-size: 50px 50px;
-  animation: floatPattern 25s linear infinite;
-  opacity: 0.6;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 2px, transparent 2px);
+  background-size: 40px 40px;
+  animation: floatPattern 20s linear infinite;
+  opacity: 0.5;
 }
 
 @keyframes floatPattern {
   0% { transform: translate(0, 0) rotate(0deg); }
-  100% { transform: translate(-50px, -50px) rotate(360deg); }
+  100% { transform: translate(-40px, -40px) rotate(360deg); }
 }
 
 .welcomeContent {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: white;
+  color: var(--retro-dark, #2D3436);
 }
 
 .parrotIcon {
-  font-size: 72px;
+  font-size: 80px;
   margin-bottom: 24px;
-  animation: bounce 2.5s ease-in-out infinite;
-  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.25));
+  animation: bounce 2s ease-in-out infinite;
+  filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.2));
 }
 
 @keyframes bounce {
@@ -132,18 +151,20 @@
 
 .welcomeTitle {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 16px;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: var(--retro-dark, #2D3436);
   letter-spacing: -0.5px;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
 }
 
 .welcomeSubtitle {
   font-size: 17px;
-  opacity: 0.95;
+  font-weight: 600;
   line-height: 1.6;
   margin-bottom: 50px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.9;
 }
 
 .mascot {
@@ -153,45 +174,45 @@
 }
 
 .mascotBubble {
-  background: var(--bg-elevated, white);
-  color: var(--accent-blue, #3b82f6);
+  background: var(--retro-dark, #2D3436);
+  color: white;
   padding: 16px 32px;
-  border-radius: 28px;
+  border-radius: 24px;
   font-size: 28px;
-  font-weight: 700;
-  box-shadow: var(--shadow-lg, 0 8px 24px rgba(0, 0, 0, 0.25));
+  font-weight: 800;
+  border: 3px solid var(--retro-border, #1a1a2e);
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
   position: relative;
   animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  50% { transform: scale(1.03); }
 }
 
 .mascotBubble::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -14px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid var(--bg-elevated, white);
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid var(--retro-dark, #2D3436);
 }
 
-/* Right Side - Auth Options */
+/* Right Side - Auth Options - Neo-Retro */
 .modalRight {
   flex: 1;
-  padding: 40px 50px;
+  padding: 50px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--bg-card, white);
+  background: var(--retro-cream, #FFF8E7);
 }
 
 .authOptions {
@@ -390,35 +411,34 @@
   box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
 }
 
-/* Google Button */
+/* Google Button - Neo-Retro */
 .googleButton {
   width: 100%;
   padding: 14px 24px;
-  background: var(--bg-elevated, white);
-  border: 2px solid var(--border-color, #e5e7eb);
-  border-radius: 12px;
+  background: white;
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 14px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--text-primary, #1f2937);
-  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.05));
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: var(--retro-dark, #2D3436);
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .googleButton:hover:not(:disabled) {
-  background: var(--bg-hover, #fafafa);
-  border-color: #4285f4;
-  box-shadow: var(--shadow-hover, 0 8px 24px rgba(66, 133, 244, 0.25));
-  transform: translateY(-3px);
+  background: var(--retro-yellow, #FFE66D);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .googleButton:active:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md, 0 4px 12px rgba(66, 133, 244, 0.2));
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .googleButton:disabled {
@@ -427,60 +447,55 @@
   transform: none;
 }
 
-/* Divider */
+/* Divider - Neo-Retro */
 .divider {
   text-align: center;
   position: relative;
-  margin: 16px 0;
+  margin: 24px 0;
   font-size: 12px;
-  color: var(--text-muted, #9ca3af);
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  color: var(--retro-dark, #2D3436);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .divider::before,
 .divider::after {
   content: '';
-  position: absolute;
-  top: 50%;
-  width: 38%;
-  height: 1.5px;
-  background: var(--border-light, linear-gradient(to right, transparent, #e5e7eb, transparent));
+  flex: 1;
+  height: 3px;
+  background: var(--retro-border, #1a1a2e);
+  border-radius: 2px;
 }
 
-.divider::before {
-  left: 0;
-}
-
-.divider::after {
-  right: 0;
-}
-
-/* Email Button */
+/* Email Button - Neo-Retro */
 .emailButton {
   width: 100%;
   padding: 14px 24px;
-  background: var(--accent-gradient, linear-gradient(135deg, #3b82f6, #3b82f6));
-  border: none;
-  border-radius: 12px;
+  background: linear-gradient(135deg, var(--retro-coral) 0%, var(--retro-pink) 100%);
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 14px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   color: white;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: var(--shadow-md, 0 4px 12px rgba(99, 102, 241, 0.3));
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .emailButton:hover {
-  background: var(--accent-gradient, linear-gradient(135deg, #4f46e5, #06b6d4));
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover, 0 8px 24px rgba(99, 102, 241, 0.4));
-  filter: brightness(1.1);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-shadow, #1a1a2e);
+  filter: brightness(1.05);
 }
 
 .emailButton:active {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md, 0 4px 12px rgba(99, 102, 241, 0.35));
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--retro-shadow, #1a1a2e);
 }
 
 /* Disclaimer & Terms */
@@ -494,12 +509,14 @@
   display: none;
 }
 
+/* Terms - Neo-Retro */
 .terms {
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: none;
-  font-size: 11px;
-  color: var(--text-muted, #9ca3af);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid var(--retro-border, #1a1a2e);
+  font-size: 12px;
+  color: var(--retro-dark, #2D3436);
+  font-weight: 500;
   display: block;
 }
 
@@ -574,35 +591,39 @@
   transform: translateY(-50%) scale(0.95);
 }
 
+/* Input - Neo-Retro */
 .input {
   width: 100%;
-  padding: 12px 16px;
-  background: var(--bg-secondary, #f9fafb);
-  border: 2px solid var(--border-color, #e5e7eb);
+  padding: 14px 18px;
+  background: white;
+  border: 3px solid var(--retro-border, #1a1a2e);
   border-radius: 12px;
   font-size: 15px;
+  font-weight: 600;
   margin-bottom: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   font-family: inherit;
-  color: var(--text-primary, #1f2937);
+  color: var(--retro-dark, #2D3436);
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .input::placeholder {
-  color: var(--text-muted, #9ca3af);
+  color: #888;
+  font-weight: 500;
 }
 
 .input:focus {
   outline: none;
-  background: var(--bg-elevated, white);
-  border-color: var(--accent-blue, #3b82f6);
-  box-shadow: var(--shadow-md, 0 0 0 4px rgba(99, 102, 241, 0.1));
-  transform: translateY(-1px);
+  background: white;
+  border-color: var(--retro-purple, #A855F7);
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
+  transform: translate(-1px, -1px);
 }
 
 .input:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  background: var(--bg-primary, #f3f4f6);
+  background: #f5f5f5;
 }
 
 .errorMessage {
@@ -624,60 +645,62 @@
   75% { transform: translateX(5px); }
 }
 
+/* Submit Button - Neo-Retro */
 .submitButton {
   width: 100%;
   padding: 14px 24px;
-  background: var(--accent-gradient, linear-gradient(135deg, #3b82f6, #3b82f6));
-  border: none;
-  border-radius: 12px;
+  background: linear-gradient(135deg, var(--retro-cyan) 0%, var(--retro-purple) 100%);
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 14px;
   color: white;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   margin-bottom: 12px;
-  box-shadow: var(--shadow-md, 0 4px 16px rgba(99, 102, 241, 0.3));
-  letter-spacing: 0.3px;
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .submitButton:hover:not(:disabled) {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover, 0 8px 28px rgba(99, 102, 241, 0.45));
-  background: var(--accent-gradient, linear-gradient(135deg, #4f46e5, #06b6d4));
-  filter: brightness(1.1);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-shadow, #1a1a2e);
+  filter: brightness(1.05);
 }
 
 .submitButton:active:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md, 0 4px 16px rgba(99, 102, 241, 0.35));
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .submitButton:disabled {
   opacity: 0.5;
   cursor: not-allowed;
   transform: none;
-  box-shadow: none;
 }
 
+/* Register Link - Neo-Retro */
 .registerLink {
   text-align: center;
   font-size: 15px;
-  color: var(--text-secondary, #6b7280);
+  color: var(--retro-dark, #2D3436);
+  font-weight: 600;
   margin-top: 20px;
   line-height: 1.5;
 }
 
 .registerLink a {
-  color: var(--accent-blue, #3b82f6);
-  font-weight: 700;
+  color: var(--retro-purple, #A855F7);
+  font-weight: 800;
   text-decoration: none;
   transition: all 0.2s ease;
   border-bottom: 2px solid transparent;
 }
 
 .registerLink a:hover {
-  color: var(--accent-blue, #4f46e5);
-  border-bottom-color: var(--accent-blue, #4f46e5);
+  color: var(--retro-coral, #FF6B6B);
+  border-bottom-color: var(--retro-coral, #FF6B6B);
 }
 
 /* Responsive */
