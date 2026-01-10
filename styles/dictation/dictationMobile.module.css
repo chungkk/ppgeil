@@ -115,6 +115,25 @@
   animation: none;
 }
 
+.mobileControlBtnReplay.disabled {
+  background: #dfe6e9;
+  color: #b2bec3;
+  opacity: 0.6;
+}
+
+/* Speed Button - Neo-Retro */
+.mobileControlBtnSpeed {
+  background: #a29bfe;
+  border: 2px solid #2d3436;
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.mobileControlBtnSpeed:active:not(:disabled) {
+  background: #8b7fe3;
+}
+
 /* Voice Recorder Button Container */
 .mobileControlBtnVoice {
   display: flex;

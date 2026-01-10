@@ -308,11 +308,12 @@ const MobileBottomControls = ({
         </button>
       )}
 
-      {/* Playback Recording Button */}
-      {showRecordButton && recordedBlob && (
+      {/* Playback Recording Button - Always visible */}
+      {showRecordButton && (
         <button 
-          className={`${styles.mobileControlBtn} ${styles.mobileControlBtnReplay} ${isPlayingRecording ? styles.playing : ''}`}
+          className={`${styles.mobileControlBtn} ${styles.mobileControlBtnReplay} ${isPlayingRecording ? styles.playing : ''} ${!recordedBlob ? styles.disabled : ''}`}
           onClick={playRecording}
+          disabled={!recordedBlob}
           title={isPlayingRecording ? 'Dừng phát' : 'Phát lại bản ghi'}
         >
           {isPlayingRecording ? (
@@ -339,22 +340,6 @@ const MobileBottomControls = ({
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
-
-      {/* Speed Control Button */}
-      {onSpeedChange && (
-        <button 
-          className={`${styles.mobileControlBtn} ${styles.mobileControlBtnSpeed}`}
-          onClick={() => {
-            const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
-            const currentIndex = speeds.indexOf(playbackSpeed || 1);
-            const nextIndex = (currentIndex + 1) % speeds.length;
-            onSpeedChange(speeds[nextIndex]);
-          }}
-          title="Tốc độ phát"
-        >
-          <span style={{ fontSize: '11px', fontWeight: 'bold' }}>{playbackSpeed || 1}x</span>
-        </button>
-      )}
     </div>
   );
 };
