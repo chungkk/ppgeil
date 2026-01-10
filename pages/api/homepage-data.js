@@ -1,13 +1,15 @@
 import { Lesson } from '../../lib/models/Lesson';
 import { ArticleCategory } from '../../lib/models/ArticleCategory';
+import { UserProgress } from '../../lib/models/UserProgress';
 import connectDB from '../../lib/mongodb';
+import { optionalAuth } from '../../lib/authMiddleware';
 
 /**
  * Optimized API endpoint for homepage data
  * Fetches all categories with their lessons in a single database query
  * This reduces N+1 API calls to just 1 call
  */
-export default async function handler(req, res) {
+async function handler(req, res) {
     if (req.method !== 'GET') {
         return res.status(405).json({ message: 'Method not allowed' });
     }
@@ -38,6 +40,21 @@ export default async function handler(req, res) {
                 .lean()
         ]);
 
+        // Fetch user progress if logged in
+        let userProgressMap = {};
+        if (req.user) {
+            const lessonIds = allLessons.map(l => l.id);
+            const userProgress = await UserProgress.find({
+                userId: req.user._id,
+                lessonId: { $in: lessonIds }
+            }).lean();
+            
+            for (const progress of userProgress) {
+                const key = `${progress.lessonId}_${progress.mode}`;
+                userProgressMap[key] = progress.studyTime || 0;
+            }
+        }
+
         // Group lessons by category and limit per category
         const lessonsByCategory = {};
         const lessonCountByCategory = {};
@@ -55,7 +72,13 @@ export default async function handler(req, res) {
                 lessonsByCategory[categoryId] = [];
             }
             if (lessonsByCategory[categoryId].length < lessonsPerCategory) {
-                lessonsByCategory[categoryId].push(lesson);
+                // Add user study time to lesson
+                const lessonWithProgress = {
+                    ...lesson,
+                    shadowStudyTime: userProgressMap[`${lesson.id}_shadowing`] || 0,
+                    dictationStudyTime: userProgressMap[`${lesson.id}_dictation`] || 0
+                };
+                lessonsByCategory[categoryId].push(lessonWithProgress);
             }
         }
 
@@ -90,3 +113,5 @@ export default async function handler(req, res) {
         return res.status(500).json({ message: error.message });
     }
 }
+
+export default optionalAuth(handler);

@@ -14,9 +14,9 @@ const ModeSelectionPopup = ({ lesson, onClose, onSelectMode }) => {
     const secs = Math.floor(seconds % 60);
     
     if (hours > 0) {
-      return `${hours}h ${minutes}m ${secs}s`;
+      return `${hours}h ${minutes}m`;
     } else if (minutes > 0) {
-      return `${minutes}m ${secs}s`;
+      return `${minutes}m`;
     } else {
       return `${secs}s`;
     }

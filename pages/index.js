@@ -23,8 +23,12 @@ const HomePage = () => {
     try {
       setLoading(true);
 
+      // Include auth token if user is logged in
+      const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+      const headers = token ? { Authorization: `Bearer ${token}` } : {};
+
       // Single optimized API call instead of N+1 requests
-      const response = await fetch(`/api/homepage-data?difficulty=${difficultyFilter}&limit=6`);
+      const response = await fetch(`/api/homepage-data?difficulty=${difficultyFilter}&limit=6`, { headers });
       const data = await response.json();
 
       setCategories(data.categories || []);
@@ -36,10 +40,10 @@ const HomePage = () => {
     }
   }, [difficultyFilter]);
 
-  // Fetch categories and their lessons
+  // Fetch categories and their lessons (refetch when user changes to update study time)
   useEffect(() => {
     fetchCategoriesWithLessons();
-  }, [fetchCategoriesWithLessons]);
+  }, [fetchCategoriesWithLessons, user]);
 
   const handleLessonClick = (lesson) => {
     // Increment view count
