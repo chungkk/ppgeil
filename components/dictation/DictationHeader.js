@@ -250,19 +250,20 @@ const DictationHeader = ({
       <div className={styles.dictationHeader} style={{ justifyContent: 'space-between' }}>
         {/* Left - Title */}
         <h3 className={styles.dictationHeaderTitle} style={{
-          fontSize: '12px',
-          fontWeight: 700,
+          fontSize: '16px',
+          fontWeight: 800,
           color: '#1a1a2e',
           lineHeight: 1,
           margin: 0,
           padding: '6px 12px',
-          letterSpacing: '0.3px',
+          letterSpacing: '0.5px',
           textTransform: 'uppercase',
           background: '#fdcb6e',
           border: '2px solid #2d3436',
           borderRadius: '8px',
           boxShadow: '2px 2px 0 rgba(0, 0, 0, 0.15)',
-          display: 'inline-block'
+          display: 'inline-block',
+          fontFamily: "'SF Mono', 'Monaco', 'Courier New', monospace"
         }}>
           {learningMode === 'dictation' ? t('lesson.ui.dictation') : t('lesson.ui.shadowing')}
         </h3>

@@ -693,53 +693,64 @@
   color: #3b82f6;
 }
 
-/* Toggle Label Styles (for desktop) */
+/* Toggle Label Styles - Neo-Retro */
 .toggleLabel {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  position: relative;
   user-select: none;
 }
 
 .toggleInput {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .toggleSlider {
-  width: 36px;
-  height: 20px;
-  background: rgba(100, 116, 139, 0.3);
-  border-radius: 10px;
   position: relative;
-  transition: all 0.3s ease;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  background: white;
+  border-radius: 11px;
+  transition: all 0.2s ease;
+  border: 2px solid #2d3436;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .toggleSlider::before {
   content: '';
   position: absolute;
-  width: 16px;
-  height: 16px;
-  background: white;
-  border-radius: 50%;
-  top: 2px;
+  width: 14px;
+  height: 14px;
   left: 2px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  top: 2px;
+  background: #2d3436;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
 }
 
 .toggleInput:checked + .toggleSlider {
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  background: #00cec9;
+  border-color: #2d3436;
 }
 
 .toggleInput:checked + .toggleSlider::before {
-  transform: translateX(16px);
+  transform: translateX(18px);
+  background: #1a1a2e;
 }
 
 .toggleText {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-secondary);
+  font-size: 11px;
+  color: #1a1a2e !important;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
   white-space: nowrap;
 }
 

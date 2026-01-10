@@ -5778,23 +5778,31 @@ h3.transcriptTitle {
 /* Dictation Header - Neo-Retro */
 .dictationArea .dictationHeader {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 14px 18px;
   min-height: 56px;
+  height: 56px;
   border-bottom: 2px solid #2d3436 !important;
   background: #fef9e7 !important;
-  margin-top: 5px;
+  border-radius: 12px 12px 0 0;
+  box-sizing: border-box;
 }
 
 /* Column Title - Neo-Retro */
 .columnTitle {
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 12px;
+  font-weight: 700;
   color: #1a1a2e !important;
+  line-height: 1;
   margin: 0;
+  padding: 6px 12px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
+  background: #fdcb6e !important;
+  border: 2px solid #2d3436 !important;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .headerRight {
