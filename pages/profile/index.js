@@ -208,14 +208,6 @@ function DashboardIndex() {
 
               {/* Stats Grid */}
               <div className={styles.statsGrid}>
-                <div className={`${styles.statCard} ${styles.points}`}>
-                  <div className={styles.statCardIcon}>💎</div>
-                  <div className={styles.statCardContent}>
-                    <span className={styles.statCardValue}>{userPoints?.toLocaleString() || 0}</span>
-                    <span className={styles.statCardLabel}>Điểm</span>
-                  </div>
-                </div>
-
                 <div className={`${styles.statCard} ${styles.lessons}`}>
                   <div className={styles.statCardIcon}>📚</div>
                   <div className={styles.statCardContent}>

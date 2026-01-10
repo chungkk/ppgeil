@@ -770,81 +770,34 @@
 }
 
 /* ============================================
-   DARK MODE ADJUSTMENTS
+   DARK MODE - Keep Neo-Retro Light Style
    ============================================ */
 [data-theme="dark"] .settingsSection {
-  background: rgba(45, 52, 54, 0.95);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-[data-theme="dark"] .settingsSection::before {
-  opacity: 0.8;
+  background: var(--retro-cream);
 }
 
 [data-theme="dark"] .sectionHeader {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-[data-theme="dark"] .sectionInfo h3 {
-  color: var(--text-primary);
-}
-
-[data-theme="dark"] .sectionInfo p {
-  color: var(--text-secondary);
-}
-
-[data-theme="dark"] .sectionBody {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="dark"] .settingRow {
-  background: rgba(255, 255, 255, 0.03);
-}
-
-[data-theme="dark"] .settingRow:hover {
-  background: rgba(78, 205, 196, 0.1);
-  border-color: var(--retro-cyan);
-}
-
-[data-theme="dark"] .settingIcon {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-[data-theme="dark"] .settingName {
-  color: var(--text-primary);
-}
-
-[data-theme="dark"] .settingDesc {
-  color: var(--text-secondary);
+  background: white;
 }
 
 [data-theme="dark"] .settingSelect {
-  background: rgba(45, 52, 54, 0.9);
-  color: var(--text-primary);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-[data-theme="dark"] .changeBtn {
-  border-color: rgba(255, 255, 255, 0.2);
+  background: white;
+  color: var(--retro-dark);
 }
 
 [data-theme="dark"] .formInput {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.2);
-  color: var(--text-primary);
+  background: white;
+  color: var(--retro-dark);
 }
 
 [data-theme="dark"] .passwordForm {
-  background: rgba(45, 52, 54, 0.5);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-[data-theme="dark"] .passwordFormHeader h4 {
-  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--retro-cream) 0%, white 100%);
 }
 
 [data-theme="dark"] .tipsCard {
-  background: rgba(255, 230, 109, 0.9);
+  background: var(--retro-yellow);
 }

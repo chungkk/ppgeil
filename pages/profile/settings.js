@@ -133,8 +133,8 @@ function SettingsPage() {
                     👤
                   </div>
                   <div className={settingsStyles.sectionInfo}>
-                    <h3>{t('settings.profile.title') || 'Thông tin cá nhân'}</h3>
-                    <p>{t('settings.profile.description') || 'Xem và quản lý thông tin tài khoản của bạn'}</p>
+                    <h3>Thông tin cá nhân</h3>
+                    <p>Xem và quản lý thông tin tài khoản của bạn</p>
                   </div>
                 </div>
                 <div className={settingsStyles.sectionBody}>
@@ -160,8 +160,8 @@ function SettingsPage() {
                     🎨
                   </div>
                   <div className={settingsStyles.sectionInfo}>
-                    <h3>{t('settings.preferences.title') || 'Tùy chọn hiển thị'}</h3>
-                    <p>{t('settings.preferences.description') || 'Tùy chỉnh giao diện và ngôn ngữ'}</p>
+                    <h3>Tùy chọn hiển thị</h3>
+                    <p>Tùy chỉnh giao diện và ngôn ngữ</p>
                   </div>
                 </div>
                 <div className={settingsStyles.sectionBody}>
@@ -217,8 +217,8 @@ function SettingsPage() {
                     📚
                   </div>
                   <div className={settingsStyles.sectionInfo}>
-                    <h3>{t('settings.learning.title') || 'Cài đặt học tập'}</h3>
-                    <p>{t('settings.learning.description') || 'Điều chỉnh cấp độ và nội dung bài học'}</p>
+                    <h3>Cài đặt học tập</h3>
+                    <p>Điều chỉnh cấp độ và nội dung bài học</p>
                   </div>
                 </div>
                 <div className={settingsStyles.sectionBody}>
@@ -253,8 +253,8 @@ function SettingsPage() {
                     🔐
                   </div>
                   <div className={settingsStyles.sectionInfo}>
-                    <h3>{t('settings.security.title') || 'Bảo mật'}</h3>
-                    <p>{t('settings.security.description') || 'Quản lý mật khẩu và bảo vệ tài khoản'}</p>
+                    <h3>Bảo mật</h3>
+                    <p>Quản lý mật khẩu và bảo vệ tài khoản</p>
                   </div>
                 </div>
                 <div className={settingsStyles.sectionBody}>
