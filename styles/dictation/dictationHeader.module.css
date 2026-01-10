@@ -142,36 +142,34 @@
   height: 20px;
 }
 
-/* Settings Dropdown */
+/* Settings Dropdown - Neo-Retro Style */
 .settingsDropdownMobile {
   position: absolute;
   top: calc(100% + 8px);
   right: 16px;
-  min-width: 220px;
-  background: linear-gradient(145deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.98) 100%);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 2px solid rgba(59, 130, 246, 0.3);
+  min-width: 200px;
+  background: var(--retro-cream, #FFF8E7);
+  border: 3px solid var(--retro-border, #2d2d2d);
   border-radius: 16px;
   padding: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  animation: slideDown 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 4px 4px 0 var(--retro-shadow, rgba(0, 0, 0, 0.2));
+  animation: slideDownRetro 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
   z-index: 1000;
 }
 
-@keyframes slideDown {
+@keyframes slideDownRetro {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-8px) scale(0.95);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
-/* Settings Menu Item */
+/* Settings Menu Item - Neo-Retro */
 .settingsMenuItem {
   display: flex;
   align-items: center;
@@ -179,53 +177,82 @@
   width: 100%;
   padding: 12px 14px;
   min-height: 48px;
-  /* Good tap target */
-  background: transparent;
-  border: none;
-  border-radius: 10px;
-  color: rgba(255, 255, 255, 0.85);
+  background: white;
+  border: 2px solid var(--retro-border, #2d2d2d);
+  border-radius: 12px;
+  color: var(--retro-dark, #2d2d2d);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
   -webkit-tap-highlight-color: transparent;
   text-align: left;
+  margin-bottom: 6px;
+  box-shadow: 2px 2px 0 var(--retro-shadow, rgba(0, 0, 0, 0.1));
+}
+
+.settingsMenuItem:last-child {
+  margin-bottom: 0;
 }
 
 .settingsMenuItem:active {
-  transform: scale(0.97);
-  background: rgba(59, 130, 246, 0.15);
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--retro-shadow, rgba(0, 0, 0, 0.1));
+  background: var(--retro-yellow, #FFE66D);
 }
 
 .settingsMenuItemActive {
-  background: rgba(59, 130, 246, 0.12);
-  color: #93c5fd;
+  background: var(--retro-cyan, #00cec9);
+  color: var(--retro-dark, #2d2d2d);
+}
+
+.settingsMenuItemActive:active {
+  background: var(--retro-cyan, #00cec9);
 }
 
 .settingsMenuIcon {
   font-size: 20px;
   flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--retro-yellow, #FFE66D);
+  border: 2px solid var(--retro-border, #2d2d2d);
+  border-radius: 8px;
 }
 
 .settingsMenuText {
   flex: 1;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
 }
 
 .settingsMenuValue {
   font-size: 14px;
-  font-weight: 600;
-  color: #3b82f6;
-  background: rgba(59, 130, 246, 0.15);
+  font-weight: 700;
+  color: var(--retro-dark, #2d2d2d);
+  background: var(--retro-cyan, #00cec9);
   padding: 4px 10px;
+  border: 2px solid var(--retro-border, #2d2d2d);
   border-radius: 8px;
   font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  box-shadow: 1px 1px 0 var(--retro-shadow, rgba(0, 0, 0, 0.1));
 }
 
 .settingsMenuToggle {
-  font-size: 18px;
-  color: #10b981;
-  font-weight: 700;
+  font-size: 16px;
+  color: var(--retro-dark, #2d2d2d);
+  font-weight: 800;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--retro-green, #55efc4);
+  border: 2px solid var(--retro-border, #2d2d2d);
+  border-radius: 6px;
 }
 
 /* Responsive adjustments */

@@ -1123,20 +1123,22 @@
   display: none;
 }
 
+/* Language SubMenu - Neo-Retro Style */
 .languageSubMenu {
   padding: 12px 14px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .languageSubMenuLabel {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--text-secondary);
-  font-size: 14px;
-  font-weight: 500;
+  color: var(--retro-dark, #2d2d2d);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
 }
 
 .languageOptions {
@@ -1147,23 +1149,31 @@
 }
 
 .languageOptionBtn {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 6px 10px;
+  background: white;
+  border: 2px solid var(--retro-border, #2d2d2d);
+  border-radius: 10px;
+  padding: 8px 12px;
   cursor: pointer;
-  font-size: 18px;
-  transition: all 0.2s ease;
+  font-size: 20px;
+  transition: all 0.15s ease;
+  box-shadow: 2px 2px 0 var(--retro-shadow, rgba(0, 0, 0, 0.1));
 }
 
 .languageOptionBtn:hover {
-  background: var(--bg-hover);
-  border-color: var(--accent-green);
+  background: var(--retro-yellow, #FFE66D);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--retro-shadow, rgba(0, 0, 0, 0.15));
+}
+
+.languageOptionBtn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--retro-shadow, rgba(0, 0, 0, 0.1));
 }
 
 .languageOptionBtn.active {
-  background: rgba(74, 155, 111, 0.15);
-  border-color: var(--accent-green);
+  background: var(--retro-cyan, #00cec9);
+  border-color: var(--retro-border, #2d2d2d);
+  box-shadow: 2px 2px 0 var(--retro-shadow, rgba(0, 0, 0, 0.15));
 }
 
 .authButtonsDesktop {
