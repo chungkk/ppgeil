@@ -1,17 +1,34 @@
+/* ============================================
+   STATIC PAGE - NEO-RETRO STYLE
+   ============================================ */
+
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  background: var(--retro-cream, #FFF8E7);
   padding-top: 80px;
 }
 
 .content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 32px;
   background: white;
+  border: 4px solid var(--retro-border, #1a1a2e);
   border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 10px 0 var(--retro-shadow, #1a1a2e);
   animation: fadeIn 0.4s ease-out;
+  position: relative;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(90deg, var(--retro-coral, #FF6B6B), var(--retro-yellow, #FFE66D), var(--retro-cyan, #4ECDC4), var(--retro-purple, #A855F7));
+  border-radius: 16px 16px 0 0;
 }
 
 @keyframes fadeIn {
@@ -27,73 +44,130 @@
 
 .pageContent {
   line-height: 1.8;
-  color: #374151;
+  color: var(--retro-dark, #2D3436);
 }
 
 .pageContent h1 {
   font-size: 32px;
-  font-weight: 700;
-  color: #111827;
+  font-weight: 900;
+  color: var(--retro-dark, #2D3436);
   margin: 0 0 24px 0;
   padding-bottom: 16px;
-  border-bottom: 3px solid #3b82f6;
+  border-bottom: 4px solid var(--retro-border, #1a1a2e);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pageContent h1::before {
+  content: '📋';
+  font-size: 28px;
 }
 
 .pageContent h2 {
   font-size: 24px;
-  font-weight: 600;
-  color: #1f2937;
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
   margin: 32px 0 16px 0;
+  padding: 12px 16px;
+  background: var(--retro-cream, #FFF8E7);
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .pageContent h3 {
   font-size: 20px;
-  font-weight: 600;
-  color: #374151;
+  font-weight: 700;
+  color: var(--retro-dark, #2D3436);
   margin: 24px 0 12px 0;
+  padding-left: 12px;
+  border-left: 4px solid var(--retro-purple, #A855F7);
 }
 
 .pageContent p {
-  margin: 12px 0;
+  margin: 16px 0;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.9;
+  font-weight: 500;
 }
 
 .pageContent li {
-  margin: 8px 0;
+  margin: 10px 0;
   margin-left: 20px;
   font-size: 16px;
+  font-weight: 500;
+  position: relative;
 }
 
 .pageContent ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.pageContent ul li::before {
+  content: '▸';
+  color: var(--retro-coral, #FF6B6B);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.pageContent ol {
+  padding-left: 24px;
+}
+
+.pageContent ol li {
+  margin-left: 0;
 }
 
 .pageContent a {
-  color: #3b82f6;
+  color: var(--retro-purple, #A855F7);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
+  font-weight: 700;
+  padding: 2px 6px;
+  background: rgba(168, 85, 247, 0.1);
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
 .pageContent a:hover {
-  color: #06b6d4;
-  text-decoration: underline;
+  background: var(--retro-purple, #A855F7);
+  color: white;
+}
+
+.pageContent strong {
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
+}
+
+.pageContent blockquote {
+  margin: 20px 0;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #cffafe 0%, #a5f3fc 100%);
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 12px;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .loading {
   text-align: center;
   padding: 60px 20px;
   font-size: 18px;
-  color: #6b7280;
+  font-weight: 700;
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.6;
 }
 
 .error {
   text-align: center;
   padding: 60px 20px;
   font-size: 18px;
-  color: #ef4444;
+  font-weight: 700;
+  color: var(--retro-coral, #FF6B6B);
+  background: white;
+  border: 3px solid var(--retro-coral, #FF6B6B);
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {
@@ -103,19 +177,26 @@
 
   .content {
     padding: 24px 16px;
-    border-radius: 12px;
+    border-radius: 16px;
+    margin: 0 12px;
+    box-shadow: 6px 6px 0 var(--retro-shadow, #1a1a2e);
   }
 
   .pageContent h1 {
-    font-size: 26px;
+    font-size: 24px;
+  }
+
+  .pageContent h1::before {
+    font-size: 22px;
   }
 
   .pageContent h2 {
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px 12px;
   }
 
   .pageContent h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .pageContent p,
