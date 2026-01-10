@@ -1,12 +1,16 @@
 /* ============================================
-   PROFILE PAGE - COMPACT PROFESSIONAL LAYOUT
+   PROFILE PAGE - NEO-RETRO STYLE
    ============================================ */
 
 /* Page Container */
 .profilePage {
   min-height: calc(100vh - 64px);
-  background: var(--bg-primary);
+  background: var(--retro-cream, #FFF8E7);
   padding-top: 80px;
+}
+
+[data-theme="dark"] .profilePage {
+  background: var(--retro-cream, #FFF8E7);
 }
 
 /* Profile Container */
@@ -47,8 +51,8 @@
 
 .pageTitle {
   font-size: 28px;
-  font-weight: 800;
-  color: var(--text-primary);
+  font-weight: 900;
+  color: var(--retro-dark, #2D3436);
   margin: 0 0 8px 0;
   display: flex;
   align-items: center;
@@ -67,7 +71,9 @@
 
 .pageSubtitle {
   font-size: 15px;
-  color: var(--text-secondary);
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.7;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -78,27 +84,28 @@
   flex-wrap: nowrap;
 }
 
+/* Buttons - Neo-Retro */
 .vocabBtn {
-  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  background: var(--retro-purple, #A855F7);
   color: white;
-  border: none;
+  border: 3px solid var(--retro-border, #1a1a2e);
   padding: 12px 20px;
-  border-radius: 10px;
+  border-radius: 14px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
   text-decoration: none;
   white-space: nowrap;
 }
 
 .vocabBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .vocabBtn span {
@@ -106,26 +113,26 @@
 }
 
 .settingsBtn {
-  background: linear-gradient(135deg, #475569 0%, #334155 100%);
+  background: var(--retro-dark, #2D3436);
   color: white;
-  border: none;
+  border: 3px solid var(--retro-border, #1a1a2e);
   padding: 12px 20px;
-  border-radius: 10px;
+  border-radius: 14px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(71, 85, 105, 0.3);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
   text-decoration: none;
   white-space: nowrap;
 }
 
 .settingsBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(71, 85, 105, 0.4);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .settingsBtn span {
@@ -133,20 +140,26 @@
 }
 
 /* ============================================
-   HERO SECTION - COMPACT
+   HERO SECTION - NEO-RETRO
    ============================================ */
 .heroSection {
   position: relative;
   padding: 80px 20px 30px;
-  background: linear-gradient(180deg,
-      rgba(59, 130, 246, 0.08) 0%,
-      transparent 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background: linear-gradient(135deg, var(--retro-cyan) 0%, var(--retro-coral) 100%);
+  border-bottom: 4px solid var(--retro-border, #1a1a2e);
   z-index: 1;
 }
 
 .heroSection::before {
-  display: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px);
+  background-size: 30px 30px;
+  opacity: 0.5;
 }
 
 .heroContent {
@@ -165,19 +178,20 @@
   flex-shrink: 0;
 }
 
+/* Avatar - Neo-Retro */
 .userAvatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  background: var(--retro-yellow, #FFE66D);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  font-weight: 700;
-  color: white;
-  border: 3px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
+  border: 4px solid var(--retro-border, #1a1a2e);
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .avatarBadge {
@@ -186,13 +200,13 @@
   right: 2px;
   width: 24px;
   height: 24px;
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  background: var(--retro-coral, #FF6B6B);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  border: 2px solid #0a0f1a;
+  border: 2px solid var(--retro-border, #1a1a2e);
 }
 
 .avatarRing {
@@ -205,32 +219,38 @@
   min-width: 0;
 }
 
+/* User Info - Neo-Retro */
 .userName {
   font-size: 24px;
-  font-weight: 700;
-  color: #f8fafc;
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
   margin: 0 0 4px 0;
   display: flex;
   align-items: center;
   gap: 10px;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
 }
 
 .premiumBadge {
   display: inline-flex;
   align-items: center;
   gap: 3px;
-  padding: 3px 8px;
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  border-radius: 12px;
+  padding: 4px 10px;
+  background: var(--retro-yellow, #FFE66D);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 20px;
   font-size: 10px;
-  font-weight: 700;
-  color: white;
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
   text-transform: uppercase;
+  box-shadow: 2px 2px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .userEmail {
   font-size: 13px;
-  color: rgba(148, 163, 184, 0.8);
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.8;
+  font-weight: 600;
   margin: 0 0 8px 0;
   display: flex;
   align-items: center;
@@ -249,7 +269,9 @@
   align-items: center;
   gap: 4px;
   font-size: 12px;
-  color: rgba(148, 163, 184, 0.7);
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.7;
+  font-weight: 600;
 }
 
 .metaItem span {
@@ -262,25 +284,28 @@
   gap: 8px;
 }
 
+/* Edit Profile Button - Neo-Retro */
 .editProfileBtn {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 16px;
-  background: rgba(59, 130, 246, 0.12);
-  border: 1px solid rgba(59, 130, 246, 0.3);
-  border-radius: 8px;
-  color: #60a5fa;
+  padding: 10px 18px;
+  background: white;
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 12px;
+  color: var(--retro-dark, #2D3436);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   text-decoration: none;
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .editProfileBtn:hover {
-  background: rgba(59, 130, 246, 0.2);
-  border-color: rgba(59, 130, 246, 0.5);
+  background: var(--retro-cyan, #4ECDC4);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow, #1a1a2e);
 }
 
 
@@ -297,17 +322,17 @@
 }
 
 /* ============================================
-   STATS GRID - INLINE COMPACT
+   STATS GRID - NEO-RETRO
    ============================================ */
 .statsGrid {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   margin-bottom: 20px;
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(12px);
-  border-radius: 12px;
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: white;
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 5px 5px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .statCard {
@@ -315,11 +340,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 12px;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 10px;
-  border: none;
-  transition: all 0.2s ease;
+  padding: 12px 14px;
+  background: var(--retro-cream, #FFF8E7);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 12px;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .statCard::before {
@@ -327,25 +353,24 @@
 }
 
 .statCard:hover {
-  background: rgba(255, 255, 255, 0.06);
-  transform: none;
-  box-shadow: none;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .statCard.points {
-  --stat-color: #8b5cf6;
+  background: linear-gradient(135deg, #f3e8ff 0%, #fae8ff 100%);
 }
 
 .statCard.lessons {
-  --stat-color: #22c55e;
+  background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%);
 }
 
 .statCard.completed {
-  --stat-color: #f59e0b;
+  background: linear-gradient(135deg, #fef3c7 0%, #fef9c3 100%);
 }
 
 .statCard.streak {
-  --stat-color: #f97316;
+  background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);
 }
 
 .statCardHeader {
@@ -353,14 +378,15 @@
 }
 
 .statCardIcon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.08);
+  font-size: 18px;
+  background: white;
+  border: 2px solid var(--retro-border, #1a1a2e);
   flex-shrink: 0;
 }
 
@@ -375,18 +401,21 @@
 }
 
 .statCardValue {
-  font-size: 18px;
-  font-weight: 700;
-  color: #f8fafc;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
   margin: 0;
   line-height: 1.2;
 }
 
 .statCardLabel {
   font-size: 11px;
-  color: #64748b;
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.7;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
 /* ============================================
@@ -399,60 +428,64 @@
 }
 
 /* ============================================
-   SECTION CARDS - COMPACT
+   SECTION CARDS - NEO-RETRO
    ============================================ */
 .sectionCard {
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(12px);
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: white;
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 5px 5px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .sectionHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 16px 18px;
+  border-bottom: 3px solid var(--retro-border, #1a1a2e);
+  background: var(--retro-cream, #FFF8E7);
 }
 
 .sectionTitle {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #f8fafc;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
   margin: 0;
 }
 
 .sectionTitle span {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .sectionAction {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 6px 12px;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 8px;
-  color: #60a5fa;
+  padding: 8px 14px;
+  background: var(--retro-cyan, #4ECDC4);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 10px;
+  color: var(--retro-dark, #2D3436);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   text-decoration: none;
+  box-shadow: 2px 2px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .sectionAction:hover {
-  background: rgba(59, 130, 246, 0.15);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .sectionBody {
-  padding: 16px;
+  padding: 18px;
+  background: white;
 }
 
 /* ============================================
@@ -478,71 +511,76 @@
 
 .emptyStateTitle {
   font-size: 16px;
-  font-weight: 600;
-  color: #f8fafc;
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
   margin: 0 0 6px 0;
 }
 
 .emptyStateText {
   font-size: 13px;
-  color: #94a3b8;
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.7;
+  font-weight: 500;
   margin: 0 0 18px 0;
   max-width: 260px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Start Learning Button - Neo-Retro */
 .startLearningBtn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 10px 20px;
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-  border: none;
-  border-radius: 10px;
+  padding: 12px 24px;
+  background: var(--retro-coral, #FF6B6B);
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 14px;
   color: white;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
   text-decoration: none;
 }
 
 .startLearningBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-shadow, #1a1a2e);
 }
 
-/* Progress List - Compact */
+/* Progress List - Neo-Retro */
 .progressList {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .progressItem {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 14px;
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 14px 16px;
+  background: var(--retro-cream, #FFF8E7);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .progressItem:hover {
-  background: rgba(59, 130, 246, 0.06);
-  border-color: rgba(59, 130, 246, 0.15);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .progressItemIcon {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--retro-purple, #A855F7);
+  border: 2px solid var(--retro-border, #1a1a2e);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -556,35 +594,36 @@
 }
 
 .progressItemTitle {
-  font-size: 13px;
-  font-weight: 600;
-  color: #f8fafc;
-  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--retro-dark, #2D3436);
+  margin: 0 0 6px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .progressItemBar {
-  height: 4px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 2px;
+  height: 8px;
+  background: #e8e8e8;
+  border: 1px solid var(--retro-border, #1a1a2e);
+  border-radius: 4px;
   overflow: hidden;
 }
 
 .progressItemBarFill {
   height: 100%;
-  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
-  border-radius: 2px;
+  background: var(--retro-cyan, #4ECDC4);
+  border-radius: 3px;
   transition: width 0.4s ease;
 }
 
 .progressItemPercent {
-  font-size: 14px;
-  font-weight: 600;
-  color: #3b82f6;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--retro-purple, #A855F7);
   flex-shrink: 0;
-  min-width: 40px;
+  min-width: 45px;
   text-align: right;
 }
 
@@ -592,43 +631,50 @@
   display: flex;
   align-items: center;
   gap: 3px;
-  padding: 3px 8px;
-  background: rgba(34, 197, 94, 0.12);
-  border-radius: 12px;
+  padding: 4px 10px;
+  background: var(--retro-yellow, #FFE66D);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 20px;
   font-size: 10px;
-  font-weight: 600;
-  color: #22c55e;
+  font-weight: 700;
+  color: var(--retro-dark, #2D3436);
 }
 
-/* Summary Bar - Compact */
+/* Summary Bar - Neo-Retro */
 .progressSummary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  padding: 12px;
-  background: rgba(59, 130, 246, 0.04);
-  border-radius: 10px;
-  border: 1px solid rgba(59, 130, 246, 0.08);
+  gap: 10px;
+  padding: 14px;
+  background: var(--retro-cream, #FFF8E7);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 12px;
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .summaryItem {
   text-align: center;
-  padding: 8px;
+  padding: 10px;
+  background: white;
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 10px;
 }
 
 .summaryValue {
-  font-size: 18px;
-  font-weight: 700;
-  color: #f8fafc;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--retro-dark, #2D3436);
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .summaryLabel {
   font-size: 10px;
-  color: #94a3b8;
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.7;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 /* ============================================
@@ -640,142 +686,152 @@
   gap: 16px;
 }
 
-/* Quick Actions - Compact */
+/* Quick Actions - Neo-Retro */
 .quickActions {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 14px;
+  gap: 8px;
+  padding: 16px;
 }
 
 .quickActionBtn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 12px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  border-radius: 10px;
-  color: #f8fafc;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--retro-cream, #FFF8E7);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 12px;
+  color: var(--retro-dark, #2D3436);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   text-decoration: none;
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .quickActionBtn:hover {
-  background: rgba(59, 130, 246, 0.08);
-  border-color: rgba(59, 130, 246, 0.2);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .quickActionIcon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 18px;
   flex-shrink: 0;
+  border: 2px solid var(--retro-border, #1a1a2e);
 }
 
 .quickActionIcon.shadowing {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+  background: var(--retro-cyan, #4ECDC4);
 }
 
 .quickActionIcon.dictation {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(217, 119, 6, 0.15) 100%);
+  background: var(--retro-yellow, #FFE66D);
 }
 
 .quickActionIcon.vocabulary {
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+  background: var(--retro-coral, #FF6B6B);
 }
 
 .quickActionContent {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
 }
 
 .quickActionLabel {
-  font-size: 13px;
-  font-weight: 600;
-  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--retro-dark, #2D3436);
 }
 
 .quickActionDesc {
   font-size: 11px;
-  color: #64748b;
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.6;
+  font-weight: 500;
 }
 
 .quickActionArrow {
-  font-size: 14px;
-  color: #475569;
+  font-size: 16px;
+  color: var(--retro-dark, #2D3436);
+  font-weight: 700;
   transition: all 0.2s ease;
 }
 
 .quickActionBtn:hover .quickActionArrow {
-  color: #3b82f6;
-  transform: translateX(2px);
+  color: var(--retro-purple, #A855F7);
+  transform: translateX(3px);
 }
 
-/* Achievements - Compact */
+/* Achievements - Neo-Retro */
 .achievementsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  padding: 14px;
+  gap: 10px;
+  padding: 16px;
 }
 
 .achievementItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  padding: 10px 4px;
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  transition: all 0.2s ease;
+  gap: 6px;
+  padding: 12px 6px;
+  background: white;
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 12px;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 2px 2px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .achievementItem:hover {
-  background: rgba(255, 255, 255, 0.04);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .achievementItem.locked {
-  opacity: 0.35;
+  opacity: 0.4;
   filter: grayscale(100%);
 }
 
 .achievementIcon {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1;
 }
 
 .achievementName {
-  font-size: 9px;
-  color: #94a3b8;
+  font-size: 10px;
+  color: var(--retro-dark, #2D3436);
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-/* Recent Activity - Compact */
+/* Recent Activity - Neo-Retro */
 .activityList {
   display: flex;
   flex-direction: column;
-  padding: 12px 14px;
-  gap: 0;
+  padding: 14px 16px;
+  gap: 8px;
 }
 
 .activityItem {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  gap: 12px;
+  padding: 12px;
+  background: var(--retro-cream, #FFF8E7);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 10px;
+  box-shadow: 2px 2px 0 var(--retro-shadow, #1a1a2e);
 }
 
 .activityItem:last-child {
@@ -783,15 +839,16 @@
 }
 
 .activityIcon {
-  width: 26px;
-  height: 26px;
-  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
+  font-size: 14px;
   flex-shrink: 0;
-  background: rgba(59, 130, 246, 0.1);
+  background: var(--retro-cyan, #4ECDC4);
+  border: 2px solid var(--retro-border, #1a1a2e);
 }
 
 .activityContent {
@@ -800,42 +857,48 @@
 }
 
 .activityText {
-  font-size: 12px;
-  color: #f8fafc;
-  margin: 0 0 2px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--retro-dark, #2D3436);
+  margin: 0 0 4px 0;
   line-height: 1.3;
 }
 
 .activityTime {
-  font-size: 10px;
-  color: #64748b;
+  font-size: 11px;
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.6;
+  font-weight: 500;
 }
 
 .activityPoints {
   display: flex;
   align-items: center;
   gap: 2px;
-  padding: 2px 6px;
-  background: rgba(59, 130, 246, 0.1);
-  border-radius: 6px;
-  font-size: 10px;
-  font-weight: 600;
-  color: #60a5fa;
+  padding: 4px 8px;
+  background: var(--retro-yellow, #FFE66D);
+  border: 2px solid var(--retro-border, #1a1a2e);
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--retro-dark, #2D3436);
   flex-shrink: 0;
 }
 
-/* No Activity State - Compact */
+/* No Activity State - Neo-Retro */
 .noActivity {
   text-align: center;
-  padding: 24px 16px;
-  color: #64748b;
+  padding: 30px 20px;
+  color: var(--retro-dark, #2D3436);
+  opacity: 0.7;
+  font-weight: 500;
 }
 
 .noActivityIcon {
-  font-size: 28px;
-  margin-bottom: 8px;
+  font-size: 32px;
+  margin-bottom: 10px;
   display: block;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /* ============================================
