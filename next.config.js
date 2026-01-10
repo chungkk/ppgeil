@@ -41,6 +41,9 @@ const nextConfig = {
     // Image formats (AVIF is smaller than WebP, fallback to WebP, then JPEG)
     formats: ['image/avif', 'image/webp'],
 
+    // Allowed quality values (required in Next.js 16+)
+    qualities: [25, 50, 75, 85, 100],
+
     // Cache optimized images for 30 days
     minimumCacheTTL: 60 * 60 * 24 * 30,
 

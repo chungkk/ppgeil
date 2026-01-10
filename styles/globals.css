@@ -651,6 +651,8 @@ button:focus-visible {
   align-items: center;
   margin-bottom: var(--spacing-lg);
   padding: 0;
+  gap: 12px;
+  flex-wrap: nowrap;
 }
 
 .category-title {
@@ -663,6 +665,8 @@ button:focus-visible {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .view-all-btn {
@@ -811,11 +815,23 @@ button:focus-visible {
 
 @media (max-width: 480px) {
   .category-title {
-    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    flex-shrink: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .category-header {
     padding: 0;
+    gap: 8px;
+  }
+
+  .view-all-btn {
+    font-size: 11px;
+    padding: 6px 12px;
+    flex-shrink: 0;
   }
 
   .horizontal-card {
