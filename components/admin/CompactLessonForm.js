@@ -325,10 +325,10 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
 
     setUploading(true);
     try {
-      // Step 1: Get transcript from Whisper V3 (Karaoke)
+      // Step 1: Get transcript from Karaoke V2 (Whisper V4)
       toast.info('⏳ Đang tạo transcript từ YouTube...');
       const token = localStorage.getItem('token');
-      const whisperRes = await fetch('/api/whisper-youtube-srt-v3', {
+      const whisperRes = await fetch('/api/whisper-youtube-srt-v4', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

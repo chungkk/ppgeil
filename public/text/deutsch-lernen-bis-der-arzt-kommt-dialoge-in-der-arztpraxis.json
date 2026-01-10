@@ -1,0 +1,5425 @@
+[
+    {
+        "text": "Beim Arzt Deutsch lernen mit einfachen Dialogen.",
+        "start": 0,
+        "end": 5.100000190734863,
+        "wordTimings": [
+            {
+                "word": "Beim",
+                "start": 0,
+                "end": 0.9800000190734863
+            },
+            {
+                "word": "Arzt",
+                "start": 0.9800000190734863,
+                "end": 1.5
+            },
+            {
+                "word": "Deutsch",
+                "start": 1.5,
+                "end": 2.619999885559082
+            },
+            {
+                "word": "lernen",
+                "start": 2.619999885559082,
+                "end": 2.8399999141693115
+            },
+            {
+                "word": "mit",
+                "start": 2.8399999141693115,
+                "end": 3.319999933242798
+            },
+            {
+                "word": "einfachen",
+                "start": 3.319999933242798,
+                "end": 4.800000190734863
+            },
+            {
+                "word": "Dialogen.",
+                "start": 4.800000190734863,
+                "end": 5.100000190734863
+            }
+        ],
+        "translationEn": "Learning German at the doctor’s with simple dialogues.",
+        "translationVi": "Học tiếng Đức tại bác sĩ với những đoạn hội thoại đơn giản."
+    },
+    {
+        "text": "A2 Praxis fit und gesund.",
+        "start": 4.700000190734864,
+        "end": 12.419999885559083,
+        "wordTimings": [
+            {
+                "word": "A2",
+                "start": 4.700000190734864,
+                "end": 7.440000057220459
+            },
+            {
+                "word": "Praxis",
+                "start": 10.399999618530273,
+                "end": 11.199999809265137
+            },
+            {
+                "word": "fit",
+                "start": 11.199999809265137,
+                "end": 11.5
+            },
+            {
+                "word": "und",
+                "start": 11.5,
+                "end": 11.739999771118164
+            },
+            {
+                "word": "gesund.",
+                "start": 11.739999771118164,
+                "end": 12.419999885559083
+            }
+        ],
+        "translationEn": "A2 Practice fit and healthy.",
+        "translationVi": "A2 Thực hành khỏe mạnh và fit."
+    },
+    {
+        "text": "Schneider Praxis fit und gesund.",
+        "start": 12.019999885559082,
+        "end": 16.2399995803833,
+        "wordTimings": [
+            {
+                "word": "Schneider",
+                "start": 12.019999885559082,
+                "end": 13.020000457763672
+            },
+            {
+                "word": "Praxis",
+                "start": 13.020000457763672,
+                "end": 15.039999961853027
+            },
+            {
+                "word": "fit",
+                "start": 15.039999961853027,
+                "end": 15.34000015258789
+            },
+            {
+                "word": "und",
+                "start": 15.34000015258789,
+                "end": 15.619999885559082
+            },
+            {
+                "word": "gesund.",
+                "start": 15.619999885559082,
+                "end": 16.2399995803833
+            }
+        ],
+        "translationEn": "Schneider Practice fit and healthy.",
+        "translationVi": "Phòng khám Schneider khỏe mạnh và fit."
+    },
+    {
+        "text": "Guten Tag, Frau Schneider.",
+        "start": 17.539999389648436,
+        "end": 19.259999084472657,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 17.539999389648436,
+                "end": 18
+            },
+            {
+                "word": "Tag,",
+                "start": 18,
+                "end": 18.260000228881836
+            },
+            {
+                "word": "Frau",
+                "start": 18.260000228881836,
+                "end": 18.579999923706055
+            },
+            {
+                "word": "Schneider.",
+                "start": 18.579999923706055,
+                "end": 19.259999084472657
+            }
+        ],
+        "translationEn": "Good day, Ms. Schneider.",
+        "translationVi": "Chào buổi chiều, bà Schneider."
+    },
+    {
+        "text": "Hier ist Sofia Martin.",
+        "start": 18.859999084472655,
+        "end": 21.439999389648438,
+        "wordTimings": [
+            {
+                "word": "Hier",
+                "start": 18.859999084472655,
+                "end": 19.399999618530273
+            },
+            {
+                "word": "ist",
+                "start": 19.399999618530273,
+                "end": 19.68000030517578
+            },
+            {
+                "word": "Sofia",
+                "start": 19.68000030517578,
+                "end": 20.100000381469727
+            },
+            {
+                "word": "Martin.",
+                "start": 20.100000381469727,
+                "end": 21.439999389648438
+            }
+        ],
+        "translationEn": "Here is Sofia Martin.",
+        "translationVi": "Đây là Sofia Martin."
+    },
+    {
+        "text": "Guten Tag, Frau Schneider.",
+        "start": 21.039999389648436,
+        "end": 23.77999954223633,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 21.039999389648436,
+                "end": 22.559999465942383
+            },
+            {
+                "word": "Tag,",
+                "start": 22.559999465942383,
+                "end": 22.780000686645508
+            },
+            {
+                "word": "Frau",
+                "start": 22.780000686645508,
+                "end": 23.139999389648438
+            },
+            {
+                "word": "Schneider.",
+                "start": 23.139999389648438,
+                "end": 23.77999954223633
+            }
+        ],
+        "translationEn": "Good day, Ms. Schneider.",
+        "translationVi": "Chào buổi chiều, bà Schneider."
+    },
+    {
+        "text": "Hier ist Sofia Martin.",
+        "start": 23.379999542236327,
+        "end": 25.519999313354493,
+        "wordTimings": [
+            {
+                "word": "Hier",
+                "start": 23.379999542236327,
+                "end": 23.940000534057617
+            },
+            {
+                "word": "ist",
+                "start": 23.940000534057617,
+                "end": 24.200000762939453
+            },
+            {
+                "word": "Sofia",
+                "start": 24.200000762939453,
+                "end": 24.65999984741211
+            },
+            {
+                "word": "Martin.",
+                "start": 24.65999984741211,
+                "end": 25.519999313354493
+            }
+        ],
+        "translationEn": "Here is Sofia Martin.",
+        "translationVi": "Đây là Sofia Martin."
+    },
+    {
+        "text": "Ich möchte einen Termin beim Arzt vereinbaren.",
+        "start": 25.11999931335449,
+        "end": 30.379999923706055,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 25.11999931335449,
+                "end": 27.239999771118164
+            },
+            {
+                "word": "möchte",
+                "start": 27.239999771118164,
+                "end": 27.5
+            },
+            {
+                "word": "einen",
+                "start": 27.5,
+                "end": 27.920000076293945
+            },
+            {
+                "word": "Termin",
+                "start": 27.920000076293945,
+                "end": 28.219999313354492
+            },
+            {
+                "word": "beim",
+                "start": 28.219999313354492,
+                "end": 28.520000457763672
+            },
+            {
+                "word": "Arzt",
+                "start": 28.520000457763672,
+                "end": 28.899999618530273
+            },
+            {
+                "word": "vereinbaren.",
+                "start": 28.899999618530273,
+                "end": 30.379999923706055
+            }
+        ],
+        "translationEn": "I would like to make an appointment with the doctor.",
+        "translationVi": "Tôi muốn đặt lịch hẹn với bác sĩ."
+    },
+    {
+        "text": "Ich möchte einen Termin beim Arzt vereinbaren.",
+        "start": 29.979999923706053,
+        "end": 34.68000106811523,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 29.979999923706053,
+                "end": 31.8799991607666
+            },
+            {
+                "word": "möchte",
+                "start": 31.8799991607666,
+                "end": 32.08000183105469
+            },
+            {
+                "word": "einen",
+                "start": 32.08000183105469,
+                "end": 32.5
+            },
+            {
+                "word": "Termin",
+                "start": 32.5,
+                "end": 32.79999923706055
+            },
+            {
+                "word": "beim",
+                "start": 32.79999923706055,
+                "end": 33.099998474121094
+            },
+            {
+                "word": "Arzt",
+                "start": 33.099998474121094,
+                "end": 33.47999954223633
+            },
+            {
+                "word": "vereinbaren.",
+                "start": 33.47999954223633,
+                "end": 34.68000106811523
+            }
+        ],
+        "translationEn": "I would like to make an appointment with the doctor.",
+        "translationVi": "Tôi muốn đặt một cuộc hẹn với bác sĩ."
+    },
+    {
+        "text": "Guten Tag, Frau Martin.",
+        "start": 34.28000106811523,
+        "end": 38.2000015258789,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 34.28000106811523,
+                "end": 36.939998626708984
+            },
+            {
+                "word": "Tag,",
+                "start": 36.939998626708984,
+                "end": 37.119998931884766
+            },
+            {
+                "word": "Frau",
+                "start": 37.119998931884766,
+                "end": 37.7400016784668
+            },
+            {
+                "word": "Martin.",
+                "start": 37.7400016784668,
+                "end": 38.2000015258789
+            }
+        ],
+        "translationEn": "Good day, Mrs. Martin.",
+        "translationVi": "Chào buổi chiều, bà Martin."
+    },
+    {
+        "text": "Was haben Sie denn?",
+        "start": 37.800001525878905,
+        "end": 40.36000137329101,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 37.800001525878905,
+                "end": 39
+            },
+            {
+                "word": "haben",
+                "start": 39,
+                "end": 39.13999938964844
+            },
+            {
+                "word": "Sie",
+                "start": 39.13999938964844,
+                "end": 39.36000061035156
+            },
+            {
+                "word": "denn?",
+                "start": 39.36000061035156,
+                "end": 40.36000137329101
+            }
+        ],
+        "translationEn": "What do you have?",
+        "translationVi": "Bạn bị làm sao vậy?"
+    },
+    {
+        "text": "Guten Tag, Frau Martin.",
+        "start": 40.60000076293945,
+        "end": 42.939999389648435,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 40.60000076293945,
+                "end": 41.459999084472656
+            },
+            {
+                "word": "Tag,",
+                "start": 41.459999084472656,
+                "end": 41.65999984741211
+            },
+            {
+                "word": "Frau",
+                "start": 41.65999984741211,
+                "end": 42.2400016784668
+            },
+            {
+                "word": "Martin.",
+                "start": 42.2400016784668,
+                "end": 42.939999389648435
+            }
+        ],
+        "translationEn": "Good day, Mrs. Martin.",
+        "translationVi": "Chào bà Martin."
+    },
+    {
+        "text": "Was haben Sie denn?",
+        "start": 42.539999389648436,
+        "end": 44.599999237060544,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 42.539999389648436,
+                "end": 43.560001373291016
+            },
+            {
+                "word": "haben",
+                "start": 43.560001373291016,
+                "end": 43.65999984741211
+            },
+            {
+                "word": "Sie",
+                "start": 43.65999984741211,
+                "end": 43.900001525878906
+            },
+            {
+                "word": "denn?",
+                "start": 43.900001525878906,
+                "end": 44.599999237060544
+            }
+        ],
+        "translationEn": "What do you have?",
+        "translationVi": "Bạn bị làm sao vậy?"
+    },
+    {
+        "text": "Ich habe seit zwei Tagen starke Halsschmerzen,",
+        "start": 44.199999237060545,
+        "end": 49.18000106811523,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 44.199999237060545,
+                "end": 46.119998931884766
+            },
+            {
+                "word": "habe",
+                "start": 46.119998931884766,
+                "end": 46.2599983215332
+            },
+            {
+                "word": "seit",
+                "start": 46.2599983215332,
+                "end": 46.599998474121094
+            },
+            {
+                "word": "zwei",
+                "start": 46.599998474121094,
+                "end": 46.91999816894531
+            },
+            {
+                "word": "Tagen",
+                "start": 46.91999816894531,
+                "end": 47.220001220703125
+            },
+            {
+                "word": "starke",
+                "start": 47.220001220703125,
+                "end": 47.79999923706055
+            },
+            {
+                "word": "Halsschmerzen,",
+                "start": 48.119998931884766,
+                "end": 49.18000106811523
+            }
+        ],
+        "translationEn": "I have had a severe sore throat for two days.",
+        "translationVi": "Tôi đã bị đau họng dữ dội trong hai ngày qua,"
+    },
+    {
+        "text": "Kopfschmerzen und ein bisschen Fieber.",
+        "start": 48.78000106811523,
+        "end": 51.34000091552734,
+        "wordTimings": [
+            {
+                "word": "Kopfschmerzen",
+                "start": 48.78000106811523,
+                "end": 49.63999938964844
+            },
+            {
+                "word": "und",
+                "start": 49.63999938964844,
+                "end": 49.959999084472656
+            },
+            {
+                "word": "ein",
+                "start": 49.959999084472656,
+                "end": 50.31999969482422
+            },
+            {
+                "word": "bisschen",
+                "start": 50.31999969482422,
+                "end": 50.47999954223633
+            },
+            {
+                "word": "Fieber.",
+                "start": 50.47999954223633,
+                "end": 51.34000091552734
+            }
+        ],
+        "translationEn": "Headache and a little fever.",
+        "translationVi": "Đau đầu và hơi sốt."
+    },
+    {
+        "text": "Ich habe seit zwei Tagen starke Halsschmerzen,",
+        "start": 52.37999954223633,
+        "end": 56.040001678466794,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 52.37999954223633,
+                "end": 53.15999984741211
+            },
+            {
+                "word": "habe",
+                "start": 53.15999984741211,
+                "end": 53.34000015258789
+            },
+            {
+                "word": "seit",
+                "start": 53.34000015258789,
+                "end": 53.65999984741211
+            },
+            {
+                "word": "zwei",
+                "start": 53.65999984741211,
+                "end": 54
+            },
+            {
+                "word": "Tagen",
+                "start": 54,
+                "end": 54.31999969482422
+            },
+            {
+                "word": "starke",
+                "start": 54.31999969482422,
+                "end": 54.880001068115234
+            },
+            {
+                "word": "Halsschmerzen,",
+                "start": 54.880001068115234,
+                "end": 56.040001678466794
+            }
+        ],
+        "translationEn": "I have had severe sore throat for two days.",
+        "translationVi": "Tôi đã bị đau họng dữ dội trong hai ngày qua,"
+    },
+    {
+        "text": "Kopfschmerzen und ein bisschen Fieber.",
+        "start": 55.640001678466795,
+        "end": 58.380001831054685,
+        "wordTimings": [
+            {
+                "word": "Kopfschmerzen",
+                "start": 55.640001678466795,
+                "end": 56.70000076293945
+            },
+            {
+                "word": "und",
+                "start": 56.70000076293945,
+                "end": 57.099998474121094
+            },
+            {
+                "word": "ein",
+                "start": 57.099998474121094,
+                "end": 57.279998779296875
+            },
+            {
+                "word": "bisschen",
+                "start": 57.279998779296875,
+                "end": 57.58000183105469
+            },
+            {
+                "word": "Fieber.",
+                "start": 57.58000183105469,
+                "end": 58.380001831054685
+            }
+        ],
+        "translationEn": "Headache and a little fever.",
+        "translationVi": "Đau đầu và một chút sốt."
+    },
+    {
+        "text": "Und ich fühle mich sehr schwach.",
+        "start": 57.980001831054686,
+        "end": 62.66000061035156,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 57.980001831054686,
+                "end": 59.97999954223633
+            },
+            {
+                "word": "ich",
+                "start": 59.97999954223633,
+                "end": 60.31999969482422
+            },
+            {
+                "word": "fühle",
+                "start": 60.31999969482422,
+                "end": 60.400001525878906
+            },
+            {
+                "word": "mich",
+                "start": 60.400001525878906,
+                "end": 60.58000183105469
+            },
+            {
+                "word": "sehr",
+                "start": 60.58000183105469,
+                "end": 61.060001373291016
+            },
+            {
+                "word": "schwach.",
+                "start": 61.060001373291016,
+                "end": 62.66000061035156
+            }
+        ],
+        "translationEn": "And I feel very weak.",
+        "translationVi": "Và tôi cảm thấy rất yếu."
+    },
+    {
+        "text": "Und ich fühle mich sehr schwach.",
+        "start": 62.26000061035156,
+        "end": 67.02000122070312,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 62.26000061035156,
+                "end": 63.20000076293945
+            },
+            {
+                "word": "ich",
+                "start": 63.20000076293945,
+                "end": 63.380001068115234
+            },
+            {
+                "word": "fühle",
+                "start": 63.380001068115234,
+                "end": 63.63999938964844
+            },
+            {
+                "word": "mich",
+                "start": 63.63999938964844,
+                "end": 63.86000061035156
+            },
+            {
+                "word": "sehr",
+                "start": 63.86000061035156,
+                "end": 64.33999633789062
+            },
+            {
+                "word": "schwach.",
+                "start": 64.33999633789062,
+                "end": 67.02000122070312
+            }
+        ],
+        "translationEn": "And I feel very weak.",
+        "translationVi": "Và tôi cảm thấy rất yếu."
+    },
+    {
+        "text": "Okay, wir haben morgen um neun Uhr einen Termin frei.",
+        "start": 0,
+        "end": 70.2000015258789,
+        "wordTimings": [
+            {
+                "word": "Okay,",
+                "start": 0,
+                "end": 0.3,
+                "estimated": true
+            },
+            {
+                "word": "wir",
+                "start": 67.22000122070312,
+                "end": 67.69999694824219
+            },
+            {
+                "word": "haben",
+                "start": 67.69999694824219,
+                "end": 67.9000015258789
+            },
+            {
+                "word": "morgen",
+                "start": 67.9000015258789,
+                "end": 68.22000122070312
+            },
+            {
+                "word": "um",
+                "start": 68.22000122070312,
+                "end": 68.44000244140625
+            },
+            {
+                "word": "neun",
+                "start": 68.44000244140625,
+                "end": 68.68000030517578
+            },
+            {
+                "word": "Uhr",
+                "start": 68.68000030517578,
+                "end": 68.87999725341797
+            },
+            {
+                "word": "einen",
+                "start": 68.87999725341797,
+                "end": 69.4000015258789
+            },
+            {
+                "word": "Termin",
+                "start": 69.4000015258789,
+                "end": 69.55999755859375
+            },
+            {
+                "word": "frei.",
+                "start": 69.55999755859375,
+                "end": 70.2000015258789
+            }
+        ],
+        "translationEn": "Okay, we have an appointment available tomorrow at nine o'clock.",
+        "translationVi": "Được rồi, chúng ta có một cuộc hẹn trống vào lúc chín giờ sáng mai."
+    },
+    {
+        "text": "Passt das?",
+        "start": 69.80000152587891,
+        "end": 71.43999938964843,
+        "wordTimings": [
+            {
+                "word": "Passt",
+                "start": 69.80000152587891,
+                "end": 70.69999694824219
+            },
+            {
+                "word": "das?",
+                "start": 70.69999694824219,
+                "end": 71.43999938964843
+            }
+        ],
+        "translationEn": "Does that fit?",
+        "translationVi": "Có phù hợp không?"
+    },
+    {
+        "text": "Okay, wir haben morgen um neun Uhr einen Termin frei.",
+        "start": 0,
+        "end": 75.78000335693359,
+        "wordTimings": [
+            {
+                "word": "Okay,",
+                "start": 0,
+                "end": 0.3,
+                "estimated": true
+            },
+            {
+                "word": "wir",
+                "start": 72.77999877929688,
+                "end": 73.41999816894531
+            },
+            {
+                "word": "haben",
+                "start": 73.41999816894531,
+                "end": 73.41999816894531
+            },
+            {
+                "word": "morgen",
+                "start": 73.41999816894531,
+                "end": 73.72000122070312
+            },
+            {
+                "word": "um",
+                "start": 73.72000122070312,
+                "end": 73.94000244140625
+            },
+            {
+                "word": "neun",
+                "start": 73.94000244140625,
+                "end": 74.19999694824219
+            },
+            {
+                "word": "Uhr",
+                "start": 74.19999694824219,
+                "end": 74.36000061035156
+            },
+            {
+                "word": "einen",
+                "start": 74.36000061035156,
+                "end": 74.91999816894531
+            },
+            {
+                "word": "Termin",
+                "start": 74.91999816894531,
+                "end": 75.05999755859375
+            },
+            {
+                "word": "frei.",
+                "start": 75.05999755859375,
+                "end": 75.78000335693359
+            }
+        ],
+        "translationEn": "Okay, we have an appointment available tomorrow at nine o'clock.",
+        "translationVi": "Được rồi, chúng ta có một cuộc hẹn trống vào lúc chín giờ ngày mai."
+    },
+    {
+        "text": "Passt das?",
+        "start": 75.3800033569336,
+        "end": 77.57999877929687,
+        "wordTimings": [
+            {
+                "word": "Passt",
+                "start": 75.3800033569336,
+                "end": 76.18000030517578
+            },
+            {
+                "word": "das?",
+                "start": 76.18000030517578,
+                "end": 77.57999877929687
+            }
+        ],
+        "translationEn": "Does that fit?",
+        "translationVi": "Có phù hợp không?"
+    },
+    {
+        "text": "Ja, das ist perfekt.",
+        "start": 77.17999877929688,
+        "end": 80.16000061035156,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 77.17999877929688,
+                "end": 78.83999633789062
+            },
+            {
+                "word": "das",
+                "start": 78.83999633789062,
+                "end": 79.18000030517578
+            },
+            {
+                "word": "ist",
+                "start": 79.18000030517578,
+                "end": 79.30000305175781
+            },
+            {
+                "word": "perfekt.",
+                "start": 79.30000305175781,
+                "end": 80.16000061035156
+            }
+        ],
+        "translationEn": "Yes, that is perfect.",
+        "translationVi": "Vâng, điều đó thật hoàn hảo."
+    },
+    {
+        "text": "Vielen Dank.",
+        "start": 79.76000061035157,
+        "end": 81.74000244140625,
+        "wordTimings": [
+            {
+                "word": "Vielen",
+                "start": 79.76000061035157,
+                "end": 81
+            },
+            {
+                "word": "Dank.",
+                "start": 81,
+                "end": 81.74000244140625
+            }
+        ],
+        "translationEn": "Thank you very much.",
+        "translationVi": "Cảm ơn rất nhiều."
+    },
+    {
+        "text": "Ja, das ist perfekt.",
+        "start": 81.34000244140626,
+        "end": 84.35999755859375,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 81.34000244140626,
+                "end": 82.81999969482422
+            },
+            {
+                "word": "das",
+                "start": 82.81999969482422,
+                "end": 83.16000366210938
+            },
+            {
+                "word": "ist",
+                "start": 83.16000366210938,
+                "end": 83.44000244140625
+            },
+            {
+                "word": "perfekt.",
+                "start": 83.44000244140625,
+                "end": 84.35999755859375
+            }
+        ],
+        "translationEn": "Yes, that is perfect.",
+        "translationVi": "Vâng, điều đó thật hoàn hảo."
+    },
+    {
+        "text": "Vielen Dank.",
+        "start": 83.95999755859376,
+        "end": 85.88000183105468,
+        "wordTimings": [
+            {
+                "word": "Vielen",
+                "start": 83.95999755859376,
+                "end": 85.0199966430664
+            },
+            {
+                "word": "Dank.",
+                "start": 85.0199966430664,
+                "end": 85.88000183105468
+            }
+        ],
+        "translationEn": "Thank you very much.",
+        "translationVi": "Cảm ơn rất nhiều."
+    },
+    {
+        "text": "Ich fühle mich gar nicht gut.",
+        "start": 90.02000274658204,
+        "end": 93.43999938964843,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 90.02000274658204,
+                "end": 91.23999786376953
+            },
+            {
+                "word": "fühle",
+                "start": 91.23999786376953,
+                "end": 91.4800033569336
+            },
+            {
+                "word": "mich",
+                "start": 91.4800033569336,
+                "end": 91.72000122070312
+            },
+            {
+                "word": "gar",
+                "start": 91.72000122070312,
+                "end": 92.0999984741211
+            },
+            {
+                "word": "nicht",
+                "start": 92.0999984741211,
+                "end": 92.23999786376953
+            },
+            {
+                "word": "gut.",
+                "start": 92.23999786376953,
+                "end": 93.43999938964843
+            }
+        ],
+        "translationEn": "I don't feel well at all.",
+        "translationVi": "Tôi cảm thấy không được khỏe."
+    },
+    {
+        "text": "Ich fühle mich gar nicht gut.",
+        "start": 93.03999938964844,
+        "end": 96.13999633789062,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 93.03999938964844,
+                "end": 94.23999786376953
+            },
+            {
+                "word": "fühle",
+                "start": 94.23999786376953,
+                "end": 94.4800033569336
+            },
+            {
+                "word": "mich",
+                "start": 94.4800033569336,
+                "end": 94.72000122070312
+            },
+            {
+                "word": "gar",
+                "start": 94.72000122070312,
+                "end": 95.0999984741211
+            },
+            {
+                "word": "nicht",
+                "start": 95.0999984741211,
+                "end": 95.27999877929688
+            },
+            {
+                "word": "gut.",
+                "start": 95.27999877929688,
+                "end": 96.13999633789062
+            }
+        ],
+        "translationEn": "I don't feel well at all.",
+        "translationVi": "Tôi cảm thấy không được khỏe."
+    },
+    {
+        "text": "Mein Hals tut weh.",
+        "start": 97.06000366210938,
+        "end": 99.63999633789062,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 97.06000366210938,
+                "end": 98.27999877929688
+            },
+            {
+                "word": "Hals",
+                "start": 98.27999877929688,
+                "end": 98.27999877929688
+            },
+            {
+                "word": "tut",
+                "start": 98.27999877929688,
+                "end": 98.68000030517578
+            },
+            {
+                "word": "weh.",
+                "start": 98.68000030517578,
+                "end": 99.63999633789062
+            }
+        ],
+        "translationEn": "My throat hurts.",
+        "translationVi": "Cổ của tôi bị đau."
+    },
+    {
+        "text": "Mein Kopf tut weh.",
+        "start": 99.23999633789063,
+        "end": 102.74000244140625,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 99.23999633789063,
+                "end": 100.72000122070312
+            },
+            {
+                "word": "Kopf",
+                "start": 100.72000122070312,
+                "end": 100.72000122070312
+            },
+            {
+                "word": "tut",
+                "start": 100.72000122070312,
+                "end": 101.16000366210938
+            },
+            {
+                "word": "weh.",
+                "start": 101.16000366210938,
+                "end": 102.74000244140625
+            }
+        ],
+        "translationEn": "My head hurts.",
+        "translationVi": "Đầu tôi đau."
+    },
+    {
+        "text": "Sogar meine Augen tun weh.",
+        "start": 102.34000244140626,
+        "end": 105.28000335693359,
+        "wordTimings": [
+            {
+                "word": "Sogar",
+                "start": 102.34000244140626,
+                "end": 103.04000091552734
+            },
+            {
+                "word": "meine",
+                "start": 103.04000091552734,
+                "end": 103.31999969482422
+            },
+            {
+                "word": "Augen",
+                "start": 103.31999969482422,
+                "end": 103.73999786376953
+            },
+            {
+                "word": "tun",
+                "start": 103.73999786376953,
+                "end": 104.08000183105469
+            },
+            {
+                "word": "weh.",
+                "start": 104.08000183105469,
+                "end": 105.28000335693359
+            }
+        ],
+        "translationEn": "Even my eyes hurt.",
+        "translationVi": "Ngay cả mắt tôi cũng đau."
+    },
+    {
+        "text": "Mein Hals tut weh.",
+        "start": 104.8800033569336,
+        "end": 107.71999816894531,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 104.8800033569336,
+                "end": 105.81999969482422
+            },
+            {
+                "word": "Hals",
+                "start": 105.81999969482422,
+                "end": 105.81999969482422
+            },
+            {
+                "word": "tut",
+                "start": 105.81999969482422,
+                "end": 106.13999938964844
+            },
+            {
+                "word": "weh.",
+                "start": 106.13999938964844,
+                "end": 107.71999816894531
+            }
+        ],
+        "translationEn": "My throat hurts.",
+        "translationVi": "Cổ của tôi bị đau."
+    },
+    {
+        "text": "Mein Kopf tut weh.",
+        "start": 107.31999816894532,
+        "end": 109.88000183105468,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 107.31999816894532,
+                "end": 107.9800033569336
+            },
+            {
+                "word": "Kopf",
+                "start": 107.9800033569336,
+                "end": 108.23999786376953
+            },
+            {
+                "word": "tut",
+                "start": 108.23999786376953,
+                "end": 108.5
+            },
+            {
+                "word": "weh.",
+                "start": 108.5,
+                "end": 109.88000183105468
+            }
+        ],
+        "translationEn": "My head hurts.",
+        "translationVi": "Đầu tôi đau."
+    },
+    {
+        "text": "Sogar meine Augen tun weh.",
+        "start": 109.4800018310547,
+        "end": 112.42000274658203,
+        "wordTimings": [
+            {
+                "word": "Sogar",
+                "start": 109.4800018310547,
+                "end": 110.5199966430664
+            },
+            {
+                "word": "meine",
+                "start": 110.5199966430664,
+                "end": 110.80000305175781
+            },
+            {
+                "word": "Augen",
+                "start": 110.80000305175781,
+                "end": 111.22000122070312
+            },
+            {
+                "word": "tun",
+                "start": 111.22000122070312,
+                "end": 111.62000274658203
+            },
+            {
+                "word": "weh.",
+                "start": 111.62000274658203,
+                "end": 112.42000274658203
+            }
+        ],
+        "translationEn": "Even my eyes hurt.",
+        "translationVi": "Ngay cả mắt tôi cũng đau."
+    },
+    {
+        "text": "Ich kann kaum sprechen,",
+        "start": 112.02000274658204,
+        "end": 114.52000122070312,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 112.02000274658204,
+                "end": 113.23999786376953
+            },
+            {
+                "word": "kann",
+                "start": 113.23999786376953,
+                "end": 113.41999816894531
+            },
+            {
+                "word": "kaum",
+                "start": 113.41999816894531,
+                "end": 113.76000213623047
+            },
+            {
+                "word": "sprechen,",
+                "start": 113.76000213623047,
+                "end": 114.52000122070312
+            }
+        ],
+        "translationEn": "I can hardly speak,",
+        "translationVi": "Tôi hầu như không thể nói."
+    },
+    {
+        "text": "und ich habe kalte Hände.",
+        "start": 114.12000122070313,
+        "end": 116.24000244140625,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 114.12000122070313,
+                "end": 114.69999694824219
+            },
+            {
+                "word": "ich",
+                "start": 114.69999694824219,
+                "end": 115
+            },
+            {
+                "word": "habe",
+                "start": 115,
+                "end": 115
+            },
+            {
+                "word": "kalte",
+                "start": 115,
+                "end": 115.5
+            },
+            {
+                "word": "Hände.",
+                "start": 115.5,
+                "end": 116.24000244140625
+            }
+        ],
+        "translationEn": "and I have cold hands.",
+        "translationVi": "và tôi có đôi tay lạnh."
+    },
+    {
+        "text": "Ich kann kaum sprechen,",
+        "start": 117.31999816894532,
+        "end": 119.53999786376953,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 117.31999816894532,
+                "end": 118.26000213623047
+            },
+            {
+                "word": "kann",
+                "start": 118.26000213623047,
+                "end": 118.4800033569336
+            },
+            {
+                "word": "kaum",
+                "start": 118.4800033569336,
+                "end": 118.77999877929688
+            },
+            {
+                "word": "sprechen,",
+                "start": 118.77999877929688,
+                "end": 119.53999786376953
+            }
+        ],
+        "translationEn": "I can hardly speak,",
+        "translationVi": "Tôi hầu như không thể nói."
+    },
+    {
+        "text": "und ich habe kalte Hände.",
+        "start": 119.13999786376954,
+        "end": 121.35999755859375,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 119.13999786376954,
+                "end": 119.69999694824219
+            },
+            {
+                "word": "ich",
+                "start": 119.69999694824219,
+                "end": 120.05999755859375
+            },
+            {
+                "word": "habe",
+                "start": 120.05999755859375,
+                "end": 120.05999755859375
+            },
+            {
+                "word": "kalte",
+                "start": 120.05999755859375,
+                "end": 120.55999755859375
+            },
+            {
+                "word": "Hände.",
+                "start": 120.55999755859375,
+                "end": 121.35999755859375
+            }
+        ],
+        "translationEn": "and I have cold hands.",
+        "translationVi": "và tôi có đôi tay lạnh."
+    },
+    {
+        "text": "Hoffentlich ist es nichts Ernstes.",
+        "start": 120.95999755859376,
+        "end": 126.28000335693359,
+        "wordTimings": [
+            {
+                "word": "Hoffentlich",
+                "start": 120.95999755859376,
+                "end": 124.37999725341797
+            },
+            {
+                "word": "ist",
+                "start": 124.37999725341797,
+                "end": 124.68000030517578
+            },
+            {
+                "word": "es",
+                "start": 124.68000030517578,
+                "end": 125.05999755859375
+            },
+            {
+                "word": "nichts",
+                "start": 125.05999755859375,
+                "end": 125.22000122070312
+            },
+            {
+                "word": "Ernstes.",
+                "start": 125.22000122070312,
+                "end": 126.28000335693359
+            }
+        ],
+        "translationEn": "Hopefully, it's nothing serious.",
+        "translationVi": "Hy vọng không có gì nghiêm trọng."
+    },
+    {
+        "text": "Hoffentlich ist es nichts Ernstes.",
+        "start": 127.67999877929688,
+        "end": 131.5799987792969,
+        "wordTimings": [
+            {
+                "word": "Hoffentlich",
+                "start": 127.67999877929688,
+                "end": 128.6199951171875
+            },
+            {
+                "word": "ist",
+                "start": 128.6199951171875,
+                "end": 128.82000732421875
+            },
+            {
+                "word": "es",
+                "start": 128.82000732421875,
+                "end": 129.22000122070312
+            },
+            {
+                "word": "nichts",
+                "start": 129.22000122070312,
+                "end": 129.3800048828125
+            },
+            {
+                "word": "Ernstes.",
+                "start": 129.3800048828125,
+                "end": 131.5799987792969
+            }
+        ],
+        "translationEn": "Hopefully, it's nothing serious.",
+        "translationVi": "Hy vọng đó không phải là điều nghiêm trọng."
+    },
+    {
+        "text": "Sätze mit dem Verb wehtun.",
+        "start": 131.17999877929688,
+        "end": 134.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Sätze",
+                "start": 131.17999877929688,
+                "end": 132.3000030517578
+            },
+            {
+                "word": "mit",
+                "start": 132.3000030517578,
+                "end": 132.55999755859375
+            },
+            {
+                "word": "dem",
+                "start": 132.55999755859375,
+                "end": 132.82000732421875
+            },
+            {
+                "word": "Verb",
+                "start": 132.82000732421875,
+                "end": 133.0399932861328
+            },
+            {
+                "word": "wehtun.",
+                "start": 133.0399932861328,
+                "end": 134.4199951171875
+            }
+        ],
+        "translationEn": "Sentences with the verb \"to hurt.\"",
+        "translationVi": "Câu với động từ wehtun."
+    },
+    {
+        "text": "Mein Kopf tut weh.",
+        "start": 134.0199951171875,
+        "end": 137.77999572753907,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 134.0199951171875,
+                "end": 136.5399932861328
+            },
+            {
+                "word": "Kopf",
+                "start": 136.5399932861328,
+                "end": 136.77999877929688
+            },
+            {
+                "word": "tut",
+                "start": 136.77999877929688,
+                "end": 137.05999755859375
+            },
+            {
+                "word": "weh.",
+                "start": 137.05999755859375,
+                "end": 137.77999572753907
+            }
+        ],
+        "translationEn": "My head hurts.",
+        "translationVi": "Đầu tôi đau."
+    },
+    {
+        "text": "Mein Hals tut weh.",
+        "start": 138.17999877929688,
+        "end": 144.16000061035157,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 138.17999877929688,
+                "end": 138.83999633789062
+            },
+            {
+                "word": "Hals",
+                "start": 141.75999450683594,
+                "end": 141.83999633789062
+            },
+            {
+                "word": "tut",
+                "start": 141.83999633789062,
+                "end": 142.25999450683594
+            },
+            {
+                "word": "weh.",
+                "start": 142.25999450683594,
+                "end": 144.16000061035157
+            }
+        ],
+        "translationEn": "My throat hurts.",
+        "translationVi": "Cổ họng tôi đau."
+    },
+    {
+        "text": "Meine Augen tun weh.",
+        "start": 143.76000061035157,
+        "end": 148.97999267578126,
+        "wordTimings": [
+            {
+                "word": "Meine",
+                "start": 143.76000061035157,
+                "end": 144.10000610351562
+            },
+            {
+                "word": "Augen",
+                "start": 146.3800048828125,
+                "end": 146.77999877929688
+            },
+            {
+                "word": "tun",
+                "start": 146.77999877929688,
+                "end": 147.0800018310547
+            },
+            {
+                "word": "weh.",
+                "start": 147.0800018310547,
+                "end": 148.97999267578126
+            }
+        ],
+        "translationEn": "My eyes hurt.",
+        "translationVi": "Mắt tôi đau."
+    },
+    {
+        "text": "Was tut dir weh?",
+        "start": 151.00000610351563,
+        "end": 153.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 151.00000610351563,
+                "end": 151.47999572753906
+            },
+            {
+                "word": "tut",
+                "start": 151.47999572753906,
+                "end": 151.72000122070312
+            },
+            {
+                "word": "dir",
+                "start": 151.72000122070312,
+                "end": 152.0399932861328
+            },
+            {
+                "word": "weh?",
+                "start": 152.0399932861328,
+                "end": 153.9600036621094
+            }
+        ],
+        "translationEn": "What hurts you?",
+        "translationVi": "Bạn bị đau ở đâu?"
+    },
+    {
+        "text": "Guten Morgen, Frau Martin.",
+        "start": 153.56000366210938,
+        "end": 156.2600067138672,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 153.56000366210938,
+                "end": 154.67999267578125
+            },
+            {
+                "word": "Morgen,",
+                "start": 154.67999267578125,
+                "end": 154.9600067138672
+            },
+            {
+                "word": "Frau",
+                "start": 154.9600067138672,
+                "end": 155.24000549316406
+            },
+            {
+                "word": "Martin.",
+                "start": 155.24000549316406,
+                "end": 156.2600067138672
+            }
+        ],
+        "translationEn": "Good morning, Mrs. Martin.",
+        "translationVi": "Chào buổi sáng, bà Martin."
+    },
+    {
+        "text": "Kommen Sie bitte rein.",
+        "start": 155.8600067138672,
+        "end": 158.21999816894532,
+        "wordTimings": [
+            {
+                "word": "Kommen",
+                "start": 155.8600067138672,
+                "end": 156.3800048828125
+            },
+            {
+                "word": "Sie",
+                "start": 156.3800048828125,
+                "end": 156.5800018310547
+            },
+            {
+                "word": "bitte",
+                "start": 156.5800018310547,
+                "end": 156.74000549316406
+            },
+            {
+                "word": "rein.",
+                "start": 156.74000549316406,
+                "end": 158.21999816894532
+            }
+        ],
+        "translationEn": "Please come in.",
+        "translationVi": "Xin mời bạn vào trong."
+    },
+    {
+        "text": "Guten Morgen, Frau.",
+        "start": 157.81999816894532,
+        "end": 167.7600067138672,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 157.81999816894532,
+                "end": 167.4600067138672
+            },
+            {
+                "word": "Morgen,",
+                "start": 167.4600067138672,
+                "end": 167.4600067138672
+            },
+            {
+                "word": "Frau.",
+                "start": 167.4600067138672,
+                "end": 167.7600067138672
+            }
+        ],
+        "translationEn": "Good morning, ma'am.",
+        "translationVi": "Chào buổi sáng, bà."
+    },
+    {
+        "text": "Guten Morgen, Herr Doktor.",
+        "start": 168.56000366210938,
+        "end": 171.16000061035157,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 168.56000366210938,
+                "end": 169.74000549316406
+            },
+            {
+                "word": "Morgen,",
+                "start": 169.74000549316406,
+                "end": 170.13999938964844
+            },
+            {
+                "word": "Herr",
+                "start": 170.13999938964844,
+                "end": 170.63999938964844
+            },
+            {
+                "word": "Doktor.",
+                "start": 170.63999938964844,
+                "end": 171.16000061035157
+            }
+        ],
+        "translationEn": "Good morning, Doctor.",
+        "translationVi": "Chào buổi sáng, bác sĩ."
+    },
+    {
+        "text": "Guten Morgen, Herr Doktor.",
+        "start": 170.76000061035157,
+        "end": 175.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 170.76000061035157,
+                "end": 173.02000427246094
+            },
+            {
+                "word": "Morgen,",
+                "start": 173.02000427246094,
+                "end": 173.32000732421875
+            },
+            {
+                "word": "Herr",
+                "start": 173.32000732421875,
+                "end": 174.77999877929688
+            },
+            {
+                "word": "Doktor.",
+                "start": 174.77999877929688,
+                "end": 175.0799987792969
+            }
+        ],
+        "translationEn": "Good morning, Doctor.",
+        "translationVi": "Chào buổi sáng, thưa bác sĩ."
+    },
+    {
+        "text": "Ich habe Halsschmerzen und Fieber.",
+        "start": 174.67999877929688,
+        "end": 179.3,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 174.67999877929688,
+                "end": 176.1999969482422
+            },
+            {
+                "word": "habe",
+                "start": 176.1999969482422,
+                "end": 176.4199981689453
+            },
+            {
+                "word": "Halsschmerzen",
+                "start": 176.4199981689453,
+                "end": 177.32000732421875
+            },
+            {
+                "word": "und",
+                "start": 177.32000732421875,
+                "end": 179
+            },
+            {
+                "word": "Fieber.",
+                "start": 179,
+                "end": 179.3
+            }
+        ],
+        "translationEn": "I have a sore throat and fever.",
+        "translationVi": "Tôi bị đau họng và sốt."
+    },
+    {
+        "text": "Ich habe Halsschmerzen und Fieber.",
+        "start": 178.9,
+        "end": 182.60000305175782,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 178.9,
+                "end": 180.25999450683594
+            },
+            {
+                "word": "habe",
+                "start": 180.25999450683594,
+                "end": 180.47999572753906
+            },
+            {
+                "word": "Halsschmerzen",
+                "start": 180.47999572753906,
+                "end": 181.3800048828125
+            },
+            {
+                "word": "und",
+                "start": 181.3800048828125,
+                "end": 182.13999938964844
+            },
+            {
+                "word": "Fieber.",
+                "start": 182.13999938964844,
+                "end": 182.60000305175782
+            }
+        ],
+        "translationEn": "I have a sore throat and fever.",
+        "translationVi": "Tôi bị đau họng và sốt."
+    },
+    {
+        "text": "Und ich kann nur schwer sprechen.",
+        "start": 182.20000305175782,
+        "end": 186.4999969482422,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 182.20000305175782,
+                "end": 184.17999267578125
+            },
+            {
+                "word": "ich",
+                "start": 184.17999267578125,
+                "end": 184.33999633789062
+            },
+            {
+                "word": "kann",
+                "start": 184.33999633789062,
+                "end": 184.47999572753906
+            },
+            {
+                "word": "nur",
+                "start": 184.47999572753906,
+                "end": 185.02000427246094
+            },
+            {
+                "word": "schwer",
+                "start": 185.02000427246094,
+                "end": 185.16000366210938
+            },
+            {
+                "word": "sprechen.",
+                "start": 185.16000366210938,
+                "end": 186.4999969482422
+            }
+        ],
+        "translationEn": "And I can hardly speak.",
+        "translationVi": "Và tôi chỉ có thể nói khó khăn."
+    },
+    {
+        "text": "Und ich kann nur schwer sprechen.",
+        "start": 186.0999969482422,
+        "end": 189.83999328613282,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 186.0999969482422,
+                "end": 187.82000732421875
+            },
+            {
+                "word": "ich",
+                "start": 187.82000732421875,
+                "end": 187.94000244140625
+            },
+            {
+                "word": "kann",
+                "start": 187.94000244140625,
+                "end": 188.0800018310547
+            },
+            {
+                "word": "nur",
+                "start": 188.0800018310547,
+                "end": 188.60000610351562
+            },
+            {
+                "word": "schwer",
+                "start": 188.60000610351562,
+                "end": 188.77999877929688
+            },
+            {
+                "word": "sprechen.",
+                "start": 188.77999877929688,
+                "end": 189.83999328613282
+            }
+        ],
+        "translationEn": "And I can hardly speak.",
+        "translationVi": "Và tôi chỉ có thể nói một cách khó khăn."
+    },
+    {
+        "text": "Mein Kopf tut auch weh.",
+        "start": 189.43999328613282,
+        "end": 194.40000610351564,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 189.43999328613282,
+                "end": 191.05999755859375
+            },
+            {
+                "word": "Kopf",
+                "start": 191.05999755859375,
+                "end": 191.4600067138672
+            },
+            {
+                "word": "tut",
+                "start": 191.4600067138672,
+                "end": 191.74000549316406
+            },
+            {
+                "word": "auch",
+                "start": 191.74000549316406,
+                "end": 192
+            },
+            {
+                "word": "weh.",
+                "start": 192,
+                "end": 194.40000610351564
+            }
+        ],
+        "translationEn": "My head hurts too.",
+        "translationVi": "Đầu tôi cũng đau."
+    },
+    {
+        "text": "Mein Kopf tut auch weh.",
+        "start": 194.00000610351563,
+        "end": 197.27999572753907,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 194.00000610351563,
+                "end": 194.10000610351562
+            },
+            {
+                "word": "Kopf",
+                "start": 194.10000610351562,
+                "end": 194.33999633789062
+            },
+            {
+                "word": "tut",
+                "start": 194.33999633789062,
+                "end": 194.6199951171875
+            },
+            {
+                "word": "auch",
+                "start": 194.6199951171875,
+                "end": 194.89999389648438
+            },
+            {
+                "word": "weh.",
+                "start": 194.89999389648438,
+                "end": 197.27999572753907
+            }
+        ],
+        "translationEn": "My head hurts too.",
+        "translationVi": "Đầu tôi cũng đau."
+    },
+    {
+        "text": "Haben Sie Husten?",
+        "start": 196.87999572753907,
+        "end": 199.33999328613282,
+        "wordTimings": [
+            {
+                "word": "Haben",
+                "start": 196.87999572753907,
+                "end": 197.24000549316406
+            },
+            {
+                "word": "Sie",
+                "start": 197.24000549316406,
+                "end": 197.4199981689453
+            },
+            {
+                "word": "Husten?",
+                "start": 197.4199981689453,
+                "end": 199.33999328613282
+            }
+        ],
+        "translationEn": "Do you have a cough?",
+        "translationVi": "Bạn có bị ho không?"
+    },
+    {
+        "text": "Haben Sie Husten?",
+        "start": 198.93999328613282,
+        "end": 201.33999328613282,
+        "wordTimings": [
+            {
+                "word": "Haben",
+                "start": 198.93999328613282,
+                "end": 199.6999969482422
+            },
+            {
+                "word": "Sie",
+                "start": 199.6999969482422,
+                "end": 199.89999389648438
+            },
+            {
+                "word": "Husten?",
+                "start": 199.89999389648438,
+                "end": 201.33999328613282
+            }
+        ],
+        "translationEn": "Do you have a cough?",
+        "translationVi": "Bạn có bị ho không?"
+    },
+    {
+        "text": "Nein, ich habe keinen Husten.",
+        "start": 200.93999328613282,
+        "end": 205.4600036621094,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 200.93999328613282,
+                "end": 202.4199981689453
+            },
+            {
+                "word": "ich",
+                "start": 202.4199981689453,
+                "end": 202.6199951171875
+            },
+            {
+                "word": "habe",
+                "start": 202.6199951171875,
+                "end": 202.75999450683594
+            },
+            {
+                "word": "keinen",
+                "start": 202.75999450683594,
+                "end": 203.1999969482422
+            },
+            {
+                "word": "Husten.",
+                "start": 204.39999389648438,
+                "end": 205.4600036621094
+            }
+        ],
+        "translationEn": "No, I don't have a cough.",
+        "translationVi": "Không, tôi không có ho."
+    },
+    {
+        "text": "Nein, ich habe keinen Husten.",
+        "start": 205.06000366210938,
+        "end": 209.05999450683595,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 205.06000366210938,
+                "end": 205.9199981689453
+            },
+            {
+                "word": "ich",
+                "start": 205.9199981689453,
+                "end": 206.13999938964844
+            },
+            {
+                "word": "habe",
+                "start": 206.13999938964844,
+                "end": 206.25999450683594
+            },
+            {
+                "word": "keinen",
+                "start": 206.25999450683594,
+                "end": 206.6999969482422
+            },
+            {
+                "word": "Husten.",
+                "start": 206.6999969482422,
+                "end": 209.05999450683595
+            }
+        ],
+        "translationEn": "No, I don't have a cough.",
+        "translationVi": "Không, tôi không bị ho."
+    },
+    {
+        "text": "Aber ich habe keinen Appetit.",
+        "start": 208.65999450683594,
+        "end": 211.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 208.65999450683594,
+                "end": 209.1199951171875
+            },
+            {
+                "word": "ich",
+                "start": 209.1199951171875,
+                "end": 209.39999389648438
+            },
+            {
+                "word": "habe",
+                "start": 209.39999389648438,
+                "end": 209.55999755859375
+            },
+            {
+                "word": "keinen",
+                "start": 209.55999755859375,
+                "end": 210
+            },
+            {
+                "word": "Appetit.",
+                "start": 210,
+                "end": 211.1999938964844
+            }
+        ],
+        "translationEn": "But I have no appetite.",
+        "translationVi": "Nhưng tôi không có cảm giác thèm ăn."
+    },
+    {
+        "text": "Aber ich habe keinen Appetit.",
+        "start": 210.79999389648438,
+        "end": 214.83999328613282,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 210.79999389648438,
+                "end": 212.75999450683594
+            },
+            {
+                "word": "ich",
+                "start": 212.75999450683594,
+                "end": 213
+            },
+            {
+                "word": "habe",
+                "start": 213,
+                "end": 213.1999969482422
+            },
+            {
+                "word": "keinen",
+                "start": 213.1999969482422,
+                "end": 213.60000610351562
+            },
+            {
+                "word": "Appetit.",
+                "start": 213.60000610351562,
+                "end": 214.83999328613282
+            }
+        ],
+        "translationEn": "But I have no appetite.",
+        "translationVi": "Nhưng tôi không có cảm giác thèm ăn."
+    },
+    {
+        "text": "Okay, ich messe jetzt Ihre Temperatur.",
+        "start": 215.43999328613282,
+        "end": 224.12000732421876,
+        "wordTimings": [
+            {
+                "word": "Okay,",
+                "start": 215.43999328613282,
+                "end": 216.67999267578125
+            },
+            {
+                "word": "ich",
+                "start": 221,
+                "end": 222.39999389648438
+            },
+            {
+                "word": "messe",
+                "start": 222.39999389648438,
+                "end": 222.6199951171875
+            },
+            {
+                "word": "jetzt",
+                "start": 222.6199951171875,
+                "end": 222.9199981689453
+            },
+            {
+                "word": "Ihre",
+                "start": 222.9199981689453,
+                "end": 223.13999938964844
+            },
+            {
+                "word": "Temperatur.",
+                "start": 223.13999938964844,
+                "end": 224.12000732421876
+            }
+        ],
+        "translationEn": "Okay, I will now measure your temperature.",
+        "translationVi": "Được rồi, tôi sẽ đo nhiệt độ của bạn bây giờ."
+    },
+    {
+        "text": "38,5 Grad, das ist Fieber.",
+        "start": 225.5199951171875,
+        "end": 235.02000122070314,
+        "wordTimings": [
+            {
+                "word": "38,5",
+                "start": 225.5199951171875,
+                "end": 226.32000732421875
+            },
+            {
+                "word": "Grad,",
+                "start": 228.05999755859375,
+                "end": 228.13999938964844
+            },
+            {
+                "word": "das",
+                "start": 232.82000732421875,
+                "end": 234.22000122070312
+            },
+            {
+                "word": "ist",
+                "start": 234.22000122070312,
+                "end": 234.44000244140625
+            },
+            {
+                "word": "Fieber.",
+                "start": 234.44000244140625,
+                "end": 235.02000122070314
+            }
+        ],
+        "translationEn": "38.5 degrees, that is a fever.",
+        "translationVi": "38,5 độ, đó là sốt."
+    },
+    {
+        "text": "Jetzt höre ich Sie ab.",
+        "start": 234.62000122070313,
+        "end": 241.43999938964845,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 234.62000122070313,
+                "end": 237.33999633789062
+            },
+            {
+                "word": "höre",
+                "start": 237.33999633789062,
+                "end": 237.52000427246094
+            },
+            {
+                "word": "ich",
+                "start": 237.52000427246094,
+                "end": 240.74000549316406
+            },
+            {
+                "word": "Sie",
+                "start": 240.74000549316406,
+                "end": 240.8800048828125
+            },
+            {
+                "word": "ab.",
+                "start": 240.8800048828125,
+                "end": 241.43999938964845
+            }
+        ],
+        "translationEn": "Now I am listening to you.",
+        "translationVi": "Bây giờ tôi sẽ nghe bạn."
+    },
+    {
+        "text": "Bitte tief einatmen und ausatmen.",
+        "start": 242.84000244140626,
+        "end": 247.55999450683595,
+        "wordTimings": [
+            {
+                "word": "Bitte",
+                "start": 242.84000244140626,
+                "end": 243.25999450683594
+            },
+            {
+                "word": "tief",
+                "start": 243.25999450683594,
+                "end": 243.66000366210938
+            },
+            {
+                "word": "einatmen",
+                "start": 243.66000366210938,
+                "end": 244.47999572753906
+            },
+            {
+                "word": "und",
+                "start": 244.47999572753906,
+                "end": 246.60000610351562
+            },
+            {
+                "word": "ausatmen.",
+                "start": 246.60000610351562,
+                "end": 247.55999450683595
+            }
+        ],
+        "translationEn": "Please take a deep breath in and out.",
+        "translationVi": "Xin hãy hít sâu và thở ra."
+    },
+    {
+        "text": "Bitte tief einatmen und ausatmen.",
+        "start": 247.15999450683594,
+        "end": 253.74000244140626,
+        "wordTimings": [
+            {
+                "word": "Bitte",
+                "start": 247.15999450683594,
+                "end": 249.3800048828125
+            },
+            {
+                "word": "tief",
+                "start": 249.3800048828125,
+                "end": 249.82000732421875
+            },
+            {
+                "word": "einatmen",
+                "start": 249.82000732421875,
+                "end": 250.63999938964844
+            },
+            {
+                "word": "und",
+                "start": 250.63999938964844,
+                "end": 252.77999877929688
+            },
+            {
+                "word": "ausatmen.",
+                "start": 252.77999877929688,
+                "end": 253.74000244140626
+            }
+        ],
+        "translationEn": "Please take a deep breath in and out.",
+        "translationVi": "Xin hãy hít sâu và thở ra."
+    },
+    {
+        "text": "Sie haben eine Halsentzündung.",
+        "start": 255.5199951171875,
+        "end": 258.6999938964844,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 255.5199951171875,
+                "end": 256.9200134277344
+            },
+            {
+                "word": "haben",
+                "start": 256.9200134277344,
+                "end": 257.17999267578125
+            },
+            {
+                "word": "eine",
+                "start": 257.17999267578125,
+                "end": 257.4800109863281
+            },
+            {
+                "word": "Halsentzündung.",
+                "start": 257.4800109863281,
+                "end": 258.6999938964844
+            }
+        ],
+        "translationEn": "You have a throat infection.",
+        "translationVi": "Bạn bị viêm họng."
+    },
+    {
+        "text": "Ich verschreibe Ihnen Medikamente.",
+        "start": 262.2800048828125,
+        "end": 269.25999145507814,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 262.2800048828125,
+                "end": 263.67999267578125
+            },
+            {
+                "word": "verschreibe",
+                "start": 263.67999267578125,
+                "end": 264.2200012207031
+            },
+            {
+                "word": "Ihnen",
+                "start": 264.2200012207031,
+                "end": 268.32000732421875
+            },
+            {
+                "word": "Medikamente.",
+                "start": 268.32000732421875,
+                "end": 269.25999145507814
+            }
+        ],
+        "translationEn": "I will prescribe you medication.",
+        "translationVi": "Tôi sẽ kê đơn thuốc cho bạn."
+    },
+    {
+        "text": "Trinken Sie viel,",
+        "start": 270.67999877929685,
+        "end": 272.060009765625,
+        "wordTimings": [
+            {
+                "word": "Trinken",
+                "start": 270.67999877929685,
+                "end": 271.0400085449219
+            },
+            {
+                "word": "Sie",
+                "start": 271.0400085449219,
+                "end": 271.3999938964844
+            },
+            {
+                "word": "viel,",
+                "start": 271.3999938964844,
+                "end": 272.060009765625
+            }
+        ],
+        "translationEn": "Drink a lot,",
+        "translationVi": "Hãy uống nhiều nước,"
+    },
+    {
+        "text": "ruhen Sie sich aus",
+        "start": 272.3599914550781,
+        "end": 273.50001220703126,
+        "wordTimings": [
+            {
+                "word": "ruhen",
+                "start": 272.3599914550781,
+                "end": 272.4599914550781
+            },
+            {
+                "word": "Sie",
+                "start": 272.4599914550781,
+                "end": 272.6199951171875
+            },
+            {
+                "word": "sich",
+                "start": 272.6199951171875,
+                "end": 272.82000732421875
+            },
+            {
+                "word": "aus",
+                "start": 272.82000732421875,
+                "end": 273.50001220703126
+            }
+        ],
+        "translationEn": "rest yourself",
+        "translationVi": "hãy nghỉ ngơi"
+    },
+    {
+        "text": "und bleiben Sie zwei Tage zu Hause.",
+        "start": 273.1000122070312,
+        "end": 281.8400085449219,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 273.1000122070312,
+                "end": 273.55999755859375
+            },
+            {
+                "word": "bleiben",
+                "start": 273.55999755859375,
+                "end": 273.79998779296875
+            },
+            {
+                "word": "Sie",
+                "start": 273.79998779296875,
+                "end": 277.239990234375
+            },
+            {
+                "word": "zwei",
+                "start": 277.239990234375,
+                "end": 277.239990234375
+            },
+            {
+                "word": "Tage",
+                "start": 277.239990234375,
+                "end": 278.9200134277344
+            },
+            {
+                "word": "zu",
+                "start": 278.9200134277344,
+                "end": 281.1600036621094
+            },
+            {
+                "word": "Hause.",
+                "start": 281.1600036621094,
+                "end": 281.8400085449219
+            }
+        ],
+        "translationEn": "and stay at home for two days.",
+        "translationVi": "và ở nhà hai ngày."
+    },
+    {
+        "text": "Muss ich zu Hause bleiben?",
+        "start": 283.160009765625,
+        "end": 285.12000732421876,
+        "wordTimings": [
+            {
+                "word": "Muss",
+                "start": 283.160009765625,
+                "end": 283.3800048828125
+            },
+            {
+                "word": "ich",
+                "start": 283.3800048828125,
+                "end": 283.5400085449219
+            },
+            {
+                "word": "zu",
+                "start": 283.5400085449219,
+                "end": 284.17999267578125
+            },
+            {
+                "word": "Hause",
+                "start": 284.17999267578125,
+                "end": 284.17999267578125
+            },
+            {
+                "word": "bleiben?",
+                "start": 284.17999267578125,
+                "end": 285.12000732421876
+            }
+        ],
+        "translationEn": "Do I have to stay at home?",
+        "translationVi": "Tôi có phải ở nhà không?"
+    },
+    {
+        "text": "Ja, Sie müssen sich erholen.",
+        "start": 289.1999877929687,
+        "end": 294.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 289.1999877929687,
+                "end": 290.44000244140625
+            },
+            {
+                "word": "Sie",
+                "start": 290.8599853515625,
+                "end": 291.05999755859375
+            },
+            {
+                "word": "müssen",
+                "start": 291.05999755859375,
+                "end": 291.29998779296875
+            },
+            {
+                "word": "sich",
+                "start": 291.29998779296875,
+                "end": 291.5799865722656
+            },
+            {
+                "word": "erholen.",
+                "start": 291.5799865722656,
+                "end": 294.1999938964844
+            }
+        ],
+        "translationEn": "Yes, you need to recover.",
+        "translationVi": "Vâng, bạn cần phải nghỉ ngơi."
+    },
+    {
+        "text": "Ich schreibe Ihnen eine Krankmeldung.",
+        "start": 297.41998901367185,
+        "end": 302.40000610351564,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 297.41998901367185,
+                "end": 297.7200012207031
+            },
+            {
+                "word": "schreibe",
+                "start": 297.7200012207031,
+                "end": 298.1000061035156
+            },
+            {
+                "word": "Ihnen",
+                "start": 298.1000061035156,
+                "end": 298.3399963378906
+            },
+            {
+                "word": "eine",
+                "start": 298.3399963378906,
+                "end": 301.4200134277344
+            },
+            {
+                "word": "Krankmeldung.",
+                "start": 301.4200134277344,
+                "end": 302.40000610351564
+            }
+        ],
+        "translationEn": "I am writing you a sick note.",
+        "translationVi": "Tôi viết cho bạn một giấy chứng nhận ốm."
+    },
+    {
+        "text": "Danke, Herr Doktor.",
+        "start": 302.0000061035156,
+        "end": 306.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Danke,",
+                "start": 302.0000061035156,
+                "end": 303.3999938964844
+            },
+            {
+                "word": "Herr",
+                "start": 306.239990234375,
+                "end": 306.239990234375
+            },
+            {
+                "word": "Doktor.",
+                "start": 306.239990234375,
+                "end": 306.9600036621094
+            }
+        ],
+        "translationEn": "Thank you, Doctor.",
+        "translationVi": "Cảm ơn, bác sĩ."
+    },
+    {
+        "text": "Guten Tag.",
+        "start": 312.8400024414062,
+        "end": 314.52000122070314,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 312.8400024414062,
+                "end": 313.7799987792969
+            },
+            {
+                "word": "Tag.",
+                "start": 313.7799987792969,
+                "end": 314.52000122070314
+            }
+        ],
+        "translationEn": "Good day.",
+        "translationVi": "Xin chào."
+    },
+    {
+        "text": "Ich habe hier ein Rezept von meinem Arzt.",
+        "start": 314.56000366210935,
+        "end": 317.060009765625,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 314.56000366210935,
+                "end": 314.760009765625
+            },
+            {
+                "word": "habe",
+                "start": 314.760009765625,
+                "end": 314.9200134277344
+            },
+            {
+                "word": "hier",
+                "start": 314.9200134277344,
+                "end": 315.20001220703125
+            },
+            {
+                "word": "ein",
+                "start": 315.20001220703125,
+                "end": 315.3800048828125
+            },
+            {
+                "word": "Rezept",
+                "start": 315.3800048828125,
+                "end": 315.79998779296875
+            },
+            {
+                "word": "von",
+                "start": 315.79998779296875,
+                "end": 316.1000061035156
+            },
+            {
+                "word": "meinem",
+                "start": 316.1000061035156,
+                "end": 316.3599853515625
+            },
+            {
+                "word": "Arzt.",
+                "start": 316.3599853515625,
+                "end": 317.060009765625
+            }
+        ],
+        "translationEn": "I have a prescription from my doctor.",
+        "translationVi": "Tôi có một đơn thuốc từ bác sĩ của tôi ở đây."
+    },
+    {
+        "text": "Guten Tag.",
+        "start": 320.2200073242187,
+        "end": 322.039990234375,
+        "wordTimings": [
+            {
+                "word": "Guten",
+                "start": 320.2200073242187,
+                "end": 321.260009765625
+            },
+            {
+                "word": "Tag.",
+                "start": 321.260009765625,
+                "end": 322.039990234375
+            }
+        ],
+        "translationEn": "Good day.",
+        "translationVi": "Xin chào."
+    },
+    {
+        "text": "Ich habe hier ein Rezept von meinem Arzt.",
+        "start": 322.0799926757812,
+        "end": 324.59998779296876,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 322.0799926757812,
+                "end": 322.29998779296875
+            },
+            {
+                "word": "habe",
+                "start": 322.29998779296875,
+                "end": 322.4599914550781
+            },
+            {
+                "word": "hier",
+                "start": 322.4599914550781,
+                "end": 322.739990234375
+            },
+            {
+                "word": "ein",
+                "start": 322.739990234375,
+                "end": 322.8999938964844
+            },
+            {
+                "word": "Rezept",
+                "start": 322.8999938964844,
+                "end": 323.3599853515625
+            },
+            {
+                "word": "von",
+                "start": 323.3599853515625,
+                "end": 323.6400146484375
+            },
+            {
+                "word": "meinem",
+                "start": 323.6400146484375,
+                "end": 323.8599853515625
+            },
+            {
+                "word": "Arzt.",
+                "start": 323.8599853515625,
+                "end": 324.59998779296876
+            }
+        ],
+        "translationEn": "I have a prescription from my doctor.",
+        "translationVi": "Tôi có một đơn thuốc từ bác sĩ của tôi ở đây."
+    },
+    {
+        "text": "Danke, einen Moment bitte.",
+        "start": 325.7399963378906,
+        "end": 329.6999938964844,
+        "wordTimings": [
+            {
+                "word": "Danke,",
+                "start": 325.7399963378906,
+                "end": 326.7799987792969
+            },
+            {
+                "word": "einen",
+                "start": 327.7799987792969,
+                "end": 328.5400085449219
+            },
+            {
+                "word": "Moment",
+                "start": 328.5400085449219,
+                "end": 328.7799987792969
+            },
+            {
+                "word": "bitte.",
+                "start": 329.3999938964844,
+                "end": 329.6999938964844
+            }
+        ],
+        "translationEn": "Thank you, one moment please.",
+        "translationVi": "Cảm ơn, xin vui lòng chờ một chút."
+    },
+    {
+        "text": "Danke, einen Moment bitte.",
+        "start": 331.7399963378906,
+        "end": 335.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Danke,",
+                "start": 331.7399963378906,
+                "end": 332.17999267578125
+            },
+            {
+                "word": "einen",
+                "start": 333.4200134277344,
+                "end": 334.239990234375
+            },
+            {
+                "word": "Moment",
+                "start": 334.239990234375,
+                "end": 334.239990234375
+            },
+            {
+                "word": "bitte.",
+                "start": 335.05999755859375,
+                "end": 335.50001220703126
+            }
+        ],
+        "translationEn": "Thank you, one moment please.",
+        "translationVi": "Cảm ơn, xin vui lòng chờ một chút."
+    },
+    {
+        "text": "Sie bekommen Halstabletten und Fiebersaft.",
+        "start": 337.3400024414062,
+        "end": 339.7200134277344,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 337.3400024414062,
+                "end": 337.5799865722656
+            },
+            {
+                "word": "bekommen",
+                "start": 337.5799865722656,
+                "end": 337.8999938964844
+            },
+            {
+                "word": "Halstabletten",
+                "start": 337.8999938964844,
+                "end": 338.6400146484375
+            },
+            {
+                "word": "und",
+                "start": 338.6400146484375,
+                "end": 338.8599853515625
+            },
+            {
+                "word": "Fiebersaft.",
+                "start": 338.8599853515625,
+                "end": 339.7200134277344
+            }
+        ],
+        "translationEn": "You will receive throat lozenges and fever syrup.",
+        "translationVi": "Bạn sẽ nhận được viên ngậm họng và siro hạ sốt."
+    },
+    {
+        "text": "Sie bekommen Halstabletten und Fiebersaft.",
+        "start": 340.17999877929685,
+        "end": 343.3400085449219,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 340.17999877929685,
+                "end": 341.2200012207031
+            },
+            {
+                "word": "bekommen",
+                "start": 341.2200012207031,
+                "end": 341.4800109863281
+            },
+            {
+                "word": "Halstabletten",
+                "start": 341.4800109863281,
+                "end": 342.260009765625
+            },
+            {
+                "word": "und",
+                "start": 342.260009765625,
+                "end": 342.5
+            },
+            {
+                "word": "Fiebersaft.",
+                "start": 342.5,
+                "end": 343.3400085449219
+            }
+        ],
+        "translationEn": "You will receive throat lozenges and fever syrup.",
+        "translationVi": "Bạn sẽ nhận được viên ngậm họng và siro hạ sốt."
+    },
+    {
+        "text": "Nehmen Sie dreimal täglich eine Tablette",
+        "start": 343.94000854492185,
+        "end": 346.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Nehmen",
+                "start": 343.94000854492185,
+                "end": 344.7799987792969
+            },
+            {
+                "word": "Sie",
+                "start": 344.7799987792969,
+                "end": 344.94000244140625
+            },
+            {
+                "word": "dreimal",
+                "start": 344.94000244140625,
+                "end": 345.3999938964844
+            },
+            {
+                "word": "täglich",
+                "start": 345.3999938964844,
+                "end": 345.79998779296875
+            },
+            {
+                "word": "eine",
+                "start": 345.79998779296875,
+                "end": 346.0400085449219
+            },
+            {
+                "word": "Tablette",
+                "start": 346.0400085449219,
+                "end": 346.6800048828125
+            }
+        ],
+        "translationEn": "Take one tablet three times a day.",
+        "translationVi": "Uống một viên thuốc ba lần mỗi ngày."
+    },
+    {
+        "text": "und zweimal täglich den Saft.",
+        "start": 346.2800048828125,
+        "end": 348.97999267578126,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 346.2800048828125,
+                "end": 346.6199951171875
+            },
+            {
+                "word": "zweimal",
+                "start": 346.6199951171875,
+                "end": 347.0400085449219
+            },
+            {
+                "word": "täglich",
+                "start": 347.0400085449219,
+                "end": 347.3800048828125
+            },
+            {
+                "word": "den",
+                "start": 347.3800048828125,
+                "end": 348.55999755859375
+            },
+            {
+                "word": "Saft.",
+                "start": 348.55999755859375,
+                "end": 348.97999267578126
+            }
+        ],
+        "translationEn": "and the juice twice a day.",
+        "translationVi": "và hai lần mỗi ngày uống nước trái cây."
+    },
+    {
+        "text": "Gibt es Nebenwirkungen?",
+        "start": 356.6999877929687,
+        "end": 358.3,
+        "wordTimings": [
+            {
+                "word": "Gibt",
+                "start": 356.6999877929687,
+                "end": 356.9200134277344
+            },
+            {
+                "word": "es",
+                "start": 356.9200134277344,
+                "end": 357.2200012207031
+            },
+            {
+                "word": "Nebenwirkungen?",
+                "start": 357.2200012207031,
+                "end": 358.3
+            }
+        ],
+        "translationEn": "Are there any side effects?",
+        "translationVi": "Có tác dụng phụ nào không?"
+    },
+    {
+        "text": "Vielleicht werden Sie etwas müde.",
+        "start": 363.2599853515625,
+        "end": 368.560009765625,
+        "wordTimings": [
+            {
+                "word": "Vielleicht",
+                "start": 363.2599853515625,
+                "end": 364.1000061035156
+            },
+            {
+                "word": "werden",
+                "start": 364.1000061035156,
+                "end": 364.32000732421875
+            },
+            {
+                "word": "Sie",
+                "start": 364.32000732421875,
+                "end": 367.6199951171875
+            },
+            {
+                "word": "etwas",
+                "start": 367.6199951171875,
+                "end": 367.94000244140625
+            },
+            {
+                "word": "müde.",
+                "start": 367.94000244140625,
+                "end": 368.560009765625
+            }
+        ],
+        "translationEn": "Maybe you will get a little tired.",
+        "translationVi": "Có thể bạn sẽ cảm thấy hơi mệt."
+    },
+    {
+        "text": "Aber trinken Sie viel Wasser",
+        "start": 369.5000061035156,
+        "end": 371.75999145507814,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 369.5000061035156,
+                "end": 370.32000732421875
+            },
+            {
+                "word": "trinken",
+                "start": 370.32000732421875,
+                "end": 370.6400146484375
+            },
+            {
+                "word": "Sie",
+                "start": 370.6400146484375,
+                "end": 370.8599853515625
+            },
+            {
+                "word": "viel",
+                "start": 370.8599853515625,
+                "end": 371.1000061035156
+            },
+            {
+                "word": "Wasser",
+                "start": 371.1000061035156,
+                "end": 371.75999145507814
+            }
+        ],
+        "translationEn": "But drink plenty of water.",
+        "translationVi": "Nhưng hãy uống nhiều nước."
+    },
+    {
+        "text": "und ruhen Sie sich aus.",
+        "start": 371.3599914550781,
+        "end": 378.560009765625,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 371.3599914550781,
+                "end": 377.2200012207031
+            },
+            {
+                "word": "ruhen",
+                "start": 377.2200012207031,
+                "end": 377.3999938964844
+            },
+            {
+                "word": "Sie",
+                "start": 377.3999938964844,
+                "end": 377.6600036621094
+            },
+            {
+                "word": "sich",
+                "start": 377.6600036621094,
+                "end": 377.8800048828125
+            },
+            {
+                "word": "aus.",
+                "start": 377.8800048828125,
+                "end": 378.560009765625
+            }
+        ],
+        "translationEn": "and rest.",
+        "translationVi": "và nghỉ ngơi."
+    },
+    {
+        "text": "Dankeschön.",
+        "start": 381.0799926757812,
+        "end": 382.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Dankeschön.",
+                "start": 381.0799926757812,
+                "end": 382.1999938964844
+            }
+        ],
+        "translationEn": "Thank you.",
+        "translationVi": "Cảm ơn bạn."
+    },
+    {
+        "text": "Oh je, du siehst krank aus.",
+        "start": 388.3800109863281,
+        "end": 391.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Oh",
+                "start": 388.3800109863281,
+                "end": 389.20001220703125
+            },
+            {
+                "word": "je,",
+                "start": 389.20001220703125,
+                "end": 389.3800048828125
+            },
+            {
+                "word": "du",
+                "start": 389.4800109863281,
+                "end": 389.6400146484375
+            },
+            {
+                "word": "siehst",
+                "start": 389.6400146484375,
+                "end": 389.8999938964844
+            },
+            {
+                "word": "krank",
+                "start": 389.8999938964844,
+                "end": 390.3599853515625
+            },
+            {
+                "word": "aus.",
+                "start": 390.3599853515625,
+                "end": 391.0799987792969
+            }
+        ],
+        "translationEn": "Oh dear, you look sick.",
+        "translationVi": "Ôi không, bạn trông có vẻ ốm."
+    },
+    {
+        "text": "Alles in Ordnung?",
+        "start": 391.0400146484375,
+        "end": 392.35999755859376,
+        "wordTimings": [
+            {
+                "word": "Alles",
+                "start": 391.0400146484375,
+                "end": 391.3599853515625
+            },
+            {
+                "word": "in",
+                "start": 391.3599853515625,
+                "end": 392.0400085449219
+            },
+            {
+                "word": "Ordnung?",
+                "start": 392.0400085449219,
+                "end": 392.35999755859376
+            }
+        ],
+        "translationEn": "Everything okay?",
+        "translationVi": "Mọi thứ ổn chứ?"
+    },
+    {
+        "text": "Ich war beim Arzt.",
+        "start": 397.9599975585937,
+        "end": 403.3400085449219,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 397.9599975585937,
+                "end": 398.8999938964844
+            },
+            {
+                "word": "war",
+                "start": 398.8999938964844,
+                "end": 399.0799865722656
+            },
+            {
+                "word": "beim",
+                "start": 399.0799865722656,
+                "end": 399.3599853515625
+            },
+            {
+                "word": "Arzt.",
+                "start": 399.3599853515625,
+                "end": 403.3400085449219
+            }
+        ],
+        "translationEn": "I was at the doctor.",
+        "translationVi": "Tôi đã đi khám bác sĩ."
+    },
+    {
+        "text": "Ich habe eine Halsentzündung",
+        "start": 404.56000366210935,
+        "end": 406.560009765625,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 404.56000366210935,
+                "end": 404.760009765625
+            },
+            {
+                "word": "habe",
+                "start": 404.760009765625,
+                "end": 405.0199890136719
+            },
+            {
+                "word": "eine",
+                "start": 405.0199890136719,
+                "end": 405.4599914550781
+            },
+            {
+                "word": "Halsentzündung",
+                "start": 405.4599914550781,
+                "end": 406.560009765625
+            }
+        ],
+        "translationEn": "I have a throat infection.",
+        "translationVi": "Tôi bị viêm họng."
+    },
+    {
+        "text": "und muss zwei Tage zu Hause bleiben.",
+        "start": 406.160009765625,
+        "end": 414.3400085449219,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 406.160009765625,
+                "end": 412.1600036621094
+            },
+            {
+                "word": "muss",
+                "start": 412.1600036621094,
+                "end": 412.3399963378906
+            },
+            {
+                "word": "zwei",
+                "start": 412.3399963378906,
+                "end": 412.6600036621094
+            },
+            {
+                "word": "Tage",
+                "start": 412.6600036621094,
+                "end": 412.9200134277344
+            },
+            {
+                "word": "zu",
+                "start": 412.9200134277344,
+                "end": 413.6400146484375
+            },
+            {
+                "word": "Hause",
+                "start": 413.6400146484375,
+                "end": 413.6400146484375
+            },
+            {
+                "word": "bleiben.",
+                "start": 413.6400146484375,
+                "end": 414.3400085449219
+            }
+        ],
+        "translationEn": "and has to stay at home for two days.",
+        "translationVi": "và phải ở nhà trong hai ngày."
+    },
+    {
+        "text": "Oh nein, kann ich dir helfen?",
+        "start": 415.2399963378906,
+        "end": 421.25999145507814,
+        "wordTimings": [
+            {
+                "word": "Oh",
+                "start": 415.2399963378906,
+                "end": 416.0199890136719
+            },
+            {
+                "word": "nein,",
+                "start": 416.0199890136719,
+                "end": 416.3599853515625
+            },
+            {
+                "word": "kann",
+                "start": 419.70001220703125,
+                "end": 420.2200012207031
+            },
+            {
+                "word": "ich",
+                "start": 420.2200012207031,
+                "end": 420.3800048828125
+            },
+            {
+                "word": "dir",
+                "start": 420.3800048828125,
+                "end": 420.6600036621094
+            },
+            {
+                "word": "helfen?",
+                "start": 420.6600036621094,
+                "end": 421.25999145507814
+            }
+        ],
+        "translationEn": "Oh no, can I help you?",
+        "translationVi": "Ôi không, tôi có thể giúp bạn không?"
+    },
+    {
+        "text": "Danke, ich soll viel trinken.",
+        "start": 422.0000061035156,
+        "end": 427.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Danke,",
+                "start": 422.0000061035156,
+                "end": 422.4800109863281
+            },
+            {
+                "word": "ich",
+                "start": 426.0799865722656,
+                "end": 426.2200012207031
+            },
+            {
+                "word": "soll",
+                "start": 426.2200012207031,
+                "end": 426.44000244140625
+            },
+            {
+                "word": "viel",
+                "start": 426.44000244140625,
+                "end": 426.7200012207031
+            },
+            {
+                "word": "trinken.",
+                "start": 426.7200012207031,
+                "end": 427.50001220703126
+            }
+        ],
+        "translationEn": "Thank you, I should drink a lot.",
+        "translationVi": "Cảm ơn, tôi nên uống nhiều nước."
+    },
+    {
+        "text": "Vielleicht kannst du mir einen Tee machen.",
+        "start": 428.91998901367185,
+        "end": 434.78001098632814,
+        "wordTimings": [
+            {
+                "word": "Vielleicht",
+                "start": 428.91998901367185,
+                "end": 429.20001220703125
+            },
+            {
+                "word": "kannst",
+                "start": 429.20001220703125,
+                "end": 429.4599914550781
+            },
+            {
+                "word": "du",
+                "start": 429.4599914550781,
+                "end": 429.70001220703125
+            },
+            {
+                "word": "mir",
+                "start": 429.70001220703125,
+                "end": 433.6400146484375
+            },
+            {
+                "word": "einen",
+                "start": 433.6400146484375,
+                "end": 434
+            },
+            {
+                "word": "Tee",
+                "start": 434,
+                "end": 434.29998779296875
+            },
+            {
+                "word": "machen.",
+                "start": 434.29998779296875,
+                "end": 434.78001098632814
+            }
+        ],
+        "translationEn": "Maybe you can make me a tea.",
+        "translationVi": "Có thể bạn làm cho tôi một tách trà không?"
+    },
+    {
+        "text": "Natürlich, ich mache dir Kamillentee.",
+        "start": 436.7399963378906,
+        "end": 445.00001220703126,
+        "wordTimings": [
+            {
+                "word": "Natürlich,",
+                "start": 436.7399963378906,
+                "end": 437.760009765625
+            },
+            {
+                "word": "ich",
+                "start": 442.8999938964844,
+                "end": 443.3399963378906
+            },
+            {
+                "word": "mache",
+                "start": 443.3399963378906,
+                "end": 443.55999755859375
+            },
+            {
+                "word": "dir",
+                "start": 443.55999755859375,
+                "end": 443.8599853515625
+            },
+            {
+                "word": "Kamillentee.",
+                "start": 443.8599853515625,
+                "end": 445.00001220703126
+            }
+        ],
+        "translationEn": "Of course, I'll make you chamomile tea.",
+        "translationVi": "Tất nhiên, tôi sẽ pha trà hoa cúc cho bạn."
+    },
+    {
+        "text": "Und ich bringe dir auch eine Decke.",
+        "start": 445.94000854492185,
+        "end": 451.09998779296876,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 445.94000854492185,
+                "end": 446.6000061035156
+            },
+            {
+                "word": "ich",
+                "start": 446.6000061035156,
+                "end": 446.8800048828125
+            },
+            {
+                "word": "bringe",
+                "start": 446.8800048828125,
+                "end": 447.0799865722656
+            },
+            {
+                "word": "dir",
+                "start": 447.0799865722656,
+                "end": 447.2200012207031
+            },
+            {
+                "word": "auch",
+                "start": 447.2200012207031,
+                "end": 450.239990234375
+            },
+            {
+                "word": "eine",
+                "start": 450.239990234375,
+                "end": 450.5799865722656
+            },
+            {
+                "word": "Decke.",
+                "start": 450.5799865722656,
+                "end": 451.09998779296876
+            }
+        ],
+        "translationEn": "And I will also bring you a blanket.",
+        "translationVi": "Và tôi cũng mang cho bạn một cái chăn."
+    },
+    {
+        "text": "Du brauchst Ruhe.",
+        "start": 451.8800109863281,
+        "end": 453.74000244140626,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 451.8800109863281,
+                "end": 452.44000244140625
+            },
+            {
+                "word": "brauchst",
+                "start": 452.44000244140625,
+                "end": 453.32000732421875
+            },
+            {
+                "word": "Ruhe.",
+                "start": 453.32000732421875,
+                "end": 453.74000244140626
+            }
+        ],
+        "translationEn": "You need peace.",
+        "translationVi": "Bạn cần sự yên tĩnh."
+    },
+    {
+        "text": "Danke, Klara.",
+        "start": 457.5199951171875,
+        "end": 459.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Danke,",
+                "start": 457.5199951171875,
+                "end": 459.0199890136719
+            },
+            {
+                "word": "Klara.",
+                "start": 459.6600036621094,
+                "end": 459.9600036621094
+            }
+        ],
+        "translationEn": "Thank you, Klara.",
+        "translationVi": "Cảm ơn, Klara."
+    },
+    {
+        "text": "Du bist die Beste.",
+        "start": 462.660009765625,
+        "end": 465.28001098632814,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 462.660009765625,
+                "end": 464.1600036621094
+            },
+            {
+                "word": "bist",
+                "start": 464.1600036621094,
+                "end": 464.3399963378906
+            },
+            {
+                "word": "die",
+                "start": 464.3399963378906,
+                "end": 464.9200134277344
+            },
+            {
+                "word": "Beste.",
+                "start": 464.9200134277344,
+                "end": 465.28001098632814
+            }
+        ],
+        "translationEn": "You are the best.",
+        "translationVi": "Bạn là người tuyệt vời nhất."
+    },
+    {
+        "text": "Geht es dir ein bisschen besser?",
+        "start": 468.7399963378906,
+        "end": 474.97999267578126,
+        "wordTimings": [
+            {
+                "word": "Geht",
+                "start": 468.7399963378906,
+                "end": 470.239990234375
+            },
+            {
+                "word": "es",
+                "start": 470.239990234375,
+                "end": 470.4200134277344
+            },
+            {
+                "word": "dir",
+                "start": 470.4200134277344,
+                "end": 470.5199890136719
+            },
+            {
+                "word": "ein",
+                "start": 470.5199890136719,
+                "end": 474.0799865722656
+            },
+            {
+                "word": "bisschen",
+                "start": 474.0799865722656,
+                "end": 474.2799987792969
+            },
+            {
+                "word": "besser?",
+                "start": 474.2799987792969,
+                "end": 474.97999267578126
+            }
+        ],
+        "translationEn": "Are you feeling a little better?",
+        "translationVi": "Bạn có cảm thấy tốt hơn một chút không?"
+    },
+    {
+        "text": "Ja, ein bisschen.",
+        "start": 475.5199951171875,
+        "end": 478.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 475.5199951171875,
+                "end": 476.67999267578125
+            },
+            {
+                "word": "ein",
+                "start": 476.8999938964844,
+                "end": 477.0799865722656
+            },
+            {
+                "word": "bisschen.",
+                "start": 477.0799865722656,
+                "end": 478.0799987792969
+            }
+        ],
+        "translationEn": "Yes, a little.",
+        "translationVi": "Vâng, một chút."
+    },
+    {
+        "text": "Der Tee hilft",
+        "start": 483.5799926757812,
+        "end": 486.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 483.5799926757812,
+                "end": 484.7200012207031
+            },
+            {
+                "word": "Tee",
+                "start": 484.7200012207031,
+                "end": 485.760009765625
+            },
+            {
+                "word": "hilft",
+                "start": 485.760009765625,
+                "end": 486.0799987792969
+            }
+        ],
+        "translationEn": "The tea helps.",
+        "translationVi": "Trà giúp đỡ."
+    },
+    {
+        "text": "und ich habe gerade die erste Tablette genommen.",
+        "start": 485.67999877929685,
+        "end": 494.35999755859376,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 485.67999877929685,
+                "end": 487.20001220703125
+            },
+            {
+                "word": "ich",
+                "start": 487.20001220703125,
+                "end": 487.4200134277344
+            },
+            {
+                "word": "habe",
+                "start": 487.4200134277344,
+                "end": 487.5799865722656
+            },
+            {
+                "word": "gerade",
+                "start": 487.5799865722656,
+                "end": 488.1000061035156
+            },
+            {
+                "word": "die",
+                "start": 488.1000061035156,
+                "end": 492.7200012207031
+            },
+            {
+                "word": "erste",
+                "start": 492.7200012207031,
+                "end": 493.0199890136719
+            },
+            {
+                "word": "Tablette",
+                "start": 493.0199890136719,
+                "end": 493.5400085449219
+            },
+            {
+                "word": "genommen.",
+                "start": 493.5400085449219,
+                "end": 494.35999755859376
+            }
+        ],
+        "translationEn": "and I just took the first tablet.",
+        "translationVi": "và tôi vừa mới uống viên thuốc đầu tiên."
+    },
+    {
+        "text": "Gut, morgen bleibst du im Bett, okay?",
+        "start": 496.0000061035156,
+        "end": 502.4999938964844,
+        "wordTimings": [
+            {
+                "word": "Gut,",
+                "start": 496.0000061035156,
+                "end": 496.4800109863281
+            },
+            {
+                "word": "morgen",
+                "start": 497.3599853515625,
+                "end": 497.3599853515625
+            },
+            {
+                "word": "bleibst",
+                "start": 497.3599853515625,
+                "end": 497.739990234375
+            },
+            {
+                "word": "du",
+                "start": 497.739990234375,
+                "end": 497.8999938964844
+            },
+            {
+                "word": "im",
+                "start": 497.8999938964844,
+                "end": 501.8999938964844
+            },
+            {
+                "word": "Bett,",
+                "start": 501.8999938964844,
+                "end": 501.8999938964844
+            },
+            {
+                "word": "okay?",
+                "start": 501.8999938964844,
+                "end": 502.4999938964844,
+                "estimated": true
+            }
+        ],
+        "translationEn": "Alright, tomorrow you stay in bed, okay?",
+        "translationVi": "Được rồi, mai bạn ở trên giường nhé, được không?"
+    },
+    {
+        "text": "Ja, ich muss mich ausruhen.",
+        "start": 506.5400146484375,
+        "end": 509.13999633789064,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 506.5400146484375,
+                "end": 507.239990234375
+            },
+            {
+                "word": "ich",
+                "start": 507.239990234375,
+                "end": 507.8399963378906
+            },
+            {
+                "word": "muss",
+                "start": 507.8399963378906,
+                "end": 508.0199890136719
+            },
+            {
+                "word": "mich",
+                "start": 508.0199890136719,
+                "end": 508.2799987792969
+            },
+            {
+                "word": "ausruhen.",
+                "start": 508.2799987792969,
+                "end": 509.13999633789064
+            }
+        ],
+        "translationEn": "Yes, I need to rest.",
+        "translationVi": "Vâng, tôi cần nghỉ ngơi."
+    },
+    {
+        "text": "Der Arzt hat gesagt, ich soll viel schlafen.",
+        "start": 509.94000854492185,
+        "end": 516.519970703125,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 509.94000854492185,
+                "end": 510.260009765625
+            },
+            {
+                "word": "Arzt",
+                "start": 510.260009765625,
+                "end": 510.6000061035156
+            },
+            {
+                "word": "hat",
+                "start": 510.6000061035156,
+                "end": 514.5800170898438
+            },
+            {
+                "word": "gesagt,",
+                "start": 514.5800170898438,
+                "end": 515
+            },
+            {
+                "word": "ich",
+                "start": 515,
+                "end": 515.219970703125
+            },
+            {
+                "word": "soll",
+                "start": 515.219970703125,
+                "end": 515.4000244140625
+            },
+            {
+                "word": "viel",
+                "start": 515.4000244140625,
+                "end": 515.760009765625
+            },
+            {
+                "word": "schlafen.",
+                "start": 515.760009765625,
+                "end": 516.519970703125
+            }
+        ],
+        "translationEn": "The doctor said I should sleep a lot.",
+        "translationVi": "Bác sĩ đã nói, tôi nên ngủ nhiều."
+    },
+    {
+        "text": "Wenn du willst, lese ich dir ein Kapitel aus dem Buch vor.",
+        "start": 518.139990234375,
+        "end": 526.9400146484375,
+        "wordTimings": [
+            {
+                "word": "Wenn",
+                "start": 518.139990234375,
+                "end": 518.8400268554688
+            },
+            {
+                "word": "du",
+                "start": 518.8400268554688,
+                "end": 519.0399780273438
+            },
+            {
+                "word": "willst,",
+                "start": 519.0399780273438,
+                "end": 519.3200073242188
+            },
+            {
+                "word": "lese",
+                "start": 519.5399780273438,
+                "end": 519.5599975585938
+            },
+            {
+                "word": "ich",
+                "start": 519.5599975585938,
+                "end": 519.780029296875
+            },
+            {
+                "word": "dir",
+                "start": 519.780029296875,
+                "end": 519.9000244140625
+            },
+            {
+                "word": "ein",
+                "start": 519.9000244140625,
+                "end": 520.0599975585938
+            },
+            {
+                "word": "Kapitel",
+                "start": 520.0599975585938,
+                "end": 520.5800170898438
+            },
+            {
+                "word": "aus",
+                "start": 520.5800170898438,
+                "end": 520.8800048828125
+            },
+            {
+                "word": "dem",
+                "start": 520.8800048828125,
+                "end": 526.1799926757812
+            },
+            {
+                "word": "Buch",
+                "start": 526.1799926757812,
+                "end": 526.3400268554688
+            },
+            {
+                "word": "vor.",
+                "start": 526.3400268554688,
+                "end": 526.9400146484375
+            }
+        ],
+        "translationEn": "If you want, I can read you a chapter from the book.",
+        "translationVi": "Nếu bạn muốn, tôi sẽ đọc cho bạn một chương từ cuốn sách."
+    },
+    {
+        "text": "Das wäre schön, danke.",
+        "start": 528.0799926757812,
+        "end": 535.5000122070312,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 528.0799926757812,
+                "end": 528.97998046875
+            },
+            {
+                "word": "wäre",
+                "start": 528.97998046875,
+                "end": 529.3800048828125
+            },
+            {
+                "word": "schön,",
+                "start": 529.3800048828125,
+                "end": 529.9400024414062
+            },
+            {
+                "word": "danke.",
+                "start": 534.1599731445312,
+                "end": 535.5000122070312
+            }
+        ],
+        "translationEn": "That would be nice, thank you.",
+        "translationVi": "Điều đó thật tuyệt, cảm ơn bạn."
+    },
+    {
+        "text": "Diese zwei Modalverben sind sehr wichtig.",
+        "start": 544.1999877929687,
+        "end": 552.4599731445312,
+        "wordTimings": [
+            {
+                "word": "Diese",
+                "start": 544.1999877929687,
+                "end": 545.0999755859375
+            },
+            {
+                "word": "zwei",
+                "start": 545.0999755859375,
+                "end": 545.5
+            },
+            {
+                "word": "Modalverben",
+                "start": 545.5,
+                "end": 546.239990234375
+            },
+            {
+                "word": "sind",
+                "start": 546.239990234375,
+                "end": 546.47998046875
+            },
+            {
+                "word": "sehr",
+                "start": 546.47998046875,
+                "end": 551.8400268554688
+            },
+            {
+                "word": "wichtig.",
+                "start": 551.8400268554688,
+                "end": 552.4599731445312
+            }
+        ],
+        "translationEn": "These two modal verbs are very important.",
+        "translationVi": "Hai động từ khiếm khuyết này rất quan trọng."
+    },
+    {
+        "text": "Wenn du krank bist, müssen beschreibt eine Notwendigkeit.",
+        "start": 552.119970703125,
+        "end": 557.8399780273437,
+        "wordTimings": [
+            {
+                "word": "Wenn",
+                "start": 552.119970703125,
+                "end": 552.2999877929688
+            },
+            {
+                "word": "du",
+                "start": 552.2999877929688,
+                "end": 552.52001953125
+            },
+            {
+                "word": "krank",
+                "start": 552.52001953125,
+                "end": 552.719970703125
+            },
+            {
+                "word": "bist,",
+                "start": 552.719970703125,
+                "end": 553
+            },
+            {
+                "word": "müssen",
+                "start": 554.8599853515625,
+                "end": 555.5800170898438
+            },
+            {
+                "word": "beschreibt",
+                "start": 555.5800170898438,
+                "end": 556.2999877929688
+            },
+            {
+                "word": "eine",
+                "start": 556.2999877929688,
+                "end": 556.5800170898438
+            },
+            {
+                "word": "Notwendigkeit.",
+                "start": 556.5800170898438,
+                "end": 557.8399780273437
+            }
+        ],
+        "translationEn": "When you are sick, \"müssen\" describes a necessity.",
+        "translationVi": "Khi bạn bị ốm, phải mô tả một sự cần thiết."
+    },
+    {
+        "text": "Eine Handlung ist nötig oder obligatorisch.",
+        "start": 558.4399780273437,
+        "end": 561.3,
+        "wordTimings": [
+            {
+                "word": "Eine",
+                "start": 558.4399780273437,
+                "end": 558.5399780273438
+            },
+            {
+                "word": "Handlung",
+                "start": 558.5399780273438,
+                "end": 558.8800048828125
+            },
+            {
+                "word": "ist",
+                "start": 558.8800048828125,
+                "end": 559.1400146484375
+            },
+            {
+                "word": "nötig",
+                "start": 559.1400146484375,
+                "end": 559.5999755859375
+            },
+            {
+                "word": "oder",
+                "start": 559.5999755859375,
+                "end": 559.7999877929688
+            },
+            {
+                "word": "obligatorisch.",
+                "start": 559.7999877929688,
+                "end": 561.3
+            }
+        ],
+        "translationEn": "An action is necessary or obligatory.",
+        "translationVi": "Một hành động là cần thiết hoặc bắt buộc."
+    },
+    {
+        "text": "Ich muss zum Arzt gehen.",
+        "start": 568.5799926757812,
+        "end": 573.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 568.5799926757812,
+                "end": 569.4000244140625
+            },
+            {
+                "word": "muss",
+                "start": 569.4000244140625,
+                "end": 569.5999755859375
+            },
+            {
+                "word": "zum",
+                "start": 569.5999755859375,
+                "end": 572.719970703125
+            },
+            {
+                "word": "Arzt",
+                "start": 572.719970703125,
+                "end": 573.0800170898438
+            },
+            {
+                "word": "gehen.",
+                "start": 573.0800170898438,
+                "end": 573.6800048828125
+            }
+        ],
+        "translationEn": "I have to go to the doctor.",
+        "translationVi": "Tôi phải đi khám bác sĩ."
+    },
+    {
+        "text": "Ich muss mich beim Chef krank melden,",
+        "start": 574.8000244140625,
+        "end": 576.9599731445312,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 574.8000244140625,
+                "end": 575.02001953125
+            },
+            {
+                "word": "muss",
+                "start": 575.02001953125,
+                "end": 575.2000122070312
+            },
+            {
+                "word": "mich",
+                "start": 575.2000122070312,
+                "end": 575.3800048828125
+            },
+            {
+                "word": "beim",
+                "start": 575.3800048828125,
+                "end": 575.5800170898438
+            },
+            {
+                "word": "Chef",
+                "start": 575.5800170898438,
+                "end": 575.9600219726562
+            },
+            {
+                "word": "krank",
+                "start": 575.9600219726562,
+                "end": 576.3200073242188
+            },
+            {
+                "word": "melden,",
+                "start": 576.3200073242188,
+                "end": 576.9599731445312
+            }
+        ],
+        "translationEn": "I have to call in sick to my boss.",
+        "translationVi": "Tôi phải báo ốm với sếp."
+    },
+    {
+        "text": "wenn ich nicht arbeiten kann.",
+        "start": 576.7800048828125,
+        "end": 578.5999877929687,
+        "wordTimings": [
+            {
+                "word": "wenn",
+                "start": 576.7800048828125,
+                "end": 576.9199829101562
+            },
+            {
+                "word": "ich",
+                "start": 576.9199829101562,
+                "end": 577.0800170898438
+            },
+            {
+                "word": "nicht",
+                "start": 577.0800170898438,
+                "end": 577.3200073242188
+            },
+            {
+                "word": "arbeiten",
+                "start": 577.3200073242188,
+                "end": 577.7999877929688
+            },
+            {
+                "word": "kann.",
+                "start": 577.7999877929688,
+                "end": 578.5999877929687
+            }
+        ],
+        "translationEn": "when I cannot work.",
+        "translationVi": "khi tôi không thể làm việc."
+    },
+    {
+        "text": "Sollen hat eine sehr ähnliche Bedeutung,",
+        "start": 584.680029296875,
+        "end": 588.5000122070312,
+        "wordTimings": [
+            {
+                "word": "Sollen",
+                "start": 584.680029296875,
+                "end": 585.5
+            },
+            {
+                "word": "hat",
+                "start": 585.5,
+                "end": 586.219970703125
+            },
+            {
+                "word": "eine",
+                "start": 586.219970703125,
+                "end": 586.6799926757812
+            },
+            {
+                "word": "sehr",
+                "start": 586.6799926757812,
+                "end": 587.280029296875
+            },
+            {
+                "word": "ähnliche",
+                "start": 587.280029296875,
+                "end": 587.47998046875
+            },
+            {
+                "word": "Bedeutung,",
+                "start": 587.47998046875,
+                "end": 588.5000122070312
+            }
+        ],
+        "translationEn": "\"Should\" has a very similar meaning,",
+        "translationVi": "\"Sollen\" có nghĩa rất giống nhau,"
+    },
+    {
+        "text": "aber verbunden mit einer Aufforderung.",
+        "start": 599.2599853515625,
+        "end": 601.9199951171875,
+        "wordTimings": [
+            {
+                "word": "aber",
+                "start": 599.2599853515625,
+                "end": 599.3800048828125
+            },
+            {
+                "word": "verbunden",
+                "start": 599.3800048828125,
+                "end": 599.8400268554688
+            },
+            {
+                "word": "mit",
+                "start": 599.8400268554688,
+                "end": 600.0999755859375
+            },
+            {
+                "word": "einer",
+                "start": 600.0999755859375,
+                "end": 600.52001953125
+            },
+            {
+                "word": "Aufforderung.",
+                "start": 600.52001953125,
+                "end": 601.9199951171875
+            }
+        ],
+        "translationEn": "but connected with a request.",
+        "translationVi": "nhưng gắn liền với một lời kêu gọi."
+    },
+    {
+        "text": "Eine andere Person sagt mir, was zu tun ist.",
+        "start": 601.9399780273437,
+        "end": 604.82001953125,
+        "wordTimings": [
+            {
+                "word": "Eine",
+                "start": 601.9399780273437,
+                "end": 602.0399780273438
+            },
+            {
+                "word": "andere",
+                "start": 602.0399780273438,
+                "end": 602.4000244140625
+            },
+            {
+                "word": "Person",
+                "start": 602.4000244140625,
+                "end": 602.8400268554688
+            },
+            {
+                "word": "sagt",
+                "start": 602.8400268554688,
+                "end": 603.1599731445312
+            },
+            {
+                "word": "mir,",
+                "start": 603.1599731445312,
+                "end": 603.4000244140625
+            },
+            {
+                "word": "was",
+                "start": 603.4600219726562,
+                "end": 603.6199951171875
+            },
+            {
+                "word": "zu",
+                "start": 603.6199951171875,
+                "end": 604.0599975585938
+            },
+            {
+                "word": "tun",
+                "start": 604.0599975585938,
+                "end": 604.0599975585938
+            },
+            {
+                "word": "ist.",
+                "start": 604.0599975585938,
+                "end": 604.82001953125
+            }
+        ],
+        "translationEn": "Another person tells me what to do.",
+        "translationVi": "Một người khác nói cho tôi biết phải làm gì."
+    },
+    {
+        "text": "Der Arzt hat gesagt, ich soll viel Wasser trinken.",
+        "start": 605.5799926757812,
+        "end": 608.580029296875,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 605.5799926757812,
+                "end": 605.8200073242188
+            },
+            {
+                "word": "Arzt",
+                "start": 605.8200073242188,
+                "end": 606.1799926757812
+            },
+            {
+                "word": "hat",
+                "start": 606.1799926757812,
+                "end": 606.4600219726562
+            },
+            {
+                "word": "gesagt,",
+                "start": 606.4600219726562,
+                "end": 606.8800048828125
+            },
+            {
+                "word": "ich",
+                "start": 607.2000122070312,
+                "end": 607.4400024414062
+            },
+            {
+                "word": "soll",
+                "start": 607.4400024414062,
+                "end": 607.6400146484375
+            },
+            {
+                "word": "viel",
+                "start": 607.6400146484375,
+                "end": 607.9000244140625
+            },
+            {
+                "word": "Wasser",
+                "start": 607.9000244140625,
+                "end": 608.239990234375
+            },
+            {
+                "word": "trinken.",
+                "start": 608.239990234375,
+                "end": 608.580029296875
+            }
+        ],
+        "translationEn": "The doctor said I should drink plenty of water.",
+        "translationVi": "Bác sĩ đã nói, tôi nên uống nhiều nước."
+    },
+    {
+        "text": "Der Arzt hat gesagt, ich soll viel Wasser trinken.",
+        "start": 609.2800048828125,
+        "end": 613.3800170898437,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 609.2800048828125,
+                "end": 610.1400146484375
+            },
+            {
+                "word": "Arzt",
+                "start": 610.1400146484375,
+                "end": 610.5599975585938
+            },
+            {
+                "word": "hat",
+                "start": 610.5599975585938,
+                "end": 610.760009765625
+            },
+            {
+                "word": "gesagt,",
+                "start": 610.760009765625,
+                "end": 611.280029296875
+            },
+            {
+                "word": "ich",
+                "start": 611.3599853515625,
+                "end": 611.8200073242188
+            },
+            {
+                "word": "soll",
+                "start": 611.8200073242188,
+                "end": 612
+            },
+            {
+                "word": "viel",
+                "start": 612,
+                "end": 612.2999877929688
+            },
+            {
+                "word": "Wasser",
+                "start": 612.2999877929688,
+                "end": 612.6199951171875
+            },
+            {
+                "word": "trinken.",
+                "start": 612.6199951171875,
+                "end": 613.3800170898437
+            }
+        ],
+        "translationEn": "The doctor said I should drink plenty of water.",
+        "translationVi": "Bác sĩ đã nói, tôi nên uống nhiều nước."
+    },
+    {
+        "text": "Ich soll auch Medikamente nehmen",
+        "start": 614.4800170898437,
+        "end": 616.2600219726562,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 614.4800170898437,
+                "end": 614.6799926757812
+            },
+            {
+                "word": "soll",
+                "start": 614.6799926757812,
+                "end": 614.8599853515625
+            },
+            {
+                "word": "auch",
+                "start": 614.8599853515625,
+                "end": 615.1799926757812
+            },
+            {
+                "word": "Medikamente",
+                "start": 615.1799926757812,
+                "end": 615.6799926757812
+            },
+            {
+                "word": "nehmen",
+                "start": 615.6799926757812,
+                "end": 616.2600219726562
+            }
+        ],
+        "translationEn": "I should also take medication.",
+        "translationVi": "Tôi cũng phải uống thuốc."
+    },
+    {
+        "text": "und ich soll mich ausruhen.",
+        "start": 615.8600219726562,
+        "end": 621.7400024414062,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 615.8600219726562,
+                "end": 616.2999877929688
+            },
+            {
+                "word": "ich",
+                "start": 616.2999877929688,
+                "end": 620.6599731445312
+            },
+            {
+                "word": "soll",
+                "start": 620.6599731445312,
+                "end": 620.6599731445312
+            },
+            {
+                "word": "mich",
+                "start": 620.6599731445312,
+                "end": 620.8400268554688
+            },
+            {
+                "word": "ausruhen.",
+                "start": 620.8400268554688,
+                "end": 621.7400024414062
+            }
+        ],
+        "translationEn": "and I should rest.",
+        "translationVi": "và tôi nên nghỉ ngơi."
+    },
+    {
+        "text": "Konjugation von müssen:",
+        "start": 623.119970703125,
+        "end": 625.1800048828125,
+        "wordTimings": [
+            {
+                "word": "Konjugation",
+                "start": 623.119970703125,
+                "end": 623.97998046875
+            },
+            {
+                "word": "von",
+                "start": 623.97998046875,
+                "end": 624.2999877929688
+            },
+            {
+                "word": "müssen:",
+                "start": 624.2999877929688,
+                "end": 625.1800048828125
+            }
+        ],
+        "translationEn": "Conjugation of \"müssen\":",
+        "translationVi": "Sự chia động từ \"müssen\":"
+    },
+    {
+        "text": "Ich muss.",
+        "start": 626.92001953125,
+        "end": 629.2400024414062,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 626.92001953125,
+                "end": 628.4199829101562
+            },
+            {
+                "word": "muss.",
+                "start": 628.4199829101562,
+                "end": 629.2400024414062
+            }
+        ],
+        "translationEn": "I have to.",
+        "translationVi": "Tôi phải."
+    },
+    {
+        "text": "Du musst.",
+        "start": 633.7200073242187,
+        "end": 636.9199951171875,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 633.7200073242187,
+                "end": 635.219970703125
+            },
+            {
+                "word": "musst.",
+                "start": 635.219970703125,
+                "end": 636.9199951171875
+            }
+        ],
+        "translationEn": "You must.",
+        "translationVi": "Bạn phải."
+    },
+    {
+        "text": "Er, sie, es muss.",
+        "start": 637.7800048828125,
+        "end": 642.8800170898437,
+        "wordTimings": [
+            {
+                "word": "Er,",
+                "start": 637.7800048828125,
+                "end": 638.6799926757812
+            },
+            {
+                "word": "sie,",
+                "start": 639.1400146484375,
+                "end": 639.1400146484375
+            },
+            {
+                "word": "es",
+                "start": 642.02001953125,
+                "end": 642.02001953125
+            },
+            {
+                "word": "muss.",
+                "start": 642.02001953125,
+                "end": 642.8800170898437
+            }
+        ],
+        "translationEn": "He, she, it must.",
+        "translationVi": "Nó phải."
+    },
+    {
+        "text": "Wir müssen.",
+        "start": 643.87998046875,
+        "end": 647.080029296875,
+        "wordTimings": [
+            {
+                "word": "Wir",
+                "start": 643.87998046875,
+                "end": 645.3800048828125
+            },
+            {
+                "word": "müssen.",
+                "start": 645.3800048828125,
+                "end": 647.080029296875
+            }
+        ],
+        "translationEn": "We have to.",
+        "translationVi": "Chúng ta phải."
+    },
+    {
+        "text": "Ihr müsst.",
+        "start": 649.8600219726562,
+        "end": 651.8999755859375,
+        "wordTimings": [
+            {
+                "word": "Ihr",
+                "start": 649.8600219726562,
+                "end": 651.3599853515625
+            },
+            {
+                "word": "müsst.",
+                "start": 651.3599853515625,
+                "end": 651.8999755859375
+            }
+        ],
+        "translationEn": "You must.",
+        "translationVi": "Các bạn phải."
+    },
+    {
+        "text": "Sie, sie müssen.",
+        "start": 653.0799926757812,
+        "end": 659.8800170898437,
+        "wordTimings": [
+            {
+                "word": "Sie,",
+                "start": 653.0799926757812,
+                "end": 654.5800170898438
+            },
+            {
+                "word": "sie",
+                "start": 658.239990234375,
+                "end": 658.6199951171875
+            },
+            {
+                "word": "müssen.",
+                "start": 658.6199951171875,
+                "end": 659.8800170898437
+            }
+        ],
+        "translationEn": "You, you must.",
+        "translationVi": "Họ, họ phải."
+    },
+    {
+        "text": "Konjugation von sollen:",
+        "start": 661.2400268554687,
+        "end": 664.019970703125,
+        "wordTimings": [
+            {
+                "word": "Konjugation",
+                "start": 661.2400268554687,
+                "end": 662.739990234375
+            },
+            {
+                "word": "von",
+                "start": 662.739990234375,
+                "end": 663.1599731445312
+            },
+            {
+                "word": "sollen:",
+                "start": 663.1599731445312,
+                "end": 664.019970703125
+            }
+        ],
+        "translationEn": "Conjugation of \"sollen\":",
+        "translationVi": "Sự chia động từ \"sollen\":"
+    },
+    {
+        "text": "Ich soll.",
+        "start": 665.0599731445312,
+        "end": 667.8800170898437,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 665.0599731445312,
+                "end": 666.5599975585938
+            },
+            {
+                "word": "soll.",
+                "start": 666.5599975585938,
+                "end": 667.8800170898437
+            }
+        ],
+        "translationEn": "I should.",
+        "translationVi": "Tôi phải."
+    },
+    {
+        "text": "Du sollst.",
+        "start": 671.6999877929687,
+        "end": 674.8999755859375,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 671.6999877929687,
+                "end": 673.2000122070312
+            },
+            {
+                "word": "sollst.",
+                "start": 673.2000122070312,
+                "end": 674.8999755859375
+            }
+        ],
+        "translationEn": "You should.",
+        "translationVi": "Bạn nên."
+    },
+    {
+        "text": "Er, sie, es soll.",
+        "start": 677.4399780273437,
+        "end": 679.9199951171875,
+        "wordTimings": [
+            {
+                "word": "Er,",
+                "start": 677.4399780273437,
+                "end": 678.9400024414062
+            },
+            {
+                "word": "sie,",
+                "start": 679.2000122070312,
+                "end": 679.2000122070312
+            },
+            {
+                "word": "es",
+                "start": 679.3599853515625,
+                "end": 679.3599853515625
+            },
+            {
+                "word": "soll.",
+                "start": 679.3599853515625,
+                "end": 679.9199951171875
+            }
+        ],
+        "translationEn": "He, she, it should.",
+        "translationVi": "Nó nên."
+    },
+    {
+        "text": "Wir sollen.",
+        "start": 679.5199951171875,
+        "end": 684.7600219726562,
+        "wordTimings": [
+            {
+                "word": "Wir",
+                "start": 679.5199951171875,
+                "end": 681.52001953125
+            },
+            {
+                "word": "sollen.",
+                "start": 681.52001953125,
+                "end": 684.7600219726562
+            }
+        ],
+        "translationEn": "We should.",
+        "translationVi": "Chúng ta nên."
+    },
+    {
+        "text": "Ihr seid.",
+        "start": 687.42001953125,
+        "end": 689.9199951171875,
+        "wordTimings": [
+            {
+                "word": "Ihr",
+                "start": 687.42001953125,
+                "end": 688.9199829101562
+            },
+            {
+                "word": "seid.",
+                "start": 688.9199829101562,
+                "end": 689.9199951171875
+            }
+        ],
+        "translationEn": "You are.",
+        "translationVi": "Các bạn là."
+    },
+    {
+        "text": "Sie, sie sollen.",
+        "start": 693.9800170898437,
+        "end": 697.2199829101562,
+        "wordTimings": [
+            {
+                "word": "Sie,",
+                "start": 693.9800170898437,
+                "end": 695.47998046875
+            },
+            {
+                "word": "sie",
+                "start": 696.7999877929688,
+                "end": 696.9000244140625
+            },
+            {
+                "word": "sollen.",
+                "start": 696.9000244140625,
+                "end": 697.2199829101562
+            }
+        ],
+        "translationEn": "They, they should.",
+        "translationVi": "Họ, họ nên."
+    },
+    {
+        "text": "Wortschatz Wiederholung:",
+        "start": 696.8199829101562,
+        "end": 701.580029296875,
+        "wordTimings": [
+            {
+                "word": "Wortschatz",
+                "start": 696.8199829101562,
+                "end": 698.9199829101562
+            },
+            {
+                "word": "Wiederholung:",
+                "start": 699.5800170898438,
+                "end": 701.580029296875
+            }
+        ],
+        "translationEn": "Vocabulary Review:",
+        "translationVi": "Ôn tập từ vựng:"
+    },
+    {
+        "text": "das Rezept, krankgeschrieben, die Apotheke, die Entzündung, sich ausruhen.",
+        "start": 726.8199829101562,
+        "end": 751.060009765625,
+        "wordTimings": [
+            {
+                "word": "das",
+                "start": 726.8199829101562,
+                "end": 727.6799926757812
+            },
+            {
+                "word": "Rezept,",
+                "start": 727.6799926757812,
+                "end": 728.260009765625
+            },
+            {
+                "word": "krankgeschrieben,",
+                "start": 732.0399780273438,
+                "end": 733.4400024414062
+            },
+            {
+                "word": "die",
+                "start": 738.6599731445312,
+                "end": 740.0599975585938
+            },
+            {
+                "word": "Apotheke,",
+                "start": 740.0599975585938,
+                "end": 740.7999877929688
+            },
+            {
+                "word": "die",
+                "start": 743.739990234375,
+                "end": 745.1400146484375
+            },
+            {
+                "word": "Entzündung,",
+                "start": 745.1400146484375,
+                "end": 745.8400268554688
+            },
+            {
+                "word": "sich",
+                "start": 748.6199951171875,
+                "end": 750.02001953125
+            },
+            {
+                "word": "ausruhen.",
+                "start": 750.02001953125,
+                "end": 751.060009765625
+            }
+        ],
+        "translationEn": "the prescription, on sick leave, the pharmacy, the inflammation, to rest.",
+        "translationVi": "công thức, nghỉ ốm, hiệu thuốc, viêm, nghỉ ngơi."
+    },
+    {
+        "text": "Was musst oder sollst du tun, wenn du krank bist?",
+        "start": 756.92001953125,
+        "end": 759.8599975585937,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 756.92001953125,
+                "end": 757.739990234375
+            },
+            {
+                "word": "musst",
+                "start": 757.739990234375,
+                "end": 757.97998046875
+            },
+            {
+                "word": "oder",
+                "start": 757.97998046875,
+                "end": 758.1799926757812
+            },
+            {
+                "word": "sollst",
+                "start": 758.1799926757812,
+                "end": 758.4400024414062
+            },
+            {
+                "word": "du",
+                "start": 758.4400024414062,
+                "end": 758.719970703125
+            },
+            {
+                "word": "tun,",
+                "start": 758.719970703125,
+                "end": 758.719970703125
+            },
+            {
+                "word": "wenn",
+                "start": 758.8599853515625,
+                "end": 758.8599853515625
+            },
+            {
+                "word": "du",
+                "start": 758.8599853515625,
+                "end": 759
+            },
+            {
+                "word": "krank",
+                "start": 759,
+                "end": 759.2000122070312
+            },
+            {
+                "word": "bist?",
+                "start": 759.2000122070312,
+                "end": 759.8599975585937
+            }
+        ],
+        "translationEn": "What must or should you do when you are sick?",
+        "translationVi": "Bạn phải hoặc nên làm gì khi bạn bị ốm?"
+    },
+    {
+        "text": "Ergänze die Sätze.",
+        "start": 761.8199829101562,
+        "end": 763.2400024414062,
+        "wordTimings": [
+            {
+                "word": "Ergänze",
+                "start": 761.8199829101562,
+                "end": 762.0999755859375
+            },
+            {
+                "word": "die",
+                "start": 762.0999755859375,
+                "end": 762.9400024414062
+            },
+            {
+                "word": "Sätze.",
+                "start": 762.9400024414062,
+                "end": 763.2400024414062
+            }
+        ],
+        "translationEn": "Complete the sentences.",
+        "translationVi": "Hoàn thành các câu."
+    },
+    {
+        "text": "Ich fühle mich schlecht.",
+        "start": 766.8000244140625,
+        "end": 767.9400146484375,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 766.8000244140625,
+                "end": 766.9000244140625
+            },
+            {
+                "word": "fühle",
+                "start": 766.9000244140625,
+                "end": 767.0800170898438
+            },
+            {
+                "word": "mich",
+                "start": 767.0800170898438,
+                "end": 767.260009765625
+            },
+            {
+                "word": "schlecht.",
+                "start": 767.260009765625,
+                "end": 767.9400146484375
+            }
+        ],
+        "translationEn": "I feel bad.",
+        "translationVi": "Tôi cảm thấy không khỏe."
+    },
+    {
+        "text": "Ich muss mich ausruhen.",
+        "start": 768.3199829101562,
+        "end": 773.0999877929687,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 768.3199829101562,
+                "end": 768.4400024414062
+            },
+            {
+                "word": "muss",
+                "start": 768.4400024414062,
+                "end": 771.52001953125
+            },
+            {
+                "word": "mich",
+                "start": 771.52001953125,
+                "end": 772.4000244140625
+            },
+            {
+                "word": "ausruhen.",
+                "start": 772.4000244140625,
+                "end": 773.0999877929687
+            }
+        ],
+        "translationEn": "I need to rest.",
+        "translationVi": "Tôi cần nghỉ ngơi."
+    },
+    {
+        "text": "Der Arzt hat gesagt, ich soll viel Wasser trinken.",
+        "start": 773.9,
+        "end": 781.539990234375,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 773.9,
+                "end": 774.1599731445312
+            },
+            {
+                "word": "Arzt",
+                "start": 774.1599731445312,
+                "end": 774.3800048828125
+            },
+            {
+                "word": "hat",
+                "start": 774.3800048828125,
+                "end": 774.6400146484375
+            },
+            {
+                "word": "gesagt,",
+                "start": 774.6400146484375,
+                "end": 774.97998046875
+            },
+            {
+                "word": "ich",
+                "start": 775.6400146484375,
+                "end": 776.6799926757812
+            },
+            {
+                "word": "soll",
+                "start": 776.6799926757812,
+                "end": 780.2000122070312
+            },
+            {
+                "word": "viel",
+                "start": 780.2000122070312,
+                "end": 780.719970703125
+            },
+            {
+                "word": "Wasser",
+                "start": 780.719970703125,
+                "end": 780.8599853515625
+            },
+            {
+                "word": "trinken.",
+                "start": 780.8599853515625,
+                "end": 781.539990234375
+            }
+        ],
+        "translationEn": "The doctor said I should drink a lot of water.",
+        "translationVi": "Bác sĩ đã nói, tôi nên uống nhiều nước."
+    },
+    {
+        "text": "Ich muss mich beim Chef krank machen.",
+        "start": 787.4599975585937,
+        "end": 790.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 787.4599975585937,
+                "end": 788.1599731445312
+            },
+            {
+                "word": "muss",
+                "start": 788.1599731445312,
+                "end": 788.760009765625
+            },
+            {
+                "word": "mich",
+                "start": 788.760009765625,
+                "end": 789.3200073242188
+            },
+            {
+                "word": "beim",
+                "start": 789.3200073242188,
+                "end": 789.5
+            },
+            {
+                "word": "Chef",
+                "start": 789.5,
+                "end": 789.760009765625
+            },
+            {
+                "word": "krank",
+                "start": 789.760009765625,
+                "end": 790.0999755859375
+            },
+            {
+                "word": "machen.",
+                "start": 790.0999755859375,
+                "end": 790.6800048828125
+            }
+        ],
+        "translationEn": "I have to call in sick to my boss.",
+        "translationVi": "Tôi phải xin nghỉ ốm với sếp."
+    },
+    {
+        "text": "Ich soll dreimal täglich eine Tablette nehmen.",
+        "start": 795.0199951171875,
+        "end": 799.580029296875,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 795.0199951171875,
+                "end": 795.719970703125
+            },
+            {
+                "word": "soll",
+                "start": 795.719970703125,
+                "end": 796.3200073242188
+            },
+            {
+                "word": "dreimal",
+                "start": 796.3200073242188,
+                "end": 797.2000122070312
+            },
+            {
+                "word": "täglich",
+                "start": 797.2000122070312,
+                "end": 797.719970703125
+            },
+            {
+                "word": "eine",
+                "start": 797.719970703125,
+                "end": 797.97998046875
+            },
+            {
+                "word": "Tablette",
+                "start": 797.97998046875,
+                "end": 798.280029296875
+            },
+            {
+                "word": "nehmen.",
+                "start": 798.280029296875,
+                "end": 799.580029296875
+            }
+        ],
+        "translationEn": "I am supposed to take a tablet three times a day.",
+        "translationVi": "Tôi phải uống một viên thuốc ba lần một ngày."
+    },
+    {
+        "text": "Das hat die Apothekerin empfohlen.",
+        "start": 799.4800170898437,
+        "end": 801.519970703125,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 799.4800170898437,
+                "end": 799.719970703125
+            },
+            {
+                "word": "hat",
+                "start": 799.719970703125,
+                "end": 799.8400268554688
+            },
+            {
+                "word": "die",
+                "start": 799.8400268554688,
+                "end": 800
+            },
+            {
+                "word": "Apothekerin",
+                "start": 800,
+                "end": 800.7000122070312
+            },
+            {
+                "word": "empfohlen.",
+                "start": 800.7000122070312,
+                "end": 801.519970703125
+            }
+        ],
+        "translationEn": "The pharmacist recommended that.",
+        "translationVi": "Đó là điều mà dược sĩ đã khuyên."
+    },
+    {
+        "text": "Schreib in die Kommentare, was machst du, wenn du krank bist?",
+        "start": 803.92001953125,
+        "end": 807.7400024414062,
+        "wordTimings": [
+            {
+                "word": "Schreib",
+                "start": 803.92001953125,
+                "end": 804.02001953125
+            },
+            {
+                "word": "in",
+                "start": 804.02001953125,
+                "end": 804.2000122070312
+            },
+            {
+                "word": "die",
+                "start": 804.2000122070312,
+                "end": 804.4400024414062
+            },
+            {
+                "word": "Kommentare,",
+                "start": 804.4400024414062,
+                "end": 804.9199829101562
+            },
+            {
+                "word": "was",
+                "start": 805.7999877929688,
+                "end": 805.9000244140625
+            },
+            {
+                "word": "machst",
+                "start": 805.9000244140625,
+                "end": 806.1799926757812
+            },
+            {
+                "word": "du,",
+                "start": 806.1799926757812,
+                "end": 806.4199829101562
+            },
+            {
+                "word": "wenn",
+                "start": 806.5399780273438,
+                "end": 806.5800170898438
+            },
+            {
+                "word": "du",
+                "start": 806.5800170898438,
+                "end": 806.780029296875
+            },
+            {
+                "word": "krank",
+                "start": 806.780029296875,
+                "end": 807.0599975585938
+            },
+            {
+                "word": "bist?",
+                "start": 807.0599975585938,
+                "end": 807.7400024414062
+            }
+        ],
+        "translationEn": "Write in the comments, what do you do when you are sick?",
+        "translationVi": "Viết vào phần bình luận, bạn làm gì khi bạn bị ốm?"
+    },
+    {
+        "text": "Heute hast du gelernt, wie man über Schmerzen spricht,",
+        "start": 808.3600219726562,
+        "end": 813.1599853515625,
+        "wordTimings": [
+            {
+                "word": "Heute",
+                "start": 808.3600219726562,
+                "end": 809.4199829101562
+            },
+            {
+                "word": "hast",
+                "start": 809.4199829101562,
+                "end": 809.5999755859375
+            },
+            {
+                "word": "du",
+                "start": 809.5999755859375,
+                "end": 809.9000244140625
+            },
+            {
+                "word": "gelernt,",
+                "start": 809.9000244140625,
+                "end": 810.2000122070312
+            },
+            {
+                "word": "wie",
+                "start": 810.97998046875,
+                "end": 811.0999755859375
+            },
+            {
+                "word": "man",
+                "start": 811.0999755859375,
+                "end": 811.4000244140625
+            },
+            {
+                "word": "über",
+                "start": 811.4000244140625,
+                "end": 811.7000122070312
+            },
+            {
+                "word": "Schmerzen",
+                "start": 811.7000122070312,
+                "end": 812.3400268554688
+            },
+            {
+                "word": "spricht,",
+                "start": 812.3400268554688,
+                "end": 813.1599853515625
+            }
+        ],
+        "translationEn": "Today you learned how to talk about pain,",
+        "translationVi": "Hôm nay bạn đã học cách nói về cơn đau,"
+    },
+    {
+        "text": "was man beim Arzt sagt, die Verben müssen und sollen.",
+        "start": 813.3199829101562,
+        "end": 819.080029296875,
+        "wordTimings": [
+            {
+                "word": "was",
+                "start": 813.3199829101562,
+                "end": 813.5999755859375
+            },
+            {
+                "word": "man",
+                "start": 813.5999755859375,
+                "end": 813.8400268554688
+            },
+            {
+                "word": "beim",
+                "start": 813.8400268554688,
+                "end": 814.2999877929688
+            },
+            {
+                "word": "Arzt",
+                "start": 814.2999877929688,
+                "end": 814.7999877929688
+            },
+            {
+                "word": "sagt,",
+                "start": 814.7999877929688,
+                "end": 815.280029296875
+            },
+            {
+                "word": "die",
+                "start": 816.0999755859375,
+                "end": 816.3400268554688
+            },
+            {
+                "word": "Verben",
+                "start": 816.3400268554688,
+                "end": 816.719970703125
+            },
+            {
+                "word": "müssen",
+                "start": 816.719970703125,
+                "end": 817.4000244140625
+            },
+            {
+                "word": "und",
+                "start": 817.4000244140625,
+                "end": 818.3800048828125
+            },
+            {
+                "word": "sollen.",
+                "start": 818.3800048828125,
+                "end": 819.080029296875
+            }
+        ],
+        "translationEn": "what one says at the doctor’s, the verbs must and should.",
+        "translationVi": "những gì người ta nói với bác sĩ, các động từ phải và nên."
+    },
+    {
+        "text": "Wortschatz zum Thema Gesundheit.",
+        "start": 819.7400268554687,
+        "end": 822.3800170898437,
+        "wordTimings": [
+            {
+                "word": "Wortschatz",
+                "start": 819.7400268554687,
+                "end": 820.1599731445312
+            },
+            {
+                "word": "zum",
+                "start": 820.1599731445312,
+                "end": 820.739990234375
+            },
+            {
+                "word": "Thema",
+                "start": 820.739990234375,
+                "end": 821.0800170898438
+            },
+            {
+                "word": "Gesundheit.",
+                "start": 821.0800170898438,
+                "end": 822.3800170898437
+            }
+        ],
+        "translationEn": "Vocabulary on the topic of health.",
+        "translationVi": "Từ vựng về chủ đề sức khỏe."
+    },
+    {
+        "text": "Abonniere den Kanal der Hallo Deutschschule",
+        "start": 825.5599731445312,
+        "end": 828.4599731445312,
+        "wordTimings": [
+            {
+                "word": "Abonniere",
+                "start": 825.5599731445312,
+                "end": 825.9400024414062
+            },
+            {
+                "word": "den",
+                "start": 825.9400024414062,
+                "end": 826.1799926757812
+            },
+            {
+                "word": "Kanal",
+                "start": 826.1799926757812,
+                "end": 826.6599731445312
+            },
+            {
+                "word": "der",
+                "start": 826.6599731445312,
+                "end": 827.2000122070312
+            },
+            {
+                "word": "Hallo",
+                "start": 827.2000122070312,
+                "end": 827.5599975585938
+            },
+            {
+                "word": "Deutschschule",
+                "start": 827.5599975585938,
+                "end": 828.4599731445312
+            }
+        ],
+        "translationEn": "Subscribe to the Hallo Deutschschule channel.",
+        "translationVi": "Hãy đăng ký kênh của Hallo Deutschschule."
+    },
+    {
+        "text": "für mehr einfache und nützliche Videos auf Deutsch.",
+        "start": 828.0799926757812,
+        "end": 832.9799926757812,
+        "wordTimings": [
+            {
+                "word": "für",
+                "start": 828.0799926757812,
+                "end": 829.1400146484375
+            },
+            {
+                "word": "mehr",
+                "start": 829.1400146484375,
+                "end": 829.6400146484375
+            },
+            {
+                "word": "einfache",
+                "start": 829.6400146484375,
+                "end": 830.239990234375
+            },
+            {
+                "word": "und",
+                "start": 830.239990234375,
+                "end": 830.9600219726562
+            },
+            {
+                "word": "nützliche",
+                "start": 830.9600219726562,
+                "end": 831.4199829101562
+            },
+            {
+                "word": "Videos",
+                "start": 831.4199829101562,
+                "end": 831.9600219726562
+            },
+            {
+                "word": "auf",
+                "start": 831.9600219726562,
+                "end": 832.280029296875
+            },
+            {
+                "word": "Deutsch.",
+                "start": 832.280029296875,
+                "end": 832.9799926757812
+            }
+        ],
+        "translationEn": "for more simple and useful videos in German.",
+        "translationVi": "cho nhiều video đơn giản và hữu ích hơn bằng tiếng Đức."
+    },
+    {
+        "text": "Gib uns ein Like, wenn dir das Video gefallen hat.",
+        "start": 833.5599731445312,
+        "end": 838.6200073242187,
+        "wordTimings": [
+            {
+                "word": "Gib",
+                "start": 833.5599731445312,
+                "end": 834.4600219726562
+            },
+            {
+                "word": "uns",
+                "start": 834.4600219726562,
+                "end": 834.719970703125
+            },
+            {
+                "word": "ein",
+                "start": 834.719970703125,
+                "end": 835.0399780273438
+            },
+            {
+                "word": "Like,",
+                "start": 835.0399780273438,
+                "end": 835.4000244140625
+            },
+            {
+                "word": "wenn",
+                "start": 835.7999877929688,
+                "end": 835.7999877929688
+            },
+            {
+                "word": "dir",
+                "start": 835.7999877929688,
+                "end": 835.9400024414062
+            },
+            {
+                "word": "das",
+                "start": 835.9400024414062,
+                "end": 836.280029296875
+            },
+            {
+                "word": "Video",
+                "start": 836.280029296875,
+                "end": 836.739990234375
+            },
+            {
+                "word": "gefallen",
+                "start": 836.739990234375,
+                "end": 837.260009765625
+            },
+            {
+                "word": "hat.",
+                "start": 837.260009765625,
+                "end": 838.6200073242187
+            }
+        ],
+        "translationEn": "Give us a like if you enjoyed the video.",
+        "translationVi": "Hãy cho chúng tôi một lượt thích nếu bạn thích video này."
+    },
+    {
+        "text": "Bis zum nächsten Mal.",
+        "start": 840.3600219726562,
+        "end": 841.8599975585937,
+        "wordTimings": [
+            {
+                "word": "Bis",
+                "start": 840.3600219726562,
+                "end": 840.5800170898438
+            },
+            {
+                "word": "zum",
+                "start": 840.5800170898438,
+                "end": 841.1599731445312
+            },
+            {
+                "word": "nächsten",
+                "start": 841.1599731445312,
+                "end": 841.1599731445312
+            },
+            {
+                "word": "Mal.",
+                "start": 841.1599731445312,
+                "end": 841.8599975585937
+            }
+        ],
+        "translationEn": "Until next time.",
+        "translationVi": "Hẹn gặp lại lần sau."
+    },
+    {
+        "text": "Tschüss.",
+        "start": 842.0199951171875,
+        "end": 842.6400268554687,
+        "wordTimings": [
+            {
+                "word": "Tschüss.",
+                "start": 842.0199951171875,
+                "end": 842.6400268554687
+            }
+        ],
+        "translationEn": "Goodbye.",
+        "translationVi": "Tạm biệt."
+    }
+]

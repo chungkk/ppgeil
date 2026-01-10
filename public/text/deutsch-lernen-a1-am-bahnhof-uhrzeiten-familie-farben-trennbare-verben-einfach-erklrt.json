@@ -1,0 +1,5546 @@
+[
+    {
+        "text": "Am Bahnhof.",
+        "start": 0,
+        "end": 1.4200000047683716,
+        "wordTimings": [
+            {
+                "word": "Am",
+                "start": 0,
+                "end": 0.5799999833106995
+            },
+            {
+                "word": "Bahnhof.",
+                "start": 0.5799999833106995,
+                "end": 1.4200000047683716
+            }
+        ],
+        "translationEn": "At the train station.",
+        "translationVi": "Tại nhà ga."
+    },
+    {
+        "text": "Achtung! Achtung! Achtung! Achtung!",
+        "start": 8.9,
+        "end": 14.879999923706055,
+        "wordTimings": [
+            {
+                "word": "Achtung!",
+                "start": 8.9,
+                "end": 9.699999809265137
+            },
+            {
+                "word": "Achtung!",
+                "start": 10.5600004196167,
+                "end": 10.5600004196167
+            },
+            {
+                "word": "Achtung!",
+                "start": 13.15999984741211,
+                "end": 13.859999656677246
+            },
+            {
+                "word": "Achtung!",
+                "start": 14.579999923706055,
+                "end": 14.879999923706055
+            }
+        ],
+        "translationEn": "Attention! Attention! Attention! Attention!",
+        "translationVi": "Chú ý! Chú ý! Chú ý! Chú ý!"
+    },
+    {
+        "text": "Der Schnellzug nach Zürich fährt planmäßig um 16:15 Uhr ab.",
+        "start": 16.2799991607666,
+        "end": 22.699999618530274,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 16.2799991607666,
+                "end": 16.5
+            },
+            {
+                "word": "Schnellzug",
+                "start": 16.5,
+                "end": 17.020000457763672
+            },
+            {
+                "word": "nach",
+                "start": 17.020000457763672,
+                "end": 17.719999313354492
+            },
+            {
+                "word": "Zürich",
+                "start": 17.719999313354492,
+                "end": 18.280000686645508
+            },
+            {
+                "word": "fährt",
+                "start": 18.280000686645508,
+                "end": 18.959999084472656
+            },
+            {
+                "word": "planmäßig",
+                "start": 18.959999084472656,
+                "end": 19.760000228881836
+            },
+            {
+                "word": "um",
+                "start": 19.760000228881836,
+                "end": 20.299999237060547
+            },
+            {
+                "word": "16:15",
+                "start": 20.299999237060547,
+                "end": 20.599999237060548,
+                "estimated": true
+            },
+            {
+                "word": "Uhr",
+                "start": 21.959999084472656,
+                "end": 21.959999084472656
+            },
+            {
+                "word": "ab.",
+                "start": 21.959999084472656,
+                "end": 22.699999618530274
+            }
+        ],
+        "translationEn": "The express train to Zurich departs as scheduled at 4:15 PM.",
+        "translationVi": "Tàu nhanh đi Zurich khởi hành đúng giờ lúc 16:15."
+    },
+    {
+        "text": "Der Schnellzug nach Zürich fährt planmäßig um 16:15 Uhr ab.",
+        "start": 23.08000030517578,
+        "end": 30.3,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 23.08000030517578,
+                "end": 23.84000015258789
+            },
+            {
+                "word": "Schnellzug",
+                "start": 23.84000015258789,
+                "end": 24.440000534057617
+            },
+            {
+                "word": "nach",
+                "start": 24.440000534057617,
+                "end": 24.959999084472656
+            },
+            {
+                "word": "Zürich",
+                "start": 24.959999084472656,
+                "end": 25.700000762939453
+            },
+            {
+                "word": "fährt",
+                "start": 25.700000762939453,
+                "end": 26.31999969482422
+            },
+            {
+                "word": "planmäßig",
+                "start": 26.31999969482422,
+                "end": 27.15999984741211
+            },
+            {
+                "word": "um",
+                "start": 27.15999984741211,
+                "end": 27.6200008392334
+            },
+            {
+                "word": "16:15",
+                "start": 27.6200008392334,
+                "end": 27.9200008392334,
+                "estimated": true
+            },
+            {
+                "word": "Uhr",
+                "start": 29.31999969482422,
+                "end": 29.34000015258789
+            },
+            {
+                "word": "ab.",
+                "start": 29.34000015258789,
+                "end": 30.3
+            }
+        ],
+        "translationEn": "The express train to Zurich departs on schedule at 4:15 PM.",
+        "translationVi": "Tàu nhanh đến Zurich khởi hành theo lịch trình vào lúc 16:15."
+    },
+    {
+        "text": "Achtung! Achtung! Achtung! Achtung!",
+        "start": 32.74000015258789,
+        "end": 37.8,
+        "wordTimings": [
+            {
+                "word": "Achtung!",
+                "start": 32.74000015258789,
+                "end": 33.13999938964844
+            },
+            {
+                "word": "Achtung!",
+                "start": 33.86000061035156,
+                "end": 33.86000061035156
+            },
+            {
+                "word": "Achtung!",
+                "start": 35.5,
+                "end": 36.81999969482422
+            },
+            {
+                "word": "Achtung!",
+                "start": 37.5,
+                "end": 37.8
+            }
+        ],
+        "translationEn": "Attention! Attention! Attention! Attention!",
+        "translationVi": "Chú ý! Chú ý! Chú ý! Chú ý!"
+    },
+    {
+        "text": "Die S9 verspätet sich um 5 Minuten.",
+        "start": 38.460001373291014,
+        "end": 42.21999816894531,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 38.460001373291014,
+                "end": 38.720001220703125
+            },
+            {
+                "word": "S9",
+                "start": 38.720001220703125,
+                "end": 39.400001525878906
+            },
+            {
+                "word": "verspätet",
+                "start": 39.400001525878906,
+                "end": 40.2599983215332
+            },
+            {
+                "word": "sich",
+                "start": 40.2599983215332,
+                "end": 40.540000915527344
+            },
+            {
+                "word": "um",
+                "start": 40.540000915527344,
+                "end": 40.880001068115234
+            },
+            {
+                "word": "5",
+                "start": 40.880001068115234,
+                "end": 41.459999084472656
+            },
+            {
+                "word": "Minuten.",
+                "start": 41.459999084472656,
+                "end": 42.21999816894531
+            }
+        ],
+        "translationEn": "The S9 is delayed by 5 minutes.",
+        "translationVi": "Tuyến S9 bị trễ 5 phút."
+    },
+    {
+        "text": "Die S9 verspätet sich um 5 Minuten.",
+        "start": 43.620001220703124,
+        "end": 47.36000137329101,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 43.620001220703124,
+                "end": 43.880001068115234
+            },
+            {
+                "word": "S9",
+                "start": 43.880001068115234,
+                "end": 44.599998474121094
+            },
+            {
+                "word": "verspätet",
+                "start": 44.599998474121094,
+                "end": 45.400001525878906
+            },
+            {
+                "word": "sich",
+                "start": 45.400001525878906,
+                "end": 45.70000076293945
+            },
+            {
+                "word": "um",
+                "start": 45.70000076293945,
+                "end": 46.02000045776367
+            },
+            {
+                "word": "5",
+                "start": 46.02000045776367,
+                "end": 46.599998474121094
+            },
+            {
+                "word": "Minuten.",
+                "start": 46.599998474121094,
+                "end": 47.36000137329101
+            }
+        ],
+        "translationEn": "The S9 is delayed by 5 minutes.",
+        "translationVi": "Tuyến S9 bị trễ 5 phút."
+    },
+    {
+        "text": "Sie kommt statt um 12:20 Uhr um 12:25 Uhr am Bahnhof an.",
+        "start": 48.1599983215332,
+        "end": 56.599999237060544,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 48.1599983215332,
+                "end": 49.400001525878906
+            },
+            {
+                "word": "kommt",
+                "start": 49.400001525878906,
+                "end": 49.7400016784668
+            },
+            {
+                "word": "statt",
+                "start": 49.7400016784668,
+                "end": 50.060001373291016
+            },
+            {
+                "word": "um",
+                "start": 50.060001373291016,
+                "end": 50.2400016784668
+            },
+            {
+                "word": "12:20",
+                "start": 50.2400016784668,
+                "end": 50.540001678466794,
+                "estimated": true
+            },
+            {
+                "word": "Uhr",
+                "start": 51.91999816894531,
+                "end": 52.2599983215332
+            },
+            {
+                "word": "um",
+                "start": 52.2599983215332,
+                "end": 52.58000183105469
+            },
+            {
+                "word": "12:25",
+                "start": 52.58000183105469,
+                "end": 52.880001831054685,
+                "estimated": true
+            },
+            {
+                "word": "Uhr",
+                "start": 54.779998779296875,
+                "end": 54.959999084472656
+            },
+            {
+                "word": "am",
+                "start": 54.959999084472656,
+                "end": 55.119998931884766
+            },
+            {
+                "word": "Bahnhof",
+                "start": 55.119998931884766,
+                "end": 55.68000030517578
+            },
+            {
+                "word": "an.",
+                "start": 55.68000030517578,
+                "end": 56.599999237060544
+            }
+        ],
+        "translationEn": "She arrives at the station at 12:25 instead of 12:20.",
+        "translationVi": "Cô ấy đến ga lúc 12:25 thay vì 12:20."
+    },
+    {
+        "text": "Sie kommt statt um 12:20 Uhr um 12:25 Uhr am Bahnhof an.",
+        "start": 57.519998931884764,
+        "end": 64.73000030517578,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 57.519998931884764,
+                "end": 57.619998931884766
+            },
+            {
+                "word": "kommt",
+                "start": 57.619998931884766,
+                "end": 57.939998626708984
+            },
+            {
+                "word": "statt",
+                "start": 57.939998626708984,
+                "end": 58.220001220703125
+            },
+            {
+                "word": "um",
+                "start": 58.220001220703125,
+                "end": 58.41999816894531
+            },
+            {
+                "word": "12:20",
+                "start": 58.41999816894531,
+                "end": 58.71999816894531,
+                "estimated": true
+            },
+            {
+                "word": "Uhr",
+                "start": 60.18000030517578,
+                "end": 60.18000030517578
+            },
+            {
+                "word": "um",
+                "start": 60.18000030517578,
+                "end": 60.84000015258789
+            },
+            {
+                "word": "12:25",
+                "start": 60.84000015258789,
+                "end": 61.14000015258789,
+                "estimated": true
+            },
+            {
+                "word": "Uhr",
+                "start": 63.02000045776367,
+                "end": 63.08000183105469
+            },
+            {
+                "word": "am",
+                "start": 63.08000183105469,
+                "end": 63.34000015258789
+            },
+            {
+                "word": "Bahnhof",
+                "start": 63.34000015258789,
+                "end": 63.86000061035156
+            },
+            {
+                "word": "an.",
+                "start": 63.86000061035156,
+                "end": 64.73000030517578
+            }
+        ],
+        "translationEn": "She arrives at the train station at 12:25 instead of 12:20.",
+        "translationVi": "Cô ấy đến ga lúc 12:25 thay vì 12:20."
+    },
+    {
+        "text": "Entschuldigen Sie die Verspätung.",
+        "start": 66.13999786376954,
+        "end": 68.39999847412109,
+        "wordTimings": [
+            {
+                "word": "Entschuldigen",
+                "start": 66.13999786376954,
+                "end": 66.55999755859375
+            },
+            {
+                "word": "Sie",
+                "start": 66.55999755859375,
+                "end": 67.0199966430664
+            },
+            {
+                "word": "die",
+                "start": 67.0199966430664,
+                "end": 67.36000061035156
+            },
+            {
+                "word": "Verspätung.",
+                "start": 67.36000061035156,
+                "end": 68.39999847412109
+            }
+        ],
+        "translationEn": "Excuse the delay.",
+        "translationVi": "Xin lỗi vì sự chậm trễ."
+    },
+    {
+        "text": "Entschuldigen Sie die Verspätung.",
+        "start": 70.62000122070313,
+        "end": 73.2000015258789,
+        "wordTimings": [
+            {
+                "word": "Entschuldigen",
+                "start": 70.62000122070313,
+                "end": 71.31999969482422
+            },
+            {
+                "word": "Sie",
+                "start": 71.31999969482422,
+                "end": 71.83999633789062
+            },
+            {
+                "word": "die",
+                "start": 71.83999633789062,
+                "end": 72.16000366210938
+            },
+            {
+                "word": "Verspätung.",
+                "start": 72.16000366210938,
+                "end": 73.2000015258789
+            }
+        ],
+        "translationEn": "Excuse the delay.",
+        "translationVi": "Xin lỗi vì sự chậm trễ."
+    },
+    {
+        "text": "Vorsicht! Auf Gleis 3 fährt der Intercity nach Lugano ab.",
+        "start": 75.9800018310547,
+        "end": 82.8199966430664,
+        "wordTimings": [
+            {
+                "word": "Vorsicht!",
+                "start": 75.9800018310547,
+                "end": 77.08000183105469
+            },
+            {
+                "word": "Auf",
+                "start": 77.5199966430664,
+                "end": 77.5199966430664
+            },
+            {
+                "word": "Gleis",
+                "start": 77.5199966430664,
+                "end": 77.91999816894531
+            },
+            {
+                "word": "3",
+                "start": 77.91999816894531,
+                "end": 78.63999938964844
+            },
+            {
+                "word": "fährt",
+                "start": 78.63999938964844,
+                "end": 78.9800033569336
+            },
+            {
+                "word": "der",
+                "start": 78.9800033569336,
+                "end": 79.30000305175781
+            },
+            {
+                "word": "Intercity",
+                "start": 79.30000305175781,
+                "end": 80.04000091552734
+            },
+            {
+                "word": "nach",
+                "start": 80.04000091552734,
+                "end": 80.4800033569336
+            },
+            {
+                "word": "Lugano",
+                "start": 80.4800033569336,
+                "end": 81.12000274658203
+            },
+            {
+                "word": "ab.",
+                "start": 81.12000274658203,
+                "end": 82.8199966430664
+            }
+        ],
+        "translationEn": "Caution! The intercity train to Lugano is departing from platform 3.",
+        "translationVi": "Cẩn thận! Tàu Intercity đến Lugano sẽ khởi hành từ đường ray số 3."
+    },
+    {
+        "text": "Vorsicht! Auf Gleis 3 fährt der Intercity nach Lugano ab.",
+        "start": 84.62000122070313,
+        "end": 89.96000366210937,
+        "wordTimings": [
+            {
+                "word": "Vorsicht!",
+                "start": 84.62000122070313,
+                "end": 85.13999938964844
+            },
+            {
+                "word": "Auf",
+                "start": 85.33999633789062,
+                "end": 85.5
+            },
+            {
+                "word": "Gleis",
+                "start": 85.5,
+                "end": 86.04000091552734
+            },
+            {
+                "word": "3",
+                "start": 86.04000091552734,
+                "end": 86.76000213623047
+            },
+            {
+                "word": "fährt",
+                "start": 86.76000213623047,
+                "end": 87.12000274658203
+            },
+            {
+                "word": "der",
+                "start": 87.12000274658203,
+                "end": 87.33999633789062
+            },
+            {
+                "word": "Intercity",
+                "start": 87.33999633789062,
+                "end": 88.12000274658203
+            },
+            {
+                "word": "nach",
+                "start": 88.12000274658203,
+                "end": 88.54000091552734
+            },
+            {
+                "word": "Lugano",
+                "start": 88.54000091552734,
+                "end": 89.13999938964844
+            },
+            {
+                "word": "ab.",
+                "start": 89.13999938964844,
+                "end": 89.96000366210937
+            }
+        ],
+        "translationEn": "Caution! The Intercity to Lugano departs from platform 3.",
+        "translationVi": "Cẩn thận! Tàu Intercity đi Lugano sẽ khởi hành từ đường ray số 3."
+    },
+    {
+        "text": "Vorsicht! Auf Gleis 3.",
+        "start": 90.73999633789063,
+        "end": 93.52000122070312,
+        "wordTimings": [
+            {
+                "word": "Vorsicht!",
+                "start": 90.73999633789063,
+                "end": 91.26000213623047
+            },
+            {
+                "word": "Auf",
+                "start": 91.36000061035156,
+                "end": 91.86000061035156
+            },
+            {
+                "word": "Gleis",
+                "start": 91.86000061035156,
+                "end": 92.12000274658203
+            },
+            {
+                "word": "3.",
+                "start": 92.12000274658203,
+                "end": 93.52000122070312
+            }
+        ],
+        "translationEn": "Caution! On track 3.",
+        "translationVi": "Cẩn thận! Tại đường ray số 3."
+    },
+    {
+        "text": "Vorsicht! Auf Gleis 3.",
+        "start": 93.58000030517579,
+        "end": 97.21999816894531,
+        "wordTimings": [
+            {
+                "word": "Vorsicht!",
+                "start": 93.58000030517579,
+                "end": 94.68000030517578
+            },
+            {
+                "word": "Auf",
+                "start": 95.05999755859375,
+                "end": 95.27999877929688
+            },
+            {
+                "word": "Gleis",
+                "start": 95.27999877929688,
+                "end": 95.68000030517578
+            },
+            {
+                "word": "3.",
+                "start": 95.68000030517578,
+                "end": 97.21999816894531
+            }
+        ],
+        "translationEn": "Caution! On track 3.",
+        "translationVi": "Cẩn thận! Tại đường ray số 3."
+    },
+    {
+        "text": "Zugsabfahrt! Zugsabfahrt! Zugsabfahrt!",
+        "start": 99.34000244140626,
+        "end": 103.88000183105468,
+        "wordTimings": [
+            {
+                "word": "Zugsabfahrt!",
+                "start": 99.34000244140626,
+                "end": 100.44000244140625
+            },
+            {
+                "word": "Zugsabfahrt!",
+                "start": 100.44000244140625,
+                "end": 101.4000015258789
+            },
+            {
+                "word": "Zugsabfahrt!",
+                "start": 102.9000015258789,
+                "end": 103.88000183105468
+            }
+        ],
+        "translationEn": "Train departure! Train departure! Train departure!",
+        "translationVi": "Khởi hành tàu! Khởi hành tàu! Khởi hành tàu!"
+    },
+    {
+        "text": "Hallo Emil.",
+        "start": 105.67999877929688,
+        "end": 108.39999847412109,
+        "wordTimings": [
+            {
+                "word": "Hallo",
+                "start": 105.67999877929688,
+                "end": 106.94000244140625
+            },
+            {
+                "word": "Emil.",
+                "start": 106.94000244140625,
+                "end": 108.39999847412109
+            }
+        ],
+        "translationEn": "Hello Emil.",
+        "translationVi": "Xin chào Emil."
+    },
+    {
+        "text": "Hallo Emil.",
+        "start": 108.62000122070313,
+        "end": 110.75999908447265,
+        "wordTimings": [
+            {
+                "word": "Hallo",
+                "start": 108.62000122070313,
+                "end": 109.30000305175781
+            },
+            {
+                "word": "Emil.",
+                "start": 109.30000305175781,
+                "end": 110.75999908447265
+            }
+        ],
+        "translationEn": "Hello Emil.",
+        "translationVi": "Xin chào Emil."
+    },
+    {
+        "text": "Ich nehme jetzt die S8 bis nach Talwil.",
+        "start": 114.4800018310547,
+        "end": 118.3199966430664,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 114.4800018310547,
+                "end": 114.58000183105469
+            },
+            {
+                "word": "nehme",
+                "start": 114.58000183105469,
+                "end": 114.87999725341797
+            },
+            {
+                "word": "jetzt",
+                "start": 114.87999725341797,
+                "end": 115.44000244140625
+            },
+            {
+                "word": "die",
+                "start": 115.44000244140625,
+                "end": 115.76000213623047
+            },
+            {
+                "word": "S8",
+                "start": 115.76000213623047,
+                "end": 116.4800033569336
+            },
+            {
+                "word": "bis",
+                "start": 116.4800033569336,
+                "end": 116.91999816894531
+            },
+            {
+                "word": "nach",
+                "start": 116.91999816894531,
+                "end": 117.30000305175781
+            },
+            {
+                "word": "Talwil.",
+                "start": 117.30000305175781,
+                "end": 118.3199966430664
+            }
+        ],
+        "translationEn": "I am now taking the S8 to Talwil.",
+        "translationVi": "Tôi sẽ đi S8 đến Talwil."
+    },
+    {
+        "text": "Ich nehme jetzt die S8 bis nach Talwil.",
+        "start": 120.44000091552735,
+        "end": 124.85999755859375,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 120.44000091552735,
+                "end": 121.12000274658203
+            },
+            {
+                "word": "nehme",
+                "start": 121.12000274658203,
+                "end": 121.41999816894531
+            },
+            {
+                "word": "jetzt",
+                "start": 121.41999816894531,
+                "end": 121.95999908447266
+            },
+            {
+                "word": "die",
+                "start": 121.95999908447266,
+                "end": 122.23999786376953
+            },
+            {
+                "word": "S8",
+                "start": 122.23999786376953,
+                "end": 123.04000091552734
+            },
+            {
+                "word": "bis",
+                "start": 123.04000091552734,
+                "end": 123.4800033569336
+            },
+            {
+                "word": "nach",
+                "start": 123.4800033569336,
+                "end": 123.76000213623047
+            },
+            {
+                "word": "Talwil.",
+                "start": 123.76000213623047,
+                "end": 124.85999755859375
+            }
+        ],
+        "translationEn": "I am now taking the S8 to Talwil.",
+        "translationVi": "Tôi sẽ đi S8 đến Talwil."
+    },
+    {
+        "text": "Ich steige dort um und nehme dann den ICE.",
+        "start": 126.76000061035157,
+        "end": 131.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 126.76000061035157,
+                "end": 126.86000061035156
+            },
+            {
+                "word": "steige",
+                "start": 126.86000061035156,
+                "end": 127.30000305175781
+            },
+            {
+                "word": "dort",
+                "start": 127.30000305175781,
+                "end": 127.87999725341797
+            },
+            {
+                "word": "um",
+                "start": 127.87999725341797,
+                "end": 128.22000122070312
+            },
+            {
+                "word": "und",
+                "start": 128.22000122070312,
+                "end": 129.1199951171875
+            },
+            {
+                "word": "nehme",
+                "start": 129.1199951171875,
+                "end": 129.47999572753906
+            },
+            {
+                "word": "dann",
+                "start": 129.47999572753906,
+                "end": 130.02000427246094
+            },
+            {
+                "word": "den",
+                "start": 130.02000427246094,
+                "end": 130.32000732421875
+            },
+            {
+                "word": "ICE.",
+                "start": 130.32000732421875,
+                "end": 131.1999938964844
+            }
+        ],
+        "translationEn": "I will transfer there and then take the ICE.",
+        "translationVi": "Tôi sẽ chuyển tàu ở đó và sau đó đi tàu ICE."
+    },
+    {
+        "text": "Ich steige dort um und nehme dann den ICE.",
+        "start": 131.84000244140626,
+        "end": 137.35999755859376,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 131.84000244140626,
+                "end": 132.86000061035156
+            },
+            {
+                "word": "steige",
+                "start": 132.86000061035156,
+                "end": 133.3800048828125
+            },
+            {
+                "word": "dort",
+                "start": 133.3800048828125,
+                "end": 133.94000244140625
+            },
+            {
+                "word": "um",
+                "start": 133.94000244140625,
+                "end": 134.3000030517578
+            },
+            {
+                "word": "und",
+                "start": 134.3000030517578,
+                "end": 135.1999969482422
+            },
+            {
+                "word": "nehme",
+                "start": 135.1999969482422,
+                "end": 135.55999755859375
+            },
+            {
+                "word": "dann",
+                "start": 135.55999755859375,
+                "end": 136.0800018310547
+            },
+            {
+                "word": "den",
+                "start": 136.0800018310547,
+                "end": 136.39999389648438
+            },
+            {
+                "word": "ICE.",
+                "start": 136.39999389648438,
+                "end": 137.35999755859376
+            }
+        ],
+        "translationEn": "I will change there and then take the ICE.",
+        "translationVi": "Tôi sẽ chuyển tàu ở đó và sau đó đi tàu ICE."
+    },
+    {
+        "text": "Um 9:35 Uhr komme ich in Luzern an.",
+        "start": 138.84000244140626,
+        "end": 143.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Um",
+                "start": 138.84000244140626,
+                "end": 139
+            },
+            {
+                "word": "9:35",
+                "start": 139.52000427246094,
+                "end": 140.6999969482422
+            },
+            {
+                "word": "Uhr",
+                "start": 140.6999969482422,
+                "end": 141.3000030517578
+            },
+            {
+                "word": "komme",
+                "start": 141.3000030517578,
+                "end": 141.3000030517578
+            },
+            {
+                "word": "ich",
+                "start": 141.3000030517578,
+                "end": 141.67999267578125
+            },
+            {
+                "word": "in",
+                "start": 141.67999267578125,
+                "end": 142.13999938964844
+            },
+            {
+                "word": "Luzern",
+                "start": 142.13999938964844,
+                "end": 142.44000244140625
+            },
+            {
+                "word": "an.",
+                "start": 142.44000244140625,
+                "end": 143.1999938964844
+            }
+        ],
+        "translationEn": "I will arrive in Lucerne at 9:35 AM.",
+        "translationVi": "Tôi đến Lucerne lúc 9:35."
+    },
+    {
+        "text": "Um 9:35 Uhr komme ich in Luzern an.",
+        "start": 144.9,
+        "end": 149.24000244140626,
+        "wordTimings": [
+            {
+                "word": "Um",
+                "start": 144.9,
+                "end": 145
+            },
+            {
+                "word": "9:35",
+                "start": 145.55999755859375,
+                "end": 146.8800048828125
+            },
+            {
+                "word": "Uhr",
+                "start": 146.8800048828125,
+                "end": 147.13999938964844
+            },
+            {
+                "word": "komme",
+                "start": 147.13999938964844,
+                "end": 147.3800048828125
+            },
+            {
+                "word": "ich",
+                "start": 147.3800048828125,
+                "end": 147.75999450683594
+            },
+            {
+                "word": "in",
+                "start": 147.75999450683594,
+                "end": 148.22000122070312
+            },
+            {
+                "word": "Luzern",
+                "start": 148.22000122070312,
+                "end": 148.47999572753906
+            },
+            {
+                "word": "an.",
+                "start": 148.47999572753906,
+                "end": 149.24000244140626
+            }
+        ],
+        "translationEn": "I will arrive in Lucerne at 9:35 AM.",
+        "translationVi": "Tôi sẽ đến Lucerne lúc 9:35."
+    },
+    {
+        "text": "Holst du mich am Bahnhof ab?",
+        "start": 151.17999877929688,
+        "end": 153.47999267578126,
+        "wordTimings": [
+            {
+                "word": "Holst",
+                "start": 151.17999877929688,
+                "end": 151.44000244140625
+            },
+            {
+                "word": "du",
+                "start": 151.44000244140625,
+                "end": 151.6199951171875
+            },
+            {
+                "word": "mich",
+                "start": 151.6199951171875,
+                "end": 151.8800048828125
+            },
+            {
+                "word": "am",
+                "start": 151.8800048828125,
+                "end": 152.24000549316406
+            },
+            {
+                "word": "Bahnhof",
+                "start": 152.24000549316406,
+                "end": 152.75999450683594
+            },
+            {
+                "word": "ab?",
+                "start": 152.75999450683594,
+                "end": 153.47999267578126
+            }
+        ],
+        "translationEn": "Will you pick me up at the train station?",
+        "translationVi": "Bạn có đón tôi ở ga tàu không?"
+    },
+    {
+        "text": "Holst du mich am Bahnhof ab?",
+        "start": 155.03999938964844,
+        "end": 157.5799987792969,
+        "wordTimings": [
+            {
+                "word": "Holst",
+                "start": 155.03999938964844,
+                "end": 155.5800018310547
+            },
+            {
+                "word": "du",
+                "start": 155.5800018310547,
+                "end": 155.74000549316406
+            },
+            {
+                "word": "mich",
+                "start": 155.74000549316406,
+                "end": 156.02000427246094
+            },
+            {
+                "word": "am",
+                "start": 156.02000427246094,
+                "end": 156.39999389648438
+            },
+            {
+                "word": "Bahnhof",
+                "start": 156.39999389648438,
+                "end": 156.9199981689453
+            },
+            {
+                "word": "ab?",
+                "start": 156.9199981689453,
+                "end": 157.5799987792969
+            }
+        ],
+        "translationEn": "Will you pick me up at the train station?",
+        "translationVi": "Bạn có đón tôi ở ga tàu không?"
+    },
+    {
+        "text": "Achtung! Auf Gleis 5.",
+        "start": 159.7800048828125,
+        "end": 162.6999938964844,
+        "wordTimings": [
+            {
+                "word": "Achtung!",
+                "start": 159.7800048828125,
+                "end": 160.9199981689453
+            },
+            {
+                "word": "Auf",
+                "start": 161.4600067138672,
+                "end": 161.4600067138672
+            },
+            {
+                "word": "Gleis",
+                "start": 161.4600067138672,
+                "end": 161.8800048828125
+            },
+            {
+                "word": "5.",
+                "start": 161.8800048828125,
+                "end": 162.6999938964844
+            }
+        ],
+        "translationEn": "Attention! On platform 5.",
+        "translationVi": "Chú ý! Tại đường ray số 5."
+    },
+    {
+        "text": "Achtung! Auf Gleis 5.",
+        "start": 165.14000549316407,
+        "end": 168.97999267578126,
+        "wordTimings": [
+            {
+                "word": "Achtung!",
+                "start": 165.14000549316407,
+                "end": 166.27999877929688
+            },
+            {
+                "word": "Auf",
+                "start": 166.8800048828125,
+                "end": 166.8800048828125
+            },
+            {
+                "word": "Gleis",
+                "start": 166.8800048828125,
+                "end": 167.32000732421875
+            },
+            {
+                "word": "5.",
+                "start": 167.32000732421875,
+                "end": 168.97999267578126
+            }
+        ],
+        "translationEn": "Attention! On platform 5.",
+        "translationVi": "Chú ý! Tại đường ray số 5."
+    },
+    {
+        "text": "Bitte treten Sie vom Gleis zurück.",
+        "start": 168.67999877929688,
+        "end": 172.35999755859376,
+        "wordTimings": [
+            {
+                "word": "Bitte",
+                "start": 168.67999877929688,
+                "end": 169.82000732421875
+            },
+            {
+                "word": "treten",
+                "start": 169.82000732421875,
+                "end": 170.3000030517578
+            },
+            {
+                "word": "Sie",
+                "start": 170.3000030517578,
+                "end": 170.6999969482422
+            },
+            {
+                "word": "vom",
+                "start": 170.6999969482422,
+                "end": 171.02000427246094
+            },
+            {
+                "word": "Gleis",
+                "start": 171.02000427246094,
+                "end": 171.4600067138672
+            },
+            {
+                "word": "zurück.",
+                "start": 171.4600067138672,
+                "end": 172.35999755859376
+            }
+        ],
+        "translationEn": "Please stand back from the track.",
+        "translationVi": "Xin vui lòng lùi lại khỏi đường ray."
+    },
+    {
+        "text": "Bitte treten Sie vom Gleis zurück.",
+        "start": 173.53999938964844,
+        "end": 176.63999633789064,
+        "wordTimings": [
+            {
+                "word": "Bitte",
+                "start": 173.53999938964844,
+                "end": 174.16000366210938
+            },
+            {
+                "word": "treten",
+                "start": 174.16000366210938,
+                "end": 174.55999755859375
+            },
+            {
+                "word": "Sie",
+                "start": 174.55999755859375,
+                "end": 175
+            },
+            {
+                "word": "vom",
+                "start": 175,
+                "end": 175.3000030517578
+            },
+            {
+                "word": "Gleis",
+                "start": 175.3000030517578,
+                "end": 175.77999877929688
+            },
+            {
+                "word": "zurück.",
+                "start": 175.77999877929688,
+                "end": 176.63999633789064
+            }
+        ],
+        "translationEn": "Please stand back from the track.",
+        "translationVi": "Xin vui lòng lùi lại khỏi đường ray."
+    },
+    {
+        "text": "Der Schnellzug hält nicht an und fährt durch den Bahnhof.",
+        "start": 178.22000732421876,
+        "end": 182.55999450683595,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 178.22000732421876,
+                "end": 178.33999633789062
+            },
+            {
+                "word": "Schnellzug",
+                "start": 178.33999633789062,
+                "end": 178.97999572753906
+            },
+            {
+                "word": "hält",
+                "start": 178.97999572753906,
+                "end": 179.25999450683594
+            },
+            {
+                "word": "nicht",
+                "start": 179.25999450683594,
+                "end": 179.77999877929688
+            },
+            {
+                "word": "an",
+                "start": 179.77999877929688,
+                "end": 180.1999969482422
+            },
+            {
+                "word": "und",
+                "start": 180.1999969482422,
+                "end": 180.94000244140625
+            },
+            {
+                "word": "fährt",
+                "start": 180.94000244140625,
+                "end": 180.94000244140625
+            },
+            {
+                "word": "durch",
+                "start": 180.94000244140625,
+                "end": 181.32000732421875
+            },
+            {
+                "word": "den",
+                "start": 181.32000732421875,
+                "end": 181.67999267578125
+            },
+            {
+                "word": "Bahnhof.",
+                "start": 181.67999267578125,
+                "end": 182.55999450683595
+            }
+        ],
+        "translationEn": "The express train does not stop and passes through the station.",
+        "translationVi": "Tàu nhanh không dừng lại và đi qua ga."
+    },
+    {
+        "text": "Der Schnellzug hält nicht an und fährt durch den Bahnhof.",
+        "start": 183.92000427246094,
+        "end": 189.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 183.92000427246094,
+                "end": 184.89999389648438
+            },
+            {
+                "word": "Schnellzug",
+                "start": 184.89999389648438,
+                "end": 185.55999755859375
+            },
+            {
+                "word": "hält",
+                "start": 185.55999755859375,
+                "end": 185.83999633789062
+            },
+            {
+                "word": "nicht",
+                "start": 185.83999633789062,
+                "end": 186.33999633789062
+            },
+            {
+                "word": "an",
+                "start": 186.33999633789062,
+                "end": 186.8000030517578
+            },
+            {
+                "word": "und",
+                "start": 186.8000030517578,
+                "end": 187.5399932861328
+            },
+            {
+                "word": "fährt",
+                "start": 187.5399932861328,
+                "end": 187.5399932861328
+            },
+            {
+                "word": "durch",
+                "start": 187.5399932861328,
+                "end": 187.94000244140625
+            },
+            {
+                "word": "den",
+                "start": 187.94000244140625,
+                "end": 188.27999877929688
+            },
+            {
+                "word": "Bahnhof.",
+                "start": 188.27999877929688,
+                "end": 189.1999938964844
+            }
+        ],
+        "translationEn": "The express train does not stop and passes through the station.",
+        "translationVi": "Tàu nhanh không dừng lại và đi qua ga."
+    },
+    {
+        "text": "Hallo Mami.",
+        "start": 193.3600067138672,
+        "end": 194.6999938964844,
+        "wordTimings": [
+            {
+                "word": "Hallo",
+                "start": 193.3600067138672,
+                "end": 194.02000427246094
+            },
+            {
+                "word": "Mami.",
+                "start": 194.02000427246094,
+                "end": 194.6999938964844
+            }
+        ],
+        "translationEn": "Hello Mommy.",
+        "translationVi": "Xin chào mẹ."
+    },
+    {
+        "text": "Hallo Mami.",
+        "start": 198.26000061035157,
+        "end": 200.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Hallo",
+                "start": 198.26000061035157,
+                "end": 199.24000549316406
+            },
+            {
+                "word": "Mami.",
+                "start": 199.24000549316406,
+                "end": 200.4199951171875
+            }
+        ],
+        "translationEn": "Hello Mommy.",
+        "translationVi": "Xin chào Mami."
+    },
+    {
+        "text": "Ja Mami, kein Problem.",
+        "start": 202.65999450683594,
+        "end": 204.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Ja",
+                "start": 202.65999450683594,
+                "end": 203.05999755859375
+            },
+            {
+                "word": "Mami,",
+                "start": 203.05999755859375,
+                "end": 203.36000061035156
+            },
+            {
+                "word": "kein",
+                "start": 203.74000549316406,
+                "end": 203.86000061035156
+            },
+            {
+                "word": "Problem.",
+                "start": 203.86000061035156,
+                "end": 204.6800048828125
+            }
+        ],
+        "translationEn": "Yes, Mommy, no problem.",
+        "translationVi": "Vâng mẹ, không vấn đề gì."
+    },
+    {
+        "text": "Ja Mami, kein Problem.",
+        "start": 205.43999328613282,
+        "end": 207.3800018310547,
+        "wordTimings": [
+            {
+                "word": "Ja",
+                "start": 205.43999328613282,
+                "end": 205.75999450683594
+            },
+            {
+                "word": "Mami,",
+                "start": 205.75999450683594,
+                "end": 206.0399932861328
+            },
+            {
+                "word": "kein",
+                "start": 206.4600067138672,
+                "end": 206.60000610351562
+            },
+            {
+                "word": "Problem.",
+                "start": 206.60000610351562,
+                "end": 207.3800018310547
+            }
+        ],
+        "translationEn": "Yes, Mommy, no problem.",
+        "translationVi": "Vâng mẹ, không vấn đề gì."
+    },
+    {
+        "text": "Ich kann schon selber zufahren.",
+        "start": 208.31999816894532,
+        "end": 210.43999938964845,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 208.31999816894532,
+                "end": 208.47999572753906
+            },
+            {
+                "word": "kann",
+                "start": 208.47999572753906,
+                "end": 208.74000549316406
+            },
+            {
+                "word": "schon",
+                "start": 208.74000549316406,
+                "end": 209.1199951171875
+            },
+            {
+                "word": "selber",
+                "start": 209.1199951171875,
+                "end": 209.47999572753906
+            },
+            {
+                "word": "zufahren.",
+                "start": 209.47999572753906,
+                "end": 210.43999938964845
+            }
+        ],
+        "translationEn": "I can drive myself.",
+        "translationVi": "Tôi có thể tự lái đến đó."
+    },
+    {
+        "text": "Ich kann schon selber zufahren.",
+        "start": 211.03999938964844,
+        "end": 214.43999938964845,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 211.03999938964844,
+                "end": 212.3800048828125
+            },
+            {
+                "word": "kann",
+                "start": 212.3800048828125,
+                "end": 212.63999938964844
+            },
+            {
+                "word": "schon",
+                "start": 212.63999938964844,
+                "end": 212.97999572753906
+            },
+            {
+                "word": "selber",
+                "start": 212.97999572753906,
+                "end": 213.4199981689453
+            },
+            {
+                "word": "zufahren.",
+                "start": 213.4199981689453,
+                "end": 214.43999938964845
+            }
+        ],
+        "translationEn": "I can drive myself.",
+        "translationVi": "Tôi có thể tự lái đến đó."
+    },
+    {
+        "text": "Ja, ja.",
+        "start": 219.29999389648438,
+        "end": 223.97999267578126,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 219.29999389648438,
+                "end": 220.1199951171875
+            },
+            {
+                "word": "ja.",
+                "start": 222.47999572753906,
+                "end": 223.97999267578126
+            }
+        ],
+        "translationEn": "Yes, yes.",
+        "translationVi": "Vâng, vâng."
+    },
+    {
+        "text": "Steige in Basel aus.",
+        "start": 223.57999267578126,
+        "end": 225.4600036621094,
+        "wordTimings": [
+            {
+                "word": "Steige",
+                "start": 223.57999267578126,
+                "end": 223.6999969482422
+            },
+            {
+                "word": "in",
+                "start": 223.6999969482422,
+                "end": 224
+            },
+            {
+                "word": "Basel",
+                "start": 224,
+                "end": 224.55999755859375
+            },
+            {
+                "word": "aus.",
+                "start": 224.55999755859375,
+                "end": 225.4600036621094
+            }
+        ],
+        "translationEn": "Get off in Basel.",
+        "translationVi": "Xuống xe ở Basel."
+    },
+    {
+        "text": "Steige in Basel aus und komme rechtzeitig an.",
+        "start": 225.7800048828125,
+        "end": 231.83999328613282,
+        "wordTimings": [
+            {
+                "word": "Steige",
+                "start": 225.7800048828125,
+                "end": 226.6999969482422
+            },
+            {
+                "word": "in",
+                "start": 226.6999969482422,
+                "end": 227.05999755859375
+            },
+            {
+                "word": "Basel",
+                "start": 227.05999755859375,
+                "end": 227.5399932861328
+            },
+            {
+                "word": "aus",
+                "start": 227.5399932861328,
+                "end": 228.1199951171875
+            },
+            {
+                "word": "und",
+                "start": 228.63999938964844,
+                "end": 229.83999633789062
+            },
+            {
+                "word": "komme",
+                "start": 229.83999633789062,
+                "end": 230.13999938964844
+            },
+            {
+                "word": "rechtzeitig",
+                "start": 230.13999938964844,
+                "end": 230.94000244140625
+            },
+            {
+                "word": "an.",
+                "start": 230.94000244140625,
+                "end": 231.83999328613282
+            }
+        ],
+        "translationEn": "Get off in Basel and arrive on time.",
+        "translationVi": "Xuống xe ở Basel và đến đúng giờ."
+    },
+    {
+        "text": "Steige in Basel aus und komme rechtzeitig an.",
+        "start": 0,
+        "end": 236.71999511718758,
+        "wordTimings": [
+            {
+                "word": "Steige",
+                "start": 0,
+                "end": 0.3,
+                "estimated": true
+            },
+            {
+                "word": "in",
+                "start": 234,
+                "end": 234.6199951171875
+            },
+            {
+                "word": "Basel",
+                "start": 234.6199951171875,
+                "end": 234.9199951171875,
+                "estimated": true
+            },
+            {
+                "word": "aus",
+                "start": 234.9199951171875,
+                "end": 235.21999511718752,
+                "estimated": true
+            },
+            {
+                "word": "und",
+                "start": 235.21999511718752,
+                "end": 235.51999511718753,
+                "estimated": true
+            },
+            {
+                "word": "komme",
+                "start": 235.51999511718753,
+                "end": 235.81999511718755,
+                "estimated": true
+            },
+            {
+                "word": "rechtzeitig",
+                "start": 235.81999511718755,
+                "end": 236.11999511718756,
+                "estimated": true
+            },
+            {
+                "word": "an.",
+                "start": 236.11999511718756,
+                "end": 236.71999511718758,
+                "estimated": true
+            }
+        ],
+        "translationEn": "Get off in Basel and arrive on time.",
+        "translationVi": "Xuống xe ở Basel và đến đúng giờ."
+    },
+    {
+        "text": "Mach dir doch keine Sorgen.",
+        "start": 236.14000549316407,
+        "end": 237.71999816894532,
+        "wordTimings": [
+            {
+                "word": "Mach",
+                "start": 236.14000549316407,
+                "end": 236.24000549316406
+            },
+            {
+                "word": "dir",
+                "start": 236.24000549316406,
+                "end": 236.4199981689453
+            },
+            {
+                "word": "doch",
+                "start": 236.4199981689453,
+                "end": 236.8000030517578
+            },
+            {
+                "word": "keine",
+                "start": 236.8000030517578,
+                "end": 237.05999755859375
+            },
+            {
+                "word": "Sorgen.",
+                "start": 237.05999755859375,
+                "end": 237.71999816894532
+            }
+        ],
+        "translationEn": "Don't worry.",
+        "translationVi": "Đừng lo lắng nhé."
+    },
+    {
+        "text": "Mach dir doch keine Sorgen.",
+        "start": 238.31999816894532,
+        "end": 241.3800018310547,
+        "wordTimings": [
+            {
+                "word": "Mach",
+                "start": 238.31999816894532,
+                "end": 239.74000549316406
+            },
+            {
+                "word": "dir",
+                "start": 239.74000549316406,
+                "end": 239.9600067138672
+            },
+            {
+                "word": "doch",
+                "start": 239.9600067138672,
+                "end": 240.33999633789062
+            },
+            {
+                "word": "keine",
+                "start": 240.33999633789062,
+                "end": 240.60000610351562
+            },
+            {
+                "word": "Sorgen.",
+                "start": 240.60000610351562,
+                "end": 241.3800018310547
+            }
+        ],
+        "translationEn": "Don't worry.",
+        "translationVi": "Đừng lo lắng nhé."
+    },
+    {
+        "text": "Achtung! Achtung! Achtung! Achtung!",
+        "start": 245.81999816894532,
+        "end": 253.5799987792969,
+        "wordTimings": [
+            {
+                "word": "Achtung!",
+                "start": 245.81999816894532,
+                "end": 246.47999572753906
+            },
+            {
+                "word": "Achtung!",
+                "start": 247.39999389648438,
+                "end": 247.39999389648438
+            },
+            {
+                "word": "Achtung!",
+                "start": 251.16000366210938,
+                "end": 252.55999755859375
+            },
+            {
+                "word": "Achtung!",
+                "start": 253.27999877929688,
+                "end": 253.5799987792969
+            }
+        ],
+        "translationEn": "Attention! Attention! Attention! Attention!",
+        "translationVi": "Chú ý! Chú ý! Chú ý! Chú ý!"
+    },
+    {
+        "text": "Der Regionalexpress hat einen Elektronikschaden.",
+        "start": 255.29999389648438,
+        "end": 258.7200134277344,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 255.29999389648438,
+                "end": 255.55999755859375
+            },
+            {
+                "word": "Regionalexpress",
+                "start": 255.55999755859375,
+                "end": 256.9200134277344
+            },
+            {
+                "word": "hat",
+                "start": 256.9200134277344,
+                "end": 257.239990234375
+            },
+            {
+                "word": "einen",
+                "start": 257.239990234375,
+                "end": 257.6199951171875
+            },
+            {
+                "word": "Elektronikschaden.",
+                "start": 257.6199951171875,
+                "end": 258.7200134277344
+            }
+        ],
+        "translationEn": "The regional express has an electronic malfunction.",
+        "translationVi": "Tàu Regionalexpress bị hỏng điện tử."
+    },
+    {
+        "text": "Der Regionalexpress hat einen Elektronikschaden.",
+        "start": 260.17999877929685,
+        "end": 263.7200134277344,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 260.17999877929685,
+                "end": 260.6199951171875
+            },
+            {
+                "word": "Regionalexpress",
+                "start": 260.6199951171875,
+                "end": 261.9599914550781
+            },
+            {
+                "word": "hat",
+                "start": 261.9599914550781,
+                "end": 262.2799987792969
+            },
+            {
+                "word": "einen",
+                "start": 262.2799987792969,
+                "end": 262.70001220703125
+            },
+            {
+                "word": "Elektronikschaden.",
+                "start": 262.70001220703125,
+                "end": 263.7200134277344
+            }
+        ],
+        "translationEn": "The regional express has an electronic malfunction.",
+        "translationVi": "Tàu Regionalexpress gặp sự cố về điện tử."
+    },
+    {
+        "text": "Bitte steigen Sie nicht ein.",
+        "start": 265.94000854492185,
+        "end": 269.4400146484375,
+        "wordTimings": [
+            {
+                "word": "Bitte",
+                "start": 265.94000854492185,
+                "end": 266.9200134277344
+            },
+            {
+                "word": "steigen",
+                "start": 266.9200134277344,
+                "end": 267.44000244140625
+            },
+            {
+                "word": "Sie",
+                "start": 267.44000244140625,
+                "end": 267.8999938964844
+            },
+            {
+                "word": "nicht",
+                "start": 267.8999938964844,
+                "end": 268.3399963378906
+            },
+            {
+                "word": "ein.",
+                "start": 268.3399963378906,
+                "end": 269.4400146484375
+            }
+        ],
+        "translationEn": "Please do not get in.",
+        "translationVi": "Xin đừng lên xe."
+    },
+    {
+        "text": "Bitte steigen Sie nicht ein.",
+        "start": 270.8400024414062,
+        "end": 273.060009765625,
+        "wordTimings": [
+            {
+                "word": "Bitte",
+                "start": 270.8400024414062,
+                "end": 270.94000244140625
+            },
+            {
+                "word": "steigen",
+                "start": 270.94000244140625,
+                "end": 271.4800109863281
+            },
+            {
+                "word": "Sie",
+                "start": 271.4800109863281,
+                "end": 271.8399963378906
+            },
+            {
+                "word": "nicht",
+                "start": 271.8399963378906,
+                "end": 272.3800048828125
+            },
+            {
+                "word": "ein.",
+                "start": 272.3800048828125,
+                "end": 273.060009765625
+            }
+        ],
+        "translationEn": "Please do not get in.",
+        "translationVi": "Xin đừng lên xe."
+    },
+    {
+        "text": "Der Zug muss zur Wartung ins Depot.",
+        "start": 274.660009765625,
+        "end": 277.62000732421876,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 274.660009765625,
+                "end": 274.7799987792969
+            },
+            {
+                "word": "Zug",
+                "start": 274.7799987792969,
+                "end": 275.1000061035156
+            },
+            {
+                "word": "muss",
+                "start": 275.1000061035156,
+                "end": 275.5
+            },
+            {
+                "word": "zur",
+                "start": 275.5,
+                "end": 275.82000732421875
+            },
+            {
+                "word": "Wartung",
+                "start": 275.82000732421875,
+                "end": 276.4200134277344
+            },
+            {
+                "word": "ins",
+                "start": 276.4200134277344,
+                "end": 276.8999938964844
+            },
+            {
+                "word": "Depot.",
+                "start": 276.8999938964844,
+                "end": 277.62000732421876
+            }
+        ],
+        "translationEn": "The train needs to go to the depot for maintenance.",
+        "translationVi": "Tàu phải vào kho để bảo trì."
+    },
+    {
+        "text": "Der Zug muss zur Wartung ins Depot.",
+        "start": 279.1200012207031,
+        "end": 282.12000732421876,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 279.1200012207031,
+                "end": 279.2200012207031
+            },
+            {
+                "word": "Zug",
+                "start": 279.2200012207031,
+                "end": 279.55999755859375
+            },
+            {
+                "word": "muss",
+                "start": 279.55999755859375,
+                "end": 279.9599914550781
+            },
+            {
+                "word": "zur",
+                "start": 279.9599914550781,
+                "end": 280.29998779296875
+            },
+            {
+                "word": "Wartung",
+                "start": 280.29998779296875,
+                "end": 280.8599853515625
+            },
+            {
+                "word": "ins",
+                "start": 280.8599853515625,
+                "end": 281.3399963378906
+            },
+            {
+                "word": "Depot.",
+                "start": 281.3399963378906,
+                "end": 282.12000732421876
+            }
+        ],
+        "translationEn": "The train needs to go to the depot for maintenance.",
+        "translationVi": "Tàu cần phải bảo trì tại kho."
+    },
+    {
+        "text": "Steigen Sie nicht ein und warten Sie auf den Ersatz.",
+        "start": 284.2800048828125,
+        "end": 288.4400146484375,
+        "wordTimings": [
+            {
+                "word": "Steigen",
+                "start": 284.2800048828125,
+                "end": 284.3800048828125
+            },
+            {
+                "word": "Sie",
+                "start": 284.3800048828125,
+                "end": 284.7799987792969
+            },
+            {
+                "word": "nicht",
+                "start": 284.7799987792969,
+                "end": 285.32000732421875
+            },
+            {
+                "word": "ein",
+                "start": 285.32000732421875,
+                "end": 285.70001220703125
+            },
+            {
+                "word": "und",
+                "start": 285.70001220703125,
+                "end": 286.29998779296875
+            },
+            {
+                "word": "warten",
+                "start": 286.29998779296875,
+                "end": 286.6199951171875
+            },
+            {
+                "word": "Sie",
+                "start": 286.6199951171875,
+                "end": 286.9599914550781
+            },
+            {
+                "word": "auf",
+                "start": 286.9599914550781,
+                "end": 287.239990234375
+            },
+            {
+                "word": "den",
+                "start": 287.239990234375,
+                "end": 287.5799865722656
+            },
+            {
+                "word": "Ersatz.",
+                "start": 287.5799865722656,
+                "end": 288.4400146484375
+            }
+        ],
+        "translationEn": "Do not get in and wait for the replacement.",
+        "translationVi": "Đừng lên xe và hãy chờ đợi sự thay thế."
+    },
+    {
+        "text": "Steigen Sie nicht ein und warten Sie auf den Ersatz.",
+        "start": 290.4,
+        "end": 293.6999938964844,
+        "wordTimings": [
+            {
+                "word": "Steigen",
+                "start": 290.4,
+                "end": 290.94000244140625
+            },
+            {
+                "word": "Sie",
+                "start": 290.94000244140625,
+                "end": 291.32000732421875
+            },
+            {
+                "word": "nicht",
+                "start": 291.32000732421875,
+                "end": 291.8399963378906
+            },
+            {
+                "word": "ein",
+                "start": 291.8399963378906,
+                "end": 292.239990234375
+            },
+            {
+                "word": "und",
+                "start": 292.239990234375,
+                "end": 293.17999267578125
+            },
+            {
+                "word": "warten",
+                "start": 293.17999267578125,
+                "end": 293.17999267578125
+            },
+            {
+                "word": "Sie",
+                "start": 293.17999267578125,
+                "end": 293.3999938964844
+            },
+            {
+                "word": "auf",
+                "start": 293.3999938964844,
+                "end": 293.3999938964844
+            },
+            {
+                "word": "den",
+                "start": 293.3999938964844,
+                "end": 293.3999938964844
+            },
+            {
+                "word": "Ersatz.",
+                "start": 293.3999938964844,
+                "end": 293.6999938964844
+            }
+        ],
+        "translationEn": "Do not get in and wait for the replacement.",
+        "translationVi": "Đừng lên xe và hãy chờ đợi sự thay thế."
+    },
+    {
+        "text": "Vielen Dank für Ihr Verständnis.",
+        "start": 295.7599853515625,
+        "end": 299.539990234375,
+        "wordTimings": [
+            {
+                "word": "Vielen",
+                "start": 295.7599853515625,
+                "end": 296.8399963378906
+            },
+            {
+                "word": "Dank",
+                "start": 296.8399963378906,
+                "end": 297.2799987792969
+            },
+            {
+                "word": "für",
+                "start": 297.2799987792969,
+                "end": 297.5400085449219
+            },
+            {
+                "word": "Ihr",
+                "start": 297.5400085449219,
+                "end": 297.760009765625
+            },
+            {
+                "word": "Verständnis.",
+                "start": 297.760009765625,
+                "end": 299.539990234375
+            }
+        ],
+        "translationEn": "Thank you very much for your understanding.",
+        "translationVi": "Cảm ơn bạn đã hiểu."
+    },
+    {
+        "text": "Vielen Dank für Ihr Verständnis.",
+        "start": 299.139990234375,
+        "end": 302.90000610351564,
+        "wordTimings": [
+            {
+                "word": "Vielen",
+                "start": 299.139990234375,
+                "end": 299.239990234375
+            },
+            {
+                "word": "Dank",
+                "start": 299.239990234375,
+                "end": 299.239990234375
+            },
+            {
+                "word": "für",
+                "start": 299.239990234375,
+                "end": 301.32000732421875
+            },
+            {
+                "word": "Ihr",
+                "start": 301.32000732421875,
+                "end": 301.5799865722656
+            },
+            {
+                "word": "Verständnis.",
+                "start": 301.5799865722656,
+                "end": 302.90000610351564
+            }
+        ],
+        "translationEn": "Thank you very much for your understanding.",
+        "translationVi": "Cảm ơn bạn đã hiểu."
+    },
+    {
+        "text": "Hör zu.",
+        "start": 304.3599914550781,
+        "end": 306.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Hör",
+                "start": 304.3599914550781,
+                "end": 304.4599914550781
+            },
+            {
+                "word": "zu.",
+                "start": 304.4599914550781,
+                "end": 306.50001220703126
+            }
+        ],
+        "translationEn": "Listen.",
+        "translationVi": "Nghe này."
+    },
+    {
+        "text": "Hör zu.",
+        "start": 306.7200073242187,
+        "end": 307.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Hör",
+                "start": 306.7200073242187,
+                "end": 306.8999938964844
+            },
+            {
+                "word": "zu.",
+                "start": 306.8999938964844,
+                "end": 307.6800048828125
+            }
+        ],
+        "translationEn": "Listen.",
+        "translationVi": "Nghe này."
+    },
+    {
+        "text": "Das richtige Präfix erkennen.",
+        "start": 309.82001342773435,
+        "end": 313.13999633789064,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 309.82001342773435,
+                "end": 310.0400085449219
+            },
+            {
+                "word": "richtige",
+                "start": 310.0400085449219,
+                "end": 310.5199890136719
+            },
+            {
+                "word": "Präfix",
+                "start": 310.5199890136719,
+                "end": 311.32000732421875
+            },
+            {
+                "word": "erkennen.",
+                "start": 311.32000732421875,
+                "end": 313.13999633789064
+            }
+        ],
+        "translationEn": "Recognizing the correct prefix.",
+        "translationVi": "Nhận diện tiền tố đúng."
+    },
+    {
+        "text": "Das richtige Präfix erkennen.",
+        "start": 313.160009765625,
+        "end": 315.59998779296876,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 313.160009765625,
+                "end": 313.3599853515625
+            },
+            {
+                "word": "richtige",
+                "start": 313.3599853515625,
+                "end": 313.8599853515625
+            },
+            {
+                "word": "Präfix",
+                "start": 313.8599853515625,
+                "end": 314.7200012207031
+            },
+            {
+                "word": "erkennen.",
+                "start": 314.7200012207031,
+                "end": 315.59998779296876
+            }
+        ],
+        "translationEn": "Recognizing the correct prefix.",
+        "translationVi": "Nhận diện tiền tố đúng."
+    },
+    {
+        "text": "Wann stehst du am Montag auf?",
+        "start": 317.44000854492185,
+        "end": 320.09998779296876,
+        "wordTimings": [
+            {
+                "word": "Wann",
+                "start": 317.44000854492185,
+                "end": 317.5400085449219
+            },
+            {
+                "word": "stehst",
+                "start": 317.5400085449219,
+                "end": 317.9599914550781
+            },
+            {
+                "word": "du",
+                "start": 317.9599914550781,
+                "end": 318.3999938964844
+            },
+            {
+                "word": "am",
+                "start": 318.3999938964844,
+                "end": 318.6600036621094
+            },
+            {
+                "word": "Montag",
+                "start": 318.6600036621094,
+                "end": 319.3599853515625
+            },
+            {
+                "word": "auf?",
+                "start": 319.3599853515625,
+                "end": 320.09998779296876
+            }
+        ],
+        "translationEn": "When do you get up on Monday?",
+        "translationVi": "Bạn sẽ dậy lúc mấy giờ vào thứ Hai?"
+    },
+    {
+        "text": "Wann stehst du am Montag auf?",
+        "start": 319.6999877929687,
+        "end": 324.13999633789064,
+        "wordTimings": [
+            {
+                "word": "Wann",
+                "start": 319.6999877929687,
+                "end": 321.4599914550781
+            },
+            {
+                "word": "stehst",
+                "start": 321.4599914550781,
+                "end": 321.9800109863281
+            },
+            {
+                "word": "du",
+                "start": 321.9800109863281,
+                "end": 322.3599853515625
+            },
+            {
+                "word": "am",
+                "start": 322.3599853515625,
+                "end": 322.9599914550781
+            },
+            {
+                "word": "Montag",
+                "start": 322.9599914550781,
+                "end": 323.29998779296875
+            },
+            {
+                "word": "auf?",
+                "start": 323.29998779296875,
+                "end": 324.13999633789064
+            }
+        ],
+        "translationEn": "When do you get up on Monday?",
+        "translationVi": "Bạn dậy vào thứ Hai lúc mấy giờ?"
+    },
+    {
+        "text": "Ich stehe am Montag immer um halb acht auf.",
+        "start": 329.5199951171875,
+        "end": 339.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 329.5199951171875,
+                "end": 330.6600036621094
+            },
+            {
+                "word": "stehe",
+                "start": 330.6600036621094,
+                "end": 331
+            },
+            {
+                "word": "am",
+                "start": 331,
+                "end": 336.9200134277344
+            },
+            {
+                "word": "Montag",
+                "start": 336.9200134277344,
+                "end": 337.5400085449219
+            },
+            {
+                "word": "immer",
+                "start": 337.5400085449219,
+                "end": 338.1199951171875
+            },
+            {
+                "word": "um",
+                "start": 338.1199951171875,
+                "end": 338.79998779296875
+            },
+            {
+                "word": "halb",
+                "start": 338.79998779296875,
+                "end": 338.9800109863281
+            },
+            {
+                "word": "acht",
+                "start": 338.9800109863281,
+                "end": 339.2799987792969
+            },
+            {
+                "word": "auf.",
+                "start": 339.2799987792969,
+                "end": 339.9600036621094
+            }
+        ],
+        "translationEn": "I always get up at half past seven on Mondays.",
+        "translationVi": "Tôi luôn dậy lúc bảy rưỡi vào thứ Hai."
+    },
+    {
+        "text": "Wann fährt dein Bus ab?",
+        "start": 341.5400146484375,
+        "end": 343.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Wann",
+                "start": 341.5400146484375,
+                "end": 341.6600036621094
+            },
+            {
+                "word": "fährt",
+                "start": 341.6600036621094,
+                "end": 341.9599914550781
+            },
+            {
+                "word": "dein",
+                "start": 341.9599914550781,
+                "end": 342.3999938964844
+            },
+            {
+                "word": "Bus",
+                "start": 342.3999938964844,
+                "end": 342.739990234375
+            },
+            {
+                "word": "ab?",
+                "start": 342.739990234375,
+                "end": 343.50001220703126
+            }
+        ],
+        "translationEn": "When does your bus leave?",
+        "translationVi": "Khi nào xe buýt của bạn khởi hành?"
+    },
+    {
+        "text": "Wann fährt dein Bus ab?",
+        "start": 343.1000122070312,
+        "end": 346.8,
+        "wordTimings": [
+            {
+                "word": "Wann",
+                "start": 343.1000122070312,
+                "end": 344.8800048828125
+            },
+            {
+                "word": "fährt",
+                "start": 344.8800048828125,
+                "end": 345.260009765625
+            },
+            {
+                "word": "dein",
+                "start": 345.260009765625,
+                "end": 345.67999267578125
+            },
+            {
+                "word": "Bus",
+                "start": 345.67999267578125,
+                "end": 346
+            },
+            {
+                "word": "ab?",
+                "start": 346,
+                "end": 346.8
+            }
+        ],
+        "translationEn": "When does your bus leave?",
+        "translationVi": "Khi nào xe buýt của bạn khởi hành?"
+    },
+    {
+        "text": "Mein Bus fährt um zehn vor elf ab.",
+        "start": 349.139990234375,
+        "end": 357.539990234375,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 349.139990234375,
+                "end": 349.5400085449219
+            },
+            {
+                "word": "Bus",
+                "start": 349.5400085449219,
+                "end": 349.8999938964844
+            },
+            {
+                "word": "fährt",
+                "start": 349.8999938964844,
+                "end": 350.239990234375
+            },
+            {
+                "word": "um",
+                "start": 350.239990234375,
+                "end": 355.5400085449219
+            },
+            {
+                "word": "zehn",
+                "start": 355.5400085449219,
+                "end": 355.8999938964844
+            },
+            {
+                "word": "vor",
+                "start": 355.8999938964844,
+                "end": 356.3599853515625
+            },
+            {
+                "word": "elf",
+                "start": 356.3599853515625,
+                "end": 356.67999267578125
+            },
+            {
+                "word": "ab.",
+                "start": 356.67999267578125,
+                "end": 357.539990234375
+            }
+        ],
+        "translationEn": "My bus departs at ten to eleven.",
+        "translationVi": "Xe buýt của tôi khởi hành lúc mười giờ mười."
+    },
+    {
+        "text": "Wann fängt die Deutschstunde an?",
+        "start": 358.8400024414062,
+        "end": 366.00001220703126,
+        "wordTimings": [
+            {
+                "word": "Wann",
+                "start": 358.8400024414062,
+                "end": 359.3800048828125
+            },
+            {
+                "word": "fängt",
+                "start": 359.3800048828125,
+                "end": 359.760009765625
+            },
+            {
+                "word": "die",
+                "start": 359.760009765625,
+                "end": 364.5199890136719
+            },
+            {
+                "word": "Deutschstunde",
+                "start": 364.5199890136719,
+                "end": 365.3399963378906
+            },
+            {
+                "word": "an?",
+                "start": 365.3399963378906,
+                "end": 366.00001220703126
+            }
+        ],
+        "translationEn": "When does the German lesson start?",
+        "translationVi": "Tiết học tiếng Đức bắt đầu lúc mấy giờ?"
+    },
+    {
+        "text": "Die Deutschstunde fängt um viertel nach eins an.",
+        "start": 366.660009765625,
+        "end": 371.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 366.660009765625,
+                "end": 367.6400146484375
+            },
+            {
+                "word": "Deutschstunde",
+                "start": 367.6400146484375,
+                "end": 368.44000244140625
+            },
+            {
+                "word": "fängt",
+                "start": 368.44000244140625,
+                "end": 368.8599853515625
+            },
+            {
+                "word": "um",
+                "start": 368.8599853515625,
+                "end": 369.6600036621094
+            },
+            {
+                "word": "viertel",
+                "start": 369.6600036621094,
+                "end": 370.1000061035156
+            },
+            {
+                "word": "nach",
+                "start": 370.1000061035156,
+                "end": 370.4200134277344
+            },
+            {
+                "word": "eins",
+                "start": 370.4200134277344,
+                "end": 370.8999938964844
+            },
+            {
+                "word": "an.",
+                "start": 370.8999938964844,
+                "end": 371.50001220703126
+            }
+        ],
+        "translationEn": "The German lesson starts at a quarter past one.",
+        "translationVi": "Tiết học tiếng Đức bắt đầu lúc một giờ mười lăm."
+    },
+    {
+        "text": "Die Deutschstunde fängt um viertel nach eins an.",
+        "start": 373.1000122070312,
+        "end": 376.8199890136719,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 373.1000122070312,
+                "end": 373.20001220703125
+            },
+            {
+                "word": "Deutschstunde",
+                "start": 373.20001220703125,
+                "end": 373.6400146484375
+            },
+            {
+                "word": "fängt",
+                "start": 373.6400146484375,
+                "end": 374.0799865722656
+            },
+            {
+                "word": "um",
+                "start": 374.0799865722656,
+                "end": 374.9200134277344
+            },
+            {
+                "word": "viertel",
+                "start": 374.9200134277344,
+                "end": 375.32000732421875
+            },
+            {
+                "word": "nach",
+                "start": 375.32000732421875,
+                "end": 375.6400146484375
+            },
+            {
+                "word": "eins",
+                "start": 375.6400146484375,
+                "end": 376.0799865722656
+            },
+            {
+                "word": "an.",
+                "start": 376.0799865722656,
+                "end": 376.8199890136719
+            }
+        ],
+        "translationEn": "The German lesson starts at a quarter past one.",
+        "translationVi": "Tiết học tiếng Đức bắt đầu lúc một giờ mười lăm."
+    },
+    {
+        "text": "Wann siehst du fern?",
+        "start": 378.0000061035156,
+        "end": 382.40000610351564,
+        "wordTimings": [
+            {
+                "word": "Wann",
+                "start": 378.0000061035156,
+                "end": 378.32000732421875
+            },
+            {
+                "word": "siehst",
+                "start": 378.32000732421875,
+                "end": 378.7200012207031
+            },
+            {
+                "word": "du",
+                "start": 378.7200012207031,
+                "end": 381.9200134277344
+            },
+            {
+                "word": "fern?",
+                "start": 381.9200134277344,
+                "end": 382.40000610351564
+            }
+        ],
+        "translationEn": "When do you watch TV?",
+        "translationVi": "Khi nào bạn xem tivi?"
+    },
+    {
+        "text": "Ich sehe von 20 bis 22 Uhr fern.",
+        "start": 383.7599853515625,
+        "end": 393.9400146484375,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 383.7599853515625,
+                "end": 384.739990234375
+            },
+            {
+                "word": "sehe",
+                "start": 384.739990234375,
+                "end": 385.0799865722656
+            },
+            {
+                "word": "von",
+                "start": 385.0799865722656,
+                "end": 385.4599914550781
+            },
+            {
+                "word": "20",
+                "start": 385.4599914550781,
+                "end": 386.239990234375
+            },
+            {
+                "word": "bis",
+                "start": 386.239990234375,
+                "end": 391.94000244140625
+            },
+            {
+                "word": "22",
+                "start": 391.94000244140625,
+                "end": 393.05999755859375
+            },
+            {
+                "word": "Uhr",
+                "start": 393.05999755859375,
+                "end": 393.3999938964844
+            },
+            {
+                "word": "fern.",
+                "start": 393.3999938964844,
+                "end": 393.9400146484375
+            }
+        ],
+        "translationEn": "I watch TV from 8 PM to 10 PM.",
+        "translationVi": "Tôi xem tivi từ 20 đến 22 giờ."
+    },
+    {
+        "text": "Wann kaufst du im Supermarkt ein?",
+        "start": 395.0000061035156,
+        "end": 398.62000732421876,
+        "wordTimings": [
+            {
+                "word": "Wann",
+                "start": 395.0000061035156,
+                "end": 395.9800109863281
+            },
+            {
+                "word": "kaufst",
+                "start": 395.9800109863281,
+                "end": 396.5400085449219
+            },
+            {
+                "word": "du",
+                "start": 396.5400085449219,
+                "end": 396.9599914550781
+            },
+            {
+                "word": "im",
+                "start": 396.9599914550781,
+                "end": 397.1400146484375
+            },
+            {
+                "word": "Supermarkt",
+                "start": 397.1400146484375,
+                "end": 397.8800048828125
+            },
+            {
+                "word": "ein?",
+                "start": 397.8800048828125,
+                "end": 398.62000732421876
+            }
+        ],
+        "translationEn": "When do you shop at the supermarket?",
+        "translationVi": "Khi nào bạn đi mua sắm ở siêu thị?"
+    },
+    {
+        "text": "Ich kaufe immer am Montag ein.",
+        "start": 403.8599914550781,
+        "end": 410.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 403.8599914550781,
+                "end": 404.6600036621094
+            },
+            {
+                "word": "kaufe",
+                "start": 404.6600036621094,
+                "end": 405.17999267578125
+            },
+            {
+                "word": "immer",
+                "start": 405.17999267578125,
+                "end": 405.6600036621094
+            },
+            {
+                "word": "am",
+                "start": 405.6600036621094,
+                "end": 409.739990234375
+            },
+            {
+                "word": "Montag",
+                "start": 409.739990234375,
+                "end": 410.1000061035156
+            },
+            {
+                "word": "ein.",
+                "start": 410.1000061035156,
+                "end": 410.6800048828125
+            }
+        ],
+        "translationEn": "I always go shopping on Monday.",
+        "translationVi": "Tôi luôn đi mua sắm vào thứ Hai."
+    },
+    {
+        "text": "Wann schläfst du aus?",
+        "start": 412.4799865722656,
+        "end": 417.09998779296876,
+        "wordTimings": [
+            {
+                "word": "Wann",
+                "start": 412.4799865722656,
+                "end": 412.5799865722656
+            },
+            {
+                "word": "schläfst",
+                "start": 412.5799865722656,
+                "end": 413.17999267578125
+            },
+            {
+                "word": "du",
+                "start": 413.17999267578125,
+                "end": 416.4800109863281
+            },
+            {
+                "word": "aus?",
+                "start": 416.4800109863281,
+                "end": 417.09998779296876
+            }
+        ],
+        "translationEn": "When do you sleep in?",
+        "translationVi": "Khi nào bạn ngủ dậy muộn?"
+    },
+    {
+        "text": "Ich schlafe am Wochenende aus.",
+        "start": 421.0799926757812,
+        "end": 428.060009765625,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 421.0799926757812,
+                "end": 421.8800048828125
+            },
+            {
+                "word": "schlafe",
+                "start": 421.8800048828125,
+                "end": 422.260009765625
+            },
+            {
+                "word": "am",
+                "start": 422.260009765625,
+                "end": 426.44000244140625
+            },
+            {
+                "word": "Wochenende",
+                "start": 426.44000244140625,
+                "end": 427.17999267578125
+            },
+            {
+                "word": "aus.",
+                "start": 427.17999267578125,
+                "end": 428.060009765625
+            }
+        ],
+        "translationEn": "I sleep in on the weekends.",
+        "translationVi": "Cuối tuần tôi ngủ nướng."
+    },
+    {
+        "text": "Kurzdialog.",
+        "start": 432.160009765625,
+        "end": 433.3199890136719,
+        "wordTimings": [
+            {
+                "word": "Kurzdialog.",
+                "start": 432.160009765625,
+                "end": 433.3199890136719
+            }
+        ],
+        "translationEn": "Short dialogue.",
+        "translationVi": "Đối thoại ngắn."
+    },
+    {
+        "text": "Räum dein Zimmer auf.",
+        "start": 436.2399963378906,
+        "end": 439.060009765625,
+        "wordTimings": [
+            {
+                "word": "Räum",
+                "start": 436.2399963378906,
+                "end": 437.1000061035156
+            },
+            {
+                "word": "dein",
+                "start": 437.1000061035156,
+                "end": 437.8599853515625
+            },
+            {
+                "word": "Zimmer",
+                "start": 437.8599853515625,
+                "end": 438.20001220703125
+            },
+            {
+                "word": "auf.",
+                "start": 438.20001220703125,
+                "end": 439.060009765625
+            }
+        ],
+        "translationEn": "Clean up your room.",
+        "translationVi": "Dọn dẹp phòng của bạn."
+    },
+    {
+        "text": "Räumst du das Zimmer auf?",
+        "start": 440.0199951171875,
+        "end": 444.37998657226564,
+        "wordTimings": [
+            {
+                "word": "Räumst",
+                "start": 440.0199951171875,
+                "end": 440.2200012207031
+            },
+            {
+                "word": "du",
+                "start": 440.2200012207031,
+                "end": 440.32000732421875
+            },
+            {
+                "word": "das",
+                "start": 440.32000732421875,
+                "end": 443.55999755859375
+            },
+            {
+                "word": "Zimmer",
+                "start": 443.55999755859375,
+                "end": 443.7200012207031
+            },
+            {
+                "word": "auf?",
+                "start": 443.7200012207031,
+                "end": 444.37998657226564
+            }
+        ],
+        "translationEn": "Are you tidying up the room?",
+        "translationVi": "Bạn có dọn dẹp phòng không?"
+    },
+    {
+        "text": "Ja Mutter, ich räume das Zimmer gleich auf.",
+        "start": 445.4799865722656,
+        "end": 452.50001220703126,
+        "wordTimings": [
+            {
+                "word": "Ja",
+                "start": 445.4799865722656,
+                "end": 445.9200134277344
+            },
+            {
+                "word": "Mutter,",
+                "start": 445.9200134277344,
+                "end": 446.29998779296875
+            },
+            {
+                "word": "ich",
+                "start": 446.3399963378906,
+                "end": 446.6000061035156
+            },
+            {
+                "word": "räume",
+                "start": 446.6000061035156,
+                "end": 446.94000244140625
+            },
+            {
+                "word": "das",
+                "start": 446.94000244140625,
+                "end": 451.5799865722656
+            },
+            {
+                "word": "Zimmer",
+                "start": 451.5799865722656,
+                "end": 451.5799865722656
+            },
+            {
+                "word": "gleich",
+                "start": 451.5799865722656,
+                "end": 452
+            },
+            {
+                "word": "auf.",
+                "start": 452,
+                "end": 452.50001220703126
+            }
+        ],
+        "translationEn": "Yes, Mom, I will clean up the room right away.",
+        "translationVi": "Vâng mẹ, con sẽ dọn dẹp phòng ngay."
+    },
+    {
+        "text": "Nein, nicht gleich.",
+        "start": 453.1000122070312,
+        "end": 461.039990234375,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 453.1000122070312,
+                "end": 454.05999755859375
+            },
+            {
+                "word": "nicht",
+                "start": 455.9200134277344,
+                "end": 460.2200012207031
+            },
+            {
+                "word": "gleich.",
+                "start": 460.2200012207031,
+                "end": 461.039990234375
+            }
+        ],
+        "translationEn": "No, not right away.",
+        "translationVi": "Không, không ngay lập tức."
+    },
+    {
+        "text": "Du räumst jetzt sofort das Zimmer auf.",
+        "start": 460.9,
+        "end": 463.74000244140626,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 460.9,
+                "end": 461.0799865722656
+            },
+            {
+                "word": "räumst",
+                "start": 461.0799865722656,
+                "end": 461.5
+            },
+            {
+                "word": "jetzt",
+                "start": 461.5,
+                "end": 462.0199890136719
+            },
+            {
+                "word": "sofort",
+                "start": 462.0199890136719,
+                "end": 462.4800109863281
+            },
+            {
+                "word": "das",
+                "start": 462.4800109863281,
+                "end": 463.1000061035156
+            },
+            {
+                "word": "Zimmer",
+                "start": 463.1000061035156,
+                "end": 463.1000061035156
+            },
+            {
+                "word": "auf.",
+                "start": 463.1000061035156,
+                "end": 463.74000244140626
+            }
+        ],
+        "translationEn": "You are cleaning up the room right now.",
+        "translationVi": "Bạn ngay lập tức dọn dẹp phòng."
+    },
+    {
+        "text": "Kürzung.",
+        "start": 466.79999389648435,
+        "end": 467.7200134277344,
+        "wordTimings": [
+            {
+                "word": "Kürzung.",
+                "start": 466.79999389648435,
+                "end": 467.7200134277344
+            }
+        ],
+        "translationEn": "Reduction.",
+        "translationVi": "Cắt giảm."
+    },
+    {
+        "text": "Der Tagesablauf von Hans Meier.",
+        "start": 468.9599975585937,
+        "end": 475.9400146484375,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 468.9599975585937,
+                "end": 470.1000061035156
+            },
+            {
+                "word": "Tagesablauf",
+                "start": 470.1000061035156,
+                "end": 471.0799865722656
+            },
+            {
+                "word": "von",
+                "start": 471.0799865722656,
+                "end": 475
+            },
+            {
+                "word": "Hans",
+                "start": 475,
+                "end": 475.44000244140625
+            },
+            {
+                "word": "Meier.",
+                "start": 475.44000244140625,
+                "end": 475.9400146484375
+            }
+        ],
+        "translationEn": "The daily routine of Hans Meier.",
+        "translationVi": "Thời gian biểu hàng ngày của Hans Meier."
+    },
+    {
+        "text": "Das ist Hans Meier.",
+        "start": 476.1999877929687,
+        "end": 478.74000244140626,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 476.1999877929687,
+                "end": 477.3399963378906
+            },
+            {
+                "word": "ist",
+                "start": 477.3399963378906,
+                "end": 477.6600036621094
+            },
+            {
+                "word": "Hans",
+                "start": 477.6600036621094,
+                "end": 477.9599914550781
+            },
+            {
+                "word": "Meier.",
+                "start": 477.9599914550781,
+                "end": 478.74000244140626
+            }
+        ],
+        "translationEn": "This is Hans Meier.",
+        "translationVi": "Đây là Hans Meier."
+    },
+    {
+        "text": "Er ist 69 Jahre alt und Rentner.",
+        "start": 482.1000122070312,
+        "end": 492.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 482.1000122070312,
+                "end": 482.260009765625
+            },
+            {
+                "word": "ist",
+                "start": 482.260009765625,
+                "end": 482.6000061035156
+            },
+            {
+                "word": "69",
+                "start": 482.6000061035156,
+                "end": 483.6199951171875
+            },
+            {
+                "word": "Jahre",
+                "start": 483.6199951171875,
+                "end": 484.1400146484375
+            },
+            {
+                "word": "alt",
+                "start": 484.1400146484375,
+                "end": 484.55999755859375
+            },
+            {
+                "word": "und",
+                "start": 484.55999755859375,
+                "end": 491.3999938964844
+            },
+            {
+                "word": "Rentner.",
+                "start": 491.3999938964844,
+                "end": 492.4199951171875
+            }
+        ],
+        "translationEn": "He is 69 years old and a retiree.",
+        "translationVi": "Ông ấy 69 tuổi và đã nghỉ hưu."
+    },
+    {
+        "text": "Er muss nicht mehr arbeiten und bekommt eine Rente.",
+        "start": 493.2200073242187,
+        "end": 502.62000732421876,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 493.2200073242187,
+                "end": 493.32000732421875
+            },
+            {
+                "word": "muss",
+                "start": 493.32000732421875,
+                "end": 493.6600036621094
+            },
+            {
+                "word": "nicht",
+                "start": 493.6600036621094,
+                "end": 494.0199890136719
+            },
+            {
+                "word": "mehr",
+                "start": 494.0199890136719,
+                "end": 496.9800109863281
+            },
+            {
+                "word": "arbeiten",
+                "start": 496.9800109863281,
+                "end": 497.3800048828125
+            },
+            {
+                "word": "und",
+                "start": 498.1600036621094,
+                "end": 498.67999267578125
+            },
+            {
+                "word": "bekommt",
+                "start": 498.67999267578125,
+                "end": 499.2200012207031
+            },
+            {
+                "word": "eine",
+                "start": 499.2200012207031,
+                "end": 502.0799865722656
+            },
+            {
+                "word": "Rente.",
+                "start": 502.0799865722656,
+                "end": 502.62000732421876
+            }
+        ],
+        "translationEn": "He doesn't have to work anymore and receives a pension.",
+        "translationVi": "Ông ấy không cần phải làm việc nữa và nhận lương hưu."
+    },
+    {
+        "text": "Das ist sein Tag.",
+        "start": 503.3800109863281,
+        "end": 507.560009765625,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 503.3800109863281,
+                "end": 503.760009765625
+            },
+            {
+                "word": "ist",
+                "start": 503.760009765625,
+                "end": 504.0799865722656
+            },
+            {
+                "word": "sein",
+                "start": 504.0799865722656,
+                "end": 506.8599853515625
+            },
+            {
+                "word": "Tag.",
+                "start": 506.8599853515625,
+                "end": 507.560009765625
+            }
+        ],
+        "translationEn": "This is his day.",
+        "translationVi": "Đây là ngày của anh ấy."
+    },
+    {
+        "text": "Er steht heute um halb acht auf.",
+        "start": 508.139990234375,
+        "end": 511.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 508.139990234375,
+                "end": 508.4599914550781
+            },
+            {
+                "word": "steht",
+                "start": 508.4599914550781,
+                "end": 508.8599853515625
+            },
+            {
+                "word": "heute",
+                "start": 508.8599853515625,
+                "end": 509.4800109863281
+            },
+            {
+                "word": "um",
+                "start": 509.4800109863281,
+                "end": 510.1600036621094
+            },
+            {
+                "word": "halb",
+                "start": 510.1600036621094,
+                "end": 510.760009765625
+            },
+            {
+                "word": "acht",
+                "start": 510.760009765625,
+                "end": 511.1400146484375
+            },
+            {
+                "word": "auf.",
+                "start": 511.1400146484375,
+                "end": 511.9600036621094
+            }
+        ],
+        "translationEn": "He gets up at half past seven today.",
+        "translationVi": "Anh ấy dậy lúc bảy rưỡi hôm nay."
+    },
+    {
+        "text": "Nach dem Frühstück liest er die Zeitung.",
+        "start": 516.660009765625,
+        "end": 524.019970703125,
+        "wordTimings": [
+            {
+                "word": "Nach",
+                "start": 516.660009765625,
+                "end": 517.739990234375
+            },
+            {
+                "word": "dem",
+                "start": 517.739990234375,
+                "end": 518.0999755859375
+            },
+            {
+                "word": "Frühstück",
+                "start": 518.0999755859375,
+                "end": 518.719970703125
+            },
+            {
+                "word": "liest",
+                "start": 518.719970703125,
+                "end": 519.02001953125
+            },
+            {
+                "word": "er",
+                "start": 519.02001953125,
+                "end": 519.1400146484375
+            },
+            {
+                "word": "die",
+                "start": 519.1400146484375,
+                "end": 523.239990234375
+            },
+            {
+                "word": "Zeitung.",
+                "start": 523.239990234375,
+                "end": 524.019970703125
+            }
+        ],
+        "translationEn": "After breakfast, he reads the newspaper.",
+        "translationVi": "Sau bữa sáng, anh ấy đọc báo."
+    },
+    {
+        "text": "Um viertel nach zehn sieht er fern.",
+        "start": 525.2200073242187,
+        "end": 530.1800048828125,
+        "wordTimings": [
+            {
+                "word": "Um",
+                "start": 525.2200073242187,
+                "end": 525.4600219726562
+            },
+            {
+                "word": "viertel",
+                "start": 525.4600219726562,
+                "end": 526.1199951171875
+            },
+            {
+                "word": "nach",
+                "start": 526.1199951171875,
+                "end": 526.5399780273438
+            },
+            {
+                "word": "zehn",
+                "start": 526.5399780273438,
+                "end": 526.97998046875
+            },
+            {
+                "word": "sieht",
+                "start": 526.97998046875,
+                "end": 527.8800048828125
+            },
+            {
+                "word": "er",
+                "start": 527.8800048828125,
+                "end": 528.0999755859375
+            },
+            {
+                "word": "fern.",
+                "start": 528.0999755859375,
+                "end": 530.1800048828125
+            }
+        ],
+        "translationEn": "At a quarter past ten, he is watching TV.",
+        "translationVi": "Vào lúc mười giờ mười lăm, anh ấy xem tivi."
+    },
+    {
+        "text": "Er mag Sendungen am Vormittag.",
+        "start": 535.3199829101562,
+        "end": 542.1400268554687,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 535.3199829101562,
+                "end": 535.5800170898438
+            },
+            {
+                "word": "mag",
+                "start": 535.5800170898438,
+                "end": 535.97998046875
+            },
+            {
+                "word": "Sendungen",
+                "start": 535.97998046875,
+                "end": 536.47998046875
+            },
+            {
+                "word": "am",
+                "start": 536.47998046875,
+                "end": 541.239990234375
+            },
+            {
+                "word": "Vormittag.",
+                "start": 541.239990234375,
+                "end": 542.1400268554687
+            }
+        ],
+        "translationEn": "He likes shows in the morning.",
+        "translationVi": "Anh ấy thích các chương trình vào buổi sáng."
+    },
+    {
+        "text": "Dann isst er um viertel vor zwölf zu Mittag.",
+        "start": 542.8000244140625,
+        "end": 553.4599731445312,
+        "wordTimings": [
+            {
+                "word": "Dann",
+                "start": 542.8000244140625,
+                "end": 543.6400146484375
+            },
+            {
+                "word": "isst",
+                "start": 543.6400146484375,
+                "end": 544.1799926757812
+            },
+            {
+                "word": "er",
+                "start": 544.1799926757812,
+                "end": 544.4600219726562
+            },
+            {
+                "word": "um",
+                "start": 544.4600219726562,
+                "end": 550.5
+            },
+            {
+                "word": "viertel",
+                "start": 550.5,
+                "end": 550.97998046875
+            },
+            {
+                "word": "vor",
+                "start": 550.97998046875,
+                "end": 551.2999877929688
+            },
+            {
+                "word": "zwölf",
+                "start": 551.2999877929688,
+                "end": 551.9199829101562
+            },
+            {
+                "word": "zu",
+                "start": 551.9199829101562,
+                "end": 552.8400268554688
+            },
+            {
+                "word": "Mittag.",
+                "start": 552.8400268554688,
+                "end": 553.4599731445312
+            }
+        ],
+        "translationEn": "Then he has lunch at a quarter to twelve.",
+        "translationVi": "Sau đó, anh ấy ăn trưa lúc mười một giờ kém mười lăm."
+    },
+    {
+        "text": "Er mag Fleisch.",
+        "start": 554.4999755859375,
+        "end": 556.0999877929687,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 554.4999755859375,
+                "end": 554.8400268554688
+            },
+            {
+                "word": "mag",
+                "start": 554.8400268554688,
+                "end": 555.1199951171875
+            },
+            {
+                "word": "Fleisch.",
+                "start": 555.1199951171875,
+                "end": 556.0999877929687
+            }
+        ],
+        "translationEn": "He likes meat.",
+        "translationVi": "Anh ấy thích thịt."
+    },
+    {
+        "text": "Heute gibt es ein Steak.",
+        "start": 559.9399780273437,
+        "end": 564.6599853515625,
+        "wordTimings": [
+            {
+                "word": "Heute",
+                "start": 559.9399780273437,
+                "end": 560.2000122070312
+            },
+            {
+                "word": "gibt",
+                "start": 560.2000122070312,
+                "end": 560.52001953125
+            },
+            {
+                "word": "es",
+                "start": 560.52001953125,
+                "end": 560.739990234375
+            },
+            {
+                "word": "ein",
+                "start": 560.739990234375,
+                "end": 564
+            },
+            {
+                "word": "Steak.",
+                "start": 564,
+                "end": 564.6599853515625
+            }
+        ],
+        "translationEn": "Today there is a steak.",
+        "translationVi": "Hôm nay có một miếng bít tết."
+    },
+    {
+        "text": "Am Nachmittag geht er um 20 nach zwei in den Park spazieren.",
+        "start": 566.0599731445312,
+        "end": 572.1200073242187,
+        "wordTimings": [
+            {
+                "word": "Am",
+                "start": 566.0599731445312,
+                "end": 566.2999877929688
+            },
+            {
+                "word": "Nachmittag",
+                "start": 566.2999877929688,
+                "end": 567.1799926757812
+            },
+            {
+                "word": "geht",
+                "start": 567.1799926757812,
+                "end": 567.47998046875
+            },
+            {
+                "word": "er",
+                "start": 567.47998046875,
+                "end": 567.760009765625
+            },
+            {
+                "word": "um",
+                "start": 567.760009765625,
+                "end": 568.0599975585938
+            },
+            {
+                "word": "20",
+                "start": 568.0599975585938,
+                "end": 568.8599853515625
+            },
+            {
+                "word": "nach",
+                "start": 568.8599853515625,
+                "end": 569.2000122070312
+            },
+            {
+                "word": "zwei",
+                "start": 569.2000122070312,
+                "end": 569.8800048828125
+            },
+            {
+                "word": "in",
+                "start": 569.8800048828125,
+                "end": 570.1599731445312
+            },
+            {
+                "word": "den",
+                "start": 570.1599731445312,
+                "end": 570.52001953125
+            },
+            {
+                "word": "Park",
+                "start": 570.52001953125,
+                "end": 570.9000244140625
+            },
+            {
+                "word": "spazieren.",
+                "start": 570.9000244140625,
+                "end": 572.1200073242187
+            }
+        ],
+        "translationEn": "In the afternoon, he goes for a walk in the park at twenty past two.",
+        "translationVi": "Vào buổi chiều, anh ấy đi dạo trong công viên lúc 2 giờ 20."
+    },
+    {
+        "text": "Das Wetter ist schön und die Sonne scheint.",
+        "start": 581.37998046875,
+        "end": 590.4400146484375,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 581.37998046875,
+                "end": 582.4400024414062
+            },
+            {
+                "word": "Wetter",
+                "start": 582.4400024414062,
+                "end": 582.8400268554688
+            },
+            {
+                "word": "ist",
+                "start": 582.8400268554688,
+                "end": 588.1199951171875
+            },
+            {
+                "word": "schön",
+                "start": 588.1199951171875,
+                "end": 588.5
+            },
+            {
+                "word": "und",
+                "start": 588.5,
+                "end": 588.9600219726562
+            },
+            {
+                "word": "die",
+                "start": 588.9600219726562,
+                "end": 589.739990234375
+            },
+            {
+                "word": "Sonne",
+                "start": 589.739990234375,
+                "end": 589.739990234375
+            },
+            {
+                "word": "scheint.",
+                "start": 589.739990234375,
+                "end": 590.4400146484375
+            }
+        ],
+        "translationEn": "The weather is nice and the sun is shining.",
+        "translationVi": "Thời tiết đẹp và mặt trời đang chiếu sáng."
+    },
+    {
+        "text": "Am Abend um zehn vor sieben geht er in den Supermarkt.",
+        "start": 591.9599975585937,
+        "end": 597.7400024414062,
+        "wordTimings": [
+            {
+                "word": "Am",
+                "start": 591.9599975585937,
+                "end": 592.2000122070312
+            },
+            {
+                "word": "Abend",
+                "start": 592.2000122070312,
+                "end": 592.9199829101562
+            },
+            {
+                "word": "um",
+                "start": 592.9199829101562,
+                "end": 593.3599853515625
+            },
+            {
+                "word": "zehn",
+                "start": 593.3599853515625,
+                "end": 594.0599975585938
+            },
+            {
+                "word": "vor",
+                "start": 594.0599975585938,
+                "end": 594.5
+            },
+            {
+                "word": "sieben",
+                "start": 594.5,
+                "end": 595.0399780273438
+            },
+            {
+                "word": "geht",
+                "start": 595.0399780273438,
+                "end": 595.9600219726562
+            },
+            {
+                "word": "er",
+                "start": 595.9600219726562,
+                "end": 596.280029296875
+            },
+            {
+                "word": "in",
+                "start": 596.280029296875,
+                "end": 596.5
+            },
+            {
+                "word": "den",
+                "start": 596.5,
+                "end": 596.760009765625
+            },
+            {
+                "word": "Supermarkt.",
+                "start": 596.760009765625,
+                "end": 597.7400024414062
+            }
+        ],
+        "translationEn": "In the evening at ten to seven, he goes to the supermarket.",
+        "translationVi": "Vào buổi tối lúc mười phút trước bảy giờ, anh ấy đi vào siêu thị."
+    },
+    {
+        "text": "Am Abend um zehn vor sieben geht er in den Supermarkt und kauft Lebensmittel ein.",
+        "start": 598.6000122070312,
+        "end": 612.9400146484375,
+        "wordTimings": [
+            {
+                "word": "Am",
+                "start": 598.6000122070312,
+                "end": 598.760009765625
+            },
+            {
+                "word": "Abend",
+                "start": 598.760009765625,
+                "end": 599.47998046875
+            },
+            {
+                "word": "um",
+                "start": 599.47998046875,
+                "end": 600.1599731445312
+            },
+            {
+                "word": "zehn",
+                "start": 600.1599731445312,
+                "end": 600.6400146484375
+            },
+            {
+                "word": "vor",
+                "start": 600.6400146484375,
+                "end": 601.0599975585938
+            },
+            {
+                "word": "sieben",
+                "start": 601.0599975585938,
+                "end": 601.5800170898438
+            },
+            {
+                "word": "geht",
+                "start": 601.5800170898438,
+                "end": 601.8200073242188
+            },
+            {
+                "word": "er",
+                "start": 601.8200073242188,
+                "end": 601.8200073242188
+            },
+            {
+                "word": "in",
+                "start": 601.8200073242188,
+                "end": 601.8200073242188
+            },
+            {
+                "word": "den",
+                "start": 601.8200073242188,
+                "end": 601.8200073242188
+            },
+            {
+                "word": "Supermarkt",
+                "start": 601.8200073242188,
+                "end": 601.8200073242188
+            },
+            {
+                "word": "und",
+                "start": 607.3400268554688,
+                "end": 608.739990234375
+            },
+            {
+                "word": "kauft",
+                "start": 608.739990234375,
+                "end": 610.1400146484375
+            },
+            {
+                "word": "Lebensmittel",
+                "start": 610.1400146484375,
+                "end": 611.1599731445312
+            },
+            {
+                "word": "ein.",
+                "start": 611.1599731445312,
+                "end": 612.9400146484375
+            }
+        ],
+        "translationEn": "In the evening at ten to seven, he goes to the supermarket and buys groceries.",
+        "translationVi": "Vào buổi tối lúc mười phút trước bảy giờ, anh ấy đi vào siêu thị và mua sắm thực phẩm."
+    },
+    {
+        "text": "Bildbeschreibung mit Possessivartikel.",
+        "start": 615.180029296875,
+        "end": 621.9599731445312,
+        "wordTimings": [
+            {
+                "word": "Bildbeschreibung",
+                "start": 615.180029296875,
+                "end": 616.2999877929688
+            },
+            {
+                "word": "mit",
+                "start": 619.1199951171875,
+                "end": 620.52001953125
+            },
+            {
+                "word": "Possessivartikel.",
+                "start": 620.52001953125,
+                "end": 621.9599731445312
+            }
+        ],
+        "translationEn": "Image description with possessive article.",
+        "translationVi": "Mô tả hình ảnh với đại từ sở hữu."
+    },
+    {
+        "text": "Sieh das Familienfoto.",
+        "start": 622.3400024414062,
+        "end": 626.1400268554687,
+        "wordTimings": [
+            {
+                "word": "Sieh",
+                "start": 622.3400024414062,
+                "end": 623.8400268554688
+            },
+            {
+                "word": "das",
+                "start": 623.8400268554688,
+                "end": 624.0999755859375
+            },
+            {
+                "word": "Familienfoto.",
+                "start": 624.0999755859375,
+                "end": 626.1400268554687
+            }
+        ],
+        "translationEn": "Look at the family photo.",
+        "translationVi": "Hãy nhìn bức ảnh gia đình."
+    },
+    {
+        "text": "Das Bild zeigt meine Familie.",
+        "start": 628.4800170898437,
+        "end": 637.039990234375,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 628.4800170898437,
+                "end": 629.8599853515625
+            },
+            {
+                "word": "Bild",
+                "start": 629.8599853515625,
+                "end": 630.52001953125
+            },
+            {
+                "word": "zeigt",
+                "start": 630.52001953125,
+                "end": 631.1400146484375
+            },
+            {
+                "word": "meine",
+                "start": 631.1400146484375,
+                "end": 636.1199951171875
+            },
+            {
+                "word": "Familie.",
+                "start": 636.1199951171875,
+                "end": 637.039990234375
+            }
+        ],
+        "translationEn": "The picture shows my family.",
+        "translationVi": "Bức tranh này cho thấy gia đình của tôi."
+    },
+    {
+        "text": "Ich stehe vorne in der Mitte.",
+        "start": 638.119970703125,
+        "end": 644.32001953125,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 638.119970703125,
+                "end": 638.3800048828125
+            },
+            {
+                "word": "stehe",
+                "start": 638.3800048828125,
+                "end": 638.760009765625
+            },
+            {
+                "word": "vorne",
+                "start": 638.760009765625,
+                "end": 639.4000244140625
+            },
+            {
+                "word": "in",
+                "start": 639.4000244140625,
+                "end": 643.5599975585938
+            },
+            {
+                "word": "der",
+                "start": 643.5599975585938,
+                "end": 644.02001953125
+            },
+            {
+                "word": "Mitte.",
+                "start": 644.02001953125,
+                "end": 644.32001953125
+            }
+        ],
+        "translationEn": "I am standing at the front in the middle.",
+        "translationVi": "Tôi đứng ở phía trước, ở giữa."
+    },
+    {
+        "text": "Es ist mein Geburtstag.",
+        "start": 645.7200073242187,
+        "end": 650.77998046875,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 645.7200073242187,
+                "end": 645.8800048828125
+            },
+            {
+                "word": "ist",
+                "start": 645.8800048828125,
+                "end": 646.219970703125
+            },
+            {
+                "word": "mein",
+                "start": 646.219970703125,
+                "end": 649.7999877929688
+            },
+            {
+                "word": "Geburtstag.",
+                "start": 649.7999877929688,
+                "end": 650.77998046875
+            }
+        ],
+        "translationEn": "It's my birthday.",
+        "translationVi": "Hôm nay là sinh nhật của tôi."
+    },
+    {
+        "text": "Ich werde neun Jahre alt.",
+        "start": 652.2599853515625,
+        "end": 654.7600219726562,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 652.2599853515625,
+                "end": 652.47998046875
+            },
+            {
+                "word": "werde",
+                "start": 652.47998046875,
+                "end": 652.8800048828125
+            },
+            {
+                "word": "neun",
+                "start": 652.8800048828125,
+                "end": 653.5399780273438
+            },
+            {
+                "word": "Jahre",
+                "start": 653.5399780273438,
+                "end": 653.9400024414062
+            },
+            {
+                "word": "alt.",
+                "start": 653.9400024414062,
+                "end": 654.7600219726562
+            }
+        ],
+        "translationEn": "I will be nine years old.",
+        "translationVi": "Tôi sẽ chín tuổi."
+    },
+    {
+        "text": "Mein Rock ist rosa und mein T-Shirt ist weiß.",
+        "start": 659.160009765625,
+        "end": 674.1400268554687,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 659.160009765625,
+                "end": 660.4199829101562
+            },
+            {
+                "word": "Rock",
+                "start": 660.4199829101562,
+                "end": 660.97998046875
+            },
+            {
+                "word": "ist",
+                "start": 660.97998046875,
+                "end": 669.7000122070312
+            },
+            {
+                "word": "rosa",
+                "start": 669.7000122070312,
+                "end": 670.2999877929688
+            },
+            {
+                "word": "und",
+                "start": 670.2999877929688,
+                "end": 671.5800170898438
+            },
+            {
+                "word": "mein",
+                "start": 671.5800170898438,
+                "end": 672.02001953125
+            },
+            {
+                "word": "T-Shirt",
+                "start": 672.5399780273438,
+                "end": 672.6199951171875
+            },
+            {
+                "word": "ist",
+                "start": 672.6199951171875,
+                "end": 673.760009765625
+            },
+            {
+                "word": "weiß.",
+                "start": 673.760009765625,
+                "end": 674.1400268554687
+            }
+        ],
+        "translationEn": "My skirt is pink and my T-shirt is white.",
+        "translationVi": "Chân váy của tôi màu hồng và áo phông của tôi màu trắng."
+    },
+    {
+        "text": "Meine Haare sind lang und braun.",
+        "start": 676.0799926757812,
+        "end": 683.8,
+        "wordTimings": [
+            {
+                "word": "Meine",
+                "start": 676.0799926757812,
+                "end": 676.5800170898438
+            },
+            {
+                "word": "Haare",
+                "start": 676.5800170898438,
+                "end": 677.1799926757812
+            },
+            {
+                "word": "sind",
+                "start": 677.1799926757812,
+                "end": 682.3599853515625
+            },
+            {
+                "word": "lang",
+                "start": 682.3599853515625,
+                "end": 682.6599731445312
+            },
+            {
+                "word": "und",
+                "start": 682.6599731445312,
+                "end": 683.1599731445312
+            },
+            {
+                "word": "braun.",
+                "start": 683.1599731445312,
+                "end": 683.8
+            }
+        ],
+        "translationEn": "My hair is long and brown.",
+        "translationVi": "Tóc tôi dài và nâu."
+    },
+    {
+        "text": "Ich bin klein.",
+        "start": 683.4,
+        "end": 687.8,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 683.4,
+                "end": 683.780029296875
+            },
+            {
+                "word": "bin",
+                "start": 683.780029296875,
+                "end": 685.9400024414062
+            },
+            {
+                "word": "klein.",
+                "start": 685.9400024414062,
+                "end": 687.8
+            }
+        ],
+        "translationEn": "I am small.",
+        "translationVi": "Tôi thì nhỏ."
+    },
+    {
+        "text": "Wir Kinder stehen vorne und die Erwachsenen hinten.",
+        "start": 692.1999877929687,
+        "end": 705.1200073242187,
+        "wordTimings": [
+            {
+                "word": "Wir",
+                "start": 692.1999877929687,
+                "end": 692.5
+            },
+            {
+                "word": "Kinder",
+                "start": 692.5,
+                "end": 693.02001953125
+            },
+            {
+                "word": "stehen",
+                "start": 693.02001953125,
+                "end": 693.7000122070312
+            },
+            {
+                "word": "vorne",
+                "start": 693.7000122070312,
+                "end": 694.3599853515625
+            },
+            {
+                "word": "und",
+                "start": 694.3599853515625,
+                "end": 699.8200073242188
+            },
+            {
+                "word": "die",
+                "start": 699.8200073242188,
+                "end": 703.6400146484375
+            },
+            {
+                "word": "Erwachsenen",
+                "start": 703.6400146484375,
+                "end": 704.3800048828125
+            },
+            {
+                "word": "hinten.",
+                "start": 704.3800048828125,
+                "end": 705.1200073242187
+            }
+        ],
+        "translationEn": "We children stand in the front and the adults in the back.",
+        "translationVi": "Chúng tôi, bọn trẻ, đứng ở phía trước và người lớn đứng ở phía sau."
+    },
+    {
+        "text": "Mein Cousin trägt eine Brille.",
+        "start": 706.9,
+        "end": 710.060009765625,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 706.9,
+                "end": 707.3800048828125
+            },
+            {
+                "word": "Cousin",
+                "start": 707.3800048828125,
+                "end": 708.0999755859375
+            },
+            {
+                "word": "trägt",
+                "start": 708.0999755859375,
+                "end": 708.9600219726562
+            },
+            {
+                "word": "eine",
+                "start": 708.9600219726562,
+                "end": 709.47998046875
+            },
+            {
+                "word": "Brille.",
+                "start": 709.47998046875,
+                "end": 710.060009765625
+            }
+        ],
+        "translationEn": "My cousin wears glasses.",
+        "translationVi": "Cousin của tôi đeo kính."
+    },
+    {
+        "text": "Seine Haare sind blond.",
+        "start": 715.5799926757812,
+        "end": 722.9599731445312,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 715.5799926757812,
+                "end": 717.0800170898438
+            },
+            {
+                "word": "Haare",
+                "start": 717.0800170898438,
+                "end": 717.6599731445312
+            },
+            {
+                "word": "sind",
+                "start": 717.6599731445312,
+                "end": 722.0599975585938
+            },
+            {
+                "word": "blond.",
+                "start": 722.0599975585938,
+                "end": 722.9599731445312
+            }
+        ],
+        "translationEn": "His hair is blonde.",
+        "translationVi": "Tóc của anh ấy màu vàng."
+    },
+    {
+        "text": "Sein T-Shirt ist gelb und seine kurze Hose ist blau.",
+        "start": 724.8199829101562,
+        "end": 741.1200073242187,
+        "wordTimings": [
+            {
+                "word": "Sein",
+                "start": 724.8199829101562,
+                "end": 725.219970703125
+            },
+            {
+                "word": "T-Shirt",
+                "start": 725.760009765625,
+                "end": 726.1199951171875
+            },
+            {
+                "word": "ist",
+                "start": 726.1199951171875,
+                "end": 730.7999877929688
+            },
+            {
+                "word": "gelb",
+                "start": 730.7999877929688,
+                "end": 731.8800048828125
+            },
+            {
+                "word": "und",
+                "start": 732.1400146484375,
+                "end": 733.5399780273438
+            },
+            {
+                "word": "seine",
+                "start": 733.5399780273438,
+                "end": 734.239990234375
+            },
+            {
+                "word": "kurze",
+                "start": 734.239990234375,
+                "end": 735.219970703125
+            },
+            {
+                "word": "Hose",
+                "start": 735.219970703125,
+                "end": 735.3200073242188
+            },
+            {
+                "word": "ist",
+                "start": 735.3200073242188,
+                "end": 740.2999877929688
+            },
+            {
+                "word": "blau.",
+                "start": 740.2999877929688,
+                "end": 741.1200073242187
+            }
+        ],
+        "translationEn": "His T-shirt is yellow and his shorts are blue.",
+        "translationVi": "Áo phông của anh ấy màu vàng và quần shorts của anh ấy màu xanh."
+    },
+    {
+        "text": "Meine Cousine ist groß und dünn.",
+        "start": 745.8600219726562,
+        "end": 750.2000244140625,
+        "wordTimings": [
+            {
+                "word": "Meine",
+                "start": 745.8600219726562,
+                "end": 747.2000122070312
+            },
+            {
+                "word": "Cousine",
+                "start": 747.2000122070312,
+                "end": 748
+            },
+            {
+                "word": "ist",
+                "start": 748,
+                "end": 748.4600219726562
+            },
+            {
+                "word": "groß",
+                "start": 748.4600219726562,
+                "end": 749.0800170898438
+            },
+            {
+                "word": "und",
+                "start": 749.0800170898438,
+                "end": 749.5399780273438
+            },
+            {
+                "word": "dünn.",
+                "start": 749.5399780273438,
+                "end": 750.2000244140625
+            }
+        ],
+        "translationEn": "My cousin is tall and thin.",
+        "translationVi": "Cô em họ của tôi cao và gầy."
+    },
+    {
+        "text": "Ihre Haare sind schulterlang und rot.",
+        "start": 751.9800170898437,
+        "end": 761.3399780273437,
+        "wordTimings": [
+            {
+                "word": "Ihre",
+                "start": 751.9800170898437,
+                "end": 752.0800170898438
+            },
+            {
+                "word": "Haare",
+                "start": 752.0800170898438,
+                "end": 752.6400146484375
+            },
+            {
+                "word": "sind",
+                "start": 752.6400146484375,
+                "end": 753.1799926757812
+            },
+            {
+                "word": "schulterlang",
+                "start": 753.1799926757812,
+                "end": 754
+            },
+            {
+                "word": "und",
+                "start": 754,
+                "end": 760.6799926757812
+            },
+            {
+                "word": "rot.",
+                "start": 760.6799926757812,
+                "end": 761.3399780273437
+            }
+        ],
+        "translationEn": "Her hair is shoulder-length and red.",
+        "translationVi": "Tóc của bạn dài đến vai và màu đỏ."
+    },
+    {
+        "text": "Ihre Hose ist grün und ihr Pullover ist rot.",
+        "start": 763.639990234375,
+        "end": 768.8800170898437,
+        "wordTimings": [
+            {
+                "word": "Ihre",
+                "start": 763.639990234375,
+                "end": 764.0599975585938
+            },
+            {
+                "word": "Hose",
+                "start": 764.0599975585938,
+                "end": 764.5
+            },
+            {
+                "word": "ist",
+                "start": 764.5,
+                "end": 765.1199951171875
+            },
+            {
+                "word": "grün",
+                "start": 765.1199951171875,
+                "end": 765.5
+            },
+            {
+                "word": "und",
+                "start": 765.5,
+                "end": 766.2999877929688
+            },
+            {
+                "word": "ihr",
+                "start": 766.2999877929688,
+                "end": 766.780029296875
+            },
+            {
+                "word": "Pullover",
+                "start": 766.780029296875,
+                "end": 767.4199829101562
+            },
+            {
+                "word": "ist",
+                "start": 767.4199829101562,
+                "end": 768.5800170898438
+            },
+            {
+                "word": "rot.",
+                "start": 768.5800170898438,
+                "end": 768.8800170898437
+            }
+        ],
+        "translationEn": "Her pants are green and her sweater is red.",
+        "translationVi": "Quần của cô ấy màu xanh lá cây và áo len của cô ấy màu đỏ."
+    },
+    {
+        "text": "Mein Bruder trägt eine Baseballmütze.",
+        "start": 775.4800170898437,
+        "end": 785.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 775.4800170898437,
+                "end": 776.97998046875
+            },
+            {
+                "word": "Bruder",
+                "start": 776.97998046875,
+                "end": 777.6199951171875
+            },
+            {
+                "word": "trägt",
+                "start": 777.6199951171875,
+                "end": 778.260009765625
+            },
+            {
+                "word": "eine",
+                "start": 778.260009765625,
+                "end": 784.3200073242188
+            },
+            {
+                "word": "Baseballmütze.",
+                "start": 784.3200073242188,
+                "end": 785.6800048828125
+            }
+        ],
+        "translationEn": "My brother is wearing a baseball cap.",
+        "translationVi": "Anh trai tôi đội một chiếc mũ bóng chày."
+    },
+    {
+        "text": "Seine Jacke ist braun und seine Hose ist dunkelblau.",
+        "start": 789.7599853515625,
+        "end": 795.27998046875,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 789.7599853515625,
+                "end": 790
+            },
+            {
+                "word": "Jacke",
+                "start": 790,
+                "end": 790.739990234375
+            },
+            {
+                "word": "ist",
+                "start": 790.739990234375,
+                "end": 791.3599853515625
+            },
+            {
+                "word": "braun",
+                "start": 791.3599853515625,
+                "end": 791.9199829101562
+            },
+            {
+                "word": "und",
+                "start": 791.9199829101562,
+                "end": 792.47998046875
+            },
+            {
+                "word": "seine",
+                "start": 792.47998046875,
+                "end": 793.219970703125
+            },
+            {
+                "word": "Hose",
+                "start": 793.219970703125,
+                "end": 793.2999877929688
+            },
+            {
+                "word": "ist",
+                "start": 793.2999877929688,
+                "end": 793.97998046875
+            },
+            {
+                "word": "dunkelblau.",
+                "start": 793.97998046875,
+                "end": 795.27998046875
+            }
+        ],
+        "translationEn": "His jacket is brown and his pants are dark blue.",
+        "translationVi": "Áo khoác của anh ấy màu nâu và quần của anh ấy màu xanh đậm."
+    },
+    {
+        "text": "Seine Haare sind schwarz.",
+        "start": 796.2200073242187,
+        "end": 810.060009765625,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 796.2200073242187,
+                "end": 797.5599975585938
+            },
+            {
+                "word": "Haare",
+                "start": 803.719970703125,
+                "end": 804.1799926757812
+            },
+            {
+                "word": "sind",
+                "start": 804.1799926757812,
+                "end": 809.0599975585938
+            },
+            {
+                "word": "schwarz.",
+                "start": 809.0599975585938,
+                "end": 810.060009765625
+            }
+        ],
+        "translationEn": "His hair is black.",
+        "translationVi": "Tóc của anh ấy màu đen."
+    },
+    {
+        "text": "Meine Großeltern stehen hinten in der Mitte.",
+        "start": 812.9800170898437,
+        "end": 816.6400268554687,
+        "wordTimings": [
+            {
+                "word": "Meine",
+                "start": 812.9800170898437,
+                "end": 813.1599731445312
+            },
+            {
+                "word": "Großeltern",
+                "start": 813.1599731445312,
+                "end": 814.239990234375
+            },
+            {
+                "word": "stehen",
+                "start": 814.239990234375,
+                "end": 814.7999877929688
+            },
+            {
+                "word": "hinten",
+                "start": 814.7999877929688,
+                "end": 815.52001953125
+            },
+            {
+                "word": "in",
+                "start": 815.52001953125,
+                "end": 815.8400268554688
+            },
+            {
+                "word": "der",
+                "start": 815.8400268554688,
+                "end": 816.3400268554688
+            },
+            {
+                "word": "Mitte.",
+                "start": 816.3400268554688,
+                "end": 816.6400268554687
+            }
+        ],
+        "translationEn": "My grandparents are standing at the back in the middle.",
+        "translationVi": "Ông bà của tôi đứng ở phía sau, giữa."
+    },
+    {
+        "text": "Mein Großvater heißt Hans.",
+        "start": 817.5199951171875,
+        "end": 830.82001953125,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 817.5199951171875,
+                "end": 818.6199951171875
+            },
+            {
+                "word": "Großvater",
+                "start": 818.6199951171875,
+                "end": 819.6199951171875
+            },
+            {
+                "word": "heißt",
+                "start": 825.219970703125,
+                "end": 829.97998046875
+            },
+            {
+                "word": "Hans.",
+                "start": 829.97998046875,
+                "end": 830.82001953125
+            }
+        ],
+        "translationEn": "My grandfather's name is Hans.",
+        "translationVi": "Ông của tôi tên là Hans."
+    },
+    {
+        "text": "Sein Hemd ist rot und schwarz kariert.",
+        "start": 832.2800048828125,
+        "end": 841.2600219726562,
+        "wordTimings": [
+            {
+                "word": "Sein",
+                "start": 832.2800048828125,
+                "end": 832.7000122070312
+            },
+            {
+                "word": "Hemd",
+                "start": 832.7000122070312,
+                "end": 833.2000122070312
+            },
+            {
+                "word": "ist",
+                "start": 833.2000122070312,
+                "end": 839.260009765625
+            },
+            {
+                "word": "rot",
+                "start": 839.260009765625,
+                "end": 839.7000122070312
+            },
+            {
+                "word": "und",
+                "start": 839.7000122070312,
+                "end": 840.0800170898438
+            },
+            {
+                "word": "schwarz",
+                "start": 840.0800170898438,
+                "end": 840.5399780273438
+            },
+            {
+                "word": "kariert.",
+                "start": 840.5399780273438,
+                "end": 841.2600219726562
+            }
+        ],
+        "translationEn": "His shirt is red and black checked.",
+        "translationVi": "Áo sơ mi của anh ấy có màu đỏ và đen kẻ ô."
+    },
+    {
+        "text": "Seine Haare und sein Bart sind grau.",
+        "start": 842.7599853515625,
+        "end": 846.3599975585937,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 842.7599853515625,
+                "end": 843.219970703125
+            },
+            {
+                "word": "Haare",
+                "start": 843.219970703125,
+                "end": 843.6799926757812
+            },
+            {
+                "word": "und",
+                "start": 843.6799926757812,
+                "end": 844.1199951171875
+            },
+            {
+                "word": "sein",
+                "start": 844.1199951171875,
+                "end": 844.9000244140625
+            },
+            {
+                "word": "Bart",
+                "start": 844.9000244140625,
+                "end": 845.1400146484375
+            },
+            {
+                "word": "sind",
+                "start": 845.1400146484375,
+                "end": 845.6599731445312
+            },
+            {
+                "word": "grau.",
+                "start": 845.6599731445312,
+                "end": 846.3599975585937
+            }
+        ],
+        "translationEn": "His hair and beard are gray.",
+        "translationVi": "Tóc và râu của anh ấy màu xám."
+    },
+    {
+        "text": "Seine Brille ist schwarz.",
+        "start": 846.9800170898437,
+        "end": 858.3,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 846.9800170898437,
+                "end": 847.719970703125
+            },
+            {
+                "word": "Brille",
+                "start": 852.8599853515625,
+                "end": 853.260009765625
+            },
+            {
+                "word": "ist",
+                "start": 853.260009765625,
+                "end": 857.3599853515625
+            },
+            {
+                "word": "schwarz.",
+                "start": 857.3599853515625,
+                "end": 858.3
+            }
+        ],
+        "translationEn": "His glasses are black.",
+        "translationVi": "Kính của anh ấy màu đen."
+    },
+    {
+        "text": "Meine Großmutter heißt Erika.",
+        "start": 859.3400024414062,
+        "end": 862.6400268554687,
+        "wordTimings": [
+            {
+                "word": "Meine",
+                "start": 859.3400024414062,
+                "end": 859.7000122070312
+            },
+            {
+                "word": "Großmutter",
+                "start": 859.7000122070312,
+                "end": 860.6799926757812
+            },
+            {
+                "word": "heißt",
+                "start": 860.6799926757812,
+                "end": 861.1400146484375
+            },
+            {
+                "word": "Erika.",
+                "start": 861.1400146484375,
+                "end": 862.6400268554687
+            }
+        ],
+        "translationEn": "My grandmother's name is Erika.",
+        "translationVi": "Bà của tôi tên là Erika."
+    },
+    {
+        "text": "Ihre Haare sind grau.",
+        "start": 866.87998046875,
+        "end": 871.560009765625,
+        "wordTimings": [
+            {
+                "word": "Ihre",
+                "start": 866.87998046875,
+                "end": 866.97998046875
+            },
+            {
+                "word": "Haare",
+                "start": 866.97998046875,
+                "end": 867.4400024414062
+            },
+            {
+                "word": "sind",
+                "start": 867.4400024414062,
+                "end": 870.8200073242188
+            },
+            {
+                "word": "grau.",
+                "start": 870.8200073242188,
+                "end": 871.560009765625
+            }
+        ],
+        "translationEn": "Your hair is gray.",
+        "translationVi": "Tóc của bạn đã bạc."
+    },
+    {
+        "text": "Ihr Pullover ist dunkelgrau.",
+        "start": 872.42001953125,
+        "end": 875.1599853515625,
+        "wordTimings": [
+            {
+                "word": "Ihr",
+                "start": 872.42001953125,
+                "end": 872.780029296875
+            },
+            {
+                "word": "Pullover",
+                "start": 872.780029296875,
+                "end": 873.4600219726562
+            },
+            {
+                "word": "ist",
+                "start": 873.4600219726562,
+                "end": 874.02001953125
+            },
+            {
+                "word": "dunkelgrau.",
+                "start": 874.02001953125,
+                "end": 875.1599853515625
+            }
+        ],
+        "translationEn": "Your sweater is dark gray.",
+        "translationVi": "Áo len của bạn màu xám đậm."
+    },
+    {
+        "text": "Ihr T-Shirt und ihr Rock sind schwarz.",
+        "start": 879.0799926757812,
+        "end": 888.8999755859375,
+        "wordTimings": [
+            {
+                "word": "Ihr",
+                "start": 879.0799926757812,
+                "end": 880.1799926757812
+            },
+            {
+                "word": "T-Shirt",
+                "start": 880.3800048828125,
+                "end": 881.0599975585938
+            },
+            {
+                "word": "und",
+                "start": 881.0599975585938,
+                "end": 886.5800170898438
+            },
+            {
+                "word": "ihr",
+                "start": 886.5800170898438,
+                "end": 887.0399780273438
+            },
+            {
+                "word": "Rock",
+                "start": 887.0399780273438,
+                "end": 887.4199829101562
+            },
+            {
+                "word": "sind",
+                "start": 887.4199829101562,
+                "end": 887.9000244140625
+            },
+            {
+                "word": "schwarz.",
+                "start": 887.9000244140625,
+                "end": 888.8999755859375
+            }
+        ],
+        "translationEn": "Her T-shirt and her skirt are black.",
+        "translationVi": "Áo phông và váy của cô ấy màu đen."
+    },
+    {
+        "text": "Ganz links steht meine Tante Sophie.",
+        "start": 890.2599853515625,
+        "end": 897.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Ganz",
+                "start": 890.2599853515625,
+                "end": 890.719970703125
+            },
+            {
+                "word": "links",
+                "start": 890.719970703125,
+                "end": 891.219970703125
+            },
+            {
+                "word": "steht",
+                "start": 891.219970703125,
+                "end": 891.9000244140625
+            },
+            {
+                "word": "meine",
+                "start": 891.9000244140625,
+                "end": 896.3800048828125
+            },
+            {
+                "word": "Tante",
+                "start": 896.3800048828125,
+                "end": 896.9600219726562
+            },
+            {
+                "word": "Sophie.",
+                "start": 896.9600219726562,
+                "end": 897.6800048828125
+            }
+        ],
+        "translationEn": "My aunt Sophie is on the far left.",
+        "translationVi": "Bên trái là dì Sophie của tôi."
+    },
+    {
+        "text": "Ihre Haare sind lang und rot.",
+        "start": 898.4,
+        "end": 905.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Ihre",
+                "start": 898.4,
+                "end": 898.7000122070312
+            },
+            {
+                "word": "Haare",
+                "start": 898.7000122070312,
+                "end": 899.2000122070312
+            },
+            {
+                "word": "sind",
+                "start": 899.2000122070312,
+                "end": 899.5800170898438
+            },
+            {
+                "word": "lang",
+                "start": 899.5800170898438,
+                "end": 900
+            },
+            {
+                "word": "und",
+                "start": 900,
+                "end": 904.739990234375
+            },
+            {
+                "word": "rot.",
+                "start": 904.739990234375,
+                "end": 905.4199951171875
+            }
+        ],
+        "translationEn": "Her hair is long and red.",
+        "translationVi": "Tóc của bạn dài và đỏ."
+    },
+    {
+        "text": "Ihr Kleid und ihr Schal sind schwarz.",
+        "start": 910.4599975585937,
+        "end": 915.019970703125,
+        "wordTimings": [
+            {
+                "word": "Ihr",
+                "start": 910.4599975585937,
+                "end": 911.719970703125
+            },
+            {
+                "word": "Kleid",
+                "start": 911.719970703125,
+                "end": 912.4000244140625
+            },
+            {
+                "word": "und",
+                "start": 912.4000244140625,
+                "end": 912.9400024414062
+            },
+            {
+                "word": "ihr",
+                "start": 912.9400024414062,
+                "end": 913.6199951171875
+            },
+            {
+                "word": "Schal",
+                "start": 913.6199951171875,
+                "end": 913.6599731445312
+            },
+            {
+                "word": "sind",
+                "start": 913.6599731445312,
+                "end": 914.0999755859375
+            },
+            {
+                "word": "schwarz.",
+                "start": 914.0999755859375,
+                "end": 915.019970703125
+            }
+        ],
+        "translationEn": "Her dress and her scarf are black.",
+        "translationVi": "Chiếc váy và cái khăn của cô ấy màu đen."
+    },
+    {
+        "text": "Ihre Haut ist sehr hell.",
+        "start": 916.8000244140625,
+        "end": 923.519970703125,
+        "wordTimings": [
+            {
+                "word": "Ihre",
+                "start": 916.8000244140625,
+                "end": 917.3200073242188
+            },
+            {
+                "word": "Haut",
+                "start": 917.3200073242188,
+                "end": 917.97998046875
+            },
+            {
+                "word": "ist",
+                "start": 917.97998046875,
+                "end": 922.52001953125
+            },
+            {
+                "word": "sehr",
+                "start": 922.52001953125,
+                "end": 923.1799926757812
+            },
+            {
+                "word": "hell.",
+                "start": 923.1799926757812,
+                "end": 923.519970703125
+            }
+        ],
+        "translationEn": "Your skin is very light.",
+        "translationVi": "Dáng da của bạn rất sáng."
+    },
+    {
+        "text": "Mein Onkel trägt auch eine Brille.",
+        "start": 924.6000122070312,
+        "end": 931.580029296875,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 924.6000122070312,
+                "end": 924.9199829101562
+            },
+            {
+                "word": "Onkel",
+                "start": 924.9199829101562,
+                "end": 925.4400024414062
+            },
+            {
+                "word": "trägt",
+                "start": 925.4400024414062,
+                "end": 925.9400024414062
+            },
+            {
+                "word": "auch",
+                "start": 925.9400024414062,
+                "end": 930.5999755859375
+            },
+            {
+                "word": "eine",
+                "start": 930.5999755859375,
+                "end": 931.0599975585938
+            },
+            {
+                "word": "Brille.",
+                "start": 931.0599975585938,
+                "end": 931.580029296875
+            }
+        ],
+        "translationEn": "My uncle also wears glasses.",
+        "translationVi": "Chú tôi cũng đeo kính."
+    },
+    {
+        "text": "Sein Hemd ist hellblau.",
+        "start": 932.3199829101562,
+        "end": 935.1800048828125,
+        "wordTimings": [
+            {
+                "word": "Sein",
+                "start": 932.3199829101562,
+                "end": 933.52001953125
+            },
+            {
+                "word": "Hemd",
+                "start": 933.52001953125,
+                "end": 933.9400024414062
+            },
+            {
+                "word": "ist",
+                "start": 933.9400024414062,
+                "end": 934.3400268554688
+            },
+            {
+                "word": "hellblau.",
+                "start": 934.3400268554688,
+                "end": 935.1800048828125
+            }
+        ],
+        "translationEn": "His shirt is light blue.",
+        "translationVi": "Áo sơ mi của anh ấy màu xanh nhạt."
+    },
+    {
+        "text": "Seine Krawatte ist rot und schwarz gestreift.",
+        "start": 939.0199951171875,
+        "end": 948.580029296875,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 939.0199951171875,
+                "end": 940.1400146484375
+            },
+            {
+                "word": "Krawatte",
+                "start": 940.1400146484375,
+                "end": 940.8599853515625
+            },
+            {
+                "word": "ist",
+                "start": 940.8599853515625,
+                "end": 946.52001953125
+            },
+            {
+                "word": "rot",
+                "start": 946.52001953125,
+                "end": 946.9199829101562
+            },
+            {
+                "word": "und",
+                "start": 946.9199829101562,
+                "end": 947.1799926757812
+            },
+            {
+                "word": "schwarz",
+                "start": 947.1799926757812,
+                "end": 947.5999755859375
+            },
+            {
+                "word": "gestreift.",
+                "start": 947.5999755859375,
+                "end": 948.580029296875
+            }
+        ],
+        "translationEn": "His tie is red and black striped.",
+        "translationVi": "Cà vạt của anh ấy có sọc đỏ và đen."
+    },
+    {
+        "text": "Sein Bauch ist dick.",
+        "start": 950.3400024414062,
+        "end": 956.32001953125,
+        "wordTimings": [
+            {
+                "word": "Sein",
+                "start": 950.3400024414062,
+                "end": 950.6799926757812
+            },
+            {
+                "word": "Bauch",
+                "start": 950.6799926757812,
+                "end": 951.219970703125
+            },
+            {
+                "word": "ist",
+                "start": 951.219970703125,
+                "end": 955.6199951171875
+            },
+            {
+                "word": "dick.",
+                "start": 955.6199951171875,
+                "end": 956.32001953125
+            }
+        ],
+        "translationEn": "His belly is big.",
+        "translationVi": "Bụng của anh ấy thì béo."
+    },
+    {
+        "text": "Seine Haare sind kurz und blond.",
+        "start": 958.0400146484375,
+        "end": 964.4799926757812,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 958.0400146484375,
+                "end": 958.280029296875
+            },
+            {
+                "word": "Haare",
+                "start": 958.280029296875,
+                "end": 958.7000122070312
+            },
+            {
+                "word": "sind",
+                "start": 958.7000122070312,
+                "end": 959.02001953125
+            },
+            {
+                "word": "kurz",
+                "start": 959.02001953125,
+                "end": 959.5
+            },
+            {
+                "word": "und",
+                "start": 959.5,
+                "end": 963.8400268554688
+            },
+            {
+                "word": "blond.",
+                "start": 963.8400268554688,
+                "end": 964.4799926757812
+            }
+        ],
+        "translationEn": "His hair is short and blonde.",
+        "translationVi": "Tóc của anh ấy ngắn và màu vàng."
+    },
+    {
+        "text": "Meine Mutter steht ganz rechts.",
+        "start": 965.0799926757812,
+        "end": 971.77998046875,
+        "wordTimings": [
+            {
+                "word": "Meine",
+                "start": 965.0799926757812,
+                "end": 966.02001953125
+            },
+            {
+                "word": "Mutter",
+                "start": 966.02001953125,
+                "end": 966.47998046875
+            },
+            {
+                "word": "steht",
+                "start": 966.47998046875,
+                "end": 967.02001953125
+            },
+            {
+                "word": "ganz",
+                "start": 967.02001953125,
+                "end": 971.0399780273438
+            },
+            {
+                "word": "rechts.",
+                "start": 971.0399780273438,
+                "end": 971.77998046875
+            }
+        ],
+        "translationEn": "My mother is standing far right.",
+        "translationVi": "Mẹ tôi đứng ở bên phải."
+    },
+    {
+        "text": "Ihre Bluse ist rot und ihr Rock ist schwarz.",
+        "start": 973.0799926757812,
+        "end": 983.2000244140625,
+        "wordTimings": [
+            {
+                "word": "Ihre",
+                "start": 973.0799926757812,
+                "end": 973.219970703125
+            },
+            {
+                "word": "Bluse",
+                "start": 973.219970703125,
+                "end": 973.760009765625
+            },
+            {
+                "word": "ist",
+                "start": 973.760009765625,
+                "end": 974.2999877929688
+            },
+            {
+                "word": "rot",
+                "start": 974.2999877929688,
+                "end": 974.7000122070312
+            },
+            {
+                "word": "und",
+                "start": 974.7000122070312,
+                "end": 975.260009765625
+            },
+            {
+                "word": "ihr",
+                "start": 975.260009765625,
+                "end": 975.6400146484375
+            },
+            {
+                "word": "Rock",
+                "start": 975.6400146484375,
+                "end": 976.02001953125
+            },
+            {
+                "word": "ist",
+                "start": 976.02001953125,
+                "end": 982.4199829101562
+            },
+            {
+                "word": "schwarz.",
+                "start": 982.4199829101562,
+                "end": 983.2000244140625
+            }
+        ],
+        "translationEn": "Her blouse is red and her skirt is black.",
+        "translationVi": "Áo blouse của cô ấy màu đỏ và chân váy của cô ấy màu đen."
+    },
+    {
+        "text": "Ihre Augen sind groß und blau.",
+        "start": 984.660009765625,
+        "end": 992.2600219726562,
+        "wordTimings": [
+            {
+                "word": "Ihre",
+                "start": 984.660009765625,
+                "end": 985.0800170898438
+            },
+            {
+                "word": "Augen",
+                "start": 985.0800170898438,
+                "end": 985.5800170898438
+            },
+            {
+                "word": "sind",
+                "start": 985.5800170898438,
+                "end": 990.8200073242188
+            },
+            {
+                "word": "groß",
+                "start": 990.8200073242188,
+                "end": 991.3400268554688
+            },
+            {
+                "word": "und",
+                "start": 991.3400268554688,
+                "end": 991.6799926757812
+            },
+            {
+                "word": "blau.",
+                "start": 991.6799926757812,
+                "end": 992.2600219726562
+            }
+        ],
+        "translationEn": "Her eyes are big and blue.",
+        "translationVi": "Mắt của bạn to và màu xanh."
+    },
+    {
+        "text": "Mein Vater hat schwarze Haare.",
+        "start": 992.8600219726562,
+        "end": 1000.3999755859375,
+        "wordTimings": [
+            {
+                "word": "Mein",
+                "start": 992.8600219726562,
+                "end": 994.0800170898438
+            },
+            {
+                "word": "Vater",
+                "start": 994.0800170898438,
+                "end": 994.6799926757812
+            },
+            {
+                "word": "hat",
+                "start": 994.6799926757812,
+                "end": 999.1199951171875
+            },
+            {
+                "word": "schwarze",
+                "start": 999.1199951171875,
+                "end": 999.739990234375
+            },
+            {
+                "word": "Haare.",
+                "start": 999.739990234375,
+                "end": 1000.3999755859375
+            }
+        ],
+        "translationEn": "My father has black hair.",
+        "translationVi": "Cha tôi có tóc đen."
+    },
+    {
+        "text": "Sein Pullover ist braun.",
+        "start": 1002.5400146484375,
+        "end": 1008.060009765625,
+        "wordTimings": [
+            {
+                "word": "Sein",
+                "start": 1002.5400146484375,
+                "end": 1002.760009765625
+            },
+            {
+                "word": "Pullover",
+                "start": 1002.760009765625,
+                "end": 1003.4199829101562
+            },
+            {
+                "word": "ist",
+                "start": 1003.4199829101562,
+                "end": 1007.4199829101562
+            },
+            {
+                "word": "braun.",
+                "start": 1007.4199829101562,
+                "end": 1008.060009765625
+            }
+        ],
+        "translationEn": "His sweater is brown.",
+        "translationVi": "Áo len của anh ấy màu nâu."
+    },
+    {
+        "text": "Seine Hose ist dunkelgrau.",
+        "start": 1009.0400146484375,
+        "end": 1015.2000244140625,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 1009.0400146484375,
+                "end": 1009.47998046875
+            },
+            {
+                "word": "Hose",
+                "start": 1009.47998046875,
+                "end": 1009.9000244140625
+            },
+            {
+                "word": "ist",
+                "start": 1009.9000244140625,
+                "end": 1014.239990234375
+            },
+            {
+                "word": "dunkelgrau.",
+                "start": 1014.239990234375,
+                "end": 1015.2000244140625
+            }
+        ],
+        "translationEn": "His pants are dark gray.",
+        "translationVi": "Quần của anh ấy màu xám đậm."
+    },
+    {
+        "text": "Und seine Schuhe sind schwarz.",
+        "start": 1016.4999755859375,
+        "end": 1019.4799926757812,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 1016.4999755859375,
+                "end": 1017.0999755859375
+            },
+            {
+                "word": "seine",
+                "start": 1017.0999755859375,
+                "end": 1017.5399780273438
+            },
+            {
+                "word": "Schuhe",
+                "start": 1017.5399780273438,
+                "end": 1018.02001953125
+            },
+            {
+                "word": "sind",
+                "start": 1018.02001953125,
+                "end": 1018.5999755859375
+            },
+            {
+                "word": "schwarz.",
+                "start": 1018.5999755859375,
+                "end": 1019.4799926757812
+            }
+        ],
+        "translationEn": "And his shoes are black.",
+        "translationVi": "Và giày của anh ấy màu đen."
+    },
+    {
+        "text": "Möchtest du gratis online Deutsch lernen?",
+        "start": 1027.83994140625,
+        "end": 1032.2000244140625,
+        "wordTimings": [
+            {
+                "word": "Möchtest",
+                "start": 1027.83994140625,
+                "end": 1029.02001953125
+            },
+            {
+                "word": "du",
+                "start": 1029.02001953125,
+                "end": 1030.0999755859375
+            },
+            {
+                "word": "gratis",
+                "start": 1030.0999755859375,
+                "end": 1030.56005859375
+            },
+            {
+                "word": "online",
+                "start": 1030.56005859375,
+                "end": 1031.1800537109375
+            },
+            {
+                "word": "Deutsch",
+                "start": 1031.1800537109375,
+                "end": 1031.52001953125
+            },
+            {
+                "word": "lernen?",
+                "start": 1031.52001953125,
+                "end": 1032.2000244140625
+            }
+        ],
+        "translationEn": "Would you like to learn German online for free?",
+        "translationVi": "Bạn có muốn học tiếng Đức miễn phí trực tuyến không?"
+    },
+    {
+        "text": "Mehr als 200 Videolektionen.",
+        "start": 1032.5400146484376,
+        "end": 1035.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Mehr",
+                "start": 1032.5400146484376,
+                "end": 1032.739990234375
+            },
+            {
+                "word": "als",
+                "start": 1032.739990234375,
+                "end": 1033.0999755859375
+            },
+            {
+                "word": "200",
+                "start": 1033.0999755859375,
+                "end": 1033.8199462890625
+            },
+            {
+                "word": "Videolektionen.",
+                "start": 1033.8199462890625,
+                "end": 1035.6800048828125
+            }
+        ],
+        "translationEn": "More than 200 video lessons.",
+        "translationVi": "Hơn 200 bài học video."
+    },
+    {
+        "text": "Abonniere unseren Kanal.",
+        "start": 1035.4400390625,
+        "end": 1037.3400390625,
+        "wordTimings": [
+            {
+                "word": "Abonniere",
+                "start": 1035.4400390625,
+                "end": 1035.9599609375
+            },
+            {
+                "word": "unseren",
+                "start": 1035.9599609375,
+                "end": 1036.56005859375
+            },
+            {
+                "word": "Kanal.",
+                "start": 1036.56005859375,
+                "end": 1037.3400390625
+            }
+        ],
+        "translationEn": "Subscribe to our channel.",
+        "translationVi": "Hãy đăng ký kênh của chúng tôi."
+    }
+]
