@@ -16,7 +16,7 @@ const CategoryPage = () => {
   const [category, setCategory] = useState(null);
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [showModePopup, setShowModePopup] = useState(false);
-  const itemsPerPage = 15;
+  const itemsPerPage = 10;
 
   const fetchCategory = useCallback(async () => {
     try {
