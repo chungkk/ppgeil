@@ -3494,10 +3494,10 @@ h3.transcriptTitle {
 
   .middleSection {
     position: fixed;
-    top: calc(48px + 56.25vw);
-    /* Below video - calculated from viewport width */
-    bottom: calc(52px + env(safe-area-inset-bottom, 0px));
-    /* Sát thanh điều khiển */
+    /* Header (56px from Header.module.css @media 768px) + Video (56.25vw) */
+    top: calc(56px + 56.25vw);
+    /* Bottom controls: 3px border + 6px padding + 64px button + 6px padding = 79px + safe-area */
+    bottom: calc(79px + env(safe-area-inset-bottom, 0px));
     left: 4px;
     right: 4px;
     padding: 0;
@@ -3505,11 +3505,11 @@ h3.transcriptTitle {
     z-index: 50;
     display: flex;
     flex-direction: column;
-    /* Reset desktop styles for mobile */
-    border: none;
-    box-shadow: none;
-    background: var(--bg-secondary);
-    border-radius: 16px;
+    /* Neo-retro style on mobile */
+    background: #fef9e7;
+    border: 3px solid #2d3436;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 0 rgba(0, 0, 0, 0.1);
     /* Ensure minimum height and stretch content */
     min-height: 200px;
   }
@@ -4541,7 +4541,7 @@ h3.transcriptTitle {
     display: flex;
     flex-direction: column;
     gap: 0;
-    background: var(--bg-secondary);
+    background: #fef9e7;
     flex: 1;
   }
 
@@ -4773,10 +4773,10 @@ h3.transcriptTitle {
   }
 
   .middleSection {
-    top: calc(44px + 56.25vw + 0px);
-    /* Below video - no gap */
-    bottom: calc(48px + env(safe-area-inset-bottom, 0px));
-    /* Sát thanh điều khiển */
+    /* Header at 480px: 52px (from Header.module.css) */
+    top: calc(52px + 56.25vw);
+    /* Bottom controls at 480px: 3px border + 5px padding + 56px button + 5px padding = 69px + safe-area */
+    bottom: calc(69px + env(safe-area-inset-bottom, 0px));
     left: 2px;
     right: 2px;
     padding: 0;
@@ -4786,14 +4786,19 @@ h3.transcriptTitle {
 
   /* Mobile Video Section - Fixed to header for 480px screens */
   .mobileVideoSection {
-    top: 44px;
+    top: 52px;
   }
 
   /* Middle Column - Fixed between video and bottom buttons for 480px */
   .middleColumn {
-    top: calc(44px + 56.25vw);
-    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
-    /* Above bottom navigation buttons: 12px padding + 48px button + 12px padding */
+    top: calc(52px + 56.25vw);
+    /* Bottom controls at 480px: 3px border + 5px padding + 56px button + 5px padding = 69px + safe-area */
+    bottom: calc(69px + env(safe-area-inset-bottom, 0px));
+    /* Neo-retro style maintained on small screens */
+    background: #fef9e7;
+    border: 3px solid #2d3436;
+    border-bottom: none;
+    border-radius: 14px 14px 0 0;
   }
 
   /* Optimize header for very small screens */
@@ -5040,10 +5045,10 @@ h3.transcriptTitle {
   }
 
   .dictationContainer {
-    border: 2px solid var(--border-color);
+    border: 2px solid #2d3436;
     border-radius: var(--border-radius);
     padding: 4px;
-    background: var(--bg-secondary);
+    background: #fef9e7;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -6868,18 +6873,35 @@ h3.transcriptTitle {
 
   .middleColumn {
     position: fixed;
-    top: calc(48px + 56.25vw);
-    /* Below header + video */
+    /* 
+     * Video positioning:
+     * - Header: 56px (from Header.module.css @media 768px)
+     * - Video: 56.25vw (16:9 aspect ratio of viewport width)
+     * Total top = 56px + 56.25vw
+     */
+    top: calc(56px + 56.25vw);
     left: 0;
     right: 0;
-    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
-    /* Above bottom navigation buttons: 12px padding + 48px button + 12px padding */
+    /* 
+     * Bottom controls height breakdown:
+     * - Border-top: 3px
+     * - Padding-top: 6px
+     * - Play button: 64px
+     * - Padding-bottom: 6px (or safe-area)
+     * Total = 79px + safe-area
+     */
+    bottom: calc(79px + env(safe-area-inset-bottom, 0px));
     padding: 0;
-    border-radius: 0;
+    /* Neo-retro style on mobile */
+    border-radius: 16px 16px 0 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: var(--bg-secondary);
+    /* Neo-retro background matching desktop */
+    background: #fef9e7;
+    border: 3px solid #2d3436;
+    border-bottom: none;
+    box-shadow: 0 -4px 0 rgba(0, 0, 0, 0.1);
     z-index: 50;
   }
 
@@ -6924,7 +6946,7 @@ h3.transcriptTitle {
     gap: var(--spacing-sm);
     padding: var(--spacing-md);
     padding-bottom: var(--spacing-sm);
-    background: var(--bg-secondary);
+    background: #fef9e7;
     overflow: hidden;
   }
 
@@ -7117,7 +7139,7 @@ h3.transcriptTitle {
   /* Mobile Video Section - Fixed to header like shadowing page */
   .mobileVideoSection {
     position: fixed;
-    top: 48px;
+    top: 56px; /* Header height from Header.module.css @media 768px */
     left: 0;
     right: 0;
     z-index: 100;
