@@ -8,7 +8,7 @@
   height: 550px;
   min-width: 0;
   gap: 0;
-  background: white !important;
+  background: #fef9e7 !important;
   border-radius: 18px !important;
   border: 3px solid #2d3436 !important;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15) !important;
@@ -104,7 +104,7 @@
 
 .transcriptTab {
   padding: 6px 12px;
-  background: white !important;
+  background: #fef9e7 !important;
   border: 2px solid #2d3436 !important;
   color: #1a1a2e !important;
   cursor: pointer;
@@ -149,7 +149,7 @@
 }
 
 .transcriptTabActive .transcriptTabCount {
-  background: white !important;
+  background: #fef9e7 !important;
   color: #1a1a2e !important;
 }
 
@@ -220,7 +220,7 @@
   min-height: 0;
   overflow-y: auto;
   padding: 12px;
-  background: white !important;
+  background: #fef9e7 !important;
   scroll-behavior: smooth;
 }
 
@@ -232,7 +232,7 @@
 
 /* Transcript Item - Neo-Retro */
 .transcriptItem {
-  background: white !important;
+  background: #fef9e7 !important;
   border: 2px solid #2d3436 !important;
   border-radius: 12px !important;
   padding: 14px 16px;
@@ -326,13 +326,14 @@
 /* Translation - Neo-Retro */
 .transcriptItemTranslation {
   margin-top: 8px;
-  padding: 8px 12px 8px 32px;
-  background: rgba(0, 206, 201, 0.1) !important;
-  border-left: 3px solid #00cec9;
+  padding: 8px 12px 8px 14px;
+  background: rgba(253, 203, 110, 0.25) !important;
+  border-left: 3px solid #f39c12;
   border-radius: 6px;
-  font-size: 13px;
-  line-height: 1.7;
-  color: #636e72 !important;
+  font-size: 12.5px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #7f6600 !important;
   position: relative;
   transition: all 0.2s ease;
 }
@@ -623,7 +624,7 @@
   display: inline-block;
   width: 40px;
   height: 22px;
-  background: white;
+  background: #fef9e7;
   border-radius: 11px;
   transition: all 0.2s ease;
   border: 2px solid #2d3436;
@@ -664,19 +665,19 @@
 /* Translation Display in Transcript Items */
 .transcriptItemTranslation {
   margin-top: 8px;
-  padding: 8px 12px 8px 32px;
-  /* Left padding for alignment with text */
-  background: rgba(100, 116, 139, 0.08);
-  border-left: 3px solid rgba(100, 116, 139, 0.3);
+  padding: 8px 12px 8px 14px;
+  background: rgba(253, 203, 110, 0.25) !important;
+  border-left: 3px solid #f39c12;
   border-radius: 6px;
-  font-size: 13px;
-  line-height: 1.7;
-  color: rgba(148, 163, 184, 0.95);
+  font-size: 12.5px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #7f6600 !important;
   position: relative;
   transition: all 0.2s ease;
 }
 
 .transcriptItemTranslation:hover {
-  background: rgba(100, 116, 139, 0.12);
-  border-left-color: rgba(100, 116, 139, 0.5);
+  background: rgba(253, 203, 110, 0.35) !important;
+  border-left-color: #e67e22;
 }
