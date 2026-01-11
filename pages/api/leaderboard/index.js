@@ -32,7 +32,7 @@ export default async function handler(req, res) {
 
     // Fetch users sorted by points (descending) with pagination
     const users = await User.find()
-      .select('name email points streak.currentStreak createdAt')
+      .select('name email avatar points streak.currentStreak lessonsCompleted createdAt')
       .sort({ points: -1, createdAt: 1 }) // Sort by points desc, then by join date asc (earlier users rank higher on ties)
       .skip(skip)
       .limit(limit)
@@ -44,11 +44,14 @@ export default async function handler(req, res) {
       id: user._id.toString(),
       name: user.name,
       email: user.email,
+      avatar: user.avatar || null,
       points: user.points || 0,
       streak: user.streak?.currentStreak || 0,
+      lessonsCompleted: user.lessonsCompleted || 0,
       joinedAt: user.createdAt,
       isCurrentUser: currentUserId === user._id.toString()
     }));
+
 
     res.status(200).json({
       success: true,
