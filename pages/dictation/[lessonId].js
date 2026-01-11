@@ -1257,55 +1257,9 @@ const DictationPage = () => {
         activeElement?.tagName === 'TEXTAREA' ||
         activeElement?.isContentEditable;
 
-      // On mobile: allow Space to work normally when typing (don't hijack it)
-      // Check for mobile using window width
-      const isMobileDevice = window.innerWidth <= 768;
-      if (isTyping && isMobileDevice) {
-        // Let Space work normally for typing on mobile
-        return;
-      }
-
-      // If typing on desktop, toggle play/pause (resume from current position, not from start)
+      // Allow Space to work normally when typing (both desktop and mobile)
       if (isTyping) {
-        e.preventDefault();
-        if (isPlaying) {
-          // Pause
-          if (isYouTube) {
-            youtubePlayerRef.current?.pauseVideo?.();
-          } else {
-            audioRef.current?.pause();
-          }
-          setIsPlaying(false);
-        } else {
-          // Resume from current position (or from start if at end of sentence)
-          const sentence = transcriptData[currentSentenceIndex];
-          let needSeek = false;
-          if (isYouTube) {
-            const player = youtubePlayerRef.current;
-            // If at end of sentence, seek back to start
-            if (sentence && player?.getCurrentTime?.() >= sentence.end - 0.1) {
-              setIsUserSeeking(true);
-              player.seekTo(sentence.start);
-              needSeek = true;
-            }
-            player?.playVideo?.();
-          } else {
-            const audio = audioRef.current;
-            // If at end of sentence, seek back to start
-            if (sentence && audio && audio.currentTime >= sentence.end - 0.1) {
-              setIsUserSeeking(true);
-              audio.currentTime = sentence.start;
-              needSeek = true;
-            }
-            audio?.play();
-          }
-          setIsPlaying(true);
-          if (sentence) setSegmentPlayEndTime(sentence.end);
-          // Clear seeking flag after a delay
-          if (needSeek) {
-            setTimeout(() => setIsUserSeeking(false), 500);
-          }
-        }
+        // Let Space work normally for typing
         return;
       }
 
@@ -1704,229 +1658,139 @@ const DictationPage = () => {
                   <span className={styles.wordInputsLabel}>{t('dictationPage.enterAnswer')}</span>
                   
                   {/* Mobile: Single textarea input */}
-                  {isMobile ? (
-                    <div className={styles.mobileInputContainer}>
-                      <div className={styles.mobileTextareaWrapper}>
-                        {/* Colored text overlay */}
-                        <div className={styles.mobileTextOverlay}>
-                          {(() => {
-                            const userText = userInputs[currentSentenceIndex] || '';
-                            const userWords = userText.split(/\s+/);
-                            const correctText = transcriptData[currentSentenceIndex]?.text || '';
-                            const correctWords = correctText.split(' ').filter(w => w.length > 0);
-                            const hasTrailingSpace = userText.endsWith(' ');
-                            
-                            return userWords.map((word, i) => {
-                              if (!word && i === userWords.length - 1 && !hasTrailingSpace) {
-                                return null;
-                              }
-                              
-                              const correctWord = correctWords[i]?.replace(/[.,!?;:"""''„]/g, '') || '';
-                              const normalizedUser = word.toLowerCase().replace(/[.,!?;:"""''„]/g, '');
-                              const normalizedCorrect = correctWord.toLowerCase();
-                              const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
-                              
-                              // Check if this word is "completed" (has space after it)
-                              const isWordCompleted = i < userWords.length - 1 || hasTrailingSpace;
-                              
-                              let colorClass = '';
-                              if (isWordCompleted && word) {
-                                if (normalizedUser === normalizedCorrect) {
-                                  colorClass = isRevealed ? styles.overlayWordRevealed : styles.overlayWordCorrect;
-                                } else {
-                                  colorClass = styles.overlayWordWrong;
-                                }
-                              }
-                              
-                              return (
-                                <span key={i}>
-                                  <span className={colorClass}>{word}</span>
-                                  {i < userWords.length - 1 ? ' ' : ''}
-                                </span>
-                              );
-                            });
-                          })()}
-                        </div>
-                        <textarea
-                          className={`${styles.mobileTextInput} ${completedSentences.includes(currentSentenceIndex) ? styles.mobileTextInputCompleted : ''}`}
-                          value={userInputs[currentSentenceIndex] || ''}
-                          onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
-                          placeholder={t('dictationPage.typeAllWords')}
-                          rows={3}
-                          onKeyDown={(e) => {
-                            if (e.key === 'Enter' && !e.shiftKey) {
-                              e.preventDefault();
-                              checkAnswer(currentSentenceIndex);
+                  {/* Both desktop and mobile: Use textarea input */}
+                  <div className={styles.mobileInputContainer}>
+                    <div className={styles.mobileTextareaWrapper}>
+                      {/* Colored text overlay */}
+                      <div className={styles.mobileTextOverlay}>
+                        {(() => {
+                          const userText = userInputs[currentSentenceIndex] || '';
+                          const userWords = userText.split(/\s+/);
+                          const correctText = transcriptData[currentSentenceIndex]?.text || '';
+                          const correctWords = correctText.split(' ').filter(w => w.length > 0);
+                          const hasTrailingSpace = userText.endsWith(' ');
+                          
+                          return userWords.map((word, i) => {
+                            if (!word && i === userWords.length - 1 && !hasTrailingSpace) {
+                              return null;
                             }
-                          }}
-                          onSelect={(e) => {
-                            // Track cursor position to determine which word user is on
-                            const cursorPos = e.target.selectionStart;
-                            const textBeforeCursor = (userInputs[currentSentenceIndex] || '').substring(0, cursorPos);
-                            // Count spaces before cursor to determine word index
-                            const wordsBeforeCursor = textBeforeCursor.split(/\s+/).filter(w => w.length > 0);
-                            const endsWithSpace = textBeforeCursor.endsWith(' ');
-                            const wordIdx = endsWithSpace ? wordsBeforeCursor.length : Math.max(0, wordsBeforeCursor.length - 1);
-                            setMobileCursorWordIndex(wordIdx);
-                          }}
-                          onClick={(e) => {
-                            // Also track on click
-                            const cursorPos = e.target.selectionStart;
-                            const textBeforeCursor = (userInputs[currentSentenceIndex] || '').substring(0, cursorPos);
-                            const wordsBeforeCursor = textBeforeCursor.split(/\s+/).filter(w => w.length > 0);
-                            const endsWithSpace = textBeforeCursor.endsWith(' ');
-                            const wordIdx = endsWithSpace ? wordsBeforeCursor.length : Math.max(0, wordsBeforeCursor.length - 1);
-                            setMobileCursorWordIndex(wordIdx);
-                          }}
-                        />
-                      </div>
-                      {/* Show word status: correct (green), wrong (red), or hidden (underscores) */}
-                      {transcriptData[currentSentenceIndex] && (() => {
-                        const userText = userInputs[currentSentenceIndex] || '';
-                        const userWords = userText.split(/\s+/).filter(w => w.length > 0);
-                        const correctWords = transcriptData[currentSentenceIndex].text.split(' ').filter(w => w.length > 0);
-                        const isCompleted = completedSentences.includes(currentSentenceIndex);
-                        
-                        // Count completed words (words followed by space)
-                        // If sentence is completed, show all words
-                        const hasTrailingSpace = userText.endsWith(' ');
-                        const completedWordCount = isCompleted 
-                          ? correctWords.length 
-                          : (hasTrailingSpace ? userWords.length : Math.max(0, userWords.length - 1));
-                        
-                        return (
-                          <div className={styles.mobileWordComparison}>
-                            {correctWords.map((word, i) => {
-                              const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
-                              const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
-                              const userWord = userWords[i] || '';
-                              const normalizedUser = userWord.toLowerCase().replace(/[.,!?;:"""''„]/g, '');
-                              const normalizedCorrect = pureWord.toLowerCase();
-                              
-                              // Check if word was revealed by hint
-                              const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
-                              
-                              // Show result for completed words or if sentence is done
-                              if (i < completedWordCount || isCompleted) {
-                                const isCorrect = normalizedUser === normalizedCorrect;
-                                if (isCorrect) {
-                                  // Correct: show the word in green (or orange if revealed by hint)
-                                  return (
-                                    <span key={i} className={isRevealed ? styles.mobileWordRevealed : styles.mobileWordCorrect}>
-                                      {pureWord}{punctuation}{' '}
-                                    </span>
-                                  );
-                                } else {
-                                  // Wrong: show underscores with red background
-                                  return (
-                                    <span key={i} className={styles.mobileWordWrong}>
-                                      {'_'.repeat(pureWord.length)}{punctuation}{' '}
-                                    </span>
-                                  );
-                                }
+                            
+                            const correctWord = correctWords[i]?.replace(/[.,!?;:"""''„]/g, '') || '';
+                            const normalizedUser = word.toLowerCase().replace(/[.,!?;:"""''„]/g, '');
+                            const normalizedCorrect = correctWord.toLowerCase();
+                            const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
+                            
+                            // Check if this word is "completed" (has space after it)
+                            const isWordCompleted = i < userWords.length - 1 || hasTrailingSpace;
+                            
+                            let colorClass = '';
+                            if (isWordCompleted && word) {
+                              if (normalizedUser === normalizedCorrect) {
+                                colorClass = isRevealed ? styles.overlayWordRevealed : styles.overlayWordCorrect;
                               } else {
-                                // Word not yet completed - show underscores
+                                colorClass = styles.overlayWordWrong;
+                              }
+                            }
+                            
+                            return (
+                              <span key={i}>
+                                <span className={colorClass}>{word}</span>
+                                {i < userWords.length - 1 ? ' ' : ''}
+                              </span>
+                            );
+                          });
+                        })()}
+                      </div>
+                      <textarea
+                        className={`${styles.mobileTextInput} ${completedSentences.includes(currentSentenceIndex) ? styles.mobileTextInputCompleted : ''}`}
+                        value={userInputs[currentSentenceIndex] || ''}
+                        onChange={(e) => handleInputChange(currentSentenceIndex, e.target.value)}
+                        placeholder={t('dictationPage.typeAllWords')}
+                        rows={3}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' && !e.shiftKey) {
+                            e.preventDefault();
+                            checkAnswer(currentSentenceIndex);
+                          }
+                        }}
+                        onSelect={(e) => {
+                          // Track cursor position to determine which word user is on
+                          const cursorPos = e.target.selectionStart;
+                          const textBeforeCursor = (userInputs[currentSentenceIndex] || '').substring(0, cursorPos);
+                          // Count spaces before cursor to determine word index
+                          const wordsBeforeCursor = textBeforeCursor.split(/\s+/).filter(w => w.length > 0);
+                          const endsWithSpace = textBeforeCursor.endsWith(' ');
+                          const wordIdx = endsWithSpace ? wordsBeforeCursor.length : Math.max(0, wordsBeforeCursor.length - 1);
+                          setMobileCursorWordIndex(wordIdx);
+                        }}
+                        onClick={(e) => {
+                          // Also track on click
+                          const cursorPos = e.target.selectionStart;
+                          const textBeforeCursor = (userInputs[currentSentenceIndex] || '').substring(0, cursorPos);
+                          const wordsBeforeCursor = textBeforeCursor.split(/\s+/).filter(w => w.length > 0);
+                          const endsWithSpace = textBeforeCursor.endsWith(' ');
+                          const wordIdx = endsWithSpace ? wordsBeforeCursor.length : Math.max(0, wordsBeforeCursor.length - 1);
+                          setMobileCursorWordIndex(wordIdx);
+                        }}
+                      />
+                    </div>
+                    {/* Show word status: correct (green), wrong (red), or hidden (underscores) */}
+                    {transcriptData[currentSentenceIndex] && (() => {
+                      const userText = userInputs[currentSentenceIndex] || '';
+                      const userWords = userText.split(/\s+/).filter(w => w.length > 0);
+                      const correctWords = transcriptData[currentSentenceIndex].text.split(' ').filter(w => w.length > 0);
+                      const isCompleted = completedSentences.includes(currentSentenceIndex);
+                      
+                      // Count completed words (words followed by space)
+                      // If sentence is completed, show all words
+                      const hasTrailingSpace = userText.endsWith(' ');
+                      const completedWordCount = isCompleted 
+                        ? correctWords.length 
+                        : (hasTrailingSpace ? userWords.length : Math.max(0, userWords.length - 1));
+                      
+                      return (
+                        <div className={styles.mobileWordComparison}>
+                          {correctWords.map((word, i) => {
+                            const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
+                            const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
+                            const userWord = userWords[i] || '';
+                            const normalizedUser = userWord.toLowerCase().replace(/[.,!?;:"""''„]/g, '');
+                            const normalizedCorrect = pureWord.toLowerCase();
+                            
+                            // Check if word was revealed by hint
+                            const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
+                            
+                            // Show result for completed words or if sentence is done
+                            if (i < completedWordCount || isCompleted) {
+                              const isCorrect = normalizedUser === normalizedCorrect;
+                              if (isCorrect) {
+                                // Correct: show the word in green (or orange if revealed by hint)
                                 return (
-                                  <span key={i} className={styles.mobileWordMissing}>
+                                  <span key={i} className={isRevealed ? styles.mobileWordRevealed : styles.mobileWordCorrect}>
+                                    {pureWord}{punctuation}{' '}
+                                  </span>
+                                );
+                              } else {
+                                // Wrong: show underscores with red background
+                                return (
+                                  <span key={i} className={styles.mobileWordWrong}>
                                     {'_'.repeat(pureWord.length)}{punctuation}{' '}
                                   </span>
                                 );
                               }
-                            })}
-                          </div>
-                        );
-                      })()}
-                    </div>
-                  ) : (
-                    /* Desktop: Keep existing word-by-word input */
-                    <div className={styles.wordInputsContainer}>
-                    {transcriptData[currentSentenceIndex] && 
-                      transcriptData[currentSentenceIndex].text.split(' ').map((word, i) => {
-                        const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
-                        const punctuation = word.match(/[.,!?;:"""''„]$/) ? word.slice(-1) : '';
-                        const comparison = comparedWords[currentSentenceIndex]?.[i];
-                        const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
-                        const isCorrect = comparison?.isCorrect;
-                        const currentValue = wordInputs[currentSentenceIndex]?.[i] || '';
-                        
-                        // Check if input is wrong (doesn't match beginning of correct word)
-                        const normalizedInput = currentValue.toLowerCase().trim();
-                        const normalizedCorrect = pureWord.toLowerCase();
-                        const isWrong = currentValue && !normalizedCorrect.startsWith(normalizedInput) && !isCorrect;
-                        
-                        // Determine input class based on state
-                        let inputClass = styles.wordInput;
-                        if (isCorrect) {
-                          inputClass = `${styles.wordInput} ${styles.wordInputCorrect}`;
-                        } else if (isWrong) {
-                          inputClass = `${styles.wordInput} ${styles.wordInputWrong}`;
-                        } else if (isRevealed) {
-                          inputClass = `${styles.wordInput} ${styles.wordInputRevealed}`;
-                        } else if (currentValue && !isCorrect) {
-                          inputClass = `${styles.wordInput} ${styles.wordInputPartial}`;
-                        }
-                        
-                        // Render colored characters based on correctness
-                        const renderColoredInput = () => {
-                          if (!currentValue) return null;
-                          const chars = currentValue.split('');
-                          const correctChars = pureWord.split('');
-                          return (
-                            <div className={styles.coloredCharsOverlay}>
-                              {chars.map((char, idx) => {
-                                const correctChar = correctChars[idx];
-                                const isCharCorrect = correctChar && char.toLowerCase() === correctChar.toLowerCase();
-                                return (
-                                  <span
-                                    key={idx}
-                                    className={isCharCorrect ? styles.charCorrect : styles.charWrong}
-                                  >
-                                    {char}
-                                  </span>
-                                );
-                              })}
-                            </div>
-                          );
-                        };
-
-                        return (
-                          <div key={i} className={styles.wordInputWrapper}>
-                            <div className={styles.wordInputContainer}>
-                              {renderColoredInput()}
-                              <input
-                                type="text"
-                                data-word-input={`${currentSentenceIndex}-${i}`}
-                                className={`${inputClass} ${currentValue ? styles.wordInputTransparent : ''}`}
-                                value={currentValue}
-                                onChange={(e) => handleWordInputChange(currentSentenceIndex, i, e.target.value)}
-                                placeholder={'_'.repeat(Math.min(pureWord.length, 8))}
-                                maxLength={pureWord.length}
-                                style={{ width: `${pureWord.length * 10 + 24}px` }}
-                                disabled={isCorrect || completedSentences.includes(currentSentenceIndex)}
-                                onFocus={() => {
-                                  setFocusedWordIndex(i);
-                                  lastFocusedWordIndexRef.current = i;
-                                }}
-                                onBlur={() => setFocusedWordIndex(null)}
-                                onKeyDown={(e) => {
-                                  if (e.key === 'Tab') {
-                                    e.preventDefault();
-                                    focusNextWordInput(currentSentenceIndex, i);
-                                  } else if (e.key === 'Enter') {
-                                    e.preventDefault();
-                                    checkAnswer(currentSentenceIndex);
-                                  }
-                                }}
-                              />
-                            </div>
-                            {punctuation && <span className={styles.wordPunctuation}>{punctuation}</span>}
-                          </div>
-                        );
-                      })
-                    }
+                            } else {
+                              // Word not yet completed - show underscores
+                              return (
+                                <span key={i} className={styles.mobileWordMissing}>
+                                  {'_'.repeat(pureWord.length)}{punctuation}{' '}
+                                </span>
+                              );
+                            }
+                          })}
+                        </div>
+                      );
+                    })()}
                   </div>
-                  )}
-                  
 
                 </div>
 
@@ -1998,29 +1862,22 @@ const DictationPage = () => {
                   
                   <button
                     className={styles.hintButton}
-                    onClick={isMobile ? revealMobileHint : revealFocusedWordHint}
+                    onClick={revealMobileHint}
                     disabled={(() => {
                       // Common conditions
                       if (completedSentences.includes(currentSentenceIndex)) return true;
                       if (results[currentSentenceIndex]?.showAnswer) return true;
                       if ((hintClickCount[currentSentenceIndex] || 0) >= 2 && userPoints <= 0) return true;
                       
-                      // Mobile: check if word at cursor position is already revealed
-                      if (isMobile) {
-                        const correctText = transcriptData[currentSentenceIndex]?.text || '';
-                        const correctWords = correctText.split(' ').filter(w => w.length > 0);
-                        
-                        // Check if word at cursor is already revealed
-                        const wordIdx = Math.min(mobileCursorWordIndex, correctWords.length - 1);
-                        if (wordIdx < 0 || wordIdx >= correctWords.length) return true;
-                        if (revealedWordsByClick[currentSentenceIndex]?.[wordIdx]) return true;
-                        
-                        return false;
-                      }
+                      // Check if word at cursor position is already revealed
+                      const correctText = transcriptData[currentSentenceIndex]?.text || '';
+                      const correctWords = correctText.split(' ').filter(w => w.length > 0);
                       
-                      // Desktop conditions
-                      if (lastFocusedWordIndexRef.current === null) return true;
-                      if (revealedWordsByClick[currentSentenceIndex]?.[lastFocusedWordIndexRef.current]) return true;
+                      // Check if word at cursor is already revealed
+                      const wordIdx = Math.min(mobileCursorWordIndex, correctWords.length - 1);
+                      if (wordIdx < 0 || wordIdx >= correctWords.length) return true;
+                      if (revealedWordsByClick[currentSentenceIndex]?.[wordIdx]) return true;
+                      
                       return false;
                     })()}
                     title={t('dictationPage.clickToShowHint')}
