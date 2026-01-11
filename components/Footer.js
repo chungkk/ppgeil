@@ -85,6 +85,12 @@ const Footer = () => {
             <Link href="/?mode=dictation" className={styles.footerLink}>
               {t('footer.links.dictation')}
             </Link>
+            <Link href="/?mode=shadowing" className={styles.footerLink}>
+              {t('footer.links.shadowing')}
+            </Link>
+            <Link href="/leaderboard" className={styles.footerLink}>
+              {t('header.nav.leaderboard')}
+            </Link>
           </div>
         </div>
       </div>

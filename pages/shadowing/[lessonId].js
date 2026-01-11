@@ -3023,8 +3023,6 @@ const DictationPageContent = () => {
             learningMode="shadowing"
             studyTime={studyTime}
             formatStudyTime={formatStudyTime}
-            showTranslation={showTranslation}
-            onToggleTranslation={() => setShowTranslation(!showTranslation)}
           />
         )}
 
