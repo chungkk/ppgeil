@@ -7,6 +7,7 @@ export default function UserProfileSidebar({ stats, userPoints = 0, achievements
   const { user, refreshUser } = useAuth();
   const [uploading, setUploading] = useState(false);
   const [cropperImage, setCropperImage] = useState(null);
+  const [avatarKey, setAvatarKey] = useState(Date.now());
   const fileInputRef = useRef(null);
 
   const handleAvatarClick = () => {
@@ -58,6 +59,7 @@ export default function UserProfileSidebar({ stats, userPoints = 0, achievements
 
       if (res.ok) {
         await refreshUser();
+        setAvatarKey(Date.now());
       } else {
         const data = await res.json();
         alert(data.message || 'Lỗi upload avatar');
@@ -89,7 +91,7 @@ export default function UserProfileSidebar({ stats, userPoints = 0, achievements
           >
             {user?.avatar ? (
               <img 
-                src={user.avatar} 
+                src={`${user.avatar}?t=${avatarKey}`} 
                 alt={user.name} 
                 className={styles.avatarImage}
               />
