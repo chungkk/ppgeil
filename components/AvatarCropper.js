@@ -12,11 +12,15 @@ export default function AvatarCropper({ image, onCancel, onSave }) {
   }, []);
 
   const createCroppedImage = async () => {
+    if (!croppedAreaPixels) {
+      console.error('No crop area defined');
+      return;
+    }
     try {
       const croppedImage = await getCroppedImg(image, croppedAreaPixels);
       onSave(croppedImage);
     } catch (e) {
-      console.error(e);
+      console.error('Crop error:', e);
     }
   };
 
@@ -98,6 +102,10 @@ async function getCroppedImg(imageSrc, pixelCrop) {
 function createImage(url) {
   return new Promise((resolve, reject) => {
     const image = new Image();
+    // Only set crossOrigin for non-data URLs to avoid CORS issues
+    if (!url.startsWith('data:')) {
+      image.setAttribute('crossOrigin', 'anonymous');
+    }
     image.addEventListener('load', () => resolve(image));
     image.addEventListener('error', (error) => reject(error));
     image.src = url;
