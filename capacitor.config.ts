@@ -5,8 +5,8 @@ const config: CapacitorConfig = {
   appName: 'PapaGeil',
   webDir: 'out',
   server: {
-    url: 'http://localhost:3000',
-    cleartext: true
+    url: 'https://papageil.net',
+    cleartext: false
   },
   ios: {
     contentInset: 'automatic',

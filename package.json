@@ -18,9 +18,9 @@
     "migrate:thumbnails:force": "node scripts/migrate-thumbnails.js --force"
   },
   "dependencies": {
-    "@capacitor/cli": "^8.0.0",
-    "@capacitor/core": "^8.0.0",
-    "@capacitor/ios": "^8.0.0",
+    "@capacitor/cli": "^7.4.4",
+    "@capacitor/core": "^7.4.4",
+    "@capacitor/ios": "^7.4.4",
     "@distube/ytdl-core": "^4.16.12",
     "bcryptjs": "^3.0.2",
     "dotenv": "^17.2.3",
