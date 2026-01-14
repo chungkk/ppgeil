@@ -1,0 +1,3496 @@
+[
+    {
+        "text": "Wusstest du, dass ein Igel mit seinen kurzen, schiefen Beinen",
+        "start": 12.660000228881836,
+        "end": 17.480000305175782,
+        "wordTimings": [
+            {
+                "word": "Wusstest",
+                "start": 12.660000228881836,
+                "end": 13.5600004196167
+            },
+            {
+                "word": "du,",
+                "start": 13.5600004196167,
+                "end": 14
+            },
+            {
+                "word": "dass",
+                "start": 14.279999732971191,
+                "end": 14.319999694824219
+            },
+            {
+                "word": "ein",
+                "start": 14.319999694824219,
+                "end": 14.680000305175781
+            },
+            {
+                "word": "Igel",
+                "start": 14.680000305175781,
+                "end": 15.039999961853027
+            },
+            {
+                "word": "mit",
+                "start": 15.039999961853027,
+                "end": 15.279999732971191
+            },
+            {
+                "word": "seinen",
+                "start": 15.279999732971191,
+                "end": 15.5600004196167
+            },
+            {
+                "word": "kurzen,",
+                "start": 15.5600004196167,
+                "end": 16.200000762939453
+            },
+            {
+                "word": "schiefen",
+                "start": 16.200000762939453,
+                "end": 16.959999084472656
+            },
+            {
+                "word": "Beinen",
+                "start": 16.959999084472656,
+                "end": 17.480000305175782
+            }
+        ],
+        "translationEn": "Did you know that a hedgehog with its short, crooked legs",
+        "translationVi": "Bạn có biết rằng một con nhím với đôi chân ngắn và cong của nó"
+    },
+    {
+        "text": "einen Hasen im Wetterinnen schlagen kann? Nein?",
+        "start": 17.08000030517578,
+        "end": 21.340000915527344,
+        "wordTimings": [
+            {
+                "word": "einen",
+                "start": 17.08000030517578,
+                "end": 17.8799991607666
+            },
+            {
+                "word": "Hasen",
+                "start": 17.8799991607666,
+                "end": 18.360000610351562
+            },
+            {
+                "word": "im",
+                "start": 18.360000610351562,
+                "end": 18.559999465942383
+            },
+            {
+                "word": "Wetterinnen",
+                "start": 18.559999465942383,
+                "end": 19.1200008392334
+            },
+            {
+                "word": "schlagen",
+                "start": 19.1200008392334,
+                "end": 19.520000457763672
+            },
+            {
+                "word": "kann?",
+                "start": 19.520000457763672,
+                "end": 19.899999618530273
+            },
+            {
+                "word": "Nein?",
+                "start": 20.639999389648438,
+                "end": 21.340000915527344
+            }
+        ],
+        "translationEn": "Can you hit a rabbit in the weather? No?",
+        "translationVi": "Có thể đánh một con thỏ trong thời tiết không? Không?"
+    },
+    {
+        "text": "Na dann überzeuge dich selbst.",
+        "start": 21.520000839233397,
+        "end": 24.259999084472657,
+        "wordTimings": [
+            {
+                "word": "Na",
+                "start": 21.520000839233397,
+                "end": 21.959999084472656
+            },
+            {
+                "word": "dann",
+                "start": 22.420000076293945,
+                "end": 22.6200008392334
+            },
+            {
+                "word": "überzeuge",
+                "start": 22.6200008392334,
+                "end": 23.18000030517578
+            },
+            {
+                "word": "dich",
+                "start": 23.18000030517578,
+                "end": 23.440000534057617
+            },
+            {
+                "word": "selbst.",
+                "start": 23.440000534057617,
+                "end": 24.259999084472657
+            }
+        ],
+        "translationEn": "Well then, see for yourself.",
+        "translationVi": "Vậy thì hãy tự mình thuyết phục đi."
+    },
+    {
+        "text": "Als der Igel eines schönen Sonntagsmorgens durchs Feld spazieren ging,",
+        "start": 27.340000534057616,
+        "end": 32.64000015258789,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 27.340000534057616,
+                "end": 28.100000381469727
+            },
+            {
+                "word": "der",
+                "start": 28.100000381469727,
+                "end": 28.440000534057617
+            },
+            {
+                "word": "Igel",
+                "start": 28.440000534057617,
+                "end": 28.719999313354492
+            },
+            {
+                "word": "eines",
+                "start": 28.719999313354492,
+                "end": 29.040000915527344
+            },
+            {
+                "word": "schönen",
+                "start": 29.040000915527344,
+                "end": 29.360000610351562
+            },
+            {
+                "word": "Sonntagsmorgens",
+                "start": 29.360000610351562,
+                "end": 30.579999923706055
+            },
+            {
+                "word": "durchs",
+                "start": 30.579999923706055,
+                "end": 31.360000610351562
+            },
+            {
+                "word": "Feld",
+                "start": 31.360000610351562,
+                "end": 31.360000610351562
+            },
+            {
+                "word": "spazieren",
+                "start": 31.360000610351562,
+                "end": 32
+            },
+            {
+                "word": "ging,",
+                "start": 32,
+                "end": 32.64000015258789
+            }
+        ],
+        "translationEn": "As the hedgehog was walking through the field on a beautiful Sunday morning,",
+        "translationVi": "Khi con nhím đi dạo qua cánh đồng vào một buổi sáng Chủ nhật đẹp trời,"
+    },
+    {
+        "text": "traf er den Hasen.",
+        "start": 32.87999954223633,
+        "end": 34.099999237060544,
+        "wordTimings": [
+            {
+                "word": "traf",
+                "start": 32.87999954223633,
+                "end": 33
+            },
+            {
+                "word": "er",
+                "start": 33,
+                "end": 33.099998474121094
+            },
+            {
+                "word": "den",
+                "start": 33.099998474121094,
+                "end": 33.380001068115234
+            },
+            {
+                "word": "Hasen.",
+                "start": 33.380001068115234,
+                "end": 34.099999237060544
+            }
+        ],
+        "translationEn": "he met the rabbit.",
+        "translationVi": "gặp con thỏ."
+    },
+    {
+        "text": "Der Hase war ein feiner, aber hochnäsiger Herr.",
+        "start": 36.179998779296874,
+        "end": 39.98000030517578,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 36.179998779296874,
+                "end": 36.380001068115234
+            },
+            {
+                "word": "Hase",
+                "start": 36.380001068115234,
+                "end": 36.68000030517578
+            },
+            {
+                "word": "war",
+                "start": 36.68000030517578,
+                "end": 36.900001525878906
+            },
+            {
+                "word": "ein",
+                "start": 36.900001525878906,
+                "end": 37.20000076293945
+            },
+            {
+                "word": "feiner,",
+                "start": 37.20000076293945,
+                "end": 37.619998931884766
+            },
+            {
+                "word": "aber",
+                "start": 37.97999954223633,
+                "end": 38.439998626708984
+            },
+            {
+                "word": "hochnäsiger",
+                "start": 38.439998626708984,
+                "end": 39.400001525878906
+            },
+            {
+                "word": "Herr.",
+                "start": 39.400001525878906,
+                "end": 39.98000030517578
+            }
+        ],
+        "translationEn": "The hare was a fine, but snobbish gentleman.",
+        "translationVi": "Con thỏ là một quý ông lịch thiệp nhưng kiêu ngạo."
+    },
+    {
+        "text": "Er fragte den Igel, was dieser denn an einem Sonntagmorgen",
+        "start": 40.49999847412109,
+        "end": 44.380001831054685,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 40.49999847412109,
+                "end": 40.779998779296875
+            },
+            {
+                "word": "fragte",
+                "start": 40.779998779296875,
+                "end": 41.13999938964844
+            },
+            {
+                "word": "den",
+                "start": 41.13999938964844,
+                "end": 41.400001525878906
+            },
+            {
+                "word": "Igel,",
+                "start": 41.400001525878906,
+                "end": 41.720001220703125
+            },
+            {
+                "word": "was",
+                "start": 42.099998474121094,
+                "end": 42.279998779296875
+            },
+            {
+                "word": "dieser",
+                "start": 42.279998779296875,
+                "end": 42.540000915527344
+            },
+            {
+                "word": "denn",
+                "start": 42.540000915527344,
+                "end": 42.7599983215332
+            },
+            {
+                "word": "an",
+                "start": 42.7599983215332,
+                "end": 43
+            },
+            {
+                "word": "einem",
+                "start": 43,
+                "end": 43.08000183105469
+            },
+            {
+                "word": "Sonntagmorgen",
+                "start": 43.08000183105469,
+                "end": 44.380001831054685
+            }
+        ],
+        "translationEn": "He asked the hedgehog what it was doing on a Sunday morning.",
+        "translationVi": "Ông hỏi con nhím, nó đang làm gì vào một buổi sáng Chủ nhật."
+    },
+    {
+        "text": "allein auf dem Feldweg treibe.",
+        "start": 43.980001831054686,
+        "end": 46.380001831054685,
+        "wordTimings": [
+            {
+                "word": "allein",
+                "start": 43.980001831054686,
+                "end": 44.65999984741211
+            },
+            {
+                "word": "auf",
+                "start": 44.65999984741211,
+                "end": 44.91999816894531
+            },
+            {
+                "word": "dem",
+                "start": 44.91999816894531,
+                "end": 45.18000030517578
+            },
+            {
+                "word": "Feldweg",
+                "start": 45.18000030517578,
+                "end": 45.68000030517578
+            },
+            {
+                "word": "treibe.",
+                "start": 45.68000030517578,
+                "end": 46.380001831054685
+            }
+        ],
+        "translationEn": "driving alone on the country road.",
+        "translationVi": "một mình trên con đường đồng cỏ."
+    },
+    {
+        "text": "Ich gehe spazieren, sagte der Igel.",
+        "start": 47.26000061035156,
+        "end": 50.7000015258789,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 47.26000061035156,
+                "end": 48.060001373291016
+            },
+            {
+                "word": "gehe",
+                "start": 48.060001373291016,
+                "end": 48.439998626708984
+            },
+            {
+                "word": "spazieren,",
+                "start": 48.439998626708984,
+                "end": 49.15999984741211
+            },
+            {
+                "word": "sagte",
+                "start": 49.7400016784668,
+                "end": 49.91999816894531
+            },
+            {
+                "word": "der",
+                "start": 49.91999816894531,
+                "end": 50.18000030517578
+            },
+            {
+                "word": "Igel.",
+                "start": 50.18000030517578,
+                "end": 50.7000015258789
+            }
+        ],
+        "translationEn": "\"I'm going for a walk,\" said the hedgehog.",
+        "translationVi": "Tôi đi dạo, con nhím nói."
+    },
+    {
+        "text": "Da lachte der Hase und meinte, deine Beine sind für andere Sachen",
+        "start": 51.179998779296874,
+        "end": 55.779999542236325,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 51.179998779296874,
+                "end": 51.459999084472656
+            },
+            {
+                "word": "lachte",
+                "start": 51.459999084472656,
+                "end": 51.779998779296875
+            },
+            {
+                "word": "der",
+                "start": 51.779998779296875,
+                "end": 52.18000030517578
+            },
+            {
+                "word": "Hase",
+                "start": 52.18000030517578,
+                "end": 52.29999923706055
+            },
+            {
+                "word": "und",
+                "start": 52.29999923706055,
+                "end": 52.58000183105469
+            },
+            {
+                "word": "meinte,",
+                "start": 52.58000183105469,
+                "end": 52.880001068115234
+            },
+            {
+                "word": "deine",
+                "start": 53.81999969482422,
+                "end": 53.81999969482422
+            },
+            {
+                "word": "Beine",
+                "start": 53.81999969482422,
+                "end": 54.20000076293945
+            },
+            {
+                "word": "sind",
+                "start": 54.20000076293945,
+                "end": 54.47999954223633
+            },
+            {
+                "word": "für",
+                "start": 54.47999954223633,
+                "end": 54.880001068115234
+            },
+            {
+                "word": "andere",
+                "start": 54.880001068115234,
+                "end": 55.18000030517578
+            },
+            {
+                "word": "Sachen",
+                "start": 55.18000030517578,
+                "end": 55.779999542236325
+            }
+        ],
+        "translationEn": "Then the hare laughed and said, your legs are for other things.",
+        "translationVi": "Thỏ cười và nói, chân của bạn thì để làm những việc khác."
+    },
+    {
+        "text": "aber besser geeignet.",
+        "start": 55.37999954223633,
+        "end": 57.45999984741211,
+        "wordTimings": [
+            {
+                "word": "aber",
+                "start": 55.37999954223633,
+                "end": 56.119998931884766
+            },
+            {
+                "word": "besser",
+                "start": 56.119998931884766,
+                "end": 56.279998779296875
+            },
+            {
+                "word": "geeignet.",
+                "start": 56.279998779296875,
+                "end": 57.45999984741211
+            }
+        ],
+        "translationEn": "but better suited.",
+        "translationVi": "nhưng phù hợp hơn."
+    },
+    {
+        "text": "Diese Antwort gefiel dem Igel gar nicht.",
+        "start": 58.60000076293945,
+        "end": 61.36000137329101,
+        "wordTimings": [
+            {
+                "word": "Diese",
+                "start": 58.60000076293945,
+                "end": 58.880001068115234
+            },
+            {
+                "word": "Antwort",
+                "start": 58.880001068115234,
+                "end": 59.36000061035156
+            },
+            {
+                "word": "gefiel",
+                "start": 59.36000061035156,
+                "end": 59.7599983215332
+            },
+            {
+                "word": "dem",
+                "start": 59.7599983215332,
+                "end": 60
+            },
+            {
+                "word": "Igel",
+                "start": 60,
+                "end": 60.29999923706055
+            },
+            {
+                "word": "gar",
+                "start": 60.29999923706055,
+                "end": 60.900001525878906
+            },
+            {
+                "word": "nicht.",
+                "start": 60.900001525878906,
+                "end": 61.36000137329101
+            }
+        ],
+        "translationEn": "The hedgehog did not like this answer at all.",
+        "translationVi": "Câu trả lời này không làm cho con nhím hài lòng chút nào."
+    },
+    {
+        "text": "Er konnte vieles ertragen, aber über seine Beine",
+        "start": 61.9,
+        "end": 65.53999786376953,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 61.9,
+                "end": 62.02000045776367
+            },
+            {
+                "word": "konnte",
+                "start": 62.02000045776367,
+                "end": 62.279998779296875
+            },
+            {
+                "word": "vieles",
+                "start": 62.279998779296875,
+                "end": 63.02000045776367
+            },
+            {
+                "word": "ertragen,",
+                "start": 63.02000045776367,
+                "end": 63.34000015258789
+            },
+            {
+                "word": "aber",
+                "start": 63.7599983215332,
+                "end": 64.18000030517578
+            },
+            {
+                "word": "über",
+                "start": 64.18000030517578,
+                "end": 64.41999816894531
+            },
+            {
+                "word": "seine",
+                "start": 64.41999816894531,
+                "end": 64.76000213623047
+            },
+            {
+                "word": "Beine",
+                "start": 64.76000213623047,
+                "end": 65.53999786376953
+            }
+        ],
+        "translationEn": "He could endure a lot, but not about his legs.",
+        "translationVi": "Anh ấy có thể chịu đựng nhiều thứ, nhưng về đôi chân của mình thì không."
+    },
+    {
+        "text": "durfte sich niemand lustig machen,",
+        "start": 65.13999786376954,
+        "end": 67.66000061035156,
+        "wordTimings": [
+            {
+                "word": "durfte",
+                "start": 65.13999786376954,
+                "end": 65.80000305175781
+            },
+            {
+                "word": "sich",
+                "start": 65.80000305175781,
+                "end": 66.19999694824219
+            },
+            {
+                "word": "niemand",
+                "start": 66.19999694824219,
+                "end": 66.58000183105469
+            },
+            {
+                "word": "lustig",
+                "start": 66.58000183105469,
+                "end": 67.13999938964844
+            },
+            {
+                "word": "machen,",
+                "start": 67.13999938964844,
+                "end": 67.66000061035156
+            }
+        ],
+        "translationEn": "no one was allowed to make fun of,",
+        "translationVi": "không ai được phép chế nhạo,"
+    },
+    {
+        "text": "weil sie eben von Natur aus schief waren.",
+        "start": 67.76000061035157,
+        "end": 70.28000335693359,
+        "wordTimings": [
+            {
+                "word": "weil",
+                "start": 67.76000061035157,
+                "end": 67.95999908447266
+            },
+            {
+                "word": "sie",
+                "start": 67.95999908447266,
+                "end": 68.13999938964844
+            },
+            {
+                "word": "eben",
+                "start": 68.13999938964844,
+                "end": 68.4800033569336
+            },
+            {
+                "word": "von",
+                "start": 68.4800033569336,
+                "end": 68.63999938964844
+            },
+            {
+                "word": "Natur",
+                "start": 68.63999938964844,
+                "end": 68.95999908447266
+            },
+            {
+                "word": "aus",
+                "start": 68.95999908447266,
+                "end": 69.31999969482422
+            },
+            {
+                "word": "schief",
+                "start": 69.31999969482422,
+                "end": 69.5999984741211
+            },
+            {
+                "word": "waren.",
+                "start": 69.5999984741211,
+                "end": 70.28000335693359
+            }
+        ],
+        "translationEn": "because they were simply crooked by nature.",
+        "translationVi": "bởi vì chúng vốn dĩ đã bị nghiêng."
+    },
+    {
+        "text": "Er wollte dem Hasen eins auswischen und schlug ihm deswegen",
+        "start": 71.66000213623047,
+        "end": 76.3,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 71.66000213623047,
+                "end": 72.4800033569336
+            },
+            {
+                "word": "wollte",
+                "start": 72.4800033569336,
+                "end": 72.77999877929688
+            },
+            {
+                "word": "dem",
+                "start": 72.77999877929688,
+                "end": 73.0999984741211
+            },
+            {
+                "word": "Hasen",
+                "start": 73.0999984741211,
+                "end": 73.44000244140625
+            },
+            {
+                "word": "eins",
+                "start": 73.44000244140625,
+                "end": 73.72000122070312
+            },
+            {
+                "word": "auswischen",
+                "start": 73.72000122070312,
+                "end": 74.36000061035156
+            },
+            {
+                "word": "und",
+                "start": 74.36000061035156,
+                "end": 75
+            },
+            {
+                "word": "schlug",
+                "start": 75,
+                "end": 75.18000030517578
+            },
+            {
+                "word": "ihm",
+                "start": 75.18000030517578,
+                "end": 75.41999816894531
+            },
+            {
+                "word": "deswegen",
+                "start": 75.41999816894531,
+                "end": 76.3
+            }
+        ],
+        "translationEn": "He wanted to get back at the rabbit and therefore hit him.",
+        "translationVi": "Anh ta muốn trả thù con thỏ nên đã đánh nó."
+    },
+    {
+        "text": "einen Wettlauf vor.",
+        "start": 75.9,
+        "end": 77.57999877929687,
+        "wordTimings": [
+            {
+                "word": "einen",
+                "start": 75.9,
+                "end": 76.26000213623047
+            },
+            {
+                "word": "Wettlauf",
+                "start": 76.26000213623047,
+                "end": 76.83999633789062
+            },
+            {
+                "word": "vor.",
+                "start": 76.83999633789062,
+                "end": 77.57999877929687
+            }
+        ],
+        "translationEn": "a race ahead.",
+        "translationVi": "một cuộc đua."
+    },
+    {
+        "text": "Da lachte der Hase noch lauter und sagte, du mit deinen schiefen Beinen",
+        "start": 79.23999633789063,
+        "end": 84.11999969482422,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 79.23999633789063,
+                "end": 79.55999755859375
+            },
+            {
+                "word": "lachte",
+                "start": 79.55999755859375,
+                "end": 79.83999633789062
+            },
+            {
+                "word": "der",
+                "start": 79.83999633789062,
+                "end": 80.26000213623047
+            },
+            {
+                "word": "Hase",
+                "start": 80.26000213623047,
+                "end": 80.27999877929688
+            },
+            {
+                "word": "noch",
+                "start": 80.27999877929688,
+                "end": 80.68000030517578
+            },
+            {
+                "word": "lauter",
+                "start": 80.68000030517578,
+                "end": 80.91999816894531
+            },
+            {
+                "word": "und",
+                "start": 80.91999816894531,
+                "end": 81.19999694824219
+            },
+            {
+                "word": "sagte,",
+                "start": 81.19999694824219,
+                "end": 81.45999908447266
+            },
+            {
+                "word": "du",
+                "start": 82.18000030517578,
+                "end": 82.26000213623047
+            },
+            {
+                "word": "mit",
+                "start": 82.63999938964844,
+                "end": 82.69999694824219
+            },
+            {
+                "word": "deinen",
+                "start": 82.69999694824219,
+                "end": 82.94000244140625
+            },
+            {
+                "word": "schiefen",
+                "start": 82.94000244140625,
+                "end": 83.62000274658203
+            },
+            {
+                "word": "Beinen",
+                "start": 83.62000274658203,
+                "end": 84.11999969482422
+            }
+        ],
+        "translationEn": "Then the hare laughed even louder and said, you with your crooked legs.",
+        "translationVi": "Thỏ cười to hơn nữa và nói, bạn với đôi chân lệch của bạn."
+    },
+    {
+        "text": "willst du gegen mich gewinnen? Meinetwegen.",
+        "start": 84.03999938964844,
+        "end": 87.57999877929687,
+        "wordTimings": [
+            {
+                "word": "willst",
+                "start": 84.03999938964844,
+                "end": 84.23999786376953
+            },
+            {
+                "word": "du",
+                "start": 84.23999786376953,
+                "end": 84.45999908447266
+            },
+            {
+                "word": "gegen",
+                "start": 84.45999908447266,
+                "end": 84.66000366210938
+            },
+            {
+                "word": "mich",
+                "start": 84.66000366210938,
+                "end": 85.13999938964844
+            },
+            {
+                "word": "gewinnen?",
+                "start": 85.13999938964844,
+                "end": 85.66000366210938
+            },
+            {
+                "word": "Meinetwegen.",
+                "start": 86.55999755859375,
+                "end": 87.57999877929687
+            }
+        ],
+        "translationEn": "Do you want to win against me? Be my guest.",
+        "translationVi": "Bạn có muốn thắng tôi không? Cứ tự nhiên."
+    },
+    {
+        "text": "Sie wetteten um eine Goldmünze und eine Flasche Brandwein.",
+        "start": 89.13999786376954,
+        "end": 94.03999786376953,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 89.13999786376954,
+                "end": 89.95999908447266
+            },
+            {
+                "word": "wetteten",
+                "start": 89.95999908447266,
+                "end": 90.41999816894531
+            },
+            {
+                "word": "um",
+                "start": 90.41999816894531,
+                "end": 90.86000061035156
+            },
+            {
+                "word": "eine",
+                "start": 90.86000061035156,
+                "end": 91.0999984741211
+            },
+            {
+                "word": "Goldmünze",
+                "start": 91.0999984741211,
+                "end": 91.91999816894531
+            },
+            {
+                "word": "und",
+                "start": 91.91999816894531,
+                "end": 92.44000244140625
+            },
+            {
+                "word": "eine",
+                "start": 92.44000244140625,
+                "end": 92.69999694824219
+            },
+            {
+                "word": "Flasche",
+                "start": 92.69999694824219,
+                "end": 92.9800033569336
+            },
+            {
+                "word": "Brandwein.",
+                "start": 92.9800033569336,
+                "end": 94.03999786376953
+            }
+        ],
+        "translationEn": "They bet on a gold coin and a bottle of brandy.",
+        "translationVi": "Họ cá cược một đồng vàng và một chai rượu mạnh."
+    },
+    {
+        "text": "Der Hase wollte sofort loslegen.",
+        "start": 95.3800033569336,
+        "end": 98.2000015258789,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 95.3800033569336,
+                "end": 96.16000366210938
+            },
+            {
+                "word": "Hase",
+                "start": 96.16000366210938,
+                "end": 96.5
+            },
+            {
+                "word": "wollte",
+                "start": 96.5,
+                "end": 96.76000213623047
+            },
+            {
+                "word": "sofort",
+                "start": 96.76000213623047,
+                "end": 97.26000213623047
+            },
+            {
+                "word": "loslegen.",
+                "start": 97.26000213623047,
+                "end": 98.2000015258789
+            }
+        ],
+        "translationEn": "The hare wanted to get started right away.",
+        "translationVi": "Con thỏ muốn bắt đầu ngay lập tức."
+    },
+    {
+        "text": "Der Igel aber sagte, er müsse erst noch frühstücken und ging heim.",
+        "start": 98.58000030517579,
+        "end": 103.25999908447265,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 98.58000030517579,
+                "end": 98.76000213623047
+            },
+            {
+                "word": "Igel",
+                "start": 98.76000213623047,
+                "end": 99.0199966430664
+            },
+            {
+                "word": "aber",
+                "start": 99.0199966430664,
+                "end": 99.69999694824219
+            },
+            {
+                "word": "sagte,",
+                "start": 99.69999694824219,
+                "end": 99.69999694824219
+            },
+            {
+                "word": "er",
+                "start": 100.13999938964844,
+                "end": 100.22000122070312
+            },
+            {
+                "word": "müsse",
+                "start": 100.22000122070312,
+                "end": 100.45999908447266
+            },
+            {
+                "word": "erst",
+                "start": 100.45999908447266,
+                "end": 100.77999877929688
+            },
+            {
+                "word": "noch",
+                "start": 100.77999877929688,
+                "end": 101.18000030517578
+            },
+            {
+                "word": "frühstücken",
+                "start": 101.18000030517578,
+                "end": 101.81999969482422
+            },
+            {
+                "word": "und",
+                "start": 101.81999969482422,
+                "end": 102.4000015258789
+            },
+            {
+                "word": "ging",
+                "start": 102.4000015258789,
+                "end": 102.62000274658203
+            },
+            {
+                "word": "heim.",
+                "start": 102.62000274658203,
+                "end": 103.25999908447265
+            }
+        ],
+        "translationEn": "But the hedgehog said he still had to have breakfast and went home.",
+        "translationVi": "Nhưng con nhím nói rằng nó phải ăn sáng trước đã và đi về nhà."
+    },
+    {
+        "text": "Zu Hause angekommen, rief er seine Frau zu sich.",
+        "start": 110.13999786376954,
+        "end": 114.11999969482422,
+        "wordTimings": [
+            {
+                "word": "Zu",
+                "start": 110.13999786376954,
+                "end": 110.91999816894531
+            },
+            {
+                "word": "Hause",
+                "start": 110.91999816894531,
+                "end": 111.16000366210938
+            },
+            {
+                "word": "angekommen,",
+                "start": 111.16000366210938,
+                "end": 111.91999816894531
+            },
+            {
+                "word": "rief",
+                "start": 112.41999816894531,
+                "end": 112.5199966430664
+            },
+            {
+                "word": "er",
+                "start": 112.5199966430664,
+                "end": 112.76000213623047
+            },
+            {
+                "word": "seine",
+                "start": 112.76000213623047,
+                "end": 112.94000244140625
+            },
+            {
+                "word": "Frau",
+                "start": 112.94000244140625,
+                "end": 113.23999786376953
+            },
+            {
+                "word": "zu",
+                "start": 113.23999786376953,
+                "end": 113.63999938964844
+            },
+            {
+                "word": "sich.",
+                "start": 113.63999938964844,
+                "end": 114.11999969482422
+            }
+        ],
+        "translationEn": "Arriving home, he called his wife to him.",
+        "translationVi": "Về đến nhà, anh gọi vợ lại gần."
+    },
+    {
+        "text": "Er sagte ihr, sie solle sich anziehen und kurz darauf",
+        "start": 114.4,
+        "end": 118.53999786376953,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 114.4,
+                "end": 114.66000366210938
+            },
+            {
+                "word": "sagte",
+                "start": 114.66000366210938,
+                "end": 114.94000244140625
+            },
+            {
+                "word": "ihr,",
+                "start": 114.94000244140625,
+                "end": 115.19999694824219
+            },
+            {
+                "word": "sie",
+                "start": 115.54000091552734,
+                "end": 115.62000274658203
+            },
+            {
+                "word": "solle",
+                "start": 115.62000274658203,
+                "end": 115.80000305175781
+            },
+            {
+                "word": "sich",
+                "start": 115.80000305175781,
+                "end": 116.12000274658203
+            },
+            {
+                "word": "anziehen",
+                "start": 116.12000274658203,
+                "end": 116.76000213623047
+            },
+            {
+                "word": "und",
+                "start": 116.76000213623047,
+                "end": 117.31999969482422
+            },
+            {
+                "word": "kurz",
+                "start": 117.31999969482422,
+                "end": 117.66000366210938
+            },
+            {
+                "word": "darauf",
+                "start": 117.66000366210938,
+                "end": 118.53999786376953
+            }
+        ],
+        "translationEn": "He told her to get dressed and shortly after",
+        "translationVi": "Anh ấy bảo cô ấy mặc đồ và ngay sau đó"
+    },
+    {
+        "text": "gingen sie zum Feld.",
+        "start": 118.13999786376954,
+        "end": 119.7000015258789,
+        "wordTimings": [
+            {
+                "word": "gingen",
+                "start": 118.13999786376954,
+                "end": 118.4800033569336
+            },
+            {
+                "word": "sie",
+                "start": 118.4800033569336,
+                "end": 118.76000213623047
+            },
+            {
+                "word": "zum",
+                "start": 118.76000213623047,
+                "end": 119.04000091552734
+            },
+            {
+                "word": "Feld.",
+                "start": 119.04000091552734,
+                "end": 119.7000015258789
+            }
+        ],
+        "translationEn": "They went to the field.",
+        "translationVi": "họ đi ra cánh đồng."
+    },
+    {
+        "text": "Unterwegs erzählte er ihr von der Wette.",
+        "start": 121.77999725341797,
+        "end": 124.49999694824218,
+        "wordTimings": [
+            {
+                "word": "Unterwegs",
+                "start": 121.77999725341797,
+                "end": 122.55999755859375
+            },
+            {
+                "word": "erzählte",
+                "start": 122.55999755859375,
+                "end": 123.23999786376953
+            },
+            {
+                "word": "er",
+                "start": 123.23999786376953,
+                "end": 123.41999816894531
+            },
+            {
+                "word": "ihr",
+                "start": 123.41999816894531,
+                "end": 123.62000274658203
+            },
+            {
+                "word": "von",
+                "start": 123.62000274658203,
+                "end": 123.80000305175781
+            },
+            {
+                "word": "der",
+                "start": 123.80000305175781,
+                "end": 123.9800033569336
+            },
+            {
+                "word": "Wette.",
+                "start": 123.9800033569336,
+                "end": 124.49999694824218
+            }
+        ],
+        "translationEn": "On the way, he told her about the bet.",
+        "translationVi": "Trên đường đi, anh ấy kể cho cô ấy về cuộc cá cược."
+    },
+    {
+        "text": "Da schimpfte sie und hielt ihren Mann für verrückt,",
+        "start": 125.80000152587891,
+        "end": 129.55999450683595,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 125.80000152587891,
+                "end": 126.5
+            },
+            {
+                "word": "schimpfte",
+                "start": 126.5,
+                "end": 126.95999908447266
+            },
+            {
+                "word": "sie",
+                "start": 126.95999908447266,
+                "end": 127.33999633789062
+            },
+            {
+                "word": "und",
+                "start": 127.33999633789062,
+                "end": 127.94000244140625
+            },
+            {
+                "word": "hielt",
+                "start": 127.94000244140625,
+                "end": 128.0800018310547
+            },
+            {
+                "word": "ihren",
+                "start": 128.0800018310547,
+                "end": 128.33999633789062
+            },
+            {
+                "word": "Mann",
+                "start": 128.33999633789062,
+                "end": 128.55999755859375
+            },
+            {
+                "word": "für",
+                "start": 128.55999755859375,
+                "end": 128.94000244140625
+            },
+            {
+                "word": "verrückt,",
+                "start": 128.94000244140625,
+                "end": 129.55999450683595
+            }
+        ],
+        "translationEn": "Then she scolded him and thought her husband was crazy,",
+        "translationVi": "Cô ấy đã mắng chồng mình là điên."
+    },
+    {
+        "text": "aber der erklärte ihr seinen Plan.",
+        "start": 129.79999389648438,
+        "end": 132.4600036621094,
+        "wordTimings": [
+            {
+                "word": "aber",
+                "start": 129.79999389648438,
+                "end": 130.16000366210938
+            },
+            {
+                "word": "der",
+                "start": 130.16000366210938,
+                "end": 130.55999755859375
+            },
+            {
+                "word": "erklärte",
+                "start": 130.55999755859375,
+                "end": 131.32000732421875
+            },
+            {
+                "word": "ihr",
+                "start": 131.32000732421875,
+                "end": 131.5
+            },
+            {
+                "word": "seinen",
+                "start": 131.5,
+                "end": 131.75999450683594
+            },
+            {
+                "word": "Plan.",
+                "start": 131.75999450683594,
+                "end": 132.4600036621094
+            }
+        ],
+        "translationEn": "but he explained his plan to her.",
+        "translationVi": "nhưng anh ấy đã giải thích cho cô ấy kế hoạch của mình."
+    },
+    {
+        "text": "Der Hase und ich starten oben auf dem Acker.",
+        "start": 133.73999633789063,
+        "end": 137.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 133.73999633789063,
+                "end": 134.02000427246094
+            },
+            {
+                "word": "Hase",
+                "start": 134.02000427246094,
+                "end": 134.4199981689453
+            },
+            {
+                "word": "und",
+                "start": 134.4199981689453,
+                "end": 134.74000549316406
+            },
+            {
+                "word": "ich",
+                "start": 134.74000549316406,
+                "end": 135.24000549316406
+            },
+            {
+                "word": "starten",
+                "start": 135.24000549316406,
+                "end": 135.8800048828125
+            },
+            {
+                "word": "oben",
+                "start": 135.8800048828125,
+                "end": 136.24000549316406
+            },
+            {
+                "word": "auf",
+                "start": 136.24000549316406,
+                "end": 136.4199981689453
+            },
+            {
+                "word": "dem",
+                "start": 136.4199981689453,
+                "end": 136.67999267578125
+            },
+            {
+                "word": "Acker.",
+                "start": 136.67999267578125,
+                "end": 137.1999938964844
+            }
+        ],
+        "translationEn": "The hare and I start at the top of the field.",
+        "translationVi": "Con thỏ và tôi bắt đầu ở trên cánh đồng."
+    },
+    {
+        "text": "Der Hase in der einen Furche, ich in der anderen.",
+        "start": 137.50000610351563,
+        "end": 140.8,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 137.50000610351563,
+                "end": 137.66000366210938
+            },
+            {
+                "word": "Hase",
+                "start": 137.66000366210938,
+                "end": 138
+            },
+            {
+                "word": "in",
+                "start": 138,
+                "end": 138.16000366210938
+            },
+            {
+                "word": "der",
+                "start": 138.16000366210938,
+                "end": 138.5399932861328
+            },
+            {
+                "word": "einen",
+                "start": 138.5399932861328,
+                "end": 138.72000122070312
+            },
+            {
+                "word": "Furche,",
+                "start": 138.72000122070312,
+                "end": 139.1199951171875
+            },
+            {
+                "word": "ich",
+                "start": 139.67999267578125,
+                "end": 139.72000122070312
+            },
+            {
+                "word": "in",
+                "start": 139.72000122070312,
+                "end": 139.97999572753906
+            },
+            {
+                "word": "der",
+                "start": 139.97999572753906,
+                "end": 140.1199951171875
+            },
+            {
+                "word": "anderen.",
+                "start": 140.1199951171875,
+                "end": 140.8
+            }
+        ],
+        "translationEn": "The hare in one furrow, me in the other.",
+        "translationVi": "Con thỏ ở một rãnh, tôi ở rãnh khác."
+    },
+    {
+        "text": "Du legst dich am Ende des Ackers in meine Furche",
+        "start": 142.50000610351563,
+        "end": 146.13999633789064,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 142.50000610351563,
+                "end": 143.05999755859375
+            },
+            {
+                "word": "legst",
+                "start": 143.05999755859375,
+                "end": 143.5800018310547
+            },
+            {
+                "word": "dich",
+                "start": 143.5800018310547,
+                "end": 143.74000549316406
+            },
+            {
+                "word": "am",
+                "start": 143.74000549316406,
+                "end": 144.22000122070312
+            },
+            {
+                "word": "Ende",
+                "start": 144.22000122070312,
+                "end": 144.24000549316406
+            },
+            {
+                "word": "des",
+                "start": 144.24000549316406,
+                "end": 144.52000427246094
+            },
+            {
+                "word": "Ackers",
+                "start": 144.52000427246094,
+                "end": 144.86000061035156
+            },
+            {
+                "word": "in",
+                "start": 144.86000061035156,
+                "end": 145.0800018310547
+            },
+            {
+                "word": "meine",
+                "start": 145.0800018310547,
+                "end": 145.39999389648438
+            },
+            {
+                "word": "Furche",
+                "start": 145.39999389648438,
+                "end": 146.13999633789064
+            }
+        ],
+        "translationEn": "You lie down at the end of the field in my furrow.",
+        "translationVi": "Bạn nằm ở cuối cánh đồng trong rãnh của tôi."
+    },
+    {
+        "text": "und wartest, bis der Hase kommt.",
+        "start": 145.73999633789063,
+        "end": 148.13999633789064,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 145.73999633789063,
+                "end": 146.3800048828125
+            },
+            {
+                "word": "wartest,",
+                "start": 146.3800048828125,
+                "end": 146.82000732421875
+            },
+            {
+                "word": "bis",
+                "start": 146.94000244140625,
+                "end": 147
+            },
+            {
+                "word": "der",
+                "start": 147,
+                "end": 147.24000549316406
+            },
+            {
+                "word": "Hase",
+                "start": 147.24000549316406,
+                "end": 147.47999572753906
+            },
+            {
+                "word": "kommt.",
+                "start": 147.47999572753906,
+                "end": 148.13999633789064
+            }
+        ],
+        "translationEn": "and wait for the rabbit to come.",
+        "translationVi": "và chờ đợi cho đến khi thỏ đến."
+    },
+    {
+        "text": "Dann rufst du, ich bin schon hier.",
+        "start": 147.73999633789063,
+        "end": 151.32000427246095,
+        "wordTimings": [
+            {
+                "word": "Dann",
+                "start": 147.73999633789063,
+                "end": 148.55999755859375
+            },
+            {
+                "word": "rufst",
+                "start": 148.55999755859375,
+                "end": 148.9600067138672
+            },
+            {
+                "word": "du,",
+                "start": 148.9600067138672,
+                "end": 149.1999969482422
+            },
+            {
+                "word": "ich",
+                "start": 149.74000549316406,
+                "end": 149.86000061035156
+            },
+            {
+                "word": "bin",
+                "start": 149.86000061035156,
+                "end": 150.13999938964844
+            },
+            {
+                "word": "schon",
+                "start": 150.13999938964844,
+                "end": 150.5
+            },
+            {
+                "word": "hier.",
+                "start": 150.5,
+                "end": 151.32000427246095
+            }
+        ],
+        "translationEn": "Then you call, I am already here.",
+        "translationVi": "Rồi bạn gọi, tôi đã ở đây rồi."
+    },
+    {
+        "text": "Seine Frau verstand, legte sich in die Furche und wartete,",
+        "start": 155.64000549316407,
+        "end": 160.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Seine",
+                "start": 155.64000549316407,
+                "end": 155.8800048828125
+            },
+            {
+                "word": "Frau",
+                "start": 155.8800048828125,
+                "end": 156.1999969482422
+            },
+            {
+                "word": "verstand,",
+                "start": 156.1999969482422,
+                "end": 156.86000061035156
+            },
+            {
+                "word": "legte",
+                "start": 157.89999389648438,
+                "end": 158
+            },
+            {
+                "word": "sich",
+                "start": 158,
+                "end": 158.1999969482422
+            },
+            {
+                "word": "in",
+                "start": 158.1999969482422,
+                "end": 158.3800048828125
+            },
+            {
+                "word": "die",
+                "start": 158.3800048828125,
+                "end": 158.5800018310547
+            },
+            {
+                "word": "Furche",
+                "start": 158.5800018310547,
+                "end": 158.9600067138672
+            },
+            {
+                "word": "und",
+                "start": 158.9600067138672,
+                "end": 159.27999877929688
+            },
+            {
+                "word": "wartete,",
+                "start": 159.27999877929688,
+                "end": 160.0799987792969
+            }
+        ],
+        "translationEn": "His wife understood, lay down in the furrow, and waited,",
+        "translationVi": "Vợ anh hiểu, nằm xuống rãnh và chờ đợi,"
+    },
+    {
+        "text": "genau wie ihr Mann es gesagt hatte.",
+        "start": 160.37999572753907,
+        "end": 162.93999938964845,
+        "wordTimings": [
+            {
+                "word": "genau",
+                "start": 160.37999572753907,
+                "end": 160.83999633789062
+            },
+            {
+                "word": "wie",
+                "start": 160.83999633789062,
+                "end": 161.33999633789062
+            },
+            {
+                "word": "ihr",
+                "start": 161.33999633789062,
+                "end": 161.55999755859375
+            },
+            {
+                "word": "Mann",
+                "start": 161.55999755859375,
+                "end": 161.72000122070312
+            },
+            {
+                "word": "es",
+                "start": 161.72000122070312,
+                "end": 162.0399932861328
+            },
+            {
+                "word": "gesagt",
+                "start": 162.0399932861328,
+                "end": 162.36000061035156
+            },
+            {
+                "word": "hatte.",
+                "start": 162.36000061035156,
+                "end": 162.93999938964845
+            }
+        ],
+        "translationEn": "just as her husband had said.",
+        "translationVi": "cũng như chồng cô đã nói."
+    },
+    {
+        "text": "Oben auf dem Acker wartete der Hase bereits ungeduldig auf den Igel.",
+        "start": 165.67999877929688,
+        "end": 170.0799987792969,
+        "wordTimings": [
+            {
+                "word": "Oben",
+                "start": 165.67999877929688,
+                "end": 165.82000732421875
+            },
+            {
+                "word": "auf",
+                "start": 165.82000732421875,
+                "end": 166.0399932861328
+            },
+            {
+                "word": "dem",
+                "start": 166.0399932861328,
+                "end": 166.25999450683594
+            },
+            {
+                "word": "Acker",
+                "start": 166.25999450683594,
+                "end": 166.6199951171875
+            },
+            {
+                "word": "wartete",
+                "start": 166.6199951171875,
+                "end": 167.32000732421875
+            },
+            {
+                "word": "der",
+                "start": 167.32000732421875,
+                "end": 167.72000122070312
+            },
+            {
+                "word": "Hase",
+                "start": 167.72000122070312,
+                "end": 167.75999450683594
+            },
+            {
+                "word": "bereits",
+                "start": 167.75999450683594,
+                "end": 168.3800048828125
+            },
+            {
+                "word": "ungeduldig",
+                "start": 168.3800048828125,
+                "end": 169.10000610351562
+            },
+            {
+                "word": "auf",
+                "start": 169.10000610351562,
+                "end": 169.27999877929688
+            },
+            {
+                "word": "den",
+                "start": 169.27999877929688,
+                "end": 169.5
+            },
+            {
+                "word": "Igel.",
+                "start": 169.5,
+                "end": 170.0799987792969
+            }
+        ],
+        "translationEn": "At the top of the field, the hare was already waiting impatiently for the hedgehog.",
+        "translationVi": "Trên cánh đồng, con thỏ đã chờ đợi không kiên nhẫn cho con nhím."
+    },
+    {
+        "text": "Sie begaben sich in Startposition.",
+        "start": 173.87999572753907,
+        "end": 176.66000061035157,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 173.87999572753907,
+                "end": 174.6999969482422
+            },
+            {
+                "word": "begaben",
+                "start": 174.6999969482422,
+                "end": 175.0800018310547
+            },
+            {
+                "word": "sich",
+                "start": 175.0800018310547,
+                "end": 175.32000732421875
+            },
+            {
+                "word": "in",
+                "start": 175.32000732421875,
+                "end": 175.67999267578125
+            },
+            {
+                "word": "Startposition.",
+                "start": 175.67999267578125,
+                "end": 176.66000061035157
+            }
+        ],
+        "translationEn": "They took their starting positions.",
+        "translationVi": "Họ đã vào vị trí xuất phát."
+    },
+    {
+        "text": "Der Hase zählte eins, zwei, drei und sauste davon wie der Wind.",
+        "start": 176.26000061035157,
+        "end": 184.40000610351564,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 176.26000061035157,
+                "end": 177.52000427246094
+            },
+            {
+                "word": "Hase",
+                "start": 177.52000427246094,
+                "end": 177.77999877929688
+            },
+            {
+                "word": "zählte",
+                "start": 177.77999877929688,
+                "end": 178.33999633789062
+            },
+            {
+                "word": "eins,",
+                "start": 178.33999633789062,
+                "end": 179.16000366210938
+            },
+            {
+                "word": "zwei,",
+                "start": 179.74000549316406,
+                "end": 180.1999969482422
+            },
+            {
+                "word": "drei",
+                "start": 180.82000732421875,
+                "end": 181.13999938964844
+            },
+            {
+                "word": "und",
+                "start": 181.13999938964844,
+                "end": 181.86000061035156
+            },
+            {
+                "word": "sauste",
+                "start": 181.86000061035156,
+                "end": 182.33999633789062
+            },
+            {
+                "word": "davon",
+                "start": 182.33999633789062,
+                "end": 182.89999389648438
+            },
+            {
+                "word": "wie",
+                "start": 182.89999389648438,
+                "end": 183.4199981689453
+            },
+            {
+                "word": "der",
+                "start": 183.4199981689453,
+                "end": 184.0800018310547
+            },
+            {
+                "word": "Wind.",
+                "start": 184.0800018310547,
+                "end": 184.40000610351564
+            }
+        ],
+        "translationEn": "The hare counted one, two, three and dashed away like the wind.",
+        "translationVi": "Con thỏ đếm một, hai, ba và chạy đi như gió."
+    },
+    {
+        "text": "Der Igel aber tat nur drei Schritte und blieb dann",
+        "start": 187.22000732421876,
+        "end": 191.02000122070314,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 187.22000732421876,
+                "end": 187.5399932861328
+            },
+            {
+                "word": "Igel",
+                "start": 187.5399932861328,
+                "end": 187.86000061035156
+            },
+            {
+                "word": "aber",
+                "start": 187.86000061035156,
+                "end": 188.44000244140625
+            },
+            {
+                "word": "tat",
+                "start": 188.44000244140625,
+                "end": 188.5
+            },
+            {
+                "word": "nur",
+                "start": 188.5,
+                "end": 188.82000732421875
+            },
+            {
+                "word": "drei",
+                "start": 188.82000732421875,
+                "end": 189.1999969482422
+            },
+            {
+                "word": "Schritte",
+                "start": 189.1999969482422,
+                "end": 189.5
+            },
+            {
+                "word": "und",
+                "start": 189.5,
+                "end": 190.17999267578125
+            },
+            {
+                "word": "blieb",
+                "start": 190.17999267578125,
+                "end": 190.44000244140625
+            },
+            {
+                "word": "dann",
+                "start": 190.44000244140625,
+                "end": 191.02000122070314
+            }
+        ],
+        "translationEn": "But the hedgehog only took three steps and then stopped.",
+        "translationVi": "Nhưng con nhím chỉ đi được ba bước rồi dừng lại."
+    },
+    {
+        "text": "in seiner Furche sitzen.",
+        "start": 190.62000122070313,
+        "end": 192.33999328613282,
+        "wordTimings": [
+            {
+                "word": "in",
+                "start": 190.62000122070313,
+                "end": 190.8800048828125
+            },
+            {
+                "word": "seiner",
+                "start": 190.8800048828125,
+                "end": 191.1199951171875
+            },
+            {
+                "word": "Furche",
+                "start": 191.1199951171875,
+                "end": 191.5800018310547
+            },
+            {
+                "word": "sitzen.",
+                "start": 191.5800018310547,
+                "end": 192.33999328613282
+            }
+        ],
+        "translationEn": "to sit in his furrow.",
+        "translationVi": "ngồi trong rãnh của anh ấy."
+    },
+    {
+        "text": "Als der Hase unten am Feld ankam, rief die Frau des Igels",
+        "start": 195.4800018310547,
+        "end": 199.5799987792969,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 195.4800018310547,
+                "end": 195.67999267578125
+            },
+            {
+                "word": "der",
+                "start": 195.67999267578125,
+                "end": 196.1199951171875
+            },
+            {
+                "word": "Hase",
+                "start": 196.1199951171875,
+                "end": 196.22000122070312
+            },
+            {
+                "word": "unten",
+                "start": 196.22000122070312,
+                "end": 196.66000366210938
+            },
+            {
+                "word": "am",
+                "start": 196.66000366210938,
+                "end": 196.9199981689453
+            },
+            {
+                "word": "Feld",
+                "start": 196.9199981689453,
+                "end": 197.13999938964844
+            },
+            {
+                "word": "ankam,",
+                "start": 197.13999938964844,
+                "end": 197.72000122070312
+            },
+            {
+                "word": "rief",
+                "start": 198.25999450683594,
+                "end": 198.25999450683594
+            },
+            {
+                "word": "die",
+                "start": 198.25999450683594,
+                "end": 198.5
+            },
+            {
+                "word": "Frau",
+                "start": 198.5,
+                "end": 198.6999969482422
+            },
+            {
+                "word": "des",
+                "start": 198.6999969482422,
+                "end": 198.94000244140625
+            },
+            {
+                "word": "Igels",
+                "start": 198.94000244140625,
+                "end": 199.5799987792969
+            }
+        ],
+        "translationEn": "When the hare arrived at the field, the hedgehog's wife called out.",
+        "translationVi": "Khi con thỏ đến dưới cánh đồng, vợ của con nhím gọi."
+    },
+    {
+        "text": "ihm fröhlich entgegen, ich bin schon hier.",
+        "start": 199.17999877929688,
+        "end": 202.93999938964845,
+        "wordTimings": [
+            {
+                "word": "ihm",
+                "start": 199.17999877929688,
+                "end": 199.5399932861328
+            },
+            {
+                "word": "fröhlich",
+                "start": 199.5399932861328,
+                "end": 199.89999389648438
+            },
+            {
+                "word": "entgegen,",
+                "start": 199.89999389648438,
+                "end": 200.39999389648438
+            },
+            {
+                "word": "ich",
+                "start": 200.9199981689453,
+                "end": 201.22000122070312
+            },
+            {
+                "word": "bin",
+                "start": 201.22000122070312,
+                "end": 201.52000427246094
+            },
+            {
+                "word": "schon",
+                "start": 201.52000427246094,
+                "end": 201.94000244140625
+            },
+            {
+                "word": "hier.",
+                "start": 201.94000244140625,
+                "end": 202.93999938964845
+            }
+        ],
+        "translationEn": "cheerfully towards him, I am already here.",
+        "translationVi": "Tôi đã ở đây rồi, vui vẻ chào đón anh."
+    },
+    {
+        "text": "Da erschreckte sich der Hase.",
+        "start": 202.53999938964844,
+        "end": 205.8,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 202.53999938964844,
+                "end": 203.82000732421875
+            },
+            {
+                "word": "erschreckte",
+                "start": 203.82000732421875,
+                "end": 204.72000122070312
+            },
+            {
+                "word": "sich",
+                "start": 204.72000122070312,
+                "end": 204.94000244140625
+            },
+            {
+                "word": "der",
+                "start": 204.94000244140625,
+                "end": 205.44000244140625
+            },
+            {
+                "word": "Hase.",
+                "start": 205.44000244140625,
+                "end": 205.8
+            }
+        ],
+        "translationEn": "Then the hare was startled.",
+        "translationVi": "Thỏ đã hoảng sợ."
+    },
+    {
+        "text": "Er dachte, sie wäre der Igel, denn der Igel und seine Frau",
+        "start": 206.20000305175782,
+        "end": 210.54000549316407,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 206.20000305175782,
+                "end": 206.32000732421875
+            },
+            {
+                "word": "dachte,",
+                "start": 206.32000732421875,
+                "end": 206.67999267578125
+            },
+            {
+                "word": "sie",
+                "start": 207.27999877929688,
+                "end": 207.3800048828125
+            },
+            {
+                "word": "wäre",
+                "start": 207.3800048828125,
+                "end": 207.66000366210938
+            },
+            {
+                "word": "der",
+                "start": 207.66000366210938,
+                "end": 208.02000427246094
+            },
+            {
+                "word": "Igel,",
+                "start": 208.02000427246094,
+                "end": 208.27999877929688
+            },
+            {
+                "word": "denn",
+                "start": 208.75999450683594,
+                "end": 208.9199981689453
+            },
+            {
+                "word": "der",
+                "start": 208.9199981689453,
+                "end": 209.24000549316406
+            },
+            {
+                "word": "Igel",
+                "start": 209.24000549316406,
+                "end": 209.3800048828125
+            },
+            {
+                "word": "und",
+                "start": 209.3800048828125,
+                "end": 209.5800018310547
+            },
+            {
+                "word": "seine",
+                "start": 209.5800018310547,
+                "end": 209.82000732421875
+            },
+            {
+                "word": "Frau",
+                "start": 209.82000732421875,
+                "end": 210.54000549316407
+            }
+        ],
+        "translationEn": "He thought she was the hedgehog, because the hedgehog and his wife",
+        "translationVi": "Anh ấy nghĩ rằng cô ấy là con nhím, vì con nhím và vợ của nó."
+    },
+    {
+        "text": "sahen sich zum Verwechseln ähnlich.",
+        "start": 210.14000549316407,
+        "end": 213.12000732421876,
+        "wordTimings": [
+            {
+                "word": "sahen",
+                "start": 210.14000549316407,
+                "end": 210.9199981689453
+            },
+            {
+                "word": "sich",
+                "start": 210.9199981689453,
+                "end": 211.13999938964844
+            },
+            {
+                "word": "zum",
+                "start": 211.13999938964844,
+                "end": 211.4199981689453
+            },
+            {
+                "word": "Verwechseln",
+                "start": 211.4199981689453,
+                "end": 212.32000732421875
+            },
+            {
+                "word": "ähnlich.",
+                "start": 212.32000732421875,
+                "end": 213.12000732421876
+            }
+        ],
+        "translationEn": "looked strikingly similar.",
+        "translationVi": "trông giống nhau đến mức khó phân biệt."
+    },
+    {
+        "text": "Aufgeben wollte der Hase nicht.",
+        "start": 213.73999633789063,
+        "end": 215.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Aufgeben",
+                "start": 213.73999633789063,
+                "end": 214.22000122070312
+            },
+            {
+                "word": "wollte",
+                "start": 214.22000122070312,
+                "end": 214.4600067138672
+            },
+            {
+                "word": "der",
+                "start": 214.4600067138672,
+                "end": 214.86000061035156
+            },
+            {
+                "word": "Hase",
+                "start": 214.86000061035156,
+                "end": 214.9600067138672
+            },
+            {
+                "word": "nicht.",
+                "start": 214.9600067138672,
+                "end": 215.6800048828125
+            }
+        ],
+        "translationEn": "The hare did not want to give up.",
+        "translationVi": "Thỏ không muốn bỏ cuộc."
+    },
+    {
+        "text": "Er rief noch eine Runde und kehrte um das Feld wieder hinauf.",
+        "start": 215.76000061035157,
+        "end": 220.3,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 215.76000061035157,
+                "end": 215.89999389648438
+            },
+            {
+                "word": "rief",
+                "start": 215.89999389648438,
+                "end": 216.1199951171875
+            },
+            {
+                "word": "noch",
+                "start": 216.1199951171875,
+                "end": 216.63999938964844
+            },
+            {
+                "word": "eine",
+                "start": 216.63999938964844,
+                "end": 216.89999389648438
+            },
+            {
+                "word": "Runde",
+                "start": 216.89999389648438,
+                "end": 217.13999938964844
+            },
+            {
+                "word": "und",
+                "start": 217.13999938964844,
+                "end": 217.83999633789062
+            },
+            {
+                "word": "kehrte",
+                "start": 217.83999633789062,
+                "end": 218.17999267578125
+            },
+            {
+                "word": "um",
+                "start": 218.17999267578125,
+                "end": 218.55999755859375
+            },
+            {
+                "word": "das",
+                "start": 218.55999755859375,
+                "end": 219.24000549316406
+            },
+            {
+                "word": "Feld",
+                "start": 219.24000549316406,
+                "end": 219.24000549316406
+            },
+            {
+                "word": "wieder",
+                "start": 219.24000549316406,
+                "end": 219.6199951171875
+            },
+            {
+                "word": "hinauf.",
+                "start": 219.6199951171875,
+                "end": 220.3
+            }
+        ],
+        "translationEn": "He called for another round and turned back up the field.",
+        "translationVi": "Ông gọi thêm một vòng nữa và quay trở lại lên sân."
+    },
+    {
+        "text": "Die Frau des Igels aber blieb einfach sitzen.",
+        "start": 221.65999450683594,
+        "end": 225.54000549316407,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 221.65999450683594,
+                "end": 222.52000427246094
+            },
+            {
+                "word": "Frau",
+                "start": 222.52000427246094,
+                "end": 222.77999877929688
+            },
+            {
+                "word": "des",
+                "start": 222.77999877929688,
+                "end": 223.10000610351562
+            },
+            {
+                "word": "Igels",
+                "start": 223.10000610351562,
+                "end": 223.55999755859375
+            },
+            {
+                "word": "aber",
+                "start": 223.55999755859375,
+                "end": 224.16000366210938
+            },
+            {
+                "word": "blieb",
+                "start": 224.16000366210938,
+                "end": 224.22000122070312
+            },
+            {
+                "word": "einfach",
+                "start": 224.22000122070312,
+                "end": 224.77999877929688
+            },
+            {
+                "word": "sitzen.",
+                "start": 224.77999877929688,
+                "end": 225.54000549316407
+            }
+        ],
+        "translationEn": "But the hedgehog's wife simply remained seated.",
+        "translationVi": "Người vợ của con nhím chỉ ngồi im."
+    },
+    {
+        "text": "Oben am Acker stand der Igel und rief laut, ich bin schon hier.",
+        "start": 227.84000244140626,
+        "end": 233.47999267578126,
+        "wordTimings": [
+            {
+                "word": "Oben",
+                "start": 227.84000244140626,
+                "end": 228.6999969482422
+            },
+            {
+                "word": "am",
+                "start": 228.6999969482422,
+                "end": 228.8800048828125
+            },
+            {
+                "word": "Acker",
+                "start": 228.8800048828125,
+                "end": 229.25999450683594
+            },
+            {
+                "word": "stand",
+                "start": 229.25999450683594,
+                "end": 229.83999633789062
+            },
+            {
+                "word": "der",
+                "start": 229.83999633789062,
+                "end": 230.0800018310547
+            },
+            {
+                "word": "Igel",
+                "start": 230.0800018310547,
+                "end": 230.33999633789062
+            },
+            {
+                "word": "und",
+                "start": 230.33999633789062,
+                "end": 230.74000549316406
+            },
+            {
+                "word": "rief",
+                "start": 230.74000549316406,
+                "end": 230.8000030517578
+            },
+            {
+                "word": "laut,",
+                "start": 230.8000030517578,
+                "end": 231.1199951171875
+            },
+            {
+                "word": "ich",
+                "start": 231.6999969482422,
+                "end": 231.82000732421875
+            },
+            {
+                "word": "bin",
+                "start": 231.82000732421875,
+                "end": 232.1199951171875
+            },
+            {
+                "word": "schon",
+                "start": 232.1199951171875,
+                "end": 232.55999755859375
+            },
+            {
+                "word": "hier.",
+                "start": 232.55999755859375,
+                "end": 233.47999267578126
+            }
+        ],
+        "translationEn": "At the top of the field stood the hedgehog and shouted loudly, I am already here.",
+        "translationVi": "Trên cánh đồng, con nhím đứng và gọi to, tôi đã ở đây rồi."
+    },
+    {
+        "text": "Da wurde der Hase sauer und schrie noch eine Runde",
+        "start": 234.45999755859376,
+        "end": 238.2600067138672,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 234.45999755859376,
+                "end": 234.86000061035156
+            },
+            {
+                "word": "wurde",
+                "start": 234.86000061035156,
+                "end": 235.1199951171875
+            },
+            {
+                "word": "der",
+                "start": 235.1199951171875,
+                "end": 235.60000610351562
+            },
+            {
+                "word": "Hase",
+                "start": 235.60000610351562,
+                "end": 235.6999969482422
+            },
+            {
+                "word": "sauer",
+                "start": 235.6999969482422,
+                "end": 236.0800018310547
+            },
+            {
+                "word": "und",
+                "start": 236.0800018310547,
+                "end": 236.60000610351562
+            },
+            {
+                "word": "schrie",
+                "start": 236.60000610351562,
+                "end": 236.60000610351562
+            },
+            {
+                "word": "noch",
+                "start": 236.60000610351562,
+                "end": 237.33999633789062
+            },
+            {
+                "word": "eine",
+                "start": 237.33999633789062,
+                "end": 237.67999267578125
+            },
+            {
+                "word": "Runde",
+                "start": 237.67999267578125,
+                "end": 238.2600067138672
+            }
+        ],
+        "translationEn": "Then the hare got angry and shouted another round.",
+        "translationVi": "Thỏ tức giận và hét lên một lần nữa."
+    },
+    {
+        "text": "und drehte wieder um.",
+        "start": 237.8600067138672,
+        "end": 239.8800018310547,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 237.8600067138672,
+                "end": 238.60000610351562
+            },
+            {
+                "word": "drehte",
+                "start": 238.60000610351562,
+                "end": 238.89999389648438
+            },
+            {
+                "word": "wieder",
+                "start": 238.89999389648438,
+                "end": 239.1999969482422
+            },
+            {
+                "word": "um.",
+                "start": 239.1999969482422,
+                "end": 239.8800018310547
+            }
+        ],
+        "translationEn": "and turned back again.",
+        "translationVi": "và quay lại."
+    },
+    {
+        "text": "Der Igel rief, so viele du willst und blieb einfach sitzen.",
+        "start": 241.50000610351563,
+        "end": 246.90000610351564,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 241.50000610351563,
+                "end": 241.72000122070312
+            },
+            {
+                "word": "Igel",
+                "start": 241.72000122070312,
+                "end": 242
+            },
+            {
+                "word": "rief,",
+                "start": 242,
+                "end": 242.3800048828125
+            },
+            {
+                "word": "so",
+                "start": 242.89999389648438,
+                "end": 243.1999969482422
+            },
+            {
+                "word": "viele",
+                "start": 243.1999969482422,
+                "end": 243.55999755859375
+            },
+            {
+                "word": "du",
+                "start": 243.55999755859375,
+                "end": 243.9600067138672
+            },
+            {
+                "word": "willst",
+                "start": 243.9600067138672,
+                "end": 244.5399932861328
+            },
+            {
+                "word": "und",
+                "start": 244.5399932861328,
+                "end": 245.22000122070312
+            },
+            {
+                "word": "blieb",
+                "start": 245.22000122070312,
+                "end": 245.5
+            },
+            {
+                "word": "einfach",
+                "start": 245.5,
+                "end": 246.1199951171875
+            },
+            {
+                "word": "sitzen.",
+                "start": 246.1199951171875,
+                "end": 246.90000610351564
+            }
+        ],
+        "translationEn": "The hedgehog called, as many as you want, and just stayed sitting.",
+        "translationVi": "Con nhím gọi, bao nhiêu tùy thích và chỉ ngồi yên."
+    },
+    {
+        "text": "So ging das noch 73 Mal.",
+        "start": 250.5999969482422,
+        "end": 254.4199951171875,
+        "wordTimings": [
+            {
+                "word": "So",
+                "start": 250.5999969482422,
+                "end": 251.47999572753906
+            },
+            {
+                "word": "ging",
+                "start": 251.47999572753906,
+                "end": 251.66000366210938
+            },
+            {
+                "word": "das",
+                "start": 251.66000366210938,
+                "end": 251.97999572753906
+            },
+            {
+                "word": "noch",
+                "start": 251.97999572753906,
+                "end": 252.36000061035156
+            },
+            {
+                "word": "73",
+                "start": 252.36000061035156,
+                "end": 253.67999267578125
+            },
+            {
+                "word": "Mal.",
+                "start": 253.67999267578125,
+                "end": 254.4199951171875
+            }
+        ],
+        "translationEn": "This happened 73 more times.",
+        "translationVi": "Điều đó đã xảy ra thêm 73 lần nữa."
+    },
+    {
+        "text": "Der Hase rannte und rannte und immer taten es der Igel",
+        "start": 254.87999572753907,
+        "end": 260.28001098632814,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 254.87999572753907,
+                "end": 255.0800018310547
+            },
+            {
+                "word": "Hase",
+                "start": 255.0800018310547,
+                "end": 255.36000061035156
+            },
+            {
+                "word": "rannte",
+                "start": 255.36000061035156,
+                "end": 255.9600067138672
+            },
+            {
+                "word": "und",
+                "start": 255.9600067138672,
+                "end": 256.82000732421875
+            },
+            {
+                "word": "rannte",
+                "start": 256.82000732421875,
+                "end": 257.29998779296875
+            },
+            {
+                "word": "und",
+                "start": 257.29998779296875,
+                "end": 258.17999267578125
+            },
+            {
+                "word": "immer",
+                "start": 258.17999267578125,
+                "end": 258.7799987792969
+            },
+            {
+                "word": "taten",
+                "start": 258.7799987792969,
+                "end": 259.20001220703125
+            },
+            {
+                "word": "es",
+                "start": 259.20001220703125,
+                "end": 259.5199890136719
+            },
+            {
+                "word": "der",
+                "start": 259.5199890136719,
+                "end": 259.7200012207031
+            },
+            {
+                "word": "Igel",
+                "start": 259.7200012207031,
+                "end": 260.28001098632814
+            }
+        ],
+        "translationEn": "The hare ran and ran, and the hedgehog always did the same.",
+        "translationVi": "Con thỏ chạy và chạy và luôn luôn có con nhím làm theo."
+    },
+    {
+        "text": "und seine Frau gleich und riefen aus ihrer Furche, ich bin schon hier.",
+        "start": 259.8800109863281,
+        "end": 265.8199890136719,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 259.8800109863281,
+                "end": 260.2200012207031
+            },
+            {
+                "word": "seine",
+                "start": 260.2200012207031,
+                "end": 260.55999755859375
+            },
+            {
+                "word": "Frau",
+                "start": 260.55999755859375,
+                "end": 260.7799987792969
+            },
+            {
+                "word": "gleich",
+                "start": 260.7799987792969,
+                "end": 261.4200134277344
+            },
+            {
+                "word": "und",
+                "start": 261.4200134277344,
+                "end": 262.0199890136719
+            },
+            {
+                "word": "riefen",
+                "start": 262.0199890136719,
+                "end": 262.5
+            },
+            {
+                "word": "aus",
+                "start": 262.5,
+                "end": 262.5
+            },
+            {
+                "word": "ihrer",
+                "start": 262.5,
+                "end": 262.82000732421875
+            },
+            {
+                "word": "Furche,",
+                "start": 262.82000732421875,
+                "end": 263.2799987792969
+            },
+            {
+                "word": "ich",
+                "start": 263.8599853515625,
+                "end": 264.1600036621094
+            },
+            {
+                "word": "bin",
+                "start": 264.1600036621094,
+                "end": 264.4599914550781
+            },
+            {
+                "word": "schon",
+                "start": 264.4599914550781,
+                "end": 264.8599853515625
+            },
+            {
+                "word": "hier.",
+                "start": 264.8599853515625,
+                "end": 265.8199890136719
+            }
+        ],
+        "translationEn": "and his wife called out from their furrow, I am already here.",
+        "translationVi": "và vợ anh ta cũng vậy và họ gọi từ cánh đồng của mình, tôi đã ở đây rồi."
+    },
+    {
+        "text": "Die 74. Runde schaffte der Hase nicht mehr.",
+        "start": 269.82001342773435,
+        "end": 274.1999938964844,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 269.82001342773435,
+                "end": 270.70001220703125
+            },
+            {
+                "word": "74.",
+                "start": 270.70001220703125,
+                "end": 271.3999938964844
+            },
+            {
+                "word": "Runde",
+                "start": 271.8599853515625,
+                "end": 272.1000061035156
+            },
+            {
+                "word": "schaffte",
+                "start": 272.1000061035156,
+                "end": 272.8800048828125
+            },
+            {
+                "word": "der",
+                "start": 272.8800048828125,
+                "end": 273.1000061035156
+            },
+            {
+                "word": "Hase",
+                "start": 273.1000061035156,
+                "end": 273.32000732421875
+            },
+            {
+                "word": "nicht",
+                "start": 273.32000732421875,
+                "end": 273.6199951171875
+            },
+            {
+                "word": "mehr.",
+                "start": 273.6199951171875,
+                "end": 274.1999938964844
+            }
+        ],
+        "translationEn": "The hare couldn't make it to the 74th round.",
+        "translationVi": "Con thỏ không thể hoàn thành vòng thứ 74."
+    },
+    {
+        "text": "Mitten auf dem Acker fiel er um.",
+        "start": 274.6999877929687,
+        "end": 276.87998657226564,
+        "wordTimings": [
+            {
+                "word": "Mitten",
+                "start": 274.6999877929687,
+                "end": 274.79998779296875
+            },
+            {
+                "word": "auf",
+                "start": 274.79998779296875,
+                "end": 275.0400085449219
+            },
+            {
+                "word": "dem",
+                "start": 275.0400085449219,
+                "end": 275.260009765625
+            },
+            {
+                "word": "Acker",
+                "start": 275.260009765625,
+                "end": 275.6199951171875
+            },
+            {
+                "word": "fiel",
+                "start": 275.6199951171875,
+                "end": 276.1400146484375
+            },
+            {
+                "word": "er",
+                "start": 276.1400146484375,
+                "end": 276.3999938964844
+            },
+            {
+                "word": "um.",
+                "start": 276.3999938964844,
+                "end": 276.87998657226564
+            }
+        ],
+        "translationEn": "He collapsed in the middle of the field.",
+        "translationVi": "Giữa cánh đồng, anh ta ngã xuống."
+    },
+    {
+        "text": "Der Igel und seine Frau nahmen die Goldmünze und die Flasche Brandwein",
+        "start": 281.5799926757812,
+        "end": 287.4199951171875,
+        "wordTimings": [
+            {
+                "word": "Der",
+                "start": 281.5799926757812,
+                "end": 282.67999267578125
+            },
+            {
+                "word": "Igel",
+                "start": 282.67999267578125,
+                "end": 282.94000244140625
+            },
+            {
+                "word": "und",
+                "start": 282.94000244140625,
+                "end": 283.1600036621094
+            },
+            {
+                "word": "seine",
+                "start": 283.1600036621094,
+                "end": 283.4599914550781
+            },
+            {
+                "word": "Frau",
+                "start": 283.4599914550781,
+                "end": 283.8399963378906
+            },
+            {
+                "word": "nahmen",
+                "start": 283.8399963378906,
+                "end": 284.44000244140625
+            },
+            {
+                "word": "die",
+                "start": 284.44000244140625,
+                "end": 284.7799987792969
+            },
+            {
+                "word": "Goldmünze",
+                "start": 284.7799987792969,
+                "end": 285.4800109863281
+            },
+            {
+                "word": "und",
+                "start": 285.4800109863281,
+                "end": 285.8399963378906
+            },
+            {
+                "word": "die",
+                "start": 285.8399963378906,
+                "end": 286.29998779296875
+            },
+            {
+                "word": "Flasche",
+                "start": 286.29998779296875,
+                "end": 286.3399963378906
+            },
+            {
+                "word": "Brandwein",
+                "start": 286.3399963378906,
+                "end": 287.4199951171875
+            }
+        ],
+        "translationEn": "The hedgehog and his wife took the gold coin and the bottle of brandy.",
+        "translationVi": "Con nhím và vợ của nó đã lấy đồng tiền vàng và chai rượu mạnh."
+    },
+    {
+        "text": "und gingen heim.",
+        "start": 287.0199951171875,
+        "end": 288.8400085449219,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 287.0199951171875,
+                "end": 287.67999267578125
+            },
+            {
+                "word": "gingen",
+                "start": 287.67999267578125,
+                "end": 287.8599853515625
+            },
+            {
+                "word": "heim.",
+                "start": 287.8599853515625,
+                "end": 288.8400085449219
+            }
+        ],
+        "translationEn": "and went home.",
+        "translationVi": "và trở về nhà."
+    },
+    {
+        "text": "Seitdem hat nie wieder ein Hase oder sonst irgendwer",
+        "start": 293.6999877929687,
+        "end": 298.560009765625,
+        "wordTimings": [
+            {
+                "word": "Seitdem",
+                "start": 293.6999877929687,
+                "end": 294.1400146484375
+            },
+            {
+                "word": "hat",
+                "start": 294.1400146484375,
+                "end": 294.9800109863281
+            },
+            {
+                "word": "nie",
+                "start": 294.9800109863281,
+                "end": 295.2799987792969
+            },
+            {
+                "word": "wieder",
+                "start": 295.2799987792969,
+                "end": 295.5400085449219
+            },
+            {
+                "word": "ein",
+                "start": 295.5400085449219,
+                "end": 296.20001220703125
+            },
+            {
+                "word": "Hase",
+                "start": 296.20001220703125,
+                "end": 296.3999938964844
+            },
+            {
+                "word": "oder",
+                "start": 296.3999938964844,
+                "end": 297.0400085449219
+            },
+            {
+                "word": "sonst",
+                "start": 297.0400085449219,
+                "end": 297.6400146484375
+            },
+            {
+                "word": "irgendwer",
+                "start": 297.6400146484375,
+                "end": 298.560009765625
+            }
+        ],
+        "translationEn": "Since then, no rabbit or anyone else has ever...",
+        "translationVi": "Kể từ đó, không có một con thỏ nào hay bất kỳ ai khác nữa."
+    },
+    {
+        "text": "den Igel zu einem Wettrennen herausgefordert oder über seine schiefen Beine gelacht.",
+        "start": 298.160009765625,
+        "end": 304.8199890136719,
+        "wordTimings": [
+            {
+                "word": "den",
+                "start": 298.160009765625,
+                "end": 298.8399963378906
+            },
+            {
+                "word": "Igel",
+                "start": 298.8399963378906,
+                "end": 299.1000061035156
+            },
+            {
+                "word": "zu",
+                "start": 299.1000061035156,
+                "end": 299.3599853515625
+            },
+            {
+                "word": "einem",
+                "start": 299.3599853515625,
+                "end": 299.55999755859375
+            },
+            {
+                "word": "Wettrennen",
+                "start": 299.55999755859375,
+                "end": 300.1600036621094
+            },
+            {
+                "word": "herausgefordert",
+                "start": 300.1600036621094,
+                "end": 301.239990234375
+            },
+            {
+                "word": "oder",
+                "start": 301.239990234375,
+                "end": 302.05999755859375
+            },
+            {
+                "word": "über",
+                "start": 302.05999755859375,
+                "end": 302.6000061035156
+            },
+            {
+                "word": "seine",
+                "start": 302.6000061035156,
+                "end": 302.8599853515625
+            },
+            {
+                "word": "schiefen",
+                "start": 302.8599853515625,
+                "end": 303.5799865722656
+            },
+            {
+                "word": "Beine",
+                "start": 303.5799865722656,
+                "end": 303.82000732421875
+            },
+            {
+                "word": "gelacht.",
+                "start": 303.82000732421875,
+                "end": 304.8199890136719
+            }
+        ],
+        "translationEn": "challenged the hedgehog to a race or laughed at his crooked legs.",
+        "translationVi": "thách thức nhím tham gia một cuộc đua hoặc cười nhạo đôi chân cong của nó."
+    },
+    {
+        "text": "Die Lehre aus der Geschichte ist, dass niemand,",
+        "start": 307.29999389648435,
+        "end": 311.2200134277344,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 307.29999389648435,
+                "end": 307.8399963378906
+            },
+            {
+                "word": "Lehre",
+                "start": 307.8399963378906,
+                "end": 308.260009765625
+            },
+            {
+                "word": "aus",
+                "start": 308.260009765625,
+                "end": 308.5199890136719
+            },
+            {
+                "word": "der",
+                "start": 308.5199890136719,
+                "end": 308.79998779296875
+            },
+            {
+                "word": "Geschichte",
+                "start": 308.79998779296875,
+                "end": 309.1400146484375
+            },
+            {
+                "word": "ist,",
+                "start": 309.1400146484375,
+                "end": 309.6400146484375
+            },
+            {
+                "word": "dass",
+                "start": 310.32000732421875,
+                "end": 310.32000732421875
+            },
+            {
+                "word": "niemand,",
+                "start": 310.32000732421875,
+                "end": 311.2200134277344
+            }
+        ],
+        "translationEn": "The lesson from history is that no one,",
+        "translationVi": "Bài học từ lịch sử là không ai,"
+    },
+    {
+        "text": "und wenn er auch noch so vornehm ist,",
+        "start": 310.82001342773435,
+        "end": 314.24000244140626,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 310.82001342773435,
+                "end": 311.5400085449219
+            },
+            {
+                "word": "wenn",
+                "start": 311.5400085449219,
+                "end": 311.6600036621094
+            },
+            {
+                "word": "er",
+                "start": 311.6600036621094,
+                "end": 311.79998779296875
+            },
+            {
+                "word": "auch",
+                "start": 311.79998779296875,
+                "end": 312.0400085449219
+            },
+            {
+                "word": "noch",
+                "start": 312.0400085449219,
+                "end": 312.4800109863281
+            },
+            {
+                "word": "so",
+                "start": 312.4800109863281,
+                "end": 312.94000244140625
+            },
+            {
+                "word": "vornehm",
+                "start": 312.94000244140625,
+                "end": 313.5199890136719
+            },
+            {
+                "word": "ist,",
+                "start": 313.5199890136719,
+                "end": 314.24000244140626
+            }
+        ],
+        "translationEn": "and even if he is still so noble,",
+        "translationVi": "và dù anh ta có quý phái đến đâu,"
+    },
+    {
+        "text": "sich über einen anderen lustig machen soll.",
+        "start": 314.29999389648435,
+        "end": 317.039990234375,
+        "wordTimings": [
+            {
+                "word": "sich",
+                "start": 314.29999389648435,
+                "end": 314.5199890136719
+            },
+            {
+                "word": "über",
+                "start": 314.5199890136719,
+                "end": 314.7200012207031
+            },
+            {
+                "word": "einen",
+                "start": 314.7200012207031,
+                "end": 314.9599914550781
+            },
+            {
+                "word": "anderen",
+                "start": 314.9599914550781,
+                "end": 315.4200134277344
+            },
+            {
+                "word": "lustig",
+                "start": 315.4200134277344,
+                "end": 316.1400146484375
+            },
+            {
+                "word": "machen",
+                "start": 316.1400146484375,
+                "end": 316.3599853515625
+            },
+            {
+                "word": "soll.",
+                "start": 316.3599853515625,
+                "end": 317.039990234375
+            }
+        ],
+        "translationEn": "to make fun of someone else.",
+        "translationVi": "châm biếm người khác."
+    },
+    {
+        "text": "Auch nicht, wenn der andere ein Igel ist.",
+        "start": 317.7800048828125,
+        "end": 321.59998779296876,
+        "wordTimings": [
+            {
+                "word": "Auch",
+                "start": 317.7800048828125,
+                "end": 317.9800109863281
+            },
+            {
+                "word": "nicht,",
+                "start": 317.9800109863281,
+                "end": 318.4599914550781
+            },
+            {
+                "word": "wenn",
+                "start": 318.94000244140625,
+                "end": 318.9800109863281
+            },
+            {
+                "word": "der",
+                "start": 318.9800109863281,
+                "end": 319.2200012207031
+            },
+            {
+                "word": "andere",
+                "start": 319.2200012207031,
+                "end": 319.6400146484375
+            },
+            {
+                "word": "ein",
+                "start": 319.6400146484375,
+                "end": 320.2200012207031
+            },
+            {
+                "word": "Igel",
+                "start": 320.2200012207031,
+                "end": 320.6000061035156
+            },
+            {
+                "word": "ist.",
+                "start": 320.6000061035156,
+                "end": 321.59998779296876
+            }
+        ],
+        "translationEn": "Not even if the other one is a hedgehog.",
+        "translationVi": "Cũng không, ngay cả khi người kia là một con nhím."
+    },
+    {
+        "text": "Jetzt kennst du die Geschichte von dem Hasen und dem Igel.",
+        "start": 323.639990234375,
+        "end": 328.9600036621094,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 323.639990234375,
+                "end": 324.6199951171875
+            },
+            {
+                "word": "kennst",
+                "start": 324.6199951171875,
+                "end": 325.1400146484375
+            },
+            {
+                "word": "du",
+                "start": 325.1400146484375,
+                "end": 325.239990234375
+            },
+            {
+                "word": "die",
+                "start": 325.239990234375,
+                "end": 325.55999755859375
+            },
+            {
+                "word": "Geschichte",
+                "start": 325.55999755859375,
+                "end": 325.9800109863281
+            },
+            {
+                "word": "von",
+                "start": 325.9800109863281,
+                "end": 326.6600036621094
+            },
+            {
+                "word": "dem",
+                "start": 326.6600036621094,
+                "end": 326.9800109863281
+            },
+            {
+                "word": "Hasen",
+                "start": 326.9800109863281,
+                "end": 327.5199890136719
+            },
+            {
+                "word": "und",
+                "start": 327.5199890136719,
+                "end": 327.9599914550781
+            },
+            {
+                "word": "dem",
+                "start": 327.9599914550781,
+                "end": 328.3399963378906
+            },
+            {
+                "word": "Igel.",
+                "start": 328.3399963378906,
+                "end": 328.9600036621094
+            }
+        ],
+        "translationEn": "Now you know the story of the hare and the hedgehog.",
+        "translationVi": "Bây giờ bạn đã biết câu chuyện về con thỏ và con nhím."
+    },
+    {
+        "text": "Aber hast du auch unseren kleinen Wichtel entdeckt?",
+        "start": 330.94000854492185,
+        "end": 335.539990234375,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 330.94000854492185,
+                "end": 331.70001220703125
+            },
+            {
+                "word": "hast",
+                "start": 331.70001220703125,
+                "end": 332.4200134277344
+            },
+            {
+                "word": "du",
+                "start": 332.4200134277344,
+                "end": 332.6199951171875
+            },
+            {
+                "word": "auch",
+                "start": 332.6199951171875,
+                "end": 332.94000244140625
+            },
+            {
+                "word": "unseren",
+                "start": 332.94000244140625,
+                "end": 333.32000732421875
+            },
+            {
+                "word": "kleinen",
+                "start": 333.32000732421875,
+                "end": 333.79998779296875
+            },
+            {
+                "word": "Wichtel",
+                "start": 333.79998779296875,
+                "end": 334.5
+            },
+            {
+                "word": "entdeckt?",
+                "start": 334.5,
+                "end": 335.539990234375
+            }
+        ],
+        "translationEn": "But have you also discovered our little gnome?",
+        "translationVi": "Nhưng bạn có phát hiện ra chú lùn nhỏ của chúng ta không?"
+    },
+    {
+        "text": "Dann abonniere hier unseren Kanal, um die neuesten Märchen zu sehen.",
+        "start": 348.0799926757812,
+        "end": 352.9400146484375,
+        "wordTimings": [
+            {
+                "word": "Dann",
+                "start": 348.0799926757812,
+                "end": 348.8599853515625
+            },
+            {
+                "word": "abonniere",
+                "start": 348.8599853515625,
+                "end": 349.4800109863281
+            },
+            {
+                "word": "hier",
+                "start": 349.4800109863281,
+                "end": 349.82000732421875
+            },
+            {
+                "word": "unseren",
+                "start": 349.82000732421875,
+                "end": 350.2200012207031
+            },
+            {
+                "word": "Kanal,",
+                "start": 350.2200012207031,
+                "end": 350.6600036621094
+            },
+            {
+                "word": "um",
+                "start": 350.8999938964844,
+                "end": 350.9200134277344
+            },
+            {
+                "word": "die",
+                "start": 350.9200134277344,
+                "end": 351.1199951171875
+            },
+            {
+                "word": "neuesten",
+                "start": 351.1199951171875,
+                "end": 351.70001220703125
+            },
+            {
+                "word": "Märchen",
+                "start": 351.70001220703125,
+                "end": 352.0199890136719
+            },
+            {
+                "word": "zu",
+                "start": 352.0199890136719,
+                "end": 352.6400146484375
+            },
+            {
+                "word": "sehen.",
+                "start": 352.6400146484375,
+                "end": 352.9400146484375
+            }
+        ],
+        "translationEn": "Then subscribe to our channel here to see the latest fairy tales.",
+        "translationVi": "Hãy đăng ký kênh của chúng tôi ở đây để xem những câu chuyện cổ tích mới nhất."
+    },
+    {
+        "text": "Hier bin ich.",
+        "start": 352.91998901367185,
+        "end": 354.02000122070314,
+        "wordTimings": [
+            {
+                "word": "Hier",
+                "start": 352.91998901367185,
+                "end": 353.1400146484375
+            },
+            {
+                "word": "bin",
+                "start": 353.1400146484375,
+                "end": 353.3399963378906
+            },
+            {
+                "word": "ich.",
+                "start": 353.3399963378906,
+                "end": 354.02000122070314
+            }
+        ],
+        "translationEn": "Here I am.",
+        "translationVi": "Đây là tôi."
+    },
+    {
+        "text": "Du möchtest direkt weitere Märchen sehen?",
+        "start": 353.8599914550781,
+        "end": 356.2200134277344,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 353.8599914550781,
+                "end": 354.239990234375
+            },
+            {
+                "word": "möchtest",
+                "start": 354.239990234375,
+                "end": 354.32000732421875
+            },
+            {
+                "word": "direkt",
+                "start": 354.32000732421875,
+                "end": 354.7799987792969
+            },
+            {
+                "word": "weitere",
+                "start": 354.7799987792969,
+                "end": 355.1600036621094
+            },
+            {
+                "word": "Märchen",
+                "start": 355.1600036621094,
+                "end": 355.6000061035156
+            },
+            {
+                "word": "sehen?",
+                "start": 355.6000061035156,
+                "end": 356.2200134277344
+            }
+        ],
+        "translationEn": "Would you like to see more fairy tales directly?",
+        "translationVi": "Bạn muốn xem thêm những câu chuyện cổ tích ngay lập tức?"
+    },
+    {
+        "text": "Dann klick hier.",
+        "start": 356.0799926757812,
+        "end": 357.3,
+        "wordTimings": [
+            {
+                "word": "Dann",
+                "start": 356.0799926757812,
+                "end": 356.4599914550781
+            },
+            {
+                "word": "klick",
+                "start": 356.4599914550781,
+                "end": 356.5799865722656
+            },
+            {
+                "word": "hier.",
+                "start": 356.5799865722656,
+                "end": 357.3
+            }
+        ],
+        "translationEn": "Then click here.",
+        "translationVi": "Vậy thì nhấn vào đây."
+    }
+]
