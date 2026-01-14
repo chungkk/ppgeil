@@ -1,0 +1,3374 @@
+[
+    {
+        "text": "Nach dem verheerenden Brand in einer Bar in Croix Montaner,",
+        "start": 0,
+        "end": 3.9600000858306883,
+        "wordTimings": [
+            {
+                "word": "Nach",
+                "start": 0,
+                "end": 0.47999998927116394
+            },
+            {
+                "word": "dem",
+                "start": 0.47999998927116394,
+                "end": 0.7799999713897705
+            },
+            {
+                "word": "verheerenden",
+                "start": 0.7799999713897705,
+                "end": 1.4600000381469727
+            },
+            {
+                "word": "Brand",
+                "start": 1.4600000381469727,
+                "end": 1.7200000286102295
+            },
+            {
+                "word": "in",
+                "start": 1.7200000286102295,
+                "end": 1.9800000190734863
+            },
+            {
+                "word": "einer",
+                "start": 1.9800000190734863,
+                "end": 2.3399999141693115
+            },
+            {
+                "word": "Bar",
+                "start": 2.3399999141693115,
+                "end": 2.619999885559082
+            },
+            {
+                "word": "in",
+                "start": 2.619999885559082,
+                "end": 2.859999895095825
+            },
+            {
+                "word": "Croix",
+                "start": 2.859999895095825,
+                "end": 3.200000047683716
+            },
+            {
+                "word": "Montaner,",
+                "start": 3.200000047683716,
+                "end": 3.9600000858306883
+            }
+        ],
+        "translationEn": "After the devastating fire in a bar in Croix Montaner,",
+        "translationVi": "Sau vụ hỏa hoạn thảm khốc tại một quán bar ở Croix Montaner,"
+    },
+    {
+        "text": "herrscht tiefe Trauer in der Schweiz.",
+        "start": 3.5600000858306884,
+        "end": 5.680000114440918,
+        "wordTimings": [
+            {
+                "word": "herrscht",
+                "start": 3.5600000858306884,
+                "end": 4.039999961853027
+            },
+            {
+                "word": "tiefe",
+                "start": 4.039999961853027,
+                "end": 4.420000076293945
+            },
+            {
+                "word": "Trauer",
+                "start": 4.420000076293945,
+                "end": 4.619999885559082
+            },
+            {
+                "word": "in",
+                "start": 4.619999885559082,
+                "end": 4.880000114440918
+            },
+            {
+                "word": "der",
+                "start": 4.880000114440918,
+                "end": 5.039999961853027
+            },
+            {
+                "word": "Schweiz.",
+                "start": 5.039999961853027,
+                "end": 5.680000114440918
+            }
+        ],
+        "translationEn": "There is deep sorrow in Switzerland.",
+        "translationVi": "nỗi buồn sâu sắc đang bao trùm Thụy Sĩ."
+    },
+    {
+        "text": "Aus vielen Ländern gibt es Beileidsbekundungen und Hilfe,",
+        "start": 5.55999984741211,
+        "end": 8.8,
+        "wordTimings": [
+            {
+                "word": "Aus",
+                "start": 5.55999984741211,
+                "end": 5.659999847412109
+            },
+            {
+                "word": "vielen",
+                "start": 5.659999847412109,
+                "end": 5.980000019073486
+            },
+            {
+                "word": "Ländern",
+                "start": 5.980000019073486,
+                "end": 6.21999979019165
+            },
+            {
+                "word": "gibt",
+                "start": 6.21999979019165,
+                "end": 6.5
+            },
+            {
+                "word": "es",
+                "start": 6.5,
+                "end": 6.860000133514404
+            },
+            {
+                "word": "Beileidsbekundungen",
+                "start": 6.860000133514404,
+                "end": 7.78000020980835
+            },
+            {
+                "word": "und",
+                "start": 7.78000020980835,
+                "end": 8.15999984741211
+            },
+            {
+                "word": "Hilfe,",
+                "start": 8.15999984741211,
+                "end": 8.8
+            }
+        ],
+        "translationEn": "There are condolences and assistance from many countries,",
+        "translationVi": "Từ nhiều quốc gia có những lời chia buồn và sự giúp đỡ,"
+    },
+    {
+        "text": "u. a. bei der Versorgung der 119 Verletzten in Spezialkliniken.",
+        "start": 9.000000381469727,
+        "end": 13.480000305175782,
+        "wordTimings": [
+            {
+                "word": "u.",
+                "start": 9.000000381469727,
+                "end": 9.100000381469727
+            },
+            {
+                "word": "a.",
+                "start": 9.100000381469727,
+                "end": 9.399999618530273
+            },
+            {
+                "word": "bei",
+                "start": 9.640000343322754,
+                "end": 9.680000305175781
+            },
+            {
+                "word": "der",
+                "start": 9.680000305175781,
+                "end": 10
+            },
+            {
+                "word": "Versorgung",
+                "start": 10,
+                "end": 10.319999694824219
+            },
+            {
+                "word": "der",
+                "start": 10.319999694824219,
+                "end": 10.5
+            },
+            {
+                "word": "119",
+                "start": 10.5,
+                "end": 11.4399995803833
+            },
+            {
+                "word": "Verletzten",
+                "start": 11.4399995803833,
+                "end": 11.979999542236328
+            },
+            {
+                "word": "in",
+                "start": 11.979999542236328,
+                "end": 12.220000267028809
+            },
+            {
+                "word": "Spezialkliniken.",
+                "start": 12.220000267028809,
+                "end": 13.480000305175782
+            }
+        ],
+        "translationEn": "including the care of the 119 injured in specialized clinics.",
+        "translationVi": "và trong việc điều trị 119 nạn nhân tại các bệnh viện chuyên khoa."
+    },
+    {
+        "text": "Von den 40 Toten konnten noch nicht alle identifiziert werden.",
+        "start": 13.55999984741211,
+        "end": 17.439999389648438,
+        "wordTimings": [
+            {
+                "word": "Von",
+                "start": 13.55999984741211,
+                "end": 13.739999771118164
+            },
+            {
+                "word": "den",
+                "start": 13.739999771118164,
+                "end": 13.960000038146973
+            },
+            {
+                "word": "40",
+                "start": 13.960000038146973,
+                "end": 14.479999542236328
+            },
+            {
+                "word": "Toten",
+                "start": 14.479999542236328,
+                "end": 14.960000038146973
+            },
+            {
+                "word": "konnten",
+                "start": 14.960000038146973,
+                "end": 15.260000228881836
+            },
+            {
+                "word": "noch",
+                "start": 15.260000228881836,
+                "end": 15.539999961853027
+            },
+            {
+                "word": "nicht",
+                "start": 15.539999961853027,
+                "end": 15.65999984741211
+            },
+            {
+                "word": "alle",
+                "start": 15.65999984741211,
+                "end": 16
+            },
+            {
+                "word": "identifiziert",
+                "start": 16,
+                "end": 16.81999969482422
+            },
+            {
+                "word": "werden.",
+                "start": 16.81999969482422,
+                "end": 17.439999389648438
+            }
+        ],
+        "translationEn": "Not all of the 40 dead have been identified yet.",
+        "translationVi": "Trong số 40 người chết, vẫn chưa thể xác định được tất cả."
+    },
+    {
+        "text": "Die Ermittler gehen inzwischen davon aus,",
+        "start": 17.199999237060545,
+        "end": 19.599999237060548,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 17.199999237060545,
+                "end": 17.440000534057617
+            },
+            {
+                "word": "Ermittler",
+                "start": 17.440000534057617,
+                "end": 17.84000015258789
+            },
+            {
+                "word": "gehen",
+                "start": 17.84000015258789,
+                "end": 18.100000381469727
+            },
+            {
+                "word": "inzwischen",
+                "start": 18.100000381469727,
+                "end": 18.739999771118164
+            },
+            {
+                "word": "davon",
+                "start": 18.739999771118164,
+                "end": 19.020000457763672
+            },
+            {
+                "word": "aus,",
+                "start": 19.020000457763672,
+                "end": 19.599999237060548
+            }
+        ],
+        "translationEn": "The investigators now assume that,",
+        "translationVi": "Các nhà điều tra hiện đang cho rằng,"
+    },
+    {
+        "text": "dass ein Funkenflug von Fontänen auf Champagnerflaschen den Brand ausgelöst hat.",
+        "start": 19.340000534057616,
+        "end": 24.840000915527344,
+        "wordTimings": [
+            {
+                "word": "dass",
+                "start": 19.340000534057616,
+                "end": 19.559999465942383
+            },
+            {
+                "word": "ein",
+                "start": 19.559999465942383,
+                "end": 19.799999237060547
+            },
+            {
+                "word": "Funkenflug",
+                "start": 19.799999237060547,
+                "end": 20.579999923706055
+            },
+            {
+                "word": "von",
+                "start": 20.579999923706055,
+                "end": 20.81999969482422
+            },
+            {
+                "word": "Fontänen",
+                "start": 20.81999969482422,
+                "end": 21.420000076293945
+            },
+            {
+                "word": "auf",
+                "start": 21.420000076293945,
+                "end": 21.760000228881836
+            },
+            {
+                "word": "Champagnerflaschen",
+                "start": 21.760000228881836,
+                "end": 23.059999465942383
+            },
+            {
+                "word": "den",
+                "start": 23.059999465942383,
+                "end": 23.579999923706055
+            },
+            {
+                "word": "Brand",
+                "start": 23.579999923706055,
+                "end": 23.579999923706055
+            },
+            {
+                "word": "ausgelöst",
+                "start": 23.579999923706055,
+                "end": 24.260000228881836
+            },
+            {
+                "word": "hat.",
+                "start": 24.260000228881836,
+                "end": 24.840000915527344
+            }
+        ],
+        "translationEn": "that a spark from fountains on champagne bottles caused the fire.",
+        "translationVi": "rằng một tia lửa từ các vòi phun đã gây ra vụ cháy trên các chai rượu sâm panh."
+    },
+    {
+        "text": "Dieser 2. Tag im neuen Jahr gilt in Croix Montaner",
+        "start": 25.699999237060545,
+        "end": 28.699999618530274,
+        "wordTimings": [
+            {
+                "word": "Dieser",
+                "start": 25.699999237060545,
+                "end": 26.100000381469727
+            },
+            {
+                "word": "2.",
+                "start": 26.100000381469727,
+                "end": 26.420000076293945
+            },
+            {
+                "word": "Tag",
+                "start": 26.520000457763672,
+                "end": 26.780000686645508
+            },
+            {
+                "word": "im",
+                "start": 26.780000686645508,
+                "end": 26.959999084472656
+            },
+            {
+                "word": "neuen",
+                "start": 26.959999084472656,
+                "end": 27.200000762939453
+            },
+            {
+                "word": "Jahr",
+                "start": 27.200000762939453,
+                "end": 27.420000076293945
+            },
+            {
+                "word": "gilt",
+                "start": 27.420000076293945,
+                "end": 27.639999389648438
+            },
+            {
+                "word": "in",
+                "start": 27.639999389648438,
+                "end": 27.959999084472656
+            },
+            {
+                "word": "Croix",
+                "start": 27.959999084472656,
+                "end": 28.1200008392334
+            },
+            {
+                "word": "Montaner",
+                "start": 28.1200008392334,
+                "end": 28.699999618530274
+            }
+        ],
+        "translationEn": "This 2nd day of the new year is celebrated in Croix Montaner.",
+        "translationVi": "Ngày thứ 2 trong năm mới này được coi là ở Croix Montaner."
+    },
+    {
+        "text": "den Toten, den Verletzten und den noch immer Vermissten.",
+        "start": 28.299999618530272,
+        "end": 31.95999984741211,
+        "wordTimings": [
+            {
+                "word": "den",
+                "start": 28.299999618530272,
+                "end": 28.68000030517578
+            },
+            {
+                "word": "Toten,",
+                "start": 28.68000030517578,
+                "end": 29.040000915527344
+            },
+            {
+                "word": "den",
+                "start": 29.040000915527344,
+                "end": 29.399999618530273
+            },
+            {
+                "word": "Verletzten",
+                "start": 29.399999618530273,
+                "end": 30
+            },
+            {
+                "word": "und",
+                "start": 30,
+                "end": 30.559999465942383
+            },
+            {
+                "word": "den",
+                "start": 30.559999465942383,
+                "end": 30.760000228881836
+            },
+            {
+                "word": "noch",
+                "start": 30.760000228881836,
+                "end": 30.959999084472656
+            },
+            {
+                "word": "immer",
+                "start": 30.959999084472656,
+                "end": 31.15999984741211
+            },
+            {
+                "word": "Vermissten.",
+                "start": 31.15999984741211,
+                "end": 31.95999984741211
+            }
+        ],
+        "translationEn": "the dead, the injured, and those still missing.",
+        "translationVi": "những người đã chết, những người bị thương và những người vẫn còn mất tích."
+    },
+    {
+        "text": "Robert Pujol ist gekommen, um in der Nähe der Bar Le Constellation",
+        "start": 33.31999816894531,
+        "end": 36.84000091552734,
+        "wordTimings": [
+            {
+                "word": "Robert",
+                "start": 33.31999816894531,
+                "end": 33.63999938964844
+            },
+            {
+                "word": "Pujol",
+                "start": 33.63999938964844,
+                "end": 33.97999954223633
+            },
+            {
+                "word": "ist",
+                "start": 33.97999954223633,
+                "end": 34.20000076293945
+            },
+            {
+                "word": "gekommen,",
+                "start": 34.20000076293945,
+                "end": 34.58000183105469
+            },
+            {
+                "word": "um",
+                "start": 34.79999923706055,
+                "end": 34.84000015258789
+            },
+            {
+                "word": "in",
+                "start": 34.84000015258789,
+                "end": 34.939998626708984
+            },
+            {
+                "word": "der",
+                "start": 34.939998626708984,
+                "end": 35.220001220703125
+            },
+            {
+                "word": "Nähe",
+                "start": 35.220001220703125,
+                "end": 35.279998779296875
+            },
+            {
+                "word": "der",
+                "start": 35.279998779296875,
+                "end": 35.439998626708984
+            },
+            {
+                "word": "Bar",
+                "start": 35.439998626708984,
+                "end": 35.70000076293945
+            },
+            {
+                "word": "Le",
+                "start": 35.70000076293945,
+                "end": 35.84000015258789
+            },
+            {
+                "word": "Constellation",
+                "start": 35.84000015258789,
+                "end": 36.84000091552734
+            }
+        ],
+        "translationEn": "Robert Pujol has come to be near the bar Le Constellation.",
+        "translationVi": "Robert Pujol đã đến gần quán bar Le Constellation."
+    },
+    {
+        "text": "Blumen abzulegen, wie so viele vor ihm.",
+        "start": 36.49999847412109,
+        "end": 39.21999816894531,
+        "wordTimings": [
+            {
+                "word": "Blumen",
+                "start": 36.49999847412109,
+                "end": 37.040000915527344
+            },
+            {
+                "word": "abzulegen,",
+                "start": 37.040000915527344,
+                "end": 37.47999954223633
+            },
+            {
+                "word": "wie",
+                "start": 37.939998626708984,
+                "end": 38.060001373291016
+            },
+            {
+                "word": "so",
+                "start": 38.060001373291016,
+                "end": 38.439998626708984
+            },
+            {
+                "word": "viele",
+                "start": 38.439998626708984,
+                "end": 38.439998626708984
+            },
+            {
+                "word": "vor",
+                "start": 38.439998626708984,
+                "end": 38.81999969482422
+            },
+            {
+                "word": "ihm.",
+                "start": 38.81999969482422,
+                "end": 39.21999816894531
+            }
+        ],
+        "translationEn": "To lay down flowers, like so many before him.",
+        "translationVi": "Đặt hoa xuống, như nhiều người trước anh ấy."
+    },
+    {
+        "text": "Ich hätte nie gedacht, dass ich so was mal erleben muss.",
+        "start": 42.859999084472655,
+        "end": 45.68000106811523,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 42.859999084472655,
+                "end": 43.400001525878906
+            },
+            {
+                "word": "hätte",
+                "start": 43.400001525878906,
+                "end": 43.58000183105469
+            },
+            {
+                "word": "nie",
+                "start": 43.58000183105469,
+                "end": 43.7599983215332
+            },
+            {
+                "word": "gedacht,",
+                "start": 43.7599983215332,
+                "end": 44.040000915527344
+            },
+            {
+                "word": "dass",
+                "start": 44.099998474121094,
+                "end": 44.20000076293945
+            },
+            {
+                "word": "ich",
+                "start": 44.20000076293945,
+                "end": 44.34000015258789
+            },
+            {
+                "word": "so",
+                "start": 44.34000015258789,
+                "end": 44.540000915527344
+            },
+            {
+                "word": "was",
+                "start": 44.540000915527344,
+                "end": 44.63999938964844
+            },
+            {
+                "word": "mal",
+                "start": 44.63999938964844,
+                "end": 44.900001525878906
+            },
+            {
+                "word": "erleben",
+                "start": 44.900001525878906,
+                "end": 45.13999938964844
+            },
+            {
+                "word": "muss.",
+                "start": 45.13999938964844,
+                "end": 45.68000106811523
+            }
+        ],
+        "translationEn": "I never thought I would have to experience something like this.",
+        "translationVi": "Tôi chưa bao giờ nghĩ rằng mình sẽ phải trải qua điều này."
+    },
+    {
+        "text": "Ich lebe seit 60 Jahren hier im Ort.",
+        "start": 45.42000045776367,
+        "end": 47.48000030517578,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 45.42000045776367,
+                "end": 45.58000183105469
+            },
+            {
+                "word": "lebe",
+                "start": 45.58000183105469,
+                "end": 45.7599983215332
+            },
+            {
+                "word": "seit",
+                "start": 45.7599983215332,
+                "end": 45.91999816894531
+            },
+            {
+                "word": "60",
+                "start": 45.91999816894531,
+                "end": 46.439998626708984
+            },
+            {
+                "word": "Jahren",
+                "start": 46.439998626708984,
+                "end": 46.70000076293945
+            },
+            {
+                "word": "hier",
+                "start": 46.70000076293945,
+                "end": 46.91999816894531
+            },
+            {
+                "word": "im",
+                "start": 46.91999816894531,
+                "end": 47.18000030517578
+            },
+            {
+                "word": "Ort.",
+                "start": 47.18000030517578,
+                "end": 47.48000030517578
+            }
+        ],
+        "translationEn": "I have been living here in the village for 60 years.",
+        "translationVi": "Tôi đã sống ở đây trong 60 năm."
+    },
+    {
+        "text": "Es ist eine Katastrophe für alle, für das ganze Land.",
+        "start": 47.4,
+        "end": 50.41999893188476,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 47.4,
+                "end": 47.58000183105469
+            },
+            {
+                "word": "ist",
+                "start": 47.58000183105469,
+                "end": 47.720001220703125
+            },
+            {
+                "word": "eine",
+                "start": 47.720001220703125,
+                "end": 47.939998626708984
+            },
+            {
+                "word": "Katastrophe",
+                "start": 47.939998626708984,
+                "end": 48.52000045776367
+            },
+            {
+                "word": "für",
+                "start": 48.52000045776367,
+                "end": 48.97999954223633
+            },
+            {
+                "word": "alle,",
+                "start": 48.97999954223633,
+                "end": 49.279998779296875
+            },
+            {
+                "word": "für",
+                "start": 49.400001525878906,
+                "end": 49.5
+            },
+            {
+                "word": "das",
+                "start": 49.5,
+                "end": 49.599998474121094
+            },
+            {
+                "word": "ganze",
+                "start": 49.599998474121094,
+                "end": 50.119998931884766
+            },
+            {
+                "word": "Land.",
+                "start": 50.119998931884766,
+                "end": 50.41999893188476
+            }
+        ],
+        "translationEn": "It is a catastrophe for everyone, for the whole country.",
+        "translationVi": "Đó là một thảm họa cho tất cả, cho toàn bộ đất nước."
+    },
+    {
+        "text": "Es sind Kinder von überall hier.",
+        "start": 50.44000091552734,
+        "end": 52.14000015258789,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 50.44000091552734,
+                "end": 50.599998474121094
+            },
+            {
+                "word": "sind",
+                "start": 50.599998474121094,
+                "end": 50.779998779296875
+            },
+            {
+                "word": "Kinder",
+                "start": 50.779998779296875,
+                "end": 50.97999954223633
+            },
+            {
+                "word": "von",
+                "start": 50.97999954223633,
+                "end": 51.29999923706055
+            },
+            {
+                "word": "überall",
+                "start": 51.29999923706055,
+                "end": 51.68000030517578
+            },
+            {
+                "word": "hier.",
+                "start": 51.68000030517578,
+                "end": 52.14000015258789
+            }
+        ],
+        "translationEn": "There are children from everywhere here.",
+        "translationVi": "Có trẻ em từ khắp nơi ở đây."
+    },
+    {
+        "text": "Mindestens 40 Menschen, v. a. junge Erwachsene,",
+        "start": 56.74000015258789,
+        "end": 59.86000137329101,
+        "wordTimings": [
+            {
+                "word": "Mindestens",
+                "start": 56.74000015258789,
+                "end": 57.400001525878906
+            },
+            {
+                "word": "40",
+                "start": 57.400001525878906,
+                "end": 57.86000061035156
+            },
+            {
+                "word": "Menschen,",
+                "start": 57.86000061035156,
+                "end": 58.2400016784668
+            },
+            {
+                "word": "v.",
+                "start": 58.41999816894531,
+                "end": 58.65999984741211
+            },
+            {
+                "word": "a.",
+                "start": 58.65999984741211,
+                "end": 58.65999984741211
+            },
+            {
+                "word": "junge",
+                "start": 58.91999816894531,
+                "end": 58.97999954223633
+            },
+            {
+                "word": "Erwachsene,",
+                "start": 58.97999954223633,
+                "end": 59.86000137329101
+            }
+        ],
+        "translationEn": "At least 40 people, mainly young adults,",
+        "translationVi": "Ít nhất 40 người, chủ yếu là thanh niên,"
+    },
+    {
+        "text": "sind durch den Brand in der angesagten Bar ums Leben gekommen.",
+        "start": 59.60000076293945,
+        "end": 62.52000122070312,
+        "wordTimings": [
+            {
+                "word": "sind",
+                "start": 59.60000076293945,
+                "end": 59.7599983215332
+            },
+            {
+                "word": "durch",
+                "start": 59.7599983215332,
+                "end": 59.959999084472656
+            },
+            {
+                "word": "den",
+                "start": 59.959999084472656,
+                "end": 60.36000061035156
+            },
+            {
+                "word": "Brand",
+                "start": 60.36000061035156,
+                "end": 60.36000061035156
+            },
+            {
+                "word": "in",
+                "start": 60.36000061035156,
+                "end": 60.540000915527344
+            },
+            {
+                "word": "der",
+                "start": 60.540000915527344,
+                "end": 60.58000183105469
+            },
+            {
+                "word": "angesagten",
+                "start": 60.58000183105469,
+                "end": 61.15999984741211
+            },
+            {
+                "word": "Bar",
+                "start": 61.15999984741211,
+                "end": 61.36000061035156
+            },
+            {
+                "word": "ums",
+                "start": 61.36000061035156,
+                "end": 61.86000061035156
+            },
+            {
+                "word": "Leben",
+                "start": 61.86000061035156,
+                "end": 61.86000061035156
+            },
+            {
+                "word": "gekommen.",
+                "start": 61.86000061035156,
+                "end": 62.52000122070312
+            }
+        ],
+        "translationEn": "have died in the fire at the trendy bar.",
+        "translationVi": "đã thiệt mạng trong vụ hỏa hoạn tại quán bar nổi tiếng."
+    },
+    {
+        "text": "Eine der größten Katastrophen in der Geschichte der Schweiz.",
+        "start": 62.81999816894531,
+        "end": 66.02000122070312,
+        "wordTimings": [
+            {
+                "word": "Eine",
+                "start": 62.81999816894531,
+                "end": 62.91999816894531
+            },
+            {
+                "word": "der",
+                "start": 62.91999816894531,
+                "end": 63.2400016784668
+            },
+            {
+                "word": "größten",
+                "start": 63.2400016784668,
+                "end": 63.58000183105469
+            },
+            {
+                "word": "Katastrophen",
+                "start": 63.58000183105469,
+                "end": 64.30000305175781
+            },
+            {
+                "word": "in",
+                "start": 64.30000305175781,
+                "end": 64.55999755859375
+            },
+            {
+                "word": "der",
+                "start": 64.55999755859375,
+                "end": 64.77999877929688
+            },
+            {
+                "word": "Geschichte",
+                "start": 64.77999877929688,
+                "end": 65.05999755859375
+            },
+            {
+                "word": "der",
+                "start": 65.05999755859375,
+                "end": 65.72000122070312
+            },
+            {
+                "word": "Schweiz.",
+                "start": 65.72000122070312,
+                "end": 66.02000122070312
+            }
+        ],
+        "translationEn": "One of the greatest disasters in the history of Switzerland.",
+        "translationVi": "Một trong những thảm họa lớn nhất trong lịch sử Thụy Sĩ."
+    },
+    {
+        "text": "Von den Verletzten befinden sich die meisten in kritischem Zustand.",
+        "start": 66.12000122070313,
+        "end": 69.8,
+        "wordTimings": [
+            {
+                "word": "Von",
+                "start": 66.12000122070313,
+                "end": 66.31999969482422
+            },
+            {
+                "word": "den",
+                "start": 66.31999969482422,
+                "end": 66.55999755859375
+            },
+            {
+                "word": "Verletzten",
+                "start": 66.55999755859375,
+                "end": 66.94000244140625
+            },
+            {
+                "word": "befinden",
+                "start": 66.94000244140625,
+                "end": 67.4000015258789
+            },
+            {
+                "word": "sich",
+                "start": 67.4000015258789,
+                "end": 67.58000183105469
+            },
+            {
+                "word": "die",
+                "start": 67.58000183105469,
+                "end": 67.77999877929688
+            },
+            {
+                "word": "meisten",
+                "start": 67.77999877929688,
+                "end": 68.0999984741211
+            },
+            {
+                "word": "in",
+                "start": 68.0999984741211,
+                "end": 68.44000244140625
+            },
+            {
+                "word": "kritischem",
+                "start": 68.44000244140625,
+                "end": 69
+            },
+            {
+                "word": "Zustand.",
+                "start": 69,
+                "end": 69.8
+            }
+        ],
+        "translationEn": "Most of the injured are in critical condition.",
+        "translationVi": "Trong số những người bị thương, hầu hết đang trong tình trạng nguy kịch."
+    },
+    {
+        "text": "Die Verletzten versorgen, die Toten identifizieren,",
+        "start": 69.8800033569336,
+        "end": 72.78000335693359,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 69.8800033569336,
+                "end": 70.0999984741211
+            },
+            {
+                "word": "Verletzten",
+                "start": 70.0999984741211,
+                "end": 70.5
+            },
+            {
+                "word": "versorgen,",
+                "start": 70.5,
+                "end": 70.9800033569336
+            },
+            {
+                "word": "die",
+                "start": 71.0999984741211,
+                "end": 71.33999633789062
+            },
+            {
+                "word": "Toten",
+                "start": 71.33999633789062,
+                "end": 71.73999786376953
+            },
+            {
+                "word": "identifizieren,",
+                "start": 71.73999786376953,
+                "end": 72.78000335693359
+            }
+        ],
+        "translationEn": "Caring for the injured, identifying the dead,",
+        "translationVi": "Chăm sóc những người bị thương, xác định danh tính những người đã chết,"
+    },
+    {
+        "text": "hat für die Ermittler oberste Priorität.",
+        "start": 72.52000274658204,
+        "end": 74.88000183105468,
+        "wordTimings": [
+            {
+                "word": "hat",
+                "start": 72.52000274658204,
+                "end": 72.76000213623047
+            },
+            {
+                "word": "für",
+                "start": 72.76000213623047,
+                "end": 72.87999725341797
+            },
+            {
+                "word": "die",
+                "start": 72.87999725341797,
+                "end": 73.05999755859375
+            },
+            {
+                "word": "Ermittler",
+                "start": 73.05999755859375,
+                "end": 73.36000061035156
+            },
+            {
+                "word": "oberste",
+                "start": 73.36000061035156,
+                "end": 73.9000015258789
+            },
+            {
+                "word": "Priorität.",
+                "start": 73.9000015258789,
+                "end": 74.88000183105468
+            }
+        ],
+        "translationEn": "is of utmost priority for the investigators.",
+        "translationVi": "được ưu tiên hàng đầu cho các nhà điều tra."
+    },
+    {
+        "text": "Es sind viele Polizisten im Einsatz,",
+        "start": 75.85999908447266,
+        "end": 78.3199966430664,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 75.85999908447266,
+                "end": 76.5199966430664
+            },
+            {
+                "word": "sind",
+                "start": 76.5199966430664,
+                "end": 76.72000122070312
+            },
+            {
+                "word": "viele",
+                "start": 76.72000122070312,
+                "end": 76.9800033569336
+            },
+            {
+                "word": "Polizisten",
+                "start": 76.9800033569336,
+                "end": 77.5
+            },
+            {
+                "word": "im",
+                "start": 77.5,
+                "end": 77.69999694824219
+            },
+            {
+                "word": "Einsatz,",
+                "start": 77.69999694824219,
+                "end": 78.3199966430664
+            }
+        ],
+        "translationEn": "There are many police officers on duty,",
+        "translationVi": "Có nhiều cảnh sát đang làm nhiệm vụ,"
+    },
+    {
+        "text": "Spezialisten für die Identifizierung.",
+        "start": 78.5999969482422,
+        "end": 80.07999877929687,
+        "wordTimings": [
+            {
+                "word": "Spezialisten",
+                "start": 78.5999969482422,
+                "end": 78.69999694824219
+            },
+            {
+                "word": "für",
+                "start": 78.69999694824219,
+                "end": 78.91999816894531
+            },
+            {
+                "word": "die",
+                "start": 78.91999816894531,
+                "end": 79.12000274658203
+            },
+            {
+                "word": "Identifizierung.",
+                "start": 79.12000274658203,
+                "end": 80.07999877929687
+            }
+        ],
+        "translationEn": "Specialists in identification.",
+        "translationVi": "Chuyên gia về xác định."
+    },
+    {
+        "text": "Es wird Tage dauern, nicht Wochen, Tage.",
+        "start": 79.91999664306641,
+        "end": 82.11999969482422,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 79.91999664306641,
+                "end": 80.08000183105469
+            },
+            {
+                "word": "wird",
+                "start": 80.08000183105469,
+                "end": 80.31999969482422
+            },
+            {
+                "word": "Tage",
+                "start": 80.31999969482422,
+                "end": 80.63999938964844
+            },
+            {
+                "word": "dauern,",
+                "start": 80.63999938964844,
+                "end": 80.86000061035156
+            },
+            {
+                "word": "nicht",
+                "start": 81,
+                "end": 81.30000305175781
+            },
+            {
+                "word": "Wochen,",
+                "start": 81.30000305175781,
+                "end": 81.44000244140625
+            },
+            {
+                "word": "Tage.",
+                "start": 81.5999984741211,
+                "end": 82.11999969482422
+            }
+        ],
+        "translationEn": "It will take days, not weeks, days.",
+        "translationVi": "Sẽ mất vài ngày, không phải vài tuần, mà là vài ngày."
+    },
+    {
+        "text": "Wir kommen schnell voran.",
+        "start": 81.71999969482422,
+        "end": 83.48000030517578,
+        "wordTimings": [
+            {
+                "word": "Wir",
+                "start": 81.71999969482422,
+                "end": 82.37999725341797
+            },
+            {
+                "word": "kommen",
+                "start": 82.37999725341797,
+                "end": 82.58000183105469
+            },
+            {
+                "word": "schnell",
+                "start": 82.58000183105469,
+                "end": 82.95999908447266
+            },
+            {
+                "word": "voran.",
+                "start": 82.95999908447266,
+                "end": 83.48000030517578
+            }
+        ],
+        "translationEn": "We are making good progress.",
+        "translationVi": "Chúng tôi tiến triển nhanh chóng."
+    },
+    {
+        "text": "Viele werden noch immer vermisst.",
+        "start": 85.62000122070313,
+        "end": 88.02000122070312,
+        "wordTimings": [
+            {
+                "word": "Viele",
+                "start": 85.62000122070313,
+                "end": 86.44000244140625
+            },
+            {
+                "word": "werden",
+                "start": 86.44000244140625,
+                "end": 86.76000213623047
+            },
+            {
+                "word": "noch",
+                "start": 86.76000213623047,
+                "end": 87.0999984741211
+            },
+            {
+                "word": "immer",
+                "start": 87.0999984741211,
+                "end": 87.4800033569336
+            },
+            {
+                "word": "vermisst.",
+                "start": 87.4800033569336,
+                "end": 88.02000122070312
+            }
+        ],
+        "translationEn": "Many are still missing.",
+        "translationVi": "Nhiều người vẫn còn bị mất tích."
+    },
+    {
+        "text": "Weil es voraussichtlich noch Tage dauern wird,",
+        "start": 88.23999633789063,
+        "end": 90.43999938964843,
+        "wordTimings": [
+            {
+                "word": "Weil",
+                "start": 88.23999633789063,
+                "end": 88.36000061035156
+            },
+            {
+                "word": "es",
+                "start": 88.36000061035156,
+                "end": 88.54000091552734
+            },
+            {
+                "word": "voraussichtlich",
+                "start": 88.54000091552734,
+                "end": 89.0999984741211
+            },
+            {
+                "word": "noch",
+                "start": 89.0999984741211,
+                "end": 89.63999938964844
+            },
+            {
+                "word": "Tage",
+                "start": 89.63999938964844,
+                "end": 89.68000030517578
+            },
+            {
+                "word": "dauern",
+                "start": 89.68000030517578,
+                "end": 89.95999908447266
+            },
+            {
+                "word": "wird,",
+                "start": 89.95999908447266,
+                "end": 90.43999938964843
+            }
+        ],
+        "translationEn": "Because it is expected to take several more days,",
+        "translationVi": "Bởi vì có khả năng sẽ mất vài ngày nữa,"
+    },
+    {
+        "text": "die Identität der verbrannten Toten festzustellen,",
+        "start": 90.16000213623047,
+        "end": 92.88000183105468,
+        "wordTimings": [
+            {
+                "word": "die",
+                "start": 90.16000213623047,
+                "end": 90.30000305175781
+            },
+            {
+                "word": "Identität",
+                "start": 90.30000305175781,
+                "end": 90.80000305175781
+            },
+            {
+                "word": "der",
+                "start": 90.80000305175781,
+                "end": 91.05999755859375
+            },
+            {
+                "word": "verbrannten",
+                "start": 91.05999755859375,
+                "end": 91.5
+            },
+            {
+                "word": "Toten",
+                "start": 91.5,
+                "end": 91.9000015258789
+            },
+            {
+                "word": "festzustellen,",
+                "start": 91.9000015258789,
+                "end": 92.88000183105468
+            }
+        ],
+        "translationEn": "to determine the identity of the burned dead,",
+        "translationVi": "xác định danh tính của những người chết bị thiêu."
+    },
+    {
+        "text": "suchen Angehörige der Vermissten per Instagram",
+        "start": 93.03999938964844,
+        "end": 95.56000213623047,
+        "wordTimings": [
+            {
+                "word": "suchen",
+                "start": 93.03999938964844,
+                "end": 93.13999938964844
+            },
+            {
+                "word": "Angehörige",
+                "start": 93.13999938964844,
+                "end": 93.73999786376953
+            },
+            {
+                "word": "der",
+                "start": 93.73999786376953,
+                "end": 93.94000244140625
+            },
+            {
+                "word": "Vermissten",
+                "start": 93.94000244140625,
+                "end": 94.36000061035156
+            },
+            {
+                "word": "per",
+                "start": 94.36000061035156,
+                "end": 94.63999938964844
+            },
+            {
+                "word": "Instagram",
+                "start": 94.63999938964844,
+                "end": 95.56000213623047
+            }
+        ],
+        "translationEn": "Relatives of the missing are searching via Instagram.",
+        "translationVi": "tìm kiếm người thân của người mất tích qua Instagram"
+    },
+    {
+        "text": "über einen extra eingerichteten Account.",
+        "start": 95.16000213623047,
+        "end": 97.75999908447265,
+        "wordTimings": [
+            {
+                "word": "über",
+                "start": 95.16000213623047,
+                "end": 95.68000030517578
+            },
+            {
+                "word": "einen",
+                "start": 95.68000030517578,
+                "end": 96
+            },
+            {
+                "word": "extra",
+                "start": 96,
+                "end": 96.63999938964844
+            },
+            {
+                "word": "eingerichteten",
+                "start": 96.63999938964844,
+                "end": 97.0199966430664
+            },
+            {
+                "word": "Account.",
+                "start": 97.0199966430664,
+                "end": 97.75999908447265
+            }
+        ],
+        "translationEn": "through a specially created account.",
+        "translationVi": "qua một tài khoản được thiết lập riêng."
+    },
+    {
+        "text": "In der Hoffnung auf ein Lebenszeichen der Tochter,",
+        "start": 97.85999908447266,
+        "end": 100.74000244140625,
+        "wordTimings": [
+            {
+                "word": "In",
+                "start": 97.85999908447266,
+                "end": 98.08000183105469
+            },
+            {
+                "word": "der",
+                "start": 98.08000183105469,
+                "end": 98.5
+            },
+            {
+                "word": "Hoffnung",
+                "start": 98.5,
+                "end": 98.55999755859375
+            },
+            {
+                "word": "auf",
+                "start": 98.55999755859375,
+                "end": 98.86000061035156
+            },
+            {
+                "word": "ein",
+                "start": 98.86000061035156,
+                "end": 99.0999984741211
+            },
+            {
+                "word": "Lebenszeichen",
+                "start": 99.0999984741211,
+                "end": 99.87999725341797
+            },
+            {
+                "word": "der",
+                "start": 99.87999725341797,
+                "end": 100.12000274658203
+            },
+            {
+                "word": "Tochter,",
+                "start": 100.12000274658203,
+                "end": 100.74000244140625
+            }
+        ],
+        "translationEn": "In the hope of a sign of life from the daughter,",
+        "translationVi": "Trong hy vọng nhận được tin tức từ con gái,"
+    },
+    {
+        "text": "des Bruders oder der Freunde.",
+        "start": 100.77999725341797,
+        "end": 103.3,
+        "wordTimings": [
+            {
+                "word": "des",
+                "start": 100.77999725341797,
+                "end": 101.55999755859375
+            },
+            {
+                "word": "Bruders",
+                "start": 101.55999755859375,
+                "end": 101.55999755859375
+            },
+            {
+                "word": "oder",
+                "start": 101.55999755859375,
+                "end": 101.94000244140625
+            },
+            {
+                "word": "der",
+                "start": 101.94000244140625,
+                "end": 102.62000274658203
+            },
+            {
+                "word": "Freunde.",
+                "start": 102.62000274658203,
+                "end": 103.3
+            }
+        ],
+        "translationEn": "of the brother or the friends.",
+        "translationVi": "của người anh hoặc của những người bạn."
+    },
+    {
+        "text": "Wir sprechen mit Stefanie Durth vor Ort in Grand Montaner.",
+        "start": 103.80000152587891,
+        "end": 108.3,
+        "wordTimings": [
+            {
+                "word": "Wir",
+                "start": 103.80000152587891,
+                "end": 104.41999816894531
+            },
+            {
+                "word": "sprechen",
+                "start": 104.41999816894531,
+                "end": 104.68000030517578
+            },
+            {
+                "word": "mit",
+                "start": 104.68000030517578,
+                "end": 104.91999816894531
+            },
+            {
+                "word": "Stefanie",
+                "start": 104.91999816894531,
+                "end": 105.37999725341797
+            },
+            {
+                "word": "Durth",
+                "start": 105.37999725341797,
+                "end": 105.66000366210938
+            },
+            {
+                "word": "vor",
+                "start": 105.66000366210938,
+                "end": 106.27999877929688
+            },
+            {
+                "word": "Ort",
+                "start": 106.27999877929688,
+                "end": 106.27999877929688
+            },
+            {
+                "word": "in",
+                "start": 106.27999877929688,
+                "end": 106.73999786376953
+            },
+            {
+                "word": "Grand",
+                "start": 106.73999786376953,
+                "end": 107.16000366210938
+            },
+            {
+                "word": "Montaner.",
+                "start": 107.16000366210938,
+                "end": 108.3
+            }
+        ],
+        "translationEn": "We are speaking with Stefanie Durth on-site in Grand Montaner.",
+        "translationVi": "Chúng tôi nói chuyện với Stefanie Durth tại Grand Montaner."
+    },
+    {
+        "text": "Wir haben es schon angesprochen,",
+        "start": 108.08000030517579,
+        "end": 110.07999877929687,
+        "wordTimings": [
+            {
+                "word": "Wir",
+                "start": 108.08000030517579,
+                "end": 108.4000015258789
+            },
+            {
+                "word": "haben",
+                "start": 108.4000015258789,
+                "end": 108.73999786376953
+            },
+            {
+                "word": "es",
+                "start": 108.73999786376953,
+                "end": 108.9000015258789
+            },
+            {
+                "word": "schon",
+                "start": 108.9000015258789,
+                "end": 109.16000366210938
+            },
+            {
+                "word": "angesprochen,",
+                "start": 109.16000366210938,
+                "end": 110.07999877929687
+            }
+        ],
+        "translationEn": "We have already mentioned it,",
+        "translationVi": "Chúng tôi đã đề cập đến điều đó rồi."
+    },
+    {
+        "text": "es gab Hinweise auf die mögliche Brandursache.",
+        "start": 110.03999938964844,
+        "end": 113.46000366210937,
+        "wordTimings": [
+            {
+                "word": "es",
+                "start": 110.03999938964844,
+                "end": 110.4000015258789
+            },
+            {
+                "word": "gab",
+                "start": 110.4000015258789,
+                "end": 110.80000305175781
+            },
+            {
+                "word": "Hinweise",
+                "start": 110.80000305175781,
+                "end": 111.22000122070312
+            },
+            {
+                "word": "auf",
+                "start": 111.22000122070312,
+                "end": 111.41999816894531
+            },
+            {
+                "word": "die",
+                "start": 111.41999816894531,
+                "end": 111.55999755859375
+            },
+            {
+                "word": "mögliche",
+                "start": 111.55999755859375,
+                "end": 112.13999938964844
+            },
+            {
+                "word": "Brandursache.",
+                "start": 112.13999938964844,
+                "end": 113.46000366210937
+            }
+        ],
+        "translationEn": "There were indications of the possible cause of the fire.",
+        "translationVi": "Có những dấu hiệu về nguyên nhân có thể gây ra hỏa hoạn."
+    },
+    {
+        "text": "Die scheinen sich zu verdichten.",
+        "start": 113.13999786376954,
+        "end": 114.89999847412109,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 113.13999786376954,
+                "end": 113.4000015258789
+            },
+            {
+                "word": "scheinen",
+                "start": 113.4000015258789,
+                "end": 113.73999786376953
+            },
+            {
+                "word": "sich",
+                "start": 113.73999786376953,
+                "end": 113.94000244140625
+            },
+            {
+                "word": "zu",
+                "start": 113.94000244140625,
+                "end": 114.23999786376953
+            },
+            {
+                "word": "verdichten.",
+                "start": 114.23999786376953,
+                "end": 114.89999847412109
+            }
+        ],
+        "translationEn": "They seem to be intensifying.",
+        "translationVi": "Chúng có vẻ đang dày lên."
+    },
+    {
+        "text": "Was haben die Behörden heute dazu gesagt?",
+        "start": 114.8800033569336,
+        "end": 117.13999633789062,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 114.8800033569336,
+                "end": 115.16000366210938
+            },
+            {
+                "word": "haben",
+                "start": 115.16000366210938,
+                "end": 115.31999969482422
+            },
+            {
+                "word": "die",
+                "start": 115.31999969482422,
+                "end": 115.4800033569336
+            },
+            {
+                "word": "Behörden",
+                "start": 115.4800033569336,
+                "end": 115.73999786376953
+            },
+            {
+                "word": "heute",
+                "start": 115.73999786376953,
+                "end": 116.12000274658203
+            },
+            {
+                "word": "dazu",
+                "start": 116.12000274658203,
+                "end": 116.5
+            },
+            {
+                "word": "gesagt?",
+                "start": 116.5,
+                "end": 117.13999633789062
+            }
+        ],
+        "translationEn": "What did the authorities say about it today?",
+        "translationVi": "Hôm nay, các cơ quan đã nói gì về điều đó?"
+    },
+    {
+        "text": "Die Behörden sprechen gerade noch im Moment",
+        "start": 120.67999877929688,
+        "end": 123.66000061035156,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 120.67999877929688,
+                "end": 121.33999633789062
+            },
+            {
+                "word": "Behörden",
+                "start": 121.33999633789062,
+                "end": 121.9000015258789
+            },
+            {
+                "word": "sprechen",
+                "start": 121.9000015258789,
+                "end": 122.16000366210938
+            },
+            {
+                "word": "gerade",
+                "start": 122.16000366210938,
+                "end": 122.68000030517578
+            },
+            {
+                "word": "noch",
+                "start": 122.68000030517578,
+                "end": 122.95999908447266
+            },
+            {
+                "word": "im",
+                "start": 122.95999908447266,
+                "end": 123.04000091552734
+            },
+            {
+                "word": "Moment",
+                "start": 123.04000091552734,
+                "end": 123.66000061035156
+            }
+        ],
+        "translationEn": "The authorities are just speaking at the moment.",
+        "translationVi": "Các cơ quan đang nói chuyện ngay lúc này."
+    },
+    {
+        "text": "bei einer noch andauernden Pressekonferenz.",
+        "start": 123.26000061035157,
+        "end": 125.85999755859375,
+        "wordTimings": [
+            {
+                "word": "bei",
+                "start": 123.26000061035157,
+                "end": 123.54000091552734
+            },
+            {
+                "word": "einer",
+                "start": 123.54000091552734,
+                "end": 123.76000213623047
+            },
+            {
+                "word": "noch",
+                "start": 123.76000213623047,
+                "end": 124.36000061035156
+            },
+            {
+                "word": "andauernden",
+                "start": 124.36000061035156,
+                "end": 124.66000366210938
+            },
+            {
+                "word": "Pressekonferenz.",
+                "start": 124.66000366210938,
+                "end": 125.85999755859375
+            }
+        ],
+        "translationEn": "at an ongoing press conference.",
+        "translationVi": "tại một cuộc họp báo vẫn đang diễn ra."
+    },
+    {
+        "text": "Sie haben dort bestätigt, dass sie jetzt auch davon ausgehen,",
+        "start": 125.56000366210938,
+        "end": 129.16000061035157,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 125.56000366210938,
+                "end": 126
+            },
+            {
+                "word": "haben",
+                "start": 126,
+                "end": 126
+            },
+            {
+                "word": "dort",
+                "start": 126,
+                "end": 126.72000122070312
+            },
+            {
+                "word": "bestätigt,",
+                "start": 126.72000122070312,
+                "end": 127.18000030517578
+            },
+            {
+                "word": "dass",
+                "start": 127.19999694824219,
+                "end": 127.4000015258789
+            },
+            {
+                "word": "sie",
+                "start": 127.4000015258789,
+                "end": 127.5199966430664
+            },
+            {
+                "word": "jetzt",
+                "start": 127.5199966430664,
+                "end": 127.80000305175781
+            },
+            {
+                "word": "auch",
+                "start": 127.80000305175781,
+                "end": 128.16000366210938
+            },
+            {
+                "word": "davon",
+                "start": 128.16000366210938,
+                "end": 128.32000732421875
+            },
+            {
+                "word": "ausgehen,",
+                "start": 128.32000732421875,
+                "end": 129.16000061035157
+            }
+        ],
+        "translationEn": "They have confirmed there that they are now also assuming that,",
+        "translationVi": "Họ đã xác nhận rằng bây giờ họ cũng cho rằng,"
+    },
+    {
+        "text": "dass das stimmt, was uns die Augenzeugen seit gestern schildern.",
+        "start": 129.42000427246094,
+        "end": 132.77999572753907,
+        "wordTimings": [
+            {
+                "word": "dass",
+                "start": 129.42000427246094,
+                "end": 129.6199951171875
+            },
+            {
+                "word": "das",
+                "start": 129.6199951171875,
+                "end": 129.82000732421875
+            },
+            {
+                "word": "stimmt,",
+                "start": 129.82000732421875,
+                "end": 130.05999755859375
+            },
+            {
+                "word": "was",
+                "start": 130.1199951171875,
+                "end": 130.22000122070312
+            },
+            {
+                "word": "uns",
+                "start": 130.22000122070312,
+                "end": 130.44000244140625
+            },
+            {
+                "word": "die",
+                "start": 130.44000244140625,
+                "end": 130.55999755859375
+            },
+            {
+                "word": "Augenzeugen",
+                "start": 130.55999755859375,
+                "end": 131.3000030517578
+            },
+            {
+                "word": "seit",
+                "start": 131.3000030517578,
+                "end": 132.3000030517578
+            },
+            {
+                "word": "gestern",
+                "start": 132.3000030517578,
+                "end": 132.3000030517578
+            },
+            {
+                "word": "schildern.",
+                "start": 132.3000030517578,
+                "end": 132.77999572753907
+            }
+        ],
+        "translationEn": "that what the eyewitnesses have been describing to us since yesterday is true.",
+        "translationVi": "rằng những gì mà các nhân chứng mô tả cho chúng ta từ hôm qua là đúng."
+    },
+    {
+        "text": "Und zwar, dass Sprühfontänen wohl verantwortlich sind",
+        "start": 132.5999969482422,
+        "end": 136.6999938964844,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 132.5999969482422,
+                "end": 132.74000549316406
+            },
+            {
+                "word": "zwar,",
+                "start": 132.74000549316406,
+                "end": 133
+            },
+            {
+                "word": "dass",
+                "start": 133.33999633789062,
+                "end": 133.5800018310547
+            },
+            {
+                "word": "Sprühfontänen",
+                "start": 133.5800018310547,
+                "end": 134.60000610351562
+            },
+            {
+                "word": "wohl",
+                "start": 134.60000610351562,
+                "end": 135
+            },
+            {
+                "word": "verantwortlich",
+                "start": 135,
+                "end": 135.6999969482422
+            },
+            {
+                "word": "sind",
+                "start": 135.6999969482422,
+                "end": 136.6999938964844
+            }
+        ],
+        "translationEn": "Namely, that spray fountains are likely responsible.",
+        "translationVi": "Và thực tế là, các đài phun nước phun sương có vẻ như là nguyên nhân."
+    },
+    {
+        "text": "für dieses Feuer und für diese Brandkatastrophe.",
+        "start": 136.29999389648438,
+        "end": 139.24000244140626,
+        "wordTimings": [
+            {
+                "word": "für",
+                "start": 136.29999389648438,
+                "end": 136.63999938964844
+            },
+            {
+                "word": "dieses",
+                "start": 136.63999938964844,
+                "end": 137.1199951171875
+            },
+            {
+                "word": "Feuer",
+                "start": 137.1199951171875,
+                "end": 137.36000061035156
+            },
+            {
+                "word": "und",
+                "start": 137.36000061035156,
+                "end": 137.55999755859375
+            },
+            {
+                "word": "für",
+                "start": 137.55999755859375,
+                "end": 138
+            },
+            {
+                "word": "diese",
+                "start": 138,
+                "end": 138
+            },
+            {
+                "word": "Brandkatastrophe.",
+                "start": 138,
+                "end": 139.24000244140626
+            }
+        ],
+        "translationEn": "for this fire and for this fire disaster.",
+        "translationVi": "cho ngọn lửa này và cho thảm họa hỏa hoạn này."
+    },
+    {
+        "text": "Das sind so kleine Röhren, die auf Champagnerflaschen befestigt waren,",
+        "start": 138.84000244140626,
+        "end": 144.3,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 138.84000244140626,
+                "end": 139.17999267578125
+            },
+            {
+                "word": "sind",
+                "start": 139.17999267578125,
+                "end": 139.27999877929688
+            },
+            {
+                "word": "so",
+                "start": 139.27999877929688,
+                "end": 139.5800018310547
+            },
+            {
+                "word": "kleine",
+                "start": 139.5800018310547,
+                "end": 139.94000244140625
+            },
+            {
+                "word": "Röhren,",
+                "start": 139.94000244140625,
+                "end": 140.27999877929688
+            },
+            {
+                "word": "die",
+                "start": 140.83999633789062,
+                "end": 140.9600067138672
+            },
+            {
+                "word": "auf",
+                "start": 140.9600067138672,
+                "end": 141.24000549316406
+            },
+            {
+                "word": "Champagnerflaschen",
+                "start": 141.24000549316406,
+                "end": 142.55999755859375
+            },
+            {
+                "word": "befestigt",
+                "start": 142.55999755859375,
+                "end": 143.67999267578125
+            },
+            {
+                "word": "waren,",
+                "start": 143.67999267578125,
+                "end": 144.3
+            }
+        ],
+        "translationEn": "These are small tubes that were attached to champagne bottles.",
+        "translationVi": "Đó là những ống nhỏ được gắn vào chai rượu sâm panh,"
+    },
+    {
+        "text": "und die Funken sprühen.",
+        "start": 143.9,
+        "end": 146.33999328613282,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 143.9,
+                "end": 144.17999267578125
+            },
+            {
+                "word": "die",
+                "start": 144.17999267578125,
+                "end": 145.1199951171875
+            },
+            {
+                "word": "Funken",
+                "start": 145.1199951171875,
+                "end": 145.33999633789062
+            },
+            {
+                "word": "sprühen.",
+                "start": 145.33999633789062,
+                "end": 146.33999328613282
+            }
+        ],
+        "translationEn": "and the sparks are flying.",
+        "translationVi": "và những tia lửa bay ra."
+    },
+    {
+        "text": "Also kleine Pyrotechnik, kleines Feuerwerk,",
+        "start": 146.31999816894532,
+        "end": 148.63999633789064,
+        "wordTimings": [
+            {
+                "word": "Also",
+                "start": 146.31999816894532,
+                "end": 146.47999572753906
+            },
+            {
+                "word": "kleine",
+                "start": 146.47999572753906,
+                "end": 146.75999450683594
+            },
+            {
+                "word": "Pyrotechnik,",
+                "start": 146.75999450683594,
+                "end": 147.47999572753906
+            },
+            {
+                "word": "kleines",
+                "start": 147.60000610351562,
+                "end": 147.9199981689453
+            },
+            {
+                "word": "Feuerwerk,",
+                "start": 147.9199981689453,
+                "end": 148.63999633789064
+            }
+        ],
+        "translationEn": "So small pyrotechnics, small fireworks,",
+        "translationVi": "Vậy là pháo nhỏ, pháo nhỏ,"
+    },
+    {
+        "text": "das offenbar zu dicht an die Decke gehalten wurde,",
+        "start": 148.64000549316407,
+        "end": 151.40000610351564,
+        "wordTimings": [
+            {
+                "word": "das",
+                "start": 148.64000549316407,
+                "end": 148.8800048828125
+            },
+            {
+                "word": "offenbar",
+                "start": 148.8800048828125,
+                "end": 149.25999450683594
+            },
+            {
+                "word": "zu",
+                "start": 149.25999450683594,
+                "end": 149.55999755859375
+            },
+            {
+                "word": "dicht",
+                "start": 149.55999755859375,
+                "end": 149.72000122070312
+            },
+            {
+                "word": "an",
+                "start": 149.72000122070312,
+                "end": 149.89999389648438
+            },
+            {
+                "word": "die",
+                "start": 149.89999389648438,
+                "end": 150.22000122070312
+            },
+            {
+                "word": "Decke",
+                "start": 150.22000122070312,
+                "end": 150.24000549316406
+            },
+            {
+                "word": "gehalten",
+                "start": 150.24000549316406,
+                "end": 150.74000549316406
+            },
+            {
+                "word": "wurde,",
+                "start": 150.74000549316406,
+                "end": 151.40000610351564
+            }
+        ],
+        "translationEn": "that was apparently held too close to the ceiling,",
+        "translationVi": "điều này rõ ràng đã được giữ quá gần trần nhà,"
+    },
+    {
+        "text": "die dann Feuer gefangen hat.",
+        "start": 151.42000427246094,
+        "end": 153.21999816894532,
+        "wordTimings": [
+            {
+                "word": "die",
+                "start": 151.42000427246094,
+                "end": 151.6999969482422
+            },
+            {
+                "word": "dann",
+                "start": 151.6999969482422,
+                "end": 152.05999755859375
+            },
+            {
+                "word": "Feuer",
+                "start": 152.05999755859375,
+                "end": 152.17999267578125
+            },
+            {
+                "word": "gefangen",
+                "start": 152.17999267578125,
+                "end": 152.5800018310547
+            },
+            {
+                "word": "hat.",
+                "start": 152.5800018310547,
+                "end": 153.21999816894532
+            }
+        ],
+        "translationEn": "that then caught fire.",
+        "translationVi": "sau đó đã bốc cháy."
+    },
+    {
+        "text": "Und dieses kleine Feuer ist dann schlagartig zu einem Vollbrand geworden.",
+        "start": 152.95999755859376,
+        "end": 157.05999450683595,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 152.95999755859376,
+                "end": 153.39999389648438
+            },
+            {
+                "word": "dieses",
+                "start": 153.39999389648438,
+                "end": 153.5800018310547
+            },
+            {
+                "word": "kleine",
+                "start": 153.5800018310547,
+                "end": 154.0399932861328
+            },
+            {
+                "word": "Feuer",
+                "start": 154.0399932861328,
+                "end": 154.16000366210938
+            },
+            {
+                "word": "ist",
+                "start": 154.16000366210938,
+                "end": 154.33999633789062
+            },
+            {
+                "word": "dann",
+                "start": 154.33999633789062,
+                "end": 154.8000030517578
+            },
+            {
+                "word": "schlagartig",
+                "start": 154.8000030517578,
+                "end": 155.10000610351562
+            },
+            {
+                "word": "zu",
+                "start": 155.10000610351562,
+                "end": 155.5399932861328
+            },
+            {
+                "word": "einem",
+                "start": 155.5399932861328,
+                "end": 155.77999877929688
+            },
+            {
+                "word": "Vollbrand",
+                "start": 155.77999877929688,
+                "end": 156.33999633789062
+            },
+            {
+                "word": "geworden.",
+                "start": 156.33999633789062,
+                "end": 157.05999450683595
+            }
+        ],
+        "translationEn": "And this small fire suddenly turned into a full blaze.",
+        "translationVi": "Và ngọn lửa nhỏ này đã bùng phát thành một đám cháy lớn ngay lập tức."
+    },
+    {
+        "text": "Das ist nun auch von den Behörden bestätigt.",
+        "start": 156.87999572753907,
+        "end": 159.71999816894532,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 156.87999572753907,
+                "end": 157.27999877929688
+            },
+            {
+                "word": "ist",
+                "start": 157.27999877929688,
+                "end": 157.44000244140625
+            },
+            {
+                "word": "nun",
+                "start": 157.44000244140625,
+                "end": 157.67999267578125
+            },
+            {
+                "word": "auch",
+                "start": 157.67999267578125,
+                "end": 158.4199981689453
+            },
+            {
+                "word": "von",
+                "start": 158.4199981689453,
+                "end": 158.5399932861328
+            },
+            {
+                "word": "den",
+                "start": 158.5399932861328,
+                "end": 158.82000732421875
+            },
+            {
+                "word": "Behörden",
+                "start": 158.82000732421875,
+                "end": 158.97999572753906
+            },
+            {
+                "word": "bestätigt.",
+                "start": 158.97999572753906,
+                "end": 159.71999816894532
+            }
+        ],
+        "translationEn": "This has now also been confirmed by the authorities.",
+        "translationVi": "Điều này cũng đã được các cơ quan xác nhận."
+    },
+    {
+        "text": "Das ist die These, von der sie aktuell ausgehen,",
+        "start": 159.43999328613282,
+        "end": 162.60000305175782,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 159.43999328613282,
+                "end": 159.66000366210938
+            },
+            {
+                "word": "ist",
+                "start": 159.66000366210938,
+                "end": 159.77999877929688
+            },
+            {
+                "word": "die",
+                "start": 159.77999877929688,
+                "end": 160.24000549316406
+            },
+            {
+                "word": "These,",
+                "start": 160.24000549316406,
+                "end": 160.24000549316406
+            },
+            {
+                "word": "von",
+                "start": 160.33999633789062,
+                "end": 160.5
+            },
+            {
+                "word": "der",
+                "start": 160.5,
+                "end": 160.60000610351562
+            },
+            {
+                "word": "sie",
+                "start": 160.60000610351562,
+                "end": 161.3000030517578
+            },
+            {
+                "word": "aktuell",
+                "start": 161.3000030517578,
+                "end": 161.89999389648438
+            },
+            {
+                "word": "ausgehen,",
+                "start": 161.89999389648438,
+                "end": 162.60000305175782
+            }
+        ],
+        "translationEn": "This is the thesis they are currently working from,",
+        "translationVi": "Đó là giả thuyết mà họ hiện đang dựa vào,"
+    },
+    {
+        "text": "auch wenn die Ermittlungen noch andauern.",
+        "start": 162.3600067138672,
+        "end": 164.21999816894532,
+        "wordTimings": [
+            {
+                "word": "auch",
+                "start": 162.3600067138672,
+                "end": 162.55999755859375
+            },
+            {
+                "word": "wenn",
+                "start": 162.55999755859375,
+                "end": 162.6199951171875
+            },
+            {
+                "word": "die",
+                "start": 162.6199951171875,
+                "end": 162.83999633789062
+            },
+            {
+                "word": "Ermittlungen",
+                "start": 162.83999633789062,
+                "end": 163.22000122070312
+            },
+            {
+                "word": "noch",
+                "start": 163.22000122070312,
+                "end": 163.86000061035156
+            },
+            {
+                "word": "andauern.",
+                "start": 163.86000061035156,
+                "end": 164.21999816894532
+            }
+        ],
+        "translationEn": "even though the investigations are still ongoing.",
+        "translationVi": "mặc dù cuộc điều tra vẫn đang tiếp diễn."
+    },
+    {
+        "text": "Es gibt inzwischen auch mehr Informationen zu den Opfern.",
+        "start": 164.56000366210938,
+        "end": 168.05999450683595,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 164.56000366210938,
+                "end": 164.8000030517578
+            },
+            {
+                "word": "gibt",
+                "start": 164.8000030517578,
+                "end": 164.9199981689453
+            },
+            {
+                "word": "inzwischen",
+                "start": 164.9199981689453,
+                "end": 165.3000030517578
+            },
+            {
+                "word": "auch",
+                "start": 165.3000030517578,
+                "end": 165.89999389648438
+            },
+            {
+                "word": "mehr",
+                "start": 165.89999389648438,
+                "end": 166.0800018310547
+            },
+            {
+                "word": "Informationen",
+                "start": 166.0800018310547,
+                "end": 166.8000030517578
+            },
+            {
+                "word": "zu",
+                "start": 166.8000030517578,
+                "end": 167.1199951171875
+            },
+            {
+                "word": "den",
+                "start": 167.1199951171875,
+                "end": 167.55999755859375
+            },
+            {
+                "word": "Opfern.",
+                "start": 167.55999755859375,
+                "end": 168.05999450683595
+            }
+        ],
+        "translationEn": "There is now more information about the victims.",
+        "translationVi": "Hiện nay cũng có nhiều thông tin hơn về các nạn nhân."
+    },
+    {
+        "text": "Welche Erkenntnisse haben die Behörden da?",
+        "start": 167.65999450683594,
+        "end": 170.02000122070314,
+        "wordTimings": [
+            {
+                "word": "Welche",
+                "start": 167.65999450683594,
+                "end": 168.16000366210938
+            },
+            {
+                "word": "Erkenntnisse",
+                "start": 168.16000366210938,
+                "end": 168.6999969482422
+            },
+            {
+                "word": "haben",
+                "start": 168.6999969482422,
+                "end": 168.94000244140625
+            },
+            {
+                "word": "die",
+                "start": 168.94000244140625,
+                "end": 169.13999938964844
+            },
+            {
+                "word": "Behörden",
+                "start": 169.13999938964844,
+                "end": 169.39999389648438
+            },
+            {
+                "word": "da?",
+                "start": 169.39999389648438,
+                "end": 170.02000122070314
+            }
+        ],
+        "translationEn": "What insights do the authorities have there?",
+        "translationVi": "Các cơ quan có những phát hiện gì ở đó?"
+    },
+    {
+        "text": "Die Zahl der Verletzten ist jetzt noch mal gestiegen",
+        "start": 173.07999267578126,
+        "end": 176.1800048828125,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 173.07999267578126,
+                "end": 173.82000732421875
+            },
+            {
+                "word": "Zahl",
+                "start": 173.82000732421875,
+                "end": 174.0399932861328
+            },
+            {
+                "word": "der",
+                "start": 174.0399932861328,
+                "end": 174.44000244140625
+            },
+            {
+                "word": "Verletzten",
+                "start": 174.44000244140625,
+                "end": 174.86000061035156
+            },
+            {
+                "word": "ist",
+                "start": 174.86000061035156,
+                "end": 175.0399932861328
+            },
+            {
+                "word": "jetzt",
+                "start": 175.0399932861328,
+                "end": 175.24000549316406
+            },
+            {
+                "word": "noch",
+                "start": 175.24000549316406,
+                "end": 175.36000061035156
+            },
+            {
+                "word": "mal",
+                "start": 175.36000061035156,
+                "end": 175.67999267578125
+            },
+            {
+                "word": "gestiegen",
+                "start": 175.67999267578125,
+                "end": 176.1800048828125
+            }
+        ],
+        "translationEn": "The number of injured has increased again.",
+        "translationVi": "Số người bị thương hiện đã tăng lên một lần nữa."
+    },
+    {
+        "text": "auf 119 Verletzte.",
+        "start": 175.7800048828125,
+        "end": 178.04000549316407,
+        "wordTimings": [
+            {
+                "word": "auf",
+                "start": 175.7800048828125,
+                "end": 176.1199951171875
+            },
+            {
+                "word": "119",
+                "start": 176.1199951171875,
+                "end": 177.17999267578125
+            },
+            {
+                "word": "Verletzte.",
+                "start": 177.17999267578125,
+                "end": 178.04000549316407
+            }
+        ],
+        "translationEn": "to 119 injured.",
+        "translationVi": "có 119 người bị thương."
+    },
+    {
+        "text": "Die allermeisten, bis zu 100 davon,",
+        "start": 178.29999389648438,
+        "end": 180.77999572753907,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 178.29999389648438,
+                "end": 178.5
+            },
+            {
+                "word": "allermeisten,",
+                "start": 178.5,
+                "end": 179.17999267578125
+            },
+            {
+                "word": "bis",
+                "start": 179.27999877929688,
+                "end": 179.4600067138672
+            },
+            {
+                "word": "zu",
+                "start": 179.4600067138672,
+                "end": 179.67999267578125
+            },
+            {
+                "word": "100",
+                "start": 179.67999267578125,
+                "end": 180.0399932861328
+            },
+            {
+                "word": "davon,",
+                "start": 180.0399932861328,
+                "end": 180.77999572753907
+            }
+        ],
+        "translationEn": "Most of them, up to 100 of them,",
+        "translationVi": "Hầu hết, lên đến 100 trong số đó,"
+    },
+    {
+        "text": "seien in einem kritischen Zustand.",
+        "start": 180.65999450683594,
+        "end": 182.55999450683595,
+        "wordTimings": [
+            {
+                "word": "seien",
+                "start": 180.65999450683594,
+                "end": 180.75999450683594
+            },
+            {
+                "word": "in",
+                "start": 180.75999450683594,
+                "end": 181
+            },
+            {
+                "word": "einem",
+                "start": 181,
+                "end": 181.24000549316406
+            },
+            {
+                "word": "kritischen",
+                "start": 181.24000549316406,
+                "end": 181.60000610351562
+            },
+            {
+                "word": "Zustand.",
+                "start": 181.60000610351562,
+                "end": 182.55999450683595
+            }
+        ],
+        "translationEn": "are in a critical condition.",
+        "translationVi": "ở trong tình trạng nghiêm trọng."
+    },
+    {
+        "text": "Nun wurde uns erstmals bei dieser Pressekonferenz bestätigt,",
+        "start": 182.70000305175782,
+        "end": 186.77999572753907,
+        "wordTimings": [
+            {
+                "word": "Nun",
+                "start": 182.70000305175782,
+                "end": 183.10000610351562
+            },
+            {
+                "word": "wurde",
+                "start": 183.10000610351562,
+                "end": 183.27999877929688
+            },
+            {
+                "word": "uns",
+                "start": 183.27999877929688,
+                "end": 183.60000610351562
+            },
+            {
+                "word": "erstmals",
+                "start": 183.60000610351562,
+                "end": 184.1999969482422
+            },
+            {
+                "word": "bei",
+                "start": 184.1999969482422,
+                "end": 184.55999755859375
+            },
+            {
+                "word": "dieser",
+                "start": 184.55999755859375,
+                "end": 184.97999572753906
+            },
+            {
+                "word": "Pressekonferenz",
+                "start": 184.97999572753906,
+                "end": 185.86000061035156
+            },
+            {
+                "word": "bestätigt,",
+                "start": 185.86000061035156,
+                "end": 186.77999572753907
+            }
+        ],
+        "translationEn": "Now we have been confirmed for the first time at this press conference,",
+        "translationVi": "Giờ đây, chúng tôi lần đầu tiên được xác nhận tại buổi họp báo này,"
+    },
+    {
+        "text": "was über die Nationalitäten bislang bekannt ist.",
+        "start": 186.92000427246094,
+        "end": 189.8,
+        "wordTimings": [
+            {
+                "word": "was",
+                "start": 186.92000427246094,
+                "end": 187.16000366210938
+            },
+            {
+                "word": "über",
+                "start": 187.16000366210938,
+                "end": 187.33999633789062
+            },
+            {
+                "word": "die",
+                "start": 187.33999633789062,
+                "end": 187.5399932861328
+            },
+            {
+                "word": "Nationalitäten",
+                "start": 187.5399932861328,
+                "end": 188.24000549316406
+            },
+            {
+                "word": "bislang",
+                "start": 188.24000549316406,
+                "end": 188.8000030517578
+            },
+            {
+                "word": "bekannt",
+                "start": 188.8000030517578,
+                "end": 189.17999267578125
+            },
+            {
+                "word": "ist.",
+                "start": 189.17999267578125,
+                "end": 189.8
+            }
+        ],
+        "translationEn": "what is known about the nationalities so far.",
+        "translationVi": "những gì đã được biết về các quốc tịch cho đến nay."
+    },
+    {
+        "text": "Noch nicht alle der Verletzten sind auch identifiziert.",
+        "start": 189.53999938964844,
+        "end": 192.54000549316407,
+        "wordTimings": [
+            {
+                "word": "Noch",
+                "start": 189.53999938964844,
+                "end": 189.9199981689453
+            },
+            {
+                "word": "nicht",
+                "start": 189.9199981689453,
+                "end": 190.13999938964844
+            },
+            {
+                "word": "alle",
+                "start": 190.13999938964844,
+                "end": 190.3800048828125
+            },
+            {
+                "word": "der",
+                "start": 190.3800048828125,
+                "end": 190.72000122070312
+            },
+            {
+                "word": "Verletzten",
+                "start": 190.72000122070312,
+                "end": 190.97999572753906
+            },
+            {
+                "word": "sind",
+                "start": 190.97999572753906,
+                "end": 191.22000122070312
+            },
+            {
+                "word": "auch",
+                "start": 191.22000122070312,
+                "end": 191.75999450683594
+            },
+            {
+                "word": "identifiziert.",
+                "start": 191.75999450683594,
+                "end": 192.54000549316407
+            }
+        ],
+        "translationEn": "Not all of the injured have been identified yet.",
+        "translationVi": "Chưa tất cả những người bị thương đã được xác định."
+    },
+    {
+        "text": "Aber der Großteil sind Schweizer, Schweizer Staatsbürger,",
+        "start": 192.62000122070313,
+        "end": 197.8,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 192.62000122070313,
+                "end": 192.9600067138672
+            },
+            {
+                "word": "der",
+                "start": 192.9600067138672,
+                "end": 193.1199951171875
+            },
+            {
+                "word": "Großteil",
+                "start": 193.1199951171875,
+                "end": 193.63999938964844
+            },
+            {
+                "word": "sind",
+                "start": 193.63999938964844,
+                "end": 193.9600067138672
+            },
+            {
+                "word": "Schweizer,",
+                "start": 193.9600067138672,
+                "end": 194.60000610351562
+            },
+            {
+                "word": "Schweizer",
+                "start": 196.25999450683594,
+                "end": 196.8800048828125
+            },
+            {
+                "word": "Staatsbürger,",
+                "start": 196.8800048828125,
+                "end": 197.8
+            }
+        ],
+        "translationEn": "But the majority are Swiss, Swiss citizens,",
+        "translationVi": "Nhưng phần lớn là người Thụy Sĩ, công dân Thụy Sĩ,"
+    },
+    {
+        "text": "ein kleinerer Teil französische Staatsbürger.",
+        "start": 198.03999938964844,
+        "end": 200.90000610351564,
+        "wordTimings": [
+            {
+                "word": "ein",
+                "start": 198.03999938964844,
+                "end": 198.17999267578125
+            },
+            {
+                "word": "kleinerer",
+                "start": 198.17999267578125,
+                "end": 199.02000427246094
+            },
+            {
+                "word": "Teil",
+                "start": 199.02000427246094,
+                "end": 199.02000427246094
+            },
+            {
+                "word": "französische",
+                "start": 199.02000427246094,
+                "end": 199.97999572753906
+            },
+            {
+                "word": "Staatsbürger.",
+                "start": 199.97999572753906,
+                "end": 200.90000610351564
+            }
+        ],
+        "translationEn": "a smaller part of French citizens.",
+        "translationVi": "một phần nhỏ công dân Pháp."
+    },
+    {
+        "text": "Und dann aber auch vereinzelt italienische Staatsbürger,",
+        "start": 200.72000732421876,
+        "end": 204.60000305175782,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 200.72000732421876,
+                "end": 200.82000732421875
+            },
+            {
+                "word": "dann",
+                "start": 200.82000732421875,
+                "end": 201.02000427246094
+            },
+            {
+                "word": "aber",
+                "start": 201.02000427246094,
+                "end": 201.25999450683594
+            },
+            {
+                "word": "auch",
+                "start": 201.25999450683594,
+                "end": 201.5
+            },
+            {
+                "word": "vereinzelt",
+                "start": 201.5,
+                "end": 202.5399932861328
+            },
+            {
+                "word": "italienische",
+                "start": 202.5399932861328,
+                "end": 203.5800018310547
+            },
+            {
+                "word": "Staatsbürger,",
+                "start": 203.5800018310547,
+                "end": 204.60000305175782
+            }
+        ],
+        "translationEn": "And then also occasionally Italian citizens,",
+        "translationVi": "Và sau đó cũng có một số công dân Ý."
+    },
+    {
+        "text": "Menschen aus Polen, Luxemburg, aus Belgien.",
+        "start": 204.9,
+        "end": 208.27999572753907,
+        "wordTimings": [
+            {
+                "word": "Menschen",
+                "start": 204.9,
+                "end": 205
+            },
+            {
+                "word": "aus",
+                "start": 205,
+                "end": 205.33999633789062
+            },
+            {
+                "word": "Polen,",
+                "start": 205.33999633789062,
+                "end": 206.05999755859375
+            },
+            {
+                "word": "Luxemburg,",
+                "start": 206.67999267578125,
+                "end": 207.1199951171875
+            },
+            {
+                "word": "aus",
+                "start": 207.3800048828125,
+                "end": 207.6999969482422
+            },
+            {
+                "word": "Belgien.",
+                "start": 207.6999969482422,
+                "end": 208.27999572753907
+            }
+        ],
+        "translationEn": "People from Poland, Luxembourg, and Belgium.",
+        "translationVi": "Người từ Ba Lan, Luxembourg, từ Bỉ."
+    },
+    {
+        "text": "Es wurde bisher nicht von Deutschen gesprochen.",
+        "start": 208.22000732421876,
+        "end": 210.4999969482422,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 208.22000732421876,
+                "end": 208.47999572753906
+            },
+            {
+                "word": "wurde",
+                "start": 208.47999572753906,
+                "end": 208.63999938964844
+            },
+            {
+                "word": "bisher",
+                "start": 208.63999938964844,
+                "end": 208.9600067138672
+            },
+            {
+                "word": "nicht",
+                "start": 208.9600067138672,
+                "end": 209.16000366210938
+            },
+            {
+                "word": "von",
+                "start": 209.16000366210938,
+                "end": 209.33999633789062
+            },
+            {
+                "word": "Deutschen",
+                "start": 209.33999633789062,
+                "end": 209.67999267578125
+            },
+            {
+                "word": "gesprochen.",
+                "start": 209.67999267578125,
+                "end": 210.4999969482422
+            }
+        ],
+        "translationEn": "It has not been spoken of by Germans so far.",
+        "translationVi": "Chưa có người Đức nào nói về điều này."
+    },
+    {
+        "text": "Die Identifizierung der Leichen dauert auch noch an,",
+        "start": 211.14000549316407,
+        "end": 214.43999938964845,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 211.14000549316407,
+                "end": 211.86000061035156
+            },
+            {
+                "word": "Identifizierung",
+                "start": 211.86000061035156,
+                "end": 212.47999572753906
+            },
+            {
+                "word": "der",
+                "start": 212.47999572753906,
+                "end": 212.75999450683594
+            },
+            {
+                "word": "Leichen",
+                "start": 212.75999450683594,
+                "end": 213.0800018310547
+            },
+            {
+                "word": "dauert",
+                "start": 213.0800018310547,
+                "end": 213.44000244140625
+            },
+            {
+                "word": "auch",
+                "start": 213.44000244140625,
+                "end": 213.82000732421875
+            },
+            {
+                "word": "noch",
+                "start": 213.82000732421875,
+                "end": 213.9600067138672
+            },
+            {
+                "word": "an,",
+                "start": 213.9600067138672,
+                "end": 214.43999938964845
+            }
+        ],
+        "translationEn": "The identification of the bodies is still ongoing.",
+        "translationVi": "Việc xác định danh tính các thi thể vẫn đang tiếp tục."
+    },
+    {
+        "text": "ist auch noch nicht abgeschlossen.",
+        "start": 214.14000549316407,
+        "end": 215.83999328613282,
+        "wordTimings": [
+            {
+                "word": "ist",
+                "start": 214.14000549316407,
+                "end": 214.4199981689453
+            },
+            {
+                "word": "auch",
+                "start": 214.4199981689453,
+                "end": 214.63999938964844
+            },
+            {
+                "word": "noch",
+                "start": 214.63999938964844,
+                "end": 214.74000549316406
+            },
+            {
+                "word": "nicht",
+                "start": 214.74000549316406,
+                "end": 214.8800048828125
+            },
+            {
+                "word": "abgeschlossen.",
+                "start": 214.8800048828125,
+                "end": 215.83999328613282
+            }
+        ],
+        "translationEn": "is also not yet completed.",
+        "translationVi": "cũng chưa hoàn thành."
+    },
+    {
+        "text": "Und das ist jetzt der Fokus, auf den die Ermittler sich konzentrieren wollen.",
+        "start": 215.57999267578126,
+        "end": 219.66000061035157,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 215.57999267578126,
+                "end": 216.3000030517578
+            },
+            {
+                "word": "das",
+                "start": 216.3000030517578,
+                "end": 216.44000244140625
+            },
+            {
+                "word": "ist",
+                "start": 216.44000244140625,
+                "end": 216.5800018310547
+            },
+            {
+                "word": "jetzt",
+                "start": 216.5800018310547,
+                "end": 216.77999877929688
+            },
+            {
+                "word": "der",
+                "start": 216.77999877929688,
+                "end": 217.0399932861328
+            },
+            {
+                "word": "Fokus,",
+                "start": 217.0399932861328,
+                "end": 217.27999877929688
+            },
+            {
+                "word": "auf",
+                "start": 217.4199981689453,
+                "end": 217.47999572753906
+            },
+            {
+                "word": "den",
+                "start": 217.47999572753906,
+                "end": 217.5800018310547
+            },
+            {
+                "word": "die",
+                "start": 217.5800018310547,
+                "end": 217.77999877929688
+            },
+            {
+                "word": "Ermittler",
+                "start": 217.77999877929688,
+                "end": 218.05999755859375
+            },
+            {
+                "word": "sich",
+                "start": 218.05999755859375,
+                "end": 218.36000061035156
+            },
+            {
+                "word": "konzentrieren",
+                "start": 218.36000061035156,
+                "end": 218.9600067138672
+            },
+            {
+                "word": "wollen.",
+                "start": 218.9600067138672,
+                "end": 219.66000061035157
+            }
+        ],
+        "translationEn": "And this is now the focus that the investigators want to concentrate on.",
+        "translationVi": "Và đây là trọng tâm mà các nhà điều tra muốn tập trung vào."
+    },
+    {
+        "text": "Die Identifizierung so schnell wie möglich auch abzuschließen,",
+        "start": 220.37999572753907,
+        "end": 223.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 220.37999572753907,
+                "end": 221.10000610351562
+            },
+            {
+                "word": "Identifizierung",
+                "start": 221.10000610351562,
+                "end": 221.72000122070312
+            },
+            {
+                "word": "so",
+                "start": 221.72000122070312,
+                "end": 222.05999755859375
+            },
+            {
+                "word": "schnell",
+                "start": 222.05999755859375,
+                "end": 222.16000366210938
+            },
+            {
+                "word": "wie",
+                "start": 222.16000366210938,
+                "end": 222.4199981689453
+            },
+            {
+                "word": "möglich",
+                "start": 222.4199981689453,
+                "end": 222.60000610351562
+            },
+            {
+                "word": "auch",
+                "start": 222.60000610351562,
+                "end": 223.02000427246094
+            },
+            {
+                "word": "abzuschließen,",
+                "start": 223.02000427246094,
+                "end": 223.6800048828125
+            }
+        ],
+        "translationEn": "to complete the identification as quickly as possible,",
+        "translationVi": "Hoàn thành việc xác định càng nhanh càng tốt."
+    },
+    {
+        "text": "damit die Familien, die Angehörigen Gewissheit haben,",
+        "start": 223.2800048828125,
+        "end": 226.71999816894532,
+        "wordTimings": [
+            {
+                "word": "damit",
+                "start": 223.2800048828125,
+                "end": 223.67999267578125
+            },
+            {
+                "word": "die",
+                "start": 223.67999267578125,
+                "end": 223.86000061035156
+            },
+            {
+                "word": "Familien,",
+                "start": 223.86000061035156,
+                "end": 224.4199981689453
+            },
+            {
+                "word": "die",
+                "start": 224.66000366210938,
+                "end": 225.0800018310547
+            },
+            {
+                "word": "Angehörigen",
+                "start": 225.0800018310547,
+                "end": 225.47999572753906
+            },
+            {
+                "word": "Gewissheit",
+                "start": 225.47999572753906,
+                "end": 226.05999755859375
+            },
+            {
+                "word": "haben,",
+                "start": 226.05999755859375,
+                "end": 226.71999816894532
+            }
+        ],
+        "translationEn": "so that the families and relatives have certainty,",
+        "translationVi": "để các gia đình, người thân có sự chắc chắn,"
+    },
+    {
+        "text": "was mit ihren Kindern, mit ihren Verwandten hier geschehen ist.",
+        "start": 227.00000610351563,
+        "end": 230.4199951171875,
+        "wordTimings": [
+            {
+                "word": "was",
+                "start": 227.00000610351563,
+                "end": 227.10000610351562
+            },
+            {
+                "word": "mit",
+                "start": 227.10000610351562,
+                "end": 227.33999633789062
+            },
+            {
+                "word": "ihren",
+                "start": 227.33999633789062,
+                "end": 227.8000030517578
+            },
+            {
+                "word": "Kindern,",
+                "start": 227.8000030517578,
+                "end": 228.3800048828125
+            },
+            {
+                "word": "mit",
+                "start": 228.47999572753906,
+                "end": 228.63999938964844
+            },
+            {
+                "word": "ihren",
+                "start": 228.63999938964844,
+                "end": 228.82000732421875
+            },
+            {
+                "word": "Verwandten",
+                "start": 228.82000732421875,
+                "end": 229.3000030517578
+            },
+            {
+                "word": "hier",
+                "start": 229.3000030517578,
+                "end": 229.55999755859375
+            },
+            {
+                "word": "geschehen",
+                "start": 229.55999755859375,
+                "end": 229.83999633789062
+            },
+            {
+                "word": "ist.",
+                "start": 229.83999633789062,
+                "end": 230.4199951171875
+            }
+        ],
+        "translationEn": "what has happened to their children, to their relatives here.",
+        "translationVi": "điều gì đã xảy ra với con cái của họ, với người thân của họ ở đây."
+    },
+    {
+        "text": "Vielen Dank, Stefanie Dott aus Grandmontana.",
+        "start": 231.00000610351563,
+        "end": 233.66000061035157,
+        "wordTimings": [
+            {
+                "word": "Vielen",
+                "start": 231.00000610351563,
+                "end": 231.1199951171875
+            },
+            {
+                "word": "Dank,",
+                "start": 231.1199951171875,
+                "end": 231.3800048828125
+            },
+            {
+                "word": "Stefanie",
+                "start": 231.6199951171875,
+                "end": 231.83999633789062
+            },
+            {
+                "word": "Dott",
+                "start": 231.83999633789062,
+                "end": 232.0800018310547
+            },
+            {
+                "word": "aus",
+                "start": 232.0800018310547,
+                "end": 232.4600067138672
+            },
+            {
+                "word": "Grandmontana.",
+                "start": 232.4600067138672,
+                "end": 233.66000061035157
+            }
+        ],
+        "translationEn": "Thank you very much, Stefanie Dott from Grandmontana.",
+        "translationVi": "Cảm ơn rất nhiều, Stefanie Dott từ Grandmontana."
+    }
+]

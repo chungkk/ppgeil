@@ -1,0 +1,3009 @@
+[
+    {
+        "text": "Die CSU hat so viel gelernt von Robert Habeck.",
+        "start": 0,
+        "end": 3.220000076293945,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 0,
+                "end": 0.36000001430511475
+            },
+            {
+                "word": "CSU",
+                "start": 0.36000001430511475,
+                "end": 0.9399999976158142
+            },
+            {
+                "word": "hat",
+                "start": 0.9399999976158142,
+                "end": 1.1200000047683716
+            },
+            {
+                "word": "so",
+                "start": 1.1200000047683716,
+                "end": 1.4800000190734863
+            },
+            {
+                "word": "viel",
+                "start": 1.4800000190734863,
+                "end": 1.6399999856948853
+            },
+            {
+                "word": "gelernt",
+                "start": 1.6399999856948853,
+                "end": 1.9800000190734863
+            },
+            {
+                "word": "von",
+                "start": 1.9800000190734863,
+                "end": 2.1600000858306885
+            },
+            {
+                "word": "Robert",
+                "start": 2.1600000858306885,
+                "end": 2.5199999809265137
+            },
+            {
+                "word": "Habeck.",
+                "start": 2.5199999809265137,
+                "end": 3.220000076293945
+            }
+        ],
+        "translationEn": "The CSU has learned so much from Robert Habeck.",
+        "translationVi": "CSU đã học được rất nhiều từ Robert Habeck."
+    },
+    {
+        "text": "Und heute lernt sie noch zwei Wörter mehr.",
+        "start": 3.140000009536743,
+        "end": 5.6400001525878904,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 3.140000009536743,
+                "end": 3.380000114440918
+            },
+            {
+                "word": "heute",
+                "start": 3.380000114440918,
+                "end": 3.8399999141693115
+            },
+            {
+                "word": "lernt",
+                "start": 3.8399999141693115,
+                "end": 4.059999942779541
+            },
+            {
+                "word": "sie",
+                "start": 4.059999942779541,
+                "end": 4.179999828338623
+            },
+            {
+                "word": "noch",
+                "start": 4.179999828338623,
+                "end": 4.519999980926514
+            },
+            {
+                "word": "zwei",
+                "start": 4.519999980926514,
+                "end": 4.800000190734863
+            },
+            {
+                "word": "Wörter",
+                "start": 4.800000190734863,
+                "end": 5
+            },
+            {
+                "word": "mehr.",
+                "start": 5,
+                "end": 5.6400001525878904
+            }
+        ],
+        "translationEn": "And today she learns two more words.",
+        "translationVi": "Và hôm nay cô ấy học thêm hai từ nữa."
+    },
+    {
+        "text": "Danke, Robert! Endlich geht's mit der Wirtschaft wieder aufwärts,",
+        "start": 5.68000020980835,
+        "end": 17.900000381469727,
+        "wordTimings": [
+            {
+                "word": "Danke,",
+                "start": 5.68000020980835,
+                "end": 6.300000190734863
+            },
+            {
+                "word": "Robert!",
+                "start": 7.239999771118164,
+                "end": 7.239999771118164
+            },
+            {
+                "word": "Endlich",
+                "start": 15.720000267028809,
+                "end": 16.239999771118164
+            },
+            {
+                "word": "geht's",
+                "start": 16.239999771118164,
+                "end": 16.479999542236328
+            },
+            {
+                "word": "mit",
+                "start": 16.479999542236328,
+                "end": 16.579999923706055
+            },
+            {
+                "word": "der",
+                "start": 16.579999923706055,
+                "end": 17
+            },
+            {
+                "word": "Wirtschaft",
+                "start": 17,
+                "end": 17
+            },
+            {
+                "word": "wieder",
+                "start": 17,
+                "end": 17.34000015258789
+            },
+            {
+                "word": "aufwärts,",
+                "start": 17.34000015258789,
+                "end": 17.900000381469727
+            }
+        ],
+        "translationEn": "Thank you, Robert! Finally, the economy is on the rise again.",
+        "translationVi": "Cảm ơn, Robert! Cuối cùng thì nền kinh tế cũng đang đi lên trở lại."
+    },
+    {
+        "text": "muss man sagen, oder? Investitionsbooster, Industriestrompreis,",
+        "start": 17.58000030517578,
+        "end": 21.019999313354493,
+        "wordTimings": [
+            {
+                "word": "muss",
+                "start": 17.58000030517578,
+                "end": 17.68000030517578
+            },
+            {
+                "word": "man",
+                "start": 17.68000030517578,
+                "end": 17.84000015258789
+            },
+            {
+                "word": "sagen,",
+                "start": 17.84000015258789,
+                "end": 18.020000457763672
+            },
+            {
+                "word": "oder?",
+                "start": 18.100000381469727,
+                "end": 18.5
+            },
+            {
+                "word": "Investitionsbooster,",
+                "start": 19.68000030517578,
+                "end": 20.200000762939453
+            },
+            {
+                "word": "Industriestrompreis,",
+                "start": 20.200000762939453,
+                "end": 21.019999313354493
+            }
+        ],
+        "translationEn": "one must say, right? Investment booster, industrial electricity price,",
+        "translationVi": "phải nói, đúng không? Tăng cường đầu tư, giá điện công nghiệp,"
+    },
+    {
+        "text": "Lockerung der Schuldenbremse. Das sind alles super Ideen, oder?",
+        "start": 20.7799991607666,
+        "end": 24.220000076293946,
+        "wordTimings": [
+            {
+                "word": "Lockerung",
+                "start": 20.7799991607666,
+                "end": 21.139999389648438
+            },
+            {
+                "word": "der",
+                "start": 21.139999389648438,
+                "end": 21.34000015258789
+            },
+            {
+                "word": "Schuldenbremse.",
+                "start": 21.34000015258789,
+                "end": 22.059999465942383
+            },
+            {
+                "word": "Das",
+                "start": 22.440000534057617,
+                "end": 22.959999084472656
+            },
+            {
+                "word": "sind",
+                "start": 22.959999084472656,
+                "end": 23
+            },
+            {
+                "word": "alles",
+                "start": 23,
+                "end": 23.15999984741211
+            },
+            {
+                "word": "super",
+                "start": 23.15999984741211,
+                "end": 23.459999084472656
+            },
+            {
+                "word": "Ideen,",
+                "start": 23.459999084472656,
+                "end": 23.700000762939453
+            },
+            {
+                "word": "oder?",
+                "start": 23.799999237060547,
+                "end": 24.220000076293946
+            }
+        ],
+        "translationEn": "Relaxation of the debt brake. These are all great ideas, right?",
+        "translationVi": "Nới lỏng quy định về giới hạn nợ. Tất cả đều là những ý tưởng tuyệt vời, phải không?"
+    },
+    {
+        "text": "Und funktioniert ja super. Und wer hatte all die Ideen?",
+        "start": 24.059999847412108,
+        "end": 27.320000457763673,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 24.059999847412108,
+                "end": 24.65999984741211
+            },
+            {
+                "word": "funktioniert",
+                "start": 24.65999984741211,
+                "end": 24.920000076293945
+            },
+            {
+                "word": "ja",
+                "start": 24.920000076293945,
+                "end": 25.239999771118164
+            },
+            {
+                "word": "super.",
+                "start": 25.239999771118164,
+                "end": 25.399999618530273
+            },
+            {
+                "word": "Und",
+                "start": 26.020000457763672,
+                "end": 26.219999313354492
+            },
+            {
+                "word": "wer",
+                "start": 26.219999313354492,
+                "end": 26.280000686645508
+            },
+            {
+                "word": "hatte",
+                "start": 26.280000686645508,
+                "end": 26.440000534057617
+            },
+            {
+                "word": "all",
+                "start": 26.440000534057617,
+                "end": 26.700000762939453
+            },
+            {
+                "word": "die",
+                "start": 26.700000762939453,
+                "end": 26.760000228881836
+            },
+            {
+                "word": "Ideen?",
+                "start": 26.760000228881836,
+                "end": 27.320000457763673
+            }
+        ],
+        "translationEn": "And it works great. And who had all those ideas?",
+        "translationVi": "Và hoạt động thật tuyệt. Ai đã có tất cả những ý tưởng đó?"
+    },
+    {
+        "text": "Die Ideen haben natürlich immer Friedrich Merz und Markus Söder.",
+        "start": 27.719999694824217,
+        "end": 30.939999389648438,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 27.719999694824217,
+                "end": 28.299999237060547
+            },
+            {
+                "word": "Ideen",
+                "start": 28.299999237060547,
+                "end": 28.639999389648438
+            },
+            {
+                "word": "haben",
+                "start": 28.639999389648438,
+                "end": 28.780000686645508
+            },
+            {
+                "word": "natürlich",
+                "start": 28.780000686645508,
+                "end": 29.139999389648438
+            },
+            {
+                "word": "immer",
+                "start": 29.139999389648438,
+                "end": 29.459999084472656
+            },
+            {
+                "word": "Friedrich",
+                "start": 29.459999084472656,
+                "end": 29.739999771118164
+            },
+            {
+                "word": "Merz",
+                "start": 29.739999771118164,
+                "end": 29.940000534057617
+            },
+            {
+                "word": "und",
+                "start": 29.940000534057617,
+                "end": 30.100000381469727
+            },
+            {
+                "word": "Markus",
+                "start": 30.100000381469727,
+                "end": 30.440000534057617
+            },
+            {
+                "word": "Söder.",
+                "start": 30.440000534057617,
+                "end": 30.939999389648438
+            }
+        ],
+        "translationEn": "The ideas always come from Friedrich Merz and Markus Söder, of course.",
+        "translationVi": "Những ý tưởng luôn thuộc về Friedrich Merz và Markus Söder."
+    },
+    {
+        "text": "Nein, Robert Habeck hatte die Ideen. Ehrlich, ist das so?",
+        "start": 30.719999694824217,
+        "end": 34.36000137329101,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 30.719999694824217,
+                "end": 31.1200008392334
+            },
+            {
+                "word": "Robert",
+                "start": 31.18000030517578,
+                "end": 31.34000015258789
+            },
+            {
+                "word": "Habeck",
+                "start": 31.34000015258789,
+                "end": 31.68000030517578
+            },
+            {
+                "word": "hatte",
+                "start": 31.68000030517578,
+                "end": 31.84000015258789
+            },
+            {
+                "word": "die",
+                "start": 31.84000015258789,
+                "end": 32.040000915527344
+            },
+            {
+                "word": "Ideen.",
+                "start": 32.040000915527344,
+                "end": 32.15999984741211
+            },
+            {
+                "word": "Ehrlich,",
+                "start": 33.060001373291016,
+                "end": 33.439998626708984
+            },
+            {
+                "word": "ist",
+                "start": 33.439998626708984,
+                "end": 33.599998474121094
+            },
+            {
+                "word": "das",
+                "start": 33.599998474121094,
+                "end": 33.7599983215332
+            },
+            {
+                "word": "so?",
+                "start": 33.7599983215332,
+                "end": 34.36000137329101
+            }
+        ],
+        "translationEn": "No, Robert Habeck had the ideas. Really, is that so?",
+        "translationVi": "Không, Robert Habeck đã có những ý tưởng. Thật lòng, có phải vậy không?"
+    },
+    {
+        "text": "Hatte ja. Das weiß nur niemand. Seine Ideen waren trotzdem gut.",
+        "start": 34.679998779296874,
+        "end": 39.23999862670898,
+        "wordTimings": [
+            {
+                "word": "Hatte",
+                "start": 34.679998779296874,
+                "end": 35.2599983215332
+            },
+            {
+                "word": "ja.",
+                "start": 35.2599983215332,
+                "end": 35.7400016784668
+            },
+            {
+                "word": "Das",
+                "start": 36.15999984741211,
+                "end": 36.63999938964844
+            },
+            {
+                "word": "weiß",
+                "start": 36.63999938964844,
+                "end": 36.65999984741211
+            },
+            {
+                "word": "nur",
+                "start": 36.65999984741211,
+                "end": 36.84000015258789
+            },
+            {
+                "word": "niemand.",
+                "start": 36.84000015258789,
+                "end": 37.15999984741211
+            },
+            {
+                "word": "Seine",
+                "start": 37.5,
+                "end": 37.720001220703125
+            },
+            {
+                "word": "Ideen",
+                "start": 37.720001220703125,
+                "end": 38.02000045776367
+            },
+            {
+                "word": "waren",
+                "start": 38.02000045776367,
+                "end": 38.220001220703125
+            },
+            {
+                "word": "trotzdem",
+                "start": 38.220001220703125,
+                "end": 38.63999938964844
+            },
+            {
+                "word": "gut.",
+                "start": 38.63999938964844,
+                "end": 39.23999862670898
+            }
+        ],
+        "translationEn": "He did have them. Only no one knows. His ideas were still good.",
+        "translationVi": "Đã có. Chỉ có điều không ai biết. Ý tưởng của anh ấy vẫn tốt."
+    },
+    {
+        "text": "Die Ideen wurden teilweise übernommen. Ich will doch nur ein Danke.",
+        "start": 39.1599983215332,
+        "end": 43.82000045776367,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 39.1599983215332,
+                "end": 39.31999969482422
+            },
+            {
+                "word": "Ideen",
+                "start": 39.31999969482422,
+                "end": 39.7400016784668
+            },
+            {
+                "word": "wurden",
+                "start": 39.7400016784668,
+                "end": 39.7400016784668
+            },
+            {
+                "word": "teilweise",
+                "start": 39.7400016784668,
+                "end": 40.20000076293945
+            },
+            {
+                "word": "übernommen.",
+                "start": 40.20000076293945,
+                "end": 40.560001373291016
+            },
+            {
+                "word": "Ich",
+                "start": 41.900001525878906,
+                "end": 42.380001068115234
+            },
+            {
+                "word": "will",
+                "start": 42.380001068115234,
+                "end": 42.540000915527344
+            },
+            {
+                "word": "doch",
+                "start": 42.540000915527344,
+                "end": 42.70000076293945
+            },
+            {
+                "word": "nur",
+                "start": 42.70000076293945,
+                "end": 42.97999954223633
+            },
+            {
+                "word": "ein",
+                "start": 42.97999954223633,
+                "end": 43.220001220703125
+            },
+            {
+                "word": "Danke.",
+                "start": 43.220001220703125,
+                "end": 43.82000045776367
+            }
+        ],
+        "translationEn": "The ideas were partially adopted. I just want a thank you.",
+        "translationVi": "Những ý tưởng đã được tiếp nhận một phần. Tôi chỉ muốn một lời cảm ơn."
+    },
+    {
+        "text": "Sie sind eine christliche Partei, das Weihnachtsfest naht.",
+        "start": 43.539999389648436,
+        "end": 46.86000137329101,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 43.539999389648436,
+                "end": 44.040000915527344
+            },
+            {
+                "word": "sind",
+                "start": 44.040000915527344,
+                "end": 44.220001220703125
+            },
+            {
+                "word": "eine",
+                "start": 44.220001220703125,
+                "end": 44.439998626708984
+            },
+            {
+                "word": "christliche",
+                "start": 44.439998626708984,
+                "end": 44.7599983215332
+            },
+            {
+                "word": "Partei,",
+                "start": 44.7599983215332,
+                "end": 45.15999984741211
+            },
+            {
+                "word": "das",
+                "start": 45.400001525878906,
+                "end": 45.63999938964844
+            },
+            {
+                "word": "Weihnachtsfest",
+                "start": 45.63999938964844,
+                "end": 46.279998779296875
+            },
+            {
+                "word": "naht.",
+                "start": 46.279998779296875,
+                "end": 46.86000137329101
+            }
+        ],
+        "translationEn": "You are a Christian party, Christmas is approaching.",
+        "translationVi": "Bạn là một đảng Kitô giáo, lễ Giáng sinh đang đến gần."
+    },
+    {
+        "text": "Einfach mal Danke, Robert! Ist das zu viel verlangt?",
+        "start": 46.74000015258789,
+        "end": 49.380001831054685,
+        "wordTimings": [
+            {
+                "word": "Einfach",
+                "start": 46.74000015258789,
+                "end": 47.13999938964844
+            },
+            {
+                "word": "mal",
+                "start": 47.13999938964844,
+                "end": 47.5
+            },
+            {
+                "word": "Danke,",
+                "start": 47.5,
+                "end": 47.7599983215332
+            },
+            {
+                "word": "Robert!",
+                "start": 47.880001068115234,
+                "end": 48.119998931884766
+            },
+            {
+                "word": "Ist",
+                "start": 48.15999984741211,
+                "end": 48.31999969482422
+            },
+            {
+                "word": "das",
+                "start": 48.31999969482422,
+                "end": 48.459999084472656
+            },
+            {
+                "word": "zu",
+                "start": 48.459999084472656,
+                "end": 48.65999984741211
+            },
+            {
+                "word": "viel",
+                "start": 48.65999984741211,
+                "end": 48.79999923706055
+            },
+            {
+                "word": "verlangt?",
+                "start": 48.79999923706055,
+                "end": 49.380001831054685
+            }
+        ],
+        "translationEn": "Just a simple thank you, Robert! Is that too much to ask?",
+        "translationVi": "Chỉ đơn giản là cảm ơn, Robert! Có quá đáng không?"
+    },
+    {
+        "text": "Zwei Worte: Danke, Robert! Das kann ich nicht sagen.",
+        "start": 49.21999969482422,
+        "end": 52.98000030517578,
+        "wordTimings": [
+            {
+                "word": "Zwei",
+                "start": 49.21999969482422,
+                "end": 49.79999923706055
+            },
+            {
+                "word": "Worte:",
+                "start": 49.79999923706055,
+                "end": 50.220001220703125
+            },
+            {
+                "word": "Danke,",
+                "start": 50.599998474121094,
+                "end": 51.060001373291016
+            },
+            {
+                "word": "Robert!",
+                "start": 51.7599983215332,
+                "end": 51.7599983215332
+            },
+            {
+                "word": "Das",
+                "start": 51.84000015258789,
+                "end": 52
+            },
+            {
+                "word": "kann",
+                "start": 52,
+                "end": 52.13999938964844
+            },
+            {
+                "word": "ich",
+                "start": 52.13999938964844,
+                "end": 52.220001220703125
+            },
+            {
+                "word": "nicht",
+                "start": 52.220001220703125,
+                "end": 52.47999954223633
+            },
+            {
+                "word": "sagen.",
+                "start": 52.47999954223633,
+                "end": 52.98000030517578
+            }
+        ],
+        "translationEn": "Two words: Thank you, Robert! I can't say that.",
+        "translationVi": "Hai từ: Cảm ơn, Robert! Tôi không thể nói điều đó."
+    },
+    {
+        "text": "Warum denn? Weil ich nicht zufrieden war mit seiner ganzen Politik.",
+        "start": 52.58000030517578,
+        "end": 55.84000091552734,
+        "wordTimings": [
+            {
+                "word": "Warum",
+                "start": 52.58000030517578,
+                "end": 53.02000045776367
+            },
+            {
+                "word": "denn?",
+                "start": 53.02000045776367,
+                "end": 53.20000076293945
+            },
+            {
+                "word": "Weil",
+                "start": 53.2400016784668,
+                "end": 53.41999816894531
+            },
+            {
+                "word": "ich",
+                "start": 53.41999816894531,
+                "end": 53.560001373291016
+            },
+            {
+                "word": "nicht",
+                "start": 53.560001373291016,
+                "end": 53.81999969482422
+            },
+            {
+                "word": "zufrieden",
+                "start": 53.81999969482422,
+                "end": 54.279998779296875
+            },
+            {
+                "word": "war",
+                "start": 54.279998779296875,
+                "end": 54.459999084472656
+            },
+            {
+                "word": "mit",
+                "start": 54.459999084472656,
+                "end": 54.599998474121094
+            },
+            {
+                "word": "seiner",
+                "start": 54.599998474121094,
+                "end": 54.79999923706055
+            },
+            {
+                "word": "ganzen",
+                "start": 54.79999923706055,
+                "end": 55.31999969482422
+            },
+            {
+                "word": "Politik.",
+                "start": 55.31999969482422,
+                "end": 55.84000091552734
+            }
+        ],
+        "translationEn": "Why? Because I was not satisfied with his entire policy.",
+        "translationVi": "Tại sao vậy? Bởi vì tôi không hài lòng với toàn bộ chính sách của ông ấy."
+    },
+    {
+        "text": "Aber die Ideen, die jetzt umgesetzt wurden, waren seine Ideen.",
+        "start": 55.44000091552734,
+        "end": 58.439999389648435,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 55.44000091552734,
+                "end": 55.86000061035156
+            },
+            {
+                "word": "die",
+                "start": 55.86000061035156,
+                "end": 56.15999984741211
+            },
+            {
+                "word": "Ideen,",
+                "start": 56.15999984741211,
+                "end": 56.31999969482422
+            },
+            {
+                "word": "die",
+                "start": 56.34000015258789,
+                "end": 56.41999816894531
+            },
+            {
+                "word": "jetzt",
+                "start": 56.41999816894531,
+                "end": 56.70000076293945
+            },
+            {
+                "word": "umgesetzt",
+                "start": 56.70000076293945,
+                "end": 56.97999954223633
+            },
+            {
+                "word": "wurden,",
+                "start": 56.97999954223633,
+                "end": 57.15999984741211
+            },
+            {
+                "word": "waren",
+                "start": 57.36000061035156,
+                "end": 57.47999954223633
+            },
+            {
+                "word": "seine",
+                "start": 57.47999954223633,
+                "end": 57.70000076293945
+            },
+            {
+                "word": "Ideen.",
+                "start": 57.70000076293945,
+                "end": 58.439999389648435
+            }
+        ],
+        "translationEn": "But the ideas that have now been implemented were his ideas.",
+        "translationVi": "Nhưng những ý tưởng được thực hiện bây giờ là ý tưởng của ông ấy."
+    },
+    {
+        "text": "Da kann man doch einfach mal Danke sagen. Nein, Danke, Robert.",
+        "start": 58.120001220703124,
+        "end": 62.89999847412109,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 58.120001220703124,
+                "end": 58.34000015258789
+            },
+            {
+                "word": "kann",
+                "start": 58.34000015258789,
+                "end": 58.459999084472656
+            },
+            {
+                "word": "man",
+                "start": 58.459999084472656,
+                "end": 58.540000915527344
+            },
+            {
+                "word": "doch",
+                "start": 58.540000915527344,
+                "end": 58.63999938964844
+            },
+            {
+                "word": "einfach",
+                "start": 58.63999938964844,
+                "end": 58.81999969482422
+            },
+            {
+                "word": "mal",
+                "start": 58.81999969482422,
+                "end": 59.060001373291016
+            },
+            {
+                "word": "Danke",
+                "start": 59.060001373291016,
+                "end": 59.31999969482422
+            },
+            {
+                "word": "sagen.",
+                "start": 59.31999969482422,
+                "end": 59.70000076293945
+            },
+            {
+                "word": "Nein,",
+                "start": 59.779998779296875,
+                "end": 60.02000045776367
+            },
+            {
+                "word": "Danke,",
+                "start": 61.58000183105469,
+                "end": 61.97999954223633
+            },
+            {
+                "word": "Robert.",
+                "start": 62.220001220703125,
+                "end": 62.89999847412109
+            }
+        ],
+        "translationEn": "One can simply say thank you. No, thank you, Robert.",
+        "translationVi": "Thì có thể nói cảm ơn một cách đơn giản. Không, cảm ơn, Robert."
+    },
+    {
+        "text": "Nein, wir machen es zusammen. Eins, zwei, drei, Danke!",
+        "start": 62.6599983215332,
+        "end": 66.34000091552734,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 62.6599983215332,
+                "end": 63.15999984741211
+            },
+            {
+                "word": "wir",
+                "start": 63.15999984741211,
+                "end": 63.220001220703125
+            },
+            {
+                "word": "machen",
+                "start": 63.220001220703125,
+                "end": 63.34000015258789
+            },
+            {
+                "word": "es",
+                "start": 63.34000015258789,
+                "end": 63.560001373291016
+            },
+            {
+                "word": "zusammen.",
+                "start": 63.560001373291016,
+                "end": 63.79999923706055
+            },
+            {
+                "word": "Eins,",
+                "start": 64.19999694824219,
+                "end": 64.19999694824219
+            },
+            {
+                "word": "zwei,",
+                "start": 64.19999694824219,
+                "end": 64.37999725341797
+            },
+            {
+                "word": "drei,",
+                "start": 64.44000244140625,
+                "end": 64.68000030517578
+            },
+            {
+                "word": "Danke!",
+                "start": 65.63999938964844,
+                "end": 66.34000091552734
+            }
+        ],
+        "translationEn": "No, we do it together. One, two, three, thank you!",
+        "translationVi": "Không, chúng ta làm cùng nhau. Một, hai, ba, cảm ơn!"
+    },
+    {
+        "text": "Nein, der Mann hat die ganze Vorarbeit geleistet.",
+        "start": 66.52000274658204,
+        "end": 70.98000030517578,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 66.52000274658204,
+                "end": 67
+            },
+            {
+                "word": "der",
+                "start": 68.5,
+                "end": 68.80000305175781
+            },
+            {
+                "word": "Mann",
+                "start": 68.80000305175781,
+                "end": 68.94000244140625
+            },
+            {
+                "word": "hat",
+                "start": 68.94000244140625,
+                "end": 69.08000183105469
+            },
+            {
+                "word": "die",
+                "start": 69.08000183105469,
+                "end": 69.22000122070312
+            },
+            {
+                "word": "ganze",
+                "start": 69.22000122070312,
+                "end": 69.55999755859375
+            },
+            {
+                "word": "Vorarbeit",
+                "start": 69.55999755859375,
+                "end": 69.9800033569336
+            },
+            {
+                "word": "geleistet.",
+                "start": 69.9800033569336,
+                "end": 70.98000030517578
+            }
+        ],
+        "translationEn": "No, the man did all the preliminary work.",
+        "translationVi": "Không, người đàn ông đã làm hết công việc chuẩn bị."
+    },
+    {
+        "text": "Sie ernten jetzt den Ruhm. Und da kann man doch jetzt einfach mal",
+        "start": 71.41999664306641,
+        "end": 74.71999816894531,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 71.41999664306641,
+                "end": 71.66000366210938
+            },
+            {
+                "word": "ernten",
+                "start": 71.66000366210938,
+                "end": 71.87999725341797
+            },
+            {
+                "word": "jetzt",
+                "start": 71.87999725341797,
+                "end": 72.18000030517578
+            },
+            {
+                "word": "den",
+                "start": 72.18000030517578,
+                "end": 72.45999908447266
+            },
+            {
+                "word": "Ruhm.",
+                "start": 72.45999908447266,
+                "end": 73.44000244140625
+            },
+            {
+                "word": "Und",
+                "start": 73.5199966430664,
+                "end": 73.5999984741211
+            },
+            {
+                "word": "da",
+                "start": 73.5999984741211,
+                "end": 73.69999694824219
+            },
+            {
+                "word": "kann",
+                "start": 73.69999694824219,
+                "end": 73.81999969482422
+            },
+            {
+                "word": "man",
+                "start": 73.81999969482422,
+                "end": 73.9000015258789
+            },
+            {
+                "word": "doch",
+                "start": 73.9000015258789,
+                "end": 74.04000091552734
+            },
+            {
+                "word": "jetzt",
+                "start": 74.04000091552734,
+                "end": 74.18000030517578
+            },
+            {
+                "word": "einfach",
+                "start": 74.18000030517578,
+                "end": 74.30000305175781
+            },
+            {
+                "word": "mal",
+                "start": 74.30000305175781,
+                "end": 74.71999816894531
+            }
+        ],
+        "translationEn": "You are now reaping the glory. And one can just simply...",
+        "translationVi": "Bạn đang gặt hái vinh quang. Và bây giờ có thể đơn giản mà..."
+    },
+    {
+        "text": "in die Kamera sagen: Danke, Robert, für deine Ideen.",
+        "start": 74.31999816894532,
+        "end": 77.13999633789062,
+        "wordTimings": [
+            {
+                "word": "in",
+                "start": 74.31999816894532,
+                "end": 74.4800033569336
+            },
+            {
+                "word": "die",
+                "start": 74.4800033569336,
+                "end": 74.73999786376953
+            },
+            {
+                "word": "Kamera",
+                "start": 74.73999786376953,
+                "end": 74.73999786376953
+            },
+            {
+                "word": "sagen:",
+                "start": 74.73999786376953,
+                "end": 75
+            },
+            {
+                "word": "Danke,",
+                "start": 75.19999694824219,
+                "end": 75.36000061035156
+            },
+            {
+                "word": "Robert,",
+                "start": 75.66000366210938,
+                "end": 75.66000366210938
+            },
+            {
+                "word": "für",
+                "start": 75.73999786376953,
+                "end": 75.94000244140625
+            },
+            {
+                "word": "deine",
+                "start": 75.94000244140625,
+                "end": 76.30000305175781
+            },
+            {
+                "word": "Ideen.",
+                "start": 76.30000305175781,
+                "end": 77.13999633789062
+            }
+        ],
+        "translationEn": "Say to the camera: Thank you, Robert, for your ideas.",
+        "translationVi": "Nói vào camera: Cảm ơn, Robert, vì những ý tưởng của bạn."
+    },
+    {
+        "text": "Danke, Robert, dass du nicht mehr da bist.",
+        "start": 78.41999664306641,
+        "end": 80.8199966430664,
+        "wordTimings": [
+            {
+                "word": "Danke,",
+                "start": 78.41999664306641,
+                "end": 78.72000122070312
+            },
+            {
+                "word": "Robert,",
+                "start": 79.0999984741211,
+                "end": 79.12000274658203
+            },
+            {
+                "word": "dass",
+                "start": 79.69999694824219,
+                "end": 79.83999633789062
+            },
+            {
+                "word": "du",
+                "start": 79.83999633789062,
+                "end": 79.95999908447266
+            },
+            {
+                "word": "nicht",
+                "start": 79.95999908447266,
+                "end": 80.08000183105469
+            },
+            {
+                "word": "mehr",
+                "start": 80.08000183105469,
+                "end": 80.18000030517578
+            },
+            {
+                "word": "da",
+                "start": 80.18000030517578,
+                "end": 80.41999816894531
+            },
+            {
+                "word": "bist.",
+                "start": 80.41999816894531,
+                "end": 80.8199966430664
+            }
+        ],
+        "translationEn": "Thank you, Robert, for not being here anymore.",
+        "translationVi": "Cảm ơn, Robert, vì bạn không còn ở đây nữa."
+    },
+    {
+        "text": "Danke ist doch ein Demut. Das ist doch zutiefst christlich.",
+        "start": 80.8800033569336,
+        "end": 83.63999633789062,
+        "wordTimings": [
+            {
+                "word": "Danke",
+                "start": 80.8800033569336,
+                "end": 81.23999786376953
+            },
+            {
+                "word": "ist",
+                "start": 81.23999786376953,
+                "end": 81.45999908447266
+            },
+            {
+                "word": "doch",
+                "start": 81.45999908447266,
+                "end": 81.5199966430664
+            },
+            {
+                "word": "ein",
+                "start": 81.5199966430664,
+                "end": 81.68000030517578
+            },
+            {
+                "word": "Demut.",
+                "start": 81.68000030517578,
+                "end": 82.08000183105469
+            },
+            {
+                "word": "Das",
+                "start": 82.16000366210938,
+                "end": 82.26000213623047
+            },
+            {
+                "word": "ist",
+                "start": 82.26000213623047,
+                "end": 82.36000061035156
+            },
+            {
+                "word": "doch",
+                "start": 82.36000061035156,
+                "end": 82.54000091552734
+            },
+            {
+                "word": "zutiefst",
+                "start": 82.54000091552734,
+                "end": 82.9800033569336
+            },
+            {
+                "word": "christlich.",
+                "start": 82.9800033569336,
+                "end": 83.63999633789062
+            }
+        ],
+        "translationEn": "Thank you is a form of humility. That is deeply Christian.",
+        "translationVi": "Cảm ơn là một sự khiêm tốn. Điều đó thật sự rất Kitô giáo."
+    },
+    {
+        "text": "Das kann man doch jetzt gerade kurz vor Weihnachten,",
+        "start": 83.23999633789063,
+        "end": 85.52000122070312,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 83.23999633789063,
+                "end": 83.5199966430664
+            },
+            {
+                "word": "kann",
+                "start": 83.5199966430664,
+                "end": 83.66000366210938
+            },
+            {
+                "word": "man",
+                "start": 83.66000366210938,
+                "end": 83.73999786376953
+            },
+            {
+                "word": "doch",
+                "start": 83.73999786376953,
+                "end": 83.87999725341797
+            },
+            {
+                "word": "jetzt",
+                "start": 83.87999725341797,
+                "end": 84.08000183105469
+            },
+            {
+                "word": "gerade",
+                "start": 84.08000183105469,
+                "end": 84.30000305175781
+            },
+            {
+                "word": "kurz",
+                "start": 84.30000305175781,
+                "end": 84.68000030517578
+            },
+            {
+                "word": "vor",
+                "start": 84.68000030517578,
+                "end": 84.81999969482422
+            },
+            {
+                "word": "Weihnachten,",
+                "start": 84.81999969482422,
+                "end": 85.52000122070312
+            }
+        ],
+        "translationEn": "You can do that just before Christmas now.",
+        "translationVi": "Điều đó thật sự có thể ngay trước Giáng sinh,"
+    },
+    {
+        "text": "zum Fest der Liebe, jetzt einfach mal machen.",
+        "start": 85.12000122070313,
+        "end": 87.03999786376953,
+        "wordTimings": [
+            {
+                "word": "zum",
+                "start": 85.12000122070313,
+                "end": 85.37999725341797
+            },
+            {
+                "word": "Fest",
+                "start": 85.37999725341797,
+                "end": 85.63999938964844
+            },
+            {
+                "word": "der",
+                "start": 85.63999938964844,
+                "end": 85.76000213623047
+            },
+            {
+                "word": "Liebe,",
+                "start": 85.76000213623047,
+                "end": 85.94000244140625
+            },
+            {
+                "word": "jetzt",
+                "start": 85.94000244140625,
+                "end": 86.13999938964844
+            },
+            {
+                "word": "einfach",
+                "start": 86.13999938964844,
+                "end": 86.31999969482422
+            },
+            {
+                "word": "mal",
+                "start": 86.31999969482422,
+                "end": 86.54000091552734
+            },
+            {
+                "word": "machen.",
+                "start": 86.54000091552734,
+                "end": 87.03999786376953
+            }
+        ],
+        "translationEn": "For the festival of love, just go ahead and do it.",
+        "translationVi": "Nhân dịp lễ tình yêu, bây giờ hãy cứ làm đi."
+    },
+    {
+        "text": "Einfach mal sagen: Danke von Herzen. Danke, Robert, von Herzen,",
+        "start": 87.20000305175782,
+        "end": 91.49999694824218,
+        "wordTimings": [
+            {
+                "word": "Einfach",
+                "start": 87.20000305175782,
+                "end": 87.37999725341797
+            },
+            {
+                "word": "mal",
+                "start": 87.37999725341797,
+                "end": 87.81999969482422
+            },
+            {
+                "word": "sagen:",
+                "start": 87.81999969482422,
+                "end": 87.91999816894531
+            },
+            {
+                "word": "Danke",
+                "start": 88.16000366210938,
+                "end": 88.26000213623047
+            },
+            {
+                "word": "von",
+                "start": 88.26000213623047,
+                "end": 88.5
+            },
+            {
+                "word": "Herzen.",
+                "start": 88.5,
+                "end": 89.55999755859375
+            },
+            {
+                "word": "Danke,",
+                "start": 90.19999694824219,
+                "end": 90.30000305175781
+            },
+            {
+                "word": "Robert,",
+                "start": 90.54000091552734,
+                "end": 90.55999755859375
+            },
+            {
+                "word": "von",
+                "start": 90.58000183105469,
+                "end": 90.80000305175781
+            },
+            {
+                "word": "Herzen,",
+                "start": 90.80000305175781,
+                "end": 91.49999694824218
+            }
+        ],
+        "translationEn": "Simply say: Thank you from the heart. Thank you, Robert, from the heart.",
+        "translationVi": "Chỉ đơn giản nói: Cảm ơn từ trái tim. Cảm ơn, Robert, từ trái tim."
+    },
+    {
+        "text": "dass du dich aus der Politik verabschiedet hast.",
+        "start": 91.53999938964844,
+        "end": 93.48000030517578,
+        "wordTimings": [
+            {
+                "word": "dass",
+                "start": 91.53999938964844,
+                "end": 91.72000122070312
+            },
+            {
+                "word": "du",
+                "start": 91.72000122070312,
+                "end": 91.83999633789062
+            },
+            {
+                "word": "dich",
+                "start": 91.83999633789062,
+                "end": 91.95999908447266
+            },
+            {
+                "word": "aus",
+                "start": 91.95999908447266,
+                "end": 92.0999984741211
+            },
+            {
+                "word": "der",
+                "start": 92.0999984741211,
+                "end": 92.23999786376953
+            },
+            {
+                "word": "Politik",
+                "start": 92.23999786376953,
+                "end": 92.4800033569336
+            },
+            {
+                "word": "verabschiedet",
+                "start": 92.4800033569336,
+                "end": 93
+            },
+            {
+                "word": "hast.",
+                "start": 93,
+                "end": 93.48000030517578
+            }
+        ],
+        "translationEn": "that you have said goodbye to politics.",
+        "translationVi": "rằng bạn đã rời bỏ chính trị."
+    },
+    {
+        "text": "Das wird nichts mehr. Warum soll jetzt also der Investitionsbooster funktionieren?",
+        "start": 93.9800018310547,
+        "end": 99.67999725341797,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 93.9800018310547,
+                "end": 94.13999938964844
+            },
+            {
+                "word": "wird",
+                "start": 94.13999938964844,
+                "end": 94.31999969482422
+            },
+            {
+                "word": "nichts",
+                "start": 94.31999969482422,
+                "end": 94.5
+            },
+            {
+                "word": "mehr.",
+                "start": 94.5,
+                "end": 94.69999694824219
+            },
+            {
+                "word": "Warum",
+                "start": 95.41999816894531,
+                "end": 95.81999969482422
+            },
+            {
+                "word": "soll",
+                "start": 95.81999969482422,
+                "end": 96.12000274658203
+            },
+            {
+                "word": "jetzt",
+                "start": 96.12000274658203,
+                "end": 96.4000015258789
+            },
+            {
+                "word": "also",
+                "start": 96.4000015258789,
+                "end": 96.9800033569336
+            },
+            {
+                "word": "der",
+                "start": 96.9800033569336,
+                "end": 97.4000015258789
+            },
+            {
+                "word": "Investitionsbooster",
+                "start": 97.4000015258789,
+                "end": 98.44000244140625
+            },
+            {
+                "word": "funktionieren?",
+                "start": 98.44000244140625,
+                "end": 99.67999725341797
+            }
+        ],
+        "translationEn": "That's not going to work anymore. So why should the investment booster work now?",
+        "translationVi": "Điều đó sẽ không xảy ra nữa. Tại sao bây giờ thì động lực đầu tư lại có thể hoạt động?"
+    },
+    {
+        "text": "Und bei Robert Habeck hat er nicht funktioniert,",
+        "start": 99.35999908447266,
+        "end": 101.34000091552734,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 99.35999908447266,
+                "end": 99.5999984741211
+            },
+            {
+                "word": "bei",
+                "start": 99.5999984741211,
+                "end": 99.72000122070312
+            },
+            {
+                "word": "Robert",
+                "start": 99.72000122070312,
+                "end": 99.95999908447266
+            },
+            {
+                "word": "Habeck",
+                "start": 99.95999908447266,
+                "end": 100.18000030517578
+            },
+            {
+                "word": "hat",
+                "start": 100.18000030517578,
+                "end": 100.36000061035156
+            },
+            {
+                "word": "er",
+                "start": 100.36000061035156,
+                "end": 100.36000061035156
+            },
+            {
+                "word": "nicht",
+                "start": 100.36000061035156,
+                "end": 100.54000091552734
+            },
+            {
+                "word": "funktioniert,",
+                "start": 100.54000091552734,
+                "end": 101.34000091552734
+            }
+        ],
+        "translationEn": "And it didn't work with Robert Habeck.",
+        "translationVi": "Và với Robert Habeck, nó đã không hoạt động."
+    },
+    {
+        "text": "obwohl er ja die gleiche Idee hat. Es behaupten Sie,",
+        "start": 101.84000244140626,
+        "end": 104.7000015258789,
+        "wordTimings": [
+            {
+                "word": "obwohl",
+                "start": 101.84000244140626,
+                "end": 102.13999938964844
+            },
+            {
+                "word": "er",
+                "start": 102.13999938964844,
+                "end": 102.22000122070312
+            },
+            {
+                "word": "ja",
+                "start": 102.22000122070312,
+                "end": 102.37999725341797
+            },
+            {
+                "word": "die",
+                "start": 102.37999725341797,
+                "end": 102.45999908447266
+            },
+            {
+                "word": "gleiche",
+                "start": 102.45999908447266,
+                "end": 102.80000305175781
+            },
+            {
+                "word": "Idee",
+                "start": 102.80000305175781,
+                "end": 102.80000305175781
+            },
+            {
+                "word": "hat.",
+                "start": 102.80000305175781,
+                "end": 103.05999755859375
+            },
+            {
+                "word": "Es",
+                "start": 103.62000274658203,
+                "end": 103.9800033569336
+            },
+            {
+                "word": "behaupten",
+                "start": 103.9800033569336,
+                "end": 104.22000122070312
+            },
+            {
+                "word": "Sie,",
+                "start": 104.22000122070312,
+                "end": 104.7000015258789
+            }
+        ],
+        "translationEn": "although he has the same idea. You claim that,",
+        "translationVi": "mặc dù anh ta cũng có cùng một ý tưởng. Họ khẳng định rằng,"
+    },
+    {
+        "text": "dass es genau die gleiche Idee ist. Wir sagen natürlich,",
+        "start": 104.44000091552735,
+        "end": 107.74000244140625,
+        "wordTimings": [
+            {
+                "word": "dass",
+                "start": 104.44000091552735,
+                "end": 104.55999755859375
+            },
+            {
+                "word": "es",
+                "start": 104.55999755859375,
+                "end": 104.73999786376953
+            },
+            {
+                "word": "genau",
+                "start": 104.73999786376953,
+                "end": 104.94000244140625
+            },
+            {
+                "word": "die",
+                "start": 104.94000244140625,
+                "end": 105.13999938964844
+            },
+            {
+                "word": "gleiche",
+                "start": 105.13999938964844,
+                "end": 105.44000244140625
+            },
+            {
+                "word": "Idee",
+                "start": 105.44000244140625,
+                "end": 105.55999755859375
+            },
+            {
+                "word": "ist.",
+                "start": 105.55999755859375,
+                "end": 105.87999725341797
+            },
+            {
+                "word": "Wir",
+                "start": 106.58000183105469,
+                "end": 106.83999633789062
+            },
+            {
+                "word": "sagen",
+                "start": 106.83999633789062,
+                "end": 107.0199966430664
+            },
+            {
+                "word": "natürlich,",
+                "start": 107.0199966430664,
+                "end": 107.74000244140625
+            }
+        ],
+        "translationEn": "that it is exactly the same idea. We say, of course,",
+        "translationVi": "rằng đó chính là cùng một ý tưởng. Chúng tôi nói rõ ràng,"
+    },
+    {
+        "text": "dass das unsere Politik ist, unsere Ideen sind",
+        "start": 107.4999984741211,
+        "end": 110.03999786376953,
+        "wordTimings": [
+            {
+                "word": "dass",
+                "start": 107.4999984741211,
+                "end": 107.62000274658203
+            },
+            {
+                "word": "das",
+                "start": 107.62000274658203,
+                "end": 107.9000015258789
+            },
+            {
+                "word": "unsere",
+                "start": 107.9000015258789,
+                "end": 108.05999755859375
+            },
+            {
+                "word": "Politik",
+                "start": 108.05999755859375,
+                "end": 108.5199966430664
+            },
+            {
+                "word": "ist,",
+                "start": 108.5199966430664,
+                "end": 108.73999786376953
+            },
+            {
+                "word": "unsere",
+                "start": 108.9000015258789,
+                "end": 109
+            },
+            {
+                "word": "Ideen",
+                "start": 109,
+                "end": 109.41999816894531
+            },
+            {
+                "word": "sind",
+                "start": 109.41999816894531,
+                "end": 110.03999786376953
+            }
+        ],
+        "translationEn": "that this is our policy, our ideas are",
+        "translationVi": "rằng đó là chính sách của chúng tôi, đó là ý tưởng của chúng tôi."
+    },
+    {
+        "text": "und dass wir die Gemeinsamkeit mit der SPD auch zum Erfolg führen werden.",
+        "start": 109.63999786376954,
+        "end": 113.03999786376953,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 109.63999786376954,
+                "end": 109.87999725341797
+            },
+            {
+                "word": "dass",
+                "start": 109.87999725341797,
+                "end": 110.0999984741211
+            },
+            {
+                "word": "wir",
+                "start": 110.0999984741211,
+                "end": 110.27999877929688
+            },
+            {
+                "word": "die",
+                "start": 110.27999877929688,
+                "end": 110.44000244140625
+            },
+            {
+                "word": "Gemeinsamkeit",
+                "start": 110.44000244140625,
+                "end": 110.91999816894531
+            },
+            {
+                "word": "mit",
+                "start": 110.91999816894531,
+                "end": 111.13999938964844
+            },
+            {
+                "word": "der",
+                "start": 111.13999938964844,
+                "end": 111.26000213623047
+            },
+            {
+                "word": "SPD",
+                "start": 111.26000213623047,
+                "end": 111.55999755859375
+            },
+            {
+                "word": "auch",
+                "start": 111.55999755859375,
+                "end": 111.81999969482422
+            },
+            {
+                "word": "zum",
+                "start": 111.81999969482422,
+                "end": 111.9800033569336
+            },
+            {
+                "word": "Erfolg",
+                "start": 111.9800033569336,
+                "end": 112.22000122070312
+            },
+            {
+                "word": "führen",
+                "start": 112.22000122070312,
+                "end": 112.4800033569336
+            },
+            {
+                "word": "werden.",
+                "start": 112.4800033569336,
+                "end": 113.03999786376953
+            }
+        ],
+        "translationEn": "and that we will also lead the commonality with the SPD to success.",
+        "translationVi": "và rằng chúng tôi sẽ đưa sự chung tay với SPD đến thành công."
+    },
+    {
+        "text": "Ja, ja, ganz geschickt eigentlich. Was von Robert Habecks Ideen",
+        "start": 112.63999786376954,
+        "end": 124.03999786376953,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 112.63999786376954,
+                "end": 113.05999755859375
+            },
+            {
+                "word": "ja,",
+                "start": 113.30000305175781,
+                "end": 113.4800033569336
+            },
+            {
+                "word": "ganz",
+                "start": 113.68000030517578,
+                "end": 113.91999816894531
+            },
+            {
+                "word": "geschickt",
+                "start": 113.91999816894531,
+                "end": 114.22000122070312
+            },
+            {
+                "word": "eigentlich.",
+                "start": 114.22000122070312,
+                "end": 114.72000122070312
+            },
+            {
+                "word": "Was",
+                "start": 121.58000183105469,
+                "end": 122.26000213623047
+            },
+            {
+                "word": "von",
+                "start": 122.26000213623047,
+                "end": 122.5
+            },
+            {
+                "word": "Robert",
+                "start": 122.5,
+                "end": 122.86000061035156
+            },
+            {
+                "word": "Habecks",
+                "start": 122.86000061035156,
+                "end": 123.31999969482422
+            },
+            {
+                "word": "Ideen",
+                "start": 123.31999969482422,
+                "end": 124.03999786376953
+            }
+        ],
+        "translationEn": "Yes, yes, quite clever actually. What about Robert Habeck's ideas?",
+        "translationVi": "Vâng, vâng, thực sự rất khéo léo. Những gì từ ý tưởng của Robert Habeck."
+    },
+    {
+        "text": "ist Ihre Lieblingsidee? Wer war das jetzt nochmal?",
+        "start": 123.63999786376954,
+        "end": 127.53999786376953,
+        "wordTimings": [
+            {
+                "word": "ist",
+                "start": 123.63999786376954,
+                "end": 123.95999908447266
+            },
+            {
+                "word": "Ihre",
+                "start": 123.95999908447266,
+                "end": 124.13999938964844
+            },
+            {
+                "word": "Lieblingsidee?",
+                "start": 124.13999938964844,
+                "end": 124.73999786376953
+            },
+            {
+                "word": "Wer",
+                "start": 125.76000213623047,
+                "end": 126.27999877929688
+            },
+            {
+                "word": "war",
+                "start": 126.27999877929688,
+                "end": 126.5
+            },
+            {
+                "word": "das",
+                "start": 126.5,
+                "end": 126.63999938964844
+            },
+            {
+                "word": "jetzt",
+                "start": 126.63999938964844,
+                "end": 126.91999816894531
+            },
+            {
+                "word": "nochmal?",
+                "start": 126.91999816894531,
+                "end": 127.53999786376953
+            }
+        ],
+        "translationEn": "What is your favorite idea? Who was that again?",
+        "translationVi": "Ý tưởng yêu thích của bạn là gì? Ai đã là người đó nhỉ?"
+    },
+    {
+        "text": "Sie erinnern sich doch an ihren Man Crush. Nee, ich überlege gerade,",
+        "start": 127.5999969482422,
+        "end": 132.66000061035157,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 127.5999969482422,
+                "end": 128.3800048828125
+            },
+            {
+                "word": "erinnern",
+                "start": 128.3800048828125,
+                "end": 128.67999267578125
+            },
+            {
+                "word": "sich",
+                "start": 128.67999267578125,
+                "end": 128.77999877929688
+            },
+            {
+                "word": "doch",
+                "start": 128.77999877929688,
+                "end": 128.94000244140625
+            },
+            {
+                "word": "an",
+                "start": 128.94000244140625,
+                "end": 129.02000427246094
+            },
+            {
+                "word": "ihren",
+                "start": 129.02000427246094,
+                "end": 129.16000366210938
+            },
+            {
+                "word": "Man",
+                "start": 129.16000366210938,
+                "end": 129.52000427246094
+            },
+            {
+                "word": "Crush.",
+                "start": 129.52000427246094,
+                "end": 129.82000732421875
+            },
+            {
+                "word": "Nee,",
+                "start": 130.39999389648438,
+                "end": 130.77999877929688
+            },
+            {
+                "word": "ich",
+                "start": 130.89999389648438,
+                "end": 131.4199981689453
+            },
+            {
+                "word": "überlege",
+                "start": 131.4199981689453,
+                "end": 131.94000244140625
+            },
+            {
+                "word": "gerade,",
+                "start": 131.94000244140625,
+                "end": 132.66000061035157
+            }
+        ],
+        "translationEn": "You remember her man crush, right? No, I'm just thinking.",
+        "translationVi": "Bạn vẫn nhớ về người mà bạn thích chứ? Không, tôi đang suy nghĩ một chút."
+    },
+    {
+        "text": "wer war die? Das magst du, das? Nee, das ist dieser Typ,",
+        "start": 132.73999633789063,
+        "end": 141.85999755859376,
+        "wordTimings": [
+            {
+                "word": "wer",
+                "start": 132.73999633789063,
+                "end": 132.83999633789062
+            },
+            {
+                "word": "war",
+                "start": 132.83999633789062,
+                "end": 132.83999633789062
+            },
+            {
+                "word": "die?",
+                "start": 132.83999633789062,
+                "end": 132.9199981689453
+            },
+            {
+                "word": "Das",
+                "start": 132.9199981689453,
+                "end": 133.16000366210938
+            },
+            {
+                "word": "magst",
+                "start": 136.27999877929688,
+                "end": 136.9600067138672
+            },
+            {
+                "word": "du,",
+                "start": 136.9600067138672,
+                "end": 137.05999755859375
+            },
+            {
+                "word": "das?",
+                "start": 137.05999755859375,
+                "end": 137.13999938964844
+            },
+            {
+                "word": "Nee,",
+                "start": 137.6999969482422,
+                "end": 138.27999877929688
+            },
+            {
+                "word": "das",
+                "start": 140.4600067138672,
+                "end": 140.97999572753906
+            },
+            {
+                "word": "ist",
+                "start": 140.97999572753906,
+                "end": 141.0800018310547
+            },
+            {
+                "word": "dieser",
+                "start": 141.0800018310547,
+                "end": 141.32000732421875
+            },
+            {
+                "word": "Typ,",
+                "start": 141.32000732421875,
+                "end": 141.85999755859376
+            }
+        ],
+        "translationEn": "Who was that? You like that? No, that's this guy,",
+        "translationVi": "Ai đó? Bạn thích điều đó à? Không, đó là người này,"
+    },
+    {
+        "text": "in dem die nur so ein bisschen haben wie sonst so ein Lattensteak.",
+        "start": 141.73999633789063,
+        "end": 145.3800018310547,
+        "wordTimings": [
+            {
+                "word": "in",
+                "start": 141.73999633789063,
+                "end": 141.83999633789062
+            },
+            {
+                "word": "dem",
+                "start": 141.83999633789062,
+                "end": 141.83999633789062
+            },
+            {
+                "word": "die",
+                "start": 141.83999633789062,
+                "end": 142.05999755859375
+            },
+            {
+                "word": "nur",
+                "start": 142.05999755859375,
+                "end": 142.8000030517578
+            },
+            {
+                "word": "so",
+                "start": 142.8000030517578,
+                "end": 142.94000244140625
+            },
+            {
+                "word": "ein",
+                "start": 142.94000244140625,
+                "end": 143.0399932861328
+            },
+            {
+                "word": "bisschen",
+                "start": 143.0399932861328,
+                "end": 143.24000549316406
+            },
+            {
+                "word": "haben",
+                "start": 143.24000549316406,
+                "end": 143.6199951171875
+            },
+            {
+                "word": "wie",
+                "start": 143.74000549316406,
+                "end": 143.77999877929688
+            },
+            {
+                "word": "sonst",
+                "start": 143.77999877929688,
+                "end": 144.0399932861328
+            },
+            {
+                "word": "so",
+                "start": 144.0399932861328,
+                "end": 144.1999969482422
+            },
+            {
+                "word": "ein",
+                "start": 144.1999969482422,
+                "end": 144.33999633789062
+            },
+            {
+                "word": "Lattensteak.",
+                "start": 144.33999633789062,
+                "end": 145.3800018310547
+            }
+        ],
+        "translationEn": "in which they only have a little bit like a regular steak.",
+        "translationVi": "trong đó chỉ có một chút như một miếng thịt nướng thông thường."
+    },
+    {
+        "text": "Kann man nicht verstehen, dass jemand so gut ist wie ein Lattensteak.",
+        "start": 146.50000610351563,
+        "end": 149.52000122070314,
+        "wordTimings": [
+            {
+                "word": "Kann",
+                "start": 146.50000610351563,
+                "end": 147.1199951171875
+            },
+            {
+                "word": "man",
+                "start": 147.1199951171875,
+                "end": 147.25999450683594
+            },
+            {
+                "word": "nicht",
+                "start": 147.25999450683594,
+                "end": 147.44000244140625
+            },
+            {
+                "word": "verstehen,",
+                "start": 147.44000244140625,
+                "end": 147.6999969482422
+            },
+            {
+                "word": "dass",
+                "start": 147.77999877929688,
+                "end": 147.94000244140625
+            },
+            {
+                "word": "jemand",
+                "start": 147.94000244140625,
+                "end": 148.1199951171875
+            },
+            {
+                "word": "so",
+                "start": 148.1199951171875,
+                "end": 148.3800048828125
+            },
+            {
+                "word": "gut",
+                "start": 148.3800048828125,
+                "end": 148.52000427246094
+            },
+            {
+                "word": "ist",
+                "start": 148.52000427246094,
+                "end": 148.75999450683594
+            },
+            {
+                "word": "wie",
+                "start": 148.75999450683594,
+                "end": 148.75999450683594
+            },
+            {
+                "word": "ein",
+                "start": 148.75999450683594,
+                "end": 148.94000244140625
+            },
+            {
+                "word": "Lattensteak.",
+                "start": 148.94000244140625,
+                "end": 149.52000122070314
+            }
+        ],
+        "translationEn": "One cannot understand that someone is as good as a wooden steak.",
+        "translationVi": "Không thể hiểu rằng ai đó lại tốt như một miếng thịt bò nướng."
+    },
+    {
+        "text": "Danke, Robert! Oh echt, Sie sind der Erste,",
+        "start": 150.3600067138672,
+        "end": 154.4999969482422,
+        "wordTimings": [
+            {
+                "word": "Danke,",
+                "start": 150.3600067138672,
+                "end": 150.97999572753906
+            },
+            {
+                "word": "Robert!",
+                "start": 151.16000366210938,
+                "end": 151.44000244140625
+            },
+            {
+                "word": "Oh",
+                "start": 151.82000732421875,
+                "end": 152.22000122070312
+            },
+            {
+                "word": "echt,",
+                "start": 152.22000122070312,
+                "end": 152.39999389648438
+            },
+            {
+                "word": "Sie",
+                "start": 153.27999877929688,
+                "end": 153.8000030517578
+            },
+            {
+                "word": "sind",
+                "start": 153.8000030517578,
+                "end": 153.8000030517578
+            },
+            {
+                "word": "der",
+                "start": 153.8000030517578,
+                "end": 153.97999572753906
+            },
+            {
+                "word": "Erste,",
+                "start": 153.97999572753906,
+                "end": 154.4999969482422
+            }
+        ],
+        "translationEn": "Thank you, Robert! Oh really, you are the first,",
+        "translationVi": "Cảm ơn, Robert! Ôi thật, bạn là người đầu tiên,"
+    },
+    {
+        "text": "der das jetzt wirklich über die Lippen gebracht hat.",
+        "start": 154.5199951171875,
+        "end": 156.82000427246095,
+        "wordTimings": [
+            {
+                "word": "der",
+                "start": 154.5199951171875,
+                "end": 154.72000122070312
+            },
+            {
+                "word": "das",
+                "start": 154.72000122070312,
+                "end": 154.94000244140625
+            },
+            {
+                "word": "jetzt",
+                "start": 154.94000244140625,
+                "end": 155.05999755859375
+            },
+            {
+                "word": "wirklich",
+                "start": 155.05999755859375,
+                "end": 155.33999633789062
+            },
+            {
+                "word": "über",
+                "start": 155.33999633789062,
+                "end": 155.4199981689453
+            },
+            {
+                "word": "die",
+                "start": 155.4199981689453,
+                "end": 155.67999267578125
+            },
+            {
+                "word": "Lippen",
+                "start": 155.67999267578125,
+                "end": 155.75999450683594
+            },
+            {
+                "word": "gebracht",
+                "start": 155.75999450683594,
+                "end": 156.0800018310547
+            },
+            {
+                "word": "hat.",
+                "start": 156.0800018310547,
+                "end": 156.82000427246095
+            }
+        ],
+        "translationEn": "who has really said that now.",
+        "translationVi": "người đã thực sự nói điều đó ra."
+    },
+    {
+        "text": "Ja, wirklich! Wollen Sie sich nochmal korrigieren?",
+        "start": 156.56000366210938,
+        "end": 159.2600067138672,
+        "wordTimings": [
+            {
+                "word": "Ja,",
+                "start": 156.56000366210938,
+                "end": 157.17999267578125
+            },
+            {
+                "word": "wirklich!",
+                "start": 157.3000030517578,
+                "end": 157.6199951171875
+            },
+            {
+                "word": "Wollen",
+                "start": 158.10000610351562,
+                "end": 158.17999267578125
+            },
+            {
+                "word": "Sie",
+                "start": 158.17999267578125,
+                "end": 158.27999877929688
+            },
+            {
+                "word": "sich",
+                "start": 158.27999877929688,
+                "end": 158.39999389648438
+            },
+            {
+                "word": "nochmal",
+                "start": 158.39999389648438,
+                "end": 158.63999938964844
+            },
+            {
+                "word": "korrigieren?",
+                "start": 158.63999938964844,
+                "end": 159.2600067138672
+            }
+        ],
+        "translationEn": "Yes, really! Would you like to correct yourself again?",
+        "translationVi": "Vâng, thật sự! Bạn có muốn sửa lại một lần nữa không?"
+    },
+    {
+        "text": "Nein, nein. Ich halte viel von einem friedlichen und freundlichen",
+        "start": 159.26000061035157,
+        "end": 165.6800048828125,
+        "wordTimings": [
+            {
+                "word": "Nein,",
+                "start": 159.26000061035157,
+                "end": 159.8800048828125
+            },
+            {
+                "word": "nein.",
+                "start": 160,
+                "end": 160.22000122070312
+            },
+            {
+                "word": "Ich",
+                "start": 161.66000366210938,
+                "end": 162.17999267578125
+            },
+            {
+                "word": "halte",
+                "start": 162.17999267578125,
+                "end": 162.63999938964844
+            },
+            {
+                "word": "viel",
+                "start": 162.63999938964844,
+                "end": 162.9199981689453
+            },
+            {
+                "word": "von",
+                "start": 162.9199981689453,
+                "end": 163.24000549316406
+            },
+            {
+                "word": "einem",
+                "start": 163.24000549316406,
+                "end": 163.6199951171875
+            },
+            {
+                "word": "friedlichen",
+                "start": 163.6199951171875,
+                "end": 164.05999755859375
+            },
+            {
+                "word": "und",
+                "start": 164.05999755859375,
+                "end": 164.82000732421875
+            },
+            {
+                "word": "freundlichen",
+                "start": 164.82000732421875,
+                "end": 165.6800048828125
+            }
+        ],
+        "translationEn": "No, no. I value a peaceful and friendly atmosphere a lot.",
+        "translationVi": "Không, không. Tôi rất coi trọng một môi trường hòa bình và thân thiện."
+    },
+    {
+        "text": "politischen Diskurs. Aber das ist die CSU jetzt gerade",
+        "start": 165.2800048828125,
+        "end": 169.9999969482422,
+        "wordTimings": [
+            {
+                "word": "politischen",
+                "start": 165.2800048828125,
+                "end": 166.27999877929688
+            },
+            {
+                "word": "Diskurs.",
+                "start": 166.27999877929688,
+                "end": 166.60000610351562
+            },
+            {
+                "word": "Aber",
+                "start": 167.82000732421875,
+                "end": 168.22000122070312
+            },
+            {
+                "word": "das",
+                "start": 168.22000122070312,
+                "end": 168.4600067138672
+            },
+            {
+                "word": "ist",
+                "start": 168.4600067138672,
+                "end": 168.5800018310547
+            },
+            {
+                "word": "die",
+                "start": 168.5800018310547,
+                "end": 168.74000549316406
+            },
+            {
+                "word": "CSU",
+                "start": 168.74000549316406,
+                "end": 169.24000549316406
+            },
+            {
+                "word": "jetzt",
+                "start": 169.24000549316406,
+                "end": 169.4600067138672
+            },
+            {
+                "word": "gerade",
+                "start": 169.4600067138672,
+                "end": 169.9999969482422
+            }
+        ],
+        "translationEn": "political discourse. But that is the CSU right now.",
+        "translationVi": "diễn ngôn chính trị. Nhưng đó chính là CSU bây giờ."
+    },
+    {
+        "text": "mit Markus Söder an der Spitze. Vielleicht ist es einfach auch",
+        "start": 169.81999816894532,
+        "end": 172.7600067138672,
+        "wordTimings": [
+            {
+                "word": "mit",
+                "start": 169.81999816894532,
+                "end": 170.1199951171875
+            },
+            {
+                "word": "Markus",
+                "start": 170.1199951171875,
+                "end": 170.4199981689453
+            },
+            {
+                "word": "Söder",
+                "start": 170.4199981689453,
+                "end": 170.66000366210938
+            },
+            {
+                "word": "an",
+                "start": 170.66000366210938,
+                "end": 171.16000366210938
+            },
+            {
+                "word": "der",
+                "start": 171.16000366210938,
+                "end": 171.16000366210938
+            },
+            {
+                "word": "Spitze.",
+                "start": 171.16000366210938,
+                "end": 171.3800048828125
+            },
+            {
+                "word": "Vielleicht",
+                "start": 171.9600067138672,
+                "end": 171.9600067138672
+            },
+            {
+                "word": "ist",
+                "start": 171.9600067138672,
+                "end": 172.1199951171875
+            },
+            {
+                "word": "es",
+                "start": 172.1199951171875,
+                "end": 172.22000122070312
+            },
+            {
+                "word": "einfach",
+                "start": 172.22000122070312,
+                "end": 172.33999633789062
+            },
+            {
+                "word": "auch",
+                "start": 172.33999633789062,
+                "end": 172.7600067138672
+            }
+        ],
+        "translationEn": "with Markus Söder at the helm. Perhaps it is simply also",
+        "translationVi": "với Markus Söder đứng đầu. Có lẽ đơn giản cũng là"
+    },
+    {
+        "text": "die falsche Partei. Wollen wir zum Abschied noch einen",
+        "start": 172.3600067138672,
+        "end": 174.5799987792969,
+        "wordTimings": [
+            {
+                "word": "die",
+                "start": 172.3600067138672,
+                "end": 172.52000427246094
+            },
+            {
+                "word": "falsche",
+                "start": 172.52000427246094,
+                "end": 172.72000122070312
+            },
+            {
+                "word": "Partei.",
+                "start": 172.72000122070312,
+                "end": 173.16000366210938
+            },
+            {
+                "word": "Wollen",
+                "start": 173.47999572753906,
+                "end": 173.47999572753906
+            },
+            {
+                "word": "wir",
+                "start": 173.47999572753906,
+                "end": 173.6199951171875
+            },
+            {
+                "word": "zum",
+                "start": 173.6199951171875,
+                "end": 173.74000549316406
+            },
+            {
+                "word": "Abschied",
+                "start": 173.74000549316406,
+                "end": 174
+            },
+            {
+                "word": "noch",
+                "start": 174,
+                "end": 174.22000122070312
+            },
+            {
+                "word": "einen",
+                "start": 174.22000122070312,
+                "end": 174.5799987792969
+            }
+        ],
+        "translationEn": "the wrong party. Shall we have one last drink before we say goodbye?",
+        "translationVi": "đảng sai. Chúng ta có muốn uống một ly trước khi chia tay không?"
+    },
+    {
+        "text": "Ingwer Smoothie trinken auf Robert Habeck?",
+        "start": 174.17999877929688,
+        "end": 175.97999267578126,
+        "wordTimings": [
+            {
+                "word": "Ingwer",
+                "start": 174.17999877929688,
+                "end": 174.4600067138672
+            },
+            {
+                "word": "Smoothie",
+                "start": 174.4600067138672,
+                "end": 174.8000030517578
+            },
+            {
+                "word": "trinken",
+                "start": 174.8000030517578,
+                "end": 175.0800018310547
+            },
+            {
+                "word": "auf",
+                "start": 175.16000366210938,
+                "end": 175.3000030517578
+            },
+            {
+                "word": "Robert",
+                "start": 175.3000030517578,
+                "end": 175.6199951171875
+            },
+            {
+                "word": "Habeck?",
+                "start": 175.6199951171875,
+                "end": 175.97999267578126
+            }
+        ],
+        "translationEn": "Drink ginger smoothie on Robert Habeck?",
+        "translationVi": "Uống sinh tố gừng theo Robert Habeck?"
+    },
+    {
+        "text": "Auf Robert Habeck nicht, aber ich trinke gerne Ingwer Smoothie.",
+        "start": 176.06000366210938,
+        "end": 179.27999572753907,
+        "wordTimings": [
+            {
+                "word": "Auf",
+                "start": 176.06000366210938,
+                "end": 176.39999389648438
+            },
+            {
+                "word": "Robert",
+                "start": 176.39999389648438,
+                "end": 176.72000122070312
+            },
+            {
+                "word": "Habeck",
+                "start": 176.72000122070312,
+                "end": 176.94000244140625
+            },
+            {
+                "word": "nicht,",
+                "start": 176.94000244140625,
+                "end": 177.17999267578125
+            },
+            {
+                "word": "aber",
+                "start": 177.32000732421875,
+                "end": 177.5800018310547
+            },
+            {
+                "word": "ich",
+                "start": 177.5800018310547,
+                "end": 178.13999938964844
+            },
+            {
+                "word": "trinke",
+                "start": 178.13999938964844,
+                "end": 178.3000030517578
+            },
+            {
+                "word": "gerne",
+                "start": 178.3000030517578,
+                "end": 178.52000427246094
+            },
+            {
+                "word": "Ingwer",
+                "start": 178.52000427246094,
+                "end": 178.77999877929688
+            },
+            {
+                "word": "Smoothie.",
+                "start": 178.77999877929688,
+                "end": 179.27999572753907
+            }
+        ],
+        "translationEn": "Not on Robert Habeck, but I like to drink ginger smoothie.",
+        "translationVi": "Không phải Robert Habeck, nhưng tôi thích uống sinh tố gừng."
+    },
+    {
+        "text": "Die Union dankt dir, Robert, für deine Idee. Alles gut.",
+        "start": 179.93999328613282,
+        "end": 184.71999816894532,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 179.93999328613282,
+                "end": 180.16000366210938
+            },
+            {
+                "word": "Union",
+                "start": 180.16000366210938,
+                "end": 180.39999389648438
+            },
+            {
+                "word": "dankt",
+                "start": 180.39999389648438,
+                "end": 180.72000122070312
+            },
+            {
+                "word": "dir,",
+                "start": 180.72000122070312,
+                "end": 180.9199981689453
+            },
+            {
+                "word": "Robert,",
+                "start": 181.1199951171875,
+                "end": 181.1199951171875
+            },
+            {
+                "word": "für",
+                "start": 181.17999267578125,
+                "end": 181.27999877929688
+            },
+            {
+                "word": "deine",
+                "start": 181.27999877929688,
+                "end": 181.47999572753906
+            },
+            {
+                "word": "Idee.",
+                "start": 181.47999572753906,
+                "end": 181.77999877929688
+            },
+            {
+                "word": "Alles",
+                "start": 184.0399932861328,
+                "end": 184.13999938964844
+            },
+            {
+                "word": "gut.",
+                "start": 184.13999938964844,
+                "end": 184.71999816894532
+            }
+        ],
+        "translationEn": "The union thanks you, Robert, for your idea. All good.",
+        "translationVi": "Liên minh cảm ơn bạn, Robert, vì ý tưởng của bạn. Mọi thứ đều tốt."
+    },
+    {
+        "text": "Soll ich mir kurz deinen Rückensprung anmachen?",
+        "start": 184.5199951171875,
+        "end": 185.7600067138672,
+        "wordTimings": [
+            {
+                "word": "Soll",
+                "start": 184.5199951171875,
+                "end": 184.6199951171875
+            },
+            {
+                "word": "ich",
+                "start": 184.6199951171875,
+                "end": 184.6199951171875
+            },
+            {
+                "word": "mir",
+                "start": 184.6199951171875,
+                "end": 184.74000549316406
+            },
+            {
+                "word": "kurz",
+                "start": 184.74000549316406,
+                "end": 184.86000061035156
+            },
+            {
+                "word": "deinen",
+                "start": 184.86000061035156,
+                "end": 185
+            },
+            {
+                "word": "Rückensprung",
+                "start": 185,
+                "end": 185.33999633789062
+            },
+            {
+                "word": "anmachen?",
+                "start": 185.33999633789062,
+                "end": 185.7600067138672
+            }
+        ],
+        "translationEn": "Should I quickly turn on your back jump?",
+        "translationVi": "Tôi có nên bật lại cú nhảy lưng của bạn một chút không?"
+    },
+    {
+        "text": "Kann man das trinken? Das kann man trinken.",
+        "start": 187.20000305175782,
+        "end": 189.3800018310547,
+        "wordTimings": [
+            {
+                "word": "Kann",
+                "start": 187.20000305175782,
+                "end": 187.6999969482422
+            },
+            {
+                "word": "man",
+                "start": 187.6999969482422,
+                "end": 187.8000030517578
+            },
+            {
+                "word": "das",
+                "start": 187.8000030517578,
+                "end": 187.97999572753906
+            },
+            {
+                "word": "trinken?",
+                "start": 187.97999572753906,
+                "end": 188.27999877929688
+            },
+            {
+                "word": "Das",
+                "start": 188.3800048828125,
+                "end": 188.55999755859375
+            },
+            {
+                "word": "kann",
+                "start": 188.55999755859375,
+                "end": 188.67999267578125
+            },
+            {
+                "word": "man",
+                "start": 188.67999267578125,
+                "end": 188.86000061035156
+            },
+            {
+                "word": "trinken.",
+                "start": 188.86000061035156,
+                "end": 189.3800018310547
+            }
+        ],
+        "translationEn": "Can you drink that? You can drink that.",
+        "translationVi": "Có thể uống cái này không? Có thể uống được."
+    },
+    {
+        "text": "Nagellüse zuhalten und ein Weißbier trinken.",
+        "start": 189.0999969482422,
+        "end": 190.85999755859376,
+        "wordTimings": [
+            {
+                "word": "Nagellüse",
+                "start": 189.0999969482422,
+                "end": 189.52000427246094
+            },
+            {
+                "word": "zuhalten",
+                "start": 189.52000427246094,
+                "end": 189.89999389648438
+            },
+            {
+                "word": "und",
+                "start": 189.89999389648438,
+                "end": 190.0800018310547
+            },
+            {
+                "word": "ein",
+                "start": 190.0800018310547,
+                "end": 190.24000549316406
+            },
+            {
+                "word": "Weißbier",
+                "start": 190.24000549316406,
+                "end": 190.52000427246094
+            },
+            {
+                "word": "trinken.",
+                "start": 190.52000427246094,
+                "end": 190.85999755859376
+            }
+        ],
+        "translationEn": "Hold your nails and drink a wheat beer.",
+        "translationVi": "Bịt lỗ mũi và uống bia trắng."
+    },
+    {
+        "text": "Also, ich liebe den Robert Habeck. Da stirbst du ja dran.",
+        "start": 190.65999450683594,
+        "end": 195.4600036621094,
+        "wordTimings": [
+            {
+                "word": "Also,",
+                "start": 190.65999450683594,
+                "end": 191.16000366210938
+            },
+            {
+                "word": "ich",
+                "start": 191.47999572753906,
+                "end": 191.52000427246094
+            },
+            {
+                "word": "liebe",
+                "start": 191.52000427246094,
+                "end": 191.52000427246094
+            },
+            {
+                "word": "den",
+                "start": 191.52000427246094,
+                "end": 192.16000366210938
+            },
+            {
+                "word": "Robert",
+                "start": 192.16000366210938,
+                "end": 192.16000366210938
+            },
+            {
+                "word": "Habeck.",
+                "start": 192.16000366210938,
+                "end": 192.33999633789062
+            },
+            {
+                "word": "Da",
+                "start": 193.94000244140625,
+                "end": 194.33999633789062
+            },
+            {
+                "word": "stirbst",
+                "start": 194.33999633789062,
+                "end": 194.6199951171875
+            },
+            {
+                "word": "du",
+                "start": 194.6199951171875,
+                "end": 194.75999450683594
+            },
+            {
+                "word": "ja",
+                "start": 194.75999450683594,
+                "end": 194.97999572753906
+            },
+            {
+                "word": "dran.",
+                "start": 194.97999572753906,
+                "end": 195.4600036621094
+            }
+        ],
+        "translationEn": "Well, I love Robert Habeck. You'll die from it.",
+        "translationVi": "Vậy thì, tôi yêu Robert Habeck. Bạn sẽ chết vì điều đó."
+    },
+    {
+        "text": "Da schenkt man der CSU einmal Vitamine aus und dann dreht sie schon komplett durch.",
+        "start": 196.87999572753907,
+        "end": 201.43999938964845,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 196.87999572753907,
+                "end": 197.55999755859375
+            },
+            {
+                "word": "schenkt",
+                "start": 197.55999755859375,
+                "end": 197.83999633789062
+            },
+            {
+                "word": "man",
+                "start": 197.83999633789062,
+                "end": 198.16000366210938
+            },
+            {
+                "word": "der",
+                "start": 198.16000366210938,
+                "end": 198.4600067138672
+            },
+            {
+                "word": "CSU",
+                "start": 198.4600067138672,
+                "end": 198.75999450683594
+            },
+            {
+                "word": "einmal",
+                "start": 198.75999450683594,
+                "end": 199.0399932861328
+            },
+            {
+                "word": "Vitamine",
+                "start": 199.0399932861328,
+                "end": 199.5
+            },
+            {
+                "word": "aus",
+                "start": 199.5,
+                "end": 199.83999633789062
+            },
+            {
+                "word": "und",
+                "start": 199.83999633789062,
+                "end": 200
+            },
+            {
+                "word": "dann",
+                "start": 200,
+                "end": 200.22000122070312
+            },
+            {
+                "word": "dreht",
+                "start": 200.22000122070312,
+                "end": 200.33999633789062
+            },
+            {
+                "word": "sie",
+                "start": 200.33999633789062,
+                "end": 200.4199981689453
+            },
+            {
+                "word": "schon",
+                "start": 200.4199981689453,
+                "end": 200.60000610351562
+            },
+            {
+                "word": "komplett",
+                "start": 200.60000610351562,
+                "end": 200.9199981689453
+            },
+            {
+                "word": "durch.",
+                "start": 200.9199981689453,
+                "end": 201.43999938964845
+            }
+        ],
+        "translationEn": "You give the CSU vitamins once, and then they completely lose it.",
+        "translationVi": "Một lần người ta tặng cho CSU vitamin và rồi họ đã hoàn toàn phát điên."
+    }
+]
