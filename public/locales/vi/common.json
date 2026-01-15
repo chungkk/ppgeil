@@ -468,6 +468,30 @@
     "filter": "Lọc",
     "sort": "Sắp xếp"
   },
+  "unlock": {
+    "title": "Mở khóa bài học",
+    "lockedTitle": "Bài học bị khóa",
+    "unlockButton": "Mở khóa",
+    "cost": "Chi phí",
+    "balance": "Số dư",
+    "points": "Points",
+    "free": "Miễn phí!",
+    "freeUnlocksLeft": "Bạn còn {{count}} lượt mở khóa miễn phí",
+    "unlockFree": "Mở khóa miễn phí",
+    "unlockWithPoints": "Mở khóa ({{cost}} Points)",
+    "notEnoughPoints": "Bạn không đủ points. Hãy học thêm để kiếm points!",
+    "processing": "Đang xử lý...",
+    "success": "Đã mở khóa bài học!",
+    "error": "Không thể mở khóa bài học",
+    "loginRequired": "Vui lòng đăng nhập để mở khóa bài học",
+    "goBack": "Quay lại",
+    "welcome": {
+      "title": "Chào mừng bạn!",
+      "message": "Bạn có <strong>{{count}} lượt mở khóa miễn phí</strong> để chọn bài học yêu thích.",
+      "hint": "Hãy chọn bài học bạn muốn và bắt đầu học ngay!",
+      "button": "Chọn bài ngay"
+    }
+  },
   "categories": {
     "title": "Danh mục",
     "all": "Tất cả",

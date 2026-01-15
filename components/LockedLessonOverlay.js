@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import styles from '../styles/LockedLessonOverlay.module.css';
 
 const LockedLessonOverlay = ({ lesson, onUnlockSuccess }) => {
+  const { t } = useTranslation();
   const router = useRouter();
   const { user } = useAuth();
   const [loading, setLoading] = useState(false);
@@ -67,32 +69,32 @@ const LockedLessonOverlay = ({ lesson, onUnlockSuccess }) => {
           </svg>
         </div>
 
-        <h2 className={styles.title}>Bài học bị khóa</h2>
+        <h2 className={styles.title}>{t('unlock.lockedTitle')}</h2>
         <p className={styles.lessonTitle}>{lesson?.title || lesson?.displayTitle}</p>
 
         <div className={styles.infoBox}>
           {!user ? (
             <p className={styles.loginPrompt}>
-              Vui lòng đăng nhập để mở khóa bài học
+              {t('unlock.loginRequired')}
             </p>
           ) : canUnlockFree ? (
             <div className={styles.freeUnlock}>
               <span className={styles.freeIcon}>🎁</span>
               <div>
-                <strong>Miễn phí!</strong>
-                <p>Bạn còn {freeUnlocksRemaining} lượt mở khóa miễn phí</p>
+                <strong>{t('unlock.free')}</strong>
+                <p>{t('unlock.freeUnlocksLeft', { count: freeUnlocksRemaining })}</p>
               </div>
             </div>
           ) : (
             <div className={styles.pointsInfo}>
               <div className={styles.row}>
-                <span>Chi phí:</span>
-                <span className={styles.cost}>{unlockCost} Points</span>
+                <span>{t('unlock.cost')}:</span>
+                <span className={styles.cost}>{unlockCost} {t('unlock.points')}</span>
               </div>
               <div className={styles.row}>
-                <span>Số dư:</span>
+                <span>{t('unlock.balance')}:</span>
                 <span className={canUnlockWithPoints ? styles.sufficient : styles.insufficient}>
-                  {userPoints} Points
+                  {userPoints} {t('unlock.points')}
                 </span>
               </div>
             </div>
@@ -103,17 +105,17 @@ const LockedLessonOverlay = ({ lesson, onUnlockSuccess }) => {
 
         {user && !canUnlock && !canUnlockFree && (
           <p className={styles.warning}>
-            Bạn không đủ points. Hãy học thêm để kiếm points!
+            {t('unlock.notEnoughPoints')}
           </p>
         )}
 
         <div className={styles.actions}>
           <button className={styles.backBtn} onClick={handleBack} disabled={loading}>
-            ← Quay lại
+            ← {t('unlock.goBack')}
           </button>
           {!user ? (
             <button className={styles.loginBtn} onClick={() => router.push('/login')}>
-              Đăng nhập
+              {t('header.auth.login')}
             </button>
           ) : (
             <button 
@@ -121,7 +123,7 @@ const LockedLessonOverlay = ({ lesson, onUnlockSuccess }) => {
               onClick={handleUnlock}
               disabled={!canUnlock || loading}
             >
-              {loading ? 'Đang xử lý...' : canUnlockFree ? 'Mở khóa miễn phí' : `Mở khóa (${unlockCost} Points)`}
+              {loading ? t('unlock.processing') : canUnlockFree ? t('unlock.unlockFree') : t('unlock.unlockWithPoints', { cost: unlockCost })}
             </button>
           )}
         </div>

@@ -467,6 +467,30 @@
     "filter": "Filter",
     "sort": "Sort"
   },
+  "unlock": {
+    "title": "Unlock Lesson",
+    "lockedTitle": "Lesson Locked",
+    "unlockButton": "Unlock",
+    "cost": "Cost",
+    "balance": "Balance",
+    "points": "Points",
+    "free": "Free!",
+    "freeUnlocksLeft": "You have {{count}} free unlocks remaining",
+    "unlockFree": "Unlock for free",
+    "unlockWithPoints": "Unlock ({{cost}} Points)",
+    "notEnoughPoints": "You don't have enough points. Keep learning to earn more!",
+    "processing": "Processing...",
+    "success": "Lesson unlocked!",
+    "error": "Failed to unlock lesson",
+    "loginRequired": "Please log in to unlock lessons",
+    "goBack": "Go Back",
+    "welcome": {
+      "title": "Welcome!",
+      "message": "You have <strong>{{count}} free unlocks</strong> to choose your favorite lessons.",
+      "hint": "Pick a lesson and start learning now!",
+      "button": "Choose a lesson"
+    }
+  },
   "404": {
     "title": "Page Not Found",
     "subtitle": "Sorry, the page you're looking for doesn't exist or has been moved.",

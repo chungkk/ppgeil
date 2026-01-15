@@ -434,6 +434,30 @@
     "filter": "Filtern",
     "sort": "Sortieren"
   },
+  "unlock": {
+    "title": "Lektion freischalten",
+    "lockedTitle": "Lektion gesperrt",
+    "unlockButton": "Freischalten",
+    "cost": "Kosten",
+    "balance": "Guthaben",
+    "points": "Punkte",
+    "free": "Kostenlos!",
+    "freeUnlocksLeft": "Sie haben noch {{count}} kostenlose Freischaltungen",
+    "unlockFree": "Kostenlos freischalten",
+    "unlockWithPoints": "Freischalten ({{cost}} Punkte)",
+    "notEnoughPoints": "Sie haben nicht genug Punkte. Lernen Sie weiter, um Punkte zu sammeln!",
+    "processing": "Wird verarbeitet...",
+    "success": "Lektion freigeschaltet!",
+    "error": "Freischaltung fehlgeschlagen",
+    "loginRequired": "Bitte melden Sie sich an, um Lektionen freizuschalten",
+    "goBack": "Zurück",
+    "welcome": {
+      "title": "Willkommen!",
+      "message": "Sie haben <strong>{{count}} kostenlose Freischaltungen</strong>, um Ihre Lieblingslektionen auszuwählen.",
+      "hint": "Wählen Sie eine Lektion und beginnen Sie zu lernen!",
+      "button": "Lektion wählen"
+    }
+  },
   "404": {
     "title": "Seite nicht gefunden",
     "subtitle": "Entschuldigung, die gesuchte Seite existiert nicht oder wurde verschoben.",
