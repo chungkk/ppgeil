@@ -62,7 +62,7 @@ const LoginModal = ({ isOpen, onClose }) => {
 
       // Build Google OAuth URL directly - bypass NextAuth redirect
       const baseUrl = window.location.origin;
-      const clientId = '755356867011-atqs1b998cmiivtr7jql3e0cahq6kmqe.apps.googleusercontent.com';
+      const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '143809251678-d1ma431i7nmn5i8jdkl9n80ffdls8lt1.apps.googleusercontent.com';
 
       // Generate random state for CSRF protection
       const state = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
