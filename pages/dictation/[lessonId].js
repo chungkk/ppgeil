@@ -56,7 +56,7 @@ const DictationPage = () => {
   const [autoStop, setAutoStop] = useState(true);
 
   // Translation toggle
-  const [showTranslation, setShowTranslation] = useState(true);
+  const [showTranslation, setShowTranslation] = useState(false);
 
   // Dictionary popup
   const [showVocabPopup, setShowVocabPopup] = useState(false);

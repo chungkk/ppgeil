@@ -77,7 +77,7 @@ const DictationPageContent = () => {
   const [isTextHidden, setIsTextHidden] = useState(true);
   
   // Auto-stop video at end of sentence (similar to shadowing mode)
-  const [autoStop, setAutoStop] = useState(false);
+  const [autoStop, setAutoStop] = useState(true);
 
   // Learning mode: Always 'shadowing' - dictation mode removed
   const learningMode = 'shadowing';
