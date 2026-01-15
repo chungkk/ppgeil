@@ -8,6 +8,7 @@ import WordTooltip from '../../components/WordTooltip';
 import WordSuggestionPopup from '../../components/WordSuggestionPopup';
 import PointsAnimation from '../../components/PointsAnimation';
 import ProgressIndicator from '../../components/ProgressIndicator';
+import LockedLessonOverlay from '../../components/LockedLessonOverlay';
 
 // Dictation Components
 import {
@@ -3346,6 +3347,10 @@ const DictationPageContent = () => {
         />
       ))}
 
+      {/* Locked Lesson Overlay */}
+      {lesson?.isLocked && (
+        <LockedLessonOverlay lesson={lesson} />
+      )}
 
     </div>
   );

@@ -79,7 +79,7 @@ export default async function handler(req, res) {
       ]);
 
       // Add lock status to each lesson
-      const userUnlockedLessons = currentUser?.unlockedLessons || [];
+      const userUnlockedLessons = currentUser?.unlockedLessons ?? [];
       const isAdmin = currentUser?.role === 'admin';
       
       const lessonsWithLockStatus = lessons.filter(l => l && l._id).map(lesson => {
@@ -102,7 +102,7 @@ export default async function handler(req, res) {
         page,
         totalPages: Math.ceil(total / limit),
         userUnlockInfo: currentUser ? {
-          freeUnlocksRemaining: currentUser.freeUnlocksRemaining ?? 2,
+          freeUnlocksRemaining: currentUser.freeUnlocksRemaining ?? 2, // Default 2 for existing users
           unlockedCount: userUnlockedLessons.length,
           points: currentUser.points ?? 0
         } : null

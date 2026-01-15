@@ -1,0 +1,247 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.content {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  border: 3px solid var(--retro-border);
+  box-shadow: 8px 8px 0 var(--retro-shadow);
+}
+
+[data-theme="dark"] .content {
+  background: var(--retro-dark);
+  color: white;
+}
+
+.lockIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: var(--retro-coral);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--retro-border);
+}
+
+.lockIcon svg {
+  width: 45px;
+  height: 45px;
+  fill: white;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--retro-dark);
+}
+
+[data-theme="dark"] .title {
+  color: white;
+}
+
+.lessonTitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+[data-theme="dark"] .lessonTitle {
+  color: #aaa;
+}
+
+.infoBox {
+  background: var(--retro-cream);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid var(--retro-border);
+}
+
+[data-theme="dark"] .infoBox {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.loginPrompt {
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+}
+
+[data-theme="dark"] .loginPrompt {
+  color: #ccc;
+}
+
+.freeUnlock {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+}
+
+.freeIcon {
+  font-size: 36px;
+}
+
+.freeUnlock strong {
+  display: block;
+  font-size: 18px;
+  color: var(--retro-cyan);
+}
+
+.freeUnlock p {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0 0;
+}
+
+[data-theme="dark"] .freeUnlock p {
+  color: #aaa;
+}
+
+.pointsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.cost {
+  font-weight: 700;
+  color: var(--retro-coral);
+}
+
+.sufficient {
+  font-weight: 700;
+  color: var(--retro-cyan);
+}
+
+.insufficient {
+  font-weight: 700;
+  color: var(--retro-coral);
+}
+
+.warning {
+  color: var(--retro-coral);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.error {
+  background: #fee;
+  color: #c00;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.backBtn, .loginBtn, .unlockBtn {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid var(--retro-border);
+}
+
+.backBtn {
+  background: var(--retro-cream);
+  color: var(--retro-dark);
+}
+
+.backBtn:hover:not(:disabled) {
+  background: #e0e0e0;
+}
+
+.loginBtn {
+  background: var(--retro-purple);
+  color: white;
+}
+
+.loginBtn:hover {
+  opacity: 0.9;
+}
+
+.unlockBtn {
+  background: var(--retro-cyan);
+  color: var(--retro-dark);
+  box-shadow: 3px 3px 0 var(--retro-shadow);
+}
+
+.unlockBtn:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--retro-shadow);
+}
+
+.unlockBtn:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--retro-shadow);
+}
+
+.unlockBtn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.backBtn:disabled, .unlockBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .lockIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .lockIcon svg {
+    width: 38px;
+    height: 38px;
+  }
+}

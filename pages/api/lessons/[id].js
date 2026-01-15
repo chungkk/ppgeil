@@ -32,32 +32,19 @@ export default async function handler(req, res) {
       }
       
       const isAdmin = currentUser?.role === 'admin';
-      const userUnlockedLessons = currentUser?.unlockedLessons || [];
+      const userUnlockedLessons = currentUser?.unlockedLessons ?? [];
       const isUnlocked = isAdmin || 
                         lesson.isFreeLesson || 
                         userUnlockedLessons.includes(lesson.id);
       
-      // If locked, return limited info only
-      if (!isUnlocked) {
-        return res.status(200).json({
-          id: lesson.id,
-          title: lesson.title,
-          displayTitle: lesson.displayTitle,
-          description: lesson.description,
-          level: lesson.level,
-          category: lesson.category,
-          thumbnail: lesson.thumbnail,
-          isLocked: true,
-          unlockCost: 100,
-          userFreeUnlocks: currentUser?.freeUnlocksRemaining ?? 0,
-          userPoints: currentUser?.points ?? 0
-        });
-      }
-      
-      // Return full lesson data
+      // Return full lesson data with lock status
+      // Default to 2 free unlocks for existing users without this field
       return res.status(200).json({
         ...lesson.toObject(),
-        isLocked: false
+        isLocked: !isUnlocked,
+        unlockCost: 100,
+        userFreeUnlocks: currentUser ? (currentUser.freeUnlocksRemaining ?? 2) : 0,
+        userPoints: currentUser?.points ?? 0
       });
     } catch (error) {
       console.error('Get lesson error:', error);

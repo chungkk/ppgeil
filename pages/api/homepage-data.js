@@ -56,7 +56,7 @@ async function handler(req, res) {
         }
 
         // Get user unlock info for lock status
-        const userUnlockedLessons = req.user?.unlockedLessons || [];
+        const userUnlockedLessons = req.user?.unlockedLessons ?? [];
         const isAdmin = req.user?.role === 'admin';
 
         // Group lessons by category and limit per category
@@ -117,7 +117,7 @@ async function handler(req, res) {
             categories: filteredCategories,
             categoriesWithLessons,
             userUnlockInfo: req.user ? {
-                freeUnlocksRemaining: req.user.freeUnlocksRemaining ?? 2,
+                freeUnlocksRemaining: req.user.freeUnlocksRemaining ?? 2, // Default 2 for existing users
                 unlockedCount: userUnlockedLessons.length,
                 points: req.user.points ?? 0
             } : null

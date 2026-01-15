@@ -6,6 +6,7 @@ import LessonCard from '../components/LessonCard';
 import { SkeletonCard } from '../components/SkeletonLoader';
 import ModeSelectionPopup from '../components/ModeSelectionPopup';
 import UnlockModal from '../components/UnlockModal';
+import WelcomeUnlockPopup from '../components/WelcomeUnlockPopup';
 import { useAuth } from '../context/AuthContext';
 import { navigateWithLocale } from '../lib/navigation';
 
@@ -20,6 +21,7 @@ const HomePage = () => {
   const [unlockLesson, setUnlockLesson] = useState(null);
   const [unlockLoading, setUnlockLoading] = useState(false);
   const [userUnlockInfo, setUserUnlockInfo] = useState(null);
+  const [showWelcomePopup, setShowWelcomePopup] = useState(false);
   const router = useRouter();
   const { user } = useAuth();
 
@@ -38,6 +40,17 @@ const HomePage = () => {
       setCategories(data.categories || []);
       setCategoriesWithLessons(data.categoriesWithLessons || {});
       setUserUnlockInfo(data.userUnlockInfo || null);
+      
+      // Show welcome popup for new users (2 free unlocks, 0 unlocked lessons)
+      if (data.userUnlockInfo && 
+          data.userUnlockInfo.freeUnlocksRemaining === 2 && 
+          data.userUnlockInfo.unlockedCount === 0) {
+        const welcomeShown = localStorage.getItem('welcomeUnlockShown');
+        if (!welcomeShown) {
+          setShowWelcomePopup(true);
+          localStorage.setItem('welcomeUnlockShown', 'true');
+        }
+      }
     } catch (error) {
       console.error('Error fetching homepage data:', error);
     } finally {
@@ -51,12 +64,7 @@ const HomePage = () => {
   }, [fetchCategoriesWithLessons, user]);
 
   const handleLessonClick = (lesson) => {
-    // If lesson is locked, don't open it
-    if (lesson.isLocked) {
-      return;
-    }
-
-    // Increment view count
+    // Increment view count (allow even for locked - they'll see overlay)
     fetch(`/api/lessons/${lesson.id}/view`, {
       method: 'POST'
     }).catch(err => console.error('Error incrementing view count:', err));
@@ -230,6 +238,10 @@ const HomePage = () => {
           onClose={() => setUnlockLesson(null)}
           isLoading={unlockLoading}
         />
+      )}
+
+      {showWelcomePopup && (
+        <WelcomeUnlockPopup onClose={() => setShowWelcomePopup(false)} />
       )}
 
       <div className="main-container">

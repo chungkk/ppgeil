@@ -1,0 +1,136 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.popup {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  border: 3px solid var(--retro-border);
+  box-shadow: 8px 8px 0 var(--retro-shadow);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-theme="dark"] .popup {
+  background: var(--retro-dark);
+  color: white;
+}
+
+.giftIcon {
+  font-size: 60px;
+  margin-bottom: 16px;
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--retro-dark);
+}
+
+[data-theme="dark"] .title {
+  color: white;
+}
+
+.message {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .message {
+  color: #ddd;
+}
+
+.message strong {
+  color: var(--retro-cyan);
+  font-size: 20px;
+}
+
+.hint {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+[data-theme="dark"] .hint {
+  color: #aaa;
+}
+
+.button {
+  background: var(--retro-cyan);
+  color: var(--retro-dark);
+  border: 2px solid var(--retro-border);
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 4px 4px 0 var(--retro-shadow);
+}
+
+.button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-shadow);
+}
+
+.button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--retro-shadow);
+}
+
+@media (max-width: 480px) {
+  .popup {
+    padding: 30px 20px;
+  }
+
+  .giftIcon {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+}

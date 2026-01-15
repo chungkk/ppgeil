@@ -51,12 +51,16 @@
 - `pages/api/homepage-data.js` - Thêm lock status & userUnlockInfo
 
 ### Frontend
-- `components/LessonCard.js` - Thêm UI locked
-- `components/UnlockModal.js` - Component mới
+- `components/LessonCard.js` - Thêm UI locked (grayscale + lock icon)
+- `components/UnlockModal.js` - Popup xác nhận unlock (cho danh sách)
+- `components/LockedLessonOverlay.js` - Overlay full-screen trên lesson page
 - `styles/LessonCard.module.css` - Thêm styles locked
-- `styles/UnlockModal.module.css` - Styles mới
-- `pages/index.js` - Tích hợp UnlockModal
-- `pages/category/[slug].js` - Tích hợp UnlockModal
+- `styles/UnlockModal.module.css` - Styles popup
+- `styles/LockedLessonOverlay.module.css` - Styles overlay
+- `pages/index.js` - Tích hợp unlock flow
+- `pages/category/[slug].js` - Tích hợp unlock flow
+- `pages/shadowing/[lessonId].js` - Thêm LockedLessonOverlay
+- `pages/dictation/[lessonId].js` - Thêm LockedLessonOverlay
 - `pages/admin/dashboard/index.js` - Toggle FREE lesson
 
 ## Cấu trúc dữ liệu

@@ -6,6 +6,7 @@ import DictionaryPopup from '../../components/DictionaryPopup';
 import ProgressIndicator from '../../components/ProgressIndicator';
 import PointsAnimation from '../../components/PointsAnimation';
 import FlipCounter from '../../components/FlipCounter';
+import LockedLessonOverlay from '../../components/LockedLessonOverlay';
 
 import { DictationHeader, DictationSkeleton, TranscriptPanel, DictationVideoSection } from '../../components/dictation';
 
@@ -2016,6 +2017,11 @@ const DictationPage = () => {
           />
         ))
       }
+
+      {/* Locked Lesson Overlay */}
+      {lesson?.isLocked && (
+        <LockedLessonOverlay lesson={lesson} />
+      )}
     </>
   );
 };

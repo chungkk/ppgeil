@@ -76,9 +76,7 @@ const CategoryPage = () => {
   };
 
   const handleLessonClick = (lesson) => {
-    if (lesson.isLocked) return;
-
-    // Increment view count
+    // Increment view count (allow even for locked - they'll see overlay)
     fetch(`/api/lessons/${lesson.id}/view`, {
       method: 'POST'
     }).catch(err => console.error('Error incrementing view count:', err));
