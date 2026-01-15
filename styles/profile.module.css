@@ -65,8 +65,15 @@
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .pageSubtitle {
@@ -157,7 +164,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 2px);
   background-size: 30px 30px;
   opacity: 0.5;
 }
@@ -228,7 +235,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .premiumBadge {
@@ -740,6 +747,10 @@
   background: var(--retro-coral, #FF6B6B);
 }
 
+.quickActionIcon.statistics {
+  background: var(--retro-purple, #A855F7);
+}
+
 .quickActionContent {
   flex: 1;
   display: flex;
@@ -936,7 +947,7 @@
   .statsGrid {
     flex-wrap: wrap;
   }
-  
+
   .statCard {
     flex: 1 1 calc(50% - 4px);
     min-width: calc(50% - 4px);

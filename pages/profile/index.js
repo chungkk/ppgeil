@@ -235,185 +235,193 @@ function DashboardIndex() {
 
               {/* Content Grid */}
               <div className={styles.contentGrid}>
-            {/* Progress Section */}
-            <div className={styles.sectionCard}>
-              <div className={styles.sectionHeader}>
-                <h2 className={styles.sectionTitle}>
-                  <span>📊</span>
-                  Tiến độ học tập
-                </h2>
-                <Link href="/" className={styles.sectionAction}>
-                  Xem thêm bài học
-                  <span>→</span>
-                </Link>
-              </div>
-              <div className={styles.sectionBody}>
-                <div className={styles.progressOverview}>
-                  {lessonStats.withProgress === 0 ? (
-                    <div className={styles.emptyState}>
-                      <span className={styles.emptyStateIcon}>🚀</span>
-                      <h3 className={styles.emptyStateTitle}>Bắt đầu hành trình học tập!</h3>
-                      <p className={styles.emptyStateText}>
-                        Khám phá các bài học và nâng cao kỹ năng tiếng Đức của bạn ngay hôm nay.
-                      </p>
-                      <Link href="/" className={styles.startLearningBtn}>
-                        <span>📚</span>
-                        Khám phá bài học
+                {/* Progress Section */}
+                <div className={styles.sectionCard}>
+                  <div className={styles.sectionHeader}>
+                    <h2 className={styles.sectionTitle}>
+                      <span>📊</span>
+                      Tiến độ học tập
+                    </h2>
+                    <Link href="/" className={styles.sectionAction}>
+                      Xem thêm bài học
+                      <span>→</span>
+                    </Link>
+                  </div>
+                  <div className={styles.sectionBody}>
+                    <div className={styles.progressOverview}>
+                      {lessonStats.withProgress === 0 ? (
+                        <div className={styles.emptyState}>
+                          <span className={styles.emptyStateIcon}>🚀</span>
+                          <h3 className={styles.emptyStateTitle}>Bắt đầu hành trình học tập!</h3>
+                          <p className={styles.emptyStateText}>
+                            Khám phá các bài học và nâng cao kỹ năng tiếng Đức của bạn ngay hôm nay.
+                          </p>
+                          <Link href="/" className={styles.startLearningBtn}>
+                            <span>📚</span>
+                            Khám phá bài học
+                          </Link>
+                        </div>
+                      ) : (
+                        <>
+                          {/* Progress Summary */}
+                          <div className={styles.progressSummary}>
+                            <div className={styles.summaryItem}>
+                              <span className={styles.summaryValue}>{lessonStats.total}</span>
+                              <span className={styles.summaryLabel}>Tổng bài</span>
+                            </div>
+                            <div className={styles.summaryItem}>
+                              <span className={styles.summaryValue}>{lessonStats.progressPercent}%</span>
+                              <span className={styles.summaryLabel}>Tổng tiến độ</span>
+                            </div>
+                            <div className={styles.summaryItem}>
+                              <span className={styles.summaryValue}>{lessonStats.completed}</span>
+                              <span className={styles.summaryLabel}>Hoàn thành</span>
+                            </div>
+                          </div>
+
+                          {/* Progress List */}
+                          <div className={styles.progressList}>
+                            {lessonStats.sortedLessons.slice(0, 6).map((lesson) => {
+                              const progressPercent = calculateProgress(lesson.id);
+                              return (
+                                <div
+                                  key={lesson.id}
+                                  className={styles.progressItem}
+                                  onClick={() => navigateWithLocale(router, `/${lesson.id}`)}
+                                >
+                                  <div className={styles.progressItemIcon}>
+                                    {progressPercent === 100 ? '✅' : '📖'}
+                                  </div>
+                                  <div className={styles.progressItemContent}>
+                                    <h4 className={styles.progressItemTitle}>
+                                      {lesson.displayTitle || lesson.title}
+                                    </h4>
+                                    <div className={styles.progressItemBar}>
+                                      <div
+                                        className={styles.progressItemBarFill}
+                                        style={{ width: `${progressPercent}%` }}
+                                      />
+                                    </div>
+                                  </div>
+                                  {progressPercent === 100 ? (
+                                    <span className={styles.progressItemBadge}>
+                                      ✓ Xong
+                                    </span>
+                                  ) : (
+                                    <span className={styles.progressItemPercent}>
+                                      {Math.round(progressPercent)}%
+                                    </span>
+                                  )}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Sidebar */}
+                <div className={styles.rightSidebar}>
+                  {/* Quick Actions */}
+                  <div className={styles.sectionCard}>
+                    <div className={styles.sectionHeader}>
+                      <h2 className={styles.sectionTitle}>
+                        <span>⚡</span>
+                        Hành động nhanh
+                      </h2>
+                    </div>
+                    <div className={styles.quickActions}>
+                      <Link href="/" className={styles.quickActionBtn}>
+                        <div className={`${styles.quickActionIcon} ${styles.shadowing}`}>🎙️</div>
+                        <div className={styles.quickActionContent}>
+                          <span className={styles.quickActionLabel}>Shadowing</span>
+                          <span className={styles.quickActionDesc}>Luyện phát âm theo video</span>
+                        </div>
+                        <span className={styles.quickActionArrow}>→</span>
+                      </Link>
+                      <Link href="/" className={styles.quickActionBtn}>
+                        <div className={`${styles.quickActionIcon} ${styles.dictation}`}>✍️</div>
+                        <div className={styles.quickActionContent}>
+                          <span className={styles.quickActionLabel}>Dictation</span>
+                          <span className={styles.quickActionDesc}>Nghe và chép lại</span>
+                        </div>
+                        <span className={styles.quickActionArrow}>→</span>
+                      </Link>
+                      <Link href="/profile/vocabulary" className={styles.quickActionBtn}>
+                        <div className={`${styles.quickActionIcon} ${styles.vocabulary}`}>📝</div>
+                        <div className={styles.quickActionContent}>
+                          <span className={styles.quickActionLabel}>Từ vựng</span>
+                          <span className={styles.quickActionDesc}>Ôn tập từ đã lưu</span>
+                        </div>
+                        <span className={styles.quickActionArrow}>→</span>
+                      </Link>
+                      <Link href="/profile/statistics" className={styles.quickActionBtn}>
+                        <div className={`${styles.quickActionIcon} ${styles.statistics}`}>📊</div>
+                        <div className={styles.quickActionContent}>
+                          <span className={styles.quickActionLabel}>Thống kê</span>
+                          <span className={styles.quickActionDesc}>Xem tiến độ chi tiết</span>
+                        </div>
+                        <span className={styles.quickActionArrow}>→</span>
                       </Link>
                     </div>
-                  ) : (
-                    <>
-                      {/* Progress Summary */}
-                      <div className={styles.progressSummary}>
-                        <div className={styles.summaryItem}>
-                          <span className={styles.summaryValue}>{lessonStats.total}</span>
-                          <span className={styles.summaryLabel}>Tổng bài</span>
-                        </div>
-                        <div className={styles.summaryItem}>
-                          <span className={styles.summaryValue}>{lessonStats.progressPercent}%</span>
-                          <span className={styles.summaryLabel}>Tổng tiến độ</span>
-                        </div>
-                        <div className={styles.summaryItem}>
-                          <span className={styles.summaryValue}>{lessonStats.completed}</span>
-                          <span className={styles.summaryLabel}>Hoàn thành</span>
-                        </div>
-                      </div>
+                  </div>
 
-                      {/* Progress List */}
-                      <div className={styles.progressList}>
-                        {lessonStats.sortedLessons.slice(0, 6).map((lesson) => {
-                          const progressPercent = calculateProgress(lesson.id);
+                  {/* Recent Activity */}
+                  <div className={styles.sectionCard}>
+                    <div className={styles.sectionHeader}>
+                      <h2 className={styles.sectionTitle}>
+                        <span>📜</span>
+                        Hoạt động gần đây
+                      </h2>
+                    </div>
+                    <div className={styles.activityList}>
+                      {recentActivity.length === 0 ? (
+                        <div className={styles.noActivity}>
+                          <span className={styles.noActivityIcon}>💤</span>
+                          <p>Chưa có hoạt động nào</p>
+                        </div>
+                      ) : (
+                        recentActivity.slice(0, 4).map((activity, index) => {
+                          const lesson = allLessons.find(l => l.id === activity.lessonId);
+                          // Calculate points from actual progress
+                          const progressData = activity.progress || {};
+                          // Use correctWords if available, otherwise count completedSentences
+                          let earnedPoints = progressData.correctWords || 0;
+                          if (earnedPoints === 0 && progressData.completedSentences) {
+                            // Count completed sentences as fallback
+                            earnedPoints = Object.keys(progressData.completedSentences).length;
+                          }
+                          if (earnedPoints === 0 && activity.completionPercent > 0) {
+                            // Use completion percent as last resort
+                            earnedPoints = activity.completionPercent;
+                          }
                           return (
-                            <div
-                              key={lesson.id}
-                              className={styles.progressItem}
-                              onClick={() => navigateWithLocale(router, `/${lesson.id}`)}
-                            >
-                              <div className={styles.progressItemIcon}>
-                                {progressPercent === 100 ? '✅' : '📖'}
+                            <div key={index} className={styles.activityItem}>
+                              <div className={styles.activityIcon}>
+                                {activity.mode === 'shadowing' ? '🎙️' : '✍️'}
                               </div>
-                              <div className={styles.progressItemContent}>
-                                <h4 className={styles.progressItemTitle}>
-                                  {lesson.displayTitle || lesson.title}
-                                </h4>
-                                <div className={styles.progressItemBar}>
-                                  <div
-                                    className={styles.progressItemBarFill}
-                                    style={{ width: `${progressPercent}%` }}
-                                  />
-                                </div>
+                              <div className={styles.activityContent}>
+                                <p className={styles.activityText}>
+                                  {activity.mode === 'shadowing' ? 'Shadowing' : 'Dictation'}
+                                  {lesson ? `: ${lesson.displayTitle || lesson.title}` : ''}
+                                </p>
+                                <span className={styles.activityTime}>
+                                  {formatDate(activity.updatedAt || activity.createdAt)}
+                                </span>
                               </div>
-                              {progressPercent === 100 ? (
-                                <span className={styles.progressItemBadge}>
-                                  ✓ Xong
-                                </span>
-                              ) : (
-                                <span className={styles.progressItemPercent}>
-                                  {Math.round(progressPercent)}%
-                                </span>
-                              )}
+                              <div className={styles.activityPoints}>
+                                +{earnedPoints}
+                              </div>
                             </div>
                           );
-                        })}
-                      </div>
-                    </>
-                  )}
+                        })
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Right Sidebar */}
-            <div className={styles.rightSidebar}>
-              {/* Quick Actions */}
-              <div className={styles.sectionCard}>
-                <div className={styles.sectionHeader}>
-                  <h2 className={styles.sectionTitle}>
-                    <span>⚡</span>
-                    Hành động nhanh
-                  </h2>
-                </div>
-                <div className={styles.quickActions}>
-                  <Link href="/" className={styles.quickActionBtn}>
-                    <div className={`${styles.quickActionIcon} ${styles.shadowing}`}>🎙️</div>
-                    <div className={styles.quickActionContent}>
-                      <span className={styles.quickActionLabel}>Shadowing</span>
-                      <span className={styles.quickActionDesc}>Luyện phát âm theo video</span>
-                    </div>
-                    <span className={styles.quickActionArrow}>→</span>
-                  </Link>
-                  <Link href="/" className={styles.quickActionBtn}>
-                    <div className={`${styles.quickActionIcon} ${styles.dictation}`}>✍️</div>
-                    <div className={styles.quickActionContent}>
-                      <span className={styles.quickActionLabel}>Dictation</span>
-                      <span className={styles.quickActionDesc}>Nghe và chép lại</span>
-                    </div>
-                    <span className={styles.quickActionArrow}>→</span>
-                  </Link>
-                  <Link href="/profile/vocabulary" className={styles.quickActionBtn}>
-                    <div className={`${styles.quickActionIcon} ${styles.vocabulary}`}>📝</div>
-                    <div className={styles.quickActionContent}>
-                      <span className={styles.quickActionLabel}>Từ vựng</span>
-                      <span className={styles.quickActionDesc}>Ôn tập từ đã lưu</span>
-                    </div>
-                    <span className={styles.quickActionArrow}>→</span>
-                  </Link>
-                </div>
-              </div>
-
-              {/* Recent Activity */}
-              <div className={styles.sectionCard}>
-                <div className={styles.sectionHeader}>
-                  <h2 className={styles.sectionTitle}>
-                    <span>📜</span>
-                    Hoạt động gần đây
-                  </h2>
-                </div>
-                <div className={styles.activityList}>
-                  {recentActivity.length === 0 ? (
-                    <div className={styles.noActivity}>
-                      <span className={styles.noActivityIcon}>💤</span>
-                      <p>Chưa có hoạt động nào</p>
-                    </div>
-                  ) : (
-                    recentActivity.slice(0, 4).map((activity, index) => {
-                      const lesson = allLessons.find(l => l.id === activity.lessonId);
-                      // Calculate points from actual progress
-                      const progressData = activity.progress || {};
-                      // Use correctWords if available, otherwise count completedSentences
-                      let earnedPoints = progressData.correctWords || 0;
-                      if (earnedPoints === 0 && progressData.completedSentences) {
-                        // Count completed sentences as fallback
-                        earnedPoints = Object.keys(progressData.completedSentences).length;
-                      }
-                      if (earnedPoints === 0 && activity.completionPercent > 0) {
-                        // Use completion percent as last resort
-                        earnedPoints = activity.completionPercent;
-                      }
-                      return (
-                        <div key={index} className={styles.activityItem}>
-                          <div className={styles.activityIcon}>
-                            {activity.mode === 'shadowing' ? '🎙️' : '✍️'}
-                          </div>
-                          <div className={styles.activityContent}>
-                            <p className={styles.activityText}>
-                              {activity.mode === 'shadowing' ? 'Shadowing' : 'Dictation'}
-                              {lesson ? `: ${lesson.displayTitle || lesson.title}` : ''}
-                            </p>
-                            <span className={styles.activityTime}>
-                              {formatDate(activity.updatedAt || activity.createdAt)}
-                            </span>
-                          </div>
-                          <div className={styles.activityPoints}>
-                            +{earnedPoints}
-                          </div>
-                        </div>
-                      );
-                    })
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
             </div>
           </div>
         </div>
