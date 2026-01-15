@@ -27,7 +27,7 @@ const UnlockModal = ({
     try {
       await onConfirm(lesson.id);
     } catch (err) {
-      setError(err.message || 'Có lỗi xảy ra');
+      setError(err.message || t('unlock.error'));
     }
   };
 
@@ -42,7 +42,7 @@ const UnlockModal = ({
           </svg>
         </div>
 
-        <h2 className={styles.title}>Mở khóa bài học</h2>
+        <h2 className={styles.title}>{t('unlock.title')}</h2>
         <p className={styles.lessonTitle}>{lesson.title || lesson.displayTitle}</p>
 
         <div className={styles.infoBox}>
@@ -50,20 +50,20 @@ const UnlockModal = ({
             <div className={styles.freeUnlock}>
               <span className={styles.freeIcon}>🎁</span>
               <div>
-                <strong>Miễn phí!</strong>
-                <p>Bạn còn {freeUnlocksRemaining} lượt mở khóa miễn phí</p>
+                <strong>{t('unlock.free')}</strong>
+                <p>{t('unlock.freeUnlocksLeft', { count: freeUnlocksRemaining })}</p>
               </div>
             </div>
           ) : (
             <div className={styles.pointsInfo}>
               <div className={styles.costRow}>
-                <span>Chi phí:</span>
-                <span className={styles.cost}>{unlockCost} Points</span>
+                <span>{t('unlock.cost')}:</span>
+                <span className={styles.cost}>{unlockCost} {t('unlock.points')}</span>
               </div>
               <div className={styles.balanceRow}>
-                <span>Số dư của bạn:</span>
+                <span>{t('unlock.balance')}:</span>
                 <span className={canUnlockWithPoints ? styles.sufficient : styles.insufficient}>
-                  {userPoints} Points
+                  {userPoints} {t('unlock.points')}
                 </span>
               </div>
             </div>
@@ -74,7 +74,7 @@ const UnlockModal = ({
 
         {!canUnlock && !canUnlockFree && (
           <p className={styles.warning}>
-            Bạn không đủ points để mở khóa. Hãy học thêm để kiếm points!
+            {t('unlock.notEnoughPoints')}
           </p>
         )}
 
@@ -84,14 +84,14 @@ const UnlockModal = ({
             onClick={onClose}
             disabled={isLoading}
           >
-            Hủy
+            {t('unlock.cancel')}
           </button>
           <button 
             className={`${styles.confirmBtn} ${!canUnlock ? styles.disabled : ''}`}
             onClick={handleConfirm}
             disabled={!canUnlock || isLoading}
           >
-            {isLoading ? 'Đang xử lý...' : canUnlockFree ? 'Mở khóa miễn phí' : `Mở khóa (${unlockCost} Points)`}
+            {isLoading ? t('unlock.processing') : canUnlockFree ? t('unlock.unlockFree') : t('unlock.unlockWithPoints', { cost: unlockCost })}
           </button>
         </div>
       </div>

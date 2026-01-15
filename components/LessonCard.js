@@ -54,7 +54,13 @@ const LessonCard = ({ lesson, onClick, onUnlock }) => {
   };
 
   const handleClick = (e) => {
-    // Always allow clicking - locked lessons will show overlay on lesson page
+    // If lesson is locked, trigger unlock modal instead of navigating
+    if (lesson.isLocked && onUnlock) {
+      e.stopPropagation();
+      onUnlock(lesson);
+      return;
+    }
+    
     if (onClick) {
       onClick();
     }
