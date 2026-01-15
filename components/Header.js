@@ -282,7 +282,9 @@ const Header = () => {
     <header className={`${styles.header} ${state.isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.headerContent}>
         <Link href="/" className={styles.logo}>
-          <div className={styles.logoIcon}>🦜</div>
+          <div className={styles.logoIcon}>
+            <Image src="/logo.jpg" alt="Logo" width={40} height={40} style={{ borderRadius: '8px' }} />
+          </div>
           <span className={styles.logoText}>PapaGeil</span>
         </Link>
 
@@ -414,7 +416,7 @@ const Header = () => {
               <div className={styles.streakContainer}>
                 <span className={styles.streakIcon}>🔥</span>
                 <span className={styles.streakValue}><FlipCounter value={user.streak?.currentStreak || 0} /></span>
-                
+
                 {/* Streak Tooltip */}
                 <div className={styles.streakTooltip}>
                   <div className={styles.streakTooltipTitle}>Your Streak</div>
@@ -439,7 +441,7 @@ const Header = () => {
                   <FlipCounter value={userPoints || 0} />
                 </div>
 
-{/* Đã tắt hiệu ứng +1/-1 ở header, chỉ dùng flip counter */}
+                {/* Đã tắt hiệu ứng +1/-1 ở header, chỉ dùng flip counter */}
               </div>
 
               {/* Tạm thời ẩn nút thông báo

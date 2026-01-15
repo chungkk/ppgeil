@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaInstagram, FaYoutube, FaTiktok, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -23,7 +24,7 @@ const Footer = () => {
 
   useEffect(() => {
     let isMounted = true;
-    
+
     const fetchSocialLinks = async () => {
       try {
         const res = await fetch('/api/settings/public');
@@ -37,9 +38,9 @@ const Footer = () => {
         if (isMounted) setIsLoading(false);
       }
     };
-    
+
     fetchSocialLinks();
-    
+
     return () => {
       isMounted = false;
     };
@@ -50,12 +51,14 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
           <div className={styles.footerBrand}>
-            <div className={styles.footerLogo}>🦜</div>
+            <div className={styles.footerLogo}>
+              <Image src="/logo.jpg" alt="Logo" width={32} height={32} style={{ borderRadius: '6px' }} />
+            </div>
             <span className={styles.footerBrandText}>{t('header.logo')}</span>
           </div>
-           <p className={styles.footerDescription}>
-             {t('footer.description')}
-           </p>
+          <p className={styles.footerDescription}>
+            {t('footer.description')}
+          </p>
         </div>
 
         <div className={styles.footerSection}>
@@ -106,12 +109,12 @@ const Footer = () => {
               <div key={i} className={styles.socialSkeleton} />
             ))
           ) : (
-            SOCIAL_CONFIG.map(({ key, icon: Icon, label }) => 
+            SOCIAL_CONFIG.map(({ key, icon: Icon, label }) =>
               socialLinks[key] && (
-                <a 
+                <a
                   key={key}
-                  href={socialLinks[key]} 
-                  className={styles.socialLink} 
+                  href={socialLinks[key]}
+                  className={styles.socialLink}
                   aria-label={label}
                   target="_blank"
                   rel="noopener noreferrer"

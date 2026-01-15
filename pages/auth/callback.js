@@ -12,9 +12,9 @@ export default function AuthCallback() {
     if (error) {
       console.error('❌ OAuth Error:', error);
       if (window.opener) {
-        window.opener.postMessage({ 
-          type: 'auth-failed', 
-          error: error 
+        window.opener.postMessage({
+          type: 'auth-failed',
+          error: error
         }, window.location.origin);
         setTimeout(() => window.close(), 1000);
       }
@@ -24,12 +24,12 @@ export default function AuthCallback() {
     if (status === 'authenticated' && session) {
       // Close the popup and notify parent window
       console.log('✅ Authentication successful, closing popup...');
-      
+
       // Try to close popup
       if (window.opener) {
         // Notify parent window about successful login
         window.opener.postMessage({ type: 'auth-success', session }, window.location.origin);
-        
+
         // Close after a short delay
         setTimeout(() => {
           window.close();
@@ -59,7 +59,9 @@ export default function AuthCallback() {
       color: 'white'
     }}>
       <div style={{ textAlign: 'center', padding: '20px' }}>
-        <div style={{ fontSize: '48px', marginBottom: '20px' }}>🦜</div>
+        <div style={{ fontSize: '48px', marginBottom: '20px' }}>
+          <img src="/logo.jpg" alt="Logo" style={{ width: '80px', height: '80px', borderRadius: '12px' }} />
+        </div>
         {error && (
           <>
             <h2>❌ Đăng nhập thất bại</h2>
