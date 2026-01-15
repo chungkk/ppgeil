@@ -5,6 +5,7 @@ import SEO, { generateBreadcrumbStructuredData, generateCourseStructuredData, ge
 import LessonCard from '../components/LessonCard';
 import { SkeletonCard } from '../components/SkeletonLoader';
 import ModeSelectionPopup from '../components/ModeSelectionPopup';
+import UnlockModal from '../components/UnlockModal';
 import { useAuth } from '../context/AuthContext';
 import { navigateWithLocale } from '../lib/navigation';
 
@@ -16,6 +17,9 @@ const HomePage = () => {
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [showModePopup, setShowModePopup] = useState(false);
   const [difficultyFilter, setDifficultyFilter] = useState('all');
+  const [unlockLesson, setUnlockLesson] = useState(null);
+  const [unlockLoading, setUnlockLoading] = useState(false);
+  const [userUnlockInfo, setUserUnlockInfo] = useState(null);
   const router = useRouter();
   const { user } = useAuth();
 
@@ -33,6 +37,7 @@ const HomePage = () => {
 
       setCategories(data.categories || []);
       setCategoriesWithLessons(data.categoriesWithLessons || {});
+      setUserUnlockInfo(data.userUnlockInfo || null);
     } catch (error) {
       console.error('Error fetching homepage data:', error);
     } finally {
@@ -46,6 +51,11 @@ const HomePage = () => {
   }, [fetchCategoriesWithLessons, user]);
 
   const handleLessonClick = (lesson) => {
+    // If lesson is locked, don't open it
+    if (lesson.isLocked) {
+      return;
+    }
+
     // Increment view count
     fetch(`/api/lessons/${lesson.id}/view`, {
       method: 'POST'
@@ -54,6 +64,69 @@ const HomePage = () => {
     // Show mode selection popup
     setSelectedLesson(lesson);
     setShowModePopup(true);
+  };
+
+  const handleUnlockClick = (lesson) => {
+    if (!user) {
+      router.push('/login');
+      return;
+    }
+    setUnlockLesson(lesson);
+  };
+
+  const handleUnlockConfirm = async (lessonId) => {
+    setUnlockLoading(true);
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch(`/api/lessons/${lessonId}/unlock`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || 'Không thể mở khóa bài học');
+      }
+
+      // Update userUnlockInfo
+      setUserUnlockInfo(prev => ({
+        ...prev,
+        freeUnlocksRemaining: data.freeUnlocksRemaining ?? (prev?.freeUnlocksRemaining ?? 0),
+        points: data.remainingPoints ?? prev?.points,
+        unlockedCount: (prev?.unlockedCount ?? 0) + 1
+      }));
+
+      // Update lesson in categoriesWithLessons to show as unlocked
+      setCategoriesWithLessons(prev => {
+        const updated = { ...prev };
+        for (const slug in updated) {
+          updated[slug] = {
+            ...updated[slug],
+            lessons: updated[slug].lessons.map(l => 
+              l.id === lessonId ? { ...l, isLocked: false } : l
+            )
+          };
+        }
+        return updated;
+      });
+
+      setUnlockLesson(null);
+      
+      // Auto-open the lesson after unlock
+      const unlockedLesson = Object.values(categoriesWithLessons)
+        .flatMap(cat => cat.lessons)
+        .find(l => l.id === lessonId);
+      if (unlockedLesson) {
+        handleLessonClick({ ...unlockedLesson, isLocked: false });
+      }
+    } catch (error) {
+      throw error;
+    } finally {
+      setUnlockLoading(false);
+    }
   };
 
   const handleModeSelect = (lesson, mode) => {
@@ -149,6 +222,16 @@ const HomePage = () => {
         />
       )}
 
+      {unlockLesson && (
+        <UnlockModal
+          lesson={unlockLesson}
+          userUnlockInfo={userUnlockInfo}
+          onConfirm={handleUnlockConfirm}
+          onClose={() => setUnlockLesson(null)}
+          isLoading={unlockLoading}
+        />
+      )}
+
       <div className="main-container">
 
         {/* Difficulty toggle */}
@@ -208,6 +291,7 @@ const HomePage = () => {
                       <LessonCard
                         lesson={lesson}
                         onClick={() => handleLessonClick(lesson)}
+                        onUnlock={handleUnlockClick}
                       />
                     </div>
                   ))}

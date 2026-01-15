@@ -5,8 +5,10 @@ import SEO from '../../components/SEO';
 import LessonCard from '../../components/LessonCard';
 import { SkeletonCard } from '../../components/SkeletonLoader';
 import ModeSelectionPopup from '../../components/ModeSelectionPopup';
+import UnlockModal from '../../components/UnlockModal';
 import { useLessons, prefetchLessons } from '../../lib/hooks/useLessons';
 import { navigateWithLocale } from '../../lib/navigation';
+import { useAuth } from '../../context/AuthContext';
 
 const CategoryPage = () => {
   const { t } = useTranslation();
@@ -16,6 +18,9 @@ const CategoryPage = () => {
   const [category, setCategory] = useState(null);
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [showModePopup, setShowModePopup] = useState(false);
+  const [unlockLesson, setUnlockLesson] = useState(null);
+  const [unlockLoading, setUnlockLoading] = useState(false);
+  const { user } = useAuth();
   const itemsPerPage = 10;
 
   const fetchCategory = useCallback(async () => {
@@ -71,6 +76,8 @@ const CategoryPage = () => {
   };
 
   const handleLessonClick = (lesson) => {
+    if (lesson.isLocked) return;
+
     // Increment view count
     fetch(`/api/lessons/${lesson.id}/view`, {
       method: 'POST'
@@ -79,6 +86,43 @@ const CategoryPage = () => {
     // Show mode selection popup
     setSelectedLesson(lesson);
     setShowModePopup(true);
+  };
+
+  const handleUnlockClick = (lesson) => {
+    if (!user) {
+      router.push('/login');
+      return;
+    }
+    setUnlockLesson(lesson);
+  };
+
+  const handleUnlockConfirm = async (lessonId) => {
+    setUnlockLoading(true);
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch(`/api/lessons/${lessonId}/unlock`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || 'Không thể mở khóa bài học');
+      }
+
+      setUnlockLesson(null);
+      // Trigger refetch by changing page then back
+      const tempPage = currentPage;
+      setCurrentPage(0);
+      setTimeout(() => setCurrentPage(tempPage), 100);
+    } catch (error) {
+      throw error;
+    } finally {
+      setUnlockLoading(false);
+    }
   };
 
   const handleModeSelect = (lesson, mode) => {
@@ -124,6 +168,16 @@ const CategoryPage = () => {
         />
       )}
 
+      {unlockLesson && (
+        <UnlockModal
+          lesson={unlockLesson}
+          userUnlockInfo={lessons.userUnlockInfo}
+          onConfirm={handleUnlockConfirm}
+          onClose={() => setUnlockLesson(null)}
+          isLoading={unlockLoading}
+        />
+      )}
+
       <div className="main-container">
         {/* Back button */}
         <button
@@ -159,6 +213,7 @@ const CategoryPage = () => {
                 key={lesson.id}
                 lesson={lesson}
                 onClick={() => handleLessonClick(lesson)}
+                onUnlock={handleUnlockClick}
               />
             ))
           )}

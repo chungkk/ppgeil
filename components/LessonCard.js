@@ -4,7 +4,7 @@ import { LessonThumbnail } from './OptimizedImage';
 import CategoryTag from './CategoryTag'; // T064: Import CategoryTag
 import styles from '../styles/LessonCard.module.css';
 
-const LessonCard = ({ lesson, onClick }) => {
+const LessonCard = ({ lesson, onClick, onUnlock }) => {
   const { t } = useTranslation();
   const extractYouTubeVideoId = (url) => {
     if (!url) return null;
@@ -53,15 +53,37 @@ const LessonCard = ({ lesson, onClick }) => {
     return level.toUpperCase();
   };
 
+  const handleClick = (e) => {
+    if (lesson.isLocked && onUnlock) {
+      e.preventDefault();
+      e.stopPropagation();
+      onUnlock(lesson);
+    } else if (onClick) {
+      onClick();
+    }
+  };
+
   return (
-    <div className={styles.lessonCard} onClick={onClick}>
+    <div 
+      className={`${styles.lessonCard} ${lesson.isLocked ? styles.locked : ''}`} 
+      onClick={handleClick}
+    >
       <div className={styles.thumbnailContainer}>
         <LessonThumbnail
           src={lesson.thumbnail || getYouTubeThumbnail(lesson.youtubeUrl) || '/default-thumbnail.jpg'}
           alt={`${lesson.title} - ${lesson.level || 'German'} lesson`}
-          className={styles.thumbnail}
+          className={`${styles.thumbnail} ${lesson.isLocked ? styles.lockedThumbnail : ''}`}
           priority={lesson.featured || false}
         />
+        
+        {lesson.isLocked && (
+          <div className={styles.lockOverlay}>
+            <svg className={styles.lockIcon} viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+            </svg>
+            <span className={styles.lockText}>100 Points</span>
+          </div>
+        )}
 
         <div className={styles.badges}>
           <div className={styles.viewCount}>

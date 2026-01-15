@@ -304,3 +304,65 @@
     padding: 5px 8px;
   }
 }
+
+/* Locked Lesson Styles */
+.locked {
+  opacity: 0.9;
+}
+
+.locked:hover {
+  border-color: var(--retro-coral);
+}
+
+.lockedThumbnail {
+  filter: grayscale(100%) brightness(0.7);
+}
+
+.lockOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 3;
+}
+
+.lockIcon {
+  width: 48px;
+  height: 48px;
+  fill: white;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.lockText {
+  background: var(--retro-coral);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 2px solid white;
+}
+
+/* Free Lesson Badge */
+.freeBadge {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--retro-cyan);
+  color: var(--retro-dark);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid var(--retro-border);
+  z-index: 4;
+}

@@ -55,6 +55,10 @@ async function handler(req, res) {
             }
         }
 
+        // Get user unlock info for lock status
+        const userUnlockedLessons = req.user?.unlockedLessons || [];
+        const isAdmin = req.user?.role === 'admin';
+
         // Group lessons by category and limit per category
         const lessonsByCategory = {};
         const lessonCountByCategory = {};
@@ -72,11 +76,17 @@ async function handler(req, res) {
                 lessonsByCategory[categoryId] = [];
             }
             if (lessonsByCategory[categoryId].length < lessonsPerCategory) {
-                // Add user study time to lesson
+                // Determine lock status
+                const isUnlocked = isAdmin || 
+                                  lesson.isFreeLesson || 
+                                  userUnlockedLessons.includes(lesson.id);
+                
+                // Add user study time and lock status to lesson
                 const lessonWithProgress = {
                     ...lesson,
                     shadowStudyTime: userProgressMap[`${lesson.id}_shadowing`] || 0,
-                    dictationStudyTime: userProgressMap[`${lesson.id}_dictation`] || 0
+                    dictationStudyTime: userProgressMap[`${lesson.id}_dictation`] || 0,
+                    isLocked: !isUnlocked
                 };
                 lessonsByCategory[categoryId].push(lessonWithProgress);
             }
@@ -105,7 +115,12 @@ async function handler(req, res) {
 
         return res.status(200).json({
             categories: filteredCategories,
-            categoriesWithLessons
+            categoriesWithLessons,
+            userUnlockInfo: req.user ? {
+                freeUnlocksRemaining: req.user.freeUnlocksRemaining ?? 2,
+                unlockedCount: userUnlockedLessons.length,
+                points: req.user.points ?? 0
+            } : null
         });
 
     } catch (error) {

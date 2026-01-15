@@ -111,6 +111,41 @@ function AdminLessonsPage() {
     }
   };
 
+  const handleToggleFreeLesson = async (lesson) => {
+    const newValue = !lesson.isFreeLesson;
+    const confirmMsg = newValue 
+      ? `Đặt "${lesson.title}" làm bài FREE? (Bài Free cũ sẽ bị bỏ)` 
+      : `Bỏ bài FREE cho "${lesson.title}"?`;
+    
+    if (!confirm(confirmMsg)) return;
+
+    try {
+      const token = localStorage.getItem('token');
+      const res = await fetch(`/api/admin/lessons/${lesson.id}/set-free`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ isFreeLesson: newValue })
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || 'Không thể cập nhật');
+      }
+
+      toast.success(newValue ? 'Đã đặt làm bài FREE!' : 'Đã bỏ bài FREE!');
+      
+      // Invalidate cache and refetch
+      invalidateLessonsCache();
+      broadcastLessonUpdate();
+      fetchLessons();
+    } catch (error) {
+      toast.error('Lỗi: ' + error.message);
+    }
+  };
+
   const handleSelectAll = () => {
     if (selectedLessons.size === paginatedLessons.length) {
       const newSelected = new Set(selectedLessons);
@@ -416,6 +451,7 @@ function AdminLessonsPage() {
                     </th>
                     <th>Tiêu đề</th>
                     <th>Niveau</th>
+                    <th>FREE</th>
                     <th>Aktionen</th>
                   </tr>
                 </thead>
@@ -431,6 +467,25 @@ function AdminLessonsPage() {
                       </td>
                       <td className={styles.lessonTitle}>{lesson.title}</td>
                       <td><span className={styles.levelBadge}>{lesson.level || 'A1'}</span></td>
+                      <td>
+                        <button
+                          onClick={() => handleToggleFreeLesson(lesson)}
+                          title={lesson.isFreeLesson ? 'Bỏ bài FREE' : 'Đặt làm bài FREE'}
+                          style={{
+                            background: lesson.isFreeLesson ? '#10b981' : '#e5e7eb',
+                            color: lesson.isFreeLesson ? 'white' : '#6b7280',
+                            border: 'none',
+                            borderRadius: '6px',
+                            padding: '4px 10px',
+                            fontSize: '12px',
+                            fontWeight: '600',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s'
+                          }}
+                        >
+                          {lesson.isFreeLesson ? '✓ FREE' : 'Set FREE'}
+                        </button>
+                      </td>
                       <td>
                         <div className={styles.actionButtons}>
                           <button

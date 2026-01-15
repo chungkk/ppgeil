@@ -1,9 +1,10 @@
-import { requireAdmin } from '../../lib/authMiddleware';
+import { requireAdmin, optionalAuth } from '../../lib/authMiddleware';
 import { Lesson } from '../../lib/models/Lesson';
 import { ArticleCategory } from '../../lib/models/ArticleCategory';
 import connectDB from '../../lib/mongodb';
 import mongoose from 'mongoose';
 import { downloadYouTubeThumbnail } from '../../lib/youtubeThumbnail';
+import { verifyToken } from '../../lib/jwt';
 
 export default async function handler(req, res) {
   await connectDB();
@@ -11,7 +12,19 @@ export default async function handler(req, res) {
   if (req.method === 'GET') {
     try {
       // Check if request is from admin (has Authorization header)
-      const isAdminRequest = !!req.headers.authorization;
+      const authHeader = req.headers.authorization;
+      const isAdminRequest = !!authHeader;
+      
+      // Get current user info for lock status
+      let currentUser = null;
+      if (authHeader && authHeader.startsWith('Bearer ')) {
+        const token = authHeader.substring(7);
+        const decoded = verifyToken(token);
+        if (decoded) {
+          const User = (await import('../../models/User')).default;
+          currentUser = await User.findById(decoded.userId).lean();
+        }
+      }
       
       // Get pagination parameters
       const page = parseInt(req.query.page) || 1;
@@ -65,14 +78,34 @@ export default async function handler(req, res) {
         Lesson.countDocuments(filters)
       ]);
 
+      // Add lock status to each lesson
+      const userUnlockedLessons = currentUser?.unlockedLessons || [];
+      const isAdmin = currentUser?.role === 'admin';
+      
+      const lessonsWithLockStatus = lessons.filter(l => l && l._id).map(lesson => {
+        // Admin sees all unlocked, free lessons are always unlocked
+        const isUnlocked = isAdmin || 
+                          lesson.isFreeLesson || 
+                          userUnlockedLessons.includes(lesson.id);
+        return {
+          ...lesson,
+          isLocked: !isUnlocked
+        };
+      });
+
       // Cache for 5 minutes, allow stale content while revalidating
       res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
 
       return res.status(200).json({
-        lessons: lessons.filter(l => l && l._id),
+        lessons: lessonsWithLockStatus,
         total,
         page,
-        totalPages: Math.ceil(total / limit)
+        totalPages: Math.ceil(total / limit),
+        userUnlockInfo: currentUser ? {
+          freeUnlocksRemaining: currentUser.freeUnlocksRemaining ?? 2,
+          unlockedCount: userUnlockedLessons.length,
+          points: currentUser.points ?? 0
+        } : null
       });
     } catch (error) {
       console.error('Get lessons error:', error);

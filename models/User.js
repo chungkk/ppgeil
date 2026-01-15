@@ -159,6 +159,16 @@ const UserSchema = new mongoose.Schema({
    srsProgress: {
      type: mongoose.Schema.Types.Mixed,
      default: {}
+   },
+   // Lesson Unlock System
+   unlockedLessons: {
+     type: [String],
+     default: []
+   },
+   freeUnlocksRemaining: {
+     type: Number,
+     default: 2,
+     min: 0
    }
 });
 
