@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import styles from '../styles/leaderboard.module.css';
@@ -131,11 +132,16 @@ export default function LeaderboardPage() {
                                         {/* User Info */}
                                         <div className={styles.userCell}>
                                             {entry.avatar ? (
-                                                <img
-                                                    src={entry.avatar}
-                                                    alt={entry.name}
-                                                    className={styles.userAvatarImg}
-                                                />
+                                                <div className={styles.userAvatarImgWrapper}>
+                                                    <Image
+                                                        src={entry.avatar}
+                                                        alt={entry.name}
+                                                        fill
+                                                        sizes="40px"
+                                                        className={styles.userAvatarImg}
+                                                        unoptimized
+                                                    />
+                                                </div>
                                             ) : (
                                                 <div className={styles.userAvatar}>
                                                     {entry.name?.charAt(0).toUpperCase() || '?'}

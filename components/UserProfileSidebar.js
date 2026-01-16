@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import Image from 'next/image';
 import { useAuth } from '../context/AuthContext';
 import AvatarCropper from './AvatarCropper';
 import styles from '../styles/UserProfileSidebar.module.css';
@@ -43,7 +44,7 @@ export default function UserProfileSidebar({ stats, userPoints = 0, achievements
   const handleCropSave = async (croppedBlob) => {
     setCropperImage(null);
     setUploading(true);
-    
+
     try {
       const token = localStorage.getItem('token');
       const formData = new FormData();
@@ -80,20 +81,23 @@ export default function UserProfileSidebar({ stats, userPoints = 0, achievements
           onSave={handleCropSave}
         />
       )}
-      
+
       <aside className={styles.profileSidebar}>
         <div className={styles.profileCard}>
           {/* Avatar */}
-          <div 
+          <div
             className={`${styles.userAvatar} ${styles.clickable}`}
             onClick={handleAvatarClick}
             title="Nhấn để đổi ảnh đại diện"
           >
             {user?.avatar ? (
-              <img 
-                src={`${user.avatar}?t=${avatarKey}`} 
-                alt={user.name} 
+              <Image
+                src={`${user.avatar}?t=${avatarKey}`}
+                alt={user.name}
+                fill
+                sizes="100px"
                 className={styles.avatarImage}
+                unoptimized
               />
             ) : (
               user?.name?.charAt(0).toUpperCase() || 'U'

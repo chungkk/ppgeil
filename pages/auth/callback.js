@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 export default function AuthCallback() {
   const { data: session, status } = useSession();
@@ -60,7 +61,7 @@ export default function AuthCallback() {
     }}>
       <div style={{ textAlign: 'center', padding: '20px' }}>
         <div style={{ fontSize: '48px', marginBottom: '20px' }}>
-          <img src="/logo.jpg" alt="Logo" style={{ width: '80px', height: '80px', borderRadius: '12px' }} />
+          <Image src="/logo.jpg" alt="Logo" width={80} height={80} style={{ borderRadius: '12px' }} />
         </div>
         {error && (
           <>

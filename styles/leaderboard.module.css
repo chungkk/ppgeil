@@ -390,19 +390,25 @@
   transition: transform 0.3s ease;
 }
 
-.userAvatarImg {
+.userAvatarImgWrapper {
+  position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  border: 3px solid var(--retro-border);
   flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--retro-border);
   box-shadow: 3px 3px 0 var(--retro-shadow);
   transition: transform 0.3s ease;
+}
+
+.userAvatarImg {
+  border-radius: 50%;
   object-fit: cover;
 }
 
 .leaderboardItem:hover .userAvatar,
-.leaderboardItem:hover .userAvatarImg {
+.leaderboardItem:hover .userAvatarImgWrapper {
   transform: scale(1.1) rotate(-5deg);
 }
 
