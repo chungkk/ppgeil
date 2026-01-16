@@ -2,7 +2,7 @@
     {
         "text": "Es war einmal ein fleißiger Wäschemann in einem weit entfernten Dorf.",
         "start": 0,
-        "end": 5.039999771118164,
+        "end": 4.739999771118164,
         "wordTimings": [
             {
                 "word": "Es",
@@ -57,20 +57,20 @@
             {
                 "word": "Dorf.",
                 "start": 4.300000190734863,
-                "end": 5.039999771118164
+                "end": 4.739999771118164
             }
         ],
         "translationEn": "Once upon a time, there was a hardworking laundry man in a faraway village.",
         "translationVi": "Ngày xửa ngày xưa, có một người giặt đồ chăm chỉ ở một ngôi làng xa xôi."
     },
     {
-        "text": "Der Wäscher hatte ein winziges Haus und eine Scheune auf der Rückseite seines Hauses, in der sein geliebter Esel und sein Pferd lebten.",
-        "start": 5.160000228881836,
-        "end": 15.640000152587891,
+        "text": "Der Wäscher hatte ein winziges Haus und eine Scheune auf der Rückseite seines Hauses,",
+        "start": 5.260000228881836,
+        "end": 12.15999984741211,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 5.160000228881836,
+                "start": 5.260000228881836,
                 "end": 5.28000020980835
             },
             {
@@ -86,11 +86,11 @@
             {
                 "word": "ein",
                 "start": 5.960000038146973,
-                "end": 6.199999809265137
+                "end": 6.179999828338623
             },
             {
                 "word": "winziges",
-                "start": 6.199999809265137,
+                "start": 6.179999828338623,
                 "end": 6.739999771118164
             },
             {
@@ -137,7 +137,16 @@
                 "word": "Hauses,",
                 "start": 11.800000190734863,
                 "end": 12.15999984741211
-            },
+            }
+        ],
+        "translationEn": "The washer had a tiny house and a barn at the back of his house,",
+        "translationVi": "Người giặt có một ngôi nhà nhỏ xíu và một cái kho ở phía sau ngôi nhà của mình,"
+    },
+    {
+        "text": "in der sein geliebter Esel und sein Pferd lebten.",
+        "start": 12.479999542236328,
+        "end": 15.34000015258789,
+        "wordTimings": [
             {
                 "word": "in",
                 "start": 12.479999542236328,
@@ -181,20 +190,20 @@
             {
                 "word": "lebten.",
                 "start": 14.819999694824219,
-                "end": 15.640000152587891
+                "end": 15.34000015258789
             }
         ],
-        "translationEn": "The washer had a tiny house and a barn at the back of his house, where his beloved donkey and horse lived.",
-        "translationVi": "Người giặt có một ngôi nhà nhỏ xíu và một cái kho ở phía sau ngôi nhà của mình, nơi con lừa yêu quý và con ngựa của ông sống."
+        "translationEn": "in which his beloved donkey and his horse lived.",
+        "translationVi": "nơi mà con lừa yêu quý và con ngựa của anh sống."
     },
     {
         "text": "Was war denn das für ein anstrengender Tag gestern?",
-        "start": 17.699999237060545,
-        "end": 22.400000381469727,
+        "start": 17.799999237060547,
+        "end": 22.100000381469727,
         "wordTimings": [
             {
                 "word": "Was",
-                "start": 17.699999237060545,
+                "start": 17.799999237060547,
                 "end": 18.639999389648438
             },
             {
@@ -235,7 +244,7 @@
             {
                 "word": "gestern?",
                 "start": 21.68000030517578,
-                "end": 22.400000381469727
+                "end": 22.100000381469727
             }
         ],
         "translationEn": "What an exhausting day yesterday was!",
@@ -243,12 +252,12 @@
     },
     {
         "text": "Wenn, dann bin ich derjenige, der das sagen muss.",
-        "start": 23.58000030517578,
-        "end": 28.240000534057618,
+        "start": 23.68000030517578,
+        "end": 27.940000534057617,
         "wordTimings": [
             {
                 "word": "Wenn,",
-                "start": 23.58000030517578,
+                "start": 23.68000030517578,
                 "end": 24.520000457763672
             },
             {
@@ -289,7 +298,7 @@
             {
                 "word": "muss.",
                 "start": 27.600000381469727,
-                "end": 28.240000534057618
+                "end": 27.940000534057617
             }
         ],
         "translationEn": "If so, then I am the one who has to say it.",
@@ -297,12 +306,12 @@
     },
     {
         "text": "Ich trage die ganze Nacht alleine.",
-        "start": 28.859999084472655,
-        "end": 32.34000091552734,
+        "start": 28.959999084472656,
+        "end": 32.040000915527344,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 28.859999084472655,
+                "start": 28.959999084472656,
                 "end": 29.68000030517578
             },
             {
@@ -328,20 +337,20 @@
             {
                 "word": "alleine.",
                 "start": 31.239999771118164,
-                "end": 32.34000091552734
+                "end": 32.040000915527344
             }
         ],
         "translationEn": "I carry alone all night.",
         "translationVi": "Tôi mang một mình suốt đêm."
     },
     {
-        "text": "Vielleicht, aber ich trage den Wäschemann selbst.",
-        "start": 33.28000106811523,
-        "end": 36.3,
+        "text": "Vielleicht aber ich trage den Wäschemann selbst.",
+        "start": 33.380001068115234,
+        "end": 36,
         "wordTimings": [
             {
-                "word": "Vielleicht,",
-                "start": 33.28000106811523,
+                "word": "Vielleicht",
+                "start": 33.380001068115234,
                 "end": 33.380001068115234
             },
             {
@@ -372,20 +381,20 @@
             {
                 "word": "selbst.",
                 "start": 35.63999938964844,
-                "end": 36.3
+                "end": 36
             }
         ],
-        "translationEn": "Maybe, but I carry the laundry myself.",
-        "translationVi": "Có thể, nhưng tôi tự mang đồ giặt."
+        "translationEn": "Maybe I'll carry the laundry myself.",
+        "translationVi": "Có thể nhưng tôi sẽ tự mang đồ giặt."
     },
     {
         "text": "Hallo, komm schon, wenn du gut ausgeruht bist, ist es Zeit loszugehen.",
-        "start": 37.37999954223633,
-        "end": 43.23999862670898,
+        "start": 37.47999954223633,
+        "end": 42.939998626708984,
         "wordTimings": [
             {
                 "word": "Hallo,",
-                "start": 37.37999954223633,
+                "start": 37.47999954223633,
                 "end": 38.20000076293945
             },
             {
@@ -441,7 +450,7 @@
             {
                 "word": "loszugehen.",
                 "start": 42.439998626708984,
-                "end": 43.23999862670898
+                "end": 42.939998626708984
             }
         ],
         "translationEn": "Hello, come on, if you're well-rested, it's time to go.",
@@ -449,12 +458,12 @@
     },
     {
         "text": "Jeden Morgen legte der Wäschemann die saubere Wäsche in einen Sack.",
-        "start": 45.78000106811523,
-        "end": 50.18000106811523,
+        "start": 45.880001068115234,
+        "end": 49.880001068115234,
         "wordTimings": [
             {
                 "word": "Jeden",
-                "start": 45.78000106811523,
+                "start": 45.880001068115234,
                 "end": 45.939998626708984
             },
             {
@@ -505,20 +514,20 @@
             {
                 "word": "Sack.",
                 "start": 49.599998474121094,
-                "end": 50.18000106811523
+                "end": 49.880001068115234
             }
         ],
-        "translationEn": "Every morning, the laundry man put the clean laundry into a bag.",
-        "translationVi": "Mỗi sáng, người giặt đồ bỏ quần áo sạch vào một cái túi."
+        "translationEn": "Every morning, the laundry man put the clean laundry in a bag.",
+        "translationVi": "Mỗi sáng, người giặt đồ cho quần áo sạch vào một cái túi."
     },
     {
-        "text": "Dann tat er die Wäschesäcke in die Körbe des Esels und stieg auf den Rücken seines Pferdes.",
-        "start": 51.71999969482422,
-        "end": 58.16000061035156,
+        "text": "Dann tat er die Wäschesäcke in die Körbe des Esels",
+        "start": 51.81999969482422,
+        "end": 55.119998931884766,
         "wordTimings": [
             {
                 "word": "Dann",
-                "start": 51.71999969482422,
+                "start": 51.81999969482422,
                 "end": 52.040000915527344
             },
             {
@@ -565,7 +574,16 @@
                 "word": "Esels",
                 "start": 54.720001220703125,
                 "end": 55.119998931884766
-            },
+            }
+        ],
+        "translationEn": "Then he put the laundry bags into the donkey's baskets.",
+        "translationVi": "Sau đó, anh ta bỏ những túi giặt vào rổ của con lừa."
+    },
+    {
+        "text": "und stieg auf den Rücken seines Pferdes und machte sich auf den Weg in weit entfernte Dörfer.",
+        "start": 55.119998931884766,
+        "end": 61,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 55.119998931884766,
@@ -597,24 +615,14 @@
                 "end": 57.36000061035156
             },
             {
-                "word": "Pferdes.",
+                "word": "Pferdes",
                 "start": 57.36000061035156,
-                "end": 58.16000061035156
-            }
-        ],
-        "translationEn": "Then he put the laundry bags into the baskets of the donkey and climbed onto the back of his horse.",
-        "translationVi": "Rồi anh ta cho những túi giặt vào các giỏ của con lừa và cưỡi lên lưng ngựa của mình."
-    },
-    {
-        "text": "Er machte sich auf den Weg in weit entfernte Dörfer.",
-        "start": 0,
-        "end": 61.3,
-        "wordTimings": [
+                "end": 57.86000061035156
+            },
             {
-                "word": "Er",
-                "start": 0,
-                "end": 0.3,
-                "estimated": true
+                "word": "und",
+                "start": 57.86000061035156,
+                "end": 58.099998474121094
             },
             {
                 "word": "machte",
@@ -659,20 +667,20 @@
             {
                 "word": "Dörfer.",
                 "start": 60.439998626708984,
-                "end": 61.3
+                "end": 61
             }
         ],
-        "translationEn": "He set off for distant villages.",
-        "translationVi": "Ông bắt đầu hành trình đến những ngôi làng xa xôi."
+        "translationEn": "and mounted his horse, setting off for distant villages.",
+        "translationVi": "và cưỡi lên lưng ngựa của mình, bắt đầu hành trình đến những ngôi làng xa xôi."
     },
     {
-        "text": "Den ganzen Tag über gab er den Leuten ihre saubere Kleidung und nahm die schmutzige wieder mit.",
-        "start": 63.10000076293945,
-        "end": 68.74000244140625,
+        "text": "Den ganzen Tag über gab er den Leuten ihre saubere Kleidung",
+        "start": 63.20000076293945,
+        "end": 66.4800033569336,
         "wordTimings": [
             {
                 "word": "Den",
-                "start": 63.10000076293945,
+                "start": 63.20000076293945,
                 "end": 63.2599983215332
             },
             {
@@ -724,7 +732,16 @@
                 "word": "Kleidung",
                 "start": 66,
                 "end": 66.4800033569336
-            },
+            }
+        ],
+        "translationEn": "All day long he gave people their clean clothes.",
+        "translationVi": "Suốt cả ngày, anh ấy đã trả lại quần áo sạch cho mọi người."
+    },
+    {
+        "text": "und nahm die schmutzige wieder mit.",
+        "start": 66.4800033569336,
+        "end": 68.44000244140625,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 66.4800033569336,
@@ -753,20 +770,20 @@
             {
                 "word": "mit.",
                 "start": 68.12000274658203,
-                "end": 68.74000244140625
+                "end": 68.44000244140625
             }
         ],
-        "translationEn": "All day long, he handed out clean clothes to people and took the dirty ones back with him.",
-        "translationVi": "Suốt cả ngày, anh ấy trả lại quần áo sạch cho mọi người và mang theo quần áo bẩn."
+        "translationEn": "and took the dirty one back with her.",
+        "translationVi": "và mang theo cái bẩn đó."
     },
     {
         "text": "Der Esel, der den ganzen Tag Wäsche trug, war jedoch sehr müde.",
-        "start": 69.5999969482422,
-        "end": 73.52000122070312,
+        "start": 69.69999694824219,
+        "end": 73.22000122070312,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 69.5999969482422,
+                "start": 69.69999694824219,
                 "end": 69.94000244140625
             },
             {
@@ -822,7 +839,7 @@
             {
                 "word": "müde.",
                 "start": 73.16000366210938,
-                "end": 73.52000122070312
+                "end": 73.22000122070312
             }
         ],
         "translationEn": "The donkey, which carried laundry all day, was very tired.",
@@ -830,12 +847,12 @@
     },
     {
         "text": "Als er in der Scheune ankam, aß er erschöpft und wollte sofort schlafen.",
-        "start": 73.80000152587891,
-        "end": 78.78000335693359,
+        "start": 73.9000015258789,
+        "end": 78.4800033569336,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 73.80000152587891,
+                "start": 73.9000015258789,
                 "end": 73.95999908447266
             },
             {
@@ -896,20 +913,20 @@
             {
                 "word": "schlafen.",
                 "start": 78,
-                "end": 78.78000335693359
+                "end": 78.4800033569336
             }
         ],
-        "translationEn": "When he arrived at the barn, he ate exhaustedly and wanted to sleep immediately.",
+        "translationEn": "When he arrived at the barn, he ate exhausted and wanted to sleep immediately.",
         "translationVi": "Khi anh đến chuồng, anh đã mệt mỏi và muốn ngay lập tức đi ngủ."
     },
     {
         "text": "Was machst du da, Esel? Willst du gleich wieder einpennen?",
-        "start": 82.71999969482422,
-        "end": 86.39999847412109,
+        "start": 82.81999969482422,
+        "end": 86.0999984741211,
         "wordTimings": [
             {
                 "word": "Was",
-                "start": 82.71999969482422,
+                "start": 82.81999969482422,
                 "end": 83.44000244140625
             },
             {
@@ -955,20 +972,20 @@
             {
                 "word": "einpennen?",
                 "start": 85.66000366210938,
-                "end": 86.39999847412109
+                "end": 86.0999984741211
             }
         ],
-        "translationEn": "What are you doing there, donkey? Are you going to fall asleep again?",
-        "translationVi": "Bạn đang làm gì đó, lừa? Bạn có muốn ngủ gật ngay bây giờ không?"
+        "translationEn": "What are you doing there, donkey? Do you want to fall asleep again?",
+        "translationVi": "Bạn đang làm gì ở đó, lừa? Bạn có muốn ngủ gật ngay bây giờ không?"
     },
     {
         "text": "Ich könnte den ganzen Tag noch herumlaufen.",
-        "start": 87.73999633789063,
-        "end": 91.11999969482422,
+        "start": 87.83999633789062,
+        "end": 90.81999969482422,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 87.73999633789063,
+                "start": 87.83999633789062,
                 "end": 88.45999908447266
             },
             {
@@ -999,20 +1016,20 @@
             {
                 "word": "herumlaufen.",
                 "start": 90.13999938964844,
-                "end": 91.11999969482422
+                "end": 90.81999969482422
             }
         ],
         "translationEn": "I could walk around all day.",
         "translationVi": "Tôi có thể đi lang thang cả ngày."
     },
     {
-        "text": "Natürlich könntest du das.",
-        "start": 91.35999908447266,
-        "end": 93.17999725341797,
+        "text": "Natürlich könntest du das, du bist ja auch nicht derjenige,",
+        "start": 91.45999908447266,
+        "end": 94.66000366210938,
         "wordTimings": [
             {
                 "word": "Natürlich",
-                "start": 91.35999908447266,
+                "start": 91.45999908447266,
                 "end": 91.9800033569336
             },
             {
@@ -1026,22 +1043,13 @@
                 "end": 92.58000183105469
             },
             {
-                "word": "das.",
+                "word": "das,",
                 "start": 92.58000183105469,
-                "end": 93.17999725341797
-            }
-        ],
-        "translationEn": "Of course you could do that.",
-        "translationVi": "Tất nhiên bạn có thể làm điều đó."
-    },
-    {
-        "text": "Du bist ja auch nicht derjenige, der all die Wäsche getragen hat.",
-        "start": 93.31999816894532,
-        "end": 97.53999786376953,
-        "wordTimings": [
+                "end": 92.87999725341797
+            },
             {
-                "word": "Du",
-                "start": 93.31999816894532,
+                "word": "du",
+                "start": 93.41999816894531,
                 "end": 93.55999755859375
             },
             {
@@ -1068,7 +1076,16 @@
                 "word": "derjenige,",
                 "start": 94.18000030517578,
                 "end": 94.66000366210938
-            },
+            }
+        ],
+        "translationEn": "Of course you could do that, you are not the one,",
+        "translationVi": "Tất nhiên bạn có thể làm điều đó, bạn cũng không phải là người đó,"
+    },
+    {
+        "text": "der all die Wäsche getragen hat.",
+        "start": 94.83999633789062,
+        "end": 97.23999786376953,
+        "wordTimings": [
             {
                 "word": "der",
                 "start": 94.83999633789062,
@@ -1097,20 +1114,20 @@
             {
                 "word": "hat.",
                 "start": 96.13999938964844,
-                "end": 97.53999786376953
+                "end": 97.23999786376953
             }
         ],
-        "translationEn": "You are not the one who carried all the laundry.",
-        "translationVi": "Bạn cũng không phải là người đã mang tất cả quần áo đó."
+        "translationEn": "who has carried all the laundry.",
+        "translationVi": "người đã mang tất cả quần áo."
     },
     {
-        "text": "Der Wäschemann, der am nächsten Morgen sehr früh aufstand, wusch die schmutzige Wäsche, die er gestern gesammelt hatte.",
-        "start": 98.06000366210938,
-        "end": 104.42000274658203,
+        "text": "Der Wäschemann, der am nächsten Morgen sehr früh aufstand,",
+        "start": 98.16000366210938,
+        "end": 100.91999816894531,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 98.06000366210938,
+                "start": 98.16000366210938,
                 "end": 98.26000213623047
             },
             {
@@ -1152,7 +1169,16 @@
                 "word": "aufstand,",
                 "start": 100.4000015258789,
                 "end": 100.91999816894531
-            },
+            }
+        ],
+        "translationEn": "The laundry man, who got up very early the next morning,",
+        "translationVi": "Người giặt đồ, người đã dậy rất sớm vào sáng hôm sau,"
+    },
+    {
+        "text": "wusch die schmutzige Wäsche, die er gestern gesammelt hatte.",
+        "start": 101.26000213623047,
+        "end": 104.12000274658203,
+        "wordTimings": [
             {
                 "word": "wusch",
                 "start": 101.26000213623047,
@@ -1196,21 +1222,21 @@
             {
                 "word": "hatte.",
                 "start": 103.80000305175781,
-                "end": 104.42000274658203
+                "end": 104.12000274658203
             }
         ],
-        "translationEn": "The laundry man, who got up very early the next morning, washed the dirty laundry he had collected the day before.",
-        "translationVi": "Người giặt đồ, người đã dậy rất sớm vào sáng hôm sau, đã giặt quần áo bẩn mà anh ta đã thu thập hôm qua."
+        "translationEn": "washed the dirty laundry he had collected yesterday.",
+        "translationVi": "rửa quần áo bẩn mà anh ấy đã thu thập hôm qua."
     },
     {
         "text": "Jaha, jetzt kann ich losgehen und die ganze schmutzige Wäsche im Dorf einsammeln.",
-        "start": 105.23999633789063,
-        "end": 112.56000213623047,
+        "start": 105.36000061035156,
+        "end": 112.26000213623047,
         "wordTimings": [
             {
                 "word": "Jaha,",
-                "start": 105.23999633789063,
-                "end": 105.95999908447266
+                "start": 105.36000061035156,
+                "end": 105.9800033569336
             },
             {
                 "word": "jetzt",
@@ -1270,20 +1296,20 @@
             {
                 "word": "einsammeln.",
                 "start": 111.30000305175781,
-                "end": 112.56000213623047
+                "end": 112.26000213623047
             }
         ],
         "translationEn": "Yes, now I can go and collect all the dirty laundry in the village.",
         "translationVi": "Vâng, bây giờ tôi có thể đi và thu gom tất cả quần áo bẩn trong làng."
     },
     {
-        "text": "Der Wäscher holte sein Pferd und seinen Esel aus dem Stall und machte sich auf den Weg.",
-        "start": 113.30000152587891,
-        "end": 118.13999633789062,
+        "text": "Der Wäscher holte sein Pferd und seinen Esel aus dem Stall",
+        "start": 113.4000015258789,
+        "end": 116.22000122070312,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 113.30000152587891,
+                "start": 113.4000015258789,
                 "end": 113.4000015258789
             },
             {
@@ -1335,7 +1361,16 @@
                 "word": "Stall",
                 "start": 116,
                 "end": 116.22000122070312
-            },
+            }
+        ],
+        "translationEn": "The washerman took his horse and his donkey out of the stable.",
+        "translationVi": "Người giặt lấy ngựa và lừa của mình ra khỏi chuồng."
+    },
+    {
+        "text": "und machte sich auf den Weg.",
+        "start": 116.22000122070312,
+        "end": 117.83999633789062,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 116.22000122070312,
@@ -1364,20 +1399,20 @@
             {
                 "word": "Weg.",
                 "start": 117.63999938964844,
-                "end": 118.13999633789062
+                "end": 117.83999633789062
             }
         ],
-        "translationEn": "The washerman fetched his horse and his donkey from the stable and set off on his way.",
-        "translationVi": "Người giặt đồ lấy ngựa và lừa của mình từ chuồng ra và bắt đầu lên đường."
+        "translationEn": "and set off on the way.",
+        "translationVi": "và bắt đầu lên đường."
     },
     {
         "text": "Ich bin gekommen, um deine schmutzige Wäsche zu holen.",
-        "start": 118.71999969482422,
-        "end": 122.02000122070312,
+        "start": 118.81999969482422,
+        "end": 121.72000122070312,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 118.71999969482422,
+                "start": 118.81999969482422,
                 "end": 118.81999969482422
             },
             {
@@ -1418,7 +1453,7 @@
             {
                 "word": "holen.",
                 "start": 121.36000061035156,
-                "end": 122.02000122070312
+                "end": 121.72000122070312
             }
         ],
         "translationEn": "I have come to collect your dirty laundry.",
@@ -1426,12 +1461,12 @@
     },
     {
         "text": "Schön, dass du da bist, Wäschemann.",
-        "start": 123.06000366210938,
-        "end": 125.28000335693359,
+        "start": 123.16000366210938,
+        "end": 124.9800033569336,
         "wordTimings": [
             {
                 "word": "Schön,",
-                "start": 123.06000366210938,
+                "start": 123.16000366210938,
                 "end": 123.72000122070312
             },
             {
@@ -1457,7 +1492,7 @@
             {
                 "word": "Wäschemann.",
                 "start": 124.68000030517578,
-                "end": 125.28000335693359
+                "end": 124.9800033569336
             }
         ],
         "translationEn": "Nice to see you, Laundry Man.",
@@ -1465,12 +1500,12 @@
     },
     {
         "text": "Hier, das ist die schmutzige Wäsche, die wir die ganze Woche gesammelt haben.",
-        "start": 125.30000152587891,
-        "end": 129.4199951171875,
+        "start": 125.4000015258789,
+        "end": 129.1199951171875,
         "wordTimings": [
             {
                 "word": "Hier,",
-                "start": 125.30000152587891,
+                "start": 125.4000015258789,
                 "end": 125.68000030517578
             },
             {
@@ -1531,27 +1566,26 @@
             {
                 "word": "haben.",
                 "start": 128.8000030517578,
-                "end": 129.4199951171875
+                "end": 129.1199951171875
             }
         ],
         "translationEn": "Here, this is the dirty laundry we have collected all week.",
-        "translationVi": "Đây là quần áo bẩn mà chúng tôi đã thu thập suốt cả tuần."
+        "translationVi": "Đây, đó là quần áo bẩn mà chúng ta đã thu thập suốt cả tuần."
     },
     {
-        "text": "Danke, Ma'am, ich bringe Ihnen Ihre Kleidung so schnell wie möglich zurück.",
-        "start": 129.81999816894532,
-        "end": 133.93999938964845,
+        "text": "Danke, Ma, ich bringe Ihnen Ihre Kleidung so schnell wie möglich zurück.",
+        "start": 129.9199981689453,
+        "end": 133.63999938964844,
         "wordTimings": [
             {
                 "word": "Danke,",
-                "start": 129.81999816894532,
+                "start": 129.9199981689453,
                 "end": 130.3000030517578
             },
             {
-                "word": "Ma'am,",
-                "start": 130.3000030517578,
-                "end": 130.60000305175782,
-                "estimated": true
+                "word": "Ma,",
+                "start": 130.55999755859375,
+                "end": 130.66000366210938
             },
             {
                 "word": "ich",
@@ -1601,20 +1635,20 @@
             {
                 "word": "zurück.",
                 "start": 133.1999969482422,
-                "end": 133.93999938964845
+                "end": 133.63999938964844
             }
         ],
-        "translationEn": "Thank you, Ma'am, I will bring your clothes back to you as quickly as possible.",
-        "translationVi": "Cảm ơn, thưa bà, tôi sẽ mang quần áo của bà trở lại nhanh nhất có thể."
+        "translationEn": "Thank you, Ma, I will bring your clothes back to you as soon as possible.",
+        "translationVi": "Cảm ơn mẹ, con sẽ mang quần áo của mẹ trở lại nhanh nhất có thể."
     },
     {
         "text": "Der Wäschemann klopfte an die Türen aller Häuser des Dorfes.",
-        "start": 133.53999938964844,
-        "end": 138.1999938964844,
+        "start": 133.63999938964844,
+        "end": 137.89999389648438,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 133.53999938964844,
+                "start": 133.63999938964844,
                 "end": 133.83999633789062
             },
             {
@@ -1660,20 +1694,20 @@
             {
                 "word": "Dorfes.",
                 "start": 137.5800018310547,
-                "end": 138.1999938964844
+                "end": 137.89999389648438
             }
         ],
         "translationEn": "The laundry man knocked on the doors of all the houses in the village.",
         "translationVi": "Người giặt đồ gõ cửa tất cả các ngôi nhà trong làng."
     },
     {
-        "text": "Er sammelte eine Menge schmutziger Wäsche aus fast fünfzehn Häusern.",
-        "start": 140.03999938964844,
-        "end": 144.13999633789064,
+        "text": "Er sammelte eine Menge schmutziger Wäsche aus fast 15 Häusern",
+        "start": 140.13999938964844,
+        "end": 143.83999633789062,
         "wordTimings": [
             {
                 "word": "Er",
-                "start": 140.03999938964844,
+                "start": 140.13999938964844,
                 "end": 140.13999938964844
             },
             {
@@ -1712,27 +1746,27 @@
                 "end": 142.67999267578125
             },
             {
-                "word": "fünfzehn",
+                "word": "15",
                 "start": 142.67999267578125,
                 "end": 143.3000030517578
             },
             {
-                "word": "Häusern.",
+                "word": "Häusern",
                 "start": 143.3000030517578,
-                "end": 144.13999633789064
+                "end": 143.83999633789062
             }
         ],
-        "translationEn": "He collected a lot of dirty laundry from almost fifteen houses.",
-        "translationVi": "Ông đã thu gom một đống quần áo bẩn từ gần mười lăm ngôi nhà."
+        "translationEn": "He collected a lot of dirty laundry from almost 15 houses.",
+        "translationVi": "Anh ấy đã thu thập một đống quần áo bẩn từ gần 15 ngôi nhà."
     },
     {
-        "text": "Und er lud die ganze Ladung auf den armen Esel.",
-        "start": 144.22000732421876,
-        "end": 147.33999328613282,
+        "text": "und er lud die ganze Ladung auf den armen Esel.",
+        "start": 144.36000061035156,
+        "end": 147.0399932861328,
         "wordTimings": [
             {
-                "word": "Und",
-                "start": 144.22000732421876,
+                "word": "und",
+                "start": 144.36000061035156,
                 "end": 144.55999755859375
             },
             {
@@ -1763,11 +1797,11 @@
             {
                 "word": "auf",
                 "start": 145.74000549316406,
-                "end": 145.9600067138672
+                "end": 145.97999572753906
             },
             {
                 "word": "den",
-                "start": 145.9600067138672,
+                "start": 145.97999572753906,
                 "end": 146.25999450683594
             },
             {
@@ -1778,59 +1812,69 @@
             {
                 "word": "Esel.",
                 "start": 146.63999938964844,
-                "end": 147.33999328613282
+                "end": 147.0399932861328
             }
         ],
-        "translationEn": "And he loaded the entire cargo onto the poor donkey.",
-        "translationVi": "Và ông đã chất toàn bộ hàng hóa lên con lừa tội nghiệp."
+        "translationEn": "and he loaded the entire cargo onto the poor donkey.",
+        "translationVi": "và ông đã chất cả hàng hóa lên con lừa tội nghiệp."
     },
     {
-        "text": "Eeeaaah, Eeeaaah, das ist zu schwer.",
-        "start": 150.23999633789063,
-        "end": 153.4999969482422,
+        "text": "E a E a, das ist zu schwer.",
+        "start": 149.02000427246094,
+        "end": 153.24000549316406,
         "wordTimings": [
             {
-                "word": "Eeeaaah,",
-                "start": 150.23999633789063,
-                "end": 150.97999572753906
+                "word": "E",
+                "start": 149.02000427246094,
+                "end": 149.36000061035156
             },
             {
-                "word": "Eeeaaah,",
-                "start": 150.97999572753906,
-                "end": 151.6199951171875
+                "word": "a",
+                "start": 149.36000061035156,
+                "end": 149.63999938964844
+            },
+            {
+                "word": "E",
+                "start": 149.77999877929688,
+                "end": 150.82000732421875
+            },
+            {
+                "word": "a,",
+                "start": 150.82000732421875,
+                "end": 151.3000030517578
             },
             {
                 "word": "das",
-                "start": 151.67999267578125,
-                "end": 151.97999572753906
+                "start": 151.6999969482422,
+                "end": 152
             },
             {
                 "word": "ist",
-                "start": 151.97999572753906,
+                "start": 152,
                 "end": 152.24000549316406
             },
             {
                 "word": "zu",
                 "start": 152.24000549316406,
-                "end": 152.66000366210938
+                "end": 152.75999450683594
             },
             {
                 "word": "schwer.",
-                "start": 152.66000366210938,
-                "end": 153.4999969482422
+                "start": 152.75999450683594,
+                "end": 153.24000549316406
             }
         ],
-        "translationEn": "Eeeaaah, Eeeaaah, that is too difficult.",
-        "translationVi": "Ôi không, ôi không, cái này quá khó."
+        "translationEn": "E a E a, that is too hard.",
+        "translationVi": "E a E a, cái đó quá khó."
     },
     {
-        "text": "An diesem Tag ging der Wäscher neben dem Esel her, damit die Lasten nicht umkippten.",
-        "start": 154.95999755859376,
-        "end": 160.16000061035157,
+        "text": "An diesem Tag ging der Wäscher neben dem Esel her,",
+        "start": 155.24000549316406,
+        "end": 157.94000244140625,
         "wordTimings": [
             {
                 "word": "An",
-                "start": 154.95999755859376,
+                "start": 155.24000549316406,
                 "end": 155.32000732421875
             },
             {
@@ -1866,18 +1910,27 @@
             {
                 "word": "dem",
                 "start": 157.0399932861328,
-                "end": 157.3000030517578
+                "end": 157.32000732421875
             },
             {
                 "word": "Esel",
-                "start": 157.3000030517578,
+                "start": 157.32000732421875,
                 "end": 157.55999755859375
             },
             {
                 "word": "her,",
                 "start": 157.55999755859375,
-                "end": 157.89999389648438
-            },
+                "end": 157.94000244140625
+            }
+        ],
+        "translationEn": "On that day, the washerman walked alongside the donkey,",
+        "translationVi": "Vào ngày hôm đó, người giặt đi bên cạnh con lừa,"
+    },
+    {
+        "text": "damit die Lasten nicht umkippten.",
+        "start": 158.22000122070312,
+        "end": 159.86000061035156,
+        "wordTimings": [
             {
                 "word": "damit",
                 "start": 158.22000122070312,
@@ -1886,11 +1939,11 @@
             {
                 "word": "die",
                 "start": 158.33999633789062,
-                "end": 158.5800018310547
+                "end": 158.60000610351562
             },
             {
                 "word": "Lasten",
-                "start": 158.5800018310547,
+                "start": 158.60000610351562,
                 "end": 159.1199951171875
             },
             {
@@ -1901,20 +1954,20 @@
             {
                 "word": "umkippten.",
                 "start": 159.24000549316406,
-                "end": 160.16000061035157
+                "end": 159.86000061035156
             }
         ],
-        "translationEn": "On that day, the washer walked alongside the donkey so that the loads wouldn't tip over.",
-        "translationVi": "Vào ngày hôm đó, người giặt đồ đi bên cạnh con lừa để tránh cho các gánh nặng không bị đổ."
+        "translationEn": "so that the loads would not tip over.",
+        "translationVi": "để các tải không bị đổ."
     },
     {
-        "text": "Aber der Esel, der sehr müde war, konnte es nicht aushalten und setzte sich mitten auf die Straße.",
-        "start": 159.76000061035157,
-        "end": 167.4199951171875,
+        "text": "Aber der Esel, der sehr müde war, konnte es nicht aushalten",
+        "start": 159.86000061035156,
+        "end": 164.24000549316406,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 159.76000061035157,
+                "start": 159.86000061035156,
                 "end": 161
             },
             {
@@ -1966,7 +2019,16 @@
                 "word": "aushalten",
                 "start": 163.67999267578125,
                 "end": 164.24000549316406
-            },
+            }
+        ],
+        "translationEn": "But the donkey, which was very tired, could not stand it.",
+        "translationVi": "Nhưng con lừa, rất mệt mỏi, không thể chịu đựng được."
+    },
+    {
+        "text": "und setzte sich mitten auf die Straße.",
+        "start": 164.24000549316406,
+        "end": 167.1199951171875,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 164.24000549316406,
@@ -2000,20 +2062,20 @@
             {
                 "word": "Straße.",
                 "start": 166.74000549316406,
-                "end": 167.4199951171875
+                "end": 167.1199951171875
             }
         ],
-        "translationEn": "But the donkey, which was very tired, could not stand it and sat down in the middle of the road.",
-        "translationVi": "Nhưng con lừa, rất mệt mỏi, không thể chịu đựng được nữa và đã ngồi giữa đường."
+        "translationEn": "and sat down in the middle of the street.",
+        "translationVi": "và ngồi giữa đường."
     },
     {
         "text": "Was ist passiert, Esel? Du bist sehr müde, nicht wahr?",
-        "start": 169.87999572753907,
-        "end": 173.47999267578126,
+        "start": 169.97999572753906,
+        "end": 173.17999267578125,
         "wordTimings": [
             {
                 "word": "Was",
-                "start": 169.87999572753907,
+                "start": 169.97999572753906,
                 "end": 170.1999969482422
             },
             {
@@ -2059,7 +2121,7 @@
             {
                 "word": "wahr?",
                 "start": 173.02000427246094,
-                "end": 173.47999267578126
+                "end": 173.17999267578125
             }
         ],
         "translationEn": "What happened, donkey? You are very tired, aren't you?",
@@ -2067,12 +2129,12 @@
     },
     {
         "text": "Wir ruhen uns besser ein wenig aus.",
-        "start": 173.72000732421876,
-        "end": 176.4600036621094,
+        "start": 173.82000732421875,
+        "end": 176.16000366210938,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 173.72000732421876,
+                "start": 173.82000732421875,
                 "end": 174.4600067138672
             },
             {
@@ -2093,17 +2155,17 @@
             {
                 "word": "ein",
                 "start": 175.0800018310547,
-                "end": 175.33999633789062
+                "end": 175.36000061035156
             },
             {
                 "word": "wenig",
-                "start": 175.33999633789062,
+                "start": 175.36000061035156,
                 "end": 175.66000366210938
             },
             {
                 "word": "aus.",
                 "start": 175.66000366210938,
-                "end": 176.4600036621094
+                "end": 176.16000366210938
             }
         ],
         "translationEn": "We should rest a little.",
@@ -2111,12 +2173,12 @@
     },
     {
         "text": "Der Wäschemann legte sich unter einen Baum, um sich auszuruhen.",
-        "start": 177.3600067138672,
-        "end": 181.27999572753907,
+        "start": 177.4600067138672,
+        "end": 180.97999572753906,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 177.3600067138672,
+                "start": 177.4600067138672,
                 "end": 177.66000366210938
             },
             {
@@ -2162,63 +2224,64 @@
             {
                 "word": "auszuruhen.",
                 "start": 180.1999969482422,
-                "end": 181.27999572753907
+                "end": 180.97999572753906
             }
         ],
         "translationEn": "The laundry man lay down under a tree to rest.",
         "translationVi": "Người giặt đồ nằm dưới một cái cây để nghỉ ngơi."
     },
     {
-        "text": "Eeeaaah, Eeeaaah, hey!",
-        "start": 182.84000244140626,
-        "end": 185.54000549316407,
+        "text": "E a E a, hey, was denn?",
+        "start": 181.9499969482422,
+        "end": 186.9600067138672,
         "wordTimings": [
             {
-                "word": "Eeeaaah,",
-                "start": 182.84000244140626,
-                "end": 183.6999969482422
+                "word": "E",
+                "start": 181.9499969482422,
+                "end": 182.4199981689453
             },
             {
-                "word": "Eeeaaah,",
-                "start": 183.6999969482422,
-                "end": 184.4600067138672
+                "word": "a",
+                "start": 182.4199981689453,
+                "end": 182.77999877929688
             },
             {
-                "word": "hey!",
-                "start": 184.86000061035156,
-                "end": 185.54000549316407
-            }
-        ],
-        "translationEn": "Eeeaaah, Eeeaaah, hey!",
-        "translationVi": "Eeeaaah, Eeeaaah, hey!"
-    },
-    {
-        "text": "Was denn?",
-        "start": 185.95999755859376,
-        "end": 187.1999938964844,
-        "wordTimings": [
+                "word": "E",
+                "start": 183.3000030517578,
+                "end": 183.86000061035156
+            },
             {
-                "word": "Was",
-                "start": 185.95999755859376,
-                "end": 186.5
+                "word": "a,",
+                "start": 183.86000061035156,
+                "end": 184.5
+            },
+            {
+                "word": "hey,",
+                "start": 184.5,
+                "end": 184.97999572753906
+            },
+            {
+                "word": "was",
+                "start": 186.17999267578125,
+                "end": 186.47999572753906
             },
             {
                 "word": "denn?",
-                "start": 186.5,
-                "end": 187.1999938964844
+                "start": 186.47999572753906,
+                "end": 186.9600067138672
             }
         ],
-        "translationEn": "What then?",
-        "translationVi": "Cái gì vậy?"
+        "translationEn": "E a E a, hey, what's up?",
+        "translationVi": "E a E a, hey, có chuyện gì vậy?"
     },
     {
         "text": "Ich wollte nur sagen, dass heute meine Last schwerer ist als sonst.",
-        "start": 187.5999969482422,
-        "end": 194.13999633789064,
+        "start": 187.97999572753906,
+        "end": 193.82000732421875,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 187.5999969482422,
+                "start": 187.97999572753906,
                 "end": 188.4199981689453
             },
             {
@@ -2229,26 +2292,26 @@
             {
                 "word": "nur",
                 "start": 188.75999450683594,
-                "end": 189.75999450683594
+                "end": 189.77999877929688
             },
             {
                 "word": "sagen,",
-                "start": 189.75999450683594,
-                "end": 189.75999450683594
+                "start": 189.77999877929688,
+                "end": 189.77999877929688
             },
             {
                 "word": "dass",
-                "start": 190.22000122070312,
-                "end": 190.39999389648438
+                "start": 190.32000732421875,
+                "end": 190.4199981689453
             },
             {
                 "word": "heute",
-                "start": 190.39999389648438,
-                "end": 191.3000030517578
+                "start": 190.4199981689453,
+                "end": 191.32000732421875
             },
             {
                 "word": "meine",
-                "start": 191.3000030517578,
+                "start": 191.32000732421875,
                 "end": 191.89999389648438
             },
             {
@@ -2264,30 +2327,30 @@
             {
                 "word": "ist",
                 "start": 192.9600067138672,
-                "end": 193.1199951171875
+                "end": 193.13999938964844
             },
             {
                 "word": "als",
-                "start": 193.1199951171875,
+                "start": 193.13999938964844,
                 "end": 193.4199981689453
             },
             {
                 "word": "sonst.",
                 "start": 193.4199981689453,
-                "end": 194.13999633789064
+                "end": 193.82000732421875
             }
         ],
         "translationEn": "I just wanted to say that today my burden is heavier than usual.",
-        "translationVi": "Tôi chỉ muốn nói rằng hôm nay gánh nặng của tôi nặng hơn mọi khi."
+        "translationVi": "Tôi chỉ muốn nói rằng hôm nay gánh nặng của tôi nặng hơn bình thường."
     },
     {
         "text": "Könntest du nicht ein wenig helfen?",
-        "start": 194.50000610351563,
-        "end": 197.5799987792969,
+        "start": 194.55999755859375,
+        "end": 197.27999877929688,
         "wordTimings": [
             {
                 "word": "Könntest",
-                "start": 194.50000610351563,
+                "start": 194.55999755859375,
                 "end": 194.82000732421875
             },
             {
@@ -2298,45 +2361,45 @@
             {
                 "word": "nicht",
                 "start": 195.02000427246094,
-                "end": 195.27999877929688
+                "end": 195.3000030517578
             },
             {
                 "word": "ein",
-                "start": 195.27999877929688,
-                "end": 196.0399932861328
+                "start": 195.3000030517578,
+                "end": 196.72000122070312
             },
             {
                 "word": "wenig",
-                "start": 196.0399932861328,
-                "end": 196.5
+                "start": 196.72000122070312,
+                "end": 196.72000122070312
             },
             {
                 "word": "helfen?",
-                "start": 196.5,
-                "end": 197.5799987792969
+                "start": 196.72000122070312,
+                "end": 197.27999877929688
             }
         ],
         "translationEn": "Could you help a little?",
-        "translationVi": "Bạn có thể giúp một chút không?"
+        "translationVi": "Bạn có thể giúp một chút được không?"
     },
     {
         "text": "Es tut mir leid, Esel, aber es ist nicht meine Aufgabe, Wäsche zu tragen.",
-        "start": 198.64000549316407,
-        "end": 204.13999633789064,
+        "start": 198.55999755859375,
+        "end": 203.83999633789062,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 198.64000549316407,
+                "start": 198.55999755859375,
                 "end": 199.5
             },
             {
                 "word": "tut",
                 "start": 199.5,
-                "end": 199.8000030517578
+                "end": 199.82000732421875
             },
             {
                 "word": "mir",
-                "start": 199.8000030517578,
+                "start": 199.82000732421875,
                 "end": 200.33999633789062
             },
             {
@@ -2352,11 +2415,11 @@
             {
                 "word": "aber",
                 "start": 200.94000244140625,
-                "end": 201.1199951171875
+                "end": 201.13999938964844
             },
             {
                 "word": "es",
-                "start": 201.1199951171875,
+                "start": 201.13999938964844,
                 "end": 201.63999938964844
             },
             {
@@ -2392,109 +2455,109 @@
             {
                 "word": "tragen.",
                 "start": 203.83999633789062,
-                "end": 204.13999633789064
+                "end": 203.83999633789062
             }
         ],
-        "translationEn": "I'm sorry, donkey, but it is not my job to carry laundry.",
-        "translationVi": "Xin lỗi, lừa ạ, nhưng không phải nhiệm vụ của tôi là mang giặt giũ."
+        "translationEn": "I'm sorry, donkey, but it's not my job to carry laundry.",
+        "translationVi": "Xin lỗi, lừa, nhưng đó không phải là nhiệm vụ của tôi để mang giặt giũ."
     },
     {
         "text": "Der Wäscher stand schließlich auf und sie machten sich alle wieder auf den Weg.",
-        "start": 205.7800048828125,
-        "end": 210.6999938964844,
+        "start": 205.9600067138672,
+        "end": 210.4199981689453,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 205.7800048828125,
-                "end": 206.63999938964844
+                "start": 205.9600067138672,
+                "end": 206.6199951171875
             },
             {
                 "word": "Wäscher",
-                "start": 206.63999938964844,
-                "end": 207.13999938964844
+                "start": 206.6199951171875,
+                "end": 207.0399932861328
             },
             {
                 "word": "stand",
-                "start": 207.13999938964844,
-                "end": 207.33999633789062
+                "start": 207.0399932861328,
+                "end": 207.32000732421875
             },
             {
                 "word": "schließlich",
-                "start": 207.33999633789062,
-                "end": 207.8800048828125
+                "start": 207.32000732421875,
+                "end": 207.9199981689453
             },
             {
                 "word": "auf",
-                "start": 207.8800048828125,
+                "start": 207.9199981689453,
                 "end": 208.24000549316406
             },
             {
                 "word": "und",
                 "start": 208.24000549316406,
-                "end": 208.47999572753906
+                "end": 208.5
             },
             {
                 "word": "sie",
-                "start": 208.47999572753906,
-                "end": 208.67999267578125
+                "start": 208.5,
+                "end": 208.6999969482422
             },
             {
                 "word": "machten",
-                "start": 208.67999267578125,
-                "end": 209.05999755859375
+                "start": 208.6999969482422,
+                "end": 209.0800018310547
             },
             {
                 "word": "sich",
-                "start": 209.05999755859375,
+                "start": 209.0800018310547,
                 "end": 209.24000549316406
             },
             {
                 "word": "alle",
                 "start": 209.24000549316406,
-                "end": 209.5399932861328
+                "end": 209.55999755859375
             },
             {
                 "word": "wieder",
-                "start": 209.5399932861328,
-                "end": 209.75999450683594
+                "start": 209.55999755859375,
+                "end": 209.77999877929688
             },
             {
                 "word": "auf",
-                "start": 209.75999450683594,
+                "start": 209.77999877929688,
                 "end": 209.9600067138672
             },
             {
                 "word": "den",
                 "start": 209.9600067138672,
-                "end": 210.1999969482422
+                "end": 210.36000061035156
             },
             {
                 "word": "Weg.",
-                "start": 210.1999969482422,
-                "end": 210.6999938964844
+                "start": 210.36000061035156,
+                "end": 210.4199981689453
             }
         ],
-        "translationEn": "The washer finally got up and they all set off again.",
+        "translationEn": "The washer finally stood up and they all set off again.",
         "translationVi": "Người giặt cuối cùng đứng dậy và tất cả họ lại tiếp tục lên đường."
     },
     {
         "text": "Sie gingen ein paar Schritte, aber plötzlich fiel der Esel wieder zu Boden.",
-        "start": 210.87999572753907,
-        "end": 216.9199951171875,
+        "start": 211.5800018310547,
+        "end": 216.33999633789062,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 210.87999572753907,
-                "end": 211.52000427246094
+                "start": 211.5800018310547,
+                "end": 211.5800018310547
             },
             {
                 "word": "gingen",
-                "start": 211.52000427246094,
-                "end": 211.75999450683594
+                "start": 211.5800018310547,
+                "end": 211.77999877929688
             },
             {
                 "word": "ein",
-                "start": 211.75999450683594,
+                "start": 211.77999877929688,
                 "end": 212.1199951171875
             },
             {
@@ -2505,75 +2568,85 @@
             {
                 "word": "Schritte,",
                 "start": 212.3000030517578,
-                "end": 212.5800018310547
+                "end": 212.55999755859375
             },
             {
                 "word": "aber",
                 "start": 213.1199951171875,
-                "end": 213.27999877929688
+                "end": 213.3000030517578
             },
             {
                 "word": "plötzlich",
-                "start": 213.27999877929688,
-                "end": 213.8000030517578
+                "start": 213.3000030517578,
+                "end": 213.75999450683594
             },
             {
                 "word": "fiel",
-                "start": 213.8000030517578,
-                "end": 213.97999572753906
+                "start": 213.75999450683594,
+                "end": 214
             },
             {
                 "word": "der",
-                "start": 213.97999572753906,
-                "end": 214.25999450683594
+                "start": 214,
+                "end": 214.33999633789062
             },
             {
                 "word": "Esel",
-                "start": 214.25999450683594,
-                "end": 214.47999572753906
+                "start": 214.33999633789062,
+                "end": 214.5
             },
             {
                 "word": "wieder",
-                "start": 214.47999572753906,
-                "end": 214.8800048828125
+                "start": 214.5,
+                "end": 214.86000061035156
             },
             {
                 "word": "zu",
-                "start": 214.8800048828125,
-                "end": 216.6199951171875
+                "start": 214.86000061035156,
+                "end": 216.33999633789062
             },
             {
                 "word": "Boden.",
-                "start": 216.6199951171875,
-                "end": 216.9199951171875
+                "start": 216.33999633789062,
+                "end": 216.33999633789062
             }
         ],
         "translationEn": "They took a few steps, but suddenly the donkey fell to the ground again.",
         "translationVi": "Họ đi được vài bước, nhưng đột nhiên con lừa lại ngã xuống đất."
     },
     {
-        "text": "Eeeaaah, Eeeaaah, oh mein armer Esel!",
-        "start": 217.67999877929688,
-        "end": 222.27999572753907,
+        "text": "E a E a, oh mein armer Esel, ich habe dich sehr müde gemacht, heute, nicht wahr?",
+        "start": 217.02000427246094,
+        "end": 225.16000366210938,
         "wordTimings": [
             {
-                "word": "Eeeaaah,",
-                "start": 217.67999877929688,
-                "end": 218.44000244140625
+                "word": "E",
+                "start": 217.02000427246094,
+                "end": 217.27999877929688
             },
             {
-                "word": "Eeeaaah,",
-                "start": 219.33999633789062,
-                "end": 220
+                "word": "a",
+                "start": 217.27999877929688,
+                "end": 218.22000122070312
+            },
+            {
+                "word": "E",
+                "start": 218.3000030517578,
+                "end": 219.24000549316406
+            },
+            {
+                "word": "a,",
+                "start": 219.24000549316406,
+                "end": 220.16000366210938
             },
             {
                 "word": "oh",
-                "start": 220.6199951171875,
-                "end": 221.1199951171875
+                "start": 220.16000366210938,
+                "end": 221.16000366210938
             },
             {
                 "word": "mein",
-                "start": 221.1199951171875,
+                "start": 221.16000366210938,
                 "end": 221.33999633789062
             },
             {
@@ -2582,115 +2655,106 @@
                 "end": 221.63999938964844
             },
             {
-                "word": "Esel!",
+                "word": "Esel,",
                 "start": 221.63999938964844,
-                "end": 222.27999572753907
-            }
-        ],
-        "translationEn": "Eeeaaah, Eeeaaah, oh my poor donkey!",
-        "translationVi": "Ôi trời ơi, ôi trời ơi, ôi con lừa tội nghiệp của tôi!"
-    },
-    {
-        "text": "Ich habe dich sehr müde gemacht heute, nicht wahr?",
-        "start": 222.53999938964844,
-        "end": 225.4600036621094,
-        "wordTimings": [
+                "end": 221.97999572753906
+            },
             {
-                "word": "Ich",
-                "start": 222.53999938964844,
+                "word": "ich",
+                "start": 222.6999969482422,
                 "end": 222.94000244140625
             },
             {
                 "word": "habe",
                 "start": 222.94000244140625,
-                "end": 223.1199951171875
+                "end": 223.13999938964844
             },
             {
                 "word": "dich",
-                "start": 223.1199951171875,
+                "start": 223.13999938964844,
                 "end": 223.3000030517578
             },
             {
                 "word": "sehr",
                 "start": 223.3000030517578,
-                "end": 223.74000549316406
+                "end": 223.82000732421875
             },
             {
                 "word": "müde",
-                "start": 223.74000549316406,
+                "start": 223.82000732421875,
                 "end": 223.8800048828125
             },
             {
-                "word": "gemacht",
+                "word": "gemacht,",
                 "start": 223.8800048828125,
-                "end": 224.24000549316406
+                "end": 224.22000122070312
             },
             {
                 "word": "heute,",
-                "start": 224.24000549316406,
-                "end": 224.6199951171875
+                "start": 224.22000122070312,
+                "end": 224.60000610351562
             },
             {
                 "word": "nicht",
-                "start": 224.6999969482422,
-                "end": 224.89999389648438
+                "start": 224.72000122070312,
+                "end": 224.94000244140625
             },
             {
                 "word": "wahr?",
-                "start": 224.89999389648438,
-                "end": 225.4600036621094
+                "start": 224.94000244140625,
+                "end": 225.16000366210938
             }
         ],
-        "translationEn": "I made you very tired today, didn't I?",
-        "translationVi": "Hôm nay tôi đã làm bạn rất mệt, phải không?"
+        "translationEn": "Oh my poor donkey, I have made you very tired today, haven't I?",
+        "translationVi": "Ôi, con lừa tội nghiệp của tôi, hôm nay tôi đã làm cho bạn rất mệt, phải không?"
     },
     {
         "text": "Komm schon, trinke etwas Wasser.",
-        "start": 225.92000427246094,
-        "end": 228.35999755859376,
+        "start": 226.0399932861328,
+        "end": 228.0399932861328,
         "wordTimings": [
             {
                 "word": "Komm",
-                "start": 225.92000427246094,
+                "start": 226.0399932861328,
                 "end": 226.27999877929688
             },
             {
                 "word": "schon,",
                 "start": 226.27999877929688,
-                "end": 226.60000610351562
+                "end": 226.6199951171875
             },
             {
                 "word": "trinke",
-                "start": 227.27999877929688,
+                "start": 227.25999450683594,
                 "end": 227.3000030517578
             },
             {
                 "word": "etwas",
                 "start": 227.3000030517578,
-                "end": 227.6999969482422
+                "end": 227.67999267578125
             },
             {
                 "word": "Wasser.",
-                "start": 227.6999969482422,
-                "end": 228.35999755859376
+                "start": 227.67999267578125,
+                "end": 228.0399932861328
             }
         ],
         "translationEn": "Come on, drink some water.",
         "translationVi": "Nào, uống một chút nước đi."
     },
     {
-        "text": "Der Wäschemann nahm die ganze Wäsche vom Esel und legte sie auf den Rücken des Pferdes.",
-        "start": 229.3600067138672,
-        "end": 234.4999969482422,
+        "text": "Der Wäschemann nahm die ganze Wäsche vom Esel",
+        "start": 228.9600067138672,
+        "end": 231.8000030517578,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 229.3600067138672,
-                "end": 229.6199951171875
+                "start": 228.9600067138672,
+                "end": 229.55999755859375
             },
             {
                 "word": "Wäschemann",
-                "start": 229.6199951171875,
+                "start": 229.55999755859375,
                 "end": 230.1199951171875
             },
             {
@@ -2701,154 +2765,139 @@
             {
                 "word": "die",
                 "start": 230.3800048828125,
-                "end": 230.52000427246094
+                "end": 230.5
             },
             {
                 "word": "ganze",
-                "start": 230.52000427246094,
-                "end": 231
+                "start": 230.5,
+                "end": 231.1199951171875
             },
             {
                 "word": "Wäsche",
-                "start": 231,
+                "start": 231.1199951171875,
                 "end": 231.1199951171875
             },
             {
                 "word": "vom",
                 "start": 231.1199951171875,
-                "end": 231.44000244140625
+                "end": 231.4600067138672
             },
             {
                 "word": "Esel",
-                "start": 231.44000244140625,
+                "start": 231.4600067138672,
                 "end": 231.8000030517578
-            },
+            }
+        ],
+        "translationEn": "The laundry man took all the laundry off the donkey.",
+        "translationVi": "Người giặt đã lấy toàn bộ quần áo từ lừa."
+    },
+    {
+        "text": "und legte sie auf den Rücken des Pferdes.",
+        "start": 231.8000030517578,
+        "end": 234.16000366210938,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 231.8000030517578,
-                "end": 232.1999969482422
+                "end": 232.17999267578125
             },
             {
                 "word": "legte",
-                "start": 232.1999969482422,
+                "start": 232.17999267578125,
                 "end": 232.5
             },
             {
                 "word": "sie",
                 "start": 232.5,
-                "end": 232.66000366210938
+                "end": 232.67999267578125
             },
             {
                 "word": "auf",
-                "start": 232.66000366210938,
+                "start": 232.67999267578125,
                 "end": 232.82000732421875
             },
             {
                 "word": "den",
                 "start": 232.82000732421875,
-                "end": 233.1199951171875
+                "end": 233.3000030517578
             },
             {
                 "word": "Rücken",
-                "start": 233.1199951171875,
-                "end": 233.25999450683594
+                "start": 233.3000030517578,
+                "end": 233.3000030517578
             },
             {
                 "word": "des",
-                "start": 233.25999450683594,
-                "end": 233.55999755859375
+                "start": 233.3000030517578,
+                "end": 233.5800018310547
             },
             {
                 "word": "Pferdes.",
-                "start": 233.55999755859375,
-                "end": 234.4999969482422
+                "start": 233.5800018310547,
+                "end": 234.16000366210938
             }
         ],
-        "translationEn": "The laundry man took all the laundry off the donkey and placed it on the back of the horse.",
-        "translationVi": "Người giặt đồ đã lấy toàn bộ quần áo từ lừa và đặt lên lưng ngựa."
-    },
-    {
-        "text": "Au, au, au!",
-        "start": 234.56000366210938,
-        "end": 238.35999755859376,
-        "wordTimings": [
-            {
-                "word": "Au,",
-                "start": 234.56000366210938,
-                "end": 235.32000732421875
-            },
-            {
-                "word": "au,",
-                "start": 236.27999877929688,
-                "end": 236.94000244140625
-            },
-            {
-                "word": "au!",
-                "start": 237.39999389648438,
-                "end": 238.35999755859376
-            }
-        ],
-        "translationEn": "Ouch, ouch, ouch!",
-        "translationVi": "Ôi, ôi, ôi!"
+        "translationEn": "and placed her on the back of the horse.",
+        "translationVi": "và đặt chúng lên lưng ngựa."
     },
     {
         "text": "Der Esel fühlte sich endlich besser, aber diesmal war die Last des Pferdes zu groß für ihn.",
-        "start": 239.65999450683594,
-        "end": 245.66000061035157,
+        "start": 239.8000030517578,
+        "end": 245.4600067138672,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 239.65999450683594,
-                "end": 240.33999633789062
+                "start": 239.8000030517578,
+                "end": 240.39999389648438
             },
             {
                 "word": "Esel",
-                "start": 240.33999633789062,
-                "end": 240.74000549316406
+                "start": 240.39999389648438,
+                "end": 240.75999450683594
             },
             {
                 "word": "fühlte",
-                "start": 240.74000549316406,
-                "end": 241.22000122070312
+                "start": 240.75999450683594,
+                "end": 241.1999969482422
             },
             {
                 "word": "sich",
-                "start": 241.22000122070312,
+                "start": 241.1999969482422,
                 "end": 241.4199981689453
             },
             {
                 "word": "endlich",
                 "start": 241.4199981689453,
-                "end": 242.02000427246094
+                "end": 242
             },
             {
                 "word": "besser,",
-                "start": 242.02000427246094,
+                "start": 242,
                 "end": 242.13999938964844
             },
             {
                 "word": "aber",
-                "start": 242.55999755859375,
-                "end": 242.55999755859375
+                "start": 242.52000427246094,
+                "end": 242.5399932861328
             },
             {
                 "word": "diesmal",
-                "start": 242.55999755859375,
-                "end": 243.0800018310547
+                "start": 242.5399932861328,
+                "end": 243.05999755859375
             },
             {
                 "word": "war",
-                "start": 243.0800018310547,
+                "start": 243.05999755859375,
                 "end": 243.24000549316406
             },
             {
                 "word": "die",
                 "start": 243.24000549316406,
-                "end": 243.44000244140625
+                "end": 243.5800018310547
             },
             {
                 "word": "Last",
-                "start": 243.44000244140625,
+                "start": 243.5800018310547,
                 "end": 243.67999267578125
             },
             {
@@ -2859,16 +2908,16 @@
             {
                 "word": "Pferdes",
                 "start": 243.9199981689453,
-                "end": 244.3800048828125
+                "end": 244.36000061035156
             },
             {
                 "word": "zu",
-                "start": 244.3800048828125,
-                "end": 244.6999969482422
+                "start": 244.36000061035156,
+                "end": 244.75999450683594
             },
             {
                 "word": "groß",
-                "start": 244.6999969482422,
+                "start": 244.75999450683594,
                 "end": 244.89999389648438
             },
             {
@@ -2879,20 +2928,20 @@
             {
                 "word": "ihn.",
                 "start": 245.17999267578125,
-                "end": 245.66000061035157
+                "end": 245.4600067138672
             }
         ],
         "translationEn": "The donkey finally felt better, but this time the horse's load was too heavy for him.",
         "translationVi": "Con lừa cuối cùng cũng cảm thấy tốt hơn, nhưng lần này gánh nặng của con ngựa quá lớn đối với nó."
     },
     {
-        "text": "Ich hätte die Hälfte der Wäsche von Anfang an auf den Rücken des Pferdes packen sollen, damit der Esel nicht zu Schaden kommt.",
-        "start": 247.7800048828125,
-        "end": 254.9600036621094,
+        "text": "Ich hätte die Hälfte der Wäsche von Anfang an auf den Rücken des Pferdes packen sollen,",
+        "start": 247.8800048828125,
+        "end": 251.8800048828125,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 247.7800048828125,
+                "start": 247.8800048828125,
                 "end": 247.8800048828125
             },
             {
@@ -2903,46 +2952,46 @@
             {
                 "word": "die",
                 "start": 248.17999267578125,
-                "end": 248.36000061035156
+                "end": 248.44000244140625
             },
             {
                 "word": "Hälfte",
-                "start": 248.36000061035156,
+                "start": 248.44000244140625,
                 "end": 248.66000366210938
             },
             {
                 "word": "der",
                 "start": 248.66000366210938,
-                "end": 249.25999450683594
+                "end": 249.24000549316406
             },
             {
                 "word": "Wäsche",
-                "start": 249.25999450683594,
-                "end": 249.25999450683594
+                "start": 249.24000549316406,
+                "end": 249.24000549316406
             },
             {
                 "word": "von",
-                "start": 249.25999450683594,
-                "end": 249.39999389648438
+                "start": 249.24000549316406,
+                "end": 249.4199981689453
             },
             {
                 "word": "Anfang",
-                "start": 249.39999389648438,
+                "start": 249.4199981689453,
                 "end": 249.72000122070312
             },
             {
                 "word": "an",
                 "start": 249.72000122070312,
-                "end": 250.0800018310547
+                "end": 250.05999755859375
             },
             {
                 "word": "auf",
-                "start": 250.0800018310547,
-                "end": 250.1199951171875
+                "start": 250.05999755859375,
+                "end": 250.13999938964844
             },
             {
                 "word": "den",
-                "start": 250.1199951171875,
+                "start": 250.13999938964844,
                 "end": 250.39999389648438
             },
             {
@@ -2958,26 +3007,35 @@
             {
                 "word": "Pferdes",
                 "start": 250.82000732421875,
-                "end": 251.10000610351562
+                "end": 251.0800018310547
             },
             {
                 "word": "packen",
-                "start": 251.10000610351562,
-                "end": 251.6199951171875
+                "start": 251.0800018310547,
+                "end": 251.5800018310547
             },
             {
                 "word": "sollen,",
-                "start": 251.6199951171875,
+                "start": 251.5800018310547,
                 "end": 251.8800048828125
-            },
+            }
+        ],
+        "translationEn": "I should have packed half of the laundry on the horse's back from the beginning.",
+        "translationVi": "Tôi lẽ ra nên chất một nửa số quần áo lên lưng ngựa ngay từ đầu,"
+    },
+    {
+        "text": "damit der Esel nicht zu Schaden kommt.",
+        "start": 252.5,
+        "end": 254.6199951171875,
+        "wordTimings": [
             {
                 "word": "damit",
                 "start": 252.5,
-                "end": 252.8800048828125
+                "end": 252.86000061035156
             },
             {
                 "word": "der",
-                "start": 252.8800048828125,
+                "start": 252.86000061035156,
                 "end": 253.1199951171875
             },
             {
@@ -3003,80 +3061,80 @@
             {
                 "word": "kommt.",
                 "start": 254.1999969482422,
-                "end": 254.9600036621094
+                "end": 254.6199951171875
             }
         ],
-        "translationEn": "I should have packed half of the laundry on the horse's back from the start, so that the donkey wouldn't get hurt.",
-        "translationVi": "Tôi nên đặt một nửa số quần áo ngay từ đầu lên lưng ngựa, để con lừa không bị tổn hại."
+        "translationEn": "so that the donkey does not come to harm.",
+        "translationVi": "để con lừa không bị tổn hại."
     },
     {
         "text": "Da das Pferd dem Esel nicht half, trug er die ganze Wäsche auf seinem Rücken zum Haus.",
-        "start": 256.6200012207031,
-        "end": 262.3,
+        "start": 256.2200012207031,
+        "end": 262,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 256.6200012207031,
+                "start": 256.2200012207031,
                 "end": 256.8599853515625
             },
             {
                 "word": "das",
                 "start": 256.8599853515625,
-                "end": 257.1600036621094
+                "end": 257.1400146484375
             },
             {
                 "word": "Pferd",
-                "start": 257.1600036621094,
-                "end": 257.5
+                "start": 257.1400146484375,
+                "end": 257.5199890136719
             },
             {
                 "word": "dem",
-                "start": 257.5,
+                "start": 257.5199890136719,
                 "end": 257.70001220703125
             },
             {
                 "word": "Esel",
                 "start": 257.70001220703125,
-                "end": 257.94000244140625
+                "end": 257.9599914550781
             },
             {
                 "word": "nicht",
-                "start": 257.94000244140625,
-                "end": 258.20001220703125
+                "start": 257.9599914550781,
+                "end": 258.2200012207031
             },
             {
                 "word": "half,",
-                "start": 258.20001220703125,
+                "start": 258.2200012207031,
                 "end": 258.55999755859375
             },
             {
                 "word": "trug",
                 "start": 258.9800109863281,
-                "end": 259
+                "end": 259.0199890136719
             },
             {
                 "word": "er",
-                "start": 259,
-                "end": 259.29998779296875
+                "start": 259.0199890136719,
+                "end": 259.32000732421875
             },
             {
                 "word": "die",
-                "start": 259.29998779296875,
-                "end": 259.55999755859375
+                "start": 259.32000732421875,
+                "end": 259.5400085449219
             },
             {
                 "word": "ganze",
-                "start": 259.55999755859375,
-                "end": 260.05999755859375
+                "start": 259.5400085449219,
+                "end": 260.17999267578125
             },
             {
                 "word": "Wäsche",
-                "start": 260.05999755859375,
-                "end": 260.2200012207031
+                "start": 260.17999267578125,
+                "end": 260.239990234375
             },
             {
                 "word": "auf",
-                "start": 260.2200012207031,
+                "start": 260.239990234375,
                 "end": 260.4599914550781
             },
             {
@@ -3087,35 +3145,35 @@
             {
                 "word": "Rücken",
                 "start": 260.739990234375,
-                "end": 261.0400085449219
+                "end": 261.05999755859375
             },
             {
                 "word": "zum",
-                "start": 261.0400085449219,
-                "end": 261.6400146484375
+                "start": 261.05999755859375,
+                "end": 261.6600036621094
             },
             {
                 "word": "Haus.",
-                "start": 261.6400146484375,
-                "end": 262.3
+                "start": 261.6600036621094,
+                "end": 262
             }
         ],
         "translationEn": "Since the horse did not help the donkey, he carried all the laundry on his back to the house.",
-        "translationVi": "Vì con ngựa không giúp được lừa, nó đã mang toàn bộ quần áo trên lưng về nhà."
+        "translationVi": "Vì con ngựa không giúp con lừa, nó đã mang toàn bộ đồ giặt trên lưng về nhà."
     },
     {
         "text": "Als er in der Scheune ankam, konnte er vor Erschöpfung nicht einmal mehr etwas essen.",
-        "start": 261.9,
-        "end": 269.52000122070314,
+        "start": 264.5400085449219,
+        "end": 269.1600036621094,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 261.9,
-                "end": 262.2200012207031
+                "start": 264.5400085449219,
+                "end": 264.6199951171875
             },
             {
                 "word": "er",
-                "start": 262.2200012207031,
+                "start": 264.6199951171875,
                 "end": 264.760009765625
             },
             {
@@ -3126,11 +3184,11 @@
             {
                 "word": "der",
                 "start": 264.8800048828125,
-                "end": 265.0799865722656
+                "end": 265.1000061035156
             },
             {
                 "word": "Scheune",
-                "start": 265.0799865722656,
+                "start": 265.1000061035156,
                 "end": 265.3399963378906
             },
             {
@@ -3140,7 +3198,7 @@
             },
             {
                 "word": "konnte",
-                "start": 266.1400146484375,
+                "start": 266.17999267578125,
                 "end": 266.17999267578125
             },
             {
@@ -3161,27 +3219,27 @@
             {
                 "word": "nicht",
                 "start": 267.20001220703125,
-                "end": 267.760009765625
+                "end": 267.7799987792969
             },
             {
                 "word": "einmal",
-                "start": 267.760009765625,
-                "end": 268.17999267578125
+                "start": 267.7799987792969,
+                "end": 268.1600036621094
             },
             {
                 "word": "mehr",
-                "start": 268.17999267578125,
-                "end": 268.5199890136719
+                "start": 268.1600036621094,
+                "end": 268.5400085449219
             },
             {
                 "word": "etwas",
-                "start": 268.5199890136719,
+                "start": 268.5400085449219,
                 "end": 268.82000732421875
             },
             {
                 "word": "essen.",
                 "start": 268.82000732421875,
-                "end": 269.52000122070314
+                "end": 269.1600036621094
             }
         ],
         "translationEn": "When he arrived at the barn, he was so exhausted that he couldn't even eat anything.",
@@ -3189,27 +3247,27 @@
     },
     {
         "text": "Ich habe etwas furchtbar Egoistisches getan, mein lieber Freund.",
-        "start": 269.6000122070312,
-        "end": 273.8199890136719,
+        "start": 269.7200012207031,
+        "end": 273.5400085449219,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 269.6000122070312,
-                "end": 269.70001220703125
+                "start": 269.7200012207031,
+                "end": 269.739990234375
             },
             {
                 "word": "habe",
-                "start": 269.70001220703125,
+                "start": 269.739990234375,
                 "end": 270
             },
             {
                 "word": "etwas",
                 "start": 270,
-                "end": 270.4200134277344
+                "end": 270.5799865722656
             },
             {
                 "word": "furchtbar",
-                "start": 270.4200134277344,
+                "start": 270.5799865722656,
                 "end": 271.17999267578125
             },
             {
@@ -3224,31 +3282,31 @@
             },
             {
                 "word": "mein",
-                "start": 272.8399963378906,
-                "end": 272.8800048828125
+                "start": 272.760009765625,
+                "end": 272.8599853515625
             },
             {
                 "word": "lieber",
-                "start": 272.8800048828125,
+                "start": 272.8599853515625,
                 "end": 273.1600036621094
             },
             {
                 "word": "Freund.",
                 "start": 273.1600036621094,
-                "end": 273.8199890136719
+                "end": 273.5400085449219
             }
         ],
         "translationEn": "I did something terribly selfish, my dear friend.",
         "translationVi": "Tôi đã làm một điều thật sự ích kỷ, bạn thân mến của tôi."
     },
     {
-        "text": "Es tut mir leid, ich bitte dich, verzeih mir.",
-        "start": 274.1200012207031,
-        "end": 277.52000122070314,
+        "text": "Es tut mir leid, ich bitte dich, verzeih mir. Jetzt verstehst du mich besser.",
+        "start": 274.2200012207031,
+        "end": 280.8599853515625,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 274.1200012207031,
+                "start": 274.2200012207031,
                 "end": 274.5
             },
             {
@@ -3259,16 +3317,16 @@
             {
                 "word": "mir",
                 "start": 274.5,
-                "end": 274.9599914550781
+                "end": 274.9200134277344
             },
             {
                 "word": "leid,",
-                "start": 274.9599914550781,
-                "end": 274.9599914550781
+                "start": 274.9200134277344,
+                "end": 274.9200134277344
             },
             {
                 "word": "ich",
-                "start": 275.67999267578125,
+                "start": 275.6400146484375,
                 "end": 275.8599853515625
             },
             {
@@ -3279,187 +3337,188 @@
             {
                 "word": "dich,",
                 "start": 275.9800109863281,
-                "end": 276.3399963378906
+                "end": 276.32000732421875
             },
             {
                 "word": "verzeih",
-                "start": 276.6000061035156,
-                "end": 276.82000732421875
+                "start": 276.6199951171875,
+                "end": 276.8399963378906
             },
             {
                 "word": "mir.",
-                "start": 276.82000732421875,
-                "end": 277.52000122070314
-            }
-        ],
-        "translationEn": "I'm sorry, I ask you to forgive me.",
-        "translationVi": "Xin lỗi, tôi xin bạn, hãy tha thứ cho tôi."
-    },
-    {
-        "text": "Jetzt verstehst du mich besser.",
-        "start": 278.7800048828125,
-        "end": 281.13999633789064,
-        "wordTimings": [
+                "start": 276.8399963378906,
+                "end": 277.1600036621094
+            },
             {
                 "word": "Jetzt",
-                "start": 278.7800048828125,
+                "start": 278.8800048828125,
                 "end": 279.6000061035156
             },
             {
                 "word": "verstehst",
                 "start": 279.6000061035156,
-                "end": 280.0400085449219
+                "end": 280.0199890136719
             },
             {
                 "word": "du",
-                "start": 280.0400085449219,
+                "start": 280.0199890136719,
                 "end": 280.29998779296875
             },
             {
                 "word": "mich",
                 "start": 280.29998779296875,
-                "end": 280.44000244140625
+                "end": 280.4200134277344
             },
             {
                 "word": "besser.",
-                "start": 280.44000244140625,
-                "end": 281.13999633789064
+                "start": 280.4200134277344,
+                "end": 280.8599853515625
             }
         ],
-        "translationEn": "Now you understand me better.",
-        "translationVi": "Bây giờ bạn hiểu tôi rõ hơn."
+        "translationEn": "I'm sorry, I ask you to forgive me. Now you understand me better.",
+        "translationVi": "Tôi xin lỗi, tôi cầu xin bạn, hãy tha thứ cho tôi. Bây giờ bạn hiểu tôi tốt hơn."
     },
     {
-        "text": "Helfen und Teilen ist wichtig.",
-        "start": 281.4799865722656,
-        "end": 283.63999633789064,
+        "text": "Helfen und teilen ist wichtig.",
+        "start": 281.5799865722656,
+        "end": 283.3399963378906,
         "wordTimings": [
             {
                 "word": "Helfen",
-                "start": 281.4799865722656,
+                "start": 281.5799865722656,
                 "end": 281.760009765625
             },
             {
                 "word": "und",
                 "start": 281.760009765625,
-                "end": 282.3599853515625
+                "end": 282.3800048828125
             },
             {
-                "word": "Teilen",
-                "start": 282.3599853515625,
-                "end": 282.7200012207031
+                "word": "teilen",
+                "start": 282.3800048828125,
+                "end": 282.6400146484375
             },
             {
                 "word": "ist",
-                "start": 282.7200012207031,
+                "start": 282.6400146484375,
                 "end": 282.9599914550781
             },
             {
                 "word": "wichtig.",
                 "start": 282.9599914550781,
-                "end": 283.63999633789064
+                "end": 283.3399963378906
             }
         ],
         "translationEn": "Helping and sharing is important.",
         "translationVi": "Giúp đỡ và chia sẻ là quan trọng."
     },
     {
-        "text": "Eeeaaah, Eeeaaah, vergiss das nie, mein Freund, mein lieber Freund.",
-        "start": 283.6999877929687,
-        "end": 288.6800048828125,
+        "text": "E a E a, vergiss das nie, mein Freund, mein lieber Freund.",
+        "start": 283.82000732421875,
+        "end": 288.3800048828125,
         "wordTimings": [
             {
-                "word": "Eeeaaah,",
-                "start": 283.6999877929687,
-                "end": 284.17999267578125
+                "word": "E",
+                "start": 283.82000732421875,
+                "end": 283.82000732421875
             },
             {
-                "word": "Eeeaaah,",
-                "start": 284.44000244140625,
-                "end": 285.1600036621094
+                "word": "a",
+                "start": 283.82000732421875,
+                "end": 284.05999755859375
+            },
+            {
+                "word": "E",
+                "start": 284.239990234375,
+                "end": 284.5799865722656
+            },
+            {
+                "word": "a,",
+                "start": 284.5799865722656,
+                "end": 285.2200012207031
             },
             {
                 "word": "vergiss",
-                "start": 285.5199890136719,
-                "end": 285.8999938964844
+                "start": 285.70001220703125,
+                "end": 285.8800048828125
             },
             {
                 "word": "das",
-                "start": 285.8999938964844,
-                "end": 286.1400146484375
+                "start": 285.8800048828125,
+                "end": 286.1600036621094
             },
             {
                 "word": "nie,",
-                "start": 286.1400146484375,
+                "start": 286.1600036621094,
                 "end": 286.3599853515625
             },
             {
                 "word": "mein",
-                "start": 286.4599914550781,
+                "start": 286.55999755859375,
                 "end": 286.55999755859375
             },
             {
                 "word": "Freund,",
                 "start": 286.55999755859375,
-                "end": 287.0799865722656
+                "end": 287.20001220703125
             },
             {
                 "word": "mein",
-                "start": 287.5400085449219,
+                "start": 287.55999755859375,
                 "end": 287.6600036621094
             },
             {
                 "word": "lieber",
                 "start": 287.6600036621094,
-                "end": 287.9599914550781
+                "end": 287.9800109863281
             },
             {
                 "word": "Freund.",
-                "start": 287.9599914550781,
-                "end": 288.6800048828125
+                "start": 287.9800109863281,
+                "end": 288.3800048828125
             }
         ],
-        "translationEn": "Eeeaaah, Eeeaaah, never forget that, my friend, my dear friend.",
-        "translationVi": "Eeeaaah, Eeeaaah, đừng bao giờ quên điều đó, bạn tôi, người bạn thân mến của tôi."
+        "translationEn": "E a E a, never forget that, my friend, my dear friend.",
+        "translationVi": "E a E a, đừng bao giờ quên điều đó, bạn tôi, người bạn thân yêu của tôi."
     },
     {
-        "text": "Von diesem Tag an achtete der Wäscher bei jeder großen Wäschemenge darauf, die Last zwischen ihm, dem Esel und dem Pferd aufzuteilen.",
-        "start": 289.2399963378906,
-        "end": 298.060009765625,
+        "text": "Von diesem Tag an achtete der Wäscher bei jeder großen Wäschemenge darauf,",
+        "start": 289.9800109863281,
+        "end": 294,
         "wordTimings": [
             {
                 "word": "Von",
-                "start": 289.2399963378906,
-                "end": 290.1000061035156
+                "start": 289.9800109863281,
+                "end": 290.1199951171875
             },
             {
                 "word": "diesem",
-                "start": 290.1000061035156,
-                "end": 290.4800109863281
+                "start": 290.1199951171875,
+                "end": 290.5
             },
             {
                 "word": "Tag",
-                "start": 290.4800109863281,
+                "start": 290.5,
                 "end": 290.7799987792969
             },
             {
                 "word": "an",
                 "start": 290.7799987792969,
-                "end": 291.1600036621094
+                "end": 291.3999938964844
             },
             {
                 "word": "achtete",
-                "start": 291.1600036621094,
-                "end": 291.5199890136719
+                "start": 291.3999938964844,
+                "end": 291.5
             },
             {
                 "word": "der",
-                "start": 291.5199890136719,
-                "end": 291.7200012207031
+                "start": 291.5,
+                "end": 291.739990234375
             },
             {
                 "word": "Wäscher",
-                "start": 291.7200012207031,
+                "start": 291.739990234375,
                 "end": 292.0199890136719
             },
             {
@@ -3480,13 +3539,22 @@
             {
                 "word": "Wäschemenge",
                 "start": 293.0799865722656,
-                "end": 293.4800109863281
+                "end": 293.4599914550781
             },
             {
                 "word": "darauf,",
-                "start": 293.4800109863281,
+                "start": 293.4599914550781,
                 "end": 294
-            },
+            }
+        ],
+        "translationEn": "From that day on, the washer paid attention to every large load of laundry,",
+        "translationVi": "Từ ngày này trở đi, người giặt đã chú ý đến mỗi lượng đồ giặt lớn,"
+    },
+    {
+        "text": "die Last zwischen ihm, dem Esel und dem Pferd aufzuteilen.",
+        "start": 294.239990234375,
+        "end": 297.3999938964844,
+        "wordTimings": [
             {
                 "word": "die",
                 "start": 294.239990234375,
@@ -3495,60 +3563,60 @@
             {
                 "word": "Last",
                 "start": 294.2799987792969,
-                "end": 294.5199890136719
+                "end": 294.5
             },
             {
                 "word": "zwischen",
-                "start": 294.5199890136719,
-                "end": 294.8399963378906
+                "start": 294.5,
+                "end": 294.8599853515625
             },
             {
                 "word": "ihm,",
-                "start": 294.8399963378906,
-                "end": 295.1600036621094
+                "start": 294.8599853515625,
+                "end": 295.17999267578125
             },
             {
                 "word": "dem",
-                "start": 295.6000061035156,
-                "end": 295.8800048828125
+                "start": 295.5799865722656,
+                "end": 295.8399963378906
             },
             {
                 "word": "Esel",
-                "start": 295.8800048828125,
-                "end": 296.05999755859375
+                "start": 295.8399963378906,
+                "end": 296.0400085449219
             },
             {
                 "word": "und",
-                "start": 296.05999755859375,
-                "end": 296.3999938964844
+                "start": 296.0400085449219,
+                "end": 296.3800048828125
             },
             {
                 "word": "dem",
-                "start": 296.3999938964844,
+                "start": 296.3800048828125,
                 "end": 296.94000244140625
             },
             {
                 "word": "Pferd",
                 "start": 296.94000244140625,
-                "end": 297.05999755859375
+                "end": 297.0400085449219
             },
             {
                 "word": "aufzuteilen.",
-                "start": 297.05999755859375,
-                "end": 298.060009765625
+                "start": 297.0400085449219,
+                "end": 297.3999938964844
             }
         ],
-        "translationEn": "From that day on, the washerman made sure to divide the load between himself, the donkey, and the horse with every large laundry batch.",
-        "translationVi": "Từ ngày đó, người giặt đã chú ý đến việc phân chia gánh nặng giữa anh ta, con lừa và con ngựa mỗi khi có một lượng giặt lớn."
+        "translationEn": "to divide the burden between him, the donkey, and the horse.",
+        "translationVi": "chia sẻ gánh nặng giữa anh ta, con lừa và con ngựa."
     },
     {
         "text": "Auf diese Weise waren sie weniger müde und hatten mehr Spaß.",
-        "start": 298.1999877929687,
-        "end": 303.4400146484375,
+        "start": 298.2799987792969,
+        "end": 303.1400146484375,
         "wordTimings": [
             {
                 "word": "Auf",
-                "start": 298.1999877929687,
+                "start": 298.2799987792969,
                 "end": 298.4200134277344
             },
             {
@@ -3559,11 +3627,11 @@
             {
                 "word": "Weise",
                 "start": 298.7200012207031,
-                "end": 299.05999755859375
+                "end": 299.0799865722656
             },
             {
                 "word": "waren",
-                "start": 299.05999755859375,
+                "start": 299.0799865722656,
                 "end": 299.5199890136719
             },
             {
@@ -3579,11 +3647,11 @@
             {
                 "word": "müde",
                 "start": 300.20001220703125,
-                "end": 300.6000061035156
+                "end": 300.6199951171875
             },
             {
                 "word": "und",
-                "start": 300.6000061035156,
+                "start": 300.6199951171875,
                 "end": 301.4599914550781
             },
             {
@@ -3594,12 +3662,12 @@
             {
                 "word": "mehr",
                 "start": 302.0799865722656,
-                "end": 302.6600036621094
+                "end": 302.6199951171875
             },
             {
                 "word": "Spaß.",
-                "start": 302.6600036621094,
-                "end": 303.4400146484375
+                "start": 302.6199951171875,
+                "end": 303.1400146484375
             }
         ],
         "translationEn": "In this way, they were less tired and had more fun.",
