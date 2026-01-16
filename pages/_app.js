@@ -68,7 +68,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
                 <title>papageil.net</title>
                 <meta name="description" content="Learn German with Shadowing and Dictation methods" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" type="image/png" href="/favicon.png" />
+                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
                 <link rel="manifest" href="/manifest.json" />
               </Head>
 
@@ -77,19 +79,19 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
                   <Component {...pageProps} />
                 </Layout>
               </div>
-              
+
               {/* Bottom Navigation (iOS only) */}
               <BottomNavigation />
-              
+
               {/* Fixed Social Share Button */}
               <FixedSocialShare />
-              
+
               {/* Offline Indicator */}
               <OfflineIndicator />
-              
+
               {/* Cookie Consent Banner */}
               <CookieConsent />
-              
+
               <ToastContainer
                 position="top-right"
                 autoClose={3000}
