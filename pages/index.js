@@ -6,6 +6,7 @@ import LessonCard from '../components/LessonCard';
 import { SkeletonCard } from '../components/SkeletonLoader';
 import ModeSelectionPopup from '../components/ModeSelectionPopup';
 import UnlockModal from '../components/UnlockModal';
+import GuestLockedPopup from '../components/GuestLockedPopup';
 import WelcomeUnlockPopup from '../components/WelcomeUnlockPopup';
 import { useAuth } from '../context/AuthContext';
 import { navigateWithLocale } from '../lib/navigation';
@@ -22,6 +23,7 @@ const HomePage = () => {
   const [unlockLoading, setUnlockLoading] = useState(false);
   const [userUnlockInfo, setUserUnlockInfo] = useState(null);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
+  const [guestLockedLesson, setGuestLockedLesson] = useState(null);
   const router = useRouter();
   const { user } = useAuth();
 
@@ -76,7 +78,7 @@ const HomePage = () => {
 
   const handleUnlockClick = (lesson) => {
     if (!user) {
-      router.push('/login');
+      setGuestLockedLesson(lesson);
       return;
     }
     setUnlockLesson(lesson);
@@ -242,6 +244,13 @@ const HomePage = () => {
 
       {showWelcomePopup && (
         <WelcomeUnlockPopup onClose={() => setShowWelcomePopup(false)} />
+      )}
+
+      {guestLockedLesson && (
+        <GuestLockedPopup
+          lesson={guestLockedLesson}
+          onClose={() => setGuestLockedLesson(null)}
+        />
       )}
 
       <div className="main-container">

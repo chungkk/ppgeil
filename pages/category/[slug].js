@@ -6,6 +6,7 @@ import LessonCard from '../../components/LessonCard';
 import { SkeletonCard } from '../../components/SkeletonLoader';
 import ModeSelectionPopup from '../../components/ModeSelectionPopup';
 import UnlockModal from '../../components/UnlockModal';
+import GuestLockedPopup from '../../components/GuestLockedPopup';
 import { useLessons, prefetchLessons } from '../../lib/hooks/useLessons';
 import { navigateWithLocale } from '../../lib/navigation';
 import { useAuth } from '../../context/AuthContext';
@@ -20,6 +21,7 @@ const CategoryPage = () => {
   const [showModePopup, setShowModePopup] = useState(false);
   const [unlockLesson, setUnlockLesson] = useState(null);
   const [unlockLoading, setUnlockLoading] = useState(false);
+  const [guestLockedLesson, setGuestLockedLesson] = useState(null);
   const { user } = useAuth();
   const itemsPerPage = 10;
 
@@ -88,7 +90,7 @@ const CategoryPage = () => {
 
   const handleUnlockClick = (lesson) => {
     if (!user) {
-      router.push('/login');
+      setGuestLockedLesson(lesson);
       return;
     }
     setUnlockLesson(lesson);
@@ -173,6 +175,13 @@ const CategoryPage = () => {
           onConfirm={handleUnlockConfirm}
           onClose={() => setUnlockLesson(null)}
           isLoading={unlockLoading}
+        />
+      )}
+
+      {guestLockedLesson && (
+        <GuestLockedPopup
+          lesson={guestLockedLesson}
+          onClose={() => setGuestLockedLesson(null)}
         />
       )}
 
