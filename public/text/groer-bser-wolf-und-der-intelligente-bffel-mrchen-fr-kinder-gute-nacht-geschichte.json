@@ -1,12 +1,12 @@
 [
     {
         "text": "Es war einmal vor langer Zeit, als die Tiere noch sprechen konnten.",
-        "start": 0.5200000047683716,
-        "end": 4.660000133514404,
+        "start": 0.6200000047683716,
+        "end": 4.360000133514404,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 0.5200000047683716,
+                "start": 0.6200000047683716,
                 "end": 1.2200000286102295
             },
             {
@@ -36,7 +36,7 @@
             },
             {
                 "word": "als",
-                "start": 2.9000000953674316,
+                "start": 2.9200000762939453,
                 "end": 2.940000057220459
             },
             {
@@ -62,20 +62,20 @@
             {
                 "word": "konnten.",
                 "start": 4,
-                "end": 4.660000133514404
+                "end": 4.360000133514404
             }
         ],
         "translationEn": "Once upon a time, long ago, when animals could still speak.",
-        "translationVi": "Ngày xửa ngày xưa, khi những con vật còn có thể nói chuyện."
+        "translationVi": "Ngày xửa ngày xưa, khi các loài động vật vẫn còn có thể nói chuyện."
     },
     {
         "text": "Da lebte ein riesiger Büffel auf dem Hof des Hirten.",
-        "start": 4.760000133514405,
-        "end": 7.8799999237060545,
+        "start": 4.860000133514404,
+        "end": 7.579999923706055,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 4.760000133514405,
+                "start": 4.860000133514404,
                 "end": 5.139999866485596
             },
             {
@@ -121,20 +121,20 @@
             {
                 "word": "Hirten.",
                 "start": 7.28000020980835,
-                "end": 7.8799999237060545
+                "end": 7.579999923706055
             }
         ],
-        "translationEn": "There lived a giant buffalo on the shepherd's farm.",
-        "translationVi": "Có một con trâu khổng lồ sống trong trang trại của người chăn cừu."
+        "translationEn": "There lived a huge buffalo on the shepherd's farm.",
+        "translationVi": "Có một con trâu khổng lồ sống trên trang trại của người chăn cừu."
     },
     {
-        "text": "Der Büffel half dem Hirten bei der Feldarbeit.",
-        "start": 9.120000267028809,
-        "end": 12.45999984741211,
+        "text": "Der Büffel half dem Hirten bei der Feldarbeit, und der Hirte tat sein Bestes, um ihn glücklich zu machen.",
+        "start": 9.220000267028809,
+        "end": 14.680000305175781,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 9.120000267028809,
+                "start": 9.220000267028809,
                 "end": 9.819999694824219
             },
             {
@@ -168,22 +168,18 @@
                 "end": 11.65999984741211
             },
             {
-                "word": "Feldarbeit.",
+                "word": "Feldarbeit,",
                 "start": 11.65999984741211,
-                "end": 12.45999984741211
-            }
-        ],
-        "translationEn": "The buffalo helped the shepherd with the fieldwork.",
-        "translationVi": "Con trâu đã giúp người chăn cừu trong công việc đồng áng."
-    },
-    {
-        "text": "Der Hirte tat sein Bestes, um ihn glücklich zu machen.",
-        "start": 12.280000114440918,
-        "end": 14.980000305175782,
-        "wordTimings": [
+                "end": 12.15999984741211
+            },
             {
-                "word": "Der",
-                "start": 12.280000114440918,
+                "word": "und",
+                "start": 12.15999984741211,
+                "end": 12.380000114440918
+            },
+            {
+                "word": "der",
+                "start": 12.380000114440918,
                 "end": 12.699999809265137
             },
             {
@@ -229,20 +225,20 @@
             {
                 "word": "machen.",
                 "start": 14.680000305175781,
-                "end": 14.980000305175782
+                "end": 14.680000305175781
             }
         ],
-        "translationEn": "The shepherd did his best to make him happy.",
-        "translationVi": "Người chăn cừu đã cố gắng hết sức để làm cho anh ta hạnh phúc."
+        "translationEn": "The buffalo helped the shepherd with the field work, and the shepherd did his best to make him happy.",
+        "translationVi": "Con trâu đã giúp người chăn cừu trong công việc đồng áng, và người chăn cừu đã cố gắng hết sức để làm cho nó hạnh phúc."
     },
     {
         "text": "Eines Tages setzte sich der Hirte, der den Büffel auf die Weide führte, unter einen Apfelbaum, um sich auszuruhen.",
-        "start": 16.359999084472655,
-        "end": 23.379999923706055,
+        "start": 16.459999084472656,
+        "end": 23.059999465942383,
         "wordTimings": [
             {
                 "word": "Eines",
-                "start": 16.359999084472655,
+                "start": 16.459999084472656,
                 "end": 16.579999923706055
             },
             {
@@ -333,20 +329,20 @@
             {
                 "word": "auszuruhen.",
                 "start": 22.34000015258789,
-                "end": 23.379999923706055
+                "end": 23.059999465942383
             }
         ],
         "translationEn": "One day, the shepherd who was leading the buffalo to the pasture sat down under an apple tree to rest.",
-        "translationVi": "Một ngày nọ, người chăn cừu dẫn con trâu ra đồng ngồi dưới một cây táo để nghỉ ngơi."
+        "translationVi": "Một ngày nọ, người chăn bò dẫn con trâu ra đồng ngồi nghỉ dưới một cây táo."
     },
     {
         "text": "In diesem Moment schlich sich ein hungriger, listiger Wolf an und folgte ihm.",
-        "start": 24.840000534057616,
-        "end": 29.679999160766602,
+        "start": 24.940000534057617,
+        "end": 29.3799991607666,
         "wordTimings": [
             {
                 "word": "In",
-                "start": 24.840000534057616,
+                "start": 24.940000534057617,
                 "end": 25.079999923706055
             },
             {
@@ -407,20 +403,20 @@
             {
                 "word": "ihm.",
                 "start": 29.15999984741211,
-                "end": 29.679999160766602
+                "end": 29.3799991607666
             }
         ],
         "translationEn": "At that moment, a hungry, cunning wolf crept up and followed him.",
-        "translationVi": "Vào lúc này, một con sói đói khát và ranh mãnh đang lén lút theo sau nó."
+        "translationVi": "Vào lúc này, một con sói đói khát, ranh mãnh đang lén lút theo sau nó."
     },
     {
         "text": "Dieser Büffel wäre ein tolles Mittagessen für mich, aber ich muss diesen Menschen loswerden.",
-        "start": 36.24000015258789,
-        "end": 44.64999847412109,
+        "start": 36.34000015258789,
+        "end": 44.349998474121094,
         "wordTimings": [
             {
                 "word": "Dieser",
-                "start": 36.24000015258789,
+                "start": 36.34000015258789,
                 "end": 37.119998931884766
             },
             {
@@ -486,20 +482,20 @@
             {
                 "word": "loswerden.",
                 "start": 43.959999084472656,
-                "end": 44.64999847412109
+                "end": 44.349998474121094
             }
         ],
-        "translationEn": "This buffalo would make a great lunch for me, but I need to get rid of these people.",
+        "translationEn": "This buffalo would make a great lunch for me, but I need to get rid of this person.",
         "translationVi": "Con trâu này sẽ là một bữa trưa tuyệt vời cho tôi, nhưng tôi phải loại bỏ những người này."
     },
     {
         "text": "Der Wolf erschien plötzlich vor dem Büffel und dem Hirten.",
-        "start": 46.42000045776367,
-        "end": 50.45999984741211,
+        "start": 46.52000045776367,
+        "end": 50.15999984741211,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 46.42000045776367,
+                "start": 46.52000045776367,
                 "end": 46.52000045776367
             },
             {
@@ -545,20 +541,20 @@
             {
                 "word": "Hirten.",
                 "start": 49.70000076293945,
-                "end": 50.45999984741211
+                "end": 50.15999984741211
             }
         ],
-        "translationEn": "The wolf suddenly appeared before the buffalo and the shepherd.",
-        "translationVi": "Con sói đột ngột xuất hiện trước con trâu và người chăn."
+        "translationEn": "The wolf suddenly appeared in front of the buffalo and the shepherd.",
+        "translationVi": "Con sói xuất hiện đột ngột trước con trâu và người chăn."
     },
     {
-        "text": "„Au! Ich habe ein paar Fragen an dich.",
-        "start": 51.60000076293945,
-        "end": 58.02000122070312,
+        "text": "Au! Ich habe ein paar Fragen an dich.",
+        "start": 51.70000076293945,
+        "end": 57.720001220703125,
         "wordTimings": [
             {
-                "word": "„Au!",
-                "start": 51.60000076293945,
+                "word": "Au!",
+                "start": 51.70000076293945,
                 "end": 52.34000015258789
             },
             {
@@ -594,20 +590,20 @@
             {
                 "word": "dich.",
                 "start": 57.58000183105469,
-                "end": 58.02000122070312
+                "end": 57.720001220703125
             }
         ],
-        "translationEn": "\"Ow! I have a few questions for you.\"",
-        "translationVi": "\"Ôi! Tôi có một vài câu hỏi cho bạn.\""
+        "translationEn": "Ouch! I have a few questions for you.",
+        "translationVi": "Ôi! Tôi có vài câu hỏi cho bạn."
     },
     {
-        "text": "Wenn du sie nicht beantworten kannst, gehört der Büffel mir.“",
-        "start": 58.78000106811523,
-        "end": 62.86000137329101,
+        "text": "Wenn du sie nicht beantworten kannst, gehört der Büffel mir.",
+        "start": 58.880001068115234,
+        "end": 62.560001373291016,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 58.78000106811523,
+                "start": 58.880001068115234,
                 "end": 58.900001525878906
             },
             {
@@ -651,22 +647,22 @@
                 "end": 61.84000015258789
             },
             {
-                "word": "mir.“",
+                "word": "mir.",
                 "start": 61.84000015258789,
-                "end": 62.86000137329101
+                "end": 62.560001373291016
             }
         ],
-        "translationEn": "\"If you can't answer them, the buffalo belongs to me.\"",
-        "translationVi": "\"Nếu bạn không thể trả lời chúng, thì con trâu thuộc về tôi.\""
+        "translationEn": "If you can't answer them, the buffalo belongs to me.",
+        "translationVi": "Nếu bạn không thể trả lời, con trâu thuộc về tôi."
     },
     {
         "text": "Der Hirte und der Büffel waren sehr neugierig, was der schlaue Wolf fragen würde.",
-        "start": 63.460001373291014,
-        "end": 68.28000335693359,
+        "start": 63.560001373291016,
+        "end": 67.9800033569336,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 63.460001373291014,
+                "start": 63.560001373291016,
                 "end": 63.779998779296875
             },
             {
@@ -732,20 +728,20 @@
             {
                 "word": "würde.",
                 "start": 67.62000274658203,
-                "end": 68.28000335693359
+                "end": 67.9800033569336
             }
         ],
         "translationEn": "The shepherd and the buffalo were very curious about what the clever wolf would ask.",
-        "translationVi": "Người chăn cừu và con trâu rất tò mò không biết con sói khôn ngoan sẽ hỏi gì."
+        "translationVi": "Người chăn cừu và con trâu rất tò mò không biết con sói khôn ngoan sẽ hỏi điều gì."
     },
     {
-        "text": "„Warum dient ein Büffel einem Menschen, wenn er so kräftige Hörner hat?“",
-        "start": 69.80000152587891,
-        "end": 75.46000366210937,
+        "text": "Warum dient ein Büffel einem Menschen, wenn er so kräftige Hörner hat?",
+        "start": 69.9000015258789,
+        "end": 75.16000366210938,
         "wordTimings": [
             {
-                "word": "„Warum",
-                "start": 69.80000152587891,
+                "word": "Warum",
+                "start": 69.9000015258789,
                 "end": 70.69999694824219
             },
             {
@@ -799,22 +795,22 @@
                 "end": 74.81999969482422
             },
             {
-                "word": "hat?“",
+                "word": "hat?",
                 "start": 74.81999969482422,
-                "end": 75.46000366210937
+                "end": 75.16000366210938
             }
         ],
-        "translationEn": "\"Why does a buffalo serve a human when it has such strong horns?\"",
-        "translationVi": "\"Tại sao một con trâu lại phục vụ cho con người, khi nó có những chiếc sừng mạnh mẽ như vậy?\""
+        "translationEn": "Why does a buffalo serve a human when it has such strong horns?",
+        "translationVi": "Tại sao một con trâu lại phục vụ cho con người, khi nó có những chiếc sừng mạnh mẽ như vậy?"
     },
     {
-        "text": "„Nun ja, weil ich das Feld des Hirten pflüge und er mir das beste Essen gibt.“",
-        "start": 77.02000274658204,
-        "end": 85.7000015258789,
+        "text": "Nun ja, weil ich das Feld des Hirten pflüge und er mir das beste Essen gibt.",
+        "start": 77.12000274658203,
+        "end": 85.4000015258789,
         "wordTimings": [
             {
-                "word": "„Nun",
-                "start": 77.02000274658204,
+                "word": "Nun",
+                "start": 77.12000274658203,
                 "end": 77.91999816894531
             },
             {
@@ -888,22 +884,22 @@
                 "end": 84.77999877929688
             },
             {
-                "word": "gibt.“",
+                "word": "gibt.",
                 "start": 84.77999877929688,
-                "end": 85.7000015258789
+                "end": 85.4000015258789
             }
         ],
-        "translationEn": "\"Well, because I plow the shepherd's field and he gives me the best food.\"",
-        "translationVi": "\"Vâng, vì tôi cày cấy trên cánh đồng của người chăn và ông ấy cho tôi những món ăn ngon nhất.\""
+        "translationEn": "Well, because I plow the shepherd's field and he gives me the best food.",
+        "translationVi": "Thì ra, vì tôi cày cấy trên cánh đồng của người chăn và ông ấy cho tôi món ăn ngon nhất."
     },
     {
-        "text": "„Wie kann ein Hirte diesen riesigen Büffel dazu bringen, ihn zu dienen?",
-        "start": 88.13999786376954,
-        "end": 93.85999755859375,
+        "text": "Wie kann ein Hirte diesen riesigen Büffel dazu bringen, ihn zu dienen?",
+        "start": 88.23999786376953,
+        "end": 93.55999755859375,
         "wordTimings": [
             {
-                "word": "„Wie",
-                "start": 88.13999786376954,
+                "word": "Wie",
+                "start": 88.23999786376953,
                 "end": 89.04000091552734
             },
             {
@@ -959,20 +955,20 @@
             {
                 "word": "dienen?",
                 "start": 93.45999908447266,
-                "end": 93.85999755859375
+                "end": 93.55999755859375
             }
         ],
-        "translationEn": "\"How can a shepherd make this huge buffalo serve him?\"",
-        "translationVi": "\"Làm thế nào một người chăn cừu có thể khiến con trâu khổng lồ này phục vụ mình?\""
+        "translationEn": "How can a shepherd make this huge buffalo serve him?",
+        "translationVi": "Làm thế nào một người chăn cừu có thể khiến con trâu khổng lồ này phục vụ anh ta?"
     },
     {
-        "text": "Ist das ein Zauberstab in deiner Hand?“",
-        "start": 94.41999664306641,
-        "end": 96.88000183105468,
+        "text": "Ist das ein Zauberstab in deiner Hand?",
+        "start": 94.5199966430664,
+        "end": 96.58000183105469,
         "wordTimings": [
             {
                 "word": "Ist",
-                "start": 94.41999664306641,
+                "start": 94.5199966430664,
                 "end": 94.80000305175781
             },
             {
@@ -1001,22 +997,22 @@
                 "end": 96.36000061035156
             },
             {
-                "word": "Hand?“",
+                "word": "Hand?",
                 "start": 96.36000061035156,
-                "end": 96.88000183105468
+                "end": 96.58000183105469
             }
         ],
-        "translationEn": "\"Is that a magic wand in your hand?\"",
-        "translationVi": "Đó có phải là một cây đũa phép trong tay bạn không?"
+        "translationEn": "Is that a magic wand in your hand?",
+        "translationVi": "Đó có phải là một cây đũa thần trong tay bạn không?"
     },
     {
-        "text": "„Nein, es ist nicht der Stock, der magisch ist, sondern meine Weisheit.“",
-        "start": 97.9800018310547,
-        "end": 101.84000091552734,
+        "text": "Nein, es ist nicht der Stock, der magisch ist, sondern meine Weisheit.",
+        "start": 98.08000183105469,
+        "end": 101.54000091552734,
         "wordTimings": [
             {
-                "word": "„Nein,",
-                "start": 97.9800018310547,
+                "word": "Nein,",
+                "start": 98.08000183105469,
                 "end": 98.5999984741211
             },
             {
@@ -1070,22 +1066,22 @@
                 "end": 101.04000091552734
             },
             {
-                "word": "Weisheit.“",
+                "word": "Weisheit.",
                 "start": 101.04000091552734,
-                "end": 101.84000091552734
+                "end": 101.54000091552734
             }
         ],
-        "translationEn": "\"No, it is not the stick that is magical, but my wisdom.\"",
-        "translationVi": "„Không, không phải cây gậy, mà là trí tuệ của tôi mới là điều kỳ diệu.“"
+        "translationEn": "No, it is not the stick that is magical, but my wisdom.",
+        "translationVi": "Không, không phải cây gậy mà là trí tuệ của tôi mới là điều kỳ diệu."
     },
     {
-        "text": "Der Wolf verstand nicht, was der Schafhirte meinte.",
-        "start": 102.80000152587891,
-        "end": 105.66000061035156,
+        "text": "Der Wolf verstand nicht, was der Schafhirte meinte. Deine Weisheit? Was ist das?",
+        "start": 102.9000015258789,
+        "end": 109.05999755859375,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 102.80000152587891,
+                "start": 102.9000015258789,
                 "end": 102.9000015258789
             },
             {
@@ -1121,20 +1117,11 @@
             {
                 "word": "meinte.",
                 "start": 105.0199966430664,
-                "end": 105.66000061035156
-            }
-        ],
-        "translationEn": "The wolf did not understand what the shepherd meant.",
-        "translationVi": "Con sói không hiểu điều mà người chăn cừu muốn nói."
-    },
-    {
-        "text": "„Deine Weisheit? Was ist das?“",
-        "start": 106.76000061035157,
-        "end": 109.35999755859375,
-        "wordTimings": [
+                "end": 105.36000061035156
+            },
             {
-                "word": "„Deine",
-                "start": 106.76000061035157,
+                "word": "Deine",
+                "start": 106.86000061035156,
                 "end": 106.95999908447266
             },
             {
@@ -1153,22 +1140,22 @@
                 "end": 108.73999786376953
             },
             {
-                "word": "das?“",
+                "word": "das?",
                 "start": 108.73999786376953,
-                "end": 109.35999755859375
+                "end": 109.05999755859375
             }
         ],
-        "translationEn": "\"Your wisdom? What is that?\"",
-        "translationVi": "\"Trí tuệ của bạn? Đó là gì?\""
+        "translationEn": "The wolf did not understand what the shepherd meant. Your wisdom? What is that?",
+        "translationVi": "Con sói không hiểu điều mà người chăn cừu nói. Sự khôn ngoan của bạn? Đó là gì?"
     },
     {
-        "text": "„Das ist keine Antwort.",
-        "start": 109.41999664306641,
-        "end": 110.93999938964843,
+        "text": "Das ist keine Antwort.",
+        "start": 109.5199966430664,
+        "end": 110.63999938964844,
         "wordTimings": [
             {
-                "word": "„Das",
-                "start": 109.41999664306641,
+                "word": "Das",
+                "start": 109.5199966430664,
                 "end": 109.68000030517578
             },
             {
@@ -1184,20 +1171,20 @@
             {
                 "word": "Antwort.",
                 "start": 110.12000274658203,
-                "end": 110.93999938964843
+                "end": 110.63999938964844
             }
         ],
-        "translationEn": "\"That is not an answer.\"",
-        "translationVi": "\"Đó không phải là câu trả lời.\""
+        "translationEn": "That is not an answer.",
+        "translationVi": "Đó không phải là câu trả lời."
     },
     {
         "text": "Jetzt kann ich diesen Büffel mit nach Hause nehmen, wenn ich will.",
-        "start": 111.31999816894532,
-        "end": 114.42000274658203,
+        "start": 111.41999816894531,
+        "end": 114.12000274658203,
         "wordTimings": [
             {
                 "word": "Jetzt",
-                "start": 111.31999816894532,
+                "start": 111.41999816894531,
                 "end": 111.5999984741211
             },
             {
@@ -1253,20 +1240,20 @@
             {
                 "word": "will.",
                 "start": 113.86000061035156,
-                "end": 114.42000274658203
+                "end": 114.12000274658203
             }
         ],
         "translationEn": "Now I can take this buffalo home with me if I want.",
         "translationVi": "Bây giờ tôi có thể mang con trâu này về nhà nếu tôi muốn."
     },
     {
-        "text": "Aber ich bin auch neugierig auf dieses Ding, das du Weisheit nennst.“",
-        "start": 115.30000152587891,
-        "end": 121.63999633789062,
+        "text": "Aber ich bin auch neugierig auf dieses Ding, das du Weisheit nennst.",
+        "start": 115.4000015258789,
+        "end": 121.33999633789062,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 115.30000152587891,
+                "start": 115.4000015258789,
                 "end": 115.91999816894531
             },
             {
@@ -1320,22 +1307,22 @@
                 "end": 120.22000122070312
             },
             {
-                "word": "nennst.“",
+                "word": "nennst.",
                 "start": 120.22000122070312,
-                "end": 121.63999633789062
+                "end": 121.33999633789062
             }
         ],
-        "translationEn": "\"But I am also curious about this thing you call wisdom.\"",
-        "translationVi": "Nhưng tôi cũng tò mò về cái điều mà bạn gọi là trí tuệ.\""
+        "translationEn": "But I am also curious about this thing you call wisdom.",
+        "translationVi": "Nhưng tôi cũng tò mò về cái điều mà bạn gọi là trí tuệ."
     },
     {
-        "text": "„Ich sehe das anders, aber ich erkläre dir, was ich meine, unter einer Bedingung.“",
-        "start": 121.95999755859376,
-        "end": 127.28000335693359,
+        "text": "Ich sehe das anders, aber ich erkläre dir, was ich meine, unter einer Bedingung.",
+        "start": 122.05999755859375,
+        "end": 126.9800033569336,
         "wordTimings": [
             {
-                "word": "„Ich",
-                "start": 121.95999755859376,
+                "word": "Ich",
+                "start": 122.05999755859375,
                 "end": 122.33999633789062
             },
             {
@@ -1399,22 +1386,22 @@
                 "end": 126.54000091552734
             },
             {
-                "word": "Bedingung.“",
+                "word": "Bedingung.",
                 "start": 126.54000091552734,
-                "end": 127.28000335693359
+                "end": 126.9800033569336
             }
         ],
-        "translationEn": "\"I see it differently, but I will explain to you what I mean, on one condition.\"",
-        "translationVi": "„Tôi thấy điều đó khác, nhưng tôi sẽ giải thích cho bạn biết tôi có ý gì, với một điều kiện.“"
+        "translationEn": "I see it differently, but I will explain what I mean under one condition.",
+        "translationVi": "Tôi có quan điểm khác, nhưng tôi sẽ giải thích cho bạn biết tôi có ý gì, với một điều kiện."
     },
     {
-        "text": "„Was ist das für eine Voraussetzung?“",
-        "start": 127.8800033569336,
-        "end": 129.63999633789064,
+        "text": "Was ist das für eine Voraussetzung?",
+        "start": 127.9800033569336,
+        "end": 129.33999633789062,
         "wordTimings": [
             {
-                "word": "„Was",
-                "start": 127.8800033569336,
+                "word": "Was",
+                "start": 127.9800033569336,
                 "end": 128.1199951171875
             },
             {
@@ -1430,30 +1417,30 @@
             {
                 "word": "für",
                 "start": 128.1199951171875,
-                "end": 128.22000122070312
+                "end": 128.24000549316406
             },
             {
                 "word": "eine",
-                "start": 128.22000122070312,
+                "start": 128.24000549316406,
                 "end": 128.4600067138672
             },
             {
-                "word": "Voraussetzung?“",
+                "word": "Voraussetzung?",
                 "start": 128.4600067138672,
-                "end": 129.63999633789064
+                "end": 129.33999633789062
             }
         ],
-        "translationEn": "\"What is that requirement?\"",
-        "translationVi": "\"Điều kiện đó là gì?\""
+        "translationEn": "What is that requirement?",
+        "translationVi": "Điều kiện đó là gì?"
     },
     {
-        "text": "„Bis ich dir die Weisheit bringe, werde ich dich an diesen Baum binden, damit der Büffel in Sicherheit ist, während ich weg bin.“",
-        "start": 130.45999755859376,
-        "end": 136.13999633789064,
+        "text": "Bis ich dir die Weisheit bringe, werde ich dich an diesen Baum binden, damit der Büffel in Sicherheit ist, während ich weg bin.",
+        "start": 130.55999755859375,
+        "end": 135.83999633789062,
         "wordTimings": [
             {
-                "word": "„Bis",
-                "start": 130.45999755859376,
+                "word": "Bis",
+                "start": 130.55999755859375,
                 "end": 130.67999267578125
             },
             {
@@ -1562,22 +1549,22 @@
                 "end": 135.6999969482422
             },
             {
-                "word": "bin.“",
+                "word": "bin.",
                 "start": 135.6999969482422,
-                "end": 136.13999633789064
+                "end": 135.83999633789062
             }
         ],
-        "translationEn": "\"Until I bring you the wisdom, I will tie you to this tree so that the buffalo is safe while I am away.\"",
-        "translationVi": "„Cho đến khi tôi mang đến cho bạn sự khôn ngoan, tôi sẽ buộc bạn vào cái cây này, để con trâu được an toàn trong khi tôi đi vắng.“"
+        "translationEn": "Until I bring you wisdom, I will tie you to this tree so that the buffalo is safe while I am away.",
+        "translationVi": "Cho đến khi tôi mang đến cho bạn sự khôn ngoan, tôi sẽ buộc bạn vào cái cây này, để con trâu được an toàn trong khi tôi đi vắng."
     },
     {
         "text": "Der Wolf war so neugierig auf das, was man Weisheit nannte, dass er sogar zustimmte, an einen Baum gebunden zu werden.",
-        "start": 135.92000427246094,
-        "end": 142.82000427246095,
+        "start": 136.02000427246094,
+        "end": 142.52000427246094,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 135.92000427246094,
+                "start": 136.02000427246094,
                 "end": 136.24000549316406
             },
             {
@@ -1678,7 +1665,7 @@
             {
                 "word": "werden.",
                 "start": 142.52000427246094,
-                "end": 142.82000427246095
+                "end": 142.52000427246094
             }
         ],
         "translationEn": "The wolf was so curious about what was called wisdom that he even agreed to be tied to a tree.",
@@ -1686,12 +1673,12 @@
     },
     {
         "text": "Während der Hirte aufbrach, um die Weisheit zurückzubringen, grinste der Büffel darüber, was mit dem Wolf geschehen würde.",
-        "start": 142.8600067138672,
-        "end": 149.63999633789064,
+        "start": 142.9600067138672,
+        "end": 149.33999633789062,
         "wordTimings": [
             {
                 "word": "Während",
-                "start": 142.8600067138672,
+                "start": 142.9600067138672,
                 "end": 143.05999755859375
             },
             {
@@ -1717,11 +1704,11 @@
             {
                 "word": "die",
                 "start": 144.55999755859375,
-                "end": 144.94000244140625
+                "end": 144.9600067138672
             },
             {
                 "word": "Weisheit",
-                "start": 144.94000244140625,
+                "start": 144.9600067138672,
                 "end": 145.02000427246094
             },
             {
@@ -1777,20 +1764,20 @@
             {
                 "word": "würde.",
                 "start": 149.0399932861328,
-                "end": 149.63999633789064
+                "end": 149.33999633789062
             }
         ],
-        "translationEn": "While the shepherd set off to bring back the wisdom, the buffalo grinned at what would happen to the wolf.",
-        "translationVi": "Trong khi người chăn cừu lên đường để mang lại sự khôn ngoan, con trâu cười nhạo về những gì sẽ xảy ra với con sói."
+        "translationEn": "While the shepherd set out to bring back the wisdom, the buffalo grinned at what would happen to the wolf.",
+        "translationVi": "Trong khi người chăn cừu lên đường để mang lại trí tuệ, con trâu cười nhạo về những gì sẽ xảy ra với con sói."
     },
     {
         "text": "Obwohl der Wolf nicht verstand, warum der Büffel lachte, wartete er noch stundenlang auf den Hirten.",
-        "start": 158.14000549316407,
-        "end": 164.32000427246095,
+        "start": 158.24000549316406,
+        "end": 164.02000427246094,
         "wordTimings": [
             {
                 "word": "Obwohl",
-                "start": 158.14000549316407,
+                "start": 158.24000549316406,
                 "end": 158.82000732421875
             },
             {
@@ -1866,20 +1853,20 @@
             {
                 "word": "Hirten.",
                 "start": 163.6999969482422,
-                "end": 164.32000427246095
+                "end": 164.02000427246094
             }
         ],
         "translationEn": "Although the wolf did not understand why the buffalo was laughing, he waited for the shepherd for hours.",
-        "translationVi": "Mặc dù con sói không hiểu tại sao con trâu lại cười, nhưng nó vẫn chờ đợi người chăn súc vật hàng giờ."
+        "translationVi": "Mặc dù con sói không hiểu tại sao con trâu lại cười, nhưng nó vẫn chờ đợi người chăn gia súc suốt nhiều giờ."
     },
     {
         "text": "Nach einer Weile kam der Hirte mit einer großen Kiste in der Hand zurück.",
-        "start": 164.64000549316407,
-        "end": 168.54000549316407,
+        "start": 164.74000549316406,
+        "end": 168.24000549316406,
         "wordTimings": [
             {
                 "word": "Nach",
-                "start": 164.64000549316407,
+                "start": 164.74000549316406,
                 "end": 164.77999877929688
             },
             {
@@ -1945,7 +1932,7 @@
             {
                 "word": "zurück.",
                 "start": 167.82000732421875,
-                "end": 168.54000549316407
+                "end": 168.24000549316406
             }
         ],
         "translationEn": "After a while, the shepherd returned with a large box in his hand.",
@@ -1953,12 +1940,12 @@
     },
     {
         "text": "Er öffnete den Deckel der Kiste, aber der Wolf sah, dass die Kiste leer war.",
-        "start": 168.93999328613282,
-        "end": 174.6800048828125,
+        "start": 169.0399932861328,
+        "end": 174.3800048828125,
         "wordTimings": [
             {
                 "word": "Er",
-                "start": 168.93999328613282,
+                "start": 169.0399932861328,
                 "end": 169.10000610351562
             },
             {
@@ -2029,20 +2016,20 @@
             {
                 "word": "war.",
                 "start": 174.05999755859375,
-                "end": 174.6800048828125
+                "end": 174.3800048828125
             }
         ],
         "translationEn": "He opened the lid of the box, but the wolf saw that the box was empty.",
-        "translationVi": "Anh ta mở nắp hộp, nhưng con sói thấy rằng hộp trống rỗng."
+        "translationVi": "Anh ta mở nắp hộp, nhưng con sói thấy rằng hộp rỗng."
     },
     {
-        "text": "„Nun, Weisheit, wo ist sie?",
-        "start": 179.07999267578126,
-        "end": 182.62000732421876,
+        "text": "Nun, Weisheit, wo ist sie? Habt ihr sie nicht mitgebracht?",
+        "start": 179.17999267578125,
+        "end": 183.8800048828125,
         "wordTimings": [
             {
-                "word": "„Nun,",
-                "start": 179.07999267578126,
+                "word": "Nun,",
+                "start": 179.17999267578125,
                 "end": 179.6999969482422
             },
             {
@@ -2053,30 +2040,21 @@
             {
                 "word": "wo",
                 "start": 181.55999755859375,
-                "end": 182.0399932861328
+                "end": 182
             },
             {
                 "word": "ist",
-                "start": 182.0399932861328,
+                "start": 182,
                 "end": 182.1199951171875
             },
             {
                 "word": "sie?",
                 "start": 182.1199951171875,
-                "end": 182.62000732421876
-            }
-        ],
-        "translationEn": "\"Now, wisdom, where is it?\"",
-        "translationVi": "„Vậy, trí tuệ, nó ở đâu?"
-    },
-    {
-        "text": "Habt ihr sie nicht mitgebracht?“",
-        "start": 182.76000061035157,
-        "end": 184.1800048828125,
-        "wordTimings": [
+                "end": 182.32000732421875
+            },
             {
                 "word": "Habt",
-                "start": 182.76000061035157,
+                "start": 182.86000061035156,
                 "end": 183
             },
             {
@@ -2095,22 +2073,22 @@
                 "end": 183.33999633789062
             },
             {
-                "word": "mitgebracht?“",
+                "word": "mitgebracht?",
                 "start": 183.33999633789062,
-                "end": 184.1800048828125
+                "end": 183.8800048828125
             }
         ],
-        "translationEn": "\"Did you not bring them?\"",
-        "translationVi": "\"Các bạn không mang họ đến sao?\""
+        "translationEn": "Well, wisdom, where is it? Did you not bring it with you?",
+        "translationVi": "Vậy, trí tuệ, nó ở đâu? Các bạn không mang nó đến sao?"
     },
     {
-        "text": "„Sie ist da drin, gleich dort in der Ecke.",
-        "start": 184.53999938964844,
-        "end": 187.16000061035157,
+        "text": "Sie ist da drin, gleich dort in der Ecke.",
+        "start": 184.63999938964844,
+        "end": 186.86000061035156,
         "wordTimings": [
             {
-                "word": "„Sie",
-                "start": 184.53999938964844,
+                "word": "Sie",
+                "start": 184.63999938964844,
                 "end": 184.75999450683594
             },
             {
@@ -2121,12 +2099,12 @@
             {
                 "word": "da",
                 "start": 184.94000244140625,
-                "end": 185.4600067138672
+                "end": 185.24000549316406
             },
             {
                 "word": "drin,",
-                "start": 185.4600067138672,
-                "end": 185.4600067138672
+                "start": 185.24000549316406,
+                "end": 185.4199981689453
             },
             {
                 "word": "gleich",
@@ -2151,20 +2129,20 @@
             {
                 "word": "Ecke.",
                 "start": 186.86000061035156,
-                "end": 187.16000061035157
+                "end": 186.86000061035156
             }
         ],
-        "translationEn": "\"She is in there, right there in the corner.\"",
-        "translationVi": "\"Cô ấy ở trong đó, ngay ở góc đó.\""
+        "translationEn": "She is in there, right there in the corner.",
+        "translationVi": "Cô ấy ở bên trong, ngay ở góc đó."
     },
     {
-        "text": "Wenn du es nicht siehst, lass mich dich losbinden, damit du es genauer sehen kannst.“",
-        "start": 187.37999572753907,
-        "end": 191.90000610351564,
+        "text": "Wenn du es nicht siehst, lass mich dich losbinden, damit du es genauer sehen kannst.",
+        "start": 187.47999572753906,
+        "end": 191.60000610351562,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 187.37999572753907,
+                "start": 187.47999572753906,
                 "end": 187.52000427246094
             },
             {
@@ -2233,22 +2211,22 @@
                 "end": 191.16000366210938
             },
             {
-                "word": "kannst.“",
+                "word": "kannst.",
                 "start": 191.16000366210938,
-                "end": 191.90000610351564
+                "end": 191.60000610351562
             }
         ],
-        "translationEn": "\"If you don't see it, let me untie you so you can see it more clearly.\"",
-        "translationVi": "\"Nếu bạn không thấy, hãy để tôi buộc bạn lại, để bạn có thể nhìn rõ hơn.\""
+        "translationEn": "If you don't see it, let me untie you so you can see it more clearly.",
+        "translationVi": "Nếu bạn không thấy điều đó, hãy để tôi buộc bạn lại, để bạn có thể nhìn thấy rõ hơn."
     },
     {
         "text": "Sobald der Wolf in die Kiste kam, um die Weisheit zu sehen, schloss der Hirte den Deckel.",
-        "start": 191.9800018310547,
-        "end": 196.9999969482422,
+        "start": 192.0800018310547,
+        "end": 196.6999969482422,
         "wordTimings": [
             {
                 "word": "Sobald",
-                "start": 191.9800018310547,
+                "start": 192.0800018310547,
                 "end": 192.4199981689453
             },
             {
@@ -2329,27 +2307,36 @@
             {
                 "word": "Deckel.",
                 "start": 196.3800048828125,
-                "end": 196.9999969482422
+                "end": 196.6999969482422
             }
         ],
         "translationEn": "As soon as the wolf entered the box to see the wisdom, the shepherd closed the lid.",
-        "translationVi": "Ngay khi con sói vào trong hộp để xem trí tuệ, người chăn cừu đã đóng nắp lại."
+        "translationVi": "Ngay khi con sói vào trong hộp để xem sự khôn ngoan, người chăn cừu đã đóng nắp lại."
     },
     {
-        "text": "„Hilfe! Hilfe! Die Weisheit ist viel zu kostbar, um sie in eine Schachtel zu stecken, lieber Wolf.",
-        "start": 201.20000305175782,
-        "end": 208.10000305175782,
+        "text": "Hilfe! Hilfe!",
+        "start": 201.3000030517578,
+        "end": 202.33999633789062,
         "wordTimings": [
             {
-                "word": "„Hilfe!",
-                "start": 201.20000305175782,
+                "word": "Hilfe!",
+                "start": 201.3000030517578,
                 "end": 201.82000732421875
             },
             {
                 "word": "Hilfe!",
                 "start": 201.82000732421875,
                 "end": 202.33999633789062
-            },
+            }
+        ],
+        "translationEn": "Help! Help!",
+        "translationVi": "Cứu! Cứu!"
+    },
+    {
+        "text": "Die Weisheit ist viel zu kostbar, um sie in eine Schachtel zu stecken, lieber Wolf.",
+        "start": 203.97999572753906,
+        "end": 207.82000732421875,
+        "wordTimings": [
             {
                 "word": "Die",
                 "start": 203.97999572753906,
@@ -2423,20 +2410,20 @@
             {
                 "word": "Wolf.",
                 "start": 207.5399932861328,
-                "end": 208.10000305175782
+                "end": 207.82000732421875
             }
         ],
-        "translationEn": "\"Help! Help! Wisdom is far too precious to be put in a box, dear Wolf.\"",
-        "translationVi": "\"Cứu! Cứu! Trí tuệ quý giá quá để nhét vào một cái hộp, sói ạ.\""
+        "translationEn": "Wisdom is far too precious to be put in a box, dear Wolf.",
+        "translationVi": "Sự khôn ngoan quá quý giá để nhét vào một cái hộp, thưa Sói."
     },
     {
-        "text": "Weisheit ist im Kopf und man kann sie nur finden, wenn man nach ihr sucht, wie nach einem verborgenen Schatz.",
-        "start": 208.7800048828125,
-        "end": 216.9199951171875,
+        "text": "Weisheit ist im Kopf, und man kann sie nur finden, wenn man nach ihr sucht, wie nach einem verborgenen Schatz.",
+        "start": 208.86000061035156,
+        "end": 216.6199951171875,
         "wordTimings": [
             {
                 "word": "Weisheit",
-                "start": 208.7800048828125,
+                "start": 208.86000061035156,
                 "end": 209.44000244140625
             },
             {
@@ -2447,16 +2434,16 @@
             {
                 "word": "im",
                 "start": 209.8800048828125,
-                "end": 210.5800018310547
+                "end": 210.60000610351562
             },
             {
-                "word": "Kopf",
-                "start": 210.5800018310547,
-                "end": 210.5800018310547
+                "word": "Kopf,",
+                "start": 210.60000610351562,
+                "end": 210.60000610351562
             },
             {
                 "word": "und",
-                "start": 210.5800018310547,
+                "start": 211.55999755859375,
                 "end": 211.66000366210938
             },
             {
@@ -2507,16 +2494,16 @@
             {
                 "word": "sucht,",
                 "start": 214.02000427246094,
-                "end": 214.55999755859375
+                "end": 214.5
             },
             {
                 "word": "wie",
                 "start": 214.63999938964844,
-                "end": 214.86000061035156
+                "end": 214.82000732421875
             },
             {
                 "word": "nach",
-                "start": 214.86000061035156,
+                "start": 214.82000732421875,
                 "end": 214.8800048828125
             },
             {
@@ -2532,20 +2519,20 @@
             {
                 "word": "Schatz.",
                 "start": 216.5399932861328,
-                "end": 216.9199951171875
+                "end": 216.6199951171875
             }
         ],
-        "translationEn": "Wisdom is in the mind, and one can only find it if one searches for it, like a hidden treasure.",
-        "translationVi": "Trí tuệ nằm trong đầu và chỉ có thể tìm thấy khi ta tìm kiếm nó, như một kho báu ẩn giấu."
+        "translationEn": "Wisdom is in the mind, and one can only find it by searching for it, like a hidden treasure.",
+        "translationVi": "Trí tuệ nằm trong đầu, và chỉ có thể tìm thấy nó khi ta tìm kiếm, giống như tìm một kho báu ẩn giấu."
     },
     {
         "text": "Ich verspreche, dass ich den Verstand der anderen nie wieder unterschätzen werde.",
-        "start": 218.84000244140626,
-        "end": 222.62000732421876,
+        "start": 218.77999877929688,
+        "end": 222.32000732421875,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 218.84000244140626,
+                "start": 218.77999877929688,
                 "end": 218.9600067138672
             },
             {
@@ -2591,79 +2578,79 @@
             {
                 "word": "wieder",
                 "start": 221.1199951171875,
-                "end": 221.3800048828125
+                "end": 221.39999389648438
             },
             {
                 "word": "unterschätzen",
-                "start": 221.3800048828125,
+                "start": 221.39999389648438,
                 "end": 221.9600067138672
             },
             {
                 "word": "werde.",
                 "start": 221.9600067138672,
-                "end": 222.62000732421876
+                "end": 222.32000732421875
             }
         ],
-        "translationEn": "I promise that I will never underestimate the minds of others again.",
+        "translationEn": "I promise that I will never underestimate the intelligence of others again.",
         "translationVi": "Tôi hứa rằng tôi sẽ không bao giờ đánh giá thấp trí tuệ của người khác nữa."
     },
     {
         "text": "Jetzt werde ich großzügiger und klüger sein.",
-        "start": 223.23999633789063,
-        "end": 226.0799987792969,
+        "start": 222.8800048828125,
+        "end": 225.77999877929688,
         "wordTimings": [
             {
                 "word": "Jetzt",
-                "start": 223.23999633789063,
-                "end": 223.89999389648438
+                "start": 222.8800048828125,
+                "end": 223.4600067138672
             },
             {
                 "word": "werde",
-                "start": 223.89999389648438,
+                "start": 223.4600067138672,
                 "end": 224.0399932861328
             },
             {
                 "word": "ich",
                 "start": 224.0399932861328,
-                "end": 224.25999450683594
+                "end": 224.24000549316406
             },
             {
                 "word": "großzügiger",
-                "start": 224.25999450683594,
-                "end": 224.8800048828125
+                "start": 224.24000549316406,
+                "end": 224.89999389648438
             },
             {
                 "word": "und",
-                "start": 224.8800048828125,
-                "end": 225.13999938964844
+                "start": 224.89999389648438,
+                "end": 225.10000610351562
             },
             {
                 "word": "klüger",
-                "start": 225.13999938964844,
-                "end": 225.39999389648438
+                "start": 225.10000610351562,
+                "end": 225.4199981689453
             },
             {
                 "word": "sein.",
-                "start": 225.39999389648438,
-                "end": 226.0799987792969
+                "start": 225.4199981689453,
+                "end": 225.77999877929688
             }
         ],
         "translationEn": "Now I will be more generous and wiser.",
         "translationVi": "Bây giờ tôi sẽ trở nên hào phóng và thông minh hơn."
     },
     {
-        "text": "Bitte holt mich heraus, kommt schon!“",
-        "start": 226.45999755859376,
-        "end": 228.93999938964845,
+        "text": "Bitte holt mich heraus, kommt schon!",
+        "start": 226.5,
+        "end": 228.63999938964844,
         "wordTimings": [
             {
                 "word": "Bitte",
-                "start": 226.45999755859376,
+                "start": 226.5,
                 "end": 226.55999755859375
             },
             {
                 "word": "holt",
-                "start": 226.8000030517578,
+                "start": 226.77999877929688,
                 "end": 227
             },
             {
@@ -2678,26 +2665,26 @@
             },
             {
                 "word": "kommt",
-                "start": 227.86000061035156,
+                "start": 227.83999633789062,
                 "end": 228.13999938964844
             },
             {
-                "word": "schon!“",
+                "word": "schon!",
                 "start": 228.13999938964844,
-                "end": 228.93999938964845
+                "end": 228.63999938964844
             }
         ],
-        "translationEn": "\"Please get me out, come on!\"",
-        "translationVi": "“Xin hãy cứu tôi, mau lên!”"
+        "translationEn": "Please get me out, come on!",
+        "translationVi": "Xin hãy cứu tôi, mau lên!"
     },
     {
         "text": "Der Wolf blieb einen ganzen Tag lang in diesem Kasten.",
-        "start": 230.5999969482422,
-        "end": 234.40000610351564,
+        "start": 230.67999267578125,
+        "end": 234.10000610351562,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 230.5999969482422,
+                "start": 230.67999267578125,
                 "end": 231.25999450683594
             },
             {
@@ -2743,20 +2730,20 @@
             {
                 "word": "Kasten.",
                 "start": 233.67999267578125,
-                "end": 234.40000610351564
+                "end": 234.10000610351562
             }
         ],
         "translationEn": "The wolf stayed in this box for a whole day.",
-        "translationVi": "Con sói đã ở trong cái hộp này suốt một ngày."
+        "translationVi": "Con sói đã ở trong cái thùng này suốt một ngày."
     },
     {
         "text": "Am nächsten Morgen sahen der Hirte und der Büffel, dass der Wolf eine gute Lektion gelernt hatte und holten ihn zurück aus dem Kasten.",
-        "start": 234.00000610351563,
-        "end": 243.4199951171875,
+        "start": 234.10000610351562,
+        "end": 243.1199951171875,
         "wordTimings": [
             {
                 "word": "Am",
-                "start": 234.00000610351563,
+                "start": 234.10000610351562,
                 "end": 234.82000732421875
             },
             {
@@ -2841,12 +2828,12 @@
             },
             {
                 "word": "und",
-                "start": 240.0399932861328,
-                "end": 240.72000122070312
+                "start": 240.25999450683594,
+                "end": 240.77999877929688
             },
             {
                 "word": "holten",
-                "start": 240.72000122070312,
+                "start": 240.77999877929688,
                 "end": 241.16000366210938
             },
             {
@@ -2872,25 +2859,25 @@
             {
                 "word": "Kasten.",
                 "start": 242.60000610351562,
-                "end": 243.4199951171875
+                "end": 243.1199951171875
             }
         ],
         "translationEn": "The next morning, the shepherd and the buffalo saw that the wolf had learned a good lesson and brought him back from the box.",
         "translationVi": "Sáng hôm sau, người chăn cừu và con trâu thấy rằng con sói đã học được một bài học tốt và đã đưa nó trở lại từ cái hộp."
     },
     {
-        "text": "„Danke, ich danke euch!“",
-        "start": 248.0199951171875,
-        "end": 252.13999633789064,
+        "text": "Danke, ich danke euch!",
+        "start": 248.1199951171875,
+        "end": 251.83999633789062,
         "wordTimings": [
             {
-                "word": "„Danke,",
-                "start": 248.0199951171875,
+                "word": "Danke,",
+                "start": 248.1199951171875,
                 "end": 248.9199981689453
             },
             {
                 "word": "ich",
-                "start": 249.5,
+                "start": 249.4600067138672,
                 "end": 249.8800048828125
             },
             {
@@ -2899,22 +2886,22 @@
                 "end": 250.22000122070312
             },
             {
-                "word": "euch!“",
+                "word": "euch!",
                 "start": 250.22000122070312,
-                "end": 252.13999633789064
+                "end": 251.83999633789062
             }
         ],
-        "translationEn": "\"Thank you, I thank you all!\"",
-        "translationVi": "\"Cảm ơn, tôi cảm ơn các bạn!\""
+        "translationEn": "Thank you, I thank you all!",
+        "translationVi": "Cảm ơn, tôi cảm ơn các bạn!"
     },
     {
         "text": "Von diesem Tag an verstand sich der Wolf besser mit den anderen Tieren des Waldes und respektierte die Meinung aller, von fliegenden Vögeln bis zu winzigen Insekten.",
-        "start": 254.50000610351563,
-        "end": 266.02000122070314,
+        "start": 254.60000610351562,
+        "end": 265.7200012207031,
         "wordTimings": [
             {
                 "word": "Von",
-                "start": 254.50000610351563,
+                "start": 254.60000610351562,
                 "end": 255.44000244140625
             },
             {
@@ -3045,10 +3032,10 @@
             {
                 "word": "Insekten.",
                 "start": 264.9200134277344,
-                "end": 266.02000122070314
+                "end": 265.7200012207031
             }
         ],
         "translationEn": "From that day on, the wolf got along better with the other animals in the forest and respected the opinions of all, from flying birds to tiny insects.",
-        "translationVi": "Từ ngày đó, con sói hiểu rõ hơn về các loài động vật khác trong rừng và tôn trọng ý kiến của tất cả, từ những chú chim bay lượn cho đến những con côn trùng nhỏ bé."
+        "translationVi": "Từ ngày đó, con sói hiểu rõ hơn về các loài động vật khác trong rừng và tôn trọng ý kiến của tất cả, từ những con chim bay cho đến những con côn trùng nhỏ bé."
     }
 ]

@@ -1,12 +1,12 @@
 [
     {
         "text": "Was macht denn ein Frosch am Tisch einer Prinzessin?",
-        "start": 11.259999656677246,
-        "end": 14.8,
+        "start": 11.359999656677246,
+        "end": 14.5,
         "wordTimings": [
             {
                 "word": "Was",
-                "start": 11.259999656677246,
+                "start": 11.359999656677246,
                 "end": 12
             },
             {
@@ -47,20 +47,20 @@
             {
                 "word": "Prinzessin?",
                 "start": 13.739999771118164,
-                "end": 14.8
+                "end": 14.5
             }
         ],
         "translationEn": "What is a frog doing at a princess's table?",
-        "translationVi": "Con ếch làm gì trên bàn của một công chúa?"
+        "translationVi": "Con ếch đang làm gì trên bàn của một nàng công chúa?"
     },
     {
         "text": "Und was ist das für eine prächtige Kutsche, die da angefahren kommt?",
-        "start": 16.4,
-        "end": 20.939999389648438,
+        "start": 16.5,
+        "end": 20.639999389648438,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 16.4,
+                "start": 16.5,
                 "end": 17.139999389648438
             },
             {
@@ -116,20 +116,20 @@
             {
                 "word": "kommt?",
                 "start": 20.31999969482422,
-                "end": 20.939999389648438
+                "end": 20.639999389648438
             }
         ],
-        "translationEn": "And what a magnificent carriage is coming up there!",
-        "translationVi": "Và đó là một chiếc xe ngựa lộng lẫy gì đang tiến lại gần?"
+        "translationEn": "And what a magnificent carriage that is coming this way!",
+        "translationVi": "Và đó là một chiếc xe ngựa lộng lẫy đang tiến lại gần?"
     },
     {
         "text": "Bist du gespannt? Na dann lass uns mal schauen.",
-        "start": 21.979999923706053,
-        "end": 26.379999923706055,
+        "start": 22.079999923706055,
+        "end": 26.079999923706055,
         "wordTimings": [
             {
                 "word": "Bist",
-                "start": 21.979999923706053,
+                "start": 22.079999923706055,
                 "end": 22.239999771118164
             },
             {
@@ -170,20 +170,20 @@
             {
                 "word": "schauen.",
                 "start": 25.65999984741211,
-                "end": 26.379999923706055
+                "end": 26.079999923706055
             }
         ],
         "translationEn": "Are you excited? Well then, let's take a look.",
-        "translationVi": "Bạn có hồi hộp không? Vậy thì hãy cùng xem nào."
+        "translationVi": "Bạn có háo hức không? Vậy thì hãy cùng xem nào."
     },
     {
         "text": "Es lebte mal ein König, dessen Töchter waren wunderschön.",
-        "start": 27.76000061035156,
-        "end": 32.599999237060544,
+        "start": 27.860000610351562,
+        "end": 32.29999923706055,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 27.76000061035156,
+                "start": 27.860000610351562,
                 "end": 28.459999084472656
             },
             {
@@ -224,20 +224,20 @@
             {
                 "word": "wunderschön.",
                 "start": 31.239999771118164,
-                "end": 32.599999237060544
+                "end": 32.29999923706055
             }
         ],
-        "translationEn": "Once there lived a king whose daughters were beautiful.",
+        "translationEn": "Once upon a time, there lived a king whose daughters were beautiful.",
         "translationVi": "Ngày xưa có một vị vua, các công chúa của ngài rất xinh đẹp."
     },
     {
         "text": "Die jüngste Tochter aber war die schönste von allen.",
-        "start": 33.31999816894531,
-        "end": 36.8,
+        "start": 33.41999816894531,
+        "end": 36.5,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 33.31999816894531,
+                "start": 33.41999816894531,
                 "end": 33.619998931884766
             },
             {
@@ -278,20 +278,20 @@
             {
                 "word": "allen.",
                 "start": 36.29999923706055,
-                "end": 36.8
+                "end": 36.5
             }
         ],
         "translationEn": "The youngest daughter, however, was the most beautiful of them all.",
-        "translationVi": "Cô con gái út lại là người đẹp nhất trong tất cả."
+        "translationVi": "Cô con gái út lại là người đẹp nhất trong số tất cả."
     },
     {
         "text": "Immer wenn es heiß war, ging sie zum Brunnen.",
-        "start": 38.44000091552734,
-        "end": 41.23999862670898,
+        "start": 38.540000915527344,
+        "end": 40.939998626708984,
         "wordTimings": [
             {
                 "word": "Immer",
-                "start": 38.44000091552734,
+                "start": 38.540000915527344,
                 "end": 38.7400016784668
             },
             {
@@ -332,20 +332,20 @@
             {
                 "word": "Brunnen.",
                 "start": 40.619998931884766,
-                "end": 41.23999862670898
+                "end": 40.939998626708984
             }
         ],
         "translationEn": "Whenever it was hot, she went to the well.",
-        "translationVi": "Mỗi khi trời nóng, cô ấy lại ra giếng."
+        "translationVi": "Mỗi khi trời nóng, cô ấy đi đến giếng."
     },
     {
         "text": "Der stand unter der Linde, die im großen Wald in der Nähe des Schlosses wuchs.",
-        "start": 41.99999847412109,
-        "end": 46.619999694824216,
+        "start": 42.099998474121094,
+        "end": 46.31999969482422,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 41.99999847412109,
+                "start": 42.099998474121094,
                 "end": 42.279998779296875
             },
             {
@@ -416,20 +416,20 @@
             {
                 "word": "wuchs.",
                 "start": 46.2599983215332,
-                "end": 46.619999694824216
+                "end": 46.31999969482422
             }
         ],
-        "translationEn": "He stood under the linden tree that grew in the large forest near the castle.",
-        "translationVi": "Ông đứng dưới cây lim, cây mọc trong khu rừng lớn gần lâu đài."
+        "translationEn": "He stood under the lime tree that grew in the large forest near the castle.",
+        "translationVi": "Ông đứng dưới cây lime, cây mọc trong khu rừng lớn gần lâu đài."
     },
     {
         "text": "Dort setzte sie sich an den Rand des Brunnens und spielte mit ihrem liebsten Spielzeug, einer goldenen Kugel.",
-        "start": 48.199999237060545,
-        "end": 55.21999816894531,
+        "start": 48.29999923706055,
+        "end": 54.91999816894531,
         "wordTimings": [
             {
                 "word": "Dort",
-                "start": 48.199999237060545,
+                "start": 48.29999923706055,
                 "end": 48.560001373291016
             },
             {
@@ -515,20 +515,20 @@
             {
                 "word": "Kugel.",
                 "start": 54.58000183105469,
-                "end": 55.21999816894531
+                "end": 54.91999816894531
             }
         ],
         "translationEn": "There she sat at the edge of the well and played with her favorite toy, a golden ball.",
-        "translationVi": "Cô ấy ngồi ở mép giếng và chơi với món đồ chơi yêu thích nhất của mình, một quả cầu vàng."
+        "translationVi": "Cô ngồi ở mép cái giếng và chơi với món đồ chơi yêu thích của mình, một quả cầu vàng."
     },
     {
         "text": "Die Prinzessin warf die Kugel hoch und fing sie immer wieder auf.",
-        "start": 55.74000015258789,
-        "end": 60.18000106811523,
+        "start": 55.84000015258789,
+        "end": 59.880001068115234,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 55.74000015258789,
+                "start": 55.84000015258789,
                 "end": 56.20000076293945
             },
             {
@@ -584,20 +584,20 @@
             {
                 "word": "auf.",
                 "start": 59.52000045776367,
-                "end": 60.18000106811523
+                "end": 59.880001068115234
             }
         ],
-        "translationEn": "The princess threw the ball up and caught it again and again.",
-        "translationVi": "Công chúa ném quả bóng lên cao và luôn bắt lại."
+        "translationEn": "The princess threw the ball high and caught it again and again.",
+        "translationVi": "Công chúa ném quả bóng lên cao và luôn bắt lại nó."
     },
     {
         "text": "Doch einmal fing die Prinzessin die Kugel nicht, und sie fiel in den Brunnen.",
-        "start": 60.83999862670898,
-        "end": 65.99999694824218,
+        "start": 60.939998626708984,
+        "end": 65.69999694824219,
         "wordTimings": [
             {
                 "word": "Doch",
-                "start": 60.83999862670898,
+                "start": 60.939998626708984,
                 "end": 61.15999984741211
             },
             {
@@ -663,7 +663,7 @@
             {
                 "word": "Brunnen.",
                 "start": 65.54000091552734,
-                "end": 65.99999694824218
+                "end": 65.69999694824219
             }
         ],
         "translationEn": "But once the princess did not catch the ball, and it fell into the well.",
@@ -671,12 +671,12 @@
     },
     {
         "text": "Der Brunnen war so tief, dass die Prinzessin die Kugel nicht mehr sehen konnte.",
-        "start": 66.52000274658204,
-        "end": 71.42000274658203,
+        "start": 66.62000274658203,
+        "end": 71.12000274658203,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 66.52000274658204,
+                "start": 66.62000274658203,
                 "end": 66.81999969482422
             },
             {
@@ -742,7 +742,7 @@
             {
                 "word": "konnte.",
                 "start": 70.76000213623047,
-                "end": 71.42000274658203
+                "end": 71.12000274658203
             }
         ],
         "translationEn": "The well was so deep that the princess could no longer see the ball.",
@@ -750,12 +750,12 @@
     },
     {
         "text": "Da fing sie an zu weinen.",
-        "start": 72.44000091552735,
-        "end": 74.67999725341797,
+        "start": 72.54000091552734,
+        "end": 74.37999725341797,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 72.44000091552735,
+                "start": 72.54000091552734,
                 "end": 73.26000213623047
             },
             {
@@ -781,20 +781,20 @@
             {
                 "word": "weinen.",
                 "start": 74.37999725341797,
-                "end": 74.67999725341797
+                "end": 74.37999725341797
             }
         ],
-        "translationEn": "Then she started to cry.",
+        "translationEn": "Then she began to cry.",
         "translationVi": "Cô ấy bắt đầu khóc."
     },
     {
-        "text": "Plötzlich rief jemand zu: \"Warum weinst du so laut, Königstochter?\"",
-        "start": 75.9999984741211,
-        "end": 82.06000213623047,
+        "text": "Plötzlich rief jemand zu: „Warum weinst du so laut, Königstochter?“",
+        "start": 76.0999984741211,
+        "end": 81.76000213623047,
         "wordTimings": [
             {
                 "word": "Plötzlich",
-                "start": 75.9999984741211,
+                "start": 76.0999984741211,
                 "end": 76.0999984741211
             },
             {
@@ -813,7 +813,7 @@
                 "end": 77.76000213623047
             },
             {
-                "word": "\"Warum",
+                "word": "„Warum",
                 "start": 78.54000091552734,
                 "end": 79.04000091552734
             },
@@ -838,22 +838,22 @@
                 "end": 80.4800033569336
             },
             {
-                "word": "Königstochter?\"",
+                "word": "Königstochter?“",
                 "start": 80.86000061035156,
-                "end": 82.06000213623047
+                "end": 81.76000213623047
             }
         ],
-        "translationEn": "Suddenly someone shouted, \"Why are you crying so loudly, princess?\"",
-        "translationVi": "Đột nhiên có người gọi: \"Tại sao công chúa lại khóc to như vậy?\""
+        "translationEn": "Suddenly someone called out, \"Why are you crying so loudly, princess?\"",
+        "translationVi": "Bỗng nhiên có ai đó gọi: \"Tại sao công chúa lại khóc to như vậy?\""
     },
     {
         "text": "Die Prinzessin blickte sich um und sah einen Frosch, der am Rand des Brunnens saß.",
-        "start": 82.44000091552735,
-        "end": 88.96000366210937,
+        "start": 82.54000091552734,
+        "end": 88.66000366210938,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 82.44000091552735,
+                "start": 82.54000091552734,
                 "end": 82.9000015258789
             },
             {
@@ -904,11 +904,11 @@
             {
                 "word": "am",
                 "start": 87.04000091552734,
-                "end": 87.33999633789062
+                "end": 87.37999725341797
             },
             {
                 "word": "Rand",
-                "start": 87.33999633789062,
+                "start": 87.37999725341797,
                 "end": 87.58000183105469
             },
             {
@@ -924,20 +924,20 @@
             {
                 "word": "saß.",
                 "start": 88.33999633789062,
-                "end": 88.96000366210937
+                "end": 88.66000366210938
             }
         ],
         "translationEn": "The princess looked around and saw a frog sitting at the edge of the well.",
-        "translationVi": "Công chúa nhìn quanh và thấy một con ếch đang ngồi bên cạnh cái giếng."
+        "translationVi": "Công chúa nhìn quanh và thấy một con ếch ngồi ở mép giếng."
     },
     {
         "text": "Sie erzählte ihm, was passiert war.",
-        "start": 90.9,
-        "end": 93.13999633789062,
+        "start": 91,
+        "end": 92.83999633789062,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 90.9,
+                "start": 91,
                 "end": 91
             },
             {
@@ -963,20 +963,20 @@
             {
                 "word": "war.",
                 "start": 92.58000183105469,
-                "end": 93.13999633789062
+                "end": 92.83999633789062
             }
         ],
         "translationEn": "She told him what had happened.",
-        "translationVi": "Cô ấy kể cho anh ấy nghe những gì đã xảy ra."
+        "translationVi": "Cô ấy kể cho anh ta nghe những gì đã xảy ra."
     },
     {
-        "text": "Der Frosch sagte: \"Weine nicht, Königstochter, ich kann dir helfen.",
-        "start": 93.67999877929688,
-        "end": 99.7000015258789,
+        "text": "Der Frosch sagte: „Weine nicht, Königstochter, ich kann dir helfen.",
+        "start": 93.77999877929688,
+        "end": 99.4000015258789,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 93.67999877929688,
+                "start": 93.77999877929688,
                 "end": 93.9800033569336
             },
             {
@@ -990,7 +990,7 @@
                 "end": 94.77999877929688
             },
             {
-                "word": "\"Weine",
+                "word": "„Weine",
                 "start": 95.87999725341797,
                 "end": 96.0199966430664
             },
@@ -1022,20 +1022,20 @@
             {
                 "word": "helfen.",
                 "start": 98.95999908447266,
-                "end": 99.7000015258789
+                "end": 99.4000015258789
             }
         ],
-        "translationEn": "The frog said: \"Don't cry, princess, I can help you.\"",
+        "translationEn": "The frog said, \"Don't cry, princess, I can help you.\"",
         "translationVi": "Con ếch nói: \"Đừng khóc, công chúa, tôi có thể giúp bạn.\""
     },
     {
-        "text": "Aber was gibst du mir, wenn ich dir die Kugel wiederbringe?\"",
-        "start": 100.20000305175782,
-        "end": 105.21999816894531,
+        "text": "Aber was gibst du mir, wenn ich dir die Kugel wiederbringe?“",
+        "start": 100.30000305175781,
+        "end": 104.91999816894531,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 100.20000305175782,
+                "start": 100.30000305175781,
                 "end": 100.73999786376953
             },
             {
@@ -1084,22 +1084,22 @@
                 "end": 103.9000015258789
             },
             {
-                "word": "wiederbringe?\"",
+                "word": "wiederbringe?“",
                 "start": 103.9000015258789,
-                "end": 105.21999816894531
+                "end": 104.91999816894531
             }
         ],
         "translationEn": "\"But what will you give me if I bring the ball back to you?\"",
         "translationVi": "Nhưng bạn sẽ cho tôi gì nếu tôi mang viên đạn trở lại cho bạn?"
     },
     {
-        "text": "Die Prinzessin sagte: \"Alles, was du willst, meine Kleider, meine Perlen und Edelsteine,",
-        "start": 106.34000244140626,
-        "end": 112.71999816894531,
+        "text": "Die Prinzessin sagte: „Alles, was du willst, meine Kleider, meine Perlen und Edelsteine,",
+        "start": 106.44000244140625,
+        "end": 112.41999816894531,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 106.34000244140626,
+                "start": 106.44000244140625,
                 "end": 107.16000366210938
             },
             {
@@ -1113,7 +1113,7 @@
                 "end": 108.16000366210938
             },
             {
-                "word": "\"Alles,",
+                "word": "„Alles,",
                 "start": 109.08000183105469,
                 "end": 109.26000213623047
             },
@@ -1160,20 +1160,20 @@
             {
                 "word": "Edelsteine,",
                 "start": 111.87999725341797,
-                "end": 112.71999816894531
+                "end": 112.41999816894531
             }
         ],
-        "translationEn": "The princess said, \"Everything you want, my clothes, my pearls and gemstones,",
+        "translationEn": "The princess said, \"Everything you want, my dresses, my pearls and gemstones,",
         "translationVi": "Công chúa nói: \"Tất cả những gì bạn muốn, những bộ váy của tôi, những viên ngọc trai và đá quý của tôi,"
     },
     {
-        "text": "und auch die goldene Krone, die ich trage.\"",
-        "start": 112.31999816894532,
-        "end": 115.42000274658203,
+        "text": "und auch die goldene Krone, die ich trage.“",
+        "start": 112.41999816894531,
+        "end": 115.12000274658203,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 112.31999816894532,
+                "start": 112.41999816894531,
                 "end": 113
             },
             {
@@ -1207,22 +1207,22 @@
                 "end": 114.76000213623047
             },
             {
-                "word": "trage.\"",
+                "word": "trage.“",
                 "start": 114.76000213623047,
-                "end": 115.42000274658203
+                "end": 115.12000274658203
             }
         ],
         "translationEn": "\"and also the golden crown that I wear.\"",
         "translationVi": "và cả chiếc vương miện vàng mà tôi đang đeo.\""
     },
     {
-        "text": "Der Frosch aber antwortete: \"Das interessiert mich alles nicht.",
-        "start": 116.94000091552735,
-        "end": 122.34000091552734,
+        "text": "Der Frosch aber antwortete: „Das interessiert mich alles nicht.",
+        "start": 117.04000091552734,
+        "end": 122.04000091552734,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 116.94000091552735,
+                "start": 117.04000091552734,
                 "end": 117.76000213623047
             },
             {
@@ -1241,7 +1241,7 @@
                 "end": 119.04000091552734
             },
             {
-                "word": "\"Das",
+                "word": "„Das",
                 "start": 119.81999969482422,
                 "end": 120.12000274658203
             },
@@ -1258,25 +1258,25 @@
             {
                 "word": "alles",
                 "start": 121.18000030517578,
-                "end": 121.72000122070312
+                "end": 121.73999786376953
             },
             {
                 "word": "nicht.",
-                "start": 121.72000122070312,
-                "end": 122.34000091552734
+                "start": 121.73999786376953,
+                "end": 122.04000091552734
             }
         ],
-        "translationEn": "But the frog replied: \"I am not interested in any of that.\"",
+        "translationEn": "But the frog replied, \"I am not interested in any of that.\"",
         "translationVi": "Con ếch đáp lại: \"Tôi không quan tâm đến tất cả những điều đó.\""
     },
     {
         "text": "Wenn du mir aber versprichst, dass ich dein Freund sein darf,",
-        "start": 122.77999725341797,
-        "end": 127.53999786376953,
+        "start": 122.87999725341797,
+        "end": 127.23999786376953,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 122.77999725341797,
+                "start": 122.87999725341797,
                 "end": 123.08000183105469
             },
             {
@@ -1327,20 +1327,20 @@
             {
                 "word": "darf,",
                 "start": 126.76000213623047,
-                "end": 127.53999786376953
+                "end": 127.23999786376953
             }
         ],
         "translationEn": "But if you promise me that I can be your friend,",
-        "translationVi": "Nếu nhưng bạn hứa với tôi rằng tôi có thể trở thành bạn của bạn,"
+        "translationVi": "Nếu bạn hứa với tôi rằng tôi có thể là bạn của bạn,"
     },
     {
         "text": "an deinem Tischlein sitzen, von deinem goldenen Tellerchen essen,",
-        "start": 127.67999877929688,
-        "end": 132.83999328613282,
+        "start": 127.77999877929688,
+        "end": 132.5399932861328,
         "wordTimings": [
             {
                 "word": "an",
-                "start": 127.67999877929688,
+                "start": 127.77999877929688,
                 "end": 127.87999725341797
             },
             {
@@ -1381,7 +1381,7 @@
             {
                 "word": "essen,",
                 "start": 132.16000366210938,
-                "end": 132.83999328613282
+                "end": 132.5399932861328
             }
         ],
         "translationEn": "sit at your little table, eat from your golden plate,",
@@ -1389,12 +1389,12 @@
     },
     {
         "text": "aus deinem goldenen Becherlein trinken und in deinem Bettchen schlafen darf,",
-        "start": 132.84000244140626,
-        "end": 138.21999816894532,
+        "start": 132.94000244140625,
+        "end": 137.9199981689453,
         "wordTimings": [
             {
                 "word": "aus",
-                "start": 132.84000244140626,
+                "start": 132.94000244140625,
                 "end": 133.05999755859375
             },
             {
@@ -1445,20 +1445,20 @@
             {
                 "word": "darf,",
                 "start": 137.5,
-                "end": 138.21999816894532
+                "end": 137.9199981689453
             }
         ],
         "translationEn": "to drink from your golden little cup and to sleep in your little bed,",
         "translationVi": "uống từ chiếc cốc vàng của bạn và được ngủ trong chiếc giường nhỏ của bạn,"
     },
     {
-        "text": "dann hole ich dir die Kugel wieder herauf.\"",
-        "start": 138.20000305175782,
-        "end": 141.8,
+        "text": "dann hole ich dir die Kugel wieder herauf.“",
+        "start": 138.3000030517578,
+        "end": 141.5,
         "wordTimings": [
             {
                 "word": "dann",
-                "start": 138.20000305175782,
+                "start": 138.3000030517578,
                 "end": 139.10000610351562
             },
             {
@@ -1492,22 +1492,22 @@
                 "end": 140.8800048828125
             },
             {
-                "word": "herauf.\"",
+                "word": "herauf.“",
                 "start": 140.8800048828125,
-                "end": 141.8
+                "end": 141.5
             }
         ],
         "translationEn": "\"Then I'll bring the ball back up for you.\"",
-        "translationVi": "\"Vậy thì tôi sẽ lấy viên bi đó lên cho bạn.\""
+        "translationVi": "\"Thì tôi sẽ lấy viên đạn đó cho bạn.\""
     },
     {
-        "text": "Da sagte die Prinzessin: \"Ich verspreche dir alles, was du willst,",
-        "start": 143.87999572753907,
-        "end": 149.24000244140626,
+        "text": "Da sagte die Prinzessin: „Ich verspreche dir alles, was du willst,",
+        "start": 143.97999572753906,
+        "end": 148.94000244140625,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 143.87999572753907,
+                "start": 143.97999572753906,
                 "end": 144.66000366210938
             },
             {
@@ -1526,7 +1526,7 @@
                 "end": 145.86000061035156
             },
             {
-                "word": "\"Ich",
+                "word": "„Ich",
                 "start": 146.5800018310547,
                 "end": 146.6999969482422
             },
@@ -1558,20 +1558,20 @@
             {
                 "word": "willst,",
                 "start": 148.5800018310547,
-                "end": 149.24000244140626
+                "end": 148.94000244140625
             }
         ],
         "translationEn": "Then the princess said, \"I promise you everything you want,",
         "translationVi": "Cô công chúa nói: \"Tôi hứa với bạn mọi thứ bạn muốn,"
     },
     {
-        "text": "wenn du mir nur meine Kugel wiederbringst.\"",
-        "start": 149.20000305175782,
-        "end": 151.82000427246095,
+        "text": "wenn du mir nur meine Kugel wiederbringst.“",
+        "start": 149.3000030517578,
+        "end": 151.52000427246094,
         "wordTimings": [
             {
                 "word": "wenn",
-                "start": 149.20000305175782,
+                "start": 149.3000030517578,
                 "end": 149.5399932861328
             },
             {
@@ -1600,22 +1600,22 @@
                 "end": 150.72000122070312
             },
             {
-                "word": "wiederbringst.\"",
+                "word": "wiederbringst.“",
                 "start": 150.72000122070312,
-                "end": 151.82000427246095
+                "end": 151.52000427246094
             }
         ],
-        "translationEn": "\"if you just bring me back my ball.\"",
+        "translationEn": "\"if you only bring me back my ball.\"",
         "translationVi": "\"Nếu bạn chỉ trả lại viên bi của tôi.\""
     },
     {
-        "text": "Dabei dachte sie aber: \"Lass den Frosch nur reden,",
-        "start": 152.57999267578126,
-        "end": 156.3800018310547,
+        "text": "Dabei dachte sie aber: „Lass den Frosch nur reden,",
+        "start": 152.67999267578125,
+        "end": 156.0800018310547,
         "wordTimings": [
             {
                 "word": "Dabei",
-                "start": 152.57999267578126,
+                "start": 152.67999267578125,
                 "end": 152.8800048828125
             },
             {
@@ -1634,7 +1634,7 @@
                 "end": 154.02000427246094
             },
             {
-                "word": "\"Lass",
+                "word": "„Lass",
                 "start": 154.94000244140625,
                 "end": 154.94000244140625
             },
@@ -1656,20 +1656,20 @@
             {
                 "word": "reden,",
                 "start": 155.74000549316406,
-                "end": 156.3800018310547
+                "end": 156.0800018310547
             }
         ],
         "translationEn": "But she thought: \"Just let the frog talk,",
-        "translationVi": "Cô ấy nghĩ: \"Hãy để con ếch nói đi,\""
+        "translationVi": "Cô ấy nghĩ: \"Hãy để con ếch nói đi.\""
     },
     {
         "text": "er soll bei den anderen Fröschen im Wasser bleiben und quaken.",
-        "start": 156.45999755859376,
-        "end": 159.74000244140626,
+        "start": 156.55999755859375,
+        "end": 159.44000244140625,
         "wordTimings": [
             {
                 "word": "er",
-                "start": 156.45999755859376,
+                "start": 156.55999755859375,
                 "end": 156.6999969482422
             },
             {
@@ -1720,20 +1720,20 @@
             {
                 "word": "quaken.",
                 "start": 159,
-                "end": 159.74000244140626
+                "end": 159.44000244140625
             }
         ],
         "translationEn": "He should stay with the other frogs in the water and croak.",
-        "translationVi": "Anh ấy nên ở lại với những con ếch khác trong nước và kêu quang quác."
+        "translationVi": "Anh ấy nên ở lại với những con ếch khác trong nước và kêu."
     },
     {
-        "text": "Als Freund will ich ihn nicht.\"",
-        "start": 159.34000244140626,
-        "end": 161.66000061035157,
+        "text": "Als Freund will ich ihn nicht.“",
+        "start": 159.44000244140625,
+        "end": 161.36000061035156,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 159.34000244140626,
+                "start": 159.44000244140625,
                 "end": 160.1999969482422
             },
             {
@@ -1757,9 +1757,9 @@
                 "end": 161.02000427246094
             },
             {
-                "word": "nicht.\"",
+                "word": "nicht.“",
                 "start": 161.02000427246094,
-                "end": 161.66000061035157
+                "end": 161.36000061035156
             }
         ],
         "translationEn": "\"I don't want him as a friend.\"",
@@ -1767,12 +1767,12 @@
     },
     {
         "text": "Als der Frosch das Versprechen der Prinzessin bekommen hatte,",
-        "start": 164.17999877929688,
-        "end": 167.9600036621094,
+        "start": 164.27999877929688,
+        "end": 167.66000366210938,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 164.17999877929688,
+                "start": 164.27999877929688,
                 "end": 164.4600067138672
             },
             {
@@ -1813,20 +1813,20 @@
             {
                 "word": "hatte,",
                 "start": 167.32000732421875,
-                "end": 167.9600036621094
+                "end": 167.66000366210938
             }
         ],
-        "translationEn": "When the frog received the promise from the princess,",
+        "translationEn": "When the frog had received the princess's promise,",
         "translationVi": "Khi con ếch nhận được lời hứa của công chúa,"
     },
     {
         "text": "sprang er in den Brunnen und holte die goldene Kugel wieder heraus.",
-        "start": 168.37999572753907,
-        "end": 172.27999572753907,
+        "start": 168.47999572753906,
+        "end": 171.97999572753906,
         "wordTimings": [
             {
                 "word": "sprang",
-                "start": 168.37999572753907,
+                "start": 168.47999572753906,
                 "end": 168.47999572753906
             },
             {
@@ -1862,11 +1862,11 @@
             {
                 "word": "die",
                 "start": 170.22000122070312,
-                "end": 170.44000244140625
+                "end": 170.4600067138672
             },
             {
                 "word": "goldene",
-                "start": 170.44000244140625,
+                "start": 170.4600067138672,
                 "end": 170.86000061035156
             },
             {
@@ -1882,20 +1882,20 @@
             {
                 "word": "heraus.",
                 "start": 171.5399932861328,
-                "end": 172.27999572753907
+                "end": 171.97999572753906
             }
         ],
         "translationEn": "he jumped into the well and retrieved the golden ball.",
-        "translationVi": "anh ta nhảy xuống giếng và lấy lại quả bóng vàng."
+        "translationVi": "anh ta nhảy xuống giếng và lấy lại quả cầu vàng."
     },
     {
         "text": "Die Prinzessin freute sich sehr, nahm ihre Kugel und lief fröhlich davon.",
-        "start": 174.26000061035157,
-        "end": 179.7600067138672,
+        "start": 174.36000061035156,
+        "end": 179.4600067138672,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 174.26000061035157,
+                "start": 174.36000061035156,
                 "end": 175.0800018310547
             },
             {
@@ -1951,20 +1951,20 @@
             {
                 "word": "davon.",
                 "start": 179,
-                "end": 179.7600067138672
+                "end": 179.4600067138672
             }
         ],
-        "translationEn": "The princess was very happy, took her ball, and ran off cheerfully.",
+        "translationEn": "The princess was very happy, took her ball, and ran off joyfully.",
         "translationVi": "Công chúa rất vui mừng, cầm quả bóng của mình và chạy đi một cách vui vẻ."
     },
     {
-        "text": "Der Frosch rief: \"Nimm mich mit!\"",
-        "start": 181.5199951171875,
-        "end": 184.35999755859376,
+        "text": "Der Frosch rief: „Nimm mich mit!“, aber die Prinzessin hörte nicht auf ihn,",
+        "start": 181.6199951171875,
+        "end": 186.66000366210938,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 181.5199951171875,
+                "start": 181.6199951171875,
                 "end": 181.82000732421875
             },
             {
@@ -1978,7 +1978,7 @@
                 "end": 182.5
             },
             {
-                "word": "\"Nimm",
+                "word": "„Nimm",
                 "start": 183.1999969482422,
                 "end": 183.1999969482422
             },
@@ -1988,22 +1988,13 @@
                 "end": 183.55999755859375
             },
             {
-                "word": "mit!\"",
+                "word": "mit!“,",
                 "start": 183.55999755859375,
-                "end": 184.35999755859376
-            }
-        ],
-        "translationEn": "The frog called out: \"Take me with you!\"",
-        "translationVi": "Con ếch kêu: \"Hãy mang tôi đi!\""
-    },
-    {
-        "text": "Aber die Prinzessin hörte nicht auf ihn und so blieb der Frosch zurück.",
-        "start": 184.5999969482422,
-        "end": 189.27999572753907,
-        "wordTimings": [
+                "end": 184.05999755859375
+            },
             {
-                "word": "Aber",
-                "start": 184.5999969482422,
+                "word": "aber",
+                "start": 184.6999969482422,
                 "end": 184.9199981689453
             },
             {
@@ -2032,10 +2023,19 @@
                 "end": 186.4600067138672
             },
             {
-                "word": "ihn",
+                "word": "ihn,",
                 "start": 186.4600067138672,
                 "end": 186.66000366210938
-            },
+            }
+        ],
+        "translationEn": "The frog called out, \"Take me with you!\", but the princess did not listen to him,",
+        "translationVi": "Con ếch kêu: \"Hãy mang tôi đi!\", nhưng công chúa không nghe thấy nó."
+    },
+    {
+        "text": "und so blieb der Frosch zurück.",
+        "start": 186.66000366210938,
+        "end": 188.97999572753906,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 186.66000366210938,
@@ -2064,20 +2064,20 @@
             {
                 "word": "zurück.",
                 "start": 188.5800018310547,
-                "end": 189.27999572753907
+                "end": 188.97999572753906
             }
         ],
-        "translationEn": "But the princess did not listen to him, and so the frog remained behind.",
-        "translationVi": "Nhưng công chúa không nghe lời anh ta và vì vậy con ếch vẫn ở lại."
+        "translationEn": "And so the frog remained behind.",
+        "translationVi": "và thế là con ếch ở lại."
     },
     {
         "text": "Am nächsten Tag saß die Prinzessin mit dem König am Tisch",
-        "start": 190.9800018310547,
-        "end": 195.40000610351564,
+        "start": 191.0800018310547,
+        "end": 195.10000610351562,
         "wordTimings": [
             {
                 "word": "Am",
-                "start": 190.9800018310547,
+                "start": 191.0800018310547,
                 "end": 191.8000030517578
             },
             {
@@ -2128,20 +2128,20 @@
             {
                 "word": "Tisch",
                 "start": 194.86000061035156,
-                "end": 195.40000610351564
+                "end": 195.10000610351562
             }
         ],
         "translationEn": "The next day, the princess sat at the table with the king.",
-        "translationVi": "Ngày hôm sau, công chúa ngồi cùng vua tại bàn ăn."
+        "translationVi": "Ngày hôm sau, công chúa ngồi bên bàn với nhà vua."
     },
     {
         "text": "und aß von ihrem goldenen Tellerchen, als es plötzlich an der Tür klopfte.",
-        "start": 195.00000610351563,
-        "end": 200.93999938964845,
+        "start": 195.10000610351562,
+        "end": 200.63999938964844,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 195.00000610351563,
+                "start": 195.10000610351562,
                 "end": 196.0800018310547
             },
             {
@@ -2202,20 +2202,20 @@
             {
                 "word": "klopfte.",
                 "start": 200.02000427246094,
-                "end": 200.93999938964845
+                "end": 200.63999938964844
             }
         ],
         "translationEn": "and ate from her golden little plate when suddenly there was a knock at the door.",
-        "translationVi": "và ăn từ đĩa vàng của mình, thì bỗng nhiên có tiếng gõ cửa."
+        "translationVi": "và ăn từ đĩa vàng của mình, thì đột nhiên có tiếng gõ cửa."
     },
     {
-        "text": "Jemand rief: \"Jüngste Königstochter, mach mir auf!\"",
-        "start": 202.79999389648438,
-        "end": 208.12000732421876,
+        "text": "Jemand rief: „Jüngste Königstochter, mach mir auf!“",
+        "start": 202.89999389648438,
+        "end": 207.82000732421875,
         "wordTimings": [
             {
                 "word": "Jemand",
-                "start": 202.79999389648438,
+                "start": 202.89999389648438,
                 "end": 203.0399932861328
             },
             {
@@ -2224,7 +2224,7 @@
                 "end": 203.47999572753906
             },
             {
-                "word": "\"Jüngste",
+                "word": "„Jüngste",
                 "start": 204.5800018310547,
                 "end": 204.77999877929688
             },
@@ -2244,22 +2244,22 @@
                 "end": 207.10000610351562
             },
             {
-                "word": "auf!\"",
+                "word": "auf!“",
                 "start": 207.10000610351562,
-                "end": 208.12000732421876
+                "end": 207.82000732421875
             }
         ],
-        "translationEn": "Someone called: \"Youngest daughter of the king, open up for me!\"",
+        "translationEn": "Someone called: \"Youngest king's daughter, open up for me!\"",
         "translationVi": "Có người gọi: \"Công chúa trẻ nhất, hãy mở cửa cho ta!\""
     },
     {
         "text": "Da lief die Prinzessin zur Tür, um nachzusehen, wer dort war.",
-        "start": 209.56000366210938,
-        "end": 214.2600067138672,
+        "start": 209.66000366210938,
+        "end": 213.9600067138672,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 209.56000366210938,
+                "start": 209.66000366210938,
                 "end": 209.89999389648438
             },
             {
@@ -2310,7 +2310,7 @@
             {
                 "word": "war.",
                 "start": 213.66000366210938,
-                "end": 214.2600067138672
+                "end": 213.9600067138672
             }
         ],
         "translationEn": "Then the princess ran to the door to see who was there.",
@@ -2318,12 +2318,12 @@
     },
     {
         "text": "Als sie die Tür öffnete, sah sie den Frosch.",
-        "start": 215.07999267578126,
-        "end": 219.5799987792969,
+        "start": 215.17999267578125,
+        "end": 219.27999877929688,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 215.07999267578126,
+                "start": 215.17999267578125,
                 "end": 215.89999389648438
             },
             {
@@ -2364,7 +2364,7 @@
             {
                 "word": "Frosch.",
                 "start": 218.77999877929688,
-                "end": 219.5799987792969
+                "end": 219.27999877929688
             }
         ],
         "translationEn": "When she opened the door, she saw the frog.",
@@ -2372,12 +2372,12 @@
     },
     {
         "text": "Da warf sie die Tür zu und setzte sich ängstlich an den Tisch.",
-        "start": 221.65999450683594,
-        "end": 226.27999572753907,
+        "start": 221.75999450683594,
+        "end": 225.97999572753906,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 221.65999450683594,
+                "start": 221.75999450683594,
                 "end": 222.1199951171875
             },
             {
@@ -2438,20 +2438,20 @@
             {
                 "word": "Tisch.",
                 "start": 225.67999267578125,
-                "end": 226.27999572753907
+                "end": 225.97999572753906
             }
         ],
         "translationEn": "Then she slammed the door and nervously sat down at the table.",
-        "translationVi": "Cô ấy đóng sập cửa và ngồi xuống bàn với vẻ lo lắng."
+        "translationVi": "Cô ấy đóng sầm cửa lại và ngồi xuống bàn với vẻ lo lắng."
     },
     {
         "text": "Der König bemerkte es und fragte seine Tochter, wovor sie Angst habe.",
-        "start": 227.95999755859376,
-        "end": 232.5799987792969,
+        "start": 228.05999755859375,
+        "end": 232.27999877929688,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 227.95999755859376,
+                "start": 228.05999755859375,
                 "end": 228.22000122070312
             },
             {
@@ -2507,20 +2507,20 @@
             {
                 "word": "habe.",
                 "start": 231.9600067138672,
-                "end": 232.5799987792969
+                "end": 232.27999877929688
             }
         ],
         "translationEn": "The king noticed it and asked his daughter what she was afraid of.",
-        "translationVi": "Nhà vua nhận ra điều đó và hỏi con gái ông, cô sợ điều gì."
+        "translationVi": "Nhà vua nhận thấy điều đó và hỏi con gái mình, cô sợ điều gì."
     },
     {
         "text": "Da erzählte die Prinzessin ihrem Vater, was passiert war.",
-        "start": 233.14000549316407,
-        "end": 237.77999572753907,
+        "start": 233.24000549316406,
+        "end": 237.47999572753906,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 233.14000549316407,
+                "start": 233.24000549316406,
                 "end": 233.9600067138672
             },
             {
@@ -2561,20 +2561,20 @@
             {
                 "word": "war.",
                 "start": 237.22000122070312,
-                "end": 237.77999572753907
+                "end": 237.47999572753906
             }
         ],
         "translationEn": "Then the princess told her father what had happened.",
-        "translationVi": "Công chúa đã kể cho cha mình nghe điều gì đã xảy ra."
+        "translationVi": "Công chúa kể cho cha cô biết chuyện gì đã xảy ra."
     },
     {
-        "text": "Da klopfte es zum zweiten Mal und der Frosch rief: \"Jüngste Königstochter, mach mir auf!",
-        "start": 238.5999969482422,
-        "end": 246.90000610351564,
+        "text": "Da klopfte es zum zweiten Mal und der Frosch rief:",
+        "start": 238.6999969482422,
+        "end": 242.5399932861328,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 238.5999969482422,
+                "start": 238.6999969482422,
                 "end": 239.4600067138672
             },
             {
@@ -2621,9 +2621,18 @@
                 "word": "rief:",
                 "start": 242.16000366210938,
                 "end": 242.5399932861328
-            },
+            }
+        ],
+        "translationEn": "Then there was a knock for the second time and the frog called out:",
+        "translationVi": "Lần thứ hai có tiếng gõ cửa và con ếch kêu lên:"
+    },
+    {
+        "text": "„Jüngste Königstochter, mach mir auf! Weißt du nicht, was du mir gestern am Brunnen versprochen hast?“",
+        "start": 243.33999633789062,
+        "end": 251.5800018310547,
+        "wordTimings": [
             {
-                "word": "\"Jüngste",
+                "word": "„Jüngste",
                 "start": 243.33999633789062,
                 "end": 243.55999755859375
             },
@@ -2645,20 +2654,11 @@
             {
                 "word": "auf!",
                 "start": 245.86000061035156,
-                "end": 246.90000610351564
-            }
-        ],
-        "translationEn": "Then there was a knock for the second time and the frog called out: \"Youngest princess, let me in!\"",
-        "translationVi": "Lần thứ hai có tiếng gõ cửa và con ếch kêu: \"Công chúa út, hãy mở cửa cho ta!\""
-    },
-    {
-        "text": "Weißt du nicht, was du mir gestern am Brunnen versprochen hast?\"",
-        "start": 247.43999328613282,
-        "end": 251.8800018310547,
-        "wordTimings": [
+                "end": 246.60000610351562
+            },
             {
                 "word": "Weißt",
-                "start": 247.43999328613282,
+                "start": 247.5399932861328,
                 "end": 247.5399932861328
             },
             {
@@ -2707,22 +2707,22 @@
                 "end": 250.9600067138672
             },
             {
-                "word": "hast?\"",
+                "word": "hast?“",
                 "start": 250.9600067138672,
-                "end": 251.8800018310547
+                "end": 251.5800018310547
             }
         ],
-        "translationEn": "\"Don't you remember what you promised me yesterday at the fountain?\"",
-        "translationVi": "Bạn không nhớ bạn đã hứa với tôi điều gì bên cái giếng hôm qua sao?"
+        "translationEn": "\"Youngest princess, open up for me! Don't you know what you promised me yesterday at the well?\"",
+        "translationVi": "„Công chúa trẻ nhất, hãy mở cửa cho ta! Em không biết hôm qua em đã hứa gì với ta bên giếng sao?“"
     },
     {
-        "text": "Da sagte der König: \"Was du versprochen hast, das musst du auch halten.",
-        "start": 253.23999633789063,
-        "end": 258.35999755859376,
+        "text": "Da sagte der König: „Was du versprochen hast, das musst du auch halten.",
+        "start": 253.33999633789062,
+        "end": 258.05999755859375,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 253.23999633789063,
+                "start": 253.33999633789062,
                 "end": 253.6199951171875
             },
             {
@@ -2741,7 +2741,7 @@
                 "end": 254.55999755859375
             },
             {
-                "word": "\"Was",
+                "word": "„Was",
                 "start": 255.16000366210938,
                 "end": 255.24000549316406
             },
@@ -2783,20 +2783,20 @@
             {
                 "word": "halten.",
                 "start": 257.79998779296875,
-                "end": 258.35999755859376
+                "end": 258.05999755859375
             }
         ],
         "translationEn": "Then the king said, \"What you have promised, you must also keep.\"",
-        "translationVi": "Vậy nhà vua nói: \"Những gì ngươi đã hứa, ngươi phải giữ.\""
+        "translationVi": "Vậy nhà vua nói: \"Những gì ngươi đã hứa, ngươi phải giữ lời.\""
     },
     {
-        "text": "Geh und mach ihm auf!\"",
-        "start": 258.5199951171875,
-        "end": 260.1599853515625,
+        "text": "Geh und mach ihm auf!“",
+        "start": 258.6199951171875,
+        "end": 259.8599853515625,
         "wordTimings": [
             {
                 "word": "Geh",
-                "start": 258.5199951171875,
+                "start": 258.6199951171875,
                 "end": 258.82000732421875
             },
             {
@@ -2815,27 +2815,27 @@
                 "end": 259.55999755859375
             },
             {
-                "word": "auf!\"",
+                "word": "auf!“",
                 "start": 259.55999755859375,
-                "end": 260.1599853515625
+                "end": 259.8599853515625
             }
         ],
-        "translationEn": "\"Go and open the door for him!\"",
+        "translationEn": "\"Go and open it for him!\"",
         "translationVi": "\"Đi và mở cửa cho anh ấy!\""
     },
     {
         "text": "Da öffnete die Prinzessin die Tür und der Frosch hüpfte herein.",
-        "start": 261.0799926757812,
-        "end": 266.59998779296876,
+        "start": 261.20001220703125,
+        "end": 266.29998779296875,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 261.0799926757812,
-                "end": 261.94000244140625
+                "start": 261.20001220703125,
+                "end": 261.9599914550781
             },
             {
                 "word": "öffnete",
-                "start": 261.94000244140625,
+                "start": 261.9599914550781,
                 "end": 262.44000244140625
             },
             {
@@ -2881,7 +2881,7 @@
             {
                 "word": "herein.",
                 "start": 265.760009765625,
-                "end": 266.59998779296876
+                "end": 266.29998779296875
             }
         ],
         "translationEn": "Then the princess opened the door and the frog hopped in.",
@@ -2889,12 +2889,12 @@
     },
     {
         "text": "Er sprang ihr hinterher zum Tisch.",
-        "start": 266.82001342773435,
-        "end": 269.4600036621094,
+        "start": 266.9200134277344,
+        "end": 269.1600036621094,
         "wordTimings": [
             {
                 "word": "Er",
-                "start": 266.82001342773435,
+                "start": 266.9200134277344,
                 "end": 267.5400085449219
             },
             {
@@ -2920,7 +2920,7 @@
             {
                 "word": "Tisch.",
                 "start": 268.8800048828125,
-                "end": 269.4600036621094
+                "end": 269.1600036621094
             }
         ],
         "translationEn": "He jumped after her to the table.",
@@ -2928,12 +2928,12 @@
     },
     {
         "text": "Dann setzte er sich neben sie und begann von ihrem goldenen Tellerchen zu essen.",
-        "start": 271.0799926757812,
-        "end": 277.59998779296876,
+        "start": 271.17999267578125,
+        "end": 277.29998779296875,
         "wordTimings": [
             {
                 "word": "Dann",
-                "start": 271.0799926757812,
+                "start": 271.17999267578125,
                 "end": 271.4200134277344
             },
             {
@@ -2999,20 +2999,20 @@
             {
                 "word": "essen.",
                 "start": 277.29998779296875,
-                "end": 277.59998779296876
+                "end": 277.29998779296875
             }
         ],
-        "translationEn": "Then he sat down next to her and began to eat from her golden little plate.",
-        "translationVi": "Rồi anh ngồi bên cạnh cô và bắt đầu ăn từ đĩa vàng của cô."
+        "translationEn": "Then he sat down next to her and began to eat from her golden plate.",
+        "translationVi": "Rồi anh ngồi bên cạnh cô ấy và bắt đầu ăn từ cái đĩa vàng của cô."
     },
     {
-        "text": "Als er fertig war, sagte er: \"Jetzt bin ich müde, trag mich in dein Bettchen!\"",
-        "start": 278.1999877929687,
-        "end": 284.63999633789064,
+        "text": "Als er fertig war, sagte er: „Jetzt bin ich müde, trag mich in dein Bettchen.“",
+        "start": 278.29998779296875,
+        "end": 284.3399963378906,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 278.1999877929687,
+                "start": 278.29998779296875,
                 "end": 278.29998779296875
             },
             {
@@ -3041,7 +3041,7 @@
                 "end": 279.7200012207031
             },
             {
-                "word": "\"Jetzt",
+                "word": "„Jetzt",
                 "start": 280.70001220703125,
                 "end": 280.82000732421875
             },
@@ -3081,22 +3081,22 @@
                 "end": 283.6199951171875
             },
             {
-                "word": "Bettchen!\"",
+                "word": "Bettchen.“",
                 "start": 283.6199951171875,
-                "end": 284.63999633789064
+                "end": 284.3399963378906
             }
         ],
-        "translationEn": "When he was done, he said: \"Now I'm tired, carry me to your little bed!\"",
-        "translationVi": "Khi anh ấy xong, anh ấy nói: \"Bây giờ tôi mệt, hãy bế tôi vào giường của bạn!\""
+        "translationEn": "When he was done, he said, \"Now I'm tired, carry me to your little bed.\"",
+        "translationVi": "Khi anh ấy xong, anh ấy nói: \"Bây giờ tôi mệt, hãy bế tôi vào giường của bạn.\""
     },
     {
         "text": "Die Prinzessin fing an zu weinen.",
-        "start": 285.5000061035156,
-        "end": 288.24000244140626,
+        "start": 285.6000061035156,
+        "end": 287.94000244140625,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 285.5000061035156,
+                "start": 285.6000061035156,
                 "end": 286.2200012207031
             },
             {
@@ -3122,7 +3122,7 @@
             {
                 "word": "weinen.",
                 "start": 287.94000244140625,
-                "end": 288.24000244140626
+                "end": 287.94000244140625
             }
         ],
         "translationEn": "The princess began to cry.",
@@ -3130,12 +3130,12 @@
     },
     {
         "text": "Doch als der König zornig wurde, nahm sie den Frosch und trug ihn in ihr Zimmer.",
-        "start": 289.139990234375,
-        "end": 294.52000122070314,
+        "start": 289.239990234375,
+        "end": 294.2200012207031,
         "wordTimings": [
             {
                 "word": "Doch",
-                "start": 289.139990234375,
+                "start": 289.239990234375,
                 "end": 289.4200134277344
             },
             {
@@ -3211,20 +3211,20 @@
             {
                 "word": "Zimmer.",
                 "start": 293.94000244140625,
-                "end": 294.52000122070314
+                "end": 294.2200012207031
             }
         ],
         "translationEn": "But when the king became angry, she took the frog and carried him to her room.",
-        "translationVi": "Nhưng khi nhà vua nổi giận, cô đã cầm con ếch và mang nó vào phòng của mình."
+        "translationVi": "Nhưng khi nhà vua nổi giận, cô đã bắt con ếch và mang nó vào phòng mình."
     },
     {
         "text": "Sie setzte ihn in eine Ecke und ging ins Bett.",
-        "start": 295.2399963378906,
-        "end": 298.74000244140626,
+        "start": 295.3399963378906,
+        "end": 298.44000244140625,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 295.2399963378906,
+                "start": 295.3399963378906,
                 "end": 296.0799865722656
             },
             {
@@ -3270,7 +3270,7 @@
             {
                 "word": "Bett.",
                 "start": 298.44000244140625,
-                "end": 298.74000244140626
+                "end": 298.44000244140625
             }
         ],
         "translationEn": "She put him in a corner and went to bed.",
@@ -3278,12 +3278,12 @@
     },
     {
         "text": "Als der Frosch zu ihr gekrochen kam, wurde die Prinzessin böse",
-        "start": 300.8599914550781,
-        "end": 306.02000122070314,
+        "start": 300.9599914550781,
+        "end": 305.7200012207031,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 300.8599914550781,
+                "start": 300.9599914550781,
                 "end": 301.0199890136719
             },
             {
@@ -3334,7 +3334,7 @@
             {
                 "word": "böse",
                 "start": 305.239990234375,
-                "end": 306.02000122070314
+                "end": 305.7200012207031
             }
         ],
         "translationEn": "When the frog crawled up to her, the princess became angry.",
@@ -3342,12 +3342,12 @@
     },
     {
         "text": "und warf ihn gegen die Wand.",
-        "start": 305.6200012207031,
-        "end": 308.0799987792969,
+        "start": 305.7200012207031,
+        "end": 307.7799987792969,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 305.6200012207031,
+                "start": 305.7200012207031,
                 "end": 306.260009765625
             },
             {
@@ -3373,7 +3373,7 @@
             {
                 "word": "Wand.",
                 "start": 307.7799987792969,
-                "end": 308.0799987792969
+                "end": 307.7799987792969
             }
         ],
         "translationEn": "and threw him against the wall.",
@@ -3381,12 +3381,12 @@
     },
     {
         "text": "Als er herunterfiel, verwandelte sich der Frosch in einen schönen Prinzen.",
-        "start": 308.4799865722656,
-        "end": 314.13999633789064,
+        "start": 308.5799865722656,
+        "end": 313.8399963378906,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 308.4799865722656,
+                "start": 308.5799865722656,
                 "end": 308.7799987792969
             },
             {
@@ -3437,7 +3437,7 @@
             {
                 "word": "Prinzen.",
                 "start": 313.29998779296875,
-                "end": 314.13999633789064
+                "end": 313.8399963378906
             }
         ],
         "translationEn": "When he fell down, the frog turned into a handsome prince.",
@@ -3445,12 +3445,12 @@
     },
     {
         "text": "Dieser erzählte ihr, dass er von einer bösen Hexe verzaubert worden war",
-        "start": 315.3400024414062,
-        "end": 319.90000610351564,
+        "start": 315.44000244140625,
+        "end": 319.6000061035156,
         "wordTimings": [
             {
                 "word": "Dieser",
-                "start": 315.3400024414062,
+                "start": 315.44000244140625,
                 "end": 315.5199890136719
             },
             {
@@ -3506,20 +3506,20 @@
             {
                 "word": "war",
                 "start": 319.32000732421875,
-                "end": 319.90000610351564
+                "end": 319.6000061035156
             }
         ],
         "translationEn": "He told her that he had been enchanted by an evil witch.",
-        "translationVi": "Anh ta kể với cô rằng anh đã bị một mụ phù thủy ác độc phù phép."
+        "translationVi": "Anh ta kể với cô rằng mình đã bị một mụ phù thủy ác độc bỏ bùa."
     },
     {
         "text": "und sie ihn nun erlöst habe.",
-        "start": 319.5000061035156,
-        "end": 321.87998657226564,
+        "start": 319.6000061035156,
+        "end": 321.5799865722656,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 319.5000061035156,
+                "start": 319.6000061035156,
                 "end": 320.0400085449219
             },
             {
@@ -3545,20 +3545,20 @@
             {
                 "word": "habe.",
                 "start": 321.2799987792969,
-                "end": 321.87998657226564
+                "end": 321.5799865722656
             }
         ],
         "translationEn": "and she has now redeemed him.",
         "translationVi": "và giờ đây cô ấy đã giải thoát cho anh ấy."
     },
     {
-        "text": "Wenn sie wolle, könnten sie heiraten.",
-        "start": 324.1999877929687,
-        "end": 327.3199890136719,
+        "text": "Wenn sie wolle, könnten sie heiraten. Die Prinzessin wollte.",
+        "start": 324.29998779296875,
+        "end": 329.5,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 324.1999877929687,
+                "start": 324.29998779296875,
                 "end": 325.0400085449219
             },
             {
@@ -3584,20 +3584,11 @@
             {
                 "word": "heiraten.",
                 "start": 326.44000244140625,
-                "end": 327.3199890136719
-            }
-        ],
-        "translationEn": "If they wanted to, they could get married.",
-        "translationVi": "Nếu họ muốn, họ có thể kết hôn."
-    },
-    {
-        "text": "Die Prinzessin wollte.",
-        "start": 328.1000122070312,
-        "end": 329.8,
-        "wordTimings": [
+                "end": 327.0199890136719
+            },
             {
                 "word": "Die",
-                "start": 328.1000122070312,
+                "start": 328.20001220703125,
                 "end": 328.3399963378906
             },
             {
@@ -3608,20 +3599,20 @@
             {
                 "word": "wollte.",
                 "start": 329.1000061035156,
-                "end": 329.8
+                "end": 329.5
             }
         ],
-        "translationEn": "The princess wanted.",
-        "translationVi": "Công chúa muốn."
+        "translationEn": "If she wanted, they could get married. The princess wanted to.",
+        "translationVi": "Nếu họ muốn, họ có thể kết hôn. Công chúa muốn."
     },
     {
         "text": "Als am nächsten Morgen die Sonne aufging, kam ein Wagen mit acht weißen Pferden.",
-        "start": 334.7299865722656,
-        "end": 340.24000244140626,
+        "start": 334.8299865722656,
+        "end": 339.94000244140625,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 334.7299865722656,
+                "start": 334.8299865722656,
                 "end": 335.20001220703125
             },
             {
@@ -3687,20 +3678,20 @@
             {
                 "word": "Pferden.",
                 "start": 339.55999755859375,
-                "end": 340.24000244140626
+                "end": 339.94000244140625
             }
         ],
         "translationEn": "As the sun rose the next morning, a carriage with eight white horses arrived.",
-        "translationVi": "Khi mặt trời mọc vào sáng hôm sau, một chiếc xe với tám con ngựa trắng đã đến."
+        "translationVi": "Khi mặt trời mọc vào sáng hôm sau, một chiếc xe ngựa với tám con ngựa trắng xuất hiện."
     },
     {
         "text": "Auf dem Wagen stand der Diener des Prinzen, der treue Heinrich,",
-        "start": 342.44000854492185,
-        "end": 347.039990234375,
+        "start": 342.5400085449219,
+        "end": 346.739990234375,
         "wordTimings": [
             {
                 "word": "Auf",
-                "start": 342.44000854492185,
+                "start": 342.5400085449219,
                 "end": 342.7200012207031
             },
             {
@@ -3751,7 +3742,7 @@
             {
                 "word": "Heinrich,",
                 "start": 346.1000061035156,
-                "end": 347.039990234375
+                "end": 346.739990234375
             }
         ],
         "translationEn": "On the cart stood the prince's servant, the faithful Heinrich,",
@@ -3759,12 +3750,12 @@
     },
     {
         "text": "der den Prinzen und die Prinzessin abholen und in dessen Reich bringen würde.",
-        "start": 347.0799926757812,
-        "end": 352.24000244140626,
+        "start": 347.17999267578125,
+        "end": 351.94000244140625,
         "wordTimings": [
             {
                 "word": "der",
-                "start": 347.0799926757812,
+                "start": 347.17999267578125,
                 "end": 347.260009765625
             },
             {
@@ -3825,20 +3816,20 @@
             {
                 "word": "würde.",
                 "start": 351.6000061035156,
-                "end": 352.24000244140626
+                "end": 351.94000244140625
             }
         ],
-        "translationEn": "who would pick up the prince and princess and take them to his kingdom.",
+        "translationEn": "who would pick up the prince and princess and bring them to his kingdom.",
         "translationVi": "người sẽ đón hoàng tử và công chúa và đưa họ về vương quốc của mình."
     },
     {
         "text": "Als der Prinz in einen Frosch verwandelt worden war,",
-        "start": 354.2800048828125,
-        "end": 358.02000122070314,
+        "start": 354.3800048828125,
+        "end": 357.7200012207031,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 354.2800048828125,
+                "start": 354.3800048828125,
                 "end": 355.1400146484375
             },
             {
@@ -3879,7 +3870,7 @@
             {
                 "word": "war,",
                 "start": 357.4200134277344,
-                "end": 358.02000122070314
+                "end": 357.7200012207031
             }
         ],
         "translationEn": "When the prince had been turned into a frog,",
@@ -3887,12 +3878,12 @@
     },
     {
         "text": "war der treue Heinrich so traurig gewesen,",
-        "start": 358.2200073242187,
-        "end": 361.09998779296876,
+        "start": 358.32000732421875,
+        "end": 360.79998779296875,
         "wordTimings": [
             {
                 "word": "war",
-                "start": 358.2200073242187,
+                "start": 358.32000732421875,
                 "end": 358.32000732421875
             },
             {
@@ -3923,20 +3914,20 @@
             {
                 "word": "gewesen,",
                 "start": 360.32000732421875,
-                "end": 361.09998779296876
+                "end": 360.79998779296875
             }
         ],
-        "translationEn": "faithful Heinrich had been so sad,",
-        "translationVi": "người Heinrich trung thành đã buồn bã như vậy,"
+        "translationEn": "loyal Henry had been so sad,",
+        "translationVi": "Người trung thành Heinrich đã buồn bã như vậy,"
     },
     {
         "text": "dass er sich drei Eisenbänder ums Herz legen ließ,",
-        "start": 361.32001342773435,
-        "end": 364.8199890136719,
+        "start": 361.4200134277344,
+        "end": 364.5199890136719,
         "wordTimings": [
             {
                 "word": "dass",
-                "start": 361.32001342773435,
+                "start": 361.4200134277344,
                 "end": 361.4200134277344
             },
             {
@@ -3977,7 +3968,7 @@
             {
                 "word": "ließ,",
                 "start": 364.20001220703125,
-                "end": 364.8199890136719
+                "end": 364.5199890136719
             }
         ],
         "translationEn": "that he had three iron bands placed around his heart,",
@@ -3985,12 +3976,12 @@
     },
     {
         "text": "damit sein Herz nicht vor Traurigkeit zersprang.",
-        "start": 365.06000366210935,
-        "end": 368.1599853515625,
+        "start": 365.1600036621094,
+        "end": 367.8599853515625,
         "wordTimings": [
             {
                 "word": "damit",
-                "start": 365.06000366210935,
+                "start": 365.1600036621094,
                 "end": 365.20001220703125
             },
             {
@@ -4021,20 +4012,20 @@
             {
                 "word": "zersprang.",
                 "start": 367.1199951171875,
-                "end": 368.1599853515625
+                "end": 367.8599853515625
             }
         ],
         "translationEn": "so that his heart would not burst from sadness.",
-        "translationVi": "để trái tim của anh ấy không vỡ ra vì nỗi buồn."
+        "translationVi": "để trái tim anh ấy không vỡ ra vì nỗi buồn."
     },
     {
         "text": "Jetzt war er aber wieder glücklich und froh, dass der Prinz erlöst war.",
-        "start": 369.91998901367185,
-        "end": 375.13999633789064,
+        "start": 370.0199890136719,
+        "end": 374.8399963378906,
         "wordTimings": [
             {
                 "word": "Jetzt",
-                "start": 369.91998901367185,
+                "start": 370.0199890136719,
                 "end": 370.4200134277344
             },
             {
@@ -4095,20 +4086,20 @@
             {
                 "word": "war.",
                 "start": 374.5799865722656,
-                "end": 375.13999633789064
+                "end": 374.8399963378906
             }
         ],
-        "translationEn": "Now he was happy and glad that the prince was saved.",
-        "translationVi": "Bây giờ anh ta lại hạnh phúc và vui mừng vì hoàng tử đã được cứu rỗi."
+        "translationEn": "Now he was happy and glad that the prince had been rescued.",
+        "translationVi": "Bây giờ anh ta lại hạnh phúc và vui mừng vì hoàng tử đã được giải thoát."
     },
     {
-        "text": "Als die Kutsche losfuhr, hörte der Prinz ein lautes Krachen und sagte: \"Heinrich, der Wagen bricht!\"",
-        "start": 375.8400024414062,
-        "end": 383.35999755859376,
+        "text": "Als die Kutsche losfuhr, hörte der Prinz ein lautes Krachen und sagte:",
+        "start": 375.94000244140625,
+        "end": 380.5400085449219,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 375.8400024414062,
+                "start": 375.94000244140625,
                 "end": 376.0799865722656
             },
             {
@@ -4165,9 +4156,18 @@
                 "word": "sagte:",
                 "start": 380.239990234375,
                 "end": 380.5400085449219
-            },
+            }
+        ],
+        "translationEn": "As the carriage set off, the prince heard a loud crash and said:",
+        "translationVi": "Khi chiếc xe ngựa khởi hành, hoàng tử nghe thấy một tiếng nổ lớn và nói:"
+    },
+    {
+        "text": "„Heinrich, der Wagen bricht!“",
+        "start": 380.5400085449219,
+        "end": 383.05999755859375,
+        "wordTimings": [
             {
-                "word": "\"Heinrich,",
+                "word": "„Heinrich,",
                 "start": 380.5400085449219,
                 "end": 381.67999267578125
             },
@@ -4182,22 +4182,22 @@
                 "end": 382.55999755859375
             },
             {
-                "word": "bricht!\"",
+                "word": "bricht!“",
                 "start": 382.55999755859375,
-                "end": 383.35999755859376
+                "end": 383.05999755859375
             }
         ],
-        "translationEn": "As the carriage set off, the prince heard a loud cracking sound and said, \"Heinrich, the wagon is breaking!\"",
-        "translationVi": "Khi xe ngựa khởi hành, hoàng tử nghe thấy một tiếng nổ lớn và nói: \"Heinrich, xe đang gãy!\""
+        "translationEn": "\"Heinrich, the wagon is breaking!\"",
+        "translationVi": "„Heinrich, xe đang gãy!“"
     },
     {
-        "text": "Doch Heinrich antwortete: \"Nein, Herr, der Wagen nicht.",
-        "start": 384.6999877929687,
-        "end": 389.02000122070314,
+        "text": "Doch Heinrich antwortete: „Nein, Herr, der Wagen nicht.",
+        "start": 384.79998779296875,
+        "end": 388.7200012207031,
         "wordTimings": [
             {
                 "word": "Doch",
-                "start": 384.6999877929687,
+                "start": 384.79998779296875,
                 "end": 384.8999938964844
             },
             {
@@ -4211,7 +4211,7 @@
                 "end": 386.1600036621094
             },
             {
-                "word": "\"Nein,",
+                "word": "„Nein,",
                 "start": 387.05999755859375,
                 "end": 387.05999755859375
             },
@@ -4233,20 +4233,20 @@
             {
                 "word": "nicht.",
                 "start": 388.29998779296875,
-                "end": 389.02000122070314
+                "end": 388.7200012207031
             }
         ],
-        "translationEn": "But Heinrich replied, \"No, sir, not the cart.\"",
+        "translationEn": "But Heinrich replied: \"No, sir, not the cart.\"",
         "translationVi": "Nhưng Heinrich trả lời: \"Không, thưa ngài, chiếc xe không.\""
     },
     {
         "text": "Es ist ein Band von meinem Herzen, das da lag in großen Schmerzen,",
-        "start": 389.1999877929687,
-        "end": 394.40000610351564,
+        "start": 389.29998779296875,
+        "end": 394.1000061035156,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 389.1999877929687,
+                "start": 389.29998779296875,
                 "end": 389.3800048828125
             },
             {
@@ -4307,20 +4307,20 @@
             {
                 "word": "Schmerzen,",
                 "start": 393.44000244140625,
-                "end": 394.40000610351564
+                "end": 394.1000061035156
             }
         ],
-        "translationEn": "It is a bond of my heart, that lay there in great pain,",
+        "translationEn": "It is a bond of my heart that lay there in great pain,",
         "translationVi": "Đó là một sợi dây từ trái tim tôi, nằm đó trong những cơn đau lớn,"
     },
     {
-        "text": "als ihr in dem Brunnen saßt und ein kleines Fröschlein wart.\"",
-        "start": 394.5799926757812,
-        "end": 399.63999633789064,
+        "text": "als ihr in dem Brunnen saßt und ein kleines Fröschlein wart.“",
+        "start": 394.67999267578125,
+        "end": 399.3399963378906,
         "wordTimings": [
             {
                 "word": "als",
-                "start": 394.5799926757812,
+                "start": 394.67999267578125,
                 "end": 394.7200012207031
             },
             {
@@ -4369,9 +4369,9 @@
                 "end": 399.0199890136719
             },
             {
-                "word": "wart.\"",
+                "word": "wart.“",
                 "start": 399.0199890136719,
-                "end": 399.63999633789064
+                "end": 399.3399963378906
             }
         ],
         "translationEn": "\"when you were sitting in the well and were a little frog.\"",
@@ -4379,12 +4379,12 @@
     },
     {
         "text": "Es krachte noch zwei weitere Male und jedes Mal dachte der Prinz,",
-        "start": 401.9799865722656,
-        "end": 407.50001220703126,
+        "start": 402.0799865722656,
+        "end": 407.20001220703125,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 401.9799865722656,
+                "start": 402.0799865722656,
                 "end": 402.79998779296875
             },
             {
@@ -4440,20 +4440,20 @@
             {
                 "word": "Prinz,",
                 "start": 406.82000732421875,
-                "end": 407.50001220703126
+                "end": 407.20001220703125
             }
         ],
         "translationEn": "It crashed two more times, and each time the prince thought,",
-        "translationVi": "Nó lại nổ thêm hai lần nữa và mỗi lần, hoàng tử nghĩ rằng"
+        "translationVi": "Nó lại vang lên thêm hai lần nữa và mỗi lần, hoàng tử nghĩ rằng,"
     },
     {
         "text": "der Wagen würde zerbrechen.",
-        "start": 407.17999877929685,
-        "end": 409.4600036621094,
+        "start": 407.2799987792969,
+        "end": 409.1600036621094,
         "wordTimings": [
             {
                 "word": "der",
-                "start": 407.17999877929685,
+                "start": 407.2799987792969,
                 "end": 407.3999938964844
             },
             {
@@ -4469,20 +4469,20 @@
             {
                 "word": "zerbrechen.",
                 "start": 408.1199951171875,
-                "end": 409.4600036621094
+                "end": 409.1600036621094
             }
         ],
         "translationEn": "the car would break.",
-        "translationVi": "chiếc xe sẽ bị gãy."
+        "translationVi": "chiếc xe sẽ bị vỡ."
     },
     {
         "text": "Doch es waren die Bänder, die vom Herzen des treuen Heinrich absprangen,",
-        "start": 409.06000366210935,
-        "end": 414.8400085449219,
+        "start": 409.1600036621094,
+        "end": 414.5400085449219,
         "wordTimings": [
             {
                 "word": "Doch",
-                "start": 409.06000366210935,
+                "start": 409.1600036621094,
                 "end": 409.5400085449219
             },
             {
@@ -4503,7 +4503,7 @@
             {
                 "word": "Bänder,",
                 "start": 410.8999938964844,
-                "end": 411.3399963378906
+                "end": 411.32000732421875
             },
             {
                 "word": "die",
@@ -4538,20 +4538,20 @@
             {
                 "word": "absprangen,",
                 "start": 413.79998779296875,
-                "end": 414.8400085449219
+                "end": 414.5400085449219
             }
         ],
-        "translationEn": "But it was the ribbons that sprang from the heart of the loyal Heinrich,",
-        "translationVi": "Nhưng chính là những sợi dây từ trái tim của Heinrich trung thành đã bật ra,"
+        "translationEn": "But it was the ribbons that sprang from the heart of the faithful Heinrich,",
+        "translationVi": "Nhưng đó là những sợi dây đã bật ra từ trái tim trung thành của Heinrich."
     },
     {
         "text": "weil der Prinz erlöst war.",
-        "start": 414.9799865722656,
-        "end": 417.060009765625,
+        "start": 415.0799865722656,
+        "end": 416.760009765625,
         "wordTimings": [
             {
                 "word": "weil",
-                "start": 414.9799865722656,
+                "start": 415.0799865722656,
                 "end": 415.1400146484375
             },
             {
@@ -4572,7 +4572,7 @@
             {
                 "word": "war.",
                 "start": 416.32000732421875,
-                "end": 417.060009765625
+                "end": 416.760009765625
             }
         ],
         "translationEn": "because the prince was redeemed.",
@@ -4580,12 +4580,12 @@
     },
     {
         "text": "Jetzt kennst du das Märchen vom Froschkönig und dem eisernen Heinrich.",
-        "start": 419.91998901367185,
-        "end": 425.1999938964844,
+        "start": 420.0199890136719,
+        "end": 424.8999938964844,
         "wordTimings": [
             {
                 "word": "Jetzt",
-                "start": 419.91998901367185,
+                "start": 420.0199890136719,
                 "end": 420.32000732421875
             },
             {
@@ -4636,20 +4636,20 @@
             {
                 "word": "Heinrich.",
                 "start": 424.29998779296875,
-                "end": 425.1999938964844
+                "end": 424.8999938964844
             }
         ],
-        "translationEn": "Now you know the fairy tale of the Frog King and the Iron Henry.",
+        "translationEn": "Now you know the fairy tale of the Frog Prince and the Iron Henry.",
         "translationVi": "Bây giờ bạn đã biết câu chuyện cổ tích về Hoàng tử Ếch và Heinrich sắt."
     },
     {
         "text": "Aber hast du auch unseren kleinen Wichtel entdeckt?",
-        "start": 426.6000122070312,
-        "end": 430.97999267578126,
+        "start": 426.70001220703125,
+        "end": 430.67999267578125,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 426.6000122070312,
+                "start": 426.70001220703125,
                 "end": 427.239990234375
             },
             {
@@ -4685,7 +4685,7 @@
             {
                 "word": "entdeckt?",
                 "start": 430.1000061035156,
-                "end": 430.97999267578126
+                "end": 430.67999267578125
             }
         ],
         "translationEn": "But have you also discovered our little gnome?",
@@ -4693,12 +4693,12 @@
     },
     {
         "text": "Hallo! Hat dir unser Märchen gefallen?",
-        "start": 436.2800048828125,
-        "end": 439.2200134277344,
+        "start": 436.3800048828125,
+        "end": 438.9200134277344,
         "wordTimings": [
             {
                 "word": "Hallo!",
-                "start": 436.2800048828125,
+                "start": 436.3800048828125,
                 "end": 437.05999755859375
             },
             {
@@ -4724,7 +4724,7 @@
             {
                 "word": "gefallen?",
                 "start": 438.3599853515625,
-                "end": 439.2200134277344
+                "end": 438.9200134277344
             }
         ],
         "translationEn": "Hello! Did you enjoy our fairy tale?",
@@ -4732,12 +4732,12 @@
     },
     {
         "text": "Dann abonniere hier unseren Kanal, um die neuesten Märchen zu sehen.",
-        "start": 439.06000366210935,
-        "end": 443.13999633789064,
+        "start": 439.1600036621094,
+        "end": 442.8399963378906,
         "wordTimings": [
             {
                 "word": "Dann",
-                "start": 439.06000366210935,
+                "start": 439.1600036621094,
                 "end": 439.3800048828125
             },
             {
@@ -4788,20 +4788,20 @@
             {
                 "word": "sehen.",
                 "start": 442.8399963378906,
-                "end": 443.13999633789064
+                "end": 442.8399963378906
             }
         ],
         "translationEn": "Then subscribe to our channel here to see the latest fairy tales.",
         "translationVi": "Hãy đăng ký kênh của chúng tôi ở đây để xem những câu chuyện cổ tích mới nhất."
     },
     {
-        "text": "Hier bin ich.",
-        "start": 443.139990234375,
-        "end": 444.24000244140626,
+        "text": "Hier bin ich! Du möchtest direkt weitere Märchen sehen? Dann klick hier.",
+        "start": 443.239990234375,
+        "end": 447.20001220703125,
         "wordTimings": [
             {
                 "word": "Hier",
-                "start": 443.139990234375,
+                "start": 443.239990234375,
                 "end": 443.3999938964844
             },
             {
@@ -4810,22 +4810,13 @@
                 "end": 443.5799865722656
             },
             {
-                "word": "ich.",
+                "word": "ich!",
                 "start": 443.5799865722656,
-                "end": 444.24000244140626
-            }
-        ],
-        "translationEn": "Here I am.",
-        "translationVi": "Đây là tôi."
-    },
-    {
-        "text": "Du möchtest direkt weitere Märchen sehen?",
-        "start": 444.0799926757812,
-        "end": 446.4400146484375,
-        "wordTimings": [
+                "end": 443.94000244140625
+            },
             {
                 "word": "Du",
-                "start": 444.0799926757812,
+                "start": 444.17999267578125,
                 "end": 444.4200134277344
             },
             {
@@ -4851,20 +4842,11 @@
             {
                 "word": "sehen?",
                 "start": 445.8399963378906,
-                "end": 446.4400146484375
-            }
-        ],
-        "translationEn": "Do you want to see more fairy tales directly?",
-        "translationVi": "Bạn muốn xem thêm những câu chuyện cổ tích ngay lập tức?"
-    },
-    {
-        "text": "Dann klick hier.",
-        "start": 446.29999389648435,
-        "end": 447.50001220703126,
-        "wordTimings": [
+                "end": 446.1400146484375
+            },
             {
                 "word": "Dann",
-                "start": 446.29999389648435,
+                "start": 446.3999938964844,
                 "end": 446.67999267578125
             },
             {
@@ -4875,10 +4857,10 @@
             {
                 "word": "hier.",
                 "start": 446.82000732421875,
-                "end": 447.50001220703126
+                "end": 447.20001220703125
             }
         ],
-        "translationEn": "Then click here.",
-        "translationVi": "Thì nhấn vào đây."
+        "translationEn": "Here I am! Do you want to see more fairy tales right away? Then click here.",
+        "translationVi": "Đây tôi đây! Bạn muốn xem thêm những câu chuyện cổ tích ngay lập tức? Vậy hãy nhấn vào đây."
     }
 ]

@@ -448,116 +448,228 @@ function AdminLessonsPage() {
           </div>
         ) : (
           <>
-            <div className={styles.tableWrapper}>
-              <table className={styles.table}>
-                <thead>
-                  <tr>
-                    <th style={{ width: '32px' }}>
-                      <input
-                        type="checkbox"
-                        checked={paginatedLessons.length > 0 && paginatedLessons.every(lesson => selectedLessons.has(lesson._id))}
-                        onChange={handleSelectAll}
-                      />
-                    </th>
-                    <th>Tiêu đề</th>
-                    <th>Niveau</th>
-                    <th>KP</th>
-                    <th>FREE</th>
-                    <th>Aktionen</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {paginatedLessons.map((lesson) => (
-                    <tr key={lesson._id}>
-                      <td>
-                        <input
-                          type="checkbox"
-                          checked={selectedLessons.has(lesson._id)}
-                          onChange={() => handleSelectLesson(lesson._id)}
-                        />
-                      </td>
-                      <td className={styles.lessonTitle}>{lesson.title}</td>
-                      <td><span className={styles.levelBadge}>{lesson.level || 'A1'}</span></td>
-                      <td>
-                        {lesson.karaokePro && (
-                          <span
-                            title="Karaoke Pro"
-                            style={{
-                              background: 'linear-gradient(135deg, #f59e0b, #d97706)',
-                              color: 'white',
-                              padding: '2px 6px',
-                              borderRadius: '4px',
-                              fontSize: '10px',
-                              fontWeight: 'bold'
-                            }}
-                          >
-                            ⭐ PRO
-                          </span>
-                        )}
-                      </td>
-                      <td>
-                        <button
-                          onClick={() => handleToggleFreeLesson(lesson)}
-                          title={lesson.isFreeLesson ? 'Bỏ bài FREE' : 'Đặt làm bài FREE'}
-                          style={{
-                            background: lesson.isFreeLesson ? '#10b981' : '#e5e7eb',
-                            color: lesson.isFreeLesson ? 'white' : '#6b7280',
-                            border: 'none',
-                            borderRadius: '6px',
-                            padding: '4px 10px',
-                            fontSize: '12px',
-                            fontWeight: '600',
-                            cursor: 'pointer',
-                            transition: 'all 0.2s'
-                          }}
-                        >
-                          {lesson.isFreeLesson ? '✓ FREE' : 'Set FREE'}
-                        </button>
-                      </td>
-                      <td>
-                        <div className={styles.actionButtons}>
-                          <button
-                            onClick={() => handleEdit(lesson)}
-                            className={styles.editButton}
-                          >
-                            ✏️
-                          </button>
-                          <button
-                            onClick={() => handleDelete(lesson._id)}
-                            className={styles.deleteButton}
-                          >
-                            🗑️
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            {/* Lessons Grouped by Category */}
+            {(() => {
+              // Group lessons by category
+              const groupedByCategory = {};
+              const uncategorized = [];
 
-            {/* Pagination */}
-            {totalPages > 1 && (
-              <div className={styles.pagination}>
-                <button
-                  onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
-                  disabled={currentPage === 1}
-                  className={styles.pageButton}
-                >
-                  ‹ Vorherige
-                </button>
-                <span className={styles.pageInfo}>
-                  Seite {currentPage} von {totalPages} ({filteredLessons.length} Lektionen)
-                </span>
-                <button
-                  onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
-                  disabled={currentPage === totalPages}
-                  className={styles.pageButton}
-                >
-                  Nächste ›
-                </button>
-              </div>
-            )}
+              filteredLessons.forEach(lesson => {
+                const catId = lesson.category?._id || lesson.category;
+                const catName = lesson.category?.name;
+
+                if (catName) {
+                  if (!groupedByCategory[catId]) {
+                    groupedByCategory[catId] = {
+                      name: catName,
+                      lessons: []
+                    };
+                  }
+                  groupedByCategory[catId].lessons.push(lesson);
+                } else {
+                  uncategorized.push(lesson);
+                }
+              });
+
+              // Sort categories by name
+              const sortedCategories = Object.entries(groupedByCategory)
+                .sort((a, b) => a[1].name.localeCompare(b[1].name));
+
+              return (
+                <>
+                  {sortedCategories.map(([catId, { name, lessons: catLessons }]) => (
+                    <div key={catId} style={{ marginBottom: '24px' }}>
+                      <div style={{
+                        background: 'linear-gradient(135deg, #3b82f6, #1d4ed8)',
+                        color: 'white',
+                        padding: '12px 16px',
+                        borderRadius: '8px 8px 0 0',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center'
+                      }}>
+                        <h3 style={{ margin: 0, fontSize: '16px', fontWeight: '600' }}>
+                          🏷️ {name}
+                        </h3>
+                        <span style={{
+                          background: 'rgba(255,255,255,0.2)',
+                          padding: '4px 12px',
+                          borderRadius: '12px',
+                          fontSize: '13px'
+                        }}>
+                          {catLessons.length} bài
+                        </span>
+                      </div>
+
+                      <div className={styles.tableWrapper} style={{ borderRadius: '0 0 8px 8px', marginTop: 0 }}>
+                        <table className={styles.table}>
+                          <thead>
+                            <tr>
+                              <th style={{ width: '32px' }}>
+                                <input type="checkbox" disabled />
+                              </th>
+                              <th>Tiêu đề</th>
+                              <th>Niveau</th>
+                              <th>KP</th>
+                              <th>FREE</th>
+                              <th>Aktionen</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {catLessons.map((lesson) => (
+                              <tr key={lesson._id}>
+                                <td>
+                                  <input
+                                    type="checkbox"
+                                    checked={selectedLessons.has(lesson._id)}
+                                    onChange={() => handleSelectLesson(lesson._id)}
+                                  />
+                                </td>
+                                <td className={styles.lessonTitle}>{lesson.title}</td>
+                                <td><span className={styles.levelBadge}>{lesson.level || 'A1'}</span></td>
+                                <td>
+                                  {lesson.karaokePro && (
+                                    <span
+                                      title="Karaoke Pro"
+                                      style={{
+                                        background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+                                        color: 'white',
+                                        padding: '2px 6px',
+                                        borderRadius: '4px',
+                                        fontSize: '10px',
+                                        fontWeight: 'bold'
+                                      }}
+                                    >
+                                      ⭐ PRO
+                                    </span>
+                                  )}
+                                </td>
+                                <td>
+                                  <button
+                                    onClick={() => handleToggleFreeLesson(lesson)}
+                                    title={lesson.isFreeLesson ? 'Bỏ bài FREE' : 'Đặt làm bài FREE'}
+                                    style={{
+                                      background: lesson.isFreeLesson ? '#10b981' : '#e5e7eb',
+                                      color: lesson.isFreeLesson ? 'white' : '#6b7280',
+                                      border: 'none',
+                                      borderRadius: '6px',
+                                      padding: '4px 10px',
+                                      fontSize: '12px',
+                                      fontWeight: '600',
+                                      cursor: 'pointer'
+                                    }}
+                                  >
+                                    {lesson.isFreeLesson ? '✓ FREE' : 'Set FREE'}
+                                  </button>
+                                </td>
+                                <td>
+                                  <div className={styles.actionButtons}>
+                                    <button onClick={() => handleEdit(lesson)} className={styles.editButton}>✏️</button>
+                                    <button onClick={() => handleDelete(lesson._id)} className={styles.deleteButton}>🗑️</button>
+                                  </div>
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  ))}
+
+                  {/* Uncategorized lessons */}
+                  {uncategorized.length > 0 && (
+                    <div style={{ marginBottom: '24px' }}>
+                      <div style={{
+                        background: '#6b7280',
+                        color: 'white',
+                        padding: '12px 16px',
+                        borderRadius: '8px 8px 0 0',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center'
+                      }}>
+                        <h3 style={{ margin: 0, fontSize: '16px', fontWeight: '600' }}>
+                          📁 Chưa phân loại
+                        </h3>
+                        <span style={{
+                          background: 'rgba(255,255,255,0.2)',
+                          padding: '4px 12px',
+                          borderRadius: '12px',
+                          fontSize: '13px'
+                        }}>
+                          {uncategorized.length} bài
+                        </span>
+                      </div>
+
+                      <div className={styles.tableWrapper} style={{ borderRadius: '0 0 8px 8px', marginTop: 0 }}>
+                        <table className={styles.table}>
+                          <thead>
+                            <tr>
+                              <th style={{ width: '32px' }}><input type="checkbox" disabled /></th>
+                              <th>Tiêu đề</th>
+                              <th>Niveau</th>
+                              <th>KP</th>
+                              <th>FREE</th>
+                              <th>Aktionen</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {uncategorized.map((lesson) => (
+                              <tr key={lesson._id}>
+                                <td>
+                                  <input
+                                    type="checkbox"
+                                    checked={selectedLessons.has(lesson._id)}
+                                    onChange={() => handleSelectLesson(lesson._id)}
+                                  />
+                                </td>
+                                <td className={styles.lessonTitle}>{lesson.title}</td>
+                                <td><span className={styles.levelBadge}>{lesson.level || 'A1'}</span></td>
+                                <td>
+                                  {lesson.karaokePro && (
+                                    <span style={{
+                                      background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+                                      color: 'white',
+                                      padding: '2px 6px',
+                                      borderRadius: '4px',
+                                      fontSize: '10px',
+                                      fontWeight: 'bold'
+                                    }}>⭐ PRO</span>
+                                  )}
+                                </td>
+                                <td>
+                                  <button
+                                    onClick={() => handleToggleFreeLesson(lesson)}
+                                    style={{
+                                      background: lesson.isFreeLesson ? '#10b981' : '#e5e7eb',
+                                      color: lesson.isFreeLesson ? 'white' : '#6b7280',
+                                      border: 'none',
+                                      borderRadius: '6px',
+                                      padding: '4px 10px',
+                                      fontSize: '12px',
+                                      fontWeight: '600',
+                                      cursor: 'pointer'
+                                    }}
+                                  >
+                                    {lesson.isFreeLesson ? '✓ FREE' : 'Set FREE'}
+                                  </button>
+                                </td>
+                                <td>
+                                  <div className={styles.actionButtons}>
+                                    <button onClick={() => handleEdit(lesson)} className={styles.editButton}>✏️</button>
+                                    <button onClick={() => handleDelete(lesson._id)} className={styles.deleteButton}>🗑️</button>
+                                  </div>
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  )}
+                </>
+              );
+            })()}
           </>
         )}
       </AdminDashboardLayout>
