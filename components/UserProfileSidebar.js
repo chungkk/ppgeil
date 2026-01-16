@@ -65,7 +65,8 @@ export default function UserProfileSidebar({ stats, userPoints = 0, achievements
         const data = await res.json();
         alert(data.message || 'Lỗi upload avatar');
       }
-    } catch {
+    } catch (error) {
+      console.error('Error uploading avatar:', error);
       alert('Lỗi upload avatar');
     } finally {
       setUploading(false);

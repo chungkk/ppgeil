@@ -23,7 +23,8 @@ const dictionaryCache = {
         return cached.data;
       }
       return null;
-    } catch {
+    } catch (error) {
+      console.error('Error reading dictionary cache:', error);
       return null;
     }
   },
@@ -37,7 +38,9 @@ const dictionaryCache = {
         expiry: Date.now() + (CACHE_EXPIRY_DAYS * 24 * 60 * 60 * 1000)
       };
       localStorage.setItem(DICTIONARY_CACHE_KEY, JSON.stringify(cache));
-    } catch {}
+    } catch (error) {
+      console.error('Error writing dictionary cache:', error);
+    }
   }
 };
 
@@ -61,17 +64,17 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
   const [touchEnd, setTouchEnd] = useState(null);
   const [swipeDistance, setSwipeDistance] = useState(0);
   const [useSkeletonLoading, setUseSkeletonLoading] = useState(true);
-  
+
   const popupOpenTimeRef = useRef(Date.now());
 
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    
+
     checkMobile();
     window.addEventListener('resize', checkMobile);
-    
+
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
@@ -176,7 +179,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
 
       setIsLoadingExplanation(true);
       setIsLoading(true);
-      
+
       try {
         const response = await fetch('/api/dictionary', {
           method: 'POST',
@@ -198,7 +201,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
             setTranslation(data.data.translation);
           }
           dictionaryCache.set(word, data.data, targetLang);
-          
+
           if (data.fromCache) {
             DictionaryAnalytics.cacheHit(word, false);
           } else {
@@ -255,7 +258,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
   useEffect(() => {
     const checkSavedStatus = async () => {
       if (!word || !user) return;
-      
+
       try {
         const response = await fetchWithAuth(`/api/vocabulary?word=${encodeURIComponent(word)}`);
         if (response.ok) {
@@ -305,10 +308,10 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
 
   const handleTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
-    
+
     const distance = touchEnd - touchStart;
     const isDownSwipe = distance > minSwipeDistance;
-    
+
     if (isDownSwipe) {
       const timeSpent = Date.now() - popupOpenTimeRef.current;
       DictionaryAnalytics.swipedToClose(word, distance);
@@ -319,7 +322,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
       });
       onClose();
     }
-    
+
     // Reset states
     setSwipeDistance(0);
     setTouchStart(null);
@@ -352,19 +355,19 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
       if (res.ok) {
         setIsSaved(true);
         setShowConfetti(true);
-        
+
         // Track word saved
         DictionaryAnalytics.wordSaved(word, wordData?.translation || translation, {
           lesson_id: lessonId,
           has_context: !!context,
           device_type: isMobile ? 'mobile' : 'desktop'
         });
-        
+
         // Notify parent to refresh vocabulary list
         if (onSaveSuccess) {
           onSaveSuccess();
         }
-        
+
         // Hide confetti after animation completes
         setTimeout(() => {
           setShowConfetti(false);
@@ -404,8 +407,8 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
   };
 
   return (
-    <div 
-      className={`${styles.overlay} ${isMobile ? styles.mobileOverlay : ''}`} 
+    <div
+      className={`${styles.overlay} ${isMobile ? styles.mobileOverlay : ''}`}
       onClick={handleOverlayClick}
       role="presentation"
     >
@@ -486,7 +489,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
                 )}
               </div>
             )}
-            <button 
+            <button
               onClick={() => {
                 const timeSpent = Date.now() - popupOpenTimeRef.current;
                 DictionaryAnalytics.popupClosed(word, timeSpent, {
@@ -494,7 +497,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
                   device_type: isMobile ? 'mobile' : 'desktop'
                 });
                 onClose();
-              }} 
+              }}
               className={styles.closeButton}
               aria-label={t('common.close') || 'Đóng'}
               title={t('common.close') || 'Đóng'}
@@ -551,7 +554,7 @@ const DictionaryPopup = ({ word, onClose, position, arrowPosition, lessonId, con
                 <div className={styles.examples}>
                   {localExamples.map((example, index) => (
                     <div key={index} className={styles.example}>
-                      <div 
+                      <div
                         className={styles.exampleGerman}
                         dangerouslySetInnerHTML={{ __html: example.highlighted }}
                       />

@@ -12,22 +12,31 @@ const CacheSettings = mongoose.models.CacheSettings ||
   mongoose.model('CacheSettings', CacheSettingsSchema);
 
 // Simple authentication check
-function isAuthorized(req) {
-  const adminToken = process.env.ADMIN_TOKEN || 'your-secret-admin-token';
+function isAuthorized(req, res) {
+  const adminToken = process.env.ADMIN_TOKEN;
+
+  // Fail if ADMIN_TOKEN is not configured
+  if (!adminToken) {
+    console.error('ADMIN_TOKEN environment variable is not configured');
+    return { authorized: false, error: 'Admin token not configured' };
+  }
+
   const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    return false;
+    return { authorized: false, error: 'Unauthorized' };
   }
 
   const token = authHeader.substring(7);
-  return token === adminToken;
+  return { authorized: token === adminToken, error: 'Unauthorized' };
 }
 
 export default async function handler(req, res) {
   // Check authorization
-  if (!isAuthorized(req)) {
-    return res.status(401).json({ success: false, message: 'Unauthorized' });
+  const auth = isAuthorized(req, res);
+  if (!auth.authorized) {
+    const statusCode = auth.error === 'Admin token not configured' ? 500 : 401;
+    return res.status(statusCode).json({ success: false, message: auth.error });
   }
 
   try {

@@ -53,11 +53,12 @@ function DashboardIndex() {
         } else {
           setAllLessons([]);
         }
-      } catch {
+      } catch (error) {
+        console.error('Error loading lessons:', error);
         setAllLessons([]);
       }
-    } catch {
-      // Error loading data - handled silently
+    } catch (error) {
+      console.error('Error loading profile data:', error);
     } finally {
       setLoading(false);
     }
