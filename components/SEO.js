@@ -32,24 +32,31 @@ const SEO = ({
       <title>{siteTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      
+
       {/* Robots Meta Tags */}
       {(noindex || nofollow) && (
         <meta name="robots" content={`${noindex ? 'noindex' : 'index'},${nofollow ? 'nofollow' : 'follow'}`} />
       )}
-      
+
       {/* Canonical URL */}
       <link rel="canonical" href={fullCanonicalUrl} />
-      
+
+      {/* hreflang for multilingual SEO */}
+      <link rel="alternate" hrefLang="de" href={`${siteUrl}${router.asPath.split('?')[0]}`} />
+      <link rel="alternate" hrefLang="en" href={`${siteUrl}/en${router.asPath.split('?')[0]}`} />
+      <link rel="alternate" hrefLang="vi" href={`${siteUrl}/vi${router.asPath.split('?')[0]}`} />
+      <link rel="alternate" hrefLang="x-default" href={fullCanonicalUrl} />
+
       {/* Language/Locale Meta Tags */}
+
       <meta property="og:locale" content={locale} />
       {alternateLocales.map((altLocale) => (
         <meta key={altLocale} property="og:locale:alternate" content={altLocale} />
       ))}
-      
+
       {/* Author Meta Tag */}
       {author && <meta name="author" content={author} />}
-      
+
       {/* Open Graph / Facebook */}
       <meta property="og:site_name" content="PapaGeil - Learn German" />
       <meta property="og:type" content={ogType} />
@@ -60,7 +67,7 @@ const SEO = ({
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={siteTitle} />
       <meta property="og:url" content={fullOgUrl} />
-      
+
       {/* Article specific tags */}
       {ogType === 'article' && (
         <>
@@ -82,7 +89,7 @@ const SEO = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={fullOgImage} />
       <meta name="twitter:image:alt" content={siteTitle} />
-      
+
       {/* Additional SEO Meta Tags */}
       <meta name="application-name" content="PapaGeil" />
       <meta name="apple-mobile-web-app-title" content="PapaGeil" />
@@ -90,7 +97,7 @@ const SEO = ({
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="format-detection" content="telephone=no" />
-      
+
       {/* Verification Meta Tags (add your own IDs) */}
       {/* <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" /> */}
       {/* <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE" /> */}
@@ -189,9 +196,53 @@ export const generateFAQStructuredData = (faqs) => {
   };
 };
 
+export const generateOrganizationStructuredData = () => {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://papageil.net';
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'PapaGeil',
+    alternateName: 'PapaGeil - Learn German',
+    url: siteUrl,
+    logo: `${siteUrl}/logo.jpg`,
+    description: 'Interactive German language learning platform using Shadowing and Dictation methods with real YouTube videos',
+    foundingDate: '2024',
+    sameAs: [
+      'https://twitter.com/papageil_de'
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      email: 'contact@papageil.net',
+      availableLanguage: ['German', 'English', 'Vietnamese']
+    }
+  };
+};
+
+export const generateWebSiteStructuredData = () => {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://papageil.net';
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'PapaGeil',
+    url: siteUrl,
+    description: 'Learn German with Shadowing and Dictation methods using real YouTube videos',
+    inLanguage: ['de', 'en', 'vi'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${siteUrl}/search?q={search_term_string}`
+      },
+      'query-input': 'required name=search_term_string'
+    }
+  };
+};
+
+
 export const generatePersonStructuredData = (user) => {
   if (!user) return null;
-  
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -209,7 +260,7 @@ export const generatePersonStructuredData = (user) => {
 const mapDifficultyToEducationalLevel = (difficulty) => {
   const mapping = {
     'beginner': 'Beginner',
-    'intermediate': 'Intermediate', 
+    'intermediate': 'Intermediate',
     'advanced': 'Advanced',
     'a1': 'Beginner',
     'a2': 'Elementary',

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
+import SEO from '../components/SEO';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import styles from '../styles/leaderboard.module.css';
+
 
 // Simple trophy/medal icons
 const RankIcon = ({ rank }) => {
@@ -65,10 +66,12 @@ export default function LeaderboardPage() {
 
     return (
         <>
-            <Head>
-                <title>{t('leaderboard.title')} - PapaGeil</title>
-                <meta name="description" content={t('leaderboard.subtitle')} />
-            </Head>
+            <SEO
+                title={`${t('leaderboard.title')} - PapaGeil`}
+                description={t('leaderboard.subtitle') || 'Compete with other German learners and see who is at the top of the leaderboard'}
+                keywords="German learning leaderboard, Deutsch lernen ranking, language competition"
+            />
+
 
             <div className={styles.container}>
                 {/* Header */}

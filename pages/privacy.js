@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
+import SEO from '../components/SEO';
 import Header from '../components/Header';
 import ShareButtons from '../components/ShareButtons';
 import styles from '../styles/StaticPage.module.css';
@@ -46,13 +46,13 @@ export default function PrivacyPage() {
 
   return (
     <>
-      <Head>
-        <title>{pageData?.title || 'Datenschutzerklärung'}</title>
-        <meta name="description" content={pageData?.metaDescription || ''} />
-      </Head>
-      
+      <SEO
+        title={pageData?.title || 'Datenschutzerklärung'}
+        description={pageData?.metaDescription || 'Datenschutzerklärung für PapaGeil - Ihre Daten sind bei uns sicher'}
+      />
+
       <Header />
-      
+
       <div className={styles.container}>
         <div className={styles.content}>
           {loading ? (
@@ -62,7 +62,7 @@ export default function PrivacyPage() {
               <div className={styles.pageContent}>
                 {renderContent(pageData.content)}
               </div>
-              <ShareButtons 
+              <ShareButtons
                 title={pageData.title}
                 description={pageData.metaDescription}
               />

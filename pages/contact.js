@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 import Header from '../components/Header';
 import ShareButtons from '../components/ShareButtons';
 import styles from '../styles/StaticPage.module.css';
@@ -48,13 +48,13 @@ export default function ContactPage() {
 
   return (
     <>
-      <Head>
-        <title>{pageData?.title || 'Kontakt'}</title>
-        <meta name="description" content={pageData?.metaDescription || ''} />
-      </Head>
-      
+      <SEO
+        title={pageData?.title || 'Kontakt'}
+        description={pageData?.metaDescription || 'Kontaktieren Sie PapaGeil - wir freuen uns auf Ihre Nachricht'}
+      />
+
       <Header />
-      
+
       <div className={styles.container}>
         <div className={styles.content}>
           {loading ? (
@@ -64,7 +64,7 @@ export default function ContactPage() {
               <div className={styles.pageContent}>
                 {renderContent(pageData.content)}
               </div>
-              <ShareButtons 
+              <ShareButtons
                 title={pageData.title}
                 description={pageData.metaDescription}
               />

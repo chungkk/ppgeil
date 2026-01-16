@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
-import SEO, { generateBreadcrumbStructuredData, generateCourseStructuredData, generateFAQStructuredData } from '../components/SEO';
+import SEO, { generateBreadcrumbStructuredData, generateCourseStructuredData, generateFAQStructuredData, generateOrganizationStructuredData, generateWebSiteStructuredData } from '../components/SEO';
+
 import LessonCard from '../components/LessonCard';
 import { SkeletonCard } from '../components/SkeletonLoader';
 import ModeSelectionPopup from '../components/ModeSelectionPopup';
@@ -44,11 +45,11 @@ const HomePage = () => {
       setCategories(data.categories || []);
       setCategoriesWithLessons(data.categoriesWithLessons || {});
       setUserUnlockInfo(data.userUnlockInfo || null);
-      
+
       // Show welcome popup for new users (2 free unlocks, 0 unlocked lessons)
-      if (data.userUnlockInfo && 
-          data.userUnlockInfo.freeUnlocksRemaining === 2 && 
-          data.userUnlockInfo.unlockedCount === 0) {
+      if (data.userUnlockInfo &&
+        data.userUnlockInfo.freeUnlocksRemaining === 2 &&
+        data.userUnlockInfo.unlockedCount === 0) {
         const welcomeShown = localStorage.getItem('welcomeUnlockShown');
         if (!welcomeShown) {
           setShowWelcomePopup(true);
@@ -117,7 +118,7 @@ const HomePage = () => {
         for (const slug in updated) {
           updated[slug] = {
             ...updated[slug],
-            lessons: updated[slug].lessons.map(l => 
+            lessons: updated[slug].lessons.map(l =>
               l.id === lessonId ? { ...l, isLocked: false } : l
             )
           };
@@ -126,7 +127,7 @@ const HomePage = () => {
       });
 
       setUnlockLesson(null);
-      
+
       // Auto-open the lesson after unlock
       const unlockedLesson = Object.values(categoriesWithLessons)
         .flatMap(cat => cat.lessons)
@@ -213,8 +214,11 @@ const HomePage = () => {
   const combinedStructuredData = [
     breadcrumbData,
     generateCourseStructuredData(allLessons, difficultyFilter),
-    generateFAQStructuredData(faqData)
+    generateFAQStructuredData(faqData),
+    generateOrganizationStructuredData(),
+    generateWebSiteStructuredData()
   ];
+
 
   return (
     <>
@@ -256,9 +260,9 @@ const HomePage = () => {
         />
       )}
 
-      <LoginModal 
-        isOpen={showLoginModal} 
-        onClose={() => setShowLoginModal(false)} 
+      <LoginModal
+        isOpen={showLoginModal}
+        onClose={() => setShowLoginModal(false)}
       />
 
       <div className="main-container">

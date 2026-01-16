@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 import Header from '../components/Header';
 import ShareButtons from '../components/ShareButtons';
 import styles from '../styles/StaticPage.module.css';
+
 
 export default function AboutPage() {
   const { t } = useTranslation();
@@ -48,13 +49,15 @@ export default function AboutPage() {
 
   return (
     <>
-      <Head>
-        <title>{pageData?.title || 'Über uns'}</title>
-        <meta name="description" content={pageData?.metaDescription || ''} />
-      </Head>
-      
+      <SEO
+        title={pageData?.title || 'Über uns'}
+        description={pageData?.metaDescription || 'Erfahren Sie mehr über PapaGeil - Ihre Plattform zum Deutsch lernen mit Shadowing und Diktat'}
+        noindex={false}
+      />
+
       <Header />
-      
+
+
       <div className={styles.container}>
         <div className={styles.content}>
           {loading ? (
@@ -64,7 +67,7 @@ export default function AboutPage() {
               <div className={styles.pageContent}>
                 {renderContent(pageData.content)}
               </div>
-              <ShareButtons 
+              <ShareButtons
                 title={pageData.title}
                 description={pageData.metaDescription}
               />
