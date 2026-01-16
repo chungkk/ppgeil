@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { navigateWithLocale } from '../lib/navigation';
 import styles from '../styles/UnlockModal.module.css';
 
-const GuestLockedPopup = ({ lesson, onClose }) => {
+const GuestLockedPopup = ({ lesson, onClose, onLogin }) => {
   const { t } = useTranslation();
   const router = useRouter();
 
@@ -15,7 +15,9 @@ const GuestLockedPopup = ({ lesson, onClose }) => {
 
   const handleLogin = () => {
     onClose();
-    router.push('/login');
+    if (onLogin) {
+      onLogin();
+    }
   };
 
   return (

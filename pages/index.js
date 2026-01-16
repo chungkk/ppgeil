@@ -8,6 +8,7 @@ import ModeSelectionPopup from '../components/ModeSelectionPopup';
 import UnlockModal from '../components/UnlockModal';
 import GuestLockedPopup from '../components/GuestLockedPopup';
 import WelcomeUnlockPopup from '../components/WelcomeUnlockPopup';
+import LoginModal from '../components/LoginModal';
 import { useAuth } from '../context/AuthContext';
 import { navigateWithLocale } from '../lib/navigation';
 
@@ -24,6 +25,7 @@ const HomePage = () => {
   const [userUnlockInfo, setUserUnlockInfo] = useState(null);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
   const [guestLockedLesson, setGuestLockedLesson] = useState(null);
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const router = useRouter();
   const { user } = useAuth();
 
@@ -250,8 +252,14 @@ const HomePage = () => {
         <GuestLockedPopup
           lesson={guestLockedLesson}
           onClose={() => setGuestLockedLesson(null)}
+          onLogin={() => setShowLoginModal(true)}
         />
       )}
+
+      <LoginModal 
+        isOpen={showLoginModal} 
+        onClose={() => setShowLoginModal(false)} 
+      />
 
       <div className="main-container">
 

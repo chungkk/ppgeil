@@ -7,6 +7,7 @@ import { SkeletonCard } from '../../components/SkeletonLoader';
 import ModeSelectionPopup from '../../components/ModeSelectionPopup';
 import UnlockModal from '../../components/UnlockModal';
 import GuestLockedPopup from '../../components/GuestLockedPopup';
+import LoginModal from '../../components/LoginModal';
 import { useLessons, prefetchLessons } from '../../lib/hooks/useLessons';
 import { navigateWithLocale } from '../../lib/navigation';
 import { useAuth } from '../../context/AuthContext';
@@ -22,6 +23,7 @@ const CategoryPage = () => {
   const [unlockLesson, setUnlockLesson] = useState(null);
   const [unlockLoading, setUnlockLoading] = useState(false);
   const [guestLockedLesson, setGuestLockedLesson] = useState(null);
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const { user } = useAuth();
   const itemsPerPage = 10;
 
@@ -182,8 +184,14 @@ const CategoryPage = () => {
         <GuestLockedPopup
           lesson={guestLockedLesson}
           onClose={() => setGuestLockedLesson(null)}
+          onLogin={() => setShowLoginModal(true)}
         />
       )}
+
+      <LoginModal 
+        isOpen={showLoginModal} 
+        onClose={() => setShowLoginModal(false)} 
+      />
 
       <div className="main-container">
         {/* Back button */}
