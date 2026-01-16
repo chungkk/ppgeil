@@ -11,11 +11,11 @@ import styles from '../../styles/adminDashboard.module.css';
  * - Sắp xếp (Mới nhất, Cũ nhất, A-Z, Z-A)
  * - Lưu và tải filter presets
  */
-const LessonFilters = ({ 
-  onFilterChange, 
+const LessonFilters = ({
+  onFilterChange,
   categories = [],
   totalCount = 0,
-  filteredCount = 0 
+  filteredCount = 0
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [filters, setFilters] = useState({
@@ -27,7 +27,7 @@ const LessonFilters = ({
 
   // Các cấp độ có sẵn
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-  
+
   // Các loại nguồn
   const sources = [
     { value: 'youtube', label: '🎥 YouTube' },
@@ -42,7 +42,8 @@ const LessonFilters = ({
     { value: 'title-asc', label: '🔤 Tiêu đề A-Z' },
     { value: 'title-desc', label: '🔤 Tiêu đề Z-A' },
     { value: 'level-asc', label: '📊 Cấp độ tăng dần' },
-    { value: 'level-desc', label: '📊 Cấp độ giảm dần' }
+    { value: 'level-desc', label: '📊 Cấp độ giảm dần' },
+    { value: 'category', label: '🏷️ Theo danh mục' }
   ];
 
   // Filter presets
@@ -130,9 +131,9 @@ const LessonFilters = ({
   };
 
   // Check if any filter is active
-  const hasActiveFilters = filters.levels.length > 0 || 
-                          filters.categories.length > 0 || 
-                          filters.sources.length > 0;
+  const hasActiveFilters = filters.levels.length > 0 ||
+    filters.categories.length > 0 ||
+    filters.sources.length > 0;
 
   return (
     <div className={styles.filterContainer}>

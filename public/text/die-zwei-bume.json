@@ -1,8 +1,8 @@
 [
     {
-        "text": "Wenn Menschen behaupten, für Gott zu sprechen,",
+        "text": "Wenn Menschen behaupten, für Gott zu sprechen, gibt es da einen Weg herauszufinden, ob das stimmt.",
         "start": 0,
-        "end": 2.540000009536743,
+        "end": 4.739999771118164,
         "wordTimings": [
             {
                 "word": "Wenn",
@@ -37,20 +37,11 @@
             {
                 "word": "sprechen,",
                 "start": 2.240000009536743,
-                "end": 2.540000009536743
-            }
-        ],
-        "translationEn": "When people claim to speak for God,",
-        "translationVi": "Khi con người tuyên bố nói thay cho Chúa,"
-    },
-    {
-        "text": "gibt es da einen Weg herauszufinden, ob das stimmt.",
-        "start": 2.3600000381469726,
-        "end": 5.039999771118164,
-        "wordTimings": [
+                "end": 2.240000009536743
+            },
             {
                 "word": "gibt",
-                "start": 2.3600000381469726,
+                "start": 2.4600000381469727,
                 "end": 2.5399999618530273
             },
             {
@@ -91,20 +82,20 @@
             {
                 "word": "stimmt.",
                 "start": 4.460000038146973,
-                "end": 5.039999771118164
+                "end": 4.739999771118164
             }
         ],
-        "translationEn": "Is there a way to find out if that's true?",
-        "translationVi": "Có cách nào để tìm ra điều đó có đúng không?"
+        "translationEn": "When people claim to speak for God, there is a way to find out if that is true.",
+        "translationVi": "Khi mọi người tuyên bố nói thay cho Chúa, có một cách để tìm ra liệu điều đó có đúng hay không."
     },
     {
-        "text": "Jesus sagt, den gibt es.",
-        "start": 4.959999942779541,
-        "end": 6.6400001525878904,
+        "text": "Jesus sagt, den gibt es, und er erklärt das mit zwei Bildern.",
+        "start": 5.059999942779541,
+        "end": 8.220000267028809,
         "wordTimings": [
             {
                 "word": "Jesus",
-                "start": 4.959999942779541,
+                "start": 5.059999942779541,
                 "end": 5.340000152587891
             },
             {
@@ -123,22 +114,13 @@
                 "end": 6.099999904632568
             },
             {
-                "word": "es.",
+                "word": "es,",
                 "start": 6.099999904632568,
-                "end": 6.6400001525878904
-            }
-        ],
-        "translationEn": "Jesus says, there is one.",
-        "translationVi": "Chúa Giêsu nói, có người đó."
-    },
-    {
-        "text": "Und er erklärt das mit zwei Bildern.",
-        "start": 6.4,
-        "end": 8.52000026702881,
-        "wordTimings": [
+                "end": 6.340000152587891
+            },
             {
-                "word": "Und",
-                "start": 6.4,
+                "word": "und",
+                "start": 6.5,
                 "end": 6.699999809265137
             },
             {
@@ -169,20 +151,20 @@
             {
                 "word": "Bildern.",
                 "start": 7.900000095367432,
-                "end": 8.52000026702881
+                "end": 8.220000267028809
             }
         ],
-        "translationEn": "And he explains this with two images.",
-        "translationVi": "Và anh ấy giải thích điều đó bằng hai bức tranh."
+        "translationEn": "Jesus says that there is one, and he explains this with two images.",
+        "translationVi": "Chúa Giêsu nói rằng có điều đó, và Ngài giải thích điều này bằng hai hình ảnh."
     },
     {
-        "text": "Im ersten geht es um Schafe und Wölfe,",
-        "start": 8.360000038146973,
-        "end": 10.52000026702881,
+        "text": "Im ersten geht es um Schafe und Wölfe, und im zweiten Bild um Bäume.",
+        "start": 8.460000038146973,
+        "end": 11.699999809265137,
         "wordTimings": [
             {
                 "word": "Im",
-                "start": 8.360000038146973,
+                "start": 8.460000038146973,
                 "end": 8.5
             },
             {
@@ -218,20 +200,11 @@
             {
                 "word": "Wölfe,",
                 "start": 9.880000114440918,
-                "end": 10.52000026702881
-            }
-        ],
-        "translationEn": "The first one is about sheep and wolves,",
-        "translationVi": "Trong phần đầu tiên, nó nói về cừu và sói,"
-    },
-    {
-        "text": "und im zweiten Bild um Bäume,",
-        "start": 10.120000267028809,
-        "end": 11.999999809265137,
-        "wordTimings": [
+                "end": 10.220000267028809
+            },
             {
                 "word": "und",
-                "start": 10.120000267028809,
+                "start": 10.220000267028809,
                 "end": 10.539999961853027
             },
             {
@@ -255,22 +228,22 @@
                 "end": 11.479999542236328
             },
             {
-                "word": "Bäume,",
+                "word": "Bäume.",
                 "start": 11.479999542236328,
-                "end": 11.999999809265137
+                "end": 11.699999809265137
             }
         ],
-        "translationEn": "and in the second picture about trees,",
-        "translationVi": "và trong bức tranh thứ hai về những cái cây,"
+        "translationEn": "The first one is about sheep and wolves, and the second image is about trees.",
+        "translationVi": "Bức đầu tiên nói về cừu và sói, và bức thứ hai nói về cây cối."
     },
     {
-        "text": "den guten und den schlechten Baum.",
-        "start": 11.820000076293946,
-        "end": 13.839999961853028,
+        "text": "Den guten und den schlechten Baum.",
+        "start": 11.920000076293945,
+        "end": 13.539999961853027,
         "wordTimings": [
             {
-                "word": "den",
-                "start": 11.820000076293946,
+                "word": "Den",
+                "start": 11.920000076293945,
                 "end": 12.079999923706055
             },
             {
@@ -296,20 +269,20 @@
             {
                 "word": "Baum.",
                 "start": 13.239999771118164,
-                "end": 13.839999961853028
+                "end": 13.539999961853027
             }
         ],
-        "translationEn": "the good and the bad tree.",
-        "translationVi": "cái cây tốt và cái cây xấu."
+        "translationEn": "The good and the bad tree.",
+        "translationVi": "Cây tốt và cây xấu."
     },
     {
-        "text": "In beiden Fällen lädt Jesus uns ein,",
-        "start": 13.879999542236328,
-        "end": 15.900000381469727,
+        "text": "In beiden Fällen lädt Jesus uns ein, unter die Oberfläche zu schauen.",
+        "start": 13.979999542236328,
+        "end": 17.1200008392334,
         "wordTimings": [
             {
                 "word": "In",
-                "start": 13.879999542236328,
+                "start": 13.979999542236328,
                 "end": 14.039999961853027
             },
             {
@@ -340,20 +313,11 @@
             {
                 "word": "ein,",
                 "start": 15.300000190734863,
-                "end": 15.900000381469727
-            }
-        ],
-        "translationEn": "In both cases, Jesus invites us,",
-        "translationVi": "Trong cả hai trường hợp, Chúa Giêsu mời gọi chúng ta,"
-    },
-    {
-        "text": "unter die Oberfläche zu schauen",
-        "start": 15.820000076293946,
-        "end": 17.4200008392334,
-        "wordTimings": [
+                "end": 15.600000381469727
+            },
             {
                 "word": "unter",
-                "start": 15.820000076293946,
+                "start": 15.920000076293945,
                 "end": 15.960000038146973
             },
             {
@@ -372,22 +336,22 @@
                 "end": 16.940000534057617
             },
             {
-                "word": "schauen",
+                "word": "schauen.",
                 "start": 16.940000534057617,
-                "end": 17.4200008392334
+                "end": 17.1200008392334
             }
         ],
-        "translationEn": "to look beneath the surface",
-        "translationVi": "nhìn sâu vào bề mặt"
+        "translationEn": "In both cases, Jesus invites us to look beneath the surface.",
+        "translationVi": "Trong cả hai trường hợp, Chúa Jesus mời chúng ta nhìn sâu vào bên trong."
     },
     {
-        "text": "und zu untersuchen, wie die Person tickt,",
-        "start": 17.020000839233397,
-        "end": 19.379999923706055,
+        "text": "Und zu untersuchen, wie die Person tickt, die für Gott spricht.",
+        "start": 17.1200008392334,
+        "end": 19.860000610351562,
         "wordTimings": [
             {
-                "word": "und",
-                "start": 17.020000839233397,
+                "word": "Und",
+                "start": 17.1200008392334,
                 "end": 17.280000686645508
             },
             {
@@ -418,20 +382,11 @@
             {
                 "word": "tickt,",
                 "start": 18.6200008392334,
-                "end": 19.379999923706055
-            }
-        ],
-        "translationEn": "and to investigate how the person ticks,",
-        "translationVi": "và để nghiên cứu cách mà người đó suy nghĩ,"
-    },
-    {
-        "text": "die für Gott spricht.",
-        "start": 19.000000381469725,
-        "end": 20.160000610351563,
-        "wordTimings": [
+                "end": 19.079999923706055
+            },
             {
                 "word": "die",
-                "start": 19.000000381469725,
+                "start": 19.100000381469727,
                 "end": 19.219999313354492
             },
             {
@@ -447,20 +402,20 @@
             {
                 "word": "spricht.",
                 "start": 19.520000457763672,
-                "end": 20.160000610351563
+                "end": 19.860000610351562
             }
         ],
-        "translationEn": "that speaks for God.",
-        "translationVi": "người nói cho Chúa."
+        "translationEn": "And to examine how the person ticks who speaks for God.",
+        "translationVi": "Và để nghiên cứu cách mà người nói về Chúa hoạt động."
     },
     {
-        "text": "Und das fühlt sich komisch an,",
-        "start": 19.95999946594238,
-        "end": 21.439999389648438,
+        "text": "Und das fühlt sich komisch an, weil wir Menschen nicht besonders gut darin sind, die Motive anderer einzuschätzen.",
+        "start": 20.059999465942383,
+        "end": 24.3799991607666,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 19.95999946594238,
+                "start": 20.059999465942383,
                 "end": 20.239999771118164
             },
             {
@@ -486,20 +441,11 @@
             {
                 "word": "an,",
                 "start": 20.940000534057617,
-                "end": 21.439999389648438
-            }
-        ],
-        "translationEn": "And that feels strange,",
-        "translationVi": "Và điều đó cảm thấy kỳ lạ."
-    },
-    {
-        "text": "weil wir Menschen nicht besonders gut darin sind,",
-        "start": 21.160000228881835,
-        "end": 23.11999969482422,
-        "wordTimings": [
+                "end": 21.139999389648438
+            },
             {
                 "word": "weil",
-                "start": 21.160000228881835,
+                "start": 21.260000228881836,
                 "end": 21.31999969482422
             },
             {
@@ -535,20 +481,11 @@
             {
                 "word": "sind,",
                 "start": 22.65999984741211,
-                "end": 23.11999969482422
-            }
-        ],
-        "translationEn": "because we humans are not particularly good at it,",
-        "translationVi": "bởi vì chúng ta không giỏi lắm trong việc,"
-    },
-    {
-        "text": "die Motive anderer einzuschätzen.",
-        "start": 22.820000076293944,
-        "end": 24.679999160766602,
-        "wordTimings": [
+                "end": 22.81999969482422
+            },
             {
                 "word": "die",
-                "start": 22.820000076293944,
+                "start": 22.920000076293945,
                 "end": 23.100000381469727
             },
             {
@@ -564,20 +501,20 @@
             {
                 "word": "einzuschätzen.",
                 "start": 23.760000228881836,
-                "end": 24.679999160766602
+                "end": 24.3799991607666
             }
         ],
-        "translationEn": "to assess the motives of others.",
-        "translationVi": "đánh giá động cơ của người khác."
+        "translationEn": "And that feels strange because we humans are not particularly good at assessing the motives of others.",
+        "translationVi": "Và điều đó cảm thấy kỳ lạ, vì chúng ta không giỏi trong việc đánh giá động cơ của người khác."
     },
     {
-        "text": "Hat uns Jesus nicht deshalb gesagt,",
-        "start": 24.58000030517578,
-        "end": 26.320000457763673,
+        "text": "Hat uns Jesus nicht deshalb gesagt, dass wir andere nicht verurteilen sollen?",
+        "start": 24.68000030517578,
+        "end": 27.799999237060547,
         "wordTimings": [
             {
                 "word": "Hat",
-                "start": 24.58000030517578,
+                "start": 24.68000030517578,
                 "end": 24.780000686645508
             },
             {
@@ -603,20 +540,11 @@
             {
                 "word": "gesagt,",
                 "start": 25.65999984741211,
-                "end": 26.320000457763673
-            }
-        ],
-        "translationEn": "Didn’t Jesus tell us this for a reason?",
-        "translationVi": "Chẳng phải Chúa Giêsu đã nói với chúng ta điều đó sao,"
-    },
-    {
-        "text": "dass wir andere nicht verurteilen sollen?",
-        "start": 26.199999237060545,
-        "end": 28.099999237060548,
-        "wordTimings": [
+                "end": 26.020000457763672
+            },
             {
                 "word": "dass",
-                "start": 26.199999237060545,
+                "start": 26.299999237060547,
                 "end": 26.399999618530273
             },
             {
@@ -642,20 +570,20 @@
             {
                 "word": "sollen?",
                 "start": 27.540000915527344,
-                "end": 28.099999237060548
+                "end": 27.799999237060547
             }
         ],
-        "translationEn": "that we should not judge others?",
-        "translationVi": "rằng chúng ta không nên phán xét người khác?"
+        "translationEn": "Didn’t Jesus tell us that we should not judge others for this reason?",
+        "translationVi": "Chẳng phải Chúa Giê-su đã nói với chúng ta rằng chúng ta không nên phán xét người khác sao?"
     },
     {
-        "text": "Jesus sagt, dass falsche Propheten genau wissen,",
-        "start": 27.699999237060545,
-        "end": 30.61999969482422,
+        "text": "Jesus sagt, dass falsche Propheten genau wissen, dass sie unschuldig wirken wie sanfte Schafe.",
+        "start": 27.799999237060547,
+        "end": 32.5,
         "wordTimings": [
             {
                 "word": "Jesus",
-                "start": 27.699999237060545,
+                "start": 27.799999237060547,
                 "end": 28.34000015258789
             },
             {
@@ -686,20 +614,11 @@
             {
                 "word": "wissen,",
                 "start": 30.260000228881836,
-                "end": 30.61999969482422
-            }
-        ],
-        "translationEn": "Jesus says that false prophets know exactly,",
-        "translationVi": "Chúa Giê-su nói rằng các tiên tri giả biết rõ,"
-    },
-    {
-        "text": "dass sie unschuldig wirken wie sanfte Schafe.",
-        "start": 30.4,
-        "end": 32.8,
-        "wordTimings": [
+                "end": 30.31999969482422
+            },
             {
                 "word": "dass",
-                "start": 30.4,
+                "start": 30.5,
                 "end": 30.540000915527344
             },
             {
@@ -730,20 +649,20 @@
             {
                 "word": "Schafe.",
                 "start": 32.15999984741211,
-                "end": 32.8
+                "end": 32.5
             }
         ],
-        "translationEn": "that they appear innocent like gentle sheep.",
-        "translationVi": "rằng họ trông vô tội như những con cừu hiền lành."
+        "translationEn": "Jesus says that false prophets know very well that they appear innocent like gentle sheep.",
+        "translationVi": "Chúa Giê-su nói rằng những tiên tri giả biết rõ rằng họ trông có vẻ vô tội như những con cừu hiền lành."
     },
     {
-        "text": "Aber das kann ein Kostüm sein,",
-        "start": 32.6599983215332,
-        "end": 34.380001831054685,
+        "text": "Aber das kann ein Kostüm sein, das den übrigen Wolf darunter kaschiert.",
+        "start": 32.7599983215332,
+        "end": 36.18000030517578,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 32.6599983215332,
+                "start": 32.7599983215332,
                 "end": 32.86000061035156
             },
             {
@@ -769,20 +688,11 @@
             {
                 "word": "sein,",
                 "start": 33.779998779296875,
-                "end": 34.380001831054685
-            }
-        ],
-        "translationEn": "But that can be a costume,",
-        "translationVi": "Nhưng đó có thể là một bộ trang phục,"
-    },
-    {
-        "text": "das den übrigen Wolf darunter kaschiert.",
-        "start": 34.179998779296874,
-        "end": 36.48000030517578,
-        "wordTimings": [
+                "end": 34.08000183105469
+            },
             {
                 "word": "das",
-                "start": 34.179998779296874,
+                "start": 34.279998779296875,
                 "end": 34.380001068115234
             },
             {
@@ -808,20 +718,20 @@
             {
                 "word": "kaschiert.",
                 "start": 35.720001220703125,
-                "end": 36.48000030517578
+                "end": 36.18000030517578
             }
         ],
-        "translationEn": "that conceals the remaining wolf underneath.",
-        "translationVi": "điều đó che giấu con sói còn lại bên dưới."
+        "translationEn": "But it can be a costume that conceals the rest of the wolf underneath.",
+        "translationVi": "Nhưng đó có thể là một bộ trang phục che giấu con sói còn lại bên dưới."
     },
     {
-        "text": "Also schau nicht auf die äußere Erscheinung,",
-        "start": 36.44000091552734,
-        "end": 38.619999694824216,
+        "text": "Also schau nicht auf die äußere Erscheinung, die oberflächlich und verstellt sein kann.",
+        "start": 36.540000915527344,
+        "end": 40.619998931884766,
         "wordTimings": [
             {
                 "word": "Also",
-                "start": 36.44000091552734,
+                "start": 36.540000915527344,
                 "end": 36.720001220703125
             },
             {
@@ -852,20 +762,11 @@
             {
                 "word": "Erscheinung,",
                 "start": 37.79999923706055,
-                "end": 38.619999694824216
-            }
-        ],
-        "translationEn": "So don't look at the outer appearance,",
-        "translationVi": "Vậy nên đừng nhìn vào vẻ bề ngoài,"
-    },
-    {
-        "text": "die oberflächlich und verstellt sein kann.",
-        "start": 38.4,
-        "end": 40.91999893188476,
-        "wordTimings": [
+                "end": 38.31999969482422
+            },
             {
                 "word": "die",
-                "start": 38.4,
+                "start": 38.5,
                 "end": 38.63999938964844
             },
             {
@@ -891,20 +792,20 @@
             {
                 "word": "kann.",
                 "start": 40.380001068115234,
-                "end": 40.91999893188476
+                "end": 40.619998931884766
             }
         ],
-        "translationEn": "which can be superficial and pretentious.",
-        "translationVi": "có thể nông cạn và giả tạo."
+        "translationEn": "So don't look at the outer appearance, which can be superficial and deceptive.",
+        "translationVi": "Vì vậy, đừng nhìn vào vẻ bề ngoài, có thể nông cạn và giả tạo."
     },
     {
         "text": "Aber wie schaue ich unter die Oberfläche?",
-        "start": 40.9,
-        "end": 42.95999984741211,
+        "start": 41,
+        "end": 42.65999984741211,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 40.9,
+                "start": 41,
                 "end": 41.099998474121094
             },
             {
@@ -935,7 +836,7 @@
             {
                 "word": "Oberfläche?",
                 "start": 42.20000076293945,
-                "end": 42.95999984741211
+                "end": 42.65999984741211
             }
         ],
         "translationEn": "But how do I look beneath the surface?",
@@ -943,12 +844,12 @@
     },
     {
         "text": "Denke an den guten und den schlechten Baum.",
-        "start": 42.94000091552734,
-        "end": 44.98000030517578,
+        "start": 43.040000915527344,
+        "end": 44.68000030517578,
         "wordTimings": [
             {
                 "word": "Denke",
-                "start": 42.94000091552734,
+                "start": 43.040000915527344,
                 "end": 43.13999938964844
             },
             {
@@ -984,20 +885,20 @@
             {
                 "word": "Baum.",
                 "start": 44.380001068115234,
-                "end": 44.98000030517578
+                "end": 44.68000030517578
             }
         ],
-        "translationEn": "Think of the good and the bad tree.",
+        "translationEn": "Think of the good tree and the bad tree.",
         "translationVi": "Hãy nghĩ đến cây tốt và cây xấu."
     },
     {
-        "text": "Gefräßige böse Wölfe werden in ihrem Leben",
-        "start": 44.960001373291014,
-        "end": 47.7000015258789,
+        "text": "Gefräßige böse Wölfe werden in ihrem Leben unweigerlich schlechte Früchte tragen.",
+        "start": 45.060001373291016,
+        "end": 49.2599983215332,
         "wordTimings": [
             {
                 "word": "Gefräßige",
-                "start": 44.960001373291014,
+                "start": 45.060001373291016,
                 "end": 45.58000183105469
             },
             {
@@ -1028,20 +929,11 @@
             {
                 "word": "Leben",
                 "start": 47.119998931884766,
-                "end": 47.7000015258789
-            }
-        ],
-        "translationEn": "Greedy evil wolves will be in their life",
-        "translationVi": "Những con sói ác độc tham lam sẽ trong cuộc đời của chúng"
-    },
-    {
-        "text": "unweigerlich schlechte Früchte tragen.",
-        "start": 47.300001525878905,
-        "end": 49.5599983215332,
-        "wordTimings": [
+                "end": 47.400001525878906
+            },
             {
                 "word": "unweigerlich",
-                "start": 47.300001525878905,
+                "start": 47.400001525878906,
                 "end": 48.119998931884766
             },
             {
@@ -1057,20 +949,20 @@
             {
                 "word": "tragen.",
                 "start": 48.900001525878906,
-                "end": 49.5599983215332
+                "end": 49.2599983215332
             }
         ],
-        "translationEn": "inevitably bear bad fruit.",
-        "translationVi": "chắc chắn sẽ mang lại trái cây xấu."
+        "translationEn": "Greedy evil wolves will inevitably bear bad fruit in their lives.",
+        "translationVi": "Những con sói ác độc tham lam sẽ không thể tránh khỏi việc gặt hái những trái ngọt xấu trong cuộc đời của chúng."
     },
     {
-        "text": "Suche nicht nach Schwächen in ihrem äußeren Erscheinungsbild,",
-        "start": 49.60000076293945,
-        "end": 52.50000076293945,
+        "text": "Suche nicht nach Schwächen in ihrem äußeren Erscheinungsbild, sondern achte auf ihren Charakter.",
+        "start": 49.70000076293945,
+        "end": 53.779998779296875,
         "wordTimings": [
             {
                 "word": "Suche",
-                "start": 49.60000076293945,
+                "start": 49.70000076293945,
                 "end": 49.900001525878906
             },
             {
@@ -1106,20 +998,11 @@
             {
                 "word": "Erscheinungsbild,",
                 "start": 51.400001525878906,
-                "end": 52.50000076293945
-            }
-        ],
-        "translationEn": "Do not look for weaknesses in their outward appearance,",
-        "translationVi": "Đừng tìm kiếm những điểm yếu trong vẻ bề ngoài của họ,"
-    },
-    {
-        "text": "sondern achte auf ihren Charakter,",
-        "start": 52.300001525878905,
-        "end": 54.07999877929687,
-        "wordTimings": [
+                "end": 52.20000076293945
+            },
             {
                 "word": "sondern",
-                "start": 52.300001525878905,
+                "start": 52.400001525878906,
                 "end": 52.63999938964844
             },
             {
@@ -1138,22 +1021,22 @@
                 "end": 53.36000061035156
             },
             {
-                "word": "Charakter,",
+                "word": "Charakter.",
                 "start": 53.36000061035156,
-                "end": 54.07999877929687
+                "end": 53.779998779296875
             }
         ],
-        "translationEn": "but pay attention to their character,",
-        "translationVi": "mà hãy chú ý đến tính cách của họ,"
+        "translationEn": "Do not look for weaknesses in their appearance, but pay attention to their character.",
+        "translationVi": "Đừng tìm kiếm điểm yếu trong vẻ bề ngoài của họ, mà hãy chú ý đến tính cách của họ."
     },
     {
-        "text": "darauf, wie sie Menschen in ihren engsten Beziehungen behandeln.",
-        "start": 53.980001831054686,
-        "end": 57.279999542236325,
+        "text": "Darauf, wie sie Menschen in ihren engsten Beziehungen behandeln.",
+        "start": 54.08000183105469,
+        "end": 56.97999954223633,
         "wordTimings": [
             {
-                "word": "darauf,",
-                "start": 53.980001831054686,
+                "word": "Darauf,",
+                "start": 54.08000183105469,
                 "end": 54.380001068115234
             },
             {
@@ -1194,20 +1077,20 @@
             {
                 "word": "behandeln.",
                 "start": 56.279998779296875,
-                "end": 57.279999542236325
+                "end": 56.97999954223633
             }
         ],
-        "translationEn": "on how they treat people in their closest relationships.",
-        "translationVi": "cách họ đối xử với mọi người trong những mối quan hệ gần gũi nhất của họ."
+        "translationEn": "On how they treat people in their closest relationships.",
+        "translationVi": "Về cách họ đối xử với mọi người trong những mối quan hệ gần gũi nhất của mình."
     },
     {
-        "text": "Manche Menschen manipulieren und misshandeln andere heimlich",
-        "start": 56.87999954223633,
-        "end": 60.02000122070312,
+        "text": "Manche Menschen manipulieren und misshandeln andere heimlich.",
+        "start": 56.97999954223633,
+        "end": 59.720001220703125,
         "wordTimings": [
             {
                 "word": "Manche",
-                "start": 56.87999954223633,
+                "start": 56.97999954223633,
                 "end": 57.31999969482422
             },
             {
@@ -1236,22 +1119,22 @@
                 "end": 59.2599983215332
             },
             {
-                "word": "heimlich",
+                "word": "heimlich.",
                 "start": 59.2599983215332,
-                "end": 60.02000122070312
+                "end": 59.720001220703125
             }
         ],
         "translationEn": "Some people secretly manipulate and mistreat others.",
-        "translationVi": "Một số người âm thầm thao túng và ngược đãi người khác."
+        "translationVi": "Một số người lén lút thao túng và ngược đãi người khác."
     },
     {
-        "text": "und hinterlassen eine Spur von verletzten Menschen,",
-        "start": 59.620001220703124,
-        "end": 62.119999694824216,
+        "text": "Und hinterlassen eine Spur von verletzten Menschen, also schlechte Früchte.",
+        "start": 59.720001220703125,
+        "end": 63.119998931884766,
         "wordTimings": [
             {
-                "word": "und",
-                "start": 59.620001220703124,
+                "word": "Und",
+                "start": 59.720001220703125,
                 "end": 59.959999084472656
             },
             {
@@ -1282,20 +1165,11 @@
             {
                 "word": "Menschen,",
                 "start": 61.5,
-                "end": 62.119999694824216
-            }
-        ],
-        "translationEn": "and leave a trail of hurt people,",
-        "translationVi": "và để lại một dấu vết của những người bị tổn thương,"
-    },
-    {
-        "text": "also schlechte Früchte.",
-        "start": 62.05999984741211,
-        "end": 63.41999893188476,
-        "wordTimings": [
+                "end": 61.81999969482422
+            },
             {
                 "word": "also",
-                "start": 62.05999984741211,
+                "start": 62.15999984741211,
                 "end": 62.459999084472656
             },
             {
@@ -1306,20 +1180,20 @@
             {
                 "word": "Früchte.",
                 "start": 62.79999923706055,
-                "end": 63.41999893188476
+                "end": 63.119998931884766
             }
         ],
-        "translationEn": "also bad fruits.",
-        "translationVi": "cũng là trái cây xấu."
+        "translationEn": "And leave a trail of injured people, thus bad fruits.",
+        "translationVi": "Và để lại một dấu vết của những người bị tổn thương, tức là những trái cây xấu."
     },
     {
-        "text": "Während andere gute Früchte hervorbringen,",
-        "start": 63.26000061035156,
-        "end": 65.48000030517578,
+        "text": "Während andere gute Früchte hervorbringen, blühende gesunde Beziehungen aufbauen.",
+        "start": 63.36000061035156,
+        "end": 66.95999908447266,
         "wordTimings": [
             {
                 "word": "Während",
-                "start": 63.26000061035156,
+                "start": 63.36000061035156,
                 "end": 63.65999984741211
             },
             {
@@ -1340,20 +1214,11 @@
             {
                 "word": "hervorbringen,",
                 "start": 64.55999755859375,
-                "end": 65.48000030517578
-            }
-        ],
-        "translationEn": "While others bear good fruit,",
-        "translationVi": "Trong khi những cây khác mang lại trái ngon,"
-    },
-    {
-        "text": "blühende gesunde Beziehungen aufbauen,",
-        "start": 65.26000061035157,
-        "end": 67.25999908447265,
-        "wordTimings": [
+                "end": 65.18000030517578
+            },
             {
                 "word": "blühende",
-                "start": 65.26000061035157,
+                "start": 65.36000061035156,
                 "end": 65.68000030517578
             },
             {
@@ -1367,22 +1232,22 @@
                 "end": 66.4800033569336
             },
             {
-                "word": "aufbauen,",
+                "word": "aufbauen.",
                 "start": 66.4800033569336,
-                "end": 67.25999908447265
+                "end": 66.95999908447266
             }
         ],
-        "translationEn": "building flourishing healthy relationships,",
-        "translationVi": "xây dựng mối quan hệ khỏe mạnh, phát triển."
+        "translationEn": "While others bear good fruit, they build flourishing healthy relationships.",
+        "translationVi": "Trong khi những người khác tạo ra trái cây tốt, xây dựng mối quan hệ khỏe mạnh và phát triển."
     },
     {
-        "text": "in denen sich andere Menschen geliebt und umsorgt fühlen.",
-        "start": 67.12000122070313,
-        "end": 69.88000183105468,
+        "text": "In denen sich andere Menschen geliebt und umsorgt fühlen.",
+        "start": 67.22000122070312,
+        "end": 69.58000183105469,
         "wordTimings": [
             {
-                "word": "in",
-                "start": 67.12000122070313,
+                "word": "In",
+                "start": 67.22000122070312,
                 "end": 67.33999633789062
             },
             {
@@ -1423,20 +1288,20 @@
             {
                 "word": "fühlen.",
                 "start": 69.23999786376953,
-                "end": 69.88000183105468
+                "end": 69.58000183105469
             }
         ],
-        "translationEn": "in which other people feel loved and cared for.",
-        "translationVi": "nơi mà những người khác cảm thấy được yêu thương và chăm sóc."
+        "translationEn": "In which other people feel loved and cared for.",
+        "translationVi": "Nơi mà những người khác cảm thấy được yêu thương và chăm sóc."
     },
     {
         "text": "Also zwei Bäume, den guten und den schlechten.",
-        "start": 69.80000152587891,
-        "end": 73.10000305175781,
+        "start": 69.9000015258789,
+        "end": 72.80000305175781,
         "wordTimings": [
             {
                 "word": "Also",
-                "start": 69.80000152587891,
+                "start": 69.9000015258789,
                 "end": 70.08000183105469
             },
             {
@@ -1472,20 +1337,20 @@
             {
                 "word": "schlechten.",
                 "start": 72.31999969482422,
-                "end": 73.10000305175781
+                "end": 72.80000305175781
             }
         ],
         "translationEn": "So two trees, the good one and the bad one.",
-        "translationVi": "Vậy là hai cái cây, cây tốt và cây xấu."
+        "translationVi": "Vậy là hai cái cây, cái tốt và cái xấu."
     },
     {
         "text": "Klingt ein bisschen wie die Geschichte vom Garten Eden, oder?",
-        "start": 72.8800033569336,
-        "end": 75.46000366210937,
+        "start": 72.9800033569336,
+        "end": 75.16000366210938,
         "wordTimings": [
             {
                 "word": "Klingt",
-                "start": 72.8800033569336,
+                "start": 72.9800033569336,
                 "end": 73.04000091552734
             },
             {
@@ -1531,20 +1396,20 @@
             {
                 "word": "oder?",
                 "start": 75.08000183105469,
-                "end": 75.46000366210937
+                "end": 75.16000366210938
             }
         ],
         "translationEn": "Sounds a bit like the story of the Garden of Eden, doesn't it?",
         "translationVi": "Nghe có vẻ giống như câu chuyện về vườn Eden, phải không?"
     },
     {
-        "text": "In Eden stehen der Baum des Lebens",
-        "start": 75.31999816894532,
-        "end": 77.52000122070312,
+        "text": "In Eden stehen der Baum des Lebens und der Baum der Erkenntnis für zwei unterschiedliche Entscheidungen.",
+        "start": 75.41999816894531,
+        "end": 80.26000213623047,
         "wordTimings": [
             {
                 "word": "In",
-                "start": 75.31999816894532,
+                "start": 75.41999816894531,
                 "end": 75.5999984741211
             },
             {
@@ -1575,20 +1440,11 @@
             {
                 "word": "Lebens",
                 "start": 76.9800033569336,
-                "end": 77.52000122070312
-            }
-        ],
-        "translationEn": "In Eden stands the tree of life.",
-        "translationVi": "Trong Vườn Địa Đàng có cây sự sống."
-    },
-    {
-        "text": "und der Baum der Erkenntnis für zwei unterschiedliche Entscheidungen.",
-        "start": 77.12000122070313,
-        "end": 80.56000213623047,
-        "wordTimings": [
+                "end": 77.22000122070312
+            },
             {
                 "word": "und",
-                "start": 77.12000122070313,
+                "start": 77.22000122070312,
                 "end": 77.45999908447266
             },
             {
@@ -1629,20 +1485,20 @@
             {
                 "word": "Entscheidungen.",
                 "start": 79.69999694824219,
-                "end": 80.56000213623047
+                "end": 80.26000213623047
             }
         ],
-        "translationEn": "and the tree of knowledge for two different decisions.",
-        "translationVi": "và cây tri thức cho hai quyết định khác nhau."
+        "translationEn": "In Eden, the Tree of Life and the Tree of Knowledge represent two different choices.",
+        "translationVi": "Trong Vườn Địa Đàng, Cây Sự Sống và Cây Tri Thức đại diện cho hai quyết định khác nhau."
     },
     {
-        "text": "Als Antwort auf Gottes Weisheit,",
-        "start": 80.16000213623047,
-        "end": 82.53999786376953,
+        "text": "Als Antwort auf Gottes Weisheit.",
+        "start": 80.26000213623047,
+        "end": 82.23999786376953,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 80.16000213623047,
+                "start": 80.26000213623047,
                 "end": 80.73999786376953
             },
             {
@@ -1661,22 +1517,22 @@
                 "end": 81.76000213623047
             },
             {
-                "word": "Weisheit,",
+                "word": "Weisheit.",
                 "start": 81.76000213623047,
-                "end": 82.53999786376953
+                "end": 82.23999786376953
             }
         ],
-        "translationEn": "In response to God's wisdom,",
-        "translationVi": "Như một phản ứng đối với sự khôn ngoan của Chúa,"
+        "translationEn": "In response to God's wisdom.",
+        "translationVi": "Như một câu trả lời cho sự khôn ngoan của Chúa."
     },
     {
-        "text": "wirst du die Frucht essen, die Gott uns gegeben hat",
-        "start": 82.13999786376954,
-        "end": 85.3,
+        "text": "Wirst du die Frucht essen, die Gott uns gegeben hat und die Leben schenkt?",
+        "start": 82.23999786376953,
+        "end": 86.04000091552734,
         "wordTimings": [
             {
-                "word": "wirst",
-                "start": 82.13999786376954,
+                "word": "Wirst",
+                "start": 82.23999786376953,
                 "end": 82.77999877929688
             },
             {
@@ -1722,20 +1578,11 @@
             {
                 "word": "hat",
                 "start": 84.77999877929688,
-                "end": 85.3
-            }
-        ],
-        "translationEn": "Will you eat the fruit that God has given us?",
-        "translationVi": "Bạn sẽ ăn trái cây mà Chúa đã ban cho chúng ta không?"
-    },
-    {
-        "text": "und die Leben schenkt,",
-        "start": 84.9,
-        "end": 86.34000091552734,
-        "wordTimings": [
+                "end": 85
+            },
             {
                 "word": "und",
-                "start": 84.9,
+                "start": 85,
                 "end": 85.19999694824219
             },
             {
@@ -1749,22 +1596,22 @@
                 "end": 85.72000122070312
             },
             {
-                "word": "schenkt,",
+                "word": "schenkt?",
                 "start": 85.72000122070312,
-                "end": 86.34000091552734
+                "end": 86.04000091552734
             }
         ],
-        "translationEn": "and gives life,",
-        "translationVi": "và ban cho sự sống,"
+        "translationEn": "Will you eat the fruit that God has given us and that grants life?",
+        "translationVi": "Bạn sẽ ăn trái cây mà Chúa đã ban cho chúng ta và mang lại sự sống không?"
     },
     {
-        "text": "oder die von Gott verbotene Frucht,",
-        "start": 86.17999877929688,
-        "end": 88.13999633789062,
+        "text": "Oder die von Gott verbotene Frucht, vor der er warnt, dass sie dich umbringt?",
+        "start": 86.27999877929688,
+        "end": 89.63999938964844,
         "wordTimings": [
             {
-                "word": "oder",
-                "start": 86.17999877929688,
+                "word": "Oder",
+                "start": 86.27999877929688,
                 "end": 86.4000015258789
             },
             {
@@ -1790,20 +1637,11 @@
             {
                 "word": "Frucht,",
                 "start": 87.55999755859375,
-                "end": 88.13999633789062
-            }
-        ],
-        "translationEn": "or the fruit forbidden by God,",
-        "translationVi": "hoặc trái cấm mà Chúa đã cấm,"
-    },
-    {
-        "text": "vor der er warnt, dass sie dich umbringt?",
-        "start": 87.9800018310547,
-        "end": 89.93999938964843,
-        "wordTimings": [
+                "end": 87.83999633789062
+            },
             {
                 "word": "vor",
-                "start": 87.9800018310547,
+                "start": 88.08000183105469,
                 "end": 88.22000122070312
             },
             {
@@ -1839,20 +1677,20 @@
             {
                 "word": "umbringt?",
                 "start": 89.22000122070312,
-                "end": 89.93999938964843
+                "end": 89.63999938964844
             }
         ],
-        "translationEn": "before he warns that she will kill you?",
-        "translationVi": "trước khi cô ấy cảnh báo rằng cô ấy sẽ giết bạn?"
+        "translationEn": "Or the fruit forbidden by God, which He warns will kill you?",
+        "translationVi": "Hoặc trái cấm mà Chúa đã cấm, mà Ngài cảnh báo rằng nó sẽ giết chết bạn?"
     },
     {
-        "text": "Jesus adaptiert dieses Bild vom Garten Eden",
-        "start": 89.77999725341797,
-        "end": 92.24000244140625,
+        "text": "Jesus adaptiert dieses Bild vom Garten Eden auf kreative Weise.",
+        "start": 89.87999725341797,
+        "end": 93.0199966430664,
         "wordTimings": [
             {
                 "word": "Jesus",
-                "start": 89.77999725341797,
+                "start": 89.87999725341797,
                 "end": 90.0999984741211
             },
             {
@@ -1883,20 +1721,11 @@
             {
                 "word": "Eden",
                 "start": 91.69999694824219,
-                "end": 92.24000244140625
-            }
-        ],
-        "translationEn": "Jesus adapts this image of the Garden of Eden.",
-        "translationVi": "Chúa Giê-su đã điều chỉnh hình ảnh này từ vườn địa đàng."
-    },
-    {
-        "text": "auf kreative Weise.",
-        "start": 91.84000244140626,
-        "end": 93.3199966430664,
-        "wordTimings": [
+                "end": 91.94000244140625
+            },
             {
                 "word": "auf",
-                "start": 91.84000244140626,
+                "start": 91.94000244140625,
                 "end": 92.22000122070312
             },
             {
@@ -1907,20 +1736,20 @@
             {
                 "word": "Weise.",
                 "start": 92.69999694824219,
-                "end": 93.3199966430664
+                "end": 93.0199966430664
             }
         ],
-        "translationEn": "in a creative way.",
-        "translationVi": "một cách sáng tạo."
+        "translationEn": "Jesus creatively adapts this image of the Garden of Eden.",
+        "translationVi": "Chúa Giê-su sáng tạo điều chỉnh hình ảnh này từ vườn địa đàng."
     },
     {
-        "text": "Menschen können nicht nur Gottes Leben annehmen oder ablehnen,",
-        "start": 93.4800018310547,
-        "end": 96.43999938964843,
+        "text": "Menschen können nicht nur Gottes Leben annehmen oder ablehnen, indem sie diese Früchte essen.",
+        "start": 93.58000183105469,
+        "end": 97.44000244140625,
         "wordTimings": [
             {
                 "word": "Menschen",
-                "start": 93.4800018310547,
+                "start": 93.58000183105469,
                 "end": 93.58000183105469
             },
             {
@@ -1961,20 +1790,11 @@
             {
                 "word": "ablehnen,",
                 "start": 95.72000122070312,
-                "end": 96.43999938964843
-            }
-        ],
-        "translationEn": "People can not only accept or reject God's life,",
-        "translationVi": "Con người không chỉ có thể chấp nhận hoặc từ chối cuộc sống của Chúa,"
-    },
-    {
-        "text": "indem sie diese Früchte essen.",
-        "start": 96.17999877929688,
-        "end": 97.74000244140625,
-        "wordTimings": [
+                "end": 96.13999938964844
+            },
             {
                 "word": "indem",
-                "start": 96.17999877929688,
+                "start": 96.27999877929688,
                 "end": 96.44000244140625
             },
             {
@@ -1995,20 +1815,20 @@
             {
                 "word": "essen.",
                 "start": 97.16000366210938,
-                "end": 97.74000244140625
+                "end": 97.44000244140625
             }
         ],
-        "translationEn": "by eating these fruits.",
-        "translationVi": "bằng cách ăn những trái cây này."
+        "translationEn": "People can accept or reject God's life not only by eating these fruits.",
+        "translationVi": "Con người không chỉ có thể chấp nhận hoặc từ chối cuộc sống của Chúa bằng cách ăn những trái cây này."
     },
     {
         "text": "Sie können selbst für andere zu diesen Bäumen werden.",
-        "start": 97.62000122070313,
-        "end": 100.35999755859375,
+        "start": 97.72000122070312,
+        "end": 100.05999755859375,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 97.62000122070313,
+                "start": 97.72000122070312,
                 "end": 97.81999969482422
             },
             {
@@ -2049,20 +1869,20 @@
             {
                 "word": "werden.",
                 "start": 99.77999877929688,
-                "end": 100.35999755859375
+                "end": 100.05999755859375
             }
         ],
         "translationEn": "You can become these trees for others yourself.",
         "translationVi": "Bạn cũng có thể trở thành những cây này cho người khác."
     },
     {
-        "text": "Wenn das, was jemandes Leben hervorbringt,",
-        "start": 100.30000152587891,
-        "end": 102.71999816894531,
+        "text": "Wenn das, was jemandes Leben hervorbringt, für andere nach Angst, Arroganz, Selbstgefälligkeit oder Verachtung aussieht und schmeckt,",
+        "start": 100.4000015258789,
+        "end": 106.87999725341797,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 100.30000152587891,
+                "start": 100.4000015258789,
                 "end": 100.4800033569336
             },
             {
@@ -2088,20 +1908,11 @@
             {
                 "word": "hervorbringt,",
                 "start": 101.80000305175781,
-                "end": 102.71999816894531
-            }
-        ],
-        "translationEn": "When what someone's life produces,",
-        "translationVi": "Nếu điều gì đó tạo ra cuộc sống của một người,"
-    },
-    {
-        "text": "für andere nach Angst, Arroganz, Selbstgefälligkeit",
-        "start": 102.5999969482422,
-        "end": 105.3199966430664,
-        "wordTimings": [
+                "end": 102.41999816894531
+            },
             {
                 "word": "für",
-                "start": 102.5999969482422,
+                "start": 102.69999694824219,
                 "end": 102.81999969482422
             },
             {
@@ -2127,20 +1938,11 @@
             {
                 "word": "Selbstgefälligkeit",
                 "start": 104.26000213623047,
-                "end": 105.3199966430664
-            }
-        ],
-        "translationEn": "for others after fear, arrogance, self-satisfaction",
-        "translationVi": "cho người khác sau nỗi sợ hãi, kiêu ngạo, sự tự mãn"
-    },
-    {
-        "text": "oder Verachtung aussieht und schmeckt,",
-        "start": 104.91999664306641,
-        "end": 107.17999725341797,
-        "wordTimings": [
+                "end": 105.0199966430664
+            },
             {
                 "word": "oder",
-                "start": 104.91999664306641,
+                "start": 105.0199966430664,
                 "end": 105.23999786376953
             },
             {
@@ -2161,20 +1963,20 @@
             {
                 "word": "schmeckt,",
                 "start": 106.5199966430664,
-                "end": 107.17999725341797
+                "end": 106.87999725341797
             }
         ],
-        "translationEn": "or looks and tastes like contempt,",
-        "translationVi": "hoặc trông và có vị như sự khinh miệt,"
+        "translationEn": "if what someone's life produces looks and tastes like fear, arrogance, complacency, or contempt to others,",
+        "translationVi": "Nếu những gì mà cuộc sống của một người tạo ra trông và có vị như sự sợ hãi, kiêu ngạo, tự mãn hoặc khinh miệt đối với người khác,"
     },
     {
-        "text": "dann sollte man sich nicht darauf verlassen,",
-        "start": 106.94000091552735,
-        "end": 108.88000183105468,
+        "text": "dann sollte man sich nicht darauf verlassen, dass diese Person für Gott spricht.",
+        "start": 107.04000091552734,
+        "end": 110.05999755859375,
         "wordTimings": [
             {
                 "word": "dann",
-                "start": 106.94000091552735,
+                "start": 107.04000091552734,
                 "end": 107.31999969482422
             },
             {
@@ -2205,20 +2007,11 @@
             {
                 "word": "verlassen,",
                 "start": 108.23999786376953,
-                "end": 108.88000183105468
-            }
-        ],
-        "translationEn": "then one should not rely on it,",
-        "translationVi": "thì không nên dựa vào điều đó,"
-    },
-    {
-        "text": "dass diese Person für Gott spricht.",
-        "start": 108.62000122070313,
-        "end": 110.35999755859375,
-        "wordTimings": [
+                "end": 108.58000183105469
+            },
             {
                 "word": "dass",
-                "start": 108.62000122070313,
+                "start": 108.72000122070312,
                 "end": 108.76000213623047
             },
             {
@@ -2244,20 +2037,20 @@
             {
                 "word": "spricht.",
                 "start": 109.72000122070312,
-                "end": 110.35999755859375
+                "end": 110.05999755859375
             }
         ],
-        "translationEn": "that this person speaks for God.",
-        "translationVi": "rằng người này nói thay cho Chúa."
+        "translationEn": "Then one should not rely on the fact that this person speaks for God.",
+        "translationVi": "thì không nên dựa vào việc người này nói thay cho Chúa."
     },
     {
         "text": "Egal wie gut er oder sie in der Öffentlichkeit dasteht.",
-        "start": 109.95999755859376,
-        "end": 113.48000030517578,
+        "start": 110.05999755859375,
+        "end": 113.18000030517578,
         "wordTimings": [
             {
                 "word": "Egal",
-                "start": 109.95999755859376,
+                "start": 110.05999755859375,
                 "end": 110.76000213623047
             },
             {
@@ -2303,20 +2096,20 @@
             {
                 "word": "dasteht.",
                 "start": 112.62000274658203,
-                "end": 113.48000030517578
+                "end": 113.18000030517578
             }
         ],
         "translationEn": "No matter how good he or she appears in public.",
         "translationVi": "Dù cho họ có đứng ở vị trí nào trong công chúng."
     },
     {
-        "text": "Menschen, die durch Gottes Weisheit verändert werden,",
-        "start": 113.77999725341797,
-        "end": 116.52000122070312,
+        "text": "Menschen, die durch Gottes Weisheit verändert werden, sind wie gute Bäume.",
+        "start": 113.87999725341797,
+        "end": 117.26000213623047,
         "wordTimings": [
             {
                 "word": "Menschen,",
-                "start": 113.77999725341797,
+                "start": 113.87999725341797,
                 "end": 114.0199966430664
             },
             {
@@ -2347,20 +2140,11 @@
             {
                 "word": "werden,",
                 "start": 115.91999816894531,
-                "end": 116.52000122070312
-            }
-        ],
-        "translationEn": "People who are changed by God's wisdom,",
-        "translationVi": "Những người được thay đổi bởi sự khôn ngoan của Chúa."
-    },
-    {
-        "text": "sind wie gute Bäume,",
-        "start": 116.31999816894532,
-        "end": 117.56000213623047,
-        "wordTimings": [
+                "end": 116.22000122070312
+            },
             {
                 "word": "sind",
-                "start": 116.31999816894532,
+                "start": 116.41999816894531,
                 "end": 116.41999816894531
             },
             {
@@ -2374,22 +2158,22 @@
                 "end": 117
             },
             {
-                "word": "Bäume,",
+                "word": "Bäume.",
                 "start": 117,
-                "end": 117.56000213623047
+                "end": 117.26000213623047
             }
         ],
-        "translationEn": "are like good trees,",
-        "translationVi": "như những cây tốt,"
+        "translationEn": "People who are changed by God's wisdom are like good trees.",
+        "translationVi": "Những người được thay đổi bởi sự khôn ngoan của Chúa giống như những cây tốt."
     },
     {
-        "text": "deren Früchte nach Geduld, Freude, Frieden,",
-        "start": 117.53999938964844,
-        "end": 120.07999877929687,
+        "text": "Deren Früchte nach Geduld, Freude, Frieden, Selbstbeherrschung und Liebe aussehen und schmecken.",
+        "start": 117.63999938964844,
+        "end": 122.27999877929688,
         "wordTimings": [
             {
-                "word": "deren",
-                "start": 117.53999938964844,
+                "word": "Deren",
+                "start": 117.63999938964844,
                 "end": 117.68000030517578
             },
             {
@@ -2415,20 +2199,11 @@
             {
                 "word": "Frieden,",
                 "start": 119.55999755859375,
-                "end": 120.07999877929687
-            }
-        ],
-        "translationEn": "whose fruits are patience, joy, peace,",
-        "translationVi": "của chúng mang lại sự kiên nhẫn, niềm vui, hòa bình,"
-    },
-    {
-        "text": "Selbstbeherrschung und Liebe aussehen und schmecken.",
-        "start": 119.8800033569336,
-        "end": 122.57999877929687,
-        "wordTimings": [
+                "end": 119.77999877929688
+            },
             {
                 "word": "Selbstbeherrschung",
-                "start": 119.8800033569336,
+                "start": 119.9800033569336,
                 "end": 120.68000030517578
             },
             {
@@ -2454,20 +2229,20 @@
             {
                 "word": "schmecken.",
                 "start": 121.94000244140625,
-                "end": 122.57999877929687
+                "end": 122.27999877929688
             }
         ],
-        "translationEn": "Self-control and love look and taste.",
-        "translationVi": "Sự tự chủ và tình yêu trông như thế nào và có vị ra sao."
+        "translationEn": "Whose fruits look and taste like patience, joy, peace, self-control, and love.",
+        "translationVi": "Những trái của chúng trông và có vị như kiên nhẫn, niềm vui, hòa bình, tự chủ và tình yêu."
     },
     {
-        "text": "Jesus sagt, wenn jemand behauptet, für Gott zu sprechen,",
-        "start": 122.9,
-        "end": 125.98000030517578,
+        "text": "Jesus sagt, wenn jemand behauptet, für Gott zu sprechen, dann schau dir die Beziehungen dieser Person an.",
+        "start": 123,
+        "end": 128.36000061035156,
         "wordTimings": [
             {
                 "word": "Jesus",
-                "start": 122.9,
+                "start": 123,
                 "end": 123.27999877929688
             },
             {
@@ -2508,20 +2283,11 @@
             {
                 "word": "sprechen,",
                 "start": 125.4800033569336,
-                "end": 125.98000030517578
-            }
-        ],
-        "translationEn": "Jesus says that if someone claims to speak for God,",
-        "translationVi": "Chúa Giê-su nói, nếu ai đó tuyên bố nói thay cho Chúa,"
-    },
-    {
-        "text": "dann schau dir die Beziehungen dieser Person an.",
-        "start": 125.9800018310547,
-        "end": 128.66000061035157,
-        "wordTimings": [
+                "end": 125.68000030517578
+            },
             {
                 "word": "dann",
-                "start": 125.9800018310547,
+                "start": 126.08000183105469,
                 "end": 126.4000015258789
             },
             {
@@ -2557,20 +2323,20 @@
             {
                 "word": "an.",
                 "start": 128.16000366210938,
-                "end": 128.66000061035157
+                "end": 128.36000061035156
             }
         ],
-        "translationEn": "Then take a look at this person's relationships.",
-        "translationVi": "sau đó hãy xem xét mối quan hệ của người này."
+        "translationEn": "Jesus says, if someone claims to speak for God, then look at that person's relationships.",
+        "translationVi": "Chúa Giê-su nói, nếu ai đó tuyên bố nói thay cho Chúa, thì hãy xem mối quan hệ của người đó."
     },
     {
         "text": "Die Frucht ihres Lebens.",
-        "start": 128.53999938964844,
-        "end": 130.10000305175782,
+        "start": 128.63999938964844,
+        "end": 129.8000030517578,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 128.53999938964844,
+                "start": 128.63999938964844,
                 "end": 128.82000732421875
             },
             {
@@ -2586,20 +2352,20 @@
             {
                 "word": "Lebens.",
                 "start": 129.4199981689453,
-                "end": 130.10000305175782
+                "end": 129.8000030517578
             }
         ],
-        "translationEn": "The fruit of their lives.",
+        "translationEn": "The fruit of their life.",
         "translationVi": "Trái cây của cuộc đời họ."
     },
     {
         "text": "Und du wirst alles erfahren, was du wissen musst.",
-        "start": 130.15999450683594,
-        "end": 132.97999267578126,
+        "start": 130.25999450683594,
+        "end": 132.67999267578125,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 130.15999450683594,
+                "start": 130.25999450683594,
                 "end": 130.44000244140625
             },
             {
@@ -2640,20 +2406,20 @@
             {
                 "word": "musst.",
                 "start": 132.3800048828125,
-                "end": 132.97999267578126
+                "end": 132.67999267578125
             }
         ],
         "translationEn": "And you will learn everything you need to know.",
         "translationVi": "Và bạn sẽ biết mọi thứ bạn cần biết."
     },
     {
-        "text": "Vertraue und glaube, es hilft, es heilt,",
-        "start": 159.23999633789063,
-        "end": 161.04000549316407,
+        "text": "Vertraue und glaube, es hilft, es heilt, die göttliche Kraft.",
+        "start": 159.33999633789062,
+        "end": 160.74000549316406,
         "wordTimings": [
             {
                 "word": "Vertraue",
-                "start": 159.23999633789063,
+                "start": 159.33999633789062,
                 "end": 160.74000549316406
             },
             {
@@ -2684,20 +2450,11 @@
             {
                 "word": "heilt,",
                 "start": 160.74000549316406,
-                "end": 161.04000549316407
-            }
-        ],
-        "translationEn": "Trust and believe, it helps, it heals,",
-        "translationVi": "Hãy tin tưởng và tin rằng, điều đó sẽ giúp, điều đó sẽ chữa lành,"
-    },
-    {
-        "text": "die göttliche Kraft.",
-        "start": 160.64000549316407,
-        "end": 161.04000549316407,
-        "wordTimings": [
+                "end": 160.74000549316406
+            },
             {
                 "word": "die",
-                "start": 160.64000549316407,
+                "start": 160.74000549316406,
                 "end": 160.74000549316406
             },
             {
@@ -2708,10 +2465,10 @@
             {
                 "word": "Kraft.",
                 "start": 160.74000549316406,
-                "end": 161.04000549316407
+                "end": 160.74000549316406
             }
         ],
-        "translationEn": "the divine power.",
-        "translationVi": "sức mạnh thần thánh."
+        "translationEn": "Trust and believe, it helps, it heals, the divine power.",
+        "translationVi": "Hãy tin tưởng và tin rằng, điều đó giúp ích, điều đó chữa lành, sức mạnh thiêng liêng."
     }
 ]

@@ -42,7 +42,7 @@ function AdminLessonsPage() {
       setLoading(true);
       const token = localStorage.getItem('token');
       const res = await fetch(`/api/lessons?t=${Date.now()}`, {
-        headers: { 
+        headers: {
           'Cache-Control': 'no-cache',
           'Authorization': `Bearer ${token}`
         }
@@ -68,7 +68,7 @@ function AdminLessonsPage() {
       const res = await fetch('/api/article-categories?activeOnly=false', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
-      
+
       if (res.ok) {
         const data = await res.json();
         setCategories(data.categories || []);
@@ -98,13 +98,13 @@ function AdminLessonsPage() {
 
       if (!res.ok) throw new Error('Lektion konnte nicht gelöscht werden');
       toast.success('Erfolgreich gelöscht!');
-      
+
       // Invalidate all SWR cache for lessons
       invalidateLessonsCache();
-      
+
       // Broadcast update to all open tabs
       broadcastLessonUpdate();
-      
+
       fetchLessons();
     } catch (error) {
       toast.error('Fehler: ' + error.message);
@@ -113,10 +113,10 @@ function AdminLessonsPage() {
 
   const handleToggleFreeLesson = async (lesson) => {
     const newValue = !lesson.isFreeLesson;
-    const confirmMsg = newValue 
-      ? `Đặt "${lesson.title}" làm bài FREE? (Bài Free cũ sẽ bị bỏ)` 
+    const confirmMsg = newValue
+      ? `Đặt "${lesson.title}" làm bài FREE? (Bài Free cũ sẽ bị bỏ)`
       : `Bỏ bài FREE cho "${lesson.title}"?`;
-    
+
     if (!confirm(confirmMsg)) return;
 
     try {
@@ -136,7 +136,7 @@ function AdminLessonsPage() {
       }
 
       toast.success(newValue ? 'Đã đặt làm bài FREE!' : 'Đã bỏ bài FREE!');
-      
+
       // Invalidate cache and refetch
       invalidateLessonsCache();
       broadcastLessonUpdate();
@@ -189,13 +189,13 @@ function AdminLessonsPage() {
 
       if (!res.ok) throw new Error('Lektionen konnten nicht gelöscht werden');
       toast.success(`${selectedLessons.size} Lektion(en) erfolgreich gelöscht!`);
-      
+
       // Invalidate all SWR cache for lessons
       invalidateLessonsCache();
-      
+
       // Broadcast update to all open tabs
       broadcastLessonUpdate();
-      
+
       setSelectedLessons(new Set());
       fetchLessons();
     } catch (error) {
@@ -229,7 +229,7 @@ function AdminLessonsPage() {
 
     // Apply level filter
     if (filters.levels.length > 0) {
-      result = result.filter(lesson => 
+      result = result.filter(lesson =>
         filters.levels.includes(lesson.level)
       );
     }
@@ -244,7 +244,7 @@ function AdminLessonsPage() {
 
     // Apply source filter
     if (filters.sources.length > 0) {
-      result = result.filter(lesson => 
+      result = result.filter(lesson =>
         filters.sources.includes(getLessonSource(lesson))
       );
     }
@@ -279,6 +279,16 @@ function AdminLessonsPage() {
           return bIndex - aIndex;
         });
         break;
+      case 'category':
+        // Sắp xếp theo tên category (alphabetically), sau đó theo title
+        result.sort((a, b) => {
+          const aCatName = a.category?.name || '';
+          const bCatName = b.category?.name || '';
+          const catCompare = aCatName.localeCompare(bCatName);
+          if (catCompare !== 0) return catCompare;
+          return (a.title || '').localeCompare(b.title || '');
+        });
+        break;
       default:
         result.sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
     }
@@ -302,31 +312,31 @@ function AdminLessonsPage() {
         <title>Lektionen verwalten - Admin Dashboard</title>
       </Head>
 
-       <AdminDashboardLayout>
-         {/* Breadcrumb Header */}
-         <div className={styles.breadcrumbHeader}>
-           <nav className={styles.breadcrumb}>
-             <Link href="/admin/dashboard" className={styles.breadcrumbLink}>Admin</Link>
-             <span className={styles.breadcrumbSeparator}>›</span>
-             <span className={styles.breadcrumbCurrent}>Dashboard</span>
-           </nav>
-         </div>
+      <AdminDashboardLayout>
+        {/* Breadcrumb Header */}
+        <div className={styles.breadcrumbHeader}>
+          <nav className={styles.breadcrumb}>
+            <Link href="/admin/dashboard" className={styles.breadcrumbLink}>Admin</Link>
+            <span className={styles.breadcrumbSeparator}>›</span>
+            <span className={styles.breadcrumbCurrent}>Dashboard</span>
+          </nav>
+        </div>
 
-         <div className={styles.pageHeader}>
-           <div>
-             <h1 className={styles.pageTitle}>📚 Lektionen verwalten</h1>
-           </div>
-           <button
-             onClick={() => router.push('/admin/dashboard/lesson/new')}
-             className={styles.primaryButton}
-           >
-             + Neu
-           </button>
-         </div>
+        <div className={styles.pageHeader}>
+          <div>
+            <h1 className={styles.pageTitle}>📚 Lektionen verwalten</h1>
+          </div>
+          <button
+            onClick={() => router.push('/admin/dashboard/lesson/new')}
+            className={styles.primaryButton}
+          >
+            + Neu
+          </button>
+        </div>
 
         {/* Quick Links */}
         <div style={{ marginBottom: '20px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-          <Link 
+          <Link
             href="/admin/dashboard/article-categories"
             style={{
               padding: '8px 16px',
@@ -343,7 +353,7 @@ function AdminLessonsPage() {
           >
             🏷️ Quản lý danh mục bài viết
           </Link>
-          <Link 
+          <Link
             href="/admin/dashboard/pages"
             style={{
               padding: '8px 16px',
@@ -360,7 +370,7 @@ function AdminLessonsPage() {
           >
             📄 Quản lý trang
           </Link>
-          <Link 
+          <Link
             href="/admin/dashboard/files"
             style={{
               padding: '8px 16px',
@@ -377,7 +387,7 @@ function AdminLessonsPage() {
           >
             📁 File Manager
           </Link>
-          <Link 
+          <Link
             href="/admin/settings"
             style={{
               padding: '8px 16px',
@@ -451,6 +461,7 @@ function AdminLessonsPage() {
                     </th>
                     <th>Tiêu đề</th>
                     <th>Niveau</th>
+                    <th>KP</th>
                     <th>FREE</th>
                     <th>Aktionen</th>
                   </tr>
@@ -467,6 +478,23 @@ function AdminLessonsPage() {
                       </td>
                       <td className={styles.lessonTitle}>{lesson.title}</td>
                       <td><span className={styles.levelBadge}>{lesson.level || 'A1'}</span></td>
+                      <td>
+                        {lesson.karaokePro && (
+                          <span
+                            title="Karaoke Pro"
+                            style={{
+                              background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+                              color: 'white',
+                              padding: '2px 6px',
+                              borderRadius: '4px',
+                              fontSize: '10px',
+                              fontWeight: 'bold'
+                            }}
+                          >
+                            ⭐ PRO
+                          </span>
+                        )}
+                      </td>
                       <td>
                         <button
                           onClick={() => handleToggleFreeLesson(lesson)}

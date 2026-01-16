@@ -22,6 +22,7 @@ function LessonFormPage() {
   const [fetchingWhisperSRT, setFetchingWhisperSRT] = useState(false);
   const [fetchingWhisperV2, setFetchingWhisperV2] = useState(false);
   const [fetchingWhisperV3, setFetchingWhisperV3] = useState(false);
+  const [fetchingWhisperV5, setFetchingWhisperV5] = useState(false);
 
   const [formData, setFormData] = useState({
     id: '',
@@ -46,6 +47,7 @@ function LessonFormPage() {
   const [thumbnailFile, setThumbnailFile] = useState(null);
   const [thumbnailPreview, setThumbnailPreview] = useState(null);
   const [errors, setErrors] = useState({});
+  const [isKaraokePro, setIsKaraokePro] = useState(false);
 
   const generateIdFromTitle = (title) => {
     return title
@@ -93,7 +95,7 @@ function LessonFormPage() {
           category: lesson.category?._id || lesson.category || '', // T040: Load category
           videoDuration: lesson.videoDuration || 0
         });
-        
+
         // Load JSON and convert to SRT
         if (lesson.json) {
           try {
@@ -111,8 +113,11 @@ function LessonFormPage() {
             console.error('Error loading JSON:', e);
             toast.error('Lỗi khi tải nội dung SRT: ' + e.message);
           }
-        } else {
-          toast.warning('Bài học này chưa có nội dung SRT');
+        }
+
+        // Load youtubeUrl nếu có
+        if (lesson.youtubeUrl) {
+          setYoutubeUrl(lesson.youtubeUrl);
         }
       } else {
         toast.error('Lektion nicht gefunden');
@@ -141,7 +146,7 @@ function LessonFormPage() {
         const res = await fetch('/api/article-categories?activeOnly=false', {
           headers: { 'Authorization': `Bearer ${token}` }
         });
-        
+
         if (res.ok) {
           const data = await res.json();
           setCategories(data.categories || []);
@@ -152,7 +157,7 @@ function LessonFormPage() {
         setLoadingCategories(false);
       }
     };
-    
+
     fetchCategories();
   }, []);
 
@@ -257,8 +262,8 @@ function LessonFormPage() {
       }
       if (data.videoTitle) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -304,8 +309,8 @@ function LessonFormPage() {
       }
       if (data.videoTitle) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -351,8 +356,8 @@ function LessonFormPage() {
       }
       if (data.videoTitle) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -398,8 +403,8 @@ function LessonFormPage() {
       }
       if (data.videoTitle) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -446,8 +451,8 @@ function LessonFormPage() {
       }
       if (data.videoTitle) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -459,6 +464,45 @@ function LessonFormPage() {
       toast.error('Fehler: ' + error.message);
     } finally {
       setFetchingWhisperV3(false);
+    }
+  };
+
+  const handleGetWhisperV5 = async () => {
+    if (!youtubeUrl.trim()) {
+      toast.error('Vui lòng nhập YouTube URL');
+      return;
+    }
+
+    setFetchingWhisperV5(true);
+    try {
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/whisper-youtube-srt-v5', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ youtubeUrl: youtubeUrl.trim() })
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.message || 'Failed to get Whisper v5 SRT');
+      }
+
+      const data = await res.json();
+      setSrtText(data.srt);
+      setWhisperV3Segments(data.segments || null);
+      setIsKaraokePro(true); // Mark as Karaoke Pro
+      if (data.videoDuration) {
+        setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
+      }
+      toast.success(`✅ ${data.message || 'Karaoke Pro đã được tạo!'}`);
+    } catch (error) {
+      console.error('Whisper v5 error:', error);
+      toast.error('❌ Lỗi: ' + error.message);
+    } finally {
+      setFetchingWhisperV5(false);
     }
   };
 
@@ -552,8 +596,8 @@ function LessonFormPage() {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           },
-          body: JSON.stringify({ 
-            srtText, 
+          body: JSON.stringify({
+            srtText,
             lessonId: formData.id,
             segments: whisperV3Segments // Segments với wordTimings từ Whisper V3
           })
@@ -592,8 +636,8 @@ function LessonFormPage() {
               'Content-Type': 'application/json',
               'Authorization': `Bearer ${localStorage.getItem('token')}`
             },
-            body: JSON.stringify({ 
-              srtText, 
+            body: JSON.stringify({
+              srtText,
               lessonId: formData.id,
               segments: whisperV3Segments // Segments với wordTimings từ Whisper V3
             })
@@ -603,13 +647,14 @@ function LessonFormPage() {
             throw new Error(`Convert SRT failed: ${errorData.message || srtRes.statusText}`);
           }
         }
-        
+
         lessonData = {
           title: formData.title,
           description: formData.description,
           level: formData.level,
           category: formData.category || undefined,
-          videoDuration: formData.videoDuration || undefined
+          videoDuration: formData.videoDuration || undefined,
+          karaokePro: isKaraokePro || undefined
         };
       }
 
@@ -654,7 +699,7 @@ function LessonFormPage() {
             </div>
           </div>
 
-          <CompactLessonForm 
+          <CompactLessonForm
             categories={categories}
             loadingCategories={loadingCategories}
           />
@@ -818,6 +863,17 @@ function LessonFormPage() {
                     <>
                       <button
                         type="button"
+                        onClick={handleGetWhisperV5}
+                        disabled={fetchingWhisperV5 || !youtubeUrl.trim()}
+                        className={styles.actionButton}
+                        style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', fontWeight: 'bold' }}
+                        title="GPT smart segmentation + Whisper timing (đề xuất)"
+                      >
+                        {fetchingWhisperV5 ? '⏳ Đang tạo...' : '⭐ Karaoke Pro'}
+                      </button>
+
+                      <button
+                        type="button"
                         onClick={handleGetWhisperSRT}
                         disabled={fetchingWhisperSRT || !youtubeUrl.trim()}
                         className={styles.actionButton}
@@ -897,6 +953,54 @@ function LessonFormPage() {
                 {errors.srt && <span className={styles.errorText}>{errors.srt}</span>}
               </div>
             </>
+          )}
+
+          {/* Regenerate SRT for existing lessons */}
+          {!isNewLesson && (
+            <div className={styles.formSectionCompact} style={{ background: '#fef3c7', padding: '16px', borderRadius: '8px', border: '1px solid #f59e0b' }}>
+              <h3 style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#92400e' }}>⭐ Tạo lại SRT với Karaoke Pro</h3>
+
+              <div className={styles.formGroup} style={{ marginBottom: '12px' }}>
+                <label className={styles.label}>YouTube URL</label>
+                <input
+                  type="url"
+                  value={youtubeUrl}
+                  onChange={(e) => setYoutubeUrl(e.target.value)}
+                  placeholder="https://www.youtube.com/watch?v=..."
+                  className={styles.input}
+                />
+                {youtubeUrl && (
+                  <a
+                    href={youtubeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ fontSize: '12px', color: '#ea580c', display: 'block', marginTop: '4px' }}
+                  >
+                    🔗 Mở video trên YouTube
+                  </a>
+                )}
+              </div>
+
+              <button
+                type="button"
+                onClick={handleGetWhisperV5}
+                disabled={fetchingWhisperV5 || !youtubeUrl.trim()}
+                className={styles.actionButton}
+                style={{
+                  background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+                  fontWeight: 'bold',
+                  color: 'white',
+                  padding: '10px 20px',
+                  border: 'none',
+                  borderRadius: '6px',
+                  cursor: youtubeUrl.trim() ? 'pointer' : 'not-allowed',
+                  opacity: (!youtubeUrl.trim() || fetchingWhisperV5) ? 0.6 : 1
+                }}
+                title="GPT smart segmentation + Whisper timing"
+              >
+                {fetchingWhisperV5 ? '⏳ Đang tạo...' : '⭐ Tạo lại SRT với Karaoke Pro'}
+              </button>
+            </div>
           )}
 
           {/* Basic Information */}
