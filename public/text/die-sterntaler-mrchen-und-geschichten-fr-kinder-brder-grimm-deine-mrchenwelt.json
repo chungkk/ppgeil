@@ -1,0 +1,2193 @@
+[
+    {
+        "text": "2017. Was macht das Mädchen nachts alleine im Wald?",
+        "start": 10.420000076293945,
+        "end": 17.68000030517578,
+        "wordTimings": [
+            {
+                "word": "2017.",
+                "start": 10.420000076293945,
+                "end": 10.479999542236328
+            },
+            {
+                "word": "Was",
+                "start": 14.220000267028809,
+                "end": 15.0600004196167
+            },
+            {
+                "word": "macht",
+                "start": 15.0600004196167,
+                "end": 15.319999694824219
+            },
+            {
+                "word": "das",
+                "start": 15.319999694824219,
+                "end": 15.680000305175781
+            },
+            {
+                "word": "Mädchen",
+                "start": 15.680000305175781,
+                "end": 16.139999389648438
+            },
+            {
+                "word": "nachts",
+                "start": 16.139999389648438,
+                "end": 16.559999465942383
+            },
+            {
+                "word": "alleine",
+                "start": 16.559999465942383,
+                "end": 17.100000381469727
+            },
+            {
+                "word": "im",
+                "start": 17.100000381469727,
+                "end": 17.3799991607666
+            },
+            {
+                "word": "Wald?",
+                "start": 17.3799991607666,
+                "end": 17.68000030517578
+            }
+        ],
+        "translationEn": "2017. What is the girl doing alone in the woods at night?",
+        "translationVi": "Năm 2017. Cô gái làm gì một mình vào ban đêm trong rừng?"
+    },
+    {
+        "text": "Und wieso fallen die Sterne vom Himmel herab?",
+        "start": 20.920000076293945,
+        "end": 24.100000381469727,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 20.920000076293945,
+                "end": 21.760000228881836
+            },
+            {
+                "word": "wieso",
+                "start": 21.760000228881836,
+                "end": 22.18000030517578
+            },
+            {
+                "word": "fallen",
+                "start": 22.18000030517578,
+                "end": 22.520000457763672
+            },
+            {
+                "word": "die",
+                "start": 22.520000457763672,
+                "end": 23.100000381469727
+            },
+            {
+                "word": "Sterne",
+                "start": 23.100000381469727,
+                "end": 23.200000762939453
+            },
+            {
+                "word": "vom",
+                "start": 23.200000762939453,
+                "end": 23.479999542236328
+            },
+            {
+                "word": "Himmel",
+                "start": 23.479999542236328,
+                "end": 23.700000762939453
+            },
+            {
+                "word": "herab?",
+                "start": 23.700000762939453,
+                "end": 24.100000381469727
+            }
+        ],
+        "translationEn": "And why do the stars fall from the sky?",
+        "translationVi": "Và tại sao các vì sao lại rơi xuống từ bầu trời?"
+    },
+    {
+        "text": "Du bist neugierig? Dann schau genau zu.",
+        "start": 25.34000015258789,
+        "end": 30.200000762939453,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 25.34000015258789,
+                "end": 26.079999923706055
+            },
+            {
+                "word": "bist",
+                "start": 26.079999923706055,
+                "end": 26.3799991607666
+            },
+            {
+                "word": "neugierig?",
+                "start": 26.3799991607666,
+                "end": 27.31999969482422
+            },
+            {
+                "word": "Dann",
+                "start": 28.1200008392334,
+                "end": 28.559999465942383
+            },
+            {
+                "word": "schau",
+                "start": 28.559999465942383,
+                "end": 28.979999542236328
+            },
+            {
+                "word": "genau",
+                "start": 28.979999542236328,
+                "end": 29.600000381469727
+            },
+            {
+                "word": "zu.",
+                "start": 29.600000381469727,
+                "end": 30.200000762939453
+            }
+        ],
+        "translationEn": "Are you curious? Then pay close attention.",
+        "translationVi": "Bạn tò mò à? Vậy thì hãy nhìn kỹ."
+    },
+    {
+        "text": "Es war einmal ein kleines Mädchen,",
+        "start": 33.459999084472656,
+        "end": 35.91999816894531,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 33.459999084472656,
+                "end": 34.13999938964844
+            },
+            {
+                "word": "war",
+                "start": 34.13999938964844,
+                "end": 34.36000061035156
+            },
+            {
+                "word": "einmal",
+                "start": 34.36000061035156,
+                "end": 34.70000076293945
+            },
+            {
+                "word": "ein",
+                "start": 34.70000076293945,
+                "end": 34.86000061035156
+            },
+            {
+                "word": "kleines",
+                "start": 34.86000061035156,
+                "end": 35.439998626708984
+            },
+            {
+                "word": "Mädchen,",
+                "start": 35.439998626708984,
+                "end": 35.91999816894531
+            }
+        ],
+        "translationEn": "Once upon a time, there was a little girl,",
+        "translationVi": "Ngày xưa có một cô bé nhỏ,"
+    },
+    {
+        "text": "Das ganz allein war, weil sein Vater und seine Mutter gestorben waren.",
+        "start": 36.439998626708984,
+        "end": 40.81999969482422,
+        "wordTimings": [
+            {
+                "word": "das",
+                "start": 36.439998626708984,
+                "end": 36.540000915527344
+            },
+            {
+                "word": "ganz",
+                "start": 36.540000915527344,
+                "end": 37
+            },
+            {
+                "word": "allein",
+                "start": 37,
+                "end": 37.29999923706055
+            },
+            {
+                "word": "war,",
+                "start": 37.29999923706055,
+                "end": 37.63999938964844
+            },
+            {
+                "word": "weil",
+                "start": 38.13999938964844,
+                "end": 38.220001220703125
+            },
+            {
+                "word": "sein",
+                "start": 38.220001220703125,
+                "end": 38.540000915527344
+            },
+            {
+                "word": "Vater",
+                "start": 38.540000915527344,
+                "end": 38.880001068115234
+            },
+            {
+                "word": "und",
+                "start": 38.880001068115234,
+                "end": 39.279998779296875
+            },
+            {
+                "word": "seine",
+                "start": 39.279998779296875,
+                "end": 39.86000061035156
+            },
+            {
+                "word": "Mutter",
+                "start": 39.86000061035156,
+                "end": 39.86000061035156
+            },
+            {
+                "word": "gestorben",
+                "start": 39.86000061035156,
+                "end": 40.439998626708984
+            },
+            {
+                "word": "waren.",
+                "start": 40.439998626708984,
+                "end": 40.81999969482422
+            }
+        ],
+        "translationEn": "That was entirely because his father and mother had died.",
+        "translationVi": "Điều đó hoàn toàn là vì cha và mẹ của anh ấy đã qua đời."
+    },
+    {
+        "text": "Das Mädchen war so arm,",
+        "start": 42.459999084472656,
+        "end": 43.97999954223633,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 42.459999084472656,
+                "end": 42.540000915527344
+            },
+            {
+                "word": "Mädchen",
+                "start": 42.540000915527344,
+                "end": 42.900001525878906
+            },
+            {
+                "word": "war",
+                "start": 42.900001525878906,
+                "end": 43.13999938964844
+            },
+            {
+                "word": "so",
+                "start": 43.13999938964844,
+                "end": 43.97999954223633
+            },
+            {
+                "word": "arm,",
+                "start": 43.97999954223633,
+                "end": 43.97999954223633
+            }
+        ],
+        "translationEn": "The girl was so poor,",
+        "translationVi": "Cô gái đó nghèo đến mức,"
+    },
+    {
+        "text": "Dass es kein Kämmerchen hatte, worin es wohnen",
+        "start": 44.52000045776367,
+        "end": 46.91999816894531,
+        "wordTimings": [
+            {
+                "word": "dass",
+                "start": 44.52000045776367,
+                "end": 44.619998931884766
+            },
+            {
+                "word": "es",
+                "start": 44.619998931884766,
+                "end": 44.79999923706055
+            },
+            {
+                "word": "kein",
+                "start": 44.79999923706055,
+                "end": 44.959999084472656
+            },
+            {
+                "word": "Kämmerchen",
+                "start": 44.959999084472656,
+                "end": 45.540000915527344
+            },
+            {
+                "word": "hatte,",
+                "start": 45.540000915527344,
+                "end": 45.91999816894531
+            },
+            {
+                "word": "worin",
+                "start": 46.18000030517578,
+                "end": 46.279998779296875
+            },
+            {
+                "word": "es",
+                "start": 46.279998779296875,
+                "end": 46.7599983215332
+            },
+            {
+                "word": "wohnen",
+                "start": 46.7599983215332,
+                "end": 46.91999816894531
+            }
+        ],
+        "translationEn": "That it had no little room in which to live.",
+        "translationVi": "Rằng nó không có một căn phòng nào để ở."
+    },
+    {
+        "text": "Und auch kein Bettchen, worin es schlafen konnte.",
+        "start": 47.540000915527344,
+        "end": 50.29999923706055,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 47.540000915527344,
+                "end": 47.68000030517578
+            },
+            {
+                "word": "auch",
+                "start": 47.68000030517578,
+                "end": 47.91999816894531
+            },
+            {
+                "word": "kein",
+                "start": 47.91999816894531,
+                "end": 48.20000076293945
+            },
+            {
+                "word": "Bettchen,",
+                "start": 48.20000076293945,
+                "end": 49.099998474121094
+            },
+            {
+                "word": "worin",
+                "start": 49.220001220703125,
+                "end": 49.29999923706055
+            },
+            {
+                "word": "es",
+                "start": 49.29999923706055,
+                "end": 49.599998474121094
+            },
+            {
+                "word": "schlafen",
+                "start": 49.599998474121094,
+                "end": 49.900001525878906
+            },
+            {
+                "word": "konnte.",
+                "start": 49.900001525878906,
+                "end": 50.29999923706055
+            }
+        ],
+        "translationEn": "And also no little bed in which it could sleep.",
+        "translationVi": "Và cũng không có chiếc giường nào để nó có thể ngủ."
+    },
+    {
+        "text": "Es hatte nichts außer den Kleidern, die es anhatte,",
+        "start": 52.81999969482422,
+        "end": 55.91999816894531,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 52.81999969482422,
+                "end": 52.939998626708984
+            },
+            {
+                "word": "hatte",
+                "start": 52.939998626708984,
+                "end": 53.119998931884766
+            },
+            {
+                "word": "nichts",
+                "start": 53.119998931884766,
+                "end": 53.779998779296875
+            },
+            {
+                "word": "außer",
+                "start": 53.779998779296875,
+                "end": 54.15999984741211
+            },
+            {
+                "word": "den",
+                "start": 54.15999984741211,
+                "end": 54.47999954223633
+            },
+            {
+                "word": "Kleidern,",
+                "start": 54.47999954223633,
+                "end": 54.939998626708984
+            },
+            {
+                "word": "die",
+                "start": 55.08000183105469,
+                "end": 55.119998931884766
+            },
+            {
+                "word": "es",
+                "start": 55.119998931884766,
+                "end": 55.29999923706055
+            },
+            {
+                "word": "anhatte,",
+                "start": 55.29999923706055,
+                "end": 55.91999816894531
+            }
+        ],
+        "translationEn": "It had nothing except the clothes it was wearing.",
+        "translationVi": "Nó không có gì ngoài những bộ quần áo mà nó đang mặc."
+    },
+    {
+        "text": "Und ein Stück Brot, das ihm jemand aus Mitleid geschenkt hatte.",
+        "start": 55.91999816894531,
+        "end": 60.08000183105469,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 55.91999816894531,
+                "end": 56.65999984741211
+            },
+            {
+                "word": "ein",
+                "start": 56.65999984741211,
+                "end": 56.84000015258789
+            },
+            {
+                "word": "Stück",
+                "start": 56.84000015258789,
+                "end": 57.099998474121094
+            },
+            {
+                "word": "Brot,",
+                "start": 57.099998474121094,
+                "end": 57.540000915527344
+            },
+            {
+                "word": "das",
+                "start": 57.959999084472656,
+                "end": 58.060001373291016
+            },
+            {
+                "word": "ihm",
+                "start": 58.060001373291016,
+                "end": 58.220001220703125
+            },
+            {
+                "word": "jemand",
+                "start": 58.220001220703125,
+                "end": 58.52000045776367
+            },
+            {
+                "word": "aus",
+                "start": 58.52000045776367,
+                "end": 58.84000015258789
+            },
+            {
+                "word": "Mitleid",
+                "start": 58.84000015258789,
+                "end": 59.34000015258789
+            },
+            {
+                "word": "geschenkt",
+                "start": 59.34000015258789,
+                "end": 59.84000015258789
+            },
+            {
+                "word": "hatte.",
+                "start": 59.84000015258789,
+                "end": 60.08000183105469
+            }
+        ],
+        "translationEn": "And a piece of bread that someone had given him out of pity.",
+        "translationVi": "Và một mảnh bánh mì mà ai đó đã tặng cho anh ta vì lòng thương hại."
+    },
+    {
+        "text": "Doch das Mädchen hatte ein großes Herz und war fromm.",
+        "start": 61.619998931884766,
+        "end": 65.55999755859375,
+        "wordTimings": [
+            {
+                "word": "Doch",
+                "start": 61.619998931884766,
+                "end": 61.7400016784668
+            },
+            {
+                "word": "das",
+                "start": 61.7400016784668,
+                "end": 62
+            },
+            {
+                "word": "Mädchen",
+                "start": 62,
+                "end": 62.52000045776367
+            },
+            {
+                "word": "hatte",
+                "start": 62.52000045776367,
+                "end": 63
+            },
+            {
+                "word": "ein",
+                "start": 63,
+                "end": 63.2400016784668
+            },
+            {
+                "word": "großes",
+                "start": 63.2400016784668,
+                "end": 63.86000061035156
+            },
+            {
+                "word": "Herz",
+                "start": 63.86000061035156,
+                "end": 64.31999969482422
+            },
+            {
+                "word": "und",
+                "start": 64.31999969482422,
+                "end": 64.86000061035156
+            },
+            {
+                "word": "war",
+                "start": 64.86000061035156,
+                "end": 65.0999984741211
+            },
+            {
+                "word": "fromm.",
+                "start": 65.0999984741211,
+                "end": 65.55999755859375
+            }
+        ],
+        "translationEn": "But the girl had a big heart and was pious.",
+        "translationVi": "Nhưng cô gái có một trái tim lớn và rất đạo đức."
+    },
+    {
+        "text": "Und weil es niemanden auf der Welt hatte,",
+        "start": 66.5199966430664,
+        "end": 68.76000213623047,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 66.5199966430664,
+                "end": 66.87999725341797
+            },
+            {
+                "word": "weil",
+                "start": 66.87999725341797,
+                "end": 66.91999816894531
+            },
+            {
+                "word": "es",
+                "start": 66.91999816894531,
+                "end": 67.16000366210938
+            },
+            {
+                "word": "niemanden",
+                "start": 67.16000366210938,
+                "end": 67.83999633789062
+            },
+            {
+                "word": "auf",
+                "start": 67.83999633789062,
+                "end": 67.91999816894531
+            },
+            {
+                "word": "der",
+                "start": 67.91999816894531,
+                "end": 68.22000122070312
+            },
+            {
+                "word": "Welt",
+                "start": 68.22000122070312,
+                "end": 68.31999969482422
+            },
+            {
+                "word": "hatte,",
+                "start": 68.31999969482422,
+                "end": 68.76000213623047
+            }
+        ],
+        "translationEn": "And because it had no one in the world,",
+        "translationVi": "Và vì không có ai trên thế giới,"
+    },
+    {
+        "text": "Vertraute es sich dem lieben Gott an und ging hinaus ins Feld.",
+        "start": 69.5,
+        "end": 73.33999633789062,
+        "wordTimings": [
+            {
+                "word": "vertraute",
+                "start": 69.5,
+                "end": 69.76000213623047
+            },
+            {
+                "word": "es",
+                "start": 69.76000213623047,
+                "end": 69.9800033569336
+            },
+            {
+                "word": "sich",
+                "start": 69.9800033569336,
+                "end": 70.19999694824219
+            },
+            {
+                "word": "dem",
+                "start": 70.19999694824219,
+                "end": 70.4000015258789
+            },
+            {
+                "word": "lieben",
+                "start": 70.4000015258789,
+                "end": 70.72000122070312
+            },
+            {
+                "word": "Gott",
+                "start": 70.72000122070312,
+                "end": 71
+            },
+            {
+                "word": "an",
+                "start": 71,
+                "end": 71.41999816894531
+            },
+            {
+                "word": "und",
+                "start": 71.41999816894531,
+                "end": 71.91999816894531
+            },
+            {
+                "word": "ging",
+                "start": 71.91999816894531,
+                "end": 72.05999755859375
+            },
+            {
+                "word": "hinaus",
+                "start": 72.05999755859375,
+                "end": 72.63999938964844
+            },
+            {
+                "word": "ins",
+                "start": 72.63999938964844,
+                "end": 73
+            },
+            {
+                "word": "Feld.",
+                "start": 73,
+                "end": 73.33999633789062
+            }
+        ],
+        "translationEn": "She entrusted herself to dear God and went out into the field.",
+        "translationVi": "Tin tưởng vào Chúa và đi ra ngoài cánh đồng."
+    },
+    {
+        "text": "Da begegnete dem Mädchen ein armer Mann.",
+        "start": 77.31999969482422,
+        "end": 80,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 77.31999969482422,
+                "end": 77.9800033569336
+            },
+            {
+                "word": "begegnete",
+                "start": 77.9800033569336,
+                "end": 78.58000183105469
+            },
+            {
+                "word": "dem",
+                "start": 78.58000183105469,
+                "end": 78.81999969482422
+            },
+            {
+                "word": "Mädchen",
+                "start": 78.81999969482422,
+                "end": 79.18000030517578
+            },
+            {
+                "word": "ein",
+                "start": 79.18000030517578,
+                "end": 79.41999816894531
+            },
+            {
+                "word": "armer",
+                "start": 79.41999816894531,
+                "end": 79.72000122070312
+            },
+            {
+                "word": "Mann.",
+                "start": 79.72000122070312,
+                "end": 80
+            }
+        ],
+        "translationEn": "There, the girl met a poor man.",
+        "translationVi": "Lúc đó, cô gái gặp một người đàn ông nghèo."
+    },
+    {
+        "text": "Er sagte: \"Bitte gib mir etwas zu essen,",
+        "start": 80.38999938964844,
+        "end": 83.9800033569336,
+        "wordTimings": [
+            {
+                "word": "Er",
+                "start": 80.38999938964844,
+                "end": 80.76000213623047
+            },
+            {
+                "word": "sagte:",
+                "start": 80.76000213623047,
+                "end": 81.18000030517578
+            },
+            {
+                "word": "\"Bitte",
+                "start": 81.9800033569336,
+                "end": 82.37999725341797
+            },
+            {
+                "word": "gib",
+                "start": 82.37999725341797,
+                "end": 82.91999816894531
+            },
+            {
+                "word": "mir",
+                "start": 82.91999816894531,
+                "end": 83.12000274658203
+            },
+            {
+                "word": "etwas",
+                "start": 83.12000274658203,
+                "end": 83.41999816894531
+            },
+            {
+                "word": "zu",
+                "start": 83.41999816894531,
+                "end": 83.9800033569336
+            },
+            {
+                "word": "essen,",
+                "start": 83.9800033569336,
+                "end": 83.9800033569336
+            }
+        ],
+        "translationEn": "He said, \"Please give me something to eat,",
+        "translationVi": "Ông ấy nói: \"Xin hãy cho tôi một chút thức ăn,"
+    },
+    {
+        "text": "Ich bin so hungrig.\" Das Mädchen gab ihm das ganze Brot,",
+        "start": 84.5999984741211,
+        "end": 90.0199966430664,
+        "wordTimings": [
+            {
+                "word": "ich",
+                "start": 84.5999984741211,
+                "end": 84.72000122070312
+            },
+            {
+                "word": "bin",
+                "start": 84.72000122070312,
+                "end": 84.94000244140625
+            },
+            {
+                "word": "so",
+                "start": 84.94000244140625,
+                "end": 85.54000091552734
+            },
+            {
+                "word": "hungrig.\"",
+                "start": 85.54000091552734,
+                "end": 85.91000366210938
+            },
+            {
+                "word": "Das",
+                "start": 87.5999984741211,
+                "end": 87.72000122070312
+            },
+            {
+                "word": "Mädchen",
+                "start": 87.72000122070312,
+                "end": 88.22000122070312
+            },
+            {
+                "word": "gab",
+                "start": 88.22000122070312,
+                "end": 88.5199966430664
+            },
+            {
+                "word": "ihm",
+                "start": 88.5199966430664,
+                "end": 88.69999694824219
+            },
+            {
+                "word": "das",
+                "start": 88.69999694824219,
+                "end": 88.95999908447266
+            },
+            {
+                "word": "ganze",
+                "start": 88.95999908447266,
+                "end": 89.5999984741211
+            },
+            {
+                "word": "Brot,",
+                "start": 89.5999984741211,
+                "end": 90.0199966430664
+            }
+        ],
+        "translationEn": "\"I'm so hungry.\" The girl gave him the whole bread,",
+        "translationVi": "\"Tôi đói quá.\" Cô gái đưa cho anh ta cả ổ bánh mì,"
+    },
+    {
+        "text": "Das es dabei hatte, und sagte:",
+        "start": 90.45999908447266,
+        "end": 92.05999755859375,
+        "wordTimings": [
+            {
+                "word": "das",
+                "start": 90.45999908447266,
+                "end": 90.5199966430664
+            },
+            {
+                "word": "es",
+                "start": 90.5199966430664,
+                "end": 90.80000305175781
+            },
+            {
+                "word": "dabei",
+                "start": 90.80000305175781,
+                "end": 91.23999786376953
+            },
+            {
+                "word": "hatte,",
+                "start": 91.23999786376953,
+                "end": 91.41999816894531
+            },
+            {
+                "word": "und",
+                "start": 91.41999816894531,
+                "end": 91.72000122070312
+            },
+            {
+                "word": "sagte:",
+                "start": 91.72000122070312,
+                "end": 92.05999755859375
+            }
+        ],
+        "translationEn": "That it had with it, and said:",
+        "translationVi": "Nó đã có điều đó, và nói:"
+    },
+    {
+        "text": "\"Gott segne es dir.\" Dann ging es weiter.",
+        "start": 93.23999786376953,
+        "end": 96.5999984741211,
+        "wordTimings": [
+            {
+                "word": "\"Gott",
+                "start": 93.23999786376953,
+                "end": 93.36000061035156
+            },
+            {
+                "word": "segne",
+                "start": 93.36000061035156,
+                "end": 93.76000213623047
+            },
+            {
+                "word": "es",
+                "start": 93.76000213623047,
+                "end": 94.0999984741211
+            },
+            {
+                "word": "dir.\"",
+                "start": 94.0999984741211,
+                "end": 94.4000015258789
+            },
+            {
+                "word": "Dann",
+                "start": 95.33999633789062,
+                "end": 95.58000183105469
+            },
+            {
+                "word": "ging",
+                "start": 95.58000183105469,
+                "end": 95.73999786376953
+            },
+            {
+                "word": "es",
+                "start": 95.73999786376953,
+                "end": 95.9800033569336
+            },
+            {
+                "word": "weiter.",
+                "start": 95.9800033569336,
+                "end": 96.5999984741211
+            }
+        ],
+        "translationEn": "\"God bless it for you.\" Then it continued.",
+        "translationVi": "\"Chúa ban phước cho bạn.\" Rồi mọi chuyện tiếp tục."
+    },
+    {
+        "text": "Kurz darauf traf das Mädchen ein Kind,",
+        "start": 102.18000030517578,
+        "end": 104.86000061035156,
+        "wordTimings": [
+            {
+                "word": "Kurz",
+                "start": 102.18000030517578,
+                "end": 102.44000244140625
+            },
+            {
+                "word": "darauf",
+                "start": 102.44000244140625,
+                "end": 103.0199966430664
+            },
+            {
+                "word": "traf",
+                "start": 103.0199966430664,
+                "end": 103.66000366210938
+            },
+            {
+                "word": "das",
+                "start": 103.66000366210938,
+                "end": 103.91999816894531
+            },
+            {
+                "word": "Mädchen",
+                "start": 103.91999816894531,
+                "end": 104.19999694824219
+            },
+            {
+                "word": "ein",
+                "start": 104.19999694824219,
+                "end": 104.45999908447266
+            },
+            {
+                "word": "Kind,",
+                "start": 104.45999908447266,
+                "end": 104.86000061035156
+            }
+        ],
+        "translationEn": "Shortly thereafter, the girl met a child,",
+        "translationVi": "Không lâu sau, cô gái gặp một đứa trẻ,"
+    },
+    {
+        "text": "Das jammerte: \"Mein Kopf friert so,",
+        "start": 105.0199966430664,
+        "end": 107.9000015258789,
+        "wordTimings": [
+            {
+                "word": "das",
+                "start": 105.0199966430664,
+                "end": 105.23999786376953
+            },
+            {
+                "word": "jammerte:",
+                "start": 105.23999786376953,
+                "end": 105.69999694824219
+            },
+            {
+                "word": "\"Mein",
+                "start": 105.69999694824219,
+                "end": 106.5
+            },
+            {
+                "word": "Kopf",
+                "start": 106.5,
+                "end": 107.0199966430664
+            },
+            {
+                "word": "friert",
+                "start": 107.0199966430664,
+                "end": 107.44000244140625
+            },
+            {
+                "word": "so,",
+                "start": 107.44000244140625,
+                "end": 107.9000015258789
+            }
+        ],
+        "translationEn": "It lamented: \"My head is freezing so,",
+        "translationVi": "Nó than thở: \"Đầu tôi lạnh quá,"
+    },
+    {
+        "text": "Bitte gib mir etwas, womit ich ihn bedecken kann.\"",
+        "start": 108.66000366210938,
+        "end": 111.45999908447266,
+        "wordTimings": [
+            {
+                "word": "bitte",
+                "start": 108.66000366210938,
+                "end": 108.76000213623047
+            },
+            {
+                "word": "gib",
+                "start": 108.76000213623047,
+                "end": 108.95999908447266
+            },
+            {
+                "word": "mir",
+                "start": 108.95999908447266,
+                "end": 109.16000366210938
+            },
+            {
+                "word": "etwas,",
+                "start": 109.16000366210938,
+                "end": 109.62000274658203
+            },
+            {
+                "word": "womit",
+                "start": 110.08000183105469,
+                "end": 110.22000122070312
+            },
+            {
+                "word": "ich",
+                "start": 110.22000122070312,
+                "end": 110.37999725341797
+            },
+            {
+                "word": "ihn",
+                "start": 110.37999725341797,
+                "end": 110.55999755859375
+            },
+            {
+                "word": "bedecken",
+                "start": 110.55999755859375,
+                "end": 110.95999908447266
+            },
+            {
+                "word": "kann.\"",
+                "start": 110.95999908447266,
+                "end": 111.45999908447266
+            }
+        ],
+        "translationEn": "\"Please give me something to cover him with.\"",
+        "translationVi": "Xin hãy cho tôi một cái gì đó để tôi có thể che anh ấy lại."
+    },
+    {
+        "text": "Das Mädchen zog seine Mütze ab und gab sie dem Kind.",
+        "start": 112.63999938964844,
+        "end": 115.80000305175781,
+        "wordTimings": [
+            {
+                "word": "Das",
+                "start": 112.63999938964844,
+                "end": 112.77999877929688
+            },
+            {
+                "word": "Mädchen",
+                "start": 112.77999877929688,
+                "end": 113.31999969482422
+            },
+            {
+                "word": "zog",
+                "start": 113.31999969482422,
+                "end": 113.63999938964844
+            },
+            {
+                "word": "seine",
+                "start": 113.63999938964844,
+                "end": 113.9800033569336
+            },
+            {
+                "word": "Mütze",
+                "start": 113.9800033569336,
+                "end": 114.33999633789062
+            },
+            {
+                "word": "ab",
+                "start": 114.33999633789062,
+                "end": 114.69999694824219
+            },
+            {
+                "word": "und",
+                "start": 114.69999694824219,
+                "end": 115.04000091552734
+            },
+            {
+                "word": "gab",
+                "start": 115.04000091552734,
+                "end": 115.16000366210938
+            },
+            {
+                "word": "sie",
+                "start": 115.16000366210938,
+                "end": 115.33999633789062
+            },
+            {
+                "word": "dem",
+                "start": 115.33999633789062,
+                "end": 115.62000274658203
+            },
+            {
+                "word": "Kind.",
+                "start": 115.62000274658203,
+                "end": 115.80000305175781
+            }
+        ],
+        "translationEn": "The girl took off her hat and gave it to the child.",
+        "translationVi": "Cô gái đã tháo mũ ra và đưa cho đứa trẻ."
+    },
+    {
+        "text": "Nach einer Weile traf es ein weiteres Kind,",
+        "start": 120.77999877929688,
+        "end": 123.37999725341797,
+        "wordTimings": [
+            {
+                "word": "Nach",
+                "start": 120.77999877929688,
+                "end": 121.0199966430664
+            },
+            {
+                "word": "einer",
+                "start": 121.0199966430664,
+                "end": 121.4000015258789
+            },
+            {
+                "word": "Weile",
+                "start": 121.4000015258789,
+                "end": 121.63999938964844
+            },
+            {
+                "word": "traf",
+                "start": 121.63999938964844,
+                "end": 122.08000183105469
+            },
+            {
+                "word": "es",
+                "start": 122.08000183105469,
+                "end": 122.26000213623047
+            },
+            {
+                "word": "ein",
+                "start": 122.26000213623047,
+                "end": 122.41999816894531
+            },
+            {
+                "word": "weiteres",
+                "start": 122.41999816894531,
+                "end": 123.05999755859375
+            },
+            {
+                "word": "Kind,",
+                "start": 123.05999755859375,
+                "end": 123.37999725341797
+            }
+        ],
+        "translationEn": "After a while, it met another child,",
+        "translationVi": "Sau một thời gian, nó gặp một đứa trẻ khác,"
+    },
+    {
+        "text": "Das kein Leibchen anhatte und froh.",
+        "start": 123.95999908447266,
+        "end": 126.27999877929688,
+        "wordTimings": [
+            {
+                "word": "das",
+                "start": 123.95999908447266,
+                "end": 124.08000183105469
+            },
+            {
+                "word": "kein",
+                "start": 124.08000183105469,
+                "end": 124.36000061035156
+            },
+            {
+                "word": "Leibchen",
+                "start": 124.36000061035156,
+                "end": 124.83999633789062
+            },
+            {
+                "word": "anhatte",
+                "start": 124.83999633789062,
+                "end": 125.45999908447266
+            },
+            {
+                "word": "und",
+                "start": 125.72000122070312,
+                "end": 126.05999755859375
+            },
+            {
+                "word": "froh.",
+                "start": 126.05999755859375,
+                "end": 126.27999877929688
+            }
+        ],
+        "translationEn": "That he wasn't wearing a vest and was happy.",
+        "translationVi": "Cô ấy không mặc áo và cảm thấy vui."
+    },
+    {
+        "text": "Da blieb das Mädchen stehen,",
+        "start": 127.33999633789062,
+        "end": 129.1199951171875,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 127.33999633789062,
+                "end": 127.86000061035156
+            },
+            {
+                "word": "blieb",
+                "start": 127.86000061035156,
+                "end": 128.0399932861328
+            },
+            {
+                "word": "das",
+                "start": 128.0399932861328,
+                "end": 128.3000030517578
+            },
+            {
+                "word": "Mädchen",
+                "start": 128.3000030517578,
+                "end": 128.66000366210938
+            },
+            {
+                "word": "stehen,",
+                "start": 128.66000366210938,
+                "end": 129.1199951171875
+            }
+        ],
+        "translationEn": "The girl stopped there,",
+        "translationVi": "Cô gái đứng lại,"
+    },
+    {
+        "text": "Zog sein Männlichen aus und gab es dem Kind.",
+        "start": 129.83999633789062,
+        "end": 132.39999389648438,
+        "wordTimings": [
+            {
+                "word": "zog",
+                "start": 129.83999633789062,
+                "end": 129.83999633789062
+            },
+            {
+                "word": "sein",
+                "start": 129.83999633789062,
+                "end": 130.10000610351562
+            },
+            {
+                "word": "Männlichen",
+                "start": 130.10000610351562,
+                "end": 130.63999938964844
+            },
+            {
+                "word": "aus",
+                "start": 130.63999938964844,
+                "end": 131.13999938964844
+            },
+            {
+                "word": "und",
+                "start": 131.13999938964844,
+                "end": 131.5399932861328
+            },
+            {
+                "word": "gab",
+                "start": 131.5399932861328,
+                "end": 131.74000549316406
+            },
+            {
+                "word": "es",
+                "start": 131.74000549316406,
+                "end": 131.9199981689453
+            },
+            {
+                "word": "dem",
+                "start": 131.9199981689453,
+                "end": 132.13999938964844
+            },
+            {
+                "word": "Kind.",
+                "start": 132.13999938964844,
+                "end": 132.39999389648438
+            }
+        ],
+        "translationEn": "He took off his male parts and gave them to the child.",
+        "translationVi": "Ông đã cởi quần của mình ra và đưa cho đứa trẻ."
+    },
+    {
+        "text": "Ein anderes Kind bat um das Röcklein,",
+        "start": 134.22000122070312,
+        "end": 137.22000122070312,
+        "wordTimings": [
+            {
+                "word": "Ein",
+                "start": 134.22000122070312,
+                "end": 134.86000061035156
+            },
+            {
+                "word": "anderes",
+                "start": 134.86000061035156,
+                "end": 135.5
+            },
+            {
+                "word": "Kind",
+                "start": 135.5,
+                "end": 135.8800048828125
+            },
+            {
+                "word": "bat",
+                "start": 135.8800048828125,
+                "end": 136.24000549316406
+            },
+            {
+                "word": "um",
+                "start": 136.24000549316406,
+                "end": 136.4199981689453
+            },
+            {
+                "word": "das",
+                "start": 136.4199981689453,
+                "end": 136.6999969482422
+            },
+            {
+                "word": "Röcklein,",
+                "start": 136.6999969482422,
+                "end": 137.22000122070312
+            }
+        ],
+        "translationEn": "Another child asked for the little skirt,",
+        "translationVi": "Một đứa trẻ khác đã xin chiếc váy nhỏ."
+    },
+    {
+        "text": "Und das Mädchen gab es ihm.",
+        "start": 137.22000122070312,
+        "end": 139.1999969482422,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 137.22000122070312,
+                "end": 137.75999450683594
+            },
+            {
+                "word": "das",
+                "start": 137.75999450683594,
+                "end": 138.0399932861328
+            },
+            {
+                "word": "Mädchen",
+                "start": 138.0399932861328,
+                "end": 138.39999389648438
+            },
+            {
+                "word": "gab",
+                "start": 138.39999389648438,
+                "end": 138.6999969482422
+            },
+            {
+                "word": "es",
+                "start": 138.6999969482422,
+                "end": 138.97999572753906
+            },
+            {
+                "word": "ihm.",
+                "start": 138.97999572753906,
+                "end": 139.1999969482422
+            }
+        ],
+        "translationEn": "And the girl gave it to him.",
+        "translationVi": "Và cô gái đã đưa cho anh ta."
+    },
+    {
+        "text": "Schließlich kam das Mädchen in einen Wald.",
+        "start": 142.02000427246094,
+        "end": 144.5,
+        "wordTimings": [
+            {
+                "word": "Schließlich",
+                "start": 142.02000427246094,
+                "end": 142.55999755859375
+            },
+            {
+                "word": "kam",
+                "start": 142.55999755859375,
+                "end": 143.0399932861328
+            },
+            {
+                "word": "das",
+                "start": 143.0399932861328,
+                "end": 143.3800048828125
+            },
+            {
+                "word": "Mädchen",
+                "start": 143.3800048828125,
+                "end": 143.72000122070312
+            },
+            {
+                "word": "in",
+                "start": 143.72000122070312,
+                "end": 143.89999389648438
+            },
+            {
+                "word": "einen",
+                "start": 143.89999389648438,
+                "end": 144.22000122070312
+            },
+            {
+                "word": "Wald.",
+                "start": 144.22000122070312,
+                "end": 144.5
+            }
+        ],
+        "translationEn": "Finally, the girl came to a forest.",
+        "translationVi": "Cuối cùng, cô gái đã đến một khu rừng."
+    },
+    {
+        "text": "Es war bereits dunkel geworden.",
+        "start": 145.67999267578125,
+        "end": 147.24000549316406,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 145.67999267578125,
+                "end": 145.72000122070312
+            },
+            {
+                "word": "war",
+                "start": 145.72000122070312,
+                "end": 145.8800048828125
+            },
+            {
+                "word": "bereits",
+                "start": 145.8800048828125,
+                "end": 146.36000061035156
+            },
+            {
+                "word": "dunkel",
+                "start": 146.36000061035156,
+                "end": 146.74000549316406
+            },
+            {
+                "word": "geworden.",
+                "start": 146.74000549316406,
+                "end": 147.24000549316406
+            }
+        ],
+        "translationEn": "It had already become dark.",
+        "translationVi": "Trời đã tối."
+    },
+    {
+        "text": "Da traf es noch ein Kind, das das Mädchen um ein Hemdchen",
+        "start": 149.3000030517578,
+        "end": 153.13999938964844,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 149.3000030517578,
+                "end": 149.47999572753906
+            },
+            {
+                "word": "traf",
+                "start": 149.47999572753906,
+                "end": 149.75999450683594
+            },
+            {
+                "word": "es",
+                "start": 149.75999450683594,
+                "end": 150
+            },
+            {
+                "word": "noch",
+                "start": 150,
+                "end": 150.17999267578125
+            },
+            {
+                "word": "ein",
+                "start": 150.17999267578125,
+                "end": 150.4600067138672
+            },
+            {
+                "word": "Kind,",
+                "start": 150.4600067138672,
+                "end": 150.83999633789062
+            },
+            {
+                "word": "das",
+                "start": 151,
+                "end": 151.4199981689453
+            },
+            {
+                "word": "das",
+                "start": 151.4199981689453,
+                "end": 151.6999969482422
+            },
+            {
+                "word": "Mädchen",
+                "start": 151.6999969482422,
+                "end": 152
+            },
+            {
+                "word": "um",
+                "start": 152,
+                "end": 152.13999938964844
+            },
+            {
+                "word": "ein",
+                "start": 152.13999938964844,
+                "end": 152.33999633789062
+            },
+            {
+                "word": "Hemdchen",
+                "start": 152.33999633789062,
+                "end": 153.13999938964844
+            }
+        ],
+        "translationEn": "Then a child met the girl about a little shirt.",
+        "translationVi": "Có một đứa trẻ khác đã gặp cô gái để xin một chiếc áo."
+    },
+    {
+        "text": "Bat. Das Mädchen dachte sich:",
+        "start": 153.13999938964844,
+        "end": 160.13999938964844,
+        "wordTimings": [
+            {
+                "word": "bat.",
+                "start": 153.13999938964844,
+                "end": 153.16000366210938
+            },
+            {
+                "word": "Das",
+                "start": 158.17999267578125,
+                "end": 158.89999389648438
+            },
+            {
+                "word": "Mädchen",
+                "start": 158.89999389648438,
+                "end": 159.3800048828125
+            },
+            {
+                "word": "dachte",
+                "start": 159.3800048828125,
+                "end": 159.6999969482422
+            },
+            {
+                "word": "sich:",
+                "start": 159.6999969482422,
+                "end": 160.13999938964844
+            }
+        ],
+        "translationEn": "Bat. The girl thought to herself:",
+        "translationVi": "Con dơi. Cô gái nghĩ rằng:"
+    },
+    {
+        "text": "\"Es ist Nacht und niemand kann mich sehen,",
+        "start": 160.66000366210938,
+        "end": 162.9600067138672,
+        "wordTimings": [
+            {
+                "word": "\"Es",
+                "start": 160.66000366210938,
+                "end": 160.83999633789062
+            },
+            {
+                "word": "ist",
+                "start": 160.83999633789062,
+                "end": 161.22000122070312
+            },
+            {
+                "word": "Nacht",
+                "start": 161.22000122070312,
+                "end": 161.47999572753906
+            },
+            {
+                "word": "und",
+                "start": 161.47999572753906,
+                "end": 161.86000061035156
+            },
+            {
+                "word": "niemand",
+                "start": 161.86000061035156,
+                "end": 162.1199951171875
+            },
+            {
+                "word": "kann",
+                "start": 162.1199951171875,
+                "end": 162.4600067138672
+            },
+            {
+                "word": "mich",
+                "start": 162.4600067138672,
+                "end": 162.66000366210938
+            },
+            {
+                "word": "sehen,",
+                "start": 162.66000366210938,
+                "end": 162.9600067138672
+            }
+        ],
+        "translationEn": "\"It is night and no one can see me,\"",
+        "translationVi": "\"Đêm đã khuya và không ai có thể thấy tôi,\""
+    },
+    {
+        "text": "Deshalb kann ich auch mein Hemdchen weggeben.\"",
+        "start": 164.05999755859375,
+        "end": 166.4199981689453,
+        "wordTimings": [
+            {
+                "word": "deshalb",
+                "start": 164.05999755859375,
+                "end": 164.36000061035156
+            },
+            {
+                "word": "kann",
+                "start": 164.36000061035156,
+                "end": 164.94000244140625
+            },
+            {
+                "word": "ich",
+                "start": 164.94000244140625,
+                "end": 165.0800018310547
+            },
+            {
+                "word": "auch",
+                "start": 165.0800018310547,
+                "end": 165.3000030517578
+            },
+            {
+                "word": "mein",
+                "start": 165.3000030517578,
+                "end": 165.52000427246094
+            },
+            {
+                "word": "Hemdchen",
+                "start": 165.52000427246094,
+                "end": 166
+            },
+            {
+                "word": "weggeben.\"",
+                "start": 166,
+                "end": 166.4199981689453
+            }
+        ],
+        "translationEn": "\"That's why I can also give away my little shirt.\"",
+        "translationVi": "Vì vậy, tôi cũng có thể cho đi chiếc áo sơ mi của mình."
+    },
+    {
+        "text": "Es zog sein Hemdchen aus und gab es dem Kind.",
+        "start": 167.25999450683594,
+        "end": 170.6999969482422,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 167.25999450683594,
+                "end": 167.55999755859375
+            },
+            {
+                "word": "zog",
+                "start": 167.55999755859375,
+                "end": 167.74000549316406
+            },
+            {
+                "word": "sein",
+                "start": 167.74000549316406,
+                "end": 168.02000427246094
+            },
+            {
+                "word": "Hemdchen",
+                "start": 168.02000427246094,
+                "end": 168.47999572753906
+            },
+            {
+                "word": "aus",
+                "start": 168.47999572753906,
+                "end": 168.97999572753906
+            },
+            {
+                "word": "und",
+                "start": 168.97999572753906,
+                "end": 169.8000030517578
+            },
+            {
+                "word": "gab",
+                "start": 169.8000030517578,
+                "end": 170
+            },
+            {
+                "word": "es",
+                "start": 170,
+                "end": 170.17999267578125
+            },
+            {
+                "word": "dem",
+                "start": 170.17999267578125,
+                "end": 170.4199981689453
+            },
+            {
+                "word": "Kind.",
+                "start": 170.4199981689453,
+                "end": 170.6999969482422
+            }
+        ],
+        "translationEn": "He took off his little shirt and gave it to the child.",
+        "translationVi": "Anh ấy cởi áo sơ mi ra và đưa cho đứa trẻ."
+    },
+    {
+        "text": "Als das Mädchen dastand und nun selbst gar keine Kleider mehr anhatte,",
+        "start": 174.55999755859375,
+        "end": 180.55999755859375,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 174.55999755859375,
+                "end": 175.27999877929688
+            },
+            {
+                "word": "das",
+                "start": 175.27999877929688,
+                "end": 175.60000610351562
+            },
+            {
+                "word": "Mädchen",
+                "start": 175.60000610351562,
+                "end": 176.02000427246094
+            },
+            {
+                "word": "dastand",
+                "start": 176.02000427246094,
+                "end": 176.83999633789062
+            },
+            {
+                "word": "und",
+                "start": 176.83999633789062,
+                "end": 177.60000610351562
+            },
+            {
+                "word": "nun",
+                "start": 177.60000610351562,
+                "end": 178
+            },
+            {
+                "word": "selbst",
+                "start": 178,
+                "end": 178.27999877929688
+            },
+            {
+                "word": "gar",
+                "start": 178.27999877929688,
+                "end": 178.63999938964844
+            },
+            {
+                "word": "keine",
+                "start": 178.63999938964844,
+                "end": 178.86000061035156
+            },
+            {
+                "word": "Kleider",
+                "start": 178.86000061035156,
+                "end": 179.25999450683594
+            },
+            {
+                "word": "mehr",
+                "start": 179.25999450683594,
+                "end": 179.6199951171875
+            },
+            {
+                "word": "anhatte,",
+                "start": 179.6199951171875,
+                "end": 180.55999755859375
+            }
+        ],
+        "translationEn": "As the girl stood there and now had no clothes on at all,",
+        "translationVi": "Khi cô gái đứng đó và giờ không còn mặc bất kỳ bộ quần áo nào nữa,"
+    },
+    {
+        "text": "Fielen auf einmal die Sterne vom Himmel.",
+        "start": 181.13999938964844,
+        "end": 183.13999938964844,
+        "wordTimings": [
+            {
+                "word": "fielen",
+                "start": 181.13999938964844,
+                "end": 181.13999938964844
+            },
+            {
+                "word": "auf",
+                "start": 181.13999938964844,
+                "end": 181.67999267578125
+            },
+            {
+                "word": "einmal",
+                "start": 181.67999267578125,
+                "end": 182
+            },
+            {
+                "word": "die",
+                "start": 182,
+                "end": 182.63999938964844
+            },
+            {
+                "word": "Sterne",
+                "start": 182.63999938964844,
+                "end": 182.77999877929688
+            },
+            {
+                "word": "vom",
+                "start": 182.77999877929688,
+                "end": 183.0399932861328
+            },
+            {
+                "word": "Himmel.",
+                "start": 183.0399932861328,
+                "end": 183.13999938964844
+            }
+        ],
+        "translationEn": "Suddenly, the stars fell from the sky.",
+        "translationVi": "Bỗng dưng những vì sao rơi từ trên trời xuống."
+    },
+    {
+        "text": "Doch es waren keine Sterne,",
+        "start": 188.4600067138672,
+        "end": 191.3800048828125,
+        "wordTimings": [
+            {
+                "word": "Doch",
+                "start": 188.4600067138672,
+                "end": 189.4600067138672
+            },
+            {
+                "word": "es",
+                "start": 189.4600067138672,
+                "end": 190.4600067138672
+            },
+            {
+                "word": "waren",
+                "start": 190.4600067138672,
+                "end": 190.4600067138672
+            },
+            {
+                "word": "keine",
+                "start": 190.4600067138672,
+                "end": 190.8000030517578
+            },
+            {
+                "word": "Sterne,",
+                "start": 190.8000030517578,
+                "end": 191.3800048828125
+            }
+        ],
+        "translationEn": "But they were not stars,",
+        "translationVi": "Nhưng đó không phải là những ngôi sao,"
+    },
+    {
+        "text": "Sondern lauter Goldstücke. Das Mädchen war auch nicht mehr nackt,",
+        "start": 192.0399932861328,
+        "end": 201.4600067138672,
+        "wordTimings": [
+            {
+                "word": "sondern",
+                "start": 192.0399932861328,
+                "end": 192.36000061035156
+            },
+            {
+                "word": "lauter",
+                "start": 192.36000061035156,
+                "end": 192.94000244140625
+            },
+            {
+                "word": "Goldstücke.",
+                "start": 192.94000244140625,
+                "end": 193.66000366210938
+            },
+            {
+                "word": "Das",
+                "start": 198.02000427246094,
+                "end": 199.02000427246094
+            },
+            {
+                "word": "Mädchen",
+                "start": 199.02000427246094,
+                "end": 199.55999755859375
+            },
+            {
+                "word": "war",
+                "start": 199.55999755859375,
+                "end": 200.13999938964844
+            },
+            {
+                "word": "auch",
+                "start": 200.13999938964844,
+                "end": 200.4600067138672
+            },
+            {
+                "word": "nicht",
+                "start": 200.4600067138672,
+                "end": 200.60000610351562
+            },
+            {
+                "word": "mehr",
+                "start": 200.60000610351562,
+                "end": 201.10000610351562
+            },
+            {
+                "word": "nackt,",
+                "start": 201.10000610351562,
+                "end": 201.4600067138672
+            }
+        ],
+        "translationEn": "But pure gold pieces. The girl was no longer naked either,",
+        "translationVi": "Mà chỉ là những đồng vàng. Cô gái cũng không còn trần truồng nữa,"
+    },
+    {
+        "text": "Sondern trug plötzlich ein neues Hemdchen aus feinstem Leinen.",
+        "start": 201.9199981689453,
+        "end": 205.3000030517578,
+        "wordTimings": [
+            {
+                "word": "sondern",
+                "start": 201.9199981689453,
+                "end": 202.13999938964844
+            },
+            {
+                "word": "trug",
+                "start": 202.13999938964844,
+                "end": 202.3800048828125
+            },
+            {
+                "word": "plötzlich",
+                "start": 202.3800048828125,
+                "end": 202.8800048828125
+            },
+            {
+                "word": "ein",
+                "start": 202.8800048828125,
+                "end": 203.1199951171875
+            },
+            {
+                "word": "neues",
+                "start": 203.1199951171875,
+                "end": 203.60000610351562
+            },
+            {
+                "word": "Hemdchen",
+                "start": 203.60000610351562,
+                "end": 204.0800018310547
+            },
+            {
+                "word": "aus",
+                "start": 204.0800018310547,
+                "end": 204.27999877929688
+            },
+            {
+                "word": "feinstem",
+                "start": 204.27999877929688,
+                "end": 204.8800048828125
+            },
+            {
+                "word": "Leinen.",
+                "start": 204.8800048828125,
+                "end": 205.3000030517578
+            }
+        ],
+        "translationEn": "But suddenly wore a new shirt made of the finest linen.",
+        "translationVi": "Nhưng bỗng nhiên mặc một chiếc áo mới bằng vải lanh tinh tế nhất."
+    },
+    {
+        "text": "Und dort fielen all die Goldstücke vom Himmel hinein.",
+        "start": 206.22000122070312,
+        "end": 210.5399932861328,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 206.22000122070312,
+                "end": 206.63999938964844
+            },
+            {
+                "word": "dort",
+                "start": 206.63999938964844,
+                "end": 207
+            },
+            {
+                "word": "fielen",
+                "start": 207,
+                "end": 207.5800018310547
+            },
+            {
+                "word": "all",
+                "start": 207.5800018310547,
+                "end": 208.22000122070312
+            },
+            {
+                "word": "die",
+                "start": 208.22000122070312,
+                "end": 208.47999572753906
+            },
+            {
+                "word": "Goldstücke",
+                "start": 208.47999572753906,
+                "end": 209.0399932861328
+            },
+            {
+                "word": "vom",
+                "start": 209.0399932861328,
+                "end": 209.4199981689453
+            },
+            {
+                "word": "Himmel",
+                "start": 209.4199981689453,
+                "end": 209.8000030517578
+            },
+            {
+                "word": "hinein.",
+                "start": 209.8000030517578,
+                "end": 210.5399932861328
+            }
+        ],
+        "translationEn": "And there all the gold coins fell from the sky into it.",
+        "translationVi": "Và ở đó, tất cả những đồng vàng rơi từ trên trời xuống."
+    },
+    {
+        "text": "Nun war das Mädchen reich und musste nie wieder hungern.",
+        "start": 212.89999389648438,
+        "end": 219.1199951171875,
+        "wordTimings": [
+            {
+                "word": "Nun",
+                "start": 212.89999389648438,
+                "end": 213.97999572753906
+            },
+            {
+                "word": "war",
+                "start": 213.97999572753906,
+                "end": 214.52000427246094
+            },
+            {
+                "word": "das",
+                "start": 214.52000427246094,
+                "end": 214.83999633789062
+            },
+            {
+                "word": "Mädchen",
+                "start": 214.83999633789062,
+                "end": 215.27999877929688
+            },
+            {
+                "word": "reich",
+                "start": 215.27999877929688,
+                "end": 215.86000061035156
+            },
+            {
+                "word": "und",
+                "start": 215.86000061035156,
+                "end": 216.89999389648438
+            },
+            {
+                "word": "musste",
+                "start": 216.89999389648438,
+                "end": 217.1999969482422
+            },
+            {
+                "word": "nie",
+                "start": 217.1999969482422,
+                "end": 217.74000549316406
+            },
+            {
+                "word": "wieder",
+                "start": 217.74000549316406,
+                "end": 218.27999877929688
+            },
+            {
+                "word": "hungern.",
+                "start": 218.27999877929688,
+                "end": 219.1199951171875
+            }
+        ],
+        "translationEn": "Now the girl was rich and never had to go hungry again.",
+        "translationVi": "Bây giờ cô gái đã trở nên giàu có và không bao giờ phải đói nữa."
+    },
+    {
+        "text": "Jetzt kennst du das Märchen von den Sterntalern.",
+        "start": 225.74000549316406,
+        "end": 229.1999969482422,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 225.74000549316406,
+                "end": 226
+            },
+            {
+                "word": "kennst",
+                "start": 226,
+                "end": 226.4600067138672
+            },
+            {
+                "word": "du",
+                "start": 226.4600067138672,
+                "end": 226.55999755859375
+            },
+            {
+                "word": "das",
+                "start": 226.55999755859375,
+                "end": 226.9199981689453
+            },
+            {
+                "word": "Märchen",
+                "start": 226.9199981689453,
+                "end": 227.5
+            },
+            {
+                "word": "von",
+                "start": 227.5,
+                "end": 228.0800018310547
+            },
+            {
+                "word": "den",
+                "start": 228.0800018310547,
+                "end": 228.4199981689453
+            },
+            {
+                "word": "Sterntalern.",
+                "start": 228.4199981689453,
+                "end": 229.1999969482422
+            }
+        ],
+        "translationEn": "Now you know the fairy tale of the Star Talers.",
+        "translationVi": "Bây giờ bạn đã biết câu chuyện cổ tích về những đồng tiền sao."
+    },
+    {
+        "text": "Aber hast du auch unseren kleinen Wichtel entdeckt?",
+        "start": 230.24000549316406,
+        "end": 234.36000061035156,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 230.24000549316406,
+                "end": 230.82000732421875
+            },
+            {
+                "word": "hast",
+                "start": 230.82000732421875,
+                "end": 231.60000610351562
+            },
+            {
+                "word": "du",
+                "start": 231.60000610351562,
+                "end": 231.86000061035156
+            },
+            {
+                "word": "auch",
+                "start": 231.86000061035156,
+                "end": 232.3000030517578
+            },
+            {
+                "word": "unseren",
+                "start": 232.3000030517578,
+                "end": 232.67999267578125
+            },
+            {
+                "word": "kleinen",
+                "start": 232.67999267578125,
+                "end": 233.1199951171875
+            },
+            {
+                "word": "Wichtel",
+                "start": 233.1199951171875,
+                "end": 233.74000549316406
+            },
+            {
+                "word": "entdeckt?",
+                "start": 233.74000549316406,
+                "end": 234.36000061035156
+            }
+        ],
+        "translationEn": "But have you also discovered our little gnome?",
+        "translationVi": "Nhưng bạn có phát hiện ra chú lùn nhỏ của chúng ta không?"
+    }
+]

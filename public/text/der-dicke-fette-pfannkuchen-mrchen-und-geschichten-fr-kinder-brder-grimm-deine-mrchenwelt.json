@@ -1,0 +1,2432 @@
+[
+    {
+        "text": "Was ist das für ein dicker fetter Pfannkuchen, der da durch die Gegend rollt?",
+        "start": 13.119999885559082,
+        "end": 18.1200008392334,
+        "wordTimings": [
+            {
+                "word": "Was",
+                "start": 13.119999885559082,
+                "end": 13.539999961853027
+            },
+            {
+                "word": "ist",
+                "start": 13.539999961853027,
+                "end": 13.779999732971191
+            },
+            {
+                "word": "das",
+                "start": 13.779999732971191,
+                "end": 14
+            },
+            {
+                "word": "für",
+                "start": 14,
+                "end": 14.199999809265137
+            },
+            {
+                "word": "ein",
+                "start": 14.199999809265137,
+                "end": 14.460000038146973
+            },
+            {
+                "word": "dicker",
+                "start": 14.460000038146973,
+                "end": 15.039999961853027
+            },
+            {
+                "word": "fetter",
+                "start": 15.5,
+                "end": 15.5
+            },
+            {
+                "word": "Pfannkuchen,",
+                "start": 15.5,
+                "end": 16.31999969482422
+            },
+            {
+                "word": "der",
+                "start": 16.459999084472656,
+                "end": 16.540000915527344
+            },
+            {
+                "word": "da",
+                "start": 16.540000915527344,
+                "end": 16.84000015258789
+            },
+            {
+                "word": "durch",
+                "start": 16.84000015258789,
+                "end": 17.040000915527344
+            },
+            {
+                "word": "die",
+                "start": 17.040000915527344,
+                "end": 17.260000228881836
+            },
+            {
+                "word": "Gegend",
+                "start": 17.260000228881836,
+                "end": 17.68000030517578
+            },
+            {
+                "word": "rollt?",
+                "start": 17.68000030517578,
+                "end": 18.1200008392334
+            }
+        ],
+        "translationEn": "What is that thick, fat pancake rolling around?",
+        "translationVi": "Đó là cái bánh pancake dày và béo nào đang lăn lộn xung quanh vậy?"
+    },
+    {
+        "text": "Und was sagt er da zu dem Häschen und den anderen Tieren?",
+        "start": 18.719999313354492,
+        "end": 22.81999969482422,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 18.719999313354492,
+                "end": 19.3799991607666
+            },
+            {
+                "word": "was",
+                "start": 19.3799991607666,
+                "end": 19.540000915527344
+            },
+            {
+                "word": "sagt",
+                "start": 19.540000915527344,
+                "end": 19.760000228881836
+            },
+            {
+                "word": "er",
+                "start": 19.760000228881836,
+                "end": 19.84000015258789
+            },
+            {
+                "word": "da",
+                "start": 19.84000015258789,
+                "end": 20.059999465942383
+            },
+            {
+                "word": "zu",
+                "start": 20.059999465942383,
+                "end": 20.18000030517578
+            },
+            {
+                "word": "dem",
+                "start": 20.18000030517578,
+                "end": 20.600000381469727
+            },
+            {
+                "word": "Häschen",
+                "start": 20.600000381469727,
+                "end": 20.979999542236328
+            },
+            {
+                "word": "und",
+                "start": 20.979999542236328,
+                "end": 21.559999465942383
+            },
+            {
+                "word": "den",
+                "start": 21.559999465942383,
+                "end": 21.8799991607666
+            },
+            {
+                "word": "anderen",
+                "start": 21.8799991607666,
+                "end": 22.399999618530273
+            },
+            {
+                "word": "Tieren?",
+                "start": 22.399999618530273,
+                "end": 22.81999969482422
+            }
+        ],
+        "translationEn": "And what does he say to the little bunny and the other animals?",
+        "translationVi": "Và anh ấy nói gì với thỏ và những con vật khác?"
+    },
+    {
+        "text": "Du bist neugierig? Dann schau mal zu.",
+        "start": 23.579999923706055,
+        "end": 27.459999084472656,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 23.579999923706055,
+                "end": 24.15999984741211
+            },
+            {
+                "word": "bist",
+                "start": 24.15999984741211,
+                "end": 24.420000076293945
+            },
+            {
+                "word": "neugierig?",
+                "start": 24.420000076293945,
+                "end": 25.239999771118164
+            },
+            {
+                "word": "Dann",
+                "start": 25.860000610351562,
+                "end": 26.520000457763672
+            },
+            {
+                "word": "schau",
+                "start": 26.520000457763672,
+                "end": 26.719999313354492
+            },
+            {
+                "word": "mal",
+                "start": 26.719999313354492,
+                "end": 27.15999984741211
+            },
+            {
+                "word": "zu.",
+                "start": 27.15999984741211,
+                "end": 27.459999084472656
+            }
+        ],
+        "translationEn": "Are you curious? Then take a look.",
+        "translationVi": "Bạn tò mò à? Vậy thì hãy xem thử."
+    },
+    {
+        "text": "Es waren einmal drei alte Frauen, die gerne Pfannkuchen essen wollten.",
+        "start": 34.08000183105469,
+        "end": 38.91999816894531,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 34.08000183105469,
+                "end": 34.84000015258789
+            },
+            {
+                "word": "waren",
+                "start": 34.84000015258789,
+                "end": 35.040000915527344
+            },
+            {
+                "word": "einmal",
+                "start": 35.040000915527344,
+                "end": 35.47999954223633
+            },
+            {
+                "word": "drei",
+                "start": 35.47999954223633,
+                "end": 35.7599983215332
+            },
+            {
+                "word": "alte",
+                "start": 35.7599983215332,
+                "end": 36.2400016784668
+            },
+            {
+                "word": "Frauen,",
+                "start": 36.2400016784668,
+                "end": 36.599998474121094
+            },
+            {
+                "word": "die",
+                "start": 37.279998779296875,
+                "end": 37.279998779296875
+            },
+            {
+                "word": "gerne",
+                "start": 37.279998779296875,
+                "end": 37.58000183105469
+            },
+            {
+                "word": "Pfannkuchen",
+                "start": 37.58000183105469,
+                "end": 38.2400016784668
+            },
+            {
+                "word": "essen",
+                "start": 38.2400016784668,
+                "end": 38.619998931884766
+            },
+            {
+                "word": "wollten.",
+                "start": 38.619998931884766,
+                "end": 38.91999816894531
+            }
+        ],
+        "translationEn": "Once upon a time, there were three old women who wanted to eat pancakes.",
+        "translationVi": "Ngày xửa ngày xưa có ba bà lão, họ rất thích ăn bánh kếp."
+    },
+    {
+        "text": "Die erste gab ein Ei, die zweite etwas Milch und die dritte Fett und Mehl.",
+        "start": 39.900001525878906,
+        "end": 45.18000030517578,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 39.900001525878906,
+                "end": 39.97999954223633
+            },
+            {
+                "word": "erste",
+                "start": 39.97999954223633,
+                "end": 40.279998779296875
+            },
+            {
+                "word": "gab",
+                "start": 40.279998779296875,
+                "end": 40.52000045776367
+            },
+            {
+                "word": "ein",
+                "start": 40.52000045776367,
+                "end": 40.79999923706055
+            },
+            {
+                "word": "Ei,",
+                "start": 40.79999923706055,
+                "end": 41.13999938964844
+            },
+            {
+                "word": "die",
+                "start": 41.779998779296875,
+                "end": 42.20000076293945
+            },
+            {
+                "word": "zweite",
+                "start": 42.20000076293945,
+                "end": 42.20000076293945
+            },
+            {
+                "word": "etwas",
+                "start": 42.20000076293945,
+                "end": 42.63999938964844
+            },
+            {
+                "word": "Milch",
+                "start": 42.63999938964844,
+                "end": 43.15999984741211
+            },
+            {
+                "word": "und",
+                "start": 43.15999984741211,
+                "end": 43.560001373291016
+            },
+            {
+                "word": "die",
+                "start": 43.560001373291016,
+                "end": 44.040000915527344
+            },
+            {
+                "word": "dritte",
+                "start": 44.040000915527344,
+                "end": 44.040000915527344
+            },
+            {
+                "word": "Fett",
+                "start": 44.040000915527344,
+                "end": 44.41999816894531
+            },
+            {
+                "word": "und",
+                "start": 44.41999816894531,
+                "end": 44.79999923706055
+            },
+            {
+                "word": "Mehl.",
+                "start": 44.79999923706055,
+                "end": 45.18000030517578
+            }
+        ],
+        "translationEn": "The first gave an egg, the second some milk, and the third fat and flour.",
+        "translationVi": "Con đầu tiên cho một quả trứng, con thứ hai cho một chút sữa và con thứ ba cho mỡ và bột mì."
+    },
+    {
+        "text": "Als der dicke fette Pfannkuchen fertig war, wollte er sich jedoch nicht von den drei alten Frauen essen lassen.",
+        "start": 48.02000045776367,
+        "end": 55.18000030517578,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 48.02000045776367,
+                "end": 48.040000915527344
+            },
+            {
+                "word": "der",
+                "start": 48.040000915527344,
+                "end": 48.34000015258789
+            },
+            {
+                "word": "dicke",
+                "start": 48.34000015258789,
+                "end": 48.84000015258789
+            },
+            {
+                "word": "fette",
+                "start": 49.2599983215332,
+                "end": 49.2599983215332
+            },
+            {
+                "word": "Pfannkuchen",
+                "start": 49.2599983215332,
+                "end": 49.939998626708984
+            },
+            {
+                "word": "fertig",
+                "start": 49.939998626708984,
+                "end": 50.52000045776367
+            },
+            {
+                "word": "war,",
+                "start": 50.52000045776367,
+                "end": 50.86000061035156
+            },
+            {
+                "word": "wollte",
+                "start": 51.65999984741211,
+                "end": 51.65999984741211
+            },
+            {
+                "word": "er",
+                "start": 51.65999984741211,
+                "end": 51.939998626708984
+            },
+            {
+                "word": "sich",
+                "start": 51.939998626708984,
+                "end": 52.099998474121094
+            },
+            {
+                "word": "jedoch",
+                "start": 52.099998474121094,
+                "end": 52.459999084472656
+            },
+            {
+                "word": "nicht",
+                "start": 52.459999084472656,
+                "end": 52.81999969482422
+            },
+            {
+                "word": "von",
+                "start": 52.81999969482422,
+                "end": 53.02000045776367
+            },
+            {
+                "word": "den",
+                "start": 53.02000045776367,
+                "end": 53.2400016784668
+            },
+            {
+                "word": "drei",
+                "start": 53.2400016784668,
+                "end": 53.599998474121094
+            },
+            {
+                "word": "alten",
+                "start": 53.599998474121094,
+                "end": 54
+            },
+            {
+                "word": "Frauen",
+                "start": 54,
+                "end": 54.2599983215332
+            },
+            {
+                "word": "essen",
+                "start": 54.2599983215332,
+                "end": 54.7599983215332
+            },
+            {
+                "word": "lassen.",
+                "start": 54.7599983215332,
+                "end": 55.18000030517578
+            }
+        ],
+        "translationEn": "When the thick, fat pancake was ready, however, it did not want to be eaten by the three old women.",
+        "translationVi": "Khi chiếc bánh pancake béo tròn đã hoàn thành, nó không muốn bị ba bà lão ăn."
+    },
+    {
+        "text": "Sondern sprang aus der Pfanne und aus dem Fenster: kantapper, kantapper, kantapper.",
+        "start": 55.7599983215332,
+        "end": 59.97999954223633,
+        "wordTimings": [
+            {
+                "word": "Sondern",
+                "start": 55.7599983215332,
+                "end": 56.099998474121094
+            },
+            {
+                "word": "sprang",
+                "start": 56.099998474121094,
+                "end": 56.540000915527344
+            },
+            {
+                "word": "aus",
+                "start": 56.540000915527344,
+                "end": 56.7599983215332
+            },
+            {
+                "word": "der",
+                "start": 56.7599983215332,
+                "end": 57.040000915527344
+            },
+            {
+                "word": "Pfanne",
+                "start": 57.040000915527344,
+                "end": 57.2599983215332
+            },
+            {
+                "word": "und",
+                "start": 57.2599983215332,
+                "end": 57.79999923706055
+            },
+            {
+                "word": "aus",
+                "start": 57.79999923706055,
+                "end": 58.02000045776367
+            },
+            {
+                "word": "dem",
+                "start": 58.02000045776367,
+                "end": 58.2599983215332
+            },
+            {
+                "word": "Fenster:",
+                "start": 58.2599983215332,
+                "end": 58.7400016784668
+            },
+            {
+                "word": "kantapper,",
+                "start": 59.220001220703125,
+                "end": 59.97999954223633
+            },
+            {
+                "word": "kantapper,",
+                "start": 59.97999954223633,
+                "end": 59.97999954223633
+            },
+            {
+                "word": "kantapper.",
+                "start": 59.97999954223633,
+                "end": 59.97999954223633
+            }
+        ],
+        "translationEn": "But jumped out of the pan and out of the window: tap tap, tap tap, tap tap.",
+        "translationVi": "Nhưng nhảy ra khỏi chảo và ra ngoài cửa sổ: kantapper, kantapper, kantapper."
+    },
+    {
+        "text": "In den Wald hinein.",
+        "start": 59.97999954223633,
+        "end": 62.47999954223633,
+        "wordTimings": [
+            {
+                "word": "In",
+                "start": 59.97999954223633,
+                "end": 60.84000015258789
+            },
+            {
+                "word": "den",
+                "start": 60.84000015258789,
+                "end": 61.060001373291016
+            },
+            {
+                "word": "Wald",
+                "start": 61.060001373291016,
+                "end": 61.459999084472656
+            },
+            {
+                "word": "hinein.",
+                "start": 61.459999084472656,
+                "end": 62.47999954223633
+            }
+        ],
+        "translationEn": "Into the forest.",
+        "translationVi": "Vào trong rừng."
+    },
+    {
+        "text": "Da begegnete dem Pfannkuchen ein Häschen, das rief:",
+        "start": 72.5,
+        "end": 76.12000274658203,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 72.5,
+                "end": 73.22000122070312
+            },
+            {
+                "word": "begegnete",
+                "start": 73.22000122070312,
+                "end": 73.87999725341797
+            },
+            {
+                "word": "dem",
+                "start": 73.87999725341797,
+                "end": 74.13999938964844
+            },
+            {
+                "word": "Pfannkuchen",
+                "start": 74.13999938964844,
+                "end": 74.66000366210938
+            },
+            {
+                "word": "ein",
+                "start": 74.66000366210938,
+                "end": 74.9000015258789
+            },
+            {
+                "word": "Häschen,",
+                "start": 74.9000015258789,
+                "end": 75.36000061035156
+            },
+            {
+                "word": "das",
+                "start": 76.08000183105469,
+                "end": 76.12000274658203
+            },
+            {
+                "word": "rief:",
+                "start": 76.12000274658203,
+                "end": 76.12000274658203
+            }
+        ],
+        "translationEn": "Then a little rabbit met the pancake, which called out:",
+        "translationVi": "Lúc đó, một chú thỏ gặp chiếc bánh kếp và kêu lên:"
+    },
+    {
+        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Doch der Pfannkuchen antwortete:",
+        "start": 76.87999725341797,
+        "end": 83.81999969482422,
+        "wordTimings": [
+            {
+                "word": "Dicker",
+                "start": 76.87999725341797,
+                "end": 77.08000183105469
+            },
+            {
+                "word": "fetter",
+                "start": 77.30000305175781,
+                "end": 77.37999725341797
+            },
+            {
+                "word": "Pfannkuchen,",
+                "start": 77.37999725341797,
+                "end": 78.19999694824219
+            },
+            {
+                "word": "bleib",
+                "start": 78.73999786376953,
+                "end": 78.86000061035156
+            },
+            {
+                "word": "stehen,",
+                "start": 78.86000061035156,
+                "end": 79.19999694824219
+            },
+            {
+                "word": "ich",
+                "start": 79.31999969482422,
+                "end": 79.45999908447266
+            },
+            {
+                "word": "will",
+                "start": 79.45999908447266,
+                "end": 79.58000183105469
+            },
+            {
+                "word": "dich",
+                "start": 79.58000183105469,
+                "end": 79.77999877929688
+            },
+            {
+                "word": "fressen!",
+                "start": 79.77999877929688,
+                "end": 80.63999938964844
+            },
+            {
+                "word": "Doch",
+                "start": 81.95999908447266,
+                "end": 82.22000122070312
+            },
+            {
+                "word": "der",
+                "start": 82.22000122070312,
+                "end": 82.41999816894531
+            },
+            {
+                "word": "Pfannkuchen",
+                "start": 82.41999816894531,
+                "end": 83.0199966430664
+            },
+            {
+                "word": "antwortete:",
+                "start": 83.0199966430664,
+                "end": 83.81999969482422
+            }
+        ],
+        "translationEn": "Fat thick pancake, stay still, I want to eat you! But the pancake replied:",
+        "translationVi": "Bánh pancake béo tròn, đứng lại, tôi muốn ăn bạn! Nhưng bánh pancake đã trả lời:"
+    },
+    {
+        "text": "Ich bin drei alten Weibern entwischt.",
+        "start": 84.77999877929688,
+        "end": 86.81999969482422,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 84.77999877929688,
+                "end": 84.9000015258789
+            },
+            {
+                "word": "bin",
+                "start": 84.9000015258789,
+                "end": 85.0999984741211
+            },
+            {
+                "word": "drei",
+                "start": 85.0999984741211,
+                "end": 85.45999908447266
+            },
+            {
+                "word": "alten",
+                "start": 85.45999908447266,
+                "end": 85.87999725341797
+            },
+            {
+                "word": "Weibern",
+                "start": 85.87999725341797,
+                "end": 86.37999725341797
+            },
+            {
+                "word": "entwischt.",
+                "start": 86.37999725341797,
+                "end": 86.81999969482422
+            }
+        ],
+        "translationEn": "I escaped from three old women.",
+        "translationVi": "Tôi đã thoát khỏi ba bà lão."
+    },
+    {
+        "text": "Und da soll ich mich von dir anknabbern lassen?",
+        "start": 87.18000030517578,
+        "end": 89.83999633789062,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 87.18000030517578,
+                "end": 87.44000244140625
+            },
+            {
+                "word": "da",
+                "start": 87.44000244140625,
+                "end": 87.73999786376953
+            },
+            {
+                "word": "soll",
+                "start": 87.73999786376953,
+                "end": 87.87999725341797
+            },
+            {
+                "word": "ich",
+                "start": 87.87999725341797,
+                "end": 88.04000091552734
+            },
+            {
+                "word": "mich",
+                "start": 88.04000091552734,
+                "end": 88.23999786376953
+            },
+            {
+                "word": "von",
+                "start": 88.23999786376953,
+                "end": 88.4800033569336
+            },
+            {
+                "word": "dir",
+                "start": 88.4800033569336,
+                "end": 88.83999633789062
+            },
+            {
+                "word": "anknabbern",
+                "start": 88.83999633789062,
+                "end": 89.4800033569336
+            },
+            {
+                "word": "lassen?",
+                "start": 89.4800033569336,
+                "end": 89.83999633789062
+            }
+        ],
+        "translationEn": "And am I supposed to let you nibble on me?",
+        "translationVi": "Và tôi phải để bạn gặm nhấm tôi sao?"
+    },
+    {
+        "text": "Und rollte kantapper, kantapper weiter in den Wald hinein.",
+        "start": 90.83000183105469,
+        "end": 94.73999786376953,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 90.83000183105469,
+                "end": 91.18000030517578
+            },
+            {
+                "word": "rollte",
+                "start": 91.18000030517578,
+                "end": 91.76000213623047
+            },
+            {
+                "word": "kantapper,",
+                "start": 91.76000213623047,
+                "end": 92.5199966430664
+            },
+            {
+                "word": "kantapper",
+                "start": 92.66000366210938,
+                "end": 93.22000122070312
+            },
+            {
+                "word": "weiter",
+                "start": 93.22000122070312,
+                "end": 93.83999633789062
+            },
+            {
+                "word": "in",
+                "start": 93.83999633789062,
+                "end": 93.95999908447266
+            },
+            {
+                "word": "den",
+                "start": 93.95999908447266,
+                "end": 94.23999786376953
+            },
+            {
+                "word": "Wald",
+                "start": 94.23999786376953,
+                "end": 94.36000061035156
+            },
+            {
+                "word": "hinein.",
+                "start": 94.36000061035156,
+                "end": 94.73999786376953
+            }
+        ],
+        "translationEn": "And rolled on, tap-tap, deeper into the forest.",
+        "translationVi": "Và tiếp tục lăn lóc, lăn lóc vào trong rừng."
+    },
+    {
+        "text": "Nach einer Weile traf der Pfannkuchen den Wolf. Dieser sagte:",
+        "start": 98.77999877929688,
+        "end": 103.95999908447266,
+        "wordTimings": [
+            {
+                "word": "Nach",
+                "start": 98.77999877929688,
+                "end": 99.4800033569336
+            },
+            {
+                "word": "einer",
+                "start": 99.4800033569336,
+                "end": 99.80000305175781
+            },
+            {
+                "word": "Weile",
+                "start": 99.80000305175781,
+                "end": 100.16000366210938
+            },
+            {
+                "word": "traf",
+                "start": 100.16000366210938,
+                "end": 100.9000015258789
+            },
+            {
+                "word": "der",
+                "start": 100.9000015258789,
+                "end": 101.13999938964844
+            },
+            {
+                "word": "Pfannkuchen",
+                "start": 101.13999938964844,
+                "end": 101.76000213623047
+            },
+            {
+                "word": "den",
+                "start": 101.76000213623047,
+                "end": 102.12000274658203
+            },
+            {
+                "word": "Wolf.",
+                "start": 102.12000274658203,
+                "end": 102.45999908447266
+            },
+            {
+                "word": "Dieser",
+                "start": 103.45999908447266,
+                "end": 103.5199966430664
+            },
+            {
+                "word": "sagte:",
+                "start": 103.5199966430664,
+                "end": 103.95999908447266
+            }
+        ],
+        "translationEn": "After a while, the pancake met the wolf. He said:",
+        "translationVi": "Sau một thời gian, chiếc bánh kếp gặp con sói. Nó nói:"
+    },
+    {
+        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Doch der sagte:",
+        "start": 105.19999694824219,
+        "end": 111.5199966430664,
+        "wordTimings": [
+            {
+                "word": "Dicker",
+                "start": 105.19999694824219,
+                "end": 105.5999984741211
+            },
+            {
+                "word": "fetter",
+                "start": 105.83999633789062,
+                "end": 106.0199966430664
+            },
+            {
+                "word": "Pfannkuchen,",
+                "start": 106.0199966430664,
+                "end": 107.05999755859375
+            },
+            {
+                "word": "bleib",
+                "start": 107.77999877929688,
+                "end": 107.86000061035156
+            },
+            {
+                "word": "stehen,",
+                "start": 107.86000061035156,
+                "end": 108.4000015258789
+            },
+            {
+                "word": "ich",
+                "start": 108.55999755859375,
+                "end": 108.69999694824219
+            },
+            {
+                "word": "will",
+                "start": 108.69999694824219,
+                "end": 108.83999633789062
+            },
+            {
+                "word": "dich",
+                "start": 108.83999633789062,
+                "end": 109.13999938964844
+            },
+            {
+                "word": "fressen!",
+                "start": 109.13999938964844,
+                "end": 109.83999633789062
+            },
+            {
+                "word": "Doch",
+                "start": 110.66000366210938,
+                "end": 110.9000015258789
+            },
+            {
+                "word": "der",
+                "start": 110.9000015258789,
+                "end": 111.13999938964844
+            },
+            {
+                "word": "sagte:",
+                "start": 111.13999938964844,
+                "end": 111.5199966430664
+            }
+        ],
+        "translationEn": "\"Fat thick pancake, stay still, I want to eat you!\" But it said:",
+        "translationVi": "Bánh pancake béo tròn, đứng lại, tôi muốn ăn bạn! Nhưng nó đã nói:"
+    },
+    {
+        "text": "Ich bin drei alten Weibern und dem Häschen entkommen.",
+        "start": 112.54000091552734,
+        "end": 115.69999694824219,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 112.54000091552734,
+                "end": 112.5999984741211
+            },
+            {
+                "word": "bin",
+                "start": 112.5999984741211,
+                "end": 112.81999969482422
+            },
+            {
+                "word": "drei",
+                "start": 112.81999969482422,
+                "end": 113.26000213623047
+            },
+            {
+                "word": "alten",
+                "start": 113.26000213623047,
+                "end": 113.69999694824219
+            },
+            {
+                "word": "Weibern",
+                "start": 113.69999694824219,
+                "end": 114.37999725341797
+            },
+            {
+                "word": "und",
+                "start": 114.37999725341797,
+                "end": 114.62000274658203
+            },
+            {
+                "word": "dem",
+                "start": 114.62000274658203,
+                "end": 114.83999633789062
+            },
+            {
+                "word": "Häschen",
+                "start": 114.83999633789062,
+                "end": 115.27999877929688
+            },
+            {
+                "word": "entkommen.",
+                "start": 115.27999877929688,
+                "end": 115.69999694824219
+            }
+        ],
+        "translationEn": "I escaped from three old women and the little bunny.",
+        "translationVi": "Tôi đã trốn thoát khỏi ba bà lão và con thỏ."
+    },
+    {
+        "text": "Und jetzt soll ich mich von dir fressen lassen?",
+        "start": 115.9800033569336,
+        "end": 118.41999816894531,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 115.9800033569336,
+                "end": 116.30000305175781
+            },
+            {
+                "word": "jetzt",
+                "start": 116.30000305175781,
+                "end": 116.5999984741211
+            },
+            {
+                "word": "soll",
+                "start": 116.5999984741211,
+                "end": 116.77999877929688
+            },
+            {
+                "word": "ich",
+                "start": 116.77999877929688,
+                "end": 116.94000244140625
+            },
+            {
+                "word": "mich",
+                "start": 116.94000244140625,
+                "end": 117.12000274658203
+            },
+            {
+                "word": "von",
+                "start": 117.12000274658203,
+                "end": 117.36000061035156
+            },
+            {
+                "word": "dir",
+                "start": 117.36000061035156,
+                "end": 117.66000366210938
+            },
+            {
+                "word": "fressen",
+                "start": 117.66000366210938,
+                "end": 118.19999694824219
+            },
+            {
+                "word": "lassen?",
+                "start": 118.19999694824219,
+                "end": 118.41999816894531
+            }
+        ],
+        "translationEn": "And now I'm supposed to let you eat me?",
+        "translationVi": "Và bây giờ tôi phải để bạn ăn thịt tôi?"
+    },
+    {
+        "text": "Und kugelte kantapper, kantapper tiefer in den Wald hinein.",
+        "start": 118.41999816894531,
+        "end": 124.16000366210938,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 118.41999816894531,
+                "end": 119.0999984741211
+            },
+            {
+                "word": "kugelte",
+                "start": 119.0999984741211,
+                "end": 119.77999877929688
+            },
+            {
+                "word": "kantapper,",
+                "start": 119.77999877929688,
+                "end": 120.73999786376953
+            },
+            {
+                "word": "kantapper",
+                "start": 120.91999816894531,
+                "end": 121.5
+            },
+            {
+                "word": "tiefer",
+                "start": 121.5,
+                "end": 122.13999938964844
+            },
+            {
+                "word": "in",
+                "start": 122.13999938964844,
+                "end": 122.41999816894531
+            },
+            {
+                "word": "den",
+                "start": 122.41999816894531,
+                "end": 122.73999786376953
+            },
+            {
+                "word": "Wald",
+                "start": 122.73999786376953,
+                "end": 122.81999969482422
+            },
+            {
+                "word": "hinein.",
+                "start": 122.81999969482422,
+                "end": 124.16000366210938
+            }
+        ],
+        "translationEn": "And rolled deeper into the forest, kantapper, kantapper.",
+        "translationVi": "Và lăn lộn, lăn lộn sâu hơn vào trong rừng."
+    },
+    {
+        "text": "Da kam plötzlich eine Ziege angehüpft.",
+        "start": 131.4600067138672,
+        "end": 134.24000549316406,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 131.4600067138672,
+                "end": 131.86000061035156
+            },
+            {
+                "word": "kam",
+                "start": 131.86000061035156,
+                "end": 132.13999938964844
+            },
+            {
+                "word": "plötzlich",
+                "start": 132.13999938964844,
+                "end": 132.60000610351562
+            },
+            {
+                "word": "eine",
+                "start": 132.60000610351562,
+                "end": 132.86000061035156
+            },
+            {
+                "word": "Ziege",
+                "start": 132.86000061035156,
+                "end": 133.3000030517578
+            },
+            {
+                "word": "angehüpft.",
+                "start": 133.3000030517578,
+                "end": 134.24000549316406
+            }
+        ],
+        "translationEn": "Suddenly, a goat hopped over.",
+        "translationVi": "Bỗng nhiên có một con dê nhảy đến."
+    },
+    {
+        "text": "Als sie den Pfannkuchen dahinrollen sah, rief auch sie:",
+        "start": 134.97999572753906,
+        "end": 138.10000610351562,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 134.97999572753906,
+                "end": 135.02000427246094
+            },
+            {
+                "word": "sie",
+                "start": 135.02000427246094,
+                "end": 135.17999267578125
+            },
+            {
+                "word": "den",
+                "start": 135.17999267578125,
+                "end": 135.44000244140625
+            },
+            {
+                "word": "Pfannkuchen",
+                "start": 135.44000244140625,
+                "end": 135.94000244140625
+            },
+            {
+                "word": "dahinrollen",
+                "start": 135.94000244140625,
+                "end": 136.75999450683594
+            },
+            {
+                "word": "sah,",
+                "start": 136.75999450683594,
+                "end": 137.05999755859375
+            },
+            {
+                "word": "rief",
+                "start": 137.55999755859375,
+                "end": 137.55999755859375
+            },
+            {
+                "word": "auch",
+                "start": 137.55999755859375,
+                "end": 137.82000732421875
+            },
+            {
+                "word": "sie:",
+                "start": 137.82000732421875,
+                "end": 138.10000610351562
+            }
+        ],
+        "translationEn": "When she saw the pancake rolling away, she also shouted:",
+        "translationVi": "Khi cô ấy thấy chiếc bánh kếp lăn đi, cô ấy cũng kêu lên:"
+    },
+    {
+        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Doch diese antwortete erneut:",
+        "start": 138.9199981689453,
+        "end": 145.8000030517578,
+        "wordTimings": [
+            {
+                "word": "Dicker",
+                "start": 138.9199981689453,
+                "end": 139.17999267578125
+            },
+            {
+                "word": "fetter",
+                "start": 139.52000427246094,
+                "end": 139.66000366210938
+            },
+            {
+                "word": "Pfannkuchen,",
+                "start": 139.66000366210938,
+                "end": 140.5399932861328
+            },
+            {
+                "word": "bleib",
+                "start": 140.8800048828125,
+                "end": 140.9600067138672
+            },
+            {
+                "word": "stehen,",
+                "start": 140.9600067138672,
+                "end": 141.47999572753906
+            },
+            {
+                "word": "ich",
+                "start": 141.82000732421875,
+                "end": 142
+            },
+            {
+                "word": "will",
+                "start": 142,
+                "end": 142.17999267578125
+            },
+            {
+                "word": "dich",
+                "start": 142.17999267578125,
+                "end": 142.3800048828125
+            },
+            {
+                "word": "fressen!",
+                "start": 142.3800048828125,
+                "end": 143.10000610351562
+            },
+            {
+                "word": "Doch",
+                "start": 143.8800048828125,
+                "end": 144.13999938964844
+            },
+            {
+                "word": "diese",
+                "start": 144.13999938964844,
+                "end": 144.44000244140625
+            },
+            {
+                "word": "antwortete",
+                "start": 144.44000244140625,
+                "end": 145.25999450683594
+            },
+            {
+                "word": "erneut:",
+                "start": 145.25999450683594,
+                "end": 145.8000030517578
+            }
+        ],
+        "translationEn": "Thick, fat pancake, stay still, I want to eat you! But it replied again:",
+        "translationVi": "Bánh pancake dày mập, đứng lại, tôi muốn ăn bạn! Nhưng nó lại trả lời:"
+    },
+    {
+        "text": "Ich bin drei alten Weibern und dem Häschen und dem Wolf entkommen.",
+        "start": 146.5,
+        "end": 150.60000610351562,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 146.5,
+                "end": 146.60000610351562
+            },
+            {
+                "word": "bin",
+                "start": 146.60000610351562,
+                "end": 146.83999633789062
+            },
+            {
+                "word": "drei",
+                "start": 146.83999633789062,
+                "end": 147.25999450683594
+            },
+            {
+                "word": "alten",
+                "start": 147.25999450683594,
+                "end": 147.66000366210938
+            },
+            {
+                "word": "Weibern",
+                "start": 147.66000366210938,
+                "end": 148.39999389648438
+            },
+            {
+                "word": "und",
+                "start": 148.39999389648438,
+                "end": 148.67999267578125
+            },
+            {
+                "word": "dem",
+                "start": 148.67999267578125,
+                "end": 148.67999267578125
+            },
+            {
+                "word": "Häschen",
+                "start": 148.67999267578125,
+                "end": 149.3000030517578
+            },
+            {
+                "word": "und",
+                "start": 149.3000030517578,
+                "end": 149.60000610351562
+            },
+            {
+                "word": "dem",
+                "start": 149.60000610351562,
+                "end": 150.1199951171875
+            },
+            {
+                "word": "Wolf",
+                "start": 150.1199951171875,
+                "end": 150.1199951171875
+            },
+            {
+                "word": "entkommen.",
+                "start": 150.1199951171875,
+                "end": 150.60000610351562
+            }
+        ],
+        "translationEn": "I escaped from three old women, the little rabbit, and the wolf.",
+        "translationVi": "Tôi đã thoát khỏi ba bà lão, con thỏ và con sói."
+    },
+    {
+        "text": "Und da soll ich mich von dir fressen lassen? Und kullerte kantapper, kantapper weiter.",
+        "start": 151,
+        "end": 156.86000061035156,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 151,
+                "end": 151.1999969482422
+            },
+            {
+                "word": "da",
+                "start": 151.1999969482422,
+                "end": 151.55999755859375
+            },
+            {
+                "word": "soll",
+                "start": 151.55999755859375,
+                "end": 151.72000122070312
+            },
+            {
+                "word": "ich",
+                "start": 151.72000122070312,
+                "end": 151.89999389648438
+            },
+            {
+                "word": "mich",
+                "start": 151.89999389648438,
+                "end": 152.1199951171875
+            },
+            {
+                "word": "von",
+                "start": 152.1199951171875,
+                "end": 152.39999389648438
+            },
+            {
+                "word": "dir",
+                "start": 152.39999389648438,
+                "end": 152.74000549316406
+            },
+            {
+                "word": "fressen",
+                "start": 152.74000549316406,
+                "end": 153.27999877929688
+            },
+            {
+                "word": "lassen?",
+                "start": 153.27999877929688,
+                "end": 153.52000427246094
+            },
+            {
+                "word": "Und",
+                "start": 153.97999572753906,
+                "end": 154.3000030517578
+            },
+            {
+                "word": "kullerte",
+                "start": 154.3000030517578,
+                "end": 154.82000732421875
+            },
+            {
+                "word": "kantapper,",
+                "start": 154.82000732421875,
+                "end": 155.6999969482422
+            },
+            {
+                "word": "kantapper",
+                "start": 155.89999389648438,
+                "end": 156.47999572753906
+            },
+            {
+                "word": "weiter.",
+                "start": 156.47999572753906,
+                "end": 156.86000061035156
+            }
+        ],
+        "translationEn": "And am I supposed to let you eat me? And it rolled on, clattering, clattering further.",
+        "translationVi": "Và vậy mà tôi phải để bạn ăn thịt tôi? Và tiếp tục lăn lộn, lăn lộn mãi."
+    },
+    {
+        "text": "Als nächstes kam ein Pferd herbeigesprungen und rief:",
+        "start": 164.39999389648438,
+        "end": 167.83999633789062,
+        "wordTimings": [
+            {
+                "word": "Als",
+                "start": 164.39999389648438,
+                "end": 165.16000366210938
+            },
+            {
+                "word": "nächstes",
+                "start": 165.16000366210938,
+                "end": 165.6199951171875
+            },
+            {
+                "word": "kam",
+                "start": 165.6199951171875,
+                "end": 165.8000030517578
+            },
+            {
+                "word": "ein",
+                "start": 165.8000030517578,
+                "end": 166.0800018310547
+            },
+            {
+                "word": "Pferd",
+                "start": 166.0800018310547,
+                "end": 166.44000244140625
+            },
+            {
+                "word": "herbeigesprungen",
+                "start": 166.44000244140625,
+                "end": 167.1999969482422
+            },
+            {
+                "word": "und",
+                "start": 167.1999969482422,
+                "end": 167.83999633789062
+            },
+            {
+                "word": "rief:",
+                "start": 167.83999633789062,
+                "end": 167.83999633789062
+            }
+        ],
+        "translationEn": "Next, a horse came jumping over and called out:",
+        "translationVi": "Tiếp theo, một con ngựa nhảy đến và kêu lên:"
+    },
+    {
+        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Doch der Pfannkuchen antwortete nur:",
+        "start": 168.94000244140625,
+        "end": 176.4199981689453,
+        "wordTimings": [
+            {
+                "word": "Dicker",
+                "start": 168.94000244140625,
+                "end": 169.32000732421875
+            },
+            {
+                "word": "fetter",
+                "start": 169.55999755859375,
+                "end": 169.75999450683594
+            },
+            {
+                "word": "Pfannkuchen,",
+                "start": 169.75999450683594,
+                "end": 170.63999938964844
+            },
+            {
+                "word": "bleib",
+                "start": 170.9600067138672,
+                "end": 171.02000427246094
+            },
+            {
+                "word": "stehen,",
+                "start": 171.02000427246094,
+                "end": 171.60000610351562
+            },
+            {
+                "word": "ich",
+                "start": 171.97999572753906,
+                "end": 172.22000122070312
+            },
+            {
+                "word": "will",
+                "start": 172.22000122070312,
+                "end": 172.39999389648438
+            },
+            {
+                "word": "dich",
+                "start": 172.39999389648438,
+                "end": 172.63999938964844
+            },
+            {
+                "word": "fressen!",
+                "start": 172.63999938964844,
+                "end": 173.02000427246094
+            },
+            {
+                "word": "Doch",
+                "start": 174.0800018310547,
+                "end": 174.33999633789062
+            },
+            {
+                "word": "der",
+                "start": 174.33999633789062,
+                "end": 174.55999755859375
+            },
+            {
+                "word": "Pfannkuchen",
+                "start": 174.55999755859375,
+                "end": 175.22000122070312
+            },
+            {
+                "word": "antwortete",
+                "start": 175.22000122070312,
+                "end": 176
+            },
+            {
+                "word": "nur:",
+                "start": 176,
+                "end": 176.4199981689453
+            }
+        ],
+        "translationEn": "Fat thick pancake, stay still, I want to eat you! But the pancake only replied:",
+        "translationVi": "Bánh kếp béo tròn, đứng lại, tôi muốn ăn bạn! Nhưng bánh kếp chỉ đáp lại:"
+    },
+    {
+        "text": "Ich bin drei alten Weibern, dem Häschen, dem Wolf und der Ziege entkommen.",
+        "start": 176.4199981689453,
+        "end": 182.1199951171875,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 176.4199981689453,
+                "end": 177.1999969482422
+            },
+            {
+                "word": "bin",
+                "start": 177.1999969482422,
+                "end": 177.44000244140625
+            },
+            {
+                "word": "drei",
+                "start": 177.44000244140625,
+                "end": 177.86000061035156
+            },
+            {
+                "word": "alten",
+                "start": 177.86000061035156,
+                "end": 178.3000030517578
+            },
+            {
+                "word": "Weibern,",
+                "start": 178.3000030517578,
+                "end": 179.1999969482422
+            },
+            {
+                "word": "dem",
+                "start": 179.39999389648438,
+                "end": 179.44000244140625
+            },
+            {
+                "word": "Häschen,",
+                "start": 179.44000244140625,
+                "end": 180.0800018310547
+            },
+            {
+                "word": "dem",
+                "start": 180.32000732421875,
+                "end": 180.55999755859375
+            },
+            {
+                "word": "Wolf",
+                "start": 180.55999755859375,
+                "end": 180.74000549316406
+            },
+            {
+                "word": "und",
+                "start": 180.74000549316406,
+                "end": 181.0399932861328
+            },
+            {
+                "word": "der",
+                "start": 181.0399932861328,
+                "end": 181.36000061035156
+            },
+            {
+                "word": "Ziege",
+                "start": 181.36000061035156,
+                "end": 181.67999267578125
+            },
+            {
+                "word": "entkommen.",
+                "start": 181.67999267578125,
+                "end": 182.1199951171875
+            }
+        ],
+        "translationEn": "I escaped from three old women, the bunny, the wolf, and the goat.",
+        "translationVi": "Tôi đã trốn thoát khỏi ba bà lão, con thỏ, con sói và con dê."
+    },
+    {
+        "text": "Und jetzt soll ich mich von dir fressen lassen?",
+        "start": 182.55999755859375,
+        "end": 185.13999938964844,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 182.55999755859375,
+                "end": 182.82000732421875
+            },
+            {
+                "word": "jetzt",
+                "start": 182.82000732421875,
+                "end": 183.13999938964844
+            },
+            {
+                "word": "soll",
+                "start": 183.13999938964844,
+                "end": 183.36000061035156
+            },
+            {
+                "word": "ich",
+                "start": 183.36000061035156,
+                "end": 183.55999755859375
+            },
+            {
+                "word": "mich",
+                "start": 183.55999755859375,
+                "end": 183.74000549316406
+            },
+            {
+                "word": "von",
+                "start": 183.74000549316406,
+                "end": 183.97999572753906
+            },
+            {
+                "word": "dir",
+                "start": 183.97999572753906,
+                "end": 184.36000061035156
+            },
+            {
+                "word": "fressen",
+                "start": 184.36000061035156,
+                "end": 184.89999389648438
+            },
+            {
+                "word": "lassen?",
+                "start": 184.89999389648438,
+                "end": 185.13999938964844
+            }
+        ],
+        "translationEn": "And now am I supposed to let you eat me?",
+        "translationVi": "Và bây giờ tôi phải để bạn ăn thịt tôi?"
+    },
+    {
+        "text": "Und rollte kantapper, kantapper schnell weiter.",
+        "start": 186.67999267578125,
+        "end": 190.60000610351562,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 186.67999267578125,
+                "end": 187.36000061035156
+            },
+            {
+                "word": "rollte",
+                "start": 187.36000061035156,
+                "end": 187.9600067138672
+            },
+            {
+                "word": "kantapper,",
+                "start": 187.9600067138672,
+                "end": 188.72000122070312
+            },
+            {
+                "word": "kantapper",
+                "start": 188.86000061035156,
+                "end": 189.47999572753906
+            },
+            {
+                "word": "schnell",
+                "start": 189.47999572753906,
+                "end": 190.0800018310547
+            },
+            {
+                "word": "weiter.",
+                "start": 190.0800018310547,
+                "end": 190.60000610351562
+            }
+        ],
+        "translationEn": "And rolled on, clattering, clattering quickly.",
+        "translationVi": "Và lăn nhanh, lăn nhanh tiếp tục."
+    },
+    {
+        "text": "Schließlich kam ein Schwein angerannt, das rief:",
+        "start": 196.5,
+        "end": 199.32000732421875,
+        "wordTimings": [
+            {
+                "word": "Schließlich",
+                "start": 196.5,
+                "end": 196.83999633789062
+            },
+            {
+                "word": "kam",
+                "start": 196.83999633789062,
+                "end": 197.10000610351562
+            },
+            {
+                "word": "ein",
+                "start": 197.10000610351562,
+                "end": 197.33999633789062
+            },
+            {
+                "word": "Schwein",
+                "start": 197.33999633789062,
+                "end": 197.77999877929688
+            },
+            {
+                "word": "angerannt,",
+                "start": 197.77999877929688,
+                "end": 198.3000030517578
+            },
+            {
+                "word": "das",
+                "start": 198.77999877929688,
+                "end": 198.97999572753906
+            },
+            {
+                "word": "rief:",
+                "start": 198.97999572753906,
+                "end": 199.32000732421875
+            }
+        ],
+        "translationEn": "Finally, a pig came running, shouting:",
+        "translationVi": "Cuối cùng, một con lợn chạy đến, nó kêu:"
+    },
+    {
+        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Dieser antwortete jedoch erneut:",
+        "start": 200.17999267578125,
+        "end": 207.77999877929688,
+        "wordTimings": [
+            {
+                "word": "Dicker",
+                "start": 200.17999267578125,
+                "end": 200.36000061035156
+            },
+            {
+                "word": "fetter",
+                "start": 200.82000732421875,
+                "end": 201.10000610351562
+            },
+            {
+                "word": "Pfannkuchen,",
+                "start": 201.10000610351562,
+                "end": 201.9600067138672
+            },
+            {
+                "word": "bleib",
+                "start": 202.3000030517578,
+                "end": 202.36000061035156
+            },
+            {
+                "word": "stehen,",
+                "start": 202.36000061035156,
+                "end": 202.9600067138672
+            },
+            {
+                "word": "ich",
+                "start": 203.22000122070312,
+                "end": 203.5399932861328
+            },
+            {
+                "word": "will",
+                "start": 203.5399932861328,
+                "end": 203.75999450683594
+            },
+            {
+                "word": "dich",
+                "start": 203.75999450683594,
+                "end": 204.02000427246094
+            },
+            {
+                "word": "fressen!",
+                "start": 204.02000427246094,
+                "end": 204.74000549316406
+            },
+            {
+                "word": "Dieser",
+                "start": 205.5399932861328,
+                "end": 205.9600067138672
+            },
+            {
+                "word": "antwortete",
+                "start": 205.9600067138672,
+                "end": 206.8800048828125
+            },
+            {
+                "word": "jedoch",
+                "start": 206.8800048828125,
+                "end": 207.3000030517578
+            },
+            {
+                "word": "erneut:",
+                "start": 207.3000030517578,
+                "end": 207.77999877929688
+            }
+        ],
+        "translationEn": "Fat thick pancake, stay still, I want to eat you! However, this one replied again:",
+        "translationVi": "Bánh pancake béo mập, đứng lại, tôi muốn ăn bạn! Tuy nhiên, nó lại trả lời một lần nữa:"
+    },
+    {
+        "text": "Ich bin drei alten Weibern, dem Häschen, dem Wolf, der Ziege und dem Pferd entkommen.",
+        "start": 208.67999267578125,
+        "end": 214.4199981689453,
+        "wordTimings": [
+            {
+                "word": "Ich",
+                "start": 208.67999267578125,
+                "end": 208.67999267578125
+            },
+            {
+                "word": "bin",
+                "start": 208.67999267578125,
+                "end": 208.9199981689453
+            },
+            {
+                "word": "drei",
+                "start": 208.9199981689453,
+                "end": 209.32000732421875
+            },
+            {
+                "word": "alten",
+                "start": 209.32000732421875,
+                "end": 209.75999450683594
+            },
+            {
+                "word": "Weibern,",
+                "start": 209.75999450683594,
+                "end": 210.72000122070312
+            },
+            {
+                "word": "dem",
+                "start": 210.75999450683594,
+                "end": 210.89999389648438
+            },
+            {
+                "word": "Häschen,",
+                "start": 210.89999389648438,
+                "end": 211.47999572753906
+            },
+            {
+                "word": "dem",
+                "start": 211.72000122070312,
+                "end": 211.82000732421875
+            },
+            {
+                "word": "Wolf,",
+                "start": 211.82000732421875,
+                "end": 212.13999938964844
+            },
+            {
+                "word": "der",
+                "start": 212.25999450683594,
+                "end": 212.47999572753906
+            },
+            {
+                "word": "Ziege",
+                "start": 212.47999572753906,
+                "end": 212.9199981689453
+            },
+            {
+                "word": "und",
+                "start": 212.9199981689453,
+                "end": 213.3000030517578
+            },
+            {
+                "word": "dem",
+                "start": 213.3000030517578,
+                "end": 213.86000061035156
+            },
+            {
+                "word": "Pferd",
+                "start": 213.86000061035156,
+                "end": 214
+            },
+            {
+                "word": "entkommen.",
+                "start": 214,
+                "end": 214.4199981689453
+            }
+        ],
+        "translationEn": "I escaped from three old women, the bunny, the wolf, the goat, and the horse.",
+        "translationVi": "Tôi đã thoát khỏi ba bà lão, con thỏ, con sói, con dê và con ngựa."
+    },
+    {
+        "text": "Und jetzt soll ich mich von dir fressen lassen?",
+        "start": 214.74000549316406,
+        "end": 217.72000122070312,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 214.74000549316406,
+                "end": 215
+            },
+            {
+                "word": "jetzt",
+                "start": 215,
+                "end": 215.36000061035156
+            },
+            {
+                "word": "soll",
+                "start": 215.36000061035156,
+                "end": 215.5800018310547
+            },
+            {
+                "word": "ich",
+                "start": 215.5800018310547,
+                "end": 215.97999572753906
+            },
+            {
+                "word": "mich",
+                "start": 215.97999572753906,
+                "end": 216.1999969482422
+            },
+            {
+                "word": "von",
+                "start": 216.1999969482422,
+                "end": 216.4600067138672
+            },
+            {
+                "word": "dir",
+                "start": 216.4600067138672,
+                "end": 216.8800048828125
+            },
+            {
+                "word": "fressen",
+                "start": 216.8800048828125,
+                "end": 217.4600067138672
+            },
+            {
+                "word": "lassen?",
+                "start": 217.4600067138672,
+                "end": 217.72000122070312
+            }
+        ],
+        "translationEn": "And now am I supposed to let you eat me?",
+        "translationVi": "Và bây giờ tôi phải để bạn ăn thịt tôi sao?"
+    },
+    {
+        "text": "Und kullerte kantapper, kantapper rasch weiter.",
+        "start": 218.27999877929688,
+        "end": 222.17999267578125,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 218.27999877929688,
+                "end": 218.52000427246094
+            },
+            {
+                "word": "kullerte",
+                "start": 218.52000427246094,
+                "end": 219.05999755859375
+            },
+            {
+                "word": "kantapper,",
+                "start": 219.05999755859375,
+                "end": 220.13999938964844
+            },
+            {
+                "word": "kantapper",
+                "start": 220.33999633789062,
+                "end": 221
+            },
+            {
+                "word": "rasch",
+                "start": 221,
+                "end": 221.86000061035156
+            },
+            {
+                "word": "weiter.",
+                "start": 221.86000061035156,
+                "end": 222.17999267578125
+            }
+        ],
+        "translationEn": "And it rolled along, rolling quickly further.",
+        "translationVi": "Và lăn lóc, lăn lóc nhanh chóng tiếp tục."
+    },
+    {
+        "text": "Da kamen drei Kinder, die keinen Vater und keine Mutter mehr hatten, und sagten:",
+        "start": 233.77999877929688,
+        "end": 238.86000061035156,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 233.77999877929688,
+                "end": 234.4600067138672
+            },
+            {
+                "word": "kamen",
+                "start": 234.4600067138672,
+                "end": 234.83999633789062
+            },
+            {
+                "word": "drei",
+                "start": 234.83999633789062,
+                "end": 235.1199951171875
+            },
+            {
+                "word": "Kinder,",
+                "start": 235.1199951171875,
+                "end": 235.55999755859375
+            },
+            {
+                "word": "die",
+                "start": 236.25999450683594,
+                "end": 236.3800048828125
+            },
+            {
+                "word": "keinen",
+                "start": 236.3800048828125,
+                "end": 236.67999267578125
+            },
+            {
+                "word": "Vater",
+                "start": 236.67999267578125,
+                "end": 237.02000427246094
+            },
+            {
+                "word": "und",
+                "start": 237.02000427246094,
+                "end": 237.27999877929688
+            },
+            {
+                "word": "keine",
+                "start": 237.27999877929688,
+                "end": 237.67999267578125
+            },
+            {
+                "word": "Mutter",
+                "start": 237.67999267578125,
+                "end": 237.6999969482422
+            },
+            {
+                "word": "mehr",
+                "start": 237.6999969482422,
+                "end": 238.1999969482422
+            },
+            {
+                "word": "hatten,",
+                "start": 238.1999969482422,
+                "end": 238.1999969482422
+            },
+            {
+                "word": "und",
+                "start": 238.1999969482422,
+                "end": 238.47999572753906
+            },
+            {
+                "word": "sagten:",
+                "start": 238.47999572753906,
+                "end": 238.86000061035156
+            }
+        ],
+        "translationEn": "Then three children came who no longer had a father or a mother, and said:",
+        "translationVi": "Có ba đứa trẻ đến, không còn cha mẹ nữa, và nói:"
+    },
+    {
+        "text": "Lieber Pfannkuchen, bleib stehen, wir haben den ganzen Tag noch nichts gegessen.",
+        "start": 239.86000061035156,
+        "end": 244.9600067138672,
+        "wordTimings": [
+            {
+                "word": "Lieber",
+                "start": 239.86000061035156,
+                "end": 239.89999389648438
+            },
+            {
+                "word": "Pfannkuchen,",
+                "start": 239.89999389648438,
+                "end": 240.67999267578125
+            },
+            {
+                "word": "bleib",
+                "start": 241.24000549316406,
+                "end": 241.3000030517578
+            },
+            {
+                "word": "stehen,",
+                "start": 241.3000030517578,
+                "end": 241.74000549316406
+            },
+            {
+                "word": "wir",
+                "start": 242.47999572753906,
+                "end": 242.55999755859375
+            },
+            {
+                "word": "haben",
+                "start": 242.55999755859375,
+                "end": 242.8000030517578
+            },
+            {
+                "word": "den",
+                "start": 242.8000030517578,
+                "end": 243.0399932861328
+            },
+            {
+                "word": "ganzen",
+                "start": 243.0399932861328,
+                "end": 243.47999572753906
+            },
+            {
+                "word": "Tag",
+                "start": 243.47999572753906,
+                "end": 243.83999633789062
+            },
+            {
+                "word": "noch",
+                "start": 243.83999633789062,
+                "end": 244.16000366210938
+            },
+            {
+                "word": "nichts",
+                "start": 244.16000366210938,
+                "end": 244.3800048828125
+            },
+            {
+                "word": "gegessen.",
+                "start": 244.3800048828125,
+                "end": 244.9600067138672
+            }
+        ],
+        "translationEn": "Dear pancake, stay still, we haven't eaten anything all day.",
+        "translationVi": "Bạn bánh kếp ơi, đứng lại, chúng ta chưa ăn gì cả trong suốt cả ngày."
+    },
+    {
+        "text": "Da sprang der dicke fette Pfannkuchen in den Korb der Kinder",
+        "start": 246.16000366210938,
+        "end": 250.75999450683594,
+        "wordTimings": [
+            {
+                "word": "Da",
+                "start": 246.16000366210938,
+                "end": 246.44000244140625
+            },
+            {
+                "word": "sprang",
+                "start": 246.44000244140625,
+                "end": 246.83999633789062
+            },
+            {
+                "word": "der",
+                "start": 246.83999633789062,
+                "end": 247.36000061035156
+            },
+            {
+                "word": "dicke",
+                "start": 247.36000061035156,
+                "end": 247.94000244140625
+            },
+            {
+                "word": "fette",
+                "start": 248.24000549316406,
+                "end": 248.24000549316406
+            },
+            {
+                "word": "Pfannkuchen",
+                "start": 248.24000549316406,
+                "end": 249.0800018310547
+            },
+            {
+                "word": "in",
+                "start": 249.0800018310547,
+                "end": 249.6199951171875
+            },
+            {
+                "word": "den",
+                "start": 249.6199951171875,
+                "end": 249.8800048828125
+            },
+            {
+                "word": "Korb",
+                "start": 249.8800048828125,
+                "end": 250.16000366210938
+            },
+            {
+                "word": "der",
+                "start": 250.16000366210938,
+                "end": 250.4199981689453
+            },
+            {
+                "word": "Kinder",
+                "start": 250.4199981689453,
+                "end": 250.75999450683594
+            }
+        ],
+        "translationEn": "Then the big fat pancake jumped into the children's basket.",
+        "translationVi": "Thế là cái bánh kếp béo tròn nhảy vào giỏ của bọn trẻ."
+    },
+    {
+        "text": "und ließ sich von ihnen nicht mehr fressen lassen.",
+        "start": 250.9199981689453,
+        "end": 252.16000366210938,
+        "wordTimings": [
+            {
+                "word": "und",
+                "start": 250.9199981689453,
+                "end": 251.60000610351562
+            },
+            {
+                "word": "ließ",
+                "start": 251.60000610351562,
+                "end": 251.8000030517578
+            },
+            {
+                "word": "sich",
+                "start": 251.8000030517578,
+                "end": 251.9199981689453
+            },
+            {
+                "word": "von",
+                "start": 251.9199981689453,
+                "end": 252.16000366210938
+            },
+            {
+                "word": "ihnen",
+                "start": 252.16000366210938,
+                "end": 252.16000366210938
+            },
+            {
+                "word": "nicht",
+                "start": 252.16000366210938,
+                "end": 252.16000366210938
+            },
+            {
+                "word": "mehr",
+                "start": 252.16000366210938,
+                "end": 252.16000366210938
+            },
+            {
+                "word": "fressen",
+                "start": 252.16000366210938,
+                "end": 252.16000366210938
+            },
+            {
+                "word": "lassen.",
+                "start": 252.16000366210938,
+                "end": 252.16000366210938
+            }
+        ],
+        "translationEn": "and no longer allowed them to eat him.",
+        "translationVi": "và không để chúng ăn nữa."
+    },
+    {
+        "text": "Jetzt kennst du das Märchen vom dicken fetten Pfannkuchen.",
+        "start": 256.8800048828125,
+        "end": 263.17999267578125,
+        "wordTimings": [
+            {
+                "word": "Jetzt",
+                "start": 256.8800048828125,
+                "end": 258.1199951171875
+            },
+            {
+                "word": "kennst",
+                "start": 258.1199951171875,
+                "end": 259.3599853515625
+            },
+            {
+                "word": "du",
+                "start": 259.3599853515625,
+                "end": 259.4800109863281
+            },
+            {
+                "word": "das",
+                "start": 259.4800109863281,
+                "end": 259.8800048828125
+            },
+            {
+                "word": "Märchen",
+                "start": 259.8800048828125,
+                "end": 260.3999938964844
+            },
+            {
+                "word": "vom",
+                "start": 260.3999938964844,
+                "end": 260.760009765625
+            },
+            {
+                "word": "dicken",
+                "start": 260.760009765625,
+                "end": 261.70001220703125
+            },
+            {
+                "word": "fetten",
+                "start": 262.1400146484375,
+                "end": 262.17999267578125
+            },
+            {
+                "word": "Pfannkuchen.",
+                "start": 262.17999267578125,
+                "end": 263.17999267578125
+            }
+        ],
+        "translationEn": "Now you know the fairy tale of the big fat pancake.",
+        "translationVi": "Bây giờ bạn đã biết câu chuyện cổ tích về chiếc bánh kếp béo tròn."
+    },
+    {
+        "text": "Aber hast du auch unseren kleinen Wichtel entdeckt?",
+        "start": 264.17999267578125,
+        "end": 268.4599914550781,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 264.17999267578125,
+                "end": 264.5799865722656
+            },
+            {
+                "word": "hast",
+                "start": 264.5799865722656,
+                "end": 265.4800109863281
+            },
+            {
+                "word": "du",
+                "start": 265.4800109863281,
+                "end": 265.70001220703125
+            },
+            {
+                "word": "auch",
+                "start": 265.70001220703125,
+                "end": 266
+            },
+            {
+                "word": "unseren",
+                "start": 266,
+                "end": 266.44000244140625
+            },
+            {
+                "word": "kleinen",
+                "start": 266.44000244140625,
+                "end": 266.9599914550781
+            },
+            {
+                "word": "Wichtel",
+                "start": 266.9599914550781,
+                "end": 267.739990234375
+            },
+            {
+                "word": "entdeckt?",
+                "start": 267.739990234375,
+                "end": 268.4599914550781
+            }
+        ],
+        "translationEn": "But have you also discovered our little gnome?",
+        "translationVi": "Nhưng bạn có phát hiện ra chú lùn nhỏ của chúng ta không?"
+    },
+    {
+        "text": "Du möchtest direkt weitere Märchen sehen? Dann klick hier.",
+        "start": 284.3399963378906,
+        "end": 287.32000732421875,
+        "wordTimings": [
+            {
+                "word": "Du",
+                "start": 284.3399963378906,
+                "end": 284.5799865722656
+            },
+            {
+                "word": "möchtest",
+                "start": 284.5799865722656,
+                "end": 284.67999267578125
+            },
+            {
+                "word": "direkt",
+                "start": 284.67999267578125,
+                "end": 285.1199951171875
+            },
+            {
+                "word": "weitere",
+                "start": 285.1199951171875,
+                "end": 285.55999755859375
+            },
+            {
+                "word": "Märchen",
+                "start": 285.55999755859375,
+                "end": 285.9599914550781
+            },
+            {
+                "word": "sehen?",
+                "start": 285.9599914550781,
+                "end": 286.260009765625
+            },
+            {
+                "word": "Dann",
+                "start": 286.5799865722656,
+                "end": 286.8800048828125
+            },
+            {
+                "word": "klick",
+                "start": 286.8800048828125,
+                "end": 286.94000244140625
+            },
+            {
+                "word": "hier.",
+                "start": 286.94000244140625,
+                "end": 287.32000732421875
+            }
+        ],
+        "translationEn": "Do you want to see more fairy tales directly? Then click here.",
+        "translationVi": "Bạn muốn xem thêm truyện cổ tích ngay bây giờ? Hãy nhấp vào đây."
+    }
+]

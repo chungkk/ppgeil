@@ -40,6 +40,7 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
   const [fetchingWhisperSRT, setFetchingWhisperSRT] = useState(false);
   const [fetchingWhisperV3, setFetchingWhisperV3] = useState(false);
   const [fetchingWhisperV4, setFetchingWhisperV4] = useState(false);
+  const [fetchingWhisperV5, setFetchingWhisperV5] = useState(false);
 
   // Thumbnail
   const [thumbnailFile, setThumbnailFile] = useState(null);
@@ -96,14 +97,14 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       const data = await res.json();
       setSrtText(data.srt);
       setWhisperV3Segments(null);
-      
+
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
       if (data.videoTitle && !formData.title) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -144,14 +145,14 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       const data = await res.json();
       setSrtText(data.srt);
       setWhisperV3Segments(null);
-      
+
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
       if (data.videoTitle && !formData.title) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -192,14 +193,14 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       const data = await res.json();
       setSrtText(data.srt);
       setWhisperV3Segments(data.segments || null);
-      
+
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
       if (data.videoTitle && !formData.title) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -240,14 +241,14 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       const data = await res.json();
       setSrtText(data.srt);
       setWhisperV3Segments(data.segments || null);
-      
+
       if (data.videoDuration) {
         setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
       }
       if (data.videoTitle && !formData.title) {
         const newId = generateIdFromTitle(data.videoTitle);
-        setFormData(prev => ({ 
-          ...prev, 
+        setFormData(prev => ({
+          ...prev,
           title: data.videoTitle,
           description: data.videoTitle,
           id: newId
@@ -259,6 +260,56 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       toast.error('❌ Lỗi: ' + error.message);
     } finally {
       setFetchingWhisperV4(false);
+    }
+  };
+
+  const handleGetWhisperV5 = async () => {
+    if (!youtubeUrl.trim()) {
+      toast.error('Vui lòng nhập YouTube URL');
+      return;
+    }
+
+    setFetchingWhisperV5(true);
+    try {
+      const token = localStorage.getItem('token');
+      const res = await fetch('/api/whisper-youtube-srt-v5', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ youtubeUrl: youtubeUrl.trim() })
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.message || 'Failed to get Whisper v5 SRT');
+      }
+
+      const data = await res.json();
+      setSrtText(data.srt);
+      setWhisperV3Segments(data.segments || null);
+
+      if (data.videoDuration) {
+        setFormData(prev => ({ ...prev, videoDuration: data.videoDuration }));
+      }
+      if (data.videoTitle && !formData.title) {
+        const newId = generateIdFromTitle(data.videoTitle);
+        setFormData(prev => ({
+          ...prev,
+          title: data.videoTitle,
+          description: data.videoTitle,
+          id: newId
+        }));
+      }
+
+      const mode = data.hasYouTubeCaptions ? 'Hybrid' : 'Whisper only';
+      toast.success(`✅ Karaoke Pro (${mode})!`);
+    } catch (error) {
+      console.error('Whisper v5 error:', error);
+      toast.error('❌ Lỗi: ' + error.message);
+    } finally {
+      setFetchingWhisperV5(false);
     }
   };
 
@@ -351,7 +402,7 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       // Auto-generate title and ID if not set
       const finalTitle = formData.title || videoTitle;
       const finalId = formData.id || generateIdFromTitle(finalTitle);
-      
+
       toast.success('✅ Đã tạo transcript! Đang lưu bài học...');
 
       // Step 2: Convert SRT to JSON
@@ -361,8 +412,8 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
-        body: JSON.stringify({ 
-          srtText: generatedSrt, 
+        body: JSON.stringify({
+          srtText: generatedSrt,
           lessonId: finalId,
           segments: segments
         })
@@ -414,7 +465,7 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
     if (!formData.title.trim()) newErrors.title = 'Tiêu đề không được để trống';
     if (!formData.description.trim()) newErrors.description = 'Mô tả không được để trống';
     if (!formData.level) newErrors.level = 'Vui lòng chọn cấp độ';
-    
+
     if (audioSource === 'youtube' && !youtubeUrl.trim()) {
       newErrors.audio = 'Vui lòng nhập YouTube URL';
     }
@@ -489,8 +540,8 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         },
-        body: JSON.stringify({ 
-          srtText, 
+        body: JSON.stringify({
+          srtText,
           lessonId: formData.id,
           segments: whisperV3Segments
         })
@@ -549,7 +600,7 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       {/* Cấp độ và Danh mục */}
       <div className={styles.section}>
         <h2 className={styles.sectionTitle}>📋 Phân loại</h2>
-        
+
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
             <label className={styles.label}>
@@ -597,7 +648,7 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       {/* Nguồn Audio */}
       <div className={styles.section}>
         <h2 className={styles.sectionTitle}>🎵 Nguồn Audio</h2>
-        
+
         <div className={styles.radioGroup}>
           <label className={styles.radioLabel}>
             <input
@@ -718,11 +769,12 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
           {audioSource === 'youtube' && (
             <button
               type="button"
-              onClick={handleGetWhisperV4}
-              disabled={fetchingWhisperV4 || !youtubeUrl.trim()}
+              onClick={handleGetWhisperV5}
+              disabled={fetchingWhisperV5 || !youtubeUrl.trim()}
               className={styles.actionBtnPrimary}
+              title="GPT smart segmentation + Whisper timing"
             >
-              {fetchingWhisperV4 ? '⏳ Đang tạo...' : '🎤 Karaoke'}
+              {fetchingWhisperV5 ? '⏳ Đang tạo...' : '⭐ Karaoke Pro'}
             </button>
           )}
 
@@ -773,7 +825,7 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       {/* Tiêu đề */}
       <div className={styles.section}>
         <h2 className={styles.sectionTitle}>📝 Thông tin bài học</h2>
-        
+
         <div className={styles.formGroup}>
           <label className={styles.label}>
             Tiêu đề <span className={styles.required}>*</span>
@@ -797,7 +849,7 @@ const CompactLessonForm = ({ categories = [], loadingCategories = false }) => {
       {/* Transcript */}
       <div className={styles.section}>
         <h2 className={styles.sectionTitle}>📄 Transcript (SRT)</h2>
-        
+
         {/* SRT Editor */}
         <div className={styles.formGroup}>
           <label className={styles.label}>
