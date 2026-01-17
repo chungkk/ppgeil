@@ -511,6 +511,7 @@ function mergeShortGptSegments(segments) {
 function mapTimestampsToGptSegments(words, gptSegments) {
     const results = [];
     let wordIdx = 0;
+    let lastKnownEnd = 0; // Track last known timestamp to prevent resetting to 0
 
     for (let segIdx = 0; segIdx < gptSegments.length; segIdx++) {
         const segmentText = gptSegments[segIdx];
@@ -542,6 +543,7 @@ function mapTimestampsToGptSegments(words, gptSegments) {
                         segmentStart = origWord.start;
                     }
                     segmentEnd = origWord.end;
+                    lastKnownEnd = origWord.end; // Update last known timestamp
 
                     wordIdx = i + 1;
                     matched = true;
@@ -549,10 +551,11 @@ function mapTimestampsToGptSegments(words, gptSegments) {
                 }
             }
 
-            // Nếu không match, ước tính
+            // Nếu không match, ước tính DỰA TRÊN lastKnownEnd (không reset về 0)
             if (!matched) {
                 const lastTiming = wordTimings[wordTimings.length - 1];
-                const estimatedStart = lastTiming ? lastTiming.end : (segmentStart || 0);
+                // FIX: Dùng lastKnownEnd thay vì fallback về 0
+                const estimatedStart = lastTiming ? lastTiming.end : (segmentStart || lastKnownEnd);
                 const estimatedEnd = estimatedStart + 0.25;
 
                 wordTimings.push({
@@ -563,14 +566,15 @@ function mapTimestampsToGptSegments(words, gptSegments) {
 
                 if (segmentStart === null) segmentStart = estimatedStart;
                 segmentEnd = estimatedEnd;
+                lastKnownEnd = estimatedEnd; // Update last known timestamp
             }
         }
 
         results.push({
             index: segIdx,
             text: segmentText,
-            start: segmentStart || 0,
-            end: segmentEnd || 0,
+            start: segmentStart || lastKnownEnd,
+            end: segmentEnd || lastKnownEnd,
             wordTimings: wordTimings
         });
     }

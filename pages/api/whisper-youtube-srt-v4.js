@@ -262,13 +262,13 @@ Antworte NUR mit einem JSON Array von Strings. Jeder String ist ein Segment.`
     });
 
     let content = response.choices[0].message.content.trim();
-    
+
     // Remove markdown code blocks if present
     content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '');
-    
+
     // Parse JSON
     const segments = JSON.parse(content);
-    
+
     if (!Array.isArray(segments) || segments.length === 0) {
       throw new Error('OpenAI returned invalid format');
     }
@@ -291,7 +291,7 @@ function fallbackSplitText(rawText) {
 
   for (const word of words) {
     current.push(word);
-    
+
     // Split every 8-10 words
     if (current.length >= 8) {
       segments.push(current.join(' ') + '.');
@@ -317,26 +317,27 @@ function fallbackSplitText(rawText) {
 function mapTimestampsToSegments(whisperWords, openaiSegments) {
   const results = [];
   let whisperIndex = 0;
+  let lastKnownEnd = 0; // Track last known timestamp to prevent resetting to 0
 
   for (let segIdx = 0; segIdx < openaiSegments.length; segIdx++) {
     const segmentText = openaiSegments[segIdx];
     const segmentWords = segmentText.split(/\s+/).filter(w => w);
-    
+
     const wordTimings = [];
     let segmentStart = null;
     let segmentEnd = null;
 
     for (const openaiWord of segmentWords) {
       const normalizedOpenai = normalizeWord(openaiWord);
-      
+
       // Tìm từ matching trong Whisper
       let matched = false;
       let searchLimit = Math.min(whisperIndex + 10, whisperWords.length);
-      
+
       for (let i = whisperIndex; i < searchLimit; i++) {
         const whisperWord = whisperWords[i];
         const normalizedWhisper = normalizeWord(whisperWord.word);
-        
+
         if (wordsMatch(normalizedOpenai, normalizedWhisper)) {
           // Found match
           const timing = {
@@ -344,37 +345,40 @@ function mapTimestampsToSegments(whisperWords, openaiSegments) {
             start: whisperWord.start,
             end: whisperWord.end
           };
-          
+
           wordTimings.push(timing);
-          
+
           if (segmentStart === null) {
             segmentStart = whisperWord.start;
           }
           segmentEnd = whisperWord.end;
-          
+          lastKnownEnd = whisperWord.end; // Update last known timestamp
+
           whisperIndex = i + 1;
           matched = true;
           break;
         }
       }
 
-      // Nếu không match, ước tính timing
+      // Nếu không match, ước tính timing DỰA TRÊN lastKnownEnd (không reset về 0)
       if (!matched) {
         const lastTiming = wordTimings[wordTimings.length - 1];
-        const estimatedStart = lastTiming ? lastTiming.end : (segmentStart || 0);
+        // FIX: Dùng lastKnownEnd thay vì fallback về 0
+        const estimatedStart = lastTiming ? lastTiming.end : (segmentStart || lastKnownEnd);
         const estimatedEnd = estimatedStart + 0.3; // 300ms per word estimate
-        
+
         wordTimings.push({
           word: openaiWord,
           start: estimatedStart,
           end: estimatedEnd,
           estimated: true
         });
-        
+
         if (segmentStart === null) {
           segmentStart = estimatedStart;
         }
         segmentEnd = estimatedEnd;
+        lastKnownEnd = estimatedEnd; // Update last known timestamp
       }
     }
 
@@ -385,8 +389,8 @@ function mapTimestampsToSegments(whisperWords, openaiSegments) {
     results.push({
       index: segIdx,
       text: segmentText,
-      start: Math.max(0, (segmentStart || 0) - START_BUFFER),
-      end: (segmentEnd || 0) + END_BUFFER,
+      start: Math.max(0, (segmentStart || lastKnownEnd) - START_BUFFER),
+      end: (segmentEnd || lastKnownEnd) + END_BUFFER,
       wordTimings: wordTimings.map((wt, i) => ({
         ...wt,
         start: i === 0 ? Math.max(0, wt.start - START_BUFFER) : wt.start,
@@ -417,18 +421,18 @@ function normalizeWord(word) {
  */
 function wordsMatch(word1, word2) {
   if (word1 === word2) return true;
-  
+
   // One contains the other
   if (word1.length >= 3 && word2.length >= 3) {
     if (word1.includes(word2) || word2.includes(word1)) {
       return true;
     }
   }
-  
+
   // Levenshtein distance
   const maxDist = Math.max(1, Math.floor(Math.max(word1.length, word2.length) * 0.3));
   const dist = levenshtein(word1, word2);
-  
+
   return dist <= maxDist;
 }
 
@@ -438,11 +442,11 @@ function wordsMatch(word1, word2) {
 function levenshtein(a, b) {
   if (a.length === 0) return b.length;
   if (b.length === 0) return a.length;
-  
+
   const matrix = [];
   for (let i = 0; i <= b.length; i++) matrix[i] = [i];
   for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
-  
+
   for (let i = 1; i <= b.length; i++) {
     for (let j = 1; j <= a.length; j++) {
       matrix[i][j] = b.charAt(i - 1) === a.charAt(j - 1)
@@ -450,7 +454,7 @@ function levenshtein(a, b) {
         : Math.min(matrix[i - 1][j - 1] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j] + 1);
     }
   }
-  
+
   return matrix[b.length][a.length];
 }
 
