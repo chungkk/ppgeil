@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from '../../styles/adminDashboard.module.css';
 
 /**
@@ -75,10 +75,14 @@ const LessonFilters = ({
     }
   ];
 
+  // Store callback in ref to avoid infinite loop when parent doesn't memoize
+  const onFilterChangeRef = useRef(onFilterChange);
+  onFilterChangeRef.current = onFilterChange;
+
   // Áp dụng filter khi có thay đổi
   useEffect(() => {
-    onFilterChange(filters);
-  }, [filters, onFilterChange]);
+    onFilterChangeRef.current(filters);
+  }, [filters]);
 
   // Toggle level filter
   const toggleLevel = (level) => {

@@ -62,7 +62,8 @@ export default function LeaderboardPage() {
         };
 
         fetchLeaderboard();
-    }, [t]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <>
@@ -166,7 +167,7 @@ export default function LeaderboardPage() {
                                         {/* Points */}
                                         <div className={styles.pointsCell}>
                                             <span className={styles.pointsIcon}>💎</span>
-                                            <span className={styles.pointsValue}>{entry.points.toLocaleString()}</span>
+                                            <span className={styles.pointsValue}>{(entry.points ?? 0).toLocaleString()}</span>
                                         </div>
                                     </div>
                                 );

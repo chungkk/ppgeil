@@ -121,7 +121,7 @@ export default function UserProfileSidebar({ stats, userPoints = 0, achievements
           {/* Points */}
           <div className={styles.pointsBadge}>
             <span className={styles.pointsIcon}>💎</span>
-            <span className={styles.pointsValue}>{userPoints?.toLocaleString()}</span>
+            <span className={styles.pointsValue}>{(userPoints ?? 0).toLocaleString()}</span>
           </div>
 
           {/* Achievements */}
