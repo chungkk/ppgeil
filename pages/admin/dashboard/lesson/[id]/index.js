@@ -957,24 +957,35 @@ function LessonFormPage() {
 
           {/* Regenerate SRT for existing lessons */}
           {!isNewLesson && (
-            <div className={styles.formSectionCompact} style={{ background: '#fef3c7', padding: '16px', borderRadius: '8px', border: '1px solid #f59e0b' }}>
-              <h3 style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#92400e' }}>⭐ Tạo lại SRT với Karaoke Pro</h3>
+            <div className={styles.formSectionCompact} style={{
+              background: 'linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(157, 78, 221, 0.1) 100%)',
+              padding: '20px',
+              borderRadius: '10px',
+              border: '1px solid rgba(255, 215, 0, 0.4)',
+              boxShadow: '0 0 20px rgba(255, 215, 0, 0.1)'
+            }}>
+              <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', color: '#ffd700', textShadow: '0 0 10px rgba(255, 215, 0, 0.5)' }}>⭐ Tạo lại SRT với Karaoke Pro</h3>
 
-              <div className={styles.formGroup} style={{ marginBottom: '12px' }}>
-                <label className={styles.label}>YouTube URL</label>
+              <div className={styles.formGroup} style={{ marginBottom: '16px' }}>
+                <label className={styles.label} style={{ color: 'rgba(255, 215, 0, 0.8)' }}>YouTube URL</label>
                 <input
                   type="url"
                   value={youtubeUrl}
                   onChange={(e) => setYoutubeUrl(e.target.value)}
                   placeholder="https://www.youtube.com/watch?v=..."
                   className={styles.input}
+                  style={{
+                    background: 'rgba(0, 0, 0, 0.3)',
+                    border: '1px solid rgba(255, 215, 0, 0.3)',
+                    color: '#ffffff'
+                  }}
                 />
                 {youtubeUrl && (
                   <a
                     href={youtubeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ fontSize: '12px', color: '#ea580c', display: 'block', marginTop: '4px' }}
+                    style={{ fontSize: '12px', color: '#00f5ff', display: 'block', marginTop: '8px', textShadow: '0 0 8px rgba(0, 245, 255, 0.5)' }}
                   >
                     🔗 Mở video trên YouTube
                   </a>
@@ -987,14 +998,16 @@ function LessonFormPage() {
                 disabled={fetchingWhisperV5 || !youtubeUrl.trim()}
                 className={styles.actionButton}
                 style={{
-                  background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+                  background: 'linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 215, 0, 0.15) 100%)',
                   fontWeight: 'bold',
-                  color: 'white',
-                  padding: '10px 20px',
-                  border: 'none',
+                  color: '#ffd700',
+                  padding: '12px 24px',
+                  border: '1px solid rgba(255, 215, 0, 0.5)',
                   borderRadius: '6px',
                   cursor: youtubeUrl.trim() ? 'pointer' : 'not-allowed',
-                  opacity: (!youtubeUrl.trim() || fetchingWhisperV5) ? 0.6 : 1
+                  opacity: (!youtubeUrl.trim() || fetchingWhisperV5) ? 0.5 : 1,
+                  textShadow: '0 0 10px rgba(255, 215, 0, 0.6)',
+                  boxShadow: youtubeUrl.trim() && !fetchingWhisperV5 ? '0 0 20px rgba(255, 215, 0, 0.3)' : 'none'
                 }}
                 title="GPT smart segmentation + Whisper timing"
               >
