@@ -1,12 +1,12 @@
 [
     {
-        "text": "Die Uhr zeigt kurz nach Mitternacht.",
-        "start": 1.5200000047683715,
-        "end": 4.459999847412109,
+        "text": "Die Uhr zeigt kurz nach Mitternacht, und die Stadt schläft.",
+        "start": 1.6200000047683716,
+        "end": 5.739999771118164,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 1.5200000047683715,
+                "start": 1.6200000047683716,
                 "end": 2.4200000762939453
             },
             {
@@ -30,22 +30,13 @@
                 "end": 3.640000104904175
             },
             {
-                "word": "Mitternacht.",
+                "word": "Mitternacht,",
                 "start": 3.640000104904175,
-                "end": 4.459999847412109
-            }
-        ],
-        "translationEn": "The clock shows shortly after midnight.",
-        "translationVi": "Đồng hồ chỉ vừa qua nửa đêm."
-    },
-    {
-        "text": "Und die Stadt schläft.",
-        "start": 4.599999809265137,
-        "end": 6.039999771118164,
-        "wordTimings": [
+                "end": 4.159999847412109
+            },
             {
-                "word": "Und",
-                "start": 4.599999809265137,
+                "word": "und",
+                "start": 4.699999809265137,
                 "end": 4.71999979019165
             },
             {
@@ -61,20 +52,20 @@
             {
                 "word": "schläft.",
                 "start": 5.139999866485596,
-                "end": 6.039999771118164
+                "end": 5.739999771118164
             }
         ],
-        "translationEn": "And the city sleeps.",
-        "translationVi": "Và thành phố đang ngủ."
+        "translationEn": "The clock shows shortly after midnight, and the city is asleep.",
+        "translationVi": "Đồng hồ chỉ vừa qua nửa đêm, và thành phố đang ngủ."
     },
     {
-        "text": "Aber hier brennt noch Licht.",
-        "start": 6.340000057220459,
-        "end": 7.959999847412109,
+        "text": "Aber hier brennt noch Licht. Kein Mini Store, kein Automaten Shop, sondern ein richtiger Supermarkt.",
+        "start": 6.440000057220459,
+        "end": 12.619999885559082,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 6.340000057220459,
+                "start": 6.440000057220459,
                 "end": 6.559999942779541
             },
             {
@@ -95,20 +86,11 @@
             {
                 "word": "Licht.",
                 "start": 7.539999961853027,
-                "end": 7.959999847412109
-            }
-        ],
-        "translationEn": "But there is still light on here.",
-        "translationVi": "Nhưng ở đây vẫn còn ánh sáng."
-    },
-    {
-        "text": "Kein Mini Store, kein Automaten Shop,",
-        "start": 8.420000457763672,
-        "end": 10.999999809265137,
-        "wordTimings": [
+                "end": 7.659999847412109
+            },
             {
                 "word": "Kein",
-                "start": 8.420000457763672,
+                "start": 8.520000457763672,
                 "end": 8.5600004196167
             },
             {
@@ -134,20 +116,11 @@
             {
                 "word": "Shop,",
                 "start": 10.4399995803833,
-                "end": 10.999999809265137
-            }
-        ],
-        "translationEn": "No mini store, no vending machine shop,",
-        "translationVi": "Không có cửa hàng mini, không có cửa hàng máy bán hàng tự động,"
-    },
-    {
-        "text": "sondern ein richtiger Supermarkt.",
-        "start": 10.700000190734864,
-        "end": 12.919999885559083,
-        "wordTimings": [
+                "end": 10.699999809265137
+            },
             {
                 "word": "sondern",
-                "start": 10.700000190734864,
+                "start": 10.800000190734863,
                 "end": 11.100000381469727
             },
             {
@@ -163,20 +136,20 @@
             {
                 "word": "Supermarkt.",
                 "start": 12,
-                "end": 12.919999885559083
+                "end": 12.619999885559082
             }
         ],
-        "translationEn": "but a real supermarket.",
-        "translationVi": "mà là một siêu thị thực thụ."
+        "translationEn": "But there is still light on here. Not a mini store, not a vending machine shop, but a real supermarket.",
+        "translationVi": "Nhưng ở đây vẫn còn ánh sáng. Không phải cửa hàng mini, không phải cửa hàng tự động, mà là một siêu thị thực thụ."
     },
     {
-        "text": "Mit Mitarbeitenden, Backtegel, großem Sortiment",
-        "start": 12.979999923706055,
-        "end": 16.359999465942384,
+        "text": "Mit Mitarbeitenden, Backtegel, großem Sortiment und ohne Aufpreise.",
+        "start": 13.079999923706055,
+        "end": 18.239999771118164,
         "wordTimings": [
             {
                 "word": "Mit",
-                "start": 12.979999923706055,
+                "start": 13.079999923706055,
                 "end": 13.180000305175781
             },
             {
@@ -197,20 +170,11 @@
             {
                 "word": "Sortiment",
                 "start": 15.5,
-                "end": 16.359999465942384
-            }
-        ],
-        "translationEn": "With employees, Backtegel, large assortment",
-        "translationVi": "Với nhân viên, Backtegel, nhiều loại sản phẩm phong phú"
-    },
-    {
-        "text": "und ohne Aufpreise.",
-        "start": 15.959999465942383,
-        "end": 18.539999771118165,
-        "wordTimings": [
+                "end": 16.059999465942383
+            },
             {
                 "word": "und",
-                "start": 15.959999465942383,
+                "start": 16.059999465942383,
                 "end": 16.559999465942383
             },
             {
@@ -221,20 +185,20 @@
             {
                 "word": "Aufpreise.",
                 "start": 17.3799991607666,
-                "end": 18.539999771118165
+                "end": 18.239999771118164
             }
         ],
-        "translationEn": "and without surcharges.",
-        "translationVi": "và không có phụ phí."
+        "translationEn": "With employees, Backtegel, large selection, and no surcharges.",
+        "translationVi": "Với nhân viên, Backtegel, đa dạng sản phẩm và không có phụ phí."
     },
     {
-        "text": "Einkaufen rund um die Uhr.",
-        "start": 19.379999542236327,
-        "end": 21.64000015258789,
+        "text": "Einkaufen rund um die Uhr in Offenbach am Main ist das jetzt möglich.",
+        "start": 19.479999542236328,
+        "end": 24.68000030517578,
         "wordTimings": [
             {
                 "word": "Einkaufen",
-                "start": 19.379999542236327,
+                "start": 19.479999542236328,
                 "end": 19.8799991607666
             },
             {
@@ -253,22 +217,13 @@
                 "end": 21.34000015258789
             },
             {
-                "word": "Uhr.",
+                "word": "Uhr",
                 "start": 21.34000015258789,
-                "end": 21.64000015258789
-            }
-        ],
-        "translationEn": "Shopping around the clock.",
-        "translationVi": "Mua sắm 24/7."
-    },
-    {
-        "text": "In Offenbach am Main ist das jetzt möglich.",
-        "start": 22.180000686645506,
-        "end": 24.980000305175782,
-        "wordTimings": [
+                "end": 21.34000015258789
+            },
             {
-                "word": "In",
-                "start": 22.180000686645506,
+                "word": "in",
+                "start": 22.280000686645508,
                 "end": 22.399999618530273
             },
             {
@@ -304,20 +259,20 @@
             {
                 "word": "möglich.",
                 "start": 24.3799991607666,
-                "end": 24.980000305175782
+                "end": 24.68000030517578
             }
         ],
-        "translationEn": "In Offenbach am Main, this is now possible.",
-        "translationVi": "Tại Offenbach am Main, điều này bây giờ có thể."
+        "translationEn": "Shopping around the clock in Offenbach am Main is now possible.",
+        "translationVi": "Mua sắm 24/7 ở Offenbach am Main giờ đây là điều có thể."
     },
     {
-        "text": "Der Mann, der dafür sorgt, dass der Laden nachts läuft,",
-        "start": 27.11999931335449,
-        "end": 30.240000534057618,
+        "text": "Der Mann, der dafür sorgt, dass der Laden nachts läuft, ist Marktleiter Can Civci.",
+        "start": 27.219999313354492,
+        "end": 32.13999938964844,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 27.11999931335449,
+                "start": 27.219999313354492,
                 "end": 27.760000228881836
             },
             {
@@ -363,20 +318,11 @@
             {
                 "word": "läuft,",
                 "start": 29.639999389648438,
-                "end": 30.240000534057618
-            }
-        ],
-        "translationEn": "The man who makes sure the shop runs at night,",
-        "translationVi": "Người đàn ông đảm bảo rằng cửa hàng hoạt động vào ban đêm,"
-    },
-    {
-        "text": "ist Marktleiter Can Civci.",
-        "start": 30.299999618530272,
-        "end": 32.439999389648435,
-        "wordTimings": [
+                "end": 29.940000534057617
+            },
             {
                 "word": "ist",
-                "start": 30.299999618530272,
+                "start": 30.399999618530273,
                 "end": 30.559999465942383
             },
             {
@@ -392,20 +338,20 @@
             {
                 "word": "Civci.",
                 "start": 31.68000030517578,
-                "end": 32.439999389648435
+                "end": 32.13999938964844
             }
         ],
-        "translationEn": "is market manager Can Civci.",
-        "translationVi": "là trưởng thị trường Can Civci."
+        "translationEn": "The man who ensures that the store operates at night is market manager Can Civci.",
+        "translationVi": "Người đàn ông đảm bảo rằng cửa hàng hoạt động vào ban đêm là quản lý thị trường Can Civci."
     },
     {
-        "text": "Er ist begeistert vom 24-Stunden-Modell",
-        "start": 33.019998931884764,
-        "end": 35.57999877929687,
+        "text": "Er ist begeistert vom 24-Stunden-Modell und der Nachtschicht.",
+        "start": 33.119998931884766,
+        "end": 36.52000045776367,
         "wordTimings": [
             {
                 "word": "Er",
-                "start": 33.019998931884764,
+                "start": 33.119998931884766,
                 "end": 33.279998779296875
             },
             {
@@ -426,20 +372,11 @@
             {
                 "word": "24-Stunden-Modell",
                 "start": 35.02000045776367,
-                "end": 35.57999877929687
-            }
-        ],
-        "translationEn": "He is excited about the 24-hour model.",
-        "translationVi": "Anh ấy rất thích mô hình 24 giờ."
-    },
-    {
-        "text": "und der Nachtschicht.",
-        "start": 35.519998931884764,
-        "end": 36.82000045776367,
-        "wordTimings": [
+                "end": 35.279998779296875
+            },
             {
                 "word": "und",
-                "start": 35.519998931884764,
+                "start": 35.619998931884766,
                 "end": 35.880001068115234
             },
             {
@@ -450,20 +387,20 @@
             {
                 "word": "Nachtschicht.",
                 "start": 36.060001373291016,
-                "end": 36.82000045776367
+                "end": 36.52000045776367
             }
         ],
-        "translationEn": "and the night shift.",
-        "translationVi": "và ca đêm."
+        "translationEn": "He is excited about the 24-hour model and the night shift.",
+        "translationVi": "Anh ấy rất thích mô hình 24 giờ và ca đêm."
     },
     {
-        "text": "Und der Rest vom Team.",
-        "start": 36.9,
-        "end": 38.34000091552734,
+        "text": "Und der Rest vom Team? Die Personen, die nachts arbeiten, sind alle davon begeistert.",
+        "start": 37,
+        "end": 43.63999938964844,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 36.9,
+                "start": 37,
                 "end": 37.2400016784668
             },
             {
@@ -482,22 +419,13 @@
                 "end": 37.86000061035156
             },
             {
-                "word": "Team.",
+                "word": "Team?",
                 "start": 37.86000061035156,
-                "end": 38.34000091552734
-            }
-        ],
-        "translationEn": "And the rest of the team.",
-        "translationVi": "Và phần còn lại của đội."
-    },
-    {
-        "text": "Die Personen, die nachts arbeiten,",
-        "start": 40.120001220703124,
-        "end": 42.32000045776367,
-        "wordTimings": [
+                "end": 38.040000915527344
+            },
             {
                 "word": "Die",
-                "start": 40.120001220703124,
+                "start": 40.220001220703125,
                 "end": 40.720001220703125
             },
             {
@@ -518,20 +446,11 @@
             {
                 "word": "arbeiten,",
                 "start": 41.58000183105469,
-                "end": 42.32000045776367
-            }
-        ],
-        "translationEn": "The people who work at night,",
-        "translationVi": "Những người làm việc vào ban đêm,"
-    },
-    {
-        "text": "sind alle davon begeistert.",
-        "start": 42.21999969482422,
-        "end": 43.939999389648435,
-        "wordTimings": [
+                "end": 42.02000045776367
+            },
             {
                 "word": "sind",
-                "start": 42.21999969482422,
+                "start": 42.31999969482422,
                 "end": 42.31999969482422
             },
             {
@@ -547,20 +466,20 @@
             {
                 "word": "begeistert.",
                 "start": 43.2599983215332,
-                "end": 43.939999389648435
+                "end": 43.63999938964844
             }
         ],
-        "translationEn": "are all excited about it.",
-        "translationVi": "mọi người đều hào hứng với điều đó."
+        "translationEn": "And the rest of the team? The people who work at night are all thrilled about it.",
+        "translationVi": "Và phần còn lại của đội ngũ thì sao? Những người làm việc vào ban đêm đều rất thích điều đó."
     },
     {
-        "text": "Es gab jetzt auch niemanden, der gesagt hat,",
-        "start": 43.679998779296874,
-        "end": 45.50000076293945,
+        "text": "Es gab jetzt auch niemanden, der gesagt hat, hier nach ein, zwei Nächten, ich hab jetzt genug davon.",
+        "start": 43.779998779296875,
+        "end": 47.34000015258789,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 43.679998779296874,
+                "start": 43.779998779296875,
                 "end": 43.779998779296875
             },
             {
@@ -596,20 +515,11 @@
             {
                 "word": "hat,",
                 "start": 45.119998931884766,
-                "end": 45.50000076293945
-            }
-        ],
-        "translationEn": "There was also no one who said,",
-        "translationVi": "Bây giờ cũng không có ai nói rằng,"
-    },
-    {
-        "text": "hier nach ein, zwei Nächten, ich hab jetzt genug davon.",
-        "start": 45.179998779296874,
-        "end": 47.64000015258789,
-        "wordTimings": [
+                "end": 45.20000076293945
+            },
             {
                 "word": "hier",
-                "start": 45.179998779296874,
+                "start": 45.279998779296875,
                 "end": 45.439998626708984
             },
             {
@@ -655,20 +565,20 @@
             {
                 "word": "davon.",
                 "start": 47.040000915527344,
-                "end": 47.64000015258789
+                "end": 47.34000015258789
             }
         ],
-        "translationEn": "Here after one or two nights, I've had enough of it now.",
-        "translationVi": "Ở đây sau một, hai đêm, tôi đã đủ rồi."
+        "translationEn": "There was also no one who said, after one or two nights, that they had enough of it.",
+        "translationVi": "Bây giờ cũng không có ai nói rằng, sau một hoặc hai đêm, tôi đã đủ rồi."
     },
     {
-        "text": "Im Gegenteil, diejenigen, die es bisher gemacht haben,",
-        "start": 47.31999816894531,
-        "end": 50.98000030517578,
+        "text": "Im Gegenteil, diejenigen, die es bisher gemacht haben, würden es alle gerne weiterführen.",
+        "start": 47.41999816894531,
+        "end": 52.5,
         "wordTimings": [
             {
                 "word": "Im",
-                "start": 47.31999816894531,
+                "start": 47.41999816894531,
                 "end": 47.540000915527344
             },
             {
@@ -704,20 +614,11 @@
             {
                 "word": "haben,",
                 "start": 50.400001525878906,
-                "end": 50.98000030517578
-            }
-        ],
-        "translationEn": "On the contrary, those who have done it so far,",
-        "translationVi": "Ngược lại, những người đã làm điều đó cho đến nay,"
-    },
-    {
-        "text": "würden es alle gerne weiterführen.",
-        "start": 51.1599983215332,
-        "end": 52.8,
-        "wordTimings": [
+                "end": 50.68000030517578
+            },
             {
                 "word": "würden",
-                "start": 51.1599983215332,
+                "start": 51.2599983215332,
                 "end": 51.2599983215332
             },
             {
@@ -728,31 +629,36 @@
             {
                 "word": "alle",
                 "start": 51.5,
-                "end": 51.68000030517578
+                "end": 51.65999984741211
             },
             {
                 "word": "gerne",
-                "start": 51.68000030517578,
+                "start": 51.65999984741211,
                 "end": 51.880001068115234
             },
             {
                 "word": "weiterführen.",
                 "start": 51.880001068115234,
-                "end": 52.8
+                "end": 52.5
             }
         ],
-        "translationEn": "would all like to continue it.",
-        "translationVi": "mọi người đều muốn tiếp tục."
+        "translationEn": "On the contrary, those who have done it so far would all like to continue.",
+        "translationVi": "Ngược lại, những người đã làm điều đó cho đến nay đều muốn tiếp tục."
     },
     {
-        "text": "Und ist dann schon schön für mich zu sehen,",
-        "start": 52.980001831054686,
-        "end": 56.34000091552734,
+        "text": "Und es ist dann schon schön für mich zu sehen, wie das Ganze angenommen wird.",
+        "start": 53.08000183105469,
+        "end": 58,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 52.980001831054686,
+                "start": 53.08000183105469,
                 "end": 53.5
+            },
+            {
+                "word": "es",
+                "start": 53.5,
+                "end": 53.75
             },
             {
                 "word": "ist",
@@ -792,20 +698,11 @@
             {
                 "word": "sehen,",
                 "start": 56.040000915527344,
-                "end": 56.34000091552734
-            }
-        ],
-        "translationEn": "And it is already nice for me to see,",
-        "translationVi": "Và sau đó thật đẹp khi tôi thấy,"
-    },
-    {
-        "text": "wie das Ganze angenommen wird.",
-        "start": 56.039999389648436,
-        "end": 58.3,
-        "wordTimings": [
+                "end": 56.040000915527344
+            },
             {
                 "word": "wie",
-                "start": 56.039999389648436,
+                "start": 56.13999938964844,
                 "end": 56.68000030517578
             },
             {
@@ -826,20 +723,20 @@
             {
                 "word": "wird.",
                 "start": 57.720001220703125,
-                "end": 58.3
+                "end": 58
             }
         ],
-        "translationEn": "how the whole thing is accepted.",
-        "translationVi": "cách mà mọi thứ được tiếp nhận."
+        "translationEn": "And it is nice for me to see how everything is being received.",
+        "translationVi": "Và thật tuyệt vời khi tôi thấy mọi thứ được đón nhận như thế nào."
     },
     {
-        "text": "Bisher war der Supermarkt am Offenbacher Marktplatz",
-        "start": 58.519998931884764,
-        "end": 61.66000061035156,
+        "text": "Bisher war der Supermarkt am Offenbacher Marktplatz bis 0 Uhr geöffnet.",
+        "start": 58.619998931884766,
+        "end": 62.619998931884766,
         "wordTimings": [
             {
                 "word": "Bisher",
-                "start": 58.519998931884764,
+                "start": 58.619998931884766,
                 "end": 59.13999938964844
             },
             {
@@ -870,20 +767,11 @@
             {
                 "word": "Marktplatz",
                 "start": 60.779998779296875,
-                "end": 61.66000061035156
-            }
-        ],
-        "translationEn": "So far, the supermarket was at Offenbach Market Square.",
-        "translationVi": "Cho đến nay, siêu thị tại quảng trường Offenbach."
-    },
-    {
-        "text": "bis 0 Uhr geöffnet.",
-        "start": 61.26000061035156,
-        "end": 62.91999893188476,
-        "wordTimings": [
+                "end": 61.36000061035156
+            },
             {
                 "word": "bis",
-                "start": 61.26000061035156,
+                "start": 61.36000061035156,
                 "end": 61.599998474121094
             },
             {
@@ -899,20 +787,20 @@
             {
                 "word": "geöffnet.",
                 "start": 62.08000183105469,
-                "end": 62.91999893188476
+                "end": 62.619998931884766
             }
         ],
-        "translationEn": "open until midnight.",
-        "translationVi": "Mở cửa đến 0 giờ."
+        "translationEn": "So far, the supermarket at Offenbach Market Square was open until midnight.",
+        "translationVi": "Cho đến nay, siêu thị tại quảng trường Offenbach mở cửa đến 0 giờ."
     },
     {
         "text": "Heißt, es gab die frühe und spät Schicht.",
-        "start": 63.199999237060545,
-        "end": 65.56000213623047,
+        "start": 63.29999923706055,
+        "end": 65.26000213623047,
         "wordTimings": [
             {
                 "word": "Heißt,",
-                "start": 63.199999237060545,
+                "start": 63.29999923706055,
                 "end": 63.29999923706055
             },
             {
@@ -948,20 +836,20 @@
             {
                 "word": "Schicht.",
                 "start": 65,
-                "end": 65.56000213623047
+                "end": 65.26000213623047
             }
         ],
-        "translationEn": "That means there was the early and late shift.",
+        "translationEn": "That means there was an early and a late shift.",
         "translationVi": "Có nghĩa là có ca sớm và ca muộn."
     },
     {
         "text": "Das hat sich durch den Rund-um-die-Uhr-Betrieb geändert.",
-        "start": 65.81999816894532,
-        "end": 68.61999969482422,
+        "start": 65.91999816894531,
+        "end": 68.31999969482422,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 65.81999816894532,
+                "start": 65.91999816894531,
                 "end": 66.0199966430664
             },
             {
@@ -992,20 +880,20 @@
             {
                 "word": "geändert.",
                 "start": 67.68000030517578,
-                "end": 68.61999969482422
+                "end": 68.31999969482422
             }
         ],
         "translationEn": "That has changed due to the round-the-clock operation.",
-        "translationVi": "Điều đó đã thay đổi nhờ vào việc hoạt động 24/7."
+        "translationVi": "Điều đó đã thay đổi nhờ vào hoạt động 24/7."
     },
     {
-        "text": "Der große Vorteil ist einfach,",
-        "start": 70.23999633789063,
-        "end": 71.67999725341797,
+        "text": "Der große Vorteil ist einfach, dass es auf mehr Arbeitsstunden aufgeteilt werden kann.",
+        "start": 70.33999633789062,
+        "end": 74.37999725341797,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 70.23999633789063,
+                "start": 70.33999633789062,
                 "end": 70.33999633789062
             },
             {
@@ -1026,20 +914,11 @@
             {
                 "word": "einfach,",
                 "start": 71.05999755859375,
-                "end": 71.67999725341797
-            }
-        ],
-        "translationEn": "The great advantage is simply,",
-        "translationVi": "Lợi thế lớn nhất thật đơn giản,"
-    },
-    {
-        "text": "dass es auf mehr Arbeitsstunden aufgeteilt werden kann.",
-        "start": 71.44000091552735,
-        "end": 74.67999725341797,
-        "wordTimings": [
+                "end": 71.37999725341797
+            },
             {
                 "word": "dass",
-                "start": 71.44000091552735,
+                "start": 71.55999755859375,
                 "end": 71.55999755859375
             },
             {
@@ -1075,20 +954,20 @@
             {
                 "word": "kann.",
                 "start": 74.08000183105469,
-                "end": 74.67999725341797
+                "end": 74.37999725341797
             }
         ],
-        "translationEn": "that it can be divided into more working hours.",
-        "translationVi": "rằng nó có thể được chia thành nhiều giờ làm việc hơn."
+        "translationEn": "The great advantage is simply that it can be divided into more working hours.",
+        "translationVi": "Lợi thế lớn là nó có thể được chia thành nhiều giờ làm việc hơn."
     },
     {
         "text": "Wir haben ja dadurch eine zusätzliche Schicht.",
-        "start": 74.8800033569336,
-        "end": 77.10000305175781,
+        "start": 74.9800033569336,
+        "end": 76.80000305175781,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 74.8800033569336,
+                "start": 74.9800033569336,
                 "end": 75
             },
             {
@@ -1119,20 +998,20 @@
             {
                 "word": "Schicht.",
                 "start": 76.33999633789062,
-                "end": 77.10000305175781
+                "end": 76.80000305175781
             }
         ],
         "translationEn": "We have an additional layer because of that.",
         "translationVi": "Chúng ta có thêm một lớp nữa nhờ đó."
     },
     {
-        "text": "Aus zwei Schichten werden drei.",
-        "start": 77.45999755859376,
-        "end": 79.75999908447265,
+        "text": "Aus zwei Schichten werden drei. Das sorgt für spürbare Entlastung.",
+        "start": 77.55999755859375,
+        "end": 81.9000015258789,
         "wordTimings": [
             {
                 "word": "Aus",
-                "start": 77.45999755859376,
+                "start": 77.55999755859375,
                 "end": 78.12000274658203
             },
             {
@@ -1153,20 +1032,11 @@
             {
                 "word": "drei.",
                 "start": 79.12000274658203,
-                "end": 79.75999908447265
-            }
-        ],
-        "translationEn": "From two layers, three are created.",
-        "translationVi": "Từ hai lớp trở thành ba."
-    },
-    {
-        "text": "Das sorgt für spürbare Entlastung.",
-        "start": 79.73999633789063,
-        "end": 82.2000015258789,
-        "wordTimings": [
+                "end": 79.45999908447266
+            },
             {
                 "word": "Das",
-                "start": 79.73999633789063,
+                "start": 79.83999633789062,
                 "end": 80.08000183105469
             },
             {
@@ -1187,20 +1057,20 @@
             {
                 "word": "Entlastung.",
                 "start": 81.22000122070312,
-                "end": 82.2000015258789
+                "end": 81.9000015258789
             }
         ],
-        "translationEn": "This provides noticeable relief.",
-        "translationVi": "Điều đó mang lại sự giảm bớt rõ rệt."
+        "translationEn": "From two layers, three are created. This provides noticeable relief.",
+        "translationVi": "Từ hai lớp trở thành ba. Điều này mang lại sự giảm tải rõ rệt."
     },
     {
-        "text": "Dinge wie Putzen, Waren auffüllen",
-        "start": 82.67999877929688,
-        "end": 84.56000213623047,
+        "text": "Dinge wie Putzen, Waren auffüllen oder die frische Kontrolle müssen nicht mehr kurz vor der Öffnung passieren.",
+        "start": 82.77999877929688,
+        "end": 87.77999877929688,
         "wordTimings": [
             {
                 "word": "Dinge",
-                "start": 82.67999877929688,
+                "start": 82.77999877929688,
                 "end": 82.81999969482422
             },
             {
@@ -1221,20 +1091,11 @@
             {
                 "word": "auffüllen",
                 "start": 83.81999969482422,
-                "end": 84.56000213623047
-            }
-        ],
-        "translationEn": "Things like cleaning, restocking.",
-        "translationVi": "Những việc như dọn dẹp, bổ sung hàng hóa."
-    },
-    {
-        "text": "oder die frische Kontrolle müssen nicht mehr",
-        "start": 84.16000213623047,
-        "end": 86.67999725341797,
-        "wordTimings": [
+                "end": 84.26000213623047
+            },
             {
                 "word": "oder",
-                "start": 84.16000213623047,
+                "start": 84.26000213623047,
                 "end": 84.54000091552734
             },
             {
@@ -1265,20 +1126,11 @@
             {
                 "word": "mehr",
                 "start": 86.05999755859375,
-                "end": 86.67999725341797
-            }
-        ],
-        "translationEn": "or the fresh control no longer needs to",
-        "translationVi": "hoặc việc kiểm tra độ tươi không còn cần thiết nữa"
-    },
-    {
-        "text": "kurz vor der Öffnung passieren.",
-        "start": 86.27999725341797,
-        "end": 88.07999877929687,
-        "wordTimings": [
+                "end": 86.37999725341797
+            },
             {
                 "word": "kurz",
-                "start": 86.27999725341797,
+                "start": 86.37999725341797,
                 "end": 86.62000274658203
             },
             {
@@ -1299,20 +1151,20 @@
             {
                 "word": "passieren.",
                 "start": 87.31999969482422,
-                "end": 88.07999877929687
+                "end": 87.77999877929688
             }
         ],
-        "translationEn": "happen just before the opening.",
-        "translationVi": "xảy ra ngay trước khi mở cửa."
+        "translationEn": "Tasks like cleaning, restocking, or freshness checks no longer have to happen just before opening.",
+        "translationVi": "Những công việc như dọn dẹp, bổ sung hàng hóa hoặc kiểm tra độ tươi không cần phải diễn ra ngay trước khi mở cửa nữa."
     },
     {
         "text": "Und alles läuft entspannter.",
-        "start": 88.21999969482422,
-        "end": 90.24000244140625,
+        "start": 88.31999969482422,
+        "end": 89.94000244140625,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 88.21999969482422,
+                "start": 88.31999969482422,
                 "end": 88.5199966430664
             },
             {
@@ -1328,20 +1180,20 @@
             {
                 "word": "entspannter.",
                 "start": 89.26000213623047,
-                "end": 90.24000244140625
+                "end": 89.94000244140625
             }
         ],
         "translationEn": "And everything runs more relaxed.",
         "translationVi": "Và mọi thứ diễn ra thoải mái hơn."
     },
     {
-        "text": "Es ist so, dass wir eigentlich immer noch",
-        "start": 92.21999969482422,
-        "end": 94.96000366210937,
+        "text": "Es ist so, dass wir eigentlich immer noch zu jeder Zeit Backwaren anbieten.",
+        "start": 92.31999969482422,
+        "end": 96.22000122070312,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 92.21999969482422,
+                "start": 92.31999969482422,
                 "end": 92.66000366210938
             },
             {
@@ -1377,20 +1229,11 @@
             {
                 "word": "noch",
                 "start": 94.45999908447266,
-                "end": 94.96000366210937
-            }
-        ],
-        "translationEn": "It is such that we actually still",
-        "translationVi": "Thực ra, chúng tôi vẫn luôn..."
-    },
-    {
-        "text": "zu jeder Zeit Backwaren anbieten.",
-        "start": 94.56000366210938,
-        "end": 96.52000122070312,
-        "wordTimings": [
+                "end": 94.66000366210938
+            },
             {
                 "word": "zu",
-                "start": 94.56000366210938,
+                "start": 94.66000366210938,
                 "end": 94.81999969482422
             },
             {
@@ -1411,20 +1254,20 @@
             {
                 "word": "anbieten.",
                 "start": 96,
-                "end": 96.52000122070312
+                "end": 96.22000122070312
             }
         ],
-        "translationEn": "to offer baked goods at all times.",
-        "translationVi": "cung cấp bánh mì vào mọi thời điểm."
+        "translationEn": "We actually still offer baked goods at any time.",
+        "translationVi": "Chúng tôi thực sự luôn cung cấp bánh mì vào bất kỳ thời điểm nào."
     },
     {
-        "text": "Denn es ist so, wir starten um 3 Uhr",
-        "start": 96.26000061035157,
-        "end": 98.43999938964843,
+        "text": "Denn es ist so, wir starten um 3 Uhr mit der Reinigung und der Entsorgung.",
+        "start": 96.36000061035156,
+        "end": 100.13999938964844,
         "wordTimings": [
             {
                 "word": "Denn",
-                "start": 96.26000061035157,
+                "start": 96.36000061035156,
                 "end": 96.4800033569336
             },
             {
@@ -1465,20 +1308,11 @@
             {
                 "word": "Uhr",
                 "start": 97.86000061035156,
-                "end": 98.43999938964843
-            }
-        ],
-        "translationEn": "Because it is like this, we start at 3 o'clock.",
-        "translationVi": "Bởi vì như vậy, chúng ta bắt đầu lúc 3 giờ."
-    },
-    {
-        "text": "mit der Reinigung und der Entsorgung.",
-        "start": 98.03999938964844,
-        "end": 100.43999938964843,
-        "wordTimings": [
+                "end": 98.13999938964844
+            },
             {
                 "word": "mit",
-                "start": 98.03999938964844,
+                "start": 98.13999938964844,
                 "end": 98.58000183105469
             },
             {
@@ -1504,20 +1338,25 @@
             {
                 "word": "Entsorgung.",
                 "start": 99.66000366210938,
-                "end": 100.43999938964843
+                "end": 100.13999938964844
             }
         ],
-        "translationEn": "with the cleaning and disposal.",
-        "translationVi": "với việc làm sạch và xử lý."
+        "translationEn": "Because it is like this, we start at 3 o'clock with the cleaning and disposal.",
+        "translationVi": "Bởi vì như vậy, chúng tôi bắt đầu lúc 3 giờ với việc dọn dẹp và xử lý."
     },
     {
-        "text": "Machen das Ganze aber modulweise.",
-        "start": 101.26000061035157,
-        "end": 103.56000213623047,
+        "text": "Wir machen das Ganze aber modulweise, somit ist immer noch etwas für den Kunden da.",
+        "start": 100.13999938964844,
+        "end": 105.69999694824219,
         "wordTimings": [
             {
-                "word": "Machen",
-                "start": 101.26000061035157,
+                "word": "Wir",
+                "start": 100.13999938964844,
+                "end": 100.38999938964844
+            },
+            {
+                "word": "machen",
+                "start": 101.36000061035156,
                 "end": 101.5199966430664
             },
             {
@@ -1536,22 +1375,13 @@
                 "end": 102.58000183105469
             },
             {
-                "word": "modulweise.",
+                "word": "modulweise,",
                 "start": 102.58000183105469,
-                "end": 103.56000213623047
-            }
-        ],
-        "translationEn": "We do the whole thing in modules.",
-        "translationVi": "Thực hiện toàn bộ theo từng mô-đun."
-    },
-    {
-        "text": "Somit ist immer noch etwas für den Kunden da.",
-        "start": 103.70000305175782,
-        "end": 105.99999694824218,
-        "wordTimings": [
+                "end": 103.26000213623047
+            },
             {
-                "word": "Somit",
-                "start": 103.70000305175782,
+                "word": "somit",
+                "start": 103.80000305175781,
                 "end": 103.95999908447266
             },
             {
@@ -1592,25 +1422,25 @@
             {
                 "word": "da.",
                 "start": 105.36000061035156,
-                "end": 105.99999694824218
+                "end": 105.69999694824219
             }
         ],
-        "translationEn": "Thus, there is still something for the customer.",
-        "translationVi": "Vì vậy, vẫn còn điều gì đó cho khách hàng."
+        "translationEn": "We are doing it in modules, so there is still something available for the customer.",
+        "translationVi": "Chúng tôi thực hiện toàn bộ theo từng mô-đun, vì vậy vẫn có điều gì đó cho khách hàng."
     },
     {
         "text": "Hier ist rund um die Uhr frisch angesagt.",
-        "start": 106.70000305175782,
-        "end": 109.67999725341797,
+        "start": 106.80000305175781,
+        "end": 109.37999725341797,
         "wordTimings": [
             {
                 "word": "Hier",
-                "start": 106.70000305175782,
-                "end": 107.0999984741211
+                "start": 106.80000305175781,
+                "end": 107.12000274658203
             },
             {
                 "word": "ist",
-                "start": 107.0999984741211,
+                "start": 107.12000274658203,
                 "end": 107.36000061035156
             },
             {
@@ -1641,20 +1471,20 @@
             {
                 "word": "angesagt.",
                 "start": 108.72000122070312,
-                "end": 109.67999725341797
+                "end": 109.37999725341797
             }
         ],
         "translationEn": "Here, fresh is on the agenda around the clock.",
-        "translationVi": "Ở đây có món tươi ngon phục vụ suốt ngày đêm."
+        "translationVi": "Ở đây có đồ tươi ngon phục vụ suốt 24 giờ."
     },
     {
         "text": "Das ist vor allem Cans Chef wichtig.",
-        "start": 109.91999664306641,
-        "end": 112.06000213623047,
+        "start": 110.0199966430664,
+        "end": 111.76000213623047,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 109.91999664306641,
+                "start": 110.0199966430664,
                 "end": 110.12000274658203
             },
             {
@@ -1685,20 +1515,20 @@
             {
                 "word": "wichtig.",
                 "start": 111.27999877929688,
-                "end": 112.06000213623047
+                "end": 111.76000213623047
             }
         ],
         "translationEn": "This is especially important to Can's boss.",
         "translationVi": "Điều này đặc biệt quan trọng đối với sếp của Can."
     },
     {
-        "text": "Davidez Biga ist der Geschäftsführer des Supermarkts",
-        "start": 112.17999877929688,
-        "end": 115.53999786376953,
+        "text": "Davidez Biga ist der Geschäftsführer des Supermarkts und hatte die Idee zur 24-Stunden-Öffnung.",
+        "start": 112.27999877929688,
+        "end": 117.4800033569336,
         "wordTimings": [
             {
                 "word": "Davidez",
-                "start": 112.17999877929688,
+                "start": 112.27999877929688,
                 "end": 112.73999786376953
             },
             {
@@ -1729,20 +1559,11 @@
             {
                 "word": "Supermarkts",
                 "start": 114.5999984741211,
-                "end": 115.53999786376953
-            }
-        ],
-        "translationEn": "Davidez Biga is the manager of the supermarket.",
-        "translationVi": "Davidez Biga là giám đốc của siêu thị."
-    },
-    {
-        "text": "und hatte die Idee zur 24-Stunden-Öffnung.",
-        "start": 115.13999786376954,
-        "end": 117.78000335693359,
-        "wordTimings": [
+                "end": 115.23999786376953
+            },
             {
                 "word": "und",
-                "start": 115.13999786376954,
+                "start": 115.23999786376953,
                 "end": 115.76000213623047
             },
             {
@@ -1768,20 +1589,20 @@
             {
                 "word": "24-Stunden-Öffnung.",
                 "start": 117.22000122070312,
-                "end": 117.78000335693359
+                "end": 117.4800033569336
             }
         ],
-        "translationEn": "and had the idea for 24-hour opening.",
-        "translationVi": "và đã có ý tưởng mở cửa 24 giờ."
+        "translationEn": "Davidez Biga is the manager of the supermarket and came up with the idea for 24-hour opening.",
+        "translationVi": "Davidez Biga là giám đốc của siêu thị và đã có ý tưởng mở cửa 24 giờ."
     },
     {
-        "text": "Vor der Testphase fragte er bei den Kunden nach",
-        "start": 118.5999969482422,
-        "end": 121.28000335693359,
+        "text": "Vor der Testphase fragte er bei den Kunden nach und ging auf deren Wünsche ein.",
+        "start": 118.69999694824219,
+        "end": 122.5,
         "wordTimings": [
             {
                 "word": "Vor",
-                "start": 118.5999969482422,
+                "start": 118.69999694824219,
                 "end": 118.69999694824219
             },
             {
@@ -1822,20 +1643,11 @@
             {
                 "word": "nach",
                 "start": 120.62000274658203,
-                "end": 121.28000335693359
-            }
-        ],
-        "translationEn": "Before the testing phase, he asked the customers.",
-        "translationVi": "Trước giai đoạn thử nghiệm, anh ấy đã hỏi ý kiến khách hàng."
-    },
-    {
-        "text": "und ging auf deren Wünsche ein.",
-        "start": 120.8800033569336,
-        "end": 122.8,
-        "wordTimings": [
+                "end": 120.9800033569336
+            },
             {
                 "word": "und",
-                "start": 120.8800033569336,
+                "start": 120.9800033569336,
                 "end": 121.19999694824219
             },
             {
@@ -1861,20 +1673,20 @@
             {
                 "word": "ein.",
                 "start": 122.0999984741211,
-                "end": 122.8
+                "end": 122.5
             }
         ],
-        "translationEn": "and accommodated their wishes.",
-        "translationVi": "và đã đáp ứng những mong muốn của họ."
+        "translationEn": "Before the test phase, he asked the customers about their needs and addressed their wishes.",
+        "translationVi": "Trước giai đoạn thử nghiệm, anh ấy đã hỏi ý kiến khách hàng và đáp ứng những mong muốn của họ."
     },
     {
         "text": "Wir hatten aus unseren eigenen Umfragen eher Befürworter.",
-        "start": 123.30000152587891,
-        "end": 127.43999938964843,
+        "start": 123.4000015258789,
+        "end": 127.13999938964844,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 123.30000152587891,
+                "start": 123.4000015258789,
                 "end": 124
             },
             {
@@ -1910,20 +1722,20 @@
             {
                 "word": "Befürworter.",
                 "start": 126.62000274658203,
-                "end": 127.43999938964843
+                "end": 127.13999938964844
             }
         ],
         "translationEn": "We had more supporters from our own surveys.",
-        "translationVi": "Chúng tôi đã có nhiều người ủng hộ từ các cuộc khảo sát của riêng mình."
+        "translationVi": "Chúng tôi đã có nhiều người ủng hộ từ các cuộc khảo sát của chính chúng tôi."
     },
     {
-        "text": "Ich würde auch sagen, die ganzen Kommentare online",
-        "start": 127.27999725341797,
-        "end": 129.62000732421876,
+        "text": "Ich würde auch sagen, die ganzen Kommentare online sind zu 90 Prozent positiv.",
+        "start": 127.37999725341797,
+        "end": 131.36000061035156,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 127.27999725341797,
+                "start": 127.37999725341797,
                 "end": 127.37999725341797
             },
             {
@@ -1959,20 +1771,11 @@
             {
                 "word": "online",
                 "start": 128.83999633789062,
-                "end": 129.62000732421876
-            }
-        ],
-        "translationEn": "I would also say, all the comments online.",
-        "translationVi": "Tôi cũng muốn nói rằng tất cả các bình luận trực tuyến."
-    },
-    {
-        "text": "sind zu 90 Prozent positiv.",
-        "start": 129.22000732421876,
-        "end": 131.66000061035157,
-        "wordTimings": [
+                "end": 129.32000732421875
+            },
             {
                 "word": "sind",
-                "start": 129.22000732421876,
+                "start": 129.32000732421875,
                 "end": 129.67999267578125
             },
             {
@@ -1988,33 +1791,31 @@
             {
                 "word": "Prozent",
                 "start": 130.17999267578125,
-                "end": 130.47999267578126,
-                "estimated": true
+                "end": 130.42999267578125
             },
             {
                 "word": "positiv.",
                 "start": 130.5399932861328,
-                "end": 131.66000061035157
+                "end": 131.36000061035156
             }
         ],
-        "translationEn": "are 90 percent positive.",
-        "translationVi": "đạt 90 phần trăm tích cực."
+        "translationEn": "I would also say that 90 percent of the comments online are positive.",
+        "translationVi": "Tôi cũng muốn nói rằng 90% các bình luận trực tuyến là tích cực."
     },
     {
-        "text": "10 Prozent haben sowas gesagt wie,",
-        "start": 131.81999816894532,
-        "end": 134.4999969482422,
+        "text": "10 Prozent haben sowas gesagt wie, ja, früher haben wir auch um 18 Uhr einkaufen können und keiner ist verhungert.",
+        "start": 131.9199981689453,
+        "end": 138.10000610351562,
         "wordTimings": [
             {
                 "word": "10",
-                "start": 131.81999816894532,
+                "start": 131.9199981689453,
                 "end": 132.27999877929688
             },
             {
                 "word": "Prozent",
                 "start": 132.27999877929688,
-                "end": 132.5799987792969,
-                "estimated": true
+                "end": 132.52999877929688
             },
             {
                 "word": "haben",
@@ -2034,20 +1835,11 @@
             {
                 "word": "wie,",
                 "start": 133.6999969482422,
-                "end": 134.4999969482422
-            }
-        ],
-        "translationEn": "10 percent have said something like that,",
-        "translationVi": "10 phần trăm đã nói những điều như vậy,"
-    },
-    {
-        "text": "ja, früher haben wir auch um 18 Uhr einkaufen können",
-        "start": 134.72000732421876,
-        "end": 137.33999328613282,
-        "wordTimings": [
+                "end": 134.1999969482422
+            },
             {
                 "word": "ja,",
-                "start": 134.72000732421876,
+                "start": 134.82000732421875,
                 "end": 135.36000061035156
             },
             {
@@ -2093,20 +1885,11 @@
             {
                 "word": "können",
                 "start": 136.75999450683594,
-                "end": 137.33999328613282
-            }
-        ],
-        "translationEn": "Yes, in the past we could also shop at 6 PM.",
-        "translationVi": "Vâng, trước đây chúng tôi cũng có thể đi mua sắm vào lúc 6 giờ chiều."
-    },
-    {
-        "text": "und keiner ist verhungert.",
-        "start": 136.93999328613282,
-        "end": 138.40000610351564,
-        "wordTimings": [
+                "end": 137.0399932861328
+            },
             {
                 "word": "und",
-                "start": 136.93999328613282,
+                "start": 137.0399932861328,
                 "end": 137.1999969482422
             },
             {
@@ -2122,20 +1905,20 @@
             {
                 "word": "verhungert.",
                 "start": 137.60000610351562,
-                "end": 138.40000610351564
+                "end": 138.10000610351562
             }
         ],
-        "translationEn": "and no one has starved.",
-        "translationVi": "và không ai bị đói."
+        "translationEn": "10 percent have said something like, yes, in the past we could also shop at 6 PM and no one starved.",
+        "translationVi": "10 phần trăm đã nói những điều như, vâng, trước đây chúng tôi cũng có thể đi mua sắm lúc 6 giờ tối và không ai bị đói."
     },
     {
         "text": "Aber wir sehen, die Nachfrage ist da.",
-        "start": 138.43999328613282,
-        "end": 140.47999267578126,
+        "start": 138.5399932861328,
+        "end": 140.17999267578125,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 138.43999328613282,
+                "start": 138.5399932861328,
                 "end": 138.89999389648438
             },
             {
@@ -2166,20 +1949,20 @@
             {
                 "word": "da.",
                 "start": 139.9600067138672,
-                "end": 140.47999267578126
+                "end": 140.17999267578125
             }
         ],
         "translationEn": "But we see that the demand is there.",
         "translationVi": "Nhưng chúng ta thấy, nhu cầu đang có."
     },
     {
-        "text": "Wir hatten bereits ab dem ersten Umsatztag",
-        "start": 140.20000305175782,
-        "end": 142.83999328613282,
+        "text": "Wir hatten bereits ab dem ersten Umsatztag in jeder Stunde Umsatz drin.",
+        "start": 140.3000030517578,
+        "end": 144.3000030517578,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 140.20000305175782,
+                "start": 140.3000030517578,
                 "end": 140.36000061035156
             },
             {
@@ -2210,20 +1993,11 @@
             {
                 "word": "Umsatztag",
                 "start": 141.8000030517578,
-                "end": 142.83999328613282
-            }
-        ],
-        "translationEn": "We had already from the first day of sales.",
-        "translationVi": "Chúng tôi đã có doanh thu ngay từ ngày đầu tiên."
-    },
-    {
-        "text": "in jeder Stunde Umsatz drin.",
-        "start": 142.43999328613282,
-        "end": 144.60000305175782,
-        "wordTimings": [
+                "end": 142.5399932861328
+            },
             {
                 "word": "in",
-                "start": 142.43999328613282,
+                "start": 142.5399932861328,
                 "end": 142.86000061035156
             },
             {
@@ -2244,20 +2018,20 @@
             {
                 "word": "drin.",
                 "start": 144.02000427246094,
-                "end": 144.60000305175782
+                "end": 144.3000030517578
             }
         ],
-        "translationEn": "Sales in every hour.",
-        "translationVi": "mỗi giờ có doanh thu."
+        "translationEn": "We already had sales from the first day of revenue, every hour.",
+        "translationVi": "Chúng tôi đã có doanh thu ngay từ ngày đầu tiên và mỗi giờ đều có doanh thu."
     },
     {
-        "text": "Das wird von Tag zu Tag",
-        "start": 144.62000122070313,
-        "end": 146.24000244140626,
+        "text": "Das wird von Tag zu Tag und vor allem von Woche zu Woche stärker.",
+        "start": 144.72000122070312,
+        "end": 147.63999938964844,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 144.62000122070313,
+                "start": 144.72000122070312,
                 "end": 144.8800048828125
             },
             {
@@ -2283,20 +2057,11 @@
             {
                 "word": "Tag",
                 "start": 145.72000122070312,
-                "end": 146.24000244140626
-            }
-        ],
-        "translationEn": "It gets worse day by day.",
-        "translationVi": "Điều đó ngày càng trở nên rõ ràng hơn."
-    },
-    {
-        "text": "und vor allem von Woche zu Woche stärker.",
-        "start": 145.84000244140626,
-        "end": 147.93999938964845,
-        "wordTimings": [
+                "end": 145.94000244140625
+            },
             {
                 "word": "und",
-                "start": 145.84000244140626,
+                "start": 145.94000244140625,
                 "end": 146.10000610351562
             },
             {
@@ -2332,20 +2097,20 @@
             {
                 "word": "stärker.",
                 "start": 147.17999267578125,
-                "end": 147.93999938964845
+                "end": 147.63999938964844
             }
         ],
-        "translationEn": "and above all stronger from week to week.",
-        "translationVi": "và đặc biệt là mạnh mẽ hơn từ tuần này sang tuần khác."
+        "translationEn": "It gets stronger day by day and especially week by week.",
+        "translationVi": "Điều đó ngày càng mạnh mẽ hơn từng ngày và đặc biệt là từng tuần."
     },
     {
-        "text": "Das heißt, Bedarf ist da",
-        "start": 148.07999267578126,
-        "end": 149.66000061035157,
+        "text": "Das heißt, Bedarf ist da, und wenn Bedarf da ist, dann schaffen wir ein Angebot.",
+        "start": 148.17999267578125,
+        "end": 151.8000030517578,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 148.07999267578126,
+                "start": 148.17999267578125,
                 "end": 148.47999572753906
             },
             {
@@ -2364,22 +2129,13 @@
                 "end": 149.17999267578125
             },
             {
-                "word": "da",
+                "word": "da,",
                 "start": 149.17999267578125,
-                "end": 149.66000061035157
-            }
-        ],
-        "translationEn": "That means there is demand.",
-        "translationVi": "Điều đó có nghĩa là nhu cầu đang có."
-    },
-    {
-        "text": "und wenn Bedarf da ist, dann schaffen wir ein Angebot.",
-        "start": 149.26000061035157,
-        "end": 152.10000305175782,
-        "wordTimings": [
+                "end": 149.36000061035156
+            },
             {
                 "word": "und",
-                "start": 149.26000061035157,
+                "start": 149.36000061035156,
                 "end": 149.4600067138672
             },
             {
@@ -2425,20 +2181,20 @@
             {
                 "word": "Angebot.",
                 "start": 151.44000244140625,
-                "end": 152.10000305175782
+                "end": 151.8000030517578
             }
         ],
-        "translationEn": "And if there is a need, we will create an offer.",
-        "translationVi": "và nếu có nhu cầu, chúng tôi sẽ tạo ra một đề nghị."
+        "translationEn": "That means there is demand, and when there is demand, we create an offer.",
+        "translationVi": "Điều đó có nghĩa là có nhu cầu, và khi có nhu cầu, chúng tôi sẽ tạo ra một đề xuất."
     },
     {
         "text": "Das geht aber nicht überall.",
-        "start": 152.4,
-        "end": 154.27999572753907,
+        "start": 152.5,
+        "end": 153.97999572753906,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 152.4,
+                "start": 152.5,
                 "end": 152.89999389648438
             },
             {
@@ -2459,20 +2215,20 @@
             {
                 "word": "überall.",
                 "start": 153.52000427246094,
-                "end": 154.27999572753907
+                "end": 153.97999572753906
             }
         ],
         "translationEn": "That doesn't work everywhere.",
         "translationVi": "Điều đó không thể xảy ra ở mọi nơi."
     },
     {
-        "text": "Denn in Deutschland bestimmt jedes Bundesland selbst,",
-        "start": 154.5199951171875,
-        "end": 157.1800048828125,
+        "text": "Denn in Deutschland bestimmt jedes Bundesland selbst, wie lange Läden offen bleiben dürfen.",
+        "start": 154.6199951171875,
+        "end": 158.72000122070312,
         "wordTimings": [
             {
                 "word": "Denn",
-                "start": 154.5199951171875,
+                "start": 154.6199951171875,
                 "end": 154.63999938964844
             },
             {
@@ -2503,20 +2259,11 @@
             {
                 "word": "selbst,",
                 "start": 156.4600067138672,
-                "end": 157.1800048828125
-            }
-        ],
-        "translationEn": "Because in Germany, each federal state determines for itself,",
-        "translationVi": "Bởi vì ở Đức, mỗi bang tự quyết định,"
-    },
-    {
-        "text": "wie lange Läden offen bleiben dürfen.",
-        "start": 157.0199951171875,
-        "end": 159.02000122070314,
-        "wordTimings": [
+                "end": 156.8800048828125
+            },
             {
                 "word": "wie",
-                "start": 157.0199951171875,
+                "start": 157.1199951171875,
                 "end": 157.1199951171875
             },
             {
@@ -2542,20 +2289,20 @@
             {
                 "word": "dürfen.",
                 "start": 158.36000061035156,
-                "end": 159.02000122070314
+                "end": 158.72000122070312
             }
         ],
-        "translationEn": "how long stores are allowed to stay open.",
-        "translationVi": "các cửa hàng được phép mở cửa bao lâu."
+        "translationEn": "In Germany, each federal state determines for itself how long shops are allowed to stay open.",
+        "translationVi": "Bởi vì ở Đức, mỗi bang tự quyết định thời gian mà các cửa hàng được phép mở cửa."
     },
     {
         "text": "Und das sorgt für große Unterschiede.",
-        "start": 159.12000122070313,
-        "end": 161.8,
+        "start": 159.22000122070312,
+        "end": 161.5,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 159.12000122070313,
+                "start": 159.22000122070312,
                 "end": 159.33999633789062
             },
             {
@@ -2581,7 +2328,7 @@
             {
                 "word": "Unterschiede.",
                 "start": 160.5800018310547,
-                "end": 161.8
+                "end": 161.5
             }
         ],
         "translationEn": "And that creates significant differences.",
@@ -2589,12 +2336,12 @@
     },
     {
         "text": "In Bayern und im Saarland ist um 20 Uhr Schluss.",
-        "start": 161.81999816894532,
-        "end": 164.55999450683595,
+        "start": 161.9199981689453,
+        "end": 164.25999450683594,
         "wordTimings": [
             {
                 "word": "In",
-                "start": 161.81999816894532,
+                "start": 161.9199981689453,
                 "end": 162.02000427246094
             },
             {
@@ -2640,26 +2387,31 @@
             {
                 "word": "Schluss.",
                 "start": 163.9600067138672,
-                "end": 164.55999450683595
+                "end": 164.25999450683594
             }
         ],
         "translationEn": "In Bavaria and Saarland, it ends at 8 PM.",
         "translationVi": "Tại Bayern và Saarland, kết thúc lúc 20 giờ."
     },
     {
-        "text": "Spätes Einkaufen eher schwierig.",
-        "start": 164.87999572753907,
-        "end": 167.47999267578126,
+        "text": "Spätes Einkaufen ist eher schwierig. Ganz anders in Berlin.",
+        "start": 164.97999572753906,
+        "end": 169,
         "wordTimings": [
             {
                 "word": "Spätes",
-                "start": 164.87999572753907,
+                "start": 164.97999572753906,
                 "end": 165.22000122070312
             },
             {
                 "word": "Einkaufen",
                 "start": 165.22000122070312,
                 "end": 165.5800018310547
+            },
+            {
+                "word": "ist",
+                "start": 165.5800018310547,
+                "end": 165.8300018310547
             },
             {
                 "word": "eher",
@@ -2669,20 +2421,11 @@
             {
                 "word": "schwierig.",
                 "start": 166.55999755859375,
-                "end": 167.47999267578126
-            }
-        ],
-        "translationEn": "Late shopping is rather difficult.",
-        "translationVi": "Mua sắm muộn thì khá khó khăn."
-    },
-    {
-        "text": "Ganz anders Berlin.",
-        "start": 168.03999938964844,
-        "end": 169.3,
-        "wordTimings": [
+                "end": 167.17999267578125
+            },
             {
                 "word": "Ganz",
-                "start": 168.03999938964844,
+                "start": 168.13999938964844,
                 "end": 168.33999633789062
             },
             {
@@ -2691,22 +2434,27 @@
                 "end": 168.5800018310547
             },
             {
+                "word": "in",
+                "start": 168.5800018310547,
+                "end": 168.8300018310547
+            },
+            {
                 "word": "Berlin.",
                 "start": 168.5800018310547,
-                "end": 169.3
+                "end": 169
             }
         ],
-        "translationEn": "Completely different Berlin.",
-        "translationVi": "Berlin hoàn toàn khác."
+        "translationEn": "Late shopping is rather difficult. Quite different in Berlin.",
+        "translationVi": "Mua sắm muộn thì khá khó khăn. Hoàn toàn khác ở Berlin."
     },
     {
-        "text": "Hier darf von Montag bis Samstag",
-        "start": 169.29999389648438,
-        "end": 171.13999633789064,
+        "text": "Hier darf von Montag bis Samstag quasi rund um die Uhr verkauft werden.",
+        "start": 169.39999389648438,
+        "end": 173.1199951171875,
         "wordTimings": [
             {
                 "word": "Hier",
-                "start": 169.29999389648438,
+                "start": 169.39999389648438,
                 "end": 169.5800018310547
             },
             {
@@ -2732,20 +2480,11 @@
             {
                 "word": "Samstag",
                 "start": 170.52000427246094,
-                "end": 171.13999633789064
-            }
-        ],
-        "translationEn": "Here, it is allowed from Monday to Saturday.",
-        "translationVi": "Ở đây được phép từ thứ Hai đến thứ Bảy."
-    },
-    {
-        "text": "quasi rund um die Uhr verkauft werden.",
-        "start": 170.73999633789063,
-        "end": 173.4199951171875,
-        "wordTimings": [
+                "end": 170.83999633789062
+            },
             {
                 "word": "quasi",
-                "start": 170.73999633789063,
+                "start": 170.83999633789062,
                 "end": 171.52000427246094
             },
             {
@@ -2776,20 +2515,20 @@
             {
                 "word": "werden.",
                 "start": 172.77999877929688,
-                "end": 173.4199951171875
+                "end": 173.1199951171875
             }
         ],
-        "translationEn": "sold almost around the clock.",
-        "translationVi": "hầu như được bán suốt ngày đêm."
+        "translationEn": "Here, sales can take place almost around the clock from Monday to Saturday.",
+        "translationVi": "Tại đây, từ thứ Hai đến thứ Bảy, việc bán hàng gần như diễn ra suốt 24 giờ."
     },
     {
         "text": "Viele andere Länder liegen irgendwo dazwischen.",
-        "start": 174.53999938964844,
-        "end": 178.02000122070314,
+        "start": 174.63999938964844,
+        "end": 177.72000122070312,
         "wordTimings": [
             {
                 "word": "Viele",
-                "start": 174.53999938964844,
+                "start": 174.63999938964844,
                 "end": 175.33999633789062
             },
             {
@@ -2815,7 +2554,7 @@
             {
                 "word": "dazwischen.",
                 "start": 177.24000549316406,
-                "end": 178.02000122070314
+                "end": 177.72000122070312
             }
         ],
         "translationEn": "Many other countries fall somewhere in between.",
@@ -2823,12 +2562,12 @@
     },
     {
         "text": "Mal mit frühen Schließzeiten, mal mit extra langen Einkaufsfenstern.",
-        "start": 178.26000061035157,
-        "end": 182.21999816894532,
+        "start": 178.36000061035156,
+        "end": 181.9199981689453,
         "wordTimings": [
             {
                 "word": "Mal",
-                "start": 178.26000061035157,
+                "start": 178.36000061035156,
                 "end": 178.36000061035156
             },
             {
@@ -2869,7 +2608,7 @@
             {
                 "word": "Einkaufsfenstern.",
                 "start": 180.97999572753906,
-                "end": 182.21999816894532
+                "end": 181.9199981689453
             }
         ],
         "translationEn": "Sometimes with early closing times, sometimes with extra long shopping windows.",
@@ -2877,12 +2616,12 @@
     },
     {
         "text": "Heißt, die Einkaufszeiten hängen von der Region ab.",
-        "start": 182.50000610351563,
-        "end": 185.90000610351564,
+        "start": 182.60000610351562,
+        "end": 185.60000610351562,
         "wordTimings": [
             {
                 "word": "Heißt,",
-                "start": 182.50000610351563,
+                "start": 182.60000610351562,
                 "end": 182.74000549316406
             },
             {
@@ -2918,7 +2657,7 @@
             {
                 "word": "ab.",
                 "start": 185.1999969482422,
-                "end": 185.90000610351564
+                "end": 185.60000610351562
             }
         ],
         "translationEn": "This means that shopping hours depend on the region.",
@@ -2926,12 +2665,12 @@
     },
     {
         "text": "Für Märkte in Hessen gibt's wie in Berlin keine Einschränkungen.",
-        "start": 187.70000305175782,
-        "end": 191.83999328613282,
+        "start": 187.8000030517578,
+        "end": 191.5399932861328,
         "wordTimings": [
             {
                 "word": "Für",
-                "start": 187.70000305175782,
+                "start": 187.8000030517578,
                 "end": 188.5
             },
             {
@@ -2977,20 +2716,20 @@
             {
                 "word": "Einschränkungen.",
                 "start": 190.8800048828125,
-                "end": 191.83999328613282
+                "end": 191.5399932861328
             }
         ],
         "translationEn": "For markets in Hesse, there are no restrictions, just like in Berlin.",
         "translationVi": "Đối với các chợ ở Hessen, cũng như ở Berlin, không có hạn chế nào."
     },
     {
-        "text": "Deshalb können Kunden hier im Pilotsupermarkt",
-        "start": 192.15999450683594,
-        "end": 194.83999328613282,
+        "text": "Deshalb können Kunden hier im Pilotsupermarkt auch nachts in aller Ruhe einkaufen.",
+        "start": 192.25999450683594,
+        "end": 196.47999572753906,
         "wordTimings": [
             {
                 "word": "Deshalb",
-                "start": 192.15999450683594,
+                "start": 192.25999450683594,
                 "end": 192.5
             },
             {
@@ -3016,20 +2755,11 @@
             {
                 "word": "Pilotsupermarkt",
                 "start": 193.67999267578125,
-                "end": 194.83999328613282
-            }
-        ],
-        "translationEn": "Therefore, customers can shop here in the pilot supermarket.",
-        "translationVi": "Vì vậy, khách hàng có thể ở đây trong siêu thị thử nghiệm."
-    },
-    {
-        "text": "auch nachts in aller Ruhe einkaufen.",
-        "start": 194.43999328613282,
-        "end": 196.77999572753907,
-        "wordTimings": [
+                "end": 194.5399932861328
+            },
             {
                 "word": "auch",
-                "start": 194.43999328613282,
+                "start": 194.5399932861328,
                 "end": 194.97999572753906
             },
             {
@@ -3055,20 +2785,20 @@
             {
                 "word": "einkaufen.",
                 "start": 195.97999572753906,
-                "end": 196.77999572753907
+                "end": 196.47999572753906
             }
         ],
-        "translationEn": "shopping in peace even at night.",
-        "translationVi": "cũng có thể mua sắm vào ban đêm một cách thoải mái."
+        "translationEn": "Therefore, customers can shop here in the pilot supermarket peacefully at night.",
+        "translationVi": "Vì vậy, khách hàng có thể thoải mái mua sắm vào ban đêm tại siêu thị thử nghiệm này."
     },
     {
         "text": "Mit ein paar Anpassungen.",
-        "start": 197.06000366210938,
-        "end": 198.74000244140626,
+        "start": 197.16000366210938,
+        "end": 198.44000244140625,
         "wordTimings": [
             {
                 "word": "Mit",
-                "start": 197.06000366210938,
+                "start": 197.16000366210938,
                 "end": 197.32000732421875
             },
             {
@@ -3084,20 +2814,20 @@
             {
                 "word": "Anpassungen.",
                 "start": 197.83999633789062,
-                "end": 198.74000244140626
+                "end": 198.44000244140625
             }
         ],
         "translationEn": "With a few adjustments.",
         "translationVi": "Với một vài điều chỉnh."
     },
     {
-        "text": "Wir haben hier im Markt in der Nacht",
-        "start": 199.26000061035157,
-        "end": 202.4600036621094,
+        "text": "Wir haben hier im Markt in der Nacht und auch in den Abendstunden schon zuvor ein Security,",
+        "start": 199.36000061035156,
+        "end": 205.22000122070312,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 199.26000061035157,
+                "start": 199.36000061035156,
                 "end": 200.1999969482422
             },
             {
@@ -3133,20 +2863,11 @@
             {
                 "word": "Nacht",
                 "start": 202.16000366210938,
-                "end": 202.4600036621094
-            }
-        ],
-        "translationEn": "We have here in the market at night.",
-        "translationVi": "Chúng tôi có mặt ở chợ vào ban đêm."
-    },
-    {
-        "text": "und auch in den Abendstunden schon zuvor",
-        "start": 202.06000366210938,
-        "end": 204.35999755859376,
-        "wordTimings": [
+                "end": 202.16000366210938
+            },
             {
                 "word": "und",
-                "start": 202.06000366210938,
+                "start": 202.16000366210938,
                 "end": 202.3800048828125
             },
             {
@@ -3177,27 +2898,27 @@
             {
                 "word": "zuvor",
                 "start": 203.67999267578125,
-                "end": 204.35999755859376
-            }
-        ],
-        "translationEn": "and also in the evening hours already before",
-        "translationVi": "và cũng vào buổi tối trước đó"
-    },
-    {
-        "text": "ein Security, der die Self Checkouts betreut.",
-        "start": 203.95999755859376,
-        "end": 208.8,
-        "wordTimings": [
+                "end": 204.05999755859375
+            },
             {
                 "word": "ein",
-                "start": 203.95999755859376,
+                "start": 204.05999755859375,
                 "end": 204.66000366210938
             },
             {
                 "word": "Security,",
                 "start": 204.66000366210938,
                 "end": 205.22000122070312
-            },
+            }
+        ],
+        "translationEn": "We already have security here in the market at night and also in the evening hours.",
+        "translationVi": "Chúng tôi đã có bảo vệ ở đây trong chợ vào ban đêm và cả vào buổi tối trước đó."
+    },
+    {
+        "text": "der die Self-Checkouts betreut.",
+        "start": 205.75999450683594,
+        "end": 208.5,
+        "wordTimings": [
             {
                 "word": "der",
                 "start": 205.75999450683594,
@@ -3209,32 +2930,27 @@
                 "end": 206.27999877929688
             },
             {
-                "word": "Self",
+                "word": "Self-Checkouts",
                 "start": 206.27999877929688,
                 "end": 206.67999267578125
             },
             {
-                "word": "Checkouts",
-                "start": 206.67999267578125,
-                "end": 207.5
-            },
-            {
                 "word": "betreut.",
                 "start": 207.5,
-                "end": 208.8
+                "end": 208.5
             }
         ],
-        "translationEn": "a security guard who supervises the self checkouts.",
-        "translationVi": "một nhân viên an ninh, người quản lý các quầy tự phục vụ."
+        "translationEn": "who oversees the self-checkouts.",
+        "translationVi": "người phụ trách các máy tự phục vụ."
     },
     {
-        "text": "Und wir haben einen Mitarbeiter im Markt,",
-        "start": 208.95999755859376,
-        "end": 211.2600067138672,
+        "text": "Und wir haben einen Mitarbeiter im Markt, der natürlich im Bedarfsfall auch an die Kassenzone geht",
+        "start": 209.05999755859375,
+        "end": 214.05999755859375,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 208.95999755859376,
+                "start": 209.05999755859375,
                 "end": 209.25999450683594
             },
             {
@@ -3265,20 +2981,11 @@
             {
                 "word": "Markt,",
                 "start": 210.9600067138672,
-                "end": 211.2600067138672
-            }
-        ],
-        "translationEn": "And we have an employee in the market,",
-        "translationVi": "Và chúng tôi có một nhân viên tại thị trường,"
-    },
-    {
-        "text": "der natürlich im Bedarfsfall auch an die Kassenzone geht",
-        "start": 211.06000366210938,
-        "end": 214.35999755859376,
-        "wordTimings": [
+                "end": 210.9600067138672
+            },
             {
                 "word": "der",
-                "start": 211.06000366210938,
+                "start": 211.16000366210938,
                 "end": 211.1999969482422
             },
             {
@@ -3319,20 +3026,20 @@
             {
                 "word": "geht",
                 "start": 213.67999267578125,
-                "end": 214.35999755859376
+                "end": 214.05999755859375
             }
         ],
-        "translationEn": "who naturally goes to the checkout area if needed",
-        "translationVi": "người tự nhiên cũng sẽ đến khu vực thanh toán khi cần thiết"
+        "translationEn": "And we have an employee in the market who, of course, goes to the checkout area if needed.",
+        "translationVi": "Và chúng tôi có một nhân viên tại thị trường, người sẽ đi đến khu vực thanh toán khi cần thiết."
     },
     {
-        "text": "und eben Zigaretten ausgibt, Alkohol ausgibt",
-        "start": 213.95999755859376,
-        "end": 217.16000061035157,
+        "text": "und eben Zigaretten ausgibt, Alkohol ausgibt oder eben halt die Kassen wieder in Gange setzt,",
+        "start": 214.05999755859375,
+        "end": 220.3800048828125,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 213.95999755859376,
+                "start": 214.05999755859375,
                 "end": 214.55999755859375
             },
             {
@@ -3358,20 +3065,11 @@
             {
                 "word": "ausgibt",
                 "start": 216.44000244140625,
-                "end": 217.16000061035157
-            }
-        ],
-        "translationEn": "and just gives out cigarettes, gives out alcohol",
-        "translationVi": "và vừa phát thuốc lá, vừa phát rượu."
-    },
-    {
-        "text": "oder eben halt die Kassen wieder in Gange setzt,",
-        "start": 216.76000061035157,
-        "end": 220.6800048828125,
-        "wordTimings": [
+                "end": 216.86000061035156
+            },
             {
                 "word": "oder",
-                "start": 216.76000061035157,
+                "start": 216.86000061035156,
                 "end": 217.17999267578125
             },
             {
@@ -3412,20 +3110,20 @@
             {
                 "word": "setzt,",
                 "start": 220.1199951171875,
-                "end": 220.6800048828125
+                "end": 220.3800048828125
             }
         ],
-        "translationEn": "or simply gets the cash registers going again,",
-        "translationVi": "hoặc đơn giản là khôi phục lại các quầy thanh toán,"
+        "translationEn": "and just distributes cigarettes, distributes alcohol, or just gets the cash registers going again,",
+        "translationVi": "và vừa phát thuốc lá, phát rượu hoặc đơn giản là khởi động lại các quầy thu ngân,"
     },
     {
         "text": "wenn irgendeine Fehlermeldung auftaucht.",
-        "start": 220.5999969482422,
-        "end": 222.55999450683595,
+        "start": 220.6999969482422,
+        "end": 222.25999450683594,
         "wordTimings": [
             {
                 "word": "wenn",
-                "start": 220.5999969482422,
+                "start": 220.6999969482422,
                 "end": 220.6999969482422
             },
             {
@@ -3441,20 +3139,20 @@
             {
                 "word": "auftaucht.",
                 "start": 221.75999450683594,
-                "end": 222.55999450683595
+                "end": 222.25999450683594
             }
         ],
         "translationEn": "if any error message appears.",
         "translationVi": "nếu có bất kỳ thông báo lỗi nào xuất hiện."
     },
     {
-        "text": "Heißt, zwei Personen reichen aus,",
-        "start": 222.15999450683594,
-        "end": 225.33999328613282,
+        "text": "Heißt, zwei Personen reichen aus, um den Markt durch die Nacht zu bringen.",
+        "start": 222.25999450683594,
+        "end": 226.8000030517578,
         "wordTimings": [
             {
                 "word": "Heißt,",
-                "start": 222.15999450683594,
+                "start": 222.25999450683594,
                 "end": 223.33999633789062
             },
             {
@@ -3475,20 +3173,11 @@
             {
                 "word": "aus,",
                 "start": 224.72000122070312,
-                "end": 225.33999328613282
-            }
-        ],
-        "translationEn": "This means that two people are enough,",
-        "translationVi": "Có nghĩa là, hai người là đủ,"
-    },
-    {
-        "text": "um den Markt durch die Nacht zu bringen.",
-        "start": 225.07999267578126,
-        "end": 227.10000305175782,
-        "wordTimings": [
+                "end": 225.0399932861328
+            },
             {
                 "word": "um",
-                "start": 225.07999267578126,
+                "start": 225.17999267578125,
                 "end": 225.1999969482422
             },
             {
@@ -3524,20 +3213,20 @@
             {
                 "word": "bringen.",
                 "start": 226.74000549316406,
-                "end": 227.10000305175782
+                "end": 226.8000030517578
             }
         ],
-        "translationEn": "to bring the market through the night.",
-        "translationVi": "đưa thị trường qua đêm."
+        "translationEn": "This means that two people are enough to keep the market going through the night.",
+        "translationVi": "Có nghĩa là, hai người là đủ để đưa thị trường qua đêm."
     },
     {
         "text": "Also keine enormen zusätzlichen Personalkosten.",
-        "start": 227.53999938964844,
-        "end": 230.3800018310547,
+        "start": 227.63999938964844,
+        "end": 230.0800018310547,
         "wordTimings": [
             {
                 "word": "Also",
-                "start": 227.53999938964844,
+                "start": 227.63999938964844,
                 "end": 227.74000549316406
             },
             {
@@ -3558,20 +3247,20 @@
             {
                 "word": "Personalkosten.",
                 "start": 229.25999450683594,
-                "end": 230.3800018310547
+                "end": 230.0800018310547
             }
         ],
         "translationEn": "So no enormous additional personnel costs.",
-        "translationVi": "Vậy là không có chi phí nhân sự bổ sung lớn."
+        "translationVi": "Vậy nên không có chi phí nhân sự bổ sung lớn."
     },
     {
         "text": "So lohnt sich die Nachtöffnung trotz Extraschicht.",
-        "start": 230.7800048828125,
-        "end": 233.58999328613282,
+        "start": 230.8800048828125,
+        "end": 233.2899932861328,
         "wordTimings": [
             {
                 "word": "So",
-                "start": 230.7800048828125,
+                "start": 230.8800048828125,
                 "end": 231.0800018310547
             },
             {
@@ -3602,20 +3291,20 @@
             {
                 "word": "Extraschicht.",
                 "start": 232.97999572753906,
-                "end": 233.58999328613282
+                "end": 233.2899932861328
             }
         ],
         "translationEn": "So it is worth the night opening despite the extra shift.",
-        "translationVi": "Vì vậy, việc mở cửa vào ban đêm vẫn đáng giá mặc dù có thêm ca làm việc."
+        "translationVi": "Vậy nên việc mở cửa ban đêm vẫn đáng giá mặc dù phải làm thêm giờ."
     },
     {
-        "text": "Die Öffnungszeiten kommen gut an.",
-        "start": 235.79999389648438,
-        "end": 238.40000610351564,
+        "text": "Die Öffnungszeiten kommen gut an bei Schichtarbeitern, Pflegepersonal und Nachteulen.",
+        "start": 235.89999389648438,
+        "end": 241.67999267578125,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 235.79999389648438,
+                "start": 235.89999389648438,
                 "end": 236.52000427246094
             },
             {
@@ -3634,22 +3323,13 @@
                 "end": 237.8000030517578
             },
             {
-                "word": "an.",
+                "word": "an",
                 "start": 237.8000030517578,
-                "end": 238.40000610351564
-            }
-        ],
-        "translationEn": "The opening hours are well received.",
-        "translationVi": "Giờ mở cửa được đón nhận tốt."
-    },
-    {
-        "text": "Bei Schichtarbeitern, Pflegepersonal und Nachteulen.",
-        "start": 238.4,
-        "end": 241.97999267578126,
-        "wordTimings": [
+                "end": 238.10000610351562
+            },
             {
-                "word": "Bei",
-                "start": 238.4,
+                "word": "bei",
+                "start": 238.5,
                 "end": 238.6999969482422
             },
             {
@@ -3670,20 +3350,20 @@
             {
                 "word": "Nachteulen.",
                 "start": 241.05999755859375,
-                "end": 241.97999267578126
+                "end": 241.67999267578125
             }
         ],
-        "translationEn": "Among shift workers, nursing staff, and night owls.",
-        "translationVi": "Ở những người làm ca, nhân viên y tế và những người thức khuya."
+        "translationEn": "The opening hours are well received by shift workers, nursing staff, and night owls.",
+        "translationVi": "Giờ mở cửa được đánh giá cao bởi những người làm ca, nhân viên chăm sóc và những người thức khuya."
     },
     {
-        "text": "Also 24-Stunden-Supermarkt ist eigentlich gut,",
-        "start": 242.73999633789063,
-        "end": 245.13999633789064,
+        "text": "Also, 24-Stunden-Supermarkt ist eigentlich gut, wenn man etwas braucht,",
+        "start": 242.83999633789062,
+        "end": 245.8800048828125,
         "wordTimings": [
             {
-                "word": "Also",
-                "start": 242.73999633789063,
+                "word": "Also,",
+                "start": 242.83999633789062,
                 "end": 243.10000610351562
             },
             {
@@ -3704,20 +3384,11 @@
             {
                 "word": "gut,",
                 "start": 244.63999938964844,
-                "end": 245.13999633789064
-            }
-        ],
-        "translationEn": "So a 24-hour supermarket is actually good,",
-        "translationVi": "Cửa hàng tiện lợi mở cửa 24 giờ thực sự rất tốt,"
-    },
-    {
-        "text": "wenn man etwas braucht,",
-        "start": 244.8600067138672,
-        "end": 246.1800048828125,
-        "wordTimings": [
+                "end": 244.83999633789062
+            },
             {
                 "word": "wenn",
-                "start": 244.8600067138672,
+                "start": 244.9600067138672,
                 "end": 245.1199951171875
             },
             {
@@ -3733,20 +3404,20 @@
             {
                 "word": "braucht,",
                 "start": 245.5399932861328,
-                "end": 246.1800048828125
+                "end": 245.8800048828125
             }
         ],
-        "translationEn": "when one needs something,",
-        "translationVi": "khi người ta cần một cái gì đó,"
+        "translationEn": "Well, a 24-hour supermarket is actually good when you need something.",
+        "translationVi": "Cửa hàng siêu thị mở 24 giờ thực sự rất tốt khi bạn cần một cái gì đó."
     },
     {
-        "text": "dass man direkt schnell zum Supermarkt geht",
-        "start": 246.23999633789063,
-        "end": 248.77999572753907,
+        "text": "dass man direkt schnell zum Supermarkt geht und einkaufen gehen kann.",
+        "start": 246.33999633789062,
+        "end": 249.3800048828125,
         "wordTimings": [
             {
                 "word": "dass",
-                "start": 246.23999633789063,
+                "start": 246.33999633789062,
                 "end": 246.52000427246094
             },
             {
@@ -3777,20 +3448,11 @@
             {
                 "word": "geht",
                 "start": 248.22000122070312,
-                "end": 248.77999572753907
-            }
-        ],
-        "translationEn": "that one goes directly quickly to the supermarket",
-        "translationVi": "rằng người ta đi thẳng nhanh đến siêu thị"
-    },
-    {
-        "text": "und einkaufen gehen kann.",
-        "start": 248.37999572753907,
-        "end": 249.6800048828125,
-        "wordTimings": [
+                "end": 248.47999572753906
+            },
             {
                 "word": "und",
-                "start": 248.37999572753907,
+                "start": 248.47999572753906,
                 "end": 248.66000366210938
             },
             {
@@ -3806,20 +3468,20 @@
             {
                 "word": "kann.",
                 "start": 249.24000549316406,
-                "end": 249.6800048828125
+                "end": 249.3800048828125
             }
         ],
-        "translationEn": "and can go shopping.",
-        "translationVi": "và có thể đi mua sắm."
+        "translationEn": "that you can go directly to the supermarket quickly and do your shopping.",
+        "translationVi": "rằng người ta có thể đi thẳng nhanh đến siêu thị và đi mua sắm."
     },
     {
-        "text": "Es ist auf jeden Fall eine sehr gute Idee,",
-        "start": 250.64000549316407,
-        "end": 252.6800048828125,
+        "text": "Es ist auf jeden Fall eine sehr gute Idee, wie er schon gesagt hat,",
+        "start": 250.74000549316406,
+        "end": 253.10000610351562,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 250.64000549316407,
+                "start": 250.74000549316406,
                 "end": 251.13999938964844
             },
             {
@@ -3860,20 +3522,11 @@
             {
                 "word": "Idee,",
                 "start": 252.22000122070312,
-                "end": 252.6800048828125
-            }
-        ],
-        "translationEn": "It is definitely a very good idea,",
-        "translationVi": "Đó chắc chắn là một ý tưởng rất hay,"
-    },
-    {
-        "text": "wie er schon gesagt hat,",
-        "start": 252.45999755859376,
-        "end": 253.40000610351564,
-        "wordTimings": [
+                "end": 252.3800048828125
+            },
             {
                 "word": "wie",
-                "start": 252.45999755859376,
+                "start": 252.55999755859375,
                 "end": 252.55999755859375
             },
             {
@@ -3894,20 +3547,20 @@
             {
                 "word": "hat,",
                 "start": 253,
-                "end": 253.40000610351564
+                "end": 253.10000610351562
             }
         ],
-        "translationEn": "as he has already said,",
-        "translationVi": "như anh ấy đã nói,"
+        "translationEn": "It is definitely a very good idea, as he has already said,",
+        "translationVi": "Đó chắc chắn là một ý tưởng rất hay, như anh ấy đã nói."
     },
     {
-        "text": "dass wir zentral Frankfurt Rhein-Main-Gebiet sind.",
-        "start": 253.12000122070313,
-        "end": 255.90000610351564,
+        "text": "dass wir zentral im Frankfurt-Rhein-Main-Gebiet sind.",
+        "start": 253.22000122070312,
+        "end": 255.60000610351562,
         "wordTimings": [
             {
                 "word": "dass",
-                "start": 253.12000122070313,
+                "start": 253.22000122070312,
                 "end": 253.22000122070312
             },
             {
@@ -3921,32 +3574,32 @@
                 "end": 254.16000366210938
             },
             {
-                "word": "Frankfurt",
+                "word": "im",
+                "start": 254.16000366210938,
+                "end": 254.41000366210938
+            },
+            {
+                "word": "Frankfurt-Rhein-Main-Gebiet",
                 "start": 254.16000366210938,
                 "end": 254.6199951171875
             },
             {
-                "word": "Rhein-Main-Gebiet",
-                "start": 254.6199951171875,
-                "end": 254.82000732421875
-            },
-            {
                 "word": "sind.",
                 "start": 255.32000732421875,
-                "end": 255.90000610351564
+                "end": 255.60000610351562
             }
         ],
-        "translationEn": "that we are centrally located in the Frankfurt Rhine-Main area.",
-        "translationVi": "rằng chúng tôi nằm ở khu vực Frankfurt Rhein-Main trung tâm."
+        "translationEn": "that we are centrally located in the Frankfurt-Rhine-Main area.",
+        "translationVi": "rằng chúng tôi nằm ở trung tâm khu vực Frankfurt-Rhein-Main."
     },
     {
         "text": "Und ja, es ist einfach auch ein guter Platz hier zum Chillen.",
-        "start": 255.9,
-        "end": 258.28001098632814,
+        "start": 256,
+        "end": 257.9800109863281,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 255.9,
+                "start": 256,
                 "end": 256.05999755859375
             },
             {
@@ -4002,25 +3655,25 @@
             {
                 "word": "Chillen.",
                 "start": 257.6400146484375,
-                "end": 258.28001098632814
+                "end": 257.9800109863281
             }
         ],
-        "translationEn": "And yes, it's just a good place here to chill.",
-        "translationVi": "Và đúng vậy, đây cũng là một nơi tốt để thư giãn."
+        "translationEn": "And yes, it's simply a good place here to chill.",
+        "translationVi": "Và vâng, đây cũng là một nơi tốt để thư giãn."
     },
     {
-        "text": "Und dass er auch einfach 24/7 offen hat,",
-        "start": 258.0000061035156,
-        "end": 260.3199890136719,
+        "text": "Und dass er auch einfach 24/7 offen hat, das ist einfach gut,",
+        "start": 257.9800109863281,
+        "end": 260.9800109863281,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 258.0000061035156,
-                "end": 258.4800109863281
+                "start": 257.9800109863281,
+                "end": 258.4599914550781
             },
             {
                 "word": "dass",
-                "start": 258.4800109863281,
+                "start": 258.4599914550781,
                 "end": 258.6000061035156
             },
             {
@@ -4031,18 +3684,17 @@
             {
                 "word": "auch",
                 "start": 258.67999267578125,
-                "end": 258.79998779296875
+                "end": 258.7799987792969
             },
             {
                 "word": "einfach",
-                "start": 258.79998779296875,
+                "start": 258.7799987792969,
                 "end": 259
             },
             {
                 "word": "24/7",
                 "start": 259,
-                "end": 259.3,
-                "estimated": true
+                "end": 259.25
             },
             {
                 "word": "offen",
@@ -4052,20 +3704,11 @@
             {
                 "word": "hat,",
                 "start": 259.8599853515625,
-                "end": 260.3199890136719
-            }
-        ],
-        "translationEn": "And that it is simply open 24/7,",
-        "translationVi": "Và rằng anh ấy cũng mở cửa 24/7,"
-    },
-    {
-        "text": "das ist einfach gut,",
-        "start": 259.9599975585937,
-        "end": 261.28001098632814,
-        "wordTimings": [
+                "end": 260.0199890136719
+            },
             {
                 "word": "das",
-                "start": 259.9599975585937,
+                "start": 260.05999755859375,
                 "end": 260.20001220703125
             },
             {
@@ -4081,20 +3724,20 @@
             {
                 "word": "gut,",
                 "start": 260.739990234375,
-                "end": 261.28001098632814
+                "end": 260.9800109863281
             }
         ],
-        "translationEn": "that is simply good,",
-        "translationVi": "điều đó thật sự tốt."
+        "translationEn": "And that it is simply open 24/7, that is just good,",
+        "translationVi": "Và việc anh ấy cũng mở cửa 24/7, điều đó thật tuyệt."
     },
     {
         "text": "weil man kann so den Tag wirklich einfacher planen.",
-        "start": 261.0000061035156,
-        "end": 263.8,
+        "start": 261.1000061035156,
+        "end": 263.5,
         "wordTimings": [
             {
                 "word": "weil",
-                "start": 261.0000061035156,
+                "start": 261.1000061035156,
                 "end": 261.17999267578125
             },
             {
@@ -4115,11 +3758,11 @@
             {
                 "word": "den",
                 "start": 261.760009765625,
-                "end": 261.9800109863281
+                "end": 261.9599914550781
             },
             {
                 "word": "Tag",
-                "start": 261.9800109863281,
+                "start": 261.9599914550781,
                 "end": 262.1400146484375
             },
             {
@@ -4135,20 +3778,20 @@
             {
                 "word": "planen.",
                 "start": 262.739990234375,
-                "end": 263.8
+                "end": 263.5
             }
         ],
         "translationEn": "because it makes it really easier to plan the day.",
-        "translationVi": "bởi vì như vậy người ta có thể lên kế hoạch cho ngày thật dễ dàng."
+        "translationVi": "bởi vì như vậy người ta có thể lên kế hoạch cho ngày một cách dễ dàng hơn."
     },
     {
-        "text": "Ich meine, es gibt natürlich einige Sachen,",
-        "start": 263.660009765625,
-        "end": 265.37998657226564,
+        "text": "Ich meine, es gibt natürlich einige Sachen, die man bestimmt kritisieren könnte.",
+        "start": 263.760009765625,
+        "end": 266.3800048828125,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 263.660009765625,
+                "start": 263.760009765625,
                 "end": 263.9200134277344
             },
             {
@@ -4158,41 +3801,32 @@
             },
             {
                 "word": "es",
-                "start": 264.1199951171875,
-                "end": 264.2200012207031
+                "start": 264.1000061035156,
+                "end": 264.239990234375
             },
             {
                 "word": "gibt",
-                "start": 264.2200012207031,
+                "start": 264.239990234375,
                 "end": 264.3399963378906
             },
             {
                 "word": "natürlich",
                 "start": 264.3399963378906,
-                "end": 264.760009765625
+                "end": 264.739990234375
             },
             {
                 "word": "einige",
-                "start": 264.760009765625,
+                "start": 264.739990234375,
                 "end": 265
             },
             {
                 "word": "Sachen,",
                 "start": 265,
-                "end": 265.37998657226564
-            }
-        ],
-        "translationEn": "I mean, there are of course some things,",
-        "translationVi": "Tôi nghĩ, tất nhiên có một số điều,"
-    },
-    {
-        "text": "die man bestimmt kritisieren könnte.",
-        "start": 265.1000122070312,
-        "end": 266.6800048828125,
-        "wordTimings": [
+                "end": 265.0799865722656
+            },
             {
                 "word": "die",
-                "start": 265.1000122070312,
+                "start": 265.2200012207031,
                 "end": 265.2200012207031
             },
             {
@@ -4213,20 +3847,20 @@
             {
                 "word": "könnte.",
                 "start": 266.0199890136719,
-                "end": 266.6800048828125
+                "end": 266.3800048828125
             }
         ],
-        "translationEn": "which one could certainly criticize.",
-        "translationVi": "mà người ta chắc chắn có thể chỉ trích."
+        "translationEn": "I mean, there are certainly some things that one could criticize.",
+        "translationVi": "Tôi nghĩ, chắc chắn có một số điều mà người ta có thể chỉ trích."
     },
     {
         "text": "Zum Beispiel, wie wird das jetzt mit den Mitarbeitenden halt gemacht?",
-        "start": 266.5400146484375,
-        "end": 271.060009765625,
+        "start": 266.6400146484375,
+        "end": 270.760009765625,
         "wordTimings": [
             {
                 "word": "Zum",
-                "start": 266.5400146484375,
+                "start": 266.6400146484375,
                 "end": 266.7799987792969
             },
             {
@@ -4262,11 +3896,11 @@
             {
                 "word": "den",
                 "start": 269.2200012207031,
-                "end": 269.44000244140625
+                "end": 269.4599914550781
             },
             {
                 "word": "Mitarbeitenden",
-                "start": 269.44000244140625,
+                "start": 269.4599914550781,
                 "end": 269.82000732421875
             },
             {
@@ -4277,20 +3911,20 @@
             {
                 "word": "gemacht?",
                 "start": 270.260009765625,
-                "end": 271.060009765625
+                "end": 270.760009765625
             }
         ],
         "translationEn": "For example, how is this being handled with the employees now?",
-        "translationVi": "Chẳng hạn, bây giờ việc này sẽ được thực hiện với nhân viên như thế nào?"
+        "translationVi": "Ví dụ, bây giờ việc này sẽ được thực hiện với nhân viên như thế nào?"
     },
     {
-        "text": "Im Schnitt verdient ungelerntes Personal im Supermarkt",
-        "start": 271.5199951171875,
-        "end": 274.90000610351564,
+        "text": "Im Schnitt verdient ungelerntes Personal im Supermarkt etwa 2500 Euro brutto.",
+        "start": 271.6199951171875,
+        "end": 277.1000061035156,
         "wordTimings": [
             {
                 "word": "Im",
-                "start": 271.5199951171875,
+                "start": 271.6199951171875,
                 "end": 272.29998779296875
             },
             {
@@ -4321,20 +3955,11 @@
             {
                 "word": "Supermarkt",
                 "start": 274.1000061035156,
-                "end": 274.90000610351564
-            }
-        ],
-        "translationEn": "On average, unskilled staff in supermarkets earn",
-        "translationVi": "Trung bình, nhân viên không có kinh nghiệm làm việc tại siêu thị kiếm được"
-    },
-    {
-        "text": "etwa 2500 Euro brutto.",
-        "start": 274.5000061035156,
-        "end": 277.40000610351564,
-        "wordTimings": [
+                "end": 274.6000061035156
+            },
             {
                 "word": "etwa",
-                "start": 274.5000061035156,
+                "start": 274.6000061035156,
                 "end": 275
             },
             {
@@ -4350,20 +3975,20 @@
             {
                 "word": "brutto.",
                 "start": 276.5400085449219,
-                "end": 277.40000610351564
+                "end": 277.1000061035156
             }
         ],
-        "translationEn": "about 2500 euros gross.",
-        "translationVi": "khoảng 2500 Euro brutto."
+        "translationEn": "On average, unskilled staff in supermarkets earn about 2500 euros gross.",
+        "translationVi": "Trung bình, nhân viên không có kinh nghiệm làm việc tại siêu thị kiếm được khoảng 2500 Euro trước thuế."
     },
     {
-        "text": "Aber für die Spät- und Nachtschicht kommen hier",
-        "start": 277.79999389648435,
-        "end": 280.1999938964844,
+        "text": "Aber für die Spät- und Nachtschicht kommen hier ab 20 Uhr attraktive Nachtzuschläge obendrauf.",
+        "start": 277.8999938964844,
+        "end": 283.1400146484375,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 277.79999389648435,
+                "start": 277.8999938964844,
                 "end": 278
             },
             {
@@ -4399,20 +4024,11 @@
             {
                 "word": "hier",
                 "start": 279.5799865722656,
-                "end": 280.1999938964844
-            }
-        ],
-        "translationEn": "But for the late and night shift, here come",
-        "translationVi": "Nhưng cho ca muộn và ca đêm thì ở đây"
-    },
-    {
-        "text": "ab 20 Uhr attraktive Nachtzuschläge obendrauf.",
-        "start": 279.79999389648435,
-        "end": 283.4400146484375,
-        "wordTimings": [
+                "end": 279.8999938964844
+            },
             {
                 "word": "ab",
-                "start": 279.79999389648435,
+                "start": 279.8999938964844,
                 "end": 280
             },
             {
@@ -4438,20 +4054,20 @@
             {
                 "word": "obendrauf.",
                 "start": 282.44000244140625,
-                "end": 283.4400146484375
+                "end": 283.1400146484375
             }
         ],
-        "translationEn": "From 8 PM, attractive night bonuses on top.",
-        "translationVi": "Từ 20 giờ có phụ cấp đêm hấp dẫn thêm vào."
+        "translationEn": "But for the late and night shifts, attractive night bonuses are added here from 8 PM.",
+        "translationVi": "Nhưng đối với ca muộn và ca đêm, từ 20 giờ trở đi sẽ có phụ cấp đêm hấp dẫn thêm vào."
     },
     {
         "text": "Und damit ein monatliches Plus bis zu 600 Euro netto auf dem Konto.",
-        "start": 283.44000854492185,
-        "end": 288.1999938964844,
+        "start": 283.5400085449219,
+        "end": 287.8999938964844,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 283.44000854492185,
+                "start": 283.5400085449219,
                 "end": 283.82000732421875
             },
             {
@@ -4512,20 +4128,20 @@
             {
                 "word": "Konto.",
                 "start": 287.6400146484375,
-                "end": 288.1999938964844
+                "end": 287.8999938964844
             }
         ],
         "translationEn": "And thus a monthly increase of up to 600 euros net in the account.",
-        "translationVi": "Và từ đó, một khoản tiền hàng tháng lên đến 600 Euro ròng trong tài khoản."
+        "translationVi": "Và từ đó, một khoản thu nhập hàng tháng lên tới 600 euro ròng trong tài khoản."
     },
     {
-        "text": "Wir haben selbst einen Haustarif,",
-        "start": 292.6200012207031,
-        "end": 295.3400085449219,
+        "text": "Wir haben selbst einen Haustarif, der im allgemeinen Tarif angelehnt ist.",
+        "start": 292.7200012207031,
+        "end": 297.5199890136719,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 292.6200012207031,
+                "start": 292.7200012207031,
                 "end": 293.5199890136719
             },
             {
@@ -4546,20 +4162,11 @@
             {
                 "word": "Haustarif,",
                 "start": 294.3599853515625,
-                "end": 295.3400085449219
-            }
-        ],
-        "translationEn": "We have our own collective agreement,",
-        "translationVi": "Chúng tôi có một mức giá nội bộ."
-    },
-    {
-        "text": "der im allgemeinen Tarif angelehnt ist.",
-        "start": 295.2599853515625,
-        "end": 297.8199890136719,
-        "wordTimings": [
+                "end": 295.0400085449219
+            },
             {
                 "word": "der",
-                "start": 295.2599853515625,
+                "start": 295.3599853515625,
                 "end": 295.4800109863281
             },
             {
@@ -4585,20 +4192,20 @@
             {
                 "word": "ist.",
                 "start": 297.29998779296875,
-                "end": 297.8199890136719
+                "end": 297.5199890136719
             }
         ],
-        "translationEn": "which is based on the general tariff.",
-        "translationVi": "được dựa trên biểu giá chung."
+        "translationEn": "We have our own collective agreement, which is based on the general tariff.",
+        "translationVi": "Chúng tôi có một mức giá nội bộ, dựa trên mức giá chung."
     },
     {
-        "text": "Und wir haben selbst auch die Nachtzuschläge,",
-        "start": 297.8800109863281,
-        "end": 300.6599853515625,
+        "text": "Und wir haben selbst auch die Nachtzuschläge, die freiwillig gezahlt werden,",
+        "start": 297.9800109863281,
+        "end": 302.1400146484375,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 297.8800109863281,
+                "start": 297.9800109863281,
                 "end": 297.9800109863281
             },
             {
@@ -4629,20 +4236,11 @@
             {
                 "word": "Nachtzuschläge,",
                 "start": 299.5199890136719,
-                "end": 300.6599853515625
-            }
-        ],
-        "translationEn": "And we also have the night surcharges,",
-        "translationVi": "Và chúng tôi cũng có phụ cấp đêm,"
-    },
-    {
-        "text": "die freiwillig gezahlt werden,",
-        "start": 300.41998901367185,
-        "end": 302.4400146484375,
-        "wordTimings": [
+                "end": 300.3599853515625
+            },
             {
                 "word": "die",
-                "start": 300.41998901367185,
+                "start": 300.5199890136719,
                 "end": 300.67999267578125
             },
             {
@@ -4658,20 +4256,20 @@
             {
                 "word": "werden,",
                 "start": 301.7799987792969,
-                "end": 302.4400146484375
+                "end": 302.1400146484375
             }
         ],
-        "translationEn": "that are paid voluntarily,",
-        "translationVi": "được thanh toán tự nguyện,"
+        "translationEn": "And we also have the night surcharges that are paid voluntarily,",
+        "translationVi": "Và chúng tôi cũng có các khoản phụ cấp đêm, được trả một cách tự nguyện,"
     },
     {
-        "text": "aber die auch nötig sind,",
-        "start": 302.5199951171875,
-        "end": 304.1599853515625,
+        "text": "aber die auch nötig sind, um die Motivation auch der Mitarbeiter zu fördern.",
+        "start": 302.6199951171875,
+        "end": 308.3399963378906,
         "wordTimings": [
             {
                 "word": "aber",
-                "start": 302.5199951171875,
+                "start": 302.6199951171875,
                 "end": 302.739990234375
             },
             {
@@ -4692,20 +4290,11 @@
             {
                 "word": "sind,",
                 "start": 303.4800109863281,
-                "end": 304.1599853515625
-            }
-        ],
-        "translationEn": "but which are also necessary,",
-        "translationVi": "nhưng cũng cần thiết,"
-    },
-    {
-        "text": "um die Motivation auch der Mitarbeiter zu fördern.",
-        "start": 304.29999389648435,
-        "end": 308.63999633789064,
-        "wordTimings": [
+                "end": 303.8599853515625
+            },
             {
                 "word": "um",
-                "start": 304.29999389648435,
+                "start": 304.3999938964844,
                 "end": 304.55999755859375
             },
             {
@@ -4741,20 +4330,20 @@
             {
                 "word": "fördern.",
                 "start": 308.32000732421875,
-                "end": 308.63999633789064
+                "end": 308.3399963378906
             }
         ],
-        "translationEn": "to also promote the motivation of the employees.",
-        "translationVi": "để thúc đẩy động lực của nhân viên."
+        "translationEn": "but they are also necessary to promote the motivation of the employees.",
+        "translationVi": "nhưng cũng cần thiết để thúc đẩy động lực của nhân viên."
     },
     {
-        "text": "Ganz unumstritten ist das Projekt nicht.",
-        "start": 309.32001342773435,
-        "end": 311.75999145507814,
+        "text": "Ganz unumstritten ist das Projekt nicht. Katja Deusser ist Verdi-Sprecherin.",
+        "start": 309.4200134277344,
+        "end": 313.3399963378906,
         "wordTimings": [
             {
                 "word": "Ganz",
-                "start": 309.32001342773435,
+                "start": 309.4200134277344,
                 "end": 309.79998779296875
             },
             {
@@ -4780,20 +4369,11 @@
             {
                 "word": "nicht.",
                 "start": 311.0400085449219,
-                "end": 311.75999145507814
-            }
-        ],
-        "translationEn": "The project is not entirely undisputed.",
-        "translationVi": "Dự án này không hoàn toàn không gây tranh cãi."
-    },
-    {
-        "text": "Katja Deusser ist Verdi-Sprecherin.",
-        "start": 311.91998901367185,
-        "end": 313.63999633789064,
-        "wordTimings": [
+                "end": 311.4599914550781
+            },
             {
                 "word": "Katja",
-                "start": 311.91998901367185,
+                "start": 312.0199890136719,
                 "end": 312.17999267578125
             },
             {
@@ -4809,20 +4389,20 @@
             {
                 "word": "Verdi-Sprecherin.",
                 "start": 312.8599853515625,
-                "end": 313.63999633789064
+                "end": 313.3399963378906
             }
         ],
-        "translationEn": "Katja Deusser is a Verdi spokesperson.",
-        "translationVi": "Katja Deusser là người phát ngôn của Verdi."
+        "translationEn": "The project is not entirely undisputed. Katja Deusser is a spokesperson for Verdi.",
+        "translationVi": "Dự án này không hoàn toàn không gây tranh cãi. Katja Deusser là phát ngôn viên của Verdi."
     },
     {
-        "text": "Die Gewerkschaft befürchtet eine zu hohe Arbeitsbelastung",
-        "start": 313.8400024414062,
-        "end": 317.97999267578126,
+        "text": "Die Gewerkschaft befürchtet eine zu hohe Arbeitsbelastung für die Angestellten.",
+        "start": 313.94000244140625,
+        "end": 318.67999267578125,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 313.8400024414062,
+                "start": 313.94000244140625,
                 "end": 314.6600036621094
             },
             {
@@ -4853,20 +4433,11 @@
             {
                 "word": "Arbeitsbelastung",
                 "start": 316.67999267578125,
-                "end": 317.97999267578126
-            }
-        ],
-        "translationEn": "The union fears an excessive workload.",
-        "translationVi": "Công đoàn lo ngại về khối lượng công việc quá cao."
-    },
-    {
-        "text": "für die Angestellten.",
-        "start": 317.5799926757812,
-        "end": 318.97999267578126,
-        "wordTimings": [
+                "end": 317.67999267578125
+            },
             {
                 "word": "für",
-                "start": 317.5799926757812,
+                "start": 317.67999267578125,
                 "end": 317.8599853515625
             },
             {
@@ -4877,20 +4448,20 @@
             {
                 "word": "Angestellten.",
                 "start": 318.0799865722656,
-                "end": 318.97999267578126
+                "end": 318.67999267578125
             }
         ],
-        "translationEn": "for the employees.",
-        "translationVi": "cho nhân viên."
+        "translationEn": "The union fears an excessive workload for the employees.",
+        "translationVi": "Công đoàn lo ngại về khối lượng công việc quá cao cho nhân viên."
     },
     {
-        "text": "Wir sagen, um die Versorgung der Bevölkerung sicherzustellen,",
-        "start": 322.4,
-        "end": 326.4600036621094,
+        "text": "Wir sagen, um die Versorgung der Bevölkerung sicherzustellen, reicht es vollkommen aus,",
+        "start": 322.5,
+        "end": 327.7200012207031,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 322.4,
+                "start": 322.5,
                 "end": 323.1600036621094
             },
             {
@@ -4926,20 +4497,11 @@
             {
                 "word": "sicherzustellen,",
                 "start": 325.4200134277344,
-                "end": 326.4600036621094
-            }
-        ],
-        "translationEn": "We say, to ensure the supply of the population,",
-        "translationVi": "Chúng tôi nói, để đảm bảo cung cấp cho người dân,"
-    },
-    {
-        "text": "reicht es vollkommen aus, montags bis freitags",
-        "start": 326.67999877929685,
-        "end": 329.2200134277344,
-        "wordTimings": [
+                "end": 326.1600036621094
+            },
             {
                 "word": "reicht",
-                "start": 326.67999877929685,
+                "start": 326.7799987792969,
                 "end": 326.7799987792969
             },
             {
@@ -4956,7 +4518,16 @@
                 "word": "aus,",
                 "start": 327.3999938964844,
                 "end": 327.7200012207031
-            },
+            }
+        ],
+        "translationEn": "We say that to ensure the supply of the population, it is completely sufficient to",
+        "translationVi": "Chúng tôi nói rằng để đảm bảo cung cấp cho người dân, hoàn toàn đủ để"
+    },
+    {
+        "text": "montags bis freitags bis 20 Uhr zu öffnen und am Samstag maximal bis 16 Uhr.",
+        "start": 327.94000244140625,
+        "end": 332.6199951171875,
+        "wordTimings": [
             {
                 "word": "montags",
                 "start": 327.94000244140625,
@@ -4970,20 +4541,11 @@
             {
                 "word": "freitags",
                 "start": 328.32000732421875,
-                "end": 329.2200134277344
-            }
-        ],
-        "translationEn": "it is completely sufficient to do it from Monday to Friday",
-        "translationVi": "đủ hoàn toàn từ thứ Hai đến thứ Sáu"
-    },
-    {
-        "text": "bis 20 Uhr zu öffnen",
-        "start": 328.82001342773435,
-        "end": 330.8199890136719,
-        "wordTimings": [
+                "end": 328.9200134277344
+            },
             {
                 "word": "bis",
-                "start": 328.82001342773435,
+                "start": 328.9200134277344,
                 "end": 329.3999938964844
             },
             {
@@ -5004,20 +4566,11 @@
             {
                 "word": "öffnen",
                 "start": 330.5,
-                "end": 330.8199890136719
-            }
-        ],
-        "translationEn": "to open until 8 PM",
-        "translationVi": "mở cửa đến 20 giờ"
-    },
-    {
-        "text": "und am Samstag maximal bis 16 Uhr.",
-        "start": 330.41998901367185,
-        "end": 332.9199951171875,
-        "wordTimings": [
+                "end": 330.5199890136719
+            },
             {
                 "word": "und",
-                "start": 330.41998901367185,
+                "start": 330.5199890136719,
                 "end": 330.82000732421875
             },
             {
@@ -5048,20 +4601,20 @@
             {
                 "word": "Uhr.",
                 "start": 332.4599914550781,
-                "end": 332.9199951171875
+                "end": 332.6199951171875
             }
         ],
-        "translationEn": "and on Saturday until a maximum of 4 PM.",
-        "translationVi": "và vào thứ Bảy tối đa đến 16 giờ."
+        "translationEn": "to be open from Monday to Friday until 8 PM and on Saturday until a maximum of 4 PM.",
+        "translationVi": "Mở cửa từ thứ Hai đến thứ Sáu đến 20 giờ và vào thứ Bảy tối đa đến 16 giờ."
     },
     {
-        "text": "Weil wir sagen, es ist überhaupt nicht notwendig,",
-        "start": 332.639990234375,
-        "end": 335.4600036621094,
+        "text": "Weil wir sagen, es ist überhaupt nicht notwendig, Menschen jetzt nachts auch noch arbeiten zu lassen.",
+        "start": 332.739990234375,
+        "end": 337.55999755859375,
         "wordTimings": [
             {
                 "word": "Weil",
-                "start": 332.639990234375,
+                "start": 332.739990234375,
                 "end": 333.0199890136719
             },
             {
@@ -5097,20 +4650,11 @@
             {
                 "word": "notwendig,",
                 "start": 334.6199951171875,
-                "end": 335.4600036621094
-            }
-        ],
-        "translationEn": "Because we say it is not necessary at all,",
-        "translationVi": "Bởi vì chúng tôi nói, điều đó hoàn toàn không cần thiết,"
-    },
-    {
-        "text": "Menschen jetzt nachts auch noch arbeiten zu lassen.",
-        "start": 335.3599914550781,
-        "end": 337.85999755859376,
-        "wordTimings": [
+                "end": 335.1600036621094
+            },
             {
                 "word": "Menschen",
-                "start": 335.3599914550781,
+                "start": 335.4599914550781,
                 "end": 335.6400146484375
             },
             {
@@ -5146,20 +4690,20 @@
             {
                 "word": "lassen.",
                 "start": 337.55999755859375,
-                "end": 337.85999755859376
+                "end": 337.55999755859375
             }
         ],
-        "translationEn": "Making people work at night now as well.",
-        "translationVi": "Để cho mọi người làm việc vào ban đêm."
+        "translationEn": "Because we say it is not necessary at all to make people work at night now.",
+        "translationVi": "Bởi vì chúng tôi nói rằng hoàn toàn không cần thiết phải để mọi người làm việc vào ban đêm nữa."
     },
     {
         "text": "Viele Menschen arbeiten nachts.",
-        "start": 337.4599975585937,
-        "end": 340.4400146484375,
+        "start": 337.55999755859375,
+        "end": 340.1400146484375,
         "wordTimings": [
             {
                 "word": "Viele",
-                "start": 337.4599975585937,
+                "start": 337.55999755859375,
                 "end": 338.70001220703125
             },
             {
@@ -5175,7 +4719,7 @@
             {
                 "word": "nachts.",
                 "start": 339.739990234375,
-                "end": 340.4400146484375
+                "end": 340.1400146484375
             }
         ],
         "translationEn": "Many people work at night.",
@@ -5183,12 +4727,12 @@
     },
     {
         "text": "Zum Beispiel die Polizei, Feuerwehr oder in der Pflege.",
-        "start": 340.67999877929685,
-        "end": 343.6599853515625,
+        "start": 340.7799987792969,
+        "end": 343.3599853515625,
         "wordTimings": [
             {
                 "word": "Zum",
-                "start": 340.67999877929685,
+                "start": 340.7799987792969,
                 "end": 340.79998779296875
             },
             {
@@ -5229,20 +4773,20 @@
             {
                 "word": "Pflege.",
                 "start": 343.05999755859375,
-                "end": 343.6599853515625
+                "end": 343.3599853515625
             }
         ],
         "translationEn": "For example, the police, fire department, or in nursing.",
         "translationVi": "Chẳng hạn như cảnh sát, cứu hỏa hoặc trong lĩnh vực chăm sóc."
     },
     {
-        "text": "Könnte gerade für sie ein nächtlicher Einkauf",
-        "start": 344.17999877929685,
-        "end": 346.75999145507814,
+        "text": "Könnte gerade für sie ein nächtlicher Einkauf in der Pause oder nach der Arbeit nicht von Vorteil sein?",
+        "start": 344.2799987792969,
+        "end": 349.32000732421875,
         "wordTimings": [
             {
                 "word": "Könnte",
-                "start": 344.17999877929685,
+                "start": 344.2799987792969,
                 "end": 344.3399963378906
             },
             {
@@ -5273,20 +4817,11 @@
             {
                 "word": "Einkauf",
                 "start": 345.9800109863281,
-                "end": 346.75999145507814
-            }
-        ],
-        "translationEn": "Could a nighttime shopping trip be just for them?",
-        "translationVi": "Có thể chính cho họ là một cuộc mua sắm ban đêm."
-    },
-    {
-        "text": "in der Pause oder nach der Arbeit nicht von Vorteil sein?",
-        "start": 346.3599914550781,
-        "end": 349.62000732421876,
-        "wordTimings": [
+                "end": 346.4599914550781
+            },
             {
                 "word": "in",
-                "start": 346.3599914550781,
+                "start": 346.4599914550781,
                 "end": 346.6000061035156
             },
             {
@@ -5337,20 +4872,20 @@
             {
                 "word": "sein?",
                 "start": 349.05999755859375,
-                "end": 349.62000732421876
+                "end": 349.32000732421875
             }
         ],
-        "translationEn": "Could it be disadvantageous during the break or after work?",
-        "translationVi": "Trong giờ nghỉ hoặc sau giờ làm việc có thể không có lợi?"
+        "translationEn": "Could a nighttime shopping trip during a break or after work not be advantageous for them?",
+        "translationVi": "Liệu việc mua sắm vào ban đêm trong giờ nghỉ hoặc sau giờ làm việc có thể mang lại lợi ích cho họ không?"
     },
     {
-        "text": "Die Menschen, die eben nachts vielleicht in der Schicht sind",
-        "start": 353.32001342773435,
-        "end": 356.40000610351564,
+        "text": "Die Menschen, die eben nachts vielleicht in der Schicht sind oder von der Schicht dann nach Hause kommen,",
+        "start": 353.4200134277344,
+        "end": 358.3599853515625,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 353.32001342773435,
+                "start": 353.4200134277344,
                 "end": 353.8999938964844
             },
             {
@@ -5396,20 +4931,11 @@
             {
                 "word": "sind",
                 "start": 355.7799987792969,
-                "end": 356.40000610351564
-            }
-        ],
-        "translationEn": "The people who might be working the night shift right now.",
-        "translationVi": "Những người có thể đang làm ca đêm."
-    },
-    {
-        "text": "oder von der Schicht dann nach Hause kommen,",
-        "start": 356.0000061035156,
-        "end": 358.6599853515625,
-        "wordTimings": [
+                "end": 356.1000061035156
+            },
             {
                 "word": "oder",
-                "start": 356.0000061035156,
+                "start": 356.1000061035156,
                 "end": 356.5400085449219
             },
             {
@@ -5445,20 +4971,20 @@
             {
                 "word": "kommen,",
                 "start": 357.9800109863281,
-                "end": 358.6599853515625
+                "end": 358.3599853515625
             }
         ],
-        "translationEn": "or come home from the shift,",
-        "translationVi": "hoặc trở về nhà sau ca làm việc,"
+        "translationEn": "The people who might be working the night shift or are coming home from the shift,",
+        "translationVi": "Những người có thể đang làm ca đêm hoặc đang trở về nhà sau ca làm việc,"
     },
     {
         "text": "die arbeiten ja auch nicht 24 Stunden am Tag.",
-        "start": 358.7599853515625,
-        "end": 361.97999267578126,
+        "start": 358.8599853515625,
+        "end": 361.67999267578125,
         "wordTimings": [
             {
                 "word": "die",
-                "start": 358.7599853515625,
+                "start": 358.8599853515625,
                 "end": 359.70001220703125
             },
             {
@@ -5499,20 +5025,20 @@
             {
                 "word": "Tag.",
                 "start": 361.3999938964844,
-                "end": 361.97999267578126
+                "end": 361.67999267578125
             }
         ],
         "translationEn": "They don't work 24 hours a day either.",
         "translationVi": "Họ cũng không làm việc 24 giờ một ngày."
     },
     {
-        "text": "Das heißt, sie haben eben zu anderen Zeiten frei",
-        "start": 361.5799926757812,
-        "end": 364.3400085449219,
+        "text": "Das heißt, sie haben eben zu anderen Zeiten frei und können dann trotzdem einkaufen gehen.",
+        "start": 361.67999267578125,
+        "end": 365.82000732421875,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 361.5799926757812,
+                "start": 361.67999267578125,
                 "end": 362.1000061035156
             },
             {
@@ -5553,20 +5079,11 @@
             {
                 "word": "frei",
                 "start": 363.70001220703125,
-                "end": 364.3400085449219
-            }
-        ],
-        "translationEn": "That means they have time off at different times.",
-        "translationVi": "Điều đó có nghĩa là họ có thời gian rảnh vào những thời điểm khác."
-    },
-    {
-        "text": "und können dann trotzdem einkaufen gehen.",
-        "start": 363.94000854492185,
-        "end": 366.12000732421876,
-        "wordTimings": [
+                "end": 364.0400085449219
+            },
             {
                 "word": "und",
-                "start": 363.94000854492185,
+                "start": 364.0400085449219,
                 "end": 364.239990234375
             },
             {
@@ -5592,20 +5109,20 @@
             {
                 "word": "gehen.",
                 "start": 365.5400085449219,
-                "end": 366.12000732421876
+                "end": 365.82000732421875
             }
         ],
-        "translationEn": "and can still go shopping.",
-        "translationVi": "và vẫn có thể đi mua sắm."
+        "translationEn": "That means they have free time at different times and can still go shopping then.",
+        "translationVi": "Điều đó có nghĩa là họ có thời gian rảnh vào những thời điểm khác và vẫn có thể đi mua sắm."
     },
     {
-        "text": "Ich kann mir kaum vorstellen, dass Menschen,",
-        "start": 366.2399963378906,
-        "end": 368.539990234375,
+        "text": "Ich kann mir kaum vorstellen, dass Menschen, wenn sie von der Arbeit kommen, jetzt noch einen Großeinkauf machen.",
+        "start": 366.3399963378906,
+        "end": 370.5799865722656,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 366.2399963378906,
+                "start": 366.3399963378906,
                 "end": 366.3999938964844
             },
             {
@@ -5636,20 +5153,11 @@
             {
                 "word": "Menschen,",
                 "start": 367.9200134277344,
-                "end": 368.539990234375
-            }
-        ],
-        "translationEn": "I can hardly imagine that people,",
-        "translationVi": "Tôi khó có thể tưởng tượng rằng con người,"
-    },
-    {
-        "text": "wenn sie von der Arbeit kommen,",
-        "start": 368.1999877929687,
-        "end": 369.5799987792969,
-        "wordTimings": [
+                "end": 368.239990234375
+            },
             {
                 "word": "wenn",
-                "start": 368.1999877929687,
+                "start": 368.29998779296875,
                 "end": 368.3599853515625
             },
             {
@@ -5675,20 +5183,11 @@
             {
                 "word": "kommen,",
                 "start": 369.0199890136719,
-                "end": 369.5799987792969
-            }
-        ],
-        "translationEn": "when they come home from work,",
-        "translationVi": "khi họ trở về từ công việc,"
-    },
-    {
-        "text": "jetzt noch einen Großeinkauf machen.",
-        "start": 369.2800048828125,
-        "end": 370.87998657226564,
-        "wordTimings": [
+                "end": 369.2799987792969
+            },
             {
                 "word": "jetzt",
-                "start": 369.2800048828125,
+                "start": 369.3800048828125,
                 "end": 369.5400085449219
             },
             {
@@ -5709,20 +5208,20 @@
             {
                 "word": "machen.",
                 "start": 370.29998779296875,
-                "end": 370.87998657226564
+                "end": 370.5799865722656
             }
         ],
-        "translationEn": "now do a big shopping.",
-        "translationVi": "bây giờ hãy đi mua sắm lớn."
+        "translationEn": "I can hardly imagine that people do a big grocery shop after coming home from work.",
+        "translationVi": "Tôi khó có thể tưởng tượng rằng mọi người, khi trở về từ công việc, vẫn còn đi mua sắm lớn."
     },
     {
-        "text": "Die nehmen vielleicht noch einen Milchbeutel mit,",
-        "start": 370.8599914550781,
-        "end": 372.8400085449219,
+        "text": "Die nehmen vielleicht noch einen Milchbeutel mit, wenn es denn notwendig ist.",
+        "start": 370.9599914550781,
+        "end": 373.5400085449219,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 370.8599914550781,
+                "start": 370.9599914550781,
                 "end": 371.0799865722656
             },
             {
@@ -5753,20 +5252,11 @@
             {
                 "word": "mit,",
                 "start": 372.2799987792969,
-                "end": 372.8400085449219
-            }
-        ],
-        "translationEn": "They might still take a milk bag with them,",
-        "translationVi": "Họ có thể mang theo một túi sữa nữa,"
-    },
-    {
-        "text": "wenn es denn notwendig ist.",
-        "start": 372.5199951171875,
-        "end": 373.8400085449219,
-        "wordTimings": [
+                "end": 372.5400085449219
+            },
             {
                 "word": "wenn",
-                "start": 372.5199951171875,
+                "start": 372.6199951171875,
                 "end": 372.739990234375
             },
             {
@@ -5787,20 +5277,20 @@
             {
                 "word": "ist.",
                 "start": 373.4200134277344,
-                "end": 373.8400085449219
+                "end": 373.5400085449219
             }
         ],
-        "translationEn": "if it is necessary.",
-        "translationVi": "nếu điều đó là cần thiết."
+        "translationEn": "They might still take a milk bag with them if it is necessary.",
+        "translationVi": "Họ có thể mang theo một túi sữa nếu cần thiết."
     },
     {
-        "text": "Aber in aller Regel wissen wir ja auch",
-        "start": 373.5199951171875,
-        "end": 375.8400085449219,
+        "text": "Aber in aller Regel wissen wir ja auch und sehen wir ja auch, dass auf der Straße eher die Ruhe einkehrt.",
+        "start": 373.6199951171875,
+        "end": 378.4800109863281,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 373.5199951171875,
+                "start": 373.6199951171875,
                 "end": 373.760009765625
             },
             {
@@ -5836,20 +5326,11 @@
             {
                 "word": "auch",
                 "start": 375.44000244140625,
-                "end": 375.8400085449219
-            }
-        ],
-        "translationEn": "But generally, we do know as well.",
-        "translationVi": "Nhưng trong mọi trường hợp, chúng ta cũng biết rằng"
-    },
-    {
-        "text": "und sehen wir ja auch, dass auf der Straße",
-        "start": 375.44000854492185,
-        "end": 377.35999755859376,
-        "wordTimings": [
+                "end": 375.5400085449219
+            },
             {
                 "word": "und",
-                "start": 375.44000854492185,
+                "start": 375.5400085449219,
                 "end": 375.67999267578125
             },
             {
@@ -5890,20 +5371,11 @@
             {
                 "word": "Straße",
                 "start": 376.8399963378906,
-                "end": 377.35999755859376
-            }
-        ],
-        "translationEn": "and we can also see that on the street",
-        "translationVi": "và chúng ta cũng thấy rằng trên đường phố"
-    },
-    {
-        "text": "eher die Ruhe einkehrt.",
-        "start": 376.9599975585937,
-        "end": 378.78001098632814,
-        "wordTimings": [
+                "end": 377.05999755859375
+            },
             {
                 "word": "eher",
-                "start": 376.9599975585937,
+                "start": 377.05999755859375,
                 "end": 377.32000732421875
             },
             {
@@ -5919,20 +5391,20 @@
             {
                 "word": "einkehrt.",
                 "start": 377.739990234375,
-                "end": 378.78001098632814
+                "end": 378.4800109863281
             }
         ],
-        "translationEn": "rather the calm sets in.",
-        "translationVi": "càng sớm thì sự yên tĩnh càng trở lại."
+        "translationEn": "But usually we know and see that calm tends to settle on the street.",
+        "translationVi": "Nhưng nói chung, chúng ta cũng biết và thấy rằng trên đường phố thường yên tĩnh hơn."
     },
     {
         "text": "Längere Öffnungszeiten brauchen mehr Personal.",
-        "start": 379.94000854492185,
-        "end": 382.8400085449219,
+        "start": 380.0400085449219,
+        "end": 382.5400085449219,
         "wordTimings": [
             {
                 "word": "Längere",
-                "start": 379.94000854492185,
+                "start": 380.0400085449219,
                 "end": 380.5199890136719
             },
             {
@@ -5953,20 +5425,20 @@
             {
                 "word": "Personal.",
                 "start": 382,
-                "end": 382.8400085449219
+                "end": 382.5400085449219
             }
         ],
         "translationEn": "Longer opening hours require more staff.",
         "translationVi": "Giờ mở cửa dài hơn cần nhiều nhân viên hơn."
     },
     {
-        "text": "Die Befürchtung der Gewerkschaft.",
-        "start": 382.8800109863281,
-        "end": 384.62000732421876,
+        "text": "Die Befürchtung der Gewerkschaft: Personal wird willkürlich und unfreiwillig eingeteilt.",
+        "start": 382.9800109863281,
+        "end": 387.8599853515625,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 382.8800109863281,
+                "start": 382.9800109863281,
                 "end": 383.17999267578125
             },
             {
@@ -5980,22 +5452,13 @@
                 "end": 383.7799987792969
             },
             {
-                "word": "Gewerkschaft.",
+                "word": "Gewerkschaft:",
                 "start": 383.7799987792969,
-                "end": 384.62000732421876
-            }
-        ],
-        "translationEn": "The union's concern.",
-        "translationVi": "Nỗi lo của công đoàn."
-    },
-    {
-        "text": "Personal wird willkürlich und unfreiwillig eingeteilt.",
-        "start": 385.1000122070312,
-        "end": 388.1599853515625,
-        "wordTimings": [
+                "end": 384.32000732421875
+            },
             {
                 "word": "Personal",
-                "start": 385.1000122070312,
+                "start": 385.20001220703125,
                 "end": 385.20001220703125
             },
             {
@@ -6021,20 +5484,20 @@
             {
                 "word": "eingeteilt.",
                 "start": 387.239990234375,
-                "end": 388.1599853515625
+                "end": 387.8599853515625
             }
         ],
-        "translationEn": "Staff is assigned arbitrarily and involuntarily.",
-        "translationVi": "Nhân viên được phân công một cách tùy tiện và không tự nguyện."
+        "translationEn": "The union's concern: Staff is assigned arbitrarily and involuntarily.",
+        "translationVi": "Nỗi lo của công đoàn: Nhân sự sẽ bị phân công một cách tùy tiện và không tự nguyện."
     },
     {
-        "text": "So sind die Menschen frei verfügbar von 0 bis 24 Uhr",
-        "start": 388.3800109863281,
-        "end": 392.9199951171875,
+        "text": "So sind die Menschen frei verfügbar von 0 bis 24 Uhr und können vielleicht gar nicht sagen,",
+        "start": 388.4800109863281,
+        "end": 394.4599914550781,
         "wordTimings": [
             {
                 "word": "So",
-                "start": 388.3800109863281,
+                "start": 388.4800109863281,
                 "end": 389.0400085449219
             },
             {
@@ -6085,20 +5548,11 @@
             {
                 "word": "Uhr",
                 "start": 392.3399963378906,
-                "end": 392.9199951171875
-            }
-        ],
-        "translationEn": "People are available from 0 to 24 hours.",
-        "translationVi": "Vì vậy, con người có thể tự do từ 0 đến 24 giờ."
-    },
-    {
-        "text": "und können vielleicht gar nicht sagen,",
-        "start": 392.5199951171875,
-        "end": 394.75999145507814,
-        "wordTimings": [
+                "end": 392.6199951171875
+            },
             {
                 "word": "und",
-                "start": 392.5199951171875,
+                "start": 392.6199951171875,
                 "end": 393.239990234375
             },
             {
@@ -6124,20 +5578,20 @@
             {
                 "word": "sagen,",
                 "start": 394.17999267578125,
-                "end": 394.75999145507814
+                "end": 394.4599914550781
             }
         ],
-        "translationEn": "and perhaps cannot even say,",
-        "translationVi": "và có thể thậm chí không thể nói,"
+        "translationEn": "People are freely available from 0 to 24 hours and may not even be able to say,",
+        "translationVi": "Vì vậy, con người có thể tự do từ 0 đến 24 giờ và có thể không thể nói,"
     },
     {
-        "text": "ich kann zu dieser Zeit nicht arbeiten",
-        "start": 394.5199951171875,
-        "end": 396.37998657226564,
+        "text": "ich kann zu dieser Zeit nicht arbeiten oder zu jener Zeit nicht arbeiten.",
+        "start": 394.6199951171875,
+        "end": 397.4599914550781,
         "wordTimings": [
             {
                 "word": "ich",
-                "start": 394.5199951171875,
+                "start": 394.6199951171875,
                 "end": 394.6600036621094
             },
             {
@@ -6168,20 +5622,11 @@
             {
                 "word": "arbeiten",
                 "start": 395.7799987792969,
-                "end": 396.37998657226564
-            }
-        ],
-        "translationEn": "I cannot work at this time.",
-        "translationVi": "Tôi không thể làm việc vào thời điểm này."
-    },
-    {
-        "text": "oder zu jener Zeit nicht arbeiten.",
-        "start": 395.9799865722656,
-        "end": 397.75999145507814,
-        "wordTimings": [
+                "end": 396.0799865722656
+            },
             {
                 "word": "oder",
-                "start": 395.9799865722656,
+                "start": 396.0799865722656,
                 "end": 396.32000732421875
             },
             {
@@ -6207,20 +5652,20 @@
             {
                 "word": "arbeiten.",
                 "start": 397.17999267578125,
-                "end": 397.75999145507814
+                "end": 397.4599914550781
             }
         ],
-        "translationEn": "or not work at that time.",
-        "translationVi": "hoặc không làm việc vào thời điểm đó."
+        "translationEn": "I cannot work at this time or cannot work at that time.",
+        "translationVi": "Tôi không thể làm việc vào thời gian này hoặc không thể làm việc vào thời gian đó."
     },
     {
         "text": "Das ist jetzt schon eine Herausforderung.",
-        "start": 397.4599975585937,
-        "end": 399.1599853515625,
+        "start": 397.55999755859375,
+        "end": 398.8599853515625,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 397.4599975585937,
+                "start": 397.55999755859375,
                 "end": 397.6400146484375
             },
             {
@@ -6246,20 +5691,20 @@
             {
                 "word": "Herausforderung.",
                 "start": 398.5400085449219,
-                "end": 399.1599853515625
+                "end": 398.8599853515625
             }
         ],
         "translationEn": "This is already a challenge.",
         "translationVi": "Đây đã là một thách thức."
     },
     {
-        "text": "Damit genau das nicht passiert,",
-        "start": 400.660009765625,
-        "end": 402.59998779296876,
+        "text": "Damit genau das nicht passiert, hat Davide Spieger vor dem Experiment aktiv nach Freiwilligen in seinen Filialen gesucht",
+        "start": 400.760009765625,
+        "end": 408.0400085449219,
         "wordTimings": [
             {
                 "word": "Damit",
-                "start": 400.660009765625,
+                "start": 400.760009765625,
                 "end": 400.79998779296875
             },
             {
@@ -6280,20 +5725,11 @@
             {
                 "word": "passiert,",
                 "start": 401.82000732421875,
-                "end": 402.59998779296876
-            }
-        ],
-        "translationEn": "To ensure that exactly this does not happen,",
-        "translationVi": "Để điều đó không xảy ra,"
-    },
-    {
-        "text": "hat Davide Spieger vor dem Experiment aktiv",
-        "start": 402.639990234375,
-        "end": 405.9400146484375,
-        "wordTimings": [
+                "end": 402.29998779296875
+            },
             {
                 "word": "hat",
-                "start": 402.639990234375,
+                "start": 402.739990234375,
                 "end": 402.7799987792969
             },
             {
@@ -6324,20 +5760,11 @@
             {
                 "word": "aktiv",
                 "start": 404.82000732421875,
-                "end": 405.9400146484375
-            }
-        ],
-        "translationEn": "Did Davide Spieger actively participate before the experiment?",
-        "translationVi": "Davide Spieger đã hoạt động trước thí nghiệm."
-    },
-    {
-        "text": "nach Freiwilligen in seinen Filialen gesucht",
-        "start": 405.5400146484375,
-        "end": 408.3400085449219,
-        "wordTimings": [
+                "end": 405.6400146484375
+            },
             {
                 "word": "nach",
-                "start": 405.5400146484375,
+                "start": 405.6400146484375,
                 "end": 405.8999938964844
             },
             {
@@ -6363,20 +5790,20 @@
             {
                 "word": "gesucht",
                 "start": 407.67999267578125,
-                "end": 408.3400085449219
+                "end": 408.0400085449219
             }
         ],
-        "translationEn": "Looking for volunteers in its branches.",
-        "translationVi": "Tìm kiếm tình nguyện viên cho các chi nhánh của mình."
+        "translationEn": "To ensure that exactly that does not happen, Davide Spieger actively sought volunteers in his branches before the experiment.",
+        "translationVi": "Để điều đó không xảy ra, Davide Spieger đã chủ động tìm kiếm tình nguyện viên trong các chi nhánh của mình trước khi tiến hành thí nghiệm."
     },
     {
         "text": "und rekrutiert auch jetzt bewusst für die Nachtteams.",
-        "start": 407.94000854492185,
-        "end": 411.6599853515625,
+        "start": 408.0400085449219,
+        "end": 411.3599853515625,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 407.94000854492185,
+                "start": 408.0400085449219,
                 "end": 408.6199951171875
             },
             {
@@ -6412,20 +5839,20 @@
             {
                 "word": "Nachtteams.",
                 "start": 410.739990234375,
-                "end": 411.6599853515625
+                "end": 411.3599853515625
             }
         ],
         "translationEn": "and is also consciously recruiting for the night teams now.",
-        "translationVi": "và hiện tại cũng đang tuyển dụng một cách có chủ đích cho các đội ban đêm."
+        "translationVi": "và cũng đang cố ý tuyển dụng cho các đội đêm."
     },
     {
         "text": "Wir haben Bewerbungen gerade in den Städten sehr, sehr viele.",
-        "start": 415.32001342773435,
-        "end": 419.85999755859376,
+        "start": 415.4200134277344,
+        "end": 419.55999755859375,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 415.32001342773435,
+                "start": 415.4200134277344,
                 "end": 416
             },
             {
@@ -6471,20 +5898,20 @@
             {
                 "word": "viele.",
                 "start": 419.55999755859375,
-                "end": 419.85999755859376
+                "end": 419.55999755859375
             }
         ],
         "translationEn": "We have a lot of applications, especially in the cities.",
-        "translationVi": "Chúng tôi có rất nhiều đơn xin việc ngay tại các thành phố."
+        "translationVi": "Chúng tôi có rất, rất nhiều đơn xin việc ngay tại các thành phố."
     },
     {
-        "text": "Also Offenbach, Frankfurt können wir uns nicht beschweren,",
-        "start": 420.17999877929685,
-        "end": 422.47999267578126,
+        "text": "Also Offenbach, Frankfurt können wir uns nicht beschweren, was Bewerbungen angeht.",
+        "start": 420.2799987792969,
+        "end": 423.239990234375,
         "wordTimings": [
             {
                 "word": "Also",
-                "start": 420.17999877929685,
+                "start": 420.2799987792969,
                 "end": 420.44000244140625
             },
             {
@@ -6520,20 +5947,11 @@
             {
                 "word": "beschweren,",
                 "start": 421.8999938964844,
-                "end": 422.47999267578126
-            }
-        ],
-        "translationEn": "Well, we can't complain about Offenbach, Frankfurt.",
-        "translationVi": "Cũng như Offenbach, Frankfurt, chúng tôi không thể phàn nàn."
-    },
-    {
-        "text": "was Bewerbungen angeht.",
-        "start": 422.160009765625,
-        "end": 423.539990234375,
-        "wordTimings": [
+                "end": 422.17999267578125
+            },
             {
                 "word": "was",
-                "start": 422.160009765625,
+                "start": 422.260009765625,
                 "end": 422.3599853515625
             },
             {
@@ -6544,20 +5962,20 @@
             {
                 "word": "angeht.",
                 "start": 422.7799987792969,
-                "end": 423.539990234375
+                "end": 423.239990234375
             }
         ],
-        "translationEn": "regarding applications.",
-        "translationVi": "về việc xin việc."
+        "translationEn": "We can't complain about applications in Offenbach, Frankfurt.",
+        "translationVi": "Cũng như Offenbach, Frankfurt, chúng tôi không thể phàn nàn về các đơn xin việc."
     },
     {
         "text": "Und da muss man Stellenanzeigen machen für die Nacht.",
-        "start": 423.4799865722656,
-        "end": 426.4400146484375,
+        "start": 423.5799865722656,
+        "end": 426.1400146484375,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 423.4799865722656,
+                "start": 423.5799865722656,
                 "end": 423.67999267578125
             },
             {
@@ -6598,24 +6016,24 @@
             {
                 "word": "Nacht.",
                 "start": 426,
-                "end": 426.4400146484375
+                "end": 426.1400146484375
             }
         ],
-        "translationEn": "And then you have to create job advertisements for the night.",
-        "translationVi": "Và cần phải đăng tin tuyển dụng cho ca đêm."
+        "translationEn": "And there you have to create job postings for the night.",
+        "translationVi": "Và ở đó, người ta phải đăng tin tuyển dụng cho ca đêm."
     },
     {
-        "text": "Und ansonsten gerade für die Überbrückung",
-        "start": 426.79999389648435,
-        "end": 428.74000244140626,
+        "text": "Und ansonsten, gerade für die Überbrückung, muss man mit den Leuten ins Gespräch gehen.",
+        "start": 426.8999938964844,
+        "end": 430.2200012207031,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 426.79999389648435,
+                "start": 426.8999938964844,
                 "end": 427.0400085449219
             },
             {
-                "word": "ansonsten",
+                "word": "ansonsten,",
                 "start": 427.0400085449219,
                 "end": 427.5799865722656
             },
@@ -6635,22 +6053,13 @@
                 "end": 428.0400085449219
             },
             {
-                "word": "Überbrückung",
+                "word": "Überbrückung,",
                 "start": 428.0400085449219,
-                "end": 428.74000244140626
-            }
-        ],
-        "translationEn": "And otherwise, especially for the bridging.",
-        "translationVi": "Và ngoài ra, đặc biệt là cho việc vượt qua."
-    },
-    {
-        "text": "muss man mit den Leuten ins Gespräch gehen.",
-        "start": 428.4,
-        "end": 430.52000122070314,
-        "wordTimings": [
+                "end": 428.44000244140625
+            },
             {
                 "word": "muss",
-                "start": 428.4,
+                "start": 428.5,
                 "end": 428.55999755859375
             },
             {
@@ -6686,20 +6095,20 @@
             {
                 "word": "gehen.",
                 "start": 429.8999938964844,
-                "end": 430.52000122070314
+                "end": 430.2200012207031
             }
         ],
-        "translationEn": "One must engage in conversation with the people.",
-        "translationVi": "phải nói chuyện với mọi người."
+        "translationEn": "And otherwise, especially for bridging the gap, one must engage in conversation with the people.",
+        "translationVi": "Và ngoài ra, đặc biệt là để vượt qua giai đoạn này, cần phải trò chuyện với mọi người."
     },
     {
-        "text": "Die ersten Erfahrungen zeigen tatsächlich,",
-        "start": 431.2599853515625,
-        "end": 434.039990234375,
+        "text": "Die ersten Erfahrungen zeigen tatsächlich, bewerben sich viele Menschen nur für die Nachtschichten.",
+        "start": 431.3399963378906,
+        "end": 436.2799987792969,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 431.2599853515625,
+                "start": 431.3399963378906,
                 "end": 431.5199890136719
             },
             {
@@ -6720,20 +6129,11 @@
             {
                 "word": "tatsächlich,",
                 "start": 433.2200012207031,
-                "end": 434.039990234375
-            }
-        ],
-        "translationEn": "The initial experiences actually show that,",
-        "translationVi": "Những trải nghiệm đầu tiên thực sự cho thấy,"
-    },
-    {
-        "text": "bewerben sich viele Menschen nur für die Nachtschichten.",
-        "start": 433.639990234375,
-        "end": 436.5799987792969,
-        "wordTimings": [
+                "end": 433.739990234375
+            },
             {
                 "word": "bewerben",
-                "start": 433.639990234375,
+                "start": 433.739990234375,
                 "end": 434.1000061035156
             },
             {
@@ -6769,20 +6169,20 @@
             {
                 "word": "Nachtschichten.",
                 "start": 435.82000732421875,
-                "end": 436.5799987792969
+                "end": 436.2799987792969
             }
         ],
-        "translationEn": "Many people only apply for the night shifts.",
-        "translationVi": "Nhiều người chỉ nộp đơn cho ca đêm."
+        "translationEn": "The initial experiences show that many people only apply for the night shifts.",
+        "translationVi": "Những trải nghiệm đầu tiên cho thấy thực sự nhiều người chỉ nộp đơn cho ca đêm."
     },
     {
-        "text": "Doch am Ende geht es nicht allein darum,",
-        "start": 436.7200073242187,
-        "end": 439.3199890136719,
+        "text": "Doch am Ende geht es nicht allein darum, wer hier arbeitet, sondern auch darum, ob das Angebot überhaupt gebraucht wird.",
+        "start": 436.82000732421875,
+        "end": 444.7200012207031,
         "wordTimings": [
             {
                 "word": "Doch",
-                "start": 436.7200073242187,
+                "start": 436.82000732421875,
                 "end": 437.3399963378906
             },
             {
@@ -6818,20 +6218,11 @@
             {
                 "word": "darum,",
                 "start": 438.6600036621094,
-                "end": 439.3199890136719
-            }
-        ],
-        "translationEn": "But in the end, it's not just about that,",
-        "translationVi": "Nhưng cuối cùng, không chỉ có điều đó mà thôi,"
-    },
-    {
-        "text": "wer hier arbeitet, sondern auch darum,",
-        "start": 439.4799865722656,
-        "end": 442.09998779296876,
-        "wordTimings": [
+                "end": 439.0199890136719
+            },
             {
                 "word": "wer",
-                "start": 439.4799865722656,
+                "start": 439.5799865722656,
                 "end": 439.6199951171875
             },
             {
@@ -6857,20 +6248,11 @@
             {
                 "word": "darum,",
                 "start": 441.44000244140625,
-                "end": 442.09998779296876
-            }
-        ],
-        "translationEn": "who works here, but also about,",
-        "translationVi": "ai làm việc ở đây, mà còn về việc,"
-    },
-    {
-        "text": "ob das Angebot überhaupt gebraucht wird.",
-        "start": 441.8599914550781,
-        "end": 445.02000122070314,
-        "wordTimings": [
+                "end": 441.79998779296875
+            },
             {
                 "word": "ob",
-                "start": 441.8599914550781,
+                "start": 441.9599914550781,
                 "end": 442.0199890136719
             },
             {
@@ -6896,20 +6278,20 @@
             {
                 "word": "wird.",
                 "start": 443.70001220703125,
-                "end": 445.02000122070314
+                "end": 444.7200012207031
             }
         ],
-        "translationEn": "whether the offer is even needed.",
-        "translationVi": "liệu rằng đề nghị đó có thực sự cần thiết hay không."
+        "translationEn": "But in the end, it's not just about who works here, but also about whether the offer is even needed.",
+        "translationVi": "Nhưng cuối cùng, không chỉ là vấn đề ai đang làm việc ở đây, mà còn là liệu dịch vụ đó có thực sự cần thiết hay không."
     },
     {
-        "text": "Es macht schon Sinn, wenn es an Orten gebunden ist,",
-        "start": 445.41998901367185,
-        "end": 448.12000732421876,
+        "text": "Es macht schon Sinn, wenn es an Orten gebunden ist, wo einfach viele Leute zusammenkommen.",
+        "start": 445.5199890136719,
+        "end": 449.3399963378906,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 445.41998901367185,
+                "start": 445.5199890136719,
                 "end": 445.6400146484375
             },
             {
@@ -6955,20 +6337,11 @@
             {
                 "word": "ist,",
                 "start": 447.6000061035156,
-                "end": 448.12000732421876
-            }
-        ],
-        "translationEn": "It makes sense if it is location-bound,",
-        "translationVi": "Nó thật sự có lý khi nó gắn liền với những địa điểm."
-    },
-    {
-        "text": "wo einfach viele Leute zusammenkommen.",
-        "start": 447.7599853515625,
-        "end": 449.63999633789064,
-        "wordTimings": [
+                "end": 447.82000732421875
+            },
             {
                 "word": "wo",
-                "start": 447.7599853515625,
+                "start": 447.8599853515625,
                 "end": 447.8599853515625
             },
             {
@@ -6989,20 +6362,20 @@
             {
                 "word": "zusammenkommen.",
                 "start": 448.5400085449219,
-                "end": 449.63999633789064
+                "end": 449.3399963378906
             }
         ],
-        "translationEn": "where many people come together easily.",
-        "translationVi": "nơi mà nhiều người đơn giản tụ tập lại với nhau."
+        "translationEn": "It makes sense when it is tied to places where many people simply come together.",
+        "translationVi": "Điều đó thật sự có lý khi nó gắn liền với những nơi mà nhiều người tụ tập."
     },
     {
-        "text": "Ich glaube, für die Hotspots wäre es perfekt.",
-        "start": 449.6000122070312,
-        "end": 452.12000732421876,
+        "text": "Ich glaube, für die Hotspots wäre es perfekt. Die Kunden sind begeistert.",
+        "start": 449.70001220703125,
+        "end": 455.9599914550781,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 449.6000122070312,
+                "start": 449.70001220703125,
                 "end": 450.17999267578125
             },
             {
@@ -7038,20 +6411,11 @@
             {
                 "word": "perfekt.",
                 "start": 451.4200134277344,
-                "end": 452.12000732421876
-            }
-        ],
-        "translationEn": "I think it would be perfect for the hotspots.",
-        "translationVi": "Tôi nghĩ, điều đó sẽ hoàn hảo cho các điểm nóng."
-    },
-    {
-        "text": "Die Kunden sind begeistert.",
-        "start": 453.7599853515625,
-        "end": 456.25999145507814,
-        "wordTimings": [
+                "end": 451.82000732421875
+            },
             {
                 "word": "Die",
-                "start": 453.7599853515625,
+                "start": 453.8599853515625,
                 "end": 454.3800048828125
             },
             {
@@ -7067,20 +6431,20 @@
             {
                 "word": "begeistert.",
                 "start": 455.1199951171875,
-                "end": 456.25999145507814
+                "end": 455.9599914550781
             }
         ],
-        "translationEn": "The customers are thrilled.",
-        "translationVi": "Khách hàng rất hài lòng."
+        "translationEn": "I think it would be perfect for the hotspots. The customers are thrilled.",
+        "translationVi": "Tôi nghĩ, điều đó sẽ hoàn hảo cho các điểm nóng. Khách hàng rất hào hứng."
     },
     {
-        "text": "Was sagt der Chef?",
-        "start": 456.1999877929687,
-        "end": 457.47999267578126,
+        "text": "Was sagt der Chef? Wir sind jetzt mitten in der dritten Woche,",
+        "start": 456.29998779296875,
+        "end": 461.0400085449219,
         "wordTimings": [
             {
                 "word": "Was",
-                "start": 456.1999877929687,
+                "start": 456.29998779296875,
                 "end": 456.5199890136719
             },
             {
@@ -7096,20 +6460,11 @@
             {
                 "word": "Chef?",
                 "start": 456.9800109863281,
-                "end": 457.47999267578126
-            }
-        ],
-        "translationEn": "What does the boss say?",
-        "translationVi": "Sếp nói gì?"
-    },
-    {
-        "text": "Wir sind jetzt mitten in der dritten Woche",
-        "start": 458.639990234375,
-        "end": 461.3400085449219,
-        "wordTimings": [
+                "end": 457.17999267578125
+            },
             {
                 "word": "Wir",
-                "start": 458.639990234375,
+                "start": 458.739990234375,
                 "end": 459.260009765625
             },
             {
@@ -7143,22 +6498,22 @@
                 "end": 460.7799987792969
             },
             {
-                "word": "Woche",
+                "word": "Woche,",
                 "start": 460.7799987792969,
-                "end": 461.3400085449219
+                "end": 461.0400085449219
             }
         ],
-        "translationEn": "We are now in the middle of the third week.",
-        "translationVi": "Chúng tôi hiện đang ở giữa tuần thứ ba."
+        "translationEn": "What does the boss say? We are now in the middle of the third week,",
+        "translationVi": "Sếp nói gì? Chúng ta đang ở giữa tuần thứ ba,"
     },
     {
-        "text": "und da ist einfach auch eine Kundenentwicklung",
-        "start": 460.94000854492185,
-        "end": 464.560009765625,
+        "text": "und da ist einfach auch eine Kundenentwicklung auf jeden Fall von Woche zu Woche da.",
+        "start": 461.0400085449219,
+        "end": 465.82000732421875,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 460.94000854492185,
+                "start": 461.0400085449219,
                 "end": 461.9599914550781
             },
             {
@@ -7189,20 +6544,11 @@
             {
                 "word": "Kundenentwicklung",
                 "start": 463.3599853515625,
-                "end": 464.560009765625
-            }
-        ],
-        "translationEn": "and there is simply also a customer development",
-        "translationVi": "và đó cũng là một sự phát triển khách hàng"
-    },
-    {
-        "text": "auf jeden Fall von Woche zu Woche da.",
-        "start": 464.160009765625,
-        "end": 466.12000732421876,
-        "wordTimings": [
+                "end": 464.260009765625
+            },
             {
                 "word": "auf",
-                "start": 464.160009765625,
+                "start": 464.260009765625,
                 "end": 464.4599914550781
             },
             {
@@ -7238,20 +6584,20 @@
             {
                 "word": "da.",
                 "start": 465.5400085449219,
-                "end": 466.12000732421876
+                "end": 465.82000732421875
             }
         ],
-        "translationEn": "definitely there from week to week.",
-        "translationVi": "chắc chắn có mặt từ tuần này sang tuần khác."
+        "translationEn": "And there is definitely a customer development from week to week.",
+        "translationVi": "Và chắc chắn có sự phát triển khách hàng từ tuần này sang tuần khác."
     },
     {
-        "text": "Die bisherige Bilanz: alle sind zufrieden.",
-        "start": 466.17999877929685,
-        "end": 469.9400146484375,
+        "text": "Die bisherige Bilanz: Alle sind zufrieden.",
+        "start": 466.2799987792969,
+        "end": 469.6400146484375,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 466.17999877929685,
+                "start": 466.2799987792969,
                 "end": 466.8599853515625
             },
             {
@@ -7265,7 +6611,7 @@
                 "end": 468.0199890136719
             },
             {
-                "word": "alle",
+                "word": "Alle",
                 "start": 468.5400085449219,
                 "end": 468.5400085449219
             },
@@ -7277,20 +6623,20 @@
             {
                 "word": "zufrieden.",
                 "start": 468.8800048828125,
-                "end": 469.9400146484375
+                "end": 469.6400146484375
             }
         ],
-        "translationEn": "The current balance: everyone is satisfied.",
-        "translationVi": "Bảng tổng kết cho đến nay: tất cả đều hài lòng."
+        "translationEn": "The current balance: Everyone is satisfied.",
+        "translationVi": "Bảng tổng kết cho đến nay: Tất cả đều hài lòng."
     },
     {
         "text": "Die Kunden kommen und damit auch der Umsatz.",
-        "start": 469.91998901367185,
-        "end": 472.9600036621094,
+        "start": 470.0199890136719,
+        "end": 472.6600036621094,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 469.91998901367185,
+                "start": 470.0199890136719,
                 "end": 470.1400146484375
             },
             {
@@ -7326,20 +6672,20 @@
             {
                 "word": "Umsatz.",
                 "start": 472.17999267578125,
-                "end": 472.9600036621094
+                "end": 472.6600036621094
             }
         ],
         "translationEn": "The customers are coming, and with them, the revenue.",
-        "translationVi": "Khách hàng đến và doanh thu cũng theo đó tăng lên."
+        "translationVi": "Khách hàng đến và doanh thu cũng theo đó mà tăng lên."
     },
     {
-        "text": "Ein Pilotprojekt, das zeigt,",
-        "start": 473.4599975585937,
-        "end": 475.13999633789064,
+        "text": "Ein Pilotprojekt, das zeigt, wie groß das Interesse an einem Rund-um-die-Uhr-Angebot tatsächlich ist.",
+        "start": 473.55999755859375,
+        "end": 479.8800048828125,
         "wordTimings": [
             {
                 "word": "Ein",
-                "start": 473.4599975585937,
+                "start": 473.55999755859375,
                 "end": 473.6199951171875
             },
             {
@@ -7355,20 +6701,11 @@
             {
                 "word": "zeigt,",
                 "start": 474.55999755859375,
-                "end": 475.13999633789064
-            }
-        ],
-        "translationEn": "A pilot project that demonstrates,",
-        "translationVi": "Một dự án thí điểm, cho thấy,"
-    },
-    {
-        "text": "wie groß das Interesse an einem Rund-um-die-Uhr-Angebot",
-        "start": 475.2800048828125,
-        "end": 477.75999145507814,
-        "wordTimings": [
+                "end": 474.8399963378906
+            },
             {
                 "word": "wie",
-                "start": 475.2800048828125,
+                "start": 475.3999938964844,
                 "end": 475.3999938964844
             },
             {
@@ -7399,29 +6736,20 @@
             {
                 "word": "Rund-um-die-Uhr-Angebot",
                 "start": 477.0799865722656,
-                "end": 477.75999145507814
-            }
-        ],
-        "translationEn": "how great the interest is in a round-the-clock offer",
-        "translationVi": "mức độ quan tâm đến một dịch vụ 24/7"
-    },
-    {
-        "text": "tatsächlich ist.",
-        "start": 478.6999877929687,
-        "end": 480.1800048828125,
-        "wordTimings": [
+                "end": 477.4599914550781
+            },
             {
                 "word": "tatsächlich",
-                "start": 478.6999877929687,
+                "start": 478.79998779296875,
                 "end": 479.6000061035156
             },
             {
                 "word": "ist.",
                 "start": 479.6000061035156,
-                "end": 480.1800048828125
+                "end": 479.8800048828125
             }
         ],
-        "translationEn": "in fact is.",
-        "translationVi": "thực sự là."
+        "translationEn": "A pilot project that demonstrates how great the interest in a round-the-clock service actually is.",
+        "translationVi": "Một dự án thí điểm cho thấy mức độ quan tâm đến một dịch vụ 24/7 thực sự lớn như thế nào."
     }
 ]

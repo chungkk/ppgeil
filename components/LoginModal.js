@@ -293,13 +293,13 @@ const LoginModal = ({ isOpen, onClose }) => {
               <Image src="/logo.jpg" alt="Logo" width={60} height={60} style={{ borderRadius: '10px' }} />
             </div>
             <h2 className={styles.welcomeTitle}>
-              {t('loginModal.welcome')}
+              {isRegistering ? t('loginModal.createAccount') : t('loginModal.welcome')}
             </h2>
             <p className={styles.welcomeSubtitle}>
-              {t('loginModal.subtitle')}
+              {isRegistering ? t('loginModal.createAccountSubtitle') : t('loginModal.subtitle')}
             </p>
             <div className={styles.mascot}>
-              <div className={styles.mascotBubble}>Hi...</div>
+              <div className={styles.mascotBubble}>{isRegistering ? 'Hallo!' : 'Hi...'}</div>
             </div>
           </div>
         </div>
@@ -592,9 +592,21 @@ const LoginModal = ({ isOpen, onClose }) => {
 
               <p className={styles.registerLink}>
                 {t('loginModal.noAccount')}{' '}
-                <Link href="/auth/register">
+                <button
+                  type="button"
+                  className={styles.registerLinkButton}
+                  onClick={() => {
+                    setShowEmailForm(false);
+                    setIsRegistering(true);
+                    setEmailChecked(false);
+                    setEmailExists(false);
+                    setEmail('');
+                    setPassword('');
+                    setError('');
+                  }}
+                >
                   {t('loginModal.registerNow')}
-                </Link>
+                </button>
               </p>
             </div>
           )}
