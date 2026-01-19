@@ -96,6 +96,24 @@
   --retro-dark: #2D3436;
   --retro-border: #1a1a2e;
   --retro-shadow: #1a1a2e;
+
+  /* Admin Dashboard Retro Variables */
+  --retro-bg-dark: #0a0a0f;
+  --retro-bg-card: #12121a;
+  --retro-bg-hover: #1a1a25;
+  --retro-neon-cyan: #00f5ff;
+  --retro-neon-pink: #ff00ff;
+  --retro-neon-purple: #9d4edd;
+  --retro-neon-green: #00ff88;
+  --retro-neon-yellow: #ffd700;
+  --retro-neon-orange: #ff6b35;
+  --retro-neon-red: #ff4757;
+  --retro-text-primary: #ffffff;
+  --retro-text-secondary: rgba(255, 255, 255, 0.7);
+  --retro-text-muted: rgba(255, 255, 255, 0.4);
+  --retro-border-glow: rgba(0, 245, 255, 0.3);
+  --retro-font-display: 'Press Start 2P', 'VT323', monospace;
+  --retro-font-body: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 }
 
 /* === LIGHT THEME HIDDEN - See original values in backup file === */
