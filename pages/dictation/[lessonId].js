@@ -16,6 +16,7 @@ import { youtubeAPI } from '../../lib/youtubeApi';
 import { useAuth } from '../../context/AuthContext';
 import { hapticEvents } from '../../lib/haptics';
 import { calculateSimilarity, maskTextByPercentage } from '../../lib/dictationUtils';
+import { toast } from 'react-toastify';
 import styles from '../../styles/dictationPage.module.css';
 
 const DictationPage = () => {
@@ -118,8 +119,8 @@ const DictationPage = () => {
       if (!token) return;
 
       const currentCompletedSentences = updates.completedSentences ?? completedSentences;
-      const completedCount = Array.isArray(currentCompletedSentences) 
-        ? currentCompletedSentences.length 
+      const completedCount = Array.isArray(currentCompletedSentences)
+        ? currentCompletedSentences.length
         : Object.keys(currentCompletedSentences || {}).length;
 
       const progressData = {
@@ -583,11 +584,11 @@ const DictationPage = () => {
     // Rebuild full sentence from word inputs for comparison
     const correctText = transcriptData[sentenceIndex]?.text || '';
     const correctWords = correctText.split(/\s+/).filter(w => w.length > 0);
-    
+
     // Build user input string from all word inputs
     const userWords = correctWords.map((_, i) => newWordInputs[sentenceIndex]?.[i] || '');
     const fullUserInput = userWords.join(' ').trim();
-    
+
     // Update userInputs for compatibility
     const newUserInputs = { ...userInputs, [sentenceIndex]: fullUserInput };
     setUserInputs(newUserInputs);
@@ -651,7 +652,7 @@ const DictationPage = () => {
   const focusNextWordInput = useCallback((sentenceIndex, currentWordIndex) => {
     const correctText = transcriptData[sentenceIndex]?.text || '';
     const correctWords = correctText.split(/\s+/).filter(w => w.length > 0);
-    
+
     // Find next empty/incomplete word input
     for (let i = currentWordIndex + 1; i < correctWords.length; i++) {
       const inputEl = document.querySelector(`[data-word-input="${sentenceIndex}-${i}"]`);
@@ -798,6 +799,47 @@ const DictationPage = () => {
           checkedSentences: newCheckedSentences,
           sentencePointsAwarded: newSentencePointsAwarded
         });
+
+        // Check if all sentences are completed - award bonus points based on lesson length
+        if (newCompletedSentences.length === transcriptData.length) {
+          hapticEvents.lessonComplete();
+
+          // Calculate bonus points: 100+ sentences = 50 points, 50+ sentences = 20 points
+          const totalSentences = transcriptData.length;
+          let bonusPoints = 0;
+          if (totalSentences >= 100) {
+            bonusPoints = 50;
+          } else if (totalSentences >= 50) {
+            bonusPoints = 20;
+          }
+
+          setTimeout(async () => {
+            const token = localStorage.getItem('token');
+            if (token && bonusPoints > 0) {
+              try {
+                await fetch('/api/user/points', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                  },
+                  body: JSON.stringify({
+                    pointsChange: bonusPoints,
+                    reason: `Hoàn thành bài Dictation (${totalSentences} câu)`,
+                    completedToday: true
+                  })
+                });
+
+                toast.success(`🎉 ${t('lesson.completion.allCompleted')} +${bonusPoints} bonus points!`);
+              } catch (error) {
+                console.error('Error awarding bonus points:', error);
+                toast.success(t('lesson.completion.allCompleted'));
+              }
+            } else {
+              toast.success(t('lesson.completion.allCompleted'));
+            }
+          }, 400);
+        }
       }
     } else if (!isCorrect) {
       hapticEvents.wordIncorrect();
@@ -863,7 +905,7 @@ const DictationPage = () => {
     const correctText = transcriptData[sentenceIndex]?.text || '';
     const correctWords = correctText.split(' ').filter(w => w.length > 0);
     const revealedWord = correctWords[wordIndex]?.replace(/[.,!?;:"""''„]/g, '') || '';
-    
+
     // Update wordInputs with the revealed word
     const newWordInputs = {
       ...wordInputs,
@@ -873,14 +915,14 @@ const DictationPage = () => {
       }
     };
     setWordInputs(newWordInputs);
-    
+
     // Rebuild full sentence from word inputs for userInputs compatibility
     const userWords = correctWords.map((_, i) => newWordInputs[sentenceIndex]?.[i] || '');
     const fullUserInput = userWords.join(' ').replace(/\s+/g, ' ').trim();
-    
+
     const newUserInputs = { ...userInputs, [sentenceIndex]: fullUserInput };
     setUserInputs(newUserInputs);
-    
+
     // Update compared words to reflect the change
     if (fullUserInput.trim() && correctText) {
       const wordComparison = compareWords(fullUserInput, correctText);
@@ -921,13 +963,13 @@ const DictationPage = () => {
   const revealFocusedWordHint = useCallback(() => {
     const wordIdx = focusedWordIndex !== null ? focusedWordIndex : lastFocusedWordIndexRef.current;
     if (wordIdx === null) return;
-    
+
     const words = transcriptData[currentSentenceIndex]?.text.split(' ');
     if (!words || !words[wordIdx]) return;
-    
+
     const word = words[wordIdx];
     const pureWord = word.replace(/[.,!?;:"""''„]/g, '');
-    
+
     // Update wordInputs with the correct word
     const newWordInputs = {
       ...wordInputs,
@@ -937,7 +979,7 @@ const DictationPage = () => {
       }
     };
     setWordInputs(newWordInputs);
-    
+
     // Mark as revealed
     const updated = {
       ...revealedWordsByClick,
@@ -947,7 +989,7 @@ const DictationPage = () => {
       }
     };
     setRevealedWordsByClick(updated);
-    
+
     // Update comparison
     const newComparedWords = {
       ...comparedWords,
@@ -957,7 +999,7 @@ const DictationPage = () => {
       }
     };
     setComparedWords(newComparedWords);
-    
+
     // Count hint clicks per sentence and deduct 1 point from 3rd click onwards
     const currentCount = hintClickCount[currentSentenceIndex] || 0;
     const newCount = currentCount + 1;
@@ -965,12 +1007,12 @@ const DictationPage = () => {
       ...prev,
       [currentSentenceIndex]: newCount
     }));
-    
+
     // Deduct 1 point from 3rd click onwards (3rd, 4th, 5th, ...)
     if (newCount >= 3) {
       updatePoints(-1);
     }
-    
+
     // Save progress
     saveProgress({
       revealedWordsByClick: updated,
@@ -985,17 +1027,17 @@ const DictationPage = () => {
     const userWords = userText.split(/\s+/).filter(w => w.length > 0);
     const correctText = transcriptData[currentSentenceIndex]?.text || '';
     const correctWords = correctText.split(' ').filter(w => w.length > 0);
-    
+
     // Use cursor position to determine which word to reveal
     const wordIdxToReveal = Math.min(mobileCursorWordIndex, correctWords.length - 1);
-    
+
     // Check if word index is valid and not already revealed
     if (wordIdxToReveal < 0 || wordIdxToReveal >= correctWords.length) return;
     if (revealedWordsByClick[currentSentenceIndex]?.[wordIdxToReveal]) return;
-    
+
     const pureWord = correctWords[wordIdxToReveal]?.replace(/[.,!?;:"""''„]/g, '') || '';
     if (!pureWord) return;
-    
+
     // Build new user input with the revealed word
     const newUserWords = [...userWords];
     // Ensure array has enough elements
@@ -1003,11 +1045,11 @@ const DictationPage = () => {
       newUserWords.push('');
     }
     newUserWords[wordIdxToReveal] = pureWord;
-    
+
     const newUserText = newUserWords.join(' ') + ' ';
     const newUserInputs = { ...userInputs, [currentSentenceIndex]: newUserText };
     setUserInputs(newUserInputs);
-    
+
     // Mark as revealed
     const updated = {
       ...revealedWordsByClick,
@@ -1017,7 +1059,7 @@ const DictationPage = () => {
       }
     };
     setRevealedWordsByClick(updated);
-    
+
     // Count hint clicks per sentence and deduct 1 point from 3rd click onwards
     const currentCount = hintClickCount[currentSentenceIndex] || 0;
     const newCount = currentCount + 1;
@@ -1025,12 +1067,12 @@ const DictationPage = () => {
       ...prev,
       [currentSentenceIndex]: newCount
     }));
-    
+
     // Deduct 1 point from 3rd click onwards
     if (newCount >= 3) {
       updatePoints(-1, `Dictation hint penalty sentence #${currentSentenceIndex + 1}`);
     }
-    
+
     // Save progress
     saveProgress({
       revealedWordsByClick: updated,
@@ -1230,7 +1272,7 @@ const DictationPage = () => {
       // Handle Arrow keys for seeking (2 seconds)
       if (e.code === 'ArrowLeft' || e.code === 'ArrowRight') {
         const seekAmount = e.code === 'ArrowLeft' ? -2 : 2;
-        
+
         if (isYouTube) {
           const player = youtubePlayerRef.current;
           if (player?.getCurrentTime && player?.seekTo) {
@@ -1657,7 +1699,7 @@ const DictationPage = () => {
                 {/* Word Input Boxes - matching hidden sentence layout */}
                 <div className={styles.wordInputsSection}>
                   <span className={styles.wordInputsLabel}>{t('dictationPage.enterAnswer')}</span>
-                  
+
                   {/* Mobile: Single textarea input */}
                   {/* Both desktop and mobile: Use textarea input */}
                   <div className={styles.mobileInputContainer}>
@@ -1670,20 +1712,20 @@ const DictationPage = () => {
                           const correctText = transcriptData[currentSentenceIndex]?.text || '';
                           const correctWords = correctText.split(' ').filter(w => w.length > 0);
                           const hasTrailingSpace = userText.endsWith(' ');
-                          
+
                           return userWords.map((word, i) => {
                             if (!word && i === userWords.length - 1 && !hasTrailingSpace) {
                               return null;
                             }
-                            
+
                             const correctWord = correctWords[i]?.replace(/[.,!?;:"""''„]/g, '') || '';
                             const normalizedUser = word.toLowerCase().replace(/[.,!?;:"""''„]/g, '');
                             const normalizedCorrect = correctWord.toLowerCase();
                             const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
-                            
+
                             // Check if this word is "completed" (has space after it)
                             const isWordCompleted = i < userWords.length - 1 || hasTrailingSpace;
-                            
+
                             let colorClass = '';
                             if (isWordCompleted && word) {
                               if (normalizedUser === normalizedCorrect) {
@@ -1692,7 +1734,7 @@ const DictationPage = () => {
                                 colorClass = styles.overlayWordWrong;
                               }
                             }
-                            
+
                             return (
                               <span key={i}>
                                 <span className={colorClass}>{word}</span>
@@ -1741,14 +1783,14 @@ const DictationPage = () => {
                       const userWords = userText.split(/\s+/).filter(w => w.length > 0);
                       const correctWords = transcriptData[currentSentenceIndex].text.split(' ').filter(w => w.length > 0);
                       const isCompleted = completedSentences.includes(currentSentenceIndex);
-                      
+
                       // Count completed words (words followed by space)
                       // If sentence is completed, show all words
                       const hasTrailingSpace = userText.endsWith(' ');
-                      const completedWordCount = isCompleted 
-                        ? correctWords.length 
+                      const completedWordCount = isCompleted
+                        ? correctWords.length
                         : (hasTrailingSpace ? userWords.length : Math.max(0, userWords.length - 1));
-                      
+
                       return (
                         <div className={styles.mobileWordComparison}>
                           {correctWords.map((word, i) => {
@@ -1757,10 +1799,10 @@ const DictationPage = () => {
                             const userWord = userWords[i] || '';
                             const normalizedUser = userWord.toLowerCase().replace(/[.,!?;:"""''„]/g, '');
                             const normalizedCorrect = pureWord.toLowerCase();
-                            
+
                             // Check if word was revealed by hint
                             const isRevealed = revealedWordsByClick[currentSentenceIndex]?.[i];
-                            
+
                             // Show result for completed words or if sentence is done
                             if (i < completedWordCount || isCompleted) {
                               const isCorrect = normalizedUser === normalizedCorrect;
@@ -1811,7 +1853,7 @@ const DictationPage = () => {
                       <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
                   </button>
-                  
+
                   {/* Mobile Play/Pause Button */}
                   {isMobile && (
                     <>
@@ -1838,10 +1880,10 @@ const DictationPage = () => {
                         title="-2s"
                       >
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" fill="currentColor" stroke="none"/>
+                          <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" fill="currentColor" stroke="none" />
                         </svg>
                       </button>
-                      
+
                       <button
                         className={`${styles.mobilePlayButton} ${isPlaying ? styles.mobilePlayButtonActive : ''}`}
                         onClick={handlePlayPause}
@@ -1860,7 +1902,7 @@ const DictationPage = () => {
                       </button>
                     </>
                   )}
-                  
+
                   <button
                     className={styles.hintButton}
                     onClick={revealMobileHint}
@@ -1869,16 +1911,16 @@ const DictationPage = () => {
                       if (completedSentences.includes(currentSentenceIndex)) return true;
                       if (results[currentSentenceIndex]?.showAnswer) return true;
                       if ((hintClickCount[currentSentenceIndex] || 0) >= 2 && userPoints <= 0) return true;
-                      
+
                       // Check if word at cursor position is already revealed
                       const correctText = transcriptData[currentSentenceIndex]?.text || '';
                       const correctWords = correctText.split(' ').filter(w => w.length > 0);
-                      
+
                       // Check if word at cursor is already revealed
                       const wordIdx = Math.min(mobileCursorWordIndex, correctWords.length - 1);
                       if (wordIdx < 0 || wordIdx >= correctWords.length) return true;
                       if (revealedWordsByClick[currentSentenceIndex]?.[wordIdx]) return true;
-                      
+
                       return false;
                     })()}
                     title={t('dictationPage.clickToShowHint')}
@@ -1892,7 +1934,7 @@ const DictationPage = () => {
                       <span className={styles.hintPenaltyCount}>-1</span>
                     )}
                   </button>
-                  
+
                   {/* Forward 2s - Mobile only */}
                   {isMobile && (
                     <button
@@ -1917,11 +1959,11 @@ const DictationPage = () => {
                       title="+2s"
                     >
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/>
+                        <path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z" />
                       </svg>
                     </button>
                   )}
-                  
+
                   <button
                     className={styles.navButton}
                     onClick={() => {
