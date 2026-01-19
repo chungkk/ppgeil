@@ -1,8 +1,8 @@
 [
     {
-        "text": "Ein Flugzeugunglück Ende letzten Jahres in Südkorea.",
-        "start": 0,
-        "end": 4.8199999809265135,
+        "text": "Ein Flugzeugunglück Ende letzten Jahres in Südkorea, 179 Menschen kamen ums Leben.",
+        "start": 7.380000114440918,
+        "end": 7.380000114440918,
         "wordTimings": [
             {
                 "word": "Ein",
@@ -35,22 +35,13 @@
                 "end": 3.7799999713897705
             },
             {
-                "word": "Südkorea.",
+                "word": "Südkorea,",
                 "start": 3.7799999713897705,
-                "end": 4.8199999809265135
-            }
-        ],
-        "translationEn": "A plane crash at the end of last year in South Korea.",
-        "translationVi": "Một vụ tai nạn máy bay vào cuối năm ngoái ở Hàn Quốc."
-    },
-    {
-        "text": "179 Menschen kamen ums Leben.",
-        "start": 5.280000114440918,
-        "end": 7.680000114440918,
-        "wordTimings": [
+                "end": 4.519999980926514
+            },
             {
                 "word": "179",
-                "start": 5.280000114440918,
+                "start": 5.380000114440918,
                 "end": 6.139999866485596
             },
             {
@@ -71,20 +62,20 @@
             {
                 "word": "Leben.",
                 "start": 7.380000114440918,
-                "end": 7.680000114440918
+                "end": 7.380000114440918
             }
         ],
-        "translationEn": "179 people lost their lives.",
-        "translationVi": "179 người đã thiệt mạng."
+        "translationEn": "A plane crash at the end of last year in South Korea claimed the lives of 179 people.",
+        "translationVi": "Một tai nạn máy bay vào cuối năm ngoái ở Hàn Quốc, 179 người đã thiệt mạng."
     },
     {
-        "text": "Schuld daran waren wohl Enten,",
-        "start": 7.920000457763672,
-        "end": 10.079999732971192,
+        "text": "Schuld daran waren wohl Enten, denen die Triebwege des Flugzeugs gerieten.",
+        "start": 8.020000457763672,
+        "end": 12.279999732971191,
         "wordTimings": [
             {
                 "word": "Schuld",
-                "start": 7.920000457763672,
+                "start": 8.020000457763672,
                 "end": 8.180000305175781
             },
             {
@@ -105,20 +96,11 @@
             {
                 "word": "Enten,",
                 "start": 9.579999923706055,
-                "end": 10.079999732971192
-            }
-        ],
-        "translationEn": "The blame was probably on ducks,",
-        "translationVi": "Có lẽ là do những con vịt."
-    },
-    {
-        "text": "denen die Triebwege des Flugzeugs gerieten.",
-        "start": 10.179999732971192,
-        "end": 12.579999732971192,
-        "wordTimings": [
+                "end": 9.779999732971191
+            },
             {
                 "word": "denen",
-                "start": 10.179999732971192,
+                "start": 10.279999732971191,
                 "end": 10.279999732971191
             },
             {
@@ -144,20 +126,20 @@
             {
                 "word": "gerieten.",
                 "start": 11.739999771118164,
-                "end": 12.579999732971192
+                "end": 12.279999732971191
             }
         ],
-        "translationEn": "the flight paths of the aircraft got caught.",
-        "translationVi": "các con đường di chuyển của máy bay gặp phải."
+        "translationEn": "The blame was likely on ducks that got caught in the aircraft's flight paths.",
+        "translationVi": "Nguyên nhân có lẽ là do những con vịt, chúng đã bị cuốn vào các đường bay của máy bay."
     },
     {
         "text": "Vor einem solchen Vogelschlag fürchten sich Piloten weltweit.",
-        "start": 14.05999984741211,
-        "end": 17.900000381469727,
+        "start": 14.15999984741211,
+        "end": 17.600000381469727,
         "wordTimings": [
             {
                 "word": "Vor",
-                "start": 14.05999984741211,
+                "start": 14.15999984741211,
                 "end": 14.15999984741211
             },
             {
@@ -193,20 +175,20 @@
             {
                 "word": "weltweit.",
                 "start": 16.860000610351562,
-                "end": 17.900000381469727
+                "end": 17.600000381469727
             }
         ],
         "translationEn": "Pilots around the world fear such bird strikes.",
-        "translationVi": "Các phi công trên toàn thế giới lo sợ về một cú va chạm với chim như vậy."
+        "translationVi": "Các phi công trên toàn thế giới lo sợ trước một cú va chạm với chim như vậy."
     },
     {
         "text": "Er soll dafür sorgen, dass es hier am Flughafen von Nantes nicht so weit kommt.",
-        "start": 19.60000076293945,
-        "end": 24.099999237060548,
+        "start": 19.700000762939453,
+        "end": 23.799999237060547,
         "wordTimings": [
             {
                 "word": "Er",
-                "start": 19.60000076293945,
+                "start": 19.700000762939453,
                 "end": 19.860000610351562
             },
             {
@@ -277,20 +259,20 @@
             {
                 "word": "kommt.",
                 "start": 23.559999465942383,
-                "end": 24.099999237060548
+                "end": 23.799999237060547
             }
         ],
-        "translationEn": "He is supposed to ensure that it doesn't come to that here at Nantes airport.",
-        "translationVi": "Ông ấy phải đảm bảo rằng không xảy ra tình huống như vậy tại sân bay Nantes."
+        "translationEn": "He should ensure that it doesn't come to that here at Nantes Airport.",
+        "translationVi": "Anh ấy phải đảm bảo rằng không xảy ra tình huống như vậy tại sân bay Nantes."
     },
     {
-        "text": "Tukuman, ein dressierter Bussard.",
-        "start": 24.4,
-        "end": 26.980000305175782,
+        "text": "Tukuman, ein dressierter Bussard, ist ein Herbstmorgen am Flughafen von Nantes.",
+        "start": 24.5,
+        "end": 37.939998626708984,
         "wordTimings": [
             {
                 "word": "Tukuman,",
-                "start": 24.4,
+                "start": 24.5,
                 "end": 24.81999969482422
             },
             {
@@ -304,67 +286,9 @@
                 "end": 26
             },
             {
-                "word": "Bussard.",
+                "word": "Bussard,",
                 "start": 26,
-                "end": 26.980000305175782
-            }
-        ],
-        "translationEn": "Tukuman, a trained hawk.",
-        "translationVi": "Tukuman, một con chim ưng đã được huấn luyện."
-    },
-    {
-        "text": "Ein Herbstmorgen am Flughafen von Nantes.",
-        "start": 27.500000381469725,
-        "end": 30.480000305175782,
-        "wordTimings": [
-            {
-                "word": "Ein",
-                "start": 27.500000381469725,
-                "end": 28.260000228881836
-            },
-            {
-                "word": "Herbstmorgen",
-                "start": 28.260000228881836,
-                "end": 28.920000076293945
-            },
-            {
-                "word": "am",
-                "start": 28.920000076293945,
-                "end": 29.15999984741211
-            },
-            {
-                "word": "Flughafen",
-                "start": 29.15999984741211,
-                "end": 29.600000381469727
-            },
-            {
-                "word": "von",
-                "start": 29.600000381469727,
-                "end": 29.920000076293945
-            },
-            {
-                "word": "Nantes.",
-                "start": 29.920000076293945,
-                "end": 30.480000305175782
-            }
-        ],
-        "translationEn": "An autumn morning at Nantes airport.",
-        "translationVi": "Một buổi sáng thu tại sân bay Nantes."
-    },
-    {
-        "text": "Anthony Renault ist Falkner,",
-        "start": 31.539999389648436,
-        "end": 33.119999694824216,
-        "wordTimings": [
-            {
-                "word": "Anthony",
-                "start": 31.539999389648436,
-                "end": 31.739999771118164
-            },
-            {
-                "word": "Renault",
-                "start": 31.739999771118164,
-                "end": 32.040000915527344
+                "end": 26.68000030517578
             },
             {
                 "word": "ist",
@@ -372,145 +296,118 @@
                 "end": 32.29999923706055
             },
             {
-                "word": "Falkner,",
-                "start": 32.29999923706055,
-                "end": 33.119999694824216
-            }
-        ],
-        "translationEn": "Anthony Renault is a falconer,",
-        "translationVi": "Anthony Renault là một người nuôi chim ưng,"
-    },
-    {
-        "text": "und das ist seine erfahrene Fachkraft,",
-        "start": 32.71999969482422,
-        "end": 35.27000122070312,
-        "wordTimings": [
-            {
-                "word": "und",
-                "start": 32.71999969482422,
-                "end": 33.279998779296875
-            },
-            {
-                "word": "das",
-                "start": 33.279998779296875,
-                "end": 33.599998474121094
-            },
-            {
-                "word": "ist",
-                "start": 33.599998474121094,
-                "end": 33.880001068115234
-            },
-            {
-                "word": "seine",
+                "word": "ein",
                 "start": 33.880001068115234,
                 "end": 34.060001373291016
             },
             {
-                "word": "erfahrene",
+                "word": "Herbstmorgen",
                 "start": 34.060001373291016,
-                "end": 34.63999938964844
+                "end": 34.310001373291016
             },
             {
-                "word": "Fachkraft,",
-                "start": 34.63999938964844,
-                "end": 35.27000122070312
-            }
-        ],
-        "translationEn": "and that is his experienced specialist,",
-        "translationVi": "và đó là chuyên gia có kinh nghiệm của anh ấy,"
-    },
-    {
-        "text": "die hier auf dem Flughafengelände zu Hause ist.",
-        "start": 35.55999984741211,
-        "end": 38.7000015258789,
-        "wordTimings": [
-            {
-                "word": "die",
-                "start": 35.55999984741211,
-                "end": 35.7400016784668
+                "word": "am",
+                "start": 34.310001373291016,
+                "end": 34.560001373291016
             },
             {
-                "word": "hier",
-                "start": 35.7400016784668,
-                "end": 36.20000076293945
-            },
-            {
-                "word": "auf",
-                "start": 36.20000076293945,
-                "end": 36.400001525878906
-            },
-            {
-                "word": "dem",
-                "start": 36.400001525878906,
-                "end": 36.619998931884766
-            },
-            {
-                "word": "Flughafengelände",
+                "word": "Flughafen",
                 "start": 36.619998931884766,
                 "end": 37.439998626708984
             },
             {
-                "word": "zu",
+                "word": "von",
                 "start": 37.439998626708984,
-                "end": 38.060001373291016
+                "end": 37.689998626708984
             },
             {
-                "word": "Hause",
-                "start": 38.060001373291016,
-                "end": 38.060001373291016
-            },
-            {
-                "word": "ist.",
-                "start": 38.060001373291016,
-                "end": 38.7000015258789
+                "word": "Nantes.",
+                "start": 37.689998626708984,
+                "end": 37.939998626708984
             }
         ],
-        "translationEn": "which is located here on the airport premises.",
-        "translationVi": "nơi đây nằm trong khuôn viên sân bay."
+        "translationEn": "Tukuman, a trained buzzard, is an autumn morning at the airport in Nantes.",
+        "translationVi": "Tukuman, một con chim ưng đã được huấn luyện, đang ở một buổi sáng mùa thu tại sân bay Nantes."
     },
     {
-        "text": "Tukumans Aufgabe besteht darin,",
-        "start": 39.28000106811523,
-        "end": 41.45999984741211,
+        "text": "Anthony Renault ist Falkner und das ist seine erfahrene Fachkraft, die hier auf dem Flughafengelände zu Hause ist.",
+        "start": 37.939998626708984,
+        "end": 42.599998474121094,
         "wordTimings": [
             {
-                "word": "Tukumans",
-                "start": 39.28000106811523,
-                "end": 39.720001220703125
+                "word": "Anthony",
+                "start": 37.939998626708984,
+                "end": 38.189998626708984
             },
             {
-                "word": "Aufgabe",
+                "word": "Renault",
+                "start": 38.189998626708984,
+                "end": 38.439998626708984
+            },
+            {
+                "word": "ist",
+                "start": 38.060001373291016,
+                "end": 38.400001525878906
+            },
+            {
+                "word": "Falkner",
+                "start": 38.400001525878906,
+                "end": 38.650001525878906
+            },
+            {
+                "word": "und",
+                "start": 38.650001525878906,
+                "end": 38.900001525878906
+            },
+            {
+                "word": "das",
+                "start": 38.900001525878906,
+                "end": 39.150001525878906
+            },
+            {
+                "word": "ist",
+                "start": 39.150001525878906,
+                "end": 39.400001525878906
+            },
+            {
+                "word": "seine",
+                "start": 39.400001525878906,
+                "end": 39.650001525878906
+            },
+            {
+                "word": "erfahrene",
+                "start": 39.650001525878906,
+                "end": 39.900001525878906
+            },
+            {
+                "word": "Fachkraft,",
+                "start": 39.900001525878906,
+                "end": 40.150001525878906
+            },
+            {
+                "word": "die",
+                "start": 40.150001525878906,
+                "end": 40.400001525878906
+            },
+            {
+                "word": "hier",
+                "start": 40.400001525878906,
+                "end": 40.650001525878906
+            },
+            {
+                "word": "auf",
                 "start": 39.720001220703125,
                 "end": 40.29999923706055
             },
             {
-                "word": "besteht",
+                "word": "dem",
                 "start": 40.29999923706055,
-                "end": 40.70000076293945
+                "end": 40.54999923706055
             },
             {
-                "word": "darin,",
-                "start": 40.70000076293945,
-                "end": 41.45999984741211
-            }
-        ],
-        "translationEn": "Tukuman's task is to,",
-        "translationVi": "Nhiệm vụ của Tukumans là,"
-    },
-    {
-        "text": "andere Vögel zu verscheuchen,",
-        "start": 41.33999862670898,
-        "end": 42.939999389648435,
-        "wordTimings": [
-            {
-                "word": "andere",
-                "start": 41.33999862670898,
-                "end": 41.63999938964844
-            },
-            {
-                "word": "Vögel",
-                "start": 41.63999938964844,
-                "end": 41.880001068115234
+                "word": "Flughafengelände",
+                "start": 40.54999923706055,
+                "end": 40.79999923706055
             },
             {
                 "word": "zu",
@@ -518,116 +415,112 @@
                 "end": 42.099998474121094
             },
             {
-                "word": "verscheuchen,",
+                "word": "Hause",
                 "start": 42.099998474121094,
-                "end": 42.939999389648435
+                "end": 42.349998474121094
+            },
+            {
+                "word": "ist.",
+                "start": 42.349998474121094,
+                "end": 42.599998474121094
             }
         ],
-        "translationEn": "to scare away other birds,",
-        "translationVi": "để xua đuổi các loài chim khác,"
+        "translationEn": "Anthony Renault is a falconer, and this is his experienced professional who is at home here on the airfield.",
+        "translationVi": "Anthony Renault là một người nuôi chim săn và đây là chuyên gia dày dạn kinh nghiệm của anh ấy, người đang sinh sống tại khu vực sân bay này."
     },
     {
-        "text": "um Kollisionen mit Flugzeugen zu vermeiden.",
-        "start": 42.74000015258789,
-        "end": 45.439999389648435,
+        "text": "Tukumans Aufgabe besteht darin, andere Vögel zu verscheuchen, um Kollisionen mit Flugzeugen zu vermeiden.",
+        "start": 42.599998474121094,
+        "end": 50.20000076293945,
         "wordTimings": [
             {
-                "word": "um",
-                "start": 42.74000015258789,
-                "end": 43.08000183105469
+                "word": "Tukumans",
+                "start": 42.599998474121094,
+                "end": 42.849998474121094
             },
             {
-                "word": "Kollisionen",
-                "start": 43.08000183105469,
-                "end": 43.70000076293945
-            },
-            {
-                "word": "mit",
-                "start": 43.70000076293945,
-                "end": 43.86000061035156
-            },
-            {
-                "word": "Flugzeugen",
-                "start": 43.86000061035156,
-                "end": 44.41999816894531
-            },
-            {
-                "word": "zu",
-                "start": 44.41999816894531,
-                "end": 44.619998931884766
-            },
-            {
-                "word": "vermeiden.",
-                "start": 44.619998931884766,
-                "end": 45.439999389648435
-            }
-        ],
-        "translationEn": "to avoid collisions with aircraft.",
-        "translationVi": "để tránh va chạm với máy bay."
-    },
-    {
-        "text": "Aber bevor er jetzt raus auf das Flugfeld geht,",
-        "start": 45.960001373291014,
-        "end": 48.41999893188476,
-        "wordTimings": [
-            {
-                "word": "Aber",
-                "start": 45.960001373291014,
-                "end": 46.2599983215332
-            },
-            {
-                "word": "bevor",
-                "start": 46.2599983215332,
-                "end": 46.41999816894531
-            },
-            {
-                "word": "er",
-                "start": 46.41999816894531,
-                "end": 46.560001373291016
-            },
-            {
-                "word": "jetzt",
-                "start": 46.560001373291016,
-                "end": 47.02000045776367
-            },
-            {
-                "word": "raus",
-                "start": 47.02000045776367,
-                "end": 47.040000915527344
-            },
-            {
-                "word": "auf",
+                "word": "Aufgabe",
                 "start": 47.040000915527344,
                 "end": 47.20000076293945
             },
             {
-                "word": "das",
+                "word": "besteht",
                 "start": 47.20000076293945,
-                "end": 47.439998626708984
+                "end": 47.45000076293945
             },
             {
-                "word": "Flugfeld",
-                "start": 47.439998626708984,
-                "end": 47.84000015258789
+                "word": "darin,",
+                "start": 47.45000076293945,
+                "end": 47.70000076293945
             },
             {
-                "word": "geht,",
-                "start": 47.84000015258789,
-                "end": 48.41999893188476
+                "word": "andere",
+                "start": 47.70000076293945,
+                "end": 47.95000076293945
+            },
+            {
+                "word": "Vögel",
+                "start": 47.95000076293945,
+                "end": 48.20000076293945
+            },
+            {
+                "word": "zu",
+                "start": 48.20000076293945,
+                "end": 48.45000076293945
+            },
+            {
+                "word": "verscheuchen,",
+                "start": 48.45000076293945,
+                "end": 48.70000076293945
+            },
+            {
+                "word": "um",
+                "start": 48.70000076293945,
+                "end": 48.95000076293945
+            },
+            {
+                "word": "Kollisionen",
+                "start": 48.95000076293945,
+                "end": 49.20000076293945
+            },
+            {
+                "word": "mit",
+                "start": 49.20000076293945,
+                "end": 49.45000076293945
+            },
+            {
+                "word": "Flugzeugen",
+                "start": 49.45000076293945,
+                "end": 49.70000076293945
+            },
+            {
+                "word": "zu",
+                "start": 49.70000076293945,
+                "end": 49.95000076293945
+            },
+            {
+                "word": "vermeiden.",
+                "start": 49.95000076293945,
+                "end": 50.20000076293945
             }
         ],
-        "translationEn": "But before he goes out to the airfield now,",
-        "translationVi": "Nhưng trước khi anh ấy ra ngoài sân bay,"
+        "translationEn": "The task of the Tukumans is to scare away other birds to avoid collisions with airplanes.",
+        "translationVi": "Nhiệm vụ của Tukumans là xua đuổi các loài chim khác để tránh va chạm với máy bay."
     },
     {
-        "text": "muss er erstmal auf die Waage.",
-        "start": 48.87999954223633,
-        "end": 51.099999237060544,
+        "text": "Aber bevor er jetzt raus auf das Flugfeld geht, muss er erstmal auf die Waage.",
+        "start": 50.20000076293945,
+        "end": 53.29999923706055,
         "wordTimings": [
             {
-                "word": "muss",
-                "start": 48.87999954223633,
-                "end": 49.08000183105469
+                "word": "Aber",
+                "start": 50.20000076293945,
+                "end": 50.45000076293945
+            },
+            {
+                "word": "bevor",
+                "start": 50.45000076293945,
+                "end": 50.70000076293945
             },
             {
                 "word": "er",
@@ -635,9 +528,14 @@
                 "end": 49.18000030517578
             },
             {
-                "word": "erstmal",
+                "word": "jetzt",
                 "start": 49.18000030517578,
-                "end": 49.58000183105469
+                "end": 49.43000030517578
+            },
+            {
+                "word": "raus",
+                "start": 49.43000030517578,
+                "end": 49.68000030517578
             },
             {
                 "word": "auf",
@@ -645,193 +543,102 @@
                 "end": 49.779998779296875
             },
             {
-                "word": "die",
+                "word": "das",
                 "start": 49.779998779296875,
-                "end": 50.459999084472656
+                "end": 50.029998779296875
             },
             {
-                "word": "Waage.",
-                "start": 50.459999084472656,
-                "end": 51.099999237060544
-            }
-        ],
-        "translationEn": "he first has to step on the scale.",
-        "translationVi": "anh ấy phải lên cân trước đã."
-    },
-    {
-        "text": "Er ist eine Art Spitzensportler.",
-        "start": 51.539999389648436,
-        "end": 54.34000091552734,
-        "wordTimings": [
-            {
-                "word": "Er",
-                "start": 51.539999389648436,
-                "end": 52.29999923706055
+                "word": "Flugfeld",
+                "start": 50.029998779296875,
+                "end": 50.279998779296875
             },
             {
-                "word": "ist",
-                "start": 52.29999923706055,
-                "end": 52.52000045776367
+                "word": "geht,",
+                "start": 50.279998779296875,
+                "end": 50.529998779296875
             },
             {
-                "word": "eine",
-                "start": 52.52000045776367,
-                "end": 52.779998779296875
-            },
-            {
-                "word": "Art",
-                "start": 52.779998779296875,
-                "end": 52.97999954223633
-            },
-            {
-                "word": "Spitzensportler.",
-                "start": 52.97999954223633,
-                "end": 54.34000091552734
-            }
-        ],
-        "translationEn": "He is a kind of elite athlete.",
-        "translationVi": "Anh ấy là một loại vận động viên thể thao hàng đầu."
-    },
-    {
-        "text": "Wenn sein Gewicht zu niedrig ist,",
-        "start": 53.94000091552734,
-        "end": 56.0599983215332,
-        "wordTimings": [
-            {
-                "word": "Wenn",
-                "start": 53.94000091552734,
-                "end": 54.459999084472656
-            },
-            {
-                "word": "sein",
-                "start": 54.459999084472656,
-                "end": 54.68000030517578
-            },
-            {
-                "word": "Gewicht",
-                "start": 54.68000030517578,
-                "end": 54.880001068115234
-            },
-            {
-                "word": "zu",
-                "start": 54.880001068115234,
-                "end": 55.2599983215332
-            },
-            {
-                "word": "niedrig",
-                "start": 55.2599983215332,
-                "end": 55.47999954223633
-            },
-            {
-                "word": "ist,",
-                "start": 55.47999954223633,
-                "end": 56.0599983215332
-            }
-        ],
-        "translationEn": "If his weight is too low,",
-        "translationVi": "Nếu trọng lượng của anh ấy quá thấp,"
-    },
-    {
-        "text": "ist er unzufrieden,",
-        "start": 55.9,
-        "end": 57.040001678466794,
-        "wordTimings": [
-            {
-                "word": "ist",
-                "start": 55.9,
-                "end": 56
+                "word": "muss",
+                "start": 50.529998779296875,
+                "end": 50.779998779296875
             },
             {
                 "word": "er",
+                "start": 51.63999938964844,
+                "end": 52.29999923706055
+            },
+            {
+                "word": "erstmal",
+                "start": 52.29999923706055,
+                "end": 52.54999923706055
+            },
+            {
+                "word": "auf",
+                "start": 52.54999923706055,
+                "end": 52.79999923706055
+            },
+            {
+                "word": "die",
+                "start": 52.79999923706055,
+                "end": 53.04999923706055
+            },
+            {
+                "word": "Waage.",
+                "start": 53.04999923706055,
+                "end": 53.29999923706055
+            }
+        ],
+        "translationEn": "But before he goes out to the airfield now, he first has to step on the scale.",
+        "translationVi": "Nhưng trước khi anh ấy ra ngoài sân bay, anh ấy phải lên cân trước đã."
+    },
+    {
+        "text": "Er ist eine Art Spitzensportler.",
+        "start": 56,
+        "end": 57.13999938964844,
+        "wordTimings": [
+            {
+                "word": "Er",
                 "start": 56,
                 "end": 56.13999938964844
             },
             {
-                "word": "unzufrieden,",
+                "word": "ist",
                 "start": 56.13999938964844,
-                "end": 57.040001678466794
+                "end": 56.38999938964844
+            },
+            {
+                "word": "eine",
+                "start": 56.38999938964844,
+                "end": 56.63999938964844
+            },
+            {
+                "word": "Art",
+                "start": 56.63999938964844,
+                "end": 56.88999938964844
+            },
+            {
+                "word": "Spitzensportler.",
+                "start": 56.88999938964844,
+                "end": 57.13999938964844
             }
         ],
-        "translationEn": "is he dissatisfied,",
-        "translationVi": "anh ấy không hài lòng,"
+        "translationEn": "He is a kind of top athlete.",
+        "translationVi": "Anh ấy là một loại vận động viên thể thao đỉnh cao."
     },
     {
-        "text": "wird nicht fliegen wollen",
-        "start": 56.83999862670898,
-        "end": 58.00000076293945,
-        "wordTimings": [
-            {
-                "word": "wird",
-                "start": 56.83999862670898,
-                "end": 56.939998626708984
-            },
-            {
-                "word": "nicht",
-                "start": 56.939998626708984,
-                "end": 57.15999984741211
-            },
-            {
-                "word": "fliegen",
-                "start": 57.15999984741211,
-                "end": 57.439998626708984
-            },
-            {
-                "word": "wollen",
-                "start": 57.439998626708984,
-                "end": 58.00000076293945
-            }
-        ],
-        "translationEn": "will not want to fly",
-        "translationVi": "sẽ không muốn bay"
-    },
-    {
-        "text": "und nur ans Essen denken.",
-        "start": 57.60000076293945,
-        "end": 59.34000091552734,
-        "wordTimings": [
-            {
-                "word": "und",
-                "start": 57.60000076293945,
-                "end": 57.959999084472656
-            },
-            {
-                "word": "nur",
-                "start": 57.959999084472656,
-                "end": 58.220001220703125
-            },
-            {
-                "word": "ans",
-                "start": 58.220001220703125,
-                "end": 58.41999816894531
-            },
-            {
-                "word": "Essen",
-                "start": 58.41999816894531,
-                "end": 58.70000076293945
-            },
-            {
-                "word": "denken.",
-                "start": 58.70000076293945,
-                "end": 59.34000091552734
-            }
-        ],
-        "translationEn": "and only think about food.",
-        "translationVi": "và chỉ nghĩ đến thức ăn."
-    },
-    {
-        "text": "Wenn das Gewicht zu hoch ist,",
-        "start": 59.74000015258789,
-        "end": 61.39999847412109,
+        "text": "Wenn sein Gewicht zu niedrig ist, ist er unzufrieden, wird nicht fliegen wollen und nur ans Essen denken.",
+        "start": 59.84000015258789,
+        "end": 66.87999725341797,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 59.74000015258789,
+                "start": 59.84000015258789,
                 "end": 59.880001068115234
             },
             {
-                "word": "das",
+                "word": "sein",
                 "start": 59.880001068115234,
-                "end": 60.119998931884766
+                "end": 60.130001068115234
             },
             {
                 "word": "Gewicht",
@@ -844,28 +651,19 @@
                 "end": 60.7599983215332
             },
             {
-                "word": "hoch",
+                "word": "niedrig",
                 "start": 60.7599983215332,
-                "end": 60.7599983215332
+                "end": 61.0099983215332
             },
             {
                 "word": "ist,",
                 "start": 60.7599983215332,
-                "end": 61.39999847412109
-            }
-        ],
-        "translationEn": "If the weight is too high,",
-        "translationVi": "Nếu trọng lượng quá cao,"
-    },
-    {
-        "text": "setzt er sich auf einen Baum,",
-        "start": 61.26000061035156,
-        "end": 62.599999237060544,
-        "wordTimings": [
+                "end": 61.099998474121094
+            },
             {
-                "word": "setzt",
-                "start": 61.26000061035156,
-                "end": 61.400001525878906
+                "word": "ist",
+                "start": 61.099998474121094,
+                "end": 61.349998474121094
             },
             {
                 "word": "er",
@@ -873,371 +671,300 @@
                 "end": 61.560001373291016
             },
             {
-                "word": "sich",
+                "word": "unzufrieden,",
                 "start": 61.560001373291016,
-                "end": 61.65999984741211
+                "end": 61.810001373291016
             },
             {
-                "word": "auf",
-                "start": 61.65999984741211,
-                "end": 61.81999969482422
+                "word": "wird",
+                "start": 61.810001373291016,
+                "end": 62.060001373291016
             },
             {
-                "word": "einen",
-                "start": 61.81999969482422,
-                "end": 62.08000183105469
+                "word": "nicht",
+                "start": 62.060001373291016,
+                "end": 62.310001373291016
             },
             {
-                "word": "Baum,",
-                "start": 62.08000183105469,
-                "end": 62.599999237060544
-            }
-        ],
-        "translationEn": "he sits on a tree,",
-        "translationVi": "anh ấy ngồi lên một cái cây,"
-    },
-    {
-        "text": "lässt sich irgendwo nieder",
-        "start": 62.49999847412109,
-        "end": 63.71999816894531,
-        "wordTimings": [
-            {
-                "word": "lässt",
-                "start": 62.49999847412109,
-                "end": 62.599998474121094
-            },
-            {
-                "word": "sich",
-                "start": 62.599998474121094,
-                "end": 62.84000015258789
-            },
-            {
-                "word": "irgendwo",
-                "start": 62.84000015258789,
-                "end": 63.119998931884766
-            },
-            {
-                "word": "nieder",
-                "start": 63.119998931884766,
-                "end": 63.71999816894531
-            }
-        ],
-        "translationEn": "settles down somewhere",
-        "translationVi": "định cư ở đâu đó"
-    },
-    {
-        "text": "und hat keine Lust zu fliegen.",
-        "start": 63.31999816894531,
-        "end": 65.07999877929687,
-        "wordTimings": [
-            {
-                "word": "und",
-                "start": 63.31999816894531,
-                "end": 63.63999938964844
-            },
-            {
-                "word": "hat",
-                "start": 63.63999938964844,
-                "end": 63.81999969482422
-            },
-            {
-                "word": "keine",
-                "start": 63.81999969482422,
-                "end": 64.04000091552734
-            },
-            {
-                "word": "Lust",
-                "start": 64.04000091552734,
-                "end": 64.22000122070312
-            },
-            {
-                "word": "zu",
-                "start": 64.22000122070312,
+                "word": "fliegen",
+                "start": 64.77999877929688,
                 "end": 64.77999877929688
             },
             {
-                "word": "fliegen.",
+                "word": "wollen",
                 "start": 64.77999877929688,
-                "end": 65.07999877929687
-            }
-        ],
-        "translationEn": "and doesn't feel like flying.",
-        "translationVi": "và không muốn bay."
-    },
-    {
-        "text": "Pappsatt, als ob ein Hamburger vor einem Marathonlauf ist.",
-        "start": 65.67999877929688,
-        "end": 69.16000061035156,
-        "wordTimings": [
-            {
-                "word": "Pappsatt,",
-                "start": 65.67999877929688,
-                "end": 66.0199966430664
+                "end": 65.02999877929688
             },
             {
-                "word": "als",
+                "word": "und",
+                "start": 65.02999877929688,
+                "end": 65.27999877929688
+            },
+            {
+                "word": "nur",
+                "start": 65.27999877929688,
+                "end": 65.52999877929688
+            },
+            {
+                "word": "ans",
                 "start": 66.27999877929688,
                 "end": 66.37999725341797
             },
             {
-                "word": "ob",
+                "word": "Essen",
                 "start": 66.37999725341797,
-                "end": 66.41999816894531
+                "end": 66.62999725341797
             },
             {
-                "word": "ein",
-                "start": 66.41999816894531,
-                "end": 66.72000122070312
+                "word": "denken.",
+                "start": 66.62999725341797,
+                "end": 66.87999725341797
+            }
+        ],
+        "translationEn": "If his weight is too low, he will be unhappy, will not want to fly, and will only think about food.",
+        "translationVi": "Nếu trọng lượng của nó quá thấp, nó sẽ không hài lòng, không muốn bay và chỉ nghĩ đến việc ăn."
+    },
+    {
+        "text": "Wenn das Gewicht zu hoch ist, setzt er sich auf einen Baum, lässt sich irgendwo nieder und hat keine Lust zu fliegen.",
+        "start": 66.87999725341797,
+        "end": 82.11000061035156,
+        "wordTimings": [
+            {
+                "word": "Wenn",
+                "start": 66.87999725341797,
+                "end": 67.12999725341797
             },
             {
-                "word": "Hamburger",
-                "start": 66.72000122070312,
-                "end": 67.23999786376953
+                "word": "das",
+                "start": 67.12999725341797,
+                "end": 67.37999725341797
             },
             {
-                "word": "vor",
-                "start": 67.23999786376953,
-                "end": 67.4800033569336
+                "word": "Gewicht",
+                "start": 67.37999725341797,
+                "end": 67.62999725341797
             },
             {
-                "word": "einem",
-                "start": 67.4800033569336,
-                "end": 67.72000122070312
+                "word": "zu",
+                "start": 67.62999725341797,
+                "end": 67.87999725341797
             },
             {
-                "word": "Marathonlauf",
-                "start": 67.72000122070312,
-                "end": 68.31999969482422
+                "word": "hoch",
+                "start": 67.87999725341797,
+                "end": 68.12999725341797
             },
             {
-                "word": "ist.",
+                "word": "ist,",
                 "start": 68.31999969482422,
-                "end": 69.16000061035156
-            }
-        ],
-        "translationEn": "Stuffed, as if a hamburger is before a marathon run.",
-        "translationVi": "Noi bụng, như thể một người ăn hamburger trước khi chạy marathon."
-    },
-    {
-        "text": "Auf dem Flughafen von Nantes herrscht bereits reger Verkehr.",
-        "start": 70.8800033569336,
-        "end": 75.03999786376953,
-        "wordTimings": [
-            {
-                "word": "Auf",
-                "start": 70.8800033569336,
-                "end": 71.5
+                "end": 68.86000061035156
             },
             {
-                "word": "dem",
-                "start": 71.5,
-                "end": 71.69999694824219
+                "word": "setzt",
+                "start": 68.86000061035156,
+                "end": 69.11000061035156
             },
             {
-                "word": "Flughafen",
-                "start": 71.69999694824219,
-                "end": 72.08000183105469
-            },
-            {
-                "word": "von",
-                "start": 72.08000183105469,
-                "end": 72.4000015258789
-            },
-            {
-                "word": "Nantes",
-                "start": 72.4000015258789,
-                "end": 72.62000274658203
-            },
-            {
-                "word": "herrscht",
-                "start": 72.62000274658203,
-                "end": 73.22000122070312
-            },
-            {
-                "word": "bereits",
-                "start": 73.22000122070312,
-                "end": 73.83999633789062
-            },
-            {
-                "word": "reger",
-                "start": 73.83999633789062,
-                "end": 74.26000213623047
-            },
-            {
-                "word": "Verkehr.",
-                "start": 74.26000213623047,
-                "end": 75.03999786376953
-            }
-        ],
-        "translationEn": "There is already heavy traffic at Nantes Airport.",
-        "translationVi": "Tại sân bay Nantes, giao thông đã rất nhộn nhịp."
-    },
-    {
-        "text": "Es ist der größte Flughafen Westfrankreichs.",
-        "start": 76.31999816894532,
-        "end": 78.99999694824218,
-        "wordTimings": [
-            {
-                "word": "Es",
-                "start": 76.31999816894532,
+                "word": "er",
+                "start": 76.41999816894531,
                 "end": 76.5199966430664
             },
             {
-                "word": "ist",
+                "word": "sich",
                 "start": 76.5199966430664,
-                "end": 76.66000366210938
+                "end": 76.7699966430664
             },
             {
-                "word": "der",
+                "word": "auf",
+                "start": 76.7699966430664,
+                "end": 77.0199966430664
+            },
+            {
+                "word": "einen",
+                "start": 77.0199966430664,
+                "end": 77.2699966430664
+            },
+            {
+                "word": "Baum,",
+                "start": 77.2699966430664,
+                "end": 77.5199966430664
+            },
+            {
+                "word": "lässt",
+                "start": 77.5199966430664,
+                "end": 77.7699966430664
+            },
+            {
+                "word": "sich",
+                "start": 77.7699966430664,
+                "end": 78.0199966430664
+            },
+            {
+                "word": "irgendwo",
+                "start": 78.0199966430664,
+                "end": 78.2699966430664
+            },
+            {
+                "word": "nieder",
                 "start": 76.66000366210938,
                 "end": 76.86000061035156
             },
             {
-                "word": "größte",
-                "start": 76.86000061035156,
-                "end": 77.23999786376953
-            },
-            {
-                "word": "Flughafen",
-                "start": 77.23999786376953,
-                "end": 77.62000274658203
-            },
-            {
-                "word": "Westfrankreichs.",
-                "start": 77.62000274658203,
-                "end": 78.99999694824218
-            }
-        ],
-        "translationEn": "It is the largest airport in West France.",
-        "translationVi": "Đây là sân bay lớn nhất Tây Pháp."
-    },
-    {
-        "text": "Hier werden jährlich rund 7 Millionen Passagiere abgefertigt.",
-        "start": 78.5999969482422,
-        "end": 84.03999786376953,
-        "wordTimings": [
-            {
-                "word": "Hier",
-                "start": 78.5999969482422,
-                "end": 79.4000015258789
-            },
-            {
-                "word": "werden",
-                "start": 79.4000015258789,
-                "end": 79.95999908447266
-            },
-            {
-                "word": "jährlich",
-                "start": 79.95999908447266,
-                "end": 80.37999725341797
-            },
-            {
-                "word": "rund",
+                "word": "und",
                 "start": 80.37999725341797,
                 "end": 80.86000061035156
             },
             {
-                "word": "7",
+                "word": "hat",
                 "start": 80.86000061035156,
-                "end": 81.16000366210938
+                "end": 81.11000061035156
             },
             {
-                "word": "Millionen",
-                "start": 81.16000366210938,
-                "end": 81.5199966430664
+                "word": "keine",
+                "start": 81.11000061035156,
+                "end": 81.36000061035156
             },
             {
-                "word": "Passagiere",
-                "start": 81.5199966430664,
-                "end": 82.18000030517578
+                "word": "Lust",
+                "start": 81.36000061035156,
+                "end": 81.61000061035156
             },
             {
-                "word": "abgefertigt.",
-                "start": 82.18000030517578,
-                "end": 84.03999786376953
+                "word": "zu",
+                "start": 81.61000061035156,
+                "end": 81.86000061035156
+            },
+            {
+                "word": "fliegen.",
+                "start": 81.86000061035156,
+                "end": 82.11000061035156
             }
         ],
-        "translationEn": "Around 7 million passengers are processed here annually.",
-        "translationVi": "Tại đây hàng năm có khoảng 7 triệu hành khách được phục vụ."
+        "translationEn": "If the weight is too high, he sits on a tree, settles down somewhere, and has no desire to fly.",
+        "translationVi": "Nếu trọng lượng quá nặng, nó sẽ ngồi lên một cái cây, hạ cánh ở đâu đó và không muốn bay."
     },
     {
-        "text": "Thibaut Jung leitet die Abteilung Sicherheit und Risikomanagement des Flughafens.",
-        "start": 84.16000213623047,
-        "end": 89.8199966430664,
+        "text": "Pappsatt, als ob ein Hamburger vor einem Marathonlauf ist.",
+        "start": 82.11000061035156,
+        "end": 84.36000061035156,
         "wordTimings": [
             {
-                "word": "Thibaut",
-                "start": 84.16000213623047,
-                "end": 84.37999725341797
+                "word": "Pappsatt,",
+                "start": 82.11000061035156,
+                "end": 82.36000061035156
             },
             {
-                "word": "Jung",
-                "start": 84.37999725341797,
-                "end": 84.68000030517578
+                "word": "als",
+                "start": 82.36000061035156,
+                "end": 82.61000061035156
             },
             {
-                "word": "leitet",
-                "start": 84.68000030517578,
-                "end": 85.23999786376953
+                "word": "ob",
+                "start": 82.61000061035156,
+                "end": 82.86000061035156
             },
             {
-                "word": "die",
-                "start": 85.23999786376953,
-                "end": 85.58000183105469
+                "word": "ein",
+                "start": 82.86000061035156,
+                "end": 83.11000061035156
             },
             {
-                "word": "Abteilung",
-                "start": 85.58000183105469,
-                "end": 86.0999984741211
+                "word": "Hamburger",
+                "start": 83.11000061035156,
+                "end": 83.36000061035156
             },
             {
-                "word": "Sicherheit",
-                "start": 86.0999984741211,
-                "end": 86.62000274658203
+                "word": "vor",
+                "start": 83.36000061035156,
+                "end": 83.61000061035156
             },
             {
-                "word": "und",
-                "start": 86.62000274658203,
-                "end": 87.12000274658203
+                "word": "einem",
+                "start": 83.61000061035156,
+                "end": 83.86000061035156
             },
             {
-                "word": "Risikomanagement",
-                "start": 87.12000274658203,
-                "end": 88.18000030517578
+                "word": "Marathonlauf",
+                "start": 83.86000061035156,
+                "end": 84.11000061035156
             },
             {
-                "word": "des",
+                "word": "ist.",
+                "start": 84.11000061035156,
+                "end": 84.36000061035156
+            }
+        ],
+        "translationEn": "Stuffed, as if a hamburger is before a marathon run.",
+        "translationVi": "Noi no, như thể một chiếc bánh hamburger trước khi chạy marathon."
+    },
+    {
+        "text": "Auf dem Flughafen von Nantes herrscht bereits reger Verkehr.",
+        "start": 84.36000061035156,
+        "end": 92.45999908447266,
+        "wordTimings": [
+            {
+                "word": "Auf",
+                "start": 84.36000061035156,
+                "end": 84.61000061035156
+            },
+            {
+                "word": "dem",
                 "start": 88.18000030517578,
                 "end": 88.44000244140625
             },
             {
-                "word": "Flughafens.",
+                "word": "Flughafen",
                 "start": 88.44000244140625,
-                "end": 89.8199966430664
-            }
-        ],
-        "translationEn": "Thibaut Jung heads the Security and Risk Management department of the airport.",
-        "translationVi": "Thibaut Jung lãnh đạo bộ phận An ninh và Quản lý Rủi ro của sân bay."
-    },
-    {
-        "text": "Nantes liegt an der Loire,",
-        "start": 91.16000213623047,
-        "end": 92.98000030517578,
-        "wordTimings": [
+                "end": 89.5199966430664
+            },
+            {
+                "word": "von",
+                "start": 89.5199966430664,
+                "end": 89.7699966430664
+            },
             {
                 "word": "Nantes",
-                "start": 91.16000213623047,
+                "start": 91.26000213623047,
                 "end": 91.45999908447266
             },
             {
-                "word": "liegt",
+                "word": "herrscht",
                 "start": 91.45999908447266,
-                "end": 91.94000244140625
+                "end": 91.70999908447266
             },
             {
-                "word": "an",
-                "start": 91.94000244140625,
-                "end": 92.16000366210938
+                "word": "bereits",
+                "start": 91.70999908447266,
+                "end": 91.95999908447266
+            },
+            {
+                "word": "reger",
+                "start": 91.95999908447266,
+                "end": 92.20999908447266
+            },
+            {
+                "word": "Verkehr.",
+                "start": 92.20999908447266,
+                "end": 92.45999908447266
+            }
+        ],
+        "translationEn": "There is already busy traffic at Nantes airport.",
+        "translationVi": "Tại sân bay Nantes đã có nhiều hoạt động nhộn nhịp."
+    },
+    {
+        "text": "Es ist der größte Flughafen Westfrankreichs.",
+        "start": 92.45999908447266,
+        "end": 93.43000030517578,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 92.45999908447266,
+                "end": 92.70999908447266
+            },
+            {
+                "word": "ist",
+                "start": 92.70999908447266,
+                "end": 92.95999908447266
             },
             {
                 "word": "der",
@@ -1245,238 +972,171 @@
                 "end": 92.68000030517578
             },
             {
-                "word": "Loire,",
+                "word": "größte",
                 "start": 92.68000030517578,
-                "end": 92.98000030517578
+                "end": 92.93000030517578
+            },
+            {
+                "word": "Flughafen",
+                "start": 92.93000030517578,
+                "end": 93.18000030517578
+            },
+            {
+                "word": "Westfrankreichs.",
+                "start": 93.18000030517578,
+                "end": 93.43000030517578
             }
         ],
-        "translationEn": "Nantes is located on the Loire.",
-        "translationVi": "Nantes nằm bên sông Loire,"
+        "translationEn": "It is the largest airport in Western France.",
+        "translationVi": "Đây là sân bay lớn nhất Tây Pháp."
     },
     {
-        "text": "grenzt an die Loire-Mündung sowie an den Grand Lieu See.",
-        "start": 93.26000061035157,
-        "end": 97.96000366210937,
+        "text": "Hier werden jährlich rund 7 Millionen Passagiere abgefertigt.",
+        "start": 93.43000030517578,
+        "end": 101.08000183105469,
         "wordTimings": [
             {
-                "word": "grenzt",
-                "start": 93.26000061035157,
-                "end": 93.4000015258789
+                "word": "Hier",
+                "start": 93.43000030517578,
+                "end": 93.68000030517578
             },
             {
-                "word": "an",
-                "start": 93.4000015258789,
-                "end": 93.62000274658203
-            },
-            {
-                "word": "die",
-                "start": 93.62000274658203,
-                "end": 93.87999725341797
-            },
-            {
-                "word": "Loire-Mündung",
-                "start": 93.87999725341797,
-                "end": 94.04000091552734
-            },
-            {
-                "word": "sowie",
-                "start": 94.55999755859375,
-                "end": 94.91999816894531
-            },
-            {
-                "word": "an",
-                "start": 94.91999816894531,
-                "end": 95.0999984741211
-            },
-            {
-                "word": "den",
+                "word": "werden",
                 "start": 95.0999984741211,
                 "end": 95.37999725341797
             },
             {
-                "word": "Grand",
+                "word": "jährlich",
                 "start": 95.37999725341797,
-                "end": 95.69999694824219
+                "end": 95.62999725341797
             },
             {
-                "word": "Lieu",
-                "start": 95.69999694824219,
-                "end": 95.81999969482422
-            },
-            {
-                "word": "See.",
-                "start": 95.81999969482422,
-                "end": 97.96000366210937
-            }
-        ],
-        "translationEn": "borders the mouth of the Loire and the Grand Lieu Lake.",
-        "translationVi": "giáp với cửa sông Loire cũng như hồ Grand Lieu."
-    },
-    {
-        "text": "Es gibt viele Vögel hier,",
-        "start": 98.67999877929688,
-        "end": 100.21999816894531,
-        "wordTimings": [
-            {
-                "word": "Es",
-                "start": 98.67999877929688,
-                "end": 98.77999877929688
-            },
-            {
-                "word": "gibt",
-                "start": 98.77999877929688,
-                "end": 99.05999755859375
-            },
-            {
-                "word": "viele",
-                "start": 99.05999755859375,
-                "end": 99.33999633789062
-            },
-            {
-                "word": "Vögel",
-                "start": 99.33999633789062,
-                "end": 99.5999984741211
-            },
-            {
-                "word": "hier,",
-                "start": 99.5999984741211,
-                "end": 100.21999816894531
-            }
-        ],
-        "translationEn": "There are many birds here,",
-        "translationVi": "Có nhiều loài chim ở đây,"
-    },
-    {
-        "text": "und damit steigt auch das Risiko.",
-        "start": 99.81999816894532,
-        "end": 102.03999786376953,
-        "wordTimings": [
-            {
-                "word": "und",
-                "start": 99.81999816894532,
+                "word": "rund",
+                "start": 99.91999816894531,
                 "end": 100.08000183105469
             },
             {
-                "word": "damit",
+                "word": "7",
                 "start": 100.08000183105469,
-                "end": 100.41999816894531
+                "end": 100.33000183105469
             },
             {
-                "word": "steigt",
-                "start": 100.41999816894531,
-                "end": 100.77999877929688
+                "word": "Millionen",
+                "start": 100.33000183105469,
+                "end": 100.58000183105469
             },
             {
-                "word": "auch",
-                "start": 100.77999877929688,
-                "end": 101.04000091552734
+                "word": "Passagiere",
+                "start": 100.58000183105469,
+                "end": 100.83000183105469
             },
             {
-                "word": "das",
-                "start": 101.04000091552734,
-                "end": 101.45999908447266
-            },
-            {
-                "word": "Risiko.",
-                "start": 101.45999908447266,
-                "end": 102.03999786376953
+                "word": "abgefertigt.",
+                "start": 100.83000183105469,
+                "end": 101.08000183105469
             }
         ],
-        "translationEn": "and with that, the risk also increases.",
-        "translationVi": "và do đó rủi ro cũng tăng lên."
+        "translationEn": "Around 7 million passengers are processed here annually.",
+        "translationVi": "Mỗi năm có khoảng 7 triệu hành khách được phục vụ tại đây."
     },
     {
-        "text": "Vögel können Flugzeuge vom Himmel holen.",
-        "start": 104.34000244140626,
-        "end": 106.84000091552734,
+        "text": "Thibaut Jung leitet die Abteilung Sicherheit und Risikomanagement des Flughafens.",
+        "start": 101.08000183105469,
+        "end": 108.56999969482422,
         "wordTimings": [
             {
-                "word": "Vögel",
-                "start": 104.34000244140626,
-                "end": 104.69999694824219
+                "word": "Thibaut",
+                "start": 101.08000183105469,
+                "end": 101.33000183105469
             },
             {
-                "word": "können",
-                "start": 104.69999694824219,
-                "end": 105
+                "word": "Jung",
+                "start": 101.33000183105469,
+                "end": 101.58000183105469
             },
             {
-                "word": "Flugzeuge",
-                "start": 105,
-                "end": 105.5199966430664
+                "word": "leitet",
+                "start": 101.58000183105469,
+                "end": 101.83000183105469
             },
             {
-                "word": "vom",
-                "start": 105.5199966430664,
-                "end": 105.81999969482422
-            },
-            {
-                "word": "Himmel",
-                "start": 105.81999969482422,
-                "end": 106.08000183105469
-            },
-            {
-                "word": "holen.",
-                "start": 106.08000183105469,
-                "end": 106.84000091552734
-            }
-        ],
-        "translationEn": "Birds can bring airplanes down from the sky.",
-        "translationVi": "Chim có thể hạ máy bay xuống từ bầu trời."
-    },
-    {
-        "text": "Laut einer Studie der Internationalen Zivil-Luftfahrt-Organisation",
-        "start": 106.44000091552735,
-        "end": 110.24000244140625,
-        "wordTimings": [
-            {
-                "word": "Laut",
-                "start": 106.44000091552735,
-                "end": 107.16000366210938
-            },
-            {
-                "word": "einer",
-                "start": 107.16000366210938,
-                "end": 107.55999755859375
-            },
-            {
-                "word": "Studie",
+                "word": "die",
                 "start": 107.55999755859375,
                 "end": 108.04000091552734
             },
             {
-                "word": "der",
+                "word": "Abteilung",
+                "start": 108.04000091552734,
+                "end": 108.29000091552734
+            },
+            {
+                "word": "Sicherheit",
+                "start": 108.29000091552734,
+                "end": 108.54000091552734
+            },
+            {
+                "word": "und",
+                "start": 108.54000091552734,
+                "end": 108.79000091552734
+            },
+            {
+                "word": "Risikomanagement",
+                "start": 108.79000091552734,
+                "end": 109.04000091552734
+            },
+            {
+                "word": "des",
                 "start": 108.04000091552734,
                 "end": 108.31999969482422
             },
             {
-                "word": "Internationalen",
+                "word": "Flughafens.",
                 "start": 108.31999969482422,
-                "end": 109.45999908447266
-            },
-            {
-                "word": "Zivil-Luftfahrt-Organisation",
-                "start": 109.45999908447266,
-                "end": 110.24000244140625
+                "end": 108.56999969482422
             }
         ],
-        "translationEn": "According to a study by the International Civil Aviation Organization",
-        "translationVi": "Theo một nghiên cứu của Tổ chức Hàng không Dân dụng Quốc tế"
+        "translationEn": "Thibaut Jung heads the Security and Risk Management department of the airport.",
+        "translationVi": "Thibaut Jung phụ trách bộ phận An ninh và Quản lý Rủi ro của sân bay."
     },
     {
-        "text": "kommen über die Hälfte aller Opfer bei solchen Abstürzen ums Leben.",
-        "start": 111.13999786376954,
-        "end": 115.8,
+        "text": "Nantes liegt an der Loire, grenzt an die Loire-Mündung sowie an den Grand Lieu See.",
+        "start": 108.56999969482422,
+        "end": 114.47000122070312,
         "wordTimings": [
             {
-                "word": "kommen",
-                "start": 111.13999786376954,
-                "end": 111.91999816894531
+                "word": "Nantes",
+                "start": 108.56999969482422,
+                "end": 108.81999969482422
             },
             {
-                "word": "über",
-                "start": 111.91999816894531,
-                "end": 112.13999938964844
+                "word": "liegt",
+                "start": 108.81999969482422,
+                "end": 109.06999969482422
+            },
+            {
+                "word": "an",
+                "start": 109.06999969482422,
+                "end": 109.31999969482422
+            },
+            {
+                "word": "der",
+                "start": 109.31999969482422,
+                "end": 109.56999969482422
+            },
+            {
+                "word": "Loire,",
+                "start": 109.56999969482422,
+                "end": 109.81999969482422
+            },
+            {
+                "word": "grenzt",
+                "start": 109.81999969482422,
+                "end": 110.06999969482422
+            },
+            {
+                "word": "an",
+                "start": 110.06999969482422,
+                "end": 110.31999969482422
             },
             {
                 "word": "die",
@@ -1484,78 +1144,73 @@
                 "end": 112.72000122070312
             },
             {
-                "word": "Hälfte",
+                "word": "Loire-Mündung",
                 "start": 112.72000122070312,
-                "end": 112.72000122070312
+                "end": 112.97000122070312
             },
             {
-                "word": "aller",
-                "start": 112.72000122070312,
-                "end": 113.16000366210938
+                "word": "sowie",
+                "start": 112.97000122070312,
+                "end": 113.22000122070312
             },
             {
-                "word": "Opfer",
-                "start": 113.16000366210938,
-                "end": 113.44000244140625
+                "word": "an",
+                "start": 113.22000122070312,
+                "end": 113.47000122070312
             },
             {
-                "word": "bei",
-                "start": 113.44000244140625,
-                "end": 113.69999694824219
+                "word": "den",
+                "start": 113.47000122070312,
+                "end": 113.72000122070312
             },
             {
-                "word": "solchen",
-                "start": 113.69999694824219,
-                "end": 114.08000183105469
+                "word": "Grand",
+                "start": 113.72000122070312,
+                "end": 113.97000122070312
             },
             {
-                "word": "Abstürzen",
-                "start": 114.08000183105469,
-                "end": 114.69999694824219
+                "word": "Lieu",
+                "start": 113.97000122070312,
+                "end": 114.22000122070312
             },
             {
-                "word": "ums",
-                "start": 114.69999694824219,
-                "end": 115.5
-            },
-            {
-                "word": "Leben.",
-                "start": 115.5,
-                "end": 115.8
+                "word": "See.",
+                "start": 114.22000122070312,
+                "end": 114.47000122070312
             }
         ],
-        "translationEn": "More than half of all victims die in such crashes.",
-        "translationVi": "Hơn một nửa số nạn nhân trong những vụ tai nạn như vậy thiệt mạng."
+        "translationEn": "Nantes is located on the Loire, bordering the Loire estuary and the Grand Lieu Lake.",
+        "translationVi": "Nantes nằm bên sông Loire, giáp với cửa sông Loire và hồ Grand Lieu."
     },
     {
-        "text": "Besonders kritisch ist die Start- und Landephase.",
-        "start": 116.21999969482422,
-        "end": 119.98000030517578,
+        "text": "Es gibt viele Vögel hier und damit steigt auch das Risiko.",
+        "start": 114.47000122070312,
+        "end": 123.70999908447266,
         "wordTimings": [
             {
-                "word": "Besonders",
-                "start": 116.21999969482422,
-                "end": 116.58000183105469
+                "word": "Es",
+                "start": 114.47000122070312,
+                "end": 114.72000122070312
             },
             {
-                "word": "kritisch",
-                "start": 116.58000183105469,
-                "end": 117.04000091552734
+                "word": "gibt",
+                "start": 114.72000122070312,
+                "end": 114.97000122070312
             },
             {
-                "word": "ist",
-                "start": 117.04000091552734,
-                "end": 117.37999725341797
+                "word": "viele",
+                "start": 114.97000122070312,
+                "end": 115.22000122070312
             },
             {
-                "word": "die",
-                "start": 117.37999725341797,
-                "end": 117.63999938964844
+                "word": "Vögel",
+                "start": 115.22000122070312,
+                "end": 115.47000122070312
             },
             {
-                "word": "Start-",
-                "start": 117.63999938964844,
-                "end": 117.95999908447266
+                "word": "hier",
+                "start": 115.47000122070312,
+                "end": 115.72000122070312
             },
             {
                 "word": "und",
@@ -1563,268 +1218,117 @@
                 "end": 118.72000122070312
             },
             {
-                "word": "Landephase.",
+                "word": "damit",
                 "start": 118.72000122070312,
-                "end": 119.98000030517578
-            }
-        ],
-        "translationEn": "The takeoff and landing phase is particularly critical.",
-        "translationVi": "Giai đoạn cất cánh và hạ cánh là giai đoạn đặc biệt quan trọng."
-    },
-    {
-        "text": "Vögel können die Schaufeln des Triebwerks beschädigen.",
-        "start": 121.91999664306641,
-        "end": 124.99999694824218,
-        "wordTimings": [
-            {
-                "word": "Vögel",
-                "start": 121.91999664306641,
-                "end": 122.0199966430664
+                "end": 118.97000122070312
             },
             {
-                "word": "können",
-                "start": 122.0199966430664,
-                "end": 122.4800033569336
+                "word": "steigt",
+                "start": 118.97000122070312,
+                "end": 119.22000122070312
             },
             {
-                "word": "die",
-                "start": 122.4800033569336,
-                "end": 122.81999969482422
+                "word": "auch",
+                "start": 119.22000122070312,
+                "end": 119.47000122070312
             },
             {
-                "word": "Schaufeln",
-                "start": 122.81999969482422,
-                "end": 123.18000030517578
-            },
-            {
-                "word": "des",
+                "word": "das",
                 "start": 123.18000030517578,
                 "end": 123.45999908447266
             },
             {
-                "word": "Triebwerks",
+                "word": "Risiko.",
                 "start": 123.45999908447266,
-                "end": 124
-            },
-            {
-                "word": "beschädigen.",
-                "start": 124,
-                "end": 124.99999694824218
+                "end": 123.70999908447266
             }
         ],
-        "translationEn": "Birds can damage the engine blades.",
-        "translationVi": "Chim có thể làm hỏng các cánh quạt của động cơ."
+        "translationEn": "There are many birds here, and with that, the risk also increases.",
+        "translationVi": "Có nhiều loài chim ở đây và điều đó cũng làm tăng rủi ro."
     },
     {
-        "text": "Dadurch reißt der Luftstrom am Triebwerk ab,",
-        "start": 124.9999984741211,
-        "end": 127.89999847412109,
+        "text": "Vögel können Flugzeuge vom Himmel holen.",
+        "start": 123.70999908447266,
+        "end": 129.27000427246094,
         "wordTimings": [
             {
-                "word": "Dadurch",
-                "start": 124.9999984741211,
-                "end": 125.41999816894531
+                "word": "Vögel",
+                "start": 123.70999908447266,
+                "end": 123.95999908447266
             },
             {
-                "word": "reißt",
-                "start": 125.41999816894531,
-                "end": 125.80000305175781
+                "word": "können",
+                "start": 123.95999908447266,
+                "end": 124.20999908447266
             },
             {
-                "word": "der",
-                "start": 125.80000305175781,
-                "end": 126
-            },
-            {
-                "word": "Luftstrom",
-                "start": 126,
-                "end": 126.54000091552734
-            },
-            {
-                "word": "am",
-                "start": 126.54000091552734,
-                "end": 126.80000305175781
-            },
-            {
-                "word": "Triebwerk",
-                "start": 126.80000305175781,
-                "end": 127.22000122070312
-            },
-            {
-                "word": "ab,",
-                "start": 127.22000122070312,
-                "end": 127.89999847412109
-            }
-        ],
-        "translationEn": "This causes the airflow to detach from the engine,",
-        "translationVi": "Do đó, dòng không khí bị tách ra khỏi động cơ,"
-    },
-    {
-        "text": "und das Flugzeug verliert an Leistung.",
-        "start": 127.4999984741211,
-        "end": 129.74000244140626,
-        "wordTimings": [
-            {
-                "word": "und",
-                "start": 127.4999984741211,
-                "end": 127.76000213623047
-            },
-            {
-                "word": "das",
-                "start": 127.76000213623047,
-                "end": 128.0399932861328
-            },
-            {
-                "word": "Flugzeug",
+                "word": "Flugzeuge",
                 "start": 128.0399932861328,
                 "end": 128.52000427246094
             },
             {
-                "word": "verliert",
+                "word": "vom",
                 "start": 128.52000427246094,
-                "end": 128.89999389648438
+                "end": 128.77000427246094
             },
             {
-                "word": "an",
-                "start": 128.89999389648438,
-                "end": 129.36000061035156
+                "word": "Himmel",
+                "start": 128.77000427246094,
+                "end": 129.02000427246094
             },
             {
-                "word": "Leistung.",
-                "start": 129.36000061035156,
-                "end": 129.74000244140626
+                "word": "holen.",
+                "start": 129.02000427246094,
+                "end": 129.27000427246094
             }
         ],
-        "translationEn": "and the airplane loses power.",
-        "translationVi": "và máy bay mất sức mạnh."
+        "translationEn": "Birds can bring airplanes down from the sky.",
+        "translationVi": "Chim có thể hạ máy bay xuống từ bầu trời."
     },
     {
-        "text": "Je größer der Vogel, desto größer seine Knochen,",
-        "start": 129.95999755859376,
-        "end": 132.62000732421876,
+        "text": "Laut einer Studie der Internationalen Zivil-Luftfahrt-Organisation kommen über die Hälfte aller Opfer bei solchen Abstürzen ums Leben.",
+        "start": 129.27000427246094,
+        "end": 143.6999969482422,
         "wordTimings": [
             {
-                "word": "Je",
-                "start": 129.95999755859376,
-                "end": 130.10000610351562
+                "word": "Laut",
+                "start": 129.27000427246094,
+                "end": 129.52000427246094
             },
             {
-                "word": "größer",
-                "start": 130.10000610351562,
-                "end": 130.39999389648438
+                "word": "einer",
+                "start": 129.52000427246094,
+                "end": 129.77000427246094
             },
             {
-                "word": "der",
-                "start": 130.39999389648438,
-                "end": 130.66000366210938
-            },
-            {
-                "word": "Vogel,",
-                "start": 130.66000366210938,
-                "end": 131
-            },
-            {
-                "word": "desto",
-                "start": 131.13999938964844,
-                "end": 131.3000030517578
-            },
-            {
-                "word": "größer",
-                "start": 131.3000030517578,
-                "end": 131.66000366210938
-            },
-            {
-                "word": "seine",
-                "start": 131.66000366210938,
-                "end": 131.94000244140625
-            },
-            {
-                "word": "Knochen,",
-                "start": 131.94000244140625,
-                "end": 132.62000732421876
-            }
-        ],
-        "translationEn": "The bigger the bird, the bigger its bones.",
-        "translationVi": "Càng lớn con chim, xương của nó càng lớn."
-    },
-    {
-        "text": "desto größer ist die Gefahr für das Triebwerk.",
-        "start": 132.72000732421876,
-        "end": 134.90000610351564,
-        "wordTimings": [
-            {
-                "word": "desto",
-                "start": 132.72000732421876,
-                "end": 132.8800048828125
-            },
-            {
-                "word": "größer",
-                "start": 132.8800048828125,
-                "end": 133.25999450683594
-            },
-            {
-                "word": "ist",
-                "start": 133.25999450683594,
-                "end": 133.3800048828125
-            },
-            {
-                "word": "die",
+                "word": "Studie",
                 "start": 133.3800048828125,
                 "end": 133.60000610351562
             },
             {
-                "word": "Gefahr",
+                "word": "der",
                 "start": 133.60000610351562,
-                "end": 133.83999633789062
+                "end": 133.85000610351562
             },
             {
-                "word": "für",
-                "start": 133.83999633789062,
-                "end": 134.05999755859375
+                "word": "Internationalen",
+                "start": 133.85000610351562,
+                "end": 134.10000610351562
             },
             {
-                "word": "das",
-                "start": 134.05999755859375,
-                "end": 134.3000030517578
+                "word": "Zivil-Luftfahrt-Organisation",
+                "start": 134.10000610351562,
+                "end": 134.35000610351562
             },
             {
-                "word": "Triebwerk.",
-                "start": 134.3000030517578,
-                "end": 134.90000610351564
-            }
-        ],
-        "translationEn": "the greater the danger to the engine.",
-        "translationVi": "càng lớn thì nguy cơ cho động cơ càng cao."
-    },
-    {
-        "text": "Seit 2017 überwacht Antony Renaud die Start- und Landepiste mit Tucuman auf dem Arm.",
-        "start": 139.12000122070313,
-        "end": 144.43999938964845,
-        "wordTimings": [
-            {
-                "word": "Seit",
-                "start": 139.12000122070313,
-                "end": 139.77999877929688
+                "word": "kommen",
+                "start": 134.35000610351562,
+                "end": 134.60000610351562
             },
             {
-                "word": "2017",
-                "start": 139.77999877929688,
-                "end": 140.33999633789062
-            },
-            {
-                "word": "überwacht",
+                "word": "über",
                 "start": 140.33999633789062,
                 "end": 140.77999877929688
-            },
-            {
-                "word": "Antony",
-                "start": 140.77999877929688,
-                "end": 141.3000030517578
-            },
-            {
-                "word": "Renaud",
-                "start": 141.3000030517578,
-                "end": 141.4600067138672
             },
             {
                 "word": "die",
@@ -1832,92 +1336,161 @@
                 "end": 141.6999969482422
             },
             {
-                "word": "Start-",
+                "word": "Hälfte",
                 "start": 141.6999969482422,
-                "end": 142
+                "end": 141.9499969482422
             },
             {
-                "word": "und",
-                "start": 142.1199951171875,
-                "end": 142.17999267578125
+                "word": "aller",
+                "start": 141.9499969482422,
+                "end": 142.1999969482422
             },
             {
-                "word": "Landepiste",
+                "word": "Opfer",
+                "start": 142.1999969482422,
+                "end": 142.4499969482422
+            },
+            {
+                "word": "bei",
+                "start": 142.4499969482422,
+                "end": 142.6999969482422
+            },
+            {
+                "word": "solchen",
+                "start": 142.6999969482422,
+                "end": 142.9499969482422
+            },
+            {
+                "word": "Abstürzen",
+                "start": 142.9499969482422,
+                "end": 143.1999969482422
+            },
+            {
+                "word": "ums",
+                "start": 143.1999969482422,
+                "end": 143.4499969482422
+            },
+            {
+                "word": "Leben.",
+                "start": 143.4499969482422,
+                "end": 143.6999969482422
+            }
+        ],
+        "translationEn": "According to a study by the International Civil Aviation Organization, more than half of all victims in such crashes die.",
+        "translationVi": "Theo một nghiên cứu của Tổ chức Hàng không Dân dụng Quốc tế, hơn một nửa số nạn nhân trong các vụ tai nạn như vậy đã thiệt mạng."
+    },
+    {
+        "text": "Besonders kritisch ist die Start- und Landephase.",
+        "start": 143.6999969482422,
+        "end": 143.77999877929688,
+        "wordTimings": [
+            {
+                "word": "Besonders",
+                "start": 143.6999969482422,
+                "end": 143.9499969482422
+            },
+            {
+                "word": "kritisch",
+                "start": 143.9499969482422,
+                "end": 144.1999969482422
+            },
+            {
+                "word": "ist",
                 "start": 142.17999267578125,
                 "end": 142.77999877929688
             },
             {
-                "word": "mit",
+                "word": "die",
                 "start": 142.77999877929688,
-                "end": 143.05999755859375
+                "end": 143.02999877929688
             },
             {
-                "word": "Tucuman",
-                "start": 143.05999755859375,
-                "end": 143.44000244140625
+                "word": "Start-",
+                "start": 143.02999877929688,
+                "end": 143.27999877929688
             },
             {
-                "word": "auf",
+                "word": "und",
+                "start": 143.27999877929688,
+                "end": 143.52999877929688
+            },
+            {
+                "word": "Landephase.",
+                "start": 143.52999877929688,
+                "end": 143.77999877929688
+            }
+        ],
+        "translationEn": "The takeoff and landing phase is particularly critical.",
+        "translationVi": "Giai đoạn cất cánh và hạ cánh đặc biệt quan trọng."
+    },
+    {
+        "text": "Vögel können die Schaufeln des Triebwerks beschädigen.",
+        "start": 143.77999877929688,
+        "end": 144.4600067138672,
+        "wordTimings": [
+            {
+                "word": "Vögel",
+                "start": 143.77999877929688,
+                "end": 144.02999877929688
+            },
+            {
+                "word": "können",
+                "start": 144.02999877929688,
+                "end": 144.27999877929688
+            },
+            {
+                "word": "die",
+                "start": 144.27999877929688,
+                "end": 144.52999877929688
+            },
+            {
+                "word": "Schaufeln",
                 "start": 143.44000244140625,
                 "end": 143.72000122070312
             },
             {
-                "word": "dem",
+                "word": "des",
                 "start": 143.72000122070312,
                 "end": 143.9600067138672
             },
             {
-                "word": "Arm.",
+                "word": "Triebwerks",
                 "start": 143.9600067138672,
-                "end": 144.43999938964845
+                "end": 144.2100067138672
+            },
+            {
+                "word": "beschädigen.",
+                "start": 144.2100067138672,
+                "end": 144.4600067138672
             }
         ],
-        "translationEn": "Since 2017, Antony Renaud has been monitoring the runway with Tucuman on his arm.",
-        "translationVi": "Kể từ năm 2017, Antony Renaud giám sát đường băng cất cánh và hạ cánh với Tucuman trên tay."
+        "translationEn": "Birds can damage the engine blades.",
+        "translationVi": "Chim có thể làm hỏng các cánh quạt của động cơ."
     },
     {
-        "text": "Oftmals reicht es aus,",
-        "start": 144.81999816894532,
-        "end": 146.12000732421876,
+        "text": "Dadurch reißt der Luftstrom am Triebwerk ab und das Flugzeug verliert an Leistung.",
+        "start": 144.4600067138672,
+        "end": 148.36000061035156,
         "wordTimings": [
             {
-                "word": "Oftmals",
-                "start": 144.81999816894532,
-                "end": 145.22000122070312
+                "word": "Dadurch",
+                "start": 144.4600067138672,
+                "end": 144.7100067138672
             },
             {
-                "word": "reicht",
-                "start": 145.22000122070312,
-                "end": 145.39999389648438
+                "word": "reißt",
+                "start": 144.7100067138672,
+                "end": 144.9600067138672
             },
             {
-                "word": "es",
-                "start": 145.39999389648438,
-                "end": 145.5399932861328
-            },
-            {
-                "word": "aus,",
-                "start": 145.5399932861328,
-                "end": 146.12000732421876
-            }
-        ],
-        "translationEn": "Often it is enough,",
-        "translationVi": "Thường thì chỉ cần đủ,"
-    },
-    {
-        "text": "wenn er am Fenster sitzt,",
-        "start": 145.81999816894532,
-        "end": 147.2600067138672,
-        "wordTimings": [
-            {
-                "word": "wenn",
-                "start": 145.81999816894532,
-                "end": 145.94000244140625
-            },
-            {
-                "word": "er",
+                "word": "der",
                 "start": 145.94000244140625,
                 "end": 146.0399932861328
+            },
+            {
+                "word": "Luftstrom",
+                "start": 146.0399932861328,
+                "end": 146.2899932861328
             },
             {
                 "word": "am",
@@ -1925,67 +1498,108 @@
                 "end": 146.36000061035156
             },
             {
-                "word": "Fenster",
+                "word": "Triebwerk",
                 "start": 146.36000061035156,
-                "end": 146.63999938964844
+                "end": 146.61000061035156
             },
             {
-                "word": "sitzt,",
-                "start": 146.63999938964844,
-                "end": 147.2600067138672
+                "word": "ab",
+                "start": 146.61000061035156,
+                "end": 146.86000061035156
+            },
+            {
+                "word": "und",
+                "start": 146.86000061035156,
+                "end": 147.11000061035156
+            },
+            {
+                "word": "das",
+                "start": 147.11000061035156,
+                "end": 147.36000061035156
+            },
+            {
+                "word": "Flugzeug",
+                "start": 147.36000061035156,
+                "end": 147.61000061035156
+            },
+            {
+                "word": "verliert",
+                "start": 147.61000061035156,
+                "end": 147.86000061035156
+            },
+            {
+                "word": "an",
+                "start": 147.86000061035156,
+                "end": 148.11000061035156
+            },
+            {
+                "word": "Leistung.",
+                "start": 148.11000061035156,
+                "end": 148.36000061035156
             }
         ],
-        "translationEn": "when he sits by the window,",
-        "translationVi": "khi anh ấy ngồi bên cửa sổ,"
+        "translationEn": "This causes the airflow to detach from the engine, and the aircraft loses power.",
+        "translationVi": "Do đó, dòng không khí bị tách ra khỏi động cơ và máy bay mất sức mạnh."
     },
     {
-        "text": "um andere Vögel zu verscheuchen.",
-        "start": 147.0199951171875,
-        "end": 149.05999450683595,
+        "text": "Je größer der Vogel, desto größer seine Knochen, desto größer ist die Gefahr für das Triebwerk.",
+        "start": 148.36000061035156,
+        "end": 151.44000244140625,
         "wordTimings": [
             {
-                "word": "um",
-                "start": 147.0199951171875,
-                "end": 147.25999450683594
+                "word": "Je",
+                "start": 148.36000061035156,
+                "end": 148.61000061035156
             },
             {
-                "word": "andere",
+                "word": "größer",
+                "start": 148.61000061035156,
+                "end": 148.86000061035156
+            },
+            {
+                "word": "der",
                 "start": 147.25999450683594,
                 "end": 147.63999938964844
             },
             {
-                "word": "Vögel",
+                "word": "Vogel,",
                 "start": 147.63999938964844,
                 "end": 147.8800048828125
             },
             {
-                "word": "zu",
+                "word": "desto",
                 "start": 147.8800048828125,
-                "end": 148.13999938964844
+                "end": 148.1300048828125
             },
             {
-                "word": "verscheuchen.",
-                "start": 148.13999938964844,
-                "end": 149.05999450683595
-            }
-        ],
-        "translationEn": "to scare away other birds.",
-        "translationVi": "để xua đuổi những con chim khác."
-    },
-    {
-        "text": "Seitdem wir die Raubvögel einsetzen,",
-        "start": 149.42000427246094,
-        "end": 151.8800018310547,
-        "wordTimings": [
-            {
-                "word": "Seitdem",
-                "start": 149.42000427246094,
-                "end": 150.0800018310547
+                "word": "größer",
+                "start": 148.1300048828125,
+                "end": 148.3800048828125
             },
             {
-                "word": "wir",
-                "start": 150.0800018310547,
-                "end": 150.1999969482422
+                "word": "seine",
+                "start": 148.3800048828125,
+                "end": 148.6300048828125
+            },
+            {
+                "word": "Knochen,",
+                "start": 148.6300048828125,
+                "end": 148.8800048828125
+            },
+            {
+                "word": "desto",
+                "start": 148.8800048828125,
+                "end": 149.1300048828125
+            },
+            {
+                "word": "größer",
+                "start": 149.1300048828125,
+                "end": 149.3800048828125
+            },
+            {
+                "word": "ist",
+                "start": 149.3800048828125,
+                "end": 149.6300048828125
             },
             {
                 "word": "die",
@@ -1993,33 +1607,58 @@
                 "end": 150.44000244140625
             },
             {
-                "word": "Raubvögel",
+                "word": "Gefahr",
                 "start": 150.44000244140625,
+                "end": 150.69000244140625
+            },
+            {
+                "word": "für",
+                "start": 150.69000244140625,
                 "end": 150.94000244140625
             },
             {
-                "word": "einsetzen,",
+                "word": "das",
                 "start": 150.94000244140625,
-                "end": 151.8800018310547
-            }
-        ],
-        "translationEn": "Since we started using the birds of prey,",
-        "translationVi": "Kể từ khi chúng tôi sử dụng chim săn mồi,"
-    },
-    {
-        "text": "haben sich die Zwischenfälle fast um die Hälfte verringert.",
-        "start": 151.7800048828125,
-        "end": 154.54000549316407,
-        "wordTimings": [
-            {
-                "word": "haben",
-                "start": 151.7800048828125,
-                "end": 151.89999389648438
+                "end": 151.19000244140625
             },
             {
-                "word": "sich",
-                "start": 151.89999389648438,
-                "end": 152.0800018310547
+                "word": "Triebwerk.",
+                "start": 151.19000244140625,
+                "end": 151.44000244140625
+            }
+        ],
+        "translationEn": "The larger the bird, the larger its bones, the greater the danger to the engine.",
+        "translationVi": "Càng lớn chim, xương càng lớn, nguy cơ cho động cơ càng cao."
+    },
+    {
+        "text": "Seit 2017 überwacht Antony Renaud die Start- und Landepiste mit Tucuman auf dem Arm.",
+        "start": 151.44000244140625,
+        "end": 163.85000610351562,
+        "wordTimings": [
+            {
+                "word": "Seit",
+                "start": 151.44000244140625,
+                "end": 151.69000244140625
+            },
+            {
+                "word": "2017",
+                "start": 151.69000244140625,
+                "end": 151.94000244140625
+            },
+            {
+                "word": "überwacht",
+                "start": 151.94000244140625,
+                "end": 152.19000244140625
+            },
+            {
+                "word": "Antony",
+                "start": 152.19000244140625,
+                "end": 152.44000244140625
+            },
+            {
+                "word": "Renaud",
+                "start": 152.44000244140625,
+                "end": 152.69000244140625
             },
             {
                 "word": "die",
@@ -2027,200 +1666,108 @@
                 "end": 152.3000030517578
             },
             {
-                "word": "Zwischenfälle",
+                "word": "Start-",
                 "start": 152.3000030517578,
-                "end": 152.82000732421875
+                "end": 152.5500030517578
             },
             {
-                "word": "fast",
-                "start": 152.82000732421875,
-                "end": 153.17999267578125
-            },
-            {
-                "word": "um",
-                "start": 153.17999267578125,
-                "end": 153.33999633789062
-            },
-            {
-                "word": "die",
-                "start": 153.33999633789062,
-                "end": 153.6199951171875
-            },
-            {
-                "word": "Hälfte",
-                "start": 153.6199951171875,
-                "end": 153.75999450683594
-            },
-            {
-                "word": "verringert.",
-                "start": 153.75999450683594,
-                "end": 154.54000549316407
-            }
-        ],
-        "translationEn": "the incidents have decreased by almost half.",
-        "translationVi": "các sự cố đã giảm gần một nửa."
-    },
-    {
-        "text": "Die Zahl an Vögeln rund um die Landebahn ging stark zurück.",
-        "start": 154.87999572753907,
-        "end": 158.4199951171875,
-        "wordTimings": [
-            {
-                "word": "Die",
-                "start": 154.87999572753907,
-                "end": 155.10000610351562
-            },
-            {
-                "word": "Zahl",
-                "start": 155.10000610351562,
-                "end": 155.3000030517578
-            },
-            {
-                "word": "an",
-                "start": 155.3000030517578,
-                "end": 155.6999969482422
-            },
-            {
-                "word": "Vögeln",
-                "start": 155.6999969482422,
-                "end": 155.89999389648438
-            },
-            {
-                "word": "rund",
+                "word": "und",
                 "start": 155.89999389648438,
                 "end": 156.25999450683594
             },
             {
-                "word": "um",
-                "start": 156.25999450683594,
-                "end": 156.3800048828125
-            },
-            {
-                "word": "die",
-                "start": 156.3800048828125,
-                "end": 156.66000366210938
-            },
-            {
-                "word": "Landebahn",
-                "start": 156.66000366210938,
-                "end": 157.0399932861328
-            },
-            {
-                "word": "ging",
-                "start": 157.0399932861328,
-                "end": 157.25999450683594
-            },
-            {
-                "word": "stark",
-                "start": 157.25999450683594,
-                "end": 157.72000122070312
-            },
-            {
-                "word": "zurück.",
-                "start": 157.72000122070312,
-                "end": 158.4199951171875
-            }
-        ],
-        "translationEn": "The number of birds around the runway decreased significantly.",
-        "translationVi": "Số lượng chim xung quanh đường băng đã giảm mạnh."
-    },
-    {
-        "text": "Das nahegelegene Naturreservat Lac de Grand Lieu",
-        "start": 159.31999816894532,
-        "end": 162.35999755859376,
-        "wordTimings": [
-            {
-                "word": "Das",
-                "start": 159.31999816894532,
-                "end": 159.4199981689453
-            },
-            {
-                "word": "nahegelegene",
-                "start": 159.4199981689453,
-                "end": 160.1999969482422
-            },
-            {
-                "word": "Naturreservat",
-                "start": 160.1999969482422,
-                "end": 161.3000030517578
-            },
-            {
-                "word": "Lac",
-                "start": 161.3000030517578,
-                "end": 161.55999755859375
-            },
-            {
-                "word": "de",
-                "start": 161.55999755859375,
-                "end": 161.75999450683594
-            },
-            {
-                "word": "Grand",
-                "start": 161.75999450683594,
-                "end": 161.94000244140625
-            },
-            {
-                "word": "Lieu",
-                "start": 161.94000244140625,
-                "end": 162.35999755859376
-            }
-        ],
-        "translationEn": "The nearby nature reserve Lac de Grand Lieu",
-        "translationVi": "Khu bảo tồn thiên nhiên gần đó Lac de Grand Lieu"
-    },
-    {
-        "text": "ist ein Feuchtgebiet von rund 60 Quadratmetern.",
-        "start": 161.95999755859376,
-        "end": 164.8800018310547,
-        "wordTimings": [
-            {
-                "word": "ist",
-                "start": 161.95999755859376,
+                "word": "Landepiste",
+                "start": 162.05999755859375,
                 "end": 162.60000610351562
             },
             {
-                "word": "ein",
+                "word": "mit",
                 "start": 162.60000610351562,
-                "end": 162.86000061035156
+                "end": 162.85000610351562
             },
             {
-                "word": "Feuchtgebiet",
-                "start": 162.86000061035156,
-                "end": 163.5
+                "word": "Tucuman",
+                "start": 162.85000610351562,
+                "end": 163.10000610351562
             },
             {
-                "word": "von",
-                "start": 163.5,
-                "end": 163.67999267578125
+                "word": "auf",
+                "start": 163.10000610351562,
+                "end": 163.35000610351562
             },
             {
-                "word": "rund",
-                "start": 163.67999267578125,
-                "end": 163.89999389648438
+                "word": "dem",
+                "start": 163.35000610351562,
+                "end": 163.60000610351562
             },
             {
-                "word": "60",
-                "start": 163.89999389648438,
-                "end": 164.5800018310547
-            },
-            {
-                "word": "Quadratmetern.",
-                "start": 164.5800018310547,
-                "end": 164.8800018310547
+                "word": "Arm.",
+                "start": 163.60000610351562,
+                "end": 163.85000610351562
             }
         ],
-        "translationEn": "is a wetland of about 60 square meters.",
-        "translationVi": "là một vùng đất ngập nước khoảng 60 mét vuông."
+        "translationEn": "Since 2017, Antony Renaud has been monitoring the runway with Tucuman on his arm.",
+        "translationVi": "Kể từ năm 2017, Antony Renaud đã giám sát đường băng cất cánh và hạ cánh với Tucuman trên tay."
     },
     {
-        "text": "Unzählige Vögel nisten und überwintern hier.",
-        "start": 166.14000549316407,
-        "end": 169.8,
+        "text": "Oftmals reicht es aus, wenn er am Fenster sitzt, um andere Vögel zu verscheuchen.",
+        "start": 163.85000610351562,
+        "end": 173.1300048828125,
         "wordTimings": [
             {
-                "word": "Unzählige",
-                "start": 166.14000549316407,
-                "end": 167.16000366210938
+                "word": "Oftmals",
+                "start": 163.85000610351562,
+                "end": 164.10000610351562
+            },
+            {
+                "word": "reicht",
+                "start": 164.10000610351562,
+                "end": 164.35000610351562
+            },
+            {
+                "word": "es",
+                "start": 164.35000610351562,
+                "end": 164.60000610351562
+            },
+            {
+                "word": "aus,",
+                "start": 164.60000610351562,
+                "end": 164.85000610351562
+            },
+            {
+                "word": "wenn",
+                "start": 164.85000610351562,
+                "end": 165.10000610351562
+            },
+            {
+                "word": "er",
+                "start": 165.10000610351562,
+                "end": 165.35000610351562
+            },
+            {
+                "word": "am",
+                "start": 165.35000610351562,
+                "end": 165.60000610351562
+            },
+            {
+                "word": "Fenster",
+                "start": 165.60000610351562,
+                "end": 165.85000610351562
+            },
+            {
+                "word": "sitzt,",
+                "start": 165.85000610351562,
+                "end": 166.10000610351562
+            },
+            {
+                "word": "um",
+                "start": 166.10000610351562,
+                "end": 166.35000610351562
+            },
+            {
+                "word": "andere",
+                "start": 166.35000610351562,
+                "end": 166.60000610351562
             },
             {
                 "word": "Vögel",
@@ -2228,307 +1775,201 @@
                 "end": 167.44000244140625
             },
             {
-                "word": "nisten",
-                "start": 167.44000244140625,
-                "end": 167.86000061035156
-            },
-            {
-                "word": "und",
-                "start": 167.86000061035156,
-                "end": 168.1999969482422
-            },
-            {
-                "word": "überwintern",
-                "start": 168.1999969482422,
-                "end": 168.6999969482422
-            },
-            {
-                "word": "hier.",
-                "start": 168.6999969482422,
-                "end": 169.8
-            }
-        ],
-        "translationEn": "Countless birds nest and winter here.",
-        "translationVi": "Vô số loài chim làm tổ và trú đông ở đây."
-    },
-    {
-        "text": "Die Flugschneise vom und zum Flughafen Nantes",
-        "start": 171.0999969482422,
-        "end": 173.97999267578126,
-        "wordTimings": [
-            {
-                "word": "Die",
-                "start": 171.0999969482422,
-                "end": 171.32000732421875
-            },
-            {
-                "word": "Flugschneise",
-                "start": 171.32000732421875,
-                "end": 171.94000244140625
-            },
-            {
-                "word": "vom",
-                "start": 171.94000244140625,
-                "end": 172.16000366210938
-            },
-            {
-                "word": "und",
-                "start": 172.16000366210938,
-                "end": 172.55999755859375
-            },
-            {
-                "word": "zum",
+                "word": "zu",
                 "start": 172.55999755859375,
                 "end": 172.8800048828125
             },
             {
-                "word": "Flughafen",
+                "word": "verscheuchen.",
                 "start": 172.8800048828125,
-                "end": 173.33999633789062
-            },
-            {
-                "word": "Nantes",
-                "start": 173.33999633789062,
-                "end": 173.97999267578126
+                "end": 173.1300048828125
             }
         ],
-        "translationEn": "The flight path to and from Nantes Airport.",
-        "translationVi": "Lối bay từ và đến sân bay Nantes"
+        "translationEn": "Often, it is enough for him to sit by the window to scare away other birds.",
+        "translationVi": "Thường thì chỉ cần anh ấy ngồi bên cửa sổ là đủ để đuổi những con chim khác đi."
     },
     {
-        "text": "verläuft direkt über dem See.",
-        "start": 173.57999267578126,
-        "end": 176.1999938964844,
+        "text": "Seitdem wir die Raubvögel einsetzen, haben sich die Zwischenfälle fast um die Hälfte verringert.",
+        "start": 175.1199951171875,
+        "end": 182.85000610351562,
         "wordTimings": [
             {
-                "word": "verläuft",
-                "start": 173.57999267578126,
-                "end": 174.3000030517578
-            },
-            {
-                "word": "direkt",
-                "start": 174.3000030517578,
-                "end": 174.8800048828125
-            },
-            {
-                "word": "über",
-                "start": 174.8800048828125,
-                "end": 175.1199951171875
-            },
-            {
-                "word": "dem",
+                "word": "Seitdem",
                 "start": 175.1199951171875,
                 "end": 175.44000244140625
             },
             {
-                "word": "See.",
+                "word": "wir",
                 "start": 175.44000244140625,
-                "end": 176.1999938964844
-            }
-        ],
-        "translationEn": "runs directly over the lake.",
-        "translationVi": "chạy thẳng qua hồ."
-    },
-    {
-        "text": "Dieses Reservat hat in Europa große Bedeutung",
-        "start": 179.70000305175782,
-        "end": 182.83999328613282,
-        "wordTimings": [
+                "end": 175.69000244140625
+            },
             {
-                "word": "Dieses",
-                "start": 179.70000305175782,
+                "word": "die",
+                "start": 179.8000030517578,
                 "end": 180.10000610351562
             },
             {
-                "word": "Reservat",
+                "word": "Raubvögel",
                 "start": 180.10000610351562,
-                "end": 180.6999969482422
+                "end": 180.35000610351562
             },
             {
-                "word": "hat",
-                "start": 180.6999969482422,
-                "end": 180.86000061035156
+                "word": "einsetzen,",
+                "start": 180.35000610351562,
+                "end": 180.60000610351562
             },
             {
-                "word": "in",
+                "word": "haben",
+                "start": 180.60000610351562,
+                "end": 180.85000610351562
+            },
+            {
+                "word": "sich",
+                "start": 180.85000610351562,
+                "end": 181.10000610351562
+            },
+            {
+                "word": "die",
+                "start": 181.10000610351562,
+                "end": 181.35000610351562
+            },
+            {
+                "word": "Zwischenfälle",
+                "start": 181.35000610351562,
+                "end": 181.60000610351562
+            },
+            {
+                "word": "fast",
+                "start": 181.60000610351562,
+                "end": 181.85000610351562
+            },
+            {
+                "word": "um",
+                "start": 181.85000610351562,
+                "end": 182.10000610351562
+            },
+            {
+                "word": "die",
+                "start": 182.10000610351562,
+                "end": 182.35000610351562
+            },
+            {
+                "word": "Hälfte",
+                "start": 182.35000610351562,
+                "end": 182.60000610351562
+            },
+            {
+                "word": "verringert.",
+                "start": 182.60000610351562,
+                "end": 182.85000610351562
+            }
+        ],
+        "translationEn": "Since we started using the birds of prey, incidents have decreased by almost half.",
+        "translationVi": "Kể từ khi chúng tôi sử dụng chim săn mồi, các sự cố đã giảm gần một nửa."
+    },
+    {
+        "text": "Die Zahl an Vögeln rund um die Landebahn ging stark zurück.",
+        "start": 182.85000610351562,
+        "end": 184.89999389648438,
+        "wordTimings": [
+            {
+                "word": "Die",
+                "start": 182.85000610351562,
+                "end": 183.10000610351562
+            },
+            {
+                "word": "Zahl",
+                "start": 183.10000610351562,
+                "end": 183.35000610351562
+            },
+            {
+                "word": "an",
                 "start": 180.86000061035156,
                 "end": 181.02000427246094
             },
             {
-                "word": "Europa",
+                "word": "Vögeln",
                 "start": 181.02000427246094,
-                "end": 181.5
+                "end": 181.27000427246094
             },
             {
-                "word": "große",
-                "start": 181.5,
-                "end": 181.97999572753906
-            },
-            {
-                "word": "Bedeutung",
-                "start": 181.97999572753906,
-                "end": 182.83999328613282
-            }
-        ],
-        "translationEn": "This reserve is of great importance in Europe.",
-        "translationVi": "Khu bảo tồn này có ý nghĩa lớn ở châu Âu."
-    },
-    {
-        "text": "für Zug- und Wasservögel auf ihrer sogenannten Ostatlantikroute.",
-        "start": 182.43999328613282,
-        "end": 186.82000427246095,
-        "wordTimings": [
-            {
-                "word": "für",
-                "start": 182.43999328613282,
-                "end": 182.83999633789062
-            },
-            {
-                "word": "Zug-",
-                "start": 182.83999633789062,
-                "end": 183.22000122070312
-            },
-            {
-                "word": "und",
+                "word": "rund",
                 "start": 183.32000732421875,
                 "end": 183.39999389648438
             },
             {
-                "word": "Wasservögel",
+                "word": "um",
                 "start": 183.39999389648438,
-                "end": 184.05999755859375
+                "end": 183.64999389648438
             },
             {
-                "word": "auf",
-                "start": 184.05999755859375,
-                "end": 184.5800018310547
+                "word": "die",
+                "start": 183.64999389648438,
+                "end": 183.89999389648438
             },
             {
-                "word": "ihrer",
-                "start": 184.5800018310547,
-                "end": 184.77999877929688
+                "word": "Landebahn",
+                "start": 183.89999389648438,
+                "end": 184.14999389648438
             },
             {
-                "word": "sogenannten",
-                "start": 184.77999877929688,
-                "end": 185.4600067138672
+                "word": "ging",
+                "start": 184.14999389648438,
+                "end": 184.39999389648438
             },
             {
-                "word": "Ostatlantikroute.",
-                "start": 185.4600067138672,
-                "end": 186.82000427246095
+                "word": "stark",
+                "start": 184.39999389648438,
+                "end": 184.64999389648438
+            },
+            {
+                "word": "zurück.",
+                "start": 184.64999389648438,
+                "end": 184.89999389648438
             }
         ],
-        "translationEn": "for migratory and water birds on their so-called East Atlantic route.",
-        "translationVi": "cho các loài chim di cư và chim nước trên con đường Đông Đại Tây Dương của chúng."
+        "translationEn": "The number of birds around the runway decreased significantly.",
+        "translationVi": "Số lượng chim quanh đường băng đã giảm mạnh."
     },
     {
-        "text": "20 Kilometer weiter westlich der Atlantik.",
-        "start": 187.5999969482422,
-        "end": 191.04000549316407,
+        "text": "Das nahegelegene Naturreservat Lac de Grand Lieu ist ein Feuchtgebiet von rund 60 Quadratmetern.",
+        "start": 184.89999389648438,
+        "end": 200.32000732421875,
         "wordTimings": [
             {
-                "word": "20",
-                "start": 187.5999969482422,
-                "end": 188.1199951171875
+                "word": "Das",
+                "start": 184.89999389648438,
+                "end": 185.14999389648438
             },
             {
-                "word": "Kilometer",
-                "start": 188.1199951171875,
-                "end": 188.66000366210938
+                "word": "nahegelegene",
+                "start": 185.14999389648438,
+                "end": 185.39999389648438
             },
             {
-                "word": "weiter",
-                "start": 188.66000366210938,
-                "end": 189.13999938964844
+                "word": "Naturreservat",
+                "start": 185.39999389648438,
+                "end": 185.64999389648438
             },
             {
-                "word": "westlich",
-                "start": 189.13999938964844,
-                "end": 189.5800018310547
+                "word": "Lac",
+                "start": 185.64999389648438,
+                "end": 185.89999389648438
             },
             {
-                "word": "der",
+                "word": "de",
                 "start": 189.8800048828125,
                 "end": 190.05999755859375
             },
             {
-                "word": "Atlantik.",
+                "word": "Grand",
                 "start": 190.05999755859375,
-                "end": 191.04000549316407
-            }
-        ],
-        "translationEn": "20 kilometers further west is the Atlantic.",
-        "translationVi": "20 kilomet phía tây là đại Tây Dương."
-    },
-    {
-        "text": "Hier bei Saint Nazaire mündet die Loire in den Ozean.",
-        "start": 190.64000549316407,
-        "end": 194.60000305175782,
-        "wordTimings": [
-            {
-                "word": "Hier",
-                "start": 190.64000549316407,
-                "end": 191.39999389648438
+                "end": 190.30999755859375
             },
             {
-                "word": "bei",
-                "start": 191.39999389648438,
-                "end": 191.77999877929688
-            },
-            {
-                "word": "Saint",
-                "start": 191.77999877929688,
-                "end": 192.02000427246094
-            },
-            {
-                "word": "Nazaire",
-                "start": 192.02000427246094,
-                "end": 192.32000732421875
-            },
-            {
-                "word": "mündet",
-                "start": 192.32000732421875,
-                "end": 192.77999877929688
-            },
-            {
-                "word": "die",
-                "start": 192.77999877929688,
-                "end": 193.0800018310547
-            },
-            {
-                "word": "Loire",
-                "start": 193.0800018310547,
-                "end": 193.33999633789062
-            },
-            {
-                "word": "in",
-                "start": 193.33999633789062,
-                "end": 193.5800018310547
-            },
-            {
-                "word": "den",
-                "start": 193.5800018310547,
-                "end": 193.82000732421875
-            },
-            {
-                "word": "Ozean.",
-                "start": 193.82000732421875,
-                "end": 194.60000305175782
-            }
-        ],
-        "translationEn": "Here at Saint Nazaire, the Loire flows into the ocean.",
-        "translationVi": "Tại đây ở Saint Nazaire, sông Loire đổ ra đại dương."
-    },
-    {
-        "text": "Es ist ein Ökosystem von Wasserflächen,",
-        "start": 194.95999755859376,
-        "end": 197.4199951171875,
-        "wordTimings": [
-            {
-                "word": "Es",
-                "start": 194.95999755859376,
-                "end": 195.13999938964844
+                "word": "Lieu",
+                "start": 190.30999755859375,
+                "end": 190.55999755859375
             },
             {
                 "word": "ist",
@@ -2541,9 +1982,9 @@
                 "end": 195.63999938964844
             },
             {
-                "word": "Ökosystem",
+                "word": "Feuchtgebiet",
                 "start": 195.63999938964844,
-                "end": 196.24000549316406
+                "end": 195.88999938964844
             },
             {
                 "word": "von",
@@ -2551,170 +1992,82 @@
                 "end": 196.60000610351562
             },
             {
-                "word": "Wasserflächen,",
-                "start": 196.60000610351562,
-                "end": 197.4199951171875
-            }
-        ],
-        "translationEn": "It is an ecosystem of water bodies,",
-        "translationVi": "Đó là một hệ sinh thái của các vùng nước,"
-    },
-    {
-        "text": "das auch den Zugvögeln Sibiriens und Nordeuropas reichlich Nahrung bietet.",
-        "start": 197.4800018310547,
-        "end": 202.2600067138672,
-        "wordTimings": [
-            {
-                "word": "das",
-                "start": 197.4800018310547,
-                "end": 197.67999267578125
-            },
-            {
-                "word": "auch",
-                "start": 197.67999267578125,
-                "end": 197.89999389648438
-            },
-            {
-                "word": "den",
-                "start": 197.89999389648438,
-                "end": 198.3000030517578
-            },
-            {
-                "word": "Zugvögeln",
-                "start": 198.3000030517578,
-                "end": 198.82000732421875
-            },
-            {
-                "word": "Sibiriens",
-                "start": 198.82000732421875,
-                "end": 199.60000610351562
-            },
-            {
-                "word": "und",
+                "word": "rund",
                 "start": 199.60000610351562,
                 "end": 199.82000732421875
             },
             {
-                "word": "Nordeuropas",
+                "word": "60",
                 "start": 199.82000732421875,
-                "end": 200.5
+                "end": 200.07000732421875
             },
             {
-                "word": "reichlich",
-                "start": 200.5,
-                "end": 201.13999938964844
-            },
-            {
-                "word": "Nahrung",
-                "start": 201.13999938964844,
-                "end": 201.5800018310547
-            },
-            {
-                "word": "bietet.",
-                "start": 201.5800018310547,
-                "end": 202.2600067138672
+                "word": "Quadratmetern.",
+                "start": 200.07000732421875,
+                "end": 200.32000732421875
             }
         ],
-        "translationEn": "which also provides plenty of food for the migratory birds of Siberia and Northern Europe.",
-        "translationVi": "cũng cung cấp thức ăn dồi dào cho các loài chim di cư của Siberia và Bắc Âu."
+        "translationEn": "The nearby nature reserve Lac de Grand Lieu is a wetland of about 60 square meters.",
+        "translationVi": "Khu bảo tồn thiên nhiên gần đó Lac de Grand Lieu là một vùng đất ngập nước rộng khoảng 60 mét vuông."
     },
     {
-        "text": "Und wenn es den Seemöwen hier zu kalt wird,",
-        "start": 202.62000122070313,
-        "end": 205.3800018310547,
+        "text": "Unzählige Vögel nisten und überwintern hier.",
+        "start": 200.32000732421875,
+        "end": 204.39999389648438,
         "wordTimings": [
             {
-                "word": "Und",
-                "start": 202.62000122070313,
+                "word": "Unzählige",
+                "start": 200.32000732421875,
+                "end": 200.57000732421875
+            },
+            {
+                "word": "Vögel",
+                "start": 200.57000732421875,
+                "end": 200.82000732421875
+            },
+            {
+                "word": "nisten",
+                "start": 200.82000732421875,
+                "end": 201.07000732421875
+            },
+            {
+                "word": "und",
+                "start": 202.72000122070312,
                 "end": 203.10000610351562
             },
             {
-                "word": "wenn",
+                "word": "überwintern",
                 "start": 203.10000610351562,
-                "end": 203.17999267578125
+                "end": 203.35000610351562
             },
             {
-                "word": "es",
-                "start": 203.17999267578125,
-                "end": 203.36000061035156
-            },
-            {
-                "word": "den",
-                "start": 203.36000061035156,
-                "end": 203.77999877929688
-            },
-            {
-                "word": "Seemöwen",
-                "start": 203.77999877929688,
-                "end": 204.05999755859375
-            },
-            {
-                "word": "hier",
+                "word": "hier.",
                 "start": 204.05999755859375,
                 "end": 204.39999389648438
-            },
-            {
-                "word": "zu",
-                "start": 204.39999389648438,
-                "end": 204.8000030517578
-            },
-            {
-                "word": "kalt",
-                "start": 204.8000030517578,
-                "end": 204.8000030517578
-            },
-            {
-                "word": "wird,",
-                "start": 204.8000030517578,
-                "end": 205.3800018310547
             }
         ],
-        "translationEn": "And when it gets too cold for the seagulls here,",
-        "translationVi": "Và khi những con hải âu ở đây cảm thấy lạnh quá,"
+        "translationEn": "Countless birds nest and winter here.",
+        "translationVi": "Vô số loài chim làm tổ và trú đông ở đây."
     },
     {
-        "text": "fliegen sie auch gerne landeinwärts.",
-        "start": 205.4800018310547,
-        "end": 207.62000732421876,
+        "text": "Die Flugschneise vom und zum Flughafen Nantes verläuft direkt über dem See.",
+        "start": 205.5800018310547,
+        "end": 213.0399932861328,
         "wordTimings": [
             {
-                "word": "fliegen",
-                "start": 205.4800018310547,
-                "end": 205.5800018310547
-            },
-            {
-                "word": "sie",
+                "word": "Die",
                 "start": 205.5800018310547,
                 "end": 205.8000030517578
             },
             {
-                "word": "auch",
+                "word": "Flugschneise",
                 "start": 205.8000030517578,
-                "end": 206.0399932861328
+                "end": 206.0500030517578
             },
             {
-                "word": "gerne",
-                "start": 206.0399932861328,
-                "end": 206.27999877929688
-            },
-            {
-                "word": "landeinwärts.",
-                "start": 206.27999877929688,
-                "end": 207.62000732421876
-            }
-        ],
-        "translationEn": "Do you also like to fly inland?",
-        "translationVi": "Bạn có thích bay vào đất liền không?"
-    },
-    {
-        "text": "Möwen und Seemöwen übernachten insbesondere im Winter gerne am Grand Lieu See.",
-        "start": 208.53999938964844,
-        "end": 213.33999328613282,
-        "wordTimings": [
-            {
-                "word": "Möwen",
-                "start": 208.53999938964844,
-                "end": 208.94000244140625
+                "word": "vom",
+                "start": 206.0500030517578,
+                "end": 206.3000030517578
             },
             {
                 "word": "und",
@@ -2722,147 +2075,157 @@
                 "end": 209.3000030517578
             },
             {
-                "word": "Seemöwen",
+                "word": "zum",
                 "start": 209.3000030517578,
-                "end": 209.8800048828125
+                "end": 209.5500030517578
             },
             {
-                "word": "übernachten",
+                "word": "Flughafen",
+                "start": 209.5500030517578,
+                "end": 209.8000030517578
+            },
+            {
+                "word": "Nantes",
+                "start": 209.8000030517578,
+                "end": 210.0500030517578
+            },
+            {
+                "word": "verläuft",
+                "start": 210.0500030517578,
+                "end": 210.3000030517578
+            },
+            {
+                "word": "direkt",
+                "start": 210.3000030517578,
+                "end": 210.5500030517578
+            },
+            {
+                "word": "über",
                 "start": 209.8800048828125,
                 "end": 210.27999877929688
             },
             {
-                "word": "insbesondere",
+                "word": "dem",
                 "start": 210.27999877929688,
-                "end": 210.97999572753906
-            },
-            {
-                "word": "im",
-                "start": 210.97999572753906,
-                "end": 211.52000427246094
-            },
-            {
-                "word": "Winter",
-                "start": 211.52000427246094,
-                "end": 211.52000427246094
-            },
-            {
-                "word": "gerne",
-                "start": 211.52000427246094,
-                "end": 212
-            },
-            {
-                "word": "am",
-                "start": 212,
-                "end": 212.25999450683594
-            },
-            {
-                "word": "Grand",
-                "start": 212.25999450683594,
-                "end": 212.55999755859375
-            },
-            {
-                "word": "Lieu",
-                "start": 212.55999755859375,
-                "end": 212.8000030517578
+                "end": 210.52999877929688
             },
             {
                 "word": "See.",
                 "start": 212.8000030517578,
-                "end": 213.33999328613282
+                "end": 213.0399932861328
             }
         ],
-        "translationEn": "Gulls and seagulls particularly like to spend the night at Lake Grand Lieu, especially in winter.",
-        "translationVi": "Mòng biển và hải âu thường thích ngủ qua đêm tại hồ Grand Lieu, đặc biệt vào mùa đông."
+        "translationEn": "The flight path to and from Nantes Airport runs directly over the lake.",
+        "translationVi": "Lối bay từ và đến sân bay Nantes chạy thẳng qua hồ."
     },
     {
-        "text": "Und dann sieht man sie tagsüber rund um das ganze Ufer.",
-        "start": 213.2800048828125,
-        "end": 216.32000427246095,
+        "text": "Dieses Reservat hat in Europa große Bedeutung für Zug- und Wasservögel auf ihrer sogenannten Ostatlantikroute.",
+        "start": 213.0399932861328,
+        "end": 225.69000244140625,
         "wordTimings": [
             {
-                "word": "Und",
-                "start": 213.2800048828125,
-                "end": 213.55999755859375
+                "word": "Dieses",
+                "start": 213.0399932861328,
+                "end": 213.2899932861328
             },
             {
-                "word": "dann",
-                "start": 213.55999755859375,
-                "end": 213.75999450683594
+                "word": "Reservat",
+                "start": 213.2899932861328,
+                "end": 213.5399932861328
             },
             {
-                "word": "sieht",
-                "start": 213.75999450683594,
-                "end": 213.82000732421875
+                "word": "hat",
+                "start": 213.5399932861328,
+                "end": 213.7899932861328
             },
             {
-                "word": "man",
-                "start": 213.82000732421875,
-                "end": 214
-            },
-            {
-                "word": "sie",
-                "start": 214,
-                "end": 214.13999938964844
-            },
-            {
-                "word": "tagsüber",
-                "start": 214.13999938964844,
-                "end": 214.63999938964844
-            },
-            {
-                "word": "rund",
-                "start": 214.63999938964844,
-                "end": 215.02000427246094
-            },
-            {
-                "word": "um",
-                "start": 215.02000427246094,
-                "end": 215.16000366210938
-            },
-            {
-                "word": "das",
-                "start": 215.16000366210938,
-                "end": 215.39999389648438
-            },
-            {
-                "word": "ganze",
-                "start": 215.39999389648438,
-                "end": 215.8800048828125
-            },
-            {
-                "word": "Ufer.",
-                "start": 215.8800048828125,
-                "end": 216.32000427246095
-            }
-        ],
-        "translationEn": "And then you see them during the day all around the entire shore.",
-        "translationVi": "Và sau đó bạn sẽ thấy chúng suốt cả ngày quanh bờ."
-    },
-    {
-        "text": "Wenn das Wetter an der Küste schlecht ist,",
-        "start": 221.64000549316407,
-        "end": 224.43999938964845,
-        "wordTimings": [
-            {
-                "word": "Wenn",
-                "start": 221.64000549316407,
-                "end": 222.25999450683594
-            },
-            {
-                "word": "das",
-                "start": 222.25999450683594,
-                "end": 222.5800018310547
-            },
-            {
-                "word": "Wetter",
-                "start": 222.5800018310547,
-                "end": 222.72000122070312
-            },
-            {
-                "word": "an",
+                "word": "in",
                 "start": 222.72000122070312,
                 "end": 222.94000244140625
+            },
+            {
+                "word": "Europa",
+                "start": 222.94000244140625,
+                "end": 223.19000244140625
+            },
+            {
+                "word": "große",
+                "start": 223.19000244140625,
+                "end": 223.44000244140625
+            },
+            {
+                "word": "Bedeutung",
+                "start": 223.44000244140625,
+                "end": 223.69000244140625
+            },
+            {
+                "word": "für",
+                "start": 223.69000244140625,
+                "end": 223.94000244140625
+            },
+            {
+                "word": "Zug-",
+                "start": 223.94000244140625,
+                "end": 224.19000244140625
+            },
+            {
+                "word": "und",
+                "start": 224.19000244140625,
+                "end": 224.44000244140625
+            },
+            {
+                "word": "Wasservögel",
+                "start": 224.44000244140625,
+                "end": 224.69000244140625
+            },
+            {
+                "word": "auf",
+                "start": 224.69000244140625,
+                "end": 224.94000244140625
+            },
+            {
+                "word": "ihrer",
+                "start": 224.94000244140625,
+                "end": 225.19000244140625
+            },
+            {
+                "word": "sogenannten",
+                "start": 225.19000244140625,
+                "end": 225.44000244140625
+            },
+            {
+                "word": "Ostatlantikroute.",
+                "start": 225.44000244140625,
+                "end": 225.69000244140625
+            }
+        ],
+        "translationEn": "This reserve is of great importance in Europe for migratory and water birds on their so-called East Atlantic route.",
+        "translationVi": "Khu bảo tồn này có ý nghĩa lớn ở châu Âu đối với các loài chim di cư và chim nước trên con đường Đông Đại Tây Dương của chúng."
+    },
+    {
+        "text": "20 Kilometer weiter westlich der Atlantik.",
+        "start": 225.69000244140625,
+        "end": 223.50999450683594,
+        "wordTimings": [
+            {
+                "word": "20",
+                "start": 225.69000244140625,
+                "end": 225.94000244140625
+            },
+            {
+                "word": "Kilometer",
+                "start": 225.94000244140625,
+                "end": 226.19000244140625
+            },
+            {
+                "word": "weiter",
+                "start": 226.19000244140625,
+                "end": 226.44000244140625
+            },
+            {
+                "word": "westlich",
+                "start": 226.44000244140625,
+                "end": 226.69000244140625
             },
             {
                 "word": "der",
@@ -2870,258 +2233,639 @@
                 "end": 223.25999450683594
             },
             {
-                "word": "Küste",
+                "word": "Atlantik.",
                 "start": 223.25999450683594,
-                "end": 223.33999633789062
-            },
-            {
-                "word": "schlecht",
-                "start": 223.33999633789062,
-                "end": 223.86000061035156
-            },
-            {
-                "word": "ist,",
-                "start": 223.86000061035156,
-                "end": 224.43999938964845
+                "end": 223.50999450683594
             }
         ],
-        "translationEn": "When the weather is bad at the coast,",
-        "translationVi": "Nếu thời tiết ở bờ biển xấu,"
+        "translationEn": "20 kilometers further west is the Atlantic.",
+        "translationVi": "20 kilômét về phía tây là Đại Tây Dương."
     },
     {
-        "text": "suchen die Möwen hier Zuflucht.",
-        "start": 224.20000305175782,
-        "end": 225.90000610351564,
+        "text": "Hier bei Saint Nazaire mündet die Loire in den Ozean.",
+        "start": 224.8800048828125,
+        "end": 230.36000061035156,
         "wordTimings": [
             {
-                "word": "suchen",
-                "start": 224.20000305175782,
-                "end": 224.3800048828125
-            },
-            {
-                "word": "die",
-                "start": 224.3800048828125,
-                "end": 224.75999450683594
-            },
-            {
-                "word": "Möwen",
-                "start": 224.75999450683594,
-                "end": 224.8800048828125
-            },
-            {
-                "word": "hier",
+                "word": "Hier",
                 "start": 224.8800048828125,
                 "end": 225.22000122070312
             },
             {
-                "word": "Zuflucht.",
+                "word": "bei",
                 "start": 225.22000122070312,
-                "end": 225.90000610351564
-            }
-        ],
-        "translationEn": "the seagulls seek refuge here.",
-        "translationVi": "các con hải âu tìm nơi trú ẩn ở đây."
-    },
-    {
-        "text": "Aber wir kommen ganz gut mit ihnen zurecht.",
-        "start": 226.23999633789063,
-        "end": 228.4199951171875,
-        "wordTimings": [
-            {
-                "word": "Aber",
-                "start": 226.23999633789063,
-                "end": 226.52000427246094
+                "end": 225.47000122070312
             },
             {
-                "word": "wir",
-                "start": 226.52000427246094,
-                "end": 226.75999450683594
+                "word": "Saint",
+                "start": 225.47000122070312,
+                "end": 225.72000122070312
             },
             {
-                "word": "kommen",
-                "start": 226.75999450683594,
-                "end": 226.86000061035156
+                "word": "Nazaire",
+                "start": 225.72000122070312,
+                "end": 225.97000122070312
             },
             {
-                "word": "ganz",
-                "start": 226.86000061035156,
-                "end": 227.25999450683594
+                "word": "mündet",
+                "start": 225.97000122070312,
+                "end": 226.22000122070312
             },
             {
-                "word": "gut",
-                "start": 227.25999450683594,
-                "end": 227.3800048828125
-            },
-            {
-                "word": "mit",
-                "start": 227.3800048828125,
-                "end": 227.60000610351562
-            },
-            {
-                "word": "ihnen",
-                "start": 227.60000610351562,
-                "end": 227.75999450683594
-            },
-            {
-                "word": "zurecht.",
-                "start": 227.75999450683594,
-                "end": 228.4199951171875
-            }
-        ],
-        "translationEn": "But we get along quite well with them.",
-        "translationVi": "Nhưng chúng tôi vẫn hòa hợp với họ."
-    },
-    {
-        "text": "Es ist ein bisschen wie mit einer Schafherde.",
-        "start": 228.4800018310547,
-        "end": 230.52000122070314,
-        "wordTimings": [
-            {
-                "word": "Es",
-                "start": 228.4800018310547,
-                "end": 228.66000366210938
-            },
-            {
-                "word": "ist",
-                "start": 228.66000366210938,
-                "end": 228.8000030517578
-            },
-            {
-                "word": "ein",
-                "start": 228.8000030517578,
-                "end": 229.10000610351562
-            },
-            {
-                "word": "bisschen",
-                "start": 229.10000610351562,
-                "end": 229.1999969482422
-            },
-            {
-                "word": "wie",
+                "word": "die",
                 "start": 229.1999969482422,
                 "end": 229.36000061035156
             },
             {
-                "word": "mit",
+                "word": "Loire",
                 "start": 229.36000061035156,
-                "end": 229.47999572753906
+                "end": 229.61000061035156
             },
             {
-                "word": "einer",
+                "word": "in",
+                "start": 229.61000061035156,
+                "end": 229.86000061035156
+            },
+            {
+                "word": "den",
+                "start": 229.86000061035156,
+                "end": 230.11000061035156
+            },
+            {
+                "word": "Ozean.",
+                "start": 230.11000061035156,
+                "end": 230.36000061035156
+            }
+        ],
+        "translationEn": "Here at Saint Nazaire, the Loire flows into the ocean.",
+        "translationVi": "Tại đây ở Saint Nazaire, sông Loire đổ ra đại dương."
+    },
+    {
+        "text": "Es ist ein Ökosystem von Wasserflächen, das auch den Zugvögeln Sibiriens und Nordeuropas reichlich Nahrung bietet.",
+        "start": 230.36000061035156,
+        "end": 241.3800048828125,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 230.36000061035156,
+                "end": 230.61000061035156
+            },
+            {
+                "word": "ist",
+                "start": 230.61000061035156,
+                "end": 230.86000061035156
+            },
+            {
+                "word": "ein",
                 "start": 229.47999572753906,
                 "end": 229.75999450683594
             },
             {
-                "word": "Schafherde.",
+                "word": "Ökosystem",
                 "start": 229.75999450683594,
-                "end": 230.52000122070314
+                "end": 230.00999450683594
+            },
+            {
+                "word": "von",
+                "start": 230.00999450683594,
+                "end": 230.25999450683594
+            },
+            {
+                "word": "Wasserflächen,",
+                "start": 230.25999450683594,
+                "end": 230.50999450683594
+            },
+            {
+                "word": "das",
+                "start": 234.36000061035156,
+                "end": 234.67999267578125
+            },
+            {
+                "word": "auch",
+                "start": 234.67999267578125,
+                "end": 234.92999267578125
+            },
+            {
+                "word": "den",
+                "start": 234.92999267578125,
+                "end": 235.17999267578125
+            },
+            {
+                "word": "Zugvögeln",
+                "start": 239.24000549316406,
+                "end": 239.8800048828125
+            },
+            {
+                "word": "Sibiriens",
+                "start": 239.8800048828125,
+                "end": 240.1300048828125
+            },
+            {
+                "word": "und",
+                "start": 240.1300048828125,
+                "end": 240.3800048828125
+            },
+            {
+                "word": "Nordeuropas",
+                "start": 240.3800048828125,
+                "end": 240.6300048828125
+            },
+            {
+                "word": "reichlich",
+                "start": 240.6300048828125,
+                "end": 240.8800048828125
+            },
+            {
+                "word": "Nahrung",
+                "start": 240.8800048828125,
+                "end": 241.1300048828125
+            },
+            {
+                "word": "bietet.",
+                "start": 241.1300048828125,
+                "end": 241.3800048828125
+            }
+        ],
+        "translationEn": "It is an ecosystem of water bodies that also provides abundant food for the migratory birds of Siberia and Northern Europe.",
+        "translationVi": "Đây là một hệ sinh thái gồm các vùng nước, cung cấp nhiều thức ăn cho các loài chim di cư từ Siberia và Bắc Âu."
+    },
+    {
+        "text": "Und wenn es den Seemöwen hier zu kalt wird, fliegen sie auch gerne landeinwärts.",
+        "start": 241.3800048828125,
+        "end": 259.8800048828125,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 241.3800048828125,
+                "end": 241.6300048828125
+            },
+            {
+                "word": "wenn",
+                "start": 241.6300048828125,
+                "end": 241.8800048828125
+            },
+            {
+                "word": "es",
+                "start": 241.8800048828125,
+                "end": 242.1300048828125
+            },
+            {
+                "word": "den",
+                "start": 242.1300048828125,
+                "end": 242.3800048828125
+            },
+            {
+                "word": "Seemöwen",
+                "start": 242.3800048828125,
+                "end": 242.6300048828125
+            },
+            {
+                "word": "hier",
+                "start": 242.6300048828125,
+                "end": 242.8800048828125
+            },
+            {
+                "word": "zu",
+                "start": 243.8800048828125,
+                "end": 244.13999938964844
+            },
+            {
+                "word": "kalt",
+                "start": 244.13999938964844,
+                "end": 244.38999938964844
+            },
+            {
+                "word": "wird,",
+                "start": 244.38999938964844,
+                "end": 244.63999938964844
+            },
+            {
+                "word": "fliegen",
+                "start": 258.8800048828125,
+                "end": 258.8800048828125
+            },
+            {
+                "word": "sie",
+                "start": 258.8800048828125,
+                "end": 259.1300048828125
+            },
+            {
+                "word": "auch",
+                "start": 259.1300048828125,
+                "end": 259.3800048828125
+            },
+            {
+                "word": "gerne",
+                "start": 259.3800048828125,
+                "end": 259.6300048828125
+            },
+            {
+                "word": "landeinwärts.",
+                "start": 259.6300048828125,
+                "end": 259.8800048828125
+            }
+        ],
+        "translationEn": "And when it gets too cold for the seagulls here, they also like to fly inland.",
+        "translationVi": "Và khi thời tiết ở đây quá lạnh, những con hải âu cũng thích bay vào đất liền."
+    },
+    {
+        "text": "Möwen und Seemöwen übernachten insbesondere im Winter gerne am Grand Lieu See.",
+        "start": 259.8800048828125,
+        "end": 264.0299987792969,
+        "wordTimings": [
+            {
+                "word": "Möwen",
+                "start": 259.8800048828125,
+                "end": 260.1300048828125
+            },
+            {
+                "word": "und",
+                "start": 260.1300048828125,
+                "end": 260.3800048828125
+            },
+            {
+                "word": "Seemöwen",
+                "start": 260.3800048828125,
+                "end": 260.6300048828125
+            },
+            {
+                "word": "übernachten",
+                "start": 260.6300048828125,
+                "end": 260.8800048828125
+            },
+            {
+                "word": "insbesondere",
+                "start": 262.05999755859375,
+                "end": 262.2799987792969
+            },
+            {
+                "word": "im",
+                "start": 262.2799987792969,
+                "end": 262.5299987792969
+            },
+            {
+                "word": "Winter",
+                "start": 262.5299987792969,
+                "end": 262.7799987792969
+            },
+            {
+                "word": "gerne",
+                "start": 262.7799987792969,
+                "end": 263.0299987792969
+            },
+            {
+                "word": "am",
+                "start": 263.0299987792969,
+                "end": 263.2799987792969
+            },
+            {
+                "word": "Grand",
+                "start": 263.2799987792969,
+                "end": 263.5299987792969
+            },
+            {
+                "word": "Lieu",
+                "start": 263.5299987792969,
+                "end": 263.7799987792969
+            },
+            {
+                "word": "See.",
+                "start": 263.7799987792969,
+                "end": 264.0299987792969
+            }
+        ],
+        "translationEn": "Gulls and seagulls particularly like to spend the night at Lake Grand Lieu, especially in winter.",
+        "translationVi": "Mòng biển và mòng biển biển thích ngủ qua đêm, đặc biệt vào mùa đông, tại hồ Grand Lieu."
+    },
+    {
+        "text": "Und dann sieht man sie tagsüber rund um das ganze Ufer.",
+        "start": 264.0299987792969,
+        "end": 272.3999938964844,
+        "wordTimings": [
+            {
+                "word": "Und",
+                "start": 264.0299987792969,
+                "end": 264.2799987792969
+            },
+            {
+                "word": "dann",
+                "start": 264.2799987792969,
+                "end": 264.5299987792969
+            },
+            {
+                "word": "sieht",
+                "start": 264.5299987792969,
+                "end": 264.7799987792969
+            },
+            {
+                "word": "man",
+                "start": 264.7799987792969,
+                "end": 265.0299987792969
+            },
+            {
+                "word": "sie",
+                "start": 268.9800109863281,
+                "end": 269
+            },
+            {
+                "word": "tagsüber",
+                "start": 269,
+                "end": 269.25
+            },
+            {
+                "word": "rund",
+                "start": 269.25,
+                "end": 269.5
+            },
+            {
+                "word": "um",
+                "start": 269.5,
+                "end": 269.75
+            },
+            {
+                "word": "das",
+                "start": 271.7799987792969,
+                "end": 271.8999938964844
+            },
+            {
+                "word": "ganze",
+                "start": 271.8999938964844,
+                "end": 272.1499938964844
+            },
+            {
+                "word": "Ufer.",
+                "start": 272.1499938964844,
+                "end": 272.3999938964844
+            }
+        ],
+        "translationEn": "And then you see them during the day all around the entire shore.",
+        "translationVi": "Và sau đó bạn sẽ thấy chúng vào ban ngày xung quanh toàn bộ bờ."
+    },
+    {
+        "text": "Wenn das Wetter an der Küste schlecht ist, suchen die Möwen hier Zuflucht.",
+        "start": 272.3999938964844,
+        "end": 275.6499938964844,
+        "wordTimings": [
+            {
+                "word": "Wenn",
+                "start": 272.3999938964844,
+                "end": 272.6499938964844
+            },
+            {
+                "word": "das",
+                "start": 272.6499938964844,
+                "end": 272.8999938964844
+            },
+            {
+                "word": "Wetter",
+                "start": 272.8999938964844,
+                "end": 273.1499938964844
+            },
+            {
+                "word": "an",
+                "start": 273.1499938964844,
+                "end": 273.3999938964844
+            },
+            {
+                "word": "der",
+                "start": 273.3999938964844,
+                "end": 273.6499938964844
+            },
+            {
+                "word": "Küste",
+                "start": 273.6499938964844,
+                "end": 273.8999938964844
+            },
+            {
+                "word": "schlecht",
+                "start": 273.8999938964844,
+                "end": 274.1499938964844
+            },
+            {
+                "word": "ist,",
+                "start": 274.1499938964844,
+                "end": 274.3999938964844
+            },
+            {
+                "word": "suchen",
+                "start": 274.3999938964844,
+                "end": 274.6499938964844
+            },
+            {
+                "word": "die",
+                "start": 274.6499938964844,
+                "end": 274.8999938964844
+            },
+            {
+                "word": "Möwen",
+                "start": 274.8999938964844,
+                "end": 275.1499938964844
+            },
+            {
+                "word": "hier",
+                "start": 275.1499938964844,
+                "end": 275.3999938964844
+            },
+            {
+                "word": "Zuflucht.",
+                "start": 275.3999938964844,
+                "end": 275.6499938964844
+            }
+        ],
+        "translationEn": "When the weather is bad at the coast, the seagulls seek refuge here.",
+        "translationVi": "Khi thời tiết ở bờ biển xấu, những con mòng biển tìm nơi trú ẩn ở đây."
+    },
+    {
+        "text": "Aber wir kommen ganz gut mit ihnen zurecht.",
+        "start": 275.6499938964844,
+        "end": 274,
+        "wordTimings": [
+            {
+                "word": "Aber",
+                "start": 275.6499938964844,
+                "end": 275.8999938964844
+            },
+            {
+                "word": "wir",
+                "start": 272.2799987792969,
+                "end": 272.5
+            },
+            {
+                "word": "kommen",
+                "start": 272.5,
+                "end": 272.75
+            },
+            {
+                "word": "ganz",
+                "start": 272.75,
+                "end": 273
+            },
+            {
+                "word": "gut",
+                "start": 273,
+                "end": 273.25
+            },
+            {
+                "word": "mit",
+                "start": 273.25,
+                "end": 273.5
+            },
+            {
+                "word": "ihnen",
+                "start": 273.5,
+                "end": 273.75
+            },
+            {
+                "word": "zurecht.",
+                "start": 273.75,
+                "end": 274
+            }
+        ],
+        "translationEn": "But we get along quite well with them.",
+        "translationVi": "Nhưng chúng tôi hòa hợp với họ khá tốt."
+    },
+    {
+        "text": "Es ist ein bisschen wie mit einer Schafherde.",
+        "start": 274,
+        "end": 283.25,
+        "wordTimings": [
+            {
+                "word": "Es",
+                "start": 274,
+                "end": 274.25
+            },
+            {
+                "word": "ist",
+                "start": 274.25,
+                "end": 274.5
+            },
+            {
+                "word": "ein",
+                "start": 277.29998779296875,
+                "end": 277.739990234375
+            },
+            {
+                "word": "bisschen",
+                "start": 277.739990234375,
+                "end": 277.989990234375
+            },
+            {
+                "word": "wie",
+                "start": 277.989990234375,
+                "end": 278.239990234375
+            },
+            {
+                "word": "mit",
+                "start": 278.239990234375,
+                "end": 278.489990234375
+            },
+            {
+                "word": "einer",
+                "start": 282.9200134277344,
+                "end": 283
+            },
+            {
+                "word": "Schafherde.",
+                "start": 283,
+                "end": 283.25
             }
         ],
         "translationEn": "It's a bit like with a flock of sheep.",
         "translationVi": "Nó giống như một đàn cừu."
     },
     {
-        "text": "Man muss nur eine vertreiben,",
-        "start": 230.65999450683594,
-        "end": 232.13999633789064,
+        "text": "Man muss nur eine vertreiben, dann fliegen alle weg.",
+        "start": 284.1600036621094,
+        "end": 292.54998779296875,
         "wordTimings": [
             {
                 "word": "Man",
-                "start": 230.65999450683594,
-                "end": 230.8800048828125
+                "start": 284.1600036621094,
+                "end": 284.3599853515625
             },
             {
                 "word": "muss",
-                "start": 230.8800048828125,
-                "end": 231.02000427246094
+                "start": 284.3599853515625,
+                "end": 284.6099853515625
             },
             {
                 "word": "nur",
-                "start": 231.02000427246094,
-                "end": 231.27999877929688
+                "start": 284.6099853515625,
+                "end": 284.8599853515625
             },
             {
                 "word": "eine",
-                "start": 231.27999877929688,
-                "end": 231.4199981689453
+                "start": 289.260009765625,
+                "end": 289.3800048828125
             },
             {
                 "word": "vertreiben,",
-                "start": 231.4199981689453,
-                "end": 232.13999633789064
-            }
-        ],
-        "translationEn": "You just have to get rid of one.",
-        "translationVi": "Chỉ cần đuổi một người đi,"
-    },
-    {
-        "text": "dann fliegen alle weg.",
-        "start": 231.8600067138672,
-        "end": 233.24000244140626,
-        "wordTimings": [
+                "start": 289.3800048828125,
+                "end": 289.6300048828125
+            },
             {
                 "word": "dann",
-                "start": 231.8600067138672,
-                "end": 232.13999938964844
+                "start": 291.6199951171875,
+                "end": 291.79998779296875
             },
             {
                 "word": "fliegen",
-                "start": 232.13999938964844,
-                "end": 232.3800048828125
+                "start": 291.79998779296875,
+                "end": 292.04998779296875
             },
             {
                 "word": "alle",
-                "start": 232.3800048828125,
-                "end": 232.72000122070312
+                "start": 292.04998779296875,
+                "end": 292.29998779296875
             },
             {
                 "word": "weg.",
-                "start": 232.72000122070312,
-                "end": 233.24000244140626
+                "start": 292.29998779296875,
+                "end": 292.54998779296875
             }
         ],
-        "translationEn": "then everyone flies away.",
-        "translationVi": "rồi mọi người sẽ bay đi hết."
+        "translationEn": "You just have to drive one away, then they all fly away.",
+        "translationVi": "Chỉ cần đuổi một người, rồi tất cả sẽ bay đi."
     },
     {
         "text": "Unser Problem sind da eher die Turmfalken.",
-        "start": 233.57999267578126,
-        "end": 236.6800048828125,
+        "start": 292.54998779296875,
+        "end": 294.29998779296875,
         "wordTimings": [
             {
                 "word": "Unser",
-                "start": 233.57999267578126,
-                "end": 233.77999877929688
+                "start": 292.54998779296875,
+                "end": 292.79998779296875
             },
             {
                 "word": "Problem",
-                "start": 233.77999877929688,
-                "end": 234.16000366210938
+                "start": 292.79998779296875,
+                "end": 293.04998779296875
             },
             {
                 "word": "sind",
-                "start": 234.16000366210938,
-                "end": 234.36000061035156
+                "start": 293.04998779296875,
+                "end": 293.29998779296875
             },
             {
                 "word": "da",
-                "start": 234.36000061035156,
-                "end": 234.67999267578125
+                "start": 293.29998779296875,
+                "end": 293.54998779296875
             },
             {
                 "word": "eher",
-                "start": 234.67999267578125,
-                "end": 234.8000030517578
+                "start": 293.54998779296875,
+                "end": 293.79998779296875
             },
             {
                 "word": "die",
-                "start": 234.8000030517578,
-                "end": 236.13999938964844
+                "start": 293.79998779296875,
+                "end": 294.04998779296875
             },
             {
                 "word": "Turmfalken.",
-                "start": 236.13999938964844,
-                "end": 236.6800048828125
+                "start": 294.04998779296875,
+                "end": 294.29998779296875
             }
         ],
         "translationEn": "Our problem is more with the kestrels.",
@@ -3129,424 +2873,397 @@
     },
     {
         "text": "Turmfalken sind von dressierten Raubvögeln wie Tukuman kaum beeindruckt.",
-        "start": 237.67999877929688,
-        "end": 241.9600036621094,
+        "start": 294.29998779296875,
+        "end": 296.54998779296875,
         "wordTimings": [
             {
                 "word": "Turmfalken",
-                "start": 237.67999877929688,
-                "end": 238.3000030517578
+                "start": 294.29998779296875,
+                "end": 294.54998779296875
             },
             {
                 "word": "sind",
-                "start": 238.3000030517578,
-                "end": 238.47999572753906
+                "start": 294.54998779296875,
+                "end": 294.79998779296875
             },
             {
                 "word": "von",
-                "start": 238.47999572753906,
-                "end": 238.72000122070312
+                "start": 294.79998779296875,
+                "end": 295.04998779296875
             },
             {
                 "word": "dressierten",
-                "start": 238.72000122070312,
-                "end": 239.24000549316406
+                "start": 295.04998779296875,
+                "end": 295.29998779296875
             },
             {
                 "word": "Raubvögeln",
-                "start": 239.24000549316406,
-                "end": 239.8800048828125
+                "start": 295.29998779296875,
+                "end": 295.54998779296875
             },
             {
                 "word": "wie",
-                "start": 239.8800048828125,
-                "end": 240.0800018310547
+                "start": 295.54998779296875,
+                "end": 295.79998779296875
             },
             {
                 "word": "Tukuman",
-                "start": 240.0800018310547,
-                "end": 240.52000427246094
+                "start": 295.79998779296875,
+                "end": 296.04998779296875
             },
             {
                 "word": "kaum",
-                "start": 240.52000427246094,
-                "end": 241
+                "start": 296.04998779296875,
+                "end": 296.29998779296875
             },
             {
                 "word": "beeindruckt.",
-                "start": 241,
-                "end": 241.9600036621094
+                "start": 296.29998779296875,
+                "end": 296.54998779296875
             }
         ],
-        "translationEn": "Kestrels are hardly impressed by trained birds of prey like the Tucuman.",
-        "translationVi": "Chim ưng tháp không bị ấn tượng bởi những loài chim săn mồi đã được huấn luyện như Tukuman."
+        "translationEn": "Kestrels are hardly impressed by trained birds of prey like the Tukan.",
+        "translationVi": "Chim ưng Turmfalken hầu như không bị ấn tượng bởi những loài chim săn mồi đã được huấn luyện như Tukuman."
     },
     {
         "text": "Die Falkner müssen dann auch mal zur Schreckschusspistole greifen.",
-        "start": 242.0999969482422,
-        "end": 245.74000244140626,
+        "start": 296.54998779296875,
+        "end": 294.70001220703125,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 242.0999969482422,
-                "end": 242.39999389648438
+                "start": 296.54998779296875,
+                "end": 296.79998779296875
             },
             {
                 "word": "Falkner",
-                "start": 242.39999389648438,
-                "end": 242.83999633789062
+                "start": 296.79998779296875,
+                "end": 297.04998779296875
             },
             {
                 "word": "müssen",
-                "start": 242.83999633789062,
-                "end": 243.16000366210938
+                "start": 297.04998779296875,
+                "end": 297.29998779296875
             },
             {
                 "word": "dann",
-                "start": 243.16000366210938,
-                "end": 243.4199981689453
+                "start": 297.29998779296875,
+                "end": 297.54998779296875
             },
             {
                 "word": "auch",
-                "start": 243.4199981689453,
-                "end": 243.66000366210938
+                "start": 297.54998779296875,
+                "end": 297.79998779296875
             },
             {
                 "word": "mal",
-                "start": 243.66000366210938,
-                "end": 243.8800048828125
+                "start": 297.79998779296875,
+                "end": 298.04998779296875
             },
             {
                 "word": "zur",
-                "start": 243.8800048828125,
-                "end": 244.13999938964844
+                "start": 293.6000061035156,
+                "end": 294.20001220703125
             },
             {
                 "word": "Schreckschusspistole",
-                "start": 244.13999938964844,
-                "end": 245.10000610351562
+                "start": 294.20001220703125,
+                "end": 294.45001220703125
             },
             {
                 "word": "greifen.",
-                "start": 245.10000610351562,
-                "end": 245.74000244140626
+                "start": 294.45001220703125,
+                "end": 294.70001220703125
             }
         ],
         "translationEn": "The falconers sometimes have to resort to a blank-firing pistol.",
-        "translationVi": "Các thợ săn chim cũng phải đôi khi sử dụng súng bắn đạn cao su."
+        "translationVi": "Các thợ săn chim ưng cũng phải đôi khi sử dụng súng bắn đạn cao su."
     },
     {
         "text": "Gerade sind keine Flugzeuge in Sicht.",
-        "start": 250.64000549316407,
-        "end": 253.52000122070314,
+        "start": 294.70001220703125,
+        "end": 296.20001220703125,
         "wordTimings": [
             {
                 "word": "Gerade",
-                "start": 250.64000549316407,
-                "end": 251.32000732421875
+                "start": 294.70001220703125,
+                "end": 294.95001220703125
             },
             {
                 "word": "sind",
-                "start": 251.32000732421875,
-                "end": 251.8000030517578
+                "start": 294.95001220703125,
+                "end": 295.20001220703125
             },
             {
                 "word": "keine",
-                "start": 251.8000030517578,
-                "end": 252.39999389648438
+                "start": 295.20001220703125,
+                "end": 295.45001220703125
             },
             {
                 "word": "Flugzeuge",
-                "start": 252.39999389648438,
-                "end": 252.8000030517578
+                "start": 295.45001220703125,
+                "end": 295.70001220703125
             },
             {
                 "word": "in",
-                "start": 252.8000030517578,
-                "end": 253.22000122070312
+                "start": 295.70001220703125,
+                "end": 295.95001220703125
             },
             {
                 "word": "Sicht.",
-                "start": 253.22000122070312,
-                "end": 253.52000122070314
+                "start": 295.95001220703125,
+                "end": 296.20001220703125
             }
         ],
-        "translationEn": "There are currently no airplanes in sight.",
+        "translationEn": "There are no airplanes in sight right now.",
         "translationVi": "Hiện tại không có máy bay nào trong tầm nhìn."
     },
     {
-        "text": "Tukuman hat Starterlaubnis.",
-        "start": 253.65999450683594,
-        "end": 255.12000732421876,
+        "text": "Tukuman hat Starterlaubnis und er fliegt zum nächsten Masten.",
+        "start": 296.20001220703125,
+        "end": 298.45001220703125,
         "wordTimings": [
             {
                 "word": "Tukuman",
-                "start": 253.65999450683594,
-                "end": 254
+                "start": 296.20001220703125,
+                "end": 296.45001220703125
             },
             {
                 "word": "hat",
-                "start": 254,
-                "end": 254.47999572753906
+                "start": 296.45001220703125,
+                "end": 296.70001220703125
             },
             {
-                "word": "Starterlaubnis.",
-                "start": 254.47999572753906,
-                "end": 255.12000732421876
-            }
-        ],
-        "translationEn": "Tukuman has a starter permit.",
-        "translationVi": "Tukuman có giấy phép khởi động."
-    },
-    {
-        "text": "Und er fliegt zum nächsten Masten.",
-        "start": 258.3800109863281,
-        "end": 260.6800048828125,
-        "wordTimings": [
+                "word": "Starterlaubnis",
+                "start": 296.70001220703125,
+                "end": 296.95001220703125
+            },
             {
-                "word": "Und",
-                "start": 258.3800109863281,
-                "end": 258.5799865722656
+                "word": "und",
+                "start": 296.95001220703125,
+                "end": 297.20001220703125
             },
             {
                 "word": "er",
-                "start": 258.5799865722656,
-                "end": 258.8800048828125
+                "start": 297.20001220703125,
+                "end": 297.45001220703125
             },
             {
                 "word": "fliegt",
-                "start": 258.8800048828125,
-                "end": 258.8800048828125
+                "start": 297.45001220703125,
+                "end": 297.70001220703125
             },
             {
                 "word": "zum",
-                "start": 258.8800048828125,
-                "end": 259.260009765625
+                "start": 297.70001220703125,
+                "end": 297.95001220703125
             },
             {
                 "word": "nächsten",
-                "start": 259.260009765625,
-                "end": 259.79998779296875
+                "start": 297.95001220703125,
+                "end": 298.20001220703125
             },
             {
                 "word": "Masten.",
-                "start": 259.79998779296875,
-                "end": 260.6800048828125
+                "start": 298.20001220703125,
+                "end": 298.45001220703125
             }
         ],
-        "translationEn": "And he flies to the next mast.",
-        "translationVi": "Và anh ấy bay đến cột tiếp theo."
+        "translationEn": "Tukuman has a takeoff permit and he is flying to the next mast.",
+        "translationVi": "Tukuman có giấy phép bay và anh ấy bay đến cột tiếp theo."
     },
     {
-        "text": "Auf mehr hat der Bus heute keine Lust.",
-        "start": 261.06000366210935,
-        "end": 264.12000732421876,
+        "text": "Auf mehr hat der Bus heute keine Lust. Es ist nicht immer einfach.",
+        "start": 298.45001220703125,
+        "end": 301.70001220703125,
         "wordTimings": [
             {
                 "word": "Auf",
-                "start": 261.06000366210935,
-                "end": 261.3399963378906
+                "start": 298.45001220703125,
+                "end": 298.70001220703125
             },
             {
                 "word": "mehr",
-                "start": 261.3399963378906,
-                "end": 261.7200012207031
+                "start": 298.70001220703125,
+                "end": 298.95001220703125
             },
             {
                 "word": "hat",
-                "start": 261.7200012207031,
-                "end": 262.05999755859375
+                "start": 298.95001220703125,
+                "end": 299.20001220703125
             },
             {
                 "word": "der",
-                "start": 262.05999755859375,
-                "end": 262.2799987792969
+                "start": 299.20001220703125,
+                "end": 299.45001220703125
             },
             {
                 "word": "Bus",
-                "start": 262.2799987792969,
-                "end": 262.4200134277344
+                "start": 299.45001220703125,
+                "end": 299.70001220703125
             },
             {
                 "word": "heute",
-                "start": 262.4200134277344,
-                "end": 262.8999938964844
+                "start": 299.70001220703125,
+                "end": 299.95001220703125
             },
             {
                 "word": "keine",
-                "start": 262.8999938964844,
-                "end": 263.4599914550781
+                "start": 299.95001220703125,
+                "end": 300.20001220703125
             },
             {
                 "word": "Lust.",
-                "start": 263.4599914550781,
-                "end": 264.12000732421876
-            }
-        ],
-        "translationEn": "The bus doesn't feel like doing more today.",
-        "translationVi": "Hôm nay xe buýt không muốn làm gì thêm."
-    },
-    {
-        "text": "Es ist nicht immer einfach.",
-        "start": 265.4,
-        "end": 267.5799987792969,
-        "wordTimings": [
+                "start": 300.20001220703125,
+                "end": 300.45001220703125
+            },
             {
                 "word": "Es",
-                "start": 265.4,
-                "end": 266.17999267578125
+                "start": 300.45001220703125,
+                "end": 300.70001220703125
             },
             {
                 "word": "ist",
-                "start": 266.17999267578125,
-                "end": 266.32000732421875
+                "start": 300.70001220703125,
+                "end": 300.95001220703125
             },
             {
                 "word": "nicht",
-                "start": 266.32000732421875,
-                "end": 266.5199890136719
+                "start": 300.95001220703125,
+                "end": 301.20001220703125
             },
             {
                 "word": "immer",
-                "start": 266.5199890136719,
-                "end": 266.82000732421875
+                "start": 301.20001220703125,
+                "end": 301.45001220703125
             },
             {
                 "word": "einfach.",
-                "start": 266.82000732421875,
-                "end": 267.5799987792969
+                "start": 301.45001220703125,
+                "end": 301.70001220703125
             }
         ],
-        "translationEn": "It is not always easy.",
-        "translationVi": "Nó không phải lúc nào cũng dễ dàng."
+        "translationEn": "The bus doesn't feel like doing more today. It's not always easy.",
+        "translationVi": "Hôm nay xe buýt không muốn làm thêm nữa. Không phải lúc nào cũng dễ dàng."
     },
     {
-        "text": "Es läuft nicht immer so, wie wir denken,",
-        "start": 267.660009765625,
-        "end": 269.8199890136719,
+        "text": "Es läuft nicht immer so, wie wir denken, wie wir es wollen.",
+        "start": 301.70001220703125,
+        "end": 304.70001220703125,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 267.660009765625,
-                "end": 267.8999938964844
+                "start": 301.70001220703125,
+                "end": 301.95001220703125
             },
             {
                 "word": "läuft",
-                "start": 267.8999938964844,
-                "end": 268.1000061035156
+                "start": 301.95001220703125,
+                "end": 302.20001220703125
             },
             {
                 "word": "nicht",
-                "start": 268.1000061035156,
-                "end": 268.32000732421875
+                "start": 302.20001220703125,
+                "end": 302.45001220703125
             },
             {
                 "word": "immer",
-                "start": 268.32000732421875,
-                "end": 268.6600036621094
+                "start": 302.45001220703125,
+                "end": 302.70001220703125
             },
             {
                 "word": "so,",
-                "start": 268.6600036621094,
-                "end": 268.9200134277344
+                "start": 302.70001220703125,
+                "end": 302.95001220703125
             },
             {
                 "word": "wie",
-                "start": 268.9800109863281,
-                "end": 269
+                "start": 302.95001220703125,
+                "end": 303.20001220703125
             },
             {
                 "word": "wir",
-                "start": 269,
-                "end": 269.17999267578125
+                "start": 303.20001220703125,
+                "end": 303.45001220703125
             },
             {
                 "word": "denken,",
-                "start": 269.17999267578125,
-                "end": 269.8199890136719
-            }
-        ],
-        "translationEn": "It doesn't always go the way we think.",
-        "translationVi": "Không phải lúc nào mọi thứ cũng diễn ra như chúng ta nghĩ."
-    },
-    {
-        "text": "wie wir es wollen.",
-        "start": 269.5000061035156,
-        "end": 270.47999267578126,
-        "wordTimings": [
+                "start": 303.45001220703125,
+                "end": 303.70001220703125
+            },
             {
                 "word": "wie",
-                "start": 269.5000061035156,
-                "end": 269.70001220703125
+                "start": 303.70001220703125,
+                "end": 303.95001220703125
             },
             {
                 "word": "wir",
-                "start": 269.70001220703125,
-                "end": 269.82000732421875
+                "start": 303.95001220703125,
+                "end": 304.20001220703125
             },
             {
                 "word": "es",
-                "start": 269.82000732421875,
-                "end": 270.1600036621094
+                "start": 304.20001220703125,
+                "end": 304.45001220703125
             },
             {
                 "word": "wollen.",
-                "start": 270.1600036621094,
-                "end": 270.47999267578126
+                "start": 304.45001220703125,
+                "end": 304.70001220703125
             }
         ],
-        "translationEn": "as we want it.",
-        "translationVi": "như chúng ta mong muốn."
+        "translationEn": "It doesn't always go the way we think, the way we want it to.",
+        "translationVi": "Không phải lúc nào mọi thứ cũng diễn ra như chúng ta nghĩ, như chúng ta mong muốn."
     },
     {
         "text": "Das Frühstück war dann wohl doch etwas zu üppig.",
-        "start": 271.67999877929685,
-        "end": 274.6999938964844,
+        "start": 304.70001220703125,
+        "end": 306.95001220703125,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 271.67999877929685,
-                "end": 271.8999938964844
+                "start": 304.70001220703125,
+                "end": 304.95001220703125
             },
             {
                 "word": "Frühstück",
-                "start": 271.8999938964844,
-                "end": 272.2799987792969
+                "start": 304.95001220703125,
+                "end": 305.20001220703125
             },
             {
                 "word": "war",
-                "start": 272.2799987792969,
-                "end": 272.5
+                "start": 305.20001220703125,
+                "end": 305.45001220703125
             },
             {
                 "word": "dann",
-                "start": 272.5,
-                "end": 272.67999267578125
+                "start": 305.45001220703125,
+                "end": 305.70001220703125
             },
             {
                 "word": "wohl",
-                "start": 272.67999267578125,
-                "end": 272.9200134277344
+                "start": 305.70001220703125,
+                "end": 305.95001220703125
             },
             {
                 "word": "doch",
-                "start": 272.9200134277344,
-                "end": 273.3800048828125
+                "start": 305.95001220703125,
+                "end": 306.20001220703125
             },
             {
                 "word": "etwas",
-                "start": 273.3800048828125,
-                "end": 273.6600036621094
+                "start": 306.20001220703125,
+                "end": 306.45001220703125
             },
             {
                 "word": "zu",
-                "start": 273.6600036621094,
-                "end": 273.9599914550781
+                "start": 306.45001220703125,
+                "end": 306.70001220703125
             },
             {
                 "word": "üppig.",
-                "start": 273.9599914550781,
-                "end": 274.6999938964844
+                "start": 306.70001220703125,
+                "end": 306.95001220703125
             }
         ],
         "translationEn": "The breakfast was probably a bit too lavish after all.",
@@ -3554,251 +3271,233 @@
     },
     {
         "text": "Du armer Vogel, wirst eine Woche lang nichts zum Fressen bekommen.",
-        "start": 275.4599975585937,
-        "end": 279.75999145507814,
+        "start": 306.95001220703125,
+        "end": 309.70001220703125,
         "wordTimings": [
             {
                 "word": "Du",
-                "start": 275.4599975585937,
-                "end": 276.3599853515625
+                "start": 306.95001220703125,
+                "end": 307.20001220703125
             },
             {
                 "word": "armer",
-                "start": 276.3599853515625,
-                "end": 276.70001220703125
+                "start": 307.20001220703125,
+                "end": 307.45001220703125
             },
             {
                 "word": "Vogel,",
-                "start": 276.70001220703125,
-                "end": 277.0400085449219
+                "start": 307.45001220703125,
+                "end": 307.70001220703125
             },
             {
                 "word": "wirst",
-                "start": 277.0400085449219,
-                "end": 277.29998779296875
+                "start": 307.70001220703125,
+                "end": 307.95001220703125
             },
             {
                 "word": "eine",
-                "start": 277.29998779296875,
-                "end": 277.739990234375
+                "start": 307.95001220703125,
+                "end": 308.20001220703125
             },
             {
                 "word": "Woche",
-                "start": 277.739990234375,
-                "end": 277.9200134277344
+                "start": 308.20001220703125,
+                "end": 308.45001220703125
             },
             {
                 "word": "lang",
-                "start": 277.9200134277344,
-                "end": 278.44000244140625
+                "start": 308.45001220703125,
+                "end": 308.70001220703125
             },
             {
                 "word": "nichts",
-                "start": 278.44000244140625,
-                "end": 278.55999755859375
+                "start": 308.70001220703125,
+                "end": 308.95001220703125
             },
             {
                 "word": "zum",
-                "start": 278.55999755859375,
-                "end": 279
+                "start": 308.95001220703125,
+                "end": 309.20001220703125
             },
             {
                 "word": "Fressen",
-                "start": 279,
-                "end": 279.20001220703125
+                "start": 309.20001220703125,
+                "end": 309.45001220703125
             },
             {
                 "word": "bekommen.",
-                "start": 279.20001220703125,
-                "end": 279.75999145507814
+                "start": 309.45001220703125,
+                "end": 309.70001220703125
             }
         ],
         "translationEn": "You poor bird, you won't get anything to eat for a week.",
-        "translationVi": "Ôi, chú chim tội nghiệp, sẽ không có gì để ăn trong suốt một tuần."
+        "translationVi": "Bạn chim tội nghiệp, sẽ không có gì để ăn trong một tuần."
     },
     {
-        "text": "Du wirst 500 Gramm abnehmen.",
-        "start": 280.3400024414062,
-        "end": 282.12000732421876,
+        "text": "Du wirst 500 Gramm abnehmen, kleiner Scherz.",
+        "start": 309.70001220703125,
+        "end": 311.45001220703125,
         "wordTimings": [
             {
                 "word": "Du",
-                "start": 280.3400024414062,
-                "end": 280.44000244140625
+                "start": 309.70001220703125,
+                "end": 309.95001220703125
             },
             {
                 "word": "wirst",
-                "start": 280.44000244140625,
-                "end": 280.44000244140625
+                "start": 309.95001220703125,
+                "end": 310.20001220703125
             },
             {
                 "word": "500",
-                "start": 280.44000244140625,
-                "end": 281.0400085449219
+                "start": 310.20001220703125,
+                "end": 310.45001220703125
             },
             {
                 "word": "Gramm",
-                "start": 281.0400085449219,
-                "end": 281.3999938964844
+                "start": 310.45001220703125,
+                "end": 310.70001220703125
             },
             {
-                "word": "abnehmen.",
-                "start": 281.3999938964844,
-                "end": 282.12000732421876
-            }
-        ],
-        "translationEn": "You will lose 500 grams.",
-        "translationVi": "Bạn sẽ giảm 500 gram."
-    },
-    {
-        "text": "Kleiner Scherz.",
-        "start": 282.82001342773435,
-        "end": 283.85999755859376,
-        "wordTimings": [
+                "word": "abnehmen,",
+                "start": 310.70001220703125,
+                "end": 310.95001220703125
+            },
             {
-                "word": "Kleiner",
-                "start": 282.82001342773435,
-                "end": 283
+                "word": "kleiner",
+                "start": 310.95001220703125,
+                "end": 311.20001220703125
             },
             {
                 "word": "Scherz.",
-                "start": 283,
-                "end": 283.85999755859376
+                "start": 311.20001220703125,
+                "end": 311.45001220703125
             }
         ],
-        "translationEn": "Little joke.",
-        "translationVi": "Một trò đùa nhỏ."
+        "translationEn": "You will lose 500 grams, just a little joke.",
+        "translationVi": "Bạn sẽ giảm 500 gram, chỉ là một trò đùa nhỏ."
     },
     {
         "text": "Tukuman hat jedenfalls noch viele Flüge als lebende Vogelscheuche vor sich.",
-        "start": 284.06000366210935,
-        "end": 288.62000732421876,
+        "start": 311.45001220703125,
+        "end": 314.20001220703125,
         "wordTimings": [
             {
                 "word": "Tukuman",
-                "start": 284.06000366210935,
-                "end": 284.3599853515625
+                "start": 311.45001220703125,
+                "end": 311.70001220703125
             },
             {
                 "word": "hat",
-                "start": 284.3599853515625,
-                "end": 284.6000061035156
+                "start": 311.70001220703125,
+                "end": 311.95001220703125
             },
             {
                 "word": "jedenfalls",
-                "start": 284.6000061035156,
-                "end": 285.1000061035156
+                "start": 311.95001220703125,
+                "end": 312.20001220703125
             },
             {
                 "word": "noch",
-                "start": 285.1000061035156,
-                "end": 285.44000244140625
+                "start": 312.20001220703125,
+                "end": 312.45001220703125
             },
             {
                 "word": "viele",
-                "start": 285.44000244140625,
-                "end": 285.82000732421875
+                "start": 312.45001220703125,
+                "end": 312.70001220703125
             },
             {
                 "word": "Flüge",
-                "start": 285.82000732421875,
-                "end": 286.1400146484375
+                "start": 312.70001220703125,
+                "end": 312.95001220703125
             },
             {
                 "word": "als",
-                "start": 286.1400146484375,
-                "end": 286.5199890136719
+                "start": 312.95001220703125,
+                "end": 313.20001220703125
             },
             {
                 "word": "lebende",
-                "start": 286.5199890136719,
-                "end": 287
+                "start": 313.20001220703125,
+                "end": 313.45001220703125
             },
             {
                 "word": "Vogelscheuche",
-                "start": 287,
-                "end": 287.760009765625
+                "start": 313.45001220703125,
+                "end": 313.70001220703125
             },
             {
                 "word": "vor",
-                "start": 287.760009765625,
-                "end": 288.1199951171875
+                "start": 313.70001220703125,
+                "end": 313.95001220703125
             },
             {
                 "word": "sich.",
-                "start": 288.1199951171875,
-                "end": 288.62000732421876
+                "start": 313.95001220703125,
+                "end": 314.20001220703125
             }
         ],
         "translationEn": "Tukuman still has many flights ahead as a living scarecrow.",
-        "translationVi": "Tukuman vẫn còn nhiều chuyến bay như một con bù nhìn sống ở phía trước."
+        "translationVi": "Tukuman vẫn còn nhiều chuyến bay như một con bù nhìn sống phía trước."
     },
     {
-        "text": "Eine Karriere im Aufwind,",
-        "start": 289.160009765625,
-        "end": 291.4600036621094,
+        "text": "Eine Karriere im Aufwind, denn weltweit nimmt der Flugverkehr zu.",
+        "start": 314.20001220703125,
+        "end": 316.70001220703125,
         "wordTimings": [
             {
                 "word": "Eine",
-                "start": 289.160009765625,
-                "end": 289.3800048828125
+                "start": 314.20001220703125,
+                "end": 314.45001220703125
             },
             {
                 "word": "Karriere",
-                "start": 289.3800048828125,
-                "end": 289.8599853515625
+                "start": 314.45001220703125,
+                "end": 314.70001220703125
             },
             {
                 "word": "im",
-                "start": 289.8599853515625,
-                "end": 290.260009765625
+                "start": 314.70001220703125,
+                "end": 314.95001220703125
             },
             {
                 "word": "Aufwind,",
-                "start": 290.260009765625,
-                "end": 291.4600036621094
-            }
-        ],
-        "translationEn": "A career on the rise,",
-        "translationVi": "Một sự nghiệp đang lên."
-    },
-    {
-        "text": "denn weltweit nimmt der Flugverkehr zu.",
-        "start": 291.5199951171875,
-        "end": 294.50001220703126,
-        "wordTimings": [
+                "start": 314.95001220703125,
+                "end": 315.20001220703125
+            },
             {
                 "word": "denn",
-                "start": 291.5199951171875,
-                "end": 291.79998779296875
+                "start": 315.20001220703125,
+                "end": 315.45001220703125
             },
             {
                 "word": "weltweit",
-                "start": 291.79998779296875,
-                "end": 292.29998779296875
+                "start": 315.45001220703125,
+                "end": 315.70001220703125
             },
             {
                 "word": "nimmt",
-                "start": 292.29998779296875,
-                "end": 292.6199951171875
+                "start": 315.70001220703125,
+                "end": 315.95001220703125
             },
             {
                 "word": "der",
-                "start": 292.6199951171875,
-                "end": 293.0400085449219
+                "start": 315.95001220703125,
+                "end": 316.20001220703125
             },
             {
                 "word": "Flugverkehr",
-                "start": 293.0400085449219,
-                "end": 293.6000061035156
+                "start": 316.20001220703125,
+                "end": 316.45001220703125
             },
             {
                 "word": "zu.",
-                "start": 293.6000061035156,
-                "end": 294.50001220703126
+                "start": 316.45001220703125,
+                "end": 316.70001220703125
             }
         ],
-        "translationEn": "because air traffic is increasing worldwide.",
-        "translationVi": "bởi vì lưu lượng hàng không trên toàn thế giới đang tăng lên."
+        "translationEn": "A career on the rise, as air traffic is increasing worldwide.",
+        "translationVi": "Một sự nghiệp đang trên đà phát triển, vì lưu lượng hàng không trên toàn thế giới đang gia tăng."
     }
 ]
