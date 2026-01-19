@@ -2989,7 +2989,7 @@ const DictationPageContent = () => {
   const videoData = lesson.youtubeUrl ? generateVideoStructuredData({
     ...lesson,
     title: lesson.displayTitle || lesson.title,
-    description: `Diktat Übung: ${lesson.title}. Verbessere dein Hörverstehen und Schreiben durch Diktat-Übungen.`,
+    description: `Shadowing Übung: ${lesson.title}. Verbessere dein Hörverstehen und Aussprache durch Shadowing-Übungen.`,
     thumbnail: lesson.thumbnail,
     videoUrl: lesson.youtubeUrl,
     duration: duration ? `PT${Math.floor(duration)}S` : undefined,
@@ -2997,7 +2997,7 @@ const DictationPageContent = () => {
 
   const breadcrumbData = generateBreadcrumbStructuredData([
     { name: 'Home', url: '/' },
-    { name: lesson.displayTitle || lesson.title, url: `/${lessonId}` }
+    { name: lesson.displayTitle || lesson.title, url: `/shadowing/${lessonId}` }
   ]);
 
   const structuredDataArray = videoData
@@ -3026,12 +3026,12 @@ const DictationPageContent = () => {
   return (
     <div className={styles.page}>
       <SEO
-        title={`${lesson.displayTitle || lesson.title} - Diktat Übung | PapaGeil`}
-        description={`Verbessere dein Deutsch mit Diktat: "${lesson.title}". ✓ Level ${lesson.difficulty || 'A1-C2'} ✓ Hörverstehen trainieren ✓ Rechtschreibung üben ✓ Mit sofortigem Feedback`}
-        keywords={`Diktat ${lesson.title}, Deutsch Diktat üben, ${lesson.difficulty || 'A1-C2'} Deutsch, Hörverstehen Deutsch, Rechtschreibung Deutsch, PapaGeil Diktat, German dictation practice, Deutsch schreiben lernen`}
+        title={`${lesson.displayTitle || lesson.title} - Shadowing Übung | PapaGeil`}
+        description={`Verbessere dein Deutsch mit Shadowing: "${lesson.title}". ✓ Level ${lesson.difficulty || 'A1-C2'} ✓ Hörverstehen trainieren ✓ Aussprache üben ✓ Nachsprechen mit Muttersprachlern`}
+        keywords={`Shadowing ${lesson.title}, Deutsch Shadowing üben, ${lesson.difficulty || 'A1-C2'} Deutsch, Hörverstehen Deutsch, Aussprache Deutsch, PapaGeil Shadowing, German shadowing practice, Deutsch sprechen lernen`}
         ogType="video.other"
         ogImage={lesson.thumbnail || '/og-image.jpg'}
-        canonicalUrl={`/${lessonId}`}
+        canonicalUrl={`/shadowing/${lessonId}`}
         locale="de_DE"
         author="PapaGeil"
         publishedTime={lesson.createdAt}
