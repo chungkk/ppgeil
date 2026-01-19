@@ -76,7 +76,7 @@
             }
         ],
         "translationEn": "What is that thick, fat pancake rolling around?",
-        "translationVi": "Đó là cái bánh pancake dày và béo nào đang lăn lộn xung quanh vậy?"
+        "translationVi": "Đó là cái bánh kếp dày và béo nào đang lăn lộn xung quanh vậy?"
     },
     {
         "text": "Und was sagt er da zu dem Häschen und den anderen Tieren?",
@@ -144,8 +144,8 @@
                 "end": 22.81999969482422
             }
         ],
-        "translationEn": "And what does he say to the little bunny and the other animals?",
-        "translationVi": "Và anh ấy nói gì với thỏ và những con vật khác?"
+        "translationEn": "And what does he say to the little rabbit and the other animals?",
+        "translationVi": "Và anh ấy nói gì với thỏ con và những con vật khác?"
     },
     {
         "text": "Du bist neugierig? Dann schau mal zu.",
@@ -189,7 +189,7 @@
             }
         ],
         "translationEn": "Are you curious? Then take a look.",
-        "translationVi": "Bạn tò mò à? Vậy thì hãy xem thử."
+        "translationVi": "Bạn tò mò à? Vậy thì hãy xem này."
     },
     {
         "text": "Es waren einmal drei alte Frauen, die gerne Pfannkuchen essen wollten.",
@@ -253,7 +253,7 @@
             }
         ],
         "translationEn": "Once upon a time, there were three old women who wanted to eat pancakes.",
-        "translationVi": "Ngày xửa ngày xưa có ba bà lão, họ rất thích ăn bánh kếp."
+        "translationVi": "Ngày xửa ngày xưa có ba bà lão thích ăn bánh kếp."
     },
     {
         "text": "Die erste gab ein Ei, die zweite etwas Milch und die dritte Fett und Mehl.",
@@ -337,7 +337,7 @@
             }
         ],
         "translationEn": "The first gave an egg, the second some milk, and the third fat and flour.",
-        "translationVi": "Con đầu tiên cho một quả trứng, con thứ hai cho một chút sữa và con thứ ba cho mỡ và bột mì."
+        "translationVi": "Con đầu tiên cho một quả trứng, con thứ hai cho một ít sữa và con thứ ba cho mỡ và bột."
     },
     {
         "text": "Als der dicke fette Pfannkuchen fertig war, wollte er sich jedoch nicht von den drei alten Frauen essen lassen.",
@@ -357,7 +357,7 @@
             {
                 "word": "dicke",
                 "start": 48.34000015258789,
-                "end": 48.84000015258789
+                "end": 48.86000061035156
             },
             {
                 "word": "fette",
@@ -440,8 +440,8 @@
                 "end": 55.18000030517578
             }
         ],
-        "translationEn": "When the thick, fat pancake was ready, however, it did not want to be eaten by the three old women.",
-        "translationVi": "Khi chiếc bánh pancake béo tròn đã hoàn thành, nó không muốn bị ba bà lão ăn."
+        "translationEn": "When the big fat pancake was ready, however, he did not want to be eaten by the three old women.",
+        "translationVi": "Khi chiếc bánh kếp béo tròn hoàn thành, nó không muốn bị ba bà lão ăn."
     },
     {
         "text": "Sondern sprang aus der Pfanne und aus dem Fenster: kantapper, kantapper, kantapper.",
@@ -509,7 +509,7 @@
                 "end": 59.97999954223633
             }
         ],
-        "translationEn": "But jumped out of the pan and out of the window: tap tap, tap tap, tap tap.",
+        "translationEn": "But it jumped out of the pan and out of the window: tap tap tap.",
         "translationVi": "Nhưng nhảy ra khỏi chảo và ra ngoài cửa sổ: kantapper, kantapper, kantapper."
     },
     {
@@ -542,9 +542,9 @@
         "translationVi": "Vào trong rừng."
     },
     {
-        "text": "Da begegnete dem Pfannkuchen ein Häschen, das rief:",
+        "text": "Da begegnete dem Pfannkuchen ein Häschen, das rief: Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen!",
         "start": 72.5,
-        "end": 76.12000274658203,
+        "end": 80.63999938964844,
         "wordTimings": [
             {
                 "word": "Da",
@@ -585,16 +585,7 @@
                 "word": "rief:",
                 "start": 76.12000274658203,
                 "end": 76.12000274658203
-            }
-        ],
-        "translationEn": "Then a little rabbit met the pancake, which called out:",
-        "translationVi": "Lúc đó, một chú thỏ gặp chiếc bánh kếp và kêu lên:"
-    },
-    {
-        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Doch der Pfannkuchen antwortete:",
-        "start": 76.87999725341797,
-        "end": 83.81999969482422,
-        "wordTimings": [
+            },
             {
                 "word": "Dicker",
                 "start": 76.87999725341797,
@@ -623,11 +614,11 @@
             {
                 "word": "ich",
                 "start": 79.31999969482422,
-                "end": 79.45999908447266
+                "end": 79.44000244140625
             },
             {
                 "word": "will",
-                "start": 79.45999908447266,
+                "start": 79.44000244140625,
                 "end": 79.58000183105469
             },
             {
@@ -639,7 +630,16 @@
                 "word": "fressen!",
                 "start": 79.77999877929688,
                 "end": 80.63999938964844
-            },
+            }
+        ],
+        "translationEn": "Then a little bunny met the pancake, which shouted: Fat, thick pancake, stop, I want to eat you!",
+        "translationVi": "Lúc đó, một chú thỏ gặp chiếc bánh kếp và kêu lên: Bánh kếp béo tròn, đứng lại, ta muốn ăn ngươi!"
+    },
+    {
+        "text": "Doch der Pfannkuchen antwortete: Ich bin drei alten Weibern entwischt.",
+        "start": 81.95999908447266,
+        "end": 86.81999969482422,
+        "wordTimings": [
             {
                 "word": "Doch",
                 "start": 81.95999908447266,
@@ -659,16 +659,7 @@
                 "word": "antwortete:",
                 "start": 83.0199966430664,
                 "end": 83.81999969482422
-            }
-        ],
-        "translationEn": "Fat thick pancake, stay still, I want to eat you! But the pancake replied:",
-        "translationVi": "Bánh pancake béo tròn, đứng lại, tôi muốn ăn bạn! Nhưng bánh pancake đã trả lời:"
-    },
-    {
-        "text": "Ich bin drei alten Weibern entwischt.",
-        "start": 84.77999877929688,
-        "end": 86.81999969482422,
-        "wordTimings": [
+            },
             {
                 "word": "Ich",
                 "start": 84.77999877929688,
@@ -700,8 +691,8 @@
                 "end": 86.81999969482422
             }
         ],
-        "translationEn": "I escaped from three old women.",
-        "translationVi": "Tôi đã thoát khỏi ba bà lão."
+        "translationEn": "But the pancake replied: I escaped from three old women.",
+        "translationVi": "Nhưng chiếc bánh kếp đã trả lời: Tôi đã trốn thoát khỏi ba bà lão."
     },
     {
         "text": "Und da soll ich mich von dir anknabbern lassen?",
@@ -812,9 +803,9 @@
         "translationVi": "Và tiếp tục lăn lóc, lăn lóc vào trong rừng."
     },
     {
-        "text": "Nach einer Weile traf der Pfannkuchen den Wolf. Dieser sagte:",
+        "text": "Nach einer Weile traf der Pfannkuchen den Wolf.",
         "start": 98.77999877929688,
-        "end": 103.95999908447266,
+        "end": 102.45999908447266,
         "wordTimings": [
             {
                 "word": "Nach",
@@ -855,7 +846,16 @@
                 "word": "Wolf.",
                 "start": 102.12000274658203,
                 "end": 102.45999908447266
-            },
+            }
+        ],
+        "translationEn": "After a while, the pancake met the wolf.",
+        "translationVi": "Sau một thời gian, chiếc bánh kếp gặp sói."
+    },
+    {
+        "text": "Dieser sagte: Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen!",
+        "start": 103.45999908447266,
+        "end": 109.83999633789062,
+        "wordTimings": [
             {
                 "word": "Dieser",
                 "start": 103.45999908447266,
@@ -865,16 +865,7 @@
                 "word": "sagte:",
                 "start": 103.5199966430664,
                 "end": 103.95999908447266
-            }
-        ],
-        "translationEn": "After a while, the pancake met the wolf. He said:",
-        "translationVi": "Sau một thời gian, chiếc bánh kếp gặp con sói. Nó nói:"
-    },
-    {
-        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Doch der sagte:",
-        "start": 105.19999694824219,
-        "end": 111.5199966430664,
-        "wordTimings": [
+            },
             {
                 "word": "Dicker",
                 "start": 105.19999694824219,
@@ -919,7 +910,16 @@
                 "word": "fressen!",
                 "start": 109.13999938964844,
                 "end": 109.83999633789062
-            },
+            }
+        ],
+        "translationEn": "He said: Fat thick pancake, stay still, I want to eat you!",
+        "translationVi": "Cái này nói: Bánh pancake béo tròn, đứng lại, tôi muốn ăn bạn!"
+    },
+    {
+        "text": "Doch der sagte: Ich bin drei alten Weibern und dem Häschen entkommen.",
+        "start": 110.66000366210938,
+        "end": 115.69999694824219,
+        "wordTimings": [
             {
                 "word": "Doch",
                 "start": 110.66000366210938,
@@ -934,19 +934,10 @@
                 "word": "sagte:",
                 "start": 111.13999938964844,
                 "end": 111.5199966430664
-            }
-        ],
-        "translationEn": "\"Fat thick pancake, stay still, I want to eat you!\" But it said:",
-        "translationVi": "Bánh pancake béo tròn, đứng lại, tôi muốn ăn bạn! Nhưng nó đã nói:"
-    },
-    {
-        "text": "Ich bin drei alten Weibern und dem Häschen entkommen.",
-        "start": 112.54000091552734,
-        "end": 115.69999694824219,
-        "wordTimings": [
+            },
             {
                 "word": "Ich",
-                "start": 112.54000091552734,
+                "start": 112.5199966430664,
                 "end": 112.5999984741211
             },
             {
@@ -990,8 +981,8 @@
                 "end": 115.69999694824219
             }
         ],
-        "translationEn": "I escaped from three old women and the little bunny.",
-        "translationVi": "Tôi đã trốn thoát khỏi ba bà lão và con thỏ."
+        "translationEn": "But he said: I escaped from three old women and the little rabbit.",
+        "translationVi": "Nhưng ông ấy nói: Tôi đã thoát khỏi ba bà lão và chú thỏ."
     },
     {
         "text": "Und jetzt soll ich mich von dir fressen lassen?",
@@ -1098,8 +1089,8 @@
                 "end": 124.16000366210938
             }
         ],
-        "translationEn": "And rolled deeper into the forest, kantapper, kantapper.",
-        "translationVi": "Và lăn lộn, lăn lộn sâu hơn vào trong rừng."
+        "translationEn": "And rolled deeper into the forest.",
+        "translationVi": "Và lăn lóc, lăn lóc sâu vào trong rừng."
     },
     {
         "text": "Da kam plötzlich eine Ziege angehüpft.",
@@ -1141,9 +1132,9 @@
         "translationVi": "Bỗng nhiên có một con dê nhảy đến."
     },
     {
-        "text": "Als sie den Pfannkuchen dahinrollen sah, rief auch sie:",
+        "text": "Als sie den Pfannkuchen dahinrollen sah, rief auch sie: Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen!",
         "start": 134.97999572753906,
-        "end": 138.10000610351562,
+        "end": 143.10000610351562,
         "wordTimings": [
             {
                 "word": "Als",
@@ -1189,16 +1180,7 @@
                 "word": "sie:",
                 "start": 137.82000732421875,
                 "end": 138.10000610351562
-            }
-        ],
-        "translationEn": "When she saw the pancake rolling away, she also shouted:",
-        "translationVi": "Khi cô ấy thấy chiếc bánh kếp lăn đi, cô ấy cũng kêu lên:"
-    },
-    {
-        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Doch diese antwortete erneut:",
-        "start": 138.9199981689453,
-        "end": 145.8000030517578,
-        "wordTimings": [
+            },
             {
                 "word": "Dicker",
                 "start": 138.9199981689453,
@@ -1243,7 +1225,16 @@
                 "word": "fressen!",
                 "start": 142.3800048828125,
                 "end": 143.10000610351562
-            },
+            }
+        ],
+        "translationEn": "When she saw the pancake rolling away, she also shouted: Fat, thick pancake, stop, I want to eat you!",
+        "translationVi": "Khi cô thấy chiếc bánh kếp lăn đi, cô cũng kêu lên: Bánh kếp béo tròn, đứng lại, tôi muốn ăn bạn!"
+    },
+    {
+        "text": "Doch diese antwortete erneut: Ich bin drei alten Weibern und dem Häschen und dem Wolf entkommen.",
+        "start": 143.8800048828125,
+        "end": 150.60000610351562,
+        "wordTimings": [
             {
                 "word": "Doch",
                 "start": 143.8800048828125,
@@ -1263,16 +1254,7 @@
                 "word": "erneut:",
                 "start": 145.25999450683594,
                 "end": 145.8000030517578
-            }
-        ],
-        "translationEn": "Thick, fat pancake, stay still, I want to eat you! But it replied again:",
-        "translationVi": "Bánh pancake dày mập, đứng lại, tôi muốn ăn bạn! Nhưng nó lại trả lời:"
-    },
-    {
-        "text": "Ich bin drei alten Weibern und dem Häschen und dem Wolf entkommen.",
-        "start": 146.5,
-        "end": 150.60000610351562,
-        "wordTimings": [
+            },
             {
                 "word": "Ich",
                 "start": 146.5,
@@ -1334,8 +1316,8 @@
                 "end": 150.60000610351562
             }
         ],
-        "translationEn": "I escaped from three old women, the little rabbit, and the wolf.",
-        "translationVi": "Tôi đã thoát khỏi ba bà lão, con thỏ và con sói."
+        "translationEn": "But she replied again: I have escaped from three old women, the little rabbit, and the wolf.",
+        "translationVi": "Nhưng bà ta lại trả lời: Tôi đã trốn thoát khỏi ba bà lão, con thỏ và con sói."
     },
     {
         "text": "Und da soll ich mich von dir fressen lassen? Und kullerte kantapper, kantapper weiter.",
@@ -1414,12 +1396,12 @@
             }
         ],
         "translationEn": "And am I supposed to let you eat me? And it rolled on, clattering, clattering further.",
-        "translationVi": "Và vậy mà tôi phải để bạn ăn thịt tôi? Và tiếp tục lăn lộn, lăn lộn mãi."
+        "translationVi": "Và ở đó tôi phải để bạn ăn thịt tôi sao? Và tiếp tục lăn lộn, lăn lộn mãi."
     },
     {
-        "text": "Als nächstes kam ein Pferd herbeigesprungen und rief:",
+        "text": "Als nächstes kam ein Pferd herbeigesprungen und rief: Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen!",
         "start": 164.39999389648438,
-        "end": 167.83999633789062,
+        "end": 173.02000427246094,
         "wordTimings": [
             {
                 "word": "Als",
@@ -1460,16 +1442,7 @@
                 "word": "rief:",
                 "start": 167.83999633789062,
                 "end": 167.83999633789062
-            }
-        ],
-        "translationEn": "Next, a horse came jumping over and called out:",
-        "translationVi": "Tiếp theo, một con ngựa nhảy đến và kêu lên:"
-    },
-    {
-        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Doch der Pfannkuchen antwortete nur:",
-        "start": 168.94000244140625,
-        "end": 176.4199981689453,
-        "wordTimings": [
+            },
             {
                 "word": "Dicker",
                 "start": 168.94000244140625,
@@ -1514,7 +1487,16 @@
                 "word": "fressen!",
                 "start": 172.63999938964844,
                 "end": 173.02000427246094
-            },
+            }
+        ],
+        "translationEn": "Next, a horse jumped over and shouted: Fat, thick pancake, stay still, I want to eat you!",
+        "translationVi": "Tiếp theo, một con ngựa nhảy đến và kêu: Bánh kếp béo tròn, đứng lại, ta muốn ăn ngươi!"
+    },
+    {
+        "text": "Doch der Pfannkuchen antwortete nur: Ich bin drei alten Weibern, dem Häschen, dem Wolf und der Ziege entkommen.",
+        "start": 174.0800018310547,
+        "end": 182.1199951171875,
+        "wordTimings": [
             {
                 "word": "Doch",
                 "start": 174.0800018310547,
@@ -1539,16 +1521,7 @@
                 "word": "nur:",
                 "start": 176,
                 "end": 176.4199981689453
-            }
-        ],
-        "translationEn": "Fat thick pancake, stay still, I want to eat you! But the pancake only replied:",
-        "translationVi": "Bánh kếp béo tròn, đứng lại, tôi muốn ăn bạn! Nhưng bánh kếp chỉ đáp lại:"
-    },
-    {
-        "text": "Ich bin drei alten Weibern, dem Häschen, dem Wolf und der Ziege entkommen.",
-        "start": 176.4199981689453,
-        "end": 182.1199951171875,
-        "wordTimings": [
+            },
             {
                 "word": "Ich",
                 "start": 176.4199981689453,
@@ -1615,8 +1588,8 @@
                 "end": 182.1199951171875
             }
         ],
-        "translationEn": "I escaped from three old women, the bunny, the wolf, and the goat.",
-        "translationVi": "Tôi đã trốn thoát khỏi ba bà lão, con thỏ, con sói và con dê."
+        "translationEn": "But the pancake only replied: I have escaped from three old women, the little rabbit, the wolf, and the goat.",
+        "translationVi": "Nhưng cái bánh kếp chỉ đáp: Tôi đã trốn thoát khỏi ba bà lão, con thỏ, con sói và con dê."
     },
     {
         "text": "Und jetzt soll ich mich von dir fressen lassen?",
@@ -1669,7 +1642,7 @@
                 "end": 185.13999938964844
             }
         ],
-        "translationEn": "And now am I supposed to let you eat me?",
+        "translationEn": "And now I'm supposed to let you eat me?",
         "translationVi": "Và bây giờ tôi phải để bạn ăn thịt tôi?"
     },
     {
@@ -1712,9 +1685,9 @@
         "translationVi": "Và lăn nhanh, lăn nhanh tiếp tục."
     },
     {
-        "text": "Schließlich kam ein Schwein angerannt, das rief:",
+        "text": "Schließlich kam ein Schwein angerannt, das rief: Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen!",
         "start": 196.5,
-        "end": 199.32000732421875,
+        "end": 204.74000549316406,
         "wordTimings": [
             {
                 "word": "Schließlich",
@@ -1750,16 +1723,7 @@
                 "word": "rief:",
                 "start": 198.97999572753906,
                 "end": 199.32000732421875
-            }
-        ],
-        "translationEn": "Finally, a pig came running, shouting:",
-        "translationVi": "Cuối cùng, một con lợn chạy đến, nó kêu:"
-    },
-    {
-        "text": "Dicker fetter Pfannkuchen, bleib stehen, ich will dich fressen! Dieser antwortete jedoch erneut:",
-        "start": 200.17999267578125,
-        "end": 207.77999877929688,
-        "wordTimings": [
+            },
             {
                 "word": "Dicker",
                 "start": 200.17999267578125,
@@ -1804,7 +1768,16 @@
                 "word": "fressen!",
                 "start": 204.02000427246094,
                 "end": 204.74000549316406
-            },
+            }
+        ],
+        "translationEn": "Finally, a pig came running up, shouting: Fat, plump pancake, stop, I want to eat you!",
+        "translationVi": "Cuối cùng, một con heo chạy đến, nó kêu: Bánh kếp béo tròn, đứng lại, ta muốn ăn mày!"
+    },
+    {
+        "text": "Dieser antwortete jedoch erneut: Ich bin drei alten Weibern, dem Häschen, dem Wolf, der Ziege und dem Pferd entkommen.",
+        "start": 205.5399932861328,
+        "end": 214.4199981689453,
+        "wordTimings": [
             {
                 "word": "Dieser",
                 "start": 205.5399932861328,
@@ -1824,16 +1797,7 @@
                 "word": "erneut:",
                 "start": 207.3000030517578,
                 "end": 207.77999877929688
-            }
-        ],
-        "translationEn": "Fat thick pancake, stay still, I want to eat you! However, this one replied again:",
-        "translationVi": "Bánh pancake béo mập, đứng lại, tôi muốn ăn bạn! Tuy nhiên, nó lại trả lời một lần nữa:"
-    },
-    {
-        "text": "Ich bin drei alten Weibern, dem Häschen, dem Wolf, der Ziege und dem Pferd entkommen.",
-        "start": 208.67999267578125,
-        "end": 214.4199981689453,
-        "wordTimings": [
+            },
             {
                 "word": "Ich",
                 "start": 208.67999267578125,
@@ -1897,11 +1861,11 @@
             {
                 "word": "dem",
                 "start": 213.3000030517578,
-                "end": 213.86000061035156
+                "end": 213.83999633789062
             },
             {
                 "word": "Pferd",
-                "start": 213.86000061035156,
+                "start": 213.83999633789062,
                 "end": 214
             },
             {
@@ -1910,8 +1874,8 @@
                 "end": 214.4199981689453
             }
         ],
-        "translationEn": "I escaped from three old women, the bunny, the wolf, the goat, and the horse.",
-        "translationVi": "Tôi đã thoát khỏi ba bà lão, con thỏ, con sói, con dê và con ngựa."
+        "translationEn": "However, he replied again: I escaped from three old women, the bunny, the wolf, the goat, and the horse.",
+        "translationVi": "Tuy nhiên, người này lại trả lời: Tôi đã trốn thoát khỏi ba bà lão, con thỏ, con sói, con dê và con ngựa."
     },
     {
         "text": "Und jetzt soll ich mich von dir fressen lassen?",
@@ -1964,8 +1928,8 @@
                 "end": 217.72000122070312
             }
         ],
-        "translationEn": "And now am I supposed to let you eat me?",
-        "translationVi": "Và bây giờ tôi phải để bạn ăn thịt tôi sao?"
+        "translationEn": "And now I'm supposed to let you eat me?",
+        "translationVi": "Và bây giờ tôi phải để bạn ăn thịt tôi?"
     },
     {
         "text": "Und kullerte kantapper, kantapper rasch weiter.",
@@ -2004,12 +1968,12 @@
             }
         ],
         "translationEn": "And it rolled along, rolling quickly further.",
-        "translationVi": "Và lăn lóc, lăn lóc nhanh chóng tiếp tục."
+        "translationVi": "Và lăn lộn, lăn lộn nhanh chóng tiếp tục."
     },
     {
-        "text": "Da kamen drei Kinder, die keinen Vater und keine Mutter mehr hatten, und sagten:",
+        "text": "Da kamen drei Kinder, die keinen Vater und keine Mutter mehr hatten, und sagten: Lieber Pfannkuchen, bleib stehen, wir haben den ganzen Tag noch nichts gegessen.",
         "start": 233.77999877929688,
-        "end": 238.86000061035156,
+        "end": 244.9600067138672,
         "wordTimings": [
             {
                 "word": "Da",
@@ -2080,16 +2044,7 @@
                 "word": "sagten:",
                 "start": 238.47999572753906,
                 "end": 238.86000061035156
-            }
-        ],
-        "translationEn": "Then three children came who no longer had a father or a mother, and said:",
-        "translationVi": "Có ba đứa trẻ đến, không còn cha mẹ nữa, và nói:"
-    },
-    {
-        "text": "Lieber Pfannkuchen, bleib stehen, wir haben den ganzen Tag noch nichts gegessen.",
-        "start": 239.86000061035156,
-        "end": 244.9600067138672,
-        "wordTimings": [
+            },
             {
                 "word": "Lieber",
                 "start": 239.86000061035156,
@@ -2151,13 +2106,13 @@
                 "end": 244.9600067138672
             }
         ],
-        "translationEn": "Dear pancake, stay still, we haven't eaten anything all day.",
-        "translationVi": "Bạn bánh kếp ơi, đứng lại, chúng ta chưa ăn gì cả trong suốt cả ngày."
+        "translationEn": "Then three children came who no longer had a father or a mother, and said: Dear pancake, stay still, we haven't eaten anything all day.",
+        "translationVi": "Có ba đứa trẻ đến, không còn cha mẹ, và nói: Bánh kếp ơi, hãy đứng lại, chúng tôi chưa ăn gì cả trong suốt cả ngày."
     },
     {
-        "text": "Da sprang der dicke fette Pfannkuchen in den Korb der Kinder",
+        "text": "Da sprang der dicke fette Pfannkuchen in den Korb der Kinder und ließ sich von ihnen nicht mehr fressen.",
         "start": 246.16000366210938,
-        "end": 250.75999450683594,
+        "end": 252.16000366210938,
         "wordTimings": [
             {
                 "word": "Da",
@@ -2213,16 +2168,7 @@
                 "word": "Kinder",
                 "start": 250.4199981689453,
                 "end": 250.75999450683594
-            }
-        ],
-        "translationEn": "Then the big fat pancake jumped into the children's basket.",
-        "translationVi": "Thế là cái bánh kếp béo tròn nhảy vào giỏ của bọn trẻ."
-    },
-    {
-        "text": "und ließ sich von ihnen nicht mehr fressen lassen.",
-        "start": 250.9199981689453,
-        "end": 252.16000366210938,
-        "wordTimings": [
+            },
             {
                 "word": "und",
                 "start": 250.9199981689453,
@@ -2259,18 +2205,13 @@
                 "end": 252.16000366210938
             },
             {
-                "word": "fressen",
-                "start": 252.16000366210938,
-                "end": 252.16000366210938
-            },
-            {
-                "word": "lassen.",
+                "word": "fressen.",
                 "start": 252.16000366210938,
                 "end": 252.16000366210938
             }
         ],
-        "translationEn": "and no longer allowed them to eat him.",
-        "translationVi": "và không để chúng ăn nữa."
+        "translationEn": "Then the thick, fat pancake jumped into the children's basket and would no longer let them eat him.",
+        "translationVi": "Thế là chiếc bánh kếp béo ngậy nhảy vào giỏ của bọn trẻ và không để chúng ăn nó nữa."
     },
     {
         "text": "Jetzt kennst du das Märchen vom dicken fetten Pfannkuchen.",
@@ -2323,8 +2264,8 @@
                 "end": 263.17999267578125
             }
         ],
-        "translationEn": "Now you know the fairy tale of the big fat pancake.",
-        "translationVi": "Bây giờ bạn đã biết câu chuyện cổ tích về chiếc bánh kếp béo tròn."
+        "translationEn": "Now you know the tale of the big fat pancake.",
+        "translationVi": "Bây giờ bạn đã biết câu chuyện cổ tích về chiếc bánh kếp béo ú."
     },
     {
         "text": "Aber hast du auch unseren kleinen Wichtel entdeckt?",
@@ -2427,6 +2368,6 @@
             }
         ],
         "translationEn": "Do you want to see more fairy tales directly? Then click here.",
-        "translationVi": "Bạn muốn xem thêm truyện cổ tích ngay bây giờ? Hãy nhấp vào đây."
+        "translationVi": "Bạn muốn xem thêm truyện cổ tích ngay bây giờ? Vậy hãy nhấp vào đây."
     }
 ]

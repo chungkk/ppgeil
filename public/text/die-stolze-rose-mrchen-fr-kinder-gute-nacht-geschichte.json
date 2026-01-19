@@ -1,8 +1,8 @@
 [
     {
-        "text": "Es war einmal in einem weit entfernten Land ein kleiner, aber dichter Wald.",
-        "start": 0,
-        "end": 5.899999904632568,
+        "text": "Es war einmal in einem weit entfernten Land, ein kleiner aber dichter Wald.",
+        "start": 5.599999904632568,
+        "end": 5.599999904632568,
         "wordTimings": [
             {
                 "word": "Es",
@@ -40,7 +40,7 @@
                 "end": 3.4000000953674316
             },
             {
-                "word": "Land",
+                "word": "Land,",
                 "start": 3.4000000953674316,
                 "end": 3.7200000286102295
             },
@@ -50,37 +50,37 @@
                 "end": 4.239999771118164
             },
             {
-                "word": "kleiner,",
+                "word": "kleiner",
                 "start": 4.239999771118164,
-                "end": 4.619999885559082
+                "end": 4.639999866485596
             },
             {
                 "word": "aber",
-                "start": 4.619999885559082,
+                "start": 4.840000152587891,
                 "end": 4.940000057220459
             },
             {
                 "word": "dichter",
                 "start": 4.940000057220459,
-                "end": 5.420000076293945
+                "end": 5.400000095367432
             },
             {
                 "word": "Wald.",
-                "start": 5.420000076293945,
-                "end": 5.899999904632568
+                "start": 5.400000095367432,
+                "end": 5.599999904632568
             }
         ],
         "translationEn": "Once upon a time in a faraway land, there was a small but dense forest.",
-        "translationVi": "Ngày xưa, ở một vùng đất xa xôi có một khu rừng nhỏ nhưng rậm rạp."
+        "translationVi": "Ngày xửa ngày xưa, ở một vùng đất xa xôi, có một khu rừng nhỏ nhưng rậm rạp."
     },
     {
         "text": "Die Bäume flüsterten sich gegenseitig zu, und die Blumen bestäubten sich gegenseitig.",
-        "start": 6.200000190734864,
-        "end": 10.839999961853028,
+        "start": 6.300000190734863,
+        "end": 10.539999961853027,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 6.200000190734864,
+                "start": 6.300000190734863,
                 "end": 6.480000019073486
             },
             {
@@ -136,7 +136,7 @@
             {
                 "word": "gegenseitig.",
                 "start": 9.84000015258789,
-                "end": 10.839999961853028
+                "end": 10.539999961853027
             }
         ],
         "translationEn": "The trees whispered to each other, and the flowers pollinated each other.",
@@ -144,12 +144,12 @@
     },
     {
         "text": "Alle Pflanzen genossen das Zusammenleben im Wald.",
-        "start": 10.860000038146973,
-        "end": 14.480000305175782,
+        "start": 10.960000038146973,
+        "end": 14.180000305175781,
         "wordTimings": [
             {
                 "word": "Alle",
-                "start": 10.860000038146973,
+                "start": 10.960000038146973,
                 "end": 11.279999732971191
             },
             {
@@ -180,20 +180,20 @@
             {
                 "word": "Wald.",
                 "start": 14.180000305175781,
-                "end": 14.480000305175782
+                "end": 14.180000305175781
             }
         ],
-        "translationEn": "All the plants enjoyed living together in the forest.",
+        "translationEn": "All plants enjoyed living together in the forest.",
         "translationVi": "Tất cả các cây cối đều thích cuộc sống chung trong rừng."
     },
     {
         "text": "Eines Tages, an einem der schönsten Tage im Frühling, zwischen einem Kaktus und einer Sonnenblume, begann ein leuchtender Samen zu wachsen.",
-        "start": 18.680000686645506,
-        "end": 27.61999969482422,
+        "start": 18.760000228881836,
+        "end": 27.31999969482422,
         "wordTimings": [
             {
                 "word": "Eines",
-                "start": 18.680000686645506,
+                "start": 18.760000228881836,
                 "end": 19.540000915527344
             },
             {
@@ -204,11 +204,11 @@
             {
                 "word": "an",
                 "start": 20.139999389648438,
-                "end": 20.299999237060547
+                "end": 20.280000686645508
             },
             {
                 "word": "einem",
-                "start": 20.299999237060547,
+                "start": 20.280000686645508,
                 "end": 20.440000534057617
             },
             {
@@ -294,20 +294,20 @@
             {
                 "word": "wachsen.",
                 "start": 27.31999969482422,
-                "end": 27.61999969482422
+                "end": 27.31999969482422
             }
         ],
-        "translationEn": "One day, on one of the most beautiful days in spring, between a cactus and a sunflower, a shining seed began to grow.",
+        "translationEn": "One day, on one of the most beautiful days of spring, between a cactus and a sunflower, a shining seed began to grow.",
         "translationVi": "Một ngày, vào một trong những ngày đẹp nhất của mùa xuân, giữa một cây xương rồng và một bông hoa hướng dương, một hạt giống rực rỡ bắt đầu nảy mầm."
     },
     {
         "text": "Diese wachsende Blume war eine prächtige Rose mit kaminroten Blütenblättern.",
-        "start": 28.219999694824217,
-        "end": 33.89999847412109,
+        "start": 28.31999969482422,
+        "end": 33.599998474121094,
         "wordTimings": [
             {
                 "word": "Diese",
-                "start": 28.219999694824217,
+                "start": 28.31999969482422,
                 "end": 28.860000610351562
             },
             {
@@ -353,20 +353,20 @@
             {
                 "word": "Blütenblättern.",
                 "start": 32.900001525878906,
-                "end": 33.89999847412109
+                "end": 33.599998474121094
             }
         ],
-        "translationEn": "This blooming flower was a magnificent rose with crimson petals.",
+        "translationEn": "This blooming flower was a magnificent rose with chimney-red petals.",
         "translationVi": "Bông hoa đang nở này là một bông hồng rực rỡ với những cánh hoa màu đỏ như lửa."
     },
     {
-        "text": "„Hallo, mein Name ist Rosi. Ich bin ein Kaktus. Schön, dich kennenzulernen!“",
-        "start": 36.76000061035156,
-        "end": 43.630001831054685,
+        "text": "Hallo, mein Name ist Rosi. Ich bin ein Kaktus.",
+        "start": 36.86000061035156,
+        "end": 41.720001220703125,
         "wordTimings": [
             {
-                "word": "„Hallo,",
-                "start": 36.76000061035156,
+                "word": "Hallo,",
+                "start": 36.86000061035156,
                 "end": 37.2400016784668
             },
             {
@@ -408,7 +408,16 @@
                 "word": "Kaktus.",
                 "start": 41.279998779296875,
                 "end": 41.720001220703125
-            },
+            }
+        ],
+        "translationEn": "Hello, my name is Rosi. I am a cactus.",
+        "translationVi": "Xin chào, tên tôi là Rosi. Tôi là một cây xương rồng."
+    },
+    {
+        "text": "Schön, dich kennenzulernen. Deine Blütenblätter sind so schön, Rosi.",
+        "start": 42.439998626708984,
+        "end": 47.779998779296875,
+        "wordTimings": [
             {
                 "word": "Schön,",
                 "start": 42.439998626708984,
@@ -420,22 +429,13 @@
                 "end": 42.86000061035156
             },
             {
-                "word": "kennenzulernen!“",
+                "word": "kennenzulernen.",
                 "start": 42.86000061035156,
-                "end": 43.630001831054685
-            }
-        ],
-        "translationEn": "\"Hello, my name is Rosi. I am a cactus. Nice to meet you!\"",
-        "translationVi": "„Xin chào, tôi tên là Rosi. Tôi là một cây xương rồng. Rất vui được gặp bạn!“"
-    },
-    {
-        "text": "„Deine Blütenblätter sind so schön, Rosi. Ich wünschte, ich hätte solche Blüten.“",
-        "start": 44.460001373291014,
-        "end": 51.64000015258789,
-        "wordTimings": [
+                "end": 43.33000183105469
+            },
             {
-                "word": "„Deine",
-                "start": 44.460001373291014,
+                "word": "Deine",
+                "start": 44.560001373291016,
                 "end": 44.599998474121094
             },
             {
@@ -462,7 +462,16 @@
                 "word": "Rosi.",
                 "start": 47.47999954223633,
                 "end": 47.779998779296875
-            },
+            }
+        ],
+        "translationEn": "Nice to meet you. Your petals are so beautiful, Rosi.",
+        "translationVi": "Rất vui được gặp bạn. Cánh hoa của bạn thật đẹp, Rosi."
+    },
+    {
+        "text": "Ich wünschte, ich hätte solche Blüten.",
+        "start": 48.36000061035156,
+        "end": 51.34000015258789,
+        "wordTimings": [
             {
                 "word": "Ich",
                 "start": 48.36000061035156,
@@ -471,7 +480,7 @@
             {
                 "word": "wünschte,",
                 "start": 49.29999923706055,
-                "end": 49.79999923706055
+                "end": 49.81999969482422
             },
             {
                 "word": "ich",
@@ -489,22 +498,22 @@
                 "end": 50.86000061035156
             },
             {
-                "word": "Blüten.“",
+                "word": "Blüten.",
                 "start": 50.86000061035156,
-                "end": 51.64000015258789
+                "end": 51.34000015258789
             }
         ],
-        "translationEn": "\"Your petals are so beautiful, Rosi. I wish I had such flowers.\"",
-        "translationVi": "\"Cánh hoa của bạn thật đẹp, Rosi. Tôi ước gì tôi có những bông hoa như vậy.\""
+        "translationEn": "I wish I had such flowers.",
+        "translationVi": "Tôi ước gì tôi có những bông hoa như vậy."
     },
     {
-        "text": "„Danke, aber nicht jeder kann klug und schön und duftend sein, oder?“",
-        "start": 51.24000015258789,
-        "end": 58.119999694824216,
+        "text": "Danke, aber nicht jeder kann klug und schön und duftend sein, oder?",
+        "start": 51.34000015258789,
+        "end": 57.81999969482422,
         "wordTimings": [
             {
-                "word": "„Danke,",
-                "start": 51.24000015258789,
+                "word": "Danke,",
+                "start": 51.34000015258789,
                 "end": 52.58000183105469
             },
             {
@@ -558,22 +567,22 @@
                 "end": 57.02000045776367
             },
             {
-                "word": "oder?“",
+                "word": "oder?",
                 "start": 57.279998779296875,
-                "end": 58.119999694824216
+                "end": 57.81999969482422
             }
         ],
-        "translationEn": "\"Thank you, but not everyone can be smart, beautiful, and fragrant, can they?\"",
-        "translationVi": "\"Cảm ơn, nhưng không phải ai cũng có thể thông minh, xinh đẹp và thơm tho, đúng không?\""
+        "translationEn": "Thank you, but not everyone can be smart, beautiful, and fragrant, can they?",
+        "translationVi": "Cảm ơn, nhưng không phải ai cũng có thể thông minh, xinh đẹp và thơm tho, đúng không?"
     },
     {
         "text": "Rosis hochmütige Antwort überraschte alle.",
-        "start": 61.460001373291014,
-        "end": 64.88000183105468,
+        "start": 61.560001373291016,
+        "end": 64.58000183105469,
         "wordTimings": [
             {
                 "word": "Rosis",
-                "start": 61.460001373291014,
+                "start": 61.560001373291016,
                 "end": 62.36000061035156
             },
             {
@@ -594,7 +603,7 @@
             {
                 "word": "alle.",
                 "start": 64.19999694824219,
-                "end": 64.88000183105468
+                "end": 64.58000183105469
             }
         ],
         "translationEn": "Rosi's arrogant response surprised everyone.",
@@ -602,12 +611,12 @@
     },
     {
         "text": "Sie war eine so arrogante Blume, obwohl sie gerade erst erblüht war.",
-        "start": 65.03999938964844,
-        "end": 69.25999908447265,
+        "start": 65.13999938964844,
+        "end": 68.95999908447266,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 65.03999938964844,
+                "start": 65.13999938964844,
                 "end": 65.13999938964844
             },
             {
@@ -663,20 +672,20 @@
             {
                 "word": "war.",
                 "start": 68.68000030517578,
-                "end": 69.25999908447265
+                "end": 68.95999908447266
             }
         ],
         "translationEn": "She was such an arrogant flower, even though she had just bloomed.",
-        "translationVi": "Cô ấy là một bông hoa kiêu ngạo, mặc dù cô ấy chỉ mới nở."
+        "translationVi": "Cô ấy là một bông hoa kiêu ngạo, mặc dù mới chỉ nở rộ."
     },
     {
-        "text": "„Ich bin offensichtlich die schönste Blume hier. Schau dir meine glänzenden Blütenblätter an!“",
-        "start": 71.77999725341797,
-        "end": 78.07999877929687,
+        "text": "Ich bin offensichtlich die schönste Blume hier.",
+        "start": 71.87999725341797,
+        "end": 74.63999938964844,
         "wordTimings": [
             {
-                "word": "„Ich",
-                "start": 71.77999725341797,
+                "word": "Ich",
+                "start": 71.87999725341797,
                 "end": 72.26000213623047
             },
             {
@@ -708,7 +717,16 @@
                 "word": "hier.",
                 "start": 74.22000122070312,
                 "end": 74.63999938964844
-            },
+            }
+        ],
+        "translationEn": "I am obviously the most beautiful flower here.",
+        "translationVi": "Tôi rõ ràng là bông hoa đẹp nhất ở đây."
+    },
+    {
+        "text": "Schau dir meine glänzenden Blütenblätter an.",
+        "start": 75.30000305175781,
+        "end": 77.77999877929688,
+        "wordTimings": [
             {
                 "word": "Schau",
                 "start": 75.30000305175781,
@@ -735,22 +753,22 @@
                 "end": 77.33999633789062
             },
             {
-                "word": "an!“",
+                "word": "an.",
                 "start": 77.33999633789062,
-                "end": 78.07999877929687
+                "end": 77.77999877929688
             }
         ],
-        "translationEn": "\"I am obviously the most beautiful flower here. Look at my shiny petals!\"",
-        "translationVi": "„Tôi rõ ràng là bông hoa đẹp nhất ở đây. Hãy nhìn những cánh hoa sáng bóng của tôi!“"
+        "translationEn": "Look at my shiny petals.",
+        "translationVi": "Hãy xem những cánh hoa sáng bóng của tôi."
     },
     {
-        "text": "„Es gibt hier viele schöne Pflanzen, Rosi. Du bist nur eine von ihnen.“",
-        "start": 78.3800033569336,
-        "end": 83.66000061035156,
+        "text": "Es gibt hier viele schöne Pflanzen, Rosi.",
+        "start": 78.4800033569336,
+        "end": 81.13999938964844,
         "wordTimings": [
             {
-                "word": "„Es",
-                "start": 78.3800033569336,
+                "word": "Es",
+                "start": 78.4800033569336,
                 "end": 78.80000305175781
             },
             {
@@ -782,7 +800,16 @@
                 "word": "Rosi.",
                 "start": 81.13999938964844,
                 "end": 81.13999938964844
-            },
+            }
+        ],
+        "translationEn": "There are many beautiful plants here, Rosi.",
+        "translationVi": "Ở đây có nhiều cây đẹp, Rosi."
+    },
+    {
+        "text": "Du bist nur eine von ihnen.",
+        "start": 81.55999755859375,
+        "end": 83.36000061035156,
+        "wordTimings": [
             {
                 "word": "Du",
                 "start": 81.55999755859375,
@@ -809,22 +836,22 @@
                 "end": 83.05999755859375
             },
             {
-                "word": "ihnen.“",
+                "word": "ihnen.",
                 "start": 83.05999755859375,
-                "end": 83.66000061035156
+                "end": 83.36000061035156
             }
         ],
-        "translationEn": "\"There are many beautiful plants here, Rosi. You are just one of them.\"",
-        "translationVi": "\"Có nhiều cây đẹp ở đây, Rosi. Bạn chỉ là một trong số đó.\""
+        "translationEn": "You are just one of them.",
+        "translationVi": "Bạn chỉ là một trong số họ."
     },
     {
-        "text": "„Was? Wie kannst du es wagen, mich mit dem stacheligen Kaktus zu vergleichen? Ich bin viel schöner als er!“",
-        "start": 83.91999664306641,
-        "end": 90.60000305175781,
+        "text": "Was? Wie kannst du es wagen, mich mit dem stacheligen Kaktus zu vergleichen?",
+        "start": 84.0199966430664,
+        "end": 88.5199966430664,
         "wordTimings": [
             {
-                "word": "„Was?",
-                "start": 83.91999664306641,
+                "word": "Was?",
+                "start": 84.0199966430664,
                 "end": 84.16000366210938
             },
             {
@@ -886,7 +913,16 @@
                 "word": "vergleichen?",
                 "start": 88.13999938964844,
                 "end": 88.5199966430664
-            },
+            }
+        ],
+        "translationEn": "What? How dare you compare me to the prickly cactus?",
+        "translationVi": "Cái gì? Làm sao bạn dám so sánh tôi với cây xương rồng đầy gai?"
+    },
+    {
+        "text": "Ich bin viel schöner als er.",
+        "start": 88.68000030517578,
+        "end": 90.30000305175781,
+        "wordTimings": [
             {
                 "word": "Ich",
                 "start": 88.68000030517578,
@@ -913,22 +949,22 @@
                 "end": 89.87999725341797
             },
             {
-                "word": "er!“",
+                "word": "er.",
                 "start": 89.87999725341797,
-                "end": 90.60000305175781
+                "end": 90.30000305175781
             }
         ],
-        "translationEn": "\"What? How dare you compare me to the prickly cactus? I am much more beautiful than it!\"",
-        "translationVi": "„Gì? Làm sao bạn dám so sánh tôi với cây xương rồng đầy gai? Tôi đẹp hơn nó nhiều!“"
+        "translationEn": "I am much more beautiful than he is.",
+        "translationVi": "Tôi đẹp hơn anh ấy nhiều."
     },
     {
         "text": "Der Kaktus war sehr aufgebracht über das, was er hörte, und konnte nichts dazu sagen.",
-        "start": 91.9,
-        "end": 97.53999786376953,
+        "start": 92,
+        "end": 97.23999786376953,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 91.9,
+                "start": 92,
                 "end": 92.30000305175781
             },
             {
@@ -999,20 +1035,20 @@
             {
                 "word": "sagen.",
                 "start": 97.22000122070312,
-                "end": 97.53999786376953
+                "end": 97.23999786376953
             }
         ],
         "translationEn": "The cactus was very upset about what it heard and could not say anything about it.",
-        "translationVi": "Cây xương rồng rất tức giận về những gì nó nghe thấy và không thể nói gì thêm."
+        "translationVi": "Cây xương rồng rất bực bội về những gì nó nghe thấy và không thể nói gì thêm."
     },
     {
-        "text": "„Das ist aber nicht sehr nett, was du dem Kaktus da gesagt hast!“",
-        "start": 98.95999755859376,
-        "end": 102.46000366210937,
+        "text": "Das ist aber nicht sehr nett, was du dem Kaktus da gesagt hast.",
+        "start": 99.05999755859375,
+        "end": 102.16000366210938,
         "wordTimings": [
             {
-                "word": "„Das",
-                "start": 98.95999755859376,
+                "word": "Das",
+                "start": 99.05999755859375,
                 "end": 99.18000030517578
             },
             {
@@ -1071,37 +1107,37 @@
                 "end": 101.87999725341797
             },
             {
-                "word": "hast!“",
+                "word": "hast.",
                 "start": 101.87999725341797,
-                "end": 102.46000366210937
+                "end": 102.16000366210938
             }
         ],
-        "translationEn": "\"That's not very nice, what you said to the cactus there!\"",
-        "translationVi": "„Nhưng điều đó không đẹp chút nào, những gì bạn đã nói với cây xương rồng đó!“"
+        "translationEn": "That's not very nice, what you said to the cactus there.",
+        "translationVi": "Nhưng điều đó không được tốt lắm, những gì bạn đã nói với cây xương rồng đó."
     },
     {
-        "text": "„Ach, sowas! Schau mal, du hast doch selber Stacheln!“",
-        "start": 102.71999969482422,
-        "end": 106.93999938964843,
+        "text": "So was! Schau mal, du hast doch selber Stacheln.",
+        "start": 103,
+        "end": 106.63999938964844,
         "wordTimings": [
             {
-                "word": "„Ach,",
-                "start": 102.71999969482422,
-                "end": 103.45999908447266
+                "word": "So",
+                "start": 103,
+                "end": 103.63999938964844
             },
             {
-                "word": "sowas!",
-                "start": 103.45999908447266,
+                "word": "was!",
+                "start": 103.63999938964844,
                 "end": 103.91999816894531
             },
             {
                 "word": "Schau",
                 "start": 104.26000213623047,
-                "end": 104.5
+                "end": 104.5199966430664
             },
             {
                 "word": "mal,",
-                "start": 104.5,
+                "start": 104.5199966430664,
                 "end": 104.73999786376953
             },
             {
@@ -1117,30 +1153,30 @@
             {
                 "word": "doch",
                 "start": 105.36000061035156,
-                "end": 105.66000366210938
+                "end": 105.68000030517578
             },
             {
                 "word": "selber",
-                "start": 105.66000366210938,
+                "start": 105.68000030517578,
                 "end": 106.04000091552734
             },
             {
-                "word": "Stacheln!“",
+                "word": "Stacheln.",
                 "start": 106.04000091552734,
-                "end": 106.93999938964843
+                "end": 106.63999938964844
             }
         ],
-        "translationEn": "\"Oh, how about that! Look, you have thorns yourself!\"",
-        "translationVi": "\"Ôi, cái gì vậy! Nhìn kìa, chính bạn cũng có gai mà!\""
+        "translationEn": "Just like that! Look, you have thorns yourself.",
+        "translationVi": "Thế đấy! Nhìn xem, chính bạn cũng có gai mà."
     },
     {
-        "text": "„Eigentlich ist es nicht nett, einen Kaktus mit einer schönen Rose wie mir zu vergleichen.“",
-        "start": 107.4,
-        "end": 112.57999877929687,
+        "text": "Eigentlich ist es nicht nett, einen Kaktus mit einer schönen Rose wie mir zu vergleichen.",
+        "start": 107.5,
+        "end": 112.27999877929688,
         "wordTimings": [
             {
-                "word": "„Eigentlich",
-                "start": 107.4,
+                "word": "Eigentlich",
+                "start": 107.5,
                 "end": 108.0999984741211
             },
             {
@@ -1209,22 +1245,22 @@
                 "end": 111.9000015258789
             },
             {
-                "word": "vergleichen.“",
+                "word": "vergleichen.",
                 "start": 111.9000015258789,
-                "end": 112.57999877929687
+                "end": 112.27999877929688
             }
         ],
-        "translationEn": "\"Actually, it's not nice to compare a cactus with a beautiful rose like me.\"",
-        "translationVi": "\"Thực ra, so sánh một cây xương rồng với một bông hồng đẹp như tôi là không hay.\""
+        "translationEn": "Actually, it's not nice to compare a cactus with a beautiful rose like me.",
+        "translationVi": "Thực ra, thật không lịch sự khi so sánh một cây xương rồng với một bông hồng đẹp như tôi."
     },
     {
-        "text": "„Was weißt du schon von Schönheit? Du blühst ja nicht mal!“",
-        "start": 112.95999755859376,
-        "end": 117.57999877929687,
+        "text": "Was weißt du schon von Schönheit? Du blühst ja nicht mal.",
+        "start": 113.05999755859375,
+        "end": 117.27999877929688,
         "wordTimings": [
             {
-                "word": "„Was",
-                "start": 112.95999755859376,
+                "word": "Was",
+                "start": 113.05999755859375,
                 "end": 113.41999816894531
             },
             {
@@ -1273,22 +1309,22 @@
                 "end": 116.77999877929688
             },
             {
-                "word": "mal!“",
+                "word": "mal.",
                 "start": 116.77999877929688,
-                "end": 117.57999877929687
+                "end": 117.27999877929688
             }
         ],
-        "translationEn": "\"What do you know about beauty? You don't even bloom!\"",
-        "translationVi": "„Bạn biết gì về vẻ đẹp? Bạn còn không nở hoa nữa mà!“"
+        "translationEn": "What do you know about beauty? You don't even bloom.",
+        "translationVi": "Bạn biết gì về vẻ đẹp? Bạn thậm chí còn không nở hoa."
     },
     {
         "text": "Auch der Kaktus, nicht noch die Sonnenblume oder die Bäume, konnten sich an Rosis Verhalten gewöhnen.",
-        "start": 118.52000274658204,
-        "end": 124.8,
+        "start": 118.62000274658203,
+        "end": 124.5,
         "wordTimings": [
             {
                 "word": "Auch",
-                "start": 118.52000274658204,
+                "start": 118.62000274658203,
                 "end": 118.77999877929688
             },
             {
@@ -1364,20 +1400,20 @@
             {
                 "word": "gewöhnen.",
                 "start": 124.0199966430664,
-                "end": 124.8
+                "end": 124.5
             }
         ],
         "translationEn": "Even the cactus, not to mention the sunflower or the trees, could not get used to Rosi's behavior.",
-        "translationVi": "Cả cây xương rồng, cũng như hoa hướng dương hay cây cối, đều không thể quen với hành vi của Rosi."
+        "translationVi": "Cả cây xương rồng, cũng như hoa hướng dương hay những cái cây, đều không thể quen với hành vi của Rosi."
     },
     {
         "text": "Weil sie eine Blume war, die sich ständig selbst lobte.",
-        "start": 125.4999984741211,
-        "end": 129.21999816894532,
+        "start": 125.5999984741211,
+        "end": 128.9199981689453,
         "wordTimings": [
             {
                 "word": "Weil",
-                "start": 125.4999984741211,
+                "start": 125.5999984741211,
                 "end": 125.87999725341797
             },
             {
@@ -1423,20 +1459,20 @@
             {
                 "word": "lobte.",
                 "start": 128.52000427246094,
-                "end": 129.21999816894532
+                "end": 128.9199981689453
             }
         ],
         "translationEn": "Because she was a flower that constantly praised herself.",
-        "translationVi": "Bởi vì cô ấy là một bông hoa luôn tự khen ngợi mình."
+        "translationVi": "Bởi vì cô ấy là một bông hoa luôn tự khen ngợi bản thân."
     },
     {
-        "text": "Die Tage vergingen, und endlich kam der Sommer.",
-        "start": 130.00000610351563,
-        "end": 132.71999816894532,
+        "text": "Die Tage vergingen und endlich kam der Sommer. Die Sonnenblume war so glücklich.",
+        "start": 130.10000610351562,
+        "end": 134.8000030517578,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 130.00000610351563,
+                "start": 130.10000610351562,
                 "end": 130.27999877929688
             },
             {
@@ -1445,7 +1481,7 @@
                 "end": 130.5399932861328
             },
             {
-                "word": "vergingen,",
+                "word": "vergingen",
                 "start": 130.5399932861328,
                 "end": 131.16000366210938
             },
@@ -1472,20 +1508,11 @@
             {
                 "word": "Sommer.",
                 "start": 132.4199981689453,
-                "end": 132.71999816894532
-            }
-        ],
-        "translationEn": "The days went by, and finally summer arrived.",
-        "translationVi": "Những ngày trôi qua, và cuối cùng mùa hè cũng đến."
-    },
-    {
-        "text": "Die Sonnenblume war so glücklich.",
-        "start": 133.20000305175782,
-        "end": 135.10000305175782,
-        "wordTimings": [
+                "end": 132.4199981689453
+            },
             {
                 "word": "Die",
-                "start": 133.20000305175782,
+                "start": 133.3000030517578,
                 "end": 133.47999572753906
             },
             {
@@ -1506,20 +1533,20 @@
             {
                 "word": "glücklich.",
                 "start": 134.55999755859375,
-                "end": 135.10000305175782
+                "end": 134.8000030517578
             }
         ],
-        "translationEn": "The sunflower was so happy.",
-        "translationVi": "Hoa hướng dương rất hạnh phúc."
+        "translationEn": "The days passed and finally summer arrived. The sunflower was so happy.",
+        "translationVi": "Những ngày trôi qua và cuối cùng mùa hè cũng đến. Hoa hướng dương thật hạnh phúc."
     },
     {
         "text": "Mit ihrem leuchtend gelben Gesicht folgte sie den ganzen Tag lang den Sonnenstrahlen.",
-        "start": 134.70000305175782,
-        "end": 140.3800018310547,
+        "start": 134.8000030517578,
+        "end": 140.0800018310547,
         "wordTimings": [
             {
                 "word": "Mit",
-                "start": 134.70000305175782,
+                "start": 134.8000030517578,
                 "end": 136.0800018310547
             },
             {
@@ -1575,25 +1602,25 @@
             {
                 "word": "den",
                 "start": 139.39999389648438,
-                "end": 139.74000549316406
+                "end": 139.75999450683594
             },
             {
                 "word": "Sonnenstrahlen.",
-                "start": 139.74000549316406,
-                "end": 140.3800018310547
+                "start": 139.75999450683594,
+                "end": 140.0800018310547
             }
         ],
-        "translationEn": "With her bright yellow face, she followed the sun rays all day long.",
-        "translationVi": "Với khuôn mặt vàng rực rỡ, cô ấy đã theo dõi những tia nắng suốt cả ngày."
+        "translationEn": "With her bright yellow face, she followed the sunbeams all day long.",
+        "translationVi": "Với khuôn mặt vàng rực rỡ, cô ấy đã theo đuổi những tia nắng suốt cả ngày."
     },
     {
         "text": "Der Kaktus hingegen trank das Wasser, das er den ganzen Winter über gespeichert hatte.",
-        "start": 142.81999816894532,
-        "end": 148.3,
+        "start": 142.9199981689453,
+        "end": 148,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 142.81999816894532,
+                "start": 142.9199981689453,
                 "end": 143.1199951171875
             },
             {
@@ -1659,22 +1686,21 @@
             {
                 "word": "hatte.",
                 "start": 147.72000122070312,
-                "end": 148.3
+                "end": 148
             }
         ],
-        "translationEn": "The cactus, on the other hand, drank the water that it had stored throughout the entire winter.",
+        "translationEn": "The cactus, on the other hand, drank the water it had stored throughout the winter.",
         "translationVi": "Cây xương rồng thì uống nước mà nó đã tích trữ suốt mùa đông."
     },
     {
         "text": "Er hielt sich so den ganzen Sommer über kräftig und gesund.",
-        "start": 0,
-        "end": 151.9199951171875,
+        "start": 148,
+        "end": 151.6199951171875,
         "wordTimings": [
             {
                 "word": "Er",
-                "start": 0,
-                "end": 0.3,
-                "estimated": true
+                "start": 148,
+                "end": 148.25
             },
             {
                 "word": "hielt",
@@ -1724,20 +1750,20 @@
             {
                 "word": "gesund.",
                 "start": 151.16000366210938,
-                "end": 151.9199951171875
+                "end": 151.6199951171875
             }
         ],
-        "translationEn": "He kept himself strong and healthy all summer long.",
-        "translationVi": "Ông giữ gìn sức khỏe và sức mạnh suốt cả mùa hè."
+        "translationEn": "He kept himself strong and healthy throughout the whole summer.",
+        "translationVi": "Ông đã giữ cho mình khỏe mạnh và tràn đầy sức sống suốt mùa hè."
     },
     {
         "text": "Sogar einige kleine Vögel besuchten den Kaktus, um Wasser zu trinken.",
-        "start": 152.42000427246094,
-        "end": 156.4600036621094,
+        "start": 152.52000427246094,
+        "end": 156.16000366210938,
         "wordTimings": [
             {
                 "word": "Sogar",
-                "start": 152.42000427246094,
+                "start": 152.52000427246094,
                 "end": 152.67999267578125
             },
             {
@@ -1788,75 +1814,85 @@
             {
                 "word": "trinken.",
                 "start": 156.16000366210938,
-                "end": 156.4600036621094
+                "end": 156.16000366210938
             }
         ],
         "translationEn": "Even some small birds visited the cactus to drink water.",
-        "translationVi": "Ngay cả một số chú chim nhỏ cũng đã đến thăm cây xương rồng để uống nước."
+        "translationVi": "Ngay cả một số chú chim nhỏ cũng đến thăm cây xương rồng để uống nước."
     },
     {
-        "text": "Andere Pflanzen waren nicht in der Lage, wieder Kaktuswasser für dieses heiße Wetter zu speichern.",
-        "start": 157.23999633789063,
-        "end": 163.32000427246095,
+        "text": "Andere Pflanzen waren nicht in der Lage, wie der Kaktus Wasser für dieses heiße Wetter zu speichern.",
+        "start": 158.02000427246094,
+        "end": 163,
         "wordTimings": [
             {
                 "word": "Andere",
-                "start": 157.23999633789063,
+                "start": 158.02000427246094,
                 "end": 158.05999755859375
             },
             {
                 "word": "Pflanzen",
                 "start": 158.05999755859375,
-                "end": 158.5
+                "end": 158.47999572753906
             },
             {
                 "word": "waren",
-                "start": 158.5,
-                "end": 158.75999450683594
+                "start": 158.47999572753906,
+                "end": 158.74000549316406
             },
             {
                 "word": "nicht",
-                "start": 158.75999450683594,
-                "end": 159.0399932861328
+                "start": 158.74000549316406,
+                "end": 159.02000427246094
             },
             {
                 "word": "in",
-                "start": 159.0399932861328,
+                "start": 159.02000427246094,
                 "end": 159.22000122070312
             },
             {
                 "word": "der",
                 "start": 159.22000122070312,
-                "end": 159.39999389648438
+                "end": 159.3800048828125
             },
             {
                 "word": "Lage,",
-                "start": 159.39999389648438,
-                "end": 159.5399932861328
+                "start": 159.3800048828125,
+                "end": 159.55999755859375
             },
             {
-                "word": "wieder",
-                "start": 159.83999633789062,
-                "end": 159.89999389648438
+                "word": "wie",
+                "start": 159.66000366210938,
+                "end": 159.77999877929688
             },
             {
-                "word": "Kaktuswasser",
-                "start": 159.89999389648438,
-                "end": 160.66000366210938
+                "word": "der",
+                "start": 159.77999877929688,
+                "end": 159.9199981689453
+            },
+            {
+                "word": "Kaktus",
+                "start": 159.9199981689453,
+                "end": 160.3800048828125
+            },
+            {
+                "word": "Wasser",
+                "start": 160.3800048828125,
+                "end": 160.6999969482422
             },
             {
                 "word": "für",
-                "start": 160.66000366210938,
+                "start": 160.6999969482422,
                 "end": 161.13999938964844
             },
             {
                 "word": "dieses",
                 "start": 161.13999938964844,
-                "end": 161.5399932861328
+                "end": 161.52000427246094
             },
             {
                 "word": "heiße",
-                "start": 161.5399932861328,
+                "start": 161.52000427246094,
                 "end": 162
             },
             {
@@ -1867,50 +1903,50 @@
             {
                 "word": "zu",
                 "start": 162.27999877929688,
-                "end": 162.63999938964844
+                "end": 162.66000366210938
             },
             {
                 "word": "speichern.",
-                "start": 162.63999938964844,
-                "end": 163.32000427246095
+                "start": 162.66000366210938,
+                "end": 163
             }
         ],
-        "translationEn": "Other plants were unable to store cactus water again for this hot weather.",
-        "translationVi": "Các loại cây khác không thể lưu trữ nước xương rồng cho thời tiết nóng này."
+        "translationEn": "Other plants were not able to store water for this hot weather like the cactus.",
+        "translationVi": "Các cây khác không thể tích trữ nước như cây xương rồng cho thời tiết nóng này."
     },
     {
         "text": "Und Rosi begann sogar vor Durst zu welken.",
-        "start": 163.5199951171875,
-        "end": 166.43999938964845,
+        "start": 163,
+        "end": 166.16000366210938,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 163.5199951171875,
-                "end": 164.10000610351562
+                "start": 163,
+                "end": 163.77999877929688
             },
             {
                 "word": "Rosi",
-                "start": 164.10000610351562,
-                "end": 164.25999450683594
+                "start": 163.77999877929688,
+                "end": 164.22000122070312
             },
             {
                 "word": "begann",
-                "start": 164.25999450683594,
+                "start": 164.22000122070312,
                 "end": 164.5800018310547
             },
             {
                 "word": "sogar",
                 "start": 164.5800018310547,
-                "end": 164.94000244140625
+                "end": 164.97999572753906
             },
             {
                 "word": "vor",
-                "start": 164.94000244140625,
-                "end": 165.44000244140625
+                "start": 164.97999572753906,
+                "end": 165.1999969482422
             },
             {
                 "word": "Durst",
-                "start": 165.44000244140625,
+                "start": 165.1999969482422,
                 "end": 165.4600067138672
             },
             {
@@ -1921,25 +1957,25 @@
             {
                 "word": "welken.",
                 "start": 165.86000061035156,
-                "end": 166.43999938964845
+                "end": 166.16000366210938
             }
         ],
         "translationEn": "And Rosi even began to wilt from thirst.",
         "translationVi": "Và Rosi thậm chí bắt đầu héo hon vì khát."
     },
     {
-        "text": "„Oh, wird es hier jemals regnen? Der Winter muss kommen, Rosi, damit es regnet!“",
-        "start": 167.56000366210938,
-        "end": 175.3,
+        "text": "Oh, wird es hier jemals regnen?",
+        "start": 167.74000549316406,
+        "end": 170.5800018310547,
         "wordTimings": [
             {
-                "word": "„Oh,",
-                "start": 167.56000366210938,
-                "end": 168.27999877929688
+                "word": "Oh,",
+                "start": 167.74000549316406,
+                "end": 168.1199951171875
             },
             {
                 "word": "wird",
-                "start": 168.8000030517578,
+                "start": 168.60000610351562,
                 "end": 169.05999755859375
             },
             {
@@ -1955,16 +1991,25 @@
             {
                 "word": "jemals",
                 "start": 169.55999755859375,
-                "end": 170.02000427246094
+                "end": 170.0399932861328
             },
             {
                 "word": "regnen?",
-                "start": 170.02000427246094,
-                "end": 170.55999755859375
-            },
+                "start": 170.0399932861328,
+                "end": 170.5800018310547
+            }
+        ],
+        "translationEn": "Oh, will it ever rain here?",
+        "translationVi": "Ôi, liệu ở đây có bao giờ mưa không?"
+    },
+    {
+        "text": "Der Winter muss kommen, Rosi, damit es regnet.",
+        "start": 171.44000244140625,
+        "end": 175,
+        "wordTimings": [
             {
                 "word": "Der",
-                "start": 171.39999389648438,
+                "start": 171.44000244140625,
                 "end": 171.67999267578125
             },
             {
@@ -1975,21 +2020,21 @@
             {
                 "word": "muss",
                 "start": 171.97999572753906,
-                "end": 172.52000427246094
+                "end": 172.5399932861328
             },
             {
                 "word": "kommen,",
-                "start": 172.52000427246094,
+                "start": 172.5399932861328,
                 "end": 172.83999633789062
             },
             {
                 "word": "Rosi,",
-                "start": 173,
-                "end": 173.36000061035156
+                "start": 173.13999938964844,
+                "end": 173.33999633789062
             },
             {
                 "word": "damit",
-                "start": 173.8000030517578,
+                "start": 173.77999877929688,
                 "end": 173.94000244140625
             },
             {
@@ -1998,22 +2043,22 @@
                 "end": 174.39999389648438
             },
             {
-                "word": "regnet!“",
+                "word": "regnet.",
                 "start": 174.39999389648438,
-                "end": 175.3
+                "end": 175
             }
         ],
-        "translationEn": "\"Oh, will it ever rain here? Winter must come, Rosi, so that it rains!\"",
-        "translationVi": "„Ôi, liệu ở đây có bao giờ mưa không? Mùa đông phải đến, Rosi, để có mưa!“"
+        "translationEn": "Winter must come, Rosi, so that it rains.",
+        "translationVi": "Mùa đông phải đến, Rosi, để trời mưa."
     },
     {
-        "text": "„Aber ich bin dabei, vor Durst zu verdursten! Meine ganze Schönheit ist dahin!“",
-        "start": 175.23999633789063,
-        "end": 181.66000061035157,
+        "text": "Aber ich bin dabei, vor Durst zu verdursten. Meine ganze Schönheit ist dahin.",
+        "start": 175.32000732421875,
+        "end": 181.36000061035156,
         "wordTimings": [
             {
-                "word": "„Aber",
-                "start": 175.23999633789063,
+                "word": "Aber",
+                "start": 175.32000732421875,
                 "end": 175.6999969482422
             },
             {
@@ -2029,7 +2074,7 @@
             {
                 "word": "dabei,",
                 "start": 176.16000366210938,
-                "end": 176.5399932861328
+                "end": 176.55999755859375
             },
             {
                 "word": "vor",
@@ -2047,13 +2092,13 @@
                 "end": 177.27999877929688
             },
             {
-                "word": "verdursten!",
+                "word": "verdursten.",
                 "start": 177.27999877929688,
                 "end": 177.97999572753906
             },
             {
                 "word": "Meine",
-                "start": 178.3800048828125,
+                "start": 178.39999389648438,
                 "end": 178.5399932861328
             },
             {
@@ -2064,45 +2109,45 @@
             {
                 "word": "Schönheit",
                 "start": 179.0399932861328,
-                "end": 179.9600067138672
+                "end": 179.86000061035156
             },
             {
                 "word": "ist",
-                "start": 179.9600067138672,
-                "end": 180.3800048828125
+                "start": 179.86000061035156,
+                "end": 180.33999633789062
             },
             {
-                "word": "dahin!“",
-                "start": 180.3800048828125,
-                "end": 181.66000061035157
+                "word": "dahin.",
+                "start": 180.33999633789062,
+                "end": 181.36000061035156
             }
         ],
-        "translationEn": "\"But I am about to die of thirst! My entire beauty is gone!\"",
-        "translationVi": "„Nhưng tôi đang chết khát! Tất cả vẻ đẹp của tôi đã biến mất!“"
+        "translationEn": "But I am about to die of thirst. My entire beauty is gone.",
+        "translationVi": "Nhưng tôi đang chết khát. Tất cả vẻ đẹp của tôi đã biến mất."
     },
     {
-        "text": "„Du kannst den Kaktus um Hilfe bitten, wenn du willst.“",
-        "start": 182.31999816894532,
-        "end": 186.4199951171875,
+        "text": "Du kannst den Kaktus um Hilfe bitten, wenn du willst.",
+        "start": 182.3000030517578,
+        "end": 186.0399932861328,
         "wordTimings": [
             {
-                "word": "„Du",
-                "start": 182.31999816894532,
-                "end": 183.02000427246094
+                "word": "Du",
+                "start": 182.3000030517578,
+                "end": 183.10000610351562
             },
             {
                 "word": "kannst",
-                "start": 183.02000427246094,
-                "end": 183.4199981689453
+                "start": 183.10000610351562,
+                "end": 183.39999389648438
             },
             {
                 "word": "den",
-                "start": 183.4199981689453,
-                "end": 183.8800048828125
+                "start": 183.39999389648438,
+                "end": 183.8000030517578
             },
             {
                 "word": "Kaktus",
-                "start": 183.8800048828125,
+                "start": 183.8000030517578,
                 "end": 184.13999938964844
             },
             {
@@ -2122,61 +2167,61 @@
             },
             {
                 "word": "wenn",
-                "start": 185.33999633789062,
+                "start": 185.22000122070312,
                 "end": 185.33999633789062
             },
             {
                 "word": "du",
                 "start": 185.33999633789062,
-                "end": 185.5800018310547
+                "end": 185.60000610351562
             },
             {
-                "word": "willst.“",
-                "start": 185.5800018310547,
-                "end": 186.4199951171875
+                "word": "willst.",
+                "start": 185.60000610351562,
+                "end": 186.0399932861328
             }
         ],
-        "translationEn": "\"You can ask the cactus for help if you want.\"",
-        "translationVi": "„Bạn có thể nhờ cây xương rồng giúp đỡ nếu bạn muốn.“"
+        "translationEn": "You can ask the cactus for help if you want.",
+        "translationVi": "Bạn có thể nhờ cây xương rồng giúp đỡ nếu bạn muốn."
     },
     {
         "text": "Rosi sah, dass der Kaktus anderen Blumen gerne half.",
-        "start": 188.07999267578126,
-        "end": 191.4199951171875,
+        "start": 187.82000732421875,
+        "end": 191.13999938964844,
         "wordTimings": [
             {
                 "word": "Rosi",
-                "start": 188.07999267578126,
+                "start": 187.82000732421875,
                 "end": 188.3800048828125
             },
             {
                 "word": "sah,",
                 "start": 188.3800048828125,
-                "end": 188.67999267578125
+                "end": 188.60000610351562
             },
             {
                 "word": "dass",
-                "start": 188.97999572753906,
+                "start": 188.9600067138672,
                 "end": 188.97999572753906
             },
             {
                 "word": "der",
                 "start": 188.97999572753906,
-                "end": 189.24000549316406
+                "end": 189.25999450683594
             },
             {
                 "word": "Kaktus",
-                "start": 189.24000549316406,
-                "end": 189.74000549316406
+                "start": 189.25999450683594,
+                "end": 189.6999969482422
             },
             {
                 "word": "anderen",
-                "start": 189.74000549316406,
-                "end": 190.17999267578125
+                "start": 189.6999969482422,
+                "end": 190.16000366210938
             },
             {
                 "word": "Blumen",
-                "start": 190.17999267578125,
+                "start": 190.16000366210938,
                 "end": 190.44000244140625
             },
             {
@@ -2187,35 +2232,35 @@
             {
                 "word": "half.",
                 "start": 190.94000244140625,
-                "end": 191.4199951171875
+                "end": 191.13999938964844
             }
         ],
         "translationEn": "Rosi saw that the cactus liked to help other flowers.",
-        "translationVi": "Rosi thấy rằng cây xương rồng rất thích giúp đỡ các loài hoa khác."
+        "translationVi": "Rosi thấy rằng cây xương rồng thường giúp đỡ các loài hoa khác."
     },
     {
         "text": "Aber sie war zu stolz, um etwas zu sagen, weil sie immer schlecht über ihn redete.",
-        "start": 191.34000244140626,
-        "end": 195.97999267578126,
+        "start": 191.5,
+        "end": 195.67999267578125,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 191.34000244140626,
-                "end": 191.74000549316406
+                "start": 191.5,
+                "end": 191.72000122070312
             },
             {
                 "word": "sie",
-                "start": 191.74000549316406,
-                "end": 191.9199981689453
+                "start": 191.72000122070312,
+                "end": 191.94000244140625
             },
             {
                 "word": "war",
-                "start": 191.9199981689453,
-                "end": 192.1199951171875
+                "start": 191.94000244140625,
+                "end": 192.13999938964844
             },
             {
                 "word": "zu",
-                "start": 192.1199951171875,
+                "start": 192.13999938964844,
                 "end": 192.66000366210938
             },
             {
@@ -2226,11 +2271,11 @@
             {
                 "word": "um",
                 "start": 192.8000030517578,
-                "end": 193.02000427246094
+                "end": 192.9600067138672
             },
             {
                 "word": "etwas",
-                "start": 193.02000427246094,
+                "start": 192.9600067138672,
                 "end": 193.13999938964844
             },
             {
@@ -2245,7 +2290,7 @@
             },
             {
                 "word": "weil",
-                "start": 194,
+                "start": 194.02000427246094,
                 "end": 194.0800018310547
             },
             {
@@ -2276,20 +2321,20 @@
             {
                 "word": "redete.",
                 "start": 195.22000122070312,
-                "end": 195.97999267578126
+                "end": 195.67999267578125
             }
         ],
         "translationEn": "But she was too proud to say anything because she always spoke badly of him.",
-        "translationVi": "Nhưng cô ấy quá tự hào để nói gì, vì cô ấy luôn nói xấu về anh ấy."
+        "translationVi": "Nhưng cô ấy quá kiêu hãnh để nói gì, vì cô ấy luôn nói xấu về anh ta."
     },
     {
-        "text": "Als jedoch ein weiteres Blütenblatt verwelkte und von ihrem Kopf fiel, legte sie ihren Stolz ab und war bereit, sich zu schämen.",
-        "start": 196.45999755859376,
-        "end": 204.2600067138672,
+        "text": "Als jedoch ein weiteres Blütenblatt verwelkte und von ihrem Kopf fiel, legte sie ihren Stolz ab.",
+        "start": 196.5800018310547,
+        "end": 202.36000061035156,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 196.45999755859376,
+                "start": 196.5800018310547,
                 "end": 196.72000122070312
             },
             {
@@ -2310,11 +2355,11 @@
             {
                 "word": "Blütenblatt",
                 "start": 197.9199981689453,
-                "end": 198.36000061035156
+                "end": 198.3800048828125
             },
             {
                 "word": "verwelkte",
-                "start": 198.36000061035156,
+                "start": 198.3800048828125,
                 "end": 199
             },
             {
@@ -2330,11 +2375,11 @@
             {
                 "word": "ihrem",
                 "start": 199.72000122070312,
-                "end": 200
+                "end": 199.97999572753906
             },
             {
                 "word": "Kopf",
-                "start": 200,
+                "start": 199.97999572753906,
                 "end": 200.3800048828125
             },
             {
@@ -2345,11 +2390,11 @@
             {
                 "word": "legte",
                 "start": 201.22000122070312,
-                "end": 201.32000732421875
+                "end": 201.33999633789062
             },
             {
                 "word": "sie",
-                "start": 201.32000732421875,
+                "start": 201.33999633789062,
                 "end": 201.47999572753906
             },
             {
@@ -2360,659 +2405,681 @@
             {
                 "word": "Stolz",
                 "start": 201.8000030517578,
-                "end": 202.0800018310547
+                "end": 202.10000610351562
             },
             {
-                "word": "ab",
-                "start": 202.0800018310547,
+                "word": "ab.",
+                "start": 202.10000610351562,
                 "end": 202.36000061035156
-            },
-            {
-                "word": "und",
-                "start": 202.36000061035156,
-                "end": 202.63999938964844
-            },
-            {
-                "word": "war",
-                "start": 202.63999938964844,
-                "end": 202.8000030517578
-            },
-            {
-                "word": "bereit,",
-                "start": 202.8000030517578,
-                "end": 203.1999969482422
-            },
-            {
-                "word": "sich",
-                "start": 203.4199981689453,
-                "end": 203.4199981689453
-            },
-            {
-                "word": "zu",
-                "start": 203.4199981689453,
-                "end": 203.94000244140625
-            },
-            {
-                "word": "schämen.",
-                "start": 203.94000244140625,
-                "end": 204.2600067138672
             }
         ],
-        "translationEn": "However, when another petal withered and fell from her head, she laid aside her pride and was ready to feel ashamed.",
-        "translationVi": "Khi một cánh hoa khác héo úa và rơi khỏi đầu cô, cô đã bỏ đi sự kiêu hãnh của mình và sẵn sàng cảm thấy xấu hổ."
+        "translationEn": "However, when another petal withered and fell from her head, she laid down her pride.",
+        "translationVi": "Khi một cánh hoa khác héo úa và rơi khỏi đầu cô, cô đã bỏ đi sự kiêu hãnh của mình."
     },
     {
-        "text": "Sie bat den Kaktus um Hilfe.",
-        "start": 204.4,
-        "end": 206.83999328613282,
+        "text": "Sie war bereit, sich zu schämen.",
+        "start": 204.47999572753906,
+        "end": 211.22999572753906,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 204.4,
-                "end": 204.6999969482422
+                "start": 204.47999572753906,
+                "end": 204.72000122070312
             },
             {
-                "word": "bat",
-                "start": 204.6999969482422,
-                "end": 204.9199981689453
+                "word": "war",
+                "start": 204.72000122070312,
+                "end": 204.97000122070312
             },
             {
-                "word": "den",
-                "start": 204.9199981689453,
+                "word": "bereit,",
+                "start": 204.97000122070312,
                 "end": 205.22000122070312
             },
             {
+                "word": "sich",
+                "start": 209.75999450683594,
+                "end": 209.94000244140625
+            },
+            {
+                "word": "zu",
+                "start": 210.72000122070312,
+                "end": 210.97999572753906
+            },
+            {
+                "word": "schämen.",
+                "start": 210.97999572753906,
+                "end": 211.22999572753906
+            }
+        ],
+        "translationEn": "She was ready to be ashamed.",
+        "translationVi": "Cô ấy đã sẵn sàng để xấu hổ."
+    },
+    {
+        "text": "Sie bat den Kaktus um Hilfe.",
+        "start": 211.22999572753906,
+        "end": 212.72999572753906,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 211.22999572753906,
+                "end": 211.47999572753906
+            },
+            {
+                "word": "bat",
+                "start": 211.47999572753906,
+                "end": 211.72999572753906
+            },
+            {
+                "word": "den",
+                "start": 211.72999572753906,
+                "end": 211.97999572753906
+            },
+            {
                 "word": "Kaktus",
-                "start": 205.22000122070312,
-                "end": 205.75999450683594
+                "start": 211.97999572753906,
+                "end": 212.22999572753906
             },
             {
                 "word": "um",
-                "start": 205.75999450683594,
-                "end": 206.32000732421875
+                "start": 212.22999572753906,
+                "end": 212.47999572753906
             },
             {
                 "word": "Hilfe.",
-                "start": 206.32000732421875,
-                "end": 206.83999328613282
+                "start": 212.47999572753906,
+                "end": 212.72999572753906
             }
         ],
         "translationEn": "She asked the cactus for help.",
         "translationVi": "Cô ấy đã nhờ cây xương rồng giúp đỡ."
     },
     {
-        "text": "„Hey Kaktus, es tut mir leid, dass ich so grausam zu dir und Kieferbaum gesprochen habe. Ihr seid beide wunderschön und sehr nützliche Pflanzen für diesen Wald.“",
-        "start": 206.43999328613282,
-        "end": 217.1800048828125,
+        "text": "Hey Kaktus, es tut mir leid, dass ich so grausam zu dir und Kieferbaum gesprochen habe.",
+        "start": 212.72999572753906,
+        "end": 225.69000244140625,
         "wordTimings": [
             {
-                "word": "„Hey",
-                "start": 206.43999328613282,
-                "end": 207.36000061035156
+                "word": "Hey",
+                "start": 212.72999572753906,
+                "end": 212.97999572753906
             },
             {
                 "word": "Kaktus,",
-                "start": 207.89999389648438,
-                "end": 208.24000549316406
+                "start": 212.97999572753906,
+                "end": 213.22999572753906
             },
             {
                 "word": "es",
-                "start": 208.3800048828125,
-                "end": 208.8800048828125
+                "start": 213.22999572753906,
+                "end": 213.47999572753906
             },
             {
                 "word": "tut",
-                "start": 208.8800048828125,
-                "end": 209.0800018310547
+                "start": 213.47999572753906,
+                "end": 213.72999572753906
             },
             {
                 "word": "mir",
-                "start": 209.0800018310547,
-                "end": 209.5800018310547
+                "start": 210.97999572753906,
+                "end": 211.17999267578125
             },
             {
                 "word": "leid,",
-                "start": 209.5800018310547,
-                "end": 209.5800018310547
+                "start": 213.33999633789062,
+                "end": 213.6199951171875
             },
             {
                 "word": "dass",
-                "start": 209.75999450683594,
-                "end": 209.77999877929688
+                "start": 213.6199951171875,
+                "end": 213.8699951171875
             },
             {
                 "word": "ich",
-                "start": 209.77999877929688,
-                "end": 209.94000244140625
-            },
-            {
-                "word": "so",
-                "start": 209.94000244140625,
-                "end": 210.25999450683594
-            },
-            {
-                "word": "grausam",
-                "start": 210.25999450683594,
-                "end": 210.74000549316406
-            },
-            {
-                "word": "zu",
-                "start": 210.74000549316406,
-                "end": 210.9600067138672
-            },
-            {
-                "word": "dir",
-                "start": 210.9600067138672,
-                "end": 211.1999969482422
-            },
-            {
-                "word": "und",
-                "start": 211.1999969482422,
-                "end": 211.33999633789062
-            },
-            {
-                "word": "Kieferbaum",
-                "start": 211.33999633789062,
-                "end": 211.86000061035156
-            },
-            {
-                "word": "gesprochen",
-                "start": 211.86000061035156,
-                "end": 212.36000061035156
-            },
-            {
-                "word": "habe.",
-                "start": 212.36000061035156,
-                "end": 212.72000122070312
-            },
-            {
-                "word": "Ihr",
-                "start": 213.32000732421875,
-                "end": 213.33999633789062
-            },
-            {
-                "word": "seid",
-                "start": 213.33999633789062,
-                "end": 213.60000610351562
-            },
-            {
-                "word": "beide",
-                "start": 213.60000610351562,
-                "end": 214.0399932861328
-            },
-            {
-                "word": "wunderschön",
-                "start": 214.0399932861328,
-                "end": 214.6999969482422
-            },
-            {
-                "word": "und",
-                "start": 214.6999969482422,
-                "end": 214.8800048828125
-            },
-            {
-                "word": "sehr",
-                "start": 214.8800048828125,
-                "end": 215.4199981689453
-            },
-            {
-                "word": "nützliche",
-                "start": 215.4199981689453,
+                "start": 215.39999389648438,
                 "end": 215.63999938964844
             },
             {
-                "word": "Pflanzen",
+                "word": "so",
                 "start": 215.63999938964844,
-                "end": 216.0800018310547
+                "end": 215.88999938964844
             },
             {
-                "word": "für",
-                "start": 216.0800018310547,
-                "end": 216.3800048828125
-            },
-            {
-                "word": "diesen",
-                "start": 216.3800048828125,
-                "end": 216.66000366210938
-            },
-            {
-                "word": "Wald.“",
-                "start": 216.66000366210938,
-                "end": 217.1800048828125
-            }
-        ],
-        "translationEn": "\"Hey cactus, I'm sorry for speaking so cruelly to you and pine tree. You are both beautiful and very useful plants for this forest.\"",
-        "translationVi": "„Chào Cactus, tôi xin lỗi vì đã nói chuyện với bạn và cây thông một cách tàn nhẫn như vậy. Cả hai bạn đều rất đẹp và là những cây rất hữu ích cho khu rừng này.“"
-    },
-    {
-        "text": "„Könnt ihr mir vielleicht auch helfen?“",
-        "start": 217.56000366210938,
-        "end": 219.52000122070314,
-        "wordTimings": [
-            {
-                "word": "„Könnt",
-                "start": 217.56000366210938,
-                "end": 217.66000366210938
-            },
-            {
-                "word": "ihr",
-                "start": 217.66000366210938,
-                "end": 217.83999633789062
-            },
-            {
-                "word": "mir",
-                "start": 217.83999633789062,
-                "end": 218.1999969482422
-            },
-            {
-                "word": "vielleicht",
-                "start": 218.1999969482422,
-                "end": 218.5800018310547
-            },
-            {
-                "word": "auch",
-                "start": 218.5800018310547,
-                "end": 219.1999969482422
-            },
-            {
-                "word": "helfen?“",
-                "start": 219.1999969482422,
-                "end": 219.52000122070314
-            }
-        ],
-        "translationEn": "\"Can you maybe help me too?\"",
-        "translationVi": "\"Các bạn có thể giúp tôi không?\""
-    },
-    {
-        "text": "Der Kaktus sah, dass Rosi sich entschlossen hatte, bescheiden zu sein und ihre Arroganz und Stolz abgelegt hatte.",
-        "start": 220.57999267578126,
-        "end": 227.40000610351564,
-        "wordTimings": [
-            {
-                "word": "Der",
-                "start": 220.57999267578126,
-                "end": 221.24000549316406
-            },
-            {
-                "word": "Kaktus",
-                "start": 221.24000549316406,
-                "end": 221.6999969482422
-            },
-            {
-                "word": "sah,",
-                "start": 221.6999969482422,
-                "end": 221.89999389648438
-            },
-            {
-                "word": "dass",
-                "start": 222.0800018310547,
-                "end": 222.10000610351562
-            },
-            {
-                "word": "Rosi",
-                "start": 222.10000610351562,
-                "end": 222.4600067138672
-            },
-            {
-                "word": "sich",
-                "start": 222.4600067138672,
-                "end": 222.67999267578125
-            },
-            {
-                "word": "entschlossen",
-                "start": 222.67999267578125,
-                "end": 223.13999938964844
-            },
-            {
-                "word": "hatte,",
-                "start": 223.13999938964844,
-                "end": 223.4600067138672
-            },
-            {
-                "word": "bescheiden",
-                "start": 223.6999969482422,
-                "end": 223.97999572753906
+                "word": "grausam",
+                "start": 215.88999938964844,
+                "end": 216.13999938964844
             },
             {
                 "word": "zu",
-                "start": 223.97999572753906,
-                "end": 224.39999389648438
+                "start": 216.13999938964844,
+                "end": 216.38999938964844
             },
             {
-                "word": "sein",
-                "start": 224.39999389648438,
-                "end": 224.44000244140625
+                "word": "dir",
+                "start": 217.83999633789062,
+                "end": 218.22000122070312
             },
             {
                 "word": "und",
-                "start": 224.44000244140625,
+                "start": 224.4600067138672,
                 "end": 224.94000244140625
             },
             {
-                "word": "ihre",
+                "word": "Kieferbaum",
+                "start": 224.94000244140625,
+                "end": 225.19000244140625
+            },
+            {
+                "word": "gesprochen",
+                "start": 225.19000244140625,
+                "end": 225.44000244140625
+            },
+            {
+                "word": "habe.",
+                "start": 225.44000244140625,
+                "end": 225.69000244140625
+            }
+        ],
+        "translationEn": "Hey Cactus, I'm sorry that I spoke so cruelly to you and Pine Tree.",
+        "translationVi": "Chào Kaktus, tôi xin lỗi vì đã nói chuyện với bạn và Kieferbaum một cách tàn nhẫn như vậy."
+    },
+    {
+        "text": "Ihr seid beide wunderschön und sehr nützliche Pflanzen für diesen Wald.",
+        "start": 224.94000244140625,
+        "end": 239.6300048828125,
+        "wordTimings": [
+            {
+                "word": "Ihr",
                 "start": 224.94000244140625,
                 "end": 225.17999267578125
             },
             {
-                "word": "Arroganz",
-                "start": 225.17999267578125,
-                "end": 225.72000122070312
-            },
-            {
-                "word": "und",
-                "start": 225.72000122070312,
-                "end": 226.27999877929688
-            },
-            {
-                "word": "Stolz",
-                "start": 226.27999877929688,
-                "end": 226.27999877929688
-            },
-            {
-                "word": "abgelegt",
-                "start": 226.27999877929688,
-                "end": 226.8000030517578
-            },
-            {
-                "word": "hatte.",
-                "start": 226.8000030517578,
-                "end": 227.40000610351564
-            }
-        ],
-        "translationEn": "The cactus saw that Rosi had decided to be modest and had shed her arrogance and pride.",
-        "translationVi": "Cây xương rồng thấy rằng Rosi đã quyết định trở nên khiêm tốn và đã bỏ đi sự kiêu ngạo và tự hào của mình."
-    },
-    {
-        "text": "Also teilte er sein Wasser mit ihr.",
-        "start": 227.26000061035157,
-        "end": 229.35999755859376,
-        "wordTimings": [
-            {
-                "word": "Also",
-                "start": 227.26000061035157,
-                "end": 227.67999267578125
-            },
-            {
-                "word": "teilte",
-                "start": 227.67999267578125,
-                "end": 228
-            },
-            {
-                "word": "er",
-                "start": 228,
-                "end": 228.16000366210938
-            },
-            {
-                "word": "sein",
+                "word": "seid",
                 "start": 228.16000366210938,
-                "end": 228.3800048828125
+                "end": 228.39999389648438
             },
             {
-                "word": "Wasser",
-                "start": 228.3800048828125,
-                "end": 228.60000610351562
+                "word": "beide",
+                "start": 228.39999389648438,
+                "end": 228.64999389648438
             },
             {
-                "word": "mit",
-                "start": 228.60000610351562,
-                "end": 228.9600067138672
-            },
-            {
-                "word": "ihr.",
-                "start": 228.9600067138672,
-                "end": 229.35999755859376
-            }
-        ],
-        "translationEn": "So he shared his water with her.",
-        "translationVi": "Vì vậy, anh đã chia sẻ nước của mình với cô ấy."
-    },
-    {
-        "text": "Sie spürte, wie das Leben in ihr wieder aufkeimte, und ihre leuchtenden Blütenblätter streckten sich den Sonnenstrahlen entgegen.",
-        "start": 228.95999755859376,
-        "end": 237.4600036621094,
-        "wordTimings": [
-            {
-                "word": "Sie",
-                "start": 228.95999755859376,
-                "end": 229.82000732421875
-            },
-            {
-                "word": "spürte,",
-                "start": 229.82000732421875,
-                "end": 230.3000030517578
-            },
-            {
-                "word": "wie",
-                "start": 230.5,
-                "end": 230.5
-            },
-            {
-                "word": "das",
-                "start": 230.5,
-                "end": 230.77999877929688
-            },
-            {
-                "word": "Leben",
-                "start": 230.77999877929688,
-                "end": 231
-            },
-            {
-                "word": "in",
-                "start": 231,
-                "end": 231.32000732421875
-            },
-            {
-                "word": "ihr",
-                "start": 231.32000732421875,
-                "end": 231.32000732421875
-            },
-            {
-                "word": "wieder",
-                "start": 231.32000732421875,
-                "end": 231.67999267578125
-            },
-            {
-                "word": "aufkeimte,",
-                "start": 231.67999267578125,
-                "end": 232.1999969482422
+                "word": "wunderschön",
+                "start": 232.22000122070312,
+                "end": 232.67999267578125
             },
             {
                 "word": "und",
-                "start": 232.1999969482422,
-                "end": 232.6999969482422
+                "start": 232.67999267578125,
+                "end": 232.92999267578125
             },
             {
-                "word": "ihre",
-                "start": 232.6999969482422,
-                "end": 232.94000244140625
+                "word": "sehr",
+                "start": 232.92999267578125,
+                "end": 233.17999267578125
             },
             {
-                "word": "leuchtenden",
-                "start": 232.94000244140625,
-                "end": 233.5800018310547
+                "word": "nützliche",
+                "start": 233.17999267578125,
+                "end": 233.42999267578125
             },
             {
-                "word": "Blütenblätter",
-                "start": 233.5800018310547,
-                "end": 234.36000061035156
+                "word": "Pflanzen",
+                "start": 233.42999267578125,
+                "end": 233.67999267578125
             },
             {
-                "word": "streckten",
-                "start": 234.36000061035156,
-                "end": 234.9199981689453
+                "word": "für",
+                "start": 233.67999267578125,
+                "end": 233.92999267578125
             },
             {
-                "word": "sich",
-                "start": 234.9199981689453,
-                "end": 235.22000122070312
-            },
-            {
-                "word": "den",
-                "start": 235.22000122070312,
-                "end": 235.82000732421875
-            },
-            {
-                "word": "Sonnenstrahlen",
-                "start": 235.82000732421875,
-                "end": 236.5
-            },
-            {
-                "word": "entgegen.",
-                "start": 236.5,
-                "end": 237.4600036621094
-            }
-        ],
-        "translationEn": "She felt life stirring within her again, and her radiant petals reached out towards the sun's rays.",
-        "translationVi": "Cô cảm nhận được sự sống trong mình lại trỗi dậy, và những cánh hoa rực rỡ của cô vươn mình về phía những tia nắng mặt trời."
-    },
-    {
-        "text": "Von diesem Tag an lernte Rosi, ihre Freunde nicht nach ihrem Aussehen zu beurteilen.",
-        "start": 238.79999389648438,
-        "end": 244.2600067138672,
-        "wordTimings": [
-            {
-                "word": "Von",
-                "start": 238.79999389648438,
-                "end": 238.9600067138672
-            },
-            {
-                "word": "diesem",
-                "start": 238.9600067138672,
+                "word": "diesen",
+                "start": 238.94000244140625,
                 "end": 239.3800048828125
             },
             {
-                "word": "Tag",
+                "word": "Wald.",
                 "start": 239.3800048828125,
-                "end": 239.67999267578125
-            },
-            {
-                "word": "an",
-                "start": 239.67999267578125,
-                "end": 240.4199981689453
-            },
-            {
-                "word": "lernte",
-                "start": 240.4199981689453,
-                "end": 240.4199981689453
-            },
-            {
-                "word": "Rosi,",
-                "start": 240.4199981689453,
-                "end": 240.82000732421875
-            },
-            {
-                "word": "ihre",
-                "start": 240.82000732421875,
-                "end": 241.17999267578125
-            },
-            {
-                "word": "Freunde",
-                "start": 241.17999267578125,
-                "end": 241.5800018310547
-            },
-            {
-                "word": "nicht",
-                "start": 241.5800018310547,
-                "end": 242.22000122070312
-            },
-            {
-                "word": "nach",
-                "start": 242.22000122070312,
-                "end": 242.4199981689453
-            },
-            {
-                "word": "ihrem",
-                "start": 242.4199981689453,
-                "end": 242.6999969482422
-            },
-            {
-                "word": "Aussehen",
-                "start": 242.6999969482422,
-                "end": 243.16000366210938
-            },
-            {
-                "word": "zu",
-                "start": 243.16000366210938,
-                "end": 243.47999572753906
-            },
-            {
-                "word": "beurteilen.",
-                "start": 243.47999572753906,
-                "end": 244.2600067138672
+                "end": 239.6300048828125
             }
         ],
-        "translationEn": "From that day on, Rosi learned not to judge her friends by their appearance.",
-        "translationVi": "Từ ngày đó, Rosi học cách không đánh giá bạn bè của mình dựa trên ngoại hình."
+        "translationEn": "You are both beautiful and very useful plants for this forest.",
+        "translationVi": "Các bạn đều rất đẹp và là những cây rất hữu ích cho khu rừng này."
     },
     {
-        "text": "Denn egal, wie unterschiedlich wir aussehen, jeder von uns ist mit Schönheit und Hilfsbereitschaft ausgestattet.",
-        "start": 244.22000732421876,
-        "end": 251.43999938964845,
+        "text": "Könnt ihr mir vielleicht auch helfen?",
+        "start": 239.6300048828125,
+        "end": 246.88999938964844,
         "wordTimings": [
             {
-                "word": "Denn",
-                "start": 244.22000732421876,
-                "end": 244.63999938964844
+                "word": "Könnt",
+                "start": 239.6300048828125,
+                "end": 239.8800048828125
             },
             {
-                "word": "egal,",
-                "start": 244.63999938964844,
-                "end": 245.0399932861328
+                "word": "ihr",
+                "start": 240.8000030517578,
+                "end": 241.1999969482422
             },
             {
-                "word": "wie",
-                "start": 245.0399932861328,
-                "end": 245.24000549316406
-            },
-            {
-                "word": "unterschiedlich",
-                "start": 245.24000549316406,
-                "end": 245.9199981689453
-            },
-            {
-                "word": "wir",
+                "word": "mir",
                 "start": 245.9199981689453,
                 "end": 246.13999938964844
             },
             {
-                "word": "aussehen,",
+                "word": "vielleicht",
                 "start": 246.13999938964844,
-                "end": 246.75999450683594
+                "end": 246.38999938964844
             },
             {
-                "word": "jeder",
+                "word": "auch",
+                "start": 246.38999938964844,
+                "end": 246.63999938964844
+            },
+            {
+                "word": "helfen?",
+                "start": 246.63999938964844,
+                "end": 246.88999938964844
+            }
+        ],
+        "translationEn": "Can you maybe help me too?",
+        "translationVi": "Các bạn có thể giúp tôi không?"
+    },
+    {
+        "text": "Der Kaktus sah, dass Rosi sich entschlossen hatte, bescheiden zu sein.",
+        "start": 247.1199951171875,
+        "end": 249.6199951171875,
+        "wordTimings": [
+            {
+                "word": "Der",
                 "start": 247.1199951171875,
                 "end": 247.1199951171875
             },
             {
-                "word": "von",
+                "word": "Kaktus",
                 "start": 247.1199951171875,
-                "end": 247.44000244140625
+                "end": 247.3699951171875
             },
             {
-                "word": "uns",
-                "start": 247.44000244140625,
-                "end": 247.5800018310547
+                "word": "sah,",
+                "start": 247.3699951171875,
+                "end": 247.6199951171875
             },
             {
-                "word": "ist",
-                "start": 247.5800018310547,
-                "end": 248.10000610351562
+                "word": "dass",
+                "start": 247.6199951171875,
+                "end": 247.8699951171875
             },
             {
-                "word": "mit",
-                "start": 248.10000610351562,
-                "end": 248.36000061035156
+                "word": "Rosi",
+                "start": 247.8699951171875,
+                "end": 248.1199951171875
             },
             {
-                "word": "Schönheit",
-                "start": 248.36000061035156,
-                "end": 248.8800048828125
+                "word": "sich",
+                "start": 248.1199951171875,
+                "end": 248.3699951171875
+            },
+            {
+                "word": "entschlossen",
+                "start": 248.3699951171875,
+                "end": 248.6199951171875
+            },
+            {
+                "word": "hatte,",
+                "start": 248.6199951171875,
+                "end": 248.8699951171875
+            },
+            {
+                "word": "bescheiden",
+                "start": 248.8699951171875,
+                "end": 249.1199951171875
+            },
+            {
+                "word": "zu",
+                "start": 249.1199951171875,
+                "end": 249.3699951171875
+            },
+            {
+                "word": "sein.",
+                "start": 249.3699951171875,
+                "end": 249.6199951171875
+            }
+        ],
+        "translationEn": "The cactus saw that Rosi had decided to be modest.",
+        "translationVi": "Cây xương rồng thấy rằng Rosi đã quyết định sống khiêm tốn."
+    },
+    {
+        "text": "Sie hatte ihre Arroganz und Stolz abgelegt, also teilte er sein Wasser mit ihr.",
+        "start": 249.6199951171875,
+        "end": 248.58999633789062,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 249.6199951171875,
+                "end": 249.8699951171875
+            },
+            {
+                "word": "hatte",
+                "start": 249.8699951171875,
+                "end": 250.1199951171875
+            },
+            {
+                "word": "ihre",
+                "start": 250.1199951171875,
+                "end": 250.3699951171875
+            },
+            {
+                "word": "Arroganz",
+                "start": 250.3699951171875,
+                "end": 250.6199951171875
             },
             {
                 "word": "und",
+                "start": 247.60000610351562,
+                "end": 247.60000610351562
+            },
+            {
+                "word": "Stolz",
+                "start": 247.60000610351562,
+                "end": 247.85000610351562
+            },
+            {
+                "word": "abgelegt,",
+                "start": 247.85000610351562,
+                "end": 248.10000610351562
+            },
+            {
+                "word": "also",
+                "start": 248.10000610351562,
+                "end": 248.35000610351562
+            },
+            {
+                "word": "teilte",
+                "start": 248.35000610351562,
+                "end": 248.60000610351562
+            },
+            {
+                "word": "er",
+                "start": 248.60000610351562,
+                "end": 248.85000610351562
+            },
+            {
+                "word": "sein",
+                "start": 248.85000610351562,
+                "end": 249.10000610351562
+            },
+            {
+                "word": "Wasser",
+                "start": 249.10000610351562,
+                "end": 249.35000610351562
+            },
+            {
+                "word": "mit",
+                "start": 248.0800018310547,
+                "end": 248.33999633789062
+            },
+            {
+                "word": "ihr.",
+                "start": 248.33999633789062,
+                "end": 248.58999633789062
+            }
+        ],
+        "translationEn": "She had shed her arrogance and pride, so he shared his water with her.",
+        "translationVi": "Cô đã bỏ đi sự kiêu ngạo và tự mãn của mình, vì vậy anh đã chia sẻ nước với cô."
+    },
+    {
+        "text": "Sie spürte, wie das Leben in ihr wieder aufkeimte.",
+        "start": 248.58999633789062,
+        "end": 250.83999633789062,
+        "wordTimings": [
+            {
+                "word": "Sie",
+                "start": 248.58999633789062,
+                "end": 248.83999633789062
+            },
+            {
+                "word": "spürte,",
+                "start": 248.83999633789062,
+                "end": 249.08999633789062
+            },
+            {
+                "word": "wie",
+                "start": 249.08999633789062,
+                "end": 249.33999633789062
+            },
+            {
+                "word": "das",
+                "start": 249.33999633789062,
+                "end": 249.58999633789062
+            },
+            {
+                "word": "Leben",
+                "start": 249.58999633789062,
+                "end": 249.83999633789062
+            },
+            {
+                "word": "in",
+                "start": 249.83999633789062,
+                "end": 250.08999633789062
+            },
+            {
+                "word": "ihr",
+                "start": 250.08999633789062,
+                "end": 250.33999633789062
+            },
+            {
+                "word": "wieder",
+                "start": 250.33999633789062,
+                "end": 250.58999633789062
+            },
+            {
+                "word": "aufkeimte.",
+                "start": 250.58999633789062,
+                "end": 250.83999633789062
+            }
+        ],
+        "translationEn": "She felt life stirring within her again.",
+        "translationVi": "Cô cảm nhận được sự sống trong mình lại trỗi dậy."
+    },
+    {
+        "text": "Ihre leuchtenden Blütenblätter streckten sich den Sonnenstrahlen entgegen.",
+        "start": 250.83999633789062,
+        "end": 252.83999633789062,
+        "wordTimings": [
+            {
+                "word": "Ihre",
+                "start": 250.83999633789062,
+                "end": 251.08999633789062
+            },
+            {
+                "word": "leuchtenden",
+                "start": 251.08999633789062,
+                "end": 251.33999633789062
+            },
+            {
+                "word": "Blütenblätter",
+                "start": 251.33999633789062,
+                "end": 251.58999633789062
+            },
+            {
+                "word": "streckten",
+                "start": 251.58999633789062,
+                "end": 251.83999633789062
+            },
+            {
+                "word": "sich",
+                "start": 251.83999633789062,
+                "end": 252.08999633789062
+            },
+            {
+                "word": "den",
+                "start": 252.08999633789062,
+                "end": 252.33999633789062
+            },
+            {
+                "word": "Sonnenstrahlen",
+                "start": 252.33999633789062,
+                "end": 252.58999633789062
+            },
+            {
+                "word": "entgegen.",
+                "start": 252.58999633789062,
+                "end": 252.83999633789062
+            }
+        ],
+        "translationEn": "Their bright petals reached out towards the sun rays.",
+        "translationVi": "Những cánh hoa rực rỡ của chúng vươn mình về phía những tia nắng mặt trời."
+    },
+    {
+        "text": "Von diesem Tag an lernte Rosi, ihre Freunde nicht nach ihrem Aussehen zu beurteilen.",
+        "start": 252.83999633789062,
+        "end": 250.8800048828125,
+        "wordTimings": [
+            {
+                "word": "Von",
+                "start": 252.83999633789062,
+                "end": 253.08999633789062
+            },
+            {
+                "word": "diesem",
+                "start": 253.08999633789062,
+                "end": 253.33999633789062
+            },
+            {
+                "word": "Tag",
+                "start": 253.33999633789062,
+                "end": 253.58999633789062
+            },
+            {
+                "word": "an",
+                "start": 253.58999633789062,
+                "end": 253.83999633789062
+            },
+            {
+                "word": "lernte",
+                "start": 253.83999633789062,
+                "end": 254.08999633789062
+            },
+            {
+                "word": "Rosi,",
+                "start": 254.08999633789062,
+                "end": 254.33999633789062
+            },
+            {
+                "word": "ihre",
+                "start": 254.33999633789062,
+                "end": 254.58999633789062
+            },
+            {
+                "word": "Freunde",
                 "start": 248.8800048828125,
                 "end": 249.3800048828125
+            },
+            {
+                "word": "nicht",
+                "start": 249.3800048828125,
+                "end": 249.6300048828125
+            },
+            {
+                "word": "nach",
+                "start": 249.6300048828125,
+                "end": 249.8800048828125
+            },
+            {
+                "word": "ihrem",
+                "start": 249.8800048828125,
+                "end": 250.1300048828125
+            },
+            {
+                "word": "Aussehen",
+                "start": 250.1300048828125,
+                "end": 250.3800048828125
+            },
+            {
+                "word": "zu",
+                "start": 250.3800048828125,
+                "end": 250.6300048828125
+            },
+            {
+                "word": "beurteilen.",
+                "start": 250.6300048828125,
+                "end": 250.8800048828125
+            }
+        ],
+        "translationEn": "From that day on, Rosi learned not to judge her friends by their appearance.",
+        "translationVi": "Từ ngày hôm đó, Rosi học cách không đánh giá bạn bè chỉ dựa vào vẻ bề ngoài của họ."
+    },
+    {
+        "text": "Denn egal, wie unterschiedlich wir aussehen, jeder von uns ist mit Schönheit und Hilfsbereitschaft ausgestattet.",
+        "start": 250.8800048828125,
+        "end": 251.1999969482422,
+        "wordTimings": [
+            {
+                "word": "Denn",
+                "start": 250.8800048828125,
+                "end": 251.1300048828125
+            },
+            {
+                "word": "egal,",
+                "start": 251.1300048828125,
+                "end": 251.3800048828125
+            },
+            {
+                "word": "wie",
+                "start": 251.3800048828125,
+                "end": 251.6300048828125
+            },
+            {
+                "word": "unterschiedlich",
+                "start": 251.6300048828125,
+                "end": 251.8800048828125
+            },
+            {
+                "word": "wir",
+                "start": 251.8800048828125,
+                "end": 252.1300048828125
+            },
+            {
+                "word": "aussehen,",
+                "start": 252.1300048828125,
+                "end": 252.3800048828125
+            },
+            {
+                "word": "jeder",
+                "start": 252.3800048828125,
+                "end": 252.6300048828125
+            },
+            {
+                "word": "von",
+                "start": 252.6300048828125,
+                "end": 252.8800048828125
+            },
+            {
+                "word": "uns",
+                "start": 252.8800048828125,
+                "end": 253.1300048828125
+            },
+            {
+                "word": "ist",
+                "start": 253.1300048828125,
+                "end": 253.3800048828125
+            },
+            {
+                "word": "mit",
+                "start": 253.3800048828125,
+                "end": 253.6300048828125
+            },
+            {
+                "word": "Schönheit",
+                "start": 253.6300048828125,
+                "end": 253.8800048828125
+            },
+            {
+                "word": "und",
+                "start": 253.8800048828125,
+                "end": 254.1300048828125
             },
             {
                 "word": "Hilfsbereitschaft",
@@ -3022,49 +3089,10 @@
             {
                 "word": "ausgestattet.",
                 "start": 250.25999450683594,
-                "end": 251.43999938964845
+                "end": 251.1999969482422
             }
         ],
         "translationEn": "Because no matter how different we look, each of us is endowed with beauty and helpfulness.",
-        "translationVi": "Bởi vì dù chúng ta có khác nhau như thế nào, mỗi người trong chúng ta đều được ban tặng vẻ đẹp và lòng sẵn sàng giúp đỡ."
-    },
-    {
-        "text": "Untertitelung des ZDF für funk 2017.",
-        "start": 259.56000366210935,
-        "end": 261.35999755859376,
-        "wordTimings": [
-            {
-                "word": "Untertitelung",
-                "start": 259.56000366210935,
-                "end": 261.05999755859375
-            },
-            {
-                "word": "des",
-                "start": 261.05999755859375,
-                "end": 261.05999755859375
-            },
-            {
-                "word": "ZDF",
-                "start": 261.05999755859375,
-                "end": 261.05999755859375
-            },
-            {
-                "word": "für",
-                "start": 261.05999755859375,
-                "end": 261.05999755859375
-            },
-            {
-                "word": "funk",
-                "start": 261.05999755859375,
-                "end": 261.05999755859375
-            },
-            {
-                "word": "2017.",
-                "start": 261.05999755859375,
-                "end": 261.35999755859376
-            }
-        ],
-        "translationEn": "Subtitling of ZDF for funk 2017.",
-        "translationVi": "Phụ đề của ZDF cho funk năm 2017."
+        "translationVi": "Bởi vì dù chúng ta có khác nhau như thế nào, mỗi người trong chúng ta đều được trang bị vẻ đẹp và sự sẵn sàng giúp đỡ."
     }
 ]

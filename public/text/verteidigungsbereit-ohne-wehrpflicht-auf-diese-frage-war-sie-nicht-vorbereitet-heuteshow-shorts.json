@@ -1,8 +1,8 @@
 [
     {
-        "text": "Jetzt junge Menschen zu verpflichten,",
-        "start": 0,
-        "end": 2.0000000476837156,
+        "text": "Jetzt junge Menschen zu verpflichten, in so einen Zwangsdienst zu drücken, das ist aus unserer Sicht die falsche Antwort.",
+        "start": 5.800000190734863,
+        "end": 5.800000190734863,
         "wordTimings": [
             {
                 "word": "Jetzt",
@@ -27,20 +27,11 @@
             {
                 "word": "verpflichten,",
                 "start": 1.159999966621399,
-                "end": 2.0000000476837156
-            }
-        ],
-        "translationEn": "Now to commit young people,",
-        "translationVi": "Bây giờ bắt buộc những người trẻ tuổi,"
-    },
-    {
-        "text": "in so einen Zwangsdienst zu drücken,",
-        "start": 1.9799999237060546,
-        "end": 4.4999998092651365,
-        "wordTimings": [
+                "end": 1.7000000476837158
+            },
             {
                 "word": "in",
-                "start": 1.9799999237060546,
+                "start": 2.0799999237060547,
                 "end": 2.9600000381469727
             },
             {
@@ -66,20 +57,11 @@
             {
                 "word": "drücken,",
                 "start": 4.199999809265137,
-                "end": 4.4999998092651365
-            }
-        ],
-        "translationEn": "to force someone into such a compulsory service,",
-        "translationVi": "ép buộc vào một dịch vụ cưỡng bức như vậy,"
-    },
-    {
-        "text": "das ist aus unserer Sicht die falsche Antwort.",
-        "start": 4.280000114440918,
-        "end": 6.100000190734863,
-        "wordTimings": [
+                "end": 4.199999809265137
+            },
             {
                 "word": "das",
-                "start": 4.280000114440918,
+                "start": 4.380000114440918,
                 "end": 4.460000038146973
             },
             {
@@ -115,20 +97,20 @@
             {
                 "word": "Antwort.",
                 "start": 5.5,
-                "end": 6.100000190734863
+                "end": 5.800000190734863
             }
         ],
-        "translationEn": "That is, in our view, the wrong answer.",
-        "translationVi": "đó là câu trả lời sai từ quan điểm của chúng tôi."
+        "translationEn": "Now forcing young people into such a compulsory service is, in our view, the wrong answer.",
+        "translationVi": "Bây giờ bắt buộc những người trẻ tuổi tham gia vào một dịch vụ cưỡng bức như vậy, theo quan điểm của chúng tôi, đó là câu trả lời sai."
     },
     {
-        "text": "Aber was ist die richtige Antwort?",
-        "start": 6.260000133514405,
-        "end": 7.979999828338623,
+        "text": "Aber was ist die richtige Antwort? Wie werden wir denn verteidigungsbereit?",
+        "start": 6.360000133514404,
+        "end": 9.199999809265137,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 6.260000133514405,
+                "start": 6.360000133514404,
                 "end": 6.760000228881836
             },
             {
@@ -154,20 +136,11 @@
             {
                 "word": "Antwort?",
                 "start": 7.400000095367432,
-                "end": 7.979999828338623
-            }
-        ],
-        "translationEn": "But what is the right answer?",
-        "translationVi": "Nhưng câu trả lời đúng là gì?"
-    },
-    {
-        "text": "Wie werden wir denn verteidigungsbereit?",
-        "start": 7.700000190734864,
-        "end": 9.499999809265137,
-        "wordTimings": [
+                "end": 7.679999828338623
+            },
             {
                 "word": "Wie",
-                "start": 7.700000190734864,
+                "start": 7.800000190734863,
                 "end": 7.920000076293945
             },
             {
@@ -188,20 +161,20 @@
             {
                 "word": "verteidigungsbereit?",
                 "start": 8.5,
-                "end": 9.499999809265137
+                "end": 9.199999809265137
             }
         ],
-        "translationEn": "How do we become defense-ready?",
-        "translationVi": "Chúng ta sẽ sẵn sàng phòng thủ như thế nào?"
+        "translationEn": "But what is the right answer? How do we become ready for defense?",
+        "translationVi": "Nhưng câu trả lời đúng là gì? Chúng ta sẽ chuẩn bị cho việc phòng thủ như thế nào?"
     },
     {
-        "text": "Ja, also Sie glauben jetzt,",
-        "start": 10.080000305175782,
-        "end": 11.760000038146973,
+        "text": "Ja, also Sie glauben jetzt, dass die richtige Antwort wäre, dass man junge Menschen an die Grenze schickt.",
+        "start": 10.180000305175781,
+        "end": 14.699999809265137,
         "wordTimings": [
             {
                 "word": "Ja,",
-                "start": 10.080000305175782,
+                "start": 10.180000305175781,
                 "end": 10.399999618530273
             },
             {
@@ -222,20 +195,11 @@
             {
                 "word": "jetzt,",
                 "start": 11.119999885559082,
-                "end": 11.760000038146973
-            }
-        ],
-        "translationEn": "Yes, so you believe now,",
-        "translationVi": "Vâng, vậy bạn bây giờ tin rằng,"
-    },
-    {
-        "text": "dass die richtige Antwort wäre,",
-        "start": 11.540000343322754,
-        "end": 13.11999969482422,
-        "wordTimings": [
+                "end": 11.460000038146973
+            },
             {
                 "word": "dass",
-                "start": 11.540000343322754,
+                "start": 11.640000343322754,
                 "end": 11.640000343322754
             },
             {
@@ -256,20 +220,11 @@
             {
                 "word": "wäre,",
                 "start": 12.539999961853027,
-                "end": 13.11999969482422
-            }
-        ],
-        "translationEn": "that the correct answer would be,",
-        "translationVi": "rằng câu trả lời đúng sẽ là,"
-    },
-    {
-        "text": "dass man junge Menschen an die Grenze schickt.",
-        "start": 12.879999542236328,
-        "end": 14.999999809265137,
-        "wordTimings": [
+                "end": 12.819999694824219
+            },
             {
                 "word": "dass",
-                "start": 12.879999542236328,
+                "start": 12.979999542236328,
                 "end": 13.020000457763672
             },
             {
@@ -305,20 +260,20 @@
             {
                 "word": "schickt.",
                 "start": 14.380000114440918,
-                "end": 14.999999809265137
+                "end": 14.699999809265137
             }
         ],
-        "translationEn": "that young people are sent to the border.",
-        "translationVi": "rằng người trẻ được gửi đến biên giới."
+        "translationEn": "Yes, so you believe now that the right answer would be to send young people to the border.",
+        "translationVi": "Vâng, vậy bạn tin rằng câu trả lời đúng là gửi những người trẻ tuổi đến biên giới."
     },
     {
         "text": "Mit einem Zwangsdienst, da sagen wir einfach nein.",
-        "start": 14.920000457763672,
-        "end": 17.240000534057618,
+        "start": 15.020000457763672,
+        "end": 16.940000534057617,
         "wordTimings": [
             {
                 "word": "Mit",
-                "start": 14.920000457763672,
+                "start": 15.020000457763672,
                 "end": 15.119999885559082
             },
             {
@@ -354,20 +309,20 @@
             {
                 "word": "nein.",
                 "start": 16.700000762939453,
-                "end": 17.240000534057618
+                "end": 16.940000534057617
             }
         ],
         "translationEn": "With a compulsory service, we simply say no.",
-        "translationVi": "Với một dịch vụ cưỡng bức, chúng ta chỉ cần nói không."
+        "translationVi": "Với một dịch vụ cưỡng bức, chúng tôi chỉ đơn giản nói không."
     },
     {
         "text": "Und mit dieser Antwort müssen Sie leben.",
-        "start": 17.139999771118163,
-        "end": 19.340000915527344,
+        "start": 17.239999771118164,
+        "end": 19.040000915527344,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 17.139999771118163,
+                "start": 17.239999771118164,
                 "end": 17.34000015258789
             },
             {
@@ -398,20 +353,20 @@
             {
                 "word": "leben.",
                 "start": 18.84000015258789,
-                "end": 19.340000915527344
+                "end": 19.040000915527344
             }
         ],
         "translationEn": "And you have to live with this answer.",
         "translationVi": "Và bạn phải chấp nhận câu trả lời này."
     },
     {
-        "text": "Da müssen auch die jungen Menschen",
-        "start": 19.180000686645506,
-        "end": 20.379999923706055,
+        "text": "Da müssen auch die jungen Menschen und Ihre Eltern leben.",
+        "start": 19.280000686645508,
+        "end": 20.31999969482422,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 19.180000686645506,
+                "start": 19.280000686645508,
                 "end": 19.280000686645508
             },
             {
@@ -437,25 +392,16 @@
             {
                 "word": "Menschen",
                 "start": 19.8799991607666,
-                "end": 20.379999923706055
-            }
-        ],
-        "translationEn": "Young people must also be involved.",
-        "translationVi": "Các bạn trẻ cũng phải..."
-    },
-    {
-        "text": "und Ihre Eltern leben.",
-        "start": 19.979999923706053,
-        "end": 20.61999969482422,
-        "wordTimings": [
+                "end": 20.079999923706055
+            },
             {
                 "word": "und",
-                "start": 19.979999923706053,
-                "end": 20.260000228881836
+                "start": 20.079999923706055,
+                "end": 20.280000686645508
             },
             {
                 "word": "Ihre",
-                "start": 20.260000228881836,
+                "start": 20.280000686645508,
                 "end": 20.31999969482422
             },
             {
@@ -466,20 +412,20 @@
             {
                 "word": "leben.",
                 "start": 20.31999969482422,
-                "end": 20.61999969482422
+                "end": 20.31999969482422
             }
         ],
-        "translationEn": "and your parents live.",
-        "translationVi": "và cha mẹ của bạn sống."
+        "translationEn": "Young people and their parents also have to live there.",
+        "translationVi": "Cũng phải có những người trẻ và cha mẹ của họ sống ở đó."
     },
     {
         "text": "Sie haben keine Antwort auf die Frage gefragt.",
-        "start": 20.219999694824217,
-        "end": 22.220000076293946,
+        "start": 20.31999969482422,
+        "end": 21.920000076293945,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 20.219999694824217,
+                "start": 20.31999969482422,
                 "end": 20.459999084472656
             },
             {
@@ -515,20 +461,20 @@
             {
                 "word": "gefragt.",
                 "start": 21.899999618530273,
-                "end": 22.220000076293946
+                "end": 21.920000076293945
             }
         ],
-        "translationEn": "You did not ask a question for which there is an answer.",
-        "translationVi": "Bạn đã không hỏi câu hỏi nào."
+        "translationEn": "They did not ask a question for which there is an answer.",
+        "translationVi": "Bạn không có câu trả lời cho câu hỏi."
     },
     {
         "text": "Ich habe Ihnen doch eine Antwort gegeben.",
-        "start": 21.820000076293944,
-        "end": 23.400000381469727,
+        "start": 21.920000076293945,
+        "end": 23.100000381469727,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 21.820000076293944,
+                "start": 21.920000076293945,
                 "end": 22.079999923706055
             },
             {
@@ -559,20 +505,20 @@
             {
                 "word": "gegeben.",
                 "start": 22.760000228881836,
-                "end": 23.400000381469727
+                "end": 23.100000381469727
             }
         ],
-        "translationEn": "I did give you an answer.",
+        "translationEn": "I have already given you an answer.",
         "translationVi": "Tôi đã trả lời bạn rồi mà."
     },
     {
-        "text": "Ja, aber nur ein Nein ist ja keine Antwort,",
-        "start": 23.11999931335449,
-        "end": 24.8,
+        "text": "Ja, aber nur ein Nein ist ja keine Antwort, wie man die Bundeswehr dann verteidigungsbereit macht.",
+        "start": 23.219999313354492,
+        "end": 26.520000457763672,
         "wordTimings": [
             {
                 "word": "Ja,",
-                "start": 23.11999931335449,
+                "start": 23.219999313354492,
                 "end": 23.280000686645508
             },
             {
@@ -613,20 +559,11 @@
             {
                 "word": "Antwort,",
                 "start": 24.239999771118164,
-                "end": 24.8
-            }
-        ],
-        "translationEn": "Yes, but just a no is not an answer,",
-        "translationVi": "Vâng, nhưng chỉ một câu không thì không phải là câu trả lời."
-    },
-    {
-        "text": "wie man die Bundeswehr dann verteidigungsbereit macht.",
-        "start": 24.479999923706053,
-        "end": 26.820000457763673,
-        "wordTimings": [
+                "end": 24.5
+            },
             {
                 "word": "wie",
-                "start": 24.479999923706053,
+                "start": 24.579999923706055,
                 "end": 24.65999984741211
             },
             {
@@ -657,20 +594,20 @@
             {
                 "word": "macht.",
                 "start": 26.260000228881836,
-                "end": 26.820000457763673
+                "end": 26.520000457763672
             }
         ],
-        "translationEn": "how to make the Bundeswehr ready for defense.",
-        "translationVi": "cách làm cho Bundeswehr sẵn sàng phòng thủ."
+        "translationEn": "Yes, but just a no is not an answer to how to make the Bundeswehr ready for defense.",
+        "translationVi": "Vâng, nhưng chỉ một câu không thì không phải là câu trả lời về cách làm cho quân đội sẵn sàng phòng thủ."
     },
     {
-        "text": "Ja, aber die Lösung ist,",
-        "start": 26.42000045776367,
-        "end": 27.95999984741211,
+        "text": "Ja, aber die Lösung ist, wie gesagt, nicht, dass man junge Menschen in einen Zwangsdienst schickt.",
+        "start": 26.520000457763672,
+        "end": 30.719999313354492,
         "wordTimings": [
             {
                 "word": "Ja,",
-                "start": 26.42000045776367,
+                "start": 26.520000457763672,
                 "end": 26.760000228881836
             },
             {
@@ -691,20 +628,11 @@
             {
                 "word": "ist,",
                 "start": 27.479999542236328,
-                "end": 27.95999984741211
-            }
-        ],
-        "translationEn": "Yes, but the solution is,",
-        "translationVi": "Vâng, nhưng giải pháp là,"
-    },
-    {
-        "text": "wie gesagt, nicht, dass man junge Menschen",
-        "start": 27.559999847412108,
-        "end": 29.539999771118165,
-        "wordTimings": [
+                "end": 27.65999984741211
+            },
             {
                 "word": "wie",
-                "start": 27.559999847412108,
+                "start": 27.65999984741211,
                 "end": 27.780000686645508
             },
             {
@@ -735,20 +663,11 @@
             {
                 "word": "Menschen",
                 "start": 29.020000457763672,
-                "end": 29.539999771118165
-            }
-        ],
-        "translationEn": "As I said, not that one should young people",
-        "translationVi": "Như đã nói, không phải là để người trẻ tuổi..."
-    },
-    {
-        "text": "in einen Zwangsdienst schickt.",
-        "start": 29.139999771118163,
-        "end": 31.019999313354493,
-        "wordTimings": [
+                "end": 29.239999771118164
+            },
             {
                 "word": "in",
-                "start": 29.139999771118163,
+                "start": 29.239999771118164,
                 "end": 29.459999084472656
             },
             {
@@ -764,20 +683,20 @@
             {
                 "word": "schickt.",
                 "start": 30.219999313354492,
-                "end": 31.019999313354493
+                "end": 30.719999313354492
             }
         ],
-        "translationEn": "into compulsory service.",
-        "translationVi": "gửi vào một dịch vụ cưỡng bức."
+        "translationEn": "Yes, but the solution, as I said, is not to send young people into compulsory service.",
+        "translationVi": "Vâng, nhưng giải pháp, như đã nói, không phải là gửi những người trẻ tuổi vào một dịch vụ cưỡng bức."
     },
     {
-        "text": "Aber ich frage nochmal nach,",
-        "start": 30.840000534057616,
-        "end": 32.439999389648435,
+        "text": "Aber ich frage nochmal nach, vielleicht verstehe ich es auch einfach nicht.",
+        "start": 30.940000534057617,
+        "end": 33.2599983215332,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 30.840000534057616,
+                "start": 30.940000534057617,
                 "end": 31.139999389648438
             },
             {
@@ -798,20 +717,11 @@
             {
                 "word": "nach,",
                 "start": 31.920000076293945,
-                "end": 32.439999389648435
-            }
-        ],
-        "translationEn": "But I will ask again,",
-        "translationVi": "Nhưng tôi sẽ hỏi lại lần nữa,"
-    },
-    {
-        "text": "vielleicht verstehe ich es auch einfach nicht.",
-        "start": 32.1599983215332,
-        "end": 33.5599983215332,
-        "wordTimings": [
+                "end": 32.13999938964844
+            },
             {
                 "word": "vielleicht",
-                "start": 32.1599983215332,
+                "start": 32.2599983215332,
                 "end": 32.380001068115234
             },
             {
@@ -842,20 +752,20 @@
             {
                 "word": "nicht.",
                 "start": 33.15999984741211,
-                "end": 33.5599983215332
+                "end": 33.2599983215332
             }
         ],
-        "translationEn": "Maybe I just don't understand it.",
-        "translationVi": "Có thể là tôi cũng không hiểu nó."
+        "translationEn": "But I'll ask again, maybe I just don't understand it.",
+        "translationVi": "Nhưng tôi sẽ hỏi lại, có thể tôi cũng chỉ đơn giản là không hiểu."
     },
     {
-        "text": "Was ist denn der richtige Weg,",
-        "start": 33.42000045776367,
-        "end": 34.71999816894531,
+        "text": "Was ist denn der richtige Weg, um eine verteidigungsbereite Bundeswehr zu kriegen?",
+        "start": 33.52000045776367,
+        "end": 36.2599983215332,
         "wordTimings": [
             {
                 "word": "Was",
-                "start": 33.42000045776367,
+                "start": 33.52000045776367,
                 "end": 33.560001373291016
             },
             {
@@ -881,20 +791,11 @@
             {
                 "word": "Weg,",
                 "start": 34.279998779296875,
-                "end": 34.71999816894531
-            }
-        ],
-        "translationEn": "What is the right way, then?",
-        "translationVi": "Vậy con đường đúng là gì,"
-    },
-    {
-        "text": "um eine verteidigungsbereite Bundeswehr zu kriegen?",
-        "start": 34.480001831054686,
-        "end": 36.5599983215332,
-        "wordTimings": [
+                "end": 34.41999816894531
+            },
             {
                 "word": "um",
-                "start": 34.480001831054686,
+                "start": 34.58000183105469,
                 "end": 34.58000183105469
             },
             {
@@ -920,20 +821,20 @@
             {
                 "word": "kriegen?",
                 "start": 36.2599983215332,
-                "end": 36.5599983215332
+                "end": 36.2599983215332
             }
         ],
-        "translationEn": "to get a defense-ready Bundeswehr?",
-        "translationVi": "để có được một quân đội Bundeswehr sẵn sàng chiến đấu?"
+        "translationEn": "What is the right way to achieve a defense-ready Bundeswehr?",
+        "translationVi": "Vậy thì con đường đúng để có được một quân đội sẵn sàng phòng thủ là gì?"
     },
     {
         "text": "Na jedenfalls kein Zwangsdienst.",
-        "start": 37.42000045776367,
-        "end": 39.119999694824216,
+        "start": 37.52000045776367,
+        "end": 38.81999969482422,
         "wordTimings": [
             {
                 "word": "Na",
-                "start": 37.42000045776367,
+                "start": 37.52000045776367,
                 "end": 37.7599983215332
             },
             {
@@ -949,20 +850,20 @@
             {
                 "word": "Zwangsdienst.",
                 "start": 38.29999923706055,
-                "end": 39.119999694824216
+                "end": 38.81999969482422
             }
         ],
-        "translationEn": "Well, certainly no compulsory service.",
+        "translationEn": "Well, definitely no compulsory service.",
         "translationVi": "Chắc chắn không phải là dịch vụ cưỡng bức."
     },
     {
-        "text": "Und ich muss leider gleich ins Plenum und reden,",
-        "start": 39.05999984741211,
-        "end": 42.16000061035156,
+        "text": "Und ich muss leider gleich ins Plenum und reden, deshalb.",
+        "start": 39.15999984741211,
+        "end": 42.52000045776367,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 39.05999984741211,
+                "start": 39.15999984741211,
                 "end": 39.279998779296875
             },
             {
@@ -1003,24 +904,24 @@
             {
                 "word": "reden,",
                 "start": 41.86000061035156,
-                "end": 42.16000061035156
-            }
-        ],
-        "translationEn": "And unfortunately, I have to go to the plenary session and speak right away,",
-        "translationVi": "Và tôi tiếc là tôi phải vào hội trường ngay bây giờ và nói chuyện,"
-    },
-    {
-        "text": "deshalb, aber ich hätte so gerne eine Antwort auf die Frage.",
-        "start": 42.199999237060545,
-        "end": 45.0599983215332,
-        "wordTimings": [
-            {
-                "word": "deshalb,",
-                "start": 42.199999237060545,
-                "end": 42.52000045776367
+                "end": 41.86000061035156
             },
             {
-                "word": "aber",
+                "word": "deshalb.",
+                "start": 42.29999923706055,
+                "end": 42.52000045776367
+            }
+        ],
+        "translationEn": "And unfortunately, I have to go to the plenary session and speak now.",
+        "translationVi": "Và tôi tiếc là tôi phải vào hội trường và nói chuyện ngay bây giờ."
+    },
+    {
+        "text": "Aber ich hätte so gerne eine Antwort auf die Frage.",
+        "start": 43.060001373291016,
+        "end": 44.7599983215332,
+        "wordTimings": [
+            {
+                "word": "Aber",
                 "start": 43.060001373291016,
                 "end": 43.2400016784668
             },
@@ -1067,20 +968,20 @@
             {
                 "word": "Frage.",
                 "start": 44.459999084472656,
-                "end": 45.0599983215332
+                "end": 44.7599983215332
             }
         ],
-        "translationEn": "Therefore, I would really like an answer to the question.",
-        "translationVi": "Vì vậy, nhưng tôi rất muốn có câu trả lời cho câu hỏi này."
+        "translationEn": "But I would really like an answer to the question.",
+        "translationVi": "Nhưng tôi rất muốn có một câu trả lời cho câu hỏi đó."
     },
     {
         "text": "Die habe ich Ihnen doch schon gegeben.",
-        "start": 45.33999862670898,
-        "end": 47.02000122070312,
+        "start": 45.439998626708984,
+        "end": 46.720001220703125,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 45.33999862670898,
+                "start": 45.439998626708984,
                 "end": 45.84000015258789
             },
             {
@@ -1111,20 +1012,20 @@
             {
                 "word": "gegeben.",
                 "start": 46.400001525878906,
-                "end": 47.02000122070312
+                "end": 46.720001220703125
             }
         ],
         "translationEn": "I already gave that to you.",
         "translationVi": "Tôi đã đưa cho bạn rồi mà."
     },
     {
-        "text": "Nicht so richtig,",
-        "start": 47.039999389648436,
-        "end": 47.98000030517578,
+        "text": "Nicht so richtig, weil Sie sagen einfach nur, dass die Lösung kein Zwangsdienst ist, aber sagen nicht, was die Lösung ist.",
+        "start": 47.13999938964844,
+        "end": 51.58000183105469,
         "wordTimings": [
             {
                 "word": "Nicht",
-                "start": 47.039999389648436,
+                "start": 47.13999938964844,
                 "end": 47.20000076293945
             },
             {
@@ -1135,20 +1036,11 @@
             {
                 "word": "richtig,",
                 "start": 47.540000915527344,
-                "end": 47.98000030517578
-            }
-        ],
-        "translationEn": "Not really,",
-        "translationVi": "Không hoàn toàn đúng,"
-    },
-    {
-        "text": "weil Sie sagen einfach nur,",
-        "start": 47.699999237060545,
-        "end": 49.119999694824216,
-        "wordTimings": [
+                "end": 47.68000030517578
+            },
             {
                 "word": "weil",
-                "start": 47.699999237060545,
+                "start": 47.79999923706055,
                 "end": 47.939998626708984
             },
             {
@@ -1169,20 +1061,11 @@
             {
                 "word": "nur,",
                 "start": 48.5,
-                "end": 49.119999694824216
-            }
-        ],
-        "translationEn": "because you just say,",
-        "translationVi": "bởi vì bạn chỉ nói rằng,"
-    },
-    {
-        "text": "dass die Lösung kein Zwangsdienst ist,",
-        "start": 48.800001525878905,
-        "end": 50.50000076293945,
-        "wordTimings": [
+                "end": 48.81999969482422
+            },
             {
                 "word": "dass",
-                "start": 48.800001525878905,
+                "start": 48.900001525878906,
                 "end": 48.900001525878906
             },
             {
@@ -1208,20 +1091,11 @@
             {
                 "word": "ist,",
                 "start": 50,
-                "end": 50.50000076293945
-            }
-        ],
-        "translationEn": "that the solution is not a compulsory service,",
-        "translationVi": "rằng giải pháp không phải là dịch vụ cưỡng bức,"
-    },
-    {
-        "text": "aber sagen nicht, was die Lösung ist.",
-        "start": 50.1599983215332,
-        "end": 51.880001831054685,
-        "wordTimings": [
+                "end": 50.20000076293945
+            },
             {
                 "word": "aber",
-                "start": 50.1599983215332,
+                "start": 50.2599983215332,
                 "end": 50.400001525878906
             },
             {
@@ -1252,20 +1126,20 @@
             {
                 "word": "ist.",
                 "start": 51.279998779296875,
-                "end": 51.880001831054685
+                "end": 51.58000183105469
             }
         ],
-        "translationEn": "but do not say what the solution is.",
-        "translationVi": "nhưng không nói rõ giải pháp là gì."
+        "translationEn": "Not really, because you just say that the solution is not compulsory service, but you don't say what the solution is.",
+        "translationVi": "Không hoàn toàn đúng, vì bạn chỉ nói rằng giải pháp không phải là dịch vụ cưỡng bức, nhưng không nói rõ giải pháp là gì."
     },
     {
-        "text": "Naja, wenn wir so viel in Frieden investieren würden,",
-        "start": 53.76000061035156,
-        "end": 57.71999816894531,
+        "text": "Naja, wenn wir so viel in Frieden investieren würden, auch rhetorisch, wie in andere Dinge, dann wären wir, glaube ich, schon viele Schritte weiter.",
+        "start": 53.86000061035156,
+        "end": 60.599998474121094,
         "wordTimings": [
             {
                 "word": "Naja,",
-                "start": 53.76000061035156,
+                "start": 53.86000061035156,
                 "end": 54.18000030517578
             },
             {
@@ -1306,20 +1180,11 @@
             {
                 "word": "würden,",
                 "start": 56.81999969482422,
-                "end": 57.71999816894531
-            }
-        ],
-        "translationEn": "Well, if we invested so much in peace,",
-        "translationVi": "Thì, nếu chúng ta đầu tư nhiều vào hòa bình như vậy,"
-    },
-    {
-        "text": "auch rhetorisch, wie in andere Dinge,",
-        "start": 57.55999984741211,
-        "end": 59.540001678466794,
-        "wordTimings": [
+                "end": 57.41999816894531
+            },
             {
                 "word": "auch",
-                "start": 57.55999984741211,
+                "start": 57.65999984741211,
                 "end": 57.720001220703125
             },
             {
@@ -1345,20 +1210,11 @@
             {
                 "word": "Dinge,",
                 "start": 59.02000045776367,
-                "end": 59.540001678466794
-            }
-        ],
-        "translationEn": "also rhetorically, as in other things,",
-        "translationVi": "cũng như trong những điều khác,"
-    },
-    {
-        "text": "dann wären wir, glaube ich, schon viele Schritte weiter.",
-        "start": 59.460001373291014,
-        "end": 60.89999847412109,
-        "wordTimings": [
+                "end": 59.2400016784668
+            },
             {
                 "word": "dann",
-                "start": 59.460001373291014,
+                "start": 59.560001373291016,
                 "end": 59.65999984741211
             },
             {
@@ -1373,17 +1229,17 @@
             },
             {
                 "word": "glaube",
-                "start": 59.86000061035156,
+                "start": 59.900001525878906,
                 "end": 59.97999954223633
             },
             {
                 "word": "ich,",
                 "start": 59.97999954223633,
-                "end": 60.13999938964844
+                "end": 60.060001373291016
             },
             {
                 "word": "schon",
-                "start": 60.13999938964844,
+                "start": 60.08000183105469,
                 "end": 60.220001220703125
             },
             {
@@ -1399,20 +1255,20 @@
             {
                 "word": "weiter.",
                 "start": 60.5,
-                "end": 60.89999847412109
+                "end": 60.599998474121094
             }
         ],
-        "translationEn": "then I think we would already be many steps further.",
-        "translationVi": "thì tôi nghĩ chúng ta đã tiến xa hơn nhiều bước rồi."
+        "translationEn": "Well, if we invested as much in peace, even rhetorically, as we do in other things, I believe we would already be many steps further along.",
+        "translationVi": "Thôi nào, nếu chúng ta đầu tư nhiều vào hòa bình, cả về mặt ngữ nghĩa, như vào những thứ khác, thì tôi nghĩ chúng ta đã tiến xa hơn nhiều rồi."
     },
     {
         "text": "Sagen Sie das doch mal Wladimir Putin.",
-        "start": 60.74000015258789,
-        "end": 62.25999908447265,
+        "start": 60.84000015258789,
+        "end": 61.939998626708984,
         "wordTimings": [
             {
                 "word": "Sagen",
-                "start": 60.74000015258789,
+                "start": 60.84000015258789,
                 "end": 60.84000015258789
             },
             {
@@ -1443,20 +1299,20 @@
             {
                 "word": "Putin.",
                 "start": 61.70000076293945,
-                "end": 62.25999908447265
+                "end": 61.939998626708984
             }
         ],
         "translationEn": "Say that to Vladimir Putin.",
         "translationVi": "Hãy nói điều đó với Vladimir Putin."
     },
     {
-        "text": "Ich muss jetzt ins Plenum und reden.",
-        "start": 63.95999755859375,
-        "end": 66.17999725341797,
+        "text": "Ich muss jetzt ins Plenum und reden, ist klar. Schönen Tag.",
+        "start": 64.05999755859375,
+        "end": 67.36000061035156,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 63.95999755859375,
+                "start": 64.05999755859375,
                 "end": 64.37999725341797
             },
             {
@@ -1485,60 +1341,42 @@
                 "end": 65.72000122070312
             },
             {
-                "word": "reden.",
+                "word": "reden,",
                 "start": 65.72000122070312,
-                "end": 66.17999725341797
-            }
-        ],
-        "translationEn": "I have to go to the plenary and speak now.",
-        "translationVi": "Tôi phải vào hội trường và nói chuyện bây giờ."
-    },
-    {
-        "text": "Ist klar.",
-        "start": 66.17999877929688,
-        "end": 66.84000091552734,
-        "wordTimings": [
+                "end": 65.87999725341797
+            },
             {
-                "word": "Ist",
-                "start": 66.17999877929688,
+                "word": "ist",
+                "start": 66.27999877929688,
                 "end": 66.41999816894531
             },
             {
                 "word": "klar.",
                 "start": 66.41999816894531,
-                "end": 66.84000091552734
-            }
-        ],
-        "translationEn": "Is clear.",
-        "translationVi": "Rõ ràng."
-    },
-    {
-        "text": "Schönen Tag.",
-        "start": 67.06000366210938,
-        "end": 67.66000061035156,
-        "wordTimings": [
+                "end": 66.54000091552734
+            },
             {
                 "word": "Schönen",
-                "start": 67.06000366210938,
+                "start": 67.16000366210938,
                 "end": 67.16000366210938
             },
             {
                 "word": "Tag.",
                 "start": 67.16000366210938,
-                "end": 67.66000061035156
+                "end": 67.36000061035156
             }
         ],
-        "translationEn": "Have a nice day.",
-        "translationVi": "Chúc bạn một ngày tốt lành."
+        "translationEn": "I have to go to the plenary and speak now, it's clear. Have a nice day.",
+        "translationVi": "Tôi phải vào cuộc họp và nói chuyện bây giờ, rõ ràng rồi. Chúc bạn một ngày tốt lành."
     },
     {
         "text": "Ne, ich habe es leider nicht verstanden.",
-        "start": 68.85999908447266,
-        "end": 70.2000015258789,
+        "start": 68.95999908447266,
+        "end": 69.9000015258789,
         "wordTimings": [
             {
                 "word": "Ne,",
-                "start": 68.85999908447266,
+                "start": 68.95999908447266,
                 "end": 69.12000274658203
             },
             {
@@ -1569,10 +1407,10 @@
             {
                 "word": "verstanden.",
                 "start": 69.63999938964844,
-                "end": 70.2000015258789
+                "end": 69.9000015258789
             }
         ],
-        "translationEn": "No, unfortunately, I did not understand it.",
+        "translationEn": "No, unfortunately, I didn't understand it.",
         "translationVi": "Không, tôi rất tiếc là tôi không hiểu."
     }
 ]

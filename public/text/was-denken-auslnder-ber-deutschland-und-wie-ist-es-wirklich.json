@@ -1,8 +1,8 @@
 [
     {
-        "text": "Wir alle haben Vorurteile oder Stereotype.",
-        "start": 0,
-        "end": 5.9999998092651365,
+        "text": "Wir alle haben Vorurteile oder Stereotype. Das bedeutet, dass man über andere Menschen denkt, sie seien alle gleich.",
+        "start": 13.5,
+        "end": 13.5,
         "wordTimings": [
             {
                 "word": "Wir",
@@ -32,20 +32,11 @@
             {
                 "word": "Stereotype.",
                 "start": 4.519999980926514,
-                "end": 5.9999998092651365
-            }
-        ],
-        "translationEn": "We all have prejudices or stereotypes.",
-        "translationVi": "Chúng ta đều có định kiến hoặc khuôn mẫu."
-    },
-    {
-        "text": "Das bedeutet, dass man über andere Menschen denkt, sie seien alle gleich.",
-        "start": 6.740000152587891,
-        "end": 13.8,
-        "wordTimings": [
+                "end": 5.699999809265137
+            },
             {
                 "word": "Das",
-                "start": 6.740000152587891,
+                "start": 6.840000152587891,
                 "end": 7.099999904632568
             },
             {
@@ -101,20 +92,20 @@
             {
                 "word": "gleich.",
                 "start": 12.880000114440918,
-                "end": 13.8
+                "end": 13.5
             }
         ],
-        "translationEn": "This means that one thinks of other people as if they are all the same.",
-        "translationVi": "Điều đó có nghĩa là người ta nghĩ rằng tất cả mọi người đều giống nhau."
+        "translationEn": "We all have prejudices or stereotypes. This means thinking that other people are all the same.",
+        "translationVi": "Chúng ta đều có thành kiến hoặc khuôn mẫu. Điều đó có nghĩa là người ta nghĩ rằng những người khác đều giống nhau."
     },
     {
-        "text": "Man glaubt also, etwas über eine ganze Gruppe zu wissen, obwohl man nur wenige Personen kennt.",
-        "start": 14.219999694824219,
-        "end": 24.480000305175782,
+        "text": "Man glaubt also etwas über eine ganze Gruppe zu wissen, obwohl man nur wenige Personen kennt.",
+        "start": 14.319999694824219,
+        "end": 24.18000030517578,
         "wordTimings": [
             {
                 "word": "Man",
-                "start": 14.219999694824219,
+                "start": 14.319999694824219,
                 "end": 14.579999923706055
             },
             {
@@ -123,7 +114,7 @@
                 "end": 15.180000305175781
             },
             {
-                "word": "also,",
+                "word": "also",
                 "start": 15.180000305175781,
                 "end": 15.640000343322754
             },
@@ -190,24 +181,24 @@
             {
                 "word": "kennt.",
                 "start": 23.6200008392334,
-                "end": 24.480000305175782
+                "end": 24.18000030517578
             }
         ],
-        "translationEn": "One believes they know something about an entire group, even though they only know a few individuals.",
-        "translationVi": "Người ta tin rằng biết điều gì đó về một nhóm lớn, mặc dù chỉ quen biết với một vài người."
+        "translationEn": "One believes to know something about an entire group, even though one only knows a few individuals.",
+        "translationVi": "Người ta tin rằng biết điều gì đó về một nhóm lớn, mặc dù chỉ biết một vài người."
     },
     {
-        "text": "Stell Dir zum Beispiel einen Franzosen vor.",
-        "start": 24.08000030517578,
-        "end": 29.519999313354493,
+        "text": "Stell dir zum Beispiel einen Franzosen vor. Was siehst du?",
+        "start": 24.18000030517578,
+        "end": 30.760000228881836,
         "wordTimings": [
             {
                 "word": "Stell",
-                "start": 24.08000030517578,
+                "start": 24.18000030517578,
                 "end": 25.68000030517578
             },
             {
-                "word": "Dir",
+                "word": "dir",
                 "start": 25.68000030517578,
                 "end": 25.8799991607666
             },
@@ -234,20 +225,11 @@
             {
                 "word": "vor.",
                 "start": 28.8799991607666,
-                "end": 29.519999313354493
-            }
-        ],
-        "translationEn": "Imagine a Frenchman, for example.",
-        "translationVi": "Hãy tưởng tượng một người Pháp."
-    },
-    {
-        "text": "Was siehst Du?",
-        "start": 29.92000045776367,
-        "end": 31.060000228881837,
-        "wordTimings": [
+                "end": 29.219999313354492
+            },
             {
                 "word": "Was",
-                "start": 29.92000045776367,
+                "start": 30.020000457763672,
                 "end": 30.219999313354492
             },
             {
@@ -256,22 +238,22 @@
                 "end": 30.540000915527344
             },
             {
-                "word": "Du?",
+                "word": "du?",
                 "start": 30.540000915527344,
-                "end": 31.060000228881837
+                "end": 30.760000228881836
             }
         ],
-        "translationEn": "What do you see?",
-        "translationVi": "Bạn thấy gì?"
+        "translationEn": "Imagine, for example, a Frenchman. What do you see?",
+        "translationVi": "Hãy tưởng tượng một người Pháp. Bạn thấy gì?"
     },
     {
-        "text": "Du siehst einen Mann in einem gestreiften Oberteil mit einer Baskenmütze auf dem Kopf und einem Baguette unter dem Arm.",
-        "start": 31.520000839233397,
-        "end": 42.41999893188476,
+        "text": "Du siehst einen Mann in einem gestreiften Oberteil, mit einer Baskenmütze auf dem Kopf und einem Baguette unter dem Arm.",
+        "start": 31.6200008392334,
+        "end": 42.119998931884766,
         "wordTimings": [
             {
                 "word": "Du",
-                "start": 31.520000839233397,
+                "start": 31.6200008392334,
                 "end": 31.979999542236328
             },
             {
@@ -305,7 +287,7 @@
                 "end": 35.02000045776367
             },
             {
-                "word": "Oberteil",
+                "word": "Oberteil,",
                 "start": 35.02000045776367,
                 "end": 35.959999084472656
             },
@@ -367,20 +349,25 @@
             {
                 "word": "Arm.",
                 "start": 41.880001068115234,
-                "end": 42.41999893188476
+                "end": 42.119998931884766
             }
         ],
-        "translationEn": "You see a man in a striped top with a beret on his head and a baguette under his arm.",
-        "translationVi": "Bạn thấy một người đàn ông mặc áo sọc, đội mũ beret trên đầu và kẹp một chiếc bánh mì baguette dưới cánh tay."
+        "translationEn": "You see a man in a striped top, wearing a beret on his head and holding a baguette under his arm.",
+        "translationVi": "Bạn thấy một người đàn ông mặc áo sọc, đội mũ beret trên đầu và cầm một chiếc bánh mì baguette dưới cánh tay."
     },
     {
-        "text": "Wenn's geht, spielt er noch Akkordeon.",
-        "start": 43.120001220703124,
-        "end": 46.95999984741211,
+        "text": "Oder wenn's geht, spielt er noch Akkordeon. Das ist das typische Klischee eines Franzosen.",
+        "start": 42.380001068115234,
+        "end": 51.02000045776367,
         "wordTimings": [
             {
-                "word": "Wenn's",
-                "start": 43.120001220703124,
+                "word": "Oder",
+                "start": 42.380001068115234,
+                "end": 42.68000030517578
+            },
+            {
+                "word": "wenn's",
+                "start": 43.220001220703125,
                 "end": 44.15999984741211
             },
             {
@@ -406,20 +393,11 @@
             {
                 "word": "Akkordeon.",
                 "start": 45.70000076293945,
-                "end": 46.95999984741211
-            }
-        ],
-        "translationEn": "If possible, he still plays the accordion.",
-        "translationVi": "Nếu có thể, anh ấy vẫn chơi accordion."
-    },
-    {
-        "text": "Das ist das typische Klischee eines Franzosen.",
-        "start": 47.140001678466795,
-        "end": 51.32000045776367,
-        "wordTimings": [
+                "end": 46.65999984741211
+            },
             {
                 "word": "Das",
-                "start": 47.140001678466795,
+                "start": 47.2400016784668,
                 "end": 47.560001373291016
             },
             {
@@ -450,20 +428,20 @@
             {
                 "word": "Franzosen.",
                 "start": 50.279998779296875,
-                "end": 51.32000045776367
+                "end": 51.02000045776367
             }
         ],
-        "translationEn": "That is the typical stereotype of a French person.",
-        "translationVi": "Đó là hình mẫu điển hình của một người Pháp."
+        "translationEn": "Or if possible, he still plays the accordion. That's the typical stereotype of a Frenchman.",
+        "translationVi": "Hoặc nếu có thể, anh ấy còn chơi accordion. Đó là hình ảnh điển hình của một người Pháp."
     },
     {
         "text": "Wobei ich sagen muss, ich habe sehr gelacht, als ich diesen Sommer in Frankreich war.",
-        "start": 51.74000015258789,
-        "end": 59.52000122070312,
+        "start": 51.84000015258789,
+        "end": 59.220001220703125,
         "wordTimings": [
             {
                 "word": "Wobei",
-                "start": 51.74000015258789,
+                "start": 51.84000015258789,
                 "end": 52.400001525878906
             },
             {
@@ -534,20 +512,20 @@
             {
                 "word": "war.",
                 "start": 58.900001525878906,
-                "end": 59.52000122070312
+                "end": 59.220001220703125
             }
         ],
         "translationEn": "I have to say, I laughed a lot when I was in France this summer.",
-        "translationVi": "Tôi phải nói rằng tôi đã cười rất nhiều khi tôi ở Pháp vào mùa hè này."
+        "translationVi": "Tôi phải nói rằng tôi đã cười rất nhiều khi tôi ở Pháp mùa hè này."
     },
     {
         "text": "Denn dort hatten abends wirklich viele Menschen ein Baguette unter dem Arm.",
-        "start": 59.699999237060545,
-        "end": 67.53999786376953,
+        "start": 59.79999923706055,
+        "end": 67.23999786376953,
         "wordTimings": [
             {
                 "word": "Denn",
-                "start": 59.699999237060545,
+                "start": 59.79999923706055,
                 "end": 60.099998474121094
             },
             {
@@ -603,20 +581,20 @@
             {
                 "word": "Arm.",
                 "start": 66.77999877929688,
-                "end": 67.53999786376953
+                "end": 67.23999786376953
             }
         ],
         "translationEn": "Because there, in the evenings, many people really had a baguette under their arm.",
-        "translationVi": "Bởi vì ở đó vào buổi tối thực sự có rất nhiều người mang một chiếc bánh mì baguette dưới cánh tay."
+        "translationVi": "Bởi vì ở đó vào buổi tối thật sự có nhiều người mang một chiếc bánh mì baguette dưới cánh tay."
     },
     {
-        "text": "Vorurteile und Stereotype gab es schon immer.",
-        "start": 68.66000213623047,
-        "end": 73.39999847412109,
+        "text": "Vorurteile und Stereotype gab es schon immer. Früher reisten die Menschen viel weniger.",
+        "start": 68.76000213623047,
+        "end": 77.37999725341797,
         "wordTimings": [
             {
                 "word": "Vorurteile",
-                "start": 68.66000213623047,
+                "start": 68.76000213623047,
                 "end": 69.31999969482422
             },
             {
@@ -647,20 +625,11 @@
             {
                 "word": "immer.",
                 "start": 72.77999877929688,
-                "end": 73.39999847412109
-            }
-        ],
-        "translationEn": "Prejudices and stereotypes have always existed.",
-        "translationVi": "Định kiến và khuôn mẫu luôn tồn tại."
-    },
-    {
-        "text": "Früher reisten die Menschen viel weniger.",
-        "start": 73.91999664306641,
-        "end": 77.67999725341797,
-        "wordTimings": [
+                "end": 73.0999984741211
+            },
             {
                 "word": "Früher",
-                "start": 73.91999664306641,
+                "start": 74.0199966430664,
                 "end": 74.5199966430664
             },
             {
@@ -686,20 +655,20 @@
             {
                 "word": "weniger.",
                 "start": 76.9000015258789,
-                "end": 77.67999725341797
+                "end": 77.37999725341797
             }
         ],
-        "translationEn": "In the past, people traveled much less.",
-        "translationVi": "Trước đây, con người di chuyển ít hơn rất nhiều."
+        "translationEn": "Prejudices and stereotypes have always existed. In the past, people traveled much less.",
+        "translationVi": "Định kiến và khuôn mẫu luôn tồn tại. Ngày xưa, con người đi lại ít hơn rất nhiều."
     },
     {
         "text": "Sie kannten andere Länder vor allem aus Erzählungen, aus Büchern oder von Händlern.",
-        "start": 77.8800033569336,
-        "end": 87.16000061035156,
+        "start": 77.9800033569336,
+        "end": 86.86000061035156,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 77.8800033569336,
+                "start": 77.9800033569336,
                 "end": 78.54000091552734
             },
             {
@@ -760,7 +729,7 @@
             {
                 "word": "Händlern.",
                 "start": 86.30000305175781,
-                "end": 87.16000061035156
+                "end": 86.86000061035156
             }
         ],
         "translationEn": "They knew other countries mainly from stories, from books, or from merchants.",
@@ -768,12 +737,12 @@
     },
     {
         "text": "Wenn jemand sagte, die Menschen in diesem Land sind so oder so, glaubten das viele.",
-        "start": 87.95999755859376,
-        "end": 96.39999847412109,
+        "start": 88.05999755859375,
+        "end": 96.0999984741211,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 87.95999755859376,
+                "start": 88.05999755859375,
                 "end": 88.26000213623047
             },
             {
@@ -844,20 +813,20 @@
             {
                 "word": "viele.",
                 "start": 95.80000305175781,
-                "end": 96.39999847412109
+                "end": 96.0999984741211
             }
         ],
         "translationEn": "When someone said that the people in this country are this way or that way, many believed it.",
         "translationVi": "Nếu ai đó nói rằng con người ở đất nước này như thế này hay như thế kia, thì nhiều người đã tin điều đó."
     },
     {
-        "text": "So entstanden einfache Bilder im Kopf.",
-        "start": 96.66000213623047,
-        "end": 100.61999969482422,
+        "text": "So entstanden einfache Bilder im Kopf. Und viele halten sich bis heute.",
+        "start": 96.76000213623047,
+        "end": 103.86000061035156,
         "wordTimings": [
             {
                 "word": "So",
-                "start": 96.66000213623047,
+                "start": 96.76000213623047,
                 "end": 97.31999969482422
             },
             {
@@ -883,20 +852,11 @@
             {
                 "word": "Kopf.",
                 "start": 99.95999908447266,
-                "end": 100.61999969482422
-            }
-        ],
-        "translationEn": "This is how simple images were created in the mind.",
-        "translationVi": "Vì vậy, những hình ảnh đơn giản đã hình thành trong đầu."
-    },
-    {
-        "text": "Und viele halten sich bis heute.",
-        "start": 100.84000244140626,
-        "end": 104.16000061035156,
-        "wordTimings": [
+                "end": 100.31999969482422
+            },
             {
                 "word": "Und",
-                "start": 100.84000244140626,
+                "start": 100.94000244140625,
                 "end": 101.4000015258789
             },
             {
@@ -922,20 +882,20 @@
             {
                 "word": "heute.",
                 "start": 103.41999816894531,
-                "end": 104.16000061035156
+                "end": 103.86000061035156
             }
         ],
-        "translationEn": "And many still hold on to this day.",
-        "translationVi": "Và nhiều người vẫn giữ như vậy cho đến ngày nay."
+        "translationEn": "This is how simple images were created in the mind. And many of them remain to this day.",
+        "translationVi": "Vì vậy, những hình ảnh đơn giản đã hình thành trong đầu. Và nhiều hình ảnh trong số đó vẫn còn tồn tại cho đến ngày nay."
     },
     {
-        "text": "Überleg mal, wie für Dich der typische Deutsche aussieht.",
-        "start": 104.84000244140626,
-        "end": 110.8,
+        "text": "Überleg mal, wie für dich der typische Deutsche aussieht. Was er macht, was er trinkt, was er gerne isst.",
+        "start": 104.94000244140625,
+        "end": 115.5,
         "wordTimings": [
             {
                 "word": "Überleg",
-                "start": 104.84000244140626,
+                "start": 104.94000244140625,
                 "end": 105.77999877929688
             },
             {
@@ -954,7 +914,7 @@
                 "end": 107.44000244140625
             },
             {
-                "word": "Dich",
+                "word": "dich",
                 "start": 107.44000244140625,
                 "end": 107.81999969482422
             },
@@ -976,20 +936,11 @@
             {
                 "word": "aussieht.",
                 "start": 109.9000015258789,
-                "end": 110.8
-            }
-        ],
-        "translationEn": "Think about what the typical German looks like to you.",
-        "translationVi": "Hãy nghĩ xem, người Đức điển hình trong mắt bạn trông như thế nào."
-    },
-    {
-        "text": "Was er macht, was er trinkt, was er gerne isst.",
-        "start": 110.95999755859376,
-        "end": 115.8,
-        "wordTimings": [
+                "end": 110.5
+            },
             {
                 "word": "Was",
-                "start": 110.95999755859376,
+                "start": 111.05999755859375,
                 "end": 111.19999694824219
             },
             {
@@ -1035,20 +986,20 @@
             {
                 "word": "isst.",
                 "start": 115.12000274658203,
-                "end": 115.8
+                "end": 115.5
             }
         ],
-        "translationEn": "What he does, what he drinks, what he likes to eat.",
-        "translationVi": "Anh ấy làm gì, anh ấy uống gì, anh ấy thích ăn gì."
+        "translationEn": "Think about what the typical German looks like to you. What he does, what he drinks, what he likes to eat.",
+        "translationVi": "Hãy nghĩ xem, người Đức điển hình trong mắt bạn trông như thế nào. Anh ta làm gì, uống gì, thích ăn gì."
     },
     {
-        "text": "Na, hast Du ein Bild vor Augen?",
-        "start": 116.67999877929688,
-        "end": 120.11999969482422,
+        "text": "Na, hast du ein Bild vor Augen? Gehen wir es mal durch.",
+        "start": 116.77999877929688,
+        "end": 122,
         "wordTimings": [
             {
                 "word": "Na,",
-                "start": 116.67999877929688,
+                "start": 116.77999877929688,
                 "end": 117.27999877929688
             },
             {
@@ -1057,7 +1008,7 @@
                 "end": 118.36000061035156
             },
             {
-                "word": "Du",
+                "word": "du",
                 "start": 118.36000061035156,
                 "end": 118.58000183105469
             },
@@ -1079,20 +1030,11 @@
             {
                 "word": "Augen?",
                 "start": 119.44000244140625,
-                "end": 120.11999969482422
-            }
-        ],
-        "translationEn": "So, do you have a picture in mind?",
-        "translationVi": "Bạn có hình ảnh nào trong đầu không?"
-    },
-    {
-        "text": "Gehen wir es mal durch.",
-        "start": 120.58000030517579,
-        "end": 122.3,
-        "wordTimings": [
+                "end": 119.81999969482422
+            },
             {
                 "word": "Gehen",
-                "start": 120.58000030517579,
+                "start": 120.68000030517578,
                 "end": 121.04000091552734
             },
             {
@@ -1113,20 +1055,20 @@
             {
                 "word": "durch.",
                 "start": 121.68000030517578,
-                "end": 122.3
+                "end": 122
             }
         ],
-        "translationEn": "Let's go through it.",
-        "translationVi": "Hãy cùng nhau xem qua."
+        "translationEn": "Well, do you have a picture in mind? Let's go through it.",
+        "translationVi": "Vậy, bạn có hình ảnh nào trong đầu không? Hãy cùng xem qua nhé."
     },
     {
-        "text": "Mal sehen, ob ich erraten habe, an welche Vorurteile Du gerade gedacht hast.",
-        "start": 122.41999664306641,
-        "end": 131.3,
+        "text": "Mal sehen, ob ich erraten habe, an welche Vorurteile du gerade gedacht hast.",
+        "start": 122.5199966430664,
+        "end": 131,
         "wordTimings": [
             {
                 "word": "Mal",
-                "start": 122.41999664306641,
+                "start": 122.5199966430664,
                 "end": 122.94000244140625
             },
             {
@@ -1170,7 +1112,7 @@
                 "end": 128.24000549316406
             },
             {
-                "word": "Du",
+                "word": "du",
                 "start": 128.24000549316406,
                 "end": 129.0800018310547
             },
@@ -1187,20 +1129,20 @@
             {
                 "word": "hast.",
                 "start": 130.63999938964844,
-                "end": 131.3
+                "end": 131
             }
         ],
         "translationEn": "Let's see if I guessed which prejudices you were just thinking about.",
-        "translationVi": "Hãy xem liệu tôi có đoán đúng những định kiến mà bạn đang nghĩ đến không."
+        "translationVi": "Hãy xem tôi có đoán đúng những định kiến nào mà bạn đang nghĩ đến không."
     },
     {
-        "text": "Ein bekanntes Vorurteil ist, dass alle Deutschen pünktlich sind.",
-        "start": 130.9,
-        "end": 138.66000061035157,
+        "text": "Ein bekanntes Vorurteil ist, dass alle Deutschen pünktlich sind. Es stimmt, dass Pünktlichkeit in Deutschland wichtig ist.",
+        "start": 131,
+        "end": 144.4199981689453,
         "wordTimings": [
             {
                 "word": "Ein",
-                "start": 130.9,
+                "start": 131,
                 "end": 132.74000549316406
             },
             {
@@ -1231,30 +1173,21 @@
             {
                 "word": "Deutschen",
                 "start": 136.17999267578125,
-                "end": 136.77999877929688
+                "end": 136.8000030517578
             },
             {
                 "word": "pünktlich",
-                "start": 136.77999877929688,
+                "start": 136.8000030517578,
                 "end": 137.9600067138672
             },
             {
                 "word": "sind.",
                 "start": 137.9600067138672,
-                "end": 138.66000061035157
-            }
-        ],
-        "translationEn": "A common stereotype is that all Germans are punctual.",
-        "translationVi": "Một định kiến nổi tiếng là tất cả người Đức đều đúng giờ."
-    },
-    {
-        "text": "Es stimmt, dass Pünktlichkeit in Deutschland wichtig ist.",
-        "start": 139.2800048828125,
-        "end": 144.71999816894532,
-        "wordTimings": [
+                "end": 138.36000061035156
+            },
             {
                 "word": "Es",
-                "start": 139.2800048828125,
+                "start": 139.3800048828125,
                 "end": 139.72000122070312
             },
             {
@@ -1290,20 +1223,20 @@
             {
                 "word": "ist.",
                 "start": 144.02000427246094,
-                "end": 144.71999816894532
+                "end": 144.4199981689453
             }
         ],
-        "translationEn": "It is true that punctuality is important in Germany.",
-        "translationVi": "Đúng là sự đúng giờ rất quan trọng ở Đức."
+        "translationEn": "A common stereotype is that all Germans are punctual. It is true that punctuality is important in Germany.",
+        "translationVi": "Một định kiến nổi tiếng là tất cả người Đức đều đúng giờ. Đúng là sự đúng giờ rất quan trọng ở Đức."
     },
     {
         "text": "Viele Menschen erwarten, dass Züge, Busse oder Verabredungen genau zur richtigen Zeit beginnen.",
-        "start": 145.4800018310547,
-        "end": 154.66000061035157,
+        "start": 145.5800018310547,
+        "end": 154.36000061035156,
         "wordTimings": [
             {
                 "word": "Viele",
-                "start": 145.4800018310547,
+                "start": 145.5800018310547,
                 "end": 145.86000061035156
             },
             {
@@ -1364,20 +1297,20 @@
             {
                 "word": "beginnen.",
                 "start": 153.83999633789062,
-                "end": 154.66000061035157
+                "end": 154.36000061035156
             }
         ],
         "translationEn": "Many people expect that trains, buses, or appointments start at exactly the right time.",
         "translationVi": "Nhiều người mong đợi rằng tàu, xe buýt hoặc các cuộc hẹn sẽ bắt đầu đúng giờ."
     },
     {
-        "text": "Allerdings hat diese deutsche Charaktereigenschaft ein Problem.",
-        "start": 154.26000061035157,
-        "end": 161.33999328613282,
+        "text": "Allerdings hat diese deutsche Charaktereigenschaft ein Problem. Sie passt nicht zur Deutschen Bahn.",
+        "start": 154.36000061035156,
+        "end": 164.77999877929688,
         "wordTimings": [
             {
                 "word": "Allerdings",
-                "start": 154.26000061035157,
+                "start": 154.36000061035156,
                 "end": 156.25999450683594
             },
             {
@@ -1408,20 +1341,11 @@
             {
                 "word": "Problem.",
                 "start": 160.55999755859375,
-                "end": 161.33999328613282
-            }
-        ],
-        "translationEn": "However, this German character trait has a problem.",
-        "translationVi": "Tuy nhiên, đặc điểm tính cách của người Đức này có một vấn đề."
-    },
-    {
-        "text": "Sie passt nicht zur Deutschen Bahn.",
-        "start": 162.22000732421876,
-        "end": 165.0799987792969,
-        "wordTimings": [
+                "end": 161.0399932861328
+            },
             {
                 "word": "Sie",
-                "start": 162.22000732421876,
+                "start": 162.32000732421875,
                 "end": 162.55999755859375
             },
             {
@@ -1447,20 +1371,20 @@
             {
                 "word": "Bahn.",
                 "start": 164.5,
-                "end": 165.0799987792969
+                "end": 164.77999877929688
             }
         ],
-        "translationEn": "She does not fit with Deutsche Bahn.",
-        "translationVi": "Cô ấy không phù hợp với Deutsche Bahn."
+        "translationEn": "However, this German character trait has a problem. It does not fit with Deutsche Bahn.",
+        "translationVi": "Tuy nhiên, đặc điểm tính cách này của người Đức có một vấn đề. Nó không phù hợp với Deutsche Bahn."
     },
     {
         "text": "Die Deutsche Bahn ist leider bekannt dafür, dass sie ein Problem mit der Pünktlichkeit hat.",
-        "start": 165.73999633789063,
-        "end": 174.54000549316407,
+        "start": 165.83999633789062,
+        "end": 174.24000549316406,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 165.73999633789063,
+                "start": 165.83999633789062,
                 "end": 166.05999755859375
             },
             {
@@ -1531,20 +1455,20 @@
             {
                 "word": "hat.",
                 "start": 173.66000366210938,
-                "end": 174.54000549316407
+                "end": 174.24000549316406
             }
         ],
         "translationEn": "The German railway is unfortunately known for having a problem with punctuality.",
-        "translationVi": "Deutsche Bahn thật không may nổi tiếng với việc có vấn đề về độ đúng giờ."
+        "translationVi": "Deutsche Bahn đáng tiếc nổi tiếng với việc có vấn đề về độ đúng giờ."
     },
     {
         "text": "Im Oktober 2025 hatte jeder zweite Fernzug in Deutschland Verspätung.",
-        "start": 175.22000732421876,
-        "end": 183.83999328613282,
+        "start": 175.32000732421875,
+        "end": 183.5399932861328,
         "wordTimings": [
             {
                 "word": "Im",
-                "start": 175.22000732421876,
+                "start": 175.32000732421875,
                 "end": 175.67999267578125
             },
             {
@@ -1590,7 +1514,7 @@
             {
                 "word": "Verspätung.",
                 "start": 182.82000732421875,
-                "end": 183.83999328613282
+                "end": 183.5399932861328
             }
         ],
         "translationEn": "In October 2025, every second long-distance train in Germany was delayed.",
@@ -1598,12 +1522,12 @@
     },
     {
         "text": "Grund dafür sind viele Baustellen und das marode, also kaputte Schienennetz.",
-        "start": 184.23999633789063,
-        "end": 193.83999328613282,
+        "start": 184.33999633789062,
+        "end": 193.5399932861328,
         "wordTimings": [
             {
                 "word": "Grund",
-                "start": 184.23999633789063,
+                "start": 184.33999633789062,
                 "end": 185.0399932861328
             },
             {
@@ -1654,20 +1578,20 @@
             {
                 "word": "Schienennetz.",
                 "start": 192.4199981689453,
-                "end": 193.83999328613282
+                "end": 193.5399932861328
             }
         ],
-        "translationEn": "The reason for this are many construction sites and the dilapidated, that is, broken railway network.",
-        "translationVi": "Nguyên nhân là do nhiều công trường xây dựng và mạng lưới đường sắt hư hỏng, tức là bị hỏng."
+        "translationEn": "The reason for this are many construction sites and the dilapidated, therefore broken, railway network.",
+        "translationVi": "Nguyên nhân là do nhiều công trình xây dựng và mạng lưới đường sắt hư hỏng, tức là bị hỏng."
     },
     {
         "text": "Ein weiteres Stereotyp ist, dass Deutsche sehr ernst sind und nicht viel lachen.",
-        "start": 194.76000061035157,
-        "end": 203.12000732421876,
+        "start": 194.86000061035156,
+        "end": 202.82000732421875,
         "wordTimings": [
             {
                 "word": "Ein",
-                "start": 194.76000061035157,
+                "start": 194.86000061035156,
                 "end": 195.24000549316406
             },
             {
@@ -1728,20 +1652,20 @@
             {
                 "word": "lachen.",
                 "start": 202.4600067138672,
-                "end": 203.12000732421876
+                "end": 202.82000732421875
             }
         ],
-        "translationEn": "Another stereotype is that Germans are very serious and don't laugh much.",
+        "translationEn": "Another stereotype is that Germans are very serious and do not laugh much.",
         "translationVi": "Một khuôn mẫu khác là người Đức rất nghiêm túc và không hay cười nhiều."
     },
     {
-        "text": "Viele Besucher sagen, Deutsche seien höflich, aber distanziert.",
-        "start": 203.8600067138672,
-        "end": 210.74000244140626,
+        "text": "Viele Besucher sagen, Deutsche seien höflich, aber distanziert. Auch dieses Bild stimmt nur teilweise.",
+        "start": 203.97999572753906,
+        "end": 215.24000549316406,
         "wordTimings": [
             {
                 "word": "Viele",
-                "start": 203.8600067138672,
+                "start": 203.97999572753906,
                 "end": 204.25999450683594
             },
             {
@@ -1777,20 +1701,11 @@
             {
                 "word": "distanziert.",
                 "start": 209.33999633789062,
-                "end": 210.74000244140626
-            }
-        ],
-        "translationEn": "Many visitors say that Germans are polite but distant.",
-        "translationVi": "Nhiều du khách nói rằng người Đức lịch sự nhưng xa cách."
-    },
-    {
-        "text": "Auch dieses Bild stimmt nur teilweise.",
-        "start": 210.34000244140626,
-        "end": 215.54000549316407,
-        "wordTimings": [
+                "end": 210.44000244140625
+            },
             {
                 "word": "Auch",
-                "start": 210.34000244140626,
+                "start": 210.44000244140625,
                 "end": 211.72000122070312
             },
             {
@@ -1816,20 +1731,20 @@
             {
                 "word": "teilweise.",
                 "start": 214.55999755859375,
-                "end": 215.54000549316407
+                "end": 215.24000549316406
             }
         ],
-        "translationEn": "This image is only partially correct.",
-        "translationVi": "Cũng bức tranh này chỉ đúng một phần."
+        "translationEn": "Many visitors say that Germans are polite but distant. This image is only partially true.",
+        "translationVi": "Nhiều du khách nói rằng người Đức lịch sự nhưng xa cách. Hình ảnh này cũng chỉ đúng một phần."
     },
     {
         "text": "Es gibt Menschen, die ernst sind, aber auch viele, die gerne Witze machen oder fröhlich sind.",
-        "start": 216.23999633789063,
-        "end": 226.10000305175782,
+        "start": 216.33999633789062,
+        "end": 225.8000030517578,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 216.23999633789063,
+                "start": 216.33999633789062,
                 "end": 216.6999969482422
             },
             {
@@ -1905,20 +1820,20 @@
             {
                 "word": "sind.",
                 "start": 225.3800048828125,
-                "end": 226.10000305175782
+                "end": 225.8000030517578
             }
         ],
         "translationEn": "There are people who are serious, but also many who like to joke or are cheerful.",
-        "translationVi": "Có những người nghiêm túc, nhưng cũng có nhiều người thích đùa hoặc vui vẻ."
+        "translationVi": "Có những người nghiêm túc, nhưng cũng có nhiều người thích đùa giỡn hoặc vui vẻ."
     },
     {
         "text": "Oft braucht man in Deutschland einfach etwas Zeit, bis man jemanden gut kennt.",
-        "start": 226.8600067138672,
-        "end": 235.40000610351564,
+        "start": 226.9600067138672,
+        "end": 235.10000610351562,
         "wordTimings": [
             {
                 "word": "Oft",
-                "start": 226.8600067138672,
+                "start": 226.9600067138672,
                 "end": 227.4199981689453
             },
             {
@@ -1979,20 +1894,20 @@
             {
                 "word": "kennt.",
                 "start": 234.75999450683594,
-                "end": 235.40000610351564
+                "end": 235.10000610351562
             }
         ],
         "translationEn": "Often in Germany, it simply takes some time to get to know someone well.",
         "translationVi": "Thường thì ở Đức, người ta cần một chút thời gian để hiểu rõ về nhau."
     },
     {
-        "text": "Danach öffnen sich viele Menschen und sind herzlich.",
-        "start": 236.3600067138672,
-        "end": 242.3,
+        "text": "Danach öffnen sich viele Menschen und sind herzlich. Das heißt aber nicht, dass Deutsche unfreundlich sind.",
+        "start": 236.4600067138672,
+        "end": 247.3000030517578,
         "wordTimings": [
             {
                 "word": "Danach",
-                "start": 236.3600067138672,
+                "start": 236.4600067138672,
                 "end": 237.5800018310547
             },
             {
@@ -2028,20 +1943,11 @@
             {
                 "word": "herzlich.",
                 "start": 241.22000122070312,
-                "end": 242.3
-            }
-        ],
-        "translationEn": "Afterwards, many people open up and are warm-hearted.",
-        "translationVi": "Sau đó, nhiều người mở lòng và rất thân thiện."
-    },
-    {
-        "text": "Das heißt aber nicht, dass Deutsche unfreundlich sind.",
-        "start": 242.9,
-        "end": 247.60000305175782,
-        "wordTimings": [
+                "end": 242
+            },
             {
                 "word": "Das",
-                "start": 242.9,
+                "start": 243,
                 "end": 243.27999877929688
             },
             {
@@ -2077,20 +1983,20 @@
             {
                 "word": "sind.",
                 "start": 246.89999389648438,
-                "end": 247.60000305175782
+                "end": 247.3000030517578
             }
         ],
-        "translationEn": "That doesn't mean that Germans are unfriendly.",
-        "translationVi": "Điều đó không có nghĩa là người Đức không thân thiện."
+        "translationEn": "After that, many people open up and are warm-hearted. However, that does not mean that Germans are unfriendly.",
+        "translationVi": "Sau đó, nhiều người sẽ mở lòng và thân thiện. Nhưng điều đó không có nghĩa là người Đức không thân thiện."
     },
     {
-        "text": "Es ist nur eine andere Art, mit neuen Personen umzugehen.",
-        "start": 248.14000549316407,
-        "end": 254.43999938964845,
+        "text": "Es ist nur eine andere Art, mit neuen Personen umzugehen. Gibt es also deutschen Humor?",
+        "start": 248.24000549316406,
+        "end": 257.94000244140625,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 248.14000549316407,
+                "start": 248.24000549316406,
                 "end": 248.47999572753906
             },
             {
@@ -2136,20 +2042,11 @@
             {
                 "word": "umzugehen.",
                 "start": 253.10000610351562,
-                "end": 254.43999938964845
-            }
-        ],
-        "translationEn": "It's just a different way of dealing with new people.",
-        "translationVi": "Đó chỉ là một cách khác để đối xử với những người mới."
-    },
-    {
-        "text": "Gibt es also deutschen Humor?",
-        "start": 255.34000244140626,
-        "end": 258.24000244140626,
-        "wordTimings": [
+                "end": 254.13999938964844
+            },
             {
                 "word": "Gibt",
-                "start": 255.34000244140626,
+                "start": 255.44000244140625,
                 "end": 255.6999969482422
             },
             {
@@ -2170,20 +2067,20 @@
             {
                 "word": "Humor?",
                 "start": 257.2200012207031,
-                "end": 258.24000244140626
+                "end": 257.94000244140625
             }
         ],
-        "translationEn": "Is there such a thing as German humor?",
-        "translationVi": "Có phải là có khiếu hài hước của người Đức không?"
+        "translationEn": "It's just a different way of dealing with new people. So is there German humor?",
+        "translationVi": "Đó chỉ là một cách khác để đối phó với những người mới. Vậy có phải là hài hước của người Đức không?"
     },
     {
-        "text": "Ich sage ja.",
-        "start": 258.4,
-        "end": 260.50001220703126,
+        "text": "Ich sage ja. Ich kann über Kabarettisten wie Jochen Malmsheimer oder L'Oréal wirklich Tränen lachen.",
+        "start": 258.5,
+        "end": 268.8999938964844,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 258.4,
+                "start": 258.5,
                 "end": 259.0199890136719
             },
             {
@@ -2194,20 +2091,11 @@
             {
                 "word": "ja.",
                 "start": 259.44000244140625,
-                "end": 260.50001220703126
-            }
-        ],
-        "translationEn": "I say yes.",
-        "translationVi": "Tôi đồng ý."
-    },
-    {
-        "text": "Ich kann über Kabarettisten wie Jochen Malmsheimer oder L'Oréal wirklich Tränen lachen.",
-        "start": 260.1000122070312,
-        "end": 269.1999938964844,
-        "wordTimings": [
+                "end": 260.20001220703125
+            },
             {
                 "word": "Ich",
-                "start": 260.1000122070312,
+                "start": 260.20001220703125,
                 "end": 261.3399963378906
             },
             {
@@ -2263,20 +2151,20 @@
             {
                 "word": "lachen.",
                 "start": 268.5199890136719,
-                "end": 269.1999938964844
+                "end": 268.8999938964844
             }
         ],
-        "translationEn": "I can really laugh tears over cabaret artists like Jochen Malmsheimer or L'Oréal.",
-        "translationVi": "Tôi thực sự có thể cười đến rơi nước mắt về những nghệ sĩ hài như Jochen Malmsheimer hoặc L'Oréal."
+        "translationEn": "I say yes. I can really laugh tears over cabaret artists like Jochen Malmsheimer or L'Oréal.",
+        "translationVi": "Tôi đồng ý. Tôi có thể cười đến rơi nước mắt về những nghệ sĩ hài như Jochen Malmsheimer hoặc L'Oréal."
     },
     {
-        "text": "Kommen wir dazu, wie Deutsche aussehen.",
-        "start": 270.1999877929687,
-        "end": 273.75999145507814,
+        "text": "Kommen wir dazu, wie Deutsche aussehen. Denkst du an Lederhose, Dirndl und Bierkrug?",
+        "start": 270.29998779296875,
+        "end": 279.3599853515625,
         "wordTimings": [
             {
                 "word": "Kommen",
-                "start": 270.1999877929687,
+                "start": 270.29998779296875,
                 "end": 270.5400085449219
             },
             {
@@ -2302,24 +2190,15 @@
             {
                 "word": "aussehen.",
                 "start": 272.5799865722656,
-                "end": 273.75999145507814
-            }
-        ],
-        "translationEn": "Let's talk about what Germans look like.",
-        "translationVi": "Hãy nói về cách người Đức trông như thế nào."
-    },
-    {
-        "text": "Denkst Du an Lederhose, Dirndl und Bierkrug?",
-        "start": 274.29999389648435,
-        "end": 279.6599853515625,
-        "wordTimings": [
+                "end": 273.4599914550781
+            },
             {
                 "word": "Denkst",
-                "start": 274.29999389648435,
+                "start": 274.3999938964844,
                 "end": 274.82000732421875
             },
             {
-                "word": "Du",
+                "word": "du",
                 "start": 274.82000732421875,
                 "end": 275.05999755859375
             },
@@ -2346,20 +2225,20 @@
             {
                 "word": "Bierkrug?",
                 "start": 278.739990234375,
-                "end": 279.6599853515625
+                "end": 279.3599853515625
             }
         ],
-        "translationEn": "Are you thinking of lederhosen, dirndls, and beer mugs?",
-        "translationVi": "Bạn có nghĩ đến quần da, váy Dirndl và cốc bia không?"
+        "translationEn": "Let's talk about what Germans look like. Do you think of lederhosen, dirndls, and beer mugs?",
+        "translationVi": "Hãy nói về cách người Đức trông như thế nào. Bạn có nghĩ đến quần da, váy Dirndl và cốc bia không?"
     },
     {
         "text": "Viele Touristen denken noch heute, dass alle Deutschen so aussehen und jeden Tag Bier trinken.",
-        "start": 279.91998901367185,
-        "end": 289.9600036621094,
+        "start": 280.0199890136719,
+        "end": 289.6600036621094,
         "wordTimings": [
             {
                 "word": "Viele",
-                "start": 279.91998901367185,
+                "start": 280.0199890136719,
                 "end": 280.7799987792969
             },
             {
@@ -2430,7 +2309,7 @@
             {
                 "word": "trinken.",
                 "start": 289.2200012207031,
-                "end": 289.9600036621094
+                "end": 289.6600036621094
             }
         ],
         "translationEn": "Many tourists still think today that all Germans look like this and drink beer every day.",
@@ -2438,12 +2317,12 @@
     },
     {
         "text": "Dabei ist die Lederhose eine Tradition aus Bayern, also aus dem Süden des Landes.",
-        "start": 290.2800048828125,
-        "end": 299.97999267578126,
+        "start": 290.3800048828125,
+        "end": 299.67999267578125,
         "wordTimings": [
             {
                 "word": "Dabei",
-                "start": 290.2800048828125,
+                "start": 290.3800048828125,
                 "end": 291.1600036621094
             },
             {
@@ -2509,7 +2388,7 @@
             {
                 "word": "Landes.",
                 "start": 299.2200012207031,
-                "end": 299.97999267578126
+                "end": 299.67999267578125
             }
         ],
         "translationEn": "The leather trousers are a tradition from Bavaria, which is in the southern part of the country.",
@@ -2517,12 +2396,12 @@
     },
     {
         "text": "In vielen anderen deutschen Regionen trägt niemand solche Kleidung.",
-        "start": 300.6000122070312,
-        "end": 307.039990234375,
+        "start": 300.70001220703125,
+        "end": 306.739990234375,
         "wordTimings": [
             {
                 "word": "In",
-                "start": 300.6000122070312,
+                "start": 300.70001220703125,
                 "end": 301.0199890136719
             },
             {
@@ -2563,7 +2442,7 @@
             {
                 "word": "Kleidung.",
                 "start": 306.2200012207031,
-                "end": 307.039990234375
+                "end": 306.739990234375
             }
         ],
         "translationEn": "In many other German regions, no one wears such clothing.",
@@ -2571,12 +2450,12 @@
     },
     {
         "text": "Trotzdem ist die Lederhose weltweit ein Symbol für Deutschland geworden.",
-        "start": 307.7399963378906,
-        "end": 315.3199890136719,
+        "start": 307.8399963378906,
+        "end": 315.0199890136719,
         "wordTimings": [
             {
                 "word": "Trotzdem",
-                "start": 307.7399963378906,
+                "start": 307.8399963378906,
                 "end": 308.5199890136719
             },
             {
@@ -2622,20 +2501,20 @@
             {
                 "word": "geworden.",
                 "start": 314.3800048828125,
-                "end": 315.3199890136719
+                "end": 315.0199890136719
             }
         ],
         "translationEn": "Nevertheless, the leather trousers have become a symbol of Germany worldwide.",
-        "translationVi": "Tuy nhiên, quần da đã trở thành biểu tượng cho nước Đức trên toàn thế giới."
+        "translationVi": "Tuy nhiên, quần da đã trở thành biểu tượng của Đức trên toàn thế giới."
     },
     {
         "text": "Es ist ein gutes Beispiel dafür, wie ein kleiner Teil eines Landes plötzlich für das ganze Land steht.",
-        "start": 314.91998901367185,
-        "end": 326.4199951171875,
+        "start": 315.0199890136719,
+        "end": 326.1199951171875,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 314.91998901367185,
+                "start": 315.0199890136719,
                 "end": 316.3999938964844
             },
             {
@@ -2721,20 +2600,20 @@
             {
                 "word": "steht.",
                 "start": 325.6600036621094,
-                "end": 326.4199951171875
+                "end": 326.1199951171875
             }
         ],
         "translationEn": "It is a good example of how a small part of a country suddenly represents the whole country.",
         "translationVi": "Đó là một ví dụ tốt về cách một phần nhỏ của một đất nước bỗng nhiên đại diện cho toàn bộ đất nước."
     },
     {
-        "text": "Kurios ist, dass manche Menschen aus dem Ausland bei ihrem Besuch in Berlin enttäuscht sind, weil dort kaum jemand eine Lederhose trägt.",
-        "start": 327.3599914550781,
-        "end": 340.8400085449219,
+        "text": "Kurios ist, dass manche Menschen aus dem Ausland bei ihrem Besuch in Berlin enttäuscht sind.",
+        "start": 327.4599914550781,
+        "end": 335.5799865722656,
         "wordTimings": [
             {
                 "word": "Kurios",
-                "start": 327.3599914550781,
+                "start": 327.4599914550781,
                 "end": 328
             },
             {
@@ -2803,12 +2682,21 @@
                 "end": 335.1199951171875
             },
             {
-                "word": "sind,",
+                "word": "sind.",
                 "start": 335.1199951171875,
                 "end": 335.5799865722656
-            },
+            }
+        ],
+        "translationEn": "It is curious that some people from abroad are disappointed during their visit to Berlin.",
+        "translationVi": "Điều kỳ lạ là một số người nước ngoài khi đến thăm Berlin lại cảm thấy thất vọng."
+    },
+    {
+        "text": "Weil dort kaum jemand eine Lederhose trägt. Sie hatten etwas anderes erwartet.",
+        "start": 336.4599914550781,
+        "end": 344.3599853515625,
+        "wordTimings": [
             {
-                "word": "weil",
+                "word": "Weil",
                 "start": 336.4599914550781,
                 "end": 336.4599914550781
             },
@@ -2840,20 +2728,11 @@
             {
                 "word": "trägt.",
                 "start": 339.79998779296875,
-                "end": 340.8400085449219
-            }
-        ],
-        "translationEn": "It is curious that some people from abroad are disappointed during their visit to Berlin because hardly anyone wears lederhosen there.",
-        "translationVi": "Điều kỳ lạ là một số người từ nước ngoài khi đến thăm Berlin lại cảm thấy thất vọng vì ở đó hầu như không ai mặc quần da."
-    },
-    {
-        "text": "Sie hatten etwas anderes erwartet.",
-        "start": 341.3599914550781,
-        "end": 344.6599853515625,
-        "wordTimings": [
+                "end": 340.5400085449219
+            },
             {
                 "word": "Sie",
-                "start": 341.3599914550781,
+                "start": 341.4599914550781,
                 "end": 341.8399963378906
             },
             {
@@ -2874,20 +2753,20 @@
             {
                 "word": "erwartet.",
                 "start": 343.760009765625,
-                "end": 344.6599853515625
+                "end": 344.3599853515625
             }
         ],
-        "translationEn": "They had expected something different.",
-        "translationVi": "Họ đã mong đợi điều gì đó khác."
+        "translationEn": "Because hardly anyone wears lederhosen there. They expected something different.",
+        "translationVi": "Bởi vì ở đó hầu như không ai mặc quần da. Họ đã mong đợi điều gì đó khác."
     },
     {
         "text": "Übrigens trinken die Menschen in vielen Regionen Deutschlands auch viel lieber Wein als Bier.",
-        "start": 344.2599853515625,
-        "end": 355.560009765625,
+        "start": 344.3599853515625,
+        "end": 355.260009765625,
         "wordTimings": [
             {
                 "word": "Übrigens",
-                "start": 344.2599853515625,
+                "start": 344.3599853515625,
                 "end": 346.5799865722656
             },
             {
@@ -2953,20 +2832,20 @@
             {
                 "word": "Bier.",
                 "start": 355,
-                "end": 355.560009765625
+                "end": 355.260009765625
             }
         ],
         "translationEn": "By the way, people in many regions of Germany prefer to drink wine rather than beer.",
-        "translationVi": "Nhân tiện, người dân ở nhiều vùng của Đức cũng thích uống rượu vang hơn bia."
+        "translationVi": "Nhân tiện, người dân ở nhiều vùng của Đức cũng thích uống rượu vang hơn là bia."
     },
     {
         "text": "Das kommt einfach darauf an, wo Weinberge existieren und wo eher Hopfengärten.",
-        "start": 356.3400024414062,
-        "end": 365.50001220703126,
+        "start": 356.44000244140625,
+        "end": 365.20001220703125,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 356.3400024414062,
+                "start": 356.44000244140625,
                 "end": 356.8399963378906
             },
             {
@@ -3022,7 +2901,7 @@
             {
                 "word": "Hopfengärten.",
                 "start": 364.2799987792969,
-                "end": 365.50001220703126
+                "end": 365.20001220703125
             }
         ],
         "translationEn": "It simply depends on where vineyards exist and where hop gardens are more common.",
@@ -3030,12 +2909,12 @@
     },
     {
         "text": "Auch innerhalb Deutschlands gibt es Stereotype über bestimmte Regionen.",
-        "start": 365.1000122070312,
-        "end": 374.060009765625,
+        "start": 365.20001220703125,
+        "end": 373.760009765625,
         "wordTimings": [
             {
                 "word": "Auch",
-                "start": 365.1000122070312,
+                "start": 365.20001220703125,
                 "end": 366.9599914550781
             },
             {
@@ -3076,7 +2955,7 @@
             {
                 "word": "Regionen.",
                 "start": 373,
-                "end": 374.060009765625
+                "end": 373.760009765625
             }
         ],
         "translationEn": "There are also stereotypes about certain regions within Germany.",
@@ -3084,12 +2963,12 @@
     },
     {
         "text": "Zum Beispiel sagt man über Menschen aus Norddeutschland, dass sie ruhig und wenig gesprächig sind.",
-        "start": 374.6200012207031,
-        "end": 383.52000122070314,
+        "start": 374.7200012207031,
+        "end": 383.2200012207031,
         "wordTimings": [
             {
                 "word": "Zum",
-                "start": 374.6200012207031,
+                "start": 374.7200012207031,
                 "end": 374.8800048828125
             },
             {
@@ -3160,7 +3039,7 @@
             {
                 "word": "sind.",
                 "start": 382.8599853515625,
-                "end": 383.52000122070314
+                "end": 383.2200012207031
             }
         ],
         "translationEn": "For example, it is said about people from Northern Germany that they are calm and not very talkative.",
@@ -3168,12 +3047,12 @@
     },
     {
         "text": "Über Menschen aus Süddeutschland sagt man, sie seien besonders gemütlich.",
-        "start": 384.29999389648435,
-        "end": 390.8199890136719,
+        "start": 384.3999938964844,
+        "end": 390.5199890136719,
         "wordTimings": [
             {
                 "word": "Über",
-                "start": 384.29999389648435,
+                "start": 384.3999938964844,
                 "end": 384.6199951171875
             },
             {
@@ -3219,20 +3098,20 @@
             {
                 "word": "gemütlich.",
                 "start": 389.7799987792969,
-                "end": 390.8199890136719
+                "end": 390.5199890136719
             }
         ],
         "translationEn": "People from Southern Germany are said to be particularly cozy.",
-        "translationVi": "Người ta nói rằng những người từ miền Nam nước Đức đặc biệt thoải mái."
+        "translationVi": "Người ta nói rằng những người từ miền Nam nước Đức rất thoải mái."
     },
     {
         "text": "Solche Vorurteile können unterhaltsam sein, wenn man sie nicht zu ernst nimmt.",
-        "start": 390.41998901367185,
-        "end": 399.78001098632814,
+        "start": 390.5199890136719,
+        "end": 399.4800109863281,
         "wordTimings": [
             {
                 "word": "Solche",
-                "start": 390.41998901367185,
+                "start": 390.5199890136719,
                 "end": 392.79998779296875
             },
             {
@@ -3288,20 +3167,20 @@
             {
                 "word": "nimmt.",
                 "start": 399.1600036621094,
-                "end": 399.78001098632814
+                "end": 399.4800109863281
             }
         ],
-        "translationEn": "Such prejudices can be entertaining if one doesn't take them too seriously.",
-        "translationVi": "Những định kiến như vậy có thể thú vị nếu bạn không coi chúng quá nghiêm túc."
+        "translationEn": "Such prejudices can be entertaining if you don't take them too seriously.",
+        "translationVi": "Những định kiến như vậy có thể thú vị nếu bạn không quá nghiêm túc với chúng."
     },
     {
         "text": "Problematisch werden sie, wenn Menschen andere nur nach solchen Bildern beurteilen.",
-        "start": 400.2599853515625,
-        "end": 408.02000122070314,
+        "start": 400.3599853515625,
+        "end": 407.7200012207031,
         "wordTimings": [
             {
                 "word": "Problematisch",
-                "start": 400.2599853515625,
+                "start": 400.3599853515625,
                 "end": 401.32000732421875
             },
             {
@@ -3352,7 +3231,7 @@
             {
                 "word": "beurteilen.",
                 "start": 406.8399963378906,
-                "end": 408.02000122070314
+                "end": 407.7200012207031
             }
         ],
         "translationEn": "They become problematic when people judge others solely based on such images.",
@@ -3360,12 +3239,12 @@
     },
     {
         "text": "Viele Vorurteile entstehen, wenn man etwas nicht kennt oder wenn man Angst vor Neuem hat.",
-        "start": 409.2200073242187,
-        "end": 419.25999145507814,
+        "start": 409.32000732421875,
+        "end": 418.9599914550781,
         "wordTimings": [
             {
                 "word": "Viele",
-                "start": 409.2200073242187,
+                "start": 409.32000732421875,
                 "end": 409.7200012207031
             },
             {
@@ -3436,20 +3315,20 @@
             {
                 "word": "hat.",
                 "start": 418.6000061035156,
-                "end": 419.25999145507814
+                "end": 418.9599914550781
             }
         ],
         "translationEn": "Many prejudices arise when one does not know something or when one is afraid of the new.",
-        "translationVi": "Nhiều định kiến xuất hiện khi người ta không biết điều gì đó hoặc khi người ta sợ hãi cái mới."
+        "translationVi": "Nhiều định kiến xuất hiện khi người ta không biết điều gì đó hoặc khi người ta sợ hãi điều mới mẻ."
     },
     {
         "text": "Deshalb ist es wichtig, andere Menschen kennenzulernen und mit ihnen zu sprechen.",
-        "start": 418.8599914550781,
-        "end": 427.7200134277344,
+        "start": 418.9599914550781,
+        "end": 427.4200134277344,
         "wordTimings": [
             {
                 "word": "Deshalb",
-                "start": 418.8599914550781,
+                "start": 418.9599914550781,
                 "end": 420.7799987792969
             },
             {
@@ -3505,20 +3384,20 @@
             {
                 "word": "sprechen.",
                 "start": 427.4200134277344,
-                "end": 427.7200134277344
+                "end": 427.4200134277344
             }
         ],
         "translationEn": "Therefore, it is important to get to know other people and talk to them.",
-        "translationVi": "Vì vậy, điều quan trọng là gặp gỡ những người khác và nói chuyện với họ."
+        "translationVi": "Vì vậy, điều quan trọng là làm quen với những người khác và nói chuyện với họ."
     },
     {
         "text": "Immer wieder nutzen politische Gruppen negative Stereotype, um Menschen zu trennen und zu verletzen.",
-        "start": 428.660009765625,
-        "end": 438.7200134277344,
+        "start": 428.760009765625,
+        "end": 438.4200134277344,
         "wordTimings": [
             {
                 "word": "Immer",
-                "start": 428.660009765625,
+                "start": 428.760009765625,
                 "end": 429.1199951171875
             },
             {
@@ -3584,20 +3463,20 @@
             {
                 "word": "verletzen.",
                 "start": 438.05999755859375,
-                "end": 438.7200134277344
+                "end": 438.4200134277344
             }
         ],
         "translationEn": "Political groups repeatedly use negative stereotypes to divide and hurt people.",
-        "translationVi": "Các nhóm chính trị thường xuyên sử dụng những khuôn mẫu tiêu cực để phân chia và làm tổn thương con người."
+        "translationVi": "Các nhóm chính trị thường xuyên sử dụng những khuôn mẫu tiêu cực để chia rẽ và làm tổn thương con người."
     },
     {
-        "text": "Heute versuchen viele Organisationen, Schulen und Projekte in Deutschland, über dieses Thema aufzuklären.",
-        "start": 439.44000854492185,
-        "end": 449.6599853515625,
+        "text": "Heute versuchen viele Organisationen, Schulen und Projekte in Deutschland über dieses Thema aufzuklären.",
+        "start": 439.5400085449219,
+        "end": 449.3599853515625,
         "wordTimings": [
             {
                 "word": "Heute",
-                "start": 439.44000854492185,
+                "start": 439.5400085449219,
                 "end": 440.0199890136719
             },
             {
@@ -3636,7 +3515,7 @@
                 "end": 445.82000732421875
             },
             {
-                "word": "Deutschland,",
+                "word": "Deutschland",
                 "start": 445.82000732421875,
                 "end": 446.4200134277344
             },
@@ -3658,7 +3537,7 @@
             {
                 "word": "aufzuklären.",
                 "start": 448.239990234375,
-                "end": 449.6599853515625
+                "end": 449.3599853515625
             }
         ],
         "translationEn": "Today, many organizations, schools, and projects in Germany are trying to raise awareness about this topic.",
@@ -3666,12 +3545,12 @@
     },
     {
         "text": "Sie erklären, wie Stereotype entstehen und wie man sie erkennt.",
-        "start": 450.1200012207031,
-        "end": 456.59998779296876,
+        "start": 450.2200012207031,
+        "end": 456.29998779296875,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 450.1200012207031,
+                "start": 450.2200012207031,
                 "end": 450.3999938964844
             },
             {
@@ -3717,20 +3596,20 @@
             {
                 "word": "erkennt.",
                 "start": 455.7200012207031,
-                "end": 456.59998779296876
+                "end": 456.29998779296875
             }
         ],
         "translationEn": "They explain how stereotypes are formed and how to recognize them.",
-        "translationVi": "Họ giải thích cách mà các khuôn mẫu hình thành và cách nhận biết chúng."
+        "translationVi": "Họ giải thích cách mà những định kiến hình thành và cách nhận biết chúng."
     },
     {
         "text": "Ich finde es seltsam zu sehen, wie Deutsche in Filmen oder Serien dargestellt werden.",
-        "start": 457.3599914550781,
-        "end": 466.3199890136719,
+        "start": 457.4599914550781,
+        "end": 466.0199890136719,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 457.3599914550781,
+                "start": 457.4599914550781,
                 "end": 458.55999755859375
             },
             {
@@ -3796,20 +3675,20 @@
             {
                 "word": "werden.",
                 "start": 465.5799865722656,
-                "end": 466.3199890136719
+                "end": 466.0199890136719
             }
         ],
         "translationEn": "I find it strange to see how Germans are portrayed in movies or series.",
         "translationVi": "Tôi thấy lạ khi thấy người Đức được miêu tả trong phim hoặc series."
     },
     {
-        "text": "Eigentlich reden sie alle wie Adolf Hitler.",
-        "start": 466.8800109863281,
-        "end": 471.00001220703126,
+        "text": "Eigentlich reden sie alle wie Adolf Hitler oder sie sind selten freundlich, sondern meistens eher die Bösen.",
+        "start": 466.9800109863281,
+        "end": 477.32000732421875,
         "wordTimings": [
             {
                 "word": "Eigentlich",
-                "start": 466.8800109863281,
+                "start": 466.9800109863281,
                 "end": 467.70001220703125
             },
             {
@@ -3838,22 +3717,13 @@
                 "end": 470.3599853515625
             },
             {
-                "word": "Hitler.",
+                "word": "Hitler",
                 "start": 470.3599853515625,
-                "end": 471.00001220703126
-            }
-        ],
-        "translationEn": "Actually, they all talk like Adolf Hitler.",
-        "translationVi": "Thực ra, tất cả họ đều nói như Adolf Hitler."
-    },
-    {
-        "text": "Oder sie sind selten freundlich, sondern meistens eher die Bösen.",
-        "start": 470.9599975585937,
-        "end": 477.62000732421876,
-        "wordTimings": [
+                "end": 470.70001220703125
+            },
             {
-                "word": "Oder",
-                "start": 470.9599975585937,
+                "word": "oder",
+                "start": 471.05999755859375,
                 "end": 471.3599853515625
             },
             {
@@ -3899,20 +3769,20 @@
             {
                 "word": "Bösen.",
                 "start": 477.0400085449219,
-                "end": 477.62000732421876
+                "end": 477.32000732421875
             }
         ],
-        "translationEn": "Or they are rarely friendly, but rather mostly the bad ones.",
-        "translationVi": "Hoặc họ hiếm khi thân thiện, mà thường thì họ là những kẻ xấu."
+        "translationEn": "Actually, they all speak like Adolf Hitler or they are rarely friendly, but rather mostly the bad ones.",
+        "translationVi": "Thực ra, họ đều nói như Adolf Hitler hoặc hiếm khi thân thiện, mà thường thì họ giống như những kẻ xấu."
     },
     {
         "text": "Ach ja, und noch ein Stereotyp muss ich hier mal aus dem Weg schaffen.",
-        "start": 477.2200073242187,
-        "end": 484.7200134277344,
+        "start": 477.32000732421875,
+        "end": 484.4200134277344,
         "wordTimings": [
             {
                 "word": "Ach",
-                "start": 477.2200073242187,
+                "start": 477.32000732421875,
                 "end": 478.5199890136719
             },
             {
@@ -3978,20 +3848,20 @@
             {
                 "word": "schaffen.",
                 "start": 484.0199890136719,
-                "end": 484.7200134277344
+                "end": 484.4200134277344
             }
         ],
-        "translationEn": "Oh yes, and I need to clear up another stereotype here.",
-        "translationVi": "À đúng rồi, và tôi cũng phải loại bỏ một khuôn mẫu ở đây."
+        "translationEn": "Oh yes, and I need to dispel another stereotype here.",
+        "translationVi": "À đúng rồi, còn một khuôn mẫu nữa tôi phải giải quyết ở đây."
     },
     {
-        "text": "Ich esse höchstens einmal pro Jahr Sauerkraut.",
-        "start": 485.160009765625,
-        "end": 490.8199890136719,
+        "text": "Ich esse höchstens einmal pro Jahr Sauerkraut. Jetzt bin ich aber vor allem gespannt, welche Vorurteile du über Deutschland hast.",
+        "start": 485.260009765625,
+        "end": 499.239990234375,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 485.160009765625,
+                "start": 485.260009765625,
                 "end": 485.760009765625
             },
             {
@@ -4022,20 +3892,11 @@
             {
                 "word": "Sauerkraut.",
                 "start": 489.1000061035156,
-                "end": 490.8199890136719
-            }
-        ],
-        "translationEn": "I eat sauerkraut at most once a year.",
-        "translationVi": "Tôi chỉ ăn dưa cải chua tối đa một lần mỗi năm."
-    },
-    {
-        "text": "Jetzt bin ich aber vor allem gespannt, welche Vorurteile Du über Deutschland hast.",
-        "start": 491.67999877929685,
-        "end": 499.539990234375,
-        "wordTimings": [
+                "end": 490.5199890136719
+            },
             {
                 "word": "Jetzt",
-                "start": 491.67999877929685,
+                "start": 491.7799987792969,
                 "end": 492.1600036621094
             },
             {
@@ -4079,7 +3940,7 @@
                 "end": 496.5199890136719
             },
             {
-                "word": "Du",
+                "word": "du",
                 "start": 496.5199890136719,
                 "end": 497.4200134277344
             },
@@ -4096,20 +3957,20 @@
             {
                 "word": "hast.",
                 "start": 498.67999267578125,
-                "end": 499.539990234375
+                "end": 499.239990234375
             }
         ],
-        "translationEn": "Now I am especially curious about what prejudices you have about Germany.",
-        "translationVi": "Bây giờ tôi rất tò mò về những định kiến mà bạn có về nước Đức."
+        "translationEn": "I eat sauerkraut at most once a year. But now I'm especially curious about what prejudices you have about Germany.",
+        "translationVi": "Tôi chỉ ăn bắp cải muối tối đa một lần mỗi năm. Bây giờ tôi chủ yếu tò mò về những định kiến mà bạn có về nước Đức."
     },
     {
-        "text": "Oder gerne auch, welche Vorurteile Du früher hattest, aber jetzt nicht mehr.",
-        "start": 499.67999877929685,
-        "end": 506.87998657226564,
+        "text": "Oder gerne auch, welche Vorurteile du früher hattest, aber jetzt nicht mehr.",
+        "start": 499.7799987792969,
+        "end": 506.5799865722656,
         "wordTimings": [
             {
                 "word": "Oder",
-                "start": 499.67999877929685,
+                "start": 499.7799987792969,
                 "end": 500.1000061035156
             },
             {
@@ -4133,7 +3994,7 @@
                 "end": 502.8999938964844
             },
             {
-                "word": "Du",
+                "word": "du",
                 "start": 502.8999938964844,
                 "end": 503.3599853515625
             },
@@ -4165,20 +4026,20 @@
             {
                 "word": "mehr.",
                 "start": 506.3399963378906,
-                "end": 506.87998657226564
+                "end": 506.5799865722656
             }
         ],
-        "translationEn": "Or feel free to share any prejudices you used to have, but no longer do.",
-        "translationVi": "Hoặc bạn cũng có thể chia sẻ những định kiến mà bạn đã từng có trước đây, nhưng bây giờ không còn nữa."
+        "translationEn": "Or also which prejudices you used to have but no longer do.",
+        "translationVi": "Hoặc bạn cũng có thể chia sẻ những định kiến mà bạn từng có trước đây, nhưng bây giờ không còn nữa."
     },
     {
         "text": "Schreib bitte in die Kommentare auf slowgerman.com.",
-        "start": 506.4799865722656,
-        "end": 511.52000122070314,
+        "start": 506.5799865722656,
+        "end": 511.2200012207031,
         "wordTimings": [
             {
                 "word": "Schreib",
-                "start": 506.4799865722656,
+                "start": 506.5799865722656,
                 "end": 507.8399963378906
             },
             {
@@ -4209,7 +4070,7 @@
             {
                 "word": "slowgerman.com.",
                 "start": 510.5400085449219,
-                "end": 511.52000122070314
+                "end": 511.2200012207031
             }
         ],
         "translationEn": "Please write in the comments on slowgerman.com.",

@@ -1,8 +1,8 @@
 [
     {
-        "text": "Bald ist es soweit.",
-        "start": 0,
-        "end": 1.1600000143051148,
+        "text": "Bald ist es soweit. Alle jungen Männer werden gemustert.",
+        "start": 2.380000114440918,
+        "end": 2.380000114440918,
         "wordTimings": [
             {
                 "word": "Bald",
@@ -22,20 +22,11 @@
             {
                 "word": "soweit.",
                 "start": 0.800000011920929,
-                "end": 1.1600000143051148
-            }
-        ],
-        "translationEn": "Soon it will be time.",
-        "translationVi": "Sắp đến lúc rồi."
-    },
-    {
-        "text": "Alle jungen Männer werden gemustert.",
-        "start": 0.9800000429153443,
-        "end": 2.680000114440918,
-        "wordTimings": [
+                "end": 0.8600000143051147
+            },
             {
                 "word": "Alle",
-                "start": 0.9800000429153443,
+                "start": 1.0800000429153442,
                 "end": 1.2200000286102295
             },
             {
@@ -56,20 +47,20 @@
             {
                 "word": "gemustert.",
                 "start": 1.9199999570846558,
-                "end": 2.680000114440918
+                "end": 2.380000114440918
             }
         ],
-        "translationEn": "All young men are being drafted.",
-        "translationVi": "Tất cả các chàng trai trẻ đều được kiểm tra sức khỏe."
+        "translationEn": "Soon it will be time. All young men will be drafted.",
+        "translationVi": "Sắp đến thời điểm đó. Tất cả các chàng trai trẻ sẽ được kiểm tra sức khỏe."
     },
     {
-        "text": "Wie alt sind sie?",
-        "start": 2.3800000190734862,
-        "end": 3.280000019073486,
+        "text": "Wie alt sind sie? Über die 80, 86.",
+        "start": 2.4800000190734863,
+        "end": 4.420000076293945,
         "wordTimings": [
             {
                 "word": "Wie",
-                "start": 2.3800000190734862,
+                "start": 2.4800000190734863,
                 "end": 2.5799999237060547
             },
             {
@@ -85,20 +76,11 @@
             {
                 "word": "sie?",
                 "start": 2.8399999141693115,
-                "end": 3.280000019073486
-            }
-        ],
-        "translationEn": "How old are you?",
-        "translationVi": "Bạn bao nhiêu tuổi?"
-    },
-    {
-        "text": "Über die 80, 86.",
-        "start": 3.0400001049041747,
-        "end": 4.720000076293945,
-        "wordTimings": [
+                "end": 2.9800000190734863
+            },
             {
                 "word": "Über",
-                "start": 3.0400001049041747,
+                "start": 3.140000104904175,
                 "end": 3.299999952316284
             },
             {
@@ -114,20 +96,20 @@
             {
                 "word": "86.",
                 "start": 3.9600000381469727,
-                "end": 4.720000076293945
+                "end": 4.420000076293945
             }
         ],
-        "translationEn": "About the 80, 86.",
-        "translationVi": "Về số 80, 86."
+        "translationEn": "How old are they? Over 80, 86.",
+        "translationVi": "Họ bao nhiêu tuổi? Hơn 80, 86."
     },
     {
         "text": "Da haben sie ja gerade nochmal Glück gehabt.",
-        "start": 4.479999923706055,
-        "end": 5.7000000953674315,
+        "start": 4.579999923706055,
+        "end": 5.400000095367432,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 4.479999923706055,
+                "start": 4.579999923706055,
                 "end": 4.579999923706055
             },
             {
@@ -163,20 +145,20 @@
             {
                 "word": "gehabt.",
                 "start": 5.320000171661377,
-                "end": 5.7000000953674315
+                "end": 5.400000095367432
             }
         ],
         "translationEn": "They just got lucky again.",
         "translationVi": "Họ vừa mới gặp may mắn một lần nữa."
     },
     {
-        "text": "Ich hab nochmal Glück gehabt.",
-        "start": 5.340000057220459,
-        "end": 6.740000057220459,
+        "text": "Ich hab nochmal Glück gehabt. Ich bin nicht mehr betroffen davon.",
+        "start": 5.440000057220459,
+        "end": 7.920000076293945,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 5.340000057220459,
+                "start": 5.440000057220459,
                 "end": 5.539999961853027
             },
             {
@@ -197,20 +179,11 @@
             {
                 "word": "gehabt.",
                 "start": 6.139999866485596,
-                "end": 6.740000057220459
-            }
-        ],
-        "translationEn": "I was lucky again.",
-        "translationVi": "Tôi lại gặp may mắn một lần nữa."
-    },
-    {
-        "text": "Ich bin nicht mehr betroffen davon, oder?",
-        "start": 6.419999980926514,
-        "end": 8.480000305175782,
-        "wordTimings": [
+                "end": 6.440000057220459
+            },
             {
                 "word": "Ich",
-                "start": 6.419999980926514,
+                "start": 6.519999980926514,
                 "end": 6.639999866485596
             },
             {
@@ -234,27 +207,27 @@
                 "end": 7.599999904632568
             },
             {
-                "word": "davon,",
+                "word": "davon.",
                 "start": 7.599999904632568,
                 "end": 7.920000076293945
-            },
-            {
-                "word": "oder?",
-                "start": 8.020000457763672,
-                "end": 8.480000305175782
             }
         ],
-        "translationEn": "I am no longer affected by it, right?",
-        "translationVi": "Tôi không còn bị ảnh hưởng bởi điều đó nữa, đúng không?"
+        "translationEn": "I was lucky again. I am no longer affected by it.",
+        "translationVi": "Tôi lại gặp may. Tôi không còn bị ảnh hưởng bởi điều đó nữa."
     },
     {
-        "text": "Welcher Jahrgang ist das?",
-        "start": 8.080000305175782,
-        "end": 9.260000038146973,
+        "text": "Oder welcher Jahrgang ist das? Ab 2008.",
+        "start": 8.020000457763672,
+        "end": 10.020000457763672,
         "wordTimings": [
             {
-                "word": "Welcher",
-                "start": 8.080000305175782,
+                "word": "Oder",
+                "start": 8.020000457763672,
+                "end": 8.180000305175781
+            },
+            {
+                "word": "welcher",
+                "start": 8.180000305175781,
                 "end": 8.34000015258789
             },
             {
@@ -270,29 +243,29 @@
             {
                 "word": "das?",
                 "start": 8.779999732971191,
-                "end": 9.260000038146973
-            }
-        ],
-        "translationEn": "What vintage is that?",
-        "translationVi": "Năm nào vậy?"
-    },
-    {
-        "text": "Ab 2008, ja bin ich ja raus.",
-        "start": 9.200000190734864,
-        "end": 11.159999656677247,
-        "wordTimings": [
+                "end": 8.960000038146973
+            },
             {
                 "word": "Ab",
-                "start": 9.200000190734864,
+                "start": 9.300000190734863,
                 "end": 9.65999984741211
             },
             {
-                "word": "2008,",
+                "word": "2008.",
                 "start": 9.65999984741211,
                 "end": 10.020000457763672
-            },
+            }
+        ],
+        "translationEn": "Or which vintage is that? From 2008.",
+        "translationVi": "Hoặc năm sản xuất là năm nào? Từ năm 2008."
+    },
+    {
+        "text": "Ja, bin ich ja raus. Wie alt bist du?",
+        "start": 10.15999984741211,
+        "end": 11.460000038146973,
+        "wordTimings": [
             {
-                "word": "ja",
+                "word": "Ja,",
                 "start": 10.15999984741211,
                 "end": 10.279999732971191
             },
@@ -314,20 +287,11 @@
             {
                 "word": "raus.",
                 "start": 10.619999885559082,
-                "end": 11.159999656677247
-            }
-        ],
-        "translationEn": "From 2008, yes, I'm out.",
-        "translationVi": "Từ năm 2008, tôi đã ra ngoài rồi."
-    },
-    {
-        "text": "Wie alt bist du?",
-        "start": 10.839999580383301,
-        "end": 11.760000038146973,
-        "wordTimings": [
+                "end": 10.859999656677246
+            },
             {
                 "word": "Wie",
-                "start": 10.839999580383301,
+                "start": 10.9399995803833,
                 "end": 11.100000381469727
             },
             {
@@ -343,20 +307,20 @@
             {
                 "word": "du?",
                 "start": 11.319999694824219,
-                "end": 11.760000038146973
+                "end": 11.460000038146973
             }
         ],
-        "translationEn": "How old are you?",
-        "translationVi": "Bạn bao nhiêu tuổi?"
+        "translationEn": "Yes, I'm out. How old are you?",
+        "translationVi": "Vâng, tôi đã ra ngoài. Bạn bao nhiêu tuổi?"
     },
     {
-        "text": "19, gerade nochmal weg.",
-        "start": 11.599999809265137,
-        "end": 13.539999771118165,
+        "text": "19, gerade nochmal weg. Ja, geil.",
+        "start": 11.699999809265137,
+        "end": 14.220000267028809,
         "wordTimings": [
             {
                 "word": "19,",
-                "start": 11.599999809265137,
+                "start": 11.699999809265137,
                 "end": 12.0600004196167
             },
             {
@@ -372,39 +336,30 @@
             {
                 "word": "weg.",
                 "start": 12.819999694824219,
-                "end": 13.539999771118165
-            }
-        ],
-        "translationEn": "19, just got away again.",
-        "translationVi": "19, vừa mới thoát khỏi."
-    },
-    {
-        "text": "Ja geil.",
-        "start": 13.500000381469727,
-        "end": 14.52000026702881,
-        "wordTimings": [
+                "end": 13.15999984741211
+            },
             {
-                "word": "Ja",
-                "start": 13.500000381469727,
+                "word": "Ja,",
+                "start": 13.600000381469727,
                 "end": 13.819999694824219
             },
             {
                 "word": "geil.",
                 "start": 13.819999694824219,
-                "end": 14.52000026702881
+                "end": 14.220000267028809
             }
         ],
-        "translationEn": "Yeah cool.",
-        "translationVi": "Vâng, tuyệt vời."
+        "translationEn": "19, just got away again. Yeah, cool.",
+        "translationVi": "19, vừa mới thoát. Vâng, tuyệt vời."
     },
     {
         "text": "Du bist auch nicht betroffen, oder?",
-        "start": 14.679999732971192,
-        "end": 15.940000343322755,
+        "start": 14.779999732971191,
+        "end": 15.640000343322754,
         "wordTimings": [
             {
                 "word": "Du",
-                "start": 14.679999732971192,
+                "start": 14.779999732971191,
                 "end": 14.960000038146973
             },
             {
@@ -430,7 +385,7 @@
             {
                 "word": "oder?",
                 "start": 15.520000457763672,
-                "end": 15.940000343322755
+                "end": 15.640000343322754
             }
         ],
         "translationEn": "You are not affected either, are you?",
@@ -438,12 +393,12 @@
     },
     {
         "text": "Nee, ich bin auch nicht betroffen.",
-        "start": 15.580000305175782,
-        "end": 17.000000762939454,
+        "start": 15.680000305175781,
+        "end": 16.700000762939453,
         "wordTimings": [
             {
                 "word": "Nee,",
-                "start": 15.580000305175782,
+                "start": 15.680000305175781,
                 "end": 15.899999618530273
             },
             {
@@ -469,7 +424,7 @@
             {
                 "word": "betroffen.",
                 "start": 16.440000534057617,
-                "end": 17.000000762939454
+                "end": 16.700000762939453
             }
         ],
         "translationEn": "No, I am not affected either.",
@@ -477,12 +432,12 @@
     },
     {
         "text": "Ihr Sohn ist 11 Jahre alt.",
-        "start": 17.020000839233397,
-        "end": 18.8,
+        "start": 17.1200008392334,
+        "end": 18.5,
         "wordTimings": [
             {
                 "word": "Ihr",
-                "start": 17.020000839233397,
+                "start": 17.1200008392334,
                 "end": 17.479999542236328
             },
             {
@@ -508,20 +463,20 @@
             {
                 "word": "alt.",
                 "start": 18.219999313354492,
-                "end": 18.8
+                "end": 18.5
             }
         ],
         "translationEn": "Your son is 11 years old.",
         "translationVi": "Con trai của bạn 11 tuổi."
     },
     {
-        "text": "Wie masochistisch ist ihr Sohn verhandhabt?",
-        "start": 18.61999931335449,
-        "end": 20.759999084472657,
+        "text": "Wie masochistisch ist ihr Sohn verhandhabt? Darüber möchte ich nicht sagen.",
+        "start": 18.719999313354492,
+        "end": 22.81999969482422,
         "wordTimings": [
             {
                 "word": "Wie",
-                "start": 18.61999931335449,
+                "start": 18.719999313354492,
                 "end": 18.84000015258789
             },
             {
@@ -547,20 +502,11 @@
             {
                 "word": "verhandhabt?",
                 "start": 19.84000015258789,
-                "end": 20.759999084472657
-            }
-        ],
-        "translationEn": "How masochistic is your son handled?",
-        "translationVi": "Con trai của bạn có tính masochist đến mức nào?"
-    },
-    {
-        "text": "Darüber möchte ich nicht sagen.",
-        "start": 21.26000061035156,
-        "end": 23.11999969482422,
-        "wordTimings": [
+                "end": 20.459999084472656
+            },
             {
                 "word": "Darüber",
-                "start": 21.26000061035156,
+                "start": 21.360000610351562,
                 "end": 21.719999313354492
             },
             {
@@ -581,20 +527,20 @@
             {
                 "word": "sagen.",
                 "start": 22.420000076293945,
-                "end": 23.11999969482422
+                "end": 22.81999969482422
             }
         ],
-        "translationEn": "I don't want to say anything about that.",
-        "translationVi": "Tôi không muốn nói về điều đó."
+        "translationEn": "How masochistic is your son handled? I would rather not say about that.",
+        "translationVi": "Con trai của bạn có tính masochist đến mức nào? Tôi không muốn nói về điều đó."
     },
     {
         "text": "Wieso soll man jetzt die Jugendlichen fragen, ob sie Bock haben?",
-        "start": 23.039999389648436,
-        "end": 25.939999389648438,
+        "start": 23.139999389648438,
+        "end": 25.639999389648438,
         "wordTimings": [
             {
                 "word": "Wieso",
-                "start": 23.039999389648436,
+                "start": 23.139999389648438,
                 "end": 23.260000228881836
             },
             {
@@ -645,20 +591,20 @@
             {
                 "word": "haben?",
                 "start": 25.360000610351562,
-                "end": 25.939999389648438
+                "end": 25.639999389648438
             }
         ],
         "translationEn": "Why should we ask the young people now if they are interested?",
-        "translationVi": "Tại sao bây giờ lại phải hỏi thanh thiếu niên xem họ có hứng thú không?"
+        "translationVi": "Tại sao bây giờ lại phải hỏi thanh thiếu niên xem họ có muốn không?"
     },
     {
-        "text": "Die haben ja keinen Bock.",
-        "start": 25.60000076293945,
-        "end": 26.679999160766602,
+        "text": "Die haben ja keinen Bock. Das haben sie gut erkannt.",
+        "start": 25.700000762939453,
+        "end": 27.31999969482422,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 25.60000076293945,
+                "start": 25.700000762939453,
                 "end": 25.81999969482422
             },
             {
@@ -679,20 +625,11 @@
             {
                 "word": "Bock.",
                 "start": 26.239999771118164,
-                "end": 26.679999160766602
-            }
-        ],
-        "translationEn": "They don't feel like it.",
-        "translationVi": "Họ không hứng thú chút nào."
-    },
-    {
-        "text": "Das haben sie gut erkannt.",
-        "start": 26.379999542236327,
-        "end": 27.61999969482422,
-        "wordTimings": [
+                "end": 26.3799991607666
+            },
             {
                 "word": "Das",
-                "start": 26.379999542236327,
+                "start": 26.479999542236328,
                 "end": 26.65999984741211
             },
             {
@@ -713,20 +650,20 @@
             {
                 "word": "erkannt.",
                 "start": 27.079999923706055,
-                "end": 27.61999969482422
+                "end": 27.31999969482422
             }
         ],
-        "translationEn": "They recognized that well.",
-        "translationVi": "Họ đã nhận ra điều đó rất tốt."
+        "translationEn": "They really don't care. They've recognized that well.",
+        "translationVi": "Họ không có hứng thú. Họ đã nhận ra điều đó rất tốt."
     },
     {
-        "text": "Könntest du dir vorstellen, in die deutsche Armee zu gehören?",
-        "start": 27.219999694824217,
-        "end": 30.11999969482422,
+        "text": "Könntest du dir vorstellen, in die deutsche Armee zu gehören? Ich? In die Armee?",
+        "start": 27.31999969482422,
+        "end": 30.899999618530273,
         "wordTimings": [
             {
                 "word": "Könntest",
-                "start": 27.219999694824217,
+                "start": 27.31999969482422,
                 "end": 27.700000762939453
             },
             {
@@ -772,20 +709,11 @@
             {
                 "word": "gehören?",
                 "start": 29.81999969482422,
-                "end": 30.11999969482422
-            }
-        ],
-        "translationEn": "Could you imagine being part of the German army?",
-        "translationVi": "Bạn có thể tưởng tượng mình thuộc về quân đội Đức không?"
-    },
-    {
-        "text": "Ich? In die Armee?",
-        "start": 29.940000915527342,
-        "end": 31.199999618530274,
-        "wordTimings": [
+                "end": 29.81999969482422
+            },
             {
                 "word": "Ich?",
-                "start": 29.940000915527342,
+                "start": 30.040000915527344,
                 "end": 30.420000076293945
             },
             {
@@ -801,20 +729,20 @@
             {
                 "word": "Armee?",
                 "start": 30.65999984741211,
-                "end": 31.199999618530274
+                "end": 30.899999618530273
             }
         ],
-        "translationEn": "Me? In the army?",
-        "translationVi": "Tôi? Vào quân đội?"
+        "translationEn": "Could you imagine being part of the German army? Me? In the army?",
+        "translationVi": "Bạn có thể tưởng tượng mình thuộc về quân đội Đức không? Tôi? Vào quân đội?"
     },
     {
-        "text": "Hast du das Gesicht gesehen?",
-        "start": 31.059999847412108,
-        "end": 33.14000015258789,
+        "text": "Hast du das Gesicht gesehen? Verdammt.",
+        "start": 31.15999984741211,
+        "end": 33.2400016784668,
         "wordTimings": [
             {
                 "word": "Hast",
-                "start": 31.059999847412108,
+                "start": 31.15999984741211,
                 "end": 31.299999237060547
             },
             {
@@ -835,39 +763,25 @@
             {
                 "word": "gesehen?",
                 "start": 32.84000015258789,
-                "end": 33.14000015258789
-            }
-        ],
-        "translationEn": "Have you seen the face?",
-        "translationVi": "Bạn có thấy khuôn mặt không?"
-    },
-    {
-        "text": "Verdammt nicht.",
-        "start": 32.859999084472655,
-        "end": 33.779999542236325,
-        "wordTimings": [
-            {
-                "word": "Verdammt",
-                "start": 32.859999084472655,
-                "end": 33.36000061035156
+                "end": 32.84000015258789
             },
             {
-                "word": "nicht.",
-                "start": 33.36000061035156,
-                "end": 33.779999542236325
+                "word": "Verdammt.",
+                "start": 32.959999084472656,
+                "end": 33.2400016784668
             }
         ],
-        "translationEn": "Damn it not.",
-        "translationVi": "Đừng chửi thề."
+        "translationEn": "Did you see the face? Damn.",
+        "translationVi": "Bạn đã thấy khuôn mặt đó chưa? Chết tiệt."
     },
     {
         "text": "Das würde ein bisschen empathischer wirken, wenn du nicht lachen würdest.",
-        "start": 57.94000091552734,
-        "end": 61.040001678466794,
+        "start": 58.040000915527344,
+        "end": 60.7400016784668,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 57.94000091552734,
+                "start": 58.040000915527344,
                 "end": 58.400001525878906
             },
             {
@@ -918,20 +832,20 @@
             {
                 "word": "würdest.",
                 "start": 60.36000061035156,
-                "end": 61.040001678466794
+                "end": 60.7400016784668
             }
         ],
-        "translationEn": "It would seem a bit more empathetic if you weren't laughing.",
+        "translationEn": "It would come across as a bit more empathetic if you weren't laughing.",
         "translationVi": "Điều đó sẽ có vẻ đồng cảm hơn một chút nếu bạn không cười."
     },
     {
         "text": "Ich hab ein bisschen Schadenfreude.",
-        "start": 60.800001525878905,
-        "end": 62.16000061035156,
+        "start": 60.900001525878906,
+        "end": 61.86000061035156,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 60.800001525878905,
+                "start": 60.900001525878906,
                 "end": 60.900001525878906
             },
             {
@@ -952,20 +866,20 @@
             {
                 "word": "Schadenfreude.",
                 "start": 61.29999923706055,
-                "end": 62.16000061035156
+                "end": 61.86000061035156
             }
         ],
         "translationEn": "I have a bit of schadenfreude.",
-        "translationVi": "Tôi có một chút cảm giác hả hê."
+        "translationVi": "Tôi có một chút hả hê."
     },
     {
-        "text": "Wir haben alles gegeben.",
-        "start": 61.94000091552734,
-        "end": 63.07999877929687,
+        "text": "Wir haben alles gegeben. Irgendjemand findet es sicher noch, aber ich finde es nicht.",
+        "start": 62.040000915527344,
+        "end": 65.41999816894531,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 61.94000091552734,
+                "start": 62.040000915527344,
                 "end": 62.099998474121094
             },
             {
@@ -981,20 +895,11 @@
             {
                 "word": "gegeben.",
                 "start": 62.400001525878906,
-                "end": 63.07999877929687
-            }
-        ],
-        "translationEn": "We gave it our all.",
-        "translationVi": "Chúng tôi đã cống hiến mọi thứ."
-    },
-    {
-        "text": "Irgendjemand findet es sicher noch, aber ich finde es nicht.",
-        "start": 63.37999954223633,
-        "end": 65.71999816894531,
-        "wordTimings": [
+                "end": 62.779998779296875
+            },
             {
                 "word": "Irgendjemand",
-                "start": 63.37999954223633,
+                "start": 63.47999954223633,
                 "end": 63.84000015258789
             },
             {
@@ -1040,10 +945,10 @@
             {
                 "word": "nicht.",
                 "start": 65.19999694824219,
-                "end": 65.71999816894531
+                "end": 65.41999816894531
             }
         ],
-        "translationEn": "Someone will surely find it, but I can't.",
-        "translationVi": "Chắc chắn có ai đó sẽ tìm thấy nó, nhưng tôi thì không."
+        "translationEn": "We gave it our all. Someone will surely find it, but I can't.",
+        "translationVi": "Chúng tôi đã cố gắng hết sức. Chắc chắn có ai đó sẽ tìm thấy nó, nhưng tôi thì không."
     }
 ]

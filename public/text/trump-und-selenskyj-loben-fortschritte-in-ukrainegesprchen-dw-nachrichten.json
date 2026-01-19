@@ -1,12 +1,12 @@
 [
     {
-        "text": "Die Spannung war groß vor dem Treffen der beiden Präsidenten Selensky und Trump in Florida.",
-        "start": 0.700000011920929,
-        "end": 6.3799999237060545,
+        "text": "Die Spannung war groß vor dem Treffen der beiden Präsidenten, Selensky und Trump in Florida.",
+        "start": 0.800000011920929,
+        "end": 6.079999923706055,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 0.700000011920929,
+                "start": 0.800000011920929,
                 "end": 1.3200000524520874
             },
             {
@@ -50,7 +50,7 @@
                 "end": 3.7200000286102295
             },
             {
-                "word": "Präsidenten",
+                "word": "Präsidenten,",
                 "start": 3.7200000286102295,
                 "end": 4.420000076293945
             },
@@ -77,20 +77,20 @@
             {
                 "word": "Florida.",
                 "start": 5.699999809265137,
-                "end": 6.3799999237060545
+                "end": 6.079999923706055
             }
         ],
         "translationEn": "The tension was high before the meeting of the two presidents, Zelensky and Trump, in Florida.",
-        "translationVi": "Sự hồi hộp rất lớn trước cuộc gặp gỡ giữa hai tổng thống Selensky và Trump tại Florida."
+        "translationVi": "Sự hồi hộp rất lớn trước cuộc gặp gỡ giữa hai tổng thống, Selensky và Trump ở Florida."
     },
     {
-        "text": "Die Fragezeichen hinterher genauso.",
-        "start": 6.55999984741211,
-        "end": 8.8600004196167,
+        "text": "Die Fragezeichen hinterher, genauso wie nah sind wir einem Frieden in der Ukraine denn nun?",
+        "start": 6.659999847412109,
+        "end": 11.819999694824219,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 6.55999984741211,
+                "start": 6.659999847412109,
                 "end": 6.699999809265137
             },
             {
@@ -99,27 +99,18 @@
                 "end": 7.460000038146973
             },
             {
-                "word": "hinterher",
+                "word": "hinterher,",
                 "start": 7.460000038146973,
                 "end": 8
             },
             {
-                "word": "genauso.",
+                "word": "genauso",
                 "start": 8,
-                "end": 8.8600004196167
-            }
-        ],
-        "translationEn": "The question marks afterwards as well.",
-        "translationVi": "Dấu hỏi cũng như vậy."
-    },
-    {
-        "text": "Wie nah sind wir einem Frieden in der Ukraine denn nun?",
-        "start": 9.05999984741211,
-        "end": 12.11999969482422,
-        "wordTimings": [
+                "end": 8.5600004196167
+            },
             {
-                "word": "Wie",
-                "start": 9.05999984741211,
+                "word": "wie",
+                "start": 9.15999984741211,
                 "end": 9.199999809265137
             },
             {
@@ -170,20 +161,20 @@
             {
                 "word": "nun?",
                 "start": 11.640000343322754,
-                "end": 12.11999969482422
+                "end": 11.819999694824219
             }
         ],
-        "translationEn": "How close are we to peace in Ukraine now?",
-        "translationVi": "Chúng ta đang gần gũi với một hòa bình ở Ukraine đến mức nào?"
+        "translationEn": "The question marks afterwards, just how close are we to peace in Ukraine now?",
+        "translationVi": "Dấu hỏi vẫn còn đó, vậy chúng ta đang gần gũi với hòa bình ở Ukraine đến mức nào?"
     },
     {
-        "text": "Bei welcher Zahl stehen wir derzeit?",
-        "start": 14.259999656677246,
-        "end": 16.539999771118165,
+        "text": "Bei welcher Zahl stehen wir derzeit? Nun, ich denke, man könnte sagen 95 Prozent.",
+        "start": 14.359999656677246,
+        "end": 19.440000534057617,
         "wordTimings": [
             {
                 "word": "Bei",
-                "start": 14.259999656677246,
+                "start": 14.359999656677246,
                 "end": 14.880000114440918
             },
             {
@@ -209,20 +200,11 @@
             {
                 "word": "derzeit?",
                 "start": 15.819999694824219,
-                "end": 16.539999771118165
-            }
-        ],
-        "translationEn": "What number are we currently at?",
-        "translationVi": "Chúng ta hiện đang ở số nào?"
-    },
-    {
-        "text": "Nun, ich denke, man könnte sagen 95 Prozent.",
-        "start": 16.379999542236327,
-        "end": 19.740000534057618,
-        "wordTimings": [
+                "end": 16.239999771118164
+            },
             {
                 "word": "Nun,",
-                "start": 16.379999542236327,
+                "start": 16.479999542236328,
                 "end": 17
             },
             {
@@ -258,20 +240,20 @@
             {
                 "word": "Prozent.",
                 "start": 19.059999465942383,
-                "end": 19.740000534057618
+                "end": 19.440000534057617
             }
         ],
-        "translationEn": "Well, I think one could say 95 percent.",
-        "translationVi": "Chà, tôi nghĩ có thể nói là 95 phần trăm."
+        "translationEn": "What number are we currently at? Well, I think one could say 95 percent.",
+        "translationVi": "Chúng ta hiện đang ở con số nào? Chà, tôi nghĩ có thể nói là 95 phần trăm."
     },
     {
-        "text": "Aber ich mag Prozentzahlen nicht so.",
-        "start": 19.60000076293945,
-        "end": 21.820000457763673,
+        "text": "Aber ich mag Prozentzahlen nicht so. Ich denke einfach, dass wir sehr gut vorankommen.",
+        "start": 19.700000762939453,
+        "end": 24.299999237060547,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 19.60000076293945,
+                "start": 19.700000762939453,
                 "end": 19.81999969482422
             },
             {
@@ -297,20 +279,11 @@
             {
                 "word": "so.",
                 "start": 21.260000228881836,
-                "end": 21.820000457763673
-            }
-        ],
-        "translationEn": "But I don't really like percentages.",
-        "translationVi": "Nhưng tôi không thích số phần trăm lắm."
-    },
-    {
-        "text": "Ich denke einfach, dass wir sehr gut vorankommen.",
-        "start": 21.92000045776367,
-        "end": 24.599999237060548,
-        "wordTimings": [
+                "end": 21.520000457763672
+            },
             {
                 "word": "Ich",
-                "start": 21.92000045776367,
+                "start": 22.020000457763672,
                 "end": 22.139999389648438
             },
             {
@@ -346,20 +319,20 @@
             {
                 "word": "vorankommen.",
                 "start": 23.68000030517578,
-                "end": 24.599999237060548
+                "end": 24.299999237060547
             }
         ],
-        "translationEn": "I just think that we are making very good progress.",
-        "translationVi": "Tôi chỉ nghĩ rằng chúng ta đang tiến triển rất tốt."
+        "translationEn": "But I don't really like percentages. I just think that we are making very good progress.",
+        "translationVi": "Nhưng tôi không thích số phần trăm lắm. Tôi chỉ nghĩ rằng chúng ta đang tiến triển rất tốt."
     },
     {
-        "text": "Wir könnten sehr nah dran sein.",
-        "start": 24.539999389648436,
-        "end": 26.240000534057618,
+        "text": "Wir könnten sehr nah dran sein. Es gibt ein oder zwei sehr heikle Themen, sehr schwierige Themen.",
+        "start": 24.639999389648438,
+        "end": 29.600000381469727,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 24.539999389648436,
+                "start": 24.639999389648438,
                 "end": 24.780000686645508
             },
             {
@@ -385,20 +358,11 @@
             {
                 "word": "sein.",
                 "start": 25.84000015258789,
-                "end": 26.240000534057618
-            }
-        ],
-        "translationEn": "We could be very close.",
-        "translationVi": "Chúng ta có thể rất gần gũi."
-    },
-    {
-        "text": "Es gibt ein oder zwei sehr heikle Themen,",
-        "start": 25.840000534057616,
-        "end": 28.77999954223633,
-        "wordTimings": [
+                "end": 25.940000534057617
+            },
             {
                 "word": "Es",
-                "start": 25.840000534057616,
+                "start": 25.940000534057617,
                 "end": 26.139999389648438
             },
             {
@@ -434,20 +398,11 @@
             {
                 "word": "Themen,",
                 "start": 28.18000030517578,
-                "end": 28.77999954223633
-            }
-        ],
-        "translationEn": "There are one or two very sensitive topics,",
-        "translationVi": "Có một hoặc hai chủ đề rất nhạy cảm,"
-    },
-    {
-        "text": "sehr schwierige Themen, aber ich denke, wir machen das sehr gut.",
-        "start": 28.520000839233397,
-        "end": 31.359999465942384,
-        "wordTimings": [
+                "end": 28.479999542236328
+            },
             {
                 "word": "sehr",
-                "start": 28.520000839233397,
+                "start": 28.6200008392334,
                 "end": 28.8799991607666
             },
             {
@@ -456,12 +411,21 @@
                 "end": 29.34000015258789
             },
             {
-                "word": "Themen,",
+                "word": "Themen.",
                 "start": 29.34000015258789,
                 "end": 29.600000381469727
-            },
+            }
+        ],
+        "translationEn": "We could be very close. There are one or two very sensitive topics, very difficult topics.",
+        "translationVi": "Chúng ta có thể rất gần gũi. Có một hoặc hai chủ đề rất nhạy cảm, rất khó khăn."
+    },
+    {
+        "text": "Aber ich denke, wir machen das sehr gut. Selensky ist da etwas präziser.",
+        "start": 29.700000762939453,
+        "end": 35.47999954223633,
+        "wordTimings": [
             {
-                "word": "aber",
+                "word": "Aber",
                 "start": 29.700000762939453,
                 "end": 29.780000686645508
             },
@@ -498,20 +462,11 @@
             {
                 "word": "gut.",
                 "start": 31.059999465942383,
-                "end": 31.359999465942384
-            }
-        ],
-        "translationEn": "Very difficult topics, but I think we are doing very well.",
-        "translationVi": "Những chủ đề rất khó, nhưng tôi nghĩ chúng ta làm rất tốt."
-    },
-    {
-        "text": "Selensky ist da etwas präziser.",
-        "start": 33.81999816894531,
-        "end": 35.779999542236325,
-        "wordTimings": [
+                "end": 31.059999465942383
+            },
             {
                 "word": "Selensky",
-                "start": 33.81999816894531,
+                "start": 33.91999816894531,
                 "end": 34.2599983215332
             },
             {
@@ -532,20 +487,20 @@
             {
                 "word": "präziser.",
                 "start": 34.939998626708984,
-                "end": 35.779999542236325
+                "end": 35.47999954223633
             }
         ],
-        "translationEn": "Zelensky is a bit more precise about that.",
-        "translationVi": "Selensky thì chính xác hơn một chút."
+        "translationEn": "But I think we are doing very well. Zelensky is a bit more precise on that.",
+        "translationVi": "Nhưng tôi nghĩ chúng ta làm rất tốt. Selensky thì chính xác hơn một chút."
     },
     {
-        "text": "Wir haben große Erfolge erzielt.",
-        "start": 36.859999084472655,
-        "end": 40.279999542236325,
+        "text": "Wir haben große Erfolge erzielt: 20 Punkte Friedensplan zu 90 Prozent vereinbart.",
+        "start": 36.959999084472656,
+        "end": 43.939998626708984,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 36.859999084472655,
+                "start": 36.959999084472656,
                 "end": 37.52000045776367
             },
             {
@@ -564,22 +519,13 @@
                 "end": 39.459999084472656
             },
             {
-                "word": "erzielt.",
+                "word": "erzielt:",
                 "start": 39.459999084472656,
-                "end": 40.279999542236325
-            }
-        ],
-        "translationEn": "We have achieved great success.",
-        "translationVi": "Chúng tôi đã đạt được những thành công lớn."
-    },
-    {
-        "text": "20 Punkte Friedensplan zu 90 Prozent vereinbart.",
-        "start": 40.37999954223633,
-        "end": 44.23999862670898,
-        "wordTimings": [
+                "end": 39.97999954223633
+            },
             {
                 "word": "20",
-                "start": 40.37999954223633,
+                "start": 40.47999954223633,
                 "end": 40.880001068115234
             },
             {
@@ -610,31 +556,26 @@
             {
                 "word": "vereinbart.",
                 "start": 43.29999923706055,
-                "end": 44.23999862670898
+                "end": 43.939998626708984
             }
         ],
-        "translationEn": "20-point peace plan agreed upon 90 percent.",
-        "translationVi": "Kế hoạch hòa bình 20 điểm đã được thỏa thuận 90%."
+        "translationEn": "We have achieved great success: 90 percent agreement on a 20-point peace plan.",
+        "translationVi": "Chúng tôi đã đạt được những thành công lớn: Kế hoạch hòa bình 20 điểm đã được thống nhất tới 90 phần trăm."
     },
     {
-        "text": "Sicherheitsgarantien USA Ukraine zu 100 Prozent vereinbart.",
-        "start": 44.37999954223633,
-        "end": 48.779999542236325,
+        "text": "Sicherheitsgarantien USA-Ukraine zu 100 Prozent vereinbart.",
+        "start": 44.47999954223633,
+        "end": 48.47999954223633,
         "wordTimings": [
             {
                 "word": "Sicherheitsgarantien",
-                "start": 44.37999954223633,
+                "start": 44.47999954223633,
                 "end": 45.41999816894531
             },
             {
-                "word": "USA",
+                "word": "USA-Ukraine",
                 "start": 45.41999816894531,
                 "end": 45.959999084472656
-            },
-            {
-                "word": "Ukraine",
-                "start": 45.959999084472656,
-                "end": 46.5
             },
             {
                 "word": "zu",
@@ -654,36 +595,26 @@
             {
                 "word": "vereinbart.",
                 "start": 47.599998474121094,
-                "end": 48.779999542236325
+                "end": 48.47999954223633
             }
         ],
-        "translationEn": "Security guarantees from the USA to Ukraine are 100 percent agreed.",
-        "translationVi": "Cam kết bảo đảm an ninh của Mỹ đối với Ukraine đã được thống nhất 100%."
+        "translationEn": "Security guarantees between the USA and Ukraine are 100 percent agreed upon.",
+        "translationVi": "Bảo đảm an ninh giữa Mỹ và Ukraine đã được thống nhất 100%."
     },
     {
-        "text": "Sicherheitsgarantien USA Europa Ukraine fast vereinbart.",
-        "start": 49.08000030517578,
-        "end": 53.439999389648435,
+        "text": "Sicherheitsgarantien USA-Europa-Ukraine fast vereinbart, militärische Dimension zu 100 Prozent vereinbart.",
+        "start": 49.18000030517578,
+        "end": 56.31999969482422,
         "wordTimings": [
             {
                 "word": "Sicherheitsgarantien",
-                "start": 49.08000030517578,
+                "start": 49.18000030517578,
                 "end": 50.02000045776367
             },
             {
-                "word": "USA",
+                "word": "USA-Europa-Ukraine",
                 "start": 50.02000045776367,
                 "end": 50.68000030517578
-            },
-            {
-                "word": "Europa",
-                "start": 50.68000030517578,
-                "end": 51.439998626708984
-            },
-            {
-                "word": "Ukraine",
-                "start": 51.439998626708984,
-                "end": 51.880001068115234
             },
             {
                 "word": "fast",
@@ -691,22 +622,13 @@
                 "end": 52.58000183105469
             },
             {
-                "word": "vereinbart.",
+                "word": "vereinbart,",
                 "start": 52.58000183105469,
-                "end": 53.439999389648435
-            }
-        ],
-        "translationEn": "Security guarantees USA Europe Ukraine nearly agreed.",
-        "translationVi": "Bảo đảm an ninh Mỹ châu Âu Ukraine gần như đã được thống nhất."
-    },
-    {
-        "text": "Militärische Dimension zu 100 Prozent vereinbart.",
-        "start": 53.539999389648436,
-        "end": 56.619999694824216,
-        "wordTimings": [
+                "end": 53.13999938964844
+            },
             {
-                "word": "Militärische",
-                "start": 53.539999389648436,
+                "word": "militärische",
+                "start": 53.63999938964844,
                 "end": 54.040000915527344
             },
             {
@@ -732,20 +654,20 @@
             {
                 "word": "vereinbart.",
                 "start": 55.86000061035156,
-                "end": 56.619999694824216
+                "end": 56.31999969482422
             }
         ],
-        "translationEn": "Military dimension fully agreed upon.",
-        "translationVi": "Kích thước quân sự đã được thống nhất 100%."
+        "translationEn": "Security guarantees USA-Europe-Ukraine nearly agreed, military dimension fully agreed upon.",
+        "translationVi": "Bảo đảm an ninh giữa Mỹ-Châu Âu-Ukraina gần như đã được thống nhất, khía cạnh quân sự đã được thống nhất 100%."
     },
     {
-        "text": "Der Plan für wirtschaftlichen Wohlstand wird derzeit fertiggestellt.",
-        "start": 57.179998779296874,
-        "end": 60.75999908447265,
+        "text": "Der Plan für wirtschaftlichen Wohlstand wird derzeit fertiggestellt und wir haben die nächsten Schritte diskutiert.",
+        "start": 57.279998779296875,
+        "end": 62.540000915527344,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 57.179998779296874,
+                "start": 57.279998779296875,
                 "end": 57.31999969482422
             },
             {
@@ -779,22 +701,18 @@
                 "end": 59.68000030517578
             },
             {
-                "word": "fertiggestellt.",
+                "word": "fertiggestellt",
                 "start": 59.68000030517578,
-                "end": 60.75999908447265
-            }
-        ],
-        "translationEn": "The plan for economic prosperity is currently being finalized.",
-        "translationVi": "Kế hoạch cho sự thịnh vượng kinh tế hiện đang được hoàn thiện."
-    },
-    {
-        "text": "Wir haben die nächsten Schritte diskutiert.",
-        "start": 60.55999984741211,
-        "end": 62.84000091552734,
-        "wordTimings": [
+                "end": 60.459999084472656
+            },
             {
-                "word": "Wir",
-                "start": 60.55999984741211,
+                "word": "und",
+                "start": 60.459999084472656,
+                "end": 60.65999984741211
+            },
+            {
+                "word": "wir",
+                "start": 60.65999984741211,
                 "end": 60.84000015258789
             },
             {
@@ -820,20 +738,20 @@
             {
                 "word": "diskutiert.",
                 "start": 61.84000015258789,
-                "end": 62.84000091552734
+                "end": 62.540000915527344
             }
         ],
-        "translationEn": "We have discussed the next steps.",
-        "translationVi": "Chúng tôi đã thảo luận về các bước tiếp theo."
+        "translationEn": "The plan for economic prosperity is currently being finalized, and we have discussed the next steps.",
+        "translationVi": "Kế hoạch cho sự thịnh vượng kinh tế hiện đang được hoàn thiện và chúng tôi đã thảo luận về các bước tiếp theo."
     },
     {
         "text": "Wir sind uns einig, dass Sicherheitsgarantien ein wichtiger Meilenstein für einen dauerhaften Frieden sind.",
-        "start": 62.9,
-        "end": 69.7000015258789,
+        "start": 63,
+        "end": 69.4000015258789,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 62.9,
+                "start": 63,
                 "end": 63
             },
             {
@@ -899,20 +817,20 @@
             {
                 "word": "sind.",
                 "start": 69.4000015258789,
-                "end": 69.7000015258789
+                "end": 69.4000015258789
             }
         ],
         "translationEn": "We agree that security guarantees are an important milestone for lasting peace.",
-        "translationVi": "Chúng tôi nhất trí rằng các đảm bảo an ninh là một cột mốc quan trọng cho một nền hòa bình bền vững."
+        "translationVi": "Chúng tôi đồng ý rằng các đảm bảo an ninh là một cột mốc quan trọng cho một nền hòa bình lâu dài."
     },
     {
-        "text": "Diese Garantien hätte die Ukraine gerne für 50 Jahre.",
-        "start": 69.9800018310547,
-        "end": 74.21999816894531,
+        "text": "Diese Garantien hätte die Ukraine gerne für 50 Jahre. Trump bietet allerdings nur 15 an.",
+        "start": 70.08000183105469,
+        "end": 76.76000213623047,
         "wordTimings": [
             {
                 "word": "Diese",
-                "start": 69.9800018310547,
+                "start": 70.08000183105469,
                 "end": 70.80000305175781
             },
             {
@@ -953,20 +871,11 @@
             {
                 "word": "Jahre.",
                 "start": 73.62000274658203,
-                "end": 74.21999816894531
-            }
-        ],
-        "translationEn": "Ukraine would like these guarantees for 50 years.",
-        "translationVi": "Ukraine muốn những đảm bảo này trong 50 năm."
-    },
-    {
-        "text": "Trump bietet allerdings nur 15 an.",
-        "start": 74.4,
-        "end": 77.06000213623047,
-        "wordTimings": [
+                "end": 73.91999816894531
+            },
             {
                 "word": "Trump",
-                "start": 74.4,
+                "start": 74.5,
                 "end": 74.83999633789062
             },
             {
@@ -992,20 +901,20 @@
             {
                 "word": "an.",
                 "start": 76.5199966430664,
-                "end": 77.06000213623047
+                "end": 76.76000213623047
             }
         ],
-        "translationEn": "However, Trump only offers 15.",
-        "translationVi": "Tuy nhiên, Trump chỉ đề xuất 15."
+        "translationEn": "The Ukraine would like these guarantees for 50 years. However, Trump is only offering 15.",
+        "translationVi": "Ukraine muốn những đảm bảo này trong 50 năm. Tuy nhiên, Trump chỉ đề nghị 15 năm."
     },
     {
-        "text": "Das heikelste Thema aber, die Gebietsansprüche Moskaus auf Teile der Ukraine,",
-        "start": 77.26000061035157,
-        "end": 82.89999847412109,
+        "text": "Das heikelste Thema aber, die Gebietsansprüche Moskaus auf Teile der Ukraine, quasi als Belohnung für den Überfall.",
+        "start": 77.36000061035156,
+        "end": 84.80000305175781,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 77.26000061035157,
+                "start": 77.36000061035156,
                 "end": 77.5999984741211
             },
             {
@@ -1056,20 +965,11 @@
             {
                 "word": "Ukraine,",
                 "start": 82.13999938964844,
-                "end": 82.89999847412109
-            }
-        ],
-        "translationEn": "The most sensitive topic, however, is Moscow's territorial claims on parts of Ukraine,",
-        "translationVi": "Chủ đề nhạy cảm nhất, tuy nhiên, là những yêu sách lãnh thổ của Moskva đối với một phần của Ukraine,"
-    },
-    {
-        "text": "quasi als Belohnung für den Überfall.",
-        "start": 82.4999984741211,
-        "end": 85.10000305175781,
-        "wordTimings": [
+                "end": 82.5999984741211
+            },
             {
                 "word": "quasi",
-                "start": 82.4999984741211,
+                "start": 82.5999984741211,
                 "end": 83.23999786376953
             },
             {
@@ -1095,26 +995,26 @@
             {
                 "word": "Überfall.",
                 "start": 84.41999816894531,
-                "end": 85.10000305175781
+                "end": 84.80000305175781
             }
         ],
-        "translationEn": "as a reward for the raid.",
-        "translationVi": "hầu như như một phần thưởng cho cuộc tấn công."
+        "translationEn": "The most sensitive topic, however, is Moscow's territorial claims on parts of Ukraine, essentially as a reward for the invasion.",
+        "translationVi": "Chủ đề nhạy cảm nhất là yêu sách lãnh thổ của Moskva đối với một phần của Ukraine, gần như như một phần thưởng cho cuộc xâm lược."
     },
     {
-        "text": "Das Land, ein Teil der Gebiete wurde bereits eingenommen,",
-        "start": 85.66000213623047,
-        "end": 88.8,
+        "text": "Das Land, ein Teil der Gebiete, wurde bereits eingenommen, ein Teil ist noch offen.",
+        "start": 85.76000213623047,
+        "end": 89.9000015258789,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 85.66000213623047,
+                "start": 85.76000213623047,
                 "end": 85.94000244140625
             },
             {
                 "word": "Land,",
                 "start": 85.94000244140625,
-                "end": 86.13999938964844
+                "end": 86.16000366210938
             },
             {
                 "word": "ein",
@@ -1132,7 +1032,7 @@
                 "end": 86.91999816894531
             },
             {
-                "word": "Gebiete",
+                "word": "Gebiete,",
                 "start": 86.91999816894531,
                 "end": 87.23999786376953
             },
@@ -1149,20 +1049,11 @@
             {
                 "word": "eingenommen,",
                 "start": 88.13999938964844,
-                "end": 88.8
-            }
-        ],
-        "translationEn": "The country, part of the territories has already been occupied,",
-        "translationVi": "Đất nước, một phần của các vùng đã bị chiếm đóng."
-    },
-    {
-        "text": "ein Teil ist noch offen, aber der könnte in den nächsten Monaten eingenommen werden.",
-        "start": 88.81999816894532,
-        "end": 93.35999755859375,
-        "wordTimings": [
+                "end": 88.5
+            },
             {
                 "word": "ein",
-                "start": 88.81999816894532,
+                "start": 88.91999816894531,
                 "end": 89.04000091552734
             },
             {
@@ -1181,12 +1072,21 @@
                 "end": 89.80000305175781
             },
             {
-                "word": "offen,",
+                "word": "offen.",
                 "start": 89.80000305175781,
                 "end": 89.9000015258789
-            },
+            }
+        ],
+        "translationEn": "The country, part of the territories, has already been occupied, while part is still open.",
+        "translationVi": "Đất nước, một phần của các khu vực, đã bị chiếm đóng, một phần vẫn còn mở."
+    },
+    {
+        "text": "Aber der könnte in den nächsten Monaten eingenommen werden. Gemeint ist die Industrie- und Rohstoffregion Donbass im Osten der Ukraine.",
+        "start": 90.16000366210938,
+        "end": 101.27999877929688,
+        "wordTimings": [
             {
-                "word": "aber",
+                "word": "Aber",
                 "start": 90.16000366210938,
                 "end": 90.22000122070312
             },
@@ -1228,20 +1128,11 @@
             {
                 "word": "werden.",
                 "start": 92.76000213623047,
-                "end": 93.35999755859375
-            }
-        ],
-        "translationEn": "A part is still open, but it could be occupied in the next few months.",
-        "translationVi": "Một phần vẫn còn mở, nhưng nó có thể được thu nhận trong vài tháng tới."
-    },
-    {
-        "text": "Gemeint ist die Industrie- und Rohstoffregion Donbass im Osten der Ukraine.",
-        "start": 96.5999969482422,
-        "end": 101.57999877929687,
-        "wordTimings": [
+                "end": 93.05999755859375
+            },
             {
                 "word": "Gemeint",
-                "start": 96.5999969482422,
+                "start": 96.69999694824219,
                 "end": 97.0199966430664
             },
             {
@@ -1292,20 +1183,20 @@
             {
                 "word": "Ukraine.",
                 "start": 100.86000061035156,
-                "end": 101.57999877929687
+                "end": 101.27999877929688
             }
         ],
-        "translationEn": "The term refers to the industrial and raw material region of Donbass in eastern Ukraine.",
-        "translationVi": "Ý nói đến khu vực công nghiệp và tài nguyên Donbass ở phía đông Ukraine."
+        "translationEn": "But it could be captured in the coming months. This refers to the industrial and raw material region of Donbass in eastern Ukraine.",
+        "translationVi": "Nhưng khu vực này có thể bị chiếm trong những tháng tới. Đề cập đến khu vực công nghiệp và tài nguyên Donbass ở phía đông Ukraine."
     },
     {
         "text": "Putin fordert, dass die Ukraine alle Truppen von dort abzieht.",
-        "start": 102.17999877929688,
-        "end": 105.88000183105468,
+        "start": 102.27999877929688,
+        "end": 105.58000183105469,
         "wordTimings": [
             {
                 "word": "Putin",
-                "start": 102.17999877929688,
+                "start": 102.27999877929688,
                 "end": 102.27999877929688
             },
             {
@@ -1351,7 +1242,7 @@
             {
                 "word": "abzieht.",
                 "start": 105,
-                "end": 105.88000183105468
+                "end": 105.58000183105469
             }
         ],
         "translationEn": "Putin demands that Ukraine withdraw all troops from there.",
@@ -1359,12 +1250,12 @@
     },
     {
         "text": "Präsident Selensky sagt, dass nur das ukrainische Volk darüber entscheiden kann.",
-        "start": 106.71999969482422,
-        "end": 112.49999694824218,
+        "start": 106.81999969482422,
+        "end": 112.19999694824219,
         "wordTimings": [
             {
                 "word": "Präsident",
-                "start": 106.71999969482422,
+                "start": 106.81999969482422,
                 "end": 107.22000122070312
             },
             {
@@ -1415,20 +1306,20 @@
             {
                 "word": "kann.",
                 "start": 111.44000244140625,
-                "end": 112.49999694824218
+                "end": 112.19999694824219
             }
         ],
         "translationEn": "President Zelensky says that only the Ukrainian people can decide.",
-        "translationVi": "Tổng thống Selensky nói rằng chỉ có người dân Ukraine mới có thể quyết định điều đó."
+        "translationVi": "Tổng thống Selensky nói rằng chỉ có nhân dân Ukraine mới có thể quyết định điều đó."
     },
     {
-        "text": "Natürlich muss unsere Gesellschaft entscheiden und abstimmen,",
-        "start": 114.58000030517579,
-        "end": 118.60000305175781,
+        "text": "Natürlich muss unsere Gesellschaft entscheiden und abstimmen, denn es ist ihr Land.",
+        "start": 114.68000030517578,
+        "end": 119.54000091552734,
         "wordTimings": [
             {
                 "word": "Natürlich",
-                "start": 114.58000030517579,
+                "start": 114.68000030517578,
                 "end": 115.36000061035156
             },
             {
@@ -1459,20 +1350,11 @@
             {
                 "word": "abstimmen,",
                 "start": 117.87999725341797,
-                "end": 118.60000305175781
-            }
-        ],
-        "translationEn": "Of course, our society must decide and vote,",
-        "translationVi": "Tất nhiên, xã hội của chúng ta phải quyết định và bỏ phiếu,"
-    },
-    {
-        "text": "denn es ist ihr Land.",
-        "start": 118.34000244140626,
-        "end": 119.84000091552734,
-        "wordTimings": [
+                "end": 118.30000305175781
+            },
             {
                 "word": "denn",
-                "start": 118.34000244140626,
+                "start": 118.44000244140625,
                 "end": 118.62000274658203
             },
             {
@@ -1493,20 +1375,20 @@
             {
                 "word": "Land.",
                 "start": 119.31999969482422,
-                "end": 119.84000091552734
+                "end": 119.54000091552734
             }
         ],
-        "translationEn": "for it is their country.",
-        "translationVi": "bởi vì đó là đất nước của họ."
+        "translationEn": "Of course, our society must decide and vote, because it is their country.",
+        "translationVi": "Tất nhiên, xã hội của chúng ta phải quyết định và bỏ phiếu, vì đây là đất nước của họ."
     },
     {
-        "text": "Das Land gehört nicht nur einer Person,",
-        "start": 119.76000061035157,
-        "end": 121.84000091552734,
+        "text": "Das Land gehört nicht nur einer Person, es ist das Land unserer Nation.",
+        "start": 119.86000061035156,
+        "end": 123.5199966430664,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 119.76000061035157,
+                "start": 119.86000061035156,
                 "end": 119.9000015258789
             },
             {
@@ -1537,20 +1419,11 @@
             {
                 "word": "Person,",
                 "start": 121.13999938964844,
-                "end": 121.84000091552734
-            }
-        ],
-        "translationEn": "The land does not belong to just one person,",
-        "translationVi": "Đất nước không chỉ thuộc về một người,"
-    },
-    {
-        "text": "es ist das Land unserer Nation.",
-        "start": 121.77999725341797,
-        "end": 123.8199966430664,
-        "wordTimings": [
+                "end": 121.54000091552734
+            },
             {
                 "word": "es",
-                "start": 121.77999725341797,
+                "start": 121.87999725341797,
                 "end": 121.94000244140625
             },
             {
@@ -1576,20 +1449,20 @@
             {
                 "word": "Nation.",
                 "start": 123.0199966430664,
-                "end": 123.8199966430664
+                "end": 123.5199966430664
             }
         ],
-        "translationEn": "It is the land of our nation.",
-        "translationVi": "Đó là đất nước của dân tộc chúng ta."
+        "translationEn": "The land does not belong to just one person; it is the land of our nation.",
+        "translationVi": "Đất nước không chỉ thuộc về một người, mà là đất nước của dân tộc chúng ta."
     },
     {
-        "text": "Präsident Trump lobt Selensky ungewöhnlich großzügig.",
-        "start": 124.41999664306641,
-        "end": 128.03999786376954,
+        "text": "Präsident Trump lobt Selensky ungewöhnlich großzügig. Ich sage Ihnen, sie waren sehr mutig.",
+        "start": 124.5199966430664,
+        "end": 129.66000366210938,
         "wordTimings": [
             {
                 "word": "Präsident",
-                "start": 124.41999664306641,
+                "start": 124.5199966430664,
                 "end": 124.86000061035156
             },
             {
@@ -1615,20 +1488,11 @@
             {
                 "word": "großzügig.",
                 "start": 126.94000244140625,
-                "end": 128.03999786376954
-            }
-        ],
-        "translationEn": "President Trump praises Zelensky unusually generously.",
-        "translationVi": "Tổng thống Trump khen ngợi Zelensky một cách bất thường hào phóng."
-    },
-    {
-        "text": "Ich sage Ihnen, sie waren sehr mutig.",
-        "start": 128.15999450683594,
-        "end": 129.9600036621094,
-        "wordTimings": [
+                "end": 127.73999786376953
+            },
             {
                 "word": "Ich",
-                "start": 128.15999450683594,
+                "start": 128.25999450683594,
                 "end": 128.27999877929688
             },
             {
@@ -1659,20 +1523,20 @@
             {
                 "word": "mutig.",
                 "start": 129.55999755859375,
-                "end": 129.9600036621094
+                "end": 129.66000366210938
             }
         ],
-        "translationEn": "I tell you, they were very brave.",
-        "translationVi": "Tôi nói với bạn, họ rất dũng cảm."
+        "translationEn": "President Trump praises Zelensky unusually generously. I tell you, they were very brave.",
+        "translationVi": "Tổng thống Trump ca ngợi Selensky một cách bất thường hào phóng. Tôi nói với bạn, họ rất dũng cảm."
     },
     {
         "text": "Sie haben sehr hart gekämpft und kämpfen weiterhin sehr hart.",
-        "start": 129.72000732421876,
-        "end": 133.74000244140626,
+        "start": 129.82000732421875,
+        "end": 133.44000244140625,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 129.72000732421876,
+                "start": 129.82000732421875,
                 "end": 130.02000427246094
             },
             {
@@ -1718,20 +1582,20 @@
             {
                 "word": "hart.",
                 "start": 132.82000732421875,
-                "end": 133.74000244140626
+                "end": 133.44000244140625
             }
         ],
         "translationEn": "They have fought very hard and continue to fight very hard.",
         "translationVi": "Họ đã chiến đấu rất chăm chỉ và vẫn tiếp tục chiến đấu rất chăm chỉ."
     },
     {
-        "text": "Direkt vor dem Treffen mit Selensky hatte Trump mit Putin telefoniert",
-        "start": 133.72000732421876,
-        "end": 138.1800048828125,
+        "text": "Direkt vor dem Treffen mit Selensky hatte Trump mit Putin telefoniert und meint das Folgende offensichtlich ernst.",
+        "start": 133.82000732421875,
+        "end": 140.60000610351562,
         "wordTimings": [
             {
                 "word": "Direkt",
-                "start": 133.72000732421876,
+                "start": 133.82000732421875,
                 "end": 134.05999755859375
             },
             {
@@ -1782,20 +1646,11 @@
             {
                 "word": "telefoniert",
                 "start": 137.0800018310547,
-                "end": 138.1800048828125
-            }
-        ],
-        "translationEn": "Directly before the meeting with Zelensky, Trump had spoken on the phone with Putin.",
-        "translationVi": "Ngay trước cuộc gặp với Selensky, Trump đã gọi điện cho Putin."
-    },
-    {
-        "text": "und meint das Folgende offensichtlich ernst.",
-        "start": 137.7800048828125,
-        "end": 140.90000610351564,
-        "wordTimings": [
+                "end": 137.8800048828125
+            },
             {
                 "word": "und",
-                "start": 137.7800048828125,
+                "start": 137.8800048828125,
                 "end": 138.3800048828125
             },
             {
@@ -1821,20 +1676,20 @@
             {
                 "word": "ernst.",
                 "start": 140.0399932861328,
-                "end": 140.90000610351564
+                "end": 140.60000610351562
             }
         ],
-        "translationEn": "and obviously means the following seriously.",
-        "translationVi": "và rõ ràng coi điều sau đây là nghiêm túc."
+        "translationEn": "Directly before the meeting with Zelensky, Trump spoke on the phone with Putin and clearly takes the following seriously.",
+        "translationVi": "Ngay trước cuộc gặp với Selensky, Trump đã gọi điện cho Putin và rõ ràng ông ấy nghiêm túc về điều sau đây."
     },
     {
-        "text": "Russland möchte, dass die Ukraine Erfolg hat.",
-        "start": 142.22000732421876,
-        "end": 144.60000305175782,
+        "text": "Russland möchte, dass die Ukraine Erfolg hat. Das klingt ein wenig seltsam, aber ich habe es Präsident Selensky erklärt.",
+        "start": 142.32000732421875,
+        "end": 148.13999938964844,
         "wordTimings": [
             {
                 "word": "Russland",
-                "start": 142.22000732421876,
+                "start": 142.32000732421875,
                 "end": 142.32000732421875
             },
             {
@@ -1865,20 +1720,11 @@
             {
                 "word": "hat.",
                 "start": 144,
-                "end": 144.60000305175782
-            }
-        ],
-        "translationEn": "Russia wants Ukraine to succeed.",
-        "translationVi": "Nga muốn Ukraine thành công."
-    },
-    {
-        "text": "Das klingt ein wenig seltsam, aber ich habe es Präsident Selensky erklärt.",
-        "start": 144.42000427246094,
-        "end": 148.43999938964845,
-        "wordTimings": [
+                "end": 144.3000030517578
+            },
             {
                 "word": "Das",
-                "start": 144.42000427246094,
+                "start": 144.52000427246094,
                 "end": 144.6999969482422
             },
             {
@@ -1934,20 +1780,20 @@
             {
                 "word": "erklärt.",
                 "start": 147.25999450683594,
-                "end": 148.43999938964845
+                "end": 148.13999938964844
             }
         ],
-        "translationEn": "That sounds a bit strange, but I explained it to President Zelensky.",
-        "translationVi": "Điều đó nghe có vẻ hơi lạ, nhưng tôi đã giải thích cho Tổng thống Selensky."
+        "translationEn": "Russia wants Ukraine to succeed. That sounds a bit strange, but I explained it to President Zelensky.",
+        "translationVi": "Nga muốn Ukraine thành công. Nghe có vẻ hơi lạ, nhưng tôi đã giải thích điều đó với Tổng thống Zelensky."
     },
     {
         "text": "Die permanenten russischen Angriffe auf zivile Ziele in der Ukraine sprechen dem allerdings Hohn.",
-        "start": 149.22000732421876,
-        "end": 155.60000305175782,
+        "start": 149.32000732421875,
+        "end": 155.3000030517578,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 149.22000732421876,
+                "start": 149.32000732421875,
                 "end": 149.4600067138672
             },
             {
@@ -2013,20 +1859,20 @@
             {
                 "word": "Hohn.",
                 "start": 155.16000366210938,
-                "end": 155.60000305175782
+                "end": 155.3000030517578
             }
         ],
         "translationEn": "The permanent Russian attacks on civilian targets in Ukraine mock this.",
-        "translationVi": "Các cuộc tấn công liên tục của Nga vào các mục tiêu dân sự ở Ukraine lại mỉa mai điều đó."
+        "translationVi": "Các cuộc tấn công liên tục của Nga vào các mục tiêu dân sự ở Ukraine lại cho thấy điều ngược lại."
     },
     {
         "text": "Moskau hat auf das Treffen in Mar-a-Lago bereits reagiert.",
-        "start": 155.92000427246094,
-        "end": 159.1800048828125,
+        "start": 156.02000427246094,
+        "end": 158.8800048828125,
         "wordTimings": [
             {
                 "word": "Moskau",
-                "start": 155.92000427246094,
+                "start": 156.02000427246094,
                 "end": 156.32000732421875
             },
             {
@@ -2067,7 +1913,7 @@
             {
                 "word": "reagiert.",
                 "start": 158.4600067138672,
-                "end": 159.1800048828125
+                "end": 158.8800048828125
             }
         ],
         "translationEn": "Moscow has already responded to the meeting in Mar-a-Lago.",
@@ -2075,12 +1921,12 @@
     },
     {
         "text": "Russland und die Vereinigten Staaten vertreten dieselbe Position.",
-        "start": 160.56999816894532,
-        "end": 165.1800048828125,
+        "start": 160.6699981689453,
+        "end": 164.8800048828125,
         "wordTimings": [
             {
                 "word": "Russland",
-                "start": 160.56999816894532,
+                "start": 160.6699981689453,
                 "end": 161.0399932861328
             },
             {
@@ -2096,11 +1942,11 @@
             {
                 "word": "Vereinigten",
                 "start": 161.8800048828125,
-                "end": 162.39999389648438
+                "end": 162.47999572753906
             },
             {
                 "word": "Staaten",
-                "start": 162.39999389648438,
+                "start": 162.47999572753906,
                 "end": 162.8800048828125
             },
             {
@@ -2116,20 +1962,20 @@
             {
                 "word": "Position.",
                 "start": 164.24000549316406,
-                "end": 165.1800048828125
+                "end": 164.8800048828125
             }
         ],
         "translationEn": "Russia and the United States hold the same position.",
         "translationVi": "Nga và Hoa Kỳ có cùng một lập trường."
     },
     {
-        "text": "Der ukrainische und europäische Vorschlag für einen vorübergehenden Waffenstillstand",
-        "start": 164.7800048828125,
-        "end": 172.10000305175782,
+        "text": "Der ukrainische und europäische Vorschlag für einen vorübergehenden Waffenstillstand verlängert den Konflikt nur.",
+        "start": 164.8800048828125,
+        "end": 173.89999389648438,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 164.7800048828125,
+                "start": 164.8800048828125,
                 "end": 166.36000061035156
             },
             {
@@ -2170,20 +2016,11 @@
             {
                 "word": "Waffenstillstand",
                 "start": 170.63999938964844,
-                "end": 172.10000305175782
-            }
-        ],
-        "translationEn": "The Ukrainian and European proposal for a temporary ceasefire.",
-        "translationVi": "Đề xuất của Ukraine và châu Âu về một lệnh ngừng bắn tạm thời"
-    },
-    {
-        "text": "verlängert den Konflikt nur und führt zu einer Wiederaufnahme der Feindseligkeiten.",
-        "start": 171.7800048828125,
-        "end": 178.93999938964845,
-        "wordTimings": [
+                "end": 171.8000030517578
+            },
             {
                 "word": "verlängert",
-                "start": 171.7800048828125,
+                "start": 171.8800048828125,
                 "end": 172.75999450683594
             },
             {
@@ -2197,12 +2034,21 @@
                 "end": 173.5399932861328
             },
             {
-                "word": "nur",
+                "word": "nur.",
                 "start": 173.5399932861328,
                 "end": 173.89999389648438
-            },
+            }
+        ],
+        "translationEn": "The Ukrainian and European proposal for a temporary ceasefire only prolongs the conflict.",
+        "translationVi": "Đề xuất của Ukraine và châu Âu về một lệnh ngừng bắn tạm thời chỉ kéo dài xung đột."
+    },
+    {
+        "text": "Und führt zu einer Wiederaufnahme der Feindseligkeiten.",
+        "start": 173.89999389648438,
+        "end": 178.63999938964844,
+        "wordTimings": [
             {
-                "word": "und",
+                "word": "Und",
                 "start": 173.89999389648438,
                 "end": 175.17999267578125
             },
@@ -2234,20 +2080,20 @@
             {
                 "word": "Feindseligkeiten.",
                 "start": 177.72000122070312,
-                "end": 178.93999938964845
+                "end": 178.63999938964844
             }
         ],
-        "translationEn": "only prolongs the conflict and leads to a resumption of hostilities.",
-        "translationVi": "chỉ kéo dài cuộc xung đột và dẫn đến việc tái khởi động các hành động thù địch."
+        "translationEn": "And leads to a resumption of hostilities.",
+        "translationVi": "Và dẫn đến việc tái khởi động các hành động thù địch."
     },
     {
-        "text": "Trump will offenbar zwischen dem 12. und 18. Januar Selensky erneut treffen,",
-        "start": 184.50000610351563,
-        "end": 189.5799987792969,
+        "text": "Trump will offenbar zwischen dem 12. und 18. Januar Selensky erneut treffen, dann im Weißen Haus.",
+        "start": 184.60000610351562,
+        "end": 190.60000610351562,
         "wordTimings": [
             {
                 "word": "Trump",
-                "start": 184.50000610351563,
+                "start": 184.60000610351562,
                 "end": 185.0399932861328
             },
             {
@@ -2303,20 +2149,11 @@
             {
                 "word": "treffen,",
                 "start": 188.9600067138672,
-                "end": 189.5799987792969
-            }
-        ],
-        "translationEn": "Trump is apparently set to meet Zelensky again between January 12 and 18.",
-        "translationVi": "Trump sẽ gặp lại Selensky giữa ngày 12 và 18 tháng 1."
-    },
-    {
-        "text": "dann im Weißen Haus und zusammen mit europäischen Staats- und Regierungschefs.",
-        "start": 189.45999755859376,
-        "end": 194.1999938964844,
-        "wordTimings": [
+                "end": 189.27999877929688
+            },
             {
                 "word": "dann",
-                "start": 189.45999755859376,
+                "start": 189.55999755859375,
                 "end": 189.77999877929688
             },
             {
@@ -2330,12 +2167,21 @@
                 "end": 190.55999755859375
             },
             {
-                "word": "Haus",
+                "word": "Haus.",
                 "start": 190.55999755859375,
                 "end": 190.60000610351562
-            },
+            }
+        ],
+        "translationEn": "Trump is reportedly set to meet Zelensky again between January 12 and 18, this time at the White House.",
+        "translationVi": "Trump sẽ gặp lại Selensky giữa ngày 12 và 18 tháng 1, sau đó tại Nhà Trắng."
+    },
+    {
+        "text": "Und zusammen mit europäischen Staats- und Regierungschefs.",
+        "start": 190.60000610351562,
+        "end": 193.89999389648438,
+        "wordTimings": [
             {
-                "word": "und",
+                "word": "Und",
                 "start": 190.60000610351562,
                 "end": 190.97999572753906
             },
@@ -2367,20 +2213,20 @@
             {
                 "word": "Regierungschefs.",
                 "start": 193.10000610351562,
-                "end": 194.1999938964844
+                "end": 193.89999389648438
             }
         ],
-        "translationEn": "then at the White House and together with European heads of state and government.",
-        "translationVi": "sau đó tại Nhà Trắng và cùng với các nhà lãnh đạo quốc gia và chính phủ châu Âu."
+        "translationEn": "And together with European heads of state and government.",
+        "translationVi": "Và cùng với các nhà lãnh đạo nhà nước và chính phủ châu Âu."
     },
     {
-        "text": "In den Wochen danach möchte Trump das Friedensabkommen haben,",
-        "start": 194.4800018310547,
-        "end": 198.12000732421876,
+        "text": "In den Wochen danach möchte Trump das Friedensabkommen haben.",
+        "start": 194.5800018310547,
+        "end": 197.82000732421875,
         "wordTimings": [
             {
                 "word": "In",
-                "start": 194.4800018310547,
+                "start": 194.5800018310547,
                 "end": 194.9199981689453
             },
             {
@@ -2419,22 +2265,22 @@
                 "end": 197.47999572753906
             },
             {
-                "word": "haben,",
+                "word": "haben.",
                 "start": 197.47999572753906,
-                "end": 198.12000732421876
+                "end": 197.82000732421875
             }
         ],
-        "translationEn": "In the weeks that follow, Trump wants to have the peace agreement,",
-        "translationVi": "Trong những tuần tiếp theo, Trump muốn có thỏa thuận hòa bình,"
+        "translationEn": "In the weeks that follow, Trump wants to have the peace agreement.",
+        "translationVi": "Trong những tuần tiếp theo, Trump muốn có thỏa thuận hòa bình."
     },
     {
-        "text": "oder Sie kämpfen weiter und sie sterben weiter.",
-        "start": 198.0999969482422,
-        "end": 201.71999816894532,
+        "text": "Oder Sie kämpfen weiter und sie sterben weiter. Das ist nicht gut.",
+        "start": 198.1999969482422,
+        "end": 202.55999755859375,
         "wordTimings": [
             {
-                "word": "oder",
-                "start": 198.0999969482422,
+                "word": "Oder",
+                "start": 198.1999969482422,
                 "end": 198.1999969482422
             },
             {
@@ -2470,20 +2316,11 @@
             {
                 "word": "weiter.",
                 "start": 201.10000610351562,
-                "end": 201.71999816894532
-            }
-        ],
-        "translationEn": "or you keep fighting and they keep dying.",
-        "translationVi": "hoặc bạn tiếp tục chiến đấu và họ tiếp tục chết."
-    },
-    {
-        "text": "Das ist nicht gut.",
-        "start": 201.5999969482422,
-        "end": 202.85999755859376,
-        "wordTimings": [
+                "end": 201.4199981689453
+            },
             {
                 "word": "Das",
-                "start": 201.5999969482422,
+                "start": 201.6999969482422,
                 "end": 201.82000732421875
             },
             {
@@ -2499,10 +2336,10 @@
             {
                 "word": "gut.",
                 "start": 202.1199951171875,
-                "end": 202.85999755859376
+                "end": 202.55999755859375
             }
         ],
-        "translationEn": "That is not good.",
-        "translationVi": "Điều đó không tốt."
+        "translationEn": "Or you keep fighting and they keep dying. That's not good.",
+        "translationVi": "Hoặc bạn tiếp tục chiến đấu và họ tiếp tục chết. Điều đó không tốt."
     }
 ]

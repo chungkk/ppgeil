@@ -1,8 +1,8 @@
 [
     {
-        "text": "Deine Tätowierungen stecken in deinem Immunsystem.",
-        "start": 0,
-        "end": 3.659999895095825,
+        "text": "Deine Tätowierungen stecken in deinem Immunsystem, wortwörtlich.",
+        "start": 4.360000133514404,
+        "end": 4.360000133514404,
         "wordTimings": [
             {
                 "word": "Deine",
@@ -30,24 +30,24 @@
                 "end": 2.5799999237060547
             },
             {
-                "word": "Immunsystem.",
+                "word": "Immunsystem,",
                 "start": 2.5799999237060547,
-                "end": 3.659999895095825
+                "end": 3.359999895095825
+            },
+            {
+                "word": "wortwörtlich.",
+                "start": 4,
+                "end": 4.360000133514404
             }
         ],
-        "translationEn": "Your tattoos are embedded in your immune system.",
-        "translationVi": "Hình xăm của bạn nằm trong hệ miễn dịch của bạn."
+        "translationEn": "Your tattoos are literally embedded in your immune system.",
+        "translationVi": "Những hình xăm của bạn nằm trong hệ miễn dịch của bạn, theo nghĩa đen."
     },
     {
-        "text": "Wortwörtlich. Jedes dieser sicher superbedeutungsvollen Kunstwerke beginnt mit Millionen Toten.",
-        "start": 3.9,
-        "end": 10.279999542236329,
+        "text": "Jedes dieser sicher superbedeutungsvollen Kunstwerke beginnt mit Millionen Toten, großen Opfern,",
+        "start": 5.139999866485596,
+        "end": 11.0600004196167,
         "wordTimings": [
-            {
-                "word": "Wortwörtlich.",
-                "start": 3.9,
-                "end": 4.360000133514404
-            },
             {
                 "word": "Jedes",
                 "start": 5.139999866485596,
@@ -89,29 +89,29 @@
                 "end": 9.399999618530273
             },
             {
-                "word": "Toten.",
+                "word": "Toten,",
                 "start": 9.399999618530273,
-                "end": 10.279999542236329
-            }
-        ],
-        "translationEn": "Literally. Each of these surely highly significant works of art begins with millions of deaths.",
-        "translationVi": "Từng chữ một. Mỗi tác phẩm nghệ thuật có ý nghĩa sâu sắc này bắt đầu với hàng triệu cái chết."
-    },
-    {
-        "text": "Großen Opfern und veranlasst dein Immunsystem, dich vor dir selbst zu beschützen.",
-        "start": 10.519999885559082,
-        "end": 15.3600004196167,
-        "wordTimings": [
+                "end": 9.979999542236328
+            },
             {
-                "word": "Großen",
-                "start": 10.519999885559082,
+                "word": "großen",
+                "start": 10.619999885559082,
                 "end": 10.65999984741211
             },
             {
-                "word": "Opfern",
+                "word": "Opfern,",
                 "start": 10.65999984741211,
                 "end": 11.0600004196167
-            },
+            }
+        ],
+        "translationEn": "Each of these undoubtedly highly significant works of art begins with millions of dead, great sacrifices,",
+        "translationVi": "Mỗi tác phẩm nghệ thuật có ý nghĩa sâu sắc này bắt đầu với hàng triệu cái chết, những hy sinh lớn lao,"
+    },
+    {
+        "text": "und veranlasst dein Immunsystem, dich vor dir selbst zu beschützen.",
+        "start": 11.0600004196167,
+        "end": 15.0600004196167,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 11.0600004196167,
@@ -160,20 +160,20 @@
             {
                 "word": "beschützen.",
                 "start": 14.720000267028809,
-                "end": 15.3600004196167
+                "end": 15.0600004196167
             }
         ],
-        "translationEn": "Great sacrifices and causes your immune system to protect you from yourself.",
-        "translationVi": "Hy sinh lớn lao và khiến hệ thống miễn dịch của bạn bảo vệ bạn khỏi chính mình."
+        "translationEn": "and causes your immune system to protect you from yourself.",
+        "translationVi": "và khiến hệ thống miễn dịch của bạn bảo vệ bạn khỏi chính bạn."
     },
     {
         "text": "Tätowieren wir dich mal und sehen uns an, was in deiner Haut geschieht.",
-        "start": 15.9,
-        "end": 20.099999237060548,
+        "start": 16,
+        "end": 19.799999237060547,
         "wordTimings": [
             {
                 "word": "Tätowieren",
-                "start": 15.9,
+                "start": 16,
                 "end": 16.299999237060547
             },
             {
@@ -234,7 +234,7 @@
             {
                 "word": "geschieht.",
                 "start": 19.299999237060547,
-                "end": 20.099999237060548
+                "end": 19.799999237060547
             }
         ],
         "translationEn": "Let's tattoo you and see what happens in your skin.",
@@ -242,12 +242,12 @@
     },
     {
         "text": "Deine Haut muss ein riesiges Problem lösen.",
-        "start": 23.7799991607666,
-        "end": 26.820000457763673,
+        "start": 23.8799991607666,
+        "end": 26.520000457763672,
         "wordTimings": [
             {
                 "word": "Deine",
-                "start": 23.7799991607666,
+                "start": 23.8799991607666,
                 "end": 24.600000381469727
             },
             {
@@ -278,20 +278,20 @@
             {
                 "word": "lösen.",
                 "start": 26.15999984741211,
-                "end": 26.820000457763673
+                "end": 26.520000457763672
             }
         ],
         "translationEn": "Your skin has to solve a huge problem.",
-        "translationVi": "Làn da của bạn phải giải quyết một vấn đề lớn."
+        "translationVi": "Dàn da của bạn phải giải quyết một vấn đề lớn."
     },
     {
         "text": "Als größtes Organ hat sie den meisten direkten Kontakt zur Außenwelt.",
-        "start": 26.42000045776367,
-        "end": 31.4200008392334,
+        "start": 26.520000457763672,
+        "end": 31.1200008392334,
         "wordTimings": [
             {
                 "word": "Als",
-                "start": 26.42000045776367,
+                "start": 26.520000457763672,
                 "end": 27.1200008392334
             },
             {
@@ -342,7 +342,7 @@
             {
                 "word": "Außenwelt.",
                 "start": 30.440000534057617,
-                "end": 31.4200008392334
+                "end": 31.1200008392334
             }
         ],
         "translationEn": "As the largest organ, it has the most direct contact with the outside world.",
@@ -350,12 +350,12 @@
     },
     {
         "text": "Billionen Mikroorganismen, Dreck, Insekten und Ungeziefer dürfen nicht in dich hineingelangen.",
-        "start": 32.31999816894531,
-        "end": 38.16000061035156,
+        "start": 32.41999816894531,
+        "end": 37.86000061035156,
         "wordTimings": [
             {
                 "word": "Billionen",
-                "start": 32.31999816894531,
+                "start": 32.41999816894531,
                 "end": 32.459999084472656
             },
             {
@@ -406,7 +406,7 @@
             {
                 "word": "hineingelangen.",
                 "start": 37.18000030517578,
-                "end": 38.16000061035156
+                "end": 37.86000061035156
             }
         ],
         "translationEn": "Billions of microorganisms, dirt, insects, and pests must not enter you.",
@@ -414,12 +414,12 @@
     },
     {
         "text": "Aber gleichzeitig wird deine Haut da draußen in der Welt ständig beschädigt.",
-        "start": 38.300001525878905,
-        "end": 42.64000015258789,
+        "start": 38.400001525878906,
+        "end": 42.34000015258789,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 38.300001525878905,
+                "start": 38.400001525878906,
                 "end": 38.619998931884766
             },
             {
@@ -475,20 +475,20 @@
             {
                 "word": "beschädigt.",
                 "start": 41.7599983215332,
-                "end": 42.64000015258789
+                "end": 42.34000015258789
             }
         ],
         "translationEn": "But at the same time, your skin is constantly being damaged out there in the world.",
-        "translationVi": "Nhưng đồng thời, làn da của bạn ở bên ngoài thế giới luôn bị tổn thương."
+        "translationVi": "Nhưng đồng thời, làn da của bạn bên ngoài thế giới luôn bị tổn thương."
     },
     {
-        "text": "Die Lösung deines Körpers: deine Haut ist ein Förderband des Todes.",
-        "start": 43.179998779296874,
-        "end": 47.41999893188476,
+        "text": "Die Lösung deines Körpers, deine Haut, ist ein Förderband des Todes.",
+        "start": 43.279998779296875,
+        "end": 47.119998931884766,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 43.179998779296874,
+                "start": 43.279998779296875,
                 "end": 43.36000061035156
             },
             {
@@ -502,7 +502,7 @@
                 "end": 43.959999084472656
             },
             {
-                "word": "Körpers:",
+                "word": "Körpers,",
                 "start": 43.959999084472656,
                 "end": 44.36000061035156
             },
@@ -512,7 +512,7 @@
                 "end": 44.81999969482422
             },
             {
-                "word": "Haut",
+                "word": "Haut,",
                 "start": 44.81999969482422,
                 "end": 45.040000915527344
             },
@@ -539,20 +539,20 @@
             {
                 "word": "Todes.",
                 "start": 46.619998931884766,
-                "end": 47.41999893188476
+                "end": 47.119998931884766
             }
         ],
-        "translationEn": "The solution of your body: your skin is a conveyor belt of death.",
-        "translationVi": "Giải pháp của cơ thể bạn: làn da của bạn là một băng chuyền của cái chết."
+        "translationEn": "The solution of your body, your skin, is a conveyor belt of death.",
+        "translationVi": "Giải pháp của cơ thể bạn, làn da của bạn, là một băng chuyền của cái chết."
     },
     {
         "text": "All deine sichtbare Haut ist eigentlich tot.",
-        "start": 47.94000091552734,
-        "end": 50.75999908447265,
+        "start": 48.040000915527344,
+        "end": 50.459999084472656,
         "wordTimings": [
             {
                 "word": "All",
-                "start": 47.94000091552734,
+                "start": 48.040000915527344,
                 "end": 48.220001220703125
             },
             {
@@ -583,20 +583,20 @@
             {
                 "word": "tot.",
                 "start": 50.20000076293945,
-                "end": 50.75999908447265
+                "end": 50.459999084472656
             }
         ],
         "translationEn": "All your visible skin is actually dead.",
         "translationVi": "Tất cả làn da bạn nhìn thấy đều thực sự đã chết."
     },
     {
-        "text": "Der lebendige Teil deiner Hautzellen beginnt etwa einen Millimeter tiefer.",
-        "start": 51.24000015258789,
-        "end": 55.36000137329101,
+        "text": "Der lebendige Teil deiner Hautzellen beginnt etwa einen Millimeter tiefer im Industriegebiet deiner Haut.",
+        "start": 51.34000015258789,
+        "end": 56.97999954223633,
         "wordTimings": [
             {
                 "word": "Der",
-                "start": 51.24000015258789,
+                "start": 51.34000015258789,
                 "end": 51.459999084472656
             },
             {
@@ -640,22 +640,13 @@
                 "end": 54.599998474121094
             },
             {
-                "word": "tiefer.",
+                "word": "tiefer",
                 "start": 54.599998474121094,
-                "end": 55.36000137329101
-            }
-        ],
-        "translationEn": "The living part of your skin cells begins about one millimeter deeper.",
-        "translationVi": "Phần sống động của các tế bào da của bạn bắt đầu khoảng một milimét sâu hơn."
-    },
-    {
-        "text": "Im Industriegebiet deiner Haut klonen sich Stammzellen ständig selbst.",
-        "start": 54.960001373291014,
-        "end": 60.41999893188476,
-        "wordTimings": [
+                "end": 55.060001373291016
+            },
             {
-                "word": "Im",
-                "start": 54.960001373291014,
+                "word": "im",
+                "start": 55.060001373291016,
                 "end": 55.439998626708984
             },
             {
@@ -669,9 +660,23 @@
                 "end": 56.79999923706055
             },
             {
-                "word": "Haut",
+                "word": "Haut.",
                 "start": 56.79999923706055,
                 "end": 56.97999954223633
+            }
+        ],
+        "translationEn": "The living part of your skin cells begins about one millimeter deeper in the industrial area of your skin.",
+        "translationVi": "Phần sống động của tế bào da của bạn bắt đầu khoảng một milimét sâu hơn trong khu công nghiệp của làn da bạn."
+    },
+    {
+        "text": "Hier klonen sich Stammzellen ständig selbst und produzieren so neue Hautzellen,",
+        "start": 57.779998779296875,
+        "end": 62.459999084472656,
+        "wordTimings": [
+            {
+                "word": "Hier",
+                "start": 57.779998779296875,
+                "end": 57.97999954223633
             },
             {
                 "word": "klonen",
@@ -694,47 +699,102 @@
                 "end": 59.65999984741211
             },
             {
-                "word": "selbst.",
+                "word": "selbst",
                 "start": 59.65999984741211,
-                "end": 60.41999893188476
-            }
-        ],
-        "translationEn": "In the industrial area of your skin, stem cells constantly clone themselves.",
-        "translationVi": "Trong khu công nghiệp của làn da bạn, các tế bào gốc liên tục tự nhân bản."
-    },
-    {
-        "text": "Sie produzieren so neue Hautzellen, die dann von innen nach außen reisen.",
-        "start": 62.74000015258789,
-        "end": 68.49999847412109,
-        "wordTimings": [
+                "end": 60.119998931884766
+            },
             {
-                "word": "Sie",
-                "start": 62.74000015258789,
-                "end": 62.86000061035156
+                "word": "und",
+                "start": 60.119998931884766,
+                "end": 60.68000030517578
             },
             {
                 "word": "produzieren",
-                "start": 62.86000061035156,
-                "end": 63.16000061035156,
-                "estimated": true
+                "start": 60.68000030517578,
+                "end": 61.119998931884766
             },
             {
                 "word": "so",
-                "start": 63.16000061035156,
-                "end": 63.46000061035156,
-                "estimated": true
+                "start": 61.119998931884766,
+                "end": 61.68000030517578
             },
             {
                 "word": "neue",
-                "start": 63.46000061035156,
-                "end": 63.760000610351554,
-                "estimated": true
+                "start": 61.68000030517578,
+                "end": 61.79999923706055
             },
             {
                 "word": "Hautzellen,",
-                "start": 63.760000610351554,
-                "end": 64.06000061035155,
-                "estimated": true
+                "start": 61.79999923706055,
+                "end": 62.459999084472656
+            }
+        ],
+        "translationEn": "Here, stem cells constantly clone themselves and thus produce new skin cells.",
+        "translationVi": "Tại đây, các tế bào gốc liên tục tự nhân bản và do đó sản xuất ra các tế bào da mới,"
+    },
+    {
+        "text": "die dann von innen nach außen reisen.",
+        "start": 62.84000015258789,
+        "end": 64.76000213623047,
+        "wordTimings": [
+            {
+                "word": "die",
+                "start": 62.84000015258789,
+                "end": 62.86000061035156
+            },
+            {
+                "word": "dann",
+                "start": 62.86000061035156,
+                "end": 63.18000030517578
+            },
+            {
+                "word": "von",
+                "start": 63.18000030517578,
+                "end": 63.41999816894531
+            },
+            {
+                "word": "innen",
+                "start": 63.41999816894531,
+                "end": 63.619998931884766
+            },
+            {
+                "word": "nach",
+                "start": 63.619998931884766,
+                "end": 64.05999755859375
+            },
+            {
+                "word": "außen",
+                "start": 64.05999755859375,
+                "end": 64.19999694824219
+            },
+            {
+                "word": "reisen.",
+                "start": 64.19999694824219,
+                "end": 64.76000213623047
+            }
+        ],
+        "translationEn": "which then travel from the inside out.",
+        "translationVi": "cái sau đó đi từ trong ra ngoài."
+    },
+    {
+        "text": "Jede Generation drückt die vorherigen nach oben.",
+        "start": 65.44000244140625,
+        "end": 67.94000244140625,
+        "wordTimings": [
+            {
+                "word": "Jede",
+                "start": 65.44000244140625,
+                "end": 65.4800033569336
+            },
+            {
+                "word": "Generation",
+                "start": 65.4800033569336,
+                "end": 66.16000366210938
+            },
+            {
+                "word": "drückt",
+                "start": 66.16000366210938,
+                "end": 66.45999908447266
             },
             {
                 "word": "die",
@@ -742,22 +802,9 @@
                 "end": 66.66000366210938
             },
             {
-                "word": "dann",
+                "word": "vorherigen",
                 "start": 66.66000366210938,
-                "end": 66.96000366210937,
-                "estimated": true
-            },
-            {
-                "word": "von",
-                "start": 66.96000366210937,
-                "end": 67.26000366210937,
-                "estimated": true
-            },
-            {
-                "word": "innen",
-                "start": 67.26000366210937,
-                "end": 67.56000366210937,
-                "estimated": true
+                "end": 67.30000305175781
             },
             {
                 "word": "nach",
@@ -765,79 +812,22 @@
                 "end": 67.5999984741211
             },
             {
-                "word": "außen",
-                "start": 67.5999984741211,
-                "end": 67.89999847412109,
-                "estimated": true
-            },
-            {
-                "word": "reisen.",
-                "start": 67.89999847412109,
-                "end": 68.49999847412109,
-                "estimated": true
-            }
-        ],
-        "translationEn": "They produce new skin cells that then travel from the inside out.",
-        "translationVi": "Họ sản xuất ra các tế bào da mới, sau đó di chuyển từ bên trong ra bên ngoài."
-    },
-    {
-        "text": "Jede Generation drückt die vorherigen nach oben.",
-        "start": 0,
-        "end": 68.24000244140625,
-        "wordTimings": [
-            {
-                "word": "Jede",
-                "start": 0,
-                "end": 0.3,
-                "estimated": true
-            },
-            {
-                "word": "Generation",
-                "start": 0.3,
-                "end": 0.6,
-                "estimated": true
-            },
-            {
-                "word": "drückt",
-                "start": 0.6,
-                "end": 0.8999999999999999,
-                "estimated": true
-            },
-            {
-                "word": "die",
-                "start": 0.8999999999999999,
-                "end": 1.2,
-                "estimated": true
-            },
-            {
-                "word": "vorherigen",
-                "start": 1.2,
-                "end": 1.5,
-                "estimated": true
-            },
-            {
-                "word": "nach",
-                "start": 1.5,
-                "end": 1.8,
-                "estimated": true
-            },
-            {
                 "word": "oben.",
                 "start": 67.5999984741211,
-                "end": 68.24000244140625
+                "end": 67.94000244140625
             }
         ],
         "translationEn": "Each generation pushes the previous ones upward.",
-        "translationVi": "Mỗi thế hệ đẩy những thế hệ trước lên trên."
+        "translationVi": "Mỗi thế hệ đều nâng đỡ những thế hệ trước."
     },
     {
         "text": "Deine Hautzellen verzahnen sich mit dem Alter und formen Lamellarkörperchen.",
-        "start": 68.4,
-        "end": 73.3199966430664,
+        "start": 68.5,
+        "end": 73.0199966430664,
         "wordTimings": [
             {
                 "word": "Deine",
-                "start": 68.4,
+                "start": 68.5,
                 "end": 68.54000091552734
             },
             {
@@ -883,20 +873,20 @@
             {
                 "word": "Lamellarkörperchen.",
                 "start": 71.58000183105469,
-                "end": 73.3199966430664
+                "end": 73.0199966430664
             }
         ],
         "translationEn": "Your skin cells interlock with age and form lamellar bodies.",
-        "translationVi": "Các tế bào da của bạn liên kết với nhau theo tuổi tác và hình thành các thể lamella."
+        "translationVi": "Các tế bào da của bạn liên kết với nhau theo tuổi tác và hình thành các cơ thể lamella."
     },
     {
-        "text": "Winzige Beutel, die Fett verspritzen und so eine wasserdichte Schicht bilden.",
-        "start": 73.56000366210938,
-        "end": 77.60000305175781,
+        "text": "Winzige Beutel, die Fett verspritzen und so eine wasserdichte Schicht bilden,",
+        "start": 73.66000366210938,
+        "end": 77.30000305175781,
         "wordTimings": [
             {
                 "word": "Winzige",
-                "start": 73.56000366210938,
+                "start": 73.66000366210938,
                 "end": 73.91999816894531
             },
             {
@@ -945,22 +935,22 @@
                 "end": 76.9000015258789
             },
             {
-                "word": "bilden.",
+                "word": "bilden,",
                 "start": 76.9000015258789,
-                "end": 77.60000305175781
+                "end": 77.30000305175781
             }
         ],
-        "translationEn": "Tiny bags that spray fat and thus form a waterproof layer.",
-        "translationVi": "Những túi nhỏ phun mỡ và tạo thành một lớp chống thấm nước."
+        "translationEn": "Tiny bags that spray fat and thus create a waterproof layer,",
+        "translationVi": "Những túi nhỏ phun mỡ và tạo thành một lớp chống thấm nước,"
     },
     {
-        "text": "Die alle Zwischenräume verschließt.",
-        "start": 77.34000244140626,
-        "end": 79.84000091552734,
+        "text": "die alle Zwischenräume verschließt.",
+        "start": 77.44000244140625,
+        "end": 79.54000091552734,
         "wordTimings": [
             {
-                "word": "Die",
-                "start": 77.34000244140626,
+                "word": "die",
+                "start": 77.44000244140625,
                 "end": 77.5999984741211
             },
             {
@@ -976,20 +966,20 @@
             {
                 "word": "verschließt.",
                 "start": 78.54000091552734,
-                "end": 79.84000091552734
+                "end": 79.54000091552734
             }
         ],
-        "translationEn": "That closes all the gaps.",
-        "translationVi": "Nó đóng kín tất cả các khoảng trống."
+        "translationEn": "that closes all the gaps.",
+        "translationVi": "đóng tất cả các khoảng trống."
     },
     {
         "text": "Und dann trocknen sie aus und sterben, wobei sie zu untrennbaren Klumpen verwachsen.",
-        "start": 79.44000091552735,
-        "end": 84.85999755859375,
+        "start": 79.54000091552734,
+        "end": 84.55999755859375,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 79.44000091552735,
+                "start": 79.54000091552734,
                 "end": 79.77999877929688
             },
             {
@@ -1050,20 +1040,20 @@
             {
                 "word": "verwachsen.",
                 "start": 84.13999938964844,
-                "end": 84.85999755859375
+                "end": 84.55999755859375
             }
         ],
         "translationEn": "And then they dry out and die, merging into inseparable clumps.",
-        "translationVi": "Và sau đó chúng khô lại và chết, trong khi chúng gắn kết thành những khối không thể tách rời."
+        "translationVi": "Và sau đó chúng khô lại và chết, trong khi chúng kết dính thành những khối không thể tách rời."
     },
     {
         "text": "Dieser Leichenwall wird nach oben gestoßen.",
-        "start": 85.35999908447266,
-        "end": 87.52000122070312,
+        "start": 85.45999908447266,
+        "end": 87.22000122070312,
         "wordTimings": [
             {
                 "word": "Dieser",
-                "start": 85.35999908447266,
+                "start": 85.45999908447266,
                 "end": 85.4800033569336
             },
             {
@@ -1089,20 +1079,20 @@
             {
                 "word": "gestoßen.",
                 "start": 86.69999694824219,
-                "end": 87.52000122070312
+                "end": 87.22000122070312
             }
         ],
-        "translationEn": "This mound of corpses is being pushed upward.",
-        "translationVi": "Bức tường xác chết này sẽ bị đẩy lên trên."
+        "translationEn": "This mound of corpses is being pushed upwards.",
+        "translationVi": "Cái xác này sẽ bị đẩy lên trên."
     },
     {
-        "text": "Dein ganzer Körper ist von bis zu 50 Schichten toter Zellen bedeckt.",
-        "start": 87.70000305175782,
-        "end": 91.53999786376953,
+        "text": "Dein ganzer Körper ist von bis zu 50 Schichten toter Zellen bedeckt,",
+        "start": 87.80000305175781,
+        "end": 91.23999786376953,
         "wordTimings": [
             {
                 "word": "Dein",
-                "start": 87.70000305175782,
+                "start": 87.80000305175781,
                 "end": 87.80000305175781
             },
             {
@@ -1156,22 +1146,22 @@
                 "end": 90.83999633789062
             },
             {
-                "word": "bedeckt.",
+                "word": "bedeckt,",
                 "start": 90.83999633789062,
-                "end": 91.53999786376953
+                "end": 91.23999786376953
             }
         ],
-        "translationEn": "Your entire body is covered by up to 50 layers of dead cells.",
-        "translationVi": "Toàn bộ cơ thể của bạn được bao phủ bởi tới 50 lớp tế bào chết."
+        "translationEn": "Your entire body is covered by up to 50 layers of dead cells,",
+        "translationVi": "Toàn bộ cơ thể của bạn được bao phủ bởi tới 50 lớp tế bào chết,"
     },
     {
-        "text": "Die ständig durch neue ersetzt werden.",
-        "start": 91.4999984741211,
-        "end": 93.84000091552734,
+        "text": "die ständig durch neue ersetzt werden.",
+        "start": 91.5999984741211,
+        "end": 93.54000091552734,
         "wordTimings": [
             {
-                "word": "Die",
-                "start": 91.4999984741211,
+                "word": "die",
+                "start": 91.5999984741211,
                 "end": 91.72000122070312
             },
             {
@@ -1197,20 +1187,20 @@
             {
                 "word": "werden.",
                 "start": 93.23999786376953,
-                "end": 93.84000091552734
+                "end": 93.54000091552734
             }
         ],
-        "translationEn": "They are constantly replaced by new ones.",
-        "translationVi": "Chúng liên tục được thay thế bằng những cái mới."
+        "translationEn": "that are constantly replaced by new ones.",
+        "translationVi": "các cái liên tục được thay thế bằng cái mới."
     },
     {
-        "text": "Jede Stunde wirfst du etwa 200 Millionen tote Hautzellen ab.",
-        "start": 94.06000366210938,
-        "end": 98.43999938964843,
+        "text": "Jede Stunde wirfst du etwa 200 Millionen tote Hautzellen ab,",
+        "start": 94.16000366210938,
+        "end": 98.13999938964844,
         "wordTimings": [
             {
                 "word": "Jede",
-                "start": 94.06000366210938,
+                "start": 94.16000366210938,
                 "end": 94.26000213623047
             },
             {
@@ -1254,22 +1244,22 @@
                 "end": 97.86000061035156
             },
             {
-                "word": "ab.",
+                "word": "ab,",
                 "start": 97.86000061035156,
-                "end": 98.43999938964843
+                "end": 98.13999938964844
             }
         ],
         "translationEn": "Every hour, you shed about 200 million dead skin cells.",
         "translationVi": "Mỗi giờ, bạn thải ra khoảng 200 triệu tế bào da chết."
     },
     {
-        "text": "Und mit ihnen all den Dreck und die Bakterien, die an ihnen kleben.",
-        "start": 98.03999938964844,
-        "end": 102.46000366210937,
+        "text": "und mit ihnen all den Dreck und die Bakterien, die an ihnen kleben.",
+        "start": 98.13999938964844,
+        "end": 102.16000366210938,
         "wordTimings": [
             {
-                "word": "Und",
-                "start": 98.03999938964844,
+                "word": "und",
+                "start": 98.13999938964844,
                 "end": 98.5999984741211
             },
             {
@@ -1330,20 +1320,20 @@
             {
                 "word": "kleben.",
                 "start": 101.72000122070312,
-                "end": 102.46000366210937
+                "end": 102.16000366210938
             }
         ],
-        "translationEn": "And with them all the dirt and the bacteria that cling to them.",
-        "translationVi": "Và với chúng, tất cả những bụi bẩn và vi khuẩn bám trên chúng."
+        "translationEn": "and with them all the dirt and bacteria that stick to them.",
+        "translationVi": "và với chúng tất cả bụi bẩn và vi khuẩn bám trên chúng."
     },
     {
         "text": "Diese Schicht zu tätowieren wäre sinnlos, weil nichts übrig bleiben würde.",
-        "start": 102.71999969482422,
-        "end": 107.16000061035156,
+        "start": 102.81999969482422,
+        "end": 106.86000061035156,
         "wordTimings": [
             {
                 "word": "Diese",
-                "start": 102.71999969482422,
+                "start": 102.81999969482422,
                 "end": 103.08000183105469
             },
             {
@@ -1394,20 +1384,20 @@
             {
                 "word": "würde.",
                 "start": 106.5999984741211,
-                "end": 107.16000061035156
+                "end": 106.86000061035156
             }
         ],
         "translationEn": "Tattooing this layer would be pointless because nothing would remain.",
-        "translationVi": "Việc xăm lớp này sẽ vô nghĩa, vì sẽ không còn gì sót lại."
+        "translationVi": "Việc xăm lớp này sẽ vô nghĩa, vì sẽ không còn gì lại."
     },
     {
-        "text": "Wir müssen tiefer gehen.",
-        "start": 107.26000061035157,
-        "end": 108.75999908447265,
+        "text": "Wir müssen tiefer gehen. Die Welt deines Fleisches explodiert.",
+        "start": 107.36000061035156,
+        "end": 111.5199966430664,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 107.26000061035157,
+                "start": 107.36000061035156,
                 "end": 107.54000091552734
             },
             {
@@ -1423,20 +1413,11 @@
             {
                 "word": "gehen.",
                 "start": 108.22000122070312,
-                "end": 108.75999908447265
-            }
-        ],
-        "translationEn": "We need to go deeper.",
-        "translationVi": "Chúng ta phải đi sâu hơn."
-    },
-    {
-        "text": "Die Welt deines Fleisches explodiert.",
-        "start": 108.77999725341797,
-        "end": 111.8199966430664,
-        "wordTimings": [
+                "end": 108.45999908447266
+            },
             {
                 "word": "Die",
-                "start": 108.77999725341797,
+                "start": 108.87999725341797,
                 "end": 109.30000305175781
             },
             {
@@ -1457,20 +1438,20 @@
             {
                 "word": "explodiert.",
                 "start": 110.58000183105469,
-                "end": 111.8199966430664
+                "end": 111.5199966430664
             }
         ],
-        "translationEn": "The world of your flesh is exploding.",
-        "translationVi": "Thế giới của xác thịt bạn nổ tung."
+        "translationEn": "We need to go deeper. The world of your flesh is exploding.",
+        "translationVi": "Chúng ta phải đi sâu hơn. Thế giới của thịt bạn đang bùng nổ."
     },
     {
         "text": "Unter dem Förderband des Todes liegt die Dermis.",
-        "start": 112.12000122070313,
-        "end": 114.74000244140625,
+        "start": 112.22000122070312,
+        "end": 114.44000244140625,
         "wordTimings": [
             {
                 "word": "Unter",
-                "start": 112.12000122070313,
+                "start": 112.22000122070312,
                 "end": 112.23999786376953
             },
             {
@@ -1506,20 +1487,20 @@
             {
                 "word": "Dermis.",
                 "start": 114,
-                "end": 114.74000244140625
+                "end": 114.44000244140625
             }
         ],
         "translationEn": "Beneath the conveyor belt of death lies the dermis.",
         "translationVi": "Dưới băng chuyền của cái chết là lớp da."
     },
     {
-        "text": "Sie enthält strukturelles Gewebe und Zellen, winzige Blutgefäße.",
-        "start": 115.08000030517579,
-        "end": 119.74000244140625,
+        "text": "Sie enthält strukturelles Gewebe und Zellen, winzige Blutgefäße,",
+        "start": 115.18000030517578,
+        "end": 119.44000244140625,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 115.08000030517579,
+                "start": 115.18000030517578,
                 "end": 115.18000030517578
             },
             {
@@ -1553,22 +1534,22 @@
                 "end": 118.5999984741211
             },
             {
-                "word": "Blutgefäße.",
+                "word": "Blutgefäße,",
                 "start": 118.5999984741211,
-                "end": 119.74000244140625
+                "end": 119.44000244140625
             }
         ],
-        "translationEn": "It contains structural tissue and cells, tiny blood vessels.",
-        "translationVi": "Nó chứa mô cấu trúc và tế bào, các mạch máu nhỏ."
+        "translationEn": "It contains structural tissue and cells, tiny blood vessels,",
+        "translationVi": "Nó chứa mô cấu trúc và tế bào, các mạch máu nhỏ,"
     },
     {
-        "text": "Sinneszellen, die den Nervenenden Bericht erstatten.",
-        "start": 119.67999877929688,
-        "end": 122.84000091552734,
+        "text": "Sinneszellen, die den Nervenenden Bericht erstatten, Haarwurzeln,",
+        "start": 119.77999877929688,
+        "end": 123.58000183105469,
         "wordTimings": [
             {
                 "word": "Sinneszellen,",
-                "start": 119.67999877929688,
+                "start": 119.77999877929688,
                 "end": 120.30000305175781
             },
             {
@@ -1592,24 +1573,24 @@
                 "end": 122.0999984741211
             },
             {
-                "word": "erstatten.",
+                "word": "erstatten,",
                 "start": 122.0999984741211,
-                "end": 122.84000091552734
-            }
-        ],
-        "translationEn": "Sensory cells that report to the nerve endings.",
-        "translationVi": "Tế bào cảm giác, báo cáo cho các đầu dây thần kinh."
-    },
-    {
-        "text": "Haarwurzeln, Schweißdrüsen, die deine Temperatur regulieren.",
-        "start": 123.02000274658204,
-        "end": 126.53999786376953,
-        "wordTimings": [
+                "end": 122.54000091552734
+            },
             {
                 "word": "Haarwurzeln,",
-                "start": 123.02000274658204,
+                "start": 123.12000274658203,
                 "end": 123.58000183105469
-            },
+            }
+        ],
+        "translationEn": "Sensory cells that report to the nerve endings, hair roots,",
+        "translationVi": "Tế bào cảm giác, báo cáo cho các đầu dây thần kinh, chân tóc,"
+    },
+    {
+        "text": "Schweißdrüsen, die deine Temperatur regulieren, und natürlich jede Menge Immunzellen,",
+        "start": 123.58000183105469,
+        "end": 128.66000366210938,
+        "wordTimings": [
             {
                 "word": "Schweißdrüsen,",
                 "start": 123.58000183105469,
@@ -1631,22 +1612,13 @@
                 "end": 125.72000122070312
             },
             {
-                "word": "regulieren.",
+                "word": "regulieren,",
                 "start": 125.72000122070312,
-                "end": 126.53999786376953
-            }
-        ],
-        "translationEn": "Hair roots, sweat glands that regulate your temperature.",
-        "translationVi": "Rễ tóc, tuyến mồ hôi, điều chỉnh nhiệt độ của bạn."
-    },
-    {
-        "text": "Und natürlich jede Menge Immunzellen, die das Fleisch direkt unter der Grenzmauer bewachen.",
-        "start": 126.13999786376954,
-        "end": 132.1999938964844,
-        "wordTimings": [
+                "end": 126.23999786376953
+            },
             {
-                "word": "Und",
-                "start": 126.13999786376954,
+                "word": "und",
+                "start": 126.23999786376953,
                 "end": 126.9000015258789
             },
             {
@@ -1668,10 +1640,19 @@
                 "word": "Immunzellen,",
                 "start": 127.91999816894531,
                 "end": 128.66000366210938
-            },
+            }
+        ],
+        "translationEn": "sweat glands that regulate your temperature, and of course a lot of immune cells,",
+        "translationVi": "Tuyến mồ hôi, điều chỉnh nhiệt độ của bạn, và tất nhiên là rất nhiều tế bào miễn dịch,"
+    },
+    {
+        "text": "die das Fleisch direkt unter der Grenzmauer bewachen.",
+        "start": 128.9600067138672,
+        "end": 131.89999389648438,
+        "wordTimings": [
             {
                 "word": "die",
-                "start": 128.97999572753906,
+                "start": 128.9600067138672,
                 "end": 129.0399932861328
             },
             {
@@ -1707,20 +1688,20 @@
             {
                 "word": "bewachen.",
                 "start": 131.4199981689453,
-                "end": 132.1999938964844
+                "end": 131.89999389648438
             }
         ],
-        "translationEn": "And of course, plenty of immune cells that guard the flesh directly under the border wall.",
-        "translationVi": "Và tất nhiên là rất nhiều tế bào miễn dịch, bảo vệ thịt ngay dưới bức tường biên giới."
+        "translationEn": "who guard the meat directly under the border wall.",
+        "translationVi": "các người canh gác thịt ngay dưới bức tường biên giới."
     },
     {
-        "text": "Hier und noch etwas weiter unten landet das Tattoo.",
-        "start": 132.73999633789063,
-        "end": 136.9199951171875,
+        "text": "Hier und noch etwas weiter unten landet das Tattoo. Okay, bereit? Die Welt explodiert.",
+        "start": 132.83999633789062,
+        "end": 140.33999633789062,
         "wordTimings": [
             {
                 "word": "Hier",
-                "start": 132.73999633789063,
+                "start": 132.83999633789062,
                 "end": 133.1199951171875
             },
             {
@@ -1761,20 +1742,11 @@
             {
                 "word": "Tattoo.",
                 "start": 135.6999969482422,
-                "end": 136.9199951171875
-            }
-        ],
-        "translationEn": "Here and a little further down is where the tattoo will land.",
-        "translationVi": "Ở đây và còn một chút nữa phía dưới sẽ là hình xăm."
-    },
-    {
-        "text": "Okay, bereit? Die Welt explodiert.",
-        "start": 136.5199951171875,
-        "end": 140.63999633789064,
-        "wordTimings": [
+                "end": 136.6199951171875
+            },
             {
                 "word": "Okay,",
-                "start": 136.5199951171875,
+                "start": 136.6199951171875,
                 "end": 137.02000427246094
             },
             {
@@ -1795,20 +1767,20 @@
             {
                 "word": "explodiert.",
                 "start": 139.33999633789062,
-                "end": 140.63999633789064
+                "end": 140.33999633789062
             }
         ],
-        "translationEn": "Okay, ready? The world is exploding.",
-        "translationVi": "Được rồi, sẵn sàng chưa? Thế giới đang nổ tung."
+        "translationEn": "Here and a little further down is where the tattoo lands. Okay, ready? The world is exploding.",
+        "translationVi": "Ở đây và còn một chút nữa phía dưới là nơi hình xăm sẽ xuất hiện. Được rồi, sẵn sàng chưa? Thế giới đang nổ tung."
     },
     {
-        "text": "Ein halbes Dutzend Monolithen, groß wie Wolkenkratzer, schlagen durch 50 Schichten toter Zellen.",
-        "start": 141.0199951171875,
-        "end": 147.32000427246095,
+        "text": "Ein halbes Dutzend Monolithen, groß wie Wolkenkratzer, schlagen durch",
+        "start": 141.1199951171875,
+        "end": 145.13999938964844,
         "wordTimings": [
             {
                 "word": "Ein",
-                "start": 141.0199951171875,
+                "start": 141.1199951171875,
                 "end": 141.1199951171875
             },
             {
@@ -1850,7 +1822,16 @@
                 "word": "durch",
                 "start": 144.86000061035156,
                 "end": 145.13999938964844
-            },
+            }
+        ],
+        "translationEn": "A half dozen monoliths, as large as skyscrapers, strike through.",
+        "translationVi": "Một nửa tá monolith, lớn như những tòa nhà chọc trời, đập vào"
+    },
+    {
+        "text": "50 Schichten toter Zellen tief in die Dermis und reißen riesige Löcher in die Haut.",
+        "start": 145.13999938964844,
+        "end": 150.6999969482422,
+        "wordTimings": [
             {
                 "word": "50",
                 "start": 145.13999938964844,
@@ -1867,22 +1848,13 @@
                 "end": 146.6999969482422
             },
             {
-                "word": "Zellen.",
+                "word": "Zellen",
                 "start": 146.6999969482422,
-                "end": 147.32000427246095
-            }
-        ],
-        "translationEn": "Half a dozen monoliths, as large as skyscrapers, strike through 50 layers of dead cells.",
-        "translationVi": "Một nửa tá monolith, lớn như những tòa nhà chọc trời, xuyên qua 50 lớp tế bào chết."
-    },
-    {
-        "text": "Tief in die Dermis und reißen riesige Löcher in die Haut.",
-        "start": 146.92000427246094,
-        "end": 150.9999969482422,
-        "wordTimings": [
+                "end": 147.02000427246094
+            },
             {
-                "word": "Tief",
-                "start": 146.92000427246094,
+                "word": "tief",
+                "start": 147.02000427246094,
                 "end": 147.6199951171875
             },
             {
@@ -1933,22 +1905,21 @@
             {
                 "word": "Haut.",
                 "start": 150.6999969482422,
-                "end": 150.9999969482422
+                "end": 150.6999969482422
             }
         ],
-        "translationEn": "Deep into the dermis and tear huge holes in the skin.",
-        "translationVi": "Sâu vào lớp da và xé toạc những lỗ lớn trên da."
+        "translationEn": "50 layers of dead cells deep into the dermis and tear huge holes in the skin.",
+        "translationVi": "50 lớp tế bào chết sâu trong lớp da và tạo ra những lỗ hổng lớn trên da."
     },
     {
         "text": "Sie ziehen sich zurück und schlagen erneut durch das Gewebe, etwa zweimal pro Sekunde.",
-        "start": 0,
-        "end": 156.52000122070314,
+        "start": 150.6999969482422,
+        "end": 156.22000122070312,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 0,
-                "end": 0.3,
-                "estimated": true
+                "start": 150.6999969482422,
+                "end": 150.9499969482422
             },
             {
                 "word": "ziehen",
@@ -2013,20 +1984,20 @@
             {
                 "word": "Sekunde.",
                 "start": 155.75999450683594,
-                "end": 156.52000122070314
+                "end": 156.22000122070312
             }
         ],
-        "translationEn": "They withdraw and strike through the tissue again, about twice per second.",
+        "translationEn": "They withdraw and strike through the fabric again, about twice per second.",
         "translationVi": "Họ rút lui và lại đâm xuyên qua mô, khoảng hai lần mỗi giây."
     },
     {
         "text": "Zehntausende Zellen sterben sofort, qualvoll in Stücke gerissen oder irreparabel beschädigt.",
-        "start": 156.73999633789063,
-        "end": 162.85999755859376,
+        "start": 156.83999633789062,
+        "end": 162.55999755859375,
         "wordTimings": [
             {
                 "word": "Zehntausende",
-                "start": 156.73999633789063,
+                "start": 156.83999633789062,
                 "end": 157.5800018310547
             },
             {
@@ -2077,20 +2048,20 @@
             {
                 "word": "beschädigt.",
                 "start": 161.94000244140625,
-                "end": 162.85999755859376
+                "end": 162.55999755859375
             }
         ],
-        "translationEn": "Tens of thousands of cells die immediately, torn apart in agony or irreparably damaged.",
-        "translationVi": "Hàng chục nghìn tế bào chết ngay lập tức, đau đớn bị xé thành từng mảnh hoặc bị hư hại không thể phục hồi."
+        "translationEn": "Tens of thousands of cells die immediately, painfully torn apart or irreparably damaged.",
+        "translationVi": "Hàng chục nghìn tế bào chết ngay lập tức, bị xé nát một cách đau đớn hoặc bị hư hại không thể phục hồi."
     },
     {
-        "text": "Aber zum Glück hast du recherchiert und einen verantwortungsvollen Tätowierer gewählt.",
-        "start": 163.06000366210938,
-        "end": 168.77999572753907,
+        "text": "Aber zum Glück hast du recherchiert und einen verantwortungsvollen Tätowierer gewählt,",
+        "start": 163.16000366210938,
+        "end": 168.47999572753906,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 163.06000366210938,
+                "start": 163.16000366210938,
                 "end": 163.60000610351562
             },
             {
@@ -2139,22 +2110,22 @@
                 "end": 168.13999938964844
             },
             {
-                "word": "gewählt.",
+                "word": "gewählt,",
                 "start": 168.13999938964844,
-                "end": 168.77999572753907
+                "end": 168.47999572753906
             }
         ],
-        "translationEn": "But luckily you did your research and chose a responsible tattoo artist.",
-        "translationVi": "Nhưng may mắn là bạn đã nghiên cứu và chọn một thợ xăm có trách nhiệm."
+        "translationEn": "But luckily you did your research and chose a responsible tattoo artist,",
+        "translationVi": "Nhưng may mắn thay, bạn đã nghiên cứu và chọn một nghệ sĩ xăm hình có trách nhiệm,"
     },
     {
-        "text": "Der sein Werkzeug und deine Haut richtig desinfiziert hat.",
-        "start": 168.72000732421876,
-        "end": 173.3,
+        "text": "der sein Werkzeug und deine Haut richtig desinfiziert hat.",
+        "start": 168.82000732421875,
+        "end": 173,
         "wordTimings": [
             {
-                "word": "Der",
-                "start": 168.72000732421876,
+                "word": "der",
+                "start": 168.82000732421875,
                 "end": 168.8800048828125
             },
             {
@@ -2195,20 +2166,20 @@
             {
                 "word": "hat.",
                 "start": 172.24000549316406,
-                "end": 173.3
+                "end": 173
             }
         ],
-        "translationEn": "Who has properly disinfected his tools and your skin.",
-        "translationVi": "Người đã khử trùng đúng cách dụng cụ của mình và làn da của bạn."
+        "translationEn": "who has properly disinfected his tools and your skin.",
+        "translationVi": "người đã khử trùng đúng cách công cụ của mình và làn da của bạn."
     },
     {
-        "text": "Trotzdem tötet das nur 99,9 Prozent aller Bakterien.",
-        "start": 173.06000366210938,
-        "end": 177.13999633789064,
+        "text": "Trotzdem tötet das nur 99,9 % aller Bakterien, einige gelangen in dein Fleisch.",
+        "start": 173.16000366210938,
+        "end": 178.83999633789062,
         "wordTimings": [
             {
                 "word": "Trotzdem",
-                "start": 173.06000366210938,
+                "start": 173.16000366210938,
                 "end": 173.55999755859375
             },
             {
@@ -2232,10 +2203,9 @@
                 "end": 174.9600067138672
             },
             {
-                "word": "Prozent",
+                "word": "%",
                 "start": 174.9600067138672,
-                "end": 175.2600067138672,
-                "estimated": true
+                "end": 175.5399932861328
             },
             {
                 "word": "aller",
@@ -2243,22 +2213,13 @@
                 "end": 176.27999877929688
             },
             {
-                "word": "Bakterien.",
+                "word": "Bakterien,",
                 "start": 176.27999877929688,
-                "end": 177.13999633789064
-            }
-        ],
-        "translationEn": "Still, it only kills 99.9 percent of all bacteria.",
-        "translationVi": "Tuy nhiên, điều đó chỉ giết chết 99,9% tất cả vi khuẩn."
-    },
-    {
-        "text": "Einige gelangen in dein Fleisch.",
-        "start": 177.43999328613282,
-        "end": 179.13999633789064,
-        "wordTimings": [
+                "end": 176.83999633789062
+            },
             {
-                "word": "Einige",
-                "start": 177.43999328613282,
+                "word": "einige",
+                "start": 177.5399932861328,
                 "end": 177.6199951171875
             },
             {
@@ -2279,20 +2240,20 @@
             {
                 "word": "Fleisch.",
                 "start": 178.4600067138672,
-                "end": 179.13999633789064
+                "end": 178.83999633789062
             }
         ],
-        "translationEn": "Some enter your flesh.",
-        "translationVi": "Một số sẽ vào thịt của bạn."
+        "translationEn": "Nevertheless, it only kills 99.9% of all bacteria; some still make it into your meat.",
+        "translationVi": "Tuy nhiên, nó chỉ giết chết 99,9% tất cả vi khuẩn, một số vẫn xâm nhập vào thịt của bạn."
     },
     {
         "text": "Dein Immunsystem findet das gar nicht lustig.",
-        "start": 179.67999877929688,
-        "end": 182.63999633789064,
+        "start": 179.77999877929688,
+        "end": 182.33999633789062,
         "wordTimings": [
             {
                 "word": "Dein",
-                "start": 179.67999877929688,
+                "start": 179.77999877929688,
                 "end": 179.8800048828125
             },
             {
@@ -2323,20 +2284,20 @@
             {
                 "word": "lustig.",
                 "start": 181.89999389648438,
-                "end": 182.63999633789064
+                "end": 182.33999633789062
             }
         ],
         "translationEn": "Your immune system doesn't find that funny at all.",
-        "translationVi": "Hệ thống miễn dịch của bạn không thấy điều đó buồn cười chút nào."
+        "translationVi": "Hệ miễn dịch của bạn không thấy điều đó buồn cười chút nào."
     },
     {
-        "text": "All der Tod und die Zerstörung wecken hunderttausende Makrophagen in deiner Dermis.",
-        "start": 182.81999816894532,
-        "end": 187.9999969482422,
+        "text": "All der Tod und die Zerstörung wecken hunderttausende Makrophagen in deiner Dermis,",
+        "start": 182.9199981689453,
+        "end": 187.6999969482422,
         "wordTimings": [
             {
                 "word": "All",
-                "start": 182.81999816894532,
+                "start": 182.9199981689453,
                 "end": 183.1199951171875
             },
             {
@@ -2390,22 +2351,22 @@
                 "end": 187.3000030517578
             },
             {
-                "word": "Dermis.",
+                "word": "Dermis,",
                 "start": 187.3000030517578,
-                "end": 187.9999969482422
+                "end": 187.6999969482422
             }
         ],
-        "translationEn": "All the death and destruction awaken hundreds of thousands of macrophages in your dermis.",
-        "translationVi": "Tất cả cái chết và sự hủy diệt đánh thức hàng trăm nghìn đại thực bào trong lớp da của bạn."
+        "translationEn": "All the death and destruction awaken hundreds of thousands of macrophages in your dermis,",
+        "translationVi": "Tất cả cái chết và sự hủy diệt đánh thức hàng trăm nghìn đại thực bào trong lớp da của bạn,"
     },
     {
-        "text": "Die in die offenen Wunden strömen, um dich zu verteidigen.",
-        "start": 187.84000244140626,
-        "end": 191.2600067138672,
+        "text": "die in die offenen Wunden strömen, um dich zu verteidigen.",
+        "start": 187.94000244140625,
+        "end": 190.9600067138672,
         "wordTimings": [
             {
-                "word": "Die",
-                "start": 187.84000244140626,
+                "word": "die",
+                "start": 187.94000244140625,
                 "end": 188.05999755859375
             },
             {
@@ -2451,20 +2412,20 @@
             {
                 "word": "verteidigen.",
                 "start": 190.36000061035156,
-                "end": 191.2600067138672
+                "end": 190.9600067138672
             }
         ],
-        "translationEn": "They flow into the open wounds to defend you.",
-        "translationVi": "Chảy vào những vết thương hở để bảo vệ bạn."
+        "translationEn": "that flow into the open wounds to defend you.",
+        "translationVi": "chảy vào những vết thương hở, để bảo vệ bạn."
     },
     {
-        "text": "Sie beginnen sofort, Bakterien zu töten und senden Botenstoffe aus.",
-        "start": 190.8600067138672,
-        "end": 195.6800048828125,
+        "text": "Sie beginnen sofort, Bakterien zu töten und senden Botenstoffe aus,",
+        "start": 190.9600067138672,
+        "end": 195.3800048828125,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 190.8600067138672,
+                "start": 190.9600067138672,
                 "end": 191.60000610351562
             },
             {
@@ -2508,22 +2469,22 @@
                 "end": 195.3000030517578
             },
             {
-                "word": "aus.",
+                "word": "aus,",
                 "start": 195.3000030517578,
-                "end": 195.6800048828125
+                "end": 195.3800048828125
             }
         ],
-        "translationEn": "They start killing bacteria immediately and release signaling substances.",
-        "translationVi": "Chúng bắt đầu ngay lập tức tiêu diệt vi khuẩn và phát ra các chất truyền tín hiệu."
+        "translationEn": "They immediately start killing bacteria and release signaling substances.",
+        "translationVi": "Chúng bắt đầu ngay lập tức giết chết vi khuẩn và phát ra các chất truyền tín hiệu,"
     },
     {
-        "text": "Um Verstärkung sowie das Öffnen der Blutgefäße anzufordern.",
-        "start": 195.53999938964844,
-        "end": 199.47999267578126,
+        "text": "um Verstärkung sowie das Öffnen der Blutgefäße anzufordern,",
+        "start": 195.63999938964844,
+        "end": 199.17999267578125,
         "wordTimings": [
             {
-                "word": "Um",
-                "start": 195.53999938964844,
+                "word": "um",
+                "start": 195.63999938964844,
                 "end": 195.75999450683594
             },
             {
@@ -2557,22 +2518,22 @@
                 "end": 198.22000122070312
             },
             {
-                "word": "anzufordern.",
+                "word": "anzufordern,",
                 "start": 198.22000122070312,
-                "end": 199.47999267578126
+                "end": 199.17999267578125
             }
         ],
-        "translationEn": "To request reinforcement as well as the opening of blood vessels.",
-        "translationVi": "Để yêu cầu tăng cường cũng như mở rộng các mạch máu."
+        "translationEn": "to request reinforcement as well as the opening of blood vessels,",
+        "translationVi": "để yêu cầu tăng cường cũng như mở rộng các mạch máu,"
     },
     {
-        "text": "Damit deine Dermis sich mit Flüssigkeit füllt und anschwillt.",
-        "start": 199.2800048828125,
-        "end": 202.83999328613282,
+        "text": "damit deine Dermis sich mit Flüssigkeit füllt und anschwillt.",
+        "start": 199.3800048828125,
+        "end": 202.5399932861328,
         "wordTimings": [
             {
-                "word": "Damit",
-                "start": 199.2800048828125,
+                "word": "damit",
+                "start": 199.3800048828125,
                 "end": 199.4600067138672
             },
             {
@@ -2613,20 +2574,20 @@
             {
                 "word": "anschwillt.",
                 "start": 201.82000732421875,
-                "end": 202.83999328613282
+                "end": 202.5399932861328
             }
         ],
-        "translationEn": "So that your dermis fills with fluid and swells.",
-        "translationVi": "Để da của bạn được cung cấp độ ẩm và sưng lên."
+        "translationEn": "so that your dermis fills with fluid and swells.",
+        "translationVi": "để da của bạn được cung cấp độ ẩm và sưng lên."
     },
     {
-        "text": "Aber schlimmer als die Wunden und die paar Eindringlinge sind die Chemikalien.",
-        "start": 203.00000610351563,
-        "end": 207.21999816894532,
+        "text": "Aber schlimmer als die Wunden und die paar Eindringlinge sind die Chemikalien,",
+        "start": 203.10000610351562,
+        "end": 206.9199981689453,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 203.00000610351563,
+                "start": 203.10000610351562,
                 "end": 203.52000427246094
             },
             {
@@ -2680,22 +2641,22 @@
                 "end": 206.1999969482422
             },
             {
-                "word": "Chemikalien.",
+                "word": "Chemikalien,",
                 "start": 206.1999969482422,
-                "end": 207.21999816894532
+                "end": 206.9199981689453
             }
         ],
-        "translationEn": "But worse than the wounds and the few intruders are the chemicals.",
-        "translationVi": "Nhưng tồi tệ hơn cả những vết thương và vài kẻ xâm nhập là các hóa chất."
+        "translationEn": "But worse than the wounds and the few intruders are the chemicals,",
+        "translationVi": "Nhưng tệ hơn cả những vết thương và vài kẻ xâm nhập là các hóa chất,"
     },
     {
-        "text": "Die dein Gewebe fluten.",
-        "start": 207.03999938964844,
-        "end": 209.13999633789064,
+        "text": "die dein Gewebe fluten.",
+        "start": 207.13999938964844,
+        "end": 208.83999633789062,
         "wordTimings": [
             {
-                "word": "Die",
-                "start": 207.03999938964844,
+                "word": "die",
+                "start": 207.13999938964844,
                 "end": 207.13999938964844
             },
             {
@@ -2711,20 +2672,20 @@
             {
                 "word": "fluten.",
                 "start": 207.86000061035156,
-                "end": 209.13999633789064
+                "end": 208.83999633789062
             }
         ],
-        "translationEn": "The floods your tissue.",
-        "translationVi": "Làm cho mô của bạn tràn ngập."
+        "translationEn": "that flood your tissue.",
+        "translationVi": "các mô của bạn bị ngập."
     },
     {
         "text": "Tattoo-Tinte kann hunderte Stoffe enthalten, einige möglicherweise giftig oder krebserregend.",
-        "start": 208.87999572753907,
-        "end": 214.7600067138672,
+        "start": 208.97999572753906,
+        "end": 214.4600067138672,
         "wordTimings": [
             {
                 "word": "Tattoo-Tinte",
-                "start": 208.87999572753907,
+                "start": 208.97999572753906,
                 "end": 209.32000732421875
             },
             {
@@ -2770,7 +2731,7 @@
             {
                 "word": "krebserregend.",
                 "start": 213.6199951171875,
-                "end": 214.7600067138672
+                "end": 214.4600067138672
             }
         ],
         "translationEn": "Tattoo ink can contain hundreds of substances, some of which may be toxic or carcinogenic.",
@@ -2778,12 +2739,12 @@
     },
     {
         "text": "Die meisten bestehen aus in destilliertem Wasser gelösten Stoffen wie Blei, Nickel oder Chrom.",
-        "start": 214.72000732421876,
-        "end": 220.90000610351564,
+        "start": 214.82000732421875,
+        "end": 220.60000610351562,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 214.72000732421876,
+                "start": 214.82000732421875,
                 "end": 214.94000244140625
             },
             {
@@ -2824,12 +2785,11 @@
             {
                 "word": "Stoffen",
                 "start": 217.83999633789062,
-                "end": 218.13999633789064,
-                "estimated": true
+                "end": 218.08999633789062
             },
             {
                 "word": "wie",
-                "start": 218.60000610351562,
+                "start": 218.6199951171875,
                 "end": 219
             },
             {
@@ -2850,20 +2810,20 @@
             {
                 "word": "Chrom.",
                 "start": 220.24000549316406,
-                "end": 220.90000610351564
+                "end": 220.60000610351562
             }
         ],
         "translationEn": "Most consist of substances dissolved in distilled water, such as lead, nickel, or chromium.",
-        "translationVi": "Hầu hết chúng được tạo thành từ các chất hòa tan trong nước cất như chì, niken hoặc crôm."
+        "translationVi": "Hầu hết chúng được tạo thành từ các chất hòa tan trong nước cất như chì, niken hoặc crom."
     },
     {
         "text": "Das Schlachtfeld ist jetzt ein Chaos aus toten Zellen, panischen Bakterien, Blut und Körperflüssigkeiten.",
-        "start": 221.22000732421876,
-        "end": 228.52000122070314,
+        "start": 221.32000732421875,
+        "end": 228.22000122070312,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 221.22000732421876,
+                "start": 221.32000732421875,
                 "end": 221.39999389648438
             },
             {
@@ -2929,20 +2889,20 @@
             {
                 "word": "Körperflüssigkeiten.",
                 "start": 227.1199951171875,
-                "end": 228.52000122070314
+                "end": 228.22000122070312
             }
         ],
         "translationEn": "The battlefield is now a chaos of dead cells, panicked bacteria, blood, and bodily fluids.",
-        "translationVi": "Chiến trường giờ đây là một hỗn độn của các tế bào chết, vi khuẩn hoảng loạn, máu và dịch cơ thể."
+        "translationVi": "Chiến trường bây giờ là một hỗn độn của các tế bào chết, vi khuẩn hoảng loạn, máu và dịch cơ thể."
     },
     {
-        "text": "Blutplättchen, die versuchen, Wunden zu verschließen.",
-        "start": 228.67999877929688,
-        "end": 231.52000122070314,
+        "text": "Blutplättchen, die versuchen, Wunden zu verschließen, immer mehr neuen Immunzellen und der Tintenflut.",
+        "start": 228.77999877929688,
+        "end": 234.5,
         "wordTimings": [
             {
                 "word": "Blutplättchen,",
-                "start": 228.67999877929688,
+                "start": 228.77999877929688,
                 "end": 229.4199981689453
             },
             {
@@ -2966,22 +2926,13 @@
                 "end": 230.75999450683594
             },
             {
-                "word": "verschließen.",
+                "word": "verschließen,",
                 "start": 230.75999450683594,
-                "end": 231.52000122070314
-            }
-        ],
-        "translationEn": "Platelets that try to seal wounds.",
-        "translationVi": "Tiểu cầu, cố gắng đóng vết thương."
-    },
-    {
-        "text": "Immer mehr neuen Immunzellen und der Tintenflut.",
-        "start": 231.43999328613282,
-        "end": 234.8,
-        "wordTimings": [
+                "end": 231.22000122070312
+            },
             {
-                "word": "Immer",
-                "start": 231.43999328613282,
+                "word": "immer",
+                "start": 231.5399932861328,
                 "end": 231.6999969482422
             },
             {
@@ -3002,30 +2953,30 @@
             {
                 "word": "und",
                 "start": 233.02000427246094,
-                "end": 233.4199981689453
+                "end": 233.39999389648438
             },
             {
                 "word": "der",
-                "start": 233.4199981689453,
+                "start": 233.39999389648438,
                 "end": 233.74000549316406
             },
             {
                 "word": "Tintenflut.",
                 "start": 233.74000549316406,
-                "end": 234.8
+                "end": 234.5
             }
         ],
-        "translationEn": "More and more new immune cells and the flood of ink.",
-        "translationVi": "Ngày càng nhiều tế bào miễn dịch mới và cơn lũ mực."
+        "translationEn": "Platelets that try to close wounds, increasingly new immune cells and the flood of ink.",
+        "translationVi": "Tiểu cầu, cố gắng đóng vết thương, ngày càng nhiều tế bào miễn dịch mới và dòng mực."
     },
     {
         "text": "Für Zellen sind Tintenpartikel riesig.",
-        "start": 234.87999572753907,
-        "end": 237.71999816894532,
+        "start": 234.97999572753906,
+        "end": 237.4199981689453,
         "wordTimings": [
             {
                 "word": "Für",
-                "start": 234.87999572753907,
+                "start": 234.97999572753906,
                 "end": 235.13999938964844
             },
             {
@@ -3046,20 +2997,20 @@
             {
                 "word": "riesig.",
                 "start": 236.8800048828125,
-                "end": 237.71999816894532
+                "end": 237.4199981689453
             }
         ],
         "translationEn": "For cells, ink particles are huge.",
-        "translationVi": "Đối với tế bào, các hạt mực là khổng lồ."
+        "translationVi": "Đối với tế bào, các hạt mực là rất lớn."
     },
     {
-        "text": "Wärst du so groß wie sie, wären die Partikel irgendwo zwischen einem großen Hund und einem kleinen Bürogebäude.",
-        "start": 238.20000305175782,
-        "end": 244.4600036621094,
+        "text": "Wärst du so groß wie sie, wären die Partikel irgendwo zwischen einem großen Hund",
+        "start": 238.3000030517578,
+        "end": 242.3800048828125,
         "wordTimings": [
             {
                 "word": "Wärst",
-                "start": 238.20000305175782,
+                "start": 238.3000030517578,
                 "end": 238.3800048828125
             },
             {
@@ -3126,7 +3077,16 @@
                 "word": "Hund",
                 "start": 242.1999969482422,
                 "end": 242.3800048828125
-            },
+            }
+        ],
+        "translationEn": "If you were as big as her, the particles would be somewhere between a large dog.",
+        "translationVi": "Nếu bạn lớn như cô ấy, các hạt sẽ ở đâu đó giữa một con chó lớn."
+    },
+    {
+        "text": "und einem kleinen Bürogebäude.",
+        "start": 242.3800048828125,
+        "end": 244.16000366210938,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 242.3800048828125,
@@ -3145,20 +3105,20 @@
             {
                 "word": "Bürogebäude.",
                 "start": 243.44000244140625,
-                "end": 244.4600036621094
+                "end": 244.16000366210938
             }
         ],
-        "translationEn": "If you were as big as she is, the particles would be somewhere between a large dog and a small office building.",
-        "translationVi": "Nếu bạn cao bằng cô ấy, các hạt sẽ ở đâu đó giữa một con chó lớn và một tòa nhà văn phòng nhỏ."
+        "translationEn": "and a small office building.",
+        "translationVi": "và một tòa nhà văn phòng nhỏ."
     },
     {
-        "text": "Dein Immunsystem hat vor allem einen Job: Identifizieren, was nicht du bist und es totschlagen.",
-        "start": 244.5999969482422,
-        "end": 250.97999267578126,
+        "text": "Dein Immunsystem hat vor allem einen Job: Identifizieren, was nicht du bist,",
+        "start": 244.6999969482422,
+        "end": 249.4199981689453,
         "wordTimings": [
             {
                 "word": "Dein",
-                "start": 244.5999969482422,
+                "start": 244.6999969482422,
                 "end": 244.9199981689453
             },
             {
@@ -3212,10 +3172,19 @@
                 "end": 249.1999969482422
             },
             {
-                "word": "bist",
+                "word": "bist,",
                 "start": 249.1999969482422,
                 "end": 249.4199981689453
-            },
+            }
+        ],
+        "translationEn": "Your immune system has one main job: to identify what is not you.",
+        "translationVi": "Hệ miễn dịch của bạn chủ yếu có một nhiệm vụ: Xác định những gì không phải là bạn,"
+    },
+    {
+        "text": "und es totschlagen.",
+        "start": 249.6199951171875,
+        "end": 250.67999267578125,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 249.6199951171875,
@@ -3229,20 +3198,20 @@
             {
                 "word": "totschlagen.",
                 "start": 250.13999938964844,
-                "end": 250.97999267578126
+                "end": 250.67999267578125
             }
         ],
-        "translationEn": "Your immune system has one main job: to identify what is not you and to destroy it.",
-        "translationVi": "Hệ miễn dịch của bạn có một nhiệm vụ chính: nhận diện những gì không phải là bạn và tiêu diệt chúng."
+        "translationEn": "and kill it.",
+        "translationVi": "và đánh chết nó."
     },
     {
         "text": "Verzweifelt versuchen die Makrophagen genau das.",
-        "start": 251.22000732421876,
-        "end": 253.9999969482422,
+        "start": 251.32000732421875,
+        "end": 253.6999969482422,
         "wordTimings": [
             {
                 "word": "Verzweifelt",
-                "start": 251.22000732421876,
+                "start": 251.32000732421875,
                 "end": 251.83999633789062
             },
             {
@@ -3268,20 +3237,20 @@
             {
                 "word": "das.",
                 "start": 253.44000244140625,
-                "end": 253.9999969482422
+                "end": 253.6999969482422
             }
         ],
         "translationEn": "Desperately, the macrophages are trying to do just that.",
-        "translationVi": "Các đại thực bào đang tuyệt vọng cố gắng làm điều đó."
+        "translationVi": "Các đại thực bào đang cố gắng tuyệt vọng để làm điều đó."
     },
     {
-        "text": "Wie winzige Oktopusse strecken sie armähnliche Strukturen aus.",
-        "start": 254.20000305175782,
-        "end": 258.87998657226564,
+        "text": "Wie winzige Oktopusse strecken sie armähnliche Strukturen aus",
+        "start": 254.3000030517578,
+        "end": 258.5799865722656,
         "wordTimings": [
             {
                 "word": "Wie",
-                "start": 254.20000305175782,
+                "start": 254.3000030517578,
                 "end": 254.4199981689453
             },
             {
@@ -3315,22 +3284,22 @@
                 "end": 258.1600036621094
             },
             {
-                "word": "aus.",
+                "word": "aus",
                 "start": 258.1600036621094,
-                "end": 258.87998657226564
+                "end": 258.5799865722656
             }
         ],
         "translationEn": "Like tiny octopuses, they extend arm-like structures.",
-        "translationVi": "Chúng duỗi ra những cấu trúc giống như cánh tay như những con bạch tuộc nhỏ."
+        "translationVi": "Chúng duỗi ra những cấu trúc giống như cánh tay như những con bạch tuộc nhỏ bé."
     },
     {
-        "text": "Und beginnen, die Tintenpartikel in sich hineinzuziehen.",
-        "start": 258.4799865722656,
-        "end": 261.78001098632814,
+        "text": "und beginnen, die Tintenpartikel in sich hineinzuziehen.",
+        "start": 258.5799865722656,
+        "end": 261.4800109863281,
         "wordTimings": [
             {
-                "word": "Und",
-                "start": 258.4799865722656,
+                "word": "und",
+                "start": 258.5799865722656,
                 "end": 258.8800048828125
             },
             {
@@ -3341,11 +3310,11 @@
             {
                 "word": "die",
                 "start": 259.4200134277344,
-                "end": 259.5400085449219
+                "end": 259.55999755859375
             },
             {
                 "word": "Tintenpartikel",
-                "start": 259.5400085449219,
+                "start": 259.55999755859375,
                 "end": 260.29998779296875
             },
             {
@@ -3361,20 +3330,20 @@
             {
                 "word": "hineinzuziehen.",
                 "start": 260.67999267578125,
-                "end": 261.78001098632814
+                "end": 261.4800109863281
             }
         ],
-        "translationEn": "And begin to draw the ink particles into themselves.",
-        "translationVi": "Và bắt đầu hút các hạt mực vào bên trong."
+        "translationEn": "and begin to draw the ink particles into themselves.",
+        "translationVi": "và bắt đầu hút các hạt mực vào bên trong."
     },
     {
         "text": "Normalerweise überschüttet eine Makrophage den gefressenen Feind mit Säure, um ihn aufzulösen.",
-        "start": 261.9,
-        "end": 267.8199890136719,
+        "start": 262,
+        "end": 267.5199890136719,
         "wordTimings": [
             {
                 "word": "Normalerweise",
-                "start": 261.9,
+                "start": 262,
                 "end": 262.5199890136719
             },
             {
@@ -3430,20 +3399,20 @@
             {
                 "word": "aufzulösen.",
                 "start": 266.4200134277344,
-                "end": 267.8199890136719
+                "end": 267.5199890136719
             }
         ],
-        "translationEn": "Normally, a macrophage douses the ingested enemy with acid to dissolve it.",
-        "translationVi": "Thông thường, một đại thực bào sẽ tấn công kẻ thù bị nuốt chửng bằng axit để phân hủy nó."
+        "translationEn": "Normally, a macrophage overwhelms the consumed enemy with acid to dissolve it.",
+        "translationVi": "Thông thường, một đại thực bào sẽ tấn công kẻ thù đã bị nuốt chửng bằng axit để tiêu diệt nó."
     },
     {
         "text": "Bei der Tinte funktioniert das aber nicht, egal wie oft sie es versuchen.",
-        "start": 267.5400146484375,
-        "end": 271.52000122070314,
+        "start": 267.6400146484375,
+        "end": 271.2200012207031,
         "wordTimings": [
             {
                 "word": "Bei",
-                "start": 267.5400146484375,
+                "start": 267.6400146484375,
                 "end": 267.67999267578125
             },
             {
@@ -3504,20 +3473,20 @@
             {
                 "word": "versuchen.",
                 "start": 270.8399963378906,
-                "end": 271.52000122070314
+                "end": 271.2200012207031
             }
         ],
         "translationEn": "But that doesn't work with the ink, no matter how many times they try.",
-        "translationVi": "Với mực thì điều đó không hoạt động, bất kể họ thử bao nhiêu lần."
+        "translationVi": "Với mực thì điều đó không hoạt động, dù họ có thử bao nhiêu lần đi chăng nữa."
     },
     {
         "text": "Und das sind nur die Teilchen, die klein genug sind, um gefressen zu werden.",
-        "start": 271.7399963378906,
-        "end": 275.87998657226564,
+        "start": 271.8399963378906,
+        "end": 275.5799865722656,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 271.7399963378906,
+                "start": 271.8399963378906,
                 "end": 272.0400085449219
             },
             {
@@ -3583,20 +3552,20 @@
             {
                 "word": "werden.",
                 "start": 275.3800048828125,
-                "end": 275.87998657226564
+                "end": 275.5799865722656
             }
         ],
-        "translationEn": "And these are only the particles that are small enough to be eaten.",
-        "translationVi": "Và đó chỉ là những hạt nhỏ đủ để bị ăn."
+        "translationEn": "And those are only the particles that are small enough to be eaten.",
+        "translationVi": "Và đó chỉ là những hạt đủ nhỏ để bị ăn."
     },
     {
-        "text": "Größere Teile sind mittlerweile von tausenden strukturellen Hautzellen und Makrophagen umzingelt.",
-        "start": 275.4799865722656,
-        "end": 281.8,
+        "text": "Größere Teile sind mittlerweile von tausenden strukturellen Hautzellen und Makrophagen umzingelt,",
+        "start": 275.5799865722656,
+        "end": 281.5,
         "wordTimings": [
             {
                 "word": "Größere",
-                "start": 275.4799865722656,
+                "start": 275.5799865722656,
                 "end": 276.44000244140625
             },
             {
@@ -3645,22 +3614,22 @@
                 "end": 280.9599914550781
             },
             {
-                "word": "umzingelt.",
+                "word": "umzingelt,",
                 "start": 280.9599914550781,
-                "end": 281.8
+                "end": 281.5
             }
         ],
-        "translationEn": "Larger parts are now surrounded by thousands of structural skin cells and macrophages.",
-        "translationVi": "Các phần lớn hơn hiện đã bị hàng ngàn tế bào da cấu trúc và đại thực bào bao vây."
+        "translationEn": "Larger areas are now surrounded by thousands of structural skin cells and macrophages,",
+        "translationVi": "Các phần lớn hơn hiện đã bị bao vây bởi hàng ngàn tế bào da cấu trúc và đại thực bào,"
     },
     {
-        "text": "Die an ihnen knabbern, sie mit Säure und Kampfstoffen überschütten.",
-        "start": 281.7800048828125,
-        "end": 285.7200134277344,
+        "text": "die an ihnen knabbern, sie mit Säure und Kampfstoffen überschütten,",
+        "start": 281.8800048828125,
+        "end": 285.4200134277344,
         "wordTimings": [
             {
-                "word": "Die",
-                "start": 281.7800048828125,
+                "word": "die",
+                "start": 281.8800048828125,
                 "end": 281.9800109863281
             },
             {
@@ -3704,22 +3673,22 @@
                 "end": 285.0400085449219
             },
             {
-                "word": "überschütten.",
+                "word": "überschütten,",
                 "start": 285.0400085449219,
-                "end": 285.7200134277344
+                "end": 285.4200134277344
             }
         ],
-        "translationEn": "They nibble on them, dousing them with acid and combat substances.",
-        "translationVi": "Chúng gặm nhấm chúng, đổ axit và chất chiến đấu lên chúng."
+        "translationEn": "that gnaw at them, douse them with acid and combat substances,",
+        "translationVi": "chúng gặm nhấm chúng, dội acid và chất chiến đấu lên chúng,"
     },
     {
-        "text": "Mit dem Ziel, sie zu zerstören.",
-        "start": 285.6999877929687,
-        "end": 287.8400085449219,
+        "text": "mit dem Ziel, sie zu zerstören.",
+        "start": 285.79998779296875,
+        "end": 287.5400085449219,
         "wordTimings": [
             {
-                "word": "Mit",
-                "start": 285.6999877929687,
+                "word": "mit",
+                "start": 285.79998779296875,
                 "end": 285.94000244140625
             },
             {
@@ -3745,20 +3714,20 @@
             {
                 "word": "zerstören.",
                 "start": 287.239990234375,
-                "end": 287.8400085449219
+                "end": 287.5400085449219
             }
         ],
-        "translationEn": "With the aim of destroying them.",
-        "translationVi": "Với mục tiêu tiêu diệt chúng."
+        "translationEn": "with the aim of destroying them.",
+        "translationVi": "với mục tiêu tiêu diệt chúng."
     },
     {
-        "text": "Aber sie bewegen sich kein bisschen.",
-        "start": 287.9799865722656,
-        "end": 289.97999267578126,
+        "text": "Aber sie bewegen sich kein bisschen. Nichts funktioniert.",
+        "start": 288.0799865722656,
+        "end": 291.29998779296875,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 287.9799865722656,
+                "start": 288.0799865722656,
                 "end": 288.29998779296875
             },
             {
@@ -3784,39 +3753,30 @@
             {
                 "word": "bisschen.",
                 "start": 289.3399963378906,
-                "end": 289.97999267578126
-            }
-        ],
-        "translationEn": "But they don't move an inch.",
-        "translationVi": "Nhưng chúng không di chuyển một chút nào."
-    },
-    {
-        "text": "Nichts funktioniert.",
-        "start": 290.29999389648435,
-        "end": 291.59998779296876,
-        "wordTimings": [
+                "end": 289.67999267578125
+            },
             {
                 "word": "Nichts",
-                "start": 290.29999389648435,
+                "start": 290.3999938964844,
                 "end": 290.760009765625
             },
             {
                 "word": "funktioniert.",
                 "start": 290.760009765625,
-                "end": 291.59998779296876
+                "end": 291.29998779296875
             }
         ],
-        "translationEn": "Nothing works.",
-        "translationVi": "Không có gì hoạt động."
+        "translationEn": "But they don't move an inch. Nothing works.",
+        "translationVi": "Nhưng chúng không di chuyển chút nào. Không có gì hoạt động."
     },
     {
         "text": "Schließlich muss dein Immunsystem einsehen, es kann nicht gewinnen.",
-        "start": 292.0199951171875,
-        "end": 296.3400085449219,
+        "start": 292.1199951171875,
+        "end": 296.0400085449219,
         "wordTimings": [
             {
                 "word": "Schließlich",
-                "start": 292.0199951171875,
+                "start": 292.1199951171875,
                 "end": 292.5
             },
             {
@@ -3857,7 +3817,7 @@
             {
                 "word": "gewinnen.",
                 "start": 295.7200012207031,
-                "end": 296.3400085449219
+                "end": 296.0400085449219
             }
         ],
         "translationEn": "Ultimately, your immune system must realize it cannot win.",
@@ -3865,12 +3825,12 @@
     },
     {
         "text": "Also tut es das Nächstbeste: nicht verlieren.",
-        "start": 296.4599975585937,
-        "end": 299.47999267578126,
+        "start": 296.55999755859375,
+        "end": 299.17999267578125,
         "wordTimings": [
             {
                 "word": "Also",
-                "start": 296.4599975585937,
+                "start": 296.55999755859375,
                 "end": 296.8999938964844
             },
             {
@@ -3901,7 +3861,7 @@
             {
                 "word": "verlieren.",
                 "start": 298.70001220703125,
-                "end": 299.47999267578126
+                "end": 299.17999267578125
             }
         ],
         "translationEn": "So it does the next best thing: not to lose.",
@@ -3909,12 +3869,12 @@
     },
     {
         "text": "Deine Zellen wissen nicht, wie gefährlich diese Stoffe sind.",
-        "start": 299.8400024414062,
-        "end": 302.8400085449219,
+        "start": 299.94000244140625,
+        "end": 302.5400085449219,
         "wordTimings": [
             {
                 "word": "Deine",
-                "start": 299.8400024414062,
+                "start": 299.94000244140625,
                 "end": 300.1199951171875
             },
             {
@@ -3955,20 +3915,20 @@
             {
                 "word": "sind.",
                 "start": 302.3999938964844,
-                "end": 302.8400085449219
+                "end": 302.5400085449219
             }
         ],
         "translationEn": "Your cells do not know how dangerous these substances are.",
-        "translationVi": "Các tế bào của bạn không biết những chất này nguy hiểm đến mức nào."
+        "translationVi": "Các tế bào của bạn không biết những chất này nguy hiểm như thế nào."
     },
     {
         "text": "Aber sie können wenigstens verhindern, dass sie sich ausbreiten.",
-        "start": 302.44000854492185,
-        "end": 306.1800048828125,
+        "start": 302.5400085449219,
+        "end": 305.8800048828125,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 302.44000854492185,
+                "start": 302.5400085449219,
                 "end": 303.1000061035156
             },
             {
@@ -4009,7 +3969,7 @@
             {
                 "word": "ausbreiten.",
                 "start": 305.260009765625,
-                "end": 306.1800048828125
+                "end": 305.8800048828125
             }
         ],
         "translationEn": "But they can at least prevent them from spreading.",
@@ -4017,12 +3977,12 @@
     },
     {
         "text": "Also bleiben sie an Ort und Stelle.",
-        "start": 306.5400146484375,
-        "end": 308.52000122070314,
+        "start": 306.6400146484375,
+        "end": 308.2200012207031,
         "wordTimings": [
             {
                 "word": "Also",
-                "start": 306.5400146484375,
+                "start": 306.6400146484375,
                 "end": 306.8599853515625
             },
             {
@@ -4053,20 +4013,20 @@
             {
                 "word": "Stelle.",
                 "start": 308.0400085449219,
-                "end": 308.52000122070314
+                "end": 308.2200012207031
             }
         ],
         "translationEn": "So stay in place.",
-        "translationVi": "Vì vậy, họ ở lại chỗ đó."
+        "translationVi": "Vậy nên họ ở lại chỗ đó."
     },
     {
-        "text": "Sie saugen so viele Teilchen ein, wie sie können.",
-        "start": 308.82001342773435,
-        "end": 311.560009765625,
+        "text": "Sie saugen so viele Teilchen ein, wie sie können,",
+        "start": 308.9200134277344,
+        "end": 311.260009765625,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 308.82001342773435,
+                "start": 308.9200134277344,
                 "end": 308.9200134277344
             },
             {
@@ -4105,22 +4065,22 @@
                 "end": 310.9599914550781
             },
             {
-                "word": "können.",
+                "word": "können,",
                 "start": 310.9599914550781,
-                "end": 311.560009765625
+                "end": 311.260009765625
             }
         ],
-        "translationEn": "They suck in as many particles as they can.",
-        "translationVi": "Chúng hút vào nhiều hạt càng nhiều càng tốt."
+        "translationEn": "They suck in as many particles as they can,",
+        "translationVi": "Chúng hút vào nhiều hạt như chúng có thể,"
     },
     {
-        "text": "Und umzingeln die größeren, um sie in dem einzigen Gefängnis festzuhalten, das sie bauen können: sich selbst.",
-        "start": 311.160009765625,
-        "end": 318.09998779296876,
+        "text": "und umzingeln die größeren, um sie in dem einzigen Gefängnis festzuhalten,",
+        "start": 311.260009765625,
+        "end": 315.6400146484375,
         "wordTimings": [
             {
-                "word": "Und",
-                "start": 311.160009765625,
+                "word": "und",
+                "start": 311.260009765625,
                 "end": 311.6199951171875
             },
             {
@@ -4172,7 +4132,16 @@
                 "word": "festzuhalten,",
                 "start": 314.8999938964844,
                 "end": 315.6400146484375
-            },
+            }
+        ],
+        "translationEn": "and surround the larger ones to keep them in the only prison,",
+        "translationVi": "và bao vây những con lớn hơn, để giữ chúng trong nhà tù duy nhất,"
+    },
+    {
+        "text": "das sie bauen können: sich selbst.",
+        "start": 315.7200012207031,
+        "end": 317.79998779296875,
+        "wordTimings": [
             {
                 "word": "das",
                 "start": 315.7200012207031,
@@ -4201,20 +4170,20 @@
             {
                 "word": "selbst.",
                 "start": 317.3599853515625,
-                "end": 318.09998779296876
+                "end": 317.79998779296875
             }
         ],
-        "translationEn": "And they surround the larger ones to keep them in the only prison they can build: themselves.",
-        "translationVi": "Và bao vây những người lớn hơn, để giữ họ trong nhà tù duy nhất mà họ có thể xây dựng: chính bản thân họ."
+        "translationEn": "that they can build: themselves.",
+        "translationVi": "họ có thể xây dựng: chính mình."
     },
     {
-        "text": "Stück für Stück gelangt die Tinte aus tausenden kleinen Wunden in Millionen Immunzellen.",
-        "start": 318.5400146484375,
-        "end": 323.75999145507814,
+        "text": "Stück für Stück gelangt die Tinte aus tausenden kleinen Wunden",
+        "start": 318.6400146484375,
+        "end": 321.8599853515625,
         "wordTimings": [
             {
                 "word": "Stück",
-                "start": 318.5400146484375,
+                "start": 318.6400146484375,
                 "end": 318.7799987792969
             },
             {
@@ -4261,7 +4230,16 @@
                 "word": "Wunden",
                 "start": 321.6400146484375,
                 "end": 321.8599853515625
-            },
+            }
+        ],
+        "translationEn": "Bit by bit, the ink seeps from thousands of small wounds.",
+        "translationVi": "Từng chút một, mực chảy ra từ hàng ngàn vết thương nhỏ."
+    },
+    {
+        "text": "in Millionen Immunzellen, die sie für immer festhalten.",
+        "start": 321.8599853515625,
+        "end": 325.1600036621094,
+        "wordTimings": [
             {
                 "word": "in",
                 "start": 321.8599853515625,
@@ -4273,22 +4251,13 @@
                 "end": 322.739990234375
             },
             {
-                "word": "Immunzellen.",
+                "word": "Immunzellen,",
                 "start": 322.739990234375,
-                "end": 323.75999145507814
-            }
-        ],
-        "translationEn": "Bit by bit, the ink seeps from thousands of small wounds into millions of immune cells.",
-        "translationVi": "Từng chút một, mực chảy ra từ hàng ngàn vết thương nhỏ vào hàng triệu tế bào miễn dịch."
-    },
-    {
-        "text": "Die sie für immer festhalten.",
-        "start": 323.660009765625,
-        "end": 325.4600036621094,
-        "wordTimings": [
+                "end": 323.4599914550781
+            },
             {
-                "word": "Die",
-                "start": 323.660009765625,
+                "word": "die",
+                "start": 323.760009765625,
                 "end": 323.9200134277344
             },
             {
@@ -4299,30 +4268,30 @@
             {
                 "word": "für",
                 "start": 324.1000061035156,
-                "end": 324.4200134277344
+                "end": 324.44000244140625
             },
             {
                 "word": "immer",
-                "start": 324.4200134277344,
+                "start": 324.44000244140625,
                 "end": 324.5799865722656
             },
             {
                 "word": "festhalten.",
                 "start": 324.5799865722656,
-                "end": 325.4600036621094
+                "end": 325.1600036621094
             }
         ],
-        "translationEn": "To hold them forever.",
-        "translationVi": "Những điều mà họ giữ mãi mãi."
+        "translationEn": "in millions of immune cells that hold them forever.",
+        "translationVi": "trong hàng triệu tế bào miễn dịch, mà chúng giữ lại mãi mãi."
     },
     {
         "text": "Von außen merkst du das nicht.",
-        "start": 325.82001342773435,
-        "end": 327.8199890136719,
+        "start": 325.9200134277344,
+        "end": 327.5199890136719,
         "wordTimings": [
             {
                 "word": "Von",
-                "start": 325.82001342773435,
+                "start": 325.9200134277344,
                 "end": 326.20001220703125
             },
             {
@@ -4348,20 +4317,20 @@
             {
                 "word": "nicht.",
                 "start": 327.260009765625,
-                "end": 327.8199890136719
+                "end": 327.5199890136719
             }
         ],
-        "translationEn": "You don't notice it from the outside.",
+        "translationEn": "You don't notice that from the outside.",
         "translationVi": "Từ bên ngoài bạn không nhận ra điều đó."
     },
     {
         "text": "Dein neues Tattoo ist frisch gestochen, scharf und die Farben leuchten.",
-        "start": 327.8599914550781,
-        "end": 331.8,
+        "start": 327.9599914550781,
+        "end": 331.5,
         "wordTimings": [
             {
                 "word": "Dein",
-                "start": 327.8599914550781,
+                "start": 327.9599914550781,
                 "end": 328.0400085449219
             },
             {
@@ -4412,20 +4381,20 @@
             {
                 "word": "leuchten.",
                 "start": 331.05999755859375,
-                "end": 331.8
+                "end": 331.5
             }
         ],
-        "translationEn": "Your new tattoo is freshly done, sharp, and the colors are vibrant.",
-        "translationVi": "Hình xăm mới của bạn vừa được xăm xong, sắc nét và màu sắc rực rỡ."
+        "translationEn": "Your new tattoo is freshly inked, sharp, and the colors are vibrant.",
+        "translationVi": "Hình xăm mới của bạn vừa được xăm, sắc nét và màu sắc rực rỡ."
     },
     {
         "text": "Deine Haut schmerzt, ist gereizt und geschwollen.",
-        "start": 331.94000854492185,
-        "end": 334.90000610351564,
+        "start": 332.0400085449219,
+        "end": 334.6000061035156,
         "wordTimings": [
             {
                 "word": "Deine",
-                "start": 331.94000854492185,
+                "start": 332.0400085449219,
                 "end": 332.0400085449219
             },
             {
@@ -4456,20 +4425,20 @@
             {
                 "word": "geschwollen.",
                 "start": 334.1199951171875,
-                "end": 334.90000610351564
+                "end": 334.6000061035156
             }
         ],
         "translationEn": "Your skin hurts, is irritated, and swollen.",
         "translationVi": "Dáng da của bạn đau, bị kích thích và sưng lên."
     },
     {
-        "text": "Aber Wunden heilen, die winzigen Löcher schließen sich.",
-        "start": 335.0799926757812,
-        "end": 338.3400085449219,
+        "text": "Aber Wunden heilen, die winzigen Löcher schließen sich, tote Zellen werden ersetzt.",
+        "start": 335.17999267578125,
+        "end": 339.7200012207031,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 335.0799926757812,
+                "start": 335.17999267578125,
                 "end": 335.5400085449219
             },
             {
@@ -4503,22 +4472,13 @@
                 "end": 337.70001220703125
             },
             {
-                "word": "sich.",
+                "word": "sich,",
                 "start": 337.70001220703125,
-                "end": 338.3400085449219
-            }
-        ],
-        "translationEn": "But wounds heal, the tiny holes close up.",
-        "translationVi": "Nhưng vết thương sẽ lành, những lỗ nhỏ sẽ khép lại."
-    },
-    {
-        "text": "Tote Zellen werden ersetzt.",
-        "start": 338.3400024414062,
-        "end": 340.02000122070314,
-        "wordTimings": [
+                "end": 338.0400085449219
+            },
             {
-                "word": "Tote",
-                "start": 338.3400024414062,
+                "word": "tote",
+                "start": 338.44000244140625,
                 "end": 338.5199890136719
             },
             {
@@ -4534,20 +4494,20 @@
             {
                 "word": "ersetzt.",
                 "start": 339.2200012207031,
-                "end": 340.02000122070314
+                "end": 339.7200012207031
             }
         ],
-        "translationEn": "Dead cells are being replaced.",
-        "translationVi": "Các tế bào chết sẽ được thay thế."
+        "translationEn": "But wounds heal, the tiny holes close up, dead cells are replaced.",
+        "translationVi": "Nhưng vết thương sẽ lành, những lỗ nhỏ sẽ khép lại, các tế bào chết sẽ được thay thế."
     },
     {
-        "text": "Das Förderband des Todes macht seinen Job.",
-        "start": 340.1000122070312,
-        "end": 342.78001098632814,
+        "text": "Das Förderband des Todes macht seinen Job, wirft die toten farbigen Zellen ab",
+        "start": 340.20001220703125,
+        "end": 345.20001220703125,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 340.1000122070312,
+                "start": 340.20001220703125,
                 "end": 340.4800109863281
             },
             {
@@ -4576,24 +4536,9 @@
                 "end": 342.20001220703125
             },
             {
-                "word": "Job.",
+                "word": "Job,",
                 "start": 342.20001220703125,
-                "end": 342.78001098632814
-            }
-        ],
-        "translationEn": "The conveyor belt of death is doing its job.",
-        "translationVi": "Băng chuyền của cái chết đang thực hiện công việc của nó."
-    },
-    {
-        "text": "Es wirft die toten, farbigen Zellen ab und ersetzt sie mit frischen, sauberen.",
-        "start": 0,
-        "end": 348.12000732421876,
-        "wordTimings": [
-            {
-                "word": "Es",
-                "start": 0,
-                "end": 0.3,
-                "estimated": true
+                "end": 342.4800109863281
             },
             {
                 "word": "wirft",
@@ -4606,7 +4551,7 @@
                 "end": 343.7200012207031
             },
             {
-                "word": "toten,",
+                "word": "toten",
                 "start": 343.7200012207031,
                 "end": 343.8599853515625
             },
@@ -4624,7 +4569,16 @@
                 "word": "ab",
                 "start": 344.8800048828125,
                 "end": 345.20001220703125
-            },
+            }
+        ],
+        "translationEn": "The conveyor belt of death does its job, discarding the dead colored cells.",
+        "translationVi": "Băng chuyền của cái chết thực hiện công việc của nó, ném những tế bào màu chết đi."
+    },
+    {
+        "text": "und ersetzt sie mit frischen, sauberen.",
+        "start": 345.20001220703125,
+        "end": 347.82000732421875,
+        "wordTimings": [
             {
                 "word": "und",
                 "start": 345.20001220703125,
@@ -4653,20 +4607,20 @@
             {
                 "word": "sauberen.",
                 "start": 347.0400085449219,
-                "end": 348.12000732421876
+                "end": 347.82000732421875
             }
         ],
-        "translationEn": "It sheds the dead, colored cells and replaces them with fresh, clean ones.",
-        "translationVi": "Nó loại bỏ các tế bào chết, có màu và thay thế chúng bằng những tế bào tươi mới, sạch sẽ."
+        "translationEn": "and replaces them with fresh, clean ones.",
+        "translationVi": "và thay thế chúng bằng những cái tươi mới, sạch sẽ."
     },
     {
         "text": "Dein Tattoo verblasst etwas, da die Tinte nicht mehr auf, sondern in deiner Haut ist.",
-        "start": 347.7399963378906,
-        "end": 353.060009765625,
+        "start": 347.8399963378906,
+        "end": 352.760009765625,
         "wordTimings": [
             {
                 "word": "Dein",
-                "start": 347.7399963378906,
+                "start": 347.8399963378906,
                 "end": 348.1199951171875
             },
             {
@@ -4737,20 +4691,20 @@
             {
                 "word": "ist.",
                 "start": 352.5,
-                "end": 353.060009765625
+                "end": 352.760009765625
             }
         ],
-        "translationEn": "Your tattoo is fading a bit because the ink is no longer on, but in your skin.",
-        "translationVi": "Hình xăm của bạn đang phai màu một chút vì mực không còn ở trên mà đã vào trong da của bạn."
+        "translationEn": "Your tattoo is fading a bit because the ink is no longer on but in your skin.",
+        "translationVi": "Hình xăm của bạn đang phai màu một chút, vì mực không còn ở trên mà đã nằm trong da của bạn."
     },
     {
-        "text": "Was du aber eigentlich siehst, sind Millionen Makrophagen, die in deiner Dermis sitzen.",
-        "start": 353.4599975585937,
-        "end": 358.75999145507814,
+        "text": "Was du aber eigentlich siehst, sind Millionen Makrophagen, die in deiner Dermis sitzen,",
+        "start": 353.55999755859375,
+        "end": 358.4599914550781,
         "wordTimings": [
             {
                 "word": "Was",
-                "start": 353.4599975585937,
+                "start": 353.55999755859375,
                 "end": 353.70001220703125
             },
             {
@@ -4809,22 +4763,22 @@
                 "end": 358.1000061035156
             },
             {
-                "word": "sitzen.",
+                "word": "sitzen,",
                 "start": 358.1000061035156,
-                "end": 358.75999145507814
+                "end": 358.4599914550781
             }
         ],
-        "translationEn": "What you are actually seeing are millions of macrophages sitting in your dermis.",
-        "translationVi": "Nhưng điều bạn thực sự thấy là hàng triệu đại thực bào đang ngồi trong lớp da của bạn."
+        "translationEn": "What you are actually seeing are millions of macrophages sitting in your dermis,",
+        "translationVi": "Nhưng điều bạn thực sự thấy là hàng triệu đại thực bào đang ngồi trong lớp da của bạn,"
     },
     {
-        "text": "Die Tinte festhalten und deinen Körper vor Gift schützen.",
-        "start": 358.3599914550781,
-        "end": 362.28001098632814,
+        "text": "die Tinte festhalten und deinen Körper vor Gift schützen.",
+        "start": 358.4599914550781,
+        "end": 361.9800109863281,
         "wordTimings": [
             {
-                "word": "Die",
-                "start": 358.3599914550781,
+                "word": "die",
+                "start": 358.4599914550781,
                 "end": 358.8999938964844
             },
             {
@@ -4865,20 +4819,20 @@
             {
                 "word": "schützen.",
                 "start": 361.55999755859375,
-                "end": 362.28001098632814
+                "end": 361.9800109863281
             }
         ],
-        "translationEn": "Hold the ink and protect your body from poison.",
-        "translationVi": "Giữ mực lại và bảo vệ cơ thể của bạn khỏi độc tố."
+        "translationEn": "to hold the ink and protect your body from poison.",
+        "translationVi": "giữ mực và bảo vệ cơ thể bạn khỏi độc tố."
     },
     {
         "text": "Dein Immunsystem ist der Grund, dass Tätowierungen für immer halten.",
-        "start": 362.5199951171875,
-        "end": 366.78001098632814,
+        "start": 362.6199951171875,
+        "end": 366.4800109863281,
         "wordTimings": [
             {
                 "word": "Dein",
-                "start": 362.5199951171875,
+                "start": 362.6199951171875,
                 "end": 362.70001220703125
             },
             {
@@ -4924,7 +4878,7 @@
             {
                 "word": "halten.",
                 "start": 366.1000061035156,
-                "end": 366.78001098632814
+                "end": 366.4800109863281
             }
         ],
         "translationEn": "Your immune system is the reason tattoos last forever.",
@@ -4932,12 +4886,12 @@
     },
     {
         "text": "Aber nichts ist für immer.",
-        "start": 367.0400146484375,
-        "end": 369.5799987792969,
+        "start": 367.1400146484375,
+        "end": 369.2799987792969,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 367.0400146484375,
+                "start": 367.1400146484375,
                 "end": 367.4800109863281
             },
             {
@@ -4958,20 +4912,20 @@
             {
                 "word": "immer.",
                 "start": 369.1000061035156,
-                "end": 369.5799987792969
+                "end": 369.2799987792969
             }
         ],
         "translationEn": "But nothing is forever.",
-        "translationVi": "Nhưng không có gì là vĩnh viễn."
+        "translationVi": "Nhưng không có gì là vĩnh cửu."
     },
     {
         "text": "Deine Makrophagen werden alt und sterben.",
-        "start": 370.0799926757812,
-        "end": 372.6999938964844,
+        "start": 370.17999267578125,
+        "end": 372.3999938964844,
         "wordTimings": [
             {
                 "word": "Deine",
-                "start": 370.0799926757812,
+                "start": 370.17999267578125,
                 "end": 370.239990234375
             },
             {
@@ -4997,20 +4951,20 @@
             {
                 "word": "sterben.",
                 "start": 372.0400085449219,
-                "end": 372.6999938964844
+                "end": 372.3999938964844
             }
         ],
         "translationEn": "Your macrophages are aging and dying.",
-        "translationVi": "Các đại thực bào của bạn trở nên già và chết đi."
+        "translationVi": "Các đại thực bào của bạn đang già đi và chết."
     },
     {
         "text": "Neue kommen, fressen die Tinte und halten sie fest.",
-        "start": 372.8800109863281,
-        "end": 375.74000244140626,
+        "start": 372.9800109863281,
+        "end": 375.44000244140625,
         "wordTimings": [
             {
                 "word": "Neue",
-                "start": 372.8800109863281,
+                "start": 372.9800109863281,
                 "end": 373.1400146484375
             },
             {
@@ -5051,7 +5005,7 @@
             {
                 "word": "fest.",
                 "start": 375.1199951171875,
-                "end": 375.74000244140626
+                "end": 375.44000244140625
             }
         ],
         "translationEn": "New ones come, eat the ink, and hold it tight.",
@@ -5059,12 +5013,12 @@
     },
     {
         "text": "Aber manchmal entwischt ein kleines bisschen Tinte.",
-        "start": 375.6200012207031,
-        "end": 378.8400085449219,
+        "start": 375.7200012207031,
+        "end": 378.5400085449219,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 375.6200012207031,
+                "start": 375.7200012207031,
                 "end": 376.05999755859375
             },
             {
@@ -5095,20 +5049,20 @@
             {
                 "word": "Tinte.",
                 "start": 378.20001220703125,
-                "end": 378.8400085449219
+                "end": 378.5400085449219
             }
         ],
-        "translationEn": "But sometimes a little bit of ink slips away.",
+        "translationEn": "But sometimes a little bit of ink escapes.",
         "translationVi": "Nhưng đôi khi một chút mực bị rò rỉ."
     },
     {
         "text": "Fast alles wird eingefangen und eingeschlossen, aber nicht immer an genau dem gleichen Ort.",
-        "start": 378.8599914550781,
-        "end": 383.539990234375,
+        "start": 378.9599914550781,
+        "end": 383.239990234375,
         "wordTimings": [
             {
                 "word": "Fast",
-                "start": 378.8599914550781,
+                "start": 378.9599914550781,
                 "end": 379.1199951171875
             },
             {
@@ -5174,7 +5128,7 @@
             {
                 "word": "Ort.",
                 "start": 383.0199890136719,
-                "end": 383.539990234375
+                "end": 383.239990234375
             }
         ],
         "translationEn": "Almost everything is captured and enclosed, but not always in exactly the same place.",
@@ -5182,12 +5136,12 @@
     },
     {
         "text": "Du bemerkst, dass dein Tattoo etwas verblasst und die Ränder weniger scharf sind.",
-        "start": 384.1000122070312,
-        "end": 388.5799987792969,
+        "start": 384.20001220703125,
+        "end": 388.2799987792969,
         "wordTimings": [
             {
                 "word": "Du",
-                "start": 384.1000122070312,
+                "start": 384.20001220703125,
                 "end": 384.3399963378906
             },
             {
@@ -5248,20 +5202,20 @@
             {
                 "word": "sind.",
                 "start": 387.9800109863281,
-                "end": 388.5799987792969
+                "end": 388.2799987792969
             }
         ],
-        "translationEn": "You notice that your tattoo has faded a bit and the edges are less sharp.",
-        "translationVi": "Bạn nhận thấy rằng hình xăm của mình đã phai màu một chút và các đường viền không còn sắc nét nữa."
+        "translationEn": "You notice that your tattoo is slightly faded and the edges are less sharp.",
+        "translationVi": "Bạn nhận thấy rằng hình xăm của mình đã phai màu một chút và các cạnh không còn sắc nét nữa."
     },
     {
         "text": "Ein Teil der Tinte entwischt ganz.",
-        "start": 388.639990234375,
-        "end": 390.62000732421876,
+        "start": 388.739990234375,
+        "end": 390.32000732421875,
         "wordTimings": [
             {
                 "word": "Ein",
-                "start": 388.639990234375,
+                "start": 388.739990234375,
                 "end": 388.739990234375
             },
             {
@@ -5287,7 +5241,7 @@
             {
                 "word": "ganz.",
                 "start": 389.8999938964844,
-                "end": 390.62000732421876
+                "end": 390.32000732421875
             }
         ],
         "translationEn": "A part of the ink escapes completely.",
@@ -5295,12 +5249,12 @@
     },
     {
         "text": "Sie wird von Flüssigkeiten transportiert und gelangt so in deinen ganzen Körper.",
-        "start": 390.8599914550781,
-        "end": 395.47999267578126,
+        "start": 390.9599914550781,
+        "end": 395.17999267578125,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 390.8599914550781,
+                "start": 390.9599914550781,
                 "end": 390.9599914550781
             },
             {
@@ -5356,7 +5310,7 @@
             {
                 "word": "Körper.",
                 "start": 395.05999755859375,
-                "end": 395.47999267578126
+                "end": 395.17999267578125
             }
         ],
         "translationEn": "It is transported by fluids and thus reaches your entire body.",
@@ -5364,12 +5318,12 @@
     },
     {
         "text": "Ein weiterer Grund, warum die Tinte idealerweise nicht giftig sein sollte.",
-        "start": 395.639990234375,
-        "end": 399.7200134277344,
+        "start": 395.739990234375,
+        "end": 399.4200134277344,
         "wordTimings": [
             {
                 "word": "Ein",
-                "start": 395.639990234375,
+                "start": 395.739990234375,
                 "end": 395.82000732421875
             },
             {
@@ -5420,20 +5374,20 @@
             {
                 "word": "sollte.",
                 "start": 399.20001220703125,
-                "end": 399.7200134277344
+                "end": 399.4200134277344
             }
         ],
-        "translationEn": "Another reason why the ink ideally should not be toxic.",
+        "translationEn": "Another reason why the ink should ideally be non-toxic.",
         "translationVi": "Một lý do khác khiến mực lý tưởng không nên độc hại."
     },
     {
         "text": "Dein Immunsystem will aber auch nicht, dass du Tattoos entfernen lässt.",
-        "start": 400.32001342773435,
-        "end": 404.35999755859376,
+        "start": 400.4200134277344,
+        "end": 404.05999755859375,
         "wordTimings": [
             {
                 "word": "Dein",
-                "start": 400.32001342773435,
+                "start": 400.4200134277344,
                 "end": 400.44000244140625
             },
             {
@@ -5484,20 +5438,20 @@
             {
                 "word": "lässt.",
                 "start": 403.7200012207031,
-                "end": 404.35999755859376
+                "end": 404.05999755859375
             }
         ],
-        "translationEn": "Your immune system also doesn't want you to remove tattoos.",
+        "translationEn": "Your immune system doesn't want you to remove tattoos either.",
         "translationVi": "Hệ miễn dịch của bạn cũng không muốn bạn xóa hình xăm."
     },
     {
-        "text": "Dazu wird das Tattoo meistens mit Lasern beschossen.",
-        "start": 404.6200012207031,
-        "end": 407.62000732421876,
+        "text": "Dazu wird das Tattoo meistens mit Lasern beschossen,",
+        "start": 404.7200012207031,
+        "end": 407.32000732421875,
         "wordTimings": [
             {
                 "word": "Dazu",
-                "start": 404.6200012207031,
+                "start": 404.7200012207031,
                 "end": 404.9800109863281
             },
             {
@@ -5531,22 +5485,22 @@
                 "end": 406.8800048828125
             },
             {
-                "word": "beschossen.",
+                "word": "beschossen,",
                 "start": 406.8800048828125,
-                "end": 407.62000732421876
+                "end": 407.32000732421875
             }
         ],
         "translationEn": "For this, the tattoo is usually treated with lasers.",
-        "translationVi": "Để làm điều đó, hình xăm thường được chiếu bằng laser."
+        "translationVi": "Để làm điều đó, hình xăm thường được chiếu bằng laser,"
     },
     {
-        "text": "Wodurch die Tintenteilchen aufgeheizt werden und zerbrechen.",
-        "start": 407.7399963378906,
-        "end": 411.0799987792969,
+        "text": "wodurch die Tintenteilchen aufgeheizt werden und zerbrechen, was deine Makrophagen grillt.",
+        "start": 407.8399963378906,
+        "end": 413.1000061035156,
         "wordTimings": [
             {
-                "word": "Wodurch",
-                "start": 407.7399963378906,
+                "word": "wodurch",
+                "start": 407.8399963378906,
                 "end": 408.05999755859375
             },
             {
@@ -5575,22 +5529,13 @@
                 "end": 410.32000732421875
             },
             {
-                "word": "zerbrechen.",
+                "word": "zerbrechen,",
                 "start": 410.32000732421875,
-                "end": 411.0799987792969
-            }
-        ],
-        "translationEn": "By which the ink particles are heated and break apart.",
-        "translationVi": "Bằng cách nào các hạt mực được làm nóng và vỡ ra."
-    },
-    {
-        "text": "Was deine Makrophagen grillt.",
-        "start": 410.9599975585937,
-        "end": 413.40000610351564,
-        "wordTimings": [
+                "end": 410.7799987792969
+            },
             {
-                "word": "Was",
-                "start": 410.9599975585937,
+                "word": "was",
+                "start": 411.05999755859375,
                 "end": 411.44000244140625
             },
             {
@@ -5606,20 +5551,20 @@
             {
                 "word": "grillt.",
                 "start": 412.5199890136719,
-                "end": 413.40000610351564
+                "end": 413.1000061035156
             }
         ],
-        "translationEn": "What grills your macrophages.",
-        "translationVi": "Những gì làm cho đại thực bào của bạn khó chịu."
+        "translationEn": "which heats up the ink particles and breaks them apart, which grills your macrophages.",
+        "translationVi": "điều này làm cho các hạt mực bị nung nóng và vỡ ra, khiến các đại thực bào của bạn bị thiêu đốt."
     },
     {
         "text": "Mit jedem Lasern wird das Tattoo verkleinert und von Flüssigkeit abgetragen.",
-        "start": 413.5400146484375,
-        "end": 418.09998779296876,
+        "start": 413.6400146484375,
+        "end": 417.79998779296875,
         "wordTimings": [
             {
                 "word": "Mit",
-                "start": 413.5400146484375,
+                "start": 413.6400146484375,
                 "end": 413.7799987792969
             },
             {
@@ -5670,20 +5615,20 @@
             {
                 "word": "abgetragen.",
                 "start": 417,
-                "end": 418.09998779296876
+                "end": 417.79998779296875
             }
         ],
         "translationEn": "With each laser treatment, the tattoo is reduced and removed by fluid.",
-        "translationVi": "Mỗi lần laser, hình xăm sẽ được thu nhỏ và loại bỏ bằng chất lỏng."
+        "translationVi": "Với mỗi lần laser, hình xăm sẽ nhỏ lại và bị loại bỏ bởi chất lỏng."
     },
     {
         "text": "Aber jedes Mal kommen neue Makrophagen herbei und fangen die Tinte wieder ein.",
-        "start": 418.2200073242187,
-        "end": 422.52000122070314,
+        "start": 418.32000732421875,
+        "end": 422.2200012207031,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 418.2200073242187,
+                "start": 418.32000732421875,
                 "end": 418.5400085449219
             },
             {
@@ -5744,20 +5689,20 @@
             {
                 "word": "ein.",
                 "start": 421.94000244140625,
-                "end": 422.52000122070314
+                "end": 422.2200012207031
             }
         ],
-        "translationEn": "But every time, new macrophages come and capture the ink again.",
+        "translationEn": "But every time, new macrophages arrive and capture the ink again.",
         "translationVi": "Nhưng mỗi lần, các đại thực bào mới lại đến và bắt giữ mực một lần nữa."
     },
     {
-        "text": "Vielleicht denkst du also, lieber zweimal nach, bevor du dir den Namen deines neuen Crushes stechen lässt.",
-        "start": 422.8400024414062,
-        "end": 428.4400146484375,
+        "text": "Vielleicht denkst du also lieber zweimal nach, bevor du dir den Namen deines neuen Crushes stechen lässt.",
+        "start": 422.94000244140625,
+        "end": 428.1400146484375,
         "wordTimings": [
             {
                 "word": "Vielleicht",
-                "start": 422.8400024414062,
+                "start": 422.94000244140625,
                 "end": 423.17999267578125
             },
             {
@@ -5771,7 +5716,7 @@
                 "end": 423.5799865722656
             },
             {
-                "word": "also,",
+                "word": "also",
                 "start": 423.5799865722656,
                 "end": 423.8999938964844
             },
@@ -5838,20 +5783,20 @@
             {
                 "word": "lässt.",
                 "start": 427.8399963378906,
-                "end": 428.4400146484375
+                "end": 428.1400146484375
             }
         ],
-        "translationEn": "So maybe you should think twice before getting the name of your new crush tattooed.",
-        "translationVi": "Có lẽ bạn nên suy nghĩ kỹ hai lần trước khi xăm tên người bạn mới thích."
+        "translationEn": "Maybe you should think twice before getting the name of your new crush tattooed.",
+        "translationVi": "Có lẽ bạn nên suy nghĩ kỹ hai lần trước khi xăm tên của người bạn thích mới."
     },
     {
         "text": "Aber hey, wie es dir gefällt.",
-        "start": 428.67999877929685,
-        "end": 430.5799987792969,
+        "start": 428.7799987792969,
+        "end": 430.2799987792969,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 428.67999877929685,
+                "start": 428.7799987792969,
                 "end": 428.94000244140625
             },
             {
@@ -5877,20 +5822,20 @@
             {
                 "word": "gefällt.",
                 "start": 429.9800109863281,
-                "end": 430.5799987792969
+                "end": 430.2799987792969
             }
         ],
         "translationEn": "But hey, however you like it.",
         "translationVi": "Nhưng hey, như bạn thích."
     },
     {
-        "text": "Wenn du aber ein Tattoo machen lässt, kannst du direkt erleben, wie dein Immunsystem dich beschützt.",
-        "start": 430.9799865722656,
-        "end": 436.7200134277344,
+        "text": "Wenn du aber ein Tattoo machen lässt, kannst du direkt erleben,",
+        "start": 431.0799865722656,
+        "end": 434.239990234375,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 430.9799865722656,
+                "start": 431.0799865722656,
                 "end": 431.20001220703125
             },
             {
@@ -5942,7 +5887,16 @@
                 "word": "erleben,",
                 "start": 433.8599853515625,
                 "end": 434.239990234375
-            },
+            }
+        ],
+        "translationEn": "But if you get a tattoo, you can experience it directly,",
+        "translationVi": "Nhưng nếu bạn xăm một hình, bạn có thể trải nghiệm ngay lập tức,"
+    },
+    {
+        "text": "wie dein Immunsystem dich beschützt.",
+        "start": 434.3999938964844,
+        "end": 436.4200134277344,
+        "wordTimings": [
             {
                 "word": "wie",
                 "start": 434.3999938964844,
@@ -5966,20 +5920,20 @@
             {
                 "word": "beschützt.",
                 "start": 435.9599914550781,
-                "end": 436.7200134277344
+                "end": 436.4200134277344
             }
         ],
-        "translationEn": "However, if you get a tattoo, you can directly experience how your immune system protects you.",
-        "translationVi": "Nếu bạn xăm một hình, bạn có thể trực tiếp trải nghiệm cách hệ thống miễn dịch của bạn bảo vệ bạn."
+        "translationEn": "how your immune system protects you.",
+        "translationVi": "cách hệ miễn dịch của bạn bảo vệ bạn."
     },
     {
         "text": "So sehr liebt dich dein Körper.",
-        "start": 436.67999877929685,
-        "end": 438.74000244140626,
+        "start": 436.7799987792969,
+        "end": 438.44000244140625,
         "wordTimings": [
             {
                 "word": "So",
-                "start": 436.67999877929685,
+                "start": 436.7799987792969,
                 "end": 436.9599914550781
             },
             {
@@ -6005,20 +5959,20 @@
             {
                 "word": "Körper.",
                 "start": 438.1000061035156,
-                "end": 438.74000244140626
+                "end": 438.44000244140625
             }
         ],
         "translationEn": "Your body loves you so much.",
-        "translationVi": "Cơ thể của bạn yêu bạn đến mức nào."
+        "translationVi": "Cơ thể bạn yêu bạn đến mức nào."
     },
     {
         "text": "Tattoos sind für deinen Körper vermutlich keine große Sache, wenn sie richtig gestochen werden.",
-        "start": 439.139990234375,
-        "end": 444.4199951171875,
+        "start": 439.239990234375,
+        "end": 444.1199951171875,
         "wordTimings": [
             {
                 "word": "Tattoos",
-                "start": 439.139990234375,
+                "start": 439.239990234375,
                 "end": 439.6400146484375
             },
             {
@@ -6084,20 +6038,20 @@
             {
                 "word": "werden.",
                 "start": 443.8599853515625,
-                "end": 444.4199951171875
+                "end": 444.1199951171875
             }
         ],
         "translationEn": "Tattoos are probably not a big deal for your body if they are done correctly.",
-        "translationVi": "Hình xăm có lẽ không phải là điều gì lớn lao đối với cơ thể của bạn, nếu chúng được xăm đúng cách."
+        "translationVi": "Hình xăm có lẽ không phải là điều lớn lao cho cơ thể của bạn nếu chúng được xăm đúng cách."
     },
     {
-        "text": "Aber du weißt jetzt, welchen Kampf sie auslösen.",
-        "start": 444.0199951171875,
-        "end": 447.5799987792969,
+        "text": "Aber du weißt jetzt, welchen Kampf sie auslösen",
+        "start": 444.1199951171875,
+        "end": 447.2799987792969,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 444.0199951171875,
+                "start": 444.1199951171875,
                 "end": 444.55999755859375
             },
             {
@@ -6131,22 +6085,22 @@
                 "end": 446.5799865722656
             },
             {
-                "word": "auslösen.",
+                "word": "auslösen",
                 "start": 446.5799865722656,
-                "end": 447.5799987792969
+                "end": 447.2799987792969
             }
         ],
-        "translationEn": "But you now know what battle they will provoke.",
+        "translationEn": "But you now know which fight they will provoke.",
         "translationVi": "Nhưng bây giờ bạn biết cuộc chiến nào họ sẽ gây ra."
     },
     {
-        "text": "Und welche Opfer deine Makrophagen-Buddies bringen, damit du diese Kunst für immer behältst.",
-        "start": 447.17999877929685,
-        "end": 454.02000122070314,
+        "text": "und welche Opfer deine Makrophagen-Buddies bringen,",
+        "start": 447.2799987792969,
+        "end": 450.70001220703125,
         "wordTimings": [
             {
-                "word": "Und",
-                "start": 447.17999877929685,
+                "word": "und",
+                "start": 447.2799987792969,
                 "end": 447.79998779296875
             },
             {
@@ -6173,7 +6127,16 @@
                 "word": "bringen,",
                 "start": 450.3399963378906,
                 "end": 450.70001220703125
-            },
+            }
+        ],
+        "translationEn": "and what sacrifices your macrophage buddies make,",
+        "translationVi": "và những hy sinh mà những người bạn đại thực bào của bạn mang lại,"
+    },
+    {
+        "text": "damit du diese Kunst für immer behältst.",
+        "start": 451.3399963378906,
+        "end": 453.7200012207031,
+        "wordTimings": [
             {
                 "word": "damit",
                 "start": 451.3399963378906,
@@ -6207,34 +6170,10 @@
             {
                 "word": "behältst.",
                 "start": 453.0199890136719,
-                "end": 454.02000122070314
+                "end": 453.7200012207031
             }
         ],
-        "translationEn": "And what sacrifices your macrophage buddies make so that you keep this art forever.",
-        "translationVi": "Và những hy sinh mà những người bạn đại thực bào của bạn phải chịu đựng để bạn giữ được nghệ thuật này mãi mãi."
-    },
-    {
-        "text": "Untertitelung BR 2018.",
-        "start": 461.139990234375,
-        "end": 461.63999633789064,
-        "wordTimings": [
-            {
-                "word": "Untertitelung",
-                "start": 461.139990234375,
-                "end": 461.2799987792969
-            },
-            {
-                "word": "BR",
-                "start": 461.29998779296875,
-                "end": 461.32000732421875
-            },
-            {
-                "word": "2018.",
-                "start": 461.32000732421875,
-                "end": 461.63999633789064
-            }
-        ],
-        "translationEn": "Subtitling BR 2018.",
-        "translationVi": "Phụ đề BR 2018."
+        "translationEn": "so that you keep this art forever.",
+        "translationVi": "để bạn có thể giữ nghệ thuật này mãi mãi."
     }
 ]

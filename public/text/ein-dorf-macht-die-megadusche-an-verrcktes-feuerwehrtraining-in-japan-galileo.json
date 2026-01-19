@@ -1,12 +1,12 @@
 [
     {
-        "text": "Die Gartensprengler sind los.",
-        "start": 1.340000057220459,
-        "end": 3.5599999904632567,
+        "text": "Die Gartensprengler sind los. Einmal im Jahr ist es soweit.",
+        "start": 1.440000057220459,
+        "end": 4.980000019073486,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 1.340000057220459,
+                "start": 1.440000057220459,
                 "end": 2.059999942779541
             },
             {
@@ -22,20 +22,11 @@
             {
                 "word": "los.",
                 "start": 2.9000000953674316,
-                "end": 3.5599999904632567
-            }
-        ],
-        "translationEn": "The garden sprinklers are on.",
-        "translationVi": "Các vòi phun nước trong vườn đã hoạt động."
-    },
-    {
-        "text": "Einmal im Jahr ist es soweit.",
-        "start": 3.699999952316284,
-        "end": 5.280000019073486,
-        "wordTimings": [
+                "end": 3.259999990463257
+            },
             {
                 "word": "Einmal",
-                "start": 3.699999952316284,
+                "start": 3.799999952316284,
                 "end": 3.859999895095825
             },
             {
@@ -61,20 +52,20 @@
             {
                 "word": "soweit.",
                 "start": 4.71999979019165,
-                "end": 5.280000019073486
+                "end": 4.980000019073486
             }
         ],
-        "translationEn": "Once a year, it happens.",
-        "translationVi": "Một lần mỗi năm, điều đó xảy ra."
+        "translationEn": "The garden sprinklers are on. Once a year, it happens.",
+        "translationVi": "Các vòi phun nước trong vườn đã hoạt động. Một lần trong năm, điều đó xảy ra."
     },
     {
         "text": "Dann steht ein ganzes Dorf in Japan unter der Dusche.",
-        "start": 5.660000228881836,
-        "end": 8.900000381469727,
+        "start": 5.760000228881836,
+        "end": 8.600000381469727,
         "wordTimings": [
             {
                 "word": "Dann",
-                "start": 5.660000228881836,
+                "start": 5.760000228881836,
                 "end": 5.820000171661377
             },
             {
@@ -120,20 +111,20 @@
             {
                 "word": "Dusche.",
                 "start": 8.279999732971191,
-                "end": 8.900000381469727
+                "end": 8.600000381469727
             }
         ],
-        "translationEn": "Then an entire village in Japan is in the shower.",
-        "translationVi": "Sau đó, cả một ngôi làng ở Nhật Bản đứng dưới vòi sen."
+        "translationEn": "Then an entire village in Japan is taking a shower.",
+        "translationVi": "Thì cả một ngôi làng ở Nhật Bản đang tắm dưới vòi sen."
     },
     {
         "text": "Und nicht nur zu diesem Anlass wird das Dorf überrannt.",
-        "start": 10.299999618530274,
-        "end": 13.539999771118165,
+        "start": 10.399999618530273,
+        "end": 13.239999771118164,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 10.299999618530274,
+                "start": 10.399999618530273,
                 "end": 10.619999885559082
             },
             {
@@ -174,12 +165,12 @@
             {
                 "word": "Dorf",
                 "start": 12.220000267028809,
-                "end": 12.5600004196167
+                "end": 12.539999961853027
             },
             {
                 "word": "überrannt.",
-                "start": 12.5600004196167,
-                "end": 13.539999771118165
+                "start": 12.539999961853027,
+                "end": 13.239999771118164
             }
         ],
         "translationEn": "And not only on this occasion is the village overrun.",
@@ -187,12 +178,12 @@
     },
     {
         "text": "Auf rund 1500 Einwohner kommen pro Jahr bis zu 2 Millionen Touristen.",
-        "start": 13.420000457763672,
-        "end": 18.259999084472657,
+        "start": 13.520000457763672,
+        "end": 17.959999084472656,
         "wordTimings": [
             {
                 "word": "Auf",
-                "start": 13.420000457763672,
+                "start": 13.520000457763672,
                 "end": 13.600000381469727
             },
             {
@@ -248,20 +239,20 @@
             {
                 "word": "Touristen.",
                 "start": 17.459999084472656,
-                "end": 18.259999084472657
+                "end": 17.959999084472656
             }
         ],
         "translationEn": "For about 1,500 residents, there are up to 2 million tourists per year.",
-        "translationVi": "Trên khoảng 1500 cư dân, mỗi năm có tới 2 triệu khách du lịch."
+        "translationVi": "Mỗi năm có tới 2 triệu du khách trên khoảng 1500 cư dân."
     },
     {
         "text": "Nur warum regnet es hier auf Knopfdruck, wenn es eh regnet?",
-        "start": 19.180000686645506,
-        "end": 23.500000762939454,
+        "start": 19.280000686645508,
+        "end": 23.200000762939453,
         "wordTimings": [
             {
                 "word": "Nur",
-                "start": 19.180000686645506,
+                "start": 19.280000686645508,
                 "end": 19.600000381469727
             },
             {
@@ -312,20 +303,20 @@
             {
                 "word": "regnet?",
                 "start": 23,
-                "end": 23.500000762939454
+                "end": 23.200000762939453
             }
         ],
         "translationEn": "But why does it rain here at the push of a button when it's already raining?",
-        "translationVi": "Chỉ có điều tại sao trời lại mưa ở đây theo nút bấm, khi mà trời đã mưa rồi?"
+        "translationVi": "Chỉ tại sao trời lại mưa ở đây theo nút bấm, khi mà nó đã mưa rồi?"
     },
     {
         "text": "Wir fahren in den Nordwesten Japans.",
-        "start": 24.139999771118163,
-        "end": 27.08000068664551,
+        "start": 24.239999771118164,
+        "end": 26.780000686645508,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 24.139999771118163,
+                "start": 24.239999771118164,
                 "end": 24.84000015258789
             },
             {
@@ -351,20 +342,20 @@
             {
                 "word": "Japans.",
                 "start": 26.260000228881836,
-                "end": 27.08000068664551
+                "end": 26.780000686645508
             }
         ],
         "translationEn": "We are going to the northwest of Japan.",
-        "translationVi": "Chúng tôi sẽ đi đến vùng tây bắc Nhật Bản."
+        "translationVi": "Chúng tôi đi đến tây bắc Nhật Bản."
     },
     {
         "text": "Hier liegt Shirakawago, ein auf den ersten Blick beschauliches Bergdorf.",
-        "start": 27.440000915527342,
-        "end": 32.25999908447265,
+        "start": 27.540000915527344,
+        "end": 31.959999084472656,
         "wordTimings": [
             {
                 "word": "Hier",
-                "start": 27.440000915527342,
+                "start": 27.540000915527344,
                 "end": 27.540000915527344
             },
             {
@@ -410,7 +401,7 @@
             {
                 "word": "Bergdorf.",
                 "start": 31.360000610351562,
-                "end": 32.25999908447265
+                "end": 31.959999084472656
             }
         ],
         "translationEn": "Here lies Shirakawago, a seemingly tranquil mountain village at first glance.",
@@ -418,12 +409,12 @@
     },
     {
         "text": "Aber nur auf den ersten Blick.",
-        "start": 34.10000076293945,
-        "end": 35.68000106811523,
+        "start": 34.20000076293945,
+        "end": 35.380001068115234,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 34.10000076293945,
+                "start": 34.20000076293945,
                 "end": 34.279998779296875
             },
             {
@@ -449,7 +440,7 @@
             {
                 "word": "Blick.",
                 "start": 35.13999938964844,
-                "end": 35.68000106811523
+                "end": 35.380001068115234
             }
         ],
         "translationEn": "But only at first glance.",
@@ -457,12 +448,12 @@
     },
     {
         "text": "Denn die Häuser mit dem urigen Look sind eine der Touri-Attraktionen Japans.",
-        "start": 35.9,
-        "end": 40.599999237060544,
+        "start": 36,
+        "end": 40.29999923706055,
         "wordTimings": [
             {
                 "word": "Denn",
-                "start": 35.9,
+                "start": 36,
                 "end": 36.13999938964844
             },
             {
@@ -518,20 +509,20 @@
             {
                 "word": "Japans.",
                 "start": 39.779998779296875,
-                "end": 40.599999237060544
+                "end": 40.29999923706055
             }
         ],
-        "translationEn": "Because the houses with their rustic look are one of the tourist attractions in Japan.",
-        "translationVi": "Bởi vì những ngôi nhà có vẻ ngoài cổ kính là một trong những điểm thu hút khách du lịch ở Nhật Bản."
+        "translationEn": "The houses with the rustic look are one of the tourist attractions in Japan.",
+        "translationVi": "Bởi vì những ngôi nhà với vẻ ngoài cổ kính là một trong những điểm thu hút khách du lịch ở Nhật Bản."
     },
     {
         "text": "Aus aller Welt kommen die Besucher auf der Jagd nach dem perfekten Foto.",
-        "start": 41.359999084472655,
-        "end": 45.8,
+        "start": 41.459999084472656,
+        "end": 45.5,
         "wordTimings": [
             {
                 "word": "Aus",
-                "start": 41.359999084472655,
+                "start": 41.459999084472656,
                 "end": 41.540000915527344
             },
             {
@@ -592,7 +583,7 @@
             {
                 "word": "Foto.",
                 "start": 45,
-                "end": 45.8
+                "end": 45.5
             }
         ],
         "translationEn": "Visitors from all over the world come in search of the perfect photo.",
@@ -600,12 +591,12 @@
     },
     {
         "text": "Berühmt geworden ist das Dorf wegen seiner 300 Jahre alten Bauernhäuser",
-        "start": 47.81999816894531,
-        "end": 52.34000091552734,
+        "start": 47.91999816894531,
+        "end": 52.040000915527344,
         "wordTimings": [
             {
                 "word": "Berühmt",
-                "start": 47.81999816894531,
+                "start": 47.91999816894531,
                 "end": 48.52000045776367
             },
             {
@@ -656,20 +647,20 @@
             {
                 "word": "Bauernhäuser",
                 "start": 51.18000030517578,
-                "end": 52.34000091552734
+                "end": 52.040000915527344
             }
         ],
-        "translationEn": "The village became famous because of its 300-year-old farmhouses.",
-        "translationVi": "Ngôi làng đã trở nên nổi tiếng nhờ những ngôi nhà nông dân 300 năm tuổi của nó."
+        "translationEn": "The village became famous for its 300-year-old farmhouses.",
+        "translationVi": "Ngôi làng đã trở nên nổi tiếng vì những ngôi nhà nông dân 300 năm tuổi của nó."
     },
     {
         "text": "und den schilfgedeckten Dächern.",
-        "start": 51.94000091552734,
-        "end": 54.98000030517578,
+        "start": 52.040000915527344,
+        "end": 54.68000030517578,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 51.94000091552734,
+                "start": 52.040000915527344,
                 "end": 53.02000045776367
             },
             {
@@ -685,7 +676,7 @@
             {
                 "word": "Dächern.",
                 "start": 54.08000183105469,
-                "end": 54.98000030517578
+                "end": 54.68000030517578
             }
         ],
         "translationEn": "and the thatched roofs.",
@@ -693,12 +684,12 @@
     },
     {
         "text": "Kasho Zukuri nennen die Japaner diesen Baustil.",
-        "start": 55.620001220703124,
-        "end": 58.540001678466794,
+        "start": 55.720001220703125,
+        "end": 58.2400016784668,
         "wordTimings": [
             {
                 "word": "Kasho",
-                "start": 55.620001220703124,
+                "start": 55.720001220703125,
                 "end": 55.91999816894531
             },
             {
@@ -729,7 +720,7 @@
             {
                 "word": "Baustil.",
                 "start": 57.7400016784668,
-                "end": 58.540001678466794
+                "end": 58.2400016784668
             }
         ],
         "translationEn": "The Japanese call this architectural style Kasho Zukuri.",
@@ -737,12 +728,12 @@
     },
     {
         "text": "Das bedeutet betende Hände und spielt auf die spitze Dachform an.",
-        "start": 58.300001525878905,
-        "end": 62.279999542236325,
+        "start": 58.400001525878906,
+        "end": 61.97999954223633,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 58.300001525878905,
+                "start": 58.400001525878906,
                 "end": 58.599998474121094
             },
             {
@@ -793,7 +784,7 @@
             {
                 "word": "an.",
                 "start": 61.65999984741211,
-                "end": 62.279999542236325
+                "end": 61.97999954223633
             }
         ],
         "translationEn": "This means praying hands and refers to the pointed roof shape.",
@@ -801,12 +792,12 @@
     },
     {
         "text": "Die Dächer sind auch der Grund für die Wassersprengler.",
-        "start": 62.28000106811523,
-        "end": 64.98000030517578,
+        "start": 62.380001068115234,
+        "end": 64.68000030517578,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 62.28000106811523,
+                "start": 62.380001068115234,
                 "end": 62.540000915527344
             },
             {
@@ -847,7 +838,7 @@
             {
                 "word": "Wassersprengler.",
                 "start": 64,
-                "end": 64.98000030517578
+                "end": 64.68000030517578
             }
         ],
         "translationEn": "The roofs are also the reason for the water sprinklers.",
@@ -855,12 +846,12 @@
     },
     {
         "text": "Wir treffen Tour Guide Keiichi Akira.",
-        "start": 66.17999877929688,
-        "end": 68.78000335693359,
+        "start": 66.27999877929688,
+        "end": 68.4800033569336,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 66.17999877929688,
+                "start": 66.27999877929688,
                 "end": 66.4800033569336
             },
             {
@@ -886,7 +877,7 @@
             {
                 "word": "Akira.",
                 "start": 67.9000015258789,
-                "end": 68.78000335693359
+                "end": 68.4800033569336
             }
         ],
         "translationEn": "We meet tour guide Keiichi Akira.",
@@ -894,12 +885,12 @@
     },
     {
         "text": "So richtig rückt er noch nicht damit raus, was hinter den Wasserfontänen steckt.",
-        "start": 68.85999908447266,
-        "end": 74.10000305175781,
+        "start": 68.95999908447266,
+        "end": 73.80000305175781,
         "wordTimings": [
             {
                 "word": "So",
-                "start": 68.85999908447266,
+                "start": 68.95999908447266,
                 "end": 69.23999786376953
             },
             {
@@ -960,20 +951,20 @@
             {
                 "word": "steckt.",
                 "start": 73.4000015258789,
-                "end": 74.10000305175781
+                "end": 73.80000305175781
             }
         ],
         "translationEn": "He still isn't revealing what is behind the water fountains.",
-        "translationVi": "Anh ấy vẫn chưa thực sự tiết lộ điều gì đang ẩn sau những vòi phun nước."
+        "translationVi": "Ông ấy vẫn chưa tiết lộ rõ ràng điều gì ẩn sau những vòi phun nước."
     },
     {
         "text": "Ich bin stolz darauf, im schönsten Ort der Welt zu leben",
-        "start": 75.9,
-        "end": 78.66000061035156,
+        "start": 76,
+        "end": 78.36000061035156,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 75.9,
+                "start": 76,
                 "end": 76.05999755859375
             },
             {
@@ -1024,7 +1015,7 @@
             {
                 "word": "leben",
                 "start": 78.36000061035156,
-                "end": 78.66000061035156
+                "end": 78.36000061035156
             }
         ],
         "translationEn": "I am proud to live in the most beautiful place in the world.",
@@ -1032,12 +1023,12 @@
     },
     {
         "text": "und hoffe, dass alle einmal hierher kommen.",
-        "start": 78.26000061035157,
-        "end": 80.63999633789062,
+        "start": 78.36000061035156,
+        "end": 80.33999633789062,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 78.26000061035157,
+                "start": 78.36000061035156,
                 "end": 78.63999938964844
             },
             {
@@ -1068,20 +1059,20 @@
             {
                 "word": "kommen.",
                 "start": 80.33999633789062,
-                "end": 80.63999633789062
+                "end": 80.33999633789062
             }
         ],
         "translationEn": "and hope that everyone will come here at least once.",
-        "translationVi": "và hy vọng rằng mọi người sẽ một lần đến đây."
+        "translationVi": "và hy vọng rằng tất cả mọi người sẽ đến đây một lần."
     },
     {
-        "text": "Kommt uns gern besuchen!",
-        "start": 81.4999984741211,
-        "end": 82.63999633789062,
+        "text": "Kommt uns gern besuchen! Shirakawago ist inzwischen ein einziger Instagram-Hotspot.",
+        "start": 81.5999984741211,
+        "end": 87.55999755859375,
         "wordTimings": [
             {
                 "word": "Kommt",
-                "start": 81.4999984741211,
+                "start": 81.5999984741211,
                 "end": 81.68000030517578
             },
             {
@@ -1097,20 +1088,11 @@
             {
                 "word": "besuchen!",
                 "start": 81.9800033569336,
-                "end": 82.63999633789062
-            }
-        ],
-        "translationEn": "Feel free to come visit us!",
-        "translationVi": "Hãy đến thăm chúng tôi nhé!"
-    },
-    {
-        "text": "Shirakawago ist inzwischen ein einziger Instagram-Hotspot.",
-        "start": 84.5999969482422,
-        "end": 87.85999755859375,
-        "wordTimings": [
+                "end": 82.33999633789062
+            },
             {
                 "word": "Shirakawago",
-                "start": 84.5999969482422,
+                "start": 84.69999694824219,
                 "end": 85.37999725341797
             },
             {
@@ -1136,20 +1118,20 @@
             {
                 "word": "Instagram-Hotspot.",
                 "start": 86.80000305175781,
-                "end": 87.85999755859375
+                "end": 87.55999755859375
             }
         ],
-        "translationEn": "Shirakawago has become a complete Instagram hotspot.",
-        "translationVi": "Shirakawago hiện nay đã trở thành một điểm nóng trên Instagram."
+        "translationEn": "Feel free to come visit us! Shirakawago has become a total Instagram hotspot.",
+        "translationVi": "Hãy đến thăm chúng tôi nhé! Shirakawago giờ đây đã trở thành một điểm nóng Instagram."
     },
     {
         "text": "Eines der berühmtesten Motive ist das hier.",
-        "start": 88.84000244140626,
-        "end": 92.66000061035156,
+        "start": 88.94000244140625,
+        "end": 92.36000061035156,
         "wordTimings": [
             {
                 "word": "Eines",
-                "start": 88.84000244140626,
+                "start": 88.94000244140625,
                 "end": 88.9800033569336
             },
             {
@@ -1180,20 +1162,20 @@
             {
                 "word": "hier.",
                 "start": 92.36000061035156,
-                "end": 92.66000061035156
+                "end": 92.36000061035156
             }
         ],
         "translationEn": "One of the most famous motifs is this one.",
         "translationVi": "Một trong những chủ đề nổi tiếng nhất là cái này."
     },
     {
-        "text": "Das hier kennt man von Plakaten von Shirakawago.",
-        "start": 93.44000091552735,
-        "end": 96.84000091552734,
+        "text": "Das hier kennt man von Plakaten von Shirakawago. Deswegen wollen alle das sehen.",
+        "start": 93.54000091552734,
+        "end": 98.62000274658203,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 93.44000091552735,
+                "start": 93.54000091552734,
                 "end": 94.18000030517578
             },
             {
@@ -1229,20 +1211,11 @@
             {
                 "word": "Shirakawago.",
                 "start": 95.81999969482422,
-                "end": 96.84000091552734
-            }
-        ],
-        "translationEn": "This is known from posters of Shirakawago.",
-        "translationVi": "Điều này được biết đến từ các áp phích của Shirakawago."
-    },
-    {
-        "text": "Deswegen wollen alle das sehen.",
-        "start": 97.4999984741211,
-        "end": 98.92000274658203,
-        "wordTimings": [
+                "end": 96.54000091552734
+            },
             {
                 "word": "Deswegen",
-                "start": 97.4999984741211,
+                "start": 97.5999984741211,
                 "end": 97.5999984741211
             },
             {
@@ -1263,20 +1236,20 @@
             {
                 "word": "sehen.",
                 "start": 98.4800033569336,
-                "end": 98.92000274658203
+                "end": 98.62000274658203
             }
         ],
-        "translationEn": "That's why everyone wants to see it.",
-        "translationVi": "Vì vậy, mọi người đều muốn thấy điều đó."
+        "translationEn": "This is known from posters of Shirakawago. That's why everyone wants to see it.",
+        "translationVi": "Điều này được biết đến từ các áp phích của Shirakawago. Vì vậy, mọi người đều muốn xem nó."
     },
     {
         "text": "Hier stehen drei Kasho Zukuri Häuser in einer Reihe.",
-        "start": 103.20000305175782,
-        "end": 106.67999725341797,
+        "start": 103.30000305175781,
+        "end": 106.37999725341797,
         "wordTimings": [
             {
                 "word": "Hier",
-                "start": 103.20000305175782,
+                "start": 103.30000305175781,
                 "end": 103.73999786376953
             },
             {
@@ -1317,7 +1290,7 @@
             {
                 "word": "Reihe.",
                 "start": 106.16000366210938,
-                "end": 106.67999725341797
+                "end": 106.37999725341797
             }
         ],
         "translationEn": "Here stand three Kasho Zukuri houses in a row.",
@@ -1325,12 +1298,12 @@
     },
     {
         "text": "Und das ist Winterbeleuchtung, auch wunderschön.",
-        "start": 106.9800018310547,
-        "end": 111.63999633789062,
+        "start": 107.08000183105469,
+        "end": 111.33999633789062,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 106.9800018310547,
+                "start": 107.08000183105469,
                 "end": 107.23999786376953
             },
             {
@@ -1356,39 +1329,30 @@
             {
                 "word": "wunderschön.",
                 "start": 111.33999633789062,
-                "end": 111.63999633789062
+                "end": 111.33999633789062
             }
         ],
         "translationEn": "And this is winter lighting, also beautiful.",
-        "translationVi": "Và đó là ánh sáng mùa đông, cũng thật tuyệt vời."
+        "translationVi": "Và đó là ánh sáng mùa đông, cũng thật đẹp."
     },
     {
-        "text": "Nächste Spur.",
-        "start": 112.76000061035157,
-        "end": 113.92000274658203,
+        "text": "Nächste Spur: Im Winter schneit es hier sehr viel.",
+        "start": 112.86000061035156,
+        "end": 115.55999755859375,
         "wordTimings": [
             {
                 "word": "Nächste",
-                "start": 112.76000061035157,
+                "start": 112.86000061035156,
                 "end": 113.31999969482422
             },
             {
-                "word": "Spur.",
+                "word": "Spur:",
                 "start": 113.31999969482422,
-                "end": 113.92000274658203
-            }
-        ],
-        "translationEn": "Next track.",
-        "translationVi": "Làn đường tiếp theo."
-    },
-    {
-        "text": "Im Winter schneit es hier sehr viel.",
-        "start": 113.8800033569336,
-        "end": 115.85999755859375,
-        "wordTimings": [
+                "end": 113.62000274658203
+            },
             {
                 "word": "Im",
-                "start": 113.8800033569336,
+                "start": 113.9800033569336,
                 "end": 114.0999984741211
             },
             {
@@ -1419,20 +1383,20 @@
             {
                 "word": "viel.",
                 "start": 115.4000015258789,
-                "end": 115.85999755859375
+                "end": 115.55999755859375
             }
         ],
-        "translationEn": "In winter, it snows a lot here.",
-        "translationVi": "Vào mùa đông, ở đây có rất nhiều tuyết."
+        "translationEn": "Next track: It snows a lot here in winter.",
+        "translationVi": "Làn tiếp theo: Vào mùa đông, ở đây có rất nhiều tuyết."
     },
     {
         "text": "Deshalb sind die Dächer so spitz.",
-        "start": 115.94000091552735,
-        "end": 117.8199966430664,
+        "start": 116.04000091552734,
+        "end": 117.5199966430664,
         "wordTimings": [
             {
                 "word": "Deshalb",
-                "start": 115.94000091552735,
+                "start": 116.04000091552734,
                 "end": 116.22000122070312
             },
             {
@@ -1458,20 +1422,20 @@
             {
                 "word": "spitz.",
                 "start": 117.26000213623047,
-                "end": 117.8199966430664
+                "end": 117.5199966430664
             }
         ],
-        "translationEn": "That is why the roofs are so steep.",
+        "translationEn": "That is why the roofs are so pointed.",
         "translationVi": "Vì vậy, những mái nhà lại nhọn như vậy."
     },
     {
-        "text": "Die Dächer sind dick mit Schilf oder auch Reet gedeckt.",
-        "start": 121.4999984741211,
-        "end": 125.38000183105468,
+        "text": "Die Dächer sind dick mit Schilf oder auch Reet gedeckt. Das isoliert sehr gut.",
+        "start": 121.5999984741211,
+        "end": 126.73999786376953,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 121.4999984741211,
+                "start": 121.5999984741211,
                 "end": 122.23999786376953
             },
             {
@@ -1517,25 +1481,16 @@
             {
                 "word": "gedeckt.",
                 "start": 124.72000122070312,
-                "end": 125.38000183105468
-            }
-        ],
-        "translationEn": "The roofs are thickly covered with reeds or thatch.",
-        "translationVi": "Mái nhà được phủ dày bằng cỏ hoặc cũng có thể là rơm."
-    },
-    {
-        "text": "Das isoliert sehr gut.",
-        "start": 125.4,
-        "end": 127.03999786376953,
-        "wordTimings": [
+                "end": 125.08000183105469
+            },
             {
                 "word": "Das",
-                "start": 125.4,
-                "end": 125.77999877929688
+                "start": 125.5,
+                "end": 125.80000305175781
             },
             {
                 "word": "isoliert",
-                "start": 125.77999877929688,
+                "start": 125.80000305175781,
                 "end": 126.19999694824219
             },
             {
@@ -1546,20 +1501,20 @@
             {
                 "word": "gut.",
                 "start": 126.5199966430664,
-                "end": 127.03999786376953
+                "end": 126.73999786376953
             }
         ],
-        "translationEn": "It insulates very well.",
-        "translationVi": "Nó cách ly rất tốt."
+        "translationEn": "The roofs are thickly covered with reeds or thatch. This provides very good insulation.",
+        "translationVi": "Mái nhà được phủ dày bằng cỏ hoặc cũng có thể là rơm. Điều này cách nhiệt rất tốt."
     },
     {
         "text": "Dass das Dorf überhaupt noch Reetdächer hat, hat es einem Mann zu verdanken,",
-        "start": 127.62000122070313,
-        "end": 131.3800018310547,
+        "start": 127.72000122070312,
+        "end": 131.0800018310547,
         "wordTimings": [
             {
                 "word": "Dass",
-                "start": 127.62000122070313,
+                "start": 127.72000122070312,
                 "end": 127.73999786376953
             },
             {
@@ -1620,7 +1575,7 @@
             {
                 "word": "verdanken,",
                 "start": 130.74000549316406,
-                "end": 131.3800018310547
+                "end": 131.0800018310547
             }
         ],
         "translationEn": "That the village still has thatched roofs at all is thanks to one man,",
@@ -1628,12 +1583,12 @@
     },
     {
         "text": "der früher in diesem Haus gewohnt hat.",
-        "start": 131.12000122070313,
-        "end": 133.02000122070314,
+        "start": 131.22000122070312,
+        "end": 132.72000122070312,
         "wordTimings": [
             {
                 "word": "der",
-                "start": 131.12000122070313,
+                "start": 131.22000122070312,
                 "end": 131.27999877929688
             },
             {
@@ -1664,20 +1619,20 @@
             {
                 "word": "hat.",
                 "start": 132.47999572753906,
-                "end": 133.02000122070314
+                "end": 132.72000122070312
             }
         ],
-        "translationEn": "who used to live in this house.",
+        "translationEn": "who lived in this house before.",
         "translationVi": "người đã sống trong ngôi nhà này trước đây."
     },
     {
-        "text": "Während des Wirtschaftsaufschwungs in den 50er Jahren",
-        "start": 133.26000061035157,
-        "end": 136.63999633789064,
+        "text": "Während des Wirtschaftsaufschwungs in den 50er Jahren wollen viele ihre Häuser modernisieren.",
+        "start": 133.36000061035156,
+        "end": 138.4600067138672,
         "wordTimings": [
             {
                 "word": "Während",
-                "start": 133.26000061035157,
+                "start": 133.36000061035156,
                 "end": 133.4600067138672
             },
             {
@@ -1708,20 +1663,11 @@
             {
                 "word": "Jahren",
                 "start": 135.66000366210938,
-                "end": 136.63999633789064
-            }
-        ],
-        "translationEn": "During the economic upswing in the 1950s",
-        "translationVi": "Trong thời kỳ phục hồi kinh tế vào những năm 50"
-    },
-    {
-        "text": "wollen viele ihre Häuser modernisieren.",
-        "start": 136.23999633789063,
-        "end": 138.7600067138672,
-        "wordTimings": [
+                "end": 136.33999633789062
+            },
             {
                 "word": "wollen",
-                "start": 136.23999633789063,
+                "start": 136.33999633789062,
                 "end": 136.60000610351562
             },
             {
@@ -1742,20 +1688,20 @@
             {
                 "word": "modernisieren.",
                 "start": 137.89999389648438,
-                "end": 138.7600067138672
+                "end": 138.4600067138672
             }
         ],
-        "translationEn": "Many want to modernize their houses.",
-        "translationVi": "nhiều người muốn hiện đại hóa ngôi nhà của họ."
+        "translationEn": "During the economic boom of the 1950s, many want to modernize their homes.",
+        "translationVi": "Trong thời kỳ phục hồi kinh tế vào những năm 50, nhiều người muốn hiện đại hóa ngôi nhà của họ."
     },
     {
         "text": "Aber dieser Dorfbewohner hält sie davon ab.",
-        "start": 138.73999633789063,
-        "end": 141.32000427246095,
+        "start": 138.83999633789062,
+        "end": 141.02000427246094,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 138.73999633789063,
+                "start": 138.83999633789062,
                 "end": 139.1199951171875
             },
             {
@@ -1786,20 +1732,20 @@
             {
                 "word": "ab.",
                 "start": 140.72000122070312,
-                "end": 141.32000427246095
+                "end": 141.02000427246094
             }
         ],
-        "translationEn": "But this villager prevents them from doing so.",
+        "translationEn": "But this villager prevents her from doing so.",
         "translationVi": "Nhưng người dân làng này ngăn cản họ."
     },
     {
         "text": "Die Bewohner der Häuser waren es leid, die Reetdächer in Stand zu halten.",
-        "start": 142.07999267578126,
-        "end": 146.43999938964845,
+        "start": 142.17999267578125,
+        "end": 146.13999938964844,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 142.07999267578126,
+                "start": 142.17999267578125,
                 "end": 142.74000549316406
             },
             {
@@ -1860,20 +1806,20 @@
             {
                 "word": "halten.",
                 "start": 146.13999938964844,
-                "end": 146.43999938964845
+                "end": 146.13999938964844
             }
         ],
         "translationEn": "The residents of the houses were tired of maintaining the thatched roofs.",
-        "translationVi": "Cư dân của những ngôi nhà đã chán ngấy việc bảo trì mái tranh."
+        "translationVi": "Các cư dân của những ngôi nhà đã mệt mỏi với việc duy trì các mái tranh."
     },
     {
         "text": "Das ist ja mühsame, schmutzige und unangenehme Arbeit.",
-        "start": 147.03999938964844,
-        "end": 150.40000610351564,
+        "start": 147.13999938964844,
+        "end": 150.10000610351562,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 147.03999938964844,
+                "start": 147.13999938964844,
                 "end": 147.33999633789062
             },
             {
@@ -1909,20 +1855,20 @@
             {
                 "word": "Arbeit.",
                 "start": 149.8000030517578,
-                "end": 150.40000610351564
+                "end": 150.10000610351562
             }
         ],
         "translationEn": "That is tedious, dirty, and unpleasant work.",
-        "translationVi": "Đó là công việc vất vả, bẩn thỉu và khó chịu."
+        "translationVi": "Đó là công việc khó khăn, bẩn thỉu và không thoải mái."
     },
     {
         "text": "Also begann sie darüber nachzudenken, Geld zu sparen",
-        "start": 151.31999816894532,
-        "end": 154.6999938964844,
+        "start": 151.4199981689453,
+        "end": 154.39999389648438,
         "wordTimings": [
             {
                 "word": "Also",
-                "start": 151.31999816894532,
+                "start": 151.4199981689453,
                 "end": 152.13999938964844
             },
             {
@@ -1958,20 +1904,20 @@
             {
                 "word": "sparen",
                 "start": 154.39999389648438,
-                "end": 154.6999938964844
+                "end": 154.39999389648438
             }
         ],
         "translationEn": "So she began to think about saving money.",
-        "translationVi": "Vì vậy, cô ấy bắt đầu suy nghĩ về việc tiết kiệm tiền."
+        "translationVi": "Vì vậy, cô bắt đầu suy nghĩ về việc tiết kiệm tiền."
     },
     {
         "text": "und die Dächer durch Metalldächer zu ersetzen.",
-        "start": 154.29999389648438,
-        "end": 157.0799987792969,
+        "start": 154.39999389648438,
+        "end": 156.77999877929688,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 154.29999389648438,
+                "start": 154.39999389648438,
                 "end": 154.6999969482422
             },
             {
@@ -2002,20 +1948,20 @@
             {
                 "word": "ersetzen.",
                 "start": 156.74000549316406,
-                "end": 157.0799987792969
+                "end": 156.77999877929688
             }
         ],
         "translationEn": "and to replace the roofs with metal roofs.",
         "translationVi": "và thay thế các mái nhà bằng mái kim loại."
     },
     {
-        "text": "Zu dieser Zeit wurden viele Kasho Zukuri Häuser hier",
-        "start": 158.50000610351563,
-        "end": 161.71999816894532,
+        "text": "Zu dieser Zeit wurden viele Kasho Zukuri Häuser hier und auch anderswo abgebaut,",
+        "start": 158.60000610351562,
+        "end": 163.0800018310547,
         "wordTimings": [
             {
                 "word": "Zu",
-                "start": 158.50000610351563,
+                "start": 158.60000610351562,
                 "end": 158.60000610351562
             },
             {
@@ -2056,20 +2002,11 @@
             {
                 "word": "hier",
                 "start": 161.02000427246094,
-                "end": 161.71999816894532
-            }
-        ],
-        "translationEn": "At that time, many Kasho Zukuri houses were built here.",
-        "translationVi": "Vào thời điểm này, nhiều ngôi nhà Kasho Zukuri đã được xây dựng ở đây."
-    },
-    {
-        "text": "und auch anderswo abgebaut, verkauft oder zerstört.",
-        "start": 161.31999816894532,
-        "end": 164.7600067138672,
-        "wordTimings": [
+                "end": 161.4199981689453
+            },
             {
                 "word": "und",
-                "start": 161.31999816894532,
+                "start": 161.4199981689453,
                 "end": 161.77999877929688
             },
             {
@@ -2086,7 +2023,16 @@
                 "word": "abgebaut,",
                 "start": 162.44000244140625,
                 "end": 163.0800018310547
-            },
+            }
+        ],
+        "translationEn": "At that time, many Kasho Zukuri houses were dismantled here and elsewhere.",
+        "translationVi": "Vào thời điểm này, nhiều ngôi nhà Kasho Zukuri đã bị phá dỡ ở đây và cũng như ở những nơi khác."
+    },
+    {
+        "text": "verkauft oder zerstört.",
+        "start": 163.72000122070312,
+        "end": 164.4600067138672,
+        "wordTimings": [
             {
                 "word": "verkauft",
                 "start": 163.72000122070312,
@@ -2100,20 +2046,20 @@
             {
                 "word": "zerstört.",
                 "start": 164.0800018310547,
-                "end": 164.7600067138672
+                "end": 164.4600067138672
             }
         ],
-        "translationEn": "and also mined, sold, or destroyed elsewhere.",
-        "translationVi": "và cũng bị khai thác, bán hoặc phá hủy ở nơi khác."
+        "translationEn": "sold or destroyed.",
+        "translationVi": "bán hoặc phá hủy."
     },
     {
         "text": "Zu dieser Zeit ging Kokichi Yamamoto von Haus zu Haus",
-        "start": 170.29999389648438,
-        "end": 174.04000549316407,
+        "start": 170.39999389648438,
+        "end": 173.74000549316406,
         "wordTimings": [
             {
                 "word": "Zu",
-                "start": 170.29999389648438,
+                "start": 170.39999389648438,
                 "end": 170.63999938964844
             },
             {
@@ -2159,7 +2105,7 @@
             {
                 "word": "Haus",
                 "start": 173.52000427246094,
-                "end": 174.04000549316407
+                "end": 173.74000549316406
             }
         ],
         "translationEn": "At that time, Kokichi Yamamoto went from house to house.",
@@ -2167,12 +2113,12 @@
     },
     {
         "text": "und überzeugte die Menschen davon, den Kasho Zukuri Stil zu erhalten.",
-        "start": 173.64000549316407,
-        "end": 177.82000427246095,
+        "start": 173.74000549316406,
+        "end": 177.52000427246094,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 173.64000549316407,
+                "start": 173.74000549316406,
                 "end": 174.1999969482422
             },
             {
@@ -2223,20 +2169,20 @@
             {
                 "word": "erhalten.",
                 "start": 177.3800048828125,
-                "end": 177.82000427246095
+                "end": 177.52000427246094
             }
         ],
         "translationEn": "and convinced people to preserve the Kasho Zukuri style.",
         "translationVi": "và thuyết phục mọi người giữ gìn phong cách Kasho Zukuri."
     },
     {
-        "text": "Yamamoto war damals schon davon überzeugt,",
-        "start": 180.73999633789063,
-        "end": 183.54000549316407,
+        "text": "Yamamoto war damals schon davon überzeugt, dass man mit den altmodischen Häusern",
+        "start": 180.83999633789062,
+        "end": 184.94000244140625,
         "wordTimings": [
             {
                 "word": "Yamamoto",
-                "start": 180.73999633789063,
+                "start": 180.83999633789062,
                 "end": 181.55999755859375
             },
             {
@@ -2262,20 +2208,11 @@
             {
                 "word": "überzeugt,",
                 "start": 182.83999633789062,
-                "end": 183.54000549316407
-            }
-        ],
-        "translationEn": "Yamamoto was already convinced of that at the time.",
-        "translationVi": "Yamamoto lúc đó đã tin chắc rằng,"
-    },
-    {
-        "text": "dass man mit den altmodischen Häusern Besucher ins Dorf locken könnte.",
-        "start": 183.29999389648438,
-        "end": 186.74000244140626,
-        "wordTimings": [
+                "end": 183.24000549316406
+            },
             {
                 "word": "dass",
-                "start": 183.29999389648438,
+                "start": 183.39999389648438,
                 "end": 183.4600067138672
             },
             {
@@ -2302,7 +2239,16 @@
                 "word": "Häusern",
                 "start": 184.5800018310547,
                 "end": 184.94000244140625
-            },
+            }
+        ],
+        "translationEn": "Yamamoto was already convinced at that time that one could achieve something with the old-fashioned houses.",
+        "translationVi": "Yamamoto đã tin rằng với những ngôi nhà cổ điển đó"
+    },
+    {
+        "text": "Besucher ins Dorf locken könnte. Und er behielt recht.",
+        "start": 184.94000244140625,
+        "end": 188.24000549316406,
+        "wordTimings": [
             {
                 "word": "Besucher",
                 "start": 184.94000244140625,
@@ -2326,20 +2272,11 @@
             {
                 "word": "könnte.",
                 "start": 186.16000366210938,
-                "end": 186.74000244140626
-            }
-        ],
-        "translationEn": "that one could attract visitors to the village with the old-fashioned houses.",
-        "translationVi": "rằng người ta có thể thu hút du khách đến làng bằng những ngôi nhà cổ kính."
-    },
-    {
-        "text": "Und er behielt recht.",
-        "start": 186.84000244140626,
-        "end": 188.54000549316407,
-        "wordTimings": [
+                "end": 186.44000244140625
+            },
             {
                 "word": "Und",
-                "start": 186.84000244140626,
+                "start": 186.94000244140625,
                 "end": 187.22000122070312
             },
             {
@@ -2355,24 +2292,24 @@
             {
                 "word": "recht.",
                 "start": 187.82000732421875,
-                "end": 188.54000549316407
+                "end": 188.24000549316406
             }
         ],
-        "translationEn": "And he was right.",
-        "translationVi": "Và ông ấy đã đúng."
+        "translationEn": "Could attract visitors to the village. And he was right.",
+        "translationVi": "Có thể thu hút du khách đến làng. Và ông đã đúng."
     },
     {
-        "text": "Heute gilt, alles ist auf Touristen ausgerichtet.",
-        "start": 189.76000061035157,
-        "end": 193.32000427246095,
+        "text": "Heute gilt alles ist auf Touristen ausgerichtet. Und denen gefällt's.",
+        "start": 189.86000061035156,
+        "end": 195.8800048828125,
         "wordTimings": [
             {
                 "word": "Heute",
-                "start": 189.76000061035157,
+                "start": 189.86000061035156,
                 "end": 189.9199981689453
             },
             {
-                "word": "gilt,",
+                "word": "gilt",
                 "start": 189.9199981689453,
                 "end": 190.1999969482422
             },
@@ -2399,20 +2336,11 @@
             {
                 "word": "ausgerichtet.",
                 "start": 192.32000732421875,
-                "end": 193.32000427246095
-            }
-        ],
-        "translationEn": "Today, everything is geared towards tourists.",
-        "translationVi": "Ngày nay, mọi thứ đều hướng tới khách du lịch."
-    },
-    {
-        "text": "Und denen gefällt's.",
-        "start": 193.92000427246094,
-        "end": 196.1800048828125,
-        "wordTimings": [
+                "end": 193.02000427246094
+            },
             {
                 "word": "Und",
-                "start": 193.92000427246094,
+                "start": 194.02000427246094,
                 "end": 194.25999450683594
             },
             {
@@ -2423,20 +2351,20 @@
             {
                 "word": "gefällt's.",
                 "start": 194.60000610351562,
-                "end": 196.1800048828125
+                "end": 195.8800048828125
             }
         ],
-        "translationEn": "And they like it.",
-        "translationVi": "Và họ thích điều đó."
+        "translationEn": "Today, everything is geared towards tourists. And they like it.",
+        "translationVi": "Hôm nay mọi thứ đều hướng tới khách du lịch. Và họ thích điều đó."
     },
     {
         "text": "Mir gefällt die rustikale Atmosphäre.",
-        "start": 198.42000427246094,
-        "end": 201.55999450683595,
+        "start": 198.52000427246094,
+        "end": 201.25999450683594,
         "wordTimings": [
             {
                 "word": "Mir",
-                "start": 198.42000427246094,
+                "start": 198.52000427246094,
                 "end": 199.05999755859375
             },
             {
@@ -2457,7 +2385,7 @@
             {
                 "word": "Atmosphäre.",
                 "start": 201.25999450683594,
-                "end": 201.55999450683595
+                "end": 201.25999450683594
             }
         ],
         "translationEn": "I like the rustic atmosphere.",
@@ -2465,12 +2393,12 @@
     },
     {
         "text": "Es ist sehr interessant zu sehen, wie sie hier früher gelebt haben.",
-        "start": 202.53999938964844,
-        "end": 206.0799987792969,
+        "start": 202.63999938964844,
+        "end": 205.77999877929688,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 202.53999938964844,
+                "start": 202.63999938964844,
                 "end": 203.17999267578125
             },
             {
@@ -2526,7 +2454,7 @@
             {
                 "word": "haben.",
                 "start": 205.47999572753906,
-                "end": 206.0799987792969
+                "end": 205.77999877929688
             }
         ],
         "translationEn": "It is very interesting to see how they lived here in the past.",
@@ -2534,12 +2462,12 @@
     },
     {
         "text": "Weiter geht die Suche nach dem Grund für die jährlichen Wasserfontänen.",
-        "start": 206.73999633789063,
-        "end": 209.82000427246095,
+        "start": 206.83999633789062,
+        "end": 209.52000427246094,
         "wordTimings": [
             {
                 "word": "Weiter",
-                "start": 206.73999633789063,
+                "start": 206.83999633789062,
                 "end": 206.83999633789062
             },
             {
@@ -2590,20 +2518,20 @@
             {
                 "word": "Wasserfontänen.",
                 "start": 208.67999267578125,
-                "end": 209.82000427246095
+                "end": 209.52000427246094
             }
         ],
         "translationEn": "The search for the reason behind the annual water fountains continues.",
-        "translationVi": "Cuộc tìm kiếm lý do cho những vòi nước hàng năm vẫn tiếp tục."
+        "translationVi": "Tiếp tục tìm kiếm lý do cho những vòi phun nước hàng năm."
     },
     {
-        "text": "Ein weiterer Hinweis, es hat etwas mit der Bauweise zu tun.",
-        "start": 211.0999969482422,
-        "end": 215.82000427246095,
+        "text": "Ein weiterer Hinweis: Es hat etwas mit der Bauweise zu tun.",
+        "start": 211.1999969482422,
+        "end": 215.52000427246094,
         "wordTimings": [
             {
                 "word": "Ein",
-                "start": 211.0999969482422,
+                "start": 211.1999969482422,
                 "end": 211.27999877929688
             },
             {
@@ -2612,12 +2540,12 @@
                 "end": 212.16000366210938
             },
             {
-                "word": "Hinweis,",
+                "word": "Hinweis:",
                 "start": 212.16000366210938,
                 "end": 212.17999267578125
             },
             {
-                "word": "es",
+                "word": "Es",
                 "start": 213.05999755859375,
                 "end": 213.36000061035156
             },
@@ -2654,20 +2582,20 @@
             {
                 "word": "tun.",
                 "start": 215.44000244140625,
-                "end": 215.82000427246095
+                "end": 215.52000427246094
             }
         ],
-        "translationEn": "Another hint, it has something to do with the construction method.",
-        "translationVi": "Một gợi ý khác, nó có liên quan đến cách xây dựng."
+        "translationEn": "Another hint: It has something to do with the construction method.",
+        "translationVi": "Một gợi ý khác: Nó liên quan đến cách xây dựng."
     },
     {
         "text": "Weil die Häuser nur aus Holz und Schilf gebaut sind,",
-        "start": 217.0999969482422,
-        "end": 219.40000610351564,
+        "start": 217.1999969482422,
+        "end": 219.10000610351562,
         "wordTimings": [
             {
                 "word": "Weil",
-                "start": 217.0999969482422,
+                "start": 217.1999969482422,
                 "end": 217.22000122070312
             },
             {
@@ -2713,20 +2641,20 @@
             {
                 "word": "sind,",
                 "start": 218.86000061035156,
-                "end": 219.40000610351564
+                "end": 219.10000610351562
             }
         ],
         "translationEn": "Because the houses are made only of wood and reeds,",
-        "translationVi": "Vì những ngôi nhà chỉ được xây dựng bằng gỗ và lau sậy,"
+        "translationVi": "Vì những ngôi nhà chỉ được xây dựng bằng gỗ và rơm."
     },
     {
-        "text": "entdecken wir überall im Dorf Warnhinweise,",
-        "start": 219.34000244140626,
-        "end": 221.62000732421876,
+        "text": "entdecken wir überall im Dorf Warnhinweise, dass Rauchen und offenes Feuer streng verboten sind.",
+        "start": 219.44000244140625,
+        "end": 224.13999938964844,
         "wordTimings": [
             {
                 "word": "entdecken",
-                "start": 219.34000244140626,
+                "start": 219.44000244140625,
                 "end": 219.44000244140625
             },
             {
@@ -2752,20 +2680,11 @@
             {
                 "word": "Warnhinweise,",
                 "start": 220.5399932861328,
-                "end": 221.62000732421876
-            }
-        ],
-        "translationEn": "we discover warning signs all over the village,",
-        "translationVi": "chúng ta phát hiện ra những cảnh báo ở khắp nơi trong làng"
-    },
-    {
-        "text": "dass Rauchen und offenes Feuer streng verboten sind.",
-        "start": 221.53999938964844,
-        "end": 224.43999938964845,
-        "wordTimings": [
+                "end": 221.32000732421875
+            },
             {
                 "word": "dass",
-                "start": 221.53999938964844,
+                "start": 221.63999938964844,
                 "end": 221.9600067138672
             },
             {
@@ -2801,20 +2720,20 @@
             {
                 "word": "sind.",
                 "start": 223.86000061035156,
-                "end": 224.43999938964845
+                "end": 224.13999938964844
             }
         ],
-        "translationEn": "that smoking and open flames are strictly prohibited.",
-        "translationVi": "Việc hút thuốc và lửa mở bị cấm nghiêm ngặt."
+        "translationEn": "We discover warning signs everywhere in the village that smoking and open fires are strictly prohibited.",
+        "translationVi": "Chúng ta phát hiện khắp nơi trong làng có biển cảnh báo rằng việc hút thuốc và lửa trần là nghiêm cấm."
     },
     {
         "text": "Es gibt sogar einen kleinen Schrein, der dem Feuergott gewidmet ist.",
-        "start": 225.34000244140626,
-        "end": 229.10000305175782,
+        "start": 225.44000244140625,
+        "end": 228.8000030517578,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 225.34000244140626,
+                "start": 225.44000244140625,
                 "end": 225.4600067138672
             },
             {
@@ -2865,20 +2784,20 @@
             {
                 "word": "ist.",
                 "start": 228.44000244140625,
-                "end": 229.10000305175782
+                "end": 228.8000030517578
             }
         ],
         "translationEn": "There is even a small shrine dedicated to the fire god.",
-        "translationVi": "Có một ngôi đền nhỏ dành cho thần lửa."
+        "translationVi": "Có một ngôi đền nhỏ được dành cho thần lửa."
     },
     {
-        "text": "Und über 60 dieser Mini-Häuser stehen im ganzen Dorf verteilt.",
-        "start": 229.45999755859376,
-        "end": 233.1999938964844,
+        "text": "Und über 60 dieser Mini-Häuser stehen im ganzen Dorf verteilt. Darin sogenannte Löschmonitore.",
+        "start": 229.55999755859375,
+        "end": 235.47999572753906,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 229.45999755859376,
+                "start": 229.55999755859375,
                 "end": 229.75999450683594
             },
             {
@@ -2924,20 +2843,11 @@
             {
                 "word": "verteilt.",
                 "start": 232.25999450683594,
-                "end": 233.1999938964844
-            }
-        ],
-        "translationEn": "And over 60 of these mini-houses are spread throughout the village.",
-        "translationVi": "Và hơn 60 ngôi nhà mini này được phân bố khắp làng."
-    },
-    {
-        "text": "Darin sogenannte Löschmonitore.",
-        "start": 233.57999267578126,
-        "end": 235.77999572753907,
-        "wordTimings": [
+                "end": 232.89999389648438
+            },
             {
                 "word": "Darin",
-                "start": 233.57999267578126,
+                "start": 233.67999267578125,
                 "end": 233.86000061035156
             },
             {
@@ -2948,20 +2858,20 @@
             {
                 "word": "Löschmonitore.",
                 "start": 234.5,
-                "end": 235.77999572753907
+                "end": 235.47999572753906
             }
         ],
-        "translationEn": "In it, so-called extinguishing monitors.",
-        "translationVi": "Trong đó có những thiết bị gọi là máy giám sát xóa."
+        "translationEn": "And over 60 of these mini-houses are spread throughout the village. Inside are so-called extinguishing monitors.",
+        "translationVi": "Và hơn 60 ngôi nhà mini này được phân bố khắp làng. Bên trong là những thiết bị gọi là máy giám sát chữa cháy."
     },
     {
         "text": "Jeder Hausbesitzer bekommt einen zugeteilt.",
-        "start": 235.76000061035157,
-        "end": 238.3,
+        "start": 235.86000061035156,
+        "end": 238,
         "wordTimings": [
             {
                 "word": "Jeder",
-                "start": 235.76000061035157,
+                "start": 235.86000061035156,
                 "end": 235.9199981689453
             },
             {
@@ -2982,20 +2892,20 @@
             {
                 "word": "zugeteilt.",
                 "start": 237.36000061035156,
-                "end": 238.3
+                "end": 238
             }
         ],
         "translationEn": "Every homeowner is assigned one.",
-        "translationVi": "Mỗi chủ nhà sẽ được phân công một cái."
+        "translationVi": "Mỗi chủ nhà đều được phân một cái."
     },
     {
         "text": "Wohnen im Holzdorf klingt erstmal romantisch,",
-        "start": 239.50000610351563,
-        "end": 241.97999267578126,
+        "start": 239.60000610351562,
+        "end": 241.67999267578125,
         "wordTimings": [
             {
                 "word": "Wohnen",
-                "start": 239.50000610351563,
+                "start": 239.60000610351562,
                 "end": 239.6999969482422
             },
             {
@@ -3021,20 +2931,20 @@
             {
                 "word": "romantisch,",
                 "start": 241.13999938964844,
-                "end": 241.97999267578126
+                "end": 241.67999267578125
             }
         ],
         "translationEn": "Living in a wooden village sounds romantic at first.",
         "translationVi": "Sống ở làng gỗ nghe có vẻ lãng mạn."
     },
     {
-        "text": "scheint aber vor allem ganz schön aufwendig zu sein.",
-        "start": 241.8600067138672,
-        "end": 244.13999633789064,
+        "text": "scheint aber vor allem ganz schön aufwendig zu sein. Wir sind mit Akiko verabredet.",
+        "start": 241.9600067138672,
+        "end": 245.9600067138672,
         "wordTimings": [
             {
                 "word": "scheint",
-                "start": 241.8600067138672,
+                "start": 241.9600067138672,
                 "end": 241.9600067138672
             },
             {
@@ -3075,20 +2985,11 @@
             {
                 "word": "sein.",
                 "start": 243.8000030517578,
-                "end": 244.13999633789064
-            }
-        ],
-        "translationEn": "but it seems to be quite labor-intensive, above all.",
-        "translationVi": "Có vẻ như nhưng điều đó chủ yếu khá tốn công."
-    },
-    {
-        "text": "Wir sind mit Akiko verabredet.",
-        "start": 244.20000305175782,
-        "end": 246.2600067138672,
-        "wordTimings": [
+                "end": 243.83999633789062
+            },
             {
                 "word": "Wir",
-                "start": 244.20000305175782,
+                "start": 244.3000030517578,
                 "end": 244.44000244140625
             },
             {
@@ -3109,20 +3010,20 @@
             {
                 "word": "verabredet.",
                 "start": 245.32000732421875,
-                "end": 246.2600067138672
+                "end": 245.9600067138672
             }
         ],
-        "translationEn": "We have an appointment with Akiko.",
-        "translationVi": "Chúng tôi đã hẹn với Akiko."
+        "translationEn": "But it seems to be quite time-consuming. We have an appointment with Akiko.",
+        "translationVi": "Nhưng có vẻ như điều đó khá tốn công. Chúng tôi đã hẹn gặp Akiko."
     },
     {
-        "text": "Sie führt am Rand des Dorfes das Gasthaus Otaya.",
-        "start": 246.03999938964844,
-        "end": 249.16000061035157,
+        "text": "Sie führt am Rand des Dorfes das Gasthaus Otaya. Ihr Haus sieht gemütlich aus.",
+        "start": 246.13999938964844,
+        "end": 252.74000549316406,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 246.03999938964844,
+                "start": 246.13999938964844,
                 "end": 246.25999450683594
             },
             {
@@ -3163,20 +3064,11 @@
             {
                 "word": "Otaya.",
                 "start": 248.1999969482422,
-                "end": 249.16000061035157
-            }
-        ],
-        "translationEn": "She runs the Otaya inn on the edge of the village.",
-        "translationVi": "Cô ấy điều hành quán trọ Otaya ở rìa làng."
-    },
-    {
-        "text": "Ihr Haus sieht gemütlich aus.",
-        "start": 250.57999267578126,
-        "end": 253.04000549316407,
-        "wordTimings": [
+                "end": 248.86000061035156
+            },
             {
                 "word": "Ihr",
-                "start": 250.57999267578126,
+                "start": 250.67999267578125,
                 "end": 251.27999877929688
             },
             {
@@ -3197,20 +3089,20 @@
             {
                 "word": "aus.",
                 "start": 252.3800048828125,
-                "end": 253.04000549316407
+                "end": 252.74000549316406
             }
         ],
-        "translationEn": "Your house looks cozy.",
-        "translationVi": "Nhà của bạn trông thật ấm cúng."
+        "translationEn": "She runs the Otaya inn on the edge of the village. Her house looks cozy.",
+        "translationVi": "Cô ấy điều hành quán trọ Otaya ở rìa làng. Ngôi nhà của cô trông rất ấm cúng."
     },
     {
         "text": "Aber wenn der Winter kommt, wird die Innentemperatur zur Herausforderung.",
-        "start": 254.67999877929688,
-        "end": 259.8400085449219,
+        "start": 254.77999877929688,
+        "end": 259.5400085449219,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 254.67999877929688,
+                "start": 254.77999877929688,
                 "end": 254.89999389648438
             },
             {
@@ -3256,20 +3148,20 @@
             {
                 "word": "Herausforderung.",
                 "start": 258.94000244140625,
-                "end": 259.8400085449219
+                "end": 259.5400085449219
             }
         ],
         "translationEn": "But when winter comes, the indoor temperature becomes a challenge.",
-        "translationVi": "Nhưng khi mùa đông đến, nhiệt độ trong nhà sẽ trở thành một thách thức."
+        "translationVi": "Nhưng khi mùa đông đến, nhiệt độ bên trong sẽ trở thành một thách thức."
     },
     {
         "text": "Eigentlich war das hier nur eine Schiebetür.",
-        "start": 263.5799926757812,
-        "end": 266.28001098632814,
+        "start": 263.67999267578125,
+        "end": 265.9800109863281,
         "wordTimings": [
             {
                 "word": "Eigentlich",
-                "start": 263.5799926757812,
+                "start": 263.67999267578125,
                 "end": 264.2799987792969
             },
             {
@@ -3300,7 +3192,7 @@
             {
                 "word": "Schiebetür.",
                 "start": 265.3999938964844,
-                "end": 266.28001098632814
+                "end": 265.9800109863281
             }
         ],
         "translationEn": "Actually, this was just a sliding door.",
@@ -3308,12 +3200,12 @@
     },
     {
         "text": "Aber weil es so kalt wird, haben wir noch eine zweite installiert.",
-        "start": 266.5799926757812,
-        "end": 269.75999145507814,
+        "start": 266.67999267578125,
+        "end": 269.4599914550781,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 266.5799926757812,
+                "start": 266.67999267578125,
                 "end": 266.8800048828125
             },
             {
@@ -3369,20 +3261,20 @@
             {
                 "word": "installiert.",
                 "start": 269,
-                "end": 269.75999145507814
+                "end": 269.4599914550781
             }
         ],
-        "translationEn": "But because it is getting so cold, we have installed a second one.",
+        "translationEn": "But because it is getting so cold, we installed a second one.",
         "translationVi": "Nhưng vì trời lạnh quá, chúng tôi đã lắp đặt thêm một cái nữa."
     },
     {
         "text": "Im Winter stellen wir dann draußen sogenannte Schneezäune auf,",
-        "start": 273.4799865722656,
-        "end": 277.13999633789064,
+        "start": 273.5799865722656,
+        "end": 276.8399963378906,
         "wordTimings": [
             {
                 "word": "Im",
-                "start": 273.4799865722656,
+                "start": 273.5799865722656,
                 "end": 273.7200012207031
             },
             {
@@ -3423,20 +3315,20 @@
             {
                 "word": "auf,",
                 "start": 276.4599914550781,
-                "end": 277.13999633789064
+                "end": 276.8399963378906
             }
         ],
         "translationEn": "In winter, we then set up so-called snow fences outside,",
-        "translationVi": "Vào mùa đông, chúng tôi sẽ dựng những hàng rào tuyết bên ngoài."
+        "translationVi": "Vào mùa đông, chúng tôi sẽ dựng lên những hàng rào tuyết bên ngoài."
     },
     {
         "text": "sodass wir quasi drei Wände haben.",
-        "start": 276.9599975585937,
-        "end": 279.24000244140626,
+        "start": 277.05999755859375,
+        "end": 278.94000244140625,
         "wordTimings": [
             {
                 "word": "sodass",
-                "start": 276.9599975585937,
+                "start": 277.05999755859375,
                 "end": 277.05999755859375
             },
             {
@@ -3462,7 +3354,7 @@
             {
                 "word": "haben.",
                 "start": 278.6000061035156,
-                "end": 279.24000244140626
+                "end": 278.94000244140625
             }
         ],
         "translationEn": "so that we basically have three walls.",
@@ -3470,12 +3362,12 @@
     },
     {
         "text": "Denn dann türmt sich hier überall der Schnee.",
-        "start": 279.3400024414062,
-        "end": 282.0799987792969,
+        "start": 279.44000244140625,
+        "end": 281.7799987792969,
         "wordTimings": [
             {
                 "word": "Denn",
-                "start": 279.3400024414062,
+                "start": 279.44000244140625,
                 "end": 279.5799865722656
             },
             {
@@ -3511,7 +3403,7 @@
             {
                 "word": "Schnee.",
                 "start": 281.70001220703125,
-                "end": 282.0799987792969
+                "end": 281.7799987792969
             }
         ],
         "translationEn": "Because then the snow piles up everywhere here.",
@@ -3519,12 +3411,12 @@
     },
     {
         "text": "Ein Gassho Tsukuri Haus in Stand zu halten, ist zudem teuer und aufwendig.",
-        "start": 286.9,
-        "end": 292.039990234375,
+        "start": 287,
+        "end": 291.739990234375,
         "wordTimings": [
             {
                 "word": "Ein",
-                "start": 286.9,
+                "start": 287,
                 "end": 287.67999267578125
             },
             {
@@ -3585,20 +3477,20 @@
             {
                 "word": "aufwendig.",
                 "start": 291.20001220703125,
-                "end": 292.039990234375
+                "end": 291.739990234375
             }
         ],
         "translationEn": "Maintaining a Gassho Tsukuri house is also expensive and labor-intensive.",
-        "translationVi": "Việc duy trì một ngôi nhà Gassho Tsukuri cũng tốn kém và công phu."
+        "translationVi": "Việc duy trì một ngôi nhà Gassho Tsukuri cũng tốn kém và phức tạp."
     },
     {
         "text": "Die Rätdächer müssen alle 20 bis 30 Jahre erneuert werden.",
-        "start": 291.9599975585937,
-        "end": 295.87998657226564,
+        "start": 292.05999755859375,
+        "end": 295.5799865722656,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 291.9599975585937,
+                "start": 292.05999755859375,
                 "end": 292.2200012207031
             },
             {
@@ -3644,24 +3536,24 @@
             {
                 "word": "werden.",
                 "start": 295.260009765625,
-                "end": 295.87998657226564
+                "end": 295.5799865722656
             }
         ],
-        "translationEn": "The thatched roofs need to be renewed every 20 to 30 years.",
+        "translationEn": "The thatched roofs must be renewed every 20 to 30 years.",
         "translationVi": "Các mái nhà bằng rơm cần được thay mới sau mỗi 20 đến 30 năm."
     },
     {
-        "text": "Eine Arbeit, für die traditionell bis zu 100 Dorfbewohner zusammenkommen und mithelfen.",
-        "start": 296.160009765625,
-        "end": 301.12000732421876,
+        "text": "Eine Arbeit für die traditionell bis zu 100 Dorfbewohner zusammenkommen und mithelfen.",
+        "start": 296.260009765625,
+        "end": 300.8399963378906,
         "wordTimings": [
             {
                 "word": "Eine",
-                "start": 296.160009765625,
+                "start": 296.260009765625,
                 "end": 296.3800048828125
             },
             {
-                "word": "Arbeit,",
+                "word": "Arbeit",
                 "start": 296.3800048828125,
                 "end": 296.760009765625
             },
@@ -3713,20 +3605,20 @@
             {
                 "word": "mithelfen.",
                 "start": 300.260009765625,
-                "end": 301.12000732421876
+                "end": 300.8399963378906
             }
         ],
-        "translationEn": "A task for which traditionally up to 100 villagers come together and help.",
-        "translationVi": "Một công việc mà truyền thống có tới 100 cư dân làng cùng nhau tham gia và giúp đỡ."
+        "translationEn": "A task for which up to 100 villagers traditionally come together and help.",
+        "translationVi": "Một công việc mà truyền thống có đến 100 cư dân trong làng cùng nhau tham gia và giúp đỡ."
     },
     {
         "text": "Vor rund 50 Jahren funktionierten Akikos Eltern hier zu Hause zum Gasthaus um.",
-        "start": 301.4599975585937,
-        "end": 306.3199890136719,
+        "start": 301.55999755859375,
+        "end": 306.0199890136719,
         "wordTimings": [
             {
                 "word": "Vor",
-                "start": 301.4599975585937,
+                "start": 301.55999755859375,
                 "end": 301.6600036621094
             },
             {
@@ -3787,20 +3679,20 @@
             {
                 "word": "um.",
                 "start": 305.6400146484375,
-                "end": 306.3199890136719
+                "end": 306.0199890136719
             }
         ],
-        "translationEn": "About 50 years ago, Akiko's parents converted their home into an inn.",
-        "translationVi": "Khoảng 50 năm trước, cha mẹ của Akiko đã biến ngôi nhà này thành một quán trọ."
+        "translationEn": "About 50 years ago, Akiko's parents converted their home into a guesthouse.",
+        "translationVi": "Khoảng 50 năm trước, cha mẹ của Akiko đã chuyển đổi ngôi nhà này thành một quán trọ."
     },
     {
         "text": "Umbauen dürfen sie allerdings nicht.",
-        "start": 307.0400146484375,
-        "end": 308.6599853515625,
+        "start": 307.1400146484375,
+        "end": 308.3599853515625,
         "wordTimings": [
             {
                 "word": "Umbauen",
-                "start": 307.0400146484375,
+                "start": 307.1400146484375,
                 "end": 307.1400146484375
             },
             {
@@ -3821,20 +3713,20 @@
             {
                 "word": "nicht.",
                 "start": 308.0400085449219,
-                "end": 308.6599853515625
+                "end": 308.3599853515625
             }
         ],
         "translationEn": "However, they are not allowed to make any alterations.",
-        "translationVi": "Tuy nhiên, họ không được phép cải tạo."
+        "translationVi": "Tuy nhiên, họ không được phép sửa đổi."
     },
     {
         "text": "Es ist nicht erlaubt, den Wohnraum zu vergrößern oder zu verkleinern.",
-        "start": 309.2200073242187,
-        "end": 312.97999267578126,
+        "start": 309.32000732421875,
+        "end": 312.67999267578125,
         "wordTimings": [
             {
                 "word": "Es",
-                "start": 309.2200073242187,
+                "start": 309.32000732421875,
                 "end": 309.55999755859375
             },
             {
@@ -3885,20 +3777,20 @@
             {
                 "word": "verkleinern.",
                 "start": 312.5799865722656,
-                "end": 312.97999267578126
+                "end": 312.67999267578125
             }
         ],
         "translationEn": "It is not allowed to enlarge or reduce the living space.",
         "translationVi": "Không được phép mở rộng hoặc thu hẹp không gian sống."
     },
     {
-        "text": "Die Landschaft und die Häuser im Gassho Stil dürfen nicht zerstört, verkauft oder vermietet werden.",
-        "start": 312.9599975585937,
-        "end": 317.85999755859376,
+        "text": "Die Landschaft und die Häuser im Gassho-Stil dürfen nicht zerstört, verkauft oder vermietet werden.",
+        "start": 313.05999755859375,
+        "end": 317.55999755859375,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 312.9599975585937,
+                "start": 313.05999755859375,
                 "end": 313.17999267578125
             },
             {
@@ -3927,14 +3819,9 @@
                 "end": 314.29998779296875
             },
             {
-                "word": "Gassho",
+                "word": "Gassho-Stil",
                 "start": 314.29998779296875,
                 "end": 314.6199951171875
-            },
-            {
-                "word": "Stil",
-                "start": 314.6199951171875,
-                "end": 314.8800048828125
             },
             {
                 "word": "dürfen",
@@ -3969,7 +3856,7 @@
             {
                 "word": "werden.",
                 "start": 317.2200012207031,
-                "end": 317.85999755859376
+                "end": 317.55999755859375
             }
         ],
         "translationEn": "The landscape and the houses in Gassho style must not be destroyed, sold, or rented out.",
@@ -3977,12 +3864,12 @@
     },
     {
         "text": "Sie müssen geschützt werden.",
-        "start": 317.9,
-        "end": 319.78001098632814,
+        "start": 318,
+        "end": 319.4800109863281,
         "wordTimings": [
             {
                 "word": "Sie",
-                "start": 317.9,
+                "start": 318,
                 "end": 318.1600036621094
             },
             {
@@ -3998,20 +3885,20 @@
             {
                 "word": "werden.",
                 "start": 319.1199951171875,
-                "end": 319.78001098632814
+                "end": 319.4800109863281
             }
         ],
         "translationEn": "They need to be protected.",
-        "translationVi": "Bạn cần được bảo vệ."
+        "translationVi": "Bạn phải được bảo vệ."
     },
     {
         "text": "Die Tradition zu bewahren, fordert den Bewohnern also einiges ab.",
-        "start": 320.91998901367185,
-        "end": 325.37998657226564,
+        "start": 321.0199890136719,
+        "end": 325.0799865722656,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 320.91998901367185,
+                "start": 321.0199890136719,
                 "end": 321.6400146484375
             },
             {
@@ -4057,20 +3944,20 @@
             {
                 "word": "ab.",
                 "start": 324.739990234375,
-                "end": 325.37998657226564
+                "end": 325.0799865722656
             }
         ],
-        "translationEn": "Preserving the tradition demands quite a bit from the residents.",
+        "translationEn": "Preserving the tradition requires quite a bit from the residents.",
         "translationVi": "Việc gìn giữ truyền thống đòi hỏi cư dân phải nỗ lực khá nhiều."
     },
     {
         "text": "Und dann entdecken wir im Video ein Foto von der skurrilen Wassersprinkel-Aktion.",
-        "start": 325.44000854492185,
-        "end": 330.0799987792969,
+        "start": 325.5400085449219,
+        "end": 329.7799987792969,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 325.44000854492185,
+                "start": 325.5400085449219,
                 "end": 325.7799987792969
             },
             {
@@ -4126,7 +4013,7 @@
             {
                 "word": "Wassersprinkel-Aktion.",
                 "start": 328.79998779296875,
-                "end": 330.0799987792969
+                "end": 329.7799987792969
             }
         ],
         "translationEn": "And then we discover a photo of the quirky water sprinkler action in the video.",
@@ -4134,12 +4021,12 @@
     },
     {
         "text": "Worum geht es dabei denn nun?",
-        "start": 332.2200073242187,
-        "end": 334.1599853515625,
+        "start": 332.32000732421875,
+        "end": 333.8599853515625,
         "wordTimings": [
             {
                 "word": "Worum",
-                "start": 332.2200073242187,
+                "start": 332.32000732421875,
                 "end": 332.44000244140625
             },
             {
@@ -4165,7 +4052,7 @@
             {
                 "word": "nun?",
                 "start": 333.67999267578125,
-                "end": 334.1599853515625
+                "end": 333.8599853515625
             }
         ],
         "translationEn": "What is it all about then?",
@@ -4173,12 +4060,12 @@
     },
     {
         "text": "Jetzt beginnt ja die kalte Jahreszeit.",
-        "start": 337.1000122070312,
-        "end": 339.78001098632814,
+        "start": 337.20001220703125,
+        "end": 339.4800109863281,
         "wordTimings": [
             {
                 "word": "Jetzt",
-                "start": 337.1000122070312,
+                "start": 337.20001220703125,
                 "end": 337.8399963378906
             },
             {
@@ -4204,20 +4091,20 @@
             {
                 "word": "Jahreszeit.",
                 "start": 338.8399963378906,
-                "end": 339.78001098632814
+                "end": 339.4800109863281
             }
         ],
-        "translationEn": "Now the cold season is beginning.",
-        "translationVi": "Bây giờ mùa đông đã bắt đầu."
+        "translationEn": "Now the cold season is starting.",
+        "translationVi": "Bây giờ mùa lạnh đã bắt đầu."
     },
     {
         "text": "Und das heißt, dass wir häufiger heizen und Feuer machen werden.",
-        "start": 340.0799926757812,
-        "end": 343.9400146484375,
+        "start": 340.17999267578125,
+        "end": 343.6400146484375,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 340.0799926757812,
+                "start": 340.17999267578125,
                 "end": 340.29998779296875
             },
             {
@@ -4258,30 +4145,30 @@
             {
                 "word": "Feuer",
                 "start": 342.8399963378906,
-                "end": 343.1199951171875
+                "end": 343.1000061035156
             },
             {
                 "word": "machen",
-                "start": 343.1199951171875,
+                "start": 343.1000061035156,
                 "end": 343.3599853515625
             },
             {
                 "word": "werden.",
                 "start": 343.3599853515625,
-                "end": 343.9400146484375
+                "end": 343.6400146484375
             }
         ],
-        "translationEn": "And that means we will heat and make fires more often.",
-        "translationVi": "Và điều đó có nghĩa là chúng ta sẽ đốt lửa và sưởi ấm thường xuyên hơn."
+        "translationEn": "And that means we will be heating and making fires more often.",
+        "translationVi": "Và điều đó có nghĩa là chúng ta sẽ thường xuyên đốt lửa và sưởi ấm hơn."
     },
     {
         "text": "Wir üben mit den Löschanlagen, um im Notfall einen Wasservorhang zu erzeugen.",
-        "start": 346.5799926757812,
-        "end": 351.4600036621094,
+        "start": 346.67999267578125,
+        "end": 351.1600036621094,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 346.5799926757812,
+                "start": 346.67999267578125,
                 "end": 346.8800048828125
             },
             {
@@ -4337,7 +4224,7 @@
             {
                 "word": "erzeugen.",
                 "start": 350.5199890136719,
-                "end": 351.4600036621094
+                "end": 351.1600036621094
             }
         ],
         "translationEn": "We practice with the extinguishing systems to create a water curtain in case of emergency.",
@@ -4345,12 +4232,12 @@
     },
     {
         "text": "Morgen früh um 8 Uhr werden wir einmal sprühen",
-        "start": 355.4599975585937,
-        "end": 358.37998657226564,
+        "start": 355.55999755859375,
+        "end": 358.0799865722656,
         "wordTimings": [
             {
                 "word": "Morgen",
-                "start": 355.4599975585937,
+                "start": 355.55999755859375,
                 "end": 356.1000061035156
             },
             {
@@ -4391,20 +4278,20 @@
             {
                 "word": "sprühen",
                 "start": 357.8599853515625,
-                "end": 358.37998657226564
+                "end": 358.0799865722656
             }
         ],
         "translationEn": "Tomorrow morning at 8 o'clock we will spray once.",
         "translationVi": "Sáng mai lúc 8 giờ, chúng ta sẽ phun một lần."
     },
     {
-        "text": "und dann noch einmal 5 Minuten später.",
-        "start": 357.9799865722656,
-        "end": 360.37998657226564,
+        "text": "und dann noch einmal 5 Minuten später. Darum geht es also.",
+        "start": 358.0799865722656,
+        "end": 365.7200012207031,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 357.9799865722656,
+                "start": 358.0799865722656,
                 "end": 358.3800048828125
             },
             {
@@ -4435,20 +4322,11 @@
             {
                 "word": "später.",
                 "start": 359.9200134277344,
-                "end": 360.37998657226564
-            }
-        ],
-        "translationEn": "and then again 5 minutes later.",
-        "translationVi": "và sau đó thêm một lần nữa sau 5 phút."
-    },
-    {
-        "text": "Darum geht es also.",
-        "start": 364.41998901367185,
-        "end": 366.02000122070314,
-        "wordTimings": [
+                "end": 360.0799865722656
+            },
             {
                 "word": "Darum",
-                "start": 364.41998901367185,
+                "start": 364.5199890136719,
                 "end": 365.0199890136719
             },
             {
@@ -4464,20 +4342,20 @@
             {
                 "word": "also.",
                 "start": 365.3999938964844,
-                "end": 366.02000122070314
+                "end": 365.7200012207031
             }
         ],
-        "translationEn": "So that's what it's about.",
-        "translationVi": "Vì vậy, đó là điều quan trọng."
+        "translationEn": "And then again 5 minutes later. So that's what it's about.",
+        "translationVi": "Và sau đó lại thêm 5 phút nữa. Đó là điều quan trọng."
     },
     {
         "text": "Die Häuser werden einmal im Jahr gewässert, um sie vor Feuer zu schützen.",
-        "start": 365.7599853515625,
-        "end": 369.50001220703126,
+        "start": 365.8599853515625,
+        "end": 369.20001220703125,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 365.7599853515625,
+                "start": 365.8599853515625,
                 "end": 366.05999755859375
             },
             {
@@ -4538,20 +4416,20 @@
             {
                 "word": "schützen.",
                 "start": 369.20001220703125,
-                "end": 369.50001220703126
+                "end": 369.20001220703125
             }
         ],
         "translationEn": "The houses are watered once a year to protect them from fire.",
-        "translationVi": "Các ngôi nhà được tưới nước một lần mỗi năm để bảo vệ chúng khỏi lửa."
+        "translationVi": "Nhà cửa được tưới nước một lần mỗi năm để bảo vệ chúng khỏi lửa."
     },
     {
         "text": "Nur heute, am Tag der Fontäne, hängen Regenwolken über Shirakawago.",
-        "start": 369.82001342773435,
-        "end": 374.6999938964844,
+        "start": 369.9200134277344,
+        "end": 374.3999938964844,
         "wordTimings": [
             {
                 "word": "Nur",
-                "start": 369.82001342773435,
+                "start": 369.9200134277344,
                 "end": 370.2799987792969
             },
             {
@@ -4597,20 +4475,20 @@
             {
                 "word": "Shirakawago.",
                 "start": 373.5,
-                "end": 374.6999938964844
+                "end": 374.3999938964844
             }
         ],
         "translationEn": "Only today, on the day of the fountain, rain clouds hang over Shirakawago.",
         "translationVi": "Chỉ hôm nay, vào ngày của đài phun nước, những đám mây mưa treo lơ lửng trên Shirakawago."
     },
     {
-        "text": "Wollen die jetzt trotz des Regens die Wassersprinkler anmachen?",
-        "start": 377.6999877929687,
-        "end": 381.9199951171875,
+        "text": "Wollen die jetzt trotz des Regens die Wassersprinkler anmachen? Es scheint wirklich loszugehen.",
+        "start": 377.79998779296875,
+        "end": 386.7799987792969,
         "wordTimings": [
             {
                 "word": "Wollen",
-                "start": 377.6999877929687,
+                "start": 377.79998779296875,
                 "end": 377.79998779296875
             },
             {
@@ -4651,20 +4529,11 @@
             {
                 "word": "anmachen?",
                 "start": 381.1400146484375,
-                "end": 381.9199951171875
-            }
-        ],
-        "translationEn": "Do they want to turn on the sprinklers now despite the rain?",
-        "translationVi": "Họ có muốn bật vòi phun nước mặc dù trời đang mưa không?"
-    },
-    {
-        "text": "Es scheint wirklich loszugehen.",
-        "start": 384.82001342773435,
-        "end": 387.0799987792969,
-        "wordTimings": [
+                "end": 381.6199951171875
+            },
             {
                 "word": "Es",
-                "start": 384.82001342773435,
+                "start": 384.9200134277344,
                 "end": 385.55999755859375
             },
             {
@@ -4680,20 +4549,20 @@
             {
                 "word": "loszugehen.",
                 "start": 386.3599853515625,
-                "end": 387.0799987792969
+                "end": 386.7799987792969
             }
         ],
-        "translationEn": "It really seems to be starting.",
-        "translationVi": "Có vẻ như mọi thứ thật sự bắt đầu."
+        "translationEn": "Do they really want to turn on the sprinklers now despite the rain? It really seems to be starting.",
+        "translationVi": "Họ có muốn bật vòi phun nước mặc dù trời đang mưa không? Có vẻ như mọi thứ thật sự sắp bắt đầu."
     },
     {
         "text": "Kurz vor 8 kommt auch Akikos Ehemann Tabahiro aus dem Haus",
-        "start": 387.06000366210935,
-        "end": 391.1999938964844,
+        "start": 387.1600036621094,
+        "end": 390.8999938964844,
         "wordTimings": [
             {
                 "word": "Kurz",
-                "start": 387.06000366210935,
+                "start": 387.1600036621094,
                 "end": 387.2799987792969
             },
             {
@@ -4744,7 +4613,7 @@
             {
                 "word": "Haus",
                 "start": 390.739990234375,
-                "end": 391.1999938964844
+                "end": 390.8999938964844
             }
         ],
         "translationEn": "Just before 8, Akiko's husband Tabahiro also leaves the house.",
@@ -4752,12 +4621,12 @@
     },
     {
         "text": "und macht die Löschanlage bereit.",
-        "start": 390.79999389648435,
-        "end": 393.50001220703126,
+        "start": 390.8999938964844,
+        "end": 393.20001220703125,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 390.79999389648435,
+                "start": 390.8999938964844,
                 "end": 391.6000061035156
             },
             {
@@ -4778,7 +4647,7 @@
             {
                 "word": "bereit.",
                 "start": 392.739990234375,
-                "end": 393.50001220703126
+                "end": 393.20001220703125
             }
         ],
         "translationEn": "and prepares the extinguishing system.",
@@ -4786,12 +4655,12 @@
     },
     {
         "text": "Unter dem Dach des Mini-Häuschens eine Art Wasserkanone und Löschschläuche.",
-        "start": 394.139990234375,
-        "end": 399.1599853515625,
+        "start": 394.239990234375,
+        "end": 398.8599853515625,
         "wordTimings": [
             {
                 "word": "Unter",
-                "start": 394.139990234375,
+                "start": 394.239990234375,
                 "end": 394.32000732421875
             },
             {
@@ -4837,20 +4706,20 @@
             {
                 "word": "Löschschläuche.",
                 "start": 398.2200012207031,
-                "end": 399.1599853515625
+                "end": 398.8599853515625
             }
         ],
         "translationEn": "Under the roof of the mini house, a kind of water cannon and fire hoses.",
-        "translationVi": "Dưới mái của ngôi nhà mini có một loại súng nước và ống chữa cháy."
+        "translationVi": "Dưới mái của ngôi nhà nhỏ có một loại súng nước và ống chữa cháy."
     },
     {
         "text": "Wir machen uns hier jeden Tag Gedanken über die Brandgefahr.",
-        "start": 401.17999877929685,
-        "end": 404.1800048828125,
+        "start": 401.2799987792969,
+        "end": 403.8800048828125,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 401.17999877929685,
+                "start": 401.2799987792969,
                 "end": 401.9200134277344
             },
             {
@@ -4896,7 +4765,7 @@
             {
                 "word": "Brandgefahr.",
                 "start": 403.67999267578125,
-                "end": 404.1800048828125
+                "end": 403.8800048828125
             }
         ],
         "translationEn": "We think about the fire hazard here every day.",
@@ -4904,12 +4773,12 @@
     },
     {
         "text": "Wenn dieser Test hier vorbei ist, können wir endlich entspannt in den Winter starten.",
-        "start": 404.2800048828125,
-        "end": 408.3,
+        "start": 404.3800048828125,
+        "end": 408,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 404.2800048828125,
+                "start": 404.3800048828125,
                 "end": 404.70001220703125
             },
             {
@@ -4975,20 +4844,20 @@
             {
                 "word": "starten.",
                 "start": 407.55999755859375,
-                "end": 408.3
+                "end": 408
             }
         ],
-        "translationEn": "Once this test is over, we can finally start the winter relaxed.",
+        "translationEn": "When this test is over, we can finally start the winter relaxed.",
         "translationVi": "Khi bài kiểm tra này kết thúc, chúng ta cuối cùng có thể bắt đầu mùa đông một cách thoải mái."
     },
     {
         "text": "Und dann ist es soweit.",
-        "start": 411.139990234375,
-        "end": 413.13999633789064,
+        "start": 411.239990234375,
+        "end": 412.8399963378906,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 411.139990234375,
+                "start": 411.239990234375,
                 "end": 411.7799987792969
             },
             {
@@ -5009,7 +4878,7 @@
             {
                 "word": "soweit.",
                 "start": 412.5400085449219,
-                "end": 413.13999633789064
+                "end": 412.8399963378906
             }
         ],
         "translationEn": "And then the time has come.",
@@ -5017,12 +4886,12 @@
     },
     {
         "text": "Um Punkt 8 Uhr ertönt das Signal.",
-        "start": 413.139990234375,
-        "end": 415.1800048828125,
+        "start": 413.239990234375,
+        "end": 414.8800048828125,
         "wordTimings": [
             {
                 "word": "Um",
-                "start": 413.139990234375,
+                "start": 413.239990234375,
                 "end": 413.3399963378906
             },
             {
@@ -5053,20 +4922,20 @@
             {
                 "word": "Signal.",
                 "start": 414.6400146484375,
-                "end": 415.1800048828125
+                "end": 414.8800048828125
             }
         ],
-        "translationEn": "At exactly 8 o'clock, the signal sounds.",
+        "translationEn": "At 8 o'clock, the signal sounds.",
         "translationVi": "Vào đúng 8 giờ, tín hiệu vang lên."
     },
     {
         "text": "Und Tabahiro und sein Nachbar drehen den Hahn auf.",
-        "start": 416.139990234375,
-        "end": 419.78001098632814,
+        "start": 416.239990234375,
+        "end": 419.4800109863281,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 416.139990234375,
+                "start": 416.239990234375,
                 "end": 416.79998779296875
             },
             {
@@ -5107,7 +4976,7 @@
             {
                 "word": "auf.",
                 "start": 419.1199951171875,
-                "end": 419.78001098632814
+                "end": 419.4800109863281
             }
         ],
         "translationEn": "And Tabahiro and his neighbor turn on the tap.",
@@ -5115,12 +4984,12 @@
     },
     {
         "text": "Das Wasser spritzt jetzt überall mit voller Wucht aus der Löschanlage.",
-        "start": 419.79999389648435,
-        "end": 423.9199951171875,
+        "start": 419.8999938964844,
+        "end": 423.6199951171875,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 419.79999389648435,
+                "start": 419.8999938964844,
                 "end": 420.2200012207031
             },
             {
@@ -5136,11 +5005,11 @@
             {
                 "word": "jetzt",
                 "start": 420.9599914550781,
-                "end": 421.4200134277344
+                "end": 421.4599914550781
             },
             {
                 "word": "überall",
-                "start": 421.4200134277344,
+                "start": 421.4599914550781,
                 "end": 421.7200012207031
             },
             {
@@ -5171,20 +5040,20 @@
             {
                 "word": "Löschanlage.",
                 "start": 423.1000061035156,
-                "end": 423.9199951171875
+                "end": 423.6199951171875
             }
         ],
-        "translationEn": "The water is now spraying everywhere with full force from the sprinkler system.",
-        "translationVi": "Nước bắn ra khắp nơi với sức mạnh đầy đủ từ hệ thống chữa cháy."
+        "translationEn": "The water is now spraying everywhere with full force from the fire suppression system.",
+        "translationVi": "Nước bắn tung tóe khắp nơi với sức mạnh đầy đủ từ hệ thống chữa cháy."
     },
     {
         "text": "Und darum geht es.",
-        "start": 426.1000122070312,
-        "end": 428.00001220703126,
+        "start": 426.20001220703125,
+        "end": 427.70001220703125,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 426.1000122070312,
+                "start": 426.20001220703125,
                 "end": 426.760009765625
             },
             {
@@ -5200,7 +5069,7 @@
             {
                 "word": "es.",
                 "start": 427.44000244140625,
-                "end": 428.00001220703126
+                "end": 427.70001220703125
             }
         ],
         "translationEn": "And that's what it's about.",
@@ -5208,12 +5077,12 @@
     },
     {
         "text": "Das Ganze ist eine Übung, um zu checken, ob die Wasserleitungen frei sind",
-        "start": 427.67999877929685,
-        "end": 431.85999755859376,
+        "start": 427.7799987792969,
+        "end": 431.55999755859375,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 427.67999877929685,
+                "start": 427.7799987792969,
                 "end": 428
             },
             {
@@ -5274,20 +5143,20 @@
             {
                 "word": "sind",
                 "start": 431.2200012207031,
-                "end": 431.85999755859376
+                "end": 431.55999755859375
             }
         ],
         "translationEn": "The whole thing is an exercise to check if the water pipes are clear.",
-        "translationVi": "Toàn bộ là một bài tập để kiểm tra xem các ống dẫn nước có thông thoáng không."
+        "translationVi": "Tất cả chỉ là một bài tập để kiểm tra xem các ống nước có thông thoáng không."
     },
     {
         "text": "und der Wasserdruck stimmt.",
-        "start": 431.7800048828125,
-        "end": 433.3199890136719,
+        "start": 431.8800048828125,
+        "end": 433.0199890136719,
         "wordTimings": [
             {
                 "word": "und",
-                "start": 431.7800048828125,
+                "start": 431.8800048828125,
                 "end": 432.0199890136719
             },
             {
@@ -5303,20 +5172,20 @@
             {
                 "word": "stimmt.",
                 "start": 432.6600036621094,
-                "end": 433.3199890136719
+                "end": 433.0199890136719
             }
         ],
         "translationEn": "and the water pressure is right.",
         "translationVi": "và áp lực nước đúng."
     },
     {
-        "text": "Trotzdem wundern wir uns nochmal,",
-        "start": 433.4,
-        "end": 435.560009765625,
+        "text": "Trotzdem wundern wir uns nochmal, denn der Wasserstrahl richtet sich nicht auf das Haus,",
+        "start": 433.5,
+        "end": 437.6000061035156,
         "wordTimings": [
             {
                 "word": "Trotzdem",
-                "start": 433.4,
+                "start": 433.5,
                 "end": 433.94000244140625
             },
             {
@@ -5337,20 +5206,11 @@
             {
                 "word": "nochmal,",
                 "start": 434.8800048828125,
-                "end": 435.560009765625
-            }
-        ],
-        "translationEn": "Nevertheless, we are surprised again,",
-        "translationVi": "Tuy nhiên, chúng tôi vẫn cảm thấy ngạc nhiên một lần nữa,"
-    },
-    {
-        "text": "denn der Wasserstrahl richtet sich nicht auf das Haus,",
-        "start": 435.41998901367185,
-        "end": 437.90000610351564,
-        "wordTimings": [
+                "end": 435.260009765625
+            },
             {
                 "word": "denn",
-                "start": 435.41998901367185,
+                "start": 435.5199890136719,
                 "end": 435.6199951171875
             },
             {
@@ -5391,20 +5251,20 @@
             {
                 "word": "Haus,",
                 "start": 437.5400085449219,
-                "end": 437.90000610351564
+                "end": 437.6000061035156
             }
         ],
-        "translationEn": "for the water jet does not aim at the house,",
-        "translationVi": "bởi vì dòng nước không chĩa vào ngôi nhà,"
+        "translationEn": "Nevertheless, we are still surprised, because the water jet is not directed at the house,",
+        "translationVi": "Tuy nhiên, chúng tôi vẫn cảm thấy ngạc nhiên, vì tia nước không hướng vào ngôi nhà,"
     },
     {
-        "text": "sondern in die entgegengesetzte Richtung.",
-        "start": 437.7399963378906,
-        "end": 440.2200134277344,
+        "text": "sondern in die entgegengesetzte Richtung. Wasser kann Dächer beschädigen.",
+        "start": 437.8399963378906,
+        "end": 443.79998779296875,
         "wordTimings": [
             {
                 "word": "sondern",
-                "start": 437.7399963378906,
+                "start": 437.8399963378906,
                 "end": 437.9800109863281
             },
             {
@@ -5425,20 +5285,11 @@
             {
                 "word": "Richtung.",
                 "start": 439.5799865722656,
-                "end": 440.2200134277344
-            }
-        ],
-        "translationEn": "but in the opposite direction.",
-        "translationVi": "mà theo hướng ngược lại."
-    },
-    {
-        "text": "Wasser kann Dächer beschädigen.",
-        "start": 441.9,
-        "end": 444.09998779296876,
-        "wordTimings": [
+                "end": 439.9200134277344
+            },
             {
                 "word": "Wasser",
-                "start": 441.9,
+                "start": 442,
                 "end": 442.5199890136719
             },
             {
@@ -5454,20 +5305,20 @@
             {
                 "word": "beschädigen.",
                 "start": 443.29998779296875,
-                "end": 444.09998779296876
+                "end": 443.79998779296875
             }
         ],
-        "translationEn": "Water can damage roofs.",
-        "translationVi": "Nước có thể làm hỏng mái nhà."
+        "translationEn": "but in the opposite direction. Water can damage roofs.",
+        "translationVi": "mà theo hướng ngược lại. Nước có thể làm hỏng mái nhà."
     },
     {
         "text": "Da würden wir es bei einem echten Brand auf die Dächer versprühen.",
-        "start": 444.0000061035156,
-        "end": 446.97999267578126,
+        "start": 444.1000061035156,
+        "end": 446.67999267578125,
         "wordTimings": [
             {
                 "word": "Da",
-                "start": 444.0000061035156,
+                "start": 444.1000061035156,
                 "end": 444.32000732421875
             },
             {
@@ -5523,20 +5374,20 @@
             {
                 "word": "versprühen.",
                 "start": 446.1600036621094,
-                "end": 446.97999267578126
+                "end": 446.67999267578125
             }
         ],
         "translationEn": "In a real fire, we would spray it on the roofs.",
-        "translationVi": "Chúng tôi sẽ phun nó lên mái nhà trong trường hợp có hỏa hoạn thực sự."
+        "translationVi": "Chúng tôi sẽ phun nó lên mái nhà trong một vụ cháy thật sự."
     },
     {
         "text": "Aber während der Übung sprühen wir es auf die Berge.",
-        "start": 447.1999877929687,
-        "end": 449.6999938964844,
+        "start": 447.29998779296875,
+        "end": 449.3999938964844,
         "wordTimings": [
             {
                 "word": "Aber",
-                "start": 447.1999877929687,
+                "start": 447.29998779296875,
                 "end": 447.739990234375
             },
             {
@@ -5582,7 +5433,7 @@
             {
                 "word": "Berge.",
                 "start": 449.3999938964844,
-                "end": 449.6999938964844
+                "end": 449.3999938964844
             }
         ],
         "translationEn": "But during the exercise, we spray it on the mountains.",
@@ -5590,12 +5441,12 @@
     },
     {
         "text": "Und die Wasserwerfer dort versprühen Wasser auf die Felder.",
-        "start": 449.639990234375,
-        "end": 452.560009765625,
+        "start": 449.739990234375,
+        "end": 452.260009765625,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 449.639990234375,
+                "start": 449.739990234375,
                 "end": 449.8800048828125
             },
             {
@@ -5636,7 +5487,7 @@
             {
                 "word": "Felder.",
                 "start": 452.239990234375,
-                "end": 452.560009765625
+                "end": 452.260009765625
             }
         ],
         "translationEn": "And the water cannons there spray water on the fields.",
@@ -5644,12 +5495,12 @@
     },
     {
         "text": "Wir sprühen es nicht auf die Dächer.",
-        "start": 452.7399963378906,
-        "end": 454.74000244140626,
+        "start": 452.8399963378906,
+        "end": 454.44000244140625,
         "wordTimings": [
             {
                 "word": "Wir",
-                "start": 452.7399963378906,
+                "start": 452.8399963378906,
                 "end": 453.0199890136719
             },
             {
@@ -5680,7 +5531,7 @@
             {
                 "word": "Dächer.",
                 "start": 454.44000244140625,
-                "end": 454.74000244140626
+                "end": 454.44000244140625
             }
         ],
         "translationEn": "We don't spray it on the roofs.",
@@ -5688,12 +5539,12 @@
     },
     {
         "text": "Nach 15 Minuten ist alles vorbei.",
-        "start": 455.82001342773435,
-        "end": 458.4600036621094,
+        "start": 455.9200134277344,
+        "end": 458.1600036621094,
         "wordTimings": [
             {
                 "word": "Nach",
-                "start": 455.82001342773435,
+                "start": 455.9200134277344,
                 "end": 456.55999755859375
             },
             {
@@ -5719,7 +5570,7 @@
             {
                 "word": "vorbei.",
                 "start": 457.8599853515625,
-                "end": 458.4600036621094
+                "end": 458.1600036621094
             }
         ],
         "translationEn": "After 15 minutes, everything is over.",
@@ -5727,12 +5578,12 @@
     },
     {
         "text": "Auch dieses Jahr hat die Löschanlage funktioniert.",
-        "start": 458.32001342773435,
-        "end": 460.87998657226564,
+        "start": 458.4200134277344,
+        "end": 460.5799865722656,
         "wordTimings": [
             {
                 "word": "Auch",
-                "start": 458.32001342773435,
+                "start": 458.4200134277344,
                 "end": 458.5799865722656
             },
             {
@@ -5763,7 +5614,7 @@
             {
                 "word": "funktioniert.",
                 "start": 459.9200134277344,
-                "end": 460.87998657226564
+                "end": 460.5799865722656
             }
         ],
         "translationEn": "The extinguishing system has also worked this year.",
@@ -5771,12 +5622,12 @@
     },
     {
         "text": "Und die Otas und ihre Nachbarn sind beruhigt.",
-        "start": 461.67999877929685,
-        "end": 465.12000732421876,
+        "start": 461.7799987792969,
+        "end": 464.82000732421875,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 461.67999877929685,
+                "start": 461.7799987792969,
                 "end": 462.1000061035156
             },
             {
@@ -5812,20 +5663,20 @@
             {
                 "word": "beruhigt.",
                 "start": 464.32000732421875,
-                "end": 465.12000732421876
+                "end": 464.82000732421875
             }
         ],
         "translationEn": "And the Otas and their neighbors are relieved.",
         "translationVi": "Và các Otas cùng với hàng xóm của họ cảm thấy yên tâm."
     },
     {
-        "text": "Dann bis nächstes Jahr.",
-        "start": 466.5000061035156,
-        "end": 468.35999755859376,
+        "text": "Dann bis nächstes Jahr, Übung bestanden.",
+        "start": 466.6000061035156,
+        "end": 469.8800048828125,
         "wordTimings": [
             {
                 "word": "Dann",
-                "start": 466.5000061035156,
+                "start": 466.6000061035156,
                 "end": 467.239990234375
             },
             {
@@ -5839,41 +5690,32 @@
                 "end": 467.79998779296875
             },
             {
-                "word": "Jahr.",
+                "word": "Jahr,",
                 "start": 467.79998779296875,
-                "end": 468.35999755859376
-            }
-        ],
-        "translationEn": "See you next year.",
-        "translationVi": "Vậy hẹn gặp lại vào năm sau."
-    },
-    {
-        "text": "Übung bestanden.",
-        "start": 469.2800048828125,
-        "end": 470.1800048828125,
-        "wordTimings": [
+                "end": 468.05999755859375
+            },
             {
                 "word": "Übung",
-                "start": 469.2800048828125,
+                "start": 469.3800048828125,
                 "end": 469.3800048828125
             },
             {
                 "word": "bestanden.",
                 "start": 469.3800048828125,
-                "end": 470.1800048828125
+                "end": 469.8800048828125
             }
         ],
-        "translationEn": "Exercise passed.",
-        "translationVi": "Đã vượt qua bài tập."
+        "translationEn": "See you next year, passed the exam.",
+        "translationVi": "Vậy hẹn gặp lại năm sau, đã vượt qua bài kiểm tra."
     },
     {
         "text": "Und ein ganz bisschen machen die Einwohner die Fontäne einmal im Jahr dann wohl auch für die Touristen.",
-        "start": 470.2599853515625,
-        "end": 475.8400085449219,
+        "start": 470.3399963378906,
+        "end": 475.5400085449219,
         "wordTimings": [
             {
                 "word": "Und",
-                "start": 470.2599853515625,
+                "start": 470.3399963378906,
                 "end": 470.5
             },
             {
@@ -5959,20 +5801,20 @@
             {
                 "word": "Touristen.",
                 "start": 475.1199951171875,
-                "end": 475.8400085449219
+                "end": 475.5400085449219
             }
         ],
-        "translationEn": "And a little bit, the residents probably also operate the fountain once a year for the tourists.",
-        "translationVi": "Và một chút xíu, cư dân cũng làm cho đài phun nước một lần mỗi năm dành cho khách du lịch."
+        "translationEn": "And just a little bit, the residents probably also operate the fountain once a year for the tourists.",
+        "translationVi": "Và một chút nữa, cư dân cũng làm cho đài phun nước một lần mỗi năm dành cho khách du lịch."
     },
     {
         "text": "Auch wenn in diesem Jahr wegen des Regens nicht so viele da waren wie sonst.",
-        "start": 476.2800048828125,
-        "end": 480.37998657226564,
+        "start": 476.3800048828125,
+        "end": 480.0799865722656,
         "wordTimings": [
             {
                 "word": "Auch",
-                "start": 476.2800048828125,
+                "start": 476.3800048828125,
                 "end": 476.5
             },
             {
@@ -5993,11 +5835,11 @@
             {
                 "word": "Jahr",
                 "start": 476.9599914550781,
-                "end": 477.20001220703125
+                "end": 477.17999267578125
             },
             {
                 "word": "wegen",
-                "start": 477.20001220703125,
+                "start": 477.17999267578125,
                 "end": 477.5
             },
             {
@@ -6043,10 +5885,10 @@
             {
                 "word": "sonst.",
                 "start": 479.760009765625,
-                "end": 480.37998657226564
+                "end": 480.0799865722656
             }
         ],
         "translationEn": "Even though there weren't as many there this year because of the rain as there usually are.",
-        "translationVi": "Dù năm nay vì mưa nên không có nhiều người như mọi khi."
+        "translationVi": "Dù năm nay do mưa nên không có nhiều người như mọi khi."
     }
 ]

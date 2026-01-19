@@ -1,8 +1,8 @@
 [
     {
         "text": "Ich versuche ein bisschen, dass die Mama immer noch die Mama bleibt.",
-        "start": 0,
-        "end": 4.660000133514404,
+        "start": 4.360000133514404,
+        "end": 4.360000133514404,
         "wordTimings": [
             {
                 "word": "Ich",
@@ -62,7 +62,7 @@
             {
                 "word": "bleibt.",
                 "start": 4.159999847412109,
-                "end": 4.660000133514404
+                "end": 4.360000133514404
             }
         ],
         "translationEn": "I try a little to ensure that Mom still remains Mom.",
@@ -70,12 +70,12 @@
     },
     {
         "text": "Wenn sie es nicht selbst machen kann, dann mache ich es für sie.",
-        "start": 4.340000057220459,
-        "end": 7.039999771118164,
+        "start": 4.440000057220459,
+        "end": 6.739999771118164,
         "wordTimings": [
             {
                 "word": "Wenn",
-                "start": 4.340000057220459,
+                "start": 4.440000057220459,
                 "end": 4.579999923706055
             },
             {
@@ -136,69 +136,20 @@
             {
                 "word": "sie.",
                 "start": 6.579999923706055,
-                "end": 7.039999771118164
+                "end": 6.739999771118164
             }
         ],
         "translationEn": "If she can't do it herself, then I'll do it for her.",
-        "translationVi": "Nếu cô ấy không thể tự làm, thì tôi sẽ làm điều đó cho cô ấy."
-    },
-    {
-        "text": "Untertitel im Auftrag des ZDF für funk 2017.",
-        "start": 9.679999732971192,
-        "end": 11.999999809265137,
-        "wordTimings": [
-            {
-                "word": "Untertitel",
-                "start": 9.679999732971192,
-                "end": 10.260000228881836
-            },
-            {
-                "word": "im",
-                "start": 10.260000228881836,
-                "end": 10.260000228881836
-            },
-            {
-                "word": "Auftrag",
-                "start": 10.260000228881836,
-                "end": 10.260000228881836
-            },
-            {
-                "word": "des",
-                "start": 10.260000228881836,
-                "end": 10.260000228881836
-            },
-            {
-                "word": "ZDF",
-                "start": 10.260000228881836,
-                "end": 10.260000228881836
-            },
-            {
-                "word": "für",
-                "start": 10.260000228881836,
-                "end": 11.699999809265137
-            },
-            {
-                "word": "funk",
-                "start": 11.699999809265137,
-                "end": 11.699999809265137
-            },
-            {
-                "word": "2017.",
-                "start": 11.699999809265137,
-                "end": 11.999999809265137
-            }
-        ],
-        "translationEn": "Subtitles commissioned by ZDF for funk 2017.",
-        "translationVi": "Phụ đề theo yêu cầu của ZDF cho funk năm 2017."
+        "translationVi": "Nếu cô ấy không thể tự làm, thì tôi sẽ làm cho cô ấy."
     },
     {
         "text": "Zurück. Das ist für die Mama bequemer.",
-        "start": 12.379999542236328,
-        "end": 15.180000114440919,
+        "start": 12.479999542236328,
+        "end": 14.880000114440918,
         "wordTimings": [
             {
                 "word": "Zurück.",
-                "start": 12.379999542236328,
+                "start": 12.479999542236328,
                 "end": 12.960000038146973
             },
             {
@@ -229,20 +180,20 @@
             {
                 "word": "bequemer.",
                 "start": 14.15999984741211,
-                "end": 15.180000114440919
+                "end": 14.880000114440918
             }
         ],
-        "translationEn": "Back. This is more comfortable for Mom.",
-        "translationVi": "Quay lại. Điều này tiện lợi hơn cho mẹ."
+        "translationEn": "Back. This is more comfortable for mom.",
+        "translationVi": "Quay lại. Điều này thuận tiện hơn cho mẹ."
     },
     {
-        "text": "Das ist noch nicht so ganz ihre Uhrzeit.",
-        "start": 16.320000076293944,
-        "end": 19.820000457763673,
+        "text": "Das ist noch nicht so ganz ihre Uhrzeit. Meistens nach dem Mittagessen.",
+        "start": 16.420000076293945,
+        "end": 21.8799991607666,
         "wordTimings": [
             {
                 "word": "Das",
-                "start": 16.320000076293944,
+                "start": 16.420000076293945,
                 "end": 16.739999771118164
             },
             {
@@ -278,20 +229,11 @@
             {
                 "word": "Uhrzeit.",
                 "start": 18.81999969482422,
-                "end": 19.820000457763673
-            }
-        ],
-        "translationEn": "That's not quite her time yet.",
-        "translationVi": "Đó vẫn chưa phải là thời gian của cô ấy."
-    },
-    {
-        "text": "Meistens nach dem Mittagessen.",
-        "start": 20.160000228881835,
-        "end": 22.179999160766602,
-        "wordTimings": [
+                "end": 19.520000457763672
+            },
             {
                 "word": "Meistens",
-                "start": 20.160000228881835,
+                "start": 20.260000228881836,
                 "end": 20.700000762939453
             },
             {
@@ -307,20 +249,20 @@
             {
                 "word": "Mittagessen.",
                 "start": 21.18000030517578,
-                "end": 22.179999160766602
+                "end": 21.8799991607666
             }
         ],
-        "translationEn": "Most often after lunch.",
-        "translationVi": "Thường thì sau bữa trưa."
+        "translationEn": "That's not quite her time yet. Usually after lunch.",
+        "translationVi": "Đó chưa phải là thời gian của cô ấy. Thường thì sau bữa trưa."
     },
     {
         "text": "Was würdest du sagen, wie geht es ihr heute?",
-        "start": 22.660000228881835,
-        "end": 25.099999237060548,
+        "start": 22.760000228881836,
+        "end": 24.799999237060547,
         "wordTimings": [
             {
                 "word": "Was",
-                "start": 22.660000228881835,
+                "start": 22.760000228881836,
                 "end": 23.239999771118164
             },
             {
@@ -361,39 +303,30 @@
             {
                 "word": "heute?",
                 "start": 24.399999618530273,
-                "end": 25.099999237060548
+                "end": 24.799999237060547
             }
         ],
         "translationEn": "What would you say, how is she doing today?",
         "translationVi": "Bạn sẽ nói gì, hôm nay cô ấy thế nào?"
     },
     {
-        "text": "Ach, entspannt.",
-        "start": 26.639999771118163,
-        "end": 27.859999465942384,
+        "text": "Ach, entspannt. Ja, ja, ja, alles gut. Ganz friedlich am Schlafen.",
+        "start": 26.739999771118164,
+        "end": 31,
         "wordTimings": [
             {
                 "word": "Ach,",
-                "start": 26.639999771118163,
+                "start": 26.739999771118164,
                 "end": 27.219999313354492
             },
             {
                 "word": "entspannt.",
                 "start": 27.219999313354492,
-                "end": 27.859999465942384
-            }
-        ],
-        "translationEn": "Ah, relaxed.",
-        "translationVi": "À, thư giãn."
-    },
-    {
-        "text": "Ja, ja, ja, alles gut.",
-        "start": 27.45999946594238,
-        "end": 30.340000915527344,
-        "wordTimings": [
+                "end": 27.559999465942383
+            },
             {
                 "word": "Ja,",
-                "start": 27.45999946594238,
+                "start": 27.559999465942383,
                 "end": 28.260000228881836
             },
             {
@@ -414,20 +347,11 @@
             {
                 "word": "gut.",
                 "start": 29.559999465942383,
-                "end": 30.340000915527344
-            }
-        ],
-        "translationEn": "Yes, yes, yes, everything is fine.",
-        "translationVi": "Vâng, vâng, vâng, mọi thứ đều ổn."
-    },
-    {
-        "text": "Ganz friedlich am Schlafen.",
-        "start": 30.139999771118163,
-        "end": 31.3,
-        "wordTimings": [
+                "end": 30.040000915527344
+            },
             {
                 "word": "Ganz",
-                "start": 30.139999771118163,
+                "start": 30.239999771118164,
                 "end": 30.479999542236328
             },
             {
@@ -443,20 +367,20 @@
             {
                 "word": "Schlafen.",
                 "start": 30.920000076293945,
-                "end": 31.3
+                "end": 31
             }
         ],
-        "translationEn": "Sleeping peacefully.",
-        "translationVi": "Hoàn toàn yên bình khi ngủ."
+        "translationEn": "Ah, relaxed. Yes, yes, yes, all good. Sleeping peacefully.",
+        "translationVi": "À, thư giãn. Vâng, vâng, vâng, mọi thứ đều ổn. Hoàn toàn bình yên khi ngủ."
     },
     {
         "text": "Wie war sie denn früher?",
-        "start": 31.020000839233397,
-        "end": 33.599999237060544,
+        "start": 31.1200008392334,
+        "end": 33.29999923706055,
         "wordTimings": [
             {
                 "word": "Wie",
-                "start": 31.020000839233397,
+                "start": 31.1200008392334,
                 "end": 31.440000534057617
             },
             {
@@ -477,20 +401,20 @@
             {
                 "word": "früher?",
                 "start": 32.97999954223633,
-                "end": 33.599999237060544
+                "end": 33.29999923706055
             }
         ],
         "translationEn": "How was she back then?",
-        "translationVi": "Cô ấy trước đây như thế nào?"
+        "translationVi": "Cô ấy đã như thế nào trong quá khứ?"
     },
     {
         "text": "Wie ich? Oder ich bin wie sie?",
-        "start": 33.49999847412109,
-        "end": 37.099999237060544,
+        "start": 33.599998474121094,
+        "end": 36.79999923706055,
         "wordTimings": [
             {
                 "word": "Wie",
-                "start": 33.49999847412109,
+                "start": 33.599998474121094,
                 "end": 33.81999969482422
             },
             {
@@ -521,20 +445,20 @@
             {
                 "word": "sie?",
                 "start": 36.560001373291016,
-                "end": 37.099999237060544
+                "end": 36.79999923706055
             }
         ],
-        "translationEn": "Am I like this? Or am I like them?",
+        "translationEn": "How am I? Or am I like them?",
         "translationVi": "Tôi như thế nào? Hay tôi giống như họ?"
     },
     {
         "text": "Ja, die Mama, die ist tatsächlich eine sehr toughe Frau.",
-        "start": 38.21999969482422,
-        "end": 41.84000091552734,
+        "start": 38.31999969482422,
+        "end": 41.540000915527344,
         "wordTimings": [
             {
                 "word": "Ja,",
-                "start": 38.21999969482422,
+                "start": 38.31999969482422,
                 "end": 38.65999984741211
             },
             {
@@ -580,20 +504,20 @@
             {
                 "word": "Frau.",
                 "start": 41.540000915527344,
-                "end": 41.84000091552734
+                "end": 41.540000915527344
             }
         ],
         "translationEn": "Yes, the mom is actually a very tough woman.",
-        "translationVi": "Vâng, mẹ thực sự là một người phụ nữ rất mạnh mẽ."
+        "translationVi": "Vâng, mẹ thật sự là một người phụ nữ rất mạnh mẽ."
     },
     {
-        "text": "Die war unser Kapitän auf dem Schiff.",
-        "start": 41.94000091552734,
-        "end": 44.25999908447265,
+        "text": "Die war unser Kapitän auf dem Schiff, die war unsere Managerin.",
+        "start": 42.040000915527344,
+        "end": 45.41999816894531,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 41.94000091552734,
+                "start": 42.040000915527344,
                 "end": 42.400001525878906
             },
             {
@@ -622,22 +546,13 @@
                 "end": 43.7599983215332
             },
             {
-                "word": "Schiff.",
+                "word": "Schiff,",
                 "start": 43.7599983215332,
-                "end": 44.25999908447265
-            }
-        ],
-        "translationEn": "She was our captain on the ship.",
-        "translationVi": "Cô ấy là thuyền trưởng của chúng tôi trên con tàu."
-    },
-    {
-        "text": "Die war unsere Managerin.",
-        "start": 44.019998931884764,
-        "end": 45.71999816894531,
-        "wordTimings": [
+                "end": 43.959999084472656
+            },
             {
-                "word": "Die",
-                "start": 44.019998931884764,
+                "word": "die",
+                "start": 44.119998931884766,
                 "end": 44.18000030517578
             },
             {
@@ -653,20 +568,20 @@
             {
                 "word": "Managerin.",
                 "start": 44.63999938964844,
-                "end": 45.71999816894531
+                "end": 45.41999816894531
             }
         ],
-        "translationEn": "She was our manager.",
-        "translationVi": "Cô ấy là quản lý của chúng tôi."
+        "translationEn": "She was our captain on the ship, she was our manager.",
+        "translationVi": "Cô ấy là thuyền trưởng của chúng tôi trên con tàu, cô ấy là quản lý của chúng tôi."
     },
     {
         "text": "Die hat alles im Griff gehabt, immer top gestylt.",
-        "start": 45.519998931884764,
-        "end": 48.52000122070312,
+        "start": 45.619998931884766,
+        "end": 48.220001220703125,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 45.519998931884764,
+                "start": 45.619998931884766,
                 "end": 46.060001373291016
             },
             {
@@ -707,20 +622,20 @@
             {
                 "word": "gestylt.",
                 "start": 47.63999938964844,
-                "end": 48.52000122070312
+                "end": 48.220001220703125
             }
         ],
-        "translationEn": "She had everything under control, always top styled.",
-        "translationVi": "Cô ấy luôn kiểm soát mọi thứ, lúc nào cũng được chăm sóc kỹ lưỡng."
+        "translationEn": "She had everything under control, always perfectly styled.",
+        "translationVi": "Cô ấy đã kiểm soát mọi thứ, luôn được tạo kiểu hoàn hảo."
     },
     {
-        "text": "Die Haare haben immer gesessen.",
-        "start": 48.699999237060545,
-        "end": 50.64000015258789,
+        "text": "Die Haare haben immer gesessen, die perfekte Föhnfrisur.",
+        "start": 48.79999923706055,
+        "end": 52.2400016784668,
         "wordTimings": [
             {
                 "word": "Die",
-                "start": 48.699999237060545,
+                "start": 48.79999923706055,
                 "end": 49.220001220703125
             },
             {
@@ -739,22 +654,13 @@
                 "end": 49.86000061035156
             },
             {
-                "word": "gesessen.",
+                "word": "gesessen,",
                 "start": 49.86000061035156,
-                "end": 50.64000015258789
-            }
-        ],
-        "translationEn": "The hair has always been on point.",
-        "translationVi": "Tóc luôn được sắp xếp gọn gàng."
-    },
-    {
-        "text": "Die perfekte Föhnfrisur, der Lippenstift hat gepasst.",
-        "start": 50.74000015258789,
-        "end": 53.98000030517578,
-        "wordTimings": [
+                "end": 50.34000015258789
+            },
             {
-                "word": "Die",
-                "start": 50.74000015258789,
+                "word": "die",
+                "start": 50.84000015258789,
                 "end": 51.08000183105469
             },
             {
@@ -763,12 +669,21 @@
                 "end": 51.41999816894531
             },
             {
-                "word": "Föhnfrisur,",
+                "word": "Föhnfrisur.",
                 "start": 51.41999816894531,
                 "end": 52.2400016784668
-            },
+            }
+        ],
+        "translationEn": "The hair has always been on point, the perfect blow-dry hairstyle.",
+        "translationVi": "Tóc luôn được tạo kiểu hoàn hảo, kiểu tóc sấy tuyệt vời."
+    },
+    {
+        "text": "Der Lippenstift hat gepasst, die Nägel waren gemacht.",
+        "start": 52.41999816894531,
+        "end": 54.79999923706055,
+        "wordTimings": [
             {
-                "word": "der",
+                "word": "Der",
                 "start": 52.41999816894531,
                 "end": 52.619998931884766
             },
@@ -783,27 +698,18 @@
                 "end": 53.29999923706055
             },
             {
-                "word": "gepasst.",
+                "word": "gepasst,",
                 "start": 53.29999923706055,
-                "end": 53.98000030517578
-            }
-        ],
-        "translationEn": "The perfect blow-dry hairstyle, the lipstick matched.",
-        "translationVi": "Kiểu tóc sấy hoàn hảo, son môi đã phù hợp."
-    },
-    {
-        "text": "Die Nägel waren gemacht.",
-        "start": 53.71999969482422,
-        "end": 55.099999237060544,
-        "wordTimings": [
+                "end": 53.68000030517578
+            },
             {
-                "word": "Die",
-                "start": 53.71999969482422,
-                "end": 53.959999084472656
+                "word": "die",
+                "start": 53.81999969482422,
+                "end": 54
             },
             {
                 "word": "Nägel",
-                "start": 53.959999084472656,
+                "start": 54,
                 "end": 54.13999938964844
             },
             {
@@ -814,20 +720,20 @@
             {
                 "word": "gemacht.",
                 "start": 54.36000061035156,
-                "end": 55.099999237060544
+                "end": 54.79999923706055
             }
         ],
-        "translationEn": "The nails were done.",
-        "translationVi": "Móng tay đã được làm."
+        "translationEn": "The lipstick matched, the nails were done.",
+        "translationVi": "Son môi đã vừa, móng tay đã được làm."
     },
     {
-        "text": "Wie sind sie jetzt auch?",
-        "start": 55.4,
-        "end": 57.16000061035156,
+        "text": "Wie sind sie jetzt auch? Ja, das wird sofort geführt.",
+        "start": 55.5,
+        "end": 58.900001525878906,
         "wordTimings": [
             {
                 "word": "Wie",
-                "start": 55.4,
+                "start": 55.5,
                 "end": 55.7599983215332
             },
             {
@@ -848,20 +754,11 @@
             {
                 "word": "auch?",
                 "start": 56.279998779296875,
-                "end": 57.16000061035156
-            }
-        ],
-        "translationEn": "How are you now?",
-        "translationVi": "Bây giờ họ như thế nào?"
-    },
-    {
-        "text": "Ja, das wird sofort geführt.",
-        "start": 57.019998931884764,
-        "end": 59.2000015258789,
-        "wordTimings": [
+                "end": 56.86000061035156
+            },
             {
                 "word": "Ja,",
-                "start": 57.019998931884764,
+                "start": 57.119998931884766,
                 "end": 57.439998626708984
             },
             {
@@ -882,10 +779,10 @@
             {
                 "word": "geführt.",
                 "start": 58.47999954223633,
-                "end": 59.2000015258789
+                "end": 58.900001525878906
             }
         ],
-        "translationEn": "Yes, that will be taken care of immediately.",
-        "translationVi": "Vâng, điều đó sẽ được thực hiện ngay lập tức."
+        "translationEn": "How are they doing now? Yes, that will be taken care of immediately.",
+        "translationVi": "Bạn bây giờ thế nào? Vâng, điều đó sẽ được thực hiện ngay lập tức."
     }
 ]

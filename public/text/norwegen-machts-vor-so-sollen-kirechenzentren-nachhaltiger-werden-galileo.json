@@ -1,12 +1,12 @@
 [
     {
-        "text": "Unser Galileo Reporter Mette stellt einer KI Suchmaschine.",
-        "start": 0.9,
-        "end": 4.740000057220459,
+        "text": "Unser Galileo Reporter Mette stellt einer KI-Suchmaschine die Frage aller Fragen: So, warum ist Galileo so toll?",
+        "start": 1,
+        "end": 8.880000114440918,
         "wordTimings": [
             {
                 "word": "Unser",
-                "start": 0.9,
+                "start": 1,
                 "end": 1.600000023841858
             },
             {
@@ -35,27 +35,13 @@
                 "end": 3.4800000190734863
             },
             {
-                "word": "KI",
-                "start": 3.4800000190734863,
-                "end": 3.9200000762939453
+                "word": "KI-Suchmaschine",
+                "start": 3.9200000762939453,
+                "end": 4.440000057220459
             },
             {
-                "word": "Suchmaschine.",
-                "start": 3.9200000762939453,
-                "end": 4.740000057220459
-            }
-        ],
-        "translationEn": "Our Galileo reporter Mette is presenting a search engine to an AI.",
-        "translationVi": "Phóng viên Galileo của chúng tôi, Mette, đang giới thiệu một công cụ tìm kiếm AI."
-    },
-    {
-        "text": "die Frage aller Fragen So warum ist Galileo.",
-        "start": 4.340000057220459,
-        "end": 8.659999656677247,
-        "wordTimings": [
-            {
                 "word": "die",
-                "start": 4.340000057220459,
+                "start": 4.440000057220459,
                 "end": 4.739999771118164
             },
             {
@@ -69,12 +55,12 @@
                 "end": 5.440000057220459
             },
             {
-                "word": "Fragen",
+                "word": "Fragen:",
                 "start": 5.440000057220459,
                 "end": 5.739999771118164
             },
             {
-                "word": "So",
+                "word": "So,",
                 "start": 6.400000095367432,
                 "end": 6.800000190734863
             },
@@ -89,29 +75,29 @@
                 "end": 7.980000019073486
             },
             {
-                "word": "Galileo.",
+                "word": "Galileo",
                 "start": 7.980000019073486,
-                "end": 8.659999656677247
-            }
-        ],
-        "translationEn": "the question of all questions So why is Galileo.",
-        "translationVi": "câu hỏi của mọi câu hỏi Vậy tại sao lại là Galileo."
-    },
-    {
-        "text": "so toll Galileo ist so toll weil es.",
-        "start": 8.259999656677246,
-        "end": 12.480000305175782,
-        "wordTimings": [
+                "end": 8.359999656677246
+            },
             {
                 "word": "so",
-                "start": 8.259999656677246,
+                "start": 8.359999656677246,
                 "end": 8.819999694824219
             },
             {
-                "word": "toll",
+                "word": "toll?",
                 "start": 8.819999694824219,
                 "end": 8.880000114440918
-            },
+            }
+        ],
+        "translationEn": "Our Galileo reporter Mette asks an AI search engine the question of all questions: So, why is Galileo so great?",
+        "translationVi": "Phóng viên Galileo của chúng tôi, Mette, đặt câu hỏi cho một công cụ tìm kiếm AI: Vậy, tại sao Galileo lại tuyệt vời như vậy?"
+    },
+    {
+        "text": "Galileo ist so toll, weil es Wissen auf eine unglaublich spannende und anschauliche Art vermittelt.",
+        "start": 10.279999732971191,
+        "end": 15.279999732971191,
+        "wordTimings": [
             {
                 "word": "Galileo",
                 "start": 10.279999732971191,
@@ -128,7 +114,7 @@
                 "end": 11.4399995803833
             },
             {
-                "word": "toll",
+                "word": "toll,",
                 "start": 11.4399995803833,
                 "end": 11.65999984741211
             },
@@ -138,27 +124,18 @@
                 "end": 11.84000015258789
             },
             {
-                "word": "es.",
+                "word": "es",
                 "start": 11.84000015258789,
-                "end": 12.480000305175782
-            }
-        ],
-        "translationEn": "Galileo is so great because it is.",
-        "translationVi": "Galileo thật tuyệt vời vì nó."
-    },
-    {
-        "text": "Wissen auf eine unglaubliche spannende und anschauliche Art.",
-        "start": 12.080000305175782,
-        "end": 15.199999618530274,
-        "wordTimings": [
+                "end": 12.180000305175781
+            },
             {
                 "word": "Wissen",
-                "start": 12.080000305175782,
-                "end": 12.300000190734863
+                "start": 12.180000305175781,
+                "end": 12.319999694824219
             },
             {
                 "word": "auf",
-                "start": 12.300000190734863,
+                "start": 12.319999694824219,
                 "end": 12.539999961853027
             },
             {
@@ -167,7 +144,7 @@
                 "end": 12.819999694824219
             },
             {
-                "word": "unglaubliche",
+                "word": "unglaublich",
                 "start": 12.819999694824219,
                 "end": 13.5
             },
@@ -187,24 +164,24 @@
                 "end": 14.640000343322754
             },
             {
-                "word": "Art.",
+                "word": "Art",
                 "start": 14.640000343322754,
-                "end": 15.199999618530274
+                "end": 14.899999618530273
+            },
+            {
+                "word": "vermittelt.",
+                "start": 14.899999618530273,
+                "end": 15.279999732971191
             }
         ],
-        "translationEn": "Knowledge in an incredibly exciting and vivid way.",
-        "translationVi": "Kiến thức theo một cách vô cùng thú vị và sinh động."
+        "translationEn": "Galileo is so great because it conveys knowledge in an incredibly exciting and illustrative way.",
+        "translationVi": "Galileo thật tuyệt vời vì nó truyền đạt kiến thức một cách cực kỳ thú vị và sinh động."
     },
     {
-        "text": "vermittelt Das hören wir doch gerne Ist schon.",
-        "start": 14.799999618530274,
-        "end": 17.320000457763673,
+        "text": "Das hören wir doch gerne. Ist schon ganz praktisch, so eine KI zu haben, die dann irgendwie alle Fragen für einen beantwortet.",
+        "start": 15.699999809265137,
+        "end": 21.040000915527344,
         "wordTimings": [
-            {
-                "word": "vermittelt",
-                "start": 14.799999618530274,
-                "end": 15.279999732971191
-            },
             {
                 "word": "Das",
                 "start": 15.699999809265137,
@@ -226,7 +203,7 @@
                 "end": 16.31999969482422
             },
             {
-                "word": "gerne",
+                "word": "gerne.",
                 "start": 16.31999969482422,
                 "end": 16.559999465942383
             },
@@ -236,26 +213,17 @@
                 "end": 16.8799991607666
             },
             {
-                "word": "schon.",
+                "word": "schon",
                 "start": 16.8799991607666,
-                "end": 17.320000457763673
-            }
-        ],
-        "translationEn": "We like to hear that. It's already done.",
-        "translationVi": "Chúng tôi rất vui khi nghe điều đó. Đúng vậy."
-    },
-    {
-        "text": "ganz praktisch so eine KI zu haben die.",
-        "start": 16.92000045776367,
-        "end": 19.259999084472657,
-        "wordTimings": [
+                "end": 17.020000457763672
+            },
             {
                 "word": "ganz",
-                "start": 16.92000045776367,
+                "start": 17.020000457763672,
                 "end": 17.420000076293945
             },
             {
-                "word": "praktisch",
+                "word": "praktisch,",
                 "start": 17.420000076293945,
                 "end": 17.600000381469727
             },
@@ -267,11 +235,11 @@
             {
                 "word": "eine",
                 "start": 17.899999618530273,
-                "end": 18.059999465942383
+                "end": 18.079999923706055
             },
             {
                 "word": "KI",
-                "start": 18.059999465942383,
+                "start": 18.079999923706055,
                 "end": 18.31999969482422
             },
             {
@@ -280,27 +248,18 @@
                 "end": 18.799999237060547
             },
             {
-                "word": "haben",
+                "word": "haben,",
                 "start": 18.799999237060547,
                 "end": 18.799999237060547
             },
             {
-                "word": "die.",
+                "word": "die",
                 "start": 18.8799991607666,
-                "end": 19.259999084472657
-            }
-        ],
-        "translationEn": "It's quite practical to have an AI like that.",
-        "translationVi": "thực sự hữu ích khi có một trí tuệ nhân tạo như vậy."
-    },
-    {
-        "text": "dann irgendwie alle Fragen für einen beantwortet Aber.",
-        "start": 18.859999084472655,
-        "end": 21.859999465942384,
-        "wordTimings": [
+                "end": 18.959999084472656
+            },
             {
                 "word": "dann",
-                "start": 18.859999084472655,
+                "start": 18.959999084472656,
                 "end": 19.1200008392334
             },
             {
@@ -329,27 +288,27 @@
                 "end": 20.299999237060547
             },
             {
-                "word": "beantwortet",
+                "word": "beantwortet.",
                 "start": 20.440000534057617,
                 "end": 21.040000915527344
-            },
-            {
-                "word": "Aber.",
-                "start": 21.200000762939453,
-                "end": 21.859999465942384
             }
         ],
-        "translationEn": "Then somehow answered all questions for one. But.",
-        "translationVi": "thì bằng cách nào đó đã trả lời tất cả các câu hỏi cho một người. Nhưng."
+        "translationEn": "We like to hear that. It's quite convenient to have an AI that somehow answers all questions for you.",
+        "translationVi": "Chúng tôi rất thích nghe điều đó. Thật tiện lợi khi có một trí tuệ nhân tạo như vậy, có thể trả lời mọi câu hỏi cho bạn."
     },
     {
-        "text": "es hat halt leider auch so ein paar.",
-        "start": 21.45999946594238,
-        "end": 23.340000915527344,
+        "text": "Aber es hat halt leider auch so ein paar Probleme, denn nämlich diese einfachen Antworten verbrauchen leider sehr, sehr viel Energie.",
+        "start": 21.200000762939453,
+        "end": 27.8799991607666,
         "wordTimings": [
             {
+                "word": "Aber",
+                "start": 21.200000762939453,
+                "end": 21.559999465942383
+            },
+            {
                 "word": "es",
-                "start": 21.45999946594238,
+                "start": 21.559999465942383,
                 "end": 22.100000381469727
             },
             {
@@ -383,22 +342,13 @@
                 "end": 22.899999618530273
             },
             {
-                "word": "paar.",
+                "word": "paar",
                 "start": 22.899999618530273,
-                "end": 23.340000915527344
-            }
-        ],
-        "translationEn": "Unfortunately, it also has a few like that.",
-        "translationVi": "Thật không may, cũng có một vài điều như vậy."
-    },
-    {
-        "text": "Probleme denn nämlich diese einfachen Antworten verbrauchen leider.",
-        "start": 22.940000915527342,
-        "end": 27.019999313354493,
-        "wordTimings": [
+                "end": 23.040000915527344
+            },
             {
-                "word": "Probleme",
-                "start": 22.940000915527342,
+                "word": "Probleme,",
+                "start": 23.040000915527344,
                 "end": 23.440000534057617
             },
             {
@@ -432,22 +382,13 @@
                 "end": 26.420000076293945
             },
             {
-                "word": "leider.",
+                "word": "leider",
                 "start": 26.420000076293945,
-                "end": 27.019999313354493
-            }
-        ],
-        "translationEn": "Problems, because these simple answers unfortunately consume.",
-        "translationVi": "Vấn đề là những câu trả lời đơn giản này thật sự tiêu tốn thời gian."
-    },
-    {
-        "text": "sehr sehr viel Energie Beispielsweise Chat GPT was.",
-        "start": 26.61999931335449,
-        "end": 30.060000228881837,
-        "wordTimings": [
+                "end": 26.719999313354492
+            },
             {
-                "word": "sehr",
-                "start": 26.61999931335449,
+                "word": "sehr,",
+                "start": 26.719999313354492,
                 "end": 27.15999984741211
             },
             {
@@ -461,10 +402,19 @@
                 "end": 27.540000915527344
             },
             {
-                "word": "Energie",
+                "word": "Energie.",
                 "start": 27.540000915527344,
                 "end": 27.8799991607666
-            },
+            }
+        ],
+        "translationEn": "But unfortunately, it also has a few problems, because these simple answers consume a lot of energy.",
+        "translationVi": "Nhưng thật không may, nó cũng có một vài vấn đề, vì những câu trả lời đơn giản này tiêu tốn rất, rất nhiều năng lượng."
+    },
+    {
+        "text": "Beispielsweise Chat GPT, was ich jetzt gerade verwendet habe, verbraucht rund zehnmal so viel Energie wie eine normale Google-Anfrage.",
+        "start": 27.8799991607666,
+        "end": 33.939998626708984,
+        "wordTimings": [
             {
                 "word": "Beispielsweise",
                 "start": 27.8799991607666,
@@ -476,27 +426,18 @@
                 "end": 29.479999542236328
             },
             {
-                "word": "GPT",
+                "word": "GPT,",
                 "start": 29.479999542236328,
                 "end": 29.6200008392334
             },
             {
-                "word": "was.",
+                "word": "was",
                 "start": 29.65999984741211,
-                "end": 30.060000228881837
-            }
-        ],
-        "translationEn": "a lot of energy, for example, Chat GPT was.",
-        "translationVi": "rất rất nhiều năng lượng Ví dụ như Chat GPT."
-    },
-    {
-        "text": "ich jetzt gerade verwendet habe verbraucht rund zehnmal.",
-        "start": 29.660000228881835,
-        "end": 32.540001678466794,
-        "wordTimings": [
+                "end": 29.760000228881836
+            },
             {
                 "word": "ich",
-                "start": 29.660000228881835,
+                "start": 29.760000228881836,
                 "end": 29.8799991607666
             },
             {
@@ -515,7 +456,7 @@
                 "end": 30.65999984741211
             },
             {
-                "word": "habe",
+                "word": "habe,",
                 "start": 30.65999984741211,
                 "end": 31.100000381469727
             },
@@ -530,22 +471,13 @@
                 "end": 31.920000076293945
             },
             {
-                "word": "zehnmal.",
+                "word": "zehnmal",
                 "start": 31.920000076293945,
-                "end": 32.540001678466794
-            }
-        ],
-        "translationEn": "I have used it about ten times right now.",
-        "translationVi": "Tôi vừa sử dụng khoảng mười lần."
-    },
-    {
-        "text": "so viel Energie wie eine normale Google Anfrage.",
-        "start": 32.140001678466795,
-        "end": 34.73999862670898,
-        "wordTimings": [
+                "end": 32.2400016784668
+            },
             {
                 "word": "so",
-                "start": 32.140001678466795,
+                "start": 32.2400016784668,
                 "end": 32.63999938964844
             },
             {
@@ -574,27 +506,22 @@
                 "end": 33.540000915527344
             },
             {
-                "word": "Google",
+                "word": "Google-Anfrage.",
                 "start": 33.540000915527344,
                 "end": 33.939998626708984
-            },
-            {
-                "word": "Anfrage.",
-                "start": 33.939998626708984,
-                "end": 34.73999862670898
             }
         ],
-        "translationEn": "as much energy as a normal Google query.",
-        "translationVi": "cùng một lượng năng lượng như một truy vấn Google bình thường."
+        "translationEn": "For example, Chat GPT, which I am currently using, consumes about ten times more energy than a regular Google search.",
+        "translationVi": "Chẳng hạn như Chat GPT, mà tôi vừa sử dụng, tiêu tốn khoảng gấp mười lần năng lượng so với một yêu cầu tìm kiếm thông thường trên Google."
     },
     {
-        "text": "Allein bei dem KI Assistenten Chat GPT gibt.",
-        "start": 35.539999389648436,
-        "end": 38.939999389648435,
+        "text": "Allein bei dem KI-Assistenten Chat GPT gibt es laut Entwickler täglich circa 2,5 Milliarden Anfragen.",
+        "start": 35.63999938964844,
+        "end": 42.91999816894531,
         "wordTimings": [
             {
                 "word": "Allein",
-                "start": 35.539999389648436,
+                "start": 35.63999938964844,
                 "end": 35.900001525878906
             },
             {
@@ -608,12 +535,7 @@
                 "end": 36.34000015258789
             },
             {
-                "word": "KI",
-                "start": 36.34000015258789,
-                "end": 36.7599983215332
-            },
-            {
-                "word": "Assistenten",
+                "word": "KI-Assistenten",
                 "start": 36.7599983215332,
                 "end": 37.58000183105469
             },
@@ -628,22 +550,13 @@
                 "end": 38.29999923706055
             },
             {
-                "word": "gibt.",
+                "word": "gibt",
                 "start": 38.29999923706055,
-                "end": 38.939999389648435
-            }
-        ],
-        "translationEn": "There is only the AI assistant Chat GPT.",
-        "translationVi": "Chỉ riêng với trợ lý AI Chat GPT."
-    },
-    {
-        "text": "es laut Entwickler täglich circa 2 5 Milliarden.",
-        "start": 38.539999389648436,
-        "end": 42.71999816894531,
-        "wordTimings": [
+                "end": 38.63999938964844
+            },
             {
                 "word": "es",
-                "start": 38.539999389648436,
+                "start": 38.63999938964844,
                 "end": 38.86000061035156
             },
             {
@@ -667,34 +580,29 @@
                 "end": 40.63999938964844
             },
             {
-                "word": "2",
+                "word": "2,5",
                 "start": 40.63999938964844,
                 "end": 41.13999938964844
             },
             {
-                "word": "5",
-                "start": 41.13999938964844,
-                "end": 41.959999084472656
+                "word": "Milliarden",
+                "start": 41.959999084472656,
+                "end": 42.41999816894531
             },
             {
-                "word": "Milliarden.",
-                "start": 41.959999084472656,
-                "end": 42.71999816894531
+                "word": "Anfragen.",
+                "start": 42.41999816894531,
+                "end": 42.91999816894531
             }
         ],
-        "translationEn": "According to the developers, it is approximately 2.5 billion daily.",
-        "translationVi": "Theo các nhà phát triển, hàng ngày có khoảng 2,5 tỷ."
+        "translationEn": "According to the developers, there are about 2.5 billion requests daily for the AI assistant Chat GPT.",
+        "translationVi": "Chỉ riêng với trợ lý AI Chat GPT, theo các nhà phát triển, có khoảng 2,5 tỷ yêu cầu mỗi ngày."
     },
     {
-        "text": "Anfragen Das verbraucht circa so viel Energie wie.",
-        "start": 42.31999816894531,
-        "end": 46.32000045776367,
+        "text": "Das verbraucht circa so viel Energie wie eine Kleinstadt mit 60.000 Einwohnern.",
+        "start": 43.91999816894531,
+        "end": 49.02000045776367,
         "wordTimings": [
-            {
-                "word": "Anfragen",
-                "start": 42.31999816894531,
-                "end": 42.91999816894531
-            },
             {
                 "word": "Das",
                 "start": 43.91999816894531,
@@ -726,22 +634,13 @@
                 "end": 45.439998626708984
             },
             {
-                "word": "wie.",
+                "word": "wie",
                 "start": 45.439998626708984,
-                "end": 46.32000045776367
-            }
-        ],
-        "translationEn": "Inquiries consume about as much energy as.",
-        "translationVi": "Yêu cầu Điều này tiêu tốn khoảng b ст năng lượng như."
-    },
-    {
-        "text": "eine Kleinstadt mit 60 000 Einwohnern Und durch.",
-        "start": 45.92000045776367,
-        "end": 50.32000045776367,
-        "wordTimings": [
+                "end": 46.02000045776367
+            },
             {
                 "word": "eine",
-                "start": 45.92000045776367,
+                "start": 46.02000045776367,
                 "end": 46.2599983215332
             },
             {
@@ -755,42 +654,37 @@
                 "end": 47.220001220703125
             },
             {
-                "word": "60",
-                "start": 47.220001220703125,
-                "end": 47.97999954223633
-            },
-            {
-                "word": "000",
+                "word": "60.000",
                 "start": 47.97999954223633,
                 "end": 48.20000076293945
             },
             {
-                "word": "Einwohnern",
+                "word": "Einwohnern.",
                 "start": 48.20000076293945,
                 "end": 49.02000045776367
-            },
+            }
+        ],
+        "translationEn": "This consumes about as much energy as a small town with 60,000 inhabitants.",
+        "translationVi": "Nó tiêu tốn khoảng năng lượng tương đương với một thị trấn nhỏ có 60.000 cư dân."
+    },
+    {
+        "text": "Und durch diesen hohen Energieverbrauch braucht man halt riesige Rechenzentren.",
+        "start": 49.70000076293945,
+        "end": 53.060001373291016,
+        "wordTimings": [
             {
                 "word": "Und",
                 "start": 49.70000076293945,
                 "end": 49.939998626708984
             },
             {
-                "word": "durch.",
+                "word": "durch",
                 "start": 49.939998626708984,
-                "end": 50.32000045776367
-            }
-        ],
-        "translationEn": "a small town with 60,000 inhabitants and beyond.",
-        "translationVi": "một thị trấn nhỏ với 60.000 dân và hơn."
-    },
-    {
-        "text": "diesen hohen Energieverbrauch braucht man halt riesige Rechenzentren.",
-        "start": 49.92000045776367,
-        "end": 53.36000137329101,
-        "wordTimings": [
+                "end": 50.02000045776367
+            },
             {
                 "word": "diesen",
-                "start": 49.92000045776367,
+                "start": 50.02000045776367,
                 "end": 50.2599983215332
             },
             {
@@ -826,36 +720,26 @@
             {
                 "word": "Rechenzentren.",
                 "start": 52.220001220703125,
-                "end": 53.36000137329101
+                "end": 53.060001373291016
             }
         ],
-        "translationEn": "Such a high energy consumption requires huge data centers.",
-        "translationVi": "Để tiêu thụ năng lượng cao như vậy, cần phải có những trung tâm dữ liệu khổng lồ."
+        "translationEn": "And due to this high energy consumption, huge data centers are needed.",
+        "translationVi": "Và do mức tiêu thụ năng lượng cao này, người ta cần những trung tâm dữ liệu khổng lồ."
     },
     {
-        "text": "und die Tech Firmen die man diese baut.",
-        "start": 52.960001373291014,
-        "end": 54.89999847412109,
+        "text": "Die Tech-Firmen, die man diese baut, achten halt nicht immer auf wirklich nachhaltige Energieversorgung.",
+        "start": 53.41999816894531,
+        "end": 58.279998779296875,
         "wordTimings": [
             {
-                "word": "und",
-                "start": 52.960001373291014,
-                "end": 53.41999816894531
-            },
-            {
-                "word": "die",
+                "word": "Die",
                 "start": 53.41999816894531,
                 "end": 53.70000076293945
             },
             {
-                "word": "Tech",
+                "word": "Tech-Firmen,",
                 "start": 53.70000076293945,
                 "end": 54.02000045776367
-            },
-            {
-                "word": "Firmen",
-                "start": 54.02000045776367,
-                "end": 54.060001373291016
             },
             {
                 "word": "die",
@@ -873,22 +757,13 @@
                 "end": 54.400001525878906
             },
             {
-                "word": "baut.",
+                "word": "baut,",
                 "start": 54.400001525878906,
-                "end": 54.89999847412109
-            }
-        ],
-        "translationEn": "and the tech companies that build them.",
-        "translationVi": "và các công ty công nghệ xây dựng chúng."
-    },
-    {
-        "text": "achten halt nicht immer auf wirklich nachhaltige Energieversorgung.",
-        "start": 54.71999969482422,
-        "end": 58.57999877929687,
-        "wordTimings": [
+                "end": 54.599998474121094
+            },
             {
                 "word": "achten",
-                "start": 54.71999969482422,
+                "start": 54.81999969482422,
                 "end": 54.939998626708984
             },
             {
@@ -924,24 +799,24 @@
             {
                 "word": "Energieversorgung.",
                 "start": 57.31999969482422,
-                "end": 58.57999877929687
+                "end": 58.279998779296875
             }
         ],
-        "translationEn": "do not always pay attention to truly sustainable energy supply.",
-        "translationVi": "không luôn chú ý đến việc cung cấp năng lượng thực sự bền vững."
+        "translationEn": "The tech companies that build these do not always pay attention to truly sustainable energy supply.",
+        "translationVi": "Các công ty công nghệ xây dựng những thứ này không phải lúc nào cũng chú ý đến việc cung cấp năng lượng thực sự bền vững."
     },
     {
-        "text": "Open AI also Chat GPT wird neue Rechenzentren.",
-        "start": 58.679998779296874,
-        "end": 61.91999893188476,
+        "text": "Open AI, also Chat GPT, wird neue Rechenzentren in Dubai bauen und sie mit Kernkraft betreiben.",
+        "start": 58.779998779296875,
+        "end": 64.0199966430664,
         "wordTimings": [
             {
                 "word": "Open",
-                "start": 58.679998779296874,
+                "start": 58.779998779296875,
                 "end": 58.97999954223633
             },
             {
-                "word": "AI",
+                "word": "AI,",
                 "start": 58.97999954223633,
                 "end": 59.29999923706055
             },
@@ -956,7 +831,7 @@
                 "end": 60.08000183105469
             },
             {
-                "word": "GPT",
+                "word": "GPT,",
                 "start": 60.08000183105469,
                 "end": 60.52000045776367
             },
@@ -971,22 +846,13 @@
                 "end": 61.060001373291016
             },
             {
-                "word": "Rechenzentren.",
+                "word": "Rechenzentren",
                 "start": 61.060001373291016,
-                "end": 61.91999893188476
-            }
-        ],
-        "translationEn": "Open AI, including Chat GPT, will build new data centers.",
-        "translationVi": "Open AI cũng như Chat GPT sẽ xây dựng các trung tâm dữ liệu mới."
-    },
-    {
-        "text": "in Dubai bauen und sie mit Kernkraft betreiben.",
-        "start": 61.519998931884764,
-        "end": 64.3199966430664,
-        "wordTimings": [
+                "end": 61.619998931884766
+            },
             {
                 "word": "in",
-                "start": 61.519998931884764,
+                "start": 61.619998931884766,
                 "end": 61.939998626708984
             },
             {
@@ -1022,20 +888,20 @@
             {
                 "word": "betreiben.",
                 "start": 63.560001373291016,
-                "end": 64.3199966430664
+                "end": 64.0199966430664
             }
         ],
-        "translationEn": "to build in Dubai and operate them with nuclear power.",
-        "translationVi": "Xây dựng ở Dubai và vận hành bằng năng lượng hạt nhân."
+        "translationEn": "Open AI, also Chat GPT, will build new data centers in Dubai and operate them with nuclear power.",
+        "translationVi": "Open AI, cũng như Chat GPT, sẽ xây dựng các trung tâm dữ liệu mới ở Dubai và vận hành chúng bằng năng lượng hạt nhân."
     },
     {
-        "text": "Google will ein stillgelegtes Atomkraftwerk in Iowa wieder.",
-        "start": 64.63999786376954,
-        "end": 67.84000091552734,
+        "text": "Google will ein stillgelegtes Atomkraftwerk in Iowa wieder reaktivieren.",
+        "start": 64.73999786376953,
+        "end": 68.18000030517578,
         "wordTimings": [
             {
                 "word": "Google",
-                "start": 64.63999786376954,
+                "start": 64.73999786376953,
                 "end": 65
             },
             {
@@ -1069,31 +935,26 @@
                 "end": 67.23999786376953
             },
             {
-                "word": "wieder.",
+                "word": "wieder",
                 "start": 67.23999786376953,
-                "end": 67.84000091552734
+                "end": 67.54000091552734
+            },
+            {
+                "word": "reaktivieren.",
+                "start": 67.54000091552734,
+                "end": 68.18000030517578
             }
         ],
-        "translationEn": "Google wants to revive a decommissioned nuclear power plant in Iowa.",
-        "translationVi": "Google muốn khôi phục một nhà máy điện hạt nhân đã ngừng hoạt động ở Iowa."
+        "translationEn": "Google wants to reactivate a decommissioned nuclear power plant in Iowa.",
+        "translationVi": "Google sẽ tái khởi động một nhà máy điện hạt nhân đã ngừng hoạt động ở Iowa."
     },
     {
-        "text": "reaktivieren und Meta also der Mutterkonzern von Facebook.",
-        "start": 67.44000091552735,
-        "end": 70.57999877929687,
+        "text": "Meta, also der Mutterkonzern von Facebook und Instagram, setzt sogar auf Gaskraftwerke in Louisiana.",
+        "start": 68.5999984741211,
+        "end": 73.12000274658203,
         "wordTimings": [
             {
-                "word": "reaktivieren",
-                "start": 67.44000091552735,
-                "end": 68.18000030517578
-            },
-            {
-                "word": "und",
-                "start": 68.18000030517578,
-                "end": 68.5999984741211
-            },
-            {
-                "word": "Meta",
+                "word": "Meta,",
                 "start": 68.5999984741211,
                 "end": 68.9000015258789
             },
@@ -1118,26 +979,17 @@
                 "end": 69.9800033569336
             },
             {
-                "word": "Facebook.",
+                "word": "Facebook",
                 "start": 69.9800033569336,
-                "end": 70.57999877929687
-            }
-        ],
-        "translationEn": "reactivate and Meta, the parent company of Facebook.",
-        "translationVi": "kích hoạt lại và Meta, tức là công ty mẹ của Facebook."
-    },
-    {
-        "text": "und Instagram setzt sogar auf Gaskraftwerke in Louisiana.",
-        "start": 70.17999877929688,
-        "end": 73.42000274658203,
-        "wordTimings": [
+                "end": 70.27999877929688
+            },
             {
                 "word": "und",
-                "start": 70.17999877929688,
+                "start": 70.27999877929688,
                 "end": 70.4800033569336
             },
             {
-                "word": "Instagram",
+                "word": "Instagram,",
                 "start": 70.4800033569336,
                 "end": 70.9000015258789
             },
@@ -1169,20 +1021,20 @@
             {
                 "word": "Louisiana.",
                 "start": 73.12000274658203,
-                "end": 73.42000274658203
+                "end": 73.12000274658203
             }
         ],
-        "translationEn": "and Instagram is even relying on gas power plants in Louisiana.",
-        "translationVi": "và Instagram thậm chí còn sử dụng các nhà máy điện khí ở Louisiana."
+        "translationEn": "Meta, the parent company of Facebook and Instagram, is even relying on gas power plants in Louisiana.",
+        "translationVi": "Meta, tức là tập đoàn mẹ của Facebook và Instagram, thậm chí còn đầu tư vào các nhà máy điện khí ở Louisiana."
     },
     {
-        "text": "Ganz anders läuft es aber in einem Rechenzentrum.",
-        "start": 73.8800033569336,
-        "end": 76.7000015258789,
+        "text": "Ganz anders läuft es aber in einem Rechenzentrum in Norwegen, denn das ist nämlich in einem kleinen abgelegenen Ort in einer Mine ansässig.",
+        "start": 73.9800033569336,
+        "end": 81.05999755859375,
         "wordTimings": [
             {
                 "word": "Ganz",
-                "start": 73.8800033569336,
+                "start": 73.9800033569336,
                 "end": 74.22000122070312
             },
             {
@@ -1216,33 +1068,24 @@
                 "end": 75.72000122070312
             },
             {
-                "word": "Rechenzentrum.",
+                "word": "Rechenzentrum",
                 "start": 75.72000122070312,
-                "end": 76.7000015258789
-            }
-        ],
-        "translationEn": "It runs quite differently in a data center.",
-        "translationVi": "Tại một trung tâm dữ liệu, mọi thứ diễn ra hoàn toàn khác."
-    },
-    {
-        "text": "in Norwegen weil das ist nämlich in einem.",
-        "start": 76.30000152587891,
-        "end": 78.71999816894531,
-        "wordTimings": [
+                "end": 76.4000015258789
+            },
             {
                 "word": "in",
-                "start": 76.30000152587891,
+                "start": 76.4000015258789,
                 "end": 77.23999786376953
             },
             {
-                "word": "Norwegen",
+                "word": "Norwegen,",
                 "start": 77.23999786376953,
                 "end": 77.23999786376953
             },
             {
-                "word": "weil",
-                "start": 77.4800033569336,
-                "end": 77.63999938964844
+                "word": "denn",
+                "start": 77.23999786376953,
+                "end": 77.48999786376953
             },
             {
                 "word": "das",
@@ -1265,22 +1108,13 @@
                 "end": 78.30000305175781
             },
             {
-                "word": "einem.",
+                "word": "einem",
                 "start": 78.30000305175781,
-                "end": 78.71999816894531
-            }
-        ],
-        "translationEn": "in Norway because that is indeed in one.",
-        "translationVi": "tại Na Uy vì điều đó thực sự ở trong một."
-    },
-    {
-        "text": "kleinen abgelegenen Ort in einer Mine ansässig und.",
-        "start": 78.23999633789063,
-        "end": 81.96000366210937,
-        "wordTimings": [
+                "end": 78.41999816894531
+            },
             {
                 "word": "kleinen",
-                "start": 78.23999633789063,
+                "start": 78.33999633789062,
                 "end": 78.86000061035156
             },
             {
@@ -1309,27 +1143,22 @@
                 "end": 80.33999633789062
             },
             {
-                "word": "ansässig",
+                "word": "ansässig.",
                 "start": 80.33999633789062,
                 "end": 81.05999755859375
-            },
-            {
-                "word": "und.",
-                "start": 81.05999755859375,
-                "end": 81.96000366210937
             }
         ],
-        "translationEn": "located in a small remote place in a mine and.",
-        "translationVi": "nơi nhỏ hẻo lánh trong một mỏ và."
+        "translationEn": "However, it is quite different in a data center in Norway, as it is located in a small remote place in a mine.",
+        "translationVi": "Tuy nhiên, mọi thứ diễn ra hoàn toàn khác ở một trung tâm dữ liệu tại Na Uy, vì nó nằm ở một nơi hẻo lánh nhỏ trong một mỏ."
     },
     {
-        "text": "dort soll es nämlich so fast 100 Prozent.",
-        "start": 81.56000366210938,
-        "end": 83.88000183105468,
+        "text": "Dort soll es nämlich so fast 100 Prozent nachhaltig sein.",
+        "start": 81.66000366210938,
+        "end": 84.4000015258789,
         "wordTimings": [
             {
-                "word": "dort",
-                "start": 81.56000366210938,
+                "word": "Dort",
+                "start": 81.66000366210938,
                 "end": 81.9000015258789
             },
             {
@@ -1363,29 +1192,29 @@
                 "end": 83.26000213623047
             },
             {
-                "word": "Prozent.",
+                "word": "Prozent",
                 "start": 83.26000213623047,
-                "end": 83.88000183105468
-            }
-        ],
-        "translationEn": "There it should be almost 100 percent.",
-        "translationVi": "Ở đó gần như đạt 100 phần trăm."
-    },
-    {
-        "text": "nachhaltig sein Und wie das Ganze funktioniert schauen.",
-        "start": 83.4800018310547,
-        "end": 86.42000274658203,
-        "wordTimings": [
+                "end": 83.58000183105469
+            },
             {
                 "word": "nachhaltig",
-                "start": 83.4800018310547,
+                "start": 83.58000183105469,
                 "end": 84.16000366210938
             },
             {
-                "word": "sein",
+                "word": "sein.",
                 "start": 84.16000366210938,
                 "end": 84.4000015258789
-            },
+            }
+        ],
+        "translationEn": "There it is supposed to be almost 100 percent sustainable.",
+        "translationVi": "Ở đó gần như đạt 100% tính bền vững."
+    },
+    {
+        "text": "Und wie das Ganze funktioniert, schauen wir uns jetzt einfach mal an.",
+        "start": 84.62000274658203,
+        "end": 88.63999938964844,
+        "wordTimings": [
             {
                 "word": "Und",
                 "start": 84.62000274658203,
@@ -1407,27 +1236,18 @@
                 "end": 85.18000030517578
             },
             {
-                "word": "funktioniert",
+                "word": "funktioniert,",
                 "start": 85.18000030517578,
                 "end": 85.66000366210938
             },
             {
-                "word": "schauen.",
+                "word": "schauen",
                 "start": 86.0999984741211,
-                "end": 86.42000274658203
-            }
-        ],
-        "translationEn": "be sustainable and see how it all works.",
-        "translationVi": "bền vững và xem cách mọi thứ hoạt động."
-    },
-    {
-        "text": "wir uns jetzt einfach mal an Das Leftal.",
-        "start": 86.02000274658204,
-        "end": 91.11999969482422,
-        "wordTimings": [
+                "end": 86.12000274658203
+            },
             {
                 "word": "wir",
-                "start": 86.02000274658204,
+                "start": 86.12000274658203,
                 "end": 86.22000122070312
             },
             {
@@ -1451,32 +1271,32 @@
                 "end": 88.18000030517578
             },
             {
-                "word": "an",
+                "word": "an.",
                 "start": 88.18000030517578,
                 "end": 88.63999938964844
-            },
+            }
+        ],
+        "translationEn": "And how it all works, let's take a look at that now.",
+        "translationVi": "Và bây giờ chúng ta hãy cùng xem cách mà mọi thứ hoạt động."
+    },
+    {
+        "text": "Das Lefdal Mine Data Center im norwegischen Norfjordait gilt als eines der energieeffizientesten und grünsten Rechenzentren der Welt.",
+        "start": 90.13999938964844,
+        "end": 98.19999694824219,
+        "wordTimings": [
             {
                 "word": "Das",
                 "start": 90.13999938964844,
                 "end": 90.30000305175781
             },
             {
-                "word": "Leftal.",
+                "word": "Lefdal",
                 "start": 90.30000305175781,
-                "end": 91.11999969482422
-            }
-        ],
-        "translationEn": "let's just take a look at Das Leftal.",
-        "translationVi": "chúng ta hãy thử một chút với Das Leftal."
-    },
-    {
-        "text": "Mine Data Center im norwegischen Norfjordait gilt als.",
-        "start": 90.71999969482422,
-        "end": 94.66000061035156,
-        "wordTimings": [
+                "end": 90.81999969482422
+            },
             {
                 "word": "Mine",
-                "start": 90.71999969482422,
+                "start": 90.81999969482422,
                 "end": 91.08000183105469
             },
             {
@@ -1510,22 +1330,13 @@
                 "end": 94.08000183105469
             },
             {
-                "word": "als.",
+                "word": "als",
                 "start": 94.08000183105469,
-                "end": 94.66000061035156
-            }
-        ],
-        "translationEn": "My data center in the Norwegian Norfjordait is considered.",
-        "translationVi": "Trung tâm dữ liệu của tôi ở Norfjordait, Na Uy được coi là."
-    },
-    {
-        "text": "eines der energieeffizientesten und grünsten Rechenzentren der Welt.",
-        "start": 94.26000061035157,
-        "end": 98.49999694824218,
-        "wordTimings": [
+                "end": 94.36000061035156
+            },
             {
                 "word": "eines",
-                "start": 94.26000061035157,
+                "start": 94.36000061035156,
                 "end": 94.5999984741211
             },
             {
@@ -1561,20 +1372,20 @@
             {
                 "word": "Welt.",
                 "start": 98.19999694824219,
-                "end": 98.49999694824218
+                "end": 98.19999694824219
             }
         ],
-        "translationEn": "one of the most energy-efficient and greenest data centers in the world.",
-        "translationVi": "một trong những trung tâm dữ liệu tiết kiệm năng lượng và xanh nhất thế giới."
+        "translationEn": "The Lefdal Mine Data Center in Norway's Norfjordait is considered one of the most energy-efficient and greenest data centers in the world.",
+        "translationVi": "Trung tâm Dữ liệu Lefdal Mine ở Norfjordait, Na Uy, được coi là một trong những trung tâm dữ liệu tiết kiệm năng lượng và xanh nhất thế giới."
     },
     {
-        "text": "Nicht nur dank der Beleuchtung Und das in.",
-        "start": 98.71999969482422,
-        "end": 101.48000030517578,
+        "text": "Nicht nur dank der Beleuchtung, und das in einer stillgelegten Mine.",
+        "start": 98.81999969482422,
+        "end": 102.62000274658203,
         "wordTimings": [
             {
                 "word": "Nicht",
-                "start": 98.71999969482422,
+                "start": 98.81999969482422,
                 "end": 98.86000061035156
             },
             {
@@ -1593,12 +1404,12 @@
                 "end": 99.45999908447266
             },
             {
-                "word": "Beleuchtung",
+                "word": "Beleuchtung,",
                 "start": 99.45999908447266,
                 "end": 99.91999816894531
             },
             {
-                "word": "Und",
+                "word": "und",
                 "start": 100.18000030517578,
                 "end": 100.4800033569336
             },
@@ -1608,22 +1419,13 @@
                 "end": 100.76000213623047
             },
             {
-                "word": "in.",
+                "word": "in",
                 "start": 100.76000213623047,
-                "end": 101.48000030517578
-            }
-        ],
-        "translationEn": "Not only thanks to the lighting and that in.",
-        "translationVi": "Không chỉ nhờ vào ánh sáng và điều đó trong."
-    },
-    {
-        "text": "einer stillgelegten Mine Wir treffen den kaufmännischen Leiter.",
-        "start": 101.08000030517579,
-        "end": 104.98000030517578,
-        "wordTimings": [
+                "end": 101.18000030517578
+            },
             {
                 "word": "einer",
-                "start": 101.08000030517579,
+                "start": 101.18000030517578,
                 "end": 101.55999755859375
             },
             {
@@ -1632,10 +1434,19 @@
                 "end": 102.37999725341797
             },
             {
-                "word": "Mine",
+                "word": "Mine.",
                 "start": 102.37999725341797,
                 "end": 102.62000274658203
-            },
+            }
+        ],
+        "translationEn": "Not only thanks to the lighting, and that in a decommissioned mine.",
+        "translationVi": "Không chỉ nhờ vào ánh sáng, mà còn ở một mỏ đã ngừng hoạt động."
+    },
+    {
+        "text": "Wir treffen den kaufmännischen Leiter der Mine, Mats Andersson.",
+        "start": 103.16000366210938,
+        "end": 106.37999725341797,
+        "wordTimings": [
             {
                 "word": "Wir",
                 "start": 103.16000366210938,
@@ -1657,26 +1468,17 @@
                 "end": 104.37999725341797
             },
             {
-                "word": "Leiter.",
+                "word": "Leiter",
                 "start": 104.37999725341797,
-                "end": 104.98000030517578
-            }
-        ],
-        "translationEn": "in a decommissioned mine We meet the commercial manager.",
-        "translationVi": "tại một mỏ đã ngừng hoạt động. Chúng tôi gặp giám đốc thương mại."
-    },
-    {
-        "text": "der Mine Mats Andersson Wie kamt ihr auf.",
-        "start": 104.58000030517579,
-        "end": 109.63999633789062,
-        "wordTimings": [
+                "end": 104.68000030517578
+            },
             {
                 "word": "der",
-                "start": 104.58000030517579,
+                "start": 104.68000030517578,
                 "end": 104.9800033569336
             },
             {
-                "word": "Mine",
+                "word": "Mine,",
                 "start": 104.9800033569336,
                 "end": 105.16000366210938
             },
@@ -1686,10 +1488,19 @@
                 "end": 105.81999969482422
             },
             {
-                "word": "Andersson",
+                "word": "Andersson.",
                 "start": 105.81999969482422,
                 "end": 106.37999725341797
-            },
+            }
+        ],
+        "translationEn": "We are meeting the commercial manager of the mine, Mats Andersson.",
+        "translationVi": "Chúng tôi gặp giám đốc thương mại của mỏ, Mats Andersson."
+    },
+    {
+        "text": "Wie kamt ihr auf die Idee, ein Rechenzentrum in einer alten Mine zu bauen?",
+        "start": 108.18000030517578,
+        "end": 114.36000061035156,
+        "wordTimings": [
             {
                 "word": "Wie",
                 "start": 108.18000030517578,
@@ -1706,26 +1517,17 @@
                 "end": 109.18000030517578
             },
             {
-                "word": "auf.",
+                "word": "auf",
                 "start": 109.18000030517578,
-                "end": 109.63999633789062
-            }
-        ],
-        "translationEn": "Mine Mats Andersson How did you come up with that?",
-        "translationVi": "Mats Andersson, bạn đã làm thế nào để đến đây?"
-    },
-    {
-        "text": "die Idee ein Rechenzentrum in einer alten Mine.",
-        "start": 109.23999633789063,
-        "end": 112.35999755859375,
-        "wordTimings": [
+                "end": 109.33999633789062
+            },
             {
                 "word": "die",
-                "start": 109.23999633789063,
+                "start": 109.33999633789062,
                 "end": 109.63999938964844
             },
             {
-                "word": "Idee",
+                "word": "Idee,",
                 "start": 109.63999938964844,
                 "end": 109.63999938964844
             },
@@ -1752,32 +1554,32 @@
             {
                 "word": "alten",
                 "start": 111.4800033569336,
-                "end": 112.0199966430664
+                "end": 112.04000091552734
             },
             {
-                "word": "Mine.",
-                "start": 112.0199966430664,
-                "end": 112.35999755859375
-            }
-        ],
-        "translationEn": "the idea of a data center in an old mine.",
-        "translationVi": "ý tưởng xây dựng một trung tâm dữ liệu trong một mỏ cũ."
-    },
-    {
-        "text": "zu bauen Auch die Idee war damals ganz.",
-        "start": 111.95999755859376,
-        "end": 117.11999969482422,
-        "wordTimings": [
+                "word": "Mine",
+                "start": 112.04000091552734,
+                "end": 112.05999755859375
+            },
             {
                 "word": "zu",
-                "start": 111.95999755859376,
+                "start": 112.05999755859375,
                 "end": 113.80000305175781
             },
             {
-                "word": "bauen",
+                "word": "bauen?",
                 "start": 113.80000305175781,
                 "end": 114.36000061035156
-            },
+            }
+        ],
+        "translationEn": "How did you come up with the idea of building a data center in an old mine?",
+        "translationVi": "Các bạn đã nghĩ ra ý tưởng xây dựng một trung tâm dữ liệu trong một mỏ cũ như thế nào?"
+    },
+    {
+        "text": "Auch die Idee war damals ganz einfach: Wir wollten ein zukunftssicheres Rechenzentrum bauen.",
+        "start": 115,
+        "end": 120,
+        "wordTimings": [
             {
                 "word": "Auch",
                 "start": 115,
@@ -1804,22 +1606,13 @@
                 "end": 116.4800033569336
             },
             {
-                "word": "ganz.",
+                "word": "ganz",
                 "start": 116.4800033569336,
-                "end": 117.11999969482422
-            }
-        ],
-        "translationEn": "to build The idea was also complete back then.",
-        "translationVi": "Cũng như ý tưởng đó lúc bấy giờ hoàn toàn."
-    },
-    {
-        "text": "einfach Wir wollten ein zukunftssicheres Rechenzentrum bauen Sicherheit.",
-        "start": 116.71999969482422,
-        "end": 121.28000335693359,
-        "wordTimings": [
+                "end": 116.81999969482422
+            },
             {
-                "word": "einfach",
-                "start": 116.71999969482422,
+                "word": "einfach:",
+                "start": 116.81999969482422,
                 "end": 117.05999755859375
             },
             {
@@ -1848,27 +1641,27 @@
                 "end": 119.77999877929688
             },
             {
-                "word": "bauen",
+                "word": "bauen.",
                 "start": 119.77999877929688,
-                "end": 120.0199966430664
-            },
-            {
-                "word": "Sicherheit.",
-                "start": 120.9800033569336,
-                "end": 121.28000335693359
+                "end": 120
             }
         ],
-        "translationEn": "We wanted to build a future-proof data center for security.",
-        "translationVi": "Chúng tôi muốn xây dựng một trung tâm dữ liệu an toàn cho tương lai."
+        "translationEn": "The idea was also quite simple back then: We wanted to build a future-proof data center.",
+        "translationVi": "Cũng như vậy, ý tưởng lúc đó rất đơn giản: Chúng tôi muốn xây dựng một trung tâm dữ liệu bền vững cho tương lai."
     },
     {
-        "text": "spielt dabei eine große Rolle Und tief im.",
-        "start": 120.8800033569336,
-        "end": 124.21999816894531,
+        "text": "Sicherheit spielt dabei eine große Rolle, und tief im Berg gibt es davon besonders viel.",
+        "start": 120.9800033569336,
+        "end": 125.22000122070312,
         "wordTimings": [
             {
+                "word": "Sicherheit",
+                "start": 120.9800033569336,
+                "end": 120.9800033569336
+            },
+            {
                 "word": "spielt",
-                "start": 120.8800033569336,
+                "start": 120.9800033569336,
                 "end": 121.26000213623047
             },
             {
@@ -1887,12 +1680,12 @@
                 "end": 122.13999938964844
             },
             {
-                "word": "Rolle",
+                "word": "Rolle,",
                 "start": 122.13999938964844,
                 "end": 122.23999786376953
             },
             {
-                "word": "Und",
+                "word": "und",
                 "start": 122.9800033569336,
                 "end": 123.54000091552734
             },
@@ -1902,22 +1695,13 @@
                 "end": 123.5999984741211
             },
             {
-                "word": "im.",
+                "word": "im",
                 "start": 123.5999984741211,
-                "end": 124.21999816894531
-            }
-        ],
-        "translationEn": "plays a big role in this and deep in.",
-        "translationVi": "đóng một vai trò lớn và sâu trong."
-    },
-    {
-        "text": "Berg gibt es davon besonders viel Gleichzeitig war.",
-        "start": 123.81999816894532,
-        "end": 126.8199966430664,
-        "wordTimings": [
+                "end": 123.91999816894531
+            },
             {
                 "word": "Berg",
-                "start": 123.81999816894532,
+                "start": 123.91999816894531,
                 "end": 123.91999816894531
             },
             {
@@ -1941,32 +1725,32 @@
                 "end": 124.9800033569336
             },
             {
-                "word": "viel",
+                "word": "viel.",
                 "start": 124.9800033569336,
                 "end": 125.22000122070312
-            },
+            }
+        ],
+        "translationEn": "Safety plays a major role in this, and deep in the mountain, there is particularly a lot of it.",
+        "translationVi": "An ninh đóng vai trò rất quan trọng, và sâu trong núi có rất nhiều điều đó."
+    },
+    {
+        "text": "Gleichzeitig war es uns wichtig, nachhaltig zu sein, also diese Mine weiterzuverwenden.",
+        "start": 125.77999877929688,
+        "end": 130.5,
+        "wordTimings": [
             {
                 "word": "Gleichzeitig",
                 "start": 125.77999877929688,
                 "end": 126.26000213623047
             },
             {
-                "word": "war.",
+                "word": "war",
                 "start": 126.26000213623047,
-                "end": 126.8199966430664
-            }
-        ],
-        "translationEn": "There are particularly many mountains of this kind. At the same time, it was.",
-        "translationVi": "Có rất nhiều núi cùng một lúc."
-    },
-    {
-        "text": "es uns wichtig nachhaltig zu sein also diese.",
-        "start": 126.41999664306641,
-        "end": 129.47999267578126,
-        "wordTimings": [
+                "end": 126.5199966430664
+            },
             {
                 "word": "es",
-                "start": 126.41999664306641,
+                "start": 126.5199966430664,
                 "end": 126.68000030517578
             },
             {
@@ -1975,7 +1759,7 @@
                 "end": 126.91999816894531
             },
             {
-                "word": "wichtig",
+                "word": "wichtig,",
                 "start": 126.91999816894531,
                 "end": 127.08000183105469
             },
@@ -1990,7 +1774,7 @@
                 "end": 128.1999969482422
             },
             {
-                "word": "sein",
+                "word": "sein,",
                 "start": 128.1999969482422,
                 "end": 128.1999969482422
             },
@@ -2000,29 +1784,29 @@
                 "end": 128.89999389648438
             },
             {
-                "word": "diese.",
+                "word": "diese",
                 "start": 128.89999389648438,
-                "end": 129.47999267578126
-            }
-        ],
-        "translationEn": "It is important to us to be sustainable, so this.",
-        "translationVi": "Chúng tôi coi trọng việc bền vững, vì vậy điều này."
-    },
-    {
-        "text": "Mine weiterzuverwenden Früher war das hier eine Olivin.",
-        "start": 129.07999267578126,
-        "end": 134.40000610351564,
-        "wordTimings": [
+                "end": 129.17999267578125
+            },
             {
                 "word": "Mine",
-                "start": 129.07999267578126,
+                "start": 129.17999267578125,
                 "end": 129.3800048828125
             },
             {
-                "word": "weiterzuverwenden",
+                "word": "weiterzuverwenden.",
                 "start": 129.3800048828125,
                 "end": 130.5
-            },
+            }
+        ],
+        "translationEn": "At the same time, it was important to us to be sustainable, meaning to continue using this mine.",
+        "translationVi": "Đồng thời, chúng tôi cũng coi trọng việc bền vững, tức là tiếp tục sử dụng mỏ này."
+    },
+    {
+        "text": "Früher war das hier eine Olivin-Mine. Olivin ist ein grünes, dichtes Mineral, das man für vieles nutzen kann.",
+        "start": 132.39999389648438,
+        "end": 140.6199951171875,
+        "wordTimings": [
             {
                 "word": "Früher",
                 "start": 132.39999389648438,
@@ -2049,23 +1833,9 @@
                 "end": 133.63999938964844
             },
             {
-                "word": "Olivin.",
+                "word": "Olivin-Mine.",
                 "start": 133.63999938964844,
-                "end": 134.40000610351564
-            }
-        ],
-        "translationEn": "Mine to be reused. This used to be an olivine.",
-        "translationVi": "Trước đây, đây là một viên olivin."
-    },
-    {
-        "text": "Mine Olivin ist ein grünes dichtes Mineral das.",
-        "start": 134.00000610351563,
-        "end": 139.0799987792969,
-        "wordTimings": [
-            {
-                "word": "Mine",
-                "start": 134.00000610351563,
-                "end": 134.27999877929688
+                "end": 134.10000610351562
             },
             {
                 "word": "Olivin",
@@ -2083,7 +1853,7 @@
                 "end": 136.72000122070312
             },
             {
-                "word": "grünes",
+                "word": "grünes,",
                 "start": 136.72000122070312,
                 "end": 137.25999450683594
             },
@@ -2093,27 +1863,18 @@
                 "end": 137.6999969482422
             },
             {
-                "word": "Mineral",
+                "word": "Mineral,",
                 "start": 137.6999969482422,
                 "end": 138.0800018310547
             },
             {
-                "word": "das.",
+                "word": "das",
                 "start": 138.24000549316406,
-                "end": 139.0799987792969
-            }
-        ],
-        "translationEn": "Olivine is a green dense mineral that.",
-        "translationVi": "Khoáng chất olivin là một khoáng chất màu xanh dày đặc."
-    },
-    {
-        "text": "man für vieles nutzen kann Über 40 Jahre.",
-        "start": 138.67999877929688,
-        "end": 143.82000427246095,
-        "wordTimings": [
+                "end": 138.77999877929688
+            },
             {
                 "word": "man",
-                "start": 138.67999877929688,
+                "start": 138.77999877929688,
                 "end": 139.02000427246094
             },
             {
@@ -2132,10 +1893,19 @@
                 "end": 139.9199981689453
             },
             {
-                "word": "kann",
+                "word": "kann.",
                 "start": 139.9199981689453,
                 "end": 140.6199951171875
-            },
+            }
+        ],
+        "translationEn": "In the past, this was an olivine mine. Olivine is a green, dense mineral that can be used for many purposes.",
+        "translationVi": "Trước đây, nơi này là một mỏ olivin. Olivin là một khoáng sản màu xanh lá cây, dày đặc, có thể được sử dụng cho nhiều mục đích."
+    },
+    {
+        "text": "Über 40 Jahre lang wurde es hier abgebaut, und genau daraus entstand die Idee.",
+        "start": 142.72000122070312,
+        "end": 147.8000030517578,
+        "wordTimings": [
             {
                 "word": "Über",
                 "start": 142.72000122070312,
@@ -2147,22 +1917,13 @@
                 "end": 143.27999877929688
             },
             {
-                "word": "Jahre.",
+                "word": "Jahre",
                 "start": 143.27999877929688,
-                "end": 143.82000427246095
-            }
-        ],
-        "translationEn": "can be used for many things for over 40 years.",
-        "translationVi": "Có thể sử dụng cho nhiều thứ trong hơn 40 năm."
-    },
-    {
-        "text": "lang wurde es hier abgebaut und genau daraus.",
-        "start": 143.42000427246094,
-        "end": 147.27999572753907,
-        "wordTimings": [
+                "end": 143.52000427246094
+            },
             {
                 "word": "lang",
-                "start": 143.42000427246094,
+                "start": 143.52000427246094,
                 "end": 144
             },
             {
@@ -2181,7 +1942,7 @@
                 "end": 144.60000610351562
             },
             {
-                "word": "abgebaut",
+                "word": "abgebaut,",
                 "start": 144.60000610351562,
                 "end": 144.83999633789062
             },
@@ -2196,22 +1957,13 @@
                 "end": 146.39999389648438
             },
             {
-                "word": "daraus.",
+                "word": "daraus",
                 "start": 146.39999389648438,
-                "end": 147.27999572753907
-            }
-        ],
-        "translationEn": "It was dismantled here for a long time and exactly from that.",
-        "translationVi": "Nó đã được tháo dỡ ở đây từ lâu và chính từ đó."
-    },
-    {
-        "text": "entstand die Idee Wir holen ein grünes Mineral.",
-        "start": 146.87999572753907,
-        "end": 149.93999938964845,
-        "wordTimings": [
+                "end": 146.97999572753906
+            },
             {
                 "word": "entstand",
-                "start": 146.87999572753907,
+                "start": 146.97999572753906,
                 "end": 147.32000732421875
             },
             {
@@ -2220,10 +1972,19 @@
                 "end": 147.66000366210938
             },
             {
-                "word": "Idee",
+                "word": "Idee.",
                 "start": 147.66000366210938,
                 "end": 147.8000030517578
-            },
+            }
+        ],
+        "translationEn": "For over 40 years, it was mined here, and that is exactly where the idea came from.",
+        "translationVi": "Hơn 40 năm qua, nó đã được khai thác ở đây, và chính từ đó mà ý tưởng ra đời."
+    },
+    {
+        "text": "Wir holen ein grünes Mineral aus dem Berg und bringen dafür grüne IT hinein.",
+        "start": 148.27999877929688,
+        "end": 153.4199981689453,
+        "wordTimings": [
             {
                 "word": "Wir",
                 "start": 148.27999877929688,
@@ -2245,22 +2006,13 @@
                 "end": 149.36000061035156
             },
             {
-                "word": "Mineral.",
+                "word": "Mineral",
                 "start": 149.36000061035156,
-                "end": 149.93999938964845
-            }
-        ],
-        "translationEn": "The idea arose: We will get a green mineral.",
-        "translationVi": "Ý tưởng nảy ra là chúng ta sẽ lấy một khoáng sản xanh."
-    },
-    {
-        "text": "aus dem Berg und bringen dafür grüne IT.",
-        "start": 149.53999938964844,
-        "end": 152.7600067138672,
-        "wordTimings": [
+                "end": 149.63999938964844
+            },
             {
                 "word": "aus",
-                "start": 149.53999938964844,
+                "start": 149.63999938964844,
                 "end": 149.94000244140625
             },
             {
@@ -2294,24 +2046,24 @@
                 "end": 152.05999755859375
             },
             {
-                "word": "IT.",
+                "word": "IT",
                 "start": 152.05999755859375,
-                "end": 152.7600067138672
+                "end": 152.4600067138672
+            },
+            {
+                "word": "hinein.",
+                "start": 152.4600067138672,
+                "end": 153.4199981689453
             }
         ],
-        "translationEn": "from the mountain and in return bring green IT.",
-        "translationVi": "từ núi và mang lại công nghệ thông tin xanh."
+        "translationEn": "We extract a green mineral from the mountain and bring green IT in return.",
+        "translationVi": "Chúng tôi lấy một khoáng sản xanh từ núi và mang vào đó công nghệ thông tin xanh."
     },
     {
-        "text": "hinein An den Wänden glitzert noch heute der.",
-        "start": 152.3600067138672,
-        "end": 156.24000244140626,
+        "text": "An den Wänden glitzert noch heute der Edelstein Olivin, der unter anderem für Glasprodukte und Schmuck verwendet wird.",
+        "start": 153.94000244140625,
+        "end": 160.67999267578125,
         "wordTimings": [
-            {
-                "word": "hinein",
-                "start": 152.3600067138672,
-                "end": 153.4199981689453
-            },
             {
                 "word": "An",
                 "start": 153.94000244140625,
@@ -2343,26 +2095,17 @@
                 "end": 155.77999877929688
             },
             {
-                "word": "der.",
+                "word": "der",
                 "start": 155.77999877929688,
-                "end": 156.24000244140626
-            }
-        ],
-        "translationEn": "Inside, the walls still sparkle today.",
-        "translationVi": "Trên tường vẫn còn lấp lánh cho đến hôm nay."
-    },
-    {
-        "text": "Edelstein Olivin der unter anderem für Glasprodukte und.",
-        "start": 155.84000244140626,
-        "end": 160.0799987792969,
-        "wordTimings": [
+                "end": 155.94000244140625
+            },
             {
                 "word": "Edelstein",
-                "start": 155.84000244140626,
+                "start": 155.94000244140625,
                 "end": 156.52000427246094
             },
             {
-                "word": "Olivin",
+                "word": "Olivin,",
                 "start": 156.52000427246094,
                 "end": 157.24000549316406
             },
@@ -2392,22 +2135,13 @@
                 "end": 159.5800018310547
             },
             {
-                "word": "und.",
+                "word": "und",
                 "start": 159.5800018310547,
-                "end": 160.0799987792969
-            }
-        ],
-        "translationEn": "Olivine gemstone, which is used among other things for glass products.",
-        "translationVi": "Đá quý Olivin, được sử dụng cho các sản phẩm thủy tinh và."
-    },
-    {
-        "text": "Schmuck verwendet wird Davor stehen hier jetzt aber.",
-        "start": 159.67999877929688,
-        "end": 163.4600036621094,
-        "wordTimings": [
+                "end": 159.77999877929688
+            },
             {
                 "word": "Schmuck",
-                "start": 159.67999877929688,
+                "start": 159.77999877929688,
                 "end": 160.02000427246094
             },
             {
@@ -2416,10 +2150,19 @@
                 "end": 160.5
             },
             {
-                "word": "wird",
+                "word": "wird.",
                 "start": 160.5,
                 "end": 160.67999267578125
-            },
+            }
+        ],
+        "translationEn": "The walls still sparkle today with the gemstone olivine, which is used among other things for glass products and jewelry.",
+        "translationVi": "Trên các bức tường vẫn lấp lánh viên đá quý Olivin, được sử dụng cho các sản phẩm thủy tinh và trang sức."
+    },
+    {
+        "text": "Davor stehen hier jetzt aber großteils Supercomputer und Server.",
+        "start": 161.32000732421875,
+        "end": 165.0800018310547,
+        "wordTimings": [
             {
                 "word": "Davor",
                 "start": 161.32000732421875,
@@ -2441,22 +2184,13 @@
                 "end": 162.8000030517578
             },
             {
-                "word": "aber.",
+                "word": "aber",
                 "start": 162.8000030517578,
-                "end": 163.4600036621094
-            }
-        ],
-        "translationEn": "Jewelry is used. However, it is now in front of here.",
-        "translationVi": "Trang sức được sử dụng. Tuy nhiên, ở đây bây giờ có."
-    },
-    {
-        "text": "großteils Supercomputer und Server Unser Team befindet sich.",
-        "start": 163.06000366210938,
-        "end": 167.1800048828125,
-        "wordTimings": [
+                "end": 163.16000366210938
+            },
             {
                 "word": "großteils",
-                "start": 163.06000366210938,
+                "start": 163.16000366210938,
                 "end": 163.67999267578125
             },
             {
@@ -2470,10 +2204,19 @@
                 "end": 164.77999877929688
             },
             {
-                "word": "Server",
+                "word": "Server.",
                 "start": 164.77999877929688,
                 "end": 165.0800018310547
-            },
+            }
+        ],
+        "translationEn": "However, in front of that, there are now mostly supercomputers and servers.",
+        "translationVi": "Trước đó, ở đây chủ yếu là siêu máy tính và máy chủ."
+    },
+    {
+        "text": "Unser Team befindet sich aktuell auf Level 3 von insgesamt 5, rund 55 Meter unter dem Meeresspiegel.",
+        "start": 166.10000610351562,
+        "end": 172.33999633789062,
+        "wordTimings": [
             {
                 "word": "Unser",
                 "start": 166.10000610351562,
@@ -2490,22 +2233,13 @@
                 "end": 166.63999938964844
             },
             {
-                "word": "sich.",
+                "word": "sich",
                 "start": 166.63999938964844,
-                "end": 167.1800048828125
-            }
-        ],
-        "translationEn": "mostly supercomputers and servers Our team is located.",
-        "translationVi": "Chủ yếu là siêu máy tính và máy chủ. Đội ngũ của chúng tôi đang ở đây."
-    },
-    {
-        "text": "aktuell auf Level 3 von insgesamt 5 Rund.",
-        "start": 166.7800048828125,
-        "end": 170.4600036621094,
-        "wordTimings": [
+                "end": 166.8800048828125
+            },
             {
                 "word": "aktuell",
-                "start": 166.7800048828125,
+                "start": 166.8800048828125,
                 "end": 167.3000030517578
             },
             {
@@ -2534,27 +2268,18 @@
                 "end": 168.86000061035156
             },
             {
-                "word": "5",
+                "word": "5,",
                 "start": 168.86000061035156,
                 "end": 169.25999450683594
             },
             {
-                "word": "Rund.",
+                "word": "rund",
                 "start": 170.13999938964844,
-                "end": 170.4600036621094
-            }
-        ],
-        "translationEn": "currently at level 3 out of a total of 5 rounds.",
-        "translationVi": "hiện tại ở cấp độ 3 trong tổng số 5 vòng."
-    },
-    {
-        "text": "55 Meter unter dem Meeresspiegel Die Mine reicht.",
-        "start": 170.06000366210938,
-        "end": 173.9600036621094,
-        "wordTimings": [
+                "end": 170.16000366210938
+            },
             {
                 "word": "55",
-                "start": 170.06000366210938,
+                "start": 170.16000366210938,
                 "end": 171
             },
             {
@@ -2573,10 +2298,19 @@
                 "end": 171.72000122070312
             },
             {
-                "word": "Meeresspiegel",
+                "word": "Meeresspiegel.",
                 "start": 171.72000122070312,
                 "end": 172.33999633789062
-            },
+            }
+        ],
+        "translationEn": "Our team is currently at Level 3 out of a total of 5, about 55 meters below sea level.",
+        "translationVi": "Đội ngũ của chúng tôi hiện đang ở cấp độ 3 trong tổng số 5, cách mặt biển khoảng 55 mét."
+    },
+    {
+        "text": "Die Mine reicht etwa 130 Meter in die Tiefe und umfasst rund 120.000 Quadratmeter.",
+        "start": 173.0399932861328,
+        "end": 179.3800048828125,
+        "wordTimings": [
             {
                 "word": "Die",
                 "start": 173.0399932861328,
@@ -2588,22 +2322,13 @@
                 "end": 173.33999633789062
             },
             {
-                "word": "reicht.",
+                "word": "reicht",
                 "start": 173.33999633789062,
-                "end": 173.9600036621094
-            }
-        ],
-        "translationEn": "55 meters below sea level, the mine extends.",
-        "translationVi": "55 mét dưới mực nước biển Mỏ kéo dài."
-    },
-    {
-        "text": "etwa 130 Meter in die Tiefe und umfasst.",
-        "start": 173.56000366210938,
-        "end": 177.1999938964844,
-        "wordTimings": [
+                "end": 173.66000366210938
+            },
             {
                 "word": "etwa",
-                "start": 173.56000366210938,
+                "start": 173.66000366210938,
                 "end": 173.94000244140625
             },
             {
@@ -2637,46 +2362,41 @@
                 "end": 176.5800018310547
             },
             {
-                "word": "umfasst.",
+                "word": "umfasst",
                 "start": 176.5800018310547,
-                "end": 177.1999938964844
-            }
-        ],
-        "translationEn": "about 130 meters deep and encompasses.",
-        "translationVi": "khoảng 130 mét sâu và bao gồm."
-    },
-    {
-        "text": "rund 120 000 Quadratmeter Und ja hier kommt.",
-        "start": 176.79999389648438,
-        "end": 181.2600067138672,
-        "wordTimings": [
+                "end": 176.89999389648438
+            },
             {
                 "word": "rund",
-                "start": 176.79999389648438,
+                "start": 176.89999389648438,
                 "end": 177.25999450683594
             },
             {
-                "word": "120",
+                "word": "120.000",
                 "start": 177.25999450683594,
                 "end": 178.24000549316406
             },
             {
-                "word": "000",
-                "start": 178.24000549316406,
-                "end": 178.67999267578125
-            },
-            {
-                "word": "Quadratmeter",
+                "word": "Quadratmeter.",
                 "start": 178.67999267578125,
                 "end": 179.3800048828125
-            },
+            }
+        ],
+        "translationEn": "The mine extends about 130 meters deep and covers an area of around 120,000 square meters.",
+        "translationVi": "Mỏ sâu khoảng 130 mét và có diện tích khoảng 120.000 mét vuông."
+    },
+    {
+        "text": "Und ja, hier kommt eher der obligatorische Fußballfeldervergleich: Das entspricht ungefähr 17 davon.",
+        "start": 179.9199981689453,
+        "end": 186.5800018310547,
+        "wordTimings": [
             {
                 "word": "Und",
                 "start": 179.9199981689453,
                 "end": 180.02000427246094
             },
             {
-                "word": "ja",
+                "word": "ja,",
                 "start": 180.02000427246094,
                 "end": 180.5
             },
@@ -2686,22 +2406,13 @@
                 "end": 180.74000549316406
             },
             {
-                "word": "kommt.",
+                "word": "kommt",
                 "start": 180.74000549316406,
-                "end": 181.2600067138672
-            }
-        ],
-        "translationEn": "around 120,000 square meters And yes, here it comes.",
-        "translationVi": "khoảng 120.000 mét vuông Và vâng, đây là nơi."
-    },
-    {
-        "text": "eher der obligatorische Fußballfeldervergleich das entspricht ungefähr 17.",
-        "start": 180.8600067138672,
-        "end": 186.5799987792969,
-        "wordTimings": [
+                "end": 180.9600067138672
+            },
             {
                 "word": "eher",
-                "start": 180.8600067138672,
+                "start": 180.9600067138672,
                 "end": 181.32000732421875
             },
             {
@@ -2715,12 +2426,12 @@
                 "end": 182.6999969482422
             },
             {
-                "word": "Fußballfeldervergleich",
+                "word": "Fußballfeldervergleich:",
                 "start": 182.6999969482422,
                 "end": 184.10000610351562
             },
             {
-                "word": "das",
+                "word": "Das",
                 "start": 184.6199951171875,
                 "end": 184.8000030517578
             },
@@ -2735,24 +2446,24 @@
                 "end": 185.74000549316406
             },
             {
-                "word": "17.",
+                "word": "17",
                 "start": 185.74000549316406,
-                "end": 186.5799987792969
+                "end": 186.27999877929688
+            },
+            {
+                "word": "davon.",
+                "start": 186.27999877929688,
+                "end": 186.5800018310547
             }
         ],
-        "translationEn": "rather the obligatory comparison of football fields, which corresponds to approximately 17.",
-        "translationVi": "hơn là sự so sánh các sân bóng đá bắt buộc, điều này tương đương với khoảng 17."
+        "translationEn": "And yes, here comes the obligatory comparison to football fields: That corresponds to about 17 of them.",
+        "translationVi": "Và vâng, đây là sự so sánh sân bóng đá bắt buộc: Nó tương đương với khoảng 17 sân như vậy."
     },
     {
-        "text": "davon Unter anderem KI Firmen können sich hier.",
-        "start": 186.17999877929688,
-        "end": 189.35999755859376,
+        "text": "Unter anderem KI-Firmen können sich hier einmieten und ihren Stellplatz frei gestalten.",
+        "start": 187.02000427246094,
+        "end": 191.36000061035156,
         "wordTimings": [
-            {
-                "word": "davon",
-                "start": 186.17999877929688,
-                "end": 186.5800018310547
-            },
             {
                 "word": "Unter",
                 "start": 187.02000427246094,
@@ -2764,12 +2475,7 @@
                 "end": 187.67999267578125
             },
             {
-                "word": "KI",
-                "start": 187.67999267578125,
-                "end": 188.10000610351562
-            },
-            {
-                "word": "Firmen",
+                "word": "KI-Firmen",
                 "start": 188.10000610351562,
                 "end": 188.32000732421875
             },
@@ -2784,22 +2490,13 @@
                 "end": 188.77999877929688
             },
             {
-                "word": "hier.",
+                "word": "hier",
                 "start": 188.77999877929688,
-                "end": 189.35999755859376
-            }
-        ],
-        "translationEn": "Among other things, AI companies can be found here.",
-        "translationVi": "Trong số đó, các công ty trí tuệ nhân tạo có thể tham gia ở đây."
-    },
-    {
-        "text": "einmieten und ihren Stellplatz frei gestalten In diesen.",
-        "start": 188.95999755859376,
-        "end": 192.97999267578126,
-        "wordTimings": [
+                "end": 189.05999755859375
+            },
             {
                 "word": "einmieten",
-                "start": 188.95999755859376,
+                "start": 189.05999755859375,
                 "end": 189.36000061035156
             },
             {
@@ -2823,32 +2520,32 @@
                 "end": 190.9600067138672
             },
             {
-                "word": "gestalten",
+                "word": "gestalten.",
                 "start": 190.9600067138672,
                 "end": 191.36000061035156
-            },
+            }
+        ],
+        "translationEn": "Among other things, AI companies can rent space here and design their area freely.",
+        "translationVi": "Trong số đó, các công ty AI có thể thuê chỗ ở đây và tự do thiết kế không gian của mình."
+    },
+    {
+        "text": "In diesen Containern befinden sich ihre Supercomputer oder Server.",
+        "start": 192.1999969482422,
+        "end": 195.97999572753906,
+        "wordTimings": [
             {
                 "word": "In",
                 "start": 192.1999969482422,
                 "end": 192.33999633789062
             },
             {
-                "word": "diesen.",
+                "word": "diesen",
                 "start": 192.33999633789062,
-                "end": 192.97999267578126
-            }
-        ],
-        "translationEn": "rent and design their parking space freely in these.",
-        "translationVi": "thuê và tự do thiết kế chỗ đậu xe của họ Trong những."
-    },
-    {
-        "text": "Containern befinden sich ihre Supercomputer oder Server Auch.",
-        "start": 192.57999267578126,
-        "end": 197.24000244140626,
-        "wordTimings": [
+                "end": 192.67999267578125
+            },
             {
                 "word": "Containern",
-                "start": 192.57999267578126,
+                "start": 192.67999267578125,
                 "end": 193.33999633789062
             },
             {
@@ -2877,27 +2574,27 @@
                 "end": 195.6199951171875
             },
             {
-                "word": "Server",
+                "word": "Server.",
                 "start": 195.6199951171875,
                 "end": 195.97999572753906
-            },
-            {
-                "word": "Auch.",
-                "start": 196.8800048828125,
-                "end": 197.24000244140626
             }
         ],
-        "translationEn": "Their supercomputers or servers are also located in containers.",
-        "translationVi": "Trong các container cũng có siêu máy tính hoặc máy chủ của họ."
+        "translationEn": "These containers hold their supercomputers or servers.",
+        "translationVi": "Trong những container này có siêu máy tính hoặc máy chủ của họ."
     },
     {
-        "text": "die reine Datenspeicherung ist möglich In einen einzigen.",
-        "start": 196.84000244140626,
-        "end": 200.90000610351564,
+        "text": "Auch die reine Datenspeicherung ist möglich. In einen einzigen Container passen beispielsweise bis zu 70 Petabyte.",
+        "start": 196.8800048828125,
+        "end": 203.75999450683594,
         "wordTimings": [
             {
+                "word": "Auch",
+                "start": 196.8800048828125,
+                "end": 196.94000244140625
+            },
+            {
                 "word": "die",
-                "start": 196.84000244140626,
+                "start": 196.94000244140625,
                 "end": 197.17999267578125
             },
             {
@@ -2916,7 +2613,7 @@
                 "end": 198.44000244140625
             },
             {
-                "word": "möglich",
+                "word": "möglich.",
                 "start": 198.44000244140625,
                 "end": 198.82000732421875
             },
@@ -2931,22 +2628,13 @@
                 "end": 200.17999267578125
             },
             {
-                "word": "einzigen.",
+                "word": "einzigen",
                 "start": 200.17999267578125,
-                "end": 200.90000610351564
-            }
-        ],
-        "translationEn": "pure data storage is possible in a single one.",
-        "translationVi": "Việc lưu trữ dữ liệu thuần túy là có thể trong một cái duy nhất."
-    },
-    {
-        "text": "Container passen beispielsweise bis zu 70 Petabyte Das.",
-        "start": 200.50000610351563,
-        "end": 204.82000427246095,
-        "wordTimings": [
+                "end": 200.60000610351562
+            },
             {
                 "word": "Container",
-                "start": 200.50000610351563,
+                "start": 200.60000610351562,
                 "end": 201.05999755859375
             },
             {
@@ -2975,27 +2663,27 @@
                 "end": 203.10000610351562
             },
             {
-                "word": "Petabyte",
+                "word": "Petabyte.",
                 "start": 203.10000610351562,
                 "end": 203.75999450683594
-            },
-            {
-                "word": "Das.",
-                "start": 204.39999389648438,
-                "end": 204.82000427246095
             }
         ],
-        "translationEn": "Containers can hold up to 70 petabytes, for example.",
-        "translationVi": "Container có thể chứa lên đến 70 Petabyte."
+        "translationEn": "Pure data storage is also possible. For example, a single container can hold up to 70 petabytes.",
+        "translationVi": "Cũng có thể lưu trữ dữ liệu thuần túy. Ví dụ, một container duy nhất có thể chứa lên đến 70 Petabyte."
     },
     {
-        "text": "entspricht unglaublichen 70 Millionen Gigabyte an Daten Hinter.",
-        "start": 204.42000427246094,
-        "end": 210.27999572753907,
+        "text": "Das entspricht unglaublichen 70 Millionen Gigabyte an Daten.",
+        "start": 204.39999389648438,
+        "end": 208.13999938964844,
         "wordTimings": [
             {
+                "word": "Das",
+                "start": 204.39999389648438,
+                "end": 204.52000427246094
+            },
+            {
                 "word": "entspricht",
-                "start": 204.42000427246094,
+                "start": 204.52000427246094,
                 "end": 204.9199981689453
             },
             {
@@ -3024,27 +2712,27 @@
                 "end": 208.13999938964844
             },
             {
-                "word": "Daten",
+                "word": "Daten.",
                 "start": 208.13999938964844,
                 "end": 208.13999938964844
-            },
-            {
-                "word": "Hinter.",
-                "start": 209.72000122070312,
-                "end": 210.27999572753907
             }
         ],
-        "translationEn": "corresponds to an incredible 70 million gigabytes of data behind it.",
-        "translationVi": "tương đương với 70 triệu Gigabyte dữ liệu."
+        "translationEn": "That corresponds to an incredible 70 million gigabytes of data.",
+        "translationVi": "Điều đó tương đương với 70 triệu gigabyte dữ liệu."
     },
     {
-        "text": "mir siehst du die Nationale Infrastruktur für Forschungsdaten.",
-        "start": 209.87999572753907,
-        "end": 213.93999938964845,
+        "text": "Hinter mir siehst du die Nationale Infrastruktur für Forschungsdaten, die größte Datensammlung in Norwegen.",
+        "start": 209.72000122070312,
+        "end": 215.97999572753906,
         "wordTimings": [
             {
+                "word": "Hinter",
+                "start": 209.72000122070312,
+                "end": 209.97999572753906
+            },
+            {
                 "word": "mir",
-                "start": 209.87999572753907,
+                "start": 209.97999572753906,
                 "end": 210.3800048828125
             },
             {
@@ -3078,22 +2766,13 @@
                 "end": 212.83999633789062
             },
             {
-                "word": "Forschungsdaten.",
+                "word": "Forschungsdaten,",
                 "start": 212.83999633789062,
-                "end": 213.93999938964845
-            }
-        ],
-        "translationEn": "You see the National Infrastructure for Research Data.",
-        "translationVi": "Bạn thấy cơ sở hạ tầng quốc gia cho dữ liệu nghiên cứu."
-    },
-    {
-        "text": "die größte Datensammlung in Norwegen Das hier sind.",
-        "start": 213.76000061035157,
-        "end": 218.0799987792969,
-        "wordTimings": [
+                "end": 213.63999938964844
+            },
             {
                 "word": "die",
-                "start": 213.76000061035157,
+                "start": 213.86000061035156,
                 "end": 214.5
             },
             {
@@ -3112,10 +2791,19 @@
                 "end": 215.72000122070312
             },
             {
-                "word": "Norwegen",
+                "word": "Norwegen.",
                 "start": 215.72000122070312,
                 "end": 215.97999572753906
-            },
+            }
+        ],
+        "translationEn": "Behind me, you see the National Infrastructure for Research Data, the largest data collection in Norway.",
+        "translationVi": "Phía sau tôi, bạn thấy Hạ tầng Quốc gia cho Dữ liệu Nghiên cứu, bộ sưu tập dữ liệu lớn nhất ở Na Uy."
+    },
+    {
+        "text": "Das hier sind 70 Petabyte Speicherplatz und das mal zwei.",
+        "start": 217.3800048828125,
+        "end": 220.5,
+        "wordTimings": [
             {
                 "word": "Das",
                 "start": 217.3800048828125,
@@ -3127,22 +2815,13 @@
                 "end": 217.63999938964844
             },
             {
-                "word": "sind.",
+                "word": "sind",
                 "start": 217.63999938964844,
-                "end": 218.0799987792969
-            }
-        ],
-        "translationEn": "the largest data collection in Norway This is.",
-        "translationVi": "bộ dữ liệu lớn nhất ở Na Uy Đây là."
-    },
-    {
-        "text": "70 Petabyte Speicherplatz und das mal zwei Sie.",
-        "start": 217.67999877929688,
-        "end": 221.24000244140626,
-        "wordTimings": [
+                "end": 217.77999877929688
+            },
             {
                 "word": "70",
-                "start": 217.67999877929688,
+                "start": 217.77999877929688,
                 "end": 218.4600067138672
             },
             {
@@ -3171,27 +2850,27 @@
                 "end": 220.24000549316406
             },
             {
-                "word": "zwei",
+                "word": "zwei.",
                 "start": 220.24000549316406,
                 "end": 220.5
-            },
-            {
-                "word": "Sie.",
-                "start": 220.94000244140625,
-                "end": 221.24000244140626
             }
         ],
-        "translationEn": "70 petabytes of storage space, and that times two.",
-        "translationVi": "70 Petabyte dung lượng lưu trữ và gấp đôi điều đó."
+        "translationEn": "This is 70 petabytes of storage space, and that times two.",
+        "translationVi": "Đây là 70 Petabyte dung lượng lưu trữ và gấp đôi điều đó."
     },
     {
-        "text": "wird von norwegischen Universitäten sowie der gesamten Forschungslandschaft.",
-        "start": 220.84000244140626,
-        "end": 225.02000122070314,
+        "text": "Sie wird von norwegischen Universitäten sowie der gesamten Forschungslandschaft genutzt.",
+        "start": 220.94000244140625,
+        "end": 225.13999938964844,
         "wordTimings": [
             {
+                "word": "Sie",
+                "start": 220.94000244140625,
+                "end": 220.94000244140625
+            },
+            {
                 "word": "wird",
-                "start": 220.84000244140626,
+                "start": 220.94000244140625,
                 "end": 221.0800018310547
             },
             {
@@ -3225,24 +2904,24 @@
                 "end": 223.77999877929688
             },
             {
-                "word": "Forschungslandschaft.",
+                "word": "Forschungslandschaft",
                 "start": 223.77999877929688,
-                "end": 225.02000122070314
+                "end": 224.72000122070312
+            },
+            {
+                "word": "genutzt.",
+                "start": 224.72000122070312,
+                "end": 225.13999938964844
             }
         ],
-        "translationEn": "is supported by Norwegian universities as well as the entire research landscape.",
-        "translationVi": "được từ các trường đại học Na Uy cũng như toàn bộ lĩnh vực nghiên cứu."
+        "translationEn": "It is used by Norwegian universities as well as the entire research landscape.",
+        "translationVi": "Nó được sử dụng bởi các trường đại học Na Uy cũng như toàn bộ lĩnh vực nghiên cứu."
     },
     {
-        "text": "genutzt Die gesamte Zukunft der norwegischen Wissenschaft steckt.",
-        "start": 224.62000122070313,
-        "end": 230.43999938964845,
+        "text": "Die gesamte Zukunft der norwegischen Wissenschaft steckt in diesem Container, und ihr passt darauf auf.",
+        "start": 227.25999450683594,
+        "end": 232.9199981689453,
         "wordTimings": [
-            {
-                "word": "genutzt",
-                "start": 224.62000122070313,
-                "end": 225.13999938964844
-            },
             {
                 "word": "Die",
                 "start": 227.25999450683594,
@@ -3251,11 +2930,11 @@
             {
                 "word": "gesamte",
                 "start": 227.6999969482422,
-                "end": 228.27999877929688
+                "end": 228.25999450683594
             },
             {
                 "word": "Zukunft",
-                "start": 228.27999877929688,
+                "start": 228.25999450683594,
                 "end": 228.6199951171875
             },
             {
@@ -3274,22 +2953,13 @@
                 "end": 229.77999877929688
             },
             {
-                "word": "steckt.",
+                "word": "steckt",
                 "start": 229.77999877929688,
-                "end": 230.43999938964845
-            }
-        ],
-        "translationEn": "The entire future of Norwegian science is at stake.",
-        "translationVi": "Tương lai toàn bộ của khoa học Na Uy đang nằm trong tay."
-    },
-    {
-        "text": "in diesem Container und ihr passt darauf auf.",
-        "start": 230.03999938964844,
-        "end": 233.21999816894532,
-        "wordTimings": [
+                "end": 230.13999938964844
+            },
             {
                 "word": "in",
-                "start": 230.03999938964844,
+                "start": 230.13999938964844,
                 "end": 230.3800048828125
             },
             {
@@ -3298,7 +2968,7 @@
                 "end": 230.67999267578125
             },
             {
-                "word": "Container",
+                "word": "Container,",
                 "start": 230.67999267578125,
                 "end": 231.22000122070312
             },
@@ -3325,24 +2995,24 @@
             {
                 "word": "auf.",
                 "start": 232.16000366210938,
-                "end": 233.21999816894532
+                "end": 232.9199981689453
             }
         ],
-        "translationEn": "in this container and you take care of it.",
-        "translationVi": "trong thùng này và các bạn hãy giữ gìn nó."
+        "translationEn": "The entire future of Norwegian science is in this container, and you are taking care of it.",
+        "translationVi": "Toàn bộ tương lai của khoa học Na Uy nằm trong container này, và các bạn đang bảo vệ nó."
     },
     {
-        "text": "Kurz gesagt hier sind zwei Versionen Und eine.",
-        "start": 233.34000244140626,
-        "end": 237.0799987792969,
+        "text": "Kurz gesagt, hier sind zwei Versionen und eine dritte an einem anderen Ort.",
+        "start": 233.44000244140625,
+        "end": 238.75999450683594,
         "wordTimings": [
             {
                 "word": "Kurz",
-                "start": 233.34000244140626,
+                "start": 233.44000244140625,
                 "end": 233.9600067138672
             },
             {
-                "word": "gesagt",
+                "word": "gesagt,",
                 "start": 233.9600067138672,
                 "end": 234.22000122070312
             },
@@ -3367,27 +3037,18 @@
                 "end": 235.4199981689453
             },
             {
-                "word": "Und",
+                "word": "und",
                 "start": 235.97999572753906,
                 "end": 236.5800018310547
             },
             {
-                "word": "eine.",
+                "word": "eine",
                 "start": 236.5800018310547,
-                "end": 237.0799987792969
-            }
-        ],
-        "translationEn": "In short, here are two versions and one.",
-        "translationVi": "Nói ngắn gọn, đây là hai phiên bản và một."
-    },
-    {
-        "text": "dritte an einem anderen Ort Versteckt Versteckt Versteckt.",
-        "start": 236.67999877929688,
-        "end": 242.71999816894532,
-        "wordTimings": [
+                "end": 236.77999877929688
+            },
             {
                 "word": "dritte",
-                "start": 236.67999877929688,
+                "start": 236.77999877929688,
                 "end": 237.1199951171875
             },
             {
@@ -3406,37 +3067,37 @@
                 "end": 238.72000122070312
             },
             {
-                "word": "Ort",
+                "word": "Ort.",
                 "start": 238.72000122070312,
                 "end": 238.75999450683594
-            },
+            }
+        ],
+        "translationEn": "In short, here are two versions and a third one in another place.",
+        "translationVi": "Nói ngắn gọn, đây là hai phiên bản và một phiên bản thứ ba ở một nơi khác."
+    },
+    {
+        "text": "Versteckt, versteckt, versteckt, tief unter der Mine. Hoffen wir mal ganz woanders.",
+        "start": 240.33999633789062,
+        "end": 245.24000549316406,
+        "wordTimings": [
             {
-                "word": "Versteckt",
+                "word": "Versteckt,",
                 "start": 240.33999633789062,
                 "end": 240.66000366210938
             },
             {
-                "word": "Versteckt",
+                "word": "versteckt,",
                 "start": 241.52000427246094,
                 "end": 241.94000244140625
             },
             {
-                "word": "Versteckt.",
+                "word": "versteckt,",
                 "start": 241.94000244140625,
-                "end": 242.71999816894532
-            }
-        ],
-        "translationEn": "third hidden in another place hidden hidden hidden.",
-        "translationVi": "thứ ba ở một nơi khác Ẩn giấu Ẩn giấu Ẩn giấu."
-    },
-    {
-        "text": "Tief unter der Mine Hoffen wir mal ganz.",
-        "start": 242.31999816894532,
-        "end": 244.9199951171875,
-        "wordTimings": [
+                "end": 242.4199981689453
+            },
             {
-                "word": "Tief",
-                "start": 242.31999816894532,
+                "word": "tief",
+                "start": 242.4199981689453,
                 "end": 242.94000244140625
             },
             {
@@ -3450,7 +3111,7 @@
                 "end": 243.4600067138672
             },
             {
-                "word": "Mine",
+                "word": "Mine.",
                 "start": 243.4600067138672,
                 "end": 243.4600067138672
             },
@@ -3470,26 +3131,26 @@
                 "end": 244.39999389648438
             },
             {
-                "word": "ganz.",
+                "word": "ganz",
                 "start": 244.39999389648438,
-                "end": 244.9199951171875
-            }
-        ],
-        "translationEn": "Deep under the mine, let's hope for the best.",
-        "translationVi": "Sâu dưới mỏ, chúng ta hãy hy vọng mọi điều tốt đẹp."
-    },
-    {
-        "text": "woanders Soweit so sicher Wie bereits erwähnt setzen.",
-        "start": 244.5199951171875,
-        "end": 249.13999633789064,
-        "wordTimings": [
-            {
-                "word": "woanders",
-                "start": 244.5199951171875,
-                "end": 245.24000549316406
+                "end": 244.6199951171875
             },
             {
-                "word": "Soweit",
+                "word": "woanders.",
+                "start": 244.6199951171875,
+                "end": 245.24000549316406
+            }
+        ],
+        "translationEn": "Hidden, hidden, hidden, deep under the mine. Let's hope for something completely different.",
+        "translationVi": "Ẩn giấu, ẩn giấu, ẩn giấu, sâu dưới mỏ. Hy vọng chúng ta sẽ ở một nơi khác."
+    },
+    {
+        "text": "Soweit, so sicher. Wie bereits erwähnt, setzen viele Rechenzentren auf fossile Energien oder Kernkraft und belasten damit die Umwelt.",
+        "start": 246.4600067138672,
+        "end": 253.86000061035156,
+        "wordTimings": [
+            {
+                "word": "Soweit,",
                 "start": 246.4600067138672,
                 "end": 246.67999267578125
             },
@@ -3499,7 +3160,7 @@
                 "end": 247.0399932861328
             },
             {
-                "word": "sicher",
+                "word": "sicher.",
                 "start": 247.0399932861328,
                 "end": 247.1999969482422
             },
@@ -3514,27 +3175,18 @@
                 "end": 248.17999267578125
             },
             {
-                "word": "erwähnt",
+                "word": "erwähnt,",
                 "start": 248.17999267578125,
                 "end": 248.52000427246094
             },
             {
-                "word": "setzen.",
+                "word": "setzen",
                 "start": 248.63999938964844,
-                "end": 249.13999633789064
-            }
-        ],
-        "translationEn": "elsewhere So far so safe As already mentioned, set.",
-        "translationVi": "Ở nơi khác, đến đây thì an toàn. Như đã đề cập, hãy tiếp tục."
-    },
-    {
-        "text": "viele Rechenzentren auf fossile Energien oder Kernkraft und.",
-        "start": 248.73999633789063,
-        "end": 252.8,
-        "wordTimings": [
+                "end": 248.83999633789062
+            },
             {
                 "word": "viele",
-                "start": 248.73999633789063,
+                "start": 248.83999633789062,
                 "end": 249.22000122070312
             },
             {
@@ -3568,22 +3220,13 @@
                 "end": 251.9199981689453
             },
             {
-                "word": "und.",
+                "word": "und",
                 "start": 251.9199981689453,
-                "end": 252.8
-            }
-        ],
-        "translationEn": "many data centers rely on fossil fuels or nuclear power and.",
-        "translationVi": "nhiều trung tâm dữ liệu dựa vào năng lượng hóa thạch hoặc năng lượng hạt nhân và."
-    },
-    {
-        "text": "belasten damit die Umwelt Die Leftal Mine nutzt.",
-        "start": 252.4,
-        "end": 256.35999755859376,
-        "wordTimings": [
+                "end": 252.5
+            },
             {
                 "word": "belasten",
-                "start": 252.4,
+                "start": 252.5,
                 "end": 252.8800048828125
             },
             {
@@ -3597,18 +3240,27 @@
                 "end": 253.63999938964844
             },
             {
-                "word": "Umwelt",
+                "word": "Umwelt.",
                 "start": 253.63999938964844,
                 "end": 253.86000061035156
-            },
+            }
+        ],
+        "translationEn": "So far, so good. As mentioned before, many data centers rely on fossil fuels or nuclear power, thereby burdening the environment.",
+        "translationVi": "Đến đây, mọi thứ đều an toàn. Như đã đề cập, nhiều trung tâm dữ liệu dựa vào năng lượng hóa thạch hoặc năng lượng hạt nhân và do đó gây ảnh hưởng đến môi trường."
+    },
+    {
+        "text": "Die Lefdal Mine nutzt aber Hydropower. Kein Wunder, Norwegen ist Europas führendes Wasserkraftland.",
+        "start": 254.63999938964844,
+        "end": 261.0799865722656,
+        "wordTimings": [
             {
                 "word": "Die",
                 "start": 254.63999938964844,
-                "end": 254.83999633789062
+                "end": 254.82000732421875
             },
             {
-                "word": "Leftal",
-                "start": 254.83999633789062,
+                "word": "Lefdal",
+                "start": 254.82000732421875,
                 "end": 255.39999389648438
             },
             {
@@ -3617,26 +3269,17 @@
                 "end": 255.63999938964844
             },
             {
-                "word": "nutzt.",
+                "word": "nutzt",
                 "start": 255.63999938964844,
-                "end": 256.35999755859376
-            }
-        ],
-        "translationEn": "burdening the environment that the Leftal Mine uses.",
-        "translationVi": "gây ô nhiễm môi trường mà mỏ Leftal sử dụng."
-    },
-    {
-        "text": "aber Hydropower Kein Wunder Norwegen ist Europas führendes.",
-        "start": 255.95999755859376,
-        "end": 260.560009765625,
-        "wordTimings": [
+                "end": 256.05999755859375
+            },
             {
                 "word": "aber",
-                "start": 255.95999755859376,
+                "start": 256.05999755859375,
                 "end": 256.3800048828125
             },
             {
-                "word": "Hydropower",
+                "word": "Hydropower.",
                 "start": 256.3800048828125,
                 "end": 257.0400085449219
             },
@@ -3646,7 +3289,7 @@
                 "end": 257.739990234375
             },
             {
-                "word": "Wunder",
+                "word": "Wunder,",
                 "start": 257.739990234375,
                 "end": 257.94000244140625
             },
@@ -3666,28 +3309,28 @@
                 "end": 259.70001220703125
             },
             {
-                "word": "führendes.",
+                "word": "führendes",
                 "start": 259.70001220703125,
-                "end": 260.560009765625
-            }
-        ],
-        "translationEn": "But hydropower is no wonder; Norway is Europe's leader.",
-        "translationVi": "Nhưng thủy điện không có gì ngạc nhiên, Na Uy là nước dẫn đầu châu Âu."
-    },
-    {
-        "text": "Wasserkraftland und deckt fast 100 Prozent seines Strombedarfs.",
-        "start": 260.160009765625,
-        "end": 264.1800048828125,
-        "wordTimings": [
-            {
-                "word": "Wasserkraftland",
-                "start": 260.160009765625,
-                "end": 261.0799865722656
+                "end": 260.260009765625
             },
             {
-                "word": "und",
+                "word": "Wasserkraftland.",
+                "start": 260.260009765625,
+                "end": 261.0799865722656
+            }
+        ],
+        "translationEn": "The Lefdal Mine uses hydropower. No wonder, Norway is Europe's leading hydropower country.",
+        "translationVi": "Mỏ Lefdal sử dụng năng lượng thủy điện. Không có gì ngạc nhiên, Na Uy là quốc gia hàng đầu châu Âu về năng lượng thủy điện."
+    },
+    {
+        "text": "Es deckt fast 100 Prozent seines Strombedarfs aus dieser erneuerbaren Energiequelle.",
+        "start": 261.0799865722656,
+        "end": 265.8999938964844,
+        "wordTimings": [
+            {
+                "word": "Es",
                 "start": 261.0799865722656,
-                "end": 261.3800048828125
+                "end": 261.3299865722656
             },
             {
                 "word": "deckt",
@@ -3715,22 +3358,13 @@
                 "end": 263.17999267578125
             },
             {
-                "word": "Strombedarfs.",
+                "word": "Strombedarfs",
                 "start": 263.17999267578125,
-                "end": 264.1800048828125
-            }
-        ],
-        "translationEn": "Hydropower country and covers almost 100 percent of its electricity needs.",
-        "translationVi": "Nước có năng lượng thủy điện và đáp ứng gần 100% nhu cầu điện của mình."
-    },
-    {
-        "text": "aus dieser erneuerbaren Energiequelle Ein weiteres Problem von.",
-        "start": 263.7800048828125,
-        "end": 269.97999267578126,
-        "wordTimings": [
+                "end": 263.8800048828125
+            },
             {
                 "word": "aus",
-                "start": 263.7800048828125,
+                "start": 263.8800048828125,
                 "end": 264.1000061035156
             },
             {
@@ -3744,13 +3378,22 @@
                 "end": 265.1600036621094
             },
             {
-                "word": "Energiequelle",
+                "word": "Energiequelle.",
                 "start": 265.1600036621094,
                 "end": 265.8999938964844
-            },
+            }
+        ],
+        "translationEn": "It covers almost 100 percent of its electricity needs from this renewable energy source.",
+        "translationVi": "Nó đáp ứng gần 100% nhu cầu điện của mình từ nguồn năng lượng tái tạo này."
+    },
+    {
+        "text": "Ein weiteres Problem von Rechenzentren ist ihr hoher Wasserverbrauch für die Kühlung der Server.",
+        "start": 267.70001220703125,
+        "end": 273.05999755859375,
+        "wordTimings": [
             {
                 "word": "Ein",
-                "start": 267.7200012207031,
+                "start": 267.70001220703125,
                 "end": 268.4200134277344
             },
             {
@@ -3764,22 +3407,13 @@
                 "end": 269.3800048828125
             },
             {
-                "word": "von.",
+                "word": "von",
                 "start": 269.3800048828125,
-                "end": 269.97999267578126
-            }
-        ],
-        "translationEn": "from this renewable energy source. Another problem of.",
-        "translationVi": "từ nguồn năng lượng tái tạo này Một vấn đề khác của."
-    },
-    {
-        "text": "Rechenzentren ist ihr hoher Wasserverbrauch für die Kühlung.",
-        "start": 269.5799926757812,
-        "end": 272.8199890136719,
-        "wordTimings": [
+                "end": 269.67999267578125
+            },
             {
                 "word": "Rechenzentren",
-                "start": 269.5799926757812,
+                "start": 269.67999267578125,
                 "end": 270.239990234375
             },
             {
@@ -3813,29 +3447,29 @@
                 "end": 272.32000732421875
             },
             {
-                "word": "Kühlung.",
+                "word": "Kühlung",
                 "start": 272.32000732421875,
-                "end": 272.8199890136719
-            }
-        ],
-        "translationEn": "Data centers have a high water consumption for cooling.",
-        "translationVi": "Các trung tâm dữ liệu có mức tiêu thụ nước cao để làm mát."
-    },
-    {
-        "text": "der Server Durchschnittlich verbraucht eins dabei ungefähr so.",
-        "start": 272.41998901367185,
-        "end": 276.9199951171875,
-        "wordTimings": [
+                "end": 272.5199890136719
+            },
             {
                 "word": "der",
-                "start": 272.41998901367185,
+                "start": 272.5199890136719,
                 "end": 272.760009765625
             },
             {
-                "word": "Server",
+                "word": "Server.",
                 "start": 272.760009765625,
                 "end": 273.05999755859375
-            },
+            }
+        ],
+        "translationEn": "Another problem with data centers is their high water consumption for cooling the servers.",
+        "translationVi": "Một vấn đề khác của các trung tâm dữ liệu là mức tiêu thụ nước cao để làm mát các máy chủ."
+    },
+    {
+        "text": "Durchschnittlich verbraucht eins dabei ungefähr so viel Wasser wie drei Krankenhäuser.",
+        "start": 274.5199890136719,
+        "end": 278.7200012207031,
+        "wordTimings": [
             {
                 "word": "Durchschnittlich",
                 "start": 274.5199890136719,
@@ -3862,22 +3496,13 @@
                 "end": 276.3800048828125
             },
             {
-                "word": "so.",
+                "word": "so",
                 "start": 276.3800048828125,
-                "end": 276.9199951171875
-            }
-        ],
-        "translationEn": "The server consumes an average of about one.",
-        "translationVi": "Máy chủ trung bình tiêu thụ khoảng như vậy."
-    },
-    {
-        "text": "viel Wasser wie drei Krankenhäuser Hier hat die.",
-        "start": 276.5199951171875,
-        "end": 281.5799987792969,
-        "wordTimings": [
+                "end": 276.6199951171875
+            },
             {
                 "word": "viel",
-                "start": 276.5199951171875,
+                "start": 276.6199951171875,
                 "end": 276.760009765625
             },
             {
@@ -3896,10 +3521,19 @@
                 "end": 278
             },
             {
-                "word": "Krankenhäuser",
+                "word": "Krankenhäuser.",
                 "start": 278,
                 "end": 278.7200012207031
-            },
+            }
+        ],
+        "translationEn": "On average, one consumes about as much water as three hospitals.",
+        "translationVi": "Trung bình, một cái tiêu tốn khoảng lượng nước tương đương với ba bệnh viện."
+    },
+    {
+        "text": "Hier hat die Lefdal Mine gleich mehrere Asse im Ärmel.",
+        "start": 280.79998779296875,
+        "end": 283.44000244140625,
+        "wordTimings": [
             {
                 "word": "Hier",
                 "start": 280.79998779296875,
@@ -3911,22 +3545,13 @@
                 "end": 281.1000061035156
             },
             {
-                "word": "die.",
+                "word": "die",
                 "start": 281.1000061035156,
-                "end": 281.5799987792969
-            }
-        ],
-        "translationEn": "a lot of water like three hospitals Here it has the.",
-        "translationVi": "nhiều nước như ba bệnh viện Ở đây có."
-    },
-    {
-        "text": "Leftal Mine gleich mehrere Asse im Ärmel Sie.",
-        "start": 281.17999877929685,
-        "end": 284.50001220703126,
-        "wordTimings": [
+                "end": 281.29998779296875
+            },
             {
-                "word": "Leftal",
-                "start": 281.17999877929685,
+                "word": "Lefdal",
+                "start": 281.29998779296875,
                 "end": 281.67999267578125
             },
             {
@@ -3955,27 +3580,27 @@
                 "end": 283.20001220703125
             },
             {
-                "word": "Ärmel",
+                "word": "Ärmel.",
                 "start": 283.20001220703125,
                 "end": 283.44000244140625
-            },
-            {
-                "word": "Sie.",
-                "start": 284.1600036621094,
-                "end": 284.50001220703126
             }
         ],
-        "translationEn": "Leftal Mine has several aces up its sleeve.",
-        "translationVi": "Mỏ Leftal có nhiều lá bài trong tay."
+        "translationEn": "Here, the Lefdal Mine has several aces up its sleeve.",
+        "translationVi": "Ở đây, mỏ Lefdal có nhiều lợi thế trong tay."
     },
     {
-        "text": "profitiert von der stets kühlen Umgebungstemperatur Der eigentliche.",
-        "start": 284.1000122070312,
-        "end": 288.97999267578126,
+        "text": "Sie profitiert von der stets kühlen Umgebungstemperatur.",
+        "start": 284.20001220703125,
+        "end": 287.20001220703125,
         "wordTimings": [
             {
+                "word": "Sie",
+                "start": 284.20001220703125,
+                "end": 284.20001220703125
+            },
+            {
                 "word": "profitiert",
-                "start": 284.1000122070312,
+                "start": 284.20001220703125,
                 "end": 284.70001220703125
             },
             {
@@ -3999,32 +3624,32 @@
                 "end": 286.0199890136719
             },
             {
-                "word": "Umgebungstemperatur",
+                "word": "Umgebungstemperatur.",
                 "start": 286.0199890136719,
                 "end": 287.20001220703125
-            },
+            }
+        ],
+        "translationEn": "It benefits from the consistently cool ambient temperature.",
+        "translationVi": "Cô ấy hưởng lợi từ nhiệt độ môi trường luôn mát mẻ."
+    },
+    {
+        "text": "Der eigentliche Gamechanger ist die Lage direkt am Fjord.",
+        "start": 287.9599914550781,
+        "end": 290.82000732421875,
+        "wordTimings": [
             {
                 "word": "Der",
                 "start": 287.9599914550781,
                 "end": 288.0199890136719
             },
             {
-                "word": "eigentliche.",
+                "word": "eigentliche",
                 "start": 288.0199890136719,
-                "end": 288.97999267578126
-            }
-        ],
-        "translationEn": "benefits from the consistently cool ambient temperature The actual.",
-        "translationVi": "hưởng lợi từ nhiệt độ môi trường luôn mát mẻ."
-    },
-    {
-        "text": "Gamechanger ist die Lage direkt am Fjord Ein.",
-        "start": 288.5799926757812,
-        "end": 291.9600036621094,
-        "wordTimings": [
+                "end": 288.67999267578125
+            },
             {
                 "word": "Gamechanger",
-                "start": 288.5799926757812,
+                "start": 288.67999267578125,
                 "end": 289.239990234375
             },
             {
@@ -4053,27 +3678,27 @@
                 "end": 290.55999755859375
             },
             {
-                "word": "Fjord",
+                "word": "Fjord.",
                 "start": 290.55999755859375,
                 "end": 290.82000732421875
-            },
-            {
-                "word": "Ein.",
-                "start": 291.32000732421875,
-                "end": 291.9600036621094
             }
         ],
-        "translationEn": "Gamechanger is the location directly on the fjord.",
-        "translationVi": "Điều thay đổi cuộc chơi là vị trí ngay bên cạnh Fjord Ein."
+        "translationEn": "The real game changer is the location right by the fjord.",
+        "translationVi": "Yếu tố thay đổi cuộc chơi thực sự là vị trí ngay bên cạnh vịnh hẹp."
     },
     {
-        "text": "tief eingeschnittener Meeresarm entstanden durch Gletscher den die.",
-        "start": 291.56000366210935,
-        "end": 295.87998657226564,
+        "text": "Ein tief eingeschnittener Meeresarm, entstanden durch Gletscher, den die Norweger geschickt nutzen.",
+        "start": 291.32000732421875,
+        "end": 297.1000061035156,
         "wordTimings": [
             {
+                "word": "Ein",
+                "start": 291.32000732421875,
+                "end": 291.6600036621094
+            },
+            {
                 "word": "tief",
-                "start": 291.56000366210935,
+                "start": 291.6600036621094,
                 "end": 292.0199890136719
             },
             {
@@ -4082,7 +3707,7 @@
                 "end": 293.0199890136719
             },
             {
-                "word": "Meeresarm",
+                "word": "Meeresarm,",
                 "start": 293.0199890136719,
                 "end": 293.5400085449219
             },
@@ -4097,7 +3722,7 @@
                 "end": 294.5400085449219
             },
             {
-                "word": "Gletscher",
+                "word": "Gletscher,",
                 "start": 294.5400085449219,
                 "end": 294.9599914550781
             },
@@ -4107,22 +3732,13 @@
                 "end": 295.3599853515625
             },
             {
-                "word": "die.",
+                "word": "die",
                 "start": 295.3599853515625,
-                "end": 295.87998657226564
-            }
-        ],
-        "translationEn": "deeply cut sea arm formed by glaciers.",
-        "translationVi": "vịnh biển sâu được hình thành bởi băng hà."
-    },
-    {
-        "text": "Norweger geschickt nutzen Aus rund 100 Metern Tiefe.",
-        "start": 295.4799865722656,
-        "end": 301.3400085449219,
-        "wordTimings": [
+                "end": 295.5799865722656
+            },
             {
                 "word": "Norweger",
-                "start": 295.4799865722656,
+                "start": 295.5799865722656,
                 "end": 296.0199890136719
             },
             {
@@ -4131,10 +3747,19 @@
                 "end": 296.7200012207031
             },
             {
-                "word": "nutzen",
+                "word": "nutzen.",
                 "start": 296.7200012207031,
                 "end": 297.1000061035156
-            },
+            }
+        ],
+        "translationEn": "A deeply cut sea arm, formed by glaciers, which the Norwegians skillfully utilize.",
+        "translationVi": "Một vịnh biển sâu, hình thành do băng hà, mà người Na Uy khéo léo tận dụng."
+    },
+    {
+        "text": "Aus rund 100 Metern Tiefe pumpen sie kaltes Wasser aus dem Fjord in die Mine.",
+        "start": 299.739990234375,
+        "end": 303.3999938964844,
+        "wordTimings": [
             {
                 "word": "Aus",
                 "start": 299.739990234375,
@@ -4156,22 +3781,13 @@
                 "end": 300.739990234375
             },
             {
-                "word": "Tiefe.",
+                "word": "Tiefe",
                 "start": 300.739990234375,
-                "end": 301.3400085449219
-            }
-        ],
-        "translationEn": "Norwegians skillfully use from a depth of around 100 meters.",
-        "translationVi": "Người Na Uy khéo léo sử dụng từ độ sâu khoảng 100 mét."
-    },
-    {
-        "text": "pumpen sie kaltes Wasser aus dem Fjord in.",
-        "start": 300.94000854492185,
-        "end": 303.3400085449219,
-        "wordTimings": [
+                "end": 301.0400085449219
+            },
             {
                 "word": "pumpen",
-                "start": 300.94000854492185,
+                "start": 301.0400085449219,
                 "end": 301.4200134277344
             },
             {
@@ -4205,29 +3821,29 @@
                 "end": 302.8999938964844
             },
             {
-                "word": "in.",
+                "word": "in",
                 "start": 302.8999938964844,
-                "end": 303.3400085449219
-            }
-        ],
-        "translationEn": "pump cold water from the fjord into.",
-        "translationVi": "bơm nước lạnh từ vịnh vào."
-    },
-    {
-        "text": "die Mine Dort unten herrschen das ganze Jahr.",
-        "start": 302.94000854492185,
-        "end": 305.8199890136719,
-        "wordTimings": [
+                "end": 303.0400085449219
+            },
             {
                 "word": "die",
-                "start": 302.94000854492185,
+                "start": 303.0400085449219,
                 "end": 303.3999938964844
             },
             {
-                "word": "Mine",
+                "word": "Mine.",
                 "start": 303.3999938964844,
                 "end": 303.3999938964844
-            },
+            }
+        ],
+        "translationEn": "From a depth of about 100 meters, they pump cold water from the fjord into the mine.",
+        "translationVi": "Họ bơm nước lạnh từ fjord lên mỏ từ độ sâu khoảng 100 mét."
+    },
+    {
+        "text": "Dort unten herrschen das ganze Jahr über stabile 9 Grad Celsius.",
+        "start": 304.1199951171875,
+        "end": 307.3999938964844,
+        "wordTimings": [
             {
                 "word": "Dort",
                 "start": 304.1199951171875,
@@ -4254,23 +3870,19 @@
                 "end": 305.3399963378906
             },
             {
-                "word": "Jahr.",
+                "word": "Jahr",
                 "start": 305.3399963378906,
-                "end": 305.8199890136719
-            }
-        ],
-        "translationEn": "The mine rules down there all year round.",
-        "translationVi": "mỏ ở đó dưới này hoạt động suốt cả năm."
-    },
-    {
-        "text": "überstabile 9 Grad Celsius Perfekte Bedingungen für natürliche.",
-        "start": 305.41998901367185,
-        "end": 310.8,
-        "wordTimings": [
+                "end": 305.5199890136719
+            },
             {
-                "word": "überstabile",
-                "start": 305.41998901367185,
+                "word": "über",
+                "start": 305.5199890136719,
                 "end": 306.20001220703125
+            },
+            {
+                "word": "stabile",
+                "start": 306.20001220703125,
+                "end": 306.45001220703125
             },
             {
                 "word": "9",
@@ -4283,10 +3895,19 @@
                 "end": 306.8599853515625
             },
             {
-                "word": "Celsius",
+                "word": "Celsius.",
                 "start": 306.8599853515625,
                 "end": 307.3999938964844
-            },
+            }
+        ],
+        "translationEn": "Down there, stable temperatures of 9 degrees Celsius prevail all year round.",
+        "translationVi": "Ở dưới đó, nhiệt độ ổn định 9 độ C suốt cả năm."
+    },
+    {
+        "text": "Perfekte Bedingungen für natürliche Kühlung.",
+        "start": 308.3800048828125,
+        "end": 310.6199951171875,
+        "wordTimings": [
             {
                 "word": "Perfekte",
                 "start": 308.3800048828125,
@@ -4303,24 +3924,24 @@
                 "end": 309.55999755859375
             },
             {
-                "word": "natürliche.",
+                "word": "natürliche",
                 "start": 309.55999755859375,
-                "end": 310.8
+                "end": 310.5
+            },
+            {
+                "word": "Kühlung.",
+                "start": 310.5,
+                "end": 310.6199951171875
             }
         ],
-        "translationEn": "overstable 9 degrees Celsius Perfect conditions for natural.",
-        "translationVi": "Nhiệt độ 9 độ Celsius ổn định tuyệt đối. Điều kiện hoàn hảo cho tự nhiên."
+        "translationEn": "Perfect conditions for natural cooling.",
+        "translationVi": "Điều kiện hoàn hảo cho việc làm mát tự nhiên."
     },
     {
-        "text": "Kühlung In etwa 55 Metern Tiefe interagiert das.",
-        "start": 310.4,
-        "end": 314.63999633789064,
+        "text": "In etwa 55 Metern Tiefe interagiert das Fjordwasser in der Mine mit Wärmetauschern.",
+        "start": 311.6400146484375,
+        "end": 317.0400085449219,
         "wordTimings": [
-            {
-                "word": "Kühlung",
-                "start": 310.4,
-                "end": 310.6199951171875
-            },
             {
                 "word": "In",
                 "start": 311.6400146484375,
@@ -4352,22 +3973,13 @@
                 "end": 314.0400085449219
             },
             {
-                "word": "das.",
+                "word": "das",
                 "start": 314.0400085449219,
-                "end": 314.63999633789064
-            }
-        ],
-        "translationEn": "Cooling interacts at a depth of about 55 meters.",
-        "translationVi": "Làm mát Ở độ sâu khoảng 55 mét, điều này tương tác."
-    },
-    {
-        "text": "Fjordwasser in der Mine mit Wärmetauschern und gibt.",
-        "start": 314.2399963378906,
-        "end": 318.3,
-        "wordTimings": [
+                "end": 314.3399963378906
+            },
             {
                 "word": "Fjordwasser",
-                "start": 314.2399963378906,
+                "start": 314.3399963378906,
                 "end": 314.8800048828125
             },
             {
@@ -4391,32 +4003,32 @@
                 "end": 316.0400085449219
             },
             {
-                "word": "Wärmetauschern",
+                "word": "Wärmetauschern.",
                 "start": 316.0400085449219,
                 "end": 317.0400085449219
-            },
-            {
-                "word": "und",
-                "start": 317.0400085449219,
-                "end": 317.7799987792969
-            },
-            {
-                "word": "gibt.",
-                "start": 317.7799987792969,
-                "end": 318.3
             }
         ],
-        "translationEn": "Fjord water in the mine with heat exchangers and is available.",
-        "translationVi": "Nước fjord trong mỏ với các bộ trao đổi nhiệt và có."
+        "translationEn": "At a depth of about 55 meters, the fjord water in the mine interacts with heat exchangers.",
+        "translationVi": "Ở độ sâu khoảng 55 mét, nước của vịnh tương tác với các bộ trao đổi nhiệt trong mỏ."
     },
     {
-        "text": "seine Kälte an einen geschlossenen Süßwasserkreislauf ab Das.",
-        "start": 317.9,
-        "end": 323.12000732421876,
+        "text": "Es gibt seine Kälte an einen geschlossenen Süßwasserkreislauf ab.",
+        "start": 317.0400085449219,
+        "end": 321.6600036621094,
         "wordTimings": [
             {
+                "word": "Es",
+                "start": 317.0400085449219,
+                "end": 317.2900085449219
+            },
+            {
+                "word": "gibt",
+                "start": 317.7799987792969,
+                "end": 318
+            },
+            {
                 "word": "seine",
-                "start": 317.9,
+                "start": 318,
                 "end": 318.3399963378906
             },
             {
@@ -4445,27 +4057,27 @@
                 "end": 321.3800048828125
             },
             {
-                "word": "ab",
+                "word": "ab.",
                 "start": 321.3800048828125,
                 "end": 321.6600036621094
-            },
-            {
-                "word": "Das.",
-                "start": 322.82000732421875,
-                "end": 323.12000732421876
             }
         ],
-        "translationEn": "its cold to a closed freshwater circuit.",
-        "translationVi": "sự lạnh của nó vào một chu trình nước ngọt kín."
+        "translationEn": "It releases its cold to a closed freshwater circuit.",
+        "translationVi": "Nó truyền nhiệt độ lạnh của mình vào một vòng tuần hoàn nước ngọt khép kín."
     },
     {
-        "text": "gekühlte Süßwasser zirkuliert anschließend durch die Anlage und.",
-        "start": 322.7200073242187,
-        "end": 326.78001098632814,
+        "text": "Das gekühlte Süßwasser zirkuliert anschließend durch die Anlage und hält die Supercomputer und Server auf Temperatur.",
+        "start": 322.82000732421875,
+        "end": 329,
         "wordTimings": [
             {
+                "word": "Das",
+                "start": 322.82000732421875,
+                "end": 322.82000732421875
+            },
+            {
                 "word": "gekühlte",
-                "start": 322.7200073242187,
+                "start": 322.82000732421875,
                 "end": 323.2200012207031
             },
             {
@@ -4499,22 +4111,13 @@
                 "end": 325.6400146484375
             },
             {
-                "word": "und.",
+                "word": "und",
                 "start": 325.6400146484375,
-                "end": 326.78001098632814
-            }
-        ],
-        "translationEn": "Chilled freshwater then circulates through the system and.",
-        "translationVi": "nước ngọt được làm mát sau đó tuần hoàn qua hệ thống và."
-    },
-    {
-        "text": "hält die Supercomputer und Server auf Temperatur während.",
-        "start": 326.3800109863281,
-        "end": 329.97999267578126,
-        "wordTimings": [
+                "end": 326.4800109863281
+            },
             {
                 "word": "hält",
-                "start": 326.3800109863281,
+                "start": 326.4800109863281,
                 "end": 326.67999267578125
             },
             {
@@ -4543,27 +4146,27 @@
                 "end": 328.3999938964844
             },
             {
-                "word": "Temperatur",
+                "word": "Temperatur.",
                 "start": 328.3999938964844,
                 "end": 329
-            },
-            {
-                "word": "während.",
-                "start": 329.6600036621094,
-                "end": 329.97999267578126
             }
         ],
-        "translationEn": "keeps the supercomputers and servers at temperature during.",
-        "translationVi": "giữ cho siêu máy tính và máy chủ ở nhiệt độ trong suốt."
+        "translationEn": "The cooled freshwater then circulates through the system, keeping the supercomputers and servers at temperature.",
+        "translationVi": "Nước ngọt được làm mát sau đó tuần hoàn qua hệ thống và giữ cho siêu máy tính và máy chủ ở nhiệt độ ổn định."
     },
     {
-        "text": "das erwärmte Fjordwasser zurückgeleitet wird und sich dort.",
-        "start": 329.5799926757812,
-        "end": 333.3199890136719,
+        "text": "Während das erwärmte Fjordwasser zurückgeleitet wird und sich dort wieder natürlich abkühlt.",
+        "start": 329.6600036621094,
+        "end": 334.5199890136719,
         "wordTimings": [
             {
+                "word": "Während",
+                "start": 329.6600036621094,
+                "end": 329.67999267578125
+            },
+            {
                 "word": "das",
-                "start": 329.5799926757812,
+                "start": 329.67999267578125,
                 "end": 329.9800109863281
             },
             {
@@ -4597,22 +4200,13 @@
                 "end": 332.739990234375
             },
             {
-                "word": "dort.",
+                "word": "dort",
                 "start": 332.739990234375,
-                "end": 333.3199890136719
-            }
-        ],
-        "translationEn": "the heated fjord water is redirected and settles there.",
-        "translationVi": "nước fjord ấm được dẫn trở lại và tập trung ở đó."
-    },
-    {
-        "text": "wieder natürlich abkühlt Mats zeigt uns das Wassersystem.",
-        "start": 332.91998901367185,
-        "end": 337.90000610351564,
-        "wordTimings": [
+                "end": 333.0199890136719
+            },
             {
                 "word": "wieder",
-                "start": 332.91998901367185,
+                "start": 333.0199890136719,
                 "end": 333.4599914550781
             },
             {
@@ -4621,10 +4215,19 @@
                 "end": 334.0400085449219
             },
             {
-                "word": "abkühlt",
+                "word": "abkühlt.",
                 "start": 334.0400085449219,
                 "end": 334.5199890136719
-            },
+            }
+        ],
+        "translationEn": "While the heated fjord water is discharged and naturally cools down there again.",
+        "translationVi": "Trong khi nước fjord được làm nóng được dẫn trở lại và tự nhiên làm mát ở đó."
+    },
+    {
+        "text": "Mats zeigt uns das Wassersystem. Durch die blau gelabelten Rohre fließt das kalte Wasser in die Container und kühlt alles ab.",
+        "start": 335.9599914550781,
+        "end": 343.1600036621094,
+        "wordTimings": [
             {
                 "word": "Mats",
                 "start": 335.9599914550781,
@@ -4648,20 +4251,11 @@
             {
                 "word": "Wassersystem.",
                 "start": 336.9200134277344,
-                "end": 337.90000610351564
-            }
-        ],
-        "translationEn": "Again, naturally cooling down, Mats shows us the water system.",
-        "translationVi": "Mats cho chúng ta thấy hệ thống nước."
-    },
-    {
-        "text": "Durch die blau gelabelten Rohre fließt das kalte.",
-        "start": 338.17999877929685,
-        "end": 340.97999267578126,
-        "wordTimings": [
+                "end": 337.6000061035156
+            },
             {
                 "word": "Durch",
-                "start": 338.17999877929685,
+                "start": 338.2799987792969,
                 "end": 338.2799987792969
             },
             {
@@ -4695,22 +4289,13 @@
                 "end": 340.4200134277344
             },
             {
-                "word": "kalte.",
+                "word": "kalte",
                 "start": 340.4200134277344,
-                "end": 340.97999267578126
-            }
-        ],
-        "translationEn": "The cold flows through the blue-labeled pipes.",
-        "translationVi": "Nước lạnh chảy qua các ống có nhãn màu xanh."
-    },
-    {
-        "text": "Wasser in die Container und kühlt alles ab.",
-        "start": 340.5799926757812,
-        "end": 343.4600036621094,
-        "wordTimings": [
+                "end": 340.67999267578125
+            },
             {
                 "word": "Wasser",
-                "start": 340.5799926757812,
+                "start": 340.67999267578125,
                 "end": 340.94000244140625
             },
             {
@@ -4746,20 +4331,20 @@
             {
                 "word": "ab.",
                 "start": 342.8800048828125,
-                "end": 343.4600036621094
+                "end": 343.1600036621094
             }
         ],
-        "translationEn": "Water into the containers and cools everything down.",
-        "translationVi": "Nước vào các thùng chứa và làm mát mọi thứ."
+        "translationEn": "Mats shows us the water system. Cold water flows through the blue labeled pipes into the containers and cools everything down.",
+        "translationVi": "Mats cho chúng ta thấy hệ thống nước. Nước lạnh chảy qua các ống được gán nhãn màu xanh vào các thùng chứa và làm mát mọi thứ."
     },
     {
-        "text": "Aus den roten fließt das warme Wasser wieder.",
-        "start": 343.8599914550781,
-        "end": 346.560009765625,
+        "text": "Aus den roten fließt das warme Wasser wieder raus.",
+        "start": 343.9599914550781,
+        "end": 346.5400085449219,
         "wordTimings": [
             {
                 "word": "Aus",
-                "start": 343.8599914550781,
+                "start": 343.9599914550781,
                 "end": 344
             },
             {
@@ -4793,24 +4378,24 @@
                 "end": 346
             },
             {
-                "word": "wieder.",
+                "word": "wieder",
                 "start": 346,
-                "end": 346.560009765625
+                "end": 346.260009765625
+            },
+            {
+                "word": "raus.",
+                "start": 346.260009765625,
+                "end": 346.5400085449219
             }
         ],
-        "translationEn": "The warm water flows back from the reds.",
-        "translationVi": "Từ các ống đỏ, nước ấm lại chảy ra."
+        "translationEn": "The warm water flows out again from the red ones.",
+        "translationVi": "Nước ấm lại chảy ra từ những ống đỏ."
     },
     {
-        "text": "raus Sollte mal das System ausfallen gibt es.",
-        "start": 346.160009765625,
-        "end": 349.560009765625,
+        "text": "Sollte mal das System ausfallen, gibt es einen Ersatzkreislauf.",
+        "start": 347.1400146484375,
+        "end": 350.5400085449219,
         "wordTimings": [
-            {
-                "word": "raus",
-                "start": 346.160009765625,
-                "end": 346.5400085449219
-            },
             {
                 "word": "Sollte",
                 "start": 347.1400146484375,
@@ -4832,7 +4417,7 @@
                 "end": 348.1000061035156
             },
             {
-                "word": "ausfallen",
+                "word": "ausfallen,",
                 "start": 348.1000061035156,
                 "end": 348.5400085449219
             },
@@ -4842,29 +4427,29 @@
                 "end": 349.0400085449219
             },
             {
-                "word": "es.",
+                "word": "es",
                 "start": 349.0400085449219,
-                "end": 349.560009765625
-            }
-        ],
-        "translationEn": "If the system fails, there is.",
-        "translationVi": "Nếu hệ thống bị lỗi, sẽ có."
-    },
-    {
-        "text": "einen Ersatzkreislauf Man fühlt es richtig Hier kalt.",
-        "start": 349.160009765625,
-        "end": 354.9600036621094,
-        "wordTimings": [
+                "end": 349.260009765625
+            },
             {
                 "word": "einen",
-                "start": 349.160009765625,
+                "start": 349.260009765625,
                 "end": 349.5
             },
             {
-                "word": "Ersatzkreislauf",
+                "word": "Ersatzkreislauf.",
                 "start": 349.5,
                 "end": 350.5400085449219
-            },
+            }
+        ],
+        "translationEn": "Should the system fail, there is a backup circuit.",
+        "translationVi": "Nếu hệ thống bị hỏng, sẽ có một vòng tuần hoàn dự phòng."
+    },
+    {
+        "text": "Man fühlt es richtig: Hier kalt und hier warm. Richtig, so soll es sein.",
+        "start": 352.1000061035156,
+        "end": 358.1000061035156,
+        "wordTimings": [
             {
                 "word": "Man",
                 "start": 352.1000061035156,
@@ -4881,7 +4466,7 @@
                 "end": 352.9800109863281
             },
             {
-                "word": "richtig",
+                "word": "richtig:",
                 "start": 352.9800109863281,
                 "end": 353.4200134277344
             },
@@ -4891,22 +4476,13 @@
                 "end": 353.9599914550781
             },
             {
-                "word": "kalt.",
+                "word": "kalt",
                 "start": 353.9599914550781,
-                "end": 354.9600036621094
-            }
-        ],
-        "translationEn": "a replacement circuit You can really feel it cold here.",
-        "translationVi": "một vòng tuần hoàn thay thế Bạn cảm nhận được điều đó đúng ở đây lạnh."
-    },
-    {
-        "text": "und hier warm Richtig so soll es sein.",
-        "start": 354.56000366210935,
-        "end": 358.40000610351564,
-        "wordTimings": [
+                "end": 354.6600036621094
+            },
             {
                 "word": "und",
-                "start": 354.56000366210935,
+                "start": 354.6600036621094,
                 "end": 354.9200134277344
             },
             {
@@ -4915,12 +4491,12 @@
                 "end": 355.44000244140625
             },
             {
-                "word": "warm",
+                "word": "warm.",
                 "start": 355.44000244140625,
                 "end": 355.6000061035156
             },
             {
-                "word": "Richtig",
+                "word": "Richtig,",
                 "start": 356.4599914550781,
                 "end": 356.79998779296875
             },
@@ -4942,20 +4518,20 @@
             {
                 "word": "sein.",
                 "start": 358.1000061035156,
-                "end": 358.40000610351564
+                "end": 358.1000061035156
             }
         ],
-        "translationEn": "and here warm That's how it should be.",
-        "translationVi": "và đây là đúng như vậy."
+        "translationEn": "You can really feel it: here cold and here warm. Right, that's how it should be.",
+        "translationVi": "Người ta cảm nhận được điều đó rõ ràng: Ở đây lạnh và ở đây ấm. Đúng vậy, như vậy là đúng."
     },
     {
-        "text": "Ich bin froh dass es funktioniert Bald wird.",
-        "start": 358.5199951171875,
-        "end": 363.62000732421876,
+        "text": "Ich bin froh, dass es funktioniert. Bald wird auch das erwärmte Fjordwasser weiter genutzt.",
+        "start": 358.6199951171875,
+        "end": 365.67999267578125,
         "wordTimings": [
             {
                 "word": "Ich",
-                "start": 358.5199951171875,
+                "start": 358.6199951171875,
                 "end": 358.739990234375
             },
             {
@@ -4964,7 +4540,7 @@
                 "end": 358.8999938964844
             },
             {
-                "word": "froh",
+                "word": "froh,",
                 "start": 358.8999938964844,
                 "end": 359.1400146484375
             },
@@ -4979,7 +4555,7 @@
                 "end": 360.5
             },
             {
-                "word": "funktioniert",
+                "word": "funktioniert.",
                 "start": 360.5,
                 "end": 360.5
             },
@@ -4989,22 +4565,13 @@
                 "end": 363.0799865722656
             },
             {
-                "word": "wird.",
+                "word": "wird",
                 "start": 363.0799865722656,
-                "end": 363.62000732421876
-            }
-        ],
-        "translationEn": "I am glad that it will work soon.",
-        "translationVi": "Tôi rất vui vì nó sắp hoạt động."
-    },
-    {
-        "text": "auch das erwärmte Fjordwasser weiter genutzt In der.",
-        "start": 363.2200073242187,
-        "end": 366.87998657226564,
-        "wordTimings": [
+                "end": 363.32000732421875
+            },
             {
                 "word": "auch",
-                "start": 363.2200073242187,
+                "start": 363.32000732421875,
                 "end": 363.5400085449219
             },
             {
@@ -5028,32 +4595,32 @@
                 "end": 365.3599853515625
             },
             {
-                "word": "genutzt",
+                "word": "genutzt.",
                 "start": 365.3599853515625,
                 "end": 365.67999267578125
-            },
+            }
+        ],
+        "translationEn": "I am glad that it works. Soon the heated fjord water will also be used further.",
+        "translationVi": "Tôi rất vui vì nó hoạt động. Sớm thôi, nước vịnh được làm ấm cũng sẽ được sử dụng tiếp."
+    },
+    {
+        "text": "In der Nähe ist eine Lachsfarm geplant. Das erwärmte Wasser eignet sich perfekt für die Aufzucht der Jungfische.",
+        "start": 366.2799987792969,
+        "end": 372.1600036621094,
+        "wordTimings": [
             {
                 "word": "In",
                 "start": 366.2799987792969,
                 "end": 366.3399963378906
             },
             {
-                "word": "der.",
+                "word": "der",
                 "start": 366.3399963378906,
-                "end": 366.87998657226564
-            }
-        ],
-        "translationEn": "the warmed fjord water continued to be used in the.",
-        "translationVi": "cũng sử dụng nước fjord được làm nóng tiếp tục trong."
-    },
-    {
-        "text": "Nähe ist eine Lachsfarm geplant Das erwärmte Wasser.",
-        "start": 366.4799865722656,
-        "end": 369.87998657226564,
-        "wordTimings": [
+                "end": 366.5799865722656
+            },
             {
                 "word": "Nähe",
-                "start": 366.4799865722656,
+                "start": 366.5799865722656,
                 "end": 366.67999267578125
             },
             {
@@ -5072,7 +4639,7 @@
                 "end": 367.67999267578125
             },
             {
-                "word": "geplant",
+                "word": "geplant.",
                 "start": 367.67999267578125,
                 "end": 368.239990234375
             },
@@ -5087,22 +4654,13 @@
                 "end": 369.260009765625
             },
             {
-                "word": "Wasser.",
+                "word": "Wasser",
                 "start": 369.260009765625,
-                "end": 369.87998657226564
-            }
-        ],
-        "translationEn": "A salmon farm is planned nearby. The water is heated.",
-        "translationVi": "Gần đó có một trang trại cá hồi được lên kế hoạch. Nước được làm ấm."
-    },
-    {
-        "text": "eignet sich perfekt für die Aufzucht der Jungfische.",
-        "start": 369.4799865722656,
-        "end": 372.4600036621094,
-        "wordTimings": [
+                "end": 369.5799865722656
+            },
             {
                 "word": "eignet",
-                "start": 369.4799865722656,
+                "start": 369.5799865722656,
                 "end": 369.9599914550781
             },
             {
@@ -5138,20 +4696,20 @@
             {
                 "word": "Jungfische.",
                 "start": 371.7200012207031,
-                "end": 372.4600036621094
+                "end": 372.1600036621094
             }
         ],
-        "translationEn": "is perfect for raising young fish.",
-        "translationVi": "rất phù hợp cho việc nuôi cá con."
+        "translationEn": "A salmon farm is planned nearby. The heated water is perfect for raising the young fish.",
+        "translationVi": "Gần đó có một trang trại cá hồi được lên kế hoạch. Nước ấm rất thích hợp cho việc nuôi cá con."
     },
     {
-        "text": "Laut Mats ist es nur noch eine Frage.",
-        "start": 372.6200012207031,
-        "end": 375.060009765625,
+        "text": "Laut Mats ist es nur noch eine Frage der Zeit, bis die Regierung es genehmigt.",
+        "start": 372.7200012207031,
+        "end": 376.79998779296875,
         "wordTimings": [
             {
                 "word": "Laut",
-                "start": 372.6200012207031,
+                "start": 372.7200012207031,
                 "end": 373.239990234375
             },
             {
@@ -5185,26 +4743,17 @@
                 "end": 374.5
             },
             {
-                "word": "Frage.",
+                "word": "Frage",
                 "start": 374.5,
-                "end": 375.060009765625
-            }
-        ],
-        "translationEn": "According to Mats, it's only a matter of time.",
-        "translationVi": "Theo Mats, chỉ còn là một câu hỏi."
-    },
-    {
-        "text": "der Zeit bis die Regierung es genehmigt Dann.",
-        "start": 374.660009765625,
-        "end": 377.8,
-        "wordTimings": [
+                "end": 374.760009765625
+            },
             {
                 "word": "der",
-                "start": 374.660009765625,
+                "start": 374.760009765625,
                 "end": 375.2799987792969
             },
             {
-                "word": "Zeit",
+                "word": "Zeit,",
                 "start": 375.2799987792969,
                 "end": 375.2799987792969
             },
@@ -5229,27 +4778,27 @@
                 "end": 376.3599853515625
             },
             {
-                "word": "genehmigt",
+                "word": "genehmigt.",
                 "start": 376.3599853515625,
                 "end": 376.79998779296875
-            },
-            {
-                "word": "Dann.",
-                "start": 377.32000732421875,
-                "end": 377.8
             }
         ],
-        "translationEn": "the time until the government approves it then.",
-        "translationVi": "thời gian cho đến khi chính phủ phê duyệt."
+        "translationEn": "According to Mats, it is only a matter of time before the government approves it.",
+        "translationVi": "Theo Mats, chỉ còn là vấn đề thời gian trước khi chính phủ phê duyệt điều đó."
     },
     {
-        "text": "könnten täglich rund 60 000 Mahlzeiten entstehen Und.",
-        "start": 377.4,
-        "end": 381.40000610351564,
+        "text": "Dann könnten täglich rund 60.000 Mahlzeiten entstehen.",
+        "start": 377.29998779296875,
+        "end": 380.3800048828125,
         "wordTimings": [
             {
+                "word": "Dann",
+                "start": 377.29998779296875,
+                "end": 377.5
+            },
+            {
                 "word": "könnten",
-                "start": 377.4,
+                "start": 377.5,
                 "end": 377.739990234375
             },
             {
@@ -5263,12 +4812,7 @@
                 "end": 378.4599914550781
             },
             {
-                "word": "60",
-                "start": 378.4599914550781,
-                "end": 378.9800109863281
-            },
-            {
-                "word": "000",
+                "word": "60.000",
                 "start": 378.9800109863281,
                 "end": 379.32000732421875
             },
@@ -5278,27 +4822,27 @@
                 "end": 379.9200134277344
             },
             {
-                "word": "entstehen",
+                "word": "entstehen.",
                 "start": 379.9200134277344,
                 "end": 380.3800048828125
-            },
-            {
-                "word": "Und.",
-                "start": 380.8999938964844,
-                "end": 381.40000610351564
             }
         ],
-        "translationEn": "Around 60,000 meals could be produced daily.",
-        "translationVi": "Có thể tạo ra khoảng 60.000 bữa ăn mỗi ngày."
+        "translationEn": "Then around 60,000 meals could be produced daily.",
+        "translationVi": "Vậy thì mỗi ngày có thể tạo ra khoảng 60.000 bữa ăn."
     },
     {
-        "text": "es geht noch weiter Wenn in drei bis.",
-        "start": 381.0000061035156,
-        "end": 387.90000610351564,
+        "text": "Und es geht noch weiter: Wenn in drei bis vier Jahren die Rechner leistungsfähiger sind, wird das Wasser noch wärmer.",
+        "start": 380.8999938964844,
+        "end": 390.82000732421875,
         "wordTimings": [
             {
+                "word": "Und",
+                "start": 380.8999938964844,
+                "end": 381.1000061035156
+            },
+            {
                 "word": "es",
-                "start": 381.0000061035156,
+                "start": 381.1000061035156,
                 "end": 381.239990234375
             },
             {
@@ -5312,7 +4856,7 @@
                 "end": 381.55999755859375
             },
             {
-                "word": "weiter",
+                "word": "weiter:",
                 "start": 381.55999755859375,
                 "end": 381.82000732421875
             },
@@ -5332,22 +4876,13 @@
                 "end": 387.3999938964844
             },
             {
-                "word": "bis.",
+                "word": "bis",
                 "start": 387.3999938964844,
-                "end": 387.90000610351564
-            }
-        ],
-        "translationEn": "It goes on. If in three to.",
-        "translationVi": "Còn tiếp nữa Nếu trong ba đến."
-    },
-    {
-        "text": "vier Jahren die Rechner leistungsfähiger sind wird das.",
-        "start": 387.5000061035156,
-        "end": 390.3400085449219,
-        "wordTimings": [
+                "end": 387.6000061035156
+            },
             {
                 "word": "vier",
-                "start": 387.5000061035156,
+                "start": 387.6000061035156,
                 "end": 387.7799987792969
             },
             {
@@ -5371,7 +4906,7 @@
                 "end": 389.29998779296875
             },
             {
-                "word": "sind",
+                "word": "sind,",
                 "start": 389.29998779296875,
                 "end": 389.5799865722656
             },
@@ -5381,22 +4916,13 @@
                 "end": 389.7799987792969
             },
             {
-                "word": "das.",
+                "word": "das",
                 "start": 389.7799987792969,
-                "end": 390.3400085449219
-            }
-        ],
-        "translationEn": "In four years, the computers will be more powerful.",
-        "translationVi": "Bốn năm nữa, máy tính sẽ mạnh mẽ hơn."
-    },
-    {
-        "text": "Wasser noch wärmer Dann wollen wir den Schlamm.",
-        "start": 389.94000854492185,
-        "end": 393.12000732421876,
-        "wordTimings": [
+                "end": 390.0400085449219
+            },
             {
                 "word": "Wasser",
-                "start": 389.94000854492185,
+                "start": 390.0400085449219,
                 "end": 390.1600036621094
             },
             {
@@ -5405,10 +4931,19 @@
                 "end": 390.760009765625
             },
             {
-                "word": "wärmer",
+                "word": "wärmer.",
                 "start": 390.760009765625,
                 "end": 390.82000732421875
-            },
+            }
+        ],
+        "translationEn": "And it continues: In three to four years, when the computers are more powerful, the water will be even warmer.",
+        "translationVi": "Và còn tiếp tục nữa: Khi trong ba đến bốn năm nữa, máy tính mạnh mẽ hơn, nước sẽ còn ấm hơn."
+    },
+    {
+        "text": "Dann wollen wir den Schlamm aus der Lachsproduktion nehmen und mit dem heißen Wasser austrocknen.",
+        "start": 391.5199890136719,
+        "end": 396.5,
+        "wordTimings": [
             {
                 "word": "Dann",
                 "start": 391.5199890136719,
@@ -5430,22 +4965,13 @@
                 "end": 392.5400085449219
             },
             {
-                "word": "Schlamm.",
+                "word": "Schlamm",
                 "start": 392.5400085449219,
-                "end": 393.12000732421876
-            }
-        ],
-        "translationEn": "Water even warmer Then we want the mud.",
-        "translationVi": "Nước còn ấm hơn, rồi chúng ta sẽ có bùn."
-    },
-    {
-        "text": "aus der Lachsproduktion nehmen und mit dem heißen.",
-        "start": 392.7200073242187,
-        "end": 395.90000610351564,
-        "wordTimings": [
+                "end": 392.82000732421875
+            },
             {
                 "word": "aus",
-                "start": 392.7200073242187,
+                "start": 392.82000732421875,
                 "end": 392.9599914550781
             },
             {
@@ -5479,29 +5005,29 @@
                 "end": 395.32000732421875
             },
             {
-                "word": "heißen.",
+                "word": "heißen",
                 "start": 395.32000732421875,
-                "end": 395.90000610351564
-            }
-        ],
-        "translationEn": "take from salmon production and with the hot.",
-        "translationVi": "lấy ra từ sản xuất cá hồi và với nóng."
-    },
-    {
-        "text": "Wasser austrocknen Daraus machen wir dann Dünger und.",
-        "start": 395.5000061035156,
-        "end": 401.039990234375,
-        "wordTimings": [
+                "end": 395.6000061035156
+            },
             {
                 "word": "Wasser",
-                "start": 395.5000061035156,
+                "start": 395.6000061035156,
                 "end": 395.8599853515625
             },
             {
-                "word": "austrocknen",
+                "word": "austrocknen.",
                 "start": 395.8599853515625,
                 "end": 396.5
-            },
+            }
+        ],
+        "translationEn": "Then we want to take the sludge from the salmon production and dry it out with hot water.",
+        "translationVi": "Sau đó, chúng ta sẽ lấy bùn từ quá trình sản xuất cá hồi và làm khô nó bằng nước nóng."
+    },
+    {
+        "text": "Daraus machen wir dann Dünger und Biogas.",
+        "start": 397.2200012207031,
+        "end": 401.29998779296875,
+        "wordTimings": [
             {
                 "word": "Daraus",
                 "start": 397.2200012207031,
@@ -5528,24 +5054,24 @@
                 "end": 398.3800048828125
             },
             {
-                "word": "und.",
+                "word": "und",
                 "start": 398.3800048828125,
-                "end": 401.039990234375
+                "end": 400.739990234375
+            },
+            {
+                "word": "Biogas.",
+                "start": 400.739990234375,
+                "end": 401.29998779296875
             }
         ],
-        "translationEn": "Drying out water, from which we then make fertilizer and.",
-        "translationVi": "Chúng tôi sẽ làm phân bón từ việc làm khô nước."
+        "translationEn": "From this, we make fertilizer and biogas.",
+        "translationVi": "Chúng tôi sẽ làm phân bón và biogas từ đó."
     },
     {
-        "text": "Biogas In der Mine gibt es noch etwas.",
-        "start": 400.639990234375,
-        "end": 403.4600036621094,
+        "text": "In der Mine gibt es noch etwas Platz. Alleine in diesem riesigen Gang, er ist 75 Meter lang und 12 Meter breit, gibt es 2400 Quadratmeter Platz.",
+        "start": 401.6400146484375,
+        "end": 411.32000732421875,
         "wordTimings": [
-            {
-                "word": "Biogas",
-                "start": 400.639990234375,
-                "end": 401.29998779296875
-            },
             {
                 "word": "In",
                 "start": 401.6400146484375,
@@ -5577,22 +5103,13 @@
                 "end": 402.8399963378906
             },
             {
-                "word": "etwas.",
+                "word": "etwas",
                 "start": 402.8399963378906,
-                "end": 403.4600036621094
-            }
-        ],
-        "translationEn": "Biogas There is something else in the mine.",
-        "translationVi": "Biogas Trong mỏ còn có một thứ nữa."
-    },
-    {
-        "text": "Platz Alleine in diesem riesigen Gang er ist.",
-        "start": 403.06000366210935,
-        "end": 406.62000732421876,
-        "wordTimings": [
+                "end": 403.1600036621094
+            },
             {
-                "word": "Platz",
-                "start": 403.06000366210935,
+                "word": "Platz.",
+                "start": 403.1600036621094,
                 "end": 403.5799865722656
             },
             {
@@ -5616,7 +5133,7 @@
                 "end": 405.55999755859375
             },
             {
-                "word": "Gang",
+                "word": "Gang,",
                 "start": 405.55999755859375,
                 "end": 405.79998779296875
             },
@@ -5626,22 +5143,13 @@
                 "end": 406.260009765625
             },
             {
-                "word": "ist.",
+                "word": "ist",
                 "start": 406.260009765625,
-                "end": 406.62000732421876
-            }
-        ],
-        "translationEn": "Space Alone in this huge corridor he is.",
-        "translationVi": "Nơi này chỉ có một mình trong hành lang rộng lớn này."
-    },
-    {
-        "text": "75 Meter lang und 12 Meter breit gibt.",
-        "start": 406.2200073242187,
-        "end": 409.1800048828125,
-        "wordTimings": [
+                "end": 406.32000732421875
+            },
             {
                 "word": "75",
-                "start": 406.2200073242187,
+                "start": 406.32000732421875,
                 "end": 406.9599914550781
             },
             {
@@ -5670,27 +5178,18 @@
                 "end": 408.1199951171875
             },
             {
-                "word": "breit",
+                "word": "breit,",
                 "start": 408.1199951171875,
                 "end": 408.3800048828125
             },
             {
-                "word": "gibt.",
+                "word": "gibt",
                 "start": 408.82000732421875,
-                "end": 409.1800048828125
-            }
-        ],
-        "translationEn": "75 meters long and 12 meters wide.",
-        "translationVi": "Dài 75 mét và rộng 12 mét."
-    },
-    {
-        "text": "es 2400 Quadratmeter Platz Ist die Lefftal Mine.",
-        "start": 408.7800048828125,
-        "end": 413.90000610351564,
-        "wordTimings": [
+                "end": 408.8800048828125
+            },
             {
                 "word": "es",
-                "start": 408.7800048828125,
+                "start": 408.8800048828125,
                 "end": 409.239990234375
             },
             {
@@ -5704,10 +5203,19 @@
                 "end": 410.94000244140625
             },
             {
-                "word": "Platz",
+                "word": "Platz.",
                 "start": 410.94000244140625,
                 "end": 411.32000732421875
-            },
+            }
+        ],
+        "translationEn": "There is still some space in the mine. Alone in this huge tunnel, which is 75 meters long and 12 meters wide, there are 2400 square meters of space.",
+        "translationVi": "Trong mỏ còn một chút chỗ trống. Chỉ riêng trong hành lang khổng lồ này, dài 75 mét và rộng 12 mét, có 2400 mét vuông diện tích."
+    },
+    {
+        "text": "Ist die Lefdal Mine einmal vollständig bebaut, kann sie elf Trillionen Rechenoperationen die Sekunde leisten.",
+        "start": 412.79998779296875,
+        "end": 419.4800109863281,
+        "wordTimings": [
             {
                 "word": "Ist",
                 "start": 412.79998779296875,
@@ -5719,27 +5227,18 @@
                 "end": 413.0199890136719
             },
             {
-                "word": "Lefftal",
+                "word": "Lefdal",
                 "start": 413.0199890136719,
                 "end": 413.4200134277344
             },
             {
-                "word": "Mine.",
+                "word": "Mine",
                 "start": 413.4200134277344,
-                "end": 413.90000610351564
-            }
-        ],
-        "translationEn": "The Lefftal mine is 2400 square meters in size.",
-        "translationVi": "Nó là mỏ Lefftal với diện tích 2400 mét vuông."
-    },
-    {
-        "text": "einmal vollständig bebaut kann sie 11 Trillionen Rechenoperationen.",
-        "start": 413.5000061035156,
-        "end": 418.6999938964844,
-        "wordTimings": [
+                "end": 413.6000061035156
+            },
             {
                 "word": "einmal",
-                "start": 413.5000061035156,
+                "start": 413.6000061035156,
                 "end": 414.0199890136719
             },
             {
@@ -5748,7 +5247,7 @@
                 "end": 414.5799865722656
             },
             {
-                "word": "bebaut",
+                "word": "bebaut,",
                 "start": 414.5799865722656,
                 "end": 414.9599914550781
             },
@@ -5763,33 +5262,24 @@
                 "end": 415.7799987792969
             },
             {
-                "word": "11",
+                "word": "elf",
                 "start": 415.7799987792969,
-                "end": 416.3999938964844
+                "end": 416.3800048828125
             },
             {
                 "word": "Trillionen",
-                "start": 416.3999938964844,
+                "start": 416.3800048828125,
                 "end": 417.239990234375
             },
             {
-                "word": "Rechenoperationen.",
+                "word": "Rechenoperationen",
                 "start": 417.239990234375,
-                "end": 418.6999938964844
-            }
-        ],
-        "translationEn": "Once fully built, it can perform 11 trillion calculations.",
-        "translationVi": "Một khi được xây dựng hoàn chỉnh, nó có thể thực hiện 11 triệu triệu phép toán."
-    },
-    {
-        "text": "die Sekunde leisten Das entspricht etwa der Power.",
-        "start": 418.29999389648435,
-        "end": 422.3199890136719,
-        "wordTimings": [
+                "end": 418.3999938964844
+            },
             {
                 "word": "die",
-                "start": 418.29999389648435,
-                "end": 418.760009765625
+                "start": 418.3999938964844,
+                "end": 419.05999755859375
             },
             {
                 "word": "Sekunde",
@@ -5797,10 +5287,19 @@
                 "end": 419.05999755859375
             },
             {
-                "word": "leisten",
+                "word": "leisten.",
                 "start": 419.05999755859375,
                 "end": 419.4800109863281
-            },
+            }
+        ],
+        "translationEn": "Once the Lefdal Mine is fully developed, it can perform eleven trillion calculations per second.",
+        "translationVi": "Khi mỏ Lefdal được xây dựng hoàn toàn, nó có thể thực hiện 11 triệu triệu phép toán mỗi giây."
+    },
+    {
+        "text": "Das entspricht etwa der Power von ca. 110 Millionen herkömmlichen Laptops oder zwölfmal Österreich.",
+        "start": 420.67999267578125,
+        "end": 428.29998779296875,
+        "wordTimings": [
             {
                 "word": "Das",
                 "start": 420.67999267578125,
@@ -5822,26 +5321,17 @@
                 "end": 421.7200012207031
             },
             {
-                "word": "Power.",
+                "word": "Power",
                 "start": 421.7200012207031,
-                "end": 422.3199890136719
-            }
-        ],
-        "translationEn": "the second provide This corresponds to about the power.",
-        "translationVi": "giây thực hiện Điều này tương đương với sức mạnh."
-    },
-    {
-        "text": "von ca 110 Millionen herkömmlichen Laptops oder 12.",
-        "start": 421.91998901367185,
-        "end": 427.75999145507814,
-        "wordTimings": [
+                "end": 422.0199890136719
+            },
             {
                 "word": "von",
-                "start": 421.91998901367185,
+                "start": 422.0199890136719,
                 "end": 422.5199890136719
             },
             {
-                "word": "ca",
+                "word": "ca.",
                 "start": 422.5199890136719,
                 "end": 422.7799987792969
             },
@@ -5871,36 +5361,31 @@
                 "end": 426.6199951171875
             },
             {
-                "word": "12.",
+                "word": "zwölfmal",
                 "start": 426.6199951171875,
-                "end": 427.75999145507814
+                "end": 427.67999267578125
+            },
+            {
+                "word": "Österreich.",
+                "start": 427.67999267578125,
+                "end": 428.29998779296875
             }
         ],
-        "translationEn": "of about 110 million conventional laptops or 12.",
-        "translationVi": "khoảng 110 triệu laptop thông thường hoặc 12."
+        "translationEn": "This corresponds to the power of about 110 million conventional laptops or twelve times Austria.",
+        "translationVi": "Điều này tương đương với công suất của khoảng 110 triệu laptop thông thường hoặc gấp mười hai lần Áo."
     },
     {
-        "text": "mal Österreich Natürlich nur wenn dann auch jeder.",
-        "start": 427.3599914550781,
-        "end": 430.78001098632814,
+        "text": "Natürlich nur, wenn dann auch jeder einen Laptop besitzt.",
+        "start": 428.29998779296875,
+        "end": 432.0400085449219,
         "wordTimings": [
-            {
-                "word": "mal",
-                "start": 427.3599914550781,
-                "end": 427.6600036621094
-            },
-            {
-                "word": "Österreich",
-                "start": 427.6600036621094,
-                "end": 428.29998779296875
-            },
             {
                 "word": "Natürlich",
                 "start": 428.29998779296875,
                 "end": 429.0799865722656
             },
             {
-                "word": "nur",
+                "word": "nur,",
                 "start": 429.0799865722656,
                 "end": 429.3599853515625
             },
@@ -5920,22 +5405,13 @@
                 "end": 430.3800048828125
             },
             {
-                "word": "jeder.",
+                "word": "jeder",
                 "start": 430.3800048828125,
-                "end": 430.78001098632814
-            }
-        ],
-        "translationEn": "Well, Austria, of course only if everyone does too.",
-        "translationVi": "chỉ có Áo, tất nhiên chỉ khi mọi người đều như vậy."
-    },
-    {
-        "text": "einen Laptop besitzt Was ich noch wissen will.",
-        "start": 430.3800109863281,
-        "end": 434.00001220703126,
-        "wordTimings": [
+                "end": 430.4800109863281
+            },
             {
                 "word": "einen",
-                "start": 430.3800109863281,
+                "start": 430.4800109863281,
                 "end": 430.8999938964844
             },
             {
@@ -5944,10 +5420,19 @@
                 "end": 431.44000244140625
             },
             {
-                "word": "besitzt",
+                "word": "besitzt.",
                 "start": 431.44000244140625,
                 "end": 432.0400085449219
-            },
+            }
+        ],
+        "translationEn": "Of course, only if everyone has a laptop then.",
+        "translationVi": "Tất nhiên chỉ khi mọi người đều sở hữu một chiếc laptop."
+    },
+    {
+        "text": "Was ich noch wissen will: Wir tragen zwei Helme, aber habt ihr keine Angst, dass euch mal ein Stein auf den Kopf fällt?",
+        "start": 432.3599853515625,
+        "end": 438.70001220703125,
+        "wordTimings": [
             {
                 "word": "Was",
                 "start": 432.3599853515625,
@@ -5969,22 +5454,13 @@
                 "end": 433.44000244140625
             },
             {
-                "word": "will.",
+                "word": "will:",
                 "start": 433.44000244140625,
-                "end": 434.00001220703126
-            }
-        ],
-        "translationEn": "I want to know what else.",
-        "translationVi": "một chiếc laptop sở hữu. Những gì tôi còn muốn biết."
-    },
-    {
-        "text": "wir tragen zwei Helme aber habt ihr keine.",
-        "start": 433.8599914550781,
-        "end": 436.060009765625,
-        "wordTimings": [
+                "end": 433.70001220703125
+            },
             {
-                "word": "wir",
-                "start": 433.8599914550781,
+                "word": "Wir",
+                "start": 433.9599914550781,
                 "end": 434.05999755859375
             },
             {
@@ -5998,7 +5474,7 @@
                 "end": 434.6199951171875
             },
             {
-                "word": "Helme",
+                "word": "Helme,",
                 "start": 434.6199951171875,
                 "end": 434.8399963378906
             },
@@ -6018,22 +5494,13 @@
                 "end": 435.3999938964844
             },
             {
-                "word": "keine.",
+                "word": "keine",
                 "start": 435.3999938964844,
-                "end": 436.060009765625
-            }
-        ],
-        "translationEn": "We wear two helmets but you have none.",
-        "translationVi": "Chúng tôi đội hai chiếc mũ bảo hiểm nhưng các bạn thì không có."
-    },
-    {
-        "text": "Angst dass euch mal ein Stein auf den.",
-        "start": 435.660009765625,
-        "end": 439.00001220703126,
-        "wordTimings": [
+                "end": 435.760009765625
+            },
             {
-                "word": "Angst",
-                "start": 435.660009765625,
+                "word": "Angst,",
+                "start": 435.760009765625,
                 "end": 436
             },
             {
@@ -6067,31 +5534,31 @@
                 "end": 438.3599853515625
             },
             {
-                "word": "den.",
+                "word": "den",
                 "start": 438.3599853515625,
-                "end": 439.00001220703126
-            }
-        ],
-        "translationEn": "Fear that a stone might hit you.",
-        "translationVi": "Sợ rằng một viên đá sẽ rơi vào các bạn."
-    },
-    {
-        "text": "Kopf fällt Nein überhaupt nicht Im gesamten Komplex.",
-        "start": 438.6000122070312,
-        "end": 443.50001220703126,
-        "wordTimings": [
-            {
-                "word": "Kopf",
-                "start": 438.6000122070312,
                 "end": 438.70001220703125
             },
             {
-                "word": "fällt",
+                "word": "Kopf",
                 "start": 438.70001220703125,
                 "end": 438.70001220703125
             },
             {
-                "word": "Nein",
+                "word": "fällt?",
+                "start": 438.70001220703125,
+                "end": 438.70001220703125
+            }
+        ],
+        "translationEn": "What I still want to know: We wear two helmets, but aren't you afraid that a stone might fall on your head?",
+        "translationVi": "Điều tôi còn muốn biết: Chúng tôi đội hai chiếc mũ bảo hiểm, nhưng các bạn không sợ rằng sẽ có một viên đá rơi trúng đầu mình sao?"
+    },
+    {
+        "text": "Nein, überhaupt nicht. Im gesamten Komplex ist der Berg gesichert.",
+        "start": 439.3599853515625,
+        "end": 444.2200012207031,
+        "wordTimings": [
+            {
+                "word": "Nein,",
                 "start": 439.3599853515625,
                 "end": 439.9599914550781
             },
@@ -6101,7 +5568,7 @@
                 "end": 440.3999938964844
             },
             {
-                "word": "nicht",
+                "word": "nicht.",
                 "start": 440.3999938964844,
                 "end": 440.67999267578125
             },
@@ -6116,22 +5583,13 @@
                 "end": 442.8599853515625
             },
             {
-                "word": "Komplex.",
+                "word": "Komplex",
                 "start": 442.8599853515625,
-                "end": 443.50001220703126
-            }
-        ],
-        "translationEn": "Head falls No not at all In the entire complex.",
-        "translationVi": "Đầu không hề rơi xuống trong toàn bộ tổ hợp."
-    },
-    {
-        "text": "ist der Berg gesichert Rund 15 000 vier.",
-        "start": 443.1000122070312,
-        "end": 448.060009765625,
-        "wordTimings": [
+                "end": 443.20001220703125
+            },
             {
                 "word": "ist",
-                "start": 443.1000122070312,
+                "start": 443.20001220703125,
                 "end": 443.4200134277344
             },
             {
@@ -6145,42 +5603,37 @@
                 "end": 443.79998779296875
             },
             {
-                "word": "gesichert",
+                "word": "gesichert.",
                 "start": 443.79998779296875,
                 "end": 444.2200012207031
-            },
+            }
+        ],
+        "translationEn": "No, not at all. The mountain is secured throughout the entire complex.",
+        "translationVi": "Không, hoàn toàn không. Trong toàn bộ khu phức hợp, ngọn núi đã được bảo vệ."
+    },
+    {
+        "text": "Rund 15.000 vier Meter lange Bolzen stabilisieren die Decke, und dazu kommen noch 10.000 Kubikmeter Beton.",
+        "start": 446.1199951171875,
+        "end": 453.9200134277344,
+        "wordTimings": [
             {
                 "word": "Rund",
                 "start": 446.1199951171875,
                 "end": 446.17999267578125
             },
             {
-                "word": "15",
-                "start": 446.17999267578125,
-                "end": 446.8999938964844
-            },
-            {
-                "word": "000",
+                "word": "15.000",
                 "start": 446.8999938964844,
                 "end": 447.3399963378906
             },
             {
-                "word": "vier.",
+                "word": "vier",
                 "start": 447.3399963378906,
-                "end": 448.060009765625
-            }
-        ],
-        "translationEn": "Is the mountain secured? About 15,000 four.",
-        "translationVi": "Ngọn núi đã được bảo vệ khoảng 15.000 bốn."
-    },
-    {
-        "text": "Meter lange Bolzen stabilisieren die Decke und dazu.",
-        "start": 447.660009765625,
-        "end": 451.35999755859376,
-        "wordTimings": [
+                "end": 447.760009765625
+            },
             {
                 "word": "Meter",
-                "start": 447.660009765625,
+                "start": 447.760009765625,
                 "end": 447.82000732421875
             },
             {
@@ -6204,7 +5657,7 @@
                 "end": 449.67999267578125
             },
             {
-                "word": "Decke",
+                "word": "Decke,",
                 "start": 449.67999267578125,
                 "end": 449.7200012207031
             },
@@ -6214,22 +5667,13 @@
                 "end": 450.760009765625
             },
             {
-                "word": "dazu.",
+                "word": "dazu",
                 "start": 450.760009765625,
-                "end": 451.35999755859376
-            }
-        ],
-        "translationEn": "Meter-long bolts stabilize the ceiling and more.",
-        "translationVi": "Các thanh đinh dài mét ổn định trần nhà và thêm vào đó."
-    },
-    {
-        "text": "kommen noch 10 000 Kubikmeter Beton Das ist.",
-        "start": 450.9599975585937,
-        "end": 457.3,
-        "wordTimings": [
+                "end": 451.05999755859375
+            },
             {
                 "word": "kommen",
-                "start": 450.9599975585937,
+                "start": 451.05999755859375,
                 "end": 451.2799987792969
             },
             {
@@ -6238,12 +5682,7 @@
                 "end": 451.5
             },
             {
-                "word": "10",
-                "start": 451.5,
-                "end": 451.94000244140625
-            },
-            {
-                "word": "000",
+                "word": "10.000",
                 "start": 451.94000244140625,
                 "end": 452.3800048828125
             },
@@ -6253,32 +5692,32 @@
                 "end": 453
             },
             {
-                "word": "Beton",
+                "word": "Beton.",
                 "start": 453.32000732421875,
                 "end": 453.9200134277344
-            },
+            }
+        ],
+        "translationEn": "Around 15,000 four-meter-long bolts stabilize the ceiling, along with an additional 10,000 cubic meters of concrete.",
+        "translationVi": "Khoảng 15.000 thanh đinh dài 4 mét ổn định trần nhà, và thêm 10.000 mét khối bê tông nữa."
+    },
+    {
+        "text": "Das ist also zu 100 Prozent zukunftssicher für die nächsten 100 Jahre.",
+        "start": 456.1000061035156,
+        "end": 464.55999755859375,
+        "wordTimings": [
             {
                 "word": "Das",
                 "start": 456.1000061035156,
                 "end": 456.8399963378906
             },
             {
-                "word": "ist.",
+                "word": "ist",
                 "start": 456.8399963378906,
-                "end": 457.3
-            }
-        ],
-        "translationEn": "There are still 10,000 cubic meters of concrete.",
-        "translationVi": "Còn 10.000 mét khối bê tông nữa."
-    },
-    {
-        "text": "also zu 100 Prozent zukunftssicher Für die nächsten.",
-        "start": 456.9,
-        "end": 463.52000122070314,
-        "wordTimings": [
+                "end": 457
+            },
             {
                 "word": "also",
-                "start": 456.9,
+                "start": 457,
                 "end": 457.3599853515625
             },
             {
@@ -6302,7 +5741,7 @@
                 "end": 459.5199890136719
             },
             {
-                "word": "Für",
+                "word": "für",
                 "start": 462.70001220703125,
                 "end": 462.760009765625
             },
@@ -6312,29 +5751,29 @@
                 "end": 463.1000061035156
             },
             {
-                "word": "nächsten.",
+                "word": "nächsten",
                 "start": 463.1000061035156,
-                "end": 463.52000122070314
-            }
-        ],
-        "translationEn": "so 100 percent future-proof for the next.",
-        "translationVi": "vì vậy 100% an toàn cho tương lai trong những năm tới."
-    },
-    {
-        "text": "100 Jahre Wir leben bereits im Zeitalter der.",
-        "start": 463.1200012207031,
-        "end": 468.6800048828125,
-        "wordTimings": [
+                "end": 463.2200012207031
+            },
             {
                 "word": "100",
-                "start": 463.1200012207031,
+                "start": 463.2200012207031,
                 "end": 464.3999938964844
             },
             {
-                "word": "Jahre",
+                "word": "Jahre.",
                 "start": 464.3999938964844,
                 "end": 464.55999755859375
-            },
+            }
+        ],
+        "translationEn": "This is therefore 100 percent future-proof for the next 100 years.",
+        "translationVi": "Điều này hoàn toàn an toàn cho tương lai trong 100 năm tới."
+    },
+    {
+        "text": "Wir leben bereits im Zeitalter der künstlichen Intelligenz, und ihr Einsatz wächst rasant.",
+        "start": 466.19000244140625,
+        "end": 471.739990234375,
+        "wordTimings": [
             {
                 "word": "Wir",
                 "start": 466.19000244140625,
@@ -6361,26 +5800,17 @@
                 "end": 468.0400085449219
             },
             {
-                "word": "der.",
+                "word": "der",
                 "start": 468.0400085449219,
-                "end": 468.6800048828125
-            }
-        ],
-        "translationEn": "100 years We have already been living in the age of.",
-        "translationVi": "100 năm Chúng ta đã sống trong kỷ nguyên của."
-    },
-    {
-        "text": "künstlichen Intelligenz und ihr Einsatz wächst rasant Entsprechend.",
-        "start": 468.2800048828125,
-        "end": 473.1999938964844,
-        "wordTimings": [
+                "end": 468.3800048828125
+            },
             {
                 "word": "künstlichen",
-                "start": 468.2800048828125,
+                "start": 468.3800048828125,
                 "end": 468.8399963378906
             },
             {
-                "word": "Intelligenz",
+                "word": "Intelligenz,",
                 "start": 468.8399963378906,
                 "end": 469.5799865722656
             },
@@ -6405,27 +5835,27 @@
                 "end": 471.239990234375
             },
             {
-                "word": "rasant",
+                "word": "rasant.",
                 "start": 471.239990234375,
                 "end": 471.739990234375
-            },
-            {
-                "word": "Entsprechend.",
-                "start": 472.4800109863281,
-                "end": 473.1999938964844
             }
         ],
-        "translationEn": "Artificial intelligence and its application is growing rapidly accordingly.",
-        "translationVi": "Trí tuệ nhân tạo và việc ứng dụng của nó đang phát triển nhanh chóng."
+        "translationEn": "We are already living in the age of artificial intelligence, and its use is growing rapidly.",
+        "translationVi": "Chúng ta đã sống trong kỷ nguyên của trí tuệ nhân tạo, và việc sử dụng nó đang tăng trưởng nhanh chóng."
     },
     {
-        "text": "steigt auch der Bedarf an Rechenzentren Viele Unternehmen.",
-        "start": 472.79999389648435,
-        "end": 476.24000244140626,
+        "text": "Entsprechend steigt auch der Bedarf an Rechenzentren. Viele Unternehmen suchen bereits nach nachhaltigen Lösungen.",
+        "start": 472.4800109863281,
+        "end": 477.9200134277344,
         "wordTimings": [
             {
+                "word": "Entsprechend",
+                "start": 472.4800109863281,
+                "end": 472.8999938964844
+            },
+            {
                 "word": "steigt",
-                "start": 472.79999389648435,
+                "start": 472.8999938964844,
                 "end": 473.20001220703125
             },
             {
@@ -6449,7 +5879,7 @@
                 "end": 474.0400085449219
             },
             {
-                "word": "Rechenzentren",
+                "word": "Rechenzentren.",
                 "start": 474.0400085449219,
                 "end": 474.67999267578125
             },
@@ -6459,22 +5889,13 @@
                 "end": 475.44000244140625
             },
             {
-                "word": "Unternehmen.",
+                "word": "Unternehmen",
                 "start": 475.44000244140625,
-                "end": 476.24000244140626
-            }
-        ],
-        "translationEn": "the demand for data centers is also increasing for many companies.",
-        "translationVi": "Nhu cầu về trung tâm dữ liệu cũng tăng lên ở nhiều công ty."
-    },
-    {
-        "text": "suchen bereits nach nachhaltigen Lösungen in der Lefftal.",
-        "start": 475.8400024414062,
-        "end": 479.50001220703126,
-        "wordTimings": [
+                "end": 475.94000244140625
+            },
             {
                 "word": "suchen",
-                "start": 475.8400024414062,
+                "start": 475.94000244140625,
                 "end": 476.20001220703125
             },
             {
@@ -6493,37 +5914,37 @@
                 "end": 477.5199890136719
             },
             {
-                "word": "Lösungen",
+                "word": "Lösungen.",
                 "start": 477.5199890136719,
                 "end": 477.9200134277344
-            },
+            }
+        ],
+        "translationEn": "Accordingly, the demand for data centers is also increasing. Many companies are already looking for sustainable solutions.",
+        "translationVi": "Do đó, nhu cầu về trung tâm dữ liệu cũng tăng lên. Nhiều công ty đã bắt đầu tìm kiếm các giải pháp bền vững."
+    },
+    {
+        "text": "In der Lefdal Mine gibt es schon jetzt eine Untertitel der Amara.org Community.",
+        "start": 478.5,
+        "end": 487.260009765625,
+        "wordTimings": [
             {
-                "word": "in",
-                "start": 478.4800109863281,
-                "end": 478.6000061035156
+                "word": "In",
+                "start": 478.5,
+                "end": 478.6199951171875
             },
             {
                 "word": "der",
-                "start": 478.6000061035156,
+                "start": 478.6199951171875,
                 "end": 478.82000732421875
             },
             {
-                "word": "Lefftal.",
+                "word": "Lefdal",
                 "start": 478.82000732421875,
-                "end": 479.50001220703126
-            }
-        ],
-        "translationEn": "are already looking for sustainable solutions in the Lefftal.",
-        "translationVi": "đã tìm kiếm các giải pháp bền vững trong Lefftal."
-    },
-    {
-        "text": "Mine gibt es schon jetzt eine Untertitel der.",
-        "start": 479.1000122070312,
-        "end": 483.40000610351564,
-        "wordTimings": [
+                "end": 479.20001220703125
+            },
             {
                 "word": "Mine",
-                "start": 479.1000122070312,
+                "start": 479.20001220703125,
                 "end": 479.4200134277344
             },
             {
@@ -6553,40 +5974,26 @@
             },
             {
                 "word": "Untertitel",
-                "start": 483,
-                "end": 483.0799865722656
+                "start": 487.1199951171875,
+                "end": 487.17999267578125
             },
             {
-                "word": "der.",
-                "start": 483.0799865722656,
-                "end": 483.40000610351564
-            }
-        ],
-        "translationEn": "There is already a subtitle for it now.",
-        "translationVi": "Bây giờ đã có phụ đề cho cái đó."
-    },
-    {
-        "text": "Amara org Community.",
-        "start": 483.0000061035156,
-        "end": 483.539990234375,
-        "wordTimings": [
-            {
-                "word": "Amara",
-                "start": 483.0000061035156,
-                "end": 483.1400146484375
+                "word": "der",
+                "start": 487.17999267578125,
+                "end": 487.20001220703125
             },
             {
-                "word": "org",
-                "start": 483.1400146484375,
-                "end": 483.17999267578125
+                "word": "Amara.org",
+                "start": 487.20001220703125,
+                "end": 487.239990234375
             },
             {
                 "word": "Community.",
-                "start": 483.17999267578125,
-                "end": 483.539990234375
+                "start": 487.239990234375,
+                "end": 487.260009765625
             }
         ],
-        "translationEn": "Amara org Community.",
-        "translationVi": "Cộng đồng Amara org."
+        "translationEn": "In the Lefdal Mine, there is already a subtitle from the Amara.org community.",
+        "translationVi": "Tại mỏ Lefdal, hiện đã có một phụ đề từ cộng đồng Amara.org."
     }
 ]

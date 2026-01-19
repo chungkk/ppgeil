@@ -114,7 +114,7 @@ function AdminLessonsPage() {
   const handleToggleFreeLesson = async (lesson) => {
     const newValue = !lesson.isFreeLesson;
     const confirmMsg = newValue
-      ? `Đặt "${lesson.title}" làm bài FREE? (Bài Free cũ sẽ bị bỏ)`
+      ? `Đặt "${lesson.title}" làm bài FREE?`
       : `Bỏ bài FREE cho "${lesson.title}"?`;
 
     if (!confirm(confirmMsg)) return;

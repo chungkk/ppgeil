@@ -13,11 +13,7 @@ async function handler(req, res) {
     const { id } = req.query;
     const { isFreeLesson } = req.body;
 
-    // If setting a new free lesson, unset the old one first (only 1 free lesson allowed)
-    if (isFreeLesson === true) {
-      await Lesson.updateMany({ isFreeLesson: true }, { isFreeLesson: false });
-    }
-
+    // Allow multiple free lessons - simply toggle the current lesson
     const lesson = await Lesson.findOneAndUpdate(
       { id },
       { isFreeLesson: !!isFreeLesson },
