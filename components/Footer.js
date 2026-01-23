@@ -76,9 +76,6 @@ const Footer = () => {
             <Link href="/contact" className={styles.footerLink}>
               {t('footer.links.contact')}
             </Link>
-            <Link href="/feedback" className={styles.footerLink}>
-              {t('footer.links.feedback')}
-            </Link>
           </div>
         </div>
 
