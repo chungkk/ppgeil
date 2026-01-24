@@ -1,7 +1,6 @@
 import connectDB from '../../../lib/mongodb';
 import User from '../../../models/User';
 import { verifyToken } from '../../../lib/jwt';
-import bcrypt from 'bcryptjs';
 
 export default async function handler(req, res) {
   if (req.method !== 'PUT') {
@@ -39,17 +38,13 @@ export default async function handler(req, res) {
     }
 
     // Verify current password
-    const isCurrentPasswordValid = await bcrypt.compare(currentPassword, user.password);
+    const isCurrentPasswordValid = await user.comparePassword(currentPassword);
     if (!isCurrentPasswordValid) {
       return res.status(400).json({ message: 'Mật khẩu hiện tại không đúng' });
     }
 
-    // Hash new password
-    const saltRounds = 12;
-    const hashedNewPassword = await bcrypt.hash(newPassword, saltRounds);
-
-    // Update password
-    user.password = hashedNewPassword;
+    // Update password - let pre-save middleware handle hashing
+    user.password = newPassword;
     await user.save();
 
     res.status(200).json({ message: 'Đổi mật khẩu thành công' });
