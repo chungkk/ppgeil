@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const CONFIG = {
     teamId: '6CH84XZG3T',        // Apple Developer Team ID
     keyId: '3CF443QR7D',         // Key ID mới
-    serviceId: 'net.papageil.auth', // Service ID (APPLE_CLIENT_ID)
+    serviceId: 'papageil.net.auth', // Service ID (APPLE_CLIENT_ID)
 };
 
 // ========================================
