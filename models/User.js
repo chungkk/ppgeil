@@ -21,7 +21,7 @@ const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: function () {
-      return !this.isGoogleUser;
+      return !this.isGoogleUser && !this.isAppleUser;
     },
     minlength: 6
   },
