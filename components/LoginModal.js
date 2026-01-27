@@ -135,9 +135,42 @@ const LoginModal = ({ isOpen, onClose }) => {
     setError('');
 
     try {
-      // Redirect directly to Apple OAuth (simpler and more reliable than popup)
+      const width = 500;
+      const height = 650;
+      const left = window.screen.width / 2 - width / 2;
+      const top = window.screen.height / 2 - height / 2;
+
       const returnUrl = encodeURIComponent(window.location.pathname);
-      window.location.href = `/api/auth/apple-signin?returnUrl=${returnUrl}`;
+      const popup = window.open(
+        `/api/auth/apple-signin?returnUrl=${returnUrl}`,
+        'appleAuth',
+        `width=${width},height=${height},left=${left},top=${top},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`
+      );
+
+      if (!popup) {
+        // Popup blocked - fallback to redirect
+        window.location.href = `/api/auth/apple-signin?returnUrl=${returnUrl}`;
+        return;
+      }
+
+      // Monitor popup for closure
+      const checkInterval = setInterval(() => {
+        if (!popup || popup.closed) {
+          clearInterval(checkInterval);
+          setLoading(false);
+
+          // Check if token was set (popup may have set it via postMessage or localStorage)
+          setTimeout(() => {
+            const token = localStorage.getItem('token');
+            if (token) {
+              console.log('✅ Apple login successful via popup!');
+              onClose();
+              window.location.reload();
+            }
+          }, 500);
+        }
+      }, 500);
+
     } catch (error) {
       console.error('Apple login error:', error);
       setError(t('loginModal.errors.appleFailed'));

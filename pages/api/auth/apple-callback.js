@@ -100,19 +100,34 @@ export default async function handler(req, res) {
         // Redirect with token (for web) or return JSON (for API)
         const redirectUrl = `/?token=${customToken}`;
 
-        // Use HTML redirect since Apple uses form_post
+        // Use HTML that supports both popup and redirect modes
         res.setHeader('Content-Type', 'text/html');
         res.send(`
       <!DOCTYPE html>
       <html>
         <head>
-          <meta http-equiv="refresh" content="0;url=${redirectUrl}">
           <script>
+            // Always set token in current window localStorage first
             localStorage.setItem('token', '${customToken}');
-            window.location.href = '${redirectUrl}';
+            
+            // Check if we're in a popup (have opener window)
+            if (window.opener && !window.opener.closed) {
+              // Popup mode: set token in opener's localStorage and close popup
+              try {
+                window.opener.localStorage.setItem('token', '${customToken}');
+                console.log('✅ Token set in parent window');
+              } catch (e) {
+                console.log('Could not access opener localStorage');
+              }
+              window.close();
+            } else {
+              // Redirect mode: navigate to main page with token
+              window.location.href = '${redirectUrl}';
+            }
           </script>
+          <meta http-equiv="refresh" content="2;url=${redirectUrl}">
         </head>
-        <body>Redirecting...</body>
+        <body>Đăng nhập thành công! Đang chuyển hướng...</body>
       </html>
     `);
 
