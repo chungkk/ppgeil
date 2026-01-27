@@ -5,18 +5,18 @@ const jwt = require('jsonwebtoken');
 // ========================================
 const CONFIG = {
     teamId: '6CH84XZG3T',        // Apple Developer Team ID
-    keyId: '3CF443QR7D',         // Key ID mới
+    keyId: 'QH6RVHLG92',         // Key ID từ Apple Console
     serviceId: 'papageil.net.auth', // Service ID (APPLE_CLIENT_ID)
 };
 
 // ========================================
-// PRIVATE KEY - From .p8 file
+// PRIVATE KEY - From .p8 file (Key ID: QH6RVHLG92)
 // ========================================
 const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
-MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgEhR2wiJ3jlIyN3Zh
-BH9XAehG6vcN9x1Ub3+1WjvJndOgCgYIKoZIzj0DAQehRANCAAQzzzbmO6wdP3cB
-dyKT+I6xphMdQrZp8nfWG1FCmp3TkGQC+SU4/PiDCPt+pqJjto4FmRUgSBPIPIxS
-9MB1nQFw
+MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgGF1exs5Dhish4FTV
+Zs9ddOiR3kzvTmfRhudiuvRN1jygCgYIKoZIzj0DAQehRANCAASoXrFt9YoeKQKe
+tu3Y5JKXoXacb8ror8Zv+tct7iqMbzZR8jX42quEyj0b4hO/5V6OknqpDG0Lev92
+c3L+SQY6
 -----END PRIVATE KEY-----`;
 
 function generateClientSecret() {
