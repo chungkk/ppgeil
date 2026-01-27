@@ -140,17 +140,10 @@ const LoginModal = ({ isOpen, onClose }) => {
       const left = window.screen.width / 2 - width / 2;
       const top = window.screen.height / 2 - height / 2;
 
+      // Use manual Apple OAuth endpoint (bypasses NextAuth issues)
       const baseUrl = window.location.origin;
-      const callbackUrl = baseUrl + '/auth/callback';
-
-      // Fetch CSRF token from NextAuth
-      const csrfResponse = await fetch('/api/auth/csrf');
-      const csrfData = await csrfResponse.json();
-      const csrfToken = csrfData.csrfToken;
-
-      // Open blank popup first (must be synchronous with user click)
       const popup = window.open(
-        'about:blank',
+        `${baseUrl}/api/auth/apple-signin?returnUrl=/`,
         'appleAuth',
         `width=${width},height=${height},left=${left},top=${top},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`
       );
@@ -161,45 +154,19 @@ const LoginModal = ({ isOpen, onClose }) => {
         return;
       }
 
-      // Create and submit form to POST to NextAuth signin endpoint
-      const form = popup.document.createElement('form');
-      form.method = 'POST';
-      form.action = `${baseUrl}/api/auth/signin/apple`;
-
-      const csrfInput = popup.document.createElement('input');
-      csrfInput.type = 'hidden';
-      csrfInput.name = 'csrfToken';
-      csrfInput.value = csrfToken;
-      form.appendChild(csrfInput);
-
-      const callbackInput = popup.document.createElement('input');
-      callbackInput.type = 'hidden';
-      callbackInput.name = 'callbackUrl';
-      callbackInput.value = callbackUrl;
-      form.appendChild(callbackInput);
-
-      popup.document.body.appendChild(form);
-      form.submit();
-
-      // Start monitoring for closure (fallback if postMessage fails)
+      // Monitor popup for closure
       const checkInterval = setInterval(() => {
         if (!popup || popup.closed) {
           clearInterval(checkInterval);
           setLoading(false);
 
-          // Check if login was successful by checking session
-          setTimeout(async () => {
-            try {
-              const response = await fetch('/api/auth/session');
-              const session = await response.json();
-
-              if (session && session.user) {
-                console.log('✅ Apple login successful!');
-                onClose();
-                window.location.reload();
-              }
-            } catch (error) {
-              console.error('Error checking session:', error);
+          // Check if token was set in localStorage
+          setTimeout(() => {
+            const token = localStorage.getItem('authToken');
+            if (token) {
+              console.log('✅ Apple login successful!');
+              onClose();
+              window.location.reload();
             }
           }, 1000);
         }
