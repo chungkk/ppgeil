@@ -59,17 +59,16 @@ const LoginModal = ({ isOpen, onClose }) => {
       const top = window.screen.height / 2 - height / 2;
 
       const baseUrl = window.location.origin;
+      const callbackUrl = baseUrl + '/auth/callback';
 
       // Fetch CSRF token from NextAuth
       const csrfResponse = await fetch('/api/auth/csrf');
       const csrfData = await csrfResponse.json();
       const csrfToken = csrfData.csrfToken;
 
-      // Construct NextAuth Google signin URL with CSRF token
-      const googleAuthUrl = `${baseUrl}/api/auth/signin/google?csrfToken=${csrfToken}&callbackUrl=${encodeURIComponent(baseUrl + '/auth/callback')}`;
-
+      // Open blank popup first (must be synchronous with user click)
       const popup = window.open(
-        googleAuthUrl,
+        'about:blank',
         'googleAuth',
         `width=${width},height=${height},left=${left},top=${top},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`
       );
@@ -79,6 +78,26 @@ const LoginModal = ({ isOpen, onClose }) => {
         setLoading(false);
         return;
       }
+
+      // Create and submit form to POST to NextAuth signin endpoint
+      const form = popup.document.createElement('form');
+      form.method = 'POST';
+      form.action = `${baseUrl}/api/auth/signin/google`;
+
+      const csrfInput = popup.document.createElement('input');
+      csrfInput.type = 'hidden';
+      csrfInput.name = 'csrfToken';
+      csrfInput.value = csrfToken;
+      form.appendChild(csrfInput);
+
+      const callbackInput = popup.document.createElement('input');
+      callbackInput.type = 'hidden';
+      callbackInput.name = 'callbackUrl';
+      callbackInput.value = callbackUrl;
+      form.appendChild(callbackInput);
+
+      popup.document.body.appendChild(form);
+      form.submit();
 
       // Start monitoring for closure (fallback if postMessage fails)
       const checkInterval = setInterval(() => {
@@ -122,17 +141,16 @@ const LoginModal = ({ isOpen, onClose }) => {
       const top = window.screen.height / 2 - height / 2;
 
       const baseUrl = window.location.origin;
+      const callbackUrl = baseUrl + '/auth/callback';
 
       // Fetch CSRF token from NextAuth
       const csrfResponse = await fetch('/api/auth/csrf');
       const csrfData = await csrfResponse.json();
       const csrfToken = csrfData.csrfToken;
 
-      // Construct NextAuth Apple signin URL with CSRF token
-      const appleAuthUrl = `${baseUrl}/api/auth/signin/apple?csrfToken=${csrfToken}&callbackUrl=${encodeURIComponent(baseUrl + '/auth/callback')}`;
-
+      // Open blank popup first (must be synchronous with user click)
       const popup = window.open(
-        appleAuthUrl,
+        'about:blank',
         'appleAuth',
         `width=${width},height=${height},left=${left},top=${top},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`
       );
@@ -142,6 +160,26 @@ const LoginModal = ({ isOpen, onClose }) => {
         setLoading(false);
         return;
       }
+
+      // Create and submit form to POST to NextAuth signin endpoint
+      const form = popup.document.createElement('form');
+      form.method = 'POST';
+      form.action = `${baseUrl}/api/auth/signin/apple`;
+
+      const csrfInput = popup.document.createElement('input');
+      csrfInput.type = 'hidden';
+      csrfInput.name = 'csrfToken';
+      csrfInput.value = csrfToken;
+      form.appendChild(csrfInput);
+
+      const callbackInput = popup.document.createElement('input');
+      callbackInput.type = 'hidden';
+      callbackInput.name = 'callbackUrl';
+      callbackInput.value = callbackUrl;
+      form.appendChild(callbackInput);
+
+      popup.document.body.appendChild(form);
+      form.submit();
 
       // Start monitoring for closure (fallback if postMessage fails)
       const checkInterval = setInterval(() => {
