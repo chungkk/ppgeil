@@ -135,43 +135,9 @@ const LoginModal = ({ isOpen, onClose }) => {
     setError('');
 
     try {
-      const width = 500;
-      const height = 650;
-      const left = window.screen.width / 2 - width / 2;
-      const top = window.screen.height / 2 - height / 2;
-
-      // Use manual Apple OAuth endpoint (bypasses NextAuth issues)
-      const baseUrl = window.location.origin;
-      const popup = window.open(
-        `${baseUrl}/api/auth/apple-signin?returnUrl=/`,
-        'appleAuth',
-        `width=${width},height=${height},left=${left},top=${top},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`
-      );
-
-      if (!popup) {
-        setError(t('loginModal.errors.popupBlocked'));
-        setLoading(false);
-        return;
-      }
-
-      // Monitor popup for closure
-      const checkInterval = setInterval(() => {
-        if (!popup || popup.closed) {
-          clearInterval(checkInterval);
-          setLoading(false);
-
-          // Check if token was set in localStorage
-          setTimeout(() => {
-            const token = localStorage.getItem('authToken');
-            if (token) {
-              console.log('✅ Apple login successful!');
-              onClose();
-              window.location.reload();
-            }
-          }, 1000);
-        }
-      }, 500);
-
+      // Redirect directly to Apple OAuth (simpler and more reliable than popup)
+      const returnUrl = encodeURIComponent(window.location.pathname);
+      window.location.href = `/api/auth/apple-signin?returnUrl=${returnUrl}`;
     } catch (error) {
       console.error('Apple login error:', error);
       setError(t('loginModal.errors.appleFailed'));
