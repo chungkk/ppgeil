@@ -149,9 +149,10 @@ export const authOptions = {
     },
   },
   pages: {
+    signIn: '/auth/error',
     signOut: '/auth/login',
-    error: '/auth/callback',
-    newUser: '/auth/callback',
+    error: '/auth/error',
+    newUser: '/',
   },
   secret: process.env.NEXTAUTH_SECRET,
   debug: process.env.NODE_ENV === 'development',
