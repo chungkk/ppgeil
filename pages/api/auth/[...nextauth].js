@@ -1,5 +1,6 @@
 import NextAuth from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
+import AppleProvider from 'next-auth/providers/apple';
 import connectDB from '../../../lib/mongodb';
 import User from '../../../models/User';
 import { generateToken } from '../../../lib/jwt';
@@ -9,6 +10,10 @@ export const authOptions = {
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    }),
+    AppleProvider({
+      clientId: process.env.APPLE_CLIENT_ID,
+      clientSecret: process.env.APPLE_CLIENT_SECRET,
     }),
   ],
   callbacks: {
@@ -52,6 +57,62 @@ export const authOptions = {
           return false;
         }
       }
+
+      // Apple Sign In
+      if (account.provider === 'apple') {
+        try {
+          // Apple only sends email/name on FIRST sign-in, so fallback to profile
+          const userEmail = user.email || profile?.email;
+          console.log('🍎 Apple Sign In attempt:', { email: userEmail, sub: profile?.sub });
+
+          if (!userEmail) {
+            // Try to find user by Apple sub if no email
+            await connectDB();
+            const existingUser = await User.findOne({ appleId: profile?.sub });
+            if (existingUser) {
+              console.log('✅ Found existing Apple user by sub:', existingUser.email);
+              return true;
+            }
+            console.error('❌ Cannot create new user: No email provided by Apple');
+            return false;
+          }
+
+          await connectDB();
+          let dbUser = await User.findOne({ email: userEmail.toLowerCase() });
+
+          if (!dbUser) {
+            console.log('👤 Creating new Apple user:', userEmail);
+            dbUser = await User.create({
+              name: user.name || userEmail.split('@')[0],
+              email: userEmail.toLowerCase(),
+              appleId: profile?.sub,
+              role: 'member',
+              nativeLanguage: 'vi',
+              level: 'beginner',
+              isAppleUser: true
+            });
+            console.log('✅ Apple user created successfully:', dbUser._id);
+          } else if (!dbUser.appleId) {
+            console.log('🔄 Linking Apple ID to existing user:', userEmail);
+            dbUser.appleId = profile?.sub;
+            dbUser.isAppleUser = true;
+            await dbUser.save();
+            console.log('✅ User updated with Apple ID successfully');
+          } else {
+            console.log('✅ Existing Apple user found:', userEmail);
+          }
+
+          return true;
+        } catch (error) {
+          console.error('❌ Error in Apple signIn callback:', error);
+          console.error('Error details:', error.message);
+          if (error.errors) {
+            console.error('Validation errors:', error.errors);
+          }
+          return false;
+        }
+      }
+
       return true;
     },
     async jwt({ token, user, account }) {
