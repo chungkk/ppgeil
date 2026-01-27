@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { signIn } from 'next-auth/react';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { useRouter } from 'next/router';
@@ -25,6 +24,28 @@ const LoginModal = ({ isOpen, onClose }) => {
   const router = useRouter();
   const { login } = useAuth();
 
+  // Listen for OAuth popup messages
+  useEffect(() => {
+    const handleMessage = (event) => {
+      // Verify origin for security
+      if (event.origin !== window.location.origin) return;
+
+      if (event.data.type === 'auth-success') {
+        console.log('✅ Received auth success from popup');
+        setLoading(false);
+        onClose();
+        window.location.reload();
+      } else if (event.data.type === 'auth-failed') {
+        console.log('❌ Received auth failed from popup:', event.data.error);
+        setLoading(false);
+        setError(t('loginModal.errors.googleFailed'));
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, [onClose, t]);
+
   if (!isOpen) return null;
 
   const handleGoogleLogin = async () => {
@@ -32,13 +53,56 @@ const LoginModal = ({ isOpen, onClose }) => {
     setError('');
 
     try {
-      // Use signIn from next-auth with redirect to Google directly
-      // This will close the modal and redirect the entire page
-      onClose();
+      const width = 500;
+      const height = 650;
+      const left = window.screen.width / 2 - width / 2;
+      const top = window.screen.height / 2 - height / 2;
 
-      // Use next-auth signIn with callbackUrl to return to current page
-      const callbackUrl = window.location.href;
-      await signIn('google', { callbackUrl });
+      const baseUrl = window.location.origin;
+
+      // Fetch CSRF token from NextAuth
+      const csrfResponse = await fetch('/api/auth/csrf');
+      const csrfData = await csrfResponse.json();
+      const csrfToken = csrfData.csrfToken;
+
+      // Construct NextAuth Google signin URL with CSRF token
+      const googleAuthUrl = `${baseUrl}/api/auth/signin/google?csrfToken=${csrfToken}&callbackUrl=${encodeURIComponent(baseUrl + '/auth/callback')}`;
+
+      const popup = window.open(
+        googleAuthUrl,
+        'googleAuth',
+        `width=${width},height=${height},left=${left},top=${top},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`
+      );
+
+      if (!popup) {
+        setError(t('loginModal.errors.popupBlocked'));
+        setLoading(false);
+        return;
+      }
+
+      // Start monitoring for closure (fallback if postMessage fails)
+      const checkInterval = setInterval(() => {
+        if (!popup || popup.closed) {
+          clearInterval(checkInterval);
+          setLoading(false);
+
+          // Check if login was successful by checking session
+          setTimeout(async () => {
+            try {
+              const response = await fetch('/api/auth/session');
+              const session = await response.json();
+
+              if (session && session.user) {
+                console.log('✅ Google login successful!');
+                onClose();
+                window.location.reload();
+              }
+            } catch (error) {
+              console.error('Error checking session:', error);
+            }
+          }, 1000);
+        }
+      }, 500);
 
     } catch (error) {
       console.error('Google login error:', error);
@@ -52,13 +116,56 @@ const LoginModal = ({ isOpen, onClose }) => {
     setError('');
 
     try {
-      // Use signIn from next-auth with redirect to Apple directly
-      // This will close the modal and redirect the entire page
-      onClose();
+      const width = 500;
+      const height = 650;
+      const left = window.screen.width / 2 - width / 2;
+      const top = window.screen.height / 2 - height / 2;
 
-      // Use next-auth signIn with callbackUrl to return to current page
-      const callbackUrl = window.location.href;
-      await signIn('apple', { callbackUrl });
+      const baseUrl = window.location.origin;
+
+      // Fetch CSRF token from NextAuth
+      const csrfResponse = await fetch('/api/auth/csrf');
+      const csrfData = await csrfResponse.json();
+      const csrfToken = csrfData.csrfToken;
+
+      // Construct NextAuth Apple signin URL with CSRF token
+      const appleAuthUrl = `${baseUrl}/api/auth/signin/apple?csrfToken=${csrfToken}&callbackUrl=${encodeURIComponent(baseUrl + '/auth/callback')}`;
+
+      const popup = window.open(
+        appleAuthUrl,
+        'appleAuth',
+        `width=${width},height=${height},left=${left},top=${top},toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes`
+      );
+
+      if (!popup) {
+        setError(t('loginModal.errors.popupBlocked'));
+        setLoading(false);
+        return;
+      }
+
+      // Start monitoring for closure (fallback if postMessage fails)
+      const checkInterval = setInterval(() => {
+        if (!popup || popup.closed) {
+          clearInterval(checkInterval);
+          setLoading(false);
+
+          // Check if login was successful by checking session
+          setTimeout(async () => {
+            try {
+              const response = await fetch('/api/auth/session');
+              const session = await response.json();
+
+              if (session && session.user) {
+                console.log('✅ Apple login successful!');
+                onClose();
+                window.location.reload();
+              }
+            } catch (error) {
+              console.error('Error checking session:', error);
+            }
+          }, 1000);
+        }
+      }, 500);
 
     } catch (error) {
       console.error('Apple login error:', error);
