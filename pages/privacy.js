@@ -18,7 +18,7 @@ const PRIVACY_CONTENT = {
       content: [
         'Verantwortlich für die Datenverarbeitung auf dieser Website ist:',
         '**PAPAGEIL CO., LTD.**',
-        'E-Mail: support@papageil.me',
+        'E-Mail: support@papageil.net',
         'Website: https://papageil.net',
         'Der Verantwortliche entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten.'
       ]
@@ -140,7 +140,7 @@ const PRIVACY_CONTENT = {
         '- **Datenübertragbarkeit (Art. 20 DSGVO)**: Sie können Ihre Daten in einem gängigen Format erhalten.',
         '- **Widerspruchsrecht (Art. 21 DSGVO)**: Sie können der Verarbeitung widersprechen.',
         '- **Widerrufsrecht (Art. 7 Abs. 3 DSGVO)**: Sie können Ihre Einwilligung jederzeit widerrufen.',
-        'Zur Ausübung Ihrer Rechte kontaktieren Sie uns unter: support@papageil.me'
+        'Zur Ausübung Ihrer Rechte kontaktieren Sie uns unter: support@papageil.net'
       ]
     },
     {
@@ -389,9 +389,9 @@ export default function PrivacyPage() {
                       <p style={{ marginBottom: '16px', color: '#636e72' }}>
                         Bei Fragen zur Verarbeitung Ihrer Daten kontaktieren Sie uns:
                       </p>
-                      <a href="mailto:support@papageil.me" className={styles.contactEmail}>
+                      <a href="mailto:support@papageil.net" className={styles.contactEmail}>
                         <span>✉️</span>
-                        support@papageil.me
+                        support@papageil.net
                       </a>
                     </div>
                   </div>

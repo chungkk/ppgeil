@@ -19,7 +19,7 @@ const DEFAULT_TERMS_CONTENT = {
         'Diese Nutzungsbedingungen regeln die Nutzung der Website papageil.net und der zugehörigen mobilen Anwendung "PapaGeil" (nachfolgend gemeinsam als "Plattform" bezeichnet).',
         'Der Anbieter der Plattform ist:',
         '**PAPAGEIL CO., LTD.**',
-        'E-Mail: support@papageil.me',
+        'E-Mail: support@papageil.net',
         'Mit der Registrierung oder Nutzung unserer Plattform akzeptieren Sie diese Nutzungsbedingungen vollständig. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen.'
       ]
     },
@@ -135,7 +135,7 @@ const DEFAULT_TERMS_CONTENT = {
       title: 'Kündigung und Kontolöschung',
       content: [
         '**9.1 Kündigung durch den Nutzer**',
-        'Sie können Ihr Konto jederzeit und ohne Angabe von Gründen löschen lassen. Senden Sie hierzu eine E-Mail an support@papageil.me.',
+        'Sie können Ihr Konto jederzeit und ohne Angabe von Gründen löschen lassen. Senden Sie hierzu eine E-Mail an support@papageil.net.',
         '**9.2 Kündigung durch den Anbieter**',
         'Wir behalten uns das Recht vor, Nutzerkonten bei Verstoß gegen diese Nutzungsbedingungen zu sperren oder zu löschen.',
         '**9.3 Folgen der Kündigung**',
@@ -381,9 +381,9 @@ export default function TermsPage() {
                       <p style={{ marginBottom: '16px', color: '#636e72' }}>
                         Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns gerne:
                       </p>
-                      <a href="mailto:support@papageil.me" className={styles.contactEmail}>
+                      <a href="mailto:support@papageil.net" className={styles.contactEmail}>
                         <span>✉️</span>
-                        support@papageil.me
+                        support@papageil.net
                       </a>
                     </div>
                   </div>

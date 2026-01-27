@@ -472,6 +472,42 @@
   transform: none;
 }
 
+/* Apple Button - Neo-Retro */
+.appleButton {
+  width: 100%;
+  padding: 14px 24px;
+  background: #000000;
+  border: 3px solid var(--retro-border, #1a1a2e);
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: white;
+  box-shadow: 4px 4px 0 var(--retro-shadow, #1a1a2e);
+}
+
+.appleButton:hover:not(:disabled) {
+  background: #333333;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-shadow, #1a1a2e);
+}
+
+.appleButton:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--retro-shadow, #1a1a2e);
+}
+
+.appleButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
 /* Divider - Neo-Retro */
 .divider {
   text-align: center;

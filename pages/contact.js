@@ -22,7 +22,7 @@ const FAQ_DATA = [
     id: 'account',
     icon: '👤',
     question: 'Wie kann ich mein Konto löschen?',
-    answer: 'Senden Sie uns eine E-Mail an support@papageil.me mit dem Betreff "Kontolöschung" und wir werden Ihre Anfrage schnellstmöglich bearbeiten.'
+    answer: 'Senden Sie uns eine E-Mail an support@papageil.net mit dem Betreff "Kontolöschung" und wir werden Ihre Anfrage schnellstmöglich bearbeiten.'
   },
   {
     id: 'partnership',
@@ -145,9 +145,9 @@ export default function ContactPage() {
               <p className={styles.cardDescription}>
                 Schreiben Sie uns direkt per E-Mail für alle Anfragen
               </p>
-              <a href="mailto:support@papageil.me" className={styles.cardLink}>
+              <a href="mailto:support@papageil.net" className={styles.cardLink}>
                 <span>✉️</span>
-                support@papageil.me
+                support@papageil.net
               </a>
             </div>
 
@@ -337,7 +337,7 @@ export default function ContactPage() {
               <div className={styles.companyItem}>
                 <div className={styles.companyItemIcon}>📧</div>
                 <div className={styles.companyItemLabel}>E-Mail</div>
-                <div className={styles.companyItemValue}>support@papageil.me</div>
+                <div className={styles.companyItemValue}>support@papageil.net</div>
               </div>
               <div className={styles.companyItem}>
                 <div className={styles.companyItemIcon}>🌐</div>
