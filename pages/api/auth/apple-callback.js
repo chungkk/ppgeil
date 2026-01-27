@@ -108,7 +108,7 @@ export default async function handler(req, res) {
         <head>
           <meta http-equiv="refresh" content="0;url=${redirectUrl}">
           <script>
-            localStorage.setItem('authToken', '${customToken}');
+            localStorage.setItem('token', '${customToken}');
             window.location.href = '${redirectUrl}';
           </script>
         </head>

@@ -46,6 +46,19 @@ export function AuthProvider({ children }) {
         return; // Chỉ cần đợi, không làm gì cả
       }
 
+      // Check for token in URL (from Apple OAuth callback)
+      if (typeof window !== 'undefined') {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tokenFromUrl = urlParams.get('token');
+        if (tokenFromUrl) {
+          console.log('🍎 Token found in URL (Apple OAuth callback)');
+          localStorage.setItem('token', tokenFromUrl);
+          // Clean URL without reloading
+          const newUrl = window.location.pathname;
+          window.history.replaceState({}, document.title, newUrl);
+        }
+      }
+
       // Nếu đã có user và có token, không cần check lại (tránh race condition khi chuyển locale)
       const existingToken = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
       if (user && existingToken) {
@@ -130,7 +143,7 @@ export function AuthProvider({ children }) {
       // Decode JWT token (phần payload là phần giữa của token)
       const base64Url = token.split('.')[1];
       const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-      const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+      const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
         return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
       }).join(''));
 
@@ -263,7 +276,7 @@ export function AuthProvider({ children }) {
   const loginWithGoogle = async () => {
     try {
       // Use popup mode instead of redirect
-      await nextAuthSignIn('google', { 
+      await nextAuthSignIn('google', {
         callbackUrl: '/profile',
         redirect: false
       });
@@ -349,15 +362,15 @@ export function AuthProvider({ children }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ 
-      user, 
-      loading, 
-      userPoints, 
-      login, 
-      register, 
-      logout, 
-      refreshToken, 
-      loginWithGoogle, 
+    <AuthContext.Provider value={{
+      user,
+      loading,
+      userPoints,
+      login,
+      register,
+      logout,
+      refreshToken,
+      loginWithGoogle,
       fetchUserPoints,
       updateUserPoints,
       updateDifficultyLevel,
