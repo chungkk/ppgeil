@@ -64,7 +64,13 @@ export default async function handler(req, res) {
         nativeLanguage: user.nativeLanguage,
         level: user.level,
         preferredDifficultyLevel: user.preferredDifficultyLevel,
-        points: user.points || 0
+        points: user.points || 0,
+        streak: {
+          currentStreak: user.streak?.currentStreak || 0,
+          maxStreak: user.streak?.maxStreak || 0,
+          lastActiveDate: user.streak?.lastActiveDate || null,
+          weeklyProgress: user.streak?.weeklyProgress || [false, false, false, false, false, false, false]
+        }
       }
     });
 
